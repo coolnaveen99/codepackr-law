@@ -20,6 +20,7 @@ import {
   setSubjectUrl,
   setTopicUrl,
   setHomeUrl,
+  migrateHashToPath,
 } from './lib/urls'
 import { setPageMeta, SITE_NAME, SITE_TAGLINE } from './lib/seo'
 import {
@@ -60,12 +61,15 @@ export default function App() {
   const [subjectSearch, setSubjectSearch] = useState('')
 
   useEffect(() => {
-    const onHash = () => {
+    if (migrateHashToPath()) {
+      setRoute(parseRoute())
+    }
+    const onNav = () => {
       setRoute(parseRoute())
       window.scrollTo({ top: 0, behavior: 'smooth' })
     }
-    window.addEventListener('hashchange', onHash)
-    return () => window.removeEventListener('hashchange', onHash)
+    window.addEventListener('popstate', onNav)
+    return () => window.removeEventListener('popstate', onNav)
   }, [])
 
   useEffect(() => {
@@ -82,7 +86,6 @@ export default function App() {
     }
   }, [dark])
 
-  // Dynamic SEO: title + meta description + OG tags per route
   useEffect(() => {
     if (route.type === 'home') {
       setPageMeta({
@@ -99,13 +102,13 @@ export default function App() {
         setPageMeta({
           title: `${tool.name} | ${SITE_NAME}`,
           description: tool.description,
-          path: `/#/tool/${tool.slug}`,
+          path: `/tool/${tool.slug}`,
         })
       } else {
         setPageMeta({
           title: `Tool | ${SITE_NAME}`,
           description: SITE_TAGLINE,
-          path: `/#/tool/${route.slug}`,
+          path: `/tool/${route.slug}`,
         })
       }
       return
@@ -115,7 +118,7 @@ export default function App() {
         title: `All Subjects — AIBE & Judiciary | ${SITE_NAME}`,
         description:
           'Browse all 19 AIBE subjects plus petition formats. Open short and detailed notes, case laws, and jump to MCQ practice. Built for AIBE and State Judiciary prelims.',
-        path: '/#/subjects',
+        path: '/subjects',
       })
       return
     }
@@ -125,13 +128,13 @@ export default function App() {
         setPageMeta({
           title: `${subject.name} — Topics & Notes | ${SITE_NAME}`,
           description: `${subject.description} High-yield topics, doctrines, and quick practice for AIBE and Judiciary.`,
-          path: `/#/subjects/${subject.slug}`,
+          path: `/subjects/${subject.slug}`,
         })
       } else {
         setPageMeta({
           title: `Subject | ${SITE_NAME}`,
           description: SITE_TAGLINE,
-          path: `/#/subjects/${route.slug}`,
+          path: `/subjects/${route.slug}`,
         })
       }
       return
@@ -144,13 +147,13 @@ export default function App() {
         setPageMeta({
           title: `${topic.name} — ${subject.shortName} | ${SITE_NAME}`,
           description: `Learn ${topic.name} (${subject.name}): short and detailed notes, case laws, and exam tips for AIBE and Judiciary.${tip}`,
-          path: `/#/subjects/${subject.slug}/${topic.id}`,
+          path: `/subjects/${subject.slug}/${topic.id}`,
         })
       } else {
         setPageMeta({
           title: `Topic | ${SITE_NAME}`,
           description: SITE_TAGLINE,
-          path: `/#/subjects/${route.subjectSlug}/${route.topicId}`,
+          path: `/subjects/${route.subjectSlug}/${route.topicId}`,
         })
       }
     }
