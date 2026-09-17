@@ -1,0 +1,5 @@
+# Codepackr Law — https://law.codepackr.com
+User-agent: *
+Allow: /
+
+Sitemap: https://law.codepackr.com/sitemap.xml
