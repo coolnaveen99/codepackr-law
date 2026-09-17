@@ -13,7 +13,12 @@ export interface ToolMetadata {
   featured?: boolean
 }
 
-export type LawSubject = 
+/**
+ * MCQ bank subject keys (used by questions/).
+ * Expand as new question files are added.
+ * Full AIBE subject list lives in data/subjects.ts.
+ */
+export type LawSubject =
   | 'all'
   | 'constitution'
   | 'bns' // Bharatiya Nyaya Sanhita (formerly IPC)
@@ -35,6 +40,8 @@ export interface McqQuestion {
   bareActSection?: string
   examSource?: string // e.g. "AIBE XVII", "DJS Prelims 2022"
   difficulty?: 'easy' | 'medium' | 'hard'
+  /** Optional link to subjects.ts topic id */
+  topicId?: string
 }
 
 export interface SectionMapping {
