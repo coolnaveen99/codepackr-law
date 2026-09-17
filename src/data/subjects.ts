@@ -1,8 +1,9 @@
 /**
  * Codepackr Law — Subject & Topic registry
  *
- * Hierarchy: Subjects → Topics (themes / articles / doctrines / formats) → Practice
- * Full notes live in src/data/topics/<slug>/<id>.ts (lazy-loaded).
+ * Hierarchy: Subjects → Topics (themes / articles / doctrines) → Practice
+ * Petition formats are a SEPARATE subject: petition-formats
+ * Full notes: src/data/topics/<slug>/<id>.ts (lazy-loaded)
  */
 
 export type SubjectPriority = 'high' | 'medium' | 'low'
@@ -20,7 +21,6 @@ export interface CaseCitation {
 export interface LawTopic {
   id: string
   name: string
-  /** theme | article | section | chapter | doctrine | act | format */
   type: TopicType
   range?: string
   note?: string
@@ -57,30 +57,28 @@ export const SUBJECTS: LawSubjectMeta[] = [
     priority: 'high',
     aibeQuestions: 10,
     bareActs: ['Constitution of India'],
-    description:
-      'Fundamental Rights, DPSPs, writs, basic structure, Centre–State relations, and amendment. Highest-weight AIBE subject.',
+    description: 'Fundamental Rights, DPSPs, writs, basic structure, Centre–State relations, and amendment. Highest-weight AIBE subject.',
     keywords: ['constitution', 'fundamental rights', 'article 21', 'writs', 'dpsp', 'basic structure', 'emergency', 'amendment'],
     icon: 'Landmark',
     mcqSubjectKey: 'constitution',
     topics: [
       { id: 'preamble', name: 'Preamble', type: 'theme', note: 'Nature of Constitution; key words tested in MCQs', keywords: ['preamble', 'sovereign', 'socialist', 'secular'], highYield: true },
-      { id: 'fundamental-rights', name: 'Fundamental Rights', type: 'theme', range: 'Arts 12–35', note: 'Part III — core of AIBE constitutional questions', keywords: ['fundamental rights', 'part iii', 'article 12', 'article 13'], highYield: true },
-      { id: 'art-14', name: 'Article 14 — Equality', type: 'article', range: 'Art 14', keywords: ['equality', 'article 14', 'reasonable classification'], highYield: true },
-      { id: 'art-19', name: 'Article 19 — Freedoms', type: 'article', range: 'Art 19', keywords: ['freedom of speech', 'article 19', 'reasonable restrictions'], highYield: true },
-      { id: 'art-21', name: 'Article 21 — Life & Personal Liberty', type: 'article', range: 'Art 21', note: 'Expanded by Maneka Gandhi and later cases', keywords: ['article 21', 'life', 'liberty', 'due process'], highYield: true },
-      { id: 'art-32-226', name: 'Writs (Arts 32 & 226)', type: 'theme', range: 'Arts 32, 226', note: 'Habeas corpus, mandamus, prohibition, certiorari, quo warranto', keywords: ['writs', 'article 32', 'article 226', 'habeas corpus'], highYield: true },
-      { id: 'dpsp', name: 'Directive Principles (DPSP)', type: 'theme', range: 'Part IV', keywords: ['dpsp', 'directive principles', 'part iv'] },
-      { id: 'fundamental-duties', name: 'Fundamental Duties', type: 'theme', range: 'Part IVA, Art 51A', keywords: ['fundamental duties', 'article 51a'] },
-      { id: 'centre-state', name: 'Centre–State Relations', type: 'theme', note: 'Legislative, administrative, financial', keywords: ['federalism', 'centre state', 'union list', 'concurrent list'] },
-      { id: 'emergency', name: 'Emergency Provisions', type: 'theme', range: 'Arts 352–360', keywords: ['emergency', 'article 352', 'article 356'] },
+      { id: 'fundamental-rights', name: 'Fundamental Rights', type: 'theme', range: 'Arts 12–35', note: 'Part III — core of AIBE constitutional questions', keywords: ['fundamental rights', 'part iii'], highYield: true },
+      { id: 'art-14', name: 'Article 14 — Equality', type: 'article', range: 'Art 14', keywords: ['equality', 'article 14'], highYield: true },
+      { id: 'art-19', name: 'Article 19 — Freedoms', type: 'article', range: 'Art 19', keywords: ['freedom of speech', 'article 19'], highYield: true },
+      { id: 'art-21', name: 'Article 21 — Life & Personal Liberty', type: 'article', range: 'Art 21', note: 'Expanded by Maneka Gandhi and later cases', keywords: ['article 21', 'life', 'liberty'], highYield: true },
+      { id: 'art-32-226', name: 'Writs (Arts 32 & 226)', type: 'theme', range: 'Arts 32, 226', note: 'Habeas corpus, mandamus, prohibition, certiorari, quo warranto', keywords: ['writs', 'article 32', 'article 226'], highYield: true },
+      { id: 'dpsp', name: 'Directive Principles (DPSP)', type: 'theme', range: 'Part IV', keywords: ['dpsp'] },
+      { id: 'fundamental-duties', name: 'Fundamental Duties', type: 'theme', range: 'Part IVA, Art 51A', keywords: ['fundamental duties'] },
+      { id: 'centre-state', name: 'Centre–State Relations', type: 'theme', note: 'Legislative, administrative, financial', keywords: ['federalism', 'centre state'] },
+      { id: 'emergency', name: 'Emergency Provisions', type: 'theme', range: 'Arts 352–360', keywords: ['emergency'] },
       { id: 'amendment', name: 'Amendment of the Constitution', type: 'theme', range: 'Art 368', keywords: ['amendment', 'article 368'] },
       { id: 'basic-structure', name: 'Basic Structure Doctrine', type: 'doctrine', note: 'Kesavananda Bharati and later cases', keywords: ['basic structure', 'kesavananda'], highYield: true },
-      { id: 'doctrine-pith-substance', name: 'Doctrine of Pith and Substance', type: 'doctrine', note: 'Centre–State legislative competence; incidental encroachment', keywords: ['pith and substance', 'legislative competence'], highYield: true },
-      { id: 'doctrine-eclipse', name: 'Doctrine of Eclipse', type: 'doctrine', note: 'Pre-Constitution laws vs Fundamental Rights; Art 13', keywords: ['doctrine of eclipse', 'article 13'], highYield: true },
-      { id: 'doctrine-severability', name: 'Doctrine of Severability', type: 'doctrine', note: 'Invalid part of a law can be severed if rest survives', keywords: ['severability', 'article 13'], highYield: true },
-      { id: 'doctrine-colourable-legislation', name: 'Doctrine of Colourable Legislation', type: 'doctrine', note: 'What cannot be done directly cannot be done indirectly', keywords: ['colourable legislation'], highYield: true },
-      { id: 'format-writ-petition', name: 'Format — Writ Petition (Arts 32 & 226)', type: 'format', note: 'Skeleton structure of a writ petition for exam / drafting awareness', keywords: ['writ petition', 'format', 'drafting', 'article 32', 'article 226'], highYield: true },
-      { id: 'judiciary', name: 'Union & State Judiciary', type: 'theme', note: 'SC & HC jurisdiction, appointment, independence', keywords: ['supreme court', 'high court', 'jurisdiction'] },
+      { id: 'doctrine-pith-substance', name: 'Doctrine of Pith and Substance', type: 'doctrine', note: 'Centre–State legislative competence', keywords: ['pith and substance'], highYield: true },
+      { id: 'doctrine-eclipse', name: 'Doctrine of Eclipse', type: 'doctrine', note: 'Pre-Constitution laws vs FR; Art 13', keywords: ['doctrine of eclipse'], highYield: true },
+      { id: 'doctrine-severability', name: 'Doctrine of Severability', type: 'doctrine', note: 'Invalid part can be severed if rest survives', keywords: ['severability'], highYield: true },
+      { id: 'doctrine-colourable-legislation', name: 'Doctrine of Colourable Legislation', type: 'doctrine', note: 'Cannot do indirectly what cannot be done directly', keywords: ['colourable legislation'], highYield: true },
+      { id: 'judiciary', name: 'Union & State Judiciary', type: 'theme', note: 'SC & HC jurisdiction, appointment, independence', keywords: ['supreme court', 'high court'] },
     ],
   },
   {
@@ -102,9 +100,7 @@ export const SUBJECTS: LawSubjectMeta[] = [
       { id: 'charge-trial', name: 'Charge & Trial', type: 'theme', keywords: ['charge', 'trial'] },
       { id: 'appeals-revision', name: 'Appeals & Revision', type: 'theme', keywords: ['appeal', 'revision'] },
       { id: 'bnss-crpc-map', name: 'BNSS ↔ CrPC Key Changes', type: 'theme', note: 'Use mapper tool for section-wise changes', keywords: ['mapper', 'new criminal laws'] },
-      { id: 'doctrine-speedy-trial', name: 'Doctrine of Speedy Trial', type: 'doctrine', note: 'Art 21; Hussainara Khatoon and later cases', keywords: ['speedy trial', 'article 21', 'hussainara'], highYield: true },
-      { id: 'format-fir', name: 'Format — FIR', type: 'format', note: 'Essential contents of an FIR for exam awareness', keywords: ['fir format', 'first information report', 'drafting'], highYield: true },
-      { id: 'format-bail-application', name: 'Format — Bail / Anticipatory Bail Application', type: 'format', note: 'Structure of regular and anticipatory bail applications', keywords: ['bail application', 'anticipatory bail', 'format', 'drafting'], highYield: true },
+      { id: 'doctrine-speedy-trial', name: 'Doctrine of Speedy Trial', type: 'doctrine', note: 'Art 21; Hussainara Khatoon and later cases', keywords: ['speedy trial', 'hussainara'], highYield: true },
     ],
   },
   {
@@ -121,13 +117,11 @@ export const SUBJECTS: LawSubjectMeta[] = [
     mcqSubjectKey: 'cpc',
     topics: [
       { id: 'jurisdiction', name: 'Jurisdiction', type: 'theme', highYield: true, keywords: ['jurisdiction', 'section 9'] },
-      { id: 'res-judicata', name: 'Res Judicata & Res Sub Judice', type: 'doctrine', note: 'S. 11 CPC — finality of litigation; high-yield doctrine', highYield: true, keywords: ['res judicata', 'section 11', 'res sub judice'] },
+      { id: 'res-judicata', name: 'Res Judicata & Res Sub Judice', type: 'doctrine', note: 'S. 11 CPC — finality of litigation', highYield: true, keywords: ['res judicata', 'section 11'] },
       { id: 'pleadings', name: 'Pleadings (Orders VI–VIII)', type: 'chapter', range: 'Orders VI–VIII', keywords: ['pleadings', 'plaint', 'written statement'] },
       { id: 'interim', name: 'Interim Orders & Injunctions', type: 'theme', keywords: ['injunction', 'order 39'] },
       { id: 'decree-execution', name: 'Decree & Execution', type: 'theme', highYield: true, keywords: ['decree', 'execution', 'order 21'] },
       { id: 'appeals', name: 'Appeals, Review, Revision', type: 'theme', keywords: ['appeal', 'review', 'revision'] },
-      { id: 'format-plaint', name: 'Format — Plaint', type: 'format', note: 'Order VII essentials; skeleton of a plaint', keywords: ['plaint', 'format', 'order 7', 'drafting'], highYield: true },
-      { id: 'format-written-statement', name: 'Format — Written Statement', type: 'format', note: 'Order VIII; denial, set-off, counter-claim awareness', keywords: ['written statement', 'format', 'order 8', 'drafting'], highYield: true },
     ],
   },
   {
@@ -143,16 +137,16 @@ export const SUBJECTS: LawSubjectMeta[] = [
     icon: 'Shield',
     mcqSubjectKey: 'bns',
     topics: [
-      { id: 'general-explanations', name: 'General Explanations & Definitions', type: 'chapter', note: 'Definitions, common intention, abetment, attempt', keywords: ['definitions', 'common intention', 'abetment'], highYield: true },
+      { id: 'general-explanations', name: 'General Explanations & Definitions', type: 'chapter', note: 'Definitions, common intention, abetment, attempt', keywords: ['definitions', 'common intention'], highYield: true },
       { id: 'general-exceptions', name: 'General Exceptions', type: 'chapter', note: 'Private defence, necessity, insanity, intoxication', keywords: ['general exceptions', 'private defence'], highYield: true },
-      { id: 'offences-body', name: 'Offences against the Human Body', type: 'theme', range: 'e.g. homicide, hurt, kidnapping', keywords: ['murder', 'culpable homicide', 'hurt', 'kidnapping'], highYield: true },
-      { id: 'culpable-homicide-murder', name: 'Culpable Homicide & Murder', type: 'section', note: 'Classic distinction; high-frequency MCQs', keywords: ['murder', 'culpable homicide', 'section 103 bns', 'section 302 ipc'], highYield: true },
-      { id: 'offences-property', name: 'Offences against Property', type: 'theme', keywords: ['theft', 'extortion', 'robbery', 'dacoity', 'cheating'], highYield: true },
+      { id: 'offences-body', name: 'Offences against the Human Body', type: 'theme', keywords: ['murder', 'culpable homicide', 'hurt'], highYield: true },
+      { id: 'culpable-homicide-murder', name: 'Culpable Homicide & Murder', type: 'section', note: 'Classic distinction; high-frequency MCQs', keywords: ['murder', 'culpable homicide'], highYield: true },
+      { id: 'offences-property', name: 'Offences against Property', type: 'theme', keywords: ['theft', 'extortion', 'robbery', 'dacoity'], highYield: true },
       { id: 'sexual-offences', name: 'Sexual Offences', type: 'theme', keywords: ['rape', 'sexual offences'] },
       { id: 'defamation-misc', name: 'Defamation & Miscellaneous', type: 'theme', keywords: ['defamation'] },
-      { id: 'bns-ipc-map', name: 'BNS ↔ IPC Key Mapping', type: 'theme', note: 'Use BNS–IPC mapper tool for full table', keywords: ['mapper', 'ipc', 'bns'], highYield: true },
-      { id: 'doctrine-mens-rea', name: 'Doctrine of Mens Rea', type: 'doctrine', note: 'Guilty mind; presumption and statutory offences', keywords: ['mens rea', 'guilty mind', 'intention'], highYield: true },
-      { id: 'doctrine-common-intention', name: 'Doctrine of Common Intention', type: 'doctrine', note: 'S. 3(5) BNS / S. 34 IPC — joint liability', keywords: ['common intention', 'section 34', 'joint liability'], highYield: true },
+      { id: 'bns-ipc-map', name: 'BNS ↔ IPC Key Mapping', type: 'theme', note: 'Use BNS–IPC mapper tool', keywords: ['mapper', 'ipc', 'bns'], highYield: true },
+      { id: 'doctrine-mens-rea', name: 'Doctrine of Mens Rea', type: 'doctrine', note: 'Guilty mind; presumption and statutory offences', keywords: ['mens rea'], highYield: true },
+      { id: 'doctrine-common-intention', name: 'Doctrine of Common Intention', type: 'doctrine', note: 'S. 3(5) BNS / S. 34 IPC — joint liability', keywords: ['common intention', 'section 34'], highYield: true },
     ],
   },
   {
@@ -164,7 +158,7 @@ export const SUBJECTS: LawSubjectMeta[] = [
     aibeQuestions: 8,
     bareActs: ['Bharatiya Sakshya Adhiniyam, 2023', 'Indian Evidence Act, 1872 (legacy)'],
     description: 'Relevancy, admissions, confessions, burden of proof, and documentary/digital evidence.',
-    keywords: ['bsa', 'evidence', 'confession', 'admission', 'burden of proof', 'witness'],
+    keywords: ['bsa', 'evidence', 'confession', 'admission', 'burden of proof'],
     icon: 'Search',
     mcqSubjectKey: 'bsa',
     topics: [
@@ -173,8 +167,8 @@ export const SUBJECTS: LawSubjectMeta[] = [
       { id: 'burden-proof', name: 'Burden of Proof', type: 'theme', highYield: true, keywords: ['burden of proof'] },
       { id: 'witnesses', name: 'Witnesses & Examination', type: 'theme', keywords: ['witness', 'examination'] },
       { id: 'documentary-digital', name: 'Documentary & Digital Evidence', type: 'theme', keywords: ['documentary evidence', 'electronic evidence'] },
-      { id: 'doctrine-estoppel', name: 'Doctrine of Estoppel', type: 'doctrine', note: 'Estoppel under BSA / Evidence Act', keywords: ['estoppel', 'evidence'], highYield: true },
-      { id: 'doctrine-res-gestae', name: 'Doctrine of Res Gestae', type: 'doctrine', note: 'Facts forming part of the same transaction — relevancy', keywords: ['res gestae', 'same transaction'], highYield: true },
+      { id: 'doctrine-estoppel', name: 'Doctrine of Estoppel', type: 'doctrine', note: 'Estoppel under BSA / Evidence Act', keywords: ['estoppel'], highYield: true },
+      { id: 'doctrine-res-gestae', name: 'Doctrine of Res Gestae', type: 'doctrine', note: 'Facts forming part of the same transaction', keywords: ['res gestae'], highYield: true },
     ],
   },
   {
@@ -186,14 +180,14 @@ export const SUBJECTS: LawSubjectMeta[] = [
     aibeQuestions: 8,
     bareActs: ['Hindu Marriage Act, 1955', 'Hindu Succession Act, 1956', 'Hindu Adoption and Maintenance Act, 1956', 'Muslim Personal Law (relevant areas)', 'Special Marriage Act, 1954'],
     description: 'Hindu, Muslim, and Special Marriage Act — marriage, divorce, maintenance, succession, adoption.',
-    keywords: ['family law', 'hindu marriage', 'divorce', 'maintenance', 'succession', 'muslim law'],
+    keywords: ['family law', 'hindu marriage', 'divorce', 'maintenance', 'succession'],
     icon: 'Users',
     mcqSubjectKey: 'family',
     topics: [
       { id: 'hindu-marriage', name: 'Hindu Marriage Act', type: 'act', highYield: true, keywords: ['hindu marriage', 'divorce'] },
       { id: 'hindu-succession', name: 'Hindu Succession', type: 'act', keywords: ['succession', 'coparcenary'] },
       { id: 'adoption-maintenance', name: 'Adoption & Maintenance', type: 'theme', keywords: ['adoption', 'maintenance'] },
-      { id: 'muslim-law', name: 'Muslim Personal Law (essentials)', type: 'theme', keywords: ['muslim law', 'talaq', 'mehr'] },
+      { id: 'muslim-law', name: 'Muslim Personal Law (essentials)', type: 'theme', keywords: ['muslim law', 'talaq'] },
       { id: 'special-marriage', name: 'Special Marriage Act', type: 'act', keywords: ['special marriage'] },
     ],
   },
@@ -214,9 +208,29 @@ export const SUBJECTS: LawSubjectMeta[] = [
       { id: 'void-voidable', name: 'Void & Voidable Agreements', type: 'theme', highYield: true, keywords: ['void', 'voidable'] },
       { id: 'breach-remedies', name: 'Breach & Remedies', type: 'theme', keywords: ['breach', 'damages'] },
       { id: 'specific-relief', name: 'Specific Relief Act', type: 'act', keywords: ['specific performance', 'injunction'] },
-      { id: 'tpa', name: 'Transfer of Property Act (essentials)', type: 'act', keywords: ['tpa', 'sale', 'mortgage', 'lease'] },
-      { id: 'ni-act', name: 'Negotiable Instruments Act', type: 'act', highYield: true, keywords: ['cheque', 'section 138', 'ni act'] },
-      { id: 'doctrine-privity', name: 'Doctrine of Privity of Contract', type: 'doctrine', note: 'Only parties to a contract can sue; exceptions', keywords: ['privity', 'stranger to contract'], highYield: true },
+      { id: 'tpa', name: 'Transfer of Property Act (essentials)', type: 'act', keywords: ['tpa', 'sale', 'mortgage'] },
+      { id: 'ni-act', name: 'Negotiable Instruments Act', type: 'act', highYield: true, keywords: ['cheque', 'section 138'] },
+      { id: 'doctrine-privity', name: 'Doctrine of Privity of Contract', type: 'doctrine', note: 'Only parties to a contract can sue; exceptions', keywords: ['privity'], highYield: true },
+    ],
+  },
+  {
+    id: 'petition-formats',
+    slug: 'petition-formats',
+    name: 'Petition Formats & Drafting',
+    shortName: 'Formats',
+    priority: 'medium',
+    aibeQuestions: 0,
+    bareActs: ['CPC (Orders VI–VIII)', 'BNSS / CrPC', 'Constitution (Arts 32, 226)'],
+    description: 'Exam-oriented skeletons of common petitions and applications — writ petition, plaint, written statement, FIR, bail, PIL. Separate from subject-wise law topics.',
+    keywords: ['petition format', 'drafting', 'plaint', 'writ petition', 'fir', 'bail application', 'pil', 'written statement'],
+    icon: 'FilePen',
+    topics: [
+      { id: 'format-writ-petition', name: 'Writ Petition (Arts 32 & 226)', type: 'format', note: 'Skeleton + five writs; Art 32 vs 226', keywords: ['writ petition', 'habeas corpus', 'mandamus'], highYield: true },
+      { id: 'format-pil', name: 'Public Interest Litigation (PIL)', type: 'format', note: 'PIL petition skeleton under Art 32 / 226', keywords: ['pil', 'locus standi'], highYield: true },
+      { id: 'format-plaint', name: 'Plaint', type: 'format', note: 'Order VII CPC essentials; Order VII Rule 11', keywords: ['plaint', 'order 7'], highYield: true },
+      { id: 'format-written-statement', name: 'Written Statement', type: 'format', note: 'Order VIII CPC; denial, set-off, counter-claim', keywords: ['written statement', 'order 8'], highYield: true },
+      { id: 'format-fir', name: 'FIR', type: 'format', note: 'Essential contents of a First Information Report', keywords: ['fir', 'first information report'], highYield: true },
+      { id: 'format-bail-application', name: 'Bail / Anticipatory Bail Application', type: 'format', note: 'Structure of regular and anticipatory bail applications', keywords: ['bail', 'anticipatory bail'], highYield: true },
     ],
   },
   {
@@ -232,7 +246,7 @@ export const SUBJECTS: LawSubjectMeta[] = [
     icon: 'AlertTriangle',
     topics: [
       { id: 'negligence', name: 'Negligence', type: 'theme', highYield: true, keywords: ['negligence'] },
-      { id: 'strict-absolute', name: 'Strict & Absolute Liability', type: 'doctrine', note: 'Rylands v. Fletcher; M.C. Mehta absolute liability', keywords: ['strict liability', 'absolute liability', 'rylands', 'mc mehta'], highYield: true },
+      { id: 'strict-absolute', name: 'Strict & Absolute Liability', type: 'doctrine', note: 'Rylands v. Fletcher; M.C. Mehta absolute liability', keywords: ['strict liability', 'absolute liability'], highYield: true },
       { id: 'consumer', name: 'Consumer Protection', type: 'act', keywords: ['consumer', 'deficiency'] },
       { id: 'mv-act', name: 'Motor Vehicles Act (claims)', type: 'act', keywords: ['motor vehicles', 'compensation'] },
     ],
@@ -249,7 +263,7 @@ export const SUBJECTS: LawSubjectMeta[] = [
     keywords: ['arbitration', 'mediation', 'adr', 'lok adalat'],
     icon: 'Handshake',
     topics: [
-      { id: 'arbitration', name: 'Arbitration Act essentials', type: 'act', highYield: true, keywords: ['arbitration', 'arbitral award'] },
+      { id: 'arbitration', name: 'Arbitration Act essentials', type: 'act', highYield: true, keywords: ['arbitration'] },
       { id: 'mediation', name: 'Mediation', type: 'theme', keywords: ['mediation'] },
       { id: 'lok-adalat', name: 'Lok Adalat', type: 'theme', keywords: ['lok adalat'] },
     ],
@@ -262,13 +276,12 @@ export const SUBJECTS: LawSubjectMeta[] = [
     priority: 'medium',
     aibeQuestions: 4,
     bareActs: ['Constitution of India (Arts 32, 226)'],
-    description: 'Locus standi, PIL procedure, and landmark directions.',
+    description: 'Locus standi, PIL procedure, and landmark directions. (Petition skeleton is under Petition Formats.)',
     keywords: ['pil', 'public interest', 'locus standi'],
     icon: 'Megaphone',
     topics: [
       { id: 'locus', name: 'Locus Standi & PIL principles', type: 'theme', highYield: true, keywords: ['locus standi'] },
       { id: 'pil-procedure', name: 'PIL procedure & remedies', type: 'theme', keywords: ['pil procedure'] },
-      { id: 'format-pil', name: 'Format — Public Interest Litigation', type: 'format', note: 'Skeleton of a PIL petition (Art 32 / 226)', keywords: ['pil format', 'drafting', 'locus standi'], highYield: true },
     ],
   },
   {
@@ -297,7 +310,7 @@ export const SUBJECTS: LawSubjectMeta[] = [
     aibeQuestions: 4,
     bareActs: ['Industrial Disputes Act, 1947', 'Factories Act, 1948'],
     description: 'Industrial disputes, strikes, lockouts, and basic labour welfare provisions.',
-    keywords: ['labour', 'industrial disputes', 'strike', 'factories'],
+    keywords: ['labour', 'industrial disputes', 'strike'],
     icon: 'Factory',
     topics: [
       { id: 'id-act', name: 'Industrial Disputes Act', type: 'act', highYield: true, keywords: ['industrial disputes'] },
@@ -329,10 +342,10 @@ export const SUBJECTS: LawSubjectMeta[] = [
     aibeQuestions: 3,
     bareActs: [],
     description: 'Natural justice, delegated legislation, and judicial review of administrative action.',
-    keywords: ['administrative law', 'natural justice', 'delegated legislation'],
+    keywords: ['administrative law', 'natural justice'],
     icon: 'Building2',
     topics: [
-      { id: 'natural-justice', name: 'Principles of Natural Justice', type: 'theme', highYield: true, keywords: ['natural justice', 'audi alteram'] },
+      { id: 'natural-justice', name: 'Principles of Natural Justice', type: 'theme', highYield: true, keywords: ['natural justice'] },
       { id: 'delegated', name: 'Delegated Legislation', type: 'theme', keywords: ['delegated legislation'] },
       { id: 'judicial-review-admin', name: 'Judicial Review of Admin Action', type: 'theme', keywords: ['judicial review'] },
     ],
@@ -346,7 +359,7 @@ export const SUBJECTS: LawSubjectMeta[] = [
     aibeQuestions: 2,
     bareActs: ['Companies Act, 2013 (essentials)'],
     description: 'Incorporation, directors, and basic corporate concepts tested at AIBE level.',
-    keywords: ['company law', 'companies act', 'director'],
+    keywords: ['company law', 'companies act'],
     icon: 'Briefcase',
     topics: [
       { id: 'incorporation', name: 'Incorporation & Types of Companies', type: 'theme', keywords: ['incorporation'] },
@@ -365,7 +378,7 @@ export const SUBJECTS: LawSubjectMeta[] = [
     keywords: ['environment', 'pollution', 'epa'],
     icon: 'Leaf',
     topics: [
-      { id: 'constitutional-env', name: 'Constitutional provisions', type: 'theme', keywords: ['article 48a', 'article 51a'] },
+      { id: 'constitutional-env', name: 'Constitutional provisions', type: 'theme', keywords: ['article 48a'] },
       { id: 'epa', name: 'Environment Protection Act', type: 'act', keywords: ['epa'] },
     ],
   },
@@ -378,11 +391,9 @@ export const SUBJECTS: LawSubjectMeta[] = [
     aibeQuestions: 2,
     bareActs: ['Information Technology Act, 2000'],
     description: 'IT Act essentials — offences, intermediaries, and electronic records.',
-    keywords: ['cyber', 'it act', 'electronic evidence'],
+    keywords: ['cyber', 'it act'],
     icon: 'Monitor',
-    topics: [
-      { id: 'it-act', name: 'IT Act essentials', type: 'act', keywords: ['it act', 'section 66'] },
-    ],
+    topics: [{ id: 'it-act', name: 'IT Act essentials', type: 'act', keywords: ['it act'] }],
   },
   {
     id: 'land',
@@ -393,11 +404,9 @@ export const SUBJECTS: LawSubjectMeta[] = [
     aibeQuestions: 2,
     bareActs: ['Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013'],
     description: 'Acquisition process, compensation, and rehabilitation under the 2013 Act.',
-    keywords: ['land acquisition', 'compensation', 'rehabilitation'],
+    keywords: ['land acquisition', 'compensation'],
     icon: 'Map',
-    topics: [
-      { id: 'acquisition-process', name: 'Acquisition process & compensation', type: 'theme', keywords: ['land acquisition'] },
-    ],
+    topics: [{ id: 'acquisition-process', name: 'Acquisition process & compensation', type: 'theme', keywords: ['land acquisition'] }],
   },
   {
     id: 'ipr',
@@ -436,7 +445,6 @@ export function searchSubjectsAndTopics(query: string): {
 } {
   const q = query.trim().toLowerCase()
   if (!q) return { subjects: [], topics: [] }
-
   const subjects = SUBJECTS.filter(
     (s) =>
       s.name.toLowerCase().includes(q) ||
@@ -444,7 +452,6 @@ export function searchSubjectsAndTopics(query: string): {
       s.keywords.some((k) => k.includes(q)) ||
       s.bareActs.some((b) => b.toLowerCase().includes(q)),
   )
-
   const topics: { subject: LawSubjectMeta; topic: LawTopic }[] = []
   for (const s of SUBJECTS) {
     for (const t of s.topics) {
@@ -452,7 +459,6 @@ export function searchSubjectsAndTopics(query: string): {
       if (hay.includes(q)) topics.push({ subject: s, topic: t })
     }
   }
-
   return { subjects, topics }
 }
 
