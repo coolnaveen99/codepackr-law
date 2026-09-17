@@ -1,56 +1,57 @@
 import { McqQuestion } from '../../types'
+import { TORT_PART_1 } from './tortPart1'
+import { TORT_PART_2 } from './tortPart2'
+import { TORT_PART_3 } from './tortPart3'
+import { TORT_PART_4 } from './tortPart4'
+import { TORT_PART_5 } from './tortPart5'
 
-export const TORT_QUESTIONS: McqQuestion[] = [
-  { id:'tort-1', subject:'tort', subjectLabel:'Law of Torts', topicId:'negligence', question:'… are words, which appear innocent, but have a latent defamatory meaning', options:['Libel','Slander','Innuendo','None of the above'], correctIndex:2, explanation:'The source answer is (c) Innuendo.' },
-  { id:'tort-2', subject:'tort', subjectLabel:'Law of Torts', topicId:'negligence', question:'Unliquidated damages mean', options:['Damage to something solid.','Damage caused by a firm which has gone in liquidation','Damage to a firm in the hands of receivers.','Damage to be assessed by a court as these are not pre-determined.'], correctIndex:3, explanation:'The source answer is (d). Unliquidated damages are assessed by the court rather than predetermined.' },
-  { id:'tort-3', subject:'tort', subjectLabel:'Law of Torts', question:'Assault and nuisance are', options:['Wrong under Criminal law.','Wrong under tort.','Wrong under neither.','Wrong under both.'], correctIndex:3, explanation:'The source answer is (d). The source classifies both as wrongs under both criminal law and tort.' },
-  { id:'tort-4', subject:'tort', subjectLabel:'Law of Torts', question:'What is the legal meaning of the word Battery?', options:['Cells as used in torch, tape recorder etc.','Battering a person to death.','Actual or intended striking of another person.','Assault resulting in, at least, 6 months hospitalisation.'], correctIndex:2, explanation:'The source answer is (c).'},
-  { id:'tort-5', subject:'tort', subjectLabel:'Law of Torts', question:'When the master is held liable for the wrongful act of his servant, the liability is called', options:['Strict liability','Vicarious liability','Tortious liability','Absolute liability'], correctIndex:1, explanation:'The source answer is (b): vicarious liability.' },
-  { id:'tort-6', subject:'tort', subjectLabel:'Law of Torts', question:'The act of unlawfully entering into another’s property constitutes', options:['Trespass','Restraint','Appropriation','Encroachment'], correctIndex:0, explanation:'The source answer is (a): trespass.' },
-  { id:'tort-7', subject:'tort', subjectLabel:'Law of Torts', question:'No-fault liability means', options:['Liability for damage caused through negligence','Liability for damage caused through fault.','Absolute liability even without any negligence or fault.','Freedom from liability.'], correctIndex:2, explanation:'The source answer is (c).'},
-  { id:'tort-8', subject:'tort', subjectLabel:'Law of Torts', question:'Ramesh asks his servant to sell his cycle to him at a price less than that of market price. This contract can be avoided by the servant on the ground of', options:['Fraud','Mistake','Undue influence','Coercion'], correctIndex:2, explanation:'The source answer is (c): undue influence.' },
-  { id:'tort-9', subject:'tort', subjectLabel:'Law of Torts', question:'“Tortious liability arises from breach of duty, primarily fixed by law; this duty is towards persons generally and its breach is redressable by an action for unliquidated damages.” This definition is given by', options:['Winfield','Salmond','Flemmings','Goodheart'], correctIndex:0, explanation:'The source answer is (A) Winfield.' },
-  { id:'tort-10', subject:'tort', subjectLabel:'Law of Torts', question:'Which one of the following is not an example of vicarious liability?', options:['Liability of the principal for the tort of his agent.','Liability of partners for each others’ tort.','Liability of the master for the tort of his servant.','Liability of the parents for the tort of the children'], correctIndex:3, explanation:'The source answer is (D).'},
-  { id:'tort-11', subject:'tort', subjectLabel:'Law of Torts', question:'In an action for the tort of negligence, what is not required to be proved by the plaintiff?', options:['There is damage','Duty-situation arises','Breach of duty owed to someone','Breach of duty owed to the plaintiff'], correctIndex:2, explanation:'The source answer is (C).'},
-  { id:'tort-12', subject:'tort', subjectLabel:'Law of Torts', question:'Torts are grounded in the concept of', options:['Law','Court','Rights','Sincerity'], correctIndex:2, explanation:'The source answer is (C): rights.' },
-  { id:'tort-13', subject:'tort', subjectLabel:'Law of Torts', question:'Which of the following is not an element of an intentional tort?', options:['An intentional tort occurred.','An injury resulted from the tort.','The tort did not cause the injury.','The injury caused damages to the person.'], correctIndex:2, explanation:'The source answer is (C).'},
-  { id:'tort-14', subject:'tort', subjectLabel:'Law of Torts', question:'What main element differentiates the crime of battery from the tort of battery?', options:['In a criminal battery, two or more people must be present.','In a criminal battery, a person is actually injured. In a tort battery, the person is not hurt.','The unwanted touch; we have a right to be free from bodily harm.','There is no tort of battery. All batteries are crimes.'], correctIndex:2, explanation:'The source answer is (C).'},
-  { id:'tort-15', subject:'tort', subjectLabel:'Law of Torts', question:'Which of the following is an example of trespass?', options:["Ram walks in front of Raj's house, staying on the sidewalk.","Joy hunts on Ram's land without Ram's permission. While there, Joy shoots one of Ram's cows, mistaking the cow for a deer.","Josh borrows Luke's car after Josh asks Luke to run to the store to pick up some milk.","Lisa walks into Heather's house, who has invited her over for lunch."], correctIndex:1, explanation:'The source answer is (B).'},
-  { id:'tort-16', subject:'tort', subjectLabel:'Law of Torts', question:'A loud bass beat that can be heard through an apartment wall from another apartment at midnight can be classified as', options:['Nuisance','Trespass','Interference with contractual relations','Conversion'], correctIndex:0, explanation:'The source answer is (A): nuisance.'},
-  { id:'tort-17', subject:'tort', subjectLabel:'Law of Torts', question:'Defamation involves', options:['Using a weapon.','At least 5 people to be present.','A contract.','Making false statements about someone.'], correctIndex:3, explanation:'The source answer is (D).'},
-  { id:'tort-18', subject:'tort', subjectLabel:'Law of Torts', question:'Why is defamation a tort?', options:['Individuals have the right to be free from bodily harm.','Individuals have the right to conduct business without interference.','Individuals have the right to own property.','Individuals have the right to enjoy a good reputation.'], correctIndex:3, explanation:'The source answer is (D).'},
-  { id:'tort-19', subject:'tort', subjectLabel:'Law of Torts', question:'Which of the following constitutes slander?', options:['Jayanthi tells Raj that Connie stole $500 from the cash register at work, even though Jayanthi knows this is not true','Jayanthi writes an e-mail to Raj falsely stating that Connie stole $500.','Diane calls Jayanthi a liar in court.','Dan tells Raj, his boss, that Jayanthi stole $500 from the cash register at work. Dan and two other employees saw this.'], correctIndex:0, explanation:'The source answer is (A).'},
-  { id:'tort-20', subject:'tort', subjectLabel:'Law of Torts', question:'Negligence involves', options:['A crime','Carelessness','Assault','Trespass'], correctIndex:1, explanation:'The source answer is (B): carelessness.'},
-  { id:'tort-21', subject:'tort', subjectLabel:'Law of Torts', question:'This tort occurs most often in society.', options:['Assault','Nuisance','Defamation','Negligence'], correctIndex:3, explanation:'The source answer is (D): negligence.'},
-  { id:'tort-22', subject:'tort', subjectLabel:'Law of Torts', question:'Why is a reasonable person test used to determine breach of duty in a negligence case?', options:['Because each tort case is quite similar.','Because negligence involves being reasonable.','Because a breach of duty occurs when a person does not exercise the degree of care that a reasonable person would in the same situation','Because only reasonable persons are involved in breaches of duty.'], correctIndex:2, explanation:'The source answer is (C).'},
-  { id:'tort-23', subject:'tort', subjectLabel:'Law of Torts', question:'Damnum sine injuria means', options:['Damage without injury','Injury without damage','Damage with legal injury','None of the above'], correctIndex:0, explanation:'The source states: damage without injury; there is no violation of the legal right. Gloucester Grammar School case.'},
-  { id:'tort-24', subject:'tort', subjectLabel:'Law of Torts', question:'Injuria sine damno means', options:['Damage without injury','Injury without damage','Damage to property only','None of the above'], correctIndex:1, explanation:'The source states: injury without damage; legal injury may exist even without expressed damage. Ashby v White.'},
-  { id:'tort-25', subject:'tort', subjectLabel:'Law of Torts', question:'Compensation provided in the tort is generally', options:['Liquidated damages','Unliquidated damages','Nominal criminal punishment','Specific performance'], correctIndex:1, explanation:'The source answer is unliquidated damages.'},
-  { id:'tort-26', subject:'tort', subjectLabel:'Law of Torts', question:'Origin of the word tort', options:['French origin','German origin','Greek origin','Indian origin'], correctIndex:0, explanation:'The source says the word has French origin and refers to Latin tortum, meaning to twist.'},
-  { id:'tort-27', subject:'tort', subjectLabel:'Law of Torts', question:'Law of torts was propounded by', options:['Salmond','Winfield','Austin','Pollock'], correctIndex:0, explanation:'The source answer is Salmond and describes this as the Pigeon-hole theory.'},
-  { id:'tort-28', subject:'tort', subjectLabel:'Law of Torts', question:'Inducement of breach of contract was established in', options:['Lumley v Gye','Donoghue v Stevenson','Rylands v Fletcher','Pasley v Freeman'], correctIndex:0, explanation:'The source answer is Lumley v Gye.'},
-  { id:'tort-29', subject:'tort', subjectLabel:'Law of Torts', question:'The tort of deceit is found in which case?', options:['Pasley v Freeman','Lumley v Gye','Ashby v White','Rylands v Fletcher'], correctIndex:0, explanation:'The source answer is Pasley v Freeman.'},
-  { id:'tort-30', subject:'tort', subjectLabel:'Law of Torts', question:'The leading case on strict liability is', options:['Rylands v Fletcher','Donoghue v Stevenson','M.C. Mehta v Union of India','Ashby v White'], correctIndex:0, explanation:'The source answer is Rylands v Fletcher.'},
-  { id:'tort-31', subject:'tort', subjectLabel:'Law of Torts', question:'The case associated in the source with privity of contract in tort is', options:['Donoghue v Stevenson','Rylands v Fletcher','Lumley v Gye','Pasley v Freeman'], correctIndex:0, explanation:'The source answer is Donoghue v Stevenson.'},
-  { id:'tort-32', subject:'tort', subjectLabel:'Law of Torts', question:'The case associated with absolute liability is', options:['M.C. Mehta v Union of India','Rylands v Fletcher','Ashby v White','Donoghue v Stevenson'], correctIndex:0, explanation:'The source answer is M.C. Mehta v Union of India and describes absolute liability as strict liability with no exceptions.'},
-  { id:'tort-33', subject:'tort', subjectLabel:'Law of Torts', question:'Which of the following interests is not protected by the law of tort?', options:['Loss of commercial profit due to competition','Reputation','Physical safety',"Peaceful enjoyment of one's land"], correctIndex:0, explanation:'The source answer is (A).'},
-  { id:'tort-34', subject:'tort', subjectLabel:'Law of Torts', question:'What is meant by the term actionable per se?', options:['Actionable only in the civil courts','A tort of strict liability','Actionable without proof of damage','Actionable at the instance of the injured party only'], correctIndex:2, explanation:'The source answer is (C): actionable without proof of damage.'},
-  { id:'tort-35', subject:'tort', subjectLabel:'Law of Torts', question:'The law of contract is different from the law of tort in which way?', options:['It is actionable in both the civil and criminal courts','It generally concerns a relationship between two parties only','Contracts are always written','Tort is made up predominantly of statute law'], correctIndex:1, explanation:'The source answer is (B).'},
-  { id:'tort-36', subject:'tort', subjectLabel:'Law of Torts', question:'What is the primary function of the law of tort?', options:['The punishment of a wrongdoer','The clarification of the human rights of parties','The spreading of losses throughout society','Compensating the claimant'], correctIndex:3, explanation:'The source answer is (D).'},
-  { id:'tort-37', subject:'tort', subjectLabel:'Law of Torts', question:'Which of the following is not a required element in establishing a negligence action?', options:['Breach of duty','Malicious intent on the part of the defendant','Duty of care','Causation of damage of a legally recognised type'], correctIndex:1, explanation:'The source answer is (B).'},
-  { id:'tort-38', subject:'tort', subjectLabel:'Law of Torts', question:'Which of the following best describes the main function of duty of care in negligence?', options:['It ensures that the correct defendant is sued','It ensures that the claimant is always within the time limit for bringing an action','It ensures that the tort of negligence does not extend too widely','It ensures that the wrongdoer has actually been careless'], correctIndex:2, explanation:'The source answer is (C).'},
-  { id:'tort-213', subject:'tort', subjectLabel:'Law of Torts', topicId:'negligence', question:'Breach of legal duty to take care is called', options:['Moral negligence','Legal tort','Legal negligence','Lawful negligence'], correctIndex:2, explanation:'The answer key in the scanned source marks question 213 as (c).'},
-  { id:'tort-214', subject:'tort', subjectLabel:'Law of Torts', topicId:'defamation', question:'Punishment for defamation under the Indian Penal Code was simple imprisonment for a term which may extend to', options:['2 Years','3 Years','5 Years','7 Years'], correctIndex:0, explanation:'The source answer key marks question 214 as (a).'},
-  { id:'tort-215', subject:'tort', subjectLabel:'Law of Torts', topicId:'defences', question:'The meaning of audi alteram partem is', options:['A person cannot be condemned without being heard','No man can be a judge in his own case','A person must obey every order','No one should fear the courts'], correctIndex:0, explanation:'The source answer key marks question 215 as (a).'},
-  { id:'tort-216', subject:'tort', subjectLabel:'Law of Torts', topicId:'consumer', question:'Under the Consumer Protection Act, 2019, the National Consumer Disputes Redressal Commission has jurisdiction for complaints where the value of goods or services paid as consideration exceeds', options:['1 Crore','10 Crores','50 Crores','100 Crores'], correctIndex:1, explanation:'The scanned source answer key marks question 216 as (b).'},
-  { id:'tort-217', subject:'tort', subjectLabel:'Law of Torts', topicId:'consumer', question:'Under Section 41 of the Consumer Protection Act, 2019, an appeal from the order of District Commission lies to', options:['State Commission','Consumer Tribunal','National Commission','High Court'], correctIndex:0, explanation:'The source answer key marks question 217 as (a).'},
-  { id:'tort-218', subject:'tort', subjectLabel:'Law of Torts', topicId:'negligence', question:'An injunction which can only be granted by a decree made at the hearing and upon the merits of the suit, perpetually restraining the defendant, is a', options:['Temporary injunction','Perpetual injunction','Both Temporary and Perpetual','None of these'], correctIndex:1, explanation:'The source answer key marks question 218 as (b).'},
-  { id:'tort-219', subject:'tort', subjectLabel:'Law of Torts', topicId:'vicarious-liability', question:'A railway servant was killed in a bus accident during the course of employment. His family members may claim compensation under', options:['The Motor Vehicles Act','The Employees Compensation Act, 1923','Both (a) and (b)','Either under (a) or under (b)'], correctIndex:0, explanation:'The source answer key marks question 219 as (a).'},
-  { id:'tort-220', subject:'tort', subjectLabel:'Law of Torts', topicId:'motor-vehicles', question:'According to Section 2 of the Motor Vehicles Act, the term motor cab means any motor vehicle constructed or adapted to carry not more than', options:['5 passengers including the driver','6 passengers including the driver','5 passengers excluding the driver','6 passengers excluding the driver'], correctIndex:3, explanation:'The source answer key marks question 220 as (d).'},
-  { id:'tort-221', subject:'tort', subjectLabel:'Law of Torts', topicId:'defences', question:'The maxim actus non facit reum nisi mens sit rea means', options:['There can be no crime without a guilty mind','A crime has to be coupled with guilty mind','Crime is the result of guilty mind','In crime, intention is relevant; motive is not irrelevant'], correctIndex:0, explanation:'The source answer key marks question 221 as (a).'},
-  { id:'tort-222', subject:'tort', subjectLabel:'Law of Torts', topicId:'vicarious-liability', question:'Promissory estoppel against Government agencies is decided in', options:['Tunis v Atkinson','Dutton v Poole','Pournami Oil Mills v State of Kerala','Kedarnath Bhattacharjee v Gorie Mohammad'], correctIndex:2, explanation:'The source answer key marks question 222 as (c).'},
-  { id:'tort-223', subject:'tort', subjectLabel:'Law of Torts', topicId:'negligence', question:'A leading case law on the doctrine of impossibility is', options:['Edwards v Carter','Burnard v Haggis','Matthews v Baxter','Taylor v Caldwell'], correctIndex:0, explanation:'The source answer key marks question 223 as (a).'},
-  { id:'tort-224', subject:'tort', subjectLabel:'Law of Torts', topicId:'strict-absolute', question:'The doctrine of alternative danger was illustrated in', options:['Rylands v Fletcher','Jones v Boyce','Motins Costa v Roque A. Jacinto','None of the above'], correctIndex:1, explanation:'The source answer key marks question 224 as (b).'},
-  { id:'tort-225', subject:'tort', subjectLabel:'Law of Torts', topicId:'strict-absolute', question:'What does no-fault liability mean?', options:['Absolute liability even without any negligence or fault','Liability for damage caused through negligence','Both (a) and (b)','None of the above'], correctIndex:0, explanation:'The source answer key marks question 225 as (a).'},
-  { id:'tort-226', subject:'tort', subjectLabel:'Law of Torts', topicId:'vicarious-liability', question:'In Torts, all persons who aid, or counsel, or direct, or join in the commission of a wrongful act, are known as', options:['Abettors','Joint tortfeasors','Tort holders','Tort holders in common'], correctIndex:1, explanation:'The source answer key marks question 226 as (b): joint tortfeasors.'}
-]
+const TOPICS = [
+  'general-principles',
+  'negligence',
+  'defamation',
+  'nuisance',
+  'strict-absolute-liability',
+  'vicarious-liability',
+  'trespass-to-person',
+  'conspiracy',
+  'consumer-mv',
+] as const
+
+type RawTortQuestion = [string, [string, string, string, string], number, number]
+
+const RAW_TORT_QUESTIONS = [
+  ...TORT_PART_1,
+  ...TORT_PART_2,
+  ...TORT_PART_3,
+  ...TORT_PART_4,
+  ...TORT_PART_5,
+] as unknown as RawTortQuestion[]
+
+function cleanSourceText(value: string): string {
+  return value
+    .replace(/---PAGE\s+\d+[LR]---/gi, ' ')
+    .replace(/Guide to All India Bar Examination/gi, ' ')
+    .replace(/Multiple Choice Quest(?:ions|ia)?/gi, ' ')
+    .replace(/uestions on Law of Torts/gi, ' ')
+    .replace(/CE QUESTIONS ON\s*\)?F TORTS/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+export const TORT_QUESTIONS: McqQuestion[] = RAW_TORT_QUESTIONS.map(
+  ([question, rawOptions, correctIndex, topic], index) => {
+    const options = rawOptions.map(cleanSourceText) as [string, string, string, string]
+    return {
+      id: `tort-${index + 1}`,
+      subject: 'tort',
+      subjectLabel: 'Law of Torts',
+      question: cleanSourceText(question),
+      options,
+      correctIndex,
+      explanation: `Correct answer: ${options[correctIndex]} (option ${String.fromCharCode(65 + correctIndex)}). Answer marked from the answer key in TORTS MCQs.pdf.`,
+      examSource: 'TORTS MCQs.pdf',
+      difficulty: 'medium',
+      topicId: TOPICS[topic],
+    }
+  },
+)
