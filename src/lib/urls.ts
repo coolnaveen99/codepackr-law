@@ -12,6 +12,7 @@
 export type AppRoute =
   | { type: 'home' }
   | { type: 'tool'; slug: string }
+  | { type: 'case-law'; judgmentId?: string }
   | { type: 'subjects' }
   | { type: 'subject'; slug: string }
   | { type: 'topic'; subjectSlug: string; topicId: string }
@@ -27,6 +28,11 @@ export function parsePathname(pathname: string): AppRoute {
 
   const toolMatch = path.match(/^\/tool\/([a-z0-9-]+)$/i)
   if (toolMatch) return { type: 'tool', slug: toolMatch[1] }
+
+  const judgmentMatch = path.match(/^\/case-law\/judgment\/([a-z0-9-]+)$/i)
+  if (judgmentMatch) return { type: 'case-law', judgmentId: judgmentMatch[1] }
+
+  if (path === '/case-law') return { type: 'case-law' }
 
   const topicMatch = path.match(/^\/subjects\/([a-z0-9-]+)\/([a-z0-9-]+)$/i)
   if (topicMatch) return { type: 'topic', subjectSlug: topicMatch[1], topicId: topicMatch[2] }
@@ -71,6 +77,10 @@ export function setToolUrl(slug: string | null) {
   else navigate('/')
 }
 
+export function setCaseLawUrl(judgmentId?: string) {
+  navigate(judgmentId ? `/case-law/judgment/${judgmentId}` : '/case-law')
+}
+
 export function setSubjectsUrl() {
   navigate('/subjects')
 }
@@ -99,6 +109,7 @@ export function migrateHashToPath(): boolean {
   const route = parsePathname(hash.startsWith('/') ? hash : `/${hash}`)
   let path = '/'
   if (route.type === 'tool') path = `/tool/${route.slug}`
+  else if (route.type === 'case-law') path = route.judgmentId ? `/case-law/judgment/${route.judgmentId}` : '/case-law'
   else if (route.type === 'subjects') path = '/subjects'
   else if (route.type === 'subject') path = `/subjects/${route.slug}`
   else if (route.type === 'topic') path = `/subjects/${route.subjectSlug}/${route.topicId}`

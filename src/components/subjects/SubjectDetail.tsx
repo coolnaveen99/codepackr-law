@@ -1,6 +1,5 @@
 import {
   ArrowLeft,
-  BookOpen,
   ChevronRight,
   Sparkles,
   Scale,
@@ -10,7 +9,6 @@ import type { LawSubjectMeta, LawTopic } from '../../data/subjects'
 interface SubjectDetailProps {
   subject: LawSubjectMeta
   onBack: () => void
-  onQuickPractice: () => void
   onSelectTopic: (topic: LawTopic) => void
   searchQuery: string
   onSearchChange: (q: string) => void
@@ -38,7 +36,6 @@ function topicTypeLabel(type: LawTopic['type']) {
 export function SubjectDetail({
   subject,
   onBack,
-  onQuickPractice,
   onSelectTopic,
   searchQuery,
   onSearchChange,
@@ -90,14 +87,6 @@ export function SubjectDetail({
             )}
           </div>
 
-          <button
-            type="button"
-            onClick={onQuickPractice}
-            className="shrink-0 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 transition shadow-sm"
-          >
-            <BookOpen className="w-4 h-4" />
-            Quick practice
-          </button>
         </div>
       </div>
 
@@ -141,8 +130,8 @@ export function SubjectDetail({
 
       {subject.topics.length > 0 && topics.length > 0 && (
         <p className="text-xs text-slate-400">
-          Topics include doctrines and petition formats where relevant. Click any topic for notes;
-          MCQs stay separate via Quick practice.
+          Topics include doctrines and petition formats where relevant. Click any topic to open its
+          complete Study Topic reader; testing remains separate in the MCQ tool.
         </p>
       )}
     </div>

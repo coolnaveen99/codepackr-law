@@ -32,6 +32,43 @@ Includes a wide range of rights relating to individual autonomy, subject to fair
 Exam focus
 Link Maneka + golden triangle in almost every Art 21 answer. Privacy is now part of Art 21 (Puttaswamy). AIBE and Judiciary papers frequently test expansion cases.`,
 
+  sections: [
+    {
+      id: 'art-21-core-principle',
+      title: 'Core constitutional principle',
+      order: 1,
+      content: [
+        'Article 21 protects life and personal liberty against deprivation except through legally authorised procedure.',
+        'After Maneka Gandhi, that procedure must also be fair, just and reasonable.',
+      ],
+    },
+    {
+      id: 'art-21-expanding-rights',
+      title: 'Rights developed under Article 21',
+      order: 2,
+      content: [
+        'The guarantee has been interpreted to include dignity, privacy, health, a clean environment, speedy trial and livelihood in appropriate contexts.',
+      ],
+    },
+  ],
+
+  provisions: [
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-21', article: 'Article 21', title: 'Protection of life and personal liberty' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-14', article: 'Article 14', title: 'Equality before law' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-19', article: 'Article 19', title: 'Protection of freedoms' },
+  ],
+
+  examples: [
+    { id: 'art-21-procedure-example', title: 'Fair procedure', description: 'A law authorising deprivation of liberty cannot be applied through an arbitrary or oppressive procedure; the decision-making process must satisfy constitutional fairness.' },
+  ],
+
+  questionsAndAnswers: [
+    { id: 'art-21-qa-1', question: 'What changed after Maneka Gandhi?', answer: 'Procedure under Article 21 must be fair, just and reasonable.', explanation: 'Articles 14, 19 and 21 are read together rather than as isolated guarantees.', relatedProvisionIds: ['constitution-article-21'] },
+    { id: 'art-21-qa-2', question: 'Is privacy connected with Article 21?', answer: 'Yes. The right to privacy is a fundamental right linked to life, personal liberty and autonomy.', relatedProvisionIds: ['constitution-article-21'] },
+  ],
+
+  relatedTopics: ['Article 14 — Equality', 'Article 19 — Freedoms', 'Fundamental Rights', 'Doctrine of Basic Structure'],
+
   cases: [
     {
       name: 'Maneka Gandhi v. Union of India',

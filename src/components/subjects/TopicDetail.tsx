@@ -17,11 +17,12 @@ import {
 } from '../../data/topics/loadTopicContent'
 import { Badge } from '../ui/Badge'
 
+const TOPIC_PROGRESS_KEY = 'codepackr-law-topic-progress'
+
 interface TopicDetailProps {
   subject: LawSubjectMeta
   topic: LawTopic
   onBack: () => void
-  onPracticeTopic?: () => void
 }
 
 function topicTypeLabel(type: LawTopic['type']) {
@@ -47,19 +48,26 @@ export function TopicDetail({
   subject,
   topic,
   onBack,
-  onPracticeTopic,
 }: TopicDetailProps) {
-  const [view, setView] = useState<'short' | 'detailed'>('short')
   const [copiedCaseId, setCopiedCaseId] = useState<string | null>(null)
   const [tipsOpen, setTipsOpen] = useState(true)
   const [content, setContent] = useState<TopicContent | null>(null)
   const [loading, setLoading] = useState(true)
+  const [studyComplete, setStudyComplete] = useState(false)
+
+  useEffect(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(TOPIC_PROGRESS_KEY) || '{}') as Record<string, boolean>
+      setStudyComplete(Boolean(saved[`${subject.slug}/${topic.id}`]))
+    } catch {
+      setStudyComplete(false)
+    }
+  }, [subject.slug, topic.id])
 
   useEffect(() => {
     let cancelled = false
     setLoading(true)
     setContent(null)
-    setView('short')
 
     loadTopicContent(subject.slug, topic.id).then((data) => {
       if (!cancelled) {
@@ -73,7 +81,8 @@ export function TopicDetail({
     }
   }, [subject.slug, topic.id])
 
-  const hasContent = Boolean(content?.short || content?.detailed)
+  const studyContent = content?.detailed || content?.short || ''
+  const hasContent = Boolean(studyContent)
   const hasCases = (content?.cases?.length ?? 0) > 0
 
   const handleCopyCase = (c: CaseCitation, idx: number) => {
@@ -91,6 +100,17 @@ export function TopicDetail({
     navigator.clipboard.writeText(text)
     setCopiedCaseId(String(idx))
     setTimeout(() => setCopiedCaseId(null), 2000)
+  }
+
+  const toggleStudyComplete = () => {
+    const key = `${subject.slug}/${topic.id}`
+    const nextValue = !studyComplete
+    setStudyComplete(nextValue)
+    try {
+      const saved = JSON.parse(localStorage.getItem(TOPIC_PROGRESS_KEY) || '{}') as Record<string, boolean>
+      localStorage.setItem(TOPIC_PROGRESS_KEY, JSON.stringify({ ...saved, [key]: nextValue }))
+    } catch {
+    }
   }
 
   return (
@@ -126,18 +146,15 @@ export function TopicDetail({
             {topic.note && (
               <p className="text-sm text-slate-600 dark:text-slate-400">{topic.note}</p>
             )}
+              <button
+                type="button"
+                onClick={toggleStudyComplete}
+                className={`inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border text-sm font-semibold transition ${studyComplete ? 'border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300' : 'border-blue-200 text-blue-700 hover:bg-blue-50 dark:border-blue-900 dark:text-blue-300 dark:hover:bg-blue-950/40'}`}
+              >
+                {studyComplete ? 'Study completed' : 'Mark study complete'}
+              </button>
           </div>
 
-          {onPracticeTopic && (
-            <button
-              type="button"
-              onClick={onPracticeTopic}
-              className="shrink-0 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 transition shadow-sm"
-            >
-              <BookOpen className="w-4 h-4" />
-              Practice MCQs
-            </button>
-          )}
         </div>
       </div>
 
@@ -148,37 +165,14 @@ export function TopicDetail({
         </div>
       )}
 
-      {!loading && hasContent && (
-        <div className="flex items-center gap-1 p-1 rounded-xl bg-slate-100 dark:bg-slate-800/80 w-fit">
-          <button
-            type="button"
-            onClick={() => setView('short')}
-            className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition ${
-              view === 'short'
-                ? 'bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 shadow-sm'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'
-            }`}
-          >
-            Short Version
-          </button>
-          <button
-            type="button"
-            onClick={() => setView('detailed')}
-            className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition ${
-              view === 'detailed'
-                ? 'bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 shadow-sm'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'
-            }`}
-          >
-            Detailed Version
-          </button>
-        </div>
-      )}
-
       {!loading && hasContent && content && (
         <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
+          <div className="flex items-center gap-2 mb-4">
+            <BookOpen className="w-5 h-5 text-blue-600" />
+            <h3 className="text-lg font-bold text-slate-900 dark:text-white">Study Topic</h3>
+          </div>
           <p className="text-sm sm:text-[15px] leading-relaxed text-slate-700 dark:text-slate-300 whitespace-pre-line">
-            {view === 'short' ? content.short : content.detailed || content.short}
+            {studyContent}
           </p>
 
           {content.bareActPointers && content.bareActPointers.length > 0 && (
@@ -198,6 +192,39 @@ export function TopicDetail({
               </div>
             </div>
           )}
+        </section>
+      )}
+
+      {!loading && content?.sections && content.sections.length > 0 && (
+        <section className="space-y-4">
+          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Study Sections</h3>
+          {content.sections.slice().sort((a, b) => a.order - b.order).map((section) => (
+            <article key={section.id} id={section.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
+              <h4 className="font-semibold text-slate-900 dark:text-white">{section.title}</h4>
+              <div className="mt-3 space-y-2 text-sm leading-relaxed text-slate-700 dark:text-slate-300">{section.content.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
+            </article>
+          ))}
+        </section>
+      )}
+
+      {!loading && content?.provisions && content.provisions.length > 0 && (
+        <section className="rounded-2xl border border-blue-200 dark:border-blue-900/60 bg-blue-50/50 dark:bg-blue-950/20 p-5 sm:p-6">
+          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Relevant Provisions</h3>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">{content.provisions.map((provision) => <div key={provision.provisionId} className="rounded-xl border border-blue-100 dark:border-blue-900/60 bg-white dark:bg-slate-900 p-4"><p className="text-xs font-semibold text-blue-600">{provision.article || provision.section || provision.provisionId}</p><p className="mt-1 text-sm font-semibold">{provision.title || provision.actName}</p><p className="mt-1 text-xs text-slate-500">{provision.actName}</p></div>)}</div>
+        </section>
+      )}
+
+      {!loading && content?.examples && content.examples.length > 0 && (
+        <section className="space-y-3">
+          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Examples</h3>
+          <div className="grid gap-3 sm:grid-cols-2">{content.examples.map((example) => <article key={example.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4"><h4 className="font-semibold text-sm">{example.title || 'Illustration'}</h4><p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">{example.description}</p></article>)}</div>
+        </section>
+      )}
+
+      {!loading && content?.questionsAndAnswers && content.questionsAndAnswers.length > 0 && (
+        <section className="space-y-3">
+          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Questions &amp; Answers</h3>
+          {content.questionsAndAnswers.map((item) => <article key={item.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4"><h4 className="font-semibold text-sm text-slate-900 dark:text-white">Q. {item.question}</h4><p className="mt-3 text-sm leading-relaxed text-slate-700 dark:text-slate-300"><strong>Answer:</strong> {item.answer}</p>{item.explanation && <p className="mt-2 text-xs leading-relaxed text-slate-500"><strong>Explanation:</strong> {item.explanation}</p>}</article>)}
         </section>
       )}
 
@@ -306,6 +333,13 @@ export function TopicDetail({
               ))}
             </ul>
           )}
+        </section>
+      )}
+
+      {!loading && content?.relatedTopics && content.relatedTopics.length > 0 && (
+        <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
+          <h3 className="text-sm font-semibold text-slate-900 dark:text-white">Related Topics</h3>
+          <div className="mt-3 flex flex-wrap gap-2">{content.relatedTopics.map((relatedTopic) => <span key={relatedTopic} className="rounded-lg bg-slate-100 dark:bg-slate-800 px-2.5 py-1 text-xs text-slate-600 dark:text-slate-300">{relatedTopic}</span>)}</div>
         </section>
       )}
 

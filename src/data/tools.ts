@@ -70,4 +70,16 @@ export const TOOLS: ToolMetadata[] = [
     badge: 'Case Law',
     priority: 6,
   },
+  {
+    id: 'case-law-library',
+    slug: 'case-law',
+    name: 'Case Law Library & Judgment Reader',
+    category: 'reference',
+    description: 'Search and study important Indian judgments through facts, issues, provisions, reasoning, ratio, exam points, and practice MCQs.',
+    keywords: ['case law', 'judgment reader', 'supreme court', 'ratio decidendi', 'exam notes', 'judiciary', 'aibe'],
+    icon: 'Library',
+    badge: 'New',
+    priority: 7,
+    featured: true,
+  },
 ]

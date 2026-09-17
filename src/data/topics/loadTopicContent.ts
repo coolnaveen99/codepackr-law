@@ -8,9 +8,44 @@
 
 import type { CaseCitation } from '../subjects'
 
+export interface TopicSection {
+  id: string
+  title: string
+  content: string[]
+  order: number
+}
+
+export interface TopicProvision {
+  actId: string
+  actName: string
+  provisionId: string
+  section?: string
+  article?: string
+  title?: string
+}
+
+export interface TopicExample {
+  id: string
+  title?: string
+  description: string
+}
+
+export interface TopicQuestionAnswer {
+  id: string
+  question: string
+  answer: string
+  explanation?: string
+  relatedProvisionIds?: string[]
+}
+
 export interface TopicContent {
   short: string
   detailed: string
+  sections?: TopicSection[]
+  provisions?: TopicProvision[]
+  examples?: TopicExample[]
+  questionsAndAnswers?: TopicQuestionAnswer[]
+  relatedTopics?: string[]
   cases?: CaseCitation[]
   bareActPointers?: string[]
   examTips?: string[]

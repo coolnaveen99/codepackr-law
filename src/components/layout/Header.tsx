@@ -23,18 +23,6 @@ export const Header: React.FC<HeaderProps> = ({
     <header className="border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-950/90 backdrop-blur sticky top-0 z-50 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
         <div className="flex items-center gap-3 min-w-0">
-          <a
-            href="https://www.codepackr.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition flex-shrink-0"
-            title="Return to Codepackr Dev Suite"
-          >
-            ← Codepackr Dev Suite
-          </a>
-
-          <div className="h-4 w-px bg-slate-200 dark:bg-slate-800 hidden sm:block" />
-
           {currentLabel ? (
             <button
               onClick={onBackToHome}

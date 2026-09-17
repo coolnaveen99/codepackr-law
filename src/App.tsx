@@ -10,6 +10,7 @@ import {
   ShieldCheck,
   ArrowRight,
   BookOpen,
+  Library,
 } from 'lucide-react'
 import { TOOLS } from './data/tools'
 import { ToolMetadata, ToolCategory } from './types'
@@ -20,6 +21,7 @@ import {
   setSubjectUrl,
   setTopicUrl,
   setHomeUrl,
+  setCaseLawUrl,
   migrateHashToPath,
 } from './lib/urls'
 import { setPageMeta, SITE_NAME, SITE_TAGLINE } from './lib/seo'
@@ -27,7 +29,6 @@ import {
   getSubjectBySlug,
   getTopic,
   searchSubjectsAndTopics,
-  type LawSubjectMeta,
   type LawTopic,
 } from './data/subjects'
 import { Header } from './components/layout/Header'
@@ -43,6 +44,7 @@ import { SectionFlashcards } from './components/tools/SectionFlashcards'
 import { ExamTimer } from './components/tools/ExamTimer'
 import { LegalMaximsTool } from './components/tools/LegalMaximsTool'
 import { LandmarkCasesTool } from './components/tools/LandmarkCasesTool'
+import { CaseLawLibrary } from './components/tools/CaseLawLibrary'
 
 export default function App() {
   const [dark, setDark] = useState(() => {
@@ -113,11 +115,19 @@ export default function App() {
       }
       return
     }
+    if (route.type === 'case-law') {
+      setPageMeta({
+        title: route.judgmentId ? `Judgment Reader | ${SITE_NAME}` : `Case Law Library | ${SITE_NAME}`,
+        description: 'Study important Indian judgments through facts, legal issues, provisions, reasoning, ratio and exam notes.',
+        path: route.judgmentId ? `/case-law/judgment/${route.judgmentId}` : '/case-law',
+      })
+      return
+    }
     if (route.type === 'subjects') {
       setPageMeta({
         title: `All Subjects — AIBE & Judiciary | ${SITE_NAME}`,
         description:
-          'Browse all 19 AIBE subjects plus petition formats. Open short and detailed notes, case laws, and jump to MCQ practice. Built for AIBE and State Judiciary prelims.',
+          'Browse Indian law subjects and study topic-by-topic through structured notes, case laws, provisions, and exam points. Built for AIBE and State Judiciary prelims.',
         path: '/subjects',
       })
       return
@@ -127,7 +137,7 @@ export default function App() {
       if (subject) {
         setPageMeta({
           title: `${subject.name} — Topics & Notes | ${SITE_NAME}`,
-          description: `${subject.description} High-yield topics, doctrines, and quick practice for AIBE and Judiciary.`,
+          description: `${subject.description} High-yield topics, doctrines, and structured study content for AIBE and Judiciary.`,
           path: `/subjects/${subject.slug}`,
         })
       } else {
@@ -146,7 +156,7 @@ export default function App() {
         const tip = topic.note ? ` ${topic.note}` : ''
         setPageMeta({
           title: `${topic.name} — ${subject.shortName} | ${SITE_NAME}`,
-          description: `Learn ${topic.name} (${subject.name}): short and detailed notes, case laws, and exam tips for AIBE and Judiciary.${tip}`,
+          description: `Study ${topic.name} (${subject.name}): structured notes, case laws, provisions, and exam tips for AIBE and Judiciary.${tip}`,
           path: `/subjects/${subject.slug}/${topic.id}`,
         })
       } else {
@@ -160,6 +170,12 @@ export default function App() {
   }, [route])
 
   const handleSelectTool = (slug: string) => {
+    if (slug === 'case-law') {
+      setCaseLawUrl()
+      setRoute({ type: 'case-law' })
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      return
+    }
     setToolUrl(slug)
     setRoute({ type: 'tool', slug })
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -170,6 +186,12 @@ export default function App() {
     setRoute({ type: 'home' })
     setSearchQuery('')
     setSubjectSearch('')
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const handleOpenJudgment = (judgmentId?: string) => {
+    setCaseLawUrl(judgmentId)
+    setRoute({ type: 'case-law', ...(judgmentId ? { judgmentId } : {}) })
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
@@ -193,17 +215,6 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
-  const handleQuickPractice = (subject?: LawSubjectMeta) => {
-    setToolUrl('aibe-mcq')
-    setRoute({ type: 'tool', slug: 'aibe-mcq' })
-    if (subject?.mcqSubjectKey) {
-      try {
-        sessionStorage.setItem('codepackr-law-mcq-subject', subject.mcqSubjectKey)
-      } catch {}
-    }
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
-
   const activeTool: ToolMetadata | undefined =
     route.type === 'tool' ? TOOLS.find((t) => t.slug === route.slug) : undefined
 
@@ -220,6 +231,8 @@ export default function App() {
   const headerLabel =
     route.type === 'tool'
       ? activeTool?.name
+      : route.type === 'case-law'
+        ? route.judgmentId ? 'Judgment Reader' : 'Case Law Library'
       : route.type === 'subjects'
         ? 'Subjects'
         : route.type === 'subject'
@@ -260,6 +273,8 @@ export default function App() {
         return <ScrollText className={className} />
       case 'Scale':
         return <Scale className={className} />
+      case 'Library':
+        return <Library className={className} />
       default:
         return <BookOpenCheck className={className} />
     }
@@ -286,6 +301,13 @@ export default function App() {
         />
 
         <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-8">
+          {route.type === 'case-law' && (
+            <CaseLawLibrary
+              judgmentId={route.judgmentId}
+              onOpenJudgment={handleOpenJudgment}
+              onBackToLibrary={() => handleOpenJudgment()}
+            />
+          )}
           {route.type === 'tool' && activeTool && (
             <div className="space-y-6">
               {activeTool.slug === 'aibe-mcq' && <AibeMcqPractice />}
@@ -302,7 +324,6 @@ export default function App() {
               searchQuery={subjectSearch}
               onSearchChange={setSubjectSearch}
               onSelectSubject={handleSelectSubject}
-              onQuickPractice={handleQuickPractice}
             />
           )}
 
@@ -310,7 +331,6 @@ export default function App() {
             <SubjectDetail
               subject={activeSubject}
               onBack={handleOpenSubjects}
-              onQuickPractice={() => handleQuickPractice(activeSubject)}
               onSelectTopic={(topic) => handleSelectTopic(activeSubject.slug, topic)}
               searchQuery={subjectSearch}
               onSearchChange={setSubjectSearch}
@@ -322,7 +342,6 @@ export default function App() {
               subject={activeTopicPair.subject}
               topic={activeTopicPair.topic}
               onBack={() => handleSelectSubject(activeTopicPair.subject.slug)}
-              onPracticeTopic={() => handleQuickPractice(activeTopicPair.subject)}
             />
           )}
 

@@ -16,7 +16,6 @@ interface SubjectsListProps {
   searchQuery: string
   onSearchChange: (q: string) => void
   onSelectSubject: (slug: string) => void
-  onQuickPractice: (subject: LawSubjectMeta) => void
 }
 
 function priorityBadgeClass(p: SubjectPriority) {
@@ -29,7 +28,6 @@ export function SubjectsList({
   searchQuery,
   onSearchChange,
   onSelectSubject,
-  onQuickPractice,
 }: SubjectsListProps) {
   const q = searchQuery.trim().toLowerCase()
 
@@ -60,7 +58,7 @@ export function SubjectsList({
           All Law Subjects
         </h2>
         <p className="text-sm text-slate-600 dark:text-slate-400">
-          Browse by exam weightage. Open a subject for topics, sections, and articles — then practice MCQs when content is ready.
+          Browse by exam weightage. Open a subject to learn its topics, sections, and articles.
         </p>
       </div>
 
@@ -131,13 +129,6 @@ export function SubjectsList({
                       className="text-xs font-semibold text-blue-600 dark:text-blue-400 inline-flex items-center gap-1 hover:underline"
                     >
                       Topics <ChevronRight className="w-3.5 h-3.5" />
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => onQuickPractice(subject)}
-                      className="text-xs font-semibold px-2.5 py-1 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition"
-                    >
-                      Quick practice
                     </button>
                   </div>
                 </div>

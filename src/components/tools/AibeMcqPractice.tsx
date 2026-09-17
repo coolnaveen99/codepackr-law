@@ -18,6 +18,8 @@ import { ALL_QUESTIONS, SUBJECT_OPTIONS } from '../../data/questions'
 import { LawSubject, McqQuestion } from '../../types'
 import { Badge } from '../ui/Badge'
 import { shuffleArray } from '../../lib/utils'
+import { formatDuration } from '../../lib/utils'
+import { getAvailableQuestions, selectQuestions, type QuestionPoolType } from '../../utils/questions/questionSelection'
 
 type MatchPair = { left: string; right: string }
 
@@ -82,7 +84,14 @@ function QuestionPrompt({ text }: { text: string }) {
 export const AibeMcqPractice: React.FC = () => {
   const [selectedSubject, setSelectedSubject] = useState<LawSubject>('all')
   const [mode, setMode] = useState<'practice' | 'exam'>('practice')
-  const [currentQuestions, setCurrentQuestions] = useState<McqQuestion[]>(() => [...ALL_QUESTIONS])
+  const [topicId, setTopicId] = useState('')
+  const [poolType, setPoolType] = useState<QuestionPoolType>('all')
+  const [questionCount, setQuestionCount] = useState(10)
+  const [durationMinutes, setDurationMinutes] = useState(30)
+  const [remainingSeconds, setRemainingSeconds] = useState(30 * 60)
+  const [sessionStarted, setSessionStarted] = useState(false)
+  const [timerPaused, setTimerPaused] = useState(false)
+  const [currentQuestions, setCurrentQuestions] = useState<McqQuestion[]>(() => selectQuestions({ questions: ALL_QUESTIONS, count: 10 }))
   const [currentIndex, setCurrentIndex] = useState(0)
   const [userAnswers, setUserAnswers] = useState<Record<string, number>>({})
   const [markedForReview, setMarkedForReview] = useState<Set<string>>(new Set())
@@ -90,14 +99,38 @@ export const AibeMcqPractice: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [showDemoFeedback, setShowDemoFeedback] = useState(false)
 
+  const availableQuestions = getAvailableQuestions({ questions: ALL_QUESTIONS, subject: selectedSubject, topicId, poolType })
+
   useEffect(() => {
-    const list = selectedSubject === 'all' ? [...ALL_QUESTIONS] : ALL_QUESTIONS.filter((q) => q.subject === selectedSubject)
+    const list = selectQuestions({ questions: ALL_QUESTIONS, subject: selectedSubject, topicId, poolType, count: questionCount })
     setCurrentQuestions(list)
     setCurrentIndex(0)
     setUserAnswers({})
     setMarkedForReview(new Set())
     setIsSubmitted(false)
-  }, [selectedSubject])
+  }, [selectedSubject, topicId, poolType, questionCount])
+
+  useEffect(() => {
+    setRemainingSeconds(durationMinutes * 60)
+  }, [durationMinutes, mode])
+
+  useEffect(() => {
+    if (mode === 'practice' && ![10, 15, 20].includes(questionCount)) setQuestionCount(10)
+  }, [mode, questionCount])
+
+  useEffect(() => {
+    if (!sessionStarted || mode !== 'exam' || isSubmitted || timerPaused || remainingSeconds <= 0) return
+    const timer = window.setInterval(() => {
+      setRemainingSeconds((seconds) => {
+        if (seconds <= 1) {
+          setIsSubmitted(true)
+          return 0
+        }
+        return seconds - 1
+      })
+    }, 1000)
+    return () => window.clearInterval(timer)
+  }, [mode, isSubmitted, remainingSeconds, sessionStarted, timerPaused])
 
   const currentQ = currentQuestions[currentIndex]
   const currentSelectedOption = currentQ ? userAnswers[currentQ.id] : undefined
@@ -129,10 +162,32 @@ export const AibeMcqPractice: React.FC = () => {
     setter((prev) => { const next = new Set(prev); next.has(id) ? next.delete(id) : next.add(id); return next })
   }
 
-  const reset = () => { setUserAnswers({}); setMarkedForReview(new Set()); setIsSubmitted(false); setCurrentIndex(0); setShowDemoFeedback(false) }
+  const startSession = () => {
+    if (availableQuestions.length === 0) return
+    setCurrentQuestions(selectQuestions({ questions: ALL_QUESTIONS, subject: selectedSubject, topicId, poolType, count: questionCount }))
+    setUserAnswers({})
+    setMarkedForReview(new Set())
+    setIsSubmitted(false)
+    setCurrentIndex(0)
+    setRemainingSeconds(durationMinutes * 60)
+    setTimerPaused(false)
+    setSessionStarted(true)
+    setShowDemoFeedback(false)
+  }
+
+  const stopSession = () => {
+    setSessionStarted(false)
+    setTimerPaused(false)
+    setIsSubmitted(false)
+    setUserAnswers({})
+    setMarkedForReview(new Set())
+    setCurrentIndex(0)
+  }
+
+  const reset = () => { stopSession(); setShowDemoFeedback(false); setTopicId(''); setPoolType('all'); setQuestionCount(10); setDurationMinutes(30) }
   const loadDemo = () => {
     const demo = shuffleArray([...ALL_QUESTIONS]).slice(0, 5)
-    setCurrentQuestions(demo); setCurrentIndex(0); setUserAnswers({ [demo[0].id]: demo[0].correctIndex }); setMarkedForReview(new Set(demo[1] ? [demo[1].id] : [])); setIsSubmitted(false); setShowDemoFeedback(true)
+    setCurrentQuestions(demo); setCurrentIndex(0); setUserAnswers({ [demo[0].id]: demo[0].correctIndex }); setMarkedForReview(new Set(demo[1] ? [demo[1].id] : [])); setIsSubmitted(false); setSessionStarted(true); setTimerPaused(false); setShowDemoFeedback(true)
   }
 
   return (
@@ -149,17 +204,28 @@ export const AibeMcqPractice: React.FC = () => {
           </div>
         </div>
         {showDemoFeedback && <div className="mt-4 p-3 rounded-xl bg-blue-50 dark:bg-blue-950/50 border border-blue-200 dark:border-blue-900 text-xs text-blue-800 dark:text-blue-200">✨ Demo mode loaded: 5 sample questions.</div>}
-        <div className="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
-          <div className="flex items-center gap-2"><ListFilter className="w-4 h-4 text-slate-400"/><select value={selectedSubject} onChange={(e) => setSelectedSubject(e.target.value as LawSubject)} className="text-xs sm:text-sm font-medium px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900"><option value="all">All Subjects ({ALL_QUESTIONS.length})</option>{SUBJECT_OPTIONS.filter((s) => s.value !== 'all').map((s) => <option key={s.value} value={s.value}>{s.label} ({s.count})</option>)}</select></div>
-          <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl"><button onClick={() => setMode('practice')} className={`text-xs px-3 py-1.5 rounded-lg font-medium ${mode === 'practice' ? 'bg-white dark:bg-slate-900 text-blue-600 shadow-sm' : 'text-slate-600'}`}>Practice Mode</button><button onClick={() => setMode('exam')} className={`text-xs px-3 py-1.5 rounded-lg font-medium ${mode === 'exam' ? 'bg-white dark:bg-slate-900 text-blue-600 shadow-sm' : 'text-slate-600'}`}>Exam Simulation</button></div>
+        <div className="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 space-y-3">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+            <div className="flex items-center gap-2"><ListFilter className="w-4 h-4 text-slate-400"/><select value={selectedSubject} onChange={(e) => { setSelectedSubject(e.target.value as LawSubject); setTopicId('') }} className="text-xs sm:text-sm font-medium px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900"><option value="all">All Subjects ({ALL_QUESTIONS.length})</option>{SUBJECT_OPTIONS.filter((s) => s.value !== 'all').map((s) => <option key={s.value} value={s.value}>{s.label} ({s.count})</option>)}</select></div>
+            <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl"><button onClick={() => setMode('practice')} className={`text-xs px-3 py-1.5 rounded-lg font-medium ${mode === 'practice' ? 'bg-white dark:bg-slate-900 text-blue-600 shadow-sm' : 'text-slate-600'}`}>Practice Mode</button><button onClick={() => setMode('exam')} className={`text-xs px-3 py-1.5 rounded-lg font-medium ${mode === 'exam' ? 'bg-white dark:bg-slate-900 text-blue-600 shadow-sm' : 'text-slate-600'}`}>Exam Simulation</button></div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+            <select value={poolType} onChange={(e) => setPoolType(e.target.value as QuestionPoolType)} className="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-xs"><option value="all">All topics</option><option value="mixed">Mixed topics</option><option value="topic">Specific topic</option></select>
+            <select value={topicId} onChange={(e) => setTopicId(e.target.value)} disabled={poolType !== 'topic'} className="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-xs disabled:opacity-50"><option value="">Select topic</option>{[...new Set(ALL_QUESTIONS.filter((q) => selectedSubject === 'all' || q.subject === selectedSubject).map((q) => q.topicId).filter(Boolean) as string[])].sort().map((topic) => <option key={topic} value={topic}>{topic}</option>)}</select>
+            <div className="flex items-center gap-1 rounded-xl border border-slate-200 dark:border-slate-700 px-2 py-1"><span className="text-xs text-slate-500 mr-1">Questions</span>{(mode === 'practice' ? [10, 15, 20] : [10, 20, 30, 50, 100]).map((count) => <button key={count} type="button" onClick={() => setQuestionCount(count)} className={`px-2.5 py-1 rounded-lg text-xs font-semibold ${questionCount === count ? 'bg-blue-600 text-white' : 'text-slate-600 dark:text-slate-300'}`}>{count}</button>)}</div>
+          </div>
+          {mode === 'exam' && <div className="flex flex-wrap items-center gap-2"><span className="text-xs font-semibold text-slate-500">Time limit</span>{[10, 20, 30, 60, 90].map((minutes) => <button key={minutes} type="button" onClick={() => setDurationMinutes(minutes)} className={`rounded-lg border px-2.5 py-1 text-xs font-semibold ${durationMinutes === minutes ? 'border-blue-600 bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-300' : 'border-slate-200 dark:border-slate-700 text-slate-600'}`}>{minutes} min</button>)}</div>}
+          <p className={`text-xs ${availableQuestions.length < questionCount ? 'text-amber-700 dark:text-amber-300' : 'text-slate-500'}`}>{availableQuestions.length < questionCount ? `Only ${availableQuestions.length} unique questions are available for this selection.` : `${availableQuestions.length} available.`} Session uses up to {questionCount} unique questions.</p>
+          {!sessionStarted && <button type="button" onClick={startSession} disabled={availableQuestions.length === 0} className="w-full rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50">Start {mode === 'exam' ? 'Exam' : 'Practice'}</button>}
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      {sessionStarted && <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         <div className="lg:col-span-8">
           {currentQ ? <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6 space-y-6 shadow-sm">
             <div className="flex items-center justify-between gap-3">
               <div className="flex items-center gap-2 flex-wrap"><span className="text-xs font-bold text-blue-600 bg-blue-50 dark:bg-blue-950/60 px-2.5 py-1 rounded-lg border border-blue-100 dark:border-blue-900/60">Q {currentIndex + 1} of {currentQuestions.length}</span><span className="text-xs text-slate-500 dark:text-slate-400">{currentQ.subjectLabel}</span><span className="text-[11px] text-slate-400 hidden sm:inline">• {currentQ.examSource}</span></div>
+              {mode === 'exam' && <div className="flex items-center gap-2"><span className={`text-sm font-bold ${remainingSeconds <= 300 ? 'text-rose-600' : 'text-blue-600'}`}>⏱ {formatDuration(remainingSeconds)}</span><button type="button" onClick={() => setTimerPaused((paused) => !paused)} disabled={isSubmitted || remainingSeconds === 0} className="rounded-lg border border-slate-200 dark:border-slate-700 px-2.5 py-1 text-xs font-semibold">{timerPaused ? 'Resume' : 'Pause'}</button><button type="button" onClick={stopSession} className="rounded-lg border border-rose-200 px-2.5 py-1 text-xs font-semibold text-rose-600">Stop Exam</button></div>}
               <div className="flex gap-2"><button onClick={() => toggleSet(setMarkedForReview, currentQ.id)} className={`text-xs px-2.5 py-1.5 rounded-xl border flex items-center gap-1 ${markedForReview.has(currentQ.id) ? 'border-amber-300 bg-amber-50 text-amber-800' : 'border-slate-200 dark:border-slate-700 text-slate-600'}`}><Clock className="w-3.5 h-3.5"/><span className="hidden sm:inline">Review Later</span></button><button onClick={() => toggleSet(setBookmarkedIds, currentQ.id)} className="p-1.5 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-400">{bookmarkedIds.has(currentQ.id) ? <BookmarkCheck className="w-4 h-4"/> : <Bookmark className="w-4 h-4"/>}</button></div>
             </div>
 
@@ -199,7 +265,7 @@ export const AibeMcqPractice: React.FC = () => {
           </div>
           <div className="rounded-2xl border border-blue-100 dark:border-blue-900/40 bg-blue-50/40 dark:bg-blue-950/20 p-4 text-xs text-slate-600 dark:text-slate-400"><div className="flex items-center gap-1.5 font-semibold text-blue-700 dark:text-blue-300 mb-1.5"><HelpCircle className="w-3.5 h-3.5"/>AIBE Exam Tip</div><p>Practice identifying the exact section numbers and operative verbs.</p></div>
         </aside>
-      </div>
+      </div>}
     </div>
   )
 }

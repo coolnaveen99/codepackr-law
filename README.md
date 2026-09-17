@@ -26,6 +26,7 @@ All tools run **100% client-side**. Your practice data never leaves your device.
 ### 4. Reference Helpers (`reference`)
 - **Legal Maxims Quiz & Dictionary** (`#/tool/legal-maxims`): Searchable Latin legal maxims dictionary with English translations, applications, and an interactive quiz mode.
 - **Landmark Case Laws Flashcards** (`#/tool/landmark-cases`): Foundational Supreme Court of India precedents (*Kesavananda Bharati*, *Maneka Gandhi*, *Puttaswamy*, *Lalita Kumari*, *D.K. Basu*, *Shreya Singhal*, *Shayara Bano*), ratio decidendi, bench details, and exam significance.
+- **Case Law Library & Judgment Reader** (`/case-law`): Searchable judgment library with structured facts, issues, provisions, arguments, reasoning, decision, ratio, exam points, related cases, browser-only bookmarks/progress, and judgment-specific MCQs. Original documents are explicitly separated and loaded only on request.
 
 > All content and practice data stay on the user’s device. No accounts required for core tools.
 
@@ -37,6 +38,7 @@ All tools run **100% client-side**. Your practice data never leaves your device.
 - **India-focused** — Built around AIBE, State Judiciary & new criminal laws (BNS / BNSS / BSA)
 - **Theme Support** — Light + Dark mode
 - **Deep Linking** — Clean tool URLs
+- **Judgment deep links** — `/case-law/judgment/<stable-id>` for direct case study
 - **Offline Capable** — PWA-ready design
 - **Responsive** — Mobile & desktop
 - **SEO & AdSense Ready**
