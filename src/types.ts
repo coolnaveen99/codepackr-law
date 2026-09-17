@@ -27,6 +27,7 @@ export type LawSubject =
   | 'cpc' // Civil Procedure Code
   | 'contract' // Law of Contract & Specific Relief
   | 'family' // Family Law
+  | 'tort' // Law of Torts
   | 'aibe-mock' // Full Composite Mock
 
 export interface McqQuestion {
