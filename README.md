@@ -11,30 +11,21 @@ All tools run **100% client-side**. Your practice data never leaves your device.
 
 ---
 
-## ⚖️ Planned Tools Directory
+## ⚖️ Implemented & Live Tools Directory
 
-### MCQ Practice (High Priority)
-- Subject-wise MCQ banks (Constitution, BNS, BNSS, BSA, CPC, Contract, Family Law…)
-- AIBE-style timed mock tests
-- Act-wise practice (Bare Act focused)
-- Daily challenge / random quiz
-- Score tracker (local only)
+### 1. MCQ Practice (`mcq`)
+- **AIBE & Judiciary MCQ Practice** (`#/tool/aibe-mcq`): Subject-wise question banks (Constitution, BNS, BNSS, BSA, CPC, Contract, Family Law), Bare Act citations, question palette with review tracking, instant feedback in practice mode, and timed exam simulation.
 
-### Bare Act & Section Tools
-- Section finder / quick lookup helpers
-- BNS ↔ IPC section mapper (key changes)
-- BNSS ↔ CrPC mapper
-- BSA ↔ Evidence Act mapper
-- Important sections flashcards
+### 2. Bare Act & Section Tools (`bare-acts`)
+- **BNS ↔ IPC & Criminal Laws Mapper** (`#/tool/bns-ipc-mapper`): Instant cross-mapping and change analyzer across Bharatiya Nyaya Sanhita (BNS 2023) ↔ IPC, BNSS ↔ CrPC, and BSA ↔ Evidence Act. Fast search, major reforms filter, and one-click copy.
 
-### Study Aids
-- Law flashcard generator + practice mode
-- Exam timer (AIBE / Judiciary style)
-- Simple progress notes (localStorage, opt-in)
+### 3. Study Aids (`study-aids`)
+- **Important Section Flashcards** (`#/tool/section-flashcards`): High-weight Bare Act sections & constitutional articles with interactive 3D flip card, active recall scoring (Mastered vs Needs Review), shuffle, and keyboard controls.
+- **AIBE & Judiciary Exam Timer** (`#/tool/exam-timer`): Dedicated 3h 30m AIBE and 2h Judiciary prelims timer with real-time target question pacing indicator and synthesized client-side audio bell alerts.
 
-### Reference Helpers
-- Legal maxims quiz
-- Landmark case name ↔ holding flashcards (curated static set)
+### 4. Reference Helpers (`reference`)
+- **Legal Maxims Quiz & Dictionary** (`#/tool/legal-maxims`): Searchable Latin legal maxims dictionary with English translations, applications, and an interactive quiz mode.
+- **Landmark Case Laws Flashcards** (`#/tool/landmark-cases`): Foundational Supreme Court of India precedents (*Kesavananda Bharati*, *Maneka Gandhi*, *Puttaswamy*, *Lalita Kumari*, *D.K. Basu*, *Shreya Singhal*, *Shayara Bano*), ratio decidendi, bench details, and exam significance.
 
 > All content and practice data stay on the user’s device. No accounts required for core tools.
 
