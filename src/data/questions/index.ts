@@ -2,11 +2,13 @@ import { McqQuestion, LawSubject } from '../../types'
 import { CONSTITUTION_QUESTIONS } from './constitution'
 import { BNS_CRIMINAL_QUESTIONS } from './bnsCriminal'
 import { CPC_CONTRACT_QUESTIONS } from './cpcContract'
+import { TORT_QUESTIONS } from './tort'
 
 export const ALL_QUESTIONS: McqQuestion[] = [
   ...CONSTITUTION_QUESTIONS,
   ...BNS_CRIMINAL_QUESTIONS,
   ...CPC_CONTRACT_QUESTIONS,
+  ...TORT_QUESTIONS,
 ]
 
 export const SUBJECT_OPTIONS: { value: LawSubject; label: string; count: number }[] = [
@@ -18,6 +20,7 @@ export const SUBJECT_OPTIONS: { value: LawSubject; label: string; count: number 
   { value: 'cpc', label: 'Code of Civil Procedure (CPC)', count: ALL_QUESTIONS.filter(q => q.subject === 'cpc').length },
   { value: 'contract', label: 'Indian Contract Act', count: ALL_QUESTIONS.filter(q => q.subject === 'contract').length },
   { value: 'family', label: 'Family Law', count: ALL_QUESTIONS.filter(q => q.subject === 'family').length },
+  { value: 'tort', label: 'Law of Torts', count: TORT_QUESTIONS.length },
 ]
 
 export function getQuestionsBySubject(subject: LawSubject): McqQuestion[] {
