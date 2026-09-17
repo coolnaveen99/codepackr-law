@@ -19,12 +19,13 @@ export function setToolUrl(slug: string | null) {
   }
 }
 
-/** Subjects routes: #/subjects | #/subjects/<slug> */
+/** Subjects routes: #/subjects | #/subjects/<slug> | #/subjects/<slug>/<topicId> */
 export type AppRoute =
   | { type: 'home' }
   | { type: 'tool'; slug: string }
   | { type: 'subjects' }
   | { type: 'subject'; slug: string }
+  | { type: 'topic'; subjectSlug: string; topicId: string }
 
 export function parseRoute(): AppRoute {
   if (typeof window === 'undefined') return { type: 'home' }
@@ -32,6 +33,9 @@ export function parseRoute(): AppRoute {
 
   const toolMatch = hash.match(/^\/tool\/([a-z0-9-]+)/i)
   if (toolMatch) return { type: 'tool', slug: toolMatch[1] }
+
+  const topicMatch = hash.match(/^\/subjects\/([a-z0-9-]+)\/([a-z0-9-]+)/i)
+  if (topicMatch) return { type: 'topic', subjectSlug: topicMatch[1], topicId: topicMatch[2] }
 
   const subjectMatch = hash.match(/^\/subjects\/([a-z0-9-]+)/i)
   if (subjectMatch) return { type: 'subject', slug: subjectMatch[1] }
@@ -51,6 +55,11 @@ export function setSubjectsUrl() {
 export function setSubjectUrl(slug: string) {
   if (typeof window === 'undefined') return
   window.location.hash = `/subjects/${slug}`
+}
+
+export function setTopicUrl(subjectSlug: string, topicId: string) {
+  if (typeof window === 'undefined') return
+  window.location.hash = `/subjects/${subjectSlug}/${topicId}`
 }
 
 export function setHomeUrl() {

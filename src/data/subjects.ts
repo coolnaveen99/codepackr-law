@@ -12,6 +12,15 @@ export type SubjectPriority = 'high' | 'medium' | 'low'
 
 export type TopicType = 'theme' | 'article' | 'section' | 'chapter' | 'doctrine' | 'act'
 
+/** Citation attached to a learning topic */
+export interface CaseCitation {
+  name: string
+  year?: number
+  citation?: string
+  holding: string
+  relevance?: string
+}
+
 export interface LawTopic {
   id: string
   name: string
@@ -25,6 +34,16 @@ export interface LawTopic {
   keywords?: string[]
   /** When true, show as high-yield on subject page */
   highYield?: boolean
+  /** Short version (~80–120 words) for quick revision */
+  short?: string
+  /** Detailed version — concepts, elements, exceptions */
+  detailed?: string
+  /** Key case laws with holdings */
+  cases?: CaseCitation[]
+  /** Bare Act articles / sections to open */
+  bareActPointers?: string[]
+  /** High-yield exam tips */
+  examTips?: string[]
 }
 
 export interface LawSubjectMeta {
@@ -51,7 +70,7 @@ export interface LawSubjectMeta {
 
 /** All 19 AIBE subjects — structure ready; fill topics over time */
 export const SUBJECTS: LawSubjectMeta[] = [
-  // ── VERY HIGH / HIGH (priority practice) ──
+  // ── TOP HIGH / HIGH (priority practice) ──
   {
     id: 'constitution',
     slug: 'constitution',
@@ -524,28 +543,27 @@ export const SUBJECTS: LawSubjectMeta[] = [
   {
     id: 'cyber',
     slug: 'cyber',
-    name: 'Cyber Law',
+    name: 'Cyber Laws',
     shortName: 'Cyber',
     priority: 'low',
     aibeQuestions: 2,
     bareActs: ['Information Technology Act, 2000'],
-    description: 'IT Act offences, digital signatures, and intermediary basics.',
-    keywords: ['cyber', 'it act', 'digital signature'],
+    description: 'IT Act essentials — offences, intermediaries, and electronic records.',
+    keywords: ['cyber', 'it act', 'electronic evidence'],
     icon: 'Monitor',
     topics: [
-      { id: 'it-act-offences', name: 'IT Act offences', type: 'theme', highYield: true, keywords: ['section 66', 'it act'] },
-      { id: 'intermediary', name: 'Intermediaries', type: 'theme', keywords: ['intermediary'] },
+      { id: 'it-act', name: 'IT Act essentials', type: 'act', keywords: ['it act', 'section 66'] },
     ],
   },
   {
     id: 'land',
     slug: 'land',
     name: 'Land Acquisition',
-    shortName: 'Land Acquisition',
+    shortName: 'Land',
     priority: 'low',
     aibeQuestions: 2,
     bareActs: ['Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013'],
-    description: 'Core concepts of acquisition, compensation, and rehabilitation under the 2013 Act.',
+    description: 'Acquisition process, compensation, and rehabilitation under the 2013 Act.',
     keywords: ['land acquisition', 'compensation', 'rehabilitation'],
     icon: 'Map',
     topics: [
@@ -616,6 +634,17 @@ export function searchSubjectsAndTopics(query: string): {
   }
 
   return { subjects, topics }
+}
+
+export function getTopic(
+  subjectSlug: string,
+  topicId: string,
+): { subject: LawSubjectMeta; topic: LawTopic } | undefined {
+  const subject = getSubjectBySlug(subjectSlug)
+  if (!subject) return undefined
+  const topic = subject.topics.find((t) => t.id === topicId)
+  if (!topic) return undefined
+  return { subject, topic }
 }
 
 export const PRIORITY_ORDER: SubjectPriority[] = ['high', 'medium', 'low']

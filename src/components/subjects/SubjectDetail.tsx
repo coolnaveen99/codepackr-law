@@ -11,6 +11,7 @@ interface SubjectDetailProps {
   subject: LawSubjectMeta
   onBack: () => void
   onQuickPractice: () => void
+  onSelectTopic: (topic: LawTopic) => void
   searchQuery: string
   onSearchChange: (q: string) => void
 }
@@ -36,6 +37,7 @@ export function SubjectDetail({
   subject,
   onBack,
   onQuickPractice,
+  onSelectTopic,
   searchQuery,
   onSearchChange,
 }: SubjectDetailProps) {
@@ -113,7 +115,7 @@ export function SubjectDetail({
             <Sparkles className="w-4 h-4 text-amber-500" />
             High-yield topics
           </h3>
-          <TopicList topics={highYield} />
+          <TopicList topics={highYield} onSelectTopic={onSelectTopic} />
         </section>
       )}
 
@@ -122,7 +124,10 @@ export function SubjectDetail({
           <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-200">
             All topics ({rest.length + (highYield.length && q ? 0 : 0)})
           </h3>
-          <TopicList topics={highYield.length && !q ? rest : topics.filter((t) => !t.highYield || q)} />
+          <TopicList
+            topics={highYield.length && !q ? rest : topics.filter((t) => !t.highYield || q)}
+            onSelectTopic={onSelectTopic}
+          />
         </section>
       )}
 
@@ -134,37 +139,54 @@ export function SubjectDetail({
 
       {subject.topics.length > 0 && topics.length > 0 && (
         <p className="text-xs text-slate-400">
-          Topics are the study map. MCQ content is filled subject by subject — Quick practice uses the current bank when available.
+          Click any topic to open short + detailed notes and case laws. MCQs stay separate via Quick
+          practice.
         </p>
       )}
     </div>
   )
 }
 
-function TopicList({ topics }: { topics: LawTopic[] }) {
+function TopicList({
+  topics,
+  onSelectTopic,
+}: {
+  topics: LawTopic[]
+  onSelectTopic: (topic: LawTopic) => void
+}) {
   return (
     <ul className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 divide-y divide-slate-100 dark:divide-slate-800 overflow-hidden">
       {topics.map((t) => (
-        <li
-          key={t.id}
-          className="px-4 py-3.5 flex items-start justify-between gap-3 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition"
-        >
-          <div className="min-w-0 space-y-0.5">
-            <div className="flex items-center gap-2 flex-wrap">
-              <span className="font-medium text-sm text-slate-900 dark:text-white">{t.name}</span>
-              <span className="text-[10px] uppercase tracking-wide px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500">
-                {topicTypeLabel(t.type)}
-              </span>
-              {t.highYield && (
-                <span className="text-[10px] font-semibold text-amber-600 dark:text-amber-400">High yield</span>
+        <li key={t.id}>
+          <button
+            type="button"
+            onClick={() => onSelectTopic(t)}
+            className="w-full text-left px-4 py-3.5 flex items-start justify-between gap-3 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition"
+          >
+            <div className="min-w-0 space-y-0.5">
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="font-medium text-sm text-slate-900 dark:text-white">{t.name}</span>
+                <span className="text-[10px] uppercase tracking-wide px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500">
+                  {topicTypeLabel(t.type)}
+                </span>
+                {t.highYield && (
+                  <span className="text-[10px] font-semibold text-amber-600 dark:text-amber-400">
+                    High yield
+                  </span>
+                )}
+                {(t.short || t.detailed) && (
+                  <span className="text-[10px] font-semibold text-emerald-600 dark:text-emerald-400">
+                    Notes
+                  </span>
+                )}
+              </div>
+              {t.range && (
+                <p className="text-xs text-blue-600 dark:text-blue-400 font-medium">{t.range}</p>
               )}
+              {t.note && <p className="text-xs text-slate-500 dark:text-slate-400">{t.note}</p>}
             </div>
-            {t.range && (
-              <p className="text-xs text-blue-600 dark:text-blue-400 font-medium">{t.range}</p>
-            )}
-            {t.note && <p className="text-xs text-slate-500 dark:text-slate-400">{t.note}</p>}
-          </div>
-          <ChevronRight className="w-4 h-4 text-slate-300 dark:text-slate-600 shrink-0 mt-0.5" />
+            <ChevronRight className="w-4 h-4 text-slate-300 dark:text-slate-600 shrink-0 mt-0.5" />
+          </button>
         </li>
       ))}
     </ul>
