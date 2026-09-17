@@ -1,25 +1,14 @@
-/** Tool routes: #/tool/<slug> */
-export function getToolUrl(slug: string): string {
-  return `#/tool/${slug}`
-}
+/**
+ * Path-based routes (History API):
+ *   /                      home
+ *   /tool/<slug>           tool
+ *   /subjects              all subjects
+ *   /subjects/<slug>       one subject
+ *   /subjects/<slug>/<id>  topic
+ *
+ * Old hash URLs (#/tool/..., #/subjects/...) are redirected once on load.
+ */
 
-export function getCurrentToolSlug(): string | null {
-  if (typeof window === 'undefined') return null
-  const hash = window.location.hash
-  const match = hash.match(/^#\/tool\/([a-z0-9-]+)/i)
-  return match ? match[1] : null
-}
-
-export function setToolUrl(slug: string | null) {
-  if (typeof window === 'undefined') return
-  if (slug) {
-    window.location.hash = `/tool/${slug}`
-  } else {
-    window.location.hash = ''
-  }
-}
-
-/** Subjects routes: #/subjects | #/subjects/<slug> | #/subjects/<slug>/<topicId> */
 export type AppRoute =
   | { type: 'home' }
   | { type: 'tool'; slug: string }
@@ -27,42 +16,94 @@ export type AppRoute =
   | { type: 'subject'; slug: string }
   | { type: 'topic'; subjectSlug: string; topicId: string }
 
-export function parseRoute(): AppRoute {
-  if (typeof window === 'undefined') return { type: 'home' }
-  const hash = window.location.hash.replace(/^#/, '') || ''
+function normalizePath(pathname: string): string {
+  if (!pathname || pathname === '/') return '/'
+  const p = pathname.replace(/\/+$/, '') || '/'
+  return p.startsWith('/') ? p : `/${p}`
+}
 
-  const toolMatch = hash.match(/^\/tool\/([a-z0-9-]+)/i)
+export function parsePathname(pathname: string): AppRoute {
+  const path = normalizePath(pathname)
+
+  const toolMatch = path.match(/^\/tool\/([a-z0-9-]+)$/i)
   if (toolMatch) return { type: 'tool', slug: toolMatch[1] }
 
-  const topicMatch = hash.match(/^\/subjects\/([a-z0-9-]+)\/([a-z0-9-]+)/i)
+  const topicMatch = path.match(/^\/subjects\/([a-z0-9-]+)\/([a-z0-9-]+)$/i)
   if (topicMatch) return { type: 'topic', subjectSlug: topicMatch[1], topicId: topicMatch[2] }
 
-  const subjectMatch = hash.match(/^\/subjects\/([a-z0-9-]+)/i)
+  const subjectMatch = path.match(/^\/subjects\/([a-z0-9-]+)$/i)
   if (subjectMatch) return { type: 'subject', slug: subjectMatch[1] }
 
-  if (hash === '/subjects' || hash.startsWith('/subjects?')) {
-    return { type: 'subjects' }
-  }
+  if (path === '/subjects') return { type: 'subjects' }
 
   return { type: 'home' }
 }
 
-export function setSubjectsUrl() {
+export function parseRoute(): AppRoute {
+  if (typeof window === 'undefined') return { type: 'home' }
+  return parsePathname(window.location.pathname)
+}
+
+/** Push a new history entry and notify App via popstate */
+function navigate(path: string, replace = false) {
   if (typeof window === 'undefined') return
-  window.location.hash = '/subjects'
+  const url = path.startsWith('/') ? path : `/${path}`
+  if (replace) {
+    window.history.replaceState({}, '', url)
+  } else {
+    window.history.pushState({}, '', url)
+  }
+  window.dispatchEvent(new PopStateEvent('popstate'))
+}
+
+export function getToolUrl(slug: string): string {
+  return `/tool/${slug}`
+}
+
+export function getCurrentToolSlug(): string | null {
+  if (typeof window === 'undefined') return null
+  const route = parseRoute()
+  return route.type === 'tool' ? route.slug : null
+}
+
+export function setToolUrl(slug: string | null) {
+  if (slug) navigate(`/tool/${slug}`)
+  else navigate('/')
+}
+
+export function setSubjectsUrl() {
+  navigate('/subjects')
 }
 
 export function setSubjectUrl(slug: string) {
-  if (typeof window === 'undefined') return
-  window.location.hash = `/subjects/${slug}`
+  navigate(`/subjects/${slug}`)
 }
 
 export function setTopicUrl(subjectSlug: string, topicId: string) {
-  if (typeof window === 'undefined') return
-  window.location.hash = `/subjects/${subjectSlug}/${topicId}`
+  navigate(`/subjects/${subjectSlug}/${topicId}`)
 }
 
 export function setHomeUrl() {
-  if (typeof window === 'undefined') return
-  window.location.hash = ''
+  navigate('/')
+}
+
+/**
+ * One-time migration: #/tool/x → /tool/x etc.
+ * Call once on app boot.
+ */
+export function migrateHashToPath(): boolean {
+  if (typeof window === 'undefined') return false
+  const hash = window.location.hash.replace(/^#/, '') || ''
+  if (!hash || hash === '/') return false
+
+  const route = parsePathname(hash.startsWith('/') ? hash : `/${hash}`)
+  let path = '/'
+  if (route.type === 'tool') path = `/tool/${route.slug}`
+  else if (route.type === 'subjects') path = '/subjects'
+  else if (route.type === 'subject') path = `/subjects/${route.slug}`
+  else if (route.type === 'topic') path = `/subjects/${route.subjectSlug}/${route.topicId}`
+  else return false
+
+  window.history.replaceState({}, '', path)
+  return true
 }

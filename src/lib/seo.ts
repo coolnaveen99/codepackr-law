@@ -1,5 +1,5 @@
 /**
- * Client-side SEO helpers for Codepackr Law (SPA + hash routes).
+ * Client-side SEO helpers for Codepackr Law (path-based SPA).
  * Updates document title, description, canonical, and Open Graph tags.
  */
 
@@ -11,7 +11,7 @@ export const SITE_TAGLINE =
 export interface PageMeta {
   title: string
   description: string
-  /** Path including hash if needed, e.g. "/#/subjects/constitution" or "/" */
+  /** Pathname e.g. "/subjects/constitution" or "/" */
   path?: string
   image?: string
   noIndex?: boolean
