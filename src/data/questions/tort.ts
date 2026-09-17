@@ -4,6 +4,7 @@ import { TORT_PART_2 } from './tortPart2'
 import { TORT_PART_3 } from './tortPart3'
 import { TORT_PART_4 } from './tortPart4'
 import { TORT_PART_5 } from './tortPart5'
+import { TORT_SUPPLEMENT_1 } from './tortSupplement1'
 
 const TOPICS = [
   'general-principles',
@@ -18,6 +19,7 @@ const TOPICS = [
 ] as const
 
 type RawTortQuestion = [string, [string, string, string, string], number, number]
+type RawTortSupplementQuestion = [string, [string, string, string, string], number, number, string]
 
 const RAW_TORT_QUESTIONS = [
   ...TORT_PART_1,
@@ -26,6 +28,8 @@ const RAW_TORT_QUESTIONS = [
   ...TORT_PART_4,
   ...TORT_PART_5,
 ] as unknown as RawTortQuestion[]
+
+const RAW_TORT_SUPPLEMENT = TORT_SUPPLEMENT_1 as unknown as RawTortSupplementQuestion[]
 
 function cleanSourceText(value: string): string {
   return value
@@ -38,7 +42,7 @@ function cleanSourceText(value: string): string {
     .trim()
 }
 
-export const TORT_QUESTIONS: McqQuestion[] = RAW_TORT_QUESTIONS.map(
+const baseQuestions: McqQuestion[] = RAW_TORT_QUESTIONS.map(
   ([question, rawOptions, correctIndex, topic], index) => {
     const options = rawOptions.map(cleanSourceText) as [string, string, string, string]
     return {
@@ -55,3 +59,23 @@ export const TORT_QUESTIONS: McqQuestion[] = RAW_TORT_QUESTIONS.map(
     }
   },
 )
+
+const supplementQuestions: McqQuestion[] = RAW_TORT_SUPPLEMENT.map(
+  ([question, rawOptions, correctIndex, topic, source], index) => {
+    const options = rawOptions.map(cleanSourceText) as [string, string, string, string]
+    return {
+      id: `tort-${RAW_TORT_QUESTIONS.length + index + 1}`,
+      subject: 'tort',
+      subjectLabel: 'Law of Torts',
+      question: cleanSourceText(question),
+      options,
+      correctIndex,
+      explanation: `Correct answer: ${options[correctIndex]} (option ${String.fromCharCode(65 + correctIndex)}). Answer marked from ${source}.`,
+      examSource: source,
+      difficulty: 'medium',
+      topicId: TOPICS[topic],
+    }
+  },
+)
+
+export const TORT_QUESTIONS: McqQuestion[] = [...baseQuestions, ...supplementQuestions]
