@@ -1,18 +1,23 @@
 import React from 'react'
-import { Moon, Sun, ShieldCheck, ArrowLeft, Scale } from 'lucide-react'
+import { Moon, Sun, ShieldCheck, ArrowLeft, Scale, BookOpen } from 'lucide-react'
 
 interface HeaderProps {
   dark: boolean
   onToggleDark: () => void
-  currentToolName?: string | null
+  /** Breadcrumb label when not on home */
+  currentLabel?: string | null
   onBackToHome: () => void
+  onOpenSubjects?: () => void
+  showSubjectsLink?: boolean
 }
 
 export const Header: React.FC<HeaderProps> = ({
   dark,
   onToggleDark,
-  currentToolName,
+  currentLabel,
   onBackToHome,
+  onOpenSubjects,
+  showSubjectsLink = true,
 }) => {
   return (
     <header className="border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-950/90 backdrop-blur sticky top-0 z-50 transition-colors">
@@ -30,16 +35,16 @@ export const Header: React.FC<HeaderProps> = ({
 
           <div className="h-4 w-px bg-slate-200 dark:bg-slate-800 hidden sm:block" />
 
-          {currentToolName ? (
+          {currentLabel ? (
             <button
               onClick={onBackToHome}
               className="flex items-center gap-1.5 text-xs font-medium text-blue-600 dark:text-blue-400 hover:underline px-2 py-1 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-950/40 transition truncate"
             >
               <ArrowLeft className="w-3.5 h-3.5 flex-shrink-0" />
-              <span>All Tools</span>
+              <span>Home</span>
               <span className="text-slate-400 dark:text-slate-600">/</span>
               <span className="text-slate-900 dark:text-slate-100 font-semibold truncate">
-                {currentToolName}
+                {currentLabel}
               </span>
             </button>
           ) : (
@@ -63,6 +68,17 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         <div className="flex items-center gap-2.5 flex-shrink-0">
+          {showSubjectsLink && onOpenSubjects && (
+            <button
+              type="button"
+              onClick={onOpenSubjects}
+              className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+            >
+              <BookOpen className="w-3.5 h-3.5 text-blue-600" />
+              Subjects
+            </button>
+          )}
+
           <div className="hidden lg:flex items-center gap-1.5 text-xs text-slate-600 dark:text-slate-400 px-3 py-1 rounded-full bg-blue-50/70 dark:bg-blue-950/40 border border-blue-100 dark:border-blue-900/50">
             <ShieldCheck className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
             <span>100% Client-Side & Private</span>
