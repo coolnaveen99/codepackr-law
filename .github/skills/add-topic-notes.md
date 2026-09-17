@@ -1,20 +1,22 @@
 # Skill: Add Topic Learning Notes (Lazy-Loaded)
 
-**Mandatory SOP** for full topic content (short + detailed + cases).
+**Mandatory SOP** for full topic learning notes (single Study Topic body + structured fields + cases).
 
 ## Architecture rule (non-negotiable)
 
 | Layer | Location | What goes here |
 |-------|----------|----------------|
 | Metadata only | `src/data/subjects.ts` | id, name, type, range, note, keywords, highYield |
-| Full notes | `src/data/topics/<subjectSlug>/<topicId>.ts` | short, detailed, cases, bareActPointers, examTips |
+| Full notes | `src/data/topics/<subjectSlug>/<topicId>.ts` | `study` (preferred) or legacy `detailed`/`short`, plus sections, provisions, Q&A, cases, bareActPointers, examTips |
 
-**Never** put `short` / `detailed` / `cases` / `examTips` into `subjects.ts`.
+**Never** put study body / `short` / `detailed` / `cases` / `examTips` into `subjects.ts`.
+
+**Product rule:** Do **not** create separate Short Version / Detailed Version UI. One Study Topic reader only. Prefer the `study` field; `detailed` then `short` remain legacy fallbacks.
 
 ## Topic types
 
 | `type` | Use for |
-|--------|---------|
+|--------|----------|
 | `theme` | Broad theme / chapter area |
 | `article` | Constitutional article |
 | `section` | Key section cluster |
@@ -46,7 +48,7 @@ Examples of format topic ids: `format-writ-petition`, `format-plaint`, `format-f
 
 ## Formats content style
 
-For `type: 'format'`, `detailed` should be a **skeleton** (headings + what each part contains), not a real court filing template. Aim at AIBE / Judiciary awareness.
+For `type: 'format'`, `study` (or legacy `detailed`) should be a **skeleton** (headings + what each part contains), not a real court filing template. Aim at AIBE / Judiciary awareness.
 
 ## Loader
 

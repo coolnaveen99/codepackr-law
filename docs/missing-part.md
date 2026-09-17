@@ -7,6 +7,8 @@ This document records the remaining work from the subject learning, case law, an
 Implemented foundation:
 
 - Unified `Study Topic` view replaced the Short/Detailed toggle.
+- Topic content model accepts a single `study` body (legacy `short`/`detailed` remain as fallbacks only; not separate UI versions).
+- `LawTopic` metadata no longer types inline short/detailed content fields (notes stay in topic files).
 - Quick Practice was removed from subject and topic learning pages.
 - Structured topic content types were added.
 - Article 21 has structured pilot content.

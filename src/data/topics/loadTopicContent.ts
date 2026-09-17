@@ -1,6 +1,8 @@
 /**
  * Lazy-load full topic learning content.
  *
+ * P0 rule: one Study Topic body (not Short/Detailed UI versions).
+ *
  * Metadata (list) lives in subjects.ts — always small.
  * Full notes live in src/data/topics/<subjectSlug>/<topicId>.ts
  * and are loaded only when the student opens that topic.
@@ -39,8 +41,21 @@ export interface TopicQuestionAnswer {
 }
 
 export interface TopicContent {
-  short: string
-  detailed: string
+  /**
+   * Preferred single Study Topic body for new notes.
+   * UI shows ONE study reader — not Short Version / Detailed Version.
+   */
+  study?: string
+  /**
+   * @deprecated Legacy — still accepted as Study Topic fallback.
+   * Do not expose as a separate "Short Version" in the UI.
+   */
+  short?: string
+  /**
+   * @deprecated Legacy — still accepted as Study Topic fallback.
+   * Do not expose as a separate "Detailed Version" in the UI.
+   */
+  detailed?: string
   sections?: TopicSection[]
   provisions?: TopicProvision[]
   examples?: TopicExample[]
@@ -49,6 +64,20 @@ export interface TopicContent {
   cases?: CaseCitation[]
   bareActPointers?: string[]
   examTips?: string[]
+}
+
+/** Resolve the single Study Topic body (study → detailed → short). */
+export function getStudyBody(content: TopicContent | null | undefined): string {
+  if (!content) return ''
+  return content.study || content.detailed || content.short || ''
+}
+
+function hasStudyBody(content: TopicContent): boolean {
+  return (
+    typeof content.study === 'string' ||
+    typeof content.detailed === 'string' ||
+    typeof content.short === 'string'
+  )
 }
 
 /** Vite glob — only modules that exist are included; missing paths resolve to null */
@@ -82,7 +111,7 @@ export async function loadTopicContent(
   try {
     const mod = await loader()
     const content = mod.default
-    if (content && typeof content.short === 'string') {
+    if (content && hasStudyBody(content)) {
       cache.set(key, content)
       return content
     }

@@ -13,6 +13,7 @@ import {
 import type { LawSubjectMeta, LawTopic, CaseCitation } from '../../data/subjects'
 import {
   loadTopicContent,
+  getStudyBody,
   type TopicContent,
 } from '../../data/topics/loadTopicContent'
 import { Badge } from '../ui/Badge'
@@ -81,7 +82,7 @@ export function TopicDetail({
     }
   }, [subject.slug, topic.id])
 
-  const studyContent = content?.detailed || content?.short || ''
+  const studyContent = getStudyBody(content)
   const hasContent = Boolean(studyContent)
   const hasCases = (content?.cases?.length ?? 0) > 0
 
@@ -223,7 +224,7 @@ export function TopicDetail({
 
       {!loading && content?.questionsAndAnswers && content.questionsAndAnswers.length > 0 && (
         <section className="space-y-3">
-          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Questions &amp; Answers</h3>
+          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Questions & Answers</h3>
           {content.questionsAndAnswers.map((item) => <article key={item.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4"><h4 className="font-semibold text-sm text-slate-900 dark:text-white">Q. {item.question}</h4><p className="mt-3 text-sm leading-relaxed text-slate-700 dark:text-slate-300"><strong>Answer:</strong> {item.answer}</p>{item.explanation && <p className="mt-2 text-xs leading-relaxed text-slate-500"><strong>Explanation:</strong> {item.explanation}</p>}</article>)}
         </section>
       )}
