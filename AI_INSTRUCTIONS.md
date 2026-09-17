@@ -33,6 +33,7 @@ Single source of truth for any AI (or human) building or extending **Codepackr L
 4. **Complete Tools Only** — Sample/Demo (where relevant), Reset, clear feedback, accessible UI.
 5. **Quality Gate Mandatory** — `.github/skills/tool-quality-gate.md` must be fully green.
 6. **India-Focused Content** — Prioritise AIBE, State Judiciary, new criminal laws (BNS, BNSS, BSA), Constitution, CPC, Contract, Family Law.
+7. **Lazy topic notes** — Full topic learning text must live in `src/data/topics/<subjectSlug>/<topicId>.ts`, never in `subjects.ts`.
 
 ---
 
@@ -40,25 +41,35 @@ Single source of truth for any AI (or human) building or extending **Codepackr L
 
 1. `.github/copilot-instructions.md`
 2. `.github/skills/add-new-tool.md`
-3. `.github/skills/tool-quality-gate.md`
-4. `CONTRIBUTING.md`
-5. This file (`AI_INSTRUCTIONS.md`)
+3. `.github/skills/add-topic-notes.md` — **required before adding any short/detailed topic content**
+4. `.github/skills/tool-quality-gate.md`
+5. `CONTRIBUTING.md`
+6. This file (`AI_INSTRUCTIONS.md`)
 
 ---
 
 ## 4. Target Architecture
 
-Evolve from the current scaffold toward the same clean patterns as codepackr-study / codepackr-finance:
-
 ```
 src/
 ├── components/
 │   ├── tools/           # One component (or folder) per tool
+│   ├── subjects/        # SubjectsList, SubjectDetail, TopicDetail
 │   ├── layout/
 │   └── ui/
 ├── data/
 │   ├── tools.ts         # Tool registry
-│   └── questions/       # Static MCQ / flashcard data (client-side only)
+│   ├── subjects.ts      # Subject + topic METADATA only (no full notes)
+│   ├── questions/       # Static MCQ banks
+│   ├── reference/       # Maxims, landmark cases (reference tools)
+│   └── topics/          # Full learning notes — one file per topic (lazy-loaded)
+│       ├── loadTopicContent.ts
+│       ├── constitution/
+│       │   ├── art-14.ts
+│       │   ├── art-21.ts
+│       │   └── ...
+│       └── <subjectSlug>/
+│           └── <topicId>.ts
 ├── lib/
 │   ├── urls.ts
 │   └── utils.ts
@@ -66,7 +77,13 @@ src/
 └── index.css           # --brand: #2563eb
 ```
 
-MCQ and flashcard content must be static JSON/TS modules shipped with the app (or loaded from public/). Never require a backend for core practice.
+### Topic content rule (performance)
+
+- `subjects.ts` = list/search metadata only (can grow to 1000+ topics safely).
+- Full `short` / `detailed` / `cases` / `examTips` = separate file under `topics/`, loaded with `import.meta.glob` only when the student opens that topic.
+- Never ship all topic essays in the main bundle.
+
+MCQ and flashcard content must be static TS modules shipped with the app. Never require a backend for core practice.
 
 ---
 
@@ -90,11 +107,22 @@ Categories for Law:
 3. Section flashcards for key Acts
 4. BNS ↔ IPC / BNSS ↔ CrPC simple mappers
 5. Full subject banks + mock test mode
-6. Remaining tools
+6. High-yield topic notes under `src/data/topics/` (lazy)
+7. Remaining tools
 
 ---
 
-## 6. Design Tokens
+## 6. How to Add Topic Learning Notes
+
+Follow `.github/skills/add-topic-notes.md` exactly.
+
+1. Topic must already exist in `subjects.ts` (id + subject slug).
+2. Create `src/data/topics/<subjectSlug>/<topicId>.ts` exporting `TopicContent`.
+3. TopicDetail lazy-loads via `loadTopicContent` — no App.tsx changes needed.
+
+---
+
+## 7. Design Tokens
 
 ```css
 :root {
@@ -110,16 +138,17 @@ Categories for Law:
 
 ---
 
-## 7. Privacy Checklist
+## 8. Privacy Checklist
 
 - [ ] No network calls with user answers or scores
 - [ ] No analytics events containing practice data
 - [ ] localStorage only for explicit opt-in features
 - [ ] Sample / demo questions contain no real personal data
+- [ ] Topic notes are static client modules only (no CMS fetch of user data)
 
 ---
 
-## 8. Definition of Done
+## 9. Definition of Done
 
 A tool is finished only when:
 
@@ -132,24 +161,28 @@ A tool is finished only when:
 7. Privacy checklist green
 8. Quality Gate fully green
 
+Topic notes are done when the file exists under `topics/`, matches `TopicContent`, and opens correctly from Subject → TopicDetail.
+
 ---
 
-## 9. Content Notes (Law-Specific)
+## 10. Content Notes (Law-Specific)
 
 - Prefer the **new criminal laws**: Bharatiya Nyaya Sanhita (BNS), Bharatiya Nagarik Suraksha Sanhita (BNSS), Bharatiya Sakshya Adhiniyam (BSA).
 - Still support legacy names (IPC, CrPC, Evidence Act) via mappers where useful.
 - High-weight AIBE subjects: Constitutional Law, CPC, BNSS/CrPC, BNS/IPC, BSA/Evidence, Contract, Family Law.
 - Keep explanations short and section-focused (AIBE allows only unmarked Bare Acts).
 - All MCQ content must be original or clearly licensed for this use. Start with small curated sets and expand.
+- Topic notes: prioritise `highYield: true` topics; include 3–5 case citations with holdings.
 
 ---
 
-## 10. Final Orders to Any AI
+## 11. Final Orders to Any AI
 
 - Never skip the Quality Gate.
 - Never transmit practice data off-device.
 - Never change the brand color away from blue `#2563eb`.
 - Never ship incomplete tools.
-- When in doubt, re-read this file and `.github/skills/add-new-tool.md`.
+- **Never put full topic essays into `subjects.ts`** — use `src/data/topics/` only.
+- When in doubt, re-read this file, `.github/skills/add-new-tool.md`, and `.github/skills/add-topic-notes.md`.
 
 Build carefully. Protect privacy. Serve Indian law students well.

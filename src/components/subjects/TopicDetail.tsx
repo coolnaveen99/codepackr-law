@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import {
   ArrowLeft,
   BookOpen,
@@ -8,8 +8,13 @@ import {
   Check,
   ChevronDown,
   ChevronUp,
+  Loader2,
 } from 'lucide-react'
 import type { LawSubjectMeta, LawTopic, CaseCitation } from '../../data/subjects'
+import {
+  loadTopicContent,
+  type TopicContent,
+} from '../../data/topics/loadTopicContent'
 import { Badge } from '../ui/Badge'
 
 interface TopicDetailProps {
@@ -46,9 +51,29 @@ export function TopicDetail({
   const [view, setView] = useState<'short' | 'detailed'>('short')
   const [copiedCaseId, setCopiedCaseId] = useState<string | null>(null)
   const [tipsOpen, setTipsOpen] = useState(true)
+  const [content, setContent] = useState<TopicContent | null>(null)
+  const [loading, setLoading] = useState(true)
 
-  const hasContent = Boolean(topic.short || topic.detailed)
-  const hasCases = (topic.cases?.length ?? 0) > 0
+  useEffect(() => {
+    let cancelled = false
+    setLoading(true)
+    setContent(null)
+    setView('short')
+
+    loadTopicContent(subject.slug, topic.id).then((data) => {
+      if (!cancelled) {
+        setContent(data)
+        setLoading(false)
+      }
+    })
+
+    return () => {
+      cancelled = true
+    }
+  }, [subject.slug, topic.id])
+
+  const hasContent = Boolean(content?.short || content?.detailed)
+  const hasCases = (content?.cases?.length ?? 0) > 0
 
   const handleCopyCase = (c: CaseCitation, idx: number) => {
     const text = [
@@ -69,7 +94,6 @@ export function TopicDetail({
 
   return (
     <div className="space-y-8 max-w-3xl">
-      {/* Back + header */}
       <div className="space-y-3">
         <button
           type="button"
@@ -116,8 +140,14 @@ export function TopicDetail({
         </div>
       </div>
 
-      {/* Short / Detailed toggle */}
-      {hasContent && (
+      {loading && (
+        <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-10 flex flex-col items-center justify-center gap-3 text-slate-500">
+          <Loader2 className="w-6 h-6 animate-spin text-blue-600" />
+          <p className="text-sm">Loading notes…</p>
+        </div>
+      )}
+
+      {!loading && hasContent && (
         <div className="flex items-center gap-1 p-1 rounded-xl bg-slate-100 dark:bg-slate-800/80 w-fit">
           <button
             type="button"
@@ -144,20 +174,19 @@ export function TopicDetail({
         </div>
       )}
 
-      {/* Content body */}
-      {hasContent ? (
+      {!loading && hasContent && content && (
         <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
           <p className="text-sm sm:text-[15px] leading-relaxed text-slate-700 dark:text-slate-300 whitespace-pre-line">
-            {view === 'short' ? topic.short : topic.detailed || topic.short}
+            {view === 'short' ? content.short : content.detailed || content.short}
           </p>
 
-          {topic.bareActPointers && topic.bareActPointers.length > 0 && (
+          {content.bareActPointers && content.bareActPointers.length > 0 && (
             <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800">
               <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400 mb-2">
                 Bare Act Pointers
               </p>
               <div className="flex flex-wrap gap-1.5">
-                {topic.bareActPointers.map((ptr) => (
+                {content.bareActPointers.map((ptr) => (
                   <span
                     key={ptr}
                     className="text-[11px] font-medium px-2 py-0.5 rounded-md bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-100 dark:border-blue-900"
@@ -169,22 +198,24 @@ export function TopicDetail({
             </div>
           )}
         </section>
-      ) : (
+      )}
+
+      {!loading && !hasContent && (
         <div className="rounded-2xl border border-dashed border-slate-200 dark:border-slate-700 p-8 text-center text-sm text-slate-500">
-          Learning notes for this topic are coming soon. Use Practice MCQs and the reference tools meanwhile.
+          Learning notes for this topic are coming soon. Use Practice MCQs and the reference tools
+          meanwhile.
         </div>
       )}
 
-      {/* Case Laws */}
-      {hasCases && (
+      {!loading && hasCases && content?.cases && (
         <section className="space-y-3">
           <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
             <Scale className="w-4 h-4 text-blue-600" />
-            Key Case Laws ({topic.cases!.length})
+            Key Case Laws ({content.cases.length})
           </h3>
 
           <ul className="space-y-3">
-            {topic.cases!.map((c, idx) => {
+            {content.cases.map((c, idx) => {
               const id = String(idx)
               const isCopied = copiedCaseId === id
               return (
@@ -243,8 +274,7 @@ export function TopicDetail({
         </section>
       )}
 
-      {/* Exam Tips */}
-      {topic.examTips && topic.examTips.length > 0 && (
+      {!loading && content?.examTips && content.examTips.length > 0 && (
         <section className="rounded-2xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/50 dark:bg-amber-950/20 overflow-hidden">
           <button
             type="button"
@@ -264,7 +294,7 @@ export function TopicDetail({
 
           {tipsOpen && (
             <ul className="px-4 pb-4 space-y-2">
-              {topic.examTips.map((tip, i) => (
+              {content.examTips.map((tip, i) => (
                 <li
                   key={i}
                   className="text-xs sm:text-sm text-amber-900/90 dark:text-amber-200/90 flex gap-2"
