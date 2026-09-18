@@ -30,3 +30,4 @@ This file is **only** Constitution-specific. Do not repeat global architecture h
 - Basic Structure, eclipse, severability, pith and substance, colourable legislation already exist as canonical doctrines — `[[REF:]]` them.
 - Parts III and IV wrap to the FR / DPSP hub topics. Do not duplicate those essays on each article page.
 - Historical cases stay labeled as cases; they are not “amendments”.
+- Study Topics must meet [`.github/instructions/student-answer-content.md`](../student-answer-content.md): concept, elements, exceptions, cases, examples, application, 10-mark and 16-mark frameworks. Do not ship article pages as Bare Act dumps.

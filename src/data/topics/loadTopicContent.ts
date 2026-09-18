@@ -45,6 +45,36 @@ export interface TopicQuestionAnswer {
   relatedProvisionIds?: string[]
 }
 
+export interface TopicHypothetical {
+  id: string
+  title?: string
+  facts: string
+  question: string
+  applicableLaw: string
+  analysis: string
+  conclusion: string
+}
+
+export interface TopicMisconception {
+  id: string
+  trap: string
+  correction: string
+}
+
+export interface TopicDistinction {
+  id: string
+  title: string
+  left: string
+  right: string
+  rows: { point: string; left: string; right: string }[]
+}
+
+export interface TopicExamFramework {
+  marks: 10 | 16
+  question?: string
+  steps: string[]
+}
+
 export interface TopicContent {
   /**
    * Preferred single Study Topic body for new notes.
@@ -61,14 +91,21 @@ export interface TopicContent {
    * Do not expose as a separate "Detailed Version" in the UI.
    */
   detailed?: string
+  glance?: string
   sections?: TopicSection[]
   provisions?: TopicProvision[]
   examples?: TopicExample[]
+  hypotheticals?: TopicHypothetical[]
+  distinctions?: TopicDistinction[]
+  misconceptions?: TopicMisconception[]
   questionsAndAnswers?: TopicQuestionAnswer[]
   relatedTopics?: string[]
   cases?: CaseCitation[]
   bareActPointers?: string[]
   examTips?: string[]
+  examFrameworks?: TopicExamFramework[]
+  answerSkeleton?: string[]
+  revisionPoints?: string[]
 }
 
 /** Resolve the single Study Topic body (study → detailed → short). */
@@ -86,18 +123,21 @@ function synthesizeArticleContent(articleId: string): TopicContent | null {
     : ''
 
   const study = [
-    `Text of Article ${article.id}`,
+    `Topic at a glance`,
+    `Article ${article.id} — ${article.title}. Read the black-letter text first, then the meaning, then the related doctrines and cases on this page.`,
+    `\nWhat the article says`,
     `“${article.text}”`,
-    article.note ? `\nStudy note\n${article.note}` : '',
-    amendmentLine ? `\n${amendmentLine}` : '',
-    '\nExam focus',
-    'Start with the black-letter text. Then follow the related doctrines, cases, and amendments in the knowledge graph on this page. Content is educational — always cross-check the latest Bare Act.',
+    article.note ? `\nWhat it means\n${article.note}` : '',
+    amendmentLine ? `\nCurrent-law position\n${amendmentLine}` : '',
+    '\nHow to use this article in an answer',
+    'Open with the text. Explain the legal idea in one or two sentences. State any essential conditions or exceptions. Cite the leading authority from the related-knowledge panel. Apply the article to the facts. Close with the current position. Educational note — always cross-check the latest Bare Act / India Code.',
   ]
     .filter(Boolean)
     .join('\n')
 
   return {
     study,
+    glance: `Article ${article.id} — ${article.title}.`,
     provisions: [
       {
         actId: 'constitution',
@@ -117,10 +157,30 @@ function synthesizeArticleContent(articleId: string): TopicContent | null {
           },
         ]
       : undefined,
+    examFrameworks: [
+      {
+        marks: 10,
+        question: `Write a note on Article ${article.id}.`,
+        steps: [
+          `Introduce Article ${article.id} (${article.title}) and its place in the Constitution.`,
+          'State the black-letter rule in your own words. Do not stop at quoting the text.',
+          'Explain the essential idea: who it binds, what it protects or empowers, and any conditions.',
+          'Cite one leading authority from the related-knowledge panel and state its principle.',
+          'Give a short illustration or apply the article to a simple fact situation.',
+          'Note any important exception, later amendment, or related article.',
+          'Conclude with the current legal position.',
+        ],
+      },
+    ],
+    revisionPoints: [
+      `Article ${article.id}: ${article.title}.`,
+      article.cluster ? `Cluster: ${article.cluster}.` : '',
+      'Quote → meaning → authority → application → conclusion.',
+    ].filter(Boolean),
     bareActPointers: [`Art ${article.id}`, article.cluster ? `Part cluster: ${article.cluster}` : ''].filter(Boolean),
     examTips: [
-      `Cite Article ${article.id} by number in the answer.`,
-      'Use related doctrines and cases from the knowledge graph rather than rewriting them here.',
+      'Do not treat this page as a Bare Act dump. Explain the idea, then use the related doctrines and cases.',
+      'If a 16-mark question is set on this article, expand with history, related articles, more authorities, and a hypothetical.',
     ],
   }
 }

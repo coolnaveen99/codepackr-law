@@ -1,0 +1,136 @@
+import type { TopicContent } from '../loadTopicContent'
+
+const content: TopicContent = {
+  glance:
+    'Evidence may be given only of facts in issue and of facts declared relevant. BSA Chapter II (ss. 3–50). The gateway is s. 3. Same-transaction facts are s. 4 ([[REF:DOCTRINE:EVIDENCE-LAW:RES-GESTAE|res gestae]]). Current law from 1 July 2024; IEA numbers are historical concordance only.',
+
+  study: `Topic at a glance
+Relevancy is the first filter. Admissibility is the second. A fact can be relevant and still excluded (privilege, hearsay limits, improperly obtained electronic records). Do not collapse the two.
+
+What does the law say?
+BSA s. 3: evidence may be given in any suit or proceeding of the existence or non-existence of every fact in issue and of such other facts as are declared relevant in the Adhiniyam, and of no others.
+
+Why does relevancy exist?
+Courts would drown if every surrounding circumstance came in. Relevancy is a statutory catalogue, not a free “common-sense” discretion. The catalogue (occasion, cause, effect, motive, preparation, conduct, conspiracy, state of mind, admissions, dying declarations, judgments, opinions, character) is Chapter II.
+
+Essential elements
+1. Identify the fact in issue (the fact that the substantive law makes decisive).
+2. Ask whether the tendered fact is that fact, or a fact the BSA declares relevant.
+3. If it is relevant, ask whether any later chapter excludes it (proof, privilege, electronic certificate, estoppel).
+
+How it operates
+Start with the charge or the plaint. List facts in issue. Then slot the witness’s story into a section: s. 4 (same transaction), s. 6 (motive/preparation/conduct), s. 8 (conspiracy), ss. 15–25 (admissions/confessions), s. 26 (statements of persons who cannot be called). If you cannot name a section, it is probably irrelevant.
+
+Current-law position
+BSA ss. 3–50 from 1 July 2024. IEA 5–55 is the historical map. Res gestae teaching case law on IEA 6 still explains the idea of “transaction”, but the current cite is BSA s. 4.
+
+Educational note
+Do not treat every interesting fact as relevant. Name the section.`,
+
+  provisions: [
+    { actId: 'bsa', actName: 'Bharatiya Sakshya Adhiniyam, 2023', provisionId: 'bsa-3', section: 's. 3', title: 'Evidence may be given of facts in issue and relevant facts' },
+    { actId: 'bsa', actName: 'Bharatiya Sakshya Adhiniyam, 2023', provisionId: 'bsa-4', section: 's. 4', title: 'Relevancy of facts forming part of same transaction' },
+    { actId: 'bsa', actName: 'Bharatiya Sakshya Adhiniyam, 2023', provisionId: 'bsa-6', section: 's. 6', title: 'Motive, preparation and previous or subsequent conduct' },
+  ],
+
+  examples: [
+    { id: 'rel-ex-1', title: 'Example 1 — simple', description: 'In a stabbing trial the fact in issue is who stabbed. That the accused bought a knife an hour earlier is preparation (s. 6). That a stranger once stole mangoes from the same village is irrelevant.' },
+    { id: 'rel-ex-2', title: 'Example 2 — legal', description: 'A bystander’s shout “he has a gun” at the moment of firing may be part of the same transaction (s. 4). The bystander’s statement to police two days later is not s. 4; it must find another route or stay out.' },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'rel-hypo',
+      title: 'Examination hypothetical',
+      facts: 'Immediately after a blast, a dying shopkeeper gasps to a customer, “Raju planted it.” Two days later the customer tells the investigating officer the same words.',
+      question: 'Is the gasp relevant? Is the later police statement relevant as res gestae?',
+      applicableLaw: 'BSA s. 4 (same transaction); s. 26 family for statements of persons who cannot be called (dying declaration teaching); res gestae is not a hearsay free-for-all.',
+      analysis: 'The gasp, if contemporaneous and part of the event, is a s. 4 fact and may also be a s. 26 statement. The customer’s police statement two days later is a later narrative, not the transaction. It may be used to corroborate the customer as a witness, but it is not res gestae.',
+      conclusion: 'Gasp: likely relevant. Delayed police version: not s. 4. Educational hypothetical.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'rel-v-adm',
+      title: 'Relevancy and admissibility',
+      left: 'Relevancy (ss. 3–50)',
+      right: 'Admissibility (later chapters)',
+      rows: [
+        { point: 'Question', left: 'Does the BSA declare this fact relevant?', right: 'May it be proved in the manner proposed?' },
+        { point: 'Example', left: 'Motive under s. 6', right: 'Electronic chat without s. 63 certificate' },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    { id: 'rel-trap-1', trap: 'Everything logically connected is relevant.', correction: 'Only facts the BSA declares relevant. Logic is not a section.' },
+    { id: 'rel-trap-2', trap: 'IEA 6 is the current res gestae section.', correction: 'Current law is BSA s. 4. IEA 6 is concordance.' },
+  ],
+
+  questionsAndAnswers: [
+    { id: 'rel-qa-1', question: 'What is the gateway provision for relevancy under the BSA?', answer: 'Section 3 — evidence of facts in issue and of facts declared relevant, and of no others.', relatedProvisionIds: ['bsa-3'] },
+    { id: 'rel-qa-2', question: 'Which BSA section covers facts forming part of the same transaction?', answer: 'Section 4 (historically IEA s. 6).', relatedProvisionIds: ['bsa-4'] },
+  ],
+
+  relatedTopics: ['Doctrine of Res Gestae', 'Admissions & Confessions', 'Documentary & Digital Evidence'],
+
+  cases: [
+    { name: 'Ratten v. The Queen', year: 1972, citation: '[1972] AC 378', holding: 'A contemporaneous call can be part of the event rather than a later narrative. Teaching authority on spontaneity; apply the BSA “transaction” test, do not treat Privy Council facts as Indian statute.', relevance: 'Use to explain spontaneity. Current Indian cite is still BSA s. 4 plus Indian cases on IEA 6 as concordance.' },
+    { name: 'Gentela Vijayavardhan Rao v. State of A.P.', year: 1996, citation: '(1996) 6 SCC 241', holding: 'Statements must be reasonably contemporaneous with the transaction to come in as res gestae under the then IEA s. 6.', relevance: 'Indian authority on the transaction test. In a current-law answer, apply it to BSA s. 4.' },
+  ],
+
+  bareActPointers: ['BSA ss. 3–50', 's. 4', 's. 6', 'IEA 5–6 (historical)'],
+
+  examFrameworks: [
+    {
+      marks: 10,
+      question: 'Explain relevancy of facts under the Bharatiya Sakshya Adhiniyam, 2023.',
+      steps: [
+        'Define fact in issue vs relevant fact; cite s. 3.',
+        'Explain why the catalogue exists.',
+        'Illustrate with s. 4 and s. 6.',
+        'Distinguish relevancy from admissibility.',
+        'One example / short application.',
+        'Conclude with current-law numbering (not IEA).',
+      ],
+    },
+    {
+      marks: 16,
+      question: '“Evidence may be given of facts in issue and relevant facts, and of no others.” Discuss the scheme of Chapter II BSA with illustrations.',
+      steps: [
+        's. 3 as gateway.',
+        'Map the chapter: closely connected facts, admissions, statements of absent persons, judgments, opinions, character.',
+        'Res gestae / s. 4 in depth with a case principle.',
+        'Motive and conduct / s. 6.',
+        'Hypothetical.',
+        'Admissibility overlay (privilege, s. 63).',
+        'IEA concordance without false equivalence.',
+        'Conclusion.',
+      ],
+    },
+  ],
+
+  answerSkeleton: [
+    'Introduction — s. 3 gateway.',
+    'Fact in issue / relevant fact.',
+    'Principal heads of Chapter II with one illustration each for s. 4 and s. 6.',
+    'Relevancy ≠ admissibility.',
+    'Current BSA numbering.',
+    'Conclusion.',
+  ],
+
+  revisionPoints: [
+    's. 3 gateway; “and of no others”.',
+    's. 4 same transaction (old IEA 6).',
+    's. 6 motive, preparation, conduct (old IEA 8).',
+    'Relevant facts can still be inadmissible.',
+  ],
+
+  examTips: [
+    'Write BSA numbers first, IEA in brackets as historical.',
+    'Never use “res gestae” without “same transaction”.',
+  ],
+}
+
+export default content

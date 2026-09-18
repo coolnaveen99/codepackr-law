@@ -10,6 +10,8 @@ Then apply the matching subject file under [`.github/instructions/subjects/`](su
 
 Operational SOP: [`.github/skills/legal-content-workflow.md`](../skills/legal-content-workflow.md)
 
+Depth standard: [`.github/instructions/student-answer-content.md`](student-answer-content.md) — do **not** stop at a Bare Act summary. Teach concept, elements, exceptions, cases, examples, application, and 10-mark / 16-mark answer frameworks.
+
 ## Non-negotiable
 
 ```text

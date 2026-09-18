@@ -4,6 +4,8 @@
 
 Full rules: [`.github/instructions/global-legal-content.md`](../instructions/global-legal-content.md)
 
+Depth standard: [`.github/instructions/student-answer-content.md`](../instructions/student-answer-content.md)
+
 Student answer-depth rules: [`.github/skills/student-answer-content.md`](student-answer-content.md)
 
 Subject extras (only): [`.github/instructions/subjects/`](../instructions/subjects/)

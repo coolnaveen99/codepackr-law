@@ -12,6 +12,7 @@ All practice and study tools execute strictly in the user’s browser. Zero data
 
 Supporting files:
 - `.github/instructions/global-legal-content.md` — **global legal-content architecture (every subject)**
+- `.github/instructions/student-answer-content.md` — **10-mark / 16-mark depth standard**
 - `.github/instructions/subjects/` — subject-specific extras only
 - `.github/copilot-instructions.md`
 - `.github/skills/legal-content-workflow.md`

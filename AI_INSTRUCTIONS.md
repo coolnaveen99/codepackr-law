@@ -42,6 +42,7 @@ Single source of truth for any AI (or human) building or extending **Codepackr L
 
 1. `.github/copilot-instructions.md`
 2. `.github/instructions/global-legal-content.md` — **required before changing any legal study content**
+3. `.github/instructions/student-answer-content.md` — **10-mark / 16-mark depth; do not stop at Bare Act summaries**
 3. `.github/instructions/subjects/<subject>.md` — subject extras only (constitution, bns, bnss, bsa, cpc, contract, family, torts, petition-formats)
 4. `.github/skills/legal-content-workflow.md`
 5. `.github/skills/add-new-tool.md`

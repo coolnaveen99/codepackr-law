@@ -1,6 +1,7 @@
 import { articleEntityId, bnsSectionEntityId, encodeKnowledgeId, ID_RE, topicEntityId } from './ids'
 import { IDS } from './ids'
 import { BNS_KNOWLEDGE } from './bns'
+import { BSA_KNOWLEDGE } from './bsa'
 import { CONCEPTS } from './concepts'
 import { DEFINITIONS } from './definitions'
 import { DOCTRINES } from './doctrines'
@@ -32,6 +33,7 @@ const CANONICAL: CanonicalEntity[] = applyPrimaryHrefs([
   ...PRINCIPLES,
   ...PROCEDURES,
   ...BNS_KNOWLEDGE,
+  ...BSA_KNOWLEDGE,
 ])
 
 const ENTITIES: CanonicalEntity[] = [...CANONICAL, ...wrapAll()]
@@ -207,6 +209,16 @@ const BNS_TOPIC_KNOWLEDGE_ID: Record<string, string> = {
   'bns-ipc-map': IDS.procIpcToBns,
 }
 
+const BSA_TOPIC_KNOWLEDGE_ID: Record<string, string> = {
+  'doctrine-res-gestae': 'DOCTRINE:EVIDENCE-LAW:RES-GESTAE',
+  'doctrine-estoppel': 'DOCTRINE:EVIDENCE-LAW:ESTOPPEL',
+  'burden-proof': 'CONCEPT:EVIDENCE-LAW:BURDEN-OF-PROOF',
+  'documentary-digital': 'CONCEPT:EVIDENCE-LAW:ELECTRONIC-RECORD',
+  relevancy: 'STATUTE:EVIDENCE-LAW:BHARATIYA-SAKSHYA-ADHINIYAM',
+  'admissions-confessions': 'STATUTE:EVIDENCE-LAW:BHARATIYA-SAKSHYA-ADHINIYAM',
+  witnesses: 'STATUTE:EVIDENCE-LAW:BHARATIYA-SAKSHYA-ADHINIYAM',
+}
+
 export function knowledgeIdForTopic(subjectSlug: string, topicId: string): string | undefined {
   if (subjectSlug === 'constitution') {
     const mapped = TOPIC_KNOWLEDGE_ID[topicId]
@@ -221,6 +233,9 @@ export function knowledgeIdForTopic(subjectSlug: string, topicId: string): strin
     if (mapped) return mapped
     const sectionMatch = topicId.match(/^s-(\d+[a-z]*)$/i)
     if (sectionMatch?.[1]) return bnsSectionEntityId(sectionMatch[1])
+  }
+  if (subjectSlug === 'bsa') {
+    return BSA_TOPIC_KNOWLEDGE_ID[topicId]
   }
   return undefined
 }

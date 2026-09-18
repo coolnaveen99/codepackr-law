@@ -18,6 +18,7 @@ import {
 } from '../../data/topics/loadTopicContent'
 import { Badge } from '../ui/Badge'
 import { RelatedKnowledge } from '../knowledge/RelatedKnowledge'
+import { RichLegalText } from '../knowledge/RichLegalText'
 import { knowledgeIdForTopic } from '../../data/knowledge'
 
 const TOPIC_PROGRESS_KEY = 'codepackr-law-topic-progress'
@@ -169,20 +170,27 @@ export function TopicDetail({
         </div>
       )}
 
+      {!loading && content?.glance && (
+        <section className="rounded-2xl border border-blue-200 dark:border-blue-900/60 bg-blue-50/60 dark:bg-blue-950/20 p-5">
+          <p className="text-[11px] font-bold uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">
+            Topic at a glance
+          </p>
+          <p className="text-sm leading-relaxed text-slate-800 dark:text-slate-200">{content.glance}</p>
+        </section>
+      )}
+
       {!loading && hasContent && content && (
         <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
           <div className="flex items-center gap-2 mb-4">
             <BookOpen className="w-5 h-5 text-blue-600" />
             <h3 className="text-lg font-bold text-slate-900 dark:text-white">Study Topic</h3>
           </div>
-          <p className="text-sm sm:text-[15px] leading-relaxed text-slate-700 dark:text-slate-300 whitespace-pre-line">
-            {studyContent}
-          </p>
+          <StudyBody text={studyContent} />
 
           {content.bareActPointers && content.bareActPointers.length > 0 && (
             <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800">
               <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400 mb-2">
-                Bare Act Pointers
+                Legal source pointers
               </p>
               <div className="flex flex-wrap gap-1.5">
                 {content.bareActPointers.map((ptr) => (
@@ -222,6 +230,67 @@ export function TopicDetail({
         <section className="space-y-3">
           <h3 className="text-lg font-bold text-slate-900 dark:text-white">Examples</h3>
           <div className="grid gap-3 sm:grid-cols-2">{content.examples.map((example) => <article key={example.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4"><h4 className="font-semibold text-sm">{example.title || 'Illustration'}</h4><p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">{example.description}</p></article>)}</div>
+        </section>
+      )}
+
+      {!loading && content?.hypotheticals && content.hypotheticals.length > 0 && (
+        <section className="space-y-3">
+          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Hypothetical problem + application</h3>
+          {content.hypotheticals.map((item) => (
+            <article key={item.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 space-y-3">
+              {item.title && <h4 className="font-semibold text-sm">{item.title}</h4>}
+              <HypoBlock label="Facts" text={item.facts} />
+              <HypoBlock label="Legal question" text={item.question} />
+              <HypoBlock label="Applicable law" text={item.applicableLaw} />
+              <HypoBlock label="Analysis" text={item.analysis} />
+              <HypoBlock label="Conclusion" text={item.conclusion} />
+            </article>
+          ))}
+        </section>
+      )}
+
+      {!loading && content?.distinctions && content.distinctions.length > 0 && (
+        <section className="space-y-3">
+          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Important distinctions</h3>
+          {content.distinctions.map((item) => (
+            <article key={item.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden">
+              <div className="px-4 py-3 border-b border-slate-100 dark:border-slate-800">
+                <h4 className="font-semibold text-sm">{item.title}</h4>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="bg-slate-50 dark:bg-slate-800/60 text-left">
+                      <th className="px-4 py-2 font-semibold">Point</th>
+                      <th className="px-4 py-2 font-semibold">{item.left}</th>
+                      <th className="px-4 py-2 font-semibold">{item.right}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {item.rows.map((row) => (
+                      <tr key={row.point} className="border-t border-slate-100 dark:border-slate-800 align-top">
+                        <td className="px-4 py-2 font-medium text-slate-700 dark:text-slate-300">{row.point}</td>
+                        <td className="px-4 py-2 text-slate-600 dark:text-slate-400">{row.left}</td>
+                        <td className="px-4 py-2 text-slate-600 dark:text-slate-400">{row.right}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          ))}
+        </section>
+      )}
+
+      {!loading && content?.misconceptions && content.misconceptions.length > 0 && (
+        <section className="space-y-3">
+          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Common misconceptions / exam traps</h3>
+          {content.misconceptions.map((item) => (
+            <article key={item.id} className="rounded-2xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/40 dark:bg-amber-950/20 p-4">
+              <p className="text-sm font-semibold text-amber-900 dark:text-amber-200">Trap: {item.trap}</p>
+              <p className="mt-2 text-sm leading-relaxed text-slate-700 dark:text-slate-300">{item.correction}</p>
+            </article>
+          ))}
         </section>
       )}
 
@@ -306,6 +375,30 @@ export function TopicDetail({
         </section>
       )}
 
+      {!loading && content?.examFrameworks && content.examFrameworks.length > 0 && (
+        <section className="space-y-3">
+          <h3 className="text-lg font-bold text-slate-900 dark:text-white">How to write this in the examination</h3>
+          {content.examFrameworks.map((fw) => (
+            <article key={fw.marks} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
+              <h4 className="font-semibold text-sm text-blue-700 dark:text-blue-300">{fw.marks}-mark answer framework</h4>
+              {fw.question && <p className="mt-2 text-sm italic text-slate-600 dark:text-slate-400">Typical question: {fw.question}</p>}
+              <ol className="mt-3 space-y-2 list-decimal list-inside text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+                {fw.steps.map((step) => <li key={step}>{step}</li>)}
+              </ol>
+            </article>
+          ))}
+        </section>
+      )}
+
+      {!loading && content?.answerSkeleton && content.answerSkeleton.length > 0 && (
+        <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
+          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Model answer skeleton</h3>
+          <ol className="mt-3 space-y-2 list-decimal list-inside text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+            {content.answerSkeleton.map((step) => <li key={step}>{step}</li>)}
+          </ol>
+        </section>
+      )}
+
       {!loading && content?.examTips && content.examTips.length > 0 && (
         <section className="rounded-2xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/50 dark:bg-amber-950/20 overflow-hidden">
           <button
@@ -340,6 +433,20 @@ export function TopicDetail({
         </section>
       )}
 
+      {!loading && content?.revisionPoints && content.revisionPoints.length > 0 && (
+        <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
+          <h3 className="text-sm font-semibold text-slate-900 dark:text-white">Quick revision points</h3>
+          <ul className="mt-3 space-y-2">
+            {content.revisionPoints.map((point) => (
+              <li key={point} className="text-sm leading-relaxed text-slate-700 dark:text-slate-300 flex gap-2">
+                <span className="text-blue-500 font-bold shrink-0">•</span>
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {!loading && content?.relatedTopics && content.relatedTopics.length > 0 && (
         <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
           <h3 className="text-sm font-semibold text-slate-900 dark:text-white">Related Topics</h3>
@@ -354,6 +461,35 @@ export function TopicDetail({
       <p className="text-xs text-slate-400 dark:text-slate-500">
         Content is for exam preparation only. Always cross-check with the latest Bare Act.
       </p>
+    </div>
+  )
+}
+
+function StudyBody({ text }: { text: string }) {
+  const blocks = text.split('\n')
+  return (
+    <div className="text-sm sm:text-[15px] leading-relaxed text-slate-700 dark:text-slate-300 space-y-3">
+      {blocks.map((line, i) => {
+        if (!line.trim()) return null
+        const heading = line.length < 72 && !/[.?!”]$/.test(line.trim()) && !line.startsWith('•') && !/^\d+\./.test(line.trim())
+        if (heading) {
+          return (
+            <h4 key={i} className="pt-2 font-semibold text-slate-900 dark:text-white">
+              {line}
+            </h4>
+          )
+        }
+        return <RichLegalText key={i} text={line} className="[&>p]:mt-0" />
+      })}
+    </div>
+  )
+}
+
+function HypoBlock({ label, text }: { label: string; text: string }) {
+  return (
+    <div>
+      <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500">{label}</p>
+      <p className="mt-1 text-sm leading-relaxed text-slate-700 dark:text-slate-300">{text}</p>
     </div>
   )
 }

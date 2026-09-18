@@ -101,6 +101,44 @@ Art 32 = SC + FR only (+ FR itself). Art 226 = HC + FR and other legal rights. N
   bareActPointers: ['Art 32', 'Art 226'],
 
   examTips: ['Memorise the five writs with one-line meanings.', 'Write the Art 32 vs 226 comparison in every writs question.', 'Art 32 is a Fundamental Right; Art 226 is a constitutional power of High Courts.', 'Mention L. Chandra Kumar when judicial review/tribunals appear.'],
+
+  examFrameworks: [
+    {
+      marks: 10,
+      question: 'Write a 10-mark answer on this topic.',
+      steps: [
+        'Introduce the concept and name the governing provision.',
+        'Explain the legal idea in student language — not only the Bare Act words.',
+        'State essential elements or the main rule.',
+        'Cite one leading authority and its principle.',
+        'Give a short illustration or apply the rule to facts.',
+        'Note a material exception or distinction.',
+        'Conclude with the current legal position.',
+      ],
+    },
+    {
+      marks: 16,
+      question: 'Expand the same topic into a 16-mark answer.',
+      steps: [
+        'Introduction and meaning.',
+        'Why the rule exists / brief history if relevant.',
+        'Legal foundation and elements in detail.',
+        'Exceptions, limitations and an important distinction.',
+        'Two or more authorities with ratio, not only names.',
+        'A hypothetical with analysis.',
+        'Current-law position and a short critical comment.',
+        'Conclusion.',
+      ],
+    },
+  ],
+
+  revisionPoints: [
+    'Start with the provision and the legal idea, not a section dump.',
+    'Name the leading case and state what it actually held.',
+    'Current through the 106th Amendment (2023) for constitutional topics.',
+  ],
+
+
 }
 
 export default content

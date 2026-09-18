@@ -18,6 +18,7 @@ This folder defines how AI assistants and contributors must work on **Codepackr 
 | Document | File |
 |----------|------|
 | **Global agent instructions** | [`instructions/global-legal-content.md`](instructions/global-legal-content.md) |
+| **Student-answer depth standard** | [`instructions/student-answer-content.md`](instructions/student-answer-content.md) |
 | Copilot apply-to `src/data/**` | [`instructions/legal-content.instructions.md`](instructions/legal-content.instructions.md) |
 | Constitution | [`instructions/subjects/constitution.md`](instructions/subjects/constitution.md) |
 | BNS | [`instructions/subjects/bns.md`](instructions/subjects/bns.md) |
@@ -61,6 +62,7 @@ Each agent points to its detailed prompt in `prompts/`.
 
 | Skill | File | Purpose |
 |-------|------|---------|
+| **Student Answer Content** | [`skills/student-answer-content.md`](skills/student-answer-content.md) | 10-mark / 16-mark exam-ready Study Topics |
 | **Legal Content Workflow** | [`skills/legal-content-workflow.md`](skills/legal-content-workflow.md) | Research → verify → implement legal study content |
 | **Reusable Legal Knowledge** | [`skills/reusable-legal-knowledge.md`](skills/reusable-legal-knowledge.md) | Search-first canonical IDs, `[[REF:]]`, validation |
 | **Add Topic Notes** | [`skills/add-topic-notes.md`](skills/add-topic-notes.md) | Lazy-loaded Study Topic files |

@@ -69,6 +69,11 @@ export const PRIMARY_HREF: Record<string, string> = {
   [IDS.culpableHomicide]: '/subjects/bns/culpable-homicide-murder',
   [IDS.privateDefence]: '/subjects/bns/general-exceptions',
   [IDS.procIpcToBns]: '/tool/bns-ipc-mapper',
+  'DOCTRINE:EVIDENCE-LAW:RES-GESTAE': '/subjects/bsa/doctrine-res-gestae',
+  'DOCTRINE:EVIDENCE-LAW:ESTOPPEL': '/subjects/bsa/doctrine-estoppel',
+  'CONCEPT:EVIDENCE-LAW:BURDEN-OF-PROOF': '/subjects/bsa/burden-proof',
+  'CONCEPT:EVIDENCE-LAW:ELECTRONIC-RECORD': '/subjects/bsa/documentary-digital',
+  'STATUTE:EVIDENCE-LAW:BHARATIYA-SAKSHYA-ADHINIYAM': '/subjects/bsa',
 }
 
 const SKIP_TOPIC_IDS = new Set([

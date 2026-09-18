@@ -1,0 +1,145 @@
+import type { TopicContent } from '../loadTopicContent'
+
+const content: TopicContent = {
+  glance:
+    'An admission is a statement suggesting an inference as to a fact in issue or relevant fact (BSA s. 15). A confession is an admission of guilt in a criminal case, with special bars in ss. 22–24. Admissions are not conclusive, but may estop (s. 25).',
+
+  study: `Topic at a glance
+Every confession is an admission; not every admission is a confession. Civil cases live on admissions. Criminal cases live or die on whether a confession is voluntary and whether it was made to the police.
+
+Admission defined
+BSA s. 15: a statement, oral or documentary or contained in electronic form, which suggests any inference as to any fact in issue or relevant fact, made by the persons and in the circumstances later mentioned. Electronic form is now in the definition — a WhatsApp “yes I owe you” can be an admission if proved.
+
+Why the distinction exists
+The State has the power to compel. A confession extracted by threat, promise or police custody is unreliable and dangerous. That is why ss. 22–24 exist. Ordinary admissions in civil suits do not carry the same coercion risk, so they come in more freely, subject to s. 25 (not conclusive, may estop).
+
+Essential elements of an admission
+1. A statement (including electronic).
+2. It suggests an inference as to a fact in issue or relevant fact.
+3. It is made by a person specified in ss. 16–18 (party, agent, person with proprietary/pecuniary interest, person expressly referred to).
+4. It is used against the maker (s. 19) except in the stated cases.
+
+Confession bars (criminal)
+s. 22 — confession caused by inducement, threat, coercion or promise from a person in authority, relating to the charge, is irrelevant.
+s. 23 — confession to a police officer (with the discovery-proviso teaching that students still remember as IEA 27 — confirm the Bare Act proviso under s. 23; do not cite IEA 27 as current law).
+s. 24 — a proved confession may be considered against co-accused jointly tried for the same offence — weak evidence, needs corroboration in practice.
+
+How to apply
+Ask first: civil or criminal? Then: who spoke? Then: to whom? Then: was there inducement or police? Then: is it a full confession or only an admission of a circumstance?
+
+Current-law position
+BSA ss. 15–25, in force 1 July 2024. Historical IEA 17–31. Pakala Narayana Swami still teaches what a confession is (admission of the offence or substantially all the facts which constitute the offence).
+
+Educational note
+Original CodePackr teaching. Verify the exact proviso language of s. 23 in the Bare Act before writing a discovery answer.`,
+
+  provisions: [
+    { actId: 'bsa', actName: 'Bharatiya Sakshya Adhiniyam, 2023', provisionId: 'bsa-15', section: 's. 15', title: 'Admission defined' },
+    { actId: 'bsa', actName: 'Bharatiya Sakshya Adhiniyam, 2023', provisionId: 'bsa-22', section: 's. 22', title: 'Confession caused by inducement, threat, coercion or promise' },
+    { actId: 'bsa', actName: 'Bharatiya Sakshya Adhiniyam, 2023', provisionId: 'bsa-23', section: 's. 23', title: 'Confession to police officer' },
+    { actId: 'bsa', actName: 'Bharatiya Sakshya Adhiniyam, 2023', provisionId: 'bsa-25', section: 's. 25', title: 'Admissions not conclusive proof, but may estop' },
+  ],
+
+  examples: [
+    { id: 'ac-ex-1', title: 'Example 1 — simple', description: 'In a money suit the defendant texts “I will pay the 50,000 tomorrow.” That is an admission in electronic form under s. 15. It is not a confession; there is no crime charged.' },
+    { id: 'ac-ex-2', title: 'Example 2 — legal', description: 'An accused tells the station-house officer “I killed him.” That is a confession to a police officer and is hit by s. 23. If he then points out the knife and it is recovered, only the discovery fact may be proved — confirm the s. 23 proviso in the Bare Act.' },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'ac-hypo',
+      title: 'Examination hypothetical',
+      facts: 'During interrogation the IO says “if you admit, you will get bail today.” The accused then signs a statement admitting the theft. Later, before a magistrate, he repeats the admission voluntarily.',
+      question: 'Which statement, if either, is a relevant confession?',
+      applicableLaw: 'BSA s. 22 (inducement by person in authority); s. 23 (police); later judicial confession teaching.',
+      analysis: 'The IO’s promise of bail is an inducement from a person in authority relating to the charge. The signed police statement is irrelevant under s. 22 and also a confession to police under s. 23. A later voluntary statement to a magistrate is a different statement: if the impression of the inducement has been fully removed, it can be relevant. The student must take the facts on whether the later statement is truly voluntary.',
+      conclusion: 'Police statement out. Magistrate statement may come in if voluntary. Educational hypothetical.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'ac-adm-conf',
+      title: 'Admission and confession',
+      left: 'Admission (s. 15)',
+      right: 'Confession (ss. 22–24)',
+      rows: [
+        { point: 'Field', left: 'Civil and criminal', right: 'Criminal — admission of guilt / substantial facts of the offence' },
+        { point: 'To police', left: 'May still be an admission of a fact', right: 'Bar under s. 23' },
+        { point: 'Conclusive?', left: 'No; may estop (s. 25)', right: 'Must be voluntary; even then the Court may look for corroboration' },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    { id: 'ac-trap-1', trap: 'Every extra-judicial confession is inadmissible.', correction: 'The bar is inducement (s. 22) and police (s. 23), not “extra-judicial” as such. A voluntary confession to a private person can be relevant.' },
+    { id: 'ac-trap-2', trap: 'IEA 24–27 are the current sections.', correction: 'Current law is BSA 22–24 (and the s. 23 discovery proviso). Write IEA numbers only as history.' },
+  ],
+
+  questionsAndAnswers: [
+    { id: 'ac-qa-1', question: 'Define admission under the BSA.', answer: 'A statement, oral, documentary or in electronic form, which suggests an inference as to a fact in issue or relevant fact, made by specified persons (s. 15).', relatedProvisionIds: ['bsa-15'] },
+    { id: 'ac-qa-2', question: 'When is a confession irrelevant under s. 22?', answer: 'When caused by inducement, threat, coercion or promise from a person in authority, relating to the charge.', relatedProvisionIds: ['bsa-22'] },
+  ],
+
+  relatedTopics: ['Doctrine of Estoppel', 'Relevancy of Facts', 'Burden of Proof'],
+
+  cases: [
+    { name: 'Pakala Narayana Swami v. King Emperor', year: 1939, citation: 'AIR 1939 PC 47', holding: 'A confession must either admit the offence or substantially all the facts which constitute the offence. An admission of an incriminating circumstance is not automatically a confession.', relevance: 'Still the teaching definition. Apply it to BSA, do not treat it as a BSA section.' },
+    { name: 'Palvinder Kaur v. State of Punjab', year: 1952, citation: 'AIR 1952 SC 354', holding: 'Followed Pakala: a mixed statement that does not admit the offence is not a confession.', relevance: 'Use when the statement is only partly incriminating.' },
+    { name: 'Bharat Singh v. Bhagirathi', year: 1966, citation: 'AIR 1966 SC 405', holding: 'Admissions are substantive evidence but not conclusive; they can be shown to be wrong.', relevance: 'Pairs with BSA s. 25.' },
+  ],
+
+  bareActPointers: ['BSA ss. 15–25', 's. 22', 's. 23', 's. 25', 'IEA 17–31 (historical)'],
+
+  examFrameworks: [
+    {
+      marks: 10,
+      question: 'Distinguish admission and confession. When is a confession irrelevant?',
+      steps: [
+        'Define admission (s. 15) including electronic form.',
+        'Define confession (Pakala).',
+        's. 22 inducement; s. 23 police.',
+        'One illustration.',
+        's. 25 — not conclusive, may estop.',
+        'Current BSA numbering.',
+      ],
+    },
+    {
+      marks: 16,
+      question: 'Explain the scheme of admissions and confessions under the BSA. Can a confession to police ever be used?',
+      steps: [
+        's. 15 definition and who can make admissions (ss. 16–18).',
+        'Proof of admissions (s. 19) and civil-case rules.',
+        'Confession: Pakala test.',
+        'ss. 22–24 in detail, including co-accused (s. 24) and discovery teaching under s. 23 proviso — flag Bare Act verification.',
+        'Hypothetical.',
+        'Estoppel link (s. 25 / s. 121).',
+        'IEA concordance without blind replacement.',
+        'Conclusion.',
+      ],
+    },
+  ],
+
+  answerSkeleton: [
+    'Introduction — admission vs confession.',
+    's. 15 definition.',
+    'Bars: ss. 22 and 23.',
+    'Pakala holding.',
+    'Illustration.',
+    's. 25 / current law.',
+  ],
+
+  revisionPoints: [
+    's. 15 admission (includes electronic).',
+    'Confession = admission of the offence (Pakala).',
+    's. 22 inducement; s. 23 police.',
+    's. 25 not conclusive, may estop.',
+  ],
+
+  examTips: [
+    'Write “person in authority” in a s. 22 answer. “Police pressure” alone is incomplete if the question is inducement.',
+    'Do not cite IEA 27 as if it were still a standalone current section.',
+  ],
+}
+
+export default content
