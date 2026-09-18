@@ -1,0 +1,1 @@
+export { synthesizeArticleContent } from './synthesizeProvision'
