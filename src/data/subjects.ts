@@ -7,6 +7,8 @@
  */
 
 import { BNS_SECTIONS } from './bns/sections'
+import { BNSS_SECTIONS } from './bnss/sections'
+import { BSA_SECTIONS } from './bsa/sections'
 
 export type SubjectPriority = 'high' | 'medium' | 'low'
 
@@ -51,26 +53,42 @@ export interface LawSubjectMeta {
   mcqSubjectKey?: string
 }
 
-function bnsSectionTopics(): LawTopic[] {
-  return BNS_SECTIONS.map((s) => ({
+function catalogSectionTopics(
+  sections: { id: string; title: string; cluster: string; flags: string[]; ipc?: string; legacy?: string }[],
+  code: string,
+): LawTopic[] {
+  return sections.map((s) => ({
     id: `s-${s.id.toLowerCase()}`,
     name: `Section ${s.id} — ${s.title}`,
     type: 'section' as const,
     range: `s. ${s.id}`,
     cluster: s.cluster,
     note: s.flags.includes('new')
-      ? 'New — no IPC predecessor'
+      ? 'New provision'
       : s.ipc
         ? `IPC ${s.ipc}`
-        : undefined,
+        : s.legacy
+          ? `old ${s.legacy}`
+          : undefined,
     keywords: [
       `section ${s.id}`,
-      `bns ${s.id}`,
+      `${code} ${s.id}`,
       s.title.toLowerCase().slice(0, 48),
-      ...(s.ipc ? [`ipc ${s.ipc}`] : []),
     ],
     highYield: s.flags.includes('exam'),
   }))
+}
+
+function bnsSectionTopics(): LawTopic[] {
+  return catalogSectionTopics(BNS_SECTIONS, 'bns')
+}
+
+function bnssSectionTopics(): LawTopic[] {
+  return catalogSectionTopics(BNSS_SECTIONS, 'bnss')
+}
+
+function bsaSectionTopics(): LawTopic[] {
+  return catalogSectionTopics(BSA_SECTIONS, 'bsa')
 }
 
 export const SUBJECTS: LawSubjectMeta[] = [
@@ -231,7 +249,7 @@ export const SUBJECTS: LawSubjectMeta[] = [
     priority: 'high',
     aibeQuestions: 10,
     bareActs: ['Bharatiya Nagarik Suraksha Sanhita, 2023', 'Code of Criminal Procedure, 1973 (legacy)'],
-    description: 'Arrest, bail, FIR, investigation, trial, and appeals under the new BNSS (and legacy CrPC mapping).',
+    description: 'Criminal procedure under the Bharatiya Nagarik Suraksha Sanhita, 2023 — 531 sections, 39 chapters. Open the introduction, then click any section (FIR s. 173, arrest s. 35, bail s. 480) for the full study page. In force 1 July 2024.',
     keywords: ['bnss', 'crpc', 'bail', 'fir', 'arrest', 'investigation', 'trial'],
     icon: 'Gavel',
     mcqSubjectKey: 'bnss',
@@ -243,6 +261,7 @@ export const SUBJECTS: LawSubjectMeta[] = [
       { id: 'appeals-revision', name: 'Appeals & Revision', type: 'theme', keywords: ['appeal', 'revision'] },
       { id: 'bnss-crpc-map', name: 'BNSS ↔ CrPC Key Changes', type: 'theme', note: 'Use mapper tool for section-wise changes', keywords: ['mapper', 'new criminal laws'] },
       { id: 'doctrine-speedy-trial', name: 'Doctrine of Speedy Trial', type: 'doctrine', note: 'Art 21; Hussainara Khatoon and later cases', keywords: ['speedy trial', 'hussainara'], highYield: true },
+      ...bnssSectionTopics(),
     ],
   },
   {
@@ -274,7 +293,7 @@ export const SUBJECTS: LawSubjectMeta[] = [
     priority: 'high',
     aibeQuestions: 8,
     bareActs: ['Bharatiya Nyaya Sanhita, 2023', 'Indian Penal Code, 1860 (legacy)'],
-    description: 'Section-wise BNS 2023 study (358 sections, 20 chapters) with IPC mapping, through current law as of 1 July 2024 (s. 106(2) excepted).',
+    description: 'Section-wise Bharatiya Nyaya Sanhita, 2023 — 358 sections, 20 chapters. Open the introduction, then click any section (s. 1, s. 107, s. 103…) for the full study page. In force 1 July 2024 (s. 106(2) excepted).',
     keywords: ['bns', 'ipc', 'offences', 'murder', 'theft', 'criminal law', 'section 103', 'section 64'],
     icon: 'Shield',
     mcqSubjectKey: 'bns',
@@ -282,7 +301,7 @@ export const SUBJECTS: LawSubjectMeta[] = [
       { id: 'general-explanations', name: 'General Explanations & Definitions', type: 'chapter', note: 'Definitions, common intention, abetment, attempt', keywords: ['definitions', 'common intention'], highYield: true },
       { id: 'general-exceptions', name: 'General Exceptions', type: 'chapter', note: 'Private defence, necessity, insanity, intoxication', keywords: ['general exceptions', 'private defence'], highYield: true },
       { id: 'offences-body', name: 'Offences against the Human Body', type: 'theme', keywords: ['murder', 'culpable homicide', 'hurt'], highYield: true },
-      { id: 'culpable-homicide-murder', name: 'Culpable Homicide & Murder', type: 'section', note: 'Classic distinction; high-frequency MCQs', keywords: ['murder', 'culpable homicide'], highYield: true },
+      { id: 'culpable-homicide-murder', name: 'Culpable Homicide & Murder', type: 'theme', note: 'ss. 100–106 — classic distinction; open s. 100, 101, 103, 105', keywords: ['murder', 'culpable homicide'], highYield: true },
       { id: 'offences-property', name: 'Offences against Property', type: 'theme', keywords: ['theft', 'extortion', 'robbery', 'dacoity'], highYield: true },
       { id: 'sexual-offences', name: 'Sexual Offences', type: 'theme', keywords: ['rape', 'sexual offences'] },
       { id: 'defamation-misc', name: 'Defamation & Miscellaneous', type: 'theme', keywords: ['defamation'] },
@@ -300,7 +319,7 @@ export const SUBJECTS: LawSubjectMeta[] = [
     priority: 'high',
     aibeQuestions: 8,
     bareActs: ['Bharatiya Sakshya Adhiniyam, 2023', 'Indian Evidence Act, 1872 (legacy)'],
-    description: 'Relevancy, admissions, confessions, burden of proof, and documentary/digital evidence.',
+    description: 'Evidence law under the Bharatiya Sakshya Adhiniyam, 2023 — 170 sections, 12 chapters. Click a section for the full study page. In force 1 July 2024.',
     keywords: ['bsa', 'evidence', 'confession', 'admission', 'burden of proof'],
     icon: 'Search',
     mcqSubjectKey: 'bsa',
@@ -311,7 +330,8 @@ export const SUBJECTS: LawSubjectMeta[] = [
       { id: 'witnesses', name: 'Witnesses & Examination', type: 'theme', keywords: ['witness', 'examination'] },
       { id: 'documentary-digital', name: 'Documentary & Digital Evidence', type: 'theme', keywords: ['documentary evidence', 'electronic evidence'] },
       { id: 'doctrine-estoppel', name: 'Doctrine of Estoppel', type: 'doctrine', note: 'Estoppel under BSA / Evidence Act', keywords: ['estoppel'], highYield: true },
-      { id: 'doctrine-res-gestae', name: 'Doctrine of Res Gestae', type: 'doctrine', note: 'Facts forming part of the same transaction', keywords: ['res gestae'], highYield: true },
+      { id: 'doctrine-res-gestae', name: 'Doctrine of Res Gestae', type: 'doctrine', note: 's. 4 — facts forming part of the same transaction', keywords: ['res gestae'], highYield: true },
+      ...bsaSectionTopics(),
     ],
   },
   {

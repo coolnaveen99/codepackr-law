@@ -27,6 +27,7 @@ interface TopicDetailProps {
   subject: LawSubjectMeta
   topic: LawTopic
   onBack: () => void
+  onSelectTopic?: (topic: LawTopic) => void
 }
 
 function topicTypeLabel(type: LawTopic['type']) {
@@ -52,6 +53,7 @@ export function TopicDetail({
   subject,
   topic,
   onBack,
+  onSelectTopic,
 }: TopicDetailProps) {
   const [copiedCaseId, setCopiedCaseId] = useState<string | null>(null)
   const [tipsOpen, setTipsOpen] = useState(true)
@@ -89,6 +91,7 @@ export function TopicDetail({
   const hasContent = Boolean(studyContent)
   const hasCases = (content?.cases?.length ?? 0) > 0
   const knowledgeId = knowledgeIdForTopic(subject.slug, topic.id)
+  const neighbours = provisionNeighbours(subject, topic)
 
   const handleCopyCase = (c: CaseCitation, idx: number) => {
     const text = [
@@ -150,6 +153,28 @@ export function TopicDetail({
 
             {topic.note && (
               <p className="text-sm text-slate-600 dark:text-slate-400">{topic.note}</p>
+            )}
+            {neighbours && onSelectTopic && (
+              <div className="flex flex-wrap gap-2 pt-1">
+                {neighbours.prev && (
+                  <button
+                    type="button"
+                    onClick={() => onSelectTopic(neighbours.prev!)}
+                    className="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+                  >
+                    ← {neighbours.prev.range ?? neighbours.prev.name}
+                  </button>
+                )}
+                {neighbours.next && (
+                  <button
+                    type="button"
+                    onClick={() => onSelectTopic(neighbours.next!)}
+                    className="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+                  >
+                    {neighbours.next.range ?? neighbours.next.name} →
+                  </button>
+                )}
+              </div>
             )}
           </div>
 
@@ -492,4 +517,25 @@ function HypoBlock({ label, text }: { label: string; text: string }) {
       <p className="mt-1 text-sm leading-relaxed text-slate-700 dark:text-slate-300">{text}</p>
     </div>
   )
+}
+
+function provisionSortKey(id: string): [number, string] {
+  const match = id.match(/^(?:art|s)-(\d+)([a-z]*)$/i)
+  if (!match) return [9999, id]
+  return [Number(match[1]), match[2]]
+}
+
+function provisionNeighbours(subject: LawSubjectMeta, topic: LawTopic) {
+  if (topic.type !== 'section' && topic.type !== 'article') return null
+  const list = subject.topics
+    .filter((t) => t.type === topic.type)
+    .slice()
+    .sort((a, b) => {
+      const [an, as] = provisionSortKey(a.id)
+      const [bn, bs] = provisionSortKey(b.id)
+      return an - bn || as.localeCompare(bs)
+    })
+  const i = list.findIndex((t) => t.id === topic.id)
+  if (i < 0) return null
+  return { prev: list[i - 1], next: list[i + 1] }
 }

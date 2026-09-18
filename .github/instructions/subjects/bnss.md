@@ -10,8 +10,10 @@ This file is **only** BNSS-specific. Do not repeat global architecture here.
 | Name | Criminal Procedure (BNSS / CrPC) |
 | Legislation | Bharatiya Nagarik Suraksha Sanhita, 2023 |
 | Provision label | **Section** |
+| Catalog | 531 sections, 39 chapters — `src/data/bnss/` |
 | Notes path | `src/data/topics/bnss/<topicId>.ts` |
-| Current notes | `arrest`, `fir-investigation`, `bail`, `charge-trial`, `appeals-revision`, `bnss-crpc-map`, `doctrine-speedy-trial` |
+| Section lessons | topic id `s-<n>` synthesised from the section catalog |
+| Current essays | `arrest`, `fir-investigation`, `bail`, `charge-trial`, `appeals-revision`, `bnss-crpc-map`, `doctrine-speedy-trial` |
 
 ## Structure
 

@@ -379,6 +379,7 @@ export default function App() {
               subject={activeTopicPair.subject}
               topic={activeTopicPair.topic}
               onBack={() => handleSelectSubject(activeTopicPair.subject.slug)}
+              onSelectTopic={(topic) => handleSelectTopic(activeTopicPair.subject.slug, topic)}
             />
           )}
 

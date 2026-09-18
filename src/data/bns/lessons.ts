@@ -400,6 +400,22 @@ export const BNS_LESSONS: Record<string, BnsLesson> = {
       explain: "Commencement notification S.O. 850(E) excluded section 106(2). MHA has continued to record it as uncommenced.",
     },
   ),
+  "107": L(
+    "Abetment of suicide of a child or a person of unsound mind (old IPC 305). This is the aggravated sibling of s. 108. The person who dies must be a child (below 18 — s. 2) or of unsound mind. The accused is the abettor, not the deceased. Read abetment with ss. 45–46: instigation, conspiracy or aid.",
+    [
+      "s. 107 is old 305, not 306. Ordinary abetment of suicide of an adult of sound mind is s. 108 (old 306).",
+      "“Child” is any person below 18 (s. 2). Do not recycle the IPC ages.",
+      "A suicide attempt that fails is not s. 107. The suicide must be complete. General attempt-to-suicide (old 309) is not re-enacted.",
+      "Punishment is heavier than s. 108 — confirm the exact term in the Bare Act before a sentencing answer.",
+    ],
+    "If the deceased is 16, start with s. 107, not s. 108. If the deceased is 25 and of sound mind, s. 108. Neither is s. 106 (rash/negligent death).",
+    {
+      prompt: "Abetment of suicide of a 16-year-old is charged under —",
+      choices: ["BNS s. 106", "BNS s. 107", "BNS s. 108", "BNS s. 109"],
+      answer: 1,
+      explain: "s. 107 is abetment of suicide of a child or person of unsound mind (old IPC 305). s. 108 is the ordinary form (old 306).",
+    },
+  ),
   "108": L(
     "Abetment of suicide (old 306). The person who dies is not the accused. Instigation, conspiracy or aid (s. 45) plus a suicide is the structure. Leave-note cases still turn on whether there was instigation, not mere harassment.",
     [

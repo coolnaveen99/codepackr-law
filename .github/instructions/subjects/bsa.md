@@ -10,12 +10,14 @@ This file is **only** BSA-specific. Do not repeat global architecture here.
 | Name | Evidence (BSA / Evidence Act) |
 | Legislation | Bharatiya Sakshya Adhiniyam, 2023 |
 | Provision label | **Section** |
+| Catalog | 170 sections, 12 chapters — `src/data/bsa/` |
 | Notes path | `src/data/topics/bsa/<topicId>.ts` |
+| Section lessons | topic id `s-<n>` synthesised from the section catalog |
 
 ## Structure
 
 ```text
-BSA → Topics → Sections → Study → Cases → Q&A → MCQs → Practice → Exam
+BSA → Introduction → All sections (s. 1–170) → Study page per section → Cases → Q&A → MCQs
 ```
 
 Indian Evidence Act, 1872 is **historical concordance only**. Never assume `IEA X = BSA Y`.
