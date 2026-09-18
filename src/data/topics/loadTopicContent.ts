@@ -1,29 +1,23 @@
-/**
- * Lazy-load full topic learning content.
- */
-
-import type { CaseCitation } from '../subjects'
 import { articleById, articleIdFromTopicId } from '../constitution/articles'
-import { CASES } from '../constitution/cases'
 import { bnsSectionById, sectionIdFromTopicId } from '../bns/sections'
 import { bnssSectionById, bnssSectionIdFromTopicId } from '../bnss/sections'
 import { bsaSectionById, bsaSectionIdFromTopicId } from '../bsa/sections'
 import { synthesizeCatalogSection } from './synthesizeProvision'
 import { hasCpcCatalogTopic, synthesizeCpcContent } from './synthesizeCpc'
-
-export type { TopicContent } from './topicTypes'
-export {
-  type TopicSection,
-  type TopicProvision,
-  type TopicExample,
-  type TopicQuestionAnswer,
-  type TopicHypothetical,
-  type TopicMisconception,
-  type TopicDistinction,
-  type TopicExamFramework,
-} from './topicTypes'
-
+import { synthesizeArticleContent } from './synthesizeArticle'
 import type { TopicContent } from './topicTypes'
+
+export type {
+  TopicContent,
+  TopicSection,
+  TopicProvision,
+  TopicExample,
+  TopicQuestionAnswer,
+  TopicHypothetical,
+  TopicMisconception,
+  TopicDistinction,
+  TopicExamFramework,
+} from './topicTypes'
 
 export function getStudyBody(content: TopicContent | null | undefined): string {
   if (!content) return ''
@@ -31,51 +25,42 @@ export function getStudyBody(content: TopicContent | null | undefined): string {
 }
 
 function hasStudyBody(content: TopicContent): boolean {
-  return (
-    typeof content.study === 'string' ||
-    typeof content.detailed === 'string' ||
-    typeof content.short === 'string'
-  )
+  return Boolean(content.study || content.detailed || content.short)
 }
 
-const topicModules = import.meta.glob<{ default: TopicContent }>(
-  './*/*.ts',
-  { eager: false },
-)
-
+const topicModules = import.meta.glob<{ default: TopicContent }>('./*/*.ts', { eager: false })
 const cache = new Map<string, TopicContent>()
 
-function cacheKey(subjectSlug: string, topicId: string) {
-  return `${subjectSlug}/${topicId}`
-}
-
-export async function loadTopicContent(
-  subjectSlug: string,
-  topicId: string,
-): Promise<TopicContent | null> {
-  const key = cacheKey(subjectSlug, topicId)
+export async function loadTopicContent(subjectSlug: string, topicId: string): Promise<TopicContent | null> {
+  const key = `${subjectSlug}/${topicId}`
   if (cache.has(key)) return cache.get(key)!
 
-  const path = `./${subjectSlug}/${topicId}.ts`
-  const loader = topicModules[path]
+  const loader = topicModules[`./${subjectSlug}/${topicId}.ts`]
   if (loader) {
     try {
       const mod = await loader()
-      const content = mod.default
-      if (content && hasStudyBody(content)) {
-        cache.set(key, content)
-        return content
+      if (mod.default && hasStudyBody(mod.default)) {
+        cache.set(key, mod.default)
+        return mod.default
       }
     } catch {
-      // fall through
+      // catalog fallback
     }
   }
 
   if (subjectSlug === 'constitution') {
-    const { synthesizeArticleContent } = await import('./synthesizeArticle')
     const articleId = articleIdFromTopicId(topicId)
-    if (articleId) {
-      const synthesized = synthesizeArticleContent(articleId)
+    const synthesized = articleId ? synthesizeArticleContent(articleId) : null
+    if (synthesized) {
+      cache.set(key, synthesized)
+      return synthesized
+    }
+  }
+
+  if (subjectSlug === 'bns') {
+    const sectionId = sectionIdFromTopicId(topicId)
+    if (sectionId) {
+      const synthesized = await synthesizeCatalogSection('bns', sectionId)
       if (synthesized) {
         cache.set(key, synthesized)
         return synthesized
@@ -83,11 +68,25 @@ export async function loadTopicContent(
     }
   }
 
-  if (subjectSlug === 'bns' || subjectSlug === 'bnss' || subjectSlug === 'bsa') {
-    const synthesized = await synthesizeCatalogSection(subjectSlug, subjectSlug === 'bns' ? sectionIdFromTopicId(topicId)! : subjectSlug === 'bnss' ? bnssSectionIdFromTopicId(topicId)! : bsaSectionIdFromTopicId(topicId)!)
-    if (synthesized) {
-      cache.set(key, synthesized)
-      return synthesized
+  if (subjectSlug === 'bnss') {
+    const sectionId = bnssSectionIdFromTopicId(topicId)
+    if (sectionId) {
+      const synthesized = await synthesizeCatalogSection('bnss', sectionId)
+      if (synthesized) {
+        cache.set(key, synthesized)
+        return synthesized
+      }
+    }
+  }
+
+  if (subjectSlug === 'bsa') {
+    const sectionId = bsaSectionIdFromTopicId(topicId)
+    if (sectionId) {
+      const synthesized = await synthesizeCatalogSection('bsa', sectionId)
+      if (synthesized) {
+        cache.set(key, synthesized)
+        return synthesized
+      }
     }
   }
 
