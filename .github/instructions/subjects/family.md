@@ -17,3 +17,5 @@ This file is **only** Family-Law-specific. Do not repeat global architecture her
 - Always name the personal-law statute. “Section 13” is meaningless without HMA / SMA / etc.
 - Do not collapse Hindu, Muslim, and SMA into one undifferentiated essay.
 - Constitutional holdings (e.g. triple talaq, privacy) belong as `CASE:` / Constitution cross-links — do not rewrite Basic Structure or Art 21 here.
+- Study Topics must meet [`.github/instructions/student-answer-content.md`](../student-answer-content.md): full 10-mark and 16-mark Q&A. Never a shortened explanation.
+

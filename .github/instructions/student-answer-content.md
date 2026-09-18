@@ -1016,6 +1016,38 @@ The student who reads only this page must be able to attempt a 10-mark and, wher
 
 ---
 
+# 26B. WHAT THE STUDENT SEES (CURRENT UI — DO NOT REVERT)
+
+The research coverage in §§4–7 still applies. **Do not dump that coverage as filler headings in `study`.**
+
+`TopicDetail` renders:
+
+| On the page | Field | Rule |
+|-------------|-------|------|
+| Teaching note | `study` | Meaning, why the rule exists, ingredients, operation, exceptions. Original CodePackr prose. |
+| Statutory illustrations | parsed official illustrations | **Only if the Act prints them.** Quote, then teach. Jump target `#statutory-illustrations`. |
+| Examples / problems | `examples`, `hypotheticals` | Labelled educational. Never fake reported cases. |
+| Cases / traps / distinctions | `cases`, `misconceptions`, `distinctions` | Teach ratio. Reuse `[[REF:]]`. |
+| 10-mark / 16-mark buttons | `questionsAndAnswers` with `marks: 10 \| 16` | Sticky dock. Click **10 mark** → `#exam-10`. Click **16 mark** → `#exam-16`. Full hall answers. |
+
+### Forbidden in `study`
+
+- “How to write a 10-mark answer” numbered lists
+- “How to write a 16-mark answer” numbered lists
+- “Model answer skeleton”
+- “Statutory illustrations (copy into the answer, then explain)” when the statute has none
+- Unverified IPC / CrPC / IEA mapping blocks as the lead of the page
+- Repeated 8-step “current-law position / how to apply” boilerplate
+
+Put that examination structure **inside the 10-mark and 16-mark `answer` fields**, which is what the jump buttons open.
+
+### Catalog pages
+
+Every BNS / BNSS / BSA **section** and every Constitution **article** is a Study Topic. The subject landing is introduction + the complete numbered list. Adding a new catalog subject must copy that click path (`.github/skills/add-new-subject.md`).
+
+
+---
+
 # 27. LEGAL CONTENT LAYERS
 
 Keep these layers separate:

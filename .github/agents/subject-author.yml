@@ -1,0 +1,32 @@
+name: Subject Author
+description: Adds new law subjects and deep study content (catalog + 10/16-mark pages) for CodePackr Law.
+instructions: |
+  You add subjects and subject content to CodePackr Law (law.codepackr.com).
+  Follow .github/skills/add-new-subject.md exactly.
+  Also follow .github/instructions/global-legal-content.md,
+  .github/instructions/student-answer-content.md,
+  .github/instructions/subjects/_template.md,
+  and write a new extras file at .github/instructions/subjects/<slug>.md.
+
+  PRODUCT SHAPE (non-negotiable):
+  Click the subject → introduction + complete catalog.
+  Click a section/article/topic → full teaching page.
+  10-mark and 16-mark buttons jump to full examination answers.
+  Same as BNS / BNSS / BSA / Constitution.
+
+  Catalog subjects need a verified numbered list (do not invent numbers).
+  Theme subjects start with high-yield essays; upgrade to catalog only with official text.
+
+  Study body = teaching (meaning, ingredients, exceptions, application).
+  Statutory illustrations = only when the official Act prints them; then teach them.
+  Q&A = full 10-mark and 16-mark answers with marks: 10 | 16. Never shortened.
+  Do not dump Bare Act as the page.
+  Do not put exam-writing filler, model skeletons, or unverified IPC/CrPC mapping blocks in study.
+
+  Metadata only in src/data/subjects.ts.
+  Notes in src/data/topics/<slug>/.
+  Wire hamburger (CODE_SLUGS / MORE_SLUGS) and HomePage lists.
+  Map icons in src/components/icons.tsx.
+  Search src/data/knowledge first; reuse [[REF:]].
+  Never invent law. Unverified = needs-review.
+  npm run lint and npm run build must stay green.

@@ -36,16 +36,20 @@ Every substantive Study Topic should answer WHAT, WHY, HOW, WHEN, WHY NOT, EXCEP
 
 Use existing `TopicContent` fields:
 
-- `study` — one authoritative body
+- `study` — teaching body (meaning, ingredients, exceptions). **Not** exam-writing filler.
 - `glance`, `sections`, `provisions`
 - `examples`, `hypotheticals`, `distinctions`, `misconceptions`
 - `cases` (teach ratio, do not dump names)
-- `examFrameworks` (10 and 16 marks)
-- `answerSkeleton`, `revisionPoints`, `questionsAndAnswers`
+- `questionsAndAnswers` with **`marks: 10` and `marks: 16`** — full hall answers; this is what the jump buttons open
+
+Do not rely on `examFrameworks` / `answerSkeleton` as the student-facing 10/16 content. Those lists were stripped from the study page. The dock buttons only find Q&A items.
 
 **Q&A is never a short version.** `questionsAndAnswers[].answer` must be a complete 10-mark or 16-mark examination answer (introduction, meaning, ingredients, illustration mapped to an ingredient, exception, application, conclusion). `explanation` is extra scoring guidance, not a substitute for a tiny answer.
 
-Statutory **definitions, illustrations and explanations** must be included on the Study Topic and taught. Do not dump the Bare Act as the whole page. Do not omit illustrations to make the page shorter.
+Statutory **definitions, illustrations and explanations** must be included on the Study Topic **when the official text prints them**, and then taught. Do not dump the Bare Act as the whole page. Do not invent Illustration (a) if the statute has none.
+
+Adding a whole new subject: `.github/skills/add-new-subject.md`.
+
 
 Not every heading is required on every topic. Do not omit important material merely to make content shorter. Do not pad.
 

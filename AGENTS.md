@@ -1,6 +1,6 @@
 # Role & Identity — Codepackr Law
 
-You are building and maintaining **Codepackr Law** (`law.codepackr.com`) — a 100% privacy-first, client-side Indian law learning suite focused on AIBE, Judiciary exams, Bare Act MCQs, and flashcards.
+You are building and maintaining **Codepackr Law** (`law.codepackr.com`) — a 100% privacy-first, client-side **student corner** for Indian law: AIBE, Judiciary, university 10-mark / 16-mark answers, catalogs of the current codes, and exam tools.
 
 All practice and study tools execute strictly in the user’s browser. Zero data leaves the device.
 
@@ -11,8 +11,10 @@ All practice and study tools execute strictly in the user’s browser. Zero data
 **Read first:** [AI_INSTRUCTIONS.md](AI_INSTRUCTIONS.md)
 
 Supporting files:
-- `.github/instructions/global-legal-content.md` — **global legal-content architecture (every subject)**
-- `.github/instructions/student-answer-content.md` — **10-mark / 16-mark depth standard**
+- `.github/skills/add-new-subject.md` — **adding a subject and its content**
+- `.github/instructions/global-legal-content.md` — global legal-content architecture
+- `.github/instructions/student-answer-content.md` — 10-mark / 16-mark depth standard
+- `.github/instructions/subjects/_template.md` — extras file for a new subject
 - `.github/instructions/subjects/` — subject-specific extras only
 - `.github/copilot-instructions.md`
 - `.github/skills/legal-content-workflow.md`
@@ -27,19 +29,22 @@ Supporting files:
 
 ## Brand Identity
 
-- Header title: **Codepackr Law**
-- Accent color: Blue `#2563eb`
-- Tagline: *100% Client-Side Indian Law Learning Tools*
-- Backlink: `← Codepackr Dev Suite` → https://www.codepackr.com
+- Header: **CodePackr Law** · Student corner
+- Accent: **seal burgundy** (Tailwind `blue-*` remapped in `src/index.css` to `#8B1E3F` / `#9F2D4A`)
+- Distinct from codepackr.com (blue) and finance.codepackr.com (green)
+- Chrome: hamburger menu (`Header` + `NavDrawer`) on every page
+- Backlink: Codepackr family → https://www.codepackr.com
 
 ---
 
 ## Core Directives
 
 1. 100% client-side only.
-2. Every new tool follows `.github/skills/add-new-tool.md`.
-3. Quality Gate must be fully green.
-4. Blue brand only.
-5. Prioritise AIBE / Judiciary / new criminal laws (BNS, BNSS, BSA).
-6. Reusable legal knowledge is a repository-wide rule: search `src/data/knowledge` first, reuse the canonical ID, never duplicate a doctrine/case/article explanation. See `.github/skills/reusable-legal-knowledge.md`.
-7. Legal study content follows `.github/instructions/global-legal-content.md` (architecture, research, mapper, current vs historical law) plus the matching subject file under `.github/instructions/subjects/`.
+2. Every new **tool** follows `.github/skills/add-new-tool.md`.
+3. Every new **subject** follows `.github/skills/add-new-subject.md`.
+4. Quality Gate must be fully green.
+5. Keep the seal theme. Do not restyle to Dev blue or Finance green.
+6. Prioritise AIBE / Judiciary / Constitution / BNS / BNSS / BSA.
+7. Reusable legal knowledge: search `src/data/knowledge` first. See `.github/skills/reusable-legal-knowledge.md`.
+8. Catalog-first UX: subject landing = introduction + complete list; click a provision = full study page with 10-mark and 16-mark jump buttons.
+9. Legal study content follows `.github/instructions/global-legal-content.md` plus `.github/instructions/subjects/<subject>.md`.

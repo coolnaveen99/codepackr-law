@@ -2,7 +2,7 @@
 
 Read first: [`.github/instructions/global-legal-content.md`](../global-legal-content.md)
 
-This file is **only** BNS-specific. Do not repeat global architecture here.
+This file is **only** BNS-specific. Do not repeat global architecture here. Other Acts should **copy this catalog shape** via [`.github/skills/add-new-subject.md`](../../skills/add-new-subject.md).
 
 | Field | Value |
 |-------|--------|

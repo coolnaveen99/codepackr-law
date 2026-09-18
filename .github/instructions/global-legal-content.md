@@ -6,6 +6,7 @@ This is the **global instruction set for AI agents working on CodePackr Law**. U
 
 Related:
 - Skill SOP: [`.github/skills/legal-content-workflow.md`](../skills/legal-content-workflow.md)
+- **Add a subject:** [`.github/skills/add-new-subject.md`](../skills/add-new-subject.md)
 - Knowledge graph: [`.github/skills/reusable-legal-knowledge.md`](../skills/reusable-legal-knowledge.md)
 - Topic notes: [`.github/skills/add-topic-notes.md`](../skills/add-topic-notes.md)
 - Architecture: [`docs/reusable-legal-knowledge-architecture.md`](../../docs/reusable-legal-knowledge-architecture.md)
@@ -31,7 +32,30 @@ Conceptual models in this document map onto **existing** Codepackr Law types. Re
 
 **ID rule:** If an entity already has a canonical ID (for example `ARTICLE:CONSTITUTION:ARTICLE-21` or `SECTION:BNS:SECTION-103`), **reuse it**. Do not mint a second ID such as `PROVISION:CONSTITUTION:21` for the same thing.
 
-**Current-law subjects** in `subjects.ts` are Constitution, BNS, BNSS, BSA, CPC, Contract, Family, Torts, petition-formats. IPC, CrPC, and the Indian Evidence Act are **historical concordance only** (mappers + aliases), not active current-law subjects.
+**Current-law subjects** in `subjects.ts` are Constitution, BNS, BNSS, BSA, CPC, Contract, Family, Torts, petition-formats, and any in-force subject added via `.github/skills/add-new-subject.md`. IPC, CrPC, and the Indian Evidence Act are **historical concordance only** (mappers + aliases), not active current-law subjects.
+
+---
+
+# 0. Catalog-first student UX (current product)
+
+This is the click path every catalog subject must copy:
+
+```text
+Hamburger / Home
+  → Subject (introduction + complete numbered list)
+    → Click Section 1 / Article 21 / Section 107
+      → Full study page
+        → 10 mark button → full 10-mark answer
+        → 16 mark button → full 16-mark answer
+```
+
+- Subject landing: intro card (`subjectIntros.ts`) + jump box + every provision, grouped by chapter/part. Themes sit above the list.
+- Study page: teaching `study` + official illustrations when printed + labelled examples + Q&A dock.
+- Do not lead a study page with unverified IPC/CrPC/IEA mapping.
+- Do not dump the Bare Act as the whole page.
+- New subjects: `.github/skills/add-new-subject.md`. Extras file from `.github/instructions/subjects/_template.md`.
+- Wire hamburger: `src/components/layout/NavDrawer.tsx` (`CODE_SLUGS` or `MORE_SLUGS`) and `src/components/home/HomePage.tsx`.
+
 
 ---
 
@@ -144,10 +168,11 @@ Only render sections that contain content.
 Primary journey:
 
 ```text
-SUBJECT → TOPIC → STUDY → PROVISIONS → CASE LAW → Q&A → EXAM POINTS → PRACTICE → EXAM
+SUBJECT (intro + catalog) → TOPIC / SECTION / ARTICLE → STUDY → ILLUSTRATIONS → 10-MARK / 16-MARK Q&A
 ```
 
 Do not make MCQ Practice the primary entry point from a subject/topic learning page.
+Do not hide a high-yield subject from the hamburger.
 
 ---
 

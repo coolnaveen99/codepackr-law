@@ -17,3 +17,5 @@ This file is **only** Torts-specific. Do not repeat global architecture here.
 - Torts is not BNS. Criminal assault/hurt essays belong on BNS; civil wrongs stay here. Cross-link when both apply.
 - Leading cases are the backbone. Reuse a canonical `CASE:` record; do not duplicate the same case essay per topic.
 - Where a statute applies (MVA, CPA), cite that statute’s section — not a BNS section — unless the facts also disclose an offence.
+- Study Topics must meet [`.github/instructions/student-answer-content.md`](../student-answer-content.md): full 10-mark and 16-mark Q&A. Never a shortened explanation.
+

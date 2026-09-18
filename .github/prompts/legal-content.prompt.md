@@ -10,18 +10,15 @@ Read in this order:
 4. `.github/skills/reusable-legal-knowledge.md`
 5. `.github/skills/add-topic-notes.md`
 6. `.github/skills/student-answer-content.md`
+7. If adding a **new subject**: `.github/skills/add-new-subject.md` and `.github/prompts/add-subject.prompt.md`
 
 ## Non-negotiable product goal
 
-CodePackr Law is primarily for **law students preparing for university, AIBE, Judiciary and other law examinations**.
+Student corner. Click a subject → introduction + complete catalog. Click a section/article → full teaching page. **10-mark** and **16-mark** buttons jump to full hall answers.
 
-The objective is NOT to produce short Bare Act summaries.
-
-For every substantive topic, build enough understanding for a student to confidently develop a **10-mark answer** and, where the topic permits, expand it into a **16-mark answer**.
+The objective is NOT short Bare Act summaries and NOT exam-writing filler in the teaching body.
 
 ### Never start and stop with the Bare Act
-
-Use this sequence:
 
 ```
 RESEARCH BEYOND BARE ACT
@@ -30,192 +27,47 @@ RESEARCH BEYOND BARE ACT
 → CONNECT PROVISIONS + DOCTRINES + CASES
 → GIVE EXAMPLES
 → APPLY TO HYPOTHETICAL FACTS
-→ BUILD 10-MARK ANSWER
-→ BUILD 16-MARK ANSWER
-→ REVISION / MCQ
+→ FULL 10-MARK ANSWER (questionsAndAnswers, marks: 10)
+→ FULL 16-MARK ANSWER (questionsAndAnswers, marks: 16)
 ```
 
-The Bare Act is the authoritative **legal source layer**. It is not the complete student-learning layer.
+`study` teaches. Q&A is the exam answer. Do not paste “How to write a 10-mark answer” into `study`.
 
-## Required depth for every substantive topic
+## Required depth
 
-Do not generate a shallow paragraph or section-number list.
+Cover meaning, purpose, definitions (every official one), ingredients, operation, exceptions, distinctions, labelled examples, verified cases with ratio, exam traps.
 
-Where applicable, cover:
+Statutory illustrations: include **only when the official text prints them**, then teach (quote → ingredient → result). Never invent Illustration (a).
 
-- Topic at a glance
-- Introduction
-- Meaning and concept
-- Why the doctrine/rule exists
-- Legal and historical background
-- Definitions and key terms
-- Relevant constitutional/statutory provisions
-- Essential elements/ingredients
-- Detailed explanation of each element
-- How the rule operates
-- Exceptions and limitations
-- Important distinctions
-- Practical examples
-- Examination-style hypothetical
-- Application/analysis of the hypothetical
-- Leading case laws
-- Facts, issue, decision and ratio/principle of important cases
-- Current-law position
-- Common misconceptions/exam traps
-- 10-mark answer framework
-- 16-mark answer framework
-- Model answer skeleton/points
-- Quick revision points
-- Questions & Answers
-- MCQ-ready points
-- Related topics and reusable knowledge
+## 10-mark / 16-mark
 
-Do not force irrelevant sections into a topic. Do not omit important sections merely to keep the answer short.
+Put complete hall answers in `questionsAndAnswers` with `marks: 10` and `marks: 16`. The UI dock scrolls to `#exam-10` / `#exam-16`. Never a shortened explanation. `explanation` is scoring guidance only.
 
-## 10-mark answer standard
+## Examples
 
-A 10-mark framework should normally allow a student to write:
+Prefer a simple illustration, a legal hypothetical, and an exam fact pattern. Label created hypotheticals. Never invent a real case.
 
-1. Introduction/definition
-2. Legal basis
-3. Core rule/doctrine
-4. Essential elements
-5. Relevant provisions
-6. Important authority/case law
-7. Illustration/application
-8. Exceptions/limitations where material
-9. Conclusion
+## Case-law
 
-It must read like an answer plan, not a collection of section numbers.
-
-## 16-mark answer standard
-
-A 16-mark framework should normally allow a student to expand with:
-
-1. Introduction
-2. Meaning and conceptual explanation
-3. Legal foundation
-4. Historical/developmental context where relevant
-5. Detailed principles/elements
-6. Provision-wise analysis where necessary
-7. Exceptions/limitations
-8. Distinctions/comparative analysis
-9. Multiple relevant case laws
-10. Ratio/principles from important authorities
-11. Practical illustrations
-12. Hypothetical/problem question
-13. Application and reasoning
-14. Current legal position
-15. Analytical/critical discussion where academically appropriate
-16. Conclusion
-
-The goal is **understanding + application + answer-writing ability**, not word count.
-
-## Examples are required
-
-Whenever examples would clarify a rule, include them.
-
-Prefer:
-- simple everyday illustration;
-- legal hypothetical;
-- examination-style fact pattern;
-- application showing why the rule applies or does not apply.
-
-Never invent a real case. Clearly label created hypotheticals as examples/illustrations.
-
-## Case-law rule
-
-Do not merely list case names.
-
-For important cases, verify and explain:
-- case name;
-- citation/year;
-- court;
-- material facts;
-- issue;
-- relevant provision/doctrine;
-- decision;
-- ratio decidendi;
-- why the case matters;
-- exam-use point.
-
-Search the canonical knowledge graph first. Reuse `[[REF:CASE:...]]` records where they exist. Do not duplicate full canonical case essays.
+Do not dump names. Teach facts / issue / decision / ratio / exam use. Reuse `[[REF:CASE:...]]`.
 
 ## Reusable legal knowledge
 
-Before creating a doctrine, principle, maxim, definition, case, provision or other reusable concept:
-
 ```
-SEARCH FIRST
-→ REUSE IF EXISTS
-→ CREATE ONLY IF NEW
-→ TAG IT
-→ LINK IT
-→ VALIDATE IT
+SEARCH FIRST → REUSE IF EXISTS → CREATE ONLY IF NEW → TAG → LINK → VALIDATE
 ```
-
-Use canonical `TYPE:CATEGORY:SLUG` IDs and `[[REF:...]]` references.
-
-A topic may contain an original explanation of how a reusable concept applies to that topic, but do not duplicate the canonical concept unnecessarily.
 
 ## Research and accuracy
 
-Follow:
+Primary/official sources first (India Code, Cytrain for BNS/BNSS/BSA, Legislative Department PDF for Constitution). Never invent. Never assume IPC = BNS, CrPC = BNSS, IEA = BSA. Unverified = `needs-review`.
 
-```
-RESEARCH → VERIFY → STRUCTURE → IMPLEMENT → CROSS-LINK → VALIDATE → TEST
-```
+## Architecture
 
-Use primary/official sources first, then reliable legal databases, reputable legal reporting and academic/educational sources as appropriate.
-
-Distinguish:
-- Bare Act/statutory text;
-- judicial holding;
-- established doctrine;
-- academic/commentary explanation;
-- original CodePackr explanation;
-- created illustration.
-
-Never invent provisions, citations, judgments, holdings, amendments, mappings or source URLs. If not verified, mark `needs-review`.
-
-Never assume IPC = BNS, CrPC = BNSS or IEA = BSA by number. Preserve historical references where required.
-
-## Content architecture
-
-Use the existing repository architecture.
-
-- One Study Topic body
-- `study` is preferred
+- One Study Topic body (`study`)
 - Metadata only in `subjects.ts`
 - Notes in `src/data/topics/`
 - Reusable knowledge in `src/data/knowledge/`
-- One case system
-- One provision system
-- One MCQ / Practice / Exam system
-- One Legal Key Mapper
+- One MCQ system, one mapper
+- New subjects: hamburger + home lists + extras file from `_template.md`
 
-Do not create a parallel content system.
-
-## Quality gate
-
-Reject or improve content if it is:
-- merely a Bare Act summary;
-- only section-number lists;
-- too short to support a 10-mark answer;
-- incapable of expansion to a 16-mark answer where applicable;
-- case-name dumping without legal principles;
-- missing examples that would improve understanding;
-- missing material exceptions/distinctions;
-- generic AI filler;
-- unsupported by verified sources.
-
-**Detailed does not mean repetitive.** Every paragraph should improve conceptual understanding, legal analysis, application or exam readiness.
-
-## Implementation
-
-Make the repository changes directly when requested. After changes:
-- validate references and canonical IDs;
-- run `npm run lint`;
-- run `npm run build`;
-- report exactly what was changed and any unresolved `needs-review` items.
-
+After changes: `npm run lint`, `npm run build`, report `needs-review`.

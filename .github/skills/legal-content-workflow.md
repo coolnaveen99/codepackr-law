@@ -14,6 +14,8 @@ Knowledge graph: [`.github/skills/reusable-legal-knowledge.md`](reusable-legal-k
 
 Topic file SOP: [`.github/skills/add-topic-notes.md`](add-topic-notes.md)
 
+New subject SOP: [`.github/skills/add-new-subject.md`](add-new-subject.md)
+
 ## Workflow
 
 ```
@@ -54,36 +56,26 @@ If unverified: mark `needs-review`. Never invent numbers, citations, holdings or
 
 Every substantive topic should be detailed enough to support a 10-mark answer and, where appropriate, expansion to a 16-mark answer.
 
-Normally cover:
-- Introduction
-- Meaning/concept
-- Purpose/background
-- Definitions/key terms
-- Legal foundation/relevant provisions
-- Essential elements
-- Detailed explanation
-- Operation/rules
-- Exceptions/limitations
-- Distinctions
-- Practical examples
-- Examination-style hypothetical and application
-- Leading case law with principles/ratio
-- Current-law position
-- Common misconceptions/exam traps
-- 10-mark answer framework
-- 16-mark answer framework
-- Model answer skeleton
-- Revision points
-- Q&A / MCQ-ready points
-- Related reusable knowledge
+`study` teaches the law. `questionsAndAnswers` with `marks: 10 | 16` is the exam answer the jump buttons open. Do not paste “how to write 10/16 marks” into `study`.
 
-Do not make content longer through repetition. Add detail only when it improves understanding, application or exam-writing ability.
+Normally cover in research (then place on the correct field):
+- Introduction, meaning/concept, purpose
+- Definitions / every official illustration
+- Essential elements, operation, exceptions, distinctions
+- Practical examples and a labelled hypothetical
+- Leading case law with principles/ratio
+- Common misconceptions
+- Full 10-mark answer and full 16-mark answer in Q&A
+- Related reusable knowledge (`[[REF:]]`)
+
+Do not make content longer through repetition.
 
 ### 4. Implement
 
 - Metadata → `src/data/subjects.ts`
 - Notes → `src/data/topics/<slug>/<id>.ts`
-- Provisions → existing catalogs
+- New subject (hamburger, intro, catalog) → `.github/skills/add-new-subject.md`
+- Provisions → existing catalogs (`src/data/bns|bnss|bsa|constitution/`)
 - Reusable doctrine/case/definition → `src/data/knowledge/` after search
 - MCQs → `src/data/questions/`
 
@@ -120,4 +112,6 @@ Open the subject page, one topic, related knowledge, and (if MCQs changed) pract
 - Copy textbooks or database commentary
 - Generate only Bare Act summaries for substantive topics
 - Produce case-name lists without explaining the legal principle
+- Invent statutory illustrations
 - Omit examples/application where they materially help understanding
+- Add a subject without following `add-new-subject.md`

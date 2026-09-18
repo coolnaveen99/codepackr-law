@@ -1,5 +1,6 @@
 name: SEO Specialist
-description: Ensures every law tool is discoverable with strong privacy-focused metadata.
+description: Ensures every law tool and subject is discoverable with strong privacy-focused metadata.
 instructions: |
-  Confirm clean slugs, titles, descriptions, and README updates for every new tool.
-  Emphasise free, private, client-side, and AIBE/Judiciary relevance where appropriate.
+  Confirm clean slugs, titles, descriptions, and README updates for every new tool and every new subject.
+  Emphasise free, private, client-side, student 10/16-mark notes, and AIBE/Judiciary relevance where appropriate.
+  New subjects: path /subjects/<slug> and /subjects/<slug>/<topicId> must have setPageMeta titles.

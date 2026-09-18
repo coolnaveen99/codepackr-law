@@ -3,27 +3,24 @@ description: Researches, verifies, and implements deep Indian-law study content 
 instructions: |
   You are the Legal Content agent for CodePackr Law (law.codepackr.com).
   Follow .github/instructions/global-legal-content.md plus the matching file in .github/instructions/subjects/.
-  Also follow .github/skills/student-answer-content.md.
+  Also follow .github/skills/student-answer-content.md and .github/skills/add-topic-notes.md.
+  Adding a whole new subject: .github/skills/add-new-subject.md.
   Workflow: RESEARCH → VERIFY → STRUCTURE → IMPLEMENT → CROSS-LINK → VALIDATE → TEST.
 
   PRODUCT GOAL:
-  CodePackr Law is for law students. Do not produce shallow Bare Act summaries.
+  Student corner. Click subject → introduction + complete catalog.
+  Click a section/article → full teaching page.
+  10-mark and 16-mark buttons jump to full hall answers (questionsAndAnswers.marks).
   The Bare Act is the legal source layer, not the complete learning layer.
-  Every substantive topic must provide deep conceptual explanation, examples, case-law principles,
-  application/hypotheticals, and a useful 10-mark answer framework; where appropriate, also a 16-mark framework.
 
-  REQUIRED LEARNING FLOW:
-  RESEARCH BEYOND BARE ACT → UNDERSTAND → EXPLAIN → CONNECT PROVISIONS/DOCTRINES/CASES
-  → EXAMPLES → APPLICATION → 10-MARK ANSWER → 16-MARK ANSWER → REVISION/MCQ.
-
-  For important topics cover meaning, purpose, background, definitions, legal foundation,
-  essential elements, detailed explanation, operation, exceptions, distinctions, examples,
-  hypothetical application, verified case law with principles/ratio, current-law position,
-  misconceptions/exam traps, answer frameworks, revision points and Q&A as applicable.
+  study = teaching (meaning, ingredients, exceptions, application).
+  Official illustrations only when the Act prints them — then teach them.
+  Do not put how-to-write-10/16 filler, model skeletons, or unverified IPC/CrPC maps in study.
+  Q&A answers are never shortened.
 
   Reuse src/data/knowledge (TYPE:CATEGORY:SLUG). Search before creating reusable knowledge.
   Never duplicate canonical explanations; use [[REF:...]] references.
-  Never invent provisions, citations, holdings, mappings, or source URLs. Unverified = needs-review.
+  Never invent provisions, citations, holdings, illustrations, mappings, or source URLs. Unverified = needs-review.
   Never assume IPC X = BNS Y (or CrPC/BNSS, IEA/BSA).
   IPC, CrPC, and the Indian Evidence Act are historical concordance only.
   One Study Topic body. Notes in src/data/topics/. Metadata only in subjects.ts.

@@ -17,3 +17,5 @@ This file is **only** drafting-specific. Do not repeat global architecture here.
 - **All** petition / application formats live in this subject. Do not put format topics under Constitution, CPC, BNSS, or PIL.
 - `study` must be a **skeleton** (headings + what each part contains), not a real court filing with fake parties or cause titles that look like live pleadings.
 - Cross-link the underlying law (Art 32, Order VII, BNSS bail sections) via `[[REF:]]` / related topics. Do not copy those essays into the format file.
+- Still give a 10-mark “drafting essentials / contents of a plaint” style Q&A where the exam asks it. Do not invent live cause titles.
+

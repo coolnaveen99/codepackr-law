@@ -5,7 +5,7 @@
 ## Principles
 
 1. 100% client-side
-2. Blue brand (`#2563eb`)
+2. Seal brand (Tailwind `blue-*` remapped in `src/index.css` — do not use Dev `#2563eb`)
 3. Complete UX (Sample/Demo where relevant, Reset, feedback)
 4. India-focused legal content (AIBE / Judiciary / Bare Acts)
 5. Quality Gate must pass

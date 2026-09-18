@@ -11,6 +11,7 @@ This project is part of the Codepackr family of 100% client-side, privacy-first 
 | Document | Purpose |
 |----------|---------|
 | [AI_INSTRUCTIONS.md](AI_INSTRUCTIONS.md) | Complete build & tool-addition guide |
+| [`.github/skills/add-new-subject.md`](.github/skills/add-new-subject.md) | **Adding a subject and its 10/16-mark content** |
 | [`.github/instructions/global-legal-content.md`](.github/instructions/global-legal-content.md) | Global legal-content architecture (every subject) |
 | [`.github/copilot-instructions.md`](.github/copilot-instructions.md) | Golden rules |
 | [`.github/skills/legal-content-workflow.md`](.github/skills/legal-content-workflow.md) | Research → verify → implement study content |
@@ -23,8 +24,9 @@ This project is part of the Codepackr family of 100% client-side, privacy-first 
 
 1. **100% Client-Side** — Practice data stays in the browser.
 2. **Complete Tools Only** — Sample/Demo, Reset, and clear feedback where applicable.
-3. **Blue Brand** — Accent `#2563eb` only.
+3. **Seal Brand** — Tailwind `blue-*` remapped to burgundy. Not Dev blue, not Finance green.
 4. **Quality Gate** — Must be fully green before a PR is accepted.
+5. **New subjects** — Follow `.github/skills/add-new-subject.md`. Catalog-first; full 10/16-mark Q&A; never a Bare Act dump.
 
 ---
 
