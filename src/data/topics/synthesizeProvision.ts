@@ -175,11 +175,6 @@ function numbered(lines: string[]): string {
   return lines.map((l, i) => `${i + 1}. ${l}`).join('\n')
 }
 
-function teachIllustration(ill: string, index: number, short: string, id: string): string {
-  const label = String.fromCharCode(97 + index)
-  return `(${label}) ${ill}\nExam use: copy the facts in one line, then write: “This illustration is attached to ${short} s. ${id} to show when the ingredients are (or are not) satisfied.” Then map each fact to an ingredient. That is how illustration marks are scored.`
-}
-
 export async function synthesizeCatalogSection(
   kind: CodeKind,
   sectionId: string,
@@ -203,13 +198,9 @@ export async function synthesizeCatalogSection(
   const definitionBlock = parsed.definitions.length
     ? parsed.definitions
         .slice(0, 40)
-        .map((d) => `“${d.term}” — ${d.meaning}. Write this definition in the opening of a 10-mark answer if the examiner asks the meaning of the term.`)
+        .map((d) => `“${d.term}” — ${d.meaning}.`)
         .join('\n\n')
-    : `The controlling heading is “${p.title}”. Any word of art in the section (intention, knowledge, reason to believe, document, fact in issue, cognizable, Magistrate) must be given its statutory meaning, not a dictionary guess.`
-
-  const illustrationBlock = parsed.illustrations.length
-    ? parsed.illustrations.map((ill, i) => teachIllustration(ill, i, meta.short, p.id)).join('\n\n')
-    : `The statute does not print a numbered illustration under this heading. Create a labelled examination illustration: give three or four facts, then apply each ingredient of ${meta.short} s. ${p.id}. Never present that illustration as a reported case.`
+    : ''
 
   const explanationBlock = parsed.explanations.length
     ? parsed.explanations.join('\n\n')
@@ -292,89 +283,34 @@ export async function synthesizeCatalogSection(
     `Layer 4 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is ${meta.short} s. ${p.id}.”`,
   ].join('\n\n')
 
-  const qExplainIllustrations = parsed.illustrations.length
-    ? parsed.illustrations
-        .map((ill, i) => {
-          const label = String.fromCharCode(97 + i)
-          return `Illustration (${label}). ${ill}\nWhat the examiner wants: (1) restate the facts in one sentence; (2) name the ingredient that is present or missing; (3) state the legal result. Do not copy the illustration and stop. The marks are in the mapping.`
-        })
-        .join('\n\n')
-    : `There is no printed illustration. Write one original labelled example, apply every ingredient, and mark it as an educational illustration — never as a judgment.`
-
   const study = [
-    `Topic at a glance`,
-    `${meta.short} s. ${p.id} — ${p.title}. This page is a full examination note: meaning, every definition and clause, ingredients, statutory illustrations, explanations, application, and 10-mark / 16-mark answer structures. It is not a Bare Act dump.`,
-
-    `\nIntroduction and meaning`,
+    `Introduction and meaning`,
     intro,
     studentRule(parsed.ruleParas, p.title, meta.short, p.id),
 
-    `\nWhy this provision is asked in the examination`,
+    `\nWhy this is asked`,
     purposeParagraph(kind, p, chapterTitle, meta.short),
     chapter?.blurb ? `Chapter setting: ${chapter.blurb}` : '',
 
     `\nThe provision in detail`,
-    `Read the clauses. A full-mark answer is built from this detail, not from the title.`,
     detailBlock,
 
-    `\nDefinitions and key terms`,
-    definitionBlock,
+    parsed.definitions.length ? `\nDefinitions and key terms\n${definitionBlock}` : '',
 
     `\nEssential ingredients`,
-    `List these in the answer. Missing an ingredient is the usual way a 10-mark note becomes a 6-mark note.`,
     numbered(ingredients),
 
     p.punishment ? `\nPunishment / legal consequence\n${p.punishment}` : '',
 
-    `\nStatutory illustrations (copy into the answer, then explain)`,
-    illustrationBlock,
+    parsed.illustrations.length
+      ? `\nStatutory illustrations\n${parsed.illustrations
+          .map((ill, i) => `(${String.fromCharCode(97 + i)}) ${ill}`)
+          .join('\n\n')}`
+      : '',
 
-    explanationBlock ? `\nExplanations (part of the section, not optional)\n${explanationBlock}` : '',
+    explanationBlock ? `\nExplanations\n${explanationBlock}` : '',
 
     exceptionBlock ? `\nExceptions, limitations and provisos\n${exceptionBlock}` : '',
-
-    `\nHow to apply this to facts`,
-    hypoAnalysis,
-
-    `\nCurrent-law position`,
-    currentLaw,
-
-    `\nHow to write a 10-mark answer`,
-    `Typical question: “Write a note on ${meta.short} s. ${p.id} (${p.title}).”`,
-    numbered([
-      `Introduction — name ${meta.short} s. ${p.id} and the title, place it in Chapter ${chapterTitle}.`,
-      'Meaning / definition in two or three sentences.',
-      'Legal basis — this section of the 2023 legislation, in force 1 July 2024 (subject to any notified exception).',
-      'Essential ingredients, numbered.',
-      parsed.definitions.length ? 'Statutory definitions of the key terms.' : 'Any word of art, given its statutory meaning.',
-      parsed.illustrations.length ? 'At least one statutory illustration, mapped to an ingredient.' : 'One original illustration, clearly labelled as an example.',
-      parsed.explanations.length || exceptionBlock ? 'Explanations, exceptions or provisos.' : 'Any express condition or limitation.',
-      'A short application to facts.',
-      'Conclusion with the current citation.',
-    ]),
-
-    `\nHow to write a 16-mark answer`,
-    `Typical question: “Discuss ${meta.short} s. ${p.id} with the aid of illustrations / distinguish it from connected sections / apply it to the problem.”`,
-    numbered([
-      'Everything required for 10 marks.',
-      'A fuller conceptual explanation — why the rule exists in this Chapter.',
-      parsed.illustrations.length > 1 ? 'A second illustration and a contrast.' : 'A second hypothetical in which one ingredient fails.',
-      relatedLine ? `A distinction from ${relatedLine}.` : 'Analytical comment on a condition or practical difficulty.',
-      'IRAC application to the problem facts.',
-      'Common traps.',
-      `Current-law close: ${meta.short} s. ${p.id}, 1 July 2024.`,
-    ]),
-
-    `\nModel answer skeleton`,
-    numbered([
-      `Introduction — ${meta.short} s. ${p.id}, ${p.title}, Chapter ${chapterTitle}.`,
-      'Definition and meaning.',
-      'Ingredients.',
-      'Illustration + mapping.',
-      'Explanation / exception.',
-      'Application to facts.',
-      'Conclusion and current citation.',
-    ]),
   ]
     .filter(Boolean)
     .join('\n')
@@ -406,63 +342,29 @@ export async function synthesizeCatalogSection(
   const examples = parsed.illustrations.length
     ? parsed.illustrations.slice(0, 6).map((ill, i) => ({
         id: `${kind}-${p.id}-ex-${i + 1}`,
-        title: `Statutory illustration ${String.fromCharCode(97 + i)} — then apply`,
-        description: `${ill} After quoting this, write which ingredient is proved and why the legal result follows under ${meta.short} s. ${p.id}.`,
+        title: `Illustration ${String.fromCharCode(97 + i)}`,
+        description: ill,
       }))
-    : [
-        {
-          id: `${kind}-${p.id}-ex-1`,
-          title: 'Example 1 — simple',
-          description: `A short everyday fact pattern is tested against “${p.title}”. Name ${meta.short} s. ${p.id}, list the ingredients, and say which facts match.`,
-        },
-        {
-          id: `${kind}-${p.id}-ex-2`,
-          title: 'Example 2 — examination',
-          description: `Change one ingredient so that the section fails. A 16-mark problem often hides the missing ingredient. State the failure expressly.`,
-        },
-      ]
+    : undefined
 
   const questionsAndAnswers = [
     {
       id: `${kind}-${p.id}-q-10`,
+      marks: 10 as const,
       question: `Write a 10-mark note on ${meta.short} s. ${p.id} (${p.title}).`,
       answer: tenMarkAnswer,
       explanation:
-        'Do not submit a shortened answer. The 10-mark note above is the minimum complete structure: introduction, meaning, ingredients, illustration, explanation/exception, application, conclusion. Cutting it to four lines is how students lose marks.',
+        'Do not submit a shortened answer. The 10-mark note above is the minimum complete structure: introduction, meaning, ingredients, illustration, explanation/exception, application, conclusion.',
     },
     {
       id: `${kind}-${p.id}-q-16`,
+      marks: 16 as const,
       question: `Answer a 16-mark question: discuss ${meta.short} s. ${p.id} with illustrations and connected provisions.`,
       answer: sixteenMarkAnswer,
       explanation:
         'A 16-mark answer is the 10-mark note plus contrast, a second illustration or hypothetical, IRAC application and current-law close. It is not the 10-mark note typed twice.',
     },
-    {
-      id: `${kind}-${p.id}-q-ill`,
-      question: parsed.illustrations.length
-        ? `Explain the statutory illustrations to ${meta.short} s. ${p.id} and show how they are used in an examination answer.`
-        : `Construct and explain an examination illustration for ${meta.short} s. ${p.id}.`,
-      answer: qExplainIllustrations,
-      explanation:
-        'Illustration questions are scored on mapping, not on copying. Quote, map, conclude.',
-    },
-    {
-      id: `${kind}-${p.id}-q-apply`,
-      question: `Apply ${meta.short} s. ${p.id} to a problem: ${hypoFacts.slice(0, 280)}${hypoFacts.length > 280 ? '…' : ''} Whether the section is attracted?`,
-      answer: `Issue. Whether ${meta.short} s. ${p.id} (${p.title}) applies on these facts.\n\nRule. ${studentRule(parsed.ruleParas, p.title, meta.short, p.id)}\n\nIngredients.\n${numbered(ingredients.slice(0, 8))}\n\nApplication.\n${hypoAnalysis}\n\nConclusion. ${hypoConclusion}`,
-      explanation:
-        'This is an IRAC answer. University and Judiciary problems are marked on application, not on restating the section heading.',
-    },
   ]
-
-  if (lesson?.quiz) {
-    questionsAndAnswers.push({
-      id: `${kind}-${p.id}-q-drill`,
-      question: lesson.quiz.prompt,
-      answer: `${lesson.quiz.choices[lesson.quiz.answer] ?? ''}\n\nFull explanation. ${lesson.quiz.explain} A one-word MCQ pick is not an examination answer. In a descriptive paper, write the principle, the section, and why the other choices fail.`,
-      explanation: lesson.quiz.explain,
-    })
-  }
 
   const distinctions =
     p.related.length > 0
@@ -483,7 +385,7 @@ export async function synthesizeCatalogSection(
 
   return {
     study,
-    glance: `${meta.short} s. ${p.id} — ${p.title}. Full examination note: definitions, ingredients, illustrations, 10-mark and 16-mark answers.`,
+    glance: `${meta.short} s. ${p.id} — ${p.title}.`,
     sections,
     examples,
     hypotheticals: [

@@ -8,11 +8,12 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-7 h-7 rounded-lg bg-blue-600 text-white flex items-center justify-center">
-                <Scale className="w-3.5 h-3.5" />
+              <div className="w-8 h-8 rounded-2xl bg-blue-600 text-white flex items-center justify-center">
+                <Scale className="w-4 h-4" />
               </div>
-              <span className="font-bold text-slate-900 dark:text-white">
-                <span className="text-blue-600 dark:text-blue-400">Codepackr</span> Law
+              <span className="text-slate-900 dark:text-white">
+                <span className="font-extrabold">CodePackr</span>{' '}
+                <span className="font-display italic text-lg font-semibold text-blue-700 dark:text-blue-300">Law</span>
               </span>
             </div>
             <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">

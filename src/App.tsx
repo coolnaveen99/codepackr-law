@@ -330,7 +330,7 @@ export default function App() {
           showSubjectsLink={route.type === 'home' || route.type === 'tool' || route.type === 'knowledge'}
         />
 
-        <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-8">
+        <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-8 paper-grid">
           {route.type === 'case-law' && (
             <CaseLawLibrary
               judgmentId={route.judgmentId}
@@ -411,31 +411,30 @@ export default function App() {
 
           {route.type === 'home' && (
             <div className="space-y-12">
-              <section className="text-center max-w-3xl mx-auto pt-6 pb-2 space-y-4">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900">
+              <section className="text-center max-w-3xl mx-auto pt-8 pb-4 space-y-5">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-semibold tracking-[0.14em] uppercase bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900">
                   <ShieldCheck className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
-                  <span>100% Client-Side • Zero Data Leaves Your Device</span>
+                  <span>Student corner · private in the browser</span>
                 </div>
 
-                <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-                  Indian Law Learning Tools
+                <h2 className="font-display text-4xl sm:text-6xl font-semibold tracking-tight text-slate-900 dark:text-white leading-[1.08]">
+                  Indian law, written for full marks.
                 </h2>
 
                 <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl mx-auto">
-                  Free, browser-based practice for{' '}
-                  <strong className="text-blue-600 dark:text-blue-400 font-semibold">AIBE</strong>,{' '}
-                  <strong className="text-slate-900 dark:text-white font-semibold">State Judiciary</strong>, and{' '}
-                  <strong className="text-slate-900 dark:text-white font-semibold">BNS / BNSS / BSA</strong>.
+                  Section-wise notes, 10-mark and 16-mark answers, and exam tools for{' '}
+                  <strong className="text-blue-700 dark:text-blue-300 font-semibold">AIBE</strong>,{' '}
+                  <strong className="text-slate-900 dark:text-white font-semibold">Judiciary</strong>, and the new codes.
                 </p>
 
-                <div className="pt-2">
+                <div className="pt-1 flex items-center justify-center gap-3 flex-wrap">
                   <button
                     type="button"
                     onClick={handleOpenSubjects}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 transition shadow-sm"
+                    className="inline-flex items-center gap-2 h-12 px-6 rounded-2xl bg-blue-600 text-white text-sm font-bold hover:bg-blue-700 transition shadow-sm shadow-blue-600/20"
                   >
                     <BookOpen className="w-4 h-4" />
-                    Browse all subjects
+                    Open subjects
                   </button>
                 </div>
               </section>

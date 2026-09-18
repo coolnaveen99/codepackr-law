@@ -20,7 +20,7 @@ export const Header: React.FC<HeaderProps> = ({
   showSubjectsLink = true,
 }) => {
   return (
-    <header className="border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-950/90 backdrop-blur sticky top-0 z-50 transition-colors">
+    <header className="border-b border-slate-200/80 dark:border-slate-800 bg-slate-50/85 dark:bg-slate-950/85 backdrop-blur-md sticky top-0 z-50 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
         <div className="flex items-center gap-3 min-w-0">
           {currentLabel ? (
@@ -38,17 +38,19 @@ export const Header: React.FC<HeaderProps> = ({
           ) : (
             <div
               onClick={onBackToHome}
-              className="flex items-center gap-2 cursor-pointer select-none"
+              className="flex items-center gap-2.5 cursor-pointer select-none"
             >
-              <div className="w-8 h-8 rounded-xl bg-blue-600 text-white flex items-center justify-center shadow-sm shadow-blue-500/20">
+              <div className="w-9 h-9 rounded-2xl bg-blue-600 text-white flex items-center justify-center shadow-sm shadow-blue-600/25">
                 <Scale className="w-4 h-4" />
               </div>
               <div>
-                <h1 className="font-bold text-lg tracking-tight leading-none text-slate-900 dark:text-white">
-                  <span className="text-blue-600 dark:text-blue-400">Codepackr</span> Law
+                <h1 className="leading-none text-slate-900 dark:text-white">
+                  <span className="font-extrabold text-[15px] tracking-tight">CodePackr</span>
+                  {' '}
+                  <span className="font-display italic text-[18px] font-semibold text-blue-700 dark:text-blue-300">Law</span>
                 </h1>
-                <span className="text-[10px] text-slate-500 dark:text-slate-400 hidden md:block">
-                  AIBE & Judiciary Learning Suite
+                <span className="text-[10px] font-medium tracking-[0.14em] uppercase text-slate-500 dark:text-slate-400 hidden md:block">
+                  Student corner
                 </span>
               </div>
             </div>

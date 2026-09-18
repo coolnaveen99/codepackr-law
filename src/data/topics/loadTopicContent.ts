@@ -43,6 +43,7 @@ export interface TopicQuestionAnswer {
   answer: string
   explanation?: string
   relatedProvisionIds?: string[]
+  marks?: 10 | 16
 }
 
 export interface TopicHypothetical {
@@ -227,12 +228,14 @@ function synthesizeArticleContent(articleId: string): TopicContent | null {
     questionsAndAnswers: [
       {
         id: `art-${article.id}-q-10`,
+        marks: 10,
         question: `Write a 10-mark note on Article ${article.id} (${article.title}).`,
         answer: tenMark,
         explanation: 'Do not submit a shortened answer. Introduction, meaning, conditions, application and conclusion are all required.',
       },
       {
         id: `art-${article.id}-q-16`,
+        marks: 16,
         question: `Answer a 16-mark question on Article ${article.id}.`,
         answer: sixteenMark,
         explanation: 'Add related articles, a verified authority with ratio, a hypothetical and a current-law close. Do not repeat the 10-mark note twice.',

@@ -54,8 +54,8 @@ export function SubjectsList({
           <BookOpen className="w-4 h-4" />
           AIBE & Judiciary syllabus map
         </div>
-        <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">
-          All Law Subjects
+        <h2 className="font-display text-3xl sm:text-5xl font-semibold tracking-tight text-slate-900 dark:text-white">
+          All law subjects
         </h2>
         <p className="text-sm text-slate-600 dark:text-slate-400">
           Browse by exam weightage. Open a subject to learn its topics, sections, and articles.

@@ -9,6 +9,7 @@ import {
   ChevronDown,
   ChevronUp,
   Loader2,
+  PenLine,
 } from 'lucide-react'
 import type { LawSubjectMeta, LawTopic, CaseCitation } from '../../data/subjects'
 import {
@@ -92,6 +93,12 @@ export function TopicDetail({
   const hasCases = (content?.cases?.length ?? 0) > 0
   const knowledgeId = knowledgeIdForTopic(subject.slug, topic.id)
   const neighbours = provisionNeighbours(subject, topic)
+  const qaTen = content?.questionsAndAnswers?.find((item) => item.marks === 10 || /10[\s-]?mark/i.test(item.question))
+  const qaSixteen = content?.questionsAndAnswers?.find((item) => item.marks === 16 || /16[\s-]?mark/i.test(item.question))
+
+  function jumpTo(id: string) {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 
   const handleCopyCase = (c: CaseCitation, idx: number) => {
     const text = [
@@ -122,7 +129,7 @@ export function TopicDetail({
   }
 
   return (
-    <div className="space-y-8 max-w-6xl">
+    <div className="space-y-8 max-w-6xl pb-24 sm:pb-8">
       <div className="space-y-3">
         <button
           type="button"
@@ -136,18 +143,18 @@ export function TopicDetail({
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
           <div className="space-y-2 min-w-0">
             <div className="flex items-center gap-2 flex-wrap">
-              <span className="text-[10px] uppercase tracking-wide px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500">
+              <span className="text-[10px] uppercase tracking-[0.14em] px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 font-semibold">
                 {topicTypeLabel(topic.type)}
               </span>
               {topic.highYield && <Badge variant="amber">High yield</Badge>}
               {topic.range && (
-                <span className="text-xs font-medium text-blue-600 dark:text-blue-400">
+                <span className="text-xs font-semibold text-blue-600 dark:text-blue-400">
                   {topic.range}
                 </span>
               )}
             </div>
 
-            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+            <h2 className="font-display text-3xl sm:text-5xl font-semibold tracking-tight text-slate-900 dark:text-white leading-[1.12]">
               {topic.name}
             </h2>
 
@@ -181,12 +188,45 @@ export function TopicDetail({
           <button
             type="button"
             onClick={toggleStudyComplete}
-            className={`inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border text-sm font-semibold transition shrink-0 ${studyComplete ? 'border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300' : 'border-blue-200 text-blue-700 hover:bg-blue-50 dark:border-blue-900 dark:text-blue-300 dark:hover:bg-blue-950/40'}`}
+            className={`inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-2xl border text-sm font-semibold transition shrink-0 ${studyComplete ? 'border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300' : 'border-blue-200 text-blue-700 hover:bg-blue-50 dark:border-blue-900 dark:text-blue-300 dark:hover:bg-blue-950/40'}`}
           >
             {studyComplete ? 'Study completed' : 'Mark study complete'}
           </button>
         </div>
       </div>
+
+      {(qaTen || qaSixteen) && (
+        <div className="sticky top-16 z-30 -mx-1 px-1 py-3 bg-slate-50/90 dark:bg-slate-950/90 backdrop-blur-md">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500 mr-1">Exam</span>
+            <button
+              type="button"
+              onClick={() => jumpTo('study-topic')}
+              className="h-11 px-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-sm font-semibold text-slate-700 dark:text-slate-200"
+            >
+              Notes
+            </button>
+            {qaTen && (
+              <button
+                type="button"
+                onClick={() => jumpTo('exam-10')}
+                className="h-11 px-5 rounded-2xl bg-blue-600 text-white text-sm font-bold shadow-sm shadow-blue-600/20"
+              >
+                10 marks
+              </button>
+            )}
+            {qaSixteen && (
+              <button
+                type="button"
+                onClick={() => jumpTo('exam-16')}
+                className="h-11 px-5 rounded-2xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-sm font-bold"
+              >
+                16 marks
+              </button>
+            )}
+          </div>
+        </div>
+      )}
 
       {loading && (
         <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-10 flex flex-col items-center justify-center gap-3 text-slate-500">
@@ -205,11 +245,11 @@ export function TopicDetail({
       )}
 
       {!loading && hasContent && content && (
-        <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-8">
+        <section id="study-topic" className="rounded-[1.6rem] border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-8">
           <div className="flex items-center gap-2 mb-5">
             <BookOpen className="w-6 h-6 text-blue-600" />
-            <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
-              Study Topic
+            <h3 className="font-display text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white">
+              Study notes
             </h3>
           </div>
           <StudyBody text={studyContent} />
@@ -234,7 +274,7 @@ export function TopicDetail({
         </section>
       )}
 
-      {!loading && content?.sections && content.sections.length > 0 && (
+      {!loading && content?.sections && content.sections.length > 0 && !hasContent && (
         <section className="space-y-4">
           <h3 className="text-lg font-bold text-slate-900 dark:text-white">Study Sections</h3>
           {content.sections.slice().sort((a, b) => a.order - b.order).map((section) => (
@@ -321,25 +361,44 @@ export function TopicDetail({
         </section>
       )}
 
-      {!loading && content?.questionsAndAnswers && content.questionsAndAnswers.length > 0 && (
-        <section className="space-y-4">
-          <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">Questions & Answers</h3>
-          <p className="text-sm text-slate-500">Full examination answers — do not shorten these in the answer book.</p>
-          {content.questionsAndAnswers.map((item) => (
-            <article key={item.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-7 space-y-4">
-              <h4 className="text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white">Q. {item.question}</h4>
-              <div>
-                <p className="text-[11px] font-bold uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-2">Answer</p>
-                <StudyBody text={item.answer} />
+      {!loading && (qaTen || qaSixteen) && (
+        <section className="space-y-5">
+          <div>
+            <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-blue-700 dark:text-blue-300">Write this in the exam</p>
+            <h3 className="font-display text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white mt-1">Full-mark answers</h3>
+          </div>
+          {qaTen && (
+            <article id="exam-10" className="rounded-[1.6rem] border border-blue-200 dark:border-blue-900 bg-white dark:bg-slate-900 p-5 sm:p-8 space-y-4">
+              <div className="flex items-center gap-2">
+                <span className="inline-flex h-8 items-center px-3 rounded-full bg-blue-600 text-white text-xs font-bold">10 marks</span>
+                <PenLine className="w-4 h-4 text-blue-600" />
               </div>
-              {item.explanation && (
-                <div className="rounded-xl bg-slate-50 dark:bg-slate-800/50 p-4">
+              <h4 className="font-display text-xl sm:text-2xl font-semibold text-slate-900 dark:text-white">{qaTen.question}</h4>
+              <StudyBody text={qaTen.answer} />
+              {qaTen.explanation && (
+                <div className="rounded-2xl bg-slate-50 dark:bg-slate-800/50 p-4">
                   <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 mb-2">How to score full marks</p>
-                  <p className="text-base leading-7 text-slate-700 dark:text-slate-300">{item.explanation}</p>
+                  <p className="text-base leading-7 text-slate-700 dark:text-slate-300">{qaTen.explanation}</p>
                 </div>
               )}
             </article>
-          ))}
+          )}
+          {qaSixteen && (
+            <article id="exam-16" className="rounded-[1.6rem] border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 sm:p-8 space-y-4">
+              <div className="flex items-center gap-2">
+                <span className="inline-flex h-8 items-center px-3 rounded-full bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs font-bold">16 marks</span>
+                <PenLine className="w-4 h-4 text-slate-700 dark:text-slate-300" />
+              </div>
+              <h4 className="font-display text-xl sm:text-2xl font-semibold text-slate-900 dark:text-white">{qaSixteen.question}</h4>
+              <StudyBody text={qaSixteen.answer} />
+              {qaSixteen.explanation && (
+                <div className="rounded-2xl bg-slate-50 dark:bg-slate-800/50 p-4">
+                  <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 mb-2">How to score full marks</p>
+                  <p className="text-base leading-7 text-slate-700 dark:text-slate-300">{qaSixteen.explanation}</p>
+                </div>
+              )}
+            </article>
+          )}
         </section>
       )}
 
@@ -417,30 +476,6 @@ export function TopicDetail({
         </section>
       )}
 
-      {!loading && content?.examFrameworks && content.examFrameworks.length > 0 && (
-        <section className="space-y-3">
-          <h3 className="text-lg font-bold text-slate-900 dark:text-white">How to write this in the examination</h3>
-          {content.examFrameworks.map((fw) => (
-            <article key={fw.marks} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
-              <h4 className="font-semibold text-sm text-blue-700 dark:text-blue-300">{fw.marks}-mark answer framework</h4>
-              {fw.question && <p className="mt-2 text-sm italic text-slate-600 dark:text-slate-400">Typical question: {fw.question}</p>}
-              <ol className="mt-3 space-y-2 list-decimal list-inside text-sm leading-relaxed text-slate-700 dark:text-slate-300">
-                {fw.steps.map((step) => <li key={step}>{step}</li>)}
-              </ol>
-            </article>
-          ))}
-        </section>
-      )}
-
-      {!loading && content?.answerSkeleton && content.answerSkeleton.length > 0 && (
-        <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
-          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Model answer skeleton</h3>
-          <ol className="mt-3 space-y-2 list-decimal list-inside text-sm leading-relaxed text-slate-700 dark:text-slate-300">
-            {content.answerSkeleton.map((step) => <li key={step}>{step}</li>)}
-          </ol>
-        </section>
-      )}
-
       {!loading && content?.examTips && content.examTips.length > 0 && (
         <section className="rounded-2xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/50 dark:bg-amber-950/20 overflow-hidden">
           <button
@@ -503,6 +538,29 @@ export function TopicDetail({
       <p className="text-xs text-slate-400 dark:text-slate-500">
         Content is for exam preparation only. Always cross-check with the latest Bare Act.
       </p>
+
+      {(qaTen || qaSixteen) && (
+        <div className="sm:hidden fixed bottom-4 inset-x-4 z-40 flex gap-2">
+          {qaTen && (
+            <button
+              type="button"
+              onClick={() => jumpTo('exam-10')}
+              className="flex-1 h-12 rounded-2xl bg-blue-600 text-white text-sm font-bold shadow-lg shadow-blue-900/20"
+            >
+              10 marks
+            </button>
+          )}
+          {qaSixteen && (
+            <button
+              type="button"
+              onClick={() => jumpTo('exam-16')}
+              className="flex-1 h-12 rounded-2xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-sm font-bold shadow-lg"
+            >
+              16 marks
+            </button>
+          )}
+        </div>
+      )}
     </div>
   )
 }
