@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FirebaseDataModel",
+  "description": "Firestore schema for Codepackr Law contact and feedback submissions.",
+  "entities": {
+    "contactMessages": {
+      "collectionName": "contact_messages",
+      "fields": {
+        "name": {
+          "type": "string",
+          "description": "Sender's name (optional)"
+        },
+        "email": {
+          "type": "string",
+          "description": "Sender's email address"
+        },
+        "category": {
+          "type": "string",
+          "description": "Topic category (feedback, bug, new_tool, legal_accuracy, security)"
+        },
+        "subject": {
+          "type": "string",
+          "description": "Message subject"
+        },
+        "message": {
+          "type": "string",
+          "description": "Feedback or contact message text"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "ISO 8601 creation timestamp"
+        },
+        "source": {
+          "type": "string",
+          "description": "Submitting site (e.g. law.codepackr.com)"
+        },
+        "status": {
+          "type": "string",
+          "description": "Triage status: unread, read, addressed"
+        }
+      },
+      "required": ["email", "message", "createdAt"]
+    }
+  }
+}

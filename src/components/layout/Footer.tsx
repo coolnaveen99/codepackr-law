@@ -1,10 +1,14 @@
-import { ShieldCheck, Scale, ExternalLink } from 'lucide-react'
+import { ShieldCheck, Scale, ExternalLink, MessageSquare } from 'lucide-react'
 
-export function Footer() {
+interface FooterProps {
+  onOpenContact?: () => void
+}
+
+export function Footer({ onOpenContact }: FooterProps) {
   return (
     <footer className="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 mt-16 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-10">
           <div>
             <div className="flex items-center gap-2 mb-3">
               <div className="w-8 h-8 rounded-2xl bg-blue-600 text-white flex items-center justify-center">
@@ -41,6 +45,30 @@ export function Footer() {
               </li>
               <li>
                 <a href="/subjects/bsa" className="hover:text-blue-700 dark:hover:text-blue-300">BSA</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold text-slate-900 dark:text-white mb-3">Feedback & Support</h4>
+            <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+              <li>
+                <button
+                  type="button"
+                  onClick={onOpenContact}
+                  className="hover:text-blue-700 dark:hover:text-blue-300 text-left inline-flex items-center gap-1.5"
+                >
+                  <MessageSquare className="w-3.5 h-3.5 text-blue-600" />
+                  <span>Contact & Feedback</span>
+                </button>
+              </li>
+              <li>
+                <a
+                  href="mailto:codepackr@gmail.com"
+                  className="hover:text-blue-700 dark:hover:text-blue-300"
+                >
+                  codepackr@gmail.com
+                </a>
               </li>
             </ul>
           </div>

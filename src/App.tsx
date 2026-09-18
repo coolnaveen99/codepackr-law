@@ -8,6 +8,7 @@ import {
   setHomeUrl,
   setCaseLawUrl,
   setKnowledgeUrl,
+  setContactUrl,
   migrateHashToPath,
 } from './lib/urls'
 import { setPageMeta, SITE_NAME, SITE_TAGLINE } from './lib/seo'
@@ -25,6 +26,7 @@ import { HomePage } from './components/home/HomePage'
 import { SubjectsList } from './components/subjects/SubjectsList'
 import { SubjectDetail } from './components/subjects/SubjectDetail'
 import { TopicDetail } from './components/subjects/TopicDetail'
+import { ContactFeedback } from './components/contact/ContactFeedback'
 import { AibeMcqPractice } from './components/tools/AibeMcqPractice'
 import { BnsIpcMapper } from './components/tools/BnsIpcMapper'
 import { SectionFlashcards } from './components/tools/SectionFlashcards'
@@ -164,8 +166,23 @@ export default function App() {
           path: `/subjects/${route.subjectSlug}/${route.topicId}`,
         })
       }
+      return
+    }
+    if (route.type === 'contact') {
+      setPageMeta({
+        title: `Contact & Feedback | ${SITE_NAME}`,
+        description: 'Send feedback, report legal inaccuracies, request new subjects or tools, or contact CodePackr Law.',
+        path: '/contact',
+      })
+      return
     }
   }, [route])
+
+  const handleOpenContact = () => {
+    setContactUrl()
+    setRoute({ type: 'contact' })
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   const handleSelectTool = (slug: string) => {
     if (slug === 'case-law') {
@@ -252,7 +269,9 @@ export default function App() {
           ? activeSubject?.shortName ?? 'Subject'
           : route.type === 'topic'
             ? activeTopicPair?.topic.name ?? 'Topic'
-            : null
+            : route.type === 'contact'
+              ? 'Contact & Feedback'
+              : null
 
   const activeKey =
     route.type === 'home'
@@ -269,7 +288,9 @@ export default function App() {
                 ? 'knowledge'
                 : route.type === 'case-law'
                   ? 'case-law'
-                  : undefined
+                  : route.type === 'contact'
+                    ? 'contact'
+                    : undefined
 
   const filteredTools = useMemo(() => {
     return TOOLS.filter((tool) => {
@@ -303,9 +324,13 @@ export default function App() {
           onSelectTool={handleSelectTool}
           onOpenKnowledge={() => handleOpenKnowledge()}
           onOpenCaseLaw={() => handleOpenJudgment()}
+          onOpenContact={handleOpenContact}
         />
 
         <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-8 paper-grid">
+          {route.type === 'contact' && (
+            <ContactFeedback onBackToHome={handleBackToHome} />
+          )}
           {route.type === 'case-law' && (
             <CaseLawLibrary
               judgmentId={route.judgmentId}
@@ -400,7 +425,7 @@ export default function App() {
           )}
         </main>
 
-        <Footer />
+        <Footer onOpenContact={handleOpenContact} />
       </div>
     </div>
   )

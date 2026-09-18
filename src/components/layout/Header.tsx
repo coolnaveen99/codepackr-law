@@ -13,6 +13,7 @@ interface HeaderProps {
   onSelectTool: (slug: string) => void
   onOpenKnowledge: () => void
   onOpenCaseLaw: () => void
+  onOpenContact?: () => void
 }
 
 export function Header({
@@ -26,6 +27,7 @@ export function Header({
   onSelectTool,
   onOpenKnowledge,
   onOpenCaseLaw,
+  onOpenContact,
 }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -105,6 +107,7 @@ export function Header({
         onSelectTool={(slug) => go(() => onSelectTool(slug))}
         onOpenKnowledge={() => go(onOpenKnowledge)}
         onOpenCaseLaw={() => go(onOpenCaseLaw)}
+        onOpenContact={onOpenContact ? () => go(onOpenContact) : undefined}
         activeKey={activeKey}
       />
     </>

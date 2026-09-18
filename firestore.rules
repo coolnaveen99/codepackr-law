@@ -1,0 +1,16 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /contact_messages/{messageId} {
+      // Anyone can submit a contact message with valid content
+      allow create: if request.resource.data.email is string
+                    && request.resource.data.email.size() > 3
+                    && request.resource.data.email.size() < 250
+                    && request.resource.data.message is string
+                    && request.resource.data.message.size() > 0
+                    && request.resource.data.message.size() < 10000;
+      // Protect user privacy: submissions cannot be read or modified by the public
+      allow read, update, delete: if false;
+    }
+  }
+}

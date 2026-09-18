@@ -19,6 +19,7 @@ export type AppRoute =
   | { type: 'subject'; slug: string }
   | { type: 'topic'; subjectSlug: string; topicId: string }
   | { type: 'knowledge'; entityId?: string }
+  | { type: 'contact' }
 
 function normalizePath(pathname: string): string {
   if (!pathname || pathname === '/') return '/'
@@ -48,6 +49,8 @@ export function parsePathname(pathname: string): AppRoute {
   if (subjectMatch) return { type: 'subject', slug: subjectMatch[1] }
 
   if (path === '/subjects') return { type: 'subjects' }
+
+  if (path === '/contact' || path === '/feedback') return { type: 'contact' }
 
   return { type: 'home' }
 }
@@ -104,6 +107,10 @@ export function setKnowledgeUrl(entityId?: string) {
   navigate(entityId ? `/knowledge/${entityId}` : '/knowledge')
 }
 
+export function setContactUrl() {
+  navigate('/contact')
+}
+
 export function setHomeUrl() {
   navigate('/')
 }
@@ -125,6 +132,7 @@ export function migrateHashToPath(): boolean {
   else if (route.type === 'subjects') path = '/subjects'
   else if (route.type === 'subject') path = `/subjects/${route.slug}`
   else if (route.type === 'topic') path = `/subjects/${route.subjectSlug}/${route.topicId}`
+  else if (route.type === 'contact') path = '/contact'
   else return false
 
   window.history.replaceState({}, '', path)

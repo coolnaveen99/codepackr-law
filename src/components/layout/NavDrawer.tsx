@@ -8,6 +8,7 @@ import {
   ExternalLink,
   Moon,
   Sun,
+  MessageSquare,
 } from 'lucide-react'
 import { SUBJECTS } from '../../data/subjects'
 import { TOOLS } from '../../data/tools'
@@ -27,6 +28,7 @@ export interface NavDrawerProps {
   onSelectTool: (slug: string) => void
   onOpenKnowledge: () => void
   onOpenCaseLaw: () => void
+  onOpenContact?: () => void
   activeKey?: string
 }
 
@@ -77,6 +79,7 @@ export function NavDrawer({
   onSelectTool,
   onOpenKnowledge,
   onOpenCaseLaw,
+  onOpenContact,
   activeKey,
 }: NavDrawerProps) {
   const closeRef = useRef<HTMLButtonElement>(null)
@@ -210,6 +213,21 @@ export function NavDrawer({
               label="Case law library"
             />
           </section>
+
+          {onOpenContact && (
+            <section className="space-y-1">
+              <p className="px-3 pb-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                Support
+              </p>
+              <Row
+                active={activeKey === 'contact'}
+                onClick={onOpenContact}
+                icon={<MessageSquare className="w-4 h-4" />}
+                label="Contact & feedback"
+                hint="Direct suggestions & questions"
+              />
+            </section>
+          )}
         </nav>
 
         <div className="border-t border-slate-200 dark:border-slate-800 p-3 space-y-2">
