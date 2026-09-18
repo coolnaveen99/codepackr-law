@@ -1,13 +1,35 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
 const content: TopicContent = {
-  glance:
-    'Section 10 stays a later suit while the same matter is pending (res sub judice). Section 11 bars a later suit after the same matter has been heard and finally decided (res judicata), including constructive res judicata under Explanation IV.',
-  study: `Topic at a glance\nFinality is the point of civil procedure. Section 10 stays a pending twin suit. Section 11 bars a later suit after a final decision, including constructive res judicata under Explanation IV.`,
-  questionsAndAnswers: [
-    { id: 'rj-10', marks: 10, question: 'State the conditions of res judicata under Section 11 of the CPC. How does Section 10 differ?', answer: 'Section 11 bars re-trial of a matter heard and finally decided between the same parties. Section 10 stays a later suit while the former is pending.', explanation: 'Six conditions + S. 10 stay.' },
-    { id: 'rj-16', marks: 16, question: 'Explain res judicata and constructive res judicata.', answer: 'Section 11 plus Explanation IV. Distinguish S. 10 and Order II Rule 2.', explanation: 'Need Expl. IV.' },
+  glance: 's. 10 stays a pending twin suit. s. 11 bars a later suit after a final decision, including constructive res judicata under Explanation IV.',
+  study: `Introduction and meaning\nFinality is the point of civil procedure. Section 10 (res sub judice) stays a later suit while the same matter is pending between the same parties in a competent court. Section 11 (res judicata) bars a later suit after the matter was heard and finally decided.\n\nWhy this is asked\nAlmost every Judiciary paper has a 10-mark note or a 16-mark problem on s. 11. The marks are in the six conditions and Explanation IV.\n\nEssentials of s. 11\n1. A former suit.\n2. Decided by a competent court.\n3. Same parties or persons claiming under them.\n4. Matter directly and substantially in issue in both suits.\n5. Heard and finally decided.\n6. Check Explanations I–VIII. Explanation IV is constructive res judicata: a ground that might and ought to have been raised is treated as decided.\n\nIllustration that works\nA sues B for title to a plot and loses after trial. A files a second title suit on the same facts. s. 11 bars it.\n\nIllustration that fails\nThe first suit was dismissed for default. There is no final decision on merits. s. 11 does not apply (Order IX may).\n\ns. 10 distinguished\nPending twin suit → stay. Decided twin suit → bar. Order II r. 2 is a different bar (relinquished claim from the same cause of action).\n\nAuthority\nHope Plantations Ltd. v. Taluk Land Board (1999) 5 SCC 590 — finality.\nState of U.P. v. Nawab Hussain AIR 1977 SC 1680 — constructive res judicata.\nWorkmen v. Board of Trustees, Cochin Port Trust AIR 1978 SC 1283 — Expl. IV.\n\nCurrent law\nCite ss. 10 and 11 of the Code of Civil Procedure, 1908.`,
+  examples: [
+    { id: 'rj-ex-1', title: 's. 11 applies', description: 'Title suit lost after trial. Second title suit on the same facts is barred.' },
+    { id: 'rj-ex-2', title: 's. 11 fails', description: 'First suit dismissed for default. No final decision. Bar does not apply.' },
   ],
+  distinctions: [{
+    id: 'rj-d1',
+    title: 's. 10 and s. 11',
+    left: 'Section 10',
+    right: 'Section 11',
+    rows: [
+      { point: 'Stage', left: 'Former suit pending', right: 'Former suit decided' },
+      { point: 'Effect', left: 'Stay of later trial', right: 'Bar of later suit' },
+      { point: 'Decision on merits', left: 'Not required', right: 'Heard and finally decided' },
+    ],
+  }],
+  cases: [
+    { name: 'Hope Plantations Ltd. v. Taluk Land Board', year: 1999, citation: '(1999) 5 SCC 590', holding: 'Res judicata is a rule of finality.' },
+    { name: 'State of U.P. v. Nawab Hussain', year: 1977, citation: 'AIR 1977 SC 1680', holding: 'A point that ought to have been raised earlier is barred later.' },
+  ],
+  misconceptions: [
+    { id: 'rj-t1', trap: 'Calling s. 10 res judicata.', correction: 's. 10 is res sub judice (stay). s. 11 is res judicata (bar).' },
+  ],
+  questionsAndAnswers: [
+    { id: 'rj-10', marks: 10, question: 'State the conditions of res judicata. How does s. 10 differ?', answer: 'Introduction. s. 11 CPC bars re-trial of a matter heard and finally decided between the same parties by a competent court.\n\nEssentials. Former suit; competent court; same parties or privies; matter directly and substantially in issue; heard and finally decided; Explanations I–VIII.\n\nDistinction. s. 10 stays a pending twin suit. s. 11 bars a decided twin suit.\n\nIllustration. Title lost after trial cannot be sued again.\n\nAuthority. Hope Plantations (1999); Nawab Hussain AIR 1977 SC 1680.\n\nConclusion. Cite s. 11 CPC, 1908.' },
+    { id: 'rj-16', marks: 16, question: 'Explain res judicata and constructive res judicata with a problem.', answer: 'Write the 10-mark note. Then add Explanation IV: a ground that might and ought to have been made a ground of attack or defence is deemed to have been decided. Apply IRAC to the facts. Distinguish Order II r. 2 (relinquished relief from the same cause of action). Close with ss. 10 and 11 CPC, 1908.' },
+  ],
+  examTips: ['Six conditions first. Then Expl. IV if the facts are constructive.', 'Do not invent a bench split.'],
+  revisionPoints: ['s. 10 stay', 's. 11 bar', 'Expl. IV constructive', 'Order II r. 2 is different'],
 }
-
 export default content

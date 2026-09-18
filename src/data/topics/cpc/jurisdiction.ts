@@ -1,0 +1,20 @@
+import type { TopicContent } from '../topicTypes'
+
+const content: TopicContent = {
+  glance: 's. 9 cognisance of civil suits. ss. 15–20 which court. s. 21 objection to place of suing.',
+  study: `Introduction\nJurisdiction in CPC is three questions. One: can a civil court hear this at all (s. 9). Two: which court, by subject, territory and pecuniary limits (ss. 6, 15–20). Three: what happens if the wrong court is chosen (s. 21, s. 21A).\n\nEssentials\n1. Subject-matter — civil nature, not barred.\n2. Territorial — property (ss. 16–17), person or residual cause (ss. 19–20).\n3. Pecuniary — s. 6 and s. 15 (lowest grade competent court).\n4. Objection to place of suing must be taken at the earliest opportunity and only if there was a consequent failure of justice (s. 21).\n\nIllustration\nContract made in Pune, broken in Nashik, defendant lives in Nagpur. Residual suit — s. 20 lets the plaintiff choose any of those courts.\n\nFail-illustration\nTitle to land in Nashik filed in Nagpur only because the defendant lives there. s. 16 governs. s. 20 does not.\n\nAuthority\nDhulabhai AIR 1969 SC 78 — exclusion of jurisdiction is strict.\nABC Laminart AIR 1989 SC 1239 — part of cause of action.\nPathumma AIR 1981 SC 1683 — s. 21 timing.\n\nClose with ss. 9, 15–21 CPC, 1908.`,
+  examples: [
+    { id: 'j-ex-1', title: 's. 20 venue works', description: 'Contract, breach and residence in three cities — any of the three.' },
+    { id: 'j-ex-2', title: 's. 20 fails', description: 'Land-title suit cannot follow the defendant under s. 20.' },
+  ],
+  cases: [
+    { name: 'Dhulabhai v. State of M.P.', year: 1968, citation: 'AIR 1969 SC 78', holding: 'Civil-court exclusion is read strictly.' },
+    { name: 'ABC Laminart Pvt. Ltd. v. A.P. Agencies', year: 1989, citation: 'AIR 1989 SC 1239', holding: 'Cause of action may arise in part.' },
+  ],
+  questionsAndAnswers: [
+    { id: 'j-10', marks: 10, question: 'Explain jurisdiction under the CPC.', answer: 'Introduction. Jurisdiction is competence.\n\nHeads. Subject-matter (s. 9), territorial (ss. 16–20), pecuniary (ss. 6, 15).\n\ns. 21. Place-of-suing objection is timely and needs failure of justice.\n\nIllustration and ABC Laminart.\n\nConclusion. Cite ss. 9 and 15–21 CPC, 1908.' },
+    { id: 'j-16', marks: 16, question: 'A title suit is filed in the defendant’s city. Advise.', answer: 'Issue. Is the court competent?\n\nRule. Land → s. 16. Residual → s. 20. Objection → s. 21.\n\nApplication. Title is not a s. 20 suit. Return the plaint under Order VII r. 10 or reject if hopeless.\n\nConclusion. File in the court where the land lies.' },
+  ],
+  examTips: ['Draw the three heads before you write the facts.'],
+}
+export default content
