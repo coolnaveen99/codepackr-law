@@ -1,0 +1,16 @@
+import type { TopicContent } from '../topicTypes'
+
+const content: TopicContent = {
+  glance: 's. 94 plus Orders XXXVIII, XXXIX and XL: attachment before judgment, temporary injunction, receiver.',
+  study: `Introduction\nSupplemental proceedings keep the decree from becoming paper. s. 94 lists the powers. The Orders supply the tests.\n\nOrder XXXIX\nTemporary injunction: prima facie case, balance of convenience, irreparable injury. r. 3 — ex parte only with reasons and immediate hearing. r. 2A — disobedience.\n\nOrder XXXVIII\nArrest or attachment before judgment if the defendant is about to remove himself or his property to defeat the decree.\n\nOrder XL\nReceiver when it is just and convenient.\n\nIllustration\nBuilder raises a wall on disputed land. Neighbour shows title papers and continuing damage. Status quo under Order XXXIX rr. 1–2.\n\nFail-illustration\nPure money claim, defendant is solvent. Damages are adequate. Injunction is usually refused.\n\nAuthority\nDalpat Kumar (1992) 1 SCC 719 — three-fold test.\nMorgan Stanley (1994) 4 SCC 225 — ex parte injunction is exceptional.\nManohar Lal Chopra AIR 1962 SC 527 — s. 151 is not a free-standing rival to Order XXXIX.\n\nClose with s. 94 and Order XXXIX CPC, 1908.`,
+  cases: [
+    { name: 'Dalpat Kumar v. Prahlad Singh', year: 1992, citation: '(1992) 1 SCC 719', holding: 'Prima facie case, balance of convenience, irreparable injury.' },
+    { name: 'Morgan Stanley v. Kartick Das', year: 1994, citation: '(1994) 4 SCC 225', holding: 'Ex parte injunction needs reasons and a prompt hearing.' },
+  ],
+  questionsAndAnswers: [
+    { id: 'in-10', marks: 10, question: 'State the tests for a temporary injunction.', answer: 'Order XXXIX rr. 1–2. Three-fold test. Notice under r. 3. Dalpat Kumar. Cite Order XXXIX CPC, 1908.' },
+    { id: 'in-16', marks: 16, question: 'Trial court grants an ex parte injunction without reasons. Advise.', answer: 'Issue. Is the order sustainable?\nRule. r. 3 proviso — reasons and immediate listing. Morgan Stanley.\nApplication. The order is vulnerable. Move r. 4 or appeal under Order XLIII where it lies.\nConclusion. Order XXXIX rr. 3–4 CPC.' },
+  ],
+  examTips: ['Never write a final finding of title at the interlocutory stage.'],
+}
+export default content

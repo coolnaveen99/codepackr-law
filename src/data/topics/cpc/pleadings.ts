@@ -1,0 +1,16 @@
+import type { TopicContent } from '../topicTypes'
+
+const content: TopicContent = {
+  glance: 'Orders VI–VIII: pleadings generally, plaint and r. 11 rejection, written statement, set-off and counter-claim.',
+  study: `Introduction\nPleadings are the facts, not the evidence. Order VI is the general law. Order VII is the plaint. Order VIII is the written statement, set-off and counter-claim.\n\nEssentials\nOrder VI r. 2 — material facts, not evidence. r. 17 amendment: all amendments that are necessary to determine the real questions, subject to the 2002 proviso on delayed amendment after trial has begun.\nOrder VII r. 1 — particulars of the plaint. r. 11 — rejection: no cause of action, undervalued, under-stamped, barred by law, not in duplicate, failure of r. 9.\nOrder VIII — specific denial; set-off; counter-claim treated as a plaint.\n\nIllustration\nTime-barred money claim with no acknowledgement pleaded. Reject under Order VII r. 11(d).\n\nFail-illustration\nDefendant wants r. 11 because he has a strong defence on facts. That is a trial issue, not rejection.\n\nAuthority\nSaleem Bhai (2003) 1 SCC 557 — r. 11 is decided on the plaint.\nT. Arivandandam AIR 1977 SC 2421 — meaningless claims must be nipped.\nRevajeetu Builders (2009) 10 SCC 84 — amendment factors.\n\nClose with Orders VI–VIII CPC, 1908.`,
+  cases: [
+    { name: 'Saleem Bhai v. State of Maharashtra', year: 2003, citation: '(2003) 1 SCC 557', holding: 'Order VII r. 11 is read on the plaint.' },
+    { name: 'T. Arivandandam v. T.V. Satyapal', year: 1977, citation: 'AIR 1977 SC 2421', holding: 'A cleverly drafted illusion of a cause of action must be rejected.' },
+  ],
+  questionsAndAnswers: [
+    { id: 'pl-10', marks: 10, question: 'Write a note on rejection of plaint.', answer: 'Order VII r. 11. Grounds (a)–(f). Test is the plaint itself. Rejection is not a decision on merits. Saleem Bhai; Arivandandam. Cite Order VII r. 11 CPC, 1908.' },
+    { id: 'pl-16', marks: 16, question: 'Plaintiff sues on a facially time-barred contract. Defendant moves r. 11. Decide.', answer: 'Issue. Is the suit barred on the face of the plaint?\nRule. r. 11(d).\nApplication. If no acknowledgement is pleaded, reject. If limitation is a mixed fact, go to trial.\nConclusion. Order VII r. 11 CPC.' },
+  ],
+  examTips: ['r. 11 is not a mini-trial of the defence.'],
+}
+export default content
