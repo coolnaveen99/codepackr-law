@@ -19,12 +19,13 @@ RESEARCH → VERIFY → STRUCTURE → IMPLEMENT → CROSS-LINK → VALIDATE → 
 ```
 
 1. Reuse existing architecture. Do not create a second subject, topic, MCQ, case, or mapper system.
-2. One Study Topic body (`study`). No Short/Detailed UI.
+2. One Study Topic body (`study`). No Short/Detailed UI. **Q&A answers are full 10-mark / 16-mark answers — never a shortened explanation.**
 3. Canonical IDs are `TYPE:CATEGORY:SLUG`. Search `findExisting` in `src/data/knowledge` before creating anything reusable.
 4. Never invent article/section numbers, citations, holdings, amendments, mappings, or source URLs. If unverified: `needs-review`.
 5. Never assume `IPC X = BNS Y` (or CrPC/BNSS, IEA/BSA). Mapping types only; historical labels stay historical.
 6. IPC, CrPC, and the Indian Evidence Act are not active current-law subjects.
-7. Original CodePackr explanations and MCQs. Do not copy textbooks or database commentary.
+7. Original CodePackr explanations and MCQs. Do not copy textbooks or database commentary. Statutory illustrations and definitions from the Act **must be included and taught**, not dumped and not omitted.
 8. Never put full essays in `subjects.ts`. Notes live in `src/data/topics/<slug>/<id>.ts`.
 9. Do not break existing subjects, MCQs, search, practice, or exam flows.
 10. `npm run lint` and `npm run build` must stay green.
+11. A section/article page is a complete student study note (meaning, ingredients, every statutory illustration/definition/explanation, application, 10-mark and 16-mark frameworks, full Q&A). **Never ship a Bare Act dump as the Study Topic.**

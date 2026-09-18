@@ -36,4 +36,4 @@ IPC is **historical concordance only**. It is not an active current-law subject.
 - IPC 377 and 497 are not re-enacted.
 - Common intention is s. 3(5), not s. 190. Common object is s. 190.
 - Murder punishment is s. 103, not s. 101 (101 is the definition).
-- Study Topics must meet [`.github/instructions/student-answer-content.md`](../student-answer-content.md). Theme notes are exam essays; section pages `s-<n>` remain synthesised from the catalog plus a 10-mark framework. Do not ship Bare Act dumps.
+- Study Topics must meet [`.github/instructions/student-answer-content.md`](../student-answer-content.md). Theme notes are exam essays. Every section page `s-<n>` is a **full student study note**: meaning, every definition/clause, ingredients, every statutory illustration and explanation, application, 10-mark and 16-mark frameworks, and full Q&A. Never a Bare Act dump. Never a shortened Q&A.

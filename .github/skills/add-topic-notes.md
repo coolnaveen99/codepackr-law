@@ -13,10 +13,10 @@ Subject extras: [`.github/instructions/subjects/`](../instructions/subjects/).
 | Layer | Location | What goes here |
 |-------|----------|----------------|
 | Metadata only | `src/data/subjects.ts` | id, name, type, range, note, keywords, highYield, cluster |
-| Full notes | `src/data/topics/<subjectSlug>/<topicId>.ts` | `study` (preferred) or legacy `detailed`/`short`, plus sections, provisions, Q&A, cases, bareActPointers, examTips |
+| Full notes | `src/data/topics/<subjectSlug>/<topicId>.ts` | `study` (the one full Study Topic), plus sections, provisions, **full** Q&A, cases, examFrameworks, hypotheticals, illustrations |
 | Canonical graph | `src/data/knowledge/` | Reusable doctrines / cases / articles. Search here first. |
 
-**Never** put study body / `short` / `detailed` / `cases` / `examTips` into `subjects.ts`.
+**Never** put study body / `short` / `detailed` / `cases` / `examTips` into `subjects.ts`. Do not create a Short Version of the Study Topic or of the Q&A.
 
 **Never** copy a canonical doctrine or case essay into a topic file. Use `[[REF:TYPE:CATEGORY:SLUG]]` and the related-knowledge panel.
 
@@ -93,7 +93,7 @@ All petition/application formats live under `petition-formats`. Do not scatter t
 2. Create/update `src/data/topics/<subjectSlug>/<topicId>.ts`.
 3. Export the existing `TopicContent` shape.
 4. Use `study` as the authoritative Study Topic body.
-5. Add page-specific examples, Q&A and exam guidance without duplicating canonical knowledge.
+5. Add page-specific examples, **full** Q&A (10-mark and 16-mark answers, never shortened) and exam guidance without duplicating canonical knowledge. Include every statutory definition, illustration and explanation and teach it.
 6. Add verified references and cross-links.
 7. Validate and test.
 

@@ -209,7 +209,7 @@ export function TopicDetail({
           <div className="flex items-center gap-2 mb-5">
             <BookOpen className="w-6 h-6 text-blue-600" />
             <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
-              {topic.type === 'section' || topic.type === 'article' ? 'Bare Act' : 'Study Topic'}
+              Study Topic
             </h3>
           </div>
           <StudyBody text={studyContent} />
@@ -322,9 +322,24 @@ export function TopicDetail({
       )}
 
       {!loading && content?.questionsAndAnswers && content.questionsAndAnswers.length > 0 && (
-        <section className="space-y-3">
-          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Questions & Answers</h3>
-          {content.questionsAndAnswers.map((item) => <article key={item.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4"><h4 className="font-semibold text-sm text-slate-900 dark:text-white">Q. {item.question}</h4><p className="mt-3 text-sm leading-relaxed text-slate-700 dark:text-slate-300"><strong>Answer:</strong> {item.answer}</p>{item.explanation && <p className="mt-2 text-xs leading-relaxed text-slate-500"><strong>Explanation:</strong> {item.explanation}</p>}</article>)}
+        <section className="space-y-4">
+          <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">Questions & Answers</h3>
+          <p className="text-sm text-slate-500">Full examination answers — do not shorten these in the answer book.</p>
+          {content.questionsAndAnswers.map((item) => (
+            <article key={item.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-7 space-y-4">
+              <h4 className="text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white">Q. {item.question}</h4>
+              <div>
+                <p className="text-[11px] font-bold uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-2">Answer</p>
+                <StudyBody text={item.answer} />
+              </div>
+              {item.explanation && (
+                <div className="rounded-xl bg-slate-50 dark:bg-slate-800/50 p-4">
+                  <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 mb-2">How to score full marks</p>
+                  <p className="text-base leading-7 text-slate-700 dark:text-slate-300">{item.explanation}</p>
+                </div>
+              )}
+            </article>
+          ))}
         </section>
       )}
 

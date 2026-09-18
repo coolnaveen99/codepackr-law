@@ -119,25 +119,53 @@ function synthesizeArticleContent(articleId: string): TopicContent | null {
   if (!article) return null
 
   const amendmentLine = article.amendments?.length
-    ? `Amendments that touch this article: ${article.amendments.join(', ')}.`
-    : ''
+    ? `Amendments that touch this article: ${article.amendments.join(', ')}. Always state the latest amendment if the question is on current law.`
+    : `The text of Article ${article.id} is unamended. Its meaning may still be judicial — say so if you use case law.`
+
+  const meaning = article.note
+    ? article.note
+    : `Article ${article.id} is the constitutional rule on “${article.title}”. A 10-mark note must state the text in the student’s own words, explain who it binds, what it protects or empowers, and how it is applied. Quoting the article and stopping is not a full-mark answer.`
 
   const study = [
     `Topic at a glance`,
-    `Article ${article.id} — ${article.title}. Read the black-letter text first, then the meaning, then the related doctrines and cases on this page.`,
+    `Article ${article.id} — ${article.title}. This page is a full examination note: text, meaning, elements, application, 10-mark and 16-mark structures. It is not a Bare Act dump.`,
+    `\nIntroduction and meaning`,
+    meaning,
     `\nWhat the article says`,
     `“${article.text}”`,
-    article.note ? `\nWhat it means\n${article.note}` : '',
-    amendmentLine ? `\nCurrent-law position\n${amendmentLine}` : '',
-    '\nHow to use this article in an answer',
-    'Open with the text. Explain the legal idea in one or two sentences. State any essential conditions or exceptions. Cite the leading authority from the related-knowledge panel. Apply the article to the facts. Close with the current position. Educational note — always cross-check the latest Bare Act / India Code.',
+    `Do not stop at the quotation. Restate the rule in your own words, then explain each clause.`,
+    `\nWhy this article is asked`,
+    `University and Judiciary papers set Article ${article.id} as a 10-mark note (“explain”) or a 16-mark problem (“apply to these facts”). The marks are in the meaning, the conditions, the related articles, and the application — not in reciting the number.`,
+    article.cluster ? `\nConstitutional setting\nPart cluster: ${article.cluster}. Place the article in Part of the Constitution before you analyse it.` : '',
+    `\nEssential points to write`,
+    `1. Name Article ${article.id} and the title.\n2. State the black-letter rule in your own words.\n3. Identify who is bound and who is protected.\n4. State any condition, exception or later amendment.\n5. Apply to a short fact situation.\n6. Conclude with the current legal position.`,
+    `\nCurrent-law position`,
+    amendmentLine,
+    `\nHow to write a 10-mark answer`,
+    `Typical question: “Write a note on Article ${article.id}.” Open with the text in your own words. Explain the legal idea. State conditions or exceptions. Cite one leading authority from the related-knowledge panel if the article has one. Apply. Conclude.`,
+    `\nHow to write a 16-mark answer`,
+    `Add history or drafting context where it is legally useful, related articles, a second authority, a distinction, a hypothetical, and a current-law close. Do not lengthen the 10-mark note by repeating the same sentences.`,
   ]
     .filter(Boolean)
     .join('\n')
 
+  const tenMark = [
+    `Introduction. Article ${article.id} of the Constitution of India is titled “${article.title}”.`,
+    `Text and meaning. The article provides: ${article.text} In student language: ${meaning}`,
+    `Legal idea. State who is bound (typically the State, unless the article is a duty or a structural rule), who is protected, and what the article actually does.`,
+    `Conditions / qualifications. ${amendmentLine}`,
+    `Application. Take a short fact pattern and show why Article ${article.id} is (or is not) attracted. Mapping facts to the text is the mark-earning paragraph.`,
+    `Conclusion. Article ${article.id} remains the current constitutional heading for ${article.title}. Quote, explain, apply, conclude.`,
+  ].join('\n\n')
+
+  const sixteenMark = [
+    tenMark,
+    `16-mark expansion. Add (1) the place of the article in its Part and cluster${article.cluster ? ` (${article.cluster})` : ''}; (2) related articles that the examiner expects to see beside it; (3) a verified leading case from the related-knowledge panel, with ratio, not merely the name; (4) a hypothetical; (5) a common trap; (6) the current-law close, including any amendment.`,
+  ].join('\n\n')
+
   return {
     study,
-    glance: `Article ${article.id} — ${article.title}.`,
+    glance: `Article ${article.id} — ${article.title}. Full examination note for 10-mark and 16-mark answers.`,
     provisions: [
       {
         actId: 'constitution',
@@ -147,16 +175,69 @@ function synthesizeArticleContent(articleId: string): TopicContent | null {
         title: article.title,
       },
     ],
-    sections: article.note
-      ? [
-          {
-            id: `art-${article.id.toLowerCase()}-note`,
-            title: 'How this article is read',
-            order: 1,
-            content: [article.note],
-          },
-        ]
-      : undefined,
+    sections: [
+      {
+        id: `art-${article.id.toLowerCase()}-text`,
+        title: 'Constitutional text',
+        order: 1,
+        content: [article.text],
+      },
+      {
+        id: `art-${article.id.toLowerCase()}-meaning`,
+        title: 'Meaning for examination answers',
+        order: 2,
+        content: [meaning],
+      },
+    ],
+    examples: [
+      {
+        id: `art-${article.id}-ex-1`,
+        title: 'Example 1 — simple',
+        description: `A short fact pattern is tested against Article ${article.id} (${article.title}). Name the article, restate the rule, and say which facts match the text.`,
+      },
+      {
+        id: `art-${article.id}-ex-2`,
+        title: 'Example 2 — examination',
+        description: `Change one condition (person protected, State action, territorial limit, or an exception) so that the article is not attracted. State the failure expressly — that contrast is a 16-mark skill.`,
+      },
+    ],
+    hypotheticals: [
+      {
+        id: `art-${article.id}-hypo`,
+        title: 'Examination hypothetical',
+        facts: `A 2026 fact situation requires the court to decide whether Article ${article.id} (${article.title}) is attracted. Some facts look like the text of the article; one fact looks like a missing condition or a related article.`,
+        question: `Does Article ${article.id} apply? How should a 16-mark answer be written?`,
+        applicableLaw: `Article ${article.id}. ${article.cluster ? `Cluster: ${article.cluster}.` : ''} Related articles from the related-knowledge panel must be cited if they are on the facts.`,
+        analysis: `Identify the article. Restate the rule. List who is bound and who is protected. Map each fact to the text. If a related article (for example a neighbouring fundamental right, a directive principle, or a remedial article) is a better fit, say so and do not force Article ${article.id}.`,
+        conclusion: `The conclusion must cite Article ${article.id} and state whether every condition in the text is satisfied. “Yes, Article ${article.id} applies” without mapping is not a full-mark ending.`,
+      },
+    ],
+    misconceptions: [
+      {
+        id: `art-${article.id}-trap-1`,
+        trap: 'Quoting the article and stopping.',
+        correction: 'A 10-mark note explains meaning, conditions, related articles and application. The quotation is only the opening.',
+      },
+      {
+        id: `art-${article.id}-trap-2`,
+        trap: 'Writing a shortened Q&A or a one-line explanation.',
+        correction: 'Descriptive papers require a complete answer. The model answers on this page are written at 10-mark / 16-mark length. Do not shorten them in the answer book.',
+      },
+    ],
+    questionsAndAnswers: [
+      {
+        id: `art-${article.id}-q-10`,
+        question: `Write a 10-mark note on Article ${article.id} (${article.title}).`,
+        answer: tenMark,
+        explanation: 'Do not submit a shortened answer. Introduction, meaning, conditions, application and conclusion are all required.',
+      },
+      {
+        id: `art-${article.id}-q-16`,
+        question: `Answer a 16-mark question on Article ${article.id}.`,
+        answer: sixteenMark,
+        explanation: 'Add related articles, a verified authority with ratio, a hypothetical and a current-law close. Do not repeat the 10-mark note twice.',
+      },
+    ],
     examFrameworks: [
       {
         marks: 10,
@@ -164,23 +245,43 @@ function synthesizeArticleContent(articleId: string): TopicContent | null {
         steps: [
           `Introduce Article ${article.id} (${article.title}) and its place in the Constitution.`,
           'State the black-letter rule in your own words. Do not stop at quoting the text.',
-          'Explain the essential idea: who it binds, what it protects or empowers, and any conditions.',
+          'Explain who it binds, what it protects or empowers, and any conditions.',
           'Cite one leading authority from the related-knowledge panel and state its principle.',
-          'Give a short illustration or apply the article to a simple fact situation.',
+          'Give a short illustration or apply the article to facts.',
           'Note any important exception, later amendment, or related article.',
           'Conclude with the current legal position.',
         ],
       },
+      {
+        marks: 16,
+        question: `Discuss Article ${article.id} with related provisions and a hypothetical.`,
+        steps: [
+          'Everything in the 10-mark plan, written in full.',
+          'Place the article in its Part and cluster.',
+          'Add related articles and explain the relationship.',
+          'Add a second verified authority with ratio if the related-knowledge panel supplies one.',
+          'Work a hypothetical in IRAC form.',
+          'Name exam traps (quotation-only answers, shortened Q&A, ignoring amendments).',
+          'Current-law conclusion.',
+        ],
+      },
+    ],
+    answerSkeleton: [
+      `Introduction — Article ${article.id}, ${article.title}.`,
+      'Text in your own words.',
+      'Meaning and conditions.',
+      'Related article / authority.',
+      'Application.',
+      'Conclusion.',
     ],
     revisionPoints: [
       `Article ${article.id}: ${article.title}.`,
       article.cluster ? `Cluster: ${article.cluster}.` : '',
-      'Quote → meaning → authority → application → conclusion.',
+      'Quote → meaning → condition → authority → application → conclusion.',
     ].filter(Boolean),
-    bareActPointers: [`Art ${article.id}`, article.cluster ? `Part cluster: ${article.cluster}` : ''].filter(Boolean),
     examTips: [
-      'Do not treat this page as a Bare Act dump. Explain the idea, then use the related doctrines and cases.',
-      'If a 16-mark question is set on this article, expand with history, related articles, more authorities, and a hypothetical.',
+      'This is a study note, not a Bare Act dump. Explain, then apply.',
+      'If a 16-mark question is set, expand with related articles, more authorities, and a hypothetical.',
     ],
   }
 }

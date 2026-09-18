@@ -31,6 +31,6 @@ CrPC, 1973 is **historical concordance only**. Never assume `CrPC X = BNSS Y`.
 - Preserve CrPC citations in historical judgments and older exam questions; map only when verified.
 - Do not duplicate BNS offence essays here. Cross-link to BNS section topics / canonical knowledge.
 - FIR, arrest, bail, charge, trial, and appeals are procedure topics — keep them on this subject.
-- Study Topics must meet [`.github/instructions/student-answer-content.md`](../student-answer-content.md). Cite **BNSS** section numbers for procedure on or after 1 July 2024.
+- Study Topics must meet [`.github/instructions/student-answer-content.md`](../student-answer-content.md). Every section page `s-<n>` is a full student study note (meaning, ingredients, statutory illustrations/explanations, application, 10-mark and 16-mark frameworks, full Q&A). Never a Bare Act dump. Never a shortened Q&A. Cite **BNSS** section numbers for procedure on or after 1 July 2024. Do not lead the page with an unverified CrPC-mapping block.
 - Verified teaching map: FIR s. 173 (old 154); arrest s. 35 (old 41, notice folded in); how-made s. 43; remand s. 187 (old 167); cognizance s. 210 (old 190); Sessions charge ss. 250–251; bail ss. 478–483 (old 436–439); anticipatory s. 482 (old 438); inherent s. 528 (old 482). Do not treat BNSS 482 as inherent power.
 - Never assume `CrPC X = BNSS Y`.

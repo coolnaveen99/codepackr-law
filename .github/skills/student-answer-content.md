@@ -43,6 +43,10 @@ Use existing `TopicContent` fields:
 - `examFrameworks` (10 and 16 marks)
 - `answerSkeleton`, `revisionPoints`, `questionsAndAnswers`
 
+**Q&A is never a short version.** `questionsAndAnswers[].answer` must be a complete 10-mark or 16-mark examination answer (introduction, meaning, ingredients, illustration mapped to an ingredient, exception, application, conclusion). `explanation` is extra scoring guidance, not a substitute for a tiny answer.
+
+Statutory **definitions, illustrations and explanations** must be included on the Study Topic and taught. Do not dump the Bare Act as the whole page. Do not omit illustrations to make the page shorter.
+
 Not every heading is required on every topic. Do not omit important material merely to make content shorter. Do not pad.
 
 ## Quality bar

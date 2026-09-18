@@ -905,6 +905,8 @@ Reject or improve content if it is:
 - only case names;
 - only revision bullets;
 - too short to support a 10-mark answer;
+- a shortened Q&A or a one-line “explanation”;
+- a Bare Act dump with no teaching of definitions, illustrations, ingredients and application;
 - incapable of supporting a 16-mark answer where appropriate;
 - missing useful examples;
 - missing application;
@@ -983,6 +985,34 @@ ONE STUDY TOPIC
 with structured sections.
 
 The content itself should be sufficiently detailed.
+
+**Q&A is part of that one full version.** Never write a shortened question-and-answer.
+
+---
+
+# 26A. Q&A MUST BE FULL EXAMINATION ANSWERS — NEVER A SHORT VERSION
+
+This rule is non-negotiable.
+
+`questionsAndAnswers` is not a quiz teaser and not a one-line hint. Each item must be a **complete answer a student could write in the examination hall** for 10 marks, and a second item must exist where the topic can support 16 marks.
+
+Forbidden:
+
+- one-line answers;
+- “brief explanation”;
+- “short note” of three or four sentences for a 10-mark question;
+- putting the real answer in `explanation` and leaving `answer` empty or tiny;
+- telling the student to “see above”;
+- Bare Act quotation with no meaning, ingredients, illustration or application.
+
+Required for every substantive topic, including every BNS / BNSS / BSA **section page** and every Constitution **article page**:
+
+1. A **10-mark** question whose `answer` is a full note: introduction, meaning/definition, legal basis, ingredients/elements, illustration mapped to an ingredient, explanation or exception, application, conclusion.
+2. A **16-mark** question whose `answer` expands that note: Chapter/Part setting, a second illustration or hypothetical, a distinction from a connected provision, IRAC application, exam traps, current-law close.
+3. Where the statute prints **illustrations or definitions**, those texts must appear on the Study Topic **and be taught** (quote → map to ingredient → legal result). Do not drop them. Do not leave them as an unexplained Bare Act dump.
+4. `explanation` adds exam-scoring guidance. It does **not** replace a full `answer`.
+
+The student who reads only this page must be able to attempt a 10-mark and, where appropriate, a 16-mark question and know how to score full marks.
 
 ---
 
