@@ -122,7 +122,7 @@ export function TopicDetail({
   }
 
   return (
-    <div className="space-y-8 max-w-3xl">
+    <div className="space-y-8 max-w-6xl">
       <div className="space-y-3">
         <button
           type="button"
@@ -147,7 +147,7 @@ export function TopicDetail({
               )}
             </div>
 
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
+            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
               {topic.name}
             </h2>
 
@@ -205,10 +205,12 @@ export function TopicDetail({
       )}
 
       {!loading && hasContent && content && (
-        <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
-          <div className="flex items-center gap-2 mb-4">
-            <BookOpen className="w-5 h-5 text-blue-600" />
-            <h3 className="text-lg font-bold text-slate-900 dark:text-white">Study Topic</h3>
+        <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-8">
+          <div className="flex items-center gap-2 mb-5">
+            <BookOpen className="w-6 h-6 text-blue-600" />
+            <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
+              {topic.type === 'section' || topic.type === 'article' ? 'Bare Act' : 'Study Topic'}
+            </h3>
           </div>
           <StudyBody text={studyContent} />
 
@@ -493,18 +495,27 @@ export function TopicDetail({
 function StudyBody({ text }: { text: string }) {
   const blocks = text.split('\n')
   return (
-    <div className="text-sm sm:text-[15px] leading-relaxed text-slate-700 dark:text-slate-300 space-y-3">
+    <div className="text-base sm:text-lg leading-8 text-slate-800 dark:text-slate-200 space-y-4">
       {blocks.map((line, i) => {
         if (!line.trim()) return null
-        const heading = line.length < 72 && !/[.?!”]$/.test(line.trim()) && !line.startsWith('•') && !/^\d+\./.test(line.trim())
+        const trimmed = line.trim()
+        const legalHeading =
+          /^(Explanation|Illustrations?|Exceptions?|Proviso|Provided that)\b/i.test(trimmed)
+        const heading =
+          legalHeading ||
+          (trimmed.length < 80 &&
+            !/[.?!”]$/.test(trimmed) &&
+            !trimmed.startsWith('•') &&
+            !/^\d+\./.test(trimmed) &&
+            !/^\(\d+\)/.test(trimmed))
         if (heading) {
           return (
-            <h4 key={i} className="pt-2 font-semibold text-slate-900 dark:text-white">
-              {line}
+            <h4 key={i} className="pt-3 text-xl sm:text-2xl font-extrabold text-slate-950 dark:text-white">
+              {trimmed}
             </h4>
           )
         }
-        return <RichLegalText key={i} text={line} className="[&>p]:mt-0" />
+        return <RichLegalText key={i} text={line} className="[&>p]:mt-0 [&>p]:text-base [&>p]:sm:text-lg [&>p]:leading-8" />
       })}
     </div>
   )

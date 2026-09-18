@@ -248,7 +248,7 @@ export async function loadTopicContent(
   if (subjectSlug === 'bns') {
     const sectionId = sectionIdFromTopicId(topicId)
     if (sectionId) {
-      const synthesized = synthesizeCatalogSection('bns', sectionId)
+      const synthesized = await synthesizeCatalogSection('bns', sectionId)
       if (synthesized) {
         cache.set(key, synthesized)
         return synthesized
@@ -259,7 +259,7 @@ export async function loadTopicContent(
   if (subjectSlug === 'bnss') {
     const sectionId = bnssSectionIdFromTopicId(topicId)
     if (sectionId) {
-      const synthesized = synthesizeCatalogSection('bnss', sectionId)
+      const synthesized = await synthesizeCatalogSection('bnss', sectionId)
       if (synthesized) {
         cache.set(key, synthesized)
         return synthesized
@@ -270,7 +270,7 @@ export async function loadTopicContent(
   if (subjectSlug === 'bsa') {
     const sectionId = bsaSectionIdFromTopicId(topicId)
     if (sectionId) {
-      const synthesized = synthesizeCatalogSection('bsa', sectionId)
+      const synthesized = await synthesizeCatalogSection('bsa', sectionId)
       if (synthesized) {
         cache.set(key, synthesized)
         return synthesized

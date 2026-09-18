@@ -89,7 +89,7 @@ export function SubjectDetail({
   }
 
   return (
-    <div className="space-y-8 max-w-4xl">
+    <div className="space-y-8 max-w-6xl">
       <div className="space-y-4">
         <button
           type="button"
