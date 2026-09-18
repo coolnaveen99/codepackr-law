@@ -22,24 +22,6 @@ Related doctrines (do not mix in answers)
 Exam focus
 State the test; apply to a fact pattern. Cite that incidental encroachment is not fatal.`,
 
-  short: `Pith and substance is used to decide whether a law falls under the Union, State or Concurrent List. Courts look at the true nature and character of the legislation. Incidental encroachment on another list does not make the law invalid if the pith and substance lies in a list within the legislature’s competence.`,
-
-  detailed: `Context
-Seventh Schedule distributes legislative power (Union List, State List, Concurrent List). Challenges often allege that a State law trespasses on the Union List (or vice versa).
-
-Doctrine
-• Examine the true nature, character and object of the law (its “pith and substance”).
-• If the substance falls under an entry the legislature can enact, the law is valid.
-• Incidental or ancillary encroachment on another list is tolerated.
-
-Related doctrines (do not mix in answers)
-• Colourable legislation — form is a disguise for lack of power.
-• Occupied field / repugnancy — mainly Concurrent List (Art 254).
-• Eclipse / severability — Fundamental Rights and validity of parts of statutes.
-
-Exam focus
-State the test; apply to a fact pattern. Cite that incidental encroachment is not fatal.`,
-
   sections: [
     {
       id: 'pith-substance-context',

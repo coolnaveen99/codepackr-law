@@ -130,7 +130,7 @@ export function TopicDetail({
         </button>
 
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
-          <div className="space-y-2">
+          <div className="space-y-2 min-w-0">
             <div className="flex items-center gap-2 flex-wrap">
               <span className="text-[10px] uppercase tracking-wide px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500">
                 {topicTypeLabel(topic.type)}
@@ -150,15 +150,15 @@ export function TopicDetail({
             {topic.note && (
               <p className="text-sm text-slate-600 dark:text-slate-400">{topic.note}</p>
             )}
-              <button
-                type="button"
-                onClick={toggleStudyComplete}
-                className={`inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border text-sm font-semibold transition ${studyComplete ? 'border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300' : 'border-blue-200 text-blue-700 hover:bg-blue-50 dark:border-blue-900 dark:text-blue-300 dark:hover:bg-blue-950/40'}`}
-              >
-                {studyComplete ? 'Study completed' : 'Mark study complete'}
-              </button>
           </div>
 
+          <button
+            type="button"
+            onClick={toggleStudyComplete}
+            className={`inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border text-sm font-semibold transition shrink-0 ${studyComplete ? 'border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300' : 'border-blue-200 text-blue-700 hover:bg-blue-50 dark:border-blue-900 dark:text-blue-300 dark:hover:bg-blue-950/40'}`}
+          >
+            {studyComplete ? 'Study completed' : 'Mark study complete'}
+          </button>
         </div>
       </div>
 

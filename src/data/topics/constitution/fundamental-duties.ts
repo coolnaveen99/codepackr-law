@@ -7,11 +7,8 @@ import type { TopicContent } from '../loadTopicContent'
  */
 const content: TopicContent = {
 
-  study: `Bare Act (as modified up to 1 Dec 2007)
-Article 51A
+  study: `Article 51A
 “It shall be the duty of every citizen of India—(a) to abide by the Constitution and respect its ideals and institutions, the National Flag and the National Anthem; … (and other duties listed in Art 51A(b)–(k)).”
-
-Bare Act source note: wording below follows the Ministry of Law and Justice text of the Constitution of India as modified up to 1 December 2007 (through the 94th Amendment). Later amendments are omitted unless separately verified.
 
 Part IVA — Article 51A
 Fundamental Duties were added by the 42nd Amendment (1976). They apply to every citizen of India.
@@ -24,17 +21,6 @@ Fundamental Duties are not directly enforceable like Fundamental Rights. They ar
 
 Exam focus
 Know that duties are in Art 51A / Part IVA, added by the 42nd Amendment, apply to citizens, and are non-justiciable in the Fundamental Rights sense.`,
-
-  short: `Fundamental Duties (Part IVA, Article 51A) were added by the 42nd Amendment. They oblige citizens to respect the Constitution, national symbols, unity, environment, and other listed civic duties. They are not enforceable like Fundamental Rights.`,
-
-  detailed: `Part IVA — Article 51A
-Fundamental Duties were added by the 42nd Amendment (1976) and apply to citizens. They include respecting the Constitution, national flag and anthem, upholding sovereignty and integrity, promoting harmony, protecting the environment, developing scientific temper, and related duties under Article 51A.
-
-Nature
-Duties are not directly enforceable as Fundamental Rights. Courts may use them as interpretive aids.
-
-Exam focus
-Art 51A; 42nd Amendment; citizens; non-justiciable character compared with Part III.`,
 
   sections: [
     {

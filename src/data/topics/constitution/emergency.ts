@@ -7,11 +7,8 @@ import type { TopicContent } from '../loadTopicContent'
  */
 const content: TopicContent = {
 
-  study: `Bare Act (as modified up to 1 Dec 2007)
-Article 352(1)
+  study: `Article 352(1)
 “If the President is satisfied that a grave emergency exists whereby the security of India or of any part of the territory thereof is threatened, whether by war or external aggression or armed rebellion, he may, by Proclamation, make a declaration to that effect.”
-
-Bare Act source note: wording below follows the Ministry of Law and Justice text of the Constitution of India as modified up to 1 December 2007 (through the 94th Amendment). Later amendments are omitted unless separately verified.
 
 Three emergencies
 • National Emergency — Article 352 (war, external aggression, or armed rebellion; “internal disturbance” language was narrowed after the 44th Amendment).
@@ -26,10 +23,6 @@ S.R. Bommai held that Art 356 power is not absolute; the material for proclamati
 
 Exam focus
 Name three emergencies with Articles. Note 44th Amendment safeguards for Art 352. Cite Bommai for Art 356 review.`,
-
-  short: `Emergencies: Art 352 (national), Art 356 (President’s Rule), Art 360 (financial). The 44th Amendment tightened Art 352 safeguards. Bommai subjects Art 356 to limited judicial review; secularism is basic structure.`,
-
-  detailed: `Three emergencies under Arts 352, 356 and 360. National emergency grounds were refined by the 44th Amendment. Article 356 is subject to limited judicial review after S.R. Bommai. Financial emergency is under Article 360.`,
 
   sections: [
     { id: 'emergency-types', title: 'Three types', order: 1, content: [

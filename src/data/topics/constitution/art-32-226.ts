@@ -22,24 +22,6 @@ The five writs (exam shorthand)
 Exam focus
 Art 32 = SC + FR only (+ FR itself). Art 226 = HC + FR and other legal rights. Name all five writs with one-line purpose.`,
 
-  short: `Article 32 is a Fundamental Right to move the Supreme Court for enforcement of Part III rights. Article 226 gives High Courts wider writ power for Fundamental Rights and any other purpose. Five writs: habeas corpus, mandamus, prohibition, certiorari, quo warranto.`,
-
-  detailed: `Article 32
-Guarantees the right to move the Supreme Court by appropriate proceedings for enforcement of Fundamental Rights. The Supreme Court may issue directions, orders or writs including habeas corpus, mandamus, prohibition, quo warranto and certiorari. Article 32 is itself a Fundamental Right.
-
-Article 226
-Empowers every High Court to issue writs to any person or authority (including government) for enforcement of Fundamental Rights and for any other purpose. Jurisdiction is wider than Article 32 because it is not confined to Fundamental Rights.
-
-The five writs (exam shorthand)
-• Habeas corpus — produce the body; challenges unlawful detention.
-• Mandamus — command a public authority to perform a public duty.
-• Prohibition — directs an inferior court/tribunal to stop exceeding jurisdiction.
-• Certiorari — quashes an order of an inferior court/tribunal for want/excess of jurisdiction or error of law apparent on the face of the record (classic grounds).
-• Quo warranto — challenges a person’s claim to a public office.
-
-Exam focus
-Art 32 = SC + FR only (+ FR itself). Art 226 = HC + FR and other legal rights. Name all five writs with one-line purpose.`,
-
   sections: [
     {
       id: 'writs-32-vs-226',

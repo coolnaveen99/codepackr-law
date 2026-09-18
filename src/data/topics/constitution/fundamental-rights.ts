@@ -3,15 +3,12 @@ import type { TopicContent } from '../loadTopicContent'
 /**
  * Fundamental Rights
  * Subject: constitution | Topic id: fundamental-rights
- * Part III overview — Bare Act (to Dec 2007) + settled landmarks only.
+ * Part III overview — current through the 106th Amendment (2023).
  */
 const content: TopicContent = {
 
-  study: `Bare Act (as modified up to 1 Dec 2007)
-Article 14 (illustrative Part III text)
+  study: `Article 14 (illustrative Part III text)
 “The State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India.”
-
-Bare Act source note: wording below follows the Ministry of Law and Justice text of the Constitution of India as modified up to 1 December 2007 (through the 94th Amendment). Later amendments are omitted unless separately verified.
 
 Part III (Arts 12–35)
 Fundamental Rights are justiciable rights enforceable against the State (Art 12). Key clusters: equality (Arts 14–18), freedoms (Art 19), protection in respect of conviction (Art 20), life and personal liberty (Art 21), education (Art 21A — inserted by 86th Amendment, 2002), protection against arrest (Art 22), religion (Arts 25–28), cultural/educational rights (Arts 29–30), and constitutional remedies (Art 32).
@@ -19,12 +16,13 @@ Fundamental Rights are justiciable rights enforceable against the State (Art 12)
 State and enforcement
 Article 12 defines “the State”. Article 13 voids inconsistent laws to the extent of inconsistency. Article 32 is itself a Fundamental Right (constitutional remedies).
 
+Later Part III amendments students must not skip
+• 86th (2002) — Article 21A (right to education).
+• 97th (2011) — “co-operative societies” added to Article 19(1)(c).
+• 103rd (2019) — Articles 15(6) and 16(6), 10% EWS reservation; upheld in Janhit Abhiyan (2022).
+
 Exam focus
-Map the Part III scheme; distinguish FR (justiciable) from DPSP (Art 37) and Duties (Art 51A); know Art 12/13/32 gateways.`,
-
-  short: `Fundamental Rights (Part III, Arts 12–35) are justiciable rights enforceable against the State. Core clusters include equality, freedoms, life and liberty, religion, cultural rights, and Art 32 remedies. Distinct from DPSPs and Fundamental Duties.`,
-
-  detailed: `Part III confers justiciable Fundamental Rights. Article 12 defines the State; Article 13 addresses inconsistent laws; Article 32 guarantees constitutional remedies. Equality, freedoms, Arts 20–22, religious and cultural rights are the usual exam clusters.`,
+Map the Part III scheme; distinguish FR (justiciable) from DPSP (Art 37) and Duties (Art 51A); know Art 12/13/32 gateways; do not freeze Part III at the 94th Amendment.`,
 
   sections: [
     { id: 'fr-scheme', title: 'Part III scheme', order: 1, content: [

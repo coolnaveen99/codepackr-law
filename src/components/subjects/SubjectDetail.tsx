@@ -79,28 +79,25 @@ export function SubjectDetail({
           All subjects
         </button>
 
-        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
-          <div className="space-y-2">
-            <div className="flex items-center gap-2 text-xs text-slate-500">
-              <Scale className="w-3.5 h-3.5 text-blue-600" />
-              <span className="uppercase tracking-wide font-semibold">
-                {subject.priority} priority · ~{subject.aibeQuestions} AIBE questions
-              </span>
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
-              {subject.name}
-            </h2>
-            <p className="text-sm text-slate-600 dark:text-slate-400 max-w-2xl">
-              {subject.description}
-            </p>
-            {subject.bareActs.length > 0 && (
-              <p className="text-xs text-slate-500 dark:text-slate-400">
-                <span className="font-semibold text-slate-700 dark:text-slate-300">Bare Acts: </span>
-                {subject.bareActs.join(' · ')}
-              </p>
-            )}
+        <div className="space-y-2">
+          <div className="flex items-center gap-2 text-xs text-slate-500">
+            <Scale className="w-3.5 h-3.5 text-blue-600" />
+            <span className="uppercase tracking-wide font-semibold">
+              {subject.priority} priority · ~{subject.aibeQuestions} AIBE questions
+            </span>
           </div>
-
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
+            {subject.name}
+          </h2>
+          <p className="text-sm text-slate-600 dark:text-slate-400 max-w-2xl">
+            {subject.description}
+          </p>
+          {subject.bareActs.length > 0 && (
+            <p className="text-xs text-slate-500 dark:text-slate-400">
+              <span className="font-semibold text-slate-700 dark:text-slate-300">Bare Acts: </span>
+              {subject.bareActs.join(' · ')}
+            </p>
+          )}
         </div>
       </div>
 
@@ -198,12 +195,17 @@ export function SubjectDetail({
 
       {subject.topics.length > 0 && topics.length > 0 && (
         <p className="text-xs text-slate-400">
-          Topics include doctrines and petition formats where relevant. Click any topic to open its
-          complete Study Topic reader; testing remains separate in the MCQ tool.
+          Click any topic to open its Study Topic reader. Practice and exam stay in the MCQ tool.
         </p>
       )}
     </div>
   )
+}
+
+function articleSortKey(id: string): [number, string] {
+  const match = id.match(/^art-(\d+)([a-z]*)$/i)
+  if (!match) return [9999, id]
+  return [Number(match[1]), match[2]]
 }
 
 function groupByCluster(
@@ -220,7 +222,14 @@ function groupByCluster(
     }
     map.get(name)!.push(topic)
   }
-  return order.map((name) => ({ name, topics: map.get(name)! }))
+  return order.map((name) => ({
+    name,
+    topics: map.get(name)!.slice().sort((a, b) => {
+      const [an, as] = articleSortKey(a.id)
+      const [bn, bs] = articleSortKey(b.id)
+      return an - bn || as.localeCompare(bs) || a.id.localeCompare(b.id)
+    }),
+  }))
 }
 
 function TopicList({

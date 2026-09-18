@@ -7,9 +7,7 @@ import type { TopicContent } from '../loadTopicContent'
  */
 const content: TopicContent = {
 
-  study: `Bare Act (as modified up to 1 Dec 2007)
-Related: Article 13 (laws inconsistent with or in derogation of Fundamental Rights).
-Bare Act source note: wording below follows the Ministry of Law and Justice text of the Constitution of India as modified up to 1 December 2007 (through the 94th Amendment). Later amendments are omitted unless separately verified.
+  study: `Related: Article 13 (laws inconsistent with or in derogation of Fundamental Rights).
 
 Core idea
 The doctrine of eclipse says that a pre-Constitution law inconsistent with a Fundamental Right is not wiped out entirely; it remains in a shadowed / dormant state to the extent of inconsistency and can revive if the inconsistency is removed (for example by constitutional amendment), especially in contexts historically associated with Article 13 and pre-Constitution laws.
@@ -22,10 +20,6 @@ Bhikaji Narain Dhakras is the standard citation for the eclipse idea in Indian c
 
 Exam focus
 State the doctrine in one sentence. Link to Article 13. Distinguish from severability (which saves the valid part of a law). Give Bhikaji as the landmark.`,
-
-  short: `Doctrine of eclipse: a pre-Constitution law inconsistent with a Fundamental Right is overshadowed to the extent of inconsistency and may revive if the inconsistency ends. Linked to Article 13; classic case Bhikaji Narain Dhakras.`,
-
-  detailed: `Under Article 13, laws inconsistent with Fundamental Rights are void to the extent of inconsistency. The doctrine of eclipse treats inconsistent pre-Constitution laws as dormant rather than obliterated, so they may operate again if the inconsistency is later removed. Leading teaching authority: Bhikaji Narain Dhakras. Distinguish from severability.`,
 
   sections: [
     { id: 'eclipse-core', title: 'Meaning', order: 1, content: [

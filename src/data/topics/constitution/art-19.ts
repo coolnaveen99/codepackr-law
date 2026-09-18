@@ -21,23 +21,6 @@ After Maneka Gandhi, restrictions affecting liberty and speech are often tested 
 Exam focus
 Name the six freedoms, state that restrictions must be reasonable and on enumerated grounds, and note citizenship requirement.`,
 
-  short: `Article 19(1) guarantees six freedoms to citizens (speech, assembly, association, movement, residence, profession). Clauses (2)–(6) allow reasonable restrictions on specified grounds. Available to citizens; read with Arts 14 and 21 after Maneka.`,
-
-  detailed: `Text focus
-Article 19(1) guarantees to citizens: (a) freedom of speech and expression; (b) assemble peaceably and without arms; (c) form associations or unions (or cooperative societies); (d) move freely throughout India; (e) reside and settle in any part of India; (g) practise any profession, or carry on any occupation, trade or business. (Clause (f) on property was deleted by the 44th Amendment.)
-
-Reasonable restrictions
-Clauses (2)–(6) permit the State to impose reasonable restrictions on specified grounds (e.g. sovereignty and integrity, security of the State, public order, decency or morality, contempt of court, defamation, incitement to an offence — for speech under Art 19(2)).
-
-Who enjoys Art 19
-Article 19 rights are available to citizens (not to all “persons” unlike Arts 14 and 21).
-
-Link with Arts 14 and 21
-After Maneka Gandhi, restrictions affecting liberty and speech are often tested through the golden triangle of Articles 14, 19 and 21.
-
-Exam focus
-Name the six freedoms, state that restrictions must be reasonable and on enumerated grounds, and note citizenship requirement.`,
-
   sections: [
     {
       id: 'art-19-freedoms',

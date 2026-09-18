@@ -7,11 +7,8 @@ import type { TopicContent } from '../loadTopicContent'
  */
 const content: TopicContent = {
 
-  study: `Bare Act (as modified up to 1 Dec 2007)
-Article 37
+  study: `Article 37
 “The provisions contained in this Part shall not be enforceable by any court, but the principles therein laid down are nevertheless fundamental in the governance of the country and it shall be the duty of the State to apply these principles in making laws.”
-
-Bare Act source note: wording below follows the Ministry of Law and Justice text of the Constitution of India as modified up to 1 December 2007 (through the 94th Amendment). Later amendments are omitted unless separately verified.
 
 Part IV (Arts 36–51)
 Directive Principles of State Policy guide the State in making laws. Article 37 says they are not enforceable by any court, but are fundamental in the governance of the country and it shall be the duty of the State to apply them in making laws.
@@ -22,6 +19,7 @@ Illustrative principles (non-exhaustive)
 • Art 39A — equal justice and free legal aid
 • Art 40 — village panchayats
 • Art 41 — right to work, education and public assistance in certain cases
+• Art 43B — promotion of co-operative societies (97th Amendment, 2011)
 • Art 44 — Uniform Civil Code (directive)
 • Art 45 — early childhood care and education
 • Art 47 — nutrition, standard of living, public health
@@ -33,10 +31,6 @@ Fundamental Rights are justiciable; DPSPs are not. Courts seek harmonious constr
 
 Exam focus
 State Art 37 clearly. Give 4–5 examples. Explain non-justiciability and harmony with Part III.`,
-
-  short: `Directive Principles (Part IV, Arts 36–51) are non-justiciable guidelines fundamental to governance (Art 37). They aim at socio-economic justice. Courts seek harmony with Fundamental Rights; they do not enforce DPSPs as if they were Fundamental Rights.`,
-
-  detailed: `Part IV (Arts 36–51) sets Directive Principles. Article 37 makes them non-enforceable by courts but fundamental in governance. Courts seek harmonious construction with Fundamental Rights (Minerva Mills).`,
 
   sections: [
     { id: 'dpsp-art37', title: 'Article 37 — nature', order: 1, content: [

@@ -7,11 +7,8 @@ import type { TopicContent } from '../loadTopicContent'
  */
 const content: TopicContent = {
 
-  study: `Bare Act (as modified up to 1 Dec 2007)
-Article 246 (competence setting)
+  study: `Article 246 (competence setting)
 “Parliament has exclusive power to make laws with respect to any of the matters enumerated in List I (Union List) of the Seventh Schedule; States with respect to List II (State List); and both with respect to List III (Concurrent List), subject to Art 246.”
-
-Bare Act source note: wording below follows the Ministry of Law and Justice text of the Constitution of India as modified up to 1 December 2007 (through the 94th Amendment). Later amendments are omitted unless separately verified.
 
 Core idea
 Colourable legislation means that if a legislature lacks competence to enact a law directly, it cannot achieve the same result indirectly by clever drafting. The court looks at the substance of the law, not merely its form or label.
@@ -21,10 +18,6 @@ The doctrine operates in the field of legislative competence (Seventh Schedule /
 
 Exam focus
 One-line maxim: you cannot do indirectly what you cannot do directly. Apply to list-entry competence. Distinguish from pith and substance and from repugnancy (Art 254).`,
-
-  short: `Colourable legislation: a legislature cannot achieve an incompetent end by indirect means. Courts examine substance over form. Distinct from pith and substance and from Art 254 repugnancy.`,
-
-  detailed: `The doctrine of colourable legislation prevents a legislature from achieving by indirect means what it cannot do directly for want of competence. Substance prevails over form. It is commonly tested with Seventh Schedule disputes and should be distinguished from pith and substance and from repugnancy under Article 254.`,
 
   sections: [
     { id: 'colourable-meaning', title: 'Meaning', order: 1, content: [

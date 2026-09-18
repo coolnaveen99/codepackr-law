@@ -30,10 +30,6 @@ Students must separate (i) procedural compliance with Article 368 from (ii) subs
 Exam focus
 Start with Art 368. State Kesavananda. Add Minerva Mills / Coelho as follow-ups. Close with the 106th Amendment if the question is “latest amendment”. Do not treat Article 368 as unlimited. Educational note — confirm the Bare Act and Gazette for commencement.`,
 
-  short: `Article 368 provides the power and procedure to amend the Constitution. Kesavananda Bharati limits amendments that destroy the basic structure. Minerva Mills and later cases refine that limit.`,
-
-  detailed: `Article 368 is the amending provision. Kesavananda Bharati (1973) imposed the basic structure limitation. Minerva Mills (1980) treated limited amending power as basic. I.R. Coelho (2007) opened Ninth Schedule insertions after 24 April 1973 to basic structure review.`,
-
   sections: [
     { id: 'amend-368', title: 'Article 368', order: 1, content: [
       'Article 368 provides the power of Parliament to amend the Constitution and the procedure for amendment.',

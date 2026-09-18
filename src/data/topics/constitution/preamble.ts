@@ -6,31 +6,7 @@ import type { TopicContent } from '../loadTopicContent'
  * Black-letter study notes from settled constitutional text and landmarks only.
  */
 const content: TopicContent = {
-  study: `Bare Act (as modified up to 1 Dec 2007)
-Preamble (keywords)
-“WE, THE PEOPLE OF INDIA, having solemnly resolved to constitute India into a SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC and to secure to all its citizens: JUSTICE, social, economic and political; LIBERTY of thought, expression, belief, faith and worship; EQUALITY of status and of opportunity; and to promote among them all FRATERNITY assuring the dignity of the individual and the unity and integrity of the Nation…”
-
-Bare Act source note: wording below follows the Ministry of Law and Justice text of the Constitution of India as modified up to 1 December 2007 (through the 94th Amendment). Later amendments are omitted unless separately verified.
-
-Text (keywords)
-“We, the People of India, having solemnly resolved to constitute India into a SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC and to secure to all its citizens:
-JUSTICE, social, economic and political;
-LIBERTY of thought, expression, belief, faith and worship;
-EQUALITY of status and of opportunity;
-and to promote among them all FRATERNITY assuring the dignity of the individual and the unity and integrity of the Nation…”
-
-Nature
-The Preamble states the source of authority (the People), the nature of the Indian State, and the objectives of the Constitution. It is a key to interpretation but is not an independent source of enforceable rights.
-
-Amendability
-The 42nd Amendment (1976) inserted the words “Socialist”, “Secular” and “integrity”. In Kesavananda Bharati, the Court held that the Preamble is part of the Constitution and that its basic features cannot be destroyed by amendment.
-
-Exam focus
-Know the key words (Sovereign, Socialist, Secular, Democratic, Republic) and the triad Justice–Liberty–Equality–Fraternity. The Preamble aids construction; it does not itself create Fundamental Rights.`,
-
-  short: `The Preamble declares India a Sovereign Socialist Secular Democratic Republic and sets out Justice, Liberty, Equality and Fraternity as constitutional goals. It guides interpretation and is part of the Constitution, but does not by itself confer enforceable rights.`,
-
-  detailed: `Text (keywords)
+  study: `Text (keywords)
 “We, the People of India, having solemnly resolved to constitute India into a SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC and to secure to all its citizens:
 JUSTICE, social, economic and political;
 LIBERTY of thought, expression, belief, faith and worship;

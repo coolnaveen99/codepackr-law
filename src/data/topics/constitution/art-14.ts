@@ -26,28 +26,6 @@ The Supreme Court has also struck down laws or actions that are “manifestly ar
 Exam focus
 State the twin test clearly. Distinguish reasonable classification from class legislation. Mention arbitrariness where the fact pattern involves unreasonableness rather than pure classification.`,
 
-  short: `Article 14 guarantees equality before the law and equal protection of the laws. It permits reasonable classification but forbids class legislation. The twin test is: (1) intelligible differentia, and (2) rational nexus with the object sought to be achieved. Later cases also use the “manifest arbitrariness” standard.`,
-
-  detailed: `Text
-“The State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India.”
-
-Two limbs
-• Equality before the law — absence of special privilege; equal subjection to ordinary law (Dicey’s influence).
-• Equal protection of the laws — equal treatment in similar circumstances; allows reasonable classification.
-
-Reasonable classification (classic test)
-A classification is valid if:
-1. It is based on an intelligible differentia that distinguishes those grouped together from others; and
-2. That differentia has a rational relation to the object of the statute.
-
-Class legislation is forbidden; reasonable classification is not.
-
-Modern development
-The Supreme Court has also struck down laws or actions that are “manifestly arbitrary” (e.g. Shayara Bano on triple talaq aspects; other cases on arbitrariness under Art 14). Art 14 is often read with Arts 19 and 21 (golden triangle after Maneka).
-
-Exam focus
-State the twin test clearly. Distinguish reasonable classification from class legislation. Mention arbitrariness where the fact pattern involves unreasonableness rather than pure classification.`,
-
   sections: [
     {
       id: 'art-14-two-limbs',

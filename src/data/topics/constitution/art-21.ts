@@ -30,33 +30,6 @@ Includes a wide range of rights relating to individual autonomy, subject to fair
 Exam focus
 Link Maneka + golden triangle in almost every Art 21 answer. Privacy is now part of Art 21 (Puttaswamy). AIBE and Judiciary papers frequently test expansion cases.`,
 
-  short: `Article 21 guarantees that no person shall be deprived of life or personal liberty except according to procedure established by law. After Maneka Gandhi (1978), the procedure must be fair, just and reasonable. The Supreme Court has expanded “life” to include dignity, privacy, health, clean environment, speedy trial and livelihood.`,
-
-  detailed: `Text of Article 21
-“No person shall be deprived of his life or personal liberty except according to procedure established by law.”
-
-Pre-Maneka position
-A.K. Gopalan (1950) treated “procedure established by law” as any enacted procedure, even if unfair. Article 21 was read in isolation from Articles 14 and 19.
-
-Post-Maneka position (1978)
-Maneka Gandhi held that the procedure must be fair, just and reasonable. Articles 14, 19 and 21 form a “golden triangle”. Any law depriving life or liberty must satisfy all three.
-
-Expansion of “life”
-The Court has held that “life” means more than animal existence. It includes:
-• Right to live with human dignity
-• Right to privacy (Puttaswamy, 2017)
-• Right to health and medical care
-• Right to clean environment
-• Right to speedy trial
-• Right to livelihood (limited contexts)
-• Right against solitary confinement and cruel treatment
-
-Personal liberty
-Includes a wide range of rights relating to individual autonomy, subject to fair procedure and reasonable restrictions consistent with the golden triangle.
-
-Exam focus
-Link Maneka + golden triangle in almost every Art 21 answer. Privacy is now part of Art 21 (Puttaswamy). AIBE and Judiciary papers frequently test expansion cases.`,
-
   sections: [
     {
       id: 'art-21-core-principle',

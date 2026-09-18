@@ -7,11 +7,8 @@ import type { TopicContent } from '../loadTopicContent'
  */
 const content: TopicContent = {
 
-  study: `Bare Act (as modified up to 1 Dec 2007)
-Article 124(1)
+  study: `Article 124(1)
 “There shall be a Supreme Court of India consisting of a Chief Justice of India and, until Parliament by law prescribes a larger number, of not more than [the number then fixed] other Judges.”
-
-Bare Act source note: wording below follows the Ministry of Law and Justice text of the Constitution of India as modified up to 1 December 2007 (through the 94th Amendment). Later amendments are omitted unless separately verified.
 
 Supreme Court
 Part V, Chapter IV (Arts 124–147): establishment, appointment themes, jurisdiction including original (Art 131), appellate (Arts 132–134), Article 136 special leave, advisory jurisdiction (Art 143), and Article 141 (law declared by SC binding).
@@ -24,10 +21,6 @@ Independence of the judiciary and judicial review are treated as basic structure
 
 Exam focus
 Map SC jurisdictions (131, 136, 141, 143). Map HC Arts 226–227. State independence/judicial review as basic structure without inventing unsettled appointment controversies.`,
-
-  short: `Union judiciary (Arts 124–147) and State High Courts (Arts 214–231). Key SC jurisdictions: Arts 131, 136, 141, 143. High Courts: Arts 226–227. Judicial independence and judicial review are basic structure values.`,
-
-  detailed: `Supreme Court jurisdiction includes Arts 131, 132–134, 136, 141 and 143. High Courts exercise Arts 226 and 227 powers. Independence of the judiciary and judicial review form part of the basic structure jurisprudence.`,
 
   sections: [
     { id: 'judiciary-sc', title: 'Supreme Court — key jurisdictions', order: 1, content: [

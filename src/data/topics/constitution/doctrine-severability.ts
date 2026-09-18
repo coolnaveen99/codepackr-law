@@ -7,9 +7,7 @@ import type { TopicContent } from '../loadTopicContent'
  */
 const content: TopicContent = {
 
-  study: `Bare Act (as modified up to 1 Dec 2007)
-Related: Article 13 (laws inconsistent with or in derogation of Fundamental Rights).
-Bare Act source note: wording below follows the Ministry of Law and Justice text of the Constitution of India as modified up to 1 December 2007 (through the 94th Amendment). Later amendments are omitted unless separately verified.
+  study: `Related: Article 13 (laws inconsistent with or in derogation of Fundamental Rights).
 
 Core idea
 If a statute is partly unconstitutional, the court may sever the invalid portion and allow the remainder to operate if the valid and invalid parts are separable and the remainder can stand alone as a workable law consistent with legislative intent.
@@ -22,10 +20,6 @@ Severability fails where the valid and invalid parts are inextricably mixed, or 
 
 Exam focus
 Define severance; link to “extent of inconsistency”; state the inseparability limit; cite a standard authority such as R.M.D. Chamarbaugwala.`,
-
-  short: `Severability allows courts to strike only the unconstitutional part of a law if the remainder can stand independently. Linked to Article 13’s “extent of inconsistency” language. Inseparable provisions cannot be severed.`,
-
-  detailed: `The doctrine of severability saves the constitutional portion of a partly invalid statute where separation is possible and the remainder is workable. Article 13’s “to the extent of the inconsistency” language supports this approach. Classic teaching case: R.M.D. Chamarbaugwala.`,
 
   sections: [
     { id: 'sev-meaning', title: 'Meaning', order: 1, content: [

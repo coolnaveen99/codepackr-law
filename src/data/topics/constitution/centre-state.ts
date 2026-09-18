@@ -7,17 +7,14 @@ import type { TopicContent } from '../loadTopicContent'
  */
 const content: TopicContent = {
 
-  study: `Bare Act (as modified up to 1 Dec 2007)
-Article 246 (legislative allocation)
+  study: `Article 246 (legislative allocation)
 “Parliament has exclusive power to make laws with respect to any of the matters enumerated in List I (Union List) of the Seventh Schedule; States with respect to List II (State List); and both with respect to List III (Concurrent List), subject to Art 246.”
-
-Bare Act source note: wording below follows the Ministry of Law and Justice text of the Constitution of India as modified up to 1 December 2007 (through the 94th Amendment). Later amendments are omitted unless separately verified.
 
 Three strands
 Centre–State relations are commonly studied under legislative, administrative and financial heads.
 
 Legislative relations
-Articles 245–255 and the Seventh Schedule distribute legislative power among Union, State and Concurrent Lists. Article 246 is the key allocation provision. Doctrines such as pith and substance, colourable legislation, and repugnancy (Art 254) are tested here.
+Articles 245–255 and the Seventh Schedule distribute legislative power among Union, State and Concurrent Lists. Article 246 is the key allocation provision. Doctrines such as pith and substance, colourable legislation, and repugnancy (Art 254) are tested here. The 101st Amendment (2016) inserted Article 246A — special concurrent power for GST — so list allocation is no longer the whole story for goods-and-services tax.
 
 Administrative relations
 Articles 256–263 deal with obligation of States and the Union, control of the Union over States in certain cases, and related administrative arrangements (including Art 263 Council of States / Inter-State Council themes in syllabus shorthand).
@@ -30,10 +27,6 @@ During national emergency, the federal balance can temporarily shift (Arts 352�
 
 Exam focus
 Map the three strands; cite Art 246 + Seventh Schedule for legislation; Art 254 for repugnancy; name Finance Commission.`,
-
-  short: `Centre–State relations cover legislative (Arts 245–255, Seventh Schedule), administrative (Arts 256–263), and financial (Arts 268–293, Finance Commission) distribution of power. Key tools include pith and substance, colourable legislation, and Art 254 repugnancy.`,
-
-  detailed: `Three strands: legislative (Arts 245–255; Seventh Schedule; Art 246), administrative (Arts 256–263), and financial (Arts 268–293; Art 280 Finance Commission). Related doctrines: pith and substance, colourable legislation, repugnancy under Article 254.`,
 
   sections: [
     { id: 'csr-legislative', title: 'Legislative relations', order: 1, content: [
