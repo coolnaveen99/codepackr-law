@@ -74,6 +74,9 @@ export const PRIMARY_HREF: Record<string, string> = {
   'CONCEPT:EVIDENCE-LAW:BURDEN-OF-PROOF': '/subjects/bsa/burden-proof',
   'CONCEPT:EVIDENCE-LAW:ELECTRONIC-RECORD': '/subjects/bsa/documentary-digital',
   'STATUTE:EVIDENCE-LAW:BHARATIYA-SAKSHYA-ADHINIYAM': '/subjects/bsa',
+  'STATUTE:CRIMINAL-PROCEDURE:BHARATIYA-NAGARIK-SURAKSHA-SANHITA': '/subjects/bnss',
+  'DOCTRINE:CRIMINAL-PROCEDURE:SPEEDY-TRIAL': '/subjects/bnss/doctrine-speedy-trial',
+  'CONCEPT:CRIMINAL-PROCEDURE:ZERO-FIR': '/subjects/bnss/fir-investigation',
 }
 
 const SKIP_TOPIC_IDS = new Set([

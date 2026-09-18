@@ -1,24 +1,131 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  study: `General explanations and definitions — BNS Chapter I (ss. 1–3)
+  glance:
+    'Chapter I (ss. 1–3) names the Sanhita, defines terms (including “child” = below 18), and contains common intention in s. 3(5). In force 1 July 2024 except s. 106(2). 358 sections, 20 chapters.',
 
-s. 1 — name, commencement, extra-territorial reach. In force 1 July 2024 except s. 106(2).
+  study: `Topic at a glance
+This Chapter is the dictionary and the method of reading the Act. Examiners use it for commencement, extra-territorial reach, “child”, and common intention.
 
-s. 2 — the dictionary. Canonical definition: [[REF:DEFINITION:CRIMINAL-LAW:CHILD]] (any person below 18). IPC definitions that were scattered across ss. 6–52 now sit here.
+s. 1
+Short title, commencement, extra-territorial operation. The Sanhita applies to offences committed beyond India by a citizen, among other extra-territorial heads — confirm the exact clauses in the Bare Act. Commencement: 1 July 2024 except s. 106(2).
 
-s. 3 — how the Act is read. Clause (5) is [[REF:DOCTRINE:CRIMINAL-LAW:COMMON-INTENTION]] (old IPC 34).
+s. 2
+Definitions. Canonical: [[REF:DEFINITION:CRIMINAL-LAW:CHILD]] — any person below eighteen. Dishonestly, fraudulently, voluntarily, document (including electronic), and gender clauses live here. IPC had scattered these across ss. 6–52.
+
+s. 3
+How the Sanhita is read. Clause (5) is [[REF:DOCTRINE:CRIMINAL-LAW:COMMON-INTENTION]] (old IPC 34). Do not look for a stand-alone “s. 34 BNS”.
 
 Statute
-Canonical record: [[REF:STATUTE:CRIMINAL-LAW:BHARATIYA-NYAYA-SANHITA]]. 358 sections, 20 chapters. Do not say “the new IPC”.
+[[REF:STATUTE:CRIMINAL-LAW:BHARATIYA-NYAYA-SANHITA]]: 358 sections, 20 chapters. Do not call it “the new IPC”. Procedure is BNSS; evidence is BSA.
 
-Exam focus
-“Child” is defined in s. 2, not in POCSO (POCSO still applies on its own terms). Common intention is 3(5), not 190.`,
-  examTips: [
-    'BNS “child” = below 18.',
-    'Commencement: 1 July 2024 except 106(2).',
+Why Chapter V sits where it does
+Offences against woman and child were promoted in the arrangement. That is drafting emphasis, not a rule that those offences outrank homicide.
+
+Current-law position
+Cite BNS for 1 July 2024 onwards. Date of offence, not FIR, decides ([[REF:PROCEDURE:CRIMINAL-LAW:IPC-TO-BNS]]).
+
+Educational note
+Open s. 1–3 section lessons for black-letter text.`,
+
+  provisions: [
+    { actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-1', section: 's. 1', title: 'Short title, commencement and application' },
+    { actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-2', section: 's. 2', title: 'Definitions' },
+    { actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-3', section: 's. 3', title: 'General explanations' },
   ],
-  relatedTopics: ['s-1', 's-2', 's-3', 'doctrine-common-intention', 'doctrine-mens-rea'],
+
+  examples: [
+    { id: 'gx-ex-1', title: 'Example 1 — simple', description: 'A 17-year-old is a “child” for BNS Chapter V. Under the IPC, kidnapping from lawful guardianship used different ages for boys and girls. The BNS child definition changes that map — always check the section plus s. 2.' },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'gx-hypo',
+      title: 'Examination hypothetical',
+      facts: 'An offence of cheating is committed on 30 June 2024. The FIR is registered on 2 July 2024. The prosecutor charges BNS s. 318.',
+      question: 'Is the charge correct?',
+      applicableLaw: 's. 1 commencement; s. 358 savings; Article 20(1); date of offence.',
+      analysis: 'The Sanhita applies to offences on or after 1 July 2024. A 30 June cheating is an IPC offence (historically s. 420). Article 20(1) forbids a later, different criminal law to the prejudice of the accused. The FIR date is irrelevant to the substantive Code.',
+      conclusion: 'Charge under the IPC, not BNS s. 318. Educational hypothetical.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'gx-bns-ipc',
+      title: 'BNS and IPC as sources',
+      left: 'BNS (current)',
+      right: 'IPC (historical)',
+      rows: [
+        { point: 'When', left: 'Offence on or after 1 July 2024', right: 'Offence before 1 July 2024' },
+        { point: 'Common intention', left: 's. 3(5)', right: 's. 34' },
+        { point: 'Child', left: 'Below 18 (s. 2)', right: 'Scattered age cuts' },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    { id: 'gx-trap-1', trap: 'The BNS is “the new IPC” with the same numbers.', correction: 'It is a new Act. Numbers have moved. Some IPC numbers now mean something else (304, 309, 353).' },
+    { id: 'gx-trap-2', trap: 'Common intention is BNS s. 34 or s. 190.', correction: 's. 3(5). s. 190 is common object.' },
+  ],
+
+  questionsAndAnswers: [
+    { id: 'gx-qa-1', question: 'When did the BNS come into force?', answer: '1 July 2024, except s. 106(2).', relatedProvisionIds: ['bns-1'] },
+    { id: 'gx-qa-2', question: 'Who is a “child” in the BNS?', answer: 'Any person below eighteen years — s. 2.', relatedProvisionIds: ['bns-2'] },
+  ],
+
+  relatedTopics: ['doctrine-common-intention', 'doctrine-mens-rea', 'bns-ipc-map', 's-1', 's-2', 's-3'],
+
+  cases: [],
+
+  bareActPointers: ['BNS ss. 1–3', 's. 2 child', 's. 3(5)', 's. 358'],
+
+  examFrameworks: [
+    {
+      marks: 10,
+      question: 'Write a note on the commencement and key definitions of the BNS.',
+      steps: [
+        'Act 45 of 2023; 1 July 2024 except 106(2).',
+        's. 2 child = 18.',
+        's. 3(5) common intention.',
+        'Date of offence controls (s. 358 + Art 20(1)).',
+        'Do not call it the new IPC.',
+      ],
+    },
+    {
+      marks: 16,
+      question: 'The BNS is a new Code, not a renumbering. Discuss Chapter I and the transition from the IPC.',
+      steps: [
+        's. 1 extra-territorial and commencement.',
+        's. 2 dictionary, especially child and document.',
+        's. 3 method of reading, 3(5).',
+        'Headline conversions and number collisions.',
+        'Hypothetical on date of offence.',
+        'Relationship with BNSS and BSA.',
+        'Conclusion.',
+      ],
+    },
+  ],
+
+  answerSkeleton: [
+    'Introduction — new Code, 358 sections.',
+    'Commencement.',
+    'Key definitions.',
+    's. 3(5).',
+    'Transition.',
+    'Conclusion.',
+  ],
+
+  revisionPoints: [
+    '1 July 2024 except 106(2).',
+    'Child = below 18.',
+    'Common intention = 3(5).',
+    'Date of offence, not FIR.',
+  ],
+
+  examTips: [
+    'If the question is “what is new”, do not list 358 sections. Name child=18, 3(5), Chapter V placement, community service in s. 4(f).',
+  ],
 }
 
 export default content

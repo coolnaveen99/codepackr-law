@@ -1,26 +1,131 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  study: `Offences affecting the human body — BNS Chapter VI (ss. 100–146)
+  glance:
+    'Chapter VI (ss. 100–146) is homicide, hurt, acid, wrongful restraint, kidnapping, and new organised-crime / terrorist-act offences (ss. 111–113). Open the homicide topic for the 100–106 essay — do not duplicate it here.',
 
-Homicide cluster first: [[REF:CONCEPT:CRIMINAL-LAW:CULPABLE-HOMICIDE]] (ss. 100–106, 109).
+  study: `Topic at a glance
+This is a map of Chapter VI, not a second homicide essay. Reuse [[REF:CONCEPT:CRIMINAL-LAW:CULPABLE-HOMICIDE]] for ss. 100–106.
 
-New offences in this Chapter
-• Organised crime — s. 111
-• Petty organised crime — s. 112
-• Terrorist act — s. 113
-• These have no IPC predecessor. Do not map them backwards onto 120B or UAPA unless the facts actually fit those statutes as well.
+The Chapter
+Homicide cluster ss. 100–109 (attempt to murder is s. 109, old 307).
+Hurt and grievous hurt; acid attack s. 124 (statutory fine-to-victim teaching from the Laxmi line).
+Wrongful restraint and confinement.
+Kidnapping and abduction — “child” is [[REF:DEFINITION:CRIMINAL-LAW:CHILD]] (below 18), which changes the old IPC age for kidnapping from lawful guardianship of a boy.
 
-Hurt, acid, restraint, kidnapping
-• Acid attack is s. 124 (Laxmi directions now have a statutory fine-to-victim clause).
-• Kidnapping / abduction remain, with the “child” definition in [[REF:DEFINITION:CRIMINAL-LAW:CHILD]] changing the age for kidnapping from lawful guardianship.
+New offences — no IPC predecessor
+s. 111 organised crime.
+s. 112 petty organised crime.
+s. 113 terrorist act.
+Do not map these backwards onto s. 61 conspiracy or onto UAPA unless the facts also satisfy those statutes. They are BNS offences with their own ingredients. Confirm the Bare Act before listing every clause in a 16-mark answer.
 
-Open the section-wise lessons (s. 100 onwards) for the black-letter of each provision. Do not rewrite the homicide essay here — reuse [[REF:CONCEPT:CRIMINAL-LAW:CULPABLE-HOMICIDE]].`,
-  examTips: [
-    's. 111 and s. 113 are new. They are not “the new 120B”.',
-    'Open the section page for the exact ingredients.',
+s. 103(2)
+Five-or-more-person murder. Distinct from [[REF:DOCTRINE:CRIMINAL-LAW:COMMON-INTENTION]] (two persons, prior concert) and from [[REF:DOCTRINE:CRIMINAL-LAW:COMMON-OBJECT]] (five persons, unlawful assembly).
+
+Current-law position
+Cite BNS numbers. Organised crime and terrorist act are the “what is new in Chapter VI” question.
+
+Educational note
+For black-letter of each section, open s. 100 onwards.`,
+
+  provisions: [
+    { actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-100', section: 'ss. 100–106', title: 'Homicide cluster' },
+    { actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-111', section: 's. 111', title: 'Organised crime' },
+    { actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-113', section: 's. 113', title: 'Terrorist act' },
+    { actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-124', section: 's. 124', title: 'Voluntarily causing grievous hurt by use of acid' },
   ],
-  relatedTopics: ['culpable-homicide-murder', 's-100', 's-111', 's-113', 's-124'],
+
+  examples: [
+    { id: 'ob-ex-1', title: 'Example 1 — simple', description: 'A throws acid at B, causing permanent damage. Charge s. 124. Do not stop at “hurt”.' },
+    { id: 'ob-ex-2', title: 'Example 2 — legal', description: 'A syndicate collects extortion from shops as a continuing activity. That is the s. 111 organised-crime fact pattern, not “the new 120B”.' },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'ob-hypo',
+      title: 'Examination hypothetical',
+      facts: 'A 17-year-old boy is taken from his guardian without consent. The accused says the IPC age for a male child was 16, so it is not kidnapping from lawful guardianship.',
+      question: 'Does the BNS definition matter?',
+      applicableLaw: 's. 2 child = below 18; kidnapping sections in Chapter VI.',
+      analysis: 'For a BNS offence, “child” is below 18. The old 16-year cut for boys does not survive as the BNS definition. Confirm the exact kidnapping section on the facts, then apply s. 2.',
+      conclusion: 'The 17-year-old is a child for the BNS. Educational hypothetical.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'ob-111-3',
+      title: 'Organised crime and conspiracy',
+      left: 's. 111 organised crime',
+      right: 'Conspiracy (Chapter of abetment/conspiracy)',
+      rows: [
+        { point: 'What it is', left: 'A BNS offence with its own ingredients (continuing unlawful activity, syndicate)', right: 'Agreement to commit an offence' },
+        { point: 'Exam trap', left: 'Calling it “the new 120B”', right: 'Ignoring s. 111 when the facts are a syndicate' },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    { id: 'ob-trap-1', trap: 's. 111 is just conspiracy renumbered.', correction: 'It is a new offence. Conspiracy remains a separate head. Read s. 111’s own words.' },
+    { id: 'ob-trap-2', trap: 'Attempt to murder is still 307.', correction: 'Current section is BNS s. 109.' },
+  ],
+
+  questionsAndAnswers: [
+    { id: 'ob-qa-1', question: 'Name two Chapter VI offences that have no IPC predecessor.', answer: 'Organised crime (s. 111) and terrorist act (s. 113). Petty organised crime is s. 112.', relatedProvisionIds: ['bns-111'] },
+  ],
+
+  relatedTopics: ['culpable-homicide-murder', 'sexual-offences', 's-100', 's-111', 's-113', 's-124'],
+
+  cases: [
+    { name: 'Laxmi v. Union of India', year: 2014, citation: '(2014) 4 SCC 427', holding: 'Directions on acid-attack compensation and regulation of acid sale. BNS s. 124 is the current substantive offence; use Laxmi for the compensation / regulatory backdrop, not as a substitute for the section.', relevance: 'Acid-attack answers.' },
+  ],
+
+  bareActPointers: ['BNS Chapter VI', 'ss. 100–109', 'ss. 111–113', 's. 124'],
+
+  examFrameworks: [
+    {
+      marks: 10,
+      question: 'Write a note on new offences against the human body in the BNS.',
+      steps: [
+        'Chapter VI map in three lines.',
+        's. 111 and s. 113 as new.',
+        's. 103(2) lynching.',
+        's. 124 acid.',
+        'Do not map 111 onto 120B.',
+      ],
+    },
+    {
+      marks: 16,
+      question: 'Survey Chapter VI BNS: homicide, new organised-crime/terrorist offences, and acid attack.',
+      steps: [
+        'Point to the homicide essay (ss. 100–106) without rewriting it.',
+        'Attempt s. 109.',
+        'ss. 111–113 ingredients in outline — quote Bare Act heads, do not invent clauses.',
+        'Acid s. 124 + Laxmi.',
+        'Child definition and kidnapping.',
+        'Hypothetical.',
+        'Conclusion.',
+      ],
+    },
+  ],
+
+  answerSkeleton: [
+    'Introduction — Chapter VI map.',
+    'Homicide pointer.',
+    'New ss. 111–113.',
+    'Acid.',
+    'Conclusion.',
+  ],
+
+  revisionPoints: [
+    'Homicide: 100/101/103/105/106/109.',
+    '111 organised crime; 113 terrorist act — new.',
+    '124 acid. Child = 18.',
+  ],
+
+  examTips: [
+    'If the question is homicide, go to that topic. If it is “new offences”, lead with 111–113.',
+  ],
 }
 
 export default content

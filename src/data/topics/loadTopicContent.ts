@@ -244,8 +244,26 @@ function synthesizeBnsSectionContent(sectionId: string): TopicContent | null {
     examTips: [
       `Cite BNS s. ${section.id}, not the old IPC number, for post-1 July 2024 facts.`,
       ...(lesson?.exam ? [lesson.exam] : []),
-      'Use related doctrines and cases from the knowledge graph rather than rewriting them here.',
+      'Explain the idea, then use related doctrines and cases from the knowledge graph. Do not stop at the Bare Act gist.',
     ],
+    examFrameworks: [
+      {
+        marks: 10,
+        question: `Write a note on BNS s. ${section.id} (${section.title}).`,
+        steps: [
+          `State what s. ${section.id} does, in your own words.`,
+          'Name the essential ingredients or the main rule.',
+          ipcLine || 'Note whether the section is new or has an IPC predecessor — without assuming a blind equivalent.',
+          'Give a short illustration or apply the section to facts.',
+          'Conclude with the current-law citation (BNS, not IPC) and the date-of-offence rule.',
+        ],
+      },
+    ],
+    revisionPoints: [
+      `BNS s. ${section.id}: ${section.title}.`,
+      ipcLine,
+      'Date of offence, not FIR, decides BNS vs IPC.',
+    ].filter(Boolean),
     bareActPointers: [
       `BNS s. ${section.id}`,
       chapter ? `Chapter ${chapter.roman}` : '',

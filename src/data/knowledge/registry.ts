@@ -1,6 +1,7 @@
 import { articleEntityId, bnsSectionEntityId, encodeKnowledgeId, ID_RE, topicEntityId } from './ids'
 import { IDS } from './ids'
 import { BNS_KNOWLEDGE } from './bns'
+import { BNSS_KNOWLEDGE } from './bnss'
 import { BSA_KNOWLEDGE } from './bsa'
 import { CONCEPTS } from './concepts'
 import { DEFINITIONS } from './definitions'
@@ -33,6 +34,7 @@ const CANONICAL: CanonicalEntity[] = applyPrimaryHrefs([
   ...PRINCIPLES,
   ...PROCEDURES,
   ...BNS_KNOWLEDGE,
+  ...BNSS_KNOWLEDGE,
   ...BSA_KNOWLEDGE,
 ])
 
@@ -219,6 +221,16 @@ const BSA_TOPIC_KNOWLEDGE_ID: Record<string, string> = {
   witnesses: 'STATUTE:EVIDENCE-LAW:BHARATIYA-SAKSHYA-ADHINIYAM',
 }
 
+const BNSS_TOPIC_KNOWLEDGE_ID: Record<string, string> = {
+  'doctrine-speedy-trial': 'DOCTRINE:CRIMINAL-PROCEDURE:SPEEDY-TRIAL',
+  'fir-investigation': 'CONCEPT:CRIMINAL-PROCEDURE:ZERO-FIR',
+  arrest: 'STATUTE:CRIMINAL-PROCEDURE:BHARATIYA-NAGARIK-SURAKSHA-SANHITA',
+  bail: 'STATUTE:CRIMINAL-PROCEDURE:BHARATIYA-NAGARIK-SURAKSHA-SANHITA',
+  'charge-trial': 'STATUTE:CRIMINAL-PROCEDURE:BHARATIYA-NAGARIK-SURAKSHA-SANHITA',
+  'appeals-revision': 'STATUTE:CRIMINAL-PROCEDURE:BHARATIYA-NAGARIK-SURAKSHA-SANHITA',
+  'bnss-crpc-map': 'STATUTE:CRIMINAL-PROCEDURE:BHARATIYA-NAGARIK-SURAKSHA-SANHITA',
+}
+
 export function knowledgeIdForTopic(subjectSlug: string, topicId: string): string | undefined {
   if (subjectSlug === 'constitution') {
     const mapped = TOPIC_KNOWLEDGE_ID[topicId]
@@ -236,6 +248,9 @@ export function knowledgeIdForTopic(subjectSlug: string, topicId: string): strin
   }
   if (subjectSlug === 'bsa') {
     return BSA_TOPIC_KNOWLEDGE_ID[topicId]
+  }
+  if (subjectSlug === 'bnss') {
+    return BNSS_TOPIC_KNOWLEDGE_ID[topicId]
   }
   return undefined
 }

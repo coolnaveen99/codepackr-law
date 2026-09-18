@@ -1,26 +1,136 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  study: `Sexual offences — BNS Chapter V (ss. 63–73 and following)
+  glance:
+    'Chapter V (from s. 63) sits before offences against the human body. Rape is s. 63 (definition) and s. 64 (punishment). s. 69 is the new deceitful-sexual-intercourse offence. IPC 377 is not re-enacted.',
 
-Chapter V is placed before offences against the human body. That is a drafting statement, not a hierarchy of gravity.
+  study: `Topic at a glance
+Sexual offences are a current-law Chapter, not a copy of the 2013 IPC package with new numbers. Some sections map; s. 69 does not.
 
 Core map
-• Definition of rape — s. 63 (old 375). Marital-rape exception remains, read down for wives under 18 (Independent Thought).
-• Punishment — s. 64 (old 376).
-• Deceitful sexual intercourse (false promise of marriage etc.) — s. 69, new.
-• Gang rape — s. 70. Gang-rape of a woman under 18 can carry remainder-of-life or death.
+s. 63 — rape (old 375). The marital-rape exception remains in the statute; Independent Thought read it down for wives under 18. Do not write that marital rape of an adult wife is an offence unless a later Constitution Bench so holds — current-law honesty matters.
+s. 64 — punishment (old 376).
+s. 69 — sexual intercourse by employing deceitful means, including false promise of marriage. New. Do not map it onto s. 63.
+s. 70 — gang rape. Gang rape of a woman under 18 can carry remainder-of-life or death — quote the Bare Act in the exam.
 
-“Child” throughout this Chapter is [[REF:DEFINITION:CRIMINAL-LAW:CHILD]] (below 18).
+Consent
+Consent must be unequivocal, voluntary, and capable of being withdrawn. Tukaram is the cautionary tale of how not to try a rape case. The 2013 statutory definition of consent is now in this Chapter — confirm the exact BNS clause rather than reciting IPC 375 sixthly from memory.
 
-Consent must be unequivocal, voluntary and informed. Tukaram is the cautionary tale; the 2013 package is now folded into these sections.
+Child
+[[REF:DEFINITION:CRIMINAL-LAW:CHILD]] is below 18 throughout. POCSO continues to apply on its own terms for sexual offences against children; do not pretend the BNS repealed POCSO.
 
-IPC 377 is not re-enacted (Navtej). Consensual same-sex intimacy is not an offence. Non-consensual male rape is a legislative gap — do not invent a BNS section for it.`,
-  examTips: [
-    'IPC 375/376 → BNS 63/64.',
-    's. 69 is new. Do not map it onto 375.',
+IPC 377
+Not re-enacted. Navtej remains the constitutional holding on consensual same-sex intimacy. Non-consensual male rape is a legislative gap in the BNS text — do not invent a section.
+
+Current-law position
+Cite 63/64, not 375/376, for offences on or after 1 July 2024.
+
+Educational note
+This is original CodePackr teaching. Confirm punishments in India Code before a sentencing answer.`,
+
+  provisions: [
+    { actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-63', section: 's. 63', title: 'Rape' },
+    { actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-64', section: 's. 64', title: 'Punishment for rape' },
+    { actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-69', section: 's. 69', title: 'Sexual intercourse by employing deceitful means' },
+    { actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-70', section: 's. 70', title: 'Gang rape' },
   ],
-  relatedTopics: ['s-63', 's-64', 's-69', 's-70', 's-2'],
+
+  examples: [
+    { id: 'sx-ex-1', title: 'Example 1 — simple', description: 'A obtains sexual intercourse by a promise of marriage he never intended to keep. That is the s. 69 fact pattern. Whether it is also s. 63 depends on whether consent under s. 63 is vitiated — do not collapse the two sections automatically.' },
+    { id: 'sx-ex-2', title: 'Example 2 — legal', description: 'Two or more persons acting in furtherance of common intention commit rape. Charge s. 70, not only s. 64 read with s. 3(5).' },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'sx-hypo',
+      title: 'Examination hypothetical',
+      facts: 'A, 25, has sexual intercourse with his 17-year-old wife. He relies on the marital-rape exception in s. 63.',
+      question: 'Does the exception apply?',
+      applicableLaw: 's. 63 exception; Independent Thought v. Union of India (2017); child = below 18.',
+      analysis: 'Independent Thought read down the marital-rape exception so that it does not apply to a wife below 18. A 17-year-old wife is a child. The exception, as read down, does not protect A. (Adult-wife marital rape remains a different, unsettled statutory question — do not invent a holding.)',
+      conclusion: 'The exception does not cover a wife under 18. Educational hypothetical.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'sx-63-69',
+      title: 'Rape and deceitful sexual intercourse',
+      left: 's. 63 rape',
+      right: 's. 69 deceitful means',
+      rows: [
+        { point: 'Wrong', left: 'Sexual intercourse without consent as defined', right: 'Sexual intercourse by deceitful means (including false promise of marriage)' },
+        { point: 'IPC map', left: '375/376', right: 'No direct predecessor — new' },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    { id: 'sx-trap-1', trap: 's. 69 is just the new 375.', correction: 's. 63 is the rape definition. s. 69 is a separate new offence.' },
+    { id: 'sx-trap-2', trap: 'IPC 377 continues in the BNS.', correction: 'It is not re-enacted. Navtej already read down 377 for consensual adult same-sex intimacy.' },
+  ],
+
+  questionsAndAnswers: [
+    { id: 'sx-qa-1', question: 'What are the BNS sections for definition and punishment of rape?', answer: 's. 63 definition; s. 64 punishment (historically IPC 375/376).', relatedProvisionIds: ['bns-63'] },
+    { id: 'sx-qa-2', question: 'Which BNS section covers sexual intercourse by deceitful means?', answer: 's. 69 — a new offence, not a clone of s. 63.', relatedProvisionIds: ['bns-69'] },
+  ],
+
+  relatedTopics: ['s-63', 's-64', 's-69', 's-70', 'general-explanations'],
+
+  cases: [
+    { name: 'Independent Thought v. Union of India', year: 2017, citation: '(2017) 10 SCC 800', holding: 'The marital-rape exception does not apply to a wife below 18.', relevance: 'Must be cited whenever the exception is mentioned.' },
+    { name: 'Navtej Singh Johar v. Union of India', year: 2018, citation: '(2018) 10 SCC 1', holding: 'Consensual same-sex intimacy between adults is not an offence. IPC 377 was read down; the BNS does not re-enact 377.', relevance: 'Do not charge a BNS 377. There is none.' },
+    { name: 'Tukaram v. State of Maharashtra', year: 1979, citation: 'AIR 1979 SC 185', holding: 'The Mathura case — a cautionary tale on consent and the treatment of the prosecutrix. Use it as history of why the consent definition was recast, not as current good law on consent.', relevance: 'History / reform, not the rule you apply today.' },
+  ],
+
+  bareActPointers: ['BNS Chapter V', 'ss. 63–64', 's. 69', 's. 70'],
+
+  examFrameworks: [
+    {
+      marks: 10,
+      question: 'Explain rape under the BNS.',
+      steps: [
+        's. 63 definition; s. 64 punishment.',
+        'Consent in substance.',
+        'Marital-rape exception + Independent Thought (under 18).',
+        'Do not write 375/376 as current law.',
+      ],
+    },
+    {
+      marks: 16,
+      question: 'Discuss sexual offences in Chapter V BNS, including s. 69 and the fate of IPC 377.',
+      steps: [
+        'Why Chapter V was promoted.',
+        's. 63/64 in detail.',
+        's. 69 as a new offence, distinguished from rape.',
+        's. 70 gang rape.',
+        'Independent Thought; Navtej; Tukaram as history.',
+        'POCSO still applies.',
+        'Hypothetical.',
+        'Current numbering.',
+      ],
+    },
+  ],
+
+  answerSkeleton: [
+    'Introduction — Chapter V.',
+    's. 63/64.',
+    'Consent and Independent Thought.',
+    's. 69 distinguished.',
+    '377 not re-enacted.',
+    'Conclusion.',
+  ],
+
+  revisionPoints: [
+    '63/64 = old 375/376.',
+    '69 is new (deceitful means).',
+    'Independent Thought: wife under 18.',
+    'No BNS 377.',
+  ],
+
+  examTips: [
+    'If the facts are a false promise of marriage, start with s. 69, then ask whether s. 63 is also made out. Do not skip 69.',
+  ],
 }
 
 export default content

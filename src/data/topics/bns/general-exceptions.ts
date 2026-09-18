@@ -1,30 +1,136 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  study: `General exceptions — BNS Chapter III (ss. 14–44)
+  glance:
+    'Chapter III (ss. 14–44) lists circumstances in which nothing is an offence. Private defence (ss. 34–44) is the high-yield cluster. Infancy: s. 20 absolute under 7; s. 21 qualified 7–12.',
 
-Nothing is an offence which is covered by this Chapter. The important heads:
+  study: `Topic at a glance
+General exceptions are complete defences when their conditions are met. They are not mitigations. Mitigations (exceptions to murder) live in s. 101 and drop the killing to s. 105.
 
 Mistake, accident, infancy, unsoundness
-• Mistake of law is no defence; mistake of fact believing yourself bound by law is (s. 14).
-• [[REF:CONCEPT:CRIMINAL-LAW:DOLI-INCAPAX]] — under 7 absolute (s. 20); 7–12 qualified (s. 21).
-• Unsoundness of mind: McNaghten core in s. 22.
+s. 14 — act done by a person bound, or by mistake of fact believing himself bound, by law. Mistake of law is no defence.
+Accident in doing a lawful act with proper care is s. 16.
+[[REF:CONCEPT:CRIMINAL-LAW:DOLI-INCAPAX]]: s. 20 (under 7, conclusive); s. 21 (7–12, maturity of understanding).
+s. 22 — unsoundness of mind (McNaghten core: incapacity to know the nature of the act, or that it is wrong or contrary to law).
 
 Private defence
 Canonical record: [[REF:DOCTRINE:CRIMINAL-LAW:PRIVATE-DEFENCE]].
-• Gateway s. 34.
-• Body-death band s. 38 (including acid).
-• Property-death band s. 41.
-• The right begins with reasonable apprehension and ends when the threat ends.
-• Exceeding it in good faith is Exception 2 to murder, not a free acquittal.
+s. 34 gateway: nothing is an offence which is done in the exercise of the right of private defence.
+s. 35–37 — against how much, and when it starts (reasonable apprehension).
+s. 38 — body, to the causing of death (the old IPC 100 list, including acid).
+s. 41 — property, to the causing of death (house-breaking by night, etc.).
+The right ends when the apprehension ends. Exceeding it in good faith is Exception 2 to murder, not a free acquittal.
 
-Exam focus
-Private defence is a complete defence when within limits. Infancy: under 7 conclusive; 7–12 maturity of understanding.`,
-  examTips: [
-    'Private defence of body to the causing of death = s. 38, not old IPC 100.',
-    's. 20 is absolute. s. 21 is not.',
+Burden
+The prosecution proves the offence. The accused who claims an exception bears the BSA s. 108 burden of that exception — not a burden to prove innocence.
+
+Current-law position
+Cite BNS 14–44, not IPC 76–106, for offences on or after 1 July 2024. Acid in the death-band of private defence of body is a BNS emphasis students should mention.
+
+Educational note
+Open the section-wise lessons for the black-letter of each exception.`,
+
+  provisions: [
+    { actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-20', section: 's. 20', title: 'Act of a child under seven years of age' },
+    { actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-22', section: 's. 22', title: 'Act of a person of unsound mind' },
+    { actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-34', section: 's. 34', title: 'Right of private defence of body and of property' },
+    { actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-38', section: 's. 38', title: 'When the right of private defence of body extends to causing death' },
   ],
-  relatedTopics: ['s-14', 's-20', 's-21', 's-22', 's-34', 's-38', 's-41'],
+
+  examples: [
+    { id: 'ge-ex-1', title: 'Example 1 — simple', description: 'A six-year-old takes a phone from a shop. s. 20: nothing is an offence. There is no “juvenile trial for theft” on these facts under the BNS — the child is doli incapax.' },
+    { id: 'ge-ex-2', title: 'Example 2 — legal', description: 'A is attacked with a knife. A picks up a rod and strikes the attacker on the head, killing him. If the apprehension of death or grievous hurt was reasonable and the right had not ended, s. 38 can be a complete defence. If A chases the fleeing attacker and then kills, the right has ended.' },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'ge-hypo',
+      title: 'Examination hypothetical',
+      facts: 'Thieves break into A’s house at 1 a.m. A, reasonably fearing house-breaking by night, fires once. One thief dies. A then follows the others to the street and shoots again, killing a second man who is running away.',
+      question: 'How many killings, if any, are protected by private defence?',
+      applicableLaw: 's. 34 gateway; s. 41 property-death band (house-breaking by night); the right ends when apprehension ends.',
+      analysis: 'The first shot, during night house-breaking, is inside s. 41 if the apprehension was reasonable. The second shot on the street, against a fleeing man, is the textbook exceeding of the right. Exception 2 to murder may still drop that second killing to s. 105 if A acted in good faith without premeditation and without intending more harm than was necessary — it is not a s. 34 acquittal.',
+      conclusion: 'First death: possible complete defence. Second: likely murder or CHNAM depending on Exception 2. Educational hypothetical.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'ge-def-exc',
+      title: 'Chapter III defence and murder exceptions',
+      left: 'General exceptions (ss. 14–44)',
+      right: 'Exceptions to s. 101',
+      rows: [
+        { point: 'Effect', left: 'Nothing is an offence', right: 'The offence is CHNAM (s. 105), not murder' },
+        { point: 'Example', left: 'Private defence within limits', right: 'Private defence exceeded in good faith' },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    { id: 'ge-trap-1', trap: 'Private defence of body to the causing of death is still IPC 100.', correction: 'Current section is BNS s. 38.' },
+    { id: 'ge-trap-2', trap: 's. 21 (age 7–12) is as absolute as s. 20.', correction: 's. 20 is conclusive. s. 21 depends on maturity of understanding.' },
+  ],
+
+  questionsAndAnswers: [
+    { id: 'ge-qa-1', question: 'When is a child absolutely incapable of an offence under the BNS?', answer: 'Under seven years of age — s. 20.', relatedProvisionIds: ['bns-20'] },
+    { id: 'ge-qa-2', question: 'Which section is the gateway to private defence?', answer: 's. 34. The death-bands are s. 38 (body) and s. 41 (property).', relatedProvisionIds: ['bns-34'] },
+  ],
+
+  relatedTopics: ['doctrine-mens-rea', 'culpable-homicide-murder', 's-20', 's-34', 's-38'],
+
+  cases: [
+    { name: 'Darshan Singh v. State of Punjab', year: 2010, citation: '(2010) 2 SCC 333', holding: 'The right of private defence is a defensive right. It commences with a reasonable apprehension and is not lost merely because the accused caused death, if the statutory conditions are met.', relevance: 'Use with ss. 34 and 38.' },
+  ],
+
+  bareActPointers: ['BNS ss. 14–44', 's. 20', 's. 34', 's. 38', 's. 41'],
+
+  examFrameworks: [
+    {
+      marks: 10,
+      question: 'Explain the right of private defence under the BNS.',
+      steps: [
+        's. 34 gateway.',
+        'When it starts and ends (apprehension).',
+        's. 38 body-death band; s. 41 property.',
+        'Exceeding in good faith is Exception 2, not acquittal.',
+        'One illustration.',
+      ],
+    },
+    {
+      marks: 16,
+      question: 'Discuss general exceptions in Chapter III with special reference to infancy and private defence.',
+      steps: [
+        'What an exception does (complete defence).',
+        'Mistake, accident, unsoundness in outline.',
+        'ss. 20–21 in detail.',
+        'Private defence scheme ss. 34–44.',
+        'Distinction from s. 101 exceptions.',
+        'Hypothetical.',
+        'BSA s. 108 burden of the exception.',
+        'Current numbering.',
+      ],
+    },
+  ],
+
+  answerSkeleton: [
+    'Introduction — Chapter III as complete defences.',
+    'Infancy.',
+    'Private defence structure.',
+    'Limits and exceeding.',
+    'Illustration.',
+    'Conclusion.',
+  ],
+
+  revisionPoints: [
+    's. 20 absolute; s. 21 qualified.',
+    's. 34 gateway; s. 38 body-death; s. 41 property-death.',
+    'Exceeding ≠ acquittal.',
+  ],
+
+  examTips: [
+    'Write s. 38, not IPC 100, for the death-band of private defence of body.',
+  ],
 }
 
 export default content
