@@ -1,4 +1,4 @@
-import type { TopicContent } from './loadTopicContent'
+import type { TopicContent } from './topicTypes'
 import { cpcSectionById, cpcSectionIdFromTopicId } from '../cpc/sections'
 import { cpcOrderById, cpcOrderIdFromTopicId } from '../cpc/orders'
 
@@ -39,7 +39,7 @@ export function synthesizeCpcContent(topicId: string): TopicContent | null {
   const o = cpcOrderById(orderId)
   if (!o) return null
   const cite = `Order ${o.roman} CPC`
-  const study = `${cite} is titled “${o.title}”. Orders in the First Schedule are first-class CPC provisions.\n\n${o.gist}\n\nName the Order and the material Rule. Order XIII-A and Order XV-A apply to specified commercial disputes.`
+  const study = `${cite} is titled “${o.title}”. Orders in the First Schedule are first-class CPC provisions.\n\n${o.gist}\n\nName the Order and the material Rule.`
   const ten = `Introduction. ${cite} deals with ${o.title}.\n\nMeaning. ${o.gist}\n\nWorking rules. Identify the Rules the facts use.\n\nConclusion. Cite ${cite}.`
   const sixteen = `${ten}\n\n16-mark expansion. Place the Order in the life of a suit. Distinguish a neighbour. Apply IRAC.`
   return {
