@@ -16,6 +16,7 @@ export {
 export {
   amendmentEntityId,
   articleEntityId,
+  bnsSectionEntityId,
   caseEntityId,
   decodeKnowledgeId,
   encodeKnowledgeId,

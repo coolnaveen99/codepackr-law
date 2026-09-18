@@ -20,6 +20,7 @@ Implemented foundation:
 - TypeScript validation and production build pass.
 - Reusable legal knowledge graph (`src/data/knowledge`) with canonical IDs, `[[REF:]]` links, and module-load validation.
 - Constitution article-wise Study Topics (120 articles) through the 106th Amendment.
+- BNS section-wise Study Topics (358 sections, 20 chapters) with IPC concordance, knowledge-graph wrap, and dedicated notes for common intention / homicide / sexual offences / converter.
 
 ## Missing Parts
 

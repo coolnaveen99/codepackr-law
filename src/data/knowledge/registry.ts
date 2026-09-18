@@ -1,5 +1,6 @@
-import { articleEntityId, encodeKnowledgeId, ID_RE, topicEntityId } from './ids'
+import { articleEntityId, bnsSectionEntityId, encodeKnowledgeId, ID_RE, topicEntityId } from './ids'
 import { IDS } from './ids'
+import { BNS_KNOWLEDGE } from './bns'
 import { CONCEPTS } from './concepts'
 import { DEFINITIONS } from './definitions'
 import { DOCTRINES } from './doctrines'
@@ -30,6 +31,7 @@ const CANONICAL: CanonicalEntity[] = applyPrimaryHrefs([
   ...MAXIMS,
   ...PRINCIPLES,
   ...PROCEDURES,
+  ...BNS_KNOWLEDGE,
 ])
 
 const ENTITIES: CanonicalEntity[] = [...CANONICAL, ...wrapAll()]
@@ -197,6 +199,14 @@ const TOPIC_KNOWLEDGE_ID: Record<string, string> = {
   amendment: IDS.topicAmendment,
 }
 
+const BNS_TOPIC_KNOWLEDGE_ID: Record<string, string> = {
+  'doctrine-common-intention': IDS.commonIntention,
+  'doctrine-mens-rea': IDS.mensRea,
+  'culpable-homicide-murder': IDS.culpableHomicide,
+  'general-exceptions': IDS.privateDefence,
+  'bns-ipc-map': IDS.procIpcToBns,
+}
+
 export function knowledgeIdForTopic(subjectSlug: string, topicId: string): string | undefined {
   if (subjectSlug === 'constitution') {
     const mapped = TOPIC_KNOWLEDGE_ID[topicId]
@@ -205,6 +215,12 @@ export function knowledgeIdForTopic(subjectSlug: string, topicId: string): strin
     if (articleMatch?.[1]) return articleEntityId(articleMatch[1].toUpperCase())
     const wrapped = topicEntityId(topicId)
     if (BY_ID.has(wrapped)) return wrapped
+  }
+  if (subjectSlug === 'bns') {
+    const mapped = BNS_TOPIC_KNOWLEDGE_ID[topicId]
+    if (mapped) return mapped
+    const sectionMatch = topicId.match(/^s-(\d+[a-z]*)$/i)
+    if (sectionMatch?.[1]) return bnsSectionEntityId(sectionMatch[1])
   }
   return undefined
 }

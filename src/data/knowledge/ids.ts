@@ -46,6 +46,33 @@ export function bnsSectionEntityId(sectionId: string) {
   return makeId("SECTION", "BNS", `SECTION-${sectionId.toUpperCase()}`);
 }
 
+export function bnsCaseEntityId(caseId: string) {
+  if (caseId === "navtej") return caseEntityId("navtej");
+  const slug = BNS_CASE_SLUG[caseId];
+  if (!slug) throw new Error(`Missing canonical BNS case slug for "${caseId}"`);
+  return makeId("CASE", "CRIMINAL-LAW", slug);
+}
+
+export const BNS_CASE_SLUG: Record<string, string> = {
+  govinda: "REGINA-GOVINDA-1876",
+  "virsa-singh": "VIRSA-SINGH-1958",
+  nanavati: "NANAVATI-1962",
+  "bachan-singh": "BACHAN-SINGH-1980",
+  "machhi-singh": "MACHHI-SINGH-1983",
+  "independent-thought": "INDEPENDENT-THOUGHT-2017",
+  "joseph-shine": "JOSEPH-SHINE-2019",
+  kedarnath: "KEDAR-NATH-SINGH-1962",
+  "barendra-kumar": "BARENDRA-KUMAR-GHOSH-1925",
+  "mehboob-shah": "MAHBUB-SHAH-1945",
+  tukaram: "TUKARAM-1979",
+  mukesh: "MUKESH-NIRBHAYA-2017",
+  laxmi: "LAXMI-2014",
+  "pyare-lal": "PYARE-LAL-BHARGAVA-1963",
+  "hira-lal": "HIRA-LAL-2003",
+};
+
+
+
 export function bnsTopicEntityId(topicId: string) {
   return makeId("TOPIC", "CRIMINAL-LAW", `BNS-${topicId.toUpperCase().replace(/[^A-Z0-9]+/g, "-")}`);
 }
@@ -158,4 +185,14 @@ export const IDS = {
   topicFR: makeId("TOPIC", "CONSTITUTIONAL-LAW", "FUNDAMENTAL-RIGHTS"),
   topicDPSP: makeId("TOPIC", "CONSTITUTIONAL-LAW", "DIRECTIVE-PRINCIPLES"),
   topicAmendment: makeId("TOPIC", "CONSTITUTIONAL-LAW", "CONSTITUTIONAL-AMENDMENT"),
+  bns: makeId("STATUTE", "CRIMINAL-LAW", "BHARATIYA-NYAYA-SANHITA"),
+  bnsTopic: makeId("TOPIC", "CRIMINAL-LAW", "BNS"),
+  commonIntention: makeId("DOCTRINE", "CRIMINAL-LAW", "COMMON-INTENTION"),
+  commonObject: makeId("DOCTRINE", "CRIMINAL-LAW", "COMMON-OBJECT"),
+  privateDefence: makeId("DOCTRINE", "CRIMINAL-LAW", "PRIVATE-DEFENCE"),
+  mensRea: makeId("DOCTRINE", "CRIMINAL-LAW", "MENS-REA"),
+  culpableHomicide: makeId("CONCEPT", "CRIMINAL-LAW", "CULPABLE-HOMICIDE"),
+  doliIncapax: makeId("CONCEPT", "CRIMINAL-LAW", "DOLI-INCAPAX"),
+  defChild: makeId("DEFINITION", "CRIMINAL-LAW", "CHILD"),
+  procIpcToBns: makeId("PROCEDURE", "CRIMINAL-LAW", "IPC-TO-BNS"),
 } as const;

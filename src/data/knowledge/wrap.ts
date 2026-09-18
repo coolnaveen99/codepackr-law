@@ -1,11 +1,17 @@
 import { AMENDMENTS } from '../constitution/amendments'
 import { ARTICLES, articleTopicId } from '../constitution/articles'
 import { CASES } from '../constitution/cases'
+import { BNS_CASES } from '../bns/cases'
+import { BNS_SECTIONS, sectionTopicId } from '../bns/sections'
+import { BNS_TOPICS } from '../bns/topics'
 import { SUBJECTS } from '../subjects'
 import {
   IDS,
   amendmentEntityId,
   articleEntityId,
+  bnsCaseEntityId,
+  bnsSectionEntityId,
+  bnsTopicEntityId,
   caseEntityId,
   partEntityId,
   topicEntityId,
@@ -56,6 +62,13 @@ export const PRIMARY_HREF: Record<string, string> = {
   [IDS.topicDPSP]: '/subjects/constitution/dpsp',
   [IDS.topicAmendment]: '/subjects/constitution/amendment',
   [IDS.procAmendment]: '/subjects/constitution/amendment',
+  [IDS.bns]: '/subjects/bns',
+  [IDS.bnsTopic]: '/subjects/bns',
+  [IDS.commonIntention]: '/subjects/bns/doctrine-common-intention',
+  [IDS.mensRea]: '/subjects/bns/doctrine-mens-rea',
+  [IDS.culpableHomicide]: '/subjects/bns/culpable-homicide-murder',
+  [IDS.privateDefence]: '/subjects/bns/general-exceptions',
+  [IDS.procIpcToBns]: '/tool/bns-ipc-mapper',
 }
 
 const SKIP_TOPIC_IDS = new Set([
@@ -160,6 +173,67 @@ export function wrapParts(): CanonicalEntity[] {
   }))
 }
 
+export function wrapBnsSections(): CanonicalEntity[] {
+  return BNS_SECTIONS.map((s) => ({
+    id: bnsSectionEntityId(s.id),
+    type: 'SECTION' as const,
+    category: 'BNS',
+    slug: `SECTION-${s.id.toUpperCase()}`,
+    title: `BNS s. ${s.id} — ${s.title}`,
+    summary: s.gist,
+    tags: [
+      'criminal-law',
+      'bns',
+      `section-${s.id}`,
+      `chapter-${s.chapter}`,
+      kebab(s.cluster),
+      ...(s.ipc ? ['ipc-concordance'] : []),
+      ...s.flags.filter((f) => f !== 'exam'),
+    ],
+    aliases: [
+      `bns ${s.id}`,
+      `section ${s.id} bns`,
+      `s. ${s.id}`,
+      s.title,
+      ...(s.ipc ? [`ipc ${s.ipc}`, `IPC ${s.ipc}`] : []),
+    ],
+    href: `/subjects/bns/${sectionTopicId(s.id)}`,
+    origin: 'wrapped' as const,
+    parent: IDS.bnsTopic,
+  }))
+}
+
+export function wrapBnsTopics(): CanonicalEntity[] {
+  return BNS_TOPICS.map((t) => ({
+    id: bnsTopicEntityId(t.id),
+    type: 'TOPIC' as const,
+    category: 'CRIMINAL-LAW',
+    slug: `BNS-${t.id.toUpperCase().replace(/[^A-Z0-9]+/g, '-')}`,
+    title: t.title,
+    summary: t.blurb,
+    tags: ['criminal-law', 'bns', t.kind === 'cluster' ? 'exam-cluster' : `chapter-${t.id}`],
+    aliases: [t.title, `BNS ${t.title}`],
+    href: '/subjects/bns',
+    origin: 'wrapped' as const,
+    parent: IDS.bnsTopic,
+  }))
+}
+
+export function wrapBnsCases(): CanonicalEntity[] {
+  return BNS_CASES.filter((c) => c.id !== 'navtej').map((c) => ({
+    id: bnsCaseEntityId(c.id),
+    type: 'CASE' as const,
+    category: 'CRIMINAL-LAW',
+    slug: bnsCaseEntityId(c.id).split(':')[2] ?? c.id.toUpperCase(),
+    title: c.name,
+    summary: c.holding,
+    tags: ['criminal-law', 'bns', ...c.sections.map((s) => `section-${s}`)],
+    aliases: [c.name],
+    origin: 'wrapped' as const,
+    sources: [{ title: c.name, citation: c.citation, kind: 'primary' as const }],
+  }))
+}
+
 export function applyPrimaryHrefs(entities: CanonicalEntity[]): CanonicalEntity[] {
   return entities.map((e) => {
     const href = e.href ?? PRIMARY_HREF[e.id]
@@ -174,5 +248,8 @@ export function wrapAll(): CanonicalEntity[] {
     ...wrapAmendments(),
     ...wrapConstitutionTopics(),
     ...wrapParts(),
+    ...wrapBnsSections(),
+    ...wrapBnsTopics(),
+    ...wrapBnsCases(),
   ])
 }

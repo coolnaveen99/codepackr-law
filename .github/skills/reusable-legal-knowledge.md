@@ -18,6 +18,7 @@ One legal concept → one canonical entity → stable ID → meaningful tags →
 |-------|------|------|
 | Canonical graph | `src/data/knowledge/` | Doctrines, concepts, maxims, definitions, principles, procedures, hub topics, relationships, validation |
 | Constitution articles | `src/data/constitution/articles.ts` | Article digest reused as article-wise Study Topics |
+| BNS sections | `src/data/bns/sections.ts` | Section digest reused as section-wise Study Topics |
 | Landmark cases | `src/data/constitution/cases.ts` | Wrapped as `CASE:CONSTITUTIONAL-LAW:…` |
 | Amendments 1–106 | `src/data/constitution/amendments.ts` | Wrapped as `STATUTE:CONSTITUTION:AMENDMENT-N` |
 | Study Topic pages | `src/data/topics/<slug>/<id>.ts` | Page-specific study body. Reference canonical IDs; do not copy a doctrine essay |

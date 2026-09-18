@@ -1,10 +1,14 @@
 import { AMENDMENTS } from '../constitution/amendments'
 import { ARTICLES, articleById } from '../constitution/articles'
 import { CASES } from '../constitution/cases'
+import { BNS_CASES } from '../bns/cases'
+import { BNS_SECTIONS } from '../bns/sections'
 import {
   IDS,
   amendmentEntityId,
   articleEntityId,
+  bnsCaseEntityId,
+  bnsSectionEntityId,
   caseEntityId,
   partEntityId,
 } from './ids'
@@ -207,6 +211,26 @@ const CURATED: KnowledgeRelation[] = [
   R(IDS.pleasure, 'related-article', articleEntityId('75')),
   R(IDS.defExistingLaw, 'related-article', articleEntityId('13')),
   R(IDS.defExistingLaw, 'related-doctrine', IDS.eclipse),
+
+  R(IDS.bns, 'related-topic', IDS.bnsTopic),
+  R(IDS.bns, 'see-also', IDS.procIpcToBns),
+  R(IDS.commonIntention, 'related-section', bnsSectionEntityId('3')),
+  R(IDS.commonIntention, 'see-also', IDS.commonObject),
+  R(IDS.commonIntention, 'related-doctrine', IDS.mensRea),
+  R(IDS.commonObject, 'related-section', bnsSectionEntityId('190')),
+  R(IDS.commonObject, 'see-also', IDS.commonIntention),
+  R(IDS.privateDefence, 'related-section', bnsSectionEntityId('34')),
+  R(IDS.privateDefence, 'related-section', bnsSectionEntityId('38')),
+  R(IDS.privateDefence, 'related-section', bnsSectionEntityId('41')),
+  R(IDS.culpableHomicide, 'related-section', bnsSectionEntityId('100')),
+  R(IDS.culpableHomicide, 'related-section', bnsSectionEntityId('101')),
+  R(IDS.culpableHomicide, 'related-section', bnsSectionEntityId('103')),
+  R(IDS.culpableHomicide, 'related-section', bnsSectionEntityId('105')),
+  R(IDS.doliIncapax, 'related-section', bnsSectionEntityId('20')),
+  R(IDS.doliIncapax, 'related-section', bnsSectionEntityId('21')),
+  R(IDS.defChild, 'related-section', bnsSectionEntityId('2')),
+  R(IDS.procIpcToBns, 'related-statute', IDS.bns),
+  R(IDS.mensRea, 'related-doctrine', IDS.commonIntention),
 ]
 
 function autoFromCases(): KnowledgeRelation[] {
@@ -235,8 +259,25 @@ function autoFromArticles(): KnowledgeRelation[] {
   return out
 }
 
+function autoFromBns(): KnowledgeRelation[] {
+  const out: KnowledgeRelation[] = []
+  for (const s of BNS_SECTIONS) {
+    const sid = bnsSectionEntityId(s.id)
+    for (const related of s.related) {
+      out.push(R(sid, 'related-section', bnsSectionEntityId(related)))
+    }
+  }
+  for (const c of BNS_CASES) {
+    const cid = bnsCaseEntityId(c.id)
+    for (const sectionId of c.sections) {
+      out.push(R(bnsSectionEntityId(sectionId), 'interpreted-by', cid))
+    }
+  }
+  return out
+}
+
 export function allRelations(): KnowledgeRelation[] {
-  const raw = [...CURATED, ...autoFromCases(), ...autoFromArticles()]
+  const raw = [...CURATED, ...autoFromCases(), ...autoFromArticles(), ...autoFromBns()]
   const seen = new Set<string>()
   const out: KnowledgeRelation[] = []
   for (const r of raw) {

@@ -6,6 +6,8 @@
  * Full notes: src/data/topics/<slug>/<id>.ts (lazy-loaded)
  */
 
+import { BNS_SECTIONS } from './bns/sections'
+
 export type SubjectPriority = 'high' | 'medium' | 'low'
 
 export type TopicType = 'theme' | 'article' | 'section' | 'chapter' | 'doctrine' | 'act' | 'format'
@@ -47,6 +49,28 @@ export interface LawSubjectMeta {
   icon: string
   topics: LawTopic[]
   mcqSubjectKey?: string
+}
+
+function bnsSectionTopics(): LawTopic[] {
+  return BNS_SECTIONS.map((s) => ({
+    id: `s-${s.id.toLowerCase()}`,
+    name: `Section ${s.id} — ${s.title}`,
+    type: 'section' as const,
+    range: `s. ${s.id}`,
+    cluster: s.cluster,
+    note: s.flags.includes('new')
+      ? 'New — no IPC predecessor'
+      : s.ipc
+        ? `IPC ${s.ipc}`
+        : undefined,
+    keywords: [
+      `section ${s.id}`,
+      `bns ${s.id}`,
+      s.title.toLowerCase().slice(0, 48),
+      ...(s.ipc ? [`ipc ${s.ipc}`] : []),
+    ],
+    highYield: s.flags.includes('exam'),
+  }))
 }
 
 export const SUBJECTS: LawSubjectMeta[] = [
@@ -250,8 +274,8 @@ export const SUBJECTS: LawSubjectMeta[] = [
     priority: 'high',
     aibeQuestions: 8,
     bareActs: ['Bharatiya Nyaya Sanhita, 2023', 'Indian Penal Code, 1860 (legacy)'],
-    description: 'General principles, offences against body and property, and key BNS sections with IPC mapping.',
-    keywords: ['bns', 'ipc', 'offences', 'murder', 'theft', 'criminal law'],
+    description: 'Section-wise BNS 2023 study (358 sections, 20 chapters) with IPC mapping, through current law as of 1 July 2024 (s. 106(2) excepted).',
+    keywords: ['bns', 'ipc', 'offences', 'murder', 'theft', 'criminal law', 'section 103', 'section 64'],
     icon: 'Shield',
     mcqSubjectKey: 'bns',
     topics: [
@@ -265,6 +289,7 @@ export const SUBJECTS: LawSubjectMeta[] = [
       { id: 'bns-ipc-map', name: 'BNS ↔ IPC Key Mapping', type: 'theme', note: 'Use BNS–IPC mapper tool', keywords: ['mapper', 'ipc', 'bns'], highYield: true },
       { id: 'doctrine-mens-rea', name: 'Doctrine of Mens Rea', type: 'doctrine', note: 'Guilty mind; presumption and statutory offences', keywords: ['mens rea'], highYield: true },
       { id: 'doctrine-common-intention', name: 'Doctrine of Common Intention', type: 'doctrine', note: 'S. 3(5) BNS / S. 34 IPC — joint liability', keywords: ['common intention', 'section 34'], highYield: true },
+      ...bnsSectionTopics(),
     ],
   },
   {

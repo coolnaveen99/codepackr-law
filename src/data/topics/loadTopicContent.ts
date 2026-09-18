@@ -10,6 +10,10 @@
 
 import type { CaseCitation } from '../subjects'
 import { articleById, articleIdFromTopicId } from '../constitution/articles'
+import { bnsCasesForSection } from '../bns/cases'
+import { bnsChapterById } from '../bns/chapters'
+import { bnsLessonFor } from '../bns/lessons'
+import { bnsSectionById, sectionIdFromTopicId } from '../bns/sections'
 
 export interface TopicSection {
   id: string
@@ -121,6 +125,75 @@ function synthesizeArticleContent(articleId: string): TopicContent | null {
   }
 }
 
+function synthesizeBnsSectionContent(sectionId: string): TopicContent | null {
+  const section = bnsSectionById(sectionId)
+  if (!section) return null
+
+  const lesson = bnsLessonFor(sectionId)
+  const chapter = bnsChapterById(section.chapter)
+  const cases = bnsCasesForSection(sectionId)
+  const ipcLine = section.flags.includes('new')
+    ? 'New provision — no IPC predecessor.'
+    : section.ipc
+      ? `IPC predecessor: ${section.ipc}.`
+      : ''
+
+  const study = [
+    `BNS Section ${section.id} — ${section.title}`,
+    lesson?.plain ?? section.gist,
+    chapter ? `\nChapter ${chapter.roman} — ${chapter.title}` : '',
+    ipcLine ? `\n${ipcLine}` : '',
+    section.punishment ? `\nPunishment\n${section.punishment}` : '',
+    lesson?.points?.length ? `\nStudy points\n${lesson.points.map((p) => `• ${p}`).join('\n')}` : '',
+    lesson?.exam ? `\nExam focus\n${lesson.exam}` : '',
+    section.related.length
+      ? `\nRelated sections: ${section.related.map((id) => `s. ${id}`).join(', ')}.`
+      : '',
+    '\nCite the BNS number for offences on or after 1 July 2024. Offences before that date remain IPC offences (s. 358 + Article 20(1)). Educational notes — always cross-check India Code.',
+  ]
+    .filter(Boolean)
+    .join('\n')
+
+  return {
+    study,
+    provisions: [
+      {
+        actId: 'bns',
+        actName: 'Bharatiya Nyaya Sanhita, 2023',
+        provisionId: `bns-section-${section.id}`,
+        section: `s. ${section.id}`,
+        title: section.title,
+      },
+    ],
+    cases: cases.map((c) => ({
+      name: c.name,
+      year: c.year,
+      citation: c.citation,
+      holding: c.holding,
+    })),
+    questionsAndAnswers: lesson?.quiz
+      ? [
+          {
+            id: `bns-${section.id}-q1`,
+            question: lesson.quiz.prompt,
+            answer: lesson.quiz.choices[lesson.quiz.answer] ?? '',
+            explanation: lesson.quiz.explain,
+          },
+        ]
+      : undefined,
+    examTips: [
+      `Cite BNS s. ${section.id}, not the old IPC number, for post-1 July 2024 facts.`,
+      ...(lesson?.exam ? [lesson.exam] : []),
+      'Use related doctrines and cases from the knowledge graph rather than rewriting them here.',
+    ],
+    bareActPointers: [
+      `BNS s. ${section.id}`,
+      chapter ? `Chapter ${chapter.roman}` : '',
+      section.ipc ? `IPC ${section.ipc}` : '',
+    ].filter(Boolean),
+  }
+}
+
 function hasStudyBody(content: TopicContent): boolean {
   return (
     typeof content.study === 'string' ||
@@ -179,6 +252,17 @@ export async function loadTopicContent(
     }
   }
 
+  if (subjectSlug === 'bns') {
+    const sectionId = sectionIdFromTopicId(topicId)
+    if (sectionId) {
+      const synthesized = synthesizeBnsSectionContent(sectionId)
+      if (synthesized) {
+        cache.set(key, synthesized)
+        return synthesized
+      }
+    }
+  }
+
   return null
 }
 
@@ -188,6 +272,10 @@ export function hasTopicContentFile(subjectSlug: string, topicId: string): boole
   if (subjectSlug === 'constitution') {
     const articleId = articleIdFromTopicId(topicId)
     return Boolean(articleId && articleById(articleId))
+  }
+  if (subjectSlug === 'bns') {
+    const sectionId = sectionIdFromTopicId(topicId)
+    return Boolean(sectionId && bnsSectionById(sectionId))
   }
   return false
 }

@@ -16,6 +16,8 @@
 
 Constitution article-wise topics (`art-14`, `art-368`, …) are registered in `subjects.ts`. Dedicated notes files override the article catalog; otherwise `loadTopicContent` synthesises the Study Topic from `src/data/constitution/articles.ts`.
 
+BNS section-wise topics (`s-1` … `s-358`) are generated from `src/data/bns/sections.ts`. Dedicated notes override; otherwise `loadTopicContent` synthesises from the section catalog + lesson bank.
+
 **Product rule:** Do **not** create separate Short Version / Detailed Version UI. One Study Topic reader only. Prefer the `study` field; `detailed` then `short` remain legacy fallbacks.
 
 ## Topic types

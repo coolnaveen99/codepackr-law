@@ -51,11 +51,20 @@ export function SubjectDetail({
     : subject.topics
 
   const articleTopics = topics.filter((t) => t.type === 'article')
+  const sectionTopics = topics.filter((t) => t.type === 'section')
   const showArticleGroups = subject.slug === 'constitution' && articleTopics.length > 0 && !q
-  const highYield = topics.filter((t) => t.highYield && !(showArticleGroups && t.type === 'article'))
+  const showSectionGroups = subject.slug === 'bns' && sectionTopics.length > 0 && !q
+  const groupedProvision = showArticleGroups || showSectionGroups
+  const highYield = topics.filter(
+    (t) =>
+      t.highYield &&
+      !(showArticleGroups && t.type === 'article') &&
+      !(showSectionGroups && t.type === 'section'),
+  )
   const rest = topics.filter((t) => !t.highYield)
-  const themeTopics = topics.filter((t) => t.type !== 'article')
-  const articleClusters = showArticleGroups ? groupByCluster(articleTopics) : []
+  const themeTopics = topics.filter((t) => t.type !== 'article' && t.type !== 'section')
+  const articleClusters = showArticleGroups ? groupByCluster(articleTopics, 'Other articles') : []
+  const sectionClusters = showSectionGroups ? groupByCluster(sectionTopics, 'Other sections') : []
 
 
   return (
@@ -115,7 +124,7 @@ export function SubjectDetail({
         </section>
       )}
 
-      {showArticleGroups && themeTopics.filter((t) => !t.highYield).length > 0 && (
+      {groupedProvision && themeTopics.filter((t) => !t.highYield).length > 0 && (
         <section className="space-y-3">
           <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-200">
             Study themes & doctrines
@@ -148,7 +157,28 @@ export function SubjectDetail({
         </section>
       )}
 
-      {!showArticleGroups && rest.length > 0 && (
+      {showSectionGroups && (
+        <section className="space-y-5">
+          <div>
+            <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-200">
+              Section-wise lessons ({sectionTopics.length})
+            </h3>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+              Learn each BNS section on its own page. IPC mapping, doctrines and cases are reused from the knowledge graph — not copied.
+            </p>
+          </div>
+          {sectionClusters.map((group) => (
+            <div key={group.name} className="space-y-2">
+              <h4 className="text-xs font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-400">
+                {group.name}
+              </h4>
+              <TopicList topics={group.topics} onSelectTopic={onSelectTopic} />
+            </div>
+          ))}
+        </section>
+      )}
+
+      {!groupedProvision && rest.length > 0 && (
         <section className="space-y-3">
           <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-200">
             All topics ({rest.length + (highYield.length && q ? 0 : 0)})
@@ -176,11 +206,14 @@ export function SubjectDetail({
   )
 }
 
-function groupByCluster(topics: LawTopic[]): { name: string; topics: LawTopic[] }[] {
+function groupByCluster(
+  topics: LawTopic[],
+  fallback = 'Other',
+): { name: string; topics: LawTopic[] }[] {
   const order: string[] = []
   const map = new Map<string, LawTopic[]>()
   for (const topic of topics) {
-    const name = topic.cluster || 'Other articles'
+    const name = topic.cluster || fallback
     if (!map.has(name)) {
       map.set(name, [])
       order.push(name)
