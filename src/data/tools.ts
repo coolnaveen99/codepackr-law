@@ -82,4 +82,16 @@ export const TOOLS: ToolMetadata[] = [
     priority: 7,
     featured: true,
   },
+  {
+    id: 'knowledge-graph',
+    slug: 'knowledge',
+    name: 'Reusable Legal Knowledge',
+    category: 'reference',
+    description: 'Canonical doctrines, concepts, maxims, definitions and procedures — one record each, reused across Constitution articles and study topics.',
+    keywords: ['doctrine', 'basic structure', 'golden triangle', 'knowledge graph', 'article 21', 'legal maxim', 'constitution'],
+    icon: 'Network',
+    badge: 'Architecture',
+    priority: 8,
+    featured: true,
+  },
 ]

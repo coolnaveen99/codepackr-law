@@ -50,8 +50,13 @@ export function SubjectDetail({
       })
     : subject.topics
 
-  const highYield = topics.filter((t) => t.highYield)
+  const articleTopics = topics.filter((t) => t.type === 'article')
+  const showArticleGroups = subject.slug === 'constitution' && articleTopics.length > 0 && !q
+  const highYield = topics.filter((t) => t.highYield && !(showArticleGroups && t.type === 'article'))
   const rest = topics.filter((t) => !t.highYield)
+  const themeTopics = topics.filter((t) => t.type !== 'article')
+  const articleClusters = showArticleGroups ? groupByCluster(articleTopics) : []
+
 
   return (
     <div className="space-y-8 max-w-4xl">
@@ -110,7 +115,40 @@ export function SubjectDetail({
         </section>
       )}
 
-      {rest.length > 0 && (
+      {showArticleGroups && themeTopics.filter((t) => !t.highYield).length > 0 && (
+        <section className="space-y-3">
+          <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-200">
+            Study themes & doctrines
+          </h3>
+          <TopicList
+            topics={themeTopics.filter((t) => !t.highYield)}
+            onSelectTopic={onSelectTopic}
+          />
+        </section>
+      )}
+
+      {showArticleGroups && (
+        <section className="space-y-5">
+          <div>
+            <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-200">
+              Article-wise lessons ({articleTopics.length})
+            </h3>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+              Learn each article on its own page. Related doctrines and cases are reused from the knowledge graph — not copied.
+            </p>
+          </div>
+          {articleClusters.map((group) => (
+            <div key={group.name} className="space-y-2">
+              <h4 className="text-xs font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-400">
+                {group.name}
+              </h4>
+              <TopicList topics={group.topics} onSelectTopic={onSelectTopic} />
+            </div>
+          ))}
+        </section>
+      )}
+
+      {!showArticleGroups && rest.length > 0 && (
         <section className="space-y-3">
           <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-200">
             All topics ({rest.length + (highYield.length && q ? 0 : 0)})
@@ -136,6 +174,20 @@ export function SubjectDetail({
       )}
     </div>
   )
+}
+
+function groupByCluster(topics: LawTopic[]): { name: string; topics: LawTopic[] }[] {
+  const order: string[] = []
+  const map = new Map<string, LawTopic[]>()
+  for (const topic of topics) {
+    const name = topic.cluster || 'Other articles'
+    if (!map.has(name)) {
+      map.set(name, [])
+      order.push(name)
+    }
+    map.get(name)!.push(topic)
+  }
+  return order.map((name) => ({ name, topics: map.get(name)! }))
 }
 
 function TopicList({

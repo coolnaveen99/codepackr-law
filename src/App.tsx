@@ -11,6 +11,7 @@ import {
   ArrowRight,
   BookOpen,
   Library,
+  Network,
 } from 'lucide-react'
 import { TOOLS } from './data/tools'
 import { ToolMetadata, ToolCategory } from './types'
@@ -22,6 +23,7 @@ import {
   setTopicUrl,
   setHomeUrl,
   setCaseLawUrl,
+  setKnowledgeUrl,
   migrateHashToPath,
 } from './lib/urls'
 import { setPageMeta, SITE_NAME, SITE_TAGLINE } from './lib/seo'
@@ -45,6 +47,8 @@ import { ExamTimer } from './components/tools/ExamTimer'
 import { LegalMaximsTool } from './components/tools/LegalMaximsTool'
 import { LandmarkCasesTool } from './components/tools/LandmarkCasesTool'
 import { CaseLawLibrary } from './components/tools/CaseLawLibrary'
+import { KnowledgeBrowser } from './components/knowledge/KnowledgeBrowser'
+import { encodeKnowledgeId } from './data/knowledge'
 
 export default function App() {
   const [dark, setDark] = useState(() => {
@@ -123,6 +127,15 @@ export default function App() {
       })
       return
     }
+    if (route.type === 'knowledge') {
+      setPageMeta({
+        title: route.entityId ? `Legal Knowledge | ${SITE_NAME}` : `Reusable Legal Knowledge | ${SITE_NAME}`,
+        description:
+          'Canonical Indian legal doctrines, concepts, maxims, definitions and procedures. One record each, reused across Constitution study topics.',
+        path: route.entityId ? `/knowledge/${route.entityId}` : '/knowledge',
+      })
+      return
+    }
     if (route.type === 'subjects') {
       setPageMeta({
         title: `All Subjects — AIBE & Judiciary | ${SITE_NAME}`,
@@ -176,6 +189,12 @@ export default function App() {
       window.scrollTo({ top: 0, behavior: 'smooth' })
       return
     }
+    if (slug === 'knowledge') {
+      setKnowledgeUrl()
+      setRoute({ type: 'knowledge' })
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      return
+    }
     setToolUrl(slug)
     setRoute({ type: 'tool', slug })
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -192,6 +211,13 @@ export default function App() {
   const handleOpenJudgment = (judgmentId?: string) => {
     setCaseLawUrl(judgmentId)
     setRoute({ type: 'case-law', ...(judgmentId ? { judgmentId } : {}) })
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const handleOpenKnowledge = (entityId?: string) => {
+    const encoded = entityId ? encodeKnowledgeId(entityId) : undefined
+    setKnowledgeUrl(encoded)
+    setRoute({ type: 'knowledge', ...(encoded ? { entityId: encoded } : {}) })
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
@@ -233,6 +259,8 @@ export default function App() {
       ? activeTool?.name
       : route.type === 'case-law'
         ? route.judgmentId ? 'Judgment Reader' : 'Case Law Library'
+      : route.type === 'knowledge'
+        ? 'Knowledge'
       : route.type === 'subjects'
         ? 'Subjects'
         : route.type === 'subject'
@@ -275,6 +303,8 @@ export default function App() {
         return <Scale className={className} />
       case 'Library':
         return <Library className={className} />
+      case 'Network':
+        return <Network className={className} />
       default:
         return <BookOpenCheck className={className} />
     }
@@ -297,7 +327,7 @@ export default function App() {
           currentLabel={headerLabel}
           onBackToHome={handleBackToHome}
           onOpenSubjects={handleOpenSubjects}
-          showSubjectsLink={route.type === 'home' || route.type === 'tool'}
+          showSubjectsLink={route.type === 'home' || route.type === 'tool' || route.type === 'knowledge'}
         />
 
         <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-8">
@@ -306,6 +336,13 @@ export default function App() {
               judgmentId={route.judgmentId}
               onOpenJudgment={handleOpenJudgment}
               onBackToLibrary={() => handleOpenJudgment()}
+            />
+          )}
+          {route.type === 'knowledge' && (
+            <KnowledgeBrowser
+              entityId={route.entityId}
+              onBack={() => handleOpenKnowledge()}
+              onOpenEntity={(id) => handleOpenKnowledge(id)}
             />
           )}
           {route.type === 'tool' && activeTool && (

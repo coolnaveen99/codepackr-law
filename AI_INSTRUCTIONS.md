@@ -34,6 +34,7 @@ Single source of truth for any AI (or human) building or extending **Codepackr L
 5. **Quality Gate Mandatory** — `.github/skills/tool-quality-gate.md` must be fully green.
 6. **India-Focused Content** — Prioritise AIBE, State Judiciary, new criminal laws (BNS, BNSS, BSA), Constitution, CPC, Contract, Family Law.
 7. **Lazy topic notes** — Full topic learning text must live in `src/data/topics/<subjectSlug>/<topicId>.ts`, never in `subjects.ts`.
+8. **Reusable legal knowledge** — Search `src/data/knowledge` before creating any doctrine, case, article, maxim, definition, principle, or procedure. Reuse the canonical ID. Never duplicate canonical explanations. Follow `docs/reusable-legal-knowledge-architecture.md`.
 
 ---
 
@@ -42,9 +43,11 @@ Single source of truth for any AI (or human) building or extending **Codepackr L
 1. `.github/copilot-instructions.md`
 2. `.github/skills/add-new-tool.md`
 3. `.github/skills/add-topic-notes.md` — **required before adding any short/detailed topic content**
-4. `.github/skills/tool-quality-gate.md`
-5. `CONTRIBUTING.md`
-6. This file (`AI_INSTRUCTIONS.md`)
+4. `.github/skills/reusable-legal-knowledge.md` — **required before creating reusable legal records**
+5. `.github/skills/tool-quality-gate.md`
+6. `docs/reusable-legal-knowledge-architecture.md`
+7. `CONTRIBUTING.md`
+8. This file (`AI_INSTRUCTIONS.md`)
 
 ---
 
@@ -62,6 +65,8 @@ src/
 │   ├── subjects.ts      # Subject + topic METADATA only (no full notes)
 │   ├── questions/       # Static MCQ banks
 │   ├── reference/       # Maxims, landmark cases (reference tools)
+│   ├── constitution/    # Article digest, cases, amendments 1–106
+│   ├── knowledge/       # Canonical graph (doctrines, concepts, maxims, validation)
 │   └── topics/          # Full learning notes — one file per topic (lazy-loaded)
 │       ├── loadTopicContent.ts
 │       ├── constitution/
@@ -183,6 +188,7 @@ Topic notes are done when the file exists under `topics/`, matches `TopicContent
 - Never change the brand color away from blue `#2563eb`.
 - Never ship incomplete tools.
 - **Never put full topic essays into `subjects.ts`** — use `src/data/topics/` only.
-- When in doubt, re-read this file, `.github/skills/add-new-tool.md`, and `.github/skills/add-topic-notes.md`.
+- **Never duplicate canonical legal knowledge.** Search `src/data/knowledge` first. If Basic Structure (or any doctrine/case/article) already exists, reference `[[REF:DOCTRINE:CONSTITUTIONAL-LAW:BASIC-STRUCTURE]]` instead of rewriting it.
+- When in doubt, re-read this file, `.github/skills/add-new-tool.md`, `.github/skills/add-topic-notes.md`, and `.github/skills/reusable-legal-knowledge.md`.
 
 Build carefully. Protect privacy. Serve Indian law students well.

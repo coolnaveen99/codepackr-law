@@ -27,6 +27,12 @@ All tools run **100% client-side**. Your practice data never leaves your device.
 - **Legal Maxims Quiz & Dictionary** (`#/tool/legal-maxims`): Searchable Latin legal maxims dictionary with English translations, applications, and an interactive quiz mode.
 - **Landmark Case Laws Flashcards** (`#/tool/landmark-cases`): Foundational Supreme Court of India precedents (*Kesavananda Bharati*, *Maneka Gandhi*, *Puttaswamy*, *Lalita Kumari*, *D.K. Basu*, *Shreya Singhal*, *Shayara Bano*), ratio decidendi, bench details, and exam significance.
 - **Case Law Library & Judgment Reader** (`/case-law`): Searchable judgment library with structured facts, issues, provisions, arguments, reasoning, decision, ratio, exam points, related cases, browser-only bookmarks/progress, and judgment-specific MCQs. Original documents are explicitly separated and loaded only on request.
+- **Reusable Legal Knowledge** (`/knowledge`): Canonical doctrines, concepts, maxims, definitions and procedures (Basic Structure, golden triangle, audi alteram partem, …). Constitution article pages reuse these records instead of duplicating them.
+
+### 5. Constitution of India (through 106th Amendment)
+- **Article-wise lessons** under Subjects → Constitutional Law: 120 article Study Topics (Arts 1, 12–32, 368, 330A, 106th Amendment notes, …).
+- Dedicated high-yield notes for Arts 14, 19, 21 and writs; remaining articles synthesise from the article catalog plus the knowledge graph.
+- Amendment topic updated to the **106th Amendment (2023)** — Nari Shakti Vandan Adhiniyam (women’s reservation; quota after delimitation).
 
 > All content and practice data stay on the user’s device. No accounts required for core tools.
 
@@ -81,8 +87,10 @@ Stack: React 18 + TypeScript + Vite + Tailwind CSS v4.
 1. [CONTRIBUTING.md](CONTRIBUTING.md)
 2. [AI_INSTRUCTIONS.md](AI_INSTRUCTIONS.md) — Complete AI / builder guide
 3. [`.github/copilot-instructions.md`](.github/copilot-instructions.md)
-4. [`.github/skills/add-new-tool.md`](.github/skills/add-new-tool.md)
-5. [`.github/skills/tool-quality-gate.md`](.github/skills/tool-quality-gate.md)
+5. [`.github/skills/add-new-tool.md`](.github/skills/add-new-tool.md)
+6. [`.github/skills/reusable-legal-knowledge.md`](.github/skills/reusable-legal-knowledge.md)
+7. [`docs/reusable-legal-knowledge-architecture.md`](docs/reusable-legal-knowledge-architecture.md)
+8. [`.github/skills/tool-quality-gate.md`](.github/skills/tool-quality-gate.md)
 
 Key rules:
 - 100% client-side only

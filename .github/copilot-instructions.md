@@ -12,5 +12,6 @@ You are working on **Codepackr Law** (`law.codepackr.com`) — a 100% privacy-fi
 4. **Quality Gate** — `.github/skills/tool-quality-gate.md` must pass fully.
 5. **India Focus** — Prioritise AIBE, Judiciary, BNS/BNSS/BSA, Constitution, CPC.
 6. **Lazy topic notes** — Full learning text goes in `src/data/topics/<subjectSlug>/<topicId>.ts` only. Metadata stays in `subjects.ts`. Never dump full essays into the main subjects registry (keeps the bundle small for 1000+ topics).
+7. **Reusable legal knowledge** — Before creating a doctrine, case, article, maxim, definition, or procedure, search `src/data/knowledge` and reuse the canonical ID. Architecture: `docs/reusable-legal-knowledge-architecture.md`. Skill: `.github/skills/reusable-legal-knowledge.md`.
 
-See `AI_INSTRUCTIONS.md` and `.github/skills/` (including `add-topic-notes.md`) for the full process.
+See `AI_INSTRUCTIONS.md` and `.github/skills/` (including `add-topic-notes.md` and `reusable-legal-knowledge.md`) for the full process.

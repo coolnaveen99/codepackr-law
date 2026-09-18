@@ -18,6 +18,8 @@ Implemented foundation:
 - Exam mode supports question counts, configurable time limits, countdown, and timeout submission.
 - Case Law Library and Judgment Reader MVP are available.
 - TypeScript validation and production build pass.
+- Reusable legal knowledge graph (`src/data/knowledge`) with canonical IDs, `[[REF:]]` links, and module-load validation.
+- Constitution article-wise Study Topics (120 articles) through the 106th Amendment.
 
 ## Missing Parts
 

@@ -13,7 +13,10 @@ All practice and study tools execute strictly in the user’s browser. Zero data
 Supporting files:
 - `.github/copilot-instructions.md`
 - `.github/skills/add-new-tool.md`
+- `.github/skills/add-topic-notes.md`
+- `.github/skills/reusable-legal-knowledge.md`
 - `.github/skills/tool-quality-gate.md`
+- `docs/reusable-legal-knowledge-architecture.md`
 - `CONTRIBUTING.md`
 
 ---
@@ -34,3 +37,4 @@ Supporting files:
 3. Quality Gate must be fully green.
 4. Blue brand only.
 5. Prioritise AIBE / Judiciary / new criminal laws (BNS, BNSS, BSA).
+6. Reusable legal knowledge is a repository-wide rule: search `src/data/knowledge` first, reuse the canonical ID, never duplicate a doctrine/case/article explanation. See `.github/skills/reusable-legal-knowledge.md`.

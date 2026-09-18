@@ -4,7 +4,9 @@
  *   /tool/<slug>           tool
  *   /subjects              all subjects
  *   /subjects/<slug>       one subject
- *   /subjects/<slug>/<id>  topic
+ *   /knowledge             reusable legal knowledge index
+ *   /knowledge/<id>        canonical knowledge entity (TYPE~CATEGORY~SLUG)
+
  *
  * Old hash URLs (#/tool/..., #/subjects/...) are redirected once on load.
  */
@@ -16,6 +18,7 @@ export type AppRoute =
   | { type: 'subjects' }
   | { type: 'subject'; slug: string }
   | { type: 'topic'; subjectSlug: string; topicId: string }
+  | { type: 'knowledge'; entityId?: string }
 
 function normalizePath(pathname: string): string {
   if (!pathname || pathname === '/') return '/'
@@ -33,6 +36,10 @@ export function parsePathname(pathname: string): AppRoute {
   if (judgmentMatch) return { type: 'case-law', judgmentId: judgmentMatch[1] }
 
   if (path === '/case-law') return { type: 'case-law' }
+
+  const knowledgeMatch = path.match(/^\/knowledge\/([^/]+)$/i)
+  if (knowledgeMatch) return { type: 'knowledge', entityId: knowledgeMatch[1] }
+  if (path === '/knowledge') return { type: 'knowledge' }
 
   const topicMatch = path.match(/^\/subjects\/([a-z0-9-]+)\/([a-z0-9-]+)$/i)
   if (topicMatch) return { type: 'topic', subjectSlug: topicMatch[1], topicId: topicMatch[2] }
@@ -93,6 +100,10 @@ export function setTopicUrl(subjectSlug: string, topicId: string) {
   navigate(`/subjects/${subjectSlug}/${topicId}`)
 }
 
+export function setKnowledgeUrl(entityId?: string) {
+  navigate(entityId ? `/knowledge/${entityId}` : '/knowledge')
+}
+
 export function setHomeUrl() {
   navigate('/')
 }
@@ -110,6 +121,7 @@ export function migrateHashToPath(): boolean {
   let path = '/'
   if (route.type === 'tool') path = `/tool/${route.slug}`
   else if (route.type === 'case-law') path = route.judgmentId ? `/case-law/judgment/${route.judgmentId}` : '/case-law'
+  else if (route.type === 'knowledge') path = route.entityId ? `/knowledge/${route.entityId}` : '/knowledge'
   else if (route.type === 'subjects') path = '/subjects'
   else if (route.type === 'subject') path = `/subjects/${route.slug}`
   else if (route.type === 'topic') path = `/subjects/${route.subjectSlug}/${route.topicId}`

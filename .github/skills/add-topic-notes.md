@@ -6,10 +6,15 @@
 
 | Layer | Location | What goes here |
 |-------|----------|----------------|
-| Metadata only | `src/data/subjects.ts` | id, name, type, range, note, keywords, highYield |
+| Metadata only | `src/data/subjects.ts` | id, name, type, range, note, keywords, highYield, cluster |
 | Full notes | `src/data/topics/<subjectSlug>/<topicId>.ts` | `study` (preferred) or legacy `detailed`/`short`, plus sections, provisions, Q&A, cases, bareActPointers, examTips |
+| Canonical graph | `src/data/knowledge/` | Reusable doctrines / cases / articles. Search here first. |
 
 **Never** put study body / `short` / `detailed` / `cases` / `examTips` into `subjects.ts`.
+
+**Never** copy a canonical doctrine or case essay into a topic file. Use `[[REF:TYPE:CATEGORY:SLUG]]` and the related-knowledge panel.
+
+Constitution article-wise topics (`art-14`, `art-368`, …) are registered in `subjects.ts`. Dedicated notes files override the article catalog; otherwise `loadTopicContent` synthesises the Study Topic from `src/data/constitution/articles.ts`.
 
 **Product rule:** Do **not** create separate Short Version / Detailed Version UI. One Study Topic reader only. Prefer the `study` field; `detailed` then `short` remain legacy fallbacks.
 
@@ -39,6 +44,7 @@ Examples of format topic ids: `format-writ-petition`, `format-plaint`, `format-f
 
 ## Steps
 
+0. Search `src/data/knowledge` (`findExisting`) for an equivalent doctrine/article/case. Reuse it if it exists.
 1. Confirm the topic already exists in `subjects.ts` (same `id` and subject `slug`).
 2. Create file: `src/data/topics/<subjectSlug>/<topicId>.ts`
 3. Export default object matching `TopicContent`.

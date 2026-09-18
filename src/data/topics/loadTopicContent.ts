@@ -9,6 +9,7 @@
  */
 
 import type { CaseCitation } from '../subjects'
+import { articleById, articleIdFromTopicId } from '../constitution/articles'
 
 export interface TopicSection {
   id: string
@@ -72,6 +73,54 @@ export function getStudyBody(content: TopicContent | null | undefined): string {
   return content.study || content.detailed || content.short || ''
 }
 
+function synthesizeArticleContent(articleId: string): TopicContent | null {
+  const article = articleById(articleId)
+  if (!article) return null
+
+  const amendmentLine = article.amendments?.length
+    ? `Amendments that touch this article: ${article.amendments.join(', ')}.`
+    : ''
+
+  const study = [
+    `Text of Article ${article.id}`,
+    `“${article.text}”`,
+    article.note ? `\nStudy note\n${article.note}` : '',
+    amendmentLine ? `\n${amendmentLine}` : '',
+    '\nExam focus',
+    'Start with the black-letter text. Then follow the related doctrines, cases, and amendments in the knowledge graph on this page. Content is educational — always cross-check the latest Bare Act.',
+  ]
+    .filter(Boolean)
+    .join('\n')
+
+  return {
+    study,
+    provisions: [
+      {
+        actId: 'constitution',
+        actName: 'Constitution of India',
+        provisionId: `constitution-article-${article.id.toLowerCase()}`,
+        article: `Article ${article.id}`,
+        title: article.title,
+      },
+    ],
+    sections: article.note
+      ? [
+          {
+            id: `art-${article.id.toLowerCase()}-note`,
+            title: 'How this article is read',
+            order: 1,
+            content: [article.note],
+          },
+        ]
+      : undefined,
+    bareActPointers: [`Art ${article.id}`, article.cluster ? `Part cluster: ${article.cluster}` : ''].filter(Boolean),
+    examTips: [
+      `Cite Article ${article.id} by number in the answer.`,
+      'Use related doctrines and cases from the knowledge graph rather than rewriting them here.',
+    ],
+  }
+}
+
 function hasStudyBody(content: TopicContent): boolean {
   return (
     typeof content.study === 'string' ||
@@ -106,22 +155,39 @@ export async function loadTopicContent(
 
   const path = `./${subjectSlug}/${topicId}.ts`
   const loader = topicModules[path]
-  if (!loader) return null
-
-  try {
-    const mod = await loader()
-    const content = mod.default
-    if (content && hasStudyBody(content)) {
-      cache.set(key, content)
-      return content
+  if (loader) {
+    try {
+      const mod = await loader()
+      const content = mod.default
+      if (content && hasStudyBody(content)) {
+        cache.set(key, content)
+        return content
+      }
+    } catch {
+      // fall through to catalog synthesis
     }
-    return null
-  } catch {
-    return null
   }
+
+  if (subjectSlug === 'constitution') {
+    const articleId = articleIdFromTopicId(topicId)
+    if (articleId) {
+      const synthesized = synthesizeArticleContent(articleId)
+      if (synthesized) {
+        cache.set(key, synthesized)
+        return synthesized
+      }
+    }
+  }
+
+  return null
 }
 
 /** Whether a content file is registered for this topic (sync check via glob keys) */
 export function hasTopicContentFile(subjectSlug: string, topicId: string): boolean {
-  return `./${subjectSlug}/${topicId}.ts` in topicModules
+  if (`./${subjectSlug}/${topicId}.ts` in topicModules) return true
+  if (subjectSlug === 'constitution') {
+    const articleId = articleIdFromTopicId(topicId)
+    return Boolean(articleId && articleById(articleId))
+  }
+  return false
 }

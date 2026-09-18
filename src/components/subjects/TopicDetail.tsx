@@ -17,6 +17,8 @@ import {
   type TopicContent,
 } from '../../data/topics/loadTopicContent'
 import { Badge } from '../ui/Badge'
+import { RelatedKnowledge } from '../knowledge/RelatedKnowledge'
+import { knowledgeIdForTopic } from '../../data/knowledge'
 
 const TOPIC_PROGRESS_KEY = 'codepackr-law-topic-progress'
 
@@ -85,6 +87,7 @@ export function TopicDetail({
   const studyContent = getStudyBody(content)
   const hasContent = Boolean(studyContent)
   const hasCases = (content?.cases?.length ?? 0) > 0
+  const knowledgeId = knowledgeIdForTopic(subject.slug, topic.id)
 
   const handleCopyCase = (c: CaseCitation, idx: number) => {
     const text = [
@@ -342,6 +345,10 @@ export function TopicDetail({
           <h3 className="text-sm font-semibold text-slate-900 dark:text-white">Related Topics</h3>
           <div className="mt-3 flex flex-wrap gap-2">{content.relatedTopics.map((relatedTopic) => <span key={relatedTopic} className="rounded-lg bg-slate-100 dark:bg-slate-800 px-2.5 py-1 text-xs text-slate-600 dark:text-slate-300">{relatedTopic}</span>)}</div>
         </section>
+      )}
+
+      {!loading && knowledgeId && (
+        <RelatedKnowledge entityId={knowledgeId} />
       )}
 
       <p className="text-xs text-slate-400 dark:text-slate-500">
