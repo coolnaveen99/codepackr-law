@@ -41,13 +41,16 @@ Single source of truth for any AI (or human) building or extending **Codepackr L
 ## 3. Mandatory Reading Before Coding
 
 1. `.github/copilot-instructions.md`
-2. `.github/skills/add-new-tool.md`
-3. `.github/skills/add-topic-notes.md` — **required before adding any short/detailed topic content**
-4. `.github/skills/reusable-legal-knowledge.md` — **required before creating reusable legal records**
-5. `.github/skills/tool-quality-gate.md`
-6. `docs/reusable-legal-knowledge-architecture.md`
-7. `CONTRIBUTING.md`
-8. This file (`AI_INSTRUCTIONS.md`)
+2. `.github/instructions/global-legal-content.md` — **required before changing any legal study content**
+3. `.github/instructions/subjects/<subject>.md` — subject extras only (constitution, bns, bnss, bsa, cpc, contract, family, torts, petition-formats)
+4. `.github/skills/legal-content-workflow.md`
+5. `.github/skills/add-new-tool.md`
+6. `.github/skills/add-topic-notes.md` — **required before adding any Study Topic content**
+7. `.github/skills/reusable-legal-knowledge.md` — **required before creating reusable legal records**
+8. `.github/skills/tool-quality-gate.md`
+9. `docs/reusable-legal-knowledge-architecture.md`
+10. `CONTRIBUTING.md`
+11. This file (`AI_INSTRUCTIONS.md`)
 
 ---
 
@@ -66,6 +69,7 @@ src/
 │   ├── questions/       # Static MCQ banks
 │   ├── reference/       # Maxims, landmark cases (reference tools)
 │   ├── constitution/    # Article digest, cases, amendments 1–106
+│   ├── bns/             # BNS 2023 section catalog, chapters, lessons, cases
 │   ├── knowledge/       # Canonical graph (doctrines, concepts, maxims, validation)
 │   └── topics/          # Full learning notes — one file per topic (lazy-loaded)
 │       ├── loadTopicContent.ts
@@ -173,11 +177,12 @@ Topic notes are done when the file exists under `topics/`, matches `TopicContent
 ## 10. Content Notes (Law-Specific)
 
 - Prefer the **new criminal laws**: Bharatiya Nyaya Sanhita (BNS), Bharatiya Nagarik Suraksha Sanhita (BNSS), Bharatiya Sakshya Adhiniyam (BSA).
-- Still support legacy names (IPC, CrPC, Evidence Act) via mappers where useful.
-- High-weight AIBE subjects: Constitutional Law, CPC, BNSS/CrPC, BNS/IPC, BSA/Evidence, Contract, Family Law.
+- IPC, CrPC, and the Indian Evidence Act are **historical concordance only** — not active current-law subjects. Support them via the mapper; never assume a 1:1 equivalent.
+- High-weight AIBE subjects: Constitutional Law, CPC, BNSS, BNS, BSA, Contract, Family Law.
 - Keep explanations short and section-focused (AIBE allows only unmarked Bare Acts).
 - All MCQ content must be original or clearly licensed for this use. Start with small curated sets and expand.
 - Topic notes: prioritise `highYield: true` topics; include 3–5 case citations with holdings.
+- Follow `.github/instructions/global-legal-content.md` for research, verification, and the no-hallucination rule.
 
 ---
 
@@ -189,6 +194,6 @@ Topic notes are done when the file exists under `topics/`, matches `TopicContent
 - Never ship incomplete tools.
 - **Never put full topic essays into `subjects.ts`** — use `src/data/topics/` only.
 - **Never duplicate canonical legal knowledge.** Search `src/data/knowledge` first. If Basic Structure (or any doctrine/case/article) already exists, reference `[[REF:DOCTRINE:CONSTITUTIONAL-LAW:BASIC-STRUCTURE]]` instead of rewriting it.
-- When in doubt, re-read this file, `.github/skills/add-new-tool.md`, `.github/skills/add-topic-notes.md`, and `.github/skills/reusable-legal-knowledge.md`.
+- When in doubt, re-read this file, `.github/instructions/global-legal-content.md`, `.github/skills/legal-content-workflow.md`, `.github/skills/add-new-tool.md`, `.github/skills/add-topic-notes.md`, and `.github/skills/reusable-legal-knowledge.md`.
 
 Build carefully. Protect privacy. Serve Indian law students well.

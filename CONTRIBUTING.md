@@ -11,7 +11,9 @@ This project is part of the Codepackr family of 100% client-side, privacy-first 
 | Document | Purpose |
 |----------|---------|
 | [AI_INSTRUCTIONS.md](AI_INSTRUCTIONS.md) | Complete build & tool-addition guide |
+| [`.github/instructions/global-legal-content.md`](.github/instructions/global-legal-content.md) | Global legal-content architecture (every subject) |
 | [`.github/copilot-instructions.md`](.github/copilot-instructions.md) | Golden rules |
+| [`.github/skills/legal-content-workflow.md`](.github/skills/legal-content-workflow.md) | Research → verify → implement study content |
 | [`.github/skills/add-new-tool.md`](.github/skills/add-new-tool.md) | Mandatory SOP for every new tool |
 | [`.github/skills/tool-quality-gate.md`](.github/skills/tool-quality-gate.md) | Final checklist |
 

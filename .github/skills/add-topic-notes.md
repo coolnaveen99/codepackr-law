@@ -2,6 +2,8 @@
 
 **Mandatory SOP** for full topic learning notes (single Study Topic body + structured fields + cases).
 
+Global legal-content rules: [`.github/instructions/global-legal-content.md`](../instructions/global-legal-content.md). Subject extras: [`.github/instructions/subjects/`](../instructions/subjects/).
+
 ## Architecture rule (non-negotiable)
 
 | Layer | Location | What goes here |

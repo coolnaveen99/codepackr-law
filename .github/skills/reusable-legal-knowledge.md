@@ -4,6 +4,8 @@
 
 Full architecture: [`docs/reusable-legal-knowledge-architecture.md`](../../docs/reusable-legal-knowledge-architecture.md)
 
+Global legal-content rules (research, mapper, current vs historical): [`.github/instructions/global-legal-content.md`](../instructions/global-legal-content.md)
+
 ## Golden rule
 
 ```

@@ -11,7 +11,10 @@ All practice and study tools execute strictly in the user’s browser. Zero data
 **Read first:** [AI_INSTRUCTIONS.md](AI_INSTRUCTIONS.md)
 
 Supporting files:
+- `.github/instructions/global-legal-content.md` — **global legal-content architecture (every subject)**
+- `.github/instructions/subjects/` — subject-specific extras only
 - `.github/copilot-instructions.md`
+- `.github/skills/legal-content-workflow.md`
 - `.github/skills/add-new-tool.md`
 - `.github/skills/add-topic-notes.md`
 - `.github/skills/reusable-legal-knowledge.md`
@@ -38,3 +41,4 @@ Supporting files:
 4. Blue brand only.
 5. Prioritise AIBE / Judiciary / new criminal laws (BNS, BNSS, BSA).
 6. Reusable legal knowledge is a repository-wide rule: search `src/data/knowledge` first, reuse the canonical ID, never duplicate a doctrine/case/article explanation. See `.github/skills/reusable-legal-knowledge.md`.
+7. Legal study content follows `.github/instructions/global-legal-content.md` (architecture, research, mapper, current vs historical law) plus the matching subject file under `.github/instructions/subjects/`.

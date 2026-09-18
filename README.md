@@ -91,11 +91,13 @@ Stack: React 18 + TypeScript + Vite + Tailwind CSS v4.
 
 1. [CONTRIBUTING.md](CONTRIBUTING.md)
 2. [AI_INSTRUCTIONS.md](AI_INSTRUCTIONS.md) — Complete AI / builder guide
-3. [`.github/copilot-instructions.md`](.github/copilot-instructions.md)
+3. [`.github/instructions/global-legal-content.md`](.github/instructions/global-legal-content.md) — legal content, every subject
+4. [`.github/copilot-instructions.md`](.github/copilot-instructions.md)
 5. [`.github/skills/add-new-tool.md`](.github/skills/add-new-tool.md)
-6. [`.github/skills/reusable-legal-knowledge.md`](.github/skills/reusable-legal-knowledge.md)
-7. [`docs/reusable-legal-knowledge-architecture.md`](docs/reusable-legal-knowledge-architecture.md)
-8. [`.github/skills/tool-quality-gate.md`](.github/skills/tool-quality-gate.md)
+6. [`.github/skills/legal-content-workflow.md`](.github/skills/legal-content-workflow.md)
+7. [`.github/skills/reusable-legal-knowledge.md`](.github/skills/reusable-legal-knowledge.md)
+8. [`docs/reusable-legal-knowledge-architecture.md`](docs/reusable-legal-knowledge-architecture.md)
+9. [`.github/skills/tool-quality-gate.md`](.github/skills/tool-quality-gate.md)
 
 Key rules:
 - 100% client-side only
