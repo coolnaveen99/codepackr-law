@@ -78,6 +78,11 @@ function isHeadingLine(p: string, pattern: RegExp) {
   return pattern.test(p.trim())
 }
 
+function splitLetterItems(text: string): string[] {
+  const parts = text.split(/(?=\([a-z]\)\s)/i).map((s) => s.trim()).filter(Boolean)
+  return parts.length > 1 ? parts : [text.trim()].filter(Boolean)
+}
+
 function parseBare(text: string, fallbackTitle: string): ParsedBare {
   const paras = splitParas(text)
   let heading = fallbackTitle
@@ -95,7 +100,14 @@ function parseBare(text: string, fallbackTitle: string): ParsedBare {
 
   for (const raw of body) {
     const p = raw.trim()
-    if (isHeadingLine(p, /^illustrations?$/i)) {
+    if (isHeadingLine(p, /^illustrations?\.?$/i) || /^illustrations?\s+to\b/i.test(p) || /^illustrations?\s*\([a-z]\)/i.test(p)) {
+      mode = 'ill'
+      const rest = p.replace(/^illustrations?\.?\s*/i, '').replace(/^to\b[^.]*\.?\s*/i, '').trim()
+      if (rest && !/^illustrations?\.?$/i.test(rest)) illustrations.push(...splitLetterItems(rest))
+      continue
+    }
+    if (/^illustration\s*[.—]/i.test(p)) {
+      illustrations.push(...splitLetterItems(p.replace(/^illustration\s*[.—]\s*/i, '').trim()))
       mode = 'ill'
       continue
     }
@@ -117,7 +129,12 @@ function parseBare(text: string, fallbackTitle: string): ParsedBare {
       provisos.push(p)
       continue
     }
-    if (mode === 'ill') illustrations.push(p)
+    if (mode === 'ill' && /^\(\d+\)/.test(p)) {
+      mode = 'rule'
+      ruleParas.push(p)
+      continue
+    }
+    if (mode === 'ill') illustrations.push(...splitLetterItems(p))
     else if (mode === 'exc') exceptions.push(p)
     else if (mode === 'expl') explanations.push(p)
     else ruleParas.push(p)
@@ -304,7 +321,11 @@ export async function synthesizeCatalogSection(
 
     parsed.illustrations.length
       ? `\nStatutory illustrations\n${parsed.illustrations
-          .map((ill, i) => `(${String.fromCharCode(97 + i)}) ${ill}`)
+          .map((ill, i) => {
+            const letter = String.fromCharCode(97 + i)
+            const body = ill.replace(/^\([a-z]\)\s*/i, '')
+            return `Illustration (${letter}). ${body}\n\nExam use: quote illustration (${letter}), then write which ingredient of ${meta.short} s. ${p.id} it proves. Copying the illustration without that mapping sentence does not score.`
+          })
           .join('\n\n')}`
       : '',
 
@@ -340,12 +361,23 @@ export async function synthesizeCatalogSection(
   ].filter(Boolean) as NonNullable<TopicContent['sections']>
 
   const examples = parsed.illustrations.length
-    ? parsed.illustrations.slice(0, 6).map((ill, i) => ({
+    ? parsed.illustrations.slice(0, 12).map((ill, i) => ({
         id: `${kind}-${p.id}-ex-${i + 1}`,
-        title: `Illustration ${String.fromCharCode(97 + i)}`,
-        description: ill,
+        title: `Illustration (${String.fromCharCode(97 + i)})`,
+        description: `${ill.replace(/^\([a-z]\)\s*/i, '')}\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of ${meta.short} s. ${p.id} — which fact proves which element, and what the legal result is.`,
       }))
-    : undefined
+    : [
+        {
+          id: `${kind}-${p.id}-ex-1`,
+          title: 'Example 1 — simple (teaching example)',
+          description: `A short everyday fact pattern is tested against “${p.title}”. Name ${meta.short} s. ${p.id}, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading.`,
+        },
+        {
+          id: `${kind}-${p.id}-ex-2`,
+          title: 'Example 2 — examination (teaching example)',
+          description: `Change one ingredient so that ${meta.short} s. ${p.id} fails. A 16-mark problem often hides the missing ingredient. State the failure expressly. Label this as an example, never as a reported case.`,
+        },
+      ]
 
   const questionsAndAnswers = [
     {

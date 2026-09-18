@@ -40,17 +40,17 @@ export type SubjectIntro = {
 
 const CONSTITUTION_INTRO: SubjectIntro = {
   act: 'Constitution of India',
-  inForce: '26 January 1950 · current through the 106th Amendment',
-  counts: 'Article-wise lessons grouped by Part',
-  body: 'The Constitution is the supreme law. Start here with the introduction, then open any article — Article 14, 21, 32, 368 — as its own study page. Doctrines (basic structure, pith and substance, eclipse) are exam essays; they reuse the article pages, they do not replace them.',
-  howTo: 'Use the filter box (try “21” or “equality”). Click an article for the full note: text, meaning, cases, 10-mark framework.',
+  inForce: '26 January 1950 · current through the 106th Amendment (2023)',
+  counts: '500 articles · official 2024 Legislative Department text',
+  body: 'There is no Cytrain page for the Constitution. Article text on every article page is taken from the official Legislative Department English edition, 2024 (as on 1 May 2024, through the 106th Amendment — women’s reservation, Arts 330A / 332A / 334A). The 131st Amendment Bill, 2026 was negatived; do not treat it as law. Open any article for the full study page: official text, meaning, examples, 10-mark and 16-mark answers.',
+  howTo: 'Type an article number (21, 368, 330A). Click it. Exam essays (basic structure, writs) sit above the complete list.',
   highlights: [
     { title: 'Part III is the heart', body: 'Fundamental Rights (Arts 12–35) carry the most AIBE and university marks. Article 32 is the heart and soul.' },
-    { title: '106th Amendment', body: 'Women’s reservation in the Lok Sabha and State Assemblies. In force as a provision; the seats themselves await delimitation.' },
+    { title: '106th Amendment', body: 'Women’s reservation in the Lok Sabha and State Assemblies. In force as a provision; the seats themselves await delimitation after the first census following 2023.' },
   ],
-  disclaimer: 'Educational notes. Always cross-check the latest Bare Act / India Code.',
+  disclaimer: 'Educational notes from the official 2024 text. Always cross-check the latest Bare Act / India Code.',
   chapterCount: 22,
-  sectionCount: 0,
+  sectionCount: 500,
 }
 
 export function getSubjectIntro(slug: string): SubjectIntro | null {

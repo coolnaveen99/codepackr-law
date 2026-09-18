@@ -10,6 +10,7 @@
 
 import type { CaseCitation } from '../subjects'
 import { articleById, articleIdFromTopicId } from '../constitution/articles'
+import { CASES } from '../constitution/cases'
 import { bnsSectionById, sectionIdFromTopicId } from '../bns/sections'
 import { bnssSectionById, bnssSectionIdFromTopicId } from '../bnss/sections'
 import { bsaSectionById, bsaSectionIdFromTopicId } from '../bsa/sections'
@@ -119,60 +120,120 @@ function synthesizeArticleContent(articleId: string): TopicContent | null {
   const article = articleById(articleId)
   if (!article) return null
 
+  const cite = `Article ${article.id}`
+  const official = (article.text || '').trim()
+  const omitted = Boolean(article.omitted) || /^omitted\.?$/i.test(official)
+
   const amendmentLine = article.amendments?.length
-    ? `Amendments that touch this article: ${article.amendments.join(', ')}. Always state the latest amendment if the question is on current law.`
-    : `The text of Article ${article.id} is unamended. Its meaning may still be judicial — say so if you use case law.`
+    ? `Amendments that touch this article: ${article.amendments.join(', ')}. Always state the latest amendment if the question is on current law. Current through the 106th Amendment (2023). The 131st Amendment Bill, 2026 was negatived — do not treat it as law.`
+    : `State the current text of ${cite}. Current through the 106th Amendment (2023). The 131st Amendment Bill, 2026 was negatived — do not treat it as law.`
 
-  const meaning = article.note
-    ? article.note
-    : `Article ${article.id} is the constitutional rule on “${article.title}”. A 10-mark note must state the text in the student’s own words, explain who it binds, what it protects or empowers, and how it is applied. Quoting the article and stopping is not a full-mark answer.`
+  const njac = ['124', '124A', '124B', '124C', '217', '222'].includes(article.id)
+    ? `Current-law warning: the Constitution (Ninety-ninth Amendment) Act, 2014 (NJAC) was struck down in Supreme Court Advocates-on-Record Association v. Union of India, AIR 2016 SC 117. Do not write NJAC as the present appointment mechanism. The working rule is the collegium as restored by that holding. Name the case; do not invent a restored clause.`
+    : ''
 
-  const study = [
-    `Topic at a glance`,
-    `Article ${article.id} — ${article.title}. This page is a full examination note: text, meaning, elements, application, 10-mark and 16-mark structures. It is not a Bare Act dump.`,
-    `\nIntroduction and meaning`,
-    meaning,
-    `\nWhat the article says`,
-    `“${article.text}”`,
-    `Do not stop at the quotation. Restate the rule in your own words, then explain each clause.`,
-    `\nWhy this article is asked`,
-    `University and Judiciary papers set Article ${article.id} as a 10-mark note (“explain”) or a 16-mark problem (“apply to these facts”). The marks are in the meaning, the conditions, the related articles, and the application — not in reciting the number.`,
-    article.cluster ? `\nConstitutional setting\nPart cluster: ${article.cluster}. Place the article in Part of the Constitution before you analyse it.` : '',
-    `\nEssential points to write`,
-    `1. Name Article ${article.id} and the title.\n2. State the black-letter rule in your own words.\n3. Identify who is bound and who is protected.\n4. State any condition, exception or later amendment.\n5. Apply to a short fact situation.\n6. Conclude with the current legal position.`,
-    `\nCurrent-law position`,
-    amendmentLine,
-    `\nHow to write a 10-mark answer`,
-    `Typical question: “Write a note on Article ${article.id}.” Open with the text in your own words. Explain the legal idea. State conditions or exceptions. Cite one leading authority from the related-knowledge panel if the article has one. Apply. Conclude.`,
-    `\nHow to write a 16-mark answer`,
-    `Add history or drafting context where it is legally useful, related articles, a second authority, a distinction, a hypothetical, and a current-law close. Do not lengthen the 10-mark note by repeating the same sentences.`,
-  ]
+  const meaning = omitted
+    ? `${cite} (“${article.title}”) is omitted. A 10-mark note states that it is omitted, names the omitting amendment if known, and says it is not current law. Do not apply an omitted article to 2026 facts.`
+    : article.note
+      ? article.note
+      : `${cite} is the constitutional rule on “${article.title}”. A 10-mark note restates the text in the student’s own words, explains who it binds, what it protects or empowers, any proviso, and how it is applied. Quoting the article and stopping is not a full-mark answer.`
+
+  const clauses = official
+    .split(/\n\s*\n/)
+    .map((p) => p.replace(/\s+/g, ' ').trim())
     .filter(Boolean)
-    .join('\n')
+  const elements = clauses.length >= 2
+    ? clauses.slice(0, 12)
+    : official
+      ? [official]
+      : [`${cite} — ${article.title}.`]
 
-  const tenMark = [
-    `Introduction. Article ${article.id} of the Constitution of India is titled “${article.title}”.`,
-    `Text and meaning. The article provides: ${article.text} In student language: ${meaning}`,
-    `Legal idea. State who is bound (typically the State, unless the article is a duty or a structural rule), who is protected, and what the article actually does.`,
-    `Conditions / qualifications. ${amendmentLine}`,
-    `Application. Take a short fact pattern and show why Article ${article.id} is (or is not) attracted. Mapping facts to the text is the mark-earning paragraph.`,
-    `Conclusion. Article ${article.id} remains the current constitutional heading for ${article.title}. Quote, explain, apply, conclude.`,
-  ].join('\n\n')
+  const verifiedCases = CASES.filter((c) =>
+    c.articles.some((a) => a.toLowerCase() === article.id.toLowerCase()),
+  )
 
-  const sixteenMark = [
-    tenMark,
-    `16-mark expansion. Add (1) the place of the article in its Part and cluster${article.cluster ? ` (${article.cluster})` : ''}; (2) related articles that the examiner expects to see beside it; (3) a verified leading case from the related-knowledge panel, with ratio, not merely the name; (4) a hypothetical; (5) a common trap; (6) the current-law close, including any amendment.`,
-  ].join('\n\n')
+  const tenMarkAnswer = omitted
+    ? [
+        `Introduction. ${cite} of the Constitution of India is titled “${article.title}”. It is omitted.`,
+        `Current law. An omitted article is not a living heading. Do not apply it to facts arising today.`,
+        amendmentLine,
+        `Conclusion. Write that ${cite} is omitted and move to the article that actually governs the facts.`,
+      ].join('\n\n')
+    : [
+        `Introduction. ${cite} of the Constitution of India is titled “${article.title}”.${article.cluster ? ` It sits in the ${article.cluster} cluster.` : ''}`,
+        `Official text. ${official}`,
+        `Meaning. ${meaning}`,
+        `Legal idea. State who is bound (typically the State under Article 12, unless the article is a duty, a qualification, or a structural rule), who is protected, and what the article actually does.`,
+        `Elements. A 10-mark answer lists the working points of the text:\n${elements.map((el, i) => `${i + 1}. ${el}`).join('\n')}`,
+        njac,
+        `Conditions / qualifications. ${amendmentLine}`,
+        verifiedCases[0]
+          ? `Authority. ${verifiedCases[0].name}${verifiedCases[0].year ? ` (${verifiedCases[0].year})` : ''}${verifiedCases[0].citation ? `, ${verifiedCases[0].citation}` : ''}: ${verifiedCases[0].holding} State the holding. Do not invent a bench split you have not verified.`
+          : `Authority. Cite a verified leading case from the related-knowledge panel if one is on the facts. Do not invent a judgment.`,
+        `Application. Take a short fact pattern and show why ${cite} is (or is not) attracted. Mapping facts to the text is the mark-earning paragraph.`,
+        `Conclusion. ${cite} remains the current constitutional heading for ${article.title}. Quote, explain, apply, conclude. Current through the 106th Amendment.`,
+      ]
+        .filter(Boolean)
+        .join('\n\n')
+
+  const sixteenMarkAnswer = omitted
+    ? `${tenMarkAnswer}\n\n16-mark expansion. Identify the successor heading (if any) and apply that heading. Do not reconstruct the omitted text as if it were in force.`
+    : [
+        tenMarkAnswer,
+        `16-mark expansion. Do not repeat the 10-mark note twice.`,
+        `Layer 1 — Place. ${article.cluster ? `Cluster: ${article.cluster}.` : 'Place the article in its Part.'} Show why this heading sits where it sits.`,
+        `Layer 2 — Related articles. Name the neighbour the examiner expects (for example a neighbouring Fundamental Right, a DPSP, a remedial article, or an exception). Explain the relationship in three or four sentences.`,
+        verifiedCases[1]
+          ? `Layer 3 — Second authority. ${verifiedCases[1].name}${verifiedCases[1].year ? ` (${verifiedCases[1].year})` : ''}: ${verifiedCases[1].holding}`
+          : `Layer 3 — Analytical comment. Explain a proviso, an exception, or a practical difficulty. Do not invent case names.`,
+        njac ? `Layer 3A — ${njac}` : '',
+        `Layer 4 — Hypothetical in IRAC form (Issue, Rule, Application, Conclusion). Change one condition so that ${cite} fails, and say so expressly.`,
+        `Layer 5 — Current-law close. “The governing citation is ${cite} of the Constitution of India, current through the 106th Amendment.”`,
+      ]
+        .filter(Boolean)
+        .join('\n\n')
+
+  const study = omitted
+    ? [
+        `Introduction and meaning`,
+        meaning,
+        `\nCurrent-law position`,
+        `${cite} is omitted. It is not a living article. ${amendmentLine}`,
+      ].join('\n')
+    : [
+        `Introduction and meaning`,
+        meaning,
+        `In student language: ${cite} is the working rule for “${article.title}”. Open with the title, restate the text in your own words, then list every clause. An examiner awards marks for the clauses, the proviso, and the application — not for writing the number alone.`,
+
+        `\nWhy this is asked`,
+        `University and Judiciary papers set ${cite} as a 10-mark note (“explain”) or a 16-mark problem (“apply to these facts”). The marks are in the meaning, the conditions, the related articles, and the application.`,
+        article.cluster ? `Constitutional setting: ${article.cluster}.` : '',
+
+        `\nThe article in detail`,
+        official,
+
+        `\nEssential points to write`,
+        elements.map((el, i) => `${i + 1}. ${el}`).join('\n'),
+
+        njac ? `\nCurrent-law warning\n${njac}` : '',
+
+        `\nCurrent-law position`,
+        amendmentLine,
+      ]
+        .filter(Boolean)
+        .join('\n')
 
   return {
     study,
-    glance: `Article ${article.id} — ${article.title}. Full examination note for 10-mark and 16-mark answers.`,
+    glance: omitted
+      ? `${cite} — omitted. Not current law.`
+      : `${cite} — ${article.title}. Official text (Legislative Department, 2024, through the 106th Amendment) with a full 10-mark and 16-mark note.`,
     provisions: [
       {
         actId: 'constitution',
         actName: 'Constitution of India',
         provisionId: `constitution-article-${article.id.toLowerCase()}`,
-        article: `Article ${article.id}`,
+        article: cite,
         title: article.title,
       },
     ],
@@ -181,114 +242,105 @@ function synthesizeArticleContent(articleId: string): TopicContent | null {
         id: `art-${article.id.toLowerCase()}-text`,
         title: 'Constitutional text',
         order: 1,
-        content: [article.text],
-      },
-      {
-        id: `art-${article.id.toLowerCase()}-meaning`,
-        title: 'Meaning for examination answers',
-        order: 2,
-        content: [meaning],
+        content: clauses.length ? clauses : [official || article.title],
       },
     ],
-    examples: [
-      {
-        id: `art-${article.id}-ex-1`,
-        title: 'Example 1 — simple',
-        description: `A short fact pattern is tested against Article ${article.id} (${article.title}). Name the article, restate the rule, and say which facts match the text.`,
-      },
-      {
-        id: `art-${article.id}-ex-2`,
-        title: 'Example 2 — examination',
-        description: `Change one condition (person protected, State action, territorial limit, or an exception) so that the article is not attracted. State the failure expressly — that contrast is a 16-mark skill.`,
-      },
-    ],
+    examples: omitted
+      ? [
+          {
+            id: `art-${article.id}-ex-1`,
+            title: 'Example — omitted heading',
+            description: `A 2026 problem cites ${cite}. The first sentence of the answer is that the article is omitted. Apply the living article that actually governs the facts.`,
+          },
+        ]
+      : [
+          {
+            id: `art-${article.id}-ex-1`,
+            title: 'Example 1 — simple (teaching example)',
+            description: `A short fact pattern is tested against ${cite} (${article.title}). Name the article, restate the rule, and say which facts match the text. This is a teaching example — the Constitution does not print numbered illustrations under articles the way BNS/BSA do.`,
+          },
+          {
+            id: `art-${article.id}-ex-2`,
+            title: 'Example 2 — examination (teaching example)',
+            description: `Change one condition (person protected, State action, territorial limit, or a proviso) so that ${cite} is not attracted. State the failure expressly — that contrast is a 16-mark skill. Label this as an example, never as a reported case.`,
+          },
+        ],
     hypotheticals: [
       {
         id: `art-${article.id}-hypo`,
         title: 'Examination hypothetical',
-        facts: `A 2026 fact situation requires the court to decide whether Article ${article.id} (${article.title}) is attracted. Some facts look like the text of the article; one fact looks like a missing condition or a related article.`,
-        question: `Does Article ${article.id} apply? How should a 16-mark answer be written?`,
-        applicableLaw: `Article ${article.id}. ${article.cluster ? `Cluster: ${article.cluster}.` : ''} Related articles from the related-knowledge panel must be cited if they are on the facts.`,
-        analysis: `Identify the article. Restate the rule. List who is bound and who is protected. Map each fact to the text. If a related article (for example a neighbouring fundamental right, a directive principle, or a remedial article) is a better fit, say so and do not force Article ${article.id}.`,
-        conclusion: `The conclusion must cite Article ${article.id} and state whether every condition in the text is satisfied. “Yes, Article ${article.id} applies” without mapping is not a full-mark ending.`,
+        facts: omitted
+          ? `A 2026 problem invites the court to apply ${cite} (${article.title}).`
+          : `A 2026 fact situation requires the court to decide whether ${cite} (${article.title}) is attracted. Some facts look like the text; one fact looks like a missing condition or a related article.`,
+        question: `Does ${cite} apply? How should a 16-mark answer be written?`,
+        applicableLaw: `${cite}. ${article.cluster ? `Cluster: ${article.cluster}.` : ''} Current through the 106th Amendment.`,
+        analysis: omitted
+          ? `Identify that ${cite} is omitted. Name the living article. Do not reconstruct the omitted text.`
+          : `Identify the article. Restate the rule. List who is bound and who is protected. Map each fact to the text. If a related article is a better fit, say so and do not force ${cite}. ${njac}`,
+        conclusion: omitted
+          ? `${cite} does not apply because it is omitted.`
+          : `The conclusion must cite ${cite} and state whether every condition in the text is satisfied.`,
       },
     ],
     misconceptions: [
       {
         id: `art-${article.id}-trap-1`,
-        trap: 'Quoting the article and stopping.',
-        correction: 'A 10-mark note explains meaning, conditions, related articles and application. The quotation is only the opening.',
+        trap: omitted ? 'Applying an omitted article as if it were in force.' : 'Quoting the article and stopping.',
+        correction: omitted
+          ? 'Write that it is omitted and apply the living heading.'
+          : 'A 10-mark note explains meaning, conditions, related articles and application. The quotation is only the opening.',
       },
       {
         id: `art-${article.id}-trap-2`,
         trap: 'Writing a shortened Q&A or a one-line explanation.',
         correction: 'Descriptive papers require a complete answer. The model answers on this page are written at 10-mark / 16-mark length. Do not shorten them in the answer book.',
       },
+      njac
+        ? {
+            id: `art-${article.id}-trap-3`,
+            trap: 'Writing NJAC as current appointment law.',
+            correction: njac,
+          }
+        : {
+            id: `art-${article.id}-trap-3`,
+            trap: 'Treating a pending Bill as an amendment.',
+            correction: 'The last amendment in force is the 106th (2023). The 131st Amendment Bill, 2026 was negatived.',
+          },
     ],
     questionsAndAnswers: [
       {
         id: `art-${article.id}-q-10`,
         marks: 10,
-        question: `Write a 10-mark note on Article ${article.id} (${article.title}).`,
-        answer: tenMark,
-        explanation: 'Do not submit a shortened answer. Introduction, meaning, conditions, application and conclusion are all required.',
+        question: `Write a 10-mark note on ${cite} (${article.title}).`,
+        answer: tenMarkAnswer,
+        explanation: 'Do not submit a shortened answer. Introduction, official text in your own words, elements, conditions, application and conclusion are all required.',
       },
       {
         id: `art-${article.id}-q-16`,
         marks: 16,
-        question: `Answer a 16-mark question on Article ${article.id}.`,
-        answer: sixteenMark,
-        explanation: 'Add related articles, a verified authority with ratio, a hypothetical and a current-law close. Do not repeat the 10-mark note twice.',
+        question: `Answer a 16-mark question on ${cite}.`,
+        answer: sixteenMarkAnswer,
+        explanation: 'Add related articles, a verified authority with holding, a hypothetical and a current-law close. Do not repeat the 10-mark note twice.',
       },
     ],
-    examFrameworks: [
-      {
-        marks: 10,
-        question: `Write a note on Article ${article.id}.`,
-        steps: [
-          `Introduce Article ${article.id} (${article.title}) and its place in the Constitution.`,
-          'State the black-letter rule in your own words. Do not stop at quoting the text.',
-          'Explain who it binds, what it protects or empowers, and any conditions.',
-          'Cite one leading authority from the related-knowledge panel and state its principle.',
-          'Give a short illustration or apply the article to facts.',
-          'Note any important exception, later amendment, or related article.',
-          'Conclude with the current legal position.',
-        ],
-      },
-      {
-        marks: 16,
-        question: `Discuss Article ${article.id} with related provisions and a hypothetical.`,
-        steps: [
-          'Everything in the 10-mark plan, written in full.',
-          'Place the article in its Part and cluster.',
-          'Add related articles and explain the relationship.',
-          'Add a second verified authority with ratio if the related-knowledge panel supplies one.',
-          'Work a hypothetical in IRAC form.',
-          'Name exam traps (quotation-only answers, shortened Q&A, ignoring amendments).',
-          'Current-law conclusion.',
-        ],
-      },
-    ],
-    answerSkeleton: [
-      `Introduction — Article ${article.id}, ${article.title}.`,
-      'Text in your own words.',
-      'Meaning and conditions.',
-      'Related article / authority.',
-      'Application.',
-      'Conclusion.',
-    ],
+    cases: verifiedCases.map((c) => ({
+      name: c.name,
+      year: c.year,
+      citation: c.citation,
+      holding: c.holding,
+    })),
     revisionPoints: [
-      `Article ${article.id}: ${article.title}.`,
+      `${cite}: ${article.title}.`,
       article.cluster ? `Cluster: ${article.cluster}.` : '',
-      'Quote → meaning → condition → authority → application → conclusion.',
+      omitted ? 'Omitted — not current law.' : 'Quote → meaning → condition → authority → application → conclusion.',
+      'Current through the 106th Amendment (2023).',
     ].filter(Boolean),
     examTips: [
-      'This is a study note, not a Bare Act dump. Explain, then apply.',
-      'If a 16-mark question is set, expand with related articles, more authorities, and a hypothetical.',
+      'This is a study note built on the official article text, not a Bare Act dump. Explain, then apply.',
+      'If a 16-mark question is set, expand with related articles, a verified authority, and a hypothetical.',
     ],
   }
 }
-
 
 
 function hasStudyBody(content: TopicContent): boolean {

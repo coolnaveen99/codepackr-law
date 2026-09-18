@@ -26,7 +26,8 @@ This file is **only** Constitution-specific. Do not repeat global architecture h
 ## Special rules
 
 - Provision terminology is **Article**, not Section.
-- Do not treat a pending Bill (including any “131st”) as passed. Current last amendment is the **106th**.
+- **Cytrain / NCRB has no Constitution pages.** Article text is taken from the official Legislative Department English edition, 2024 (as on 1 May 2024, through the **106th Amendment**). Do not invent a Cytrain scrape.
+- Do not treat a pending Bill (including any “131st”) as passed. The 131st Amendment Bill, 2026 was negatived. Current last amendment is the **106th**.
 - Basic Structure, eclipse, severability, pith and substance, colourable legislation already exist as canonical doctrines — `[[REF:]]` them.
 - Parts III and IV wrap to the FR / DPSP hub topics. Do not duplicate those essays on each article page.
 - Historical cases stay labeled as cases; they are not “amendments”.

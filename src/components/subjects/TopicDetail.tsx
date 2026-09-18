@@ -95,6 +95,9 @@ export function TopicDetail({
   const neighbours = provisionNeighbours(subject, topic)
   const qaTen = content?.questionsAndAnswers?.find((item) => item.marks === 10 || /10[\s-]?mark/i.test(item.question))
   const qaSixteen = content?.questionsAndAnswers?.find((item) => item.marks === 16 || /16[\s-]?mark/i.test(item.question))
+  const statutoryExamples = (content?.examples ?? []).filter((example) => /^Illustration/i.test(example.title || ''))
+  const teachingExamples = (content?.examples ?? []).filter((example) => !/^Illustration/i.test(example.title || ''))
+  const hasIllustrations = statutoryExamples.length > 0
 
   function jumpTo(id: string) {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -206,6 +209,15 @@ export function TopicDetail({
             >
               Notes
             </button>
+            {hasIllustrations && (
+              <button
+                type="button"
+                onClick={() => jumpTo('statutory-illustrations')}
+                className="h-11 px-4 rounded-2xl border border-blue-200 dark:border-blue-800 bg-white dark:bg-slate-900 text-sm font-semibold text-blue-700 dark:text-blue-300"
+              >
+                Illustrations
+              </button>
+            )}
             {qaTen && (
               <button
                 type="button"
@@ -274,6 +286,43 @@ export function TopicDetail({
         </section>
       )}
 
+      {!loading && hasIllustrations && (
+        <section id="statutory-illustrations" className="space-y-4">
+          <div>
+            <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-blue-700 dark:text-blue-300">From the section itself</p>
+            <h3 className="font-display text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white mt-1">
+              Statutory illustrations
+            </h3>
+            <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+              These are official worked examples printed in the Act. Quote the illustration, then map it to an ingredient.
+            </p>
+          </div>
+          <div className="space-y-3">
+            {statutoryExamples.map((example) => (
+              <article key={example.id} className="rounded-[1.4rem] border border-blue-200 dark:border-blue-900 bg-white dark:bg-slate-900 p-5 sm:p-6">
+                <h4 className="font-display text-lg sm:text-xl font-semibold text-slate-900 dark:text-white">{example.title}</h4>
+                <p className="mt-3 text-base sm:text-lg leading-8 text-slate-800 dark:text-slate-200 whitespace-pre-line">{example.description}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {!loading && teachingExamples.length > 0 && (
+        <section id="teaching-examples" className="space-y-3">
+          <h3 className="font-display text-xl sm:text-2xl font-semibold text-slate-900 dark:text-white">
+            {hasIllustrations ? 'Further teaching examples' : 'Examples'}
+          </h3>
+          <div className="space-y-3">
+            {teachingExamples.map((example) => (
+              <article key={example.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
+                <h4 className="font-semibold text-slate-900 dark:text-white">{example.title || 'Example'}</h4>
+                <p className="mt-2 text-base leading-7 text-slate-700 dark:text-slate-300 whitespace-pre-line">{example.description}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
       {!loading && content?.sections && content.sections.length > 0 && !hasContent && (
         <section className="space-y-4">
           <h3 className="text-lg font-bold text-slate-900 dark:text-white">Study Sections</h3>
@@ -290,13 +339,6 @@ export function TopicDetail({
         <section className="rounded-2xl border border-blue-200 dark:border-blue-900/60 bg-blue-50/50 dark:bg-blue-950/20 p-5 sm:p-6">
           <h3 className="text-lg font-bold text-slate-900 dark:text-white">Relevant Provisions</h3>
           <div className="mt-4 grid gap-3 sm:grid-cols-2">{content.provisions.map((provision) => <div key={provision.provisionId} className="rounded-xl border border-blue-100 dark:border-blue-900/60 bg-white dark:bg-slate-900 p-4"><p className="text-xs font-semibold text-blue-600">{provision.article || provision.section || provision.provisionId}</p><p className="mt-1 text-sm font-semibold">{provision.title || provision.actName}</p><p className="mt-1 text-xs text-slate-500">{provision.actName}</p></div>)}</div>
-        </section>
-      )}
-
-      {!loading && content?.examples && content.examples.length > 0 && (
-        <section className="space-y-3">
-          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Examples</h3>
-          <div className="grid gap-3 sm:grid-cols-2">{content.examples.map((example) => <article key={example.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4"><h4 className="font-semibold text-sm">{example.title || 'Illustration'}</h4><p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">{example.description}</p></article>)}</div>
         </section>
       )}
 
