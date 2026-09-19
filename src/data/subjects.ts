@@ -240,17 +240,16 @@ export const SUBJECTS: LawSubjectMeta[] = [
     shortName: 'Family Law',
     priority: 'high',
     aibeQuestions: 8,
-    bareActs: ['Hindu Marriage Act, 1955', 'Hindu Succession Act, 1956', 'Hindu Adoption and Maintenance Act, 1956', 'Muslim Personal Law (relevant areas)', 'Special Marriage Act, 1954'],
-    description: 'Hindu, Muslim, and Special Marriage Act — marriage, divorce, maintenance, succession, adoption.',
-    keywords: ['family law', 'hindu marriage', 'divorce', 'maintenance', 'succession'],
+    bareActs: ['Hindu Marriage Act, 1955', 'Hindu Succession Act, 1956', 'Hindu Adoption and Maintenance Act, 1956', 'Hindu Minority and Guardianship Act, 1956', 'Special Marriage Act, 1954', 'Muslim Personal Law (Shariat) Application Act, 1937', 'Guardians and Wards Act, 1890'],
+    description: 'Family Law I & II — sources, marriage, divorce, maintenance, adoption, guardianship, joint family, succession, hiba, wakf.',
+    keywords: ['family law', 'hindu marriage', 'divorce', 'maintenance', 'succession', 'guardianship', 'wakf', 'hiba', 'joint family'],
     icon: 'Users',
     mcqSubjectKey: 'family',
     topics: [
-      { id: 'hindu-marriage', name: 'Hindu Marriage Act', type: 'act', highYield: true, keywords: ['hindu marriage', 'divorce'] },
-      { id: 'hindu-succession', name: 'Hindu Succession', type: 'act', keywords: ['succession', 'coparcenary'] },
-      { id: 'adoption-maintenance', name: 'Adoption & Maintenance', type: 'theme', keywords: ['adoption', 'maintenance'] },
-      { id: 'muslim-law', name: 'Muslim Personal Law (essentials)', type: 'theme', keywords: ['muslim law', 'talaq'] },
-      { id: 'special-marriage', name: 'Special Marriage Act', type: 'act', keywords: ['special marriage'] },
+      { id: 'sources-schools', name: 'FL-I Unit I — Sources & Schools of Personal Law', type: 'theme', highYield: true, keywords: ['sources', 'mitakshara', 'dayabhaga', 'shariat', 'personal law'] },
+      { id: 'hindu-marriage', name: 'FL-I Unit II — Hindu Marriage Act', type: 'act', highYield: true, keywords: ['hindu marriage', 'divorce'] },
+      { id: 'special-marriage', name: 'FL-I Unit II — Special Marriage Act', type: 'act', keywords: ['special marriage'] },
+      { id: 'muslim-law', name: 'FL-I Unit II–III — Muslim Personal Law (Marriage & Divorce)', type: 'theme', keywords: ['muslim law', 'talaq', 'nikah', 'mahr'] },
       { id: 'hma-s-5', name: 'HMA s. 5 — Conditions for a Hindu marriage', type: 'section', range: 'HMA s. 5', cluster: 'Hindu Marriage Act', highYield: true, keywords: ['section 5', 'hma 5', 'conditions for marriage'] },
       { id: 'hma-s-9', name: 'HMA s. 9 — Restitution of conjugal rights', type: 'section', range: 'HMA s. 9', cluster: 'Hindu Marriage Act', highYield: true, keywords: ['section 9', 'hma 9', 'restitution'] },
       { id: 'hma-s-11', name: 'HMA s. 11 — Void marriages', type: 'section', range: 'HMA s. 11', cluster: 'Hindu Marriage Act', highYield: true, keywords: ['section 11', 'hma 11', 'void marriage'] },
@@ -259,6 +258,13 @@ export const SUBJECTS: LawSubjectMeta[] = [
       { id: 'hma-s-13b', name: 'HMA s. 13B — Divorce by mutual consent', type: 'section', range: 'HMA s. 13B', cluster: 'Hindu Marriage Act', highYield: true, keywords: ['section 13b', 'hma 13b', 'mutual consent'] },
       { id: 'hma-s-24', name: 'HMA s. 24 — Interim maintenance', type: 'section', range: 'HMA s. 24', cluster: 'Hindu Marriage Act', highYield: true, keywords: ['section 24', 'hma 24', 'interim maintenance'] },
       { id: 'hma-s-25', name: 'HMA s. 25 — Permanent alimony', type: 'section', range: 'HMA s. 25', cluster: 'Hindu Marriage Act', highYield: true, keywords: ['section 25', 'hma 25', 'permanent alimony'] },
+      { id: 'adoption-maintenance', name: 'FL-I Unit IV — Adoption & Maintenance (HAMA)', type: 'theme', keywords: ['adoption', 'maintenance', 'hama'] },
+      { id: 'guardianship-minority', name: 'FL-I Unit V — Minority & Guardianship', type: 'theme', keywords: ['guardianship', 'minority', 'hmga', 'guardians and wards'] },
+      { id: 'hindu-joint-family', name: 'FL-II Unit I — Hindu Joint Family', type: 'theme', highYield: true, keywords: ['joint family', 'coparcenary', 'karta', 'mitakshara'] },
+      { id: 'hindu-succession', name: 'FL-II Unit II — Intestate Succession (HSA)', type: 'act', highYield: true, keywords: ['succession', 'coparcenary', 'intestate'] },
+      { id: 'testamentary-succession', name: 'FL-II Unit III — Testamentary Succession', type: 'theme', keywords: ['will', 'testamentary', 'wasiyat'] },
+      { id: 'islamic-gift-hiba', name: 'FL-II Unit IV — Gift under Islamic Law (Hiba)', type: 'theme', keywords: ['hiba', 'gift', 'muslim gift', 'musha'] },
+      { id: 'wakf-endowments', name: 'FL-II Unit V — Religious Endowments & Wakf', type: 'theme', keywords: ['wakf', 'waqf', 'mutawalli', 'endowment'] },
     ],
   },
   {
@@ -300,253 +306,28 @@ export const SUBJECTS: LawSubjectMeta[] = [
       { id: 'format-plaint', name: 'Plaint', type: 'format', note: 'Order VII CPC essentials; Order VII Rule 11', keywords: ['plaint', 'order 7'], highYield: true },
       { id: 'format-written-statement', name: 'Written Statement', type: 'format', note: 'Order VIII CPC; denial, set-off, counter-claim', keywords: ['written statement', 'order 8'], highYield: true },
       { id: 'format-fir', name: 'FIR', type: 'format', note: 'Essential contents of a First Information Report', keywords: ['fir', 'first information report'], highYield: true },
-      { id: 'format-bail-application', name: 'Bail / Anticipatory Bail Application', type: 'format', note: 'Structure of regular and anticipatory bail applications', keywords: ['bail', 'anticipatory bail'], highYield: true },
-    ],
-  },
-  {
-    id: 'tort',
-    slug: 'tort',
-    name: 'Law of Torts, MV Act & Consumer Protection',
-    shortName: 'Torts & Consumer',
-    priority: 'medium',
-    aibeQuestions: 5,
-    bareActs: ['Motor Vehicles Act, 1988', 'Consumer Protection Act, 2019'],
-    description: 'General principles of tort, negligence, strict liability, MV claims, and consumer remedies.',
-    keywords: ['tort', 'negligence', 'consumer', 'motor vehicles'],
-    icon: 'AlertTriangle',
-    topics: [
-      { id: 'negligence', name: 'Negligence', type: 'theme', highYield: true, keywords: ['negligence'] },
-      { id: 'strict-absolute', name: 'Strict & Absolute Liability', type: 'doctrine', note: 'Rylands v. Fletcher; M.C. Mehta absolute liability', keywords: ['strict liability', 'absolute liability'], highYield: true },
-      { id: 'consumer', name: 'Consumer Protection', type: 'act', keywords: ['consumer', 'deficiency'] },
-      { id: 'mv-act', name: 'Motor Vehicles Act (claims)', type: 'act', keywords: ['motor vehicles', 'compensation'] },
-    ],
-  },
-  {
-    id: 'adr',
-    slug: 'adr',
-    name: 'ADR & Arbitration',
-    shortName: 'ADR',
-    priority: 'medium',
-    aibeQuestions: 4,
-    bareActs: ['Arbitration and Conciliation Act, 1996', 'Mediation Act, 2023'],
-    description: 'Arbitration, conciliation, mediation, and Lok Adalat basics.',
-    keywords: ['arbitration', 'mediation', 'adr', 'lok adalat'],
-    icon: 'Handshake',
-    topics: [
-      { id: 'arbitration', name: 'Arbitration Act essentials', type: 'act', highYield: true, keywords: ['arbitration'] },
-      { id: 'mediation', name: 'Mediation', type: 'theme', keywords: ['mediation'] },
-      { id: 'lok-adalat', name: 'Lok Adalat', type: 'theme', keywords: ['lok adalat'] },
-    ],
-  },
-  {
-    id: 'pil',
-    slug: 'pil',
-    name: 'Public Interest Litigation',
-    shortName: 'PIL',
-    priority: 'medium',
-    aibeQuestions: 4,
-    bareActs: ['Constitution of India (Arts 32, 226)'],
-    description: 'Locus standi, PIL procedure, and landmark directions. (Petition skeleton is under Petition Formats.)',
-    keywords: ['pil', 'public interest', 'locus standi'],
-    icon: 'Megaphone',
-    topics: [
-      { id: 'locus', name: 'Locus Standi & PIL principles', type: 'theme', highYield: true, keywords: ['locus standi'] },
-      { id: 'pil-procedure', name: 'PIL procedure & remedies', type: 'theme', keywords: ['pil procedure'] },
-    ],
-  },
-  {
-    id: 'ethics',
-    slug: 'ethics',
-    name: 'Professional Ethics & BCI Rules',
-    shortName: 'Ethics',
-    priority: 'medium',
-    aibeQuestions: 4,
-    bareActs: ['Advocates Act, 1961', 'Bar Council of India Rules'],
-    description: 'Duties of advocate, misconduct, and BCI disciplinary rules.',
-    keywords: ['professional ethics', 'bci', 'advocates act', 'misconduct'],
-    icon: 'Scale',
-    topics: [
-      { id: 'duties', name: 'Duties of an Advocate', type: 'theme', highYield: true, keywords: ['duties of advocate'] },
-      { id: 'misconduct', name: 'Professional Misconduct', type: 'theme', highYield: true, keywords: ['misconduct'] },
-      { id: 'bci-rules', name: 'BCI Rules (essentials)', type: 'theme', keywords: ['bci rules'] },
-    ],
-  },
-  {
-    id: 'labour',
-    slug: 'labour',
-    name: 'Labour & Industrial Law',
-    shortName: 'Labour',
-    priority: 'medium',
-    aibeQuestions: 4,
-    bareActs: ['Industrial Disputes Act, 1947', 'Factories Act, 1948'],
-    description: 'Industrial disputes, strikes, lockouts, and basic labour welfare provisions.',
-    keywords: ['labour', 'industrial disputes', 'strike'],
-    icon: 'Factory',
-    topics: [
-      { id: 'id-act', name: 'Industrial Disputes Act', type: 'act', highYield: true, keywords: ['industrial disputes'] },
-      { id: 'factories', name: 'Factories Act (essentials)', type: 'act', keywords: ['factories act'] },
-    ],
-  },
-  {
-    id: 'taxation',
-    slug: 'taxation',
-    name: 'Law related to Taxation',
-    shortName: 'Taxation',
-    priority: 'medium',
-    aibeQuestions: 4,
-    bareActs: ['Income Tax Act, 1961 (essentials)', 'GST basics (awareness)'],
-    description: 'Basic concepts of direct and indirect tax relevant to AIBE-level questions.',
-    keywords: ['taxation', 'income tax', 'gst'],
-    icon: 'Calculator',
-    topics: [
-      { id: 'income-tax-basics', name: 'Income Tax basics', type: 'theme', keywords: ['income tax'] },
-      { id: 'gst-awareness', name: 'GST awareness', type: 'theme', keywords: ['gst'] },
-    ],
-  },
-  {
-    id: 'admin',
-    slug: 'admin',
-    name: 'Administrative Law',
-    shortName: 'Admin Law',
-    priority: 'low',
-    aibeQuestions: 3,
-    bareActs: [],
-    description: 'Natural justice, delegated legislation, and judicial review of administrative action.',
-    keywords: ['administrative law', 'natural justice'],
-    icon: 'Building2',
-    topics: [
-      { id: 'natural-justice', name: 'Principles of Natural Justice', type: 'theme', highYield: true, keywords: ['natural justice'] },
-      { id: 'delegated', name: 'Delegated Legislation', type: 'theme', keywords: ['delegated legislation'] },
-      { id: 'judicial-review-admin', name: 'Judicial Review of Admin Action', type: 'theme', keywords: ['judicial review'] },
-    ],
-  },
-  {
-    id: 'company',
-    slug: 'company',
-    name: 'Company Law',
-    shortName: 'Company',
-    priority: 'low',
-    aibeQuestions: 2,
-    bareActs: ['Companies Act, 2013 (essentials)'],
-    description: 'Incorporation, directors, and basic corporate concepts tested at AIBE level.',
-    keywords: ['company law', 'companies act'],
-    icon: 'Briefcase',
-    topics: [
-      { id: 'incorporation', name: 'Incorporation & Types of Companies', type: 'theme', keywords: ['incorporation'] },
-      { id: 'directors', name: 'Directors & Meetings (basics)', type: 'theme', keywords: ['directors'] },
-    ],
-  },
-  {
-    id: 'environment',
-    slug: 'environment',
-    name: 'Environmental Law',
-    shortName: 'Environment',
-    priority: 'low',
-    aibeQuestions: 2,
-    bareActs: ['Environment (Protection) Act, 1986'],
-    description: 'Constitutional basis, EPA, and key environmental principles.',
-    keywords: ['environment', 'pollution', 'epa'],
-    icon: 'Leaf',
-    topics: [
-      { id: 'constitutional-env', name: 'Constitutional provisions', type: 'theme', keywords: ['article 48a'] },
-      { id: 'epa', name: 'Environment Protection Act', type: 'act', keywords: ['epa'] },
-    ],
-  },
-  {
-    id: 'cyber',
-    slug: 'cyber',
-    name: 'Cyber Laws',
-    shortName: 'Cyber',
-    priority: 'low',
-    aibeQuestions: 2,
-    bareActs: ['Information Technology Act, 2000'],
-    description: 'IT Act essentials — offences, intermediaries, and electronic records.',
-    keywords: ['cyber', 'it act'],
-    icon: 'Monitor',
-    topics: [{ id: 'it-act', name: 'IT Act essentials', type: 'act', keywords: ['it act'] }],
-  },
-  {
-    id: 'land',
-    slug: 'land',
-    name: 'Land Acquisition',
-    shortName: 'Land',
-    priority: 'low',
-    aibeQuestions: 2,
-    bareActs: ['Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013'],
-    description: 'Acquisition process, compensation, and rehabilitation under the 2013 Act.',
-    keywords: ['land acquisition', 'compensation'],
-    icon: 'Map',
-    topics: [{ id: 'acquisition-process', name: 'Acquisition process & compensation', type: 'theme', keywords: ['land acquisition'] }],
-  },
-  {
-    id: 'ipr',
-    slug: 'ipr',
-    name: 'Intellectual Property Laws',
-    shortName: 'IPR',
-    priority: 'low',
-    aibeQuestions: 2,
-    bareActs: ['Copyright Act, 1957', 'Trade Marks Act, 1999', 'Patents Act, 1970'],
-    description: 'Basics of copyright, trademarks, and patents for AIBE-level awareness.',
-    keywords: ['ipr', 'copyright', 'trademark', 'patent'],
-    icon: 'Copyright',
-    topics: [
-      { id: 'copyright', name: 'Copyright basics', type: 'theme', keywords: ['copyright'] },
-      { id: 'trademark', name: 'Trade Marks basics', type: 'theme', keywords: ['trademark'] },
-      { id: 'patent', name: 'Patents basics', type: 'theme', keywords: ['patent'] },
+      { id: 'format-bail-application', name: 'Bail Application', type: 'format', note: 'Regular and anticipatory bail application skeleton', keywords: ['bail application', 'anticipatory bail'], highYield: true },
     ],
   },
 ]
 
-export function getSubjectsByPriority(priority: SubjectPriority): LawSubjectMeta[] {
-  return SUBJECTS.filter((s) => s.priority === priority)
-}
-
-export function getSubjectBySlug(slug: string): LawSubjectMeta | undefined {
-  return SUBJECTS.find((s) => s.slug === slug)
-}
-
-export function getSubjectById(id: string): LawSubjectMeta | undefined {
-  return SUBJECTS.find((s) => s.id === id)
-}
-
-export function searchSubjectsAndTopics(query: string): {
-  subjects: LawSubjectMeta[]
-  topics: { subject: LawSubjectMeta; topic: LawTopic }[]
-} {
-  const q = query.trim().toLowerCase()
-  if (!q) return { subjects: [], topics: [] }
-  const subjects = SUBJECTS.filter(
-    (s) =>
-      s.name.toLowerCase().includes(q) ||
-      s.shortName.toLowerCase().includes(q) ||
-      s.keywords.some((k) => k.includes(q)) ||
-      s.bareActs.some((b) => b.toLowerCase().includes(q)),
-  )
-  const topics: { subject: LawSubjectMeta; topic: LawTopic }[] = []
-  for (const s of SUBJECTS) {
-    for (const t of s.topics) {
-      const hay = [t.name, t.range ?? '', t.note ?? '', ...(t.keywords ?? [])].join(' ').toLowerCase()
-      if (hay.includes(q)) topics.push({ subject: s, topic: t })
-    }
-  }
-  return { subjects, topics }
-}
-
-export function getTopic(
-  subjectSlug: string,
-  topicId: string,
-): { subject: LawSubjectMeta; topic: LawTopic } | undefined {
-  const subject = getSubjectBySlug(subjectSlug)
-  if (!subject) return undefined
-  const topic = subject.topics.find((t) => t.id === topicId)
-  if (!topic) return undefined
-  return { subject, topic }
-}
-
 export const PRIORITY_ORDER: SubjectPriority[] = ['high', 'medium', 'low']
 
 export const PRIORITY_LABELS: Record<SubjectPriority, string> = {
-  high: 'High Priority (AIBE weightage)',
+  high: 'High Priority',
   medium: 'Medium Priority',
-  low: 'Lower Weightage',
+  low: 'Low Priority',
+}
+
+export function getSubjectById(id: string): LawSubjectMeta | undefined {
+  return SUBJECTS.find((s) => s.id === id || s.slug === id)
+}
+
+export function getSubjectBySlug(slug: string): LawSubjectMeta | undefined {
+  return SUBJECTS.find((s) => s.slug === slug || s.id === slug)
+}
+
+export function getTopicById(subjectId: string, topicId: string): LawTopic | undefined {
+  const subject = getSubjectById(subjectId)
+  return subject?.topics.find((t) => t.id === topicId)
 }
