@@ -4,7 +4,6 @@ import {
   ChevronRight,
   Sparkles,
   Scale,
-  BookOpen,
 } from 'lucide-react'
 import type { LawSubjectMeta, LawTopic } from '../../data/subjects'
 import { getSubjectIntro } from '../../data/subjectIntros'
@@ -16,18 +15,6 @@ interface SubjectDetailProps {
   onSelectTopic: (topic: LawTopic) => void
   searchQuery: string
   onSearchChange: (q: string) => void
-}
-
-function topicTypeLabel(type: LawTopic['type']) {
-  switch (type) {
-    case 'article': return 'Article'
-    case 'section': return 'Section'
-    case 'chapter': return 'Chapter'
-    case 'doctrine': return 'Doctrine'
-    case 'act': return 'Act'
-    case 'format': return 'Format'
-    default: return 'Theme'
-  }
 }
 
 export function SubjectDetail({
@@ -92,6 +79,14 @@ export function SubjectDetail({
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">{subject.name}</h2>
           <p className="text-sm text-slate-600 dark:text-slate-400 max-w-2xl">{subject.description}</p>
+          {intro && (
+            <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/60 p-4 space-y-2">
+              <p className="text-xs font-semibold text-slate-700 dark:text-slate-300">{intro.act} · {intro.inForce}</p>
+              <p className="text-xs text-slate-500">{intro.counts}</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400">{intro.body}</p>
+              <p className="text-xs text-slate-500">{intro.howTo}</p>
+            </div>
+          )}
           {subject.bareActs.length > 0 && (
             <p className="text-xs text-slate-500"><span className="font-semibold text-slate-700 dark:text-slate-300">Bare Acts: </span>{subject.bareActs.join(' · ')}</p>
           )}
@@ -119,6 +114,15 @@ export function SubjectDetail({
         <section className="space-y-3">
           <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-200">More study themes</h3>
           <TopicList topics={otherThemes} onSelectTopic={onSelectTopic} />
+        </section>
+      )}
+
+      {showArticleGroups && (
+        <section className="space-y-5">
+          <CatalogHeading title={`All articles (${articleTopics.length})`} subtitle="Click any article for the study page. Official 2024 Legislative Department text." />
+          {articleClusters.map((group) => (
+            <ChapterBlock key={group.name} name={group.name} topics={group.topics} onSelectTopic={onSelectTopic} compact />
+          ))}
         </section>
       )}
 
