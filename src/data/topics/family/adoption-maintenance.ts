@@ -1,114 +1,126 @@
 import type { TopicContent } from '../topicTypes'
 
 const study = `Topic at a glance
-The Hindu Adoptions and Maintenance Act, 1956 (HAMA) regulates (a) who may adopt and be adopted and (b) the right of certain dependants to maintenance. Adoption under HAMA is irrevocable and severs the child’s ties with the birth family for the purposes of the Act.
+The Hindu Adoptions and Maintenance Act, 1956 (HAMA) is the principal statute on valid adoption and maintenance among Hindus. Examination questions cluster around: who may take and give in adoption (ss. 7–9), conditions for a valid adoption (ss. 6 and 11), the effect of adoption (s. 12), and the wife’s and dependants’ maintenance (ss. 18–22). Always write “Section 12 of the Hindu Adoptions and Maintenance Act, 1956”, never a bare section number.
 
 Introduction
-HAMA replaced the old customary law of adoption among Hindus with a statutory scheme. It also consolidates the right of the wife, children, aged parents and certain other dependants to maintenance.
+Adoption under Hindu law was traditionally a spiritual and familial institution. HAMA codified capacity, consent and ceremonial conditions, and fixed the legal effect of a valid adoption: the child is deemed the child of the adoptive parents for all purposes, with a clean break from the birth family subject to the statute. Maintenance under HAMA is a personal-law civil right distinct from interim/permanent alimony under the Hindu Marriage Act, 1955 and from s. 125 BNSS/CrPC, though the forums can overlap in practice.
 
-Meaning and concept
-Adoption (Chapter II): a valid adoption requires capacity of the adopter, capacity of the person giving in adoption, capacity of the child, and compliance with the other conditions in ss. 6–11. The effect (s. 12) is that the child is deemed the child of the adoptive parents for all purposes.
+Who may take in adoption (ss. 7–8)
+Any male Hindu who is of sound mind and is not a minor may take a son or daughter in adoption, subject to the consent of his wife if she is alive and capable of consenting, unless she has renounced the world, ceased to be a Hindu, or been declared to be of unsound mind. A female Hindu who is of sound mind and not a minor may take a son or daughter in adoption if she is unmarried, or if married, where her husband is dead, has renounced the world, has ceased to be a Hindu, or has been declared to be of unsound mind, subject to the statutory text.
 
-Maintenance (Chapter III): the wife’s right under s. 18 is lifelong (subject to disentitling conduct). Sections 19–22 deal with widowed daughter-in-law, children, aged parents and other dependants.
+Who may give in adoption (s. 9)
+The father, mother or guardian may give a child in adoption under the conditions laid down in s. 9. Where both parents are alive, the father’s right is subject to the mother’s consent unless she has renounced the world, ceased to be a Hindu, or been declared of unsound mind. After the father’s death, the mother may give the child in adoption. Guardian’s power is constrained and often requires court permission as the section provides.
 
-Essential conditions for a valid adoption (ss. 6–11)
-1. The person adopting has the capacity and right to take in adoption (ss. 7–8).
-2. The person giving in adoption has the capacity to do so (s. 9).
-3. The person adopted is capable of being taken in adoption (s. 10 — generally unmarried, under 15, not already adopted).
-4. Other conditions in s. 11 (including the age gap of 21 years when adopting a child of the opposite sex, and the prohibition on adopting a child of the same sex if a child of that sex is already living).
+Conditions for a valid adoption (ss. 6 and 11)
+Section 6 states that no adoption is valid unless the person adopting has the capacity and right to take; the person giving has the capacity to give; the person adopted is capable of being taken; and the adoption complies with the other conditions of the Act (including s. 11).
 
-Capacity to adopt
-- Male (s. 7): major, of sound mind; if married, consent of the wife is ordinarily required.
-- Female (s. 8): major, of sound mind; if married, she may adopt only in the limited situations recognised by the section (widow, etc.).
+Section 11 conditions include: if the adoption is of a son, the adoptive father or mother must not have a Hindu son, son’s son, or son’s son’s son living at the time of adoption; if of a daughter, must not have a Hindu daughter or son’s daughter living; the same child may not be adopted simultaneously by two or more persons; and the child must be actually given and taken in adoption with intent to transfer the child. A paper declaration without giving and taking is not enough.
+
+Effect of adoption (s. 12)
+An adopted child is deemed to be the child of the adoptive father or mother for all purposes from the date of the adoption. All ties with the birth family are severed, subject to statutory savings: the child does not divest any person of an estate vested before the adoption. Property rights accrue in the adoptive family from the date of adoption.
 
 Maintenance of wife (s. 18)
-A Hindu wife is entitled to be maintained by her husband during her lifetime. She may live separately and still claim maintenance on grounds such as desertion, cruelty, leprosy, another wife living, concubine in the house, conversion or any other justifiable cause. She is disentitled if she is unchaste or ceases to be a Hindu by conversion.
+A Hindu wife is entitled to be maintained by her husband during her lifetime, subject to the section. She may claim separate residence and maintenance for desertion, cruelty, virulent disease, keeping a concubine, conversion, or other justifying cause. Distinguish s. 18 HAMA from ss. 24–25 HMA and from s. 125 BNSS/CrPC.
+
+Maintenance of dependants (ss. 21–22)
+Section 21 defines dependants. Section 22 obliges the heirs of a deceased Hindu to maintain the dependants of the deceased out of the estate. Quantum depends on the estate and the needs of dependants.
 
 Current-law close
-Cite the Hindu Adoptions and Maintenance Act, 1956 by section. Maintenance under HAMA co-exists with interim and permanent alimony under the Hindu Marriage Act (ss. 24–25) and with s. 125 BNSS / CrPC.`
+Cite the Hindu Adoptions and Maintenance Act, 1956 — ss. 6–12 for adoption and ss. 18–22 for maintenance. For matrimonial interim/permanent alimony cite the Hindu Marriage Act, 1955; for summary maintenance cite s. 125 BNSS/CrPC.`
 
 export default {
   glance:
-    'Hindu Adoptions and Maintenance Act, 1956 — conditions for valid adoption (ss. 6–11), effect of adoption (s. 12), wife’s maintenance (s. 18), and maintenance of other dependants (ss. 19–22).',
+    'Hindu Adoptions and Maintenance Act, 1956 — capacity to take/give (ss. 7–9), conditions (ss. 6, 11), effect of adoption (s. 12), wife’s maintenance (s. 18), dependants (ss. 21–22).',
   study,
   examples: [
     {
-      id: 'hama-ex-adopt',
+      id: 'hama-ex-valid',
       title: 'Example — valid adoption',
       description:
-        'A childless Hindu couple, both majors and of sound mind, take a boy under 15 years in adoption with the consent of the natural parents. The age gap and other s. 11 conditions are satisfied. The adoption is valid and irrevocable.',
+        'A Hindu male of sound mind, major, with his wife’s consent, takes a Hindu boy under fifteen. Natural parents give with required consent. Giving and taking is performed. Valid under ss. 6 and 11; s. 12 deems the boy the adoptive parents’ child.',
+    },
+    {
+      id: 'hama-ex-son-living',
+      title: 'Example — adoption invalid where Hindu son living',
+      description:
+        'Adoptive father already has a living Hindu son and purports to adopt another son. The adoption violates s. 11 and is invalid.',
     },
     {
       id: 'hama-ex-maint',
-      title: 'Example — wife living separately',
+      title: 'Example — wife’s separate residence and maintenance',
       description:
-        'Husband brings a second wife into the house. The first wife leaves and claims maintenance under s. 18. She is entitled to live separately and to maintenance; the presence of another wife is a statutory ground.',
+        'Husband deserts the wife without reasonable cause. She may claim separate residence and maintenance under s. 18 HAMA.',
     },
   ],
   hypotheticals: [
     {
       id: 'hama-hypo',
-      title: 'Classroom problem',
+      title: 'Classroom problem — effect of adoption',
       facts:
-        'A Hindu male aged 40, already having a living son, wants to adopt a girl child of 10 years. His wife consents.',
-      question: 'Is the adoption permissible?',
-      applicableLaw: 'Sections 7, 10 and 11 of the Hindu Adoptions and Maintenance Act, 1956.',
+        'C is validly adopted by A in 2018. In 2017 a share in C’s birth-family property had already vested in C’s birth brother under a completed partition. C claims that share after adoption.',
+      question: 'Does s. 12 allow C to reopen the vested estate?',
+      applicableLaw: 'Section 12 of the Hindu Adoptions and Maintenance Act, 1956.',
       analysis:
-        'Section 11 prohibits the adoption of a child of a particular sex if a child of the same sex is already living. Here the existing child is a son and the proposed adoptee is a girl, so the same-sex bar does not apply. The age gap of 21 years is satisfied. Wife’s consent is present. The adoption can be valid.',
-      conclusion: 'Permissible if all other conditions of ss. 6–11 are met.',
+        'Section 12 severs birth-family ties from the date of adoption but provides that the adopted child shall not divest any person of an estate vested before the adoption.',
+      conclusion:
+        'C cannot divest the already vested estate. Cite s. 12 HAMA and the non-divesting rule.',
     },
   ],
   distinctions: [
     {
-      id: 'hama-dist',
-      title: 'HAMA maintenance vs HMA alimony',
-      left: 'HAMA s. 18',
-      right: 'HMA ss. 24–25',
+      id: 'hama-dist-maint',
+      title: 'HAMA maintenance vs HMA vs s. 125',
+      left: 'HAMA ss. 18–22',
+      right: 'HMA ss. 24–25 / s. 125 BNSS',
       rows: [
-        { point: 'Nature', left: 'Substantive right of the wife against the husband', right: 'Relief in pending / concluded matrimonial proceedings' },
-        { point: 'Forum', left: 'Civil court / family court under HAMA', right: 'Court seized of the HMA petition' },
+        { point: 'Nature', left: 'Personal-law civil right under HAMA', right: 'Matrimonial (HMA) or summary statutory (s. 125)' },
+        { point: 'Interim in divorce', left: 'Not the HMA pendente lite tool', right: 's. 24 HMA is interim during HMA case' },
       ],
     },
   ],
   misconceptions: [
-    { id: 'hama-m1', trap: 'Treating adoption as revocable by the adoptive parents.', correction: 'Section 15: a valid adoption cannot be cancelled.' },
-    { id: 'hama-m2', trap: 'Assuming a married woman can freely adopt during the husband’s lifetime.', correction: 'Section 8 restricts a married woman’s capacity while the husband is alive and competent.' },
+    {
+      id: 'hama-m1',
+      trap: 'Treating adoption as valid by agreement alone without giving and taking.',
+      correction: 'Section 11 requires actual giving and taking with intent to transfer the child.',
+    },
+    {
+      id: 'hama-m2',
+      trap: 'Assuming an adopted child always reopens past successions in the birth family.',
+      correction: 'Section 12 does not divest estates already vested before adoption.',
+    },
   ],
   questionsAndAnswers: [
     {
       id: 'hama-q-10',
       marks: 10,
-      question: 'State the conditions for a valid adoption under the Hindu Adoptions and Maintenance Act, 1956.',
+      question: 'Explain the conditions for a valid adoption under the Hindu Adoptions and Maintenance Act, 1956.',
       answer:
-        'Introduction. Sections 6 to 11 of the Hindu Adoptions and Maintenance Act, 1956 prescribe the requisites of a valid adoption.\n\nRequisites (s. 6). The adopter must have capacity and right; the giver must have capacity; the child must be capable of being adopted; and the other conditions of the Chapter must be complied with.\n\nCapacity (ss. 7–8). A major Hindu male of sound mind may adopt; if married, the wife’s consent is ordinarily required. A major Hindu female of sound mind may adopt in the situations recognised by s. 8.\n\nChild (s. 10). Generally Hindu, not already adopted, unmarried, and under fifteen years (unless custom permits otherwise).\n\nOther conditions (s. 11). Include the prohibition on adopting a child of the same sex when a child of that sex is already living, and the minimum age difference of twenty-one years when the adopter and the child are of opposite sexes.\n\nEffect (s. 12). The child is deemed the child of the adoptive parents for all purposes; ties with the birth family are severed for the purposes of the Act.\n\nConclusion. List ss. 6–12 and emphasise irrevocability under s. 15.',
+        'Introduction. Validity is governed by Sections 6 and 11 of the Hindu Adoptions and Maintenance Act, 1956, read with capacity in ss. 7–9.\n\nSection 6. Capacity and right to take; capacity to give; capacity to be taken; compliance with other conditions including s. 11.\n\nSection 11. Living son/grandson bars for son adoption; living daughter/son’s daughter bars for daughter adoption; no simultaneous adoption by two persons; actual giving and taking with intent to transfer.\n\nIllustration. A has a living Hindu son and adopts another boy — invalid under s. 11.\n\nEffect. Valid adoption attracts s. 12 from the date of adoption.\n\nConclusion. Cite ss. 6 and 11 HAMA 1956 and the giving-and-taking requirement.',
+      explanation: 'Must mention giving and taking and living-child bars.',
     },
     {
       id: 'hama-q-16',
       marks: 16,
-      question: 'Discuss the right of a Hindu wife to maintenance under Section 18 of the Hindu Adoptions and Maintenance Act, 1956. How does it interact with the Hindu Marriage Act?',
+      question: 'Discuss the effect of a valid adoption under Section 12 HAMA and the wife’s right to maintenance under Section 18 HAMA.',
       answer:
-        'Introduction. Section 18 of the Hindu Adoptions and Maintenance Act, 1956 confers on a Hindu wife a right to be maintained by her husband during her lifetime.\n\nContent of the right. The husband is bound to maintain the wife. She may claim to live separately without forfeiting the right on the grounds enumerated in s. 18(2): desertion, cruelty, virulent leprosy, another wife living, concubine kept in the house, conversion of the husband, or any other justifiable cause.\n\nDisentitlement (s. 18(3)). The wife is not entitled to separate residence and maintenance if she is unchaste or ceases to be a Hindu by conversion to another religion.\n\nQuantum. The amount is determined according to the principles in s. 23 (status, needs, income, etc.).\n\nInteraction with HMA. Sections 24 and 25 of the Hindu Marriage Act provide for interim maintenance and permanent alimony in proceedings under that Act. The two remedies are concurrent; a wife may pursue HAMA independently of any matrimonial petition. Section 125 BNSS / CrPC provides a third, summary remedy.\n\nConclusion. Section 18 is a substantive, lifelong right subject to statutory disentitlements. Always name the Hindu Adoptions and Maintenance Act, 1956 and distinguish it from HMA alimony and s. 125 proceedings.',
+        'Introduction. Section 12 fixes the status of a validly adopted child. Section 18 protects a Hindu wife’s maintenance.\n\nSection 12. From the date of adoption the child is deemed the child of the adoptive parents for all purposes. Birth-family ties are severed, subject to savings: no divesting of estates vested before adoption.\n\nIllustration. Property vested in a birth-family heir before adoption cannot be reopened merely by s. 12.\n\nSection 18. Wife is entitled to maintenance from the husband. Separate residence and maintenance may be claimed for desertion, cruelty, virulent disease, concubine, conversion, or other justifying cause, subject to statutory disentitlements.\n\nDistinction. ss. 24–25 HMA apply inside matrimonial proceedings; s. 125 BNSS is summary; s. 18 HAMA is personal-law civil right.\n\nDependants. ss. 21–22 oblige heirs to maintain dependants out of the estate.\n\nConclusion. Cite ss. 12 and 18 of the Hindu Adoptions and Maintenance Act, 1956.',
+      explanation: 'Non-divesting rule + HAMA/HMA/s.125 distinction score highly.',
     },
   ],
   cases: [],
-  bareActPointers: [
-    'Section 6 Hindu Adoptions and Maintenance Act, 1956',
-    'Section 7 Hindu Adoptions and Maintenance Act, 1956',
-    'Section 8 Hindu Adoptions and Maintenance Act, 1956',
-    'Section 11 Hindu Adoptions and Maintenance Act, 1956',
-    'Section 12 Hindu Adoptions and Maintenance Act, 1956',
-    'Section 18 Hindu Adoptions and Maintenance Act, 1956',
-  ],
+  bareActPointers: ['Hindu Adoptions and Maintenance Act, 1956 — ss. 6–12, 18, 20–22'],
   examTips: [
-    'List the four heads under s. 6 and the key conditions of s. 11.',
-    'Emphasise that a valid adoption is irrevocable (s. 15).',
-    'For maintenance, state both the right and the disentitling conduct under s. 18(3).',
-    'Distinguish HAMA s. 18 from HMA ss. 24–25 and s. 125 BNSS.',
+    'Always name HAMA with the section.',
+    'Validity: capacity + s. 6 + s. 11 giving and taking.',
+    'Effect: s. 12 + non-divesting.',
+    'Wife: s. 18 grounds for separate residence and maintenance.',
   ],
   revisionPoints: [
-    'ss. 6–11 = conditions for valid adoption.',
-    's. 12 = effect; s. 15 = irrevocable.',
-    's. 18 = wife’s lifelong maintenance right.',
-    'Consent of wife ordinarily required for male adopter.',
+    'ss. 6 & 11 — conditions; giving and taking.',
+    'ss. 7–9 — who may take / give.',
+    's. 12 — deemed child; non-divesting.',
+    's. 18 — wife’s maintenance; ss. 21–22 dependants.',
   ],
 } satisfies TopicContent
