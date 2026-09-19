@@ -19,7 +19,7 @@ const CATEGORIES = [
   'Feedback & General',
   'Bug Report',
   'Legal Content / Section Accuracy',
-  'New Subject or Bare Act Request',
+  'New Subject or Statute Request',
   'New Exam / Study Tool Idea',
   'Security or Privacy',
 ] as const
@@ -103,7 +103,6 @@ export function ContactFeedback({ onBackToHome }: ContactFeedbackProps) {
 
   return (
     <div className="max-w-4xl mx-auto space-y-8 py-4">
-      {/* Back button */}
       <div>
         <button
           type="button"
@@ -115,7 +114,6 @@ export function ContactFeedback({ onBackToHome }: ContactFeedbackProps) {
         </button>
       </div>
 
-      {/* Hero Header */}
       <div className="rounded-3xl border border-slate-200/80 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm p-6 sm:p-8 shadow-sm">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100 dark:border-slate-800">
           <div>
@@ -150,10 +148,8 @@ export function ContactFeedback({ onBackToHome }: ContactFeedbackProps) {
           </div>
         </div>
 
-        {/* Content Area */}
         <div className="pt-6">
           {submittedId ? (
-            /* Success View */
             <div className="py-8 px-4 text-center space-y-5 animate-in fade-in duration-300">
               <div className="w-16 h-16 rounded-3xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mx-auto shadow-sm">
                 <CheckCircle2 className="w-8 h-8" />
@@ -191,7 +187,6 @@ export function ContactFeedback({ onBackToHome }: ContactFeedbackProps) {
               </div>
             </div>
           ) : (
-            /* Form View */
             <form onSubmit={handleSubmit} className="space-y-6">
               {error && (
                 <div className="p-4 rounded-2xl bg-rose-50 dark:bg-rose-950/50 border border-rose-200 dark:border-rose-900 text-rose-700 dark:text-rose-300 text-sm flex items-start gap-3">
@@ -204,59 +199,26 @@ export function ContactFeedback({ onBackToHome }: ContactFeedbackProps) {
               )}
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                {/* Name */}
                 <div className="space-y-1.5">
-                  <label
-                    htmlFor="contact-name"
-                    className="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300"
-                  >
+                  <label htmlFor="contact-name" className="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">
                     Your Name <span className="text-slate-400 font-normal">(Optional)</span>
                   </label>
-                  <input
-                    id="contact-name"
-                    type="text"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    placeholder="e.g. Adv. Sharma, or Law Student"
-                    className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition"
-                  />
+                  <input id="contact-name" type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="e.g. Adv. Sharma, or Law Student" className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition" />
                 </div>
-
-                {/* Email */}
                 <div className="space-y-1.5">
-                  <label
-                    htmlFor="contact-email"
-                    className="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300"
-                  >
+                  <label htmlFor="contact-email" className="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">
                     Your Email <span className="text-rose-500">*</span>
                   </label>
-                  <input
-                    id="contact-email"
-                    type="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="student@example.com"
-                    className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition"
-                  />
+                  <input id="contact-email" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="student@example.com" className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition" />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                {/* Topic / Category */}
                 <div className="space-y-1.5">
-                  <label
-                    htmlFor="contact-category"
-                    className="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300"
-                  >
+                  <label htmlFor="contact-category" className="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">
                     Topic / Category
                   </label>
-                  <select
-                    id="contact-category"
-                    value={category}
-                    onChange={(e) => setCategory(e.target.value)}
-                    className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition"
-                  >
+                  <select id="contact-category" value={category} onChange={(e) => setCategory(e.target.value)} className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition">
                     {CATEGORIES.map((cat) => (
                       <option key={cat} value={cat}>
                         {cat}
@@ -264,62 +226,30 @@ export function ContactFeedback({ onBackToHome }: ContactFeedbackProps) {
                     ))}
                   </select>
                 </div>
-
-                {/* Subject */}
                 <div className="space-y-1.5">
-                  <label
-                    htmlFor="contact-subject"
-                    className="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300"
-                  >
+                  <label htmlFor="contact-subject" className="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">
                     Subject <span className="text-slate-400 font-normal">(Optional)</span>
                   </label>
-                  <input
-                    id="contact-subject"
-                    type="text"
-                    value={subject}
-                    onChange={(e) => setSubject(e.target.value)}
-                    placeholder="e.g. Suggestion for BNSS trial flow tool"
-                    className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition"
-                  />
+                  <input id="contact-subject" type="text" value={subject} onChange={(e) => setSubject(e.target.value)} placeholder="e.g. Suggestion for BNSS trial flow tool" className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition" />
                 </div>
               </div>
 
-              {/* Message */}
               <div className="space-y-1.5">
                 <div className="flex items-center justify-between">
-                  <label
-                    htmlFor="contact-message"
-                    className="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300"
-                  >
+                  <label htmlFor="contact-message" className="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">
                     Message <span className="text-rose-500">*</span>
                   </label>
-                  <span className="text-[11px] text-slate-400">
-                    {message.length} characters
-                  </span>
+                  <span className="text-[11px] text-slate-400">{message.length} characters</span>
                 </div>
-                <textarea
-                  id="contact-message"
-                  required
-                  rows={5}
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  placeholder="Share details of your question, suggestion, bug report, or request here..."
-                  className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition leading-relaxed"
-                />
+                <textarea id="contact-message" required rows={5} value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Share details of your question, suggestion, bug report, or request here..." className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition leading-relaxed" />
               </div>
 
-              {/* Submit Button */}
               <div className="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div className="text-xs text-slate-500 flex items-center gap-1.5">
                   <Sparkles className="w-3.5 h-3.5 text-blue-600" />
                   <span>Submissions are stored privately in Firebase for our editorial review.</span>
                 </div>
-
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition shadow-sm shadow-blue-600/20"
-                >
+                <button type="submit" disabled={loading} className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition shadow-sm shadow-blue-600/20">
                   {loading ? (
                     <>
                       <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
@@ -338,7 +268,6 @@ export function ContactFeedback({ onBackToHome }: ContactFeedbackProps) {
         </div>
       </div>
 
-      {/* Info Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="rounded-2xl border border-slate-200/80 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 p-5 space-y-2">
           <div className="flex items-center gap-2 text-slate-900 dark:text-white font-bold text-sm">
@@ -350,7 +279,6 @@ export function ContactFeedback({ onBackToHome }: ContactFeedbackProps) {
             amendment or judicial clarification that should be updated, please submit the provision number above.
           </p>
         </div>
-
         <div className="rounded-2xl border border-slate-200/80 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 p-5 space-y-2">
           <div className="flex items-center gap-2 text-slate-900 dark:text-white font-bold text-sm">
             <Mail className="w-4 h-4 text-blue-600" />
@@ -358,10 +286,7 @@ export function ContactFeedback({ onBackToHome }: ContactFeedbackProps) {
           </div>
           <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
             Prefer using your own email client? Send your message directly to{' '}
-            <a
-              href="mailto:codepackr@gmail.com"
-              className="text-blue-700 dark:text-blue-300 font-semibold hover:underline"
-            >
+            <a href="mailto:codepackr@gmail.com" className="text-blue-700 dark:text-blue-300 font-semibold hover:underline">
               codepackr@gmail.com
             </a>
             . We typically respond within 24 to 48 hours.

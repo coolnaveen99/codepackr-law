@@ -6,7 +6,7 @@
 export const SITE_URL = 'https://law.codepackr.com'
 export const SITE_NAME = 'Codepackr Law'
 export const SITE_TAGLINE =
-  'Free client-side AIBE & Judiciary MCQ practice, Bare Act tools, flashcards and more. 100% private.'
+  'Free client-side AIBE & Judiciary MCQ practice, study notes, flashcards and more. 100% private.'
 
 export interface PageMeta {
   title: string
