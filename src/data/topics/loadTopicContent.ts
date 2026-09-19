@@ -21,11 +21,11 @@ export type {
 
 export function getStudyBody(content: TopicContent | null | undefined): string {
   if (!content) return ''
-  return content.study || content.detailed || content.short || ''
+  return content.study || content.detailed || content.short || content.glance || ''
 }
 
 function hasStudyBody(content: TopicContent): boolean {
-  return Boolean(content.study || content.detailed || content.short)
+  return Boolean(content.study || content.detailed || content.short || content.glance)
 }
 
 const topicModules = import.meta.glob<{ default: TopicContent }>('./*/*.ts', { eager: false })
