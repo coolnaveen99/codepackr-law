@@ -90,7 +90,7 @@ export async function loadTopicContent(subjectSlug: string, topicId: string): Pr
     }
   }
 
-  if (subjectSlug === 'cpc' && hasCpcCatalogTopic(topicId)) {
+  if (subjectSlug === 'cpc') {
     const synthesized = synthesizeCpcContent(topicId)
     if (synthesized) {
       cache.set(key, synthesized)
@@ -99,4 +99,26 @@ export async function loadTopicContent(subjectSlug: string, topicId: string): Pr
   }
 
   return null
+}
+
+export function hasTopicContentFile(subjectSlug: string, topicId: string): boolean {
+  if (`./${subjectSlug}/${topicId}.ts` in topicModules) return true
+  if (subjectSlug === 'constitution') {
+    const articleId = articleIdFromTopicId(topicId)
+    return Boolean(articleId && articleById(articleId))
+  }
+  if (subjectSlug === 'bns') {
+    const sectionId = sectionIdFromTopicId(topicId)
+    return Boolean(sectionId && bnsSectionById(sectionId))
+  }
+  if (subjectSlug === 'bnss') {
+    const sectionId = bnssSectionIdFromTopicId(topicId)
+    return Boolean(sectionId && bnssSectionById(sectionId))
+  }
+  if (subjectSlug === 'bsa') {
+    const sectionId = bsaSectionIdFromTopicId(topicId)
+    return Boolean(sectionId && bsaSectionById(sectionId))
+  }
+  if (subjectSlug === 'cpc') return hasCpcCatalogTopic(topicId)
+  return false
 }
