@@ -1,93 +1,115 @@
 import type { TopicContent } from '../topicTypes'
 
 const study = `Topic at a glance
-The Hindu Succession Act, 1956 codifies intestate succession among Hindus. The single most important provision for exams is Section 6 (devolution of interest in coparcenary property), radically amended in 2005 to give daughters equal coparcenary rights by birth.
+The Hindu Succession Act, 1956 (HSA) governs intestate succession among Hindus. The single most examined provision is Section 6 after the Hindu Succession (Amendment) Act, 2005: a daughter is a coparcener by birth in the same manner as a son in a joint Hindu family governed by Mitakshara law. Always name the Act: "Section 6 of the Hindu Succession Act, 1956".
 
 Introduction
-Before 1956, Mitakshara and Dayabhaga schools governed succession with marked gender inequality. The 1956 Act introduced Class I and Class II heirs and made a female Hindu’s property her absolute property (s. 14). The 2005 amendment to s. 6 is the modern centrepiece.
+Hindu succession has two classic streams: Mitakshara (coparcenary) and Dayabhaga. The 1956 Act unified and codified much of intestate succession. The 2005 amendment transformed daughters’ rights in Mitakshara coparcenary property. Testamentary succession remains available subject to the Act and general law.
 
-Meaning and concept
-Coparcenary property (Mitakshara) was traditionally limited to male members. Section 6 (as substituted in 2005) makes the daughter of a coparcener a coparcener by birth in her own right, with the same rights and liabilities as a son. The amendment is prospective in operation for partitions effected before 20 December 2004, with important Supreme Court clarifications.
+Applicability
+The Act applies to Hindus, Buddhists, Jains and Sikhs in the same broad sense as other Hindu-law statutes. Do not apply HSA rules to a Muslim intestate.
 
-Why the rule exists
-Gender equality in inheritance and the constitutional mandate of equality required removal of the male-only character of the Mitakshara coparcenary.
+Section 6 — devolution of interest in coparcenary property (post-2005)
+On and from 9 September 2005, in a Joint Hindu family governed by Mitakshara law, the daughter of a coparcener becomes a coparcener by birth in her own right in the same manner as the son. She has the same rights in the coparcenary property as she would have had if she had been a son, and is subject to the same liabilities. On death, the interest is ascertained (including by notional partition where required) and devolves in accordance with the section. Apply the binding Supreme Court position on temporal operation (including Vineeta Sharma) to the facts; do not rely on outdated one-line summaries.
 
-Key provisions
-- s. 6: Devolution of interest in coparcenary property (daughter as coparcener).
-- s. 8: General rules of succession in the case of males (Class I, then Class II, then agnates, then cognates).
-- s. 14: Property of a female Hindu to be her absolute property.
-- ss. 15–16: Succession to the property of a female Hindu.
+Section 8 — general rules of succession for males
+The property of a male Hindu dying intestate devolves: firstly upon Class I heirs; failing that, Class II; failing that, agnates; failing that, cognates. Class I heirs take simultaneously and to the exclusion of others. The Schedule lists Class I and Class II heirs (son, daughter, widow, mother and other listed heirs in Class I).
 
-Essential points on s. 6 (2005)
-1. Daughter of a coparcener becomes a coparcener by birth.
-2. Same rights in the coparcenary property as she would have had if she had been a son.
-3. Same liabilities and disabilities.
-4. The amendment does not reopen partitions or testamentary dispositions that were effected before 20 December 2004.
+Section 14 — female’s property
+Any property possessed by a female Hindu, whether acquired before or after the commencement of the Act, is held by her as full owner and not as a limited owner, subject to the section’s terms.
+
+Sections 15–16 — succession to a female Hindu
+These sections provide the order of succession to the property of a female Hindu dying intestate. The order can depend on the source of the property (for example, property inherited from the husband or father-in-law may follow a different entry point from self-acquired property). Read the source of title before applying the order of heirs.
+
+Method for problems
+When ancestral Mitakshara property is on the facts: (1) identify coparceners including daughters under s. 6; (2) work a notional partition to ascertain the deceased’s interest; (3) distribute that interest under s. 8 among Class I heirs.
 
 Current-law close
-Cite the Hindu Succession Act, 1956 and the Hindu Succession (Amendment) Act, 2005. For the operation of s. 6, the leading authorities are Vineeta Sharma v. Rakesh Sharma (2020) and Prakash v. Phulavati (2016) (the latter partly clarified by the former).`
+Cite the Hindu Succession Act, 1956 — s. 6 (coparcenary / 2005 amendment), s. 8 (male intestacy hierarchy), s. 14 (female full ownership), ss. 15–16 (female intestacy).`
 
 export default {
   glance:
-    'Hindu Succession Act, 1956 — s. 6 (daughter as coparcener after 2005 amendment), s. 8 (male intestate succession), s. 14 (female’s absolute property), ss. 15–16 (succession to female’s property).',
+    'Hindu Succession Act, 1956 — s. 6 daughter as coparcener (2005 amendment), s. 8 male intestate hierarchy (Class I/II), s. 14 female’s full ownership, ss. 15–16 female intestacy.',
   study,
   examples: [
     {
       id: 'hsa-ex-daughter',
       title: 'Example — daughter as coparcener',
       description:
-        'A Mitakshara Hindu dies in 2010 leaving a son and a daughter. Under amended s. 6 both children are coparceners by birth and take equal shares in the coparcenary property.',
+        'A Mitakshara joint family of father, son and daughter after 2005: the daughter is a coparcener by birth under s. 6 in the same manner as the son.',
     },
     {
-      id: 'hsa-ex-partition',
-      title: 'Example — pre-2004 partition',
+      id: 'hsa-ex-class1',
+      title: 'Example — Class I excludes Class II',
       description:
-        'A registered partition of the HUF was effected in 2002. The 2005 amendment does not reopen that partition; the daughter cannot claim a fresh share in the already partitioned property solely on the basis of the amendment.',
+        'Male Hindu dies intestate leaving widow, son and brother. Under s. 8, widow and son (Class I) take and exclude the brother.',
+    },
+    {
+      id: 'hsa-ex-s14',
+      title: 'Example — full ownership under s. 14',
+      description:
+        'A widow who possessed property as a limited owner becomes full owner under s. 14 (subject to the section) and can deal with it as full owner.',
     },
   ],
   hypotheticals: [
     {
       id: 'hsa-hypo',
-      title: 'Classroom problem',
+      title: 'Classroom problem — s. 6 and s. 8',
       facts:
-        'Father dies intestate in 2018 leaving self-acquired property and an interest in ancestral property. He is survived by widow, son and married daughter.',
+        'F, a Mitakshara coparcener, dies intestate in 2018 leaving widow W, son S and daughter D, with ancestral coparcenary property.',
       question: 'How does the property devolve?',
-      applicableLaw: 'Sections 6, 8 and 14 of the Hindu Succession Act, 1956 (as amended).',
+      applicableLaw: 'Sections 6 and 8 of the Hindu Succession Act, 1956 (as amended in 2005).',
       analysis:
-        'The interest in the coparcenary property devolves under s. 6 with the daughter treated as a coparcener. The self-acquired property devolves under s. 8 among Class I heirs (widow, son, daughter) equally.',
-      conclusion: 'Both children and the widow take; the daughter’s coparcenary right is not dependent on her marital status.',
+        'Ascertain F’s interest by notional partition under s. 6 treating D as a coparcener. F’s interest then devolves under s. 8 on Class I heirs — W, S and D — simultaneously.',
+      conclusion:
+        'Daughter shares as coparcener under s. 6 and as Class I heir under s. 8. Cite the Hindu Succession Act, 1956 and the 2005 amendment.',
     },
   ],
   distinctions: [
     {
-      id: 'hsa-dist',
-      title: 'Coparcenary interest vs self-acquired property',
-      left: 'Coparcenary (s. 6)',
-      right: 'Self-acquired (s. 8)',
+      id: 'hsa-dist-6-8',
+      title: 'Section 6 vs Section 8 HSA',
+      left: 'Section 6',
+      right: 'Section 8',
       rows: [
-        { point: 'Devolution', left: 'By survivorship / notional partition rules under s. 6', right: 'By Class I / II heirs under s. 8' },
-        { point: 'Daughter’s right', left: 'Coparcener by birth after 2005', right: 'Class I heir' },
+        { point: 'Subject', left: 'Mitakshara coparcenary interest', right: 'General male intestacy' },
+        { point: 'Daughter', left: 'Coparcener by birth (post-2005)', right: 'Class I heir' },
+        { point: 'Method', left: 'Notional partition / coparcenary rules', right: 'Class I → II → agnates → cognates' },
       ],
     },
   ],
   misconceptions: [
-    { id: 'hsa-m1', trap: 'Saying the 2005 amendment is fully retrospective.', correction: 'It does not reopen partitions or dispositions effected before 20 December 2004.' },
-    { id: 'hsa-m2', trap: 'Treating a married daughter as excluded from Class I.', correction: 'Marital status is irrelevant; daughter is a Class I heir and, after 2005, a coparcener.' },
+    {
+      id: 'hsa-m1',
+      trap: 'Saying daughters only got inheritance rights in 2005, not coparcenary rights.',
+      correction:
+        'Section 6 makes the daughter a coparcener by birth in the same manner as a son.',
+    },
+    {
+      id: 'hsa-m2',
+      trap: 'Applying s. 8 without first dealing with s. 6 when ancestral Mitakshara property is involved.',
+      correction:
+        'Work the coparcenary interest under s. 6 first; then distribute the deceased’s share under s. 8.',
+    },
   ],
   questionsAndAnswers: [
     {
       id: 'hsa-q-10',
       marks: 10,
-      question: 'Explain the effect of the 2005 amendment to Section 6 of the Hindu Succession Act, 1956.',
+      question:
+        'Explain the rights of a daughter as a coparcener under Section 6 of the Hindu Succession Act, 1956 after the 2005 amendment.',
       answer:
-        'Introduction. Section 6 of the Hindu Succession Act, 1956 was substituted by the Hindu Succession (Amendment) Act, 2005 to remove gender discrimination in the Mitakshara coparcenary.\n\nPre-amendment. Only male members were coparceners by birth.\n\nPost-amendment. The daughter of a coparcener becomes a coparcener by birth in her own right, with the same rights and liabilities as a son. She can demand partition and is subject to the same disabilities.\n\nLimitation. The amendment does not affect any partition or testamentary disposition that had been effected before 20 December 2004.\n\nCase law. Vineeta Sharma v. Rakesh Sharma (2020) clarified that the right accrues by birth and the living status of the father on the commencement date is not decisive in the manner earlier suggested.\n\nConclusion. Always cite both the 1956 Act and the 2005 amendment, and note the cut-off for pre-existing partitions.',
+        'Introduction. Section 6 of the Hindu Succession Act, 1956 was substituted by the Hindu Succession (Amendment) Act, 2005 with effect from 9 September 2005.\n\nMeaning. In a Joint Hindu family governed by Mitakshara law, the daughter of a coparcener becomes a coparcener by birth in her own right in the same manner as the son. She has the same rights in coparcenary property, including the right to claim partition, and the same liabilities.\n\nIllustration. In a family of father, son and daughter after 2005, the daughter shares the coparcenary status of the son; she is not limited to a mere s. 8 heirship claim for that ancestral interest.\n\nTemporal rules. Apply the binding Supreme Court position (including Vineeta Sharma) to whether the claim is available on the facts.\n\nConclusion. Section 6 HSA 1956 (2005 amendment) confers equal coparcenary status on daughters by birth in Mitakshara joint families. Cite the Act by full name.',
+      explanation: 'Must say "coparcener by birth" and "same manner as the son".',
     },
     {
       id: 'hsa-q-16',
       marks: 16,
-      question: 'Discuss the rules of intestate succession to the property of a male Hindu under the Hindu Succession Act, 1956, with special reference to the position of the daughter after 2005.',
+      question:
+        'Discuss intestate succession to the property of a male Hindu under the Hindu Succession Act, 1956, with special reference to Sections 6 and 8.',
       answer:
-        'Introduction. Intestate succession to a male Hindu is governed by Sections 6 and 8 of the Hindu Succession Act, 1956. Section 6 deals with the interest in coparcenary property; Section 8 deals with other property.\n\nSection 6 after 2005. The daughter is a coparcener by birth. On the death of a male coparcener, his interest devolves by testamentary or intestate succession, and the daughter shares equally with the son.\n\nSection 8. Property other than the interest in coparcenary property devolves first upon Class I heirs (son, daughter, widow, mother, and certain lineal descendants of predeceased children). In the absence of Class I heirs it goes to Class II, then agnates, then cognates.\n\nAbsolute property of female (s. 14). Any property possessed by a female Hindu, whether acquired before or after the Act, is held by her as full owner and not as a limited owner.\n\nIllustration. Father dies in 2015 leaving ancestral interest and self-acquired house, survived by widow, son and daughter. Both children take equal shares in the coparcenary interest; the house is divided equally among widow, son and daughter as Class I heirs.\n\nConclusion. The combined effect of amended s. 6 and s. 8 is gender-equal succession. Cite the Act, the 2005 amendment, and Vineeta Sharma.',
+        'Introduction. Intestate succession among Hindus is governed by the Hindu Succession Act, 1956. Where Mitakshara coparcenary property is involved, s. 6 and s. 8 operate together.\n\nSection 6. After the 2005 amendment, a daughter is a coparcener by birth in the same manner as a son. On the death of a coparcener, his interest is ascertained (including by notional partition where required) and then devolves in accordance with the section.\n\nSection 8 hierarchy. The property of a male Hindu dying intestate devolves: firstly on Class I heirs; failing them, Class II; then agnates; then cognates. Class I heirs take simultaneously and to the exclusion of other classes.\n\nIllustration. F dies intestate leaving widow, son, daughter and brother, with ancestral Mitakshara property. Ascertain F’s interest under s. 6 treating the daughter as a coparcener; distribute that interest under s. 8 among Class I heirs (widow, son, daughter), excluding the brother.\n\nFemale property. Section 14 makes a female Hindu a full owner of property she possesses, subject to the section. Succession to a female intestate is under ss. 15–16 and may depend on the source of the property.\n\nConclusion. Integrate s. 6 (coparcenary and daughters) with s. 8 (Class hierarchy), work a simple share illustration, and cite the Hindu Succession Act, 1956 and the 2005 amendment.',
+      explanation: 'Work a share idea and show Class I excluding Class II.',
     },
   ],
   cases: [
@@ -95,34 +117,25 @@ export default {
       name: 'Vineeta Sharma v. Rakesh Sharma',
       year: 2020,
       citation: '(2020) 9 SCC 1',
-      holding: 'Daughter is a coparcener by birth; the living status of the father on the date of the 2005 amendment is not a condition for the daughter’s right.',
-      relevance: 'Authoritative interpretation of amended s. 6.',
-    },
-    {
-      name: 'Prakash v. Phulavati',
-      year: 2016,
-      citation: '(2016) 2 SCC 36',
-      holding: 'The 2005 amendment is prospective; rights crystallised before the amendment are not reopened (later clarified by Vineeta Sharma on the “living father” aspect).',
-      relevance: 'Temporal operation of the amendment.',
+      holding:
+        'Authoritatively explained the operation of the 2005 amendment to s. 6 and daughters’ coparcenary rights.',
+      relevance: 'Leading modern authority on s. 6 HSA after 2005.',
     },
   ],
   bareActPointers: [
-    'Section 6 Hindu Succession Act, 1956',
-    'Section 8 Hindu Succession Act, 1956',
-    'Section 14 Hindu Succession Act, 1956',
-    'Section 15 Hindu Succession Act, 1956',
+    'Hindu Succession Act, 1956 — ss. 6, 8, 14, 15, 16 and the Schedule',
     'Hindu Succession (Amendment) Act, 2005',
   ],
   examTips: [
-    'Always mention the 2005 amendment when discussing s. 6.',
-    'Distinguish coparcenary interest (s. 6) from other property (s. 8).',
-    'Cite Vineeta Sharma (2020) for the current position of the daughter.',
-    'Note the 20 December 2004 cut-off for partitions.',
+    'Write "Section 6 of the Hindu Succession Act, 1956 (as amended in 2005)".',
+    'Say "coparcener by birth in the same manner as a son".',
+    'For male intestacy, recite Class I → II → agnates → cognates.',
+    'Work a notional partition when ancestral Mitakshara property is on the facts.',
   ],
   revisionPoints: [
-    's. 6 (2005) = daughter is coparcener by birth.',
-    's. 8 = Class I → Class II → agnates → cognates.',
-    's. 14 = female’s property is absolute.',
-    'Vineeta Sharma is the leading authority.',
+    's. 6 — daughter coparcener (2005).',
+    's. 8 — Class I excludes others.',
+    's. 14 — female full owner.',
+    'ss. 15–16 — female intestacy depends on source.',
   ],
 } satisfies TopicContent

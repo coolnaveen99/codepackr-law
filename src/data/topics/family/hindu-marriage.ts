@@ -1,106 +1,134 @@
 import type { TopicContent } from '../topicTypes'
 
 const study = `Topic at a glance
-The Hindu Marriage Act, 1955 is the primary codified statute governing marriage, restitution, judicial separation, nullity and divorce among Hindus (including Buddhists, Jains and Sikhs). It does not apply to Muslims, Christians, Parsis or Jews. Always name the Act when citing a section.
+The Hindu Marriage Act, 1955 (HMA) is the principal statute governing marriage, restitution of conjugal rights, judicial separation, nullity and divorce among Hindus (including Buddhists, Jains and Sikhs under s. 2). It does not apply to Muslims, Christians, Parsis or Jews. Every examination answer must name the Act when a section is cited: "Section 13 of the Hindu Marriage Act, 1955", never a bare "section 13".
 
 Introduction
-Before 1955, Hindu marriage was largely governed by uncodified personal law and custom. The HMA introduced statutory conditions for a valid marriage, registered the concept of monogamy, and created clear judicial remedies for matrimonial breakdown. The Act is not a complete code of all Hindu personal law; succession and adoption are handled by separate statutes.
+Before 1955, Hindu matrimonial law was largely uncodified custom and text. The HMA introduced statutory monogamy, clear conditions of validity, and judicial remedies for breakdown of marriage. It is not a complete code of all Hindu personal law: succession is governed by the Hindu Succession Act, 1956, and adoption and maintenance by the Hindu Adoptions and Maintenance Act, 1956. The Special Marriage Act, 1954 remains available for a secular civil marriage, including inter-religious unions.
 
 Meaning and concept
-A Hindu marriage under the Act is a sacramental-cum-contractual union. Section 5 lays down the conditions for a valid marriage. Sections 9–10 deal with restitution and judicial separation. Sections 11–13B cover void and voidable marriages and divorce (including mutual consent). Maintenance and custody appear in ss. 24–26.
+A Hindu marriage under the Act is both a sacrament and a civil status. Section 5 lays down five conditions for a valid marriage. Section 7 deals with ceremonies. Sections 9 and 10 provide restitution and judicial separation. Sections 11 and 12 classify void and voidable marriages. Sections 13 and 13B provide fault and mutual-consent divorce. Sections 24 and 25 deal with interim and permanent maintenance. Section 16 protects legitimacy of children of void and voidable marriages within statutory limits.
 
-Why the rule exists
-Codification was needed to (a) enforce monogamy, (b) give women clearer grounds of divorce and maintenance, (c) protect legitimacy of children of void/voidable marriages (s. 16), and (d) provide a uniform procedure under the CPC for matrimonial petitions.
+Who is a Hindu (s. 2)
+The Act applies to any person who is a Hindu by religion in any of its forms or developments, including a Virashaiva, a Lingayat or a follower of the Brahmo, Prarthana or Arya Samaj; to Buddhists, Jains and Sikhs; and to any other person domiciled in India who is not a Muslim, Christian, Parsi or Jew, unless it is proved that such person would not have been governed by Hindu law. Converts and reconverts to Hinduism, Buddhism, Jainism or Sikhism are included.
 
-Definitions / Key terms
-- Hindu (s. 2): includes Buddhists, Jains, Sikhs and converts; excludes Muslims, Christians, Parsis, Jews.
-- Void marriage (s. 11): bigamy, prohibited degrees, sapinda relationship — void ab initio.
-- Voidable marriage (s. 12): impotence, force, fraud, pregnancy by another, certain mental disorders — valid until annulled.
-- Desertion, cruelty, adultery: statutory grounds under s. 13; judicial interpretation fills the content.
+Conditions for a valid marriage (s. 5)
+A marriage may be solemnised between any two Hindus if the following conditions are fulfilled:
+(i) Neither party has a spouse living at the time of the marriage (monogamy). Breach makes the marriage void under s. 11(i) and may attract punishment under s. 17.
+(ii) At the time of the marriage, neither party is incapable of giving valid consent by reason of unsoundness of mind; or though capable of giving valid consent, has been suffering from mental disorder of such a kind or to such an extent as to be unfit for marriage and the procreation of children; or has been subject to recurrent attacks of insanity.
+(iii) The bridegroom has completed the age of twenty-one years and the bride the age of eighteen years.
+(iv) The parties are not within the degrees of prohibited relationship, unless the custom or usage governing each of them permits of a marriage between the two. Breach without custom makes the marriage void under s. 11(ii).
+(v) The parties are not sapindas of each other, unless custom or usage permits. Breach without custom makes the marriage void under s. 11(iii).
 
-Legal foundation
-Hindu Marriage Act, 1955 (as amended). Key amendments: Marriage Laws (Amendment) Act 1976 (mutual consent, cruelty, etc.), 2001 and later changes to maintenance. Special Marriage Act 1954 remains available for inter-religious or secular civil marriage.
+Ceremonies (s. 7)
+A Hindu marriage may be solemnised in accordance with the customary rites and ceremonies of either party. Where such rites include the saptapadi (seven steps), the marriage becomes complete and binding when the seventh step is taken.
 
-Essential elements of a valid Hindu marriage (s. 5)
-1. Neither party has a living spouse (monogamy).
-2. Neither party is incapable of giving valid consent by reason of unsoundness of mind, or suffers from mental disorder making them unfit for marriage and procreation, or is subject to recurrent attacks of insanity.
-3. Bridegroom has completed 21 years; bride has completed 18 years.
-4. Parties are not within degrees of prohibited relationship (unless custom permits).
-5. Parties are not sapindas of each other (unless custom permits).
+Restitution of conjugal rights (s. 9)
+When either the husband or the wife has, without reasonable excuse, withdrawn from the society of the other, the aggrieved party may petition for restitution of conjugal rights. Once withdrawal is shown, the burden of proving reasonable excuse lies on the respondent (Explanation to s. 9). Non-compliance for one year or more can support divorce under s. 13(1A).
 
-How the remedies operate
-- Restitution of conjugal rights (s. 9): petition when one spouse withdraws from the society of the other without reasonable excuse.
-- Judicial separation (s. 10): decree on any ground available for divorce; cohabitation ceases to be obligatory but marriage continues.
-- Divorce (s. 13): fault grounds (adultery, cruelty, desertion for 2 years, conversion, unsound mind, venereal disease, renunciation, presumption of death) plus special grounds for the wife.
-- Mutual consent divorce (s. 13B): joint petition after one year of separate living; two-motion procedure (cooling-off period may be waived by court).
+Judicial separation (s. 10)
+Either party may petition for judicial separation on any of the grounds available for divorce under s. 13. After a decree, cohabitation is not obligatory, but the marriage continues.
 
-Exceptions / Limits
-Custom can still validate a marriage within prohibited degrees or sapinda relationship if the custom is ancient, certain and reasonable. Section 29 saves certain customary divorces. The one-year bar under s. 14 can be relaxed in cases of exceptional hardship.
+Void marriages (s. 11)
+Any marriage solemnised after the commencement of the Act is null and void and may be so declared by a decree of nullity if it contravenes s. 5(i), (iv) or (v) — living spouse, prohibited degrees, or sapinda relationship (subject to custom for the last two). A void marriage is void ab initio. Children are protected under s. 16 within limits.
 
-Distinctions
-HMA vs Special Marriage Act: HMA is religion-specific; SMA is secular and open to any two persons. HMA vs Muslim personal law: no concept of triple talaq or polygamy under HMA. Void (s. 11) vs voidable (s. 12): void needs no decree to be treated as non-existent; voidable remains valid until annulled.
+Voidable marriages (s. 12)
+A marriage is voidable and may be annulled on grounds including impotence of the respondent continuing until the petition; marriage in contravention of s. 5(ii); consent obtained by force or fraud; and pregnancy of the respondent by another person at the time of marriage, subject to statutory bars. A voidable marriage is valid until annulled.
+
+Divorce — fault grounds (s. 13)
+Either party may seek divorce on grounds including adultery, cruelty, desertion for two years, conversion, incurable unsoundness of mind of the prescribed kind, renunciation of the world, and not being heard of as alive for seven years. Section 13(1A) adds divorce after non-resumption of cohabitation following decrees of judicial separation or restitution. The wife has additional special grounds under s. 13(2). Cruelty includes physical and mental cruelty creating a reasonable apprehension of harm. Desertion requires factum of separation and animus deserendi.
+
+Mutual consent divorce (s. 13B)
+Both parties may jointly petition after living separately for one year or more, stating they have not been able to live together and mutually agree to dissolve the marriage. The cooling-off period is directory and can be waived in appropriate cases (Amardeep Singh).
+
+Maintenance (ss. 24 and 25)
+Section 24 — interim maintenance and litigation expenses during the proceeding. Section 25 — permanent alimony at or after the decree. Either spouse may apply under s. 24 if they lack sufficient independent income.
 
 Current-law close
-Cite the Hindu Marriage Act, 1955 by section number and always name the Act. For inter-religious marriage use the Special Marriage Act, 1954. Maintenance can also be claimed under s. 125 BNSS / CrPC and under the Hindu Adoptions and Maintenance Act, 1956.`
+Close with the Hindu Marriage Act, 1955 and the exact sections. For inter-religious or civil marriage use the Special Marriage Act, 1954. For succession use the Hindu Succession Act, 1956.`
 
 export default {
   glance:
-    'Hindu Marriage Act, 1955 — conditions for valid marriage (s. 5), restitution (s. 9), judicial separation (s. 10), void/voidable marriages (ss. 11–12), divorce including mutual consent (ss. 13–13B), and interim/permanent maintenance (ss. 24–25). Applies to Hindus, Buddhists, Jains and Sikhs.',
+    'Hindu Marriage Act, 1955 — s. 5 conditions, s. 7 ceremonies, s. 9 restitution, s. 10 judicial separation, ss. 11–12 void/voidable, ss. 13–13B divorce, ss. 24–25 maintenance. Applies to Hindus, Buddhists, Jains and Sikhs.',
   study,
   examples: [
     {
       id: 'hma-ex-valid',
-      title: 'Example — conditions under s. 5 satisfied',
+      title: 'Example — valid marriage under ss. 5 and 7',
       description:
-        'A and B are both Hindus, unmarried, of sound mind, aged 25 and 22. They are not within prohibited degrees or sapinda relationship. They perform saptapadi. The marriage is valid under s. 5 read with s. 7.',
+        'A and B are both Hindus, unmarried, of sound mind, aged 25 and 22, not within prohibited degrees or sapinda relationship. They perform saptapadi. The marriage is valid under s. 5 read with s. 7.',
     },
     {
       id: 'hma-ex-bigamy',
-      title: 'Example — living spouse (void)',
+      title: 'Example — void for living spouse',
       description:
-        'H marries W1. Without obtaining divorce he marries W2. The second marriage is void under s. 11(i) and H is also liable under s. 17 HMA read with the relevant penal provision for bigamy.',
+        'H marries W1. Without obtaining divorce he marries W2. The second marriage is void under s. 11(i) and may attract criminal liability under s. 17 HMA.',
+    },
+    {
+      id: 'hma-ex-cruelty',
+      title: 'Example — cruelty as a ground of divorce',
+      description:
+        'W proves sustained physical assault and public humiliation by H. Divorce may be granted under s. 13(1)(ia). Trivial quarrels do not amount to cruelty.',
     },
     {
       id: 'hma-ex-mutual',
       title: 'Example — mutual consent divorce',
       description:
-        'Spouses have lived separately for more than one year and jointly file under s. 13B. After the first motion the court may, if satisfied that the requirements are met and waiver of cooling-off is justified, grant the decree on the second motion.',
+        'Spouses have lived separately for more than one year and jointly file under s. 13B. The court may grant the decree and may waive cooling-off where the marriage has clearly broken down.',
     },
   ],
   hypotheticals: [
     {
-      id: 'hma-hypo',
-      title: 'Classroom problem',
+      id: 'hma-hypo-1',
+      title: 'Classroom problem — restitution vs cruelty',
       facts:
-        'Ravi (Hindu, 28) marries Sita (Hindu, 24) in 2020. In 2023 Sita leaves the matrimonial home alleging continuous physical and mental cruelty. Ravi files for restitution under s. 9. Sita files a counter-petition for divorce under s. 13(1)(ia) on the ground of cruelty.',
-      question: 'How should the court approach the two petitions?',
-      applicableLaw:
-        'Sections 9, 10, 13 and 13A of the Hindu Marriage Act, 1955. Cruelty is a ground for both judicial separation and divorce.',
+        'Ravi marries Sita in 2020. In 2023 Sita leaves alleging continuous cruelty. Ravi files under s. 9; Sita counters under s. 13(1)(ia).',
+      question: 'How should the court approach the petitions?',
+      applicableLaw: 'Sections 9, 13 and 13A of the Hindu Marriage Act, 1955.',
       analysis:
-        'Restitution under s. 9 requires that the withdrawal is without reasonable excuse. Continuous cruelty is a reasonable excuse and also an independent ground of divorce under s. 13(1)(ia). The court may grant divorce (or alternate relief of judicial separation under s. 13A) rather than force cohabitation.',
+        'Restitution requires withdrawal without reasonable excuse. Cruelty is a reasonable excuse and a ground of divorce. The court may decree divorce or judicial separation under s. 13A rather than force cohabitation.',
       conclusion:
-        'If cruelty is proved, restitution fails and divorce (or judicial separation) can be decreed. Always name the Act and the exact clause.',
+        'If cruelty is proved, restitution fails and divorce or judicial separation can be decreed. Cite the Act by name.',
     },
   ],
   distinctions: [
     {
-      id: 'hma-dist',
-      title: 'Void vs Voidable marriage under HMA',
-      left: 'Void (s. 11)',
-      right: 'Voidable (s. 12)',
+      id: 'hma-dist-void',
+      title: 'Void (s. 11) vs voidable (s. 12)',
+      left: 'Void — s. 11',
+      right: 'Voidable — s. 12',
       rows: [
-        { point: 'Effect', left: 'Void ab initio — no legal existence', right: 'Valid until annulled by decree' },
-        { point: 'Grounds', left: 'Bigamy, prohibited degrees, sapinda', right: 'Impotence, force, fraud, pregnancy by another, certain mental disorders' },
-        { point: 'Decree needed?', left: 'Declaratory decree helpful but not constitutive', right: 'Decree of nullity is required' },
-        { point: 'Children (s. 16)', left: 'Legitimate', right: 'Legitimate' },
+        { point: 'Status', left: 'Void ab initio', right: 'Valid until annulled' },
+        { point: 'Grounds', left: 'Living spouse; prohibited degrees; sapinda', right: 'Impotence; mental incapacity; force/fraud; pregnancy by another' },
+      ],
+    },
+    {
+      id: 'hma-dist-divorce',
+      title: 'Fault divorce (s. 13) vs mutual consent (s. 13B)',
+      left: 'Section 13',
+      right: 'Section 13B',
+      rows: [
+        { point: 'Who petitions', left: 'One spouse', right: 'Both jointly' },
+        { point: 'Basis', left: 'Proved statutory ground', right: 'Living separately ≥ 1 year + mutual agreement' },
       ],
     },
   ],
   misconceptions: [
-    { id: 'hma-m1', trap: 'Citing “Section 13” without naming the Hindu Marriage Act.', correction: 'Always write “Section 13 of the Hindu Marriage Act, 1955”.' },
-    { id: 'hma-m2', trap: 'Treating every Hindu marriage as requiring registration for validity.', correction: 'Registration under s. 8 is directory; non-registration does not invalidate the marriage (though States may make rules).' },
-    { id: 'hma-m3', trap: 'Assuming mutual consent divorce has no cooling-off period.', correction: 'Section 13B has a statutory cooling-off; the Supreme Court has held it can be waived in appropriate cases.' },
-    { id: 'hma-m4', trap: 'Applying HMA to a Muslim couple.', correction: 'HMA does not apply to Muslims; their personal law or the Special Marriage Act (if chosen) governs.' },
+    {
+      id: 'hma-m1',
+      trap: 'Writing "section 13" without naming the Act.',
+      correction: 'Always write "Section 13 of the Hindu Marriage Act, 1955".',
+    },
+    {
+      id: 'hma-m2',
+      trap: 'Treating a voidable marriage as void from the start.',
+      correction: 'A voidable marriage under s. 12 is valid until a decree of nullity.',
+    },
+    {
+      id: 'hma-m3',
+      trap: 'Assuming mutual consent divorce always requires a rigid six-month wait.',
+      correction: 'The cooling-off period under s. 13B is directory and may be waived (Amardeep Singh).',
+    },
   ],
   questionsAndAnswers: [
     {
@@ -108,63 +136,49 @@ export default {
       marks: 10,
       question: 'Write a 10-mark note on the conditions for a valid Hindu marriage under the Hindu Marriage Act, 1955.',
       answer:
-        'Introduction. Section 5 of the Hindu Marriage Act, 1955 lays down the conditions that must be fulfilled for a marriage between two Hindus to be valid.\n\nConditions. (i) Neither party has a spouse living at the time of the marriage — this enforces monogamy. (ii) Neither party is incapable of giving valid consent by reason of unsoundness of mind, or is suffering from a mental disorder of such a kind or to such an extent as to be unfit for marriage and the procreation of children, or is subject to recurrent attacks of insanity. (iii) The bridegroom has completed the age of twenty-one years and the bride the age of eighteen years. (iv) The parties are not within the degrees of prohibited relationship, unless the custom or usage governing each of them permits of a marriage between the two. (v) The parties are not sapindas of each other, unless custom permits.\n\nCeremony. Section 7 provides that a Hindu marriage may be solemnised in accordance with the customary rites and ceremonies of either party; where saptapadi is included, the marriage becomes complete and binding when the seventh step is taken.\n\nConsequence of breach. Violation of monogamy, prohibited degrees or sapinda relationship renders the marriage void under s. 11. Other breaches may attract punishment under s. 18 or make the marriage voidable under s. 12.\n\nConclusion. A student answer must list all five conditions of s. 5, mention s. 7 on ceremonies, and distinguish void from voidable consequences.',
+        'Introduction. Section 5 of the Hindu Marriage Act, 1955 lays down the conditions for a valid marriage between any two Hindus. Applicability is under s. 2 (Hindus, Buddhists, Jains, Sikhs).\n\nConditions. (i) Neither party has a spouse living (monogamy). (ii) Neither party is incapable of valid consent by unsoundness of mind, or unfit for marriage and procreation by reason of mental disorder, or subject to recurrent attacks of insanity. (iii) Bridegroom has completed 21 years and bride 18 years. (iv) Parties are not within degrees of prohibited relationship unless custom permits. (v) Parties are not sapindas unless custom permits.\n\nCeremony. Section 7 — customary rites of either party; where saptapadi is included, marriage is complete on the seventh step.\n\nIllustration. H has a living wife and marries W2 — condition (i) fails; marriage void under s. 11(i).\n\nConsequences. Breach of (i), (iv) or (v) without custom → void under s. 11. Other defects may attract s. 18 or voidable relief under s. 12. Children protected under s. 16 within limits.\n\nConclusion. List all five s. 5 conditions, link s. 7, distinguish s. 11 and s. 12, and cite the Hindu Marriage Act, 1955 by name.',
+      explanation: 'Examiner expects all five conditions, s. 7, and void/voidable consequences.',
     },
     {
       id: 'hma-q-16',
       marks: 16,
-      question: 'Discuss the grounds of divorce available under Section 13 of the Hindu Marriage Act, 1955. How does mutual consent divorce under Section 13B differ?',
+      question: 'Discuss the grounds of divorce under Section 13 of the Hindu Marriage Act, 1955 and contrast mutual consent divorce under Section 13B.',
       answer:
-        'Introduction. Section 13 of the Hindu Marriage Act, 1955 provides the statutory grounds on which a petition for divorce may be presented. Section 13B, introduced later, creates a separate no-fault route by mutual consent.\n\nFault grounds under s. 13(1) (available to either spouse). The petitioner may seek divorce if the respondent has (i) after the solemnisation of the marriage, had voluntary sexual intercourse with any person other than his or her spouse (adultery); (ii) treated the petitioner with cruelty; (iii) deserted the petitioner for a continuous period of not less than two years immediately preceding the presentation of the petition; (iv) ceased to be a Hindu by conversion to another religion; (v) been incurably of unsound mind or has been suffering continuously or intermittently from mental disorder of such a kind and to such an extent that the petitioner cannot reasonably be expected to live with the respondent; (vi) been suffering from a virulent and incurable form of leprosy (now largely academic after amendments and medical advances); (vii) been suffering from venereal disease in a communicable form; (viii) renounced the world by entering any religious order; or (ix) not been heard of as being alive for a period of seven years or more by those persons who would naturally have heard of it (presumption of death).\n\nSpecial grounds for the wife (s. 13(2)). Additional grounds include the husband having more than one wife living (pre-Act bigamy situations), rape, sodomy or bestiality, and non-resumption of cohabitation after a decree of maintenance under certain provisions.\n\nMutual consent (s. 13B). Both parties must have been living separately for a period of one year or more, must have not been able to live together, and must have mutually agreed that the marriage should be dissolved. The petition is presented jointly. There is a statutory cooling-off period between the first and second motions; the Supreme Court has held that the period can be waived where the court is satisfied that the requirements are met and further waiting would only prolong the agony.\n\nAlternate relief (s. 13A). In any proceeding for divorce the court may, if it considers it just, grant a decree of judicial separation instead.\n\nDistinction. Section 13 is fault-based (or status-based in the case of conversion, renunciation and presumption of death). Section 13B is consent-based and does not require proof of any matrimonial offence.\n\nConclusion. A complete answer lists the major clauses of s. 13(1), notes the wife’s special grounds, explains the two-motion mutual consent procedure under s. 13B, and records the power of alternate relief under s. 13A. Always cite the Hindu Marriage Act, 1955 by name.',
+        'Introduction. Dissolution of a Hindu marriage is governed by Sections 13 and 13B of the Hindu Marriage Act, 1955. Section 14 bars a divorce petition within one year of marriage except with leave.\n\nSection 13 grounds. Either party may petition on grounds including adultery, cruelty, desertion for two years, conversion, incurable unsoundness of mind of the prescribed kind, renunciation of the world, and presumption of death after seven years. Section 13(1A) allows divorce after non-resumption of cohabitation following judicial separation or restitution decrees. The wife has special grounds under s. 13(2).\n\nKey meanings. Cruelty is conduct creating a reasonable apprehension of harm or injury in cohabitation (physical or mental). Desertion requires separation in fact and intention to desert without reasonable cause and without consent.\n\nIllustration. W proves repeated physical assault by H — cruelty under s. 13(1)(ia) is made out; a s. 9 petition by H would fail for reasonable excuse.\n\nSection 13B. Joint petition after living separately for one year or more, with mutual agreement to dissolve. Cooling-off is directory and may be waived (Amardeep Singh v. Harveen Kaur).\n\nDistinction. Section 13 is adversarial and requires proof of a ground; s. 13B is joint and rests on living apart plus free consent.\n\nConnected reliefs. Interim maintenance under s. 24; permanent alimony under s. 25; alternate judicial separation under s. 13A.\n\nConclusion. Treat s. 13 grounds with definitions of cruelty and desertion, explain s. 13(1A) and s. 13(2), contrast s. 13B, and close with the Hindu Marriage Act, 1955.',
+      explanation: 'Define cruelty and desertion; mention Amardeep Singh on cooling-off.',
     },
   ],
   cases: [
     {
-      name: 'Sarla Mudgal v. Union of India',
-      year: 1995,
-      citation: '(1995) 3 SCC 635',
-      holding: 'A Hindu husband who converts to Islam and marries again without dissolving the first marriage commits bigamy; the second marriage is void under s. 11 HMA and attracts the penal consequences of bigamy.',
-      relevance: 'Monogamy under s. 5(i) and voidness under s. 11.',
-    },
-    {
-      name: 'Naveen Kohli v. Neelu Kohli',
-      year: 2006,
-      citation: '(2006) 4 SCC 558',
-      holding: 'Irretrievable breakdown of marriage may be a relevant factor; prolonged mutual hostility and separation can justify a decree of divorce on the ground of cruelty.',
-      relevance: 'Interpretation of cruelty under s. 13(1)(ia).',
+      name: 'Saroj Rani v. Sudarshan Kumar Chadha',
+      year: 1984,
+      citation: 'AIR 1984 SC 1562',
+      holding: 'Upheld the constitutional validity of s. 9 HMA (restitution of conjugal rights).',
+      relevance: 'Use when discussing s. 9.',
     },
     {
       name: 'Amardeep Singh v. Harveen Kaur',
       year: 2017,
       citation: '(2017) 8 SCC 746',
-      holding: 'The six-month cooling-off period under s. 13B(2) is directory and can be waived by the court in appropriate cases.',
-      relevance: 'Mutual consent divorce procedure.',
+      holding: 'Cooling-off period under s. 13B(2) is directory and can be waived in appropriate cases.',
+      relevance: 'Mandatory for mutual consent divorce answers.',
     },
   ],
   bareActPointers: [
-    'Section 5 Hindu Marriage Act, 1955',
-    'Section 7 Hindu Marriage Act, 1955',
-    'Section 9 Hindu Marriage Act, 1955',
-    'Section 11 Hindu Marriage Act, 1955',
-    'Section 12 Hindu Marriage Act, 1955',
-    'Section 13 Hindu Marriage Act, 1955',
-    'Section 13B Hindu Marriage Act, 1955',
-    'Section 24 Hindu Marriage Act, 1955',
-    'Section 25 Hindu Marriage Act, 1955',
+    'Hindu Marriage Act, 1955 — ss. 2, 5, 7, 9, 10, 11, 12, 13, 13A, 13B, 14, 16, 17, 24, 25',
   ],
   examTips: [
-    'Always write the full name: Section 13 of the Hindu Marriage Act, 1955.',
-    'List all five conditions of s. 5 when asked about validity.',
-    'Distinguish void (s. 11) from voidable (s. 12) with consequences for decree and legitimacy.',
-    'For mutual consent, mention the one-year separation and the possibility of waiver of cooling-off.',
-    'Do not mix HMA grounds with Muslim personal law or SMA grounds.',
+    'Always write the full statute name with the section.',
+    'List all five s. 5 conditions in validity questions.',
+    'Separate void (s. 11) from voidable (s. 12).',
+    'Define cruelty and desertion in divorce answers.',
+    'For s. 13B, state living apart, mutual agreement, and waiver of cooling-off.',
   ],
   revisionPoints: [
-    's. 5 = five conditions for valid Hindu marriage.',
-    's. 11 = void (bigamy, prohibited degrees, sapinda).',
-    's. 12 = voidable (impotence, force, fraud, etc.).',
-    's. 13 = fault grounds of divorce; s. 13B = mutual consent.',
-    's. 24 = interim maintenance; s. 25 = permanent alimony.',
-    'Always name the Act.',
+    's. 5 — five conditions; s. 7 — ceremonies / saptapadi.',
+    's. 9 restitution; s. 10 judicial separation; s. 13(1A) follow-on.',
+    's. 11 void; s. 12 voidable.',
+    's. 13 fault; s. 13B mutual consent.',
+    's. 24 interim; s. 25 permanent; s. 16 legitimacy.',
   ],
 } satisfies TopicContent
