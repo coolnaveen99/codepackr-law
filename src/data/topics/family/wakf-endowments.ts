@@ -1,0 +1,91 @@
+import type { TopicContent } from '../topicTypes'
+
+const study = `Topic at a glance
+Family Law – II, Unit V: Religious endowments and wakf. A wakf is the permanent dedication by a Muslim of property for purposes recognised by Muslim law as religious, pious or charitable. Mutawalli is the manager, not the owner.
+
+Introduction
+Exam topics: definition and essentials of wakf, mutawalli, and statutory control through Waqf Boards. Hindu religious endowments (shebait, debutter) are a separate doctrine.
+
+Essentials of wakf
+Permanent dedication; competent wakif; religious, pious or charitable purpose under Muslim law; property capable of dedication. Ownership is devoted to the object of the wakf.
+
+Mutawalli
+Manager, not owner. Duties: protect property, apply income to objects, act in good faith. Appointment by wakif, deed, or statute. Removal for misconduct possible.
+
+Statutory framework
+Waqf legislation provides for survey, registration, Waqf Boards, and remedies against encroachment and mismanagement. Use the applicable Waqf Act for your jurisdiction.
+
+Hindu religious endowments (brief)
+Property dedicated to a deity or religious purpose; shebait manages. Do not call a Hindu debutter a wakf.
+
+Current-law close
+Define wakf, state essentials, explain mutawalli, mention Waqf Board control.`
+
+export default {
+  glance:
+    'FL-II Unit V — Wakf: permanent dedication for religious/pious/charitable objects; mutawalli as manager; Waqf Board control.',
+  study,
+  examples: [
+    {
+      id: 'wakf-ex-1',
+      title: 'Example — valid wakf',
+      description:
+        'A Muslim permanently dedicates a plot for a mosque and its upkeep. Mutawalli manages; he is not owner.',
+    },
+  ],
+  hypotheticals: [
+    {
+      id: 'wakf-hypo',
+      title: 'Classroom problem — unauthorised sale',
+      facts: 'Mutawalli sells waqf property to pay personal creditors.',
+      question: 'Is the sale valid?',
+      applicableLaw: 'Muslim law of wakf; mutawalli’s limited powers.',
+      analysis: 'Mutawalli is manager, not owner. Sale for personal debt is unauthorised.',
+      conclusion: 'Unauthorised sale is vulnerable; property remains dedicated to wakf objects.',
+    },
+  ],
+  distinctions: [
+    {
+      id: 'wakf-dist',
+      title: 'Wakf vs Private ownership',
+      left: 'Wakf property',
+      right: 'Private property',
+      rows: [
+        { point: 'Ownership', left: 'Dedicated to objects of wakf', right: 'Vests in owner' },
+        { point: 'Manager', left: 'Mutawalli (manager only)', right: 'Owner may sell subject to general law' },
+      ],
+    },
+  ],
+  misconceptions: [
+    {
+      id: 'wakf-m1',
+      trap: 'Mutawalli is the owner of waqf property.',
+      correction: 'Mutawalli is only the manager.',
+    },
+  ],
+  questionsAndAnswers: [
+    {
+      id: 'wakf-q10',
+      marks: 10,
+      question: 'Define wakf and explain its essentials under Muslim law.',
+      answer:
+        'Introduction. Definition — permanent dedication for religious, pious or charitable objects. Essentials. Mutawalli as manager. Conclusion.',
+      explanation: 'Definition + essentials + mutawalli.',
+    },
+    {
+      id: 'wakf-q16',
+      marks: 16,
+      question: 'Discuss creation and administration of wakf and the role of the mutawalli and Waqf Boards.',
+      answer:
+        'Introduction. Creation and essentials. Mutawalli — appointment, duties, limits. Statutory Board control. Brief Hindu endowment contrast. Conclusion.',
+      explanation: 'Administration + statutory control for 16 marks.',
+    },
+  ],
+  bareActPointers: ['Waqf Act (applicable framework)', 'Muslim personal law — wakf and mutawalli'],
+  examTips: ['Mutawalli ≠ owner.', 'Stress permanent dedication and lawful object.'],
+  revisionPoints: [
+    'Wakf = permanent dedication for recognised objects.',
+    'Mutawalli manages only.',
+    'Waqf Board regulates administration.',
+  ],
+} satisfies TopicContent
