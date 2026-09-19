@@ -1,6 +1,6 @@
 {
   "name": "Codepackr Law",
-  "description": "100% client-side Indian law learning tools for AIBE and Judiciary exams, Bare Act practice, and flashcards.",
+  "description": "100% client-side Indian law learning tools for AIBE and Judiciary exams, study notes, and flashcards.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
