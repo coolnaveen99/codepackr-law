@@ -7,14 +7,15 @@ You are working on **Codepackr Law** (`law.codepackr.com`) — a 100% privacy-fi
 ## GOLDEN RULES
 
 1. **100% Client-Side** — Never send practice data, answers, or scores off-device.
-2. **Seal brand** — Accent is seal burgundy via remapped Tailwind `blue-*` in `src/index.css`. Do not switch to Codepackr Dev `#2563eb` or Finance green.
+2. **Seal brand** — Accent is seal burgundy via remapped Tailwind `blue-*` in `src/index.css`.
 3. **Complete Tools** — Sample/Demo, Reset, clear feedback, accessible UI.
 4. **Quality Gate** — `.github/skills/tool-quality-gate.md` must pass fully.
 5. **India Focus** — AIBE, Judiciary, BNS/BNSS/BSA, Constitution, CPC, and any in-force subject the user adds.
-6. **Lazy topic notes** — Full learning text goes in `src/data/topics/<subjectSlug>/<topicId>.ts` only. Metadata stays in `subjects.ts`.
-7. **Reusable legal knowledge** — Search `src/data/knowledge` first. Architecture: `docs/reusable-legal-knowledge-architecture.md`. Skill: `.github/skills/reusable-legal-knowledge.md`.
-8. **Legal content workflow** — `.github/instructions/global-legal-content.md` + `.github/instructions/subjects/<subject>.md`. SOP: `.github/skills/legal-content-workflow.md`. Never invent provisions, citations, holdings, illustrations, or mappings. IPC, CrPC, IEA are historical concordance only.
-9. **Deep student answers** — `.github/instructions/student-answer-content.md`. Do not stop at a Bare Act summary. Q&A is a **full** 10-mark and 16-mark hall answer (`marks: 10 | 16`). Never a shortened explanation.
-10. **New subjects** — `.github/skills/add-new-subject.md`. Catalog-first: introduction + every section/article, then a full study page per click. Wire hamburger + home lists. Copy `.github/instructions/subjects/_template.md`.
+6. **Lazy topic notes** — Full learning text goes in `src/data/topics/<subjectSlug>/<topicId>.ts` only.
+7. **Reusable legal knowledge** — Search `src/data/knowledge` first.
+8. **Legal content workflow** — `.github/instructions/global-legal-content.md` + subject file + `.github/skills/add-topic-notes.md`.
+9. **Book chapters, not digests** — Quality model: `src/data/topics/cpc/s-32.ts`. Do not ship synthesizer templates. Student-facing copy must read like a textbook chapter, not a statutory digest.
+10. **Deep student answers** — Full 10-mark and 16-mark hall answers (`marks: 10 | 16`).
+11. **New subjects** — `.github/skills/add-new-subject.md`.
 
 See `AI_INSTRUCTIONS.md` and `.github/skills/` for the full process.

@@ -88,7 +88,7 @@ export function SubjectDetail({
             </div>
           )}
           {subject.bareActs.length > 0 && (
-            <p className="text-xs text-slate-500"><span className="font-semibold text-slate-700 dark:text-slate-300">Bare Acts: </span>{subject.bareActs.join(' · ')}</p>
+            <p className="text-xs text-slate-500"><span className="font-semibold text-slate-700 dark:text-slate-300">Statutes: </span>{subject.bareActs.join(' · ')}</p>
           )}
         </div>
       </div>
@@ -119,7 +119,7 @@ export function SubjectDetail({
 
       {showArticleGroups && (
         <section className="space-y-5">
-          <CatalogHeading title={`All articles (${articleTopics.length})`} subtitle="Click any article for the study page. Official 2024 Legislative Department text." />
+          <CatalogHeading title={`All articles (${articleTopics.length})`} subtitle="Click any article for the study page." />
           {articleClusters.map((group) => (
             <ChapterBlock key={group.name} name={group.name} topics={group.topics} onSelectTopic={onSelectTopic} compact />
           ))}
