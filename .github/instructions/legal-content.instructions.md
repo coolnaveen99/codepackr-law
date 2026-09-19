@@ -16,7 +16,7 @@ Quality model: `src/data/topics/cpc/s-32.ts`.
 
 Depth: [`.github/instructions/student-answer-content.md`](student-answer-content.md).
 
-Student-facing pages must **not** use the words “Bare Act”. Teach the heading on the page. Do not tell the student the page is only a digest and they should look elsewhere.
+Student-facing pages must read like a textbook chapter. Teach the heading on the page. Do not tell the student the page is only a digest and they should look elsewhere.
 
 Do not ship `synthesizeCpc` / `synthesizeProvision` factory text as the finished chapter. Write `src/data/topics/<slug>/<id>.ts` for each section you touch.
 

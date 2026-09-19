@@ -20,7 +20,7 @@ Subject extras: [`.github/instructions/subjects/`](../instructions/subjects/).
 
 Never put essays in `subjects.ts`.
 
-Do **not** tell the student to “read the statute instead”. Teach the heading on the page. Internal data files may still store official text. Student-facing copy must not use the phrase “Bare Act”.
+Do **not** tell the student to “read the statute instead”. Teach the heading on the page. Internal data files may still store official text. Student-facing copy must read like a printed textbook chapter.
 
 ## Book standard (reject the page if any fail)
 
@@ -59,6 +59,6 @@ Do **not** tell the student to “read the statute instead”. Teach the heading
 ## Do not
 
 - Ship the synthesizer template as the study page
-- Use the words “Bare Act” on the student page
+- Ship a statutory digest as the study page
 - Invent official illustrations or judgments
 - Batch-generate every section of an Act in one pass

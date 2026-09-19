@@ -20,7 +20,7 @@ instructions: |
   Study body = teaching (meaning, ingredients, exceptions, application).
   Statutory illustrations = only when the official Act prints them; then teach them.
   Q&A = full 10-mark and 16-mark answers with marks: 10 | 16. Never shortened.
-  Do not dump Bare Act as the page.
+  Do not dump verbatim statute text as the page.
   Do not put exam-writing filler, model skeletons, or unverified IPC/CrPC mapping blocks in study.
 
   Metadata only in src/data/subjects.ts.

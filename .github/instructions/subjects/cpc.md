@@ -20,5 +20,5 @@ Quality model for every CPC section and Order: `src/data/topics/cpc/s-32.ts`.
 - Orders and Rules are first-class provisions.
 - Do **not** leave a section on the `synthesizeCpc` template (Salem Advocate on every heading, “plaint presented / service of summons”, fake official illustrations).
 - Write a dedicated file `src/data/topics/cpc/s-<n>.ts` or `o-<n>.ts`.
-- Student-facing copy: never use the phrase “Bare Act”.
+- Student-facing copy: write a book chapter, not a statutory digest.
 - Teach the actual working rule of that heading, with fact-specific examples and a classroom hypothetical.

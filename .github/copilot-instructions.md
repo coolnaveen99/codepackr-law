@@ -14,7 +14,7 @@ You are working on **Codepackr Law** (`law.codepackr.com`) — a 100% privacy-fi
 6. **Lazy topic notes** — Full learning text goes in `src/data/topics/<subjectSlug>/<topicId>.ts` only.
 7. **Reusable legal knowledge** — Search `src/data/knowledge` first.
 8. **Legal content workflow** — `.github/instructions/global-legal-content.md` + subject file + `.github/skills/add-topic-notes.md`.
-9. **Book chapters, not digests** — Quality model: `src/data/topics/cpc/s-32.ts`. Do not ship synthesizer templates. Student-facing copy must not say “Bare Act”.
+9. **Book chapters, not digests** — Quality model: `src/data/topics/cpc/s-32.ts`. Do not ship synthesizer templates. Student-facing copy must read like a textbook chapter, not a statutory digest.
 10. **Deep student answers** — Full 10-mark and 16-mark hall answers (`marks: 10 | 16`).
 11. **New subjects** — `.github/skills/add-new-subject.md`.
 
