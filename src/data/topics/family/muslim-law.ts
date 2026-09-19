@@ -1,94 +1,114 @@
 import type { TopicContent } from '../topicTypes'
 
 const study = `Topic at a glance
-Muslim personal law in India (marriage, dower, divorce, maintenance and inheritance) is largely uncodified and drawn from the Quran, Hadith, and the schools of jurisprudence (mainly Hanafi for Sunnis and Shia schools for Shias). Key statutory interventions are the Muslim Personal Law (Shariat) Application Act, 1937, the Dissolution of Muslim Marriages Act, 1939, and the Muslim Women (Protection of Rights on Marriage) Act, 2019 (triple talaq).
+Muslim personal law in India is largely uncodified for classical marriage and divorce, supplemented by statutes: the Muslim Personal Law (Shariat) Application Act, 1937; the Dissolution of Muslim Marriages Act, 1939 (DMMA); and the Muslim Women (Protection of Rights on Marriage) Act, 2019. Always name the statute. Do not write a bare “section 2” without the Act.
 
 Introduction
-Unlike the Hindu Marriage Act, there is no single comprehensive code for Muslim family law. The Shariat Act 1937 directs that in specified matters the rule of decision shall be the Muslim Personal Law (Shariat). The 1939 Act gives Muslim women a statutory right to seek judicial divorce on specified grounds. The 2019 Act criminalises instantaneous triple talaq and provides civil consequences.
+Muslim family law questions test: nature of Muslim marriage (nikah), essentials of a valid marriage, dower (mahr), forms of divorce, and the 2019 Act on instant triple talaq. Constitutional holdings (Shayara Bano) must be cited as case law.
 
-Meaning and concept
-- Marriage (nikah) is a civil contract. Essentials include proposal and acceptance, competent parties, and (in most schools) presence of witnesses.
-- Dower (mahr) is a sum payable by the husband to the wife; it may be prompt or deferred.
-- Divorce: forms include talaq (by husband), khula (at the instance of the wife with consideration), mubaraat (mutual), and judicial divorce under the 1939 Act.
-- Triple talaq (talaq-e-biddat) in one sitting was held unconstitutional in Shayara Bano (2017) and is now an offence under the 2019 Act.
+Nature of Muslim marriage
+Nikah is a civil contract with religious significance. It requires proposal and acceptance (ijab and qubul) at the same meeting, competent parties, and absence of prohibited relationship. Witnesses are required under Sunni law as commonly applied in India.
 
-Why the statutory layer exists
-To give Muslim women access to judicial divorce (1939) and to eliminate the practice of instantaneous triple talaq (2017 judgment + 2019 Act) while leaving the bulk of personal law to the Shariat.
+Essentials of a valid marriage
+Parties must be of sound mind and have attained puberty (subject to school and guardianship rules). Free consent is required. Parties must not fall within prohibited degrees. Classical rules on inter-faith capacity should be stated carefully and not overstated beyond settled exam positions.
 
-Key statutory points
-- Dissolution of Muslim Marriages Act, 1939: grounds for the wife include husband’s whereabouts unknown for 4 years, failure to provide maintenance for 2 years, imprisonment, failure to perform marital obligations, impotence, cruelty, etc.
-- Muslim Women (Protection of Rights on Marriage) Act, 2019: any pronouncement of talaq by a Muslim husband upon his wife in any form (spoken, written, electronic) resulting in instantaneous and irrevocable divorce is void and illegal; it is a cognizable and compoundable offence.
+Dower (mahr)
+Dower is a sum or property the husband must pay the wife. It may be specified or unspecified, prompt or deferred. It is a debt against the husband’s estate and a protection for the wife.
+
+Divorce — overview
+Forms include talaq, khula, mubarat, and judicial dissolution under the Dissolution of Muslim Marriages Act, 1939.
+
+Talaq and the 2019 Act
+The Supreme Court in Shayara Bano held talaq-e-biddat (instant triple talaq) unconstitutional. The Muslim Women (Protection of Rights on Marriage) Act, 2019 declares any pronouncement of instantaneous triple talaq (spoken, written or electronic) void and illegal, creates a criminal offence, and provides for subsistence allowance and related protection as enacted.
+
+Dissolution of Muslim Marriages Act, 1939
+A Muslim wife may obtain a decree for dissolution on grounds in s. 2, including: husband’s whereabouts unknown for four years; neglect or failure to provide maintenance for two years; imprisonment for seven years or more; failure to perform marital obligations for three years; impotence; insanity or severe disease as specified; and cruelty (with statutory illustrations).
 
 Maintenance
-After the Shah Bano controversy and the Muslim Women (Protection of Rights on Divorce) Act, 1986, the Supreme Court’s later jurisprudence (e.g. Danial Latifi) has read the 1986 Act so as to secure a reasonable and fair provision and maintenance for the divorced Muslim woman. Section 125 BNSS / CrPC remains available subject to the statutory scheme.
+Identify which statute applies on the facts: Muslim personal law, the 1986 Muslim Women Act, or s. 125 BNSS/CrPC. Do not collapse them into one vague claim.
 
 Current-law close
-Do not apply the Hindu Marriage Act to Muslims. For divorce by the wife, cite the 1939 Act. For triple talaq, cite Shayara Bano and the 2019 Act. Always keep Muslim personal law distinct from HMA and SMA.`
+Name Shariat Act 1937, DMMA 1939, 2019 Act, and Shayara Bano. Do not treat Muslim law as a single sectioned code like the HMA.`
 
 export default {
   glance:
-    'Muslim personal law (un-codified core) + Shariat Act 1937 + Dissolution of Muslim Marriages Act 1939 + Muslim Women (Protection of Rights on Marriage) Act 2019 (triple talaq). Marriage is a contract; triple talaq is void and an offence.',
+    'Muslim personal law — nikah as contract, dower, talaq and DMMA 1939 judicial divorce, Muslim Women (Protection of Rights on Marriage) Act 2019 (instant triple talaq void/illegal). Always name the source.',
   study,
   examples: [
     {
-      id: 'mpl-ex-1939',
-      title: 'Example — judicial divorce under 1939 Act',
+      id: 'mpl-ex-nikah',
+      title: 'Example — essentials of nikah',
       description:
-        'A Muslim wife whose husband has failed to provide maintenance for more than two years and has treated her with cruelty may petition under the Dissolution of Muslim Marriages Act, 1939 for a decree of dissolution.',
+        'Offer and acceptance in one meeting between competent parties with required witnesses; mahr fixed. Valid nikah.',
     },
     {
-      id: 'mpl-ex-triple',
-      title: 'Example — triple talaq after 2019',
+      id: 'mpl-ex-2019',
+      title: 'Example — instant triple talaq',
       description:
-        'Husband sends a WhatsApp message pronouncing talaq three times in one go. Under the 2019 Act the pronouncement is void; the marriage subsists and the husband is liable to the penal consequences of the Act.',
+        'Husband sends “talaq talaq talaq” in one sitting. Under the 2019 Act the pronouncement is void and illegal; Shayara Bano held such talaq unconstitutional.',
+    },
+    {
+      id: 'mpl-ex-dmma',
+      title: 'Example — wife’s judicial divorce',
+      description:
+        'Husband fails to provide maintenance for two years. Wife petitions under s. 2 DMMA 1939 for dissolution.',
     },
   ],
   hypotheticals: [
     {
       id: 'mpl-hypo',
-      title: 'Classroom problem',
+      title: 'Classroom problem — triple talaq and 2019 Act',
       facts:
-        'A Muslim husband pronounces “talaq, talaq, talaq” in a single sitting in 2024 and claims the marriage is dissolved. The wife approaches the court.',
-      question: 'What is the legal position?',
+        'H pronounces instantaneous triple talaq upon W in 2021 and stops maintenance. W seeks a declaration and protection.',
+      question: 'What is the status of the talaq and what remedies may W invoke?',
       applicableLaw:
-        'Muslim Women (Protection of Rights on Marriage) Act, 2019; Shayara Bano v. Union of India (2017).',
+        'Muslim Women (Protection of Rights on Marriage) Act, 2019; Shayara Bano; DMMA 1939 / maintenance law as applicable.',
       analysis:
-        'Instantaneous triple talaq is void under the 2019 Act. The marriage continues. The husband may be prosecuted for the offence under the Act. The wife retains her rights arising from the subsisting marriage, including maintenance.',
+        'The 2019 Act declares instantaneous triple talaq void and illegal. The marriage is not dissolved by the void pronouncement. W may pursue maintenance and other statutory reliefs.',
       conclusion:
-        'The talaq is of no legal effect; cite the 2019 Act and Shayara Bano.',
+        'Instant triple talaq is void under the 2019 Act; cite Shayara Bano and the Act by full name.',
     },
   ],
   distinctions: [
     {
-      id: 'mpl-dist',
-      title: 'Muslim divorce vs HMA divorce',
-      left: 'Muslim personal law / 1939 / 2019 Acts',
-      right: 'Hindu Marriage Act, 1955',
+      id: 'mpl-dist-divorce',
+      title: 'Classical talaq vs DMMA vs 2019 Act',
+      left: 'Classical / other modes',
+      right: 'DMMA 1939 / 2019 Act',
       rows: [
-        { point: 'Source', left: 'Primarily uncodified + limited statutes', right: 'Fully codified statute' },
-        { point: 'Triple talaq', left: 'Void and an offence (2019 Act)', right: 'No equivalent concept' },
-        { point: 'Wife’s judicial divorce', left: '1939 Act grounds', right: 's. 13 HMA grounds' },
+        { point: 'Who initiates', left: 'Often husband (talaq); khula/mubarat involve wife/both', right: 'DMMA: wife seeks court decree; 2019 Act voids instant triple talaq' },
+        { point: 'Instant triple talaq', left: 'Historically claimed under some schools', right: 'Unconstitutional (Shayara Bano); void & illegal under 2019 Act' },
       ],
     },
   ],
   misconceptions: [
-    { id: 'mpl-m1', trap: 'Applying Section 13 HMA to a Muslim couple.', correction: 'HMA does not apply; use Muslim personal law and the 1939 / 2019 Acts.' },
-    { id: 'mpl-m2', trap: 'Treating triple talaq as still effective after 2019.', correction: 'It is void and an offence under the 2019 Act.' },
+    {
+      id: 'mpl-m1',
+      trap: 'Writing that Muslim marriage is only a sacrament like classical Hindu marriage.',
+      correction: 'Nikah is characterised as a civil contract with religious significance.',
+    },
+    {
+      id: 'mpl-m2',
+      trap: 'Stating that instant triple talaq is still a valid private divorce.',
+      correction: 'Shayara Bano held it unconstitutional; the 2019 Act declares it void and illegal.',
+    },
   ],
   questionsAndAnswers: [
     {
       id: 'mpl-q-10',
       marks: 10,
-      question: 'Explain the legal position of instantaneous triple talaq in India after 2019.',
+      question: 'Explain the essentials of a valid Muslim marriage and the concept of dower (mahr).',
       answer:
-        'Introduction. Instantaneous triple talaq (talaq-e-biddat) was a form of divorce under certain schools of Muslim law by which the husband pronounced talaq three times in one sitting.\n\nShayara Bano (2017). The Supreme Court held the practice of instantaneous triple talaq to be unconstitutional and not an essential religious practice.\n\n2019 Act. The Muslim Women (Protection of Rights on Marriage) Act, 2019 declares any pronouncement of talaq by a Muslim husband upon his wife resulting in instantaneous and irrevocable divorce to be void and illegal. It creates a cognizable and compoundable offence.\n\nConsequence. The marriage is not dissolved by such a pronouncement. The wife retains the status of a married woman and the consequential rights.\n\nConclusion. Cite both Shayara Bano and the 2019 Act; do not treat triple talaq as effective.',
+        'Introduction. Muslim marriage (nikah) is a civil contract with religious significance.\n\nEssentials. Ijab and qubul at the same meeting; competent parties; free consent; absence of prohibited relationship; witnesses under Sunni law as commonly applied.\n\nDower. Specified or unspecified; prompt or deferred; a debt and protection for the wife.\n\nIllustration. Consent exchanged with witnesses and mahr fixed — valid nikah.\n\nConclusion. State nikah as contract, list essentials, explain mahr.',
+      explanation: 'Cover ijab-qubul, competence, and mahr types.',
     },
     {
       id: 'mpl-q-16',
       marks: 16,
-      question: 'Discuss the grounds on which a Muslim wife may seek dissolution of marriage under the Dissolution of Muslim Marriages Act, 1939. How does this statute interact with the 2019 triple-talaq legislation?',
+      question: 'Discuss divorce under Muslim law with reference to Shayara Bano, the 2019 Act, and judicial dissolution under DMMA 1939.',
       answer:
-        'Introduction. The Dissolution of Muslim Marriages Act, 1939 gives a Muslim wife a statutory right to obtain a decree of dissolution of marriage on the grounds set out in Section 2.\n\nPrincipal grounds (s. 2). (i) Husband’s whereabouts unknown for four years; (ii) neglect or failure to provide maintenance for two years; (iii) sentence of imprisonment for seven years or more; (iv) failure to perform marital obligations for three years without reasonable cause; (v) impotence at the time of marriage and continuing; (vi) insanity for two years or leprosy / virulent venereal disease; (vii) if she was given in marriage before fifteen and repudiates before eighteen (option of puberty), provided the marriage was not consummated; (viii) cruelty (including physical ill-treatment, association with women of evil repute, obstruction in religious practice, unequal treatment between wives, etc.); (ix) any other ground recognised by Muslim law as valid for dissolution.\n\nProcedure. The wife presents a petition in the competent court; the court, if satisfied, passes a decree of dissolution.\n\nInteraction with 2019 Act. The 2019 Act deals only with instantaneous triple talaq by the husband. It does not displace the 1939 Act. A wife may still sue for dissolution under the 1939 Act on the statutory grounds even if the husband has not pronounced talaq.\n\nConclusion. List the major clauses of s. 2 of the 1939 Act, note the option of puberty, and keep the 2019 Act confined to the voidness and criminality of instantaneous triple talaq.',
+        'Introduction. Divorce may be extra-judicial or judicial under DMMA 1939. Instant triple talaq is controlled by constitutional law and the 2019 Act.\n\nShayara Bano. Talaq-e-biddat held unconstitutional.\n\n2019 Act. Instantaneous triple talaq void and illegal; offence and subsistence protection as enacted.\n\nDMMA 1939. Wife may obtain dissolution on s. 2 grounds: whereabouts unknown four years; failure to maintain two years; long imprisonment; failure of marital obligations three years; impotence; specified disease; cruelty.\n\nIllustration. Instant triple talaq by message — void under 2019 Act; W may also seek DMMA relief if grounds exist.\n\nConclusion. Cite Shayara Bano, the 2019 Act, and DMMA by name.',
+      explanation: 'Need Shayara Bano + 2019 Act + at least three DMMA grounds.',
     },
   ],
   cases: [
@@ -96,33 +116,23 @@ export default {
       name: 'Shayara Bano v. Union of India',
       year: 2017,
       citation: '(2017) 9 SCC 1',
-      holding: 'The practice of instantaneous triple talaq is unconstitutional and not protected as an essential religious practice.',
-      relevance: 'Foundation for the 2019 Act.',
-    },
-    {
-      name: 'Danial Latifi v. Union of India',
-      year: 2001,
-      citation: '(2001) 7 SCC 740',
-      holding: 'The Muslim Women (Protection of Rights on Divorce) Act, 1986 must be read so as to secure a reasonable and fair provision and maintenance for the divorced Muslim woman.',
-      relevance: 'Maintenance of divorced Muslim women.',
+      holding: 'Declared talaq-e-biddat (instant triple talaq) unconstitutional.',
+      relevance: 'Pair with the 2019 Act in modern answers.',
     },
   ],
   bareActPointers: [
     'Muslim Personal Law (Shariat) Application Act, 1937',
-    'Dissolution of Muslim Marriages Act, 1939',
+    'Dissolution of Muslim Marriages Act, 1939 — s. 2',
     'Muslim Women (Protection of Rights on Marriage) Act, 2019',
-    'Muslim Women (Protection of Rights on Divorce) Act, 1986',
   ],
   examTips: [
-    'Never apply HMA sections to Muslim parties.',
-    'For triple talaq: Shayara Bano + 2019 Act.',
-    'For wife’s judicial divorce: list the main grounds under the 1939 Act.',
-    'Keep maintenance under the 1986 Act / Danial Latifi distinct from s. 125 BNSS.',
+    'Never leave talaq without Shayara Bano and the 2019 Act.',
+    'List DMMA s. 2 grounds for wife’s judicial divorce.',
+    'Explain mahr as a debt and protection.',
   ],
   revisionPoints: [
-    'Marriage = contract (nikah) + mahr.',
-    '1939 Act = wife’s statutory grounds of divorce.',
-    '2019 Act = triple talaq void + offence.',
-    'Shayara Bano is the constitutional foundation.',
+    'Nikah = contract; ijab + qubul; mahr.',
+    'Shayara Bano + 2019 Act = instant triple talaq void/illegal.',
+    'DMMA 1939 — wife’s judicial dissolution grounds.',
   ],
 } satisfies TopicContent
