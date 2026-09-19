@@ -1,0 +1,91 @@
+import type { TopicContent } from '../topicTypes'
+
+const study = `Topic at a glance
+Family Law – II, Unit III: Testamentary succession — disposition by will. For Hindus, HSA recognises testamentary power (subject to the Act). Formalities are largely under the Indian Succession Act, 1925. Always separate intestate from testamentary succession.
+
+Introduction
+Intestate succession applies when there is no valid will (or as to property not covered). Testamentary succession applies when a valid will operates.
+
+Hindus and testamentary power
+A Hindu may dispose by will of property capable of being disposed of by him. Mitakshara coparcenary interest is subject to s. 6 HSA. Self-acquired property is ordinarily freely disposable subject to general law.
+
+Indian Succession Act, 1925 (essentials)
+Sound disposing mind; execution and attestation (generally two witnesses for unprivileged wills); revocation by later will, destruction with intent, etc. Probate establishes the will.
+
+Muslim law (brief)
+Generally only up to one-third of the net estate to a non-heir without heirs’ consent; bequests to heirs or excess need consent as classical rules provide.
+
+Current-law close
+State whether the problem is intestate or testamentary. Cite HSA s. 6 and ISA formalities for Hindus; one-third rule for Muslims.`
+
+export default {
+  glance:
+    'FL-II Unit III — Wills: Hindu testamentary power (HSA s. 6 interest); Indian Succession Act formalities; Muslim one-third rule.',
+  study,
+  examples: [
+    {
+      id: 'will-ex-1',
+      title: 'Example — self-acquired property',
+      description:
+        'Hindu male executes a valid attested will of his self-acquired house. On death the will governs that house.',
+    },
+  ],
+  hypotheticals: [
+    {
+      id: 'will-hypo',
+      title: 'Classroom problem — no will',
+      facts: 'Hindu male dies leaving ancestral Mitakshara property and no will. Heirs: widow, son, daughter.',
+      question: 'Which regime applies?',
+      applicableLaw: 'Hindu Succession Act, 1956 — ss. 6 and 8 (intestate).',
+      analysis: 'No will → intestate. Ascertain interest under s. 6; devolve under s. 8 on Class I heirs.',
+      conclusion: 'Apply intestate HSA rules, not testamentary law.',
+    },
+  ],
+  distinctions: [
+    {
+      id: 'will-dist',
+      title: 'Intestate vs Testamentary',
+      left: 'Intestate',
+      right: 'Testamentary',
+      rows: [
+        { point: 'Trigger', left: 'No valid will', right: 'Valid will covers the property' },
+        { point: 'Hindu statute', left: 'HSA ss. 8, 15 etc.', right: 'Will + HSA s. 6 limits + ISA formalities' },
+      ],
+    },
+  ],
+  misconceptions: [
+    {
+      id: 'will-m1',
+      trap: 'A will automatically overrides all coparcenary rights without s. 6 HSA.',
+      correction: 'Testamentary power over Mitakshara coparcenary interest is controlled by s. 6 HSA.',
+    },
+  ],
+  questionsAndAnswers: [
+    {
+      id: 'will-q10',
+      marks: 10,
+      question: 'Explain testamentary succession under Hindu law.',
+      answer:
+        'Introduction. Meaning of will. Power over disposable property. s. 6 HSA and coparcenary interest. ISA formalities essentials. Conclusion.',
+      explanation: 'Separate self-acquired from coparcenary interest.',
+    },
+    {
+      id: 'will-q16',
+      marks: 16,
+      question: 'Distinguish intestate and testamentary succession. Discuss limits on willing Mitakshara interest and the Muslim one-third rule.',
+      answer:
+        'Introduction. Intestate vs testamentary. Hindu: HSA intestate vs will; s. 6 on coparcenary interest. Muslim: one-third rule. Illustration. Conclusion.',
+      explanation: 'Both Hindu s. 6 and Muslim one-third needed.',
+    },
+  ],
+  bareActPointers: [
+    'Hindu Succession Act, 1956 — s. 6',
+    'Indian Succession Act, 1925 — wills',
+  ],
+  examTips: ['First ask: is there a valid will?', 'Muslim wills: one-third rule.'],
+  revisionPoints: [
+    'Intestate = no will; testamentary = will.',
+    'HSA s. 6 limits on coparcenary interest.',
+    'Muslim — generally 1/3 to non-heir without consent.',
+  ],
+} satisfies TopicContent
