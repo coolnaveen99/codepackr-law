@@ -1,32 +1,44 @@
-# Skill: Add New Tool to Codepackr Law
+# Skill: Add New Tool to Codepackr Law (Student & Practice Tools SOP)
 
-**Mandatory SOP.** Every new tool must follow this sequence.
+**Mandatory SOP** for creating, registering, and deploying client-side tools on CodePackr Law.
 
-## Principles
+Every tool must serve either **Law Students / Aspirants** (examination simulation, flashcards, diagnostic MCQs) or **Junior Advocates / Practicing Litigators** (statutory mappers, limitation calculators, transition checkers, procedural flowcharts, drafting templates), operating with 100% client-side privacy.
 
-1. 100% client-side
-2. Seal brand (Tailwind `blue-*` remapped in `src/index.css` — do not use Dev `#2563eb`)
-3. Complete UX (Sample/Demo where relevant, Reset, feedback)
-4. India-focused legal content (AIBE / Judiciary / Bare Acts)
-5. Quality Gate must pass
+---
 
-## Steps
+## 1. Non-Negotiable Tool Directives
 
-1. Register in `src/data/tools.ts` (id, name, category, description, keywords, icon)
-2. Build component under `src/components/tools/`
-3. Wire routing / slug
-4. Add SEO metadata
-5. Update README tool list
-6. Pass lint + build
-7. Complete `.github/skills/tool-quality-gate.md`
+1. **100% Client-Side Privacy**: Zero data leaves the browser. No server calls with user notes, answers, scores, or draft pleadings.
+2. **Seal Brand Integrity**: Accent color is **seal burgundy** (`#8B1E3F` / `#9F2D4A`) via remapped Tailwind `blue-*` in `src/index.css`. Never revert to Dev `#2563eb` or Finance green.
+3. **Complete Interactive UX**:
+   - Provide Sample / Demo state (pre-fills realistic legal data so the user can immediately test).
+   - Clear / Reset action.
+   - Comprehensive feedback states (loading, empty, error, results).
+   - Mobile responsive and keyboard accessible (WCAG AA).
+4. **India Legal Relevance**: Direct utility for Indian law students (AIBE, Judicial Services, LL.B) or litigators (trial/appellate practice, BNS/BNSS/BSA transition).
+5. **Quality Gate Compliance**: Must fully pass [`.github/skills/tool-quality-gate.md`](tool-quality-gate.md).
 
-## Categories
+---
 
-- `mcq` — Practice questions & mocks
-- `bare-acts` — Section lookup & mappers
-- `study-aids` — Flashcards, timers
-- `reference` — Maxims, landmark cases
+## 2. Tool Categories
 
-## Privacy
+| Category | Intended Scope | Representative Examples |
+|----------|----------------|-------------------------|
+| `mcq` | Diagnostic questions, mocks, and timed quizzes | Subject MCQ banks, AIBE Full Mock, Judicial Services Prelims simulator |
+| `bare-acts` | Provision lookup, mappers, and transition guides | BNS ↔ IPC mapper, BNSS ↔ CrPC mapper, BSA ↔ IEA mapper, S. 531 transition checker |
+| `study-aids` | Active recall, timers, and revision helpers | Section flashcards, Landmark case drill, Exam timer with alert intervals |
+| `reference` | Quick courtroom and chamber reference utilities | Limitation Act calculator, Legal maxims glossary, BSA s. 63 certificate drafting tool |
 
-No network calls with user answers or scores. localStorage only on explicit opt-in.
+---
+
+## 3. Step-by-Step Implementation Sequence
+
+1. **Register in Tool Registry**: Add entry to `src/data/tools.ts` (`id`, `slug`, `name`, `category`, `description`, `keywords`, `icon`, `priority`, `badge`).
+2. **Build Component**: Create `src/components/tools/<ToolName>.tsx` (or subfolder if complex). Implement sample data, reset, responsive layout, and dark mode.
+3. **Wire Routing**: Ensure clean URL works via `src/App.tsx` routing.
+4. **Add SEO & Metadata**: Configure title and meta description emphasizing client-side privacy and Indian legal utility.
+5. **Update README.md**: Add tool to the featured list in `README.md`.
+6. **Execute Verification**:
+   - `npm run lint`
+   - `npm run build`
+7. **Complete Quality Gate**: Verify all checkboxes in [`.github/skills/tool-quality-gate.md`](tool-quality-gate.md).

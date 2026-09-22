@@ -1,117 +1,74 @@
-# Skill: Legal Content Workflow
+# Skill: Legal Content Workflow (Senior Counsel & PhD Operational SOP)
 
-**Mandatory SOP** for adding or changing Indian-law study content (subjects, topics, provisions, cases, MCQs, mappings).
+**Mandatory SOP** for researching, verifying, drafting, and implementing Indian-law treatises, topics, provisions, cases, and tools.
 
-Full rules: [`.github/instructions/global-legal-content.md`](../instructions/global-legal-content.md)
+Full rules: [`.github/instructions/global-legal-content.md`](../instructions/global-legal-content.md)  
+Depth standard: [`.github/instructions/student-answer-content.md`](../instructions/student-answer-content.md)  
+Benchmark model: `src/data/topics/cpc/s-32.ts`
 
-Depth standard: [`.github/instructions/student-answer-content.md`](../instructions/student-answer-content.md)
+---
 
-Student answer-depth rules: [`.github/skills/student-answer-content.md`](student-answer-content.md)
+## The Dual-Track Pipeline
 
-Subject extras (only): [`.github/instructions/subjects/`](../instructions/subjects/)
-
-Knowledge graph: [`.github/skills/reusable-legal-knowledge.md`](reusable-legal-knowledge.md)
-
-Topic file SOP: [`.github/skills/add-topic-notes.md`](add-topic-notes.md)
-
-New subject SOP: [`.github/skills/add-new-subject.md`](add-new-subject.md)
-
-## Workflow
-
-```
+```text
 RESEARCH BEYOND BARE ACT
-→ VERIFY
-→ UNDERSTAND
-→ STRUCTURE FOR LEARNING
-→ IMPLEMENT
-→ CROSS-LINK
-→ VALIDATE
-→ TEST
+        ↓
+VERIFY COMMENCEMENT & TRANSITION (S. 531 BNSS / Art 20(1))
+        ↓
+DECONSTRUCT JURISPRUDENCE & STATUTE (PhD Caliber)
+        ↓
+ESTABLISH PROCEDURAL ANCHOR & PROVING STANDARD (Senior Counsel)
+        ↓
+IMPLEMENT LAZY TREATISE (`src/data/topics/<slug>/<id>.ts`)
+        ↓
+FORMULATE IRAC / CREAC EXAM ANSWERS (marks: 10 | 16)
+        ↓
+CROSS-LINK CANONICAL KNOWLEDGE (`[[REF:TYPE:CATEGORY:SLUG]]`)
+        ↓
+VALIDATE KNOWLEDGE GRAPH & PASS QUALITY GATES (Lint + Build)
 ```
 
-Do not skip research for substantive legal content. Do not rely only on model memory.
+---
 
-### 1. Research
+## Step-by-Step Execution
 
-Inspect the repo first: `subjects.ts`, `src/data/knowledge`, existing topic files, questions, mappers.
+### 1. Research (Level 1 to Level 4)
+- **Primary Law**: Official Gazette of India, India Code, Legislative Department publications.
+- **Judicial Authorities**: Supreme Court Reports (SCR), Supreme Court Cases (SCC), All India Reporter (AIR). Extract the exact *ratio decidendi*; separate binding law from *obiter dicta*.
+- **Canonical Graph**: Check `src/data/knowledge` before minting any doctrine, case, or maxim.
 
-Research the topic beyond the Bare Act:
-1. Primary/official law
-2. Judicial authorities
-3. Reliable legal databases
-4. Reputable legal reporting for context/recent developments
-5. Academic/educational sources for doctrine, theory and history
+### 2. Verify Commencement & Transitional Status
+- **Date-of-Offence Verification**: For criminal law, confirm whether the provision applies to post-July 1, 2024 acts (BNS) or historical acts (IPC).
+- **Section 531 BNSS Savings Check**: Explicitly document that pending trials and investigations continue under CrPC, 1973.
+- **Number Collisions**: Verify that BNS/BNSS numbers are not conflated with IPC/CrPC numbers (e.g., BNS 304 snatching, BNS 309 robbery, BNSS 482 anticipatory bail).
 
-The Bare Act is the legal source layer. It is not the complete student-learning layer.
+### 3. Dual-Track Structuring
+Every substantive treatise file must contain:
+- **Track A (Scholastic & Exam Mastery)**:
+  - Meaning, concept, and jurisprudential origin.
+  - Deconstruction of statutory text (sub-sections, provisos, explanations).
+  - Canons of statutory interpretation applied.
+  - Landmark precedents with extracted ratio decidendi.
+  - Complete 10-Mark Answer (`marks: 10`) formatted using IRAC.
+  - Complete 16-Mark Answer (`marks: 16`) formatted using CREAC.
+- **Track B (Litigation & Chamber Practice)**:
+  - Competent forum and territorial/pecuniary limits.
+  - Limitation Act, 1963 schedule anchor.
+  - Indispensable statutory ingredients to be proved in court.
+  - Standard and burden of proof under BSA (ss. 104–106) and electronic certificate requirements (s. 63).
+  - Essential pleadings averments (Order VI Rule 2 CPC).
+  - Core adversarial submissions: Prosecution/Plaintiff vs Defence/Respondent arguments.
 
-### 2. Verify
+### 4. Implementation
+- **Metadata Only**: Register minimal search metadata in `src/data/subjects.ts` (`id`, `name`, `type`, `cluster`, `highYield`). Never place essays in `subjects.ts`.
+- **Full Treatise**: Write the comprehensive book chapter in `src/data/topics/<slug>/<id>.ts`.
+- **Never ship boilerplate synthesizers**: Replace factory templates (`synthesizeProvision`, `synthesizeCpc`) with authentic treatises.
 
-Confirm current text, commencement, repeal, later amendments, and that a mapping is not a false equivalence.
+### 5. Cross-Link Reusable Knowledge
+- Link canonical records via `[[REF:TYPE:CATEGORY:SLUG]]`.
+- Add verified mapper relationships in `src/data/sections/` when connecting reformed codes to historical equivalents.
 
-For cases verify the case identity, citation, court, facts, issue, decision and ratio/principle where available.
-
-If unverified: mark `needs-review`. Never invent numbers, citations, holdings or URLs.
-
-### 3. Structure for student learning
-
-Every substantive topic should be detailed enough to support a 10-mark answer and, where appropriate, expansion to a 16-mark answer.
-
-`study` teaches the law. `questionsAndAnswers` with `marks: 10 | 16` is the exam answer the jump buttons open. Do not paste “how to write 10/16 marks” into `study`.
-
-Normally cover in research (then place on the correct field):
-- Introduction, meaning/concept, purpose
-- Definitions / every official illustration
-- Essential elements, operation, exceptions, distinctions
-- Practical examples and a labelled hypothetical
-- Leading case law with principles/ratio
-- Common misconceptions
-- Full 10-mark answer and full 16-mark answer in Q&A
-- Related reusable knowledge (`[[REF:]]`)
-
-Do not make content longer through repetition.
-
-### 4. Implement
-
-- Metadata → `src/data/subjects.ts`
-- Notes → `src/data/topics/<slug>/<id>.ts`
-- New subject (hamburger, intro, catalog) → `.github/skills/add-new-subject.md`
-- Provisions → existing catalogs (`src/data/bns|bnss|bsa|constitution/`)
-- Reusable doctrine/case/definition → `src/data/knowledge/` after search
-- MCQs → `src/data/questions/`
-
-### 5. Cross-link
-
-`[[REF:TYPE:CATEGORY:SLUG]]`, related topics, mapper links for historical ↔ current **only when verified**.
-
-Search the knowledge graph before creating duplicate doctrine, case, definition, principle, maxim or provision records.
-
-### 6. Validate
-
-- No duplicate IDs
-- No broken `[[REF:]]`
-- Knowledge `registry.ts` still validates
-- No blind `IPC → BNS` / `CrPC → BNSS` / `IEA → BSA` replacements
-- Examples/hypotheticals are clearly labelled educational
-- Bare Act text is never confused with paraphrase or commentary
-
-### 7. Test
-
-```bash
-npm run lint
-npm run build
-```
-
-Open the subject page, one topic, related knowledge, and (if MCQs changed) practice/exam.
-
-## Do not
-
-- Create a second reader, MCQ engine, or mapper
-- Put essays in `subjects.ts`
-- Duplicate a canonical doctrine/case
-- Treat IPC / CrPC / IEA as current-law subjects
-- Copy textbooks or database commentary
-- Generate only Bare Act summaries for substantive topics
-- Produce case-name lists without explaining the legal principle
-- Invent statutory illustrations
-- Omit examples/application where they materially help understanding
-- Add a subject without following `add-new-subject.md`
+### 6. Validate & Test
+- Run `npm run lint` and `npm run build`.
+- Verify that no duplicate IDs exist and no `[[REF:...]]` references are broken.
+- Ensure the Quality Gate checklist is completely green.

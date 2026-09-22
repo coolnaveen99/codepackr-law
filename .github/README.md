@@ -1,90 +1,106 @@
-# Codepackr Law — AI Agents, Prompts & Skills
+# Codepackr Law — AI Agents, Prompts, Instructions & Skills
 
-This folder defines how AI assistants and contributors must work on **Codepackr Law** (`law.codepackr.com`).
-
-Student corner: catalog-first subjects, full study pages, 10-mark / 16-mark jump answers. Seal burgundy theme (Tailwind `blue-*` remapped in `src/index.css`). 100% client-side.
+This directory governs how AI assistants, Senior Counsel reviewers, legal scholars, and developers build, maintain, and expand **Codepackr Law** (`law.codepackr.com`).
 
 ---
 
-## Quick Start
+## Strategic Mission: Dual-Track Legal Library & Practice Reference
 
-1. Master guide: [`../AI_INSTRUCTIONS.md`](../AI_INSTRUCTIONS.md)
-2. **Adding a subject:** [`skills/add-new-subject.md`](skills/add-new-subject.md)
-3. Legal content (every subject): [`instructions/global-legal-content.md`](instructions/global-legal-content.md)
-4. Depth standard: [`instructions/student-answer-content.md`](instructions/student-answer-content.md)
-5. Tool SOP: [`skills/add-new-tool.md`](skills/add-new-tool.md)
-6. Quality Gate: [`skills/tool-quality-gate.md`](skills/tool-quality-gate.md)
+Codepackr Law is a 100% privacy-first, client-side **Digital Law Library & Practice Reference** engineered with dual-track excellence:
+1. **Track A — Scholastic & Judicial Examination Mastery (PhD in Law Standard)**:
+   - Deep jurisprudential grounding (analytical, historical, and sociological perspectives).
+   - Legislative intent, statutory anatomy (sections, provisos, explanations, non-obstante clauses), and canons of interpretation.
+   - Comprehensive university, AIBE, and State Judicial Services 10-mark and 16-mark structured answers (IRAC / ILAC frameworks).
+   - Authoritative case law analysis (ratio decidendi clearly segregated from obiter dicta; landmark vs contemporary positions).
+   - Rigorous legal doubt resolution (dispelling common statutory misconceptions and number collisions).
+2. **Track B — Chamber & Courtroom Practice Reference (Senior Counsel Standard)**:
+   - Rapid forensic reference for junior advocates and litigators during court hearings and chamber drafting.
+   - Procedural mapping: Exact Forum, Territorial & Pecuniary Jurisdiction, Limitation Act schedule, and court fees.
+   - Evidentiary standards: Mandatory statutory ingredients, burden of proof (BSA ss. 104–106), and electronic evidence certificates (BSA s. 63).
+   - Core courtroom arguments: Petitioner/Prosecution essential submissions vs Respondent/Defence counter-arguments.
+   - Authentic drafting anatomy: Verified petition structures, mandatory statutory averments, verification affidavits, and prayer formats.
+   - 2024 Criminal Law Transition: Forensic clarity on Section 531 BNSS savings, grandfathering of pending proceedings, and date-of-offence applicability.
 
----
-
-## Legal content (global + per subject)
-
-| Document | File |
-|----------|------|
-| **Global agent instructions** | [`instructions/global-legal-content.md`](instructions/global-legal-content.md) |
-| **Student-answer depth standard** | [`instructions/student-answer-content.md`](instructions/student-answer-content.md) |
-| Copilot apply-to `src/data/**` | [`instructions/legal-content.instructions.md`](instructions/legal-content.instructions.md) |
-| **New subject extras template** | [`instructions/subjects/_template.md`](instructions/subjects/_template.md) |
-| Constitution | [`instructions/subjects/constitution.md`](instructions/subjects/constitution.md) |
-| BNS | [`instructions/subjects/bns.md`](instructions/subjects/bns.md) |
-| BNSS | [`instructions/subjects/bnss.md`](instructions/subjects/bnss.md) |
-| BSA | [`instructions/subjects/bsa.md`](instructions/subjects/bsa.md) |
-| CPC | [`instructions/subjects/cpc.md`](instructions/subjects/cpc.md) |
-| Contract | [`instructions/subjects/contract.md`](instructions/subjects/contract.md) |
-| Family | [`instructions/subjects/family.md`](instructions/subjects/family.md) |
-| Torts | [`instructions/subjects/torts.md`](instructions/subjects/torts.md) |
-| Petition formats | [`instructions/subjects/petition-formats.md`](instructions/subjects/petition-formats.md) |
-
-Global instructions control architecture, research, catalog UX, mapper, current/historical law, MCQ/Practice/Exam. Subject files control name, legislation, provision terminology, and subject-specific exceptions only.
+All tools execute strictly in the client's browser. Zero user notes, practice scores, or search queries ever leave the device. Theme: **Seal Burgundy** (`#8B1E3F` / `#9F2D4A`).
 
 ---
 
-## Agents (Roles)
+## Quick Navigation
 
-| Agent | File | Use when |
-|-------|------|----------|
-| **Subject Author** | [`agents/subject-author.yml`](agents/subject-author.yml) | Adding a new subject or filling its catalog / 10–16 mark pages |
-| **Legal Content** | [`agents/legal-content.yml`](agents/legal-content.yml) | Researching, verifying, and deepening study content on an existing subject |
-| **Core Engineer** | [`agents/core-engineer.yml`](agents/core-engineer.yml) | Building tools, MCQ logic, TypeScript, privacy |
-| **UI Architect** | [`agents/ui-architect.yml`](agents/ui-architect.yml) | Layout, hamburger, catalog pages, accessibility |
-| **SEO Specialist** | [`agents/seo-specialist.yml`](agents/seo-specialist.yml) | Metadata, slugs, README listings, discoverability |
-
-Each agent points to its detailed prompt in `prompts/`.
-
----
-
-## Prompts
-
-| Prompt | File |
-|--------|------|
-| **Add Subject** | [`prompts/add-subject.prompt.md`](prompts/add-subject.prompt.md) |
-| Legal Content | [`prompts/legal-content.prompt.md`](prompts/legal-content.prompt.md) |
-| Core Engineer | [`prompts/core-engineer.prompt.md`](prompts/core-engineer.prompt.md) |
-| UI Architect | [`prompts/ui-architect.prompt.md`](prompts/ui-architect.prompt.md) |
-| SEO Specialist | [`prompts/seo-specialist.prompt.md`](prompts/seo-specialist.prompt.md) |
+1. **Master System Architecture**: [`../AI_INSTRUCTIONS.md`](../AI_INSTRUCTIONS.md)
+2. **Global Legal & Practice Architecture**: [`instructions/global-legal-content.md`](instructions/global-legal-content.md)
+3. **Dual-Track Content Depth Standard**: [`instructions/student-answer-content.md`](instructions/student-answer-content.md)
+4. **Legal Content Workflow SOP**: [`skills/legal-content-workflow.md`](skills/legal-content-workflow.md)
+5. **Adding a New Subject**: [`skills/add-new-subject.md`](skills/add-new-subject.md)
+6. **Writing High-Yield Topic Treatises**: [`skills/add-topic-notes.md`](skills/add-topic-notes.md)
+7. **Canonical Legal Knowledge Graph**: [`skills/reusable-legal-knowledge.md`](skills/reusable-legal-knowledge.md)
+8. **Forensic Quality Gate**: [`skills/tool-quality-gate.md`](skills/tool-quality-gate.md)
 
 ---
 
-## Skills (SOPs)
+## Legal & Subject Specifications (`instructions/`)
 
-| Skill | File | Purpose |
-|-------|------|---------|
-| **Add New Subject** | [`skills/add-new-subject.md`](skills/add-new-subject.md) | Register a subject, catalog, hamburger, intro, study pages |
-| **Student Answer Content** | [`skills/student-answer-content.md`](skills/student-answer-content.md) | 10-mark / 16-mark exam-ready Study Topics |
-| **Legal Content Workflow** | [`skills/legal-content-workflow.md`](skills/legal-content-workflow.md) | Research → verify → implement legal study content |
-| **Reusable Legal Knowledge** | [`skills/reusable-legal-knowledge.md`](skills/reusable-legal-knowledge.md) | Search-first canonical IDs, `[[REF:]]`, validation |
-| **Add Topic Notes** | [`skills/add-topic-notes.md`](skills/add-topic-notes.md) | Lazy-loaded Study Topic files |
-| **Add New Tool** | [`skills/add-new-tool.md`](skills/add-new-tool.md) | Mandatory step-by-step for every new tool |
-| **Tool Quality Gate** | [`skills/tool-quality-gate.md`](skills/tool-quality-gate.md) | Final pass/fail checklist |
+| Document | File | Purpose |
+|----------|------|---------|
+| **Global Legal Architecture** | [`instructions/global-legal-content.md`](instructions/global-legal-content.md) | Universal research, verification, dual-track content, and statutory rules |
+| **Academic & Practice Depth** | [`instructions/student-answer-content.md`](instructions/student-answer-content.md) | PhD + Senior Counsel content standard for all substantive topics |
+| **Copilot Data Directive** | [`instructions/legal-content.instructions.md`](instructions/legal-content.instructions.md) | Target instructions automatically applied to `src/data/**` |
+| **Repository Rules** | [`instructions/project.md`](instructions/project.md) | Core technical, privacy, and versioning constraints |
+| **Subject Template** | [`instructions/subjects/_template.md`](instructions/subjects/_template.md) | Master template for onboarded statutes |
+| **Constitution of India** | [`instructions/subjects/constitution.md`](instructions/subjects/constitution.md) | Constitutional law through the 106th Amendment |
+| **Bharatiya Nyaya Sanhita (BNS)** | [`instructions/subjects/bns.md`](instructions/subjects/bns.md) | Substantive criminal law (Act 45 of 2023) |
+| **Bharatiya Nagarik Suraksha Sanhita (BNSS)**| [`instructions/subjects/bnss.md`](instructions/subjects/bnss.md) | Criminal procedure, bail, trial, S. 531 transition |
+| **Bharatiya Sakshya Adhiniyam (BSA)** | [`instructions/subjects/bsa.md`](instructions/subjects/bsa.md) | Law of evidence, electronic certificates (S. 63), burden |
+| **Code of Civil Procedure (CPC)** | [`instructions/subjects/cpc.md`](instructions/subjects/cpc.md) | Civil litigation, suits, injunctions, execution, O. VII R. 11 |
+| **Indian Contract Act** | [`instructions/subjects/contract.md`](instructions/subjects/contract.md) | Formation, breach, damages, specific relief interplay |
+| **Family Law** | [`instructions/subjects/family.md`](instructions/subjects/family.md) | Personal laws, succession, matrimonial relief, maintenance |
+| **Law of Torts** | [`instructions/subjects/torts.md`](instructions/subjects/torts.md) | Common law wrongs, strict/absolute liability, statutory torts |
+| **Petition Formats & Pleadings** | [`instructions/subjects/petition-formats.md`](instructions/subjects/petition-formats.md) | Chamber drafting, pleadings anatomy, mandatory averments |
 
 ---
 
-## Global Rules
+## Agents (`agents/`)
 
-- [`copilot-instructions.md`](copilot-instructions.md) — Golden rules for the whole project
-- Brand: **seal burgundy** (Tailwind `blue-*` remapped in `src/index.css`). Not Codepackr Dev blue, not Finance green.
-- Privacy: 100% client-side only
-- Focus: AIBE, Judiciary, student 10/16-mark answers, BNS / BNSS / BSA / Constitution catalogs
-- Current-law subjects: Constitution, BNS, BNSS, BSA, CPC, Contract, Family, Torts, plus any new in-force Act you add. IPC / CrPC / IEA are historical concordance only.
+Specialized personas configured for repository workflows:
 
-Never skip the Quality Gate. Never transmit practice data off-device. Never invent legal provisions, citations, illustrations, or mappings.
+| Agent | File | Primary Responsibility |
+|-------|------|------------------------|
+| **Legal Content** | [`agents/legal-content.yml`](agents/legal-content.yml) | Researches, verifies, and drafts treatises with PhD rigour and Senior Counsel insight |
+| **Subject Author** | [`agents/subject-author.yml`](agents/subject-author.yml) | Onboards complete statutory catalogs and drafts section treatises |
+| **Core Engineer** | [`agents/core-engineer.yml`](agents/core-engineer.yml) | Builds 100% client-side privacy tools, calculators, and exam simulators |
+| **UI Architect** | [`agents/ui-architect.yml`](agents/ui-architect.yml) | Enforces seal burgundy branding, catalog accessibility, and dual-track reader UX |
+| **SEO Specialist** | [`agents/seo-specialist.yml`](agents/seo-specialist.yml) | Optimizes discoverability for law students, aspirants, and legal professionals |
+| **Project Maintainer**| [`agents/project-maintainer.md`](agents/project-maintainer.md) | Guards repo integrity, canonical knowledge graph validation, and build hygiene |
+
+---
+
+## Prompts (`prompts/`)
+
+Operational system prompts matching agent roles:
+- [`prompts/legal-content.prompt.md`](prompts/legal-content.prompt.md)
+- [`prompts/add-subject.prompt.md`](prompts/add-subject.prompt.md)
+- [`prompts/core-engineer.prompt.md`](prompts/core-engineer.prompt.md)
+- [`prompts/ui-architect.prompt.md`](prompts/ui-architect.prompt.md)
+- [`prompts/seo-specialist.prompt.md`](prompts/seo-specialist.prompt.md)
+- [`prompts/project-maintainer.md`](prompts/project-maintainer.md)
+
+---
+
+## Skills & Standard Operating Procedures (`skills/`)
+
+- **[`skills/legal-content-workflow.md`](skills/legal-content-workflow.md)** — Research → Verify → Structure → Implement → Cross-Link → Validate → Test.
+- **[`skills/student-answer-content.md`](skills/student-answer-content.md)** — Operational rubric for 10-mark and 16-mark answers and courtroom notes.
+- **[`skills/add-topic-notes.md`](skills/add-topic-notes.md)** — SOP for lazy-loaded topic treatise files (`s-32.ts` benchmark).
+- **[`skills/add-new-subject.md`](skills/add-new-subject.md)** — SOP for onboarding an Act or high-yield legal domain.
+- **[`skills/reusable-legal-knowledge.md`](skills/reusable-legal-knowledge.md)** — Search-first canonical entity management (`TYPE:CATEGORY:SLUG`).
+- **[`skills/add-new-tool.md`](skills/add-new-tool.md)** — SOP for client-side tools and practice aids.
+- **[`skills/tool-quality-gate.md`](skills/tool-quality-gate.md)** — Forensic pass/fail release gate.
+- **[`skills/project-maintenance.md`](skills/project-maintenance.md)** — Routine verification and codebase maintenance.
+
+---
+
+## Non-Negotiable Directives
+
+1. **Zero Hallucination Standard**: Never invent a section number, citation, judicial holding, statutory illustration, or procedural step. If an authority is unverified, tag it as `needs-review`.
+2. **Current Law Primacy**: BNS, BNSS, and BSA govern offences and proceedings on or after 1 July 2024. IPC, CrPC, and IEA are historical concordance only. Never state `IPC = BNS` without forensic qualification.
+3. **Client-Side Privacy**: Absolute zero data leakage. All notes, mock exams, flashcards, and search queries remain exclusively on the user's browser.

@@ -14,24 +14,29 @@ Prompt: [`.github/prompts/add-subject.prompt.md`](../prompts/add-subject.prompt.
 
 ---
 
-## Product shape (do not invent a second one)
+## Dual-Track Product Shape (Do Not Deviate)
 
-The student journey is:
+The student and advocate click path must strictly follow:
 
 ```text
-Home / hamburger
-  → Subject landing (introduction + complete catalog)
-    → Click one provision or theme
-      → Full study page
-        → 10-mark and 16-mark jump buttons
+Home / Hamburger
+  → Subject Landing (Statutory Context + In-Force Status + Complete Numbered Catalog)
+    → Click Provision / Section / Article / Topic
+      → Full Treatise Page (Book-Chapter Depth)
+        → Jurisprudential Foundation & Legislative Intent (PhD Standard)
+        → Statutory Deconstruction (Provisos, Explanations, Non-obstante clauses)
+        → Procedural & Evidentiary Anchors (Forum, Limitation, BSA Burden of Proof)
+        → Official Statutory Illustrations (if enacted) + Contrastive Hypotheticals
+        → Landmark Precedents with Extracted Ratio Decidendi
+        → Courtroom Arguments (Prosecution/Plaintiff vs Defence/Respondent)
+        → 10-Mark and 16-Mark Jump Buttons (IRAC / CREAC Answers)
 ```
 
-Same pattern as BNS / BNSS / BSA / Constitution:
-
-- Click **BNS** → introduction and **every section**.
-- Click **Section 107** → full teaching note for that section (meaning, ingredients, statutory illustrations if the Act prints them, examples, full 10-mark and 16-mark answers).
-- Do **not** stop at a Bare Act dump.
-- Do **not** put “How to write a 10-mark answer” filler in the study body. That lives in the Q&A cards.
+Follow the established catalog standard:
+- Clicking a subject displays the statutory introduction, in-force milestone, and **every numbered provision**.
+- Clicking any individual section opens the comprehensive treatise (meaning, ingredients, statutory illustrations if official, labelled examples, procedural anchors, and full 10-mark and 16-mark answers).
+- **Never stop at a Bare Act dump**.
+- **Never paste exam-writing filler into the `study` body**. Exam answers live exclusively in `questionsAndAnswers`.
 
 ---
 
