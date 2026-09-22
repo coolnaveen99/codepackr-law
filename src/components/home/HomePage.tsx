@@ -1,8 +1,9 @@
 import { useMemo } from 'react'
-import { ArrowRight, BookOpen, Construction, Search, ShieldCheck } from 'lucide-react'
+import { ArrowRight, BookOpen, Search, ShieldCheck } from 'lucide-react'
 import { SUBJECTS, type LawTopic } from '../../data/subjects'
 import type { ToolCategory, ToolMetadata } from '../../types'
 import { Badge } from '../ui/Badge'
+import { UnderConstructionBanner } from './UnderConstructionBanner'
 import { SubjectGlyph, ToolGlyph } from '../icons'
 
 const FEATURED_SLUGS = ['constitution', 'bns', 'bnss', 'bsa'] as const
@@ -76,26 +77,7 @@ export function HomePage({
 
   return (
     <div className="space-y-14">
-      {/* Site under construction notice */}
-      <div
-        role="status"
-        aria-live="polite"
-        className="rounded-2xl border border-amber-300 dark:border-amber-700/60 bg-amber-50 dark:bg-amber-950/40 px-4 sm:px-6 py-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4"
-      >
-        <div className="flex items-center gap-3 min-w-0">
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-amber-100 dark:bg-amber-900/50 text-amber-800 dark:text-amber-200">
-            <Construction className="w-5 h-5" aria-hidden />
-          </span>
-          <div className="min-w-0">
-            <p className="text-sm font-bold text-amber-950 dark:text-amber-100 tracking-tight">
-              Site under construction
-            </p>
-            <p className="text-xs sm:text-sm text-amber-900/80 dark:text-amber-200/80 leading-relaxed">
-              Codepackr Law is being expanded with more subjects, notes, and tools. Content may change; please check back soon.
-            </p>
-          </div>
-        </div>
-      </div>
+      <UnderConstructionBanner />
 
       <section className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] items-end pt-2 sm:pt-4">
         <div className="space-y-5">
