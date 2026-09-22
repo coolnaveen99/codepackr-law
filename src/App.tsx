@@ -17,6 +17,7 @@ import { getSubjectBySlug, getTopic, searchSubjectsAndTopics } from './data/live
 import { TOOLS } from './data/tools'
 import { ToolMetadata, ToolCategory } from './types'
 import { Header } from './components/layout/Header'
+import { CodepackrFamilyBar } from './components/CodepackrFamilyBar'
 import { Footer } from './components/layout/Footer'
 import { HomePage } from './components/home/HomePage'
 import { SubjectsList } from './components/subjects/SubjectsList'
@@ -100,6 +101,7 @@ export default function App() {
   return (
     <div className={dark ? 'dark' : ''}>
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors">
+        <CodepackrFamilyBar />
         <Header dark={dark} onToggleDark={() => setDark(!dark)} currentLabel={null} activeKey={route.type === 'home' ? 'home' : route.type === 'subjects' ? 'subjects' : route.type === 'subject' ? `subject:${route.slug}` : route.type === 'topic' ? `subject:${route.subjectSlug}` : route.type === 'tool' ? `tool:${route.slug}` : route.type} onHome={goHome} onOpenSubjects={openSubjects} onSelectSubject={selectSubject} onSelectTool={selectTool} onOpenKnowledge={() => { setKnowledgeUrl(); setRoute({ type: 'knowledge' }) }} onOpenCaseLaw={() => { setCaseLawUrl(); setRoute({ type: 'case-law' }) }} onOpenContact={() => { setContactUrl(); setRoute({ type: 'contact' }) }} />
         <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-8 paper-grid">
           {route.type === 'contact' && <ContactFeedback onBackToHome={goHome} />}
