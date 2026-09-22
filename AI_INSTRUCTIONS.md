@@ -36,6 +36,7 @@ Single source of truth for any AI (or human) building or extending **Codepackr L
 7. **Lazy topic notes** — Full topic learning text must live in `src/data/topics/<subjectSlug>/<topicId>.ts`, never in `subjects.ts`.
 8. **Reusable legal knowledge** — Search `src/data/knowledge` before creating any doctrine, case, article, maxim, definition, principle, or procedure. Reuse the canonical ID. Never duplicate canonical explanations. Follow `docs/reusable-legal-knowledge-architecture.md`.
 9. **Catalog-first subjects** — Click a subject → introduction + complete catalog. Click a section/article → full study page with 10-mark and 16-mark jump buttons. Never a Bare Act dump. Never a shortened Q&A.
+10. **The Sacred Student Career Covenant (Zero Topic Omission)** — Law students and judicial service aspirants stake their careers, university degrees, and lives on Codepackr Law. An omitted or truncated topic in our library could be the exact 10-mark question, 16-mark essay, or short note that appears on their exam, or an emergency pleading needed in court. We must NEVER arbitrarily omit, drop, or miss topics from any subject. When structuring any subject, cross-reference standard university syllabi (Bar Council of India, NLUs, Central/State universities) and benchmark classroom textbooks (e.g. M. S. Rama Rao, Ratanlal & Dhirajlal, Avtar Singh, Mulla). Every doctrine, general defence, capacity rule, specific wrong/offence, remedy, and procedural mechanism must have a registered, dedicated, clickable topic.
 
 ---
 

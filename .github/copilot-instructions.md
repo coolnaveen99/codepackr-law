@@ -32,5 +32,10 @@ Every line of legal content and code must reflect the intellectual precision of 
 9. **Universal Click Path**:
    - Subject landing = statutory introduction + verified catalog.
    - Provision click = comprehensive treatise page + statutory illustrations (only if enacted) + 10-mark & 16-mark examination jump dock + practical courtroom points.
+10. **The Sacred Student Career Covenant (Zero Topic Omission)**:
+   - We work for the student's career, academic qualification, and future life as an advocate or judicial officer.
+   - We must NEVER ignore, skip, or compress syllabus topics. A missing topic could mean a failed examination or an unbriefed courtroom emergency.
+   - Cross-reference standard university curricula (Bar Council of India, NLUs, Central/State universities) and benchmark classroom textbooks (e.g. M. S. Rama Rao, Ratanlal & Dhirajlal, Avtar Singh, Mulla).
+   - Every doctrine, general defence, capacity rule, specific wrong/offence, remedy, and procedural mechanism must have a registered, dedicated, clickable topic with structured legal coverage.
 
 See `AI_INSTRUCTIONS.md`, `.github/instructions/global-legal-content.md`, and `.github/instructions/student-answer-content.md` for full implementation standards.

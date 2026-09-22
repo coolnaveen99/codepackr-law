@@ -73,6 +73,17 @@ Every substantive provision, topic, and tool must reflect two unified discipline
 
 Subject-specific files in [`.github/instructions/subjects/`](subjects/) contain only subject-specific nuances — do not duplicate global architecture into them.
 
+### The Sacred Student Career Covenant (Zero Topic Omission Directive)
+
+**Law students and judicial service aspirants place their faith, university degrees, and life career trajectories in CodePackr Law.** We work for the student's career and their life. An omitted, skipped, or arbitrarily pruned topic in our library could be the exact 10-mark question, 16-mark essay, or short note that appears on a student's examination paper, or the exact defense needed by a young advocate in court.
+
+1. **Zero Omission Standard**: AI agents, maintainers, and contributors must NEVER arbitrarily ignore, prune, or drop syllabus topics from any legal subject.
+2. **Authoritative Syllabus Benchmarking**: When architecting or updating any subject catalog in `src/data/subjects.ts`, conduct an exhaustive cross-reference against:
+   - The Bar Council of India (BCI) Model Curriculum and National Law University (NLU) course outlines.
+   - Revered classroom textbooks and standard treatises (e.g., M. S. Rama Rao, Ratanlal & Dhirajlal, Avtar Singh, Mulla, R.K. Bangia).
+   - University LL.B/LL.M question banks and State Judicial Services Mains examination syllabi.
+3. **Dedicated Provision & Topic Registration**: Every distinct concept, general defence, capacity rule, specific wrong/offence, remedy, and procedural mechanism must have a registered, dedicated, clickable topic with full 10-mark and 16-mark answers. If an exhaustive chapter treatise is pending rollout, the topic must still be registered so that `synthesizePlaceholderTopic` provides an authoritative syllabus reference immediately.
+
 ---
 
 # 1. Dual-Track Core Workflow

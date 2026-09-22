@@ -5,6 +5,7 @@ import { bsaSectionById, bsaSectionIdFromTopicId } from '../bsa/sections'
 import { synthesizeCatalogSection } from './synthesizeProvision'
 import { hasCpcCatalogTopic, synthesizeCpcContent } from './synthesizeCpc'
 import { synthesizeArticleContent } from './synthesizeArticle'
+import { synthesizePlaceholderTopic } from './synthesizePlaceholderTopic'
 import type { TopicContent } from './topicTypes'
 
 export type {
@@ -28,7 +29,9 @@ function hasStudyBody(content: TopicContent): boolean {
   return Boolean(content.study || content.detailed || content.short || content.glance)
 }
 
-const topicModules = import.meta.glob<{ default: TopicContent }>('./*/*.ts', { eager: false })
+const topicModules = typeof import.meta.glob === 'function'
+  ? import.meta.glob<{ default: TopicContent }>('./*/*.ts', { eager: false })
+  : {}
 const cache = new Map<string, TopicContent>()
 
 export async function loadTopicContent(subjectSlug: string, topicId: string): Promise<TopicContent | null> {
@@ -98,6 +101,12 @@ export async function loadTopicContent(subjectSlug: string, topicId: string): Pr
     }
   }
 
+  const placeholder = synthesizePlaceholderTopic(subjectSlug, topicId)
+  if (placeholder) {
+    cache.set(key, placeholder)
+    return placeholder
+  }
+
   return null
 }
 
@@ -120,5 +129,6 @@ export function hasTopicContentFile(subjectSlug: string, topicId: string): boole
     return Boolean(sectionId && bsaSectionById(sectionId))
   }
   if (subjectSlug === 'cpc') return hasCpcCatalogTopic(topicId)
-  return false
+  // All registered topics in the catalog have at least structured syllabus content
+  return true
 }

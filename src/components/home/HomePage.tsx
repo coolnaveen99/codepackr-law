@@ -1,21 +1,24 @@
-import { useMemo } from 'react'
-import { ArrowRight, BookOpen, Search, ShieldCheck } from 'lucide-react'
+import { ArrowRight, Search, Sparkles, HeartHandshake, ShieldCheck, BookOpenCheck } from 'lucide-react'
 import { SUBJECTS, type LawTopic } from '../../data/subjects'
 import type { ToolCategory, ToolMetadata } from '../../types'
 import { Badge } from '../ui/Badge'
 import { UnderConstructionBanner } from './UnderConstructionBanner'
-import { SubjectGlyph, ToolGlyph } from '../icons'
+import { LibraryStatsBar } from './LibraryStatsBar'
+import { DualTrackHero } from './DualTrackHero'
+import { LibraryWingsGrid } from './LibraryWingsGrid'
+import { AibeWeightageMatrix } from './AibeWeightageMatrix'
+import { ToolGlyph } from '../icons'
 
-const FEATURED_SLUGS = ['constitution', 'bns', 'bnss', 'bsa'] as const
-const MORE_SLUGS = ['cpc', 'contract', 'family', 'tort', 'petition-formats'] as const
-
-const QUICK = [
-  { label: 'Art 21', subject: 'constitution', topic: 'art-21' },
-  { label: 'Art 32', subject: 'constitution', topic: 'art-32' },
-  { label: 'BNS s. 103', subject: 'bns', topic: 's-103' },
-  { label: 'BNSS bail', subject: 'bnss', topic: 'bail' },
-  { label: 'FIR', subject: 'bnss', topic: 'fir-investigation' },
-  { label: 'BSA confession', subject: 'bsa', topic: 'admissions-confessions' },
+const QUICK_JUMP_TARGETS = [
+  { label: 'Art. 21 (Life & Liberty)', subject: 'constitution', topic: 'art-21' },
+  { label: 'Art. 32 (Writs)', subject: 'constitution', topic: 'art-32-226' },
+  { label: 'BNS s. 103 (Murder)', subject: 'bns', topic: 's-103' },
+  { label: 'BNSS s. 480 (Bail)', subject: 'bnss', topic: 's-480' },
+  { label: 'Order 39 CPC (Injunctions)', subject: 'cpc', topic: 'order-39' },
+  { label: 'S. 138 NI Act', subject: 'contract', topic: 's-138-ni' },
+  { label: 'Tort Defences', subject: 'tort', topic: 'tort-general-defences' },
+  { label: 'MACT Claims', subject: 'tort', topic: 'mact-claims' },
+  { label: 'Format: Writ Petition', subject: 'petition-formats', topic: 'format-writ-petition' },
 ] as const
 
 interface HomePageProps {
@@ -34,24 +37,12 @@ interface HomePageProps {
   onSelectTool: (slug: string) => void
 }
 
-function provisionCount(slug: string) {
-  const s = SUBJECTS.find((x) => x.slug === slug)
-  if (!s) return 0
-  const n = s.topics.filter((t) => t.type === 'section' || t.type === 'article').length
-  return n || s.topics.length
-}
-
-function provisionLabel(slug: string) {
-  if (slug === 'constitution') return 'articles'
-  return 'sections'
-}
-
 const CATEGORIES: { id: ToolCategory | 'all'; label: string }[] = [
-  { id: 'all', label: 'All tools' },
-  { id: 'mcq', label: 'MCQs' },
-  { id: 'bare-acts', label: 'Mappers' },
-  { id: 'study-aids', label: 'Study aids' },
-  { id: 'reference', label: 'Reference' },
+  { id: 'all', label: 'All Practice Tools' },
+  { id: 'mcq', label: 'MCQs & Mocks' },
+  { id: 'bare-acts', label: 'Sanhita Mappers' },
+  { id: 'study-aids', label: 'Flashcards & Timers' },
+  { id: 'reference', label: 'Maxims & Cases' },
 ]
 
 export function HomePage({
@@ -66,203 +57,164 @@ export function HomePage({
   onSelectTopic,
   onSelectTool,
 }: HomePageProps) {
-  const featured = useMemo(
-    () => FEATURED_SLUGS.map((slug) => SUBJECTS.find((s) => s.slug === slug)).filter(Boolean),
-    [],
-  )
-  const more = useMemo(
-    () => MORE_SLUGS.map((slug) => SUBJECTS.find((s) => s.slug === slug)).filter(Boolean),
-    [],
-  )
-
   return (
-    <div className="space-y-14">
+    <div className="space-y-12 sm:space-y-16 pb-12">
+      {/* 1. Site Under Active Construction Banner (Preserved and Refined) */}
       <UnderConstructionBanner />
 
-      <section className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] items-end pt-2 sm:pt-4">
-        <div className="space-y-5">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-semibold tracking-[0.14em] uppercase bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900">
-            <ShieldCheck className="w-3.5 h-3.5" />
-            Student corner
-          </div>
-          <h2 className="font-display text-4xl sm:text-6xl font-semibold tracking-tight text-slate-900 dark:text-white leading-[1.08] max-w-2xl">
-            Indian law, written for full marks.
+      {/* 2. Prestige Dual-Track Hero */}
+      <DualTrackHero onOpenSubjects={onOpenSubjects} />
+
+      {/* 3. Live Library Metrics Ticker */}
+      <LibraryStatsBar />
+
+      {/* 4. Universal Legal Omni-Search & Quick Jumps */}
+      <section className="space-y-4 max-w-4xl mx-auto w-full pt-2">
+        <div className="text-center space-y-1 mb-2">
+          <h2 className="font-display text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
+            Universal Legal Omni-Search
           </h2>
-          <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl">
-            Section-wise notes and 10-mark / 16-mark answers for{' '}
-            <strong className="text-blue-700 dark:text-blue-300 font-semibold">AIBE</strong> and{' '}
-            <strong className="text-slate-900 dark:text-white font-semibold">Judiciary</strong>. Open a
-            code, click a section, write the answer.
+          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+            Instant search across all 2,078 sections, articles, landmark doctrines, and courtroom drafting formats
           </p>
-          <div className="flex items-center gap-3 flex-wrap">
-            <button
-              type="button"
-              onClick={onOpenSubjects}
-              className="inline-flex items-center gap-2 h-12 px-6 rounded-2xl bg-blue-600 text-white text-sm font-bold hover:bg-blue-700 transition-colors duration-150 shadow-sm shadow-blue-600/20 active:scale-[0.96]"
-            >
-              <BookOpen className="w-4 h-4" />
-              All subjects
-            </button>
-            <a
-              href="#tools"
-              className="inline-flex items-center gap-2 h-12 px-5 rounded-2xl border border-slate-200 dark:border-slate-700 text-sm font-semibold text-slate-800 dark:text-slate-100 hover:bg-white dark:hover:bg-slate-900 transition-colors duration-150"
-            >
-              Practice tools
-            </a>
-          </div>
         </div>
 
-        <div className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500 mb-3">Jump in</p>
-          <div className="flex flex-wrap gap-2">
-            {QUICK.map((item) => (
-              <button
-                key={item.label}
-                type="button"
-                onClick={() => {
-                  const pair = SUBJECTS.find((s) => s.slug === item.subject)?.topics.find((t) => t.id === item.topic)
-                  if (pair) onSelectTopic(item.subject, pair)
-                  else onSelectSubject(item.subject)
-                }}
-                className="h-10 px-3.5 rounded-xl border border-slate-200 dark:border-slate-700 text-sm font-semibold text-slate-800 dark:text-slate-100 hover:border-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-150"
-              >
-                {item.label}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <div className="space-y-3 max-w-4xl">
-        <div className="relative">
+        <div className="relative shadow-md rounded-2xl">
           <Search className="w-5 h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
           <input
             type="search"
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="Search subjects, articles, sections, tools (Art 21, bail, BNS, AIBE)…"
-            className="w-full h-12 pl-12 pr-16 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 text-sm sm:text-base shadow-xs focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Search any article, section, doctrine, or case (e.g. Art 21, Bail 480, Injunctions Order 39, S. 138 NI Act, Volenti non fit injuria)..."
+            className="w-full h-14 pl-12 pr-16 rounded-2xl border-2 border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 text-sm sm:text-base focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 transition-colors"
           />
           {searchQuery ? (
             <button
               type="button"
               onClick={() => onSearchChange('')}
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-semibold text-slate-400 hover:text-slate-700"
+              className="absolute right-4 top-1/2 -translate-y-1/2 px-2.5 py-1 rounded-lg text-xs font-bold text-slate-500 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-800"
             >
               Clear
             </button>
           ) : null}
         </div>
 
+        {/* Live Search Results Dropdown */}
         {subjectSearchResults &&
           (subjectSearchResults.subjects.length > 0 || subjectSearchResults.topics.length > 0) && (
-            <div className="rounded-2xl border border-blue-200 dark:border-blue-900 bg-blue-50/50 dark:bg-blue-950/30 p-4 space-y-3">
-              <p className="text-xs font-semibold text-blue-800 dark:text-blue-300">Subjects & topics</p>
-              <div className="flex flex-wrap gap-2">
-                {subjectSearchResults.subjects.slice(0, 6).map((s) => (
-                  <button
-                    key={s.id}
-                    type="button"
-                    onClick={() => onSelectSubject(s.slug)}
-                    className="text-xs font-medium px-2.5 py-1 rounded-lg bg-white dark:bg-slate-900 border border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-300"
-                  >
-                    {s.shortName}
-                  </button>
-                ))}
-                {subjectSearchResults.topics.slice(0, 8).map(({ subject, topic }) => (
-                  <button
-                    key={`${subject.id}-${topic.id}`}
-                    type="button"
-                    onClick={() => onSelectTopic(subject.slug, topic)}
-                    className="text-xs px-2.5 py-1 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300"
-                  >
-                    {topic.name}
-                    <span className="text-slate-400 ml-1">· {subject.shortName}</span>
-                  </button>
-                ))}
-              </div>
+            <div className="rounded-2xl border border-blue-200 dark:border-blue-900 bg-blue-50/80 dark:bg-blue-950/40 p-5 space-y-4 shadow-lg">
+              {subjectSearchResults.subjects.length > 0 && (
+                <div>
+                  <p className="text-[11px] font-black uppercase tracking-wider text-blue-800 dark:text-blue-300 mb-2">
+                    Matching Subjects ({subjectSearchResults.subjects.length})
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {subjectSearchResults.subjects.slice(0, 6).map((s) => (
+                      <button
+                        key={s.id}
+                        type="button"
+                        onClick={() => onSelectSubject(s.slug)}
+                        className="text-xs font-bold px-3 py-1.5 rounded-xl bg-white dark:bg-slate-900 border border-blue-300 dark:border-blue-800 text-blue-700 dark:text-blue-300 hover:bg-blue-600 hover:text-white transition-colors duration-150 shadow-xs"
+                      >
+                        {s.name} ({s.topics.length} topics)
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {subjectSearchResults.topics.length > 0 && (
+                <div>
+                  <p className="text-[11px] font-black uppercase tracking-wider text-blue-800 dark:text-blue-300 mb-2">
+                    Matching Sections, Doctrines & Topics ({subjectSearchResults.topics.length})
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-72 overflow-y-auto pr-1">
+                    {subjectSearchResults.topics.slice(0, 16).map(({ subject, topic }) => (
+                      <button
+                        key={`${subject.id}-${topic.id}`}
+                        type="button"
+                        onClick={() => onSelectTopic(subject.slug, topic)}
+                        className="text-left p-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-150 flex items-center justify-between gap-2 text-xs"
+                      >
+                        <span className="font-semibold text-slate-800 dark:text-slate-200 truncate">
+                          {topic.name}
+                        </span>
+                        <span className="text-[10px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-500 font-bold shrink-0">
+                          {subject.shortName}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
-      </div>
 
-      <section className="space-y-4">
-        <div className="flex items-end justify-between gap-3">
-          <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-blue-700 dark:text-blue-300">Study</p>
-            <h3 className="font-display text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white">The four codes</h3>
-          </div>
-          <button
-            type="button"
-            onClick={onOpenSubjects}
-            className="text-sm font-semibold text-blue-700 dark:text-blue-300 inline-flex items-center gap-1 hover:underline"
-          >
-            All subjects <ArrowRight className="w-4 h-4" />
-          </button>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {featured.map((s) =>
-            s ? (
-              <button
-                key={s.id}
-                type="button"
-                onClick={() => onSelectSubject(s.slug)}
-                className="group text-left rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 hover:border-blue-500 dark:hover:border-blue-500 transition-colors duration-150"
-              >
-                <div className="flex items-start justify-between gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-2xl bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors duration-150">
-                    <SubjectGlyph name={s.icon} className="w-6 h-6" />
-                  </div>
-                  <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-500">
-                    ~{s.aibeQuestions} AIBE Q
-                  </span>
-                </div>
-                <h4 className="font-display text-2xl font-semibold text-slate-900 dark:text-white">{s.shortName}</h4>
-                <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-                  {provisionCount(s.slug)} {provisionLabel(s.slug)} · click any one for the full note
-                </p>
-              </button>
-            ) : null,
-          )}
-        </div>
-
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-          {more.map((s) =>
-            s ? (
-              <button
-                key={s.id}
-                type="button"
-                onClick={() => onSelectSubject(s.slug)}
-                className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 py-4 text-left hover:border-blue-400 transition-colors duration-150"
-              >
-                <SubjectGlyph name={s.icon} className="w-4 h-4 text-blue-700 dark:text-blue-300 mb-2" />
-                <p className="text-sm font-semibold text-slate-900 dark:text-white">{s.shortName}</p>
-                <p className="text-[11px] text-slate-500">{s.topics.length} topics</p>
-              </button>
-            ) : null,
-          )}
+        {/* High-Yield Quick Jump Chips */}
+        <div className="flex items-center gap-2 flex-wrap pt-1">
+          <span className="text-xs font-bold text-slate-500 dark:text-slate-400 flex items-center gap-1">
+            <Sparkles className="w-3.5 h-3.5 text-blue-600" /> High-Yield Jumps:
+          </span>
+          {QUICK_JUMP_TARGETS.map((item) => (
+            <button
+              key={item.label}
+              type="button"
+              onClick={() => {
+                const s = SUBJECTS.find((sub) => sub.slug === item.subject)
+                const t = s?.topics.find((top) => top.id === item.topic)
+                if (s && t) onSelectTopic(s.slug, t)
+                else onSelectSubject(item.subject)
+              }}
+              className="text-xs px-2.5 py-1 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 text-slate-700 dark:text-slate-300 hover:border-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-150 shadow-2xs"
+            >
+              {item.label}
+            </button>
+          ))}
         </div>
       </section>
 
-      <section id="tools" className="space-y-4 scroll-mt-24">
-        <div className="flex items-end justify-between gap-3">
+      {/* 5. Four Curricular Library Wings (20 Legal Subjects) */}
+      <LibraryWingsGrid
+        onSelectSubject={onSelectSubject}
+        onSelectTopic={onSelectTopic}
+      />
+
+      {/* 6. Official AIBE & State Judicial Services Weightage Matrix */}
+      <AibeWeightageMatrix
+        onSelectSubject={onSelectSubject}
+        onSelectTool={onSelectTool}
+      />
+
+      {/* 7. Forensic Chamber & Practice Reference Tools Deck */}
+      <section id="tools" className="space-y-6 scroll-mt-24">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b border-slate-200 dark:border-slate-800 pb-4">
           <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-blue-700 dark:text-blue-300">Practice</p>
-            <h3 className="font-display text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white">Exam tools</h3>
+            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-blue-700 dark:text-blue-300 mb-1">
+              <BookOpenCheck className="w-4 h-4" /> Practice Reference Tools
+            </div>
+            <h3 className="font-display text-2xl sm:text-3xl font-black tracking-tight text-slate-950 dark:text-white">
+              Legal Study Aids & Forensic Chamber Utilities
+            </h3>
+            <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">
+              Interactive examination simulators, statutory concordance mappers, and reference databases.
+            </p>
           </div>
-          <span className="text-xs text-slate-500">{filteredTools.length} tools</span>
+          <span className="text-xs font-bold px-3 py-1 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 shrink-0">
+            {filteredTools.length} tools available
+          </span>
         </div>
 
+        {/* Category Pills */}
         <div className="flex items-center gap-2 flex-wrap">
           {CATEGORIES.map((cat) => (
             <button
               key={cat.id}
               type="button"
               onClick={() => onCategoryChange(cat.id)}
-              className={`h-9 px-3.5 rounded-xl text-xs sm:text-sm font-medium transition-colors duration-150 ${
+              className={`h-10 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all duration-150 ${
                 selectedCategory === cat.id
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800'
+                  ? 'bg-blue-600 text-white shadow-sm'
+                  : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700'
               }`}
             >
               {cat.label}
@@ -270,61 +222,87 @@ export function HomePage({
           ))}
         </div>
 
+        {/* Tools Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {filteredTools.map((tool) => (
             <button
               key={tool.id}
               type="button"
               onClick={() => onSelectTool(tool.slug)}
-              className="group rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 text-left hover:border-blue-500 transition-colors duration-150 flex flex-col"
+              className="group rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 text-left hover:border-blue-500/80 dark:hover:border-blue-500/80 transition-all duration-150 flex flex-col justify-between shadow-xs hover:shadow-md"
             >
-              <div className="flex items-start justify-between gap-3 mb-3">
-                <div className="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors duration-150">
-                  <ToolGlyph name={tool.icon} className="w-5 h-5" />
+              <div>
+                <div className="flex items-start justify-between gap-3 mb-3">
+                  <div className="w-11 h-11 rounded-2xl bg-blue-50 dark:bg-blue-950/70 text-blue-700 dark:text-blue-300 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors duration-150">
+                    <ToolGlyph name={tool.icon} className="w-5 h-5" />
+                  </div>
+                  {tool.badge ? (
+                    <Badge variant="blue" className="text-[10px] font-black uppercase">
+                      {tool.badge}
+                    </Badge>
+                  ) : null}
                 </div>
-                {tool.badge ? (
-                  <Badge variant="blue" className="text-[11px]">
-                    {tool.badge}
-                  </Badge>
-                ) : null}
+                <h4 className="font-bold text-base text-slate-950 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-1.5">
+                  {tool.name}
+                </h4>
+                <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                  {tool.description}
+                </p>
               </div>
-              <h4 className="font-bold text-base text-slate-900 dark:text-white mb-1">{tool.name}</h4>
-              <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed flex-1">{tool.description}</p>
-              <span className="pt-4 mt-4 border-t border-slate-100 dark:border-slate-800 text-xs font-semibold text-blue-700 dark:text-blue-300 inline-flex items-center gap-1">
-                Launch <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform duration-150" />
-              </span>
+
+              <div className="pt-4 mt-4 border-t border-slate-100 dark:border-slate-800/80 text-xs font-bold text-blue-700 dark:text-blue-300 inline-flex items-center gap-1 group-hover:gap-1.5 transition-all duration-150">
+                Launch Tool <ArrowRight className="w-3.5 h-3.5" />
+              </div>
             </button>
           ))}
         </div>
 
         {filteredTools.length === 0 && (
-          <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-12 text-center">
-            <Search className="w-8 h-8 text-slate-400 mx-auto mb-2" />
-            <p className="font-semibold text-slate-800 dark:text-slate-200">No tools match your search</p>
+          <div className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-12 text-center space-y-3">
+            <Search className="w-8 h-8 text-slate-400 mx-auto" />
+            <p className="font-bold text-slate-800 dark:text-slate-200 text-base">No tools match your search criteria</p>
             <button
               type="button"
               onClick={() => {
                 onSearchChange('')
                 onCategoryChange('all')
               }}
-              className="mt-3 text-xs font-semibold text-blue-600 hover:underline"
+              className="text-xs font-bold text-blue-600 hover:underline inline-flex items-center gap-1"
             >
-              Reset filters
+              Reset Filters & View All Tools
             </button>
           </div>
         )}
       </section>
 
-      <section className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-8 sm:p-10">
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-          <div className="w-14 h-14 rounded-2xl bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 flex items-center justify-center shrink-0">
-            <ShieldCheck className="w-7 h-7" />
-          </div>
-          <div className="space-y-2">
-            <h3 className="text-lg font-bold text-slate-900 dark:text-white">Private, on this device</h3>
-            <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl">
-              Scores, flashcards and answers never leave the browser. No account required. Built for AIBE and State Judiciary with the 2023 codes.
+      {/* 8. The Sacred Student Career Covenant & Client-Side Privacy Guarantee */}
+      <section className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-gradient-to-br from-white via-slate-50 to-blue-50/40 dark:from-slate-900 dark:via-slate-900 dark:to-blue-950/20 p-8 sm:p-10 shadow-xs">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="space-y-3">
+            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-700 dark:text-blue-300">
+              <HeartHandshake className="w-4 h-4" /> The Sacred Student Career Covenant
+            </div>
+            <h3 className="font-display text-2xl sm:text-3xl font-black text-slate-950 dark:text-white">
+              We Work for Student Careers, University Degrees & Life Goals.
+            </h3>
+            <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              We never arbitrarily compress or drop syllabus topics. Every doctrine, capacity rule, specific wrong, defense, and statutory section is cataloged with 10-mark and 16-mark IRAC/ILAC blueprints so that you walk into every exam or courtroom completely prepared.
             </p>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-white/80 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 space-y-3">
+            <div className="flex items-center gap-2 font-bold text-slate-900 dark:text-white text-sm">
+              <ShieldCheck className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
+              100% Client-Side Privacy Architecture
+            </div>
+            <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Zero practice data, mock scores, flashcard decks, or search queries leave your device. Everything executes strictly in your browser with zero telemetry. Free and open to every student, aspirant, and advocate.
+            </p>
+            <div className="pt-2 flex items-center gap-4 text-[11px] font-semibold text-slate-500">
+              <span>✓ No Account Required</span>
+              <span>✓ No Tracking Cookies</span>
+              <span>✓ Works Offline</span>
+            </div>
           </div>
         </div>
       </section>

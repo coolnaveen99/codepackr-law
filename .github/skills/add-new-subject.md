@@ -51,6 +51,19 @@ Start **theme** if you only have a handful of high-yield essays. Upgrade to **ca
 
 ---
 
+## Zero Topic Omission Standard (The Sacred Student Career Covenant)
+
+Law students, judicial service aspirants, and junior advocates rely on Codepackr Law for their academic degrees, AIBE qualification, and judicial careers. **We work for their careers and their life.**
+
+1. **Never arbitrarily drop, prune, or compress topics**: An omitted doctrine, capacity rule, general defence, or specific remedy could be the exact 10-mark question, 16-mark problem, or chamber emergency a student or young advocate faces.
+2. **Mandatory Curriculum Cross-Referencing**: Before finalizing the topic list for any subject in `src/data/subjects.ts`, cross-reference:
+   - Bar Council of India (BCI) Model Curricula and National Law University (NLU) syllabi.
+   - Authoritative classroom textbooks and standard treatises (e.g., M. S. Rama Rao, Ratanlal & Dhirajlal, Avtar Singh, Mulla, R.K. Bangia).
+   - University examination question banks (10-mark questions, 16-mark essays, and short notes).
+3. **Dedicated Provision / Topic Registration**: Every distinct legal concept, defence, exception, remedy, and procedural step must have a dedicated topic entry. If a bespoke treatise is not yet written, it must be registered so that `synthesizePlaceholderTopic` provides an authoritative syllabus reference until full treatise authoring is complete.
+
+---
+
 ## Files you must touch
 
 ### Always (every new subject)

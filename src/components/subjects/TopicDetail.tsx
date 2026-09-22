@@ -99,8 +99,26 @@ export function TopicDetail({
   const teachingExamples = (content?.examples ?? []).filter((example) => !/^Illustration/i.test(example.title || ''))
   const hasIllustrations = statutoryExamples.length > 0
 
+  const [expanded10, setExpanded10] = useState(true)
+  const [expanded16, setExpanded16] = useState(true)
+  const [copied10, setCopied10] = useState(false)
+  const [copied16, setCopied16] = useState(false)
+
   function jumpTo(id: string) {
+    if (id === 'exam-10') setExpanded10(true)
+    if (id === 'exam-16') setExpanded16(true)
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
+  const handleCopyAnswer = (text: string, isTen: boolean) => {
+    navigator.clipboard.writeText(text)
+    if (isTen) {
+      setCopied10(true)
+      setTimeout(() => setCopied10(false), 2000)
+    } else {
+      setCopied16(true)
+      setTimeout(() => setCopied16(false), 2000)
+    }
   }
 
   const handleCopyCase = (c: CaseCitation, idx: number) => {
@@ -201,7 +219,7 @@ export function TopicDetail({
       {(qaTen || qaSixteen) && (
         <div className="sticky top-16 z-30 -mx-1 px-1 py-3 bg-slate-50/90 dark:bg-slate-950/90 backdrop-blur-md">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500 mr-1">Exam</span>
+            <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500 mr-1">Drafting</span>
             <button
               type="button"
               onClick={() => jumpTo('study-topic')}
@@ -222,18 +240,20 @@ export function TopicDetail({
               <button
                 type="button"
                 onClick={() => jumpTo('exam-10')}
-                className="h-11 px-5 rounded-2xl bg-blue-600 text-white text-sm font-bold shadow-sm shadow-blue-600/20"
+                className="h-11 px-4 rounded-2xl bg-blue-600 text-white text-xs sm:text-sm font-bold shadow-sm shadow-blue-600/20 inline-flex items-center gap-1.5"
               >
-                10 marks
+                <PenLine className="w-3.5 h-3.5" />
+                <span>10-Mark Answer / Brief</span>
               </button>
             )}
             {qaSixteen && (
               <button
                 type="button"
                 onClick={() => jumpTo('exam-16')}
-                className="h-11 px-5 rounded-2xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-sm font-bold"
+                className="h-11 px-4 rounded-2xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs sm:text-sm font-bold inline-flex items-center gap-1.5"
               >
-                16 marks
+                <PenLine className="w-3.5 h-3.5" />
+                <span>16-Mark Answer / Submissions</span>
               </button>
             )}
           </div>
@@ -406,38 +426,160 @@ export function TopicDetail({
       {!loading && (qaTen || qaSixteen) && (
         <section className="space-y-5">
           <div>
-            <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-blue-700 dark:text-blue-300">Write this in the exam</p>
-            <h3 className="font-display text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white mt-1">Full-mark answers</h3>
+            <div className="flex items-center gap-2">
+              <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-blue-700 dark:text-blue-300">
+                Dual-Track Drafting Reference
+              </span>
+              <span className="text-[10px] px-2 py-0.5 rounded-md bg-blue-100 dark:bg-blue-950/60 text-blue-800 dark:text-blue-200 font-semibold">
+                Exam &amp; Courtroom
+              </span>
+            </div>
+            <h3 className="font-display text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white mt-1">
+              Model Answers &amp; Written Submissions
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1 max-w-2xl">
+              Structured IRAC/CREAC answers for University &amp; State Judicial Services Mains, adaptable directly as chamber briefs and courtroom written arguments.
+            </p>
           </div>
           {qaTen && (
             <article id="exam-10" className="rounded-[1.6rem] border border-blue-200 dark:border-blue-900 bg-white dark:bg-slate-900 p-5 sm:p-8 space-y-4">
-              <div className="flex items-center gap-2">
-                <span className="inline-flex h-8 items-center px-3 rounded-full bg-blue-600 text-white text-xs font-bold">10 marks</span>
-                <PenLine className="w-4 h-4 text-blue-600" />
-              </div>
-              <h4 className="font-display text-xl sm:text-2xl font-semibold text-slate-900 dark:text-white">{qaTen.question}</h4>
-              <StudyBody text={qaTen.answer} />
-              {qaTen.explanation && (
-                <div className="rounded-2xl bg-slate-50 dark:bg-slate-800/50 p-4">
-                  <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 mb-2">How to score full marks</p>
-                  <p className="text-base leading-7 text-slate-700 dark:text-slate-300">{qaTen.explanation}</p>
+              <div className="flex items-center justify-between gap-3 flex-wrap">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="inline-flex h-8 items-center px-3 rounded-full bg-blue-600 text-white text-xs font-bold">
+                    10 Marks (Exam)
+                  </span>
+                  <span className="inline-flex h-8 items-center px-3 rounded-full bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 text-xs font-medium">
+                    Legal Brief / IRAC
+                  </span>
                 </div>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => handleCopyAnswer(qaTen.answer, true)}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+                    title="Copy full answer text"
+                  >
+                    {copied10 ? (
+                      <>
+                        <Check className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+                        <span className="text-emerald-600 dark:text-emerald-400">Copied!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="w-3.5 h-3.5" />
+                        <span>Copy</span>
+                      </>
+                    )}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setExpanded10(!expanded10)}
+                    className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+                  >
+                    {expanded10 ? (
+                      <>
+                        <span>Collapse</span>
+                        <ChevronUp className="w-3.5 h-3.5" />
+                      </>
+                    ) : (
+                      <>
+                        <span>Expand Answer</span>
+                        <ChevronDown className="w-3.5 h-3.5" />
+                      </>
+                    )}
+                  </button>
+                </div>
+              </div>
+              <h4 className="font-display text-xl sm:text-2xl font-semibold text-slate-900 dark:text-white">
+                {qaTen.question}
+              </h4>
+              {expanded10 ? (
+                <>
+                  <StudyBody text={qaTen.answer} />
+                  {qaTen.explanation && (
+                    <div className="rounded-2xl bg-slate-50 dark:bg-slate-800/50 p-4">
+                      <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 mb-2">
+                        How to score full marks / Key Drafting Elements
+                      </p>
+                      <p className="text-base leading-7 text-slate-700 dark:text-slate-300">{qaTen.explanation}</p>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <p className="text-sm text-slate-500 italic">
+                  Answer collapsed. Click &quot;Expand Answer&quot; to review the full 10-mark model answer and scoring rubric.
+                </p>
               )}
             </article>
           )}
           {qaSixteen && (
             <article id="exam-16" className="rounded-[1.6rem] border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 sm:p-8 space-y-4">
-              <div className="flex items-center gap-2">
-                <span className="inline-flex h-8 items-center px-3 rounded-full bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs font-bold">16 marks</span>
-                <PenLine className="w-4 h-4 text-slate-700 dark:text-slate-300" />
-              </div>
-              <h4 className="font-display text-xl sm:text-2xl font-semibold text-slate-900 dark:text-white">{qaSixteen.question}</h4>
-              <StudyBody text={qaSixteen.answer} />
-              {qaSixteen.explanation && (
-                <div className="rounded-2xl bg-slate-50 dark:bg-slate-800/50 p-4">
-                  <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 mb-2">How to score full marks</p>
-                  <p className="text-base leading-7 text-slate-700 dark:text-slate-300">{qaSixteen.explanation}</p>
+              <div className="flex items-center justify-between gap-3 flex-wrap">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="inline-flex h-8 items-center px-3 rounded-full bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs font-bold">
+                    16 Marks (Exam)
+                  </span>
+                  <span className="inline-flex h-8 items-center px-3 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 text-xs font-medium">
+                    Written Submissions / Detailed Synthesis
+                  </span>
                 </div>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => handleCopyAnswer(qaSixteen.answer, false)}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+                    title="Copy full submissions text"
+                  >
+                    {copied16 ? (
+                      <>
+                        <Check className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+                        <span className="text-emerald-600 dark:text-emerald-400">Copied!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="w-3.5 h-3.5" />
+                        <span>Copy</span>
+                      </>
+                    )}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setExpanded16(!expanded16)}
+                    className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+                  >
+                    {expanded16 ? (
+                      <>
+                        <span>Collapse</span>
+                        <ChevronUp className="w-3.5 h-3.5" />
+                      </>
+                    ) : (
+                      <>
+                        <span>Expand Answer</span>
+                        <ChevronDown className="w-3.5 h-3.5" />
+                      </>
+                    )}
+                  </button>
+                </div>
+              </div>
+              <h4 className="font-display text-xl sm:text-2xl font-semibold text-slate-900 dark:text-white">
+                {qaSixteen.question}
+              </h4>
+              {expanded16 ? (
+                <>
+                  <StudyBody text={qaSixteen.answer} />
+                  {qaSixteen.explanation && (
+                    <div className="rounded-2xl bg-slate-50 dark:bg-slate-800/50 p-4">
+                      <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 mb-2">
+                        How to score full marks / Key Drafting Elements
+                      </p>
+                      <p className="text-base leading-7 text-slate-700 dark:text-slate-300">{qaSixteen.explanation}</p>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <p className="text-sm text-slate-500 italic">
+                  Answer collapsed. Click &quot;Expand Answer&quot; to review the full 16-mark comprehensive treatise and scoring rubric.
+                </p>
               )}
             </article>
           )}
@@ -587,18 +729,20 @@ export function TopicDetail({
             <button
               type="button"
               onClick={() => jumpTo('exam-10')}
-              className="flex-1 h-12 rounded-2xl bg-blue-600 text-white text-sm font-bold shadow-lg shadow-blue-900/20"
+              className="flex-1 h-12 rounded-2xl bg-blue-600 text-white text-xs font-bold shadow-lg shadow-blue-900/20 inline-flex items-center justify-center gap-1.5"
             >
-              10 marks
+              <PenLine className="w-3.5 h-3.5" />
+              <span>10-Mark / Brief</span>
             </button>
           )}
           {qaSixteen && (
             <button
               type="button"
               onClick={() => jumpTo('exam-16')}
-              className="flex-1 h-12 rounded-2xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-sm font-bold shadow-lg"
+              className="flex-1 h-12 rounded-2xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs font-bold shadow-lg inline-flex items-center justify-center gap-1.5"
             >
-              16 marks
+              <PenLine className="w-3.5 h-3.5" />
+              <span>16-Mark / Submissions</span>
             </button>
           )}
         </div>
