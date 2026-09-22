@@ -2,12 +2,10 @@
 @source "./**/*.{ts,tsx}";
 
 @theme {
-  /* Shared product UI stack (Study / Law / Astro strong unify) */
   --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-display: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
-  /* Law accent = seal burgundy (tools=blue, finance=green, study=indigo, law=burgundy) */
   --color-blue-50: #fdf2f4;
   --color-blue-100: #fce7eb;
   --color-blue-200: #f9d0d9;
@@ -20,7 +18,6 @@
   --color-blue-900: #3a0c1a;
   --color-blue-950: #22070f;
 
-  /* Cool product neutrals (match Study) — not warm paper */
   --color-slate-50: #f8fafc;
   --color-slate-100: #f1f5f9;
   --color-slate-200: #e2e8f0;
@@ -69,14 +66,12 @@
   }
 }
 
-/* Display = same sans stack (strong unify — no serif textbook look) */
 .font-display {
   font-family: var(--font-display);
   letter-spacing: -0.025em;
   font-weight: 700;
 }
 
-/* Subtle product grid (cool, not paper dots) */
 .paper-grid {
   background-image: none;
 }
@@ -84,39 +79,7 @@ html.dark .paper-grid {
   background-image: none;
 }
 
-.hamburger {
-  position: relative;
-  display: block;
-  width: 18px;
-  height: 14px;
-}
-.hamburger span {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 1.5px;
-  border-radius: 1px;
-  background: currentColor;
-  transition:
-    transform 250ms var(--ease-out-smooth),
-    opacity 150ms var(--ease-out-smooth),
-    top 250ms var(--ease-out-smooth);
-}
-.hamburger span:nth-child(1) { top: 1px; }
-.hamburger span:nth-child(2) { top: 6.5px; }
-.hamburger span:nth-child(3) { top: 12px; }
-.hamburger.is-open span:nth-child(1) {
-  top: 6.5px;
-  transform: rotate(45deg);
-}
-.hamburger.is-open span:nth-child(2) {
-  opacity: 0;
-}
-.hamburger.is-open span:nth-child(3) {
-  top: 6.5px;
-  transform: rotate(-45deg);
-}
-
+/* Left-sliding drawer (match Tools/Finance hamburger sidebar) */
 .nav-drawer {
   position: fixed;
   top: 4rem;
@@ -138,7 +101,7 @@ html.dark .paper-grid {
   inset: 0;
   border: 0;
   padding: 0;
-  background: rgb(15 23 42 / 0.4);
+  background: rgb(15 23 42 / 0.45);
   opacity: 0;
   transition: opacity 250ms var(--ease-out-smooth);
 }
@@ -148,21 +111,21 @@ html.dark .paper-grid {
 .nav-drawer-panel {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
-  width: min(22rem, 100vw);
+  width: min(18rem, 85vw);
   height: 100%;
   background: #ffffff;
   color: var(--color-slate-900);
-  box-shadow: -16px 0 40px rgb(15 23 42 / 0.12);
-  transform: translateX(100%);
-  transition: transform 400ms var(--ease-out-smooth);
+  box-shadow: 16px 0 40px rgb(15 23 42 / 0.12);
+  transform: translateX(-100%);
+  transition: transform 300ms var(--ease-out-smooth);
 }
 html.dark .nav-drawer-panel {
   background: var(--color-slate-950);
   color: var(--color-slate-50);
-  box-shadow: -16px 0 40px rgb(0 0 0 / 0.45);
+  box-shadow: 16px 0 40px rgb(0 0 0 / 0.45);
 }
 .nav-drawer.is-open .nav-drawer-panel {
   transform: translateX(0);
@@ -172,7 +135,6 @@ html.dark .nav-drawer-panel {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hamburger span,
   .nav-drawer-backdrop,
   .nav-drawer-panel {
     transition: none;
