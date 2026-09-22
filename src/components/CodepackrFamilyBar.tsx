@@ -1,5 +1,5 @@
 // src/components/CodepackrFamilyBar.tsx
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { ChevronDown, ExternalLink, Code2, BookOpen, Scale, TrendingUp, Sparkles } from "lucide-react";
 import { CODEPACKR_FAMILY, CURRENT_PRODUCT, FamilyProductId } from "../lib/codepackr-family";
 
@@ -45,8 +45,12 @@ export function CodepackrFamilyBar({
         setMobileOpen(false);
       }
     }
-    if (mobileOpen) document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    if (mobileOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, [mobileOpen]);
 
   useEffect(() => {
@@ -82,14 +86,21 @@ export function CodepackrFamilyBar({
             return (
               <li key={item.id} className="h-full flex items-center">
                 {isCurrent ? (
-                  <span aria-current="page" className={`h-full inline-flex items-center gap-1.5 px-2.5 py-0 text-[12px] cursor-default ${ACTIVE_CLASS[CURRENT_PRODUCT]}`}>
+                  <span
+                    aria-current="page"
+                    className={`h-full inline-flex items-center gap-1.5 px-2.5 py-0 text-[12px] cursor-default ${ACTIVE_CLASS[CURRENT_PRODUCT]}`}
+                  >
                     {showIcons && <FamilyIcon id={item.id} size={14} />}
                     <span>{labelText}</span>
                     <span className="inline-block w-1 h-1 rounded-full bg-current opacity-80" />
                   </span>
                 ) : (
-                  <a href={item.href} target={linkTarget} rel={linkTarget === "_blank" ? "noopener noreferrer" : undefined}
-                    className="h-full inline-flex items-center gap-1.5 px-2.5 py-0 text-[12px] opacity-75 hover:opacity-100 transition-all rounded-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-current text-slate-300 hover:text-cyan-300">
+                  <a
+                    href={item.href}
+                    target={linkTarget}
+                    rel={linkTarget === "_blank" ? "noopener noreferrer" : undefined}
+                    className="h-full inline-flex items-center gap-1.5 px-2.5 py-0 text-[12px] opacity-75 hover:opacity-100 transition-all rounded-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-current text-slate-300 hover:text-cyan-300"
+                  >
                     {showIcons && <FamilyIcon id={item.id} size={14} />}
                     <span>{labelText}</span>
                   </a>
@@ -100,16 +111,24 @@ export function CodepackrFamilyBar({
         </ul>
 
         <div className="sm:hidden relative" ref={dropdownRef}>
-          <button type="button" aria-expanded={mobileOpen} aria-haspopup="true" aria-label="Toggle Codepackr Family sites menu"
+          <button
+            type="button"
+            aria-expanded={mobileOpen}
+            aria-haspopup="true"
+            aria-label="Toggle Codepackr Family sites menu"
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="flex items-center gap-1.5 py-1 px-2 min-h-[44px] rounded text-[11px] font-medium border border-current/20 bg-current/5">
+            className="flex items-center gap-1.5 py-1 px-2 min-h-[44px] rounded text-[11px] font-medium border border-current/20 bg-current/5"
+          >
             {showIcons && currentItem && <FamilyIcon id={currentItem.id} size={13} />}
             <span>{language === "ta" && currentItem?.labelTa ? currentItem.labelTa : currentItem?.label}</span>
             <ChevronDown size={13} className={`transition-transform duration-200 ${mobileOpen ? "rotate-180" : ""}`} />
           </button>
+
           {mobileOpen && (
             <div className="absolute right-0 top-full mt-1.5 w-60 py-1.5 rounded-lg shadow-xl border border-black/10 dark:border-white/10 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 z-50">
-              <div className="px-3 py-1.5 border-b border-black/5 dark:border-white/5 text-[10px] uppercase font-bold tracking-wider text-slate-400">Codepackr Network</div>
+              <div className="px-3 py-1.5 border-b border-black/5 dark:border-white/5 text-[10px] uppercase font-bold tracking-wider text-slate-400">
+                Codepackr Network
+              </div>
               <ul className="py-1">
                 {CODEPACKR_FAMILY.map((item) => {
                   const isCurrent = item.id === CURRENT_PRODUCT;
@@ -128,8 +147,12 @@ export function CodepackrFamilyBar({
                           <span className="text-[9px] px-1.5 py-0.5 rounded font-mono font-bold uppercase tracking-wider bg-current/10">Current</span>
                         </div>
                       ) : (
-                        <a href={item.href} target={linkTarget} rel={linkTarget === "_blank" ? "noopener noreferrer" : undefined}
-                          className="w-full flex items-center justify-between px-3 py-2.5 min-h-[44px] text-[12px] hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors">
+                        <a
+                          href={item.href}
+                          target={linkTarget}
+                          rel={linkTarget === "_blank" ? "noopener noreferrer" : undefined}
+                          className="w-full flex items-center justify-between px-3 py-2.5 min-h-[44px] text-[12px] hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors"
+                        >
                           <div className="flex items-center gap-2">
                             <FamilyIcon id={item.id} size={15} />
                             <div>
