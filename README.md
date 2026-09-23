@@ -98,11 +98,12 @@ Stack: React 18 + TypeScript + Vite + Tailwind CSS v4.
 7. [`.github/skills/reusable-legal-knowledge.md`](.github/skills/reusable-legal-knowledge.md)
 8. [`docs/reusable-legal-knowledge-architecture.md`](docs/reusable-legal-knowledge-architecture.md)
 9. [`.github/skills/tool-quality-gate.md`](.github/skills/tool-quality-gate.md)
+10. [`prompts/TOPIC_AUTHORING_AI_PROMPT.md`](prompts/TOPIC_AUTHORING_AI_PROMPT.md) — Master AI Prompt for authoring or updating topic treatises
 
 Key rules:
 - 100% client-side only
 - Every tool needs Sample / Demo, Reset, and Copy where applicable
-- Blue brand only (`#2563eb`)
+- Seal burgundy brand theme (`#8B1E3F` / `#9F2D4A`)
 - Quality Gate must be fully green
 
 ---
@@ -116,6 +117,9 @@ codepackr-law/
 │   ├── prompts/
 │   ├── skills/
 │   └── copilot-instructions.md
+├── prompts/
+│   ├── README.md
+│   └── TOPIC_AUTHORING_AI_PROMPT.md
 ├── src/
 │   ├── App.tsx
 │   ├── main.tsx
