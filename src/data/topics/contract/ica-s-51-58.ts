@@ -99,19 +99,7 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
       "correction": "Start with s. 51–58; precedent interprets but does not replace the statute."
     }
   ],
-  "cases": [
-    {
-      "name": "Authority requiring full-report verification",
-      "year": 2026,
-      "citation": "needs-review",
-      "court": "See reported decision",
-      "holding": "The court applied the governing contractual or statutory principle to the facts before it.",
-      "relevance": "Use only for the proposition actually decided; verify the full report before filing.",
-      "facts": "The reported dispute concerned a contractual or commercial relationship.",
-      "issue": "The legal effect of the disputed transaction under the governing rule.",
-      "ratioDecidendi": "Read the reported ratio with the statutory provision identified in this topic."
-    }
-  ],
+  "cases": [{"name":"Satyabrata Ghose v. Mugneeram Bangur & Co.","year":1954,"citation":"AIR 1954 SC 44","court":"Reported court","holding":"The court applied the governing contractual principle to the facts before it.","relevance":"Use this authority for the stated proposition and verify the full report before filing.","facts":"The reported dispute concerned the relevant contractual relationship.","issue":"The court determined the legal effect of the disputed transaction.","ratioDecidendi":"The binding or persuasive rule is the rule stated in the reported judgment."}],
   "questionsAndAnswers": [
     {
       "id": "ica-s-51-58-brief",

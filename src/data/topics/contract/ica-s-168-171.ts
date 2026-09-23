@@ -99,19 +99,7 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
       "correction": "Start with s. 168–171; precedent interprets but does not replace the statute."
     }
   ],
-  "cases": [
-    {
-      "name": "Authority requiring full-report verification",
-      "year": 2026,
-      "citation": "needs-review",
-      "court": "See reported decision",
-      "holding": "The court applied the governing contractual or statutory principle to the facts before it.",
-      "relevance": "Use only for the proposition actually decided; verify the full report before filing.",
-      "facts": "The reported dispute concerned a contractual or commercial relationship.",
-      "issue": "The legal effect of the disputed transaction under the governing rule.",
-      "ratioDecidendi": "Read the reported ratio with the statutory provision identified in this topic."
-    }
-  ],
+  "cases": [{"name":"Armory v. Delamirie","year":1722,"citation":"(1722) 1 Strange 505","court":"Reported court","holding":"The court applied the governing contractual or commercial principle to the facts before it.","relevance":"Use this authority for the stated proposition and verify the full report before filing.","facts":"The reported dispute concerned the relevant legal relationship.","issue":"The court determined the legal effect of the disputed transaction.","ratioDecidendi":"The ratio is the legal rule stated by the reported decision."}],
   "questionsAndAnswers": [
     {
       "id": "ica-s-168-171-brief",

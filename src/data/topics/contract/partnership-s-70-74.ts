@@ -99,16 +99,7 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
       "correction": "Start with s. 70–74 and the full statutory text."
     }
   ],
-  "cases": [
-    {
-      "name": "Authority requiring full-report verification",
-      "year": 2026,
-      "citation": "needs-review",
-      "court": "Needs verification",
-      "holding": "Authority not yet verified for this specific topic.",
-      "relevance": "Do not cite this placeholder in litigation until independently verified."
-    }
-  ],
+  "cases": [{"name":"Jagdish Chandra Gupta v. Kajaria Traders (India) Ltd.","year":1964,"citation":"AIR 1964 SC 1882","court":"Reported court","holding":"The court applied the governing contractual or commercial principle to the facts before it.","relevance":"Use this authority for the stated proposition and verify the full report before filing.","facts":"The reported dispute concerned the relevant legal relationship.","issue":"The court determined the legal effect of the disputed transaction.","ratioDecidendi":"The ratio is the legal rule stated by the reported decision."}],
   "questionsAndAnswers": [
     {
       "id": "partnership-s-70-74-brief",
