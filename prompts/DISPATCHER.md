@@ -2,7 +2,7 @@
 
 > **THE LISTENER ARCHITECTURE:**  
 > This file functions as the **Central Listener and Event Router** for CodePackr Law.  
-> Just like an event listener in software, you can give any AI model (Copilot, Cursor, Claude, ChatGPT, etc.) a single-line command:
+> Just like an event listener in software, you can give your AI assistant a single-line command:
 >
 > 💬 **`"add topics in BSA. follow prompts/DISPATCHER.md"`**  
 > or  

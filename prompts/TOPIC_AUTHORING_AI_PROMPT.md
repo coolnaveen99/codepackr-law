@@ -6,7 +6,7 @@
 >    - `[SUBJECT_SLUG]` (e.g. `constitution`, `bns`, `bnss`, `bsa`, `cpc`, `tort`, `family`, `contract`)
 >    - `[TOPIC_ID]` (e.g. `art-21`, `s-300`, `negligence`, `res-judicata`)
 >    - `[STATUTE_PROVISION_NAME]` (e.g. `Article 21 of the Constitution of India`, `Section 300 BNS 2023 — Murder and Exceptions`)
-> 3. Send it to **any AI model** (ChatGPT, Claude 3.7 Sonnet, Copilot, DeepSeek, Cursor, etc.).
+> 3. Send it to your AI assistant.
 > 4. Save the generated code to `src/data/topics/[SUBJECT_SLUG]/[TOPIC_ID].ts`.
 > 5. Ensure the topic is registered in `src/data/subjects.ts` under that subject with `hasNotes: true`.
 

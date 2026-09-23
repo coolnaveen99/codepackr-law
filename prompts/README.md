@@ -32,12 +32,8 @@ At the top of the prompt, replace the 3 bracketed variables with your topic's sp
 * **`[TOPIC_ID]`**: The unique identifier of the topic (e.g., `art-21`, `s-300`, `negligence`, `res-judicata`).
 * **`[STATUTE_PROVISION_NAME]`**: The exact statutory heading (e.g., `Article 21 of the Constitution of India`, `Section 300 BNS 2023 — Murder and Exceptions`).
 
-### Step 3: Run with Your Preferred AI
-Paste the customized prompt into **any AI model**:
-* **Claude 3.7 / 3.5 Sonnet** (Anthropic)
-* **ChatGPT (GPT-4o / o1 / o3-mini)** (OpenAI)
-* **GitHub Copilot / Cursor IDE**
-* **DeepSeek V3 / R1**
+### Step 3: Run the Prompt
+Send the prompt to your AI assistant. It will automatically generate the complete, self-contained TypeScript file.
 
 ### Step 4: Save the Code File
 Take the complete TypeScript code returned by the AI and save it to:
