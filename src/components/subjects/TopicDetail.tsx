@@ -20,6 +20,7 @@ import {
 import { Badge } from '../ui/Badge'
 import { RelatedKnowledge } from '../knowledge/RelatedKnowledge'
 import { RichLegalText } from '../knowledge/RichLegalText'
+import { ModularStudyRenderer } from './ModularStudyRenderer'
 import { knowledgeIdForTopic } from '../../data/knowledge'
 
 const TOPIC_PROGRESS_KEY = 'codepackr-law-topic-progress'
@@ -284,7 +285,7 @@ export function TopicDetail({
               Study notes
             </h3>
           </div>
-          <StudyBody text={studyContent} />
+          <ModularStudyRenderer text={studyContent} />
 
           {content.bareActPointers && content.bareActPointers.length > 0 && (
             <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800">
@@ -321,7 +322,9 @@ export function TopicDetail({
             {statutoryExamples.map((example) => (
               <article key={example.id} className="rounded-[1.4rem] border border-blue-200 dark:border-blue-900 bg-white dark:bg-slate-900 p-5 sm:p-6">
                 <h4 className="font-display text-lg sm:text-xl font-semibold text-slate-900 dark:text-white">{example.title}</h4>
-                <p className="mt-3 text-base sm:text-lg leading-8 text-slate-800 dark:text-slate-200 whitespace-pre-line">{example.description}</p>
+                <div className="mt-3 text-base sm:text-lg leading-8 text-slate-800 dark:text-slate-200 whitespace-pre-line">
+                  <RichLegalText text={example.description} />
+                </div>
               </article>
             ))}
           </div>
@@ -337,21 +340,41 @@ export function TopicDetail({
             {teachingExamples.map((example) => (
               <article key={example.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
                 <h4 className="font-semibold text-slate-900 dark:text-white">{example.title || 'Example'}</h4>
-                <p className="mt-2 text-base leading-7 text-slate-700 dark:text-slate-300 whitespace-pre-line">{example.description}</p>
+                <div className="mt-2 text-base leading-7 text-slate-700 dark:text-slate-300 whitespace-pre-line">
+                  <RichLegalText text={example.description} />
+                </div>
               </article>
             ))}
           </div>
         </section>
       )}
-      {!loading && content?.sections && content.sections.length > 0 && !hasContent && (
+      {!loading && content?.sections && content.sections.length > 0 && (
         <section className="space-y-4">
-          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Study Sections</h3>
-          {content.sections.slice().sort((a, b) => a.order - b.order).map((section) => (
-            <article key={section.id} id={section.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
-              <h4 className="font-semibold text-slate-900 dark:text-white">{section.title}</h4>
-              <div className="mt-3 space-y-2 text-sm leading-relaxed text-slate-700 dark:text-slate-300">{section.content.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
-            </article>
-          ))}
+          <div className="flex items-center gap-2">
+            <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-blue-700 dark:text-blue-300">Modular Syllabus Breakdown</span>
+          </div>
+          <h3 className="font-display text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
+            Study Sections
+          </h3>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {content.sections.slice().sort((a, b) => a.order - b.order).map((section) => (
+              <article key={section.id} id={section.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 shadow-xs space-y-3">
+                <div className="flex items-center gap-2">
+                  <span className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-xs font-bold border border-blue-200 dark:border-blue-800">
+                    {section.order}
+                  </span>
+                  <h4 className="font-display text-base sm:text-lg font-bold text-slate-900 dark:text-white">{section.title}</h4>
+                </div>
+                <div className="space-y-2 text-sm sm:text-base leading-relaxed text-slate-700 dark:text-slate-300">
+                  {section.content.map((paragraph, pIdx) => (
+                    <p key={pIdx}>
+                      <RichLegalText text={paragraph} />
+                    </p>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
         </section>
       )}
 
@@ -513,7 +536,7 @@ export function TopicDetail({
               </h4>
               {expanded10 ? (
                 <>
-                  <StudyBody text={qaTen.answer} />
+                  <ModularStudyRenderer text={qaTen.answer} defaultCardTitle="10-Mark Model Answer (IRAC)" />
                   {qaTen.explanation && (
                     <div className="rounded-2xl bg-slate-50 dark:bg-slate-800/50 p-4">
                       <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 mb-2">
@@ -584,7 +607,7 @@ export function TopicDetail({
               </h4>
               {expanded16 ? (
                 <>
-                  <StudyBody text={qaSixteen.answer} />
+                  <ModularStudyRenderer text={qaSixteen.answer} defaultCardTitle="16-Mark Comprehensive Submissions (CREAC)" />
                   {qaSixteen.explanation && (
                     <div className="rounded-2xl bg-slate-50 dark:bg-slate-800/50 p-4">
                       <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 mb-2">
@@ -769,41 +792,16 @@ export function TopicDetail({
   )
 }
 
-function StudyBody({ text }: { text: string }) {
-  const blocks = text.split('\n')
-  return (
-    <div className="text-base sm:text-lg leading-8 text-slate-800 dark:text-slate-200 space-y-4">
-      {blocks.map((line, i) => {
-        if (!line.trim()) return null
-        const trimmed = line.trim()
-        const legalHeading =
-          /^(Explanation|Illustrations?|Exceptions?|Proviso|Provided that)\b/i.test(trimmed)
-        const heading =
-          legalHeading ||
-          (trimmed.length < 80 &&
-            !/[.?!”]$/.test(trimmed) &&
-            !trimmed.startsWith('•') &&
-            !/^\d+\./.test(trimmed) &&
-            !/^\(\d+\)/.test(trimmed))
-        if (heading) {
-          return (
-            <h4 key={i} className="pt-3 text-xl sm:text-2xl font-extrabold text-slate-950 dark:text-white">
-              {trimmed}
-            </h4>
-          )
-        }
-        return <RichLegalText key={i} text={line} className="[&>p]:mt-0 [&>p]:text-base [&>p]:sm:text-lg [&>p]:leading-8" />
-      })}
-    </div>
-  )
-}
+
 
 function HypoBlock({ label, text }: { label: string; text?: string }) {
   if (!text) return null
   return (
     <div>
       <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500">{label}</p>
-      <p className="mt-1 text-sm leading-relaxed text-slate-700 dark:text-slate-300">{text}</p>
+      <div className="mt-1 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+        <RichLegalText text={text} />
+      </div>
     </div>
   )
 }

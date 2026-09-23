@@ -10,6 +10,8 @@ Global architecture, research hierarchy, mapper, and no-hallucination rules rema
 
 Do **not** create a parallel content architecture. Populate the unified `TopicContent.study` treatise plus structured fields (`sections`, `examples`, `hypotheticals`, `distinctions`, `misconceptions`, `examFrameworks`, `answerSkeleton`, `revisionPoints`, `questionsAndAnswers`, `cases`).
 
+**Modular Design Standard (Zero Raw Markdown)**: All answers and treatises must be structured cleanly for the `ModularStudyRenderer`. Never emit raw markdown syntax tokens (`###`, `**`, `---`, `> `) directly into the UI. Headings, callouts, lists, and bold legal terms are rendered as rich modular cards and components.
+
 ---
 
 ## Strategic Purpose: Dual-Track Educational & Chamber Platform

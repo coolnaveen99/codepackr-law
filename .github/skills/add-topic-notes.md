@@ -18,6 +18,16 @@ The user must experience the intellectual depth of a **printed legal treatise**,
 
 ---
 
+## 1A. Modular Design & Zero Raw Markdown Standard
+
+All topic learning notes and practice questions must adhere strictly to the **Modular Design Standard**:
+1. **Zero Raw Markdown Tokens in UI**: Topic content must never render raw markdown artifacts (`###`, `##`, `#`, `---`, `> `).
+2. **Modular Card Architecture**: Content is organized into distinct, bite-sized visual cards (Topic at a glance, Modular Syllabus Sections, Statutory Provisions, Contrastive Examples, Hypotheticals, Distinctions, Common Misconceptions, and IRAC/CREAC Answers).
+3. **Structured Fields Preferred**: Utilize `TopicContent` structured fields (`sections`, `provisions`, `hypotheticals`, `distinctions`, `misconceptions`, `questionsAndAnswers`) to allow the UI to render dedicated rich cards.
+4. **Rich Inline Parsing**: Headings are rendered via clean typographic scales with module badges, `**bold**` terms are styled with high-contrast font weights, and provisos/editorial notes appear as bordered callout cards.
+
+---
+
 ## 2. Standard Structure of the `study` Body
 
 Every authored topic treatise should cover:

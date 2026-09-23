@@ -86,6 +86,20 @@ Subject-specific files in [`.github/instructions/subjects/`](subjects/) contain 
 
 ---
 
+### Modular Design Standard (Zero Raw Markdown in UI)
+
+All topic study treatises and examination answers must strictly adhere to the **Modular Design Standard**:
+1. **Zero Raw Markdown Tokens**: Raw markdown syntax (`###`, `##`, `#`, `---`, `> `) must **never** be printed as unrendered plain text to the user.
+2. **Modular Component Presentation**:
+   - `Topic at a glance`: Presented in a prominent, styled summary card.
+   - `Study Notes & Modules`: Rendered as clean, bordered visual modules with badge indicators (`Module 1`, `Module 2`, etc.) via `ModularStudyRenderer`.
+   - `Callouts & Notes`: Editorial notes, provisos, and judicial commentaries must render as distinct callout cards with left accent borders and subtle background tint.
+   - `Structured Data Properties`: Prefer structuring content into `TopicContent` properties (`sections`, `provisions`, `hypotheticals`, `distinctions`, `misconceptions`, `questionsAndAnswers`).
+   - `Rich Inline Typography`: Bold phrases (`**term**`) are rendered in crisp, high-contrast weights, and statutory citations are cleanly anchored.
+   - `10-Mark and 16-Mark Answers`: Structured in distinct IRAC and CREAC sections without markdown artifacts.
+
+---
+
 # 1. Dual-Track Core Workflow
 
 Every substantive legal topic must strictly follow this forensic pipeline:
