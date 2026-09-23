@@ -1951,27 +1951,27 @@
 | [x] Complete | `hma-s-13b` | HMA s. 13B — Divorce by mutual consent | section | Hindu Marriage Act | ⭐ Yes |
 | [x] Complete | `hma-s-24` | HMA s. 24 — Interim maintenance | section | Hindu Marriage Act | ⭐ Yes |
 | [x] Complete | `hma-s-25` | HMA s. 25 — Permanent alimony and maintenance | section | Hindu Marriage Act | ⭐ Yes |
-| [ ] Pending | `hsa-s-6` | HSA s. 6 — Devolution of interest in coparcenary property | section | Hindu Succession Act | ⭐ Yes |
-| [ ] Pending | `hsa-s-8` | HSA s. 8 — General rules of succession in the case of males | section | Hindu Succession Act | ⭐ Yes |
-| [ ] Pending | `hsa-s-14` | HSA s. 14 — Property of a female Hindu to be her absolute property | section | Hindu Succession Act | ⭐ Yes |
-| [ ] Pending | `hsa-s-15` | HSA s. 15 — General rules of succession in the case of female Hindus | section | Hindu Succession Act | No |
-| [ ] Pending | `hsa-s-30` | HSA s. 30 — Testamentary disposition | section | Hindu Succession Act | No |
+| [x] Complete | `hsa-s-6` | HSA s. 6 — Devolution of interest in coparcenary property | section | Hindu Succession Act | ⭐ Yes |
+| [x] Complete | `hsa-s-8` | HSA s. 8 — General rules of succession in the case of males | section | Hindu Succession Act | ⭐ Yes |
+| [x] Complete | `hsa-s-14` | HSA s. 14 — Property of a female Hindu to be her absolute property | section | Hindu Succession Act | ⭐ Yes |
+| [x] Complete | `hsa-s-15` | HSA s. 15 — General rules of succession in the case of female Hindus | section | Hindu Succession Act | No |
+| [x] Complete | `hsa-s-30` | HSA s. 30 — Testamentary disposition | section | Hindu Succession Act | No |
 | [x] Complete | `adoption-maintenance` | FL-I Unit IV — Adoption & Maintenance (HAMA) | theme | General | No |
-| [ ] Pending | `hama-s-6` | HAMA s. 6 — Requisites of a valid adoption | section | Adoption & Maintenance | ⭐ Yes |
-| [ ] Pending | `hama-s-12` | HAMA s. 12 — Effects of adoption | section | Adoption & Maintenance | No |
-| [ ] Pending | `hama-s-18` | HAMA s. 18 — Maintenance of wife | section | Adoption & Maintenance | ⭐ Yes |
-| [ ] Pending | `hama-s-19` | HAMA s. 19 — Maintenance of widowed daughter-in-law | section | Adoption & Maintenance | No |
-| [ ] Pending | `hama-s-20` | HAMA s. 20 — Maintenance of children and aged parents | section | Adoption & Maintenance | No |
+| [x] Complete | `hama-s-6` | HAMA s. 6 — Requisites of a valid adoption | section | Adoption & Maintenance | ⭐ Yes |
+| [x] Complete | `hama-s-12` | HAMA s. 12 — Effects of adoption | section | Adoption & Maintenance | No |
+| [x] Complete | `hama-s-18` | HAMA s. 18 — Maintenance of wife | section | Adoption & Maintenance | ⭐ Yes |
+| [x] Complete | `hama-s-19` | HAMA s. 19 — Maintenance of widowed daughter-in-law | section | Adoption & Maintenance | No |
+| [x] Complete | `hama-s-20` | HAMA s. 20 — Maintenance of children and aged parents | section | Adoption & Maintenance | No |
 | [x] Complete | `guardianship-minority` | FL-I Unit V — Minority & Guardianship | theme | General | No |
-| [ ] Pending | `hmga-s-6` | HMGA s. 6 — Natural guardians of a Hindu minor | section | Minority & Guardianship | ⭐ Yes |
-| [ ] Pending | `hmga-s-8` | HMGA s. 8 — Powers of natural guardian | section | Minority & Guardianship | ⭐ Yes |
-| [ ] Pending | `hmga-s-13` | HMGA s. 13 — Welfare of minor to be paramount consideration | section | Minority & Guardianship | ⭐ Yes |
-| [ ] Pending | `sma-s-4` | SMA s. 4 — Conditions relating to solemnization of special marriages | section | Special Marriage Act | No |
-| [ ] Pending | `sma-s-27` | SMA s. 27 — Divorce under Special Marriage Act | section | Special Marriage Act | No |
-| [ ] Pending | `sma-s-28` | SMA s. 28 — Divorce by mutual consent (SMA) | section | Special Marriage Act | ⭐ Yes |
-| [ ] Pending | `mpl-shariat-s-2` | Shariat Act s. 2 — Application of personal law to Muslims | section | Muslim Personal Law | No |
-| [ ] Pending | `dmma-s-2` | DMMA s. 2 — Grounds for dissolution of marriage by Muslim woman | section | Muslim Personal Law | ⭐ Yes |
-| [ ] Pending | `mwa-s-3` | Muslim Women Act s. 3 — Fair and reasonable provision on divorce | section | Muslim Personal Law | ⭐ Yes |
+| [x] Complete | `hmga-s-6` | HMGA s. 6 — Natural guardians of a Hindu minor | section | Minority & Guardianship | ⭐ Yes |
+| [x] Complete | `hmga-s-8` | HMGA s. 8 — Powers of natural guardian | section | Minority & Guardianship | ⭐ Yes |
+| [x] Complete | `hmga-s-13` | HMGA s. 13 — Welfare of minor to be paramount consideration | section | Minority & Guardianship | ⭐ Yes |
+| [x] Complete | `sma-s-4` | SMA s. 4 — Conditions relating to solemnization of special marriages | section | Special Marriage Act | No |
+| [x] Complete | `sma-s-27` | SMA s. 27 — Divorce under Special Marriage Act | section | Special Marriage Act | No |
+| [x] Complete | `sma-s-28` | SMA s. 28 — Divorce by mutual consent (SMA) | section | Special Marriage Act | ⭐ Yes |
+| [x] Complete | `mpl-shariat-s-2` | Shariat Act s. 2 — Application of personal law to Muslims | section | Muslim Personal Law | No |
+| [x] Complete | `dmma-s-2` | DMMA s. 2 — Grounds for dissolution of marriage by Muslim woman | section | Muslim Personal Law | ⭐ Yes |
+| [x] Complete | `mwa-s-3` | Muslim Women Act s. 3 — Fair and reasonable provision on divorce | section | Muslim Personal Law | ⭐ Yes |
 | [x] Complete | `hindu-joint-family` | FL-II Unit I — Hindu Joint Family | theme | General | ⭐ Yes |
 | [x] Complete | `hindu-succession` | FL-II Unit II — Intestate Succession (HSA) | act | General | ⭐ Yes |
 | [x] Complete | `testamentary-succession` | FL-II Unit III — Testamentary Succession | theme | General | No |
