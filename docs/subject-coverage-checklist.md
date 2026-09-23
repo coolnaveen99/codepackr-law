@@ -1375,7 +1375,7 @@
 | [~] Catalog | `order-51` | Order LI — Presidency Small Cause Courts | chapter | Small causes | No |
 
 ### Bharatiya Nyaya Sanhita (BNS / IPC) (`bns`)
-> **BNS audit update:** `src/data/topics/bns/` now contains 141 dedicated topic files (121 existing + 20 added in this batch). The registry contains 368 BNS/IPC catalog topics, leaving 227 catalog topics without dedicated files. Dispatcher high-yield section files `s-64`, `s-103`, `s-111`, and `s-304` have been checked on this branch; the common-intention doctrine is covered by `doctrine-common-intention`. This batch adds dedicated notes for BNS ss. 52, 53, 56, 58, 59, 60, 65, 67–69, 71–74, 76, 79, and 81–84.
+> **BNS audit update:** `src/data/topics/bns/` now contains 161 dedicated topic files (121 existing + 40 added in the current BNS workstream). The registry contains 368 BNS/IPC catalog topics, leaving 207 catalog topics without dedicated files. Dispatcher high-yield section files `s-64`, `s-103`, `s-111`, and `s-304` have been checked on this branch; the common-intention doctrine is covered by `doctrine-common-intention`. Recent batches add dedicated notes for BNS ss. 52, 53, 56, 58, 59, 60, 65, 67–69, 71–74, 76, 79, 81–84, 86–92, 94, 97–98, 110, 113–114, 116, 119, 121, and 123–126.
 - **Priority:** high | **AIBE Weightage:** 8 Questions
 - **Governing Acts:** Bharatiya Nyaya Sanhita, 2023, Indian Penal Code, 1860 (legacy)
 
@@ -1476,19 +1476,19 @@
 | [x] Complete | `s-83` | Section 83 — Marriage ceremony fraudulently gone through without lawful marriage | section | Offences relating to marriage | No |
 | [x] Complete | `s-84` | Section 84 — Enticing or taking away or detaining with criminal intent a married woman | section | Offences relating to marriage | No |
 | [~] Catalog | `s-85` | Section 85 — Husband or relative of husband of a woman subjecting her to cruelty | section | Offences relating to marriage | ⭐ Yes |
-| [~] Catalog | `s-86` | Section 86 — Cruelty defined | section | Offences relating to marriage | ⭐ Yes |
-| [~] Catalog | `s-87` | Section 87 — Kidnapping, abducting or inducing woman to compel her marriage, etc | section | Offences relating to marriage | No |
-| [~] Catalog | `s-88` | Section 88 — Causing miscarriage | section | Miscarriage and birth | No |
-| [~] Catalog | `s-89` | Section 89 — Causing miscarriage without woman's consent | section | Miscarriage and birth | No |
-| [~] Catalog | `s-90` | Section 90 — Death caused by act done with intent to cause miscarriage | section | Miscarriage and birth | No |
-| [~] Catalog | `s-91` | Section 91 — Act done with intent to prevent child being born alive or to cause to die after birth | section | Miscarriage and birth | No |
-| [~] Catalog | `s-92` | Section 92 — Causing death of quick unborn child by act amounting to culpable homicide | section | Miscarriage and birth | No |
+| [x] Complete | `s-86` | Section 86 — Cruelty defined | section | Offences relating to marriage | ⭐ Yes |
+| [x] Complete | `s-87` | Section 87 — Kidnapping, abducting or inducing woman to compel her marriage, etc | section | Offences relating to marriage | No |
+| [x] Complete | `s-88` | Section 88 — Causing miscarriage | section | Miscarriage and birth | No |
+| [x] Complete | `s-89` | Section 89 — Causing miscarriage without woman's consent | section | Miscarriage and birth | No |
+| [x] Complete | `s-90` | Section 90 — Death caused by act done with intent to cause miscarriage | section | Miscarriage and birth | No |
+| [x] Complete | `s-91` | Section 91 — Act done with intent to prevent child being born alive or to cause to die after birth | section | Miscarriage and birth | No |
+| [x] Complete | `s-92` | Section 92 — Causing death of quick unborn child by act amounting to culpable homicide | section | Miscarriage and birth | No |
 | [~] Catalog | `s-93` | Section 93 — Exposure and abandonment of child under twelve years of age, by parent or person having care of it | section | Miscarriage and birth | No |
-| [~] Catalog | `s-94` | Section 94 — Concealment of birth by secret disposal of dead body | section | Miscarriage and birth | No |
+| [x] Complete | `s-94` | Section 94 — Concealment of birth by secret disposal of dead body | section | Miscarriage and birth | No |
 | [~] Catalog | `s-95` | Section 95 — Hiring, employing or engaging a child to commit an offence | section | Offences against child | ⭐ Yes |
 | [~] Catalog | `s-96` | Section 96 — Procuration of child | section | Offences against child | No |
-| [~] Catalog | `s-97` | Section 97 — Kidnapping or abducting child under ten years of age with intent to steal from its person | section | Offences against child | No |
-| [~] Catalog | `s-98` | Section 98 — Selling child for purposes of prostitution, etc | section | Offences against child | No |
+| [x] Complete | `s-97` | Section 97 — Kidnapping or abducting child under ten years of age with intent to steal from its person | section | Offences against child | No |
+| [x] Complete | `s-98` | Section 98 — Selling child for purposes of prostitution, etc | section | Offences against child | No |
 | [~] Catalog | `s-99` | Section 99 — Buying child for purposes of prostitution, etc | section | Offences against child | No |
 | [~] Catalog | `s-100` | Section 100 — Culpable homicide | section | Offences affecting life | ⭐ Yes |
 | [~] Catalog | `s-101` | Section 101 — Murder | section | Offences affecting life | ⭐ Yes |
@@ -1500,23 +1500,23 @@
 | [~] Catalog | `s-107` | Section 107 — Abetment of suicide of child or person of unsound mind | section | Offences affecting life | ⭐ Yes |
 | [~] Catalog | `s-108` | Section 108 — Abetment of suicide | section | Offences affecting life | ⭐ Yes |
 | [~] Catalog | `s-109` | Section 109 — Attempt to murder | section | Offences affecting life | ⭐ Yes |
-| [~] Catalog | `s-110` | Section 110 — Attempt to commit culpable homicide | section | Offences affecting life | ⭐ Yes |
+| [x] Complete | `s-110` | Section 110 — Attempt to commit culpable homicide | section | Offences affecting life | ⭐ Yes |
 | [x] Complete | `s-111` | Section 111 — Organised crime | section | Offences affecting life | ⭐ Yes |
 | [~] Catalog | `s-112` | Section 112 — Petty organised crime | section | Offences affecting life | ⭐ Yes |
-| [~] Catalog | `s-113` | Section 113 — Terrorist act | section | Offences affecting life | ⭐ Yes |
-| [~] Catalog | `s-114` | Section 114 — Hurt | section | Hurt | ⭐ Yes |
+| [x] Complete | `s-113` | Section 113 — Terrorist act | section | Offences affecting life | ⭐ Yes |
+| [x] Complete | `s-114` | Section 114 — Hurt | section | Hurt | ⭐ Yes |
 | [~] Catalog | `s-115` | Section 115 — Voluntarily causing hurt | section | Hurt | ⭐ Yes |
-| [~] Catalog | `s-116` | Section 116 — Grievous hurt | section | Hurt | ⭐ Yes |
+| [x] Complete | `s-116` | Section 116 — Grievous hurt | section | Hurt | ⭐ Yes |
 | [~] Catalog | `s-117` | Section 117 — Voluntarily causing grievous hurt | section | Hurt | ⭐ Yes |
 | [~] Catalog | `s-118` | Section 118 — Voluntarily causing hurt or grievous hurt by dangerous weapons or means | section | Hurt | ⭐ Yes |
-| [~] Catalog | `s-119` | Section 119 — Voluntarily causing hurt or grievous hurt to extort property, or to constrain to an illegal act | section | Hurt | No |
+| [x] Complete | `s-119` | Section 119 — Voluntarily causing hurt or grievous hurt to extort property, or to constrain to an illegal act | section | Hurt | No |
 | [~] Catalog | `s-120` | Section 120 — Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property | section | Hurt | No |
-| [~] Catalog | `s-121` | Section 121 — Voluntarily causing hurt or grievous hurt to deter public servant from his duty | section | Hurt | No |
+| [x] Complete | `s-121` | Section 121 — Voluntarily causing hurt or grievous hurt to deter public servant from his duty | section | Hurt | No |
 | [~] Catalog | `s-122` | Section 122 — Voluntarily causing hurt or grievous hurt on provocation | section | Hurt | No |
-| [~] Catalog | `s-123` | Section 123 — Causing hurt by means of poison, etc., with intent to commit an offence | section | Hurt | No |
-| [~] Catalog | `s-124` | Section 124 — Voluntarily causing grievous hurt by use of acid, etc | section | Hurt | ⭐ Yes |
-| [~] Catalog | `s-125` | Section 125 — Act endangering life or personal safety of others | section | Hurt | No |
-| [~] Catalog | `s-126` | Section 126 — Wrongful restraint | section | Wrongful restraint | ⭐ Yes |
+| [x] Complete | `s-123` | Section 123 — Causing hurt by means of poison, etc., with intent to commit an offence | section | Hurt | No |
+| [x] Complete | `s-124` | Section 124 — Voluntarily causing grievous hurt by use of acid, etc | section | Hurt | ⭐ Yes |
+| [x] Complete | `s-125` | Section 125 — Act endangering life or personal safety of others | section | Hurt | No |
+| [x] Complete | `s-126` | Section 126 — Wrongful restraint | section | Wrongful restraint | ⭐ Yes |
 | [~] Catalog | `s-127` | Section 127 — Wrongful confinement | section | Wrongful restraint | ⭐ Yes |
 | [~] Catalog | `s-128` | Section 128 — Force | section | Force and assault | No |
 | [~] Catalog | `s-129` | Section 129 — Criminal force | section | Force and assault | No |
