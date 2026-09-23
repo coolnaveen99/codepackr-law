@@ -14,7 +14,7 @@
 | Constitutional Law | `constitution` | high | 10 | 523 | 40 | 8% |
 | Criminal Procedure (BNSS / CrPC) | `bnss` | high | 10 | 538 | 7 | 1% |
 | Code of Civil Procedure (CPC) | `cpc` | high | 10 | 235 | 7 | 3% |
-| Bharatiya Nyaya Sanhita (BNS / IPC) | `bns` | high | 8 | 368 | 123 | 33% |
+| Bharatiya Nyaya Sanhita (BNS / IPC) | `bns` | high | 8 | 358 | 358 | 100% |
 | Evidence (BSA / Evidence Act) | `bsa` | high | 8 | 177 | 7 | 4% |
 | Family Law | `family` | high | 8 | 38 | 19 | 50% |
 | Law of Contracts — Contract I, Contract II, Sale of Goods & Partnership | `contract` | high | 8 | 45 | 45 | 100% |
@@ -751,7 +751,7 @@
 | [~] Catalog | `s-149` | Section 149 — Use of armed forces to disperse assembly | section | Maintenance of public order and tranquillity | No |
 | [~] Catalog | `s-150` | Section 150 — Power of certain armed force officers to disperse assembly | section | Maintenance of public order and tranquillity | No |
 | [~] Catalog | `s-151` | Section 151 — Protection against prosecution for acts done under sections 148, 149 and 150 | section | Maintenance of public order and tranquillity | No |
-| [~] Catalog | `s-152` | Section 152 — Conditional order for removal of nuisance | section | Maintenance of public order and tranquillity | No |
+| [x] Complete | `s-152` | Section 152 — Conditional order for removal of nuisance | section | Maintenance of public order and tranquillity | No |
 | [~] Catalog | `s-153` | Section 153 — Service or notification of order | section | Maintenance of public order and tranquillity | No |
 | [~] Catalog | `s-154` | Section 154 — Person to whom order is addressed to obey or show cause | section | Maintenance of public order and tranquillity | No |
 | [~] Catalog | `s-155` | Section 155 — Penalty for failure to comply with section 154 | section | Maintenance of public order and tranquillity | No |
@@ -770,29 +770,29 @@
 | [~] Catalog | `s-168` | Section 168 — Police to prevent cognizable offences | section | Preventive action of the police | No |
 | [~] Catalog | `s-169` | Section 169 — Information of design to commit cognizable offences | section | Preventive action of the police | No |
 | [~] Catalog | `s-170` | Section 170 — Arrest to prevent commission of cognizable offences | section | Preventive action of the police | No |
-| [~] Catalog | `s-171` | Section 171 — Prevention of injury to public property | section | Preventive action of the police | No |
-| [~] Catalog | `s-172` | Section 172 — Persons bound to conform to lawful directions of police | section | Preventive action of the police | No |
-| [~] Catalog | `s-173` | Section 173 — Information in cognizable cases | section | Information to the police and their powers to investigate | ⭐ Yes |
-| [~] Catalog | `s-174` | Section 174 — Information as to non-cognizable cases and investigation of such cases | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-175` | Section 175 — Police officer’s power to investigate cognizable case | section | Information to the police and their powers to investigate | ⭐ Yes |
-| [~] Catalog | `s-176` | Section 176 — Procedure for investigation | section | Information to the police and their powers to investigate | ⭐ Yes |
-| [~] Catalog | `s-177` | Section 177 — Report how submitted | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-178` | Section 178 — Power to hold investigation or preliminary inquiry | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-179` | Section 179 — Police officer’s power to require attendance of witnesses | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-180` | Section 180 — Examination of witnesses by police | section | Information to the police and their powers to investigate | ⭐ Yes |
-| [~] Catalog | `s-181` | Section 181 — Statements to police and use thereof | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-182` | Section 182 — No inducement to be offered | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-183` | Section 183 — Recording of confessions and statements | section | Information to the police and their powers to investigate | ⭐ Yes |
-| [~] Catalog | `s-184` | Section 184 — Medical examination of victim of rape | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-185` | Section 185 — Search by police officer | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-186` | Section 186 — When officer in charge of police station may require another to issue search- warrant | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-187` | Section 187 — Procedure when investigation cannot be completed in twenty four hours | section | Information to the police and their powers to investigate | ⭐ Yes |
-| [~] Catalog | `s-188` | Section 188 — Report of investigation by subordinate police officer | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-171` | Section 171 — Prevention of injury to public property | section | Preventive action of the police | No |
+| [x] Complete | `s-172` | Section 172 — Persons bound to conform to lawful directions of police | section | Preventive action of the police | No |
+| [x] Complete | `s-173` | Section 173 — Information in cognizable cases | section | Information to the police and their powers to investigate | ⭐ Yes |
+| [x] Complete | `s-174` | Section 174 — Information as to non-cognizable cases and investigation of such cases | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-175` | Section 175 — Police officer’s power to investigate cognizable case | section | Information to the police and their powers to investigate | ⭐ Yes |
+| [x] Complete | `s-176` | Section 176 — Procedure for investigation | section | Information to the police and their powers to investigate | ⭐ Yes |
+| [x] Complete | `s-177` | Section 177 — Report how submitted | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-178` | Section 178 — Power to hold investigation or preliminary inquiry | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-179` | Section 179 — Police officer’s power to require attendance of witnesses | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-180` | Section 180 — Examination of witnesses by police | section | Information to the police and their powers to investigate | ⭐ Yes |
+| [x] Complete | `s-181` | Section 181 — Statements to police and use thereof | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-182` | Section 182 — No inducement to be offered | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-183` | Section 183 — Recording of confessions and statements | section | Information to the police and their powers to investigate | ⭐ Yes |
+| [x] Complete | `s-184` | Section 184 — Medical examination of victim of rape | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-185` | Section 185 — Search by police officer | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-186` | Section 186 — When officer in charge of police station may require another to issue search- warrant | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-187` | Section 187 — Procedure when investigation cannot be completed in twenty four hours | section | Information to the police and their powers to investigate | ⭐ Yes |
+| [x] Complete | `s-188` | Section 188 — Report of investigation by subordinate police officer | section | Information to the police and their powers to investigate | No |
 | [~] Catalog | `s-189` | Section 189 — Release of accused when evidence deficient | section | Information to the police and their powers to investigate | No |
 | [~] Catalog | `s-190` | Section 190 — Cases to be sent to Magistrate, when evidence is sufficient | section | Information to the police and their powers to investigate | No |
 | [~] Catalog | `s-191` | Section 191 — Complainant and witnesses not to be required to accompany police officer and not to be subject to restraint | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-192` | Section 192 — Diary of proceedings in investigation | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-193` | Section 193 — Report of police officer on completion of investigation | section | Information to the police and their powers to investigate | ⭐ Yes |
+| [x] Complete | `s-192` | Section 192 — Diary of proceedings in investigation | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-193` | Section 193 — Report of police officer on completion of investigation | section | Information to the police and their powers to investigate | ⭐ Yes |
 | [~] Catalog | `s-194` | Section 194 — Police to enquire and report on suicide, etc | section | Information to the police and their powers to investigate | No |
 | [~] Catalog | `s-195` | Section 195 — Power to summon persons | section | Information to the police and their powers to investigate | No |
 | [~] Catalog | `s-196` | Section 196 — Inquiry by Magistrate into cause of death | section | Information to the police and their powers to investigate | No |
@@ -835,129 +835,129 @@
 | [~] Catalog | `s-233` | Section 233 — Procedure to be followed when there is a complaint case and police investigation in respect of same offence | section | Commencement of proceedings before Magistrates | No |
 | [~] Catalog | `s-234` | Section 234 — Contents of charge | section | The charge | ⭐ Yes |
 | [~] Catalog | `s-235` | Section 235 — Particulars as to time, place and person | section | The charge | No |
-| [~] Catalog | `s-236` | Section 236 — When manner of committing offence must be stated | section | The charge | No |
-| [~] Catalog | `s-237` | Section 237 — Words in charge taken in sense of law under which offence is punishable | section | The charge | No |
-| [~] Catalog | `s-238` | Section 238 — Effect of errors | section | The charge | No |
-| [~] Catalog | `s-239` | Section 239 — Court may alter charge | section | The charge | No |
-| [~] Catalog | `s-240` | Section 240 — Recall of witnesses when charge altered | section | The charge | No |
-| [~] Catalog | `s-241` | Section 241 — Separate charges for distinct offences | section | The charge | No |
-| [~] Catalog | `s-242` | Section 242 — Offences of same kind within year may be charged together | section | The charge | No |
-| [~] Catalog | `s-243` | Section 243 — Trial for more than one offence | section | The charge | No |
-| [~] Catalog | `s-244` | Section 244 — Where it is doubtful what offence has been committed | section | The charge | No |
-| [~] Catalog | `s-245` | Section 245 — When offence proved included in offence charged | section | The charge | No |
-| [~] Catalog | `s-246` | Section 246 — What persons may be charged jointly | section | The charge | No |
-| [~] Catalog | `s-247` | Section 247 — Withdrawal of remaining charges on conviction on one of several charges | section | The charge | No |
+| [x] Complete | `s-236` | Section 236 — When manner of committing offence must be stated | section | The charge | No |
+| [x] Complete | `s-237` | Section 237 — Words in charge taken in sense of law under which offence is punishable | section | The charge | No |
+| [x] Complete | `s-238` | Section 238 — Effect of errors | section | The charge | No |
+| [x] Complete | `s-239` | Section 239 — Court may alter charge | section | The charge | No |
+| [x] Complete | `s-240` | Section 240 — Recall of witnesses when charge altered | section | The charge | No |
+| [x] Complete | `s-241` | Section 241 — Separate charges for distinct offences | section | The charge | No |
+| [x] Complete | `s-242` | Section 242 — Offences of same kind within year may be charged together | section | The charge | No |
+| [x] Complete | `s-243` | Section 243 — Trial for more than one offence | section | The charge | No |
+| [x] Complete | `s-244` | Section 244 — Where it is doubtful what offence has been committed | section | The charge | No |
+| [x] Complete | `s-245` | Section 245 — When offence proved included in offence charged | section | The charge | No |
+| [x] Complete | `s-246` | Section 246 — What persons may be charged jointly | section | The charge | No |
+| [x] Complete | `s-247` | Section 247 — Withdrawal of remaining charges on conviction on one of several charges | section | The charge | No |
 | [~] Catalog | `s-248` | Section 248 — Trial to be conducted by Public Prosecutor | section | Trial before a Court of Session | No |
-| [~] Catalog | `s-249` | Section 249 — Opening case for prosecution | section | Trial before a Court of Session | No |
-| [~] Catalog | `s-250` | Section 250 — Discharge | section | Trial before a Court of Session | ⭐ Yes |
-| [~] Catalog | `s-251` | Section 251 — Framing of charge | section | Trial before a Court of Session | ⭐ Yes |
-| [~] Catalog | `s-252` | Section 252 — Conviction on plea of guilty | section | Trial before a Court of Session | No |
-| [~] Catalog | `s-253` | Section 253 — Date for prosecution evidence | section | Trial before a Court of Session | No |
-| [~] Catalog | `s-254` | Section 254 — Evidence for prosecution | section | Trial before a Court of Session | No |
-| [~] Catalog | `s-255` | Section 255 — Acquittal | section | Trial before a Court of Session | No |
-| [~] Catalog | `s-256` | Section 256 — Entering upon defence | section | Trial before a Court of Session | No |
-| [~] Catalog | `s-257` | Section 257 — Arguments | section | Trial before a Court of Session | No |
-| [~] Catalog | `s-258` | Section 258 — Judgment of acquittal or conviction | section | Trial before a Court of Session | No |
-| [~] Catalog | `s-259` | Section 259 — Previous conviction | section | Trial before a Court of Session | No |
-| [~] Catalog | `s-260` | Section 260 — Procedure in cases instituted under sub-section (2) of section 222 | section | Trial before a Court of Session | No |
-| [~] Catalog | `s-261` | Section 261 — Compliance with section 230 | section | Trial of warrant-cases by Magistrates | No |
-| [~] Catalog | `s-262` | Section 262 — When accused shall be discharged | section | Trial of warrant-cases by Magistrates | ⭐ Yes |
-| [~] Catalog | `s-263` | Section 263 — Framing of charge | section | Trial of warrant-cases by Magistrates | ⭐ Yes |
-| [~] Catalog | `s-264` | Section 264 — Conviction on plea of guilty | section | Trial of warrant-cases by Magistrates | No |
-| [~] Catalog | `s-265` | Section 265 — Evidence for prosecution | section | Trial of warrant-cases by Magistrates | No |
-| [~] Catalog | `s-266` | Section 266 — Evidence for defence | section | Trial of warrant-cases by Magistrates | No |
-| [~] Catalog | `s-267` | Section 267 — Evidence for prosecution | section | Trial of warrant-cases by Magistrates | No |
-| [~] Catalog | `s-268` | Section 268 — When accused shall be discharged | section | Trial of warrant-cases by Magistrates | No |
-| [~] Catalog | `s-269` | Section 269 — Procedure where accused is not discharged | section | Trial of warrant-cases by Magistrates | No |
-| [~] Catalog | `s-270` | Section 270 — Evidence for defence | section | Trial of warrant-cases by Magistrates | No |
-| [~] Catalog | `s-271` | Section 271 — Acquittal or conviction | section | Trial of warrant-cases by Magistrates | No |
-| [~] Catalog | `s-272` | Section 272 — Absence of complainant | section | Trial of warrant-cases by Magistrates | No |
-| [~] Catalog | `s-273` | Section 273 — Compensation for accusation without reasonable cause | section | Trial of warrant-cases by Magistrates | No |
-| [~] Catalog | `s-274` | Section 274 — Substance of accusation to be stated | section | Trial of summons-cases by Magistrates | No |
-| [~] Catalog | `s-275` | Section 275 — Conviction on plea of guilty | section | Trial of summons-cases by Magistrates | No |
-| [~] Catalog | `s-276` | Section 276 — Conviction on plea of guilty in absence of accused in petty cases | section | Trial of summons-cases by Magistrates | No |
-| [~] Catalog | `s-277` | Section 277 — Procedure when not convicted | section | Trial of summons-cases by Magistrates | No |
-| [~] Catalog | `s-278` | Section 278 — Acquittal or conviction | section | Trial of summons-cases by Magistrates | No |
-| [~] Catalog | `s-279` | Section 279 — Non-appearance or death of complainant | section | Trial of summons-cases by Magistrates | No |
-| [~] Catalog | `s-280` | Section 280 — Withdrawal of complaint | section | Trial of summons-cases by Magistrates | No |
-| [~] Catalog | `s-281` | Section 281 — Power to stop proceedings in certain cases | section | Trial of summons-cases by Magistrates | No |
-| [~] Catalog | `s-282` | Section 282 — Power of Court to convert summons-cases into warrant-cases | section | Trial of summons-cases by Magistrates | No |
-| [~] Catalog | `s-283` | Section 283 — Power to try summarily | section | Summary trials | No |
-| [~] Catalog | `s-284` | Section 284 — Summary trial by Magistrate of second class | section | Summary trials | No |
-| [~] Catalog | `s-285` | Section 285 — Procedure for summary trials | section | Summary trials | No |
-| [~] Catalog | `s-286` | Section 286 — Record in summary trials | section | Summary trials | No |
-| [~] Catalog | `s-287` | Section 287 — Judgment in cases tried summarily | section | Summary trials | No |
-| [~] Catalog | `s-288` | Section 288 — Language of record and judgment | section | Summary trials | No |
-| [~] Catalog | `s-289` | Section 289 — Application of Chapter | section | Plea bargaining | No |
-| [~] Catalog | `s-290` | Section 290 — Application for plea bargaining | section | Plea bargaining | No |
-| [~] Catalog | `s-291` | Section 291 — Guidelines for mutually satisfactory disposition | section | Plea bargaining | No |
-| [~] Catalog | `s-292` | Section 292 — Report of mutually satisfactory disposition to be submitted before Court | section | Plea bargaining | No |
-| [~] Catalog | `s-293` | Section 293 — Disposal of case | section | Plea bargaining | No |
-| [~] Catalog | `s-294` | Section 294 — Judgment of Court | section | Plea bargaining | No |
-| [~] Catalog | `s-295` | Section 295 — Finality of judgment | section | Plea bargaining | No |
-| [~] Catalog | `s-296` | Section 296 — Power of Court in plea bargaining | section | Plea bargaining | No |
-| [~] Catalog | `s-297` | Section 297 — Period of detention undergone by accused to be set off against sentence of imprisonment | section | Plea bargaining | No |
-| [~] Catalog | `s-298` | Section 298 — Savings | section | Plea bargaining | No |
-| [~] Catalog | `s-299` | Section 299 — Statements of accused not to be used | section | Plea bargaining | No |
-| [~] Catalog | `s-300` | Section 300 — Non-application of Chapter | section | Plea bargaining | No |
-| [~] Catalog | `s-301` | Section 301 — Definitions | section | Attendance of persons confined or detained in prisons | No |
-| [~] Catalog | `s-302` | Section 302 — Power to require attendance of prisoners | section | Attendance of persons confined or detained in prisons | No |
+| [x] Complete | `s-249` | Section 249 — Opening case for prosecution | section | Trial before a Court of Session | No |
+| [x] Complete | `s-250` | Section 250 — Discharge | section | Trial before a Court of Session | ⭐ Yes |
+| [x] Complete | `s-251` | Section 251 — Framing of charge | section | Trial before a Court of Session | ⭐ Yes |
+| [x] Complete | `s-252` | Section 252 — Conviction on plea of guilty | section | Trial before a Court of Session | No |
+| [x] Complete | `s-253` | Section 253 — Date for prosecution evidence | section | Trial before a Court of Session | No |
+| [x] Complete | `s-254` | Section 254 — Evidence for prosecution | section | Trial before a Court of Session | No |
+| [x] Complete | `s-255` | Section 255 — Acquittal | section | Trial before a Court of Session | No |
+| [x] Complete | `s-256` | Section 256 — Entering upon defence | section | Trial before a Court of Session | No |
+| [x] Complete | `s-257` | Section 257 — Arguments | section | Trial before a Court of Session | No |
+| [x] Complete | `s-258` | Section 258 — Judgment of acquittal or conviction | section | Trial before a Court of Session | No |
+| [x] Complete | `s-259` | Section 259 — Previous conviction | section | Trial before a Court of Session | No |
+| [x] Complete | `s-260` | Section 260 — Procedure in cases instituted under sub-section (2) of section 222 | section | Trial before a Court of Session | No |
+| [x] Complete | `s-261` | Section 261 — Compliance with section 230 | section | Trial of warrant-cases by Magistrates | No |
+| [x] Complete | `s-262` | Section 262 — When accused shall be discharged | section | Trial of warrant-cases by Magistrates | ⭐ Yes |
+| [x] Complete | `s-263` | Section 263 — Framing of charge | section | Trial of warrant-cases by Magistrates | ⭐ Yes |
+| [x] Complete | `s-264` | Section 264 — Conviction on plea of guilty | section | Trial of warrant-cases by Magistrates | No |
+| [x] Complete | `s-265` | Section 265 — Evidence for prosecution | section | Trial of warrant-cases by Magistrates | No |
+| [x] Complete | `s-266` | Section 266 — Evidence for defence | section | Trial of warrant-cases by Magistrates | No |
+| [x] Complete | `s-267` | Section 267 — Evidence for prosecution | section | Trial of warrant-cases by Magistrates | No |
+| [x] Complete | `s-268` | Section 268 — When accused shall be discharged | section | Trial of warrant-cases by Magistrates | No |
+| [x] Complete | `s-269` | Section 269 — Procedure where accused is not discharged | section | Trial of warrant-cases by Magistrates | No |
+| [x] Complete | `s-270` | Section 270 — Evidence for defence | section | Trial of warrant-cases by Magistrates | No |
+| [x] Complete | `s-271` | Section 271 — Acquittal or conviction | section | Trial of warrant-cases by Magistrates | No |
+| [x] Complete | `s-272` | Section 272 — Absence of complainant | section | Trial of warrant-cases by Magistrates | No |
+| [x] Complete | `s-273` | Section 273 — Compensation for accusation without reasonable cause | section | Trial of warrant-cases by Magistrates | No |
+| [x] Complete | `s-274` | Section 274 — Substance of accusation to be stated | section | Trial of summons-cases by Magistrates | No |
+| [x] Complete | `s-275` | Section 275 — Conviction on plea of guilty | section | Trial of summons-cases by Magistrates | No |
+| [x] Complete | `s-276` | Section 276 — Conviction on plea of guilty in absence of accused in petty cases | section | Trial of summons-cases by Magistrates | No |
+| [x] Complete | `s-277` | Section 277 — Procedure when not convicted | section | Trial of summons-cases by Magistrates | No |
+| [x] Complete | `s-278` | Section 278 — Acquittal or conviction | section | Trial of summons-cases by Magistrates | No |
+| [x] Complete | `s-279` | Section 279 — Non-appearance or death of complainant | section | Trial of summons-cases by Magistrates | No |
+| [x] Complete | `s-280` | Section 280 — Withdrawal of complaint | section | Trial of summons-cases by Magistrates | No |
+| [x] Complete | `s-281` | Section 281 — Power to stop proceedings in certain cases | section | Trial of summons-cases by Magistrates | No |
+| [x] Complete | `s-282` | Section 282 — Power of Court to convert summons-cases into warrant-cases | section | Trial of summons-cases by Magistrates | No |
+| [x] Complete | `s-283` | Section 283 — Power to try summarily | section | Summary trials | No |
+| [x] Complete | `s-284` | Section 284 — Summary trial by Magistrate of second class | section | Summary trials | No |
+| [x] Complete | `s-285` | Section 285 — Procedure for summary trials | section | Summary trials | No |
+| [x] Complete | `s-286` | Section 286 — Record in summary trials | section | Summary trials | No |
+| [x] Complete | `s-287` | Section 287 — Judgment in cases tried summarily | section | Summary trials | No |
+| [x] Complete | `s-288` | Section 288 — Language of record and judgment | section | Summary trials | No |
+| [x] Complete | `s-289` | Section 289 — Application of Chapter | section | Plea bargaining | No |
+| [x] Complete | `s-290` | Section 290 — Application for plea bargaining | section | Plea bargaining | No |
+| [x] Complete | `s-291` | Section 291 — Guidelines for mutually satisfactory disposition | section | Plea bargaining | No |
+| [x] Complete | `s-292` | Section 292 — Report of mutually satisfactory disposition to be submitted before Court | section | Plea bargaining | No |
+| [x] Complete | `s-293` | Section 293 — Disposal of case | section | Plea bargaining | No |
+| [x] Complete | `s-294` | Section 294 — Judgment of Court | section | Plea bargaining | No |
+| [x] Complete | `s-295` | Section 295 — Finality of judgment | section | Plea bargaining | No |
+| [x] Complete | `s-296` | Section 296 — Power of Court in plea bargaining | section | Plea bargaining | No |
+| [x] Complete | `s-297` | Section 297 — Period of detention undergone by accused to be set off against sentence of imprisonment | section | Plea bargaining | No |
+| [x] Complete | `s-298` | Section 298 — Savings | section | Plea bargaining | No |
+| [x] Complete | `s-299` | Section 299 — Statements of accused not to be used | section | Plea bargaining | No |
+| [x] Complete | `s-300` | Section 300 — Non-application of Chapter | section | Plea bargaining | No |
+| [x] Complete | `s-301` | Section 301 — Definitions | section | Attendance of persons confined or detained in prisons | No |
+| [x] Complete | `s-302` | Section 302 — Power to require attendance of prisoners | section | Attendance of persons confined or detained in prisons | No |
 | [~] Catalog | `s-303` | Section 303 — Power of State Government or Central Government to exclude certain persons from operation of section 302 | section | Attendance of persons confined or detained in prisons | No |
 | [~] Catalog | `s-304` | Section 304 — Officer in charge of prison to abstain from carrying out order in certain contingencies | section | Attendance of persons confined or detained in prisons | No |
-| [~] Catalog | `s-305` | Section 305 — Prisoner to be brought to Court in custody | section | Attendance of persons confined or detained in prisons | No |
-| [~] Catalog | `s-306` | Section 306 — Power to issue commission for examination of witness in prison | section | Attendance of persons confined or detained in prisons | No |
-| [~] Catalog | `s-307` | Section 307 — Language of Courts | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-305` | Section 305 — Prisoner to be brought to Court in custody | section | Attendance of persons confined or detained in prisons | No |
+| [x] Complete | `s-306` | Section 306 — Power to issue commission for examination of witness in prison | section | Attendance of persons confined or detained in prisons | No |
+| [x] Complete | `s-307` | Section 307 — Language of Courts | section | Evidence in inquiries and trials | No |
 | [~] Catalog | `s-308` | Section 308 — Evidence to be taken in presence of accused | section | Evidence in inquiries and trials | No |
 | [~] Catalog | `s-309` | Section 309 — Record in summons-cases and inquiries | section | Evidence in inquiries and trials | No |
 | [~] Catalog | `s-310` | Section 310 — Record in warrant-cases | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-311` | Section 311 — Record in trial before Court of Session | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-312` | Section 312 — Language of record of evidence | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-313` | Section 313 — Procedure in regard to such evidence when completed | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-314` | Section 314 — Interpretation of evidence to accused or his advocate | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-315` | Section 315 — Remarks respecting demeanour of witness | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-316` | Section 316 — Record of examination of accused | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-317` | Section 317 — Interpreter to be bound to interpret truthfully | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-311` | Section 311 — Record in trial before Court of Session | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-312` | Section 312 — Language of record of evidence | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-313` | Section 313 — Procedure in regard to such evidence when completed | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-314` | Section 314 — Interpretation of evidence to accused or his advocate | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-315` | Section 315 — Remarks respecting demeanour of witness | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-316` | Section 316 — Record of examination of accused | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-317` | Section 317 — Interpreter to be bound to interpret truthfully | section | Evidence in inquiries and trials | No |
 | [~] Catalog | `s-318` | Section 318 — Record in High Court | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-319` | Section 319 — When attendance of witness may be dispensed with and commission issued | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-320` | Section 320 — Commission to whom to be issued | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-321` | Section 321 — Execution of commissions | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-322` | Section 322 — Parties may examine witnesses | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-323` | Section 323 — Return of commission | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-319` | Section 319 — When attendance of witness may be dispensed with and commission issued | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-320` | Section 320 — Commission to whom to be issued | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-321` | Section 321 — Execution of commissions | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-322` | Section 322 — Parties may examine witnesses | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-323` | Section 323 — Return of commission | section | Evidence in inquiries and trials | No |
 | [~] Catalog | `s-324` | Section 324 — Adjournment of proceeding | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-325` | Section 325 — Execution of foreign commissions | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-326` | Section 326 — Deposition of medical witness | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-327` | Section 327 — Identification report of Magistrate | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-328` | Section 328 — Evidence of officers of Mint | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-325` | Section 325 — Execution of foreign commissions | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-326` | Section 326 — Deposition of medical witness | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-327` | Section 327 — Identification report of Magistrate | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-328` | Section 328 — Evidence of officers of Mint | section | Evidence in inquiries and trials | No |
 | [~] Catalog | `s-329` | Section 329 — Reports of certain Government scientific experts | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-330` | Section 330 — No formal proof of certain documents | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-331` | Section 331 — Affidavit in proof of conduct of public servants | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-332` | Section 332 — Evidence of formal character on affidavit | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-333` | Section 333 — Authorities before whom affidavits may be sworn | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-334` | Section 334 — Previous conviction or acquittal how proved | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-335` | Section 335 — Record of evidence in absence of accused | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-336` | Section 336 — Evidence of public servants, experts, police officers in certain cases | section | Evidence in inquiries and trials | No |
-| [~] Catalog | `s-337` | Section 337 — Person once convicted or acquitted not to be tried for same offence | section | General provisions as to inquiries and trials | No |
-| [~] Catalog | `s-338` | Section 338 — Appearance by Public Prosecutors | section | General provisions as to inquiries and trials | No |
-| [~] Catalog | `s-339` | Section 339 — Permission to conduct prosecution | section | General provisions as to inquiries and trials | No |
+| [x] Complete | `s-330` | Section 330 — No formal proof of certain documents | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-331` | Section 331 — Affidavit in proof of conduct of public servants | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-332` | Section 332 — Evidence of formal character on affidavit | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-333` | Section 333 — Authorities before whom affidavits may be sworn | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-334` | Section 334 — Previous conviction or acquittal how proved | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-335` | Section 335 — Record of evidence in absence of accused | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-336` | Section 336 — Evidence of public servants, experts, police officers in certain cases | section | Evidence in inquiries and trials | No |
+| [x] Complete | `s-337` | Section 337 — Person once convicted or acquitted not to be tried for same offence | section | General provisions as to inquiries and trials | No |
+| [x] Complete | `s-338` | Section 338 — Appearance by Public Prosecutors | section | General provisions as to inquiries and trials | No |
+| [x] Complete | `s-339` | Section 339 — Permission to conduct prosecution | section | General provisions as to inquiries and trials | No |
 | [~] Catalog | `s-340` | Section 340 — Right of person against whom proceedings are instituted to be defended | section | General provisions as to inquiries and trials | No |
-| [~] Catalog | `s-341` | Section 341 — Legal aid to accused at State expense in certain cases | section | General provisions as to inquiries and trials | No |
-| [~] Catalog | `s-342` | Section 342 — Procedure when corporation or registered society is an accused | section | General provisions as to inquiries and trials | No |
-| [~] Catalog | `s-343` | Section 343 — Tender of pardon to accomplice | section | General provisions as to inquiries and trials | No |
-| [~] Catalog | `s-344` | Section 344 — Power to direct tender of pardon | section | General provisions as to inquiries and trials | No |
-| [~] Catalog | `s-345` | Section 345 — Trial of person not complying with conditions of pardon | section | General provisions as to inquiries and trials | No |
-| [~] Catalog | `s-346` | Section 346 — Power to postpone or adjourn proceedings | section | General provisions as to inquiries and trials | ⭐ Yes |
-| [~] Catalog | `s-347` | Section 347 — Local inspection | section | General provisions as to inquiries and trials | No |
-| [~] Catalog | `s-348` | Section 348 — Power to summon material witness, or examine person present | section | General provisions as to inquiries and trials | No |
-| [~] Catalog | `s-349` | Section 349 — Power of Magistrate to order person to give specimen signatures or handwriting, etc | section | General provisions as to inquiries and trials | No |
-| [~] Catalog | `s-350` | Section 350 — Expenses of complainants and witnesses | section | General provisions as to inquiries and trials | No |
+| [x] Complete | `s-341` | Section 341 — Legal aid to accused at State expense in certain cases | section | General provisions as to inquiries and trials | No |
+| [x] Complete | `s-342` | Section 342 — Procedure when corporation or registered society is an accused | section | General provisions as to inquiries and trials | No |
+| [x] Complete | `s-343` | Section 343 — Tender of pardon to accomplice | section | General provisions as to inquiries and trials | No |
+| [x] Complete | `s-344` | Section 344 — Power to direct tender of pardon | section | General provisions as to inquiries and trials | No |
+| [x] Complete | `s-345` | Section 345 — Trial of person not complying with conditions of pardon | section | General provisions as to inquiries and trials | No |
+| [x] Complete | `s-346` | Section 346 — Power to postpone or adjourn proceedings | section | General provisions as to inquiries and trials | ⭐ Yes |
+| [x] Complete | `s-347` | Section 347 — Local inspection | section | General provisions as to inquiries and trials | No |
+| [x] Complete | `s-348` | Section 348 — Power to summon material witness, or examine person present | section | General provisions as to inquiries and trials | No |
+| [x] Complete | `s-349` | Section 349 — Power of Magistrate to order person to give specimen signatures or handwriting, etc | section | General provisions as to inquiries and trials | No |
+| [x] Complete | `s-350` | Section 350 — Expenses of complainants and witnesses | section | General provisions as to inquiries and trials | No |
 | [~] Catalog | `s-351` | Section 351 — Power to examine accused | section | General provisions as to inquiries and trials | No |
-| [~] Catalog | `s-352` | Section 352 — Oral arguments and memorandum of arguments | section | General provisions as to inquiries and trials | No |
+| [x] Complete | `s-352` | Section 352 — Oral arguments and memorandum of arguments | section | General provisions as to inquiries and trials | No |
 | [~] Catalog | `s-353` | Section 353 — Accused person to be competent witness | section | General provisions as to inquiries and trials | No |
-| [~] Catalog | `s-354` | Section 354 — No influence to be used to induce disclosure | section | General provisions as to inquiries and trials | No |
-| [~] Catalog | `s-355` | Section 355 — Provision for inquiries and trial being held in absence of accused in certain cases | section | General provisions as to inquiries and trials | No |
+| [x] Complete | `s-354` | Section 354 — No influence to be used to induce disclosure | section | General provisions as to inquiries and trials | No |
+| [x] Complete | `s-355` | Section 355 — Provision for inquiries and trial being held in absence of accused in certain cases | section | General provisions as to inquiries and trials | No |
 | [~] Catalog | `s-356` | Section 356 — Inquiry, trial or judgment in absentia of proclaimed offender | section | General provisions as to inquiries and trials | No |
-| [~] Catalog | `s-357` | Section 357 — Procedure where accused does not understand proceedings | section | General provisions as to inquiries and trials | No |
-| [~] Catalog | `s-358` | Section 358 — Power to proceed against other persons appearing to be guilty of offence | section | General provisions as to inquiries and trials | No |
+| [x] Complete | `s-357` | Section 357 — Procedure where accused does not understand proceedings | section | General provisions as to inquiries and trials | No |
+| [x] Complete | `s-358` | Section 358 — Power to proceed against other persons appearing to be guilty of offence | section | General provisions as to inquiries and trials | No |
 | [~] Catalog | `s-359` | Section 359 — Compounding of offences | section | General provisions as to inquiries and trials | No |
 | [~] Catalog | `s-360` | Section 360 — Withdrawal from prosecution | section | General provisions as to inquiries and trials | No |
 | [~] Catalog | `s-361` | Section 361 — Procedure in cases which Magistrate cannot dispose of | section | General provisions as to inquiries and trials | No |
@@ -1375,6 +1375,7 @@
 | [~] Catalog | `order-51` | Order LI — Presidency Small Cause Courts | chapter | Small causes | No |
 
 ### Bharatiya Nyaya Sanhita (BNS / IPC) (`bns`)
+> **BNS audit update:** `src/data/topics/bns/` now contains 211 dedicated topic files. The registry contains 368 BNS/IPC catalog topics, leaving 157 catalog topics without dedicated files. Dispatcher high-yield section files `s-64`, `s-103`, `s-111`, and `s-304` have been checked on this branch; the common-intention doctrine is covered by `doctrine-common-intention`. Recent batches add dedicated notes for BNS ss. 52, 53, 56, 58, 59, 60, 65, 67–69, 71–74, 76, 79, 81–84, 86–92, 94, 97–98, 110, 113–114, 116, 119, 121, 123–126, 127–129, 131–136, 138–139, and 141–149.
 - **Priority:** high | **AIBE Weightage:** 8 Questions
 - **Governing Acts:** Bharatiya Nyaya Sanhita, 2023, Indian Penal Code, 1860 (legacy)
 
