@@ -14,7 +14,7 @@
 | Constitutional Law | `constitution` | high | 10 | 523 | 40 | 8% |
 | Criminal Procedure (BNSS / CrPC) | `bnss` | high | 10 | 538 | 7 | 1% |
 | Code of Civil Procedure (CPC) | `cpc` | high | 10 | 235 | 7 | 3% |
-| Bharatiya Nyaya Sanhita (BNS / IPC) | `bns` | high | 8 | 368 | 10 | 3% |
+| Bharatiya Nyaya Sanhita (BNS / IPC) | `bns` | high | 8 | 368 | 121 | 33% |
 | Evidence (BSA / Evidence Act) | `bsa` | high | 8 | 177 | 7 | 4% |
 | Family Law | `family` | high | 8 | 38 | 19 | 50% |
 | Contract, Specific Relief, Property & NI Act | `contract` | high | 8 | 56 | 0 | 0% |
@@ -663,7 +663,7 @@
 | [~] Catalog | `s-61` | Section 61 — Power, on escape, to pursue and retake | section | Arrest of persons | No |
 | [~] Catalog | `s-62` | Section 62 — Arrest to be made strictly according to Sanhita | section | Arrest of persons | No |
 | [~] Catalog | `s-63` | Section 63 — Form of summons | section | Processes to compel appearance | No |
-| [~] Catalog | `s-64` | Section 64 — Summons how served | section | Processes to compel appearance | No |
+| [x] Complete | `s-64` | Section 64 — Summons how served | section | Processes to compel appearance | No |
 | [~] Catalog | `s-65` | Section 65 — Service of summons on corporate bodies, firms, and societies | section | Processes to compel appearance | No |
 | [~] Catalog | `s-66` | Section 66 — Service when persons summoned cannot be found | section | Processes to compel appearance | No |
 | [~] Catalog | `s-67` | Section 67 — Procedure when service cannot be effected as before provided | section | Processes to compel appearance | No |
@@ -702,7 +702,7 @@
 | [~] Catalog | `s-100` | Section 100 — Search for persons wrongfully confined | section | Processes to compel the production of things | No |
 | [~] Catalog | `s-101` | Section 101 — Power to compel restoration of abducted females | section | Processes to compel the production of things | No |
 | [~] Catalog | `s-102` | Section 102 — Direction, etc., of search-warrants | section | Processes to compel the production of things | No |
-| [~] Catalog | `s-103` | Section 103 — Persons in charge of closed place to allow search | section | Processes to compel the production of things | No |
+| [x] Complete | `s-103` | Section 103 — Persons in charge of closed place to allow search | section | Processes to compel the production of things | No |
 | [~] Catalog | `s-104` | Section 104 — Disposal of things found in search beyond jurisdiction | section | Processes to compel the production of things | No |
 | [~] Catalog | `s-105` | Section 105 — Recording of search and seizure through audio-video electronic means | section | Processes to compel the production of things | No |
 | [~] Catalog | `s-106` | Section 106 — Power of police officer to seize certain property | section | Processes to compel the production of things | No |
@@ -710,7 +710,7 @@
 | [~] Catalog | `s-108` | Section 108 — Magistrate may direct search in his presence | section | Processes to compel the production of things | No |
 | [~] Catalog | `s-109` | Section 109 — Power to impound document, etc., produced | section | Processes to compel the production of things | No |
 | [~] Catalog | `s-110` | Section 110 — Reciprocal arrangements regarding processes | section | Processes to compel the production of things | No |
-| [~] Catalog | `s-111` | Section 111 — Definitions | section | Reciprocal arrangements and attachment / forfeiture of property | No |
+| [x] Complete | `s-111` | Section 111 — Definitions | section | Reciprocal arrangements and attachment / forfeiture of property | No |
 | [~] Catalog | `s-112` | Section 112 — Letter of request to competent authority for investigation in a country or place outside India | section | Reciprocal arrangements and attachment / forfeiture of property | No |
 | [~] Catalog | `s-113` | Section 113 — Letter of request from a country or place outside India to a Court or an authority for investigation in India | section | Reciprocal arrangements and attachment / forfeiture of property | No |
 | [~] Catalog | `s-114` | Section 114 — Assistance in securing transfer of persons | section | Reciprocal arrangements and attachment / forfeiture of property | No |
@@ -903,7 +903,7 @@
 | [~] Catalog | `s-301` | Section 301 — Definitions | section | Attendance of persons confined or detained in prisons | No |
 | [~] Catalog | `s-302` | Section 302 — Power to require attendance of prisoners | section | Attendance of persons confined or detained in prisons | No |
 | [~] Catalog | `s-303` | Section 303 — Power of State Government or Central Government to exclude certain persons from operation of section 302 | section | Attendance of persons confined or detained in prisons | No |
-| [~] Catalog | `s-304` | Section 304 — Officer in charge of prison to abstain from carrying out order in certain contingencies | section | Attendance of persons confined or detained in prisons | No |
+| [x] Complete | `s-304` | Section 304 — Officer in charge of prison to abstain from carrying out order in certain contingencies | section | Attendance of persons confined or detained in prisons | No |
 | [~] Catalog | `s-305` | Section 305 — Prisoner to be brought to Court in custody | section | Attendance of persons confined or detained in prisons | No |
 | [~] Catalog | `s-306` | Section 306 — Power to issue commission for examination of witness in prison | section | Attendance of persons confined or detained in prisons | No |
 | [~] Catalog | `s-307` | Section 307 — Language of Courts | section | Evidence in inquiries and trials | No |
@@ -1375,6 +1375,7 @@
 | [~] Catalog | `order-51` | Order LI — Presidency Small Cause Courts | chapter | Small causes | No |
 
 ### Bharatiya Nyaya Sanhita (BNS / IPC) (`bns`)
+> **BNS audit update:** `src/data/topics/bns/` currently contains 121 dedicated topic files. The registry contains 368 BNS/IPC catalog topics, leaving 247 catalog topics without dedicated files. Dispatcher high-yield section files `s-64`, `s-103`, `s-111`, and `s-304` have been checked on this branch; the common-intention doctrine is covered by `doctrine-common-intention`.
 - **Priority:** high | **AIBE Weightage:** 8 Questions
 - **Governing Acts:** Bharatiya Nyaya Sanhita, 2023, Indian Penal Code, 1860 (legacy)
 
