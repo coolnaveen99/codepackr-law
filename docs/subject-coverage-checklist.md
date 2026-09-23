@@ -14,7 +14,7 @@
 | Constitutional Law | `constitution` | high | 10 | 523 | 40 | 8% |
 | Criminal Procedure (BNSS / CrPC) | `bnss` | high | 10 | 538 | 7 | 1% |
 | Code of Civil Procedure (CPC) | `cpc` | high | 10 | 235 | 7 | 3% |
-| Bharatiya Nyaya Sanhita (BNS / IPC) | `bns` | high | 8 | 368 | 121 | 33% |
+| Bharatiya Nyaya Sanhita (BNS / IPC) | `bns` | high | 8 | 368 | 123 | 33% |
 | Evidence (BSA / Evidence Act) | `bsa` | high | 8 | 177 | 7 | 4% |
 | Family Law | `family` | high | 8 | 38 | 19 | 50% |
 | Law of Contracts — Contract I, Contract II, Sale of Goods & Partnership | `contract` | high | 8 | 45 | 45 | 100% |
@@ -31,7 +31,7 @@
 | Cyber Law | `cyber` | low | 2 | 11 | 0 | 0% |
 | Land Laws | `land` | low | 2 | 4 | 0 | 0% |
 | Intellectual Property Rights | `ipr` | low | 2 | 14 | 0 | 0% |
-| **GRAND TOTAL** | - | - | - | **2087** | **208** | **10.0%** |
+| **GRAND TOTAL** | - | - | - | **2087** | **210** | **10.1%** |
 
 ---
 
@@ -1441,8 +1441,8 @@
 | [x] Complete | `s-49` | Section 49 — Punishment of abetment if act abetted is committed in consequence and where no express provision is made for its punishment | section | Abetment | No |
 | [x] Complete | `s-50` | Section 50 — Punishment of abetment if person abetted does act with different intention from that of the abettor | section | Abetment | No |
 | [x] Complete | `s-51` | Section 51 — Liability of abettor when one act abetted and different act done | section | Abetment | No |
-| [~] Catalog | `s-52` | Section 52 — Abettor when liable to cumulative punishment for act abetted and for act done | section | Abetment | No |
-| [~] Catalog | `s-53` | Section 53 — Liability of abettor for an effect caused by act abetted different from that intended by abettor | section | Abetment | No |
+| [x] Complete | `s-52` | Section 52 — Abettor when liable to cumulative punishment for act abetted and for act done | section | Abetment | No |
+| [x] Complete | `s-53` | Section 53 — Liability of abettor for an effect caused by act abetted different from that intended by abettor | section | Abetment | No |
 | [x] Complete | `s-54` | Section 54 — Abettor present when offence is committed | section | Abetment | No |
 | [x] Complete | `s-55` | Section 55 — Abetment of offence punishable with death or imprisonment for life | section | Abetment | No |
 | [~] Catalog | `s-56` | Section 56 — Abetment of offence punishable with imprisonment | section | Abetment | No |
