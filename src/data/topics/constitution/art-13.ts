@@ -1,0 +1,331 @@
+import type { TopicContent } from '../loadTopicContent'
+
+/**
+ * Article 13 — Laws Inconsistent with Fundamental Rights & Judicial Review
+ * Subject: constitution | Topic id: art-13
+ * Judicial Review Architecture, Definition of "Law", Is Constitutional Amendment a "Law"
+ * (Shankari Prasad to Golak Nath and Kesavananda), and Prospective Overruling.
+ */
+const content: TopicContent = {
+  study: `## 1. Constitutional Text & Structural Primacy
+
+Article 13 is the structural engine of Part III and the explicit constitutional fountainhead of **judicial review** in India. It establishes the absolute supremacy of Fundamental Rights over ordinary legislative enactments, executive delegated legislation, and customary practices.
+
+### Textual Architecture:
+- **Article 13(1):** Pre-Constitution laws inconsistent with Fundamental Rights are void to the extent of such inconsistency (anchoring the Doctrine of Eclipse).
+- **Article 13(2):** Imposes an express negative injunction on the State: *"The State shall not make any law which takes away or abridges the rights conferred by this Part and any law made in contravention of this clause shall, to the extent of the contravention, be void"* (anchoring the Still-Born Doctrine and Doctrine of Severability).
+- **Article 13(3):** Provides an expansive, non-exhaustive definition:
+  - *(a) "Law"* includes any Ordinance, order, bye-law, rule, regulation, notification, custom or usage having in the territory of India the force of law;
+  - *(b) "Laws in force"* includes laws passed or made by a Legislature or other competent authority before the commencement of this Constitution and not previously repealed.
+- **Article 13(4):** Inserted by the Constitution (Twenty-Fourth Amendment) Act, 1971: *"Nothing in this article shall apply to any amendment of this Constitution made under article 368."*
+
+---
+
+## 2. Judicial Review: Textual Anchor vs Inherent Common Law
+
+In the United States, the power of judicial review was not expressly stated in the US Constitution; it was deduced by Chief Justice John Marshall in the celebrated decision of *Marbury v. Madison* (1803) as an inherent judicial prerogative.
+
+In contrast, the framers of the Indian Constitution did not leave judicial review to judicial deduction. Dr. B.R. Ambedkar described Article 13 as the most pivotal provision of the Constitution. In *A.K. Gopalan v. State of Madras* (1950), Chief Justice Kania observed that even in the absence of Article 13, courts would possess the power of judicial review, but Article 13 was expressly inserted to place the matter beyond dispute. In *L. Chandra Kumar v. Union of India* (1997), the Supreme Court affirmed that judicial review under Articles 32, 136, and 226/227 forms an inviolable, unalterable component of the **basic structure** of the Constitution.
+
+---
+
+## 3. The Great Constitutional Battle: Is an Amendment a "Law" under Article 13(2)?
+
+The central constitutional conflict of modern Indian history revolved around whether the word **"law"** in Article 13(2) includes a **Constitutional Amendment** enacted under Article 368:
+
+### Phase 1: Ordinary Law vs Constituent Law
+- **Shankari Prasad v. Union of India (1951 SCR 89):** A 5-judge Constitution Bench held that the word "law" in Article 13(2) refers only to ordinary legislative laws enacted in exercise of legislative power, not to amendments enacted in exercise of **constituent power** under Article 368. Therefore, Parliament could amend and abridge Fundamental Rights.
+- **Sajjan Singh v. State of Rajasthan (1965 1 SCR 933):** A 5-judge Bench affirmed *Shankari Prasad*. However, Justice Hidayatullah and Justice Mudholkar delivered prophetic doubts, questioning whether Fundamental Rights were mere playthings of a parliamentary majority.
+
+### Phase 2: The Radical Inversion in *Golak Nath*
+- **I.C. Golak Nath v. State of Punjab (AIR 1967 SC 1643):** An 11-judge Constitution Bench, by a narrow 6:5 majority led by Subba Rao C.J., **overruled** *Shankari Prasad* and *Sajjan Singh*.
+- The majority held:
+  1. Article 368 merely contained the *procedure* for amendment, not the substantive *power* to amend (which was derived from residuary power under Entry 97, List I).
+  2. An amendment under Article 368 is a "law" within the meaning of Article 13(2).
+  3. Consequently, Parliament has no power from the date of the judgment to take away or abridge any of the Fundamental Rights in Part III.
+
+### Phase 3: The 24th Amendment and *Kesavananda Bharati*
+- To nullify *Golak Nath*, Parliament passed the **Constitution (Twenty-Fourth Amendment) Act, 1971**, inserting clause (4) into Article 13 and clause (3) into Article 368, declaring that Article 13 shall not apply to amendments made under Article 368.
+- **Kesavananda Bharati v. State of Kerala (1973) 4 SCC 225:** A 13-judge Constitution Bench overruled *Golak Nath*:
+  1. Upheld the validity of the 24th Amendment and Article 13(4).
+  2. Affirmed that constituent power under Article 368 is distinct from ordinary legislative power under Article 13(2); hence, "law" in Article 13(2) does **not** include a constitutional amendment.
+  3. **The Masterstroke:** The Court held that while an amendment cannot be challenged under Article 13(2), it is subject to the **Basic Structure Doctrine**. Parliament cannot exercise constituent power to abrogate the foundational features of the Constitution.
+
+---
+
+## 4. The Scope of "Law" under Article 13(3): Custom, Usage, and Personal Laws
+
+Under Article 13(3)(a), "law" covers not only legislative Acts, but executive Ordinances, statutory rules, regulations, notifications, and **customs or usages having the force of law**.
+
+### The Controversy over Uncodified Personal Laws
+In *State of Bombay v. Narasu Appa Mali* (AIR 1952 Bom 84), Chagla C.J. and Gajendragadkar J. held that uncodified personal laws (such as Hindu and Muslim personal laws) are not covered by the definition of "law" or "laws in force" under Article 13, and could not be tested against Fundamental Rights.
+- **Modern Erosion of Narasu Appa Mali:** The Supreme Court has increasingly brought religious customs and personal laws under constitutional scrutiny:
+  - In *Shayara Bano v. Union of India* (2017), the practice of Talaq-e-Biddat (instant triple talaq) was struck down as manifestly arbitrary under Article 14.
+  - In *Indian Young Lawyers Association (Sabarimala)* (2018), Justices Chandrachud and Nariman held that customary practices excluding women from places of worship are "laws" within Article 13(3)(b) and must yield to Articles 14, 15, and 21.
+
+---
+
+## 5. The Doctrine of Prospective Overruling
+
+Borrowed from American jurisprudence (*Great Northern Railway v. Sunburst Oil*), the **Doctrine of Prospective Overruling** was introduced into Indian constitutional law by Subba Rao C.J. in *Golak Nath* (1967):
+- When a court overrules an earlier binding precedent, the new declaration of law operates **only prospectively into the future**, without invalidating acts done, property acquired, or amendments passed under the old legal doctrine.
+- **Application Guidelines:**
+  1. The doctrine can be invoked **only by the Supreme Court of India**, not by High Courts or subordinate courts.
+  2. It can be applied in constitutional or statutory matters to avoid reopening settled transactions and causing public chaos.
+  3. It represents a pragmatic judicial device reconciling constitutional reform with legal certainty (*India Cement Ltd. v. State of Tamil Nadu*, 1990).`,
+
+  sections: [
+    {
+      id: 'art13-text-structure',
+      title: 'Structural Role & The Explicit Mandate of Judicial Review',
+      order: 1,
+      content: [
+        'Article 13 is the textual guardian of Part III, declaring all laws inconsistent with Fundamental Rights void.',
+        'Article 13(1) governs pre-Constitution laws (eclipse); Article 13(2) prohibits post-Constitution abridgments (severability/still-born).',
+        'Article 13(3) defines "law" broadly to include delegated legislation, executive notifications, and customs having the force of law.',
+      ],
+    },
+    {
+      id: 'art13-amendment-battle',
+      title: 'Is a Constitutional Amendment "Law"? (Shankari Prasad to Kesavananda)',
+      order: 2,
+      content: [
+        'Shankari Prasad (1951) and Sajjan Singh (1965) held Art 13(2) covers only ordinary law, not Art 368 constituent power.',
+        'Golak Nath (1967) overruled them, holding amendments are "law" and Parliament cannot abridge Part III.',
+        'The 24th Amendment 1971 added Art 13(4). Kesavananda Bharati (1973) upheld Art 13(4) but created the Basic Structure Doctrine.',
+      ],
+    },
+    {
+      id: 'art13-personal-laws',
+      title: 'Personal Laws, Customs & The Dilution of Narasu Appa Mali',
+      order: 3,
+      content: [
+        'Narasu Appa Mali (1952) excluded uncodified personal laws from Article 13.',
+        'Modern jurisprudence (Shayara Bano, Sabarimala) brings religious practices and customs under Articles 14, 15, and 21 scrutiny.',
+      ],
+    },
+    {
+      id: 'art13-prospective-overruling',
+      title: 'The Doctrine of Prospective Overruling',
+      order: 4,
+      content: [
+        'Evolved in Golak Nath to prevent retroactive chaos after overturning 16 years of amendment jurisprudence.',
+        'Can be invoked solely by the Supreme Court to preserve past settled rights while mandating new constitutional standards.',
+      ],
+    },
+  ],
+
+  provisions: [
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-13', article: 'Article 13', title: 'Laws inconsistent with or in derogation of the Fundamental Rights' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-32', article: 'Article 32', title: 'Remedies for enforcement of rights conferred by this Part' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-226', article: 'Article 226', title: 'Power of High Courts to issue certain writs' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-368', article: 'Article 368', title: 'Power of Parliament to amend the Constitution and procedure therefor' },
+  ],
+
+  examples: [
+    {
+      id: 'art13-delegated-legislation-example',
+      title: 'Executive Notification as "Law" under Article 13(3)',
+      description: 'The Ministry of Information issues an executive order / statutory notification under the Telegraph Act directing the blocking of a news website without notice or an opportunity to be heard. Under Article 13(3)(a), executive orders and notifications are "law". Because the notification violates Articles 14 and 19(1)(a), it is void under Article 13(2) and will be quashed by the court.',
+    },
+    {
+      id: 'art13-custom-sabarimala-example',
+      title: 'Customary Exclusion of Women as "Law" (Sabarimala)',
+      description: 'Rule 3(b) of the Kerala Hindu Places of Public Worship Rules, 1965 permitted the exclusion of women aged 10–50 based on customary temple usage. The Supreme Court in Indian Young Lawyers Association (2018) held that customary practices having the force of law under Article 13(3)(b) must strictly yield to Articles 14, 15, and 21, striking down the discriminatory exclusion.',
+    },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'art13-hypo-1',
+      title: 'The Retrospective Tax Amendment and Prospective Overruling Challenge',
+      scenario: 'In 2020, the Supreme Court struck down a State mining cess as unconstitutional under Article 246. In 2024, a 9-judge Constitution Bench overrules that 2020 decision and holds that States possess inherent constitutional power to tax mineral rights. The mining companies argue that if the 2024 ruling operates retrospectively, it will impose crippling tax liabilities spanning two decades, bankrupting core industries. The companies pray for prospective overruling. Decide whether the Supreme Court can grant this prayer and on what principles.',
+      analysis: '1. Jurisdiction to Invoke Prospective Overruling: Under Golak Nath and India Cement, the Supreme Court possesses exclusive constitutional jurisdiction to apply the Doctrine of Prospective Overruling in the exercise of its plenary powers under Article 142. 2. Criteria for Invocation: The doctrine applies where: (a) an established interpretation is overturned; (b) retroactive application would cause disproportionate economic dislocation, chaos, or reopen settled commercial transactions; and (c) public interest requires legal certainty. 3. Conclusion: The Supreme Court can declare that the mining tax ruling will operate only prospectively from the date of the judgment (or a prospective cutoff date), relieving companies of crushing historical arrears while preserving the State\'s constitutional taxing power for the future.',
+    },
+  ],
+
+  distinctions: [
+    {
+      conceptA: 'Article 13(1) (Pre-Constitution Laws)',
+      conceptB: 'Article 13(2) (Post-Constitution Laws)',
+      points: [
+        'Applies to laws enacted prior to 26 January 1950.',
+        'Applies to laws enacted on or after 26 January 1950.',
+        'Inconsistency renders the law dormant/eclipsed (Bhikaji).',
+        'Contravention renders the law still-born and void ab initio against citizens (Deep Chand).',
+        'Operates prospectively without invalidating past pre-1950 acts (Keshavan Madhava Menon).',
+        'Imposes an absolute constitutional prohibition upon the legislature.',
+      ],
+    },
+    {
+      conceptA: 'Ordinary Legislative Law (Art 13(2))',
+      conceptB: 'Constituent Amending Law (Art 368)',
+      points: [
+        'Enacted by Parliament or State Legislatures under Seventh Schedule legislative entries.',
+        'Enacted by Parliament exercising constituent sovereign power under Article 368.',
+        'Tested for constitutionality directly under Article 13(2) against Part III.',
+        'Exempted from Article 13(2) by Article 13(4); tested exclusively against the Basic Structure Doctrine (Kesavananda).',
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      misconception: 'The Supreme Court can strike down a Constitutional Amendment under Article 13(2) for violating Fundamental Rights.',
+      correction: 'Under Article 13(4) (upheld in Kesavananda Bharati), a constitutional amendment cannot be challenged under Article 13(2). It can only be challenged if it violates the Basic Structure Doctrine.',
+    },
+    {
+      misconception: 'High Courts have the power to apply the Doctrine of Prospective Overruling to save state statutes.',
+      correction: 'The Supreme Court in Golak Nath and subsequent cases has repeatedly held that the power of prospective overruling is an exceptional sovereign power vested exclusively in the Supreme Court of India.',
+    },
+  ],
+
+  questionsAndAnswers: [
+    {
+      id: 'art13-qa-10m',
+      marks: 10,
+      question: 'Examine the scope of "law" and "laws in force" under Article 13(3) of the Constitution. Does the term "law" in Article 13(2) include an amendment of the Constitution made under Article 368?',
+      answer: `### 1. Synopsis / Introduction
+Article 13 is the cornerstone of constitutional review in India, ensuring that no legislative, executive, or customary rule violative of Fundamental Rights can survive. Article 13(3) gives an expansive definition of "law", while the question whether an amendment of the Constitution is a "law" under Article 13(2) has been the central constitutional debate in Indian legal history.
+
+---
+
+### 2. Definition of "Law" and "Laws in Force" under Article 13(3)
+Article 13(3) defines:
+- **"Law" (Art 13(3)(a)):** Includes any Ordinance, order, bye-law, rule, regulation, notification, custom, or usage having in the territory of India the force of law. It encompasses both primary legislation and delegated executive legislation, as well as binding customary laws.
+- **"Laws in Force" (Art 13(3)(b)):** Includes laws passed or made by a competent legislature or authority prior to January 26, 1950 and not previously repealed, regardless of whether they were in actual active operation.
+
+---
+
+### 3. Is an Amendment of the Constitution a "Law" under Article 13(2)?
+The constitutional position traversed three historic phases:
+1. **Shankari Prasad (1951) & Sajjan Singh (1965):** The Supreme Court held that "law" in Article 13(2) refers only to ordinary legislative law made under legislative lists. It does not include an amendment passed in exercise of constituent power under Article 368.
+2. **I.C. Golak Nath v. State of Punjab (1967):** An 11-judge Bench overruled *Shankari Prasad*, holding that an amendment under Article 368 is a "law" within the meaning of Article 13(2). Consequently, Parliament was held incompetent to abridge Fundamental Rights.
+3. **The 24th Amendment (1971) & Kesavananda Bharati (1973):**
+   - Parliament enacted Article 13(4): *"Nothing in this article shall apply to any amendment of this Constitution made under article 368."*
+   - In *Kesavananda Bharati*, a 13-judge Bench upheld Article 13(4) and overruled *Golak Nath*. The Court held that constituent power under Article 368 is distinct from ordinary law under Article 13(2).
+   - However, the Court ruled that an amendment is subject to the **Basic Structure Doctrine**.
+
+---
+
+### 4. Conclusion
+Under current constitutional law, a constitutional amendment is not "law" under Article 13(2) by virtue of Article 13(4), but remains subject to judicial review under the Basic Structure Doctrine.`,
+      relatedProvisionIds: ['constitution-article-13', 'constitution-article-368'],
+    },
+    {
+      id: 'art13-qa-16m',
+      marks: 16,
+      question: '"Article 13 of the Constitution is not merely an interpretive clause, but the constitutional citadel of judicial review and the rule of law." Trace the epic judicial duel between Parliamentary constituent power and Fundamental Rights from Shankari Prasad through Golak Nath to Kesavananda Bharati. Examine the genesis, purpose, and limitations of the Doctrine of Prospective Overruling.',
+      answer: `### 1. Introduction: Article 13 as the Citadel of Constitutionalism
+In modern constitutional democracies, the power of judicial review acts as the ultimate bulwark against majoritarian autocracy. While the American Constitution arrived at judicial review through the judicial deduction of Chief Justice John Marshall in *Marbury v. Madison* (1803), the framers of the Indian Constitution entrenched it textually in **Article 13**. 
+
+Dr. B.R. Ambedkar acknowledged Article 13 as the heart of the Constitution. Article 13 subordinates all law-making authority—legislative, executive, and customary—to the supreme command of Part III Fundamental Rights.
+
+---
+
+### 2. The Textual Dichotomy: Article 13(1) and Article 13(2)
+- **Article 13(1) (Pre-Constitution Laws):** Declares existing laws void *to the extent of inconsistency*. As held in *Keshavan Madhava Menon* (1951) and *Bhikaji Narain Dhakras* (1955), pre-Constitution laws are not void ab initio; they are merely overshadowed or **eclipsed** by Part III, reviving automatically if the constitutional obstacle is removed.
+- **Article 13(2) (Post-Constitution Laws):** Enjoins that the State *shall not make any law* taking away or abridging Fundamental Rights. Under *Deep Chand v. State of U.P.* (1959) and *Mahendra Lal Jaini* (1963), an enactment passed in violation of Article 13(2) lacks legislative competence and is **still-born (void ab initio)** as against citizens.
+
+---
+
+### 3. The Epic Duel: Is an Amendment a "Law" under Article 13(2)?
+
+The clash between parliamentary sovereignty and judicial supremacy centered on whether a Constitutional Amendment under Article 368 constituted a "law" within the prohibitory ambit of Article 13(2).
+
+~~~
+Shankari Prasad (1951)        Golak Nath (1967)          Kesavananda Bharati (1973)
+Amending power is             Amendment IS a "law"       Amendment is NOT a "law"
+Constituent Power             under Art 13(2);           under Art 13(2) (Art 13(4) valid);
+(Not Art 13 "law")            Part III inviolable        Subject to BASIC STRUCTURE
+~~~
+
+#### A. The Formative Compromise: *Shankari Prasad v. Union of India* (1951)
+The Constitution (First Amendment) Act, 1951 (inserting Arts 31A, 31B, and the 9th Schedule) was challenged by zamindars as abridging their property rights under Art 19(1)(f) and Art 31.
+- A 5-judge Constitution Bench unanimously held that "law" in Article 13(2) means ordinary legislative law made in exercise of powers under the Seventh Schedule.
+- It does **not** include a constitutional amendment made in the exercise of **constituent power** under Article 368. Parliament had untrammelled power to amend any part of the Constitution, including Part III.
+
+#### B. The First Rumbles: *Sajjan Singh v. State of Rajasthan* (1965)
+The 17th Amendment was challenged. The majority affirmed *Shankari Prasad*. However, Justice Hidayatullah and Justice J.R. Mudholkar doubted whether the fundamental rights of citizens could be altered at the whim of transient parliamentary majorities, sowing the seeds of the basic structure doctrine.
+
+#### C. The Judicial Revolution: *I.C. Golak Nath v. State of Punjab* (AIR 1967 SC 1643)
+An 11-judge Constitution Bench, by a historic 6:5 majority led by Chief Justice K. Subba Rao, **overruled** *Shankari Prasad* and *Sajjan Singh*:
+1. **Derivation of Amending Power:** Article 368 merely provided the procedure for amendment; the substantive power was derived from ordinary residuary legislative power under Article 248 and Entry 97, List I.
+2. **Amendment is "Law":** Because an amendment is an exercise of legislative power, it is a "law" within the meaning of Article 13(2).
+3. **Inviolability of Part III:** Consequently, Parliament could not pass any constitutional amendment taking away or abridging Fundamental Rights.
+
+#### D. The Legislative Counter-Attack: The 24th Amendment, 1971
+Parliament responded by passing the Constitution (Twenty-Fourth Amendment) Act, 1971:
+- Inserted Article 13(4): *"Nothing in this article shall apply to any amendment of this Constitution made under article 368."*
+- Inserted Article 368(3) and amended the marginal note to clarify that Article 368 confers substantive constituent power.
+
+#### E. The Master Synthesis: *Kesavananda Bharati v. State of Kerala* (1973) 4 SCC 225
+A 13-judge Constitution Bench (7:6 majority) delivered the most significant judgment in Indian legal history:
+1. **Overruled Golak Nath:** Overruled the proposition that Article 368 is derived from ordinary legislative power. Affirmed that Article 368 confers distinct constituent power.
+2. **Upheld Article 13(4):** Held that "law" in Article 13(2) does not include a constitutional amendment.
+3. **The Basic Structure Inherent Limitation:** The Court ruled that constituent power is not unlimited sovereign power. Parliament can amend any provision of the Constitution, including Part III, but **cannot damage or emasculate the basic structure or essential framework of the Constitution**.
+
+---
+
+### 4. The Doctrine of Prospective Overruling
+In *Golak Nath*, Chief Justice Subba Rao faced an acute practical dilemma: Overruling *Shankari Prasad* retroactively would have invalidated the 1st, 4th, and 17th Amendments, throwing fifteen years of national agrarian land reforms and property titles into chaos. To prevent this, the Court imported the American **Doctrine of Prospective Overruling** (*Great Northern Railway v. Sunburst Oil*):
+1. **Meaning:** When the court overrules past precedents, the new legal rule operates solely into the future. Past transactions, judgments, and statutory amendments conducted under the old rule remain fully valid and binding.
+2. **Supreme Court Prerogative:** The doctrine can be invoked **solely by the Supreme Court of India**, not by High Courts (*State of H.P. v. Nurpur Private Bus*, 1999).
+3. **Subsequent Invocations:** Applied in *India Cement Ltd. v. State of Tamil Nadu* (1990) to prevent crushing retroactive refund of mineral cesses, and in *C.B.S.E. v. P. Sunil Kumar* (1998).
+
+---
+
+### 5. Conclusion
+Article 13 represents the foundational shield of Indian constitutional democracy. Through the historic dialectic of *Shankari Prasad*, *Golak Nath*, and *Kesavananda Bharati*, the Supreme Court forged an immortal constitutional architecture: while ordinary laws are policed by the strict standard of Article 13(2), constitutional amendments are harmonized under the Basic Structure Doctrine, ensuring that the fundamental liberties of the citizenry remain forever beyond the destructive grasp of legislative majorities.`,
+      relatedProvisionIds: ['constitution-article-13', 'constitution-article-368'],
+    },
+  ],
+
+  cases: [
+    {
+      name: 'Shankari Prasad v. Union of India',
+      year: 1951,
+      citation: '1951 SCR 89',
+      holding: 'The word "law" in Article 13(2) refers to ordinary legislative law, not to constituent power under Article 368; constitutional amendments cannot be challenged under Article 13(2).',
+      relevance: 'Initial Supreme Court ruling on amending power vs Article 13.',
+    },
+    {
+      name: 'I.C. Golak Nath v. State of Punjab',
+      year: 1967,
+      citation: 'AIR 1967 SC 1643',
+      holding: 'Overruled Shankari Prasad; held that a constitutional amendment under Article 368 is a "law" under Article 13(2), and Parliament cannot abridge Fundamental Rights. Introduced prospective overruling.',
+      relevance: 'Historic 11-judge bench judgment on Part III inviolability.',
+    },
+    {
+      name: 'Kesavananda Bharati v. State of Kerala',
+      year: 1973,
+      citation: '(1973) 4 SCC 225',
+      holding: 'Overruled Golak Nath and upheld Article 13(4); held that an amendment is not an Article 13(2) law, but constituent power is limited by the Basic Structure Doctrine.',
+      relevance: 'Birth of the Basic Structure Doctrine and resolution of Article 13 scope.',
+    },
+    {
+      name: 'L. Chandra Kumar v. Union of India',
+      year: 1997,
+      citation: '(1997) 3 SCC 261',
+      holding: 'The power of judicial review under Articles 32 and 226/227 is an integral and essential feature of the basic structure of the Constitution.',
+      relevance: 'Judicial review as an inviolable basic structure feature.',
+    },
+    {
+      name: 'Shayara Bano v. Union of India',
+      year: 2017,
+      citation: '(2017) 9 SCC 1',
+      holding: 'Talaq-e-Biddat (instant triple talaq) declared void for manifest arbitrariness under Article 14, bringing uncodified personal law practices under Part III review.',
+      relevance: 'Erosion of Narasu Appa Mali immunity for personal laws.',
+    },
+  ],
+
+  bareActPointers: [
+    'Art 13(1) — Pre-Constitution laws inconsistent with FRs void',
+    'Art 13(2) — Negative injunction on State not to abridge FRs',
+    'Art 13(3)(a) — Definition of "law" (includes ordinance, rules, custom)',
+    'Art 13(3)(b) — Definition of "laws in force"',
+    'Art 13(4) — Non-application of Article 13 to Article 368 amendments',
+  ],
+}
+
+export default content

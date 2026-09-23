@@ -3,53 +3,90 @@ import type { TopicContent } from '../loadTopicContent'
 /**
  * Doctrine of Pith and Substance
  * Subject: constitution | Topic id: doctrine-pith-substance
- * Migrated to structured Study Topic fields from existing short/detailed text only.
+ * Constitutional Competence, True Nature and Character Test, Incidental Encroachment,
+ * and Inter-List Federal Adjudication under Article 246 and Seventh Schedule.
  */
 const content: TopicContent = {
-  study: `Context
-Seventh Schedule distributes legislative power (Union List, State List, Concurrent List). Challenges often allege that a State law trespasses on the Union List (or vice versa).
+  study: `## 1. Constitutional Origin and Conceptual Genesis
 
-Doctrine
-• Examine the true nature, character and object of the law (its “pith and substance”).
-• If the substance falls under an entry the legislature can enact, the law is valid.
-• Incidental or ancillary encroachment on another list is tolerated.
+The **Doctrine of Pith and Substance** is a foundational canon of constitutional interpretation evolved to resolve federal jurisdictional conflicts between competing legislative bodies. In a federal constitution where legislative powers are distributed into exhaustive lists (such as the Seventh Schedule of the Indian Constitution, or Sections 91 and 92 of the Canadian British North America Act, 1867), it is virtually impossible to maintain watertight compartments between federal and state subjects.
 
-Related doctrines (do not mix in answers)
-• Colourable legislation — form is a disguise for lack of power.
-• Occupied field / repugnancy — mainly Concurrent List (Art 254).
-• Eclipse / severability — Fundamental Rights and validity of parts of statutes.
+Originating in Canadian constitutional jurisprudence in *Cushing v. Dupuy* (1880) and *Citizens Insurance Co. v. Parsons* (1881), the doctrine posits that when the legislative competence of a statute is challenged on the ground that it trespasses upon the legislative domain of another legislature, the court must ascertain the **true nature, character, and primary substance** of the enactment ("its pith and marrow").
 
-Exam focus
-State the test; apply to a fact pattern. Cite that incidental encroachment is not fatal.`,
+If the primary substance of the legislation falls within the constitutional competence of the enacting legislature, the enactment remains completely valid and intra vires, even if it **incidentally or ancillarily encroaches** upon subjects allocated to another list (*Prafulla Kumar Mukherjee v. Bank of Commerce*, 1947).
+
+---
+
+## 2. Constitutional Architecture: Article 246 and the Seventh Schedule
+
+Article 246 of the Constitution of India governs the distribution of legislative power across three lists in the Seventh Schedule:
+1. **List I (Union List):** Exclusive legislative competence of Parliament (Entries 1–97). Includes national defence, foreign affairs, banking, inter-State trade, and currency.
+2. **List II (State List):** Exclusive legislative competence of State Legislatures (Entries 1–66). Includes public order, police, public health, agriculture, and intoxicating liquors.
+3. **List III (Concurrent List):** Shared legislative competence of Parliament and State Legislatures (Entries 1–47). Includes criminal law, civil procedure, contracts, and civil rights.
+
+Article 246 opens with the non-obstante clause in clause (1) (*"Notwithstanding anything in clauses (2) and (3)..."*), establishing federal supremacy. However, the Supreme Court has consistently held that this non-obstante clause cannot be applied mechanically to strike down State legislation on the slightest incidental overlap. The three lists must be harmoniously read together, and the Doctrine of Pith and Substance acts as the primary tool of reconciliation.
+
+---
+
+## 3. The Judicial Test: How Courts Ascertain "Pith and Substance"
+
+In *A.S. Krishna v. State of Madras* (1957) and *State of Bombay v. F.N. Balsara* (1951), the Supreme Court laid down the definitive three-prong inquiry to determine the pith and substance of an enactment:
+1. **The Object and Scope of the Act:** Scrutinizing the preamble, statement of objects and reasons, and the statutory scheme as a whole.
+2. **The Substantive Provisions and Legal Effect:** Examining the operative sections to identify what legal rights, duties, prohibitions, or obligations the statute actually creates.
+3. **The Degree of Encroachment:** Determining whether the invasion into the forbidden field is merely **incidental and secondary**, or whether it is **substantial and direct**.
+   - If the invasion is incidental, the law is upheld.
+   - If the encroachment is direct, substantial, and colourable, the law is declared ultra vires.
+
+---
+
+## 4. Landmark Jurisprudential Trajectory
+
+### A. The Landmark Privy Council Anchor: *Prafulla Kumar Mukherjee v. Bank of Commerce* (1947)
+The Bengal Moneylenders Act, 1940 enacted by the Bengal provincial legislature limited the rate of interest money lenders could recover on loans. It was challenged on the ground that it affected promissory notes, which was a federal subject under Entry 28, List I of the Government of India Act, 1935.
+- The Privy Council held that the true nature and character of the Act was "money lending and money lenders" (a Provincial subject, Entry 27, List II).
+- The fact that it affected promissory notes was merely an **incidental encroachment**. Lord Porter famously observed:
+  > *"Subjects must still overlap and where they do, the question must be asked what in pith and substance is the effect of the enactment of which complaint is made and in what list is its true nature and character to be found."*
+
+### B. Early Supreme Court Applications: *State of Bombay v. F.N. Balsara* (1951)
+The Bombay Prohibition Act, 1949 prohibited the possession, sale, and use of liquor. It was challenged as trespassing upon Entry 19, List I (import and export of goods across customs frontiers).
+- The Supreme Court unanimously upheld the statute: its pith and substance fell squarely within Entry 8, List II (intoxicating liquors). The impact on imported foreign liquor was an incidental consequence and did not render the Act unconstitutional.
+
+### C. Public Health vs Wireless Telegraphy: *State of Rajasthan v. G. Chawla* (1959)
+The State enacted the Rajasthan Agricultural Pests and Diseases Act, restricting the use of loudspeakers to prevent public nuisance and protect public health. The challenge contended that loudspeakers fell within "wireless, broadcasting and other like forms of communication" (Entry 31, List I).
+- The Supreme Court held that the pith and substance was the preservation of "public health" (Entry 6, List II). The regulation of amplifiers was an incidental encroachment necessary to suppress noise pollution.
+
+### D. Modern Application: *Offshore Holdings Pvt. Ltd. v. Bangalore Development Authority* (2011)
+The Supreme Court reiterated that once the pith and substance of an enactment falls within the competence of the legislature, incidental encroachment on a Central subject does not invalidate the enactment, even if the subject touched upon is governed by an existing Central Act.`,
 
   sections: [
     {
-      id: 'pith-substance-context',
-      title: 'Legislative lists context',
+      id: 'pith-substance-concept',
+      title: 'Conceptual Genesis & The True Nature and Character Test',
       order: 1,
       content: [
-        'The Seventh Schedule distributes legislative power among the Union List, State List and Concurrent List.',
-        'Challenges often allege that a State law trespasses on the Union List (or vice versa).',
+        'The Doctrine of Pith and Substance determines the constitutional validity of a statute when challenged for encroaching upon an unauthorized legislative list under the Seventh Schedule.',
+        'The court identifies the true nature, character, and primary object of the statute as a whole, rather than focusing on peripheral or incidental consequences.',
+        'Incidental encroachment on another list is permissible and does not render the law invalid (Prafulla Kumar Mukherjee; F.N. Balsara).',
       ],
     },
     {
-      id: 'pith-substance-test',
-      title: 'Pith and substance test',
+      id: 'pith-substance-factors',
+      title: 'Judicial Metrics for Ascertaining Pith and Substance',
       order: 2,
       content: [
-        'Courts examine the true nature, character and object of the law (its pith and substance).',
-        'If the substance falls under an entry the legislature can enact, the law is valid.',
-        'Incidental or ancillary encroachment on another list is tolerated and does not make the law invalid.',
+        'Prong 1: Legislative history, preamble, and the statement of objects and reasons.',
+        'Prong 2: True legal effect, substantive rights created, and actual operation of the sections.',
+        'Prong 3: Extent of encroachment — incidental vs direct/substantial invasion (A.S. Krishna v. State of Madras).',
       ],
     },
     {
-      id: 'pith-substance-related',
-      title: 'Related doctrines (do not mix)',
+      id: 'pith-substance-distinctions',
+      title: 'Conceptual Demarcation from Colourable Legislation and Repugnancy',
       order: 3,
       content: [
-        'Colourable legislation — form is a disguise for lack of power.',
-        'Occupied field / repugnancy — mainly Concurrent List (Article 254).',
-        'Eclipse / severability — Fundamental Rights and validity of parts of statutes.',
+        'Pith and substance tests competence between different Lists (List I vs List II).',
+        'Colourable legislation tests legislative disguise — doing indirectly what cannot be done directly.',
+        'Repugnancy under Article 254 applies to direct conflicts in List III (Concurrent List), assuming competence of both legislatures.',
       ],
     },
   ],
@@ -62,94 +99,201 @@ State the test; apply to a fact pattern. Cite that incidental encroachment is no
 
   examples: [
     {
-      id: 'pith-substance-encroachment-example',
-      title: 'Incidental encroachment',
-      description: 'If the true nature and character of a law lie within a list entry the legislature can enact, an incidental encroachment on another list does not by itself invalidate the law.',
+      id: 'pith-substance-liquor-example',
+      title: 'State Liquor Prohibition vs Import/Export Laws',
+      description: 'A State legislature enacts a total prohibition law regulating the possession, transport, and consumption of intoxicating liquors within the State (Entry 8, List II). An importer of overseas scotch whiskey challenges the law on the ground that it restricts the sale of imported goods, trespassing on Entry 41 of List I (foreign trade). Under the Doctrine of Pith and Substance (State of Bombay v. F.N. Balsara), the true character of the law is temperance and public health under List II; the impact on foreign liquor is incidental, and the Act is fully valid.',
+    },
+    {
+      id: 'pith-substance-moneylender-example',
+      title: 'Moneylending Regulations vs Promissory Notes',
+      description: 'A State enacts legislation providing debt relief to distressed farmers by capping interest rates charged by moneylenders, including debts secured through negotiable instruments (promissory notes). Despite negotiable instruments falling under Union List (Entry 46, List I), the Privy Council in Prafulla Kumar Mukherjee held that the pith and substance is moneylending (List II), and incidental regulation of promissory notes is constitutionally valid.',
+    },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'pith-substance-hypo-1',
+      title: 'The State Cinema Regulation and Inter-State Satellite Broadcast Dispute',
+      scenario: 'State Beta enacts the Beta Cinema and Entertainment (Regulation) Act, requiring all commercial cinema operators and entertainment halls to obtain local municipal licenses, adhere to structural safety norms, and cap ticket prices (Entry 33, List II: "Theatres and dramatic performances; cinemas"). A national multiplex operator with satellite-linked digital cinema transmission challenges Section 12 of the Act, which regulates digital screening server specifications, contending that satellite transmissions and digital broadcasting fall exclusively under Union List Entry 31 ("Posts and telegraphs, telephones, wireless, broadcasting and other like forms of communication"). Analyze the validity of Section 12.',
+      analysis: '1. Ascertaining Pith and Substance: Applying the rule in State of Bombay v. F.N. Balsara and G. Chawla, the true nature, character, and primary object of the Act is the regulation, licensing, and consumer safety of commercial cinema halls within the territory of State Beta (Entry 33, List II). 2. Character of the Encroachment: The regulation of digital cinema projection servers is purely incidental and ancillary to ensuring public safety, projection standards, and consumer experience in local theatres. It does not regulate nationwide satellite frequencies, spectrum allocation, or telecommunication licensing under Entry 31, List I. 3. Conclusion: Because the pith and substance is firmly rooted in Entry 33, List II, the incidental encroachment on Union Entry 31 does not invalidate Section 12. The provision is fully intra vires and constitutionally valid.',
+    },
+  ],
+
+  distinctions: [
+    {
+      conceptA: 'Doctrine of Pith and Substance',
+      conceptB: 'Doctrine of Colourable Legislation',
+      points: [
+        'Pith and substance ascertains the true subject matter of a law to determine if an incidental encroachment on another List is permissible.',
+        'Colourable legislation investigates whether the legislature has masked an absence of constitutional power under a deceptive legislative guise ("what cannot be done directly cannot be done indirectly").',
+        'Pith and substance reconciles overlapping list entries in good-faith legislation; colourable legislation unmasks a fraudulent or disguised trespass across legislative boundaries.',
+        'Leading case for Pith and Substance is Prafulla Kumar Mukherjee; leading case for Colourable Legislation is K.C. Gajapati Narayan Deo v. State of Orissa.',
+      ],
+    },
+    {
+      conceptA: 'Pith and Substance',
+      conceptB: 'Repugnancy (Article 254)',
+      points: [
+        'Pith and substance applies to jurisdictional boundary disputes between mutually exclusive lists (List I vs List II).',
+        'Repugnancy under Article 254 applies strictly where both Parliament and the State Legislature have enacted valid laws on a shared Concurrent List (List III) entry, and their provisions are in irreconcilable conflict.',
+        'Under Pith and Substance, incidental encroachment is tolerated; under Repugnancy, the State law yields to the Central law to the extent of repugnancy (unless saved by Presidential assent under Art 254(2)).',
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      misconception: 'Any encroachment by a State law into an entry in the Union List automatically renders the State law void due to federal supremacy under Article 246(1).',
+      correction: 'Federal supremacy under Article 246(1) does not mandate mechanical invalidation. As held in Prafulla Kumar Mukherjee and F.N. Balsara, the non-obstante clause applies only where there is an irreconcilable, substantive conflict. If the encroachment is merely incidental and ancillary to a legitimate State subject, the State law is preserved as intra vires.',
+    },
+    {
+      misconception: 'Pith and substance allows a legislature to deliberately legislate on forbidden subjects so long as it mentions a permissible subject in the preamble.',
+      correction: 'Courts pierce the legislative veil. Pith and substance examines the actual operative legal effect, not legislative pretexts or preamble declarations. If the primary substance violates legislative competence, the law is colourable and void.',
     },
   ],
 
   questionsAndAnswers: [
     {
-      id: 'pith-substance-qa-1',
-      question: 'What do courts examine under pith and substance?',
-      answer: 'The true nature, character and object of the law.',
-      explanation: 'If the substance falls under a competent list entry, the law is valid despite incidental encroachment.',
-      relatedProvisionIds: ['constitution-article-246'],
+      id: 'pith-substance-qa-10m',
+      marks: 10,
+      question: 'Explain the Doctrine of Pith and Substance with reference to the distribution of legislative powers under the Seventh Schedule of the Constitution. Discuss its application in Prafulla Kumar Mukherjee v. Bank of Commerce.',
+      answer: `### 1. Synopsis / Introduction
+The Doctrine of Pith and Substance is a vital canon of constitutional interpretation used to determine the legislative competence of a statute when it is challenged for encroaching upon an entry in a legislative list reserved for another body under the Seventh Schedule (read with Article 246).
+
+---
+
+### 2. Meaning and Core Principle
+- **True Nature and Character:** The doctrine posits that when testing legislative competence, courts must look at the "pith and marrow" (true nature, object, and character) of the enactment as a whole, rather than its incidental or secondary consequences.
+- **Incidental Encroachment Tolerated:** If the primary substance of the legislation falls within the competent list entry of the enacting legislature, the statute is constitutionally valid, notwithstanding that it **incidentally encroaches** upon a matter allocated to another list (*A.S. Krishna v. State of Madras*, 1957).
+
+---
+
+### 3. Application in *Prafulla Kumar Mukherjee v. Bank of Commerce* (AIR 1947 PC 60)
+The Privy Council\'s decision in *Prafulla Kumar Mukherjee* remains the foundational precedent:
+1. **The Conflict:** The Bengal Provincial Legislature enacted the *Bengal Moneylenders Act, 1940*, limiting the maximum interest recoverable by moneylenders on past and future loans.
+2. **The Challenge:** Creditor banks challenged the Act, asserting that because moneylenders frequently advanced loans against **promissory notes**, the Act invaded Entry 28, List I of the Government of India Act, 1935 ("Cheques, bills of exchange, promissory notes and other like instruments"), an exclusive federal subject.
+3. **Privy Council Ratio:**
+   - Lord Porter ruled that the true nature and character of the law was "money lending and money lenders" (Entry 27, List II, a Provincial subject).
+   - The impact of the statute on promissory notes was merely an **incidental encroachment** required to grant effective relief to borrowers.
+   - Lord Porter held that subjects in different lists must inevitably overlap; if incidental encroachment invalidated provincial laws, the provincial legislative power over moneylending would be wholly defeated.
+
+---
+
+### 4. Essential Factors Evaluated by Courts
+In determining the pith and substance of an enactment, the Supreme Court (*State of Bombay v. F.N. Balsara*, 1951) examines:
+- The overall object, preamble, and legislative history of the Act;
+- The substantive scope and actual legal operation of its provisions;
+- The degree and extent of the invasion into the forbidden field (whether incidental or substantial).
+
+---
+
+### 5. Conclusion
+The Doctrine of Pith and Substance provides essential federal flexibility to Article 246, preventing rigid, pedantic demarcations from paralyzing state welfare legislation while preserving the supremacy of the Union in matters of direct national importance.`,
+      relatedProvisionIds: ['constitution-article-246', 'constitution-seventh-schedule'],
     },
     {
-      id: 'pith-substance-qa-2',
-      question: 'Does incidental encroachment on another list invalidate a law?',
-      answer: 'No. Incidental or ancillary encroachment is tolerated if the pith and substance lies within the legislature’s competence.',
-      explanation: 'Do not confuse this with colourable legislation or repugnancy under Article 254.',
-      relatedProvisionIds: ['constitution-article-246', 'constitution-article-254'],
+      id: 'pith-substance-qa-16m',
+      marks: 16,
+      question: '"The distribution of legislative powers in the Seventh Schedule is characterized by non-overlapping entries, yet incidental encroachment is an inevitable reality of federal governance." Critically examine the Doctrine of Pith and Substance in Indian constitutional law. Contrast it with the Doctrine of Colourable Legislation and the Doctrine of Repugnancy under Article 254.',
+      answer: `### 1. Introduction: Federal Distribution and The Problem of Overlapping Fields
+Under Article 246 read with the Seventh Schedule of the Constitution of India, sovereign legislative authority is bifurcated across three exhaustive lists: the Union List (List I), the State List (List II), and the Concurrent List (List III). While the Constitution attempts precise demarcation, human affairs, modern commerce, and public administration cannot be compartmentalized into hermetically sealed containers. Consequently, statutes frequently touch upon multiple fields simultaneously. 
+
+To preserve legislative efficacy without eroding the federal equilibrium, the judiciary developed the **Doctrine of Pith and Substance**—a rule of substance over form that upholds legislation if its core subject falls within legislative competence, despite incidental encroachments on competing lists.
+
+---
+
+### 2. Conceptual Genesis and The Canadian Ancestry
+The doctrine originated in the jurisprudence of the Privy Council interpreting the British North America Act, 1867:
+- In *Cushing v. Dupuy* (1880) and *Citizens Insurance Co. v. Parsons* (1881), the Privy Council recognized that federal and provincial heads of power necessarily interlace.
+- The doctrine was naturalized into Indian law under the Government of India Act, 1935 in the epochal ruling of *Prafulla Kumar Mukherjee v. Bank of Commerce* (1947), where Lord Porter affirmed that incidental trespass onto promissory notes (Union) did not vitiate a provincial statute on moneylending (Provincial).
+- Following independence, the Supreme Court of India adopted the doctrine in *State of Bombay v. F.N. Balsara* (1951), upholding the Bombay Prohibition Act against challenges that it interfered with foreign import/export (List I).
+
+---
+
+### 3. The Judicial Inquiry: Determining True Nature and Character
+In *A.S. Krishna v. State of Madras* (1957) and *Chaturbhai M. Patel v. Union of India* (1960), the Supreme Court laid down the three-step constitutional test:
+1. **The Primary Objective and Scheme:** Scrutinizing the title, preamble, statement of objects, and the social evil sought to be remedied.
+2. **Substantive Operation and Legal Effect:** Determining the precise rights, duties, prohibitions, and penalties imposed by the operative clauses.
+3. **The Degree and Extent of Invasion:** Distinguishing between:
+   - *Incidental Encroachment:* Minor, consequential, and structurally necessary to achieve the core statutory purpose (Tolerated).
+   - *Direct and Substantial Trespass:* Usurpation of a foreign legislative field under a pretext (Fatal).
+
+---
+
+### 4. Tripartite Comparative Analysis: Demarcating Fundamental Constitutional Doctrines
+
+To avoid conflation in judicial adjudication and academic examinations, the Doctrine of Pith and Substance must be strictly distinguished from Colourable Legislation and Repugnancy:
+
+| Comparative Dimension | Doctrine of Pith and Substance | Doctrine of Colourable Legislation | Doctrine of Repugnancy (Article 254) |
+| :--- | :--- | :--- | :--- |
+| **Governing Constitutional Provision** | Article 246 & Seventh Schedule | Article 246 (Legislative Competence) | Article 254 (Concurrent List Conflict) |
+| **Nature of the Defect** | Alleged incidental trespass into another List. | Covert or disguised usurpation of legislative power. | Direct, irreconcilable conflict between two valid laws. |
+| **Applicable Arena** | Boundary conflicts between List I and List II. | Absolute absence of legislative power masked by form. | List III (Concurrent List) where both bodies have competence. |
+| **Core Inquiring Maxim** | *"What is the true nature and character?"* | *"What cannot be done directly cannot be done indirectly."* | *"Can both statutes stand together without contradiction?"* |
+| **Outcome of Finding** | Law is **upheld** if encroachment is incidental. | Law is **declared ultra vires and void ab initio**. | State law is **void to the extent of repugnancy** (Art 254(1)). |
+| **Leading Case Authority** | *Prafulla Kumar Mukherjee* (1947); *F.N. Balsara* (1951) | *K.C. Gajapati Narayan Deo v. State of Orissa* (1953) | *M. Karunanidhi v. Union of India* (1979); *Hoechst* (1983) |
+
+---
+
+### 5. Illustrative Jurisprudential Applications in India
+
+1. **Environmental Protection vs Wireless Communication:** In *State of Rajasthan v. G. Chawla* (1959), a State law restricting loudspeakers to combat noise pollution was challenged under Union Entry 31 (broadcasting/wireless). The Supreme Court held the pith and substance was public health (Entry 6, List II); regulation of amplifiers was incidental.
+2. **Industrial Regulation vs Raw Materials:** In *Tika Ramji v. State of U.P.* (1956), the UP Sugarcane (Regulation of Supply and Purchase) Act was challenged as encroaching on Parliament's power over controlled industries under Entry 52, List I. The Supreme Court upheld the State law, holding that sugar manufacture is distinct from the agricultural supply of raw sugarcane (Entry 27, List II).
+3. **Urban Development vs Central Land Acquisition:** In *Offshore Holdings Pvt. Ltd. v. Bangalore Development Authority* (2011), the Court ruled that the BDA Act's pith and substance was planned town development under List II, and its specialized land acquisition mechanisms operated unimpaired by general central land acquisition enactments.
+
+---
+
+### 6. Critical Evaluation & Conclusion
+The Doctrine of Pith and Substance is the linchpin of Indian cooperative federalism. Without it, the vast concurrent and exclusive entries of the Seventh Schedule would trigger perpetual statutory deadlock, paralyzing state welfare initiatives. By subordinating formalistic, pedantic interpretations to functional, substantive scrutiny, the Supreme Court has preserved both the federal autonomy of the States and the paramountcy of the Union, fulfilling the constitutional vision of a resilient, working federal republic.`,
+      relatedProvisionIds: ['constitution-article-246', 'constitution-seventh-schedule', 'constitution-article-254'],
     },
   ],
-
-  relatedTopics: ['Colourable legislation', 'Repugnancy (Art 254)', 'Seventh Schedule'],
 
   cases: [
     {
       name: 'Prafulla Kumar Mukherjee v. Bank of Commerce',
       year: 1947,
       citation: 'AIR 1947 PC 60',
-      holding: 'Pith and substance determines competence; incidental encroachment does not invalidate the law.',
-      relevance: 'Classic Privy Council authority still cited in India.',
+      holding: 'Pith and substance determines competence; if the true nature of the law falls within a competent list entry, incidental encroachment on an unauthorized list does not invalidate the statute.',
+      relevance: 'Privy Council landmark on pith and substance in Indian federalism.',
     },
     {
       name: 'State of Bombay v. F.N. Balsara',
       year: 1951,
       citation: 'AIR 1951 SC 318',
-      holding: 'Applied pith and substance to Bombay prohibition law vis-à-vis federal lists.',
-      relevance: 'Early Supreme Court application.',
-    },
-  ],
-
-  bareActPointers: ['Seventh Schedule', 'Art 246', 'Art 254'],
-
-  examTips: [
-    'Write: true nature and character of the law = pith and substance.',
-    'Incidental encroachment ≠ invalidity if substance is within competence.',
-    'Do not confuse with colourable legislation or repugnancy (Art 254).',
-    'Always name the competing list entries in application questions.',
-  ],
-
-  examFrameworks: [
-    {
-      marks: 10,
-      question: 'Write a 10-mark answer on this topic.',
-      steps: [
-        'Introduce the concept and name the governing provision.',
-        'Explain the legal idea in student language — not only the Bare Act words.',
-        'State essential elements or the main rule.',
-        'Cite one leading authority and its principle.',
-        'Give a short illustration or apply the rule to facts.',
-        'Note a material exception or distinction.',
-        'Conclude with the current legal position.',
-      ],
+      holding: 'Upheld Bombay Prohibition Act under Entry 8, List II (intoxicating liquors); impact on imported liquor (List I Entry 41) held to be purely incidental.',
+      relevance: 'Foundational Supreme Court application of pith and substance.',
     },
     {
-      marks: 16,
-      question: 'Expand the same topic into a 16-mark answer.',
-      steps: [
-        'Introduction and meaning.',
-        'Why the rule exists / brief history if relevant.',
-        'Legal foundation and elements in detail.',
-        'Exceptions, limitations and an important distinction.',
-        'Two or more authorities with ratio, not only names.',
-        'A hypothetical with analysis.',
-        'Current-law position and a short critical comment.',
-        'Conclusion.',
-      ],
+      name: 'A.S. Krishna v. State of Madras',
+      year: 1957,
+      citation: 'AIR 1957 SC 297',
+      holding: 'Laid down the comprehensive criteria for ascertaining pith and substance: objects, scheme, substantive effects, and extent of encroachment.',
+      relevance: 'Standard judicial metric for testing true character of statutes.',
+    },
+    {
+      name: 'State of Rajasthan v. G. Chawla',
+      year: 1959,
+      citation: 'AIR 1959 SC 544',
+      holding: 'Upheld State regulation of loudspeakers under public health (Entry 6, List II); encroachment on telegraphs and broadcasting (Entry 31, List I) held incidental.',
+      relevance: 'Public health regulation vs Union communications entry.',
+    },
+    {
+      name: 'Offshore Holdings Pvt. Ltd. v. Bangalore Development Authority',
+      year: 2011,
+      citation: '(2011) 3 SCC 139',
+      holding: 'Reaffirmed that incidental encroachment does not vitiate a State enactment where the primary subject matter falls within List II competence.',
+      relevance: 'Modern Supreme Court reaffirmation of the doctrine.',
     },
   ],
 
-  revisionPoints: [
-    'Start with the provision and the legal idea, not a section dump.',
-    'Name the leading case and state what it actually held.',
-    'Current through the 106th Amendment (2023) for constitutional topics.',
+  bareActPointers: [
+    'Art 246(1) — Exclusive legislative power of Parliament over List I',
+    'Art 246(2) — Concurrent power over List III',
+    'Art 246(3) — Exclusive legislative power of States over List II',
+    'Seventh Schedule — List I (Union), List II (State), List III (Concurrent)',
+    'Art 254 — Repugnancy between Union and State laws in Concurrent List',
   ],
-
-
 }
 
 export default content

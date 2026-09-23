@@ -1,110 +1,324 @@
 import type { TopicContent } from '../loadTopicContent'
 
-/**
- * Emergency Provisions
- * Subject: constitution | Topic id: emergency
- * Arts 352, 356, 360 — settled framework only.
- */
 const content: TopicContent = {
+  glance:
+    'Part XVIII of the Constitution provides three emergency mechanisms: National Emergency (Art 352), State Emergency / President’s Rule (Art 356), and Financial Emergency (Art 360). Following the 44th Amendment (1978) and S.R. Bommai (1994), emergency powers are subjected to strict parliamentary approvals and judicial review, while Articles 20 and 21 can never be suspended.',
 
-  study: `Article 352(1)
-“If the President is satisfied that a grave emergency exists whereby the security of India or of any part of the territory thereof is threatened, whether by war or external aggression or armed rebellion, he may, by Proclamation, make a declaration to that effect.”
+  study: `Topic at a Glance
+Emergency provisions in Part XVIII (Articles 352–360) were incorporated to safeguard the sovereignty, unity, and security of India during extraordinary crises. Dr. B.R. Ambedkar noted that while the Constitution is federal under normal circumstances, it transforms into a unitary system in times of emergency. However, following the severe misuse of emergency powers during 1975–1977, the 44th Constitutional Amendment Act, 1978 and seminal judicial rulings (S.R. Bommai) established formidable constitutional fences against executive authoritarianism.
 
-Three emergencies
-• National Emergency — Article 352 (war, external aggression, or armed rebellion; “internal disturbance” language was narrowed after the 44th Amendment).
-• State Emergency / President’s Rule — Article 356 (failure of constitutional machinery in a State).
-• Financial Emergency — Article 360.
+1. National Emergency (Article 352)
+A. Grounds:
+Under Article 352(1), the President may proclaim a National Emergency if the security of India or any part thereof is threatened by:
+(a) War;
+(b) External aggression; or
+(c) Armed rebellion (the 44th Amendment substituted “armed rebellion” for the subjective phrase “internal disturbance”).
+B. Cabinet Safeguard:
+The President can issue a proclamation ONLY upon the written communication of the decision of the Union Cabinet (the Prime Minister and other Ministers of Cabinet rank). An oral recommendation by the Prime Minister alone is unconstitutional.
+C. Parliamentary Approval & Duration:
+- Must be approved by both Houses of Parliament within one month (originally two months) from the date of issue.
+- Must be approved by a Special Majority in each House: a majority of the total membership and not less than two-thirds of members present and voting.
+- If approved, it remains in force for six months, renewable indefinitely in 6-month increments with fresh special majorities.
+D. Revocation:
+- The President may revoke the proclamation at any time.
+- The Lok Sabha can force a revocation by passing a resolution disapproving the proclamation by a simple majority. If 1/10th of Lok Sabha members submit a written notice, a special sitting must be held within 14 days.
+E. Effect on Fundamental Rights (Articles 358 & 359):
+1. Article 358 (Suspension of Article 19):
+   - Article 19 freedoms are automatically suspended upon a proclamation of National Emergency.
+   - 44th Amendment Safeguard: Article 358 operates ONLY when emergency is proclaimed on grounds of War or External Aggression. It does NOT operate if the emergency is proclaimed on grounds of Armed Rebellion.
+2. Article 359 (Suspension of Enforcement of Rights):
+   - The President may by order suspend the right to move any court for the enforcement of specified Fundamental Rights.
+   - The Sacred Non-Suspendability Clause (44th Amendment): The President CANNOT suspend the right to move the court for the enforcement of Article 20 (protection in respect of conviction) and Article 21 (right to life and personal liberty) under any circumstances.
+   - The shameful ruling in ADM Jabalpur v. Shivkant Shukla (1976) was formally overruled by the 9-judge bench in K.S. Puttaswamy (2017).
 
-Effects (high level)
-National emergency can affect Centre–State distribution and, subject to constitutional limits (especially after the 44th Amendment), the operation of certain Fundamental Rights (Arts 358–359 scheme). Article 356 allows assumption of State functions by the Union on the prescribed satisfaction and parliamentary controls. Article 360 addresses financial stability directions.
+2. State Emergency / President’s Rule (Article 356 & 365)
+A. Grounds:
+- Article 356: Failure of constitutional machinery in a State. The President may act on receipt of a report from the Governor of a State or “otherwise”.
+- Article 365: Where a State fails to comply with lawful executive directions issued by the Union under Articles 256 or 257.
+B. Approval & Duration:
+- Must be approved by both Houses of Parliament within two months by a Simple Majority.
+- Valid for 6 months; maximum duration is 3 years (beyond 1 year requires a national emergency in operation and certification by the Election Commission that holding assembly elections is difficult).
+C. The Landmark Jurisprudence of S.R. Bommai v. Union of India (1994) 3 SCC 1:
+A 9-judge Constitution Bench dismantled arbitrary dismissal of State Governments:
+1. Subject to Judicial Review: The proclamation under Article 356 is not immune from judicial review. Courts can examine whether relevant material existed and whether the exercise was malafide or based on extraneous grounds.
+2. Assembly Cannot Be Dissolved Prematurely: The State Legislative Assembly cannot be dissolved until Parliament approves the Article 356 proclamation. The President can only keep the Assembly in suspended animation.
+3. Floor Test is Mandatory: The subjective opinion of the Governor regarding majority is irrelevant. The floor of the Legislative Assembly is the ONLY constitutional forum to test majority support.
+4. Power to Restore Dismissed Governments: If the proclamation is struck down as unconstitutional, the Court has the extraordinary power to restore the dismissed State Government and revive the dissolved Legislative Assembly (applied in Arunachal Pradesh / Nabam Rebia and Uttarakhand cases in 2016).
+5. Secularism: Anti-secular policies of a State Government warrant action under Article 356 because secularism is part of the Basic Structure.
 
-Judicial check on Art 356
-S.R. Bommai held that Art 356 power is not absolute; the material for proclamation is open to limited judicial review, and floor tests may be relevant; secularism is part of basic structure.
+3. Financial Emergency (Article 360)
+- Proclaimed if the President is satisfied that the financial stability or credit of India or any part is threatened.
+- Approved by Parliament within two months by a simple majority.
+- Has NEVER been declared in the history of independent India.
 
-Exam focus
-Name three emergencies with Articles. Note 44th Amendment safeguards for Art 352. Cite Bommai for Art 356 review.`,
+Procedural & Courtroom Anchors (Senior Counsel Checklist)
+1. Challenging President’s Rule (Article 356):
+   - Forum: High Court under Article 226 or Supreme Court under Article 32.
+   - Pleading Ingredients: Plead that the Governor failed to conduct a floor test, acted on extraneous or partisan political considerations, or that the Assembly was dissolved prior to parliamentary approval (Bommai doctrine).
+2. Challenging Detention during National Emergency:
+   - File Habeas Corpus under Article 32 or 226 citing Article 21 and the 44th Amendment. The State cannot plead that personal liberty is suspended.
+
+Current-Law Position & Milestone
+Emergency powers are exceptional constitutional mechanisms, strictly subordinate to democratic accountability, floor tests, and judicial review. Articles 20 and 21 enjoy absolute immunity from emergency suspension. Current through the 106th Amendment (2023).`,
 
   sections: [
-    { id: 'emergency-types', title: 'Three types', order: 1, content: [
-      'Article 352 — Proclamation of Emergency (national).',
-      'Article 356 — failure of constitutional machinery in a State (President’s Rule).',
-      'Article 360 — Financial Emergency.',
-    ]},
-    { id: 'emergency-bommai', title: 'Article 356 and judicial review', order: 2, content: [
-      'S.R. Bommai holds that Article 356 is not immune from judicial review.',
-      'Secularism is part of the basic structure and relevant to constitutional machinery analysis.',
-    ]},
+    {
+      id: 'emergency-national-352',
+      title: 'National Emergency & The 44th Amendment Fences',
+      order: 1,
+      content: [
+        'Grounds: War, external aggression, or armed rebellion (internal disturbance deleted).',
+        'Cabinet advice must be in writing; parliamentary approval within 1 month by special majority (2/3rd).',
+        'Revocation forced by Lok Sabha resolution passed by simple majority.',
+      ],
+    },
+    {
+      id: 'emergency-fr-impact',
+      title: 'Impact on Fundamental Rights (Arts 358 & 359)',
+      order: 2,
+      content: [
+        'Art 358: Art 19 suspended only during external emergency (war/external aggression), not armed rebellion.',
+        'Art 359: President can suspend enforcement of specified FRs, BUT Articles 20 and 21 can NEVER be suspended.',
+        'ADM Jabalpur formally overruled in K.S. Puttaswamy (2017).',
+      ],
+    },
+    {
+      id: 'emergency-president-rule-bommai',
+      title: 'President’s Rule (Art 356) & The Bommai Framework',
+      order: 3,
+      content: [
+        'Judicial review of presidential satisfaction; material must be relevant and bona fide.',
+        'Legislative Assembly cannot be dissolved until both Houses of Parliament approve.',
+        'Floor test is the only constitutional forum to assess legislative majority.',
+        'Court has power to restore dismissed State Government and revive dissolved Assembly (Bommai).',
+      ],
+    },
   ],
 
   provisions: [
     { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-352', article: 'Article 352', title: 'Proclamation of Emergency' },
     { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-356', article: 'Article 356', title: 'Provisions in case of failure of constitutional machinery in States' },
-    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-360', article: 'Article 360', title: 'Provisions as to financial emergency' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-358', article: 'Article 358', title: 'Suspension of provisions of article 19 during emergencies' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-359', article: 'Article 359', title: 'Suspension of the enforcement of the rights conferred by Part III during emergencies' },
   ],
 
   examples: [
-    { id: 'emergency-356-example', title: 'President’s Rule challenge', description: 'If a State Ministry is dismissed and Art 356 is proclaimed without materials showing constitutional breakdown, Bommai supports limited judicial scrutiny of that proclamation.' },
+    {
+      id: 'emergency-ex-1',
+      title: 'Illustration 1 — Unlawful Dissolution under Article 356 (Bommai Applied)',
+      description: 'The Governor of a State recommends President’s Rule claiming political instability, and the President issues a proclamation under Article 356 dissolving the State Legislative Assembly before the proclamation is approved by Parliament. The Supreme Court strikes down the dissolution as illegal under S.R. Bommai, holding that the Assembly can only be kept in suspended animation until parliamentary approval, and orders the revival of the Assembly.',
+    },
+    {
+      id: 'emergency-ex-2',
+      title: 'Illustration 2 — Habeas Corpus Maintained during Emergency (Post-44th Amendment)',
+      description: 'During a National Emergency proclaimed on grounds of external aggression, the police detain a political dissenter without legal authority and refuse to produce him before a magistrate. The detenu’s family files a writ of Habeas Corpus under Article 226 citing Article 21. The State’s preliminary objection that courts cannot be moved during an emergency is rejected because Article 21 cannot be suspended under Article 359.',
+    },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'emergency-hypo',
+      title: '16-Mark Examination Hypothetical (Floor Test & Article 356 Judicial Review)',
+      facts: 'Following a split in the ruling coalition in State Y, the Governor refuses the Chief Minister’s request to convene an assembly session for a floor test within 48 hours. Instead, the Governor dispatches a confidential report to the President stating that widespread horse-trading has broken down constitutional governance, and recommends immediate imposition of President’s Rule under Article 356. The Union Cabinet approves, and the President issues a proclamation dissolving the Legislative Assembly. The dismissed Chief Minister approaches the Supreme Court under Article 32.',
+      question: 'Examine the constitutional validity of the Governor’s action, the Presidential Proclamation, and the immediate dissolution of the Assembly in light of S.R. Bommai v. Union of India and Rameshwar Prasad v. Union of India. What relief can the Supreme Court grant?',
+      applicableLaw: 'Article 356 of the Constitution of India; S.R. Bommai v. Union of India (1994); Rameshwar Prasad v. Union of India (2006); Nabam Rebia (2016).',
+      analysis: '1. Violation of the Mandatory Floor Test Rule: In S.R. Bommai, the Supreme Court unequivocally ruled that the floor of the House is the sole legitimate forum to determine whether the government enjoys majority support. Subjective gubernatorial assessments of horse-trading cannot substitute a floor test.\n2. Premature Dissolution of Assembly: The dissolution of the Legislative Assembly prior to approval by both Houses of Parliament directly breaches the constitutional discipline mandated in Bommai. The Assembly could only be kept in suspended animation.\n3. Extraneous & Malafide Material: Under Rameshwar Prasad, a Governor cannot act on unverified political suspicions to prevent an elected government from testing its strength.\n4. Remedial Restoration: The Court has full constitutional jurisdiction to set aside the proclamation and restore status quo ante.',
+      conclusion: 'The Presidential Proclamation and dissolution are unconstitutional, malafide, and void. The Supreme Court will quash the proclamation, revive the dissolved Legislative Assembly, restore the dismissed ministry, and order an immediate floor test.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'emergency-352-v-356',
+      title: 'Article 352 (National Emergency) vs Article 356 (President’s Rule)',
+      left: 'Article 352 (National Emergency)',
+      right: 'Article 356 (President’s Rule)',
+      rows: [
+        { point: 'Grounds', left: 'War, external aggression, or armed rebellion.', right: 'Failure of constitutional machinery in a State.' },
+        { point: 'Approval', left: 'Special majority within 1 month.', right: 'Simple majority within 2 months.' },
+        { point: 'Effect on Assembly', left: 'State Government and Assembly continue functioning.', right: 'State Executive dismissed; Assembly dissolved/suspended.' },
+        { point: 'Maximum Duration', left: 'Indefinite, subject to 6-month parliamentary renewals.', right: 'Maximum 3 years with periodic approvals.' },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'emergency-trap-1',
+      trap: 'Article 19 is automatically suspended whenever any National Emergency is proclaimed.',
+      correction: 'Under Article 358 as amended by the 44th Amendment, Article 19 is suspended ONLY when the emergency is declared on grounds of War or External Aggression. It is NOT suspended during an emergency declared for Armed Rebellion.',
+    },
+    {
+      id: 'emergency-trap-2',
+      trap: 'The President can dissolve a State Legislative Assembly immediately upon imposing Article 356.',
+      correction: 'Under the Bommai doctrine, the Assembly cannot be dissolved until both Houses of Parliament approve the proclamation. It can only be placed in suspended animation.',
+    },
+    {
+      id: 'emergency-trap-3',
+      trap: 'The ruling in ADM Jabalpur (habeas corpus suspension) remains good law in India.',
+      correction: 'The 44th Amendment protected Articles 20 and 21 from suspension under Article 359, and ADM Jabalpur was formally overruled by 9 judges in K.S. Puttaswamy (2017).',
+    },
   ],
 
   questionsAndAnswers: [
-    { id: 'emergency-qa-1', question: 'Name the three emergency provisions and their Articles.', answer: 'National emergency — Article 352; President’s Rule — Article 356; Financial emergency — Article 360.', relatedProvisionIds: ['constitution-article-352','constitution-article-356','constitution-article-360'] },
-    { id: 'emergency-qa-2', question: 'What is the leading case on judicial review of Article 356?', answer: 'S.R. Bommai v. Union of India (1994).', relatedProvisionIds: ['constitution-article-356'] },
-    { id: 'emergency-qa-3', question: 'Did the 44th Amendment affect Article 352?', answer: 'Yes. It strengthened safeguards, including refining the grounds and parliamentary/approval controls associated with national emergency.', relatedProvisionIds: ['constitution-article-352'] },
+    {
+      id: 'emergency-qa-10',
+      marks: 10,
+      question: 'Explain the grounds, parliamentary approval, and impact of a Proclamation of National Emergency under Article 352. How did the 44th Amendment protect fundamental rights?',
+      answer: `I. ISSUE & CONSTITUTIONAL CONTEXT
+Article 352 empowers the President to declare a National Emergency. The key constitutional issues are the procedural hurdles for approval and the safeguards introduced by the 44th Amendment to prevent human rights violations.
+
+II. GROUNDS & INITIATION (ARTICLE 352)
+1. Grounds: Threat to the security of India by War, External Aggression, or Armed Rebellion (the 44th Amendment deleted “internal disturbance”).
+2. Cabinet Safeguard: Written advice of the Union Cabinet is mandatory.
+
+III. PARLIAMENTARY APPROVAL & DURATION
+1. Approval: Within one month by a Special Majority in each House (majority of total membership + 2/3rd present and voting).
+2. Duration: Valid for six months; can be renewed indefinitely with 6-month special majorities.
+3. Revocation: Lok Sabha can force revocation by simple majority resolution.
+
+IV. 44TH AMENDMENT SAFEGUARDS ON FUNDAMENTAL RIGHTS
+1. Article 358: Article 19 is suspended automatically ONLY during external emergency (war/external aggression), NOT during armed rebellion.
+2. Article 359: While the President may suspend the enforcement of other rights, Articles 20 (protection in offences) and 21 (life and personal liberty) can NEVER be suspended. ADM Jabalpur stands overruled.
+
+V. CONCLUSION
+The 44th Amendment transformed National Emergency from a tool of executive tyranny into an accountable, strictly circumscribed mechanism. Current through the 106th Amendment (2023).`,
+      explanation: 'Formatted according to the IRAC method for 10-mark examination questions.',
+      relatedProvisionIds: ['constitution-article-352', 'constitution-article-358', 'constitution-article-359'],
+    },
+    {
+      id: 'emergency-qa-16',
+      marks: 16,
+      question: 'Critically analyze the scope of Article 356 (President’s Rule) in light of federalism and judicial review. How did the Supreme Court in S.R. Bommai v. Union of India dismantle executive arbitrariness and protect state autonomy?',
+      answer: `I. INTRODUCTION & THE FEDERAL DILEMMA
+Article 356 of the Constitution of India provides for the imposition of President’s Rule in a State when its constitutional machinery breaks down. During the Constituent Assembly debates, Dr. B.R. Ambedkar expressed the hope that Article 356 would remain a “dead letter”, invoked only as a last resort. Tragically, in the decades following independence, Article 356 was invoked over 100 times, frequently abused by ruling parties at the Centre to topple democratically elected opposition State Governments. The landmark 9-judge Constitution Bench ruling in S.R. Bommai v. Union of India (1994) rescued Indian federalism from this arbitrary misuse.
+
+II. STATUTORY ANATOMY & THE PROCEDURAL GATES OF ARTICLE 356
+1. The Threshold of Satisfaction:
+   The President acts on receipt of a report from the Governor or “otherwise”. The condition precedent is that “a situation has arisen in which the government of the State cannot be carried on in accordance with the provisions of this Constitution”.
+2. Parliamentary Approval & Durations:
+   Must be approved within two months by a Simple Majority in both Houses. If approved, it lasts for 6 months, up to a maximum of 3 years (subject to Election Commission certification after 1 year).
+3. The Sanction of Article 365:
+   A State’s failure to comply with lawful Union executive directions under Articles 256 or 257 constitutes a valid ground under Article 356.
+
+III. THE BOMMAI REVOLUTION: DISMANTLING ARBITRARY RULE
+In S.R. Bommai v. Union of India (1994) 3 SCC 1, the Supreme Court laid down epochal principles:
+1. Federalism as Basic Structure:
+   The Court held that federalism and state autonomy are non-negotiable features of the Basic Structure. The Centre cannot treat States as mere administrative appendages.
+2. Judicial Review of Presidential Satisfaction:
+   The subjective satisfaction of the President is not immune from judicial review. The Court will examine:
+   (a) Whether there was objective material before the President;
+   (b) Whether the material was relevant to the breakdown of constitutional machinery;
+   (c) Whether the proclamation was actuated by malafides or extraneous political considerations.
+3. Ban on Immediate Assembly Dissolution:
+   The President cannot dissolve the State Legislative Assembly until both Houses of Parliament approve the proclamation. Until then, the Assembly can only be placed in suspended animation.
+4. The Inviolable Floor Test Rule:
+   The Governor cannot assess majority support inside Raj Bhavan drawing rooms or through secret reports. The floor of the Legislative Assembly is the ONLY forum where majority must be tested.
+5. The Power of Restoration:
+   If the proclamation is declared unconstitutional, the Supreme Court has the extraordinary power to restore the dismissed State Government and revive the dissolved Legislative Assembly (reaffirmed in Nabam Rebia in 2016).
+6. Secularism as a Ground:
+   A State Government pursuing policies hostile to secularism violates the basic structure and can be lawfully dismissed under Article 356.
+
+IV. PROCEDURAL ROADMAP & LITIGATION ANCHORS (SENIOR COUNSEL REFERENCE)
+1. Forum: High Court under Article 226 or Supreme Court under Article 32.
+2. Pleading Strategy:
+   - Plead lack of objective material;
+   - Demonstrate that the Governor bypassed a floor test;
+   - Pray for interim injunction restraining the Election Commission from notifying fresh elections to keep restitution alive.
+3. Evidentiary Burden: Under BSA ss. 104–106, once the petitioner shows prima facie arbitrariness, the Union of India must disclose the material on which the President formed satisfaction.
+
+V. CONCLUSION & CURRENT-LAW MILESTONE
+The Bommai ruling converted Article 356 from a partisan political weapon into an extraordinary constitutional remedy. By ensuring judicial review, protecting state assemblies, and enforcing the floor test, it fortified Indian federalism. Current through the 106th Amendment (2023).`,
+      explanation: 'Exhaustive CREAC essay covering constitutional background, abuse of Art 356, the Bommai principles, and litigation strategy.',
+      relatedProvisionIds: ['constitution-article-356', 'constitution-article-352'],
+    },
+    {
+      id: 'emergency-qa-short',
+      question: 'Which Fundamental Rights cannot be suspended under Article 359 during an Emergency?',
+      answer: 'Following the 44th Constitutional Amendment Act, 1978, the right to move any court for the enforcement of Article 20 (protection in respect of conviction for offences) and Article 21 (right to life and personal liberty) CANNOT be suspended during any Emergency.',
+      relatedProvisionIds: ['constitution-article-359', 'constitution-article-20', 'constitution-article-21'],
+    },
   ],
 
-  relatedTopics: ['Centre–State Relations', 'Basic Structure Doctrine', 'Fundamental Rights'],
+  relatedTopics: [
+    'Article 21 — Life & Personal Liberty',
+    'Centre–State Relations',
+    'Basic Structure Doctrine',
+    'Union & State Judiciary',
+  ],
 
   cases: [
-    { name: 'S.R. Bommai v. Union of India', year: 1994, citation: '(1994) 3 SCC 1', holding: 'Article 356 proclamations are subject to limited judicial review; secularism is part of the basic structure.', relevance: 'Leading authority on President’s Rule and federalism.' },
+    {
+      name: 'ADM Jabalpur v. Shivkant Shukla',
+      year: 1976,
+      citation: '(1976) 2 SCC 521',
+      holding: 'Held that during emergency no person had locus standi to move writ of habeas corpus. (Formally overruled by 44th Amendment and Puttaswamy).',
+      relevance: 'The darkest hour of Indian jurisprudence, corrected by constitutional amendment.',
+    },
+    {
+      name: 'S.R. Bommai v. Union of India',
+      year: 1994,
+      citation: '(1994) 3 SCC 1',
+      holding: 'Article 356 is subject to judicial review; assembly cannot be dissolved until parliamentary approval; floor test is mandatory.',
+      relevance: 'The landmark authority curbing abuse of President’s Rule.',
+    },
+    {
+      name: 'Rameshwar Prasad v. Union of India',
+      year: 2006,
+      citation: '(2006) 2 SCC 1',
+      holding: 'Dissolution of Bihar Assembly on subjective reports of horse-trading held unconstitutional and malafide.',
+      relevance: 'Reaffirmed Bommai and curbed partisan gubernatorial reports.',
+    },
+    {
+      name: 'Nabam Rebia v. Deputy Speaker, Arunachal Pradesh',
+      year: 2016,
+      citation: '(2016) 8 SCC 1',
+      holding: 'Governor cannot act without aid and advise of Cabinet in summoning assembly; restored dismissed government.',
+      relevance: 'Modern milestone on gubernatorial discretion and restoration of government.',
+    },
   ],
 
-  bareActPointers: ['Art 352', 'Art 356', 'Art 360', 'Arts 358–359'],
+  bareActPointers: ['Art 352', 'Art 356', 'Art 358', 'Art 359', 'Art 360', 'Art 365', 'Art 20', 'Art 21'],
 
   examTips: [
-    'Always list Arts 352, 356, 360.',
-    'Mention 44th Amendment safeguards for national emergency.',
-    'Cite Bommai for Art 356 judicial review.',
-    'Keep FR suspension discussion tied to Arts 358–359 at a high level unless the question demands detail.',
+    'Always mention the 44th Amendment (1978) changes: substituted "armed rebellion", written Cabinet advice, 1-month approval by special majority, and non-suspendability of Arts 20 & 21.',
+    'For Article 356, memorize the 5 key pillars of S.R. Bommai (judicial review, floor test, no pre-approval dissolution, secularism, restoration power).',
+    'Distinguish between Art 358 (automatic suspension of Art 19 during external war) and Art 359 (presidential order suspending remedy for specified rights).',
   ],
-
 
   examFrameworks: [
     {
       marks: 10,
-      question: 'Write a 10-mark answer on this topic.',
+      question: 'Explain National Emergency under Article 352 and 44th Amendment safeguards.',
       steps: [
-        'Introduce the concept and name the governing provision.',
-        'Explain the legal idea in student language — not only the Bare Act words.',
-        'State essential elements or the main rule.',
-        'Cite one leading authority and its principle.',
-        'Give a short illustration or apply the rule to facts.',
-        'Note a material exception or distinction.',
-        'Conclude with the current legal position.',
+        'State the three grounds (war, external aggression, armed rebellion).',
+        'Explain written Cabinet advice and 1-month special majority approval.',
+        'Contrast Article 358 (Art 19) with Article 359 (presidential order).',
+        'Highlight absolute immunity of Articles 20 and 21.',
+        'Conclude with current legal position under the 106th Amendment.',
       ],
     },
     {
       marks: 16,
-      question: 'Expand the same topic into a 16-mark answer.',
+      question: 'Critically analyze Article 356, federalism, and the S.R. Bommai judgment.',
       steps: [
-        'Introduction and meaning.',
-        'Why the rule exists / brief history if relevant.',
-        'Legal foundation and elements in detail.',
-        'Exceptions, limitations and an important distinction.',
-        'Two or more authorities with ratio, not only names.',
-        'A hypothetical with analysis.',
-        'Current-law position and a short critical comment.',
-        'Conclusion.',
+        'Introduction: Dr. Ambedkar’s "dead letter" hope vs history of abuse.',
+        'Statutory anatomy of Article 356 and Article 365.',
+        'Detailed analysis of the S.R. Bommai 9-judge bench ruling.',
+        'The mandatory floor test and ban on premature assembly dissolution.',
+        'Judicial review of presidential satisfaction and power of restoration.',
+        'Senior counsel litigation strategy and conclusion.',
       ],
     },
   ],
 
   revisionPoints: [
-    'Start with the provision and the legal idea, not a section dump.',
-    'Name the leading case and state what it actually held.',
-    'Current through the 106th Amendment (2023) for constitutional topics.',
+    'National Emergency (Art 352): 1 month, special majority, 6 months duration.',
+    '44th Amendment: "Armed rebellion" replaced "internal disturbance"; written Cabinet advice.',
+    'Articles 20 and 21 can NEVER be suspended under Article 359.',
+    'President’s Rule (Art 356): Simple majority within 2 months; Bommai mandates floor test.',
+    'Assembly cannot be dissolved until Parliament approves Article 356.',
   ],
-
-
 }
 
 export default content

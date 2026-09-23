@@ -95,7 +95,7 @@ function bsaSectionTopics(): LawTopic[] {
 }
 
 const CONSTITUTION_HIGH_YIELD = new Set([
-  '12', '13', '14', '15', '16', '19', '21', '21A', '32', '136', '141', '226', '352', '356', '368', '370',
+  '12', '13', '14', '15', '16', '19', '20', '21', '21A', '22', '25', '26', '29', '30', '32', '72', '123', '124', '131', '136', '141', '142', '143', '161', '213', '226', '227', '246', '254', '300A', '311', '324', '329', '352', '356', '360', '368', '370',
 ])
 
 function constitutionArticleTopics(): LawTopic[] {
@@ -154,6 +154,9 @@ export const SUBJECTS: LawSubjectMeta[] = [
       { id: 'preamble', name: 'Preamble', type: 'theme', note: 'Nature of Constitution; key words tested in MCQs', keywords: ['preamble', 'sovereign', 'socialist', 'secular'], highYield: true },
       { id: 'fundamental-rights', name: 'Fundamental Rights', type: 'theme', range: 'Arts 12–35', note: 'Part III — core of AIBE constitutional questions', keywords: ['fundamental rights', 'part iii'], highYield: true },
       { id: 'art-32-226', name: 'Writs (Arts 32 & 226)', type: 'theme', range: 'Arts 32, 226', note: 'Habeas corpus, mandamus, prohibition, certiorari, quo warranto', keywords: ['writs', 'article 32', 'article 226'], highYield: true },
+      { id: 'equality-reservation', name: 'Equality & Affirmative Action (Arts 15 & 16)', type: 'theme', range: 'Arts 15–16', note: 'Substantive equality, Creamy layer, 50% ceiling, EWS & Sub-classification (Indra Sawhney, Nagaraj, Davinder Singh)', keywords: ['reservation', 'article 15', 'article 16', 'creamy layer', 'ews'], highYield: true },
+      { id: 'freedom-religion', name: 'Freedom of Religion & Secularism (Arts 25–28)', type: 'theme', range: 'Arts 25–28', note: 'Conscience, ERP test, denominational autonomy & secularism (Shirur Mutt, Sabarimala)', keywords: ['freedom of religion', 'article 25', 'article 26', 'secularism', 'sabarimala'], highYield: true },
+      { id: 'minority-rights', name: 'Cultural & Educational Rights of Minorities (Arts 29 & 30)', type: 'theme', range: 'Arts 29–30', note: 'Conservation of culture, institutional autonomy, State as unit (T.M.A. Pai, P.A. Inamdar, Pramati)', keywords: ['minority rights', 'article 29', 'article 30', 'tma pai'], highYield: true },
       { id: 'dpsp', name: 'Directive Principles (DPSP)', type: 'theme', range: 'Part IV', keywords: ['dpsp'] },
       { id: 'fundamental-duties', name: 'Fundamental Duties', type: 'theme', range: 'Part IVA, Art 51A', keywords: ['fundamental duties'] },
       { id: 'centre-state', name: 'Centre–State Relations', type: 'theme', note: 'Legislative, administrative, financial', keywords: ['federalism', 'centre state'] },
@@ -164,6 +167,12 @@ export const SUBJECTS: LawSubjectMeta[] = [
       { id: 'doctrine-eclipse', name: 'Doctrine of Eclipse', type: 'doctrine', note: 'Pre-Constitution laws vs FR; Art 13', keywords: ['doctrine of eclipse'], highYield: true },
       { id: 'doctrine-severability', name: 'Doctrine of Severability', type: 'doctrine', note: 'Invalid part can be severed if rest survives', keywords: ['severability'], highYield: true },
       { id: 'doctrine-colourable-legislation', name: 'Doctrine of Colourable Legislation', type: 'doctrine', note: 'Cannot do indirectly what cannot be done directly', keywords: ['colourable legislation'], highYield: true },
+      { id: 'doctrine-waiver', name: 'Doctrine of Waiver of Fundamental Rights', type: 'doctrine', note: 'Non-waiver of Part III rights (Basheshar Nath, Olga Tellis)', keywords: ['doctrine of waiver', 'basheshar nath', 'fundamental rights'], highYield: true },
+      { id: 'doctrine-repugnancy', name: 'Doctrine of Repugnancy (Article 254)', type: 'doctrine', note: 'Concurrent list conflicts, 3 tests of repugnancy & presidential assent (M. Karunanidhi, Kaiser-I-Hind)', keywords: ['repugnancy', 'article 254', 'concurrent list'], highYield: true },
+      { id: 'art-300a', name: 'Right to Property (Article 300A)', type: 'theme', range: 'Art 300A', note: 'Constitutional & human right status, eminent domain & anti-land grabbing (K.T. Plantation, Vidya Devi)', keywords: ['right to property', 'article 300a', 'eminent domain'], highYield: true },
+      { id: 'executive-ordinance-pardon', name: 'Executive Powers: Ordinances & Pardoning (Arts 72, 123, 161, 213)', type: 'theme', range: 'Arts 72, 123, 161, 213', note: 'Anti-ordinance raj (D.C. Wadhwa, Krishna Kumar Singh) & clemency review (Maru Ram, Epuru Sudhakar)', keywords: ['ordinance', 'pardon', 'article 123', 'article 72', 'article 213', 'article 161'], highYield: true },
+      { id: 'civil-services-art-311', name: 'Civil Services & Safeguards (Arts 309–311)', type: 'theme', range: 'Arts 309–311', note: 'Doctrine of pleasure, inquiry procedural rights & second proviso exceptions (Tulsiram Patel, B. Karunakar)', keywords: ['civil services', 'article 311', 'doctrine of pleasure', 'tulsiram patel'], highYield: true },
+      { id: 'elections-art-324', name: 'Elections & Election Commission (Arts 324–329)', type: 'theme', range: 'Arts 324–329', note: 'Plenary powers (Gill), multi-member parity (Seshan), appointment benchmark (Anoop Baranwal) & Art 329 bar', keywords: ['elections', 'election commission', 'article 324', 'article 329'], highYield: true },
       { id: 'judiciary', name: 'Union & State Judiciary', type: 'theme', note: 'SC & HC jurisdiction, appointment, independence', keywords: ['supreme court', 'high court'] },
       ...constitutionArticleTopics(),
     ],

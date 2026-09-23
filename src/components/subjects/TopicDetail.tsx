@@ -368,11 +368,12 @@ export function TopicDetail({
           {content.hypotheticals.map((item) => (
             <article key={item.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 space-y-3">
               {item.title && <h4 className="font-semibold text-sm">{item.title}</h4>}
-              <HypoBlock label="Facts" text={item.facts} />
-              <HypoBlock label="Legal question" text={item.question} />
-              <HypoBlock label="Applicable law" text={item.applicableLaw} />
-              <HypoBlock label="Analysis" text={item.analysis} />
-              <HypoBlock label="Conclusion" text={item.conclusion} />
+              {item.facts && <HypoBlock label="Facts" text={item.facts} />}
+              {item.scenario && <HypoBlock label="Scenario" text={item.scenario} />}
+              {item.question && <HypoBlock label="Legal question" text={item.question} />}
+              {item.applicableLaw && <HypoBlock label="Applicable law" text={item.applicableLaw} />}
+              {item.analysis && <HypoBlock label="Analysis" text={item.analysis} />}
+              {item.conclusion && <HypoBlock label="Conclusion" text={item.conclusion} />}
             </article>
           ))}
         </section>
@@ -381,31 +382,48 @@ export function TopicDetail({
       {!loading && content?.distinctions && content.distinctions.length > 0 && (
         <section className="space-y-3">
           <h3 className="text-lg font-bold text-slate-900 dark:text-white">Important distinctions</h3>
-          {content.distinctions.map((item) => (
-            <article key={item.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden">
+          {content.distinctions.map((item, idx) => (
+            <article key={item.id || `dist-${idx}`} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden">
               <div className="px-4 py-3 border-b border-slate-100 dark:border-slate-800">
-                <h4 className="font-semibold text-sm">{item.title}</h4>
+                <h4 className="font-semibold text-sm">{item.title || `${item.conceptA || item.left} vs ${item.conceptB || item.right}`}</h4>
               </div>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="bg-slate-50 dark:bg-slate-800/60 text-left">
-                      <th className="px-4 py-2 font-semibold">Point</th>
-                      <th className="px-4 py-2 font-semibold">{item.left}</th>
-                      <th className="px-4 py-2 font-semibold">{item.right}</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {item.rows.map((row) => (
-                      <tr key={row.point} className="border-t border-slate-100 dark:border-slate-800 align-top">
-                        <td className="px-4 py-2 font-medium text-slate-700 dark:text-slate-300">{row.point}</td>
-                        <td className="px-4 py-2 text-slate-600 dark:text-slate-400">{row.left}</td>
-                        <td className="px-4 py-2 text-slate-600 dark:text-slate-400">{row.right}</td>
+              {item.rows && item.rows.length > 0 ? (
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-slate-50 dark:bg-slate-800/60 text-left">
+                        <th className="px-4 py-2 font-semibold">Point</th>
+                        <th className="px-4 py-2 font-semibold">{item.left}</th>
+                        <th className="px-4 py-2 font-semibold">{item.right}</th>
                       </tr>
+                    </thead>
+                    <tbody>
+                      {item.rows.map((row) => (
+                        <tr key={row.point} className="border-t border-slate-100 dark:border-slate-800 align-top">
+                          <td className="px-4 py-2 font-medium text-slate-700 dark:text-slate-300">{row.point}</td>
+                          <td className="px-4 py-2 text-slate-600 dark:text-slate-400">{row.left}</td>
+                          <td className="px-4 py-2 text-slate-600 dark:text-slate-400">{row.right}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              ) : item.points && item.points.length > 0 ? (
+                <div className="p-4 space-y-2">
+                  <div className="grid grid-cols-2 gap-3 text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
+                    <div>{item.conceptA || item.left}</div>
+                    <div>{item.conceptB || item.right}</div>
+                  </div>
+                  <ul className="space-y-1.5 text-sm text-slate-700 dark:text-slate-300">
+                    {item.points.map((pt, pIdx) => (
+                      <li key={pIdx} className="flex items-start gap-2">
+                        <span className="text-blue-500 mt-1">•</span>
+                        <span>{pt}</span>
+                      </li>
                     ))}
-                  </tbody>
-                </table>
-              </div>
+                  </ul>
+                </div>
+              ) : null}
             </article>
           ))}
         </section>
@@ -414,9 +432,9 @@ export function TopicDetail({
       {!loading && content?.misconceptions && content.misconceptions.length > 0 && (
         <section className="space-y-3">
           <h3 className="text-lg font-bold text-slate-900 dark:text-white">Common misconceptions / exam traps</h3>
-          {content.misconceptions.map((item) => (
-            <article key={item.id} className="rounded-2xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/40 dark:bg-amber-950/20 p-4">
-              <p className="text-sm font-semibold text-amber-900 dark:text-amber-200">Trap: {item.trap}</p>
+          {content.misconceptions.map((item, idx) => (
+            <article key={item.id || `misc-${idx}`} className="rounded-2xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/40 dark:bg-amber-950/20 p-4">
+              <p className="text-sm font-semibold text-amber-900 dark:text-amber-200">Trap: {item.trap || item.misconception}</p>
               <p className="mt-2 text-sm leading-relaxed text-slate-700 dark:text-slate-300">{item.correction}</p>
             </article>
           ))}
@@ -780,7 +798,8 @@ function StudyBody({ text }: { text: string }) {
   )
 }
 
-function HypoBlock({ label, text }: { label: string; text: string }) {
+function HypoBlock({ label, text }: { label: string; text?: string }) {
+  if (!text) return null
   return (
     <div>
       <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500">{label}</p>

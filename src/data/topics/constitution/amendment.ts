@@ -1,122 +1,331 @@
 import type { TopicContent } from '../loadTopicContent'
 
-/**
- * Amendment of the Constitution
- * Subject: constitution | Topic id: amendment
- * Article 368 and basic structure limit.
- */
 const content: TopicContent = {
+  glance:
+    'Article 368 prescribes the constituent power and procedure for amending the Constitution of India. It features three methods of amendment: simple majority outside Article 368, special majority under Article 368(2), and special majority with ratification by half the State Legislatures for federal provisions. Substantively constrained by the Basic Structure Doctrine.',
 
-  study: `Article 368
-Article 368 confers power and procedure to amend the Constitution. Amendments may require special majorities and, for certain provisions, ratification by States.
+  study: `Topic at a Glance
+Article 368, situated in Part XX of the Constitution, governs the amendment of the Constitution. It reconciles the competing needs of constitutional permanence and adaptation, preventing the Constitution from becoming either an unalterable relic or a fragile plaything of fleeting legislative majorities.
 
-Basic structure limit
-Kesavananda Bharati held that amending power is wide but cannot destroy the basic structure of the Constitution. Minerva Mills affirmed that limited amending power itself is part of the basic structure. Later cases (including Coelho on Ninth Schedule laws after 24 April 1973) apply basic structure review in specific contexts.
+Constitutional Anatomy: The Three Modes of Amendment
+Although Article 368 is titled “Power of Parliament to amend the Constitution and procedure therefor”, the Indian Constitution actually provides three distinct methods of amendment:
+1. Amendments by Simple Majority (Outside Article 368):
+   - Certain provisions can be amended by ordinary legislative procedure (simple majority of members present and voting in each House), and are expressly declared by the Constitution not to be amendments for the purposes of Article 368:
+     (a) Formation of new States, alteration of boundaries or names (Articles 2, 3, and 4);
+     (b) Creation or abolition of Legislative Councils in States (Article 169);
+     (c) Administration of Scheduled Areas and Scheduled Tribes (Fifth and Sixth Schedules);
+     (d) Quorum, official languages, and privileges of Parliament (Articles 100, 105, 120, 210, 239A).
+2. Amendments by Special Majority under Article 368(2):
+   - The primary mode of constitutional amendment. Requires:
+     (a) Majority of the total membership of each House of Parliament (absolute majority); AND
+     (b) Majority of not less than two-thirds of the members present and voting in each House.
+   - Applies to: Part III (Fundamental Rights), Part IV (Directive Principles of State Policy), and all other provisions not covered by the simple majority or the federal proviso.
+3. Amendments by Special Majority plus State Ratification (Proviso to Article 368(2)):
+   - Governs federal provisions where the rights and powers of the States are directly affected.
+   - Requires the special majority of Parliament PLUS ratification by resolutions passed by the Legislatures of not less than one-half of the States before being presented to the President.
+   - The entrenched federal provisions listed in the Proviso are:
+     (a) Election of the President (Articles 54 and 55);
+     (b) Extent of executive power of the Union and States (Articles 73 and 162);
+     (c) The Union Judiciary (Supreme Court, Chapter IV of Part V) and High Courts (Chapter V of Part VI, Article 241);
+     (d) The Goods and Services Tax Council (Article 279A, inserted by 101st Amendment);
+     (e) Any of the Lists in the Seventh Schedule (Union, State, Concurrent Lists);
+     (f) The representation of States in Parliament (Fourth Schedule and Article 80);
+     (g) The provisions of Article 368 itself.
 
-Current enacted position (through the 106th Amendment)
-The latest enacted amendment is the Constitution (One Hundred and Sixth Amendment) Act, 2023 — the Nari Shakti Vandan Adhiniyam. It inserts Articles 330A, 332A and 334A and amends Article 239AA to reserve one-third of seats for women in the Lok Sabha, State Assemblies and the Delhi Assembly (including within SC/ST reserved seats) for 15 years from commencement, extendable by law. Presidential assent: 28 September 2023. The provision was brought into force on 16 April 2026, but the 33% quota itself operates only after the first census after commencement and a subsequent delimitation.
+Procedural Rigour & Safeguards under Article 368
+1. Initiation: A Bill for amendment can be initiated ONLY in either House of Parliament (Lok Sabha or Rajya Sabha). It CANNOT be initiated in any State Legislature.
+2. Introduction: Can be introduced by a Minister or a private member; does NOT require prior recommendation of the President.
+3. Separate Passing: Must be passed by each House separately. There is NO provision for a Joint Sitting under Article 108 to resolve a deadlock between the two Houses on a Constitution Amendment Bill.
+4. Mandatory Presidential Assent:
+   When the Bill is presented to the President after due passage, the President “shall give his assent to the Bill” (24th Amendment, 1971). The President has NO power to withhold assent, return the Bill for reconsideration, or exercise pocket veto.
 
-Related recent amendments students must not skip
-• 101st (2016) — GST / Articles 246A, 269A, 279A
-• 102nd (2018) — constitutional status to NCBC; 105th (2021) restored State SEBC lists
-• 103rd (2019) — EWS reservation (Arts 15(6), 16(6)); upheld in Janhit Abhiyan (2022)
-• 104th (2019) — SC/ST reservation in legislatures extended to 2030; Anglo-Indian nomination ended
-• 105th (2021) — State power to identify SEBCs
-• 106th (2023) — women’s reservation in Lok Sabha, Assemblies, Delhi
+Constituent Power vs Ordinary Legislative Power
+The 24th Amendment (1971) clarified that Parliament exercises “constituent power” when amending under Article 368, distinguishing it from ordinary legislative competence under Articles 245–248. Constituent power is higher in rank than statutory power, yet it remains subject to the inherent limitations of the Constitution itself.
 
-Procedure vs substance
-Students must separate (i) procedural compliance with Article 368 from (ii) substantive basic structure limits.
+Substantive Constitutional Limitation: The Basic Structure Doctrine
+In Kesavananda Bharati v. State of Kerala (1973) 4 SCC 225, the Supreme Court ruled that the constituent power to “amend” does not confer the power to abrogate, emasculate, or destroy the basic structure or constitutional identity. Parliament cannot alter the essential features of the Constitution (democracy, secularism, federalism, judicial review, separation of powers). In Minerva Mills (1980), clauses (4) and (5) of Article 368, which sought to remove all limitations and bar judicial review, were struck down as unconstitutional.
 
-Exam focus
-Start with Art 368. State Kesavananda. Add Minerva Mills / Coelho as follow-ups. Close with the 106th Amendment if the question is “latest amendment”. Do not treat Article 368 as unlimited. Educational note — confirm the Bare Act and Gazette for commencement.`,
+Procedural & Courtroom Anchors (Senior Counsel Checklist)
+1. Grounds of Challenge to a Constitutional Amendment:
+   (a) Procedural Ultra Vires: Failure to comply with mandatory voting thresholds (special majority) or failure to secure state ratification under the Proviso to Article 368(2).
+   (b) Substantive Ultra Vires: Violation of the Basic Structure Doctrine.
+2. Exclusive Forum: Challenges to constitutional amendments lie before the High Courts (Article 226) and Supreme Court (Article 32), and are heard by a Constitution Bench of at least 5 judges under Article 145(3).
+3. Landmark Milestone Amendments:
+   - 1st Amendment (1951): Articles 31A, 31B, Ninth Schedule, reasonable restrictions to Art 19.
+   - 24th Amendment (1971): Made presidential assent mandatory; inserted Art 13(4) and 368(3).
+   - 42nd Amendment (1976): Mini-constitution; secularism, socialism, fundamental duties.
+   - 44th Amendment (1978): Removed property as FR; protected Articles 20 and 21 during emergency; restrained Art 352/356.
+   - 101st Amendment (2016): GST regime and Article 279A.
+   - 103rd Amendment (2019): 10% EWS reservation under Articles 15(6) and 16(6) (upheld in Janhit Abhiyan, 2022).
+   - 106th Amendment (2023): Nari Shakti Vandan Adhiniyam (women’s reservation in Lok Sabha and State Assemblies).
+
+Current-Law Position & Milestone
+Article 368 provides a flexible yet resilient amending mechanism. Current through the 106th Constitutional Amendment Act, 2023.`,
 
   sections: [
-    { id: 'amend-368', title: 'Article 368', order: 1, content: [
-      'Article 368 provides the power of Parliament to amend the Constitution and the procedure for amendment.',
-      'Some amendments require State ratification in addition to special majorities.',
-    ]},
-    { id: 'amend-basic-structure', title: 'Basic structure limitation', order: 2, content: [
-      'Kesavananda Bharati held that Parliament cannot amend the Constitution so as to damage or destroy its basic structure.',
-      'Minerva Mills strengthened the idea that limited amending power is itself basic.',
-    ]},
-    { id: 'amend-latest', title: 'Latest enacted amendment — 106th (2023)', order: 3, content: [
-      'The 106th Amendment (Nari Shakti Vandan Adhiniyam) reserves one-third of seats for women in the Lok Sabha, State Assemblies and the Delhi Assembly.',
-      'The quota operates only after census-based delimitation. The count of enacted amendments remains 106.',
-    ]},
+    {
+      id: 'art-368-modes',
+      title: 'Three Modes of Constitutional Amendment',
+      order: 1,
+      content: [
+        'Mode 1: Simple Majority outside Article 368 (Arts 2, 3, 4, 169, Fifth/Sixth Schedules).',
+        'Mode 2: Special Majority under Article 368(2) (majority of total membership + 2/3rd present & voting).',
+        'Mode 3: Special Majority + Ratification by half the States for entrenched federal provisions.',
+      ],
+    },
+    {
+      id: 'art-368-federal-proviso',
+      title: 'Entrenched Provisions Requiring State Ratification',
+      order: 2,
+      content: [
+        'Presidential election (Arts 54, 55); Executive power extent (Arts 73, 162).',
+        'Supreme Court and High Courts (Chapter IV Part V, Chapter V Part VI, Art 241).',
+        'Seventh Schedule Lists; Representation of States in Parliament; Article 368 itself; GST Council (Art 279A).',
+      ],
+    },
+    {
+      id: 'art-368-procedural-rules',
+      title: 'Procedural Rigour & Safeguards',
+      order: 3,
+      content: [
+        'Initiated only in Parliament (not in State Legislatures); no prior presidential recommendation needed.',
+        'No joint sitting under Article 108 if Houses disagree on an amendment bill.',
+        'Mandatory presidential assent: President cannot veto or return a Constitution Amendment Bill.',
+      ],
+    },
   ],
 
   provisions: [
     { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-368', article: 'Article 368', title: 'Power of Parliament to amend the Constitution and procedure therefor' },
-    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-13', article: 'Article 13', title: 'Laws inconsistent with or in derogation of the Fundamental Rights' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-13', article: 'Article 13', title: 'Laws inconsistent with or in derogation of the fundamental rights' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-108', article: 'Article 108', title: 'Joint sitting of both Houses in certain cases' },
   ],
 
   examples: [
-    { id: 'amend-example', title: 'Amendment vs basic feature', description: 'Even if Article 368 procedure is followed, an amendment that destroys judicial review or democracy can be struck down for violating basic structure.' },
+    {
+      id: 'art-368-ex-1',
+      title: 'Illustration 1 — Procedural Invalidation (Omission of State Ratification)',
+      description: 'Parliament passes a Constitution Amendment Bill altering the jurisdiction of High Courts and modifying the Concurrent List of the Seventh Schedule by special majority in both Houses, and immediately presents it to the President for assent without obtaining resolutions of ratification from at least half the State Legislatures. The amendment is unconstitutional and void for non-compliance with the mandatory Proviso to Article 368(2).',
+    },
+    {
+      id: 'art-368-ex-2',
+      title: 'Illustration 2 — Valid Passage of Federal Amendment (101st GST Amendment)',
+      description: 'When Parliament introduced the Goods and Services Tax (GST) altering federal tax powers and creating Article 279A, the Bill was passed by a two-thirds majority in Lok Sabha and Rajya Sabha and subsequently ratified by more than 15 State Legislatures before receiving Presidential assent as the 101st Amendment Act, 2016. The procedure was fully compliant with the Proviso to Article 368(2).',
+    },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'art-368-hypo',
+      title: '16-Mark Examination Hypothetical (Deadlock & Presidential Assent)',
+      facts: 'A Constitution Amendment Bill seeking to amend Article 19(2) by introducing a new ground of restriction is passed by the Lok Sabha by a two-thirds majority. The Rajya Sabha rejects the Bill. The Prime Minister advises the President to convene a Joint Sitting of both Houses under Article 108 to resolve the deadlock. The joint sitting convenes and passes the Bill by a simple majority of combined members. The Bill is presented to the President, who withholds assent and returns the Bill for reconsideration.',
+      question: 'Analyze the constitutional validity of: (a) The convening of a Joint Sitting for a Constitution Amendment Bill; (b) The withholding of assent by the President under Article 368.',
+      applicableLaw: 'Article 368 of the Constitution of India; Article 108; 24th Constitutional Amendment Act, 1971.',
+      analysis: '1. Inadmissibility of Joint Sitting: Article 108 applies exclusively to ordinary legislative bills. Article 368(2) mandates that a Constitution Amendment Bill must be passed by each House separately by the prescribed special majority. A joint sitting cannot be summoned to bypass a deadlock on a Constitution Amendment Bill.\n2. Invalidation of Joint Passage: The passage of the amendment bill in a joint session by simple majority is illegal and void ab initio.\n3. Mandatory Presidential Assent: Under Article 368(2) as amended by the 24th Amendment, when an amendment bill is duly passed, the President “shall give his assent”. The President has no power to withhold assent or return the Bill under Article 111.\n4. Dual Procedural Violation: Both the joint sitting mechanism and the withholding of assent violate the express constitutional scheme.',
+      conclusion: 'The entire amendment process is void. A Constitution Amendment Bill can never be passed in a joint sitting, and the President has no veto power under Article 368.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'art-368-constituent-v-legislative',
+      title: 'Constituent Power vs Ordinary Legislative Power',
+      left: 'Constituent Power (Article 368)',
+      right: 'Ordinary Legislative Power (Articles 245–248)',
+      rows: [
+        { point: 'Source', left: 'Derived directly from Article 368 constituent capacity.', right: 'Derived from legislative entries in the Seventh Schedule.' },
+        { point: 'Status', left: 'Constitutional amendment; superior to ordinary law.', right: 'Subordinate to the Constitution; void if it breaches Part III.' },
+        { point: 'Ground of Review', left: 'Tested only on Basic Structure & Article 368 procedure.', right: 'Tested on legislative competence and Part III rights.' },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'art-368-trap-1',
+      trap: 'A Constitution Amendment Bill can be passed in a Joint Sitting of Parliament under Article 108.',
+      correction: 'Article 108 applies only to ordinary bills. Article 368 mandates separate passage by both Houses; there is NO joint sitting for constitutional amendments.',
+    },
+    {
+      id: 'art-368-trap-2',
+      trap: 'The President can exercise a pocket veto or return a Constitution Amendment Bill for reconsideration.',
+      correction: 'Under Article 368(2), the President “shall give his assent”. Presidential assent is mandatory; no veto exists for constitutional amendments.',
+    },
+    {
+      id: 'art-368-trap-3',
+      trap: 'State Legislatures can initiate a Constitution Amendment Bill under Article 368.',
+      correction: 'A Constitution Amendment Bill can be initiated ONLY in either House of Parliament. State Legislatures have zero power to introduce an amendment bill.',
+    },
   ],
 
   questionsAndAnswers: [
-    { id: 'amend-qa-1', question: 'Which Article provides for constitutional amendment?', answer: 'Article 368.', relatedProvisionIds: ['constitution-article-368'] },
-    { id: 'amend-qa-2', question: 'What is the basic structure limitation?', answer: 'Parliament cannot use Article 368 to damage or destroy the Constitution’s basic structure (Kesavananda Bharati).', relatedProvisionIds: ['constitution-article-368'] },
-    { id: 'amend-qa-3', question: 'Which case held that limited amending power is itself part of the basic structure?', answer: 'Minerva Mills Ltd. v. Union of India (1980).', relatedProvisionIds: ['constitution-article-368'] },
-    { id: 'amend-qa-4', question: 'What is the latest enacted constitutional amendment?', answer: 'The 106th Amendment, 2023 (Nari Shakti Vandan Adhiniyam) — women’s reservation in the Lok Sabha, State Assemblies and Delhi Assembly, operative after delimitation.', relatedProvisionIds: ['constitution-article-368'] },
+    {
+      id: 'amendment-qa-10',
+      marks: 10,
+      question: 'Explain the procedure for amending the Constitution under Article 368. Which provisions require ratification by state legislatures?',
+      answer: `I. ISSUE & CONSTITUTIONAL FRAMEWORK
+Article 368 of the Constitution of India governs the procedure and constituent power for constitutional amendments. The key issue is the procedural requirements and the provisions that mandate state ratification.
+
+II. THE PROCEDURAL STEPS UNDER ARTICLE 368
+1. Initiation: Can be introduced only in Parliament (Lok Sabha or Rajya Sabha), by a Minister or private member, without prior presidential recommendation.
+2. Special Majority: Must be passed in each House separately by:
+   (a) A majority of the total membership of the House; AND
+   (b) A majority of not less than two-thirds of the members present and voting.
+3. No Joint Sitting: Article 108 does not apply; disagreement between Houses terminates the bill.
+4. Mandatory Assent: The President “shall give his assent” (24th Amendment, 1971).
+
+III. PROVISIONS REQUIRING STATE RATIFICATION (PROVISO TO ARTICLE 368(2))
+If an amendment touches the federal structure, it must also be ratified by the Legislatures of not less than one-half of the States:
+1. Election of the President (Articles 54 and 55);
+2. Extent of executive power of Union and States (Articles 73 and 162);
+3. Supreme Court and High Courts (Chapter IV Part V, Chapter V Part VI, Art 241);
+4. Distribution of legislative powers (Seventh Schedule Lists);
+5. Representation of States in Parliament (Fourth Schedule);
+6. Goods and Services Tax Council (Article 279A);
+7. The provisions of Article 368 itself.
+
+IV. SUBSTANTIVE LIMITATION
+Parliament’s constituent power is constrained by the Basic Structure Doctrine (Kesavananda Bharati).
+
+V. CONCLUSION
+Article 368 harmonizes rigidity with flexibility, protecting the federal compact through mandatory state ratification. Current through the 106th Amendment (2023).`,
+      explanation: 'Formatted according to the IRAC method for 10-mark examination questions.',
+      relatedProvisionIds: ['constitution-article-368'],
+    },
+    {
+      id: 'amendment-qa-16',
+      marks: 16,
+      question: 'Critically examine the constituent power of Parliament to amend the Constitution under Article 368. Differentiate between constituent power and ordinary legislative power, and analyze procedural and substantive limitations.',
+      answer: `I. INTRODUCTION & CONSTITUTIONAL ARCHITECTURE
+A written constitution must balance stability with adaptability. Thomas Jefferson famously warned that each generation must be free to govern itself, while Lord Bryce classified constitutions into rigid and flexible. The Indian Constitution, as Dr. B.R. Ambedkar explained, avoids the extreme rigidity of the American Constitution and the absolute flexibility of the unwritten British Constitution. Article 368 in Part XX embodies this synthesized architecture, empowering Parliament to exercise constituent power while erecting procedural and substantive fences.
+
+II. CONSTITUENT POWER VS ORDINARY LEGISLATIVE POWER
+1. The Jurisprudential Distinction:
+   - Ordinary Legislative Power (Articles 245–248): Exercised by Parliament and State Legislatures under the Seventh Schedule Lists. Subordinate to the Constitution; an ordinary statute is void under Article 13(2) if it abridges Fundamental Rights.
+   - Constituent Power (Article 368): Exercised by Parliament in its extraordinary capacity to add, vary, or repeal constitutional provisions. It is sovereign constituent authority, higher in pedigree than ordinary statutes.
+2. The Historic ping-pong on Article 13(2):
+   In Shankari Prasad (1951), the Court held that "law" in Article 13 excluded Article 368 amendments. In Golaknath (1967), the Court reversed this and treated amendments as ordinary law. The 24th Amendment (1971) settled the distinction by adding Article 13(4) and Article 368(3), upheld in Kesavananda Bharati (1973).
+
+III. PROCEDURAL ANATOMY OF ARTICLE 368
+1. Threefold Classification of Amendments:
+   - Simple Majority outside Article 368 (Arts 2, 3, 4, 169, Schedules V & VI).
+   - Special Majority under Article 368(2) (majority of total membership + 2/3rd present and voting).
+   - Special Majority plus State Ratification (Proviso to Article 368(2)) for entrenched federal chapters.
+2. Procedural Inflexibilities:
+   (a) Initiation restricted exclusively to Parliament; States cannot introduce an amendment bill.
+   (b) Separate passage by both Houses; joint sitting under Article 108 is strictly prohibited.
+   (c) Mandatory Presidential Assent: The President has no veto or return power under Article 368.
+
+IV. PROCEDURAL & SUBSTANTIVE LIMITATIONS
+1. Procedural Limitations:
+   Failure to secure the requisite two-thirds majority in either House or failure to secure ratification by 50% of State Legislatures under the Proviso renders the amendment void for procedural ultra vires.
+2. Substantive Limitations: The Basic Structure Doctrine:
+   In Kesavananda Bharati v. State of Kerala (1973), a 13-judge bench established that the power to "amend" is not a power to alter or destroy the constitutional identity.
+   In Minerva Mills (1980), the Court invalidated Article 368(4) and (5), ruling that:
+   - Parliament cannot convert a limited constituent power into an unlimited one.
+   - A limited amending power is itself an untouchable pillar of the Basic Structure.
+3. Post-1973 Ninth Schedule Scrutiny (I.R. Coelho, 2007):
+   The amending power cannot be used to immunize statutes that violate the basic structure.
+
+V. PROCEDURAL ROADMAP & LITIGATION CHECKLIST (SENIOR COUNSEL REFERENCE)
+1. Forum: Challenge to a constitutional amendment lies directly before the Supreme Court under Article 32 or High Court under Article 226.
+2. Bench Composition: Must be adjudicated by a Constitution Bench of at least 5 judges under Article 145(3).
+3. Grounds of Pleading:
+   - Demonstrate procedural failure under Article 368(2); or
+   - Identify the specific pillar of the Basic Structure destroyed by the amendment and apply the Rights Test under I.R. Coelho.
+
+VI. CONCLUSION & CURRENT-LAW MILESTONE
+Article 368 serves as the pressure-valve of the Indian Republic. By maintaining a delicate equilibrium between constituent power, federal state consent, and judicial enforcement of the Basic Structure, it guarantees the enduring vitality of constitutional democracy. Current through the 106th Amendment (2023).`,
+      explanation: 'Exhaustive CREAC essay covering constituent vs legislative power, procedural modes, federal proviso, and basic structure constraints.',
+      relatedProvisionIds: ['constitution-article-368', 'constitution-article-13', 'constitution-article-108'],
+    },
+    {
+      id: 'amendment-qa-short',
+      question: 'Does the President possess veto power over a Constitution Amendment Bill under Article 368?',
+      answer: 'No. Following the 24th Constitutional Amendment Act, 1971, Article 368(2) specifies that the President “shall give his assent”. The President cannot withhold assent or return a Constitution Amendment Bill.',
+      relatedProvisionIds: ['constitution-article-368'],
+    },
   ],
 
-  relatedTopics: ['Basic Structure Doctrine', 'Fundamental Rights', 'Preamble'],
+  relatedTopics: [
+    'Basic Structure Doctrine',
+    'Fundamental Rights',
+    'Centre–State Relations',
+    'Union & State Judiciary',
+  ],
 
   cases: [
-    { name: 'Kesavananda Bharati v. State of Kerala', year: 1973, citation: '(1973) 4 SCC 225', holding: 'Parliament cannot amend the Constitution so as to damage or destroy its basic structure.', relevance: 'Foundation of the amending-power limit.' },
-    { name: 'Minerva Mills Ltd. v. Union of India', year: 1980, citation: '(1980) 3 SCC 625', holding: 'Limited amending power is part of the basic structure; struck down parts of the 42nd Amendment that upset FR–DPSP balance.', relevance: 'High-frequency follow-up to Kesavananda.' },
-    { name: 'I.R. Coelho v. State of Tamil Nadu', year: 2007, citation: '(2007) 2 SCC 1', holding: 'Laws placed in the Ninth Schedule after 24 April 1973 are open to basic structure review.', relevance: 'Ninth Schedule is not absolute immunity.' },
+    {
+      name: 'Shankari Prasad v. Union of India',
+      year: 1951,
+      citation: 'AIR 1951 SC 458',
+      holding: 'Parliament’s amending power under Article 368 is plenary; “law” in Article 13(2) does not include a constitutional amendment.',
+      relevance: 'First judicial decision on the scope of Article 368.',
+    },
+    {
+      name: 'I.C. Golaknath v. State of Punjab',
+      year: 1967,
+      citation: 'AIR 1967 SC 1643',
+      holding: 'An amendment under Article 368 is “law” under Article 13(2); Parliament has no power to abridge Fundamental Rights.',
+      relevance: 'Prompted the 24th Amendment and the Kesavananda showdown.',
+    },
+    {
+      name: 'Kesavananda Bharati v. State of Kerala',
+      year: 1973,
+      citation: '(1973) 4 SCC 225',
+      holding: 'Parliament can amend any part of the Constitution, but cannot alter, damage, or destroy the Basic Structure.',
+      relevance: 'Formulated the substantive implied limitation on Article 368.',
+    },
+    {
+      name: 'Minerva Mills Ltd. v. Union of India',
+      year: 1980,
+      citation: '(1980) 3 SCC 625',
+      holding: 'Struck down Article 368(4) and (5); a limited amending power is an essential feature of the Basic Structure.',
+      relevance: 'Invalidated attempts to make Article 368 absolute and unreviewable.',
+    },
   ],
 
-  bareActPointers: ['Art 368', 'Art 13'],
+  bareActPointers: ['Art 368', 'Art 13', 'Art 108', 'Art 279A', 'Seventh Schedule'],
 
   examTips: [
-    'Open with Article 368 power + procedure.',
-    'State Kesavananda basic structure limit immediately.',
-    'Add Minerva Mills and Coelho as standard follow-ups.',
-    'If asked for the latest amendment: 106th (2023), women’s reservation, awaits delimitation.',
-    'Separate procedure compliance from substantive basic structure review.',
+    'Distinguish between amendments outside Article 368 (simple majority) and under Article 368 (special majority).',
+    'Memorize the federal provisions requiring State ratification under the Proviso to Article 368(2).',
+    'Remember: NO joint sitting under Article 108 for constitutional amendment bills.',
+    'Remember: President MUST give assent under the 24th Amendment (no veto power).',
   ],
-
 
   examFrameworks: [
     {
       marks: 10,
-      question: 'Write a 10-mark answer on this topic.',
+      question: 'Explain the procedure for amending the Constitution under Article 368 and the federal proviso.',
       steps: [
-        'Introduce the concept and name the governing provision.',
-        'Explain the legal idea in student language — not only the Bare Act words.',
-        'State essential elements or the main rule.',
-        'Cite one leading authority and its principle.',
-        'Give a short illustration or apply the rule to facts.',
-        'Note a material exception or distinction.',
-        'Conclude with the current legal position.',
+        'Introduction: Purpose and placement of Article 368 in Part XX.',
+        'Procedural requirements: Initiation in Parliament, special majority in both Houses.',
+        'List entrenched federal provisions requiring 50% State ratification.',
+        'Mandatory presidential assent (24th Amendment) and ban on joint sittings.',
+        'Conclude with the Basic Structure limitation under the 106th Amendment.',
       ],
     },
     {
       marks: 16,
-      question: 'Expand the same topic into a 16-mark answer.',
+      question: 'Critically examine the constituent power under Article 368, constituent vs legislative power, and limits.',
       steps: [
-        'Introduction and meaning.',
-        'Why the rule exists / brief history if relevant.',
-        'Legal foundation and elements in detail.',
-        'Exceptions, limitations and an important distinction.',
-        'Two or more authorities with ratio, not only names.',
-        'A hypothetical with analysis.',
-        'Current-law position and a short critical comment.',
-        'Conclusion.',
+        'Theoretical basis: Rigidity vs flexibility; constituent power vs ordinary legislative power.',
+        'Historical evolution: Shankari Prasad → Golaknath → 24th Amendment → Kesavananda.',
+        'Detailed procedural deconstruction of Article 368(2) and the federal proviso.',
+        'Substantive limitation: Basic Structure Doctrine and Minerva Mills invalidation of 368(4)/(5).',
+        'Litigation roadmap: Grounds of challenge, Constitution Bench composition, and remedies.',
+        'Conclusion and modern milestone.',
       ],
     },
   ],
 
   revisionPoints: [
-    'Start with the provision and the legal idea, not a section dump.',
-    'Name the leading case and state what it actually held.',
-    'Current through the 106th Amendment (2023) for constitutional topics.',
+    'Article 368: Special majority = 50% of total membership + 2/3rd present and voting.',
+    'Federal proviso: Special majority + ratification by 50% of States.',
+    'No joint sitting for amendment bills; President must give assent.',
+    'Basic Structure Doctrine limits Article 368 (Kesavananda / Minerva Mills).',
   ],
-
-
 }
 
 export default content
