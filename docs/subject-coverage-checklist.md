@@ -17,7 +17,7 @@
 | Bharatiya Nyaya Sanhita (BNS / IPC) | `bns` | high | 8 | 368 | 121 | 33% |
 | Evidence (BSA / Evidence Act) | `bsa` | high | 8 | 177 | 7 | 4% |
 | Family Law | `family` | high | 8 | 38 | 19 | 50% |
-| Contract, Specific Relief, Property & NI Act | `contract` | high | 8 | 56 | 0 | 0% |
+| Law of Contracts — Contract I, Contract II, Sale of Goods & Partnership | `contract` | high | 8 | 45 | 45 | 100% |
 | Petition Formats & Drafting | `petition-formats` | medium | 0 | 8 | 2 | 25% |
 | Law of Torts | `tort` | medium | 5 | 29 | 29 | 100% |
 | ADR & Arbitration | `adr` | medium | 4 | 19 | 0 | 0% |
@@ -1978,69 +1978,7 @@
 | [x] Complete | `islamic-gift-hiba` | FL-II Unit IV — Gift under Islamic Law (Hiba) | theme | General | No |
 | [x] Complete | `wakf-endowments` | FL-II Unit V — Religious Endowments & Wakf | theme | General | No |
 
-### Contract, Specific Relief, Property & NI Act (`contract`)
-- **Priority:** high | **AIBE Weightage:** 8 Questions
-- **Governing Acts:** Indian Contract Act, 1872, Specific Relief Act, 1963, Transfer of Property Act, 1882, Negotiable Instruments Act, 1881
-
-| Status | Topic ID | Topic Name | Type | Cluster | High Yield |
-|---|---|---|---|---|---|
-| [ ] Pending | `offer-acceptance` | Offer, Acceptance & Consideration | theme | General | ⭐ Yes |
-| [ ] Pending | `ica-s-2` | ICA s. 2 — Interpretation clause (Proposal, Acceptance, Consideration, Agreement, Contract) | section | Contract Act | ⭐ Yes |
-| [ ] Pending | `ica-s-3-9` | ICA ss. 3–9 — Communication, Acceptance and Revocation of Proposals | section | Contract Act | No |
-| [ ] Pending | `ica-s-10` | ICA s. 10 — What agreements are contracts | section | Contract Act | ⭐ Yes |
-| [ ] Pending | `ica-s-11` | ICA s. 11 — Who are competent to contract (Minor’s agreement, Mohori Bibee) | section | Contract Act | ⭐ Yes |
-| [ ] Pending | `ica-s-13-14` | ICA ss. 13 & 14 — Free Consent defined | section | Contract Act | ⭐ Yes |
-| [ ] Pending | `ica-s-15` | ICA s. 15 — Coercion defined | section | Contract Act | No |
-| [ ] Pending | `ica-s-16` | ICA s. 16 — Undue Influence defined | section | Contract Act | ⭐ Yes |
-| [ ] Pending | `ica-s-17` | ICA s. 17 — Fraud defined | section | Contract Act | ⭐ Yes |
-| [ ] Pending | `ica-s-18` | ICA s. 18 — Misrepresentation defined | section | Contract Act | No |
-| [ ] Pending | `ica-s-20-22` | ICA ss. 20–22 — Mistake of fact and law | section | Contract Act | No |
-| [ ] Pending | `ica-s-23` | ICA s. 23 — What consideration and objects are lawful | section | Contract Act | ⭐ Yes |
-| [ ] Pending | `ica-s-25` | ICA s. 25 — Agreement without consideration, void (Exceptions) | section | Contract Act | ⭐ Yes |
-| [ ] Pending | `ica-s-27` | ICA s. 27 — Agreement in restraint of trade, void | section | Contract Act | ⭐ Yes |
-| [ ] Pending | `ica-s-28` | ICA s. 28 — Agreements in restraint of legal proceedings, void | section | Contract Act | No |
-| [ ] Pending | `ica-s-30` | ICA s. 30 — Agreements by way of wager, void | section | Contract Act | No |
-| [ ] Pending | `ica-s-31` | ICA s. 31 — Contingent contract defined | section | Contract Act | No |
-| [ ] Pending | `ica-s-56` | ICA s. 56 — Agreement to do impossible act (Doctrine of Frustration) | section | Contract Act | ⭐ Yes |
-| [ ] Pending | `ica-s-62` | ICA s. 62 — Effect of novation, rescission, and alteration of contract | section | Contract Act | No |
-| [ ] Pending | `ica-s-68-72` | ICA ss. 68–72 — Quasi-contracts (Certain relations resembling contract) | section | Contract Act | ⭐ Yes |
-| [ ] Pending | `ica-s-73` | ICA s. 73 — Compensation for loss or damage caused by breach of contract | section | Contract Act | ⭐ Yes |
-| [ ] Pending | `ica-s-74` | ICA s. 74 — Compensation for breach of contract where penalty stipulated | section | Contract Act | ⭐ Yes |
-| [ ] Pending | `ica-s-124` | ICA s. 124 — Contract of indemnity defined | section | Special Contracts | No |
-| [ ] Pending | `ica-s-126` | ICA s. 126 — Contract of guarantee, surety, principal debtor, and creditor | section | Special Contracts | ⭐ Yes |
-| [ ] Pending | `ica-s-148` | ICA s. 148 — Bailment, bailor, and bailee defined | section | Special Contracts | No |
-| [ ] Pending | `ica-s-182` | ICA s. 182 — Agent and principal defined | section | Special Contracts | No |
-| [ ] Pending | `doctrine-privity` | Doctrine of Privity of Contract | doctrine | General | ⭐ Yes |
-| [ ] Pending | `sra-s-5-6` | SRA ss. 5 & 6 — Recovery of possession of specific immovable property | section | Specific Relief Act | ⭐ Yes |
-| [ ] Pending | `sra-s-10` | SRA s. 10 — Specific performance in respect of contracts (Mandatory rule) | section | Specific Relief Act | ⭐ Yes |
-| [ ] Pending | `sra-s-14` | SRA s. 14 — Contracts not specifically enforceable | section | Specific Relief Act | ⭐ Yes |
-| [ ] Pending | `sra-s-16` | SRA s. 16 — Personal bars to relief (Readiness and Willingness) | section | Specific Relief Act | ⭐ Yes |
-| [ ] Pending | `sra-s-20` | SRA s. 20 — Substituted performance of contract | section | Specific Relief Act | No |
-| [ ] Pending | `sra-s-34` | SRA s. 34 — Discretion of court as to declaration of status or right | section | Specific Relief Act | ⭐ Yes |
-| [ ] Pending | `sra-s-36-42` | SRA ss. 36–42 — Injunctions (Temporary, Perpetual & Mandatory) | section | Specific Relief Act | ⭐ Yes |
-| [ ] Pending | `tpa-s-5` | TPA s. 5 — Transfer of property defined | section | Transfer of Property Act | No |
-| [ ] Pending | `tpa-s-6` | TPA s. 6 — What may be transferred (Spes successionis exclusion) | section | Transfer of Property Act | ⭐ Yes |
-| [ ] Pending | `tpa-s-10` | TPA s. 10 — Condition restraining alienation | section | Transfer of Property Act | ⭐ Yes |
-| [ ] Pending | `tpa-s-13-14` | TPA ss. 13 & 14 — Transfer for benefit of unborn person & Rule against perpetuity | section | Transfer of Property Act | ⭐ Yes |
-| [ ] Pending | `tpa-s-35` | TPA s. 35 — Doctrine of Election | section | Transfer of Property Act | ⭐ Yes |
-| [ ] Pending | `tpa-s-41` | TPA s. 41 — Transfer by ostensible owner | section | Transfer of Property Act | ⭐ Yes |
-| [ ] Pending | `tpa-s-43` | TPA s. 43 — Transfer by unauthorized person (Feeding the grant by estoppel) | section | Transfer of Property Act | No |
-| [ ] Pending | `tpa-s-52` | TPA s. 52 — Transfer of property pending suit (Doctrine of Lis Pendens) | section | Transfer of Property Act | ⭐ Yes |
-| [ ] Pending | `tpa-s-53` | TPA s. 53 — Fraudulent transfer | section | Transfer of Property Act | No |
-| [ ] Pending | `tpa-s-53a` | TPA s. 53A — Part performance | section | Transfer of Property Act | ⭐ Yes |
-| [ ] Pending | `tpa-s-54` | TPA s. 54 — Sale defined & Contract for sale | section | Transfer of Property Act | ⭐ Yes |
-| [ ] Pending | `tpa-s-58` | TPA s. 58 — Mortgages (6 Types of Mortgage defined) | section | Transfer of Property Act | ⭐ Yes |
-| [ ] Pending | `tpa-s-105` | TPA s. 105 — Lease defined | section | Transfer of Property Act | No |
-| [ ] Pending | `tpa-s-122` | TPA s. 122 — Gift defined | section | Transfer of Property Act | ⭐ Yes |
-| [ ] Pending | `ni-s-4-6` | NI Act ss. 4, 5 & 6 — Promissory Note, Bill of Exchange & Cheque defined | section | Negotiable Instruments Act | No |
-| [ ] Pending | `ni-s-13` | NI Act s. 13 — Negotiable Instrument defined | section | Negotiable Instruments Act | No |
-| [ ] Pending | `ni-s-118` | NI Act s. 118 — Presumptions as to negotiable instruments | section | Negotiable Instruments Act | ⭐ Yes |
-| [ ] Pending | `ni-s-138` | NI Act s. 138 — Dishonour of cheque for insufficiency of funds | section | Negotiable Instruments Act | ⭐ Yes |
-| [ ] Pending | `ni-s-139` | NI Act s. 139 — Presumption in favour of holder | section | Negotiable Instruments Act | ⭐ Yes |
-| [ ] Pending | `ni-s-141` | NI Act s. 141 — Offences by companies (Vicarious liability of directors) | section | Negotiable Instruments Act | ⭐ Yes |
-| [ ] Pending | `ni-s-142` | NI Act s. 142 — Cognizance of offences (Territorial jurisdiction) | section | Negotiable Instruments Act | ⭐ Yes |
-| [ ] Pending | `ni-s-148` | NI Act s. 148 — Power of Appellate Court to order deposit of minimum 20% | section | Negotiable Instruments Act | ⭐ Yes |
-
+### Law of Contracts — Contract I, Contract II, Sale of Goods & Partnership (`contract`)\n- **Priority:** high | **AIBE Weightage:** 8 Questions\n- **Governing Acts:** Indian Contract Act, 1872; Sale of Goods Act, 1930; Indian Partnership Act, 1932\n\n| Status | Topic ID | Topic Name | Type | Cluster | High Yield |\n|---|---|---|---|---|---|\n| [x] Complete | `ica-s-1-2` | ICA ss. 1–2 — Preliminary and Interpretation | section | Contract Act | No |\n| [x] Complete | `ica-s-3-9` | ICA ss. 3–9 — Communication, Acceptance and Revocation | section | Contract Act | No |\n| [x] Complete | `ica-s-10-12` | ICA ss. 10–12 — Essentials, Capacity and Sound Mind | section | Contract Act | No |\n| [x] Complete | `ica-s-13-19a` | ICA ss. 13–19A — Consent and Vitiating Factors | section | Contract Act | No |\n| [x] Complete | `ica-s-20-22` | ICA ss. 20–22 — Mistake of Fact and Law | section | Contract Act | No |\n| [x] Complete | `ica-s-23-25` | ICA ss. 23–25 — Lawful Consideration and Exceptions | section | Contract Act | No |\n| [x] Complete | `ica-s-26-30` | ICA ss. 26–30 — Void Agreements | section | Contract Act | No |\n| [x] Complete | `ica-s-31-36` | ICA ss. 31–36 — Contingent Contracts | section | Contract Act | No |\n| [x] Complete | `ica-s-37-45` | ICA ss. 37–45 — Performance and Joint Promises | section | Contract I | No |\n| [x] Complete | `ica-s-46-50` | ICA ss. 46–50 — Time, Place and Manner of Performance | section | Contract I | No |\n| [x] Complete | `ica-s-51-58` | ICA ss. 51–58 — Reciprocal Promises and Illegal Alternatives | section | Contract I | No |\n| [x] Complete | `ica-s-59-61` | ICA ss. 59–61 — Appropriation of Payments | section | Contract I | No |\n| [x] Complete | `ica-s-62-67` | ICA ss. 62–67 — Discharge, Rescission, Remission and Restitution | section | Contract I | No |\n| [x] Complete | `ica-s-68-72` | ICA ss. 68–72 — Quasi-Contracts | section | Contract I | No |\n| [x] Complete | `ica-s-73-75` | ICA ss. 73–75 — Damages and Compensation for Breach | section | Contract I | No |\n| [x] Complete | `ica-s-124-125` | ICA ss. 124–125 — Indemnity | section | Contract II | No |\n| [x] Complete | `ica-s-126-131` | ICA ss. 126–131 — Guarantee and Continuing Guarantee | section | Contract II | No |\n| [x] Complete | `ica-s-132-138` | ICA ss. 132–138 — Discharge of Surety | section | Contract II | No |\n| [x] Complete | `ica-s-139-147` | ICA ss. 139–147 — Surety Rights and Co-Sureties | section | Contract II | No |\n| [x] Complete | `ica-s-148-151` | ICA ss. 148–151 — Bailment and Standard of Care | section | Contract II | No |\n| [x] Complete | `ica-s-152-157` | ICA ss. 152–157 — Unauthorized Use and Mixing | section | Contract II | No |\n| [x] Complete | `ica-s-158-167` | ICA ss. 158–167 — Expenses, Return and Third-Party Claims | section | Contract II | No |\n| [x] Complete | `ica-s-168-171` | ICA ss. 168–171 — Finder and Lien | section | Contract II | No |\n| [x] Complete | `ica-s-172-179` | ICA ss. 172–179 — Pledge and Pawnee | section | Contract II | No |\n| [x] Complete | `ica-s-180-181` | ICA ss. 180–181 — Bailor/Bailee Suits Against Wrongdoers | section | Contract II | No |\n| [x] Complete | `ica-s-182-189` | ICA ss. 182–189 — Agency and Authority | section | Contract II | No |\n| [x] Complete | `ica-s-190-195` | ICA ss. 190–195 — Sub-Agents and Delegation | section | Contract II | No |\n| [x] Complete | `ica-s-196-200` | ICA ss. 196–200 — Ratification | section | Contract II | No |\n| [x] Complete | `ica-s-201-210` | ICA ss. 201–210 — Termination of Agency | section | Contract II | No |\n| [x] Complete | `ica-s-211-221` | ICA ss. 211–221 — Agent Duties and Lien | section | Contract II | No |\n| [x] Complete | `ica-s-222-225` | ICA ss. 222–225 — Principal Duties and Indemnity to Agent | section | Contract II | No |\n| [x] Complete | `ica-s-226-238` | ICA ss. 226–238 — Agency and Third Persons | section | Contract II | No |\n| [x] Complete | `soga-s-1-17` | Sale of Goods Act ss. 1–17 — Formation, Conditions and Warranties | section | Sale of Goods | No |\n| [x] Complete | `soga-s-18-30` | Sale of Goods Act ss. 18–30 — Transfer of Property and Title | section | Sale of Goods | No |\n| [x] Complete | `soga-s-31-61` | Sale of Goods Act ss. 31–61 — Performance and Unpaid Seller | section | Sale of Goods | No |\n| [x] Complete | `soga-s-62-66` | Sale of Goods Act ss. 62–66 — Auction, Savings and Repeal | section | Sale of Goods | No |\n| [x] Complete | `partnership-s-1-17` | Partnership Act ss. 1–17 — Nature and Mutual Rights | section | Partnership | No |\n| [x] Complete | `partnership-s-18-30` | Partnership Act ss. 18–30 — Agency, Liabilities and Minor | section | Partnership | No |\n| [x] Complete | `partnership-s-31-38` | Partnership Act ss. 31–38 — Incoming and Outgoing Partners | section | Partnership | No |\n| [x] Complete | `partnership-s-39-55` | Partnership Act ss. 39–55 — Dissolution and Settlement | section | Partnership | No |\n| [x] Complete | `partnership-s-56-69` | Partnership Act ss. 56–69 — Registration and Non-Registration | section | Partnership | No |\n| [x] Complete | `partnership-s-70-74` | Partnership Act ss. 70–74 — Supplemental Provisions and Savings | section | Partnership | No |\n
 ### Petition Formats & Drafting (`petition-formats`)
 - **Priority:** medium | **AIBE Weightage:** 0 Questions
 - **Governing Acts:** CPC (Orders VI–VIII), BNSS / CrPC, Constitution (Arts 32, 226)
