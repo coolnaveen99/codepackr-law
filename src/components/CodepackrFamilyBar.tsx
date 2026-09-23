@@ -112,7 +112,7 @@ export function CodepackrFamilyBar({
     <nav
       id="codepackr-family-navigation"
       aria-label="Codepackr Family Ecosystem"
-      className={`relative z-50 w-full select-none text-[12px] font-sans border-b backdrop-blur-md transition-colors bg-white/90 dark:bg-slate-950/90 border-slate-200/80 dark:border-slate-800/80 text-slate-600 dark:text-slate-300 ${className}`}
+      className={`relative z-[100] w-full select-none text-[12px] font-sans border-b backdrop-blur-md transition-colors bg-white/90 dark:bg-slate-950/90 border-slate-200/80 dark:border-slate-800/80 text-slate-600 dark:text-slate-300 ${className}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-9.5 flex items-center justify-between gap-3">
         {/* Left: Brand Identity & Network Beacon */}
