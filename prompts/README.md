@@ -6,11 +6,12 @@ This folder contains standardized, battle-tested master prompts to instruct any 
 
 ## 📋 Available Prompts
 
-Choose the prompt that matches your scenario:
+Choose the prompt that matches your workflow:
 
-| Scenario | Prompt File | What it Does |
+| Scenario / Need | Prompt File | What it Does |
 | :--- | :--- | :--- |
-| **Scenario 1: New Topic (Known ID)** | [`TOPIC_AUTHORING_AI_PROMPT.md`](./TOPIC_AUTHORING_AI_PROMPT.md) | Authors a brand new treatise when you already know the `topicId` (e.g. `art-21`, `s-300`). |
+| ⚡ **Fast & Simplified (Recommended)** | [`SIMPLIFIED_PROMPT_GUIDE.md`](./SIMPLIFIED_PROMPT_GUIDE.md) | **1-Minute Quick-Prompts** for Constitutional Law, Labour Law, Criminal Law, and quick file overwrites. |
+| **Scenario 1: New Topic (Known ID)** | [`TOPIC_AUTHORING_AI_PROMPT.md`](./TOPIC_AUTHORING_AI_PROMPT.md) | Complete prompt template when you already know the `topicId` (e.g. `art-21`, `s-300`). |
 | **Scenario 2: New Topic / New Subject (Unknown ID)** | [`NEW_TOPIC_OR_SUBJECT_PROMPT.md`](./NEW_TOPIC_OR_SUBJECT_PROMPT.md) | Formulates the canonical `topicId`, generates the catalog entry for `src/data/subjects.ts`, and authors the treatise file. |
 | **Scenario 3: Audit & Upgrade Existing Topic** | [`UPGRADE_EXISTING_TOPIC_PROMPT.md`](./UPGRADE_EXISTING_TOPIC_PROMPT.md) | Takes an existing file, audits it, preserves genuine data, strips old 10/16-mark wording, and outputs a complete drop-in replacement. |
 
