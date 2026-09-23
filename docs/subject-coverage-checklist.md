@@ -14,7 +14,7 @@
 | Constitutional Law | `constitution` | high | 10 | 523 | 40 | 8% |
 | Criminal Procedure (BNSS / CrPC) | `bnss` | high | 10 | 538 | 7 | 1% |
 | Code of Civil Procedure (CPC) | `cpc` | high | 10 | 235 | 7 | 3% |
-| Bharatiya Nyaya Sanhita (BNS / IPC) | `bns` | high | 8 | 368 | 201 | 55% |
+| Bharatiya Nyaya Sanhita (BNS / IPC) | `bns` | high | 8 | 368 | 211 | 57% |
 | Evidence (BSA / Evidence Act) | `bsa` | high | 8 | 177 | 7 | 4% |
 | Family Law | `family` | high | 8 | 38 | 19 | 50% |
 | Contract, Specific Relief, Property & NI Act | `contract` | high | 8 | 56 | 0 | 0% |
@@ -770,29 +770,29 @@
 | [~] Catalog | `s-168` | Section 168 — Police to prevent cognizable offences | section | Preventive action of the police | No |
 | [~] Catalog | `s-169` | Section 169 — Information of design to commit cognizable offences | section | Preventive action of the police | No |
 | [~] Catalog | `s-170` | Section 170 — Arrest to prevent commission of cognizable offences | section | Preventive action of the police | No |
-| [~] Catalog | `s-171` | Section 171 — Prevention of injury to public property | section | Preventive action of the police | No |
-| [~] Catalog | `s-172` | Section 172 — Persons bound to conform to lawful directions of police | section | Preventive action of the police | No |
-| [~] Catalog | `s-173` | Section 173 — Information in cognizable cases | section | Information to the police and their powers to investigate | ⭐ Yes |
-| [~] Catalog | `s-174` | Section 174 — Information as to non-cognizable cases and investigation of such cases | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-175` | Section 175 — Police officer’s power to investigate cognizable case | section | Information to the police and their powers to investigate | ⭐ Yes |
-| [~] Catalog | `s-176` | Section 176 — Procedure for investigation | section | Information to the police and their powers to investigate | ⭐ Yes |
-| [~] Catalog | `s-177` | Section 177 — Report how submitted | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-178` | Section 178 — Power to hold investigation or preliminary inquiry | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-179` | Section 179 — Police officer’s power to require attendance of witnesses | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-180` | Section 180 — Examination of witnesses by police | section | Information to the police and their powers to investigate | ⭐ Yes |
-| [~] Catalog | `s-181` | Section 181 — Statements to police and use thereof | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-182` | Section 182 — No inducement to be offered | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-183` | Section 183 — Recording of confessions and statements | section | Information to the police and their powers to investigate | ⭐ Yes |
-| [~] Catalog | `s-184` | Section 184 — Medical examination of victim of rape | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-185` | Section 185 — Search by police officer | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-186` | Section 186 — When officer in charge of police station may require another to issue search- warrant | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-187` | Section 187 — Procedure when investigation cannot be completed in twenty four hours | section | Information to the police and their powers to investigate | ⭐ Yes |
-| [~] Catalog | `s-188` | Section 188 — Report of investigation by subordinate police officer | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-171` | Section 171 — Prevention of injury to public property | section | Preventive action of the police | No |
+| [x] Complete | `s-172` | Section 172 — Persons bound to conform to lawful directions of police | section | Preventive action of the police | No |
+| [x] Complete | `s-173` | Section 173 — Information in cognizable cases | section | Information to the police and their powers to investigate | ⭐ Yes |
+| [x] Complete | `s-174` | Section 174 — Information as to non-cognizable cases and investigation of such cases | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-175` | Section 175 — Police officer’s power to investigate cognizable case | section | Information to the police and their powers to investigate | ⭐ Yes |
+| [x] Complete | `s-176` | Section 176 — Procedure for investigation | section | Information to the police and their powers to investigate | ⭐ Yes |
+| [x] Complete | `s-177` | Section 177 — Report how submitted | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-178` | Section 178 — Power to hold investigation or preliminary inquiry | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-179` | Section 179 — Police officer’s power to require attendance of witnesses | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-180` | Section 180 — Examination of witnesses by police | section | Information to the police and their powers to investigate | ⭐ Yes |
+| [x] Complete | `s-181` | Section 181 — Statements to police and use thereof | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-182` | Section 182 — No inducement to be offered | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-183` | Section 183 — Recording of confessions and statements | section | Information to the police and their powers to investigate | ⭐ Yes |
+| [x] Complete | `s-184` | Section 184 — Medical examination of victim of rape | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-185` | Section 185 — Search by police officer | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-186` | Section 186 — When officer in charge of police station may require another to issue search- warrant | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-187` | Section 187 — Procedure when investigation cannot be completed in twenty four hours | section | Information to the police and their powers to investigate | ⭐ Yes |
+| [x] Complete | `s-188` | Section 188 — Report of investigation by subordinate police officer | section | Information to the police and their powers to investigate | No |
 | [~] Catalog | `s-189` | Section 189 — Release of accused when evidence deficient | section | Information to the police and their powers to investigate | No |
 | [~] Catalog | `s-190` | Section 190 — Cases to be sent to Magistrate, when evidence is sufficient | section | Information to the police and their powers to investigate | No |
 | [~] Catalog | `s-191` | Section 191 — Complainant and witnesses not to be required to accompany police officer and not to be subject to restraint | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-192` | Section 192 — Diary of proceedings in investigation | section | Information to the police and their powers to investigate | No |
-| [~] Catalog | `s-193` | Section 193 — Report of police officer on completion of investigation | section | Information to the police and their powers to investigate | ⭐ Yes |
+| [x] Complete | `s-192` | Section 192 — Diary of proceedings in investigation | section | Information to the police and their powers to investigate | No |
+| [x] Complete | `s-193` | Section 193 — Report of police officer on completion of investigation | section | Information to the police and their powers to investigate | ⭐ Yes |
 | [~] Catalog | `s-194` | Section 194 — Police to enquire and report on suicide, etc | section | Information to the police and their powers to investigate | No |
 | [~] Catalog | `s-195` | Section 195 — Power to summon persons | section | Information to the police and their powers to investigate | No |
 | [~] Catalog | `s-196` | Section 196 — Inquiry by Magistrate into cause of death | section | Information to the police and their powers to investigate | No |
@@ -1375,7 +1375,7 @@
 | [~] Catalog | `order-51` | Order LI — Presidency Small Cause Courts | chapter | Small causes | No |
 
 ### Bharatiya Nyaya Sanhita (BNS / IPC) (`bns`)
-> **BNS audit update:** `src/data/topics/bns/` now contains 201 dedicated topic files. The registry contains 368 BNS/IPC catalog topics, leaving 167 catalog topics without dedicated files. Dispatcher high-yield section files `s-64`, `s-103`, `s-111`, and `s-304` have been checked on this branch; the common-intention doctrine is covered by `doctrine-common-intention`. Recent batches add dedicated notes for BNS ss. 52, 53, 56, 58, 59, 60, 65, 67–69, 71–74, 76, 79, 81–84, 86–92, 94, 97–98, 110, 113–114, 116, 119, 121, 123–126, 127–129, 131–136, 138–139, and 141–149.
+> **BNS audit update:** `src/data/topics/bns/` now contains 211 dedicated topic files. The registry contains 368 BNS/IPC catalog topics, leaving 157 catalog topics without dedicated files. Dispatcher high-yield section files `s-64`, `s-103`, `s-111`, and `s-304` have been checked on this branch; the common-intention doctrine is covered by `doctrine-common-intention`. Recent batches add dedicated notes for BNS ss. 52, 53, 56, 58, 59, 60, 65, 67–69, 71–74, 76, 79, 81–84, 86–92, 94, 97–98, 110, 113–114, 116, 119, 121, 123–126, 127–129, 131–136, 138–139, and 141–149.
 - **Priority:** high | **AIBE Weightage:** 8 Questions
 - **Governing Acts:** Bharatiya Nyaya Sanhita, 2023, Indian Penal Code, 1860 (legacy)
 
