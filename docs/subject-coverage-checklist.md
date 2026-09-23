@@ -1375,7 +1375,7 @@
 | [~] Catalog | `order-51` | Order LI — Presidency Small Cause Courts | chapter | Small causes | No |
 
 ### Bharatiya Nyaya Sanhita (BNS / IPC) (`bns`)
-> **BNS audit update:** `src/data/topics/bns/` currently contains 121 dedicated topic files. The registry contains 368 BNS/IPC catalog topics, leaving 247 catalog topics without dedicated files. Dispatcher high-yield section files `s-64`, `s-103`, `s-111`, and `s-304` have been checked on this branch; the common-intention doctrine is covered by `doctrine-common-intention`.
+> **BNS audit update:** `src/data/topics/bns/` now contains 141 dedicated topic files (121 existing + 20 added in this batch). The registry contains 368 BNS/IPC catalog topics, leaving 227 catalog topics without dedicated files. Dispatcher high-yield section files `s-64`, `s-103`, `s-111`, and `s-304` have been checked on this branch; the common-intention doctrine is covered by `doctrine-common-intention`. This batch adds dedicated notes for BNS ss. 52, 53, 56, 58, 59, 60, 65, 67–69, 71–74, 76, 79, and 81–84.
 - **Priority:** high | **AIBE Weightage:** 8 Questions
 - **Governing Acts:** Bharatiya Nyaya Sanhita, 2023, Indian Penal Code, 1860 (legacy)
 
@@ -1442,39 +1442,39 @@
 | [~] Catalog | `s-49` | Section 49 — Punishment of abetment if act abetted is committed in consequence and where no express provision is made for its punishment | section | Abetment | No |
 | [~] Catalog | `s-50` | Section 50 — Punishment of abetment if person abetted does act with different intention from that of the abettor | section | Abetment | No |
 | [~] Catalog | `s-51` | Section 51 — Liability of abettor when one act abetted and different act done | section | Abetment | No |
-| [~] Catalog | `s-52` | Section 52 — Abettor when liable to cumulative punishment for act abetted and for act done | section | Abetment | No |
-| [~] Catalog | `s-53` | Section 53 — Liability of abettor for an effect caused by act abetted different from that intended by abettor | section | Abetment | No |
+| [x] Complete | `s-52` | Section 52 — Abettor when liable to cumulative punishment for act abetted and for act done | section | Abetment | No |
+| [x] Complete | `s-53` | Section 53 — Liability of abettor for an effect caused by act abetted different from that intended by abettor | section | Abetment | No |
 | [~] Catalog | `s-54` | Section 54 — Abettor present when offence is committed | section | Abetment | No |
 | [~] Catalog | `s-55` | Section 55 — Abetment of offence punishable with death or imprisonment for life | section | Abetment | No |
-| [~] Catalog | `s-56` | Section 56 — Abetment of offence punishable with imprisonment | section | Abetment | No |
+| [x] Complete | `s-56` | Section 56 — Abetment of offence punishable with imprisonment | section | Abetment | No |
 | [~] Catalog | `s-57` | Section 57 — Abetting commission of offence by public or by more than ten persons | section | Abetment | No |
-| [~] Catalog | `s-58` | Section 58 — Concealing design to commit offence punishable with death or imprisonment for life | section | Abetment | No |
-| [~] Catalog | `s-59` | Section 59 — Public servant concealing design to commit offence which it is his duty to prevent | section | Abetment | No |
-| [~] Catalog | `s-60` | Section 60 — Concealing design to commit offence punishable with imprisonment | section | Abetment | No |
+| [x] Complete | `s-58` | Section 58 — Concealing design to commit offence punishable with death or imprisonment for life | section | Abetment | No |
+| [x] Complete | `s-59` | Section 59 — Public servant concealing design to commit offence which it is his duty to prevent | section | Abetment | No |
+| [x] Complete | `s-60` | Section 60 — Concealing design to commit offence punishable with imprisonment | section | Abetment | No |
 | [~] Catalog | `s-61` | Section 61 — Criminal conspiracy | section | Criminal conspiracy | ⭐ Yes |
 | [~] Catalog | `s-62` | Section 62 — Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment | section | Attempt | ⭐ Yes |
 | [~] Catalog | `s-63` | Section 63 — Rape | section | Sexual offences | ⭐ Yes |
 | [x] Complete | `s-64` | Section 64 — Punishment for rape | section | Sexual offences | ⭐ Yes |
-| [~] Catalog | `s-65` | Section 65 — Punishment for rape in certain cases | section | Sexual offences | ⭐ Yes |
+| [x] Complete | `s-65` | Section 65 — Punishment for rape in certain cases | section | Sexual offences | ⭐ Yes |
 | [~] Catalog | `s-66` | Section 66 — Punishment for causing death or resulting in persistent vegetative state of victim | section | Sexual offences | No |
-| [~] Catalog | `s-67` | Section 67 — Sexual intercourse by husband upon his wife during separation | section | Sexual offences | No |
-| [~] Catalog | `s-68` | Section 68 — Sexual intercourse by a person in authority | section | Sexual offences | No |
-| [~] Catalog | `s-69` | Section 69 — Sexual intercourse by employing deceitful means, etc | section | Sexual offences | ⭐ Yes |
+| [x] Complete | `s-67` | Section 67 — Sexual intercourse by husband upon his wife during separation | section | Sexual offences | No |
+| [x] Complete | `s-68` | Section 68 — Sexual intercourse by a person in authority | section | Sexual offences | No |
+| [x] Complete | `s-69` | Section 69 — Sexual intercourse by employing deceitful means, etc | section | Sexual offences | ⭐ Yes |
 | [~] Catalog | `s-70` | Section 70 — Gang rape | section | Sexual offences | ⭐ Yes |
-| [~] Catalog | `s-71` | Section 71 — Punishment for repeat offenders | section | Sexual offences | No |
-| [~] Catalog | `s-72` | Section 72 — Disclosure of identity of victim of certain offences, etc | section | Sexual offences | No |
-| [~] Catalog | `s-73` | Section 73 — Printing or publishing any matter relating to Court proceedings without permission | section | Sexual offences | No |
-| [~] Catalog | `s-74` | Section 74 — Assault or use of criminal force to woman with intent to outrage her modesty | section | Assault against woman | ⭐ Yes |
+| [x] Complete | `s-71` | Section 71 — Punishment for repeat offenders | section | Sexual offences | No |
+| [x] Complete | `s-72` | Section 72 — Disclosure of identity of victim of certain offences, etc | section | Sexual offences | No |
+| [x] Complete | `s-73` | Section 73 — Printing or publishing any matter relating to Court proceedings without permission | section | Sexual offences | No |
+| [x] Complete | `s-74` | Section 74 — Assault or use of criminal force to woman with intent to outrage her modesty | section | Assault against woman | ⭐ Yes |
 | [~] Catalog | `s-75` | Section 75 — Sexual harassment | section | Assault against woman | ⭐ Yes |
-| [~] Catalog | `s-76` | Section 76 — Assault or use of criminal force to woman with intent to disrobe | section | Assault against woman | ⭐ Yes |
+| [x] Complete | `s-76` | Section 76 — Assault or use of criminal force to woman with intent to disrobe | section | Assault against woman | ⭐ Yes |
 | [~] Catalog | `s-77` | Section 77 — Voyeurism | section | Assault against woman | ⭐ Yes |
 | [~] Catalog | `s-78` | Section 78 — Stalking | section | Assault against woman | ⭐ Yes |
-| [~] Catalog | `s-79` | Section 79 — Word, gesture or act intended to insult modesty of a woman | section | Assault against woman | ⭐ Yes |
+| [x] Complete | `s-79` | Section 79 — Word, gesture or act intended to insult modesty of a woman | section | Assault against woman | ⭐ Yes |
 | [~] Catalog | `s-80` | Section 80 — Dowry death | section | Offences relating to marriage | ⭐ Yes |
-| [~] Catalog | `s-81` | Section 81 — Cohabitation caused by man deceitfully inducing belief of lawful marriage | section | Offences relating to marriage | No |
-| [~] Catalog | `s-82` | Section 82 — Marrying again during lifetime of husband or wife | section | Offences relating to marriage | No |
-| [~] Catalog | `s-83` | Section 83 — Marriage ceremony fraudulently gone through without lawful marriage | section | Offences relating to marriage | No |
-| [~] Catalog | `s-84` | Section 84 — Enticing or taking away or detaining with criminal intent a married woman | section | Offences relating to marriage | No |
+| [x] Complete | `s-81` | Section 81 — Cohabitation caused by man deceitfully inducing belief of lawful marriage | section | Offences relating to marriage | No |
+| [x] Complete | `s-82` | Section 82 — Marrying again during lifetime of husband or wife | section | Offences relating to marriage | No |
+| [x] Complete | `s-83` | Section 83 — Marriage ceremony fraudulently gone through without lawful marriage | section | Offences relating to marriage | No |
+| [x] Complete | `s-84` | Section 84 — Enticing or taking away or detaining with criminal intent a married woman | section | Offences relating to marriage | No |
 | [~] Catalog | `s-85` | Section 85 — Husband or relative of husband of a woman subjecting her to cruelty | section | Offences relating to marriage | ⭐ Yes |
 | [~] Catalog | `s-86` | Section 86 — Cruelty defined | section | Offences relating to marriage | ⭐ Yes |
 | [~] Catalog | `s-87` | Section 87 — Kidnapping, abducting or inducing woman to compel her marriage, etc | section | Offences relating to marriage | No |
