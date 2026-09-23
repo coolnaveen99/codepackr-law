@@ -9,11 +9,11 @@ This folder contains standardized, battle-tested master prompts to instruct any 
 Choose the prompt that matches your workflow:
 
 | Scenario / Need | Prompt File | What it Does |
-| :--- | :--- | :--- |
-| ⚡ **Fast & Simplified (Recommended)** | [`SIMPLIFIED_PROMPT_GUIDE.md`](./SIMPLIFIED_PROMPT_GUIDE.md) | **1-Minute Quick-Prompts** for Constitutional Law, Labour Law, Criminal Law, and quick file overwrites. |
+| 🎯 **Central Listener & Router (Fastest)** | [`DISPATCHER.md`](./DISPATCHER.md) | **The Listener Hub:** Just type `"add topics in BSA. follow prompts/DISPATCHER.md"`. The AI listens, routes to the right statute/folder, and authors the treatise file automatically. |
+| ⚡ **Fast & Simplified** | [`SIMPLIFIED_PROMPT_GUIDE.md`](./SIMPLIFIED_PROMPT_GUIDE.md) | **1-Minute Quick-Prompts** for Constitutional Law, Labour Law, Criminal Law, and file overwrites. |
 | **Scenario 1: New Topic (Known ID)** | [`TOPIC_AUTHORING_AI_PROMPT.md`](./TOPIC_AUTHORING_AI_PROMPT.md) | Complete prompt template when you already know the `topicId` (e.g. `art-21`, `s-300`). |
-| **Scenario 2: New Topic / New Subject (Unknown ID)** | [`NEW_TOPIC_OR_SUBJECT_PROMPT.md`](./NEW_TOPIC_OR_SUBJECT_PROMPT.md) | Formulates the canonical `topicId`, generates the catalog entry for `src/data/subjects.ts`, and authors the treatise file. |
-| **Scenario 3: Audit & Upgrade Existing Topic** | [`UPGRADE_EXISTING_TOPIC_PROMPT.md`](./UPGRADE_EXISTING_TOPIC_PROMPT.md) | Takes an existing file, audits it, preserves genuine data, strips old 10/16-mark wording, and outputs a complete drop-in replacement. |
+| **Scenario 2: New Topic / New Subject (Unknown ID)** | [`NEW_TOPIC_OR_SUBJECT_PROMPT.md`](./NEW_TOPIC_OR_SUBJECT_PROMPT.md) | Formulates canonical `topicId`, generates `subjects.ts` entry, and authors the treatise file. |
+| **Scenario 3: Audit & Upgrade Existing Topic** | [`UPGRADE_EXISTING_TOPIC_PROMPT.md`](./UPGRADE_EXISTING_TOPIC_PROMPT.md) | Audits existing file, retains good data, purges 10/16-mark phrasing, and drops in a clean replacement. |
 
 ---
 
