@@ -1,0 +1,153 @@
+import type { TopicContent } from '../topicTypes'\n\nexport default {
+  "glance": "The historical maxim actio personalis moritur cum persona meant that certain personal actions died with the claimant or defendant. Indian statutes modified that rule, especially through the Fatal Accidents Act 1855 and specialised motor-accident legislation.",
+  "study": "The historical maxim actio personalis moritur cum persona meant that certain personal actions died with the claimant or defendant. Indian statutes modified that rule, especially through the Fatal Accidents Act 1855 and specialised motor-accident legislation.\\n\\nThe Fatal Accidents Act created a statutory claim for wrongful death by specified relatives. Motor accident claims are governed additionally by the Motor Vehicles Act 1988. Survival of causes belonging to the estate must be distinguished from dependency claims belonging to relatives.",
+  "sections": [
+    {
+      "id": "tort-death-in-relation-module-1",
+      "title": "Provenance, Legislative Objective & Doctrinal Foundations",
+      "content": [
+        "The Fatal Accidents Act created a statutory claim for wrongful death by specified relatives. Motor accident claims are governed additionally by the Motor Vehicles Act 1988. Survival of causes belonging to the estate must be distinguished from dependency claims belonging to relatives."
+      ],
+      "order": 1
+    },
+    {
+      "id": "tort-death-in-relation-module-2",
+      "title": "Textual Anatomy, Provisos & Statutory Deconstruction",
+      "content": [
+        "The statutory route depends on the nature of the death claim. The Fatal Accidents Act concerns specified dependency-type loss; the Motor Vehicles Act provides a specialised compensation framework. Estate claims must be separately identified."
+      ],
+      "order": 2
+    },
+    {
+      "id": "tort-death-in-relation-module-3",
+      "title": "Mandatory Proving Ingredients & Essential Elements",
+      "content": [
+        "1. Identify claimant capacity. 2. Identify statutory cause of action. 3. Prove wrongful act, causation and dependency or estate loss. 4. Avoid double recovery. 5. Apply correct limitation and forum."
+      ],
+      "order": 3
+    },
+    {
+      "id": "tort-death-in-relation-module-4",
+      "title": "Evidentiary Burdens under BSA 2023 (ss. 104–106 & s. 63)",
+      "content": [
+        "Death certificates, medical evidence, income records, dependency proof, succession documents and accident records are central."
+      ],
+      "order": 4
+    },
+    {
+      "id": "tort-death-in-relation-module-5",
+      "title": "Procedural Roadmap, Competent Forum & Limitation Act Checkpoints",
+      "content": [
+        "Fatal accident claims must use the forum prescribed by the governing statute. Motor accident claims ordinarily proceed before MACT. Check current limitation rules."
+      ],
+      "order": 5
+    }
+  ],
+  "examples": [
+    {
+      "id": "tort-death-in-relation-ill-1",
+      "title": "Illustration 1 — Doctrine Satisfied",
+      "illustrationType": "statutory",
+      "description": "Death-related claims depend on statutory cause of action; an estate claim and a dependency claim must not be conflated."
+    },
+    {
+      "id": "tort-death-in-relation-ill-2",
+      "title": "Illustration 2 — Boundary Defect",
+      "illustrationType": "fail-scenario",
+      "description": "Indian statutes modify the historical common-law rule and provide survival and wrongful-death remedies."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "tort-death-in-relation-hypo",
+      "title": "Chamber Practice Hypothetical & Problem Solving (Senior Counsel Standard)",
+      "facts": "A claimant invokes Death in Relation to Tort — Actio Personalis after a civil dispute. The defendant disputes an essential ingredient and relies on a recognised defence.",
+      "question": "Whether the pleaded cause of action is established on the facts and evidence.",
+      "applicableLaw": "Law of Torts common-law principles; applicable CPC, Limitation Act 1963, BSA 2023 and any special statute.",
+      "analysis": "1. Identify cause of action and forum.\\n2. Test each mandatory ingredient.\\n3. Assess evidentiary burden.\\n4. Apply defences.\\n5. Determine relief and limitation.",
+      "conclusion": "Death-related claims depend on statutory cause of action; an estate claim and a dependency claim must not be conflated."
+    }
+  ],
+  "distinctions": [
+    {
+      "id": "tort-death-in-relation-dist-1",
+      "title": "Estate claim vs Dependency claim",
+      "left": "Death in Relation to Tort — Actio Personalis",
+      "right": "An estate claim concerns a cause preserved for the estate; a dependency claim compensates surviving relatives for their own loss.",
+      "rows": [
+        {
+          "point": "Governing rule",
+          "left": "Death-related claims depend on statutory cause of action; an estate claim and a dependency claim must not be conflated.",
+          "right": "An estate claim concerns a cause preserved for the estate; a dependency claim compensates surviving relatives for their own loss."
+        },
+        {
+          "point": "Proof",
+          "left": "Apply the ingredients of the pleaded tort.",
+          "right": "Do not substitute the neighbouring cause of action."
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "tort-death-in-relation-trap-1",
+      "trap": "All tort claims die with the claimant",
+      "correction": "Indian statutes modify the historical common-law rule and provide survival and wrongful-death remedies."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Gobald Motor Service Ltd v R.M.K. Veluswami",
+      "year": 1966,
+      "citation": "AIR 1962 SC 1",
+      "court": "Leading judicial authority",
+      "facts": "Death-related claims depend on statutory cause of action; an estate claim and a dependency claim must not be conflated.",
+      "issue": "What legal rule governs the doctrine?",
+      "ratioDecidendi": "Death-related claims depend on statutory cause of action; an estate claim and a dependency claim must not be conflated.",
+      "holding": "Death-related claims depend on statutory cause of action; an estate claim and a dependency claim must not be conflated.",
+      "relevance": "Use the case for the precise proposition it decides."
+    },
+    {
+      "name": "Melepurath Sankunni Ezhuthassan v Thekittil Geopalankutty Nair",
+      "year": 2009,
+      "citation": "(1986) 1 SCC 118",
+      "court": "Leading judicial authority",
+      "facts": "Death-related claims depend on statutory cause of action; an estate claim and a dependency claim must not be conflated.",
+      "issue": "What legal rule governs the doctrine?",
+      "ratioDecidendi": "Death-related claims depend on statutory cause of action; an estate claim and a dependency claim must not be conflated.",
+      "holding": "Death-related claims depend on statutory cause of action; an estate claim and a dependency claim must not be conflated.",
+      "relevance": "Apply the ratio to the proved facts."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "tort-death-in-relation-brief",
+      "draftingCategory": "brief",
+      "question": "Provide a structured Case Brief and legal problem assessment on Death in Relation to Tort — Actio Personalis.",
+      "answer": "I. ISSUE & JURISDICTIONAL THRESHOLD\\nIdentify the cause of action and forum.\\n\\nII. GOVERNING RULE\\nState the controlling rule and ingredients.\\n\\nIII. APPLICATION\\nApply each ingredient and address defences.\\n\\nIV. CONCLUSION\\nState the relief that follows if the civil standard is met.",
+      "explanation": "IRAC-style chamber assessment."
+    },
+    {
+      "id": "tort-death-in-relation-submissions",
+      "draftingCategory": "submissions",
+      "question": "Draft Written Submissions on Death in Relation to Tort — Actio Personalis, addressing doctrine, evidence, precedent and procedure.",
+      "answer": "I. MATERIAL FACTS\\nSet out material facts.\\n\\nII. GOVERNING LAW\\nIdentify statute, common-law doctrine and precedent.\\n\\nIII. INGREDIENTS AND EVIDENCE\\nAddress each element and burden.\\n\\nIV. AUTHORITIES\\nApply the ratio of leading authorities.\\n\\nV. DEFENCES AND PROCEDURAL OBJECTIONS\\nAddress causation, limitation and jurisdiction.\\n\\nVI. RELIEF\\nState the precise civil relief sought.",
+      "explanation": "Courtroom written-submission structure."
+    }
+  ],
+  "bareActPointers": [
+    "Indian common law of torts and binding judicial precedents",
+    "Code of Civil Procedure, 1908 and Limitation Act, 1963 where applicable",
+    "Bharatiya Sakshya Adhiniyam, 2023 for applicable evidentiary questions"
+  ],
+  "examTips": [
+    "Identify the exact cause of action and statutory route before analysing liability.",
+    "Separate ingredients, causation, defences, forum and limitation."
+  ],
+  "revisionPoints": [
+    "Governing principle and essential ingredients",
+    "Burden of proof and key factual indicators",
+    "Competent forum and limitation must be checked against the actual cause of action",
+    "Use the ratio of the leading authority, not merely its name"
+  ]
+} satisfies TopicContent\n

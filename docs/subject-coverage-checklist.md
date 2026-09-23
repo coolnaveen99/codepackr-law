@@ -19,7 +19,7 @@
 | Family Law | `family` | high | 8 | 38 | 19 | 50% |
 | Contract, Specific Relief, Property & NI Act | `contract` | high | 8 | 56 | 0 | 0% |
 | Petition Formats & Drafting | `petition-formats` | medium | 0 | 8 | 2 | 25% |
-| Law of Torts | `tort` | medium | 5 | 29 | 5 | 17% |
+| Law of Torts | `tort` | medium | 5 | 29 | 29 | 100% |
 | ADR & Arbitration | `adr` | medium | 4 | 19 | 0 | 0% |
 | Public Interest Litigation | `pil` | medium | 2 | 5 | 0 | 0% |
 | Professional Ethics | `ethics` | medium | 4 | 8 | 0 | 0% |
@@ -51,7 +51,7 @@
 | `5bd63e1` | Today (Batch 1) | Constitution | `art-15` | Article 15 (Initial commit) |
 | `eb2b2a1` | Yesterday | Constitution | 31 Core Topics | Full treatise notes for Art 12, 13, 14, 19, 20, 21, 22, 300A, Writs, Emergency, Amendment, Doctrines |
 | `4bf5db4` | Yesterday | Platform | `SubjectDetail` | Navigation, provision catalog explorer, and cluster grouping |
-| `3cb6e87` | Yesterday | Torts | 5 Core Torts | Consumer Protection, Defamation, Negligence, Strict Liability, Vicarious Liability |
+| `3cb6e87` | Yesterday | Torts | 5 Core Torts | Consumer Protection, Defamation, Negligence, Strict Liability, Vicarious Liability |\n| `TORT-BATCH-1` | Today | Torts | 12 pending topics | General principles, capacity, person, prosecution, maintenance, psychiatric injury, contributory negligence |\n| `TORT-BATCH-2` | Today | Torts | 12 pending topics | Property, nuisance, economic torts, remedies, death, discharge and MACT |
 
 ---
 
@@ -2062,35 +2062,35 @@
 
 | Status | Topic ID | Topic Name | Type | Cluster | High Yield |
 |---|---|---|---|---|---|
-| [ ] Pending | `tort-definition` | Nature, Definition & Essentials of Tort | theme | General Principles | ⭐ Yes |
-| [ ] Pending | `tort-motive-malice` | Motive and Malice in Torts | doctrine | General Principles | ⭐ Yes |
-| [ ] Pending | `tort-injuria-damnum` | Injuria Sine Damno & Damnum Sine Injuria | doctrine | General Principles | ⭐ Yes |
-| [ ] Pending | `tort-general-defences` | General Defences in Tort (Volenti Non Fit Injuria, Act of God, Necessity) | doctrine | General Principles | ⭐ Yes |
-| [ ] Pending | `tort-capacity-state-liability` | Capacity to Sue & State Liability (Sovereign Immunity & Act of State) | doctrine | Liability Principles & Capacity | ⭐ Yes |
+| [x] Complete | `tort-definition` | Nature, Definition & Essentials of Tort | theme | General Principles | ⭐ Yes |
+| [x] Complete | `tort-motive-malice` | Motive and Malice in Torts | doctrine | General Principles | ⭐ Yes |
+| [x] Complete | `tort-injuria-damnum` | Injuria Sine Damno & Damnum Sine Injuria | doctrine | General Principles | ⭐ Yes |
+| [x] Complete | `tort-general-defences` | General Defences in Tort (Volenti Non Fit Injuria, Act of God, Necessity) | doctrine | General Principles | ⭐ Yes |
+| [x] Complete | `tort-capacity-state-liability` | Capacity to Sue & State Liability (Sovereign Immunity & Act of State) | doctrine | Liability Principles & Capacity | ⭐ Yes |
 | [x] Complete | `vicarious` | Vicarious Liability (Master-Servant, Course of Employment & Independent Contractor) | theme | Liability Principles & Capacity | ⭐ Yes |
 | [x] Complete | `strict-liability` | Strict & Absolute Liability (Rylands v. Fletcher & Oleum Gas) | doctrine | Liability Principles & Capacity | ⭐ Yes |
-| [ ] Pending | `tort-scienter-action` | Scienter Action & Liability for Animals | doctrine | Liability Principles & Capacity | ⭐ Yes |
-| [ ] Pending | `trespass-person` | Trespass to Person — Assault and Battery | theme | Specific Torts to Person & Reputation | ⭐ Yes |
-| [ ] Pending | `tort-false-imprisonment` | False Imprisonment & Complete Restraint | theme | Specific Torts to Person & Reputation | ⭐ Yes |
-| [ ] Pending | `malicious-prosecution` | Malicious Prosecution & Abuse of Process | theme | Specific Torts to Person & Reputation | ⭐ Yes |
-| [ ] Pending | `tort-maintenance-champerty` | Maintenance and Champerty | doctrine | Specific Torts to Person & Reputation | No |
-| [ ] Pending | `tort-nervous-shock` | Nervous Shock & Psychiatric Injury | doctrine | Specific Torts to Person & Reputation | ⭐ Yes |
+| [x] Complete | `tort-scienter-action` | Scienter Action & Liability for Animals | doctrine | Liability Principles & Capacity | ⭐ Yes |
+| [x] Complete | `trespass-person` | Trespass to Person — Assault and Battery | theme | Specific Torts to Person & Reputation | ⭐ Yes |
+| [x] Complete | `tort-false-imprisonment` | False Imprisonment & Complete Restraint | theme | Specific Torts to Person & Reputation | ⭐ Yes |
+| [x] Complete | `malicious-prosecution` | Malicious Prosecution & Abuse of Process | theme | Specific Torts to Person & Reputation | ⭐ Yes |
+| [x] Complete | `tort-maintenance-champerty` | Maintenance and Champerty | doctrine | Specific Torts to Person & Reputation | No |
+| [x] Complete | `tort-nervous-shock` | Nervous Shock & Psychiatric Injury | doctrine | Specific Torts to Person & Reputation | ⭐ Yes |
 | [x] Complete | `defamation-tort` | Defamation (Libel, Slander, Innuendo & Defences) | theme | Specific Torts to Person & Reputation | ⭐ Yes |
 | [x] Complete | `negligence` | Negligence, Standard of Care & Medical Negligence | theme | Specific Torts to Property & Negligence | ⭐ Yes |
-| [ ] Pending | `tort-contributory-negligence` | Contributory Negligence & Alternate Danger | doctrine | Specific Torts to Property & Negligence | ⭐ Yes |
-| [ ] Pending | `tort-occupiers-liability` | Occupier's Liability (Invitee, Licensee & Trespasser) | theme | Specific Torts to Property & Negligence | ⭐ Yes |
-| [ ] Pending | `nuisance` | Nuisance (Public vs. Private Nuisance, Highway Nuisance & 45-Degree Rule) | theme | Specific Torts to Property & Negligence | ⭐ Yes |
-| [ ] Pending | `trespass-property` | Trespass to Land, Trespass Ab Initio & Jus Tertii | theme | Specific Torts to Property & Negligence | ⭐ Yes |
-| [ ] Pending | `tort-conversion-detinue` | Conversion, Detinue & Rights of Finders | theme | Specific Torts to Property & Negligence | ⭐ Yes |
-| [ ] Pending | `tort-deceit-misstatement` | Deceit & Negligent Misstatement | doctrine | Economic Torts & Business Interference | ⭐ Yes |
-| [ ] Pending | `tort-interference-business` | Interference with Business & Trade Torts | theme | Economic Torts & Business Interference | No |
-| [ ] Pending | `tort-conspiracy` | Tort of Civil Conspiracy | doctrine | Economic Torts & Business Interference | ⭐ Yes |
-| [ ] Pending | `tort-remoteness-damage` | Remoteness of Damage & Novus Actus Interveniens | doctrine | Remedies, Extinguishment & Modern Statutes | ⭐ Yes |
-| [ ] Pending | `tort-remedies-damages` | Remedies in Tort (Judicial & Extra-Judicial) | theme | Remedies, Extinguishment & Modern Statutes | ⭐ Yes |
-| [ ] Pending | `tort-death-in-relation` | Death in Relation to Tort (Actio Personalis) | doctrine | Remedies, Extinguishment & Modern Statutes | ⭐ Yes |
-| [ ] Pending | `tort-discharge` | Discharge of Torts | theme | Remedies, Extinguishment & Modern Statutes | ⭐ Yes |
+| [x] Complete | `tort-contributory-negligence` | Contributory Negligence & Alternate Danger | doctrine | Specific Torts to Property & Negligence | ⭐ Yes |
+| [x] Complete | `tort-occupiers-liability` | Occupier's Liability (Invitee, Licensee & Trespasser) | theme | Specific Torts to Property & Negligence | ⭐ Yes |
+| [x] Complete | `nuisance` | Nuisance (Public vs. Private Nuisance, Highway Nuisance & 45-Degree Rule) | theme | Specific Torts to Property & Negligence | ⭐ Yes |
+| [x] Complete | `trespass-property` | Trespass to Land, Trespass Ab Initio & Jus Tertii | theme | Specific Torts to Property & Negligence | ⭐ Yes |
+| [x] Complete | `tort-conversion-detinue` | Conversion, Detinue & Rights of Finders | theme | Specific Torts to Property & Negligence | ⭐ Yes |
+| [x] Complete | `tort-deceit-misstatement` | Deceit & Negligent Misstatement | doctrine | Economic Torts & Business Interference | ⭐ Yes |
+| [x] Complete | `tort-interference-business` | Interference with Business & Trade Torts | theme | Economic Torts & Business Interference | No |
+| [x] Complete | `tort-conspiracy` | Tort of Civil Conspiracy | doctrine | Economic Torts & Business Interference | ⭐ Yes |
+| [x] Complete | `tort-remoteness-damage` | Remoteness of Damage & Novus Actus Interveniens | doctrine | Remedies, Extinguishment & Modern Statutes | ⭐ Yes |
+| [x] Complete | `tort-remedies-damages` | Remedies in Tort (Judicial & Extra-Judicial) | theme | Remedies, Extinguishment & Modern Statutes | ⭐ Yes |
+| [x] Complete | `tort-death-in-relation` | Death in Relation to Tort (Actio Personalis) | doctrine | Remedies, Extinguishment & Modern Statutes | ⭐ Yes |
+| [x] Complete | `tort-discharge` | Discharge of Torts | theme | Remedies, Extinguishment & Modern Statutes | ⭐ Yes |
 | [x] Complete | `consumer` | Consumer Protection Act, 2019 (Deficiency, Product Liability & Redressal) | theme | Remedies, Extinguishment & Modern Statutes | ⭐ Yes |
-| [ ] Pending | `mact-claims` | Motor Accident Claims (MACT) & Compensation Principles | theme | Remedies, Extinguishment & Modern Statutes | ⭐ Yes |
+| [x] Complete | `mact-claims` | Motor Accident Claims (MACT) & Compensation Principles | theme | Remedies, Extinguishment & Modern Statutes | ⭐ Yes |
 
 ### ADR & Arbitration (`adr`)
 - **Priority:** medium | **AIBE Weightage:** 4 Questions
