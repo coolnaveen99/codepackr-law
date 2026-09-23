@@ -14,7 +14,7 @@
 | Constitutional Law | `constitution` | high | 10 | 523 | 40 | 8% |
 | Criminal Procedure (BNSS / CrPC) | `bnss` | high | 10 | 538 | 7 | 1% |
 | Code of Civil Procedure (CPC) | `cpc` | high | 10 | 235 | 7 | 3% |
-| Bharatiya Nyaya Sanhita (BNS / IPC) | `bns` | high | 8 | 368 | 181 | 49% |
+| Bharatiya Nyaya Sanhita (BNS / IPC) | `bns` | high | 8 | 368 | 201 | 55% |
 | Evidence (BSA / Evidence Act) | `bsa` | high | 8 | 177 | 7 | 4% |
 | Family Law | `family` | high | 8 | 38 | 19 | 50% |
 | Contract, Specific Relief, Property & NI Act | `contract` | high | 8 | 56 | 0 | 0% |
@@ -1375,7 +1375,7 @@
 | [~] Catalog | `order-51` | Order LI — Presidency Small Cause Courts | chapter | Small causes | No |
 
 ### Bharatiya Nyaya Sanhita (BNS / IPC) (`bns`)
-> **BNS audit update:** `src/data/topics/bns/` now contains 181 dedicated topic files (121 existing + 60 added in the current BNS workstream). The registry contains 368 BNS/IPC catalog topics, leaving 187 catalog topics without dedicated files. Dispatcher high-yield section files `s-64`, `s-103`, `s-111`, and `s-304` have been checked on this branch; the common-intention doctrine is covered by `doctrine-common-intention`. Recent batches add dedicated notes for BNS ss. 52, 53, 56, 58, 59, 60, 65, 67–69, 71–74, 76, 79, 81–84, 86–92, 94, 97–98, 110, 113–114, 116, 119, 121, 123–126, 127–129, 131–136, 138–139, and 141–149.
+> **BNS audit update:** `src/data/topics/bns/` now contains 201 dedicated topic files. The registry contains 368 BNS/IPC catalog topics, leaving 167 catalog topics without dedicated files. Dispatcher high-yield section files `s-64`, `s-103`, `s-111`, and `s-304` have been checked on this branch; the common-intention doctrine is covered by `doctrine-common-intention`. Recent batches add dedicated notes for BNS ss. 52, 53, 56, 58, 59, 60, 65, 67–69, 71–74, 76, 79, 81–84, 86–92, 94, 97–98, 110, 113–114, 116, 119, 121, 123–126, 127–129, 131–136, 138–139, and 141–149.
 - **Priority:** high | **AIBE Weightage:** 8 Questions
 - **Governing Acts:** Bharatiya Nyaya Sanhita, 2023, Indian Penal Code, 1860 (legacy)
 
@@ -1540,27 +1540,27 @@
 | [~] Catalog | `s-147` | Section 147 — Waging, or attempting to wage war, or abetting waging of war, against Government of India | section | Offences against the State | ⭐ Yes |
 | [~] Catalog | `s-148` | Section 148 — Conspiracy to commit offences punishable by section 147 | section | Offences against the State | No |
 | [~] Catalog | `s-149` | Section 149 — Collecting arms, etc., with intention of waging war against Government of India | section | Offences against the State | No |
-| [~] Catalog | `s-150` | Section 150 — Concealing with intent to facilitate design to wage war | section | Offences against the State | No |
-| [~] Catalog | `s-151` | Section 151 — Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power | section | Offences against the State | No |
+| [x] Complete | `s-150` | Section 150 — Concealing with intent to facilitate design to wage war | section | Offences against the State | No |
+| [x] Complete | `s-151` | Section 151 — Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power | section | Offences against the State | No |
 | [~] Catalog | `s-152` | Section 152 — Act endangering sovereignty, unity and integrity of India | section | Offences against the State | ⭐ Yes |
-| [~] Catalog | `s-153` | Section 153 — Waging war against Government of any foreign State at peace with Government of India | section | Offences against the State | No |
-| [~] Catalog | `s-154` | Section 154 — Committing depredation on territories of foreign State at peace with Government of India | section | Offences against the State | No |
-| [~] Catalog | `s-155` | Section 155 — Receiving property taken by war or depredation mentioned in sections 153 and 154 | section | Offences against the State | No |
-| [~] Catalog | `s-156` | Section 156 — Public servant voluntarily allowing prisoner of State or war to escape | section | Offences against the State | No |
-| [~] Catalog | `s-157` | Section 157 — Public servant negligently suffering such prisoner to escape | section | Offences against the State | No |
-| [~] Catalog | `s-158` | Section 158 — Aiding escape of, rescuing or harbouring such prisoner | section | Offences against the State | No |
-| [~] Catalog | `s-159` | Section 159 — Abetting mutiny, or attempting to seduce a soldier, sailor or airman from his duty | section | Armed forces | No |
-| [~] Catalog | `s-160` | Section 160 — Abetment of mutiny, if mutiny is committed in consequence thereof | section | Armed forces | No |
-| [~] Catalog | `s-161` | Section 161 — Abetment of assault by soldier, sailor or airman on his superior officer, when in execution of his office | section | Armed forces | No |
-| [~] Catalog | `s-162` | Section 162 — Abetment of such assault, if assault committed | section | Armed forces | No |
-| [~] Catalog | `s-163` | Section 163 — Abetment of desertion of soldier, sailor or airman | section | Armed forces | No |
-| [~] Catalog | `s-164` | Section 164 — Harbouring deserter | section | Armed forces | No |
-| [~] Catalog | `s-165` | Section 165 — Deserter concealed on board merchant vessel through negligence of master | section | Armed forces | No |
-| [~] Catalog | `s-166` | Section 166 — Abetment of act of insubordination by soldier, sailor or airman | section | Armed forces | No |
-| [~] Catalog | `s-167` | Section 167 — Persons subject to certain Acts | section | Armed forces | No |
-| [~] Catalog | `s-168` | Section 168 — Wearing garb or carrying token used by soldier, sailor or airman | section | Armed forces | No |
-| [~] Catalog | `s-169` | Section 169 — Candidate, electoral right defined | section | Elections | No |
-| [~] Catalog | `s-170` | Section 170 — Bribery | section | Elections | No |
+| [x] Complete | `s-153` | Section 153 — Waging war against Government of any foreign State at peace with Government of India | section | Offences against the State | No |
+| [x] Complete | `s-154` | Section 154 — Committing depredation on territories of foreign State at peace with Government of India | section | Offences against the State | No |
+| [x] Complete | `s-155` | Section 155 — Receiving property taken by war or depredation mentioned in sections 153 and 154 | section | Offences against the State | No |
+| [x] Complete | `s-156` | Section 156 — Public servant voluntarily allowing prisoner of State or war to escape | section | Offences against the State | No |
+| [x] Complete | `s-157` | Section 157 — Public servant negligently suffering such prisoner to escape | section | Offences against the State | No |
+| [x] Complete | `s-158` | Section 158 — Aiding escape of, rescuing or harbouring such prisoner | section | Offences against the State | No |
+| [x] Complete | `s-159` | Section 159 — Abetting mutiny, or attempting to seduce a soldier, sailor or airman from his duty | section | Armed forces | No |
+| [x] Complete | `s-160` | Section 160 — Abetment of mutiny, if mutiny is committed in consequence thereof | section | Armed forces | No |
+| [x] Complete | `s-161` | Section 161 — Abetment of assault by soldier, sailor or airman on his superior officer, when in execution of his office | section | Armed forces | No |
+| [x] Complete | `s-162` | Section 162 — Abetment of such assault, if assault committed | section | Armed forces | No |
+| [x] Complete | `s-163` | Section 163 — Abetment of desertion of soldier, sailor or airman | section | Armed forces | No |
+| [x] Complete | `s-164` | Section 164 — Harbouring deserter | section | Armed forces | No |
+| [x] Complete | `s-165` | Section 165 — Deserter concealed on board merchant vessel through negligence of master | section | Armed forces | No |
+| [x] Complete | `s-166` | Section 166 — Abetment of act of insubordination by soldier, sailor or airman | section | Armed forces | No |
+| [x] Complete | `s-167` | Section 167 — Persons subject to certain Acts | section | Armed forces | No |
+| [x] Complete | `s-168` | Section 168 — Wearing garb or carrying token used by soldier, sailor or airman | section | Armed forces | No |
+| [x] Complete | `s-169` | Section 169 — Candidate, electoral right defined | section | Elections | No |
+| [x] Complete | `s-170` | Section 170 — Bribery | section | Elections | No |
 | [~] Catalog | `s-171` | Section 171 — Undue influence at elections | section | Elections | No |
 | [~] Catalog | `s-172` | Section 172 — Personation at elections | section | Elections | No |
 | [~] Catalog | `s-173` | Section 173 — Punishment for bribery | section | Elections | No |
