@@ -663,7 +663,7 @@
 | [~] Catalog | `s-61` | Section 61 — Power, on escape, to pursue and retake | section | Arrest of persons | No |
 | [~] Catalog | `s-62` | Section 62 — Arrest to be made strictly according to Sanhita | section | Arrest of persons | No |
 | [~] Catalog | `s-63` | Section 63 — Form of summons | section | Processes to compel appearance | No |
-| [x] Complete | `s-64` | Section 64 — Summons how served | section | Processes to compel appearance | No |
+| [~] Catalog | `s-64` | Section 64 — Summons how served | section | Processes to compel appearance | No |
 | [~] Catalog | `s-65` | Section 65 — Service of summons on corporate bodies, firms, and societies | section | Processes to compel appearance | No |
 | [~] Catalog | `s-66` | Section 66 — Service when persons summoned cannot be found | section | Processes to compel appearance | No |
 | [~] Catalog | `s-67` | Section 67 — Procedure when service cannot be effected as before provided | section | Processes to compel appearance | No |
@@ -702,7 +702,7 @@
 | [~] Catalog | `s-100` | Section 100 — Search for persons wrongfully confined | section | Processes to compel the production of things | No |
 | [~] Catalog | `s-101` | Section 101 — Power to compel restoration of abducted females | section | Processes to compel the production of things | No |
 | [~] Catalog | `s-102` | Section 102 — Direction, etc., of search-warrants | section | Processes to compel the production of things | No |
-| [x] Complete | `s-103` | Section 103 — Persons in charge of closed place to allow search | section | Processes to compel the production of things | No |
+| [~] Catalog | `s-103` | Section 103 — Persons in charge of closed place to allow search | section | Processes to compel the production of things | No |
 | [~] Catalog | `s-104` | Section 104 — Disposal of things found in search beyond jurisdiction | section | Processes to compel the production of things | No |
 | [~] Catalog | `s-105` | Section 105 — Recording of search and seizure through audio-video electronic means | section | Processes to compel the production of things | No |
 | [~] Catalog | `s-106` | Section 106 — Power of police officer to seize certain property | section | Processes to compel the production of things | No |
@@ -710,7 +710,7 @@
 | [~] Catalog | `s-108` | Section 108 — Magistrate may direct search in his presence | section | Processes to compel the production of things | No |
 | [~] Catalog | `s-109` | Section 109 — Power to impound document, etc., produced | section | Processes to compel the production of things | No |
 | [~] Catalog | `s-110` | Section 110 — Reciprocal arrangements regarding processes | section | Processes to compel the production of things | No |
-| [x] Complete | `s-111` | Section 111 — Definitions | section | Reciprocal arrangements and attachment / forfeiture of property | No |
+| [~] Catalog | `s-111` | Section 111 — Definitions | section | Reciprocal arrangements and attachment / forfeiture of property | No |
 | [~] Catalog | `s-112` | Section 112 — Letter of request to competent authority for investigation in a country or place outside India | section | Reciprocal arrangements and attachment / forfeiture of property | No |
 | [~] Catalog | `s-113` | Section 113 — Letter of request from a country or place outside India to a Court or an authority for investigation in India | section | Reciprocal arrangements and attachment / forfeiture of property | No |
 | [~] Catalog | `s-114` | Section 114 — Assistance in securing transfer of persons | section | Reciprocal arrangements and attachment / forfeiture of property | No |
@@ -903,7 +903,7 @@
 | [~] Catalog | `s-301` | Section 301 — Definitions | section | Attendance of persons confined or detained in prisons | No |
 | [~] Catalog | `s-302` | Section 302 — Power to require attendance of prisoners | section | Attendance of persons confined or detained in prisons | No |
 | [~] Catalog | `s-303` | Section 303 — Power of State Government or Central Government to exclude certain persons from operation of section 302 | section | Attendance of persons confined or detained in prisons | No |
-| [x] Complete | `s-304` | Section 304 — Officer in charge of prison to abstain from carrying out order in certain contingencies | section | Attendance of persons confined or detained in prisons | No |
+| [~] Catalog | `s-304` | Section 304 — Officer in charge of prison to abstain from carrying out order in certain contingencies | section | Attendance of persons confined or detained in prisons | No |
 | [~] Catalog | `s-305` | Section 305 — Prisoner to be brought to Court in custody | section | Attendance of persons confined or detained in prisons | No |
 | [~] Catalog | `s-306` | Section 306 — Power to issue commission for examination of witness in prison | section | Attendance of persons confined or detained in prisons | No |
 | [~] Catalog | `s-307` | Section 307 — Language of Courts | section | Evidence in inquiries and trials | No |
@@ -1454,7 +1454,7 @@
 | [~] Catalog | `s-61` | Section 61 — Criminal conspiracy | section | Criminal conspiracy | ⭐ Yes |
 | [~] Catalog | `s-62` | Section 62 — Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment | section | Attempt | ⭐ Yes |
 | [~] Catalog | `s-63` | Section 63 — Rape | section | Sexual offences | ⭐ Yes |
-| [~] Catalog | `s-64` | Section 64 — Punishment for rape | section | Sexual offences | ⭐ Yes |
+| [x] Complete | `s-64` | Section 64 — Punishment for rape | section | Sexual offences | ⭐ Yes |
 | [~] Catalog | `s-65` | Section 65 — Punishment for rape in certain cases | section | Sexual offences | ⭐ Yes |
 | [~] Catalog | `s-66` | Section 66 — Punishment for causing death or resulting in persistent vegetative state of victim | section | Sexual offences | No |
 | [~] Catalog | `s-67` | Section 67 — Sexual intercourse by husband upon his wife during separation | section | Sexual offences | No |
@@ -1493,7 +1493,7 @@
 | [~] Catalog | `s-100` | Section 100 — Culpable homicide | section | Offences affecting life | ⭐ Yes |
 | [~] Catalog | `s-101` | Section 101 — Murder | section | Offences affecting life | ⭐ Yes |
 | [~] Catalog | `s-102` | Section 102 — Culpable homicide by causing death of person other than person whose death was intended | section | Offences affecting life | No |
-| [~] Catalog | `s-103` | Section 103 — Punishment for murder | section | Offences affecting life | ⭐ Yes |
+| [x] Complete | `s-103` | Section 103 — Punishment for murder | section | Offences affecting life | ⭐ Yes |
 | [~] Catalog | `s-104` | Section 104 — Punishment for murder by life-convict | section | Offences affecting life | No |
 | [~] Catalog | `s-105` | Section 105 — Punishment for culpable homicide not amounting to murder | section | Offences affecting life | ⭐ Yes |
 | [~] Catalog | `s-106` | Section 106 — Causing death by negligence | section | Offences affecting life | ⭐ Yes |
@@ -1501,7 +1501,7 @@
 | [~] Catalog | `s-108` | Section 108 — Abetment of suicide | section | Offences affecting life | ⭐ Yes |
 | [~] Catalog | `s-109` | Section 109 — Attempt to murder | section | Offences affecting life | ⭐ Yes |
 | [~] Catalog | `s-110` | Section 110 — Attempt to commit culpable homicide | section | Offences affecting life | ⭐ Yes |
-| [~] Catalog | `s-111` | Section 111 — Organised crime | section | Offences affecting life | ⭐ Yes |
+| [x] Complete | `s-111` | Section 111 — Organised crime | section | Offences affecting life | ⭐ Yes |
 | [~] Catalog | `s-112` | Section 112 — Petty organised crime | section | Offences affecting life | ⭐ Yes |
 | [~] Catalog | `s-113` | Section 113 — Terrorist act | section | Offences affecting life | ⭐ Yes |
 | [~] Catalog | `s-114` | Section 114 — Hurt | section | Hurt | ⭐ Yes |
@@ -1694,7 +1694,7 @@
 | [~] Catalog | `s-301` | Section 301 — Trespassing on burial places, etc | section | Religion | No |
 | [~] Catalog | `s-302` | Section 302 — Uttering words, etc., with deliberate intent to wound religious feelings of any person | section | Religion | No |
 | [~] Catalog | `s-303` | Section 303 — Theft | section | Theft | ⭐ Yes |
-| [~] Catalog | `s-304` | Section 304 — Snatching | section | Theft | ⭐ Yes |
+| [x] Complete | `s-304` | Section 304 — Snatching | section | Theft | ⭐ Yes |
 | [~] Catalog | `s-305` | Section 305 — Theft in a dwelling house, or means of transportation or place of worship, etc | section | Theft | No |
 | [~] Catalog | `s-306` | Section 306 — Theft by clerk or servant of property in possession of master | section | Theft | No |
 | [~] Catalog | `s-307` | Section 307 — Theft after preparation made for causing death, hurt or restraint in order to the committing of the theft | section | Theft | No |
