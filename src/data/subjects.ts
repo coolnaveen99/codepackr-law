@@ -333,7 +333,7 @@ export const SUBJECTS: LawSubjectMeta[] = [
   {
     id: 'contract',
     slug: 'contract',
-    name: 'Law of Contracts — Contract I, Contract II, Sale of Goods & Partnership',
+    name: 'Contract, Specific Relief, Property & NI Act',
     shortName: 'Law of Contracts',
     priority: 'high',
     aibeQuestions: 8,
