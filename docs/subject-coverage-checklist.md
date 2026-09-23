@@ -14,7 +14,7 @@
 | Constitutional Law | `constitution` | high | 10 | 523 | 40 | 8% |
 | Criminal Procedure (BNSS / CrPC) | `bnss` | high | 10 | 538 | 7 | 1% |
 | Code of Civil Procedure (CPC) | `cpc` | high | 10 | 235 | 7 | 3% |
-| Bharatiya Nyaya Sanhita (BNS / IPC) | `bns` | high | 8 | 368 | 191 | 52% |
+| Bharatiya Nyaya Sanhita (BNS / IPC) | `bns` | high | 8 | 368 | 201 | 55% |
 | Evidence (BSA / Evidence Act) | `bsa` | high | 8 | 177 | 7 | 4% |
 | Family Law | `family` | high | 8 | 38 | 19 | 50% |
 | Contract, Specific Relief, Property & NI Act | `contract` | high | 8 | 56 | 0 | 0% |
@@ -1375,7 +1375,7 @@
 | [~] Catalog | `order-51` | Order LI — Presidency Small Cause Courts | chapter | Small causes | No |
 
 ### Bharatiya Nyaya Sanhita (BNS / IPC) (`bns`)
-> **BNS audit update:** `src/data/topics/bns/` now contains 191 dedicated topic files. The registry contains 368 BNS/IPC catalog topics, leaving 177 catalog topics without dedicated files. Dispatcher high-yield section files `s-64`, `s-103`, `s-111`, and `s-304` have been checked on this branch; the common-intention doctrine is covered by `doctrine-common-intention`. Recent batches add dedicated notes for BNS ss. 52, 53, 56, 58, 59, 60, 65, 67–69, 71–74, 76, 79, 81–84, 86–92, 94, 97–98, 110, 113–114, 116, 119, 121, 123–126, 127–129, 131–136, 138–139, and 141–149.
+> **BNS audit update:** `src/data/topics/bns/` now contains 201 dedicated topic files. The registry contains 368 BNS/IPC catalog topics, leaving 167 catalog topics without dedicated files. Dispatcher high-yield section files `s-64`, `s-103`, `s-111`, and `s-304` have been checked on this branch; the common-intention doctrine is covered by `doctrine-common-intention`. Recent batches add dedicated notes for BNS ss. 52, 53, 56, 58, 59, 60, 65, 67–69, 71–74, 76, 79, 81–84, 86–92, 94, 97–98, 110, 113–114, 116, 119, 121, 123–126, 127–129, 131–136, 138–139, and 141–149.
 - **Priority:** high | **AIBE Weightage:** 8 Questions
 - **Governing Acts:** Bharatiya Nyaya Sanhita, 2023, Indian Penal Code, 1860 (legacy)
 
