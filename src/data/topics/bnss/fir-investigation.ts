@@ -84,7 +84,7 @@ Do not mix FIR (investigation) with cognizance (s. 210).`,
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain FIR under the BNSS.',
       steps: [
         's. 173: oral / electronic / any area.',
@@ -95,7 +95,7 @@ Do not mix FIR (investigation) with cognizance (s. 210).`,
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Discuss investigation under the BNSS from FIR to police report, including forensics and Zero FIR.',
       steps: [
         's. 173 in detail.',

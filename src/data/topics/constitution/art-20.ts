@@ -184,7 +184,7 @@ A 3-judge Bench delivered an epochal decision on modern investigative techniques
   questionsAndAnswers: [
     {
       id: 'art20-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the constitutional protections guaranteed against Double Jeopardy under Article 20(2) of the Constitution. Distinguish it from the statutory protection under Section 300 of the CrPC (Section 337 of BNSS).',
       answer: `### 1. Synopsis / Introduction
 Article 20(2) of the Constitution of India enshrines the fundamental rule of criminal jurisprudence against **Double Jeopardy**, embodied in the maxim *"nemo debet bis vexari pro una et eadem causa"* (no person should be twice vexed for the same cause).
@@ -223,7 +223,7 @@ Article 20(2) provides a core constitutional shield against state harassment. Wh
     },
     {
       id: 'art20-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"The privilege against self-incrimination is a vital barrier between the citizen and the coercive machinery of the State." Critically examine the scope of Article 20(3) of the Constitution. Analyze the landmark distinction between physical and testimonial evidence established in State of Bombay v. Kathi Kalu Oghad, and evaluate the constitutionality of neuro-scientific investigative techniques in light of Selvi v. State of Karnataka.',
       answer: `### 1. Introduction: The Privilege Against Self-Incrimination
 The privilege against self-incrimination, expressed in the Latin maxim ***"nemo tenetur seipsum accusare"*** (no one is bound to accuse himself), is one of the foundational tenets of civilized criminal jurisprudence. Rooted in the English common law rejection of the inquisitorial torture practices of the Star Chamber and the Ecclesiastical Courts, it guarantees the accused the absolute right to maintain silence in the face of criminal charges.

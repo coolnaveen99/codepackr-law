@@ -61,7 +61,7 @@ export default {
   questionsAndAnswers: [
     {
       id: 's12-q10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain voidable marriages under Section 12 of the Hindu Marriage Act, 1955.',
       answer:
         'Introduction. List s. 12 grounds. Valid until annulled. Limitation and bars for force/fraud and pregnancy. Contrast s. 11. Conclusion with full citation.',
@@ -69,7 +69,7 @@ export default {
     },
     {
       id: 's12-q16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Distinguish void and voidable marriages. Discuss the grounds under Section 12 HMA.',
       answer:
         'Introduction. Comparative table s. 11 vs s. 12. Detailed s. 12 grounds with conditions and bars. Legitimacy (s. 16). Conclusion with HMA citation.',

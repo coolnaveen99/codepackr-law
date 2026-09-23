@@ -180,12 +180,12 @@ function studentRule(ruleParas: string[], title: string, short: string, id: stri
 
 function purposeParagraph(kind: CodeKind, p: Provision, chapterTitle: string, short: string) {
   if (kind === 'bns') {
-    return `Criminal law answers are won on ingredients. ${short} s. ${p.id} exists so that “${p.title}” has a closed legal test in Chapter ${chapterTitle}. A 10-mark note that only names the section scores poorly. A full-mark note defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test to facts.`
+    return `Criminal law arguments turn on statutory ingredients. ${short} s. ${p.id} exists so that “${p.title}” has a closed legal test in Chapter ${chapterTitle}. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.`
   }
   if (kind === 'bnss') {
-    return `Procedure is a sequence. ${short} s. ${p.id} is the working step for “${p.title}” inside ${chapterTitle}. University and Judiciary papers ask this as a 10-mark note (“explain the rule”) or a 16-mark problem (“apply the steps to these facts”). The student must be able to say what the court or the police must do, in what order, and what happens if a step is skipped.`
+    return `Procedure is an ordered sequence. ${short} s. ${p.id} is the working step for “${p.title}” inside ${chapterTitle}. Both chamber practice and judicial examinations require deconstructing this provision: explain the rule, list condition precedents, and apply the steps methodically to facts.`
   }
-  return `Evidence answers turn on relevancy, proof and exclusion. ${short} s. ${p.id} decides “${p.title}”. A full-mark answer states when the fact/document/statement is received, what the court does with it, the statutory illustrations, and the traps that make students confuse this section with its neighbours.`
+  return `Evidence answers turn on relevancy, proof and exclusion. ${short} s. ${p.id} decides “${p.title}”. An authoritative treatise states when the fact/document/statement is received, what the court does with it, the statutory illustrations, and the traps that confuse this section with its neighbours.`
 }
 
 function numbered(lines: string[]): string {
@@ -235,13 +235,13 @@ export async function synthesizeCatalogSection(
     `Step 2 — State the legal test in your own words, then list the ingredients:`,
     ...ingredients.slice(0, 8).map((ing, i) => `   (${i + 1}) ${ing}`),
     parsed.explanations.length
-      ? `Step 3 — Read every Explanation. An explanation is part of the section. Omitting it is a 10-mark answer that stops at the main clause.`
+      ? `Step 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.`
       : `Step 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. ${p.id} in a vacuum.`,
     `Step 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.`,
     `Step 5 — Conclude. If every essential ingredient is proved and no exception covers the case, ${meta.short} s. ${p.id} applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.`,
   ].join('\n')
 
-  const hypoConclusion = `The result depends on proof of the ingredients of ${meta.short} s. ${p.id}. A full-mark conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”.`
+  const hypoConclusion = `The result depends on proof of the ingredients of ${meta.short} s. ${p.id}. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”.`
 
   const relatedLine = p.related.length
     ? p.related.map((id) => `${meta.short} s. ${id}`).join(', ')
@@ -260,42 +260,42 @@ export async function synthesizeCatalogSection(
     .filter(Boolean)
     .join(' ')
 
-  const tenMarkAnswer = [
+  const briefAnswer = [
     `Introduction. ${meta.short} s. ${p.id} deals with ${p.title}. It sits in Chapter ${chapterTitle} of the ${meta.act}. After 1 July 2024 this is the current-law citation for this ${meta.examNoun}.`,
     `Meaning. ${intro}`,
     `Legal rule. ${studentRule(parsed.ruleParas, p.title, meta.short, p.id)}`,
-    `Essential ingredients. A 10-mark answer must list them, not hide them in one paragraph:\n${numbered(ingredients.slice(0, 8))}`,
+    `Essential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n${numbered(ingredients.slice(0, 8))}`,
     parsed.definitions.length
-      ? `Definitions. The examiner often opens with “define the terms”. Use the statutory meanings:\n${parsed.definitions
+      ? `Definitions. The core statutory definitions must be established:\n${parsed.definitions
           .slice(0, 8)
           .map((d) => `“${d.term}” ${d.meaning}.`)
           .join(' ')}`
       : '',
     parsed.illustrations.length
-      ? `Illustrations. The section itself supplies worked examples. In a 10-mark note, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): ${parsed.illustrations[0]}`
+      ? `Illustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): ${parsed.illustrations[0]}`
       : `Illustration. Give one short original example (label it as an example) and apply the ingredients.`,
     parsed.explanations.length
-      ? `Explanations. ${parsed.explanations[0]} An explanation is not optional commentary. It is part of the section and must appear in a full-mark note.`
+      ? `Explanations. ${parsed.explanations[0]} An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.`
       : '',
     exceptionBlock
       ? `Exceptions / provisos. ${exceptionBlock.slice(0, 500)}${exceptionBlock.length > 500 ? '…' : ''} State the exception and then say whether it is attracted on the facts.`
       : `Limitations. Apply only the conditions written in s. ${p.id}. Do not import a defence from a different chapter unless the question requires it.`,
     p.punishment ? `Consequence / punishment. ${p.punishment}` : '',
-    relatedLine ? `Connected sections. Read with ${relatedLine}. A 10-mark note mentions the neighbour; a 16-mark note explains the difference.` : '',
-    `Conclusion. ${meta.short} s. ${p.id} is the complete current-law heading for ${p.title}. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a full 10-mark structure.`,
+    relatedLine ? `Connected sections. Read with ${relatedLine}. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.` : '',
+    `Conclusion. ${meta.short} s. ${p.id} is the complete current-law heading for ${p.title}. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.`,
   ]
     .filter(Boolean)
     .join('\n\n')
 
-  const sixteenMarkAnswer = [
-    tenMarkAnswer,
-    `Expanding to 16 marks. Do not repeat the same sentences. Add four more layers.`,
-    `Layer 1 — Place the section in the Chapter. ${chapter?.blurb || chapterTitle}. Show the examiner you know why this heading sits where it sits.`,
+  const submissionsAnswer = [
+    briefAnswer,
+    `Comprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.`,
+    `Layer 1 — Place the section in the Chapter. ${chapter?.blurb || chapterTitle}. Show why this heading sits where it sits.`,
     parsed.illustrations.length > 1
-      ? `Layer 2 — Work a second statutory illustration. Illustration (b): ${parsed.illustrations[1]} Contrast it with illustration (a). Marks are awarded for the contrast.`
+      ? `Layer 2 — Work a second statutory illustration. Illustration (b): ${parsed.illustrations[1]} Contrast it with illustration (a). The legal weight lies in the contrast.`
       : `Layer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.`,
     relatedLine
-      ? `Layer 3 — Distinction. Contrast ${meta.short} s. ${p.id} with ${relatedLine}. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common way to lose 16-mark marks.`
+      ? `Layer 3 — Distinction. Contrast ${meta.short} s. ${p.id} with ${relatedLine}. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.`
       : `Layer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. ${p.id}. Do not invent case names.`,
     `Layer 4 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is ${meta.short} s. ${p.id}.”`,
   ].join('\n\n')
@@ -374,27 +374,27 @@ export async function synthesizeCatalogSection(
         },
         {
           id: `${kind}-${p.id}-ex-2`,
-          title: 'Example 2 — examination (teaching example)',
-          description: `Change one ingredient so that ${meta.short} s. ${p.id} fails. A 16-mark problem often hides the missing ingredient. State the failure expressly. Label this as an example, never as a reported case.`,
+          title: 'Example 2 — practical application / distinction (teaching example)',
+          description: `Change one ingredient so that ${meta.short} s. ${p.id} fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case.`,
         },
       ]
 
   const questionsAndAnswers = [
     {
-      id: `${kind}-${p.id}-q-10`,
-      marks: 10 as const,
-      question: `Write a 10-mark note on ${meta.short} s. ${p.id} (${p.title}).`,
-      answer: tenMarkAnswer,
+      id: `${kind}-${p.id}-q-brief`,
+      draftingCategory: 'brief' as const,
+      question: `Legal Assessment & Statutory Note: ${meta.short} s. ${p.id} (${p.title})`,
+      answer: briefAnswer,
       explanation:
-        'Do not submit a shortened answer. The 10-mark note above is the minimum complete structure: introduction, meaning, ingredients, illustration, explanation/exception, application, conclusion.',
+        'Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation.',
     },
     {
-      id: `${kind}-${p.id}-q-16`,
-      marks: 16 as const,
-      question: `Answer a 16-mark question: discuss ${meta.short} s. ${p.id} with illustrations and connected provisions.`,
-      answer: sixteenMarkAnswer,
+      id: `${kind}-${p.id}-q-submissions`,
+      draftingCategory: 'submissions' as const,
+      question: `Comprehensive Written Submissions: ${meta.short} s. ${p.id} (${p.title}) with Statutory Scheme & Judicial Analysis`,
+      answer: submissionsAnswer,
       explanation:
-        'A 16-mark answer is the 10-mark note plus contrast, a second illustration or hypothetical, IRAC application and current-law close. It is not the 10-mark note typed twice.',
+        'Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close.',
     },
   ]
 
@@ -409,7 +409,7 @@ export async function synthesizeCatalogSection(
             rows: [
               { point: 'Heading', left: p.title, right: 'Read the neighbour’s title on its own page before you write.' },
               { point: 'What you must prove', left: ingredients[0] || p.gist, right: 'Different ingredients — do not paste this section’s test onto the neighbour.' },
-              { point: 'Exam trap', left: `Citing a neighbour as if it were s. ${p.id}.`, right: 'Citing s. ' + p.id + ' where the neighbour actually applies.' },
+              { point: 'Practice trap', left: `Citing a neighbour as if it were s. ${p.id}.`, right: 'Citing s. ' + p.id + ' where the neighbour actually applies.' },
             ],
           },
         ]
@@ -423,9 +423,9 @@ export async function synthesizeCatalogSection(
     hypotheticals: [
       {
         id: `${kind}-${p.id}-hypo`,
-        title: 'Examination hypothetical',
+        title: 'Chamber Practice Hypothetical',
         facts: hypoFacts,
-        question: `Whether ${meta.short} s. ${p.id} (${p.title}) applies, and how a 16-mark answer should be structured.`,
+        question: `Whether ${meta.short} s. ${p.id} (${p.title}) applies, and how structured written arguments should be framed.`,
         applicableLaw: `${meta.short} s. ${p.id}. ${chapter ? `Chapter ${chapter.roman} — ${chapter.title}.` : ''} ${relatedLine ? `Connected: ${relatedLine}.` : ''}`,
         analysis: hypoAnalysis,
         conclusion: hypoConclusion,
@@ -435,18 +435,18 @@ export async function synthesizeCatalogSection(
     misconceptions: [
       {
         id: `${kind}-${p.id}-trap-1`,
-        trap: 'Writing only the section number and the title, and calling that a 10-mark note.',
-        correction: `A full-mark note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with ${meta.short} s. ${p.id}.`,
+        trap: 'Writing only the section number and title without analyzing ingredients or case ratio.',
+        correction: `An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with ${meta.short} s. ${p.id}.`,
       },
       {
         id: `${kind}-${p.id}-trap-2`,
         trap: 'Copying a statutory illustration without mapping it to an ingredient.',
-        correction: 'Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the mark-earning sentence.',
+        correction: 'Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link.',
       },
       {
         id: `${kind}-${p.id}-trap-3`,
-        trap: 'Giving a one-line Q&A or a shortened explanation and hoping the examiner will fill the rest.',
-        correction: 'Descriptive papers require a complete answer. The Q&A on this page is written at 10-mark / 16-mark length for that reason. Do not shorten it in the examination book.',
+        trap: 'Giving a one-line summary or shortened explanation of the provision.',
+        correction: 'Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason.',
       },
     ],
     questionsAndAnswers,
@@ -459,12 +459,11 @@ export async function synthesizeCatalogSection(
     examTips: [
       `Cite ${meta.short} s. ${p.id} for ${meta.verb} on or after 1 July 2024.`,
       'Ingredients first, illustration second, application third, conclusion last.',
-      lesson?.exam || 'If the question is 16 marks, add a distinction, a second illustration, and IRAC.',
+      lesson?.exam || 'For comprehensive written submissions, add a distinction, a second illustration, and IRAC.',
     ],
     examFrameworks: [
       {
-        marks: 10,
-        question: `Write a note on ${meta.short} s. ${p.id} (${p.title}).`,
+        question: `Structured Legal Assessment: ${meta.short} s. ${p.id} (${p.title}).`,
         steps: [
           `Introduce ${meta.short} s. ${p.id} and Chapter ${chapterTitle}.`,
           'Define / state the meaning in your own words.',
@@ -480,10 +479,9 @@ export async function synthesizeCatalogSection(
         ],
       },
       {
-        marks: 16,
-        question: `Discuss ${meta.short} s. ${p.id} with illustrations and connected sections.`,
+        question: `Comprehensive Chamber Written Submissions: ${meta.short} s. ${p.id} with connected statutory scheme.`,
         steps: [
-          'Everything in the 10-mark plan, written in full — not summarised.',
+          'Everything in the preliminary assessment, written in full substantive depth — not summarised.',
           'Place the section in the Chapter and explain why the heading exists.',
           parsed.illustrations.length > 1
             ? 'Work a second statutory illustration and contrast it with the first.'
@@ -492,7 +490,7 @@ export async function synthesizeCatalogSection(
             ? `Distinguish ${meta.short} s. ${p.id} from ${relatedLine}.`
             : 'Add analytical comment on a condition or practical difficulty.',
           'IRAC application to the problem facts.',
-          'Name the exam traps (title-only answers, unmapped illustrations, shortened Q&A, wrong Code).',
+          'Address procedural hurdles, evidentiary requirements, and standard defense objections.',
           'Current-law conclusion.',
         ],
       },

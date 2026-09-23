@@ -194,7 +194,7 @@ In *Zaverbhai Amaidas v. State of Bombay* (1954 2 SCR 799):
   questionsAndAnswers: [
     {
       id: 'repug-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the Doctrine of Repugnancy under Article 254 of the Constitution. What are the three tests of repugnancy formulated in M. Karunanidhi v. Union of India (1979)?',
       answer: `### 1. Synopsis / Introduction
 The Doctrine of Repugnancy, codified in **Article 254** of the Constitution, resolves legislative conflicts between Central and State laws enacted on subjects enumerated in the **Concurrent List (List III)** of the Seventh Schedule.
@@ -227,7 +227,7 @@ Article 254 balances federal supremacy with legislative flexibility, providing a
     },
     {
       id: 'repug-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"Article 254 is the constitutional keystone that preserves legislative harmony in the concurrent field, while the proviso to Article 254(2) ensures the ultimate supremacy of Parliament." Critically analyze the Doctrine of Repugnancy in Indian constitutional law. Contrast Article 254(1) with 254(2), examine the requirement of specific presidential assent under Kaiser-I-Hind, and distinguish Repugnancy from Pith and Substance.',
       answer: `### 1. Introduction: The Concurrent List and Federal Friction
 In the distribution of legislative powers under the Indian federal framework, the Seventh Schedule distributes sovereign competence across three lists. While the Union List (List I) and State List (List II) represent mutually exclusive enclaves, the **Concurrent List (List III)** establishes an expansive shared domain where both Parliament and State Legislatures possess coordinate legislative authority.

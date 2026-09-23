@@ -79,14 +79,14 @@ export default {
   questionsAndAnswers: [
     {
       id: 's5-q-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'State and explain the conditions for a valid Hindu marriage under Section 5 of the Hindu Marriage Act, 1955.',
       answer:
         'Introduction. Section 5 of the Hindu Marriage Act, 1955 prescribes the conditions that must be fulfilled for a marriage between two Hindus to be valid.\n\nConditions. (i) Neither party has a spouse living — monogamy. (ii) Mental capacity: neither party is incapable of giving valid consent by reason of unsoundness of mind, or is suffering from mental disorder making them unfit for marriage and procreation, or is subject to recurrent attacks of insanity. (iii) Age: bridegroom 21 years, bride 18 years. (iv) Not within degrees of prohibited relationship, unless custom governing each permits. (v) Not sapindas of each other, unless custom governing each permits.\n\nCeremony. Section 7 recognises customary rites; where saptapadi is included, the marriage is complete on the seventh step.\n\nConsequences. Breach of (i), (iv) or (v) generally renders the marriage void under s. 11. Other breaches may lead to voidability under s. 12 or punishment under s. 18.\n\nConclusion. List all five limbs of s. 5 and link them to ss. 7, 11 and 12.',
     },
     {
       id: 's5-q-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Discuss Section 5 of the Hindu Marriage Act, 1955. What is the effect of non-compliance with its conditions?',
       answer:
         'Introduction. Section 5 is the foundation of a valid Hindu marriage under the Hindu Marriage Act, 1955.\n\nTextual conditions. Set out all five conditions in full: monogamy; mental capacity (three sub-clauses); ages 21 and 18; prohibited degrees (with custom exception); sapinda relationship (with custom exception).\n\nCustom. The exceptions in clauses (iv) and (v) require a custom that is ancient, certain, reasonable and binding on both parties.\n\nEffect of non-compliance. (a) Living spouse / prohibited degrees / sapinda → marriage void under s. 11; bigamy also attracts s. 17 and the penal law. (b) Certain mental conditions, force, fraud, pregnancy by another → voidable under s. 12; decree of nullity required. (c) Age violation → interacts with the Prohibition of Child Marriage Act; the HMA itself does not automatically void every under-age marriage in the same way as s. 11. (d) Section 18 provides punishment for contravention of certain conditions.\n\nCeremony. Validity of the rites is governed by s. 7; registration under s. 8 is directory for validity (though States may make rules).\n\nConclusion. A complete answer states s. 5 in full, explains the custom exceptions, and maps each major breach to s. 11, s. 12 or s. 18. Always name the Hindu Marriage Act, 1955.',

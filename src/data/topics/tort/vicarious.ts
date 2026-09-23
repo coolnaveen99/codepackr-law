@@ -217,7 +217,7 @@ const content: TopicContent = {
   questionsAndAnswers: [
     {
       id: 'qa-vic-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question:
         'Explain the doctrine of Vicarious Liability. When is a master held liable for the torts of his servant? Discuss with reference to the phrase "in the course of employment".',
       answer: `### 1. Introduction and Theoretical Foundation
@@ -254,7 +254,7 @@ Vicarious liability ensures that commercial enterprises internalize the risks of
     },
     {
       id: 'qa-vic-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question:
         'Critically examine the liability of the State in tort in India. Trace the jurisprudential transition from the doctrine of Sovereign Immunity in Kasturi Lal to the modern regime of Constitutional Torts under Articles 21 and 32/226.',
       answer: `### 1. Introduction and Constitutional Framework
@@ -317,7 +317,7 @@ The transition from Kasturi Lal to Nilabati Behera reflects the transformation o
     'N. Nagendra Rao (1994): Sovereign immunity restricted to quintessential acts (defence, foreign affairs).',
   ],
   examTips: [
-    'Always contrast Kasturi Lal with Nilabati Behera in 10-mark and 16-mark answers on State Liability.',
+    'Always contrast Kasturi Lal with Nilabati Behera in chamber briefs and written submissions on State Liability.',
     'Clearly distinguish between private law tort claims (where Kasturi Lal was decided) and public law constitutional remedies under Article 32/226.',
     'Quote Salmond’s test for "course of employment" verbatim.',
   ],

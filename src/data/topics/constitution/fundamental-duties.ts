@@ -103,7 +103,7 @@ Fundamental Duties form a normative ethical compass for citizenship, functioning
   hypotheticals: [
     {
       id: 'fd-hypo',
-      title: '16-Mark Examination Hypothetical (National Honour vs Free Speech)',
+      title: 'Chamber Practice Hypothetical (National Honour vs Free Speech)',
       facts: 'The State Government issues an executive notification mandating that all commercial cinema halls and theatre venues must play the National Anthem before every screening, and that all patrons must stand during the playing of the anthem, failing which they will face summary detention and ejection by the police. A patron suffering from physical disability challenges the executive notification under Article 226, contending that while Article 51A(a) prescribes a duty of respect, executive coercion without statutory backing violates Articles 14, 19(1)(a), and 21.',
       question: 'Analyze the constitutional validity of the executive mandate in light of Bijoe Emmanuel v. State of Kerala, Shyam Narayan Chouksey v. Union of India, and AIIMS Students’ Union. Can Fundamental Duties be enforced through executive circulars absent statutory authorization?',
       applicableLaw: 'Article 51A(a) of the Constitution of India; Articles 14, 19(1)(a), and 21; Prevention of Insults to National Honour Act, 1971; Bijoe Emmanuel v. State of Kerala; Shyam Narayan Chouksey (2018).',
@@ -147,7 +147,7 @@ Fundamental Duties form a normative ethical compass for citizenship, functioning
   questionsAndAnswers: [
     {
       id: 'fd-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Discuss the constitutional status, enforceability, and significance of Fundamental Duties under Article 51A of the Constitution of India.',
       answer: `I. ISSUE & CONSTITUTIONAL ORIGIN
 Part IVA (Article 51A) was inserted by the 42nd Constitutional Amendment Act, 1976 upon the recommendation of the Sardar Swaran Singh Committee. The core issue is the legal status and indirect enforceability of these eleven duties.
@@ -169,12 +169,12 @@ In AIIMS Students’ Union v. AIIMS (2002) 1 SCC 428, the Supreme Court held:
 
 V. CONCLUSION
 Fundamental Duties serve as a normative ethical code, balancing individual freedom with social responsibility. Current through the 106th Amendment (2023).`,
-      explanation: 'Formatted according to the IRAC method for 10-mark examination questions.',
+      explanation: 'Formatted according to the IRAC method for structured legal assessment.',
       relatedProvisionIds: ['constitution-article-51a'],
     },
     {
       id: 'fd-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the concept of Fundamental Duties under Part IVA. Can fundamental duties be enforced through judicial process? Analyze with reference to the Swaran Singh Committee, the Verma Committee, and leading Supreme Court decisions.',
       answer: `I. INTRODUCTION & CONSTITUTIONAL GENESIS
 While the original Constitution of 1949 placed profound faith in fundamental rights and directive principles, it contained no express chapter on citizen duties. The framers assumed that citizens of an ancient civilization would naturally discharge their civic obligations. However, during the turbulent 1970s, the Government constituted the Sardar Swaran Singh Committee to examine the inclusion of duties. Acting on its report, Parliament enacted the 42nd Constitutional Amendment Act, 1976, introducing Part IVA and Article 51A with ten fundamental duties (augmented to eleven by the 86th Amendment, 2002).
@@ -271,7 +271,7 @@ Fundamental Duties establish an essential constitutional equilibrium. By elevati
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the origins, enforceability, and significance of Fundamental Duties under Article 51A.',
       steps: [
         'Introduction: 42nd Amendment, Swaran Singh Committee, and 86th Amendment.',
@@ -282,7 +282,7 @@ Fundamental Duties establish an essential constitutional equilibrium. By elevati
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine Fundamental Duties under Part IVA, indirect enforcement, and judicial interpretation.',
       steps: [
         'Historical background: Constituent Assembly omission and 42nd Amendment inclusion.',

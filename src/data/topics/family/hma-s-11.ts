@@ -64,7 +64,7 @@ export default {
   questionsAndAnswers: [
     {
       id: 's11-q10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'What marriages are void under Section 11 of the Hindu Marriage Act, 1955?',
       answer:
         'Introduction. Three grounds linked to s. 5: living spouse; prohibited degrees; sapinda (custom exception). Effect of voidness. s. 16 legitimacy. Contrast with s. 12. Conclusion with full citation.',
@@ -72,11 +72,11 @@ export default {
     },
     {
       id: 's11-q16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Distinguish void and voidable marriages under the Hindu Marriage Act, 1955.',
       answer:
         'Introduction. Comparative table s. 11 vs s. 12 (status, grounds, procedure). Detailed treatment of each. Role of custom. Legitimacy under s. 16. Conclusion with HMA citation.',
-      explanation: 'Comparison table in prose is essential for 16 marks.',
+      explanation: 'Detailed comparative analysis and procedural distinction.',
     },
   ],
   bareActPointers: ['Hindu Marriage Act, 1955 — s. 11', 'Hindu Marriage Act, 1955 — s. 5', 'Hindu Marriage Act, 1955 — s. 16'],

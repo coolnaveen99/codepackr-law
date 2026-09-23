@@ -153,7 +153,7 @@ In *Ambica Mills*, the Supreme Court introduced a critical refinement:
   questionsAndAnswers: [
     {
       id: 'eclipse-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the Doctrine of Eclipse with reference to Article 13(1) of the Constitution. Discuss the seminal decision in Bhikaji Narain Dhakras v. State of Madhya Pradesh.',
       answer: `### 1. Synopsis / Introduction
 The Doctrine of Eclipse is a foundational principle of Indian constitutional interpretation governing the status of pre-Constitution laws that conflict with Fundamental Rights under **Article 13(1)**. The doctrine establishes that such laws are not wiped out or void ab initio, but remain in a dormant, overshadowed state ("eclipsed"), capable of automatic revival once the constitutional impediment is removed.
@@ -192,7 +192,7 @@ The Doctrine of Eclipse harmonizes statutory continuity with constitutional supr
     },
     {
       id: 'eclipse-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"The Doctrine of Eclipse reflects the nuanced jurisprudence of constitutional dormancy rather than legislative extinction." Trace the evolution of the Doctrine of Eclipse from Keshavan Madhava Menon to Bhikaji Narain Dhakras. Critically examine whether the doctrine applies to post-Constitution laws in light of Deep Chand, Mahendra Lal Jaini, and State of Gujarat v. Ambica Mills.',
       answer: `### 1. Introduction: Constitutional Anchor and Doctrinal Premise
 When the Sovereign Democratic Republic of India adopted its Constitution on January 26, 1950, it inherited an immense corpus of colonial statutes. To ensure that these laws conformed to democratic values, Article 13 was enacted as the constitutional sentinel. Under Article 13(1), pre-Constitution laws inconsistent with Fundamental Rights are declared "void to the extent of such inconsistency". 

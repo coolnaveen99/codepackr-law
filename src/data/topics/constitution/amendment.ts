@@ -117,7 +117,7 @@ Article 368 provides a flexible yet resilient amending mechanism. Current throug
   hypotheticals: [
     {
       id: 'art-368-hypo',
-      title: '16-Mark Examination Hypothetical (Deadlock & Presidential Assent)',
+      title: 'Chamber Practice Hypothetical (Deadlock & Presidential Assent)',
       facts: 'A Constitution Amendment Bill seeking to amend Article 19(2) by introducing a new ground of restriction is passed by the Lok Sabha by a two-thirds majority. The Rajya Sabha rejects the Bill. The Prime Minister advises the President to convene a Joint Sitting of both Houses under Article 108 to resolve the deadlock. The joint sitting convenes and passes the Bill by a simple majority of combined members. The Bill is presented to the President, who withholds assent and returns the Bill for reconsideration.',
       question: 'Analyze the constitutional validity of: (a) The convening of a Joint Sitting for a Constitution Amendment Bill; (b) The withholding of assent by the President under Article 368.',
       applicableLaw: 'Article 368 of the Constitution of India; Article 108; 24th Constitutional Amendment Act, 1971.',
@@ -161,7 +161,7 @@ Article 368 provides a flexible yet resilient amending mechanism. Current throug
   questionsAndAnswers: [
     {
       id: 'amendment-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the procedure for amending the Constitution under Article 368. Which provisions require ratification by state legislatures?',
       answer: `I. ISSUE & CONSTITUTIONAL FRAMEWORK
 Article 368 of the Constitution of India governs the procedure and constituent power for constitutional amendments. The key issue is the procedural requirements and the provisions that mandate state ratification.
@@ -189,12 +189,12 @@ Parliament’s constituent power is constrained by the Basic Structure Doctrine 
 
 V. CONCLUSION
 Article 368 harmonizes rigidity with flexibility, protecting the federal compact through mandatory state ratification. Current through the 106th Amendment (2023).`,
-      explanation: 'Formatted according to the IRAC method for 10-mark examination questions.',
+      explanation: 'Formatted according to the IRAC method for structured legal assessment.',
       relatedProvisionIds: ['constitution-article-368'],
     },
     {
       id: 'amendment-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the constituent power of Parliament to amend the Constitution under Article 368. Differentiate between constituent power and ordinary legislative power, and analyze procedural and substantive limitations.',
       answer: `I. INTRODUCTION & CONSTITUTIONAL ARCHITECTURE
 A written constitution must balance stability with adaptability. Thomas Jefferson famously warned that each generation must be free to govern itself, while Lord Bryce classified constitutions into rigid and flexible. The Indian Constitution, as Dr. B.R. Ambedkar explained, avoids the extreme rigidity of the American Constitution and the absolute flexibility of the unwritten British Constitution. Article 368 in Part XX embodies this synthesized architecture, empowering Parliament to exercise constituent power while erecting procedural and substantive fences.
@@ -296,7 +296,7 @@ Article 368 serves as the pressure-valve of the Indian Republic. By maintaining 
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the procedure for amending the Constitution under Article 368 and the federal proviso.',
       steps: [
         'Introduction: Purpose and placement of Article 368 in Part XX.',
@@ -307,7 +307,7 @@ Article 368 serves as the pressure-valve of the Indian Republic. By maintaining 
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the constituent power under Article 368, constituent vs legislative power, and limits.',
       steps: [
         'Theoretical basis: Rigidity vs flexibility; constituent power vs ordinary legislative power.',

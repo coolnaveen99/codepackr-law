@@ -105,7 +105,7 @@ Article 19 reflects modern digital rights and communicative autonomy. Current th
   hypotheticals: [
     {
       id: 'a19-hypo',
-      title: '16-Mark Examination Hypothetical (Internet Shutdowns & Free Speech)',
+      title: 'Chamber Practice Hypothetical (Internet Shutdowns & Free Speech)',
       facts: 'Following student protests against a university fee hike, the District Magistrate issues an indefinite order under Section 163 BNSS (legacy Section 144 CrPC) and the Telecom Suspension Rules shutting down mobile internet and broadband connectivity across the entire district to “prevent the spread of rumours and preserve public order”. A journalist and a software professional challenge the indefinite suspension under Article 226/32, contending that their rights under Article 19(1)(a) and 19(1)(g) have been severely violated without demonstrating imminent threat of violence.',
       question: 'Examine the validity of the indefinite internet suspension order applying the principles laid down in Anuradha Bhasin v. Union of India. Can internet access be suspended indefinitely under Indian law?',
       applicableLaw: 'Article 19(1)(a) and 19(1)(g) of the Constitution of India; Article 19(2) & 19(6); Proportionality Doctrine; Anuradha Bhasin v. Union of India.',
@@ -149,7 +149,7 @@ Article 19 reflects modern digital rights and communicative autonomy. Current th
   questionsAndAnswers: [
     {
       id: 'a19-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Discuss the six fundamental freedoms guaranteed under Article 19(1) and the test of reasonable restrictions under Article 19(2)–(6).',
       answer: `I. ISSUE & CONSTITUTIONAL CONTEXT
 Article 19(1) confers six democratic freedoms on citizens. The constitutional challenge revolves around whether state restrictions satisfy the strict requirements of Article 19(2)–(6).
@@ -176,12 +176,12 @@ Article 19 is a citizens-only charter. Foreigners and artificial legal entities 
 
 V. CONCLUSION
 Freedoms under Article 19 form the bedrock of India’s constitutional democracy, protected against arbitrary curtailment by the strict discipline of clauses (2)–(6). Current through the 106th Amendment (2023).`,
-      explanation: 'Formatted according to the IRAC method for 10-mark descriptive questions.',
+      explanation: 'Formatted according to the IRAC method for structured legal assessment.',
       relatedProvisionIds: ['constitution-article-19'],
     },
     {
       id: 'a19-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically analyze the scope of freedom of speech and expression under Article 19(1)(a) in the digital era. How have the Supreme Court decisions in Shreya Singhal and Anuradha Bhasin expanded the boundaries of free speech and proportionality?',
       answer: `I. INTRODUCTION & CONSTITUTIONAL FOUNDATIONS
 Freedom of speech and expression under Article 19(1)(a) has been described as the "ark of the constitutional covenant". It is the mother of all democratic liberties. The Constituent Assembly recognized that without the free flow of ideas, democratic accountability and truth cannot survive. While the text remains unamended, its content has expanded dynamically through judicial interpretation to encompass modern mediums of communication, journalism, and the digital internet age.
@@ -289,7 +289,7 @@ Freedom of speech under Article 19(1)(a) has evolved from print newsprint to the
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Discuss the six freedoms and reasonable restrictions under Article 19.',
       steps: [
         'List all six active freedoms under Article 19(1).',
@@ -301,7 +301,7 @@ Freedom of speech under Article 19(1)(a) has evolved from print newsprint to the
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically analyze freedom of speech in the digital era with Shreya Singhal and Anuradha Bhasin.',
       steps: [
         'Introduction: Philosophy of free speech and democratic governance.',

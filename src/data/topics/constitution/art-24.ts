@@ -85,7 +85,7 @@ Article 24 remains unamended. The 2016 amendment to the child-labour statute exp
   hypotheticals: [
     {
       id: 'a24-hypo',
-      title: '16-Mark Hypothetical (Hazardous Industry)',
+      title: 'Chamber Practice Hypothetical (Hazardous Industry)',
       facts: 'An NGO discovers children aged 10–13 working in a metal-polishing unit with toxic fumes. The unit has no licence and pays the children in kind. The NGO approaches the High Court under Article 226.',
       question: 'What constitutional and statutory violations are made out? What relief can the Court grant?',
       applicableLaw: 'Article 24; Article 21A; Article 23; CLPR Act; M.C. Mehta v. State of Tamil Nadu.',
@@ -118,7 +118,7 @@ Article 24 remains unamended. The 2016 amendment to the child-labour statute exp
   questionsAndAnswers: [
     {
       id: 'a24-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain Article 24 of the Constitution. How has it been enforced by the Supreme Court and statute?',
       answer: `I. ISSUE
 Article 24 prohibits employment of children below 14 in factories, mines, or other hazardous employment.
@@ -135,7 +135,7 @@ Article 24 is a justiciable child-protection guarantee. Current through the 106t
     },
     {
       id: 'a24-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine Article 24 in the light of the right to education and the statutory regime against child labour.',
       answer: `I. INTRODUCTION
 Article 24 is a specific ban on child employment in hazardous settings. Its full meaning emerges when read with Article 21A, Directive Principles, and the CLPR Act.

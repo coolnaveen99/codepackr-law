@@ -56,7 +56,7 @@ export default {
   questionsAndAnswers: [
     {
       id: 's24-q10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain maintenance pendente lite under Section 24 of the Hindu Marriage Act, 1955.',
       answer:
         'Introduction. Scope — any HMA proceeding. Test of insufficient independent income. Monthly maintenance and expenses. Discretion of court. Contrast s. 25. Conclusion with citation.',
@@ -64,7 +64,7 @@ export default {
     },
     {
       id: 's24-q16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Discuss interim and permanent maintenance under the Hindu Marriage Act, 1955.',
       answer:
         'Introduction. s. 24 in detail. s. 25 in detail. Factors for quantum. Overlap with s. 125 BNSS and HAMA. Conclusion with HMA citations.',

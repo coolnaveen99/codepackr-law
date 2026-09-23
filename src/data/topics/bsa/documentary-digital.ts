@@ -88,7 +88,7 @@ needs-review of any very new 2025–26 holding on s. 63(4) hash/expert requireme
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'How are electronic records proved under the BSA?',
       steps: [
         's. 61 non-discrimination rule.',
@@ -99,7 +99,7 @@ needs-review of any very new 2025–26 holding on s. 63(4) hash/expert requireme
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Examine primary and secondary evidence and the special regime for electronic records under the BSA.',
       steps: [
         'ss. 56–60 paper scheme.',

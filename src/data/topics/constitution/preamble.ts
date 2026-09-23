@@ -101,7 +101,7 @@ The Preamble was amended once by the 42nd Constitutional Amendment Act, 1976 (in
   hypotheticals: [
     {
       id: 'preamble-hypo',
-      title: '16-Mark Examination Hypothetical (Amendability & Basic Structure)',
+      title: 'Chamber Practice Hypothetical (Amendability & Basic Structure)',
       facts: 'Parliament passes a constitutional amendment under Article 368 deleting the word “Secular” from the Preamble and declaring a specific religion as the official state religion. A public-spirited organization challenges the constitutional validity of this amendment before the Supreme Court under Article 32.',
       question: 'Discuss the constitutional validity of the amendment in light of Kesavananda Bharati, S.R. Bommai, and the Basic Structure Doctrine.',
       applicableLaw: 'Preamble to the Constitution of India; Article 368; Basic Structure Doctrine; Article 25–28.',
@@ -145,7 +145,7 @@ The Preamble was amended once by the 42nd Constitutional Amendment Act, 1976 (in
   questionsAndAnswers: [
     {
       id: 'preamble-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Is the Preamble a part of the Constitution? Can it be amended under Article 368? Discuss with landmark cases.',
       answer: `I. ISSUE & CONSTITUTIONAL CONTEXT
 Whether the Preamble is an integral part of the Constitution of India, and whether Parliament has the constituent power under Article 368 to amend it.
@@ -172,7 +172,7 @@ The Preamble is an integral part of the Constitution, subject to amendment under
     },
     {
       id: 'preamble-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the philosophical roots, legal status, and amendability of the Preamble to the Constitution of India. How has judicial interpretation evolved from Berubari Union to Kesavananda Bharati and Bommai?',
       answer: `I. INTRODUCTION & PHILOSOPHICAL FOUNDATIONS
 The Preamble to the Constitution of India encapsulates the moral, political, and socio-economic ethos of the Republic. Rooted in the historic “Objectives Resolution” moved by Pandit Jawaharlal Nehru on 13 December 1946, the Preamble is not a mere preface; it is the constitutional charter’s soul. It proclaims the sovereign people of India as the ultimate repository of power and outlines the grand goals of Justice, Liberty, Equality, and Fraternity.
@@ -262,7 +262,7 @@ The Preamble is the compass that guides India’s transformative constitutionali
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Is the Preamble a part of the Constitution? Can it be amended under Article 368?',
       steps: [
         'State the text and source of authority (“We, the People of India”).',
@@ -274,7 +274,7 @@ The Preamble is the compass that guides India’s transformative constitutionali
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the philosophical roots, legal status, and amendability of the Preamble.',
       steps: [
         'Historical background: Objectives Resolution (1946) to adoption on 26 Nov 1949.',

@@ -66,7 +66,7 @@ export default {
   questionsAndAnswers: [
     {
       id: 'hjf-q10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the Mitakshara joint family and the effect of the 2005 amendment.',
       answer:
         'Introduction. Joint family vs coparcenary. Ancestral property and karta. s. 6 HSA 2005 — daughter as coparcener by birth. Conclusion.',
@@ -74,7 +74,7 @@ export default {
     },
     {
       id: 'hjf-q16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Discuss the powers of the karta and partition after the 2005 amendment.',
       answer:
         'Introduction. Karta’s powers and legal necessity. Partition and severance. Daughters’ shares post-2005. Vineeta Sharma if relevant. Conclusion with HSA citation.',

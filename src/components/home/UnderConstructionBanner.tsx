@@ -64,7 +64,7 @@ export function UnderConstructionBanner() {
         </div>
 
         <p className="text-sm sm:text-base font-medium text-slate-700 dark:text-slate-300 max-w-4xl leading-relaxed">
-          <strong className="font-bold text-slate-900 dark:text-white">CodePackr Law</strong> is under active development by our legal research chamber. Every one of the <strong>20 legal subjects</strong> is structured to the Bar Council of India standard with <strong>2,078 active provisions</strong>, structured IRAC 10-mark / 16-mark examination answers, and chamber practice blueprints. Book-chapter treatises with full case ratios are expanding daily.
+          <strong className="font-bold text-slate-900 dark:text-white">CodePackr Law</strong> is under active development by our legal research chamber. Every one of the <strong>20 legal subjects</strong> is structured to the Bar Council of India standard with <strong>2,078 active provisions</strong>, structured IRAC case briefs, comprehensive written submissions, and chamber practice blueprints. Book-chapter treatises with full case ratios are expanding daily.
         </p>
 
         {expanded && (

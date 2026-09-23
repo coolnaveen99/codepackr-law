@@ -205,7 +205,7 @@ In *Union of India v. Tulsiram Patel* (1985) 3 SCC 398, a 5-judge Constitution B
   questionsAndAnswers: [
     {
       id: 'art311-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the constitutional safeguards guaranteed to civil servants under Article 311(1) and 311(2) of the Constitution. What is the significance of supplying the Inquiry Report as held in ECIL v. B. Karunakar?',
       answer: `### 1. Synopsis / Introduction
 While Article 310 incorporates the common law **Doctrine of Pleasure**, Article 311 of the Constitution establishes vital constitutional safeguards protecting civil servants against arbitrary dismissals, removals, or reductions in rank.
@@ -236,7 +236,7 @@ Articles 311(1) and 311(2), reinforced by *B. Karunakar*, ensure that permanent 
     },
     {
       id: 'art311-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"The Doctrine of Pleasure under Article 310 is neither absolute nor untrammelled; it is hedged by the constitutional safeguards of Article 311, which in turn are subject to the extraordinary exceptions of the second proviso." Critically examine this statement in light of Parshotam Lal Dhingra v. Union of India and the Constitution Bench ruling in Union of India v. Tulsiram Patel (1985).',
       answer: `### 1. Introduction: The Delicate Balance in Public Employment
 In modern administrative law, public administration requires a delicate equilibrium between two competing imperatives:

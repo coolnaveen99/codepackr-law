@@ -8,8 +8,8 @@ const content: TopicContent = {
     { name: 'Morgan Stanley v. Kartick Das', year: 1994, citation: '(1994) 4 SCC 225', holding: 'Ex parte injunction needs reasons and a prompt hearing.' },
   ],
   questionsAndAnswers: [
-    { id: 'in-10', marks: 10, question: 'State the tests for a temporary injunction.', answer: 'Order XXXIX rr. 1–2. Three-fold test. Notice under r. 3. Dalpat Kumar. Cite Order XXXIX CPC, 1908.' },
-    { id: 'in-16', marks: 16, question: 'Trial court grants an ex parte injunction without reasons. Advise.', answer: 'Issue. Is the order sustainable?\nRule. r. 3 proviso — reasons and immediate listing. Morgan Stanley.\nApplication. The order is vulnerable. Move r. 4 or appeal under Order XLIII where it lies.\nConclusion. Order XXXIX rr. 3–4 CPC.' },
+    { id: 'in-10', draftingCategory: 'brief', question: 'State the tests for a temporary injunction.', answer: 'Order XXXIX rr. 1–2. Three-fold test. Notice under r. 3. Dalpat Kumar. Cite Order XXXIX CPC, 1908.' },
+    { id: 'in-16', draftingCategory: 'submissions', question: 'Trial court grants an ex parte injunction without reasons. Advise.', answer: 'Issue. Is the order sustainable?\nRule. r. 3 proviso — reasons and immediate listing. Morgan Stanley.\nApplication. The order is vulnerable. Move r. 4 or appeal under Order XLIII where it lies.\nConclusion. Order XXXIX rr. 3–4 CPC.' },
   ],
   examTips: ['Never write a final finding of title at the interlocutory stage.'],
 }

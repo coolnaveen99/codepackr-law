@@ -226,7 +226,7 @@ const content: TopicContent = {
   questionsAndAnswers: [
     {
       id: 'qa-def-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question:
         'Define the tort of Defamation. What are its essential ingredients? Explain the doctrine of Innuendo with the aid of decided cases.',
       answer: `### 1. Introduction and Definition
@@ -271,7 +271,7 @@ Defamation safeguards reputation as a property of character. Where words do not 
     },
     {
       id: 'qa-def-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question:
         'Critically examine the defences available in a civil suit for Defamation. Distinguish between Civil Defamation and Criminal Defamation under Indian law, and discuss the constitutional reconciliation between Article 19(1)(a) and Article 21 in Subramanian Swamy v. Union of India.',
       answer: `### 1. Abstract & Introduction

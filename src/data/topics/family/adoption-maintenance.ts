@@ -94,7 +94,7 @@ export default {
   questionsAndAnswers: [
     {
       id: 'hama-q-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the conditions for a valid adoption under the Hindu Adoptions and Maintenance Act, 1956.',
       answer:
         'Introduction. Validity is governed by Sections 6 and 11 of the Hindu Adoptions and Maintenance Act, 1956, read with capacity in ss. 7–9.\n\nSection 6. Capacity and right to take; capacity to give; capacity to be taken; compliance with other conditions including s. 11.\n\nSection 11. Living son/grandson bars for son adoption; living daughter/son’s daughter bars for daughter adoption; no simultaneous adoption by two persons; actual giving and taking with intent to transfer.\n\nIllustration. A has a living Hindu son and adopts another boy — invalid under s. 11.\n\nEffect. Valid adoption attracts s. 12 from the date of adoption.\n\nConclusion. Cite ss. 6 and 11 HAMA 1956 and the giving-and-taking requirement.',
@@ -102,7 +102,7 @@ export default {
     },
     {
       id: 'hama-q-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Discuss the effect of a valid adoption under Section 12 HAMA and the wife’s right to maintenance under Section 18 HAMA.',
       answer:
         'Introduction. Section 12 fixes the status of a validly adopted child. Section 18 protects a Hindu wife’s maintenance.\n\nSection 12. From the date of adoption the child is deemed the child of the adoptive parents for all purposes. Birth-family ties are severed, subject to savings: no divesting of estates vested before adoption.\n\nIllustration. Property vested in a birth-family heir before adoption cannot be reopened merely by s. 12.\n\nSection 18. Wife is entitled to maintenance from the husband. Separate residence and maintenance may be claimed for desertion, cruelty, virulent disease, concubine, conversion, or other justifying cause, subject to statutory disentitlements.\n\nDistinction. ss. 24–25 HMA apply inside matrimonial proceedings; s. 125 BNSS is summary; s. 18 HAMA is personal-law civil right.\n\nDependants. ss. 21–22 oblige heirs to maintain dependants out of the estate.\n\nConclusion. Cite ss. 12 and 18 of the Hindu Adoptions and Maintenance Act, 1956.',

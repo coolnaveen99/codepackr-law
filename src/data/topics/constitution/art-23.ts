@@ -92,7 +92,7 @@ Article 23 remains unamended. It is implemented through the Bonded Labour System
   hypotheticals: [
     {
       id: 'a23-hypo',
-      title: '16-Mark Hypothetical (Bonded Labour)',
+      title: 'Chamber Practice Hypothetical (Bonded Labour)',
       facts: 'Agricultural labourers in a district work for a landlord under advances that they can never repay; their movement is restricted and wages are adjusted against the debt. An NGO files a writ petition under Article 32 seeking release and rehabilitation.',
       question: 'Examine the constitutional and statutory framework applicable. What directions can the Court issue?',
       applicableLaw: 'Article 23; Bandhua Mukti Morcha; Bonded Labour System (Abolition) Act, 1976.',
@@ -130,7 +130,7 @@ Article 23 remains unamended. It is implemented through the Bonded Labour System
   questionsAndAnswers: [
     {
       id: 'a23-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain Article 23 of the Constitution. How has the Supreme Court interpreted “forced labour”?',
       answer: `I. ISSUE
 Article 23 prohibits traffic in human beings, begar, and forced labour.
@@ -150,7 +150,7 @@ Article 23 is a dignity-based Fundamental Right with horizontal reach. Current t
     },
     {
       id: 'a23-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the scope of Article 23. Discuss the horizontal application of the right against forced labour and the State’s positive obligations.',
       answer: `I. INTRODUCTION
 Article 23 is a central anti-exploitation guarantee. It abolishes trafficking, begar, and forced labour and criminalises their practice.

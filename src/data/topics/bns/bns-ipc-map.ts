@@ -90,7 +90,7 @@ This page is a study map. The tool remains the working converter.`,
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'How should a student convert IPC sections to the BNS?',
       steps: [
         'Date of offence + Art 20(1).',
@@ -101,7 +101,7 @@ This page is a study map. The tool remains the working converter.`,
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'The BNS is not a renumbering of the IPC. Discuss the transition and the traps.',
       steps: [
         's. 358 and Art 20(1).',

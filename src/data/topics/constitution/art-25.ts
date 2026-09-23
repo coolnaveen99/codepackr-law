@@ -97,7 +97,7 @@ Article 25 remains unamended. Shirur Mutt, Stainislaus, and Sabarimala remain ce
   hypotheticals: [
     {
       id: 'a25-hypo',
-      title: '16-Mark Hypothetical (Exclusion from Temple)',
+      title: 'Chamber Practice Hypothetical (Exclusion from Temple)',
       facts: 'A public Hindu temple excludes a section of devotees on grounds of caste, citing custom. The excluded devotees petition the High Court under Articles 25 and 17.',
       question: 'Advise on the constitutional validity of the exclusion.',
       applicableLaw: 'Article 25(1) and 25(2)(b); Article 17; Article 14; Shirur Mutt; Sabarimala.',
@@ -135,7 +135,7 @@ Article 25 remains unamended. Shirur Mutt, Stainislaus, and Sabarimala remain ce
   questionsAndAnswers: [
     {
       id: 'a25-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the scope of Article 25 of the Constitution. What is the essential religious practices test?',
       answer: `I. ISSUE
 Article 25 guarantees freedom of conscience and the right to profess, practise and propagate religion, subject to limits.
@@ -155,7 +155,7 @@ Article 25 balances religious freedom with public order, equality and reform. Cu
     },
     {
       id: 'a25-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the freedom of religion under Article 25 with reference to the ERP test, Sabarimala, and the State’s power of social reform.',
       answer: `I. INTRODUCTION
 Article 25 is the primary individual guarantee of religious freedom. Its interpretation has oscillated between strong protection of essential practices and subordination of exclusionary customs to equality and constitutional morality.

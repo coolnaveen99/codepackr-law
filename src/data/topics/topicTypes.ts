@@ -20,6 +20,7 @@ export interface TopicExample {
   id: string
   title?: string
   description: string
+  illustrationType?: 'statutory' | 'practical' | 'fail-scenario'
 }
 
 export interface TopicQuestionAnswer {
@@ -28,6 +29,8 @@ export interface TopicQuestionAnswer {
   answer: string
   explanation?: string
   relatedProvisionIds?: string[]
+  draftingCategory?: 'brief' | 'submissions' | 'opinion'
+  /** @deprecated Retained for backwards compatibility with legacy data; use draftingCategory */
   marks?: 10 | 16
 }
 
@@ -67,7 +70,8 @@ export interface TopicDistinction {
 }
 
 export interface TopicExamFramework {
-  marks: 10 | 16
+  marks?: 10 | 16
+  draftingCategory?: 'brief' | 'submissions'
   question?: string
   steps: string[]
 }

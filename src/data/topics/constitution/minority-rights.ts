@@ -183,7 +183,7 @@ The Supreme Court held that the introduction of the National Eligibility cum Ent
   questionsAndAnswers: [
     {
       id: 'min-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Examine the scope of Article 30(1) of the Constitution. Can the State impose regulatory conditions on minority educational institutions without infringing their constitutional autonomy?',
       answer: `### 1. Synopsis / Introduction
 Article 30(1) of the Constitution guarantees to religious and linguistic minorities the fundamental right to **"establish and administer educational institutions of their choice"**. The constitutional boundary between minority administrative autonomy and the State's regulatory authority has been defined through a rich series of landmark decisions.
@@ -217,7 +217,7 @@ Regulations designed to promote educational excellence and protect teachers do n
     },
     {
       id: 'min-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"Articles 29 and 30 are designed to build a pluralist constitutional democracy by reassuring minorities that their cultural identity and educational autonomy will never be subjected to majoritarian tyranny." Critically examine the educational rights of minorities under Article 30. Discuss the benchmark principles laid down by the 11-judge Bench in T.M.A. Pai Foundation and evaluate the impact of Article 15(5) and the NEET ruling (Christian Medical College, Vellore).',
       answer: `### 1. Introduction: Safeguarding Cultural Pluralism
 The Indian subcontinent is home to immense linguistic, ethnic, and religious diversity. During the framing of the Constitution, Dr. B.R. Ambedkar and the Advisory Committee on Minorities recognized that a majoritarian electoral system could generate deep anxieties among minority communities. 

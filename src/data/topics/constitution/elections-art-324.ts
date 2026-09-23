@@ -186,7 +186,7 @@ Article 329 erects a strict constitutional barrier:
   questionsAndAnswers: [
     {
       id: 'elec-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Examine the plenary powers of the Election Commission of India under Article 324 of the Constitution with reference to the landmark ruling in Mohinder Singh Gill v. Chief Election Commissioner (1978).',
       answer: `### 1. Synopsis / Introduction
 Article 324(1) of the Constitution vests the **"superintendence, direction, and control"** of elections in the Election Commission of India (ECI). In *Mohinder Singh Gill v. CEC*, the Supreme Court established that Article 324 is a plenary reservoir of constitutional power ensuring free and fair democratic elections.
@@ -215,7 +215,7 @@ Article 324 ensures that the democratic will of the electorate is not held hosta
     },
     {
       id: 'elec-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"Free and fair elections are the lifeblood of constitutional democracy, requiring an Election Commission completely insulated from executive dominance." Critically examine the constitutional architecture of the Election Commission of India under Article 324. Discuss the landmark Constitution Bench ruling in Anoop Baranwal v. Union of India (2023), the parliamentary response, and analyze the bar to judicial interference under Article 329.',
       answer: `### 1. Introduction: Free and Fair Elections as Basic Structure
 In the constitutional republic of India, the legitimacy of sovereign power rests entirely upon the consent of the governed expressed through the electoral ballot. In *Indira Nehru Gandhi v. Raj Narain* (1975) and *Kihoto Hollohan v. Zachillhu* (1992), the Supreme Court declared that **free, fair, and periodic elections** constitute an inviolable component of the **basic structure** of the Constitution.

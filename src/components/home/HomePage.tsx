@@ -286,7 +286,7 @@ export function HomePage({
               We Work for Student Careers, University Degrees & Life Goals.
             </h3>
             <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-              We never arbitrarily compress or drop syllabus topics. Every doctrine, capacity rule, specific wrong, defense, and statutory section is cataloged with 10-mark and 16-mark IRAC/ILAC blueprints so that you walk into every exam or courtroom completely prepared.
+              We never arbitrarily compress or drop syllabus topics. Every doctrine, capacity rule, specific wrong, defense, and statutory section is cataloged with authoritative statutory deconstruction, procedural roadmaps, and chamber written arguments so that you walk into every exam or courtroom completely prepared.
             </p>
           </div>
 

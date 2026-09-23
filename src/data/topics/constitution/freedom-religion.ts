@@ -196,7 +196,7 @@ Three Jehovah's Witness school children in Kerala were expelled for refusing to 
   questionsAndAnswers: [
     {
       id: 'rel-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the Essential Religious Practices (ERP) Test formulated by the Supreme Court of India. Discuss its origin in the Shirur Mutt case and its application in the Sabarimala decision.',
       answer: `### 1. Synopsis / Introduction
 The **Essential Religious Practices (ERP) Doctrine** is a judicial tool formulated by the Supreme Court of India to delineate the autonomous domain of religious freedom protected under Articles 25 and 26 from the State's regulatory and social reform powers under Article 25(2).
@@ -228,7 +228,7 @@ The ERP test has transformed the judiciary into an arbiter of religious dogma. W
     },
     {
       id: 'rel-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"The Indian Constitution does not erect a wall of separation between Church and State, but balances religious autonomy with transformative social justice." Critically evaluate the constitutional architecture of Freedom of Religion under Articles 25 to 28. Trace the evolution of the Essential Religious Practices doctrine and analyze whether the right to propagate includes the right to convert.',
       answer: `### 1. Introduction: The Unique Architecture of Indian Secularism
 In Western political philosophy, secularism was forged through the violent struggle between the Papacy and the Sovereign State, culminating in the American First Amendment ("Establishment Clause") and French *laïcité*—demanding a rigid, impermeable "wall of separation" between the state and religious bodies. 

@@ -48,16 +48,16 @@ Hamburger / Home
         → Jurisprudential Foundation & Legislative Intent
         → Statutory Deconstruction (Provisos, Explanations, Non-obstante clauses)
         → Procedural & Evidentiary Anchor (Forum, Jurisdiction, Limitation, Burden of Proof)
-        → Official Statutory Illustrations (if enacted) + Labelled Practical Hypotheticals
-        → Landmark Case Law (Ratio Decidendi segregated from Obiter Dicta)
+        → Official Statutory Illustrations (proving vs failing conditions) + Practical Hypotheticals
+        → Landmark Case Law (Ratio Decidendi with Bench, Court, Facts, and Courtroom Application)
         → Courtroom Submissions (Prosecution/Petitioner vs Defence/Respondent arguments)
-        → 10 Mark Button → Full 10-Mark Answer (IRAC / ILAC Structure)
-        → 16 Mark Button → Full 16-Mark Answer (Advanced Scholastic & Practical Analysis)
+        → Case Brief Button → Structured Case Brief & Problem Assessment (IRAC Structure)
+        → Written Submissions Button → Comprehensive Chamber Written Submissions (Appellate Standard)
 ```
 
 - **Subject landing**: Statutory context card (`subjectIntros.ts`), in-force milestone dates, transitional summary (e.g. S. 531 BNSS savings), quick search/jump box, and the complete provision catalog grouped by Chapter/Part. High-yield themes sit prominently above the list.
-- **Treatise page**: A complete chapter delivering both **Track A (Scholastic & Examination Mastery)** for LL.B, LL.M, AIBE, and Judicial Services candidates, and **Track B (Litigation & Chamber Practice)** for junior advocates.
-- **Dock Jump Targets**: Dedicated quick-access targets for `#statutory-illustrations`, `#exam-10`, and `#exam-16`.
+- **Treatise page**: A complete chapter delivering both **Track A (Scholastic & Problem Solving Mastery)** for LL.B, LL.M, AIBE, and Judicial Services candidates, and **Track B (Litigation & Chamber Practice)** for junior advocates.
+- **Dock Jump Targets**: Dedicated quick-access targets for `#statutory-illustrations`, `#case-law-ratios`, `#legal-brief`, and `#written-submissions`.
 - **Zero Boilerplate Synthesizers**: Do not lead a study page with unverified IPC/CrPC/IEA mapping or generic boilerplate templates. Teach the actual working rule of that specific provision.
 - **Navigation Integration**: Wire new subjects into `src/components/layout/NavDrawer.tsx` (`CODE_SLUGS` or `MORE_SLUGS`) and `src/components/home/HomePage.tsx`.
 
@@ -75,20 +75,20 @@ Subject-specific files in [`.github/instructions/subjects/`](subjects/) contain 
 
 ### The Sacred Student Career Covenant (Zero Topic Omission Directive)
 
-**Law students and judicial service aspirants place their faith, university degrees, and life career trajectories in CodePackr Law.** We work for the student's career and their life. An omitted, skipped, or arbitrarily pruned topic in our library could be the exact 10-mark question, 16-mark essay, or short note that appears on a student's examination paper, or the exact defense needed by a young advocate in court.
+**Law students and judicial service aspirants place their faith, university degrees, and life career trajectories in CodePackr Law.** We work for the student's career and their life. An omitted, skipped, or arbitrarily pruned topic in our library could cause a student to fail an exam or an advocate to miss a cause of action.
 
 1. **Zero Omission Standard**: AI agents, maintainers, and contributors must NEVER arbitrarily ignore, prune, or drop syllabus topics from any legal subject.
 2. **Authoritative Syllabus Benchmarking**: When architecting or updating any subject catalog in `src/data/subjects.ts`, conduct an exhaustive cross-reference against:
    - The Bar Council of India (BCI) Model Curriculum and National Law University (NLU) course outlines.
    - Revered classroom textbooks and standard treatises (e.g., M. S. Rama Rao, Ratanlal & Dhirajlal, Avtar Singh, Mulla, R.K. Bangia).
    - University LL.B/LL.M question banks and State Judicial Services Mains examination syllabi.
-3. **Dedicated Provision & Topic Registration**: Every distinct concept, general defence, capacity rule, specific wrong/offence, remedy, and procedural mechanism must have a registered, dedicated, clickable topic with full 10-mark and 16-mark answers. If an exhaustive chapter treatise is pending rollout, the topic must still be registered so that `synthesizePlaceholderTopic` provides an authoritative syllabus reference immediately.
+3. **Dedicated Provision & Topic Registration**: Every distinct concept, general defence, capacity rule, specific wrong/offence, remedy, and procedural mechanism must have a registered, dedicated, clickable topic with structured Case Briefs and Written Submissions. If an exhaustive chapter treatise is pending rollout, the topic must still be registered so that `synthesizePlaceholderTopic` provides an authoritative syllabus reference immediately.
 
 ---
 
 ### Modular Design Standard (Zero Raw Markdown in UI)
 
-All topic study treatises and examination answers must strictly adhere to the **Modular Design Standard**:
+All topic study treatises and courtroom drafts must strictly adhere to the **Modular Design Standard**:
 1. **Zero Raw Markdown Tokens**: Raw markdown syntax (`###`, `##`, `#`, `---`, `> `) must **never** be printed as unrendered plain text to the user.
 2. **Modular Component Presentation**:
    - `Topic at a glance`: Presented in a prominent, styled summary card.
@@ -96,7 +96,7 @@ All topic study treatises and examination answers must strictly adhere to the **
    - `Callouts & Notes`: Editorial notes, provisos, and judicial commentaries must render as distinct callout cards with left accent borders and subtle background tint.
    - `Structured Data Properties`: Prefer structuring content into `TopicContent` properties (`sections`, `provisions`, `hypotheticals`, `distinctions`, `misconceptions`, `questionsAndAnswers`).
    - `Rich Inline Typography`: Bold phrases (`**term**`) are rendered in crisp, high-contrast weights, and statutory citations are cleanly anchored.
-   - `10-Mark and 16-Mark Answers`: Structured in distinct IRAC and CREAC sections without markdown artifacts.
+   - `Case Briefs and Written Submissions`: Structured in distinct IRAC and CREAC sections without markdown artifacts.
 
 ---
 

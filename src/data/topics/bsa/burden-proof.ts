@@ -32,7 +32,7 @@ Current-law position
 BSA ss. 104–120 from 1 July 2024. IEA 101–114A is historical. Presumptions as to legitimacy, suicide of a married woman, and similar special rules must be cited from the current BSA text, not from memory of IEA 113A/113B numbers.
 
 Educational note
-Confirm any presumption section number in the Bare Act before a 16-mark answer on 113-family topics.`,
+Confirm any presumption section number in the Bare Act before drafting submissions on 113-family topics.`,
 
   provisions: [
     { actId: 'bsa', actName: 'Bharatiya Sakshya Adhiniyam, 2023', provisionId: 'bsa-104', section: 's. 104', title: 'Burden of proof' },
@@ -93,7 +93,7 @@ Confirm any presumption section number in the Bare Act before a 16-mark answer o
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the burden of proof under the BSA.',
       steps: [
         's. 104 general rule.',
@@ -104,7 +104,7 @@ Confirm any presumption section number in the Bare Act before a 16-mark answer o
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Distinguish burden of proof and onus of proof. How do ss. 104–109 allocate risk in civil and criminal trials?',
       steps: [
         'Vocabulary: legal vs evidential burden.',

@@ -191,7 +191,7 @@ A 5-judge Constitution Bench by a 3:2 majority upheld the **Constitution (One Hu
   questionsAndAnswers: [
     {
       id: 'eq-res-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Discuss the landmark principles laid down by the 9-judge Constitution Bench in Indra Sawhney v. Union of India (1992) regarding reservations in public employment under Article 16(4).',
       answer: `### 1. Synopsis / Introduction
 In *Indra Sawhney v. Union of India* (AIR 1993 SC 477), popularly known as the **Mandal Commission Case**, a 9-judge Constitution Bench established the comprehensive constitutional jurisprudence governing affirmative action and reservations in public services under **Article 16(4)**.
@@ -216,7 +216,7 @@ In *Indra Sawhney v. Union of India* (AIR 1993 SC 477), popularly known as the *
     },
     {
       id: 'eq-res-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"Affirmative action under Articles 15 and 16 is not a compromise with equality, but the constitutional instrument for realizing substantive equality." Critically examine the evolution of reservation jurisprudence in India. Trace the constitutional amendments and judicial rulings from Indra Sawhney through M. Nagaraj and Jarnail Singh to the EWS judgment (Janhit Abhiyan) and the sub-classification verdict in State of Punjab v. Davinder Singh (2024).',
       answer: `### 1. Introduction: From Formal Equality to Substantive Equality
 In classical liberal philosophy, equality before the law is conceived as formal procedural neutrality: treating all individuals identically regardless of their historical, social, or economic starting points. However, in an ancient, deeply stratified society marred by millennia of caste oppression and untouchability, treating unequals equally perpetuates and reinforces injustice.

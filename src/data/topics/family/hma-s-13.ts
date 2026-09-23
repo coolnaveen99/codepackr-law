@@ -77,14 +77,14 @@ export default {
   questionsAndAnswers: [
     {
       id: 's13-q-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Enumerate the grounds of divorce available to either spouse under Section 13(1) of the Hindu Marriage Act, 1955.',
       answer:
         'Introduction. Section 13(1) of the Hindu Marriage Act, 1955 lists the grounds on which either the husband or the wife may petition for divorce.\n\nGrounds. (i) Adultery — voluntary sexual intercourse with any person other than the spouse after the marriage. (ii) Cruelty. (iii) Desertion for a continuous period of not less than two years immediately preceding the petition. (iv) Conversion — ceased to be a Hindu by conversion to another religion. (v) Incurably of unsound mind or mental disorder of such a kind and to such an extent that the petitioner cannot reasonably be expected to live with the respondent. (vi) Venereal disease in a communicable form. (vii) Renunciation of the world by entering a religious order. (viii) Not heard of as being alive for seven years or more (presumption of death).\n\nNote. Older references to virulent leprosy have been affected by later amendments and medical reality; state the current statutory text accurately.\n\nConclusion. List the clauses and give a one-line meaning for cruelty and desertion.',
     },
     {
       id: 's13-q-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Discuss the ground of cruelty under Section 13(1)(ia) of the Hindu Marriage Act, 1955. How does it interact with restitution of conjugal rights?',
       answer:
         'Introduction. Cruelty was inserted as a ground of divorce by the 1976 amendment and is now the most litigated ground under Section 13(1)(ia) of the Hindu Marriage Act, 1955.\n\nMeaning. Cruelty may be physical or mental. Mental cruelty is conduct that causes a reasonable apprehension in the mind of the petitioner that it is harmful or injurious to live with the other spouse. The standard is that of a reasonable person in the circumstances of the parties.\n\nIllustrations from case law. Persistent false allegations of unchastity, sustained denial of marital obligations, public humiliation, and prolonged mutual hostility leading to irretrievable breakdown have been treated as mental cruelty (e.g. lines of authority including Naveen Kohli).\n\nBurden. The petitioner must prove the conduct. Isolated acts may not suffice; a course of conduct is usually required.\n\nInteraction with s. 9. Restitution of conjugal rights requires that the withdrawal is without reasonable excuse. Proven cruelty is a reasonable excuse. Therefore a finding of cruelty under s. 13(1)(ia) ordinarily defeats a petition for restitution and supports divorce or, under s. 13A, judicial separation.\n\nConclusion. Define cruelty, give physical and mental illustrations, cite the clause as Section 13(1)(ia) of the Hindu Marriage Act, 1955, and explain why it bars restitution.',

@@ -84,11 +84,11 @@ export function DualTrackHero({ onOpenSubjects }: DualTrackHeroProps) {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="space-y-2">
                 <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-blue-700 dark:text-blue-300">
-                  <Sparkles className="w-4 h-4" /> 10-Mark & 16-Mark Answers
+                  <Sparkles className="w-4 h-4" /> Chamber Briefs &amp; Written Arguments
                 </div>
-                <h3 className="font-bold text-base text-slate-900 dark:text-white">IRAC / ILAC Academic Structure</h3>
+                <h3 className="font-bold text-base text-slate-900 dark:text-white">IRAC / ILAC Doctrinal Structure</h3>
                 <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                  Every section and doctrine includes ready-to-write examination answers with official scoring rubrics, legislative intent, and statutory ingredients.
+                  Every section and doctrine includes ready-to-use case briefs and courtroom written submissions with legislative intent, proving ingredients, and extracted case law ratios.
                 </p>
               </div>
 

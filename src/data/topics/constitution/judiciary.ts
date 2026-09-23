@@ -190,7 +190,7 @@ The constitutional phrase *"after consultation with such of the Judges of the Su
   questionsAndAnswers: [
     {
       id: 'judiciary-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Examine the scope, plenary character, and limitations of the Supreme Court\'s jurisdiction under Article 136 of the Constitution. Distinguish between dismissal of an SLP in limine and disposal of an appeal after grant of leave.',
       answer: `### 1. Synopsis / Introduction
 Article 136 of the Constitution of India confers extraordinary appellate jurisdiction upon the Supreme Court by vesting it with the plenary discretion to grant special leave to appeal against any judgment, decree, determination, sentence, or order in any cause or matter passed by any court or tribunal in India (excluding Armed Forces tribunals under Art 136(2)). It is a residual constitutional power reserved to correct grave miscarriages of justice.
@@ -230,7 +230,7 @@ Article 136 is the constitutional safety valve of the Indian judicial system. It
     },
     {
       id: 'judiciary-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"The independence of the judiciary is a cardinal feature of the basic structure of the Constitution, and judicial primacy in appointments is its indispensable corollary." Trace the jurisprudential evolution of the Collegium system through the Judges Cases, critique the invalidation of the National Judicial Appointments Commission (NJAC), and examine the dynamic interaction between Article 141, Article 142, and the separation of powers.',
       answer: `### 1. Introduction: Constitutional Anchor & The Doctrine of Separation of Powers
 In the constitutional democracy established by the Republic of India, the separation of powers between the Legislature, Executive, and Judiciary is an essential pillar of constitutional governance. While the Indian Constitution does not adopt a rigid institutional separation like the American Constitution, it mandates functional separation (Article 50). In *Kesavananda Bharati v. State of Kerala* (1973) and *Indira Nehru Gandhi v. Raj Narain* (1975), the Supreme Court ruled that both **judicial independence** and **judicial review** form non-negotiable, inviolable components of the basic structure of the Constitution. The mechanism of appointing judges to the higher judiciary (Articles 124(2) and 217(1)) forms the structural gateway through which judicial independence is maintained or compromised.

@@ -86,7 +86,7 @@ Reuse the canonical concept; this page is the exam expansion.`,
 
   cases: [
     { name: 'Regina v. Govinda', year: 1876, citation: '(1876) 1 Bom 342', holding: 'The difference between culpable homicide and murder turns on the degree of likelihood and the nature of the intended injury.', relevance: 'Still the teaching case for the clauses. Apply BNS 100/101 numbers.' },
-    { name: 'Virsa Singh v. State of Punjab', year: 1958, citation: 'AIR 1958 SC 465', holding: 'If the accused intended the bodily injury, and that injury is sufficient in the ordinary course of nature to cause death, the third murder clause is satisfied even if death as such was not desired.', relevance: 'Standard 16-mark authority.' },
+    { name: 'Virsa Singh v. State of Punjab', year: 1958, citation: 'AIR 1958 SC 465', holding: 'If the accused intended the bodily injury, and that injury is sufficient in the ordinary course of nature to cause death, the third murder clause is satisfied even if death as such was not desired.', relevance: 'Foundational locus classicus on third clause of murder.' },
     { name: 'State of A.P. v. Rayavarapu Punnayya', year: 1976, citation: '(1977) 1 SCC 373', holding: 'Culpable homicide is the genus, murder the species. Always start with s. 100 (old 299) before climbing to murder.', relevance: 'Opening sentence of a good homicide answer.' },
   ],
 
@@ -94,7 +94,7 @@ Reuse the canonical concept; this page is the exam expansion.`,
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Distinguish culpable homicide and murder under the BNS.',
       steps: [
         'Genus and species (Punnayya).',
@@ -105,7 +105,7 @@ Reuse the canonical concept; this page is the exam expansion.`,
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Explain the scheme of homicide in Chapter VI BNS with exceptions and punishments.',
       steps: [
         'Why the law grades killings.',

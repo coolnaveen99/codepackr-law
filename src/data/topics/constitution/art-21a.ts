@@ -99,7 +99,7 @@ Article 21A is in force. The RTE Act, 2009 (as amended) is the primary implement
   hypotheticals: [
     {
       id: 'a21a-hypo',
-      title: '16-Mark Hypothetical (Private School Quota)',
+      title: 'Chamber Practice Hypothetical (Private School Quota)',
       facts: 'A private unaided non-minority school refuses admission to children from the weaker section under the 25% quota, citing financial hardship and institutional autonomy under Article 19(1)(g). Parents approach the High Court.',
       question: 'Examine the constitutional validity of the school’s refusal in light of Article 21A and the RTE Act.',
       applicableLaw: 'Article 21A; RTE Act s. 12(1)(c); Society for Unaided Private Schools of Rajasthan (2012); Article 19(1)(g).',
@@ -148,7 +148,7 @@ Article 21A is in force. The RTE Act, 2009 (as amended) is the primary implement
   questionsAndAnswers: [
     {
       id: 'a21a-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain Article 21A of the Constitution. How is the right to free and compulsory education implemented?',
       answer: `I. ISSUE
 Article 21A guarantees free and compulsory education for children aged 6–14.
@@ -168,7 +168,7 @@ Article 21A converts a Directive Principle into a justiciable Fundamental Right 
     },
     {
       id: 'a21a-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the right to education under Article 21A. Discuss its relationship with Article 21, the RTE Act, and the rights of minority educational institutions.',
       answer: `I. INTRODUCTION
 Article 21A is the express constitutional guarantee of free and compulsory education for children aged six to fourteen. It sits at the intersection of the right to life, social justice Directive Principles, and institutional autonomy claims of private and minority schools.

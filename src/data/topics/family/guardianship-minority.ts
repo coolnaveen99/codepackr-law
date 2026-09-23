@@ -64,7 +64,7 @@ export default {
   questionsAndAnswers: [
     {
       id: 'guard-q10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Who are the natural guardians of a Hindu minor under the HMGA, 1956?',
       answer:
         'Introduction. Minor defined. Natural guardians: father then mother for person and separate property. Welfare paramount (s. 13). s. 8 property limits. Conclusion with HMGA citation.',
@@ -72,7 +72,7 @@ export default {
     },
     {
       id: 'guard-q16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Discuss guardianship of minors under Hindu law and the Guardians and Wards Act, 1890.',
       answer:
         'Introduction. HMGA scheme. Powers and s. 8. GWA court appointment and welfare. Brief Muslim custody contrast. Conclusion — welfare paramount; cite HMGA and GWA.',

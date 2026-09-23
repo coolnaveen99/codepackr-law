@@ -56,7 +56,7 @@ export default {
   questionsAndAnswers: [
     {
       id: 's25-q10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain permanent alimony under Section 25 of the Hindu Marriage Act, 1955.',
       answer:
         'Introduction. Timing and forms of order. Factors for quantum. Variation and conduct/remarriage. Contrast s. 24. Conclusion with citation.',
@@ -64,7 +64,7 @@ export default {
     },
     {
       id: 's25-q16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Discuss the scheme of maintenance under the Hindu Marriage Act, 1955.',
       answer:
         'Introduction. s. 24 interim. s. 25 permanent. Factors and variation. Interface with s. 125 BNSS and HAMA. Conclusion with HMA citations.',

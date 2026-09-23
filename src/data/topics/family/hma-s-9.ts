@@ -67,7 +67,7 @@ export default {
   questionsAndAnswers: [
     {
       id: 's9-q10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain restitution of conjugal rights under Section 9 of the Hindu Marriage Act, 1955.',
       answer:
         'Introduction — s. 9 HMA. Ingredients: valid marriage, withdrawal from society, absence of reasonable excuse. Burden of proving excuse on respondent (Explanation). Discretion of court. Link to s. 13(1A). Conclusion with full citation.',
@@ -75,7 +75,7 @@ export default {
     },
     {
       id: 's9-q16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine restitution of conjugal rights under the Hindu Marriage Act, 1955.',
       answer:
         'Introduction and policy. Ingredients and procedure. Reasonable excuse and case-law approach. Constitutional concerns (privacy/autonomy) and Saroj Rani. Relationship with judicial separation and s. 13(1A) divorce. Conclusion — remedy survives but is applied cautiously; cite s. 9 HMA.',

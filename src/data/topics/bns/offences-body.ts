@@ -17,7 +17,7 @@ New offences — no IPC predecessor
 s. 111 organised crime.
 s. 112 petty organised crime.
 s. 113 terrorist act.
-Do not map these backwards onto s. 61 conspiracy or onto UAPA unless the facts also satisfy those statutes. They are BNS offences with their own ingredients. Confirm the Bare Act before listing every clause in a 16-mark answer.
+Do not map these backwards onto s. 61 conspiracy or onto UAPA unless the facts also satisfy those statutes. They are BNS offences with their own ingredients. Confirm the Bare Act before listing every clause in written submissions.
 
 s. 103(2)
 Five-or-more-person murder. Distinct from [[REF:DOCTRINE:CRIMINAL-LAW:COMMON-INTENTION]] (two persons, prior concert) and from [[REF:DOCTRINE:CRIMINAL-LAW:COMMON-OBJECT]] (five persons, unlawful assembly).
@@ -84,7 +84,7 @@ For black-letter of each section, open s. 100 onwards.`,
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Write a note on new offences against the human body in the BNS.',
       steps: [
         'Chapter VI map in three lines.',
@@ -95,7 +95,7 @@ For black-letter of each section, open s. 100 onwards.`,
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Survey Chapter VI BNS: homicide, new organised-crime/terrorist offences, and acid attack.',
       steps: [
         'Point to the homicide essay (ss. 100–106) without rewriting it.',

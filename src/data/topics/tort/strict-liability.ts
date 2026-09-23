@@ -199,7 +199,7 @@ const content: TopicContent = {
   questionsAndAnswers: [
     {
       id: 'qa-sl-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question:
         'Explain the Rule of Strict Liability laid down in Rylands v. Fletcher. What are the essential ingredients of the rule and the exceptions recognized to it?',
       answer: `### 1. Introduction and Formulation of the Rule
@@ -235,7 +235,7 @@ The rule in Rylands v. Fletcher represents a vital stage in the evolution of com
     },
     {
       id: 'qa-sl-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question:
         'Trace the transition from the doctrine of Strict Liability to the principle of Absolute Liability in Indian jurisprudence. Critically evaluate M.C. Mehta v. Union of India and discuss how it departed from Rylands v. Fletcher.',
       answer: `### 1. Introduction & Jurisprudential Context
@@ -305,7 +305,7 @@ The transition from strict to absolute liability represents one of the greatest 
   ],
   examTips: [
     'In exam problems involving toxic gas leaks or chemical factory explosions in India, never apply Rylands v. Fletcher exceptions. Apply M.C. Mehta Absolute Liability directly.',
-    'Highlight the deep-pocket principle formulated by Chief Justice P.N. Bhagwati for 16-mark answers.',
+    'Highlight the deep-pocket principle formulated by Chief Justice P.N. Bhagwati for comprehensive courtroom submissions.',
     'Emphasize that under Indian law, Absolute Liability is rooted in Article 21 constitutional tort jurisprudence.',
   ],
 }

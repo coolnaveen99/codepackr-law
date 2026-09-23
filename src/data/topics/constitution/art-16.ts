@@ -107,7 +107,7 @@ Article 16 as amended by the 77th, 81st, 85th and 103rd Amendments. The Indra Sa
   hypotheticals: [
     {
       id: 'a16-hypo',
-      title: '16-Mark Hypothetical (Sub-classification & Promotions)',
+      title: 'Chamber Practice Hypothetical (Sub-classification & Promotions)',
       facts: 'State X provides 15% reservation for SCs in promotions. Within that 15%, it earmarks 8% for a particularly disadvantaged sub-group of SCs identified by a State commission on quantifiable data, and 7% for the remaining SCs. General-category officers challenge the sub-classification as violative of Article 16 and the equality code.',
       question: 'Advise on the constitutional validity of the sub-classification in light of Davinder Singh and related precedents.',
       applicableLaw: 'Article 16(4A); Article 14; State of Punjab v. Davinder Singh (2024); Indra Sawhney; Jarnail Singh.',
@@ -151,7 +151,7 @@ Article 16 as amended by the 77th, 81st, 85th and 103rd Amendments. The Indra Sa
   questionsAndAnswers: [
     {
       id: 'a16-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the scheme of reservation under Article 16 of the Constitution with reference to Indra Sawhney and subsequent amendments.',
       answer: `I. ISSUE
 Article 16 guarantees equality of opportunity in public employment and authorises reservation for backward classes and EWS.
@@ -177,7 +177,7 @@ Article 16 balances formal equality with substantive representation in public se
     },
     {
       id: 'a16-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the constitutional validity of reservation in promotions for Scheduled Castes and Scheduled Tribes. Discuss the evolution from Indra Sawhney to Nagaraj, Jarnail Singh and Davinder Singh.',
       answer: `I. INTRODUCTION
 Reservation in promotions has been one of the most contested questions in Indian constitutional law. The trajectory from Indra Sawhney through constitutional amendments to Nagaraj, Jarnail Singh and Davinder Singh defines the present law.

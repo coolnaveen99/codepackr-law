@@ -101,7 +101,7 @@ Article 15 stands as amended by the 1st, 93rd and 103rd Amendments. The 50% ceil
   hypotheticals: [
     {
       id: 'a15-hypo',
-      title: '16-Mark Examination Hypothetical (EWS & Institutional Autonomy)',
+      title: 'Chamber Practice Hypothetical (EWS & Institutional Autonomy)',
       facts: 'A private unaided professional college challenges a State notification that mandates 10% EWS reservation in its admissions under Article 15(6). The college argues that (a) economic criterion alone is not a constitutionally recognised basis of classification, and (b) the mandate violates its institutional autonomy under Article 19(1)(g).',
       question: 'Examine the constitutional validity of the EWS mandate in light of Janhit Abhiyan and the scope of Article 15(6).',
       applicableLaw: 'Article 15(6); Article 14; Article 19(1)(g); Janhit Abhiyan v. Union of India (2022).',
@@ -156,7 +156,7 @@ Article 15 stands as amended by the 1st, 93rd and 103rd Amendments. The 50% ceil
   questionsAndAnswers: [
     {
       id: 'a15-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the scheme of Article 15 of the Constitution. How do clauses (3) to (6) reconcile formal equality with substantive equality?',
       answer: `I. ISSUE & CONSTITUTIONAL MANDATE
 Article 15 prohibits discrimination against citizens on enumerated grounds while empowering the State to make special provisions for historically disadvantaged groups.
@@ -180,7 +180,7 @@ Article 15 is both a shield against invidious discrimination and a sword of subs
     },
     {
       id: 'a15-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the evolution of Article 15 from Champakam Dorairajan to Janhit Abhiyan. Discuss the constitutional validity of EWS reservation and the relationship between Articles 15 and 16.',
       answer: `I. INTRODUCTION
 Article 15 is the principal anti-discrimination and affirmative-action provision for civic life and education. Its judicial and legislative evolution tracks India’s journey from formal equality to substantive equality and, more recently, to economic-criterion-based reservation.

@@ -212,7 +212,7 @@ const content: TopicContent = {
   questionsAndAnswers: [
     {
       id: 'qa-cpa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question:
         'Define a "Consumer" under the Consumer Protection Act, 2019. Explain the "commercial purpose" exclusion and the self-employment exception with reference to Laxmi Engineering Works v. P.S.G. Industrial Institute.',
       answer: `### 1. Introduction and Statutory Definition
@@ -248,7 +248,7 @@ Section 2(7) strikes a balanced equilibrium: it excludes large-scale commercial 
     },
     {
       id: 'qa-cpa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question:
         'Critically examine the major changes introduced by the Consumer Protection Act, 2019 over the 1986 Act. Explain the statutory framework governing Product Liability under Chapter VI and discuss the pecuniary and territorial jurisdiction of Consumer Commissions.',
       answer: `### 1. Abstract & Introduction

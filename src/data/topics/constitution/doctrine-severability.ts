@@ -153,7 +153,7 @@ Sections 4 and 55 of the Constitution (Forty-Second Amendment) Act, 1976 sought 
   questionsAndAnswers: [
     {
       id: 'severability-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the Doctrine of Severability with reference to Article 13 of the Constitution. Discuss the principles laid down by the Supreme Court in R.M.D. Chamarbaugwalla v. Union of India.',
       answer: `### 1. Synopsis / Introduction
 The Doctrine of Severability (or Separability) is a foundational rule of constitutional adjudication anchored in the phrases *"to the extent of such inconsistency"* in Article 13(1) and *"to the extent of the contravention"* in Article 13(2). It directs that when an enactment is partly unconstitutional, the court should excise the offending portion and sustain the valid remainder if the two parts are independent and separable.
@@ -187,7 +187,7 @@ The Doctrine of Severability enforces judicial restraint and institutional comit
     },
     {
       id: 'severability-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"The Doctrine of Severability is the constitutional scalpel that reconciles judicial review with legislative supremacy." Critically evaluate the Doctrine of Severability in Indian constitutional jurisprudence. Examine the limits of severability, the Blue Pencil test, and analyze landmark instances including Kihoto Hollohan and Minerva Mills.',
       answer: `### 1. Introduction: Constitutional Review and Judicial Restraint
 Under the constitutional framework of India, the judiciary exercises the power of judicial review (Articles 13, 32, and 226) to test the constitutional validity of legislative enactments. However, this power is tempered by the presumption of constitutionality and the principle of institutional deference. When a court discovers an unconstitutional flaw in a statute, it is not compelled to annihilate the entire enactment. 

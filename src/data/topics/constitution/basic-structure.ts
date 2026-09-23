@@ -132,7 +132,7 @@ The Basic Structure Doctrine is the bedrock of constitutional supremacy in India
   hypotheticals: [
     {
       id: 'bs-hypo',
-      title: '16-Mark Examination Hypothetical (Judicial Independence & Basic Structure)',
+      title: 'Chamber Practice Hypothetical (Judicial Independence & Basic Structure)',
       facts: 'Parliament enacts the Constitution (One Hundred and Tenth Amendment) Act, substituting the collegium system of judicial appointments with an executive commission where the Law Minister and two nominees appointed by the ruling party possess absolute veto over the appointment of Supreme Court and High Court judges. A national association of advocates challenges the amendment under Article 32 as violating the Basic Structure Doctrine.',
       question: 'Examine the constitutional validity of the amendment in light of the Second Judges Case, the NJAC judgment (SCAORA v. Union of India, 2015), and the doctrine of separation of powers.',
       applicableLaw: 'Article 368 of the Constitution of India; Basic Structure Doctrine; Articles 124 and 217; SCAORA v. Union of India (2015).',
@@ -176,7 +176,7 @@ The Basic Structure Doctrine is the bedrock of constitutional supremacy in India
   questionsAndAnswers: [
     {
       id: 'basic-structure-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Trace the evolution of the Basic Structure Doctrine from Shankari Prasad to Kesavananda Bharati and Minerva Mills.',
       answer: `I. ISSUE & CONSTITUTIONAL DILEMMA
 Whether Parliament possesses unlimited constituent power under Article 368 to amend any provision of the Constitution, or whether there exist inherent, implied limitations preserving the Constitution's foundational identity.
@@ -200,7 +200,7 @@ The Basic Structure Doctrine permanently established constitutional supremacy ov
     },
     {
       id: 'basic-structure-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the Basic Structure Doctrine in Indian Constitutional Law. How did the Supreme Court resolve the tension between Parliamentary sovereignty and Judicial Review? Discuss with reference to Kesavananda Bharati, Indira Gandhi, Minerva Mills, and I.R. Coelho.',
       answer: `I. INTRODUCTION & THE PHILOSOPHICAL CONFLICT
 The Basic Structure Doctrine is the crowning glory of Indian constitutional jurisprudence. It resolved the high-stakes constitutional warfare between Parliament and the Judiciary over the nature of constituent power. Inheriting a Westminster system grafted upon a written, supreme Constitution, India faced the dilemma: Does Parliament represent the unfettered sovereign will of the people to remake the constitutional order, or is Parliament merely a creature of the Constitution, subject to its immutable principles?
@@ -310,7 +310,7 @@ The Basic Structure Doctrine successfully prevented India from slipping into ele
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the evolution and significance of the Basic Structure Doctrine.',
       steps: [
         'Introduction: Definition and purpose of the doctrine.',
@@ -321,7 +321,7 @@ The Basic Structure Doctrine successfully prevented India from slipping into ele
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the Basic Structure Doctrine with Kesavananda, Indira Gandhi, Minerva Mills, and I.R. Coelho.',
       steps: [
         'Philosophical roots: Parliamentary sovereignty vs Constitutional supremacy.',

@@ -214,7 +214,7 @@ const content: TopicContent = {
   questionsAndAnswers: [
     {
       id: 'qa-neg-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question:
         'Define negligence as a tort. Explain its essential ingredients with reference to Donoghue v. Stevenson and discuss the doctrine of Res Ipsa Loquitur.',
       answer: `### 1. Introduction and Definition
@@ -258,7 +258,7 @@ Negligence requires duty, breach, and proximate damage. Res Ipsa Loquitur serves
     },
     {
       id: 'qa-neg-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question:
         'Critically examine the evolution of the concept of "Duty of Care" in the law of negligence from Donoghue v. Stevenson to Caparo Industries. Discuss the standards governing professional and medical negligence in India with specific reference to Jacob Mathew v. State of Punjab.',
       answer: `### 1. Abstract & Introduction

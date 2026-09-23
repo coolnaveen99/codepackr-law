@@ -113,7 +113,7 @@ Federalism is an essential feature of the Basic Structure. The 101st Amendment (
   hypotheticals: [
     {
       id: 'centre-state-hypo',
-      title: '16-Mark Examination Hypothetical (Concurrent Repugnancy & Presidential Assent)',
+      title: 'Chamber Practice Hypothetical (Concurrent Repugnancy & Presidential Assent)',
       facts: 'The State Legislature of X enacts a Land Acquisition and Rehabilitation Act in 2022 dealing with subjects in Concurrent List Entry 42, containing a compensation formula distinct from the Central Land Acquisition Act, 2013. The State Governor reserves the Bill for the consideration of the President under Article 200, and the President gives assent under Article 254(2). In 2024, Parliament enacts a comprehensive national infrastructure amendment expressly modifying compensation terms across India for national highways. Landowners in State X challenge the application of the Central Act, arguing that the State Act has Presidential assent.',
       question: 'Examine whether the State Act or the Central Act prevails in State X. Can Parliament override a State law that has received Presidential assent under Article 254(2)?',
       applicableLaw: 'Article 254 of the Constitution of India; Proviso to Article 254(2); Seventh Schedule List III Entry 42; M. Karunanidhi v. Union of India.',
@@ -157,7 +157,7 @@ Federalism is an essential feature of the Basic Structure. The 101st Amendment (
   questionsAndAnswers: [
     {
       id: 'centre-state-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the distribution of legislative powers between the Union and the States under Article 246 and the Seventh Schedule. When can Parliament legislate on matters in the State List?',
       answer: `I. ISSUE & CONSTITUTIONAL ARCHITECTURE
 The distribution of legislative competence between the Union and the States is governed by Article 246 read with the Seventh Schedule. The core issue is the delineation of subject-matter competence and the exceptional cases where Parliament legislates on State subjects.
@@ -177,12 +177,12 @@ III. FIVE EXCEPTIONAL CASES WHERE PARLIAMENT LEGISLATES ON LIST II
 
 IV. CONCLUSION
 The legislative scheme combines regional autonomy with central supremacy in emergencies, embodying India's quasi-federal design. Current through the 106th Amendment (2023).`,
-      explanation: 'Formatted according to the IRAC method for 10-mark examination questions.',
+      explanation: 'Formatted according to the IRAC method for structured legal assessment.',
       relatedProvisionIds: ['constitution-article-246', 'constitution-article-248'],
     },
     {
       id: 'centre-state-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the federal architecture of the Indian Constitution with special reference to legislative relations and the Doctrine of Repugnancy under Article 254. Is India truly a federal state? Discuss with landmark decisions including S.R. Bommai and Mohit Minerals.',
       answer: `I. INTRODUCTION & THE FEDERAL PARADOX
 The nature of the Indian federal structure has generated rich jurisprudential debate. While the United States represents an indestructible union of indestructible states born out of a compact between independent nations, India is an “indestructible union of destructible states” (Dr. B.R. Ambedkar). The Constitution purposefully avoided the word “Federation” in Article 1, describing India as a “Union of States”. In S.R. Bommai v. Union of India (1994) 3 SCC 1, a 9-judge Constitution Bench settled that federalism is an indispensable feature of the Basic Structure.
@@ -285,7 +285,7 @@ India is not a traditional classical federation, but a dynamic, asymmetric coope
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the distribution of legislative powers and when Parliament can legislate on List II.',
       steps: [
         'Introduction: Article 246 and the Seventh Schedule Three Lists.',
@@ -296,7 +296,7 @@ India is not a traditional classical federation, but a dynamic, asymmetric coope
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine Indian federalism, legislative relations, and Article 254 Repugnancy.',
       steps: [
         'Theoretical foundations: Quasi-federal nature and Basic Structure status (Bommai).',

@@ -114,7 +114,7 @@ Part III embodies transformative constitutionalism. Recent expansions include th
   hypotheticals: [
     {
       id: 'fr-hypo',
-      title: '16-Mark Examination Hypothetical (Waiver & Fundamental Rights)',
+      title: 'Chamber Practice Hypothetical (Waiver & Fundamental Rights)',
       facts: 'To obtain a lucrative government commercial contract, an engineering contractor signs an agreement with the Public Works Department containing a clause that states: “The contractor hereby irrevocably waives all rights under Article 14 and Article 19(1)(g) of the Constitution and agrees not to challenge any unilateral termination or penalty in any court of law.” Following a change of government, the Department cancels the contract without assigning reasons. When the contractor files a writ petition under Article 226, the State pleads that the contractor has voluntarily waived his Fundamental Rights.',
       question: 'Evaluate the validity of the waiver clause in light of the Doctrine of Waiver and the landmark ruling of the Supreme Court in Basheshar Nath v. CIT. Can a citizen contract out of Fundamental Rights in India?',
       applicableLaw: 'Part III of the Constitution of India; Article 13; Doctrine of Waiver; Basheshar Nath v. CIT (AIR 1959 SC 149); Behram Khurshid Pesikaka v. State of Bombay.',
@@ -158,7 +158,7 @@ Part III embodies transformative constitutionalism. Recent expansions include th
   questionsAndAnswers: [
     {
       id: 'fr-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Give an overview of the Fundamental Rights guaranteed under Part III of the Constitution of India. Discuss their main characteristics and constitutional enforceability.',
       answer: `I. ISSUE & CONSTITUTIONAL PURPOSE
 Part III (Articles 12–35) is the Magna Carta of the Constitution of India, guaranteeing fundamental liberties to individuals against state arbitrariness. The issue is the architectural classification and salient features of these rights.
@@ -180,12 +180,12 @@ III. SALIENT CHARACTERISTICS
 
 IV. CONCLUSION
 Part III guarantees essential freedoms necessary for human dignity and democratic citizenship. Current through the 106th Amendment (2023).`,
-      explanation: 'Formatted according to the IRAC method for 10-mark examination questions.',
+      explanation: 'Formatted according to the IRAC method for structured legal assessment.',
       relatedProvisionIds: ['constitution-part-3', 'constitution-article-12', 'constitution-article-13'],
     },
     {
       id: 'fr-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the architecture of Fundamental Rights under Part III of the Constitution of India. How has the Supreme Court evolved Part III into a dynamic charter of human rights through the Golden Triangle and judicial review?',
       answer: `I. INTRODUCTION & CONSTITUTIONAL PHILOSOPHY
 Part III of the Constitution represents the institutionalized triumph of human dignity over state authority. The Constituent Assembly, cognizant of colonial atrocities and drawing inspiration from the American Bill of Rights, Ireland, and the Universal Declaration of Human Rights (1948), enacted Articles 12 to 35 as justiciable limitations on sovereignty. Over seven decades, the Supreme Court has transformed Part III from a rigid code of negative restraints into a radiant, expansive charter of transformative constitutionalism.
@@ -283,7 +283,7 @@ Part III has evolved into an indestructible human rights charter. By integrating
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Give an overview of Fundamental Rights under Part III and their salient characteristics.',
       steps: [
         'Introduction: Part III as the Magna Carta of India.',
@@ -294,7 +294,7 @@ Part III has evolved into an indestructible human rights charter. By integrating
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the architecture of Part III, Golden Triangle, and modern human rights expansion.',
       steps: [
         'Philosophical origins: Bill of Rights, UDHR, and Constituent Assembly vision.',

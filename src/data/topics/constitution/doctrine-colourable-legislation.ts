@@ -153,7 +153,7 @@ In *R.S. Joshi*, Krishna Iyer J. emphasized that "colourable legislation" is a c
   questionsAndAnswers: [
     {
       id: 'colourable-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the Doctrine of Colourable Legislation with reference to the maxim "quando aliquid prohibetur ex directo, prohibetur et per obliquum". Distinguish between legislative competence and legislative motive.',
       answer: `### 1. Synopsis / Introduction
 The Doctrine of Colourable Legislation is an established canon of constitutional adjudication rooted in the maxim *"quando aliquid prohibetur ex directo, prohibetur et per obliquum"* (what cannot be done directly, cannot be done indirectly). It dictates that a legislature with limited constitutional powers cannot transcend its limits by disguising an incompetent enactment in an authorized statutory form.
@@ -187,7 +187,7 @@ The Doctrine of Colourable Legislation ensures fidelity to the constitutional di
     },
     {
       id: 'colourable-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"The Doctrine of Colourable Legislation does not involve any question of bona fides or mala fides on the part of the legislature; the whole doctrine resolves itself into the question of competency of a particular legislature to enact a particular law." Critically examine this statement in light of K.C. Gajapati Narayan Deo v. State of Orissa, State of Bihar v. Kameshwar Singh, and R.S. Joshi v. Ajit Mills. Contrast this doctrine with Pith and Substance and Legislative Mala Fides.',
       answer: `### 1. Introduction: Constitutional Demarcation and The Doctrine of Ultra Vires
 In a sovereign federal republic governed by a written Constitution, legislative power is distributed and limited by constitutional boundaries (Articles 245 and 246 read with the Seventh Schedule). A legislature cannot transgress these boundaries. However, such transgression may occur in two distinct modes:

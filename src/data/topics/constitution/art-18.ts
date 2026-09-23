@@ -92,7 +92,7 @@ Article 18 remains unamended. The Balaji Raghavan guidelines continue to govern 
   hypotheticals: [
     {
       id: 'a18-hypo',
-      title: '16-Mark Hypothetical (Foreign Honour)',
+      title: 'Chamber Practice Hypothetical (Foreign Honour)',
       facts: 'A sitting High Court judge, who is an Indian citizen, is offered a knighthood by a foreign government for his contribution to international commercial arbitration. He seeks advice on whether he may accept it.',
       question: 'Advise the judge with reference to Article 18.',
       applicableLaw: 'Article 18(2); Article 18(4); judicial ethics and independence.',
@@ -131,7 +131,7 @@ Article 18 remains unamended. The Balaji Raghavan guidelines continue to govern 
   questionsAndAnswers: [
     {
       id: 'a18-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain Article 18 of the Constitution. Are Bharat Ratna and Padma awards compatible with the abolition of titles?',
       answer: `I. ISSUE
 Article 18 abolishes titles and restricts foreign titles and presents.
@@ -150,7 +150,7 @@ Article 18 protects republican equality. National awards, properly used, are con
     },
     {
       id: 'a18-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the scope of Article 18. Discuss the distinction between titles and national awards with reference to Balaji Raghavan and the republican equality code.',
       answer: `I. INTRODUCTION
 Article 18 is a structural provision of the equality code. It prevents the re-emergence of a titled aristocracy and protects the independence of public office from foreign honour systems.

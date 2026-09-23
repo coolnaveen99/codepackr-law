@@ -197,7 +197,7 @@ A 5-judge Constitution Bench in *A.K. Roy v. Union of India* (1982) 1 SCC 271 up
   questionsAndAnswers: [
     {
       id: 'art22-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Discuss the constitutional and procedural safeguards available to an arrested person under Article 22(1) and 22(2) of the Constitution. Examine the landmark directives in D.K. Basu v. State of West Bengal (1997).',
       answer: `### 1. Synopsis / Introduction
 Article 22(1) and 22(2) of the Constitution of India form the constitutional fortress protecting individuals against arbitrary police arrest and unlawful custodial incarceration. These guarantees were fortified into a binding human rights code by the Supreme Court in the landmark decision of *D.K. Basu v. State of West Bengal*.
@@ -230,7 +230,7 @@ Articles 22(1) and 22(2), enriched by *D.K. Basu*, ensure that arrest does not s
     },
     {
       id: 'art22-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"Preventive detention is an odious constitutional anomaly that imprisons a citizen without charge or trial, tolerated only as a sinister necessity." Critically evaluate the constitutional safeguards governing preventive detention under Article 22(4) to 22(7) of the Constitution. Examine the scope of Article 22(5) regarding grounds of detention and representation, and analyze the Constitution Bench ruling in A.K. Roy v. Union of India (1982).',
       answer: `### 1. Introduction: The Constitutional Paradox of Preventive Detention
 In most constitutional democracies governed by the rule of law (such as the United Kingdom and the United States), preventive detention without trial is unknown during peacetime, permitted only during proclaimed war or state of emergency. 

@@ -107,7 +107,7 @@ Article 14 stands unamended in text, but its judicial scope has expanded dramati
   hypotheticals: [
     {
       id: 'a14-hypo',
-      title: '16-Mark Examination Hypothetical (Cut-Off Date & Arbitrariness)',
+      title: 'Chamber Practice Hypothetical (Cut-Off Date & Arbitrariness)',
       facts: 'The State Government issues a pension notification granting enhanced gratuity and pension benefits exclusively to employees who retired on or after 1 January 2024, denying the enhancement to employees who retired on 31 December 2023. The pensioners who retired prior to 1 January 2024 challenge the notification under Article 226, alleging that creating an artificial cleavage within an otherwise homogeneous class of pensioners based on an arbitrary cut-off date violates Article 14.',
       question: 'Evaluate the constitutional validity of the cut-off date in light of D.S. Nakara v. Union of India and subsequent Supreme Court decisions on financial constraints.',
       applicableLaw: 'Article 14 of the Constitution of India; Twin Test of Reasonable Classification; Doctrine of Non-Arbitrariness.',
@@ -151,7 +151,7 @@ Article 14 stands unamended in text, but its judicial scope has expanded dramati
   questionsAndAnswers: [
     {
       id: 'a14-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the twin test of reasonable classification under Article 14. How does the doctrine of manifest arbitrariness operate in contemporary constitutional law?',
       answer: `I. ISSUE & CONSTITUTIONAL MANDATE
 Article 14 commands that the State shall not deny to any person equality before the law or equal protection of the laws. The core issue is how courts test state differentiation and executive/statutory action against this guarantee.
@@ -179,7 +179,7 @@ Article 14 has evolved from a mechanical classification rule into a substantive 
     },
     {
       id: 'a14-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the evolution of Article 14 from the traditional doctrine of reasonable classification to the modern jurisprudence of non-arbitrariness, proportionality, and the Golden Triangle. Discuss with reference to leading authorities.',
       answer: `I. INTRODUCTION & CONSTITUTIONAL ARCHITECTURE
 Article 14 is the foundational charter of the Indian Republic’s commitment to equality. Enshrined in Part III, it comprises two distinct concepts: the English negative concept of “equality before the law” (the rule of law, where no person is above ordinary law) and the American positive concept of “equal protection of the laws” (demanding that equal treatment be accorded to those in similar circumstances). The judicial interpretation of this provision has undergone one of the most remarkable transformations in global constitutional jurisprudence — moving from formalistic classification to substantive fairness, proportionality, and transformative constitutionalism.
@@ -292,7 +292,7 @@ Article 14 has matured into an expansive shield against authoritarianism and sys
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain reasonable classification and manifest arbitrariness under Article 14.',
       steps: [
         'Introduction: Quote Article 14 and define the two limbs.',
@@ -304,7 +304,7 @@ Article 14 has matured into an expansive shield against authoritarianism and sys
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the evolution of Article 14 from classification to proportionality and the Golden Triangle.',
       steps: [
         'Detailed introduction: Diceyan Rule of Law vs American Equal Protection.',

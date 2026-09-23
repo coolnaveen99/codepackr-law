@@ -81,7 +81,7 @@ Name the section’s word in the exam. “Mens rea” alone scores half.`,
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain mens rea in the BNS.',
       steps: [
         'Define: guilty mind; then “read the verb”.',
@@ -92,7 +92,7 @@ Name the section’s word in the exam. “Mens rea” alone scores half.`,
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '“The BNS, like the IPC, is built on mens rea.” Discuss with exceptions and joint liability.',
       steps: [
         'Why fault exists.',

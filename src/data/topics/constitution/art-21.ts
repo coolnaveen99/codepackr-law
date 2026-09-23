@@ -115,7 +115,7 @@ Article 21 remains the supreme fountainhead of civil and socio-economic justice.
   hypotheticals: [
     {
       id: 'a21-hypo',
-      title: '16-Mark Examination Hypothetical (Facial Recognition & Privacy Proportionality)',
+      title: 'Chamber Practice Hypothetical (Facial Recognition & Privacy Proportionality)',
       facts: 'The Municipal Corporation installs automated AI-driven Facial Recognition Technology (FRT) cameras across all public streets, markets, and transport hubs. The system continuously captures, stores, and cross-references biometric facial prints of all commuters against a police criminal database without any authorizing legislative statute, relying solely on an administrative department circular. A citizen files a writ petition under Article 226 challenging the mass biometric surveillance as a violation of the fundamental right to privacy under Article 21.',
       question: 'Analyze the constitutional validity of the mass biometric surveillance regime applying the five-pronged proportionality test formulated in K.S. Puttaswamy v. Union of India. Can executive instructions authorize intrusions into Article 21 privacy?',
       applicableLaw: 'Article 21 of the Constitution of India; Right to Privacy; Five-Pronged Proportionality Standard; K.S. Puttaswamy v. Union of India; Kharak Singh v. State of U.P.',
@@ -159,7 +159,7 @@ Article 21 remains the supreme fountainhead of civil and socio-economic justice.
   questionsAndAnswers: [
     {
       id: 'a21-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the evolution of “procedure established by law” under Article 21 from A.K. Gopalan to Maneka Gandhi. How has the right to life been expanded by judicial interpretation?',
       answer: `I. ISSUE & CONSTITUTIONAL CONTEXT
 Article 21 guarantees that no person shall be deprived of life or personal liberty except according to procedure established by law. The central constitutional inquiry is how judicial interpretation evolved the standard of "procedure" and broadened the meaning of "life".
@@ -191,7 +191,7 @@ Article 21 has transformed into the supreme guarantee of substantive justice, pr
     },
     {
       id: 'a21-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the expansive jurisprudence of Article 21 of the Constitution of India. Discuss how the Supreme Court transformed a negative procedural restraint into a positive charter of human dignity, privacy, and socio-economic rights.',
       answer: `I. INTRODUCTION & CONSTITUTIONAL ARCHITECTURE
 Article 21 is the crown jewel of Part III of the Indian Constitution. Enacted as a succinct negative injunction — “No person shall be deprived of his life or personal liberty except according to procedure established by law” — the provision was initially conceived by the framers as a modest safeguard against arbitrary executive arrest. Over seven decades, however, the Supreme Court of India has transformed Article 21 into the living nucleus of transformative constitutionalism, reading into its few words a boundless charter of human dignity, communicative freedom, socio-economic entitlements, and personal self-determination.
@@ -306,7 +306,7 @@ Article 21 stands as the moral beacon of the Indian Republic. By converting a mi
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the evolution of procedure established by law and the expansion of Article 21.',
       steps: [
         'Quote Article 21 and identify its components.',
@@ -318,7 +318,7 @@ Article 21 stands as the moral beacon of the Indian Republic. By converting a mi
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the expansive jurisprudence of Article 21 and substantive due process.',
       steps: [
         'Constituent Assembly debates: B.N. Rau, Frankfurter, rejection of "due process".',

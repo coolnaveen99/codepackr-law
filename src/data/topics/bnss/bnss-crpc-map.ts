@@ -94,7 +94,7 @@ Use this list in the hall. Confirm any number not on this page in the Bare Act r
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'State the principal CrPC to BNSS conversions a student must know.',
       steps: [
         'FIR 154→173, arrest 41→35, remand 167→187.',
@@ -104,7 +104,7 @@ Use this list in the hall. Confirm any number not on this page in the Bare Act r
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'The BNSS is not a renumbering. Discuss key changes and concordance traps.',
       steps: [
         'Transition date.',

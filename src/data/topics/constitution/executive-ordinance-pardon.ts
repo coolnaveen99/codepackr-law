@@ -202,7 +202,7 @@ A 3-judge Bench held that **unexplained, inordinate, and unreasonable delay** by
   questionsAndAnswers: [
     {
       id: 'exec-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Examine the nature and scope of the Governor\'s ordinance-making power under Article 213 of the Constitution. Discuss why the Supreme Court declared mechanical re-promulgation of ordinances a fraud on the Constitution in D.C. Wadhwa and Krishna Kumar Singh.',
       answer: `### 1. Synopsis / Introduction
 Article 213 of the Constitution confers extraordinary legislative power upon the Governor to promulgate Ordinances during the recess of the State Legislature to meet urgent, unforeseen exigencies. However, this power cannot be transformed into an enduring, parallel mode of executive law-making.
@@ -237,7 +237,7 @@ Ordinances are temporary constitutional life-support mechanisms, not permanent l
     },
     {
       id: 'exec-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"The sovereign power of clemency under Articles 72 and 161 is a constitutional trust to be exercised strictly on the aid and advice of the Council of Ministers, subject to the rule of law and judicial review." Critically examine the nature, scope, and constitutional limitations of the Pardoning Power of the President and Governors. Discuss the landmark jurisprudence in Maru Ram, Kehar Singh, Epuru Sudhakar, and the impact of inordinate delay in Shatrughan Chauhan.',
       answer: `### 1. Introduction: The Prerogative of Mercy in a Constitutional Republic
 In historical monarchies, the power of pardon was the personal prerogative of the King as the fountainhead of justice. In the democratic constitutional republic of India, this sovereign power is codified in **Article 72** (for the President of India) and **Article 161** (for Governors of States). 

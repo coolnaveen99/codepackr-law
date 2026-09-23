@@ -87,7 +87,7 @@ Open the section-wise lessons for the black-letter of each exception.`,
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the right of private defence under the BNS.',
       steps: [
         's. 34 gateway.',
@@ -98,7 +98,7 @@ Open the section-wise lessons for the black-letter of each exception.`,
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Discuss general exceptions in Chapter III with special reference to infancy and private defence.',
       steps: [
         'What an exception does (complete defence).',

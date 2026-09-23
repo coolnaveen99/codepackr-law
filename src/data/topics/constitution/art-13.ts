@@ -183,7 +183,7 @@ Borrowed from American jurisprudence (*Great Northern Railway v. Sunburst Oil*),
   questionsAndAnswers: [
     {
       id: 'art13-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Examine the scope of "law" and "laws in force" under Article 13(3) of the Constitution. Does the term "law" in Article 13(2) include an amendment of the Constitution made under Article 368?',
       answer: `### 1. Synopsis / Introduction
 Article 13 is the cornerstone of constitutional review in India, ensuring that no legislative, executive, or customary rule violative of Fundamental Rights can survive. Article 13(3) gives an expansive definition of "law", while the question whether an amendment of the Constitution is a "law" under Article 13(2) has been the central constitutional debate in Indian legal history.
@@ -214,7 +214,7 @@ Under current constitutional law, a constitutional amendment is not "law" under 
     },
     {
       id: 'art13-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"Article 13 of the Constitution is not merely an interpretive clause, but the constitutional citadel of judicial review and the rule of law." Trace the epic judicial duel between Parliamentary constituent power and Fundamental Rights from Shankari Prasad through Golak Nath to Kesavananda Bharati. Examine the genesis, purpose, and limitations of the Doctrine of Prospective Overruling.',
       answer: `### 1. Introduction: Article 13 as the Citadel of Constitutionalism
 In modern constitutional democracies, the power of judicial review acts as the ultimate bulwark against majoritarian autocracy. While the American Constitution arrived at judicial review through the judicial deduction of Chief Justice John Marshall in *Marbury v. Madison* (1803), the framers of the Indian Constitution entrenched it textually in **Article 13**. 

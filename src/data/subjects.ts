@@ -23,6 +23,11 @@ export interface CaseCitation {
   citation?: string
   holding: string
   relevance?: string
+  bench?: string
+  court?: string
+  facts?: string
+  issue?: string
+  ratioDecidendi?: string
 }
 
 export interface LawTopic {

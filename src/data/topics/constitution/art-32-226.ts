@@ -112,7 +112,7 @@ Articles 32 and 226 form an untouchable part of the Basic Structure (L. Chandra 
   hypotheticals: [
     {
       id: 'a32-226-hypo',
-      title: '16-Mark Examination Hypothetical (Quo Warranto & Public Office)',
+      title: 'Chamber Practice Hypothetical (Quo Warranto & Public Office)',
       facts: 'The State Government appoints X as the Chairman of the State Electricity Regulatory Commission (a statutory body). Under the governing statute, the Chairman must possess at least 25 years of experience in the energy or regulatory sector. X possesses only 12 years of experience in general banking administration. An advocate practising before the High Court, who has no personal interest in the appointment, files a writ petition under Article 226 seeking a writ of Quo Warranto to oust X from public office. The State challenges the maintainability of the petition on grounds of lack of locus standi and existence of alternative administrative representations.',
       question: 'Discuss the maintainability and merits of the writ petition. Does the petitioner require personal locus standi to seek a writ of Quo Warranto? What are the essential requirements for issuing Quo Warranto?',
       applicableLaw: 'Article 226 of the Constitution of India; Writ of Quo Warranto; University of Mysore v. C.D. Govinda Rao; Central Electricity Supply Utility v. Dhobei Sahoo.',
@@ -157,7 +157,7 @@ Articles 32 and 226 form an untouchable part of the Basic Structure (L. Chandra 
   questionsAndAnswers: [
     {
       id: 'art-32-226-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Compare and contrast the writ jurisdiction of the Supreme Court under Article 32 with that of the High Court under Article 226. What are the exceptions to the rule of alternative remedy?',
       answer: `I. ISSUE & CONSTITUTIONAL FRAMEWORK
 Articles 32 and 226 constitute the dual pillars of judicial review and constitutional remedies in India. The core issue is the structural distinction between the two forums and the grounds on which a High Court bypasses statutory alternative remedies.
@@ -179,12 +179,12 @@ The rule that a writ petitioner must exhaust alternative statutory remedies is a
 
 IV. CONCLUSION
 While Article 32 is the sacred guardian of Fundamental Rights, Article 226 provides a broader reservoir of administrative and legal remedies. Both form part of the untouchable Basic Structure (L. Chandra Kumar). Current through the 106th Amendment (2023).`,
-      explanation: 'Formatted according to the IRAC method for 10-mark examination questions.',
+      explanation: 'Formatted according to the IRAC method for structured legal assessment.',
       relatedProvisionIds: ['constitution-article-32', 'constitution-article-226'],
     },
     {
       id: 'art-32-226-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the nature, scope, and grounds for issuing the five prerogative writs under Articles 32 and 226 of the Constitution of India. Discuss the development of Public Interest Litigation (PIL) and the Whirlpool Corporation exceptions.',
       answer: `I. INTRODUCTION & CONSTITUTIONAL PURPOSE
 Articles 32 and 226 provide the machinery for judicial enforcement of rights and administrative discipline in India. Borrowed from English common law, the prerogative writs were transformed by the Constituent Assembly into constitutional guarantees. Dr. B.R. Ambedkar termed Article 32 the “heart and soul” of the Constitution. In L. Chandra Kumar v. Union of India (1997), a 7-judge Constitution Bench held that the power of judicial review vested in the High Courts under Article 226 and the Supreme Court under Article 32 is an integral and untruncatable component of the Basic Structure.
@@ -296,7 +296,7 @@ Articles 32 and 226 stand as the ultimate ramparts protecting constitutional dem
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Compare Article 32 and Article 226 and explain the Whirlpool exceptions.',
       steps: [
         'State the constitutional status of Article 32 and Article 226.',
@@ -307,7 +307,7 @@ Articles 32 and 226 stand as the ultimate ramparts protecting constitutional dem
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the five prerogative writs, PIL development, and the Whirlpool exceptions.',
       steps: [
         'Introduction: Dr. Ambedkar’s “heart and soul” declaration and Basic Structure status.',

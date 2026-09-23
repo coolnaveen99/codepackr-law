@@ -169,7 +169,7 @@ export function synthesizeArticleContent(articleId: string): TopicContent | null
       questionsAndAnswers: [
         {
           id: `art-${article.id}-omitted-qa`,
-          marks: 10,
+          draftingCategory: 'brief',
           question: `Explain the constitutional status and historical context of ${cite} (${article.title}).`,
           answer: `I. INTRODUCTION & STATUS\n${cite} of the Constitution of India (“${article.title}”) is omitted. It does not form part of the living, enforceable constitutional text.\n\nII. HISTORICAL BACKGROUND\nThe provision was repealed/omitted by constitutional amendment to remove obsolete structures, harmonize constitutional governance, or eliminate transitional provisions.\n\nIII. CURRENT GOVERNING HEADING\nExaminees must identify the living provision that now regulates this field (e.g. general powers of Parliament, corresponding statutory enactments, or alternative constitutional mechanisms).\n\nIV. CONCLUSION\nCite ${cite} strictly as a repealed/omitted heading. Do not apply its text to contemporary 2026 dispute scenarios.`,
           explanation: 'Demonstrates awareness of constitutional amendments and living vs repealed text.',
@@ -281,7 +281,7 @@ export function synthesizeArticleContent(articleId: string): TopicContent | null
   const hypotheticals: TopicHypothetical[] = [
     {
       id: `art-${article.id}-hypo`,
-      title: 'Examination Hypothetical (16-Mark Problem Solving)',
+      title: 'Chamber Hypothetical & Problem Solving (Senior Counsel Standard)',
       facts: `The Union or State Government issues an executive directive purportedly deriving authority under ${cite} (${article.title}). An aggrieved citizen or institution challenges the directive before the constitutional court under Article 226/32, contending that the mandatory constitutional conditions were bypassed and that the action suffers from manifest arbitrariness and violation of natural justice. The State defends the action on grounds of public policy, administrative expediency, and inherent sovereign powers.`,
       question: `Examine the constitutional validity of the impugned directive in light of ${cite} and settled Supreme Court jurisprudence. What relief, if any, can be granted?`,
       applicableLaw: `${cite} of the Constitution of India; ${partInfo.name} (${cluster}); Standards of Judicial Review under Articles 14, 226, and 32.`,
@@ -326,8 +326,8 @@ export function synthesizeArticleContent(articleId: string): TopicContent | null
     },
     {
       id: `art-${article.id}-trap-2`,
-      trap: 'Writing only the article heading and two lines of summary in a 10-mark examination answer.',
-      correction: 'A high-scoring answer requires full IRAC structure: statutory anatomy, proving ingredients, procedural forum, leading case ratio, and practical application.',
+      trap: 'Writing only the article heading without deconstructing constitutional ingredients, procedural anchors, and landmark ratios.',
+      correction: 'A comprehensive legal analysis requires full IRAC structure: statutory anatomy, proving ingredients, procedural forum, leading case ratio, and practical application.',
     },
     {
       id: `art-${article.id}-trap-3`,
@@ -336,8 +336,8 @@ export function synthesizeArticleContent(articleId: string): TopicContent | null
     },
   ]
 
-  // 10-Mark and 16-Mark Answers
-  const tenMarkAnswer = [
+  // Chamber Brief and Written Submissions
+  const briefAnswer = [
     `I. ISSUE & CONSTITUTIONAL CONTEXT`,
     `Whether the State action, statutory enactment, or individual claim conforms to the constitutional mandate, procedural prerequisites, and substantive protections enshrined in ${cite} (${article.title}) of the Constitution of India.`,
     ``,
@@ -365,7 +365,7 @@ export function synthesizeArticleContent(articleId: string): TopicContent | null
     `${cite} stands as a vital constitutional checkpoint. Any state action in breach thereof is void and amenable to writ jurisdiction under Articles 32 and 226. Current through the 106th Amendment (2023).`,
   ].join('\n')
 
-  const sixteenMarkAnswer = [
+  const submissionsAnswer = [
     `I. INTRODUCTION & CONSTITUTIONAL PHILOSOPHY`,
     `${cite} of the Constitution of India, titled “${article.title}”, represents a critical cornerstone of India’s constitutional democracy. Situated within ${partInfo.title}, the provision balances state power with individual liberties and institutional accountability. The Constituent Assembly intended this provision to be an active, living guarantee rather than an ornamental declaration.`,
     ``,
@@ -395,7 +395,7 @@ export function synthesizeArticleContent(articleId: string): TopicContent | null
     `   (c) The absence of an effective alternative remedy, or justification under the Whirlpool Corporation exceptions (breach of fundamental rights, violation of natural justice, or complete lack of jurisdiction).`,
     `3. Evidentiary Standard: Discharge of burden under BSA ss. 104–106 and production of certified records.`,
     ``,
-    `V. IRAC PROBLEM ANALYSIS (EXAMINATION HYPOTHETICAL)`,
+    `V. IRAC PROBLEM ANALYSIS (PRACTICE HYPOTHETICAL)`,
     `Fact Matrix: The State issues a notification encroaching upon the domain of ${cite} without satisfying statutory preconditions.`,
     `Issue: Does the executive notification violate the constitutional guarantees and procedures of ${cite}?`,
     `Rule: Under ${cite}, state action is strictly conditioned by constitutional provisions and cannot be exercised arbitrarily.`,
@@ -408,19 +408,19 @@ export function synthesizeArticleContent(articleId: string): TopicContent | null
 
   const questionsAndAnswers: TopicQuestionAnswer[] = [
     {
-      id: `art-${article.id}-qa-10`,
-      marks: 10,
-      question: `Write a comprehensive 10-mark note on ${cite} (${article.title}) with essentials and leading case law.`,
-      answer: tenMarkAnswer,
-      explanation: 'Formatted according to the IRAC method for university and state judicial service examinations.',
+      id: `art-${article.id}-qa-brief`,
+      draftingCategory: 'brief',
+      question: `Case Brief & Legal Assessment: Scope and Application of ${cite} (${article.title})`,
+      answer: briefAnswer,
+      explanation: 'Formatted according to the IRAC method for chamber practice and judicial problem resolution.',
       relatedProvisionIds: [`constitution-article-${article.id.toLowerCase()}`],
     },
     {
-      id: `art-${article.id}-qa-16`,
-      marks: 16,
-      question: `Examine the constitutional jurisprudence, procedural enforcement, and judicial evolution of ${cite} (${article.title}).`,
-      answer: sixteenMarkAnswer,
-      explanation: 'Exhaustive CREAC essay covering historical background, doctrinal deconstruction, litigation roadmap, and practical IRAC problem solving.',
+      id: `art-${article.id}-qa-submissions`,
+      draftingCategory: 'submissions',
+      question: `Comprehensive Constitutional Written Submissions: Doctrinal Scheme & Judicial Evolution of ${cite} (${article.title})`,
+      answer: submissionsAnswer,
+      explanation: 'Exhaustive appellate written submissions covering historical background, doctrinal deconstruction, litigation roadmap, and practical problem solving.',
       relatedProvisionIds: [`constitution-article-${article.id.toLowerCase()}`],
     },
     {
@@ -433,8 +433,8 @@ export function synthesizeArticleContent(articleId: string): TopicContent | null
 
   const examFrameworks: TopicExamFramework[] = [
     {
-      marks: 10,
-      question: `Write a 10-mark note on ${cite} (${article.title}).`,
+      draftingCategory: 'brief',
+      question: `Case Brief: ${cite} (${article.title})`,
       steps: [
         `Introduce ${cite}, Part ${article.part}, and its constitutional status.`,
         'State the essential ingredients and statutory anatomy.',
@@ -445,8 +445,8 @@ export function synthesizeArticleContent(articleId: string): TopicContent | null
       ],
     },
     {
-      marks: 16,
-      question: `Expand into a 16-mark essay on ${cite} (${article.title}).`,
+      draftingCategory: 'submissions',
+      question: `Appellate Submissions: ${cite} (${article.title})`,
       steps: [
         'Introduction, Constituent Assembly intent, and comparative constitutional models.',
         'Detailed statutory deconstruction of each clause, proviso, and explanation.',
@@ -459,7 +459,7 @@ export function synthesizeArticleContent(articleId: string): TopicContent | null
   ]
 
   return {
-    glance: `${cite} — ${article.title}. Complete constitutional treatise with procedural anchors, cases, and 10/16-mark answers.`,
+    glance: `${cite} — ${article.title}. Complete constitutional treatise with procedural anchors, cases, and chamber drafting blueprints.`,
     study,
     sections,
     examples,
@@ -477,8 +477,8 @@ export function synthesizeArticleContent(articleId: string): TopicContent | null
     examTips: [
       `Cite ${cite} of the Constitution of India (as amended up to the 106th Amendment, 2023).`,
       `For procedural remedies, contrast Article 32 (exclusively Part III) with Article 226 (FRs + any other purpose).`,
-      `In 10-mark answers, use IRAC: Issue, Rule, Application, Conclusion.`,
-      `In 16-mark essays, include historical evolution, comparative doctrine, and case law ratios.`,
+      `In legal problem assessments, use IRAC: Issue, Rule, Application, Conclusion.`,
+      `In written submissions, include historical evolution, comparative doctrine, and case law ratios.`,
     ],
     examFrameworks,
     revisionPoints: [

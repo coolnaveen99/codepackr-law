@@ -176,7 +176,7 @@ The Court reaffirmed *Vidya Devi*, holding that the State cannot act as a "tresp
   questionsAndAnswers: [
     {
       id: 'art300a-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Examine the constitutional and legal status of the Right to Property under Article 300A of the Constitution following the 44th Amendment. Discuss the significance of the phrase "save by authority of law".',
       answer: `### 1. Synopsis / Introduction
 By the **Constitution (Forty-Fourth Amendment) Act, 1978**, the right to property ceased to be a Fundamental Right under Part III (with the repeal of Articles 19(1)(f) and 31). It was re-enacted as a **Constitutional Right** in Part XII under **Article 300A**.
@@ -203,7 +203,7 @@ While the 44th Amendment removed property from the core of Part III to facilitat
     },
     {
       id: 'art300a-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"The journey of the right to property from a contested fundamental right to a constitutional and human right reflects the evolving philosophy of Indian constitutionalism." Trace the constitutional history of the right to property leading up to the 44th Constitutional Amendment Act, 1978. Critically examine the jurisprudence of Article 300A in light of K.T. Plantation and the anti-land-grabbing rulings in Vidya Devi and Sukh Dutt Ratra.',
       answer: `### 1. Introduction: The Tumultuous Trajectory of Property Rights
 The history of property rights in India encapsulates the grand dialectic between individual rights and socialist redistribution. At the inception of the Republic, property was entrenched as a Fundamental Right under:

@@ -96,7 +96,7 @@ export default {
   questionsAndAnswers: [
     {
       id: 'mpl-q-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the essentials of a valid Muslim marriage and the concept of dower (mahr).',
       answer:
         'Introduction. Muslim marriage (nikah) is a civil contract with religious significance.\n\nEssentials. Ijab and qubul at the same meeting; competent parties; free consent; absence of prohibited relationship; witnesses under Sunni law as commonly applied.\n\nDower. Specified or unspecified; prompt or deferred; a debt and protection for the wife.\n\nIllustration. Consent exchanged with witnesses and mahr fixed — valid nikah.\n\nConclusion. State nikah as contract, list essentials, explain mahr.',
@@ -104,7 +104,7 @@ export default {
     },
     {
       id: 'mpl-q-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Discuss divorce under Muslim law with reference to Shayara Bano, the 2019 Act, and judicial dissolution under DMMA 1939.',
       answer:
         'Introduction. Divorce may be extra-judicial or judicial under DMMA 1939. Instant triple talaq is controlled by constitutional law and the 2019 Act.\n\nShayara Bano. Talaq-e-biddat held unconstitutional.\n\n2019 Act. Instantaneous triple talaq void and illegal; offence and subsistence protection as enacted.\n\nDMMA 1939. Wife may obtain dissolution on s. 2 grounds: whereabouts unknown four years; failure to maintain two years; long imprisonment; failure of marital obligations three years; impotence; specified disease; cruelty.\n\nIllustration. Instant triple talaq by message — void under 2019 Act; W may also seek DMMA relief if grounds exist.\n\nConclusion. Cite Shayara Bano, the 2019 Act, and DMMA by name.',

@@ -118,7 +118,7 @@ Emergency powers are exceptional constitutional mechanisms, strictly subordinate
   hypotheticals: [
     {
       id: 'emergency-hypo',
-      title: '16-Mark Examination Hypothetical (Floor Test & Article 356 Judicial Review)',
+      title: 'Chamber Practice Hypothetical (Floor Test & Article 356 Judicial Review)',
       facts: 'Following a split in the ruling coalition in State Y, the Governor refuses the Chief Minister’s request to convene an assembly session for a floor test within 48 hours. Instead, the Governor dispatches a confidential report to the President stating that widespread horse-trading has broken down constitutional governance, and recommends immediate imposition of President’s Rule under Article 356. The Union Cabinet approves, and the President issues a proclamation dissolving the Legislative Assembly. The dismissed Chief Minister approaches the Supreme Court under Article 32.',
       question: 'Examine the constitutional validity of the Governor’s action, the Presidential Proclamation, and the immediate dissolution of the Assembly in light of S.R. Bommai v. Union of India and Rameshwar Prasad v. Union of India. What relief can the Supreme Court grant?',
       applicableLaw: 'Article 356 of the Constitution of India; S.R. Bommai v. Union of India (1994); Rameshwar Prasad v. Union of India (2006); Nabam Rebia (2016).',
@@ -163,7 +163,7 @@ Emergency powers are exceptional constitutional mechanisms, strictly subordinate
   questionsAndAnswers: [
     {
       id: 'emergency-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the grounds, parliamentary approval, and impact of a Proclamation of National Emergency under Article 352. How did the 44th Amendment protect fundamental rights?',
       answer: `I. ISSUE & CONSTITUTIONAL CONTEXT
 Article 352 empowers the President to declare a National Emergency. The key constitutional issues are the procedural hurdles for approval and the safeguards introduced by the 44th Amendment to prevent human rights violations.
@@ -183,12 +183,12 @@ IV. 44TH AMENDMENT SAFEGUARDS ON FUNDAMENTAL RIGHTS
 
 V. CONCLUSION
 The 44th Amendment transformed National Emergency from a tool of executive tyranny into an accountable, strictly circumscribed mechanism. Current through the 106th Amendment (2023).`,
-      explanation: 'Formatted according to the IRAC method for 10-mark examination questions.',
+      explanation: 'Formatted according to the IRAC method for structured legal assessment.',
       relatedProvisionIds: ['constitution-article-352', 'constitution-article-358', 'constitution-article-359'],
     },
     {
       id: 'emergency-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically analyze the scope of Article 356 (President’s Rule) in light of federalism and judicial review. How did the Supreme Court in S.R. Bommai v. Union of India dismantle executive arbitrariness and protect state autonomy?',
       answer: `I. INTRODUCTION & THE FEDERAL DILEMMA
 Article 356 of the Constitution of India provides for the imposition of President’s Rule in a State when its constitutional machinery breaks down. During the Constituent Assembly debates, Dr. B.R. Ambedkar expressed the hope that Article 356 would remain a “dead letter”, invoked only as a last resort. Tragically, in the decades following independence, Article 356 was invoked over 100 times, frequently abused by ruling parties at the Centre to topple democratically elected opposition State Governments. The landmark 9-judge Constitution Bench ruling in S.R. Bommai v. Union of India (1994) rescued Indian federalism from this arbitrary misuse.
@@ -288,7 +288,7 @@ The Bommai ruling converted Article 356 from a partisan political weapon into an
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain National Emergency under Article 352 and 44th Amendment safeguards.',
       steps: [
         'State the three grounds (war, external aggression, armed rebellion).',
@@ -299,7 +299,7 @@ The Bommai ruling converted Article 356 from a partisan political weapon into an
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically analyze Article 356, federalism, and the S.R. Bommai judgment.',
       steps: [
         'Introduction: Dr. Ambedkar’s "dead letter" hope vs history of abuse.',

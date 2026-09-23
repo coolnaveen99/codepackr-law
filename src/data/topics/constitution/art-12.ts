@@ -178,7 +178,7 @@ A 5-judge Constitution Bench held by a 3:2 majority that the BCCI is **not "Stat
   questionsAndAnswers: [
     {
       id: 'art12-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Discuss the meaning of "other authorities" in Article 12 of the Constitution. Explain the six-factor test formulated in Ajay Hasia v. Khalid Mujib Sehravardi.',
       answer: `### 1. Synopsis / Introduction
 Article 12 defines "the State" for the purpose of enforcing Part III Fundamental Rights. While the Article expressly enumerates the executive and legislative organs of the Union and States, and local authorities, the scope of **"other authorities"** has been expanded by the Supreme Court to prevent the State from evading constitutional obligations through corporate entities.
@@ -209,7 +209,7 @@ In *Ajay Hasia*, a 5-judge Constitution Bench held that a registered engineering
     },
     {
       id: 'art12-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"The concept of \'the State\' under Article 12 has evolved from formal institutional identity to functional and administrative reality." Trace the jurisprudential trajectory of Article 12 from Rajasthan State Electricity Board to Pradeep Kumar Biswas. Critically examine whether private bodies discharging public functions (such as the BCCI) and the Judiciary fall within the ambit of Article 12.',
       answer: `### 1. Introduction: Article 12 as the Threshold of Fundamental Rights
 Part III of the Constitution of India enshrines the fundamental guarantees of human liberty, equality, and dignity. However, constitutional liberties are primarily shields erected against sovereign state overreach. Consequently, Article 12 serves as the indispensable jurisdictional threshold: unless the entity infringing a right qualifies as **"the State"**, no direct writ petition under Article 32 is maintainable. 

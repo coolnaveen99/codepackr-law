@@ -153,7 +153,7 @@ While Fundamental Rights in Part III cannot be waived, a citizen is fully entitl
   questionsAndAnswers: [
     {
       id: 'waiver-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the Doctrine of Waiver of Fundamental Rights in India. Discuss the seminal ruling in Basheshar Nath v. Commissioner of Income Tax and distinguish it from the United States position.',
       answer: `### 1. Synopsis / Introduction
 The Doctrine of Waiver refers to the intentional and voluntary relinquishment of a known legal right. While common law legal systems and the United States Constitution permit citizens to waive constitutional protections, Indian constitutional jurisprudence has established that **Fundamental Rights in Part III cannot be waived**.
@@ -185,7 +185,7 @@ The rejection of the doctrine of waiver in India safeguards the egalitarian core
     },
     {
       id: 'waiver-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"Fundamental Rights are not gifts conferred by the State upon an individual for his private enjoyment, but an unalterable constitutional charter of public policy erected for the benefit of society as a whole." Critically evaluate the Doctrine of Waiver of Fundamental Rights in India. Trace its evolution from Behram Khurshid to Olga Tellis and analyze why the Indian Supreme Court departed from American constitutional jurisprudence.',
       answer: `### 1. Introduction: The Nature of Fundamental Rights in India
 The concept of Fundamental Rights in Part III of the Constitution of India represents the high-water mark of constitutionalism. Unlike ordinary legal rights arising from contract, tort, or ordinary statutes, Fundamental Rights represent the organic, supreme law of the land. 

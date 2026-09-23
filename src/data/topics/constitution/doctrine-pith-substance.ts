@@ -155,7 +155,7 @@ The Supreme Court reiterated that once the pith and substance of an enactment fa
   questionsAndAnswers: [
     {
       id: 'pith-substance-qa-10m',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the Doctrine of Pith and Substance with reference to the distribution of legislative powers under the Seventh Schedule of the Constitution. Discuss its application in Prafulla Kumar Mukherjee v. Bank of Commerce.',
       answer: `### 1. Synopsis / Introduction
 The Doctrine of Pith and Substance is a vital canon of constitutional interpretation used to determine the legislative competence of a statute when it is challenged for encroaching upon an entry in a legislative list reserved for another body under the Seventh Schedule (read with Article 246).
@@ -193,7 +193,7 @@ The Doctrine of Pith and Substance provides essential federal flexibility to Art
     },
     {
       id: 'pith-substance-qa-16m',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '"The distribution of legislative powers in the Seventh Schedule is characterized by non-overlapping entries, yet incidental encroachment is an inevitable reality of federal governance." Critically examine the Doctrine of Pith and Substance in Indian constitutional law. Contrast it with the Doctrine of Colourable Legislation and the Doctrine of Repugnancy under Article 254.',
       answer: `### 1. Introduction: Federal Distribution and The Problem of Overlapping Fields
 Under Article 246 read with the Seventh Schedule of the Constitution of India, sovereign legislative authority is bifurcated across three exhaustive lists: the Union List (List I), the State List (List II), and the Concurrent List (List III). While the Constitution attempts precise demarcation, human affairs, modern commerce, and public administration cannot be compartmentalized into hermetically sealed containers. Consequently, statutes frequently touch upon multiple fields simultaneously. 

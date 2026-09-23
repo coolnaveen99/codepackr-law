@@ -126,7 +126,7 @@ Directive Principles operate as the socio-economic compass of the Republic. The 
   hypotheticals: [
     {
       id: 'dpsp-hypo',
-      title: '16-Mark Examination Hypothetical (DPSP Priority vs Fundamental Rights)',
+      title: 'Chamber Practice Hypothetical (DPSP Priority vs Fundamental Rights)',
       facts: 'Parliament enacts the National Industrial Redistribution Act, declaring that in furtherance of Article 39(b) and (c), the State can compulsorily take over private industrial assets without paying market compensation and without providing any pre-decisional hearing. The Act incorporates a statutory clause declaring that no court shall question the acquisition under Articles 14, 19, or 21. Aggrieved factory owners challenge the legislation under Article 32.',
       question: 'Evaluate the constitutional validity of the statute in light of Article 31C, Minerva Mills v. Union of India, and the doctrine of harmonious construction. Can Parliament extinguish Part III rights under the guise of implementing Part IV?',
       applicableLaw: 'Part III and Part IV of the Constitution of India; Article 31C; Minerva Mills v. Union of India (1980); Sanjeev Coke Mfg. Co. v. Bharat Coking Coal Ltd.',
@@ -170,7 +170,7 @@ Directive Principles operate as the socio-economic compass of the Republic. The 
   questionsAndAnswers: [
     {
       id: 'dpsp-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Discuss the nature, enforceability, and significance of the Directive Principles of State Policy under Part IV of the Constitution of India.',
       answer: `I. ISSUE & CONSTITUTIONAL PURPOSE
 Part IV (Articles 36–51) embodies the Directive Principles of State Policy (DPSP). The core issue is the legal nature of these principles, their non-justiciable status under Article 37, and their role in socio-economic governance.
@@ -191,12 +191,12 @@ IV. CONSTITUTIONAL SIGNIFICANCE
 
 V. CONCLUSION
 Directive Principles provide the philosophical roadmap for a welfare state, transforming political independence into socio-economic emancipation. Current through the 106th Amendment (2023).`,
-      explanation: 'Formatted according to the IRAC method for 10-mark examination questions.',
+      explanation: 'Formatted according to the IRAC method for structured legal assessment.',
       relatedProvisionIds: ['constitution-article-37', 'constitution-article-38', 'constitution-article-39'],
     },
     {
       id: 'dpsp-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the interrelationship between Fundamental Rights (Part III) and Directive Principles of State Policy (Part IV). Trace the judicial shift from Champakam Dorairajan to Minerva Mills and modern integrated jurisprudence.',
       answer: `I. INTRODUCTION & CONSTITUTIONAL PHILOSOPHY
 Granville Austin famously described Fundamental Rights (Part III) and Directive Principles of State Policy (Part IV) as the "conscience of the Constitution". While Part III guarantees civil and political liberties against state encroachment, Part IV directs the State to usher in a socio-economic revolution. The dynamic interplay between these two parts has been the primary engine driving constitutional adjudication in post-independent India.
@@ -291,7 +291,7 @@ The relationship between Part III and Part IV has transformed from conflict to c
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Discuss the nature, classification, and enforceability of DPSPs under Part IV.',
       steps: [
         'Introduction: Irish origin and socio-economic welfare state objective.',
@@ -302,7 +302,7 @@ The relationship between Part III and Part IV has transformed from conflict to c
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the interrelationship between Part III and Part IV from Champakam to Minerva Mills.',
       steps: [
         'Introduction: Conscience of the Constitution and socio-economic transformation.',

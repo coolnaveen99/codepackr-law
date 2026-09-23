@@ -93,7 +93,7 @@ Article 26 remains unamended. Shirur Mutt remains the foundational authority. Cu
   hypotheticals: [
     {
       id: 'a26-hypo',
-      title: '16-Mark Hypothetical (Temple Management)',
+      title: 'Chamber Practice Hypothetical (Temple Management)',
       facts: 'A State statute appoints a government officer as executive manager of a denominational temple, with power over finances and staff, while leaving ritual worship to the traditional priests. The denomination challenges the statute under Article 26.',
       question: 'Examine the constitutional validity of the statute.',
       applicableLaw: 'Article 26(b) and 26(d); Shirur Mutt; Article 25(2)(a).',
@@ -132,7 +132,7 @@ Article 26 remains unamended. Shirur Mutt remains the foundational authority. Cu
   questionsAndAnswers: [
     {
       id: 'a26-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain Article 26 of the Constitution. What is a religious denomination?',
       answer: `I. ISSUE
 Article 26 guarantees denominational rights to manage religious affairs and institutions.
@@ -152,7 +152,7 @@ Article 26 is the institutional pillar of religious freedom. Current through the
     },
     {
       id: 'a26-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Critically examine the freedom of religious denominations under Article 26. How do courts draw the line between matters of religion and secular administration?',
       answer: `I. INTRODUCTION
 Article 26 protects collective religious freedom. Its practical application turns on the distinction between matters of religion and secular administration of property and institutions.

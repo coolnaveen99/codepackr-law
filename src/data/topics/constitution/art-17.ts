@@ -99,7 +99,7 @@ Article 17 remains unamended. Its enforcement architecture has been strengthened
   hypotheticals: [
     {
       id: 'a17-hypo',
-      title: '16-Mark Hypothetical (Social Boycott)',
+      title: 'Chamber Practice Hypothetical (Social Boycott)',
       facts: 'In a village, the dominant caste declares a social boycott of SC families, denying them access to the common well, the village shop, and agricultural work. The local police register a weak FIR and take no further action. An NGO approaches the High Court under Article 226.',
       question: 'What constitutional and statutory remedies are available? Discuss the obligations of the State under Article 17.',
       applicableLaw: 'Article 17; Article 15(2); Protection of Civil Rights Act, 1955; SC/ST (Prevention of Atrocities) Act, 1989.',
@@ -138,7 +138,7 @@ Article 17 remains unamended. Its enforcement architecture has been strengthened
   questionsAndAnswers: [
     {
       id: 'a17-qa-10',
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain the constitutional significance of Article 17. How is it enforced through statutory law?',
       answer: `I. ISSUE
 Article 17 abolishes Untouchability and criminalises the enforcement of disabilities arising from it.
@@ -159,7 +159,7 @@ Article 17 is both a Fundamental Right and a directive of constitutional crimina
     },
     {
       id: 'a17-qa-16',
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '“Article 17 is a unique Fundamental Right with direct horizontal application.” Critically examine this statement with reference to the constitutional text, statutory framework and leading decisions.',
       answer: `I. INTRODUCTION
 Most Fundamental Rights in Part III primarily restrain the State. Article 17 is distinctive: it abolishes a social practice and makes its enforcement an offence, thereby operating horizontally against private individuals and communities.
