@@ -245,5 +245,6 @@ VI. PRAYER / RELIEF SOUGHT
 1. **ZERO 10/16 MARKS**: NEVER output "10-mark", "16-mark", or mark rubrics.
 2. **ZERO RAW MARKDOWN IN UI**: Use the structured fields instead of dumping raw `#` or `---` text.
 3. **ZERO HALLUCINATION**: Real case citations with real ratios only. If unverified, mark as `needs-review`.
+4. **CHECKLIST SYNCHRONIZATION**: Once generated, mark the topic as `[x] Complete` in `docs/subject-coverage-checklist.md` (or run `npm run checklist`) and verify `hasNotes: true` in `src/data/subjects.ts`.
 
 OUTPUT THE COMPLETE CODE FILE NOW.

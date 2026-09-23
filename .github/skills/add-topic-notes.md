@@ -64,17 +64,18 @@ Every authored topic treatise should cover:
 
 ---
 
-## 4. Full Examination Answers (`questionsAndAnswers`)
+## 4. Courtroom & Academic Drafting Formats (`questionsAndAnswers`)
 
-- **10-Mark Answer (`marks: 10`)**: 500–700 words formatted in strict **IRAC** (Issue, Rule, Application, Conclusion).
-- **16-Mark Answer (`marks: 16`)**: 900–1200 words formatted in comprehensive **CREAC** (Conclusion, Rule, Explanation, Application, Counter-arguments & Conclusion) with comparative and critical analysis.
-- The UI dock buttons `#exam-10` and `#exam-16` jump directly to these answers. They must be complete and exam-hall ready.
+- **Case Brief / Problem Assessment (`draftingCategory: 'brief'`)**: 500–700 words formatted in strict **IRAC** (Issue, Rule, Application, Conclusion).
+- **Comprehensive Written Submissions (`draftingCategory: 'submissions'`)**: 1000–1500 words formatted to Senior Counsel appellate standard (Statement of Facts, Statutory Scheme, Mandatory Ingredients, Precedents & Ratios, Rebuttal of Objections, Prayer).
+- The UI dock buttons `#exam-10` / `#brief` and `#exam-16` / `#submissions` jump directly to these drafting formats. They must be complete and courtroom/exam ready with zero collegiate mark rubrics.
 
 ---
 
 ## 5. Implementation Steps
 
 1. Query `src/data/knowledge` first to locate canonical IDs for doctrines and landmark cases.
-2. Confirm the topic metadata in `src/data/subjects.ts`.
+2. Confirm the topic metadata in `src/data/subjects.ts` (`hasNotes: true`).
 3. Create `src/data/topics/<subjectSlug>/<topicId>.ts` exporting `TopicContent`.
 4. Run `npm run lint` and `npm run build` to verify clean compilation.
+5. **Synchronize Master Checklist**: Run `npm run checklist` to update `docs/subject-coverage-checklist.md` and mark the topic as `[x] Complete`.

@@ -42,3 +42,7 @@ Every line of legal content and code must reflect the intellectual precision of 
    - All topics must feature structured **Case Briefs / Problem Assessments (IRAC)** and **Comprehensive Written Submissions**, complete with extracted case law ratios (`ratioDecidendi`), dual statutory illustrations, mandatory BSA 2023 evidentiary compliance (ss. 104–106 & s. 63), and limitation/jurisdiction roadmaps.
 
 See `AI_INSTRUCTIONS.md`, `.github/instructions/global-legal-content.md`, and `.github/instructions/student-answer-content.md` for full implementation standards.
+
+12. **Master Coverage Checklist Synchronization**:
+    - All 20 curriculum subjects and 2,087 registered catalog topics are tracked in `docs/subject-coverage-checklist.md`.
+    - Whenever a topic is authored or upgraded in `src/data/topics/<subjectSlug>/<topicId>.ts`, update the checklist entry to `[x] Complete` (or run `npm run checklist`) and set `hasNotes: true` in `src/data/subjects.ts`.

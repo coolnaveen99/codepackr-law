@@ -52,6 +52,7 @@ Once the inventory is established, author or upgrade the topic files one by one.
      - `brief`: Case Brief / Problem Assessment (IRAC Method)
      - `submissions`: Comprehensive Written Submissions (Appellate Standard)
    - **Zero Marks**: Absolutely NO references to "10-mark", "16-mark", or university mark rubrics.
+   - **Checklist Synchronization**: Mark each completed topic as `[x] Complete` in `docs/subject-coverage-checklist.md` (or run `npm run checklist`).
 
 Begin by listing the Phase 1 Gap Analysis inventory table, and then proceed with Topic 1.
 ```

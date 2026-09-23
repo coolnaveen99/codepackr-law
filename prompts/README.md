@@ -62,3 +62,10 @@ npx tsc --noEmit
 npm run build
 ```
 Ensure there are zero TypeScript compiler errors. Once verified, review your new topic live in the browser!
+
+### Step 7: Mark Topic Done in Master Checklist
+Whenever you or an AI completes or updates a topic, synchronize the master tracking checklist:
+```bash
+npm run checklist
+```
+This updates [`docs/subject-coverage-checklist.md`](../docs/subject-coverage-checklist.md) to mark the topic as `[x] Complete` across all 20 subjects and 2,087 topics.
