@@ -67,7 +67,7 @@ export function Header({
                   <span className="font-extrabold text-[16px] tracking-tight">CodePackr</span>{' '}
                   <span className="font-semibold text-[16px] text-amber-600 dark:text-amber-400">Law</span>
                   <span className="hidden sm:inline-block ml-1 text-[9.5px] font-mono font-bold uppercase tracking-wider text-amber-700 dark:text-amber-300 bg-amber-500/10 px-1.5 py-0.5 rounded-full border border-amber-500/20">
-                    Bare Acts
+                    Legal Library
                   </span>
                 </span>
                 {currentLabel ? (
@@ -76,7 +76,7 @@ export function Header({
                   </span>
                 ) : (
                   <span className="mt-1 hidden sm:block text-[10.5px] font-medium text-slate-500 dark:text-slate-400">
-                    Indian Bare Acts & Exam Prep
+                    Indian Law Library &amp; Practice Reference
                   </span>
                 )}
               </span>
