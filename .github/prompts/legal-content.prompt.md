@@ -16,7 +16,7 @@ Read in this sequence:
 ## Dual-Track Product Benchmark (Non-Negotiable)
 
 Every treatise page must serve two audiences seamlessly:
-1. **Track A (Scholastic & Exam Mastery)**: Master complex concepts, deconstruct statutory text, study extracted case ratios, and review full 10-mark and 16-mark answers formatted via IRAC/CREAC.
+1. **Track A (Scholastic & Problem Solving Mastery)**: Master complex concepts, deconstruct statutory text, study extracted case ratios, and review full Case Briefs (IRAC) and Written Submissions.
 2. **Track B (Litigation & Chamber Practice)**: Fast courtroom reference for forum, territorial/pecuniary jurisdiction, limitation periods, mandatory proving ingredients, evidentiary burden under BSA (ss. 104–106 & s. 63), and strategic adversarial submissions.
 
 ---
@@ -29,9 +29,9 @@ RESEARCH BEYOND BARE ACT
 → DECONSTRUCT JURISPRUDENTIAL INTENT & STATUTORY ANATOMY
 → ANCHOR PROCEDURAL FORUM & BURDEN OF PROOF
 → DRAFT MASTER TREATISE (study body in src/data/topics/<slug>/<id>.ts)
-→ COMPOSE CONTRASTING PRACTICAL EXAMPLES & EXAM HYPOTHETICAL
-→ EXTRACT PRECEDENT RATIO DECIDENDI (cases)
-→ FORMULATE COMPLETE 10-MARK ANSWER (IRAC) & 16-MARK ANSWER (CREAC)
+→ COMPOSE CONTRASTING PRACTICAL EXAMPLES & CHAMBER HYPOTHETICAL
+→ EXTRACT PRECEDENT RATIO DECIDENDI (court, bench, facts, ratio, application)
+→ FORMULATE STRUCTURED CASE BRIEF (IRAC) & COMPREHENSIVE WRITTEN SUBMISSIONS
 → CROSS-LINK CANONICAL ENTITIES ([[REF:TYPE:CATEGORY:SLUG]])
 ```
 
@@ -39,13 +39,14 @@ RESEARCH BEYOND BARE ACT
 
 ## Core Drafting Directives
 
-1. **Book Chapter Depth**: Model your work on `src/data/topics/cpc/s-32.ts`. Never ship boilerplate synthesizer templates (`synthesizeProvision`, `synthesizeCpc`). Teach the specific heading with treatise thoroughness.
+1. **Book Chapter Depth**: Model your work on `src/data/topics/cpc/s-32.ts` or `src/data/topics/constitution/art-21.ts`. Never ship boilerplate synthesizer templates. Teach the specific heading with treatise thoroughness.
 2. **Statutory Text vs Educational Content**:
    - Enacted statutory illustrations: Include and deconstruct **only** when official in the Gazette/India Code text. Never invent an illustration and label it as official.
-   - Educational examples: Provide distinct, labelled practical examples (applies vs fails) and a classroom hypothetical.
-3. **Full 10-Mark and 16-Mark Answers**:
-   - Store complete answers in `questionsAndAnswers` with `marks: 10` (IRAC: 500–700 words) and `marks: 16` (CREAC: 900–1200 words).
-   - The UI dock buttons `#exam-10` and `#exam-16` jump directly to these items. Never shorten answers.
+   - Dual Practical Illustrations: Provide distinct illustrations showing when the provision successfully applies vs when it fails due to a missing ingredient or boundary defect.
+3. **Structured Case Briefs & Comprehensive Written Submissions**:
+   - Store complete drafts in `questionsAndAnswers` using `draftingCategory: 'brief'` (IRAC Problem Assessment: 500–700 words) and `draftingCategory: 'submissions'` (Comprehensive Chamber/Appellate Argument: 1000–1500 words).
+   - Never use "10-mark" or "16-mark" terminology.
+   - The UI dock buttons `#legal-brief` and `#written-submissions` jump directly to these items. Never shorten answers.
 4. **2024 Criminal Law Transition**:
    - Apply BNS, BNSS, and BSA for acts on or after 1 July 2024.
    - Apply IPC, CrPC, and IEA as historical concordance. Always highlight Section 531 BNSS savings for pending proceedings.
