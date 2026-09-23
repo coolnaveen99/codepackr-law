@@ -130,17 +130,44 @@ Crucially, Section 35 does not permit the use of force to resist other property 
   distinctions: [
     {
       id: 's-35-dist-1',
-      conceptA: 'Defence of Body (s. 35(a) BNS)',
-      conceptB: 'Defence of Property (s. 35(b) BNS)',
-      distinction:
-        'Defence of body is available against ANY offence affecting the human body (Chapter VI BNS); defence of property is strictly limited to four enumerated offences: theft, robbery, mischief, and criminal trespass (or attempts). Civil torts, breach of contract, or cheating do not trigger property defence.',
+      title: 'Defence of Body vs Defence of Property',
+      left: 'Defence of Body (s. 35(a) BNS)',
+      right: 'Defence of Property (s. 35(b) BNS)',
+      rows: [
+        {
+          point: 'Scope of Triggering Offences',
+          left: 'Available against ANY offence affecting the human body under Chapter VI BNS.',
+          right: 'Strictly confined to four enumerated offences: theft, robbery, mischief, and criminal trespass (or attempts).',
+        },
+        {
+          point: 'Inanimate vs Physical Peril',
+          left: 'Protects bodily integrity, personal freedom, and life.',
+          right: 'Protects movable and immovable possessions in settled lawful possession.',
+        },
+        {
+          point: 'Lethal Force Boundary',
+          left: 'Regulated by Section 38 (7 lethal categories).',
+          right: 'Regulated by Section 41 (4 lethal categories).',
+        },
+      ],
     },
     {
       id: 's-35-dist-2',
-      conceptA: 'Defence of Self',
-      conceptB: 'Defence of Third Person / Altruistic Defence',
-      distinction:
-        'Under Section 35, there is zero legal difference in scope or immunity between defending one\'s own body/property and defending the body/property of a complete stranger. Indian law treats the defence of third persons as an equal civic right.',
+      title: 'Defence of Self vs Altruistic Defence of Third Person',
+      left: 'Defence of Own Body / Property',
+      right: 'Defence of Body / Property of Any Other Person',
+      rows: [
+        {
+          point: 'Legal Standard',
+          left: 'Natural right of self-preservation.',
+          right: 'Equal statutory right and civic duty to protect any fellow citizen.',
+        },
+        {
+          point: 'Relationship Requirement',
+          left: 'Self-interest.',
+          right: 'Zero kinship or marital connection required under Indian law; applies to total strangers.',
+        },
+      ],
     },
   ],
 
@@ -161,34 +188,31 @@ Crucially, Section 35 does not permit the use of force to resist other property 
 
   cases: [
     {
-      id: 's-35-case-1',
-      title: 'Vishwa Nath v. State of U.P.',
+      name: 'Vishwa Nath v. State of U.P.',
       citation: '(1960) 1 SCR 646 / AIR 1960 SC 67',
       court: 'Supreme Court of India',
-      ratios: [
-        'The right of private defence of the body under Section 97 IPC (now Section 35 BNS) extends to defending the body of any other person, including a sister, friend, or stranger.',
-        'Where an assailant attempted to abduct the appellant\'s sister by dragging her into a tonga, the brother had a lawful right under Section 97 read with Section 100 Fifthly (now s. 38 Fifthly BNS) to strike the abductor with a knife, and was entitled to complete acquittal.',
-      ],
+      holding:
+        'The right of private defence of the body under Section 97 IPC (Section 35 BNS) extends to defending the body of any other person, including a sister or stranger, against forcible abduction.',
+      ratioDecidendi:
+        'A brother or bystander has the identical legal right and duty to defend a victim from an abduction or assault as the victim herself possesses.',
     },
     {
-      id: 's-35-case-2',
-      title: 'Puran Singh v. State of Punjab',
+      name: 'Puran Singh v. State of Punjab',
       citation: '(1975) 4 SCC 518 / AIR 1975 SC 1674',
       court: 'Supreme Court of India (3-Judge Bench)',
-      ratios: [
-        'The right of private defence of property under Section 97 (Section 35 BNS) is available only to someone who has actual physical settled possession.',
+      holding:
+        'The right of private defence of property under Section 97 (Section 35 BNS) belongs only to the person in actual physical settled possession.',
+      ratioDecidendi:
         'A person in settled possession is entitled to resist an armed trespasser by force, and has no duty to abandon his land and seek police assistance when faced with imminent physical aggression.',
-      ],
     },
     {
-      id: 's-35-case-3',
-      title: 'Munshi Ram v. Delhi Administration',
+      name: 'Munshi Ram v. Delhi Administration',
       citation: 'AIR 1968 SC 702 / (1968) 2 SCR 455',
       court: 'Supreme Court of India',
-      ratios: [
+      holding:
         'The right of private defence of property commences as soon as the trespasser enters upon the property or makes a threat to do so.',
+      ratioDecidendi:
         'Law does not require a person in lawful possession to retire from his own field and allow an aggressor to complete an illegal occupation before exercising defensive force.',
-      ],
     },
   ],
 

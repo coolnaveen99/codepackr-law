@@ -131,17 +131,39 @@ Illustration (b) represents one of the most fascinating doctrines in the Sanhita
   distinctions: [
     {
       id: 's-36-dist-1',
-      conceptA: 'Personal Exemption of Assailant (ss. 20–24 BNS)',
-      conceptB: 'Victim\'s Defensive Justification (s. 36 BNS)',
-      distinction:
-        'The assailant\'s exemption is an excuse based on absence of mens rea (subjective culpability); the victim\'s justification under Section 36 is an absolute right based on repelling objective physical harm (in rem). The two coexist harmoniously.',
+      title: 'Personal Exemption of Assailant vs Victim Justification',
+      left: 'Personal Exemption (ss. 20–24 BNS)',
+      right: 'Victim Justification (s. 36 BNS)',
+      rows: [
+        {
+          point: 'Nature of Defense',
+          left: 'In personam excuse extinguishing subjective guilt/mens rea.',
+          right: 'In rem justification neutralizing objective physical peril.',
+        },
+        {
+          point: 'Scope of Protection',
+          left: 'Protects the attacker from penal conviction and punishment.',
+          right: 'Protects the victim from criminal liability for using defensive force.',
+        },
+      ],
     },
     {
       id: 's-36-dist-2',
-      conceptA: 'Defence against Sane Aggressor (s. 35 BNS)',
-      conceptB: 'Defence against Insane/Immune Aggressor (s. 36 BNS)',
-      distinction:
-        'Under Section 35, the act defended against is a statutory offence; under Section 36, the act would be an offence but for the personal incapacity of the actor. The legal scope and limits of defensive force available to the victim are identical in both cases.',
+      title: 'Defence against Sane Aggressor vs Insane/Immune Aggressor',
+      left: 'Defence against Sane Aggressor (s. 35 BNS)',
+      right: 'Defence against Immune Aggressor (s. 36 BNS)',
+      rows: [
+        {
+          point: 'Statutory Status of Act',
+          left: 'Act constitutes a substantive statutory offence.',
+          right: 'Act would be an offence but for the actor\'s incapacity.',
+        },
+        {
+          point: 'Quantum of Permissible Force',
+          left: 'Governed by Sections 37, 38, 39, 41, and 42 BNS.',
+          right: 'Identical — Section 36 gives the "same right" as against a sane person.',
+        },
+      ],
     },
   ],
 
@@ -162,24 +184,22 @@ Illustration (b) represents one of the most fascinating doctrines in the Sanhita
 
   cases: [
     {
-      id: 's-36-case-1',
-      title: 'State of Orissa v. Rabindra Nath',
+      name: 'State of Orissa v. Rabindra Nath',
       citation: '1973 Cri LJ 1686 (Ori HC)',
       court: 'High Court of Orissa',
-      ratios: [
+      holding:
         'A person attacked by a lunatic with a dangerous weapon has the full right of private defence of the body under Section 98 IPC (now Section 36 BNS).',
+      ratioDecidendi:
         'The law does not require a citizen to sacrifice his life or limb out of compassion for the mental affliction of his assailant.',
-      ],
     },
     {
-      id: 's-36-case-2',
-      title: 'Queen v. Corey',
+      name: 'Queen v. Corey',
       citation: '(1870) 12 Cox CC 28',
       court: 'High Court of Justiciary',
-      ratios: [
+      holding:
         'A defensive act repelling a lunatic attempting murder is wholly justifiable.',
+      ratioDecidendi:
         'Insanity is a shield for the actor against penal conviction, never a sword to paralyze the victim\'s right of self-defence.',
-      ],
     },
   ],
 

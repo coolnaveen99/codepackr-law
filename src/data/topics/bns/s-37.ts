@@ -137,17 +137,39 @@ Paragraph 4 codifies that force must never exceed necessity. However, as laid do
   distinctions: [
     {
       id: 's-37-dist-1',
-      conceptA: 'Strict Legal Justification',
-      conceptB: 'Act under Colour of Office in Good Faith',
-      distinction:
-        'Strict justification requires 100% compliance with every statutory formality; "colour of office" protects public servants whose actions have minor procedural or jurisdictional irregularities, so long as they act in good faith without malice or ultra vires excess.',
+      title: 'Strict Legal Justification vs Colour of Office in Good Faith',
+      left: 'Strict Legal Justification',
+      right: 'Act under Colour of Office in Good Faith',
+      rows: [
+        {
+          point: 'Procedural Compliance',
+          left: 'Requires 100% adherence to all statutory rules, notifications, and formalities.',
+          right: 'Tolerates minor technical or procedural defects provided the officer has apparent official jurisdiction.',
+        },
+        {
+          point: 'Protection under Section 37',
+          left: 'Action is strictly lawful; resistance is always an offence.',
+          right: 'Action may have formal flaws, but Section 37 explicitly denies private defence to citizens.',
+        },
+      ],
     },
     {
       id: 's-37-dist-2',
-      conceptA: 'Theoretical Recourse to Police',
-      conceptB: 'Effective and Viable Recourse',
-      distinction:
-        'The law does not bar private defence merely because a police station exists somewhere in the district; recourse bars private defence only if the police could have arrived in time to actually prevent the imminent catastrophe (Puran Singh v. State of Punjab).',
+      title: 'Theoretical Police Recourse vs Effective and Viable Recourse',
+      left: 'Theoretical Recourse',
+      right: 'Effective and Viable Recourse',
+      rows: [
+        {
+          point: 'Geographic / Temporal Reality',
+          left: 'Police station exists in the district, but is 15 km away while an armed mob attacks.',
+          right: 'Police assistance is immediate, accessible, and practically capable of averting danger.',
+        },
+        {
+          point: 'Legal Consequence',
+          left: 'Does NOT bar private defence (Puran Singh v. State of Punjab).',
+          right: 'Bars private defence; citizen must resort to authorities rather than self-help.',
+        },
+      ],
     },
   ],
 
@@ -168,33 +190,31 @@ Paragraph 4 codifies that force must never exceed necessity. However, as laid do
 
   cases: [
     {
-      id: 's-37-case-1',
-      title: 'Kanwar Singh v. Delhi Administration',
+      name: 'Kanwar Singh v. Delhi Administration',
       citation: 'AIR 1965 SC 871 / (1965) 1 SCR 7',
       court: 'Supreme Court of India (3-Judge Bench)',
-      ratios: [
+      holding:
         'The words "not strictly justifiable by law" in Section 99 IPC (Section 37 BNS) protect public servants acting under colour of office from armed resistance, even if their actions suffer from procedural defects.',
+      ratioDecidendi:
         'A citizen cannot assault municipal officers rounding up stray cattle merely because the cattle pound procedures had minor irregularities.',
-      ],
     },
     {
-      id: 's-37-case-2',
-      title: 'Puran Singh v. State of Punjab',
+      name: 'Puran Singh v. State of Punjab',
       citation: '(1975) 4 SCC 518 / AIR 1975 SC 1674',
       court: 'Supreme Court of India (3-Judge Bench)',
-      ratios: [
+      holding:
         'The right of private defence is not defeated by the recourse clause of Section 99 (Section 37 BNS) unless the protection of public authorities was practical, immediately accessible, and effective.',
+      ratioDecidendi:
         'A person in settled possession who is suddenly attacked by an armed gang has no duty to flee the field and seek police aid while his property is being looted.',
-      ],
     },
     {
-      id: 's-37-case-3',
-      title: 'Kesho Ram v. Delhi Administration',
+      name: 'Kesho Ram v. Delhi Administration',
       citation: '(1974) 4 SCC 509 / 1974 SCC (Cri) 640',
       court: 'Supreme Court of India',
-      ratios: [
+      holding:
         'The protection given to public servants under Section 99 IPC (Section 37 BNS) does not apply where the public servant acts completely outside his jurisdiction or commits acts causing apprehension of death or grievous hurt.',
-      ],
+      ratioDecidendi:
+        'Public servants lose all statutory immunity if they threaten death or grievous hurt without authority of law.',
     },
   ],
 
