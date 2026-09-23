@@ -14,6 +14,7 @@ Choose the prompt that matches your workflow:
 | **Scenario 1: New Topic (Known ID)** | [`TOPIC_AUTHORING_AI_PROMPT.md`](./TOPIC_AUTHORING_AI_PROMPT.md) | Complete prompt template when you already know the `topicId` (e.g. `art-21`, `s-300`). |
 | **Scenario 2: New Topic / New Subject (Unknown ID)** | [`NEW_TOPIC_OR_SUBJECT_PROMPT.md`](./NEW_TOPIC_OR_SUBJECT_PROMPT.md) | Formulates canonical `topicId`, generates `subjects.ts` entry, and authors the treatise file. |
 | **Scenario 3: Audit & Upgrade Existing Topic** | [`UPGRADE_EXISTING_TOPIC_PROMPT.md`](./UPGRADE_EXISTING_TOPIC_PROMPT.md) | Audits existing file, retains good data, purges 10/16-mark phrasing, and drops in a clean replacement. |
+| **Scenario 4: Full Subject Overhaul & Missing Sections** | [`SUBJECT_AUDIT_AND_EXPANSION_PROMPT.md`](./SUBJECT_AUDIT_AND_EXPANSION_PROMPT.md) | **Batch Expansion:** Upgrades all existing files in a subject AND authors missing high-yield statutory sections. |
 
 ---
 
