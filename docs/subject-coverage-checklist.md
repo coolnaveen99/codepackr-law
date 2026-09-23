@@ -14,7 +14,7 @@
 | Constitutional Law | `constitution` | high | 10 | 523 | 40 | 8% |
 | Criminal Procedure (BNSS / CrPC) | `bnss` | high | 10 | 538 | 7 | 1% |
 | Code of Civil Procedure (CPC) | `cpc` | high | 10 | 235 | 7 | 3% |
-| Bharatiya Nyaya Sanhita (BNS / IPC) | `bns` | high | 8 | 368 | 10 | 3% |
+| Bharatiya Nyaya Sanhita (BNS / IPC) | `bns` | high | 8 | 368 | 121 | 33% |
 | Evidence (BSA / Evidence Act) | `bsa` | high | 8 | 177 | 7 | 4% |
 | Family Law | `family` | high | 8 | 38 | 19 | 50% |
 | Contract, Specific Relief, Property & NI Act | `contract` | high | 8 | 56 | 0 | 0% |
@@ -31,7 +31,7 @@
 | Cyber Law | `cyber` | low | 2 | 11 | 0 | 0% |
 | Land Laws | `land` | low | 2 | 4 | 0 | 0% |
 | Intellectual Property Rights | `ipr` | low | 2 | 14 | 0 | 0% |
-| **GRAND TOTAL** | - | - | - | **2087** | **97** | **4.6%** |
+| **GRAND TOTAL** | - | - | - | **2087** | **208** | **10.0%** |
 
 ---
 
@@ -1390,91 +1390,91 @@
 | [x] Complete | `bns-ipc-map` | BNS ↔ IPC Key Mapping | theme | General | ⭐ Yes |
 | [x] Complete | `doctrine-mens-rea` | Doctrine of Mens Rea | doctrine | General | ⭐ Yes |
 | [x] Complete | `doctrine-common-intention` | Doctrine of Common Intention | doctrine | General | ⭐ Yes |
-| [~] Catalog | `s-1` | Section 1 — Short title, commencement and application | section | Preliminary | ⭐ Yes |
-| [~] Catalog | `s-2` | Section 2 — Definitions | section | Preliminary | ⭐ Yes |
-| [~] Catalog | `s-3` | Section 3 — General explanations | section | Preliminary | ⭐ Yes |
-| [~] Catalog | `s-4` | Section 4 — Punishments | section | Punishments | ⭐ Yes |
-| [~] Catalog | `s-5` | Section 5 — Commutation of sentence | section | Punishments | No |
-| [~] Catalog | `s-6` | Section 6 — Fractions of terms of punishment | section | Punishments | No |
-| [~] Catalog | `s-7` | Section 7 — Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple | section | Punishments | No |
-| [~] Catalog | `s-8` | Section 8 — Amount of fine, liability in default of payment of fine, etc | section | Punishments | No |
-| [~] Catalog | `s-9` | Section 9 — Limit of punishment of offence made up of several offences | section | Punishments | No |
-| [~] Catalog | `s-10` | Section 10 — Punishment of person guilty of one of several offences, judgment stating that it is doubtful of which | section | Punishments | No |
-| [~] Catalog | `s-11` | Section 11 — Solitary confinement | section | Punishments | No |
-| [~] Catalog | `s-12` | Section 12 — Limit of solitary confinement | section | Punishments | No |
-| [~] Catalog | `s-13` | Section 13 — Enhanced punishment for certain offences after previous conviction | section | Punishments | No |
-| [~] Catalog | `s-14` | Section 14 — Act done by a person bound, or by mistake of fact believing himself bound, by law | section | General exceptions | ⭐ Yes |
-| [~] Catalog | `s-15` | Section 15 — Act of Judge when acting judicially | section | General exceptions | No |
-| [~] Catalog | `s-16` | Section 16 — Act done pursuant to judgment or order of Court | section | General exceptions | No |
-| [~] Catalog | `s-17` | Section 17 — Act done by a person justified, or by mistake of fact believing himself justified, by law | section | General exceptions | No |
-| [~] Catalog | `s-18` | Section 18 — Accident in doing a lawful act | section | General exceptions | No |
-| [~] Catalog | `s-19` | Section 19 — Act likely to cause harm, but done without criminal intent, and to prevent other harm | section | General exceptions | No |
-| [~] Catalog | `s-20` | Section 20 — Act of a child under seven years of age | section | General exceptions | ⭐ Yes |
-| [~] Catalog | `s-21` | Section 21 — Act of a child above seven and under twelve years of age of immature understanding | section | General exceptions | ⭐ Yes |
-| [~] Catalog | `s-22` | Section 22 — Act of a person of unsound mind | section | General exceptions | ⭐ Yes |
-| [~] Catalog | `s-23` | Section 23 — Act of a person incapable of judgment by reason of intoxication caused against his will | section | General exceptions | No |
-| [~] Catalog | `s-24` | Section 24 — Offence requiring a particular intent or knowledge committed by one who is intoxicated | section | General exceptions | No |
-| [~] Catalog | `s-25` | Section 25 — Act not intended and not known to be likely to cause death or grievous hurt, done by consent | section | General exceptions | No |
-| [~] Catalog | `s-26` | Section 26 — Act not intended to cause death, done by consent in good faith for person's benefit | section | General exceptions | No |
-| [~] Catalog | `s-27` | Section 27 — Act done in good faith for benefit of child or person of unsound mind, by, or by consent of guardian | section | General exceptions | No |
-| [~] Catalog | `s-28` | Section 28 — Consent known to be given under fear or misconception | section | General exceptions | No |
-| [~] Catalog | `s-29` | Section 29 — Exclusion of acts which are offences independently of harm caused | section | General exceptions | No |
-| [~] Catalog | `s-30` | Section 30 — Act done in good faith for benefit of a person without consent | section | General exceptions | No |
-| [~] Catalog | `s-31` | Section 31 — Communication made in good faith | section | General exceptions | No |
-| [~] Catalog | `s-32` | Section 32 — Act to which a person is compelled by threats | section | General exceptions | No |
-| [~] Catalog | `s-33` | Section 33 — Act causing slight harm | section | General exceptions | No |
-| [~] Catalog | `s-34` | Section 34 — Things done in private defence | section | Private defence | ⭐ Yes |
-| [~] Catalog | `s-35` | Section 35 — Right of private defence of body and of property | section | Private defence | No |
-| [~] Catalog | `s-36` | Section 36 — Right of private defence against act of a person of unsound mind, etc | section | Private defence | No |
-| [~] Catalog | `s-37` | Section 37 — Acts against which there is no right of private defence | section | Private defence | No |
-| [~] Catalog | `s-38` | Section 38 — When right of private defence of body extends to causing death | section | Private defence | ⭐ Yes |
-| [~] Catalog | `s-39` | Section 39 — When such right extends to causing any harm other than death | section | Private defence | No |
-| [~] Catalog | `s-40` | Section 40 — Commencement and continuance of right of private defence of body | section | Private defence | No |
-| [~] Catalog | `s-41` | Section 41 — When right of private defence of property extends to causing death | section | Private defence | ⭐ Yes |
-| [~] Catalog | `s-42` | Section 42 — When such right extends to causing any harm other than death | section | Private defence | No |
-| [~] Catalog | `s-43` | Section 43 — Commencement and continuance of right of private defence of property | section | Private defence | No |
-| [~] Catalog | `s-44` | Section 44 — Right of private defence against deadly assault when there is risk of harm to innocent person | section | Private defence | No |
-| [~] Catalog | `s-45` | Section 45 — Abetment of a thing | section | Abetment | ⭐ Yes |
-| [~] Catalog | `s-46` | Section 46 — Abettor | section | Abetment | No |
-| [~] Catalog | `s-47` | Section 47 — Abetment in India of offences outside India | section | Abetment | No |
-| [~] Catalog | `s-48` | Section 48 — Abetment outside India for offence in India | section | Abetment | No |
-| [~] Catalog | `s-49` | Section 49 — Punishment of abetment if act abetted is committed in consequence and where no express provision is made for its punishment | section | Abetment | No |
-| [~] Catalog | `s-50` | Section 50 — Punishment of abetment if person abetted does act with different intention from that of the abettor | section | Abetment | No |
-| [~] Catalog | `s-51` | Section 51 — Liability of abettor when one act abetted and different act done | section | Abetment | No |
+| [x] Complete | `s-1` | Section 1 — Short title, commencement and application | section | Preliminary | ⭐ Yes |
+| [x] Complete | `s-2` | Section 2 — Definitions | section | Preliminary | ⭐ Yes |
+| [x] Complete | `s-3` | Section 3 — General explanations | section | Preliminary | ⭐ Yes |
+| [x] Complete | `s-4` | Section 4 — Punishments | section | Punishments | ⭐ Yes |
+| [x] Complete | `s-5` | Section 5 — Commutation of sentence | section | Punishments | No |
+| [x] Complete | `s-6` | Section 6 — Fractions of terms of punishment | section | Punishments | No |
+| [x] Complete | `s-7` | Section 7 — Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple | section | Punishments | No |
+| [x] Complete | `s-8` | Section 8 — Amount of fine, liability in default of payment of fine, etc | section | Punishments | No |
+| [x] Complete | `s-9` | Section 9 — Limit of punishment of offence made up of several offences | section | Punishments | No |
+| [x] Complete | `s-10` | Section 10 — Punishment of person guilty of one of several offences, judgment stating that it is doubtful of which | section | Punishments | No |
+| [x] Complete | `s-11` | Section 11 — Solitary confinement | section | Punishments | No |
+| [x] Complete | `s-12` | Section 12 — Limit of solitary confinement | section | Punishments | No |
+| [x] Complete | `s-13` | Section 13 — Enhanced punishment for certain offences after previous conviction | section | Punishments | No |
+| [x] Complete | `s-14` | Section 14 — Act done by a person bound, or by mistake of fact believing himself bound, by law | section | General exceptions | ⭐ Yes |
+| [x] Complete | `s-15` | Section 15 — Act of Judge when acting judicially | section | General exceptions | No |
+| [x] Complete | `s-16` | Section 16 — Act done pursuant to judgment or order of Court | section | General exceptions | No |
+| [x] Complete | `s-17` | Section 17 — Act done by a person justified, or by mistake of fact believing himself justified, by law | section | General exceptions | No |
+| [x] Complete | `s-18` | Section 18 — Accident in doing a lawful act | section | General exceptions | No |
+| [x] Complete | `s-19` | Section 19 — Act likely to cause harm, but done without criminal intent, and to prevent other harm | section | General exceptions | No |
+| [x] Complete | `s-20` | Section 20 — Act of a child under seven years of age | section | General exceptions | ⭐ Yes |
+| [x] Complete | `s-21` | Section 21 — Act of a child above seven and under twelve years of age of immature understanding | section | General exceptions | ⭐ Yes |
+| [x] Complete | `s-22` | Section 22 — Act of a person of unsound mind | section | General exceptions | ⭐ Yes |
+| [x] Complete | `s-23` | Section 23 — Act of a person incapable of judgment by reason of intoxication caused against his will | section | General exceptions | No |
+| [x] Complete | `s-24` | Section 24 — Offence requiring a particular intent or knowledge committed by one who is intoxicated | section | General exceptions | No |
+| [x] Complete | `s-25` | Section 25 — Act not intended and not known to be likely to cause death or grievous hurt, done by consent | section | General exceptions | No |
+| [x] Complete | `s-26` | Section 26 — Act not intended to cause death, done by consent in good faith for person's benefit | section | General exceptions | No |
+| [x] Complete | `s-27` | Section 27 — Act done in good faith for benefit of child or person of unsound mind, by, or by consent of guardian | section | General exceptions | No |
+| [x] Complete | `s-28` | Section 28 — Consent known to be given under fear or misconception | section | General exceptions | No |
+| [x] Complete | `s-29` | Section 29 — Exclusion of acts which are offences independently of harm caused | section | General exceptions | No |
+| [x] Complete | `s-30` | Section 30 — Act done in good faith for benefit of a person without consent | section | General exceptions | No |
+| [x] Complete | `s-31` | Section 31 — Communication made in good faith | section | General exceptions | No |
+| [x] Complete | `s-32` | Section 32 — Act to which a person is compelled by threats | section | General exceptions | No |
+| [x] Complete | `s-33` | Section 33 — Act causing slight harm | section | General exceptions | No |
+| [x] Complete | `s-34` | Section 34 — Things done in private defence | section | Private defence | ⭐ Yes |
+| [x] Complete | `s-35` | Section 35 — Right of private defence of body and of property | section | Private defence | No |
+| [x] Complete | `s-36` | Section 36 — Right of private defence against act of a person of unsound mind, etc | section | Private defence | No |
+| [x] Complete | `s-37` | Section 37 — Acts against which there is no right of private defence | section | Private defence | No |
+| [x] Complete | `s-38` | Section 38 — When right of private defence of body extends to causing death | section | Private defence | ⭐ Yes |
+| [x] Complete | `s-39` | Section 39 — When such right extends to causing any harm other than death | section | Private defence | No |
+| [x] Complete | `s-40` | Section 40 — Commencement and continuance of right of private defence of body | section | Private defence | No |
+| [x] Complete | `s-41` | Section 41 — When right of private defence of property extends to causing death | section | Private defence | ⭐ Yes |
+| [x] Complete | `s-42` | Section 42 — When such right extends to causing any harm other than death | section | Private defence | No |
+| [x] Complete | `s-43` | Section 43 — Commencement and continuance of right of private defence of property | section | Private defence | No |
+| [x] Complete | `s-44` | Section 44 — Right of private defence against deadly assault when there is risk of harm to innocent person | section | Private defence | No |
+| [x] Complete | `s-45` | Section 45 — Abetment of a thing | section | Abetment | ⭐ Yes |
+| [x] Complete | `s-46` | Section 46 — Abettor | section | Abetment | No |
+| [x] Complete | `s-47` | Section 47 — Abetment in India of offences outside India | section | Abetment | No |
+| [x] Complete | `s-48` | Section 48 — Abetment outside India for offence in India | section | Abetment | No |
+| [x] Complete | `s-49` | Section 49 — Punishment of abetment if act abetted is committed in consequence and where no express provision is made for its punishment | section | Abetment | No |
+| [x] Complete | `s-50` | Section 50 — Punishment of abetment if person abetted does act with different intention from that of the abettor | section | Abetment | No |
+| [x] Complete | `s-51` | Section 51 — Liability of abettor when one act abetted and different act done | section | Abetment | No |
 | [~] Catalog | `s-52` | Section 52 — Abettor when liable to cumulative punishment for act abetted and for act done | section | Abetment | No |
 | [~] Catalog | `s-53` | Section 53 — Liability of abettor for an effect caused by act abetted different from that intended by abettor | section | Abetment | No |
-| [~] Catalog | `s-54` | Section 54 — Abettor present when offence is committed | section | Abetment | No |
-| [~] Catalog | `s-55` | Section 55 — Abetment of offence punishable with death or imprisonment for life | section | Abetment | No |
+| [x] Complete | `s-54` | Section 54 — Abettor present when offence is committed | section | Abetment | No |
+| [x] Complete | `s-55` | Section 55 — Abetment of offence punishable with death or imprisonment for life | section | Abetment | No |
 | [~] Catalog | `s-56` | Section 56 — Abetment of offence punishable with imprisonment | section | Abetment | No |
-| [~] Catalog | `s-57` | Section 57 — Abetting commission of offence by public or by more than ten persons | section | Abetment | No |
+| [x] Complete | `s-57` | Section 57 — Abetting commission of offence by public or by more than ten persons | section | Abetment | No |
 | [~] Catalog | `s-58` | Section 58 — Concealing design to commit offence punishable with death or imprisonment for life | section | Abetment | No |
 | [~] Catalog | `s-59` | Section 59 — Public servant concealing design to commit offence which it is his duty to prevent | section | Abetment | No |
 | [~] Catalog | `s-60` | Section 60 — Concealing design to commit offence punishable with imprisonment | section | Abetment | No |
-| [~] Catalog | `s-61` | Section 61 — Criminal conspiracy | section | Criminal conspiracy | ⭐ Yes |
-| [~] Catalog | `s-62` | Section 62 — Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment | section | Attempt | ⭐ Yes |
-| [~] Catalog | `s-63` | Section 63 — Rape | section | Sexual offences | ⭐ Yes |
-| [~] Catalog | `s-64` | Section 64 — Punishment for rape | section | Sexual offences | ⭐ Yes |
+| [x] Complete | `s-61` | Section 61 — Criminal conspiracy | section | Criminal conspiracy | ⭐ Yes |
+| [x] Complete | `s-62` | Section 62 — Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment | section | Attempt | ⭐ Yes |
+| [x] Complete | `s-63` | Section 63 — Rape | section | Sexual offences | ⭐ Yes |
+| [x] Complete | `s-64` | Section 64 — Punishment for rape | section | Sexual offences | ⭐ Yes |
 | [~] Catalog | `s-65` | Section 65 — Punishment for rape in certain cases | section | Sexual offences | ⭐ Yes |
-| [~] Catalog | `s-66` | Section 66 — Punishment for causing death or resulting in persistent vegetative state of victim | section | Sexual offences | No |
+| [x] Complete | `s-66` | Section 66 — Punishment for causing death or resulting in persistent vegetative state of victim | section | Sexual offences | No |
 | [~] Catalog | `s-67` | Section 67 — Sexual intercourse by husband upon his wife during separation | section | Sexual offences | No |
 | [~] Catalog | `s-68` | Section 68 — Sexual intercourse by a person in authority | section | Sexual offences | No |
 | [~] Catalog | `s-69` | Section 69 — Sexual intercourse by employing deceitful means, etc | section | Sexual offences | ⭐ Yes |
-| [~] Catalog | `s-70` | Section 70 — Gang rape | section | Sexual offences | ⭐ Yes |
+| [x] Complete | `s-70` | Section 70 — Gang rape | section | Sexual offences | ⭐ Yes |
 | [~] Catalog | `s-71` | Section 71 — Punishment for repeat offenders | section | Sexual offences | No |
 | [~] Catalog | `s-72` | Section 72 — Disclosure of identity of victim of certain offences, etc | section | Sexual offences | No |
 | [~] Catalog | `s-73` | Section 73 — Printing or publishing any matter relating to Court proceedings without permission | section | Sexual offences | No |
 | [~] Catalog | `s-74` | Section 74 — Assault or use of criminal force to woman with intent to outrage her modesty | section | Assault against woman | ⭐ Yes |
-| [~] Catalog | `s-75` | Section 75 — Sexual harassment | section | Assault against woman | ⭐ Yes |
+| [x] Complete | `s-75` | Section 75 — Sexual harassment | section | Assault against woman | ⭐ Yes |
 | [~] Catalog | `s-76` | Section 76 — Assault or use of criminal force to woman with intent to disrobe | section | Assault against woman | ⭐ Yes |
-| [~] Catalog | `s-77` | Section 77 — Voyeurism | section | Assault against woman | ⭐ Yes |
-| [~] Catalog | `s-78` | Section 78 — Stalking | section | Assault against woman | ⭐ Yes |
+| [x] Complete | `s-77` | Section 77 — Voyeurism | section | Assault against woman | ⭐ Yes |
+| [x] Complete | `s-78` | Section 78 — Stalking | section | Assault against woman | ⭐ Yes |
 | [~] Catalog | `s-79` | Section 79 — Word, gesture or act intended to insult modesty of a woman | section | Assault against woman | ⭐ Yes |
-| [~] Catalog | `s-80` | Section 80 — Dowry death | section | Offences relating to marriage | ⭐ Yes |
+| [x] Complete | `s-80` | Section 80 — Dowry death | section | Offences relating to marriage | ⭐ Yes |
 | [~] Catalog | `s-81` | Section 81 — Cohabitation caused by man deceitfully inducing belief of lawful marriage | section | Offences relating to marriage | No |
 | [~] Catalog | `s-82` | Section 82 — Marrying again during lifetime of husband or wife | section | Offences relating to marriage | No |
 | [~] Catalog | `s-83` | Section 83 — Marriage ceremony fraudulently gone through without lawful marriage | section | Offences relating to marriage | No |
 | [~] Catalog | `s-84` | Section 84 — Enticing or taking away or detaining with criminal intent a married woman | section | Offences relating to marriage | No |
-| [~] Catalog | `s-85` | Section 85 — Husband or relative of husband of a woman subjecting her to cruelty | section | Offences relating to marriage | ⭐ Yes |
+| [x] Complete | `s-85` | Section 85 — Husband or relative of husband of a woman subjecting her to cruelty | section | Offences relating to marriage | ⭐ Yes |
 | [~] Catalog | `s-86` | Section 86 — Cruelty defined | section | Offences relating to marriage | ⭐ Yes |
 | [~] Catalog | `s-87` | Section 87 — Kidnapping, abducting or inducing woman to compel her marriage, etc | section | Offences relating to marriage | No |
 | [~] Catalog | `s-88` | Section 88 — Causing miscarriage | section | Miscarriage and birth | No |
@@ -1482,36 +1482,36 @@
 | [~] Catalog | `s-90` | Section 90 — Death caused by act done with intent to cause miscarriage | section | Miscarriage and birth | No |
 | [~] Catalog | `s-91` | Section 91 — Act done with intent to prevent child being born alive or to cause to die after birth | section | Miscarriage and birth | No |
 | [~] Catalog | `s-92` | Section 92 — Causing death of quick unborn child by act amounting to culpable homicide | section | Miscarriage and birth | No |
-| [~] Catalog | `s-93` | Section 93 — Exposure and abandonment of child under twelve years of age, by parent or person having care of it | section | Miscarriage and birth | No |
+| [x] Complete | `s-93` | Section 93 — Exposure and abandonment of child under twelve years of age, by parent or person having care of it | section | Miscarriage and birth | No |
 | [~] Catalog | `s-94` | Section 94 — Concealment of birth by secret disposal of dead body | section | Miscarriage and birth | No |
-| [~] Catalog | `s-95` | Section 95 — Hiring, employing or engaging a child to commit an offence | section | Offences against child | ⭐ Yes |
-| [~] Catalog | `s-96` | Section 96 — Procuration of child | section | Offences against child | No |
+| [x] Complete | `s-95` | Section 95 — Hiring, employing or engaging a child to commit an offence | section | Offences against child | ⭐ Yes |
+| [x] Complete | `s-96` | Section 96 — Procuration of child | section | Offences against child | No |
 | [~] Catalog | `s-97` | Section 97 — Kidnapping or abducting child under ten years of age with intent to steal from its person | section | Offences against child | No |
 | [~] Catalog | `s-98` | Section 98 — Selling child for purposes of prostitution, etc | section | Offences against child | No |
-| [~] Catalog | `s-99` | Section 99 — Buying child for purposes of prostitution, etc | section | Offences against child | No |
-| [~] Catalog | `s-100` | Section 100 — Culpable homicide | section | Offences affecting life | ⭐ Yes |
-| [~] Catalog | `s-101` | Section 101 — Murder | section | Offences affecting life | ⭐ Yes |
-| [~] Catalog | `s-102` | Section 102 — Culpable homicide by causing death of person other than person whose death was intended | section | Offences affecting life | No |
-| [~] Catalog | `s-103` | Section 103 — Punishment for murder | section | Offences affecting life | ⭐ Yes |
-| [~] Catalog | `s-104` | Section 104 — Punishment for murder by life-convict | section | Offences affecting life | No |
-| [~] Catalog | `s-105` | Section 105 — Punishment for culpable homicide not amounting to murder | section | Offences affecting life | ⭐ Yes |
-| [~] Catalog | `s-106` | Section 106 — Causing death by negligence | section | Offences affecting life | ⭐ Yes |
-| [~] Catalog | `s-107` | Section 107 — Abetment of suicide of child or person of unsound mind | section | Offences affecting life | ⭐ Yes |
-| [~] Catalog | `s-108` | Section 108 — Abetment of suicide | section | Offences affecting life | ⭐ Yes |
-| [~] Catalog | `s-109` | Section 109 — Attempt to murder | section | Offences affecting life | ⭐ Yes |
+| [x] Complete | `s-99` | Section 99 — Buying child for purposes of prostitution, etc | section | Offences against child | No |
+| [x] Complete | `s-100` | Section 100 — Culpable homicide | section | Offences affecting life | ⭐ Yes |
+| [x] Complete | `s-101` | Section 101 — Murder | section | Offences affecting life | ⭐ Yes |
+| [x] Complete | `s-102` | Section 102 — Culpable homicide by causing death of person other than person whose death was intended | section | Offences affecting life | No |
+| [x] Complete | `s-103` | Section 103 — Punishment for murder | section | Offences affecting life | ⭐ Yes |
+| [x] Complete | `s-104` | Section 104 — Punishment for murder by life-convict | section | Offences affecting life | No |
+| [x] Complete | `s-105` | Section 105 — Punishment for culpable homicide not amounting to murder | section | Offences affecting life | ⭐ Yes |
+| [x] Complete | `s-106` | Section 106 — Causing death by negligence | section | Offences affecting life | ⭐ Yes |
+| [x] Complete | `s-107` | Section 107 — Abetment of suicide of child or person of unsound mind | section | Offences affecting life | ⭐ Yes |
+| [x] Complete | `s-108` | Section 108 — Abetment of suicide | section | Offences affecting life | ⭐ Yes |
+| [x] Complete | `s-109` | Section 109 — Attempt to murder | section | Offences affecting life | ⭐ Yes |
 | [~] Catalog | `s-110` | Section 110 — Attempt to commit culpable homicide | section | Offences affecting life | ⭐ Yes |
-| [~] Catalog | `s-111` | Section 111 — Organised crime | section | Offences affecting life | ⭐ Yes |
-| [~] Catalog | `s-112` | Section 112 — Petty organised crime | section | Offences affecting life | ⭐ Yes |
+| [x] Complete | `s-111` | Section 111 — Organised crime | section | Offences affecting life | ⭐ Yes |
+| [x] Complete | `s-112` | Section 112 — Petty organised crime | section | Offences affecting life | ⭐ Yes |
 | [~] Catalog | `s-113` | Section 113 — Terrorist act | section | Offences affecting life | ⭐ Yes |
 | [~] Catalog | `s-114` | Section 114 — Hurt | section | Hurt | ⭐ Yes |
-| [~] Catalog | `s-115` | Section 115 — Voluntarily causing hurt | section | Hurt | ⭐ Yes |
+| [x] Complete | `s-115` | Section 115 — Voluntarily causing hurt | section | Hurt | ⭐ Yes |
 | [~] Catalog | `s-116` | Section 116 — Grievous hurt | section | Hurt | ⭐ Yes |
-| [~] Catalog | `s-117` | Section 117 — Voluntarily causing grievous hurt | section | Hurt | ⭐ Yes |
-| [~] Catalog | `s-118` | Section 118 — Voluntarily causing hurt or grievous hurt by dangerous weapons or means | section | Hurt | ⭐ Yes |
+| [x] Complete | `s-117` | Section 117 — Voluntarily causing grievous hurt | section | Hurt | ⭐ Yes |
+| [x] Complete | `s-118` | Section 118 — Voluntarily causing hurt or grievous hurt by dangerous weapons or means | section | Hurt | ⭐ Yes |
 | [~] Catalog | `s-119` | Section 119 — Voluntarily causing hurt or grievous hurt to extort property, or to constrain to an illegal act | section | Hurt | No |
-| [~] Catalog | `s-120` | Section 120 — Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property | section | Hurt | No |
+| [x] Complete | `s-120` | Section 120 — Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property | section | Hurt | No |
 | [~] Catalog | `s-121` | Section 121 — Voluntarily causing hurt or grievous hurt to deter public servant from his duty | section | Hurt | No |
-| [~] Catalog | `s-122` | Section 122 — Voluntarily causing hurt or grievous hurt on provocation | section | Hurt | No |
+| [x] Complete | `s-122` | Section 122 — Voluntarily causing hurt or grievous hurt on provocation | section | Hurt | No |
 | [~] Catalog | `s-123` | Section 123 — Causing hurt by means of poison, etc., with intent to commit an offence | section | Hurt | No |
 | [~] Catalog | `s-124` | Section 124 — Voluntarily causing grievous hurt by use of acid, etc | section | Hurt | ⭐ Yes |
 | [~] Catalog | `s-125` | Section 125 — Act endangering life or personal safety of others | section | Hurt | No |
@@ -1519,17 +1519,17 @@
 | [~] Catalog | `s-127` | Section 127 — Wrongful confinement | section | Wrongful restraint | ⭐ Yes |
 | [~] Catalog | `s-128` | Section 128 — Force | section | Force and assault | No |
 | [~] Catalog | `s-129` | Section 129 — Criminal force | section | Force and assault | No |
-| [~] Catalog | `s-130` | Section 130 — Assault | section | Force and assault | No |
+| [x] Complete | `s-130` | Section 130 — Assault | section | Force and assault | No |
 | [~] Catalog | `s-131` | Section 131 — Punishment for assault or criminal force otherwise than on grave provocation | section | Force and assault | No |
 | [~] Catalog | `s-132` | Section 132 — Assault or criminal force to deter public servant from discharge of his duty | section | Force and assault | No |
 | [~] Catalog | `s-133` | Section 133 — Assault or criminal force with intent to dishonour person, otherwise than on grave provocation | section | Force and assault | No |
 | [~] Catalog | `s-134` | Section 134 — Assault or criminal force in attempt to commit theft of property carried by a person | section | Force and assault | No |
 | [~] Catalog | `s-135` | Section 135 — Assault or criminal force in attempt wrongfully to confine a person | section | Force and assault | No |
 | [~] Catalog | `s-136` | Section 136 — Assault or criminal force on grave provocation | section | Force and assault | No |
-| [~] Catalog | `s-137` | Section 137 — Kidnapping | section | Kidnapping and trafficking | ⭐ Yes |
+| [x] Complete | `s-137` | Section 137 — Kidnapping | section | Kidnapping and trafficking | ⭐ Yes |
 | [~] Catalog | `s-138` | Section 138 — Abduction | section | Kidnapping and trafficking | ⭐ Yes |
 | [~] Catalog | `s-139` | Section 139 — Kidnapping or maiming a child for purposes of begging | section | Kidnapping and trafficking | No |
-| [~] Catalog | `s-140` | Section 140 — Kidnapping or abducting in order to murder or for ransom, etc | section | Kidnapping and trafficking | No |
+| [x] Complete | `s-140` | Section 140 — Kidnapping or abducting in order to murder or for ransom, etc | section | Kidnapping and trafficking | No |
 | [~] Catalog | `s-141` | Section 141 — Importation of girl or boy from foreign country | section | Kidnapping and trafficking | No |
 | [~] Catalog | `s-142` | Section 142 — Wrongfully concealing or keeping in confinement, kidnapped or abducted person | section | Kidnapping and trafficking | No |
 | [~] Catalog | `s-143` | Section 143 — Trafficking of person | section | Kidnapping and trafficking | ⭐ Yes |
@@ -1541,7 +1541,7 @@
 | [~] Catalog | `s-149` | Section 149 — Collecting arms, etc., with intention of waging war against Government of India | section | Offences against the State | No |
 | [~] Catalog | `s-150` | Section 150 — Concealing with intent to facilitate design to wage war | section | Offences against the State | No |
 | [~] Catalog | `s-151` | Section 151 — Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power | section | Offences against the State | No |
-| [~] Catalog | `s-152` | Section 152 — Act endangering sovereignty, unity and integrity of India | section | Offences against the State | ⭐ Yes |
+| [x] Complete | `s-152` | Section 152 — Act endangering sovereignty, unity and integrity of India | section | Offences against the State | ⭐ Yes |
 | [~] Catalog | `s-153` | Section 153 — Waging war against Government of any foreign State at peace with Government of India | section | Offences against the State | No |
 | [~] Catalog | `s-154` | Section 154 — Committing depredation on territories of foreign State at peace with Government of India | section | Offences against the State | No |
 | [~] Catalog | `s-155` | Section 155 — Receiving property taken by war or depredation mentioned in sections 153 and 154 | section | Offences against the State | No |
@@ -1578,9 +1578,9 @@
 | [~] Catalog | `s-186` | Section 186 — Prohibition of fictitious stamps | section | Coin and currency | No |
 | [~] Catalog | `s-187` | Section 187 — Person employed in mint causing coin to be of different weight or composition from that fixed by law | section | Coin and currency | No |
 | [~] Catalog | `s-188` | Section 188 — Unlawfully taking coining instrument from mint | section | Coin and currency | No |
-| [~] Catalog | `s-189` | Section 189 — Unlawful assembly | section | Public tranquillity | ⭐ Yes |
-| [~] Catalog | `s-190` | Section 190 — Every member of unlawful assembly guilty of offence committed in prosecution of common object | section | Public tranquillity | ⭐ Yes |
-| [~] Catalog | `s-191` | Section 191 — Rioting | section | Public tranquillity | ⭐ Yes |
+| [x] Complete | `s-189` | Section 189 — Unlawful assembly | section | Public tranquillity | ⭐ Yes |
+| [x] Complete | `s-190` | Section 190 — Every member of unlawful assembly guilty of offence committed in prosecution of common object | section | Public tranquillity | ⭐ Yes |
+| [x] Complete | `s-191` | Section 191 — Rioting | section | Public tranquillity | ⭐ Yes |
 | [~] Catalog | `s-192` | Section 192 — Wantonly giving provocation with intent to cause riot — if rioting be committed; if not committed | section | Public tranquillity | No |
 | [~] Catalog | `s-193` | Section 193 — Liability of owner, occupier, etc. of land on which an unlawful assembly or riot takes place | section | Public tranquillity | No |
 | [~] Catalog | `s-194` | Section 194 — Affray | section | Public tranquillity | No |
@@ -1616,10 +1616,10 @@
 | [~] Catalog | `s-224` | Section 224 — Threat of injury to public servant | section | Contempt of lawful authority | No |
 | [~] Catalog | `s-225` | Section 225 — Threat of injury to induce person to refrain from applying for protection to public servant | section | Contempt of lawful authority | No |
 | [~] Catalog | `s-226` | Section 226 — Attempt to commit suicide to compel or restrain exercise of lawful power | section | Contempt of lawful authority | ⭐ Yes |
-| [~] Catalog | `s-227` | Section 227 — Giving false evidence | section | False evidence and public justice | ⭐ Yes |
+| [x] Complete | `s-227` | Section 227 — Giving false evidence | section | False evidence and public justice | ⭐ Yes |
 | [~] Catalog | `s-228` | Section 228 — Fabricating false evidence | section | False evidence and public justice | No |
 | [~] Catalog | `s-229` | Section 229 — Punishment for false evidence | section | False evidence and public justice | ⭐ Yes |
-| [~] Catalog | `s-230` | Section 230 — Giving or fabricating false evidence with intent to procure conviction of capital offence | section | False evidence and public justice | No |
+| [x] Complete | `s-230` | Section 230 — Giving or fabricating false evidence with intent to procure conviction of capital offence | section | False evidence and public justice | No |
 | [~] Catalog | `s-231` | Section 231 — Giving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment for life or imprisonment | section | False evidence and public justice | No |
 | [~] Catalog | `s-232` | Section 232 — Threatening any person to give false evidence | section | False evidence and public justice | No |
 | [~] Catalog | `s-233` | Section 233 — Using evidence known to be false | section | False evidence and public justice | No |
@@ -1637,7 +1637,7 @@
 | [~] Catalog | `s-245` | Section 245 — Fraudulently suffering decree for sum not due | section | False evidence and public justice | No |
 | [~] Catalog | `s-246` | Section 246 — Dishonestly making false claim in Court | section | False evidence and public justice | No |
 | [~] Catalog | `s-247` | Section 247 — Fraudulently obtaining decree for sum not due | section | False evidence and public justice | No |
-| [~] Catalog | `s-248` | Section 248 — False charge of offence made with intent to injure | section | False evidence and public justice | ⭐ Yes |
+| [x] Complete | `s-248` | Section 248 — False charge of offence made with intent to injure | section | False evidence and public justice | ⭐ Yes |
 | [~] Catalog | `s-249` | Section 249 — Harbouring offender | section | False evidence and public justice | No |
 | [~] Catalog | `s-250` | Section 250 — Taking gift, etc., to screen an offender from punishment | section | False evidence and public justice | No |
 | [~] Catalog | `s-251` | Section 251 — Offering gift or restoration of property in consideration of screening offender | section | False evidence and public justice | No |
@@ -1692,14 +1692,14 @@
 | [~] Catalog | `s-300` | Section 300 — Disturbing religious assembly | section | Religion | No |
 | [~] Catalog | `s-301` | Section 301 — Trespassing on burial places, etc | section | Religion | No |
 | [~] Catalog | `s-302` | Section 302 — Uttering words, etc., with deliberate intent to wound religious feelings of any person | section | Religion | No |
-| [~] Catalog | `s-303` | Section 303 — Theft | section | Theft | ⭐ Yes |
-| [~] Catalog | `s-304` | Section 304 — Snatching | section | Theft | ⭐ Yes |
+| [x] Complete | `s-303` | Section 303 — Theft | section | Theft | ⭐ Yes |
+| [x] Complete | `s-304` | Section 304 — Snatching | section | Theft | ⭐ Yes |
 | [~] Catalog | `s-305` | Section 305 — Theft in a dwelling house, or means of transportation or place of worship, etc | section | Theft | No |
 | [~] Catalog | `s-306` | Section 306 — Theft by clerk or servant of property in possession of master | section | Theft | No |
 | [~] Catalog | `s-307` | Section 307 — Theft after preparation made for causing death, hurt or restraint in order to the committing of the theft | section | Theft | No |
-| [~] Catalog | `s-308` | Section 308 — Extortion | section | Extortion | ⭐ Yes |
-| [~] Catalog | `s-309` | Section 309 — Robbery | section | Robbery and dacoity | ⭐ Yes |
-| [~] Catalog | `s-310` | Section 310 — Dacoity | section | Robbery and dacoity | ⭐ Yes |
+| [x] Complete | `s-308` | Section 308 — Extortion | section | Extortion | ⭐ Yes |
+| [x] Complete | `s-309` | Section 309 — Robbery | section | Robbery and dacoity | ⭐ Yes |
+| [x] Complete | `s-310` | Section 310 — Dacoity | section | Robbery and dacoity | ⭐ Yes |
 | [~] Catalog | `s-311` | Section 311 — Robbery, or dacoity, with attempt to cause death or grievous hurt | section | Robbery and dacoity | No |
 | [~] Catalog | `s-312` | Section 312 — Attempt to commit robbery or dacoity when armed with deadly weapon | section | Robbery and dacoity | No |
 | [~] Catalog | `s-313` | Section 313 — Punishment for belonging to gang of robbers, etc | section | Robbery and dacoity | No |
@@ -1707,29 +1707,29 @@
 | [~] Catalog | `s-315` | Section 315 — Dishonest misappropriation of property possessed by deceased person at the time of his death | section | Criminal misappropriation | No |
 | [~] Catalog | `s-316` | Section 316 — Criminal breach of trust | section | Criminal breach of trust | ⭐ Yes |
 | [~] Catalog | `s-317` | Section 317 — Stolen property | section | Stolen property | ⭐ Yes |
-| [~] Catalog | `s-318` | Section 318 — Cheating | section | Cheating | ⭐ Yes |
+| [x] Complete | `s-318` | Section 318 — Cheating | section | Cheating | ⭐ Yes |
 | [~] Catalog | `s-319` | Section 319 — Cheating by personation | section | Cheating | No |
 | [~] Catalog | `s-320` | Section 320 — Dishonest or fraudulent removal or concealment of property to prevent distribution among creditors | section | Fraudulent deeds | No |
 | [~] Catalog | `s-321` | Section 321 — Dishonestly or fraudulently preventing debt being available for creditors | section | Fraudulent deeds | No |
 | [~] Catalog | `s-322` | Section 322 — Dishonest or fraudulent execution of deed of transfer containing false statement of consideration | section | Fraudulent deeds | No |
 | [~] Catalog | `s-323` | Section 323 — Dishonest or fraudulent removal or concealment of property | section | Fraudulent deeds | No |
-| [~] Catalog | `s-324` | Section 324 — Mischief | section | Mischief | ⭐ Yes |
+| [x] Complete | `s-324` | Section 324 — Mischief | section | Mischief | ⭐ Yes |
 | [~] Catalog | `s-325` | Section 325 — Mischief by killing or maiming animal | section | Mischief | No |
 | [~] Catalog | `s-326` | Section 326 — Mischief by injury, inundation, fire or explosive substance, etc | section | Mischief | No |
 | [~] Catalog | `s-327` | Section 327 — Mischief with intent to destroy or make unsafe a rail, aircraft, decked vessel or one of twenty tons burden | section | Mischief | No |
 | [~] Catalog | `s-328` | Section 328 — Punishment for intentionally running vessel aground or ashore with intent to commit theft, etc | section | Mischief | No |
-| [~] Catalog | `s-329` | Section 329 — Criminal trespass and house-trespass | section | Criminal trespass | ⭐ Yes |
+| [x] Complete | `s-329` | Section 329 — Criminal trespass and house-trespass | section | Criminal trespass | ⭐ Yes |
 | [~] Catalog | `s-330` | Section 330 — House-trespass and house-breaking | section | Criminal trespass | No |
 | [~] Catalog | `s-331` | Section 331 — Punishment for house-trespass or house-breaking | section | Criminal trespass | No |
 | [~] Catalog | `s-332` | Section 332 — House-trespass in order to commit offence | section | Criminal trespass | No |
 | [~] Catalog | `s-333` | Section 333 — House-trespass after preparation for hurt, assault or wrongful restraint | section | Criminal trespass | No |
 | [~] Catalog | `s-334` | Section 334 — Dishonestly breaking open receptacle containing property | section | Criminal trespass | No |
 | [~] Catalog | `s-335` | Section 335 — Making a false document | section | Documents and forgery | No |
-| [~] Catalog | `s-336` | Section 336 — Forgery | section | Documents and forgery | ⭐ Yes |
-| [~] Catalog | `s-337` | Section 337 — Forgery of record of Court or of public register, etc | section | Documents and forgery | No |
-| [~] Catalog | `s-338` | Section 338 — Forgery of valuable security, will, etc | section | Documents and forgery | No |
+| [x] Complete | `s-336` | Section 336 — Forgery | section | Documents and forgery | ⭐ Yes |
+| [x] Complete | `s-337` | Section 337 — Forgery of record of Court or of public register, etc | section | Documents and forgery | No |
+| [x] Complete | `s-338` | Section 338 — Forgery of valuable security, will, etc | section | Documents and forgery | No |
 | [~] Catalog | `s-339` | Section 339 — Having possession of document described in section 337 or section 338, knowing it to be forged and intending to use it as genuine | section | Documents and forgery | No |
-| [~] Catalog | `s-340` | Section 340 — Forged document or electronic record and using it as genuine | section | Documents and forgery | ⭐ Yes |
+| [x] Complete | `s-340` | Section 340 — Forged document or electronic record and using it as genuine | section | Documents and forgery | ⭐ Yes |
 | [~] Catalog | `s-341` | Section 341 — Making or possessing counterfeit seal, etc., with intent to commit forgery punishable under section 338 | section | Documents and forgery | No |
 | [~] Catalog | `s-342` | Section 342 — Counterfeiting device or mark used for authenticating documents described in section 338, or possessing counterfeit marked material | section | Documents and forgery | No |
 | [~] Catalog | `s-343` | Section 343 — Fraudulent cancellation, destruction, etc., of will, authority to adopt, or valuable security | section | Documents and forgery | No |
@@ -1740,12 +1740,12 @@
 | [~] Catalog | `s-348` | Section 348 — Making or possession of any instrument for counterfeiting a property mark | section | Property marks | No |
 | [~] Catalog | `s-349` | Section 349 — Selling goods marked with a counterfeit property mark | section | Property marks | No |
 | [~] Catalog | `s-350` | Section 350 — Making a false mark upon any receptacle containing goods | section | Property marks | No |
-| [~] Catalog | `s-351` | Section 351 — Criminal intimidation | section | Intimidation, insult, annoyance | ⭐ Yes |
+| [x] Complete | `s-351` | Section 351 — Criminal intimidation | section | Intimidation, insult, annoyance | ⭐ Yes |
 | [~] Catalog | `s-352` | Section 352 — Intentional insult with intent to provoke breach of the peace | section | Intimidation, insult, annoyance | No |
-| [~] Catalog | `s-353` | Section 353 — Statements conducing to public mischief | section | Intimidation, insult, annoyance | ⭐ Yes |
+| [x] Complete | `s-353` | Section 353 — Statements conducing to public mischief | section | Intimidation, insult, annoyance | ⭐ Yes |
 | [~] Catalog | `s-354` | Section 354 — Act caused by inducing person to believe that he will be rendered an object of Divine displeasure | section | Intimidation, insult, annoyance | No |
 | [~] Catalog | `s-355` | Section 355 — Misconduct in public by a drunken person | section | Intimidation, insult, annoyance | No |
-| [~] Catalog | `s-356` | Section 356 — Defamation | section | Defamation | ⭐ Yes |
+| [x] Complete | `s-356` | Section 356 — Defamation | section | Defamation | ⭐ Yes |
 | [~] Catalog | `s-357` | Section 357 — Breach of contract to attend on and supply wants of helpless person | section | Breach of contract of service | No |
 | [~] Catalog | `s-358` | Section 358 — Repeal and savings | section | Repeal | ⭐ Yes |
 
