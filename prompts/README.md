@@ -6,23 +6,24 @@ This folder contains standardized, battle-tested master prompts to instruct any 
 
 ## 📋 Available Prompts
 
-1. **[`TOPIC_AUTHORING_AI_PROMPT.md`](./TOPIC_AUTHORING_AI_PROMPT.md)**
-   - **Purpose:** Full book-chapter treatise generation for any section, article, or legal topic in `src/data/topics/<subjectSlug>/<topicId>.ts`.
-   - **Features:** 
-     - 5 Doctrinal Modules (Provenance, Textual Anatomy, Mandatory Ingredients, Evidentiary Burdens under BSA 2023, Procedural/Limitation Roadmap).
-     - Dual Statutory Illustrations (Proving vs Boundary Failure / Defect).
-     - Extracted Landmark Case Law Ratios (`ratioDecidendi`, `court`, `bench`, `facts`, `issue`, courtroom application).
-     - Chamber Practice Problem Assessment (IRAC) & Comprehensive Appellate Written Submissions.
-     - **Zero Exam Marks:** Eliminates the obsolete 10/16-mark collegiate paradigm.
+Choose the prompt that matches your scenario:
+
+| Scenario | Prompt File | What it Does |
+| :--- | :--- | :--- |
+| **Scenario 1: New Topic (Known ID)** | [`TOPIC_AUTHORING_AI_PROMPT.md`](./TOPIC_AUTHORING_AI_PROMPT.md) | Authors a brand new treatise when you already know the `topicId` (e.g. `art-21`, `s-300`). |
+| **Scenario 2: New Topic / New Subject (Unknown ID)** | [`NEW_TOPIC_OR_SUBJECT_PROMPT.md`](./NEW_TOPIC_OR_SUBJECT_PROMPT.md) | Formulates the canonical `topicId`, generates the catalog entry for `src/data/subjects.ts`, and authors the treatise file. |
+| **Scenario 3: Audit & Upgrade Existing Topic** | [`UPGRADE_EXISTING_TOPIC_PROMPT.md`](./UPGRADE_EXISTING_TOPIC_PROMPT.md) | Takes an existing file, audits it, preserves genuine data, strips old 10/16-mark wording, and outputs a complete drop-in replacement. |
 
 ---
 
 ## 🚀 Step-by-Step Workflow: How to Author / Update a Topic
 
-Follow these 6 simple steps whenever you use an AI model to create or update a topic:
+Follow these simple steps whenever you use an AI model to create or update a topic:
 
-### Step 1: Open the Master Prompt
-Open [`prompts/TOPIC_AUTHORING_AI_PROMPT.md`](./TOPIC_AUTHORING_AI_PROMPT.md) and copy the entire markdown prompt block.
+### Step 1: Choose & Open the Matching Prompt
+* If you have an existing topic to upgrade, open [`prompts/UPGRADE_EXISTING_TOPIC_PROMPT.md`](./UPGRADE_EXISTING_TOPIC_PROMPT.md).
+* If you are adding a topic that does not have a `topicId` yet, open [`prompts/NEW_TOPIC_OR_SUBJECT_PROMPT.md`](./NEW_TOPIC_OR_SUBJECT_PROMPT.md).
+* If writing a fresh topic with an established ID, open [`prompts/TOPIC_AUTHORING_AI_PROMPT.md`](./TOPIC_AUTHORING_AI_PROMPT.md).
 
 ### Step 2: Fill in the 3 Target Parameters
 At the top of the prompt, replace the 3 bracketed variables with your topic's specific details:
