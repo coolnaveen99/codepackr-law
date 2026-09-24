@@ -1,32 +1,132 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 340 (and related): counterfeiting currency notes or bank notes — making, or performing any part of the process of making, counterfeit currency, or buying/selling/receiving counterfeit currency with knowledge. Serious economic offence. Successor structure to IPC ss. 489A–489E. High punishment scale.',
-  study: `Counterfeiting currency under the BNS:\n\nWhoever counterfeits, or knowingly performs any part of the process of counterfeiting, any currency note or bank note, is punished as provided (very high scale, often life or long term).\n\nRelated offences cover:\n• Buying, selling, receiving, or disposing of counterfeit currency with knowledge.\n• Possession of counterfeit currency with knowledge and intent to use.\n• Making or possessing instruments or materials for counterfeiting.\n\nKey points\n• “Counterfeit” carries the general definition (resemblance sufficient to deceive).\n• Knowledge is central for possession/use offences.\n\nCite the applicable BNS sections for post-1 July 2024 acts. Often investigated by specialised agencies.`,
-  sections: [
-    { id: 's-340-m1', title: 'Provenance', order: 1, content: ['Successor structure to IPC ss. 489A–489E. Counterfeiting and related currency offences.'] },
-    { id: 's-340-m2', title: 'Core Offence', order: 2, content: ['Counterfeiting currency notes or bank notes, or performing any part of the process.'] },
-    { id: 's-340-m3', title: 'Related Offences', order: 3, content: ['Buying/selling/receiving with knowledge; possession with intent to use; instruments/materials for counterfeiting.'] },
-    { id: 's-340-m4', title: 'Ingredients (core)', order: 4, content: ['(1) Counterfeiting or part of the process. (2) Currency note or bank note.'] },
-    { id: 's-340-m5', title: 'Procedure', order: 5, content: ['Serious economic offence; specialised investigation; Sessions trial as applicable.'] },
+  "study": "Introduction and meaning\nForged document or electronic record and using it as genuine. BNS restatement of IPC 471. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 471. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 340 is the rule on “Forged document or electronic record and using it as genuine”. The section provides that (1) A false document or electronic record made wholly or in part by forgery is designated a forged document or electronic record. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 340 exists so that “Forged document or electronic record and using it as genuine” has a closed legal test in Chapter XVIII — Of Offences Relating to Documents and to Property Marks. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: False documents, forgery, using a forged electronic record, property marks.\n\nThe provision in detail\n340. (1) A false document or electronic record made wholly or in part by forgery is designated a forged document or electronic record\n\n(2) Whoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be a forged document or electronic record, shall be punished in the same manner as if he had forged such document or electronic record\n\nEssential ingredients\n1. (1) A false document or electronic record made wholly or in part by forgery is designated a forged document or electronic record\n2. (2) Whoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be a forged document or electronic record, shall be punished in the same manner as if he had forged such document or electronic record",
+  "glance": "BNS s. 340 — Forged document or electronic record and using it as genuine.",
+  "sections": [
+    {
+      "id": "bns-340-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "340. (1) A false document or electronic record made wholly or in part by forgery is designated a forged document or electronic record",
+        "(2) Whoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be a forged document or electronic record, shall be punished in the same manner as if he had forged such document or electronic record"
+      ]
+    },
+    {
+      "id": "bns-340-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) A false document or electronic record made wholly or in part by forgery is designated a forged document or electronic record",
+        "(2) Whoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be a forged document or electronic record, shall be punished in the same manner as if he had forged such document or electronic record"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-340', section: 's. 340', title: 'Counterfeiting currency notes or bank notes' }],
-  examples: [
-    { id: 's-340-ex1', title: 'Making counterfeit notes', illustrationType: 'practical', description: 'A operates a press to produce fake currency notes. Counterfeiting is made out.' },
-    { id: 's-340-ex2', title: 'Innocent possession', illustrationType: 'fail-scenario', description: 'A receives a counterfeit note as change without knowledge. Without knowledge (and intent to use for possession offences), liability does not follow.' },
+  "examples": [
+    {
+      "id": "bns-340-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Forged document or electronic record and using it as genuine”. Name BNS s. 340, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-340-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 340 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-340-hypo', title: 'Possession with knowledge', facts: 'Accused is found with a bundle of counterfeit notes and evidence shows he knew and intended to circulate them.', question: 'Is a currency offence made out?', applicableLaw: 'BNS counterfeit-currency provisions.', analysis: 'Possession with knowledge and intent to use fits the related possession offence.', conclusion: 'Offence established.' }],
-  distinctions: [],
-  misconceptions: [{ id: 's-340-trap', trap: 'Mere possession of a counterfeit note is always an offence.', correction: 'For possession offences, knowledge (and often intent to use) is required. Innocent receipt without knowledge is not the offence.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-340-brief', draftingCategory: 'brief', question: 'Outline counterfeiting of currency under the BNS.', answer: 'Counterfeiting currency notes or bank notes, or performing any part of the process, is a serious offence with a high punishment scale. Related offences cover buying/selling/receiving with knowledge, possession with intent to use, and instruments/materials for counterfeiting. Knowledge is essential for possession/use offences.', explanation: 'Short note.' },
-    { id: 's-340-sub', draftingCategory: 'submissions', question: 'Submissions on counterfeit currency.', answer: 'I. Counterfeiting or related conduct. II. Knowledge where required. III. Intent to use if possession. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-340-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Forged document or electronic record and using it as genuine” under BNS s. 340 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 340 (Forged document or electronic record and using it as genuine) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 340. Chapter XVIII — Of Offences Relating to Documents and to Property Marks. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 340 (Forged document or electronic record and using it as genuine), Chapter XVIII — Of Offences Relating to Documents and to Property Marks.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) A false document or electronic record made wholly or in part by forgery is designated a forged document or electronic record\n   (2) (2) Whoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be a forged document or electronic record, shall be punished in the same manner as if he had forged such document or electronic record\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 340 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 340 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 340. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS counterfeit-currency provisions', 'BNS definition of counterfeit', 'IPC ss. 489A–489E (historical)'],
-  examTips: ['List the cluster: making, process, buying/selling, possession, instruments.', 'Stress knowledge for possession/use.'],
-  revisionPoints: ['Counterfeiting currency = high-scale offence.', 'Knowledge essential for possession/use.', 'Includes electronic/process forms as per text.'],
-  relatedTopics: ['s-336', 's-2', 's-318'],
+  "misconceptions": [
+    {
+      "id": "bns-340-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 340."
+    },
+    {
+      "id": "bns-340-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-340-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-340-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 340 (Forged document or electronic record and using it as genuine)",
+      "answer": "Introduction. BNS s. 340 deals with Forged document or electronic record and using it as genuine. It sits in Chapter XVIII — Of Offences Relating to Documents and to Property Marks of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Forged document or electronic record and using it as genuine. BNS restatement of IPC 471. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 471. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 340 is the rule on “Forged document or electronic record and using it as genuine”. The section provides that (1) A false document or electronic record made wholly or in part by forgery is designated a forged document or electronic record. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) A false document or electronic record made wholly or in part by forgery is designated a forged document or electronic record\n2. (2) Whoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be a forged document or electronic record, shall be punished in the same manner as if he had forged such document or electronic record\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 340. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 340 is the complete current-law heading for Forged document or electronic record and using it as genuine. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-340-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 340 (Forged document or electronic record and using it as genuine) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 340 deals with Forged document or electronic record and using it as genuine. It sits in Chapter XVIII — Of Offences Relating to Documents and to Property Marks of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Forged document or electronic record and using it as genuine. BNS restatement of IPC 471. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 471. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 340 is the rule on “Forged document or electronic record and using it as genuine”. The section provides that (1) A false document or electronic record made wholly or in part by forgery is designated a forged document or electronic record. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) A false document or electronic record made wholly or in part by forgery is designated a forged document or electronic record\n2. (2) Whoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be a forged document or electronic record, shall be punished in the same manner as if he had forged such document or electronic record\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 340. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 340 is the complete current-law heading for Forged document or electronic record and using it as genuine. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. False documents, forgery, using a forged electronic record, property marks.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 340. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 340.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 340 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 340 (Forged document or electronic record and using it as genuine).",
+      "steps": [
+        "Introduce BNS s. 340 and Chapter XVIII — Of Offences Relating to Documents and to Property Marks.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 340."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 340 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 340, Forged document or electronic record and using it as genuine.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 340: Forged document or electronic record and using it as genuine.",
+    "First ingredient: (1) A false document or electronic record made wholly or in part by forgery is designated a forged document or electronic record",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 340 — Forged document or electronic record and using it as genuine. Older books and judgments may still print a historical number (471). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

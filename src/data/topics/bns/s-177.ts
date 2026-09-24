@@ -1,24 +1,135 @@
 import type { TopicContent } from '../loadTopicContent'
+
 const content: TopicContent = {
- glance:'BNS Section 177: Failure to keep election accounts. Historical IPC concordance: 171I.',
- study:`Section 177 — Failure to keep election accounts.\\n\\nThe enacted BNS text governs post-1 July 2024 conduct. Historical IPC 171I is concordance only. Read every proviso, explanation and qualification; earlier conduct requires separate repeal-and-savings and Article 20(1) analysis.`,
- sections:[
- {id:'s-177-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:['Chapter x where applicable to coin/currency offences; election provisions are in Chapter ix.','Failure to keep election accounts forms part of the BNS statutory scheme governing the specified conduct.','Historical IPC concordance: 171I. Use it only for comparative research.','Read the section with connected definitions, offences and punishment provisions.']},
- {id:'s-177-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:['Operative provision: BNS s. 177 — Failure to keep election accounts.','Identify the protected object, prohibited act, required circumstance and mental element in the enacted wording.','For election expenditure/accounts, identify the candidate, election, authority or legal duty. For currency/stamp matters, establish the nature and status of the relevant instrument.','Apply all provisos and explanations before concluding liability.']},
- {id:'s-177-m3',title:'Mandatory Proving Ingredients & Issue-Spotting',order:3,content:['Break the provision into material ingredients before applying facts.','Map each fact to a specific statutory ingredient and identify the supporting evidence.','For counterfeit/forged instruments, prove the character of the object and the accused’s required knowledge or intention where prescribed.','For election accounts/payments, establish the legal duty or authority, purpose, amount and timing where relevant.']},
- {id:'s-177-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:['The prosecution ordinarily bears the burden of proving the charged ingredients beyond reasonable doubt, subject to applicable statutory burdens.','Establish object identity, source, condition and chain of custody where physical instruments are disputed.','Preserve financial/election records and complete communications; digital evidence must satisfy applicable BSA 2023 rules.','Separate admissibility, authenticity, relevance and weight.']},
- {id:'s-177-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:['Check the BNSS First Schedule and enacted punishment for cognizability, bailability and competent trial court.','Check jurisdiction, charge framing/joinder and statutory preconditions.','For election offences, verify applicable election law/rules; for currency/stamp offences, identify competent technical records.','Check applicable BNSS limitation rules and the date of conduct.','For pre-1 July 2024 conduct, separately analyze repeal, savings and Article 20(1).']}
- ],
- provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-177',section:'s. 177',title:'Failure to keep election accounts'}],
- examples:[{id:'s-177-ex1',title:'Ingredients established',illustrationType:'practical',description:'The record establishes the statutory act, object/status, mental element and required circumstances.'},{id:'s-177-ex2',title:'Critical ingredient missing',illustrationType:'fail-scenario',description:'The facts resemble the provision but a required object, duty, authority, mental element or evidentiary link is not established.'}],
- hypotheticals:[{id:'s-177-hypo',title:'Chamber problem — BNS s. 177',facts:'The prosecution invokes BNS s. 177; the defence disputes a material statutory ingredient and the evidence relied upon to prove it.',question:'Does the proved record satisfy BNS s. 177?',applicableLaw:'BNS s. 177; connected BNS provisions; BNSS procedure; BSA 2023 evidence rules.',analysis:'Identify the enacted test; separate ingredients; establish the relevant object/status/duty; map admissible evidence; apply provisos and exceptions; verify current BNSS procedure.',conclusion:'Liability follows only if every material statutory ingredient is established on admissible evidence.'}],
- distinctions:[{id:'s-177-dist',title:'BNS provision vs historical IPC concordance',left:'BNS s. 177',right:'Historical IPC: 171I',rows:[{point:'Governing text',left:'Enacted BNS wording',right:'Historical concordance only'},{point:'Proof',left:'Current statutory ingredients',right:'Do not assume identical scope or mental element'},{point:'Procedure',left:'Current BNSS classification',right:'Old CrPC classification is not automatically controlling'}]}],
- misconceptions:[{id:'s-177-trap',trap:'The historical IPC number is the current legal test.',correction:'The enacted BNS wording governs post-commencement conduct.'},{id:'s-177-trap2',trap:'Possession, payment or an election-record irregularity automatically proves the offence.',correction:'The statutory object, duty, authority, mental element and other qualifications must be proved.'}],
- cases:[],
- questionsAndAnswers:[{id:'s-177-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment under BNS s. 177.',answer:`I. ISSUE.\\nII. RULE.\\nIII. EVIDENCE.\\nIV. PROCEDURE.\\nV. APPLICATION.\\nVI. CONCLUSION.`,explanation:'Chamber-style analysis without unverified authorities.'},{id:'s-177-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 177.',answer:`I. STATUTORY SCHEME.\\nII. INGREDIENTS.\\nIII. EVIDENCE AND BURDEN.\\nIV. DEFENCE / PROVISO.\\nV. PROCEDURE.\\nVI. CONCLUSION.`,explanation:'Courtroom structure without fabricated case law.'}],
- bareActPointers:['BNS s. 177 — Failure to keep election accounts','Historical IPC concordance: 171I','BNSS First Schedule','BSA 2023 evidence provisions','Applicable election law/rules where relevant'],
- examTips:['Start with enacted BNS wording.','Use IPC numbering only as historical concordance.','Prove the object/status/duty and mental element separately.','Cross-check BNSS procedure.'],
- revisionPoints:['BNS s. 177: Failure to keep election accounts.','Historical IPC concordance: 171I.','Apply enacted BNS text for post-commencement conduct.'],
- relatedTopics:[]
+  "study": "Introduction and meaning\nFailure to keep election accounts. BNS restatement of IPC 171-I. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 171-I. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 177 is the rule on “Failure to keep election accounts”. The section provides that whoever being required by any law for the time being in force or any rule having the force of law to keep accounts of expenses incurred at or in connection with an election fails to keep such accounts shall be punished with fine which may extend to five thousand rupees. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 177 exists so that “Failure to keep election accounts” has a closed legal test in Chapter IX — Of Offences Relating to Elections. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Bribery, undue influence, personation, and election accounts.\n\nThe provision in detail\n177. Whoever being required by any law for the time being in force or any rule having the force of law to keep accounts of expenses incurred at or in connection with an election fails to keep such accounts shall be punished with fine which may extend to five thousand rupees\n\nCHAPTER X - OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS\n\nCHAPTER X\n\nOF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS\n\nEssential ingredients\n1. Whoever being required by any law for the time being in force or any rule having the force of law to keep accounts of expenses incurred at or in connection with an election fails to keep such accounts shall be punished with fine which may extend to five thousand rupees\n2. CHAPTER X - OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS\n3. OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+  "glance": "BNS s. 177 — Failure to keep election accounts.",
+  "sections": [
+    {
+      "id": "bns-177-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "177. Whoever being required by any law for the time being in force or any rule having the force of law to keep accounts of expenses incurred at or in connection with an election fails to keep such accounts shall be punished with fine which may extend to five thousand rupees",
+        "CHAPTER X - OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+        "CHAPTER X",
+        "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS"
+      ]
+    },
+    {
+      "id": "bns-177-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever being required by any law for the time being in force or any rule having the force of law to keep accounts of expenses incurred at or in connection with an election fails to keep such accounts shall be punished with fine which may extend to five thousand rupees",
+        "CHAPTER X - OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+        "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "bns-177-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Failure to keep election accounts”. Name BNS s. 177, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-177-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 177 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-177-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Failure to keep election accounts” under BNS s. 177 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 177 (Failure to keep election accounts) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 177. Chapter IX — Of Offences Relating to Elections. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 177 (Failure to keep election accounts), Chapter IX — Of Offences Relating to Elections.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever being required by any law for the time being in force or any rule having the force of law to keep accounts of expenses incurred at or in connection with an election fails to keep such accounts shall be punished with fine which may extend to five thousand rupees\n   (2) CHAPTER X - OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS\n   (3) OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 177 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 177 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 177. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-177-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 177."
+    },
+    {
+      "id": "bns-177-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-177-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-177-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 177 (Failure to keep election accounts)",
+      "answer": "Introduction. BNS s. 177 deals with Failure to keep election accounts. It sits in Chapter IX — Of Offences Relating to Elections of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Failure to keep election accounts. BNS restatement of IPC 171-I. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 171-I. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 177 is the rule on “Failure to keep election accounts”. The section provides that whoever being required by any law for the time being in force or any rule having the force of law to keep accounts of expenses incurred at or in connection with an election fails to keep such accounts shall be punished with fine which may extend to five thousand rupees. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever being required by any law for the time being in force or any rule having the force of law to keep accounts of expenses incurred at or in connection with an election fails to keep such accounts shall be punished with fine which may extend to five thousand rupees\n2. CHAPTER X - OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS\n3. OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 177. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 177 is the complete current-law heading for Failure to keep election accounts. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-177-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 177 (Failure to keep election accounts) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 177 deals with Failure to keep election accounts. It sits in Chapter IX — Of Offences Relating to Elections of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Failure to keep election accounts. BNS restatement of IPC 171-I. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 171-I. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 177 is the rule on “Failure to keep election accounts”. The section provides that whoever being required by any law for the time being in force or any rule having the force of law to keep accounts of expenses incurred at or in connection with an election fails to keep such accounts shall be punished with fine which may extend to five thousand rupees. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever being required by any law for the time being in force or any rule having the force of law to keep accounts of expenses incurred at or in connection with an election fails to keep such accounts shall be punished with fine which may extend to five thousand rupees\n2. CHAPTER X - OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS\n3. OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 177. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 177 is the complete current-law heading for Failure to keep election accounts. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Bribery, undue influence, personation, and election accounts.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 177. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 177.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 177 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 177 (Failure to keep election accounts).",
+      "steps": [
+        "Introduce BNS s. 177 and Chapter IX — Of Offences Relating to Elections.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 177."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 177 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 177, Failure to keep election accounts.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 177: Failure to keep election accounts.",
+    "First ingredient: Whoever being required by any law for the time being in force or any rule having the force of law to keep accounts of expenses incurred at or in connection with an election fails to keep such accounts shall be punished with fine which may extend to five thousand rupees",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 177 — Failure to keep election accounts. Older books and judgments may still print a historical number (171-I). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
+
 export default content

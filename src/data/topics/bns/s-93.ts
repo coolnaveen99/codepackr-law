@@ -1,32 +1,138 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 93 (and related child-protection provisions): exposure and abandonment of a child under twelve years by a parent or person having care — leaving the child with intent wholly to abandon it. Successor to IPC s. 317. Distinct from using a child to commit an offence (s. 95) and from the general incapacity rules (ss. 20–21).',
-  study: `Exposure and abandonment of a child under the BNS:\n\nWhoever, being the father or mother of a child under the age of twelve years, or having the care of such child, exposes or leaves such child in any place with the intention of wholly abandoning such child, is punished as provided (and if the act causes the death of the child, additional homicide liability may arise).\n\nKey points\n• Child under twelve.\n• Accused is parent or person having care.\n• Exposure or leaving with intent wholly to abandon.\n\nIf death results, ss. 100–106 may also apply depending on mens rea.\n\nCite the applicable BNS section for post-1 July 2024 acts.`,
-  sections: [
-    { id: 's-93-m1', title: 'Provenance', order: 1, content: ['Successor to IPC s. 317. Exposure/abandonment of child under twelve by parent or carer.'] },
-    { id: 's-93-m2', title: 'Elements', order: 2, content: ['Child under 12; parent or person having care; exposes or leaves with intent wholly to abandon.'] },
-    { id: 's-93-m3', title: 'Ingredients', order: 3, content: ['(1) Child under twelve. (2) Accused is parent or carer. (3) Exposure or leaving. (4) Intent wholly to abandon.'] },
-    { id: 's-93-m4', title: 'Evidence', order: 4, content: ['Age; relationship/care; circumstances of leaving; intention to abandon.'] },
-    { id: 's-93-m5', title: 'Procedure', order: 5, content: ['May be joined with homicide charges if death results; juvenile/child-protection processes may also engage.'] },
+  "study": "Introduction and meaning\nExposure and abandonment of child under twelve years of age, by parent or person having care of it. BNS restatement of IPC 317. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 317. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 93 is the rule on “Exposure and abandonment of child under twelve years of age, by parent or person having care of it”. The section provides that whoever being the father or mother of a child under the age of twelve years, or having the care of such child, shall expose or leave such child in any place with the intention of wholly abandoning such child, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 93 exists so that “Exposure and abandonment of child under twelve years of age, by parent or person having care of it” has a closed legal test in Chapter V — Of Offences Against Woman and Child. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.\n\nThe provision in detail\n93. Whoever being the father or mother of a child under the age of twelve years, or having the care of such child, shall expose or leave such child in any place with the intention of wholly abandoning such child, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both\n\nEssential ingredients\n1. Whoever being the father or mother of a child under the age of twelve years, or having the care of such child, shall expose or leave such child in any place with the intention of wholly abandoning such child, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both\n\nExplanations\nExplanation.—This section is not intended to prevent the trial of the offender for murder or culpable homicide, as the case may be, if the child die in consequence of the exposure",
+  "glance": "BNS s. 93 — Exposure and abandonment of child under twelve years of age, by parent or person having care of it.",
+  "sections": [
+    {
+      "id": "bns-93-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "93. Whoever being the father or mother of a child under the age of twelve years, or having the care of such child, shall expose or leave such child in any place with the intention of wholly abandoning such child, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both"
+      ]
+    },
+    {
+      "id": "bns-93-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever being the father or mother of a child under the age of twelve years, or having the care of such child, shall expose or leave such child in any place with the intention of wholly abandoning such child, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both"
+      ]
+    },
+    {
+      "id": "bns-93-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation.—This section is not intended to prevent the trial of the offender for murder or culpable homicide, as the case may be, if the child die in consequence of the exposure"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-93', section: 's. 93', title: 'Exposure and abandonment of child under twelve years by parent or person having care of it' }],
-  examples: [
-    { id: 's-93-ex1', title: 'Abandonment', illustrationType: 'practical', description: 'A parent leaves a two-year-old in a remote place intending never to return. The offence is made out.' },
-    { id: 's-93-ex2', title: 'Temporary leaving without abandon intent', illustrationType: 'fail-scenario', description: 'A parent briefly leaves a child with a neighbour. No intent wholly to abandon — the offence is not made out.' },
+  "examples": [
+    {
+      "id": "bns-93-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Exposure and abandonment of child under twelve years of age, by parent or person having care of it”. Name BNS s. 93, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-93-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 93 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-93-hypo', title: 'Abandonment intent', facts: 'Parent leaves an infant at a temple with no arrangement for care and does not return.', question: 'Is the offence made out?', applicableLaw: 'BNS exposure/abandonment provisions.', analysis: 'Child under 12; parent; leaving with intent wholly to abandon — yes.', conclusion: 'Offence established.' }],
-  distinctions: [],
-  misconceptions: [{ id: 's-93-trap', trap: 'Any leaving of a child is this offence.', correction: 'The intent wholly to abandon is essential. Temporary or arranged care does not constitute the offence.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-93-brief', draftingCategory: 'brief', question: 'Explain exposure and abandonment of a child under the BNS.', answer: 'A parent or person having care of a child under twelve who exposes or leaves the child with the intention of wholly abandoning the child commits the offence. If death results, homicide provisions may also apply.', explanation: 'Short note.' },
-    { id: 's-93-sub', draftingCategory: 'submissions', question: 'Submissions on abandonment of child.', answer: 'I. Child under 12. II. Parent/carer. III. Intent wholly to abandon. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-93-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Exposure and abandonment of child under twelve years of age, by parent or person having care of it” under BNS s. 93 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 93 (Exposure and abandonment of child under twelve years of age, by parent or person having care of it) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 93. Chapter V — Of Offences Against Woman and Child. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 93 (Exposure and abandonment of child under twelve years of age, by parent or person having care of it), Chapter V — Of Offences Against Woman and Child.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever being the father or mother of a child under the age of twelve years, or having the care of such child, shall expose or leave such child in any place with the intention of wholly abandoning such child, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 93 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 93. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS exposure/abandonment provisions', 'BNS s. 95', 'BNS ss. 20–21', 'IPC s. 317 (historical)'],
-  examTips: ['Stress intent wholly to abandon and the under-twelve age.', 'Link to homicide if death results.'],
-  revisionPoints: ['Parent/carer + child under 12 + intent wholly to abandon.', 'Death may attract homicide sections.', 'Temporary leaving ≠ abandonment.'],
-  relatedTopics: ['s-95', 's-20', 's-100', 's-2'],
+  "misconceptions": [
+    {
+      "id": "bns-93-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 93."
+    },
+    {
+      "id": "bns-93-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-93-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-93-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 93 (Exposure and abandonment of child under twelve years of age, by parent or person having care of it)",
+      "answer": "Introduction. BNS s. 93 deals with Exposure and abandonment of child under twelve years of age, by parent or person having care of it. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Exposure and abandonment of child under twelve years of age, by parent or person having care of it. BNS restatement of IPC 317. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 317. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 93 is the rule on “Exposure and abandonment of child under twelve years of age, by parent or person having care of it”. The section provides that whoever being the father or mother of a child under the age of twelve years, or having the care of such child, shall expose or leave such child in any place with the intention of wholly abandoning such child, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever being the father or mother of a child under the age of twelve years, or having the care of such child, shall expose or leave such child in any place with the intention of wholly abandoning such child, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—This section is not intended to prevent the trial of the offender for murder or culpable homicide, as the case may be, if the child die in consequence of the exposure An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 93. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 93 is the complete current-law heading for Exposure and abandonment of child under twelve years of age, by parent or person having care of it. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-93-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 93 (Exposure and abandonment of child under twelve years of age, by parent or person having care of it) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 93 deals with Exposure and abandonment of child under twelve years of age, by parent or person having care of it. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Exposure and abandonment of child under twelve years of age, by parent or person having care of it. BNS restatement of IPC 317. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 317. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 93 is the rule on “Exposure and abandonment of child under twelve years of age, by parent or person having care of it”. The section provides that whoever being the father or mother of a child under the age of twelve years, or having the care of such child, shall expose or leave such child in any place with the intention of wholly abandoning such child, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever being the father or mother of a child under the age of twelve years, or having the care of such child, shall expose or leave such child in any place with the intention of wholly abandoning such child, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—This section is not intended to prevent the trial of the offender for murder or culpable homicide, as the case may be, if the child die in consequence of the exposure An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 93. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 93 is the complete current-law heading for Exposure and abandonment of child under twelve years of age, by parent or person having care of it. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 93. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 93.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 93 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 93 (Exposure and abandonment of child under twelve years of age, by parent or person having care of it).",
+      "steps": [
+        "Introduce BNS s. 93 and Chapter V — Of Offences Against Woman and Child.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 93."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 93 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 93, Exposure and abandonment of child under twelve years of age, by parent or person having care of it.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 93: Exposure and abandonment of child under twelve years of age, by parent or person having care of it.",
+    "First ingredient: Whoever being the father or mother of a child under the age of twelve years, or having the care of such child, shall expose or leave such child in any place with the intention of wholly abandoning such child, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 93 — Exposure and abandonment of child under twelve years of age, by parent or person having care of it. Older books and judgments may still print a historical number (317). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

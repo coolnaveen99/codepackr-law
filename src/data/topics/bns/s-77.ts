@@ -1,32 +1,147 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 77: stalking — a man who follows a woman and contacts, or attempts to contact, her repeatedly despite a clear indication of disinterest, or monitors her use of the internet/email/communication, commits stalking (subject to exceptions such as prevention/detection of crime, compliance with law, or reasonable conduct). Successor structure to IPC s. 354D.',
-  study: `Stalking under the BNS:\n\nA man commits stalking if he:\n• follows a woman and contacts, or attempts to contact, such woman to foster personal interaction repeatedly despite a clear indication of disinterest by such woman; or\n• monitors the use by a woman of the internet, email, or any other form of electronic communication.\n\nExceptions typically include conduct for prevention or detection of crime authorised by law, compliance with a legal condition, or other reasonable conduct as specified.\n\nFirst conviction and subsequent convictions may carry different maxima.\n\nCite the applicable BNS section for post-1 July 2024 acts. Distinguish from sexual harassment (s. 75) and from criminal intimidation (s. 351).`,
-  sections: [
-    { id: 's-77-m1', title: 'Provenance', order: 1, content: ['Successor structure to IPC s. 354D. Repeated contact despite disinterest, or monitoring of electronic communication.'] },
-    { id: 's-77-m2', title: 'Two Limbs', order: 2, content: ['(1) Following and repeated contact/attempt to contact despite clear disinterest. (2) Monitoring internet/email/electronic communication.'] },
-    { id: 's-77-m3', title: 'Ingredients', order: 3, content: ['(1) Conduct within a limb. (2) Clear indication of disinterest (for the follow/contact limb). (3) No exception applies.'] },
-    { id: 's-77-m4', title: 'Evidence', order: 4, content: ['Pattern of following/contact; indication of disinterest; electronic monitoring evidence; identity.'] },
-    { id: 's-77-m5', title: 'Procedure', order: 5, content: ['Forum per BNSS Schedule; subsequent conviction may attract higher punishment.'] },
+  "study": "Introduction and meaning\nVoyeurism. BNS restatement of IPC 354C. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 354C. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 77 is the rule on “Voyeurism”. The section provides that whoever watches, or captures the image of a woman engaging in a private act in circumstances where she would usually have the expectation of not being observed either by the perpetrator or by any other person at the behest of the perpetrator or disseminates such image shall be punished on first conviction with imprisonment of either description for a term which shall not be less than one year, but which may extend to three years, and shall also be liable to fine, and be punished on a second or subsequent conviction, with imprisonment of either description for a term which shall not be less than three years, but which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 77 exists so that “Voyeurism” has a closed legal test in Chapter V — Of Offences Against Woman and Child. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.\n\nThe provision in detail\n77. Whoever watches, or captures the image of a woman engaging in a private act in circumstances where she would usually have the expectation of not being observed either by the perpetrator or by any other person at the behest of the perpetrator or disseminates such image shall be punished on first conviction with imprisonment of either description for a term which shall not be less than one year, but which may extend to three years, and shall also be liable to fine, and be punished on a second or subsequent conviction, with imprisonment of either description for a term which shall not be less than three years, but which may extend to seven years, and shall also be liable to fine\n\nDefinitions and key terms\n“private act” — an act of watching carried out in a place which, in the circumstances, would reasonably be expected to provide privacy and where the victim’s genitals, posterior or breasts are exposed or covered only in underwear.\n\nEssential ingredients\n1. Whoever watches, or captures the image of a woman engaging in a private act in circumstances where she would usually have the expectation of not being observed either by the perpetrator or by any other person at the behest of the perpetrator or disseminates such image shall be punished on first conviction with imprisonment of either description for a term which shall not be less than one year, but which may extend to three years, and shall also be liable to fine, and be punished on a second or subsequent conviction, with imprisonment of either description for a term which shall not be less than three years, but which may extend to seven years, and shall also be liable to fine\n\nExplanations\nExplanation 1.—For the purposes of this section, “private act” includes an act of watching carried out in a place which, in the circumstances, would reasonably be expected to provide privacy and where the victim’s genitals, posterior or breasts are exposed or covered only in underwear; or the victim is using a lavatory; or the victim is doing a sexual act that is not of a kind ordinarily done in public\n\nExplanation 2.—Where the victim consents to the capture of the images or any act, but not to their dissemination to third persons and where such image or act is disseminated, such dissemination shall be considered an offence under this section",
+  "glance": "BNS s. 77 — Voyeurism.",
+  "sections": [
+    {
+      "id": "bns-77-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "77. Whoever watches, or captures the image of a woman engaging in a private act in circumstances where she would usually have the expectation of not being observed either by the perpetrator or by any other person at the behest of the perpetrator or disseminates such image shall be punished on first conviction with imprisonment of either description for a term which shall not be less than one year, but which may extend to three years, and shall also be liable to fine, and be punished on a second or subsequent conviction, with imprisonment of either description for a term which shall not be less than three years, but which may extend to seven years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-77-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever watches, or captures the image of a woman engaging in a private act in circumstances where she would usually have the expectation of not being observed either by the perpetrator or by any other person at the behest of the perpetrator or disseminates such image shall be punished on first conviction with imprisonment of either description for a term which shall not be less than one year, but which may extend to three years, and shall also be liable to fine, and be punished on a second or subsequent conviction, with imprisonment of either description for a term which shall not be less than three years, but which may extend to seven years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-77-defs",
+      "title": "Definitions and key terms",
+      "order": 3,
+      "content": [
+        "“private act” — an act of watching carried out in a place which, in the circumstances, would reasonably be expected to provide privacy and where the victim’s genitals, posterior or breasts are exposed or covered only in underwear."
+      ]
+    },
+    {
+      "id": "bns-77-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation 1.—For the purposes of this section, “private act” includes an act of watching carried out in a place which, in the circumstances, would reasonably be expected to provide privacy and where the victim’s genitals, posterior or breasts are exposed or covered only in underwear; or the victim is using a lavatory; or the victim is doing a sexual act that is not of a kind ordinarily done in public",
+        "Explanation 2.—Where the victim consents to the capture of the images or any act, but not to their dissemination to third persons and where such image or act is disseminated, such dissemination shall be considered an offence under this section"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-77', section: 's. 77', title: 'Stalking' }],
-  examples: [
-    { id: 's-77-ex1', title: 'Repeated contact despite disinterest', illustrationType: 'practical', description: 'A repeatedly messages and follows B after B has clearly indicated she does not want contact. Stalking is made out.' },
-    { id: 's-77-ex2', title: 'Authorised monitoring', illustrationType: 'fail-scenario', description: 'Lawful monitoring by an authorised officer for prevention of crime falls within an exception and is not stalking.' },
+  "examples": [
+    {
+      "id": "bns-77-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Voyeurism”. Name BNS s. 77, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-77-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 77 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-77-hypo', title: 'Electronic monitoring', facts: 'Accused secretly monitors a woman’s email and social media without authority.', question: 'Is stalking made out?', applicableLaw: 'BNS stalking provisions.', analysis: 'Monitoring electronic communication is a listed limb; absent an exception — yes.', conclusion: 'Stalking established.' }],
-  distinctions: [{ id: 's-77-dist', title: 'Stalking vs Sexual harassment vs Criminal intimidation', left: 'Stalking', right: 'Sexual harassment / Criminal intimidation', rows: [{ point: 'Focus', left: 'Repeated contact despite disinterest, or electronic monitoring', right: 'Listed sexual-harassment limbs / threat of injury to alarm or compel' }] }],
-  misconceptions: [{ id: 's-77-trap', trap: 'One unwanted message is stalking.', correction: 'The follow/contact limb requires repeated contact or attempts despite a clear indication of disinterest. A single contact is generally not enough.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-77-brief', draftingCategory: 'brief', question: 'Define stalking under the BNS.', answer: 'A man commits stalking if he follows a woman and contacts or attempts to contact her repeatedly despite a clear indication of disinterest, or monitors her use of the internet, email, or other electronic communication, subject to statutory exceptions (e.g. authorised prevention of crime).', explanation: 'Short note.' },
-    { id: 's-77-sub', draftingCategory: 'submissions', question: 'Submissions on stalking.', answer: 'I. Limb (follow/contact or monitoring). II. Clear disinterest where relevant. III. No exception. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-77-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Voyeurism” under BNS s. 77 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 77 (Voyeurism) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 77. Chapter V — Of Offences Against Woman and Child. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 77 (Voyeurism), Chapter V — Of Offences Against Woman and Child.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever watches, or captures the image of a woman engaging in a private act in circumstances where she would usually have the expectation of not being observed either by the perpetrator or by any other person at the behest of the perpetrator or disseminates such image shall be punished on first conviction with imprisonment of either description for a term which shall not be less than one year, but which may extend to three years, and shall also be liable to fine, and be punished on a second or subsequent conviction, with imprisonment of either description for a term which shall not be less than three years, but which may extend to seven years, and shall also be liable to fine\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 77 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 77. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS stalking provisions', 'BNS s. 75', 'BNS s. 351', 'IPC s. 354D (historical)'],
-  examTips: ['State both limbs and the need for clear indication of disinterest for the contact limb.', 'Mention exceptions for authorised conduct.'],
-  revisionPoints: ['Repeated contact despite disinterest, or electronic monitoring.', 'Clear indication of disinterest required for contact limb.', 'Exceptions for lawful/authorised conduct.'],
-  relatedTopics: ['s-75', 's-351', 's-64', 's-28'],
+  "misconceptions": [
+    {
+      "id": "bns-77-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 77."
+    },
+    {
+      "id": "bns-77-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-77-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-77-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 77 (Voyeurism)",
+      "answer": "Introduction. BNS s. 77 deals with Voyeurism. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Voyeurism. BNS restatement of IPC 354C. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 354C. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 77 is the rule on “Voyeurism”. The section provides that whoever watches, or captures the image of a woman engaging in a private act in circumstances where she would usually have the expectation of not being observed either by the perpetrator or by any other person at the behest of the perpetrator or disseminates such image shall be punished on first conviction with imprisonment of either description for a term which shall not be less than one year, but which may extend to three years, and shall also be liable to fine, and be punished on a second or subsequent conviction, with imprisonment of either description for a term which shall not be less than three years, but which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever watches, or captures the image of a woman engaging in a private act in circumstances where she would usually have the expectation of not being observed either by the perpetrator or by any other person at the behest of the perpetrator or disseminates such image shall be punished on first conviction with imprisonment of either description for a term which shall not be less than one year, but which may extend to three years, and shall also be liable to fine, and be punished on a second or subsequent conviction, with imprisonment of either description for a term which shall not be less than three years, but which may extend to seven years, and shall also be liable to fine\n\nDefinitions. The core statutory definitions must be established:\n“private act” an act of watching carried out in a place which, in the circumstances, would reasonably be expected to provide privacy and where the victim’s genitals, posterior or breasts are exposed or covered only in underwear.\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation 1.—For the purposes of this section, “private act” includes an act of watching carried out in a place which, in the circumstances, would reasonably be expected to provide privacy and where the victim’s genitals, posterior or breasts are exposed or covered only in underwear; or the victim is using a lavatory; or the victim is doing a sexual act that is not of a kind ordinarily done in public An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 77. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 77 is the complete current-law heading for Voyeurism. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-77-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 77 (Voyeurism) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 77 deals with Voyeurism. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Voyeurism. BNS restatement of IPC 354C. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 354C. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 77 is the rule on “Voyeurism”. The section provides that whoever watches, or captures the image of a woman engaging in a private act in circumstances where she would usually have the expectation of not being observed either by the perpetrator or by any other person at the behest of the perpetrator or disseminates such image shall be punished on first conviction with imprisonment of either description for a term which shall not be less than one year, but which may extend to three years, and shall also be liable to fine, and be punished on a second or subsequent conviction, with imprisonment of either description for a term which shall not be less than three years, but which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever watches, or captures the image of a woman engaging in a private act in circumstances where she would usually have the expectation of not being observed either by the perpetrator or by any other person at the behest of the perpetrator or disseminates such image shall be punished on first conviction with imprisonment of either description for a term which shall not be less than one year, but which may extend to three years, and shall also be liable to fine, and be punished on a second or subsequent conviction, with imprisonment of either description for a term which shall not be less than three years, but which may extend to seven years, and shall also be liable to fine\n\nDefinitions. The core statutory definitions must be established:\n“private act” an act of watching carried out in a place which, in the circumstances, would reasonably be expected to provide privacy and where the victim’s genitals, posterior or breasts are exposed or covered only in underwear.\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation 1.—For the purposes of this section, “private act” includes an act of watching carried out in a place which, in the circumstances, would reasonably be expected to provide privacy and where the victim’s genitals, posterior or breasts are exposed or covered only in underwear; or the victim is using a lavatory; or the victim is doing a sexual act that is not of a kind ordinarily done in public An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 77. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 77 is the complete current-law heading for Voyeurism. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 77. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 77.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 77 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 77 (Voyeurism).",
+      "steps": [
+        "Introduce BNS s. 77 and Chapter V — Of Offences Against Woman and Child.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 77."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 77 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 77, Voyeurism.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 77: Voyeurism.",
+    "First ingredient: Whoever watches, or captures the image of a woman engaging in a private act in circumstances where she would usually have the expectation of not being observed either by the perpetrator or by any other person at the behest of the perpetrator or disseminates such image shall be punished on first conviction with imprisonment of either description for a term which shall not be less than one year, but which may extend to three years, and shall also be liable to fine, and be punished on a second or subsequent conviction, with imprisonment of either description for a term which shall not be less than three years, but which may extend to seven years, and shall also be liable to fine",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 77 — Voyeurism. Older books and judgments may still print a historical number (354C). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

@@ -1,5 +1,5 @@
-import { cpcOrderById, CPC_ORDERS } from '../../cpc/orders'
-import { cpcSectionById, CPC_SECTIONS } from '../../cpc/sections'
+import { cpcOrderById } from '../../cpc/orders'
+import { cpcSectionById } from '../../cpc/sections'
 import type { TopicContent } from '../topicTypes'
 import { synthesizeCpcContent } from '../synthesizeCpc'
 
@@ -14,7 +14,6 @@ export function createCpcTopic(topicId: string): TopicContent {
   const section = sectionId ? cpcSectionById(sectionId) : undefined
   const order = orderId ? cpcOrderById(orderId) : undefined
   const kind = section ? 'section' : 'order'
-  const id = section?.id || order?.id || topicId
   const title = section?.title || order?.title || topicId
   const cluster = section?.cluster || order?.cluster || 'Civil procedure'
   const related = section?.related || []

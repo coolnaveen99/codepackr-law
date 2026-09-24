@@ -1,30 +1,233 @@
 import type { TopicContent } from '../loadTopicContent'
+
 const content: TopicContent = {
- glance:"BNS Section 314: Dishonest misappropriation of property. Historical IPC concordance: s. 403.",
- study:"Section 314 — Dishonest misappropriation of property. Apply the enacted BNS text and its explanations, provisos and illustrations. Historical IPC concordance: s. 403. Historical numbering is comparative only; for post-1 July 2024 conduct the BNS governs. Focus on the property offence architecture: possession, dishonest intention, movement or delivery, force/fear, entrustment or deception as applicable, and the aggravating statutory circumstances. Coordinate substantive analysis with the BNSS 2023 procedural framework and the BSA 2023 rules on admissibility, proof, electronic records and presumptions where relevant.",
- sections:[
- {id:'s-314-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:["BNS Chapter xvii — Criminal misappropriation.","BNS s. 314: Dishonest misappropriation of property.","Historical IPC concordance: s. 403.","Protected interest and legislative function: Focus on the property offence architecture: possession, dishonest intention, movement or delivery, force/fear, entrustment or deception as applicable, and the aggravating statutory circumstances."],
- {id:'s-314-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:["Start with the operative verbs, required status or circumstance, object of the offence and any qualifying words in s. 314.","Separate mandatory elements from illustrations, explanations, provisos and punishment clauses.","Do not enlarge the offence by analogy: every material ingredient must be anchored in the enacted text.","For offences involving documents, electronic records, custody, public proceedings or public authority, identify the precise statutory trigger before moving to evidence."],
- {id:'s-314-m3',title:'Mandatory Proving Ingredients & Issue-Spotting',order:3,content:["Build an ingredient matrix: conduct; object or victim; required circumstance/status; mens rea; causation/materiality where required; and any aggravating fact.","Map each ingredient to a fact capable of being proved by admissible evidence.","Test alternative explanations and distinguish mere irregularity, mistake, negligence or civil breach from the mental element expressly required by the section.","Where the provision incorporates another section, prove the incorporated element rather than treating the cross-reference as automatic."],
- {id:'s-314-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:["The prosecution ordinarily bears the burden of proving the charged ingredients beyond reasonable doubt, subject to applicable statutory presumptions or burdens.","Apply the BSA 2023 to relevance, admissibility, documentary and electronic evidence, authenticity, integrity and proof of the underlying fact.","For digital evidence, preserve provenance, metadata and chain of custody and distinguish authenticity from the truth or weight of the material.","A contradiction, inconsistency or procedural defect is not automatically the charged offence; connect it to the exact statutory ingredient."],
- {id:'s-314-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:["Identify the BNSS 2023 route for information, investigation, cognizance, complaint requirements, trial and evidence.","Check the current BNSS First Schedule for cognizability, bailability and the competent trial court rather than relying on historical IPC classifications.","For offences linked to courts, public servants, evidence or public justice, verify any special BNSS cognizance restriction or sanction requirement before filing or prosecuting.","Apply the repeal-and-savings framework to pre-1 July 2024 conduct and use current BNS/BNSS/BSA provisions for post-commencement conduct."]
- ],
- provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-314',section:'s. 314',title:"Dishonest misappropriation of property"}],
- examples:[
- {id:'s-314-ex1',title:'Complete statutory proof',illustrationType:'practical',description:"The evidence establishes each material ingredient of s. 314, including the required mental element or circumstance, and the prosecution can connect the admissible evidence to the statutory act. Focus on the property offence architecture: possession, dishonest intention, movement or delivery, force/fear, entrustment or deception as applicable, and the aggravating statutory circumstances."},
- {id:'s-314-ex2',title:'Ingredient not established',illustrationType:'fail-scenario',description:"The record shows suspicious or disputed conduct, but one material ingredient—such as knowledge, intention, authority, materiality, possession, causation or the specified statutory circumstance—remains unproved."}
- ],
- hypotheticals:[{id:'s-314-hypo',title:"Chamber problem — BNS s. 314",facts:"A prosecution invokes s. 314 after a disputed event. The defence accepts the surrounding facts but contests the statutory trigger and the evidentiary basis for the required mental element or circumstance.",question:"Does the evidence satisfy every enacted ingredient of s. 314?",applicableLaw:"BNS s. 314; connected BNS provisions; BNSS 2023; BSA 2023.",analysis:"Identify each ingredient, classify the disputed fact, test admissibility and authenticity, address mens rea and any statutory exception or proviso, then apply the facts without importing an unstated element.",conclusion:"Liability follows only if every material statutory ingredient is proved to the required criminal standard."],
- distinctions:[{id:'s-314-dist',title:'Current BNS provision vs historical IPC concordance',left:"BNS s. 314",right:"Historical IPC s. 403",rows:[{point:'Governing substantive law',left:'Current BNS for post-commencement conduct',right:'Historical comparative material only'},{point:'Evidence framework',left:'BSA 2023',right:'Indian Evidence Act was the former framework'},{point:'Procedure',left:'BNSS 2023',right:'CrPC was the former framework'}]}],
- misconceptions:[{id:'s-314-trap',trap:"Any suspicious, inaccurate or irregular conduct automatically establishes BNS s. 314.",correction:"The prosecution must prove the exact statutory act, circumstances and mental element required by s. 314.",{id:'s-314-trap2',trap:'Historical IPC numbering determines current liability.',correction:'The enacted BNS provision governs post-1 July 2024 conduct; IPC references are for historical concordance only.'}],
- cases:[],
- questionsAndAnswers:[
- {id:'s-314-qa1',draftingCategory:'brief',question:"How should BNS s. 314 be analysed?",answer:"State the enacted rule; isolate every ingredient; identify the relevant status, act, object and mental element; map admissible evidence to each ingredient; address connected BNSS/BSA issues; then apply the facts and conclude.",explanation:'This separates substantive liability from evidentiary and procedural questions.'},
- {id:'s-314-qa2',draftingCategory:'submissions',question:'What should a written submission on this provision contain?',answer:"Issue; statutory text and ingredients; admitted facts; disputed facts; evidence and BSA 2023 objections; BNSS 2023 procedural points; application ingredient-by-ingredient; relief or conclusion.",explanation:'Use verified authorities only. Where no authority has been verified for the repository entry, rely on the enacted text and mark no case-law proposition.'}
- ],
- bareActPointers:["BNS s. 314 — Dishonest misappropriation of property","BNS Chapter xvii","Historical IPC concordance: s. 403.",'BNSS 2023 — applicable procedural and First Schedule provisions','BSA 2023 — applicable relevance, proof and electronic-evidence provisions'],
- examTips:['Begin with the enacted BNS wording and identify every constituent element.','Do not treat the IPC concordance as the governing offence for post-commencement conduct.','Map disputed facts to admissible evidence and address mens rea separately.','Verify the current BNSS procedural classification and BSA evidentiary requirements.'],
- revisionPoints:["s. 314: Dishonest misappropriation of property","Historical IPC concordance: s. 403.",'Current BNS, BNSS 2023 and BSA 2023 govern the modern analysis.','Conviction requires proof of every material ingredient beyond reasonable doubt.'],
- relatedTopics:["s. 313","s. 315"]
+  "study": "Introduction and meaning\nDishonest misappropriation (old 403). Property is already in your possession (unlike theft). Conversion with dishonest intent. BNS restatement of IPC 403. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 314 is the rule on “Dishonest misappropriation of property”. The section provides that . Whoever dishonestly misappropriates or converts to his own use any movable property, shall be punished with imprisonment of either description for a term which shall not be less than six months but which may extend to two years and with fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 314 exists so that “Dishonest misappropriation of property” has a closed legal test in Chapter XVII — Of Offences Against Property. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Theft, snatching, extortion, robbery, dacoity, trust, cheating, mischief, trespass.\n\nThe provision in detail\n314.. Whoever dishonestly misappropriates or converts to his own use any movable property, shall be punished with imprisonment of either description for a term which shall not be less than six months but which may extend to two years and with fine\n\nEssential ingredients\n1. . Whoever dishonestly misappropriates or converts to his own use any movable property, shall be punished with imprisonment of either description for a term which shall not be less than six months but which may extend to two years and with fine\n\nStatutory illustrations\nIllustration (a). A takes property belonging to Z out of Z’s possession, in good faith believing at the time when he takes it, that the property belongs to himself. A is not guilty of theft; but if A, after discovering his mistake, dishonestly appropriates the property to his own use, he is guilty of an offence under this section\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 314 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (b). A, being on friendly terms with Z, goes into Z’s library in Z’s absence, and takes away a book without Z’s express consent. Here, if A was under the impression that he had Z’s implied consent to take the book for the purpose of reading it, A has not committed theft. But, if A afterwards sells the book for his own benefit, he is guilty of an offence under this section\n\nExam use: quote illustration (b), then write which ingredient of BNS s. 314 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (c). A and B, being, joint owners of a horse. A takes the horse out of B’s possession, intending to use it. Here, as A has a right to use the horse, he does not dishonestly misappropriate it. But, if A sells the horse and appropriates the whole proceeds to his own use, he is guilty of an offence under this section\n\nExam use: quote illustration (c), then write which ingredient of BNS s. 314 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (d). A finds a Government promissory note belonging to Z, bearing a blank endorsement. A, knowing that the note belongs to Z, pledges it with a banker as a security for a loan, intending at a future time to restore it to Z. A has committed an offence under this section\n\nExam use: quote illustration (d), then write which ingredient of BNS s. 314 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (e). A finds a rupee on the high road, not knowing to whom the rupee belongs, A picks up the rupee. Here A has not committed the offence defined in this section\n\nExam use: quote illustration (e), then write which ingredient of BNS s. 314 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (f). A finds a letter on the road, containing a bank-note. From the direction and contents of the letter he learns to whom the note belongs. He appropriates the note. He is guilty of an offence under this section\n\nExam use: quote illustration (f), then write which ingredient of BNS s. 314 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (g). A finds a cheque payable to bearer. He can form no conjecture as to the person who has lost the cheque. But the name of the person, who has drawn the cheque, appears. A knows that this person can direct him to the person in whose favour the cheque was drawn. A appropriates the cheque without attempting to discover the owner. He is guilty of an offence under this section\n\nExam use: quote illustration (g), then write which ingredient of BNS s. 314 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (h). A sees Z drop his purse with money in it. A picks up the purse with the intention of restoring it to Z, but afterwards appropriates it to his own use. A has committed an offence under this section\n\nExam use: quote illustration (h), then write which ingredient of BNS s. 314 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (i). A finds a purse with money, not knowing to whom it belongs; he afterwards discovers that it belongs to Z, and appropriates it to his own use. A is guilty of an offence under this section\n\nExam use: quote illustration (i), then write which ingredient of BNS s. 314 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (j). A finds a valuable ring, not knowing to whom it belongs. A sells it immediately without attempting to discover the owner. A is guilty of an offence under this section\n\nExam use: quote illustration (j), then write which ingredient of BNS s. 314 it proves. Copying the illustration without that mapping sentence does not score.\n\nExplanations\nExplanation 1.—A dishonest misappropriation for a time only is a misappropriation within the meaning of this section\n\nExplanation 2.—A person who finds property not in the possession of any other person, and takes such property for the purpose of protecting it for, or of restoring it to, the owner, does not take or misappropriate it dishonestly, and is not guilty of an offence; but he is guilty of the offence above defined, if he appropriates it to his own use, when he knows or has the means of discovering the owner, or before he has used reasonable means to discover and give notice to the owner and has kept the property a reasonable time to enable the owner to claim it\n\nWhat are reasonable means or what is a reasonable time in such a case, is a question of fact\n\nIt is not necessary that the finder should know who is the owner of the property, or that any particular person is the owner of it; it is sufficient if, at the time of appropriating it, he does not believe it to be his own property, or in good faith believe that the real owner cannot be found",
+  "glance": "BNS s. 314 — Dishonest misappropriation of property.",
+  "sections": [
+    {
+      "id": "bns-314-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "314.. Whoever dishonestly misappropriates or converts to his own use any movable property, shall be punished with imprisonment of either description for a term which shall not be less than six months but which may extend to two years and with fine"
+      ]
+    },
+    {
+      "id": "bns-314-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        ". Whoever dishonestly misappropriates or converts to his own use any movable property, shall be punished with imprisonment of either description for a term which shall not be less than six months but which may extend to two years and with fine"
+      ]
+    },
+    {
+      "id": "bns-314-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "(a) A takes property belonging to Z out of Z’s possession, in good faith believing at the time when he takes it, that the property belongs to himself. A is not guilty of theft; but if A, after discovering his mistake, dishonestly appropriates the property to his own use, he is guilty of an offence under this section",
+        "(b) A, being on friendly terms with Z, goes into Z’s library in Z’s absence, and takes away a book without Z’s express consent. Here, if A was under the impression that he had Z’s implied consent to take the book for the purpose of reading it, A has not committed theft. But, if A afterwards sells the book for his own benefit, he is guilty of an offence under this section",
+        "(c) A and B, being, joint owners of a horse. A takes the horse out of B’s possession, intending to use it. Here, as A has a right to use the horse, he does not dishonestly misappropriate it. But, if A sells the horse and appropriates the whole proceeds to his own use, he is guilty of an offence under this section",
+        "A finds a Government promissory note belonging to Z, bearing a blank endorsement. A, knowing that the note belongs to Z, pledges it with a banker as a security for a loan, intending at a future time to restore it to Z. A has committed an offence under this section",
+        "(a) A finds a rupee on the high road, not knowing to whom the rupee belongs, A picks up the rupee. Here A has not committed the offence defined in this section",
+        "(b) A finds a letter on the road, containing a bank-note. From the direction and contents of the letter he learns to whom the note belongs. He appropriates the note. He is guilty of an offence under this section",
+        "(c) A finds a cheque payable to bearer. He can form no conjecture as to the person who has lost the cheque. But the name of the person, who has drawn the cheque, appears. A knows that this person can direct him to the person in whose favour the cheque was drawn. A appropriates the cheque without attempting to discover the owner. He is guilty of an offence under this section",
+        "(d) A sees Z drop his purse with money in it. A picks up the purse with the intention of restoring it to Z, but afterwards appropriates it to his own use. A has committed an offence under this section",
+        "(e) A finds a purse with money, not knowing to whom it belongs; he afterwards discovers that it belongs to Z, and appropriates it to his own use. A is guilty of an offence under this section",
+        "(f) A finds a valuable ring, not knowing to whom it belongs. A sells it immediately without attempting to discover the owner. A is guilty of an offence under this section"
+      ]
+    },
+    {
+      "id": "bns-314-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation 1.—A dishonest misappropriation for a time only is a misappropriation within the meaning of this section",
+        "Explanation 2.—A person who finds property not in the possession of any other person, and takes such property for the purpose of protecting it for, or of restoring it to, the owner, does not take or misappropriate it dishonestly, and is not guilty of an offence; but he is guilty of the offence above defined, if he appropriates it to his own use, when he knows or has the means of discovering the owner, or before he has used reasonable means to discover and give notice to the owner and has kept the property a reasonable time to enable the owner to claim it",
+        "What are reasonable means or what is a reasonable time in such a case, is a question of fact",
+        "It is not necessary that the finder should know who is the owner of the property, or that any particular person is the owner of it; it is sufficient if, at the time of appropriating it, he does not believe it to be his own property, or in good faith believe that the real owner cannot be found"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "bns-314-ex-1",
+      "title": "Illustration (a)",
+      "description": "A takes property belonging to Z out of Z’s possession, in good faith believing at the time when he takes it, that the property belongs to himself. A is not guilty of theft; but if A, after discovering his mistake, dishonestly appropriates the property to his own use, he is guilty of an offence under this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 314 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-314-ex-2",
+      "title": "Illustration (b)",
+      "description": "A, being on friendly terms with Z, goes into Z’s library in Z’s absence, and takes away a book without Z’s express consent. Here, if A was under the impression that he had Z’s implied consent to take the book for the purpose of reading it, A has not committed theft. But, if A afterwards sells the book for his own benefit, he is guilty of an offence under this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 314 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-314-ex-3",
+      "title": "Illustration (c)",
+      "description": "A and B, being, joint owners of a horse. A takes the horse out of B’s possession, intending to use it. Here, as A has a right to use the horse, he does not dishonestly misappropriate it. But, if A sells the horse and appropriates the whole proceeds to his own use, he is guilty of an offence under this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 314 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-314-ex-4",
+      "title": "Illustration (d)",
+      "description": "A finds a Government promissory note belonging to Z, bearing a blank endorsement. A, knowing that the note belongs to Z, pledges it with a banker as a security for a loan, intending at a future time to restore it to Z. A has committed an offence under this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 314 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-314-ex-5",
+      "title": "Illustration (e)",
+      "description": "A finds a rupee on the high road, not knowing to whom the rupee belongs, A picks up the rupee. Here A has not committed the offence defined in this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 314 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-314-ex-6",
+      "title": "Illustration (f)",
+      "description": "A finds a letter on the road, containing a bank-note. From the direction and contents of the letter he learns to whom the note belongs. He appropriates the note. He is guilty of an offence under this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 314 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-314-ex-7",
+      "title": "Illustration (g)",
+      "description": "A finds a cheque payable to bearer. He can form no conjecture as to the person who has lost the cheque. But the name of the person, who has drawn the cheque, appears. A knows that this person can direct him to the person in whose favour the cheque was drawn. A appropriates the cheque without attempting to discover the owner. He is guilty of an offence under this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 314 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-314-ex-8",
+      "title": "Illustration (h)",
+      "description": "A sees Z drop his purse with money in it. A picks up the purse with the intention of restoring it to Z, but afterwards appropriates it to his own use. A has committed an offence under this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 314 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-314-ex-9",
+      "title": "Illustration (i)",
+      "description": "A finds a purse with money, not knowing to whom it belongs; he afterwards discovers that it belongs to Z, and appropriates it to his own use. A is guilty of an offence under this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 314 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-314-ex-10",
+      "title": "Illustration (j)",
+      "description": "A finds a valuable ring, not knowing to whom it belongs. A sells it immediately without attempting to discover the owner. A is guilty of an offence under this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 314 — which fact proves which element, and what the legal result is."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-314-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "(a) A takes property belonging to Z out of Z’s possession, in good faith believing at the time when he takes it, that the property belongs to himself. A is not guilty of theft; but if A, after discovering his mistake, dishonestly appropriates the property to his own use, he is guilty of an offence under this section",
+      "question": "Whether BNS s. 314 (Dishonest misappropriation of property) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 314. Chapter XVII — Of Offences Against Property. Connected: BNS s. 316, BNS s. 318.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 314 (Dishonest misappropriation of property), Chapter XVII — Of Offences Against Property.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) . Whoever dishonestly misappropriates or converts to his own use any movable property, shall be punished with imprisonment of either description for a term which shall not be less than six months but which may extend to two years and with fine\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 314 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 314. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "distinctions": [
+    {
+      "id": "bns-314-dist",
+      "title": "BNS s. 314 and connected sections",
+      "left": "BNS s. 314",
+      "right": "BNS s. 316, BNS s. 318",
+      "rows": [
+        {
+          "point": "Heading",
+          "left": "Dishonest misappropriation of property",
+          "right": "Read the neighbour’s title on its own page before you write."
+        },
+        {
+          "point": "What you must prove",
+          "left": ". Whoever dishonestly misappropriates or converts to his own use any movable property, shall be punished with imprisonment of either description for a term which shall not be less than six months but which may extend to two years and with fine",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+        },
+        {
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 314.",
+          "right": "Citing s. 314 where the neighbour actually applies."
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-314-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 314."
+    },
+    {
+      "id": "bns-314-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-314-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-314-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 314 (Dishonest misappropriation of property)",
+      "answer": "Introduction. BNS s. 314 deals with Dishonest misappropriation of property. It sits in Chapter XVII — Of Offences Against Property of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Dishonest misappropriation (old 403). Property is already in your possession (unlike theft). Conversion with dishonest intent. BNS restatement of IPC 403. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 314 is the rule on “Dishonest misappropriation of property”. The section provides that . Whoever dishonestly misappropriates or converts to his own use any movable property, shall be punished with imprisonment of either description for a term which shall not be less than six months but which may extend to two years and with fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. . Whoever dishonestly misappropriates or converts to his own use any movable property, shall be punished with imprisonment of either description for a term which shall not be less than six months but which may extend to two years and with fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A takes property belonging to Z out of Z’s possession, in good faith believing at the time when he takes it, that the property belongs to himself. A is not guilty of theft; but if A, after discovering his mistake, dishonestly appropriates the property to his own use, he is guilty of an offence under this section\n\nExplanations. Explanation 1.—A dishonest misappropriation for a time only is a misappropriation within the meaning of this section An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 314. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 316, BNS s. 318. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 314 is the complete current-law heading for Dishonest misappropriation of property. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-314-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 314 (Dishonest misappropriation of property) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 314 deals with Dishonest misappropriation of property. It sits in Chapter XVII — Of Offences Against Property of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Dishonest misappropriation (old 403). Property is already in your possession (unlike theft). Conversion with dishonest intent. BNS restatement of IPC 403. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 314 is the rule on “Dishonest misappropriation of property”. The section provides that . Whoever dishonestly misappropriates or converts to his own use any movable property, shall be punished with imprisonment of either description for a term which shall not be less than six months but which may extend to two years and with fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. . Whoever dishonestly misappropriates or converts to his own use any movable property, shall be punished with imprisonment of either description for a term which shall not be less than six months but which may extend to two years and with fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A takes property belonging to Z out of Z’s possession, in good faith believing at the time when he takes it, that the property belongs to himself. A is not guilty of theft; but if A, after discovering his mistake, dishonestly appropriates the property to his own use, he is guilty of an offence under this section\n\nExplanations. Explanation 1.—A dishonest misappropriation for a time only is a misappropriation within the meaning of this section An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 314. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 316, BNS s. 318. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 314 is the complete current-law heading for Dishonest misappropriation of property. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Theft, snatching, extortion, robbery, dacoity, trust, cheating, mischief, trespass.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second statutory illustration. Illustration (b): (b) A, being on friendly terms with Z, goes into Z’s library in Z’s absence, and takes away a book without Z’s express consent. Here, if A was under the impression that he had Z’s implied consent to take the book for the purpose of reading it, A has not committed theft. But, if A afterwards sells the book for his own benefit, he is guilty of an offence under this section Contrast it with illustration (a). The legal weight lies in the contrast.\n\nLayer 3 — Distinction. Contrast BNS s. 314 with BNS s. 316, BNS s. 318. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 314.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Pyare Lal Bhargava v. State of Rajasthan",
+      "year": 1963,
+      "citation": "AIR 1963 SC 1094",
+      "holding": "Criminal breach of trust: entrustment is the hinge. Without entrustment you are in misappropriation or theft, not s. 316."
+    }
+  ],
+  "examTips": [
+    "Cite BNS s. 314 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 314 (Dishonest misappropriation of property).",
+      "steps": [
+        "Introduce BNS s. 314 and Chapter XVII — Of Offences Against Property.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 314."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 314 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second statutory illustration and contrast it with the first.",
+        "Distinguish BNS s. 314 from BNS s. 316, BNS s. 318.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 314, Dishonest misappropriation of property.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 314: Dishonest misappropriation of property.",
+    "First ingredient: . Whoever dishonestly misappropriates or converts to his own use any movable property, shall be punished with imprisonment of either description for a term which shall not be less than six months but which may extend to two years and with fine",
+    "10 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 314 — Dishonest misappropriation of property. Older books and judgments may still print a historical number (403). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": [
+    "s-316",
+    "s-318"
+  ]
 }
+
 export default content

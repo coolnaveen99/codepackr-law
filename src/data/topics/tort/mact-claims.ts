@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Motor accident compensation is a statutory welfare-oriented regime under the Motor Vehicles Act 1988. MACT proceedings focus on just compensation, statutory liability and structured assessment of dependency, disability and other heads.",
   "study": "Motor accident compensation is a statutory welfare-oriented regime under the Motor Vehicles Act 1988. MACT proceedings focus on just compensation, statutory liability and structured assessment of dependency, disability and other heads.\\n\\nThe Motor Vehicles Act creates a specialised compensation system distinct from ordinary tort litigation. Sarla Verma standardised multiplier methodology; Pranay Sethi addressed future prospects and conventional heads. Later decisions continue to refine these principles.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

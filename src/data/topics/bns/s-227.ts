@@ -1,32 +1,166 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 227 (and related): giving false evidence — whoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false and which he either knows or believes to be false or does not believe to be true, is said to give false evidence. Successor to IPC s. 191. Fabricating false evidence is a related distinct offence.',
-  study: `Giving false evidence under the BNS:\n\nWhoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence.\n\nKey points\n• Legal obligation to state the truth (oath or law).\n• False statement.\n• Knowledge or belief that it is false, or absence of belief that it is true.\n\nFabricating false evidence (related section): causing a false circumstance to exist, or making a false entry, with intent that it appear in evidence and cause an erroneous opinion.\n\nPunishment depends on the proceeding in which the false evidence is given (judicial proceeding vs other). Cite the applicable BNS sections for post-1 July 2024 acts.`,
-  sections: [
-    { id: 's-227-m1', title: 'Provenance', order: 1, content: ['Successor to IPC ss. 191–193. False evidence and fabricating false evidence.'] },
-    { id: 's-227-m2', title: 'Giving False Evidence', order: 2, content: ['Legally bound to state truth; false statement; knowledge/belief of falsity or no belief in truth.'] },
-    { id: 's-227-m3', title: 'Fabricating False Evidence', order: 3, content: ['Causing false circumstance / false entry with intent that it appear in evidence and mislead.'] },
-    { id: 's-227-m4', title: 'Ingredients', order: 4, content: ['(1) Legal obligation to truth. (2) False statement or fabricated circumstance. (3) Mens rea as to falsity.'] },
-    { id: 's-227-m5', title: 'Procedure', order: 5, content: ['Often requires complaint by the court; punishment higher when given in a judicial proceeding.'] },
+  "study": "Introduction and meaning\nGiving false evidence (old 191) — the definition of perjury. Punishment is s. 229. BNS restatement of IPC 191. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 227 is the rule on “Giving false evidence”. The section provides that whoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 227 exists so that “Giving false evidence” has a closed legal test in Chapter XIV — Of False Evidence and Offences Against Public Justice. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Perjury, screening, harbouring, false charge, and failing to appear on a bond.\n\nThe provision in detail\n227. Whoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence\n\nEssential ingredients\n1. Whoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence\n\nStatutory illustrations\nIllustration (a). A, in support of a just claim which B has against Z for one thousand rupees, falsely swears on a trial that he heard Z admit the justice of B’s claim. A has given false evidence\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 227 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (b). A, being bound by an oath to state the truth, states that he believes a certain signature to be the handwriting of Z, when he does not believe it to be the handwriting of Z. Here A states that which he knows to be false, and therefore gives false evidence\n\nExam use: quote illustration (b), then write which ingredient of BNS s. 227 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (c). A, knowing the general character of Z’s handwriting, states that he believes a certain signature to be the handwriting of Z; A in good faith believing it to be so. Here A’s statement is merely as to his belief, and is true as to his belief, and therefore, although the signature may not be the handwriting of Z, A has not given false evidence\n\nExam use: quote illustration (c), then write which ingredient of BNS s. 227 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (d). A, being bound by an oath to state the truth, states that he knows that Z was at a particular place on a particular day, not knowing anything upon the subject. A gives false evidence whether Z was at that place on the day named or not\n\nExam use: quote illustration (d), then write which ingredient of BNS s. 227 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (e). A, an interpreter or translator, gives or certifies as a true interpretation or translation of a statement or document which he is bound by oath to interpret or translate truly, that which is not and which he does not believe to be a true interpretation or translation. A has given false evidence\n\nExam use: quote illustration (e), then write which ingredient of BNS s. 227 it proves. Copying the illustration without that mapping sentence does not score.\n\nExplanations\nExplanation 1.—A statement is within the meaning of this section, whether it is made verbally or otherwise\n\nExplanation 2.—A false statement as to the belief of the person attesting is within the meaning of this section, and a person may be guilty of giving false evidence by stating that he believes a thing which he does not believe, as well as by stating that he knows a thing which he does not know",
+  "glance": "BNS s. 227 — Giving false evidence.",
+  "sections": [
+    {
+      "id": "bns-227-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "227. Whoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence"
+      ]
+    },
+    {
+      "id": "bns-227-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence"
+      ]
+    },
+    {
+      "id": "bns-227-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "(a) A, in support of a just claim which B has against Z for one thousand rupees, falsely swears on a trial that he heard Z admit the justice of B’s claim. A has given false evidence",
+        "(b) A, being bound by an oath to state the truth, states that he believes a certain signature to be the handwriting of Z, when he does not believe it to be the handwriting of Z. Here A states that which he knows to be false, and therefore gives false evidence",
+        "(c) A, knowing the general character of Z’s handwriting, states that he believes a certain signature to be the handwriting of Z; A in good faith believing it to be so. Here A’s statement is merely as to his belief, and is true as to his belief, and therefore, although the signature may not be the handwriting of Z, A has not given false evidence",
+        "(d) A, being bound by an oath to state the truth, states that he knows that Z was at a particular place on a particular day, not knowing anything upon the subject. A gives false evidence whether Z was at that place on the day named or not",
+        "(e) A, an interpreter or translator, gives or certifies as a true interpretation or translation of a statement or document which he is bound by oath to interpret or translate truly, that which is not and which he does not believe to be a true interpretation or translation. A has given false evidence"
+      ]
+    },
+    {
+      "id": "bns-227-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation 1.—A statement is within the meaning of this section, whether it is made verbally or otherwise",
+        "Explanation 2.—A false statement as to the belief of the person attesting is within the meaning of this section, and a person may be guilty of giving false evidence by stating that he believes a thing which he does not believe, as well as by stating that he knows a thing which he does not know"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-227', section: 's. 227', title: 'Giving false evidence' }],
-  examples: [
-    { id: 's-227-ex1', title: 'Perjury', illustrationType: 'practical', description: 'A witness under oath knowingly gives a false account of events. Giving false evidence is made out.' },
-    { id: 's-227-ex2', title: 'Honest mistake', illustrationType: 'fail-scenario', description: 'A witness makes an incorrect statement believing it to be true. Without knowledge/belief of falsity, the offence is not made out.' },
+  "examples": [
+    {
+      "id": "bns-227-ex-1",
+      "title": "Illustration (a)",
+      "description": "A, in support of a just claim which B has against Z for one thousand rupees, falsely swears on a trial that he heard Z admit the justice of B’s claim. A has given false evidence\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 227 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-227-ex-2",
+      "title": "Illustration (b)",
+      "description": "A, being bound by an oath to state the truth, states that he believes a certain signature to be the handwriting of Z, when he does not believe it to be the handwriting of Z. Here A states that which he knows to be false, and therefore gives false evidence\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 227 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-227-ex-3",
+      "title": "Illustration (c)",
+      "description": "A, knowing the general character of Z’s handwriting, states that he believes a certain signature to be the handwriting of Z; A in good faith believing it to be so. Here A’s statement is merely as to his belief, and is true as to his belief, and therefore, although the signature may not be the handwriting of Z, A has not given false evidence\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 227 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-227-ex-4",
+      "title": "Illustration (d)",
+      "description": "A, being bound by an oath to state the truth, states that he knows that Z was at a particular place on a particular day, not knowing anything upon the subject. A gives false evidence whether Z was at that place on the day named or not\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 227 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-227-ex-5",
+      "title": "Illustration (e)",
+      "description": "A, an interpreter or translator, gives or certifies as a true interpretation or translation of a statement or document which he is bound by oath to interpret or translate truly, that which is not and which he does not believe to be a true interpretation or translation. A has given false evidence\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 227 — which fact proves which element, and what the legal result is."
+    }
   ],
-  hypotheticals: [{ id: 's-227-hypo', title: 'False evidence', facts: 'Witness under oath states a fact he knows is false.', question: 'Is the offence made out?', applicableLaw: 'BNS false-evidence provisions.', analysis: 'Legal obligation + false statement + knowledge of falsity — yes.', conclusion: 'Giving false evidence established.' }],
-  distinctions: [{ id: 's-227-dist', title: 'Giving vs Fabricating false evidence', left: 'Giving false evidence', right: 'Fabricating false evidence', rows: [{ point: 'Method', left: 'False statement under legal obligation to truth', right: 'Creating false circumstance or entry to mislead as evidence' }] }],
-  misconceptions: [{ id: 's-227-trap', trap: 'Any incorrect statement in court is false evidence.', correction: 'The statement must be false to the knowledge or belief of the maker (or not believed to be true), and made under a legal obligation to state the truth.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-227-brief', draftingCategory: 'brief', question: 'Define giving false evidence under the BNS.', answer: 'Whoever, being legally bound by oath or law to state the truth, makes a statement which is false and which he knows or believes to be false or does not believe to be true, gives false evidence. Fabricating false evidence is a related but distinct offence.', explanation: 'Short note.' },
-    { id: 's-227-sub', draftingCategory: 'submissions', question: 'Submissions on false evidence.', answer: 'I. Legal obligation to truth. II. False statement. III. Mens rea as to falsity. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-227-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "(a) A, in support of a just claim which B has against Z for one thousand rupees, falsely swears on a trial that he heard Z admit the justice of B’s claim. A has given false evidence",
+      "question": "Whether BNS s. 227 (Giving false evidence) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 227. Chapter XIV — Of False Evidence and Offences Against Public Justice. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 227 (Giving false evidence), Chapter XIV — Of False Evidence and Offences Against Public Justice.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 227 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 227. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS false-evidence and fabricating provisions', 'IPC ss. 191–193 (historical)'],
-  examTips: ['State the legal-obligation requirement and the mens rea as to falsity.', 'Distinguish giving from fabricating.'],
-  revisionPoints: ['Bound to state truth + false statement + knowledge/belief of falsity.', 'Fabricating = creating false evidence to mislead.', 'Higher punishment in judicial proceedings.'],
-  relatedTopics: ['s-230', 's-248', 's-336'],
+  "misconceptions": [
+    {
+      "id": "bns-227-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 227."
+    },
+    {
+      "id": "bns-227-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-227-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-227-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 227 (Giving false evidence)",
+      "answer": "Introduction. BNS s. 227 deals with Giving false evidence. It sits in Chapter XIV — Of False Evidence and Offences Against Public Justice of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Giving false evidence (old 191) — the definition of perjury. Punishment is s. 229. BNS restatement of IPC 191. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 227 is the rule on “Giving false evidence”. The section provides that whoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A, in support of a just claim which B has against Z for one thousand rupees, falsely swears on a trial that he heard Z admit the justice of B’s claim. A has given false evidence\n\nExplanations. Explanation 1.—A statement is within the meaning of this section, whether it is made verbally or otherwise An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 227. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 227 is the complete current-law heading for Giving false evidence. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-227-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 227 (Giving false evidence) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 227 deals with Giving false evidence. It sits in Chapter XIV — Of False Evidence and Offences Against Public Justice of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Giving false evidence (old 191) — the definition of perjury. Punishment is s. 229. BNS restatement of IPC 191. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 227 is the rule on “Giving false evidence”. The section provides that whoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A, in support of a just claim which B has against Z for one thousand rupees, falsely swears on a trial that he heard Z admit the justice of B’s claim. A has given false evidence\n\nExplanations. Explanation 1.—A statement is within the meaning of this section, whether it is made verbally or otherwise An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 227. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 227 is the complete current-law heading for Giving false evidence. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Perjury, screening, harbouring, false charge, and failing to appear on a bond.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second statutory illustration. Illustration (b): (b) A, being bound by an oath to state the truth, states that he believes a certain signature to be the handwriting of Z, when he does not believe it to be the handwriting of Z. Here A states that which he knows to be false, and therefore gives false evidence Contrast it with illustration (a). The legal weight lies in the contrast.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 227. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 227.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 227 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 227 (Giving false evidence).",
+      "steps": [
+        "Introduce BNS s. 227 and Chapter XIV — Of False Evidence and Offences Against Public Justice.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 227."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 227 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second statutory illustration and contrast it with the first.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 227, Giving false evidence.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 227: Giving false evidence.",
+    "First ingredient: Whoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence",
+    "5 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 227 — Giving false evidence. Older books and judgments may still print a historical number (191). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

@@ -1,28 +1,144 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'BNS Section 128: Force. This dedicated note places the provision in its statutory cluster and connects its ingredients with evidence, procedure and neighbouring BNS provisions.',
-  study: `Section 128 — Force.\\n\\nForce. BNS restatement of IPC 349. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. Historical IPC concordance: 349.\\n\\nRead the enacted BNS wording with every sub-section, explanation, proviso and exception. For conduct before 1 July 2024, separately apply the repeal-and-savings framework and Article 20(1).`,
-  sections:[
-    {id:'s-128-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:['Chapter vi; cluster: Force and assault.','Force. BNS restatement of IPC 349. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024.','Historical IPC concordance: 349.','Treat the BNS text as the governing source for post-commencement offences; use IPC concordance only to understand continuity or change.']},
-    {id:'s-128-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:['Operative provision: BNS s. 128 — Force.','Break the enacted provision into its express elements, qualifiers, explanations and exceptions before applying it.','Read the immediately connected BNS provisions so that a definition, aggravation, proviso or punishment rule is not missed.']},
-    {id:'s-128-m3',title:'Application Ingredients & Issue-Spotting',order:3,content:['Start with the statutory act, circumstance, mental element or status required by s. 128.','Map each material fact to a specific statutory ingredient and identify any missing link.','Check whether the facts instead fit a neighbouring offence or a general exception; avoid treating a historical IPC label as the test.']},
-    {id:'s-128-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:['The prosecution ordinarily bears the burden of proving the charged ingredients beyond reasonable doubt, subject to any applicable statutory presumption.','Identify the fact each side must establish and distinguish admissibility from evidentiary weight under the BSA 2023.','Where electronic material is relied upon, comply with the applicable BSA provisions on electronic records, authenticity and proof.']},
-    {id:'s-128-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:['Check the BNSS First Schedule and the connected offence/punishment provision for cognizability, bailability and the competent trial court.','Check territorial jurisdiction, joinder/charge issues, sanction requirements and other statutory preconditions where relevant.','Verify any applicable BNSS limitation rule and the commencement date of the governing penal law.','For pre-1 July 2024 conduct, separately analyze repeal, savings and Article 20(1).']},
+  "study": "Introduction and meaning\nForce. BNS restatement of IPC 349. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 349. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 128 is the rule on “Force”. The section provides that a person is said to use force to another if he causes motion, change of motion, or cessation of motion to that other, or if he causes to any substance such motion, or change of motion, or cessation of motion as brings that substance into contact with any part of that other’s body, or with anything which that other is wearing or carrying, or with anything so situated that such contact affects that other’s sense of feeling:. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 128 exists so that “Force” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n128. A person is said to use force to another if he causes motion, change of motion, or cessation of motion to that other, or if he causes to any substance such motion, or change of motion, or cessation of motion as brings that substance into contact with any part of that other’s body, or with anything which that other is wearing or carrying, or with anything so situated that such contact affects that other’s sense of feeling:\n\n(a) by his own bodily power;\n\n(b) by disposing any substance in such a manner that the motion or change or cessation of motion takes place without any further act on his part, or on the part of any other person;\n\n(c) by inducing any animal to move, to change its motion, or to cease to move\n\nEssential ingredients\n1. A person is said to use force to another if he causes motion, change of motion, or cessation of motion to that other, or if he causes to any substance such motion, or change of motion, or cessation of motion as brings that substance into contact with any part of that other’s body, or with anything which that other is wearing or carrying, or with anything so situated that such contact affects that other’s sense of feeling:\n2. (a) by his own bodily power;\n3. (b) by disposing any substance in such a manner that the motion or change or cessation of motion takes place without any further act on his part, or on the part of any other person;\n4. (c) by inducing any animal to move, to change its motion, or to cease to move\n\nExceptions, limitations and provisos\nProvided that the person causing the motion, or change of motion, or cessation of motion, causes that motion, change of motion, or cessation of motion in one of the following three ways, namely:–",
+  "glance": "BNS s. 128 — Force.",
+  "sections": [
+    {
+      "id": "bns-128-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "128. A person is said to use force to another if he causes motion, change of motion, or cessation of motion to that other, or if he causes to any substance such motion, or change of motion, or cessation of motion as brings that substance into contact with any part of that other’s body, or with anything which that other is wearing or carrying, or with anything so situated that such contact affects that other’s sense of feeling:",
+        "(a) by his own bodily power;",
+        "(b) by disposing any substance in such a manner that the motion or change or cessation of motion takes place without any further act on his part, or on the part of any other person;",
+        "(c) by inducing any animal to move, to change its motion, or to cease to move"
+      ]
+    },
+    {
+      "id": "bns-128-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "A person is said to use force to another if he causes motion, change of motion, or cessation of motion to that other, or if he causes to any substance such motion, or change of motion, or cessation of motion as brings that substance into contact with any part of that other’s body, or with anything which that other is wearing or carrying, or with anything so situated that such contact affects that other’s sense of feeling:",
+        "(a) by his own bodily power;",
+        "(b) by disposing any substance in such a manner that the motion or change or cessation of motion takes place without any further act on his part, or on the part of any other person;",
+        "(c) by inducing any animal to move, to change its motion, or to cease to move"
+      ]
+    },
+    {
+      "id": "bns-128-exc",
+      "title": "Exceptions and provisos",
+      "order": 6,
+      "content": [
+        "Provided that the person causing the motion, or change of motion, or cessation of motion, causes that motion, change of motion, or cessation of motion in one of the following three ways, namely:–"
+      ]
+    }
   ],
-  provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-128',section:'s. 128',title:'Force'}],
-  examples:[
-    {id:'s-128-ex1',title:'Statutory ingredients satisfied',illustrationType:'practical',description:'The proved facts correspond to the material words and conditions of BNS s. 128, with no applicable exception defeating the charge.'},
-    {id:'s-128-ex2',title:'Ingredient or qualification missing',illustrationType:'fail-scenario',description:'The conduct resembles the provision, but a required ingredient, statutory qualification, exception or evidentiary link is not established.'}
+  "examples": [
+    {
+      "id": "bns-128-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Force”. Name BNS s. 128, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-128-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 128 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals:[{id:'s-128-hypo',title:'Chamber problem — BNS s. 128',facts:'A prosecution invokes s. 128 on facts said to fall within the Force and assault cluster. The defence disputes the statutory fit and the proof of one or more ingredients.',question:'Do the proved facts satisfy BNS s. 128?',applicableLaw:'BNS s. 128; connected BNS provisions; applicable BNSS procedure; BSA 2023 evidence rules.',analysis:'1. Identify the exact statutory words. 2. Break them into ingredients and qualifiers. 3. Map the evidence to each ingredient. 4. Apply explanations, provisos and exceptions. 5. Check the procedural and punishment consequences.',conclusion:'The conclusion must follow from the enacted ingredients and proved facts, not from the historical IPC number alone.'}],
-  distinctions:[{id:'s-128-dist',title:'BNS provision vs historical IPC concordance',left:'BNS s. 128',right:'Historical IPC: 349',rows:[{point:'Governing text',left:'Enacted BNS wording for post-commencement offences',right:'Historical material used only for continuity/change analysis'},{point:'Application method',left:'Test each statutory ingredient and qualification',right:'Do not substitute the old section number for the BNS text'},{point:'Transition',left:'Check commencement and savings',right:'Pre-commencement conduct may remain governed by saved prior law'}]}],
-  misconceptions:[{id:'s-128-trap',trap:'The historical IPC provision can simply be substituted for BNS s. 128.',correction:'The enacted BNS text controls post-commencement offences; historical concordance does not replace the statutory wording.'},{id:'s-128-trap-2',trap:'The section heading or factual resemblance alone establishes liability.',correction:'Every material ingredient, qualification and applicable exception must be established on the evidence.'}],
-  cases:[],
-  questionsAndAnswers:[{id:'s-128-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment of BNS s. 128.',answer:`I. ISSUE — identify the precise statutory question.\\nII. RULE — enacted ingredients, definitions, exceptions and connected provisions.\\nIII. APPLICATION — map the evidence to each condition.\\nIV. CONCLUSION — state the statutory consequence supported by the proved facts.`,explanation:'Chamber-style structured analysis without unverified authorities.'},{id:'s-128-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 128.',answer:`I. STATUTORY SCHEME.\\nII. INGREDIENTS AND QUALIFICATIONS.\\nIII. EVIDENCE AND BURDEN.\\nIV. RESPONSE TO EXCEPTIONS OR DEFENCES.\\nV. PROCEDURAL AND OPERATIVE CONSEQUENCE.`,explanation:'Courtroom submission structure without unverified case citations.'}],
-  bareActPointers:['BNS s. 128 — Force','Connected BNS definitions, explanations, provisos and exceptions','BNSS First Schedule and applicable procedure','BSA 2023 burden and evidence provisions','BNS repeal-and-savings framework for pre-1 July 2024 conduct'],
-  examTips:['Start with the enacted BNS wording and identify each ingredient.','Read connected definitions, exceptions, procedure and punishment provisions.','Use IPC numbering only as historical concordance, not as a substitute for the BNS text.'],
-  revisionPoints:['BNS s. 128: Force.','Cluster: Force and assault.','IPC concordance: 349.','Verify the current BNSS procedural classification and BSA evidentiary requirements before advising.'],
-  relatedTopics:[]
+  "hypotheticals": [
+    {
+      "id": "bns-128-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Force” under BNS s. 128 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 128 (Force) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 128. Chapter VI — Of Offences Affecting the Human Body. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 128 (Force), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) A person is said to use force to another if he causes motion, change of motion, or cessation of motion to that other, or if he causes to any substance such motion, or change of motion, or cessation of motion as brings that substance into contact with any part of that other’s body, or with anything which that other is wearing or carrying, or with anything so situated that such contact affects that other’s sense of feeling:\n   (2) (a) by his own bodily power;\n   (3) (b) by disposing any substance in such a manner that the motion or change or cessation of motion takes place without any further act on his part, or on the part of any other person;\n   (4) (c) by inducing any animal to move, to change its motion, or to cease to move\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 128 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 128 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 128. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-128-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 128."
+    },
+    {
+      "id": "bns-128-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-128-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-128-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 128 (Force)",
+      "answer": "Introduction. BNS s. 128 deals with Force. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Force. BNS restatement of IPC 349. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 349. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 128 is the rule on “Force”. The section provides that a person is said to use force to another if he causes motion, change of motion, or cessation of motion to that other, or if he causes to any substance such motion, or change of motion, or cessation of motion as brings that substance into contact with any part of that other’s body, or with anything which that other is wearing or carrying, or with anything so situated that such contact affects that other’s sense of feeling:. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. A person is said to use force to another if he causes motion, change of motion, or cessation of motion to that other, or if he causes to any substance such motion, or change of motion, or cessation of motion as brings that substance into contact with any part of that other’s body, or with anything which that other is wearing or carrying, or with anything so situated that such contact affects that other’s sense of feeling:\n2. (a) by his own bodily power;\n3. (b) by disposing any substance in such a manner that the motion or change or cessation of motion takes place without any further act on his part, or on the part of any other person;\n4. (c) by inducing any animal to move, to change its motion, or to cease to move\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExceptions / provisos. Provided that the person causing the motion, or change of motion, or cessation of motion, causes that motion, change of motion, or cessation of motion in one of the following three ways, namely:– State the exception and then say whether it is attracted on the facts.\n\nConclusion. BNS s. 128 is the complete current-law heading for Force. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-128-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 128 (Force) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 128 deals with Force. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Force. BNS restatement of IPC 349. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 349. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 128 is the rule on “Force”. The section provides that a person is said to use force to another if he causes motion, change of motion, or cessation of motion to that other, or if he causes to any substance such motion, or change of motion, or cessation of motion as brings that substance into contact with any part of that other’s body, or with anything which that other is wearing or carrying, or with anything so situated that such contact affects that other’s sense of feeling:. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. A person is said to use force to another if he causes motion, change of motion, or cessation of motion to that other, or if he causes to any substance such motion, or change of motion, or cessation of motion as brings that substance into contact with any part of that other’s body, or with anything which that other is wearing or carrying, or with anything so situated that such contact affects that other’s sense of feeling:\n2. (a) by his own bodily power;\n3. (b) by disposing any substance in such a manner that the motion or change or cessation of motion takes place without any further act on his part, or on the part of any other person;\n4. (c) by inducing any animal to move, to change its motion, or to cease to move\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExceptions / provisos. Provided that the person causing the motion, or change of motion, or cessation of motion, causes that motion, change of motion, or cessation of motion in one of the following three ways, namely:– State the exception and then say whether it is attracted on the facts.\n\nConclusion. BNS s. 128 is the complete current-law heading for Force. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 128. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 128.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 128 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 128 (Force).",
+      "steps": [
+        "Introduce BNS s. 128 and Chapter VI — Of Offences Affecting the Human Body.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 128."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 128 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 128, Force.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 128: Force.",
+    "First ingredient: A person is said to use force to another if he causes motion, change of motion, or cessation of motion to that other, or if he causes to any substance such motion, or change of motion, or cessation of motion as brings that substance into contact with any part of that other’s body, or with anything which that other is wearing or carrying, or with anything so situated that such contact affects that other’s sense of feeling:",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 128 — Force. Older books and judgments may still print a historical number (349). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
+
 export default content

@@ -1,32 +1,133 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 115: voluntarily causing hurt. Whoever voluntarily causes hurt shall be punished with imprisonment up to the statutory term and/or fine. “Hurt” means bodily pain, disease or infirmity (s. 114 definition pathway). Successor to IPC s. 323. Grievous hurt is a higher species (s. 116/117).',
-  study: `Section 115 is the basic offence of voluntarily causing hurt.\n\nHurt (definitional section): bodily pain, disease or infirmity.\n\nVoluntarily: the act is done with the intention of causing hurt, or with knowledge that it is likely to cause hurt.\n\nPunishment: imprisonment of either description for a term which may extend to the period stated in the section, or with fine, or both.\n\nAggravated forms (hurt by dangerous weapons, hurt to deter public servant, etc.) have higher punishments in subsequent sections. Grievous hurt is defined separately and punished under higher sections.\n\nCite BNS s. 115 for post-1 July 2024 simple hurt cases.`,
-  sections: [
-    { id: 's-115-m1', title: 'Provenance', order: 1, content: ['Successor to IPC s. 323. Basic voluntarily causing hurt.'] },
-    { id: 's-115-m2', title: 'Textual Elements', order: 2, content: ['Voluntarily causes hurt; punishment on the statutory scale.'] },
-    { id: 's-115-m3', title: 'Ingredients', order: 3, content: ['(1) Hurt (bodily pain, disease or infirmity). (2) Caused by the accused. (3) Voluntarily (intention or knowledge of likelihood).'] },
-    { id: 's-115-m4', title: 'Evidence', order: 4, content: ['Injury; causation; intention or knowledge. Medical evidence is usual but not always essential for simple hurt.'] },
-    { id: 's-115-m5', title: 'Procedure', order: 5, content: ['Often compoundable and bailable as per BNSS Schedule for simple hurt; check current schedule.'] },
+  "study": "Introduction and meaning\nVoluntarily causing hurt. BNS restatement of IPC 321 / 323. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 321 / 323. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 115 is the rule on “Voluntarily causing hurt”. The section provides that (1) Whoever does any act with the intention of thereby causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said “voluntarily to cause hurt”. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 115 exists so that “Voluntarily causing hurt” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n115. (1) Whoever does any act with the intention of thereby causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said “voluntarily to cause hurt”\n\n(2) Whoever, except in the case provided for by sub-section (1) of section 122 voluntarily causes hurt, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to ten thousand rupees, or with both\n\nEssential ingredients\n1. (1) Whoever does any act with the intention of thereby causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said “voluntarily to cause hurt”\n2. (2) Whoever, except in the case provided for by sub-section\n3. (1) of section 122 voluntarily causes hurt, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to ten thousand rupees, or with both\n\nPunishment / legal consequence\nUp to 1 year, or ₹10,000, or both.",
+  "glance": "BNS s. 115 — Voluntarily causing hurt.",
+  "sections": [
+    {
+      "id": "bns-115-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "115. (1) Whoever does any act with the intention of thereby causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said “voluntarily to cause hurt”",
+        "(2) Whoever, except in the case provided for by sub-section (1) of section 122 voluntarily causes hurt, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to ten thousand rupees, or with both"
+      ]
+    },
+    {
+      "id": "bns-115-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Whoever does any act with the intention of thereby causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said “voluntarily to cause hurt”",
+        "(2) Whoever, except in the case provided for by sub-section",
+        "(1) of section 122 voluntarily causes hurt, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to ten thousand rupees, or with both"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-115', section: 's. 115', title: 'Voluntarily causing hurt' }],
-  examples: [
-    { id: 's-115-ex1', title: 'Simple hurt', illustrationType: 'practical', description: 'A punches B, causing pain and a bruise. Voluntarily causing hurt under s. 115.' },
-    { id: 's-115-ex2', title: 'Grievous hurt instead', illustrationType: 'fail-scenario', description: 'If the injury is a permanent loss of sight or other grievous category, charge under the grievous-hurt sections, not s. 115 alone.' },
+  "examples": [
+    {
+      "id": "bns-115-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Voluntarily causing hurt”. Name BNS s. 115, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-115-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 115 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-115-hypo', title: 'Hurt vs grievous hurt', facts: 'A causes a simple fracture that does not meet the statutory grievous-hurt list.', question: 'Which section?', applicableLaw: 'BNS s. 115; grievous-hurt definition.', analysis: 'If not within the grievous-hurt definition, s. 115 applies.', conclusion: 's. 115.' }],
-  distinctions: [{ id: 's-115-dist', title: 'Hurt vs Grievous hurt', left: 'Hurt (s. 115)', right: 'Grievous hurt (higher sections)', rows: [{ point: 'Definition', left: 'Bodily pain, disease or infirmity', right: 'Statutory list (emasculation, permanent loss of sight/hearing, etc.)' }] }],
-  misconceptions: [{ id: 's-115-trap', trap: 'Any injury is grievous hurt.', correction: 'Only the categories listed in the grievous-hurt definition. Ordinary pain/bruising is simple hurt under s. 115.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-115-brief', draftingCategory: 'brief', question: 'Explain voluntarily causing hurt under BNS s. 115.', answer: 'Whoever voluntarily causes hurt (bodily pain, disease or infirmity) is punished under s. 115. “Voluntarily” means intention to cause hurt or knowledge that hurt is likely. Grievous hurt is a higher, separately defined offence.', explanation: 'Short note.' },
-    { id: 's-115-sub', draftingCategory: 'submissions', question: 'Submissions on s. 115.', answer: 'I. Hurt caused. II. Voluntarily. III. Not grievous. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-115-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Voluntarily causing hurt” under BNS s. 115 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 115 (Voluntarily causing hurt) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 115. Chapter VI — Of Offences Affecting the Human Body. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 115 (Voluntarily causing hurt), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever does any act with the intention of thereby causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said “voluntarily to cause hurt”\n   (2) (2) Whoever, except in the case provided for by sub-section\n   (3) (1) of section 122 voluntarily causes hurt, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to ten thousand rupees, or with both\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 115 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 115 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 115. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS s. 115', 'BNS hurt / grievous-hurt definitional sections', 'IPC s. 323 (historical)'],
-  examTips: ['Always check whether the injury is “hurt” or “grievous hurt” before selecting the section.'],
-  revisionPoints: ['Hurt = bodily pain, disease or infirmity.', 'Voluntarily = intention or knowledge of likelihood.', 'Grievous hurt is a higher category.'],
-  relatedTopics: ['s-116', 's-117', 's-100'],
+  "misconceptions": [
+    {
+      "id": "bns-115-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 115."
+    },
+    {
+      "id": "bns-115-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-115-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-115-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 115 (Voluntarily causing hurt)",
+      "answer": "Introduction. BNS s. 115 deals with Voluntarily causing hurt. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Voluntarily causing hurt. BNS restatement of IPC 321 / 323. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 321 / 323. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 115 is the rule on “Voluntarily causing hurt”. The section provides that (1) Whoever does any act with the intention of thereby causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said “voluntarily to cause hurt”. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever does any act with the intention of thereby causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said “voluntarily to cause hurt”\n2. (2) Whoever, except in the case provided for by sub-section\n3. (1) of section 122 voluntarily causes hurt, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to ten thousand rupees, or with both\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 115. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Up to 1 year, or ₹10,000, or both.\n\nConclusion. BNS s. 115 is the complete current-law heading for Voluntarily causing hurt. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-115-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 115 (Voluntarily causing hurt) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 115 deals with Voluntarily causing hurt. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Voluntarily causing hurt. BNS restatement of IPC 321 / 323. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 321 / 323. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 115 is the rule on “Voluntarily causing hurt”. The section provides that (1) Whoever does any act with the intention of thereby causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said “voluntarily to cause hurt”. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever does any act with the intention of thereby causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said “voluntarily to cause hurt”\n2. (2) Whoever, except in the case provided for by sub-section\n3. (1) of section 122 voluntarily causes hurt, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to ten thousand rupees, or with both\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 115. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Up to 1 year, or ₹10,000, or both.\n\nConclusion. BNS s. 115 is the complete current-law heading for Voluntarily causing hurt. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 115. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 115.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 115 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 115 (Voluntarily causing hurt).",
+      "steps": [
+        "Introduce BNS s. 115 and Chapter VI — Of Offences Affecting the Human Body.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 115."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 115 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 115, Voluntarily causing hurt.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 115: Voluntarily causing hurt.",
+    "First ingredient: (1) Whoever does any act with the intention of thereby causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said “voluntarily to cause hurt”",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 115 — Voluntarily causing hurt. Older books and judgments may still print a historical number (321 / 323). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

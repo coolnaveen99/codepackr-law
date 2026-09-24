@@ -1,35 +1,171 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 105: punishment for culpable homicide not amounting to murder. Whoever commits culpable homicide not amounting to murder shall be punished in accordance with the statutory scale (imprisonment for life or imprisonment of either description for a term which may extend to the period stated, and fine — as per the current text). This is the correct section for CHNAM — not BNS 304 (which is snatching). IPC 304 → BNS 105.',
-  study: `Section 105 is the punishment section for culpable homicide not amounting to murder.\n\nIt applies when:\n• Death is caused with the mental element of s. 100, but none of the murder clauses of s. 101 is made out; or\n• A murder clause is made out but an exception to s. 101 applies (provocation, private defence exceeded in good faith, sudden fight, etc.).\n\nThe punishment scale is as stated in the section (life or term imprisonment and fine). It is not an acquittal — the killing remains culpable.\n\nCritical number trap: BNS section 304 is snatching, not culpable homicide. Always cite s. 105 for CHNAM for offences on or after 1 July 2024.`,
-  sections: [
-    { id: 's-105-m1', title: 'Provenance', order: 1, content: ['Successor to IPC s. 304. Punishment for the residual and excepted forms of culpable homicide.'] },
-    { id: 's-105-m2', title: 'When it applies', order: 2, content: ['s. 100 mental element without a s. 101 murder clause; or s. 101 clause + exception.'] },
-    { id: 's-105-m3', title: 'Ingredients for punishment', order: 3, content: ['Conviction for culpable homicide not amounting to murder; then apply the s. 105 scale.'] },
-    { id: 's-105-m4', title: 'Evidence', order: 4, content: ['Same evidence path as for s. 100/101; the distinction is legal (which clause/exception).'] },
-    { id: 's-105-m5', title: 'Procedure', order: 5, content: ['Court of Session; sentence under the s. 105 scale.'] },
+  "study": "Introduction and meaning\nPunishment for culpable homicide not amounting to murder (old 304). Part I — if the act is done with the intention of causing death or likely-to-cause-death injury: life, or up to 10 years, and fine. Part II — if only knowledge: up to 10 years and fine.\nIn student language: BNS s. 105 is the rule on “Punishment for culpable homicide not amounting to murder”. The section provides that whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 105 exists so that “Punishment for culpable homicide not amounting to murder” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n105. Whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death\n\nEssential ingredients\n1. Whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death\n\nPunishment / legal consequence\nPart I: life or 10 years + fine. Part II: up to 10 years + fine.",
+  "glance": "BNS s. 105 — Punishment for culpable homicide not amounting to murder.",
+  "sections": [
+    {
+      "id": "bns-105-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "105. Whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death"
+      ]
+    },
+    {
+      "id": "bns-105-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-105', section: 's. 105', title: 'Punishment for culpable homicide not amounting to murder' }],
-  examples: [
-    { id: 's-105-ex1', title: 'Exception to murder', illustrationType: 'practical', description: 'Death caused under grave and sudden provocation. Murder clause may be met, but the exception takes the case to s. 105.' },
-    { id: 's-105-ex2', title: 'Number trap', illustrationType: 'fail-scenario', description: 'Do not write “punishable under s. 304 BNS” for CHNAM. That section is snatching. Correct cite: s. 105.' },
+  "examples": [
+    {
+      "id": "bns-105-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Punishment for culpable homicide not amounting to murder”. Name BNS s. 105, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-105-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 105 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-105-hypo', title: 'CHNAM sentence', facts: 'Conviction for culpable homicide not amounting to murder after a sudden-fight exception is accepted.', question: 'Which section governs punishment?', applicableLaw: 'BNS s. 105.', analysis: 's. 105 is the correct punishment section.', conclusion: 'Sentence under s. 105.' }],
-  distinctions: [{ id: 's-105-dist', title: 's. 105 vs s. 103 vs s. 304', left: 's. 105 (CHNAM)', right: 's. 103 (murder) / s. 304 (snatching)', rows: [{ point: 'What it punishes', left: 'Culpable homicide not amounting to murder', right: 'Murder / Snatching (different offence)' }] }],
-  misconceptions: [
-    { id: 's-105-trap-1', trap: 'BNS 304 is the punishment for culpable homicide not amounting to murder.', correction: 'BNS 304 is snatching. CHNAM is punished under s. 105.' },
-    { id: 's-105-trap-2', trap: 'An exception to s. 101 means acquittal.', correction: 'Exceptions drop the case to CHNAM under s. 105; they do not acquit.' },
+  "hypotheticals": [
+    {
+      "id": "bns-105-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Punishment for culpable homicide not amounting to murder” under BNS s. 105 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 105 (Punishment for culpable homicide not amounting to murder) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 105. Chapter VI — Of Offences Affecting the Human Body. Connected: BNS s. 100, BNS s. 101.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 105 (Punishment for culpable homicide not amounting to murder), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 105 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 105 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 105. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-105-brief', draftingCategory: 'brief', question: 'What is the correct BNS section for punishment of culpable homicide not amounting to murder?', answer: 'Section 105. (BNS 304 is snatching, not CHNAM. Exceptions to s. 101 lead to s. 105, not acquittal.)', explanation: 'Short note.' },
-    { id: 's-105-sub', draftingCategory: 'submissions', question: 'Submissions on sentence under s. 105.', answer: 'I. CHNAM established (exception or residual s. 100). II. s. 105 scale. III. Mitigating factors. IV. Prayer.', explanation: 'Submissions.' },
+  "distinctions": [
+    {
+      "id": "bns-105-dist",
+      "title": "BNS s. 105 and connected sections",
+      "left": "BNS s. 105",
+      "right": "BNS s. 100, BNS s. 101",
+      "rows": [
+        {
+          "point": "Heading",
+          "left": "Punishment for culpable homicide not amounting to murder",
+          "right": "Read the neighbour’s title on its own page before you write."
+        },
+        {
+          "point": "What you must prove",
+          "left": "Whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+        },
+        {
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 105.",
+          "right": "Citing s. 105 where the neighbour actually applies."
+        }
+      ]
+    }
   ],
-  bareActPointers: ['BNS s. 105', 'BNS s. 100', 'BNS s. 101', 'BNS s. 103', 'BNS s. 304 (snatching — do not confuse)', 'IPC s. 304 (historical)'],
-  examTips: ['Most important number trap in BNS homicide: 304 is snatching; CHNAM = 105.'],
-  revisionPoints: ['CHNAM punishment = s. 105.', 'BNS 304 = snatching.', 'Exceptions to murder → s. 105, not acquittal.'],
-  relatedTopics: ['s-100', 's-101', 's-103', 'culpable-homicide-murder', 's-304'],
+  "misconceptions": [
+    {
+      "id": "bns-105-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 105."
+    },
+    {
+      "id": "bns-105-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-105-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-105-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 105 (Punishment for culpable homicide not amounting to murder)",
+      "answer": "Introduction. BNS s. 105 deals with Punishment for culpable homicide not amounting to murder. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Punishment for culpable homicide not amounting to murder (old 304). Part I — if the act is done with the intention of causing death or likely-to-cause-death injury: life, or up to 10 years, and fine. Part II — if only knowledge: up to 10 years and fine.\n\nLegal rule. In student language: BNS s. 105 is the rule on “Punishment for culpable homicide not amounting to murder”. The section provides that whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 105. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Part I: life or 10 years + fine. Part II: up to 10 years + fine.\n\nConnected sections. Read with BNS s. 100, BNS s. 101. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 105 is the complete current-law heading for Punishment for culpable homicide not amounting to murder. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-105-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 105 (Punishment for culpable homicide not amounting to murder) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 105 deals with Punishment for culpable homicide not amounting to murder. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Punishment for culpable homicide not amounting to murder (old 304). Part I — if the act is done with the intention of causing death or likely-to-cause-death injury: life, or up to 10 years, and fine. Part II — if only knowledge: up to 10 years and fine.\n\nLegal rule. In student language: BNS s. 105 is the rule on “Punishment for culpable homicide not amounting to murder”. The section provides that whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 105. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Part I: life or 10 years + fine. Part II: up to 10 years + fine.\n\nConnected sections. Read with BNS s. 100, BNS s. 101. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 105 is the complete current-law heading for Punishment for culpable homicide not amounting to murder. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 105 with BNS s. 100, BNS s. 101. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 105.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Regina v. Govinda",
+      "year": 1876,
+      "citation": "(1876) 1 Bom 342",
+      "holding": "The classic Indian distinction between culpable homicide and murder — intention and the degree of probability of death. Still the starting case for ss. 100–101."
+    },
+    {
+      "name": "K.M. Nanavati v. State of Maharashtra",
+      "year": 1962,
+      "citation": "AIR 1962 SC 605",
+      "holding": "Grave and sudden provocation is an exception to murder, not a free pass. The reasonable-person test and the cooling-off interval. Exception 1 to s. 101."
+    }
+  ],
+  "examTips": [
+    "Cite BNS s. 105 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "A rash driver who kills is usually s. 106, not 105, unless knowledge of likely death is made out at the 100/101 level."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 105 (Punishment for culpable homicide not amounting to murder).",
+      "steps": [
+        "Introduce BNS s. 105 and Chapter VI — Of Offences Affecting the Human Body.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 105."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 105 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Distinguish BNS s. 105 from BNS s. 100, BNS s. 101.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 105, Punishment for culpable homicide not amounting to murder.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 105: Punishment for culpable homicide not amounting to murder.",
+    "First ingredient: Whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 105 — Punishment for culpable homicide not amounting to murder. Older books and judgments may still print a historical number (304). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": [
+    "s-100",
+    "s-101"
+  ]
 }
 
 export default content

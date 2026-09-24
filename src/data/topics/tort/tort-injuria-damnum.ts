@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Injuria sine damno means infringement of a legal right without consequential loss and can be actionable; damnum sine injuria means loss without infringement of a legal right and is ordinarily not actionable.",
   "study": "Injuria sine damno means infringement of a legal right without consequential loss and can be actionable; damnum sine injuria means loss without infringement of a legal right and is ordinarily not actionable.\\n\\nThe distinction protects legal rights without making every economic loss compensable. Ashby v White illustrates actionable infringement without measurable financial loss, while Gloucester Grammar School illustrates lawful competition causing loss without a tort. The court must identify the underlying right rather than rely on the maxim alone.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

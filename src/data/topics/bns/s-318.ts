@@ -1,32 +1,223 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 318 (and related cheating provisions): cheating — deceiving a person fraudulently or dishonestly to induce delivery of property, or to consent to retention of property, or to do/omit an act that causes or is likely to cause damage/harm to body, mind, reputation or property. Successor to IPC s. 415/420. Aggravated forms (cheating and dishonestly inducing delivery of property) carry higher punishment.',
-  study: `Cheating under the BNS:\n\nWhoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to cheat.\n\nKey points\n• Deception + fraudulent/dishonest inducement.\n• Delivery of property, or consent to retention, or act/omission causing damage/harm.\n• Mens rea: fraudulent or dishonest.\n\nThe aggravated form (cheating and dishonestly inducing delivery of property) is the classic “420-type” offence with higher punishment.\n\nCite the applicable BNS cheating sections for post-1 July 2024 acts.`,
-  sections: [
-    { id: 's-318-m1', title: 'Provenance', order: 1, content: ['Successor to IPC ss. 415/420. Deception + fraudulent/dishonest inducement.'] },
-    { id: 's-318-m2', title: 'Definitional Elements', order: 2, content: ['Deception; fraudulent or dishonest inducement; delivery of property / consent to retention / act or omission causing damage or harm.'] },
-    { id: 's-318-m3', title: 'Ingredients', order: 3, content: ['(1) Deception. (2) Fraudulent or dishonest inducement. (3) Delivery of property or other specified consequence. (4) Damage/harm where the act/omission limb is relied upon.'] },
-    { id: 's-318-m4', title: 'Evidence', order: 4, content: ['Representation; falsity; knowledge/intention; inducement; delivery or act/omission; damage.'] },
-    { id: 's-318-m5', title: 'Procedure', order: 5, content: ['Forum per BNSS Schedule; aggravated form often non-bailable / Sessions as applicable.'] },
+  "study": "Introduction and meaning\nCheating (old 415/417/420). Deceiving a person and fraudulently or dishonestly inducing them to deliver property, or to consent that any person retain it, or to do or omit anything they would not otherwise do. The dishonest-delivery-of-property band is the old 420, now a clause of 318.\nIn student language: BNS s. 318 is the rule on “Cheating”. The section provides that (1) Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to cheat. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 318 exists so that “Cheating” has a closed legal test in Chapter XVII — Of Offences Against Property. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Theft, snatching, extortion, robbery, dacoity, trust, cheating, mischief, trespass.\n\nThe provision in detail\n318. (1) Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to cheat\n\n(2) Whoever cheats shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both\n\n(3) Whoever cheats with the knowledge that he is likely thereby to cause wrongful loss to a person whose interest in the transaction to which the cheating relates, he was bound, either by law, or by a legal contract, to protect, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both\n\n(4) Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter or destroy the whole or any part of a valuable security, or anything which is signed or sealed, and which is capable of being converted into a valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nEssential ingredients\n1. (1) Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to cheat\n2. (2) Whoever cheats shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both\n3. (3) Whoever cheats with the knowledge that he is likely thereby to cause wrongful loss to a person whose interest in the transaction to which the cheating relates, he was bound, either by law, or by a legal contract, to protect, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both\n4. (4) Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter or destroy the whole or any part of a valuable security, or anything which is signed or sealed, and which is capable of being converted into a valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nPunishment / legal consequence\nUp to 3 years; dishonest delivery of property: up to 7 years + fine.\n\nStatutory illustrations\nIllustration (a). A, by falsely pretending to be in the Civil Service, intentionally deceives Z, and thus dishonestly induces Z to let him have on credit goods for which he does not mean to pay. A cheats\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 318 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (b). A, by putting a counterfeit mark on an article, intentionally deceives Z into a belief that this article was made by a certain celebrated manufacturer, and thus dishonestly induces Z to buy and pay for the article. A cheats\n\nExam use: quote illustration (b), then write which ingredient of BNS s. 318 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (c). A, by exhibiting to Z a false sample of an article intentionally deceives Z into believing that the article corresponds with the sample, and thereby dishonestly induces Z to buy and pay for the article. A cheats\n\nExam use: quote illustration (c), then write which ingredient of BNS s. 318 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (d). A, by tendering in payment for an article a bill on a house with which A keeps no money, and by which A expects that the bill will be dishonoured, intentionally deceives Z, and thereby dishonestly induces Z to deliver the article, intending not to pay for it. A cheats\n\nExam use: quote illustration (d), then write which ingredient of BNS s. 318 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (e). A, by pledging as diamonds articles which he knows are not diamonds, intentionally deceives Z, and thereby dishonestly induces Z to lend money. A cheats\n\nExam use: quote illustration (e), then write which ingredient of BNS s. 318 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (f). A intentionally deceives Z into a belief that A means to repay any money that Z may lend to him and thereby dishonestly induces Z to lend him money, A not intending to repay it. A cheats\n\nExam use: quote illustration (f), then write which ingredient of BNS s. 318 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (g). A intentionally deceives Z into a belief that A means to deliver to Z a certain quantity of indigo plant which he does not intend to deliver, and thereby dishonestly induces Z to advance money upon the faith of such delivery. A cheats; but if A, at the time of obtaining the money, intends to deliver the indigo plant, and afterwards breaks his contract and does not deliver it, he does not cheat, but is liable only to a civil action for breach of contract\n\nExam use: quote illustration (g), then write which ingredient of BNS s. 318 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (h). A intentionally deceives Z into a belief that A has performed A’s part of a contract made with Z, which he has not performed, and thereby dishonestly induces Z to pay money. A cheats\n\nExam use: quote illustration (h), then write which ingredient of BNS s. 318 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (i). A sells and conveys an estate to B. A, knowing that in consequence of such sale he has no right to the property, sells or mortgages the same to Z, without disclosing the fact of the previous sale and conveyance to B, and receives the purchase or mortgage money from Z. A cheats\n\nExam use: quote illustration (i), then write which ingredient of BNS s. 318 it proves. Copying the illustration without that mapping sentence does not score.\n\nExplanations\nExplanation.—A dishonest concealment of facts is a deception within the meaning of this section",
+  "glance": "BNS s. 318 — Cheating.",
+  "sections": [
+    {
+      "id": "bns-318-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "318. (1) Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to cheat",
+        "(2) Whoever cheats shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both",
+        "(3) Whoever cheats with the knowledge that he is likely thereby to cause wrongful loss to a person whose interest in the transaction to which the cheating relates, he was bound, either by law, or by a legal contract, to protect, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both",
+        "(4) Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter or destroy the whole or any part of a valuable security, or anything which is signed or sealed, and which is capable of being converted into a valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-318-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to cheat",
+        "(2) Whoever cheats shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both",
+        "(3) Whoever cheats with the knowledge that he is likely thereby to cause wrongful loss to a person whose interest in the transaction to which the cheating relates, he was bound, either by law, or by a legal contract, to protect, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both",
+        "(4) Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter or destroy the whole or any part of a valuable security, or anything which is signed or sealed, and which is capable of being converted into a valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-318-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "(a) A, by falsely pretending to be in the Civil Service, intentionally deceives Z, and thus dishonestly induces Z to let him have on credit goods for which he does not mean to pay. A cheats",
+        "(b) A, by putting a counterfeit mark on an article, intentionally deceives Z into a belief that this article was made by a certain celebrated manufacturer, and thus dishonestly induces Z to buy and pay for the article. A cheats",
+        "(c) A, by exhibiting to Z a false sample of an article intentionally deceives Z into believing that the article corresponds with the sample, and thereby dishonestly induces Z to buy and pay for the article. A cheats",
+        "(d) A, by tendering in payment for an article a bill on a house with which A keeps no money, and by which A expects that the bill will be dishonoured, intentionally deceives Z, and thereby dishonestly induces Z to deliver the article, intending not to pay for it. A cheats",
+        "(e) A, by pledging as diamonds articles which he knows are not diamonds, intentionally deceives Z, and thereby dishonestly induces Z to lend money. A cheats",
+        "(f) A intentionally deceives Z into a belief that A means to repay any money that Z may lend to him and thereby dishonestly induces Z to lend him money, A not intending to repay it. A cheats",
+        "(g) A intentionally deceives Z into a belief that A means to deliver to Z a certain quantity of indigo plant which he does not intend to deliver, and thereby dishonestly induces Z to advance money upon the faith of such delivery. A cheats; but if A, at the time of obtaining the money, intends to deliver the indigo plant, and afterwards breaks his contract and does not deliver it, he does not cheat, but is liable only to a civil action for breach of contract",
+        "(h) A intentionally deceives Z into a belief that A has performed A’s part of a contract made with Z, which he has not performed, and thereby dishonestly induces Z to pay money. A cheats",
+        "(i) A sells and conveys an estate to B. A, knowing that in consequence of such sale he has no right to the property, sells or mortgages the same to Z, without disclosing the fact of the previous sale and conveyance to B, and receives the purchase or mortgage money from Z. A cheats"
+      ]
+    },
+    {
+      "id": "bns-318-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation.—A dishonest concealment of facts is a deception within the meaning of this section"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-318', section: 's. 318', title: 'Cheating' }],
-  examples: [
-    { id: 's-318-ex1', title: 'False representation inducing delivery', illustrationType: 'practical', description: 'A falsely represents that a product is genuine and induces B to pay. Cheating (and the aggravated form if delivery of property is induced dishonestly) is made out.' },
-    { id: 's-318-ex2', title: 'Mere breach of contract', illustrationType: 'fail-scenario', description: 'A fails to perform a contract without any deception at the inception. Civil breach, not cheating, unless fraudulent/dishonest deception is proved.' },
+  "examples": [
+    {
+      "id": "bns-318-ex-1",
+      "title": "Illustration (a)",
+      "description": "A, by falsely pretending to be in the Civil Service, intentionally deceives Z, and thus dishonestly induces Z to let him have on credit goods for which he does not mean to pay. A cheats\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 318 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-318-ex-2",
+      "title": "Illustration (b)",
+      "description": "A, by putting a counterfeit mark on an article, intentionally deceives Z into a belief that this article was made by a certain celebrated manufacturer, and thus dishonestly induces Z to buy and pay for the article. A cheats\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 318 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-318-ex-3",
+      "title": "Illustration (c)",
+      "description": "A, by exhibiting to Z a false sample of an article intentionally deceives Z into believing that the article corresponds with the sample, and thereby dishonestly induces Z to buy and pay for the article. A cheats\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 318 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-318-ex-4",
+      "title": "Illustration (d)",
+      "description": "A, by tendering in payment for an article a bill on a house with which A keeps no money, and by which A expects that the bill will be dishonoured, intentionally deceives Z, and thereby dishonestly induces Z to deliver the article, intending not to pay for it. A cheats\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 318 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-318-ex-5",
+      "title": "Illustration (e)",
+      "description": "A, by pledging as diamonds articles which he knows are not diamonds, intentionally deceives Z, and thereby dishonestly induces Z to lend money. A cheats\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 318 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-318-ex-6",
+      "title": "Illustration (f)",
+      "description": "A intentionally deceives Z into a belief that A means to repay any money that Z may lend to him and thereby dishonestly induces Z to lend him money, A not intending to repay it. A cheats\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 318 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-318-ex-7",
+      "title": "Illustration (g)",
+      "description": "A intentionally deceives Z into a belief that A means to deliver to Z a certain quantity of indigo plant which he does not intend to deliver, and thereby dishonestly induces Z to advance money upon the faith of such delivery. A cheats; but if A, at the time of obtaining the money, intends to deliver the indigo plant, and afterwards breaks his contract and does not deliver it, he does not cheat, but is liable only to a civil action for breach of contract\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 318 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-318-ex-8",
+      "title": "Illustration (h)",
+      "description": "A intentionally deceives Z into a belief that A has performed A’s part of a contract made with Z, which he has not performed, and thereby dishonestly induces Z to pay money. A cheats\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 318 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-318-ex-9",
+      "title": "Illustration (i)",
+      "description": "A sells and conveys an estate to B. A, knowing that in consequence of such sale he has no right to the property, sells or mortgages the same to Z, without disclosing the fact of the previous sale and conveyance to B, and receives the purchase or mortgage money from Z. A cheats\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 318 — which fact proves which element, and what the legal result is."
+    }
   ],
-  hypotheticals: [{ id: 's-318-hypo', title: 'Cheating vs civil dispute', facts: 'Accused took money promising a service and failed to deliver; evidence of intention to deceive from the start is weak.', question: 'Is cheating made out?', applicableLaw: 'BNS cheating provisions.', analysis: 'Without proof of deception and fraudulent/dishonest intention at the time of inducement, it may remain a civil dispute.', conclusion: 'Cheating requires proof of deception and mens rea; mere failure to perform is not enough.' }],
-  distinctions: [{ id: 's-318-dist', title: 'Cheating vs Theft vs Extortion', left: 'Cheating', right: 'Theft / Extortion', rows: [{ point: 'Method', left: 'Deception inducing delivery or act/omission', right: 'Taking without consent / delivery under fear of injury' }] }],
-  misconceptions: [{ id: 's-318-trap', trap: 'Every failed promise is cheating.', correction: 'Cheating requires deception and fraudulent or dishonest inducement. A genuine promise later broken is not cheating without mens rea at the time of the promise.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-318-brief', draftingCategory: 'brief', question: 'Define cheating under the BNS.', answer: 'Deceiving a person fraudulently or dishonestly so as to induce delivery of property, consent to retention of property, or an act/omission that causes or is likely to cause damage or harm to body, mind, reputation or property. Aggravated form: cheating and dishonestly inducing delivery of property.', explanation: 'Short note.' },
-    { id: 's-318-sub', draftingCategory: 'submissions', question: 'Submissions on cheating.', answer: 'I. Deception. II. Fraudulent/dishonest inducement. III. Delivery or damage. IV. Distinction from civil breach. V. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-318-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "(a) A, by falsely pretending to be in the Civil Service, intentionally deceives Z, and thus dishonestly induces Z to let him have on credit goods for which he does not mean to pay. A cheats",
+      "question": "Whether BNS s. 318 (Cheating) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 318. Chapter XVII — Of Offences Against Property. Connected: BNS s. 316, BNS s. 319.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 318 (Cheating), Chapter XVII — Of Offences Against Property.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to cheat\n   (2) (2) Whoever cheats shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both\n   (3) (3) Whoever cheats with the knowledge that he is likely thereby to cause wrongful loss to a person whose interest in the transaction to which the cheating relates, he was bound, either by law, or by a legal contract, to protect, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both\n   (4) (4) Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter or destroy the whole or any part of a valuable security, or anything which is signed or sealed, and which is capable of being converted into a valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 318 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 318. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS cheating provisions', 'BNS s. 303', 'BNS s. 308', 'IPC ss. 415/420 (historical)'],
-  examTips: ['Stress deception + mens rea at the time of inducement.', 'Mere breach of contract is not cheating.'],
-  revisionPoints: ['Deception + fraudulent/dishonest inducement + delivery or damage.', 'Not every failed promise is cheating.', 'Aggravated form = dishonestly inducing delivery of property.'],
-  relatedTopics: ['s-303', 's-308', 's-2'],
+  "distinctions": [
+    {
+      "id": "bns-318-dist",
+      "title": "BNS s. 318 and connected sections",
+      "left": "BNS s. 318",
+      "right": "BNS s. 316, BNS s. 319",
+      "rows": [
+        {
+          "point": "Heading",
+          "left": "Cheating",
+          "right": "Read the neighbour’s title on its own page before you write."
+        },
+        {
+          "point": "What you must prove",
+          "left": "(1) Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to cheat",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+        },
+        {
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 318.",
+          "right": "Citing s. 318 where the neighbour actually applies."
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-318-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 318."
+    },
+    {
+      "id": "bns-318-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-318-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-318-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 318 (Cheating)",
+      "answer": "Introduction. BNS s. 318 deals with Cheating. It sits in Chapter XVII — Of Offences Against Property of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Cheating (old 415/417/420). Deceiving a person and fraudulently or dishonestly inducing them to deliver property, or to consent that any person retain it, or to do or omit anything they would not otherwise do. The dishonest-delivery-of-property band is the old 420, now a clause of 318.\n\nLegal rule. In student language: BNS s. 318 is the rule on “Cheating”. The section provides that (1) Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to cheat. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to cheat\n2. (2) Whoever cheats shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both\n3. (3) Whoever cheats with the knowledge that he is likely thereby to cause wrongful loss to a person whose interest in the transaction to which the cheating relates, he was bound, either by law, or by a legal contract, to protect, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both\n4. (4) Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter or destroy the whole or any part of a valuable security, or anything which is signed or sealed, and which is capable of being converted into a valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A, by falsely pretending to be in the Civil Service, intentionally deceives Z, and thus dishonestly induces Z to let him have on credit goods for which he does not mean to pay. A cheats\n\nExplanations. Explanation.—A dishonest concealment of facts is a deception within the meaning of this section An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 318. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Up to 3 years; dishonest delivery of property: up to 7 years + fine.\n\nConnected sections. Read with BNS s. 316, BNS s. 319. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 318 is the complete current-law heading for Cheating. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-318-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 318 (Cheating) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 318 deals with Cheating. It sits in Chapter XVII — Of Offences Against Property of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Cheating (old 415/417/420). Deceiving a person and fraudulently or dishonestly inducing them to deliver property, or to consent that any person retain it, or to do or omit anything they would not otherwise do. The dishonest-delivery-of-property band is the old 420, now a clause of 318.\n\nLegal rule. In student language: BNS s. 318 is the rule on “Cheating”. The section provides that (1) Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to cheat. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to cheat\n2. (2) Whoever cheats shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both\n3. (3) Whoever cheats with the knowledge that he is likely thereby to cause wrongful loss to a person whose interest in the transaction to which the cheating relates, he was bound, either by law, or by a legal contract, to protect, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both\n4. (4) Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter or destroy the whole or any part of a valuable security, or anything which is signed or sealed, and which is capable of being converted into a valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A, by falsely pretending to be in the Civil Service, intentionally deceives Z, and thus dishonestly induces Z to let him have on credit goods for which he does not mean to pay. A cheats\n\nExplanations. Explanation.—A dishonest concealment of facts is a deception within the meaning of this section An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 318. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Up to 3 years; dishonest delivery of property: up to 7 years + fine.\n\nConnected sections. Read with BNS s. 316, BNS s. 319. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 318 is the complete current-law heading for Cheating. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Theft, snatching, extortion, robbery, dacoity, trust, cheating, mischief, trespass.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second statutory illustration. Illustration (b): (b) A, by putting a counterfeit mark on an article, intentionally deceives Z into a belief that this article was made by a certain celebrated manufacturer, and thus dishonestly induces Z to buy and pay for the article. A cheats Contrast it with illustration (a). The legal weight lies in the contrast.\n\nLayer 3 — Distinction. Contrast BNS s. 318 with BNS s. 316, BNS s. 319. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 318.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 318 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "There is no “s. 420 BNS”. Old 420 is inside s. 318. Writing 420 in a 2025 charge is the classic conversion error."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 318 (Cheating).",
+      "steps": [
+        "Introduce BNS s. 318 and Chapter XVII — Of Offences Against Property.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 318."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 318 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second statutory illustration and contrast it with the first.",
+        "Distinguish BNS s. 318 from BNS s. 316, BNS s. 319.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 318, Cheating.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 318: Cheating.",
+    "First ingredient: (1) Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to cheat",
+    "9 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 318 — Cheating. Older books and judgments may still print a historical number (415 / 417 / 420). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": [
+    "s-316",
+    "s-319"
+  ]
 }
 
 export default content

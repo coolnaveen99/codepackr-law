@@ -1,30 +1,197 @@
 import type { TopicContent } from '../loadTopicContent'
+
 const content: TopicContent = {
- glance:"BNS Section 330: House-trespass and house-breaking. Historical IPC concordance: s. 443/445.",
- study:"Section 330 — House-trespass and house-breaking. Apply the enacted BNS text and its explanations, provisos and illustrations. Historical IPC concordance: s. 443/445. Historical numbering is comparative only; for post-1 July 2024 conduct the BNS governs. Focus on the property offence architecture: possession, dishonest intention, movement or delivery, force/fear, entrustment or deception as applicable, and the aggravating statutory circumstances. Coordinate substantive analysis with the BNSS 2023 procedural framework and the BSA 2023 rules on admissibility, proof, electronic records and presumptions where relevant.",
- sections:[
- {id:'s-330-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:["BNS Chapter xvii — Criminal trespass.","BNS s. 330: House-trespass and house-breaking.","Historical IPC concordance: s. 443/445.","Protected interest and legislative function: Focus on the property offence architecture: possession, dishonest intention, movement or delivery, force/fear, entrustment or deception as applicable, and the aggravating statutory circumstances."],
- {id:'s-330-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:["Start with the operative verbs, required status or circumstance, object of the offence and any qualifying words in s. 330.","Separate mandatory elements from illustrations, explanations, provisos and punishment clauses.","Do not enlarge the offence by analogy: every material ingredient must be anchored in the enacted text.","For offences involving documents, electronic records, custody, public proceedings or public authority, identify the precise statutory trigger before moving to evidence."],
- {id:'s-330-m3',title:'Mandatory Proving Ingredients & Issue-Spotting',order:3,content:["Build an ingredient matrix: conduct; object or victim; required circumstance/status; mens rea; causation/materiality where required; and any aggravating fact.","Map each ingredient to a fact capable of being proved by admissible evidence.","Test alternative explanations and distinguish mere irregularity, mistake, negligence or civil breach from the mental element expressly required by the section.","Where the provision incorporates another section, prove the incorporated element rather than treating the cross-reference as automatic."],
- {id:'s-330-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:["The prosecution ordinarily bears the burden of proving the charged ingredients beyond reasonable doubt, subject to applicable statutory presumptions or burdens.","Apply the BSA 2023 to relevance, admissibility, documentary and electronic evidence, authenticity, integrity and proof of the underlying fact.","For digital evidence, preserve provenance, metadata and chain of custody and distinguish authenticity from the truth or weight of the material.","A contradiction, inconsistency or procedural defect is not automatically the charged offence; connect it to the exact statutory ingredient."],
- {id:'s-330-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:["Identify the BNSS 2023 route for information, investigation, cognizance, complaint requirements, trial and evidence.","Check the current BNSS First Schedule for cognizability, bailability and the competent trial court rather than relying on historical IPC classifications.","For offences linked to courts, public servants, evidence or public justice, verify any special BNSS cognizance restriction or sanction requirement before filing or prosecuting.","Apply the repeal-and-savings framework to pre-1 July 2024 conduct and use current BNS/BNSS/BSA provisions for post-commencement conduct."]
- ],
- provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-330',section:'s. 330',title:"House-trespass and house-breaking"}],
- examples:[
- {id:'s-330-ex1',title:'Complete statutory proof',illustrationType:'practical',description:"The evidence establishes each material ingredient of s. 330, including the required mental element or circumstance, and the prosecution can connect the admissible evidence to the statutory act. Focus on the property offence architecture: possession, dishonest intention, movement or delivery, force/fear, entrustment or deception as applicable, and the aggravating statutory circumstances."},
- {id:'s-330-ex2',title:'Ingredient not established',illustrationType:'fail-scenario',description:"The record shows suspicious or disputed conduct, but one material ingredient—such as knowledge, intention, authority, materiality, possession, causation or the specified statutory circumstance—remains unproved."}
- ],
- hypotheticals:[{id:'s-330-hypo',title:"Chamber problem — BNS s. 330",facts:"A prosecution invokes s. 330 after a disputed event. The defence accepts the surrounding facts but contests the statutory trigger and the evidentiary basis for the required mental element or circumstance.",question:"Does the evidence satisfy every enacted ingredient of s. 330?",applicableLaw:"BNS s. 330; connected BNS provisions; BNSS 2023; BSA 2023.",analysis:"Identify each ingredient, classify the disputed fact, test admissibility and authenticity, address mens rea and any statutory exception or proviso, then apply the facts without importing an unstated element.",conclusion:"Liability follows only if every material statutory ingredient is proved to the required criminal standard."],
- distinctions:[{id:'s-330-dist',title:'Current BNS provision vs historical IPC concordance',left:"BNS s. 330",right:"Historical IPC s. 443/445",rows:[{point:'Governing substantive law',left:'Current BNS for post-commencement conduct',right:'Historical comparative material only'},{point:'Evidence framework',left:'BSA 2023',right:'Indian Evidence Act was the former framework'},{point:'Procedure',left:'BNSS 2023',right:'CrPC was the former framework'}]}],
- misconceptions:[{id:'s-330-trap',trap:"Any suspicious, inaccurate or irregular conduct automatically establishes BNS s. 330.",correction:"The prosecution must prove the exact statutory act, circumstances and mental element required by s. 330.",{id:'s-330-trap2',trap:'Historical IPC numbering determines current liability.',correction:'The enacted BNS provision governs post-1 July 2024 conduct; IPC references are for historical concordance only.'}],
- cases:[],
- questionsAndAnswers:[
- {id:'s-330-qa1',draftingCategory:'brief',question:"How should BNS s. 330 be analysed?",answer:"State the enacted rule; isolate every ingredient; identify the relevant status, act, object and mental element; map admissible evidence to each ingredient; address connected BNSS/BSA issues; then apply the facts and conclude.",explanation:'This separates substantive liability from evidentiary and procedural questions.'},
- {id:'s-330-qa2',draftingCategory:'submissions',question:'What should a written submission on this provision contain?',answer:"Issue; statutory text and ingredients; admitted facts; disputed facts; evidence and BSA 2023 objections; BNSS 2023 procedural points; application ingredient-by-ingredient; relief or conclusion.",explanation:'Use verified authorities only. Where no authority has been verified for the repository entry, rely on the enacted text and mark no case-law proposition.'}
- ],
- bareActPointers:["BNS s. 330 — House-trespass and house-breaking","BNS Chapter xvii","Historical IPC concordance: s. 443/445.",'BNSS 2023 — applicable procedural and First Schedule provisions','BSA 2023 — applicable relevance, proof and electronic-evidence provisions'],
- examTips:['Begin with the enacted BNS wording and identify every constituent element.','Do not treat the IPC concordance as the governing offence for post-commencement conduct.','Map disputed facts to admissible evidence and address mens rea separately.','Verify the current BNSS procedural classification and BSA evidentiary requirements.'],
- revisionPoints:["s. 330: House-trespass and house-breaking","Historical IPC concordance: s. 443/445.",'Current BNS, BNSS 2023 and BSA 2023 govern the modern analysis.','Conviction requires proof of every material ingredient beyond reasonable doubt.'],
- relatedTopics:["s. 329","s. 331"]
+  "study": "Introduction and meaning\nHouse-trespass and house-breaking. BNS restatement of IPC 443 / 445. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 443 / 445. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 330 is the rule on “House-trespass and house-breaking”. The section provides that .(1) Whoever commits house-trespass having taken precautions to conceal such house-trespass from some person who has a right to exclude or eject the trespasser from the building, tent or vessel which is the subject of the trespass, is said to commit lurking house-trespass. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 330 exists so that “House-trespass and house-breaking” has a closed legal test in Chapter XVII — Of Offences Against Property. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Theft, snatching, extortion, robbery, dacoity, trust, cheating, mischief, trespass.\n\nThe provision in detail\n330..(1) Whoever commits house-trespass having taken precautions to conceal such house-trespass from some person who has a right to exclude or eject the trespasser from the building, tent or vessel which is the subject of the trespass, is said to commit lurking house-trespass\n\n(2) A person is said to commit house-breaking who commits house-trespass if he effects his entrance into the house or any part of it in any of the six ways hereinafter described; or if, being in the house or any part of it for the purpose of committing an offence, or having committed an offence therein, he quits the house or any part of it in any of the following ways, namely:–\n\n(a) if he enters or quits through a passage made by himself, or by any abettor of the house-trespass, in order to the committing of the house-trespass;\n\n(b) if he enters or quits through any passage not intended by any person, other than himself or an abettor of the offence, for human entrance; or through any passage to which he has obtained access by scaling or climbing over any wall or building;\n\n(c) if he enters or quits through any passage which he or any abettor of the house-trespass has opened, in order to the committing of the house-trespass by any means by which that passage was not intended by the occupier of the house to be opened;\n\n(d) if he enters or quits by opening any lock in order to the committing of the house-trespass, or in order to the quitting of the house after a house-trespass;\n\n(e) if he effects his entrance or departure by using criminal force or committing an assault, or by threatening any person with assault;\n\n(f) if he enters or quits by any passage which he knows to have been fastened against such entrance or departure, and to have been unfastened by himself or by an abettor of the house-trespass\n\nEssential ingredients\n1. (1) Whoever commits house-trespass having taken precautions to conceal such house-trespass from some person who has a right to exclude or eject the trespasser from the building, tent or vessel which is the subject of the trespass, is said to commit lurking house-trespass\n2. (2) A person is said to commit house-breaking who commits house-trespass if he effects his entrance into the house or any part of it in any of the six ways hereinafter described; or if, being in the house or any part of it for the purpose of committing an offence, or having committed an offence therein, he quits the house or any part of it in any of the following ways, namely:–\n3. (a) if he enters or quits through a passage made by himself, or by any abettor of the house-trespass, in order to the committing of the house-trespass;\n4. (b) if he enters or quits through any passage not intended by any person, other than himself or an abettor of the offence, for human entrance; or through any passage to which he has obtained access by scaling or climbing over any wall or building;\n5. (c) if he enters or quits through any passage which he or any abettor of the house-trespass has opened, in order to the committing of the house-trespass by any means by which that passage was not intended by the occupier of the house to be opened;\n6. (d) if he enters or quits by opening any lock in order to the committing of the house-trespass, or in order to the quitting of the house after a house-trespass;\n7. (e) if he effects his entrance or departure by using criminal force or committing an assault, or by threatening any person with assault;\n8. (f) if he enters or quits by any passage which he knows to have been fastened against such entrance or departure, and to have been unfastened by himself or by an abettor of the house-trespass\n\nStatutory illustrations\nIllustration (a). A commits house-trespass by making a hole through the wall of Z’s house, and putting his hand through the aperture. This is house-breaking\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 330 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (b). A commits house-trespass by creeping into a ship at a port-hole between decks. This is house-breaking\n\nExam use: quote illustration (b), then write which ingredient of BNS s. 330 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (c). A commits house-trespass by entering Z’s house through a window. This is house-breaking\n\nExam use: quote illustration (c), then write which ingredient of BNS s. 330 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (d). A commits house-trespass by entering Z’s house through the door, having opened a door which was fastened. This is house-breaking\n\nExam use: quote illustration (d), then write which ingredient of BNS s. 330 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (e). A commits house-trespass by entering Z’s house through the door, having lifted a latch by putting a wire through a hole in the door. This is house-breaking\n\nExam use: quote illustration (e), then write which ingredient of BNS s. 330 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (f). A finds the key of Z’s house door, which Z had lost, and commits house-trespass by entering Z’s house, having opened the door with that key. This is house-breaking\n\nExam use: quote illustration (f), then write which ingredient of BNS s. 330 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (g). Z is standing in his doorway. A forces a passage by knocking Z down, and commits house-trespass by entering the house. This is house-breaking\n\nExam use: quote illustration (g), then write which ingredient of BNS s. 330 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (h). Z, the door-keeper of Y, is standing in Y’s doorway. A commits house-trespass by entering the house, having deterred Z from opposing him by threatening to beat him. This is house-breaking\n\nExam use: quote illustration (h), then write which ingredient of BNS s. 330 it proves. Copying the illustration without that mapping sentence does not score.\n\nExplanations\nExplanation.—Any out-house or building occupied with a house, and between which and such house there is an immediate internal communication, is part of the house within the meaning of this section",
+  "glance": "BNS s. 330 — House-trespass and house-breaking.",
+  "sections": [
+    {
+      "id": "bns-330-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "330..(1) Whoever commits house-trespass having taken precautions to conceal such house-trespass from some person who has a right to exclude or eject the trespasser from the building, tent or vessel which is the subject of the trespass, is said to commit lurking house-trespass",
+        "(2) A person is said to commit house-breaking who commits house-trespass if he effects his entrance into the house or any part of it in any of the six ways hereinafter described; or if, being in the house or any part of it for the purpose of committing an offence, or having committed an offence therein, he quits the house or any part of it in any of the following ways, namely:–",
+        "(a) if he enters or quits through a passage made by himself, or by any abettor of the house-trespass, in order to the committing of the house-trespass;",
+        "(b) if he enters or quits through any passage not intended by any person, other than himself or an abettor of the offence, for human entrance; or through any passage to which he has obtained access by scaling or climbing over any wall or building;",
+        "(c) if he enters or quits through any passage which he or any abettor of the house-trespass has opened, in order to the committing of the house-trespass by any means by which that passage was not intended by the occupier of the house to be opened;",
+        "(d) if he enters or quits by opening any lock in order to the committing of the house-trespass, or in order to the quitting of the house after a house-trespass;",
+        "(e) if he effects his entrance or departure by using criminal force or committing an assault, or by threatening any person with assault;",
+        "(f) if he enters or quits by any passage which he knows to have been fastened against such entrance or departure, and to have been unfastened by himself or by an abettor of the house-trespass"
+      ]
+    },
+    {
+      "id": "bns-330-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Whoever commits house-trespass having taken precautions to conceal such house-trespass from some person who has a right to exclude or eject the trespasser from the building, tent or vessel which is the subject of the trespass, is said to commit lurking house-trespass",
+        "(2) A person is said to commit house-breaking who commits house-trespass if he effects his entrance into the house or any part of it in any of the six ways hereinafter described; or if, being in the house or any part of it for the purpose of committing an offence, or having committed an offence therein, he quits the house or any part of it in any of the following ways, namely:–",
+        "(a) if he enters or quits through a passage made by himself, or by any abettor of the house-trespass, in order to the committing of the house-trespass;",
+        "(b) if he enters or quits through any passage not intended by any person, other than himself or an abettor of the offence, for human entrance; or through any passage to which he has obtained access by scaling or climbing over any wall or building;",
+        "(c) if he enters or quits through any passage which he or any abettor of the house-trespass has opened, in order to the committing of the house-trespass by any means by which that passage was not intended by the occupier of the house to be opened;",
+        "(d) if he enters or quits by opening any lock in order to the committing of the house-trespass, or in order to the quitting of the house after a house-trespass;",
+        "(e) if he effects his entrance or departure by using criminal force or committing an assault, or by threatening any person with assault;",
+        "(f) if he enters or quits by any passage which he knows to have been fastened against such entrance or departure, and to have been unfastened by himself or by an abettor of the house-trespass"
+      ]
+    },
+    {
+      "id": "bns-330-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "(a) A commits house-trespass by making a hole through the wall of Z’s house, and putting his hand through the aperture. This is house-breaking",
+        "(b) A commits house-trespass by creeping into a ship at a port-hole between decks. This is house-breaking",
+        "(c) A commits house-trespass by entering Z’s house through a window. This is house-breaking",
+        "(d) A commits house-trespass by entering Z’s house through the door, having opened a door which was fastened. This is house-breaking",
+        "(e) A commits house-trespass by entering Z’s house through the door, having lifted a latch by putting a wire through a hole in the door. This is house-breaking",
+        "(f) A finds the key of Z’s house door, which Z had lost, and commits house-trespass by entering Z’s house, having opened the door with that key. This is house-breaking",
+        "(g) Z is standing in his doorway. A forces a passage by knocking Z down, and commits house-trespass by entering the house. This is house-breaking",
+        "(h) Z, the door-keeper of Y, is standing in Y’s doorway. A commits house-trespass by entering the house, having deterred Z from opposing him by threatening to beat him. This is house-breaking"
+      ]
+    },
+    {
+      "id": "bns-330-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation.—Any out-house or building occupied with a house, and between which and such house there is an immediate internal communication, is part of the house within the meaning of this section"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "bns-330-ex-1",
+      "title": "Illustration (a)",
+      "description": "A commits house-trespass by making a hole through the wall of Z’s house, and putting his hand through the aperture. This is house-breaking\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 330 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-330-ex-2",
+      "title": "Illustration (b)",
+      "description": "A commits house-trespass by creeping into a ship at a port-hole between decks. This is house-breaking\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 330 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-330-ex-3",
+      "title": "Illustration (c)",
+      "description": "A commits house-trespass by entering Z’s house through a window. This is house-breaking\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 330 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-330-ex-4",
+      "title": "Illustration (d)",
+      "description": "A commits house-trespass by entering Z’s house through the door, having opened a door which was fastened. This is house-breaking\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 330 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-330-ex-5",
+      "title": "Illustration (e)",
+      "description": "A commits house-trespass by entering Z’s house through the door, having lifted a latch by putting a wire through a hole in the door. This is house-breaking\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 330 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-330-ex-6",
+      "title": "Illustration (f)",
+      "description": "A finds the key of Z’s house door, which Z had lost, and commits house-trespass by entering Z’s house, having opened the door with that key. This is house-breaking\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 330 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-330-ex-7",
+      "title": "Illustration (g)",
+      "description": "Z is standing in his doorway. A forces a passage by knocking Z down, and commits house-trespass by entering the house. This is house-breaking\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 330 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-330-ex-8",
+      "title": "Illustration (h)",
+      "description": "Z, the door-keeper of Y, is standing in Y’s doorway. A commits house-trespass by entering the house, having deterred Z from opposing him by threatening to beat him. This is house-breaking\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 330 — which fact proves which element, and what the legal result is."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-330-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "(a) A commits house-trespass by making a hole through the wall of Z’s house, and putting his hand through the aperture. This is house-breaking",
+      "question": "Whether BNS s. 330 (House-trespass and house-breaking) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 330. Chapter XVII — Of Offences Against Property. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 330 (House-trespass and house-breaking), Chapter XVII — Of Offences Against Property.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever commits house-trespass having taken precautions to conceal such house-trespass from some person who has a right to exclude or eject the trespasser from the building, tent or vessel which is the subject of the trespass, is said to commit lurking house-trespass\n   (2) (2) A person is said to commit house-breaking who commits house-trespass if he effects his entrance into the house or any part of it in any of the six ways hereinafter described; or if, being in the house or any part of it for the purpose of committing an offence, or having committed an offence therein, he quits the house or any part of it in any of the following ways, namely:–\n   (3) (a) if he enters or quits through a passage made by himself, or by any abettor of the house-trespass, in order to the committing of the house-trespass;\n   (4) (b) if he enters or quits through any passage not intended by any person, other than himself or an abettor of the offence, for human entrance; or through any passage to which he has obtained access by scaling or climbing over any wall or building;\n   (5) (c) if he enters or quits through any passage which he or any abettor of the house-trespass has opened, in order to the committing of the house-trespass by any means by which that passage was not intended by the occupier of the house to be opened;\n   (6) (d) if he enters or quits by opening any lock in order to the committing of the house-trespass, or in order to the quitting of the house after a house-trespass;\n   (7) (e) if he effects his entrance or departure by using criminal force or committing an assault, or by threatening any person with assault;\n   (8) (f) if he enters or quits by any passage which he knows to have been fastened against such entrance or departure, and to have been unfastened by himself or by an abettor of the house-trespass\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 330 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 330. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-330-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 330."
+    },
+    {
+      "id": "bns-330-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-330-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-330-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 330 (House-trespass and house-breaking)",
+      "answer": "Introduction. BNS s. 330 deals with House-trespass and house-breaking. It sits in Chapter XVII — Of Offences Against Property of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. House-trespass and house-breaking. BNS restatement of IPC 443 / 445. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 443 / 445. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 330 is the rule on “House-trespass and house-breaking”. The section provides that .(1) Whoever commits house-trespass having taken precautions to conceal such house-trespass from some person who has a right to exclude or eject the trespasser from the building, tent or vessel which is the subject of the trespass, is said to commit lurking house-trespass. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever commits house-trespass having taken precautions to conceal such house-trespass from some person who has a right to exclude or eject the trespasser from the building, tent or vessel which is the subject of the trespass, is said to commit lurking house-trespass\n2. (2) A person is said to commit house-breaking who commits house-trespass if he effects his entrance into the house or any part of it in any of the six ways hereinafter described; or if, being in the house or any part of it for the purpose of committing an offence, or having committed an offence therein, he quits the house or any part of it in any of the following ways, namely:–\n3. (a) if he enters or quits through a passage made by himself, or by any abettor of the house-trespass, in order to the committing of the house-trespass;\n4. (b) if he enters or quits through any passage not intended by any person, other than himself or an abettor of the offence, for human entrance; or through any passage to which he has obtained access by scaling or climbing over any wall or building;\n5. (c) if he enters or quits through any passage which he or any abettor of the house-trespass has opened, in order to the committing of the house-trespass by any means by which that passage was not intended by the occupier of the house to be opened;\n6. (d) if he enters or quits by opening any lock in order to the committing of the house-trespass, or in order to the quitting of the house after a house-trespass;\n7. (e) if he effects his entrance or departure by using criminal force or committing an assault, or by threatening any person with assault;\n8. (f) if he enters or quits by any passage which he knows to have been fastened against such entrance or departure, and to have been unfastened by himself or by an abettor of the house-trespass\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A commits house-trespass by making a hole through the wall of Z’s house, and putting his hand through the aperture. This is house-breaking\n\nExplanations. Explanation.—Any out-house or building occupied with a house, and between which and such house there is an immediate internal communication, is part of the house within the meaning of this section An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 330. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 330 is the complete current-law heading for House-trespass and house-breaking. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-330-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 330 (House-trespass and house-breaking) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 330 deals with House-trespass and house-breaking. It sits in Chapter XVII — Of Offences Against Property of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. House-trespass and house-breaking. BNS restatement of IPC 443 / 445. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 443 / 445. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 330 is the rule on “House-trespass and house-breaking”. The section provides that .(1) Whoever commits house-trespass having taken precautions to conceal such house-trespass from some person who has a right to exclude or eject the trespasser from the building, tent or vessel which is the subject of the trespass, is said to commit lurking house-trespass. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever commits house-trespass having taken precautions to conceal such house-trespass from some person who has a right to exclude or eject the trespasser from the building, tent or vessel which is the subject of the trespass, is said to commit lurking house-trespass\n2. (2) A person is said to commit house-breaking who commits house-trespass if he effects his entrance into the house or any part of it in any of the six ways hereinafter described; or if, being in the house or any part of it for the purpose of committing an offence, or having committed an offence therein, he quits the house or any part of it in any of the following ways, namely:–\n3. (a) if he enters or quits through a passage made by himself, or by any abettor of the house-trespass, in order to the committing of the house-trespass;\n4. (b) if he enters or quits through any passage not intended by any person, other than himself or an abettor of the offence, for human entrance; or through any passage to which he has obtained access by scaling or climbing over any wall or building;\n5. (c) if he enters or quits through any passage which he or any abettor of the house-trespass has opened, in order to the committing of the house-trespass by any means by which that passage was not intended by the occupier of the house to be opened;\n6. (d) if he enters or quits by opening any lock in order to the committing of the house-trespass, or in order to the quitting of the house after a house-trespass;\n7. (e) if he effects his entrance or departure by using criminal force or committing an assault, or by threatening any person with assault;\n8. (f) if he enters or quits by any passage which he knows to have been fastened against such entrance or departure, and to have been unfastened by himself or by an abettor of the house-trespass\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A commits house-trespass by making a hole through the wall of Z’s house, and putting his hand through the aperture. This is house-breaking\n\nExplanations. Explanation.—Any out-house or building occupied with a house, and between which and such house there is an immediate internal communication, is part of the house within the meaning of this section An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 330. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 330 is the complete current-law heading for House-trespass and house-breaking. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Theft, snatching, extortion, robbery, dacoity, trust, cheating, mischief, trespass.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second statutory illustration. Illustration (b): (b) A commits house-trespass by creeping into a ship at a port-hole between decks. This is house-breaking Contrast it with illustration (a). The legal weight lies in the contrast.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 330. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 330.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 330 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 330 (House-trespass and house-breaking).",
+      "steps": [
+        "Introduce BNS s. 330 and Chapter XVII — Of Offences Against Property.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 330."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 330 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second statutory illustration and contrast it with the first.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 330, House-trespass and house-breaking.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 330: House-trespass and house-breaking.",
+    "First ingredient: (1) Whoever commits house-trespass having taken precautions to conceal such house-trespass from some person who has a right to exclude or eject the trespasser from the building, tent or vessel which is the subject of the trespass, is said to commit lurking house-trespass",
+    "8 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 330 — House-trespass and house-breaking. Older books and judgments may still print a historical number (443 / 445). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
+
 export default content

@@ -1,29 +1,130 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
- glance:'BNS Section 201: Public servant framing an incorrect document with intent to cause injury. Historical IPC concordance: 167.',
- study:`Section 201 — Public servant framing an incorrect document with intent to cause injury.\n\nApply the enacted BNS wording and every qualification, explanation and proviso. Historical IPC concordance: 167. The historical number is comparative only; for post-1 July 2024 conduct the BNS text governs. Where the offence depends on another statutory process or duty, establish that underlying legal obligation before applying the penal provision.`,
- sections:[
- {id:'s-201-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:['Chapter xii; cluster: Public servants.','BNS s. 201: Public servant framing an incorrect document with intent to cause injury.','Historical IPC concordance: 167.','Treat the provision as an enacted BNS offence. Historical IPC terminology may assist comparative research but does not replace the current statutory ingredients.']},
- {id:'s-201-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:['Identify the protected legal interest, the prohibited act or omission, the required status or duty, and every mental element stated by s. 201.','For liability based on an official act, order, summons, proclamation, document, electronic record or statutory duty, prove the legal source and validity of that underlying requirement.','Separate conduct that merely appears similar from conduct that satisfies the exact statutory threshold.','Apply all provisos, explanations, exceptions and cross-references before reaching a conclusion.']},
- {id:'s-201-m3',title:'Mandatory Proving Ingredients & Issue-Spotting',order:3,content:['Build an ingredient matrix for BNS s. 201: act/omission, circumstance, protected person or object, knowledge/intent where required, and any consequence or causal link expressly required.','Map each ingredient to admissible evidence rather than relying on labels or assumptions.','For public-tranquillity offences, distinguish the charged act from the underlying assembly, disturbance, obstruction or harmony-related circumstance.','For offences involving public servants or lawful authority, test the accused’s legal duty, the authority of the issuing officer and the precise non-compliance alleged.']},
- {id:'s-201-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:['The prosecution ordinarily bears the burden of proving the charged ingredients beyond reasonable doubt, subject to any applicable statutory burden.','Official records, orders, summonses, proclamations, registers and contemporaneous reports should be traced to their competent source and proved according to the BSA 2023.','Electronic records should be preserved with provenance, integrity and the applicable BSA 2023 admissibility requirements; admissibility and evidentiary weight are distinct questions.','Where intent, knowledge or deliberate omission is disputed, assess the surrounding conduct, communications and chronology rather than treating the result alone as proof of mens rea.']},
- {id:'s-201-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:['Check the BNSS First Schedule and the enacted punishment for cognizability, bailability and the competent trial court; do not import an old CrPC classification without verification.','Check FIR/complaint requirements, investigation powers, charge framing and joinder issues applicable to the particular facts.','Where s. 201 depends on a summons, order, proclamation or official duty, verify the procedural validity and service/communication record.','Check BNSS limitation provisions where applicable and identify the date of the alleged conduct.','For pre-1 July 2024 conduct, separately analyze the repeal-and-savings framework and Article 20(1); do not apply a later penal provision retrospectively.']}
- ],
- provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-201',section:'s. 201',title:'Public servant framing an incorrect document with intent to cause injury'}],
- examples:[
- {id:'s-201-ex1',title:'Every ingredient established',illustrationType:'practical',description:'The record establishes the statutory act or omission, the required status or duty, the necessary mental element and any expressly required circumstance or consequence.'},
- {id:'s-201-ex2',title:'Underlying legal duty disputed',illustrationType:'fail-scenario',description:'The alleged conduct occurred, but the prosecution cannot establish the lawful order, duty, service, authority or other statutory precondition on which the offence depends.'}],
- hypotheticals:[{id:'s-201-hypo',title:'Chamber problem — BNS s. 201',facts:'The prosecution charges BNS s. 201; the defence accepts the surrounding events but disputes one statutory ingredient and the evidence used to establish it.',question:'Does the proved record satisfy the enacted elements of BNS s. 201?',applicableLaw:'BNS s. 201; connected BNS provisions; BNSS procedure; BSA 2023 evidence rules.',analysis:'Identify the exact statutory words; separate each ingredient; prove any underlying duty, authority, service, status or consequence; test mens rea where required; then verify BNSS classification and procedure.',conclusion:'Criminal liability follows only when every material statutory ingredient is established beyond reasonable doubt on legally admissible evidence.'}],
- distinctions:[{id:'s-201-dist',title:'Current BNS provision vs historical IPC concordance',left:'BNS s. 201',right:'Historical IPC: 167',rows:[{point:'Governing text',left:'Enacted BNS wording',right:'Historical material is comparative only'},{point:'Ingredients',left:'Current statutory words and qualifications',right:'Do not assume identical scope or numbering'},{point:'Procedure',left:'Current BNSS classification and procedure',right:'Old CrPC classification is not automatically controlling'}]}],
- misconceptions:[{id:'s-201-trap',trap:'The historical IPC number is itself the current legal test.',correction:'The enacted BNS provision and its qualifications govern post-commencement conduct.'},{id:'s-201-trap2',trap:'Proof of the surrounding event automatically proves the offence.',correction:'Each statutory ingredient, including any duty, authority, knowledge, intention, service or consequence expressly required, must be established.'}],
- cases:[],
- questionsAndAnswers:[
- {id:'s-201-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment under BNS s. 201.',answer:`I. ISSUE.\nII. STATUTORY RULE.\nIII. INGREDIENT MATRIX.\nIV. EVIDENCE.\nV. PROCEDURE.\nVI. APPLICATION.\nVII. CONCLUSION.`,explanation:'A chamber-ready structure without unverified case citations.'},
- {id:'s-201-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 201.',answer:`I. STATUTORY SCHEME.\nII. INGREDIENTS NOT IN DISPUTE.\nIII. INGREDIENTS IN DISPUTE.\nIV. EVIDENCE AND BURDEN.\nV. PROCEDURAL OBJECTIONS, IF ANY.\nVI. RELIEF / CONCLUSION.`,explanation:'Separate statutory interpretation, proof and procedure; do not invent authorities.'}],
- bareActPointers:['BNS s. 201 — Public servant framing an incorrect document with intent to cause injury','BNS Chapter xii — Public servants','Historical IPC concordance: 167.','BNSS First Schedule and applicable procedural provisions','BSA 2023 provisions governing relevant documentary/electronic evidence'],
- examTips:['Start with the enacted BNS wording and identify every ingredient.','If liability depends on a legal duty or official process, prove that predicate first.','Separate admissibility from evidentiary weight under the BSA 2023.','Cross-check current BNSS classification and procedure.'],
- revisionPoints:['BNS s. 201: Public servant framing an incorrect document with intent to cause injury.','Cluster: Public servants.','Historical IPC concordance: 167.','Current BNS wording governs post-commencement conduct; verify procedural classification under BNSS.'],
- relatedTopics:[]
+  "study": "Introduction and meaning\nPublic servant framing an incorrect document with intent to cause injury. BNS restatement of IPC 167. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 167. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 201 is the rule on “Public servant framing an incorrect document with intent to cause injury”. The section provides that whoever, being a public servant, and being, as such public servant, charged with the preparation or translation of any document or electronic record, frames, prepares or translates that document or electronic record in a manner which he knows or believes to be incorrect, intending thereby to cause or knowing it to be likely that he may thereby cause injury to any person, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 201 exists so that “Public servant framing an incorrect document with intent to cause injury” has a closed legal test in Chapter XII — Of Offences by or Relating to Public Servants. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Disobedience, unlawful trade, personation — and a new duty to treat a victim.\n\nThe provision in detail\n201. Whoever, being a public servant, and being, as such public servant, charged with the preparation or translation of any document or electronic record, frames, prepares or translates that document or electronic record in a manner which he knows or believes to be incorrect, intending thereby to cause or knowing it to be likely that he may thereby cause injury to any person, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both\n\nEssential ingredients\n1. Whoever, being a public servant, and being, as such public servant, charged with the preparation or translation of any document or electronic record, frames, prepares or translates that document or electronic record in a manner which he knows or believes to be incorrect, intending thereby to cause or knowing it to be likely that he may thereby cause injury to any person, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both",
+  "glance": "BNS s. 201 — Public servant framing an incorrect document with intent to cause injury.",
+  "sections": [
+    {
+      "id": "bns-201-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "201. Whoever, being a public servant, and being, as such public servant, charged with the preparation or translation of any document or electronic record, frames, prepares or translates that document or electronic record in a manner which he knows or believes to be incorrect, intending thereby to cause or knowing it to be likely that he may thereby cause injury to any person, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both"
+      ]
+    },
+    {
+      "id": "bns-201-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever, being a public servant, and being, as such public servant, charged with the preparation or translation of any document or electronic record, frames, prepares or translates that document or electronic record in a manner which he knows or believes to be incorrect, intending thereby to cause or knowing it to be likely that he may thereby cause injury to any person, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "bns-201-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Public servant framing an incorrect document with intent to cause injury”. Name BNS s. 201, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-201-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 201 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-201-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Public servant framing an incorrect document with intent to cause injury” under BNS s. 201 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 201 (Public servant framing an incorrect document with intent to cause injury) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 201. Chapter XII — Of Offences by or Relating to Public Servants. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 201 (Public servant framing an incorrect document with intent to cause injury), Chapter XII — Of Offences by or Relating to Public Servants.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever, being a public servant, and being, as such public servant, charged with the preparation or translation of any document or electronic record, frames, prepares or translates that document or electronic record in a manner which he knows or believes to be incorrect, intending thereby to cause or knowing it to be likely that he may thereby cause injury to any person, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 201 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 201 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 201. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-201-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 201."
+    },
+    {
+      "id": "bns-201-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-201-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-201-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 201 (Public servant framing an incorrect document with intent to cause injury)",
+      "answer": "Introduction. BNS s. 201 deals with Public servant framing an incorrect document with intent to cause injury. It sits in Chapter XII — Of Offences by or Relating to Public Servants of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Public servant framing an incorrect document with intent to cause injury. BNS restatement of IPC 167. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 167. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 201 is the rule on “Public servant framing an incorrect document with intent to cause injury”. The section provides that whoever, being a public servant, and being, as such public servant, charged with the preparation or translation of any document or electronic record, frames, prepares or translates that document or electronic record in a manner which he knows or believes to be incorrect, intending thereby to cause or knowing it to be likely that he may thereby cause injury to any person, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever, being a public servant, and being, as such public servant, charged with the preparation or translation of any document or electronic record, frames, prepares or translates that document or electronic record in a manner which he knows or believes to be incorrect, intending thereby to cause or knowing it to be likely that he may thereby cause injury to any person, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 201. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 201 is the complete current-law heading for Public servant framing an incorrect document with intent to cause injury. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-201-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 201 (Public servant framing an incorrect document with intent to cause injury) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 201 deals with Public servant framing an incorrect document with intent to cause injury. It sits in Chapter XII — Of Offences by or Relating to Public Servants of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Public servant framing an incorrect document with intent to cause injury. BNS restatement of IPC 167. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 167. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 201 is the rule on “Public servant framing an incorrect document with intent to cause injury”. The section provides that whoever, being a public servant, and being, as such public servant, charged with the preparation or translation of any document or electronic record, frames, prepares or translates that document or electronic record in a manner which he knows or believes to be incorrect, intending thereby to cause or knowing it to be likely that he may thereby cause injury to any person, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever, being a public servant, and being, as such public servant, charged with the preparation or translation of any document or electronic record, frames, prepares or translates that document or electronic record in a manner which he knows or believes to be incorrect, intending thereby to cause or knowing it to be likely that he may thereby cause injury to any person, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 201. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 201 is the complete current-law heading for Public servant framing an incorrect document with intent to cause injury. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Disobedience, unlawful trade, personation — and a new duty to treat a victim.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 201. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 201.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 201 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 201 (Public servant framing an incorrect document with intent to cause injury).",
+      "steps": [
+        "Introduce BNS s. 201 and Chapter XII — Of Offences by or Relating to Public Servants.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 201."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 201 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 201, Public servant framing an incorrect document with intent to cause injury.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 201: Public servant framing an incorrect document with intent to cause injury.",
+    "First ingredient: Whoever, being a public servant, and being, as such public servant, charged with the preparation or translation of any document or electronic record, frames, prepares or translates that document or electronic record in a manner which he knows or believes to be incorrect, intending thereby to cause or knowing it to be likely that he may thereby cause injury to any person, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 201 — Public servant framing an incorrect document with intent to cause injury. Older books and judgments may still print a historical number (167). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
+
 export default content

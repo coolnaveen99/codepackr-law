@@ -1,215 +1,136 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance:
-    'Section 11 authorises a court that sentences an offender to rigorous imprisonment to order solitary confinement for a portion of that term, subject to an overall maximum of three months and a sliding scale keyed to the length of the rigorous sentence. It is the successor to IPC s. 73 and is not a free-standing punishment under s. 4.',
-
-  study: `Section 11 is a sentencing power, not an independent punishment in the s. 4 menu. It applies only when the Court has power under the BNS to sentence the offender to rigorous imprisonment.
-
-The Court may, by its sentence, order that the offender shall be kept in solitary confinement for any portion or portions of the imprisonment to which he is sentenced, not exceeding three months in the whole, according to the following scale:
-
-(a) not exceeding one month if the term of imprisonment does not exceed six months;
-(b) not exceeding two months if the term exceeds six months and does not exceed one year;
-(c) not exceeding three months if the term exceeds one year.
-
-Further limits on the manner in which the solitary periods may be distributed appear in s. 12. Solitary confinement is an exceptional measure; it is ordered only after consideration of the nature of the offence and the offender and must be expressly recorded in the sentence.
-
-Date-of-offence rule: for offences on or after 1 July 2024 cite BNS s. 11; substance is continuous with IPC s. 73.`,
-
-  sections: [
+  "study": "Introduction and meaning\nSolitary confinement. BNS restatement of IPC 73. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 73. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 11 is the rule on “Solitary confinement”. The section provides that whenever any person is convicted of an offence for which under this Sanhita the Court has power to sentence him to rigorous imprisonment, the Court may, by its sentence, order that the offender shall be kept in solitary confinement for any portion or portions of the imprisonment to which he is sentenced, not exceeding three months in the whole, according to the following scale, namely:—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 11 exists so that “Solitary confinement” has a closed legal test in Chapter II — Of Punishments. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Death, life, imprisonment, forfeiture, fine, and community service. How sentences combine, commute and enhance.\n\nThe provision in detail\n11. Whenever any person is convicted of an offence for which under this Sanhita the Court has power to sentence him to rigorous imprisonment, the Court may, by its sentence, order that the offender shall be kept in solitary confinement for any portion or portions of the imprisonment to which he is sentenced, not exceeding three months in the whole, according to the following scale, namely:—\n\n(a) a time not exceeding one month if the term of imprisonment shall not exceed six months;\n\n(b) a time not exceeding two months if the term of imprisonment shall exceed six months and shall not exceed one year;\n\n(c) a time not exceeding three months if the term of imprisonment shall exceed one year\n\nEssential ingredients\n1. Whenever any person is convicted of an offence for which under this Sanhita the Court has power to sentence him to rigorous imprisonment, the Court may, by its sentence, order that the offender shall be kept in solitary confinement for any portion or portions of the imprisonment to which he is sentenced, not exceeding three months in the whole, according to the following scale, namely:—\n2. (a) a time not exceeding one month if the term of imprisonment shall not exceed six months;\n3. (b) a time not exceeding two months if the term of imprisonment shall exceed six months and shall not exceed one year;\n4. (c) a time not exceeding three months if the term of imprisonment shall exceed one year",
+  "glance": "BNS s. 11 — Solitary confinement.",
+  "sections": [
     {
-      id: 's-11-module-1',
-      title: 'Provenance, Legislative Objective & Doctrinal Foundations',
-      order: 1,
-      content: [
-        'Section 11 succeeds IPC section 73. The BNS retains the overall three-month ceiling and the sliding scale keyed to the length of the rigorous term.',
-        'Legislative objective: permit a carefully limited period of solitary confinement as an incident of rigorous imprisonment while preventing its use as an ordinary or unlimited punishment.',
-        'Doctrinal foundation: solitary confinement is not listed as a distinct punishment in s. 4. It is an additional incident that the Court may attach to a rigorous-imprisonment sentence within the statutory ceilings. Its use is exceptional and must be justified by the facts of the case.',
-      ],
+      "id": "bns-11-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "11. Whenever any person is convicted of an offence for which under this Sanhita the Court has power to sentence him to rigorous imprisonment, the Court may, by its sentence, order that the offender shall be kept in solitary confinement for any portion or portions of the imprisonment to which he is sentenced, not exceeding three months in the whole, according to the following scale, namely:—",
+        "(a) a time not exceeding one month if the term of imprisonment shall not exceed six months;",
+        "(b) a time not exceeding two months if the term of imprisonment shall exceed six months and shall not exceed one year;",
+        "(c) a time not exceeding three months if the term of imprisonment shall exceed one year"
+      ]
     },
     {
-      id: 's-11-module-2',
-      title: 'Textual Anatomy, Provisos & Statutory Deconstruction',
-      order: 2,
-      content: [
-        'Trigger: conviction of an offence for which the Court has power under the BNS to sentence the offender to rigorous imprisonment.',
-        'Power: the Court may, by its sentence, order solitary confinement for any portion or portions of that imprisonment.',
-        'Overall ceiling: not exceeding three months in the whole.',
-        'Sliding scale: (a) ≤ 1 month when term ≤ 6 months; (b) ≤ 2 months when term > 6 months and ≤ 1 year; (c) ≤ 3 months when term > 1 year.',
-        'Further distribution limits are contained in s. 12 and must be read together with s. 11.',
-      ],
-    },
-    {
-      id: 's-11-module-3',
-      title: 'Mandatory Proving Ingredients & Essential Elements',
-      order: 3,
-      content: [
-        '1. The offender has been convicted of an offence for which rigorous imprisonment is an authorised sentence under the BNS.',
-        '2. The Court is the court that is passing the sentence of rigorous imprisonment.',
-        '3. The Court expressly orders solitary confinement for a portion or portions of that imprisonment.',
-        '4. The total period of solitary confinement does not exceed three months in the whole and respects the sliding scale in clauses (a)–(c).',
-        '5. The distribution of the solitary periods also respects the limits in s. 12.',
-      ],
-    },
-    {
-      id: 's-11-module-4',
-      title: 'Evidentiary Burdens under BSA 2023 (ss. 104–106 & s. 63)',
-      order: 4,
-      content: [
-        'Section 11 is a sentencing power. The prosecution has already proved the offence beyond reasonable doubt. No additional formal burden under BSA ss. 104–106 arises for the decision to order solitary confinement.',
-        'The Court considers the nature of the offence, the circumstances of the offender, and any material relevant to the appropriateness of solitary confinement (which may be proved on a preponderance at the sentencing stage).',
-        'Electronic or documentary material relied upon at sentencing must satisfy ordinary admissibility rules, including BSA s. 63 where applicable.',
-      ],
-    },
-    {
-      id: 's-11-module-5',
-      title: 'Procedural Roadmap, Competent Forum & Limitation Act Checkpoints',
-      order: 5,
-      content: [
-        'The order under s. 11 must be expressly recorded in the judgment of sentence. It is executed by the prison authorities in accordance with the order and with prison rules consistent with ss. 11–12.',
-        'Appeal against the order of solitary confinement lies to the ordinary appellate forum under the BNSS together with any challenge to the principal sentence.',
-        'No independent limitation period attaches; the order is part of the sentence.',
-        'Competent court: the court that is authorised to pass a sentence of rigorous imprisonment for the offence.',
-      ],
-    },
+      "id": "bns-11-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whenever any person is convicted of an offence for which under this Sanhita the Court has power to sentence him to rigorous imprisonment, the Court may, by its sentence, order that the offender shall be kept in solitary confinement for any portion or portions of the imprisonment to which he is sentenced, not exceeding three months in the whole, according to the following scale, namely:—",
+        "(a) a time not exceeding one month if the term of imprisonment shall not exceed six months;",
+        "(b) a time not exceeding two months if the term of imprisonment shall exceed six months and shall not exceed one year;",
+        "(c) a time not exceeding three months if the term of imprisonment shall exceed one year"
+      ]
+    }
   ],
-
-  provisions: [
+  "examples": [
     {
-      actId: 'bns',
-      actName: 'Bharatiya Nyaya Sanhita, 2023',
-      provisionId: 'bns-11',
-      section: 's. 11',
-      title: 'Solitary confinement',
-    },
-  ],
-
-  examples: [
-    {
-      id: 's-11-ill-1',
-      title: 'Illustration 1 — Lawful order within the scale',
-      illustrationType: 'statutory',
-      description:
-        'The Court sentences the offender to rigorous imprisonment for nine months. Under clause (b) of s. 11 it may order solitary confinement for a period not exceeding two months, and must also respect the distribution limits in s. 12. An order of one month of solitary confinement is lawful.',
+      "id": "bns-11-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Solitary confinement”. Name BNS s. 11, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
     },
     {
-      id: 's-11-ill-2',
-      title: 'Illustration 2 — Exceeding the overall ceiling',
-      illustrationType: 'fail-scenario',
-      description:
-        'The Court sentences the offender to rigorous imprisonment for three years and orders four months of solitary confinement. The order is ultra vires: the overall maximum under s. 11 is three months in the whole.',
-    },
+      "id": "bns-11-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 11 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-
-  hypotheticals: [
+  "hypotheticals": [
     {
-      id: 's-11-hypo',
-      title: 'Chamber Practice Hypothetical — Whether to order solitary confinement',
-      facts:
-        'J is convicted of a serious offence for which rigorous imprisonment is authorised. The Court is considering a term of two years’ rigorous imprisonment and is asked to add the maximum permissible solitary confinement.',
-      question:
-        'What is the maximum solitary confinement the Court may lawfully order, and what further limits apply?',
-      applicableLaw: 'BNS ss. 11 and 12; sentencing principles.',
-      analysis:
-        '1. Threshold: Rigorous imprisonment is authorised → s. 11 is available.\n2. Scale: Term exceeds one year → clause (c) permits up to three months in the whole.\n3. Distribution: The periods must also comply with the consecutive-period limits in s. 12.\n4. Discretion: Solitary confinement remains exceptional; the Court must consider whether the facts justify it.',
-      conclusion:
-        'The Court may order up to three months of solitary confinement, subject to the distribution rules in s. 12, but only if the facts warrant the exceptional measure.',
-    },
+      "id": "bns-11-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Solitary confinement” under BNS s. 11 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 11 (Solitary confinement) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 11. Chapter II — Of Punishments. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 11 (Solitary confinement), Chapter II — Of Punishments.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whenever any person is convicted of an offence for which under this Sanhita the Court has power to sentence him to rigorous imprisonment, the Court may, by its sentence, order that the offender shall be kept in solitary confinement for any portion or portions of the imprisonment to which he is sentenced, not exceeding three months in the whole, according to the following scale, namely:—\n   (2) (a) a time not exceeding one month if the term of imprisonment shall not exceed six months;\n   (3) (b) a time not exceeding two months if the term of imprisonment shall exceed six months and shall not exceed one year;\n   (4) (c) a time not exceeding three months if the term of imprisonment shall exceed one year\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 11 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 11 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 11. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-
-  distinctions: [
+  "misconceptions": [
     {
-      id: 's-11-dist-1',
-      title: 'Solitary confinement (ss. 11–12) vs Free-standing punishments (s. 4)',
-      left: 'ss. 11–12 solitary confinement',
-      right: 's. 4 punishments',
-      rows: [
-        { point: 'Status', left: 'Incident of rigorous imprisonment', right: 'Independent punishments in the sentencing menu' },
-        { point: 'When available', left: 'Only when rigorous imprisonment is authorised and the Court so orders', right: 'Whenever the offence section authorises the particular punishment' },
-        { point: 'Ceiling', left: 'Three months overall + sliding scale + s. 12 distribution limits', right: 'Fixed by the offence section and s. 4' },
-      ],
-    },
-  ],
-
-  misconceptions: [
-    {
-      id: 's-11-trap-1',
-      trap: 'Solitary confinement is a separate punishment listed in s. 4.',
-      correction:
-        'It is not. It is an additional incident that may be attached to a rigorous-imprisonment sentence under ss. 11–12.',
+      "id": "bns-11-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 11."
     },
     {
-      id: 's-11-trap-2',
-      trap: 'The three-month ceiling is the only limit; the Court may distribute it as it likes.',
-      correction:
-        'Section 12 imposes further limits on the length of consecutive periods of solitary confinement. Both sections must be read together.',
-    },
-  ],
-
-  cases: [],
-
-  questionsAndAnswers: [
-    {
-      id: 's-11-brief',
-      draftingCategory: 'brief',
-      question:
-        'Explain the power to order solitary confinement under Section 11 of the Bharatiya Nyaya Sanhita, 2023.',
-      answer: `I. ISSUE
-When and to what extent may a court order solitary confinement?
-
-II. GOVERNING RULE
-Section 11 permits the Court, when sentencing to rigorous imprisonment, to order solitary confinement for a portion of that term, not exceeding three months in the whole, according to the sliding scale in clauses (a)–(c). Further limits appear in s. 12.
-
-III. APPLICATION
-Confirm power to impose rigorous imprisonment → apply the scale → respect s. 12 distribution limits → record the order expressly in the sentence.
-
-IV. CONCLUSION
-Solitary confinement is exceptional, limited, and not a free-standing s. 4 punishment.`,
-      explanation: 'IRAC note on s. 11.',
+      "id": "bns-11-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
     },
     {
-      id: 's-11-submissions',
-      draftingCategory: 'submissions',
-      question:
-        'Draft Written Submissions on the lawful limits of solitary confinement under BNS ss. 11 and 12.',
-      answer: `I. STATEMENT OF FACTS
-[Insert the rigorous term proposed and any request for solitary confinement.]
-
-II. STATUTORY SCHEME
-Section 11 confers the power and the overall/sliding-scale ceilings. Section 12 regulates the distribution of consecutive periods.
-
-III. APPLICATION
-The proposed order must respect both the three-month overall ceiling (and the scale keyed to the length of the term) and the consecutive-period limits in s. 12.
-
-IV. REBUTTAL
-Any order exceeding those ceilings is ultra vires. Solitary confinement remains an exceptional measure, not a routine addition.
-
-V. PRAYER
-[Prayer for an order within the statutory ceilings, or for refusal of solitary confinement if the facts do not justify it.]`,
-      explanation: 'Senior Counsel submissions on the limits of solitary confinement.',
+      "id": "bns-11-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-11-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 11 (Solitary confinement)",
+      "answer": "Introduction. BNS s. 11 deals with Solitary confinement. It sits in Chapter II — Of Punishments of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Solitary confinement. BNS restatement of IPC 73. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 73. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 11 is the rule on “Solitary confinement”. The section provides that whenever any person is convicted of an offence for which under this Sanhita the Court has power to sentence him to rigorous imprisonment, the Court may, by its sentence, order that the offender shall be kept in solitary confinement for any portion or portions of the imprisonment to which he is sentenced, not exceeding three months in the whole, according to the following scale, namely:—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whenever any person is convicted of an offence for which under this Sanhita the Court has power to sentence him to rigorous imprisonment, the Court may, by its sentence, order that the offender shall be kept in solitary confinement for any portion or portions of the imprisonment to which he is sentenced, not exceeding three months in the whole, according to the following scale, namely:—\n2. (a) a time not exceeding one month if the term of imprisonment shall not exceed six months;\n3. (b) a time not exceeding two months if the term of imprisonment shall exceed six months and shall not exceed one year;\n4. (c) a time not exceeding three months if the term of imprisonment shall exceed one year\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 11. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 11 is the complete current-law heading for Solitary confinement. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
     },
+    {
+      "id": "bns-11-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 11 (Solitary confinement) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 11 deals with Solitary confinement. It sits in Chapter II — Of Punishments of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Solitary confinement. BNS restatement of IPC 73. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 73. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 11 is the rule on “Solitary confinement”. The section provides that whenever any person is convicted of an offence for which under this Sanhita the Court has power to sentence him to rigorous imprisonment, the Court may, by its sentence, order that the offender shall be kept in solitary confinement for any portion or portions of the imprisonment to which he is sentenced, not exceeding three months in the whole, according to the following scale, namely:—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whenever any person is convicted of an offence for which under this Sanhita the Court has power to sentence him to rigorous imprisonment, the Court may, by its sentence, order that the offender shall be kept in solitary confinement for any portion or portions of the imprisonment to which he is sentenced, not exceeding three months in the whole, according to the following scale, namely:—\n2. (a) a time not exceeding one month if the term of imprisonment shall not exceed six months;\n3. (b) a time not exceeding two months if the term of imprisonment shall exceed six months and shall not exceed one year;\n4. (c) a time not exceeding three months if the term of imprisonment shall exceed one year\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 11. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 11 is the complete current-law heading for Solitary confinement. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Death, life, imprisonment, forfeiture, fine, and community service. How sentences combine, commute and enhance.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 11. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 11.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
   ],
-
-  bareActPointers: [
-    'BNS s. 11 (entire, including the scale)',
-    'BNS s. 12 (limit on consecutive periods)',
-    'BNS s. 4(c) (rigorous imprisonment)',
-    'IPC s. 73 (historical)',
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 11 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
   ],
-
-  examTips: [
-    'Always state the overall three-month ceiling and the sliding scale.',
-    'Pair s. 11 with s. 12; never treat solitary confinement as a free-standing s. 4 punishment.',
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 11 (Solitary confinement).",
+      "steps": [
+        "Introduce BNS s. 11 and Chapter II — Of Punishments.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 11."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 11 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
   ],
-
-  revisionPoints: [
-    'Available only with rigorous imprisonment.',
-    'Overall max 3 months; scale: 1 / 2 / 3 months according to length of term.',
-    'Further distribution limits in s. 12.',
-    'Not a separate punishment under s. 4.',
+  "answerSkeleton": [
+    "Introduction — BNS s. 11, Solitary confinement.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
   ],
-
-  relatedTopics: ['s-4', 's-12'],
+  "revisionPoints": [
+    "BNS s. 11: Solitary confinement.",
+    "First ingredient: Whenever any person is convicted of an offence for which under this Sanhita the Court has power to sentence him to rigorous imprisonment, the Court may, by its sentence, order that the offender shall be kept in solitary confinement for any portion or portions of the imprisonment to which he is sentenced, not exceeding three months in the whole, according to the following scale, namely:—",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 11 — Solitary confinement. Older books and judgments may still print a historical number (73). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

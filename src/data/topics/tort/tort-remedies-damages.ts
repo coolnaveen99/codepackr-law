@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Tort remedies include damages, injunctions, declarations and possessory or restitutionary relief where available. Damages are ordinarily compensatory; nominal and exceptional damages have narrower roles.",
   "study": "Tort remedies include damages, injunctions, declarations and possessory or restitutionary relief where available. Damages are ordinarily compensatory; nominal and exceptional damages have narrower roles.\\n\\nCommon-law remedies developed alongside the causes of action. Nominal damages may mark infringement of a right without substantial loss. Exemplary damages are exceptional and depend on the particular tort and precedent. Extra-judicial remedies are narrowly constrained.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

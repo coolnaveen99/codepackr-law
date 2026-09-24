@@ -1,25 +1,130 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
- glance:'BNS Section 216: False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation. Historical IPC concordance: 181.',
- study:`Section 216 — False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation. Apply enacted BNS wording, explanations and provisos. Historical IPC s. 181 is comparative only; BNS governs post-commencement conduct. Where liability depends on public authority, legal duty, order or proceeding, prove that predicate first.`,
- sections:[
- {id:'s-216-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:['Chapter XIII — Contempts of the Lawful Authority of Public Servants.','BNS s. 216: False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation.','Historical IPC s. 181: concordance only.','The current statutory ingredients, not historical numbering, govern liability.']},
- {id:'s-216-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:['Separate the prohibited act or omission from every required status, duty, authority, circumstance and mental element.','Establish the competence and lawful authority of the relevant public servant and the legal source of any demand, order or duty.','Apply statutory explanations, provisos and cross-references before concluding that conduct falls within the offence.']},
- {id:'s-216-m3',title:'Mandatory Proving Ingredients & Issue-Spotting',order:3,content:['Prepare an ingredient matrix and map each ingredient to evidence.','Do not infer knowledge, intention or legal duty merely from the surrounding event.','Test whether the accused knew or had reason to know the relevant legal authority or obligation where the statutory wording requires it.']},
- {id:'s-216-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:['The prosecution ordinarily bears the burden of proving the charged ingredients beyond reasonable doubt, subject to applicable statutory burdens.','Orders, notices, summonses, records and electronic material should be proved under the BSA 2023 with attention to provenance and integrity.','Separate admissibility from evidentiary weight and test the chronology of service, knowledge and alleged non-compliance.']},
- {id:'s-216-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:['Check the current BNSS First Schedule for cognizability, bailability and trial forum.','Verify the legal validity, service and authority of any underlying order, summons, notice or demand.','Check applicable BNSS initiation and limitation provisions and the repeal-and-savings framework for pre-1 July 2024 conduct.']}
- ],
- provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-216',section:'s. 216',title:'False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation'}],
- examples:[{id:'s-216-ex1',title:'All statutory predicates established',illustrationType:'practical',description:'The record proves the act or omission, lawful authority or duty, required mental element and material circumstances.'},{id:'s-216-ex2',title:'Predicate authority disputed',illustrationType:'fail-scenario',description:'The alleged conduct occurred, but the prosecution cannot establish the underlying lawful authority, duty, service or knowledge required by the section.'}],
- hypotheticals:[{id:'s-216-hypo',title:'Chamber problem — BNS s. 216',facts:'The prosecution alleges a violation of s. 216; the defence disputes one statutory ingredient and the evidence establishing it.',question:'Does the proved record satisfy the enacted elements?',applicableLaw:'BNS s. 216; connected BNS provisions; BNSS; BSA 2023.',analysis:'Identify each statutory word, prove any predicate authority or duty, map evidence to each ingredient and then verify procedure.',conclusion:'Liability requires proof of every material statutory ingredient beyond reasonable doubt.'}],
- distinctions:[{id:'s-216-dist',title:'BNS provision vs historical IPC concordance',left:'BNS s. 216',right:'Historical IPC s. 181',rows:[{point:'Governing text',left:'Current BNS',right:'Historical only'},{point:'Procedure',left:'Current BNSS',right:'Old CrPC not automatically controlling'}]}],
- misconceptions:[{id:'s-216-trap',trap:'The IPC number is the current offence.',correction:'The enacted BNS wording governs current conduct.'},{id:'s-216-trap2',trap:'The surrounding event alone proves the offence.',correction:'Each statutory ingredient and predicate must be proved.'}],
- cases:[],
- questionsAndAnswers:[{id:'s-216-qa1',draftingCategory:'brief',question:'How should BNS s. 216 be analysed?',answer:'State the statutory rule, isolate each ingredient, establish predicate authority or duty, map admissible evidence, address mens rea and procedure, then conclude.',explanation:'The method keeps substantive, evidentiary and procedural analysis distinct.'},{id:'s-216-qa2',draftingCategory:'submissions',question:'What should written submissions contain?',answer:'Statutory scheme; undisputed facts; disputed ingredients; evidence; authority/duty; BSA 2023 issues; BNSS issues; conclusion.',explanation:'Avoid unsupported authorities and treat each ingredient separately.'}],
- bareActPointers:['BNS s. 216 — False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation','BNS Chapter XIII','Historical IPC s. 181 — concordance only','BNSS First Schedule','BSA 2023 evidence provisions'],
- examTips:['Start with enacted BNS wording.','Prove the underlying public authority or duty.','Map every ingredient to evidence.','Verify current BNSS procedure.'],
- revisionPoints:['s. 216: False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation.','Chapter XIII.','Historical IPC s. 181 is comparative only.'],
- relatedTopics:[]
+  "study": "Introduction and meaning\nFalse statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation. BNS restatement of IPC 182. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 182. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 216 is the rule on “False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation”. The section provides that whoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 216 exists so that “False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation” has a closed legal test in Chapter XIII — Of Contempts of the Lawful Authority of Public Servants. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Summons, proclamations, false information — and the recast suicide-attempt-to-coerce offence.\n\nThe provision in detail\n216. Whoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine\n\nEssential ingredients\n1. Whoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine",
+  "glance": "BNS s. 216 — False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation.",
+  "sections": [
+    {
+      "id": "bns-216-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "216. Whoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-216-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "bns-216-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation”. Name BNS s. 216, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-216-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 216 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-216-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation” under BNS s. 216 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 216 (False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 216. Chapter XIII — Of Contempts of the Lawful Authority of Public Servants. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 216 (False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation), Chapter XIII — Of Contempts of the Lawful Authority of Public Servants.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 216 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 216 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 216. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-216-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 216."
+    },
+    {
+      "id": "bns-216-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-216-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-216-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 216 (False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation)",
+      "answer": "Introduction. BNS s. 216 deals with False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation. It sits in Chapter XIII — Of Contempts of the Lawful Authority of Public Servants of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation. BNS restatement of IPC 182. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 182. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 216 is the rule on “False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation”. The section provides that whoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 216. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 216 is the complete current-law heading for False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-216-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 216 (False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 216 deals with False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation. It sits in Chapter XIII — Of Contempts of the Lawful Authority of Public Servants of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation. BNS restatement of IPC 182. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 182. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 216 is the rule on “False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation”. The section provides that whoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 216. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 216 is the complete current-law heading for False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Summons, proclamations, false information — and the recast suicide-attempt-to-coerce offence.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 216. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 216.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 216 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 216 (False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation).",
+      "steps": [
+        "Introduce BNS s. 216 and Chapter XIII — Of Contempts of the Lawful Authority of Public Servants.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 216."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 216 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 216, False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 216: False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation.",
+    "First ingredient: Whoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 216 — False statement on oath or affirmation to public servant or person authorised to administer an oath or affirmation. Older books and judgments may still print a historical number (182). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
+
 export default content

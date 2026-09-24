@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Deceit requires a false representation made knowingly, without belief in its truth or recklessly, intended to induce reliance and causing damage. Negligent misstatement is distinct and depends on a duty of care in making the statement.",
   "study": "Deceit requires a false representation made knowingly, without belief in its truth or recklessly, intended to induce reliance and causing damage. Negligent misstatement is distinct and depends on a duty of care in making the statement.\\n\\nDerry v Peek sets the classic deceit standard. Hedley Byrne recognised negligent misstatement in appropriate relationships involving assumption of responsibility.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

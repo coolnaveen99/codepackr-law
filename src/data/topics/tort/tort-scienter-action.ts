@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Scienter liability historically concerns harm caused by an animal where the keeper knew of a dangerous propensity and failed to control it. Modern Indian claims must also be tested against negligence and applicable animal-control statutes.",
   "study": "Scienter liability historically concerns harm caused by an animal where the keeper knew of a dangerous propensity and failed to control it. Modern Indian claims must also be tested against negligence and applicable animal-control statutes.\\n\\nThe common-law scienter action distinguishes ordinary animal behaviour from a known vicious or dangerous tendency. Knowledge is central. Indian courts may apply common-law principles where consistent with Indian law, while negligence may provide a separate route where the keeper failed to take reasonable care.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

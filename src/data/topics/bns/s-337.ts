@@ -1,32 +1,138 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 337 (and related): forgery of valuable security, will, etc. — aggravated forgery when the false document is a valuable security, will, authority to adopt, or other specified instrument. Higher punishment than simple forgery. Successor to IPC s. 467. Often charged with using as genuine and cheating.',
-  study: `Aggravated forgery under the BNS:\n\nWhoever forges a document which purports to be a valuable security or a will, or an authority to adopt a son, or any other specified instrument of high legal consequence, is punished more severely than for simple forgery.\n\nKey points\n• Base forgery ingredients (false document + dishonest intent) must be met.\n• The document must be of the aggravated class (valuable security, will, etc.).\n• Using such a forged document as genuine is a related serious offence.\n\nCite the applicable BNS sections for post-1 July 2024 acts.`,
-  sections: [
-    { id: 's-337-m1', title: 'Provenance', order: 1, content: ['Successor to IPC s. 467. Aggravated forgery of valuable security, will, etc.'] },
-    { id: 's-337-m2', title: 'Aggravating Instruments', order: 2, content: ['Valuable security; will; authority to adopt; other instruments specified in the text.'] },
-    { id: 's-337-m3', title: 'Ingredients', order: 3, content: ['(1) Forgery as defined. (2) Document is of the aggravated class.'] },
-    { id: 's-337-m4', title: 'Evidence', order: 4, content: ['Nature of the instrument; falsity; authorship; intent; use.'] },
-    { id: 's-337-m5', title: 'Procedure', order: 5, content: ['Serious offence; often joined with using as genuine and cheating; Sessions trial as applicable.'] },
+  "study": "Introduction and meaning\nForgery of record of Court or of public register, etc. BNS restatement of IPC 466. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 466. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 337 is the rule on “Forgery of record of Court or of public register, etc”. The section provides that whoever forges a document or an electronic record, purporting to be a record or proceeding of or in a Court or an identity document issued by Government including voter identity card or Aadhaar Card, or a register of birth, marriage or burial, or a register kept by a public servant as such, or a certificate or document purporting to be made by a public servant in his official capacity, or an authority to institute or defend a suit, or to take any proceedings therein, or to confess judgment, or a power of attorney, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 337 exists so that “Forgery of record of Court or of public register, etc” has a closed legal test in Chapter XVIII — Of Offences Relating to Documents and to Property Marks. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: False documents, forgery, using a forged electronic record, property marks.\n\nThe provision in detail\n337. Whoever forges a document or an electronic record, purporting to be a record or proceeding of or in a Court or an identity document issued by Government including voter identity card or Aadhaar Card, or a register of birth, marriage or burial, or a register kept by a public servant as such, or a certificate or document purporting to be made by a public servant in his official capacity, or an authority to institute or defend a suit, or to take any proceedings therein, or to confess judgment, or a power of attorney, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nEssential ingredients\n1. Whoever forges a document or an electronic record, purporting to be a record or proceeding of or in a Court or an identity document issued by Government including voter identity card or Aadhaar Card, or a register of birth, marriage or burial, or a register kept by a public servant as such, or a certificate or document purporting to be made by a public servant in his official capacity, or an authority to institute or defend a suit, or to take any proceedings therein, or to confess judgment, or a power of attorney, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nExplanations\nExplanation.—For the purposes of this section, “register” includes any list, data or record of any entries maintained in the electronic form as defined in clause (r) of sub-section (1) of section 2 of the Information Technology Act, 2000",
+  "glance": "BNS s. 337 — Forgery of record of Court or of public register, etc.",
+  "sections": [
+    {
+      "id": "bns-337-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "337. Whoever forges a document or an electronic record, purporting to be a record or proceeding of or in a Court or an identity document issued by Government including voter identity card or Aadhaar Card, or a register of birth, marriage or burial, or a register kept by a public servant as such, or a certificate or document purporting to be made by a public servant in his official capacity, or an authority to institute or defend a suit, or to take any proceedings therein, or to confess judgment, or a power of attorney, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-337-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever forges a document or an electronic record, purporting to be a record or proceeding of or in a Court or an identity document issued by Government including voter identity card or Aadhaar Card, or a register of birth, marriage or burial, or a register kept by a public servant as such, or a certificate or document purporting to be made by a public servant in his official capacity, or an authority to institute or defend a suit, or to take any proceedings therein, or to confess judgment, or a power of attorney, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-337-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation.—For the purposes of this section, “register” includes any list, data or record of any entries maintained in the electronic form as defined in clause (r) of sub-section (1) of section 2 of the Information Technology Act, 2000"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-337', section: 's. 337', title: 'Forgery of valuable security, will, etc.' }],
-  examples: [
-    { id: 's-337-ex1', title: 'Forged will', illustrationType: 'practical', description: 'A fabricates a will to claim property. Aggravated forgery is made out.' },
-    { id: 's-337-ex2', title: 'Ordinary false letter', illustrationType: 'fail-scenario', description: 'A forges an ordinary letter without it being a valuable security or will. Simple forgery may apply; the aggravated section does not.' },
+  "examples": [
+    {
+      "id": "bns-337-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Forgery of record of Court or of public register, etc”. Name BNS s. 337, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-337-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 337 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-337-hypo', title: 'Valuable security', facts: 'Accused forges a promissory note to obtain money.', question: 'Aggravated forgery?', applicableLaw: 'BNS aggravated-forgery provisions.', analysis: 'Promissory note is typically a valuable security — yes if forgery ingredients are met.', conclusion: 'Aggravated section attracted.' }],
-  distinctions: [],
-  misconceptions: [{ id: 's-337-trap', trap: 'Every forgery is punishable under the valuable-security section.', correction: 'Only when the forged document is of the specified aggravated class (valuable security, will, etc.).' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-337-brief', draftingCategory: 'brief', question: 'When does aggravated forgery of valuable security/will apply under the BNS?', answer: 'When the forged document purports to be a valuable security, will, authority to adopt, or other instrument specified in the section. Base forgery ingredients must still be proved; the class of instrument elevates the punishment.', explanation: 'Short note.' },
-    { id: 's-337-sub', draftingCategory: 'submissions', question: 'Submissions on aggravated forgery.', answer: 'I. Forgery ingredients. II. Document of aggravated class. III. Intent and use. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-337-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Forgery of record of Court or of public register, etc” under BNS s. 337 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 337 (Forgery of record of Court or of public register, etc) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 337. Chapter XVIII — Of Offences Relating to Documents and to Property Marks. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 337 (Forgery of record of Court or of public register, etc), Chapter XVIII — Of Offences Relating to Documents and to Property Marks.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever forges a document or an electronic record, purporting to be a record or proceeding of or in a Court or an identity document issued by Government including voter identity card or Aadhaar Card, or a register of birth, marriage or burial, or a register kept by a public servant as such, or a certificate or document purporting to be made by a public servant in his official capacity, or an authority to institute or defend a suit, or to take any proceedings therein, or to confess judgment, or a power of attorney, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 337 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 337. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS aggravated-forgery provisions', 'BNS s. 336', 'BNS using forged document as genuine', 'IPC s. 467 (historical)'],
-  examTips: ['Identify whether the instrument is a valuable security or will.', 'Pair with using as genuine and cheating when on the facts.'],
-  revisionPoints: ['Aggravated when document is valuable security, will, etc.', 'Base forgery ingredients still required.', 'Higher punishment than simple forgery.'],
-  relatedTopics: ['s-336', 's-318', 's-230'],
+  "misconceptions": [
+    {
+      "id": "bns-337-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 337."
+    },
+    {
+      "id": "bns-337-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-337-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-337-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 337 (Forgery of record of Court or of public register, etc)",
+      "answer": "Introduction. BNS s. 337 deals with Forgery of record of Court or of public register, etc. It sits in Chapter XVIII — Of Offences Relating to Documents and to Property Marks of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Forgery of record of Court or of public register, etc. BNS restatement of IPC 466. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 466. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 337 is the rule on “Forgery of record of Court or of public register, etc”. The section provides that whoever forges a document or an electronic record, purporting to be a record or proceeding of or in a Court or an identity document issued by Government including voter identity card or Aadhaar Card, or a register of birth, marriage or burial, or a register kept by a public servant as such, or a certificate or document purporting to be made by a public servant in his official capacity, or an authority to institute or defend a suit, or to take any proceedings therein, or to confess judgment, or a power of attorney, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever forges a document or an electronic record, purporting to be a record or proceeding of or in a Court or an identity document issued by Government including voter identity card or Aadhaar Card, or a register of birth, marriage or burial, or a register kept by a public servant as such, or a certificate or document purporting to be made by a public servant in his official capacity, or an authority to institute or defend a suit, or to take any proceedings therein, or to confess judgment, or a power of attorney, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—For the purposes of this section, “register” includes any list, data or record of any entries maintained in the electronic form as defined in clause (r) of sub-section (1) of section 2 of the Information Technology Act, 2000 An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 337. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 337 is the complete current-law heading for Forgery of record of Court or of public register, etc. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-337-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 337 (Forgery of record of Court or of public register, etc) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 337 deals with Forgery of record of Court or of public register, etc. It sits in Chapter XVIII — Of Offences Relating to Documents and to Property Marks of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Forgery of record of Court or of public register, etc. BNS restatement of IPC 466. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 466. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 337 is the rule on “Forgery of record of Court or of public register, etc”. The section provides that whoever forges a document or an electronic record, purporting to be a record or proceeding of or in a Court or an identity document issued by Government including voter identity card or Aadhaar Card, or a register of birth, marriage or burial, or a register kept by a public servant as such, or a certificate or document purporting to be made by a public servant in his official capacity, or an authority to institute or defend a suit, or to take any proceedings therein, or to confess judgment, or a power of attorney, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever forges a document or an electronic record, purporting to be a record or proceeding of or in a Court or an identity document issued by Government including voter identity card or Aadhaar Card, or a register of birth, marriage or burial, or a register kept by a public servant as such, or a certificate or document purporting to be made by a public servant in his official capacity, or an authority to institute or defend a suit, or to take any proceedings therein, or to confess judgment, or a power of attorney, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—For the purposes of this section, “register” includes any list, data or record of any entries maintained in the electronic form as defined in clause (r) of sub-section (1) of section 2 of the Information Technology Act, 2000 An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 337. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 337 is the complete current-law heading for Forgery of record of Court or of public register, etc. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. False documents, forgery, using a forged electronic record, property marks.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 337. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 337.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 337 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 337 (Forgery of record of Court or of public register, etc).",
+      "steps": [
+        "Introduce BNS s. 337 and Chapter XVIII — Of Offences Relating to Documents and to Property Marks.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 337."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 337 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 337, Forgery of record of Court or of public register, etc.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 337: Forgery of record of Court or of public register, etc.",
+    "First ingredient: Whoever forges a document or an electronic record, purporting to be a record or proceeding of or in a Court or an identity document issued by Government including voter identity card or Aadhaar Card, or a register of birth, marriage or burial, or a register kept by a public servant as such, or a certificate or document purporting to be made by a public servant in his official capacity, or an authority to institute or defend a suit, or to take any proceedings therein, or to confess judgment, or a power of attorney, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 337 — Forgery of record of Court or of public register, etc. Older books and judgments may still print a historical number (466). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

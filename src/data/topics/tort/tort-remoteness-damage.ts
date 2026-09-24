@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Remoteness limits recovery to damage sufficiently connected with the tort. Modern law asks whether the kind of damage was reasonably foreseeable; an intervening event may break causation in appropriate circumstances.",
   "study": "Remoteness limits recovery to damage sufficiently connected with the tort. Modern law asks whether the kind of damage was reasonably foreseeable; an intervening event may break causation in appropriate circumstances.\\n\\nRe Polemis used a direct-consequence approach; The Wagon Mound shifted the common-law test toward reasonable foreseeability. Hughes v Lord Advocate shows that the precise manner of occurrence need not be foreseeable if the kind of damage was foreseeable.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

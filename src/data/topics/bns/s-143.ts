@@ -1,25 +1,157 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'BNS Section 143: Trafficking of person. This dedicated note places the provision in its statutory cluster and connects its ingredients with evidence, procedure and neighbouring BNS provisions.',
-  study: `Section 143 — Trafficking of person.\\n\\nTrafficking of person (old 370). Recruiting, transporting, harbouring, transferring or receiving a person for exploitation, by force, coercion, abduction, fraud, abuse of power or inducement. Exploitation includes sexual exploitation, slavery, forced labour, begging. Historical IPC concordance: 370.\\n\\nRead the enacted BNS wording with every sub-section, explanation, proviso and exception. For conduct before 1 July 2024, separately apply the repeal-and-savings framework and Article 20(1).`,
-  sections:[
-    {id:'s-143-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:['Chapter vi; cluster: Kidnapping and trafficking.','Trafficking of person (old 370). Recruiting, transporting, harbouring, transferring or receiving a person for exploitation, by force, coercion, abduction, fraud, abuse of power or inducement. Exploitation includes sexual exploitation, slavery, forced labour, begging.','Historical IPC concordance: 370.','Treat the BNS text as the governing source for post-commencement offences; use IPC concordance only to understand continuity or change.']},
-    {id:'s-143-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:['Operative provision: BNS s. 143 — Trafficking of person.','Break the enacted provision into its express elements, qualifiers, explanations and exceptions before applying it.','Read the immediately connected BNS provisions so that a definition, aggravation, proviso or punishment rule is not missed.']},
-    {id:'s-143-m3',title:'Application Ingredients & Issue-Spotting',order:3,content:['Start with the statutory act, circumstance, mental element or status required by s. 143.','Map each material fact to a specific statutory ingredient and identify any missing link.','Check whether the facts instead fit a neighbouring offence or a general exception; avoid treating a historical IPC label as the test.']},
-    {id:'s-143-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:['The prosecution ordinarily bears the burden of proving the charged ingredients beyond reasonable doubt, subject to any applicable statutory presumption.','Identify the fact each side must establish and distinguish admissibility from evidentiary weight under the BSA 2023.','Where electronic material is relied upon, comply with the applicable BSA provisions on electronic records, authenticity and proof.']},
-    {id:'s-143-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:['Check the BNSS First Schedule and the connected offence/punishment provision for cognizability, bailability and the competent trial court.','Check territorial jurisdiction, joinder/charge issues, sanction requirements and other statutory preconditions where relevant.','Verify any applicable BNSS limitation rule and the commencement date of the governing penal law.','For pre-1 July 2024 conduct, separately analyze repeal, savings and Article 20(1).']},
+  "study": "Introduction and meaning\nTrafficking of person (old 370). Recruiting, transporting, harbouring, transferring or receiving a person for exploitation, by force, coercion, abduction, fraud, abuse of power or inducement. Exploitation includes sexual exploitation, slavery, forced labour, begging. BNS restatement of IPC 370. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 143 is the rule on “Trafficking of person”. The section provides that (1) Whoever, for the purpose of exploitation recruits, transports, harbours, transfers, or receives a person or persons, by—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 143 exists so that “Trafficking of person” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n143. (1) Whoever, for the purpose of exploitation recruits, transports, harbours, transfers, or receives a person or persons, by—\n\n(a) using threats; or\n\n(b) using force, or any other form of coercion; or\n\n(c) by abduction; or\n\n(d) by practising fraud, or deception; or\n\n(e) by abuse of power; or\n\n(f) by inducement, including the giving or receiving of payments or benefits, in order to achieve the consent of any person having control over the person recruited, transported, harboured, transferred or received,\n\ncommits the offence of trafficking\n\nEssential ingredients\n1. (1) Whoever, for the purpose of exploitation recruits, transports, harbours, transfers, or receives a person or persons, by—\n2. (b) using force, or any other form of coercion; or\n3. (d) by practising fraud, or deception; or\n4. (e) by abuse of power; or\n5. (f) by inducement, including the giving or receiving of payments or benefits, in order to achieve the consent of any person having control over the person recruited, transported, harboured, transferred or received,\n6. commits the offence of trafficking\n\nExplanations\nExplanation 1.—The expression “exploitation” shall include any act of physical exploitation or any form of sexual exploitation, slavery or practices similar to slavery, servitude, beggary or forced removal of organs\n\nExplanation 2.—The consent of the victim is immaterial in determination of the offence of trafficking\n\n(2) Whoever commits the offence of trafficking shall be punished with rigorous imprisonment for a term which shall not be less than seven years, but which may extend to ten years, and shall also be liable to fine\n\n(3) Where the offence involves the trafficking of more than one person, it shall be punishable with rigorous imprisonment for a term which shall not be less than ten years but which may extend to imprisonment for life, and shall also be liable to fine\n\n(4) Where the offence involves the trafficking of a child, it shall be punishable with rigorous imprisonment for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine\n\n(5) Where the offence involves the trafficking of more than one child, it shall be punishable with rigorous imprisonment for a term which shall not be less than fourteen years, but which may extend to imprisonment for life, and shall also be liable to fine\n\n(6) If a person is convicted of the offence of trafficking of a child on more than one occasion, then such person shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine\n\n(7) When a public servant or a police officer is involved in the trafficking of any person then, such public servant or police officer shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine",
+  "glance": "BNS s. 143 — Trafficking of person.",
+  "sections": [
+    {
+      "id": "bns-143-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "143. (1) Whoever, for the purpose of exploitation recruits, transports, harbours, transfers, or receives a person or persons, by—",
+        "(a) using threats; or",
+        "(b) using force, or any other form of coercion; or",
+        "(c) by abduction; or",
+        "(d) by practising fraud, or deception; or",
+        "(e) by abuse of power; or",
+        "(f) by inducement, including the giving or receiving of payments or benefits, in order to achieve the consent of any person having control over the person recruited, transported, harboured, transferred or received,",
+        "commits the offence of trafficking"
+      ]
+    },
+    {
+      "id": "bns-143-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Whoever, for the purpose of exploitation recruits, transports, harbours, transfers, or receives a person or persons, by—",
+        "(b) using force, or any other form of coercion; or",
+        "(d) by practising fraud, or deception; or",
+        "(e) by abuse of power; or",
+        "(f) by inducement, including the giving or receiving of payments or benefits, in order to achieve the consent of any person having control over the person recruited, transported, harboured, transferred or received,",
+        "commits the offence of trafficking"
+      ]
+    },
+    {
+      "id": "bns-143-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation 1.—The expression “exploitation” shall include any act of physical exploitation or any form of sexual exploitation, slavery or practices similar to slavery, servitude, beggary or forced removal of organs",
+        "Explanation 2.—The consent of the victim is immaterial in determination of the offence of trafficking",
+        "(2) Whoever commits the offence of trafficking shall be punished with rigorous imprisonment for a term which shall not be less than seven years, but which may extend to ten years, and shall also be liable to fine",
+        "(3) Where the offence involves the trafficking of more than one person, it shall be punishable with rigorous imprisonment for a term which shall not be less than ten years but which may extend to imprisonment for life, and shall also be liable to fine",
+        "(4) Where the offence involves the trafficking of a child, it shall be punishable with rigorous imprisonment for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine",
+        "(5) Where the offence involves the trafficking of more than one child, it shall be punishable with rigorous imprisonment for a term which shall not be less than fourteen years, but which may extend to imprisonment for life, and shall also be liable to fine",
+        "(6) If a person is convicted of the offence of trafficking of a child on more than one occasion, then such person shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine",
+        "(7) When a public servant or a police officer is involved in the trafficking of any person then, such public servant or police officer shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine"
+      ]
+    }
   ],
-  provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-143',section:'s. 143',title:'Trafficking of person'}],
-  examples:[{id:'s-143-ex1',title:'Statutory ingredients satisfied',illustrationType:'practical',description:'The proved facts correspond to the material words and conditions of BNS s. 143, with no applicable exception defeating the charge.'},{id:'s-143-ex2',title:'Ingredient or qualification missing',illustrationType:'fail-scenario',description:'The conduct resembles the provision, but a required ingredient, statutory qualification, exception or evidentiary link is not established.'}],
-  hypotheticals:[{id:'s-143-hypo',title:'Chamber problem — BNS s. 143',facts:'A prosecution invokes s. 143 on facts within the Kidnapping and trafficking cluster. The defence disputes the statutory fit and the proof of one or more ingredients.',question:'Do the proved facts satisfy BNS s. 143?',applicableLaw:'BNS s. 143; connected BNS provisions; applicable BNSS procedure; BSA 2023 evidence rules.',analysis:'1. Identify the exact statutory words. 2. Break them into ingredients and qualifiers. 3. Map the evidence to each ingredient. 4. Apply explanations, provisos and exceptions. 5. Check the procedural and punishment consequences.',conclusion:'The conclusion must follow from the enacted ingredients and proved facts, not from the historical IPC number alone.'}],
-  distinctions:[{id:'s-143-dist',title:'BNS provision vs historical IPC concordance',left:'BNS s. 143',right:'Historical IPC: 370',rows:[{point:'Governing text',left:'Enacted BNS wording for post-commencement offences',right:'Historical material used only for continuity/change analysis'},{point:'Application method',left:'Test each statutory ingredient and qualification',right:'Do not substitute the old section number for the BNS text'},{point:'Transition',left:'Check commencement and savings',right:'Pre-commencement conduct may remain governed by saved prior law'}]}],
-  misconceptions:[{id:'s-143-trap',trap:'The historical IPC provision can simply be substituted for BNS s. 143.',correction:'The enacted BNS text controls post-commencement offences; historical concordance does not replace the statutory wording.'},{id:'s-143-trap-2',trap:'The section heading or factual resemblance alone establishes liability.',correction:'Every material ingredient, qualification and applicable exception must be established on the evidence.'}],
-  cases:[],
-  questionsAndAnswers:[{id:'s-143-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment of BNS s. 143.',answer:`I. ISSUE — identify the precise statutory question.\\nII. RULE — enacted ingredients, definitions, exceptions and connected provisions.\\nIII. APPLICATION — map the evidence to each condition.\\nIV. CONCLUSION — state the statutory consequence supported by the proved facts.`,explanation:'Chamber-style structured analysis without unverified authorities.'},{id:'s-143-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 143.',answer:`I. STATUTORY SCHEME.\\nII. INGREDIENTS AND QUALIFICATIONS.\\nIII. EVIDENCE AND BURDEN.\\nIV. RESPONSE TO EXCEPTIONS OR DEFENCES.\\nV. PROCEDURAL AND OPERATIVE CONSEQUENCE.`,explanation:'Courtroom submission structure without unverified case citations.'}],
-  bareActPointers:['BNS s. 143 — Trafficking of person','Connected BNS definitions, explanations, provisos and exceptions','BNSS First Schedule and applicable procedure','BSA 2023 burden and evidence provisions','BNS repeal-and-savings framework for pre-1 July 2024 conduct'],
-  examTips:['Start with the enacted BNS wording and identify each ingredient.','Read connected definitions, exceptions, procedure and punishment provisions.','Use IPC numbering only as historical concordance, not as a substitute for the BNS text.'],
-  revisionPoints:['BNS s. 143: Trafficking of person.','Cluster: Kidnapping and trafficking.','IPC concordance: 370.','Verify the current BNSS procedural classification and BSA evidentiary requirements before advising.'],
-  relatedTopics:[]
+  "examples": [
+    {
+      "id": "bns-143-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Trafficking of person”. Name BNS s. 143, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-143-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 143 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-143-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Trafficking of person” under BNS s. 143 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 143 (Trafficking of person) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 143. Chapter VI — Of Offences Affecting the Human Body. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 143 (Trafficking of person), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever, for the purpose of exploitation recruits, transports, harbours, transfers, or receives a person or persons, by—\n   (2) (b) using force, or any other form of coercion; or\n   (3) (d) by practising fraud, or deception; or\n   (4) (e) by abuse of power; or\n   (5) (f) by inducement, including the giving or receiving of payments or benefits, in order to achieve the consent of any person having control over the person recruited, transported, harboured, transferred or received,\n   (6) commits the offence of trafficking\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 143 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 143. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-143-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 143."
+    },
+    {
+      "id": "bns-143-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-143-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-143-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 143 (Trafficking of person)",
+      "answer": "Introduction. BNS s. 143 deals with Trafficking of person. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Trafficking of person (old 370). Recruiting, transporting, harbouring, transferring or receiving a person for exploitation, by force, coercion, abduction, fraud, abuse of power or inducement. Exploitation includes sexual exploitation, slavery, forced labour, begging. BNS restatement of IPC 370. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 143 is the rule on “Trafficking of person”. The section provides that (1) Whoever, for the purpose of exploitation recruits, transports, harbours, transfers, or receives a person or persons, by—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever, for the purpose of exploitation recruits, transports, harbours, transfers, or receives a person or persons, by—\n2. (b) using force, or any other form of coercion; or\n3. (d) by practising fraud, or deception; or\n4. (e) by abuse of power; or\n5. (f) by inducement, including the giving or receiving of payments or benefits, in order to achieve the consent of any person having control over the person recruited, transported, harboured, transferred or received,\n6. commits the offence of trafficking\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation 1.—The expression “exploitation” shall include any act of physical exploitation or any form of sexual exploitation, slavery or practices similar to slavery, servitude, beggary or forced removal of organs An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 143. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 143 is the complete current-law heading for Trafficking of person. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-143-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 143 (Trafficking of person) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 143 deals with Trafficking of person. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Trafficking of person (old 370). Recruiting, transporting, harbouring, transferring or receiving a person for exploitation, by force, coercion, abduction, fraud, abuse of power or inducement. Exploitation includes sexual exploitation, slavery, forced labour, begging. BNS restatement of IPC 370. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 143 is the rule on “Trafficking of person”. The section provides that (1) Whoever, for the purpose of exploitation recruits, transports, harbours, transfers, or receives a person or persons, by—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever, for the purpose of exploitation recruits, transports, harbours, transfers, or receives a person or persons, by—\n2. (b) using force, or any other form of coercion; or\n3. (d) by practising fraud, or deception; or\n4. (e) by abuse of power; or\n5. (f) by inducement, including the giving or receiving of payments or benefits, in order to achieve the consent of any person having control over the person recruited, transported, harboured, transferred or received,\n6. commits the offence of trafficking\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation 1.—The expression “exploitation” shall include any act of physical exploitation or any form of sexual exploitation, slavery or practices similar to slavery, servitude, beggary or forced removal of organs An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 143. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 143 is the complete current-law heading for Trafficking of person. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 143. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 143.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 143 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 143 (Trafficking of person).",
+      "steps": [
+        "Introduce BNS s. 143 and Chapter VI — Of Offences Affecting the Human Body.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 143."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 143 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 143, Trafficking of person.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 143: Trafficking of person.",
+    "First ingredient: (1) Whoever, for the purpose of exploitation recruits, transports, harbours, transfers, or receives a person or persons, by—",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 143 — Trafficking of person. Older books and judgments may still print a historical number (370). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
+
 export default content

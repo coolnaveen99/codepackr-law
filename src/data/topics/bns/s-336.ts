@@ -1,32 +1,164 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 336 (and related): forgery — making a false document or false electronic record with intent to cause damage or injury, to support a claim or title, to cause a person to part with property, to enter into a contract, or to commit fraud. Successor to IPC s. 463/465. Aggravated forms (forgery of valuable security, will, etc.) carry higher punishment.',
-  study: `Forgery under the BNS:\n\nWhoever makes any false document or false electronic record, with intent to cause damage or injury to the public or to any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery.\n\n“Making a false document” is defined in detail (including dishonest alteration, signing in another’s name, etc.).\n\nKey points\n• False document or electronic record.\n• Specified dishonest intent (damage, claim, parting with property, contract, fraud).\n• Aggravated when the forged instrument is a valuable security, will, or other specified type.\n\nCite the applicable BNS sections for post-1 July 2024 acts. Often charged with cheating (s. 318) and using as genuine a forged document.`,
-  sections: [
-    { id: 's-336-m1', title: 'Provenance', order: 1, content: ['Successor to IPC ss. 463–465. False document/electronic record with dishonest intent.'] },
-    { id: 's-336-m2', title: 'Definition', order: 2, content: ['Making false document or false electronic record; intent to cause damage, support claim, cause parting with property, induce contract, or commit fraud.'] },
-    { id: 's-336-m3', title: 'Ingredients', order: 3, content: ['(1) False document or electronic record. (2) Making by the accused. (3) Specified dishonest intent.'] },
-    { id: 's-336-m4', title: 'Evidence', order: 4, content: ['Document/record; falsity; authorship; intent inferred from use and circumstances.'] },
-    { id: 's-336-m5', title: 'Procedure', order: 5, content: ['Often joined with cheating and using forged document as genuine; forum per BNSS Schedule.'] },
+  "study": "Introduction and meaning\nForgery (old 463/465): making a false document or false electronic record, with intent to cause damage or injury, to support a claim or title, to cause a person to part with property, or to commit fraud. Electronic records are in the definition.\nIn student language: BNS s. 336 is the rule on “Forgery”. The section provides that . (1) Whoever makes any false document or false electronic record or part of a document or electronic record, with intent to cause damage or injury, to the public or to any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 336 exists so that “Forgery” has a closed legal test in Chapter XVIII — Of Offences Relating to Documents and to Property Marks. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: False documents, forgery, using a forged electronic record, property marks.\n\nThe provision in detail\n336.. (1) Whoever makes any false document or false electronic record or part of a document or electronic record, with intent to cause damage or injury, to the public or to any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery\n\n(2) Whoever commits forgery shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both\n\n(3) Whoever commits forgery, intending that the document or electronic record forged shall be used for the purpose of cheating, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\n(4) Whoever commits forgery, intending that the document or electronic record forged shall harm the reputation of any party, or knowing that it is likely to be used for that purpose, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine\n\nEssential ingredients\n1. (1) Whoever makes any false document or false electronic record or part of a document or electronic record, with intent to cause damage or injury, to the public or to any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery\n2. (2) Whoever commits forgery shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both\n3. (3) Whoever commits forgery, intending that the document or electronic record forged shall be used for the purpose of cheating, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n4. (4) Whoever commits forgery, intending that the document or electronic record forged shall harm the reputation of any party, or knowing that it is likely to be used for that purpose, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine",
+  "glance": "BNS s. 336 — Forgery.",
+  "sections": [
+    {
+      "id": "bns-336-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "336.. (1) Whoever makes any false document or false electronic record or part of a document or electronic record, with intent to cause damage or injury, to the public or to any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery",
+        "(2) Whoever commits forgery shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both",
+        "(3) Whoever commits forgery, intending that the document or electronic record forged shall be used for the purpose of cheating, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine",
+        "(4) Whoever commits forgery, intending that the document or electronic record forged shall harm the reputation of any party, or knowing that it is likely to be used for that purpose, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-336-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Whoever makes any false document or false electronic record or part of a document or electronic record, with intent to cause damage or injury, to the public or to any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery",
+        "(2) Whoever commits forgery shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both",
+        "(3) Whoever commits forgery, intending that the document or electronic record forged shall be used for the purpose of cheating, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine",
+        "(4) Whoever commits forgery, intending that the document or electronic record forged shall harm the reputation of any party, or knowing that it is likely to be used for that purpose, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-336', section: 's. 336', title: 'Forgery' }],
-  examples: [
-    { id: 's-336-ex1', title: 'False document to obtain property', illustrationType: 'practical', description: 'A creates a false sale deed intending to cause B to part with property. Forgery is made out.' },
-    { id: 's-336-ex2', title: 'No dishonest intent', illustrationType: 'fail-scenario', description: 'A makes an incorrect copy by mistake without any dishonest intent. Forgery is not made out.' },
+  "examples": [
+    {
+      "id": "bns-336-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Forgery”. Name BNS s. 336, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-336-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 336 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-336-hypo', title: 'Forgery', facts: 'Accused alters a cheque amount and signs in another’s name to obtain money.', question: 'Is forgery made out?', applicableLaw: 'BNS forgery provisions.', analysis: 'False document + intent to cause parting with property / fraud — yes.', conclusion: 'Forgery established.' }],
-  distinctions: [{ id: 's-336-dist', title: 'Forgery vs Cheating vs False evidence', left: 'Forgery', right: 'Cheating / False evidence', rows: [{ point: 'Focus', left: 'Making false document/electronic record with dishonest intent', right: 'Deception inducing delivery / false statement under legal obligation' }] }],
-  misconceptions: [{ id: 's-336-trap', trap: 'Any false paper is forgery.', correction: 'There must be a false document or electronic record made with one of the specified dishonest intents. Falsity alone without that intent is not forgery.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-336-brief', draftingCategory: 'brief', question: 'Define forgery under the BNS.', answer: 'Making a false document or false electronic record with intent to cause damage or injury, to support a claim or title, to cause a person to part with property, to enter into a contract, or to commit fraud. Aggravated forms (valuable security, will, etc.) carry higher punishment.', explanation: 'Short note.' },
-    { id: 's-336-sub', draftingCategory: 'submissions', question: 'Submissions on forgery.', answer: 'I. False document/electronic record. II. Making by accused. III. Dishonest intent. IV. Aggravating form if any. V. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-336-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Forgery” under BNS s. 336 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 336 (Forgery) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 336. Chapter XVIII — Of Offences Relating to Documents and to Property Marks. Connected: BNS s. 335, BNS s. 340.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 336 (Forgery), Chapter XVIII — Of Offences Relating to Documents and to Property Marks.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever makes any false document or false electronic record or part of a document or electronic record, with intent to cause damage or injury, to the public or to any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery\n   (2) (2) Whoever commits forgery shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both\n   (3) (3) Whoever commits forgery, intending that the document or electronic record forged shall be used for the purpose of cheating, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n   (4) (4) Whoever commits forgery, intending that the document or electronic record forged shall harm the reputation of any party, or knowing that it is likely to be used for that purpose, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 336 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 336 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 336. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS forgery provisions', 'BNS s. 318', 'BNS using forged document as genuine', 'IPC ss. 463–465 (historical)'],
-  examTips: ['State the definition of making a false document and the specified intents.', 'Often pair with cheating and using as genuine.'],
-  revisionPoints: ['False document/electronic record + specified dishonest intent = forgery.', 'Includes electronic records.', 'Aggravated for valuable security, will, etc.'],
-  relatedTopics: ['s-318', 's-227', 's-230', 's-303'],
+  "distinctions": [
+    {
+      "id": "bns-336-dist",
+      "title": "BNS s. 336 and connected sections",
+      "left": "BNS s. 336",
+      "right": "BNS s. 335, BNS s. 340",
+      "rows": [
+        {
+          "point": "Heading",
+          "left": "Forgery",
+          "right": "Read the neighbour’s title on its own page before you write."
+        },
+        {
+          "point": "What you must prove",
+          "left": "(1) Whoever makes any false document or false electronic record or part of a document or electronic record, with intent to cause damage or injury, to the public or to any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+        },
+        {
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 336.",
+          "right": "Citing s. 336 where the neighbour actually applies."
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-336-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 336."
+    },
+    {
+      "id": "bns-336-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-336-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-336-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 336 (Forgery)",
+      "answer": "Introduction. BNS s. 336 deals with Forgery. It sits in Chapter XVIII — Of Offences Relating to Documents and to Property Marks of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Forgery (old 463/465): making a false document or false electronic record, with intent to cause damage or injury, to support a claim or title, to cause a person to part with property, or to commit fraud. Electronic records are in the definition.\n\nLegal rule. In student language: BNS s. 336 is the rule on “Forgery”. The section provides that . (1) Whoever makes any false document or false electronic record or part of a document or electronic record, with intent to cause damage or injury, to the public or to any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever makes any false document or false electronic record or part of a document or electronic record, with intent to cause damage or injury, to the public or to any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery\n2. (2) Whoever commits forgery shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both\n3. (3) Whoever commits forgery, intending that the document or electronic record forged shall be used for the purpose of cheating, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n4. (4) Whoever commits forgery, intending that the document or electronic record forged shall harm the reputation of any party, or knowing that it is likely to be used for that purpose, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 336. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 335, BNS s. 340. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 336 is the complete current-law heading for Forgery. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-336-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 336 (Forgery) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 336 deals with Forgery. It sits in Chapter XVIII — Of Offences Relating to Documents and to Property Marks of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Forgery (old 463/465): making a false document or false electronic record, with intent to cause damage or injury, to support a claim or title, to cause a person to part with property, or to commit fraud. Electronic records are in the definition.\n\nLegal rule. In student language: BNS s. 336 is the rule on “Forgery”. The section provides that . (1) Whoever makes any false document or false electronic record or part of a document or electronic record, with intent to cause damage or injury, to the public or to any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever makes any false document or false electronic record or part of a document or electronic record, with intent to cause damage or injury, to the public or to any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery\n2. (2) Whoever commits forgery shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both\n3. (3) Whoever commits forgery, intending that the document or electronic record forged shall be used for the purpose of cheating, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n4. (4) Whoever commits forgery, intending that the document or electronic record forged shall harm the reputation of any party, or knowing that it is likely to be used for that purpose, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 336. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 335, BNS s. 340. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 336 is the complete current-law heading for Forgery. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. False documents, forgery, using a forged electronic record, property marks.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 336 with BNS s. 335, BNS s. 340. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 336.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 336 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "A fake PDF is a false electronic record. Do not argue that forgery is paper-only."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 336 (Forgery).",
+      "steps": [
+        "Introduce BNS s. 336 and Chapter XVIII — Of Offences Relating to Documents and to Property Marks.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 336."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 336 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Distinguish BNS s. 336 from BNS s. 335, BNS s. 340.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 336, Forgery.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 336: Forgery.",
+    "First ingredient: (1) Whoever makes any false document or false electronic record or part of a document or electronic record, with intent to cause damage or injury, to the public or to any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 336 — Forgery. Older books and judgments may still print a historical number (463 / 465). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": [
+    "s-335",
+    "s-340"
+  ]
 }
 
 export default content

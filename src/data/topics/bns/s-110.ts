@@ -1,25 +1,162 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'BNS Section 110: Attempt to commit culpable homicide. This note explains its statutory scope within the Offences affecting life cluster and the connected BNS, BNSS and BSA issues that must be checked before application.',
-  study: `Section 110 — Attempt to commit culpable homicide.\n\nAttempt to commit culpable homicide (old IPC 308). Use this when the intended offence is s. 100/105, not murder. Do not confuse BNS 110 with old IPC 309 (attempt to suicide), which was not re-enacted. Historical IPC concordance: 308.\n\nRead the enacted text with its definitions, explanations, provisos and exceptions. For pre-1 July 2024 conduct, separately apply the repeal-and-savings framework and Article 20(1).`,
-  sections:[
-    {id:'s-110-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:['Chapter vi; cluster: Offences affecting life.','Attempt to commit culpable homicide (old IPC 308). Use this when the intended offence is s. 100/105, not murder. Do not confuse BNS 110 with old IPC 309 (attempt to suicide), which was not re-enacted.','Historical IPC concordance: 308.]},
-    {id:'s-110-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:['Operative title: “Attempt to commit culpable homicide”.','Read every sub-section, proviso, explanation and exception in the enacted text.','Identify the connected punishment provision before advising on sentence.]},
-    {id:'s-110-m3',title:'Application Ingredients & Issue-Spotting',order:3,content:['Identify the protected legal interest or statutory situation addressed by the provision.','Map each material fact to the enacted words of s. 110.','Check connected definitions, exceptions and adjacent provisions before concluding that the section is attracted.']},
-    {id:'s-110-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:['The prosecution ordinarily bears the burden of proving a criminal charge beyond reasonable doubt, subject to any applicable statutory presumption.','Identify the fact each side must establish and distinguish admissibility from evidentiary weight under the BSA 2023.','Electronic material must satisfy the applicable BSA requirements; digital availability alone does not establish authenticity or weight.']},
-    {id:'s-110-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:['Check the BNSS First Schedule and connected offence/punishment provision for cognizability, bailability and trial court.','Check territorial jurisdiction, charge/joinder issues and any sanction or statutory permission requirement.','Verify BNSS limitation provisions, if applicable.','For pre-1 July 2024 conduct, separately analyze the BNS savings provision and Article 20(1).']},
+  "study": "Introduction and meaning\nAttempt to commit culpable homicide (old IPC 308). Use this when the intended offence is s. 100/105, not murder. Do not confuse BNS 110 with old IPC 309 (attempt to suicide), which was not re-enacted. BNS restatement of IPC 308. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 110 is the rule on “Attempt to commit culpable homicide”. The section provides that whoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 110 exists so that “Attempt to commit culpable homicide” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n110. Whoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both\n\nEssential ingredients\n1. Whoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both\n\nStatutory illustrations\nIllustration (a). A, on grave and sudden provocation, fires a pistol at Z, under such circumstances that if he thereby caused death, he would be guilty of culpable homicide not amounting to murder. A has committed the offence defined in this section\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 110 it proves. Copying the illustration without that mapping sentence does not score.",
+  "glance": "BNS s. 110 — Attempt to commit culpable homicide.",
+  "sections": [
+    {
+      "id": "bns-110-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "110. Whoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both"
+      ]
+    },
+    {
+      "id": "bns-110-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both"
+      ]
+    },
+    {
+      "id": "bns-110-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "A, on grave and sudden provocation, fires a pistol at Z, under such circumstances that if he thereby caused death, he would be guilty of culpable homicide not amounting to murder. A has committed the offence defined in this section"
+      ]
+    }
   ],
-  provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-110',section:'s. 110',title:'Attempt to commit culpable homicide'}],
-  examples:[{id:'s-110-ex1',title:'Provision applies — statutory conditions satisfied',illustrationType:'practical',description:'The alleged conduct or circumstance falls within the statutory subject of s. 110 and the connected conditions are proved.'},{id:'s-110-ex2',title:'Boundary defect — an ingredient is missing',illustrationType:'fail-scenario',description:'The facts resemble the section, but a required condition, exception, qualification or causal link is not established.'}],
-  hypotheticals:[{id:'s-110-hypo',title:'Chamber problem — BNS s. 110',facts:'The prosecution invokes s. 110 on facts within the Offences affecting life cluster. The defence disputes the statutory fit.',question:'Do the proved facts satisfy s. 110?',applicableLaw:'BNS s. 110; connected BNS provisions; applicable BNSS procedure; BSA 2023 evidence rules.',analysis:'1. Identify the exact statutory words. 2. Break them into conditions. 3. Test each condition against the evidence. 4. Apply exceptions or provisos. 5. Identify the correct procedural and punishment consequence.',conclusion:'Application turns on the enacted ingredients of s. 110, not on the historical IPC number alone.'}],
-  distinctions:[{id:'s-110-dist',title:'BNS provision vs historical IPC concordance',left:'BNS s. 110',right:'Historical IPC: 308',rows:[{point:'Governing law',left:'BNS for post-commencement offences',right:'IPC is historical where saved or relevant'},{point:'Method',left:'Start with enacted BNS wording',right:'Use historical IPC only to understand continuity/change'},{point:'Transition',left:'Check commencement and savings',right:'Pre-commencement offences may remain governed by saved IPC law'}]}],
-  misconceptions:[{id:'s-110-trap',trap:'The IPC number can automatically be substituted for BNS s. 110.',correction:'The enacted BNS text controls post-commencement offences; historical concordance is not a substitute for reading the BNS provision.'},{id:'s-110-trap-2',trap:'The section heading alone proves liability.',correction:'All statutory ingredients and relevant exceptions must be established on the evidence.'}],
-  cases:[],
-  questionsAndAnswers:[{id:'s-110-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment of BNS s. 110.',answer:`I. ISSUE — precise statutory question.\nII. RULE — enacted ingredients, connected provisions and exceptions.\nIII. APPLICATION — map evidence to each condition.\nIV. CONCLUSION — whether s. 110 is attracted and the connected consequence.`,explanation:'Chamber-style structured analysis.'},{id:'s-110-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 110.',answer:`I. STATUTORY SCHEME.\nII. INGREDIENTS.\nIII. EVIDENCE AND BURDEN.\nIV. RESPONSE TO EXCEPTIONS AND DEFENCES.\nV. PROCEDURE AND OPERATIVE RELIEF.`,explanation:'Courtroom submission structure without unverified authorities.'}],
-  bareActPointers:['BNS s. 110 — Attempt to commit culpable homicide','Connected BNS definitions/exceptions','BNSS First Schedule and applicable procedure','BSA 2023 burden and evidence provisions','BNS repeal-and-savings framework for pre-1 July 2024 conduct'],
-  examTips:['Start with the enacted BNS wording.','Check connected definitions, exceptions, procedure and punishment.','Use IPC numbering only as historical concordance.'],
-  revisionPoints:['s. 110: Attempt to commit culpable homicide.','Cluster: Offences affecting life.','IPC concordance: 308.','Verify BNSS procedure and BSA evidence requirements.'],
-  relatedTopics:['s-100','s-105','s-109'],
+  "examples": [
+    {
+      "id": "bns-110-ex-1",
+      "title": "Illustration (a)",
+      "description": "A, on grave and sudden provocation, fires a pistol at Z, under such circumstances that if he thereby caused death, he would be guilty of culpable homicide not amounting to murder. A has committed the offence defined in this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 110 — which fact proves which element, and what the legal result is."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-110-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "A, on grave and sudden provocation, fires a pistol at Z, under such circumstances that if he thereby caused death, he would be guilty of culpable homicide not amounting to murder. A has committed the offence defined in this section",
+      "question": "Whether BNS s. 110 (Attempt to commit culpable homicide) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 110. Chapter VI — Of Offences Affecting the Human Body. Connected: BNS s. 100, BNS s. 105, BNS s. 109.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 110 (Attempt to commit culpable homicide), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 110 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 110 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 110. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "distinctions": [
+    {
+      "id": "bns-110-dist",
+      "title": "BNS s. 110 and connected sections",
+      "left": "BNS s. 110",
+      "right": "BNS s. 100, BNS s. 105, BNS s. 109",
+      "rows": [
+        {
+          "point": "Heading",
+          "left": "Attempt to commit culpable homicide",
+          "right": "Read the neighbour’s title on its own page before you write."
+        },
+        {
+          "point": "What you must prove",
+          "left": "Whoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+        },
+        {
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 110.",
+          "right": "Citing s. 110 where the neighbour actually applies."
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-110-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 110."
+    },
+    {
+      "id": "bns-110-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-110-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-110-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 110 (Attempt to commit culpable homicide)",
+      "answer": "Introduction. BNS s. 110 deals with Attempt to commit culpable homicide. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Attempt to commit culpable homicide (old IPC 308). Use this when the intended offence is s. 100/105, not murder. Do not confuse BNS 110 with old IPC 309 (attempt to suicide), which was not re-enacted. BNS restatement of IPC 308. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 110 is the rule on “Attempt to commit culpable homicide”. The section provides that whoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): A, on grave and sudden provocation, fires a pistol at Z, under such circumstances that if he thereby caused death, he would be guilty of culpable homicide not amounting to murder. A has committed the offence defined in this section\n\nLimitations. Apply only the conditions written in s. 110. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 100, BNS s. 105, BNS s. 109. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 110 is the complete current-law heading for Attempt to commit culpable homicide. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-110-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 110 (Attempt to commit culpable homicide) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 110 deals with Attempt to commit culpable homicide. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Attempt to commit culpable homicide (old IPC 308). Use this when the intended offence is s. 100/105, not murder. Do not confuse BNS 110 with old IPC 309 (attempt to suicide), which was not re-enacted. BNS restatement of IPC 308. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 110 is the rule on “Attempt to commit culpable homicide”. The section provides that whoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): A, on grave and sudden provocation, fires a pistol at Z, under such circumstances that if he thereby caused death, he would be guilty of culpable homicide not amounting to murder. A has committed the offence defined in this section\n\nLimitations. Apply only the conditions written in s. 110. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 100, BNS s. 105, BNS s. 109. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 110 is the complete current-law heading for Attempt to commit culpable homicide. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 110 with BNS s. 100, BNS s. 105, BNS s. 109. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 110.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 110 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 110 (Attempt to commit culpable homicide).",
+      "steps": [
+        "Introduce BNS s. 110 and Chapter VI — Of Offences Affecting the Human Body.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 110."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 110 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Distinguish BNS s. 110 from BNS s. 100, BNS s. 105, BNS s. 109.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 110, Attempt to commit culpable homicide.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 110: Attempt to commit culpable homicide.",
+    "First ingredient: Whoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both",
+    "1 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 110 — Attempt to commit culpable homicide. Older books and judgments may still print a historical number (308). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": [
+    "s-100",
+    "s-105",
+    "s-109"
+  ]
 }
+
 export default content

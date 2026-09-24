@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Occupier's liability concerns the duty owed by a person sufficiently in control of premises to lawful visitors and, in appropriate cases, trespassers.",
   "study": "Occupier's liability concerns the duty owed by a person sufficiently in control of premises to lawful visitors and, in appropriate cases, trespassers.\\n\\nWheat v Lacon established that occupation is a question of control rather than title. Modern analysis uses reasonable care in light of visitor status, premises and foreseeable risk, supplemented by any statutory duties.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

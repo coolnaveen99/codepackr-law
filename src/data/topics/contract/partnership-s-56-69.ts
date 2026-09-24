@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Partnership Act ss. 56–69 — Registration and Effects of Non-Registration is a Senior Counsel-level treatment of s. 56–69 under the Indian Partnership Act, 1932. It connects statutory text, doctrine, authority, proof, procedure and remedies.",
   "sections": [
     {
@@ -140,4 +142,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Registration/procedural consequence",
     "Authority verification"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Tort liability may be discharged by death where the claim is personal and not saved by statute, by accord and satisfaction, release, judgment, limitation or another recognised legal event.",
   "study": "Tort liability may be discharged by death where the claim is personal and not saved by statute, by accord and satisfaction, release, judgment, limitation or another recognised legal event.\\n\\nThe historical actio personalis rule was modified by Indian legislation. Settlement and release, merger in judgment and limitation may also extinguish or bar claims. Discharge is distinct from a defence on the merits.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

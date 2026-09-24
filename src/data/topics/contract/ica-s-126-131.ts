@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "ICA ss. 126–131 — Guarantee and Continuing Guarantee is a Senior Counsel-level treatment of s. 126–131 under the Indian Contract Act, 1872. It connects statutory text, doctrine, authority, proof, procedure and remedies without marks-based formatting.",
   "sections": [
     {
@@ -143,4 +145,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Forum and limitation checkpoints",
     "Verified authority and ratio"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

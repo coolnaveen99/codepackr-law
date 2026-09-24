@@ -1,32 +1,130 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 338 (and related): using as genuine a forged document or electronic record — whoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be forged is punished as provided (higher when the forged instrument is of the aggravated class). Successor to IPC s. 471.',
-  study: `Using a forged document as genuine under the BNS:\n\nWhoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be a forged document or electronic record is punished in the same manner as if he had forged such document or electronic record (with higher scale when the instrument is of the aggravated class).\n\nKey points\n• Use as genuine.\n• Knowledge or reason to believe that it is forged.\n• Fraudulently or dishonestly.\n\nThis catches the user who did not necessarily forge the document. Often charged together with forgery and cheating. Cite the applicable BNS section for post-1 July 2024 acts.`,
-  sections: [
-    { id: 's-338-m1', title: 'Provenance', order: 1, content: ['Successor to IPC s. 471. Fraudulent/dishonest use of a document known or believed to be forged.'] },
-    { id: 's-338-m2', title: 'Elements', order: 2, content: ['Use as genuine; document/electronic record; knowledge or reason to believe it is forged; fraudulently or dishonestly.'] },
-    { id: 's-338-m3', title: 'Ingredients', order: 3, content: ['(1) Document or electronic record is forged. (2) Accused uses it as genuine. (3) Knowledge or reason to believe of forgery. (4) Fraudulent or dishonest use.'] },
-    { id: 's-338-m4', title: 'Evidence', order: 4, content: ['Forgery of the document; use by the accused; knowledge/reason to believe; dishonest purpose.'] },
-    { id: 's-338-m5', title: 'Procedure', order: 5, content: ['Commonly joined with forgery and cheating; forum per BNSS Schedule.'] },
+  "study": "Introduction and meaning\nForgery of valuable security, will, etc. BNS restatement of IPC 467. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 467. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 338 is the rule on “Forgery of valuable security, will, etc”. The section provides that whoever forges a document which purports to be a valuable security or a will, or an authority to adopt a son, or which purports to give authority to any person to make or transfer any valuable security, or to receive the principal, interest or dividends thereon, or to receive or deliver any money, movable property, or valuable security, or any document purporting to be an acquittance or receipt acknowledging the payment of money, or an acquittance or receipt for the delivery of any movable property or valuable security, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 338 exists so that “Forgery of valuable security, will, etc” has a closed legal test in Chapter XVIII — Of Offences Relating to Documents and to Property Marks. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: False documents, forgery, using a forged electronic record, property marks.\n\nThe provision in detail\n338. Whoever forges a document which purports to be a valuable security or a will, or an authority to adopt a son, or which purports to give authority to any person to make or transfer any valuable security, or to receive the principal, interest or dividends thereon, or to receive or deliver any money, movable property, or valuable security, or any document purporting to be an acquittance or receipt acknowledging the payment of money, or an acquittance or receipt for the delivery of any movable property or valuable security, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nEssential ingredients\n1. Whoever forges a document which purports to be a valuable security or a will, or an authority to adopt a son, or which purports to give authority to any person to make or transfer any valuable security, or to receive the principal, interest or dividends thereon, or to receive or deliver any money, movable property, or valuable security, or any document purporting to be an acquittance or receipt acknowledging the payment of money, or an acquittance or receipt for the delivery of any movable property or valuable security, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine",
+  "glance": "BNS s. 338 — Forgery of valuable security, will, etc.",
+  "sections": [
+    {
+      "id": "bns-338-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "338. Whoever forges a document which purports to be a valuable security or a will, or an authority to adopt a son, or which purports to give authority to any person to make or transfer any valuable security, or to receive the principal, interest or dividends thereon, or to receive or deliver any money, movable property, or valuable security, or any document purporting to be an acquittance or receipt acknowledging the payment of money, or an acquittance or receipt for the delivery of any movable property or valuable security, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-338-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever forges a document which purports to be a valuable security or a will, or an authority to adopt a son, or which purports to give authority to any person to make or transfer any valuable security, or to receive the principal, interest or dividends thereon, or to receive or deliver any money, movable property, or valuable security, or any document purporting to be an acquittance or receipt acknowledging the payment of money, or an acquittance or receipt for the delivery of any movable property or valuable security, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-338', section: 's. 338', title: 'Using as genuine a forged document or electronic record' }],
-  examples: [
-    { id: 's-338-ex1', title: 'Tendering forged deed', illustrationType: 'practical', description: 'A knows a sale deed is forged and still tenders it as genuine to obtain property. Using as genuine is made out.' },
-    { id: 's-338-ex2', title: 'No knowledge of forgery', illustrationType: 'fail-scenario', description: 'A uses a document believing it to be genuine. Without knowledge or reason to believe of forgery, the offence is not made out.' },
+  "examples": [
+    {
+      "id": "bns-338-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Forgery of valuable security, will, etc”. Name BNS s. 338, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-338-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 338 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-338-hypo', title: 'Use of forged document', facts: 'Accused presents a forged certificate to obtain a job, knowing it is forged.', question: 'Is the offence made out?', applicableLaw: 'BNS using-as-genuine provisions.', analysis: 'Use as genuine + knowledge of forgery + dishonest purpose — yes.', conclusion: 'Offence established.' }],
-  distinctions: [],
-  misconceptions: [{ id: 's-338-trap', trap: 'Only the forger can be liable for using a forged document.', correction: 'The user who fraudulently or dishonestly uses a document knowing or having reason to believe it is forged is liable even if someone else forged it.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-338-brief', draftingCategory: 'brief', question: 'Explain using as genuine a forged document under the BNS.', answer: 'Whoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be forged is punished as if he had forged it (with higher scale for aggravated instruments). Knowledge or reason to believe of forgery is essential.', explanation: 'Short note.' },
-    { id: 's-338-sub', draftingCategory: 'submissions', question: 'Submissions on using forged document as genuine.', answer: 'I. Document forged. II. Use as genuine. III. Knowledge/reason to believe. IV. Fraudulent/dishonest. V. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-338-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Forgery of valuable security, will, etc” under BNS s. 338 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 338 (Forgery of valuable security, will, etc) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 338. Chapter XVIII — Of Offences Relating to Documents and to Property Marks. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 338 (Forgery of valuable security, will, etc), Chapter XVIII — Of Offences Relating to Documents and to Property Marks.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever forges a document which purports to be a valuable security or a will, or an authority to adopt a son, or which purports to give authority to any person to make or transfer any valuable security, or to receive the principal, interest or dividends thereon, or to receive or deliver any money, movable property, or valuable security, or any document purporting to be an acquittance or receipt acknowledging the payment of money, or an acquittance or receipt for the delivery of any movable property or valuable security, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 338 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 338 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 338. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS using-as-genuine provisions', 'BNS s. 336', 'BNS s. 337', 'BNS s. 318', 'IPC s. 471 (historical)'],
-  examTips: ['Stress knowledge or reason to believe of forgery.', 'Often charged with forgery and cheating together.'],
-  revisionPoints: ['Use as genuine + knowledge/reason to believe forged + fraudulent/dishonest.', 'User need not be the forger.', 'Higher scale for valuable security/will class.'],
-  relatedTopics: ['s-336', 's-337', 's-318', 's-230'],
+  "misconceptions": [
+    {
+      "id": "bns-338-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 338."
+    },
+    {
+      "id": "bns-338-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-338-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-338-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 338 (Forgery of valuable security, will, etc)",
+      "answer": "Introduction. BNS s. 338 deals with Forgery of valuable security, will, etc. It sits in Chapter XVIII — Of Offences Relating to Documents and to Property Marks of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Forgery of valuable security, will, etc. BNS restatement of IPC 467. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 467. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 338 is the rule on “Forgery of valuable security, will, etc”. The section provides that whoever forges a document which purports to be a valuable security or a will, or an authority to adopt a son, or which purports to give authority to any person to make or transfer any valuable security, or to receive the principal, interest or dividends thereon, or to receive or deliver any money, movable property, or valuable security, or any document purporting to be an acquittance or receipt acknowledging the payment of money, or an acquittance or receipt for the delivery of any movable property or valuable security, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever forges a document which purports to be a valuable security or a will, or an authority to adopt a son, or which purports to give authority to any person to make or transfer any valuable security, or to receive the principal, interest or dividends thereon, or to receive or deliver any money, movable property, or valuable security, or any document purporting to be an acquittance or receipt acknowledging the payment of money, or an acquittance or receipt for the delivery of any movable property or valuable security, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 338. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 338 is the complete current-law heading for Forgery of valuable security, will, etc. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-338-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 338 (Forgery of valuable security, will, etc) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 338 deals with Forgery of valuable security, will, etc. It sits in Chapter XVIII — Of Offences Relating to Documents and to Property Marks of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Forgery of valuable security, will, etc. BNS restatement of IPC 467. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 467. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 338 is the rule on “Forgery of valuable security, will, etc”. The section provides that whoever forges a document which purports to be a valuable security or a will, or an authority to adopt a son, or which purports to give authority to any person to make or transfer any valuable security, or to receive the principal, interest or dividends thereon, or to receive or deliver any money, movable property, or valuable security, or any document purporting to be an acquittance or receipt acknowledging the payment of money, or an acquittance or receipt for the delivery of any movable property or valuable security, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever forges a document which purports to be a valuable security or a will, or an authority to adopt a son, or which purports to give authority to any person to make or transfer any valuable security, or to receive the principal, interest or dividends thereon, or to receive or deliver any money, movable property, or valuable security, or any document purporting to be an acquittance or receipt acknowledging the payment of money, or an acquittance or receipt for the delivery of any movable property or valuable security, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 338. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 338 is the complete current-law heading for Forgery of valuable security, will, etc. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. False documents, forgery, using a forged electronic record, property marks.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 338. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 338.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 338 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 338 (Forgery of valuable security, will, etc).",
+      "steps": [
+        "Introduce BNS s. 338 and Chapter XVIII — Of Offences Relating to Documents and to Property Marks.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 338."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 338 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 338, Forgery of valuable security, will, etc.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 338: Forgery of valuable security, will, etc.",
+    "First ingredient: Whoever forges a document which purports to be a valuable security or a will, or an authority to adopt a son, or which purports to give authority to any person to make or transfer any valuable security, or to receive the principal, interest or dividends thereon, or to receive or deliver any money, movable property, or valuable security, or any document purporting to be an acquittance or receipt acknowledging the payment of money, or an acquittance or receipt for the delivery of any movable property or valuable security, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 338 — Forgery of valuable security, will, etc. Older books and judgments may still print a historical number (467). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

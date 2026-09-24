@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Trespass to land is direct and unlawful interference with possession. Trespass ab initio concerns abuse of a lawful entry authority; jus tertii is the limited rule concerning a stranger's superior title.",
   "study": "Trespass to land is direct and unlawful interference with possession. Trespass ab initio concerns abuse of a lawful entry authority; jus tertii is the limited rule concerning a stranger's superior title.\\n\\nTrespass protects possession rather than abstract title. Entick v Carrington illustrates strict protection against unauthorised entry; the Six Carpenters' Case developed trespass ab initio.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

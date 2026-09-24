@@ -1,32 +1,133 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 57 (and related): abetment of an offence punishable with death or life imprisonment — when the offence is not committed, the abettor faces a substantial term (as provided). When the offence is committed, ordinary abetment punishment rules (s. 49 etc.) apply. Successor structure to IPC s. 115.',
-  study: `Abetment of capital / life offences under the BNS:\n\nWhen a person abets an offence punishable with death or imprisonment for life:\n• If the offence is not committed in consequence of the abetment, and no express provision applies, the abettor is punished with a substantial term (as stated in the section) and/or fine.\n• If the offence is committed, the general rule under s. 49 (punishment as for the offence) or the specific provision applies.\n\nThis is a more serious residual abetment scale than the ordinary one-fourth rule under s. 51.\n\nCite BNS s. 57 for post-1 July 2024 acts. Always identify whether the abetted act was completed.`,
-  sections: [
-    { id: 's-57-m1', title: 'Provenance', order: 1, content: ['Successor structure to IPC s. 115. Enhanced residual punishment for abetment of death/life offences when not committed.'] },
-    { id: 's-57-m2', title: 'When Offence Not Committed', order: 2, content: ['Abetment of offence punishable with death or life; act not committed; substantial term as provided.'] },
-    { id: 's-57-m3', title: 'When Offence Committed', order: 3, content: ['Ordinary abetment rules (s. 49 / specific sections) — full punishment of the offence.'] },
-    { id: 's-57-m4', title: 'Ingredients', order: 4, content: ['(1) Abetment. (2) Object offence punishable with death or life. (3) Act not committed (for this residual scale).'] },
-    { id: 's-57-m5', title: 'Procedure', order: 5, content: ['Charge under abetment framework with the appropriate scale (s. 57 vs s. 49).'] },
+  "study": "Introduction and meaning\nAbetting commission of offence by public or by more than ten persons. BNS restatement of IPC 117. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 117. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 57 is the rule on “Abetting commission of offence by public or by more than ten persons”. The section provides that whoever abets the commission of an offence by the public generally or by any number or class of persons exceeding ten, shall be punished with imprisonment of either description for a term which may extend to seven years and with fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 57 exists so that “Abetting commission of offence by public or by more than ten persons” has a closed legal test in Chapter IV — Of Abetment, Criminal Conspiracy and Attempt. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: The inchoate trio. Abetment now covers extra-territorial aid; conspiracy and attempt sit next to it.\n\nThe provision in detail\n57. Whoever abets the commission of an offence by the public generally or by any number or class of persons exceeding ten, shall be punished with imprisonment of either description for a term which may extend to seven years and with fine\n\nEssential ingredients\n1. Whoever abets the commission of an offence by the public generally or by any number or class of persons exceeding ten, shall be punished with imprisonment of either description for a term which may extend to seven years and with fine\n\nStatutory illustrations\nIllustration (a). A affixes in a public place a placard instigating a sect consisting of more than ten members to meet at a certain time and place, for the purpose of attacking the members of an adverse sect, while engaged in a procession. A has committed the offence defined in this section\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 57 it proves. Copying the illustration without that mapping sentence does not score.",
+  "glance": "BNS s. 57 — Abetting commission of offence by public or by more than ten persons.",
+  "sections": [
+    {
+      "id": "bns-57-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "57. Whoever abets the commission of an offence by the public generally or by any number or class of persons exceeding ten, shall be punished with imprisonment of either description for a term which may extend to seven years and with fine"
+      ]
+    },
+    {
+      "id": "bns-57-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever abets the commission of an offence by the public generally or by any number or class of persons exceeding ten, shall be punished with imprisonment of either description for a term which may extend to seven years and with fine"
+      ]
+    },
+    {
+      "id": "bns-57-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "A affixes in a public place a placard instigating a sect consisting of more than ten members to meet at a certain time and place, for the purpose of attacking the members of an adverse sect, while engaged in a procession. A has committed the offence defined in this section"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-57', section: 's. 57', title: 'Abetment of offence punishable with death or life imprisonment' }],
-  examples: [
-    { id: 's-57-ex1', title: 'Abetment of murder not completed', illustrationType: 'practical', description: 'A instigates B to commit murder. B refuses. A is punishable under the enhanced residual scale for abetment of a death-punishable offence when not committed.' },
-    { id: 's-57-ex2', title: 'Murder completed', illustrationType: 'practical', description: 'If B commits the murder in consequence, A is punished under s. 49 (or specific provision) as for the offence of murder — not under the “not committed” scale.' },
+  "examples": [
+    {
+      "id": "bns-57-ex-1",
+      "title": "Illustration (a)",
+      "description": "A affixes in a public place a placard instigating a sect consisting of more than ten members to meet at a certain time and place, for the purpose of attacking the members of an adverse sect, while engaged in a procession. A has committed the offence defined in this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 57 — which fact proves which element, and what the legal result is."
+    }
   ],
-  hypotheticals: [{ id: 's-57-hypo', title: 'Scale selection', facts: 'Abetment of an offence punishable with life; the offence is not committed.', question: 'Which punishment scale?', applicableLaw: 'BNS s. 57; s. 49; s. 51.', analysis: 'Object is death/life offence and act not committed → s. 57 enhanced residual scale (not the ordinary one-fourth under s. 51).', conclusion: 's. 57 scale applies.' }],
-  distinctions: [{ id: 's-57-dist', title: 's. 57 vs s. 51 vs s. 49', left: 's. 57', right: 's. 51 / s. 49', rows: [{ point: 'When', left: 'Abetment of death/life offence; act not committed', right: 'Ordinary residual when not committed / full punishment when committed' }] }],
-  misconceptions: [{ id: 's-57-trap', trap: 'Abetment of murder when not committed is only punishable with one-fourth of the term.', correction: 'For offences punishable with death or life, the residual scale when the act is not committed is the enhanced scale under s. 57, not the ordinary one-fourth under s. 51.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-57-brief', draftingCategory: 'brief', question: 'Explain the punishment for abetment of an offence punishable with death or life when the offence is not committed.', answer: 'Under the residual rule for such abetment when the act is not committed, the abettor faces a substantial term as provided in s. 57 (higher than the ordinary one-fourth scale under s. 51). If the offence is committed, s. 49 (or a specific provision) applies.', explanation: 'Short note.' },
-    { id: 's-57-sub', draftingCategory: 'submissions', question: 'Submissions on s. 57.', answer: 'I. Abetment of death/life offence. II. Act not committed. III. s. 57 scale. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-57-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "A affixes in a public place a placard instigating a sect consisting of more than ten members to meet at a certain time and place, for the purpose of attacking the members of an adverse sect, while engaged in a procession. A has committed the offence defined in this section",
+      "question": "Whether BNS s. 57 (Abetting commission of offence by public or by more than ten persons) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 57. Chapter IV — Of Abetment, Criminal Conspiracy and Attempt. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 57 (Abetting commission of offence by public or by more than ten persons), Chapter IV — Of Abetment, Criminal Conspiracy and Attempt.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever abets the commission of an offence by the public generally or by any number or class of persons exceeding ten, shall be punished with imprisonment of either description for a term which may extend to seven years and with fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 57 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 57 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 57. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS s. 57', 'BNS s. 49', 'BNS s. 51', 'BNS s. 45', 'IPC s. 115 (historical)'],
-  examTips: ['Distinguish the three scales: s. 49 (committed), s. 57 (death/life not committed), s. 51 (ordinary not committed).'],
-  revisionPoints: ['Death/life offence abetted but not committed → s. 57 enhanced residual.', 'Committed → s. 49 full punishment.', 'Ordinary offence not committed → s. 51 one-fourth.'],
-  relatedTopics: ['s-45', 's-49', 's-51', 's-101'],
+  "misconceptions": [
+    {
+      "id": "bns-57-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 57."
+    },
+    {
+      "id": "bns-57-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-57-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-57-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 57 (Abetting commission of offence by public or by more than ten persons)",
+      "answer": "Introduction. BNS s. 57 deals with Abetting commission of offence by public or by more than ten persons. It sits in Chapter IV — Of Abetment, Criminal Conspiracy and Attempt of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Abetting commission of offence by public or by more than ten persons. BNS restatement of IPC 117. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 117. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 57 is the rule on “Abetting commission of offence by public or by more than ten persons”. The section provides that whoever abets the commission of an offence by the public generally or by any number or class of persons exceeding ten, shall be punished with imprisonment of either description for a term which may extend to seven years and with fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever abets the commission of an offence by the public generally or by any number or class of persons exceeding ten, shall be punished with imprisonment of either description for a term which may extend to seven years and with fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): A affixes in a public place a placard instigating a sect consisting of more than ten members to meet at a certain time and place, for the purpose of attacking the members of an adverse sect, while engaged in a procession. A has committed the offence defined in this section\n\nLimitations. Apply only the conditions written in s. 57. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 57 is the complete current-law heading for Abetting commission of offence by public or by more than ten persons. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-57-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 57 (Abetting commission of offence by public or by more than ten persons) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 57 deals with Abetting commission of offence by public or by more than ten persons. It sits in Chapter IV — Of Abetment, Criminal Conspiracy and Attempt of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Abetting commission of offence by public or by more than ten persons. BNS restatement of IPC 117. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 117. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 57 is the rule on “Abetting commission of offence by public or by more than ten persons”. The section provides that whoever abets the commission of an offence by the public generally or by any number or class of persons exceeding ten, shall be punished with imprisonment of either description for a term which may extend to seven years and with fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever abets the commission of an offence by the public generally or by any number or class of persons exceeding ten, shall be punished with imprisonment of either description for a term which may extend to seven years and with fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): A affixes in a public place a placard instigating a sect consisting of more than ten members to meet at a certain time and place, for the purpose of attacking the members of an adverse sect, while engaged in a procession. A has committed the offence defined in this section\n\nLimitations. Apply only the conditions written in s. 57. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 57 is the complete current-law heading for Abetting commission of offence by public or by more than ten persons. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. The inchoate trio. Abetment now covers extra-territorial aid; conspiracy and attempt sit next to it.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 57. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 57.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 57 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 57 (Abetting commission of offence by public or by more than ten persons).",
+      "steps": [
+        "Introduce BNS s. 57 and Chapter IV — Of Abetment, Criminal Conspiracy and Attempt.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 57."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 57 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 57, Abetting commission of offence by public or by more than ten persons.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 57: Abetting commission of offence by public or by more than ten persons.",
+    "First ingredient: Whoever abets the commission of an offence by the public generally or by any number or class of persons exceeding ten, shall be punished with imprisonment of either description for a term which may extend to seven years and with fine",
+    "1 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 57 — Abetting commission of offence by public or by more than ten persons. Older books and judgments may still print a historical number (117). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

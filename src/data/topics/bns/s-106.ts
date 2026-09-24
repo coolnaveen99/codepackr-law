@@ -1,35 +1,175 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 106: causing death by rash or negligent act not amounting to culpable homicide. Punishment as per the statutory scale. Sub-section (2) (hit-and-run causing death and fleeing without reporting) was NOT brought into force by S.O. 850(E) — only s. 106(1) is in force. IPC 304A → BNS 106(1).',
-  study: `Section 106 deals with death by rashness or negligence.\n\n(1) Whoever causes death by doing any rash or negligent act not amounting to culpable homicide shall be punished with the imprisonment/fine scale stated in the section.\n\n(2) When the act is done by a person driving a vehicle and that person escapes without reporting to a police officer or Magistrate soon after the incident — enhanced punishment (as in the text). **This sub-section is NOT in force.** S.O. 850(E) dated 23 February 2024 brought the Sanhita into force on 1 July 2024 except s. 106(2).\n\nKey distinction from s. 100/105: there is no intention or knowledge of the degree required for culpable homicide — only rashness or negligence.\n\nCite BNS s. 106(1) for post-1 July 2024 rash/negligent deaths. Do not apply s. 106(2).`,
-  sections: [
-    { id: 's-106-m1', title: 'Provenance & Commencement', order: 1, content: ['Successor to IPC s. 304A. s. 106(1) in force from 1 July 2024; s. 106(2) expressly excepted by S.O. 850(E) and is not law.'] },
-    { id: 's-106-m2', title: 'Text', order: 2, content: ['(1) Death by rash or negligent act not amounting to culpable homicide. (2) Hit-and-run enhancement — NOT IN FORCE.'] },
-    { id: 's-106-m3', title: 'Ingredients (s. 106(1))', order: 3, content: ['(1) Death of a human being. (2) Caused by a rash or negligent act of the accused. (3) The act does not amount to culpable homicide (no s. 100 intention/knowledge).'] },
-    { id: 's-106-m4', title: 'Evidence', order: 4, content: ['Standard of care; deviation amounting to rashness or negligence; causation of death.'] },
-    { id: 's-106-m5', title: 'Procedure', order: 5, content: ['Forum and bailability as per BNSS Schedule for s. 106(1). Do not charge under s. 106(2).'] },
+  "study": "Introduction and meaning\nCausing death by a rash or negligent act not amounting to culpable homicide (old 304A). Clause (1) is in force: up to 5 years (8 if a registered medical practitioner in the course of a medical procedure). Clause (2) — causing death by rash driving and fleeing — was not commenced.\nIn student language: BNS s. 106 is the rule on “Causing death by negligence”. The section provides that (1) Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 106 exists so that “Causing death by negligence” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n106. (1) Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine\n\nDefinitions and key terms\n“registered medical practitioner” — a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act (2) Whoever causes death of any person by rash and negligent driving of vehicle not amounting to culpable homicide, and escapes without reporting it to a police officer or a Magistrate soon after the incident, shall be punished with imprisonment of either description of a term which may extend to ten years, and shall also be liable to fine.\n\nEssential ingredients\n1. (1) Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine\n\nPunishment / legal consequence\n(1) up to 5 years (8 if medical). (2) hit-and-run up to 10 years — not in force.\n\nExplanations\nExplanation.— For the purposes of this sub-section, “registered medical practitioner” means a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act\n\n(2) Whoever causes death of any person by rash and negligent driving of vehicle not amounting to culpable homicide, and escapes without reporting it to a police officer or a Magistrate soon after the incident, shall be punished with imprisonment of either description of a term which may extend to ten years, and shall also be liable to fine. (Section 106(2) of BNS shall not come into force on 1 st July 2024)",
+  "glance": "BNS s. 106 — Causing death by negligence.",
+  "sections": [
+    {
+      "id": "bns-106-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "106. (1) Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-106-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-106-defs",
+      "title": "Definitions and key terms",
+      "order": 3,
+      "content": [
+        "“registered medical practitioner” — a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act (2) Whoever causes death of any person by rash and negligent driving of vehicle not amounting to culpable homicide, and escapes without reporting it to a police officer or a Magistrate soon after the incident, shall be punished with imprisonment of either description of a term which may extend to ten years, and shall also be liable to fine."
+      ]
+    },
+    {
+      "id": "bns-106-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation.— For the purposes of this sub-section, “registered medical practitioner” means a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act",
+        "(2) Whoever causes death of any person by rash and negligent driving of vehicle not amounting to culpable homicide, and escapes without reporting it to a police officer or a Magistrate soon after the incident, shall be punished with imprisonment of either description of a term which may extend to ten years, and shall also be liable to fine. (Section 106(2) of BNS shall not come into force on 1 st July 2024)"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-106', section: 's. 106', title: 'Causing death by negligence' }],
-  examples: [
-    { id: 's-106-ex1', title: 'Rash driving death', illustrationType: 'practical', description: 'A drives at high speed through a crowded market and causes death. If there is no intention or knowledge under s. 100, the offence is under s. 106(1).' },
-    { id: 's-106-ex2', title: 's. 106(2) not in force', illustrationType: 'fail-scenario', description: 'Do not charge or convict under s. 106(2). It has not been brought into force. Hit-and-run death is dealt with under s. 106(1) (and any other applicable provisions).' },
+  "examples": [
+    {
+      "id": "bns-106-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Causing death by negligence”. Name BNS s. 106, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-106-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 106 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-106-hypo', title: 'Rash act vs culpable homicide', facts: 'Death caused by a reckless act; no proof of intention or knowledge under s. 100.', question: 'Which section?', applicableLaw: 'BNS ss. 100, 106(1).', analysis: 'Without s. 100 mental element, the correct section is s. 106(1).', conclusion: 'Charge under s. 106(1).' }],
-  distinctions: [{ id: 's-106-dist', title: 's. 106 vs s. 100/105', left: 's. 106 (rash/negligent)', right: 's. 100/105 (culpable homicide)', rows: [{ point: 'Mental element', left: 'Rashness or negligence only', right: 'Intention or knowledge that death is likely' }] }],
-  misconceptions: [
-    { id: 's-106-trap-1', trap: 's. 106(2) hit-and-run is in force.', correction: 'S.O. 850(E) expressly left s. 106(2) out of force. Only s. 106(1) operates.' },
-    { id: 's-106-trap-2', trap: 'Any driving death is automatically under s. 106.', correction: 'If intention or knowledge under s. 100 is proved, the correct path is s. 100/101/105, not s. 106.' },
+  "hypotheticals": [
+    {
+      "id": "bns-106-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Causing death by negligence” under BNS s. 106 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 106 (Causing death by negligence) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 106. Chapter VI — Of Offences Affecting the Human Body. Connected: BNS s. 100, BNS s. 103.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 106 (Causing death by negligence), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 106 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 106. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-106-brief', draftingCategory: 'brief', question: 'Explain BNS s. 106 and the status of sub-section (2).', answer: 's. 106(1) punishes causing death by a rash or negligent act not amounting to culpable homicide. s. 106(2) (hit-and-run enhancement) is not in force (S.O. 850(E)).', explanation: 'Short note.' },
-    { id: 's-106-sub', draftingCategory: 'submissions', question: 'Submissions on s. 106.', answer: 'I. Death by rash/negligent act. II. No s. 100 mental element. III. s. 106(1) only — (2) not in force. IV. Prayer.', explanation: 'Submissions.' },
+  "distinctions": [
+    {
+      "id": "bns-106-dist",
+      "title": "BNS s. 106 and connected sections",
+      "left": "BNS s. 106",
+      "right": "BNS s. 100, BNS s. 103",
+      "rows": [
+        {
+          "point": "Heading",
+          "left": "Causing death by negligence",
+          "right": "Read the neighbour’s title on its own page before you write."
+        },
+        {
+          "point": "What you must prove",
+          "left": "(1) Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+        },
+        {
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 106.",
+          "right": "Citing s. 106 where the neighbour actually applies."
+        }
+      ]
+    }
   ],
-  bareActPointers: ['BNS s. 106(1)', 'S.O. 850(E) (s. 106(2) not in force)', 'BNS s. 100', 'IPC s. 304A (historical)'],
-  examTips: ['Always state that s. 106(2) is not in force.', 'Distinguish rash/negligence from s. 100 intention/knowledge.'],
-  revisionPoints: ['s. 106(1) in force; s. 106(2) NOT in force.', 'Rash/negligent death without s. 100 mens rea.', 'IPC 304A → BNS 106(1).'],
-  relatedTopics: ['s-100', 's-105', 's-1', 's-18'],
+  "misconceptions": [
+    {
+      "id": "bns-106-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 106."
+    },
+    {
+      "id": "bns-106-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-106-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-106-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 106 (Causing death by negligence)",
+      "answer": "Introduction. BNS s. 106 deals with Causing death by negligence. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Causing death by a rash or negligent act not amounting to culpable homicide (old 304A). Clause (1) is in force: up to 5 years (8 if a registered medical practitioner in the course of a medical procedure). Clause (2) — causing death by rash driving and fleeing — was not commenced.\n\nLegal rule. In student language: BNS s. 106 is the rule on “Causing death by negligence”. The section provides that (1) Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine\n\nDefinitions. The core statutory definitions must be established:\n“registered medical practitioner” a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act (2) Whoever causes death of any person by rash and negligent driving of vehicle not amounting to culpable homicide, and escapes without reporting it to a police officer or a Magistrate soon after the incident, shall be punished with imprisonment of either description of a term which may extend to ten years, and shall also be liable to fine.\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.— For the purposes of this sub-section, “registered medical practitioner” means a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 106. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. (1) up to 5 years (8 if medical). (2) hit-and-run up to 10 years — not in force.\n\nConnected sections. Read with BNS s. 100, BNS s. 103. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 106 is the complete current-law heading for Causing death by negligence. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-106-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 106 (Causing death by negligence) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 106 deals with Causing death by negligence. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Causing death by a rash or negligent act not amounting to culpable homicide (old 304A). Clause (1) is in force: up to 5 years (8 if a registered medical practitioner in the course of a medical procedure). Clause (2) — causing death by rash driving and fleeing — was not commenced.\n\nLegal rule. In student language: BNS s. 106 is the rule on “Causing death by negligence”. The section provides that (1) Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine\n\nDefinitions. The core statutory definitions must be established:\n“registered medical practitioner” a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act (2) Whoever causes death of any person by rash and negligent driving of vehicle not amounting to culpable homicide, and escapes without reporting it to a police officer or a Magistrate soon after the incident, shall be punished with imprisonment of either description of a term which may extend to ten years, and shall also be liable to fine.\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.— For the purposes of this sub-section, “registered medical practitioner” means a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 106. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. (1) up to 5 years (8 if medical). (2) hit-and-run up to 10 years — not in force.\n\nConnected sections. Read with BNS s. 100, BNS s. 103. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 106 is the complete current-law heading for Causing death by negligence. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 106 with BNS s. 100, BNS s. 103. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 106.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 106 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Writing “hit-and-run is 10 years under 106(2)” without flagging non-commencement is a factual error in 2026."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 106 (Causing death by negligence).",
+      "steps": [
+        "Introduce BNS s. 106 and Chapter VI — Of Offences Affecting the Human Body.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 106."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 106 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Distinguish BNS s. 106 from BNS s. 100, BNS s. 103.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 106, Causing death by negligence.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 106: Causing death by negligence.",
+    "First ingredient: (1) Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 106 — Causing death by negligence. Older books and judgments may still print a historical number (304A). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law. s. 106(2) was left out of the 1 July 2024 commencement notification. Do not write that the whole of s. 106 is in force."
+  ],
+  "relatedTopics": [
+    "s-100",
+    "s-103"
+  ]
 }
 
 export default content

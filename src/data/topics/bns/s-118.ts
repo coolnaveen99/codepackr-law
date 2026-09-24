@@ -1,32 +1,135 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 118: voluntarily causing hurt or grievous hurt by dangerous weapons or means. Higher punishment than simple hurt/grievous hurt when the injury is caused by an instrument for shooting, stabbing or cutting, or by fire, heated substance, poison, corrosive substance, explosive, or other dangerous means. Successor structure to IPC ss. 324/326.',
-  study: `Section 118 (and related sub-provisions) enhance punishment when hurt or grievous hurt is caused by dangerous weapons or means.\n\nTypical dangerous means: instruments for shooting, stabbing or cutting; fire; heated substance; poison; corrosive substance; explosive; substance deleterious to the human body; or any other means that is dangerous.\n\nThe section sits above simple hurt (s. 115) and simple grievous hurt (s. 117). Intention or knowledge remains required (voluntarily).\n\nCite BNS s. 118 for post-1 July 2024 cases involving dangerous weapons/means.`,
-  sections: [
-    { id: 's-118-m1', title: 'Provenance', order: 1, content: ['Successor structure to IPC ss. 324/326. Aggravated hurt/GH by dangerous weapons or means.'] },
-    { id: 's-118-m2', title: 'Dangerous Means', order: 2, content: ['Shooting/stabbing/cutting instruments; fire; heated substance; poison; corrosive; explosive; other dangerous means.'] },
-    { id: 's-118-m3', title: 'Ingredients', order: 3, content: ['(1) Hurt or grievous hurt. (2) Caused voluntarily. (3) By a dangerous weapon or means as defined.'] },
-    { id: 's-118-m4', title: 'Evidence', order: 4, content: ['Weapon/means used; nature of injury; intention/knowledge.'] },
-    { id: 's-118-m5', title: 'Procedure', order: 5, content: ['More serious than simple hurt; forum and bailability per BNSS Schedule.'] },
+  "study": "Introduction and meaning\nHurt or grievous hurt by dangerous weapons or means (old 324/326). Weapons, fire, poison, explosive, acid-like substances. BNS restatement of IPC 324 / 326. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 118 is the rule on “Voluntarily causing hurt or grievous hurt by dangerous weapons or means”. The section provides that (1) Whoever, except in the case provided for by sub-section (1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 118 exists so that “Voluntarily causing hurt or grievous hurt by dangerous weapons or means” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n118. (1) Whoever, except in the case provided for by sub-section (1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both\n\n(2) Whoever, except in the case provided for by sub-section (2) of section 122, voluntarily causes grievous hurt by any means referred to in sub–section (1), shall be punished with imprisonment for life, or with imprisonment of either description for a term which shall not be less than one year but which may extend to ten years, and shall also be liable to fine\n\nEssential ingredients\n1. (1) Whoever, except in the case provided for by sub-section\n2. (1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both\n3. (2) Whoever, except in the case provided for by sub-section\n4. (2) of section 122, voluntarily causes grievous hurt by any means referred to in sub–section\n5. (1), shall be punished with imprisonment for life, or with imprisonment of either description for a term which shall not be less than one year but which may extend to ten years, and shall also be liable to fine",
+  "glance": "BNS s. 118 — Voluntarily causing hurt or grievous hurt by dangerous weapons or means.",
+  "sections": [
+    {
+      "id": "bns-118-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "118. (1) Whoever, except in the case provided for by sub-section (1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both",
+        "(2) Whoever, except in the case provided for by sub-section (2) of section 122, voluntarily causes grievous hurt by any means referred to in sub–section (1), shall be punished with imprisonment for life, or with imprisonment of either description for a term which shall not be less than one year but which may extend to ten years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-118-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Whoever, except in the case provided for by sub-section",
+        "(1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both",
+        "(2) Whoever, except in the case provided for by sub-section",
+        "(2) of section 122, voluntarily causes grievous hurt by any means referred to in sub–section",
+        "(1), shall be punished with imprisonment for life, or with imprisonment of either description for a term which shall not be less than one year but which may extend to ten years, and shall also be liable to fine"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-118', section: 's. 118', title: 'Voluntarily causing hurt or grievous hurt by dangerous weapons or means' }],
-  examples: [
-    { id: 's-118-ex1', title: 'Knife injury', illustrationType: 'practical', description: 'A stabs B with a knife causing hurt. Dangerous weapon (stabbing instrument) attracts the enhanced section.' },
-    { id: 's-118-ex2', title: 'Bare hands only', illustrationType: 'fail-scenario', description: 'A punches B with bare hands. No dangerous weapon/means; simple hurt (s. 115) applies, not s. 118.' },
+  "examples": [
+    {
+      "id": "bns-118-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Voluntarily causing hurt or grievous hurt by dangerous weapons or means”. Name BNS s. 118, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-118-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 118 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-118-hypo', title: 'Dangerous means', facts: 'Injury caused by acid.', question: 'Is the enhanced section attracted?', applicableLaw: 'BNS s. 118.', analysis: 'Corrosive substance is a classic dangerous means — yes.', conclusion: 's. 118 (or specific acid-attack provisions if any) applies.' }],
-  distinctions: [],
-  misconceptions: [{ id: 's-118-trap', trap: 'Any weapon makes it s. 118.', correction: 'Only weapons/means of the kinds listed (shooting, stabbing, cutting, fire, poison, corrosive, explosive, etc.). Ordinary objects used without those characteristics may not qualify.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-118-brief', draftingCategory: 'brief', question: 'Explain hurt/grievous hurt by dangerous weapons under BNS s. 118.', answer: 'When hurt or grievous hurt is caused voluntarily by a dangerous weapon or means (shooting/stabbing/cutting instruments, fire, poison, corrosive, explosive, etc.), the enhanced punishment under s. 118 applies.', explanation: 'Short note.' },
-    { id: 's-118-sub', draftingCategory: 'submissions', question: 'Submissions on s. 118.', answer: 'I. Hurt/GH caused. II. Dangerous weapon/means. III. Voluntarily. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-118-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Voluntarily causing hurt or grievous hurt by dangerous weapons or means” under BNS s. 118 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 118 (Voluntarily causing hurt or grievous hurt by dangerous weapons or means) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 118. Chapter VI — Of Offences Affecting the Human Body. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 118 (Voluntarily causing hurt or grievous hurt by dangerous weapons or means), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever, except in the case provided for by sub-section\n   (2) (1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both\n   (3) (2) Whoever, except in the case provided for by sub-section\n   (4) (2) of section 122, voluntarily causes grievous hurt by any means referred to in sub–section\n   (5) (1), shall be punished with imprisonment for life, or with imprisonment of either description for a term which shall not be less than one year but which may extend to ten years, and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 118 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 118 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 118. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS s. 118', 'BNS s. 115', 'BNS s. 117', 'IPC ss. 324/326 (historical)'],
-  examTips: ['List the categories of dangerous means.', 'Distinguish from simple hurt/GH.'],
-  revisionPoints: ['Dangerous weapons/means → enhanced hurt/GH section.', 'Bare hands / ordinary means → simple sections.'],
-  relatedTopics: ['s-115', 's-117', 's-100'],
+  "misconceptions": [
+    {
+      "id": "bns-118-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 118."
+    },
+    {
+      "id": "bns-118-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-118-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-118-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 118 (Voluntarily causing hurt or grievous hurt by dangerous weapons or means)",
+      "answer": "Introduction. BNS s. 118 deals with Voluntarily causing hurt or grievous hurt by dangerous weapons or means. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Hurt or grievous hurt by dangerous weapons or means (old 324/326). Weapons, fire, poison, explosive, acid-like substances. BNS restatement of IPC 324 / 326. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 118 is the rule on “Voluntarily causing hurt or grievous hurt by dangerous weapons or means”. The section provides that (1) Whoever, except in the case provided for by sub-section (1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever, except in the case provided for by sub-section\n2. (1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both\n3. (2) Whoever, except in the case provided for by sub-section\n4. (2) of section 122, voluntarily causes grievous hurt by any means referred to in sub–section\n5. (1), shall be punished with imprisonment for life, or with imprisonment of either description for a term which shall not be less than one year but which may extend to ten years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 118. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 118 is the complete current-law heading for Voluntarily causing hurt or grievous hurt by dangerous weapons or means. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-118-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 118 (Voluntarily causing hurt or grievous hurt by dangerous weapons or means) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 118 deals with Voluntarily causing hurt or grievous hurt by dangerous weapons or means. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Hurt or grievous hurt by dangerous weapons or means (old 324/326). Weapons, fire, poison, explosive, acid-like substances. BNS restatement of IPC 324 / 326. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 118 is the rule on “Voluntarily causing hurt or grievous hurt by dangerous weapons or means”. The section provides that (1) Whoever, except in the case provided for by sub-section (1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever, except in the case provided for by sub-section\n2. (1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both\n3. (2) Whoever, except in the case provided for by sub-section\n4. (2) of section 122, voluntarily causes grievous hurt by any means referred to in sub–section\n5. (1), shall be punished with imprisonment for life, or with imprisonment of either description for a term which shall not be less than one year but which may extend to ten years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 118. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 118 is the complete current-law heading for Voluntarily causing hurt or grievous hurt by dangerous weapons or means. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 118. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 118.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 118 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 118 (Voluntarily causing hurt or grievous hurt by dangerous weapons or means).",
+      "steps": [
+        "Introduce BNS s. 118 and Chapter VI — Of Offences Affecting the Human Body.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 118."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 118 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 118, Voluntarily causing hurt or grievous hurt by dangerous weapons or means.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 118: Voluntarily causing hurt or grievous hurt by dangerous weapons or means.",
+    "First ingredient: (1) Whoever, except in the case provided for by sub-section",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 118 — Voluntarily causing hurt or grievous hurt by dangerous weapons or means. Older books and judgments may still print a historical number (324 / 326). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

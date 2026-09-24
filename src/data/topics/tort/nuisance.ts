@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Nuisance protects interests in the use and enjoyment of land and certain public rights. Private nuisance requires substantial and unreasonable interference; public nuisance concerns interference with a right common to the public.",
   "study": "Nuisance protects interests in the use and enjoyment of land and certain public rights. Private nuisance requires substantial and unreasonable interference; public nuisance concerns interference with a right common to the public.\\n\\nSturges v Bridgman and Municipal Council, Ratlam show that nuisance is contextual. Locality, duration, intensity, foreseeability and reasonableness matter.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

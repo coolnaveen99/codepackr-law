@@ -1,246 +1,130 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance:
-    'Section 6 is a pure calculation rule: when any provision requires a fraction of a term of punishment and the term is imprisonment for life, life is reckoned as equivalent to twenty years unless otherwise provided. It does not convert life imprisonment into a fixed twenty-year sentence.',
-
-  study: `Section 6 succeeds IPC section 57. It supplies a numerical equivalent solely for the purpose of calculating fractions of terms of punishment.
-
-Text: “In calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided.”
-
-The rule is strictly limited. It does not mean that every life sentence expires at twenty years. Life imprisonment remains imprisonment for the remainder of the natural life of the convict unless lawfully commuted or remitted. Section 6 operates only when a statute, rule or order requires a fraction (one-half, one-third, one-fourth, etc.) to be computed and the starting term is life.
-
-Typical contexts: certain remission calculations, eligibility thresholds expressed as a fraction of the sentence, or consecutive-sentence mathematics where a fraction of a life term must be ascertained.
-
-Where another statute or the BNSS itself provides a different numerical equivalent, that specific provision prevails (“unless otherwise provided”).
-
-Date-of-offence note: for offences on or after 1 July 2024 cite BNS s. 6; the substance is identical to the former IPC s. 57.`,
-
-  sections: [
+  "study": "Introduction and meaning\nFractions of terms of punishment. BNS restatement of IPC 57. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 57. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 6 is the rule on “Fractions of terms of punishment”. The section provides that in calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 6 exists so that “Fractions of terms of punishment” has a closed legal test in Chapter II — Of Punishments. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Death, life, imprisonment, forfeiture, fine, and community service. How sentences combine, commute and enhance.\n\nThe provision in detail\n6. In calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided\n\nEssential ingredients\n1. In calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided",
+  "glance": "BNS s. 6 — Fractions of terms of punishment.",
+  "sections": [
     {
-      id: 's-6-module-1',
-      title: 'Provenance, Legislative Objective & Doctrinal Foundations',
-      order: 1,
-      content: [
-        'Section 6 is the direct successor of IPC section 57. The BNS retains the twenty-year equivalence without alteration.',
-        'Legislative objective: provide a uniform, predictable numerical base whenever a fraction of a life sentence must be calculated, avoiding uncertainty in remission, parole-eligibility and consecutive-sentence arithmetic.',
-        'Doctrinal foundation: life imprisonment is a distinct species of punishment (remainder of natural life). Section 6 is an interpretive fiction that operates only for fractional calculations; it does not redefine the nature of the sentence itself. This distinction has been repeatedly affirmed by the Supreme Court in the Gopal Vinayak Godse – Maru Ram – Union of India v. V. Sriharan line.',
-      ],
+      "id": "bns-6-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "6. In calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided"
+      ]
     },
     {
-      id: 's-6-module-2',
-      title: 'Textual Anatomy, Provisos & Statutory Deconstruction',
-      order: 2,
-      content: [
-        'Operative clause: life imprisonment is reckoned as equivalent to imprisonment for twenty years when (and only when) a fraction of a term of punishment must be calculated.',
-        'Saving phrase: “unless otherwise provided” — any specific statute, rule or BNSS provision that supplies a different figure overrides s. 6 for that purpose.',
-        'No other conditions, explanations or illustrations appear in the section. The provision is self-contained and purely arithmetic.',
-      ],
-    },
-    {
-      id: 's-6-module-3',
-      title: 'Mandatory Proving Ingredients & Essential Elements',
-      order: 3,
-      content: [
-        '1. A legal provision (statute, rule, order or BNSS provision) requires calculation of a fraction of a term of punishment.',
-        '2. The term in question is imprisonment for life.',
-        '3. No contrary numerical equivalent is “otherwise provided” by another applicable law.',
-        '4. The twenty-year figure is then applied solely for the fractional computation.',
-      ],
-    },
-    {
-      id: 's-6-module-4',
-      title: 'Evidentiary Burdens under BSA 2023 (ss. 104–106 & s. 63)',
-      order: 4,
-      content: [
-        'Section 6 raises no evidentiary issue. It is a pure rule of calculation applied by courts and executive authorities.',
-        'If the underlying sentence or the fact that it is a life sentence is disputed, the ordinary burden under BSA s. 104 rests on the party asserting the sentence. Once the life character is established, s. 6 supplies the arithmetic equivalent automatically.',
-      ],
-    },
-    {
-      id: 's-6-module-5',
-      title: 'Procedural Roadmap, Competent Forum & Limitation Act Checkpoints',
-      order: 5,
-      content: [
-        'The rule is applied by the sentencing court (when consecutive sentences or fractional adjustments arise), by the prison authorities (remission / parole eligibility calculations), and by the High Court or Supreme Court on appeal or revision.',
-        'No independent limitation period attaches to the rule itself. Challenges to an erroneous application of the twenty-year equivalence are brought in the ordinary appellate or writ jurisdiction.',
-        'Competent forum: the court or authority that is performing the fractional calculation; supervisory jurisdiction of the High Court under Art. 226 / BNSS revision powers where the calculation is alleged to be illegal.',
-      ],
-    },
+      "id": "bns-6-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "In calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided"
+      ]
+    }
   ],
-
-  provisions: [
+  "examples": [
     {
-      actId: 'bns',
-      actName: 'Bharatiya Nyaya Sanhita, 2023',
-      provisionId: 'bns-6',
-      section: 's. 6',
-      title: 'Fractions of terms of punishment',
+      "id": "bns-6-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Fractions of terms of punishment”. Name BNS s. 6, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
     },
+    {
+      "id": "bns-6-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 6 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-
-  examples: [
+  "hypotheticals": [
     {
-      id: 's-6-ill-1',
-      title: 'Illustration 1 — Fraction correctly applied',
-      illustrationType: 'statutory',
-      description:
-        'A statute or prison rule requires that a life convict become eligible for consideration after serving one-third of the sentence. Under s. 6, life is treated as twenty years; one-third is therefore six years and eight months. The authority correctly uses that figure for eligibility calculation. The underlying life sentence itself remains imprisonment for the remainder of natural life.',
-    },
-    {
-      id: 's-6-ill-2',
-      title: 'Illustration 2 — Boundary defect (misreading s. 6 as a fixed term)',
-      illustrationType: 'fail-scenario',
-      description:
-        'A life convict claims automatic release on completion of twenty years, citing s. 6. The claim is untenable. Section 6 supplies a figure only for fractional calculations; it does not convert life imprisonment into a determinate twenty-year term. Release still depends on commutation, remission or other lawful executive action.',
-    },
+      "id": "bns-6-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Fractions of terms of punishment” under BNS s. 6 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 6 (Fractions of terms of punishment) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 6. Chapter II — Of Punishments. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 6 (Fractions of terms of punishment), Chapter II — Of Punishments.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) In calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 6 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 6 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 6. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-
-  hypotheticals: [
+  "misconceptions": [
     {
-      id: 's-6-hypo',
-      title: 'Chamber Practice Hypothetical — Fraction of life in consecutive sentencing',
-      facts:
-        'D is convicted of two offences. For the first he receives life imprisonment; for the second he receives a term of ten years. The court is required by the relevant consecutive-sentence provision to order that a stated fraction of the life term shall run consecutively with the fixed term.',
-      question:
-        'What numerical figure does the court use for the life component when computing the consecutive portion?',
-      applicableLaw: 'BNS s. 6; the consecutive-sentence provision in the BNSS or special statute; sentencing principles.',
-      analysis:
-        '1. Threshold: A fraction of a life sentence must be calculated.\n2. Ingredient verification: The term is life; no contrary figure is “otherwise provided”.\n3. Application: s. 6 supplies twenty years as the base; the required fraction is applied to that base.\n4. Consequence: The resulting figure is used only for the consecutive-sentence arithmetic; the life sentence itself is not shortened to twenty years.',
-      conclusion:
-        'The court uses the twenty-year equivalence solely for the fractional calculation required by the consecutive-sentence rule. Life remains life.',
-    },
-  ],
-
-  distinctions: [
-    {
-      id: 's-6-dist-1',
-      title: 'Life imprisonment vs Twenty-year equivalence under s. 6',
-      left: 'Imprisonment for life (s. 4(b))',
-      right: 's. 6 twenty-year figure',
-      rows: [
-        { point: 'Nature', left: 'Remainder of natural life (subject to commutation/remission)', right: 'Purely arithmetic equivalent for fractional calculations' },
-        { point: 'When it applies', left: 'Whenever the offence section authorises life', right: 'Only when a fraction of a term must be calculated' },
-        { point: 'Effect on release', left: 'No automatic release date', right: 'None — does not create a release date' },
-        { point: 'Overridable', left: 'By commutation or remission', right: 'By any provision that “otherwise provides” a different figure' },
-      ],
-    },
-  ],
-
-  misconceptions: [
-    {
-      id: 's-6-trap-1',
-      trap: 'Life imprisonment always means twenty years because of s. 6.',
-      correction:
-        'Section 6 operates only when a fraction of the term must be calculated. Life imprisonment remains imprisonment for the remainder of natural life unless lawfully commuted or remitted.',
+      "id": "bns-6-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 6."
     },
     {
-      id: 's-6-trap-2',
-      trap: 'Section 6 converts every life sentence into a fixed twenty-year term for all purposes.',
-      correction:
-        'The section is expressly limited to “calculating fractions of terms of punishment”. It is an interpretive fiction, not a redefinition of the sentence.',
-    },
-  ],
-
-  cases: [
-    {
-      name: 'Gopal Vinayak Godse v. State of Maharashtra',
-      year: 1961,
-      citation: 'AIR 1961 SC 600',
-      court: 'Supreme Court of India',
-      bench: 'Constitution Bench',
-      facts: 'Life convict claimed automatic release after twenty years on the strength of the then-existing IPC s. 57 equivalence.',
-      issue: 'Whether the twenty-year figure in s. 57 (now BNS s. 6) converts life imprisonment into a determinate sentence.',
-      ratioDecidendi:
-        'Imprisonment for life means imprisonment for the whole of the remaining period of the convicted person’s natural life. The twenty-year equivalence is only for the purpose of calculating fractions; it does not fix the duration of the sentence.',
-      holding: 'Claim of automatic release rejected.',
-      relevance:
-        'Foundational authority still cited for the limited scope of the twenty-year rule now contained in BNS s. 6.',
+      "id": "bns-6-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
     },
     {
-      name: 'Union of India v. V. Sriharan @ Murugan',
-      year: 2016,
-      citation: '(2016) 7 SCC 1',
-      court: 'Supreme Court of India',
-      bench: 'Constitution Bench',
-      facts: 'Questions concerning the power to impose sentences of life imprisonment without remission and the nature of life imprisonment.',
-      issue: 'Nature of life imprisonment and the power of the Court to restrict remission.',
-      ratioDecidendi:
-        'Life imprisonment means the whole of the remaining natural life. Courts may, in appropriate cases, impose a sentence of life without the possibility of remission for a stated period, but the basic character of life as remainder of natural life remains.',
-      holding: 'Clarified the constitutional and statutory contours of life imprisonment and remission.',
-      relevance:
-        'Reinforces that s. 6 (or its IPC predecessor) does not alter the fundamental character of life imprisonment.',
-    },
+      "id": "bns-6-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
   ],
-
-  questionsAndAnswers: [
+  "questionsAndAnswers": [
     {
-      id: 's-6-brief',
-      draftingCategory: 'brief',
-      question:
-        'Explain the rule contained in Section 6 of the Bharatiya Nyaya Sanhita, 2023 and its precise limits.',
-      answer: `I. ISSUE
-What figure is used when a fraction of a life sentence must be calculated?
-
-II. GOVERNING RULE
-Section 6 provides that imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years when calculating fractions of terms of punishment, unless otherwise provided.
-
-III. APPLICATION
-The twenty-year figure is used only for the arithmetic of the fraction. It does not convert life into a determinate twenty-year term.
-
-IV. CONCLUSION
-Cite s. 6 for the calculation; simultaneously emphasise that life remains life unless lawfully commuted or remitted.`,
-      explanation: 'IRAC note on the limited arithmetic rule.',
+      "id": "bns-6-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 6 (Fractions of terms of punishment)",
+      "answer": "Introduction. BNS s. 6 deals with Fractions of terms of punishment. It sits in Chapter II — Of Punishments of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Fractions of terms of punishment. BNS restatement of IPC 57. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 57. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 6 is the rule on “Fractions of terms of punishment”. The section provides that in calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. In calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 6. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 6 is the complete current-law heading for Fractions of terms of punishment. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
     },
     {
-      id: 's-6-submissions',
-      draftingCategory: 'submissions',
-      question:
-        'Draft Written Submissions on the true scope of BNS s. 6, distinguishing the twenty-year equivalence from the nature of life imprisonment.',
-      answer: `I. STATEMENT OF FACTS
-[Insert the context in which a fraction of a life sentence is being calculated.]
-
-II. STATUTORY TEXT & INTENT
-Section 6 is a pure calculation rule. The phrase “unless otherwise provided” preserves the primacy of any specific contrary figure.
-
-III. MANDATORY INGREDIENTS
-(a) A fraction must be calculated;
-(b) the term is life imprisonment;
-(c) no contrary figure is otherwise provided.
-
-IV. BINDING AUTHORITIES
-Gopal Vinayak Godse — twenty-year figure is only for fractions.
-V. Sriharan — life means remainder of natural life.
-
-V. REBUTTAL
-Any claim that s. 6 creates an automatic release date at twenty years is contrary to the text and to the Constitution Bench authorities.
-
-VI. PRAYER
-[Apply the twenty-year figure solely for the required fractional calculation; affirm that the life sentence itself continues.]`,
-      explanation: 'Senior Counsel submissions protecting the true character of life imprisonment.',
+      "id": "bns-6-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 6 (Fractions of terms of punishment) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 6 deals with Fractions of terms of punishment. It sits in Chapter II — Of Punishments of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Fractions of terms of punishment. BNS restatement of IPC 57. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 57. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 6 is the rule on “Fractions of terms of punishment”. The section provides that in calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. In calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 6. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 6 is the complete current-law heading for Fractions of terms of punishment. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Death, life, imprisonment, forfeiture, fine, and community service. How sentences combine, commute and enhance.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 6. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 6.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 6 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 6 (Fractions of terms of punishment).",
+      "steps": [
+        "Introduce BNS s. 6 and Chapter II — Of Punishments.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 6."
+      ]
     },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 6 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
   ],
-
-  bareActPointers: [
-    'BNS s. 6',
-    'BNS s. 4(b) (imprisonment for life)',
-    'IPC s. 57 (historical)',
+  "answerSkeleton": [
+    "Introduction — BNS s. 6, Fractions of terms of punishment.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
   ],
-
-  examTips: [
-    'State the rule and immediately add the limitation: “only for calculating fractions”.',
-    'Never write “life = 20 years” without the qualifying context.',
-    'Cite Gopal Vinayak Godse if the examiner presses the point.',
+  "revisionPoints": [
+    "BNS s. 6: Fractions of terms of punishment.",
+    "First ingredient: In calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 6 — Fractions of terms of punishment. Older books and judgments may still print a historical number (57). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
   ],
-
-  revisionPoints: [
-    'Life = 20 years only for fractional calculations (s. 6).',
-    'Life itself remains remainder of natural life.',
-    '“Unless otherwise provided” allows a different figure in other laws.',
-    'Key authority: Gopal Vinayak Godse (1961).',
-  ],
-
-  relatedTopics: ['s-4', 's-5', 's-8'],
+  "relatedTopics": []
 }
 
 export default content

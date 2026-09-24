@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Contributory negligence arises where the claimant fails to take reasonable care for their own safety and that failure materially contributes to the damage. It is distinct from composite negligence, where multiple defendants cause harm without claimant fault.",
   "study": "Contributory negligence arises where the claimant fails to take reasonable care for their own safety and that failure materially contributes to the damage. It is distinct from composite negligence, where multiple defendants cause harm without claimant fault.\\n\\nIndian courts distinguish claimant fault from multiple-defendant fault. The claimant's conduct must causally contribute to the damage. Motor accident cases are governed additionally by the Motor Vehicles Act 1988 and compensation precedents.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

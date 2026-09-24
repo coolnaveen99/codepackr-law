@@ -1,32 +1,166 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 190 (and related): rioting — when an unlawful assembly or any member of it uses force or violence in prosecution of the common object, every member is guilty of rioting. Successor to IPC s. 146/147. Armed with deadly weapon is an aggravated form.',
-  study: `Rioting under the BNS:\n\nWhenever force or violence is used by an unlawful assembly, or by any member thereof, in prosecution of the common object of such assembly, every member of such assembly is guilty of the offence of rioting.\n\nKey points\n• Prerequisite: an unlawful assembly (five or more with a listed common object — s. 189).\n• Force or violence used in prosecution of that common object.\n• Every member is guilty of rioting (not only the person who used force).\n\nAggravated form: rioting armed with a deadly weapon.\n\nCite the applicable BNS rioting sections for post-1 July 2024 acts. Distinguish from common intention (s. 3(5)) and from organised crime (s. 111).`,
-  sections: [
-    { id: 's-190-m1', title: 'Provenance', order: 1, content: ['Successor to IPC ss. 146/147. Unlawful assembly + force/violence in prosecution of common object.'] },
-    { id: 's-190-m2', title: 'Definition', order: 2, content: ['Force or violence by UA or any member in prosecution of the common object → every member guilty of rioting.'] },
-    { id: 's-190-m3', title: 'Ingredients', order: 3, content: ['(1) Unlawful assembly. (2) Force or violence. (3) In prosecution of the common object. (4) Membership of the accused.'] },
-    { id: 's-190-m4', title: 'Evidence', order: 4, content: ['Existence of UA; use of force/violence; link to common object; participation of the accused.'] },
-    { id: 's-190-m5', title: 'Procedure', order: 5, content: ['Often charged with the underlying offences (hurt, mischief, etc.); forum per BNSS Schedule.'] },
+  "study": "Introduction and meaning\nCommon object (old 149). Every member of an unlawful assembly is guilty of the offence committed in prosecution of the common object, or which the members knew to be likely.\nIn student language: BNS s. 190 is the rule on “Every member of unlawful assembly guilty of offence committed in prosecution of common object”. The section provides that if an offence is committed by any member of an unlawful assembly in prosecution of the common object of that assembly, or such as the members of that assembly knew to be likely to be committed in prosecution of that object, every person who, at the time of the committing of that offence, is a member of the same assembly, is guilty of that offence. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 190 exists so that “Every member of unlawful assembly guilty of offence committed in prosecution of common object” has a closed legal test in Chapter XI — Of Offences Against the Public Tranquillity. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Unlawful assembly, common object, rioting, affray, and promoting enmity.\n\nThe provision in detail\n190. If an offence is committed by any member of an unlawful assembly in prosecution of the common object of that assembly, or such as the members of that assembly knew to be likely to be committed in prosecution of that object, every person who, at the time of the committing of that offence, is a member of the same assembly, is guilty of that offence\n\nEssential ingredients\n1. If an offence is committed by any member of an unlawful assembly in prosecution of the common object of that assembly, or such as the members of that assembly knew to be likely to be committed in prosecution of that object, every person who, at the time of the committing of that offence, is a member of the same assembly, is guilty of that offence",
+  "glance": "BNS s. 190 — Every member of unlawful assembly guilty of offence committed in prosecution of common object.",
+  "sections": [
+    {
+      "id": "bns-190-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "190. If an offence is committed by any member of an unlawful assembly in prosecution of the common object of that assembly, or such as the members of that assembly knew to be likely to be committed in prosecution of that object, every person who, at the time of the committing of that offence, is a member of the same assembly, is guilty of that offence"
+      ]
+    },
+    {
+      "id": "bns-190-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "If an offence is committed by any member of an unlawful assembly in prosecution of the common object of that assembly, or such as the members of that assembly knew to be likely to be committed in prosecution of that object, every person who, at the time of the committing of that offence, is a member of the same assembly, is guilty of that offence"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-190', section: 's. 190', title: 'Rioting' }],
-  examples: [
-    { id: 's-190-ex1', title: 'UA uses force', illustrationType: 'practical', description: 'An unlawful assembly of six attacks a shop in furtherance of their common object. Every member is guilty of rioting.' },
-    { id: 's-190-ex2', title: 'No force', illustrationType: 'fail-scenario', description: 'An unlawful assembly gathers but uses no force or violence. Unlawful assembly is made out; rioting is not.' },
+  "examples": [
+    {
+      "id": "bns-190-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Every member of unlawful assembly guilty of offence committed in prosecution of common object”. Name BNS s. 190, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-190-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 190 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-190-hypo', title: 'Member liability', facts: 'Accused is a member of a UA; another member uses force in prosecution of the common object.', question: 'Is the accused guilty of rioting?', applicableLaw: 'BNS rioting provisions.', analysis: 'Yes — every member of the UA is guilty of rioting when force/violence is used in prosecution of the common object.', conclusion: 'Rioting established against the member.' }],
-  distinctions: [{ id: 's-190-dist', title: 'Rioting vs Unlawful assembly vs Common intention', left: 'Rioting', right: 'UA / s. 3(5)', rows: [{ point: 'Extra element', left: 'Force or violence in prosecution of common object', right: 'UA alone has no force requirement; s. 3(5) is joint liability for a criminal act' }] }],
-  misconceptions: [{ id: 's-190-trap', trap: 'Only the person who used force is guilty of rioting.', correction: 'Every member of the unlawful assembly is guilty of rioting when force or violence is used in prosecution of the common object.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-190-brief', draftingCategory: 'brief', question: 'Define rioting under the BNS.', answer: 'When force or violence is used by an unlawful assembly or any member thereof in prosecution of the common object, every member of that assembly is guilty of rioting. Prerequisite is an unlawful assembly (s. 189).', explanation: 'Short note.' },
-    { id: 's-190-sub', draftingCategory: 'submissions', question: 'Submissions on rioting.', answer: 'I. Unlawful assembly. II. Force/violence in prosecution of common object. III. Membership. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-190-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Every member of unlawful assembly guilty of offence committed in prosecution of common object” under BNS s. 190 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 190 (Every member of unlawful assembly guilty of offence committed in prosecution of common object) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 190. Chapter XI — Of Offences Against the Public Tranquillity. Connected: BNS s. 3, BNS s. 189, BNS s. 191.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 190 (Every member of unlawful assembly guilty of offence committed in prosecution of common object), Chapter XI — Of Offences Against the Public Tranquillity.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) If an offence is committed by any member of an unlawful assembly in prosecution of the common object of that assembly, or such as the members of that assembly knew to be likely to be committed in prosecution of that object, every person who, at the time of the committing of that offence, is a member of the same assembly, is guilty of that offence\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 190 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 190 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 190. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS rioting provisions', 'BNS s. 189', 'BNS s. 3(5)', 'IPC ss. 146–148 (historical)'],
-  examTips: ['State that every member is liable, not only the person who used force.', 'Require an unlawful assembly as the base.'],
-  revisionPoints: ['Rioting = UA + force/violence in prosecution of common object.', 'Every member is guilty.', 'No force = UA only, not rioting.'],
-  relatedTopics: ['s-189', 's-3', 's-115', 's-324'],
+  "distinctions": [
+    {
+      "id": "bns-190-dist",
+      "title": "BNS s. 190 and connected sections",
+      "left": "BNS s. 190",
+      "right": "BNS s. 3, BNS s. 189, BNS s. 191",
+      "rows": [
+        {
+          "point": "Heading",
+          "left": "Every member of unlawful assembly guilty of offence committed in prosecution of common object",
+          "right": "Read the neighbour’s title on its own page before you write."
+        },
+        {
+          "point": "What you must prove",
+          "left": "If an offence is committed by any member of an unlawful assembly in prosecution of the common object of that assembly, or such as the members of that assembly knew to be likely to be committed in prosecution of that object, every person who, at the time of the committing of that offence, is a member of the same assembly, is guilty of that offence",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+        },
+        {
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 190.",
+          "right": "Citing s. 190 where the neighbour actually applies."
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-190-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 190."
+    },
+    {
+      "id": "bns-190-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-190-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-190-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 190 (Every member of unlawful assembly guilty of offence committed in prosecution of common object)",
+      "answer": "Introduction. BNS s. 190 deals with Every member of unlawful assembly guilty of offence committed in prosecution of common object. It sits in Chapter XI — Of Offences Against the Public Tranquillity of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Common object (old 149). Every member of an unlawful assembly is guilty of the offence committed in prosecution of the common object, or which the members knew to be likely.\n\nLegal rule. In student language: BNS s. 190 is the rule on “Every member of unlawful assembly guilty of offence committed in prosecution of common object”. The section provides that if an offence is committed by any member of an unlawful assembly in prosecution of the common object of that assembly, or such as the members of that assembly knew to be likely to be committed in prosecution of that object, every person who, at the time of the committing of that offence, is a member of the same assembly, is guilty of that offence. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. If an offence is committed by any member of an unlawful assembly in prosecution of the common object of that assembly, or such as the members of that assembly knew to be likely to be committed in prosecution of that object, every person who, at the time of the committing of that offence, is a member of the same assembly, is guilty of that offence\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 190. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 3, BNS s. 189, BNS s. 191. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 190 is the complete current-law heading for Every member of unlawful assembly guilty of offence committed in prosecution of common object. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-190-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 190 (Every member of unlawful assembly guilty of offence committed in prosecution of common object) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 190 deals with Every member of unlawful assembly guilty of offence committed in prosecution of common object. It sits in Chapter XI — Of Offences Against the Public Tranquillity of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Common object (old 149). Every member of an unlawful assembly is guilty of the offence committed in prosecution of the common object, or which the members knew to be likely.\n\nLegal rule. In student language: BNS s. 190 is the rule on “Every member of unlawful assembly guilty of offence committed in prosecution of common object”. The section provides that if an offence is committed by any member of an unlawful assembly in prosecution of the common object of that assembly, or such as the members of that assembly knew to be likely to be committed in prosecution of that object, every person who, at the time of the committing of that offence, is a member of the same assembly, is guilty of that offence. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. If an offence is committed by any member of an unlawful assembly in prosecution of the common object of that assembly, or such as the members of that assembly knew to be likely to be committed in prosecution of that object, every person who, at the time of the committing of that offence, is a member of the same assembly, is guilty of that offence\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 190. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 3, BNS s. 189, BNS s. 191. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 190 is the complete current-law heading for Every member of unlawful assembly guilty of offence committed in prosecution of common object. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Unlawful assembly, common object, rioting, affray, and promoting enmity.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 190 with BNS s. 3, BNS s. 189, BNS s. 191. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 190.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Mahbub Shah v. Emperor",
+      "year": 1945,
+      "citation": "AIR 1945 PC 118",
+      "holding": "Common intention requires a pre-arranged plan. Mere presence at the scene is not s. 3(5). Contrast with common object under s. 190."
+    }
+  ],
+  "examTips": [
+    "Cite BNS s. 190 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "3(5) = common intention, 2+ persons, prior concert. 190 = common object, 5+ persons, assembly. Memorise that table."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 190 (Every member of unlawful assembly guilty of offence committed in prosecution of common object).",
+      "steps": [
+        "Introduce BNS s. 190 and Chapter XI — Of Offences Against the Public Tranquillity.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 190."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 190 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Distinguish BNS s. 190 from BNS s. 3, BNS s. 189, BNS s. 191.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 190, Every member of unlawful assembly guilty of offence committed in prosecution of common object.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 190: Every member of unlawful assembly guilty of offence committed in prosecution of common object.",
+    "First ingredient: If an offence is committed by any member of an unlawful assembly in prosecution of the common object of that assembly, or such as the members of that assembly knew to be likely to be committed in prosecution of that object, every person who, at the time of the committing of that offence, is a member of the same assembly, is guilty of that offence",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 190 — Every member of unlawful assembly guilty of offence committed in prosecution of common object. Older books and judgments may still print a historical number (149). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": [
+    "s-3",
+    "s-189",
+    "s-191"
+  ]
 }
 
 export default content

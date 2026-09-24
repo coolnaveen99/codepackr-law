@@ -1,32 +1,142 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 329 (and related): criminal trespass — entering or remaining upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy. Successor to IPC s. 441/447. House-trespass and house-breaking are aggravated forms.',
-  study: `Criminal trespass under the BNS:\n\nWhoever enters into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession of such property, or having lawfully entered remains there with such intent, commits criminal trespass.\n\nKey points\n• Entry (or unlawful remaining) upon property in another’s possession.\n• Intent to commit an offence, or to intimidate, insult or annoy.\n\nHouse-trespass: criminal trespass into a building, tent or vessel used as a human dwelling or for custody of property.\nHouse-breaking: house-trespass by specified means (e.g. through passage not intended for human entrance, by unlocking, scaling, etc.).\n\nPrivate defence of property (ss. 35, 41–43) often interacts with these offences.\n\nCite the applicable BNS sections for post-1 July 2024 acts.`,
-  sections: [
-    { id: 's-329-m1', title: 'Provenance', order: 1, content: ['Successor to IPC ss. 441/447. Entry/remaining with intent to offend, intimidate, insult or annoy.'] },
-    { id: 's-329-m2', title: 'Definition', order: 2, content: ['Enter or remain upon property in another’s possession; intent to commit offence or intimidate/insult/annoy.'] },
-    { id: 's-329-m3', title: 'Ingredients', order: 3, content: ['(1) Property in possession of another. (2) Entry or unlawful remaining. (3) Specified intent.'] },
-    { id: 's-329-m4', title: 'Aggravated forms', order: 4, content: ['House-trespass; house-breaking; lurking house-trespass; by night — higher sections and punishments.'] },
-    { id: 's-329-m5', title: 'Procedure', order: 5, content: ['Forum per BNSS Schedule; interaction with private defence of property.'] },
+  "study": "Introduction and meaning\nCriminal trespass and house-trespass (old 441/442). Entry upon property in another’s possession with intent to commit an offence, intimidate, insult or annoy — or remaining there with that intent. BNS restatement of IPC 441 / 442 / 447 / 448. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 329 is the rule on “Criminal trespass and house-trespass”. The section provides that .(1) Whoever enters into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession of such property or having lawfully entered into or upon such property, unlawfully remains there with intent thereby to intimidate, insult or annoy any such person or with intent to commit an offence is said to commit criminal trespass. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 329 exists so that “Criminal trespass and house-trespass” has a closed legal test in Chapter XVII — Of Offences Against Property. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Theft, snatching, extortion, robbery, dacoity, trust, cheating, mischief, trespass.\n\nThe provision in detail\n329..(1) Whoever enters into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession of such property or having lawfully entered into or upon such property, unlawfully remains there with intent thereby to intimidate, insult or annoy any such person or with intent to commit an offence is said to commit criminal trespass\n\n(2) Whoever commits criminal trespass by entering into or remaining in any building, tent or vessel used as a human dwelling or any building used as a place for worship, or as a place for the custody of property, is said to commit house-trespass\n\nEssential ingredients\n1. (1) Whoever enters into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession of such property or having lawfully entered into or upon such property, unlawfully remains there with intent thereby to intimidate, insult or annoy any such person or with intent to commit an offence is said to commit criminal trespass\n2. (2) Whoever commits criminal trespass by entering into or remaining in any building, tent or vessel used as a human dwelling or any building used as a place for worship, or as a place for the custody of property, is said to commit house-trespass\n\nExplanations\nExplanation.—The introduction of any part of the criminal trespasser’s body is entering sufficient to constitute house-trespass\n\n(3) Whoever commits criminal trespass shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to five thousand rupees, or with both\n\n(4) Whoever commits house-trespass shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both",
+  "glance": "BNS s. 329 — Criminal trespass and house-trespass.",
+  "sections": [
+    {
+      "id": "bns-329-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "329..(1) Whoever enters into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession of such property or having lawfully entered into or upon such property, unlawfully remains there with intent thereby to intimidate, insult or annoy any such person or with intent to commit an offence is said to commit criminal trespass",
+        "(2) Whoever commits criminal trespass by entering into or remaining in any building, tent or vessel used as a human dwelling or any building used as a place for worship, or as a place for the custody of property, is said to commit house-trespass"
+      ]
+    },
+    {
+      "id": "bns-329-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Whoever enters into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession of such property or having lawfully entered into or upon such property, unlawfully remains there with intent thereby to intimidate, insult or annoy any such person or with intent to commit an offence is said to commit criminal trespass",
+        "(2) Whoever commits criminal trespass by entering into or remaining in any building, tent or vessel used as a human dwelling or any building used as a place for worship, or as a place for the custody of property, is said to commit house-trespass"
+      ]
+    },
+    {
+      "id": "bns-329-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation.—The introduction of any part of the criminal trespasser’s body is entering sufficient to constitute house-trespass",
+        "(3) Whoever commits criminal trespass shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to five thousand rupees, or with both",
+        "(4) Whoever commits house-trespass shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-329', section: 's. 329', title: 'Criminal trespass' }],
-  examples: [
-    { id: 's-329-ex1', title: 'Entry with intent to annoy', illustrationType: 'practical', description: 'A enters B’s field intending to annoy B. Criminal trespass is made out.' },
-    { id: 's-329-ex2', title: 'Lawful entry without bad intent', illustrationType: 'fail-scenario', description: 'A enters with permission and no intent to offend, intimidate, insult or annoy. Not criminal trespass.' },
+  "examples": [
+    {
+      "id": "bns-329-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Criminal trespass and house-trespass”. Name BNS s. 329, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-329-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 329 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-329-hypo', title: 'Trespass intent', facts: 'Accused enters a dwelling at night by scaling a wall.', question: 'Criminal trespass / house-breaking?', applicableLaw: 'BNS criminal trespass / house-breaking provisions.', analysis: 'Entry into dwelling + specified means of house-breaking + likely intent — house-breaking (aggravated form) is open.', conclusion: 'Aggravated house-trespass/house-breaking may be charged.' }],
-  distinctions: [],
-  misconceptions: [{ id: 's-329-trap', trap: 'Any unauthorised entry is criminal trespass.', correction: 'The entry (or remaining) must be with intent to commit an offence or to intimidate, insult or annoy. Mere civil trespass without that intent is not the criminal offence.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-329-brief', draftingCategory: 'brief', question: 'Define criminal trespass under the BNS.', answer: 'Entering or remaining upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession. House-trespass and house-breaking are aggravated forms.', explanation: 'Short note.' },
-    { id: 's-329-sub', draftingCategory: 'submissions', question: 'Submissions on criminal trespass.', answer: 'I. Property in another’s possession. II. Entry or remaining. III. Specified intent. IV. Aggravating form if any. V. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-329-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Criminal trespass and house-trespass” under BNS s. 329 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 329 (Criminal trespass and house-trespass) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 329. Chapter XVII — Of Offences Against Property. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 329 (Criminal trespass and house-trespass), Chapter XVII — Of Offences Against Property.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever enters into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession of such property or having lawfully entered into or upon such property, unlawfully remains there with intent thereby to intimidate, insult or annoy any such person or with intent to commit an offence is said to commit criminal trespass\n   (2) (2) Whoever commits criminal trespass by entering into or remaining in any building, tent or vessel used as a human dwelling or any building used as a place for worship, or as a place for the custody of property, is said to commit house-trespass\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 329 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 329. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS criminal trespass / house-trespass / house-breaking provisions', 'BNS ss. 35, 41–43', 'IPC ss. 441–447 (historical)'],
-  examTips: ['Stress the intent element.', 'Link to private defence of property when the facts involve resistance to trespass.'],
-  revisionPoints: ['Entry/remaining + intent to offend/intimidate/insult/annoy = criminal trespass.', 'House-trespass and house-breaking are aggravated.', 'Civil trespass ≠ criminal trespass without the intent.'],
-  relatedTopics: ['s-35', 's-41', 's-303', 's-324'],
+  "misconceptions": [
+    {
+      "id": "bns-329-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 329."
+    },
+    {
+      "id": "bns-329-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-329-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-329-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 329 (Criminal trespass and house-trespass)",
+      "answer": "Introduction. BNS s. 329 deals with Criminal trespass and house-trespass. It sits in Chapter XVII — Of Offences Against Property of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Criminal trespass and house-trespass (old 441/442). Entry upon property in another’s possession with intent to commit an offence, intimidate, insult or annoy — or remaining there with that intent. BNS restatement of IPC 441 / 442 / 447 / 448. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 329 is the rule on “Criminal trespass and house-trespass”. The section provides that .(1) Whoever enters into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession of such property or having lawfully entered into or upon such property, unlawfully remains there with intent thereby to intimidate, insult or annoy any such person or with intent to commit an offence is said to commit criminal trespass. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever enters into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession of such property or having lawfully entered into or upon such property, unlawfully remains there with intent thereby to intimidate, insult or annoy any such person or with intent to commit an offence is said to commit criminal trespass\n2. (2) Whoever commits criminal trespass by entering into or remaining in any building, tent or vessel used as a human dwelling or any building used as a place for worship, or as a place for the custody of property, is said to commit house-trespass\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—The introduction of any part of the criminal trespasser’s body is entering sufficient to constitute house-trespass An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 329. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 329 is the complete current-law heading for Criminal trespass and house-trespass. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-329-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 329 (Criminal trespass and house-trespass) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 329 deals with Criminal trespass and house-trespass. It sits in Chapter XVII — Of Offences Against Property of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Criminal trespass and house-trespass (old 441/442). Entry upon property in another’s possession with intent to commit an offence, intimidate, insult or annoy — or remaining there with that intent. BNS restatement of IPC 441 / 442 / 447 / 448. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 329 is the rule on “Criminal trespass and house-trespass”. The section provides that .(1) Whoever enters into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession of such property or having lawfully entered into or upon such property, unlawfully remains there with intent thereby to intimidate, insult or annoy any such person or with intent to commit an offence is said to commit criminal trespass. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever enters into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession of such property or having lawfully entered into or upon such property, unlawfully remains there with intent thereby to intimidate, insult or annoy any such person or with intent to commit an offence is said to commit criminal trespass\n2. (2) Whoever commits criminal trespass by entering into or remaining in any building, tent or vessel used as a human dwelling or any building used as a place for worship, or as a place for the custody of property, is said to commit house-trespass\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—The introduction of any part of the criminal trespasser’s body is entering sufficient to constitute house-trespass An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 329. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 329 is the complete current-law heading for Criminal trespass and house-trespass. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Theft, snatching, extortion, robbery, dacoity, trust, cheating, mischief, trespass.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 329. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 329.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 329 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 329 (Criminal trespass and house-trespass).",
+      "steps": [
+        "Introduce BNS s. 329 and Chapter XVII — Of Offences Against Property.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 329."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 329 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 329, Criminal trespass and house-trespass.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 329: Criminal trespass and house-trespass.",
+    "First ingredient: (1) Whoever enters into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession of such property or having lawfully entered into or upon such property, unlawfully remains there with intent thereby to intimidate, insult or annoy any such person or with intent to commit an offence is said to commit criminal trespass",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 329 — Criminal trespass and house-trespass. Older books and judgments may still print a historical number (441 / 442 / 447 / 448). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

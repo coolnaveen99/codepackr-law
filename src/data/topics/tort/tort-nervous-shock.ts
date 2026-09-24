@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Nervous shock is a historical label for actionable psychiatric injury caused by wrongful conduct. Modern analysis proceeds through negligence and distinguishes primary victims directly endangered from secondary victims witnessing harm to another.",
   "study": "Nervous shock is a historical label for actionable psychiatric injury caused by wrongful conduct. Modern analysis proceeds through negligence and distinguishes primary victims directly endangered from secondary victims witnessing harm to another.\\n\\nThe common law moved toward recognition of medically established psychiatric injury. McLoughlin v O'Brian and Alcock refined proximity requirements for secondary victims. The claimant must distinguish recognised psychiatric illness from ordinary grief or distress.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

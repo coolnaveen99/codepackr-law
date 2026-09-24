@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "A tort is a civil wrong, independent of contract, for which the common law ordinarily provides a civil remedy.",
   "study": "A tort is a civil wrong, independent of contract, for which the common law ordinarily provides a civil remedy.\\n\\nTort law is principally judge-made in India. The classical distinction is between duties imposed by law and duties voluntarily assumed by contract. The maxim ubi jus ibi remedium captures the remedial orientation, but the claimant must still identify a recognised cause of action. Tort may overlap with crime or breach of statutory duty without becoming identical to either.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

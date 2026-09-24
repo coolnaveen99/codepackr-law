@@ -1,32 +1,162 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 191 (and related): assault or criminal force to deter a public servant from discharge of duty — whoever assaults or uses criminal force to a public servant in the execution of his duty as such, or with intent to prevent or deter him from discharging his duty, is punished as provided. Successor to IPC s. 353. Distinct from ordinary assault and from unlawful assembly/rioting.',
-  study: `Assault/criminal force against a public servant under the BNS:\n\nWhoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty, is punished as provided.\n\nKey points\n• Victim is a public servant.\n• Assault or criminal force.\n• In execution of duty, or with intent to prevent/deter, or in consequence of lawful discharge of duty.\n\nPrivate defence against public servants is restricted by s. 37. Cite the applicable BNS section for post-1 July 2024 acts.`,
-  sections: [
-    { id: 's-191-m1', title: 'Provenance', order: 1, content: ['Successor to IPC s. 353. Assault/criminal force to public servant in duty.'] },
-    { id: 's-191-m2', title: 'Elements', order: 2, content: ['Assault or criminal force; public servant; in execution of duty, or intent to prevent/deter, or in consequence of lawful discharge.'] },
-    { id: 's-191-m3', title: 'Ingredients', order: 3, content: ['(1) Assault or criminal force. (2) Victim is public servant. (3) Duty-related nexus as defined.'] },
-    { id: 's-191-m4', title: 'Evidence', order: 4, content: ['Status of victim; nature of force; connection to duty; intent.'] },
-    { id: 's-191-m5', title: 'Procedure', order: 5, content: ['Often charged with hurt and unlawful assembly/rioting when group force is used; forum per BNSS Schedule.'] },
+  "study": "Introduction and meaning\nRioting (old 146/147): an unlawful assembly that uses force or violence in prosecution of its common object. BNS restatement of IPC 146 / 147. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 191 is the rule on “Rioting”. The section provides that (1) Whenever force or violence is used by an unlawful assembly, or by any member thereof, in prosecution of the common object of such assembly, every member of such assembly is guilty of the offence of rioting. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 191 exists so that “Rioting” has a closed legal test in Chapter XI — Of Offences Against the Public Tranquillity. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Unlawful assembly, common object, rioting, affray, and promoting enmity.\n\nThe provision in detail\n191. (1) Whenever force or violence is used by an unlawful assembly, or by any member thereof, in prosecution of the common object of such assembly, every member of such assembly is guilty of the offence of rioting\n\n(2) Whoever is guilty of rioting, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both\n\n(3) Whoever is guilty of rioting, being armed with a deadly weapon or with anything which, used as a weapon of offence, is likely to cause death, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both\n\nEssential ingredients\n1. (1) Whenever force or violence is used by an unlawful assembly, or by any member thereof, in prosecution of the common object of such assembly, every member of such assembly is guilty of the offence of rioting\n2. (2) Whoever is guilty of rioting, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both\n3. (3) Whoever is guilty of rioting, being armed with a deadly weapon or with anything which, used as a weapon of offence, is likely to cause death, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both",
+  "glance": "BNS s. 191 — Rioting.",
+  "sections": [
+    {
+      "id": "bns-191-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "191. (1) Whenever force or violence is used by an unlawful assembly, or by any member thereof, in prosecution of the common object of such assembly, every member of such assembly is guilty of the offence of rioting",
+        "(2) Whoever is guilty of rioting, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both",
+        "(3) Whoever is guilty of rioting, being armed with a deadly weapon or with anything which, used as a weapon of offence, is likely to cause death, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both"
+      ]
+    },
+    {
+      "id": "bns-191-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Whenever force or violence is used by an unlawful assembly, or by any member thereof, in prosecution of the common object of such assembly, every member of such assembly is guilty of the offence of rioting",
+        "(2) Whoever is guilty of rioting, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both",
+        "(3) Whoever is guilty of rioting, being armed with a deadly weapon or with anything which, used as a weapon of offence, is likely to cause death, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-191', section: 's. 191', title: 'Assault or criminal force to deter public servant from discharge of duty' }],
-  examples: [
-    { id: 's-191-ex1', title: 'Force against officer on duty', illustrationType: 'practical', description: 'A pushes a police officer who is lawfully making an arrest, intending to stop the arrest. The offence is made out.' },
-    { id: 's-191-ex2', title: 'Force against private person', illustrationType: 'fail-scenario', description: 'A assaults a private person. Ordinary assault/criminal force applies; this section requires a public-servant victim and duty nexus.' },
+  "examples": [
+    {
+      "id": "bns-191-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Rioting”. Name BNS s. 191, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-191-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 191 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-191-hypo', title: 'Deter public servant', facts: 'Accused uses force against a revenue officer to prevent inspection.', question: 'Is the offence made out?', applicableLaw: 'BNS assault-on-public-servant provisions; s. 37.', analysis: 'Public servant + criminal force + intent to prevent discharge of duty — yes.', conclusion: 'Offence established.' }],
-  distinctions: [{ id: 's-191-dist', title: 'Assault on public servant vs Ordinary assault', left: 'Assault on public servant', right: 'Ordinary assault/criminal force', rows: [{ point: 'Extra element', left: 'Public servant + duty nexus', right: 'No public-servant requirement' }] }],
-  misconceptions: [{ id: 's-191-trap', trap: 'Any force against a government employee is this offence.', correction: 'The person must be a public servant as defined, and the force must be in execution of duty, or with intent to prevent/deter, or in consequence of lawful discharge of duty.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-191-brief', draftingCategory: 'brief', question: 'Explain assault or criminal force to deter a public servant under the BNS.', answer: 'Whoever assaults or uses criminal force to a public servant in the execution of his duty, or with intent to prevent or deter him from discharging his duty, or in consequence of anything done in the lawful discharge of duty, commits the offence. Distinct from ordinary assault; private defence against public servants is restricted by s. 37.', explanation: 'Short note.' },
-    { id: 's-191-sub', draftingCategory: 'submissions', question: 'Submissions on assault on public servant.', answer: 'I. Public servant. II. Assault/criminal force. III. Duty nexus. IV. s. 37 if private defence claimed. V. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-191-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Rioting” under BNS s. 191 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 191 (Rioting) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 191. Chapter XI — Of Offences Against the Public Tranquillity. Connected: BNS s. 189, BNS s. 190.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 191 (Rioting), Chapter XI — Of Offences Against the Public Tranquillity.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whenever force or violence is used by an unlawful assembly, or by any member thereof, in prosecution of the common object of such assembly, every member of such assembly is guilty of the offence of rioting\n   (2) (2) Whoever is guilty of rioting, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both\n   (3) (3) Whoever is guilty of rioting, being armed with a deadly weapon or with anything which, used as a weapon of offence, is likely to cause death, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 191 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 191 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 191. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS assault-on-public-servant provisions', 'BNS s. 130', 'BNS s. 37', 'BNS s. 2 (public servant)', 'IPC s. 353 (historical)'],
-  examTips: ['Require public-servant status and duty nexus.', 'Link to s. 37 when private defence is claimed against the officer.'],
-  revisionPoints: ['Public servant + assault/force + duty nexus.', 's. 37 restricts private defence against public servants.', 'Not ordinary assault.'],
-  relatedTopics: ['s-130', 's-37', 's-189', 's-2'],
+  "distinctions": [
+    {
+      "id": "bns-191-dist",
+      "title": "BNS s. 191 and connected sections",
+      "left": "BNS s. 191",
+      "right": "BNS s. 189, BNS s. 190",
+      "rows": [
+        {
+          "point": "Heading",
+          "left": "Rioting",
+          "right": "Read the neighbour’s title on its own page before you write."
+        },
+        {
+          "point": "What you must prove",
+          "left": "(1) Whenever force or violence is used by an unlawful assembly, or by any member thereof, in prosecution of the common object of such assembly, every member of such assembly is guilty of the offence of rioting",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+        },
+        {
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 191.",
+          "right": "Citing s. 191 where the neighbour actually applies."
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-191-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 191."
+    },
+    {
+      "id": "bns-191-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-191-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-191-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 191 (Rioting)",
+      "answer": "Introduction. BNS s. 191 deals with Rioting. It sits in Chapter XI — Of Offences Against the Public Tranquillity of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Rioting (old 146/147): an unlawful assembly that uses force or violence in prosecution of its common object. BNS restatement of IPC 146 / 147. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 191 is the rule on “Rioting”. The section provides that (1) Whenever force or violence is used by an unlawful assembly, or by any member thereof, in prosecution of the common object of such assembly, every member of such assembly is guilty of the offence of rioting. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whenever force or violence is used by an unlawful assembly, or by any member thereof, in prosecution of the common object of such assembly, every member of such assembly is guilty of the offence of rioting\n2. (2) Whoever is guilty of rioting, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both\n3. (3) Whoever is guilty of rioting, being armed with a deadly weapon or with anything which, used as a weapon of offence, is likely to cause death, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 191. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 189, BNS s. 190. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 191 is the complete current-law heading for Rioting. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-191-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 191 (Rioting) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 191 deals with Rioting. It sits in Chapter XI — Of Offences Against the Public Tranquillity of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Rioting (old 146/147): an unlawful assembly that uses force or violence in prosecution of its common object. BNS restatement of IPC 146 / 147. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 191 is the rule on “Rioting”. The section provides that (1) Whenever force or violence is used by an unlawful assembly, or by any member thereof, in prosecution of the common object of such assembly, every member of such assembly is guilty of the offence of rioting. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whenever force or violence is used by an unlawful assembly, or by any member thereof, in prosecution of the common object of such assembly, every member of such assembly is guilty of the offence of rioting\n2. (2) Whoever is guilty of rioting, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both\n3. (3) Whoever is guilty of rioting, being armed with a deadly weapon or with anything which, used as a weapon of offence, is likely to cause death, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 191. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 189, BNS s. 190. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 191 is the complete current-law heading for Rioting. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Unlawful assembly, common object, rioting, affray, and promoting enmity.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 191 with BNS s. 189, BNS s. 190. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 191.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 191 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 191 (Rioting).",
+      "steps": [
+        "Introduce BNS s. 191 and Chapter XI — Of Offences Against the Public Tranquillity.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 191."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 191 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Distinguish BNS s. 191 from BNS s. 189, BNS s. 190.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 191, Rioting.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 191: Rioting.",
+    "First ingredient: (1) Whenever force or violence is used by an unlawful assembly, or by any member thereof, in prosecution of the common object of such assembly, every member of such assembly is guilty of the offence of rioting",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 191 — Rioting. Older books and judgments may still print a historical number (146 / 147). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": [
+    "s-189",
+    "s-190"
+  ]
 }
 
 export default content

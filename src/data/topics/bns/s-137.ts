@@ -1,32 +1,179 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 137 (and related): wrongful restraint and wrongful confinement. Wrongful restraint — voluntarily obstructing a person so as to prevent that person from proceeding in any direction in which that person has a right to proceed. Wrongful confinement — wrongfully restraining a person so as to prevent that person from proceeding beyond certain circumscribing limits. Successor to IPC ss. 339–342.',
-  study: `Wrongful restraint and wrongful confinement under the BNS:\n\nWrongful restraint: voluntarily obstructing any person so as to prevent that person from proceeding in any direction in which that person has a right to proceed.\n\nWrongful confinement: wrongfully restraining any person in such a manner as to prevent that person from proceeding beyond certain circumscribing limits.\n\nKey points\n• Restraint is the genus; confinement is a species (restraint within limits).\n• The person must have a right to proceed in that direction / beyond those limits.\n• Voluntarily = intention or knowledge of likelihood.\n\nAggravated forms (confinement for three or more days, for ten or more days, secret confinement, etc.) carry higher punishment.\n\nCite the applicable BNS sections for post-1 July 2024 acts. Private defence and lawful authority (e.g. arrest) are important defences.`,
-  sections: [
-    { id: 's-137-m1', title: 'Provenance', order: 1, content: ['Successor to IPC ss. 339–342. Wrongful restraint and wrongful confinement.'] },
-    { id: 's-137-m2', title: 'Definitions', order: 2, content: ['Restraint: obstructing from proceeding in a direction of right. Confinement: restraining within circumscribing limits.'] },
-    { id: 's-137-m3', title: 'Ingredients', order: 3, content: ['(1) Obstruction/restraint. (2) Voluntary. (3) Prevention from proceeding in a direction of right / beyond limits. (4) No lawful justification.'] },
-    { id: 's-137-m4', title: 'Evidence', order: 4, content: ['Nature of the obstruction; duration; right of the victim to proceed; intention/knowledge.'] },
-    { id: 's-137-m5', title: 'Procedure', order: 5, content: ['Often bailable in simple forms; aggravated confinement more serious; forum per BNSS Schedule.'] },
+  "study": "Introduction and meaning\nKidnapping: from India, or from lawful guardianship. Taking or enticing a child (male under 18, female under 18) out of the keeping of the lawful guardian without consent. The minor’s consent is irrelevant.\nIn student language: BNS s. 137 is the rule on “Kidnapping”. The section provides that (1) Kidnapping is of two kinds: kidnapping from India, and kidnapping from lawful guardianship–. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 137 exists so that “Kidnapping” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n137. (1) Kidnapping is of two kinds: kidnapping from India, and kidnapping from lawful guardianship–\n\n(a) whoever conveys any person beyond the limits of India without the consent of that person, or of some person legally authorised to consent on behalf of that person, is said to kidnap that person from India;\n\n(b) whoever takes or entices any child or any person of unsound mind, out of the keeping of the lawful guardian of such child or person of unsound mind, without the consent of such guardian, is said to kidnap such child or person from lawful guardianship\n\nEssential ingredients\n1. (1) Kidnapping is of two kinds: kidnapping from India, and kidnapping from lawful guardianship–\n2. (a) whoever conveys any person beyond the limits of India without the consent of that person, or of some person legally authorised to consent on behalf of that person, is said to kidnap that person from India;\n3. (b) whoever takes or entices any child or any person of unsound mind, out of the keeping of the lawful guardian of such child or person of unsound mind, without the consent of such guardian, is said to kidnap such child or person from lawful guardianship\n\nExplanations\nExplanation.–The words “lawful guardian” in this clause include any person lawfully entrusted with the care or custody of such child or other person\n\nExceptions, limitations and provisos\nException.—This clause does not extend to the act of any person who in good faith believes himself to be the father of an illegitimate child, or who in good faith believes himself to be entitled to the lawful custody of such child, unless such act is committed for an immoral or unlawful purpose\n\n(2) Whoever kidnaps any person from India or from lawful guardianship shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine",
+  "glance": "BNS s. 137 — Kidnapping.",
+  "sections": [
+    {
+      "id": "bns-137-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "137. (1) Kidnapping is of two kinds: kidnapping from India, and kidnapping from lawful guardianship–",
+        "(a) whoever conveys any person beyond the limits of India without the consent of that person, or of some person legally authorised to consent on behalf of that person, is said to kidnap that person from India;",
+        "(b) whoever takes or entices any child or any person of unsound mind, out of the keeping of the lawful guardian of such child or person of unsound mind, without the consent of such guardian, is said to kidnap such child or person from lawful guardianship"
+      ]
+    },
+    {
+      "id": "bns-137-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Kidnapping is of two kinds: kidnapping from India, and kidnapping from lawful guardianship–",
+        "(a) whoever conveys any person beyond the limits of India without the consent of that person, or of some person legally authorised to consent on behalf of that person, is said to kidnap that person from India;",
+        "(b) whoever takes or entices any child or any person of unsound mind, out of the keeping of the lawful guardian of such child or person of unsound mind, without the consent of such guardian, is said to kidnap such child or person from lawful guardianship"
+      ]
+    },
+    {
+      "id": "bns-137-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation.–The words “lawful guardian” in this clause include any person lawfully entrusted with the care or custody of such child or other person"
+      ]
+    },
+    {
+      "id": "bns-137-exc",
+      "title": "Exceptions and provisos",
+      "order": 6,
+      "content": [
+        "Exception.—This clause does not extend to the act of any person who in good faith believes himself to be the father of an illegitimate child, or who in good faith believes himself to be entitled to the lawful custody of such child, unless such act is committed for an immoral or unlawful purpose",
+        "(2) Whoever kidnaps any person from India or from lawful guardianship shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-137', section: 's. 137', title: 'Wrongful restraint and wrongful confinement' }],
-  examples: [
-    { id: 's-137-ex1', title: 'Wrongful restraint', illustrationType: 'practical', description: 'A blocks a public path to prevent B from walking in a direction B has a right to go. Wrongful restraint is made out.' },
-    { id: 's-137-ex2', title: 'Lawful arrest', illustrationType: 'fail-scenario', description: 'A police officer lawfully arrests B. The restraint is justified by law; wrongful restraint/confinement is not made out.' },
+  "examples": [
+    {
+      "id": "bns-137-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Kidnapping”. Name BNS s. 137, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-137-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 137 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-137-hypo', title: 'Restraint vs confinement', facts: 'Accused locks the victim in a room for several hours.', question: 'Restraint or confinement?', applicableLaw: 'BNS wrongful restraint / confinement provisions.', analysis: 'Prevention from proceeding beyond the limits of the room = wrongful confinement (a species of restraint).', conclusion: 'Wrongful confinement.' }],
-  distinctions: [{ id: 's-137-dist', title: 'Restraint vs Confinement', left: 'Wrongful restraint', right: 'Wrongful confinement', rows: [{ point: 'Scope', left: 'Preventing from proceeding in a direction', right: 'Preventing from proceeding beyond circumscribing limits' }] }],
-  misconceptions: [{ id: 's-137-trap', trap: 'Any obstruction is wrongful restraint.', correction: 'The person must have a right to proceed in that direction, and the obstruction must be voluntary and without lawful justification.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-137-brief', draftingCategory: 'brief', question: 'Distinguish wrongful restraint and wrongful confinement under the BNS.', answer: 'Wrongful restraint is voluntarily obstructing a person from proceeding in a direction in which that person has a right to proceed. Wrongful confinement is wrongfully restraining a person so as to prevent that person from proceeding beyond certain circumscribing limits. Confinement is a species of restraint.', explanation: 'Short note.' },
-    { id: 's-137-sub', draftingCategory: 'submissions', question: 'Submissions on wrongful restraint/confinement.', answer: 'I. Obstruction/restraint. II. Right to proceed. III. Voluntary and without justification. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-137-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Kidnapping” under BNS s. 137 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 137 (Kidnapping) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 137. Chapter VI — Of Offences Affecting the Human Body. Connected: BNS s. 138, BNS s. 140.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 137 (Kidnapping), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Kidnapping is of two kinds: kidnapping from India, and kidnapping from lawful guardianship–\n   (2) (a) whoever conveys any person beyond the limits of India without the consent of that person, or of some person legally authorised to consent on behalf of that person, is said to kidnap that person from India;\n   (3) (b) whoever takes or entices any child or any person of unsound mind, out of the keeping of the lawful guardian of such child or person of unsound mind, without the consent of such guardian, is said to kidnap such child or person from lawful guardianship\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 137 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 137. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS wrongful restraint and confinement provisions', 'BNS s. 14', 'BNS s. 34', 'IPC ss. 339–342 (historical)'],
-  examTips: ['State the genus-species relationship (restraint → confinement).', 'Always check lawful justification (arrest, private defence).'],
-  revisionPoints: ['Restraint = obstructing direction of right.', 'Confinement = restraining within limits.', 'Lawful authority is a defence.'],
-  relatedTopics: ['s-14', 's-34', 's-130', 's-140'],
+  "distinctions": [
+    {
+      "id": "bns-137-dist",
+      "title": "BNS s. 137 and connected sections",
+      "left": "BNS s. 137",
+      "right": "BNS s. 138, BNS s. 140",
+      "rows": [
+        {
+          "point": "Heading",
+          "left": "Kidnapping",
+          "right": "Read the neighbour’s title on its own page before you write."
+        },
+        {
+          "point": "What you must prove",
+          "left": "(1) Kidnapping is of two kinds: kidnapping from India, and kidnapping from lawful guardianship–",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+        },
+        {
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 137.",
+          "right": "Citing s. 137 where the neighbour actually applies."
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-137-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 137."
+    },
+    {
+      "id": "bns-137-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-137-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-137-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 137 (Kidnapping)",
+      "answer": "Introduction. BNS s. 137 deals with Kidnapping. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Kidnapping: from India, or from lawful guardianship. Taking or enticing a child (male under 18, female under 18) out of the keeping of the lawful guardian without consent. The minor’s consent is irrelevant.\n\nLegal rule. In student language: BNS s. 137 is the rule on “Kidnapping”. The section provides that (1) Kidnapping is of two kinds: kidnapping from India, and kidnapping from lawful guardianship–. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Kidnapping is of two kinds: kidnapping from India, and kidnapping from lawful guardianship–\n2. (a) whoever conveys any person beyond the limits of India without the consent of that person, or of some person legally authorised to consent on behalf of that person, is said to kidnap that person from India;\n3. (b) whoever takes or entices any child or any person of unsound mind, out of the keeping of the lawful guardian of such child or person of unsound mind, without the consent of such guardian, is said to kidnap such child or person from lawful guardianship\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.–The words “lawful guardian” in this clause include any person lawfully entrusted with the care or custody of such child or other person An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nExceptions / provisos. Exception.—This clause does not extend to the act of any person who in good faith believes himself to be the father of an illegitimate child, or who in good faith believes himself to be entitled to the lawful custody of such child, unless such act is committed for an immoral or unlawful purpose\n\n(2) Whoever kidnaps any person from India or from lawful guardianship shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fin… State the exception and then say whether it is attracted on the facts.\n\nConnected sections. Read with BNS s. 138, BNS s. 140. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 137 is the complete current-law heading for Kidnapping. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-137-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 137 (Kidnapping) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 137 deals with Kidnapping. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Kidnapping: from India, or from lawful guardianship. Taking or enticing a child (male under 18, female under 18) out of the keeping of the lawful guardian without consent. The minor’s consent is irrelevant.\n\nLegal rule. In student language: BNS s. 137 is the rule on “Kidnapping”. The section provides that (1) Kidnapping is of two kinds: kidnapping from India, and kidnapping from lawful guardianship–. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Kidnapping is of two kinds: kidnapping from India, and kidnapping from lawful guardianship–\n2. (a) whoever conveys any person beyond the limits of India without the consent of that person, or of some person legally authorised to consent on behalf of that person, is said to kidnap that person from India;\n3. (b) whoever takes or entices any child or any person of unsound mind, out of the keeping of the lawful guardian of such child or person of unsound mind, without the consent of such guardian, is said to kidnap such child or person from lawful guardianship\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.–The words “lawful guardian” in this clause include any person lawfully entrusted with the care or custody of such child or other person An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nExceptions / provisos. Exception.—This clause does not extend to the act of any person who in good faith believes himself to be the father of an illegitimate child, or who in good faith believes himself to be entitled to the lawful custody of such child, unless such act is committed for an immoral or unlawful purpose\n\n(2) Whoever kidnaps any person from India or from lawful guardianship shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fin… State the exception and then say whether it is attracted on the facts.\n\nConnected sections. Read with BNS s. 138, BNS s. 140. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 137 is the complete current-law heading for Kidnapping. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 137 with BNS s. 138, BNS s. 140. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 137.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 137 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Kidnapping is complete when the minor is taken out of guardianship. Abduction needs an “in order to” companion section to be an offence."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 137 (Kidnapping).",
+      "steps": [
+        "Introduce BNS s. 137 and Chapter VI — Of Offences Affecting the Human Body.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 137."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 137 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Distinguish BNS s. 137 from BNS s. 138, BNS s. 140.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 137, Kidnapping.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 137: Kidnapping.",
+    "First ingredient: (1) Kidnapping is of two kinds: kidnapping from India, and kidnapping from lawful guardianship–",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 137 — Kidnapping. Older books and judgments may still print a historical number (359–361 / 363). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": [
+    "s-138",
+    "s-140"
+  ]
 }
 
 export default content

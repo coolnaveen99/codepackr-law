@@ -1,313 +1,187 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance:
-    'Section 46 of the Bharatiya Nyaya Sanhita, 2023 defines the abettor and codifies five foundational accessorial doctrines through its five Explanations: abetment by illegal omission, abetment of uncommitted offences, the innocent agent doctrine, abetment of abetment, and conspiracy without direct concert.',
-
-  study: `Topic at a glance
-Section 46 of the Bharatiya Nyaya Sanhita, 2023 (succeeding Section 108 of the Indian Penal Code, 1860) establishes the legal definition of the "Abettor" and operationalizes five profound doctrines of secondary criminal participation. While Section 45 defines what constitutes the *act* of abetment, Section 46 defines the *actor* and decouples the abettor\'s criminal culpability from the actions, capacity, or mental state of the physical perpetrator.
-
-Statutory Text (Section 46 BNS)
-"A person abets an offence, who abets either the commission of an offence, or the commission of an act which would be an offence, if committed by a person capable by law of committing an offence with the same intention or knowledge as that of the abettor.
-Explanation 1.—The abetment of the illegal omission of an act may amount to an offence although the abettor may not himself be bound to do that act.
-Explanation 2.—To constitute the offence of abetment it is not necessary that the act abetted should be committed, or that the effect requisite to constitute the offence should be caused.
-Explanation 3.—It is not necessary that the person abetted should be capable by law of committing an offence, or that he should have the same guilty intention or knowledge as that of the abettor, or any guilty intention or knowledge.
-Explanation 4.—The abetment of an offence being an offence, the abetment of such an abetment is also an offence.
-Explanation 5.—It is not necessary to the commission of the offence of abetment by conspiracy that the abettor should concert the offence with the person who commits it. It is sufficient if he engages in the conspiracy in pursuance of which the offence is committed."
-
-Deconstruction of the Five Explanations
-1. Explanation 1 (Abetment by Illegal Omission): A private citizen who instigates a public servant (such as a police sentry or prison guard) to illegally omit their official duty (e.g., leaving a prison gate unlocked) is guilty of abetment, even though the private citizen himself had no legal duty to guard the prison.
-2. Explanation 2 (Independence of Abetment): Abetment is a substantive inchoate crime complete in itself. If A instigates B to murder C, and B indignantly refuses, A is still guilty of abetting murder! The success, failure, or refusal of the principal does not extinguish the abettor\'s completed crime (Jamuna Singh v. State of Bihar, AIR 1967 SC 553).
-3. Explanation 3 (The Innocent Agent Doctrine): An evil mastermind cannot evade penal law by utilizing a puppet. If A hands a poisoned sweet to an innocent 5-year-old child or a lunatic, directing them to give it to Z, the child/lunatic commits no offence (under ss. 20/22 BNS), but A is fully guilty of abetment of murder (or constructive murder). Similarly, if A tricks an innocent courier into carrying stolen jewelry, A is guilty of abetting theft.
-4. Explanation 4 (Abetment of Abetment): The law punishes remote instigators. If A instigates B to hire a contract hitman C, and B hires C who murders Z, both B and A are liable for abetment of murder.
-5. Explanation 5 (Conspiracy without Mutual Concert): Codifies "wheel-and-spoke" and "chain" conspiracies. If A and B agree to poison Z, and B independently recruits C to administer the poison without A ever meeting, speaking to, or knowing C, A is still legally liable for the abetment committed by C.`,
-
-  sections: [
+  "study": "Introduction and meaning\nAbettor. BNS restatement of IPC 108. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 108. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 46 is the rule on “Abettor”. The section provides that a person abets an offence, who abets either the commission of an offence, or the commission of an act which would be an offence, if committed by a person capable by law of committing an offence with the same intention or knowledge as that of the abettor. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 46 exists so that “Abettor” has a closed legal test in Chapter IV — Of Abetment, Criminal Conspiracy and Attempt. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: The inchoate trio. Abetment now covers extra-territorial aid; conspiracy and attempt sit next to it.\n\nThe provision in detail\n46. A person abets an offence, who abets either the commission of an offence, or the commission of an act which would be an offence, if committed by a person capable by law of committing an offence with the same intention or knowledge as that of the abettor\n\nEssential ingredients\n1. A person abets an offence, who abets either the commission of an offence, or the commission of an act which would be an offence, if committed by a person capable by law of committing an offence with the same intention or knowledge as that of the abettor\n\nStatutory illustrations\nIllustration (a). A instigates B to murder C. B refuses to do so. A is guilty of abetting B to commit murder\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 46 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (b). A instigates B to murder D. B in pursuance of the instigation stabs D. D recovers from the wound. A is guilty of instigating B to commit murder\n\nExam use: quote illustration (b), then write which ingredient of BNS s. 46 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (c). A, with a guilty intention, abets a child or a person of unsound mind to commit an act which would be an offence, if committed by a person capable by law of committing an offence, and having the same intention as A. Here A, whether the act be committed or not, is guilty of abetting an offence\n\nExam use: quote illustration (c), then write which ingredient of BNS s. 46 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (d). A, with the intention of murdering Z, instigates B, a child under seven years of age, to do an act which causes Z’s death. B, in consequence of the abetment, does the act in the absence of A and thereby causes Z’s death. Here, though B was not capable by law of committing an offence, A is liable to be punished in the same manner as if B had been capable by law of committing an offence, and had committed murder, and he is therefore subject to the punishment of death\n\nExam use: quote illustration (d), then write which ingredient of BNS s. 46 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (e). A instigates B to set fire to a dwelling-house. B, in consequence of his unsoundness of mind, being incapable of knowing the nature of the act, or that he is doing what is wrong or contrary to law, sets fire to the house in consequence of A’s instigation. B has committed no offence, but A is guilty of abetting the offence of setting fire to a dwelling-house, and is liable to the punishment provided for that offence\n\nExam use: quote illustration (e), then write which ingredient of BNS s. 46 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (f). A, intending to cause a theft to be committed, instigates B to take property belonging to Z out of Z’s possession. A induces B to believe that the property belongs to A. B takes the property out of Z’s possession, in good faith, believing it to be A’s property. B, acting under this misconception, does not take dishonestly, and therefore does not commit theft. But A is guilty of abetting theft, and is liable to the same punishment as if B had committed theft\n\nExam use: quote illustration (f), then write which ingredient of BNS s. 46 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (g). A instigates B to instigate C to murder Z. B accordingly instigates C to murder Z, and C commits that offence in consequence of B’s instigation. B is liable to be punished for his offence with the punishment for murder; and, as A instigated B to commit the offence, A is also liable to the same punishment\n\nExam use: quote illustration (g), then write which ingredient of BNS s. 46 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (h). A concerts with B a plan for poisoning Z. It is agreed that A shall administer the poison. B then explains the plan to C mentioning that a third person is to administer the poison, but without mentioning A’s name. C agrees to procure the poison, and procures and delivers it to B for the purpose of its being used in the manner explained. A administers the poison; Z dies in consequence. Here, though A and C have not conspired together, yet C has been engaged in the conspiracy in pursuance of which Z has been murdered. C has therefore committed the offence defined in this section and is liable to the punishment for murder\n\nExam use: quote illustration (h), then write which ingredient of BNS s. 46 it proves. Copying the illustration without that mapping sentence does not score.\n\nExplanations\nExplanation 1.—The abetment of the illegal omission of an act may amount to an offence although the abettor may not himself be bound to do that act\n\nExplanation 2.—To constitute the offence of abetment it is not necessary that the act abetted should be committed, or that the effect requisite to constitute the offence should be caused\n\nExplanation 3.—It is not necessary that the person abetted should be capable by law of committing an offence, or that he should have the same guilty intention or knowledge as that of the abettor, or any guilty intention or knowledge\n\nExplanation 4.—The abetment of an offence being an offence, the abetment of such an abetment is also an offence\n\nExplanation 5.—It is not necessary to the commission of the offence of abetment by conspiracy that the abettor should concert the offence with the person who commits it. It is sufficient if he engages in the conspiracy in pursuance of which the offence is committed",
+  "glance": "BNS s. 46 — Abettor.",
+  "sections": [
     {
-      id: 's-46-module-1',
-      title: 'Provenance, Accessorial Philosophy & The Five Explanations',
-      order: 1,
-      content: [
-        'Directly succeeds Section 108 of the Indian Penal Code, 1860 without substantive alteration.',
-        'Accessorial Philosophy: Decouples the liability of the instigator/organizer from the technical capacity or execution of the physical actor.',
-        'The Five Explanations: Form an interlocking code addressing the most complex scenarios in criminal organization — omissions, uncommitted acts, innocent agents, remote instigation, and anonymous conspiracy chains.',
-        'Statutory Illustrations: Accompanied by official illustrations clarifying that refusal by the principal, recovery of the victim, or insanity of the instrument leaves the abettor fully punishable.',
-      ],
+      "id": "bns-46-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "46. A person abets an offence, who abets either the commission of an offence, or the commission of an act which would be an offence, if committed by a person capable by law of committing an offence with the same intention or knowledge as that of the abettor"
+      ]
     },
     {
-      id: 's-46-module-2',
-      title: 'Textual Anatomy & Detailed Analysis of Explanations 1 to 5',
-      order: 2,
-      content: [
-        'Definition: Abetting an offence includes abetting an act that would be an offence if done by a capable person with the abettor\'s intent.',
-        'Explanation 1: Extends accessorial reach to public duties violated through private inducement.',
-        'Explanation 2: Establishes that the crime is complete upon the communication of the instigation or aid.',
-        'Explanation 3: The Innocent Agent rule — covers children below 7 (s. 20), children 7–12 (s. 21), insane persons (s. 22), and persons acting under mistake of fact (s. 14).',
-        'Explanation 4: Extends criminal liability down infinite chains of instigation (A -> B -> C).',
-        'Explanation 5: Outlaws modern compartmentalized criminal networks where kingpins never directly contact street operatives.',
-      ],
+      "id": "bns-46-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "A person abets an offence, who abets either the commission of an offence, or the commission of an act which would be an offence, if committed by a person capable by law of committing an offence with the same intention or knowledge as that of the abettor"
+      ]
     },
     {
-      id: 's-46-module-3',
-      title: 'Mandatory Proving Ingredients & The Independent Liability Rule',
-      order: 3,
-      content: [
-        '1. Proof of the abettor\'s mens rea: The abettor possessed the specific intention or knowledge that the criminal act be committed.',
-        '2. Proof of the abetment act under Section 45 (instigation, conspiracy, or aid).',
-        '3. For Explanation 3: Proof that the abettor intentionally utilized an innocent, immune, or unwitting human instrumentality.',
-        '4. For Explanation 5: Proof that the abettor engaged in the common conspiratorial design in pursuance of which the act was committed.',
-      ],
+      "id": "bns-46-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "(a) A instigates B to murder C. B refuses to do so. A is guilty of abetting B to commit murder",
+        "(b) A instigates B to murder D. B in pursuance of the instigation stabs D. D recovers from the wound. A is guilty of instigating B to commit murder",
+        "(a) A, with a guilty intention, abets a child or a person of unsound mind to commit an act which would be an offence, if committed by a person capable by law of committing an offence, and having the same intention as A. Here A, whether the act be committed or not, is guilty of abetting an offence",
+        "(b) A, with the intention of murdering Z, instigates B, a child under seven years of age, to do an act which causes Z’s death. B, in consequence of the abetment, does the act in the absence of A and thereby causes Z’s death. Here, though B was not capable by law of committing an offence, A is liable to be punished in the same manner as if B had been capable by law of committing an offence, and had committed murder, and he is therefore subject to the punishment of death",
+        "(c) A instigates B to set fire to a dwelling-house. B, in consequence of his unsoundness of mind, being incapable of knowing the nature of the act, or that he is doing what is wrong or contrary to law, sets fire to the house in consequence of A’s instigation. B has committed no offence, but A is guilty of abetting the offence of setting fire to a dwelling-house, and is liable to the punishment provided for that offence",
+        "(d) A, intending to cause a theft to be committed, instigates B to take property belonging to Z out of Z’s possession. A induces B to believe that the property belongs to A. B takes the property out of Z’s possession, in good faith, believing it to be A’s property. B, acting under this misconception, does not take dishonestly, and therefore does not commit theft. But A is guilty of abetting theft, and is liable to the same punishment as if B had committed theft",
+        "A instigates B to instigate C to murder Z. B accordingly instigates C to murder Z, and C commits that offence in consequence of B’s instigation. B is liable to be punished for his offence with the punishment for murder; and, as A instigated B to commit the offence, A is also liable to the same punishment",
+        "A concerts with B a plan for poisoning Z. It is agreed that A shall administer the poison. B then explains the plan to C mentioning that a third person is to administer the poison, but without mentioning A’s name. C agrees to procure the poison, and procures and delivers it to B for the purpose of its being used in the manner explained. A administers the poison; Z dies in consequence. Here, though A and C have not conspired together, yet C has been engaged in the conspiracy in pursuance of which Z has been murdered. C has therefore committed the offence defined in this section and is liable to the punishment for murder"
+      ]
     },
     {
-      id: 's-46-module-4',
-      title: 'Evidentiary Burdens under BSA 2023 (ss. 104–106 & s. 61)',
-      order: 4,
-      content: [
-        'Burden on Prosecution under Section 104 BSA: Must prove the abettor\'s mental state and act of communication beyond reasonable doubt.',
-        'Acquittal of Principal vs Abettor: In Faguna Kanta Nath v. State of Assam, AIR 1959 SC 673, the Supreme Court held that where the sole alleged principal is acquitted on the merits of having done the act, an abettor accused of aiding cannot be convicted; but where the principal is acquitted due to lack of capacity (insanity/infancy), Explanation 3 mandates that the abettor remains fully convicted.',
-        'Establishing Conspiracy Chain under Explanation 5: Relying on Section 61 BSA (relevancy of conspirator statements/acts) to link remote conspirators through common objective.',
-        'Proof of Uncommitted Abetment: Where the principal refused, the prosecution relies on recorded wiretaps, sting operations, or undercover witness testimony.',
-      ],
-    },
-    {
-      id: 's-46-module-5',
-      title: 'Procedural Roadmap, Drafting Charges & Bail Tactics',
-      order: 5,
-      content: [
-        'Framing of Charge under Section 234 BNSS: The charge must specifically specify whether the abettor is tried for completed abetment (s. 49 BNS) or uncommitted abetment (s. 55 or s. 56 BNS).',
-        'Trial of Kingpin in Organized Crime: Applying Explanation 5 to charge the mastermind behind cyber fraud or narcotics syndicates who never communicated with the street mule.',
-        'Chamber Strategy when Principal Pleads Insanity: Ensuring that the client (if charged as abettor) is not caught by Explanation 3; counsel must demonstrate complete absence of prior inducement or supply of weapons.',
-        'Bail Advocacy: Arguing that under Explanation 2, where no physical injury or harm was ever caused, pre-trial detention under Section 480 BNSS is unwarranted.',
-      ],
-    },
+      "id": "bns-46-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation 1.—The abetment of the illegal omission of an act may amount to an offence although the abettor may not himself be bound to do that act",
+        "Explanation 2.—To constitute the offence of abetment it is not necessary that the act abetted should be committed, or that the effect requisite to constitute the offence should be caused",
+        "Explanation 3.—It is not necessary that the person abetted should be capable by law of committing an offence, or that he should have the same guilty intention or knowledge as that of the abettor, or any guilty intention or knowledge",
+        "Explanation 4.—The abetment of an offence being an offence, the abetment of such an abetment is also an offence",
+        "Explanation 5.—It is not necessary to the commission of the offence of abetment by conspiracy that the abettor should concert the offence with the person who commits it. It is sufficient if he engages in the conspiracy in pursuance of which the offence is committed"
+      ]
+    }
   ],
-
-  provisions: [
+  "examples": [
     {
-      actId: 'bns',
-      actName: 'Bharatiya Nyaya Sanhita, 2023',
-      provisionId: 'bns-46',
-      section: 's. 46',
-      title: 'Abettor',
+      "id": "bns-46-ex-1",
+      "title": "Illustration (a)",
+      "description": "A instigates B to murder C. B refuses to do so. A is guilty of abetting B to commit murder\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 46 — which fact proves which element, and what the legal result is."
     },
+    {
+      "id": "bns-46-ex-2",
+      "title": "Illustration (b)",
+      "description": "A instigates B to murder D. B in pursuance of the instigation stabs D. D recovers from the wound. A is guilty of instigating B to commit murder\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 46 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-46-ex-3",
+      "title": "Illustration (c)",
+      "description": "A, with a guilty intention, abets a child or a person of unsound mind to commit an act which would be an offence, if committed by a person capable by law of committing an offence, and having the same intention as A. Here A, whether the act be committed or not, is guilty of abetting an offence\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 46 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-46-ex-4",
+      "title": "Illustration (d)",
+      "description": "A, with the intention of murdering Z, instigates B, a child under seven years of age, to do an act which causes Z’s death. B, in consequence of the abetment, does the act in the absence of A and thereby causes Z’s death. Here, though B was not capable by law of committing an offence, A is liable to be punished in the same manner as if B had been capable by law of committing an offence, and had committed murder, and he is therefore subject to the punishment of death\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 46 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-46-ex-5",
+      "title": "Illustration (e)",
+      "description": "A instigates B to set fire to a dwelling-house. B, in consequence of his unsoundness of mind, being incapable of knowing the nature of the act, or that he is doing what is wrong or contrary to law, sets fire to the house in consequence of A’s instigation. B has committed no offence, but A is guilty of abetting the offence of setting fire to a dwelling-house, and is liable to the punishment provided for that offence\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 46 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-46-ex-6",
+      "title": "Illustration (f)",
+      "description": "A, intending to cause a theft to be committed, instigates B to take property belonging to Z out of Z’s possession. A induces B to believe that the property belongs to A. B takes the property out of Z’s possession, in good faith, believing it to be A’s property. B, acting under this misconception, does not take dishonestly, and therefore does not commit theft. But A is guilty of abetting theft, and is liable to the same punishment as if B had committed theft\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 46 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-46-ex-7",
+      "title": "Illustration (g)",
+      "description": "A instigates B to instigate C to murder Z. B accordingly instigates C to murder Z, and C commits that offence in consequence of B’s instigation. B is liable to be punished for his offence with the punishment for murder; and, as A instigated B to commit the offence, A is also liable to the same punishment\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 46 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-46-ex-8",
+      "title": "Illustration (h)",
+      "description": "A concerts with B a plan for poisoning Z. It is agreed that A shall administer the poison. B then explains the plan to C mentioning that a third person is to administer the poison, but without mentioning A’s name. C agrees to procure the poison, and procures and delivers it to B for the purpose of its being used in the manner explained. A administers the poison; Z dies in consequence. Here, though A and C have not conspired together, yet C has been engaged in the conspiracy in pursuance of which Z has been murdered. C has therefore committed the offence defined in this section and is liable to the punishment for murder\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 46 — which fact proves which element, and what the legal result is."
+    }
   ],
-
-  examples: [
+  "hypotheticals": [
     {
-      id: 's-46-ill-1',
-      title: 'Illustration 1 — Utilizing Innocent Child as Puppet to Administer Poison (Statutory Explanation 3)',
-      illustrationType: 'statutory',
-      description:
-        'A, intending to murder Z, hands a glass of milk mixed with lethal arsenic to B, an innocent 6-year-old child, telling B, "Go give this sweet milk to uncle Z." B, having zero knowledge of the poison and lacking criminal capacity under Section 20 BNS, serves the milk to Z, who drinks it and dies. B is guilty of no offence (doli incapax). However, under Section 46 Explanation 3 BNS, A is an abettor of murder: it is not necessary that the person abetted should be capable of committing an offence. A is punished with death or life imprisonment for murder under Section 49 BNS.',
-    },
-    {
-      id: 's-46-ill-2',
-      title: 'Illustration 2 — Soliciting Assassin who Refuses (Statutory Explanation 2)',
-      illustrationType: 'statutory',
-      description:
-        'A offers Rs. 10,00,000 to B to shoot and kill politician C. B immediately refuses the offer, drives A out of his house, and reports the matter to the police. C is never attacked and suffers no harm. A contends he committed no crime because the murder was never attempted. Under Section 46 Explanation 2 BNS, to constitute abetment it is not necessary that the act abetted should be committed. A is fully guilty of abetment of murder, punishable under Section 55 BNS with imprisonment up to 7 years and fine.',
-    },
+      "id": "bns-46-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "(a) A instigates B to murder C. B refuses to do so. A is guilty of abetting B to commit murder",
+      "question": "Whether BNS s. 46 (Abettor) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 46. Chapter IV — Of Abetment, Criminal Conspiracy and Attempt. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 46 (Abettor), Chapter IV — Of Abetment, Criminal Conspiracy and Attempt.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) A person abets an offence, who abets either the commission of an offence, or the commission of an act which would be an offence, if committed by a person capable by law of committing an offence with the same intention or knowledge as that of the abettor\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 46 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 46. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-
-  hypotheticals: [
+  "misconceptions": [
     {
-      id: 's-46-hypo-1',
-      title: 'Chamber Practical Problem — The Anonymous Narcotics Smuggling Chain',
-      facts:
-        'Cartel leader X in Mumbai enters into a conspiracy with logistics broker Y to smuggle 10 kilograms of heroin into Delhi. Y recruits courier Z, who drives the contraband car across state borders. X has never met, seen, or communicated with Z; X does not even know Z\'s name or identity. Police intercept Z at the Delhi border and seize the heroin. X is arrested in Mumbai and claims he cannot be prosecuted for abetting Z because there was no privity of contract, meeting of minds, or direct communication between X and Z.',
-      question:
-        'Can X be convicted for abetting the offence committed by Z under Section 46 Explanation 5 BNS?',
-      applicableLaw:
-        'Section 46 Explanation 5 and Section 45 Secondly of the Bharatiya Nyaya Sanhita, 2023.',
-      analysis:
-        'Section 46 Explanation 5 explicitly establishes that: "It is not necessary to the commission of the offence of abetment by conspiracy that the abettor should concert the offence with the person who commits it. It is sufficient if he engages in the conspiracy in pursuance of which the offence is committed." X engaged in a conspiracy with Y to smuggle narcotics into Delhi; in pursuance of that conspiracy, Y engaged Z to transport the contraband. The law does not require direct concert between the mastermind and the street courier. As long as the act done by Z was in pursuance of the conspiracy in which X was an active participant, X is legally liable as if he had directly instructed Z.',
-      conclusion:
-        'X\'s defence is completely rejected by Section 46 Explanation 5 BNS. X is fully liable as an abettor of the narcotics offence.',
+      "id": "bns-46-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 46."
     },
+    {
+      "id": "bns-46-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-46-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
   ],
-
-  distinctions: [
+  "questionsAndAnswers": [
     {
-      id: 's-46-dist-1',
-      title: 'Innocent Human Agent (Explanation 3) vs Culpable Accomplice',
-      left: 'Innocent Human Agent (s. 46 Expl. 3)',
-      right: 'Culpable Accomplice (Co-Accused)',
-      rows: [
-        {
-          point: 'Criminal Capacity',
-          left: 'Lacks legal capacity (child, lunatic) or lacks mens rea (mistake of fact).',
-          right: 'Fully capable adult acting with shared guilty mind.',
-        },
-        {
-          point: 'Legal Liability of Physical Actor',
-          left: 'Actor is completely immune/acquitted under Chapter III General Exceptions.',
-          right: 'Actor is convicted as the principal offender; abettor is convicted alongside him.',
-        },
-        {
-          point: 'Abettor\'s Status',
-          left: 'Abettor is the sole criminal mind; treated constructively as the real perpetrator.',
-          right: 'Abettor shares accessorial or joint liability.',
-        },
-      ],
+      "id": "bns-46-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 46 (Abettor)",
+      "answer": "Introduction. BNS s. 46 deals with Abettor. It sits in Chapter IV — Of Abetment, Criminal Conspiracy and Attempt of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Abettor. BNS restatement of IPC 108. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 108. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 46 is the rule on “Abettor”. The section provides that a person abets an offence, who abets either the commission of an offence, or the commission of an act which would be an offence, if committed by a person capable by law of committing an offence with the same intention or knowledge as that of the abettor. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. A person abets an offence, who abets either the commission of an offence, or the commission of an act which would be an offence, if committed by a person capable by law of committing an offence with the same intention or knowledge as that of the abettor\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A instigates B to murder C. B refuses to do so. A is guilty of abetting B to commit murder\n\nExplanations. Explanation 1.—The abetment of the illegal omission of an act may amount to an offence although the abettor may not himself be bound to do that act An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 46. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 46 is the complete current-law heading for Abettor. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
     },
     {
-      id: 's-46-dist-2',
-      title: 'Abetment of Completed Crime (s. 49) vs Uncommitted Crime (s. 55/56)',
-      left: 'Abetment where Offence Committed (s. 49)',
-      right: 'Abetment where Offence NOT Committed (s. 55/56)',
-      rows: [
-        {
-          point: 'Offence Completion',
-          left: 'The physical crime is executed by the principal in consequence of abetment.',
-          right: 'The principal refuses, fails, or is stopped before the crime occurs.',
-        },
-        {
-          point: 'Punishment Metric',
-          left: 'Abettor receives the full punishment provided for the principal offence.',
-          right: 'Abettor receives fractional punishment (up to 7 years under s. 55, or 1/4th under s. 56).',
-        },
-      ],
-    },
+      "id": "bns-46-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 46 (Abettor) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 46 deals with Abettor. It sits in Chapter IV — Of Abetment, Criminal Conspiracy and Attempt of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Abettor. BNS restatement of IPC 108. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 108. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 46 is the rule on “Abettor”. The section provides that a person abets an offence, who abets either the commission of an offence, or the commission of an act which would be an offence, if committed by a person capable by law of committing an offence with the same intention or knowledge as that of the abettor. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. A person abets an offence, who abets either the commission of an offence, or the commission of an act which would be an offence, if committed by a person capable by law of committing an offence with the same intention or knowledge as that of the abettor\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A instigates B to murder C. B refuses to do so. A is guilty of abetting B to commit murder\n\nExplanations. Explanation 1.—The abetment of the illegal omission of an act may amount to an offence although the abettor may not himself be bound to do that act An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 46. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 46 is the complete current-law heading for Abettor. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. The inchoate trio. Abetment now covers extra-territorial aid; conspiracy and attempt sit next to it.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second statutory illustration. Illustration (b): (b) A instigates B to murder D. B in pursuance of the instigation stabs D. D recovers from the wound. A is guilty of instigating B to commit murder Contrast it with illustration (a). The legal weight lies in the contrast.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 46. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 46.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
   ],
-
-  misconceptions: [
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 46 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
     {
-      id: 's-46-trap-1',
-      trap: 'If the person who carried out the act is acquitted on grounds of insanity, the instigator must also be acquitted.',
-      correction:
-        'Explanation 3 explicitly refutes this fallacy. It is not necessary that the person abetted should be capable by law of committing an offence. The lunatic is acquitted, but the sane instigator is convicted.',
+      "question": "Structured Legal Assessment: BNS s. 46 (Abettor).",
+      "steps": [
+        "Introduce BNS s. 46 and Chapter IV — Of Abetment, Criminal Conspiracy and Attempt.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 46."
+      ]
     },
     {
-      id: 's-46-trap-2',
-      trap: 'An abettor can only be convicted if he personally knew and met the person who executed the crime.',
-      correction:
-        'Explanation 5 expressly provides that direct concert is unnecessary. Engaging in the common conspiracy in pursuance of which the act is done is sufficient to convict the abettor.',
-    },
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 46 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second statutory illustration and contrast it with the first.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
   ],
-
-  cases: [
-    {
-      name: 'Jamuna Singh v. State of Bihar',
-      citation: 'AIR 1967 SC 553 / (1967) 3 SCR 120',
-      court: 'Supreme Court of India',
-      holding:
-        'An abettor can be convicted of abetment under Section 108 Explanation 2 IPC (Section 46 Explanation 2 BNS) even if the principal offender is acquitted or untraceable.',
-      ratioDecidendi:
-        'Abetment is a separate and distinct offence. The conviction of the abettor does not depend upon the conviction of the principal.',
-    },
-    {
-      name: 'Faguna Kanta Nath v. State of Assam',
-      citation: 'AIR 1959 SC 673 / 1959 Supp (2) SCR 1',
-      court: 'Supreme Court of India',
-      holding:
-        'Where the sole principal accused is tried and acquitted on the finding that no offence was committed at all, an alleged abettor charged with aiding that specific act cannot be convicted.',
-      ratioDecidendi:
-        'Aiding a non-existent offence is impossible; but where the principal did the physical act and is excused due to incapacity, the abettor remains liable under Explanation 3.',
-    },
+  "answerSkeleton": [
+    "Introduction — BNS s. 46, Abettor.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
   ],
-
-  questionsAndAnswers: [
-    {
-      id: 's-46-qa-1',
-      draftingCategory: 'brief',
-      question:
-        'Prepare an IRAC Case Brief on Jamuna Singh v. State of Bihar, AIR 1967 SC 553, expounding the independence of abetment under Section 46 Explanation 2 BNS.',
-      answer: `IRAC CASE BRIEF: JAMUNA SINGH v. STATE OF BIHAR (AIR 1967 SC 553)
-
-1. FACTS:
-The appellant Jamuna Singh, along with several others, was prosecuted for murder and abetment of murder. The prosecution alleged that Jamuna Singh instigated and ordered his associates to shoot the deceased. During the trial, the actual shooters could not be positively identified beyond reasonable doubt and were acquitted by the Sessions Court giving them the benefit of doubt. The High Court, however, upheld the conviction of Jamuna Singh for abetment of murder under Section 302 read with Section 109 IPC (Section 103 read with Section 49 BNS).
-
-2. ISSUE:
-Can an abettor be lawfully convicted when the alleged principal offenders who executed the crime are acquitted by the trial court?
-
-3. RULE:
-Under Section 46 Explanation 2 BNS (Section 108 Explanation 2 IPC), abetment is a substantive and independent offence. It is not necessary to the commission of the offence of abetment that the act abetted should be committed or that the principal offender should be convicted.
-
-4. APPLICATION:
-The Supreme Court affirmed the conviction of Jamuna Singh, holding:
-(a) The acquittal of the alleged principals was not a finding that no murder took place; the murder undisputedly occurred;
-(b) The shooters were acquitted merely on the question of individual identity;
-(c) The evidence conclusively proved that Jamuna Singh was present and instigated the shooting;
-(d) Under Section 108 IPC (Section 46 BNS), the liability of the abettor is independent. An abettor may be convicted even if the principal is acquitted, dead, or untraceable.
-
-5. CONCLUSION:
-The conviction was upheld. Section 46 Explanation 2 establishes the autonomous statutory life of accessorial liability.`,
-      explanation:
-        'The definitive Supreme Court authority affirming that the acquittal of the principal does not bar the conviction of the abettor.',
-    },
-    {
-      id: 's-46-qa-2',
-      draftingCategory: 'submissions',
-      question:
-        'Draft a 6-part Written Submission for a defendant charged as an abettor, distinguishing Faguna Kanta Nath from Jamuna Singh (acquittal of principal on merits).',
-      answer: `IN THE HIGH COURT OF JUDICATURE AT BOMBAY
-CRIMINAL APPEAL NO. 450 OF 2025
-IN THE MATTER OF:
-VIJAY DESHMUKH ... APPELLANT / ACCUSED NO. 2
-VERSUS
-STATE OF MAHARASHTRA ... RESPONDENT
-
-WRITTEN SUBMISSIONS ON BEHALF OF THE APPELLANT ON SECTION 46 BNS
-
-MOST RESPECTFULLY SHOWETH:
-
-I. SUBSTANTIVE FOUNDATION OF THE APPEAL
-The Appellant stands convicted under Section 45 Thirdly read with Section 46 and Section 49 BNS for allegedly abetting the acceptance of an illegal gratification by Accused No. 1 (a public servant). By the very same impugned judgment, the Learned Special Judge conclusively held that Accused No. 1 NEVER demanded or accepted any bribe, and acquitted Accused No. 1 on the merits.
-
-II. THE BINDING DOCTRINE OF FAGUNA KANTA NATH (AIR 1959 SC 673)
-In Faguna Kanta Nath v. State of Assam, the Hon\'ble Supreme Court held:
-"Where the trial court acquits the principal accused on the explicit factual finding that no crime was ever committed, an alleged abettor charged with aiding that transaction cannot possibly be convicted."
-Here, the court found that the currency notes recovered were a legitimate loan repayment. If the principal committed no offence on the merits, the foundational actus reus disappears.
-
-III. INAPPLICABILITY OF EXPLANATIONS 2 AND 3 OF SECTION 46 BNS
-The prosecution seeks refuge under Jamuna Singh v. State of Bihar and Section 46 Explanation 3 BNS. That reliance is completely misplaced:
-1. Explanation 3 applies only where the principal did the act but is personally exempt due to infancy, insanity, or mistake;
-2. Jamuna Singh applies where the crime occurred but the individual identity of the shooters was uncertain;
-3. Neither rule applies where the court has rendered a substantive finding of fact that NO OFFENCE TOOK PLACE.
-
-IV. IMPOSSIBILITY OF AIDING A NON-EXISTENT OFFENCE
-Under Section 45 Thirdly, aiding requires facilitating "the commission of that act." If the public servant never accepted a bribe, the Appellant could not have aided the acceptance of a bribe.
-
-V. PREJUDICE AND DEFECT IN CHARGE
-The Appellant was charged purely as an accessory aiding Accused No. 1. Maintaining a conviction against an alleged accessory when the principal is declared innocent by the same court is a judicial contradiction that shatters the rule of law.
-
-VI. PRAYER
-It is most respectfully prayed that this Hon\'ble Court be pleased to:
-(a) ALLOW the Appeal;
-(b) SET ASIDE the conviction of the Appellant under Section 49 read with Section 46 BNS; and
-(c) ACQUIT the Appellant of all charges.
-
-DATED: 30.12.2025
-PLACE: MUMBAI
-COUNSEL FOR THE APPELLANT`,
-      explanation:
-        'A masterclass written submission distinguishing the independent liability of abettors under Section 46 BNS from cases where no principal offence was committed on the merits.',
-    },
+  "revisionPoints": [
+    "BNS s. 46: Abettor.",
+    "First ingredient: A person abets an offence, who abets either the commission of an offence, or the commission of an act which would be an offence, if committed by a person capable by law of committing an offence with the same intention or knowledge as that of the abettor",
+    "8 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 46 — Abettor. Older books and judgments may still print a historical number (108). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
   ],
-
-  bareActPointers: [
-    'BNS s. 46 — Definition of Abettor',
-    'BNS s. 46 Explanation 1 — Abetment of illegal omission of an act',
-    'BNS s. 46 Explanation 2 — Offence need not be committed for abetment to exist',
-    'BNS s. 46 Explanation 3 — Innocent agent doctrine (infancy, insanity, lack of mens rea)',
-    'BNS s. 46 Explanation 4 — Abetment of an abetment',
-    'BNS s. 46 Explanation 5 — Conspiracy abetment without direct concert',
-    'IPC s. 108 — Predecessor section',
-  ],
-
-  examTips: [
-    'Competitive exams frequently test all five Explanations of Section 46: know each by number.',
-    'Remember the Innocent Agent rule is Explanation 3 — the insane/child actor commits no offence, but the abettor is guilty.',
-    'Cite Jamuna Singh and Faguna Kanta Nath for the nuanced rules on whether an abettor can be convicted when the principal is acquitted.',
-  ],
-
-  revisionPoints: [
-    'Defines the Abettor.',
-    'Five Explanations: illegal omission, uncommitted offence, innocent agent, abetment of abetment, conspiracy without concert.',
-    'Abetment is an independent substantive offence.',
-  ],
-
-  relatedTopics: ['s-45', 's-47', 's-48', 's-49', 's-51', 's-55', 's-56', 'general-explanations'],
+  "relatedTopics": []
 }
 
 export default content

@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Conversion is intentional dealing with another's chattel inconsistent with possessory rights. Detinue historically concerned wrongful detention. A finder has qualified possessory rights subject to the true owner's superior claim.",
   "study": "Conversion is intentional dealing with another's chattel inconsistent with possessory rights. Detinue historically concerned wrongful detention. A finder has qualified possessory rights subject to the true owner's superior claim.\\n\\nThe law of goods distinguishes possession from ownership. Hollins v Fowler illustrates conversion; Armory v Delamirie illustrates a finder's possessory right against a stranger.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

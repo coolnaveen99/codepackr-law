@@ -1,25 +1,160 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'BNS Section 147: Waging, or attempting to wage war, or abetting waging of war, against Government of India. This dedicated note places the provision in its statutory cluster and connects its ingredients with evidence, procedure and neighbouring BNS provisions.',
-  study: `Section 147 — Waging, or attempting to wage war, or abetting waging of war, against Government of India.\\n\\nWaging war against the Government of India (old 121). Death or life, and fine. The highest State-offence, distinct from s. 152. Historical IPC concordance: 121.\\n\\nRead the enacted BNS wording with every sub-section, explanation, proviso and exception. For conduct before 1 July 2024, separately apply the repeal-and-savings framework and Article 20(1).`,
-  sections:[
-    {id:'s-147-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:['Chapter vii; cluster: Offences against the State.','Waging war against the Government of India (old 121). Death or life, and fine. The highest State-offence, distinct from s. 152.','Historical IPC concordance: 121.','Treat the BNS text as the governing source for post-commencement offences; use IPC concordance only to understand continuity or change.']},
-    {id:'s-147-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:['Operative provision: BNS s. 147 — Waging, or attempting to wage war, or abetting waging of war, against Government of India.','Break the enacted provision into its express elements, qualifiers, explanations and exceptions before applying it.','Read the immediately connected BNS provisions so that a definition, aggravation, proviso or punishment rule is not missed.']},
-    {id:'s-147-m3',title:'Application Ingredients & Issue-Spotting',order:3,content:['Start with the statutory act, circumstance, mental element or status required by s. 147.','Map each material fact to a specific statutory ingredient and identify any missing link.','Check whether the facts instead fit a neighbouring offence or a general exception; avoid treating a historical IPC label as the test.']},
-    {id:'s-147-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:['The prosecution ordinarily bears the burden of proving the charged ingredients beyond reasonable doubt, subject to any applicable statutory presumption.','Identify the fact each side must establish and distinguish admissibility from evidentiary weight under the BSA 2023.','Where electronic material is relied upon, comply with the applicable BSA provisions on electronic records, authenticity and proof.']},
-    {id:'s-147-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:['Check the BNSS First Schedule and the connected offence/punishment provision for cognizability, bailability and the competent trial court.','Check territorial jurisdiction, joinder/charge issues, sanction requirements and other statutory preconditions where relevant.','Verify any applicable BNSS limitation rule and the commencement date of the governing penal law.','For pre-1 July 2024 conduct, separately analyze repeal, savings and Article 20(1).']},
+  "study": "Introduction and meaning\nWaging war against the Government of India (old 121). Death or life, and fine. The highest State-offence, distinct from s. 152. BNS restatement of IPC 121. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 147 is the rule on “Waging, or attempting to wage war, or abetting waging of war, against Government of India”. The section provides that whoever wages war against the Government of India, or attempts to wage such war, or abets the waging of such war, shall be punished with death, or imprisonment for life and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 147 exists so that “Waging, or attempting to wage war, or abetting waging of war, against Government of India” has a closed legal test in Chapter VII — Of Offences Against the State. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Waging war, and the new s. 152 on sovereignty, unity and integrity — not a relabel of sedition.\n\nThe provision in detail\n147. Whoever wages war against the Government of India, or attempts to wage such war, or abets the waging of such war, shall be punished with death, or imprisonment for life and shall also be liable to fine\n\nEssential ingredients\n1. Whoever wages war against the Government of India, or attempts to wage such war, or abets the waging of such war, shall be punished with death, or imprisonment for life and shall also be liable to fine\n\nPunishment / legal consequence\nDeath or life + fine.\n\nStatutory illustrations\nIllustration (a). A joins an insurrection against the Government of India. A has committed the offence defined in this section\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 147 it proves. Copying the illustration without that mapping sentence does not score.",
+  "glance": "BNS s. 147 — Waging, or attempting to wage war, or abetting waging of war, against Government of India.",
+  "sections": [
+    {
+      "id": "bns-147-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "147. Whoever wages war against the Government of India, or attempts to wage such war, or abets the waging of such war, shall be punished with death, or imprisonment for life and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-147-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever wages war against the Government of India, or attempts to wage such war, or abets the waging of such war, shall be punished with death, or imprisonment for life and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-147-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "A joins an insurrection against the Government of India. A has committed the offence defined in this section"
+      ]
+    }
   ],
-  provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-147',section:'s. 147',title:'Waging, or attempting to wage war, or abetting waging of war, against Government of India'}],
-  examples:[{id:'s-147-ex1',title:'Statutory ingredients satisfied',illustrationType:'practical',description:'The proved facts correspond to the material words and conditions of BNS s. 147, with no applicable exception defeating the charge.'},{id:'s-147-ex2',title:'Ingredient or qualification missing',illustrationType:'fail-scenario',description:'The conduct resembles the provision, but a required ingredient, statutory qualification, exception or evidentiary link is not established.'}],
-  hypotheticals:[{id:'s-147-hypo',title:'Chamber problem — BNS s. 147',facts:'A prosecution invokes s. 147 on facts within the Offences against the State cluster. The defence disputes the statutory fit and the proof of one or more ingredients.',question:'Do the proved facts satisfy BNS s. 147?',applicableLaw:'BNS s. 147; connected BNS provisions; applicable BNSS procedure; BSA 2023 evidence rules.',analysis:'1. Identify the exact statutory words. 2. Break them into ingredients and qualifiers. 3. Map the evidence to each ingredient. 4. Apply explanations, provisos and exceptions. 5. Check the procedural and punishment consequences.',conclusion:'The conclusion must follow from the enacted ingredients and proved facts, not from the historical IPC number alone.'}],
-  distinctions:[{id:'s-147-dist',title:'BNS provision vs historical IPC concordance',left:'BNS s. 147',right:'Historical IPC: 121',rows:[{point:'Governing text',left:'Enacted BNS wording for post-commencement offences',right:'Historical material used only for continuity/change analysis'},{point:'Application method',left:'Test each statutory ingredient and qualification',right:'Do not substitute the old section number for the BNS text'},{point:'Transition',left:'Check commencement and savings',right:'Pre-commencement conduct may remain governed by saved prior law'}]}],
-  misconceptions:[{id:'s-147-trap',trap:'The historical IPC provision can simply be substituted for BNS s. 147.',correction:'The enacted BNS text controls post-commencement offences; historical concordance does not replace the statutory wording.'},{id:'s-147-trap-2',trap:'The section heading or factual resemblance alone establishes liability.',correction:'Every material ingredient, qualification and applicable exception must be established on the evidence.'}],
-  cases:[],
-  questionsAndAnswers:[{id:'s-147-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment of BNS s. 147.',answer:`I. ISSUE — identify the precise statutory question.\\nII. RULE — enacted ingredients, definitions, exceptions and connected provisions.\\nIII. APPLICATION — map the evidence to each condition.\\nIV. CONCLUSION — state the statutory consequence supported by the proved facts.`,explanation:'Chamber-style structured analysis without unverified authorities.'},{id:'s-147-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 147.',answer:`I. STATUTORY SCHEME.\\nII. INGREDIENTS AND QUALIFICATIONS.\\nIII. EVIDENCE AND BURDEN.\\nIV. RESPONSE TO EXCEPTIONS OR DEFENCES.\\nV. PROCEDURAL AND OPERATIVE CONSEQUENCE.`,explanation:'Courtroom submission structure without unverified case citations.'}],
-  bareActPointers:['BNS s. 147 — Waging, or attempting to wage war, or abetting waging of war, against Government of India','Connected BNS definitions, explanations, provisos and exceptions','BNSS First Schedule and applicable procedure','BSA 2023 burden and evidence provisions','BNS repeal-and-savings framework for pre-1 July 2024 conduct'],
-  examTips:['Start with the enacted BNS wording and identify each ingredient.','Read connected definitions, exceptions, procedure and punishment provisions.','Use IPC numbering only as historical concordance, not as a substitute for the BNS text.'],
-  revisionPoints:['BNS s. 147: Waging, or attempting to wage war, or abetting waging of war, against Government of India.','Cluster: Offences against the State.','IPC concordance: 121.','Verify the current BNSS procedural classification and BSA evidentiary requirements before advising.'],
-  relatedTopics:["s-152"]
+  "examples": [
+    {
+      "id": "bns-147-ex-1",
+      "title": "Illustration (a)",
+      "description": "A joins an insurrection against the Government of India. A has committed the offence defined in this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 147 — which fact proves which element, and what the legal result is."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-147-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "A joins an insurrection against the Government of India. A has committed the offence defined in this section",
+      "question": "Whether BNS s. 147 (Waging, or attempting to wage war, or abetting waging of war, against Government of India) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 147. Chapter VII — Of Offences Against the State. Connected: BNS s. 152.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 147 (Waging, or attempting to wage war, or abetting waging of war, against Government of India), Chapter VII — Of Offences Against the State.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever wages war against the Government of India, or attempts to wage such war, or abets the waging of such war, shall be punished with death, or imprisonment for life and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 147 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 147 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 147. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "distinctions": [
+    {
+      "id": "bns-147-dist",
+      "title": "BNS s. 147 and connected sections",
+      "left": "BNS s. 147",
+      "right": "BNS s. 152",
+      "rows": [
+        {
+          "point": "Heading",
+          "left": "Waging, or attempting to wage war, or abetting waging of war, against Government of India",
+          "right": "Read the neighbour’s title on its own page before you write."
+        },
+        {
+          "point": "What you must prove",
+          "left": "Whoever wages war against the Government of India, or attempts to wage such war, or abets the waging of such war, shall be punished with death, or imprisonment for life and shall also be liable to fine",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+        },
+        {
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 147.",
+          "right": "Citing s. 147 where the neighbour actually applies."
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-147-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 147."
+    },
+    {
+      "id": "bns-147-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-147-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-147-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 147 (Waging, or attempting to wage war, or abetting waging of war, against Government of India)",
+      "answer": "Introduction. BNS s. 147 deals with Waging, or attempting to wage war, or abetting waging of war, against Government of India. It sits in Chapter VII — Of Offences Against the State of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Waging war against the Government of India (old 121). Death or life, and fine. The highest State-offence, distinct from s. 152. BNS restatement of IPC 121. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 147 is the rule on “Waging, or attempting to wage war, or abetting waging of war, against Government of India”. The section provides that whoever wages war against the Government of India, or attempts to wage such war, or abets the waging of such war, shall be punished with death, or imprisonment for life and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever wages war against the Government of India, or attempts to wage such war, or abets the waging of such war, shall be punished with death, or imprisonment for life and shall also be liable to fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): A joins an insurrection against the Government of India. A has committed the offence defined in this section\n\nLimitations. Apply only the conditions written in s. 147. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Death or life + fine.\n\nConnected sections. Read with BNS s. 152. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 147 is the complete current-law heading for Waging, or attempting to wage war, or abetting waging of war, against Government of India. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-147-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 147 (Waging, or attempting to wage war, or abetting waging of war, against Government of India) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 147 deals with Waging, or attempting to wage war, or abetting waging of war, against Government of India. It sits in Chapter VII — Of Offences Against the State of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Waging war against the Government of India (old 121). Death or life, and fine. The highest State-offence, distinct from s. 152. BNS restatement of IPC 121. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 147 is the rule on “Waging, or attempting to wage war, or abetting waging of war, against Government of India”. The section provides that whoever wages war against the Government of India, or attempts to wage such war, or abets the waging of such war, shall be punished with death, or imprisonment for life and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever wages war against the Government of India, or attempts to wage such war, or abets the waging of such war, shall be punished with death, or imprisonment for life and shall also be liable to fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): A joins an insurrection against the Government of India. A has committed the offence defined in this section\n\nLimitations. Apply only the conditions written in s. 147. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Death or life + fine.\n\nConnected sections. Read with BNS s. 152. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 147 is the complete current-law heading for Waging, or attempting to wage war, or abetting waging of war, against Government of India. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Waging war, and the new s. 152 on sovereignty, unity and integrity — not a relabel of sedition.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 147 with BNS s. 152. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 147.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 147 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 147 (Waging, or attempting to wage war, or abetting waging of war, against Government of India).",
+      "steps": [
+        "Introduce BNS s. 147 and Chapter VII — Of Offences Against the State.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 147."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 147 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Distinguish BNS s. 147 from BNS s. 152.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 147, Waging, or attempting to wage war, or abetting waging of war, against Government of India.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 147: Waging, or attempting to wage war, or abetting waging of war, against Government of India.",
+    "First ingredient: Whoever wages war against the Government of India, or attempts to wage such war, or abets the waging of such war, shall be punished with death, or imprisonment for life and shall also be liable to fine",
+    "1 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 147 — Waging, or attempting to wage war, or abetting waging of war, against Government of India. Older books and judgments may still print a historical number (121). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": [
+    "s-152"
+  ]
 }
+
 export default content

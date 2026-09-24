@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "False imprisonment is unlawful and intentional restraint of a person's freedom of movement within a bounded area. Complete restraint is required; physical force, actual awareness and measurable financial loss are not always necessary.",
   "study": "False imprisonment is unlawful and intentional restraint of a person's freedom of movement within a bounded area. Complete restraint is required; physical force, actual awareness and measurable financial loss are not always necessary.\\n\\nThe tort protects personal liberty. Bird v Jones establishes that obstruction of one route while another reasonable route remains open is not complete confinement. Indian constitutional jurisprudence adds a separate public-law dimension to unlawful detention under Article 21.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

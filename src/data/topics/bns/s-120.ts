@@ -1,32 +1,148 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 120 (and related): voluntarily causing hurt or grievous hurt to extort property or to constrain to an illegal act — enhanced punishment when hurt/GH is caused in order to commit extortion or to constrain the victim to do something illegal. Successor structure to IPC ss. 327/329. Links the hurt scheme with extortion.',
-  study: `Hurt/GH for the purpose of extortion or illegal constraint under the BNS:\n\nWhoever voluntarily causes hurt (or grievous hurt) for the purpose of extorting from the sufferer, or from any person interested in the sufferer, any property or valuable security, or of constraining the sufferer or any person interested to do anything illegal or to give any information useful for the commission of an offence, is punished more severely than for simple hurt/GH.\n\nKey points\n• Hurt or grievous hurt caused voluntarily.\n• Purpose: extortion of property/valuable security, or constraint to illegal act / information for an offence.\n• Enhanced scale above base s. 115 / s. 117.\n\nCite the applicable BNS section for post-1 July 2024 acts. Often charged with extortion (s. 308) and robbery (s. 309) where the facts fit.`,
-  sections: [
-    { id: 's-120-m1', title: 'Provenance', order: 1, content: ['Successor structure to IPC ss. 327/329. Hurt/GH to extort or constrain.'] },
-    { id: 's-120-m2', title: 'Elements', order: 2, content: ['Voluntarily causes hurt or GH; purpose of extorting property/valuable security or constraining to illegal act/information for offence.'] },
-    { id: 's-120-m3', title: 'Ingredients', order: 3, content: ['(1) Hurt or GH. (2) Caused voluntarily. (3) Specified extortionary or constraining purpose.'] },
-    { id: 's-120-m4', title: 'Evidence', order: 4, content: ['Injury; intention/knowledge; purpose (demand for property, constraint).'] },
-    { id: 's-120-m5', title: 'Procedure', order: 5, content: ['May be joined with extortion/robbery; forum per BNSS Schedule.'] },
+  "study": "Introduction and meaning\nVoluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property. BNS restatement of IPC 330 / 331. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 330 / 331. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 120 is the rule on “Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property”. The section provides that (1) Whoever voluntarily causes hurt for the purpose of extorting from the sufferer or from any person interested in the sufferer, any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the sufferer or any person interested in the sufferer to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 120 exists so that “Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n120. (1) Whoever voluntarily causes hurt for the purpose of extorting from the sufferer or from any person interested in the sufferer, any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the sufferer or any person interested in the sufferer to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\n(2) Whoever voluntarily causes grievous hurt for any purpose referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nEssential ingredients\n1. (1) Whoever voluntarily causes hurt for the purpose of extorting from the sufferer or from any person interested in the sufferer, any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the sufferer or any person interested in the sufferer to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n2. (2) Whoever voluntarily causes grievous hurt for any purpose referred to in sub-section\n3. (1), shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nStatutory illustrations\nIllustration (a). A, a police officer, tortures Z in order to induce Z to confess that he committed a crime. A is guilty of an offence under this section\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 120 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (b). A, a police officer, tortures B to induce him to point out where certain stolen property is deposited. A is guilty of an offence under this section\n\nExam use: quote illustration (b), then write which ingredient of BNS s. 120 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (c). A, a revenue officer, tortures Z in order to compel him to pay certain arrears of revenue due from Z. A is guilty of an offence under this section\n\nExam use: quote illustration (c), then write which ingredient of BNS s. 120 it proves. Copying the illustration without that mapping sentence does not score.",
+  "glance": "BNS s. 120 — Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property.",
+  "sections": [
+    {
+      "id": "bns-120-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "120. (1) Whoever voluntarily causes hurt for the purpose of extorting from the sufferer or from any person interested in the sufferer, any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the sufferer or any person interested in the sufferer to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine",
+        "(2) Whoever voluntarily causes grievous hurt for any purpose referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-120-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Whoever voluntarily causes hurt for the purpose of extorting from the sufferer or from any person interested in the sufferer, any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the sufferer or any person interested in the sufferer to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine",
+        "(2) Whoever voluntarily causes grievous hurt for any purpose referred to in sub-section",
+        "(1), shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-120-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "(a) A, a police officer, tortures Z in order to induce Z to confess that he committed a crime. A is guilty of an offence under this section",
+        "(b) A, a police officer, tortures B to induce him to point out where certain stolen property is deposited. A is guilty of an offence under this section",
+        "(c) A, a revenue officer, tortures Z in order to compel him to pay certain arrears of revenue due from Z. A is guilty of an offence under this section"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-120', section: 's. 120', title: 'Voluntarily causing hurt/GH to extort property or constrain to illegal act' }],
-  examples: [
-    { id: 's-120-ex1', title: 'Hurt to extort', illustrationType: 'practical', description: 'A causes hurt to B in order to force B to hand over a phone. The enhanced hurt-to-extort section is attracted (and extortion/robbery may also apply).' },
-    { id: 's-120-ex2', title: 'Simple hurt only', illustrationType: 'fail-scenario', description: 'A causes hurt in a quarrel with no extortionary purpose. Base hurt section (s. 115) applies, not the extort/constrain enhancement.' },
+  "examples": [
+    {
+      "id": "bns-120-ex-1",
+      "title": "Illustration (a)",
+      "description": "A, a police officer, tortures Z in order to induce Z to confess that he committed a crime. A is guilty of an offence under this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 120 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-120-ex-2",
+      "title": "Illustration (b)",
+      "description": "A, a police officer, tortures B to induce him to point out where certain stolen property is deposited. A is guilty of an offence under this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 120 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-120-ex-3",
+      "title": "Illustration (c)",
+      "description": "A, a revenue officer, tortures Z in order to compel him to pay certain arrears of revenue due from Z. A is guilty of an offence under this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 120 — which fact proves which element, and what the legal result is."
+    }
   ],
-  hypotheticals: [{ id: 's-120-hypo', title: 'Hurt for extortion', facts: 'Accused beats the victim to compel payment of a claimed debt.', question: 'Enhanced section?', applicableLaw: 'BNS hurt-to-extort provisions; s. 308.', analysis: 'Hurt + purpose of extorting property — yes; also consider extortion.', conclusion: 'Enhanced section and possibly extortion attracted.' }],
-  distinctions: [],
-  misconceptions: [{ id: 's-120-trap', trap: 'Every hurt during a robbery is only robbery.', correction: 'Hurt caused to extort or constrain can attract this enhanced section in addition to (or in appropriate cases instead of framing only) robbery/extortion — plead the specific ingredients.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-120-brief', draftingCategory: 'brief', question: 'Explain hurt caused to extort or constrain under the BNS.', answer: 'Voluntarily causing hurt or grievous hurt for the purpose of extorting property or valuable security, or of constraining a person to do something illegal or to give information useful for an offence, is punished more severely than simple hurt/GH. Often overlaps with extortion and robbery on the facts.', explanation: 'Short note.' },
-    { id: 's-120-sub', draftingCategory: 'submissions', question: 'Submissions on hurt to extort.', answer: 'I. Hurt/GH caused. II. Extortionary or constraining purpose. III. Related extortion/robbery. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-120-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "(a) A, a police officer, tortures Z in order to induce Z to confess that he committed a crime. A is guilty of an offence under this section",
+      "question": "Whether BNS s. 120 (Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 120. Chapter VI — Of Offences Affecting the Human Body. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 120 (Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever voluntarily causes hurt for the purpose of extorting from the sufferer or from any person interested in the sufferer, any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the sufferer or any person interested in the sufferer to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n   (2) (2) Whoever voluntarily causes grievous hurt for any purpose referred to in sub-section\n   (3) (1), shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 120 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 120 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 120. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS hurt-to-extort provisions', 'BNS s. 115', 'BNS s. 117', 'BNS s. 308', 'BNS s. 309', 'IPC ss. 327/329 (historical)'],
-  examTips: ['Link to extortion and robbery when property is demanded under force.', 'State the purpose element clearly.'],
-  revisionPoints: ['Hurt/GH + purpose to extort or constrain = enhanced section.', 'Overlaps with extortion/robbery.', 'Purpose is the key extra ingredient.'],
-  relatedTopics: ['s-115', 's-117', 's-308', 's-309'],
+  "misconceptions": [
+    {
+      "id": "bns-120-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 120."
+    },
+    {
+      "id": "bns-120-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-120-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-120-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 120 (Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property)",
+      "answer": "Introduction. BNS s. 120 deals with Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property. BNS restatement of IPC 330 / 331. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 330 / 331. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 120 is the rule on “Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property”. The section provides that (1) Whoever voluntarily causes hurt for the purpose of extorting from the sufferer or from any person interested in the sufferer, any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the sufferer or any person interested in the sufferer to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever voluntarily causes hurt for the purpose of extorting from the sufferer or from any person interested in the sufferer, any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the sufferer or any person interested in the sufferer to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n2. (2) Whoever voluntarily causes grievous hurt for any purpose referred to in sub-section\n3. (1), shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A, a police officer, tortures Z in order to induce Z to confess that he committed a crime. A is guilty of an offence under this section\n\nLimitations. Apply only the conditions written in s. 120. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 120 is the complete current-law heading for Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-120-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 120 (Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 120 deals with Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property. BNS restatement of IPC 330 / 331. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 330 / 331. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 120 is the rule on “Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property”. The section provides that (1) Whoever voluntarily causes hurt for the purpose of extorting from the sufferer or from any person interested in the sufferer, any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the sufferer or any person interested in the sufferer to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever voluntarily causes hurt for the purpose of extorting from the sufferer or from any person interested in the sufferer, any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the sufferer or any person interested in the sufferer to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n2. (2) Whoever voluntarily causes grievous hurt for any purpose referred to in sub-section\n3. (1), shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A, a police officer, tortures Z in order to induce Z to confess that he committed a crime. A is guilty of an offence under this section\n\nLimitations. Apply only the conditions written in s. 120. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 120 is the complete current-law heading for Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second statutory illustration. Illustration (b): (b) A, a police officer, tortures B to induce him to point out where certain stolen property is deposited. A is guilty of an offence under this section Contrast it with illustration (a). The legal weight lies in the contrast.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 120. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 120.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 120 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 120 (Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property).",
+      "steps": [
+        "Introduce BNS s. 120 and Chapter VI — Of Offences Affecting the Human Body.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 120."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 120 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second statutory illustration and contrast it with the first.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 120, Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 120: Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property.",
+    "First ingredient: (1) Whoever voluntarily causes hurt for the purpose of extorting from the sufferer or from any person interested in the sufferer, any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the sufferer or any person interested in the sufferer to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine",
+    "3 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 120 — Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of property. Older books and judgments may still print a historical number (330 / 331). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

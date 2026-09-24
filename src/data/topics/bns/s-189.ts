@@ -1,32 +1,185 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 189: unlawful assembly — an assembly of five or more persons with a common object of the kinds listed (overawing government, resisting law, committing mischief/criminal trespass, compelling, etc.). Member of an unlawful assembly is punished. Successor to IPC s. 141/143. Rioting is when force/violence is used by an unlawful assembly (related sections).',
-  study: `Section 189 (and related provisions) define and punish unlawful assembly.\n\nUnlawful assembly: an assembly of five or more persons if the common object of the persons composing the assembly is one of the objects listed in the section (e.g. overawing the government by criminal force, resisting the execution of law/legal process, committing mischief or criminal trespass, compelling any person to do what he is not legally bound to do, etc.).\n\nMere presence is not enough; the person must share the common object (or join and continue knowing the object).\n\nWhen an unlawful assembly uses force or violence in prosecution of the common object, the offence becomes rioting (related section).\n\nCite BNS s. 189 for post-1 July 2024 unlawful-assembly cases. Distinguish from common intention (s. 3(5)) and conspiracy (s. 61).`,
-  sections: [
-    { id: 's-189-m1', title: 'Provenance', order: 1, content: ['Successor to IPC ss. 141/143. Five or more with a listed common object.'] },
-    { id: 's-189-m2', title: 'Common Objects', order: 2, content: ['Listed objects: overawing government; resisting law/process; mischief/criminal trespass; compelling; etc. as in the text.'] },
-    { id: 's-189-m3', title: 'Ingredients', order: 3, content: ['(1) Assembly of five or more. (2) Common object of a listed kind. (3) Membership (sharing or knowingly joining).'] },
-    { id: 's-189-m4', title: 'Evidence', order: 4, content: ['Number; object inferred from conduct, slogans, weapons, prior events; participation of the accused.'] },
-    { id: 's-189-m5', title: 'Procedure', order: 5, content: ['Often charged with rioting when force is used; forum per BNSS Schedule.'] },
+  "study": "Introduction and meaning\nUnlawful assembly (old 141/143): five or more persons with a common object of the listed kinds — overawing government, resisting law, committing mischief or criminal trespass, taking possession, compelling a person by force.\nIn student language: BNS s. 189 is the rule on “Unlawful assembly”. The section provides that (1) An assembly of five or more persons is designated an “unlawful assembly”, if the common object of the persons composing that assembly is—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 189 exists so that “Unlawful assembly” has a closed legal test in Chapter XI — Of Offences Against the Public Tranquillity. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Unlawful assembly, common object, rioting, affray, and promoting enmity.\n\nThe provision in detail\n189. (1) An assembly of five or more persons is designated an “unlawful assembly”, if the common object of the persons composing that assembly is—\n\n(a) to overawe by criminal force, or show of criminal force, the Central Government or any State Government or Parliament or the Legislature of any State, or any public servant in the exercise of the lawful power of such public servant; or\n\n(b) to resist the execution of any law, or of any legal process; or\n\n(c) to commit any mischief or criminal trespass, or other offence; or\n\n(d) by means of criminal force, or show of criminal force, to any person, to take or obtain possession of any property, or to deprive any person of the enjoyment of a right of way, or of the use of water or other incorporeal right of which he is in possession or enjoyment, or to enforce any right or supposed right; or\n\n(e) by means of criminal force, or show of criminal force, to compel any person to do what he is not legally bound to do, or to omit to do what he is legally entitled to do\n\nEssential ingredients\n1. (1) An assembly of five or more persons is designated an “unlawful assembly”, if the common object of the persons composing that assembly is—\n2. (a) to overawe by criminal force, or show of criminal force, the Central Government or any State Government or Parliament or the Legislature of any State, or any public servant in the exercise of the lawful power of such public servant; or\n3. (b) to resist the execution of any law, or of any legal process; or\n4. (c) to commit any mischief or criminal trespass, or other offence; or\n5. (d) by means of criminal force, or show of criminal force, to any person, to take or obtain possession of any property, or to deprive any person of the enjoyment of a right of way, or of the use of water or other incorporeal right of which he is in possession or enjoyment, or to enforce any right or supposed right; or\n6. (e) by means of criminal force, or show of criminal force, to compel any person to do what he is not legally bound to do, or to omit to do what he is legally entitled to do\n\nExplanations\nExplanation.—An assembly which was not unlawful when it assembled, may subsequently become an unlawful assembly\n\n(2) Whoever, being aware of facts which render any assembly an unlawful assembly, intentionally joins that assembly, or continues in it, is said to be a member of an unlawful assembly and such member shall be punished with imprisonment of either description for a term which may extend to six months, or with fine, or with both\n\n(3) Whoever joins or continues in an unlawful assembly, knowing that such unlawful assembly has been commanded in the manner prescribed by law to disperse, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both\n\n(4) Whoever, being armed with any deadly weapon, or with anything which, used as a weapon of offence, is likely to cause death, is a member of an unlawful assembly, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both\n\n(5) Whoever knowingly joins or continues in any assembly of five or more persons likely to cause a disturbance of the public peace, after such assembly has been lawfully commanded to disperse, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine, or with both\n\nExplanation.—If the assembly is an unlawful assembly within the meaning of sub-section (1), the offender shall be punishable under sub-section (3)\n\n(6) Whoever hires or engages, or employs, or promotes, or connives at the hiring, engagement or employment of any person to join or become a member of any unlawful assembly, shall be punishable as a member of such unlawful assembly, and for any offence which may be committed by any such person as a member of such unlawful assembly in pursuance of such hiring, engagement or employment, in the same manner as if he had been a member of such unlawful assembly, or himself had committed such offence\n\n(7) Whoever harbours, receives or assembles, in any house or premises in his occupation or charge, or under his control any persons knowing that such persons have been hired, engaged or employed, or are about to be hired, engaged or employed, to join or become members of an unlawful assembly, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine, or with both\n\n(8) Whoever is engaged, or hired, or offers or attempts to be hired or engaged, to do or assist in doing any of the acts specified in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to six months, or with fine, or with both\n\n(9) Whoever, being so engaged or hired as referred to in sub-section (8), goes armed, or engages or offers to go armed, with any deadly weapon or with anything which used as a weapon of offence is likely to cause death, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both",
+  "glance": "BNS s. 189 — Unlawful assembly.",
+  "sections": [
+    {
+      "id": "bns-189-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "189. (1) An assembly of five or more persons is designated an “unlawful assembly”, if the common object of the persons composing that assembly is—",
+        "(a) to overawe by criminal force, or show of criminal force, the Central Government or any State Government or Parliament or the Legislature of any State, or any public servant in the exercise of the lawful power of such public servant; or",
+        "(b) to resist the execution of any law, or of any legal process; or",
+        "(c) to commit any mischief or criminal trespass, or other offence; or",
+        "(d) by means of criminal force, or show of criminal force, to any person, to take or obtain possession of any property, or to deprive any person of the enjoyment of a right of way, or of the use of water or other incorporeal right of which he is in possession or enjoyment, or to enforce any right or supposed right; or",
+        "(e) by means of criminal force, or show of criminal force, to compel any person to do what he is not legally bound to do, or to omit to do what he is legally entitled to do"
+      ]
+    },
+    {
+      "id": "bns-189-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) An assembly of five or more persons is designated an “unlawful assembly”, if the common object of the persons composing that assembly is—",
+        "(a) to overawe by criminal force, or show of criminal force, the Central Government or any State Government or Parliament or the Legislature of any State, or any public servant in the exercise of the lawful power of such public servant; or",
+        "(b) to resist the execution of any law, or of any legal process; or",
+        "(c) to commit any mischief or criminal trespass, or other offence; or",
+        "(d) by means of criminal force, or show of criminal force, to any person, to take or obtain possession of any property, or to deprive any person of the enjoyment of a right of way, or of the use of water or other incorporeal right of which he is in possession or enjoyment, or to enforce any right or supposed right; or",
+        "(e) by means of criminal force, or show of criminal force, to compel any person to do what he is not legally bound to do, or to omit to do what he is legally entitled to do"
+      ]
+    },
+    {
+      "id": "bns-189-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation.—An assembly which was not unlawful when it assembled, may subsequently become an unlawful assembly",
+        "(2) Whoever, being aware of facts which render any assembly an unlawful assembly, intentionally joins that assembly, or continues in it, is said to be a member of an unlawful assembly and such member shall be punished with imprisonment of either description for a term which may extend to six months, or with fine, or with both",
+        "(3) Whoever joins or continues in an unlawful assembly, knowing that such unlawful assembly has been commanded in the manner prescribed by law to disperse, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both",
+        "(4) Whoever, being armed with any deadly weapon, or with anything which, used as a weapon of offence, is likely to cause death, is a member of an unlawful assembly, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both",
+        "(5) Whoever knowingly joins or continues in any assembly of five or more persons likely to cause a disturbance of the public peace, after such assembly has been lawfully commanded to disperse, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine, or with both",
+        "Explanation.—If the assembly is an unlawful assembly within the meaning of sub-section (1), the offender shall be punishable under sub-section (3)",
+        "(6) Whoever hires or engages, or employs, or promotes, or connives at the hiring, engagement or employment of any person to join or become a member of any unlawful assembly, shall be punishable as a member of such unlawful assembly, and for any offence which may be committed by any such person as a member of such unlawful assembly in pursuance of such hiring, engagement or employment, in the same manner as if he had been a member of such unlawful assembly, or himself had committed such offence",
+        "(7) Whoever harbours, receives or assembles, in any house or premises in his occupation or charge, or under his control any persons knowing that such persons have been hired, engaged or employed, or are about to be hired, engaged or employed, to join or become members of an unlawful assembly, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine, or with both",
+        "(8) Whoever is engaged, or hired, or offers or attempts to be hired or engaged, to do or assist in doing any of the acts specified in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to six months, or with fine, or with both",
+        "(9) Whoever, being so engaged or hired as referred to in sub-section (8), goes armed, or engages or offers to go armed, with any deadly weapon or with anything which used as a weapon of offence is likely to cause death, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-189', section: 's. 189', title: 'Unlawful assembly' }],
-  examples: [
-    { id: 's-189-ex1', title: 'Five with common object', illustrationType: 'practical', description: 'Five persons assemble to forcibly obstruct a lawful process. Unlawful assembly is made out.' },
-    { id: 's-189-ex2', title: 'Four persons only', illustrationType: 'fail-scenario', description: 'Four persons with a common object do not constitute an unlawful assembly (minimum five).' },
+  "examples": [
+    {
+      "id": "bns-189-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Unlawful assembly”. Name BNS s. 189, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-189-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 189 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-189-hypo', title: 'Membership', facts: 'Accused joins a crowd of six that is already attacking property; he knows the object and continues.', question: 'Is he a member of an unlawful assembly?', applicableLaw: 'BNS s. 189.', analysis: 'If he shares or knowingly joins and continues with the common object — yes.', conclusion: 'Membership established.' }],
-  distinctions: [{ id: 's-189-dist', title: 'Unlawful assembly vs Rioting vs Common intention', left: 'Unlawful assembly (s. 189)', right: 'Rioting / s. 3(5)', rows: [{ point: 'Focus', left: 'Five or more with listed common object', right: 'Force/violence by UA; or joint liability for a criminal act' }] }],
-  misconceptions: [{ id: 's-189-trap', trap: 'Any crowd of five is an unlawful assembly.', correction: 'The common object must be one of the objects listed in the section. A peaceful gathering of five is not an unlawful assembly.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-189-brief', draftingCategory: 'brief', question: 'Define unlawful assembly under BNS s. 189.', answer: 'An assembly of five or more persons with a common object of one of the kinds listed in the section (overawing government, resisting law, mischief/criminal trespass, compelling, etc.). Membership requires sharing or knowingly joining that object.', explanation: 'Short note.' },
-    { id: 's-189-sub', draftingCategory: 'submissions', question: 'Submissions on unlawful assembly.', answer: 'I. Five or more. II. Listed common object. III. Membership of the accused. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-189-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Unlawful assembly” under BNS s. 189 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 189 (Unlawful assembly) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 189. Chapter XI — Of Offences Against the Public Tranquillity. Connected: BNS s. 190, BNS s. 191.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 189 (Unlawful assembly), Chapter XI — Of Offences Against the Public Tranquillity.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) An assembly of five or more persons is designated an “unlawful assembly”, if the common object of the persons composing that assembly is—\n   (2) (a) to overawe by criminal force, or show of criminal force, the Central Government or any State Government or Parliament or the Legislature of any State, or any public servant in the exercise of the lawful power of such public servant; or\n   (3) (b) to resist the execution of any law, or of any legal process; or\n   (4) (c) to commit any mischief or criminal trespass, or other offence; or\n   (5) (d) by means of criminal force, or show of criminal force, to any person, to take or obtain possession of any property, or to deprive any person of the enjoyment of a right of way, or of the use of water or other incorporeal right of which he is in possession or enjoyment, or to enforce any right or supposed right; or\n   (6) (e) by means of criminal force, or show of criminal force, to compel any person to do what he is not legally bound to do, or to omit to do what he is legally entitled to do\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 189 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 189. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS s. 189', 'BNS rioting provisions', 'BNS s. 3(5)', 'IPC ss. 141–143 (historical)'],
-  examTips: ['State the minimum of five and the need for a listed common object.', 'Distinguish from rioting (force/violence).'],
-  revisionPoints: ['Five or more + listed common object = unlawful assembly.', 'Rioting = UA + force/violence.', 'Mere presence ≠ membership.'],
-  relatedTopics: ['s-3', 's-61', 's-103'],
+  "distinctions": [
+    {
+      "id": "bns-189-dist",
+      "title": "BNS s. 189 and connected sections",
+      "left": "BNS s. 189",
+      "right": "BNS s. 190, BNS s. 191",
+      "rows": [
+        {
+          "point": "Heading",
+          "left": "Unlawful assembly",
+          "right": "Read the neighbour’s title on its own page before you write."
+        },
+        {
+          "point": "What you must prove",
+          "left": "(1) An assembly of five or more persons is designated an “unlawful assembly”, if the common object of the persons composing that assembly is—",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+        },
+        {
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 189.",
+          "right": "Citing s. 189 where the neighbour actually applies."
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-189-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 189."
+    },
+    {
+      "id": "bns-189-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-189-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-189-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 189 (Unlawful assembly)",
+      "answer": "Introduction. BNS s. 189 deals with Unlawful assembly. It sits in Chapter XI — Of Offences Against the Public Tranquillity of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Unlawful assembly (old 141/143): five or more persons with a common object of the listed kinds — overawing government, resisting law, committing mischief or criminal trespass, taking possession, compelling a person by force.\n\nLegal rule. In student language: BNS s. 189 is the rule on “Unlawful assembly”. The section provides that (1) An assembly of five or more persons is designated an “unlawful assembly”, if the common object of the persons composing that assembly is—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) An assembly of five or more persons is designated an “unlawful assembly”, if the common object of the persons composing that assembly is—\n2. (a) to overawe by criminal force, or show of criminal force, the Central Government or any State Government or Parliament or the Legislature of any State, or any public servant in the exercise of the lawful power of such public servant; or\n3. (b) to resist the execution of any law, or of any legal process; or\n4. (c) to commit any mischief or criminal trespass, or other offence; or\n5. (d) by means of criminal force, or show of criminal force, to any person, to take or obtain possession of any property, or to deprive any person of the enjoyment of a right of way, or of the use of water or other incorporeal right of which he is in possession or enjoyment, or to enforce any right or supposed right; or\n6. (e) by means of criminal force, or show of criminal force, to compel any person to do what he is not legally bound to do, or to omit to do what he is legally entitled to do\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—An assembly which was not unlawful when it assembled, may subsequently become an unlawful assembly An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 189. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 190, BNS s. 191. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 189 is the complete current-law heading for Unlawful assembly. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-189-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 189 (Unlawful assembly) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 189 deals with Unlawful assembly. It sits in Chapter XI — Of Offences Against the Public Tranquillity of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Unlawful assembly (old 141/143): five or more persons with a common object of the listed kinds — overawing government, resisting law, committing mischief or criminal trespass, taking possession, compelling a person by force.\n\nLegal rule. In student language: BNS s. 189 is the rule on “Unlawful assembly”. The section provides that (1) An assembly of five or more persons is designated an “unlawful assembly”, if the common object of the persons composing that assembly is—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) An assembly of five or more persons is designated an “unlawful assembly”, if the common object of the persons composing that assembly is—\n2. (a) to overawe by criminal force, or show of criminal force, the Central Government or any State Government or Parliament or the Legislature of any State, or any public servant in the exercise of the lawful power of such public servant; or\n3. (b) to resist the execution of any law, or of any legal process; or\n4. (c) to commit any mischief or criminal trespass, or other offence; or\n5. (d) by means of criminal force, or show of criminal force, to any person, to take or obtain possession of any property, or to deprive any person of the enjoyment of a right of way, or of the use of water or other incorporeal right of which he is in possession or enjoyment, or to enforce any right or supposed right; or\n6. (e) by means of criminal force, or show of criminal force, to compel any person to do what he is not legally bound to do, or to omit to do what he is legally entitled to do\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—An assembly which was not unlawful when it assembled, may subsequently become an unlawful assembly An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 189. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 190, BNS s. 191. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 189 is the complete current-law heading for Unlawful assembly. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Unlawful assembly, common object, rioting, affray, and promoting enmity.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 189 with BNS s. 190, BNS s. 191. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 189.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 189 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "5 persons = assembly. Common intention can be 2. Do not swap 189 and 3(5)."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 189 (Unlawful assembly).",
+      "steps": [
+        "Introduce BNS s. 189 and Chapter XI — Of Offences Against the Public Tranquillity.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 189."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 189 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Distinguish BNS s. 189 from BNS s. 190, BNS s. 191.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 189, Unlawful assembly.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 189: Unlawful assembly.",
+    "First ingredient: (1) An assembly of five or more persons is designated an “unlawful assembly”, if the common object of the persons composing that assembly is—",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 189 — Unlawful assembly. Older books and judgments may still print a historical number (141 / 143). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": [
+    "s-190",
+    "s-191"
+  ]
 }
 
 export default content

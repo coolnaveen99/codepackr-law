@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Capacity concerns who may sue or be sued and how legal disabilities affect proceedings. Indian State liability operates through Article 300 for private-law claims and through distinct constitutional remedies for certain fundamental-rights violations.",
   "study": "Capacity concerns who may sue or be sued and how legal disabilities affect proceedings. Indian State liability operates through Article 300 for private-law claims and through distinct constitutional remedies for certain fundamental-rights violations.\\n\\nArticle 300 supplies the constitutional basis for suits by and against the Union and States. P&O Steam Navigation and Kasturi Lal form the historical sovereign-immunity line. Later cases such as Nilabati Behera developed public-law compensation for egregious constitutional wrongs, especially Article 21 violations.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

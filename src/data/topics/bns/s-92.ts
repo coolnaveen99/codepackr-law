@@ -1,25 +1,139 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'BNS Section 92: Causing death of quick unborn child by act amounting to culpable homicide. This note explains its statutory scope within the Miscarriage and birth cluster and the connected BNS, BNSS and BSA issues that must be checked before application.',
-  study: `Section 92 — Causing death of quick unborn child by act amounting to culpable homicide.\n\nCausing death of quick unborn child by act amounting to culpable homicide. BNS restatement of IPC 316. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. Historical IPC concordance: 316.\n\nRead the enacted text with its definitions, explanations, provisos and exceptions. For pre-1 July 2024 conduct, separately apply the repeal-and-savings framework and Article 20(1).`,
-  sections:[
-    {id:'s-92-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:['Chapter v; cluster: Miscarriage and birth.','Causing death of quick unborn child by act amounting to culpable homicide. BNS restatement of IPC 316. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024.','Historical IPC concordance: 316.]},
-    {id:'s-92-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:['Operative title: “Causing death of quick unborn child by act amounting to culpable homicide”.','Read every sub-section, proviso, explanation and exception in the enacted text.','Identify the connected punishment provision before advising on sentence.]},
-    {id:'s-92-m3',title:'Application Ingredients & Issue-Spotting',order:3,content:['Identify the protected legal interest or statutory situation addressed by the provision.','Map each material fact to the enacted words of s. 92.','Check connected definitions, exceptions and adjacent provisions before concluding that the section is attracted.']},
-    {id:'s-92-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:['The prosecution ordinarily bears the burden of proving a criminal charge beyond reasonable doubt, subject to any applicable statutory presumption.','Identify the fact each side must establish and distinguish admissibility from evidentiary weight under the BSA 2023.','Electronic material must satisfy the applicable BSA requirements; digital availability alone does not establish authenticity or weight.']},
-    {id:'s-92-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:['Check the BNSS First Schedule and connected offence/punishment provision for cognizability, bailability and trial court.','Check territorial jurisdiction, charge/joinder issues and any sanction or statutory permission requirement.','Verify BNSS limitation provisions, if applicable.','For pre-1 July 2024 conduct, separately analyze the BNS savings provision and Article 20(1).']},
+  "study": "Introduction and meaning\nCausing death of quick unborn child by act amounting to culpable homicide. BNS restatement of IPC 316. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 316. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 92 is the rule on “Causing death of quick unborn child by act amounting to culpable homicide”. The section provides that whoever does any act under such circumstances, that if he thereby caused death he would be guilty of culpable homicide, and does by such act cause the death of a quick unborn child, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 92 exists so that “Causing death of quick unborn child by act amounting to culpable homicide” has a closed legal test in Chapter V — Of Offences Against Woman and Child. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.\n\nThe provision in detail\n92. Whoever does any act under such circumstances, that if he thereby caused death he would be guilty of culpable homicide, and does by such act cause the death of a quick unborn child, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nEssential ingredients\n1. Whoever does any act under such circumstances, that if he thereby caused death he would be guilty of culpable homicide, and does by such act cause the death of a quick unborn child, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nStatutory illustrations\nIllustration (a). A, knowing that he is likely to cause the death of a pregnant woman, does an act which, if it caused the death of the woman, would amount to culpable homicide. The woman is injured, but does not die; but the death of an unborn quick child with which she is pregnant is thereby caused. A is guilty of the offence defined in this section\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 92 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (b). Of offences against child\n\nExam use: quote illustration (b), then write which ingredient of BNS s. 92 it proves. Copying the illustration without that mapping sentence does not score.",
+  "glance": "BNS s. 92 — Causing death of quick unborn child by act amounting to culpable homicide.",
+  "sections": [
+    {
+      "id": "bns-92-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "92. Whoever does any act under such circumstances, that if he thereby caused death he would be guilty of culpable homicide, and does by such act cause the death of a quick unborn child, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-92-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever does any act under such circumstances, that if he thereby caused death he would be guilty of culpable homicide, and does by such act cause the death of a quick unborn child, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-92-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "A, knowing that he is likely to cause the death of a pregnant woman, does an act which, if it caused the death of the woman, would amount to culpable homicide. The woman is injured, but does not die; but the death of an unborn quick child with which she is pregnant is thereby caused. A is guilty of the offence defined in this section",
+        "Of offences against child"
+      ]
+    }
   ],
-  provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-92',section:'s. 92',title:'Causing death of quick unborn child by act amounting to culpable homicide'}],
-  examples:[{id:'s-92-ex1',title:'Provision applies — statutory conditions satisfied',illustrationType:'practical',description:'The alleged conduct or circumstance falls within the statutory subject of s. 92 and the connected conditions are proved.'},{id:'s-92-ex2',title:'Boundary defect — an ingredient is missing',illustrationType:'fail-scenario',description:'The facts resemble the section, but a required condition, exception, qualification or causal link is not established.'}],
-  hypotheticals:[{id:'s-92-hypo',title:'Chamber problem — BNS s. 92',facts:'The prosecution invokes s. 92 on facts within the Miscarriage and birth cluster. The defence disputes the statutory fit.',question:'Do the proved facts satisfy s. 92?',applicableLaw:'BNS s. 92; connected BNS provisions; applicable BNSS procedure; BSA 2023 evidence rules.',analysis:'1. Identify the exact statutory words. 2. Break them into conditions. 3. Test each condition against the evidence. 4. Apply exceptions or provisos. 5. Identify the correct procedural and punishment consequence.',conclusion:'Application turns on the enacted ingredients of s. 92, not on the historical IPC number alone.'}],
-  distinctions:[{id:'s-92-dist',title:'BNS provision vs historical IPC concordance',left:'BNS s. 92',right:'Historical IPC: 316',rows:[{point:'Governing law',left:'BNS for post-commencement offences',right:'IPC is historical where saved or relevant'},{point:'Method',left:'Start with enacted BNS wording',right:'Use historical IPC only to understand continuity/change'},{point:'Transition',left:'Check commencement and savings',right:'Pre-commencement offences may remain governed by saved IPC law'}]}],
-  misconceptions:[{id:'s-92-trap',trap:'The IPC number can automatically be substituted for BNS s. 92.',correction:'The enacted BNS text controls post-commencement offences; historical concordance is not a substitute for reading the BNS provision.'},{id:'s-92-trap-2',trap:'The section heading alone proves liability.',correction:'All statutory ingredients and relevant exceptions must be established on the evidence.'}],
-  cases:[],
-  questionsAndAnswers:[{id:'s-92-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment of BNS s. 92.',answer:`I. ISSUE — precise statutory question.\nII. RULE — enacted ingredients, connected provisions and exceptions.\nIII. APPLICATION — map evidence to each condition.\nIV. CONCLUSION — whether s. 92 is attracted and the connected consequence.`,explanation:'Chamber-style structured analysis.'},{id:'s-92-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 92.',answer:`I. STATUTORY SCHEME.\nII. INGREDIENTS.\nIII. EVIDENCE AND BURDEN.\nIV. RESPONSE TO EXCEPTIONS AND DEFENCES.\nV. PROCEDURE AND OPERATIVE RELIEF.`,explanation:'Courtroom submission structure without unverified authorities.'}],
-  bareActPointers:['BNS s. 92 — Causing death of quick unborn child by act amounting to culpable homicide','Connected BNS definitions/exceptions','BNSS First Schedule and applicable procedure','BSA 2023 burden and evidence provisions','BNS repeal-and-savings framework for pre-1 July 2024 conduct'],
-  examTips:['Start with the enacted BNS wording.','Check connected definitions, exceptions, procedure and punishment.','Use IPC numbering only as historical concordance.'],
-  revisionPoints:['s. 92: Causing death of quick unborn child by act amounting to culpable homicide.','Cluster: Miscarriage and birth.','IPC concordance: 316.','Verify BNSS procedure and BSA evidence requirements.'],
-  relatedTopics:[],
+  "examples": [
+    {
+      "id": "bns-92-ex-1",
+      "title": "Illustration (a)",
+      "description": "A, knowing that he is likely to cause the death of a pregnant woman, does an act which, if it caused the death of the woman, would amount to culpable homicide. The woman is injured, but does not die; but the death of an unborn quick child with which she is pregnant is thereby caused. A is guilty of the offence defined in this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 92 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-92-ex-2",
+      "title": "Illustration (b)",
+      "description": "Of offences against child\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 92 — which fact proves which element, and what the legal result is."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-92-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "A, knowing that he is likely to cause the death of a pregnant woman, does an act which, if it caused the death of the woman, would amount to culpable homicide. The woman is injured, but does not die; but the death of an unborn quick child with which she is pregnant is thereby caused. A is guilty of the offence defined in this section",
+      "question": "Whether BNS s. 92 (Causing death of quick unborn child by act amounting to culpable homicide) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 92. Chapter V — Of Offences Against Woman and Child. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 92 (Causing death of quick unborn child by act amounting to culpable homicide), Chapter V — Of Offences Against Woman and Child.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever does any act under such circumstances, that if he thereby caused death he would be guilty of culpable homicide, and does by such act cause the death of a quick unborn child, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 92 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 92 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 92. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-92-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 92."
+    },
+    {
+      "id": "bns-92-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-92-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-92-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 92 (Causing death of quick unborn child by act amounting to culpable homicide)",
+      "answer": "Introduction. BNS s. 92 deals with Causing death of quick unborn child by act amounting to culpable homicide. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Causing death of quick unborn child by act amounting to culpable homicide. BNS restatement of IPC 316. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 316. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 92 is the rule on “Causing death of quick unborn child by act amounting to culpable homicide”. The section provides that whoever does any act under such circumstances, that if he thereby caused death he would be guilty of culpable homicide, and does by such act cause the death of a quick unborn child, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever does any act under such circumstances, that if he thereby caused death he would be guilty of culpable homicide, and does by such act cause the death of a quick unborn child, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): A, knowing that he is likely to cause the death of a pregnant woman, does an act which, if it caused the death of the woman, would amount to culpable homicide. The woman is injured, but does not die; but the death of an unborn quick child with which she is pregnant is thereby caused. A is guilty of the offence defined in this section\n\nLimitations. Apply only the conditions written in s. 92. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 92 is the complete current-law heading for Causing death of quick unborn child by act amounting to culpable homicide. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-92-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 92 (Causing death of quick unborn child by act amounting to culpable homicide) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 92 deals with Causing death of quick unborn child by act amounting to culpable homicide. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Causing death of quick unborn child by act amounting to culpable homicide. BNS restatement of IPC 316. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 316. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 92 is the rule on “Causing death of quick unborn child by act amounting to culpable homicide”. The section provides that whoever does any act under such circumstances, that if he thereby caused death he would be guilty of culpable homicide, and does by such act cause the death of a quick unborn child, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever does any act under such circumstances, that if he thereby caused death he would be guilty of culpable homicide, and does by such act cause the death of a quick unborn child, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): A, knowing that he is likely to cause the death of a pregnant woman, does an act which, if it caused the death of the woman, would amount to culpable homicide. The woman is injured, but does not die; but the death of an unborn quick child with which she is pregnant is thereby caused. A is guilty of the offence defined in this section\n\nLimitations. Apply only the conditions written in s. 92. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 92 is the complete current-law heading for Causing death of quick unborn child by act amounting to culpable homicide. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second statutory illustration. Illustration (b): Of offences against child Contrast it with illustration (a). The legal weight lies in the contrast.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 92. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 92.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 92 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 92 (Causing death of quick unborn child by act amounting to culpable homicide).",
+      "steps": [
+        "Introduce BNS s. 92 and Chapter V — Of Offences Against Woman and Child.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 92."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 92 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second statutory illustration and contrast it with the first.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 92, Causing death of quick unborn child by act amounting to culpable homicide.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 92: Causing death of quick unborn child by act amounting to culpable homicide.",
+    "First ingredient: Whoever does any act under such circumstances, that if he thereby caused death he would be guilty of culpable homicide, and does by such act cause the death of a quick unborn child, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine",
+    "2 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 92 — Causing death of quick unborn child by act amounting to culpable homicide. Older books and judgments may still print a historical number (316). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
+
 export default content

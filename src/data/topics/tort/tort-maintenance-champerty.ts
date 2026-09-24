@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Maintenance historically concerns officious intermeddling in another's litigation; champerty is maintenance coupled with an agreement for a share of the proceeds. Indian law does not treat every champertous agreement as automatically void.",
   "study": "Maintenance historically concerns officious intermeddling in another's litigation; champerty is maintenance coupled with an agreement for a share of the proceeds. Indian law does not treat every champertous agreement as automatically void.\\n\\nRam Coomar Coondoo v Chunder Canto Mookerjee established that English rules of maintenance and champerty were not adopted as automatic prohibitions in India. Rattan Chand Hira Chand v Askar Nawaz Jung later confirmed that such agreements are not per se void, while public policy and unconscionability remain relevant.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

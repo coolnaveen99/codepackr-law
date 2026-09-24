@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Sale of Goods Act ss. 31–61 — Performance, Unpaid Seller and Remedies is a Senior Counsel-level treatment of SOGA ss. 31–61 under the Sale of Goods Act, 1930. It connects statutory text, doctrine, authority, proof, procedure and remedies without marks-based formatting.",
   "sections": [
     {
@@ -131,4 +133,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Forum and limitation checkpoints",
     "Verified authority and ratio"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

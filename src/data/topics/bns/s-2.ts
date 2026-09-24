@@ -1,223 +1,318 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance:
-    'Section 2 is the dictionary of the Bharatiya Nyaya Sanhita. Key high-yield terms: “child” = any person below 18; “document” includes electronic and digital records; “dishonestly”, “fraudulently”, “voluntarily”, “public servant”, “valuable security”, “counterfeit”. All later offence sections are read through these definitions unless the context otherwise requires.',
-
-  study: `Topic at a glance
-Section 2 consolidates the scattered definitional clauses that lived across IPC sections 6–52 into a single dictionary. Every subsequent section of the Sanhita is construed “unless the context otherwise requires” by reference to these definitions.
-
-Highest-yield definitions
-• (3) “child” — any person below the age of eighteen years. This single age cut replaces the older, gender-differentiated ages in kidnapping and related IPC provisions and is central to Chapter V (offences against woman and child).
-• (8) “document” — any matter expressed or described upon any substance by letters, figures or marks, and expressly includes electronic and digital record intended to be used, or which may be used, as evidence. Explanation 1 makes the medium immaterial; Explanation 2 covers mercantile usage. This is the bridge to electronic evidence under the BSA and the IT Act.
-• (7) “dishonestly” — doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person. The mental element of theft, cheating, criminal breach of trust and many property offences turns on this definition.
-• (16) “fraudulently” — doing anything with intent to defraud but not otherwise. Distinct from “dishonestly”; both often appear together in the same section.
-• (28) “public servant” — an exhaustive multi-clause definition covering judges, officers of court, government servants, local-authority and government-company employees, election officers, etc. Explanation clauses extend it to persons in actual possession of the situation and define “election”.
-• (33) “voluntarily” — causing an effect by means whereby the person intended to cause it, or by means which he knew or had reason to believe to be likely to cause it. Central to the mental element of many offences against the body.
-• (4) “counterfeit” — causing one thing to resemble another with intention or knowledge of likely deception; exact imitation is not required; a presumption of intention arises from a deceptive resemblance.
-• (31) “valuable security” — a document that creates, extends, transfers, restricts, extinguishes or releases a legal right, or acknowledges a legal liability.
-
-Other important terms
-act, animal, Court, death, good faith, injury, illegal / legally bound to do, man / woman / gender, movable property, offence, omission, person, reason to believe, special law, vessel, wrongful gain / wrongful loss, year / month, section, oath, Government, India, Judge, life, local law, and the residual clauses.
-
-Reading rule
-The opening words “unless the context otherwise requires” mean that a specific section can override or refine a general definition. Always check the charged section first, then fall back to s. 2.
-
-Relationship with BSA and IT Act
-“Document” and electronic/digital record feed directly into the admissibility regime under the Bharatiya Sakshya Adhiniyam, 2023 (especially s. 63 certificates). “Computer resource” itself is not defined in s. 2; for s. 1(5)(c) it takes its meaning from the IT Act.
-
-Educational note
-In any answer involving a property offence, sexual offence against a minor, or electronic record, open with the relevant s. 2 definition before stating the ingredients of the substantive section.`,
-
-  sections: [
+  "study": "Introduction and meaning\nSection 2 is the dictionary. IPC definitions that were scattered across ss. 6–52 now sit here. The headline addition: “child” means any person below eighteen years.\nIn student language: BNS s. 2 is the rule on “Definitions”. The section provides that in this Sanhita, unless the context otherwise requires, ––. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 2 exists so that “Definitions” has a closed legal test in Chapter I — Preliminary. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Name, commencement, extra-territorial reach, the dictionary, and how the Sanhita is read — including common intention in s. 3(5).\n\nThe provision in detail\n2. In this Sanhita, unless the context otherwise requires, ––\n\n(1) “act” denotes as well a series of acts as a single act;\n\n(2) “animal” means any living creature, other than a human being;\n\n(3) “child” means any person below the age of eighteen years;\n\n(4) “counterfeit”.–A person is said to “counterfeit” who causes one thing to resemble another thing, intending by means of that resemblance to practise deception, or knowing it to be likely that deception will thereby be practised\n\n(9) “fraudulently” means doing anything with the intention to defraud but not otherwise;\n\n(10) “gender”. —The pronoun “he” and its derivatives are used of any person, whether male, female or transgender\n\n(17) “life” means the life of a human being, unless the contrary appears from the context;\n\n(18) “local law” means a law applicable only to a particular part of India;\n\n(19) “man” means male human being of any age;\n\n(20) “month” and “year”.–Wherever the word “month” or the word “year” is used, it is to be understood that the month or the year is to be reckoned according to the Gregorian calendar;\n\n(21) “movable property” includes property of every description, except land and things attached to the earth or permanently fastened to anything which is attached to the earth;\n\n(22) “number”.—Unless the contrary appears from the context, words importing the singular number include the plural number, and words importing the plural number include the singular number;\n\n(23) “oath” includes a solemn affirmation substituted by law for an oath, and any declaration required or authorised by law to be made before a public servant or to be used for the purpose of proof, whether in a Court or not;\n\n(24) “offence”.—Except in the Chapters and sections mentioned in sub-clauses (a) and (b), the word “offence” means a thing made punishable by this Sanhita, but––\n\n(a) in Chapter III and in the following sections, namely, sub-sections (2), (3), (4) and (5) of section 8, sections 9, 49, 50, 52, 54, 55, 56, 57, 58, 59, 60, 61, 119, 120, 123, sub-sections (7) and (8) of section 127, 222, 230, 231, 240, 248, 250, 251, 259, 260, 261, 262, 263, sub-sections (6) and (7) of section 308 and sub-section (2) of section 330, the word “offence” means a thing punishable under this Sanhita, or under any special law or local law; and\n\n(b) in sub-section (1) of section 189, sections 211, 212, 238, 239, 249, 253 and sub-section (1) of section 329, the word “offence” shall have the same meaning when the act punishable under the special law or local law is punishable under such law with imprisonment for a term of six months or more, whether with or without fine;\n\n(25) “omission” denotes as well as a series of omissions as a single omission;\n\n(26) “person” includes any company or association or body of persons, whether incorporated or not;\n\n(27) “public” includes any class of the public or any community;\n\n(28) “public servant” means a person falling under any of the descriptions, namely:—\n\n(a) every commissioned officer in the Army, Navy or Air Force;\n\n(b) every Judge including any person empowered by law to discharge, whether by himself or as a member of any body of persons, any adjudicatory functions;\n\n(c) every officer of a Court including a liquidator, receiver or commissioner whose duty it is, as such officer, to investigate or report on any matter of law or fact, or to make, authenticate, or keep any document, or to take charge or dispose of any property, or to execute any judicial process, or to administer any oath, or to interpret, or to preserve order in the Court, and every person specially authorised by a Court to perform any of such duties;\n\n(d) every assessor or member of a panchayat assisting a Court or public servant;\n\n(e) every arbitrator or other person to whom any cause or matter has been referred for decision or report by any Court, or by any other competent public authority;\n\n(f) every person who holds any office by virtue of which he is empowered to place or keep any person in confinement;\n\n(g) every officer of the Government whose duty it is, as such officer, to prevent offences, to give information of offences, to bring offenders to justice, or to protect the public health, safety or convenience;\n\n(h) every officer whose duty it is, as such officer, to take, receive, keep or expend any property on behalf of the Government, or to make any survey, assessment or contract on behalf of the Government, or to execute any revenue-process, or to investigate, or to report, on any matter affecting the pecuniary interests of the Government, or to make, authenticate or keep any document relating to the pecuniary interests of the Government, or to prevent the infraction of any law for the protection of the pecuniary interests of the Government;\n\n(i) every officer whose duty it is, as such officer, to take, receive, keep or expend any property, to make any survey or assessment or to levy any rate or tax for any secular common purpose of any village, town or district, or to make, authenticate or keep any document for the ascertaining of the rights of the people of any village, town or district;\n\n(j) every person who holds any office by virtue of which he is empowered to prepare, publish, maintain or revise an electoral roll or to conduct an election or part of an election;\n\n(k) every person—\n\n(i) in the service or pay of the Government or remunerated by fees or commission for the performance of any public duty by the Government;\n\n(ii) in the service or pay of a local authority as defined in clause (31) of section 3 of the General Clauses Act, 1897, a corporation established by or under a Central or State Act or a Government company as defined in clause (45) of section 2 of the Companies Act, 2013\n\n(29) “reason to believe”.—A person is said to have “reason to believe” a thing, if he has sufficient cause to believe that thing but not otherwise;\n\n(30) “special law” means a law applicable to a particular subject;\n\n(31) “valuable security” means a document which is, or purports to be, a document whereby any legal right is created, extended, transferred, restricted, extinguished or released, or whereby any person acknowledges that he lies under legal liability, or has not a certain legal right\n\n(32) “vessel” means anything made for the conveyance by water of human beings or of property;\n\n(33) “voluntarily”.—A person is said to cause an effect “voluntarily” when he causes it by means whereby he intended to cause it, or by means which, at the time of employing those means, he knew or had reason to believe to be likely to cause it\n\n(34) “will” means any testamentary document;\n\n(35) “woman” means a female human being of any age;\n\n(36) “wrongful gain” means gain by unlawful means of property to which the person gaining is not legally entitled;\n\n(37) “wrongful loss” means the loss by unlawful means of property to which the person losing it is legally entitled;\n\n(38) “gaining wrongfully” and “losing wrongfully”.—A person is said to gain wrongfully when such person retains wrongfully, as well as when such person acquires wrongfully. A person is said to lose wrongfully when such person is wrongfully kept out of any property, as well as when such person is wrongfully deprived of property; and\n\n(39) words and expressions used but not defined in this Sanhita but defined in the Information Technology Act, 2000 and the Bharatiya Nagarik Suraksha Sanhita, 2023 shall have the meanings respectively assigned to them in that Act and Sanhita\n\nDefinitions and key terms\n“act” — as well a series of acts as a single act.\n\n“animal” — any living creature, other than a human being.\n\n“child” — any person below the age of eighteen years.\n\n“Court” — a Judge who is empowered by law to act judicially alone, or a body of Judges which is empowered by law to act judicially as a body, when such Judge or body of Judges is acting judicially.\n\n“death” — the death of a human being unless the contrary appears from the context.\n\n“dishonestly” — doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person.\n\n“document” — any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter Explanation 1.—It is immaterial by what means or upon what substance the letters, figures or marks are formed, or whether the evidence is intended for, or may be used in a Court or not Illustrations (a) A writing expressing the terms of a contract, which may be used as evidence of the contract, is a document (b) A cheque upon a banker is a document (c) A power-of-attorney is a document (d) A map or plan which is intended to be used or which may be used as evidence, is a document (e) A writing containing directions or instructions is a document Explanation 2.—Whatever is expressed by means of letters, figures or marks as explained by mercantile or other usage, shall be deemed to be expressed by such letters, figures or marks within the meaning of this section, although the same may not be actually expressed Illustration A writes his name on the back of a bill of exchange payable to his order.\n\n“fraudulently” — doing anything with the intention to defraud but not otherwise.\n\n“Government” — the Central Government or a State Government.\n\n“harbour” — supplying a person with shelter, food, drink, money, clothes, arms, ammunition or means of conveyance, or the assisting a person by any means, whether of the same kind as those enumerated in this clause or not, to evade apprehension.\n\n“injury” — any harm whatever illegally caused to any person, in body, mind, reputation or property.\n\n“Judge” — a person who is officially designated as a Judge and includes a person,– (i) who is empowered by law to give, in any legal proceeding, civil or criminal, a definitive judgment, or a judgment which, if not appealed against, would be definitive, or a judgment which, if confirmed by some other authority, would be definitive.\n\n“life” — the life of a human being, unless the contrary appears from the context.\n\n“local law” — a law applicable only to a particular part of India.\n\n“man” — male human being of any age.\n\n“movable property” — property of every description, except land and things attached to the earth or permanently fastened to anything which is attached to the earth.\n\n“oath” — a solemn affirmation substituted by law for an oath, and any declaration required or authorised by law to be made before a public servant or to be used for the purpose of proof, whether in a Court or not.\n\n“offence” — a thing made punishable by this Sanhita, but–– (a) in Chapter III and in the following sections, namely, sub-sections (2), (3), (4) and (5) of section 8, sections 9, 49, 50, 52, 54, 55, 56, 57, 58, 59, 60, 61, 119, 120, 123, sub-sections (7) and (8) of section 127, 222, 230, 231, 240, 248, 250, 251, 259, 260, 261, 262, 263, sub-sections (6) and (7) of section 308 and sub-section (2) of section 330, the word “offence” means a thing punishable under this Sanhita, or under any special law or local law.\n\n“omission” — as well as a series of omissions as a single omission.\n\n“person” — any company or association or body of persons, whether incorporated or not.\n\n“public” — any class of the public or any community.\n\n“public servant” — a person falling under any of the descriptions, namely:— (a) every commissioned officer in the Army, Navy or Air Force.\n\n“election” — an election for the purpose of selecting members of any legislative, municipal or other public authority, of whatever character, the method of selection to which is by, or under any law for the time being in force Illustration A Municipal Commissioner is a public servant.\n\n“special law” — a law applicable to a particular subject.\n\n“valuable security” — a document which is, or purports to be, a document whereby any legal right is created, extended, transferred, restricted, extinguished or released, or whereby any person acknowledges that he lies under legal liability, or has not a certain legal right Illustration A writes his name on the back of a bill of exchange.\n\n“vessel” — anything made for the conveyance by water of human beings or of property.\n\n“will” — any testamentary document.\n\n“woman” — a female human being of any age.\n\n“wrongful gain” — gain by unlawful means of property to which the person gaining is not legally entitled.\n\n“wrongful loss” — the loss by unlawful means of property to which the person losing it is legally entitled.\n\nEssential ingredients\n1. In this Sanhita, unless the context otherwise requires, ––\n2. (1) “act” denotes as well a series of acts as a single act;\n3. (2) “animal” means any living creature, other than a human being;\n4. (3) “child” means any person below the age of eighteen years;\n5. (4) “counterfeit”.–A person is said to “counterfeit” who causes one thing to resemble another thing, intending by means of that resemblance to practise deception, or knowing it to be likely that deception will thereby be practised\n6. (9) “fraudulently” means doing anything with the intention to defraud but not otherwise;\n7. (10) “gender”. —The pronoun “he” and its derivatives are used of any person, whether male, female or transgender\n8. (17) “life” means the life of a human being, unless the contrary appears from the context;\n9. (18) “local law” means a law applicable only to a particular part of India;\n10. (19) “man” means male human being of any age;\n11. (20) “month” and “year”.–Wherever the word “month” or the word “year” is used, it is to be understood that the month or the year is to be reckoned according to the Gregorian calendar;\n12. (21) “movable property” includes property of every description, except land and things attached to the earth or permanently fastened to anything which is attached to the earth;\n13. (22) “number”.—Unless the contrary appears from the context, words importing the singular number include the plural number, and words importing the plural number include the singular number;\n14. (23) “oath” includes a solemn affirmation substituted by law for an oath, and any declaration required or authorised by law to be made before a public servant or to be used for the purpose of proof, whether in a Court or not;\n15. (24) “offence”.—Except in the Chapters and sections mentioned in sub-clauses\n16. (b), the word “offence” means a thing made punishable by this Sanhita, but––\n\nStatutory illustrations\nIllustration (a). A writing expressing the terms of a contract, which may be used as evidence of the contract, is a document\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 2 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (b). A cheque upon a banker is a document\n\nExam use: quote illustration (b), then write which ingredient of BNS s. 2 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (c). A power-of-attorney is a document\n\nExam use: quote illustration (c), then write which ingredient of BNS s. 2 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (d). A map or plan which is intended to be used or which may be used as evidence, is a document\n\nExam use: quote illustration (d), then write which ingredient of BNS s. 2 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (e). A writing containing directions or instructions is a document\n\nExam use: quote illustration (e), then write which ingredient of BNS s. 2 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (f). A writes his name on the back of a bill of exchange payable to his order. The meaning of the endorsement, as explained by mercantile usage, is that the bill is to be paid to the holder. The endorsement is a document, and shall be construed in the same manner as if the words “pay to the holder” or words to that effect had been written over the signature;\n\nExam use: quote illustration (f), then write which ingredient of BNS s. 2 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (g). A Magistrate exercising jurisdiction in respect of a charge on which he has power to sentence to fine or imprisonment, with or without appeal, is a Judge;\n\nExam use: quote illustration (g), then write which ingredient of BNS s. 2 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (h). A Municipal Commissioner is a public servant;\n\nExam use: quote illustration (h), then write which ingredient of BNS s. 2 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (i). A writes his name on the back of a bill of exchange. As the effect of this endorsement is to transfer the right to the bill to any person who may become the lawful holder of it, the endorsement is a “valuable security”;\n\nExam use: quote illustration (i), then write which ingredient of BNS s. 2 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (j). A sets fire, by night, to an inhabited house in a large town, for the purpose of facilitating a robbery and thus causes the death of a person. Here, A may not have intended to cause death; and may even be sorry that death has been caused by his act; yet, if he knew that he was likely to cause death, he has caused death voluntarily;\n\nExam use: quote illustration (j), then write which ingredient of BNS s. 2 it proves. Copying the illustration without that mapping sentence does not score.\n\nExplanations\nExplanation 1.—It is not essential to counterfeiting that the imitation should be exact\n\nExplanation 2.—When a person causes one thing to resemble another thing, and the resemblance is such that a person might be deceived thereby, it shall be presumed, until the contrary is proved, that the person so causing the one thing to resemble the other thing intended by means of that resemblance to practise deception or knew it to be likely that deception would thereby be practised;\n\n(5) “Court” means a Judge who is empowered by law to act judicially alone, or a body of Judges which is empowered by law to act judicially as a body, when such Judge or body of Judges is acting judicially;\n\n(6) “death” means the death of a human being unless the contrary appears from the context;\n\n(7) “dishonestly” means doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person;\n\n(8) “document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter\n\nExplanation 1.—It is immaterial by what means or upon what substance the letters, figures or marks are formed, or whether the evidence is intended for, or may be used in a Court or not\n\nExplanation 2.—Whatever is expressed by means of letters, figures or marks as explained by mercantile or other usage, shall be deemed to be expressed by such letters, figures or marks within the meaning of this section, although the same may not be actually expressed\n\nExplanation.– “transgender” shall have the meaning assigned to it in clause (k) of section 2 of the Transgender Persons (Protection of Rights) Act, 2019;\n\n(11) “good faith”.—Nothing is said to be done or believed in “good faith” which is done or believed without due care and attention;\n\n(12) “Government” means the Central Government or a State Government;\n\n(13) “harbour” includes supplying a person with shelter, food, drink, money, clothes, arms, ammunition or means of conveyance, or the assisting a person by any means, whether of the same kind as those enumerated in this clause or not, to evade apprehension;\n\n(14) “injury” means any harm whatever illegally caused to any person, in body, mind, reputation or property;\n\n(15) “illegal” and “legally bound to do”.—The word “illegal” is applicable to everything which is an offence or which is prohibited by law, or which furnishes ground for a civil action; and a person is said to be “legally bound to do” whatever it is illegal in him to omit;\n\n(16) “Judge” means a person who is officially designated as a Judge and includes a person,–\n\n(i) who is empowered by law to give, in any legal proceeding, civil or criminal, a definitive judgment, or a judgment which, if not appealed against, would be definitive, or a judgment which, if confirmed by some other authority, would be definitive; or\n\n(ii) who is one of a body or persons, which body of persons is empowered by law to give such a judgment\n\nExplanation.—\n\n(a) persons falling under any of the descriptions made in this clause are public servants, whether appointed by the Government or not;\n\n(b) every person who is in actual possession of the situation of a public servant, whatever legal defect there may be in his right to hold that situation is a public servant;\n\n(c) “election” means an election for the purpose of selecting members of any legislative, municipal or other public authority, of whatever character, the method of selection to which is by, or under any law for the time being in force",
+  "glance": "BNS s. 2 — Definitions.",
+  "sections": [
     {
-      id: 's-2-module-1',
-      title: 'Provenance, Legislative Objective & Doctrinal Foundations',
-      order: 1,
-      content: [
-        'Section 2 is the successor to the definitional scheme of the Indian Penal Code, 1860 (ss. 6–52). The BNS consolidates those clauses into one place and modernises key terms — most notably by fixing “child” at below 18 and by expressly including electronic and digital records within “document”.',
-        'Legislative objective: supply a single, consistent dictionary so that later offence sections can be drafted more cleanly and so that digital-age evidence and the uniform age of majority for “child” are built into the Code from the outset.',
-        'Doctrinal foundation: statutory definitions control the meaning of terms used throughout the Act unless context requires otherwise. Courts treat these definitions as exhaustive for the purposes of the Sanhita; common-law or dictionary meanings yield to the statutory text.',
-      ],
+      "id": "bns-2-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "2. In this Sanhita, unless the context otherwise requires, ––",
+        "(1) “act” denotes as well a series of acts as a single act;",
+        "(2) “animal” means any living creature, other than a human being;",
+        "(3) “child” means any person below the age of eighteen years;",
+        "(4) “counterfeit”.–A person is said to “counterfeit” who causes one thing to resemble another thing, intending by means of that resemblance to practise deception, or knowing it to be likely that deception will thereby be practised",
+        "(9) “fraudulently” means doing anything with the intention to defraud but not otherwise;",
+        "(10) “gender”. —The pronoun “he” and its derivatives are used of any person, whether male, female or transgender",
+        "(17) “life” means the life of a human being, unless the contrary appears from the context;",
+        "(18) “local law” means a law applicable only to a particular part of India;",
+        "(19) “man” means male human being of any age;",
+        "(20) “month” and “year”.–Wherever the word “month” or the word “year” is used, it is to be understood that the month or the year is to be reckoned according to the Gregorian calendar;",
+        "(21) “movable property” includes property of every description, except land and things attached to the earth or permanently fastened to anything which is attached to the earth;",
+        "(22) “number”.—Unless the contrary appears from the context, words importing the singular number include the plural number, and words importing the plural number include the singular number;",
+        "(23) “oath” includes a solemn affirmation substituted by law for an oath, and any declaration required or authorised by law to be made before a public servant or to be used for the purpose of proof, whether in a Court or not;",
+        "(24) “offence”.—Except in the Chapters and sections mentioned in sub-clauses (a) and (b), the word “offence” means a thing made punishable by this Sanhita, but––",
+        "(a) in Chapter III and in the following sections, namely, sub-sections (2), (3), (4) and (5) of section 8, sections 9, 49, 50, 52, 54, 55, 56, 57, 58, 59, 60, 61, 119, 120, 123, sub-sections (7) and (8) of section 127, 222, 230, 231, 240, 248, 250, 251, 259, 260, 261, 262, 263, sub-sections (6) and (7) of section 308 and sub-section (2) of section 330, the word “offence” means a thing punishable under this Sanhita, or under any special law or local law; and",
+        "(b) in sub-section (1) of section 189, sections 211, 212, 238, 239, 249, 253 and sub-section (1) of section 329, the word “offence” shall have the same meaning when the act punishable under the special law or local law is punishable under such law with imprisonment for a term of six months or more, whether with or without fine;",
+        "(25) “omission” denotes as well as a series of omissions as a single omission;",
+        "(26) “person” includes any company or association or body of persons, whether incorporated or not;",
+        "(27) “public” includes any class of the public or any community;",
+        "(28) “public servant” means a person falling under any of the descriptions, namely:—",
+        "(a) every commissioned officer in the Army, Navy or Air Force;",
+        "(b) every Judge including any person empowered by law to discharge, whether by himself or as a member of any body of persons, any adjudicatory functions;",
+        "(c) every officer of a Court including a liquidator, receiver or commissioner whose duty it is, as such officer, to investigate or report on any matter of law or fact, or to make, authenticate, or keep any document, or to take charge or dispose of any property, or to execute any judicial process, or to administer any oath, or to interpret, or to preserve order in the Court, and every person specially authorised by a Court to perform any of such duties;",
+        "(d) every assessor or member of a panchayat assisting a Court or public servant;",
+        "(e) every arbitrator or other person to whom any cause or matter has been referred for decision or report by any Court, or by any other competent public authority;",
+        "(f) every person who holds any office by virtue of which he is empowered to place or keep any person in confinement;",
+        "(g) every officer of the Government whose duty it is, as such officer, to prevent offences, to give information of offences, to bring offenders to justice, or to protect the public health, safety or convenience;",
+        "(h) every officer whose duty it is, as such officer, to take, receive, keep or expend any property on behalf of the Government, or to make any survey, assessment or contract on behalf of the Government, or to execute any revenue-process, or to investigate, or to report, on any matter affecting the pecuniary interests of the Government, or to make, authenticate or keep any document relating to the pecuniary interests of the Government, or to prevent the infraction of any law for the protection of the pecuniary interests of the Government;",
+        "(i) every officer whose duty it is, as such officer, to take, receive, keep or expend any property, to make any survey or assessment or to levy any rate or tax for any secular common purpose of any village, town or district, or to make, authenticate or keep any document for the ascertaining of the rights of the people of any village, town or district;",
+        "(j) every person who holds any office by virtue of which he is empowered to prepare, publish, maintain or revise an electoral roll or to conduct an election or part of an election;",
+        "(k) every person—",
+        "(i) in the service or pay of the Government or remunerated by fees or commission for the performance of any public duty by the Government;",
+        "(ii) in the service or pay of a local authority as defined in clause (31) of section 3 of the General Clauses Act, 1897, a corporation established by or under a Central or State Act or a Government company as defined in clause (45) of section 2 of the Companies Act, 2013",
+        "(29) “reason to believe”.—A person is said to have “reason to believe” a thing, if he has sufficient cause to believe that thing but not otherwise;",
+        "(30) “special law” means a law applicable to a particular subject;",
+        "(31) “valuable security” means a document which is, or purports to be, a document whereby any legal right is created, extended, transferred, restricted, extinguished or released, or whereby any person acknowledges that he lies under legal liability, or has not a certain legal right",
+        "(32) “vessel” means anything made for the conveyance by water of human beings or of property;",
+        "(33) “voluntarily”.—A person is said to cause an effect “voluntarily” when he causes it by means whereby he intended to cause it, or by means which, at the time of employing those means, he knew or had reason to believe to be likely to cause it",
+        "(34) “will” means any testamentary document;",
+        "(35) “woman” means a female human being of any age;",
+        "(36) “wrongful gain” means gain by unlawful means of property to which the person gaining is not legally entitled;",
+        "(37) “wrongful loss” means the loss by unlawful means of property to which the person losing it is legally entitled;",
+        "(38) “gaining wrongfully” and “losing wrongfully”.—A person is said to gain wrongfully when such person retains wrongfully, as well as when such person acquires wrongfully. A person is said to lose wrongfully when such person is wrongfully kept out of any property, as well as when such person is wrongfully deprived of property; and",
+        "(39) words and expressions used but not defined in this Sanhita but defined in the Information Technology Act, 2000 and the Bharatiya Nagarik Suraksha Sanhita, 2023 shall have the meanings respectively assigned to them in that Act and Sanhita"
+      ]
     },
     {
-      id: 's-2-module-2',
-      title: 'Textual Anatomy — High-Yield Definitions',
-      order: 2,
-      content: [
-        '(3) “child” means any person below the age of eighteen years.',
-        '(7) “dishonestly” means doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person.',
-        '(8) “document” includes electronic and digital record; medium is immaterial; mercantile usage is covered by Explanation 2.',
-        '(16) “fraudulently” means doing anything with intent to defraud but not otherwise.',
-        '(28) “public servant” — multi-clause exhaustive definition (judges, court officers, government and local-authority servants, election officers, government-company employees, etc.) with explanatory expansions.',
-        '(33) “voluntarily” — intention or knowledge/reason to believe that the means employed are likely to cause the effect.',
-        '(4) “counterfeit” — resemblance + intention/knowledge of deception; exact imitation unnecessary; presumption from deceptive resemblance.',
-        '(31) “valuable security” — document creating or affecting a legal right or acknowledging liability.',
-        'Other clauses cover act, animal, Court, death, good faith, injury, illegal, man/woman, movable property, offence, omission, person, reason to believe, special law, vessel, wrongful gain/loss, year/month, etc.',
-      ],
+      "id": "bns-2-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "In this Sanhita, unless the context otherwise requires, ––",
+        "(1) “act” denotes as well a series of acts as a single act;",
+        "(2) “animal” means any living creature, other than a human being;",
+        "(3) “child” means any person below the age of eighteen years;",
+        "(4) “counterfeit”.–A person is said to “counterfeit” who causes one thing to resemble another thing, intending by means of that resemblance to practise deception, or knowing it to be likely that deception will thereby be practised",
+        "(9) “fraudulently” means doing anything with the intention to defraud but not otherwise;",
+        "(10) “gender”. —The pronoun “he” and its derivatives are used of any person, whether male, female or transgender",
+        "(17) “life” means the life of a human being, unless the contrary appears from the context;",
+        "(18) “local law” means a law applicable only to a particular part of India;",
+        "(19) “man” means male human being of any age;",
+        "(20) “month” and “year”.–Wherever the word “month” or the word “year” is used, it is to be understood that the month or the year is to be reckoned according to the Gregorian calendar;",
+        "(21) “movable property” includes property of every description, except land and things attached to the earth or permanently fastened to anything which is attached to the earth;",
+        "(22) “number”.—Unless the contrary appears from the context, words importing the singular number include the plural number, and words importing the plural number include the singular number;",
+        "(23) “oath” includes a solemn affirmation substituted by law for an oath, and any declaration required or authorised by law to be made before a public servant or to be used for the purpose of proof, whether in a Court or not;",
+        "(24) “offence”.—Except in the Chapters and sections mentioned in sub-clauses",
+        "(b), the word “offence” means a thing made punishable by this Sanhita, but––"
+      ]
     },
     {
-      id: 's-2-module-3',
-      title: 'Mandatory Proving Ingredients & Essential Elements',
-      order: 3,
-      content: [
-        'Section 2 itself creates no offence. It supplies the legal meaning of terms used in offence-creating sections.',
-        'When a charged section uses a defined term, the prosecution must prove the facts that bring the case within that definition (e.g., age below 18 for “child”; intention of wrongful gain/loss for “dishonestly”; electronic record used as evidence for “document”).',
-        'The defence may show that the context of the charged section “otherwise requires” a different meaning, or that the factual predicate of the definition is not made out.',
-      ],
+      "id": "bns-2-defs",
+      "title": "Definitions and key terms",
+      "order": 3,
+      "content": [
+        "“act” — as well a series of acts as a single act.",
+        "“animal” — any living creature, other than a human being.",
+        "“child” — any person below the age of eighteen years.",
+        "“Court” — a Judge who is empowered by law to act judicially alone, or a body of Judges which is empowered by law to act judicially as a body, when such Judge or body of Judges is acting judicially.",
+        "“death” — the death of a human being unless the contrary appears from the context.",
+        "“dishonestly” — doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person.",
+        "“document” — any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter Explanation 1.—It is immaterial by what means or upon what substance the letters, figures or marks are formed, or whether the evidence is intended for, or may be used in a Court or not Illustrations (a) A writing expressing the terms of a contract, which may be used as evidence of the contract, is a document (b) A cheque upon a banker is a document (c) A power-of-attorney is a document (d) A map or plan which is intended to be used or which may be used as evidence, is a document (e) A writing containing directions or instructions is a document Explanation 2.—Whatever is expressed by means of letters, figures or marks as explained by mercantile or other usage, shall be deemed to be expressed by such letters, figures or marks within the meaning of this section, although the same may not be actually expressed Illustration A writes his name on the back of a bill of exchange payable to his order.",
+        "“fraudulently” — doing anything with the intention to defraud but not otherwise.",
+        "“Government” — the Central Government or a State Government.",
+        "“harbour” — supplying a person with shelter, food, drink, money, clothes, arms, ammunition or means of conveyance, or the assisting a person by any means, whether of the same kind as those enumerated in this clause or not, to evade apprehension.",
+        "“injury” — any harm whatever illegally caused to any person, in body, mind, reputation or property.",
+        "“Judge” — a person who is officially designated as a Judge and includes a person,– (i) who is empowered by law to give, in any legal proceeding, civil or criminal, a definitive judgment, or a judgment which, if not appealed against, would be definitive, or a judgment which, if confirmed by some other authority, would be definitive.",
+        "“life” — the life of a human being, unless the contrary appears from the context.",
+        "“local law” — a law applicable only to a particular part of India.",
+        "“man” — male human being of any age.",
+        "“movable property” — property of every description, except land and things attached to the earth or permanently fastened to anything which is attached to the earth.",
+        "“oath” — a solemn affirmation substituted by law for an oath, and any declaration required or authorised by law to be made before a public servant or to be used for the purpose of proof, whether in a Court or not.",
+        "“offence” — a thing made punishable by this Sanhita, but–– (a) in Chapter III and in the following sections, namely, sub-sections (2), (3), (4) and (5) of section 8, sections 9, 49, 50, 52, 54, 55, 56, 57, 58, 59, 60, 61, 119, 120, 123, sub-sections (7) and (8) of section 127, 222, 230, 231, 240, 248, 250, 251, 259, 260, 261, 262, 263, sub-sections (6) and (7) of section 308 and sub-section (2) of section 330, the word “offence” means a thing punishable under this Sanhita, or under any special law or local law.",
+        "“omission” — as well as a series of omissions as a single omission.",
+        "“person” — any company or association or body of persons, whether incorporated or not.",
+        "“public” — any class of the public or any community.",
+        "“public servant” — a person falling under any of the descriptions, namely:— (a) every commissioned officer in the Army, Navy or Air Force.",
+        "“election” — an election for the purpose of selecting members of any legislative, municipal or other public authority, of whatever character, the method of selection to which is by, or under any law for the time being in force Illustration A Municipal Commissioner is a public servant.",
+        "“special law” — a law applicable to a particular subject.",
+        "“valuable security” — a document which is, or purports to be, a document whereby any legal right is created, extended, transferred, restricted, extinguished or released, or whereby any person acknowledges that he lies under legal liability, or has not a certain legal right Illustration A writes his name on the back of a bill of exchange.",
+        "“vessel” — anything made for the conveyance by water of human beings or of property.",
+        "“will” — any testamentary document.",
+        "“woman” — a female human being of any age.",
+        "“wrongful gain” — gain by unlawful means of property to which the person gaining is not legally entitled.",
+        "“wrongful loss” — the loss by unlawful means of property to which the person losing it is legally entitled."
+      ]
     },
     {
-      id: 's-2-module-4',
-      title: 'Evidentiary Burdens under BSA 2023',
-      order: 4,
-      content: [
-        'Age of a “child” is ordinarily proved by birth certificate, school record, ossification test or other admissible evidence; the burden is on the prosecution to establish age below 18 beyond reasonable doubt when it is an ingredient.',
-        'Electronic/digital “document” status is established by the nature of the record and its intended use as evidence; admissibility and proof of contents are governed by BSA ss. 61–63 (primary/secondary electronic evidence and the s. 63 certificate).',
-        '“Dishonestly” / “fraudulently” / “voluntarily” are states of mind proved by conduct, surrounding circumstances and, where available, admissions; direct evidence of intention is rare.',
-        'Status as “public servant” is proved by appointment order, pay records, or evidence of actual possession of the situation (Explanation).',
-      ],
+      "id": "bns-2-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "(a) A writing expressing the terms of a contract, which may be used as evidence of the contract, is a document",
+        "(b) A cheque upon a banker is a document",
+        "(c) A power-of-attorney is a document",
+        "(d) A map or plan which is intended to be used or which may be used as evidence, is a document",
+        "(e) A writing containing directions or instructions is a document",
+        "A writes his name on the back of a bill of exchange payable to his order. The meaning of the endorsement, as explained by mercantile usage, is that the bill is to be paid to the holder. The endorsement is a document, and shall be construed in the same manner as if the words “pay to the holder” or words to that effect had been written over the signature;",
+        "A Magistrate exercising jurisdiction in respect of a charge on which he has power to sentence to fine or imprisonment, with or without appeal, is a Judge;",
+        "A Municipal Commissioner is a public servant;",
+        "A writes his name on the back of a bill of exchange. As the effect of this endorsement is to transfer the right to the bill to any person who may become the lawful holder of it, the endorsement is a “valuable security”;",
+        "A sets fire, by night, to an inhabited house in a large town, for the purpose of facilitating a robbery and thus causes the death of a person. Here, A may not have intended to cause death; and may even be sorry that death has been caused by his act; yet, if he knew that he was likely to cause death, he has caused death voluntarily;"
+      ]
     },
     {
-      id: 's-2-module-5',
-      title: 'Procedural Roadmap & Practical Use',
-      order: 5,
-      content: [
-        'In pleadings and charge framing, the relevant s. 2 definition should be expressly invoked when the meaning of a term is disputed.',
-        'For offences against children, the uniform “below 18” definition must be applied; older IPC gender-specific ages no longer control.',
-        'For any charge involving an electronic record, confirm that the record falls within “document” under s. 2(8) and that BSA s. 63 compliance is in order.',
-        'Limitation and forum are those of the substantive offence, not of s. 2 itself.',
-      ],
-    },
+      "id": "bns-2-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation 1.—It is not essential to counterfeiting that the imitation should be exact",
+        "Explanation 2.—When a person causes one thing to resemble another thing, and the resemblance is such that a person might be deceived thereby, it shall be presumed, until the contrary is proved, that the person so causing the one thing to resemble the other thing intended by means of that resemblance to practise deception or knew it to be likely that deception would thereby be practised;",
+        "(5) “Court” means a Judge who is empowered by law to act judicially alone, or a body of Judges which is empowered by law to act judicially as a body, when such Judge or body of Judges is acting judicially;",
+        "(6) “death” means the death of a human being unless the contrary appears from the context;",
+        "(7) “dishonestly” means doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person;",
+        "(8) “document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter",
+        "Explanation 1.—It is immaterial by what means or upon what substance the letters, figures or marks are formed, or whether the evidence is intended for, or may be used in a Court or not",
+        "Explanation 2.—Whatever is expressed by means of letters, figures or marks as explained by mercantile or other usage, shall be deemed to be expressed by such letters, figures or marks within the meaning of this section, although the same may not be actually expressed",
+        "Explanation.– “transgender” shall have the meaning assigned to it in clause (k) of section 2 of the Transgender Persons (Protection of Rights) Act, 2019;",
+        "(11) “good faith”.—Nothing is said to be done or believed in “good faith” which is done or believed without due care and attention;",
+        "(12) “Government” means the Central Government or a State Government;",
+        "(13) “harbour” includes supplying a person with shelter, food, drink, money, clothes, arms, ammunition or means of conveyance, or the assisting a person by any means, whether of the same kind as those enumerated in this clause or not, to evade apprehension;",
+        "(14) “injury” means any harm whatever illegally caused to any person, in body, mind, reputation or property;",
+        "(15) “illegal” and “legally bound to do”.—The word “illegal” is applicable to everything which is an offence or which is prohibited by law, or which furnishes ground for a civil action; and a person is said to be “legally bound to do” whatever it is illegal in him to omit;",
+        "(16) “Judge” means a person who is officially designated as a Judge and includes a person,–",
+        "(i) who is empowered by law to give, in any legal proceeding, civil or criminal, a definitive judgment, or a judgment which, if not appealed against, would be definitive, or a judgment which, if confirmed by some other authority, would be definitive; or",
+        "(ii) who is one of a body or persons, which body of persons is empowered by law to give such a judgment",
+        "Explanation.—",
+        "(a) persons falling under any of the descriptions made in this clause are public servants, whether appointed by the Government or not;",
+        "(b) every person who is in actual possession of the situation of a public servant, whatever legal defect there may be in his right to hold that situation is a public servant;",
+        "(c) “election” means an election for the purpose of selecting members of any legislative, municipal or other public authority, of whatever character, the method of selection to which is by, or under any law for the time being in force"
+      ]
+    }
   ],
-
-  provisions: [
+  "examples": [
     {
-      actId: 'bns',
-      actName: 'Bharatiya Nyaya Sanhita, 2023',
-      provisionId: 'bns-2',
-      section: 's. 2',
-      title: 'Definitions',
-    },
-  ],
-
-  examples: [
-    {
-      id: 's-2-ill-1',
-      title: 'Illustration 1 — “Child” definition applied',
-      illustrationType: 'practical',
-      description:
-        'A 17-year-old is induced to leave home. Under BNS the person is a “child” (s. 2(3)). The relevant Chapter V / kidnapping provisions that use the word “child” therefore apply with the uniform age of 18. The older IPC distinction between ages for boys and girls does not survive.',
+      "id": "bns-2-ex-1",
+      "title": "Illustration (a)",
+      "description": "A writing expressing the terms of a contract, which may be used as evidence of the contract, is a document\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 2 — which fact proves which element, and what the legal result is."
     },
     {
-      id: 's-2-ill-2',
-      title: 'Illustration 2 — Electronic record as “document”',
-      illustrationType: 'practical',
-      description:
-        'A WhatsApp chat or an e-mail is tendered to prove the terms of an agreement. Under s. 2(8) it is a “document” (electronic/digital record). Its admissibility and mode of proof are then governed by the BSA (especially s. 63 certificate), not by a residual common-law rule that electronic records are outside the Code.',
-    },
-  ],
-
-  hypotheticals: [
-    {
-      id: 's-2-hypo',
-      title: 'Chamber Hypothetical — Age and “child”',
-      facts:
-        'The prosecution alleges that the victim was 17 years and 11 months old on the date of the offence. The defence produces a school record suggesting the victim had already turned 18. The charged section uses the word “child”.',
-      question:
-        'What is the legal consequence if the victim is found to have been 18 or above on the date of the offence?',
-      applicableLaw: 'BNS s. 2(3); the specific Chapter V or other section that uses “child”; BSA burden of proof on age.',
-      analysis:
-        '1. s. 2(3) fixes “child” as any person below 18. 2. If the fact-finder concludes the victim had completed 18 years, the statutory ingredient “child” fails. 3. The charge that depends on that ingredient cannot be sustained under that section (though a different section not requiring “child” may still apply). 4. Age is a pure question of fact proved to the criminal standard.',
-      conclusion:
-        'If age ≥ 18 is established, the “child”-based charge fails. The court must examine whether any residual adult offence is made out on the same facts.',
-    },
-  ],
-
-  distinctions: [
-    {
-      id: 's-2-dist-1',
-      title: '“Dishonestly” vs “Fraudulently”',
-      left: 'Dishonestly (s. 2(7))',
-      right: 'Fraudulently (s. 2(16))',
-      rows: [
-        {
-          point: 'Core idea',
-          left: 'Intention of wrongful gain or wrongful loss',
-          right: 'Intent to defraud',
-        },
-        {
-          point: 'Typical offences',
-          left: 'Theft, criminal breach of trust, cheating (in part)',
-          right: 'Forgery, certain cheating variants, false documents',
-        },
-        {
-          point: 'Overlap',
-          left: 'Often co-exists with fraudulently',
-          right: 'Often co-exists with dishonestly',
-        },
-      ],
-    },
-  ],
-
-  misconceptions: [
-    {
-      id: 's-2-trap-1',
-      trap: '“Child” still has different ages for boys and girls as under the old IPC.',
-      correction:
-        'No. s. 2(3) fixes a uniform age — any person below 18 years — for the entire Sanhita unless a specific section provides otherwise.',
+      "id": "bns-2-ex-2",
+      "title": "Illustration (b)",
+      "description": "A cheque upon a banker is a document\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 2 — which fact proves which element, and what the legal result is."
     },
     {
-      id: 's-2-trap-2',
-      trap: 'Electronic records are not “documents” under the BNS.',
-      correction:
-        's. 2(8) expressly includes electronic and digital records within the definition of “document”.',
-    },
-  ],
-
-  cases: [],
-
-  questionsAndAnswers: [
-    {
-      id: 's-2-brief',
-      draftingCategory: 'brief',
-      question: 'Write a structured note on the key definitions in Section 2 of the BNS that are most frequently tested.',
-      answer: `I. ISSUE\nWhich definitions in s. 2 control the construction of later offence sections and how should they be deployed in an answer?\n\nII. RULE\n“Child” = below 18. “Document” includes electronic/digital record. “Dishonestly” = intention of wrongful gain or loss. “Fraudulently” = intent to defraud. “Voluntarily” = intention or knowledge of likelihood. “Public servant” is exhaustively defined. All apply unless context otherwise requires.\n\nIII. APPLICATION\nIn any charge involving a minor, property offence, electronic record or public servant, state the s. 2 definition first, then the ingredients of the substantive section.\n\nIV. CONCLUSION\nSection 2 is the dictionary; mastery of the six or seven high-yield terms above is essential for accurate charging and answering.`,
-      explanation: 'Concise IRAC note on the dictionary section.',
+      "id": "bns-2-ex-3",
+      "title": "Illustration (c)",
+      "description": "A power-of-attorney is a document\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 2 — which fact proves which element, and what the legal result is."
     },
     {
-      id: 's-2-submissions',
-      draftingCategory: 'submissions',
-      question: 'Draft written submissions on the definitional scheme of Section 2 BNS with emphasis on “child”, “document” and mental-element terms.',
-      answer: `I. STATEMENT OF FACTS\n[Insert facts raising age, electronic record or mental-element issues.]\n\nII. STATUTORY SCHEME\nSection 2 consolidates and modernises the old IPC definitions. The uniform “child” age and the express inclusion of electronic records are the principal reforms.\n\nIII. APPLICATION OF KEY DEFINITIONS\n(1) Child — prove age < 18. (2) Document — electronic record intended as evidence. (3) Dishonestly / fraudulently / voluntarily — prove the statutory state of mind from conduct and circumstances.\n\nIV. EVIDENTIARY REQUIREMENTS\nAge evidence; BSA s. 63 for electronic documents; inference of intention from proved facts.\n\nV. REBUTTAL\nContext-otherwise-requires argument; failure of factual predicate of the definition.\n\nVI. PRAYER\n[Appropriate relief — sustain or reject the charge according to whether the definitional ingredient is proved.]`,
-      explanation: 'Full written-submissions format for the definitional gateway.',
+      "id": "bns-2-ex-4",
+      "title": "Illustration (d)",
+      "description": "A map or plan which is intended to be used or which may be used as evidence, is a document\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 2 — which fact proves which element, and what the legal result is."
     },
+    {
+      "id": "bns-2-ex-5",
+      "title": "Illustration (e)",
+      "description": "A writing containing directions or instructions is a document\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 2 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-2-ex-6",
+      "title": "Illustration (f)",
+      "description": "A writes his name on the back of a bill of exchange payable to his order. The meaning of the endorsement, as explained by mercantile usage, is that the bill is to be paid to the holder. The endorsement is a document, and shall be construed in the same manner as if the words “pay to the holder” or words to that effect had been written over the signature;\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 2 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-2-ex-7",
+      "title": "Illustration (g)",
+      "description": "A Magistrate exercising jurisdiction in respect of a charge on which he has power to sentence to fine or imprisonment, with or without appeal, is a Judge;\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 2 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-2-ex-8",
+      "title": "Illustration (h)",
+      "description": "A Municipal Commissioner is a public servant;\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 2 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-2-ex-9",
+      "title": "Illustration (i)",
+      "description": "A writes his name on the back of a bill of exchange. As the effect of this endorsement is to transfer the right to the bill to any person who may become the lawful holder of it, the endorsement is a “valuable security”;\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 2 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-2-ex-10",
+      "title": "Illustration (j)",
+      "description": "A sets fire, by night, to an inhabited house in a large town, for the purpose of facilitating a robbery and thus causes the death of a person. Here, A may not have intended to cause death; and may even be sorry that death has been caused by his act; yet, if he knew that he was likely to cause death, he has caused death voluntarily;\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 2 — which fact proves which element, and what the legal result is."
+    }
   ],
-
-  bareActPointers: [
-    'BNS s. 2 (entire dictionary)',
-    's. 2(3) child',
-    's. 2(8) document (electronic/digital)',
-    's. 2(7) dishonestly / s. 2(16) fraudulently',
-    's. 2(28) public servant',
-    's. 2(33) voluntarily',
-    'BSA ss. 61–63 (electronic evidence)',
+  "hypotheticals": [
+    {
+      "id": "bns-2-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "(a) A writing expressing the terms of a contract, which may be used as evidence of the contract, is a document",
+      "question": "Whether BNS s. 2 (Definitions) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 2. Chapter I — Preliminary. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 2 (Definitions), Chapter I — Preliminary.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) In this Sanhita, unless the context otherwise requires, ––\n   (2) (1) “act” denotes as well a series of acts as a single act;\n   (3) (2) “animal” means any living creature, other than a human being;\n   (4) (3) “child” means any person below the age of eighteen years;\n   (5) (4) “counterfeit”.–A person is said to “counterfeit” who causes one thing to resemble another thing, intending by means of that resemblance to practise deception, or knowing it to be likely that deception will thereby be practised\n   (6) (9) “fraudulently” means doing anything with the intention to defraud but not otherwise;\n   (7) (10) “gender”. —The pronoun “he” and its derivatives are used of any person, whether male, female or transgender\n   (8) (17) “life” means the life of a human being, unless the contrary appears from the context;\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 2 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 2. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-
-  examTips: [
-    'Always state “child = below 18” when the victim’s age is in issue.',
-    'For any electronic record, cite s. 2(8) + BSA s. 63 together.',
-    'Do not conflate “dishonestly” with “fraudulently”; know the distinct statutory cores.',
+  "misconceptions": [
+    {
+      "id": "bns-2-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 2."
+    },
+    {
+      "id": "bns-2-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-2-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
   ],
-
-  revisionPoints: [
-    'Child = any person below 18 (s. 2(3)).',
-    'Document includes electronic and digital record (s. 2(8)).',
-    'Dishonestly = intention of wrongful gain or loss.',
-    'Voluntarily = intention or knowledge of likelihood of the effect.',
-    'Public servant is exhaustively defined in s. 2(28).',
+  "questionsAndAnswers": [
+    {
+      "id": "bns-2-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 2 (Definitions)",
+      "answer": "Introduction. BNS s. 2 deals with Definitions. It sits in Chapter I — Preliminary of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Section 2 is the dictionary. IPC definitions that were scattered across ss. 6–52 now sit here. The headline addition: “child” means any person below eighteen years.\n\nLegal rule. In student language: BNS s. 2 is the rule on “Definitions”. The section provides that in this Sanhita, unless the context otherwise requires, ––. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. In this Sanhita, unless the context otherwise requires, ––\n2. (1) “act” denotes as well a series of acts as a single act;\n3. (2) “animal” means any living creature, other than a human being;\n4. (3) “child” means any person below the age of eighteen years;\n5. (4) “counterfeit”.–A person is said to “counterfeit” who causes one thing to resemble another thing, intending by means of that resemblance to practise deception, or knowing it to be likely that deception will thereby be practised\n6. (9) “fraudulently” means doing anything with the intention to defraud but not otherwise;\n7. (10) “gender”. —The pronoun “he” and its derivatives are used of any person, whether male, female or transgender\n8. (17) “life” means the life of a human being, unless the contrary appears from the context;\n\nDefinitions. The core statutory definitions must be established:\n“act” as well a series of acts as a single act. “animal” any living creature, other than a human being. “child” any person below the age of eighteen years. “Court” a Judge who is empowered by law to act judicially alone, or a body of Judges which is empowered by law to act judicially as a body, when such Judge or body of Judges is acting judicially. “death” the death of a human being unless the contrary appears from the context. “dishonestly” doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person. “document” any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter Explanation 1.—It is immaterial by what means or upon what substance the letters, figures or marks are formed, or whether the evidence is intended for, or may be used in a Court or not Illustrations (a) A writing expressing the terms of a contract, which may be used as evidence of the contract, is a document (b) A cheque upon a banker is a document (c) A power-of-attorney is a document (d) A map or plan which is intended to be used or which may be used as evidence, is a document (e) A writing containing directions or instructions is a document Explanation 2.—Whatever is expressed by means of letters, figures or marks as explained by mercantile or other usage, shall be deemed to be expressed by such letters, figures or marks within the meaning of this section, although the same may not be actually expressed Illustration A writes his name on the back of a bill of exchange payable to his order. “fraudulently” doing anything with the intention to defraud but not otherwise.\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A writing expressing the terms of a contract, which may be used as evidence of the contract, is a document\n\nExplanations. Explanation 1.—It is not essential to counterfeiting that the imitation should be exact An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 2. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 2 is the complete current-law heading for Definitions. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-2-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 2 (Definitions) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 2 deals with Definitions. It sits in Chapter I — Preliminary of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Section 2 is the dictionary. IPC definitions that were scattered across ss. 6–52 now sit here. The headline addition: “child” means any person below eighteen years.\n\nLegal rule. In student language: BNS s. 2 is the rule on “Definitions”. The section provides that in this Sanhita, unless the context otherwise requires, ––. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. In this Sanhita, unless the context otherwise requires, ––\n2. (1) “act” denotes as well a series of acts as a single act;\n3. (2) “animal” means any living creature, other than a human being;\n4. (3) “child” means any person below the age of eighteen years;\n5. (4) “counterfeit”.–A person is said to “counterfeit” who causes one thing to resemble another thing, intending by means of that resemblance to practise deception, or knowing it to be likely that deception will thereby be practised\n6. (9) “fraudulently” means doing anything with the intention to defraud but not otherwise;\n7. (10) “gender”. —The pronoun “he” and its derivatives are used of any person, whether male, female or transgender\n8. (17) “life” means the life of a human being, unless the contrary appears from the context;\n\nDefinitions. The core statutory definitions must be established:\n“act” as well a series of acts as a single act. “animal” any living creature, other than a human being. “child” any person below the age of eighteen years. “Court” a Judge who is empowered by law to act judicially alone, or a body of Judges which is empowered by law to act judicially as a body, when such Judge or body of Judges is acting judicially. “death” the death of a human being unless the contrary appears from the context. “dishonestly” doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person. “document” any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter Explanation 1.—It is immaterial by what means or upon what substance the letters, figures or marks are formed, or whether the evidence is intended for, or may be used in a Court or not Illustrations (a) A writing expressing the terms of a contract, which may be used as evidence of the contract, is a document (b) A cheque upon a banker is a document (c) A power-of-attorney is a document (d) A map or plan which is intended to be used or which may be used as evidence, is a document (e) A writing containing directions or instructions is a document Explanation 2.—Whatever is expressed by means of letters, figures or marks as explained by mercantile or other usage, shall be deemed to be expressed by such letters, figures or marks within the meaning of this section, although the same may not be actually expressed Illustration A writes his name on the back of a bill of exchange payable to his order. “fraudulently” doing anything with the intention to defraud but not otherwise.\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A writing expressing the terms of a contract, which may be used as evidence of the contract, is a document\n\nExplanations. Explanation 1.—It is not essential to counterfeiting that the imitation should be exact An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 2. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 2 is the complete current-law heading for Definitions. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Name, commencement, extra-territorial reach, the dictionary, and how the Sanhita is read — including common intention in s. 3(5).. Show why this heading sits where it sits.\n\nLayer 2 — Work a second statutory illustration. Illustration (b): (b) A cheque upon a banker is a document Contrast it with illustration (a). The legal weight lies in the contrast.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 2. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 2.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
   ],
-
-  relatedTopics: ['s-1', 's-3', 'general-explanations', 'doctrine-mens-rea', 'sexual-offences'],
+  "cases": [
+    {
+      "name": "Independent Thought v. Union of India",
+      "year": 2017,
+      "citation": "(2017) 10 SCC 800",
+      "holding": "The marital-rape exception cannot apply to a wife under 18. The exception in s. 63 must be read with this holding and the POCSO overlap."
+    }
+  ],
+  "examTips": [
+    "Cite BNS s. 2 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "If a question asks where “child” is defined for BNS, the answer is s. 2 — not POCSO, though POCSO still applies on its own terms."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 2 (Definitions).",
+      "steps": [
+        "Introduce BNS s. 2 and Chapter I — Preliminary.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 2."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 2 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second statutory illustration and contrast it with the first.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 2, Definitions.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 2: Definitions.",
+    "First ingredient: In this Sanhita, unless the context otherwise requires, ––",
+    "10 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 2 — Definitions. Older books and judgments may still print a historical number (6–52 (definitions relocated)). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

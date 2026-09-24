@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Assault is an intentional act creating reasonable apprehension of immediate unlawful force; battery is the intentional and direct application of unlawful force without lawful justification. Both protect bodily integrity.",
   "study": "Assault is an intentional act creating reasonable apprehension of immediate unlawful force; battery is the intentional and direct application of unlawful force without lawful justification. Both protect bodily integrity.\\n\\nTrespass to the person developed as a direct-action branch protecting bodily autonomy. Assault focuses on apprehension; battery on actual unlawful contact. Consent, ordinary implied contact and lawful authority may justify conduct. The distinction matters because assault can exist without battery and vice versa.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

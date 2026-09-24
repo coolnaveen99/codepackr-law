@@ -1,216 +1,130 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance:
-    'Section 7 empowers the sentencing court, wherever an offender is punishable with imprisonment of either description, to direct that the imprisonment shall be wholly rigorous, wholly simple, or partly rigorous and partly simple. It is the successor to IPC s. 60 and controls only the character, not the length, of the term.',
-
-  study: `Section 7 is a sentencing-flexibility provision. When the offence-creating section permits imprisonment of either description (or uses language that leaves the description open), the court that passes sentence may order:
-
-• wholly rigorous imprisonment, or
-• wholly simple imprisonment, or
-• any part rigorous and the remainder simple.
-
-The power is unavailable when the offence section itself mandates only rigorous imprisonment (or only simple imprisonment). In that case the court is bound by the statutory prescription and cannot alter the character under s. 7.
-
-Rigorous imprisonment means imprisonment with hard labour; simple imprisonment means imprisonment without hard labour. The choice is a matter of judicial discretion guided by the nature of the offence, the circumstances of the offender, and the purposes of sentencing (retribution, deterrence, rehabilitation).
-
-Section 7 does not authorise any reduction of the maximum or minimum term fixed by the offence section; it operates only on the qualitative character of the imprisonment already authorised.
-
-Date-of-offence rule: for offences committed on or after 1 July 2024 cite BNS s. 7; the substance is identical to the former IPC s. 60.`,
-
-  sections: [
+  "study": "Introduction and meaning\nSentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple. BNS restatement of IPC 60. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 60. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 7 is the rule on “Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple”. The section provides that in every case in which an offender is punishable with imprisonment which may be of either description, it shall be competent to the Court which sentences such offender to direct in the sentence that such imprisonment shall be wholly rigorous, or that such imprisonment shall be wholly simple, or that any part of such imprisonment shall be rigorous and the rest simple. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 7 exists so that “Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple” has a closed legal test in Chapter II — Of Punishments. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Death, life, imprisonment, forfeiture, fine, and community service. How sentences combine, commute and enhance.\n\nThe provision in detail\n7. In every case in which an offender is punishable with imprisonment which may be of either description, it shall be competent to the Court which sentences such offender to direct in the sentence that such imprisonment shall be wholly rigorous, or that such imprisonment shall be wholly simple, or that any part of such imprisonment shall be rigorous and the rest simple\n\nEssential ingredients\n1. In every case in which an offender is punishable with imprisonment which may be of either description, it shall be competent to the Court which sentences such offender to direct in the sentence that such imprisonment shall be wholly rigorous, or that such imprisonment shall be wholly simple, or that any part of such imprisonment shall be rigorous and the rest simple",
+  "glance": "BNS s. 7 — Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple.",
+  "sections": [
     {
-      id: 's-7-module-1',
-      title: 'Provenance, Legislative Objective & Doctrinal Foundations',
-      order: 1,
-      content: [
-        'Section 7 succeeds IPC section 60 without material change. The BNS retains the classic three-way discretion (wholly rigorous / wholly simple / mixed).',
-        'Legislative objective: give the sentencing court calibrated control over the punitive severity of imprisonment when the offence section leaves the description open, while preventing the court from overriding a mandatory statutory choice of rigorous or simple imprisonment.',
-        'Doctrinal foundation: the character of imprisonment is part of the sentence. Once the offence section authorises “imprisonment of either description”, the court becomes competent under s. 7 to fix that character. The length of the term remains governed exclusively by the offence section and the general sentencing principles.',
-      ],
+      "id": "bns-7-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "7. In every case in which an offender is punishable with imprisonment which may be of either description, it shall be competent to the Court which sentences such offender to direct in the sentence that such imprisonment shall be wholly rigorous, or that such imprisonment shall be wholly simple, or that any part of such imprisonment shall be rigorous and the rest simple"
+      ]
     },
     {
-      id: 's-7-module-2',
-      title: 'Textual Anatomy, Provisos & Statutory Deconstruction',
-      order: 2,
-      content: [
-        'Operative clause: “In every case in which an offender is punishable with imprisonment which may be of either description, it shall be competent to the Court which sentences such offender to direct in the sentence that such imprisonment shall be wholly rigorous, or that such imprisonment shall be wholly simple, or that any part of such imprisonment shall be rigorous and the rest simple.”',
-        'Trigger condition: the offence must be punishable with imprisonment “which may be of either description”. If the offence section says “rigorous imprisonment only” or “simple imprisonment only”, s. 7 is inapplicable.',
-        'Three permissible orders: (a) wholly rigorous; (b) wholly simple; (c) mixed (any part rigorous, the rest simple).',
-        'No other conditions, explanations or illustrations appear in the section.',
-      ],
-    },
-    {
-      id: 's-7-module-3',
-      title: 'Mandatory Proving Ingredients & Essential Elements',
-      order: 3,
-      content: [
-        '1. The offender has been convicted of an offence that is punishable with imprisonment of either description (or equivalent open language).',
-        '2. The court is the court that is passing the sentence.',
-        '3. The court elects one of the three options: wholly rigorous, wholly simple, or mixed.',
-        '4. The direction is recorded in the sentence itself.',
-        'Negative ingredient: the offence section must not have locked the court into a single description (only rigorous or only simple).',
-      ],
-    },
-    {
-      id: 's-7-module-4',
-      title: 'Evidentiary Burdens under BSA 2023 (ss. 104–106 & s. 63)',
-      order: 4,
-      content: [
-        'Section 7 is a sentencing power, not an element of the offence. No additional burden under BSA ss. 104–106 arises for the application of s. 7 itself.',
-        'The prosecution has already proved the offence beyond reasonable doubt. At the sentencing stage the court considers the nature of the offence, the circumstances of the offender, and any mitigating or aggravating material (which may be proved on a preponderance).',
-        'If electronic records (medical reports, previous-conviction certificates, etc.) are relied upon at sentencing, BSA s. 63 compliance is required where the Court treats them as primary electronic evidence.',
-      ],
-    },
-    {
-      id: 's-7-module-5',
-      title: 'Procedural Roadmap, Competent Forum & Limitation Act Checkpoints',
-      order: 5,
-      content: [
-        'The direction under s. 7 is part of the judgment of sentence and is recorded at the same time as the term of imprisonment is fixed.',
-        'Appeal against the character of imprisonment lies to the ordinary appellate forum under the BNSS (together with any challenge to the length of the term or the conviction itself).',
-        'No independent limitation period attaches to the exercise of s. 7; it is exercised at the moment of sentencing.',
-        'Competent court: the court that is authorised to pass the sentence for the offence in question (Magistrate, Sessions Court, etc.).',
-      ],
-    },
+      "id": "bns-7-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "In every case in which an offender is punishable with imprisonment which may be of either description, it shall be competent to the Court which sentences such offender to direct in the sentence that such imprisonment shall be wholly rigorous, or that such imprisonment shall be wholly simple, or that any part of such imprisonment shall be rigorous and the rest simple"
+      ]
+    }
   ],
-
-  provisions: [
+  "examples": [
     {
-      actId: 'bns',
-      actName: 'Bharatiya Nyaya Sanhita, 2023',
-      provisionId: 'bns-7',
-      section: 's. 7',
-      title: 'Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple',
-    },
-  ],
-
-  examples: [
-    {
-      id: 's-7-ill-1',
-      title: 'Illustration 1 — Mixed sentence lawfully ordered',
-      illustrationType: 'statutory',
-      description:
-        'An offence is punishable with imprisonment of either description for a term which may extend to two years. The court, after considering the facts, sentences the offender to imprisonment for eighteen months, of which the first twelve months shall be rigorous and the remaining six months simple. The order is authorised by s. 7.',
+      "id": "bns-7-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple”. Name BNS s. 7, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
     },
     {
-      id: 's-7-ill-2',
-      title: 'Illustration 2 — Boundary defect (mandatory rigorous prescription)',
-      illustrationType: 'fail-scenario',
-      description:
-        'The offence section provides that the offender “shall be punished with rigorous imprisonment for a term which may extend to three years”. The court cannot, under s. 7, convert any part of the sentence into simple imprisonment. Section 7 is inapplicable because the offence is not punishable with imprisonment “which may be of either description”.',
-    },
+      "id": "bns-7-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 7 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-
-  hypotheticals: [
+  "hypotheticals": [
     {
-      id: 's-7-hypo',
-      title: 'Chamber Practice Hypothetical — Character of imprisonment on first conviction',
-      facts:
-        'E, a first-time offender of modest means, is convicted of an offence punishable with imprisonment of either description up to one year, or with fine, or with both. The court is minded to impose a short custodial sentence but wishes to avoid hard labour.',
-      question:
-        'May the court order the entire term to be simple imprisonment under s. 7?',
-      applicableLaw: 'BNS s. 7; the specific offence section; general sentencing principles.',
-      analysis:
-        '1. Threshold: The offence permits imprisonment of either description → s. 7 is attracted.\n2. Ingredient verification: The court is the sentencing court and may choose wholly simple imprisonment.\n3. Sentencing discretion: The first-offender status and modest means are relevant mitigating factors supporting a simple rather than rigorous sentence.\n4. Limits: The court cannot exceed the maximum term fixed by the offence section.',
-      conclusion:
-        'Yes. The court may lawfully direct that the imprisonment shall be wholly simple under s. 7.',
-    },
+      "id": "bns-7-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple” under BNS s. 7 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 7 (Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 7. Chapter II — Of Punishments. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 7 (Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple), Chapter II — Of Punishments.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) In every case in which an offender is punishable with imprisonment which may be of either description, it shall be competent to the Court which sentences such offender to direct in the sentence that such imprisonment shall be wholly rigorous, or that such imprisonment shall be wholly simple, or that any part of such imprisonment shall be rigorous and the rest simple\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 7 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 7 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 7. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-
-  distinctions: [
+  "misconceptions": [
     {
-      id: 's-7-dist-1',
-      title: 'Character of imprisonment (s. 7) vs Length of term (offence section)',
-      left: 's. 7 — character',
-      right: 'Offence section — length',
-      rows: [
-        { point: 'What it controls', left: 'Rigorous / simple / mixed', right: 'Maximum (and any minimum) term of imprisonment' },
-        { point: 'When available', left: 'Only when the offence permits either description', right: 'Always governed by the offence-creating section' },
-        { point: 'Effect of s. 7', left: 'Qualitative choice only', right: 'Unaffected by s. 7' },
-      ],
-    },
-  ],
-
-  misconceptions: [
-    {
-      id: 's-7-trap-1',
-      trap: 'Section 7 allows the court to reduce the maximum term of imprisonment.',
-      correction:
-        'Section 7 controls only the character (rigorous or simple). The length of the term remains governed exclusively by the offence section.',
+      "id": "bns-7-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 7."
     },
     {
-      id: 's-7-trap-2',
-      trap: 'Even when the offence section mandates rigorous imprisonment only, the court can still order simple imprisonment under s. 7.',
-      correction:
-        'Section 7 is available only when the offender is punishable with imprisonment “which may be of either description”. A mandatory rigorous prescription excludes s. 7.',
-    },
-  ],
-
-  cases: [],
-
-  questionsAndAnswers: [
-    {
-      id: 's-7-brief',
-      draftingCategory: 'brief',
-      question:
-        'Explain the power of the Court under Section 7 of the Bharatiya Nyaya Sanhita, 2023.',
-      answer: `I. ISSUE
-When may a court direct that imprisonment shall be rigorous, simple, or mixed?
-
-II. GOVERNING RULE
-Section 7 applies only where the offence is punishable with imprisonment of either description. The sentencing court may then order the imprisonment to be wholly rigorous, wholly simple, or partly each.
-
-III. APPLICATION
-Confirm that the offence section leaves the description open → exercise the three-way discretion → record the direction in the sentence. Length of term remains untouched.
-
-IV. CONCLUSION
-Character is flexible under s. 7; length is not.`,
-      explanation: 'IRAC note on s. 7.',
+      "id": "bns-7-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
     },
     {
-      id: 's-7-submissions',
-      draftingCategory: 'submissions',
-      question:
-        'Draft Written Submissions on the proper exercise of the discretion under BNS s. 7, distinguishing character from length of imprisonment.',
-      answer: `I. STATEMENT OF FACTS
-[Insert conviction, offence section language, and proposed term.]
-
-II. STATUTORY SCHEME
-Section 7 confers a three-way discretion solely over the character of imprisonment when the offence permits either description.
-
-III. MANDATORY INGREDIENTS
-(a) Offence punishable with imprisonment of either description;
-(b) Court is the sentencing court;
-(c) Direction recorded in the sentence.
-
-IV. LIMITS
-Cannot override a mandatory rigorous (or simple) prescription; cannot alter the maximum or minimum term.
-
-V. PRAYER
-[Appropriate prayer for wholly simple / mixed / wholly rigorous imprisonment consistent with the facts and the offence section.]`,
-      explanation: 'Senior Counsel submissions on character of imprisonment.',
+      "id": "bns-7-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-7-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 7 (Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple)",
+      "answer": "Introduction. BNS s. 7 deals with Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple. It sits in Chapter II — Of Punishments of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple. BNS restatement of IPC 60. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 60. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 7 is the rule on “Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple”. The section provides that in every case in which an offender is punishable with imprisonment which may be of either description, it shall be competent to the Court which sentences such offender to direct in the sentence that such imprisonment shall be wholly rigorous, or that such imprisonment shall be wholly simple, or that any part of such imprisonment shall be rigorous and the rest simple. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. In every case in which an offender is punishable with imprisonment which may be of either description, it shall be competent to the Court which sentences such offender to direct in the sentence that such imprisonment shall be wholly rigorous, or that such imprisonment shall be wholly simple, or that any part of such imprisonment shall be rigorous and the rest simple\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 7. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 7 is the complete current-law heading for Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
     },
+    {
+      "id": "bns-7-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 7 (Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 7 deals with Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple. It sits in Chapter II — Of Punishments of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple. BNS restatement of IPC 60. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 60. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 7 is the rule on “Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple”. The section provides that in every case in which an offender is punishable with imprisonment which may be of either description, it shall be competent to the Court which sentences such offender to direct in the sentence that such imprisonment shall be wholly rigorous, or that such imprisonment shall be wholly simple, or that any part of such imprisonment shall be rigorous and the rest simple. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. In every case in which an offender is punishable with imprisonment which may be of either description, it shall be competent to the Court which sentences such offender to direct in the sentence that such imprisonment shall be wholly rigorous, or that such imprisonment shall be wholly simple, or that any part of such imprisonment shall be rigorous and the rest simple\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 7. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 7 is the complete current-law heading for Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Death, life, imprisonment, forfeiture, fine, and community service. How sentences combine, commute and enhance.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 7. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 7.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
   ],
-
-  bareActPointers: [
-    'BNS s. 7',
-    'BNS s. 4(c) (imprisonment of two descriptions)',
-    'IPC s. 60 (historical)',
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 7 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
   ],
-
-  examTips: [
-    'Always state the trigger: “imprisonment which may be of either description”.',
-    'Emphasise that s. 7 never changes the length of the term.',
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 7 (Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple).",
+      "steps": [
+        "Introduce BNS s. 7 and Chapter II — Of Punishments.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 7."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 7 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
   ],
-
-  revisionPoints: [
-    'Three options: wholly rigorous / wholly simple / mixed.',
-    'Available only when the offence permits either description.',
-    'Controls character, not length.',
+  "answerSkeleton": [
+    "Introduction — BNS s. 7, Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
   ],
-
-  relatedTopics: ['s-4', 's-8'],
+  "revisionPoints": [
+    "BNS s. 7: Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple.",
+    "First ingredient: In every case in which an offender is punishable with imprisonment which may be of either description, it shall be competent to the Court which sentences such offender to direct in the sentence that such imprisonment shall be wholly rigorous, or that such imprisonment shall be wholly simple, or that any part of such imprisonment shall be rigorous and the rest simple",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 7 — Sentence may be (in certain cases of imprisonment) wholly or partly rigorous or simple. Older books and judgments may still print a historical number (60). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

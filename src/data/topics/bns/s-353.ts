@@ -1,32 +1,151 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 353 (and related): statements conducing to public mischief — making, publishing, or circulating any statement, rumour, or report with intent to cause (or which is likely to cause) fear or alarm to the public, or to induce a person to commit an offence against the State or public tranquillity, or to incite one class/community against another. Successor structure to IPC s. 505. Distinct from s. 152 (sovereignty/unity) and from defamation.',
-  study: `Public-mischief statements under the BNS:\n\nWhoever makes, publishes, or circulates any statement, rumour, or report:\n• with intent to cause, or which is likely to cause, fear or alarm to the public or a section of the public, whereby any person may be induced to commit an offence against the State or against public tranquillity; or\n• with intent to incite, or which is likely to incite, one class or community against another;\nis punished as provided.\n\nExceptions typically protect statements made in good faith to warn of danger or for other legitimate purposes as specified.\n\nCite the applicable BNS section for post-1 July 2024 acts. Distinguish from s. 152 (secession/rebellion/sovereignty) and from defamation (harm to individual reputation).`,
-  sections: [
-    { id: 's-353-m1', title: 'Provenance', order: 1, content: ['Successor structure to IPC s. 505. Statements/rumours conducing to public mischief.'] },
-    { id: 's-353-m2', title: 'Elements', order: 2, content: ['Make/publish/circulate statement, rumour, or report; intent or likelihood of fear/alarm inducing offence against State/tranquillity, or inciting class/community against another.'] },
-    { id: 's-353-m3', title: 'Ingredients', order: 3, content: ['(1) Statement/rumour/report. (2) Making, publishing, or circulating. (3) Intent or likelihood of the specified public harm. (4) No exception.'] },
-    { id: 's-353-m4', title: 'Evidence', order: 4, content: ['Content; medium; reach; intent; actual or likely effect on public order or inter-community relations.'] },
-    { id: 's-353-m5', title: 'Procedure', order: 5, content: ['Sensitive public-order offence; forum per BNSS Schedule; free-speech limits relevant in interpretation.'] },
+  "study": "Introduction and meaning\nStatements conducing to public mischief (old 505). Making, publishing or circulating a statement, rumour or report with intent to cause (or which is likely to cause) public alarm, mutiny, or an offence against the State or against public tranquillity — including by electronic means.\nIn student language: BNS s. 353 is the rule on “Statements conducing to public mischief”. The section provides that . (1) Whoever makes, publishes or circulates any statement, false information, rumour, or report, including through electronic means—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 353 exists so that “Statements conducing to public mischief” has a closed legal test in Chapter XIX — Of Criminal Intimidation, Insult, Annoyance, Defamation, etc.. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Threats, insult, public mischief, drunken misconduct, defamation.\n\nThe provision in detail\n353.. (1) Whoever makes, publishes or circulates any statement, false information, rumour, or report, including through electronic means—\n\n(a) with intent to cause, or which is likely to cause, any officer, soldier, sailor or airman in the Army, Navy or Air Force of India to mutiny or otherwise disregard or fail in his duty as such; or\n\n(b) with intent to cause, or which is likely to cause, fear or alarm to the public, or to any section of the public whereby any person may be induced to commit an offence against the State or against the public tranquillity; or\n\n(c) with intent to incite, or which is likely to incite, any class or community of persons to commit any offence against any other class or community,\n\nshall be punished with imprisonment which may extend to three years, or with fine, or with both\n\n(2) Whoever makes, publishes or circulates any statement or report containing false information, rumour or alarming news, including through electronic means, with intent to create or promote, or which is likely to create or promote, on grounds of religion, race, place of birth, residence, language, caste or community or any other ground whatsoever, feelings of enmity, hatred or ill will between different religious, racial, language or regional groups or castes or communities, shall be punished with imprisonment which may extend to three years, or with fine, or with both\n\n(3) Whoever commits an offence specified in sub-section (2) in any place of worship or in any assembly engaged in the performance of religious worship or religious ceremonies, shall be punished with imprisonment which may extend to five years and shall also be liable to fine\n\nEssential ingredients\n1. (1) Whoever makes, publishes or circulates any statement, false information, rumour, or report, including through electronic means—\n2. (a) with intent to cause, or which is likely to cause, any officer, soldier, sailor or airman in the Army, Navy or Air Force of India to mutiny or otherwise disregard or fail in his duty as such; or\n3. (b) with intent to cause, or which is likely to cause, fear or alarm to the public, or to any section of the public whereby any person may be induced to commit an offence against the State or against the public tranquillity; or\n4. (c) with intent to incite, or which is likely to incite, any class or community of persons to commit any offence against any other class or community,\n5. shall be punished with imprisonment which may extend to three years, or with fine, or with both\n6. (2) Whoever makes, publishes or circulates any statement or report containing false information, rumour or alarming news, including through electronic means, with intent to create or promote, or which is likely to create or promote, on grounds of religion, race, place of birth, residence, language, caste or community or any other ground whatsoever, feelings of enmity, hatred or ill will between different religious, racial, language or regional groups or castes or communities, shall be punished with imprisonment which may extend to three years, or with fine, or with both\n7. (3) Whoever commits an offence specified in sub-section\n8. (2) in any place of worship or in any assembly engaged in the performance of religious worship or religious ceremonies, shall be punished with imprisonment which may extend to five years and shall also be liable to fine\n\nExceptions, limitations and provisos\nException.—It does not amount to an offence, within the meaning of this section, when the person making, publishing or circulating any such statement, false information, rumor or report, has reasonable grounds for believing that such statement, false information, rumor or report is true and makes, publishes or circulates it in good faith and without any such intent as aforesaid",
+  "glance": "BNS s. 353 — Statements conducing to public mischief.",
+  "sections": [
+    {
+      "id": "bns-353-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "353.. (1) Whoever makes, publishes or circulates any statement, false information, rumour, or report, including through electronic means—",
+        "(a) with intent to cause, or which is likely to cause, any officer, soldier, sailor or airman in the Army, Navy or Air Force of India to mutiny or otherwise disregard or fail in his duty as such; or",
+        "(b) with intent to cause, or which is likely to cause, fear or alarm to the public, or to any section of the public whereby any person may be induced to commit an offence against the State or against the public tranquillity; or",
+        "(c) with intent to incite, or which is likely to incite, any class or community of persons to commit any offence against any other class or community,",
+        "shall be punished with imprisonment which may extend to three years, or with fine, or with both",
+        "(2) Whoever makes, publishes or circulates any statement or report containing false information, rumour or alarming news, including through electronic means, with intent to create or promote, or which is likely to create or promote, on grounds of religion, race, place of birth, residence, language, caste or community or any other ground whatsoever, feelings of enmity, hatred or ill will between different religious, racial, language or regional groups or castes or communities, shall be punished with imprisonment which may extend to three years, or with fine, or with both",
+        "(3) Whoever commits an offence specified in sub-section (2) in any place of worship or in any assembly engaged in the performance of religious worship or religious ceremonies, shall be punished with imprisonment which may extend to five years and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-353-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Whoever makes, publishes or circulates any statement, false information, rumour, or report, including through electronic means—",
+        "(a) with intent to cause, or which is likely to cause, any officer, soldier, sailor or airman in the Army, Navy or Air Force of India to mutiny or otherwise disregard or fail in his duty as such; or",
+        "(b) with intent to cause, or which is likely to cause, fear or alarm to the public, or to any section of the public whereby any person may be induced to commit an offence against the State or against the public tranquillity; or",
+        "(c) with intent to incite, or which is likely to incite, any class or community of persons to commit any offence against any other class or community,",
+        "shall be punished with imprisonment which may extend to three years, or with fine, or with both",
+        "(2) Whoever makes, publishes or circulates any statement or report containing false information, rumour or alarming news, including through electronic means, with intent to create or promote, or which is likely to create or promote, on grounds of religion, race, place of birth, residence, language, caste or community or any other ground whatsoever, feelings of enmity, hatred or ill will between different religious, racial, language or regional groups or castes or communities, shall be punished with imprisonment which may extend to three years, or with fine, or with both",
+        "(3) Whoever commits an offence specified in sub-section",
+        "(2) in any place of worship or in any assembly engaged in the performance of religious worship or religious ceremonies, shall be punished with imprisonment which may extend to five years and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-353-exc",
+      "title": "Exceptions and provisos",
+      "order": 6,
+      "content": [
+        "Exception.—It does not amount to an offence, within the meaning of this section, when the person making, publishing or circulating any such statement, false information, rumor or report, has reasonable grounds for believing that such statement, false information, rumor or report is true and makes, publishes or circulates it in good faith and without any such intent as aforesaid"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-353', section: 's. 353', title: 'Statements conducing to public mischief' }],
-  examples: [
-    { id: 's-353-ex1', title: 'Rumour causing alarm', illustrationType: 'practical', description: 'A circulates a false rumour intending to cause public fear so that people riot. The offence is made out.' },
-    { id: 's-353-ex2', title: 'Good-faith warning', illustrationType: 'fail-scenario', description: 'A in good faith warns the public of a genuine danger. An exception may protect the statement.' },
+  "examples": [
+    {
+      "id": "bns-353-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Statements conducing to public mischief”. Name BNS s. 353, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-353-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 353 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-353-hypo', title: 'Public mischief statement', facts: 'Accused publishes a communal rumour likely to incite one community against another.', question: 'Is the offence made out?', applicableLaw: 'BNS public-mischief statement provisions.', analysis: 'Publish + likelihood of inciting class/community against another — yes, absent exception.', conclusion: 'Offence established.' }],
-  distinctions: [{ id: 's-353-dist', title: 's. 353 vs s. 152 vs Defamation', left: 's. 353 (public mischief statements)', right: 's. 152 / Defamation', rows: [{ point: 'Focus', left: 'Fear/alarm inducing offence against State/tranquillity, or inter-community incitement', right: 'Secession/rebellion/sovereignty / harm to individual reputation' }] }],
-  misconceptions: [{ id: 's-353-trap', trap: 'Any false statement online is this offence.', correction: 'The statement must be made/published/circulated with intent or likelihood of the specified public harms (fear/alarm inducing offence against State/tranquillity, or inter-community incitement). Ordinary falsehoods without that public dimension are not this offence.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-353-brief', draftingCategory: 'brief', question: 'Explain statements conducing to public mischief under the BNS.', answer: 'Making, publishing, or circulating a statement, rumour, or report with intent to cause (or which is likely to cause) fear or alarm inducing an offence against the State or public tranquillity, or with intent to incite (or which is likely to incite) one class or community against another. Exceptions protect good-faith warnings and similar conduct.', explanation: 'Short note.' },
-    { id: 's-353-sub', draftingCategory: 'submissions', question: 'Submissions on public-mischief statements.', answer: 'I. Statement/rumour/report. II. Publish/circulate. III. Intent or likelihood of specified public harm. IV. Exception if any. V. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-353-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Statements conducing to public mischief” under BNS s. 353 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 353 (Statements conducing to public mischief) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 353. Chapter XIX — Of Criminal Intimidation, Insult, Annoyance, Defamation, etc.. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 353 (Statements conducing to public mischief), Chapter XIX — Of Criminal Intimidation, Insult, Annoyance, Defamation, etc..\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever makes, publishes or circulates any statement, false information, rumour, or report, including through electronic means—\n   (2) (a) with intent to cause, or which is likely to cause, any officer, soldier, sailor or airman in the Army, Navy or Air Force of India to mutiny or otherwise disregard or fail in his duty as such; or\n   (3) (b) with intent to cause, or which is likely to cause, fear or alarm to the public, or to any section of the public whereby any person may be induced to commit an offence against the State or against the public tranquillity; or\n   (4) (c) with intent to incite, or which is likely to incite, any class or community of persons to commit any offence against any other class or community,\n   (5) shall be punished with imprisonment which may extend to three years, or with fine, or with both\n   (6) (2) Whoever makes, publishes or circulates any statement or report containing false information, rumour or alarming news, including through electronic means, with intent to create or promote, or which is likely to create or promote, on grounds of religion, race, place of birth, residence, language, caste or community or any other ground whatsoever, feelings of enmity, hatred or ill will between different religious, racial, language or regional groups or castes or communities, shall be punished with imprisonment which may extend to three years, or with fine, or with both\n   (7) (3) Whoever commits an offence specified in sub-section\n   (8) (2) in any place of worship or in any assembly engaged in the performance of religious worship or religious ceremonies, shall be punished with imprisonment which may extend to five years and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 353 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 353 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 353. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS public-mischief statement provisions', 'BNS s. 152', 'BNS s. 356', 'IPC s. 505 (historical)'],
-  examTips: ['Distinguish from s. 152 (sovereignty) and defamation.', 'State the public-order / inter-community focus.'],
-  revisionPoints: ['Statement/rumour + intent/likelihood of public fear/alarm or inter-community incitement.', 'Exceptions for good faith.', 'Not the same as sedition-replacement (s. 152) or defamation.'],
-  relatedTopics: ['s-152', 's-189', 's-356', 's-351'],
+  "misconceptions": [
+    {
+      "id": "bns-353-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 353."
+    },
+    {
+      "id": "bns-353-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-353-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-353-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 353 (Statements conducing to public mischief)",
+      "answer": "Introduction. BNS s. 353 deals with Statements conducing to public mischief. It sits in Chapter XIX — Of Criminal Intimidation, Insult, Annoyance, Defamation, etc. of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Statements conducing to public mischief (old 505). Making, publishing or circulating a statement, rumour or report with intent to cause (or which is likely to cause) public alarm, mutiny, or an offence against the State or against public tranquillity — including by electronic means.\n\nLegal rule. In student language: BNS s. 353 is the rule on “Statements conducing to public mischief”. The section provides that . (1) Whoever makes, publishes or circulates any statement, false information, rumour, or report, including through electronic means—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever makes, publishes or circulates any statement, false information, rumour, or report, including through electronic means—\n2. (a) with intent to cause, or which is likely to cause, any officer, soldier, sailor or airman in the Army, Navy or Air Force of India to mutiny or otherwise disregard or fail in his duty as such; or\n3. (b) with intent to cause, or which is likely to cause, fear or alarm to the public, or to any section of the public whereby any person may be induced to commit an offence against the State or against the public tranquillity; or\n4. (c) with intent to incite, or which is likely to incite, any class or community of persons to commit any offence against any other class or community,\n5. shall be punished with imprisonment which may extend to three years, or with fine, or with both\n6. (2) Whoever makes, publishes or circulates any statement or report containing false information, rumour or alarming news, including through electronic means, with intent to create or promote, or which is likely to create or promote, on grounds of religion, race, place of birth, residence, language, caste or community or any other ground whatsoever, feelings of enmity, hatred or ill will between different religious, racial, language or regional groups or castes or communities, shall be punished with imprisonment which may extend to three years, or with fine, or with both\n7. (3) Whoever commits an offence specified in sub-section\n8. (2) in any place of worship or in any assembly engaged in the performance of religious worship or religious ceremonies, shall be punished with imprisonment which may extend to five years and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExceptions / provisos. Exception.—It does not amount to an offence, within the meaning of this section, when the person making, publishing or circulating any such statement, false information, rumor or report, has reasonable grounds for believing that such statement, false information, rumor or report is true and makes, publishes or circulates it in good faith and without any such intent as aforesaid State the exception and then say whether it is attracted on the facts.\n\nConclusion. BNS s. 353 is the complete current-law heading for Statements conducing to public mischief. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-353-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 353 (Statements conducing to public mischief) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 353 deals with Statements conducing to public mischief. It sits in Chapter XIX — Of Criminal Intimidation, Insult, Annoyance, Defamation, etc. of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Statements conducing to public mischief (old 505). Making, publishing or circulating a statement, rumour or report with intent to cause (or which is likely to cause) public alarm, mutiny, or an offence against the State or against public tranquillity — including by electronic means.\n\nLegal rule. In student language: BNS s. 353 is the rule on “Statements conducing to public mischief”. The section provides that . (1) Whoever makes, publishes or circulates any statement, false information, rumour, or report, including through electronic means—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever makes, publishes or circulates any statement, false information, rumour, or report, including through electronic means—\n2. (a) with intent to cause, or which is likely to cause, any officer, soldier, sailor or airman in the Army, Navy or Air Force of India to mutiny or otherwise disregard or fail in his duty as such; or\n3. (b) with intent to cause, or which is likely to cause, fear or alarm to the public, or to any section of the public whereby any person may be induced to commit an offence against the State or against the public tranquillity; or\n4. (c) with intent to incite, or which is likely to incite, any class or community of persons to commit any offence against any other class or community,\n5. shall be punished with imprisonment which may extend to three years, or with fine, or with both\n6. (2) Whoever makes, publishes or circulates any statement or report containing false information, rumour or alarming news, including through electronic means, with intent to create or promote, or which is likely to create or promote, on grounds of religion, race, place of birth, residence, language, caste or community or any other ground whatsoever, feelings of enmity, hatred or ill will between different religious, racial, language or regional groups or castes or communities, shall be punished with imprisonment which may extend to three years, or with fine, or with both\n7. (3) Whoever commits an offence specified in sub-section\n8. (2) in any place of worship or in any assembly engaged in the performance of religious worship or religious ceremonies, shall be punished with imprisonment which may extend to five years and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExceptions / provisos. Exception.—It does not amount to an offence, within the meaning of this section, when the person making, publishing or circulating any such statement, false information, rumor or report, has reasonable grounds for believing that such statement, false information, rumor or report is true and makes, publishes or circulates it in good faith and without any such intent as aforesaid State the exception and then say whether it is attracted on the facts.\n\nConclusion. BNS s. 353 is the complete current-law heading for Statements conducing to public mischief. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Threats, insult, public mischief, drunken misconduct, defamation.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 353. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 353.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 353 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "If the facts are a rumour about a riot in the next town, think 353, not 191 (rioting needs the assembly)."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 353 (Statements conducing to public mischief).",
+      "steps": [
+        "Introduce BNS s. 353 and Chapter XIX — Of Criminal Intimidation, Insult, Annoyance, Defamation, etc..",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 353."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 353 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 353, Statements conducing to public mischief.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 353: Statements conducing to public mischief.",
+    "First ingredient: (1) Whoever makes, publishes or circulates any statement, false information, rumour, or report, including through electronic means—",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 353 — Statements conducing to public mischief. Older books and judgments may still print a historical number (505). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

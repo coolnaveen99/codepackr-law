@@ -1,32 +1,140 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 122 (and related): voluntarily causing hurt or grievous hurt by dangerous weapons when done to extort or constrain — combination of the dangerous-weapon enhancement and the extort/constrain purpose. Successor structure to IPC ss. 326/329 overlap cases. Highest hurt-scale provisions short of homicide.',
-  study: `The BNS provides enhanced punishment when hurt or grievous hurt is caused by dangerous weapons or means and/or for the purpose of extortion or illegal constraint.\n\nWhen both features are present (dangerous means + extort/constrain purpose), the highest non-homicide hurt scales typically apply.\n\nKey analytical steps\n1. Is there hurt or grievous hurt?\n2. Was it voluntary (intention or knowledge)?\n3. Dangerous weapon/means? (s. 118 pathway)\n4. Purpose to extort or constrain? (s. 120 pathway)\n5. If death results → move to homicide (ss. 100–106).\n\nCite the applicable BNS section for post-1 July 2024 acts.`,
-  sections: [
-    { id: 's-122-m1', title: 'Provenance', order: 1, content: ['Combination of dangerous-weapon and extort/constrain enhancements in the hurt scheme.'] },
-    { id: 's-122-m2', title: 'Analytical Path', order: 2, content: ['Hurt/GH → voluntary → dangerous means? → extort/constrain purpose? → if death, homicide.'] },
-    { id: 's-122-m3', title: 'Ingredients', order: 3, content: ['(1) Hurt or GH. (2) Voluntarily. (3) Dangerous weapon/means and/or extort-constrain purpose as charged.'] },
-    { id: 's-122-m4', title: 'Evidence', order: 4, content: ['Injury; weapon; purpose (demands, constraint); intention/knowledge.'] },
-    { id: 's-122-m5', title: 'Procedure', order: 5, content: ['Serious hurt offence; may be joined with extortion/robbery/homicide attempts.'] },
+  "study": "Introduction and meaning\nVoluntarily causing hurt or grievous hurt on provocation. BNS restatement of IPC 334 / 335. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 334 / 335. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 122 is the rule on “Voluntarily causing hurt or grievous hurt on provocation”. The section provides that (1) Whoever voluntarily causes hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to five thousand rupees, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 122 exists so that “Voluntarily causing hurt or grievous hurt on provocation” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n122. (1) Whoever voluntarily causes hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to five thousand rupees, or with both\n\n(2) Whoever voluntarily causes grievous hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause grievous hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine which may extend to ten thousand rupees, or with both\n\nEssential ingredients\n1. (1) Whoever voluntarily causes hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to five thousand rupees, or with both\n2. (2) Whoever voluntarily causes grievous hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause grievous hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine which may extend to ten thousand rupees, or with both\n\nExplanations\nExplanation.—This section is subject to the same proviso as Exception 1 of section 101",
+  "glance": "BNS s. 122 — Voluntarily causing hurt or grievous hurt on provocation.",
+  "sections": [
+    {
+      "id": "bns-122-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "122. (1) Whoever voluntarily causes hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to five thousand rupees, or with both",
+        "(2) Whoever voluntarily causes grievous hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause grievous hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine which may extend to ten thousand rupees, or with both"
+      ]
+    },
+    {
+      "id": "bns-122-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Whoever voluntarily causes hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to five thousand rupees, or with both",
+        "(2) Whoever voluntarily causes grievous hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause grievous hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine which may extend to ten thousand rupees, or with both"
+      ]
+    },
+    {
+      "id": "bns-122-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation.—This section is subject to the same proviso as Exception 1 of section 101"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-122', section: 's. 122', title: 'Hurt/GH by dangerous means to extort or constrain (enhanced pathway)' }],
-  examples: [
-    { id: 's-122-ex1', title: 'Knife used to extort', illustrationType: 'practical', description: 'A uses a knife to cause hurt while demanding money. Dangerous means + extort purpose → highest hurt enhancement (short of homicide).' },
-    { id: 's-122-ex2', title: 'Death results', illustrationType: 'fail-scenario', description: 'If the victim dies, the analysis moves to ss. 100–106; the hurt sections no longer govern the death.' },
+  "examples": [
+    {
+      "id": "bns-122-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Voluntarily causing hurt or grievous hurt on provocation”. Name BNS s. 122, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-122-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 122 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-122-hypo', title: 'Enhanced hurt pathway', facts: 'Accused uses acid to cause injury while demanding property.', question: 'Which pathway?', applicableLaw: 'BNS hurt enhancements; s. 308.', analysis: 'Corrosive = dangerous means; demand = extort purpose; if death, homicide. Otherwise highest hurt scale + extortion.', conclusion: 'Enhanced hurt + extortion pathway.' }],
-  distinctions: [],
-  misconceptions: [{ id: 's-122-trap', trap: 'Dangerous-weapon hurt is always attempted murder.', correction: 'Attempted murder requires s. 100/101 mens rea. Dangerous-weapon hurt without that mens rea remains under the hurt scheme, not attempt to murder.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-122-brief', draftingCategory: 'brief', question: 'How should hurt by dangerous means for extortion be analysed under the BNS?', answer: 'Check: (1) hurt or GH; (2) voluntary; (3) dangerous weapon/means; (4) extort or constrain purpose; (5) if death results, move to homicide. The combination of dangerous means and extort purpose attracts the highest non-homicide hurt scales.', explanation: 'Short note.' },
-    { id: 's-122-sub', draftingCategory: 'submissions', question: 'Submissions on enhanced hurt pathway.', answer: 'I. Hurt/GH. II. Dangerous means. III. Extort/constrain purpose. IV. No death (or alternatively homicide). V. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-122-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Voluntarily causing hurt or grievous hurt on provocation” under BNS s. 122 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 122 (Voluntarily causing hurt or grievous hurt on provocation) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 122. Chapter VI — Of Offences Affecting the Human Body. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 122 (Voluntarily causing hurt or grievous hurt on provocation), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever voluntarily causes hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to five thousand rupees, or with both\n   (2) (2) Whoever voluntarily causes grievous hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause grievous hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine which may extend to ten thousand rupees, or with both\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 122 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 122. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS hurt-enhancement provisions', 'BNS s. 118', 'BNS s. 120', 'BNS ss. 100–106', 'BNS s. 308'],
-  examTips: ['Always run the analytical path: hurt → voluntary → dangerous means → purpose → death?', 'Do not jump to attempt to murder without s. 100/101 mens rea.'],
-  revisionPoints: ['Dangerous means + extort purpose = highest hurt scale.', 'Death → homicide pathway.', 'Attempt to murder needs homicidal mens rea.'],
-  relatedTopics: ['s-115', 's-117', 's-118', 's-120', 's-100', 's-308'],
+  "misconceptions": [
+    {
+      "id": "bns-122-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 122."
+    },
+    {
+      "id": "bns-122-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-122-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-122-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 122 (Voluntarily causing hurt or grievous hurt on provocation)",
+      "answer": "Introduction. BNS s. 122 deals with Voluntarily causing hurt or grievous hurt on provocation. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Voluntarily causing hurt or grievous hurt on provocation. BNS restatement of IPC 334 / 335. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 334 / 335. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 122 is the rule on “Voluntarily causing hurt or grievous hurt on provocation”. The section provides that (1) Whoever voluntarily causes hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to five thousand rupees, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever voluntarily causes hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to five thousand rupees, or with both\n2. (2) Whoever voluntarily causes grievous hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause grievous hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine which may extend to ten thousand rupees, or with both\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—This section is subject to the same proviso as Exception 1 of section 101 An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 122. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 122 is the complete current-law heading for Voluntarily causing hurt or grievous hurt on provocation. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-122-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 122 (Voluntarily causing hurt or grievous hurt on provocation) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 122 deals with Voluntarily causing hurt or grievous hurt on provocation. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Voluntarily causing hurt or grievous hurt on provocation. BNS restatement of IPC 334 / 335. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 334 / 335. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 122 is the rule on “Voluntarily causing hurt or grievous hurt on provocation”. The section provides that (1) Whoever voluntarily causes hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to five thousand rupees, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever voluntarily causes hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to five thousand rupees, or with both\n2. (2) Whoever voluntarily causes grievous hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause grievous hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine which may extend to ten thousand rupees, or with both\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—This section is subject to the same proviso as Exception 1 of section 101 An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 122. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 122 is the complete current-law heading for Voluntarily causing hurt or grievous hurt on provocation. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 122. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 122.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 122 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 122 (Voluntarily causing hurt or grievous hurt on provocation).",
+      "steps": [
+        "Introduce BNS s. 122 and Chapter VI — Of Offences Affecting the Human Body.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 122."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 122 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 122, Voluntarily causing hurt or grievous hurt on provocation.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 122: Voluntarily causing hurt or grievous hurt on provocation.",
+    "First ingredient: (1) Whoever voluntarily causes hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to five thousand rupees, or with both",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 122 — Voluntarily causing hurt or grievous hurt on provocation. Older books and judgments may still print a historical number (334 / 335). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

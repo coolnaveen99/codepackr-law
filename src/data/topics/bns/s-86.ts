@@ -1,25 +1,169 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'BNS Section 86: Cruelty defined. This note explains its statutory scope within the Offences relating to marriage cluster and the connected BNS, BNSS and BSA issues that must be checked before application.',
-  study: `Section 86 — Cruelty defined.\n\nDefines cruelty for s. 85: wilful conduct likely to drive the woman to suicide or cause grave injury, or harassment to coerce dowry. Charge 85, define with 86. Historical IPC concordance: 498A Expl..\n\nRead the enacted text with its definitions, explanations, provisos and exceptions. For pre-1 July 2024 conduct, separately apply the repeal-and-savings framework and Article 20(1).`,
-  sections:[
-    {id:'s-86-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:['Chapter v; cluster: Offences relating to marriage.','Defines cruelty for s. 85: wilful conduct likely to drive the woman to suicide or cause grave injury, or harassment to coerce dowry. Charge 85, define with 86.','Historical IPC concordance: 498A Expl..]},
-    {id:'s-86-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:['Operative title: “Cruelty defined”.','Read every sub-section, proviso, explanation and exception in the enacted text.','Identify the connected punishment provision before advising on sentence.]},
-    {id:'s-86-m3',title:'Application Ingredients & Issue-Spotting',order:3,content:['Identify the protected legal interest or statutory situation addressed by the provision.','Map each material fact to the enacted words of s. 86.','Check connected definitions, exceptions and adjacent provisions before concluding that the section is attracted.']},
-    {id:'s-86-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:['The prosecution ordinarily bears the burden of proving a criminal charge beyond reasonable doubt, subject to any applicable statutory presumption.','Identify the fact each side must establish and distinguish admissibility from evidentiary weight under the BSA 2023.','Electronic material must satisfy the applicable BSA requirements; digital availability alone does not establish authenticity or weight.']},
-    {id:'s-86-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:['Check the BNSS First Schedule and connected offence/punishment provision for cognizability, bailability and trial court.','Check territorial jurisdiction, charge/joinder issues and any sanction or statutory permission requirement.','Verify BNSS limitation provisions, if applicable.','For pre-1 July 2024 conduct, separately analyze the BNS savings provision and Article 20(1).']},
+  "study": "Introduction and meaning\nDefines cruelty for s. 85: wilful conduct likely to drive the woman to suicide or cause grave injury, or harassment to coerce dowry. Charge 85, define with 86. BNS restatement of IPC 498A Expl.. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 86 is the rule on “Cruelty defined”. The section provides that for the purposes of section 85, “cruelty” means—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 86 exists so that “Cruelty defined” has a closed legal test in Chapter V — Of Offences Against Woman and Child. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.\n\nThe provision in detail\n86. For the purposes of section 85, “cruelty” means—\n\n(a) any wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman; or\n\n(b) harassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand\n\nDefinitions and key terms\n“cruelty” — — (a) any wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman.\n\nEssential ingredients\n1. For the purposes of section 85, “cruelty” means—\n2. (a) any wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman; or\n3. (b) harassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand",
+  "glance": "BNS s. 86 — Cruelty defined.",
+  "sections": [
+    {
+      "id": "bns-86-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "86. For the purposes of section 85, “cruelty” means—",
+        "(a) any wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman; or",
+        "(b) harassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand"
+      ]
+    },
+    {
+      "id": "bns-86-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "For the purposes of section 85, “cruelty” means—",
+        "(a) any wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman; or",
+        "(b) harassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand"
+      ]
+    },
+    {
+      "id": "bns-86-defs",
+      "title": "Definitions and key terms",
+      "order": 3,
+      "content": [
+        "“cruelty” — — (a) any wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman."
+      ]
+    }
   ],
-  provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-86',section:'s. 86',title:'Cruelty defined'}],
-  examples:[{id:'s-86-ex1',title:'Provision applies — statutory conditions satisfied',illustrationType:'practical',description:'The alleged conduct or circumstance falls within the statutory subject of s. 86 and the connected conditions are proved.'},{id:'s-86-ex2',title:'Boundary defect — an ingredient is missing',illustrationType:'fail-scenario',description:'The facts resemble the section, but a required condition, exception, qualification or causal link is not established.'}],
-  hypotheticals:[{id:'s-86-hypo',title:'Chamber problem — BNS s. 86',facts:'The prosecution invokes s. 86 on facts within the Offences relating to marriage cluster. The defence disputes the statutory fit.',question:'Do the proved facts satisfy s. 86?',applicableLaw:'BNS s. 86; connected BNS provisions; applicable BNSS procedure; BSA 2023 evidence rules.',analysis:'1. Identify the exact statutory words. 2. Break them into conditions. 3. Test each condition against the evidence. 4. Apply exceptions or provisos. 5. Identify the correct procedural and punishment consequence.',conclusion:'Application turns on the enacted ingredients of s. 86, not on the historical IPC number alone.'}],
-  distinctions:[{id:'s-86-dist',title:'BNS provision vs historical IPC concordance',left:'BNS s. 86',right:'Historical IPC: 498A Expl.',rows:[{point:'Governing law',left:'BNS for post-commencement offences',right:'IPC is historical where saved or relevant'},{point:'Method',left:'Start with enacted BNS wording',right:'Use historical IPC only to understand continuity/change'},{point:'Transition',left:'Check commencement and savings',right:'Pre-commencement offences may remain governed by saved IPC law'}]}],
-  misconceptions:[{id:'s-86-trap',trap:'The IPC number can automatically be substituted for BNS s. 86.',correction:'The enacted BNS text controls post-commencement offences; historical concordance is not a substitute for reading the BNS provision.'},{id:'s-86-trap-2',trap:'The section heading alone proves liability.',correction:'All statutory ingredients and relevant exceptions must be established on the evidence.'}],
-  cases:[],
-  questionsAndAnswers:[{id:'s-86-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment of BNS s. 86.',answer:`I. ISSUE — precise statutory question.\nII. RULE — enacted ingredients, connected provisions and exceptions.\nIII. APPLICATION — map evidence to each condition.\nIV. CONCLUSION — whether s. 86 is attracted and the connected consequence.`,explanation:'Chamber-style structured analysis.'},{id:'s-86-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 86.',answer:`I. STATUTORY SCHEME.\nII. INGREDIENTS.\nIII. EVIDENCE AND BURDEN.\nIV. RESPONSE TO EXCEPTIONS AND DEFENCES.\nV. PROCEDURE AND OPERATIVE RELIEF.`,explanation:'Courtroom submission structure without unverified authorities.'}],
-  bareActPointers:['BNS s. 86 — Cruelty defined','Connected BNS definitions/exceptions','BNSS First Schedule and applicable procedure','BSA 2023 burden and evidence provisions','BNS repeal-and-savings framework for pre-1 July 2024 conduct'],
-  examTips:['Start with the enacted BNS wording.','Check connected definitions, exceptions, procedure and punishment.','Use IPC numbering only as historical concordance.'],
-  revisionPoints:['s. 86: Cruelty defined.','Cluster: Offences relating to marriage.','IPC concordance: 498A Expl..','Verify BNSS procedure and BSA evidence requirements.'],
-  relatedTopics:['s-85'],
+  "examples": [
+    {
+      "id": "bns-86-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Cruelty defined”. Name BNS s. 86, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-86-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 86 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-86-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Cruelty defined” under BNS s. 86 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 86 (Cruelty defined) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 86. Chapter V — Of Offences Against Woman and Child. Connected: BNS s. 85.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 86 (Cruelty defined), Chapter V — Of Offences Against Woman and Child.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) For the purposes of section 85, “cruelty” means—\n   (2) (a) any wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman; or\n   (3) (b) harassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 86 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 86 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 86. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "distinctions": [
+    {
+      "id": "bns-86-dist",
+      "title": "BNS s. 86 and connected sections",
+      "left": "BNS s. 86",
+      "right": "BNS s. 85",
+      "rows": [
+        {
+          "point": "Heading",
+          "left": "Cruelty defined",
+          "right": "Read the neighbour’s title on its own page before you write."
+        },
+        {
+          "point": "What you must prove",
+          "left": "For the purposes of section 85, “cruelty” means—",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+        },
+        {
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 86.",
+          "right": "Citing s. 86 where the neighbour actually applies."
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-86-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 86."
+    },
+    {
+      "id": "bns-86-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-86-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-86-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 86 (Cruelty defined)",
+      "answer": "Introduction. BNS s. 86 deals with Cruelty defined. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Defines cruelty for s. 85: wilful conduct likely to drive the woman to suicide or cause grave injury, or harassment to coerce dowry. Charge 85, define with 86. BNS restatement of IPC 498A Expl.. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 86 is the rule on “Cruelty defined”. The section provides that for the purposes of section 85, “cruelty” means—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. For the purposes of section 85, “cruelty” means—\n2. (a) any wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman; or\n3. (b) harassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand\n\nDefinitions. The core statutory definitions must be established:\n“cruelty” — (a) any wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman.\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 86. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 85. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 86 is the complete current-law heading for Cruelty defined. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-86-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 86 (Cruelty defined) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 86 deals with Cruelty defined. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Defines cruelty for s. 85: wilful conduct likely to drive the woman to suicide or cause grave injury, or harassment to coerce dowry. Charge 85, define with 86. BNS restatement of IPC 498A Expl.. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 86 is the rule on “Cruelty defined”. The section provides that for the purposes of section 85, “cruelty” means—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. For the purposes of section 85, “cruelty” means—\n2. (a) any wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman; or\n3. (b) harassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand\n\nDefinitions. The core statutory definitions must be established:\n“cruelty” — (a) any wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman.\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 86. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 85. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 86 is the complete current-law heading for Cruelty defined. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 86 with BNS s. 85. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 86.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 86 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 86 (Cruelty defined).",
+      "steps": [
+        "Introduce BNS s. 86 and Chapter V — Of Offences Against Woman and Child.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 86."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 86 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Distinguish BNS s. 86 from BNS s. 85.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 86, Cruelty defined.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 86: Cruelty defined.",
+    "First ingredient: For the purposes of section 85, “cruelty” means—",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 86 — Cruelty defined. Older books and judgments may still print a historical number (498A Expl.). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": [
+    "s-85"
+  ]
 }
+
 export default content

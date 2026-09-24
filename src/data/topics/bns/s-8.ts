@@ -1,226 +1,159 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance:
-    'Section 8 consolidates the rules governing the amount of fine, imprisonment in default of payment of fine (or of community service), proportional termination on part payment, and related recovery mechanics. It is the successor to the cluster of IPC sections 63–70 and now expressly covers default of community service.',
-
-  study: `Section 8 is the operational code for fines under the BNS. It performs five principal functions:
-
-(1) Where no maximum sum is expressed, the fine is unlimited but must not be excessive.
-(2) In every case in which a fine is imposed (whether the offence is punishable with imprisonment as well as fine, or with imprisonment or fine, or with fine only), the court may direct that in default of payment the offender shall suffer a further term of imprisonment; that term is in excess of any other imprisonment to which the offender may have been sentenced or may become liable under commutation.
-(3) When the offence is punishable with imprisonment as well as fine, the default term shall not exceed one-fourth of the maximum term of imprisonment fixed for the offence.
-(4) The imprisonment in default of fine (or of community service) may be of any description to which the offender might have been sentenced for the offence, except that when the offence is punishable only with fine or community service the default imprisonment must be simple and is subject to the monetary ceilings in sub-section (5).
-(5) Default imprisonment terminates on full payment or levy of the fine, and terminates proportionally on part payment (illustrated in the section itself).
-
-Community service (the new punishment under s. 4(f)) is expressly brought within the default regime: failure to perform community service can attract the same default-imprisonment consequences as failure to pay a fine.
-
-Date-of-offence rule: for offences on or after 1 July 2024 cite BNS s. 8; the substance is continuous with the former IPC regime, with the addition of community-service default.`,
-
-  sections: [
+  "study": "Introduction and meaning\nAmount of fine, liability in default of payment of fine, etc. BNS restatement of IPC 63–70. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 63–70. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 8 is the rule on “Amount of fine, liability in default of payment of fine, etc”. The section provides that (1) Where no sum is expressed to which a fine may extend, the amount of fine to which the offender is liable is unlimited, but shall not be excessive. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 8 exists so that “Amount of fine, liability in default of payment of fine, etc” has a closed legal test in Chapter II — Of Punishments. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Death, life, imprisonment, forfeiture, fine, and community service. How sentences combine, commute and enhance.\n\nThe provision in detail\n8. (1) Where no sum is expressed to which a fine may extend, the amount of fine to which the offender is liable is unlimited, but shall not be excessive\n\n(2) In every case of an offence–\n\n(a) punishable with imprisonment as well as fine, in which the offender is sentenced to a fine, whether with or without imprisonment;\n\n(b) punishable with imprisonment or fine, or with fine only, in which the offender is sentenced to a fine,\n\nit shall be competent to the Court which sentences such offender to direct by the sentence that, in default of payment of the fine, the offender shall suffer imprisonment for a certain term, in which imprisonment shall be in excess of any other imprisonment to which he may have been sentenced or to which he may be liable under a commutation of a sentence\n\n(3) The term for which the Court directs the offender to be imprisoned in default of payment of a fine shall not exceed one-fourth of the term of imprisonment which is the maximum fixed for the offence, if the offence be punishable with imprisonment as well as fine\n\n(4) The imprisonment which the Court imposes in default of payment of a fine or in default of community service may be of any description to which the offender might have been sentenced for the offence\n\n(5) If the offence is punishable with fine or community service, the imprisonment which the Court imposes in default of payment of the fine or in default of community service shall be simple, and the term for which the Court directs the offender to be imprisoned, in default of payment of fine or in default of community service, shall not exceed,—\n\n(a) two months when the amount of the fine does not exceed five thousand rupees;\n\n(b) four months when the amount of the fine does not exceed ten thousand rupees; and\n\n(c) one year in any other case\n\n(6) (a) The imprisonment which is imposed in default of payment of a fine shall terminate whenever that fine is either paid or levied by process of law;\n\n(b) If, before the expiration of the term of imprisonment fixed in default of payment, such a proportion of the fine be paid or levied that the term of imprisonment suffered in default of payment is not less than proportional to the part of the fine still unpaid, the imprisonment shall terminate\n\n(7) The fine, or any part thereof which remains unpaid, may be levied at any time within six years after the passing of the sentence, and if, under the sentence, the offender be liable to imprisonment for a longer period than six years, then at any time previous to the expiration of that period; and the death of the offender does not discharge from the liability any property which would, after his death, be legally liable for his debts\n\nEssential ingredients\n1. (1) Where no sum is expressed to which a fine may extend, the amount of fine to which the offender is liable is unlimited, but shall not be excessive\n2. (2) In every case of an offence–\n3. (a) punishable with imprisonment as well as fine, in which the offender is sentenced to a fine, whether with or without imprisonment;\n4. (b) punishable with imprisonment or fine, or with fine only, in which the offender is sentenced to a fine,\n5. it shall be competent to the Court which sentences such offender to direct by the sentence that, in default of payment of the fine, the offender shall suffer imprisonment for a certain term, in which imprisonment shall be in excess of any other imprisonment to which he may have been sentenced or to which he may be liable under a commutation of a sentence\n6. (3) The term for which the Court directs the offender to be imprisoned in default of payment of a fine shall not exceed one-fourth of the term of imprisonment which is the maximum fixed for the offence, if the offence be punishable with imprisonment as well as fine\n7. (4) The imprisonment which the Court imposes in default of payment of a fine or in default of community service may be of any description to which the offender might have been sentenced for the offence\n8. (5) If the offence is punishable with fine or community service, the imprisonment which the Court imposes in default of payment of the fine or in default of community service shall be simple, and the term for which the Court directs the offender to be imprisoned, in default of payment of fine or in default of community service, shall not exceed,—\n9. (a) two months when the amount of the fine does not exceed five thousand rupees;\n10. (b) four months when the amount of the fine does not exceed ten thousand rupees; and\n11. (c) one year in any other case\n12. (a) The imprisonment which is imposed in default of payment of a fine shall terminate whenever that fine is either paid or levied by process of law;\n13. (b) If, before the expiration of the term of imprisonment fixed in default of payment, such a proportion of the fine be paid or levied that the term of imprisonment suffered in default of payment is not less than proportional to the part of the fine still unpaid, the imprisonment shall terminate\n14. (7) The fine, or any part thereof which remains unpaid, may be levied at any time within six years after the passing of the sentence, and if, under the sentence, the offender be liable to imprisonment for a longer period than six years, then at any time previous to the expiration of that period; and the death of the offender does not discharge from the liability any property which would, after his death, be legally liable for his debts\n\nStatutory illustrations\nIllustration (a). A is sentenced to a fine of one thousand rupees and to four months’ imprisonment in default of payment. Here, if seven hundred and fifty rupees of the fine be paid or levied before the expiration of one month of the imprisonment, A will be discharged as soon as the first month has expired. If seven hundred and fifty rupees be paid or levied at the time of the expiration of the first month, or at any later time while A continues in imprisonment, A will be immediately discharged. If five hundred rupees of the fine be paid or levied before the expiration of two months of the imprisonment, A will be discharged as soon as the two months are completed. If five hundred rupees be paid or levied at the time of the expiration of those two months, or at any later time while A continues in imprisonment, A will be immediately discharged\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 8 it proves. Copying the illustration without that mapping sentence does not score.",
+  "glance": "BNS s. 8 — Amount of fine, liability in default of payment of fine, etc.",
+  "sections": [
     {
-      id: 's-8-module-1',
-      title: 'Provenance, Legislative Objective & Doctrinal Foundations',
-      order: 1,
-      content: [
-        'Section 8 consolidates and modernises the fine-related provisions that formerly occupied IPC sections 63 to 70. The principal innovation is the express inclusion of default of community service within the same machinery.',
-        'Legislative objective: (a) prevent excessive fines; (b) give the court a calibrated power to enforce payment (or performance of community service) by the threat of additional imprisonment; (c) ensure that default imprisonment remains proportionate and terminates on payment or proportional part-payment.',
-        'Doctrinal foundation: fine is a distinct punishment under s. 4(e). Imprisonment in default is not a substitute that extinguishes the fine; it is an additional coercive measure. The fine remains recoverable even after the default term has been served (subject to the recovery rules and any limitation applicable to the levy process).',
-      ],
+      "id": "bns-8-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "8. (1) Where no sum is expressed to which a fine may extend, the amount of fine to which the offender is liable is unlimited, but shall not be excessive",
+        "(2) In every case of an offence–",
+        "(a) punishable with imprisonment as well as fine, in which the offender is sentenced to a fine, whether with or without imprisonment;",
+        "(b) punishable with imprisonment or fine, or with fine only, in which the offender is sentenced to a fine,",
+        "it shall be competent to the Court which sentences such offender to direct by the sentence that, in default of payment of the fine, the offender shall suffer imprisonment for a certain term, in which imprisonment shall be in excess of any other imprisonment to which he may have been sentenced or to which he may be liable under a commutation of a sentence",
+        "(3) The term for which the Court directs the offender to be imprisoned in default of payment of a fine shall not exceed one-fourth of the term of imprisonment which is the maximum fixed for the offence, if the offence be punishable with imprisonment as well as fine",
+        "(4) The imprisonment which the Court imposes in default of payment of a fine or in default of community service may be of any description to which the offender might have been sentenced for the offence",
+        "(5) If the offence is punishable with fine or community service, the imprisonment which the Court imposes in default of payment of the fine or in default of community service shall be simple, and the term for which the Court directs the offender to be imprisoned, in default of payment of fine or in default of community service, shall not exceed,—",
+        "(a) two months when the amount of the fine does not exceed five thousand rupees;",
+        "(b) four months when the amount of the fine does not exceed ten thousand rupees; and",
+        "(c) one year in any other case",
+        "(6) (a) The imprisonment which is imposed in default of payment of a fine shall terminate whenever that fine is either paid or levied by process of law;",
+        "(b) If, before the expiration of the term of imprisonment fixed in default of payment, such a proportion of the fine be paid or levied that the term of imprisonment suffered in default of payment is not less than proportional to the part of the fine still unpaid, the imprisonment shall terminate",
+        "(7) The fine, or any part thereof which remains unpaid, may be levied at any time within six years after the passing of the sentence, and if, under the sentence, the offender be liable to imprisonment for a longer period than six years, then at any time previous to the expiration of that period; and the death of the offender does not discharge from the liability any property which would, after his death, be legally liable for his debts"
+      ]
     },
     {
-      id: 's-8-module-2',
-      title: 'Textual Anatomy, Provisos & Statutory Deconstruction',
-      order: 2,
-      content: [
-        'Sub-section (1): unlimited fine where no sum is expressed, but “shall not be excessive”.',
-        'Sub-section (2): power to order imprisonment in default of payment of fine in the two classes of offence described in clauses (a) and (b); the default term is in excess of any other imprisonment.',
-        'Sub-section (3): ceiling of one-fourth of the maximum imprisonment fixed for the offence when the offence is punishable with imprisonment as well as fine.',
-        'Sub-section (4): description of the default imprisonment (any description to which the offender might have been sentenced for the offence), subject to the special rule in sub-section (5).',
-        'Sub-section (5): when the offence is punishable with fine or community service only, default imprisonment must be simple and is capped at two months (fine ≤ ₹5,000), four months (fine ≤ ₹10,000), or one year (any other case).',
-        'Sub-section (6): termination of default imprisonment on full payment/levy, and proportional termination on part payment, with the statutory illustration.',
-      ],
+      "id": "bns-8-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Where no sum is expressed to which a fine may extend, the amount of fine to which the offender is liable is unlimited, but shall not be excessive",
+        "(2) In every case of an offence–",
+        "(a) punishable with imprisonment as well as fine, in which the offender is sentenced to a fine, whether with or without imprisonment;",
+        "(b) punishable with imprisonment or fine, or with fine only, in which the offender is sentenced to a fine,",
+        "it shall be competent to the Court which sentences such offender to direct by the sentence that, in default of payment of the fine, the offender shall suffer imprisonment for a certain term, in which imprisonment shall be in excess of any other imprisonment to which he may have been sentenced or to which he may be liable under a commutation of a sentence",
+        "(3) The term for which the Court directs the offender to be imprisoned in default of payment of a fine shall not exceed one-fourth of the term of imprisonment which is the maximum fixed for the offence, if the offence be punishable with imprisonment as well as fine",
+        "(4) The imprisonment which the Court imposes in default of payment of a fine or in default of community service may be of any description to which the offender might have been sentenced for the offence",
+        "(5) If the offence is punishable with fine or community service, the imprisonment which the Court imposes in default of payment of the fine or in default of community service shall be simple, and the term for which the Court directs the offender to be imprisoned, in default of payment of fine or in default of community service, shall not exceed,—",
+        "(a) two months when the amount of the fine does not exceed five thousand rupees;",
+        "(b) four months when the amount of the fine does not exceed ten thousand rupees; and",
+        "(c) one year in any other case",
+        "(a) The imprisonment which is imposed in default of payment of a fine shall terminate whenever that fine is either paid or levied by process of law;",
+        "(b) If, before the expiration of the term of imprisonment fixed in default of payment, such a proportion of the fine be paid or levied that the term of imprisonment suffered in default of payment is not less than proportional to the part of the fine still unpaid, the imprisonment shall terminate",
+        "(7) The fine, or any part thereof which remains unpaid, may be levied at any time within six years after the passing of the sentence, and if, under the sentence, the offender be liable to imprisonment for a longer period than six years, then at any time previous to the expiration of that period; and the death of the offender does not discharge from the liability any property which would, after his death, be legally liable for his debts"
+      ]
     },
     {
-      id: 's-8-module-3',
-      title: 'Mandatory Proving Ingredients & Essential Elements',
-      order: 3,
-      content: [
-        'For a lawful sentence of fine: (i) the offence section authorises fine; (ii) the amount is fixed by the court (or is unlimited but not excessive under sub-s. (1)).',
-        'For a lawful order of imprisonment in default: (i) a fine (or community-service obligation) has been imposed; (ii) the court records a direction under sub-s. (2); (iii) the term respects the ceilings in sub-ss. (3) or (5); (iv) the description of imprisonment respects sub-ss. (4) and (5).',
-        'For proportional release: the proportion of the fine paid or levied must be such that the term already suffered is not less than proportional to the unpaid balance (sub-s. (6)(b) and the Illustration).',
-      ],
-    },
-    {
-      id: 's-8-module-4',
-      title: 'Evidentiary Burdens under BSA 2023 (ss. 104–106 & s. 63)',
-      order: 4,
-      content: [
-        'The amount of fine and the order of default imprisonment are part of the sentence. No separate burden under BSA ss. 104–106 arises for the application of s. 8 itself.',
-        'Ability to pay may be considered by the court when fixing the quantum of fine; any material relied upon (income documents, electronic bank records, etc.) must satisfy ordinary admissibility rules, including BSA s. 63 where electronic records are primary evidence.',
-        'Once the sentence is passed, non-payment is a matter of record; the prosecution does not have to re-prove the offence at the stage of enforcing the default term.',
-      ],
-    },
-    {
-      id: 's-8-module-5',
-      title: 'Procedural Roadmap, Competent Forum & Limitation Act Checkpoints',
-      order: 5,
-      content: [
-        'The direction under s. 8 is recorded in the judgment of sentence. Recovery of the fine proceeds under the fine-recovery machinery of the BNSS (and any applicable revenue-recovery laws).',
-        'Appeal against the quantum of fine or the default term lies to the ordinary appellate forum under the BNSS together with any challenge to the conviction or the principal sentence.',
-        'Limitation for levy of the fine is governed by the BNSS recovery provisions and any special limitation rules; the default-imprisonment order itself does not create a fresh limitation period for the fine.',
-        'Competent court: the court that is authorised to pass the sentence for the offence.',
-      ],
-    },
+      "id": "bns-8-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "A is sentenced to a fine of one thousand rupees and to four months’ imprisonment in default of payment. Here, if seven hundred and fifty rupees of the fine be paid or levied before the expiration of one month of the imprisonment, A will be discharged as soon as the first month has expired. If seven hundred and fifty rupees be paid or levied at the time of the expiration of the first month, or at any later time while A continues in imprisonment, A will be immediately discharged. If five hundred rupees of the fine be paid or levied before the expiration of two months of the imprisonment, A will be discharged as soon as the two months are completed. If five hundred rupees be paid or levied at the time of the expiration of those two months, or at any later time while A continues in imprisonment, A will be immediately discharged"
+      ]
+    }
   ],
-
-  provisions: [
+  "examples": [
     {
-      actId: 'bns',
-      actName: 'Bharatiya Nyaya Sanhita, 2023',
-      provisionId: 'bns-8',
-      section: 's. 8',
-      title: 'Amount of fine, liability in default of payment of fine, etc.',
-    },
+      "id": "bns-8-ex-1",
+      "title": "Illustration (a)",
+      "description": "A is sentenced to a fine of one thousand rupees and to four months’ imprisonment in default of payment. Here, if seven hundred and fifty rupees of the fine be paid or levied before the expiration of one month of the imprisonment, A will be discharged as soon as the first month has expired. If seven hundred and fifty rupees be paid or levied at the time of the expiration of the first month, or at any later time while A continues in imprisonment, A will be immediately discharged. If five hundred rupees of the fine be paid or levied before the expiration of two months of the imprisonment, A will be discharged as soon as the two months are completed. If five hundred rupees be paid or levied at the time of the expiration of those two months, or at any later time while A continues in imprisonment, A will be immediately discharged\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 8 — which fact proves which element, and what the legal result is."
+    }
   ],
-
-  examples: [
+  "hypotheticals": [
     {
-      id: 's-8-ill-1',
-      title: 'Illustration 1 — Proportional termination (statutory illustration adapted)',
-      illustrationType: 'statutory',
-      description:
-        'A is sentenced to a fine of ₹1,000 and to four months’ imprisonment in default of payment. If ₹750 of the fine is paid or levied before the expiration of one month of the imprisonment, A is discharged as soon as the first month has expired. If ₹500 is paid or levied before the expiration of two months, A is discharged as soon as the two months are completed. The Illustration in s. 8(6) itself demonstrates the proportional-release rule.',
-    },
-    {
-      id: 's-8-ill-2',
-      title: 'Illustration 2 — Boundary defect (excessive fine)',
-      illustrationType: 'fail-scenario',
-      description:
-        'An offence is punishable with fine only. The court imposes a fine of several crores on an indigent first offender for a trivial regulatory breach. Even though sub-section (1) speaks of an “unlimited” fine, the amount is challengeable as excessive. The appellate court may reduce it.',
-    },
+      "id": "bns-8-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "A is sentenced to a fine of one thousand rupees and to four months’ imprisonment in default of payment. Here, if seven hundred and fifty rupees of the fine be paid or levied before the expiration of one month of the imprisonment, A will be discharged as soon as the first month has expired. If seven hundred and fifty rupees be paid or levied at the time of the expiration of the first month, or at any later time while A continues in imprisonment, A will be immediately discharged. If five hundred rupees of the fine be paid or levied before the expiration of two months of the imprisonment, A will be discharged as soon as the two months are completed. If five hundred rupees be paid or levied at the time of the expiration of those two months, or at any later time while A continues in imprisonment, A will be immediately discharged",
+      "question": "Whether BNS s. 8 (Amount of fine, liability in default of payment of fine, etc) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 8. Chapter II — Of Punishments. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 8 (Amount of fine, liability in default of payment of fine, etc), Chapter II — Of Punishments.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Where no sum is expressed to which a fine may extend, the amount of fine to which the offender is liable is unlimited, but shall not be excessive\n   (2) (2) In every case of an offence–\n   (3) (a) punishable with imprisonment as well as fine, in which the offender is sentenced to a fine, whether with or without imprisonment;\n   (4) (b) punishable with imprisonment or fine, or with fine only, in which the offender is sentenced to a fine,\n   (5) it shall be competent to the Court which sentences such offender to direct by the sentence that, in default of payment of the fine, the offender shall suffer imprisonment for a certain term, in which imprisonment shall be in excess of any other imprisonment to which he may have been sentenced or to which he may be liable under a commutation of a sentence\n   (6) (3) The term for which the Court directs the offender to be imprisoned in default of payment of a fine shall not exceed one-fourth of the term of imprisonment which is the maximum fixed for the offence, if the offence be punishable with imprisonment as well as fine\n   (7) (4) The imprisonment which the Court imposes in default of payment of a fine or in default of community service may be of any description to which the offender might have been sentenced for the offence\n   (8) (5) If the offence is punishable with fine or community service, the imprisonment which the Court imposes in default of payment of the fine or in default of community service shall be simple, and the term for which the Court directs the offender to be imprisoned, in default of payment of fine or in default of community service, shall not exceed,—\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 8 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 8 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 8. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-
-  hypotheticals: [
+  "misconceptions": [
     {
-      id: 's-8-hypo',
-      title: 'Chamber Practice Hypothetical — Default of community service',
-      facts:
-        'F is convicted of a minor offence for which the court imposes community service under s. 4(f) in lieu of a fine. F fails to perform the ordered hours of community service.',
-      question:
-        'What coercive consequence is available under s. 8?',
-      applicableLaw: 'BNS s. 8 (especially sub-ss. (4) and (5)); s. 4(f).',
-      analysis:
-        '1. Threshold: Community service is a punishment under s. 4(f) and is expressly brought within the default regime of s. 8.\n2. Ingredient verification: The court may direct imprisonment in default of community service; when the offence is punishable with fine or community service only, the default imprisonment must be simple and is subject to the ceilings in sub-s. (5).\n3. Consequence: The default term is additional and terminates on performance or on the proportional principles of sub-s. (6) adapted to the service obligation.',
-      conclusion:
-        'The court may lawfully order simple imprisonment in default of community service within the statutory ceilings. The power is the same machinery that applies to default of fine.',
-    },
-  ],
-
-  distinctions: [
-    {
-      id: 's-8-dist-1',
-      title: 'Fine vs Imprisonment in default of fine',
-      left: 'Fine (s. 4(e) + s. 8)',
-      right: 'Imprisonment in default (s. 8)',
-      rows: [
-        { point: 'Nature', left: 'Primary punishment', right: 'Additional coercive measure' },
-        { point: 'Effect of serving default term', left: 'Fine remains recoverable', right: 'Does not extinguish the fine liability' },
-        { point: 'Termination', left: 'On payment or levy', right: 'On full payment/levy or proportional part-payment (sub-s. (6))' },
-      ],
-    },
-  ],
-
-  misconceptions: [
-    {
-      id: 's-8-trap-1',
-      trap: 'Once the offender serves the default imprisonment, the fine is automatically wiped out.',
-      correction:
-        'Default imprisonment is in addition to the fine. The fine remains recoverable according to the recovery rules even after the default term has been undergone.',
+      "id": "bns-8-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 8."
     },
     {
-      id: 's-8-trap-2',
-      trap: 'The court may impose an unlimited fine without any restraint.',
-      correction:
-        'Sub-section (1) expressly provides that the fine “shall not be excessive”. Grossly disproportionate fines are open to appellate correction.',
+      "id": "bns-8-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
     },
     {
-      id: 's-8-trap-3',
-      trap: 'Community service has no default consequence under s. 8.',
-      correction:
-        'Section 8 expressly brings default of community service within the same imprisonment-in-default regime that applies to non-payment of fine.',
-    },
+      "id": "bns-8-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
   ],
-
-  cases: [],
-
-  questionsAndAnswers: [
+  "questionsAndAnswers": [
     {
-      id: 's-8-brief',
-      draftingCategory: 'brief',
-      question:
-        'Explain the scheme of fine and imprisonment in default under Section 8 of the Bharatiya Nyaya Sanhita, 2023.',
-      answer: `I. ISSUE
-How is the amount of fine fixed and what follows if it is not paid (or if community service is not performed)?
-
-II. GOVERNING RULE
-Sub-s. (1): unlimited but not excessive where no sum is expressed.
-Sub-s. (2): power to order additional imprisonment in default.
-Sub-ss. (3)–(5): ceilings and description of the default term (including the special simple-imprisonment rule for fine/community-service-only offences).
-Sub-s. (6): termination on full or proportional part-payment.
-
-III. APPLICATION
-Fix a non-excessive fine → record a default direction within the statutory ceilings → enforce or release according to sub-s. (6).
-
-IV. CONCLUSION
-Default imprisonment is coercive and additional; the fine (or community-service obligation) survives.`,
-      explanation: 'IRAC overview of s. 8.',
+      "id": "bns-8-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 8 (Amount of fine, liability in default of payment of fine, etc)",
+      "answer": "Introduction. BNS s. 8 deals with Amount of fine, liability in default of payment of fine, etc. It sits in Chapter II — Of Punishments of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Amount of fine, liability in default of payment of fine, etc. BNS restatement of IPC 63–70. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 63–70. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 8 is the rule on “Amount of fine, liability in default of payment of fine, etc”. The section provides that (1) Where no sum is expressed to which a fine may extend, the amount of fine to which the offender is liable is unlimited, but shall not be excessive. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Where no sum is expressed to which a fine may extend, the amount of fine to which the offender is liable is unlimited, but shall not be excessive\n2. (2) In every case of an offence–\n3. (a) punishable with imprisonment as well as fine, in which the offender is sentenced to a fine, whether with or without imprisonment;\n4. (b) punishable with imprisonment or fine, or with fine only, in which the offender is sentenced to a fine,\n5. it shall be competent to the Court which sentences such offender to direct by the sentence that, in default of payment of the fine, the offender shall suffer imprisonment for a certain term, in which imprisonment shall be in excess of any other imprisonment to which he may have been sentenced or to which he may be liable under a commutation of a sentence\n6. (3) The term for which the Court directs the offender to be imprisoned in default of payment of a fine shall not exceed one-fourth of the term of imprisonment which is the maximum fixed for the offence, if the offence be punishable with imprisonment as well as fine\n7. (4) The imprisonment which the Court imposes in default of payment of a fine or in default of community service may be of any description to which the offender might have been sentenced for the offence\n8. (5) If the offence is punishable with fine or community service, the imprisonment which the Court imposes in default of payment of the fine or in default of community service shall be simple, and the term for which the Court directs the offender to be imprisoned, in default of payment of fine or in default of community service, shall not exceed,—\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): A is sentenced to a fine of one thousand rupees and to four months’ imprisonment in default of payment. Here, if seven hundred and fifty rupees of the fine be paid or levied before the expiration of one month of the imprisonment, A will be discharged as soon as the first month has expired. If seven hundred and fifty rupees be paid or levied at the time of the expiration of the first month, or at any later time while A continues in imprisonment, A will be immediately discharged. If five hundred rupees of the fine be paid or levied before the expiration of two months of the imprisonment, A will be discharged as soon as the two months are completed. If five hundred rupees be paid or levied at the time of the expiration of those two months, or at any later time while A continues in imprisonment, A will be immediately discharged\n\nLimitations. Apply only the conditions written in s. 8. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 8 is the complete current-law heading for Amount of fine, liability in default of payment of fine, etc. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
     },
     {
-      id: 's-8-submissions',
-      draftingCategory: 'submissions',
-      question:
-        'Draft Written Submissions on the proper quantum of fine and the limits of imprisonment in default under BNS s. 8, including the new community-service default.',
-      answer: `I. STATEMENT OF FACTS
-[Insert conviction, offence section, means of the offender, and any community-service order.]
-
-II. STATUTORY SCHEME
-Section 8 supplies the complete machinery for quantum, default, description, ceilings and proportional release. Community service is expressly included.
-
-III. MANDATORY INGREDIENTS & CEILINGS
-(a) Fine not excessive (sub-s. (1));
-(b) Default term within one-fourth ceiling or the monetary ceilings of sub-s. (5);
-(c) Description of default imprisonment compliant with sub-ss. (4) and (5).
-
-IV. REBUTTAL
-“Default term wipes out the fine” — contrary to the text and long-standing principle.
-“Unlimited fine means no appellate control” — “shall not be excessive” is justiciable.
-
-V. PRAYER
-[Appropriate prayer for reduction of fine, suspension or reduction of default term, or clarification of community-service default.]`,
-      explanation: 'Senior Counsel submissions on fine and default.',
+      "id": "bns-8-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 8 (Amount of fine, liability in default of payment of fine, etc) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 8 deals with Amount of fine, liability in default of payment of fine, etc. It sits in Chapter II — Of Punishments of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Amount of fine, liability in default of payment of fine, etc. BNS restatement of IPC 63–70. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 63–70. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 8 is the rule on “Amount of fine, liability in default of payment of fine, etc”. The section provides that (1) Where no sum is expressed to which a fine may extend, the amount of fine to which the offender is liable is unlimited, but shall not be excessive. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Where no sum is expressed to which a fine may extend, the amount of fine to which the offender is liable is unlimited, but shall not be excessive\n2. (2) In every case of an offence–\n3. (a) punishable with imprisonment as well as fine, in which the offender is sentenced to a fine, whether with or without imprisonment;\n4. (b) punishable with imprisonment or fine, or with fine only, in which the offender is sentenced to a fine,\n5. it shall be competent to the Court which sentences such offender to direct by the sentence that, in default of payment of the fine, the offender shall suffer imprisonment for a certain term, in which imprisonment shall be in excess of any other imprisonment to which he may have been sentenced or to which he may be liable under a commutation of a sentence\n6. (3) The term for which the Court directs the offender to be imprisoned in default of payment of a fine shall not exceed one-fourth of the term of imprisonment which is the maximum fixed for the offence, if the offence be punishable with imprisonment as well as fine\n7. (4) The imprisonment which the Court imposes in default of payment of a fine or in default of community service may be of any description to which the offender might have been sentenced for the offence\n8. (5) If the offence is punishable with fine or community service, the imprisonment which the Court imposes in default of payment of the fine or in default of community service shall be simple, and the term for which the Court directs the offender to be imprisoned, in default of payment of fine or in default of community service, shall not exceed,—\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): A is sentenced to a fine of one thousand rupees and to four months’ imprisonment in default of payment. Here, if seven hundred and fifty rupees of the fine be paid or levied before the expiration of one month of the imprisonment, A will be discharged as soon as the first month has expired. If seven hundred and fifty rupees be paid or levied at the time of the expiration of the first month, or at any later time while A continues in imprisonment, A will be immediately discharged. If five hundred rupees of the fine be paid or levied before the expiration of two months of the imprisonment, A will be discharged as soon as the two months are completed. If five hundred rupees be paid or levied at the time of the expiration of those two months, or at any later time while A continues in imprisonment, A will be immediately discharged\n\nLimitations. Apply only the conditions written in s. 8. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 8 is the complete current-law heading for Amount of fine, liability in default of payment of fine, etc. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Death, life, imprisonment, forfeiture, fine, and community service. How sentences combine, commute and enhance.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 8. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 8.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 8 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 8 (Amount of fine, liability in default of payment of fine, etc).",
+      "steps": [
+        "Introduce BNS s. 8 and Chapter II — Of Punishments.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 8."
+      ]
     },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 8 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
   ],
-
-  bareActPointers: [
-    'BNS s. 8 (entire)',
-    'BNS s. 4(e) & (f) (fine and community service)',
-    'IPC ss. 63–70 (historical)',
+  "answerSkeleton": [
+    "Introduction — BNS s. 8, Amount of fine, liability in default of payment of fine, etc.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
   ],
-
-  examTips: [
-    'Always mention that fine must not be excessive and that default imprisonment is additional, not a substitute.',
-    'Note the new express coverage of community-service default.',
-    'Recite the proportional-release rule and the statutory illustration.',
+  "revisionPoints": [
+    "BNS s. 8: Amount of fine, liability in default of payment of fine, etc.",
+    "First ingredient: (1) Where no sum is expressed to which a fine may extend, the amount of fine to which the offender is liable is unlimited, but shall not be excessive",
+    "1 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 8 — Amount of fine, liability in default of payment of fine, etc. Older books and judgments may still print a historical number (63–70). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
   ],
-
-  revisionPoints: [
-    'Fine unlimited but not excessive (sub-s. (1)).',
-    'Default imprisonment is additional and terminates on payment or proportional part-payment.',
-    'Special simple-imprisonment ceilings when offence is fine/community-service only (sub-s. (5)).',
-    'Community service default is expressly covered.',
-  ],
-
-  relatedTopics: ['s-4', 's-7', 's-9'],
+  "relatedTopics": []
 }
 
 export default content

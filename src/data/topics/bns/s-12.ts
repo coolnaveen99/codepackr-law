@@ -1,207 +1,130 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance:
-    'Section 12 regulates the execution of any order of solitary confinement made under s. 11. It prohibits continuous solitary confinement of more than fourteen days at a time (with intervals of equal duration) and, where the total imprisonment exceeds three months, further limits solitary confinement to seven days in any one month.',
-
-  study: `Section 12 is the execution counterpart of s. 11. Once the Court has ordered solitary confinement within the ceilings of s. 11, the prison authorities must implement that order in accordance with the following mandatory limits:
-
-1. Continuous period: solitary confinement shall in no case exceed fourteen days at a time.
-2. Interval: between successive periods of solitary confinement there must be an interval of not less duration than the period of solitary confinement just undergone.
-3. Monthly ceiling (when total imprisonment > three months): solitary confinement shall not exceed seven days in any one month of the whole imprisonment awarded, again with intervals of not less duration than such periods.
-
-These rules are mandatory. An order or prison practice that produces continuous solitary beyond fourteen days, or that omits the required intervals, or that exceeds seven days in any month when the total term exceeds three months, is illegal.
-
-Date-of-offence rule: for offences on or after 1 July 2024 cite BNS s. 12; substance is continuous with IPC s. 74.`,
-
-  sections: [
+  "study": "Introduction and meaning\nLimit of solitary confinement. BNS restatement of IPC 74. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 74. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 12 is the rule on “Limit of solitary confinement”. The section provides that in executing a sentence of solitary confinement, such confinement shall in no case exceed fourteen days at a time, with intervals between the periods of solitary confinement of not less duration than such periods; and when the imprisonment awarded shall exceed three months, the solitary confinement shall not exceed seven days in any one month of the whole imprisonment awarded, with intervals between the periods of solitary confinement of not less duration than such periods. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 12 exists so that “Limit of solitary confinement” has a closed legal test in Chapter II — Of Punishments. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Death, life, imprisonment, forfeiture, fine, and community service. How sentences combine, commute and enhance.\n\nThe provision in detail\n12. In executing a sentence of solitary confinement, such confinement shall in no case exceed fourteen days at a time, with intervals between the periods of solitary confinement of not less duration than such periods; and when the imprisonment awarded shall exceed three months, the solitary confinement shall not exceed seven days in any one month of the whole imprisonment awarded, with intervals between the periods of solitary confinement of not less duration than such periods\n\nEssential ingredients\n1. In executing a sentence of solitary confinement, such confinement shall in no case exceed fourteen days at a time, with intervals between the periods of solitary confinement of not less duration than such periods; and when the imprisonment awarded shall exceed three months, the solitary confinement shall not exceed seven days in any one month of the whole imprisonment awarded, with intervals between the periods of solitary confinement of not less duration than such periods",
+  "glance": "BNS s. 12 — Limit of solitary confinement.",
+  "sections": [
     {
-      id: 's-12-module-1',
-      title: 'Provenance, Legislative Objective & Doctrinal Foundations',
-      order: 1,
-      content: [
-        'Section 12 succeeds IPC section 74. The BNS retains the classic fourteen-day continuous limit, the equal-interval rule, and the additional seven-day-per-month ceiling when the total term exceeds three months.',
-        'Legislative objective: prevent the physical and psychological harm of prolonged uninterrupted solitary confinement while still permitting the limited periods authorised by s. 11.',
-        'Doctrinal foundation: solitary confinement remains an exceptional incident of rigorous imprisonment. Section 12 ensures that even a lawful order under s. 11 is executed in a broken, intermittent manner that respects minimum standards of humanity.',
-      ],
+      "id": "bns-12-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "12. In executing a sentence of solitary confinement, such confinement shall in no case exceed fourteen days at a time, with intervals between the periods of solitary confinement of not less duration than such periods; and when the imprisonment awarded shall exceed three months, the solitary confinement shall not exceed seven days in any one month of the whole imprisonment awarded, with intervals between the periods of solitary confinement of not less duration than such periods"
+      ]
     },
     {
-      id: 's-12-module-2',
-      title: 'Textual Anatomy, Provisos & Statutory Deconstruction',
-      order: 2,
-      content: [
-        'First limb: “such confinement shall in no case exceed fourteen days at a time, with intervals between the periods of solitary confinement of not less duration than such periods.”',
-        'Second limb (triggered when total imprisonment awarded exceeds three months): “the solitary confinement shall not exceed seven days in any one month of the whole imprisonment awarded, with intervals between the periods of solitary confinement of not less duration than such periods.”',
-        'Both limbs are cumulative with the overall and sliding-scale ceilings already fixed by s. 11. Section 12 does not expand the total quantum; it only regulates distribution and continuity.',
-      ],
-    },
-    {
-      id: 's-12-module-3',
-      title: 'Mandatory Proving Ingredients & Essential Elements',
-      order: 3,
-      content: [
-        '1. A valid order of solitary confinement has been made under s. 11.',
-        '2. In execution, no single continuous period exceeds fourteen days.',
-        '3. Between successive periods there is an interval at least equal in length to the preceding solitary period.',
-        '4. If the total imprisonment awarded exceeds three months, solitary confinement does not exceed seven days in any one month of that imprisonment, again with equal intervals.',
-      ],
-    },
-    {
-      id: 's-12-module-4',
-      title: 'Evidentiary Burdens under BSA 2023 (ss. 104–106 & s. 63)',
-      order: 4,
-      content: [
-        'Section 12 is a rule of execution. No additional formal burden under BSA ss. 104–106 arises for its application.',
-        'If a prisoner challenges the manner of execution (for example by producing prison records showing continuous solitary beyond fourteen days), the ordinary rules of evidence apply to those records, including BSA s. 63 for electronic logs.',
-      ],
-    },
-    {
-      id: 's-12-module-5',
-      title: 'Procedural Roadmap, Competent Forum & Limitation Act Checkpoints',
-      order: 5,
-      content: [
-        'The limits in s. 12 are binding on the prison authorities who execute the sentence. Non-compliance can be challenged by writ petition under Article 226 or by appropriate application before the sentencing or appellate court.',
-        'No independent limitation period attaches; the duty is continuous throughout the currency of the sentence.',
-        'Competent forum for challenge: High Court under Art. 226, or the court that passed or is seized of the sentence under the BNSS.',
-      ],
-    },
+      "id": "bns-12-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "In executing a sentence of solitary confinement, such confinement shall in no case exceed fourteen days at a time, with intervals between the periods of solitary confinement of not less duration than such periods; and when the imprisonment awarded shall exceed three months, the solitary confinement shall not exceed seven days in any one month of the whole imprisonment awarded, with intervals between the periods of solitary confinement of not less duration than such periods"
+      ]
+    }
   ],
-
-  provisions: [
+  "examples": [
     {
-      actId: 'bns',
-      actName: 'Bharatiya Nyaya Sanhita, 2023',
-      provisionId: 'bns-12',
-      section: 's. 12',
-      title: 'Limit of solitary confinement',
-    },
-  ],
-
-  examples: [
-    {
-      id: 's-12-ill-1',
-      title: 'Illustration 1 — Lawful broken periods',
-      illustrationType: 'statutory',
-      description:
-        'The Court has ordered two months of solitary confinement under s. 11 as part of a one-year rigorous sentence. The prison authorities implement it as successive periods of fourteen days of solitary followed by at least fourteen days of ordinary confinement. The execution complies with s. 12.',
+      "id": "bns-12-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Limit of solitary confinement”. Name BNS s. 12, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
     },
     {
-      id: 's-12-ill-2',
-      title: 'Illustration 2 — Continuous solitary beyond fourteen days',
-      illustrationType: 'fail-scenario',
-      description:
-        'Despite a lawful s. 11 order for one month of solitary, the prison keeps the prisoner in continuous solitary confinement for thirty days without any interval. The execution violates the fourteen-day continuous limit and the equal-interval rule of s. 12 and is illegal.',
-    },
+      "id": "bns-12-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 12 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-
-  hypotheticals: [
+  "hypotheticals": [
     {
-      id: 's-12-hypo',
-      title: 'Chamber Practice Hypothetical — Challenge to continuous solitary',
-      facts:
-        'K is serving a five-year rigorous sentence that includes a lawful order of three months’ solitary confinement under s. 11. Prison records show that he has been kept in uninterrupted solitary for twenty-one consecutive days.',
-      question:
-        'Is the manner of execution lawful under s. 12, and what remedy is available?',
-      applicableLaw: 'BNS ss. 11 and 12; Constitution Art. 21; Art. 226.',
-      analysis:
-        '1. Threshold: A valid s. 11 order exists, but execution is governed by s. 12.\n2. Violation: Continuous solitary of twenty-one days exceeds the fourteen-day continuous limit and omits the required equal interval.\n3. Further limit: Because the total imprisonment exceeds three months, the seven-day-per-month ceiling also applies.\n4. Remedy: The prisoner may seek immediate release from the illegal continuous solitary by writ petition under Art. 226 or by appropriate application to the competent court.',
-      conclusion:
-        'The continuous twenty-one-day solitary is illegal. The prisoner is entitled to be released from solitary confinement forthwith and to have the remainder of any solitary periods executed only in compliance with s. 12.',
-    },
+      "id": "bns-12-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Limit of solitary confinement” under BNS s. 12 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 12 (Limit of solitary confinement) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 12. Chapter II — Of Punishments. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 12 (Limit of solitary confinement), Chapter II — Of Punishments.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) In executing a sentence of solitary confinement, such confinement shall in no case exceed fourteen days at a time, with intervals between the periods of solitary confinement of not less duration than such periods; and when the imprisonment awarded shall exceed three months, the solitary confinement shall not exceed seven days in any one month of the whole imprisonment awarded, with intervals between the periods of solitary confinement of not less duration than such periods\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 12 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 12 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 12. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-
-  distinctions: [
+  "misconceptions": [
     {
-      id: 's-12-dist-1',
-      title: 's. 11 (power & quantum) vs s. 12 (execution limits)',
-      left: 's. 11',
-      right: 's. 12',
-      rows: [
-        { point: 'What it governs', left: 'Whether and how much solitary confinement may be ordered', right: 'How any ordered solitary confinement must be executed' },
-        { point: 'Ceilings', left: 'Overall 3 months + sliding scale keyed to length of RI term', right: '14-day continuous max + equal intervals + 7-day-per-month when total term > 3 months' },
-        { point: 'Who applies it', left: 'Sentencing court', right: 'Prison authorities (subject to judicial supervision)' },
-      ],
-    },
-  ],
-
-  misconceptions: [
-    {
-      id: 's-12-trap-1',
-      trap: 'Once the Court has ordered solitary confinement under s. 11, the prison may keep the prisoner in continuous solitary for the whole ordered period.',
-      correction:
-        'Section 12 forbids continuous solitary of more than fourteen days at a time and requires equal intervals. Continuous execution beyond fourteen days is illegal.',
+      "id": "bns-12-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 12."
     },
     {
-      id: 's-12-trap-2',
-      trap: 'The seven-day-per-month rule applies to every solitary order.',
-      correction:
-        'The seven-day-per-month ceiling applies only when the total imprisonment awarded exceeds three months.',
-    },
-  ],
-
-  cases: [],
-
-  questionsAndAnswers: [
-    {
-      id: 's-12-brief',
-      draftingCategory: 'brief',
-      question:
-        'Explain the execution limits on solitary confinement under Section 12 of the Bharatiya Nyaya Sanhita, 2023.',
-      answer: `I. ISSUE
-How must an order of solitary confinement under s. 11 be executed?
-
-II. GOVERNING RULE
-Section 12 requires: (a) no continuous period longer than fourteen days; (b) intervals at least equal to the preceding solitary period; (c) when total imprisonment exceeds three months, not more than seven days of solitary in any one month, again with equal intervals.
-
-III. APPLICATION
-Any prison practice that produces continuous solitary beyond fourteen days, or that omits the required intervals, or that exceeds the monthly ceiling, is illegal.
-
-IV. CONCLUSION
-Section 12 is mandatory and protects against prolonged uninterrupted solitary confinement.`,
-      explanation: 'IRAC note on s. 12.',
+      "id": "bns-12-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
     },
     {
-      id: 's-12-submissions',
-      draftingCategory: 'submissions',
-      question:
-        'Draft Written Submissions challenging continuous solitary confinement in excess of the limits in BNS s. 12.',
-      answer: `I. STATEMENT OF FACTS
-[Insert the s. 11 order and the prison records showing continuous solitary beyond fourteen days or breach of the monthly/interval rules.]
-
-II. STATUTORY SCHEME
-Section 12 imposes mandatory execution limits: 14-day continuous maximum, equal intervals, and (where total term > 3 months) 7 days per month.
-
-III. VIOLATION
-The continuous period of [X] days / the omission of equal intervals / the excess over 7 days in a month constitutes a clear breach of s. 12.
-
-IV. CONSTITUTIONAL DIMENSION
-Prolonged uninterrupted solitary confinement also engages residual Art. 21 protections.
-
-V. PRAYER
-[Immediate release from the illegal continuous solitary; direction that any remaining solitary periods be executed strictly in accordance with s. 12.]`,
-      explanation: 'Senior Counsel submissions against illegal continuous solitary.',
+      "id": "bns-12-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-12-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 12 (Limit of solitary confinement)",
+      "answer": "Introduction. BNS s. 12 deals with Limit of solitary confinement. It sits in Chapter II — Of Punishments of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Limit of solitary confinement. BNS restatement of IPC 74. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 74. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 12 is the rule on “Limit of solitary confinement”. The section provides that in executing a sentence of solitary confinement, such confinement shall in no case exceed fourteen days at a time, with intervals between the periods of solitary confinement of not less duration than such periods; and when the imprisonment awarded shall exceed three months, the solitary confinement shall not exceed seven days in any one month of the whole imprisonment awarded, with intervals between the periods of solitary confinement of not less duration than such periods. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. In executing a sentence of solitary confinement, such confinement shall in no case exceed fourteen days at a time, with intervals between the periods of solitary confinement of not less duration than such periods; and when the imprisonment awarded shall exceed three months, the solitary confinement shall not exceed seven days in any one month of the whole imprisonment awarded, with intervals between the periods of solitary confinement of not less duration than such periods\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 12. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 12 is the complete current-law heading for Limit of solitary confinement. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
     },
+    {
+      "id": "bns-12-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 12 (Limit of solitary confinement) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 12 deals with Limit of solitary confinement. It sits in Chapter II — Of Punishments of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Limit of solitary confinement. BNS restatement of IPC 74. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 74. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 12 is the rule on “Limit of solitary confinement”. The section provides that in executing a sentence of solitary confinement, such confinement shall in no case exceed fourteen days at a time, with intervals between the periods of solitary confinement of not less duration than such periods; and when the imprisonment awarded shall exceed three months, the solitary confinement shall not exceed seven days in any one month of the whole imprisonment awarded, with intervals between the periods of solitary confinement of not less duration than such periods. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. In executing a sentence of solitary confinement, such confinement shall in no case exceed fourteen days at a time, with intervals between the periods of solitary confinement of not less duration than such periods; and when the imprisonment awarded shall exceed three months, the solitary confinement shall not exceed seven days in any one month of the whole imprisonment awarded, with intervals between the periods of solitary confinement of not less duration than such periods\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 12. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 12 is the complete current-law heading for Limit of solitary confinement. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Death, life, imprisonment, forfeiture, fine, and community service. How sentences combine, commute and enhance.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 12. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 12.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
   ],
-
-  bareActPointers: [
-    'BNS s. 12 (entire)',
-    'BNS s. 11 (power and quantum)',
-    'IPC s. 74 (historical)',
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 12 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
   ],
-
-  examTips: [
-    'Always state the three execution rules: 14-day continuous max, equal intervals, and 7-day-per-month when total term > 3 months.',
-    'Distinguish the quantum ceilings of s. 11 from the execution limits of s. 12.',
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 12 (Limit of solitary confinement).",
+      "steps": [
+        "Introduce BNS s. 12 and Chapter II — Of Punishments.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 12."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 12 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
   ],
-
-  revisionPoints: [
-    'Max 14 days continuous solitary at a time.',
-    'Interval must be at least equal to the preceding solitary period.',
-    'When total imprisonment > 3 months: max 7 days solitary in any one month.',
-    'Both limbs are mandatory and cumulative with s. 11.',
+  "answerSkeleton": [
+    "Introduction — BNS s. 12, Limit of solitary confinement.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
   ],
-
-  relatedTopics: ['s-11', 's-4'],
+  "revisionPoints": [
+    "BNS s. 12: Limit of solitary confinement.",
+    "First ingredient: In executing a sentence of solitary confinement, such confinement shall in no case exceed fourteen days at a time, with intervals between the periods of solitary confinement of not less duration than such periods; and when the imprisonment awarded shall exceed three months, the solitary confinement shall not exceed seven days in any one month of the whole imprisonment awarded, with intervals between the periods of solitary confinement of not less duration than such periods",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 12 — Limit of solitary confinement. Older books and judgments may still print a historical number (74). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

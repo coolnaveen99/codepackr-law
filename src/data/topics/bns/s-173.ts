@@ -1,24 +1,146 @@
 import type { TopicContent } from '../loadTopicContent'
+
 const content: TopicContent = {
- glance:'BNS Section 173: Punishment for bribery. Historical IPC concordance: 171E.',
- study:`Section 173 — Punishment for bribery.\\n\\nApply the enacted BNS wording, including provisos and explanations. Historical IPC 171E is concordance only. For post-1 July 2024 conduct the BNS text governs; earlier conduct requires separate repeal-and-savings and Article 20(1) analysis.`,
- sections:[
- {id:'s-173-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:['Chapter ix; cluster: Elections.','Punishment for bribery is an election offence in the BNS scheme.','Historical IPC concordance: 171E; use it only for comparative research.','Read the provision with connected BNS election provisions and distinguish criminal liability from consequences under election law.']},
- {id:'s-173-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:['Operative provision: BNS s. 173 — Punishment for bribery.','Identify the precise electoral right, person/status, act, circumstance and mental element required by the enacted text.','Apply every proviso, explanation and statutory qualification.','Do not import an IPC-era classification or exception without checking current BNS/BNSS text.']},
- {id:'s-173-m3',title:'Mandatory Proving Ingredients & Issue-Spotting',order:3,content:['Break s. 173 into material ingredients before applying facts.','Map each prosecution fact to a specific ingredient and identify supporting evidence.','Establish the relevant election, candidate/voter status, electoral right, authority and timing from competent records.','Distinguish the offence from separate electoral-administrative or regulatory consequences.']},
- {id:'s-173-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:['The prosecution ordinarily bears the burden of proving the charged ingredients beyond reasonable doubt, subject to applicable statutory burdens.','Preserve complete communications, electoral records and expenditure records; isolated extracts can distort context.','Digital material must satisfy applicable BSA 2023 requirements for electronic records, attribution and proof.','Separate admissibility, authenticity, relevance and weight.']},
- {id:'s-173-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:['Check the BNSS First Schedule and enacted punishment for cognizability, bailability and competent trial court.','Check jurisdiction, charge framing/joinder and statutory preconditions.','Verify the election law/rules governing the relevant electoral right or process.','Check applicable BNSS limitation rules and the date of conduct.','For pre-1 July 2024 conduct, separately analyze repeal, savings and Article 20(1).']}
- ],
- provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-173',section:'s. 173',title:'Punishment for bribery'}],
- examples:[{id:'s-173-ex1',title:'Ingredients established',illustrationType:'practical',description:'The record establishes each material statutory ingredient and no applicable proviso or exception defeats the charge.'},{id:'s-173-ex2',title:'Critical ingredient missing',illustrationType:'fail-scenario',description:'The conduct resembles the provision but a required electoral fact, mental element, authority or evidentiary link is not established.'}],
- hypotheticals:[{id:'s-173-hypo',title:'Chamber problem — BNS s. 173',facts:'The prosecution invokes BNS s. 173; the defence disputes one statutory ingredient and the evidence relied upon to prove it.',question:'Does the proved record satisfy BNS s. 173?',applicableLaw:'BNS s. 173; connected BNS provisions; BNSS procedure; BSA 2023; applicable election law.',analysis:'Identify the enacted test; separate ingredients; map admissible evidence; apply provisos/exceptions; verify electoral context and current BNSS procedure.',conclusion:'Liability follows only if every material statutory ingredient is established on admissible evidence.'}],
- distinctions:[{id:'s-173-dist',title:'BNS provision vs historical IPC concordance',left:'BNS s. 173',right:'Historical IPC: 171E',rows:[{point:'Governing text',left:'Enacted BNS wording',right:'Historical concordance only'},{point:'Ingredients',left:'Current statutory words and qualifiers',right:'Do not assume identical scope'},{point:'Procedure',left:'Verify current BNSS classification',right:'Old CrPC classification is not automatically controlling'}]}],
- misconceptions:[{id:'s-173-trap',trap:'The IPC section number is the current legal test.',correction:'The enacted BNS wording governs post-commencement conduct; IPC 171E is historical concordance.'},{id:'s-173-trap2',trap:'A disputed election act automatically proves the offence.',correction:'Every statutory ingredient, including mental element and electoral qualification, must be proved.'}],
- cases:[],
- questionsAndAnswers:[{id:'s-173-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment under BNS s. 173.',answer:`I. ISSUE.\\nII. RULE.\\nIII. EVIDENCE.\\nIV. PROCEDURE.\\nV. APPLICATION.\\nVI. CONCLUSION.`,explanation:'Chamber-style analysis without unverified authorities.'},{id:'s-173-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 173.',answer:`I. STATUTORY SCHEME.\\nII. INGREDIENTS.\\nIII. EVIDENCE AND BURDEN.\\nIV. DEFENCE / PROVISO.\\nV. PROCEDURE.\\nVI. CONCLUSION.`,explanation:'Courtroom structure without fabricated case law.'}],
- bareActPointers:['BNS s. 173 — Punishment for bribery','BNS Chapter ix — Elections','Historical IPC concordance: 171E','BNSS First Schedule','BSA 2023 evidence provisions','Applicable election law/rules'],
- examTips:['Start with enacted BNS wording.','Use IPC numbering only as historical concordance.','Map electoral records and communications to each ingredient.','Cross-check BNSS and election-law procedure.'],
- revisionPoints:['BNS s. 173: Punishment for bribery.','Cluster: Elections.','Historical IPC concordance: 171E.','Apply enacted BNS text for post-commencement conduct.'],
- relatedTopics:[]
+  "study": "Introduction and meaning\nPunishment for bribery. BNS restatement of IPC 171E. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 171E. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 173 is the rule on “Punishment for bribery”. The section provides that whoever commits the offence of bribery shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both:. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 173 exists so that “Punishment for bribery” has a closed legal test in Chapter IX — Of Offences Relating to Elections. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Bribery, undue influence, personation, and election accounts.\n\nThe provision in detail\n173. Whoever commits the offence of bribery shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both:\n\nEssential ingredients\n1. Whoever commits the offence of bribery shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both:\n\nExplanations\nExplanation.—“Treating” means that form of bribery where the gratification consists in food, drink, entertainment, or provision\n\nExceptions, limitations and provisos\nProvided that bribery by treating shall be punished with fine only",
+  "glance": "BNS s. 173 — Punishment for bribery.",
+  "sections": [
+    {
+      "id": "bns-173-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "173. Whoever commits the offence of bribery shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both:"
+      ]
+    },
+    {
+      "id": "bns-173-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever commits the offence of bribery shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both:"
+      ]
+    },
+    {
+      "id": "bns-173-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation.—“Treating” means that form of bribery where the gratification consists in food, drink, entertainment, or provision"
+      ]
+    },
+    {
+      "id": "bns-173-exc",
+      "title": "Exceptions and provisos",
+      "order": 6,
+      "content": [
+        "Provided that bribery by treating shall be punished with fine only"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "bns-173-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Punishment for bribery”. Name BNS s. 173, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-173-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 173 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-173-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Punishment for bribery” under BNS s. 173 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 173 (Punishment for bribery) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 173. Chapter IX — Of Offences Relating to Elections. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 173 (Punishment for bribery), Chapter IX — Of Offences Relating to Elections.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever commits the offence of bribery shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both:\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 173 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 173. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-173-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 173."
+    },
+    {
+      "id": "bns-173-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-173-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-173-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 173 (Punishment for bribery)",
+      "answer": "Introduction. BNS s. 173 deals with Punishment for bribery. It sits in Chapter IX — Of Offences Relating to Elections of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Punishment for bribery. BNS restatement of IPC 171E. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 171E. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 173 is the rule on “Punishment for bribery”. The section provides that whoever commits the offence of bribery shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both:. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever commits the offence of bribery shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both:\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—“Treating” means that form of bribery where the gratification consists in food, drink, entertainment, or provision An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nExceptions / provisos. Provided that bribery by treating shall be punished with fine only State the exception and then say whether it is attracted on the facts.\n\nConclusion. BNS s. 173 is the complete current-law heading for Punishment for bribery. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-173-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 173 (Punishment for bribery) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 173 deals with Punishment for bribery. It sits in Chapter IX — Of Offences Relating to Elections of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Punishment for bribery. BNS restatement of IPC 171E. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 171E. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 173 is the rule on “Punishment for bribery”. The section provides that whoever commits the offence of bribery shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both:. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever commits the offence of bribery shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both:\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—“Treating” means that form of bribery where the gratification consists in food, drink, entertainment, or provision An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nExceptions / provisos. Provided that bribery by treating shall be punished with fine only State the exception and then say whether it is attracted on the facts.\n\nConclusion. BNS s. 173 is the complete current-law heading for Punishment for bribery. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Bribery, undue influence, personation, and election accounts.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 173. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 173.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 173 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 173 (Punishment for bribery).",
+      "steps": [
+        "Introduce BNS s. 173 and Chapter IX — Of Offences Relating to Elections.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 173."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 173 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 173, Punishment for bribery.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 173: Punishment for bribery.",
+    "First ingredient: Whoever commits the offence of bribery shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both:",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 173 — Punishment for bribery. Older books and judgments may still print a historical number (171E). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
+
 export default content

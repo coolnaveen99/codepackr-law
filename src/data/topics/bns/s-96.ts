@@ -1,32 +1,130 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 96 (and related): procurement of a child for illicit intercourse or related child-protection offences under Chapter V. Complements s. 95 (hiring a child to commit an offence) and the sexual-offence provisions. Child = below 18 (s. 2(3)).',
-  study: `Child-procurement and related protective offences under the BNS sit in Chapter V.\n\nTypical structure: whoever procures or attempts to procure a child for illicit intercourse or for other prohibited purposes is punished as provided. The exact text defines the prohibited purpose and the age threshold.\n\nKey points\n• Child (below 18 under s. 2(3), or as specified).\n• Procurement or attempt.\n• Prohibited purpose (illicit intercourse or as listed).\n\nThese provisions work alongside POCSO (where applicable) and the general sexual-offence and abetment sections. Cite the applicable BNS section for post-1 July 2024 acts; always check concurrent special-law liability.`,
-  sections: [
-    { id: 's-96-m1', title: 'Provenance', order: 1, content: ['Chapter V child-protection provisions. Procurement for prohibited purposes.'] },
-    { id: 's-96-m2', title: 'Elements', order: 2, content: ['Procurement or attempt; child; prohibited purpose as defined.'] },
-    { id: 's-96-m3', title: 'Ingredients', order: 3, content: ['(1) Child. (2) Procurement or attempt. (3) Prohibited purpose.'] },
-    { id: 's-96-m4', title: 'Evidence', order: 4, content: ['Age; acts of procurement; purpose; communications and conduct.'] },
-    { id: 's-96-m5', title: 'Procedure', order: 5, content: ['May run concurrently with POCSO and other special laws; Sessions trial as applicable.'] },
+  "study": "Introduction and meaning\nProcuration of child. BNS restatement of IPC 366A. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 366A. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 96 is the rule on “Procuration of child”. The section provides that whoever, by any means whatsoever, induces any child to go from any place or to do any act with intent that such child may be, or knowing that it is likely that such child will be, forced or seduced to illicit intercourse with another person shall be punishable with imprisonment which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 96 exists so that “Procuration of child” has a closed legal test in Chapter V — Of Offences Against Woman and Child. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.\n\nThe provision in detail\n96. Whoever, by any means whatsoever, induces any child to go from any place or to do any act with intent that such child may be, or knowing that it is likely that such child will be, forced or seduced to illicit intercourse with another person shall be punishable with imprisonment which may extend to ten years, and shall also be liable to fine\n\nEssential ingredients\n1. Whoever, by any means whatsoever, induces any child to go from any place or to do any act with intent that such child may be, or knowing that it is likely that such child will be, forced or seduced to illicit intercourse with another person shall be punishable with imprisonment which may extend to ten years, and shall also be liable to fine",
+  "glance": "BNS s. 96 — Procuration of child.",
+  "sections": [
+    {
+      "id": "bns-96-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "96. Whoever, by any means whatsoever, induces any child to go from any place or to do any act with intent that such child may be, or knowing that it is likely that such child will be, forced or seduced to illicit intercourse with another person shall be punishable with imprisonment which may extend to ten years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-96-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever, by any means whatsoever, induces any child to go from any place or to do any act with intent that such child may be, or knowing that it is likely that such child will be, forced or seduced to illicit intercourse with another person shall be punishable with imprisonment which may extend to ten years, and shall also be liable to fine"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-96', section: 's. 96', title: 'Procurement of child (Chapter V protective offence)' }],
-  examples: [
-    { id: 's-96-ex1', title: 'Procurement for illicit intercourse', illustrationType: 'practical', description: 'A procures a child for the purpose of illicit intercourse. The protective offence is made out (and POCSO may also apply).' },
-    { id: 's-96-ex2', title: 'Adult with free consent', illustrationType: 'fail-scenario', description: 'An adult participates voluntarily. Child-procurement provisions do not apply; other offences may still be relevant.' },
+  "examples": [
+    {
+      "id": "bns-96-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Procuration of child”. Name BNS s. 96, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-96-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 96 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-96-hypo', title: 'Child procurement', facts: 'Accused arranges for a 15-year-old to be taken for prohibited sexual purposes.', question: 'Is the BNS protective offence attracted?', applicableLaw: 'BNS Chapter V child provisions; s. 2(3).', analysis: 'Child + procurement + prohibited purpose — yes; check concurrent POCSO liability.', conclusion: 'Offence made out under BNS and possibly special law.' }],
-  distinctions: [],
-  misconceptions: [{ id: 's-96-trap', trap: 'BNS child-procurement sections replace POCSO.', correction: 'They are concurrent. POCSO and other special laws continue to apply; charge under both where ingredients are met.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-96-brief', draftingCategory: 'brief', question: 'Outline child-procurement protective offences under BNS Chapter V.', answer: 'Provisions in Chapter V punish procurement or attempted procurement of a child for illicit intercourse or other prohibited purposes. Child generally means below 18 (s. 2(3)). These run concurrently with POCSO and other special laws.', explanation: 'Short note.' },
-    { id: 's-96-sub', draftingCategory: 'submissions', question: 'Submissions on child procurement.', answer: 'I. Child. II. Procurement/attempt. III. Prohibited purpose. IV. Concurrent special-law liability. V. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-96-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Procuration of child” under BNS s. 96 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 96 (Procuration of child) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 96. Chapter V — Of Offences Against Woman and Child. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 96 (Procuration of child), Chapter V — Of Offences Against Woman and Child.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever, by any means whatsoever, induces any child to go from any place or to do any act with intent that such child may be, or knowing that it is likely that such child will be, forced or seduced to illicit intercourse with another person shall be punishable with imprisonment which may extend to ten years, and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 96 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 96 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 96. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS Chapter V child-protection provisions', 'BNS s. 95', 'BNS s. 2(3)', 'POCSO Act'],
-  examTips: ['Always mention concurrent POCSO liability where sexual purposes involving a child are on the facts.', 'Link to s. 2(3) child definition.'],
-  revisionPoints: ['Procurement of child for prohibited purpose.', 'Child = below 18 (s. 2(3)).', 'Concurrent with POCSO.'],
-  relatedTopics: ['s-95', 's-2', 's-64', 's-28'],
+  "misconceptions": [
+    {
+      "id": "bns-96-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 96."
+    },
+    {
+      "id": "bns-96-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-96-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-96-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 96 (Procuration of child)",
+      "answer": "Introduction. BNS s. 96 deals with Procuration of child. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Procuration of child. BNS restatement of IPC 366A. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 366A. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 96 is the rule on “Procuration of child”. The section provides that whoever, by any means whatsoever, induces any child to go from any place or to do any act with intent that such child may be, or knowing that it is likely that such child will be, forced or seduced to illicit intercourse with another person shall be punishable with imprisonment which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever, by any means whatsoever, induces any child to go from any place or to do any act with intent that such child may be, or knowing that it is likely that such child will be, forced or seduced to illicit intercourse with another person shall be punishable with imprisonment which may extend to ten years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 96. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 96 is the complete current-law heading for Procuration of child. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-96-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 96 (Procuration of child) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 96 deals with Procuration of child. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Procuration of child. BNS restatement of IPC 366A. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 366A. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 96 is the rule on “Procuration of child”. The section provides that whoever, by any means whatsoever, induces any child to go from any place or to do any act with intent that such child may be, or knowing that it is likely that such child will be, forced or seduced to illicit intercourse with another person shall be punishable with imprisonment which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever, by any means whatsoever, induces any child to go from any place or to do any act with intent that such child may be, or knowing that it is likely that such child will be, forced or seduced to illicit intercourse with another person shall be punishable with imprisonment which may extend to ten years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 96. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 96 is the complete current-law heading for Procuration of child. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 96. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 96.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 96 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 96 (Procuration of child).",
+      "steps": [
+        "Introduce BNS s. 96 and Chapter V — Of Offences Against Woman and Child.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 96."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 96 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 96, Procuration of child.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 96: Procuration of child.",
+    "First ingredient: Whoever, by any means whatsoever, induces any child to go from any place or to do any act with intent that such child may be, or knowing that it is likely that such child will be, forced or seduced to illicit intercourse with another person shall be punishable with imprisonment which may extend to ten years, and shall also be liable to fine",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 96 — Procuration of child. Older books and judgments may still print a historical number (366A). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

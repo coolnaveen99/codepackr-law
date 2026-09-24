@@ -1,32 +1,182 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 109 (and related attempt provisions): whoever attempts to commit an offence punishable with imprisonment, and in such attempt does any act towards the commission of the offence, is punished as provided (often up to one-half of the longest term for the completed offence, or as specifically stated). Attempt requires intention + an act that goes beyond preparation. Successor structure to IPC s. 511.',
-  study: `Attempt under the BNS follows the classic structure: intention to commit the offence + an act towards its commission that goes beyond mere preparation.\n\nKey points\n• Preparation is not attempt. The act must be sufficiently proximate to the completion of the offence.\n• The punishment scale is generally a fraction of the completed offence (commonly up to one-half of the longest term), unless a specific attempt section provides otherwise.\n• Attempt to commit murder and certain other offences may have dedicated provisions; always check the specific section.\n\nCite the applicable BNS attempt section for post-1 July 2024 acts. Distinguish from abetment (s. 45) and conspiracy (s. 61).`,
-  sections: [
-    { id: 's-109-m1', title: 'Provenance', order: 1, content: ['Successor structure to IPC s. 511. Attempt = intention + act beyond preparation.'] },
-    { id: 's-109-m2', title: 'Elements of Attempt', order: 2, content: ['Intention to commit the offence; an act towards commission that is more than preparation.'] },
-    { id: 's-109-m3', title: 'Ingredients', order: 3, content: ['(1) Intention. (2) Act towards commission. (3) Act goes beyond preparation. (4) Offence not completed (otherwise charge the completed offence).'] },
-    { id: 's-109-m4', title: 'Evidence', order: 4, content: ['Proximity of the act to completion; intention inferred from conduct and circumstances.'] },
-    { id: 's-109-m5', title: 'Procedure', order: 5, content: ['May be charged in the alternative with the completed offence where appropriate.'] },
+  "study": "Introduction and meaning\nAttempt to murder (old 307). Doing an act with such intention or knowledge, and under such circumstances, that had death been caused the offender would be guilty of murder.\nIn student language: BNS s. 109 is the rule on “Attempt to murder”. The section provides that (1) Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 109 exists so that “Attempt to murder” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n109. (1) Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned\n\n(2) When any person offending under sub-section (1) is under sentence of imprisonment for life, he may, if hurt is caused, be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life\n\nEssential ingredients\n1. (1) Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned\n2. (2) When any person offending under sub-section\n3. (1) is under sentence of imprisonment for life, he may, if hurt is caused, be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life\n\nPunishment / legal consequence\nUp to 10 years + fine; if hurt caused, life or 10 years.\n\nStatutory illustrations\nIllustration (a). A shoots at Z with intention to kill him, under such circumstances that, if death ensued, A would be guilty of murder. A is liable to punishment under this section\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 109 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (b). A, with the intention of causing the death of a child of tender years, exposes it in a desert place. A has committed the offence defined by this section, though the death of the child does not ensue\n\nExam use: quote illustration (b), then write which ingredient of BNS s. 109 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (c). A, intending to murder Z, buys a gun and loads it. A has not yet committed the offence. A fires the gun at Z. He has committed the offence defined in this section, and, if by such firing he wounds Z, he is liable to the punishment provided by the latter part of sub-section (1)\n\nExam use: quote illustration (c), then write which ingredient of BNS s. 109 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (d). A, intending to murder Z by poison, purchases poison and mixes the same with food which remains in A’s keeping; A has not yet committed the offence defined in this section. A places the food on Z’s table or delivers it to Z’s servants to place it on Z’s table. A has committed the offence defined in this section\n\nExam use: quote illustration (d), then write which ingredient of BNS s. 109 it proves. Copying the illustration without that mapping sentence does not score.",
+  "glance": "BNS s. 109 — Attempt to murder.",
+  "sections": [
+    {
+      "id": "bns-109-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "109. (1) Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned",
+        "(2) When any person offending under sub-section (1) is under sentence of imprisonment for life, he may, if hurt is caused, be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life"
+      ]
+    },
+    {
+      "id": "bns-109-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned",
+        "(2) When any person offending under sub-section",
+        "(1) is under sentence of imprisonment for life, he may, if hurt is caused, be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life"
+      ]
+    },
+    {
+      "id": "bns-109-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "(a) A shoots at Z with intention to kill him, under such circumstances that, if death ensued, A would be guilty of murder. A is liable to punishment under this section",
+        "(b) A, with the intention of causing the death of a child of tender years, exposes it in a desert place. A has committed the offence defined by this section, though the death of the child does not ensue",
+        "(c) A, intending to murder Z, buys a gun and loads it. A has not yet committed the offence. A fires the gun at Z. He has committed the offence defined in this section, and, if by such firing he wounds Z, he is liable to the punishment provided by the latter part of sub-section (1)",
+        "(d) A, intending to murder Z by poison, purchases poison and mixes the same with food which remains in A’s keeping; A has not yet committed the offence defined in this section. A places the food on Z’s table or delivers it to Z’s servants to place it on Z’s table. A has committed the offence defined in this section"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-109', section: 's. 109', title: 'Attempt to commit offence' }],
-  examples: [
-    { id: 's-109-ex1', title: 'Attempt beyond preparation', illustrationType: 'practical', description: 'A, intending to steal, breaks open a lock and is interrupted. The act has gone beyond preparation; attempt is made out.' },
-    { id: 's-109-ex2', title: 'Mere preparation', illustrationType: 'fail-scenario', description: 'A buys tools intending to commit burglary but does nothing further. Preparation alone is not attempt.' },
+  "examples": [
+    {
+      "id": "bns-109-ex-1",
+      "title": "Illustration (a)",
+      "description": "A shoots at Z with intention to kill him, under such circumstances that, if death ensued, A would be guilty of murder. A is liable to punishment under this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 109 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-109-ex-2",
+      "title": "Illustration (b)",
+      "description": "A, with the intention of causing the death of a child of tender years, exposes it in a desert place. A has committed the offence defined by this section, though the death of the child does not ensue\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 109 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-109-ex-3",
+      "title": "Illustration (c)",
+      "description": "A, intending to murder Z, buys a gun and loads it. A has not yet committed the offence. A fires the gun at Z. He has committed the offence defined in this section, and, if by such firing he wounds Z, he is liable to the punishment provided by the latter part of sub-section (1)\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 109 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-109-ex-4",
+      "title": "Illustration (d)",
+      "description": "A, intending to murder Z by poison, purchases poison and mixes the same with food which remains in A’s keeping; A has not yet committed the offence defined in this section. A places the food on Z’s table or delivers it to Z’s servants to place it on Z’s table. A has committed the offence defined in this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 109 — which fact proves which element, and what the legal result is."
+    }
   ],
-  hypotheticals: [{ id: 's-109-hypo', title: 'Preparation vs attempt', facts: 'Accused does the last proximate act but is interrupted before completion.', question: 'Is attempt made out?', applicableLaw: 'BNS attempt provisions.', analysis: 'If the act has gone beyond preparation and is proximate to completion — yes.', conclusion: 'Attempt established.' }],
-  distinctions: [{ id: 's-109-dist', title: 'Attempt vs Preparation vs Abetment', left: 'Attempt', right: 'Preparation / Abetment', rows: [{ point: 'Act', left: 'Act towards commission beyond preparation', right: 'Preparation only; or instigation/conspiracy/aid without the proximate act of the principal' }] }],
-  misconceptions: [{ id: 's-109-trap', trap: 'Any step toward an offence is attempt.', correction: 'Only acts that go beyond preparation and are sufficiently proximate to completion constitute attempt.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-109-brief', draftingCategory: 'brief', question: 'What is attempt under the BNS?', answer: 'Attempt requires intention to commit the offence and an act towards its commission that goes beyond mere preparation. Punishment is generally a fraction of the completed offence unless a specific section provides otherwise.', explanation: 'Short note.' },
-    { id: 's-109-sub', draftingCategory: 'submissions', question: 'Submissions on attempt.', answer: 'I. Intention. II. Act beyond preparation. III. Proximity. IV. Punishment scale. V. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-109-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "(a) A shoots at Z with intention to kill him, under such circumstances that, if death ensued, A would be guilty of murder. A is liable to punishment under this section",
+      "question": "Whether BNS s. 109 (Attempt to murder) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 109. Chapter VI — Of Offences Affecting the Human Body. Connected: BNS s. 101, BNS s. 62.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 109 (Attempt to murder), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned\n   (2) (2) When any person offending under sub-section\n   (3) (1) is under sentence of imprisonment for life, he may, if hurt is caused, be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 109 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 109 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 109. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS attempt provisions (s. 109 and related)', 'BNS s. 45', 'BNS s. 61', 'IPC s. 511 (historical)'],
-  examTips: ['Always distinguish preparation from attempt.', 'State the proximity test.'],
-  revisionPoints: ['Attempt = intention + act beyond preparation.', 'Preparation alone is not attempt.'],
-  relatedTopics: ['s-45', 's-61', 's-101'],
+  "distinctions": [
+    {
+      "id": "bns-109-dist",
+      "title": "BNS s. 109 and connected sections",
+      "left": "BNS s. 109",
+      "right": "BNS s. 101, BNS s. 62",
+      "rows": [
+        {
+          "point": "Heading",
+          "left": "Attempt to murder",
+          "right": "Read the neighbour’s title on its own page before you write."
+        },
+        {
+          "point": "What you must prove",
+          "left": "(1) Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+        },
+        {
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 109.",
+          "right": "Citing s. 109 where the neighbour actually applies."
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-109-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 109."
+    },
+    {
+      "id": "bns-109-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-109-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-109-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 109 (Attempt to murder)",
+      "answer": "Introduction. BNS s. 109 deals with Attempt to murder. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Attempt to murder (old 307). Doing an act with such intention or knowledge, and under such circumstances, that had death been caused the offender would be guilty of murder.\n\nLegal rule. In student language: BNS s. 109 is the rule on “Attempt to murder”. The section provides that (1) Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned\n2. (2) When any person offending under sub-section\n3. (1) is under sentence of imprisonment for life, he may, if hurt is caused, be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A shoots at Z with intention to kill him, under such circumstances that, if death ensued, A would be guilty of murder. A is liable to punishment under this section\n\nLimitations. Apply only the conditions written in s. 109. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Up to 10 years + fine; if hurt caused, life or 10 years.\n\nConnected sections. Read with BNS s. 101, BNS s. 62. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 109 is the complete current-law heading for Attempt to murder. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-109-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 109 (Attempt to murder) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 109 deals with Attempt to murder. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Attempt to murder (old 307). Doing an act with such intention or knowledge, and under such circumstances, that had death been caused the offender would be guilty of murder.\n\nLegal rule. In student language: BNS s. 109 is the rule on “Attempt to murder”. The section provides that (1) Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned\n2. (2) When any person offending under sub-section\n3. (1) is under sentence of imprisonment for life, he may, if hurt is caused, be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A shoots at Z with intention to kill him, under such circumstances that, if death ensued, A would be guilty of murder. A is liable to punishment under this section\n\nLimitations. Apply only the conditions written in s. 109. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Up to 10 years + fine; if hurt caused, life or 10 years.\n\nConnected sections. Read with BNS s. 101, BNS s. 62. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 109 is the complete current-law heading for Attempt to murder. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second statutory illustration. Illustration (b): (b) A, with the intention of causing the death of a child of tender years, exposes it in a desert place. A has committed the offence defined by this section, though the death of the child does not ensue Contrast it with illustration (a). The legal weight lies in the contrast.\n\nLayer 3 — Distinction. Contrast BNS s. 109 with BNS s. 101, BNS s. 62. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 109.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 109 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Attempt to murder = 109. Attempt to commit culpable homicide = 110. Mixing them is the IPC 307/308 trap, relabelled."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 109 (Attempt to murder).",
+      "steps": [
+        "Introduce BNS s. 109 and Chapter VI — Of Offences Affecting the Human Body.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 109."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 109 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second statutory illustration and contrast it with the first.",
+        "Distinguish BNS s. 109 from BNS s. 101, BNS s. 62.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 109, Attempt to murder.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 109: Attempt to murder.",
+    "First ingredient: (1) Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned",
+    "4 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 109 — Attempt to murder. Older books and judgments may still print a historical number (307). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": [
+    "s-101",
+    "s-62"
+  ]
 }
 
 export default content

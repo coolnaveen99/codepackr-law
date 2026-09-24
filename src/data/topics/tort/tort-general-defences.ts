@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "General defences may defeat or limit an otherwise established tort. Volenti, inevitable accident, act of God and necessity are distinct doctrines with different ingredients.",
   "study": "General defences may defeat or limit an otherwise established tort. Volenti, inevitable accident, act of God and necessity are distinct doctrines with different ingredients.\\n\\nThe common law recognises circumstances where conduct is consented to, unavoidable, justified by extraordinary natural forces, or necessary to avert a greater danger. Volenti requires informed and voluntary assumption of risk; mere knowledge is not automatically consent. Necessity is narrowly framed and ordinarily requires proportionality.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

@@ -1,25 +1,139 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'BNS Section 98: Selling child for purposes of prostitution, etc. This note explains its statutory scope within the Offences against child cluster and the connected BNS, BNSS and BSA issues that must be checked before application.',
-  study: `Section 98 — Selling child for purposes of prostitution, etc.\n\nSelling child for purposes of prostitution, etc. BNS restatement of IPC 372. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. Historical IPC concordance: 372.\n\nRead the enacted text with its definitions, explanations, provisos and exceptions. For pre-1 July 2024 conduct, separately apply the repeal-and-savings framework and Article 20(1).`,
-  sections:[
-    {id:'s-98-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:['Chapter v; cluster: Offences against child.','Selling child for purposes of prostitution, etc. BNS restatement of IPC 372. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024.','Historical IPC concordance: 372.]},
-    {id:'s-98-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:['Operative title: “Selling child for purposes of prostitution, etc”.','Read every sub-section, proviso, explanation and exception in the enacted text.','Identify the connected punishment provision before advising on sentence.]},
-    {id:'s-98-m3',title:'Application Ingredients & Issue-Spotting',order:3,content:['Identify the protected legal interest or statutory situation addressed by the provision.','Map each material fact to the enacted words of s. 98.','Check connected definitions, exceptions and adjacent provisions before concluding that the section is attracted.']},
-    {id:'s-98-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:['The prosecution ordinarily bears the burden of proving a criminal charge beyond reasonable doubt, subject to any applicable statutory presumption.','Identify the fact each side must establish and distinguish admissibility from evidentiary weight under the BSA 2023.','Electronic material must satisfy the applicable BSA requirements; digital availability alone does not establish authenticity or weight.']},
-    {id:'s-98-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:['Check the BNSS First Schedule and connected offence/punishment provision for cognizability, bailability and trial court.','Check territorial jurisdiction, charge/joinder issues and any sanction or statutory permission requirement.','Verify BNSS limitation provisions, if applicable.','For pre-1 July 2024 conduct, separately analyze the BNS savings provision and Article 20(1).']},
+  "study": "Introduction and meaning\nSelling child for purposes of prostitution, etc. BNS restatement of IPC 372. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 372. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 98 is the rule on “Selling child for purposes of prostitution, etc”. The section provides that whoever sells, lets to hire, or otherwise disposes of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 98 exists so that “Selling child for purposes of prostitution, etc” has a closed legal test in Chapter V — Of Offences Against Woman and Child. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.\n\nThe provision in detail\n98. Whoever sells, lets to hire, or otherwise disposes of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nEssential ingredients\n1. Whoever sells, lets to hire, or otherwise disposes of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nExplanations\nExplanation 1.—When a female under the age of eighteen years is sold, let for hire, or otherwise disposed of to a prostitute or to any person who keeps or manages a brothel, the person so disposing of such female shall, until the contrary is proved, be presumed to have disposed of her with the intent that she shall be used for the purpose of prostitution\n\nExplanation 2.—For the purposes of this section “illicit intercourse” means sexual intercourse between persons not united by marriage or by any union or tie which, though not amounting to a marriage, is recognised by the personal law or custom of the community to which they belong or, where they belong to different communities, of both such communities, as constituting between them a quasi-marital relation",
+  "glance": "BNS s. 98 — Selling child for purposes of prostitution, etc.",
+  "sections": [
+    {
+      "id": "bns-98-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "98. Whoever sells, lets to hire, or otherwise disposes of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-98-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever sells, lets to hire, or otherwise disposes of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-98-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation 1.—When a female under the age of eighteen years is sold, let for hire, or otherwise disposed of to a prostitute or to any person who keeps or manages a brothel, the person so disposing of such female shall, until the contrary is proved, be presumed to have disposed of her with the intent that she shall be used for the purpose of prostitution",
+        "Explanation 2.—For the purposes of this section “illicit intercourse” means sexual intercourse between persons not united by marriage or by any union or tie which, though not amounting to a marriage, is recognised by the personal law or custom of the community to which they belong or, where they belong to different communities, of both such communities, as constituting between them a quasi-marital relation"
+      ]
+    }
   ],
-  provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-98',section:'s. 98',title:'Selling child for purposes of prostitution, etc'}],
-  examples:[{id:'s-98-ex1',title:'Provision applies — statutory conditions satisfied',illustrationType:'practical',description:'The alleged conduct or circumstance falls within the statutory subject of s. 98 and the connected conditions are proved.'},{id:'s-98-ex2',title:'Boundary defect — an ingredient is missing',illustrationType:'fail-scenario',description:'The facts resemble the section, but a required condition, exception, qualification or causal link is not established.'}],
-  hypotheticals:[{id:'s-98-hypo',title:'Chamber problem — BNS s. 98',facts:'The prosecution invokes s. 98 on facts within the Offences against child cluster. The defence disputes the statutory fit.',question:'Do the proved facts satisfy s. 98?',applicableLaw:'BNS s. 98; connected BNS provisions; applicable BNSS procedure; BSA 2023 evidence rules.',analysis:'1. Identify the exact statutory words. 2. Break them into conditions. 3. Test each condition against the evidence. 4. Apply exceptions or provisos. 5. Identify the correct procedural and punishment consequence.',conclusion:'Application turns on the enacted ingredients of s. 98, not on the historical IPC number alone.'}],
-  distinctions:[{id:'s-98-dist',title:'BNS provision vs historical IPC concordance',left:'BNS s. 98',right:'Historical IPC: 372',rows:[{point:'Governing law',left:'BNS for post-commencement offences',right:'IPC is historical where saved or relevant'},{point:'Method',left:'Start with enacted BNS wording',right:'Use historical IPC only to understand continuity/change'},{point:'Transition',left:'Check commencement and savings',right:'Pre-commencement offences may remain governed by saved IPC law'}]}],
-  misconceptions:[{id:'s-98-trap',trap:'The IPC number can automatically be substituted for BNS s. 98.',correction:'The enacted BNS text controls post-commencement offences; historical concordance is not a substitute for reading the BNS provision.'},{id:'s-98-trap-2',trap:'The section heading alone proves liability.',correction:'All statutory ingredients and relevant exceptions must be established on the evidence.'}],
-  cases:[],
-  questionsAndAnswers:[{id:'s-98-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment of BNS s. 98.',answer:`I. ISSUE — precise statutory question.\nII. RULE — enacted ingredients, connected provisions and exceptions.\nIII. APPLICATION — map evidence to each condition.\nIV. CONCLUSION — whether s. 98 is attracted and the connected consequence.`,explanation:'Chamber-style structured analysis.'},{id:'s-98-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 98.',answer:`I. STATUTORY SCHEME.\nII. INGREDIENTS.\nIII. EVIDENCE AND BURDEN.\nIV. RESPONSE TO EXCEPTIONS AND DEFENCES.\nV. PROCEDURE AND OPERATIVE RELIEF.`,explanation:'Courtroom submission structure without unverified authorities.'}],
-  bareActPointers:['BNS s. 98 — Selling child for purposes of prostitution, etc','Connected BNS definitions/exceptions','BNSS First Schedule and applicable procedure','BSA 2023 burden and evidence provisions','BNS repeal-and-savings framework for pre-1 July 2024 conduct'],
-  examTips:['Start with the enacted BNS wording.','Check connected definitions, exceptions, procedure and punishment.','Use IPC numbering only as historical concordance.'],
-  revisionPoints:['s. 98: Selling child for purposes of prostitution, etc.','Cluster: Offences against child.','IPC concordance: 372.','Verify BNSS procedure and BSA evidence requirements.'],
-  relatedTopics:[],
+  "examples": [
+    {
+      "id": "bns-98-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Selling child for purposes of prostitution, etc”. Name BNS s. 98, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-98-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 98 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-98-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Selling child for purposes of prostitution, etc” under BNS s. 98 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 98 (Selling child for purposes of prostitution, etc) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 98. Chapter V — Of Offences Against Woman and Child. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 98 (Selling child for purposes of prostitution, etc), Chapter V — Of Offences Against Woman and Child.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever sells, lets to hire, or otherwise disposes of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 98 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 98. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-98-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 98."
+    },
+    {
+      "id": "bns-98-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-98-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-98-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 98 (Selling child for purposes of prostitution, etc)",
+      "answer": "Introduction. BNS s. 98 deals with Selling child for purposes of prostitution, etc. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Selling child for purposes of prostitution, etc. BNS restatement of IPC 372. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 372. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 98 is the rule on “Selling child for purposes of prostitution, etc”. The section provides that whoever sells, lets to hire, or otherwise disposes of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever sells, lets to hire, or otherwise disposes of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation 1.—When a female under the age of eighteen years is sold, let for hire, or otherwise disposed of to a prostitute or to any person who keeps or manages a brothel, the person so disposing of such female shall, until the contrary is proved, be presumed to have disposed of her with the intent that she shall be used for the purpose of prostitution An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 98. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 98 is the complete current-law heading for Selling child for purposes of prostitution, etc. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-98-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 98 (Selling child for purposes of prostitution, etc) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 98 deals with Selling child for purposes of prostitution, etc. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Selling child for purposes of prostitution, etc. BNS restatement of IPC 372. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 372. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 98 is the rule on “Selling child for purposes of prostitution, etc”. The section provides that whoever sells, lets to hire, or otherwise disposes of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever sells, lets to hire, or otherwise disposes of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation 1.—When a female under the age of eighteen years is sold, let for hire, or otherwise disposed of to a prostitute or to any person who keeps or manages a brothel, the person so disposing of such female shall, until the contrary is proved, be presumed to have disposed of her with the intent that she shall be used for the purpose of prostitution An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 98. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 98 is the complete current-law heading for Selling child for purposes of prostitution, etc. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 98. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 98.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 98 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 98 (Selling child for purposes of prostitution, etc).",
+      "steps": [
+        "Introduce BNS s. 98 and Chapter V — Of Offences Against Woman and Child.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 98."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 98 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 98, Selling child for purposes of prostitution, etc.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 98: Selling child for purposes of prostitution, etc.",
+    "First ingredient: Whoever sells, lets to hire, or otherwise disposes of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 98 — Selling child for purposes of prostitution, etc. Older books and judgments may still print a historical number (372). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
+
 export default content

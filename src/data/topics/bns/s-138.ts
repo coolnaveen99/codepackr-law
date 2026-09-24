@@ -1,25 +1,158 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'BNS Section 138: Abduction. This dedicated note places the provision in its statutory cluster and connects its ingredients with evidence, procedure and neighbouring BNS provisions.',
-  study: `Section 138 — Abduction.\\n\\nAbduction (old 362): compelling by force, or inducing by deceitful means, a person to go from any place. Abduction is not an offence by itself — it is the in-order-to sections (140, 87, etc.) that punish. Historical IPC concordance: 362.\\n\\nRead the enacted BNS wording with every sub-section, explanation, proviso and exception. For conduct before 1 July 2024, separately apply the repeal-and-savings framework and Article 20(1).`,
-  sections:[
-    {id:'s-138-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:['Chapter vi; cluster: Kidnapping and trafficking.','Abduction (old 362): compelling by force, or inducing by deceitful means, a person to go from any place. Abduction is not an offence by itself — it is the in-order-to sections (140, 87, etc.) that punish.','Historical IPC concordance: 362.','Treat the BNS text as the governing source for post-commencement offences; use IPC concordance only to understand continuity or change.']},
-    {id:'s-138-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:['Operative provision: BNS s. 138 — Abduction.','Break the enacted provision into its express elements, qualifiers, explanations and exceptions before applying it.','Read the immediately connected BNS provisions so that a definition, aggravation, proviso or punishment rule is not missed.']},
-    {id:'s-138-m3',title:'Application Ingredients & Issue-Spotting',order:3,content:['Start with the statutory act, circumstance, mental element or status required by s. 138.','Map each material fact to a specific statutory ingredient and identify any missing link.','Check whether the facts instead fit a neighbouring offence or a general exception; avoid treating a historical IPC label as the test.']},
-    {id:'s-138-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:['The prosecution ordinarily bears the burden of proving the charged ingredients beyond reasonable doubt, subject to any applicable statutory presumption.','Identify the fact each side must establish and distinguish admissibility from evidentiary weight under the BSA 2023.','Where electronic material is relied upon, comply with the applicable BSA provisions on electronic records, authenticity and proof.']},
-    {id:'s-138-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:['Check the BNSS First Schedule and the connected offence/punishment provision for cognizability, bailability and the competent trial court.','Check territorial jurisdiction, joinder/charge issues, sanction requirements and other statutory preconditions where relevant.','Verify any applicable BNSS limitation rule and the commencement date of the governing penal law.','For pre-1 July 2024 conduct, separately analyze repeal, savings and Article 20(1).']},
+  "study": "Introduction and meaning\nAbduction (old 362): compelling by force, or inducing by deceitful means, a person to go from any place. Abduction is not an offence by itself — it is the in-order-to sections (140, 87, etc.) that punish. BNS restatement of IPC 362. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 138 is the rule on “Abduction”. The section provides that whoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 138 exists so that “Abduction” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n138. Whoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person\n\nEssential ingredients\n1. Whoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person",
+  "glance": "BNS s. 138 — Abduction.",
+  "sections": [
+    {
+      "id": "bns-138-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "138. Whoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person"
+      ]
+    },
+    {
+      "id": "bns-138-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person"
+      ]
+    }
   ],
-  provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-138',section:'s. 138',title:'Abduction'}],
-  examples:[{id:'s-138-ex1',title:'Statutory ingredients satisfied',illustrationType:'practical',description:'The proved facts correspond to the material words and conditions of BNS s. 138, with no applicable exception defeating the charge.'},{id:'s-138-ex2',title:'Ingredient or qualification missing',illustrationType:'fail-scenario',description:'The conduct resembles the provision, but a required ingredient, statutory qualification, exception or evidentiary link is not established.'}],
-  hypotheticals:[{id:'s-138-hypo',title:'Chamber problem — BNS s. 138',facts:'A prosecution invokes s. 138 on facts within the Kidnapping and trafficking cluster. The defence disputes the statutory fit and the proof of one or more ingredients.',question:'Do the proved facts satisfy BNS s. 138?',applicableLaw:'BNS s. 138; connected BNS provisions; applicable BNSS procedure; BSA 2023 evidence rules.',analysis:'1. Identify the exact statutory words. 2. Break them into ingredients and qualifiers. 3. Map the evidence to each ingredient. 4. Apply explanations, provisos and exceptions. 5. Check the procedural and punishment consequences.',conclusion:'The conclusion must follow from the enacted ingredients and proved facts, not from the historical IPC number alone.'}],
-  distinctions:[{id:'s-138-dist',title:'BNS provision vs historical IPC concordance',left:'BNS s. 138',right:'Historical IPC: 362',rows:[{point:'Governing text',left:'Enacted BNS wording for post-commencement offences',right:'Historical material used only for continuity/change analysis'},{point:'Application method',left:'Test each statutory ingredient and qualification',right:'Do not substitute the old section number for the BNS text'},{point:'Transition',left:'Check commencement and savings',right:'Pre-commencement conduct may remain governed by saved prior law'}]}],
-  misconceptions:[{id:'s-138-trap',trap:'The historical IPC provision can simply be substituted for BNS s. 138.',correction:'The enacted BNS text controls post-commencement offences; historical concordance does not replace the statutory wording.'},{id:'s-138-trap-2',trap:'The section heading or factual resemblance alone establishes liability.',correction:'Every material ingredient, qualification and applicable exception must be established on the evidence.'}],
-  cases:[],
-  questionsAndAnswers:[{id:'s-138-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment of BNS s. 138.',answer:`I. ISSUE — identify the precise statutory question.\\nII. RULE — enacted ingredients, definitions, exceptions and connected provisions.\\nIII. APPLICATION — map the evidence to each condition.\\nIV. CONCLUSION — state the statutory consequence supported by the proved facts.`,explanation:'Chamber-style structured analysis without unverified authorities.'},{id:'s-138-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 138.',answer:`I. STATUTORY SCHEME.\\nII. INGREDIENTS AND QUALIFICATIONS.\\nIII. EVIDENCE AND BURDEN.\\nIV. RESPONSE TO EXCEPTIONS OR DEFENCES.\\nV. PROCEDURAL AND OPERATIVE CONSEQUENCE.`,explanation:'Courtroom submission structure without unverified case citations.'}],
-  bareActPointers:['BNS s. 138 — Abduction','Connected BNS definitions, explanations, provisos and exceptions','BNSS First Schedule and applicable procedure','BSA 2023 burden and evidence provisions','BNS repeal-and-savings framework for pre-1 July 2024 conduct'],
-  examTips:['Start with the enacted BNS wording and identify each ingredient.','Read connected definitions, exceptions, procedure and punishment provisions.','Use IPC numbering only as historical concordance, not as a substitute for the BNS text.'],
-  revisionPoints:['BNS s. 138: Abduction.','Cluster: Kidnapping and trafficking.','IPC concordance: 362.','Verify the current BNSS procedural classification and BSA evidentiary requirements before advising.'],
-  relatedTopics:["s-137","s-140"]
+  "examples": [
+    {
+      "id": "bns-138-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Abduction”. Name BNS s. 138, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-138-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 138 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-138-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Abduction” under BNS s. 138 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 138 (Abduction) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 138. Chapter VI — Of Offences Affecting the Human Body. Connected: BNS s. 137, BNS s. 140.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 138 (Abduction), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 138 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 138 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 138. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "distinctions": [
+    {
+      "id": "bns-138-dist",
+      "title": "BNS s. 138 and connected sections",
+      "left": "BNS s. 138",
+      "right": "BNS s. 137, BNS s. 140",
+      "rows": [
+        {
+          "point": "Heading",
+          "left": "Abduction",
+          "right": "Read the neighbour’s title on its own page before you write."
+        },
+        {
+          "point": "What you must prove",
+          "left": "Whoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+        },
+        {
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 138.",
+          "right": "Citing s. 138 where the neighbour actually applies."
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-138-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 138."
+    },
+    {
+      "id": "bns-138-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-138-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-138-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 138 (Abduction)",
+      "answer": "Introduction. BNS s. 138 deals with Abduction. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Abduction (old 362): compelling by force, or inducing by deceitful means, a person to go from any place. Abduction is not an offence by itself — it is the in-order-to sections (140, 87, etc.) that punish. BNS restatement of IPC 362. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 138 is the rule on “Abduction”. The section provides that whoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 138. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 137, BNS s. 140. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 138 is the complete current-law heading for Abduction. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-138-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 138 (Abduction) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 138 deals with Abduction. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Abduction (old 362): compelling by force, or inducing by deceitful means, a person to go from any place. Abduction is not an offence by itself — it is the in-order-to sections (140, 87, etc.) that punish. BNS restatement of IPC 362. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 138 is the rule on “Abduction”. The section provides that whoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 138. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 137, BNS s. 140. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 138 is the complete current-law heading for Abduction. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 138 with BNS s. 137, BNS s. 140. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 138.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 138 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 138 (Abduction).",
+      "steps": [
+        "Introduce BNS s. 138 and Chapter VI — Of Offences Affecting the Human Body.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 138."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 138 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Distinguish BNS s. 138 from BNS s. 137, BNS s. 140.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 138, Abduction.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 138: Abduction.",
+    "First ingredient: Whoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 138 — Abduction. Older books and judgments may still print a historical number (362). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": [
+    "s-137",
+    "s-140"
+  ]
 }
+
 export default content

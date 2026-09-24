@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "The historical maxim actio personalis moritur cum persona meant that certain personal actions died with the claimant or defendant. Indian statutes modified that rule, especially through the Fatal Accidents Act 1855 and specialised motor-accident legislation.",
   "study": "The historical maxim actio personalis moritur cum persona meant that certain personal actions died with the claimant or defendant. Indian statutes modified that rule, especially through the Fatal Accidents Act 1855 and specialised motor-accident legislation.\\n\\nThe Fatal Accidents Act created a statutory claim for wrongful death by specified relatives. Motor accident claims are governed additionally by the Motor Vehicles Act 1988. Survival of causes belonging to the estate must be distinguished from dependency claims belonging to relatives.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

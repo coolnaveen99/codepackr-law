@@ -1,25 +1,157 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'BNS Section 124: Voluntarily causing grievous hurt by use of acid, etc. This note explains its statutory scope within the Hurt cluster and the connected BNS, BNSS and BSA issues that must be checked before application.',
-  study: `Section 124 — Voluntarily causing grievous hurt by use of acid, etc.\n\nAcid attack (old 326A/326B). Voluntarily causing grievous hurt by acid, and the attempt. Permanent or partial damage, burns, deformity. Fine is just and reasonable to meet medical expenses and is paid to the victim. Historical IPC concordance: 326A / 326B. Statutory punishment note: 10 years to life + fine paid to the victim..\n\nRead the enacted text with its definitions, explanations, provisos and exceptions. For pre-1 July 2024 conduct, separately apply the repeal-and-savings framework and Article 20(1).`,
-  sections:[
-    {id:'s-124-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:['Chapter vi; cluster: Hurt.','Acid attack (old 326A/326B). Voluntarily causing grievous hurt by acid, and the attempt. Permanent or partial damage, burns, deformity. Fine is just and reasonable to meet medical expenses and is paid to the victim.','Historical IPC concordance: 326A / 326B.]},
-    {id:'s-124-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:['Operative title: “Voluntarily causing grievous hurt by use of acid, etc”.','Read every sub-section, proviso, explanation and exception in the enacted text.','Registry punishment note: 10 years to life + fine paid to the victim.]},
-    {id:'s-124-m3',title:'Application Ingredients & Issue-Spotting',order:3,content:['Identify the protected legal interest or statutory situation addressed by the provision.','Map each material fact to the enacted words of s. 124.','Check connected definitions, exceptions and adjacent provisions before concluding that the section is attracted.']},
-    {id:'s-124-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:['The prosecution ordinarily bears the burden of proving a criminal charge beyond reasonable doubt, subject to any applicable statutory presumption.','Identify the fact each side must establish and distinguish admissibility from evidentiary weight under the BSA 2023.','Electronic material must satisfy the applicable BSA requirements; digital availability alone does not establish authenticity or weight.']},
-    {id:'s-124-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:['Check the BNSS First Schedule and connected offence/punishment provision for cognizability, bailability and trial court.','Check territorial jurisdiction, charge/joinder issues and any sanction or statutory permission requirement.','Verify BNSS limitation provisions, if applicable.','For pre-1 July 2024 conduct, separately analyze the BNS savings provision and Article 20(1).']},
+  "study": "Introduction and meaning\nVoluntarily causing grievous hurt by use of acid, and the attempt. Fine is just and reasonable to meet medical expenses of treatment of the victim, and is paid to the victim. Laxmi’s directions sit behind the text.\nIn student language: BNS s. 124 is the rule on “Voluntarily causing grievous hurt by use of acid, etc”. The section provides that (1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt or causes a person to be in a permanent vegetative state shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine:. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 124 exists so that “Voluntarily causing grievous hurt by use of acid, etc” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n124. (1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt or causes a person to be in a permanent vegetative state shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine:\n\n(2) Whoever throws or attempts to throw acid on any person or attempts to administer acid to any person, or attempts to use any other means, with the intention of causing permanent or partial damage or deformity or burns or maiming or disfigurement or disability or grievous hurt to that person, shall be punished with imprisonment of either description for a term which shall not be less than five years but which may extend to seven years, and shall also be liable to fine\n\nEssential ingredients\n1. (1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt or causes a person to be in a permanent vegetative state shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine:\n2. (2) Whoever throws or attempts to throw acid on any person or attempts to administer acid to any person, or attempts to use any other means, with the intention of causing permanent or partial damage or deformity or burns or maiming or disfigurement or disability or grievous hurt to that person, shall be punished with imprisonment of either description for a term which shall not be less than five years but which may extend to seven years, and shall also be liable to fine\n\nPunishment / legal consequence\n10 years to life + fine paid to the victim.\n\nExplanations\nExplanation 1.—For the purposes of this section, “acid” includes any substance which has acidic or corrosive character or burning nature, that is capable of causing bodily injury leading to scars or disfigurement or temporary or permanent disability\n\nExplanation 2.—For the purposes of this section, permanent or partial damage or deformity or permanent vegetative state shall not be required to be irreversible\n\nExceptions, limitations and provisos\nProvided that such fine shall be just and reasonable to meet the medical expenses of the treatment of the victim:\n\nProvided further that any fine imposed under this sub-section shall be paid to the victim",
+  "glance": "BNS s. 124 — Voluntarily causing grievous hurt by use of acid, etc.",
+  "sections": [
+    {
+      "id": "bns-124-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "124. (1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt or causes a person to be in a permanent vegetative state shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine:",
+        "(2) Whoever throws or attempts to throw acid on any person or attempts to administer acid to any person, or attempts to use any other means, with the intention of causing permanent or partial damage or deformity or burns or maiming or disfigurement or disability or grievous hurt to that person, shall be punished with imprisonment of either description for a term which shall not be less than five years but which may extend to seven years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-124-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt or causes a person to be in a permanent vegetative state shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine:",
+        "(2) Whoever throws or attempts to throw acid on any person or attempts to administer acid to any person, or attempts to use any other means, with the intention of causing permanent or partial damage or deformity or burns or maiming or disfigurement or disability or grievous hurt to that person, shall be punished with imprisonment of either description for a term which shall not be less than five years but which may extend to seven years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-124-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation 1.—For the purposes of this section, “acid” includes any substance which has acidic or corrosive character or burning nature, that is capable of causing bodily injury leading to scars or disfigurement or temporary or permanent disability",
+        "Explanation 2.—For the purposes of this section, permanent or partial damage or deformity or permanent vegetative state shall not be required to be irreversible"
+      ]
+    },
+    {
+      "id": "bns-124-exc",
+      "title": "Exceptions and provisos",
+      "order": 6,
+      "content": [
+        "Provided that such fine shall be just and reasonable to meet the medical expenses of the treatment of the victim:",
+        "Provided further that any fine imposed under this sub-section shall be paid to the victim"
+      ]
+    }
   ],
-  provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-124',section:'s. 124',title:'Voluntarily causing grievous hurt by use of acid, etc'}],
-  examples:[{id:'s-124-ex1',title:'Provision applies — statutory conditions satisfied',illustrationType:'practical',description:'The alleged conduct or circumstance falls within the statutory subject of s. 124 and the connected conditions are proved.'},{id:'s-124-ex2',title:'Boundary defect — an ingredient is missing',illustrationType:'fail-scenario',description:'The facts resemble the section, but a required condition, exception, qualification or causal link is not established.'}],
-  hypotheticals:[{id:'s-124-hypo',title:'Chamber problem — BNS s. 124',facts:'The prosecution invokes s. 124 on facts within the Hurt cluster. The defence disputes the statutory fit.',question:'Do the proved facts satisfy s. 124?',applicableLaw:'BNS s. 124; connected BNS provisions; applicable BNSS procedure; BSA 2023 evidence rules.',analysis:'1. Identify the exact statutory words. 2. Break them into conditions. 3. Test each condition against the evidence. 4. Apply exceptions or provisos. 5. Identify the correct procedural and punishment consequence.',conclusion:'Application turns on the enacted ingredients of s. 124, not on the historical IPC number alone.'}],
-  distinctions:[{id:'s-124-dist',title:'BNS provision vs historical IPC concordance',left:'BNS s. 124',right:'Historical IPC: 326A / 326B',rows:[{point:'Governing law',left:'BNS for post-commencement offences',right:'IPC is historical where saved or relevant'},{point:'Method',left:'Start with enacted BNS wording',right:'Use historical IPC only to understand continuity/change'},{point:'Transition',left:'Check commencement and savings',right:'Pre-commencement offences may remain governed by saved IPC law'}]}],
-  misconceptions:[{id:'s-124-trap',trap:'The IPC number can automatically be substituted for BNS s. 124.',correction:'The enacted BNS text controls post-commencement offences; historical concordance is not a substitute for reading the BNS provision.'},{id:'s-124-trap-2',trap:'The section heading alone proves liability.',correction:'All statutory ingredients and relevant exceptions must be established on the evidence.'}],
-  cases:[],
-  questionsAndAnswers:[{id:'s-124-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment of BNS s. 124.',answer:`I. ISSUE — precise statutory question.\nII. RULE — enacted ingredients, connected provisions and exceptions.\nIII. APPLICATION — map evidence to each condition.\nIV. CONCLUSION — whether s. 124 is attracted and the connected consequence.`,explanation:'Chamber-style structured analysis.'},{id:'s-124-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 124.',answer:`I. STATUTORY SCHEME.\nII. INGREDIENTS.\nIII. EVIDENCE AND BURDEN.\nIV. RESPONSE TO EXCEPTIONS AND DEFENCES.\nV. PROCEDURE AND OPERATIVE RELIEF.`,explanation:'Courtroom submission structure without unverified authorities.'}],
-  bareActPointers:['BNS s. 124 — Voluntarily causing grievous hurt by use of acid, etc','Connected BNS definitions/exceptions','BNSS First Schedule and applicable procedure','BSA 2023 burden and evidence provisions','BNS repeal-and-savings framework for pre-1 July 2024 conduct'],
-  examTips:['Start with the enacted BNS wording.','Check connected definitions, exceptions, procedure and punishment.','Use IPC numbering only as historical concordance.'],
-  revisionPoints:['s. 124: Voluntarily causing grievous hurt by use of acid, etc.','Cluster: Hurt.','IPC concordance: 326A / 326B.','Verify BNSS procedure and BSA evidence requirements.'],
-  relatedTopics:[],
+  "examples": [
+    {
+      "id": "bns-124-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Voluntarily causing grievous hurt by use of acid, etc”. Name BNS s. 124, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-124-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 124 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-124-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Voluntarily causing grievous hurt by use of acid, etc” under BNS s. 124 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 124 (Voluntarily causing grievous hurt by use of acid, etc) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 124. Chapter VI — Of Offences Affecting the Human Body. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 124 (Voluntarily causing grievous hurt by use of acid, etc), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt or causes a person to be in a permanent vegetative state shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine:\n   (2) (2) Whoever throws or attempts to throw acid on any person or attempts to administer acid to any person, or attempts to use any other means, with the intention of causing permanent or partial damage or deformity or burns or maiming or disfigurement or disability or grievous hurt to that person, shall be punished with imprisonment of either description for a term which shall not be less than five years but which may extend to seven years, and shall also be liable to fine\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 124 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 124. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-124-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 124."
+    },
+    {
+      "id": "bns-124-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-124-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-124-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 124 (Voluntarily causing grievous hurt by use of acid, etc)",
+      "answer": "Introduction. BNS s. 124 deals with Voluntarily causing grievous hurt by use of acid, etc. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Voluntarily causing grievous hurt by use of acid, and the attempt. Fine is just and reasonable to meet medical expenses of treatment of the victim, and is paid to the victim. Laxmi’s directions sit behind the text.\n\nLegal rule. In student language: BNS s. 124 is the rule on “Voluntarily causing grievous hurt by use of acid, etc”. The section provides that (1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt or causes a person to be in a permanent vegetative state shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine:. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt or causes a person to be in a permanent vegetative state shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine:\n2. (2) Whoever throws or attempts to throw acid on any person or attempts to administer acid to any person, or attempts to use any other means, with the intention of causing permanent or partial damage or deformity or burns or maiming or disfigurement or disability or grievous hurt to that person, shall be punished with imprisonment of either description for a term which shall not be less than five years but which may extend to seven years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation 1.—For the purposes of this section, “acid” includes any substance which has acidic or corrosive character or burning nature, that is capable of causing bodily injury leading to scars or disfigurement or temporary or permanent disability An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nExceptions / provisos. Provided that such fine shall be just and reasonable to meet the medical expenses of the treatment of the victim:\n\nProvided further that any fine imposed under this sub-section shall be paid to the victim State the exception and then say whether it is attracted on the facts.\n\nConsequence / punishment. 10 years to life + fine paid to the victim.\n\nConclusion. BNS s. 124 is the complete current-law heading for Voluntarily causing grievous hurt by use of acid, etc. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-124-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 124 (Voluntarily causing grievous hurt by use of acid, etc) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 124 deals with Voluntarily causing grievous hurt by use of acid, etc. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Voluntarily causing grievous hurt by use of acid, and the attempt. Fine is just and reasonable to meet medical expenses of treatment of the victim, and is paid to the victim. Laxmi’s directions sit behind the text.\n\nLegal rule. In student language: BNS s. 124 is the rule on “Voluntarily causing grievous hurt by use of acid, etc”. The section provides that (1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt or causes a person to be in a permanent vegetative state shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine:. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt or causes a person to be in a permanent vegetative state shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine:\n2. (2) Whoever throws or attempts to throw acid on any person or attempts to administer acid to any person, or attempts to use any other means, with the intention of causing permanent or partial damage or deformity or burns or maiming or disfigurement or disability or grievous hurt to that person, shall be punished with imprisonment of either description for a term which shall not be less than five years but which may extend to seven years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation 1.—For the purposes of this section, “acid” includes any substance which has acidic or corrosive character or burning nature, that is capable of causing bodily injury leading to scars or disfigurement or temporary or permanent disability An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nExceptions / provisos. Provided that such fine shall be just and reasonable to meet the medical expenses of the treatment of the victim:\n\nProvided further that any fine imposed under this sub-section shall be paid to the victim State the exception and then say whether it is attracted on the facts.\n\nConsequence / punishment. 10 years to life + fine paid to the victim.\n\nConclusion. BNS s. 124 is the complete current-law heading for Voluntarily causing grievous hurt by use of acid, etc. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 124. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 124.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Laxmi v. Union of India",
+      "year": 2014,
+      "citation": "(2014) 4 SCC 427",
+      "holding": "Acid-attack directions on sale, compensation and treatment. Statutory shape is now s. 124, with the fine going to the victim."
+    }
+  ],
+  "examTips": [
+    "Cite BNS s. 124 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Acid is 124, not 118. 118 is dangerous weapons generally. 124 is the dedicated acid section (old 326A/326B)."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 124 (Voluntarily causing grievous hurt by use of acid, etc).",
+      "steps": [
+        "Introduce BNS s. 124 and Chapter VI — Of Offences Affecting the Human Body.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 124."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 124 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 124, Voluntarily causing grievous hurt by use of acid, etc.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 124: Voluntarily causing grievous hurt by use of acid, etc.",
+    "First ingredient: (1) Whoever causes permanent or partial damage or deformity to, or burns or maims or disfigures or disables, any part or parts of the body of a person or causes grievous hurt by throwing acid on or by administering acid to that person, or by using any other means with the intention of causing or with the knowledge that he is likely to cause such injury or hurt or causes a person to be in a permanent vegetative state shall be punished with imprisonment of either description for a term which shall not be less than ten years but which may extend to imprisonment for life, and with fine:",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 124 — Voluntarily causing grievous hurt by use of acid, etc. Older books and judgments may still print a historical number (326A / 326B). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
+
 export default content

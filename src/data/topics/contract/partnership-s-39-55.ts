@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Partnership Act ss. 39–55 — Dissolution and Settlement of Accounts is a Senior Counsel-level treatment of s. 39–55 under the Indian Partnership Act, 1932. It connects statutory text, doctrine, authority, proof, procedure and remedies without marks-based formatting.",
   "sections": [
     {
@@ -143,4 +145,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Forum and limitation checkpoints",
     "Verified authority and ratio"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

@@ -1,32 +1,159 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 107: abetment of suicide — if any person commits suicide, whoever abets the commission of such suicide shall be punished with imprisonment up to the statutory term and fine. Successor to IPC s. 306. Requires proof of abetment (instigation, conspiracy, or intentional aid) and the suicide. Mere harassment without the elements of abetment is not enough.',
-  study: `Section 107 is the offence of abetment of suicide.\n\nIngredients:\n1. The person has committed suicide.\n2. The accused abetted the commission of that suicide (instigation, conspiracy, or intentional aid under s. 45).\n\nThe prosecution must prove a positive act of abetment — a proximate instigation or aid that left the deceased with no option. Ordinary marital discord or harassment, without more, has been held insufficient in the case law under the old s. 306; the same approach applies under s. 107.\n\nWhen the deceased is a married woman and the facts also disclose dowry-linked cruelty, s. 80 and s. 85 may be charged in the alternative or together.\n\nCite BNS s. 107 for post-1 July 2024 acts.`,
-  sections: [
-    { id: 's-107-m1', title: 'Provenance', order: 1, content: ['Successor to IPC s. 306. Abetment of suicide.'] },
-    { id: 's-107-m2', title: 'Ingredients', order: 2, content: ['(1) Suicide committed. (2) Abetment by the accused (s. 45 modes).'] },
-    { id: 's-107-m3', title: 'Abetment standard', order: 3, content: ['Positive act of instigation, conspiracy, or intentional aid; proximate and leaving no option. Mere harassment without more is insufficient.'] },
-    { id: 's-107-m4', title: 'Evidence', order: 4, content: ['Suicide; words/conduct of the accused; proximity and causation; dying declarations, notes, witness accounts.'] },
-    { id: 's-107-m5', title: 'Procedure', order: 5, content: ['Often charged with s. 85/s. 80 in marital death cases; Sessions trial as applicable.'] },
+  "study": "Introduction and meaning\nAbetment of suicide of a child or a person of unsound mind (old IPC 305). This is the aggravated sibling of s. 108. The person who dies must be a child (below 18 — s. 2) or of unsound mind. The accused is the abettor, not the deceased. Read abetment with ss. 45–46: instigation, conspiracy or aid.\nIn student language: BNS s. 107 is the rule on “Abetment of suicide of child or person of unsound mind”. The section provides that if any child, any person of unsound mind, any delirious person or any person in a state of intoxication, commits suicide, whoever abets the commission of such suicide, shall be punished with death or imprisonment for life, or imprisonment for a term not exceeding ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 107 exists so that “Abetment of suicide of child or person of unsound mind” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n107. If any child, any person of unsound mind, any delirious person or any person in a state of intoxication, commits suicide, whoever abets the commission of such suicide, shall be punished with death or imprisonment for life, or imprisonment for a term not exceeding ten years, and shall also be liable to fine\n\nEssential ingredients\n1. If any child, any person of unsound mind, any delirious person or any person in a state of intoxication, commits suicide, whoever abets the commission of such suicide, shall be punished with death or imprisonment for life, or imprisonment for a term not exceeding ten years, and shall also be liable to fine",
+  "glance": "BNS s. 107 — Abetment of suicide of child or person of unsound mind.",
+  "sections": [
+    {
+      "id": "bns-107-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "107. If any child, any person of unsound mind, any delirious person or any person in a state of intoxication, commits suicide, whoever abets the commission of such suicide, shall be punished with death or imprisonment for life, or imprisonment for a term not exceeding ten years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-107-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "If any child, any person of unsound mind, any delirious person or any person in a state of intoxication, commits suicide, whoever abets the commission of such suicide, shall be punished with death or imprisonment for life, or imprisonment for a term not exceeding ten years, and shall also be liable to fine"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-107', section: 's. 107', title: 'Abetment of suicide' }],
-  examples: [
-    { id: 's-107-ex1', title: 'Clear instigation', illustrationType: 'practical', description: 'A persistently and proximately instigates B to kill himself; B does so. Abetment of suicide under s. 107 is made out.' },
-    { id: 's-107-ex2', title: 'Ordinary discord', illustrationType: 'fail-scenario', description: 'Marital quarrels without a positive act of abetment. s. 107 is not made out (though s. 85 may still apply on appropriate facts).' },
+  "examples": [
+    {
+      "id": "bns-107-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Abetment of suicide of child or person of unsound mind”. Name BNS s. 107, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-107-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 107 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-107-hypo', title: 'Abetment of suicide', facts: 'Deceased left a note naming continuous instigation by the accused immediately before the suicide.', question: 'Is s. 107 attracted?', applicableLaw: 'BNS s. 107; s. 45.', analysis: 'If the instigation is proved as a proximate positive act of abetment — yes.', conclusion: 's. 107 may be made out.' }],
-  distinctions: [{ id: 's-107-dist', title: 's. 107 vs s. 80 vs s. 85', left: 's. 107 (abetment of suicide)', right: 's. 80 / s. 85', rows: [{ point: 'Focus', left: 'Abetment of the act of suicide', right: 'Dowry death deeming / cruelty as a standalone offence' }] }],
-  misconceptions: [{ id: 's-107-trap', trap: 'Any suicide after harassment is abetment of suicide.', correction: 'The prosecution must prove abetment in the s. 45 sense — a positive, proximate act of instigation, conspiracy, or intentional aid. Harassment alone is not enough.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-107-brief', draftingCategory: 'brief', question: 'Explain abetment of suicide under BNS s. 107.', answer: 'If a person commits suicide, whoever abets that suicide (by instigation, conspiracy, or intentional aid) is punished under s. 107. A positive, proximate act of abetment is required; mere harassment without more is insufficient.', explanation: 'Short note.' },
-    { id: 's-107-sub', draftingCategory: 'submissions', question: 'Submissions on s. 107.', answer: 'I. Suicide. II. Abetment (s. 45 mode). III. Proximity and positive act. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-107-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Abetment of suicide of child or person of unsound mind” under BNS s. 107 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 107 (Abetment of suicide of child or person of unsound mind) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 107. Chapter VI — Of Offences Affecting the Human Body. Connected: BNS s. 45, BNS s. 108, BNS s. 106.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 107 (Abetment of suicide of child or person of unsound mind), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) If any child, any person of unsound mind, any delirious person or any person in a state of intoxication, commits suicide, whoever abets the commission of such suicide, shall be punished with death or imprisonment for life, or imprisonment for a term not exceeding ten years, and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 107 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 107 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 107. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS s. 107', 'BNS s. 45', 'BNS s. 80', 'BNS s. 85', 'IPC s. 306 (historical)'],
-  examTips: ['Stress the need for a positive act of abetment, not mere harassment.', 'Link to s. 80/85 in marital death fact patterns.'],
-  revisionPoints: ['Suicide + abetment (s. 45) = s. 107.', 'Positive proximate act required.', 'Harassment alone ≠ abetment of suicide.'],
-  relatedTopics: ['s-45', 's-80', 's-85', 's-100'],
+  "distinctions": [
+    {
+      "id": "bns-107-dist",
+      "title": "BNS s. 107 and connected sections",
+      "left": "BNS s. 107",
+      "right": "BNS s. 45, BNS s. 108, BNS s. 106",
+      "rows": [
+        {
+          "point": "Heading",
+          "left": "Abetment of suicide of child or person of unsound mind",
+          "right": "Read the neighbour’s title on its own page before you write."
+        },
+        {
+          "point": "What you must prove",
+          "left": "If any child, any person of unsound mind, any delirious person or any person in a state of intoxication, commits suicide, whoever abets the commission of such suicide, shall be punished with death or imprisonment for life, or imprisonment for a term not exceeding ten years, and shall also be liable to fine",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+        },
+        {
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 107.",
+          "right": "Citing s. 107 where the neighbour actually applies."
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-107-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 107."
+    },
+    {
+      "id": "bns-107-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-107-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-107-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 107 (Abetment of suicide of child or person of unsound mind)",
+      "answer": "Introduction. BNS s. 107 deals with Abetment of suicide of child or person of unsound mind. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Abetment of suicide of a child or a person of unsound mind (old IPC 305). This is the aggravated sibling of s. 108. The person who dies must be a child (below 18 — s. 2) or of unsound mind. The accused is the abettor, not the deceased. Read abetment with ss. 45–46: instigation, conspiracy or aid.\n\nLegal rule. In student language: BNS s. 107 is the rule on “Abetment of suicide of child or person of unsound mind”. The section provides that if any child, any person of unsound mind, any delirious person or any person in a state of intoxication, commits suicide, whoever abets the commission of such suicide, shall be punished with death or imprisonment for life, or imprisonment for a term not exceeding ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. If any child, any person of unsound mind, any delirious person or any person in a state of intoxication, commits suicide, whoever abets the commission of such suicide, shall be punished with death or imprisonment for life, or imprisonment for a term not exceeding ten years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 107. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 45, BNS s. 108, BNS s. 106. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 107 is the complete current-law heading for Abetment of suicide of child or person of unsound mind. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-107-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 107 (Abetment of suicide of child or person of unsound mind) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 107 deals with Abetment of suicide of child or person of unsound mind. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Abetment of suicide of a child or a person of unsound mind (old IPC 305). This is the aggravated sibling of s. 108. The person who dies must be a child (below 18 — s. 2) or of unsound mind. The accused is the abettor, not the deceased. Read abetment with ss. 45–46: instigation, conspiracy or aid.\n\nLegal rule. In student language: BNS s. 107 is the rule on “Abetment of suicide of child or person of unsound mind”. The section provides that if any child, any person of unsound mind, any delirious person or any person in a state of intoxication, commits suicide, whoever abets the commission of such suicide, shall be punished with death or imprisonment for life, or imprisonment for a term not exceeding ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. If any child, any person of unsound mind, any delirious person or any person in a state of intoxication, commits suicide, whoever abets the commission of such suicide, shall be punished with death or imprisonment for life, or imprisonment for a term not exceeding ten years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 107. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 45, BNS s. 108, BNS s. 106. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 107 is the complete current-law heading for Abetment of suicide of child or person of unsound mind. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 107 with BNS s. 45, BNS s. 108, BNS s. 106. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 107.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 107 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "If the deceased is 16, start with s. 107, not s. 108. If the deceased is 25 and of sound mind, s. 108. Neither is s. 106 (rash/negligent death)."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 107 (Abetment of suicide of child or person of unsound mind).",
+      "steps": [
+        "Introduce BNS s. 107 and Chapter VI — Of Offences Affecting the Human Body.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 107."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 107 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Distinguish BNS s. 107 from BNS s. 45, BNS s. 108, BNS s. 106.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 107, Abetment of suicide of child or person of unsound mind.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 107: Abetment of suicide of child or person of unsound mind.",
+    "First ingredient: If any child, any person of unsound mind, any delirious person or any person in a state of intoxication, commits suicide, whoever abets the commission of such suicide, shall be punished with death or imprisonment for life, or imprisonment for a term not exceeding ten years, and shall also be liable to fine",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 107 — Abetment of suicide of child or person of unsound mind. Older books and judgments may still print a historical number (305). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": [
+    "s-45",
+    "s-108",
+    "s-106"
+  ]
 }
 
 export default content

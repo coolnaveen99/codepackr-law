@@ -1,70 +1,130 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'BNS Section 151: Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power. Assaulting or using criminal force against a protected constitutional/public office-holder with the specified intent concerning lawful power. The note treats the enacted BNS text as controlling for post-1 July 2024 conduct and uses IPC s. 124 only as historical concordance.',
-  study: `Section 151 — Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power.\\n\\nAssaulting or using criminal force against a protected constitutional/public office-holder with the specified intent concerning lawful power.\\n\\nHistorical IPC concordance: 124. Read the enacted BNS wording, including every explanation, proviso and exception. For conduct before 1 July 2024, separately apply the repeal-and-savings framework and Article 20(1).`,
-  sections:[
-    {id:'s-151-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:[
-      'Chapter: Offences against the State.',
-      'Assaulting or using criminal force against a protected constitutional/public office-holder with the specified intent concerning lawful power.',
-      'Historical IPC concordance: 124. The concordance is useful for tracing continuity and identifying possible changes, but it is not the governing post-commencement text.',
-      'The offence/definition should be read with the immediately connected BNS provisions because status, mental element, causation, exceptions and punishment may be distributed across the chapter.',
-      'Where the provision concerns public authority, armed forces or elections, distinguish the statutory offence from disciplinary, constitutional, service-law or electoral-law consequences that may arise independently.'
-    ]},
-    {id:'s-151-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:[
-      'Operative provision: BNS s. 151 — Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power.',
-      'Start with the grammatical subject, prohibited act, object, circumstance, mental element and any consequence specified by the enacted wording.',
-      'Do not infer liability from the section heading alone. Identify every qualifier and read any explanation, proviso, exception or cross-reference in the enacted text.',
-      'For s. 151, the historical IPC concordance is s. 124; use it to orient research only and verify the BNS wording before drafting a charge, opinion or submission.',
-      'Where the section depends on a status such as public servant, prisoner of State/war, service member, candidate or electoral right, prove that status from the legally competent source rather than assumption.'
-    ]},
-    {id:'s-151-m3',title:'Mandatory Proving Ingredients & Essential Elements',order:3,content:[
-      '1. The victim falls within the protected class identified by the provision.','2. There is assault or criminal force of the statutory kind.','3. The conduct is accompanied by the specific intent to compel or restrain exercise of lawful power.',
-      'Separate the actus reus from the required intention, knowledge, negligence or causal connection. A factual resemblance is not a substitute for proof of the statutory mental element.',
-      'Map each prosecution fact to a specific ingredient and identify the evidentiary link for each disputed proposition.',
-      'Check connected BNS provisions before concluding that the conduct belongs under s. 151; a more specific provision, definition or exception may control the analysis.'
-    ]},
-    {id:'s-151-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:[
-      'The prosecution ordinarily bears the burden of proving the charged ingredients beyond reasonable doubt, subject to any applicable statutory presumption or burden expressly created by law.',
-      'Identify separately: admissibility, authenticity, relevance, reliability and ultimate probative weight. Do not treat these as interchangeable questions.',
-      'For status-based offences, contemporaneous official/service/electoral records may be material. For communications or digital conduct, identify the source, integrity, chain of custody and applicable BSA rules for electronic records.',
-      'Admissions, conduct, documents, expert material and electronic records should be tied to the particular ingredient they are offered to prove; avoid evidence-by-label reasoning.',
-      'Where a defence invokes an exception or special statutory qualification, identify the governing burden rule rather than assuming that every defence carries the same burden.'
-    ]},
-    {id:'s-151-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:[
-      'Check the BNSS First Schedule and the enacted punishment/classification for cognizability, bailability and the competent trial court; do not import an old IPC classification without verification.',
-      'Check territorial jurisdiction, joinder and charge framing, sanction or statutory preconditions where the accused/status makes them relevant.',
-      'For offences involving public office, armed forces or elections, check any parallel statutory regime and whether a special complaint, sanction or competent-authority step is prescribed.',
-      'Check the applicable BNSS limitation rule, if any, and the commencement date of the governing penal law.',
-      'For pre-1 July 2024 conduct, separately analyze repeal, savings and Article 20(1); the BNS section number should not be retrospectively substituted merely because its subject matter corresponds to an IPC provision.'
-    ]},
+  "study": "Introduction and meaning\nAssaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power. BNS restatement of IPC 124. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 124. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 151 is the rule on “Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power”. The section provides that whoever, with the intention of inducing or compelling the President of India, or Governor of any State, to exercise or refrain from exercising in any manner any of the lawful powers of such President or Governor, assaults or wrongfully restrains, or attempts wrongfully to restrain, or overawes, by means of criminal force or the show of criminal force, or attempts so to overawe, such President or Governor, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 151 exists so that “Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power” has a closed legal test in Chapter VII — Of Offences Against the State. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Waging war, and the new s. 152 on sovereignty, unity and integrity — not a relabel of sedition.\n\nThe provision in detail\n151. Whoever, with the intention of inducing or compelling the President of India, or Governor of any State, to exercise or refrain from exercising in any manner any of the lawful powers of such President or Governor, assaults or wrongfully restrains, or attempts wrongfully to restrain, or overawes, by means of criminal force or the show of criminal force, or attempts so to overawe, such President or Governor, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nEssential ingredients\n1. Whoever, with the intention of inducing or compelling the President of India, or Governor of any State, to exercise or refrain from exercising in any manner any of the lawful powers of such President or Governor, assaults or wrongfully restrains, or attempts wrongfully to restrain, or overawes, by means of criminal force or the show of criminal force, or attempts so to overawe, such President or Governor, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine",
+  "glance": "BNS s. 151 — Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power.",
+  "sections": [
+    {
+      "id": "bns-151-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "151. Whoever, with the intention of inducing or compelling the President of India, or Governor of any State, to exercise or refrain from exercising in any manner any of the lawful powers of such President or Governor, assaults or wrongfully restrains, or attempts wrongfully to restrain, or overawes, by means of criminal force or the show of criminal force, or attempts so to overawe, such President or Governor, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-151-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever, with the intention of inducing or compelling the President of India, or Governor of any State, to exercise or refrain from exercising in any manner any of the lawful powers of such President or Governor, assaults or wrongfully restrains, or attempts wrongfully to restrain, or overawes, by means of criminal force or the show of criminal force, or attempts so to overawe, such President or Governor, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine"
+      ]
+    }
   ],
-  provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-151',section:'s. 151',title:'Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power'}],
-  examples:[
-    {id:'s-151-ex1',title:'Statutory ingredients satisfied',illustrationType:'practical',description:'The proved facts establish each material ingredient of BNS s. 151, including the relevant status, act, circumstance and mental element, and no applicable exception defeats the charge.'},
-    {id:'s-151-ex2',title:'Ingredient or qualification missing',illustrationType:'fail-scenario',description:'The conduct resembles the provision, but one required statutory ingredient, status, mental element, causal link or evidentiary foundation is not established.'}
+  "examples": [
+    {
+      "id": "bns-151-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power”. Name BNS s. 151, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-151-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 151 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals:[{id:'s-151-hypo',title:'Chamber problem — BNS s. 151',facts:'The prosecution invokes BNS s. 151 on a fact pattern involving assaulting president, governor, etc. with intent to compel or restrain exercise of any lawful power. The defence disputes one or more ingredients and challenges the evidentiary link.',question:'Do the proved facts satisfy BNS s. 151?',applicableLaw:'BNS s. 151; connected BNS provisions and definitions; applicable BNSS procedure; BSA 2023 evidence rules.',analysis:'1. Identify the exact enacted words. 2. Break them into ingredients and qualifiers. 3. Establish any protected status or factual precondition. 4. Map admissible evidence to each ingredient. 5. Apply exceptions, defences and connected provisions. 6. Check BNSS classification and procedural preconditions.',conclusion:'The conclusion must follow from the enacted statutory ingredients and proved facts, not from the historical IPC number or the section heading alone.'}],
-  distinctions:[{id:'s-151-dist',title:'BNS provision vs historical IPC concordance',left:'BNS s. 151',right:'Historical IPC s. 124',rows:[
-    {point:'Governing text',left:'Enacted BNS wording for post-commencement offences',right:'Historical concordance for continuity/change analysis'},
-    {point:'Mental element',left:'Apply the mental element actually expressed or necessarily required by the BNS text',right:'Do not assume an IPC formulation is identical'},
-    {point:'Procedure',left:'Verify current BNSS classification and procedure',right:'Old CrPC classification is not automatically controlling'},
-    {point:'Transition',left:'Check commencement and savings for the date of conduct',right:'Historical law may govern saved pre-commencement matters'}
-  ]}],
-  misconceptions:[
-    {id:'s-151-trap',trap:'The historical IPC section can simply be substituted for BNS s. 151.',correction:'The enacted BNS text governs post-commencement offences; IPC s. 124 is historical concordance only.'},
-    {id:'s-151-trap-2',trap:'A matching label or suspicious fact pattern is enough to establish the offence.',correction:'Every material ingredient, statutory qualification and applicable exception must be established on the evidence.'},
-    {id:'s-151-trap-3',trap:'Procedure, evidence and the substantive offence can be analyzed separately without cross-checking.',correction:'A defensible assessment links the BNS ingredients with BNSS procedure and BSA proof requirements.'}
+  "hypotheticals": [
+    {
+      "id": "bns-151-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power” under BNS s. 151 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 151 (Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 151. Chapter VII — Of Offences Against the State. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 151 (Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power), Chapter VII — Of Offences Against the State.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever, with the intention of inducing or compelling the President of India, or Governor of any State, to exercise or refrain from exercising in any manner any of the lawful powers of such President or Governor, assaults or wrongfully restrains, or attempts wrongfully to restrain, or overawes, by means of criminal force or the show of criminal force, or attempts so to overawe, such President or Governor, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 151 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 151 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 151. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  cases:[],
-  questionsAndAnswers:[
-    {id:'s-151-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment of BNS s. 151.',answer:`I. ISSUE — identify the precise statutory question.\\nII. RULE — reproduce the governing BNS ingredients, definitions, exceptions and connected provisions.\\nIII. EVIDENCE — identify admissible proof for each ingredient and the applicable burden.\\nIV. PROCEDURE — check BNSS classification, forum and statutory preconditions.\\nV. APPLICATION — map the proved facts to each element.\\nVI. CONCLUSION — state only the consequence supported by the proved record.`,explanation:'Chamber-style structured analysis without unverified authorities.'},
-    {id:'s-151-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 151.',answer:`I. STATUTORY SCHEME.\\nII. INGREDIENTS AND QUALIFICATIONS.\\nIII. EVIDENCE AND BURDEN.\\nIV. RESPONSE TO DEFENCE / EXCEPTION.\\nV. PROCEDURAL POSITION.\\nVI. RELIEF OR OPERATIVE CONSEQUENCE.`,explanation:'Courtroom submission structure without unverified case citations.'},
-    {id:'s-151-qa',draftingCategory:'qa',question:'What is the safest way to distinguish BNS s. 151 from its IPC concordance?',answer:'Quote and analyze the enacted BNS wording first; use IPC s. 124 only to explain historical continuity or change, and separately verify the current BNSS and BSA interfaces.',explanation:'This prevents historical concordance from becoming an unintended substitute for the current statute.'}
+  "misconceptions": [
+    {
+      "id": "bns-151-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 151."
+    },
+    {
+      "id": "bns-151-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-151-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
   ],
-  bareActPointers:['BNS s. 151 — Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power; BNS Chapter VII; historical IPC concordance s. 124; connected definitions and neighbouring provisions in the same chapter; BNSS First Schedule and applicable procedure; BSA 2023 provisions on burden, admissions, documentary/electronic proof where relevant; BNS repeal-and-savings framework for pre-1 July 2024 conduct.'],
-  examTips:['Start with the enacted BNS wording and identify every ingredient.','For status-based provisions, prove the status from competent records.','Use IPC numbering only as historical concordance, not as a substitute for BNS text.','Cross-check BNSS classification/procedure and BSA proof requirements before finalizing advice.'],
-  revisionPoints:['BNS s. 151: Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power.','Cluster: Offences against the State.','Historical IPC concordance: 124.','Key analytical focus: Assaulting or using criminal force against a protected constitutional/public office-holder with the specified intent concerning lawful power..','Verify current procedural and evidentiary requirements before relying on the note in a live matter.'],
-  relatedTopics:["149"]
+  "questionsAndAnswers": [
+    {
+      "id": "bns-151-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 151 (Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power)",
+      "answer": "Introduction. BNS s. 151 deals with Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power. It sits in Chapter VII — Of Offences Against the State of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power. BNS restatement of IPC 124. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 124. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 151 is the rule on “Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power”. The section provides that whoever, with the intention of inducing or compelling the President of India, or Governor of any State, to exercise or refrain from exercising in any manner any of the lawful powers of such President or Governor, assaults or wrongfully restrains, or attempts wrongfully to restrain, or overawes, by means of criminal force or the show of criminal force, or attempts so to overawe, such President or Governor, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever, with the intention of inducing or compelling the President of India, or Governor of any State, to exercise or refrain from exercising in any manner any of the lawful powers of such President or Governor, assaults or wrongfully restrains, or attempts wrongfully to restrain, or overawes, by means of criminal force or the show of criminal force, or attempts so to overawe, such President or Governor, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 151. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 151 is the complete current-law heading for Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-151-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 151 (Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 151 deals with Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power. It sits in Chapter VII — Of Offences Against the State of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power. BNS restatement of IPC 124. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 124. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 151 is the rule on “Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power”. The section provides that whoever, with the intention of inducing or compelling the President of India, or Governor of any State, to exercise or refrain from exercising in any manner any of the lawful powers of such President or Governor, assaults or wrongfully restrains, or attempts wrongfully to restrain, or overawes, by means of criminal force or the show of criminal force, or attempts so to overawe, such President or Governor, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever, with the intention of inducing or compelling the President of India, or Governor of any State, to exercise or refrain from exercising in any manner any of the lawful powers of such President or Governor, assaults or wrongfully restrains, or attempts wrongfully to restrain, or overawes, by means of criminal force or the show of criminal force, or attempts so to overawe, such President or Governor, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 151. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 151 is the complete current-law heading for Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Waging war, and the new s. 152 on sovereignty, unity and integrity — not a relabel of sedition.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 151. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 151.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 151 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 151 (Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power).",
+      "steps": [
+        "Introduce BNS s. 151 and Chapter VII — Of Offences Against the State.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 151."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 151 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 151, Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 151: Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power.",
+    "First ingredient: Whoever, with the intention of inducing or compelling the President of India, or Governor of any State, to exercise or refrain from exercising in any manner any of the lawful powers of such President or Governor, assaults or wrongfully restrains, or attempts wrongfully to restrain, or overawes, by means of criminal force or the show of criminal force, or attempts so to overawe, such President or Governor, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 151 — Assaulting President, Governor, etc. with intent to compel or restrain exercise of any lawful power. Older books and judgments may still print a historical number (124). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
+
 export default content

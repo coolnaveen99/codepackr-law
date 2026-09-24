@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Motive is generally distinct from tortious liability. A lawful act does not ordinarily become actionable merely because it was done with an improper motive, although malice is legally material in particular torts.",
   "study": "Motive is generally distinct from tortious liability. A lawful act does not ordinarily become actionable merely because it was done with an improper motive, although malice is legally material in particular torts.\\n\\nCommon law separates the legal character of an act from the reason why it was done. Bradford Corporation v Pickles is the classic example. By contrast, malicious prosecution requires malice and absence of reasonable and probable cause. The court therefore identifies the tort first and asks whether motive or malice is an ingredient.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

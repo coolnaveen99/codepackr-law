@@ -1,24 +1,151 @@
 import type { TopicContent } from '../loadTopicContent'
+
 const content: TopicContent = {
- glance:'BNS Section 178: Counterfeiting coin, Government stamps, currency-notes or bank-notes. Historical IPC concordance: 230–263.',
- study:`Section 178 — Counterfeiting coin, Government stamps, currency-notes or bank-notes.\\n\\nThe enacted BNS text governs post-1 July 2024 conduct. Historical IPC 230–263 is concordance only. Read every proviso, explanation and qualification; earlier conduct requires separate repeal-and-savings and Article 20(1) analysis.`,
- sections:[
- {id:'s-178-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:['Chapter x where applicable to coin/currency offences; election provisions are in Chapter ix.','Counterfeiting coin, Government stamps, currency-notes or bank-notes forms part of the BNS statutory scheme governing the specified conduct.','Historical IPC concordance: 230–263. Use it only for comparative research.','Read the section with connected definitions, offences and punishment provisions.']},
- {id:'s-178-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:['Operative provision: BNS s. 178 — Counterfeiting coin, Government stamps, currency-notes or bank-notes.','Identify the protected object, prohibited act, required circumstance and mental element in the enacted wording.','For election expenditure/accounts, identify the candidate, election, authority or legal duty. For currency/stamp matters, establish the nature and status of the relevant instrument.','Apply all provisos and explanations before concluding liability.']},
- {id:'s-178-m3',title:'Mandatory Proving Ingredients & Issue-Spotting',order:3,content:['Break the provision into material ingredients before applying facts.','Map each fact to a specific statutory ingredient and identify the supporting evidence.','For counterfeit/forged instruments, prove the character of the object and the accused’s required knowledge or intention where prescribed.','For election accounts/payments, establish the legal duty or authority, purpose, amount and timing where relevant.']},
- {id:'s-178-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:['The prosecution ordinarily bears the burden of proving the charged ingredients beyond reasonable doubt, subject to applicable statutory burdens.','Establish object identity, source, condition and chain of custody where physical instruments are disputed.','Preserve financial/election records and complete communications; digital evidence must satisfy applicable BSA 2023 rules.','Separate admissibility, authenticity, relevance and weight.']},
- {id:'s-178-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:['Check the BNSS First Schedule and enacted punishment for cognizability, bailability and competent trial court.','Check jurisdiction, charge framing/joinder and statutory preconditions.','For election offences, verify applicable election law/rules; for currency/stamp offences, identify competent technical records.','Check applicable BNSS limitation rules and the date of conduct.','For pre-1 July 2024 conduct, separately analyze repeal, savings and Article 20(1).']}
- ],
- provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-178',section:'s. 178',title:'Counterfeiting coin, Government stamps, currency-notes or bank-notes'}],
- examples:[{id:'s-178-ex1',title:'Ingredients established',illustrationType:'practical',description:'The record establishes the statutory act, object/status, mental element and required circumstances.'},{id:'s-178-ex2',title:'Critical ingredient missing',illustrationType:'fail-scenario',description:'The facts resemble the provision but a required object, duty, authority, mental element or evidentiary link is not established.'}],
- hypotheticals:[{id:'s-178-hypo',title:'Chamber problem — BNS s. 178',facts:'The prosecution invokes BNS s. 178; the defence disputes a material statutory ingredient and the evidence relied upon to prove it.',question:'Does the proved record satisfy BNS s. 178?',applicableLaw:'BNS s. 178; connected BNS provisions; BNSS procedure; BSA 2023 evidence rules.',analysis:'Identify the enacted test; separate ingredients; establish the relevant object/status/duty; map admissible evidence; apply provisos and exceptions; verify current BNSS procedure.',conclusion:'Liability follows only if every material statutory ingredient is established on admissible evidence.'}],
- distinctions:[{id:'s-178-dist',title:'BNS provision vs historical IPC concordance',left:'BNS s. 178',right:'Historical IPC: 230–263',rows:[{point:'Governing text',left:'Enacted BNS wording',right:'Historical concordance only'},{point:'Proof',left:'Current statutory ingredients',right:'Do not assume identical scope or mental element'},{point:'Procedure',left:'Current BNSS classification',right:'Old CrPC classification is not automatically controlling'}]}],
- misconceptions:[{id:'s-178-trap',trap:'The historical IPC number is the current legal test.',correction:'The enacted BNS wording governs post-commencement conduct.'},{id:'s-178-trap2',trap:'Possession, payment or an election-record irregularity automatically proves the offence.',correction:'The statutory object, duty, authority, mental element and other qualifications must be proved.'}],
- cases:[],
- questionsAndAnswers:[{id:'s-178-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment under BNS s. 178.',answer:`I. ISSUE.\\nII. RULE.\\nIII. EVIDENCE.\\nIV. PROCEDURE.\\nV. APPLICATION.\\nVI. CONCLUSION.`,explanation:'Chamber-style analysis without unverified authorities.'},{id:'s-178-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 178.',answer:`I. STATUTORY SCHEME.\\nII. INGREDIENTS.\\nIII. EVIDENCE AND BURDEN.\\nIV. DEFENCE / PROVISO.\\nV. PROCEDURE.\\nVI. CONCLUSION.`,explanation:'Courtroom structure without fabricated case law.'}],
- bareActPointers:['BNS s. 178 — Counterfeiting coin, Government stamps, currency-notes or bank-notes','Historical IPC concordance: 230–263','BNSS First Schedule','BSA 2023 evidence provisions','Applicable election law/rules where relevant'],
- examTips:['Start with enacted BNS wording.','Use IPC numbering only as historical concordance.','Prove the object/status/duty and mental element separately.','Cross-check BNSS procedure.'],
- revisionPoints:['BNS s. 178: Counterfeiting coin, Government stamps, currency-notes or bank-notes.','Historical IPC concordance: 230–263.','Apply enacted BNS text for post-commencement conduct.'],
- relatedTopics:[]
+  "study": "Introduction and meaning\nCounterfeiting coin, Government stamps, currency-notes or bank-notes. BNS restatement of IPC 230–263 (merged). Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 230–263 (merged). Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 178 is the rule on “Counterfeiting coin, Government stamps, currency-notes or bank-notes”. The section provides that whoever counterfeits, or knowingly performs any part of the process of counterfeiting, any coin, stamp issued by Government for the purpose of revenue, currency-note or bank-note, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 178 exists so that “Counterfeiting coin, Government stamps, currency-notes or bank-notes” has a closed legal test in Chapter X — Of Offences Relating to Coin, Currency-Notes, Bank-Notes and Government Stamps. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Counterfeiting is merged. Currency-note forgeries that lived across IPC 489A–E sit here.\n\nThe provision in detail\n178. Whoever counterfeits, or knowingly performs any part of the process of counterfeiting, any coin, stamp issued by Government for the purpose of revenue, currency-note or bank-note, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nDefinitions and key terms\n“bank-note” — a promissory note or engagement for the payment of money to bearer on demand issued by any person carrying on the business of banking in any part of the world, or issued by or under the authority of any State or Sovereign Power, and intended to be used as equivalent to, or as a substitute for money.\n\nEssential ingredients\n1. Whoever counterfeits, or knowingly performs any part of the process of counterfeiting, any coin, stamp issued by Government for the purpose of revenue, currency-note or bank-note, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nExplanations\nExplanation.—For the purposes of this Chapter,—\n\n(1) the expression “bank-note” means a promissory note or engagement for the payment of money to bearer on demand issued by any person carrying on the business of banking in any part of the world, or issued by or under the authority of any State or Sovereign Power, and intended to be used as equivalent to, or as a substitute for money;\n\n(2) “coin” shall have the same meaning as assigned to it in section 2 of the Coinage Act, 2011 and includes metal used for the time being as money and is stamped and issued by or under the authority of any State or Sovereign Power intended to be so used;\n\n(3) a person commits the offence of “counterfeiting Government stamp” who counterfeits by causing a genuine stamp of one denomination to appear like a genuine stamp of a different denomination;\n\n(4) a person commits the offence of counterfeiting coin who intending to practise deception, or knowing it to be likely that deception will thereby be practised, causes a genuine coin to appear like a different coin; and\n\n(5) the offence of “counterfeiting coin” includes diminishing the weight or alteration of the composition, or alteration of the appearance of the coin",
+  "glance": "BNS s. 178 — Counterfeiting coin, Government stamps, currency-notes or bank-notes.",
+  "sections": [
+    {
+      "id": "bns-178-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "178. Whoever counterfeits, or knowingly performs any part of the process of counterfeiting, any coin, stamp issued by Government for the purpose of revenue, currency-note or bank-note, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-178-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever counterfeits, or knowingly performs any part of the process of counterfeiting, any coin, stamp issued by Government for the purpose of revenue, currency-note or bank-note, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-178-defs",
+      "title": "Definitions and key terms",
+      "order": 3,
+      "content": [
+        "“bank-note” — a promissory note or engagement for the payment of money to bearer on demand issued by any person carrying on the business of banking in any part of the world, or issued by or under the authority of any State or Sovereign Power, and intended to be used as equivalent to, or as a substitute for money."
+      ]
+    },
+    {
+      "id": "bns-178-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation.—For the purposes of this Chapter,—",
+        "(1) the expression “bank-note” means a promissory note or engagement for the payment of money to bearer on demand issued by any person carrying on the business of banking in any part of the world, or issued by or under the authority of any State or Sovereign Power, and intended to be used as equivalent to, or as a substitute for money;",
+        "(2) “coin” shall have the same meaning as assigned to it in section 2 of the Coinage Act, 2011 and includes metal used for the time being as money and is stamped and issued by or under the authority of any State or Sovereign Power intended to be so used;",
+        "(3) a person commits the offence of “counterfeiting Government stamp” who counterfeits by causing a genuine stamp of one denomination to appear like a genuine stamp of a different denomination;",
+        "(4) a person commits the offence of counterfeiting coin who intending to practise deception, or knowing it to be likely that deception will thereby be practised, causes a genuine coin to appear like a different coin; and",
+        "(5) the offence of “counterfeiting coin” includes diminishing the weight or alteration of the composition, or alteration of the appearance of the coin"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "bns-178-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Counterfeiting coin, Government stamps, currency-notes or bank-notes”. Name BNS s. 178, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-178-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 178 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-178-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Counterfeiting coin, Government stamps, currency-notes or bank-notes” under BNS s. 178 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 178 (Counterfeiting coin, Government stamps, currency-notes or bank-notes) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 178. Chapter X — Of Offences Relating to Coin, Currency-Notes, Bank-Notes and Government Stamps. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 178 (Counterfeiting coin, Government stamps, currency-notes or bank-notes), Chapter X — Of Offences Relating to Coin, Currency-Notes, Bank-Notes and Government Stamps.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever counterfeits, or knowingly performs any part of the process of counterfeiting, any coin, stamp issued by Government for the purpose of revenue, currency-note or bank-note, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 178 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 178. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-178-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 178."
+    },
+    {
+      "id": "bns-178-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-178-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-178-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 178 (Counterfeiting coin, Government stamps, currency-notes or bank-notes)",
+      "answer": "Introduction. BNS s. 178 deals with Counterfeiting coin, Government stamps, currency-notes or bank-notes. It sits in Chapter X — Of Offences Relating to Coin, Currency-Notes, Bank-Notes and Government Stamps of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Counterfeiting coin, Government stamps, currency-notes or bank-notes. BNS restatement of IPC 230–263 (merged). Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 230–263 (merged). Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 178 is the rule on “Counterfeiting coin, Government stamps, currency-notes or bank-notes”. The section provides that whoever counterfeits, or knowingly performs any part of the process of counterfeiting, any coin, stamp issued by Government for the purpose of revenue, currency-note or bank-note, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever counterfeits, or knowingly performs any part of the process of counterfeiting, any coin, stamp issued by Government for the purpose of revenue, currency-note or bank-note, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nDefinitions. The core statutory definitions must be established:\n“bank-note” a promissory note or engagement for the payment of money to bearer on demand issued by any person carrying on the business of banking in any part of the world, or issued by or under the authority of any State or Sovereign Power, and intended to be used as equivalent to, or as a substitute for money.\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—For the purposes of this Chapter,— An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 178. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 178 is the complete current-law heading for Counterfeiting coin, Government stamps, currency-notes or bank-notes. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-178-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 178 (Counterfeiting coin, Government stamps, currency-notes or bank-notes) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 178 deals with Counterfeiting coin, Government stamps, currency-notes or bank-notes. It sits in Chapter X — Of Offences Relating to Coin, Currency-Notes, Bank-Notes and Government Stamps of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Counterfeiting coin, Government stamps, currency-notes or bank-notes. BNS restatement of IPC 230–263 (merged). Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 230–263 (merged). Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 178 is the rule on “Counterfeiting coin, Government stamps, currency-notes or bank-notes”. The section provides that whoever counterfeits, or knowingly performs any part of the process of counterfeiting, any coin, stamp issued by Government for the purpose of revenue, currency-note or bank-note, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever counterfeits, or knowingly performs any part of the process of counterfeiting, any coin, stamp issued by Government for the purpose of revenue, currency-note or bank-note, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nDefinitions. The core statutory definitions must be established:\n“bank-note” a promissory note or engagement for the payment of money to bearer on demand issued by any person carrying on the business of banking in any part of the world, or issued by or under the authority of any State or Sovereign Power, and intended to be used as equivalent to, or as a substitute for money.\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—For the purposes of this Chapter,— An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 178. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 178 is the complete current-law heading for Counterfeiting coin, Government stamps, currency-notes or bank-notes. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Counterfeiting is merged. Currency-note forgeries that lived across IPC 489A–E sit here.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 178. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 178.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 178 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 178 (Counterfeiting coin, Government stamps, currency-notes or bank-notes).",
+      "steps": [
+        "Introduce BNS s. 178 and Chapter X — Of Offences Relating to Coin, Currency-Notes, Bank-Notes and Government Stamps.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 178."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 178 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 178, Counterfeiting coin, Government stamps, currency-notes or bank-notes.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 178: Counterfeiting coin, Government stamps, currency-notes or bank-notes.",
+    "First ingredient: Whoever counterfeits, or knowingly performs any part of the process of counterfeiting, any coin, stamp issued by Government for the purpose of revenue, currency-note or bank-note, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 178 — Counterfeiting coin, Government stamps, currency-notes or bank-notes. Older books and judgments may still print a historical number (230–263 (merged)). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
+
 export default content

@@ -1,25 +1,130 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'BNS Section 149: Collecting arms, etc., with intention of waging war against Government of India. This dedicated note places the provision in its statutory cluster and connects its ingredients with evidence, procedure and neighbouring BNS provisions.',
-  study: `Section 149 — Collecting arms, etc., with intention of waging war against Government of India.\\n\\nCollecting arms, etc., with intention of waging war against Government of India. BNS restatement of IPC 122. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. Historical IPC concordance: 122.\\n\\nRead the enacted BNS wording with every sub-section, explanation, proviso and exception. For conduct before 1 July 2024, separately apply the repeal-and-savings framework and Article 20(1).`,
-  sections:[
-    {id:'s-149-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:['Chapter vii; cluster: Offences against the State.','Collecting arms, etc., with intention of waging war against Government of India. BNS restatement of IPC 122. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024.','Historical IPC concordance: 122.','Treat the BNS text as the governing source for post-commencement offences; use IPC concordance only to understand continuity or change.']},
-    {id:'s-149-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:['Operative provision: BNS s. 149 — Collecting arms, etc., with intention of waging war against Government of India.','Break the enacted provision into its express elements, qualifiers, explanations and exceptions before applying it.','Read the immediately connected BNS provisions so that a definition, aggravation, proviso or punishment rule is not missed.']},
-    {id:'s-149-m3',title:'Application Ingredients & Issue-Spotting',order:3,content:['Start with the statutory act, circumstance, mental element or status required by s. 149.','Map each material fact to a specific statutory ingredient and identify any missing link.','Check whether the facts instead fit a neighbouring offence or a general exception; avoid treating a historical IPC label as the test.']},
-    {id:'s-149-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:['The prosecution ordinarily bears the burden of proving the charged ingredients beyond reasonable doubt, subject to any applicable statutory presumption.','Identify the fact each side must establish and distinguish admissibility from evidentiary weight under the BSA 2023.','Where electronic material is relied upon, comply with the applicable BSA provisions on electronic records, authenticity and proof.']},
-    {id:'s-149-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:['Check the BNSS First Schedule and the connected offence/punishment provision for cognizability, bailability and the competent trial court.','Check territorial jurisdiction, joinder/charge issues, sanction requirements and other statutory preconditions where relevant.','Verify any applicable BNSS limitation rule and the commencement date of the governing penal law.','For pre-1 July 2024 conduct, separately analyze repeal, savings and Article 20(1).']},
+  "study": "Introduction and meaning\nCollecting arms, etc., with intention of waging war against Government of India. BNS restatement of IPC 122. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 122. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 149 is the rule on “Collecting arms, etc., with intention of waging war against Government of India”. The section provides that whoever collects men, arms or ammunition or otherwise prepares to wage war with the intention of either waging or being prepared to wage war against the Government of India, shall be punished with imprisonment for life or imprisonment of either description for a term not exceeding ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 149 exists so that “Collecting arms, etc., with intention of waging war against Government of India” has a closed legal test in Chapter VII — Of Offences Against the State. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Waging war, and the new s. 152 on sovereignty, unity and integrity — not a relabel of sedition.\n\nThe provision in detail\n149. Whoever collects men, arms or ammunition or otherwise prepares to wage war with the intention of either waging or being prepared to wage war against the Government of India, shall be punished with imprisonment for life or imprisonment of either description for a term not exceeding ten years, and shall also be liable to fine\n\nEssential ingredients\n1. Whoever collects men, arms or ammunition or otherwise prepares to wage war with the intention of either waging or being prepared to wage war against the Government of India, shall be punished with imprisonment for life or imprisonment of either description for a term not exceeding ten years, and shall also be liable to fine",
+  "glance": "BNS s. 149 — Collecting arms, etc., with intention of waging war against Government of India.",
+  "sections": [
+    {
+      "id": "bns-149-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "149. Whoever collects men, arms or ammunition or otherwise prepares to wage war with the intention of either waging or being prepared to wage war against the Government of India, shall be punished with imprisonment for life or imprisonment of either description for a term not exceeding ten years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-149-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever collects men, arms or ammunition or otherwise prepares to wage war with the intention of either waging or being prepared to wage war against the Government of India, shall be punished with imprisonment for life or imprisonment of either description for a term not exceeding ten years, and shall also be liable to fine"
+      ]
+    }
   ],
-  provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-149',section:'s. 149',title:'Collecting arms, etc., with intention of waging war against Government of India'}],
-  examples:[{id:'s-149-ex1',title:'Statutory ingredients satisfied',illustrationType:'practical',description:'The proved facts correspond to the material words and conditions of BNS s. 149, with no applicable exception defeating the charge.'},{id:'s-149-ex2',title:'Ingredient or qualification missing',illustrationType:'fail-scenario',description:'The conduct resembles the provision, but a required ingredient, statutory qualification, exception or evidentiary link is not established.'}],
-  hypotheticals:[{id:'s-149-hypo',title:'Chamber problem — BNS s. 149',facts:'A prosecution invokes s. 149 on facts within the Offences against the State cluster. The defence disputes the statutory fit and the proof of one or more ingredients.',question:'Do the proved facts satisfy BNS s. 149?',applicableLaw:'BNS s. 149; connected BNS provisions; applicable BNSS procedure; BSA 2023 evidence rules.',analysis:'1. Identify the exact statutory words. 2. Break them into ingredients and qualifiers. 3. Map the evidence to each ingredient. 4. Apply explanations, provisos and exceptions. 5. Check the procedural and punishment consequences.',conclusion:'The conclusion must follow from the enacted ingredients and proved facts, not from the historical IPC number alone.'}],
-  distinctions:[{id:'s-149-dist',title:'BNS provision vs historical IPC concordance',left:'BNS s. 149',right:'Historical IPC: 122',rows:[{point:'Governing text',left:'Enacted BNS wording for post-commencement offences',right:'Historical material used only for continuity/change analysis'},{point:'Application method',left:'Test each statutory ingredient and qualification',right:'Do not substitute the old section number for the BNS text'},{point:'Transition',left:'Check commencement and savings',right:'Pre-commencement conduct may remain governed by saved prior law'}]}],
-  misconceptions:[{id:'s-149-trap',trap:'The historical IPC provision can simply be substituted for BNS s. 149.',correction:'The enacted BNS text controls post-commencement offences; historical concordance does not replace the statutory wording.'},{id:'s-149-trap-2',trap:'The section heading or factual resemblance alone establishes liability.',correction:'Every material ingredient, qualification and applicable exception must be established on the evidence.'}],
-  cases:[],
-  questionsAndAnswers:[{id:'s-149-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment of BNS s. 149.',answer:`I. ISSUE — identify the precise statutory question.\\nII. RULE — enacted ingredients, definitions, exceptions and connected provisions.\\nIII. APPLICATION — map the evidence to each condition.\\nIV. CONCLUSION — state the statutory consequence supported by the proved facts.`,explanation:'Chamber-style structured analysis without unverified authorities.'},{id:'s-149-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 149.',answer:`I. STATUTORY SCHEME.\\nII. INGREDIENTS AND QUALIFICATIONS.\\nIII. EVIDENCE AND BURDEN.\\nIV. RESPONSE TO EXCEPTIONS OR DEFENCES.\\nV. PROCEDURAL AND OPERATIVE CONSEQUENCE.`,explanation:'Courtroom submission structure without unverified case citations.'}],
-  bareActPointers:['BNS s. 149 — Collecting arms, etc., with intention of waging war against Government of India','Connected BNS definitions, explanations, provisos and exceptions','BNSS First Schedule and applicable procedure','BSA 2023 burden and evidence provisions','BNS repeal-and-savings framework for pre-1 July 2024 conduct'],
-  examTips:['Start with the enacted BNS wording and identify each ingredient.','Read connected definitions, exceptions, procedure and punishment provisions.','Use IPC numbering only as historical concordance, not as a substitute for the BNS text.'],
-  revisionPoints:['BNS s. 149: Collecting arms, etc., with intention of waging war against Government of India.','Cluster: Offences against the State.','IPC concordance: 122.','Verify the current BNSS procedural classification and BSA evidentiary requirements before advising.'],
-  relatedTopics:[]
+  "examples": [
+    {
+      "id": "bns-149-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Collecting arms, etc., with intention of waging war against Government of India”. Name BNS s. 149, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-149-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 149 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-149-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Collecting arms, etc., with intention of waging war against Government of India” under BNS s. 149 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 149 (Collecting arms, etc., with intention of waging war against Government of India) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 149. Chapter VII — Of Offences Against the State. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 149 (Collecting arms, etc., with intention of waging war against Government of India), Chapter VII — Of Offences Against the State.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever collects men, arms or ammunition or otherwise prepares to wage war with the intention of either waging or being prepared to wage war against the Government of India, shall be punished with imprisonment for life or imprisonment of either description for a term not exceeding ten years, and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 149 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 149 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 149. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-149-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 149."
+    },
+    {
+      "id": "bns-149-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-149-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-149-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 149 (Collecting arms, etc., with intention of waging war against Government of India)",
+      "answer": "Introduction. BNS s. 149 deals with Collecting arms, etc., with intention of waging war against Government of India. It sits in Chapter VII — Of Offences Against the State of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Collecting arms, etc., with intention of waging war against Government of India. BNS restatement of IPC 122. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 122. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 149 is the rule on “Collecting arms, etc., with intention of waging war against Government of India”. The section provides that whoever collects men, arms or ammunition or otherwise prepares to wage war with the intention of either waging or being prepared to wage war against the Government of India, shall be punished with imprisonment for life or imprisonment of either description for a term not exceeding ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever collects men, arms or ammunition or otherwise prepares to wage war with the intention of either waging or being prepared to wage war against the Government of India, shall be punished with imprisonment for life or imprisonment of either description for a term not exceeding ten years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 149. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 149 is the complete current-law heading for Collecting arms, etc., with intention of waging war against Government of India. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-149-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 149 (Collecting arms, etc., with intention of waging war against Government of India) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 149 deals with Collecting arms, etc., with intention of waging war against Government of India. It sits in Chapter VII — Of Offences Against the State of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Collecting arms, etc., with intention of waging war against Government of India. BNS restatement of IPC 122. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 122. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 149 is the rule on “Collecting arms, etc., with intention of waging war against Government of India”. The section provides that whoever collects men, arms or ammunition or otherwise prepares to wage war with the intention of either waging or being prepared to wage war against the Government of India, shall be punished with imprisonment for life or imprisonment of either description for a term not exceeding ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever collects men, arms or ammunition or otherwise prepares to wage war with the intention of either waging or being prepared to wage war against the Government of India, shall be punished with imprisonment for life or imprisonment of either description for a term not exceeding ten years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 149. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 149 is the complete current-law heading for Collecting arms, etc., with intention of waging war against Government of India. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Waging war, and the new s. 152 on sovereignty, unity and integrity — not a relabel of sedition.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 149. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 149.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 149 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 149 (Collecting arms, etc., with intention of waging war against Government of India).",
+      "steps": [
+        "Introduce BNS s. 149 and Chapter VII — Of Offences Against the State.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 149."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 149 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 149, Collecting arms, etc., with intention of waging war against Government of India.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 149: Collecting arms, etc., with intention of waging war against Government of India.",
+    "First ingredient: Whoever collects men, arms or ammunition or otherwise prepares to wage war with the intention of either waging or being prepared to wage war against the Government of India, shall be punished with imprisonment for life or imprisonment of either description for a term not exceeding ten years, and shall also be liable to fine",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 149 — Collecting arms, etc., with intention of waging war against Government of India. Older books and judgments may still print a historical number (122). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
+
 export default content

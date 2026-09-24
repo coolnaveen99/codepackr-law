@@ -1,32 +1,138 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 66 (and related aggravated rape provisions): rape causing death or resulting in persistent vegetative state, or other specified aggravated forms, carries enhanced minimum terms up to life or death as provided. Successor structure to IPC s. 376A and related. Base offence remains the definitional section + s. 64; this section enhances for the most serious consequences.',
-  study: `Aggravated rape provisions under the BNS enhance punishment when rape results in death or a persistent vegetative state, or in other specified aggravated circumstances (e.g. certain public-servant or custodial contexts, as in the statutory text).\n\nKey points\n• The base offence of rape must be established (definition + absence of valid consent).\n• The aggravating consequence (death, PVS, or other listed circumstance) elevates the punishment scale.\n• Minimum terms are high; death may be available in the rarest circumstances as per the text and Bachan Singh principles where death is prescribed.\n\nCite the applicable BNS aggravated-rape section for post-1 July 2024 acts. Always plead the definitional ingredients and s. 28 first.`,
-  sections: [
-    { id: 's-66-m1', title: 'Provenance', order: 1, content: ['Successor structure to IPC s. 376A and related aggravated forms. Enhanced punishment for rape with extreme consequences.'] },
-    { id: 's-66-m2', title: 'Aggravating Triggers', order: 2, content: ['Death or persistent vegetative state of the victim; other listed aggravated circumstances in the statutory text.'] },
-    { id: 's-66-m3', title: 'Ingredients', order: 3, content: ['(1) Rape as defined. (2) Aggravating consequence or circumstance. (3) Causal link where consequence-based.'] },
-    { id: 's-66-m4', title: 'Evidence', order: 4, content: ['Proof of rape; medical evidence of death/PVS or other aggravating fact; causation.'] },
-    { id: 's-66-m5', title: 'Procedure', order: 5, content: ['Sessions trial; BNSS victim protections; sentencing under the enhanced scale.'] },
+  "study": "Introduction and meaning\nPunishment for causing death or resulting in persistent vegetative state of victim. BNS restatement of IPC 376A. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 376A. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 66 is the rule on “Punishment for causing death or resulting in persistent vegetative state of victim”. The section provides that whoever, commits an offence punishable under sub-section (1) or sub-section (2) of section 64 and in the course of such commission inflicts an injury which causes the death of the woman or causes the woman to be in a persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, or with death. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 66 exists so that “Punishment for causing death or resulting in persistent vegetative state of victim” has a closed legal test in Chapter V — Of Offences Against Woman and Child. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.\n\nThe provision in detail\n66. Whoever, commits an offence punishable under sub-section (1) or sub-section (2) of section 64 and in the course of such commission inflicts an injury which causes the death of the woman or causes the woman to be in a persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, or with death\n\nEssential ingredients\n1. Whoever, commits an offence punishable under sub-section\n2. (2) of section 64 and in the course of such commission inflicts an injury which causes the death of the woman or causes the woman to be in a persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, or with death",
+  "glance": "BNS s. 66 — Punishment for causing death or resulting in persistent vegetative state of victim.",
+  "sections": [
+    {
+      "id": "bns-66-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "66. Whoever, commits an offence punishable under sub-section (1) or sub-section (2) of section 64 and in the course of such commission inflicts an injury which causes the death of the woman or causes the woman to be in a persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, or with death"
+      ]
+    },
+    {
+      "id": "bns-66-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever, commits an offence punishable under sub-section",
+        "(2) of section 64 and in the course of such commission inflicts an injury which causes the death of the woman or causes the woman to be in a persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, or with death"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-66', section: 's. 66', title: 'Aggravated rape (death / PVS / specified forms)' }],
-  examples: [
-    { id: 's-66-ex1', title: 'Rape resulting in death', illustrationType: 'practical', description: 'Rape is established and the victim dies as a result. The aggravated section enhancing punishment for rape causing death is attracted.' },
-    { id: 's-66-ex2', title: 'Base rape only', illustrationType: 'fail-scenario', description: 'Rape without the aggravating consequence or circumstance remains under the base punishment section (s. 64), not the aggravated form.' },
+  "examples": [
+    {
+      "id": "bns-66-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Punishment for causing death or resulting in persistent vegetative state of victim”. Name BNS s. 66, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-66-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 66 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-66-hypo', title: 'Aggravated consequence', facts: 'Victim of rape is left in a persistent vegetative state.', question: 'Which punishment scale?', applicableLaw: 'BNS aggravated-rape provisions; s. 64.', analysis: 'PVS is a classic aggravating consequence → enhanced scale applies.', conclusion: 'Aggravated section attracted.' }],
-  distinctions: [],
-  misconceptions: [{ id: 's-66-trap', trap: 'Every rape is punished under the death/PVS section.', correction: 'The enhanced section applies only when the statutory aggravating consequence or circumstance is proved. Base rape is under s. 64.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-66-brief', draftingCategory: 'brief', question: 'When does the enhanced punishment for rape causing death or PVS apply under the BNS?', answer: 'When rape is established and it causes the death of the woman or results in a persistent vegetative state (or another listed aggravating circumstance), the enhanced minimum terms (up to life or death as provided) apply. Base rape without those consequences remains under s. 64.', explanation: 'Short note.' },
-    { id: 's-66-sub', draftingCategory: 'submissions', question: 'Submissions on aggravated rape.', answer: 'I. Rape established. II. Aggravating consequence/circumstance. III. Enhanced scale. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-66-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Punishment for causing death or resulting in persistent vegetative state of victim” under BNS s. 66 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 66 (Punishment for causing death or resulting in persistent vegetative state of victim) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 66. Chapter V — Of Offences Against Woman and Child. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 66 (Punishment for causing death or resulting in persistent vegetative state of victim), Chapter V — Of Offences Against Woman and Child.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever, commits an offence punishable under sub-section\n   (2) (2) of section 64 and in the course of such commission inflicts an injury which causes the death of the woman or causes the woman to be in a persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, or with death\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 66 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 66 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 66. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS aggravated-rape provisions', 'BNS s. 64', 'BNS s. 70', 'IPC s. 376A (historical)'],
-  examTips: ['Always establish base rape first, then the aggravating consequence.', 'Do not apply the death/PVS scale to ordinary rape.'],
-  revisionPoints: ['Enhanced scale for rape causing death or PVS (and other listed forms).', 'Base rape = s. 64.', 'Causal link required for consequence-based aggravation.'],
-  relatedTopics: ['s-64', 's-63', 's-70', 's-28'],
+  "misconceptions": [
+    {
+      "id": "bns-66-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 66."
+    },
+    {
+      "id": "bns-66-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-66-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-66-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 66 (Punishment for causing death or resulting in persistent vegetative state of victim)",
+      "answer": "Introduction. BNS s. 66 deals with Punishment for causing death or resulting in persistent vegetative state of victim. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Punishment for causing death or resulting in persistent vegetative state of victim. BNS restatement of IPC 376A. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 376A. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 66 is the rule on “Punishment for causing death or resulting in persistent vegetative state of victim”. The section provides that whoever, commits an offence punishable under sub-section (1) or sub-section (2) of section 64 and in the course of such commission inflicts an injury which causes the death of the woman or causes the woman to be in a persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, or with death. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever, commits an offence punishable under sub-section\n2. (2) of section 64 and in the course of such commission inflicts an injury which causes the death of the woman or causes the woman to be in a persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, or with death\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 66. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 66 is the complete current-law heading for Punishment for causing death or resulting in persistent vegetative state of victim. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-66-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 66 (Punishment for causing death or resulting in persistent vegetative state of victim) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 66 deals with Punishment for causing death or resulting in persistent vegetative state of victim. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Punishment for causing death or resulting in persistent vegetative state of victim. BNS restatement of IPC 376A. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 376A. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 66 is the rule on “Punishment for causing death or resulting in persistent vegetative state of victim”. The section provides that whoever, commits an offence punishable under sub-section (1) or sub-section (2) of section 64 and in the course of such commission inflicts an injury which causes the death of the woman or causes the woman to be in a persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, or with death. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever, commits an offence punishable under sub-section\n2. (2) of section 64 and in the course of such commission inflicts an injury which causes the death of the woman or causes the woman to be in a persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, or with death\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 66. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 66 is the complete current-law heading for Punishment for causing death or resulting in persistent vegetative state of victim. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 66. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 66.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Mukesh v. State (NCT of Delhi)",
+      "year": 2017,
+      "citation": "(2017) 6 SCC 1",
+      "holding": "The Nirbhaya appeals. Confirmed death in a gang-rape-and-murder case and is the backdrop to the 2013 reforms now folded into ss. 63–71."
+    }
+  ],
+  "examTips": [
+    "Cite BNS s. 66 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 66 (Punishment for causing death or resulting in persistent vegetative state of victim).",
+      "steps": [
+        "Introduce BNS s. 66 and Chapter V — Of Offences Against Woman and Child.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 66."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 66 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 66, Punishment for causing death or resulting in persistent vegetative state of victim.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 66: Punishment for causing death or resulting in persistent vegetative state of victim.",
+    "First ingredient: Whoever, commits an offence punishable under sub-section",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 66 — Punishment for causing death or resulting in persistent vegetative state of victim. Older books and judgments may still print a historical number (376A). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

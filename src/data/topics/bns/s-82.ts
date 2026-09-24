@@ -1,25 +1,146 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'BNS Section 82: Marrying again during lifetime of husband or wife. This note explains its statutory scope within the Offences relating to marriage cluster and the connected BNS, BNSS and BSA issues that must be checked before application.',
-  study: `Section 82 — Marrying again during lifetime of husband or wife.\n\nMarrying again during lifetime of husband or wife. BNS restatement of IPC 494. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. Historical IPC concordance: 494.\n\nRead the enacted text with its definitions, explanations, provisos and exceptions. For pre-1 July 2024 conduct, separately apply the repeal-and-savings framework and Article 20(1).`,
-  sections:[
-    {id:'s-82-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:['Chapter v; cluster: Offences relating to marriage.','Marrying again during lifetime of husband or wife. BNS restatement of IPC 494. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024.','Historical IPC concordance: 494.]},
-    {id:'s-82-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:['Operative title: “Marrying again during lifetime of husband or wife”.','Read every sub-section, proviso, explanation and exception in the enacted text.','Identify the connected punishment provision before advising on sentence.]},
-    {id:'s-82-m3',title:'Application Ingredients & Issue-Spotting',order:3,content:['Identify the protected legal interest or statutory situation addressed by the provision.','Map each material fact to the enacted words of s. 82.','Check connected definitions, exceptions and adjacent provisions before concluding that the section is attracted.']},
-    {id:'s-82-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:['The prosecution ordinarily bears the burden of proving a criminal charge beyond reasonable doubt, subject to any applicable statutory presumption.','Identify the fact each side must establish and distinguish admissibility from evidentiary weight under the BSA 2023.','Electronic material must satisfy the applicable BSA requirements; digital availability alone does not establish authenticity or weight.']},
-    {id:'s-82-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:['Check the BNSS First Schedule and connected offence/punishment provision for cognizability, bailability and trial court.','Check territorial jurisdiction, charge/joinder issues and any sanction or statutory permission requirement.','Verify BNSS limitation provisions, if applicable.','For pre-1 July 2024 conduct, separately analyze the BNS savings provision and Article 20(1).']},
+  "study": "Introduction and meaning\nMarrying again during lifetime of husband or wife. BNS restatement of IPC 494. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 494. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 82 is the rule on “Marrying again during lifetime of husband or wife”. The section provides that (1) Whoever, having a husband or wife living, marries in any case in which such marriage is void by reason of its taking place during the life of such husband or wife, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 82 exists so that “Marrying again during lifetime of husband or wife” has a closed legal test in Chapter V — Of Offences Against Woman and Child. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.\n\nThe provision in detail\n82. (1) Whoever, having a husband or wife living, marries in any case in which such marriage is void by reason of its taking place during the life of such husband or wife, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nEssential ingredients\n1. (1) Whoever, having a husband or wife living, marries in any case in which such marriage is void by reason of its taking place during the life of such husband or wife, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nExceptions, limitations and provisos\nException.—This sub-section does not extend to any person whose marriage with such husband or wife has been declared void by a Court of competent jurisdiction, nor to any person who contracts a marriage during the life of a former husband or wife, if such husband or wife, at the time of the subsequent marriage, shall have been continually absent from such person for the space of seven years, and shall not have been heard of by such person as being alive within that time provided the person contracting such subsequent marriage shall, before such marriage takes place, inform the person with whom such marriage is contracted of the real state of facts so far as the same are within his or her knowledge\n\n(2) Whoever commits the offence under sub-section (1) having concealed from the person with whom the subsequent marriage is contracted, the fact of the former marriage, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine",
+  "glance": "BNS s. 82 — Marrying again during lifetime of husband or wife.",
+  "sections": [
+    {
+      "id": "bns-82-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "82. (1) Whoever, having a husband or wife living, marries in any case in which such marriage is void by reason of its taking place during the life of such husband or wife, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-82-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Whoever, having a husband or wife living, marries in any case in which such marriage is void by reason of its taking place during the life of such husband or wife, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-82-exc",
+      "title": "Exceptions and provisos",
+      "order": 6,
+      "content": [
+        "Exception.—This sub-section does not extend to any person whose marriage with such husband or wife has been declared void by a Court of competent jurisdiction, nor to any person who contracts a marriage during the life of a former husband or wife, if such husband or wife, at the time of the subsequent marriage, shall have been continually absent from such person for the space of seven years, and shall not have been heard of by such person as being alive within that time provided the person contracting such subsequent marriage shall, before such marriage takes place, inform the person with whom such marriage is contracted of the real state of facts so far as the same are within his or her knowledge",
+        "(2) Whoever commits the offence under sub-section (1) having concealed from the person with whom the subsequent marriage is contracted, the fact of the former marriage, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine"
+      ]
+    }
   ],
-  provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-82',section:'s. 82',title:'Marrying again during lifetime of husband or wife'}],
-  examples:[{id:'s-82-ex1',title:'Provision applies — statutory conditions satisfied',illustrationType:'practical',description:'The alleged conduct or circumstance falls within the statutory subject of s. 82 and the connected conditions are proved.'},{id:'s-82-ex2',title:'Boundary defect — an ingredient is missing',illustrationType:'fail-scenario',description:'The facts resemble the section, but a required condition, exception, qualification or causal link is not established.'}],
-  hypotheticals:[{id:'s-82-hypo',title:'Chamber problem — BNS s. 82',facts:'The prosecution invokes s. 82 on facts within the Offences relating to marriage cluster. The defence disputes the statutory fit.',question:'Do the proved facts satisfy s. 82?',applicableLaw:'BNS s. 82; connected BNS provisions; applicable BNSS procedure; BSA 2023 evidence rules.',analysis:'1. Identify the exact statutory words. 2. Break them into conditions. 3. Test each condition against the evidence. 4. Apply exceptions or provisos. 5. Identify the correct procedural and punishment consequence.',conclusion:'Application turns on the enacted ingredients of s. 82, not on the historical IPC number alone.'}],
-  distinctions:[{id:'s-82-dist',title:'BNS provision vs historical IPC concordance',left:'BNS s. 82',right:'Historical IPC: 494',rows:[{point:'Governing law',left:'BNS for post-commencement offences',right:'IPC is historical where saved or relevant'},{point:'Method',left:'Start with enacted BNS wording',right:'Use historical IPC only to understand continuity/change'},{point:'Transition',left:'Check commencement and savings',right:'Pre-commencement offences may remain governed by saved IPC law'}]}],
-  misconceptions:[{id:'s-82-trap',trap:'The IPC number can automatically be substituted for BNS s. 82.',correction:'The enacted BNS text controls post-commencement offences; historical concordance is not a substitute for reading the BNS provision.'},{id:'s-82-trap-2',trap:'The section heading alone proves liability.',correction:'All statutory ingredients and relevant exceptions must be established on the evidence.'}],
-  cases:[],
-  questionsAndAnswers:[{id:'s-82-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment of BNS s. 82.',answer:`I. ISSUE — precise statutory question.\nII. RULE — enacted ingredients, connected provisions and exceptions.\nIII. APPLICATION — map evidence to each condition.\nIV. CONCLUSION — whether s. 82 is attracted and the connected consequence.`,explanation:'Chamber-style structured analysis.'},{id:'s-82-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 82.',answer:`I. STATUTORY SCHEME.\nII. INGREDIENTS.\nIII. EVIDENCE AND BURDEN.\nIV. RESPONSE TO EXCEPTIONS AND DEFENCES.\nV. PROCEDURE AND OPERATIVE RELIEF.`,explanation:'Courtroom submission structure without unverified authorities.'}],
-  bareActPointers:['BNS s. 82 — Marrying again during lifetime of husband or wife','Connected BNS definitions/exceptions','BNSS First Schedule and applicable procedure','BSA 2023 burden and evidence provisions','BNS repeal-and-savings framework for pre-1 July 2024 conduct'],
-  examTips:['Start with the enacted BNS wording.','Check connected definitions, exceptions, procedure and punishment.','Use IPC numbering only as historical concordance.'],
-  revisionPoints:['s. 82: Marrying again during lifetime of husband or wife.','Cluster: Offences relating to marriage.','IPC concordance: 494.','Verify BNSS procedure and BSA evidence requirements.'],
-  relatedTopics:[],
+  "examples": [
+    {
+      "id": "bns-82-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Marrying again during lifetime of husband or wife”. Name BNS s. 82, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-82-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 82 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-82-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Marrying again during lifetime of husband or wife” under BNS s. 82 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 82 (Marrying again during lifetime of husband or wife) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 82. Chapter V — Of Offences Against Woman and Child. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 82 (Marrying again during lifetime of husband or wife), Chapter V — Of Offences Against Woman and Child.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever, having a husband or wife living, marries in any case in which such marriage is void by reason of its taking place during the life of such husband or wife, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 82 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 82 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 82. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-82-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 82."
+    },
+    {
+      "id": "bns-82-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-82-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-82-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 82 (Marrying again during lifetime of husband or wife)",
+      "answer": "Introduction. BNS s. 82 deals with Marrying again during lifetime of husband or wife. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Marrying again during lifetime of husband or wife. BNS restatement of IPC 494. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 494. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 82 is the rule on “Marrying again during lifetime of husband or wife”. The section provides that (1) Whoever, having a husband or wife living, marries in any case in which such marriage is void by reason of its taking place during the life of such husband or wife, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever, having a husband or wife living, marries in any case in which such marriage is void by reason of its taking place during the life of such husband or wife, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExceptions / provisos. Exception.—This sub-section does not extend to any person whose marriage with such husband or wife has been declared void by a Court of competent jurisdiction, nor to any person who contracts a marriage during the life of a former husband or wife, if such husband or wife, at the time of the subsequent marriage, shall have been continually absent from such person for the space of seven years, and shall not have been heard of by such person as being alive within that time provided the person contr… State the exception and then say whether it is attracted on the facts.\n\nConclusion. BNS s. 82 is the complete current-law heading for Marrying again during lifetime of husband or wife. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-82-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 82 (Marrying again during lifetime of husband or wife) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 82 deals with Marrying again during lifetime of husband or wife. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Marrying again during lifetime of husband or wife. BNS restatement of IPC 494. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 494. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 82 is the rule on “Marrying again during lifetime of husband or wife”. The section provides that (1) Whoever, having a husband or wife living, marries in any case in which such marriage is void by reason of its taking place during the life of such husband or wife, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever, having a husband or wife living, marries in any case in which such marriage is void by reason of its taking place during the life of such husband or wife, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExceptions / provisos. Exception.—This sub-section does not extend to any person whose marriage with such husband or wife has been declared void by a Court of competent jurisdiction, nor to any person who contracts a marriage during the life of a former husband or wife, if such husband or wife, at the time of the subsequent marriage, shall have been continually absent from such person for the space of seven years, and shall not have been heard of by such person as being alive within that time provided the person contr… State the exception and then say whether it is attracted on the facts.\n\nConclusion. BNS s. 82 is the complete current-law heading for Marrying again during lifetime of husband or wife. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 82. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 82.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Joseph Shine v. Union of India",
+      "year": 2019,
+      "citation": "(2019) 3 SCC 39",
+      "holding": "Adultery (IPC 497) struck down. BNS does not revive it. Marital infidelity is not, by itself, a crime."
+    }
+  ],
+  "examTips": [
+    "Cite BNS s. 82 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 82 (Marrying again during lifetime of husband or wife).",
+      "steps": [
+        "Introduce BNS s. 82 and Chapter V — Of Offences Against Woman and Child.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 82."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 82 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 82, Marrying again during lifetime of husband or wife.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 82: Marrying again during lifetime of husband or wife.",
+    "First ingredient: (1) Whoever, having a husband or wife living, marries in any case in which such marriage is void by reason of its taking place during the life of such husband or wife, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 82 — Marrying again during lifetime of husband or wife. Older books and judgments may still print a historical number (494). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
+
 export default content

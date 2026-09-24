@@ -1,32 +1,165 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 85: cruelty by husband or relative of husband — subjecting a woman to cruelty (wilful conduct likely to drive her to suicide or cause grave injury, or harassment for dowry). Successor to IPC s. 498A. Cognizable and non-bailable in the usual form. Often charged with s. 80 when death occurs.',
-  study: `Section 85 is the cruelty provision protecting married women.\n\nCruelty means:\n(a) any wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (mental or physical); or\n(b) harassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security, or is on account of failure by her or any person related to her to meet such demand.\n\nThe accused is the husband or a relative of the husband.\n\nPunishment is as stated in the section. The offence is widely used and has been the subject of guidelines on arrest and investigation to prevent misuse, but the substantive offence remains.\n\nCite BNS s. 85 for post-1 July 2024 acts. Often paired with s. 80 when death occurs within seven years.`,
-  sections: [
-    { id: 's-85-m1', title: 'Provenance', order: 1, content: ['Successor to IPC s. 498A. Cruelty by husband or relative of husband.'] },
-    { id: 's-85-m2', title: 'Two Limbs of Cruelty', order: 2, content: ['(a) Wilful conduct likely to drive to suicide or cause grave injury/danger to life, limb or health. (b) Harassment for unlawful demand for property/valuable security (dowry-linked).'] },
-    { id: 's-85-m3', title: 'Ingredients', order: 3, content: ['(1) Woman is the wife. (2) Accused is husband or relative of husband. (3) Conduct amounting to cruelty under (a) or (b).'] },
-    { id: 's-85-m4', title: 'Evidence', order: 4, content: ['Nature and frequency of conduct; impact on the woman; link to dowry demand if limb (b) is relied upon.'] },
-    { id: 's-85-m5', title: 'Procedure', order: 5, content: ['Cognizable; arrest and investigation subject to judicial guidelines; often tried with related offences.'] },
+  "study": "Introduction and meaning\nHusband or relative of husband subjecting a woman to cruelty (old 498A). The offence is here; the definition of cruelty is s. 86. Still cognizable and non-bailable in the usual classification.\nIn student language: BNS s. 85 is the rule on “Husband or relative of husband of a woman subjecting her to cruelty”. The section provides that whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 85 exists so that “Husband or relative of husband of a woman subjecting her to cruelty” has a closed legal test in Chapter V — Of Offences Against Woman and Child. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.\n\nThe provision in detail\n85. Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine\n\nEssential ingredients\n1. Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine\n\nPunishment / legal consequence\nUp to 3 years + fine.",
+  "glance": "BNS s. 85 — Husband or relative of husband of a woman subjecting her to cruelty.",
+  "sections": [
+    {
+      "id": "bns-85-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "85. Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-85-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-85', section: 's. 85', title: 'Cruelty by husband or relatives of husband' }],
-  examples: [
-    { id: 's-85-ex1', title: 'Dowry harassment', illustrationType: 'practical', description: 'Husband and in-laws repeatedly harass the wife for more dowry. Limb (b) of s. 85 is attracted.' },
-    { id: 's-85-ex2', title: 'Ordinary marital discord', illustrationType: 'fail-scenario', description: 'Ordinary quarrels without wilful conduct of the statutory gravity or dowry-linked harassment do not amount to cruelty under s. 85.' },
+  "examples": [
+    {
+      "id": "bns-85-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Husband or relative of husband of a woman subjecting her to cruelty”. Name BNS s. 85, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-85-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 85 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-85-hypo', title: 'Cruelty limbs', facts: 'Wife is subjected to continuous mental harassment linked to dowry demands by the husband.', question: 'Is s. 85 made out?', applicableLaw: 'BNS s. 85.', analysis: 'Harassment for unlawful demand for property fits limb (b).', conclusion: 's. 85 attracted.' }],
-  distinctions: [{ id: 's-85-dist', title: 's. 85 vs s. 80', left: 's. 85 (cruelty)', right: 's. 80 (dowry death)', rows: [{ point: 'Result required', left: 'Cruelty as defined (no death required)', right: 'Death within 7 years + dowry-linked cruelty → deeming' }] }],
-  misconceptions: [{ id: 's-85-trap', trap: 'Every marital dispute is cruelty under s. 85.', correction: 'Only wilful conduct of the statutory gravity (likely to drive to suicide or cause grave injury) or harassment for unlawful demand for property/valuable security.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-85-brief', draftingCategory: 'brief', question: 'Explain cruelty under BNS s. 85.', answer: 'Cruelty by the husband or his relative means (a) wilful conduct likely to drive the woman to suicide or cause grave injury/danger to life, limb or health, or (b) harassment for or on account of an unlawful demand for property or valuable security. It is a standalone offence and often paired with s. 80 when death occurs.', explanation: 'Short note.' },
-    { id: 's-85-sub', draftingCategory: 'submissions', question: 'Submissions on s. 85.', answer: 'I. Relationship (husband/relative). II. Limb (a) or (b) conduct. III. Evidence. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-85-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Husband or relative of husband of a woman subjecting her to cruelty” under BNS s. 85 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 85 (Husband or relative of husband of a woman subjecting her to cruelty) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 85. Chapter V — Of Offences Against Woman and Child. Connected: BNS s. 80, BNS s. 86.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 85 (Husband or relative of husband of a woman subjecting her to cruelty), Chapter V — Of Offences Against Woman and Child.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 85 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 85 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 85. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS s. 85', 'BNS s. 80', 'IPC s. 498A (historical)'],
-  examTips: ['State both limbs of cruelty.', 'Link to s. 80 when death within seven years is on the facts.'],
-  revisionPoints: ['Two limbs: grave wilful conduct / dowry-linked harassment.', 'Accused = husband or relative of husband.', 'Often charged with s. 80.'],
-  relatedTopics: ['s-80', 's-64', 's-28'],
+  "distinctions": [
+    {
+      "id": "bns-85-dist",
+      "title": "BNS s. 85 and connected sections",
+      "left": "BNS s. 85",
+      "right": "BNS s. 80, BNS s. 86",
+      "rows": [
+        {
+          "point": "Heading",
+          "left": "Husband or relative of husband of a woman subjecting her to cruelty",
+          "right": "Read the neighbour’s title on its own page before you write."
+        },
+        {
+          "point": "What you must prove",
+          "left": "Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+        },
+        {
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 85.",
+          "right": "Citing s. 85 where the neighbour actually applies."
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-85-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 85."
+    },
+    {
+      "id": "bns-85-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-85-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-85-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 85 (Husband or relative of husband of a woman subjecting her to cruelty)",
+      "answer": "Introduction. BNS s. 85 deals with Husband or relative of husband of a woman subjecting her to cruelty. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Husband or relative of husband subjecting a woman to cruelty (old 498A). The offence is here; the definition of cruelty is s. 86. Still cognizable and non-bailable in the usual classification.\n\nLegal rule. In student language: BNS s. 85 is the rule on “Husband or relative of husband of a woman subjecting her to cruelty”. The section provides that whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 85. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Up to 3 years + fine.\n\nConnected sections. Read with BNS s. 80, BNS s. 86. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 85 is the complete current-law heading for Husband or relative of husband of a woman subjecting her to cruelty. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-85-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 85 (Husband or relative of husband of a woman subjecting her to cruelty) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 85 deals with Husband or relative of husband of a woman subjecting her to cruelty. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Husband or relative of husband subjecting a woman to cruelty (old 498A). The offence is here; the definition of cruelty is s. 86. Still cognizable and non-bailable in the usual classification.\n\nLegal rule. In student language: BNS s. 85 is the rule on “Husband or relative of husband of a woman subjecting her to cruelty”. The section provides that whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 85. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Up to 3 years + fine.\n\nConnected sections. Read with BNS s. 80, BNS s. 86. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 85 is the complete current-law heading for Husband or relative of husband of a woman subjecting her to cruelty. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 85 with BNS s. 80, BNS s. 86. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 85.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Hira Lal v. State (Govt. of NCT), Delhi",
+      "year": 2003,
+      "citation": "(2003) 8 SCC 80",
+      "holding": "Dowry death: the 7-year window, “soon before”, and the presumption. Reads onto s. 80."
+    }
+  ],
+  "examTips": [
+    "Cite BNS s. 85 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Charge 85, define with 86. Writing “s. 86 is the offence” is a free mark thrown away."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 85 (Husband or relative of husband of a woman subjecting her to cruelty).",
+      "steps": [
+        "Introduce BNS s. 85 and Chapter V — Of Offences Against Woman and Child.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 85."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 85 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Distinguish BNS s. 85 from BNS s. 80, BNS s. 86.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 85, Husband or relative of husband of a woman subjecting her to cruelty.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 85: Husband or relative of husband of a woman subjecting her to cruelty.",
+    "First ingredient: Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 85 — Husband or relative of husband of a woman subjecting her to cruelty. Older books and judgments may still print a historical number (498A). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": [
+    "s-80",
+    "s-86"
+  ]
 }
 
 export default content

@@ -1,32 +1,134 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 248 (and related): false charge of offence made with intent to injure — whoever, with intent to cause injury to any person, institutes or causes to be instituted any criminal proceeding against that person, or falsely charges that person with having committed an offence, knowing that there is no just or lawful ground, is punished as provided. Successor to IPC s. 211. Distinct from defamation and from giving false evidence.',
-  study: `False charge with intent to injure under the BNS:\n\nWhoever, with intent to cause injury to any person, institutes or causes to be instituted any criminal proceeding against that person, or falsely charges any person with having committed an offence, knowing that there is no just or lawful ground for such proceeding or charge against that person, is punished as provided (higher when the charge is of a serious offence).\n\nKey points\n• Institution of criminal proceeding or false charge.\n• Knowledge that there is no just or lawful ground.\n• Intent to cause injury.\n\nThis protects persons from malicious false accusations. Cite the applicable BNS section for post-1 July 2024 acts.`,
-  sections: [
-    { id: 's-248-m1', title: 'Provenance', order: 1, content: ['Successor to IPC s. 211. False charge / institution of proceeding with intent to injure and knowledge of no just ground.'] },
-    { id: 's-248-m2', title: 'Elements', order: 2, content: ['Institutes proceeding or falsely charges; knowledge of no just or lawful ground; intent to cause injury.'] },
-    { id: 's-248-m3', title: 'Ingredients', order: 3, content: ['(1) Criminal proceeding or false charge. (2) Knowledge of absence of just/lawful ground. (3) Intent to injure.'] },
-    { id: 's-248-m4', title: 'Evidence', order: 4, content: ['Nature of the charge/proceeding; absence of ground; knowledge; intent to injure.'] },
-    { id: 's-248-m5', title: 'Procedure', order: 5, content: ['Often requires careful scrutiny of the original complaint; higher punishment for serious false charges.'] },
+  "study": "Introduction and meaning\nFalse charge of offence made with intent to injure. BNS restatement of IPC 211. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 211. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 248 is the rule on “False charge of offence made with intent to injure”. The section provides that whoever, with intent to cause injury to any person, institutes or causes to be instituted any criminal proceeding against that person, or falsely charges any person with having committed an offence, knowing that there is no just or lawful ground for such proceeding or charge against that person,—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 248 exists so that “False charge of offence made with intent to injure” has a closed legal test in Chapter XIV — Of False Evidence and Offences Against Public Justice. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Perjury, screening, harbouring, false charge, and failing to appear on a bond.\n\nThe provision in detail\n248. Whoever, with intent to cause injury to any person, institutes or causes to be instituted any criminal proceeding against that person, or falsely charges any person with having committed an offence, knowing that there is no just or lawful ground for such proceeding or charge against that person,—\n\n(a) shall be punished with imprisonment of either description for a term which may extend to five years, or with fine which may extend to two lakh rupees, or with both;\n\n(b) if such criminal proceeding be instituted on a false charge of an offence punishable with death, imprisonment for life, or imprisonment for ten years or upwards, shall be punishable with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nEssential ingredients\n1. Whoever, with intent to cause injury to any person, institutes or causes to be instituted any criminal proceeding against that person, or falsely charges any person with having committed an offence, knowing that there is no just or lawful ground for such proceeding or charge against that person,—\n2. (a) shall be punished with imprisonment of either description for a term which may extend to five years, or with fine which may extend to two lakh rupees, or with both;\n3. (b) if such criminal proceeding be instituted on a false charge of an offence punishable with death, imprisonment for life, or imprisonment for ten years or upwards, shall be punishable with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine",
+  "glance": "BNS s. 248 — False charge of offence made with intent to injure.",
+  "sections": [
+    {
+      "id": "bns-248-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "248. Whoever, with intent to cause injury to any person, institutes or causes to be instituted any criminal proceeding against that person, or falsely charges any person with having committed an offence, knowing that there is no just or lawful ground for such proceeding or charge against that person,—",
+        "(a) shall be punished with imprisonment of either description for a term which may extend to five years, or with fine which may extend to two lakh rupees, or with both;",
+        "(b) if such criminal proceeding be instituted on a false charge of an offence punishable with death, imprisonment for life, or imprisonment for ten years or upwards, shall be punishable with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-248-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever, with intent to cause injury to any person, institutes or causes to be instituted any criminal proceeding against that person, or falsely charges any person with having committed an offence, knowing that there is no just or lawful ground for such proceeding or charge against that person,—",
+        "(a) shall be punished with imprisonment of either description for a term which may extend to five years, or with fine which may extend to two lakh rupees, or with both;",
+        "(b) if such criminal proceeding be instituted on a false charge of an offence punishable with death, imprisonment for life, or imprisonment for ten years or upwards, shall be punishable with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-248', section: 's. 248', title: 'False charge of offence made with intent to injure' }],
-  examples: [
-    { id: 's-248-ex1', title: 'Malicious false FIR', illustrationType: 'practical', description: 'A files an FIR accusing B of theft, knowing the accusation is baseless, intending to harm B. The offence is made out.' },
-    { id: 's-248-ex2', title: 'Bona fide complaint', illustrationType: 'fail-scenario', description: 'A complains on a reasonable belief that an offence occurred. Without knowledge of absence of just ground and intent to injure, the offence is not made out.' },
+  "examples": [
+    {
+      "id": "bns-248-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “False charge of offence made with intent to injure”. Name BNS s. 248, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-248-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 248 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-248-hypo', title: 'False charge', facts: 'Accused institutes a criminal case knowing there is no basis, to harass the opposite party.', question: 'Is the offence made out?', applicableLaw: 'BNS false-charge provisions.', analysis: 'Proceeding + knowledge of no just ground + intent to injure — yes.', conclusion: 'Offence established.' }],
-  distinctions: [{ id: 's-248-dist', title: 'False charge vs Defamation vs False evidence', left: 'False charge (s. 248)', right: 'Defamation / False evidence', rows: [{ point: 'Focus', left: 'Instituting proceeding or charging with offence knowing no just ground, intent to injure', right: 'Harm to reputation / false statement under legal obligation' }] }],
-  misconceptions: [{ id: 's-248-trap', trap: 'Every acquittal means the complainant committed this offence.', correction: 'The complainant must have known there was no just or lawful ground and must have acted with intent to injure. A failed but bona fide complaint is not this offence.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-248-brief', draftingCategory: 'brief', question: 'Explain false charge with intent to injure under the BNS.', answer: 'Whoever, with intent to cause injury, institutes a criminal proceeding or falsely charges a person with an offence, knowing that there is no just or lawful ground, commits the offence. A bona fide complaint that fails is not enough; knowledge of absence of ground and intent to injure are essential.', explanation: 'Short note.' },
-    { id: 's-248-sub', draftingCategory: 'submissions', question: 'Submissions on false charge.', answer: 'I. Proceeding or charge. II. Knowledge of no just ground. III. Intent to injure. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-248-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “False charge of offence made with intent to injure” under BNS s. 248 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 248 (False charge of offence made with intent to injure) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 248. Chapter XIV — Of False Evidence and Offences Against Public Justice. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 248 (False charge of offence made with intent to injure), Chapter XIV — Of False Evidence and Offences Against Public Justice.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever, with intent to cause injury to any person, institutes or causes to be instituted any criminal proceeding against that person, or falsely charges any person with having committed an offence, knowing that there is no just or lawful ground for such proceeding or charge against that person,—\n   (2) (a) shall be punished with imprisonment of either description for a term which may extend to five years, or with fine which may extend to two lakh rupees, or with both;\n   (3) (b) if such criminal proceeding be instituted on a false charge of an offence punishable with death, imprisonment for life, or imprisonment for ten years or upwards, shall be punishable with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 248 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 248 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 248. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS false-charge provisions', 'BNS s. 227', 'BNS s. 356', 'IPC s. 211 (historical)'],
-  examTips: ['Stress knowledge of no just ground and intent to injure.', 'Acquittal alone does not prove this offence.'],
-  revisionPoints: ['False charge/proceeding + knowledge of no just ground + intent to injure.', 'Not every failed complaint.', 'Higher punishment for serious false charges.'],
-  relatedTopics: ['s-227', 's-356', 's-230'],
+  "misconceptions": [
+    {
+      "id": "bns-248-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 248."
+    },
+    {
+      "id": "bns-248-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-248-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-248-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 248 (False charge of offence made with intent to injure)",
+      "answer": "Introduction. BNS s. 248 deals with False charge of offence made with intent to injure. It sits in Chapter XIV — Of False Evidence and Offences Against Public Justice of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. False charge of offence made with intent to injure. BNS restatement of IPC 211. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 211. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 248 is the rule on “False charge of offence made with intent to injure”. The section provides that whoever, with intent to cause injury to any person, institutes or causes to be instituted any criminal proceeding against that person, or falsely charges any person with having committed an offence, knowing that there is no just or lawful ground for such proceeding or charge against that person,—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever, with intent to cause injury to any person, institutes or causes to be instituted any criminal proceeding against that person, or falsely charges any person with having committed an offence, knowing that there is no just or lawful ground for such proceeding or charge against that person,—\n2. (a) shall be punished with imprisonment of either description for a term which may extend to five years, or with fine which may extend to two lakh rupees, or with both;\n3. (b) if such criminal proceeding be instituted on a false charge of an offence punishable with death, imprisonment for life, or imprisonment for ten years or upwards, shall be punishable with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 248. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 248 is the complete current-law heading for False charge of offence made with intent to injure. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-248-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 248 (False charge of offence made with intent to injure) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 248 deals with False charge of offence made with intent to injure. It sits in Chapter XIV — Of False Evidence and Offences Against Public Justice of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. False charge of offence made with intent to injure. BNS restatement of IPC 211. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 211. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 248 is the rule on “False charge of offence made with intent to injure”. The section provides that whoever, with intent to cause injury to any person, institutes or causes to be instituted any criminal proceeding against that person, or falsely charges any person with having committed an offence, knowing that there is no just or lawful ground for such proceeding or charge against that person,—. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever, with intent to cause injury to any person, institutes or causes to be instituted any criminal proceeding against that person, or falsely charges any person with having committed an offence, knowing that there is no just or lawful ground for such proceeding or charge against that person,—\n2. (a) shall be punished with imprisonment of either description for a term which may extend to five years, or with fine which may extend to two lakh rupees, or with both;\n3. (b) if such criminal proceeding be instituted on a false charge of an offence punishable with death, imprisonment for life, or imprisonment for ten years or upwards, shall be punishable with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 248. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 248 is the complete current-law heading for False charge of offence made with intent to injure. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Perjury, screening, harbouring, false charge, and failing to appear on a bond.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 248. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 248.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 248 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 248 (False charge of offence made with intent to injure).",
+      "steps": [
+        "Introduce BNS s. 248 and Chapter XIV — Of False Evidence and Offences Against Public Justice.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 248."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 248 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 248, False charge of offence made with intent to injure.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 248: False charge of offence made with intent to injure.",
+    "First ingredient: Whoever, with intent to cause injury to any person, institutes or causes to be instituted any criminal proceeding against that person, or falsely charges any person with having committed an offence, knowing that there is no just or lawful ground for such proceeding or charge against that person,—",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 248 — False charge of offence made with intent to injure. Older books and judgments may still print a historical number (211). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

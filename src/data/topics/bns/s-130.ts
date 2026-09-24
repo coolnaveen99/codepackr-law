@@ -1,32 +1,153 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 130 (and related): criminal force — intentional use of force on a person without that person’s consent, in order to commit an offence, or intending/knowing it likely to cause injury, fear, or annoyance. Successor to IPC s. 350. Assault is the apprehension of criminal force (related section).',
-  study: `Criminal force under the BNS:\n\nWhoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending to cause, or knowing it to be likely that he will cause by the use of such force, injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.\n\nForce is defined in the preceding definitional section (causing motion, change of motion, or cessation of motion to another, or to substance in contact, etc.).\n\nAssault is the making of any gesture or preparation intending or knowing it to be likely that such gesture/preparation will cause a person to apprehend that criminal force is about to be used.\n\nCite the applicable BNS sections for post-1 July 2024 cases. Aggravated forms (on public servant, woman, etc.) have higher punishments.`,
-  sections: [
-    { id: 's-130-m1', title: 'Provenance', order: 1, content: ['Successor to IPC ss. 349–352. Criminal force and assault.'] },
-    { id: 's-130-m2', title: 'Criminal Force', order: 2, content: ['Intentional use of force without consent; to commit an offence, or intending/knowing likely injury, fear or annoyance.'] },
-    { id: 's-130-m3', title: 'Assault', order: 3, content: ['Gesture or preparation causing apprehension that criminal force is about to be used.'] },
-    { id: 's-130-m4', title: 'Evidence', order: 4, content: ['Use of force; absence of consent; intention/knowledge; for assault — apprehension.'] },
-    { id: 's-130-m5', title: 'Procedure', order: 5, content: ['Often bailable/compoundable in simple forms per BNSS Schedule; aggravated forms more serious.'] },
+  "study": "Introduction and meaning\nAssault. BNS restatement of IPC 351. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 351. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 130 is the rule on “Assault”. The section provides that whoever makes any gesture, or any preparation intending or knowing it to be likely that such gesture or preparation will cause any person present to apprehend that he who makes that gesture or preparation is about to use criminal force to that person, is said to commit an assault. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 130 exists so that “Assault” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n130. Whoever makes any gesture, or any preparation intending or knowing it to be likely that such gesture or preparation will cause any person present to apprehend that he who makes that gesture or preparation is about to use criminal force to that person, is said to commit an assault\n\nEssential ingredients\n1. Whoever makes any gesture, or any preparation intending or knowing it to be likely that such gesture or preparation will cause any person present to apprehend that he who makes that gesture or preparation is about to use criminal force to that person, is said to commit an assault\n\nStatutory illustrations\nIllustration (a). A shakes his fist at Z, intending or knowing it to be likely that he may thereby cause Z to believe that A is about to strike Z. A has committed an assault\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 130 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (b). A begins to unloose the muzzle of a ferocious dog, intending or knowing it to be likely that he may thereby cause Z to believe that he is about to cause the dog to attack Z. A has committed an assault upon Z\n\nExam use: quote illustration (b), then write which ingredient of BNS s. 130 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (c). A takes up a stick, saying to Z, “I will give you a beating”. Here, though the words used by A could in no case amount to an assault, and though the mere gesture, unaccompanied by any other circumstances, might not amount to an assault, the gesture explained by the words may amount to an assault\n\nExam use: quote illustration (c), then write which ingredient of BNS s. 130 it proves. Copying the illustration without that mapping sentence does not score.\n\nExplanations\nExplanation.—Mere words do not amount to an assault. But the words which a person uses may give to his gestures or preparation such a meaning as may make those gestures or preparations amount to an assault",
+  "glance": "BNS s. 130 — Assault.",
+  "sections": [
+    {
+      "id": "bns-130-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "130. Whoever makes any gesture, or any preparation intending or knowing it to be likely that such gesture or preparation will cause any person present to apprehend that he who makes that gesture or preparation is about to use criminal force to that person, is said to commit an assault"
+      ]
+    },
+    {
+      "id": "bns-130-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever makes any gesture, or any preparation intending or knowing it to be likely that such gesture or preparation will cause any person present to apprehend that he who makes that gesture or preparation is about to use criminal force to that person, is said to commit an assault"
+      ]
+    },
+    {
+      "id": "bns-130-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "(a) A shakes his fist at Z, intending or knowing it to be likely that he may thereby cause Z to believe that A is about to strike Z. A has committed an assault",
+        "(b) A begins to unloose the muzzle of a ferocious dog, intending or knowing it to be likely that he may thereby cause Z to believe that he is about to cause the dog to attack Z. A has committed an assault upon Z",
+        "(c) A takes up a stick, saying to Z, “I will give you a beating”. Here, though the words used by A could in no case amount to an assault, and though the mere gesture, unaccompanied by any other circumstances, might not amount to an assault, the gesture explained by the words may amount to an assault"
+      ]
+    },
+    {
+      "id": "bns-130-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation.—Mere words do not amount to an assault. But the words which a person uses may give to his gestures or preparation such a meaning as may make those gestures or preparations amount to an assault"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-130', section: 's. 130', title: 'Criminal force and assault' }],
-  examples: [
-    { id: 's-130-ex1', title: 'Criminal force', illustrationType: 'practical', description: 'A pushes B without consent intending to annoy B. Criminal force is made out.' },
-    { id: 's-130-ex2', title: 'Assault without contact', illustrationType: 'practical', description: 'A raises a fist at B in a manner that causes B to apprehend immediate use of force. Assault is made out even without contact.' },
+  "examples": [
+    {
+      "id": "bns-130-ex-1",
+      "title": "Illustration (a)",
+      "description": "A shakes his fist at Z, intending or knowing it to be likely that he may thereby cause Z to believe that A is about to strike Z. A has committed an assault\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 130 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-130-ex-2",
+      "title": "Illustration (b)",
+      "description": "A begins to unloose the muzzle of a ferocious dog, intending or knowing it to be likely that he may thereby cause Z to believe that he is about to cause the dog to attack Z. A has committed an assault upon Z\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 130 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-130-ex-3",
+      "title": "Illustration (c)",
+      "description": "A takes up a stick, saying to Z, “I will give you a beating”. Here, though the words used by A could in no case amount to an assault, and though the mere gesture, unaccompanied by any other circumstances, might not amount to an assault, the gesture explained by the words may amount to an assault\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 130 — which fact proves which element, and what the legal result is."
+    }
   ],
-  hypotheticals: [{ id: 's-130-hypo', title: 'Force vs assault', facts: 'Accused makes a threatening gesture; no contact occurs.', question: 'Criminal force or assault?', applicableLaw: 'BNS criminal force / assault provisions.', analysis: 'Without actual use of force, it is assault (apprehension), not criminal force.', conclusion: 'Assault.' }],
-  distinctions: [{ id: 's-130-dist', title: 'Criminal force vs Assault vs Hurt', left: 'Criminal force / Assault', right: 'Hurt (s. 115)', rows: [{ point: 'Result', left: 'Force used or apprehended; injury/fear/annoyance intended or known likely', right: 'Bodily pain, disease or infirmity actually caused' }] }],
-  misconceptions: [{ id: 's-130-trap', trap: 'Assault requires physical contact.', correction: 'Assault is the apprehension of criminal force; contact is not required. Contact may make it criminal force or hurt.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-130-brief', draftingCategory: 'brief', question: 'Distinguish criminal force and assault under the BNS.', answer: 'Criminal force is the intentional use of force on a person without consent, to commit an offence or intending/knowing likely injury, fear or annoyance. Assault is a gesture or preparation causing apprehension that criminal force is about to be used (no contact required).', explanation: 'Short note.' },
-    { id: 's-130-sub', draftingCategory: 'submissions', question: 'Submissions on criminal force/assault.', answer: 'I. Force or apprehension. II. Without consent. III. Intention/knowledge. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-130-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "(a) A shakes his fist at Z, intending or knowing it to be likely that he may thereby cause Z to believe that A is about to strike Z. A has committed an assault",
+      "question": "Whether BNS s. 130 (Assault) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 130. Chapter VI — Of Offences Affecting the Human Body. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 130 (Assault), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever makes any gesture, or any preparation intending or knowing it to be likely that such gesture or preparation will cause any person present to apprehend that he who makes that gesture or preparation is about to use criminal force to that person, is said to commit an assault\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 130 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 130. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS criminal force and assault provisions', 'BNS s. 115', 'IPC ss. 349–352 (historical)'],
-  examTips: ['Assault does not require contact; criminal force does.', 'Distinguish both from hurt.'],
-  revisionPoints: ['Criminal force = intentional force without consent + offence/injury/fear/annoyance.', 'Assault = apprehension of criminal force.', 'No contact needed for assault.'],
-  relatedTopics: ['s-115', 's-64', 's-34'],
+  "misconceptions": [
+    {
+      "id": "bns-130-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 130."
+    },
+    {
+      "id": "bns-130-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-130-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-130-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 130 (Assault)",
+      "answer": "Introduction. BNS s. 130 deals with Assault. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Assault. BNS restatement of IPC 351. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 351. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 130 is the rule on “Assault”. The section provides that whoever makes any gesture, or any preparation intending or knowing it to be likely that such gesture or preparation will cause any person present to apprehend that he who makes that gesture or preparation is about to use criminal force to that person, is said to commit an assault. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever makes any gesture, or any preparation intending or knowing it to be likely that such gesture or preparation will cause any person present to apprehend that he who makes that gesture or preparation is about to use criminal force to that person, is said to commit an assault\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A shakes his fist at Z, intending or knowing it to be likely that he may thereby cause Z to believe that A is about to strike Z. A has committed an assault\n\nExplanations. Explanation.—Mere words do not amount to an assault. But the words which a person uses may give to his gestures or preparation such a meaning as may make those gestures or preparations amount to an assault An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 130. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 130 is the complete current-law heading for Assault. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-130-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 130 (Assault) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 130 deals with Assault. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Assault. BNS restatement of IPC 351. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 351. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 130 is the rule on “Assault”. The section provides that whoever makes any gesture, or any preparation intending or knowing it to be likely that such gesture or preparation will cause any person present to apprehend that he who makes that gesture or preparation is about to use criminal force to that person, is said to commit an assault. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever makes any gesture, or any preparation intending or knowing it to be likely that such gesture or preparation will cause any person present to apprehend that he who makes that gesture or preparation is about to use criminal force to that person, is said to commit an assault\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A shakes his fist at Z, intending or knowing it to be likely that he may thereby cause Z to believe that A is about to strike Z. A has committed an assault\n\nExplanations. Explanation.—Mere words do not amount to an assault. But the words which a person uses may give to his gestures or preparation such a meaning as may make those gestures or preparations amount to an assault An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 130. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 130 is the complete current-law heading for Assault. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second statutory illustration. Illustration (b): (b) A begins to unloose the muzzle of a ferocious dog, intending or knowing it to be likely that he may thereby cause Z to believe that he is about to cause the dog to attack Z. A has committed an assault upon Z Contrast it with illustration (a). The legal weight lies in the contrast.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 130. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 130.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 130 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 130 (Assault).",
+      "steps": [
+        "Introduce BNS s. 130 and Chapter VI — Of Offences Affecting the Human Body.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 130."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 130 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second statutory illustration and contrast it with the first.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 130, Assault.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 130: Assault.",
+    "First ingredient: Whoever makes any gesture, or any preparation intending or knowing it to be likely that such gesture or preparation will cause any person present to apprehend that he who makes that gesture or preparation is about to use criminal force to that person, is said to commit an assault",
+    "3 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 130 — Assault. Older books and judgments may still print a historical number (351). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

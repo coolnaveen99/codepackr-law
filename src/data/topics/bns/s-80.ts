@@ -1,32 +1,174 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 80: dowry death — where the death of a woman is caused by burns or bodily injury or occurs otherwise than under normal circumstances within seven years of marriage, and it is shown that she was subjected to cruelty or harassment by her husband or any relative of her husband for or in connection with demand for dowry, such husband or relative is deemed to have caused the death. Successor to IPC s. 304B. Presumption and reverse burden are central.',
-  study: `Section 80 is the dowry-death provision.\n\nIngredients (classic):\n1. Death of a woman by burns or bodily injury or otherwise than under normal circumstances.\n2. Within seven years of marriage.\n3. She was subjected to cruelty or harassment by her husband or any relative of her husband.\n4. Such cruelty or harassment was for or in connection with a demand for dowry.\n\nWhen these are shown, the husband or relative is deemed to have caused the death. The prosecution must prove the basic facts; the presumption then operates. “Dowry” and “cruelty” draw meaning from the Dowry Prohibition Act and related BNS provisions (e.g. cruelty under s. 85).\n\nPunishment is as stated in the section (minimum term, which may extend to life).\n\nCite BNS s. 80 for post-1 July 2024 dowry deaths. Date-of-offence rule applies.`,
-  sections: [
-    { id: 's-80-m1', title: 'Provenance', order: 1, content: ['Successor to IPC s. 304B. Deeming provision for dowry death within seven years of marriage.'] },
-    { id: 's-80-m2', title: 'Ingredients', order: 2, content: ['Death by burns/injury or otherwise than normal; within 7 years of marriage; cruelty/harassment by husband or relative; for or in connection with dowry demand.'] },
-    { id: 's-80-m3', title: 'Deeming & Burden', order: 3, content: ['When the basic facts are shown, the husband/relative is deemed to have caused the death. Prosecution proves the foundational facts; defence may rebut.'] },
-    { id: 's-80-m4', title: 'Evidence', order: 4, content: ['Medical cause of death; timing relative to marriage; evidence of dowry demand and cruelty/harassment (letters, witnesses, prior complaints).'] },
-    { id: 's-80-m5', title: 'Procedure', order: 5, content: ['Sessions trial; often charged with s. 85 (cruelty) and homicide sections in the alternative.'] },
+  "study": "Introduction and meaning\nDowry death, moved from the homicide chapter into Chapter V. Death of a woman by burns or bodily injury, or otherwise than under normal circumstances, within 7 years of marriage, where she was subjected to dowry-related cruelty soon before her death.\nIn student language: BNS s. 80 is the rule on “Dowry death”. The section provides that (1) Where the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 80 exists so that “Dowry death” has a closed legal test in Chapter V — Of Offences Against Woman and Child. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.\n\nThe provision in detail\n80. (1) Where the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death\n\nEssential ingredients\n1. (1) Where the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death\n\nPunishment / legal consequence\nMinimum 7 years, may extend to life.\n\nExplanations\nExplanation.—For the purposes of this sub-section, “dowry” shall have the same meaning as in section 2 of the Dowry Prohibition Act, 1961\n\n(2) Whoever commits dowry death shall be punished with imprisonment for a term which shall not be less than seven years but which may extend to imprisonment for life",
+  "glance": "BNS s. 80 — Dowry death.",
+  "sections": [
+    {
+      "id": "bns-80-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "80. (1) Where the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death"
+      ]
+    },
+    {
+      "id": "bns-80-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Where the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death"
+      ]
+    },
+    {
+      "id": "bns-80-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation.—For the purposes of this sub-section, “dowry” shall have the same meaning as in section 2 of the Dowry Prohibition Act, 1961",
+        "(2) Whoever commits dowry death shall be punished with imprisonment for a term which shall not be less than seven years but which may extend to imprisonment for life"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-80', section: 's. 80', title: 'Dowry death' }],
-  examples: [
-    { id: 's-80-ex1', title: 'Classic dowry death', illustrationType: 'practical', description: 'A woman dies of burns within three years of marriage; evidence shows repeated dowry demands and harassment by the husband. s. 80 is attracted.' },
-    { id: 's-80-ex2', title: 'Death after seven years', illustrationType: 'fail-scenario', description: 'Death occurs eight years after marriage. The seven-year limb fails; s. 80 does not apply (other homicide/cruelty sections may).' },
+  "examples": [
+    {
+      "id": "bns-80-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Dowry death”. Name BNS s. 80, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-80-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 80 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-80-hypo', title: 'Dowry death ingredients', facts: 'Death within 5 years of marriage by burns; prior dowry harassment by in-laws proved.', question: 'Is s. 80 made out?', applicableLaw: 'BNS s. 80.', analysis: 'Death otherwise than normal + within 7 years + cruelty/harassment for dowry by relative — yes; deeming applies.', conclusion: 's. 80 attracted.' }],
-  distinctions: [{ id: 's-80-dist', title: 's. 80 vs s. 85 vs Murder', left: 's. 80 (dowry death)', right: 's. 85 (cruelty) / s. 101 (murder)', rows: [{ point: 'Focus', left: 'Death within 7 years + dowry-linked cruelty → deeming', right: 'Cruelty as a standalone offence / ordinary murder ingredients' }] }],
-  misconceptions: [{ id: 's-80-trap', trap: 'Any death of a married woman within seven years is dowry death.', correction: 'The prosecution must still show cruelty or harassment for or in connection with a demand for dowry. The seven-year period alone is not enough.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-80-brief', draftingCategory: 'brief', question: 'State the ingredients of dowry death under BNS s. 80.', answer: 'Death of a woman by burns or bodily injury or otherwise than under normal circumstances, within seven years of marriage, and cruelty or harassment by the husband or his relative for or in connection with a demand for dowry. When shown, the husband/relative is deemed to have caused the death.', explanation: 'Short note.' },
-    { id: 's-80-sub', draftingCategory: 'submissions', question: 'Submissions on s. 80.', answer: 'I. Death and timing. II. Cruelty/harassment for dowry. III. Deeming. IV. Rebuttal if any. V. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-80-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Dowry death” under BNS s. 80 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 80 (Dowry death) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 80. Chapter V — Of Offences Against Woman and Child. Connected: BNS s. 85, BNS s. 86.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 80 (Dowry death), Chapter V — Of Offences Against Woman and Child.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Where the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 80 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 80. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS s. 80', 'BNS s. 85', 'Dowry Prohibition Act', 'IPC s. 304B (historical)'],
-  examTips: ['List all four ingredients.', 'State the deeming consequence and the seven-year limit.'],
-  revisionPoints: ['Death within 7 years + dowry-linked cruelty/harassment → deemed to have caused death.', 'Seven years is mandatory.', 'Often charged with s. 85.'],
-  relatedTopics: ['s-85', 's-100', 's-101', 's-64'],
+  "distinctions": [
+    {
+      "id": "bns-80-dist",
+      "title": "BNS s. 80 and connected sections",
+      "left": "BNS s. 80",
+      "right": "BNS s. 85, BNS s. 86",
+      "rows": [
+        {
+          "point": "Heading",
+          "left": "Dowry death",
+          "right": "Read the neighbour’s title on its own page before you write."
+        },
+        {
+          "point": "What you must prove",
+          "left": "(1) Where the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+        },
+        {
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 80.",
+          "right": "Citing s. 80 where the neighbour actually applies."
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-80-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 80."
+    },
+    {
+      "id": "bns-80-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-80-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-80-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 80 (Dowry death)",
+      "answer": "Introduction. BNS s. 80 deals with Dowry death. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Dowry death, moved from the homicide chapter into Chapter V. Death of a woman by burns or bodily injury, or otherwise than under normal circumstances, within 7 years of marriage, where she was subjected to dowry-related cruelty soon before her death.\n\nLegal rule. In student language: BNS s. 80 is the rule on “Dowry death”. The section provides that (1) Where the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Where the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—For the purposes of this sub-section, “dowry” shall have the same meaning as in section 2 of the Dowry Prohibition Act, 1961 An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 80. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Minimum 7 years, may extend to life.\n\nConnected sections. Read with BNS s. 85, BNS s. 86. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 80 is the complete current-law heading for Dowry death. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-80-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 80 (Dowry death) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 80 deals with Dowry death. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Dowry death, moved from the homicide chapter into Chapter V. Death of a woman by burns or bodily injury, or otherwise than under normal circumstances, within 7 years of marriage, where she was subjected to dowry-related cruelty soon before her death.\n\nLegal rule. In student language: BNS s. 80 is the rule on “Dowry death”. The section provides that (1) Where the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Where the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—For the purposes of this sub-section, “dowry” shall have the same meaning as in section 2 of the Dowry Prohibition Act, 1961 An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 80. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Minimum 7 years, may extend to life.\n\nConnected sections. Read with BNS s. 85, BNS s. 86. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 80 is the complete current-law heading for Dowry death. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 80 with BNS s. 85, BNS s. 86. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 80.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Hira Lal v. State (Govt. of NCT), Delhi",
+      "year": 2003,
+      "citation": "(2003) 8 SCC 80",
+      "holding": "Dowry death: the 7-year window, “soon before”, and the presumption. Reads onto s. 80."
+    }
+  ],
+  "examTips": [
+    "Cite BNS s. 80 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "It is s. 80, not s. 304B and not s. 103. The 7-year window is still the hinge."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 80 (Dowry death).",
+      "steps": [
+        "Introduce BNS s. 80 and Chapter V — Of Offences Against Woman and Child.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 80."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 80 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Distinguish BNS s. 80 from BNS s. 85, BNS s. 86.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 80, Dowry death.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 80: Dowry death.",
+    "First ingredient: (1) Where the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 80 — Dowry death. Older books and judgments may still print a historical number (304B). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": [
+    "s-85",
+    "s-86"
+  ]
 }
 
 export default content

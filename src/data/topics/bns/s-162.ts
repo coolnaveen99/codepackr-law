@@ -1,70 +1,130 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'BNS Section 162: Abetment of such assault, if assault committed. Liability for the abetment described in s. 161 where the contemplated assault is actually committed. The note treats the enacted BNS text as controlling for post-1 July 2024 conduct and uses IPC s. 134 only as historical concordance.',
-  study: `Section 162 — Abetment of such assault, if assault committed.\\n\\nLiability for the abetment described in s. 161 where the contemplated assault is actually committed.\\n\\nHistorical IPC concordance: 134. Read the enacted BNS wording, including every explanation, proviso and exception. For conduct before 1 July 2024, separately apply the repeal-and-savings framework and Article 20(1).`,
-  sections:[
-    {id:'s-162-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:[
-      'Chapter: Armed forces.',
-      'Liability for the abetment described in s. 161 where the contemplated assault is actually committed.',
-      'Historical IPC concordance: 134. The concordance is useful for tracing continuity and identifying possible changes, but it is not the governing post-commencement text.',
-      'The offence/definition should be read with the immediately connected BNS provisions because status, mental element, causation, exceptions and punishment may be distributed across the chapter.',
-      'Where the provision concerns public authority, armed forces or elections, distinguish the statutory offence from disciplinary, constitutional, service-law or electoral-law consequences that may arise independently.'
-    ]},
-    {id:'s-162-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:[
-      'Operative provision: BNS s. 162 — Abetment of such assault, if assault committed.',
-      'Start with the grammatical subject, prohibited act, object, circumstance, mental element and any consequence specified by the enacted wording.',
-      'Do not infer liability from the section heading alone. Identify every qualifier and read any explanation, proviso, exception or cross-reference in the enacted text.',
-      'For s. 162, the historical IPC concordance is s. 134; use it to orient research only and verify the BNS wording before drafting a charge, opinion or submission.',
-      'Where the section depends on a status such as public servant, prisoner of State/war, service member, candidate or electoral right, prove that status from the legally competent source rather than assumption.'
-    ]},
-    {id:'s-162-m3',title:'Mandatory Proving Ingredients & Essential Elements',order:3,content:[
-      '1. The accused abets the assault contemplated by the connected provision.','2. The assault is actually committed.','3. The remaining statutory conditions and mental element are established.',
-      'Separate the actus reus from the required intention, knowledge, negligence or causal connection. A factual resemblance is not a substitute for proof of the statutory mental element.',
-      'Map each prosecution fact to a specific ingredient and identify the evidentiary link for each disputed proposition.',
-      'Check connected BNS provisions before concluding that the conduct belongs under s. 162; a more specific provision, definition or exception may control the analysis.'
-    ]},
-    {id:'s-162-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:[
-      'The prosecution ordinarily bears the burden of proving the charged ingredients beyond reasonable doubt, subject to any applicable statutory presumption or burden expressly created by law.',
-      'Identify separately: admissibility, authenticity, relevance, reliability and ultimate probative weight. Do not treat these as interchangeable questions.',
-      'For status-based offences, contemporaneous official/service/electoral records may be material. For communications or digital conduct, identify the source, integrity, chain of custody and applicable BSA rules for electronic records.',
-      'Admissions, conduct, documents, expert material and electronic records should be tied to the particular ingredient they are offered to prove; avoid evidence-by-label reasoning.',
-      'Where a defence invokes an exception or special statutory qualification, identify the governing burden rule rather than assuming that every defence carries the same burden.'
-    ]},
-    {id:'s-162-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:[
-      'Check the BNSS First Schedule and the enacted punishment/classification for cognizability, bailability and the competent trial court; do not import an old IPC classification without verification.',
-      'Check territorial jurisdiction, joinder and charge framing, sanction or statutory preconditions where the accused/status makes them relevant.',
-      'For offences involving public office, armed forces or elections, check any parallel statutory regime and whether a special complaint, sanction or competent-authority step is prescribed.',
-      'Check the applicable BNSS limitation rule, if any, and the commencement date of the governing penal law.',
-      'For pre-1 July 2024 conduct, separately analyze repeal, savings and Article 20(1); the BNS section number should not be retrospectively substituted merely because its subject matter corresponds to an IPC provision.'
-    ]},
+  "study": "Introduction and meaning\nAbetment of such assault, if assault committed. BNS restatement of IPC 134. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 134. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 162 is the rule on “Abetment of such assault, if assault committed”. The section provides that whoever abets an assault by an officer, soldier, sailor or airman, in the Army, Navy or Air Force of the Government of India, on any superior officer being in the execution of his office, shall, if such assault be committed in consequence of that abetment be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 162 exists so that “Abetment of such assault, if assault committed” has a closed legal test in Chapter VIII — Of Offences Relating to the Army, Navy and Air Force. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Mutiny, desertion, insubordination, and wearing a service garb.\n\nThe provision in detail\n162. Whoever abets an assault by an officer, soldier, sailor or airman, in the Army, Navy or Air Force of the Government of India, on any superior officer being in the execution of his office, shall, if such assault be committed in consequence of that abetment be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nEssential ingredients\n1. Whoever abets an assault by an officer, soldier, sailor or airman, in the Army, Navy or Air Force of the Government of India, on any superior officer being in the execution of his office, shall, if such assault be committed in consequence of that abetment be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine",
+  "glance": "BNS s. 162 — Abetment of such assault, if assault committed.",
+  "sections": [
+    {
+      "id": "bns-162-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "162. Whoever abets an assault by an officer, soldier, sailor or airman, in the Army, Navy or Air Force of the Government of India, on any superior officer being in the execution of his office, shall, if such assault be committed in consequence of that abetment be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-162-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever abets an assault by an officer, soldier, sailor or airman, in the Army, Navy or Air Force of the Government of India, on any superior officer being in the execution of his office, shall, if such assault be committed in consequence of that abetment be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine"
+      ]
+    }
   ],
-  provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-162',section:'s. 162',title:'Abetment of such assault, if assault committed'}],
-  examples:[
-    {id:'s-162-ex1',title:'Statutory ingredients satisfied',illustrationType:'practical',description:'The proved facts establish each material ingredient of BNS s. 162, including the relevant status, act, circumstance and mental element, and no applicable exception defeats the charge.'},
-    {id:'s-162-ex2',title:'Ingredient or qualification missing',illustrationType:'fail-scenario',description:'The conduct resembles the provision, but one required statutory ingredient, status, mental element, causal link or evidentiary foundation is not established.'}
+  "examples": [
+    {
+      "id": "bns-162-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Abetment of such assault, if assault committed”. Name BNS s. 162, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-162-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 162 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals:[{id:'s-162-hypo',title:'Chamber problem — BNS s. 162',facts:'The prosecution invokes BNS s. 162 on a fact pattern involving abetment of such assault, if assault committed. The defence disputes one or more ingredients and challenges the evidentiary link.',question:'Do the proved facts satisfy BNS s. 162?',applicableLaw:'BNS s. 162; connected BNS provisions and definitions; applicable BNSS procedure; BSA 2023 evidence rules.',analysis:'1. Identify the exact enacted words. 2. Break them into ingredients and qualifiers. 3. Establish any protected status or factual precondition. 4. Map admissible evidence to each ingredient. 5. Apply exceptions, defences and connected provisions. 6. Check BNSS classification and procedural preconditions.',conclusion:'The conclusion must follow from the enacted statutory ingredients and proved facts, not from the historical IPC number or the section heading alone.'}],
-  distinctions:[{id:'s-162-dist',title:'BNS provision vs historical IPC concordance',left:'BNS s. 162',right:'Historical IPC s. 134',rows:[
-    {point:'Governing text',left:'Enacted BNS wording for post-commencement offences',right:'Historical concordance for continuity/change analysis'},
-    {point:'Mental element',left:'Apply the mental element actually expressed or necessarily required by the BNS text',right:'Do not assume an IPC formulation is identical'},
-    {point:'Procedure',left:'Verify current BNSS classification and procedure',right:'Old CrPC classification is not automatically controlling'},
-    {point:'Transition',left:'Check commencement and savings for the date of conduct',right:'Historical law may govern saved pre-commencement matters'}
-  ]}],
-  misconceptions:[
-    {id:'s-162-trap',trap:'The historical IPC section can simply be substituted for BNS s. 162.',correction:'The enacted BNS text governs post-commencement offences; IPC s. 134 is historical concordance only.'},
-    {id:'s-162-trap-2',trap:'A matching label or suspicious fact pattern is enough to establish the offence.',correction:'Every material ingredient, statutory qualification and applicable exception must be established on the evidence.'},
-    {id:'s-162-trap-3',trap:'Procedure, evidence and the substantive offence can be analyzed separately without cross-checking.',correction:'A defensible assessment links the BNS ingredients with BNSS procedure and BSA proof requirements.'}
+  "hypotheticals": [
+    {
+      "id": "bns-162-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Abetment of such assault, if assault committed” under BNS s. 162 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 162 (Abetment of such assault, if assault committed) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 162. Chapter VIII — Of Offences Relating to the Army, Navy and Air Force. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 162 (Abetment of such assault, if assault committed), Chapter VIII — Of Offences Relating to the Army, Navy and Air Force.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever abets an assault by an officer, soldier, sailor or airman, in the Army, Navy or Air Force of the Government of India, on any superior officer being in the execution of his office, shall, if such assault be committed in consequence of that abetment be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 162 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 162 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 162. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  cases:[],
-  questionsAndAnswers:[
-    {id:'s-162-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment of BNS s. 162.',answer:`I. ISSUE — identify the precise statutory question.\\nII. RULE — reproduce the governing BNS ingredients, definitions, exceptions and connected provisions.\\nIII. EVIDENCE — identify admissible proof for each ingredient and the applicable burden.\\nIV. PROCEDURE — check BNSS classification, forum and statutory preconditions.\\nV. APPLICATION — map the proved facts to each element.\\nVI. CONCLUSION — state only the consequence supported by the proved record.`,explanation:'Chamber-style structured analysis without unverified authorities.'},
-    {id:'s-162-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 162.',answer:`I. STATUTORY SCHEME.\\nII. INGREDIENTS AND QUALIFICATIONS.\\nIII. EVIDENCE AND BURDEN.\\nIV. RESPONSE TO DEFENCE / EXCEPTION.\\nV. PROCEDURAL POSITION.\\nVI. RELIEF OR OPERATIVE CONSEQUENCE.`,explanation:'Courtroom submission structure without unverified case citations.'},
-    {id:'s-162-qa',draftingCategory:'qa',question:'What is the safest way to distinguish BNS s. 162 from its IPC concordance?',answer:'Quote and analyze the enacted BNS wording first; use IPC s. 134 only to explain historical continuity or change, and separately verify the current BNSS and BSA interfaces.',explanation:'This prevents historical concordance from becoming an unintended substitute for the current statute.'}
+  "misconceptions": [
+    {
+      "id": "bns-162-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 162."
+    },
+    {
+      "id": "bns-162-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-162-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
   ],
-  bareActPointers:['BNS s. 162 — Abetment of such assault, if assault committed; BNS Chapter VIII; historical IPC concordance s. 134; connected definitions and neighbouring provisions in the same chapter; BNSS First Schedule and applicable procedure; BSA 2023 provisions on burden, admissions, documentary/electronic proof where relevant; BNS repeal-and-savings framework for pre-1 July 2024 conduct.'],
-  examTips:['Start with the enacted BNS wording and identify every ingredient.','For status-based provisions, prove the status from competent records.','Use IPC numbering only as historical concordance, not as a substitute for BNS text.','Cross-check BNSS classification/procedure and BSA proof requirements before finalizing advice.'],
-  revisionPoints:['BNS s. 162: Abetment of such assault, if assault committed.','Cluster: Armed forces.','Historical IPC concordance: 134.','Key analytical focus: Liability for the abetment described in s. 161 where the contemplated assault is actually committed..','Verify current procedural and evidentiary requirements before relying on the note in a live matter.'],
-  relatedTopics:["161"]
+  "questionsAndAnswers": [
+    {
+      "id": "bns-162-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 162 (Abetment of such assault, if assault committed)",
+      "answer": "Introduction. BNS s. 162 deals with Abetment of such assault, if assault committed. It sits in Chapter VIII — Of Offences Relating to the Army, Navy and Air Force of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Abetment of such assault, if assault committed. BNS restatement of IPC 134. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 134. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 162 is the rule on “Abetment of such assault, if assault committed”. The section provides that whoever abets an assault by an officer, soldier, sailor or airman, in the Army, Navy or Air Force of the Government of India, on any superior officer being in the execution of his office, shall, if such assault be committed in consequence of that abetment be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever abets an assault by an officer, soldier, sailor or airman, in the Army, Navy or Air Force of the Government of India, on any superior officer being in the execution of his office, shall, if such assault be committed in consequence of that abetment be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 162. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 162 is the complete current-law heading for Abetment of such assault, if assault committed. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-162-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 162 (Abetment of such assault, if assault committed) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 162 deals with Abetment of such assault, if assault committed. It sits in Chapter VIII — Of Offences Relating to the Army, Navy and Air Force of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Abetment of such assault, if assault committed. BNS restatement of IPC 134. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 134. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 162 is the rule on “Abetment of such assault, if assault committed”. The section provides that whoever abets an assault by an officer, soldier, sailor or airman, in the Army, Navy or Air Force of the Government of India, on any superior officer being in the execution of his office, shall, if such assault be committed in consequence of that abetment be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever abets an assault by an officer, soldier, sailor or airman, in the Army, Navy or Air Force of the Government of India, on any superior officer being in the execution of his office, shall, if such assault be committed in consequence of that abetment be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 162. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 162 is the complete current-law heading for Abetment of such assault, if assault committed. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Mutiny, desertion, insubordination, and wearing a service garb.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 162. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 162.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 162 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 162 (Abetment of such assault, if assault committed).",
+      "steps": [
+        "Introduce BNS s. 162 and Chapter VIII — Of Offences Relating to the Army, Navy and Air Force.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 162."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 162 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 162, Abetment of such assault, if assault committed.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 162: Abetment of such assault, if assault committed.",
+    "First ingredient: Whoever abets an assault by an officer, soldier, sailor or airman, in the Army, Navy or Air Force of the Government of India, on any superior officer being in the execution of his office, shall, if such assault be committed in consequence of that abetment be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 162 — Abetment of such assault, if assault committed. Older books and judgments may still print a historical number (134). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
+
 export default content

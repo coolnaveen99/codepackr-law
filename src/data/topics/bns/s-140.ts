@@ -1,32 +1,145 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 140 (and related kidnapping/abduction provisions): kidnapping from lawful guardianship and other forms. Taking or enticing a minor (or person of unsound mind) out of the keeping of the lawful guardian without consent. Distinct from abduction. Successor structure to IPC ss. 359–363. Aggravated forms (kidnapping for ransom, etc.) have higher sections.',
-  study: `Kidnapping under the BNS retains the classic two forms:\n\n1. Kidnapping from India — conveying a person beyond the limits of India without consent.\n2. Kidnapping from lawful guardianship — taking or enticing a minor (under 16 for male / under 18 for female in the traditional formulation, or as updated in the BNS text) or a person of unsound mind, out of the keeping of the lawful guardian without the guardian’s consent.\n\nAbduction is a distinct concept (compelling by force or inducing by deceitful means to go from any place).\n\nPunishment for the base offence is under the applicable section; aggravated forms (ransom, murder, etc.) carry much higher penalties.\n\nCite the applicable BNS kidnapping section for post-1 July 2024 acts. Always check the current age thresholds in the statutory text.`,
-  sections: [
-    { id: 's-140-m1', title: 'Provenance', order: 1, content: ['Successor structure to IPC ss. 359–363. Kidnapping from India / from lawful guardianship.'] },
-    { id: 's-140-m2', title: 'Forms', order: 2, content: ['From India; from lawful guardianship (minor / unsound mind). Distinct from abduction.'] },
-    { id: 's-140-m3', title: 'Ingredients (guardianship form)', order: 3, content: ['(1) Taking or enticing. (2) Minor or person of unsound mind. (3) Out of keeping of lawful guardian. (4) Without guardian’s consent.'] },
-    { id: 's-140-m4', title: 'Evidence', order: 4, content: ['Age; guardianship; taking/enticing; absence of consent.'] },
-    { id: 's-140-m5', title: 'Procedure', order: 5, content: ['Forum as per BNSS Schedule; aggravated forms (ransom etc.) are Sessions cases.'] },
+  "study": "Introduction and meaning\nKidnapping or abducting in order to murder or for ransom, etc. BNS restatement of IPC 364 / 364A. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 364 / 364A. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 140 is the rule on “Kidnapping or abducting in order to murder or for ransom, etc”. The section provides that (1) Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 140 exists so that “Kidnapping or abducting in order to murder or for ransom, etc” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n140. (1) Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine\n\n(2) Whoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine\n\n(3) Whoever kidnaps or abducts any person with intent to cause that person to be secretly and wrongfully confined, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\n(4) Whoever kidnaps or abducts any person in order that such person may be subjected, or may be so disposed of as to be put in danger of being subjected to grievous hurt, or slavery, or to the unnatural lust of any person, or knowing it to be likely that such person will be so subjected or disposed of, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nEssential ingredients\n1. (1) Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine\n2. (2) Whoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine\n3. (3) Whoever kidnaps or abducts any person with intent to cause that person to be secretly and wrongfully confined, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n4. (4) Whoever kidnaps or abducts any person in order that such person may be subjected, or may be so disposed of as to be put in danger of being subjected to grievous hurt, or slavery, or to the unnatural lust of any person, or knowing it to be likely that such person will be so subjected or disposed of, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nStatutory illustrations\nIllustration (a). A kidnaps Z from India, intending or knowing it to be likely that Z may be sacrificed to an idol. A has committed the offence defined in this section\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 140 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (b). A forcibly carries or entices B away from his home in order that B may be murdered. A has committed the offence defined in this section\n\nExam use: quote illustration (b), then write which ingredient of BNS s. 140 it proves. Copying the illustration without that mapping sentence does not score.",
+  "glance": "BNS s. 140 — Kidnapping or abducting in order to murder or for ransom, etc.",
+  "sections": [
+    {
+      "id": "bns-140-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "140. (1) Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine",
+        "(2) Whoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine",
+        "(3) Whoever kidnaps or abducts any person with intent to cause that person to be secretly and wrongfully confined, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine",
+        "(4) Whoever kidnaps or abducts any person in order that such person may be subjected, or may be so disposed of as to be put in danger of being subjected to grievous hurt, or slavery, or to the unnatural lust of any person, or knowing it to be likely that such person will be so subjected or disposed of, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-140-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine",
+        "(2) Whoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine",
+        "(3) Whoever kidnaps or abducts any person with intent to cause that person to be secretly and wrongfully confined, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine",
+        "(4) Whoever kidnaps or abducts any person in order that such person may be subjected, or may be so disposed of as to be put in danger of being subjected to grievous hurt, or slavery, or to the unnatural lust of any person, or knowing it to be likely that such person will be so subjected or disposed of, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-140-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "(a) A kidnaps Z from India, intending or knowing it to be likely that Z may be sacrificed to an idol. A has committed the offence defined in this section",
+        "(b) A forcibly carries or entices B away from his home in order that B may be murdered. A has committed the offence defined in this section"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-140', section: 's. 140', title: 'Kidnapping' }],
-  examples: [
-    { id: 's-140-ex1', title: 'Taking a minor from guardian', illustrationType: 'practical', description: 'A takes a 12-year-old from the custody of the lawful guardian without consent. Kidnapping from lawful guardianship is made out.' },
-    { id: 's-140-ex2', title: 'Adult with free consent', illustrationType: 'fail-scenario', description: 'An adult goes voluntarily with another person. Neither kidnapping from guardianship nor (without force/deceit) abduction is made out.' },
+  "examples": [
+    {
+      "id": "bns-140-ex-1",
+      "title": "Illustration (a)",
+      "description": "A kidnaps Z from India, intending or knowing it to be likely that Z may be sacrificed to an idol. A has committed the offence defined in this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 140 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-140-ex-2",
+      "title": "Illustration (b)",
+      "description": "A forcibly carries or entices B away from his home in order that B may be murdered. A has committed the offence defined in this section\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 140 — which fact proves which element, and what the legal result is."
+    }
   ],
-  hypotheticals: [{ id: 's-140-hypo', title: 'Kidnapping from guardianship', facts: 'Minor is taken from parent’s custody without consent.', question: 'Is kidnapping made out?', applicableLaw: 'BNS kidnapping provisions.', analysis: 'Taking a minor out of lawful guardianship without consent fits the guardianship form.', conclusion: 'Kidnapping established.' }],
-  distinctions: [{ id: 's-140-dist', title: 'Kidnapping vs Abduction', left: 'Kidnapping', right: 'Abduction', rows: [{ point: 'Focus', left: 'From India or from lawful guardianship (age/unsound mind)', right: 'Force or deceit inducing a person to go from any place' }] }],
-  misconceptions: [{ id: 's-140-trap', trap: 'Any taking of a person is kidnapping.', correction: 'Kidnapping has specific forms (from India / from lawful guardianship). Other forced or deceitful takings may be abduction, not kidnapping.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-140-brief', draftingCategory: 'brief', question: 'Outline kidnapping under the BNS.', answer: 'Kidnapping has two main forms: from India, and from lawful guardianship (taking or enticing a minor or person of unsound mind out of the guardian’s keeping without consent). It is distinct from abduction (force or deceit).', explanation: 'Short note.' },
-    { id: 's-140-sub', draftingCategory: 'submissions', question: 'Submissions on kidnapping.', answer: 'I. Form (India / guardianship). II. Ingredients. III. Distinction from abduction. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-140-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "(a) A kidnaps Z from India, intending or knowing it to be likely that Z may be sacrificed to an idol. A has committed the offence defined in this section",
+      "question": "Whether BNS s. 140 (Kidnapping or abducting in order to murder or for ransom, etc) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 140. Chapter VI — Of Offences Affecting the Human Body. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 140 (Kidnapping or abducting in order to murder or for ransom, etc), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine\n   (2) (2) Whoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine\n   (3) (3) Whoever kidnaps or abducts any person with intent to cause that person to be secretly and wrongfully confined, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n   (4) (4) Whoever kidnaps or abducts any person in order that such person may be subjected, or may be so disposed of as to be put in danger of being subjected to grievous hurt, or slavery, or to the unnatural lust of any person, or knowing it to be likely that such person will be so subjected or disposed of, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 140 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 140 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 140. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS kidnapping provisions', 'BNS abduction provisions', 'IPC ss. 359–363 (historical)'],
-  examTips: ['Always distinguish kidnapping from abduction.', 'Check the current age thresholds in the BNS text.'],
-  revisionPoints: ['Kidnapping: from India or from lawful guardianship.', 'Abduction: force or deceit.', 'Aggravated forms (ransom etc.) have higher sections.'],
-  relatedTopics: ['s-28', 's-2', 's-64'],
+  "misconceptions": [
+    {
+      "id": "bns-140-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 140."
+    },
+    {
+      "id": "bns-140-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-140-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-140-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 140 (Kidnapping or abducting in order to murder or for ransom, etc)",
+      "answer": "Introduction. BNS s. 140 deals with Kidnapping or abducting in order to murder or for ransom, etc. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Kidnapping or abducting in order to murder or for ransom, etc. BNS restatement of IPC 364 / 364A. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 364 / 364A. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 140 is the rule on “Kidnapping or abducting in order to murder or for ransom, etc”. The section provides that (1) Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine\n2. (2) Whoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine\n3. (3) Whoever kidnaps or abducts any person with intent to cause that person to be secretly and wrongfully confined, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n4. (4) Whoever kidnaps or abducts any person in order that such person may be subjected, or may be so disposed of as to be put in danger of being subjected to grievous hurt, or slavery, or to the unnatural lust of any person, or knowing it to be likely that such person will be so subjected or disposed of, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A kidnaps Z from India, intending or knowing it to be likely that Z may be sacrificed to an idol. A has committed the offence defined in this section\n\nLimitations. Apply only the conditions written in s. 140. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 140 is the complete current-law heading for Kidnapping or abducting in order to murder or for ransom, etc. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-140-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 140 (Kidnapping or abducting in order to murder or for ransom, etc) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 140 deals with Kidnapping or abducting in order to murder or for ransom, etc. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Kidnapping or abducting in order to murder or for ransom, etc. BNS restatement of IPC 364 / 364A. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 364 / 364A. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 140 is the rule on “Kidnapping or abducting in order to murder or for ransom, etc”. The section provides that (1) Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine\n2. (2) Whoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine\n3. (3) Whoever kidnaps or abducts any person with intent to cause that person to be secretly and wrongfully confined, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n4. (4) Whoever kidnaps or abducts any person in order that such person may be subjected, or may be so disposed of as to be put in danger of being subjected to grievous hurt, or slavery, or to the unnatural lust of any person, or knowing it to be likely that such person will be so subjected or disposed of, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A kidnaps Z from India, intending or knowing it to be likely that Z may be sacrificed to an idol. A has committed the offence defined in this section\n\nLimitations. Apply only the conditions written in s. 140. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 140 is the complete current-law heading for Kidnapping or abducting in order to murder or for ransom, etc. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second statutory illustration. Illustration (b): (b) A forcibly carries or entices B away from his home in order that B may be murdered. A has committed the offence defined in this section Contrast it with illustration (a). The legal weight lies in the contrast.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 140. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 140.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 140 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 140 (Kidnapping or abducting in order to murder or for ransom, etc).",
+      "steps": [
+        "Introduce BNS s. 140 and Chapter VI — Of Offences Affecting the Human Body.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 140."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 140 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second statutory illustration and contrast it with the first.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 140, Kidnapping or abducting in order to murder or for ransom, etc.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 140: Kidnapping or abducting in order to murder or for ransom, etc.",
+    "First ingredient: (1) Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine",
+    "2 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 140 — Kidnapping or abducting in order to murder or for ransom, etc. Older books and judgments may still print a historical number (364 / 364A). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

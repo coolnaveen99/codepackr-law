@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Partnership Act ss. 70–74 — Supplemental, Public Notice and Savings is a Senior Counsel-level treatment of s. 70–74 under the Indian Partnership Act, 1932. It connects statutory text, doctrine, authority, proof, procedure and remedies.",
   "sections": [
     {
@@ -131,4 +133,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Registration/procedural consequence",
     "Authority verification"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Malicious prosecution requires wrongful institution or continuation of proceedings, favourable termination, absence of reasonable and probable cause, malice and actionable damage. Abuse of process instead concerns misuse of lawful process for an improper collateral purpose.",
   "study": "Malicious prosecution requires wrongful institution or continuation of proceedings, favourable termination, absence of reasonable and probable cause, malice and actionable damage. Abuse of process instead concerns misuse of lawful process for an improper collateral purpose.\\n\\nThe tort balances access to justice against protection from baseless proceedings. Indian courts do not infer malice merely because a prior proceeding ended favourably. The cause of action ordinarily matures after favourable termination. Abuse of process focuses on collateral misuse rather than simply the merits of the original case.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

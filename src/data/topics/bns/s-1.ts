@@ -1,299 +1,165 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance:
-    'Section 1 names the Act, fixes commencement (1 July 2024 except s. 106(2) by S.O. 850(E)), and sets intra- and extra-territorial reach — including offences targeting a computer resource located in India. Date of offence, not FIR date, decides whether BNS or IPC applies.',
-
-  study: `Topic at a glance
-Section 1 is the gateway provision of the Bharatiya Nyaya Sanhita, 2023 (Act 45 of 2023). It does three things: (1) gives the short title; (2) empowers the Central Government to appoint the commencement date (and different dates for different provisions); and (3) defines the territorial and extra-territorial application of the Sanhita.
-
-Commencement (authoritative)
-By Notification S.O. 850(E) dated 23 February 2024 (Ministry of Home Affairs), the Central Government appointed 1 July 2024 as the date on which the provisions of the Sanhita, except sub-section (2) of section 106, came into force. Section 106(2) (hit-and-run causing death and fleeing without reporting) remains unnotified and is not law.
-
-Intra-territorial application — s. 1(3)
-Every person is liable to punishment under this Sanhita (and not otherwise) for every act or omission contrary to its provisions of which he is guilty within India. This is the ordinary territorial principle.
-
-Extra-territorial application — ss. 1(4) & 1(5)
-Subsection (4) covers any person who, by any law for the time being in force in India, is liable to be tried for an offence committed beyond India; such a person is dealt with under the Sanhita as if the act had been committed within India.
-
-Subsection (5) expressly extends the Sanhita to any offence committed by:
-(a) any citizen of India in any place without and beyond India;
-(b) any person on any ship or aircraft registered in India wherever it may be; and
-(c) any person in any place without and beyond India committing an offence targeting a computer resource located in India.
-
-The Explanation clarifies that “offence” includes every act committed outside India which, if committed in India, would be punishable under the Sanhita. The statutory Illustration (citizen A commits murder outside India and can be tried wherever found in India) restates the classic nationality principle.
-
-Clause (c) is the cyber-jurisdiction head. “Computer resource” takes its meaning from section 2(1)(k) of the Information Technology Act, 2000 (computer, computer system, network, data, database or software). It must be read with section 75 of the IT Act (extra-territorial application of that Act). Nationality of the offender and the place from which the attack is launched are irrelevant if the target resource is located in India.
-
-Savings — s. 1(6)
-Nothing in the Sanhita affects special or local laws, or Acts punishing mutiny and desertion of officers, soldiers, sailors or airmen in the service of the Government of India.
-
-Date-of-offence rule (critical)
-Substantive criminal liability is governed by the law in force on the date the offence was committed (Article 20(1) of the Constitution + section 358 BNS savings). An offence committed on or after 1 July 2024 is charged under BNS; an offence committed before that date remains under the IPC (read with the savings clause). The date of the FIR, charge-sheet or trial is irrelevant.
-
-Relationship with special laws
-Section 1(6) preserves special and local laws. Where a special statute (e.g., NDPS Act, POCSO, IT Act, UAPA) contains its own substantive offences and procedure, those provisions continue to operate; the BNS supplies the residual general criminal law.
-
-Educational note
-Always open any BNS answer with the correct current-law citation and the commencement fact. Never write “IPC is repealed so BNS applies to everything”.`,
-
-  sections: [
+  "study": "Introduction and meaning\nSection 1 names the Sanhita, lets the Centre notify different commencement dates, and sets extra-territorial reach — every person for acts in India, Indian citizens abroad, and anyone targeting a computer resource in India.\nIn student language: BNS s. 1 is the rule on “Short title, commencement and application”. The section provides that (1) This Act may be called the Bharatiya Nyaya Sanhita, 2023. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 1 exists so that “Short title, commencement and application” has a closed legal test in Chapter I — Preliminary. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Name, commencement, extra-territorial reach, the dictionary, and how the Sanhita is read — including common intention in s. 3(5).\n\nThe provision in detail\n1. (1) This Act may be called the Bharatiya Nyaya Sanhita, 2023\n\n(2) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint, and different dates may be appointed for different provisions of this Sanhita\n\n(3) Every person shall be liable to punishment under this Sanhita and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within India\n\n(4) Any person liable, by any law for the time being in force in India, to be tried for an offence committed beyond India shall be dealt with according to the provisions of this Sanhita for any act committed beyond India in the same manner as if such act had been committed within India\n\n(5) The provisions of this Sanhita shall also apply to any offence committed by—\n\n(a) any citizen of India in any place without and beyond India;\n\n(b) any person on any ship or aircraft registered in India wherever it may be;\n\n(c) any person in any place without and beyond India committing offence targeting a computer resource located in India\n\n(6) Nothing in this Sanhita shall affect the provisions of any Act for punishing mutiny and desertion of officers, soldiers, sailors or airmen in the service of the Government of India or the provisions of any special or local law\n\nDefinitions and key terms\n“offence” — every act committed outside India which, if committed in India, would be punishable under this Sanhita Illustration A, who is a citizen of India, commits a murder in any place without and beyond India.\n\nEssential ingredients\n1. (1) This Act may be called the Bharatiya Nyaya Sanhita, 2023\n2. (2) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint, and different dates may be appointed for different provisions of this Sanhita\n3. (3) Every person shall be liable to punishment under this Sanhita and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within India\n4. (4) Any person liable, by any law for the time being in force in India, to be tried for an offence committed beyond India shall be dealt with according to the provisions of this Sanhita for any act committed beyond India in the same manner as if such act had been committed within India\n5. (5) The provisions of this Sanhita shall also apply to any offence committed by—\n6. (a) any citizen of India in any place without and beyond India;\n7. (b) any person on any ship or aircraft registered in India wherever it may be;\n8. (c) any person in any place without and beyond India committing offence targeting a computer resource located in India\n9. (6) Nothing in this Sanhita shall affect the provisions of any Act for punishing mutiny and desertion of officers, soldiers, sailors or airmen in the service of the Government of India or the provisions of any special or local law\n\nStatutory illustrations\nIllustration (a). A, who is a citizen of India, commits a murder in any place without and beyond India. He can be tried and convicted of murder in any place in India in which he may be found\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 1 it proves. Copying the illustration without that mapping sentence does not score.\n\nExplanations\nExplanation.—In this section, the word “offence” includes every act committed outside India which, if committed in India, would be punishable under this Sanhita",
+  "glance": "BNS s. 1 — Short title, commencement and application.",
+  "sections": [
     {
-      id: 's-1-module-1',
-      title: 'Provenance, Legislative Objective & Doctrinal Foundations',
-      order: 1,
-      content: [
-        'The Bharatiya Nyaya Sanhita, 2023 replaces the Indian Penal Code, 1860. Section 1 is the modern restatement of the short-title, commencement and application clauses that lived in IPC sections 1–4 (with the cyber-resource head added by the 2008 IT Act amendment and carried forward).',
-        'Legislative objective: (a) give a clean short title; (b) allow staged or selective commencement; (c) retain and clarify the classic extra-territorial heads (nationality, flag-state, and cyber-target); (d) preserve special and local laws.',
-        'Doctrinal foundation rests on the territoriality principle tempered by nationality jurisdiction, flag-state jurisdiction, and effects/target jurisdiction for computer resources. Article 20(1) of the Constitution continues to control the temporal application of any new criminal law.',
-      ],
+      "id": "bns-1-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "1. (1) This Act may be called the Bharatiya Nyaya Sanhita, 2023",
+        "(2) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint, and different dates may be appointed for different provisions of this Sanhita",
+        "(3) Every person shall be liable to punishment under this Sanhita and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within India",
+        "(4) Any person liable, by any law for the time being in force in India, to be tried for an offence committed beyond India shall be dealt with according to the provisions of this Sanhita for any act committed beyond India in the same manner as if such act had been committed within India",
+        "(5) The provisions of this Sanhita shall also apply to any offence committed by—",
+        "(a) any citizen of India in any place without and beyond India;",
+        "(b) any person on any ship or aircraft registered in India wherever it may be;",
+        "(c) any person in any place without and beyond India committing offence targeting a computer resource located in India",
+        "(6) Nothing in this Sanhita shall affect the provisions of any Act for punishing mutiny and desertion of officers, soldiers, sailors or airmen in the service of the Government of India or the provisions of any special or local law"
+      ]
     },
     {
-      id: 's-1-module-2',
-      title: 'Textual Anatomy, Provisos & Statutory Deconstruction',
-      order: 2,
-      content: [
-        'Subsection (1) — Short title: “This Act may be called the Bharatiya Nyaya Sanhita, 2023.”',
-        'Subsection (2) — Commencement power: Central Government may, by Official Gazette notification, appoint the date (or different dates for different provisions). Exercised by S.O. 850(E) dated 23 February 2024 → 1 July 2024 except s. 106(2).',
-        'Subsection (3) — Intra-territorial liability: every person liable under this Sanhita (and not otherwise) for acts/omissions contrary to its provisions of which he is guilty within India.',
-        'Subsection (4) — Persons already triable under existing law for extra-territorial acts: dealt with under the Sanhita as if the act were committed in India.',
-        'Subsection (5) — Three extra-territorial heads: (a) citizen of India anywhere; (b) any person on Indian-registered ship or aircraft anywhere; (c) any person anywhere targeting a computer resource located in India.',
-        'Explanation — “offence” includes acts outside India that would be punishable if done in India.',
-        'Illustration — Citizen A murders outside India; may be tried and convicted in any place in India where he is found.',
-        'Subsection (6) — Savings for mutiny/desertion Acts and for special or local laws.',
-      ],
+      "id": "bns-1-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) This Act may be called the Bharatiya Nyaya Sanhita, 2023",
+        "(2) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint, and different dates may be appointed for different provisions of this Sanhita",
+        "(3) Every person shall be liable to punishment under this Sanhita and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within India",
+        "(4) Any person liable, by any law for the time being in force in India, to be tried for an offence committed beyond India shall be dealt with according to the provisions of this Sanhita for any act committed beyond India in the same manner as if such act had been committed within India",
+        "(5) The provisions of this Sanhita shall also apply to any offence committed by—",
+        "(a) any citizen of India in any place without and beyond India;",
+        "(b) any person on any ship or aircraft registered in India wherever it may be;",
+        "(c) any person in any place without and beyond India committing offence targeting a computer resource located in India",
+        "(6) Nothing in this Sanhita shall affect the provisions of any Act for punishing mutiny and desertion of officers, soldiers, sailors or airmen in the service of the Government of India or the provisions of any special or local law"
+      ]
     },
     {
-      id: 's-1-module-3',
-      title: 'Mandatory Proving Ingredients & Essential Elements',
-      order: 3,
-      content: [
-        'For ordinary territorial liability (s. 1(3)): (i) an act or omission; (ii) contrary to a provision of the Sanhita; (iii) of which the person is guilty; (iv) within India.',
-        'For citizen extra-territorial liability (s. 1(5)(a)): (i) the accused is a citizen of India at the time of the act; (ii) the act is committed outside India; (iii) the act would constitute an offence under the Sanhita if committed in India.',
-        'For ship/aircraft liability (s. 1(5)(b)): (i) the act is committed on a ship or aircraft registered in India; (ii) location of the vessel/aircraft is irrelevant; (iii) the act would be an offence under the Sanhita if committed in India.',
-        'For computer-resource liability (s. 1(5)(c)): (i) the act is committed outside India; (ii) it targets a computer resource located in India; (iii) the act would be an offence under the Sanhita (or the IT Act read with it) if committed in India. Nationality of the offender is irrelevant.',
-        'Temporal element (always): the date of the offence must be on or after 1 July 2024 (except the unnotified s. 106(2)).',
-      ],
+      "id": "bns-1-defs",
+      "title": "Definitions and key terms",
+      "order": 3,
+      "content": [
+        "“offence” — every act committed outside India which, if committed in India, would be punishable under this Sanhita Illustration A, who is a citizen of India, commits a murder in any place without and beyond India."
+      ]
     },
     {
-      id: 's-1-module-4',
-      title: 'Evidentiary Burdens under BSA 2023 (ss. 104–106 & s. 63)',
-      order: 4,
-      content: [
-        'Prosecution bears the burden of proving every ingredient of the substantive offence beyond reasonable doubt (BSA s. 104).',
-        'Where extra-territorial application is invoked, the prosecution must also prove the jurisdictional fact (citizenship, registration of the vessel/aircraft, or location of the computer resource in India) on the same standard.',
-        'Citizenship is a question of fact proved by passport, nationality certificate, or other admissible evidence. Location of a computer resource is proved by server logs, IP evidence, forensic reports, etc., subject to the electronic-evidence certificate under BSA s. 63 where required.',
-        'Once the jurisdictional head is established, the ordinary burden for the substantive offence continues. The accused may raise general exceptions (Chapter III BNS); the burden then shifts to the accused on a preponderance of probabilities (BSA s. 108).',
-      ],
+      "id": "bns-1-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "A, who is a citizen of India, commits a murder in any place without and beyond India. He can be tried and convicted of murder in any place in India in which he may be found"
+      ]
     },
     {
-      id: 's-1-module-5',
-      title: 'Procedural Roadmap, Competent Forum & Limitation Act Checkpoints',
-      order: 5,
-      content: [
-        'Investigation and trial proceed under the Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS). The First Schedule to the BNSS classifies each offence as cognizable/non-cognizable and bailable/non-bailable.',
-        'For extra-territorial offences, the place of trial is governed by BNSS provisions corresponding to the old CrPC ss. 188 / 189 (Central Government sanction may still be required in certain cases; check the specific BNSS section and any special statute).',
-        'Limitation for taking cognizance is governed by BNSS Chapter XXXVI (corresponding to the old CrPC Chapter XXXVI) read with the Limitation Act, 1963 where applicable. Most serious offences have no limitation.',
-        'Preliminary objection of “wrong Code”: if the offence date is before 1 July 2024, the charge under BNS is bad in law (Art. 20(1) + s. 358). Courts routinely frame charges under the correct Code after verification of the date of offence.',
-      ],
-    },
+      "id": "bns-1-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation.—In this section, the word “offence” includes every act committed outside India which, if committed in India, would be punishable under this Sanhita"
+      ]
+    }
   ],
-
-  provisions: [
+  "examples": [
     {
-      actId: 'bns',
-      actName: 'Bharatiya Nyaya Sanhita, 2023',
-      provisionId: 'bns-1',
-      section: 's. 1',
-      title: 'Short title, commencement and application',
-    },
+      "id": "bns-1-ex-1",
+      "title": "Illustration (a)",
+      "description": "A, who is a citizen of India, commits a murder in any place without and beyond India. He can be tried and convicted of murder in any place in India in which he may be found\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 1 — which fact proves which element, and what the legal result is."
+    }
   ],
-
-  examples: [
+  "hypotheticals": [
     {
-      id: 's-1-ill-1',
-      title: 'Illustration 1 — Statutory (citizen extra-territorial)',
-      illustrationType: 'statutory',
-      description:
-        'A, a citizen of India, commits murder in a foreign country. He later returns to India and is found in Mumbai. Under s. 1(5)(a) read with the Explanation and the Illustration, he can be tried and convicted of murder under the BNS in any place in India where he is found. The foreign location of the act is irrelevant once citizenship and the “would-be-offence-in-India” test are satisfied.',
-    },
-    {
-      id: 's-1-ill-2',
-      title: 'Illustration 2 — Boundary / fail scenario (pre-commencement offence)',
-      illustrationType: 'fail-scenario',
-      description:
-        'B commits the act of cheating on 30 June 2024. The FIR is registered on 3 July 2024 and the prosecutor charges BNS s. 318. The charge is legally untenable. The date of the offence is 30 June 2024; the BNS had not yet commenced. Article 20(1) and section 358 BNS require the charge to be framed under the corresponding IPC provision. The FIR date is irrelevant.',
-    },
+      "id": "bns-1-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "A, who is a citizen of India, commits a murder in any place without and beyond India. He can be tried and convicted of murder in any place in India in which he may be found",
+      "question": "Whether BNS s. 1 (Short title, commencement and application) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 1. Chapter I — Preliminary. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 1 (Short title, commencement and application), Chapter I — Preliminary.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) This Act may be called the Bharatiya Nyaya Sanhita, 2023\n   (2) (2) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint, and different dates may be appointed for different provisions of this Sanhita\n   (3) (3) Every person shall be liable to punishment under this Sanhita and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within India\n   (4) (4) Any person liable, by any law for the time being in force in India, to be tried for an offence committed beyond India shall be dealt with according to the provisions of this Sanhita for any act committed beyond India in the same manner as if such act had been committed within India\n   (5) (5) The provisions of this Sanhita shall also apply to any offence committed by—\n   (6) (a) any citizen of India in any place without and beyond India;\n   (7) (b) any person on any ship or aircraft registered in India wherever it may be;\n   (8) (c) any person in any place without and beyond India committing offence targeting a computer resource located in India\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 1 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 1. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-
-  hypotheticals: [
+  "misconceptions": [
     {
-      id: 's-1-hypo',
-      title: 'Chamber Practice Hypothetical — Cyber extra-territorial jurisdiction',
-      facts:
-        'On 15 August 2025 a foreign national operating from a server farm in Singapore launches a phishing campaign that specifically targets bank accounts hosted on servers physically located in Mumbai and Bengaluru. Several Indian depositors lose funds. The accused never set foot in India. The investigating agency registers an FIR under the relevant BNS cheating / computer-related provisions and the IT Act.',
-      question:
-        'Does an Indian court have substantive jurisdiction under the BNS to try the foreign national for the offences?',
-      applicableLaw:
-        'BNS s. 1(5)(c); Explanation to s. 1; IT Act s. 75 and s. 2(1)(k); BNSS investigation and trial provisions; BSA electronic-evidence rules.',
-      analysis:
-        '1. Threshold & Jurisdiction: The act was committed outside India. Clause (c) of s. 1(5) is attracted if the offence targets a computer resource located in India. The bank servers are computer resources located in India.\n2. Ingredient Verification: (i) act outside India — proved; (ii) targeting computer resource in India — proved by server location and phishing logs; (iii) the act would be an offence under the BNS/IT Act if done in India — yes.\n3. Evidentiary Scrutiny: Server logs, IP traces and forensic reports must satisfy BSA s. 63 certificate requirements where electronic records are relied upon.\n4. Defenses & Rebuttal: Nationality of the accused is irrelevant under clause (c). Any claim that “only the IT Act applies” is answered by reading s. 1(5)(c) together with IT Act s. 75; both can operate concurrently for their respective offences.',
-      conclusion:
-        'Indian courts have jurisdiction under BNS s. 1(5)(c). The foreign national can be proceeded against (subject to extradition / mutual legal assistance practicalities). Charge under the appropriate BNS and IT Act sections is maintainable.',
-    },
-  ],
-
-  distinctions: [
-    {
-      id: 's-1-dist-1',
-      title: 'Territorial vs Extra-territorial application',
-      left: 's. 1(3) — Intra-territorial',
-      right: 's. 1(5) — Extra-territorial',
-      rows: [
-        {
-          point: 'Location of act',
-          left: 'Within India',
-          right: 'Outside India',
-        },
-        {
-          point: 'Nationality requirement',
-          left: 'Any person',
-          right: 'Citizen (cl. a); any person on Indian ship/aircraft (cl. b); any person (cl. c)',
-        },
-        {
-          point: 'Key trigger',
-          left: 'Act/omission inside India',
-          right: 'Citizenship / flag / computer resource in India',
-        },
-        {
-          point: 'Consequence',
-          left: 'Ordinary territorial jurisdiction',
-          right: 'Indian courts may try the offence as if committed in India',
-        },
-      ],
-    },
-  ],
-
-  misconceptions: [
-    {
-      id: 's-1-trap-1',
-      trap: 'The entire BNS came into force on 1 July 2024 including s. 106(2).',
-      correction:
-        'S.O. 850(E) expressly excepted sub-section (2) of section 106. That provision (hit-and-run causing death and fleeing) is not in force. Only s. 106(1) operates.',
+      "id": "bns-1-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 1."
     },
     {
-      id: 's-1-trap-2',
-      trap: 'Once the BNS commenced, all pending cases automatically convert to BNS charges.',
-      correction:
-        'No. The date of the offence controls (Art. 20(1) + s. 358). Pre-1 July 2024 offences remain under the IPC.',
+      "id": "bns-1-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
     },
     {
-      id: 's-1-trap-3',
-      trap: 'Only Indian citizens can be tried for offences targeting Indian computer resources.',
-      correction:
-        'Clause (c) of s. 1(5) applies to “any person” irrespective of nationality. The location of the computer resource is the jurisdictional hook.',
-    },
+      "id": "bns-1-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
   ],
-
-  cases: [
+  "questionsAndAnswers": [
     {
-      name: 'Mohamed Sajeed v. State of Kerala',
-      year: 1995,
-      citation: '1995 Cri LJ 3313 (Ker)',
-      court: 'Kerala High Court',
-      holding:
-        'Police can investigate a crime committed by an Indian citizen in a foreign country; prior Central Government sanction is not a pre-condition for investigation under the extra-territorial provisions.',
-      relevance:
-        'Still useful for the investigation stage of s. 1(5)(a) cases. Confirm the current BNSS equivalent of old CrPC s. 188 before citing on sanction.',
-    },
-  ],
-
-  questionsAndAnswers: [
-    {
-      id: 's-1-brief',
-      draftingCategory: 'brief',
-      question:
-        'Provide a structured legal assessment of the commencement and territorial application of the Bharatiya Nyaya Sanhita, 2023 under Section 1.',
-      answer: `I. ISSUE & JURISDICTIONAL THRESHOLD
-Whether the BNS applies to a given set of facts turns on (a) the date of the offence and (b) the location / nationality / target of the act.
-
-II. GOVERNING RULE & STATUTORY ANATOMY
-Section 1(1)–(2): short title and commencement power. S.O. 850(E) fixed 1 July 2024 except s. 106(2).
-Section 1(3): intra-territorial liability.
-Section 1(4)–(5): extra-territorial heads — citizen, Indian ship/aircraft, computer resource located in India.
-Explanation and Illustration clarify the “would-be-offence-in-India” test.
-Section 1(6): savings for special/local laws and mutiny/desertion statutes.
-
-III. APPLICATION TO FACTUAL DISPUTE
-Apply the date-of-offence rule first. Then map the facts to the correct territorial head. Prove the jurisdictional fact (citizenship / registration / location of resource) and then the ingredients of the substantive offence.
-
-IV. CONCLUSION & OPERATIVE ADVICE
-Cite the correct Code (BNS or IPC) according to the date of offence. For post-1 July 2024 extra-territorial cases, expressly plead the applicable clause of s. 1(5). Never assume automatic conversion of pre-commencement offences.`,
-      explanation:
-        'IRAC-structured chamber assessment of the gateway provision.',
+      "id": "bns-1-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 1 (Short title, commencement and application)",
+      "answer": "Introduction. BNS s. 1 deals with Short title, commencement and application. It sits in Chapter I — Preliminary of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Section 1 names the Sanhita, lets the Centre notify different commencement dates, and sets extra-territorial reach — every person for acts in India, Indian citizens abroad, and anyone targeting a computer resource in India.\n\nLegal rule. In student language: BNS s. 1 is the rule on “Short title, commencement and application”. The section provides that (1) This Act may be called the Bharatiya Nyaya Sanhita, 2023. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) This Act may be called the Bharatiya Nyaya Sanhita, 2023\n2. (2) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint, and different dates may be appointed for different provisions of this Sanhita\n3. (3) Every person shall be liable to punishment under this Sanhita and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within India\n4. (4) Any person liable, by any law for the time being in force in India, to be tried for an offence committed beyond India shall be dealt with according to the provisions of this Sanhita for any act committed beyond India in the same manner as if such act had been committed within India\n5. (5) The provisions of this Sanhita shall also apply to any offence committed by—\n6. (a) any citizen of India in any place without and beyond India;\n7. (b) any person on any ship or aircraft registered in India wherever it may be;\n8. (c) any person in any place without and beyond India committing offence targeting a computer resource located in India\n\nDefinitions. The core statutory definitions must be established:\n“offence” every act committed outside India which, if committed in India, would be punishable under this Sanhita Illustration A, who is a citizen of India, commits a murder in any place without and beyond India.\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): A, who is a citizen of India, commits a murder in any place without and beyond India. He can be tried and convicted of murder in any place in India in which he may be found\n\nExplanations. Explanation.—In this section, the word “offence” includes every act committed outside India which, if committed in India, would be punishable under this Sanhita An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 1. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 1 is the complete current-law heading for Short title, commencement and application. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
     },
     {
-      id: 's-1-submissions',
-      draftingCategory: 'submissions',
-      question:
-        'Draft comprehensive Written Submissions on the short title, commencement and application of the Bharatiya Nyaya Sanhita, 2023 (Section 1), addressing temporal application, extra-territorial reach and the computer-resource head.',
-      answer: `I. STATEMENT OF FACTS & PROCEDURAL PROVENANCE
-[Insert the material facts — date of alleged offence, place of act, nationality of accused, location of any computer resource, stage of proceedings.]
-
-II. STATUTORY SCHEME & JURISPRUDENTIAL INTENT
-Section 1 is the gateway. It replaces the scattered short-title and extra-territorial clauses of the IPC. The cyber-resource head (s. 1(5)(c)) continues the 2008 amendment and must be read with IT Act s. 75. Commencement was fixed by S.O. 850(E) with a deliberate exception for s. 106(2).
-
-III. SATISFACTION OF MANDATORY PROVING INGREDIENTS
-(a) Temporal: offence date ≥ 1 July 2024 (except 106(2)).
-(b) Territorial head: map to s. 1(3) or the appropriate clause of s. 1(5).
-(c) Substantive offence ingredients under the charged BNS section.
-(d) Electronic evidence (if any) compliant with BSA s. 63.
-
-IV. JUDICIAL PRECEDENTS & RATIO DECIDENDI
-Mohamed Sajeed (investigation of extra-territorial offence by citizen). Article 20(1) line of authority on non-retrospective application of criminal law. Any later authority on s. 1(5)(c) cyber jurisdiction should be cited if available.
-
-V. REBUTTAL OF ADVERSARY'S CONTENTIONS & PRELIMINARY OBJECTIONS
-“Wrong Code” objection — answer with date of offence + Art. 20(1) + s. 358.
-“No jurisdiction because foreign national / foreign server” — answer with s. 1(5)(c) and location of the computer resource.
-“s. 106(2) is in force” — answer with the plain text of S.O. 850(E).
-
-VI. PRAYER / RELIEF SOUGHT
-[Frame the appropriate prayer — maintainability of charge, framing under correct section, or discharge on pure question of law if the temporal or territorial head fails.]`,
-      explanation:
-        'Senior Counsel standard written submissions covering every operational facet of s. 1.',
+      "id": "bns-1-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 1 (Short title, commencement and application) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 1 deals with Short title, commencement and application. It sits in Chapter I — Preliminary of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Section 1 names the Sanhita, lets the Centre notify different commencement dates, and sets extra-territorial reach — every person for acts in India, Indian citizens abroad, and anyone targeting a computer resource in India.\n\nLegal rule. In student language: BNS s. 1 is the rule on “Short title, commencement and application”. The section provides that (1) This Act may be called the Bharatiya Nyaya Sanhita, 2023. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) This Act may be called the Bharatiya Nyaya Sanhita, 2023\n2. (2) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint, and different dates may be appointed for different provisions of this Sanhita\n3. (3) Every person shall be liable to punishment under this Sanhita and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within India\n4. (4) Any person liable, by any law for the time being in force in India, to be tried for an offence committed beyond India shall be dealt with according to the provisions of this Sanhita for any act committed beyond India in the same manner as if such act had been committed within India\n5. (5) The provisions of this Sanhita shall also apply to any offence committed by—\n6. (a) any citizen of India in any place without and beyond India;\n7. (b) any person on any ship or aircraft registered in India wherever it may be;\n8. (c) any person in any place without and beyond India committing offence targeting a computer resource located in India\n\nDefinitions. The core statutory definitions must be established:\n“offence” every act committed outside India which, if committed in India, would be punishable under this Sanhita Illustration A, who is a citizen of India, commits a murder in any place without and beyond India.\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): A, who is a citizen of India, commits a murder in any place without and beyond India. He can be tried and convicted of murder in any place in India in which he may be found\n\nExplanations. Explanation.—In this section, the word “offence” includes every act committed outside India which, if committed in India, would be punishable under this Sanhita An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 1. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 1 is the complete current-law heading for Short title, commencement and application. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Name, commencement, extra-territorial reach, the dictionary, and how the Sanhita is read — including common intention in s. 3(5).. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 1. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 1.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 1 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not write “in force in full on 1 July 2024”. Section 106(2) was excluded from that notification."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 1 (Short title, commencement and application).",
+      "steps": [
+        "Introduce BNS s. 1 and Chapter I — Preliminary.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 1."
+      ]
     },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 1 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
   ],
-
-  bareActPointers: [
-    'BNS s. 1 (entire)',
-    'S.O. 850(E) dated 23 February 2024 (commencement)',
-    'BNS s. 106(2) (not in force)',
-    'BNS s. 358 (repeal and savings)',
-    'IT Act s. 75 & s. 2(1)(k) (computer resource)',
-    'Constitution Art. 20(1)',
+  "answerSkeleton": [
+    "Introduction — BNS s. 1, Short title, commencement and application.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
   ],
-
-  examTips: [
-    'Always state the exact commencement fact: 1 July 2024 except s. 106(2).',
-    'Never convert a pre-1 July 2024 offence to a BNS charge — Art. 20(1) is absolute.',
-    'For cyber cases, expressly plead s. 1(5)(c) and the location of the computer resource.',
+  "revisionPoints": [
+    "BNS s. 1: Short title, commencement and application.",
+    "First ingredient: (1) This Act may be called the Bharatiya Nyaya Sanhita, 2023",
+    "1 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 1 — Short title, commencement and application. Older books and judgments may still print a historical number (1–4). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
   ],
-
-  revisionPoints: [
-    'Commencement: 1 July 2024 except s. 106(2) (S.O. 850(E)).',
-    'Three extra-territorial heads: citizen / Indian ship-aircraft / computer resource in India.',
-    'Date of offence (not FIR) decides BNS vs IPC.',
-    's. 1(6) saves special and local laws.',
-  ],
-
-  relatedTopics: [
-    'general-explanations',
-    's-2',
-    's-3',
-    's-106',
-    's-358',
-    'bns-ipc-map',
-  ],
+  "relatedTopics": []
 }
 
 export default content

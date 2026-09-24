@@ -1,32 +1,147 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 351: criminal intimidation — threatening another with injury to person, reputation, or property, or to the person/reputation of anyone in whom that person is interested, with intent to cause alarm or to cause that person to do an act he is not legally bound to do or omit an act he is entitled to do. Successor to IPC s. 503/506. Aggravated forms (threat of death, grievous hurt, etc.) carry higher punishment.',
-  study: `Criminal intimidation under the BNS:\n\nWhoever threatens another with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation.\n\nKey points\n• Threat of injury to person, reputation, or property (of the victim or someone in whom the victim is interested).\n• Intent to cause alarm, or to compel an act/omission.\n• Aggravated form when the threat is to cause death, grievous hurt, destruction of property by fire, etc.\n\nCite the applicable BNS sections for post-1 July 2024 acts. Distinguish from extortion (which requires inducement to deliver property under fear).`,
-  sections: [
-    { id: 's-351-m1', title: 'Provenance', order: 1, content: ['Successor to IPC ss. 503/506. Threat with intent to alarm or compel.'] },
-    { id: 's-351-m2', title: 'Definition', order: 2, content: ['Threat of injury to person/reputation/property; intent to cause alarm or to compel act/omission.'] },
-    { id: 's-351-m3', title: 'Ingredients', order: 3, content: ['(1) Threat of injury of the specified kind. (2) Intent to cause alarm or to cause the person to do/omit something.'] },
-    { id: 's-351-m4', title: 'Aggravated form', order: 4, content: ['Threat to cause death, grievous hurt, destruction of property by fire, etc. — higher punishment.'] },
-    { id: 's-351-m5', title: 'Procedure', order: 5, content: ['Forum per BNSS Schedule; often bailable in simple form.'] },
+  "study": "Introduction and meaning\nCriminal intimidation (old 503/506): threatening another with injury to person, reputation or property — or to the person/reputation of anyone the other is interested in — with intent to cause alarm, or to make the person do something they are not legally bound to do, or omit something they are legally entitled to do.\nIn student language: BNS s. 351 is the rule on “Criminal intimidation”. The section provides that . (1) Whoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 351 exists so that “Criminal intimidation” has a closed legal test in Chapter XIX — Of Criminal Intimidation, Insult, Annoyance, Defamation, etc.. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Threats, insult, public mischief, drunken misconduct, defamation.\n\nThe provision in detail\n351.. (1) Whoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation\n\n(2) Whoever commits the offence of criminal intimidation shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both\n\n(3) Whoever commits the offence of criminal intimidation by threatening to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both\n\n(4) Whoever commits the offence of criminal intimidation by an anonymous communication, or having taken precaution to conceal the name or abode of the person from whom the threat comes, shall be punished with imprisonment of either description for a term which may extend to two years, in addition to the punishment provided for the offence under sub-section (1)\n\nEssential ingredients\n1. (1) Whoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation\n2. (2) Whoever commits the offence of criminal intimidation shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both\n3. (3) Whoever commits the offence of criminal intimidation by threatening to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both\n4. (4) Whoever commits the offence of criminal intimidation by an anonymous communication, or having taken precaution to conceal the name or abode of the person from whom the threat comes, shall be punished with imprisonment of either description for a term which may extend to two years, in addition to the punishment provided for the offence under sub-section\n\nPunishment / legal consequence\nUp to 2 years, or fine, or both; death-threat band up to 7 years.\n\nStatutory illustrations\nIllustration (a). A, for the purpose of inducing B to resist from prosecuting a civil suit, threatens to burn B’s house. A is guilty of criminal intimidation\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 351 it proves. Copying the illustration without that mapping sentence does not score.\n\nExplanations\nExplanation.—A threat to injure the reputation of any deceased person in whom the person threatened is interested, is within this section",
+  "glance": "BNS s. 351 — Criminal intimidation.",
+  "sections": [
+    {
+      "id": "bns-351-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "351.. (1) Whoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation",
+        "(2) Whoever commits the offence of criminal intimidation shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both",
+        "(3) Whoever commits the offence of criminal intimidation by threatening to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both",
+        "(4) Whoever commits the offence of criminal intimidation by an anonymous communication, or having taken precaution to conceal the name or abode of the person from whom the threat comes, shall be punished with imprisonment of either description for a term which may extend to two years, in addition to the punishment provided for the offence under sub-section (1)"
+      ]
+    },
+    {
+      "id": "bns-351-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Whoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation",
+        "(2) Whoever commits the offence of criminal intimidation shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both",
+        "(3) Whoever commits the offence of criminal intimidation by threatening to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both",
+        "(4) Whoever commits the offence of criminal intimidation by an anonymous communication, or having taken precaution to conceal the name or abode of the person from whom the threat comes, shall be punished with imprisonment of either description for a term which may extend to two years, in addition to the punishment provided for the offence under sub-section"
+      ]
+    },
+    {
+      "id": "bns-351-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "A, for the purpose of inducing B to resist from prosecuting a civil suit, threatens to burn B’s house. A is guilty of criminal intimidation"
+      ]
+    },
+    {
+      "id": "bns-351-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation.—A threat to injure the reputation of any deceased person in whom the person threatened is interested, is within this section"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-351', section: 's. 351', title: 'Criminal intimidation' }],
-  examples: [
-    { id: 's-351-ex1', title: 'Threat to compel', illustrationType: 'practical', description: 'A threatens to harm B’s reputation unless B withdraws a complaint. Criminal intimidation is made out.' },
-    { id: 's-351-ex2', title: 'Extortion instead', illustrationType: 'fail-scenario', description: 'A threatens injury and thereby induces B to deliver money. That is extortion (s. 308), which may include intimidation as a component but is a distinct offence focused on delivery of property.' },
+  "examples": [
+    {
+      "id": "bns-351-ex-1",
+      "title": "Illustration (a)",
+      "description": "A, for the purpose of inducing B to resist from prosecuting a civil suit, threatens to burn B’s house. A is guilty of criminal intimidation\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 351 — which fact proves which element, and what the legal result is."
+    }
   ],
-  hypotheticals: [{ id: 's-351-hypo', title: 'Intimidation', facts: 'Accused threatens to cause grievous hurt unless the victim stays silent.', question: 'Simple or aggravated criminal intimidation?', applicableLaw: 'BNS criminal intimidation provisions.', analysis: 'Threat of grievous hurt falls within the aggravated form.', conclusion: 'Aggravated criminal intimidation.' }],
-  distinctions: [{ id: 's-351-dist', title: 'Criminal intimidation vs Extortion', left: 'Criminal intimidation', right: 'Extortion (s. 308)', rows: [{ point: 'Focus', left: 'Threat to alarm or compel act/omission', right: 'Fear of injury inducing delivery of property' }] }],
-  misconceptions: [{ id: 's-351-trap', trap: 'Every threat is criminal intimidation.', correction: 'The threat must be of injury to person, reputation, or property, and with intent to cause alarm or to compel an act/omission. Idle abuse without that intent may not suffice.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-351-brief', draftingCategory: 'brief', question: 'Define criminal intimidation under the BNS.', answer: 'Threatening another with injury to person, reputation, or property (or to someone in whom that person is interested), with intent to cause alarm or to cause that person to do an act he is not bound to do or omit an act he is entitled to do. Aggravated when the threat is of death, grievous hurt, etc.', explanation: 'Short note.' },
-    { id: 's-351-sub', draftingCategory: 'submissions', question: 'Submissions on criminal intimidation.', answer: 'I. Threat of injury. II. Intent to alarm or compel. III. Aggravating form if any. IV. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-351-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "A, for the purpose of inducing B to resist from prosecuting a civil suit, threatens to burn B’s house. A is guilty of criminal intimidation",
+      "question": "Whether BNS s. 351 (Criminal intimidation) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 351. Chapter XIX — Of Criminal Intimidation, Insult, Annoyance, Defamation, etc.. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 351 (Criminal intimidation), Chapter XIX — Of Criminal Intimidation, Insult, Annoyance, Defamation, etc..\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation\n   (2) (2) Whoever commits the offence of criminal intimidation shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both\n   (3) (3) Whoever commits the offence of criminal intimidation by threatening to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both\n   (4) (4) Whoever commits the offence of criminal intimidation by an anonymous communication, or having taken precaution to conceal the name or abode of the person from whom the threat comes, shall be punished with imprisonment of either description for a term which may extend to two years, in addition to the punishment provided for the offence under sub-section\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 351 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 351. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS criminal intimidation provisions', 'BNS s. 308', 'IPC ss. 503/506 (historical)'],
-  examTips: ['Distinguish from extortion (delivery of property).', 'Note the aggravated form for threats of death/GH.'],
-  revisionPoints: ['Threat of injury + intent to alarm or compel = criminal intimidation.', 'Aggravated: threat of death, GH, fire, etc.', 'Extortion requires induced delivery of property.'],
-  relatedTopics: ['s-308', 's-130', 's-64'],
+  "misconceptions": [
+    {
+      "id": "bns-351-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 351."
+    },
+    {
+      "id": "bns-351-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-351-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-351-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 351 (Criminal intimidation)",
+      "answer": "Introduction. BNS s. 351 deals with Criminal intimidation. It sits in Chapter XIX — Of Criminal Intimidation, Insult, Annoyance, Defamation, etc. of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Criminal intimidation (old 503/506): threatening another with injury to person, reputation or property — or to the person/reputation of anyone the other is interested in — with intent to cause alarm, or to make the person do something they are not legally bound to do, or omit something they are legally entitled to do.\n\nLegal rule. In student language: BNS s. 351 is the rule on “Criminal intimidation”. The section provides that . (1) Whoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation\n2. (2) Whoever commits the offence of criminal intimidation shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both\n3. (3) Whoever commits the offence of criminal intimidation by threatening to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both\n4. (4) Whoever commits the offence of criminal intimidation by an anonymous communication, or having taken precaution to conceal the name or abode of the person from whom the threat comes, shall be punished with imprisonment of either description for a term which may extend to two years, in addition to the punishment provided for the offence under sub-section\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): A, for the purpose of inducing B to resist from prosecuting a civil suit, threatens to burn B’s house. A is guilty of criminal intimidation\n\nExplanations. Explanation.—A threat to injure the reputation of any deceased person in whom the person threatened is interested, is within this section An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 351. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Up to 2 years, or fine, or both; death-threat band up to 7 years.\n\nConclusion. BNS s. 351 is the complete current-law heading for Criminal intimidation. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-351-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 351 (Criminal intimidation) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 351 deals with Criminal intimidation. It sits in Chapter XIX — Of Criminal Intimidation, Insult, Annoyance, Defamation, etc. of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Criminal intimidation (old 503/506): threatening another with injury to person, reputation or property — or to the person/reputation of anyone the other is interested in — with intent to cause alarm, or to make the person do something they are not legally bound to do, or omit something they are legally entitled to do.\n\nLegal rule. In student language: BNS s. 351 is the rule on “Criminal intimidation”. The section provides that . (1) Whoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation\n2. (2) Whoever commits the offence of criminal intimidation shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both\n3. (3) Whoever commits the offence of criminal intimidation by threatening to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both\n4. (4) Whoever commits the offence of criminal intimidation by an anonymous communication, or having taken precaution to conceal the name or abode of the person from whom the threat comes, shall be punished with imprisonment of either description for a term which may extend to two years, in addition to the punishment provided for the offence under sub-section\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): A, for the purpose of inducing B to resist from prosecuting a civil suit, threatens to burn B’s house. A is guilty of criminal intimidation\n\nExplanations. Explanation.—A threat to injure the reputation of any deceased person in whom the person threatened is interested, is within this section An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 351. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Up to 2 years, or fine, or both; death-threat band up to 7 years.\n\nConclusion. BNS s. 351 is the complete current-law heading for Criminal intimidation. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Threats, insult, public mischief, drunken misconduct, defamation.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 351. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 351.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 351 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "IPC 506 is not 351’s only ancestor — 503 is the definition. Both live in 351 now."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 351 (Criminal intimidation).",
+      "steps": [
+        "Introduce BNS s. 351 and Chapter XIX — Of Criminal Intimidation, Insult, Annoyance, Defamation, etc..",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 351."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 351 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 351, Criminal intimidation.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 351: Criminal intimidation.",
+    "First ingredient: (1) Whoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation",
+    "1 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 351 — Criminal intimidation. Older books and judgments may still print a historical number (503 / 506). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

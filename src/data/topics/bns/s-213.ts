@@ -1,29 +1,130 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
- glance:'BNS Section 213: Refusing oath or affirmation when duly required by public servant to make it. Historical IPC concordance: 179.',
- study:`Section 213 — Refusing oath or affirmation when duly required by public servant to make it.\n\nApply the enacted BNS wording and every qualification, explanation and proviso. Historical IPC concordance: 179. The historical number is comparative only; for post-1 July 2024 conduct the BNS text governs. Where the offence depends on another statutory process or duty, establish that underlying legal obligation before applying the penal provision.`,
- sections:[
- {id:'s-213-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:['Chapter xiii; cluster: Contempt of lawful authority.','BNS s. 213: Refusing oath or affirmation when duly required by public servant to make it.','Historical IPC concordance: 179.','Treat the provision as an enacted BNS offence. Historical IPC terminology may assist comparative research but does not replace the current statutory ingredients.']},
- {id:'s-213-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:['Identify the protected legal interest, the prohibited act or omission, the required status or duty, and every mental element stated by s. 213.','For liability based on an official act, order, summons, proclamation, document, electronic record or statutory duty, prove the legal source and validity of that underlying requirement.','Separate conduct that merely appears similar from conduct that satisfies the exact statutory threshold.','Apply all provisos, explanations, exceptions and cross-references before reaching a conclusion.']},
- {id:'s-213-m3',title:'Mandatory Proving Ingredients & Issue-Spotting',order:3,content:['Build an ingredient matrix for BNS s. 213: act/omission, circumstance, protected person or object, knowledge/intent where required, and any consequence or causal link expressly required.','Map each ingredient to admissible evidence rather than relying on labels or assumptions.','For public-tranquillity offences, distinguish the charged act from the underlying assembly, disturbance, obstruction or harmony-related circumstance.','For offences involving public servants or lawful authority, test the accused’s legal duty, the authority of the issuing officer and the precise non-compliance alleged.']},
- {id:'s-213-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:['The prosecution ordinarily bears the burden of proving the charged ingredients beyond reasonable doubt, subject to any applicable statutory burden.','Official records, orders, summonses, proclamations, registers and contemporaneous reports should be traced to their competent source and proved according to the BSA 2023.','Electronic records should be preserved with provenance, integrity and the applicable BSA 2023 admissibility requirements; admissibility and evidentiary weight are distinct questions.','Where intent, knowledge or deliberate omission is disputed, assess the surrounding conduct, communications and chronology rather than treating the result alone as proof of mens rea.']},
- {id:'s-213-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:['Check the BNSS First Schedule and the enacted punishment for cognizability, bailability and the competent trial court; do not import an old CrPC classification without verification.','Check FIR/complaint requirements, investigation powers, charge framing and joinder issues applicable to the particular facts.','Where s. 213 depends on a summons, order, proclamation or official duty, verify the procedural validity and service/communication record.','Check BNSS limitation provisions where applicable and identify the date of the alleged conduct.','For pre-1 July 2024 conduct, separately analyze the repeal-and-savings framework and Article 20(1); do not apply a later penal provision retrospectively.']}
- ],
- provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-213',section:'s. 213',title:'Refusing oath or affirmation when duly required by public servant to make it'}],
- examples:[
- {id:'s-213-ex1',title:'Every ingredient established',illustrationType:'practical',description:'The record establishes the statutory act or omission, the required status or duty, the necessary mental element and any expressly required circumstance or consequence.'},
- {id:'s-213-ex2',title:'Underlying legal duty disputed',illustrationType:'fail-scenario',description:'The alleged conduct occurred, but the prosecution cannot establish the lawful order, duty, service, authority or other statutory precondition on which the offence depends.'}],
- hypotheticals:[{id:'s-213-hypo',title:'Chamber problem — BNS s. 213',facts:'The prosecution charges BNS s. 213; the defence accepts the surrounding events but disputes one statutory ingredient and the evidence used to establish it.',question:'Does the proved record satisfy the enacted elements of BNS s. 213?',applicableLaw:'BNS s. 213; connected BNS provisions; BNSS procedure; BSA 2023 evidence rules.',analysis:'Identify the exact statutory words; separate each ingredient; prove any underlying duty, authority, service, status or consequence; test mens rea where required; then verify BNSS classification and procedure.',conclusion:'Criminal liability follows only when every material statutory ingredient is established beyond reasonable doubt on legally admissible evidence.'}],
- distinctions:[{id:'s-213-dist',title:'Current BNS provision vs historical IPC concordance',left:'BNS s. 213',right:'Historical IPC: 179',rows:[{point:'Governing text',left:'Enacted BNS wording',right:'Historical material is comparative only'},{point:'Ingredients',left:'Current statutory words and qualifications',right:'Do not assume identical scope or numbering'},{point:'Procedure',left:'Current BNSS classification and procedure',right:'Old CrPC classification is not automatically controlling'}]}],
- misconceptions:[{id:'s-213-trap',trap:'The historical IPC number is itself the current legal test.',correction:'The enacted BNS provision and its qualifications govern post-commencement conduct.'},{id:'s-213-trap2',trap:'Proof of the surrounding event automatically proves the offence.',correction:'Each statutory ingredient, including any duty, authority, knowledge, intention, service or consequence expressly required, must be established.'}],
- cases:[],
- questionsAndAnswers:[
- {id:'s-213-brief',draftingCategory:'brief',question:'Prepare a structured legal assessment under BNS s. 213.',answer:`I. ISSUE.\nII. STATUTORY RULE.\nIII. INGREDIENT MATRIX.\nIV. EVIDENCE.\nV. PROCEDURE.\nVI. APPLICATION.\nVII. CONCLUSION.`,explanation:'A chamber-ready structure without unverified case citations.'},
- {id:'s-213-submissions',draftingCategory:'submissions',question:'Draft written submissions on BNS s. 213.',answer:`I. STATUTORY SCHEME.\nII. INGREDIENTS NOT IN DISPUTE.\nIII. INGREDIENTS IN DISPUTE.\nIV. EVIDENCE AND BURDEN.\nV. PROCEDURAL OBJECTIONS, IF ANY.\nVI. RELIEF / CONCLUSION.`,explanation:'Separate statutory interpretation, proof and procedure; do not invent authorities.'}],
- bareActPointers:['BNS s. 213 — Refusing oath or affirmation when duly required by public servant to make it','BNS Chapter xiii — Contempt of lawful authority','Historical IPC concordance: 179.','BNSS First Schedule and applicable procedural provisions','BSA 2023 provisions governing relevant documentary/electronic evidence'],
- examTips:['Start with the enacted BNS wording and identify every ingredient.','If liability depends on a legal duty or official process, prove that predicate first.','Separate admissibility from evidentiary weight under the BSA 2023.','Cross-check current BNSS classification and procedure.'],
- revisionPoints:['BNS s. 213: Refusing oath or affirmation when duly required by public servant to make it.','Cluster: Contempt of lawful authority.','Historical IPC concordance: 179.','Current BNS wording governs post-commencement conduct; verify procedural classification under BNSS.'],
- relatedTopics:[]
+  "study": "Introduction and meaning\nRefusing oath or affirmation when duly required by public servant to make it. BNS restatement of IPC 179. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 179. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 213 is the rule on “Refusing oath or affirmation when duly required by public servant to make it”. The section provides that whoever refuses to bind himself by an oath or affirmation to state the truth, when required so to bind himself by a public servant legally competent to require that he shall so bind himself, shall be punished with simple imprisonment for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 213 exists so that “Refusing oath or affirmation when duly required by public servant to make it” has a closed legal test in Chapter XIII — Of Contempts of the Lawful Authority of Public Servants. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Summons, proclamations, false information — and the recast suicide-attempt-to-coerce offence.\n\nThe provision in detail\n213. Whoever refuses to bind himself by an oath or affirmation to state the truth, when required so to bind himself by a public servant legally competent to require that he shall so bind himself, shall be punished with simple imprisonment for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both\n\nEssential ingredients\n1. Whoever refuses to bind himself by an oath or affirmation to state the truth, when required so to bind himself by a public servant legally competent to require that he shall so bind himself, shall be punished with simple imprisonment for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both",
+  "glance": "BNS s. 213 — Refusing oath or affirmation when duly required by public servant to make it.",
+  "sections": [
+    {
+      "id": "bns-213-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "213. Whoever refuses to bind himself by an oath or affirmation to state the truth, when required so to bind himself by a public servant legally competent to require that he shall so bind himself, shall be punished with simple imprisonment for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both"
+      ]
+    },
+    {
+      "id": "bns-213-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever refuses to bind himself by an oath or affirmation to state the truth, when required so to bind himself by a public servant legally competent to require that he shall so bind himself, shall be punished with simple imprisonment for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "bns-213-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Refusing oath or affirmation when duly required by public servant to make it”. Name BNS s. 213, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-213-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 213 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-213-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Refusing oath or affirmation when duly required by public servant to make it” under BNS s. 213 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 213 (Refusing oath or affirmation when duly required by public servant to make it) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 213. Chapter XIII — Of Contempts of the Lawful Authority of Public Servants. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 213 (Refusing oath or affirmation when duly required by public servant to make it), Chapter XIII — Of Contempts of the Lawful Authority of Public Servants.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever refuses to bind himself by an oath or affirmation to state the truth, when required so to bind himself by a public servant legally competent to require that he shall so bind himself, shall be punished with simple imprisonment for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 213 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 213 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 213. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-213-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 213."
+    },
+    {
+      "id": "bns-213-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-213-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-213-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 213 (Refusing oath or affirmation when duly required by public servant to make it)",
+      "answer": "Introduction. BNS s. 213 deals with Refusing oath or affirmation when duly required by public servant to make it. It sits in Chapter XIII — Of Contempts of the Lawful Authority of Public Servants of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Refusing oath or affirmation when duly required by public servant to make it. BNS restatement of IPC 179. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 179. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 213 is the rule on “Refusing oath or affirmation when duly required by public servant to make it”. The section provides that whoever refuses to bind himself by an oath or affirmation to state the truth, when required so to bind himself by a public servant legally competent to require that he shall so bind himself, shall be punished with simple imprisonment for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever refuses to bind himself by an oath or affirmation to state the truth, when required so to bind himself by a public servant legally competent to require that he shall so bind himself, shall be punished with simple imprisonment for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 213. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 213 is the complete current-law heading for Refusing oath or affirmation when duly required by public servant to make it. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-213-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 213 (Refusing oath or affirmation when duly required by public servant to make it) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 213 deals with Refusing oath or affirmation when duly required by public servant to make it. It sits in Chapter XIII — Of Contempts of the Lawful Authority of Public Servants of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Refusing oath or affirmation when duly required by public servant to make it. BNS restatement of IPC 179. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 179. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 213 is the rule on “Refusing oath or affirmation when duly required by public servant to make it”. The section provides that whoever refuses to bind himself by an oath or affirmation to state the truth, when required so to bind himself by a public servant legally competent to require that he shall so bind himself, shall be punished with simple imprisonment for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever refuses to bind himself by an oath or affirmation to state the truth, when required so to bind himself by a public servant legally competent to require that he shall so bind himself, shall be punished with simple imprisonment for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 213. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 213 is the complete current-law heading for Refusing oath or affirmation when duly required by public servant to make it. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Summons, proclamations, false information — and the recast suicide-attempt-to-coerce offence.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 213. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 213.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 213 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 213 (Refusing oath or affirmation when duly required by public servant to make it).",
+      "steps": [
+        "Introduce BNS s. 213 and Chapter XIII — Of Contempts of the Lawful Authority of Public Servants.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 213."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 213 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 213, Refusing oath or affirmation when duly required by public servant to make it.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 213: Refusing oath or affirmation when duly required by public servant to make it.",
+    "First ingredient: Whoever refuses to bind himself by an oath or affirmation to state the truth, when required so to bind himself by a public servant legally competent to require that he shall so bind himself, shall be punished with simple imprisonment for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 213 — Refusing oath or affirmation when duly required by public servant to make it. Older books and judgments may still print a historical number (179). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
+
 export default content

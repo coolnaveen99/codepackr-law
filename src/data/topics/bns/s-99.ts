@@ -1,32 +1,143 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance: 'Section 99 (and related end-of-Chapter-V provisions): remaining child-protection and woman-protection offences that close Chapter V before the homicide block (s. 100 onward). Read with ss. 63–98 for the full Chapter V scheme. Always apply the date-of-offence rule and concurrent special laws (POCSO, Dowry Prohibition Act, etc.).',
-  study: `Chapter V of the BNS groups offences against woman and child before the general body-offence chapters.\n\nBy the end of the chapter (around s. 99), the scheme has covered:\n• Sexual offences (rape definition and punishment, aggravated forms, gang rape)\n• Sexual harassment, stalking, insulting modesty\n• Dowry death and cruelty\n• Child-related offences (hiring to commit offence, exposure/abandonment, procurement)\n• Related protective provisions\n\nWhen analysing any Chapter V offence:\n1. Identify the exact section and ingredients.\n2. Apply s. 2 definitions (especially “child”, “woman”).\n3. Apply s. 28 (consent) where relevant.\n4. Check concurrent special-law liability (POCSO, Dowry Prohibition Act, etc.).\n5. Apply the date-of-offence rule (BNS for ≥ 1 July 2024).\n\nCite the specific BNS section for the charged conduct.`,
-  sections: [
-    { id: 's-99-m1', title: 'Chapter V Overview', order: 1, content: ['Offences against woman and child placed before general body offences. Covers sexual offences, harassment, stalking, dowry death, cruelty, child protection.'] },
-    { id: 's-99-m2', title: 'Cross-Cutting Rules', order: 2, content: ['s. 2 definitions; s. 28 consent; concurrent special laws; date-of-offence rule.'] },
-    { id: 's-99-m3', title: 'High-Yield Sections', order: 3, content: ['63–64 (rape); 66, 70 (aggravated/gang); 75, 77 (harassment/stalking); 80, 85 (dowry death/cruelty); 93, 95 (child exposure/hiring).'] },
-    { id: 's-99-m4', title: 'Evidence Themes', order: 4, content: ['Consent and s. 28; age of child; medical and digital evidence; dying declarations in dowry/suicide cases.'] },
-    { id: 's-99-m5', title: 'Procedure', order: 5, content: ['BNSS victim protections; in-camera trial; Sessions trial for serious forms; concurrent special-law procedure where applicable.'] },
+  "study": "Introduction and meaning\nBuying child for purposes of prostitution, etc. BNS restatement of IPC 373. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 373. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 99 is the rule on “Buying child for purposes of prostitution, etc”. The section provides that whoever buys, hires or otherwise obtains possession of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which shall not be less than seven years but which may extend to fourteen years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 99 exists so that “Buying child for purposes of prostitution, etc” has a closed legal test in Chapter V — Of Offences Against Woman and Child. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.\n\nThe provision in detail\n99. Whoever buys, hires or otherwise obtains possession of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which shall not be less than seven years but which may extend to fourteen years, and shall also be liable to fine\n\nEssential ingredients\n1. Whoever buys, hires or otherwise obtains possession of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which shall not be less than seven years but which may extend to fourteen years, and shall also be liable to fine\n\nExplanations\nExplanation 1.—Any prostitute or any person keeping or managing a brothel, who buys, hires or otherwise obtains possession of a female under the age of eighteen years shall, until the contrary is proved, be presumed to have obtained possession of such female with the intent that she shall be used for the purpose of prostitution\n\nExplanation 2.—“Illicit intercourse” has the same meaning as in section 98\n\nCHAPTER VI - OF OFFENCES AFFECTING THE HUMAN BODY\n\nCHAPTER VI\n\nOF OFFENCES AFFECTING THE HUMAN BODY\n\nOf offences affecting life",
+  "glance": "BNS s. 99 — Buying child for purposes of prostitution, etc.",
+  "sections": [
+    {
+      "id": "bns-99-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "99. Whoever buys, hires or otherwise obtains possession of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which shall not be less than seven years but which may extend to fourteen years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-99-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "Whoever buys, hires or otherwise obtains possession of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which shall not be less than seven years but which may extend to fourteen years, and shall also be liable to fine"
+      ]
+    },
+    {
+      "id": "bns-99-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation 1.—Any prostitute or any person keeping or managing a brothel, who buys, hires or otherwise obtains possession of a female under the age of eighteen years shall, until the contrary is proved, be presumed to have obtained possession of such female with the intent that she shall be used for the purpose of prostitution",
+        "Explanation 2.—“Illicit intercourse” has the same meaning as in section 98",
+        "CHAPTER VI - OF OFFENCES AFFECTING THE HUMAN BODY",
+        "CHAPTER VI",
+        "OF OFFENCES AFFECTING THE HUMAN BODY",
+        "Of offences affecting life"
+      ]
+    }
   ],
-  provisions: [{ actId: 'bns', actName: 'Bharatiya Nyaya Sanhita, 2023', provisionId: 'bns-99', section: 's. 99', title: 'Chapter V closing / related protective offences' }],
-  examples: [
-    { id: 's-99-ex1', title: 'Chapter V charging', illustrationType: 'practical', description: 'A fact pattern involving rape and cruelty may attract s. 64 and s. 85 (and s. 80 if death within seven years). Charge all applicable Chapter V sections.' },
-    { id: 's-99-ex2', title: 'Special law overlap', illustrationType: 'practical', description: 'Sexual offence involving a child under 18: charge under BNS and POCSO where both sets of ingredients are met.' },
+  "examples": [
+    {
+      "id": "bns-99-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Buying child for purposes of prostitution, etc”. Name BNS s. 99, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-99-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 99 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
   ],
-  hypotheticals: [{ id: 's-99-hypo', title: 'Chapter V map', facts: 'Married woman dies within 4 years of marriage after documented dowry harassment; prior sexual violence also alleged.', question: 'Which Chapter V sections are in play?', applicableLaw: 'BNS ss. 64, 80, 85; s. 28.', analysis: 'Rape (if ingredients met); cruelty (s. 85); dowry death (s. 80) given death within 7 years + dowry-linked cruelty.', conclusion: 'Multiple Chapter V sections may be charged together.' }],
-  distinctions: [],
-  misconceptions: [{ id: 's-99-trap', trap: 'Chapter V offences replace all special laws on women and children.', correction: 'Chapter V is the BNS component. POCSO, Dowry Prohibition Act, and other special laws continue to apply concurrently where their ingredients are met.' }],
-  cases: [],
-  questionsAndAnswers: [
-    { id: 's-99-brief', draftingCategory: 'brief', question: 'Outline the structure of Chapter V of the BNS (offences against woman and child).', answer: 'Chapter V places offences against woman and child before general body offences. It covers rape and aggravated/gang forms, sexual harassment and stalking, insulting modesty, dowry death and cruelty, and child-protection offences (exposure, hiring to commit offence, procurement). Apply s. 2 definitions, s. 28 consent, concurrent special laws, and the date-of-offence rule.', explanation: 'Short note.' },
-    { id: 's-99-sub', draftingCategory: 'submissions', question: 'Submissions on Chapter V charging.', answer: 'I. Identify each applicable section. II. Definitions and consent. III. Concurrent special law. IV. Date-of-offence. V. Prayer.', explanation: 'Submissions.' },
+  "hypotheticals": [
+    {
+      "id": "bns-99-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Buying child for purposes of prostitution, etc” under BNS s. 99 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 99 (Buying child for purposes of prostitution, etc) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 99. Chapter V — Of Offences Against Woman and Child. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 99 (Buying child for purposes of prostitution, etc), Chapter V — Of Offences Against Woman and Child.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever buys, hires or otherwise obtains possession of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which shall not be less than seven years but which may extend to fourteen years, and shall also be liable to fine\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 99 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 99. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-  bareActPointers: ['BNS Chapter V', 'BNS s. 2', 'BNS s. 28', 'POCSO', 'Dowry Prohibition Act'],
-  examTips: ['Map the facts onto specific Chapter V sections; do not stop at one section when several apply.', 'Always check POCSO/Dowry Act overlap.'],
-  revisionPoints: ['Chapter V = woman & child before body offences.', 'Key stack: 63–64, 66, 70, 75, 77, 80, 85, 93, 95.', 'Concurrent special laws still apply.'],
-  relatedTopics: ['s-64', 's-80', 's-85', 's-95', 's-2', 's-28'],
+  "misconceptions": [
+    {
+      "id": "bns-99-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 99."
+    },
+    {
+      "id": "bns-99-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-99-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-99-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 99 (Buying child for purposes of prostitution, etc)",
+      "answer": "Introduction. BNS s. 99 deals with Buying child for purposes of prostitution, etc. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Buying child for purposes of prostitution, etc. BNS restatement of IPC 373. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 373. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 99 is the rule on “Buying child for purposes of prostitution, etc”. The section provides that whoever buys, hires or otherwise obtains possession of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which shall not be less than seven years but which may extend to fourteen years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever buys, hires or otherwise obtains possession of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which shall not be less than seven years but which may extend to fourteen years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation 1.—Any prostitute or any person keeping or managing a brothel, who buys, hires or otherwise obtains possession of a female under the age of eighteen years shall, until the contrary is proved, be presumed to have obtained possession of such female with the intent that she shall be used for the purpose of prostitution An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 99. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 99 is the complete current-law heading for Buying child for purposes of prostitution, etc. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-99-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 99 (Buying child for purposes of prostitution, etc) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 99 deals with Buying child for purposes of prostitution, etc. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Buying child for purposes of prostitution, etc. BNS restatement of IPC 373. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 373. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 99 is the rule on “Buying child for purposes of prostitution, etc”. The section provides that whoever buys, hires or otherwise obtains possession of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which shall not be less than seven years but which may extend to fourteen years, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever buys, hires or otherwise obtains possession of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which shall not be less than seven years but which may extend to fourteen years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation 1.—Any prostitute or any person keeping or managing a brothel, who buys, hires or otherwise obtains possession of a female under the age of eighteen years shall, until the contrary is proved, be presumed to have obtained possession of such female with the intent that she shall be used for the purpose of prostitution An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 99. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 99 is the complete current-law heading for Buying child for purposes of prostitution, etc. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 99. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 99.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [],
+  "examTips": [
+    "Cite BNS s. 99 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 99 (Buying child for purposes of prostitution, etc).",
+      "steps": [
+        "Introduce BNS s. 99 and Chapter V — Of Offences Against Woman and Child.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 99."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 99 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 99, Buying child for purposes of prostitution, etc.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 99: Buying child for purposes of prostitution, etc.",
+    "First ingredient: Whoever buys, hires or otherwise obtains possession of any child with intent that such child shall at any age be employed or used for the purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral purpose, or knowing it to be likely that such child will at any age be employed or used for any such purpose, shall be punished with imprisonment of either description for a term which shall not be less than seven years but which may extend to fourteen years, and shall also be liable to fine",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 99 — Buying child for purposes of prostitution, etc. Older books and judgments may still print a historical number (373). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
 
 export default content

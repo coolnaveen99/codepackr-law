@@ -1,254 +1,241 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  glance:
-    'Section 3 supplies the general explanations that control how the rest of the Sanhita is read. Clause (5) is the modern restatement of common intention (old IPC s. 34): when a criminal act is done by several persons in furtherance of the common intention of all, each is liable as if he alone did the act. Do not confuse s. 3(5) with common object (s. 190).',
-
-  study: `Topic at a glance
-Section 3 is the “how to read this Act” provision. It contains a series of interpretive rules and, most importantly, the doctrine of common intention in sub-section (5).
-
-Common intention — s. 3(5)
-“When a criminal act is done by several persons in furtherance of the common intention of all, each of such persons is liable for that act in the same manner as if it were done by him alone.”
-
-This is the direct successor of IPC s. 34. The classic requirements remain:
-1. A criminal act done by several persons.
-2. A common intention shared by all.
-3. The act must be in furtherance of that common intention.
-
-Common intention may be formed on the spur of the moment; prior concert is not indispensable, but the existence of a shared intention must be proved by conduct and circumstances. Each participant is constructively liable for the act done in furtherance of the common intention even if he did not himself strike the fatal blow.
-
-Other general explanations in s. 3
-The section also contains rules on:
-• gender and number (words importing the masculine gender include females; singular includes plural and vice versa);
-• “man” / “woman” / “person”;
-• acts done by several persons in furtherance of common intention (the core clause above);
-• cooperation by doing different acts that together constitute the offence;
-• liability when several persons are concerned in a criminal act but may be guilty of different offences;
-• and related interpretive canons that prevent technical evasions.
-
-Common intention (s. 3(5)) vs common object (s. 190)
-• s. 3(5) — common intention; no requirement of an unlawful assembly; liability is as if the act were done by each alone.
-• s. 190 — common object of an unlawful assembly (five or more persons); the specific objects listed in s. 189; liability under the assembly provisions.
-Do not interchange the two doctrines or their section numbers.
-
-Relationship with abetment and conspiracy
-Common intention is a rule of joint liability for a completed criminal act. It is distinct from abetment (Chapter IV) and from criminal conspiracy. The same facts may sometimes support more than one of these heads; the charge must still track the correct legal category.
-
-Educational note
-Every answer on joint liability for a single fatal blow or a coordinated assault must open with s. 3(5) (not “s. 34 BNS” — that number does not exist).`,
-
-  sections: [
+  "study": "Introduction and meaning\nSection 3 tells you how to read the Act. Clause (5) is old IPC 34: when a criminal act is done by several persons in furtherance of a common intention, each is liable as if they did it alone.\nIn student language: BNS s. 3 is the rule on “General explanations”. The section provides that (1) Throughout this Sanhita every definition of an offence, every penal provision, and every Illustration of every such definition or penal provision, shall be understood subject to the exceptions contained in the Chapter entitled “General Exceptions”, though those exceptions are not repeated in such definition, penal provision, or Illustration. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 3 exists so that “General explanations” has a closed legal test in Chapter I — Preliminary. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Name, commencement, extra-territorial reach, the dictionary, and how the Sanhita is read — including common intention in s. 3(5).\n\nThe provision in detail\n3. (1) Throughout this Sanhita every definition of an offence, every penal provision, and every Illustration of every such definition or penal provision, shall be understood subject to the exceptions contained in the Chapter entitled “General Exceptions”, though those exceptions are not repeated in such definition, penal provision, or Illustration\n\n(2) Every expression which is explained in any Part of this Sanhita, is used in every Part of this Sanhita in conformity with the explanation\n\n(3) When property is in the possession of a person’s spouse, clerk or servant, on account of that person, it is in that person’s possession within the meaning of this Sanhita\n\n(8) When an offence is committed by means of several acts, whoever intentionally cooperates in the commission of that offence by doing any one of those acts, either singly or jointly with any other person, commits that offence\n\n(9) Where several persons are engaged or concerned in the commission of a criminal act, they may be guilty of different offences by means of that act\n\nEssential ingredients\n1. (1) Throughout this Sanhita every definition of an offence, every penal provision, and every Illustration of every such definition or penal provision, shall be understood subject to the exceptions contained in the Chapter entitled “General Exceptions”, though those exceptions are not repeated in such definition, penal provision, or Illustration\n2. (2) Every expression which is explained in any Part of this Sanhita, is used in every Part of this Sanhita in conformity with the explanation\n3. (3) When property is in the possession of a person’s spouse, clerk or servant, on account of that person, it is in that person’s possession within the meaning of this Sanhita\n4. (8) When an offence is committed by means of several acts, whoever intentionally cooperates in the commission of that offence by doing any one of those acts, either singly or jointly with any other person, commits that offence\n5. (9) Where several persons are engaged or concerned in the commission of a criminal act, they may be guilty of different offences by means of that act\n\nStatutory illustrations\nIllustration (a). The sections in this Sanhita, which contain definitions of offences, do not express that a child under seven years of age cannot commit such offences; but the definitions are to be understood subject to the general exception which provides that nothing shall be an offence which is done by a child under seven years of age\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 3 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (b). A, a police officer, without warrant, apprehends Z, who has committed murder. Here A is not guilty of the offence of wrongful confinement; for he was bound by law to apprehend Z, and therefore the case falls within the general exception which provides that “nothing is an offence which is done by a person who is bound by law to do it”\n\nExam use: quote illustration (b), then write which ingredient of BNS s. 3 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (c). A intentionally causes Z’s death, partly by illegally omitting to give Z food, and partly by beating Z. A has committed murder\n\nExam use: quote illustration (c), then write which ingredient of BNS s. 3 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (d). A and B agree to murder Z by severally and at different times giving him small doses of poison. A and B administer the poison according to the agreement with intent to murder Z. Z dies from the effects the several doses of poison so administered to him. Here A and B intentionally cooperate in the commission of murder and as each of them does an act by which the death is caused, they are both guilty of the offence though their acts are separate\n\nExam use: quote illustration (d), then write which ingredient of BNS s. 3 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (e). A and B are joint jailors, and as such have the charge of Z, a prisoner, alternatively for six hours at a time. A and B, intending to cause Z’s death, knowingly cooperate in causing that effect by illegally omitting, each during the time of his attendance, to furnish Z with food supplied to them for that purpose. Z dies of hunger. Both A and B are guilty of the murder of Z\n\nExam use: quote illustration (e), then write which ingredient of BNS s. 3 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (f). A, a jailor, has the charge of Z, a prisoner. A, intending to cause Z’s death, illegally omits to supply Z with food; in consequence of which Z is much reduced in strength, but the starvation is not sufficient to cause his death. A is dismissed from his office, and B succeeds him. B, without collusion or cooperation with A, illegally omits to supply Z with food, knowing that he is likely thereby to cause Z’s death. Z dies of hunger. B is guilty of murder, but, as A did not cooperate with B. A is guilty only of an attempt to commit murder\n\nExam use: quote illustration (f), then write which ingredient of BNS s. 3 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (g). A attacks Z under such circumstances of grave provocation that his killing of Z would be only culpable homicide not amounting to murder. B, having ill-will towards Z and intending to kill him, and not having been subject to the provocation, assists A in killing Z. Here, though A and B are both engaged in causing Z’s death, B is guilty of murder, and A is guilty only of culpable homicide\n\nExam use: quote illustration (g), then write which ingredient of BNS s. 3 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (h). CHAPTER II - OF PUNISHMENTS\n\nExam use: quote illustration (h), then write which ingredient of BNS s. 3 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (i). OF PUNISHMENTS\n\nExam use: quote illustration (i), then write which ingredient of BNS s. 3 it proves. Copying the illustration without that mapping sentence does not score.\n\nExplanations\nExplanation.—A person employed temporarily or on a particular occasion in the capacity of a clerk or servant, is a clerk or servant within the meaning of this sub-section\n\n(4) In every Part of this Sanhita, except where a contrary intention appears from the context, words which refer to acts done extend also to illegal omissions\n\n(5) When a criminal act is done by several persons in furtherance of the common intention of all, each of such persons is liable for that act in the same manner as if it were done by him alone\n\n(6) Whenever an act, which is criminal only by reason of its being done with a criminal knowledge or intention, is done by several persons, each of such persons who joins in the act with such knowledge or intention is liable for the act in the same manner as if the act were done by him alone with that knowledge or intention\n\n(7) Wherever the causing of a certain effect, or an attempt to cause that effect, by an act or by an omission, is an offence, it is to be understood that the causing of that effect partly by an act and partly by an omission is the same offence",
+  "glance": "BNS s. 3 — General explanations.",
+  "sections": [
     {
-      id: 's-3-module-1',
-      title: 'Provenance, Legislative Objective & Doctrinal Foundations',
-      order: 1,
-      content: [
-        'Section 3 restates and slightly reorganises the general explanations that appeared in the early sections of the IPC. Its most litigated clause is sub-section (5), the successor to IPC s. 34.',
-        'Legislative objective: supply uniform rules of construction so that gender, number, joint action and cooperation are read consistently throughout the Sanhita, and to preserve the well-settled doctrine of common intention without requiring a separate stand-alone section number.',
-        'Doctrinal foundation of common intention: Barendra Kumar Ghosh, Mahbub Shah, and the long line of Supreme Court authority that treats s. 34 / s. 3(5) as a rule of joint liability based on shared intention and participation, not as a distinct offence.',
-      ],
+      "id": "bns-3-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "3. (1) Throughout this Sanhita every definition of an offence, every penal provision, and every Illustration of every such definition or penal provision, shall be understood subject to the exceptions contained in the Chapter entitled “General Exceptions”, though those exceptions are not repeated in such definition, penal provision, or Illustration",
+        "(2) Every expression which is explained in any Part of this Sanhita, is used in every Part of this Sanhita in conformity with the explanation",
+        "(3) When property is in the possession of a person’s spouse, clerk or servant, on account of that person, it is in that person’s possession within the meaning of this Sanhita",
+        "(8) When an offence is committed by means of several acts, whoever intentionally cooperates in the commission of that offence by doing any one of those acts, either singly or jointly with any other person, commits that offence",
+        "(9) Where several persons are engaged or concerned in the commission of a criminal act, they may be guilty of different offences by means of that act"
+      ]
     },
     {
-      id: 's-3-module-2',
-      title: 'Textual Anatomy — Common Intention and Other Explanations',
-      order: 2,
-      content: [
-        's. 3(5) — When a criminal act is done by several persons in furtherance of the common intention of all, each is liable as if he alone did the act.',
-        'Supporting clauses deal with cooperation by successive or simultaneous acts, and with the possibility that participants in the same act may be guilty of different offences according to their individual intention or knowledge.',
-        'Gender and number clauses ensure that masculine includes feminine and singular includes plural (and vice versa) unless context otherwise requires.',
-        'Other clauses prevent artificial distinctions between act and omission when both together cause the prohibited result.',
-      ],
+      "id": "bns-3-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) Throughout this Sanhita every definition of an offence, every penal provision, and every Illustration of every such definition or penal provision, shall be understood subject to the exceptions contained in the Chapter entitled “General Exceptions”, though those exceptions are not repeated in such definition, penal provision, or Illustration",
+        "(2) Every expression which is explained in any Part of this Sanhita, is used in every Part of this Sanhita in conformity with the explanation",
+        "(3) When property is in the possession of a person’s spouse, clerk or servant, on account of that person, it is in that person’s possession within the meaning of this Sanhita",
+        "(8) When an offence is committed by means of several acts, whoever intentionally cooperates in the commission of that offence by doing any one of those acts, either singly or jointly with any other person, commits that offence",
+        "(9) Where several persons are engaged or concerned in the commission of a criminal act, they may be guilty of different offences by means of that act"
+      ]
     },
     {
-      id: 's-3-module-3',
-      title: 'Mandatory Proving Ingredients of Common Intention (s. 3(5))',
-      order: 3,
-      content: [
-        '1. A criminal act was done.',
-        '2. The act was done by several persons (more than one).',
-        '3. Those persons shared a common intention.',
-        '4. The criminal act was done in furtherance of that common intention.',
-        'Once these are proved, each participant is liable as if he alone committed the act. Physical presence and some participation (active or passive that furthers the intention) are required; mere presence without shared intention is insufficient.',
-      ],
+      "id": "bns-3-ill",
+      "title": "Statutory illustrations",
+      "order": 4,
+      "content": [
+        "(a) The sections in this Sanhita, which contain definitions of offences, do not express that a child under seven years of age cannot commit such offences; but the definitions are to be understood subject to the general exception which provides that nothing shall be an offence which is done by a child under seven years of age",
+        "(b) A, a police officer, without warrant, apprehends Z, who has committed murder. Here A is not guilty of the offence of wrongful confinement; for he was bound by law to apprehend Z, and therefore the case falls within the general exception which provides that “nothing is an offence which is done by a person who is bound by law to do it”",
+        "A intentionally causes Z’s death, partly by illegally omitting to give Z food, and partly by beating Z. A has committed murder",
+        "(a) A and B agree to murder Z by severally and at different times giving him small doses of poison. A and B administer the poison according to the agreement with intent to murder Z. Z dies from the effects the several doses of poison so administered to him. Here A and B intentionally cooperate in the commission of murder and as each of them does an act by which the death is caused, they are both guilty of the offence though their acts are separate",
+        "(b) A and B are joint jailors, and as such have the charge of Z, a prisoner, alternatively for six hours at a time. A and B, intending to cause Z’s death, knowingly cooperate in causing that effect by illegally omitting, each during the time of his attendance, to furnish Z with food supplied to them for that purpose. Z dies of hunger. Both A and B are guilty of the murder of Z",
+        "(c) A, a jailor, has the charge of Z, a prisoner. A, intending to cause Z’s death, illegally omits to supply Z with food; in consequence of which Z is much reduced in strength, but the starvation is not sufficient to cause his death. A is dismissed from his office, and B succeeds him. B, without collusion or cooperation with A, illegally omits to supply Z with food, knowing that he is likely thereby to cause Z’s death. Z dies of hunger. B is guilty of murder, but, as A did not cooperate with B. A is guilty only of an attempt to commit murder",
+        "A attacks Z under such circumstances of grave provocation that his killing of Z would be only culpable homicide not amounting to murder. B, having ill-will towards Z and intending to kill him, and not having been subject to the provocation, assists A in killing Z. Here, though A and B are both engaged in causing Z’s death, B is guilty of murder, and A is guilty only of culpable homicide",
+        "CHAPTER II - OF PUNISHMENTS",
+        "OF PUNISHMENTS"
+      ]
     },
     {
-      id: 's-3-module-4',
-      title: 'Evidentiary Burdens under BSA 2023',
-      order: 4,
-      content: [
-        'Common intention is almost always a matter of inference from conduct, weapons, sequence of events, prior relationships and the nature of the attack. Direct evidence of a pre-arranged plan is rare.',
-        'Prosecution must prove the shared intention beyond reasonable doubt. The accused may raise the absence of common intention or the existence of a sudden, independent act by one participant.',
-        'Once common intention is established, the prosecution does not have to prove which accused struck the fatal blow; each is constructively liable.',
-      ],
-    },
-    {
-      id: 's-3-module-5',
-      title: 'Procedural Roadmap, Competent Forum & Practical Charging',
-      order: 5,
-      content: [
-        'Common intention is not a separate offence; it is a rule of liability attached to the substantive offence (murder, hurt, etc.). The charge should recite the substantive section read with s. 3(5).',
-        'Forum, cognizability and bailability follow the substantive offence under the BNSS First Schedule.',
-        'Where the facts also disclose an unlawful assembly, the prosecution may charge both s. 3(5) and the common-object provisions (ss. 189–190); the two doctrines are distinct and can co-exist.',
-      ],
-    },
+      "id": "bns-3-expl",
+      "title": "Explanations",
+      "order": 5,
+      "content": [
+        "Explanation.—A person employed temporarily or on a particular occasion in the capacity of a clerk or servant, is a clerk or servant within the meaning of this sub-section",
+        "(4) In every Part of this Sanhita, except where a contrary intention appears from the context, words which refer to acts done extend also to illegal omissions",
+        "(5) When a criminal act is done by several persons in furtherance of the common intention of all, each of such persons is liable for that act in the same manner as if it were done by him alone",
+        "(6) Whenever an act, which is criminal only by reason of its being done with a criminal knowledge or intention, is done by several persons, each of such persons who joins in the act with such knowledge or intention is liable for the act in the same manner as if the act were done by him alone with that knowledge or intention",
+        "(7) Wherever the causing of a certain effect, or an attempt to cause that effect, by an act or by an omission, is an offence, it is to be understood that the causing of that effect partly by an act and partly by an omission is the same offence"
+      ]
+    }
   ],
-
-  provisions: [
+  "examples": [
     {
-      actId: 'bns',
-      actName: 'Bharatiya Nyaya Sanhita, 2023',
-      provisionId: 'bns-3',
-      section: 's. 3',
-      title: 'General explanations',
+      "id": "bns-3-ex-1",
+      "title": "Illustration (a)",
+      "description": "The sections in this Sanhita, which contain definitions of offences, do not express that a child under seven years of age cannot commit such offences; but the definitions are to be understood subject to the general exception which provides that nothing shall be an offence which is done by a child under seven years of age\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 3 — which fact proves which element, and what the legal result is."
     },
+    {
+      "id": "bns-3-ex-2",
+      "title": "Illustration (b)",
+      "description": "A, a police officer, without warrant, apprehends Z, who has committed murder. Here A is not guilty of the offence of wrongful confinement; for he was bound by law to apprehend Z, and therefore the case falls within the general exception which provides that “nothing is an offence which is done by a person who is bound by law to do it”\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 3 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-3-ex-3",
+      "title": "Illustration (c)",
+      "description": "A intentionally causes Z’s death, partly by illegally omitting to give Z food, and partly by beating Z. A has committed murder\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 3 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-3-ex-4",
+      "title": "Illustration (d)",
+      "description": "A and B agree to murder Z by severally and at different times giving him small doses of poison. A and B administer the poison according to the agreement with intent to murder Z. Z dies from the effects the several doses of poison so administered to him. Here A and B intentionally cooperate in the commission of murder and as each of them does an act by which the death is caused, they are both guilty of the offence though their acts are separate\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 3 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-3-ex-5",
+      "title": "Illustration (e)",
+      "description": "A and B are joint jailors, and as such have the charge of Z, a prisoner, alternatively for six hours at a time. A and B, intending to cause Z’s death, knowingly cooperate in causing that effect by illegally omitting, each during the time of his attendance, to furnish Z with food supplied to them for that purpose. Z dies of hunger. Both A and B are guilty of the murder of Z\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 3 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-3-ex-6",
+      "title": "Illustration (f)",
+      "description": "A, a jailor, has the charge of Z, a prisoner. A, intending to cause Z’s death, illegally omits to supply Z with food; in consequence of which Z is much reduced in strength, but the starvation is not sufficient to cause his death. A is dismissed from his office, and B succeeds him. B, without collusion or cooperation with A, illegally omits to supply Z with food, knowing that he is likely thereby to cause Z’s death. Z dies of hunger. B is guilty of murder, but, as A did not cooperate with B. A is guilty only of an attempt to commit murder\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 3 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-3-ex-7",
+      "title": "Illustration (g)",
+      "description": "A attacks Z under such circumstances of grave provocation that his killing of Z would be only culpable homicide not amounting to murder. B, having ill-will towards Z and intending to kill him, and not having been subject to the provocation, assists A in killing Z. Here, though A and B are both engaged in causing Z’s death, B is guilty of murder, and A is guilty only of culpable homicide\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 3 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-3-ex-8",
+      "title": "Illustration (h)",
+      "description": "CHAPTER II - OF PUNISHMENTS\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 3 — which fact proves which element, and what the legal result is."
+    },
+    {
+      "id": "bns-3-ex-9",
+      "title": "Illustration (i)",
+      "description": "OF PUNISHMENTS\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 3 — which fact proves which element, and what the legal result is."
+    }
   ],
-
-  examples: [
+  "hypotheticals": [
     {
-      id: 's-3-ill-1',
-      title: 'Illustration 1 — Common intention made out',
-      illustrationType: 'practical',
-      description:
-        'A and B, pursuant to a shared plan to teach C a lesson, attack C with sticks. A strikes the fatal blow on the head; B holds C. Both are liable for the resulting murder under the substantive section read with s. 3(5), even though only A delivered the fatal injury.',
-    },
-    {
-      id: 's-3-ill-2',
-      title: 'Illustration 2 — No common intention',
-      illustrationType: 'fail-scenario',
-      description:
-        'A and B are present at a sudden quarrel. A, acting independently and without any shared plan, pulls out a knife and stabs C. B neither encourages nor participates. B is not liable under s. 3(5); only A is liable for the stabbing.',
-    },
+      "id": "bns-3-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "(a) The sections in this Sanhita, which contain definitions of offences, do not express that a child under seven years of age cannot commit such offences; but the definitions are to be understood subject to the general exception which provides that nothing shall be an offence which is done by a child under seven years of age",
+      "question": "Whether BNS s. 3 (General explanations) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 3. Chapter I — Preliminary. Connected: BNS s. 190.",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 3 (General explanations), Chapter I — Preliminary.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Throughout this Sanhita every definition of an offence, every penal provision, and every Illustration of every such definition or penal provision, shall be understood subject to the exceptions contained in the Chapter entitled “General Exceptions”, though those exceptions are not repeated in such definition, penal provision, or Illustration\n   (2) (2) Every expression which is explained in any Part of this Sanhita, is used in every Part of this Sanhita in conformity with the explanation\n   (3) (3) When property is in the possession of a person’s spouse, clerk or servant, on account of that person, it is in that person’s possession within the meaning of this Sanhita\n   (4) (8) When an offence is committed by means of several acts, whoever intentionally cooperates in the commission of that offence by doing any one of those acts, either singly or jointly with any other person, commits that offence\n   (5) (9) Where several persons are engaged or concerned in the commission of a criminal act, they may be guilty of different offences by means of that act\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 3 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 3. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
   ],
-
-  hypotheticals: [
+  "distinctions": [
     {
-      id: 's-3-hypo',
-      title: 'Chamber Hypothetical — Spur-of-the-moment common intention',
-      facts:
-        'During a heated argument at a tea stall, A and B suddenly join in beating C. No prior plan is proved. A strikes C on the head with a heavy stick; B kicks C while he is down. C dies of the head injury.',
-      question:
-        'Can B be held liable for murder with the aid of s. 3(5)?',
-      applicableLaw: 'BNS s. 3(5); substantive murder provisions (ss. 101/103); case-law on formation of common intention on the spot.',
-      analysis:
-        '1. Common intention can form on the spur of the moment; prior concert is not essential. 2. The question is whether the proved conduct shows that B shared the intention to cause the injury that resulted in death (or knowledge sufficient for the applicable murder clause). 3. Participation by kicking while A delivers the fatal blow is strong evidence of shared intention. 4. If the fact-finder finds only a sudden, independent act by A, B may escape constructive liability.',
-      conclusion:
-        'On the given facts a court may properly infer common intention and convict B under the murder section read with s. 3(5). The inference remains a question of fact.',
-    },
-  ],
-
-  distinctions: [
-    {
-      id: 's-3-dist-1',
-      title: 'Common intention (s. 3(5)) vs Common object (s. 190)',
-      left: 's. 3(5) — Common intention',
-      right: 's. 190 — Common object',
-      rows: [
+      "id": "bns-3-dist",
+      "title": "BNS s. 3 and connected sections",
+      "left": "BNS s. 3",
+      "right": "BNS s. 190",
+      "rows": [
         {
-          point: 'Minimum number',
-          left: 'Two or more',
-          right: 'Five or more (unlawful assembly)',
+          "point": "Heading",
+          "left": "General explanations",
+          "right": "Read the neighbour’s title on its own page before you write."
         },
         {
-          point: 'Mental element',
-          left: 'Shared intention',
-          right: 'Common object of the assembly (listed objects)',
+          "point": "What you must prove",
+          "left": "(1) Throughout this Sanhita every definition of an offence, every penal provision, and every Illustration of every such definition or penal provision, shall be understood subject to the exceptions contained in the Chapter entitled “General Exceptions”, though those exceptions are not repeated in such definition, penal provision, or Illustration",
+          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
         },
         {
-          point: 'Prior concert',
-          left: 'Not essential; may form on the spot',
-          right: 'Object of the assembly must be proved',
-        },
-        {
-          point: 'Liability rule',
-          left: 'Each liable as if he alone did the act',
-          right: 'Liability under the unlawful-assembly / rioting scheme',
-        },
-      ],
-    },
+          "point": "Practice trap",
+          "left": "Citing a neighbour as if it were s. 3.",
+          "right": "Citing s. 3 where the neighbour actually applies."
+        }
+      ]
+    }
   ],
-
-  misconceptions: [
+  "misconceptions": [
     {
-      id: 's-3-trap-1',
-      trap: 'Common intention is found in BNS s. 34 or s. 190.',
-      correction:
-        'Common intention is s. 3(5). There is no s. 34 in the BNS. s. 190 is common object of an unlawful assembly.',
+      "id": "bns-3-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 3."
     },
     {
-      id: 's-3-trap-2',
-      trap: 'Prior meeting of minds is indispensable for s. 3(5).',
-      correction:
-        'Common intention may be formed on the spur of the moment. What must be proved is the existence of a shared intention at the time the act is done, not a long-premeditated plan.',
-    },
-  ],
-
-  cases: [
-    {
-      name: 'Barendra Kumar Ghosh v. King Emperor',
-      year: 1925,
-      citation: 'AIR 1925 PC 1',
-      court: 'Privy Council',
-      holding:
-        'Section 34 is a rule of joint liability; “a criminal act done by several persons” includes the act of one participant attributed to all who share the common intention.',
-      relevance:
-        'Foundational authority still cited for the constructive-liability principle now contained in BNS s. 3(5).',
+      "id": "bns-3-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
     },
     {
-      name: 'Mahbub Shah v. Emperor',
-      year: 1945,
-      citation: 'AIR 1945 PC 118',
-      court: 'Privy Council',
-      holding:
-        'Common intention implies a pre-arranged plan, but the plan may be inferred from conduct; mere presence or similar intention formed independently is not enough.',
-      relevance:
-        'Classic caution against equating similar intention with common intention; still guides the inference under s. 3(5).',
-    },
+      "id": "bns-3-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
   ],
-
-  questionsAndAnswers: [
+  "questionsAndAnswers": [
     {
-      id: 's-3-brief',
-      draftingCategory: 'brief',
-      question: 'Explain the doctrine of common intention under Section 3(5) of the BNS and distinguish it from common object.',
-      answer: `I. ISSUE\nWhen and how does joint liability arise under s. 3(5), and how does it differ from s. 190?\n\nII. RULE\ns. 3(5): criminal act by several persons in furtherance of common intention of all → each liable as if he alone did the act. Common intention may form on the spot. Distinct from common object of an unlawful assembly (s. 190).\n\nIII. APPLICATION\nProve shared intention from conduct; physical participation that furthers the intention; no need to prove who struck the fatal blow once common intention is established.\n\nIV. CONCLUSION\nCharge the substantive offence read with s. 3(5). Never cite “s. 34 BNS”. Keep common intention and common object analytically separate.`,
-      explanation: 'IRAC note on the central joint-liability rule.',
+      "id": "bns-3-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 3 (General explanations)",
+      "answer": "Introduction. BNS s. 3 deals with General explanations. It sits in Chapter I — Preliminary of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Section 3 tells you how to read the Act. Clause (5) is old IPC 34: when a criminal act is done by several persons in furtherance of a common intention, each is liable as if they did it alone.\n\nLegal rule. In student language: BNS s. 3 is the rule on “General explanations”. The section provides that (1) Throughout this Sanhita every definition of an offence, every penal provision, and every Illustration of every such definition or penal provision, shall be understood subject to the exceptions contained in the Chapter entitled “General Exceptions”, though those exceptions are not repeated in such definition, penal provision, or Illustration. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Throughout this Sanhita every definition of an offence, every penal provision, and every Illustration of every such definition or penal provision, shall be understood subject to the exceptions contained in the Chapter entitled “General Exceptions”, though those exceptions are not repeated in such definition, penal provision, or Illustration\n2. (2) Every expression which is explained in any Part of this Sanhita, is used in every Part of this Sanhita in conformity with the explanation\n3. (3) When property is in the possession of a person’s spouse, clerk or servant, on account of that person, it is in that person’s possession within the meaning of this Sanhita\n4. (8) When an offence is committed by means of several acts, whoever intentionally cooperates in the commission of that offence by doing any one of those acts, either singly or jointly with any other person, commits that offence\n5. (9) Where several persons are engaged or concerned in the commission of a criminal act, they may be guilty of different offences by means of that act\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) The sections in this Sanhita, which contain definitions of offences, do not express that a child under seven years of age cannot commit such offences; but the definitions are to be understood subject to the general exception which provides that nothing shall be an offence which is done by a child under seven years of age\n\nExplanations. Explanation.—A person employed temporarily or on a particular occasion in the capacity of a clerk or servant, is a clerk or servant within the meaning of this sub-section An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 3. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 190. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 3 is the complete current-law heading for General explanations. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
     },
     {
-      id: 's-3-submissions',
-      draftingCategory: 'submissions',
-      question: 'Draft written submissions on common intention under BNS s. 3(5) with reference to leading authority and the distinction from common object.',
-      answer: `I. STATEMENT OF FACTS\n[Insert the joint-assault facts.]\n\nII. STATUTORY SCHEME\ns. 3(5) is the successor to IPC s. 34. It is a rule of liability, not a distinct offence.\n\nIII. INGREDIENTS\nCriminal act + several persons + common intention + act in furtherance of that intention.\n\nIV. AUTHORITY\nBarendra Kumar Ghosh (constructive liability); Mahbub Shah (inference of common intention; caution against equating similar intention).\n\nV. DISTINCTION FROM s. 190\nNumber, mental element, and liability scheme differ. Both may be charged if facts support both.\n\nVI. PRAYER\nConvict each participant under the substantive section read with s. 3(5) / or acquit the secondary participant if common intention is not proved.`,
-      explanation: 'Full written-submissions format for common-intention cases.',
+      "id": "bns-3-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 3 (General explanations) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 3 deals with General explanations. It sits in Chapter I — Preliminary of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Section 3 tells you how to read the Act. Clause (5) is old IPC 34: when a criminal act is done by several persons in furtherance of a common intention, each is liable as if they did it alone.\n\nLegal rule. In student language: BNS s. 3 is the rule on “General explanations”. The section provides that (1) Throughout this Sanhita every definition of an offence, every penal provision, and every Illustration of every such definition or penal provision, shall be understood subject to the exceptions contained in the Chapter entitled “General Exceptions”, though those exceptions are not repeated in such definition, penal provision, or Illustration. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Throughout this Sanhita every definition of an offence, every penal provision, and every Illustration of every such definition or penal provision, shall be understood subject to the exceptions contained in the Chapter entitled “General Exceptions”, though those exceptions are not repeated in such definition, penal provision, or Illustration\n2. (2) Every expression which is explained in any Part of this Sanhita, is used in every Part of this Sanhita in conformity with the explanation\n3. (3) When property is in the possession of a person’s spouse, clerk or servant, on account of that person, it is in that person’s possession within the meaning of this Sanhita\n4. (8) When an offence is committed by means of several acts, whoever intentionally cooperates in the commission of that offence by doing any one of those acts, either singly or jointly with any other person, commits that offence\n5. (9) Where several persons are engaged or concerned in the commission of a criminal act, they may be guilty of different offences by means of that act\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) The sections in this Sanhita, which contain definitions of offences, do not express that a child under seven years of age cannot commit such offences; but the definitions are to be understood subject to the general exception which provides that nothing shall be an offence which is done by a child under seven years of age\n\nExplanations. Explanation.—A person employed temporarily or on a particular occasion in the capacity of a clerk or servant, is a clerk or servant within the meaning of this sub-section An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 3. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 190. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 3 is the complete current-law heading for General explanations. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Name, commencement, extra-territorial reach, the dictionary, and how the Sanhita is read — including common intention in s. 3(5).. Show why this heading sits where it sits.\n\nLayer 2 — Work a second statutory illustration. Illustration (b): (b) A, a police officer, without warrant, apprehends Z, who has committed murder. Here A is not guilty of the offence of wrongful confinement; for he was bound by law to apprehend Z, and therefore the case falls within the general exception which provides that “nothing is an offence which is done by a person who is bound by law to do it” Contrast it with illustration (a). The legal weight lies in the contrast.\n\nLayer 3 — Distinction. Contrast BNS s. 3 with BNS s. 190. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 3.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Barendra Kumar Ghosh v. King Emperor",
+      "year": 1925,
+      "citation": "AIR 1925 PC 1",
+      "holding": "“They also serve who only stand and wait.” Presence in furtherance of common intention is enough. The ancestor of s. 3(5)."
     },
+    {
+      "name": "Mahbub Shah v. Emperor",
+      "year": 1945,
+      "citation": "AIR 1945 PC 118",
+      "holding": "Common intention requires a pre-arranged plan. Mere presence at the scene is not s. 3(5). Contrast with common object under s. 190."
+    }
   ],
-
-  bareActPointers: [
-    'BNS s. 3 (especially s. 3(5))',
-    'BNS s. 190 (common object — for distinction)',
-    'IPC s. 34 (historical concordance only)',
+  "examTips": [
+    "Cite BNS s. 3 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "A five-person lynching is charged under s. 103(2) and may also attract s. 190. Do not write “s. 3(5) requires five persons”."
   ],
-
-  examTips: [
-    'Never write “s. 34 BNS”. The correct cite is s. 3(5).',
-    'State expressly that common intention can form on the spur of the moment.',
-    'Keep a clean distinction table between s. 3(5) and s. 190.',
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 3 (General explanations).",
+      "steps": [
+        "Introduce BNS s. 3 and Chapter I — Preliminary.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Use one statutory illustration and map it to an ingredient.",
+        "State the material explanation or exception.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 3."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 3 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second statutory illustration and contrast it with the first.",
+        "Distinguish BNS s. 3 from BNS s. 190.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
   ],
-
-  revisionPoints: [
-    'Common intention = s. 3(5) (old IPC 34).',
-    'Each liable as if he alone did the act.',
-    'May form on the spur of the moment.',
-    'Distinct from common object (s. 190).',
+  "answerSkeleton": [
+    "Introduction — BNS s. 3, General explanations.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
   ],
-
-  relatedTopics: [
-    's-1',
-    's-2',
-    'doctrine-common-intention',
-    'general-explanations',
-    's-190',
-    'culpable-homicide-murder',
+  "revisionPoints": [
+    "BNS s. 3: General explanations.",
+    "First ingredient: (1) Throughout this Sanhita every definition of an offence, every penal provision, and every Illustration of every such definition or penal provision, shall be understood subject to the exceptions contained in the Chapter entitled “General Exceptions”, though those exceptions are not repeated in such definition, penal provision, or Illustration",
+    "9 statutory illustration(s) — quote and map.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 3 — General explanations. Older books and judgments may still print a historical number (6–52; 3(5) = IPC 34). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
   ],
+  "relatedTopics": [
+    "s-190"
+  ]
 }
 
 export default content

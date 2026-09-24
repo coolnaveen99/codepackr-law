@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Civil conspiracy concerns concerted action by two or more persons that causes damage. The law distinguishes conspiracy to injure by unlawful means from conspiracy where the predominant purpose is to injure.",
   "study": "Civil conspiracy concerns concerted action by two or more persons that causes damage. The law distinguishes conspiracy to injure by unlawful means from conspiracy where the predominant purpose is to injure.\\n\\nQuinn v Leathem is the leading authority. Crofter Hand Woven Harris Tweed illustrates careful analysis of purpose and means. Coordination alone is not conspiracy.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

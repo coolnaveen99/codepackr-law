@@ -1,4 +1,6 @@
-import type { TopicContent } from '../topicTypes'\n\nexport default {
+import type { TopicContent } from '../topicTypes'
+
+export default {
   "glance": "Economic torts protect against certain intentional interference with contracts, trade or business. The law does not create a general right to be free from competition.",
   "study": "Economic torts protect against certain intentional interference with contracts, trade or business. The law does not create a general right to be free from competition.\\n\\nLumley v Gye recognised intentional procurement of breach of contract. Mogul Steamship shows that lawful competition causing loss is not itself tortious. The exact economic tort and required intent must be identified.",
   "sections": [
@@ -150,4 +152,4 @@ import type { TopicContent } from '../topicTypes'\n\nexport default {
     "Competent forum and limitation must be checked against the actual cause of action",
     "Use the ratio of the leading authority, not merely its name"
   ]
-} satisfies TopicContent\n
+} satisfies TopicContent

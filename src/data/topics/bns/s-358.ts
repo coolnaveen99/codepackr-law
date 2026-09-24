@@ -1,30 +1,194 @@
 import type { TopicContent } from '../loadTopicContent'
+
 const content: TopicContent = {
- glance:"BNS Section 358: Repeal and savings. Repeal-and-savings provision; no IPC offence concordance.",
- study:"Section 358 — Repeal and savings. Apply the enacted BNS text and its explanations, provisos and illustrations. Repeal-and-savings provision; no IPC offence concordance. Historical numbering is comparative only; for post-1 July 2024 conduct the BNS governs. Focus on the exact statutory ingredients, protected interest, mental element, procedural route and the temporal operation of the Sanhita. Coordinate substantive analysis with the BNSS 2023 procedural framework and the BSA 2023 rules on admissibility, proof, electronic records and presumptions where relevant.",
- sections:[
- {id:'s-358-m1',title:'Provenance, Legislative Objective & Doctrinal Foundations',order:1,content:["BNS Chapter xx — Repeal and savings.","BNS s. 358: Repeal and savings.","Repeal-and-savings provision; no IPC offence concordance.","Protected interest and legislative function: Focus on the exact statutory ingredients, protected interest, mental element, procedural route and the temporal operation of the Sanhita."],
- {id:'s-358-m2',title:'Textual Anatomy, Conditions & Statutory Limits',order:2,content:["Start with the operative verbs, required status or circumstance, object of the offence and any qualifying words in s. 358.","Separate mandatory elements from illustrations, explanations, provisos and punishment clauses.","Do not enlarge the offence by analogy: every material ingredient must be anchored in the enacted text.","For offences involving documents, electronic records, custody, public proceedings or public authority, identify the precise statutory trigger before moving to evidence."],
- {id:'s-358-m3',title:'Mandatory Proving Ingredients & Issue-Spotting',order:3,content:["Build an ingredient matrix: conduct; object or victim; required circumstance/status; mens rea; causation/materiality where required; and any aggravating fact.","Map each ingredient to a fact capable of being proved by admissible evidence.","Test alternative explanations and distinguish mere irregularity, mistake, negligence or civil breach from the mental element expressly required by the section.","Where the provision incorporates another section, prove the incorporated element rather than treating the cross-reference as automatic."],
- {id:'s-358-m4',title:'Evidentiary Burdens & BSA 2023 Interface',order:4,content:["The prosecution ordinarily bears the burden of proving the charged ingredients beyond reasonable doubt, subject to applicable statutory presumptions or burdens.","Apply the BSA 2023 to relevance, admissibility, documentary and electronic evidence, authenticity, integrity and proof of the underlying fact.","For digital evidence, preserve provenance, metadata and chain of custody and distinguish authenticity from the truth or weight of the material.","A contradiction, inconsistency or procedural defect is not automatically the charged offence; connect it to the exact statutory ingredient."],
- {id:'s-358-m5',title:'Procedural Roadmap, Forum & Limitation Checkpoints',order:5,content:["Identify the BNSS 2023 route for information, investigation, cognizance, complaint requirements, trial and evidence.","Check the current BNSS First Schedule for cognizability, bailability and the competent trial court rather than relying on historical IPC classifications.","For offences linked to courts, public servants, evidence or public justice, verify any special BNSS cognizance restriction or sanction requirement before filing or prosecuting.","Apply the repeal-and-savings framework to pre-1 July 2024 conduct and use current BNS/BNSS/BSA provisions for post-commencement conduct."]
- ],
- provisions:[{actId:'bns',actName:'Bharatiya Nyaya Sanhita, 2023',provisionId:'bns-358',section:'s. 358',title:"Repeal and savings"}],
- examples:[
- {id:'s-358-ex1',title:'Complete statutory proof',illustrationType:'practical',description:"The evidence establishes each material ingredient of s. 358, including the required mental element or circumstance, and the prosecution can connect the admissible evidence to the statutory act. Focus on the exact statutory ingredients, protected interest, mental element, procedural route and the temporal operation of the Sanhita."},
- {id:'s-358-ex2',title:'Ingredient not established',illustrationType:'fail-scenario',description:"The record shows suspicious or disputed conduct, but one material ingredient—such as knowledge, intention, authority, materiality, possession, causation or the specified statutory circumstance—remains unproved."}
- ],
- hypotheticals:[{id:'s-358-hypo',title:"Chamber problem — BNS s. 358",facts:"A prosecution invokes s. 358 after a disputed event. The defence accepts the surrounding facts but contests the statutory trigger and the evidentiary basis for the required mental element or circumstance.",question:"Does the evidence satisfy every enacted ingredient of s. 358?",applicableLaw:"BNS s. 358; connected BNS provisions; BNSS 2023; BSA 2023.",analysis:"Identify each ingredient, classify the disputed fact, test admissibility and authenticity, address mens rea and any statutory exception or proviso, then apply the facts without importing an unstated element.",conclusion:"Liability follows only if every material statutory ingredient is proved to the required criminal standard."],
- distinctions:[{id:'s-358-dist',title:'Current BNS provision vs historical IPC concordance',left:"BNS s. 358",right:"Historical IPC s. —",rows:[{point:'Governing substantive law',left:'Current BNS for post-commencement conduct',right:'Historical comparative material only'},{point:'Evidence framework',left:'BSA 2023',right:'Indian Evidence Act was the former framework'},{point:'Procedure',left:'BNSS 2023',right:'CrPC was the former framework'}]}],
- misconceptions:[{id:'s-358-trap',trap:"Any suspicious, inaccurate or irregular conduct automatically establishes BNS s. 358.",correction:"The prosecution must prove the exact statutory act, circumstances and mental element required by s. 358.",{id:'s-358-trap2',trap:'Historical IPC numbering determines current liability.',correction:'The enacted BNS provision governs post-1 July 2024 conduct; IPC references are for historical concordance only.'}],
- cases:[],
- questionsAndAnswers:[
- {id:'s-358-qa1',draftingCategory:'brief',question:"How should BNS s. 358 be analysed?",answer:"State the enacted rule; isolate every ingredient; identify the relevant status, act, object and mental element; map admissible evidence to each ingredient; address connected BNSS/BSA issues; then apply the facts and conclude.",explanation:'This separates substantive liability from evidentiary and procedural questions.'},
- {id:'s-358-qa2',draftingCategory:'submissions',question:'What should a written submission on this provision contain?',answer:"Issue; statutory text and ingredients; admitted facts; disputed facts; evidence and BSA 2023 objections; BNSS 2023 procedural points; application ingredient-by-ingredient; relief or conclusion.",explanation:'Use verified authorities only. Where no authority has been verified for the repository entry, rely on the enacted text and mark no case-law proposition.'}
- ],
- bareActPointers:["BNS s. 358 — Repeal and savings","BNS Chapter xx","Repeal-and-savings provision; no IPC offence concordance.",'BNSS 2023 — applicable procedural and First Schedule provisions','BSA 2023 — applicable relevance, proof and electronic-evidence provisions'],
- examTips:['Begin with the enacted BNS wording and identify every constituent element.','Do not treat the IPC concordance as the governing offence for post-commencement conduct.','Map disputed facts to admissible evidence and address mens rea separately.','Verify the current BNSS procedural classification and BSA evidentiary requirements.'],
- revisionPoints:["s. 358: Repeal and savings","Repeal-and-savings provision; no IPC offence concordance.",'Current BNS, BNSS 2023 and BSA 2023 govern the modern analysis.','Conviction requires proof of every material ingredient beyond reasonable doubt.'],
- relatedTopics:["s. 357"]
+  "study": "Introduction and meaning\nRepeal and savings. The Indian Penal Code, 1860 is repealed. Anything done, any right, privilege, obligation, liability, penalty or punishment under the IPC, and any investigation or proceeding in respect of an IPC offence, continues. Offences committed before 1 July 2024 are IPC offences.\nIn student language: BNS s. 358 is the rule on “Repeal and savings”. The section provides that (1) The Indian Penal Code is hereby repealed. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 358 exists so that “Repeal and savings” has a closed legal test in Chapter XX — Repeal and Savings. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: The IPC goes. Offences committed before 1 July 2024 stay under the old Code.\n\nThe provision in detail\n358. (1) The Indian Penal Code is hereby repealed\n\n(2) Notwithstanding the repeal of the Code referred to in sub-section (1), it shall not affect,—\n\n(a) the previous operation of the Code so repealed or anything duly done or suffered thereunder; or\n\n(b) any right, privilege, obligation or liability acquired, accrued or incurred under the Code so repealed; or\n\n(c) any penalty, or punishment incurred in respect of any offences committed against the Code so repealed; or\n\n(d) any investigation or remedy in respect of any such penalty, or punishment; or\n\n(e) any proceeding, investigation or remedy in respect of any such penalty or punishment as aforesaid, and any such proceeding or remedy may be instituted, continued or enforced, and any such penalty may be imposed as if that Code had not been repealed\n\n(3) Notwithstanding such repeal, anything done or any action taken under the said Code shall be deemed to have been done or taken under the corresponding provisions of this Sanhita\n\n(4) The mention of particular matters in sub-section (2) shall not be held to prejudice or affect the general application of section 6 of the General Clauses Act, 1897 with regard to the effect of the repeal\n\n—————\n\nNote: For Reference only\n\nlet mybutton = document.getElementById(\"myBtn\"); let mybuttonL = document.getElementById(\"myBtnL\"); var stepdataid = document.getElementById(\"stepdata\"); window.onscroll = function { scrollFunction };\n\nconst synth = window.speechSynthesis;\n\nfunction backbutton { history.back; }\n\nfunction backbuttonHome { window.open(\"./MobileIndex.html\", \"_self\"); }\n\nfunction backbuttonBNS { window.open(\"./MobileIndexBNS.html\", \"_self\"); }\n\nfunction backbuttonBNSS { window.open(\"./MobileIndexBNSS.html\", \"_self\"); }\n\nfunction backbuttonBSA { window.open(\"./MobileIndexBSA.html\", \"_self\"); }\n\nfunction backbuttonChapter(urldata) { var url = window.location.href; var fragment = url.split(\"#\")[1]; if (fragment == null) { if (url.includes('BNS')) { window.open(\"./MobileIndexBNS.html\", \"_self\"); } if (url.includes('BNSS')) { window.open(\"./MobileIndexBNSS.html\", \"_self\"); } if (url.includes('BSA')) { window.open(\"./MobileIndexBSA.html\", \"_self\"); } } else { window.open(urldata + url.split(\"#\")[1], \"_self\"); } if (synth.speaking) { synth.cancel; } }\n\nfunction onloadpage { var url = window.location.href; var strId = url.split(\"#\")[1]; if (strId !== null && strId !== undefined) { document.getElementById(strId).style.backgroundColor = \"#FFD580\"; } }\n\nfunction onloadpageChapter { const url = window.location.href; const parts = url.split(\"#\"); var strId = parts[1]; if (strId !== null && strId !== undefined) { var parentSpan = document.getElementById(strId); if (parentSpan) { for (var i = 0; i 380 || document.documentElement.scrollTop > 380) { stepdataid.className = 'stepsafter'; } else { stepdataid.className = 'steps'; } }\n\nfunction topFunction { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; if (synth.speaking) { synth.cancel; } }\n\nfunction searchPrevious { var curCount = parseInt(document.getElementById('curCount').innerHTML); if (curCount == 0) { document.getElementById('searchButtonID').disabled = false; } var searchTerm = document.getElementById('searchInput').value; window.find(searchTerm, false, true); if (curCount > 0) { curCount--; document.getElementById('curCount').innerHTML = curCount; document.getElementById('searchButtonID').disabled = true; } if (synth.speaking) { synth.cancel; } }\n\nfunction searchNext { var searchInputID = document.getElementById('searchInput'); var searchTerm = searchInputID.value;\n\nif (searchTerm.length > 0) { searchAndCount; var curCount = parseInt(document.getElementById('curCount').innerHTML); if (curCount > 0) { document.getElementById('searchButtonID').disabled = true; } else { document.getElementById('searchButtonID').disabled = false; } setTimeout( => { window.find(searchTerm); }, 400) } if (synth.speaking) { synth.cancel; } }\n\nfunction searchAndCount { var searchTerm = document.getElementById('searchInput').value; var textToSearch = document.body.innerText || document.body.textContent; var searchExp = new RegExp(searchTerm, 'gi'); var matches = textToSearch.match(searchExp); if (matches) { var curCount = parseInt(document.getElementById('curCount').innerHTML); if (curCount Print.steps { text-align: center; font-weight: bold; }\n\n' + strHeading + '\n\n'); printWindow.document.write(content); printWindow.document.write(' '); printWindow.document.close; printWindow.print; if (synth.speaking) { synth.cancel; } }\n\nfunction showSearchBar { var searchBar = document.getElementById('search-container'); searchBar.style.display = 'block'; }\n\nfunction toggleSearchBar { document.getElementById('searchInput').value = ''; document.getElementById('totalCount').innerHTML = \"0\"; document.getElementById('curCount').innerHTML = \"0\"; var searchBar = document.getElementById('search-container'); if (searchBar.style.display === 'none') { searchBar.style.display = 'block'; } else { searchBar.style.display = 'none'; } document.getElementById('searchButtonID').disabled = false; }\n\nfunction handleKeyPress { let elem = document.getElementById('searchButtonID'); elem.disabled = false;\n\nelem.addEventListener(\"keydown\", function (event) { if (event.key === 'Enter') { searchNext; } });\n\n}\n\nfunction resetSearch { document.getElementById('searchButtonID').disabled = false; document.getElementById('searchInput').value = ''; document.getElementById('totalCount').innerHTML = \"0\"; document.getElementById('curCount').innerHTML = \"0\"; }\n\nfunction readParagraph(id, speed) { const paragraphToRead = document.getElementById(id).textContent; if (synth.speaking) { synth.cancel; } if ('speechSynthesis' in window) { const utterance = new SpeechSynthesisUtterance(paragraphToRead); utterance.lang = \"en\"; utterance.rate = speed || 1.0; const voices = synth.getVoices; const indianAccentVoice = findIndianAccentVoice(voices); if (indianAccentVoice) { utterance.voice = indianAccentVoice; } synth.speak(utterance); } }\n\nfunction findIndianAccentVoice(voices) { return voices.find(voice => voice.name.includes(\"Indian\") || voice.name.includes(\"India\")); }\n\nfunction StopReading { if (synth.speaking) { synth.cancel; } }\n\nEssential ingredients\n1. (1) The Indian Penal Code is hereby repealed\n2. (2) Notwithstanding the repeal of the Code referred to in sub-section\n3. (1), it shall not affect,—\n4. (a) the previous operation of the Code so repealed or anything duly done or suffered thereunder; or\n5. (b) any right, privilege, obligation or liability acquired, accrued or incurred under the Code so repealed; or\n6. (c) any penalty, or punishment incurred in respect of any offences committed against the Code so repealed; or\n7. (d) any investigation or remedy in respect of any such penalty, or punishment; or\n8. (e) any proceeding, investigation or remedy in respect of any such penalty or punishment as aforesaid, and any such proceeding or remedy may be instituted, continued or enforced, and any such penalty may be imposed as if that Code had not been repealed\n9. (3) Notwithstanding such repeal, anything done or any action taken under the said Code shall be deemed to have been done or taken under the corresponding provisions of this Sanhita\n10. (4) The mention of particular matters in sub-section\n11. (2) shall not be held to prejudice or affect the general application of section 6 of the General Clauses Act, 1897 with regard to the effect of the repeal\n12. let mybutton = document.getElementById(\"myBtn\"); let mybuttonL = document.getElementById(\"myBtnL\"); var stepdataid = document.getElementById(\"stepdata\"); window.onscroll = function { scrollFunction };\n13. const synth = window.speechSynthesis;\n14. function backbutton { history.back; }\n15. function backbuttonHome { window.open(\"./MobileIndex.html\", \"_self\"); }\n16. function backbuttonBNS { window.open(\"./MobileIndexBNS.html\", \"_self\"); }",
+  "glance": "BNS s. 358 — Repeal and savings.",
+  "sections": [
+    {
+      "id": "bns-358-rule",
+      "title": "The legal rule",
+      "order": 1,
+      "content": [
+        "358. (1) The Indian Penal Code is hereby repealed",
+        "(2) Notwithstanding the repeal of the Code referred to in sub-section (1), it shall not affect,—",
+        "(a) the previous operation of the Code so repealed or anything duly done or suffered thereunder; or",
+        "(b) any right, privilege, obligation or liability acquired, accrued or incurred under the Code so repealed; or",
+        "(c) any penalty, or punishment incurred in respect of any offences committed against the Code so repealed; or",
+        "(d) any investigation or remedy in respect of any such penalty, or punishment; or",
+        "(e) any proceeding, investigation or remedy in respect of any such penalty or punishment as aforesaid, and any such proceeding or remedy may be instituted, continued or enforced, and any such penalty may be imposed as if that Code had not been repealed",
+        "(3) Notwithstanding such repeal, anything done or any action taken under the said Code shall be deemed to have been done or taken under the corresponding provisions of this Sanhita",
+        "(4) The mention of particular matters in sub-section (2) shall not be held to prejudice or affect the general application of section 6 of the General Clauses Act, 1897 with regard to the effect of the repeal",
+        "—————",
+        "Note: For Reference only",
+        "let mybutton = document.getElementById(\"myBtn\"); let mybuttonL = document.getElementById(\"myBtnL\"); var stepdataid = document.getElementById(\"stepdata\"); window.onscroll = function { scrollFunction };",
+        "const synth = window.speechSynthesis;",
+        "function backbutton { history.back; }",
+        "function backbuttonHome { window.open(\"./MobileIndex.html\", \"_self\"); }",
+        "function backbuttonBNS { window.open(\"./MobileIndexBNS.html\", \"_self\"); }",
+        "function backbuttonBNSS { window.open(\"./MobileIndexBNSS.html\", \"_self\"); }",
+        "function backbuttonBSA { window.open(\"./MobileIndexBSA.html\", \"_self\"); }",
+        "function backbuttonChapter(urldata) { var url = window.location.href; var fragment = url.split(\"#\")[1]; if (fragment == null) { if (url.includes('BNS')) { window.open(\"./MobileIndexBNS.html\", \"_self\"); } if (url.includes('BNSS')) { window.open(\"./MobileIndexBNSS.html\", \"_self\"); } if (url.includes('BSA')) { window.open(\"./MobileIndexBSA.html\", \"_self\"); } } else { window.open(urldata + url.split(\"#\")[1], \"_self\"); } if (synth.speaking) { synth.cancel; } }",
+        "function onloadpage { var url = window.location.href; var strId = url.split(\"#\")[1]; if (strId !== null && strId !== undefined) { document.getElementById(strId).style.backgroundColor = \"#FFD580\"; } }",
+        "function onloadpageChapter { const url = window.location.href; const parts = url.split(\"#\"); var strId = parts[1]; if (strId !== null && strId !== undefined) { var parentSpan = document.getElementById(strId); if (parentSpan) { for (var i = 0; i 380 || document.documentElement.scrollTop > 380) { stepdataid.className = 'stepsafter'; } else { stepdataid.className = 'steps'; } }",
+        "function topFunction { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; if (synth.speaking) { synth.cancel; } }",
+        "function searchPrevious { var curCount = parseInt(document.getElementById('curCount').innerHTML); if (curCount == 0) { document.getElementById('searchButtonID').disabled = false; } var searchTerm = document.getElementById('searchInput').value; window.find(searchTerm, false, true); if (curCount > 0) { curCount--; document.getElementById('curCount').innerHTML = curCount; document.getElementById('searchButtonID').disabled = true; } if (synth.speaking) { synth.cancel; } }",
+        "function searchNext { var searchInputID = document.getElementById('searchInput'); var searchTerm = searchInputID.value;",
+        "if (searchTerm.length > 0) { searchAndCount; var curCount = parseInt(document.getElementById('curCount').innerHTML); if (curCount > 0) { document.getElementById('searchButtonID').disabled = true; } else { document.getElementById('searchButtonID').disabled = false; } setTimeout( => { window.find(searchTerm); }, 400) } if (synth.speaking) { synth.cancel; } }",
+        "function searchAndCount { var searchTerm = document.getElementById('searchInput').value; var textToSearch = document.body.innerText || document.body.textContent; var searchExp = new RegExp(searchTerm, 'gi'); var matches = textToSearch.match(searchExp); if (matches) { var curCount = parseInt(document.getElementById('curCount').innerHTML); if (curCount Print.steps { text-align: center; font-weight: bold; }",
+        "' + strHeading + '",
+        "'); printWindow.document.write(content); printWindow.document.write(' '); printWindow.document.close; printWindow.print; if (synth.speaking) { synth.cancel; } }",
+        "function showSearchBar { var searchBar = document.getElementById('search-container'); searchBar.style.display = 'block'; }",
+        "function toggleSearchBar { document.getElementById('searchInput').value = ''; document.getElementById('totalCount').innerHTML = \"0\"; document.getElementById('curCount').innerHTML = \"0\"; var searchBar = document.getElementById('search-container'); if (searchBar.style.display === 'none') { searchBar.style.display = 'block'; } else { searchBar.style.display = 'none'; } document.getElementById('searchButtonID').disabled = false; }",
+        "function handleKeyPress { let elem = document.getElementById('searchButtonID'); elem.disabled = false;",
+        "elem.addEventListener(\"keydown\", function (event) { if (event.key === 'Enter') { searchNext; } });",
+        "}",
+        "function resetSearch { document.getElementById('searchButtonID').disabled = false; document.getElementById('searchInput').value = ''; document.getElementById('totalCount').innerHTML = \"0\"; document.getElementById('curCount').innerHTML = \"0\"; }",
+        "function readParagraph(id, speed) { const paragraphToRead = document.getElementById(id).textContent; if (synth.speaking) { synth.cancel; } if ('speechSynthesis' in window) { const utterance = new SpeechSynthesisUtterance(paragraphToRead); utterance.lang = \"en\"; utterance.rate = speed || 1.0; const voices = synth.getVoices; const indianAccentVoice = findIndianAccentVoice(voices); if (indianAccentVoice) { utterance.voice = indianAccentVoice; } synth.speak(utterance); } }",
+        "function findIndianAccentVoice(voices) { return voices.find(voice => voice.name.includes(\"Indian\") || voice.name.includes(\"India\")); }",
+        "function StopReading { if (synth.speaking) { synth.cancel; } }"
+      ]
+    },
+    {
+      "id": "bns-358-ing",
+      "title": "Essential ingredients",
+      "order": 2,
+      "content": [
+        "(1) The Indian Penal Code is hereby repealed",
+        "(2) Notwithstanding the repeal of the Code referred to in sub-section",
+        "(1), it shall not affect,—",
+        "(a) the previous operation of the Code so repealed or anything duly done or suffered thereunder; or",
+        "(b) any right, privilege, obligation or liability acquired, accrued or incurred under the Code so repealed; or",
+        "(c) any penalty, or punishment incurred in respect of any offences committed against the Code so repealed; or",
+        "(d) any investigation or remedy in respect of any such penalty, or punishment; or",
+        "(e) any proceeding, investigation or remedy in respect of any such penalty or punishment as aforesaid, and any such proceeding or remedy may be instituted, continued or enforced, and any such penalty may be imposed as if that Code had not been repealed",
+        "(3) Notwithstanding such repeal, anything done or any action taken under the said Code shall be deemed to have been done or taken under the corresponding provisions of this Sanhita",
+        "(4) The mention of particular matters in sub-section",
+        "(2) shall not be held to prejudice or affect the general application of section 6 of the General Clauses Act, 1897 with regard to the effect of the repeal",
+        "let mybutton = document.getElementById(\"myBtn\"); let mybuttonL = document.getElementById(\"myBtnL\"); var stepdataid = document.getElementById(\"stepdata\"); window.onscroll = function { scrollFunction };",
+        "const synth = window.speechSynthesis;",
+        "function backbutton { history.back; }",
+        "function backbuttonHome { window.open(\"./MobileIndex.html\", \"_self\"); }",
+        "function backbuttonBNS { window.open(\"./MobileIndexBNS.html\", \"_self\"); }"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "bns-358-ex-1",
+      "title": "Example 1 — simple (teaching example)",
+      "description": "A short everyday fact pattern is tested against “Repeal and savings”. Name BNS s. 358, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+    },
+    {
+      "id": "bns-358-ex-2",
+      "title": "Example 2 — practical application / distinction (teaching example)",
+      "description": "Change one ingredient so that BNS s. 358 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "bns-358-hypo",
+      "title": "Chamber Practice Hypothetical",
+      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Repeal and savings” under BNS s. 358 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
+      "question": "Whether BNS s. 358 (Repeal and savings) applies, and how structured written arguments should be framed.",
+      "applicableLaw": "BNS s. 358. Chapter XX — Repeal and Savings. ",
+      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 358 (Repeal and savings), Chapter XX — Repeal and Savings.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) The Indian Penal Code is hereby repealed\n   (2) (2) Notwithstanding the repeal of the Code referred to in sub-section\n   (3) (1), it shall not affect,—\n   (4) (a) the previous operation of the Code so repealed or anything duly done or suffered thereunder; or\n   (5) (b) any right, privilege, obligation or liability acquired, accrued or incurred under the Code so repealed; or\n   (6) (c) any penalty, or punishment incurred in respect of any offences committed against the Code so repealed; or\n   (7) (d) any investigation or remedy in respect of any such penalty, or punishment; or\n   (8) (e) any proceeding, investigation or remedy in respect of any such penalty or punishment as aforesaid, and any such proceeding or remedy may be instituted, continued or enforced, and any such penalty may be imposed as if that Code had not been repealed\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 358 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 358 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
+      "conclusion": "The result depends on proof of the ingredients of BNS s. 358. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "bns-358-trap-1",
+      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
+      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 358."
+    },
+    {
+      "id": "bns-358-trap-2",
+      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
+      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+    },
+    {
+      "id": "bns-358-trap-3",
+      "trap": "Giving a one-line summary or shortened explanation of the provision.",
+      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "bns-358-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment & Statutory Note: BNS s. 358 (Repeal and savings)",
+      "answer": "Introduction. BNS s. 358 deals with Repeal and savings. It sits in Chapter XX — Repeal and Savings of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Repeal and savings. The Indian Penal Code, 1860 is repealed. Anything done, any right, privilege, obligation, liability, penalty or punishment under the IPC, and any investigation or proceeding in respect of an IPC offence, continues. Offences committed before 1 July 2024 are IPC offences.\n\nLegal rule. In student language: BNS s. 358 is the rule on “Repeal and savings”. The section provides that (1) The Indian Penal Code is hereby repealed. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) The Indian Penal Code is hereby repealed\n2. (2) Notwithstanding the repeal of the Code referred to in sub-section\n3. (1), it shall not affect,—\n4. (a) the previous operation of the Code so repealed or anything duly done or suffered thereunder; or\n5. (b) any right, privilege, obligation or liability acquired, accrued or incurred under the Code so repealed; or\n6. (c) any penalty, or punishment incurred in respect of any offences committed against the Code so repealed; or\n7. (d) any investigation or remedy in respect of any such penalty, or punishment; or\n8. (e) any proceeding, investigation or remedy in respect of any such penalty or punishment as aforesaid, and any such proceeding or remedy may be instituted, continued or enforced, and any such penalty may be imposed as if that Code had not been repealed\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 358. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 358 is the complete current-law heading for Repeal and savings. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
+      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+    },
+    {
+      "id": "bns-358-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions: BNS s. 358 (Repeal and savings) with Statutory Scheme & Judicial Analysis",
+      "answer": "Introduction. BNS s. 358 deals with Repeal and savings. It sits in Chapter XX — Repeal and Savings of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Repeal and savings. The Indian Penal Code, 1860 is repealed. Anything done, any right, privilege, obligation, liability, penalty or punishment under the IPC, and any investigation or proceeding in respect of an IPC offence, continues. Offences committed before 1 July 2024 are IPC offences.\n\nLegal rule. In student language: BNS s. 358 is the rule on “Repeal and savings”. The section provides that (1) The Indian Penal Code is hereby repealed. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) The Indian Penal Code is hereby repealed\n2. (2) Notwithstanding the repeal of the Code referred to in sub-section\n3. (1), it shall not affect,—\n4. (a) the previous operation of the Code so repealed or anything duly done or suffered thereunder; or\n5. (b) any right, privilege, obligation or liability acquired, accrued or incurred under the Code so repealed; or\n6. (c) any penalty, or punishment incurred in respect of any offences committed against the Code so repealed; or\n7. (d) any investigation or remedy in respect of any such penalty, or punishment; or\n8. (e) any proceeding, investigation or remedy in respect of any such penalty or punishment as aforesaid, and any such proceeding or remedy may be instituted, continued or enforced, and any such penalty may be imposed as if that Code had not been repealed\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 358. Do not import a defence from a different chapter unless the question requires it.\n\nConclusion. BNS s. 358 is the complete current-law heading for Repeal and savings. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. The IPC goes. Offences committed before 1 July 2024 stay under the old Code.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 358. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 358.”",
+      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Navtej Singh Johar v. Union of India",
+      "year": 2018,
+      "citation": "(2018) 10 SCC 1",
+      "holding": "IPC 377 read down for consenting adults. BNS does not re-enact 377. Consensual same-sex intimacy is not an offence; non-consensual male rape is a legislative gap."
+    },
+    {
+      "name": "Joseph Shine v. Union of India",
+      "year": 2019,
+      "citation": "(2019) 3 SCC 39",
+      "holding": "Adultery (IPC 497) struck down. BNS does not revive it. Marital infidelity is not, by itself, a crime."
+    }
+  ],
+  "examTips": [
+    "Cite BNS s. 358 for offences on or after 1 July 2024.",
+    "Ingredients first, illustration second, application third, conclusion last.",
+    "Date of the offence, not date of the FIR, decides IPC vs BNS on substance."
+  ],
+  "examFrameworks": [
+    {
+      "question": "Structured Legal Assessment: BNS s. 358 (Repeal and savings).",
+      "steps": [
+        "Introduce BNS s. 358 and Chapter XX — Repeal and Savings.",
+        "Define / state the meaning in your own words.",
+        "List the essential ingredients.",
+        "Give one labelled example and map it to an ingredient.",
+        "State any express condition.",
+        "Apply in four to six sentences.",
+        "Conclude with the current citation — BNS s. 358."
+      ]
+    },
+    {
+      "question": "Comprehensive Chamber Written Submissions: BNS s. 358 with connected statutory scheme.",
+      "steps": [
+        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
+        "Place the section in the Chapter and explain why the heading exists.",
+        "Work a second hypothetical in which one ingredient fails.",
+        "Add analytical comment on a condition or practical difficulty.",
+        "IRAC application to the problem facts.",
+        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
+        "Current-law conclusion."
+      ]
+    }
+  ],
+  "answerSkeleton": [
+    "Introduction — BNS s. 358, Repeal and savings.",
+    "Meaning and definition.",
+    "Ingredients.",
+    "Illustration mapped to an ingredient.",
+    "Explanation / exception.",
+    "Application (IRAC).",
+    "Conclusion and current citation."
+  ],
+  "revisionPoints": [
+    "BNS s. 358: Repeal and savings.",
+    "First ingredient: (1) The Indian Penal Code is hereby repealed",
+    "No printed illustration — prepare an original labelled example.",
+    "For offences on or after 1 July 2024, the correct citation is BNS s. 358 — Repeal and savings. Older books and judgments may still print a historical number (—). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+  ],
+  "relatedTopics": []
 }
+
 export default content
