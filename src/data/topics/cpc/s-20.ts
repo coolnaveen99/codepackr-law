@@ -1,0 +1,214 @@
+import type { TopicContent } from '../loadTopicContent'
+
+const content: TopicContent = {
+  "glance": "Section 20 CPC - Other suits to be instituted where defendants reside or cause of action arises. Civil-procedure treatise covering statutory anatomy, mandatory conditions, forum, limitation, connected provisions, judicial authority and chamber drafting.",
+  "study": "Introduction and meaning\nSection 20 CPC of the Code of Civil Procedure, 1908 is titled “Other suits to be instituted where defendants reside or cause of action arises”. Cluster: Place of suing.\nA suit that is not covered by ss. 16–19 may be filed where the defendant resides or carries on business, or where the cause of action arises in whole or in part.\n\nDoctrinal and Practice Scope\nA concise legal assessment requires meaning, essentials, one illustration and leading authority. Comprehensive written submissions require IRAC problem analysis, neighbour distinctions, and a failure scenario.\n\nEssentials of the provision\n1. Residence / business / work of the defendant\n2. Cause of action — whole or part\n3. Explanation: a corporation resides where it has its sole or principal office, or where the cause also arises at a subordinate office\n\nStatutory Illustration (applies)\nContract made in Chennai, breached in Bengaluru, defendant lives in Hyderabad. Plaintiff may sue in any of those three courts.\n\nCounter-Illustration (fails)\nImmovable-property title suit cannot be parked in the defendant’s city under s. 20. ss. 16–17 govern.\n\nLandmark Judicial Authority\n1. ABC Laminart Pvt. Ltd. v. A.P. Agencies (1989), AIR 1989 SC 1239: Part of the cause of action and ouster clauses — jurisdiction clauses are read strictly.\n\nConnected provisions & distinctions\nss. 15–19; s. 21 (objection to jurisdiction).\n\nCurrent-law status\nCite Section 20 CPC of the Code of Civil Procedure, 1908. CPC was not replaced by BNSS.\n\nDispatcher compliance\nSection 20 CPC - Other suits to be instituted where defendants reside or cause of action arises must be read as part of the Code of Civil Procedure, 1908, which remains in force and is not repealed by BNSS. Distinguish a substantive CPC section from an Order and Rule. Identify the stage of the civil suit, the competent court, the pleading or application before the Court, the limitation or case-management deadline, and the precise procedural order sought.\n\nCivil litigation proof and procedural fairness\nThe party asserting the procedural foundation must establish it from the pleadings, orders, service record and admissible documents. Where electronic filings, notices, orders or account records are relied upon, check the applicable BSA 2023 route, including ss. 63, 104 and 109 where relevant. Electronic evidence does not cure defective service, lack of jurisdiction, limitation or failure to plead a material fact.\n\nSenior Counsel close\nApply the CPC provision in sequence: identify the cause of action or procedural stage, read the exact statutory or Order/Rule language, test jurisdiction and limitation, distinguish the nearest procedural remedy, apply the facts, and seek a precise order. Avoid treating procedural rules as automatic dismissal unless the Code or binding authority makes that consequence mandatory.",
+  "examples": [
+    {
+      "id": "cpc-s-20-ill-1",
+      "title": "Example 1 - Procedural conditions satisfied",
+      "illustrationType": "practical",
+      "description": "The pleadings and court record establish the stage, jurisdiction, service, limitation and every condition of Section 20 CPC. The Court applies the provision and grants the precise procedural relief sought."
+    },
+    {
+      "id": "cpc-s-20-ill-2",
+      "title": "Example 2 - Threshold defect",
+      "illustrationType": "fail-scenario",
+      "description": "A party invokes Section 20 CPC without pleading the material fact, filing within limitation, proving service or satisfying the jurisdictional condition. The Court identifies the missing foundation and refuses or defers the relief according to the Code."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "cpc-s-20-hypo",
+      "title": "Chamber Practice Hypothetical: Section 20 CPC - Other suits to be instituted where defendants reside or cause of action arises",
+      "facts": "A party seeks an order under Section 20 CPC in a pending civil suit. The opponent raises objections on jurisdiction, limitation, pleadings, service and the authenticity of an electronic record relied upon in the application.",
+      "question": "Whether the application under Section 20 CPC is maintainable and what order should the civil court pass.",
+      "applicableLaw": "Code of Civil Procedure, 1908: Section 20 CPC, connected provisions the connected provisions of the CPC; Limitation Act, 1963; BSA ss. 63, 104 and 109 where applicable.",
+      "analysis": "1. Identify the civil proceeding and procedural stage. 2. Apply the exact statutory or Order/Rule conditions. 3. Test jurisdiction, limitation, service, pleading and prejudice. 4. Examine electronic material under the applicable BSA route. 5. Distinguish the nearest remedy and issue a precise order supported by the record.",
+      "conclusion": "Section 20 CPC applies only if its procedural conditions and the court's jurisdiction are established. The Court should grant, modify, refuse or defer the application according to the proved record and the governing CPC discretion."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "cpc-s-20-trap-1",
+      "trap": "Quoting Section 20 CPC without identifying the stage, conditions and precise relief.",
+      "correction": "A CPC answer must connect the text to pleadings, jurisdiction, limitation, evidence and the order the Court can lawfully pass."
+    },
+    {
+      "id": "cpc-s-20-trap-2",
+      "trap": "Treating CPC as repealed by BNSS.",
+      "correction": "BNSS is criminal procedure. The Code of Civil Procedure, 1908 remains the governing general civil procedure statute."
+    },
+    {
+      "id": "cpc-s-20-trap-3",
+      "trap": "Using electronic material without foundation or treating every procedural defect as fatal.",
+      "correction": "Apply BSA requirements to digital records and distinguish curable irregularity, prejudice, jurisdictional failure and mandatory statutory consequence."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "20-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment: Section 20 CPC (Other suits to be instituted where defendants reside or cause of action arises).",
+      "answer": "Introduction. Section 20 CPC CPC is titled “Other suits to be instituted where defendants reside or cause of action arises”.\n\nMeaning. A suit that is not covered by ss. 16–19 may be filed where the defendant resides or carries on business, or where the cause of action arises in whole or in part.\n\nEssentials.\n1. Residence / business / work of the defendant\n2. Cause of action — whole or part\n3. Explanation: a corporation resides where it has its sole or principal office, or where the cause also arises at a subordinate office\n\nIllustration. Contract made in Chennai, breached in Bengaluru, defendant lives in Hyderabad. Plaintiff may sue in any of those three courts.\n\nAuthority. ABC Laminart Pvt. Ltd. v. A.P. Agencies (1989): Part of the cause of action and ouster clauses — jurisdiction clauses are read strictly.\n\nConclusion. Section 20 CPC of the Code of Civil Procedure, 1908 is the working heading."
+    },
+    {
+      "id": "20-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions on Section 20 CPC.",
+      "answer": "Introduction. Section 20 CPC CPC is titled “Other suits to be instituted where defendants reside or cause of action arises”.\n\nMeaning. A suit that is not covered by ss. 16–19 may be filed where the defendant resides or carries on business, or where the cause of action arises in whole or in part.\n\nEssentials.\n1. Residence / business / work of the defendant\n2. Cause of action — whole or part\n3. Explanation: a corporation resides where it has its sole or principal office, or where the cause also arises at a subordinate office\n\nIllustration. Contract made in Chennai, breached in Bengaluru, defendant lives in Hyderabad. Plaintiff may sue in any of those three courts.\n\nAuthority. ABC Laminart Pvt. Ltd. v. A.P. Agencies (1989): Part of the cause of action and ouster clauses — jurisdiction clauses are read strictly.\n\nConclusion. Section 20 CPC of the Code of Civil Procedure, 1908 is the working heading.\n\nComprehensive Written Submissions.\n\nPlacement. Cluster: Place of suing. ss. 15–19; s. 21 (objection to jurisdiction).\n\nComment. ss. 15–19; s. 21 (objection to jurisdiction).\n\nIRAC facts. Contract made in Chennai, breached in Bengaluru, defendant lives in Hyderabad. Plaintiff may sue in any of those three courts.\n\nCounter-condition. Immovable-property title suit cannot be parked in the defendant’s city under s. 20. ss. 16–17 govern.\n\nIssue. Does Section 20 CPC apply?\n\nRule. A suit that is not covered by ss. 16–19 may be filed where the defendant resides or carries on business, or where the cause of action arises in whole or in part.\n\nApplication. Map each fact to a condition. Name the missing condition in the counter-illustration.\n\nConclusion. First illustration: Section 20 CPC applies. Second: it fails. Close with Section 20 CPC CPC, 1908."
+    }
+  ],
+  "cases": [
+    {
+      "name": "ABC Laminart Pvt. Ltd. v. A.P. Agencies",
+      "year": 1989,
+      "citation": "AIR 1989 SC 1239",
+      "holding": "Part of the cause of action and ouster clauses — jurisdiction clauses are read strictly."
+    }
+  ],
+  "bareActPointers": [
+    "Section 20 CPC",
+    "Code of Civil Procedure, 1908"
+  ],
+  "examTips": [
+    "Heading → meaning → essentials → illustration → case → conclusion",
+    "Name the connected Order if a Rule is in play.",
+    "Start with s. 16. Use s. 20 only for the residual class."
+  ],
+  "examFrameworks": [
+    {
+      "draftingCategory": "brief",
+      "steps": [
+        "Heading",
+        "Meaning",
+        "Essentials",
+        "Illustration",
+        "Case",
+        "Conclusion"
+      ]
+    },
+    {
+      "draftingCategory": "submissions",
+      "steps": [
+        "Issue",
+        "Rule",
+        "Neighbour",
+        "Apply",
+        "Fail-illustration",
+        "Authority",
+        "Conclusion"
+      ]
+    }
+  ],
+  "revisionPoints": [
+    "Section 20 CPC: Other suits to be instituted where defendants reside or cause of action arises.",
+    "A suit that is not covered by ss. 16–19 may be filed where the defendant resides or carries on business, or where the cause of action arises in whole or in part.",
+    "CPC 1908 is current law."
+  ],
+  "answerSkeleton": [
+    "Citation",
+    "Meaning",
+    "Essentials",
+    "Illustration / counter-illustration",
+    "Authority",
+    "Conclusion"
+  ],
+  "sections": [
+    {
+      "id": "cpc-s-20-module-1",
+      "title": "Provenance, Legislative Objective and Procedural Foundation",
+      "order": 1,
+      "content": [
+        "Section 20 CPC - Other suits to be instituted where defendants reside or cause of action arises operates within the Place of suing cluster of the Code of Civil Procedure, 1908.",
+        "Civil procedure is intended to secure fair adjudication, orderly pleadings, effective hearings and enforceable judgments, not to create technical traps detached from prejudice and justice.",
+        "Read the provision with the pleadings, the nature of the suit, the stage of proceedings and the court’s case-management responsibility."
+      ]
+    },
+    {
+      "id": "cpc-s-20-module-2",
+      "title": "Textual Anatomy, Conditions and Connected Rules",
+      "order": 2,
+      "content": [
+        "Deconstruct the exact language of Section 20 CPC, including its clauses, provisos, explanations and discretion.",
+        "the connected provisions of the CPC must be distinguished rather than merged into a single generic procedural test.",
+        "Identify the Order and Rule that supplies the working procedure for the statutory power."
+      ]
+    },
+    {
+      "id": "cpc-s-20-module-3",
+      "title": "Mandatory Procedural Ingredients and Relief Test",
+      "order": 3,
+      "content": [
+        "Identify a live civil proceeding, the party or process affected and the procedural event that activates the provision.",
+        "Establish each condition precedent from the plaint, written statement, application, service record, order or admitted document.",
+        "Address prejudice, waiver, jurisdiction, maintainability and whether the Court has discretion or must grant the procedural consequence.",
+        "State the exact relief: return or rejection, stay, injunction, framing of issue, adjournment, execution direction, appeal, revision or another CPC order."
+      ]
+    },
+    {
+      "id": "cpc-s-20-module-4",
+      "title": "BSA 2023 Evidence and Burden in Civil Procedure",
+      "order": 4,
+      "content": [
+        "BSA s. 104 supplies the ordinary burden framework for foundational facts; a party cannot obtain a procedural order by assertion alone.",
+        "BSA s. 109 applies to facts especially within knowledge only after the asserting party establishes the legal and factual foundation.",
+        "Where electronic pleadings, service records, contracts, accounts or court records are relied upon, test the applicable BSA s. 63 route, authenticity, custody and weight."
+      ]
+    },
+    {
+      "id": "cpc-s-20-module-5",
+      "title": "Forum, Limitation, Case Management and Appellate Roadmap",
+      "order": 5,
+      "content": [
+        "Identify territorial, pecuniary and subject-matter jurisdiction, including any express or implied statutory bar and the competent appellate forum.",
+        "Check the Limitation Act, 1963 article or the special statute and calculate the period from the correct cause of action, decree, order or knowledge date.",
+        "For pleadings and commercial suits, check the applicable filing and case-management timetable; distinguish directory timelines from mandatory forfeiture rules.",
+        "State whether the immediate remedy is appeal, revision, review, reference, execution objection, amendment, rejection, return, injunction or a separate suit."
+      ]
+    }
+  ],
+  "provisions": [
+    {
+      "actId": "cpc",
+      "actName": "Code of Civil Procedure, 1908",
+      "provisionId": "cpc-s-20",
+      "section": "s. 20",
+      "title": "Other suits to be instituted where defendants reside or cause of action arises"
+    },
+    {
+      "actId": "bsa",
+      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
+      "provisionId": "bsa-s-63",
+      "section": "s. 63",
+      "title": "Admissibility of electronic records where applicable"
+    }
+  ],
+  "distinctions": [
+    {
+      "id": "cpc-s-20-distinction",
+      "title": "Section 20 CPC - Other suits to be instituted where defendants reside or cause of action arises and connected civil procedure",
+      "left": "Section 20 CPC",
+      "right": "the connected provisions of the CPC",
+      "rows": [
+        {
+          "point": "Function",
+          "left": "Other suits to be instituted where defendants reside or cause of action arises",
+          "right": "Connected jurisdiction, pleading, evidence, remedy or execution rule"
+        },
+        {
+          "point": "Trigger",
+          "left": "Its own procedural conditions",
+          "right": "A different stage or condition must be independently established"
+        },
+        {
+          "point": "Consequence",
+          "left": "Specific CPC order or direction",
+          "right": "Do not import the neighbour's consequence automatically"
+        }
+      ]
+    }
+  ]
+}
+
+export default content

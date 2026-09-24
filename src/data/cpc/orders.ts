@@ -75,6 +75,6 @@ export function cpcOrderById(id: string) {
 }
 
 export function cpcOrderIdFromTopicId(topicId: string): string | null {
-  const match = topicId.match(/^o-([0-9]+[a-z]*)$/i)
+  const match = topicId.match(/^(?:o|order)-([0-9]+[a-z]*)$/i)
   return match?.[1] ?? null
 }

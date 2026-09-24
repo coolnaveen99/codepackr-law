@@ -1,13 +1,12 @@
-# CodePackr Law — Repository Instructions
+# CodePackr Law — Repository Instructions & Dual-Track Standard
 
-- CodePackr Law is a privacy-first Indian law student platform.
-- Keep practice data, answers, scores, bookmarks, and study activity client-side unless explicitly required otherwise.
-- Use standard Indian legal terminology and identify applicable statute/version/date when provisions may change.
-- Do not present legal information as legal advice.
-- Prefer primary legislation and authoritative judgments/sources; distinguish statutory text, explanation, and commentary.
-- Reuse canonical records in src/data/knowledge before duplicating doctrines, case law, definitions, or maxims.
-- Preserve existing routes and topic IDs.
-- Topic notes should read like textbook chapters, not bare-act digests.
-- Support 10-mark and 16-mark answers where applicable without fabricating authorities.
-- Source changes require lint and production build.
-- Documentation-only, README-only, and .github-only changes do not require a production build; CI and Vercel are configured to ignore those changes.
+1. **Dual-Track Core Identity**: CodePackr Law (`law.codepackr.com`) is a 100% privacy-first, client-side Indian law platform serving both **law students / judicial service aspirants** (exam preparation, doubt resolution, statutory deconstruction) and **junior advocates / practicing lawyers** (chamber drafting, trial/appellate procedural reference, evidentiary burden, and courtroom argument preparation).
+2. **Absolute Client-Side Execution**: Keep all user notes, draft pleadings, mock answers, scores, search queries, and session history strictly in the client's local browser memory (`localStorage` on explicit opt-in only). No telemetry, no cloud logging, no data leakage.
+3. **Forensic Statutory Precision**: Distinguish between primary statutory text, legislative explanations, official provisos, non-obstante clauses, and judicial commentary. Always cite exact sections, sub-sections, and applicable commencement dates.
+4. **2024 Reform Grandfathering**: For criminal law, enforce the statutory boundary: BNS, BNSS, and BSA apply to offences committed on or after 1 July 2024. Proceedings initiated under IPC, CrPC, or IEA must be handled with explicit transitional reference to Section 531 BNSS and constitutional principles under Article 20(1).
+5. **No Legal Advice Disclaimer**: Maintain clear educational and professional reference attribution; content provides academic analysis and practical reference, not client-retained legal advice.
+6. **Canonical Knowledge Hierarchy**: Search `src/data/knowledge` before creating or referencing any legal doctrine, landmark precedent, maxim, or procedural rule. Reuse canonical IDs (`TYPE:CATEGORY:SLUG`).
+7. **Book Chapter Depth**: Topic notes must read like comprehensive treatise chapters (benchmark: `src/data/topics/cpc/s-32.ts`), integrating essential ingredients, exceptions, procedural forum/limitation, labelled educational hypotheticals, leading ratio decidendi, and full 10-mark / 16-mark examination answers.
+8. **Drafting & Pleadings Rigour**: For petition and pleading formats, provide authentic procedural anatomy (cause title, jurisdiction, limitation, material facts under O. VI R. 2 CPC, statutory grounds, prayer, and verification affidavit) rather than generic placeholders.
+9. **Zero-Hallucination & Verification**: Never fabricate an act, section number, citation, judicial holding, or official illustration. If any authority is unverified from primary Gazette/India Code or Supreme Court reports, tag it as `needs-review`.
+10. **Build & Quality Assurance**: Every substantive code change requires `npm run lint` and `npm run build` to pass cleanly. Documentation-only changes do not trigger production builds.

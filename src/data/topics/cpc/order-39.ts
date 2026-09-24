@@ -1,0 +1,219 @@
+import type { TopicContent } from '../loadTopicContent'
+
+const content: TopicContent = {
+  "glance": "Order XXXIX CPC - Temporary Injunctions and Interlocutory Orders. Civil-procedure treatise covering statutory anatomy, mandatory conditions, forum, limitation, connected provisions, judicial authority and chamber drafting.",
+  "study": "Introduction and meaning\nOrder XXXIX CPC of the Code of Civil Procedure, 1908 is titled “Temporary Injunctions and Interlocutory Orders”. Cluster: Interim.\nTemporary injunctions and interlocutory orders. The working test is prima facie case, balance of convenience, and irreparable injury.\n\nDoctrinal and Practice Scope\nA concise legal assessment requires meaning, essentials, one illustration and leading authority. Comprehensive written submissions require IRAC problem analysis, neighbour distinctions, and a failure scenario.\n\nEssentials of the provision\n1. rr. 1–2 injunction\n2. Three-fold test\n3. r. 2A consequence of disobedience\n4. r. 3 notice — ex parte only with recorded reasons and immediate follow-up\n5. r. 4 variation / discharge\n\nStatutory Illustration (applies)\nBuilder starts raising a floor on a disputed wall. Neighbour shows title papers and ongoing damage. Court grants a status-quo injunction.\n\nCounter-Illustration (fails)\nMoney claim with no unique property at risk. Damages are adequate. Injunction is usually refused.\n\nLandmark Judicial Authority\n1. Dalpat Kumar v. Prahlad Singh (1992), (1992) 1 SCC 719: The three-pronged test for temporary injunction.\n2. Morgan Stanley v. Kartick Das (1994), (1994) 4 SCC 225: Ex parte injunction is exceptional; reasons and prompt hearing are required.\n\nConnected provisions & distinctions\ns. 94; Order XXXVIII attachment before judgment; s. 151.\n\nCurrent-law status\nCite Order XXXIX CPC of the Code of Civil Procedure, 1908. CPC was not replaced by BNSS.\n\nDispatcher compliance\nOrder XXXIX CPC - Temporary Injunctions and Interlocutory Orders must be read as part of the Code of Civil Procedure, 1908, which remains in force and is not repealed by BNSS. Distinguish a substantive CPC section from an Order and Rule. Identify the stage of the civil suit, the competent court, the pleading or application before the Court, the limitation or case-management deadline, and the precise procedural order sought.\n\nCivil litigation proof and procedural fairness\nThe party asserting the procedural foundation must establish it from the pleadings, orders, service record and admissible documents. Where electronic filings, notices, orders or account records are relied upon, check the applicable BSA 2023 route, including ss. 63, 104 and 109 where relevant. Electronic evidence does not cure defective service, lack of jurisdiction, limitation or failure to plead a material fact.\n\nSenior Counsel close\nApply the CPC provision in sequence: identify the cause of action or procedural stage, read the exact statutory or Order/Rule language, test jurisdiction and limitation, distinguish the nearest procedural remedy, apply the facts, and seek a precise order. Avoid treating procedural rules as automatic dismissal unless the Code or binding authority makes that consequence mandatory.",
+  "examples": [
+    {
+      "id": "cpc-order-39-ill-1",
+      "title": "Example 1 - Procedural conditions satisfied",
+      "illustrationType": "practical",
+      "description": "The pleadings and court record establish the stage, jurisdiction, service, limitation and every condition of Order XXXIX CPC. The Court applies the provision and grants the precise procedural relief sought."
+    },
+    {
+      "id": "cpc-order-39-ill-2",
+      "title": "Example 2 - Threshold defect",
+      "illustrationType": "fail-scenario",
+      "description": "A party invokes Order XXXIX CPC without pleading the material fact, filing within limitation, proving service or satisfying the jurisdictional condition. The Court identifies the missing foundation and refuses or defers the relief according to the Code."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "cpc-order-39-hypo",
+      "title": "Chamber Practice Hypothetical: Order XXXIX CPC - Temporary Injunctions and Interlocutory Orders",
+      "facts": "A party seeks an order under Order XXXIX CPC in a pending civil suit. The opponent raises objections on jurisdiction, limitation, pleadings, service and the authenticity of an electronic record relied upon in the application.",
+      "question": "Whether the application under Order XXXIX CPC is maintainable and what order should the civil court pass.",
+      "applicableLaw": "Code of Civil Procedure, 1908: Order XXXIX CPC, connected provisions the connected provisions of the CPC; Limitation Act, 1963; BSA ss. 63, 104 and 109 where applicable.",
+      "analysis": "1. Identify the civil proceeding and procedural stage. 2. Apply the exact statutory or Order/Rule conditions. 3. Test jurisdiction, limitation, service, pleading and prejudice. 4. Examine electronic material under the applicable BSA route. 5. Distinguish the nearest remedy and issue a precise order supported by the record.",
+      "conclusion": "Order XXXIX CPC applies only if its procedural conditions and the court's jurisdiction are established. The Court should grant, modify, refuse or defer the application according to the proved record and the governing CPC discretion."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "cpc-order-39-trap-1",
+      "trap": "Quoting Order XXXIX CPC without identifying the stage, conditions and precise relief.",
+      "correction": "A CPC answer must connect the text to pleadings, jurisdiction, limitation, evidence and the order the Court can lawfully pass."
+    },
+    {
+      "id": "cpc-order-39-trap-2",
+      "trap": "Treating CPC as repealed by BNSS.",
+      "correction": "BNSS is criminal procedure. The Code of Civil Procedure, 1908 remains the governing general civil procedure statute."
+    },
+    {
+      "id": "cpc-order-39-trap-3",
+      "trap": "Using electronic material without foundation or treating every procedural defect as fatal.",
+      "correction": "Apply BSA requirements to digital records and distinguish curable irregularity, prejudice, jurisdictional failure and mandatory statutory consequence."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "o-39-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment: Order XXXIX CPC (Temporary Injunctions and Interlocutory Orders).",
+      "answer": "Introduction. Order XXXIX CPC CPC is titled “Temporary Injunctions and Interlocutory Orders”.\n\nMeaning. Temporary injunctions and interlocutory orders. The working test is prima facie case, balance of convenience, and irreparable injury.\n\nEssentials.\n1. rr. 1–2 injunction\n2. Three-fold test\n3. r. 2A consequence of disobedience\n4. r. 3 notice — ex parte only with recorded reasons and immediate follow-up\n5. r. 4 variation / discharge\n\nIllustration. Builder starts raising a floor on a disputed wall. Neighbour shows title papers and ongoing damage. Court grants a status-quo injunction.\n\nAuthority. Dalpat Kumar v. Prahlad Singh (1992): The three-pronged test for temporary injunction.\n\nConclusion. Order XXXIX CPC of the Code of Civil Procedure, 1908 is the working heading."
+    },
+    {
+      "id": "o-39-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions on Order XXXIX CPC.",
+      "answer": "Introduction. Order XXXIX CPC CPC is titled “Temporary Injunctions and Interlocutory Orders”.\n\nMeaning. Temporary injunctions and interlocutory orders. The working test is prima facie case, balance of convenience, and irreparable injury.\n\nEssentials.\n1. rr. 1–2 injunction\n2. Three-fold test\n3. r. 2A consequence of disobedience\n4. r. 3 notice — ex parte only with recorded reasons and immediate follow-up\n5. r. 4 variation / discharge\n\nIllustration. Builder starts raising a floor on a disputed wall. Neighbour shows title papers and ongoing damage. Court grants a status-quo injunction.\n\nAuthority. Dalpat Kumar v. Prahlad Singh (1992): The three-pronged test for temporary injunction.\n\nConclusion. Order XXXIX CPC of the Code of Civil Procedure, 1908 is the working heading.\n\nComprehensive Written Submissions.\n\nPlacement. Cluster: Interim. s. 94; Order XXXVIII attachment before judgment; s. 151.\n\nSecond authority. Morgan Stanley v. Kartick Das (1994): Ex parte injunction is exceptional; reasons and prompt hearing are required.\n\nIRAC facts. Builder starts raising a floor on a disputed wall. Neighbour shows title papers and ongoing damage. Court grants a status-quo injunction.\n\nCounter-condition. Money claim with no unique property at risk. Damages are adequate. Injunction is usually refused.\n\nIssue. Does Order XXXIX CPC apply?\n\nRule. Temporary injunctions and interlocutory orders. The working test is prima facie case, balance of convenience, and irreparable injury.\n\nApplication. Map each fact to a condition. Name the missing condition in the counter-illustration.\n\nConclusion. First illustration: Order XXXIX CPC applies. Second: it fails. Close with Order XXXIX CPC CPC, 1908."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Dalpat Kumar v. Prahlad Singh",
+      "year": 1992,
+      "citation": "(1992) 1 SCC 719",
+      "holding": "The three-pronged test for temporary injunction."
+    },
+    {
+      "name": "Morgan Stanley v. Kartick Das",
+      "year": 1994,
+      "citation": "(1994) 4 SCC 225",
+      "holding": "Ex parte injunction is exceptional; reasons and prompt hearing are required."
+    }
+  ],
+  "bareActPointers": [
+    "Order XXXIX CPC",
+    "Code of Civil Procedure, 1908"
+  ],
+  "examTips": [
+    "Heading → meaning → essentials → illustration → case → conclusion",
+    "Name the Rule inside the Order.",
+    "Say “prima facie”. Do not decide the suit in the interlocutory order."
+  ],
+  "examFrameworks": [
+    {
+      "draftingCategory": "brief",
+      "steps": [
+        "Heading",
+        "Meaning",
+        "Essentials",
+        "Illustration",
+        "Case",
+        "Conclusion"
+      ]
+    },
+    {
+      "draftingCategory": "submissions",
+      "steps": [
+        "Issue",
+        "Rule",
+        "Neighbour",
+        "Apply",
+        "Fail-illustration",
+        "Authority",
+        "Conclusion"
+      ]
+    }
+  ],
+  "revisionPoints": [
+    "Order XXXIX CPC: Temporary Injunctions and Interlocutory Orders.",
+    "Temporary injunctions and interlocutory orders. The working test is prima facie case, balance of convenience, and irreparable injury.",
+    "CPC 1908 is current law."
+  ],
+  "answerSkeleton": [
+    "Citation",
+    "Meaning",
+    "Essentials",
+    "Illustration / counter-illustration",
+    "Authority",
+    "Conclusion"
+  ],
+  "sections": [
+    {
+      "id": "cpc-order-39-module-1",
+      "title": "Provenance, Legislative Objective and Procedural Foundation",
+      "order": 1,
+      "content": [
+        "Order XXXIX CPC - Temporary Injunctions and Interlocutory Orders operates within the Interim cluster of the Code of Civil Procedure, 1908.",
+        "Civil procedure is intended to secure fair adjudication, orderly pleadings, effective hearings and enforceable judgments, not to create technical traps detached from prejudice and justice.",
+        "Read the provision with the pleadings, the nature of the suit, the stage of proceedings and the court’s case-management responsibility."
+      ]
+    },
+    {
+      "id": "cpc-order-39-module-2",
+      "title": "Textual Anatomy, Conditions and Connected Rules",
+      "order": 2,
+      "content": [
+        "Deconstruct the exact language of Order XXXIX CPC, including its clauses, provisos, explanations and discretion.",
+        "the connected provisions of the CPC must be distinguished rather than merged into a single generic procedural test.",
+        "Name the applicable Rule inside the Order before advising on the application."
+      ]
+    },
+    {
+      "id": "cpc-order-39-module-3",
+      "title": "Mandatory Procedural Ingredients and Relief Test",
+      "order": 3,
+      "content": [
+        "Identify a live civil proceeding, the party or process affected and the procedural event that activates the provision.",
+        "Establish each condition precedent from the plaint, written statement, application, service record, order or admitted document.",
+        "Address prejudice, waiver, jurisdiction, maintainability and whether the Court has discretion or must grant the procedural consequence.",
+        "State the exact relief: return or rejection, stay, injunction, framing of issue, adjournment, execution direction, appeal, revision or another CPC order."
+      ]
+    },
+    {
+      "id": "cpc-order-39-module-4",
+      "title": "BSA 2023 Evidence and Burden in Civil Procedure",
+      "order": 4,
+      "content": [
+        "BSA s. 104 supplies the ordinary burden framework for foundational facts; a party cannot obtain a procedural order by assertion alone.",
+        "BSA s. 109 applies to facts especially within knowledge only after the asserting party establishes the legal and factual foundation.",
+        "Where electronic pleadings, service records, contracts, accounts or court records are relied upon, test the applicable BSA s. 63 route, authenticity, custody and weight."
+      ]
+    },
+    {
+      "id": "cpc-order-39-module-5",
+      "title": "Forum, Limitation, Case Management and Appellate Roadmap",
+      "order": 5,
+      "content": [
+        "Identify territorial, pecuniary and subject-matter jurisdiction, including any express or implied statutory bar and the competent appellate forum.",
+        "Check the Limitation Act, 1963 article or the special statute and calculate the period from the correct cause of action, decree, order or knowledge date.",
+        "For pleadings and commercial suits, check the applicable filing and case-management timetable; distinguish directory timelines from mandatory forfeiture rules.",
+        "State whether the immediate remedy is appeal, revision, review, reference, execution objection, amendment, rejection, return, injunction or a separate suit."
+      ]
+    }
+  ],
+  "provisions": [
+    {
+      "actId": "cpc",
+      "actName": "Code of Civil Procedure, 1908",
+      "provisionId": "cpc-order-39",
+      "title": "Order XXXIX - Temporary Injunctions and Interlocutory Orders"
+    },
+    {
+      "actId": "bsa",
+      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
+      "provisionId": "bsa-s-63",
+      "section": "s. 63",
+      "title": "Admissibility of electronic records where applicable"
+    }
+  ],
+  "distinctions": [
+    {
+      "id": "cpc-order-39-distinction",
+      "title": "Order XXXIX CPC - Temporary Injunctions and Interlocutory Orders and connected civil procedure",
+      "left": "Order XXXIX CPC",
+      "right": "the connected provisions of the CPC",
+      "rows": [
+        {
+          "point": "Function",
+          "left": "Temporary Injunctions and Interlocutory Orders",
+          "right": "Connected jurisdiction, pleading, evidence, remedy or execution rule"
+        },
+        {
+          "point": "Trigger",
+          "left": "Its own procedural conditions",
+          "right": "A different stage or condition must be independently established"
+        },
+        {
+          "point": "Consequence",
+          "left": "Specific CPC order or direction",
+          "right": "Do not import the neighbour's consequence automatically"
+        }
+      ]
+    }
+  ]
+}
+
+export default content

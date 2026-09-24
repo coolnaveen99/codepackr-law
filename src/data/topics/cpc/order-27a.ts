@@ -1,0 +1,219 @@
+import type { TopicContent } from '../loadTopicContent'
+
+const content: TopicContent = {
+  "glance": "Order XXVII-A CPC - Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument. Civil-procedure treatise covering statutory anatomy, mandatory conditions, forum, limitation, connected provisions, judicial authority and chamber drafting.",
+  "study": "Introduction and meaning\nOrder XXVII-A CPC of the Code of Civil Procedure, 1908 is titled “Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument”. Cluster: Constitutional questions.\nOrder XXVII-A CPC is titled “Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument”. It belongs to Constitutional questions. The student must write the working rule, the person who moves the court, the conditions, and the consequence if the conditions fail.\n\nDoctrinal and Practice Scope\nA concise legal assessment requires meaning, essentials, one illustration and leading authority. Comprehensive written submissions require IRAC problem analysis, neighbour distinctions, and a failure scenario.\n\nEssentials of the provision\n1. Cite Order XXVII-A CPC and state the title in one line.\n2. Name the particular Rule the facts use.\n3. Does an appeal lie\n4. Which court is moved\n5. What is the exact error — jurisdiction, apparent error, or something else\n6. Apply the facts. If one condition is missing, say the heading fails.\n\nStatutory Illustration (applies)\nA party relies on Order XXVII-A CPC (Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument) at the proper stage of a civil suit. Every condition of the heading is present. The court applies Order XXVII-A CPC and grants the procedural consequence the section or Order provides.\n\nCounter-Illustration (fails)\nThe same party uses Order XXVII-A CPC at the wrong stage, or against a stranger, or where a more specific CPC heading already occupies the field. Order XXVII-A CPC is then not attracted. State that failure clearly — it is the crucial distinction in chamber practice.\n\nLandmark Judicial Authority\n1. Board of Control for Cricket in India v. Netaji Cricket Club (2005), (2005) 4 SCC 741: Review is not an appeal in disguise.\n2. K.K. Velusamy v. N. Palanisamy (2011), (2011) 11 SCC 275: s. 151 cannot override an express rule.\n\nConnected provisions & distinctions\ns. 113 reference; s. 114 / Order XLVII review; s. 115 revision; s. 151 inherent power.\n\nCurrent-law status\nCite Order XXVII-A CPC of the Code of Civil Procedure, 1908. CPC was not replaced by BNSS.\n\nDispatcher compliance\nOrder XXVII-A CPC - Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument must be read as part of the Code of Civil Procedure, 1908, which remains in force and is not repealed by BNSS. Distinguish a substantive CPC section from an Order and Rule. Identify the stage of the civil suit, the competent court, the pleading or application before the Court, the limitation or case-management deadline, and the precise procedural order sought.\n\nCivil litigation proof and procedural fairness\nThe party asserting the procedural foundation must establish it from the pleadings, orders, service record and admissible documents. Where electronic filings, notices, orders or account records are relied upon, check the applicable BSA 2023 route, including ss. 63, 104 and 109 where relevant. Electronic evidence does not cure defective service, lack of jurisdiction, limitation or failure to plead a material fact.\n\nSenior Counsel close\nApply the CPC provision in sequence: identify the cause of action or procedural stage, read the exact statutory or Order/Rule language, test jurisdiction and limitation, distinguish the nearest procedural remedy, apply the facts, and seek a precise order. Avoid treating procedural rules as automatic dismissal unless the Code or binding authority makes that consequence mandatory.",
+  "examples": [
+    {
+      "id": "cpc-order-27a-ill-1",
+      "title": "Example 1 - Procedural conditions satisfied",
+      "illustrationType": "practical",
+      "description": "The pleadings and court record establish the stage, jurisdiction, service, limitation and every condition of Order XXVII-A CPC. The Court applies the provision and grants the precise procedural relief sought."
+    },
+    {
+      "id": "cpc-order-27a-ill-2",
+      "title": "Example 2 - Threshold defect",
+      "illustrationType": "fail-scenario",
+      "description": "A party invokes Order XXVII-A CPC without pleading the material fact, filing within limitation, proving service or satisfying the jurisdictional condition. The Court identifies the missing foundation and refuses or defers the relief according to the Code."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "cpc-order-27a-hypo",
+      "title": "Chamber Practice Hypothetical: Order XXVII-A CPC - Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument",
+      "facts": "A party seeks an order under Order XXVII-A CPC in a pending civil suit. The opponent raises objections on jurisdiction, limitation, pleadings, service and the authenticity of an electronic record relied upon in the application.",
+      "question": "Whether the application under Order XXVII-A CPC is maintainable and what order should the civil court pass.",
+      "applicableLaw": "Code of Civil Procedure, 1908: Order XXVII-A CPC, connected provisions the connected provisions of the CPC; Limitation Act, 1963; BSA ss. 63, 104 and 109 where applicable.",
+      "analysis": "1. Identify the civil proceeding and procedural stage. 2. Apply the exact statutory or Order/Rule conditions. 3. Test jurisdiction, limitation, service, pleading and prejudice. 4. Examine electronic material under the applicable BSA route. 5. Distinguish the nearest remedy and issue a precise order supported by the record.",
+      "conclusion": "Order XXVII-A CPC applies only if its procedural conditions and the court's jurisdiction are established. The Court should grant, modify, refuse or defer the application according to the proved record and the governing CPC discretion."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "cpc-order-27a-trap-1",
+      "trap": "Quoting Order XXVII-A CPC without identifying the stage, conditions and precise relief.",
+      "correction": "A CPC answer must connect the text to pleadings, jurisdiction, limitation, evidence and the order the Court can lawfully pass."
+    },
+    {
+      "id": "cpc-order-27a-trap-2",
+      "trap": "Treating CPC as repealed by BNSS.",
+      "correction": "BNSS is criminal procedure. The Code of Civil Procedure, 1908 remains the governing general civil procedure statute."
+    },
+    {
+      "id": "cpc-order-27a-trap-3",
+      "trap": "Using electronic material without foundation or treating every procedural defect as fatal.",
+      "correction": "Apply BSA requirements to digital records and distinguish curable irregularity, prejudice, jurisdictional failure and mandatory statutory consequence."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "o-27A-q-brief",
+      "draftingCategory": "brief",
+      "question": "Legal Assessment: Order XXVII-A CPC (Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument).",
+      "answer": "Introduction. Order XXVII-A CPC CPC is titled “Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument”.\n\nMeaning. Order XXVII-A CPC is titled “Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument”. It belongs to Constitutional questions. The student must write the working rule, the person who moves the court, the conditions, and the consequence if the conditions fail.\n\nEssentials.\n1. Cite Order XXVII-A CPC and state the title in one line.\n2. Name the particular Rule the facts use.\n3. Does an appeal lie\n4. Which court is moved\n5. What is the exact error — jurisdiction, apparent error, or something else\n6. Apply the facts. If one condition is missing, say the heading fails.\n\nIllustration. A party relies on Order XXVII-A CPC (Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument) at the proper stage of a civil suit. Every condition of the heading is present. The court applies Order XXVII-A CPC and grants the procedural consequence the section or Order provides.\n\nAuthority. Board of Control for Cricket in India v. Netaji Cricket Club (2005): Review is not an appeal in disguise.\n\nConclusion. Order XXVII-A CPC of the Code of Civil Procedure, 1908 is the working heading."
+    },
+    {
+      "id": "o-27A-q-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions on Order XXVII-A CPC.",
+      "answer": "Introduction. Order XXVII-A CPC CPC is titled “Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument”.\n\nMeaning. Order XXVII-A CPC is titled “Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument”. It belongs to Constitutional questions. The student must write the working rule, the person who moves the court, the conditions, and the consequence if the conditions fail.\n\nEssentials.\n1. Cite Order XXVII-A CPC and state the title in one line.\n2. Name the particular Rule the facts use.\n3. Does an appeal lie\n4. Which court is moved\n5. What is the exact error — jurisdiction, apparent error, or something else\n6. Apply the facts. If one condition is missing, say the heading fails.\n\nIllustration. A party relies on Order XXVII-A CPC (Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument) at the proper stage of a civil suit. Every condition of the heading is present. The court applies Order XXVII-A CPC and grants the procedural consequence the section or Order provides.\n\nAuthority. Board of Control for Cricket in India v. Netaji Cricket Club (2005): Review is not an appeal in disguise.\n\nConclusion. Order XXVII-A CPC of the Code of Civil Procedure, 1908 is the working heading.\n\nComprehensive Written Submissions.\n\nPlacement. Cluster: Constitutional questions. s. 113 reference; s. 114 / Order XLVII review; s. 115 revision; s. 151 inherent power.\n\nSecond authority. K.K. Velusamy v. N. Palanisamy (2011): s. 151 cannot override an express rule.\n\nIRAC facts. A party relies on Order XXVII-A CPC (Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument) at the proper stage of a civil suit. Every condition of the heading is present. The court applies Order XXVII-A CPC and grants the procedural consequence the section or Order provides.\n\nCounter-condition. The same party uses Order XXVII-A CPC at the wrong stage, or against a stranger, or where a more specific CPC heading already occupies the field. Order XXVII-A CPC is then not attracted. State that failure clearly — it is the crucial distinction in chamber practice.\n\nIssue. Does Order XXVII-A CPC apply?\n\nRule. Order XXVII-A CPC is titled “Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument”. It belongs to Constitutional questions. The student must write the working rule, the person who moves the court, the conditions, and the consequence if the conditions fail.\n\nApplication. Map each fact to a condition. Name the missing condition in the counter-illustration.\n\nConclusion. First illustration: Order XXVII-A CPC applies. Second: it fails. Close with Order XXVII-A CPC CPC, 1908."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Board of Control for Cricket in India v. Netaji Cricket Club",
+      "year": 2005,
+      "citation": "(2005) 4 SCC 741",
+      "holding": "Review is not an appeal in disguise."
+    },
+    {
+      "name": "K.K. Velusamy v. N. Palanisamy",
+      "year": 2011,
+      "citation": "(2011) 11 SCC 275",
+      "holding": "s. 151 cannot override an express rule."
+    }
+  ],
+  "bareActPointers": [
+    "Order XXVII-A CPC",
+    "Code of Civil Procedure, 1908"
+  ],
+  "examTips": [
+    "Heading → meaning → essentials → illustration → case → conclusion",
+    "Name the Rule inside the Order.",
+    "Appeal corrects error where it lies. Review is a narrow re-look by the same court. Revision watches jurisdiction."
+  ],
+  "examFrameworks": [
+    {
+      "draftingCategory": "brief",
+      "steps": [
+        "Heading",
+        "Meaning",
+        "Essentials",
+        "Illustration",
+        "Case",
+        "Conclusion"
+      ]
+    },
+    {
+      "draftingCategory": "submissions",
+      "steps": [
+        "Issue",
+        "Rule",
+        "Neighbour",
+        "Apply",
+        "Fail-illustration",
+        "Authority",
+        "Conclusion"
+      ]
+    }
+  ],
+  "revisionPoints": [
+    "Order XXVII-A CPC: Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument.",
+    "Order XXVII-A CPC is titled “Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument”. It belongs to Constitutional questions. The student must write the working rule, the person who moves the court, the conditions, and the consequence if the conditions fail.",
+    "CPC 1908 is current law."
+  ],
+  "answerSkeleton": [
+    "Citation",
+    "Meaning",
+    "Essentials",
+    "Illustration / counter-illustration",
+    "Authority",
+    "Conclusion"
+  ],
+  "sections": [
+    {
+      "id": "cpc-order-27a-module-1",
+      "title": "Provenance, Legislative Objective and Procedural Foundation",
+      "order": 1,
+      "content": [
+        "Order XXVII-A CPC - Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument operates within the Constitutional questions cluster of the Code of Civil Procedure, 1908.",
+        "Civil procedure is intended to secure fair adjudication, orderly pleadings, effective hearings and enforceable judgments, not to create technical traps detached from prejudice and justice.",
+        "Read the provision with the pleadings, the nature of the suit, the stage of proceedings and the court’s case-management responsibility."
+      ]
+    },
+    {
+      "id": "cpc-order-27a-module-2",
+      "title": "Textual Anatomy, Conditions and Connected Rules",
+      "order": 2,
+      "content": [
+        "Deconstruct the exact language of Order XXVII-A CPC, including its clauses, provisos, explanations and discretion.",
+        "the connected provisions of the CPC must be distinguished rather than merged into a single generic procedural test.",
+        "Name the applicable Rule inside the Order before advising on the application."
+      ]
+    },
+    {
+      "id": "cpc-order-27a-module-3",
+      "title": "Mandatory Procedural Ingredients and Relief Test",
+      "order": 3,
+      "content": [
+        "Identify a live civil proceeding, the party or process affected and the procedural event that activates the provision.",
+        "Establish each condition precedent from the plaint, written statement, application, service record, order or admitted document.",
+        "Address prejudice, waiver, jurisdiction, maintainability and whether the Court has discretion or must grant the procedural consequence.",
+        "State the exact relief: return or rejection, stay, injunction, framing of issue, adjournment, execution direction, appeal, revision or another CPC order."
+      ]
+    },
+    {
+      "id": "cpc-order-27a-module-4",
+      "title": "BSA 2023 Evidence and Burden in Civil Procedure",
+      "order": 4,
+      "content": [
+        "BSA s. 104 supplies the ordinary burden framework for foundational facts; a party cannot obtain a procedural order by assertion alone.",
+        "BSA s. 109 applies to facts especially within knowledge only after the asserting party establishes the legal and factual foundation.",
+        "Where electronic pleadings, service records, contracts, accounts or court records are relied upon, test the applicable BSA s. 63 route, authenticity, custody and weight."
+      ]
+    },
+    {
+      "id": "cpc-order-27a-module-5",
+      "title": "Forum, Limitation, Case Management and Appellate Roadmap",
+      "order": 5,
+      "content": [
+        "Identify territorial, pecuniary and subject-matter jurisdiction, including any express or implied statutory bar and the competent appellate forum.",
+        "Check the Limitation Act, 1963 article or the special statute and calculate the period from the correct cause of action, decree, order or knowledge date.",
+        "For pleadings and commercial suits, check the applicable filing and case-management timetable; distinguish directory timelines from mandatory forfeiture rules.",
+        "State whether the immediate remedy is appeal, revision, review, reference, execution objection, amendment, rejection, return, injunction or a separate suit."
+      ]
+    }
+  ],
+  "provisions": [
+    {
+      "actId": "cpc",
+      "actName": "Code of Civil Procedure, 1908",
+      "provisionId": "cpc-order-27a",
+      "title": "Order XXVII-A - Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument"
+    },
+    {
+      "actId": "bsa",
+      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
+      "provisionId": "bsa-s-63",
+      "section": "s. 63",
+      "title": "Admissibility of electronic records where applicable"
+    }
+  ],
+  "distinctions": [
+    {
+      "id": "cpc-order-27a-distinction",
+      "title": "Order XXVII-A CPC - Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument and connected civil procedure",
+      "left": "Order XXVII-A CPC",
+      "right": "the connected provisions of the CPC",
+      "rows": [
+        {
+          "point": "Function",
+          "left": "Suits Involving a Substantial Question of Law as to the Interpretation of the Constitution or as to the Validity of any Statutory Instrument",
+          "right": "Connected jurisdiction, pleading, evidence, remedy or execution rule"
+        },
+        {
+          "point": "Trigger",
+          "left": "Its own procedural conditions",
+          "right": "A different stage or condition must be independently established"
+        },
+        {
+          "point": "Consequence",
+          "left": "Specific CPC order or direction",
+          "right": "Do not import the neighbour's consequence automatically"
+        }
+      ]
+    }
+  ]
+}
+
+export default content

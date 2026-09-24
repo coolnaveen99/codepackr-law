@@ -1,0 +1,210 @@
+import type { TopicContent } from '../topicTypes'
+
+const content: TopicContent = {
+  "glance": "IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17). Complete Tax treatise with statutory deconstruction, examples, verified authorities, forum analysis and chamber drafting.",
+  "study": "Topic at a glance\nIT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17) is a registered section in Taxation Laws. IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17) is governed by Income-tax Act, 1961 and Central Goods and Services Tax Act, 2017, together with the Constitution and applicable rules, notifications and circulars. identify the tax period, charging statute, amendment or notification in force, taxable event, jurisdictional notice and statutory appeal or writ route.\n\nProvenance, purpose and doctrinal foundation\nThe topic exists to organise a legally enforceable rule, doctrine or professional procedure. Read the statutory text, constitutional setting, institutional purpose and binding authorities together. The correct analysis begins with the legal question and avoids replacing the governing enactment with a generic textbook summary.\n\nTextual anatomy and operative test\n1. Identify the governing enactment, section, article, rule, doctrine or professional standard named by the topic.\n2. Deconstruct definitions, conditions precedent, exceptions, provisos, explanations, jurisdictional limits and remedies.\n3. Distinguish the topic from its nearest neighbour: IT Act s. 2(24) — Definition of \"Income\"; IT Act ss. 4 & 5 — Charge of income-tax & Scope of total income; IT Act s. 6 — Residence in India (Residential status tests).\n4. Apply the rule to the record and state which fact satisfies or fails each ingredient.\n\nCourtroom and evidentiary roadmap\nCompetent forum: the assessing authority, appellate authority, ITAT, GST appellate forum, High Court on a substantial question or constitutional writ jurisdiction, and Supreme Court according to the statute. the assessee and Revenue bear burdens according to the charging provision, exemption or deduction claimed, assessment record, statutory presumption and appellate issue. Where electronic records are relied upon, apply BSA 2023 s. 63 and the applicable burden provisions without treating electronic admissibility as proof of the ultimate fact. Identify limitation, notice, maintainability, alternative remedy and the exact relief sought.\n\nCurrent-law close\nIncome-tax Act, 1961 and Central Goods and Services Tax Act, 2017, together with the Constitution and applicable rules, notifications and circulars. identify the tax period, charging statute, amendment or notification in force, taxable event, jurisdictional notice and statutory appeal or writ route Always name the statute and provision in the final advice.",
+  "sections": [
+    {
+      "id": "it-s-15-17-module-1",
+      "title": "Provenance, Legislative Objective and Doctrinal Foundations",
+      "order": 1,
+      "content": [
+        "IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17) sits within Taxation Laws and is governed by Income-tax Act, 1961 and Central Goods and Services Tax Act, 2017, together with the Constitution and applicable rules, notifications and circulars.",
+        "Explain the legal mischief, institutional purpose and constitutional value before applying the rule.",
+        "Use the named statute, doctrine or professional standard rather than a generic substitute."
+      ]
+    },
+    {
+      "id": "it-s-15-17-module-2",
+      "title": "Textual Anatomy, Exceptions and Connected Rules",
+      "order": 2,
+      "content": [
+        "Identify every operative clause, condition, explanation, exception and remedy in IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17).",
+        "Distinguish it from IT Act s. 2(24) — Definition of \"Income\"; IT Act ss. 4 & 5 — Charge of income-tax & Scope of total income; IT Act s. 6 — Residence in India (Residential status tests).",
+        "Historical or comparative law may explain development but cannot replace the current governing rule."
+      ]
+    },
+    {
+      "id": "it-s-15-17-module-3",
+      "title": "Mandatory Proving Ingredients and Legal Test",
+      "order": 3,
+      "content": [
+        "Identify the forum and procedural stage.",
+        "Prove each jurisdictional, substantive and procedural condition from the record.",
+        "Address the principal defence, exception, limitation and precise legal consequence."
+      ]
+    },
+    {
+      "id": "it-s-15-17-module-4",
+      "title": "BSA 2023 Burden and Electronic Evidence Checkpoints",
+      "order": 4,
+      "content": [
+        "the assessee and Revenue bear burdens according to the charging provision, exemption or deduction claimed, assessment record, statutory presumption and appellate issue",
+        "Apply BSA s. 104 to the ordinary foundational burden and s. 109 only to facts especially within knowledge after foundation is established.",
+        "Apply BSA s. 63 to electronic records where tendered, separately analysing relevance, authenticity, certificate and weight."
+      ]
+    },
+    {
+      "id": "it-s-15-17-module-5",
+      "title": "Procedural Roadmap, Forum and Limitation Checkpoints",
+      "order": 5,
+      "content": [
+        "Competent forum: the assessing authority, appellate authority, ITAT, GST appellate forum, High Court on a substantial question or constitutional writ jurisdiction, and Supreme Court according to the statute.",
+        "Check limitation, notice, alternative remedy, jurisdiction and statutory appeal or review route.",
+        "Transition and current law: identify the tax period, charging statute, amendment or notification in force, taxable event, jurisdictional notice and statutory appeal or writ route"
+      ]
+    }
+  ],
+  "provisions": [
+    {
+      "actId": "taxation",
+      "actName": "Income-tax Act, 1961 and Central Goods and Services Tax Act, 2017, together with the Constitution and applicable rules, notifications and circulars",
+      "provisionId": "taxation-it-s-15-17",
+      "title": "IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17)"
+    },
+    {
+      "actId": "bsa",
+      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
+      "provisionId": "bsa-s-63",
+      "section": "s. 63",
+      "title": "Electronic records where applicable"
+    }
+  ],
+  "examples": [
+    {
+      "id": "it-s-15-17-ill-1",
+      "title": "Example 1 - Rule applies",
+      "illustrationType": "practical",
+      "description": "The claimant or applicant establishes the forum, legal foundation, every mandatory ingredient and the requested remedy under IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17). The authority applies the rule on the proved record."
+    },
+    {
+      "id": "it-s-15-17-ill-2",
+      "title": "Example 2 - Boundary defect",
+      "illustrationType": "fail-scenario",
+      "description": "A material condition, jurisdictional fact, limitation requirement or evidentiary foundation for IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17) is missing. The Court identifies the defect and refuses, returns, remands or limits the relief according to law."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "it-s-15-17-hypo",
+      "title": "Chamber Practice Hypothetical: IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17)",
+      "facts": "A dispute invokes IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17). The opposing party challenges jurisdiction, limitation, statutory ingredients and an electronic record relied upon by the applicant.",
+      "question": "Whether relief under IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17) is maintainable and what order should the competent forum pass.",
+      "applicableLaw": "Income-tax Act, 1961 and Central Goods and Services Tax Act, 2017, together with the Constitution and applicable rules, notifications and circulars",
+      "analysis": "1. Identify the issue and forum. 2. State the governing rule. 3. Apply every ingredient to the facts. 4. Test evidence and burden, including BSA s. 63 where relevant. 5. Answer the defence and formulate the exact remedy.",
+      "conclusion": "Relief depends on proof of the statutory or doctrinal ingredients, jurisdiction and admissible foundation. The forum should grant only the order authorised by the governing law."
+    }
+  ],
+  "distinctions": [
+    {
+      "id": "it-s-15-17-distinction",
+      "title": "IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17) and connected legal concept",
+      "left": "IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17)",
+      "right": "IT Act s. 2(24) — Definition of \"Income\"; IT Act ss. 4 & 5 — Charge of income-tax & Scope of total income; IT Act s. 6 — Residence in India (Residential status tests)",
+      "rows": [
+        {
+          "point": "Source",
+          "left": "Income-tax Act, 1961 and Central Goods and Services Tax Act, 2017, together with the Constitution and applicable rules, notifications and circulars",
+          "right": "Connected statute, doctrine or procedural route"
+        },
+        {
+          "point": "Trigger",
+          "left": "Its own mandatory ingredients",
+          "right": "Different facts or conditions"
+        },
+        {
+          "point": "Consequence",
+          "left": "Specific relief or legal result",
+          "right": "Do not import this topic's consequence automatically"
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "it-s-15-17-trap-1",
+      "trap": "Treating IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17) as a heading-only topic.",
+      "correction": "A complete answer must state provenance, ingredients, evidence, forum, limitation, authority and relief."
+    },
+    {
+      "id": "it-s-15-17-trap-2",
+      "trap": "Using a generic legal rule without naming the governing statute.",
+      "correction": "Always identify the named enactment or constitutional source: Income-tax Act, 1961 and Central Goods and Services Tax Act, 2017, together with the Constitution and applicable rules, notifications and circulars."
+    },
+    {
+      "id": "it-s-15-17-trap-3",
+      "trap": "Treating a relevant electronic record as automatically proved.",
+      "correction": "Relevance, admissibility, foundation, burden and weight remain separate questions under the BSA route."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Govind Saran Ganga Saran v. Commissioner of Sales Tax",
+      "year": 1985,
+      "citation": "155 ITR 144 (SC)",
+      "court": "Supreme Court of India",
+      "facts": "The Court examined the components of a valid charging provision.",
+      "issue": "What must a tax levy clearly identify to be valid?",
+      "ratioDecidendi": "A valid levy ordinarily identifies the taxable event, person liable, rate and measure or value of the tax.",
+      "holding": "The Court treated these components as essential to a charging scheme.",
+      "relevance": "Use for charge, levy and statutory certainty."
+    },
+    {
+      "name": "Union of India v. Azadi Bachao Andolan",
+      "year": 2004,
+      "citation": "(2004) 10 SCC 1",
+      "court": "Supreme Court of India",
+      "facts": "The Court considered treaty benefits, circulars and tax avoidance arguments.",
+      "issue": "How should a valid tax treaty and administrative circular operate?",
+      "ratioDecidendi": "A treaty and valid administrative practice must be respected unless displaced by law; legitimate tax planning is not automatically evasion.",
+      "holding": "The Court upheld the challenged treaty approach in the circumstances.",
+      "relevance": "Use for statutory interpretation, treaties and tax planning."
+    },
+    {
+      "name": "Union of India v. Mohit Minerals Pvt. Ltd.",
+      "year": 2022,
+      "citation": "(2022) 10 SCC 700",
+      "court": "Supreme Court of India",
+      "facts": "The case concerned GST levy and the legal effect of a Council recommendation.",
+      "issue": "What is the constitutional and statutory force of GST Council recommendations?",
+      "ratioDecidendi": "GST Council recommendations have persuasive value within the constitutional design but are not automatically binding as primary legislation without statutory implementation.",
+      "holding": "The Court interpreted the federal GST framework accordingly.",
+      "relevance": "Use for GST levy, delegated action and constitutional federalism."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "it-s-15-17-brief",
+      "draftingCategory": "brief",
+      "question": "Structured Case Brief and legal problem assessment on IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17).",
+      "answer": "I. ISSUE AND JURISDICTION\nWhether IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17) applies to the stated facts and whether the chosen forum and remedy are maintainable.\n\nII. GOVERNING RULE\nIT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17) is governed by Income-tax Act, 1961 and Central Goods and Services Tax Act, 2017, together with the Constitution and applicable rules, notifications and circulars. identify the tax period, charging statute, amendment or notification in force, taxable event, jurisdictional notice and statutory appeal or writ route.\n\nIII. INGREDIENT APPLICATION\nIdentify each condition, connect it to the evidence and answer the principal exception or defence. Apply BSA s. 63 to digital records where relevant and state the initial burden precisely.\n\nIV. CONCLUSION\nGrant, refuse or modify the relief only to the extent authorised by the governing law and proved record.",
+      "explanation": "IRAC chamber brief."
+    },
+    {
+      "id": "it-s-15-17-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions on IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17).",
+      "answer": "I. STATEMENT OF FACTS AND PROCEDURAL PROVENANCE\nSet out the material facts, forum, procedural stage, notices, pleadings and documents.\n\nII. STATUTORY AND DOCTRINAL SCHEME\nDeconstruct IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17) under Income-tax Act, 1961 and Central Goods and Services Tax Act, 2017, together with the Constitution and applicable rules, notifications and circulars, including its purpose, conditions, exceptions and connected provisions.\n\nIII. SATISFACTION OF MANDATORY INGREDIENTS\nApply each ingredient to the record, address jurisdiction, limitation, maintainability and the opposing party's strongest objection.\n\nIV. VERIFIED AUTHORITIES\nUse the case ratios below only for the propositions they decide and distinguish contrary facts.\n\nV. EVIDENCE AND PRAYER\nAddress BSA ss. 63, 104 and 109 where relevant, then seek the precise order available from the assessing authority, appellate authority, ITAT, GST appellate forum, High Court on a substantial question or constitutional writ jurisdiction, and Supreme Court according to the statute.",
+      "explanation": "Senior Counsel written submissions."
+    }
+  ],
+  "bareActPointers": [
+    "Income-tax Act, 1961 and Central Goods and Services Tax Act, 2017, together with the Constitution and applicable rules, notifications and circulars",
+    "IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17)",
+    "BSA s. 63 and ss. 104, 109 where relevant"
+  ],
+  "examTips": [
+    "Name the governing statute in the opening sentence.",
+    "List ingredients before applying facts.",
+    "Separate jurisdiction, limitation, admissibility and merits.",
+    "Use only verified authorities and extract the ratio relevant to the issue."
+  ],
+  "revisionPoints": [
+    "IT Act ss. 15–17 — Salaries & Perquisites (IT Act ss. 15-17)",
+    "Mandatory ingredients and exceptions",
+    "Forum: the assessing authority, appellate authority, ITAT, GST appellate forum, High Court on a substantial question or constitutional writ jurisdiction, and Supreme Court according to the statute",
+    "BSA electronic evidence and burden checkpoints where applicable"
+  ]
+}
+
+export default content

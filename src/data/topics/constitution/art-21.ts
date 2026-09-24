@@ -1,163 +1,284 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
-const content: TopicContent = {
+/**
+ * Article 21 — Protection of life and personal liberty
+ * Senior Counsel & PhD standard — 5 Doctrinal Modules
+ * Brief + written submissions only (no collegiate mark rubrics)
+ */
+export default {
   glance:
-    'Article 21 says no person shall be deprived of life or personal liberty except according to procedure established by law. After Maneka Gandhi (1978) that procedure must be fair, just and reasonable. “Life” now includes dignity, privacy, health, livelihood and related claims developed by the Court — always tie them back to the text and a holding.',
-
-  study: `Topic at a glance
-Article 21 is the most examined Fundamental Right after equality. The text is short. The case law is not. A good answer starts with the words, then A.K. Gopalan, then Maneka Gandhi, then the expansion of “life”, then limits.
-
-What does the article say?
-“No person shall be deprived of life or personal liberty except according to procedure established by law.”
-
-Meaning
-Two interests: life, and personal liberty. One condition: a procedure established by law. “Person” is not confined to citizens. The State cannot take either interest by executive whim.
-
-Why does it exist?
-Personal liberty was the first casualty of emergency and colonial special powers. The framers chose “procedure established by law” rather than the American “due process” phrase. The Supreme Court later read fairness into that procedure, so Indian law now has a judicial due-process discipline without a textual amendment.
-
-Historical development
-A.K. Gopalan (1950) read Article 21 narrowly: if there is a law, and a procedure, the Court does not ask whether the procedure is fair. Maneka Gandhi (1978) rejected that silo. Procedure must be fair, just and reasonable; Articles 14, 19 and 21 are a [[REF:CONCEPT:CONSTITUTIONAL-LAW:GOLDEN-TRIANGLE|golden triangle]]. Francis Coralie Mullin and later cases expanded “life” beyond animal existence to dignity. K.S. Puttaswamy (2017) held privacy to be a Fundamental Right, located primarily in Article 21 read with 14 and 19.
-
-Essential elements
-1. A deprivation of life or personal liberty.
-2. By the State (Article 12).
-3. There must be a law.
-4. There must be a procedure.
-5. After Maneka, that procedure must be fair, just and reasonable — not a mere ritual.
-
-How the rule operates
-Ask: is there a deprivation? Is there a statute? Is the procedure fair in the Article 14 sense? If the claim is an expanded facet (health, livelihood, environment, speedy trial), name the case that actually established that facet. Do not invent a new facet in the examination hall.
-
-Exceptions and limits
-Article 21 is not a free-standing welfare code. Directive Principles guide the State; they are not themselves Article 21. During emergency, Article 359 may suspend enforcement of specified rights, with the post-44th-Amendment protection of Articles 20 and 21. Capital punishment survives on a restricted “rarest of rare” judicial discipline (Bachan Singh) — do not write that Article 21 abolishes the death penalty.
-
-Current-law position
-Text unchanged. Meaning: Gopalan is not good law on fairness of procedure. Maneka is the gateway. Puttaswamy is the privacy case. Always verify later holdings before expanding the list of “life includes…”.
-
-Educational note
-Original CodePackr explanation. Confirm the Bare Act and the judgment before treating a facet as settled.`,
+    'Article 21 provides that no person shall be deprived of life or personal liberty except according to procedure established by law. After Maneka Gandhi (1978), that procedure must be just, fair and reasonable, and the Article has become the constitutional foundation of dignity, privacy, livelihood, environment, speedy trial and public-law compensation.',
 
   sections: [
-    { id: 'a21-text', title: 'Text and two interests', order: 1, content: [
-      'Life and personal liberty are the two protected interests.',
-      'Deprivation is allowed only by a procedure established by law — and, after Maneka, a fair procedure.',
-    ]},
-    { id: 'a21-maneka', title: 'Maneka Gandhi turning point', order: 2, content: [
-      'Articles 14, 19 and 21 are read together.',
-      'A passport impoundment without a fair hearing failed that combined test.',
-    ]},
+    {
+      id: 'art-21-module-1',
+      title: 'Provenance, Legislative Objective & Doctrinal Foundations',
+      order: 1,
+      content: [
+        'Article 21 is the textual core of personal liberty in the Constitution of India: “No person shall be deprived of his life or personal liberty except according to procedure established by law.”',
+        'Constituent Assembly provenance: the framers rejected the American “due process of law” formulation after advice that it might obstruct social and agrarian reform. They preferred “procedure established by law” (drawing on Japanese constitutional language) so that a competent legislature’s procedure would ordinarily suffice.',
+        'Doctrinal trajectory: A.K. Gopalan v. State of Madras (1950) treated the clause as formal positivism—any enacted procedure, and Fundamental Rights as water-tight compartments. Maneka Gandhi v. Union of India (1978) overturned that isolation and required the procedure to be just, fair and reasonable, reading Articles 14, 19 and 21 as a Golden Triangle.',
+        'Legislative objective in modern application: to restrain arbitrary State deprivation of life and liberty while allowing lawful criminal process, preventive measures and regulation that survive proportionality and non-arbitrariness scrutiny.',
+        'Structural primacy: after the 44th Amendment, enforcement of Articles 20 and 21 cannot be suspended under Article 359 during a national emergency—correcting the ADM Jabalpur interregnum, later repudiated in Puttaswamy.',
+      ],
+    },
+    {
+      id: 'art-21-module-2',
+      title: 'Textual Anatomy, Provisos & Statutory Deconstruction',
+      order: 2,
+      content: [
+        '“No person”: natural persons—citizens and non-citizens (Chairman, Railway Board v. Chandrima Das). Corporations do not enjoy Article 21 “life” in the same sense as natural persons.',
+        '“Life”: not mere animal existence (Francis Coralie Mullin). Includes dignity, livelihood conditions, health, environment, and related unenumerated facets developed case-by-case.',
+        '“Personal liberty”: wider than freedom from physical restraint; encompasses autonomy, movement, privacy and related personal freedoms when read with Articles 14 and 19 (Maneka Gandhi; Puttaswamy).',
+        '“Except according to procedure established by law”: (i) there must be a valid law; (ii) the law must prescribe a procedure; (iii) post-Maneka, that procedure must be just, fair and reasonable and consistent with Articles 14 and 19 where those articles are engaged.',
+        'No internal proviso in Article 21 itself; limits and expansions operate through judicial construction, companion articles (20, 22, 19), and the emergency non-suspension rule under Article 359 as amended.',
+        'Companion textual architecture: Article 21A (education 6–14); Article 22 (arrest and preventive detention safeguards); Article 20 (ex post facto, double jeopardy, self-incrimination).',
+      ],
+    },
+    {
+      id: 'art-21-module-3',
+      title: 'Mandatory Proving Ingredients & Essential Elements',
+      order: 3,
+      content: [
+        '1. Deprivation: State action (or State-accountable action) that curtails life or personal liberty—detention, surveillance, eviction without process, custodial violence, denial of medical care in custody, etc.',
+        '2. Subject: A “person” (natural person) whose life or liberty is affected.',
+        '3. Absence of valid law: No legislative authorisation, or only executive instructions where statute is required (Puttaswamy legality prong; Kharak Singh line).',
+        '4. Defective procedure: Procedure exists but is unfair, opaque, non-hearing, discriminatory, or otherwise arbitrary (Maneka Gandhi).',
+        '5. Disproportionality (privacy and analogous intrusions): Failure of legality, legitimate aim, rational nexus, necessity (least restrictive means), and balancing (Puttaswamy).',
+        '6. For public-law compensation claims: Proof of constitutional tort—custodial death, illegal detention, or gross Article 21 violation attributable to the State (Rudul Sah; Nilabati Behera).',
+        '7. Defence burden once prima facie deprivation is shown: State must establish lawful source of power, fair procedure, and (where applicable) proportionate justification.',
+      ],
+    },
+    {
+      id: 'art-21-module-4',
+      title: 'Evidentiary Burdens under BSA 2023 (ss. 104–106 & s. 63)',
+      order: 4,
+      content: [
+        'Constitutional adjudication is not a pure BSA trial, but when facts are disputed—custody logs, medical cause of death, CCTV, electronic surveillance records—BSA principles guide the record.',
+        'Section 104 BSA: The party who asserts a fact must prove it. Petitioner alleging illegal detention or custodial violence must place primary facts; State must produce custody records, medical reports and authorising orders.',
+        'Sections 105–106 BSA: Special knowledge and exceptions—where facts are especially within State knowledge (lock-up registers, interrogation records), the Court may expect the State to explain; failure supports adverse inference in constitutional fact-finding.',
+        'Section 63 BSA: Electronic records (body-cam, CCTV, server logs, FRT databases) require the prescribed certificate and integrity conditions for formal proof in criminal/civil trials; constitutional courts may still examine electronic material for writ fact-finding while insisting on reliability.',
+        'Presumptions and official acts: Official records of arrest and production before Magistrate are starting points; fabricated or missing records strengthen the Article 21 case (D.K. Basu compliance culture).',
+        'Standard: Constitutional courts apply a flexible standard appropriate to writ jurisdiction—preponderance for compensatory public-law relief; criminal conviction still requires proof beyond reasonable doubt in the criminal forum.',
+      ],
+    },
+    {
+      id: 'art-21-module-5',
+      title: 'Procedural Roadmap, Competent Forum & Limitation Act Checkpoints',
+      order: 5,
+      content: [
+        'Forum: Supreme Court under Article 32 (Fundamental Right enforcement); High Court under Article 226 (habeas corpus, certiorari, mandamus, prohibition, quo warranto, and compensation).',
+        'Habeas corpus: Immediate production and legality of detention; no rigid alternative-remedy bar where liberty is at stake.',
+        'Alternative remedy: Ordinary rule of self-restraint yields where fundamental rights, natural justice, or pure questions of vires are raised (Whirlpool principle applied mutatis mutandis).',
+        'Limitation: Writs are discretionary; unexplained delay may defeat relief, but ongoing detention or continuing surveillance is a continuing wrong. Public-law compensation is not a pure tort suit under the Limitation Act, yet courts notice delay and laches.',
+        'Parallel tracks: Criminal prosecution (BNS/BNSS) for custodial offences; civil suit for private damages; writ for constitutional declaration, release, and public-law compensation—tracks are cumulative, not exclusive (Nilabati Behera).',
+        'Preliminary objections commonly raised by State: maintainability, delay, disputed facts requiring evidence, sovereign immunity (rejected for constitutional torts in the Nilabati line).',
+      ],
+    },
   ],
 
   provisions: [
     { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-21', article: 'Article 21', title: 'Protection of life and personal liberty' },
-    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-21a', article: 'Article 21A', title: 'Right to education' },
-    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-22', article: 'Article 22', title: 'Protection against arrest and detention' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-14', article: 'Article 14', title: 'Equality before law' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-19', article: 'Article 19', title: 'Protection of certain rights regarding freedom of speech, etc' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-22', article: 'Article 22', title: 'Protection against arrest and detention in certain cases' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-32', article: 'Article 32', title: 'Remedies for enforcement of rights conferred by this Part' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-226', article: 'Article 226', title: 'Power of High Courts to issue certain writs' },
   ],
 
   examples: [
-    { id: 'a21-ex-simple', title: 'Example 1 — simple', description: 'The police lock a person in a thana overnight with no entry in the diary and no production before a magistrate. That is a deprivation of personal liberty without a lawful, fair procedure.' },
-    { id: 'a21-ex-legal', title: 'Example 2 — legal', description: 'A law authorises interception of private communication. After Puttaswamy, the State must show legality, necessity and proportionality. A blanket, unguided interception power is the Article 21 problem.' },
+    {
+      id: 'art-21-ill-1',
+      title: 'Illustration 1 — Proving Conditions Met (Provision Applies)',
+      illustrationType: 'statutory',
+      description:
+        'Passport authorities impound a citizen’s passport under an executive circular, without reasons, without show-cause notice, and without post-decisional hearing. There is deprivation of personal liberty (right to travel abroad as an aspect of liberty after Maneka Gandhi), no fair procedure, and arbitrariness under Article 14. The order is liable to be quashed under Articles 21 and 14 read with 19.',
+    },
+    {
+      id: 'art-21-ill-2',
+      title: 'Illustration 2 — Boundary Defect / Exception (Provision Fails)',
+      illustrationType: 'fail-scenario',
+      description:
+        'An accused is convicted of murder after a full trial with counsel, cross-examination, reasoned judgment, and appellate review under BNSS. Sentence of life imprisonment is imposed under BNS. Deprivation of liberty is backed by a just, fair and reasonable procedure established by law. A bare Article 21 challenge to the conviction, without procedural illegality or jurisdictional error, fails.',
+    },
   ],
 
   hypotheticals: [
     {
-      id: 'a21-hypo',
-      title: 'Examination hypothetical',
-      facts: 'A municipal corporation shuts a pavement dweller’s shelter overnight, without notice, to “beautify” a road before a summit. The dweller has lived there for years and works nearby.',
-      question: 'Does Article 21 assist?',
-      applicableLaw: 'Article 21 (life includes livelihood and dignity in the Olga Tellis / Francis Coralie line); procedure must be fair after Maneka; eviction jurisprudence requires process.',
-      analysis: 'There is a deprivation of livelihood/shelter, which later cases have read into “life”. Even if the corporation has a statute, overnight eviction without notice is not a fair procedure. Article 14 (arbitrariness) and 21 travel together. The answer is not that pavement dwelling is a permanent title; it is that deprivation without process fails Article 21.',
-      conclusion: 'Article 21 is attracted. Relief is typically notice, hearing, and rehabilitation process as the Court has required in eviction cases — not a freehold in the pavement. Educational hypothetical.',
+      id: 'art-21-hypo',
+      title: 'Chamber Practice Hypothetical & Problem Solving (Senior Counsel Standard)',
+      facts:
+        'A Municipal Corporation deploys city-wide facial-recognition cameras that continuously capture and match biometric faceprints of all pedestrians against police databases. The system rests only on an administrative circular; there is no statute, no data-minimisation protocol, and no judicial warrant process. A resident approaches the High Court under Article 226.',
+      question:
+        'Is the regime consistent with Article 21 privacy as declared in K.S. Puttaswamy? What relief is available?',
+      applicableLaw:
+        'Article 21; Articles 14 and 19; K.S. Puttaswamy v. Union of India (2017); principle of legality for deprivation of liberty/privacy.',
+      analysis:
+        '1. Threshold & Jurisdiction: Article 226 is maintainable for enforcement of Fundamental Rights and for certiorari/prohibition against ultra vires executive action.\n2. Ingredient Verification: Continuous biometric capture is an intrusion into informational privacy (part of Article 21). Legality requires a valid law—not a mere circular.\n3. Evidentiary Scrutiny: State must produce the circular, vendor contracts, and retention architecture; absence of statutory foundation is often undisputed.\n4. Defenses & Rebuttal: “Public safety” is a legitimate aim only if a law exists and less restrictive alternatives are considered; mass suspicionless matching fails necessity and balancing under Puttaswamy.',
+      conclusion:
+        'The regime is unconstitutional at the legality threshold. The Court should restrain further deployment, direct deletion or sealing of unlawfully collected biometric logs, and require any future system to rest on clear legislation with procedural safeguards.',
     },
   ],
 
   distinctions: [
     {
-      id: 'a21-gopalan-maneka',
-      title: 'Gopalan and Maneka',
+      id: 'art-21-dist-gopalan-maneka',
+      title: 'A.K. Gopalan (1950) vs Maneka Gandhi (1978)',
       left: 'A.K. Gopalan (1950)',
       right: 'Maneka Gandhi (1978)',
       rows: [
-        { point: 'Procedure', left: 'Any procedure in a law is enough', right: 'Procedure must be fair, just and reasonable' },
-        { point: 'Articles 14, 19, 21', left: 'Read in separate silos', right: 'Read as a golden triangle' },
-        { point: 'Exam use', left: 'History / overruled on fairness', right: 'Current gateway case' },
+        { point: 'Meaning of procedure', left: 'Any procedure enacted by a competent legislature', right: 'Procedure must be just, fair and reasonable' },
+        { point: 'Relationship of rights', left: 'Articles 19 and 21 as separate silos', right: 'Golden Triangle—Articles 14, 19 and 21 read together' },
+        { point: 'Scope of liberty', left: 'Primarily freedom from physical restraint', right: 'Expansive personal liberty including dignity and related autonomy' },
+        { point: 'Legal consequence', left: 'Minimal judicial review of fairness of procedure', right: 'Substantive and procedural due-process scrutiny' },
+      ],
+    },
+    {
+      id: 'art-21-dist-21a',
+      title: 'Article 21 vs Article 21A',
+      left: 'Article 21',
+      right: 'Article 21A',
+      rows: [
+        { point: 'Statutory basis', left: 'Original Fundamental Right—life and personal liberty', right: '86th Amendment—free and compulsory education ages 6–14' },
+        { point: 'Essential ingredients', left: 'Deprivation only by fair procedure established by law', right: 'State duty to provide elementary education in manner prescribed by law' },
+        { point: 'Stage of invocation', left: 'Any life/liberty deprivation—criminal, administrative, socio-economic', right: 'Elementary education access and RTE enforcement' },
+        { point: 'Legal consequence', left: 'Release, quashing, compensation, structural mandamus', right: 'Admission, facilities, 25% quota enforcement (non-minority)' },
       ],
     },
   ],
 
   misconceptions: [
-    { id: 'a21-trap-1', trap: 'Article 21 uses the words “due process of law”.', correction: 'The text is “procedure established by law”. Fairness was read in by Maneka, not by a textual amendment.' },
-    { id: 'a21-trap-2', trap: 'Every social claim is a Fundamental Right under Article 21.', correction: 'Only those facets the Court has actually recognised, tied to deprivation of life or liberty. DPSPs are not automatically Article 21.' },
-    { id: 'a21-trap-3', trap: 'Article 21A replaced Article 21 for education.', correction: 'Article 21A is a specific right to elementary education (86th Amendment). Article 21 remains the general liberty/life guarantee.' },
+    {
+      id: 'art-21-trap-1',
+      trap: 'Article 21 abolishes capital punishment.',
+      correction:
+        'Bachan Singh v. State of Punjab (1980) upheld the constitutional validity of the death penalty, confining its award to the rarest-of-rare framework. Article 21 regulates the fairness of the process; it does not automatically repeal capital sentencing.',
+    },
+    {
+      id: 'art-21-trap-2',
+      trap: 'Article 21 can be suspended during a national emergency under Article 352.',
+      correction:
+        'After the 44th Amendment, the President cannot suspend enforcement of Articles 20 and 21 under Article 359. ADM Jabalpur does not represent current law; Puttaswamy expressly repudiated its approach to liberty.',
+    },
+    {
+      id: 'art-21-trap-3',
+      trap: 'Article 21 is limited to biological survival.',
+      correction:
+        'Francis Coralie Mullin and the later dignity–privacy line establish that “life” includes living with human dignity and the conditions that make life meaningful, not mere animal existence.',
+    },
+  ],
+
+  cases: [
+    {
+      name: 'Maneka Gandhi v. Union of India',
+      year: 1978,
+      citation: '(1978) 1 SCC 248',
+      holding:
+        'Procedure established by law under Article 21 must be just, fair and reasonable; Articles 14, 19 and 21 form an integrated code. Passport impounding without fair hearing violates personal liberty.',
+      relevance:
+        'Lead authority for challenging any liberty-restricting order that lacks natural justice or is arbitrary. Cite for Golden Triangle and substantive due process.',
+    },
+    {
+      name: 'K.S. Puttaswamy v. Union of India',
+      year: 2017,
+      citation: '(2017) 10 SCC 1',
+      holding:
+        'Privacy is a Fundamental Right under Article 21 (and related provisions). State intrusion must satisfy legality, legitimate aim, and proportionality (suitability, necessity, balancing). ADM Jabalpur’s approach to liberty is rejected.',
+      relevance:
+        'Mandatory citation for surveillance, data protection, Aadhaar-linked challenges, and any informational-privacy pleading. Structure written submissions on the proportionality prongs.',
+    },
+    {
+      name: 'Nilabati Behera v. State of Orissa',
+      year: 1993,
+      citation: '(1993) 2 SCC 746',
+      holding:
+        'Constitutional courts may award monetary compensation under public law for custodial death and Article 21 violations; sovereign immunity does not bar such relief. Public-law compensation is distinct from private tort damages.',
+      relevance:
+        'Cite in Article 32/226 petitions seeking compensation for custodial violence, illegal detention, or State atrocity, alongside criminal prosecution.',
+    },
+    {
+      name: 'Francis Coralie Mullin v. Administrator, Union Territory of Delhi',
+      year: 1981,
+      citation: '(1981) 1 SCC 608',
+      holding:
+        'Right to life includes the right to live with human dignity and the bare necessities of life; it is not confined to animal existence.',
+      relevance:
+        'Foundational citation when expanding Article 21 beyond physical restraint—prison conditions, dignity, and socio-economic facets.',
+    },
   ],
 
   questionsAndAnswers: [
-    { id: 'a21-qa-1', question: 'What is the text of Article 21?', answer: 'No person shall be deprived of life or personal liberty except according to procedure established by law.', relatedProvisionIds: ['constitution-article-21'] },
-    { id: 'a21-qa-2', question: 'Which case required the procedure to be fair, just and reasonable?', answer: 'Maneka Gandhi v. Union of India (1978).', relatedProvisionIds: ['constitution-article-21'] },
-    { id: 'a21-qa-3', question: 'Which case held privacy to be a Fundamental Right?', answer: 'K.S. Puttaswamy v. Union of India (2017).', relatedProvisionIds: ['constitution-article-21'] },
-  ],
-
-  relatedTopics: ['Article 14 — Equality', 'Article 19 — Freedoms', 'Writs (Arts 32 & 226)', 'Emergency Provisions'],
-
-  cases: [
-    { name: 'A.K. Gopalan v. State of Madras', year: 1950, citation: 'AIR 1950 SC 27', holding: 'Read Article 21 as satisfied by any legally enacted procedure; articles were treated as mutually exclusive.', relevance: 'Historical starting point. Do not cite it as current law on fairness.' },
-    { name: 'Maneka Gandhi v. Union of India', year: 1978, citation: '(1978) 1 SCC 248', holding: 'Procedure under Article 21 must be fair, just and reasonable; Arts 14, 19 and 21 are read together.', relevance: 'The turning point. Always state this holding in a 10-mark answer.' },
-    { name: 'Francis Coralie Mullin v. Administrator, Delhi', year: 1981, citation: '(1981) 1 SCC 608', holding: 'Life includes the right to live with human dignity, not mere animal existence.', relevance: 'Standard citation for the expanded meaning of “life”.' },
-    { name: 'Olga Tellis v. Bombay Municipal Corporation', year: 1985, citation: '(1985) 3 SCC 545', holding: 'The right to livelihood is an important facet of the right to life; eviction of pavement dwellers requires a fair procedure.', relevance: 'Use in livelihood / eviction fact patterns.' },
-    { name: 'K.S. Puttaswamy v. Union of India', year: 2017, citation: '(2017) 10 SCC 1', holding: 'Privacy is a Fundamental Right, primarily under Article 21 read with 14 and 19.', relevance: 'Privacy, Aadhaar, surveillance, data questions.' },
-  ],
-
-  bareActPointers: ['Art 21', 'Art 21A', 'Art 22', 'Art 20'],
-
-  examFrameworks: [
     {
-      marks: 10,
-      question: 'Explain “procedure established by law” under Article 21 with case law.',
-      steps: [
-        'Quote Article 21.',
-        'Explain life and personal liberty; “any person”.',
-        'Gopalan in one sentence (narrow), Maneka in three (fair procedure + golden triangle).',
-        'One illustration (passport, arrest, eviction).',
-        'Conclude with the current position: law + fair procedure.',
-      ],
+      id: 'art-21-brief',
+      draftingCategory: 'brief',
+      question:
+        'Provide a structured Case Brief and legal problem assessment on Article 21 (protection of life and personal liberty), focusing on the evolution from Gopalan to Maneka Gandhi and Puttaswamy.',
+      answer: `I. ISSUE & JURISDICTIONAL THRESHOLD
+Whether deprivation of life or personal liberty is supported by a procedure established by law that is just, fair and reasonable, and whether State intrusion into privacy or dignity satisfies legality and proportionality. Forum: Article 32 before the Supreme Court or Article 226 before the High Court; habeas corpus where detention is alleged.
+
+II. GOVERNING RULE & STATUTORY ANATOMY
+Article 21 textually requires procedure established by law. Maneka Gandhi holds that the procedure must be just, fair and reasonable and that Articles 14, 19 and 21 are interlinked. Puttaswamy holds that privacy is intrinsic to Article 21 and that intrusions require valid law and proportional design. Unenumerated facets (livelihood, environment, speedy trial, dignity) are applications of “life,” not free-standing textual clauses.
+
+III. APPLICATION TO FACTUAL DISPUTE
+Map the impugned action to (a) deprivation, (b) source of power, (c) procedural fairness, and (d) where privacy is engaged, the Puttaswamy prongs. Executive circulars without statute fail legality. Convictions after full fair trial ordinarily satisfy Article 21; custodial abuse and suspicionless mass surveillance ordinarily do not.
+
+IV. CONCLUSION & OPERATIVE ADVICE
+Advise immediate writ remedy for ongoing detention or surveillance; seek production of authorising law and custody records; plead public-law compensation where constitutional tort is made out; preserve parallel criminal remedies. Do not suspend Article 21 analysis during emergency—enforcement cannot be suspended under Article 359 post-44th Amendment.`,
+      explanation:
+        'IRAC chamber brief for Article 21 problem assessment without collegiate mark rubrics.',
+      relatedProvisionIds: ['constitution-article-21', 'constitution-article-14', 'constitution-article-32'],
     },
     {
-      marks: 16,
-      question: 'The Supreme Court has expanded Article 21 into a charter of positive rights. Discuss critically with cases.',
-      steps: [
-        'Text and original design (procedure established by law).',
-        'Gopalan to Maneka in detail.',
-        'Expansion of “life”: dignity, livelihood, privacy — name the case for each facet you use.',
-        'Limits: not every DPSP; emergency; death penalty still on the books.',
-        'Relationship with Articles 14, 19, 21A and 22.',
-        'Hypothetical application.',
-        'Critical comment: expansion is judicial; students must not invent new facets.',
-        'Conclusion.',
+      id: 'art-21-submissions',
+      draftingCategory: 'submissions',
+      question:
+        'Draft comprehensive Written Submissions on Article 21, deconstructing the constitutional scheme, evidentiary expectations, precedents, and procedural pathways for enforcement and public-law compensation.',
+      answer: `I. STATEMENT OF FACTS & PROCEDURAL PROVENANCE
+The petitioner challenges State action that deprives life or personal liberty—or intrudes upon privacy and dignity—without fair procedure or proportional statutory foundation. Jurisdiction is invoked under Article 32 / Article 226 for declaratory, prohibitory, mandatory and compensatory relief.
+
+II. STATUTORY SCHEME & JURISPRUDENTIAL INTENT
+Article 21 forbids deprivation of life or personal liberty except according to procedure established by law. The Constituent Assembly preferred that phrase over American due process, yet Maneka Gandhi read fairness and reasonableness into “procedure,” integrating Articles 14 and 19. The 44th Amendment entrenched non-suspension of Articles 20 and 21 during emergency. The provision is both a shield against arbitrary power and a fountainhead of positive obligations in custody, health, and environmental cases.
+
+III. SATISFACTION OF MANDATORY PROVING INGREDIENTS
+The petitioner will establish: (1) State-attributable deprivation or intrusion; (2) absence of valid law or presence of unfair procedure; (3) where applicable, failure of Puttaswamy proportionality; (4) for compensation, constitutional tort on the Nilabati standard. Under BSA logic, facts especially within State knowledge—custody registers, medical charts, surveillance architecture—must be explained by the State; electronic records should satisfy reliability expectations akin to Section 63 BSA when formally proved.
+
+IV. JUDICIAL PRECEDENTS & RATIO DECIDENDI
+Maneka Gandhi: fair, just and reasonable procedure; Golden Triangle. Francis Coralie Mullin: life means dignity, not animal existence. Olga Tellis: livelihood as facet of life, subject to fair process. Puttaswamy: privacy as Fundamental Right; legality and proportionality. Rudul Sah and Nilabati Behera: public-law compensation for Article 21 violations. D.K. Basu: custodial safeguards as practical enforcement of Article 21. Bachan Singh: death penalty not per se unconstitutional; rarest-of-rare discipline.
+
+V. REBUTTAL OF ADVERSARY’S CONTENTIONS & PRELIMINARY OBJECTIONS
+Sovereign immunity does not bar constitutional compensation. Alternative remedy does not oust habeas or pure vires challenges. Delay does not legitimise continuing detention or ongoing unlawful surveillance. “Procedure established by law” is not satisfied by arbitrary executive instructions where statute is constitutionally required.
+
+VI. PRAYER / RELIEF SOUGHT
+(a) Declaration that the impugned action violates Article 21 (and Articles 14/19 as engaged); (b) certiorari/prohibition/mandamus as appropriate; (c) production of the petitioner and custody records where detention is alleged; (d) public-law compensation; (e) structural directions for compliance with constitutional safeguards; (f) costs.`,
+      explanation:
+        'Appellate-standard written submissions for Article 21 enforcement and compensation.',
+      relatedProvisionIds: [
+        'constitution-article-21',
+        'constitution-article-14',
+        'constitution-article-32',
+        'constitution-article-226',
       ],
     },
   ],
 
-  answerSkeleton: [
-    'Introduction — text of Article 21.',
-    'Gopalan (history) → Maneka (current gateway).',
-    'Meaning of life and personal liberty, with two named facets and cases.',
-    'Fair procedure + Articles 14 and 19.',
-    'Apply to facts / example.',
-    'Limits and current position.',
-  ],
-
-  revisionPoints: [
-    'Art 21: life + personal liberty; any person; procedure established by law.',
-    'Maneka: procedure must be fair; 14–19–21 together.',
-    'Puttaswamy: privacy. Olga Tellis: livelihood. Francis Coralie: dignity.',
-    'Do not write “due process” as the constitutional text.',
+  bareActPointers: [
+    'Article 21, Constitution of India',
+    'Articles 14, 19, 20, 22, 32, 226, 359 (as amended by the 44th Amendment)',
+    'BSA 2023 ss. 104–106 (burden) and s. 63 (electronic records) in fact-heavy custody and surveillance disputes',
   ],
 
   examTips: [
-    'Always contrast Gopalan and Maneka. That contrast carries marks.',
-    'Name the case for every expanded facet. “Life includes everything” scores zero.',
+    'Always open with text → Gopalan → Maneka Gandhi → Puttaswamy proportionality when privacy is engaged.',
+    'Separate pure liberty deprivation (detention) from privacy/surveillance (legality + proportionality) and from public-law compensation (Nilabati).',
+    'Never assert that Article 21 is suspended in emergency after the 44th Amendment.',
   ],
-}
 
-export default content
+  revisionPoints: [
+    'Article 21: no deprivation of life or personal liberty except by just, fair and reasonable procedure established by law (Maneka Gandhi).',
+    'Ingredients: deprivation + person + lawfulness of source + fairness of procedure + proportionality for privacy intrusions.',
+    'Forum: Articles 32 and 226; habeas for detention; public-law compensation available; BSA burdens guide disputed facts.',
+    'Locus classicus cluster: Maneka Gandhi (procedure); Puttaswamy (privacy); Nilabati Behera (compensation); Francis Coralie Mullin (dignity).',
+  ],
+
+  relatedTopics: ['art-14', 'art-19', 'art-20', 'art-21a', 'art-22', 'art-32-226', 'fundamental-rights'],
+} satisfies TopicContent

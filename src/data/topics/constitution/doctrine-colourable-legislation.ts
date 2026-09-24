@@ -3,101 +3,293 @@ import type { TopicContent } from '../loadTopicContent'
 /**
  * Doctrine of Colourable Legislation
  * Subject: constitution | Topic id: doctrine-colourable-legislation
- * Cannot do indirectly what cannot be done directly.
+ * Maxim "Quando aliquid prohibetur ex directo, prohibetur et per obliquum",
+ * Legislative Competence vs Legislative Motive, Fraud on the Constitution,
+ * and Landmark Adjudication (Kameshwar Singh, Gajapati Narayan Deo, Ajit Mills).
  */
 const content: TopicContent = {
+  study: `## 1. Conceptual Genesis & Latin Maxim
 
-  study: `Article 246 (competence setting)
-“Parliament has exclusive power to make laws with respect to any of the matters enumerated in List I (Union List) of the Seventh Schedule; States with respect to List II (State List); and both with respect to List III (Concurrent List), subject to Art 246.”
+The **Doctrine of Colourable Legislation** is an indispensable canon of constitutional adjudication rooted in the ancient legal maxim:
+> ***"Quando aliquid prohibetur ex directo, prohibetur et per obliquum"***
+> *(What cannot be done directly, cannot be done indirectly).*
 
-Core idea
-Colourable legislation means that if a legislature lacks competence to enact a law directly, it cannot achieve the same result indirectly by clever drafting. The court looks at the substance of the law, not merely its form or label.
+In a constitutional democracy with a written Constitution and demarcated legislative boundaries (such as Articles 245 and 246 read with the Seventh Schedule), the legislature must act strictly within the parameters of its conferred powers. 
 
-Competence setting
-The doctrine operates in the field of legislative competence (Seventh Schedule / Articles 245–246). It is related to, but distinct from, pith and substance: pith and substance asks what the law truly is; colourability asks whether form is being used as a disguise for lack of power.
+The Doctrine of Colourable Legislation posits that if a legislature lacks constitutional competence to enact a law on a particular subject, it cannot circumvent that limitation by adopting a deceptive legislative disguise—clothing the statute with an authorized title, form, or entry while in substance achieving an unauthorized and unconstitutional objective.
 
-Exam focus
-One-line maxim: you cannot do indirectly what you cannot do directly. Apply to list-entry competence. Distinguish from pith and substance and from repugnancy (Art 254).`,
+---
+
+## 2. Legislative Competence vs. Legislative Motive: The Absolute Separation
+
+The most critical and frequently tested rule governing colourable legislation was definitively established by the Supreme Court in *K.C. Gajapati Narayan Deo v. State of Orissa* (1953):
+1. **Competence is the Sole Inquiry:** The doctrine of colourable legislation resolves itself exclusively into the question of **legislative competence** under the Constitution. It is not an inquiry into the moral motives, bona fides, or mala fides of the legislature.
+2. **Irrelevance of Motive:** An enacted statute cannot be struck down on the ground that the legislature was motivated by improper motives, malice, or political malice. Chief Justice Mukherjea famously observed:
+   > *"The question whether a law is colourable does not involve any question of bona fides or mala fides on the part of the legislature. The whole doctrine resolves itself into the question of competency of a particular legislature to enact a particular law... If the legislature has the power to pass the law, its motive in passing it is completely irrelevant."*
+3. **Substance Over Form:** The word "colourable" means that under the guise or pretence of exercising an admitted power, the legislature has transgressed its constitutional boundary. The court must pierce the legislative form and examine the substantive legal operation of the enactment.
+
+---
+
+## 3. High-Water Landmark Precedents
+
+### A. The Classic Nullification: *State of Bihar v. Kameshwar Singh* (AIR 1952 SC 252)
+Under the Bihar Land Reforms Act, 1950, the State acquired zamindari estates. Section 4(b) provided that arrears of rent due to the zamindars from tenants would vest in the State, and Section 23(f) provided that 50% of these collected arrears would be returned to the zamindar as "compensation" for the acquisition of the other 50%!
+- The State defended this under Entry 42, List III ("Principles on which compensation is to be determined").
+- **Supreme Court Ratio:** The Supreme Court struck down Section 23(f) as a brazen instance of **colourable legislation and a fraud on the Constitution**. 
+- Justice Mahajan held that taking away Rs. 100 in cash and returning Rs. 50 back as "compensation" is not laying down principles of compensation, but a disguised, fraudulent confiscation of money without compensation. Money and actionable claims cannot be acquired under the guise of land reform.
+
+### B. Competence Upheld Despite Pretextual Timing: *K.C. Gajapati Narayan Deo v. State of Orissa* (AIR 1953 SC 375)
+Prior to the enactment of the Orissa Estates Abolition Act, 1951, the Orissa Legislature enacted the Agricultural Income Tax (Amendment) Act, 1950, dramatically increasing tax rates on agricultural income.
+- The zamindars challenged the tax amendment as colourable legislation, asserting that the State intentionally increased the tax immediately prior to estate acquisition in order to artificially deflate the "net income" of the estates, thereby minimizing the compensation payable under the Estates Abolition Act.
+- **Supreme Court Ratio:** The Court rejected the challenge. The State Legislature possessed sovereign constitutional competence to tax agricultural income under Entry 46, List II. Once legislative competence is established, the fact that the tax indirectly reduced compensation, or that the legislature was motivated by an ulterior purpose, is judicially immaterial. The Act was intra vires.
+
+### C. Reaffirmation of Strict Competence: *R.S. Joshi v. Ajit Mills Ltd.* (1977)
+In *R.S. Joshi*, Krishna Iyer J. emphasized that "colourable legislation" is a constitutional term of art denoting lack of power. It is not an invitation for judges to inspect the purity of legislative intent. If an enactment lies squarely within a Seventh Schedule entry, the doctrine of colourable legislation has zero application.
+
+---
+
+## 4. Analytical Distinction from Allied Doctrines
+
+- **Colourable Legislation vs. Pith and Substance:**
+  - *Pith and Substance* asks: "What is the true nature and character of the law?" It is applied when an enactment legitimately passed under one list incidentally touches upon another list.
+  - *Colourable Legislation* asks: "Has the legislature disguised an unconstitutional usurpation of power under the cloak of a legitimate entry?"
+- **Colourable Legislation vs. Mala Fides:**
+  - Executive action can be quashed for malice in fact or malice in law (*mala fides*).
+  - Legislative action can **never** be quashed for *mala fides*; it can only be quashed for lack of constitutional competence or violation of constitutional limitations.`,
 
   sections: [
-    { id: 'colourable-meaning', title: 'Meaning', order: 1, content: [
-      'If legislative competence is lacking, the same result cannot be achieved by a disguised or indirect device.',
-      'Courts look at the substance of the enactment, not only its label.',
-    ]},
-    { id: 'colourable-distinguish', title: 'Distinguish related doctrines', order: 2, content: [
-      'Pith and substance — identifies the true nature of the law for competence.',
-      'Repugnancy (Art 254) — inconsistency in the Concurrent field, not a disguise-of-competence doctrine.',
-    ]},
+    {
+      id: 'colourable-concept',
+      title: 'Meaning, Maxim & Fraud on the Constitution',
+      order: 1,
+      content: [
+        'Latin maxim: Quando aliquid prohibetur ex directo, prohibetur et per obliquum (what cannot be done directly cannot be done indirectly).',
+        'Colourable legislation arises when a legislature, lacking constitutional competence, disguises a forbidden enactment under the form of an authorized entry.',
+        'Courts pierce the legislative veil to examine substance, legal operation, and actual effect rather than preambles or statutory labels.',
+      ],
+    },
+    {
+      id: 'colourable-motive-competence',
+      title: 'The Great Rule: Competence, Not Motive (Gajapati Narayan Deo)',
+      order: 2,
+      content: [
+        'Colourable legislation is strictly a question of legislative competence under Articles 245, 246, and Part III.',
+        'Judicial review cannot enquire into legislative motive, political intent, or bona fides. If the legislature has the power to pass the law, its motive is irrelevant.',
+      ],
+    },
+    {
+      id: 'colourable-kameshwar-singh',
+      title: 'Disguised Confiscation: The Kameshwar Singh Precedent',
+      order: 3,
+      content: [
+        'In State of Bihar v. Kameshwar Singh, confiscating arrears of rent and returning 50% as compensation under Entry 42 List III was struck down as colourable legislation and fraud on power.',
+        'Entry 42 allows principles of compensation, not disguised expropriation of cash.',
+      ],
+    },
   ],
 
   provisions: [
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-245', article: 'Article 245', title: 'Extent of laws made by Parliament and by the Legislatures of States' },
     { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-246', article: 'Article 246', title: 'Subject-matter of laws made by Parliament and by the Legislatures of States' },
     { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-seventh-schedule', title: 'Seventh Schedule — Union, State and Concurrent Lists' },
   ],
 
   examples: [
-    { id: 'colourable-example', title: 'Disguised competence', description: 'If a State labels a law as a tax within its list, but the substance is a forbidden regulation of a Union subject, the law may be condemned as colourable.' },
+    {
+      id: 'colourable-disguised-tax-example',
+      title: 'Fee Disguised as Regulation to Circumvent Legislative Bar',
+      description: 'A State legislature has no power to impose an excise duty on medicinal preparations containing alcohol (Entry 84, List I). If the State enacts a "Supervisory Service Fee" on pharmaceutical laboratories which bears no quid pro quo to services rendered and functions as an outright excise levy on manufactured goods, the fee is a colourable exercise of regulatory power under Entry 6, List II and will be declared ultra vires.',
+    },
+    {
+      id: 'colourable-rent-confiscation-example',
+      title: 'Disguised Confiscation of Rent Arrears (Kameshwar Singh)',
+      description: 'Under the Bihar Land Reforms Act, the State sought to acquire arrears of rent due to zamindars and pay 50% thereof as compensation. The Supreme Court struck this down as a colourable device: the legislature pretended to lay down principles of compensation under Entry 42 of List III, but in reality effected a 50% expropriation of liquid cash, which is a fraud on constitutional power.',
+    },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'colourable-hypo-1',
+      title: 'The Inter-State Mineral Transit "Environmental Cess"',
+      scenario: 'State Gamma wishes to restrict coal extracted from its mines from being exported to neighbouring States for thermal power generation. Because "Inter-State Trade and Commerce" is an exclusive Union subject (Entry 42, List I), State Gamma cannot enact an export ban. Instead, the State Legislature passes the Gamma Ecological Preservation and Highway Maintenance Act, imposing an exorbitant "Highway Environmental Impact Cess" of Rs. 10,000 per metric tonne, leviable exclusively on heavy mineral trucks crossing the State border outwards into other States, while exempting intra-State coal transport. An industrial power plant challenges this cess. Advise the plant using the Doctrine of Colourable Legislation.',
+      analysis: '1. Ascertaining True Substance: State Gamma argues the cess is an environmental / road tax under Entry 56, List II (taxes on goods and passengers carried by road). However, the discriminatory levy exclusively on border-crossing vehicles proves that the true operation of the statute is an export tariff and obstruction of inter-State trade. 2. Application of Gajapati Narayan Deo & Kameshwar Singh: Under the maxim "quando aliquid prohibetur ex directo, prohibetur et per obliquum", State Gamma cannot do indirectly what it lacks competence to do directly under Article 246 and Article 301. 3. Conclusion: The statutory label of "environmental highway cess" is a deceptive cloak. In substance, the Act usurps Union competence over inter-State commerce (Entry 42, List I) and creates an unconstitutional trade barrier under Article 301. The levy is colourable legislation and void ab initio.',
+    },
+  ],
+
+  distinctions: [
+    {
+      conceptA: 'Doctrine of Colourable Legislation',
+      conceptB: 'Doctrine of Pith and Substance',
+      points: [
+        'Colourable legislation tests whether the legislature has masked an absence of power under a deceptive legislative cloak.',
+        'Pith and substance determines whether an incidental encroachment on another List is permissible in an otherwise competent law.',
+        'Colourable legislation results in the complete invalidation of the disguised provision as a fraud on power.',
+        'Pith and substance preserves the statute as intra vires despite secondary, incidental overlap.',
+      ],
+    },
+    {
+      conceptA: 'Colourable Legislation',
+      conceptB: 'Legislative Mala Fides',
+      points: [
+        'Colourable legislation is strictly a question of constitutional competence (lack of legislative power).',
+        'Legislative mala fides refers to bad faith, corrupt motives, or ulterior political purpose of the lawmakers.',
+        'Courts examine colourability by analyzing the statute\'s substantive legal effect.',
+        'Courts can never inquire into legislative mala fides; legislative motives are legally non-justiciable (Gajapati Narayan Deo; Ajit Mills).',
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      misconception: 'A law can be declared colourable if the petitioner proves that the members of the legislature acted with corrupt, malicious, or dishonest intentions.',
+      correction: 'Legislative motives are completely irrelevant. As held in K.C. Gajapati Narayan Deo, colourable legislation is purely an inquiry into legislative competence. If the legislature has the power to enact the law, its motives—whether noble or malicious—are beyond judicial review.',
+    },
+    {
+      misconception: 'Colourable legislation is a separate ground of unconstitutionality independent of legislative competence and Fundamental Rights.',
+      correction: 'Colourable legislation is not a distinct third category of invalidity. It is merely a facet of legislative competence under Article 246 or constitutional limitations (such as Part III). The word "colourable" simply emphasizes that lack of power cannot be hidden by form.',
+    },
   ],
 
   questionsAndAnswers: [
-    { id: 'colourable-qa-1', question: 'State the maxim of colourable legislation.', answer: 'You cannot do indirectly what you cannot do directly.', relatedProvisionIds: ['constitution-article-246'] },
-    { id: 'colourable-qa-2', question: 'What do courts examine under this doctrine?', answer: 'The substance of the law rather than its mere form or label.', relatedProvisionIds: ['constitution-article-246'] },
-    { id: 'colourable-qa-3', question: 'How does colourable legislation differ from pith and substance?', answer: 'Pith and substance identifies the true nature of a law for competence; colourability asks whether form is a disguise for lack of power.', relatedProvisionIds: ['constitution-article-246'] },
-  ],
+    {
+      id: 'colourable-qa-10m',
+      draftingCategory: 'brief',
+      question: 'Explain the Doctrine of Colourable Legislation with reference to the maxim "quando aliquid prohibetur ex directo, prohibetur et per obliquum". Distinguish between legislative competence and legislative motive.',
+      answer: `### 1. Synopsis / Introduction
+The Doctrine of Colourable Legislation is an established canon of constitutional adjudication rooted in the maxim *"quando aliquid prohibetur ex directo, prohibetur et per obliquum"* (what cannot be done directly, cannot be done indirectly). It dictates that a legislature with limited constitutional powers cannot transcend its limits by disguising an incompetent enactment in an authorized statutory form.
 
-  relatedTopics: ['Doctrine of Pith and Substance', 'Centre–State Relations', 'Amendment of the Constitution'],
+---
+
+### 2. Meaning & Core Concept
+- **The Concept of Disguise:** The doctrine is invoked when an enactment is ostensibly within the legislative competence of the legislature under the Seventh Schedule, but in substance and actual legal effect, it trespasses upon a forbidden field.
+- **Fraud on the Constitution:** It represents a "fraud on the Constitution" or a "fraud on power"—not in the sense of moral deceit, but in the constitutional sense of cloaking an ultra vires act under an intra vires label.
+
+---
+
+### 3. Legislative Competence vs. Legislative Motive: *K.C. Gajapati Narayan Deo v. State of Orissa* (AIR 1953 SC 375)
+The definitive distinction was laid down by Chief Justice B.K. Mukherjea in *Gajapati Narayan Deo*:
+1. **Competence is the Sole Inquiry:** The doctrine of colourable legislation resolves itself exclusively into the question of **legislative competence**.
+2. **Motive is Irrelevant:** An enactment cannot be impugned on the ground that the legislature passed it with an improper motive, malice, or political animus. If the legislature possesses the constitutional power to enact the law, its motive in passing it is completely irrelevant.
+3. **Substance over Form:** The court must look behind the form, preamble, and title to ascertain the substantive legal operation and practical effect of the statute.
+
+---
+
+### 4. Landmark Application: *State of Bihar v. Kameshwar Singh* (AIR 1952 SC 252)
+Under the Bihar Land Reforms Act, 1950, Section 23(f) purported to determine compensation for acquired zamindari estates by seizing 50% of the rent arrears due to landlords as compensation. 
+- The Supreme Court held this was a colourable exercise of power under Entry 42, List III (principles of compensation).
+- Justice Mahajan held that taking away money and returning half back as compensation was a disguised expropriation of cash without compensation, constituting a fraud on power. Section 23(f) was declared void.
+
+---
+
+### 5. Conclusion
+The Doctrine of Colourable Legislation ensures fidelity to the constitutional division of powers. It preserves constitutional supremacy by preventing legislatures from evading constitutional barriers through legislative subterfuge.`,
+      relatedProvisionIds: ['constitution-article-245', 'constitution-article-246'],
+    },
+    {
+      id: 'colourable-qa-16m',
+      draftingCategory: 'submissions',
+      question: '"The Doctrine of Colourable Legislation does not involve any question of bona fides or mala fides on the part of the legislature; the whole doctrine resolves itself into the question of competency of a particular legislature to enact a particular law." Critically examine this statement in light of K.C. Gajapati Narayan Deo v. State of Orissa, State of Bihar v. Kameshwar Singh, and R.S. Joshi v. Ajit Mills. Contrast this doctrine with Pith and Substance and Legislative Mala Fides.',
+      answer: `### 1. Introduction: Constitutional Demarcation and The Doctrine of Ultra Vires
+In a sovereign federal republic governed by a written Constitution, legislative power is distributed and limited by constitutional boundaries (Articles 245 and 246 read with the Seventh Schedule). A legislature cannot transgress these boundaries. However, such transgression may occur in two distinct modes:
+1. **Open and Direct Transgression:** Where the legislature openly passes a law outside its assigned list;
+2. **Covert and Disguised Transgression:** Where the legislature clothes an unauthorized law with the outward form, title, and preamble of an authorized subject.
+
+To dismantle covert usurpations, constitutional courts deploy the **Doctrine of Colourable Legislation**, anchored in the Latin maxim *"quando aliquid prohibetur ex directo, prohibetur et per obliquum"* (what cannot be done directly cannot be done indirectly).
+
+---
+
+### 2. The Core Jurisprudential Rule: Competence vs. Motive
+The central thesis of the doctrine was authoritatively crystallized by a Constitution Bench in *K.C. Gajapati Narayan Deo v. State of Orissa* (1954) SCR 1.
+
+#### A. The Legal Exposition in *Gajapati Narayan Deo*
+Chief Justice B.K. Mukherjea ruled:
+> *"The question whether a law was colourable or not does not involve any question of bona fides or mala fides on the part of the legislature. The whole doctrine resolves itself into the question of competency of a particular legislature to enact a particular law... If the legislature has the power to pass the law, its motive in passing it is completely irrelevant."*
+
+#### B. The Irrelevance of Legislative Mala Fides
+In administrative law, executive orders can be invalidated for malice in fact (*mala fides*). However, in constitutional law, **mala fides cannot be attributed to the sovereign legislature** (*State of A.P. v. McDowell & Co.*, 1996; *R.S. Joshi v. Ajit Mills*, 1977). An elected legislative body acts collectively. The courts will not cross-examine legislators or scrutinize floor debates to unearth ulterior motives. The inquiry is strictly objective: Did the legislature possess constitutional competence under Article 246 to enact the operative provisions?
+
+---
+
+### 3. Landmark Judicial Applications
+
+#### A. Disguised Confiscation: *State of Bihar v. Kameshwar Singh* (AIR 1952 SC 252)
+- **The Statutory Device:** Section 4(b) and 23(f) of the Bihar Land Reforms Act, 1950 provided that arrears of rent due to zamindars would vest in the State, and 50% thereof would be deducted and returned as "compensation" for acquiring the other 50%.
+- **The Pretext:** The State justified the deduction under Entry 42 of List III ("Principles on which compensation is to be determined").
+- **The Invalidation:** The Supreme Court pierced the statutory veil. Justice Mahajan held that laying down principles of compensation cannot mean taking away Rs. 100 in cash from a citizen and returning Rs. 50 as compensation. This was a colourable device—a disguised confiscation of liquid money without compensation—constituting a fraud on the Constitution.
+
+#### B. Competence Upheld Regardless of Timing: *K.C. Gajapati Narayan Deo* (1953)
+- **The Facts:** The Orissa Agricultural Income Tax (Amendment) Act, 1950 drastically increased tax rates on large agricultural estates immediately before the estates were acquired under the Orissa Estates Abolition Act, 1951, thereby reducing the net income upon which compensation was calculated.
+- **The Holding:** The Supreme Court upheld the tax amendment. State legislatures have undeniable competence to tax agricultural income under Entry 46, List II. Because legislative competence existed, the fact that the tax indirectly reduced compensation, or that the legislature timed the enactment to lower the acquisition bill, did not make the Act colourable.
+
+#### C. The Modern Synthesis: *R.S. Joshi v. Ajit Mills Ltd.* (1977) 4 SCC 98
+Justice V.R. Krishna Iyer clarified that "colourable legislation" is often loosely used by litigants to allege legislative dishonesty. He reaffirmed that:
+1. Colourable legislation is merely a picturesque phrase denoting **want of legislative power coupled with a pretence of exercising power**.
+2. If the subject matter falls within the legislative entry, the court cannot invalidate the statute merely because the outcome appears harsh, unfair, or politically motivated.
+
+---
+
+### 4. Tripartite Comparative Matrix
+
+| Parameter | Doctrine of Colourable Legislation | Doctrine of Pith and Substance | Principle of Legislative Mala Fides |
+| :--- | :--- | :--- | :--- |
+| **Constitutional Focus** | Disguised usurpation of power (lack of competence). | True nature and character of legitimate legislation. | Subjective malicious motive or bad faith of lawmakers. |
+| **Encroachment Character** | Covert, fraudulent, and substantial. | Incidental, secondary, and necessary. | N/A (Subjective intention). |
+| **Judicial Inquiry** | Looks behind form to unmask lack of power. | Looks at the whole statute to ascertain its primary core. | Enquires into personal malice or corrupt purpose. |
+| **Judicial Receptivity** | Recognized ground of constitutional invalidity under Art 246. | Standard canon of federal interpretation under Art 246. | **Completely non-cognizable and rejected** against legislation. |
+| **Outcome** | Law is struck down as **ultra vires / fraud on power**. | Law is **upheld as intra vires** despite incidental overlap. | Petitions alleging legislative mala fides are dismissed in limine. |
+
+---
+
+### 5. Limits and Judicial Restraint
+The Supreme Court exercises extreme caution before condemning an Act as colourable:
+- There is a strong presumption of constitutionality in favor of legislative enactments (*Charanjit Lal Chowdhury v. Union of India*, 1951).
+- The burden of proof lies heavily on the petitioner to establish that the legislative disguise masks a total absence of competence.
+- The doctrine cannot be invoked when Parliament enacts legislation under its plenary residuary power under Article 248 and Entry 97, List I, where no boundary conflict with another sovereign legislature arises.
+
+---
+
+### 6. Conclusion
+The Doctrine of Colourable Legislation is an essential guardian of constitutional boundaries. As demonstrated by *Gajapati Narayan Deo* and *Kameshwar Singh*, it maintains a strict dichotomy between objective constitutional competence and subjective political motive. By focusing relentlessly on substantive legal operation, the doctrine ensures that constitutional boundaries cannot be dismantled by clever statutory drafting, preserving the pristine supremacy of the Constitution.`,
+      relatedProvisionIds: ['constitution-article-245', 'constitution-article-246'],
+    },
+  ],
 
   cases: [
-    { name: 'K.C. Gajapati Narayan Deo v. State of Orissa', year: 1953, citation: 'AIR 1953 SC 375', holding: 'Colourable legislation means that what cannot be done directly cannot be done indirectly; substance of the law prevails over form.', relevance: 'Standard Supreme Court exposition of the doctrine.' },
-  ],
-
-  bareActPointers: ['Art 246', 'Seventh Schedule'],
-
-  examTips: [
-    'Write the maxim first.',
-    'Tie the answer to legislative competence / lists.',
-    'Distinguish pith and substance and Art 254 repugnancy.',
-    'Cite Gajapati Narayan Deo if a case is demanded.',
-  ],
-
-
-  examFrameworks: [
     {
-      marks: 10,
-      question: 'Write a 10-mark answer on this topic.',
-      steps: [
-        'Introduce the concept and name the governing provision.',
-        'Explain the legal idea in student language — not only the Bare Act words.',
-        'State essential elements or the main rule.',
-        'Cite one leading authority and its principle.',
-        'Give a short illustration or apply the rule to facts.',
-        'Note a material exception or distinction.',
-        'Conclude with the current legal position.',
-      ],
+      name: 'State of Bihar v. Kameshwar Singh',
+      year: 1952,
+      citation: 'AIR 1952 SC 252',
+      holding: 'Confiscating arrears of rent and returning 50% as compensation under Entry 42 List III was struck down as colourable legislation and a fraud on constitutional power.',
+      relevance: 'Classic Supreme Court instance of striking down colourable legislation.',
     },
     {
-      marks: 16,
-      question: 'Expand the same topic into a 16-mark answer.',
-      steps: [
-        'Introduction and meaning.',
-        'Why the rule exists / brief history if relevant.',
-        'Legal foundation and elements in detail.',
-        'Exceptions, limitations and an important distinction.',
-        'Two or more authorities with ratio, not only names.',
-        'A hypothetical with analysis.',
-        'Current-law position and a short critical comment.',
-        'Conclusion.',
-      ],
+      name: 'K.C. Gajapati Narayan Deo v. State of Orissa',
+      year: 1953,
+      citation: 'AIR 1953 SC 375',
+      holding: 'The doctrine of colourable legislation resolves itself exclusively into the question of legislative competence; legislative motives, bona fides, and mala fides are completely irrelevant.',
+      relevance: 'Locus classicus establishing that competence, not motive, governs colourability.',
+    },
+    {
+      name: 'R.S. Joshi v. Ajit Mills Ltd.',
+      year: 1977,
+      citation: '(1977) 4 SCC 98',
+      holding: 'Colourable legislation is a phrase denoting lack of legislative power masked by form; courts cannot strike down competent laws on allegations of improper legislative motives.',
+      relevance: 'Reaffirmation of strict competence test over legislative ethics.',
+    },
+    {
+      name: 'State of A.P. v. McDowell & Co.',
+      year: 1996,
+      citation: '(1996) 3 SCC 709',
+      holding: 'An enactment can be struck down only for lack of legislative competence or violation of Fundamental Rights; no statute can be struck down on grounds of legislative mala fides.',
+      relevance: 'Absolute judicial refusal to entertain legislative mala fides.',
     },
   ],
 
-  revisionPoints: [
-    'Start with the provision and the legal idea, not a section dump.',
-    'Name the leading case and state what it actually held.',
-    'Current through the 106th Amendment (2023) for constitutional topics.',
+  bareActPointers: [
+    'Art 245 — Extent of laws made by Parliament and State Legislatures',
+    'Art 246 — Distribution of subject matter across Lists I, II, and III',
+    'Seventh Schedule — Legislative entries and federal boundaries',
   ],
-
-
 }
 
 export default content

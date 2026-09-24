@@ -1,0 +1,210 @@
+import type { TopicContent } from '../topicTypes'
+
+const content: TopicContent = {
+  "glance": "Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies. Complete Environment treatise with statutory deconstruction, examples, verified authorities, forum analysis and chamber drafting.",
+  "study": "Topic at a glance\nEnvironmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies is a registered theme in Environmental Law. Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies is governed by Environment (Protection) Act, 1986; Water Act, 1974; Air Act, 1981; National Green Tribunal Act, 2010; and constitutional environmental principles. identify the environmental medium, applicable statute, consent or clearance, limitation and the competent forum; distinguish statutory relief from constitutional public-interest remedies.\n\nProvenance, purpose and doctrinal foundation\nThe topic exists to organise a legally enforceable rule, doctrine or professional procedure. Read the statutory text, constitutional setting, institutional purpose and binding authorities together. The correct analysis begins with the legal question and avoids replacing the governing enactment with a generic textbook summary.\n\nTextual anatomy and operative test\n1. Identify the governing enactment, section, article, rule, doctrine or professional standard named by the topic.\n2. Deconstruct definitions, conditions precedent, exceptions, provisos, explanations, jurisdictional limits and remedies.\n3. Distinguish the topic from its nearest neighbour: Doctrine of Public Trust (M.C. Mehta v. Kamal Nath); Polluter Pays Principle & Absolute Liability (Vellore Citizens Welfare Forum); Precautionary Principle & Sustainable Development (Taj Trapezium case).\n4. Apply the rule to the record and state which fact satisfies or fails each ingredient.\n\nCourtroom and evidentiary roadmap\nCompetent forum: the National Green Tribunal, statutory pollution-control authorities, High Court under Article 226 and Supreme Court under Articles 32 and 136 according to the cause and remedy. the claimant must establish environmental harm, statutory breach, causation and standing; operators must demonstrate compliance, safeguards and lawful authorisation where the statute places those duties on them. Where electronic records are relied upon, apply BSA 2023 s. 63 and the applicable burden provisions without treating electronic admissibility as proof of the ultimate fact. Identify limitation, notice, maintainability, alternative remedy and the exact relief sought.\n\nCurrent-law close\nEnvironment (Protection) Act, 1986; Water Act, 1974; Air Act, 1981; National Green Tribunal Act, 2010; and constitutional environmental principles. identify the environmental medium, applicable statute, consent or clearance, limitation and the competent forum; distinguish statutory relief from constitutional public-interest remedies Always name the statute and provision in the final advice.",
+  "sections": [
+    {
+      "id": "env-judiciary-module-1",
+      "title": "Provenance, Legislative Objective and Doctrinal Foundations",
+      "order": 1,
+      "content": [
+        "Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies sits within Environmental Law and is governed by Environment (Protection) Act, 1986; Water Act, 1974; Air Act, 1981; National Green Tribunal Act, 2010; and constitutional environmental principles.",
+        "Explain the legal mischief, institutional purpose and constitutional value before applying the rule.",
+        "Use the named statute, doctrine or professional standard rather than a generic substitute."
+      ]
+    },
+    {
+      "id": "env-judiciary-module-2",
+      "title": "Textual Anatomy, Exceptions and Connected Rules",
+      "order": 2,
+      "content": [
+        "Identify every operative clause, condition, explanation, exception and remedy in Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies.",
+        "Distinguish it from Doctrine of Public Trust (M.C. Mehta v. Kamal Nath); Polluter Pays Principle & Absolute Liability (Vellore Citizens Welfare Forum); Precautionary Principle & Sustainable Development (Taj Trapezium case).",
+        "Historical or comparative law may explain development but cannot replace the current governing rule."
+      ]
+    },
+    {
+      "id": "env-judiciary-module-3",
+      "title": "Mandatory Proving Ingredients and Legal Test",
+      "order": 3,
+      "content": [
+        "Identify the forum and procedural stage.",
+        "Prove each jurisdictional, substantive and procedural condition from the record.",
+        "Address the principal defence, exception, limitation and precise legal consequence."
+      ]
+    },
+    {
+      "id": "env-judiciary-module-4",
+      "title": "BSA 2023 Burden and Electronic Evidence Checkpoints",
+      "order": 4,
+      "content": [
+        "the claimant must establish environmental harm, statutory breach, causation and standing; operators must demonstrate compliance, safeguards and lawful authorisation where the statute places those duties on them",
+        "Apply BSA s. 104 to the ordinary foundational burden and s. 109 only to facts especially within knowledge after foundation is established.",
+        "Apply BSA s. 63 to electronic records where tendered, separately analysing relevance, authenticity, certificate and weight."
+      ]
+    },
+    {
+      "id": "env-judiciary-module-5",
+      "title": "Procedural Roadmap, Forum and Limitation Checkpoints",
+      "order": 5,
+      "content": [
+        "Competent forum: the National Green Tribunal, statutory pollution-control authorities, High Court under Article 226 and Supreme Court under Articles 32 and 136 according to the cause and remedy.",
+        "Check limitation, notice, alternative remedy, jurisdiction and statutory appeal or review route.",
+        "Transition and current law: identify the environmental medium, applicable statute, consent or clearance, limitation and the competent forum; distinguish statutory relief from constitutional public-interest remedies"
+      ]
+    }
+  ],
+  "provisions": [
+    {
+      "actId": "environment",
+      "actName": "Environment (Protection) Act, 1986; Water Act, 1974; Air Act, 1981; National Green Tribunal Act, 2010; and constitutional environmental principles",
+      "provisionId": "environment-env-judiciary",
+      "title": "Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies"
+    },
+    {
+      "actId": "bsa",
+      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
+      "provisionId": "bsa-s-63",
+      "section": "s. 63",
+      "title": "Electronic records where applicable"
+    }
+  ],
+  "examples": [
+    {
+      "id": "env-judiciary-ill-1",
+      "title": "Example 1 - Rule applies",
+      "illustrationType": "practical",
+      "description": "The claimant or applicant establishes the forum, legal foundation, every mandatory ingredient and the requested remedy under Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies. The authority applies the rule on the proved record."
+    },
+    {
+      "id": "env-judiciary-ill-2",
+      "title": "Example 2 - Boundary defect",
+      "illustrationType": "fail-scenario",
+      "description": "A material condition, jurisdictional fact, limitation requirement or evidentiary foundation for Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies is missing. The Court identifies the defect and refuses, returns, remands or limits the relief according to law."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "env-judiciary-hypo",
+      "title": "Chamber Practice Hypothetical: Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies",
+      "facts": "A dispute invokes Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies. The opposing party challenges jurisdiction, limitation, statutory ingredients and an electronic record relied upon by the applicant.",
+      "question": "Whether relief under Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies is maintainable and what order should the competent forum pass.",
+      "applicableLaw": "Environment (Protection) Act, 1986; Water Act, 1974; Air Act, 1981; National Green Tribunal Act, 2010; and constitutional environmental principles",
+      "analysis": "1. Identify the issue and forum. 2. State the governing rule. 3. Apply every ingredient to the facts. 4. Test evidence and burden, including BSA s. 63 where relevant. 5. Answer the defence and formulate the exact remedy.",
+      "conclusion": "Relief depends on proof of the statutory or doctrinal ingredients, jurisdiction and admissible foundation. The forum should grant only the order authorised by the governing law."
+    }
+  ],
+  "distinctions": [
+    {
+      "id": "env-judiciary-distinction",
+      "title": "Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies and connected legal concept",
+      "left": "Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies",
+      "right": "Doctrine of Public Trust (M.C. Mehta v. Kamal Nath); Polluter Pays Principle & Absolute Liability (Vellore Citizens Welfare Forum); Precautionary Principle & Sustainable Development (Taj Trapezium case)",
+      "rows": [
+        {
+          "point": "Source",
+          "left": "Environment (Protection) Act, 1986; Water Act, 1974; Air Act, 1981; National Green Tribunal Act, 2010; and constitutional environmental principles",
+          "right": "Connected statute, doctrine or procedural route"
+        },
+        {
+          "point": "Trigger",
+          "left": "Its own mandatory ingredients",
+          "right": "Different facts or conditions"
+        },
+        {
+          "point": "Consequence",
+          "left": "Specific relief or legal result",
+          "right": "Do not import this topic's consequence automatically"
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "env-judiciary-trap-1",
+      "trap": "Treating Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies as a heading-only topic.",
+      "correction": "A complete answer must state provenance, ingredients, evidence, forum, limitation, authority and relief."
+    },
+    {
+      "id": "env-judiciary-trap-2",
+      "trap": "Using a generic legal rule without naming the governing statute.",
+      "correction": "Always identify the named enactment or constitutional source: Environment (Protection) Act, 1986; Water Act, 1974; Air Act, 1981; National Green Tribunal Act, 2010; and constitutional environmental principles."
+    },
+    {
+      "id": "env-judiciary-trap-3",
+      "trap": "Treating a relevant electronic record as automatically proved.",
+      "correction": "Relevance, admissibility, foundation, burden and weight remain separate questions under the BSA route."
+    }
+  ],
+  "cases": [
+    {
+      "name": "M.C. Mehta v. Union of India",
+      "year": 1987,
+      "citation": "(1987) 1 SCC 395",
+      "court": "Supreme Court of India",
+      "facts": "The Court addressed a hazardous industry gas leak and public-law consequences.",
+      "issue": "What liability follows from hazardous industrial activity causing environmental harm?",
+      "ratioDecidendi": "An enterprise engaged in hazardous or inherently dangerous activity owes an absolute and non-delegable duty to the community and cannot rely on the traditional exceptions to strict liability.",
+      "holding": "The Court developed the Indian absolute-liability rule.",
+      "relevance": "Use for hazardous activity, compensation and environmental liability."
+    },
+    {
+      "name": "Vellore Citizens Welfare Forum v. Union of India",
+      "year": 1996,
+      "citation": "(1996) 5 SCC 647",
+      "court": "Supreme Court of India",
+      "facts": "Industrial pollution from tanneries affected water, soil and community health.",
+      "issue": "Whether sustainable development and precautionary environmental principles form part of Indian law.",
+      "ratioDecidendi": "The precautionary principle and polluter-pays principle are part of Indian environmental law and must inform judicial and administrative action.",
+      "holding": "The Court directed remediation and compliance with environmental principles.",
+      "relevance": "Use for precaution, polluter pays and sustainable development."
+    },
+    {
+      "name": "M.C. Mehta v. Kamal Nath",
+      "year": 1997,
+      "citation": "(1997) 1 SCC 388",
+      "court": "Supreme Court of India",
+      "facts": "A private project affected a river and public ecological resources.",
+      "issue": "Whether the State may permit private appropriation of public-trust resources.",
+      "ratioDecidendi": "The State holds natural resources in trust for the public and cannot abdicate that fiduciary obligation.",
+      "holding": "The public-trust doctrine was applied to environmental protection.",
+      "relevance": "Use for public trust, rivers, forests and ecological commons."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "env-judiciary-brief",
+      "draftingCategory": "brief",
+      "question": "Structured Case Brief and legal problem assessment on Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies.",
+      "answer": "I. ISSUE AND JURISDICTION\nWhether Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies applies to the stated facts and whether the chosen forum and remedy are maintainable.\n\nII. GOVERNING RULE\nEnvironmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies is governed by Environment (Protection) Act, 1986; Water Act, 1974; Air Act, 1981; National Green Tribunal Act, 2010; and constitutional environmental principles. identify the environmental medium, applicable statute, consent or clearance, limitation and the competent forum; distinguish statutory relief from constitutional public-interest remedies.\n\nIII. INGREDIENT APPLICATION\nIdentify each condition, connect it to the evidence and answer the principal exception or defence. Apply BSA s. 63 to digital records where relevant and state the initial burden precisely.\n\nIV. CONCLUSION\nGrant, refuse or modify the relief only to the extent authorised by the governing law and proved record.",
+      "explanation": "IRAC chamber brief."
+    },
+    {
+      "id": "env-judiciary-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions on Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies.",
+      "answer": "I. STATEMENT OF FACTS AND PROCEDURAL PROVENANCE\nSet out the material facts, forum, procedural stage, notices, pleadings and documents.\n\nII. STATUTORY AND DOCTRINAL SCHEME\nDeconstruct Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies under Environment (Protection) Act, 1986; Water Act, 1974; Air Act, 1981; National Green Tribunal Act, 2010; and constitutional environmental principles, including its purpose, conditions, exceptions and connected provisions.\n\nIII. SATISFACTION OF MANDATORY INGREDIENTS\nApply each ingredient to the record, address jurisdiction, limitation, maintainability and the opposing party's strongest objection.\n\nIV. VERIFIED AUTHORITIES\nUse the case ratios below only for the propositions they decide and distinguish contrary facts.\n\nV. EVIDENCE AND PRAYER\nAddress BSA ss. 63, 104 and 109 where relevant, then seek the precise order available from the National Green Tribunal, statutory pollution-control authorities, High Court under Article 226 and Supreme Court under Articles 32 and 136 according to the cause and remedy.",
+      "explanation": "Senior Counsel written submissions."
+    }
+  ],
+  "bareActPointers": [
+    "Environment (Protection) Act, 1986; Water Act, 1974; Air Act, 1981; National Green Tribunal Act, 2010; and constitutional environmental principles",
+    "Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies",
+    "BSA s. 63 and ss. 104, 109 where relevant"
+  ],
+  "examTips": [
+    "Name the governing statute in the opening sentence.",
+    "List ingredients before applying facts.",
+    "Separate jurisdiction, limitation, admissibility and merits.",
+    "Use only verified authorities and extract the ratio relevant to the issue."
+  ],
+  "revisionPoints": [
+    "Environmental Judiciary — NGT, PIL, Compensation and Constitutional Remedies",
+    "Mandatory ingredients and exceptions",
+    "Forum: the National Green Tribunal, statutory pollution-control authorities, High Court under Article 226 and Supreme Court under Articles 32 and 136 according to the cause and remedy",
+    "BSA electronic evidence and burden checkpoints where applicable"
+  ]
+}
+
+export default content

@@ -18,7 +18,7 @@ Single source of truth for any AI (or human) building or extending **Codepackr L
 | Privacy | 100% client-side. Zero practice / academic data leaves the browser. |
 
 **Tagline**  
-*Student corner — section-wise notes, 10-mark and 16-mark answers, private exam tools*
+*Digital Law Library & Practice Reference — treatises, extracted case law ratios, and chamber drafting*
 
 **Mandatory header backlink**  
 `← Codepackr Dev Suite` → `https://www.codepackr.com`
@@ -35,7 +35,10 @@ Single source of truth for any AI (or human) building or extending **Codepackr L
 6. **India-Focused Content** — AIBE, State Judiciary, new criminal laws (BNS, BNSS, BSA), Constitution, CPC, Contract, Family Law, and any in-force subject you add via `.github/skills/add-new-subject.md`.
 7. **Lazy topic notes** — Full topic learning text must live in `src/data/topics/<subjectSlug>/<topicId>.ts`, never in `subjects.ts`.
 8. **Reusable legal knowledge** — Search `src/data/knowledge` before creating any doctrine, case, article, maxim, definition, principle, or procedure. Reuse the canonical ID. Never duplicate canonical explanations. Follow `docs/reusable-legal-knowledge-architecture.md`.
-9. **Catalog-first subjects** — Click a subject → introduction + complete catalog. Click a section/article → full study page with 10-mark and 16-mark jump buttons. Never a Bare Act dump. Never a shortened Q&A.
+9. **Catalog-first subjects** — Click a subject → introduction + complete catalog. Click a section/article → full treatise page with Case Brief (IRAC) and Written Submissions jump buttons. Never a Bare Act dump. Never a shortened Q&A.
+10. **The Sacred Student Career Covenant (Zero Topic Omission)** — Law students and judicial service aspirants stake their careers, university degrees, and lives on Codepackr Law. An omitted or truncated topic in our library could cause a candidate to miss a critical question or an advocate to miss a cause of action. We must NEVER arbitrarily omit, drop, or miss topics from any subject. When structuring any subject, cross-reference standard university syllabi (Bar Council of India, NLUs, Central/State universities) and benchmark classroom textbooks (e.g. M. S. Rama Rao, Ratanlal & Dhirajlal, Avtar Singh, Mulla). Every doctrine, general defence, capacity rule, specific wrong/offence, remedy, and procedural mechanism must have a registered, dedicated, clickable topic.
+11. **Modular Design Standard (Zero Raw Markdown in UI)** — Never display raw unparsed markdown symbols (`###`, `##`, `**`, `*`, `---`, `> `) in the user interface. All study treatise notes, synthesized fallbacks, and written submissions must render into rich, cohesive modular components (structured section cards, distinction tables, callout blocks, and styled typography) via the `ModularStudyRenderer`.
+12. **Senior Counsel & PhD Scholarship Standard** — Never reduce serious jurisprudence to collegiate exam marks. All topics must provide substantive doctrinal depth, extracted case law ratios (facts, issue, ratio decidendi, courtroom application), dual statutory illustrations (proving vs failing conditions), mandatory BSA 2023 evidentiary compliance (ss. 104–106 & s. 63), and limitation/jurisdiction roadmaps.
 
 ---
 
@@ -43,7 +46,7 @@ Single source of truth for any AI (or human) building or extending **Codepackr L
 
 1. `.github/copilot-instructions.md`
 2. `.github/instructions/global-legal-content.md` — **required before changing any legal study content**
-3. `.github/instructions/student-answer-content.md` — **10-mark / 16-mark depth; do not stop at Bare Act summaries**
+3. `.github/instructions/student-answer-content.md` — **Senior Counsel chamber brief & written submissions standard**
 4. `.github/skills/add-new-subject.md` — **required before adding any new subject**
 5. `.github/instructions/subjects/_template.md` then `.github/instructions/subjects/<subject>.md`
 6. `.github/skills/legal-content-workflow.md`

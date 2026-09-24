@@ -15,7 +15,24 @@ import { TOOLS } from '../../data/tools'
 import { SubjectGlyph, ToolGlyph } from '../icons'
 
 const CODE_SLUGS = ['constitution', 'bns', 'bnss', 'bsa'] as const
-const MORE_SLUGS = ['cpc', 'contract', 'family', 'tort', 'petition-formats'] as const
+const MORE_SLUGS = [
+  'cpc',
+  'contract',
+  'family',
+  'tort',
+  'adr',
+  'pil',
+  'ethics',
+  'labour',
+  'taxation',
+  'admin',
+  'company',
+  'environment',
+  'cyber',
+  'land',
+  'ipr',
+  'petition-formats',
+] as const
 
 export interface NavDrawerProps {
   open: boolean

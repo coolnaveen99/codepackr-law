@@ -1,0 +1,20 @@
+import type { TopicContent } from '../loadTopicContent'
+
+const content: TopicContent = {
+  "glance": "Article 238 — Omitted / Repealed. Not current working law.",
+  "study": "Article 238 (“Omitted”) of the Constitution of India has been omitted by constitutional amendment.\n\nStatus: Repealed / Omitted.\nIt is not current working law in the territory of India.\n\nExamination Instruction:\nWhen answering university or judicial service questions, note that Article 238 is omitted and identify the living constitutional or statutory provision that currently governs the subject matter.",
+  "questionsAndAnswers": [
+    {
+      "id": "art-238-omitted-qa",
+      "draftingCategory": "brief",
+      "question": "Explain the constitutional status and historical context of Article 238 (Omitted).",
+      "answer": "I. INTRODUCTION & STATUS\nArticle 238 of the Constitution of India (“Omitted”) is omitted. It does not form part of the living, enforceable constitutional text.\n\nII. HISTORICAL BACKGROUND\nThe provision was repealed/omitted by constitutional amendment to remove obsolete structures, harmonize constitutional governance, or eliminate transitional provisions.\n\nIII. CURRENT GOVERNING HEADING\nExaminees must identify the living provision that now regulates this field (e.g. general powers of Parliament, corresponding statutory enactments, or alternative constitutional mechanisms).\n\nIV. CONCLUSION\nCite Article 238 strictly as a repealed/omitted heading. Do not apply its text to contemporary 2026 dispute scenarios.",
+      "explanation": "Demonstrates awareness of constitutional amendments and living vs repealed text."
+    }
+  ],
+  "examTips": [
+    "Do not cite Article 238 as living law. State that it is omitted and cite the active provision."
+  ]
+}
+
+export default content

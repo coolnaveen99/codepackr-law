@@ -8,8 +8,8 @@ const content: TopicContent = {
     { name: 'T. Arivandandam v. T.V. Satyapal', year: 1977, citation: 'AIR 1977 SC 2421', holding: 'A cleverly drafted illusion of a cause of action must be rejected.' },
   ],
   questionsAndAnswers: [
-    { id: 'pl-10', marks: 10, question: 'Write a note on rejection of plaint.', answer: 'Order VII r. 11. Grounds (a)–(f). Test is the plaint itself. Rejection is not a decision on merits. Saleem Bhai; Arivandandam. Cite Order VII r. 11 CPC, 1908.' },
-    { id: 'pl-16', marks: 16, question: 'Plaintiff sues on a facially time-barred contract. Defendant moves r. 11. Decide.', answer: 'Issue. Is the suit barred on the face of the plaint?\nRule. r. 11(d).\nApplication. If no acknowledgement is pleaded, reject. If limitation is a mixed fact, go to trial.\nConclusion. Order VII r. 11 CPC.' },
+    { id: 'pl-10', draftingCategory: 'brief', question: 'Write a note on rejection of plaint.', answer: 'Order VII r. 11. Grounds (a)–(f). Test is the plaint itself. Rejection is not a decision on merits. Saleem Bhai; Arivandandam. Cite Order VII r. 11 CPC, 1908.' },
+    { id: 'pl-16', draftingCategory: 'submissions', question: 'Plaintiff sues on a facially time-barred contract. Defendant moves r. 11. Decide.', answer: 'Issue. Is the suit barred on the face of the plaint?\nRule. r. 11(d).\nApplication. If no acknowledgement is pleaded, reject. If limitation is a mixed fact, go to trial.\nConclusion. Order VII r. 11 CPC.' },
   ],
   examTips: ['r. 11 is not a mini-trial of the defence.'],
 }

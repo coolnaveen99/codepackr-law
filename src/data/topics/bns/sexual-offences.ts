@@ -87,7 +87,7 @@ This is original CodePackr teaching. Confirm punishments in India Code before a 
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain rape under the BNS.',
       steps: [
         's. 63 definition; s. 64 punishment.',
@@ -97,7 +97,7 @@ This is original CodePackr teaching. Confirm punishments in India Code before a 
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: 'Discuss sexual offences in Chapter V BNS, including s. 69 and the fate of IPC 377.',
       steps: [
         'Why Chapter V was promoted.',

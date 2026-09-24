@@ -1,112 +1,319 @@
 import type { TopicContent } from '../loadTopicContent'
 
-/**
- * Fundamental Rights
- * Subject: constitution | Topic id: fundamental-rights
- * Part III overview — current through the 106th Amendment (2023).
- */
 const content: TopicContent = {
+  glance:
+    'Part III (Articles 12–35) is the Magna Carta of India, guaranteeing six categories of Fundamental Rights. Enforceable against the State under Article 12, protected by judicial review under Article 13, and guaranteed by the constitutional remedy under Article 32. Non-suspendable regarding Articles 20 and 21.',
 
-  study: `Article 14 (illustrative Part III text)
-“The State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India.”
+  study: `Topic at a Glance
+Part III of the Constitution of India (Articles 12–35) embodies the Fundamental Rights, described by Dr. S. Radhakrishnan as a “pledge to our people and a pact with the civilized world”. Inspired by the American Bill of Rights and the French Declaration of the Rights of Man, Part III protects individual liberties against executive tyranny and legislative overreach.
 
-Part III (Arts 12–35)
-Fundamental Rights are justiciable rights enforceable against the State (Art 12). Key clusters: equality (Arts 14–18), freedoms (Art 19), protection in respect of conviction (Art 20), life and personal liberty (Art 21), education (Art 21A — inserted by 86th Amendment, 2002), protection against arrest (Art 22), religion (Arts 25–28), cultural/educational rights (Arts 29–30), and constitutional remedies (Art 32).
+The Six Broad Categories of Fundamental Rights
+Originally, the Constitution guaranteed seven fundamental rights. The 44th Constitutional Amendment Act, 1978 deleted the Right to Property (Article 19(1)(f) and Article 31) from Part III, re-enacting it as a constitutional right under Article 300A. Today, Part III guarantees six fundamental rights:
+1. Right to Equality (Articles 14–18):
+   - Article 14: Equality before law and equal protection of the laws; prohibition of arbitrariness.
+   - Article 15: Prohibition of discrimination on grounds only of religion, race, caste, sex, or place of birth; protective discrimination for women, children, SEBCs, SCs/STs, and EWS (103rd Amendment).
+   - Article 16: Equality of opportunity in public employment; reservation for backward classes and EWS.
+   - Article 17: Abolition of untouchability; self-executing penal prohibition.
+   - Article 18: Abolition of titles (except military and academic distinctions).
+2. Right to Freedom (Articles 19–22):
+   - Article 19: Protection of six democratic freedoms (speech, assembly, association, movement, residence, profession) subject to reasonable restrictions.
+   - Article 20: Protection against retrospective penal laws (ex-post facto, 20(1)), double jeopardy (20(2)), and self-incrimination (20(3)).
+   - Article 21: Protection of life and personal liberty; procedural and substantive fairness (Maneka Gandhi); privacy (Puttaswamy); clean environment; human dignity.
+   - Article 21A: Right to free and compulsory education for children aged 6 to 14 (86th Amendment, 2002).
+   - Article 22: Procedural safeguards against arrest and preventive detention.
+3. Right against Exploitation (Articles 23–24):
+   - Article 23: Prohibition of traffic in human beings, begar, and other forms of forced labour (enforceable against State and private individuals; Asiad Workers case).
+   - Article 24: Prohibition of employment of children below 14 years in factories, mines, or hazardous occupations (M.C. Mehta).
+4. Right to Freedom of Religion (Articles 25–28):
+   - Article 25: Freedom of conscience and free profession, practice, and propagation of religion, subject to public order, morality, and health.
+   - Article 26: Freedom of religious denominations to manage religious affairs.
+   - Article 27: Freedom from taxation for the promotion of any particular religion.
+   - Article 28: Freedom from compulsory attendance at religious instruction in state-funded institutions.
+5. Cultural and Educational Rights (Articles 29–30):
+   - Article 29: Right of any section of citizens to conserve their distinct language, script, or culture; non-discrimination in state-aided educational admissions.
+   - Article 30: Right of religious and linguistic minorities to establish and administer educational institutions of their choice (T.M.A. Pai; P.A. Inamdar).
+6. Right to Constitutional Remedies (Article 32):
+   - The guaranteed right to move the Supreme Court for the enforcement of Part III rights through prerogative writs (Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo Warranto). Termed the “heart and soul” of the Constitution by Dr. B.R. Ambedkar.
 
-State and enforcement
-Article 12 defines “the State”. Article 13 voids inconsistent laws to the extent of inconsistency. Article 32 is itself a Fundamental Right (constitutional remedies).
+Foundational Architecture: Articles 12 & 13
+1. Article 12 (Definition of “The State”):
+   Fundamental Rights are primarily enforceable against “the State”: Government and Parliament of India, Government and Legislatures of States, local authorities, and “other authorities” within India or under the control of Government of India. The Supreme Court evolved the instrumentality or agency test in Ajay Hasia and Pradeep Kumar Biswas to bring statutory corporations and government-controlled entities within Article 12.
+2. Article 13 (Laws Inconsistent with FRs & Judicial Review):
+   - Article 13(1): Pre-constitutional laws inconsistent with Part III are void to the extent of inconsistency (Doctrine of Eclipse).
+   - Article 13(2): The State shall not make any post-constitutional law which takes away or abridges Part III rights; any law in contravention is void ab initio to the extent of contravention (Doctrine of Severability).
+   - Fundamental Rights cannot be waived by any citizen (Doctrine of Waiver; Basheshar Nath).
 
-Later Part III amendments students must not skip
-• 86th (2002) — Article 21A (right to education).
-• 97th (2011) — “co-operative societies” added to Article 19(1)(c).
-• 103rd (2019) — Articles 15(6) and 16(6), 10% EWS reservation; upheld in Janhit Abhiyan (2022).
+Key Characteristics of Fundamental Rights
+1. Most rights are claims against the State; however, Articles 15(2), 17, 23, and 24 operate against private individuals as well.
+2. Rights are not absolute; they are subject to reasonable restrictions balancing individual liberty with societal welfare.
+3. Rights are justiciable: directly enforceable through Article 32 (Supreme Court) and Article 226 (High Courts).
+4. Non-Suspendability: While rights may be regulated during emergencies, Articles 20 and 21 can NEVER be suspended under Article 359 (44th Amendment).
+5. Part of the Basic Structure: The core essence of Part III rights cannot be destroyed by constitutional amendment under Article 368 (Kesavananda Bharati; I.R. Coelho).
 
-Exam focus
-Map the Part III scheme; distinguish FR (justiciable) from DPSP (Art 37) and Duties (Art 51A); know Art 12/13/32 gateways; do not freeze Part III at the 94th Amendment.`,
+Procedural & Courtroom Anchors (Senior Counsel Checklist)
+1. Forum Choice: Article 32 (Supreme Court) vs Article 226 (High Court).
+2. Threshold Requirements: Establish that the respondent is “State” under Article 12, or that the right is one of the exceptions enforceable against private individuals (Arts 15(2), 17, 23).
+3. The Golden Triangle: In any challenge to state deprivation of liberty or property, plead Articles 14, 19, and 21 together (Maneka Gandhi).
+
+Current-Law Position & Milestone
+Part III embodies transformative constitutionalism. Recent expansions include the Right to Privacy (Puttaswamy, 2017), decriminalization of consensual same-sex relations (Navtej Johar, 2018), striking down of adultery (Joseph Shine, 2019), and EWS quota validity (Janhit Abhiyan, 2022). Current through the 106th Amendment (2023).`,
 
   sections: [
-    { id: 'fr-scheme', title: 'Part III scheme', order: 1, content: [
-      'Fundamental Rights are enforceable against the State as defined in Article 12.',
-      'Article 13 voids inconsistent laws to the extent of inconsistency; Article 32 is the guaranteed remedy.',
-    ]},
-    { id: 'fr-clusters', title: 'Main clusters', order: 2, content: [
-      'Equality (Arts 14–18); freedoms (Art 19); Arts 20–22; religion (Arts 25–28); culture/education (Arts 29–30); remedies (Art 32).',
-    ]},
+    {
+      id: 'fr-six-categories',
+      title: 'The Six Categories of Fundamental Rights',
+      order: 1,
+      content: [
+        'Right to Equality (Arts 14–18), Right to Freedom (Arts 19–22, 21A), Right against Exploitation (Arts 23–24).',
+        'Right to Freedom of Religion (Arts 25–28), Cultural and Educational Rights (Arts 29–30), Constitutional Remedies (Art 32).',
+        'Property right deleted from Part III by 44th Amendment (1978); now a constitutional right under Art 300A.',
+      ],
+    },
+    {
+      id: 'fr-gateway-12-13',
+      title: 'Gateway Provisions: Articles 12 and 13',
+      order: 2,
+      content: [
+        'Article 12: Defines “the State” using the instrumentality or agency test (Ajay Hasia; Pradeep Kumar Biswas).',
+        'Article 13: Judicial review; invalidates inconsistent pre- and post-constitutional laws.',
+        'Doctrines: Eclipse (Art 13(1)), Severability (Art 13(2)), and Non-Waiver (Basheshar Nath).',
+      ],
+    },
+    {
+      id: 'fr-characteristics-enforcement',
+      title: 'Salient Features & Courtroom Enforcement',
+      order: 3,
+      content: [
+        'Directly enforceable against the State; horizontal effect for Arts 15(2), 17, 23, and 24 against private parties.',
+        'Absolute non-suspendability of Articles 20 and 21 during National Emergency (Art 359).',
+        'Part III core essence forms an untouchable component of the Basic Structure (Kesavananda; I.R. Coelho).',
+      ],
+    },
   ],
 
   provisions: [
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-part-3', article: 'Part III', title: 'Fundamental Rights (Articles 12–35)' },
     { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-12', article: 'Article 12', title: 'Definition of the State' },
-    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-13', article: 'Article 13', title: 'Laws inconsistent with or in derogation of the Fundamental Rights' },
-    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-14', article: 'Article 14', title: 'Equality before law' },
-    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-19', article: 'Article 19', title: 'Protection of certain rights regarding freedom of speech, etc.' },
-    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-21', article: 'Article 21', title: 'Protection of life and personal liberty' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-13', article: 'Article 13', title: 'Laws inconsistent with or in derogation of the fundamental rights' },
     { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-32', article: 'Article 32', title: 'Remedies for enforcement of rights conferred by this Part' },
   ],
 
   examples: [
-    { id: 'fr-state-example', title: 'State under Art 12', description: 'A government department or local authority acting under statute is typically “the State” for Part III; private parties are not, unless they fall within Art 12’s expanded reading in settled cases.' },
+    {
+      id: 'fr-ex-1',
+      title: 'Illustration 1 — Horizontal Application against Private Parties',
+      description: 'A private restaurant owner refuses admission to a citizen on the ground of his caste. The citizen can enforce his Fundamental Right directly under Article 15(2) and Article 17, because these specific provisions operate horizontally against private individuals and not merely vertically against the State.',
+    },
+    {
+      id: 'fr-ex-2',
+      title: 'Illustration 2 — Invalidation of Ultra Vires Statute under Article 13(2)',
+      description: 'Parliament enacts a statute empowering police to detain citizens without trial for peaceful political criticism. The Supreme Court invokes Article 13(2) read with Articles 19(1)(a) and 21 to strike down the statute as void ab initio to the extent of its contravention of Part III.',
+    },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'fr-hypo',
+      title: 'Chamber Practice Hypothetical (Waiver & Fundamental Rights)',
+      facts: 'To obtain a lucrative government commercial contract, an engineering contractor signs an agreement with the Public Works Department containing a clause that states: “The contractor hereby irrevocably waives all rights under Article 14 and Article 19(1)(g) of the Constitution and agrees not to challenge any unilateral termination or penalty in any court of law.” Following a change of government, the Department cancels the contract without assigning reasons. When the contractor files a writ petition under Article 226, the State pleads that the contractor has voluntarily waived his Fundamental Rights.',
+      question: 'Evaluate the validity of the waiver clause in light of the Doctrine of Waiver and the landmark ruling of the Supreme Court in Basheshar Nath v. CIT. Can a citizen contract out of Fundamental Rights in India?',
+      applicableLaw: 'Part III of the Constitution of India; Article 13; Doctrine of Waiver; Basheshar Nath v. CIT (AIR 1959 SC 149); Behram Khurshid Pesikaka v. State of Bombay.',
+      analysis: '1. The Doctrine of Waiver under Indian Law: Unlike the United States where certain constitutional rights can be waived, in India, a unanimous Constitution Bench in Basheshar Nath v. CIT held that Fundamental Rights cannot be waived by any individual.\n2. Constitutional Philosophy: Part III rights are not merely private privileges for the personal benefit of an individual; they are solemn constitutional obligations imposed upon the State to advance social and economic justice for the entire public.\n3. Public Policy & Article 13: An agreement waiving a Fundamental Right is contrary to public policy and void under Section 23 of the Indian Contract Act, 1872. The State cannot breach its constitutional duty under Article 13 by extracting a private waiver.\n4. Application to Facts: The waiver clause in the government contract is null and void.',
+      conclusion: 'The plea of waiver is rejected. The contractor cannot waive his Fundamental Rights, and the State cannot contract out of Article 14. The High Court will entertain the writ petition on merits.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'fr-pre-v-post-laws',
+      title: 'Pre-Constitutional Laws (Art 13(1)) vs Post-Constitutional Laws (Art 13(2))',
+      left: 'Pre-Constitutional Laws (Art 13(1))',
+      right: 'Post-Constitutional Laws (Art 13(2))',
+      rows: [
+        { point: 'Date of Enactment', left: 'Enacted before 26 January 1950.', right: 'Enacted after 26 January 1950.' },
+        { point: 'Nature of Invalidation', left: 'Not void ab initio; becomes dormant / shadowed (Doctrine of Eclipse).', right: 'Void ab initio to the extent of contravention (still-born law).' },
+        { point: 'Applicable Doctrine', left: 'Doctrine of Eclipse (Bhikaji Narain Dhakras).', right: 'Doctrine of Severability (R.M.D. Chamarbaugwalla).' },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'fr-trap-1',
+      trap: 'Fundamental Rights can be claimed only against the State under Article 12.',
+      correction: 'While most rights apply vertically against the State, Articles 15(2), 17, 23, and 24 apply horizontally against private citizens as well.',
+    },
+    {
+      id: 'fr-trap-2',
+      trap: 'An Indian citizen can waive his Fundamental Rights under a commercial contract.',
+      correction: 'Basheshar Nath v. CIT (1959) established that Fundamental Rights are mandatory constitutional obligations and CANNOT be waived by any citizen.',
+    },
+    {
+      id: 'fr-trap-3',
+      trap: 'Right to Property is still a Fundamental Right in India.',
+      correction: 'Right to Property was deleted from Part III by the 44th Amendment in 1978. It is now a constitutional right under Article 300A in Part XII.',
+    },
   ],
 
   questionsAndAnswers: [
-    { id: 'fr-qa-1', question: 'What does Article 12 define?', answer: '“The State” for the purposes of Part III.', relatedProvisionIds: ['constitution-article-12'] },
-    { id: 'fr-qa-2', question: 'Is Article 32 itself a Fundamental Right?', answer: 'Yes. The right to constitutional remedies under Article 32 is a Fundamental Right.', relatedProvisionIds: ['constitution-article-32'] },
-    { id: 'fr-qa-3', question: 'How do Fundamental Rights differ from DPSPs?', answer: 'Fundamental Rights are justiciable; DPSPs are not enforceable by courts (Art 37), though they guide governance.', relatedProvisionIds: ['constitution-article-13'] },
+    {
+      id: 'fr-qa-10',
+      draftingCategory: 'brief',
+      question: 'Give an overview of the Fundamental Rights guaranteed under Part III of the Constitution of India. Discuss their main characteristics and constitutional enforceability.',
+      answer: `I. ISSUE & CONSTITUTIONAL PURPOSE
+Part III (Articles 12–35) is the Magna Carta of the Constitution of India, guaranteeing fundamental liberties to individuals against state arbitrariness. The issue is the architectural classification and salient features of these rights.
+
+II. THE SIX CATEGORIES OF FUNDAMENTAL RIGHTS
+Originally seven, reduced to six after the 44th Amendment (1978) deleted Property (Art 31):
+1. Right to Equality (Articles 14–18): Non-arbitrariness, prohibition of discrimination, equality in public employment, abolition of untouchability and titles.
+2. Right to Freedom (Articles 19–22, 21A): Six basic freedoms, protection in offences, life and personal liberty (privacy/dignity), right to education, protection from arrest.
+3. Right against Exploitation (Articles 23–24): Prohibition of trafficking, begar, and child labour.
+4. Right to Freedom of Religion (Articles 25–28): Freedom of conscience, profession, practice, and propagation; management of religious affairs.
+5. Cultural and Educational Rights (Articles 29–30): Protection of minority language, script, culture, and educational administration.
+6. Right to Constitutional Remedies (Article 32): Prerogative writs to enforce Part III rights.
+
+III. SALIENT CHARACTERISTICS
+1. Vertical and Horizontal Enforcement: Enforceable primarily against "the State" under Article 12, but Articles 15(2), 17, 23, and 24 operate against private citizens.
+2. Non-Absolute: Subject to reasonable restrictions under Articles 19(2)–(6), public order, morality, and health.
+3. Emergency Immunity: Articles 20 and 21 can never be suspended under Article 359 (44th Amendment).
+4. Inviolable Core: Basic structure doctrine prevents abrogating Part III essence (Kesavananda).
+
+IV. CONCLUSION
+Part III guarantees essential freedoms necessary for human dignity and democratic citizenship. Current through the 106th Amendment (2023).`,
+      explanation: 'Formatted according to the IRAC method for structured legal assessment.',
+      relatedProvisionIds: ['constitution-part-3', 'constitution-article-12', 'constitution-article-13'],
+    },
+    {
+      id: 'fr-qa-16',
+      draftingCategory: 'submissions',
+      question: 'Critically examine the architecture of Fundamental Rights under Part III of the Constitution of India. How has the Supreme Court evolved Part III into a dynamic charter of human rights through the Golden Triangle and judicial review?',
+      answer: `I. INTRODUCTION & CONSTITUTIONAL PHILOSOPHY
+Part III of the Constitution represents the institutionalized triumph of human dignity over state authority. The Constituent Assembly, cognizant of colonial atrocities and drawing inspiration from the American Bill of Rights, Ireland, and the Universal Declaration of Human Rights (1948), enacted Articles 12 to 35 as justiciable limitations on sovereignty. Over seven decades, the Supreme Court has transformed Part III from a rigid code of negative restraints into a radiant, expansive charter of transformative constitutionalism.
+
+II. THE GATEWAY ARCHITECTURE: ARTICLES 12 AND 13
+1. Defining the Adversary: Article 12:
+   - Part III rights are claims against "the State".
+   - Through Rajasthan SEB, Sukhdev Singh, Ajay Hasia (1981), and Pradeep Kumar Biswas (2002), the Supreme Court expanded "other authorities" using the instrumentality test: deep and pervasive state control, monopoly status, and public function bring corporations and boards under Part III scrutiny.
+2. The Engine of Judicial Review: Article 13:
+   - Article 13 is the protective citadel of Part III.
+   - Article 13(1) governs pre-constitutional laws through the Doctrine of Eclipse (Bhikaji Narain Dhakras).
+   - Article 13(2) prohibits post-constitutional laws abridging rights; such laws are still-born and void ab initio (Deep Chand; Mahendra Lal Jaini).
+   - Doctrine of Severability (R.M.D. Chamarbaugwalla): Only the offending clause is severed if the valid remainder is viable.
+   - Doctrine of Non-Waiver (Basheshar Nath): A citizen cannot waive Fundamental Rights because they are matter of public policy.
+
+III. THE SIXFOLD CLASSIFICATION AND THE 44TH AMENDMENT WATERSHED
+The original charter guaranteed seven rights. The retention of the Right to Property (Articles 19(1)(f) and 31) created continuous friction with land redistribution and agrarian reform, resulting in the 1st, 4th, 17th, 24th, and 25th Amendments. The 44th Amendment (1978) excised property from Part III, relocating it as a non-fundamental constitutional right under Article 300A, leaving six cohesive categories: Equality (14–18), Freedom (19–22), Anti-Exploitation (23–24), Religion (25–28), Culture/Education (29–30), and Remedies (32).
+
+IV. THE GOLDEN TRIANGLE & EXPANSIVE JURISPRUDENCE
+1. Overthrowing Gopalan:
+   For 28 years, A.K. Gopalan (1950) isolated rights into mutually exclusive silos.
+2. The Maneka Gandhi Synthesis (1978):
+   The Court established the Golden Triangle of Articles 14, 19, and 21. A law depriving liberty must be non-arbitrary (Art 14), reasonable (Art 19), and just, fair, and reasonable (Art 21).
+3. The Modern Expansion:
+   - K.S. Puttaswamy (2017): Right to Privacy as a core fundamental right; 5-pronged proportionality test.
+   - Navtej Singh Johar (2018): Decriminalization of Section 377; transformative constitutionalism protecting sexual autonomy.
+   - Joseph Shine (2019): Striking down Section 497 IPC (adultery) as patriarchal stereotyping.
+   - Janhit Abhiyan (2022): 103rd Amendment EWS reservation upheld under the equality code.
+
+V. PROCEDURAL ANCHOR & LITIGATION CHECKLIST (SENIOR COUNSEL REFERENCE)
+1. Strategic Forum: Article 32 (Supreme Court) or Article 226 (High Court).
+2. Pleading Requisites: Establish Article 12 state action, identify the specific breach, invoke the Golden Triangle, and demand public law compensation where appropriate (Nilabati Behera).
+3. Emergency Immunity: Articles 20 and 21 can never be suspended under Article 359.
+
+VI. CONCLUSION & CURRENT-LAW MILESTONE
+Part III has evolved into an indestructible human rights charter. By integrating equality, liberty, and due process, the Indian judiciary has placed human dignity at the center of the constitutional cosmos. Current through the 106th Amendment (2023).`,
+      explanation: 'Exhaustive CREAC essay covering constitutional origins, Articles 12 & 13, the Golden Triangle, landmark cases, and modern human rights expansion.',
+      relatedProvisionIds: ['constitution-part-3', 'constitution-article-12', 'constitution-article-13', 'constitution-article-32'],
+    },
+    {
+      id: 'fr-qa-short',
+      question: 'Which Fundamental Right was deleted from Part III by the 44th Amendment in 1978?',
+      answer: 'The Right to Property (Article 19(1)(f) and Article 31) was deleted from Part III by the 44th Constitutional Amendment Act, 1978, and relocated as a constitutional right under Article 300A in Part XII.',
+      relatedProvisionIds: ['constitution-part-3', 'constitution-article-300a'],
+    },
   ],
 
-  relatedTopics: ['Article 14 — Equality', 'Article 19 — Freedoms', 'Article 21 — Life & Personal Liberty', 'Writs (Arts 32 & 226)', 'Directive Principles (DPSP)'],
+  relatedTopics: [
+    'Article 14 — Equality',
+    'Article 19 — Freedoms',
+    'Article 21 — Life & Personal Liberty',
+    'Writs (Arts 32 & 226)',
+    'Basic Structure Doctrine',
+  ],
 
   cases: [
-    { name: 'Maneka Gandhi v. Union of India', year: 1978, citation: '(1978) 1 SCC 248', holding: 'Procedure under Article 21 must be fair, just and reasonable; Arts 14, 19 and 21 are read together.', relevance: 'Cornerstone of modern Part III interpretation.' },
-    { name: 'Kesavananda Bharati v. State of Kerala', year: 1973, citation: '(1973) 4 SCC 225', holding: 'Parliament cannot destroy the basic structure; Fundamental Rights form part of the broader constitutional identity protected by that doctrine.', relevance: 'Limits on amendment affecting rights structure.' },
+    {
+      name: 'Ajay Hasia v. Khalid Mujib Sehravardi',
+      year: 1981,
+      citation: '(1981) 1 SCC 722',
+      holding: 'Formulated the six-point test to determine whether a corporation is an instrumentality or agency of the State under Article 12.',
+      relevance: 'Locus classicus on the definition of State under Article 12.',
+    },
+    {
+      name: 'Basheshar Nath v. CIT',
+      year: 1959,
+      citation: 'AIR 1959 SC 149',
+      holding: 'A citizen cannot waive any of the Fundamental Rights conferred by Part III of the Constitution; Doctrine of Waiver does not apply in India.',
+      relevance: 'Authoritative ruling prohibiting the waiver of Fundamental Rights.',
+    },
+    {
+      name: 'Maneka Gandhi v. Union of India',
+      year: 1978,
+      citation: '(1978) 1 SCC 248',
+      holding: 'Articles 14, 19, and 21 form a Golden Triangle; procedure depriving life or liberty must be just, fair, and reasonable.',
+      relevance: 'Synthesized Part III rights into an integrated human rights charter.',
+    },
+    {
+      name: 'K.S. Puttaswamy v. Union of India',
+      year: 2017,
+      citation: '(2017) 10 SCC 1',
+      holding: 'The right to privacy is a fundamental right guaranteed under Article 21 and Part III; established the proportionality test.',
+      relevance: 'Modern milestone on informational and bodily privacy.',
+    },
   ],
 
-  bareActPointers: ['Arts 12–35', 'Art 12', 'Art 13', 'Art 32'],
+  bareActPointers: ['Part III', 'Art 12', 'Art 13', 'Art 14', 'Art 19', 'Art 21', 'Art 32', 'Art 300A'],
 
   examTips: [
-    'Open with Part III + Art 12 State + Art 32 remedy.',
-    'Map equality / freedoms / life-liberty clusters.',
-    'Contrast FR (justiciable) with DPSP (Art 37) and Duties (Art 51A).',
-    'Cite Maneka for Arts 14–19–21 golden triangle.',
+    'Always list the six active categories of Fundamental Rights and note that Property moved to Article 300A in 1978.',
+    'Explain the role of Article 12 (State definition) and Article 13 (Judicial review citadel).',
+    'Quote the Golden Triangle: Articles 14, 19, and 21 must be read together.',
+    'Mention that Articles 20 and 21 cannot be suspended even during an emergency (44th Amendment).',
   ],
-
 
   examFrameworks: [
     {
-      marks: 10,
-      question: 'Write a 10-mark answer on this topic.',
+      draftingCategory: 'brief',
+      question: 'Give an overview of Fundamental Rights under Part III and their salient characteristics.',
       steps: [
-        'Introduce the concept and name the governing provision.',
-        'Explain the legal idea in student language — not only the Bare Act words.',
-        'State essential elements or the main rule.',
-        'Cite one leading authority and its principle.',
-        'Give a short illustration or apply the rule to facts.',
-        'Note a material exception or distinction.',
-        'Conclude with the current legal position.',
+        'Introduction: Part III as the Magna Carta of India.',
+        'Enumerate all six categories of Fundamental Rights with articles.',
+        'Explain gateway provisions: Article 12 (State) and Article 13 (Judicial review).',
+        'State key characteristics: Justiciable, non-absolute, emergency immunity of Arts 20 & 21.',
+        'Conclude with the current constitutional position under the 106th Amendment.',
       ],
     },
     {
-      marks: 16,
-      question: 'Expand the same topic into a 16-mark answer.',
+      draftingCategory: 'submissions',
+      question: 'Critically examine the architecture of Part III, Golden Triangle, and modern human rights expansion.',
       steps: [
-        'Introduction and meaning.',
-        'Why the rule exists / brief history if relevant.',
-        'Legal foundation and elements in detail.',
-        'Exceptions, limitations and an important distinction.',
-        'Two or more authorities with ratio, not only names.',
-        'A hypothetical with analysis.',
-        'Current-law position and a short critical comment.',
-        'Conclusion.',
+        'Philosophical origins: Bill of Rights, UDHR, and Constituent Assembly vision.',
+        'Deconstruct Articles 12 (instrumentality test) and 13 (Eclipse, Severability, Waiver).',
+        'Evolution from Gopalan silos to Maneka Gandhi’s Golden Triangle.',
+        'The 44th Amendment realignment (removal of property, protection of Arts 20 & 21).',
+        'Modern transformative jurisprudence: Privacy (Puttaswamy), decriminalization (Navtej Johar), EWS (Janhit Abhiyan).',
+        'Senior Counsel litigation checklist and conclusion.',
       ],
     },
   ],
 
   revisionPoints: [
-    'Start with the provision and the legal idea, not a section dump.',
-    'Name the leading case and state what it actually held.',
-    'Current through the 106th Amendment (2023) for constitutional topics.',
+    'Part III (Articles 12–35): Six categories of Fundamental Rights.',
+    'Article 12: State definition (Ajay Hasia instrumentality test).',
+    'Article 13: Judicial review; laws inconsistent with FRs are void.',
+    'Basheshar Nath: Fundamental Rights cannot be waived in India.',
+    'Articles 20 and 21 cannot be suspended during an Emergency.',
   ],
-
-
 }
 
 export default content

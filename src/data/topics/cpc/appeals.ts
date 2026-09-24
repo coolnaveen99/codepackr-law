@@ -18,8 +18,8 @@ const content: TopicContent = {
     { name: 'Banarsi v. Ram Phal', year: 2003, citation: '(2003) 1 SCC 727', holding: 'First appellate court must weigh the evidence.' },
   ],
   questionsAndAnswers: [
-    { id: 'ap-10', marks: 10, question: 'Distinguish first appeal and second appeal.', answer: 's. 96: original decree; facts and law; not from a consent decree. s. 100: appellate decree; substantial question of law must be formulated. Banarsi; Santosh Hazari. Cite ss. 96 and 100 CPC, 1908.' },
-    { id: 'ap-16', marks: 16, question: 'High Court in second appeal re-appreciates oral evidence and reverses. Discuss.', answer: 'Issue. Is that permitted?\nRule. s. 100 — substantial question of law only. Kondiba Kadam (1999) 3 SCC 722.\nApplication. Re-trying witnesses is a first-appeal function.\nConclusion. The second appeal is unsustainable unless a legal question was first framed.' },
+    { id: 'ap-10', draftingCategory: 'brief', question: 'Distinguish first appeal and second appeal.', answer: 's. 96: original decree; facts and law; not from a consent decree. s. 100: appellate decree; substantial question of law must be formulated. Banarsi; Santosh Hazari. Cite ss. 96 and 100 CPC, 1908.' },
+    { id: 'ap-16', draftingCategory: 'submissions', question: 'High Court in second appeal re-appreciates oral evidence and reverses. Discuss.', answer: 'Issue. Is that permitted?\nRule. s. 100 — substantial question of law only. Kondiba Kadam (1999) 3 SCC 722.\nApplication. Re-trying witnesses is a first-appeal function.\nConclusion. The second appeal is unsustainable unless a legal question was first framed.' },
   ],
   examTips: ['Write the doorway in the first sentence: 96, 100, 104, 114 or 115.'],
 }

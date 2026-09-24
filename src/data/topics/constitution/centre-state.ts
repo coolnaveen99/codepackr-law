@@ -1,114 +1,321 @@
 import type { TopicContent } from '../loadTopicContent'
 
-/**
- * Centre–State Relations
- * Subject: constitution | Topic id: centre-state
- * Legislative / administrative / financial — black-letter map.
- */
 const content: TopicContent = {
+  glance:
+    'Centre–State relations in India embody a cooperative, quasi-federal structure with a strong unitary bias. Governed by Part XI (Legislative and Administrative Relations, Arts 245–263) and Part XII (Financial Relations, Arts 264–293), anchored by the Seventh Schedule, Article 254 (Repugnancy), and basic structure federalism.',
 
-  study: `Article 246 (legislative allocation)
-“Parliament has exclusive power to make laws with respect to any of the matters enumerated in List I (Union List) of the Seventh Schedule; States with respect to List II (State List); and both with respect to List III (Concurrent List), subject to Art 246.”
+  study: `Topic at a Glance
+Federalism is an essential feature of the Basic Structure of the Indian Constitution (S.R. Bommai v. Union of India, 1994). India was characterized by Prof. K.C. Wheare as “quasi-federal”, and by the Supreme Court as “pragmatic federalism” or “cooperative federalism” (State of West Bengal v. Union of India; Government of NCT of Delhi v. Union of India, 2023).
 
-Three strands
-Centre–State relations are commonly studied under legislative, administrative and financial heads.
+1. Legislative Relations (Part XI, Chapter I, Articles 245–255)
+A. Territorial Competence (Article 245):
+- Parliament has plenary power to make laws for the whole or any part of the territory of India, and possesses express constitutional power to enact extra-territorial legislation (Article 245(2); GVK Industries v. ITO).
+- State Legislatures make laws only for the territory of the State; extra-territorial state legislation is void unless there is a real and sufficient territorial nexus (State of Bombay v. R.M.D. Chamarbaugwalla).
+B. Subject-Matter Competence & The Three Lists (Article 246):
+- Seventh Schedule divides legislative power into:
+  (a) List I (Union List): 100 items (originally 97) of national importance (defense, foreign affairs, banking, atomic energy). Parliament has exclusive competence.
+  (b) List II (State List): 61 items (originally 66) of regional/local concern (public order, police, public health, agriculture). State Legislatures have exclusive competence.
+  (c) List III (Concurrent List): 52 items (originally 47) requiring nationwide uniformity with regional variation (criminal law, civil procedure, contracts, marriage, education). Both Parliament and States can legislate.
+- Non-Obstante Clause (Federal Supremacy): Article 246(1) overrides Lists II and III; Article 246(2) overrides List II.
+C. Residuary Powers (Article 248 & Entry 97 List I):
+Unlike the United States and Australia, residuary powers in India are vested exclusively in Parliament.
+D. Parliamentary Power to Legislate on State List:
+Parliament can legislate on entries in List II under five exceptional circumstances:
+1. Article 249: If Rajya Sabha passes a resolution supported by not less than two-thirds of members present and voting that it is necessary in the national interest (valid for 1 year).
+2. Article 250: During a Proclamation of National Emergency under Article 352.
+3. Article 252: When the Legislatures of two or more States pass resolutions consenting to parliamentary legislation.
+4. Article 253: Legislation to give effect to international agreements and treaties (e.g. environment, WTO).
+5. Article 356: When President’s Rule is imposed in a State.
+E. Key Judicial Doctrines of Interpretation:
+1. Doctrine of Pith and Substance (State of Bombay v. F.N. Balsara): True nature and character of the legislation is examined; incidental encroachment does not invalidate the statute.
+2. Doctrine of Colourable Legislation (K.C. Gajapati Narayan Deo v. State of Orissa): What cannot be done directly cannot be done indirectly.
+3. Doctrine of Repugnancy (Article 254):
+   - Where a State law in List III is inconsistent with a Central law in List III, the Central law prevails and the State law is void to the extent of repugnancy (Article 254(1)).
+   - Exception under Article 254(2): If the State law was reserved for the consideration of the President and received his assent, the State law prevails in that State, unless Parliament subsequently enacts a law amending, varying, or repealing it.
 
-Legislative relations
-Articles 245–255 and the Seventh Schedule distribute legislative power among Union, State and Concurrent Lists. Article 246 is the key allocation provision. Doctrines such as pith and substance, colourable legislation, and repugnancy (Art 254) are tested here. The 101st Amendment (2016) inserted Article 246A — special concurrent power for GST — so list allocation is no longer the whole story for goods-and-services tax.
+2. Administrative Relations (Part XI, Chapter II, Articles 256–263)
+- Compliance with Central Laws (Article 256): Executive power of the State must ensure compliance with laws made by Parliament.
+- Central Directions (Article 257): Union may issue directions regarding construction of communication channels and railway protection.
+- Sanction of Article 365: Failure of a State to comply with lawful Union directions empowers the President to declare a failure of constitutional machinery and impose President’s Rule under Article 356.
+- Inter-State River Water Disputes (Article 262): Parliament may by law provide for adjudication of inter-state river disputes and bar the jurisdiction of all courts, including the Supreme Court (Inter-State River Water Disputes Act, 1956).
+- Inter-State Council (Article 263): Established by the President to investigate and discuss subjects of common interest.
 
-Administrative relations
-Articles 256–263 deal with obligation of States and the Union, control of the Union over States in certain cases, and related administrative arrangements (including Art 263 Council of States / Inter-State Council themes in syllabus shorthand).
+3. Financial Relations (Part XII, Articles 264–293)
+- Division of Taxing Powers: Clear demarcation between Union taxes and State taxes. No concurrent tax entry existed until the 101st Amendment.
+- GST Council (Article 279A, 101st Amendment): Created a constitutional forum of collaborative federalism. In Union of India v. Mohit Minerals (2022), the Supreme Court ruled that GST Council recommendations are persuasive and non-binding on legislative bodies, maintaining fiscal federalism.
+- Finance Commission (Article 280): Quasi-judicial body appointed every five years to recommend the devolution of tax revenues between Union and States.
 
-Financial relations
-Articles 268–293 cover distribution of revenues, grants, and related fiscal arrangements. Finance Commission (Art 280) is a standard exam point.
+Procedural & Courtroom Anchors (Senior Counsel Checklist)
+1. Forum:
+   - Inter-governmental disputes between Centre and States lie exclusively within the original jurisdiction of the Supreme Court under Article 131.
+   - Private citizen challenges to statutory competence lie before High Courts under Article 226 and Supreme Court under Article 32.
+2. Challenging Legislative Competence:
+   - Identify the primary entry in the Seventh Schedule.
+   - Apply Pith and Substance to establish the true subject-matter.
+   - If Concurrent List conflict is pleaded, establish direct inconsistency under Article 254 and verify whether Presidential assent was obtained under Article 254(2).
 
-Emergency overlay
-During national emergency, the federal balance can temporarily shift (Arts 352–360), but that is studied mainly under Emergency Provisions.
-
-Exam focus
-Map the three strands; cite Art 246 + Seventh Schedule for legislation; Art 254 for repugnancy; name Finance Commission.`,
+Current-Law Position & Milestone
+Federalism is an essential feature of the Basic Structure. The 101st Amendment (GST) and recent Supreme Court jurisprudence (NCT of Delhi; Mohit Minerals) reaffirm the centrality of collaborative and cooperative federalism. Current through the 106th Amendment (2023).`,
 
   sections: [
-    { id: 'csr-legislative', title: 'Legislative relations', order: 1, content: [
-      'Articles 245–255 and the Seventh Schedule distribute Union, State and Concurrent legislative power.',
-      'Article 246 is the principal allocation clause; Article 254 addresses repugnancy in the Concurrent field.',
-    ]},
-    { id: 'csr-admin-finance', title: 'Administrative and financial relations', order: 2, content: [
-      'Administrative relations are mainly in Articles 256–263.',
-      'Financial relations and the Finance Commission are chiefly in Articles 268–293 and Article 280.',
-    ]},
-  ],
-
-  provisions: [
-    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-246', article: 'Article 246', title: 'Subject-matter of laws made by Parliament and by the Legislatures of States' },
-    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-254', article: 'Article 254', title: 'Inconsistency between laws made by Parliament and laws made by the Legislatures of States' },
-    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-280', article: 'Article 280', title: 'Finance Commission' },
-  ],
-
-  examples: [
-    { id: 'csr-list-example', title: 'List entry dispute', description: 'If a State law is challenged as trespassing on a Union List entry, courts apply pith and substance: if the true nature of the law falls within State competence, incidental encroachment may be tolerated.' },
-  ],
-
-  questionsAndAnswers: [
-    { id: 'csr-qa-1', question: 'Which provision primarily distributes legislative subjects between Union and States?', answer: 'Article 246, read with the Seventh Schedule.', relatedProvisionIds: ['constitution-article-246'] },
-    { id: 'csr-qa-2', question: 'What does Article 254 mainly deal with?', answer: 'Repugnancy / inconsistency between Union and State laws in the Concurrent field.', relatedProvisionIds: ['constitution-article-254'] },
-    { id: 'csr-qa-3', question: 'Which Article provides for the Finance Commission?', answer: 'Article 280.', relatedProvisionIds: ['constitution-article-280'] },
-  ],
-
-  relatedTopics: ['Doctrine of Pith and Substance', 'Doctrine of Colourable Legislation', 'Emergency Provisions', 'Amendment of the Constitution'],
-
-  cases: [
-    { name: 'Prafulla Kumar Mukherjee v. Bank of Commerce', year: 1947, citation: 'AIR 1947 PC 60', holding: 'Pith and substance determines legislative competence; incidental encroachment does not invalidate the law.', relevance: 'Classic authority still used for Centre–State list conflicts.' },
-    { name: 'State of Bombay v. F.N. Balsara', year: 1951, citation: 'AIR 1951 SC 318', holding: 'Applied pith and substance to legislative competence over prohibition-related measures.', relevance: 'Early Supreme Court application in federal list disputes.' },
-  ],
-
-  bareActPointers: ['Art 246', 'Art 254', 'Seventh Schedule', 'Art 280'],
-
-  examTips: [
-    'Structure answers as legislative / administrative / financial.',
-    'Cite Art 246 + Seventh Schedule and Art 254 for concurrent repugnancy.',
-    'Name Finance Commission (Art 280).',
-    'Cross-link pith and substance / colourable legislation doctrines.',
-  ],
-
-
-  examFrameworks: [
     {
-      marks: 10,
-      question: 'Write a 10-mark answer on this topic.',
-      steps: [
-        'Introduce the concept and name the governing provision.',
-        'Explain the legal idea in student language — not only the Bare Act words.',
-        'State essential elements or the main rule.',
-        'Cite one leading authority and its principle.',
-        'Give a short illustration or apply the rule to facts.',
-        'Note a material exception or distinction.',
-        'Conclude with the current legal position.',
+      id: 'centre-state-legislative',
+      title: 'Legislative Relations & The Three Lists',
+      order: 1,
+      content: [
+        'Territorial competence: Article 245 (extra-territorial power of Parliament vs territorial nexus for States).',
+        'Subject-matter: Article 246 (Union List I, State List II, Concurrent List III); non-obstante clause establishes federal supremacy.',
+        'Residuary powers: Vested exclusively in Parliament under Article 248 / Entry 97 List I.',
       ],
     },
     {
-      marks: 16,
-      question: 'Expand the same topic into a 16-mark answer.',
+      id: 'centre-state-doctrines-repugnancy',
+      title: 'Constitutional Doctrines & Repugnancy (Art 254)',
+      order: 2,
+      content: [
+        'Pith and Substance: True character of statute determines competence despite incidental encroachment (Balsara).',
+        'Repugnancy under Article 254: Inconsistency in Concurrent List makes State law void; Article 254(2) Presidential assent exception.',
+        'Parliament’s power to legislate on List II under Articles 249, 250, 252, 253, and 356.',
+      ],
+    },
+    {
+      id: 'centre-state-admin-financial',
+      title: 'Administrative & Financial Federalism',
+      order: 3,
+      content: [
+        'Union directions (Arts 256, 257) and sanction of Article 365 (President’s Rule gateway).',
+        'Water disputes under Article 262 and Inter-State Council under Article 263.',
+        'Financial federalism: Article 280 Finance Commission and Article 279A GST Council (Mohit Minerals collaborative federalism).',
+      ],
+    },
+  ],
+
+  provisions: [
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-245', article: 'Article 245', title: 'Extent of laws made by Parliament and by the Legislatures of States' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-246', article: 'Article 246', title: 'Subject-matter of laws made by Parliament and by the Legislatures of States' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-254', article: 'Article 254', title: 'Inconsistency between laws made by Parliament and laws made by the Legislatures of States' },
+    { actId: 'constitution', actName: 'Constitution of India', provisionId: 'constitution-article-131', article: 'Article 131', title: 'Original jurisdiction of the Supreme Court' },
+  ],
+
+  examples: [
+    {
+      id: 'centre-state-ex-1',
+      title: 'Illustration 1 — Pith and Substance Application (Upheld)',
+      description: 'A State Legislature enacts a Money-lenders Act regulating money-lending (List II, Entry 30) and provides for the reduction of debts, including debts evidenced by promissory notes (negotiable instruments, List I, Entry 46). The Privy Council and Supreme Court hold that in pith and substance the Act deals with money-lending; the incidental encroachment on promissory notes does not render the State statute ultra vires (Prafulla Kumar Mukherjee v. Bank of Commerce).',
+    },
+    {
+      id: 'centre-state-ex-2',
+      title: 'Illustration 2 — Repugnancy under Article 254 (State Law Overridden)',
+      description: 'A State Legislature enacts an amendment to the Code of Criminal Procedure introducing a special state bail restriction. Parliament subsequently enacts the Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS) containing comprehensive, conflicting bail provisions. Under Article 254(1), the State amendment is repugnant to the parliamentary enactment and becomes void to the extent of inconsistency.',
+    },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'centre-state-hypo',
+      title: 'Chamber Practice Hypothetical (Concurrent Repugnancy & Presidential Assent)',
+      facts: 'The State Legislature of X enacts a Land Acquisition and Rehabilitation Act in 2022 dealing with subjects in Concurrent List Entry 42, containing a compensation formula distinct from the Central Land Acquisition Act, 2013. The State Governor reserves the Bill for the consideration of the President under Article 200, and the President gives assent under Article 254(2). In 2024, Parliament enacts a comprehensive national infrastructure amendment expressly modifying compensation terms across India for national highways. Landowners in State X challenge the application of the Central Act, arguing that the State Act has Presidential assent.',
+      question: 'Examine whether the State Act or the Central Act prevails in State X. Can Parliament override a State law that has received Presidential assent under Article 254(2)?',
+      applicableLaw: 'Article 254 of the Constitution of India; Proviso to Article 254(2); Seventh Schedule List III Entry 42; M. Karunanidhi v. Union of India.',
+      analysis: '1. Operation of Article 254(1): Normally, Central law prevails over State law in List III in case of direct repugnancy.\n2. Exception under Article 254(2): Where a State law in List III is reserved for the President and receives assent, it prevails in that State despite repugnancy with an existing Central law.\n3. Proviso to Article 254(2): The Proviso explicitly empowers Parliament to enact at any time any law with respect to the same matter, including a law adding to, amending, varying, or repealing the State law.\n4. Application to Facts: The 2024 Parliamentary enactment expressly covers the field and overrides the earlier State enactment by virtue of the Proviso to Article 254(2).',
+      conclusion: 'The 2024 Parliamentary Act prevails over the State Act. Parliament retains the ultimate legislative supremacy under the Proviso to Article 254(2).',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'centre-state-254-v-246',
+      title: 'Repugnancy (Article 254) vs Ultra Vires (Article 246)',
+      left: 'Doctrine of Repugnancy (Art 254)',
+      right: 'Doctrine of Ultra Vires (Art 246)',
+      rows: [
+        { point: 'Applicability', left: 'Applies ONLY when both laws are in Concurrent List III.', right: 'Applies when a legislature encroaches on List I or List II.' },
+        { point: 'Nature of Defect', left: 'Both legislatures are competent; laws are in conflict.', right: 'Total lack of legislative competence from the outset.' },
+        { point: 'Cure by Assent', left: 'Can be cured by Presidential assent under Art 254(2).', right: 'Cannot be cured by assent; void ab initio.' },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'centre-state-trap-1',
+      trap: 'Article 254 repugnancy applies when a State law encroaches upon the Union List (List I).',
+      correction: 'Article 254 applies ONLY to Concurrent List (List III) conflicts. Encroachment on List I is a question of ultra vires competence under Article 246, not Article 254.',
+    },
+    {
+      id: 'centre-state-trap-2',
+      trap: 'Residuary legislative powers in India belong to the States as in the United States.',
+      correction: 'Under Article 248 and Entry 97 List I, residuary legislative powers belong exclusively to the Union Parliament.',
+    },
+    {
+      id: 'centre-state-trap-3',
+      trap: 'Recommendations of the GST Council under Article 279A are legally binding on Parliament and State Legislatures.',
+      correction: 'The Supreme Court in Union of India v. Mohit Minerals (2022) held that GST Council recommendations are persuasive, preserving cooperative federalism.',
+    },
+  ],
+
+  questionsAndAnswers: [
+    {
+      id: 'centre-state-qa-10',
+      draftingCategory: 'brief',
+      question: 'Explain the distribution of legislative powers between the Union and the States under Article 246 and the Seventh Schedule. When can Parliament legislate on matters in the State List?',
+      answer: `I. ISSUE & CONSTITUTIONAL ARCHITECTURE
+The distribution of legislative competence between the Union and the States is governed by Article 246 read with the Seventh Schedule. The core issue is the delineation of subject-matter competence and the exceptional cases where Parliament legislates on State subjects.
+
+II. THE THREEFOLD DISTRIBUTION (ARTICLE 246)
+1. List I (Union List): 100 entries of national defense, foreign affairs, currency, and atomic energy. Parliament has exclusive competence.
+2. List II (State List): 61 entries of public order, police, public health, and local government. State Legislatures have exclusive competence.
+3. List III (Concurrent List): 52 entries of criminal law, civil procedure, contracts, and education. Both can legislate; Central law prevails in case of repugnancy (Art. 254).
+4. Residuary Powers (Article 248): Vested exclusively in Parliament.
+
+III. FIVE EXCEPTIONAL CASES WHERE PARLIAMENT LEGISLATES ON LIST II
+1. National Interest (Article 249): When Rajya Sabha passes a resolution by 2/3rd majority present and voting.
+2. National Emergency (Article 250): During a Proclamation of Emergency under Article 352.
+3. Consent of States (Article 252): When two or more State Legislatures pass resolutions requesting Parliament to enact.
+4. International Treaties (Article 253): To implement any international treaty, agreement, or convention.
+5. President’s Rule (Article 356): When constitutional machinery breaks down in a State.
+
+IV. CONCLUSION
+The legislative scheme combines regional autonomy with central supremacy in emergencies, embodying India's quasi-federal design. Current through the 106th Amendment (2023).`,
+      explanation: 'Formatted according to the IRAC method for structured legal assessment.',
+      relatedProvisionIds: ['constitution-article-246', 'constitution-article-248'],
+    },
+    {
+      id: 'centre-state-qa-16',
+      draftingCategory: 'submissions',
+      question: 'Critically examine the federal architecture of the Indian Constitution with special reference to legislative relations and the Doctrine of Repugnancy under Article 254. Is India truly a federal state? Discuss with landmark decisions including S.R. Bommai and Mohit Minerals.',
+      answer: `I. INTRODUCTION & THE FEDERAL PARADOX
+The nature of the Indian federal structure has generated rich jurisprudential debate. While the United States represents an indestructible union of indestructible states born out of a compact between independent nations, India is an “indestructible union of destructible states” (Dr. B.R. Ambedkar). The Constitution purposefully avoided the word “Federation” in Article 1, describing India as a “Union of States”. In S.R. Bommai v. Union of India (1994) 3 SCC 1, a 9-judge Constitution Bench settled that federalism is an indispensable feature of the Basic Structure.
+
+II. LEGISLATIVE TERRITORY & COMPETENCE (ARTICLES 245 & 246)
+1. Territorial Competence:
+   - Parliament has extra-territorial competence under Article 245(2) (GVK Industries).
+   - States require a real, substantial territorial nexus (R.M.D. Chamarbaugwalla).
+2. The Seventh Schedule Scheme:
+   - Non-obstante clause gives supremacy to List I over Lists II and III, and List III over List II.
+   - Residuary powers belong to Parliament under Article 248 and Entry 97 List I.
+3. Canons of Interpretation:
+   - Pith and Substance: Formulated in Prafulla Kumar and F.N. Balsara; a statute is characterized by its true nature, ignoring incidental trespass.
+   - Colourable Legislation: K.C. Gajapati Narayan Deo; testing whether the legislature disguised an unconstitutional motive.
+
+III. THE DOCTRINE OF REPUGNANCY (ARTICLE 254)
+1. Applicable Exclusively to List III:
+   In Deep Chand v. State of U.P. (1959) and M. Karunanidhi v. Union of India (1979), the Supreme Court established the tests of repugnancy:
+   (a) Direct conflict between provisions such that obedience to one involves disobedience to the other;
+   (b) Parliament intended to occupy the entire field exhausted by the Central legislation.
+2. The Interplay between 254(1) and 254(2):
+   - Article 254(1): Central law prevails; State law is void to the extent of repugnancy.
+   - Article 254(2) Exception: If the State law is reserved for and receives Presidential assent, the State law prevails in that State.
+   - Proviso to 254(2): Parliament can at any time enact a fresh law amending, varying, or repealing the State law, regaining legislative supremacy.
+
+IV. FISCAL & ADMINISTRATIVE FEDERALISM IN THE 21ST CENTURY
+1. Administrative Coercion & Safeguards:
+   Union directions under Articles 256 and 257 carry the coercive sanction of Article 365/356. However, Bommai circumscribed President's Rule with judicial review and floor tests.
+2. The GST Regime & Collaborative Federalism (Union of India v. Mohit Minerals, 2022):
+   Justice D.Y. Chandrachud ruled that the 101st Amendment created a cooperative framework. Recommendations of the GST Council under Article 279A are persuasive, not binding mandates that obliterate state legislative sovereignty.
+3. NCT of Delhi Cases (2018 & 2023):
+   Reiterated collaborative federalism: elected governments representing popular will cannot be superseded by un-elected executive administrators.
+
+V. PROCEDURAL ANCHOR & LITIGATION ROADMAP (SENIOR COUNSEL REFERENCE)
+1. Exclusive Forum for Federal Disputes: Original jurisdiction of the Supreme Court under Article 131.
+2. Pleading Checklist:
+   - Classify the impugned legislation under the primary entry;
+   - Plead Pith and Substance to defend or attack competence;
+   - In Concurrent conflicts, verify Presidential assent under Article 254(2) and examine whether Parliament occupied the field.
+
+VI. CONCLUSION & CURRENT-LAW MILESTONE
+India is not a traditional classical federation, but a dynamic, asymmetric cooperative federalism. By balancing parliamentary supremacy with state autonomy and judicial review, Centre–State relations maintain national unity amidst diversity. Current through the 106th Amendment (2023).`,
+      explanation: 'Exhaustive CREAC essay covering legislative relations, doctrines, Article 254 repugnancy, S.R. Bommai, and Mohit Minerals.',
+      relatedProvisionIds: ['constitution-article-246', 'constitution-article-254', 'constitution-article-131'],
+    },
+    {
+      id: 'centre-state-qa-short',
+      question: 'What is the effect of Presidential assent under Article 254(2) on a repugnant State law?',
+      answer: 'Under Article 254(2), if a State law on a Concurrent List subject is reserved for the consideration of the President and receives his assent, it prevails in that State despite inconsistency with an existing Central law. However, Parliament can subsequently override it under the Proviso.',
+      relatedProvisionIds: ['constitution-article-254'],
+    },
+  ],
+
+  relatedTopics: [
+    'Doctrine of Pith and Substance',
+    'Doctrine of Colourable Legislation',
+    'Basic Structure Doctrine',
+    'Emergency Provisions',
+  ],
+
+  cases: [
+    {
+      name: 'State of Bombay v. F.N. Balsara',
+      year: 1951,
+      citation: 'AIR 1951 SC 318',
+      holding: 'Enunciated the Doctrine of Pith and Substance; incidental encroachment by a State liquor prohibition law into inter-state trade does not invalidate it.',
+      relevance: 'Foundational authority on legislative competence and pith and substance.',
+    },
+    {
+      name: 'S.R. Bommai v. Union of India',
+      year: 1994,
+      citation: '(1994) 3 SCC 1',
+      holding: 'Federalism is an essential feature of the Basic Structure of the Constitution; arbitrary imposition of President’s Rule under Article 356 is subject to judicial review.',
+      relevance: 'Authoritative ruling on constitutional federalism and state autonomy.',
+    },
+    {
+      name: 'M. Karunanidhi v. Union of India',
+      year: 1979,
+      citation: '(1979) 3 SCC 431',
+      holding: 'Laid down the tests of repugnancy under Article 254; repugnancy arises only where there is direct irreconcilable conflict between two Concurrent List enactments.',
+      relevance: 'Standard citation for Article 254 repugnancy analysis.',
+    },
+    {
+      name: 'Union of India v. Mohit Minerals Pvt. Ltd.',
+      year: 2022,
+      citation: '(2022) 10 SCC 700',
+      holding: 'GST Council recommendations under Article 279A are persuasive and not binding mandates; Indian federalism is a dialogue of cooperative federalism.',
+      relevance: 'Modern milestone on financial and cooperative federalism.',
+    },
+  ],
+
+  bareActPointers: ['Art 245', 'Art 246', 'Art 248', 'Art 254', 'Art 262', 'Art 279A', 'Art 131', 'Seventh Schedule'],
+
+  examTips: [
+    'Always distinguish Article 246 ultra vires (lack of competence) from Article 254 repugnancy (Concurrent List conflict).',
+    'List the 5 instances where Parliament legislates on List II: Arts 249, 250, 252, 253, and 356.',
+    'Explain the role of Presidential Assent under Article 254(2) and Parliament’s override power under the Proviso.',
+    'Cite S.R. Bommai for federalism as Basic Structure and Mohit Minerals for collaborative federalism.',
+  ],
+
+  examFrameworks: [
+    {
+      draftingCategory: 'brief',
+      question: 'Explain the distribution of legislative powers and when Parliament can legislate on List II.',
       steps: [
-        'Introduction and meaning.',
-        'Why the rule exists / brief history if relevant.',
-        'Legal foundation and elements in detail.',
-        'Exceptions, limitations and an important distinction.',
-        'Two or more authorities with ratio, not only names.',
-        'A hypothetical with analysis.',
-        'Current-law position and a short critical comment.',
-        'Conclusion.',
+        'Introduction: Article 246 and the Seventh Schedule Three Lists.',
+        'State the non-obstante clause and federal supremacy.',
+        'Residuary powers under Article 248 / Entry 97 List I.',
+        'Enumerate the 5 exceptions (Arts 249, 250, 252, 253, 356).',
+        'Conclude with the current legal position under the 106th Amendment.',
+      ],
+    },
+    {
+      draftingCategory: 'submissions',
+      question: 'Critically examine Indian federalism, legislative relations, and Article 254 Repugnancy.',
+      steps: [
+        'Theoretical foundations: Quasi-federal nature and Basic Structure status (Bommai).',
+        'Territorial and subject-matter competence under Articles 245 and 246.',
+        'Judicial doctrines: Pith and Substance, Colourable Legislation, Harmonious Construction.',
+        'Exhaustive analysis of Article 254 Repugnancy: tests of conflict, 254(2) assent, and the Proviso.',
+        'Collaborative federalism in the GST era (Mohit Minerals) and Article 131 forum.',
+        'Conclusion on dynamic federalism.',
       ],
     },
   ],
 
   revisionPoints: [
-    'Start with the provision and the legal idea, not a section dump.',
-    'Name the leading case and state what it actually held.',
-    'Current through the 106th Amendment (2023) for constitutional topics.',
+    'List I (Union: 100), List II (State: 61), List III (Concurrent: 52).',
+    'Residuary powers belong to Parliament (Article 248).',
+    'Repugnancy applies ONLY to List III conflicts (Article 254).',
+    'Article 254(2): Presidential assent saves State law unless Parliament overrides it.',
+    'Federalism is Basic Structure (S.R. Bommai).',
   ],
-
-
 }
 
 export default content

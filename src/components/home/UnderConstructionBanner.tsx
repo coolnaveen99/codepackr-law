@@ -1,79 +1,112 @@
-import { Construction } from 'lucide-react'
+import { useState } from 'react'
+import { Construction, CheckCircle2, ChevronDown, ChevronUp, Sparkles, BookOpen } from 'lucide-react'
 
-/** Large caution-tape under-construction notice for the Law home page */
+/** High-impact, authoritative Under Construction / Rollout Banner for CodePackr Law */
 export function UnderConstructionBanner() {
+  const [expanded, setExpanded] = useState(false)
+
   return (
     <div
       role="status"
       aria-live="polite"
-      className="relative overflow-hidden rounded-3xl border-4 border-amber-400 dark:border-amber-500 shadow-lg shadow-amber-500/20"
+      className="relative overflow-hidden rounded-3xl border-3 border-amber-400 dark:border-amber-500 shadow-xl shadow-amber-500/10 bg-amber-50/90 dark:bg-slate-900/95 backdrop-blur-xs transition-all duration-200"
     >
+      {/* Top Caution Ribbon */}
       <div
-        className="h-10 sm:h-14 w-full"
+        className="h-4 sm:h-5 w-full opacity-90"
         style={{
-          backgroundImage: 'repeating-linear-gradient(-45deg, #fbbf24 0 18px, #111827 18px 36px)',
+          backgroundImage: 'repeating-linear-gradient(-45deg, #f59e0b 0 16px, #0f172a 16px 32px)',
         }}
         aria-hidden
       />
 
-      <div className="bg-amber-50 dark:bg-slate-900 px-5 sm:px-10 py-10 sm:py-14 text-center space-y-6">
-        <div className="mx-auto max-w-3xl">
-          <svg
-            viewBox="0 0 720 180"
-            className="w-full h-auto drop-shadow-md"
-            role="img"
-            aria-label="Yellow and black caution tape: Site under construction"
-          >
-            <defs>
-              <pattern
-                id="cautionStripes"
-                patternUnits="userSpaceOnUse"
-                width="32"
-                height="32"
-                patternTransform="rotate(-45)"
-              >
-                <rect width="16" height="32" fill="#f59e0b" />
-                <rect x="16" width="16" height="32" fill="#111827" />
-              </pattern>
-            </defs>
-            <rect x="12" y="36" width="696" height="108" rx="10" fill="url(#cautionStripes)" stroke="#b45309" strokeWidth="5" />
-            <rect x="70" y="54" width="580" height="72" rx="8" fill="#111827" opacity="0.94" />
-            <text
-              x="360"
-              y="102"
-              textAnchor="middle"
-              fill="#fbbf24"
-              fontFamily="ui-sans-serif, system-ui, sans-serif"
-              fontWeight="900"
-              fontSize="32"
-              letterSpacing="3"
+      <div className="px-5 sm:px-8 py-6 sm:py-8 space-y-4">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="flex items-start sm:items-center gap-3.5">
+            <div className="w-12 h-12 rounded-2xl bg-amber-400 dark:bg-amber-500 text-slate-950 flex items-center justify-center shrink-0 shadow-md shadow-amber-500/30">
+              <Construction className="w-6 h-6 animate-pulse" aria-hidden />
+            </div>
+            <div>
+              <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-md text-[10px] sm:text-[11px] font-black uppercase tracking-widest bg-amber-200 dark:bg-amber-950/80 text-amber-900 dark:text-amber-300 border border-amber-300 dark:border-amber-800">
+                Phase-by-Phase Treatise Rollout
+              </div>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-black tracking-tight text-slate-950 dark:text-amber-50 uppercase mt-0.5">
+                Site Under Active Construction
+              </h2>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 border border-amber-300 dark:border-amber-700/60 text-xs font-bold text-slate-800 dark:text-slate-200 shadow-xs">
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+              2,078 Provisions Active
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 border border-amber-300 dark:border-amber-700/60 text-xs font-bold text-slate-800 dark:text-slate-200 shadow-xs">
+              <Sparkles className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
+              10M & 16M Answers Live
+            </span>
+            <button
+              type="button"
+              onClick={() => setExpanded(!expanded)}
+              className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-amber-400 hover:bg-amber-500 text-slate-950 text-xs font-extrabold uppercase tracking-wider transition-colors duration-150"
             >
-              SITE UNDER CONSTRUCTION
-            </text>
-          </svg>
+              {expanded ? (
+                <>
+                  Less <ChevronUp className="w-4 h-4" />
+                </>
+              ) : (
+                <>
+                  Rollout Details <ChevronDown className="w-4 h-4" />
+                </>
+              )}
+            </button>
+          </div>
         </div>
 
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight text-amber-950 dark:text-amber-50 uppercase leading-none">
-          Site under construction
-        </h2>
-
-        <p className="text-lg sm:text-xl md:text-2xl font-bold text-amber-900 dark:text-amber-100 max-w-3xl mx-auto leading-snug">
-          Codepackr Law is being expanded with more subjects, notes, and tools.
-          <span className="block mt-2 text-xl sm:text-2xl font-black">
-            Content may change — please check back soon.
-          </span>
+        <p className="text-sm sm:text-base font-medium text-slate-700 dark:text-slate-300 max-w-4xl leading-relaxed">
+          <strong className="font-bold text-slate-900 dark:text-white">CodePackr Law</strong> is under active development by our legal research chamber. Every one of the <strong>20 legal subjects</strong> is structured to the Bar Council of India standard with <strong>2,078 active provisions</strong>, structured IRAC case briefs, comprehensive written submissions, and chamber practice blueprints. Book-chapter treatises with full case ratios are expanding daily.
         </p>
 
-        <div className="inline-flex items-center gap-2.5 px-5 py-3 rounded-full bg-amber-300 dark:bg-amber-800 text-amber-950 dark:text-amber-50 text-base sm:text-lg font-black uppercase tracking-widest">
-          <Construction className="w-6 h-6 sm:w-7 sm:h-7" aria-hidden />
-          Work in progress
-        </div>
+        {expanded && (
+          <div className="pt-4 border-t border-amber-200/80 dark:border-slate-800 grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+            <div className="p-3.5 rounded-2xl bg-white/80 dark:bg-slate-800/80 border border-amber-200 dark:border-slate-700">
+              <div className="flex items-center gap-2 font-bold text-slate-900 dark:text-slate-100 mb-1">
+                <BookOpen className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+                Zero Topic Omission
+              </div>
+              <p className="text-slate-600 dark:text-slate-400 leading-normal">
+                We work for student careers. Every single syllabus doctrine, defense, and statutory section is cataloged. No topic is omitted.
+              </p>
+            </div>
+
+            <div className="p-3.5 rounded-2xl bg-white/80 dark:bg-slate-800/80 border border-amber-200 dark:border-slate-700">
+              <div className="flex items-center gap-2 font-bold text-slate-900 dark:text-slate-100 mb-1">
+                <Sparkles className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+                Dual-Track Depth
+              </div>
+              <p className="text-slate-600 dark:text-slate-400 leading-normal">
+                Every clicked topic delivers both Track A (University / AIBE / Judicial Mains) and Track B (Courtroom / Chamber Practice) guidance.
+              </p>
+            </div>
+
+            <div className="p-3.5 rounded-2xl bg-white/80 dark:bg-slate-800/80 border border-amber-200 dark:border-slate-700">
+              <div className="flex items-center gap-2 font-bold text-slate-900 dark:text-slate-100 mb-1">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                100% Privacy First
+              </div>
+              <p className="text-slate-600 dark:text-slate-400 leading-normal">
+                Zero telemetry, zero user tracking. All MCQs, flashcards, timers, and searches run entirely client-side in your browser.
+              </p>
+            </div>
+          </div>
+        )}
       </div>
 
+      {/* Bottom Caution Ribbon */}
       <div
-        className="h-10 sm:h-14 w-full"
+        className="h-2 sm:h-3 w-full opacity-90"
         style={{
-          backgroundImage: 'repeating-linear-gradient(-45deg, #fbbf24 0 18px, #111827 18px 36px)',
+          backgroundImage: 'repeating-linear-gradient(-45deg, #f59e0b 0 16px, #0f172a 16px 32px)',
         }}
         aria-hidden
       />

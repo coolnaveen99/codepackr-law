@@ -1,0 +1,210 @@
+import type { TopicContent } from '../topicTypes'
+
+const content: TopicContent = {
+  "glance": "Customs Warehousing, Transit and Clearance. Complete Tax treatise with statutory deconstruction, examples, verified authorities, forum analysis and chamber drafting.",
+  "study": "Topic at a glance\nCustoms Warehousing, Transit and Clearance is a registered theme in Taxation Laws. Customs Warehousing, Transit and Clearance is governed by Income-tax Act, 2025; Income-tax Rules, 2026; CGST Act, 2017; IGST Act, 2017; applicable SGST Acts; and Customs Act, 1962, together with current rules, notifications and circulars. identify the tax period, charging statute, commencement date, amendment or notification in force, taxable event, jurisdictional notice and statutory appeal or writ route; use the Income-tax Act, 1961 only as historical transition/concordance where the 2025 Act applies.\n\nProvenance, purpose and doctrinal foundation\nThe topic exists to organise a legally enforceable rule, doctrine or professional procedure. Read the statutory text, constitutional setting, institutional purpose and binding authorities together. The correct analysis begins with the legal question and avoids replacing the governing enactment with a generic textbook summary.\n\nTextual anatomy and operative test\n1. Identify the governing enactment, section, article, rule, doctrine or professional standard named by the topic.\n2. Deconstruct definitions, conditions precedent, exceptions, provisos, explanations, jurisdictional limits and remedies.\n3. Distinguish the topic from its nearest neighbour: Income-tax Act, 2025 — Structure, Commencement and Transition from the 1961 Act; Income-tax Rules, 2026 — Delegated Rules, Forms, Compliance and Procedure; Residential Status and Scope of Total Income.\n4. Apply the rule to the record and state which fact satisfies or fails each ingredient.\n\nCourtroom and evidentiary roadmap\nCompetent forum: the assessing authority, appellate authority, ITAT, GST appellate forum, High Court on a substantial question or constitutional writ jurisdiction, and Supreme Court according to the statute. the assessee and Revenue bear burdens according to the charging provision, exemption or deduction claimed, assessment record, statutory presumption and appellate issue. Where electronic records are relied upon, apply BSA 2023 s. 63 and the applicable burden provisions without treating electronic admissibility as proof of the ultimate fact. Identify limitation, notice, maintainability, alternative remedy and the exact relief sought.\n\nCurrent-law close\nIncome-tax Act, 2025; Income-tax Rules, 2026; CGST Act, 2017; IGST Act, 2017; applicable SGST Acts; and Customs Act, 1962, together with current rules, notifications and circulars. identify the tax period, charging statute, commencement date, amendment or notification in force, taxable event, jurisdictional notice and statutory appeal or writ route; use the Income-tax Act, 1961 only as historical transition/concordance where the 2025 Act applies Always name the statute and provision in the final advice.",
+  "sections": [
+    {
+      "id": "customs-warehousing-module-1",
+      "title": "Provenance, Legislative Objective and Doctrinal Foundations",
+      "order": 1,
+      "content": [
+        "Customs Warehousing, Transit and Clearance sits within Taxation Laws and is governed by Income-tax Act, 2025; Income-tax Rules, 2026; CGST Act, 2017; IGST Act, 2017; applicable SGST Acts; and Customs Act, 1962, together with current rules, notifications and circulars.",
+        "Explain the legal mischief, institutional purpose and constitutional value before applying the rule.",
+        "Use the named statute, doctrine or professional standard rather than a generic substitute."
+      ]
+    },
+    {
+      "id": "customs-warehousing-module-2",
+      "title": "Textual Anatomy, Exceptions and Connected Rules",
+      "order": 2,
+      "content": [
+        "Identify every operative clause, condition, explanation, exception and remedy in Customs Warehousing, Transit and Clearance.",
+        "Distinguish it from Income-tax Act, 2025 — Structure, Commencement and Transition from the 1961 Act; Income-tax Rules, 2026 — Delegated Rules, Forms, Compliance and Procedure; Residential Status and Scope of Total Income.",
+        "Historical or comparative law may explain development but cannot replace the current governing rule."
+      ]
+    },
+    {
+      "id": "customs-warehousing-module-3",
+      "title": "Mandatory Proving Ingredients and Legal Test",
+      "order": 3,
+      "content": [
+        "Identify the forum and procedural stage.",
+        "Prove each jurisdictional, substantive and procedural condition from the record.",
+        "Address the principal defence, exception, limitation and precise legal consequence."
+      ]
+    },
+    {
+      "id": "customs-warehousing-module-4",
+      "title": "BSA 2023 Burden and Electronic Evidence Checkpoints",
+      "order": 4,
+      "content": [
+        "the assessee and Revenue bear burdens according to the charging provision, exemption or deduction claimed, assessment record, statutory presumption and appellate issue",
+        "Apply BSA s. 104 to the ordinary foundational burden and s. 109 only to facts especially within knowledge after foundation is established.",
+        "Apply BSA s. 63 to electronic records where tendered, separately analysing relevance, authenticity, certificate and weight."
+      ]
+    },
+    {
+      "id": "customs-warehousing-module-5",
+      "title": "Procedural Roadmap, Forum and Limitation Checkpoints",
+      "order": 5,
+      "content": [
+        "Competent forum: the assessing authority, appellate authority, ITAT, GST appellate forum, High Court on a substantial question or constitutional writ jurisdiction, and Supreme Court according to the statute.",
+        "Check limitation, notice, alternative remedy, jurisdiction and statutory appeal or review route.",
+        "Transition and current law: identify the tax period, charging statute, commencement date, amendment or notification in force, taxable event, jurisdictional notice and statutory appeal or writ route; use the Income-tax Act, 1961 only as historical transition/concordance where the 2025 Act applies"
+      ]
+    }
+  ],
+  "provisions": [
+    {
+      "actId": "taxation",
+      "actName": "Income-tax Act, 2025; Income-tax Rules, 2026; CGST Act, 2017; IGST Act, 2017; applicable SGST Acts; and Customs Act, 1962, together with current rules, notifications and circulars",
+      "provisionId": "taxation-customs-warehousing",
+      "title": "Customs Warehousing, Transit and Clearance"
+    },
+    {
+      "actId": "bsa",
+      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
+      "provisionId": "bsa-s-63",
+      "section": "s. 63",
+      "title": "Electronic records where applicable"
+    }
+  ],
+  "examples": [
+    {
+      "id": "customs-warehousing-ill-1",
+      "title": "Example 1 - Rule applies",
+      "illustrationType": "practical",
+      "description": "The claimant or applicant establishes the forum, legal foundation, every mandatory ingredient and the requested remedy under Customs Warehousing, Transit and Clearance. The authority applies the rule on the proved record."
+    },
+    {
+      "id": "customs-warehousing-ill-2",
+      "title": "Example 2 - Boundary defect",
+      "illustrationType": "fail-scenario",
+      "description": "A material condition, jurisdictional fact, limitation requirement or evidentiary foundation for Customs Warehousing, Transit and Clearance is missing. The Court identifies the defect and refuses, returns, remands or limits the relief according to law."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "customs-warehousing-hypo",
+      "title": "Chamber Practice Hypothetical: Customs Warehousing, Transit and Clearance",
+      "facts": "A dispute invokes Customs Warehousing, Transit and Clearance. The opposing party challenges jurisdiction, limitation, statutory ingredients and an electronic record relied upon by the applicant.",
+      "question": "Whether relief under Customs Warehousing, Transit and Clearance is maintainable and what order should the competent forum pass.",
+      "applicableLaw": "Income-tax Act, 2025; Income-tax Rules, 2026; CGST Act, 2017; IGST Act, 2017; applicable SGST Acts; and Customs Act, 1962, together with current rules, notifications and circulars",
+      "analysis": "1. Identify the issue and forum. 2. State the governing rule. 3. Apply every ingredient to the facts. 4. Test evidence and burden, including BSA s. 63 where relevant. 5. Answer the defence and formulate the exact remedy.",
+      "conclusion": "Relief depends on proof of the statutory or doctrinal ingredients, jurisdiction and admissible foundation. The forum should grant only the order authorised by the governing law."
+    }
+  ],
+  "distinctions": [
+    {
+      "id": "customs-warehousing-distinction",
+      "title": "Customs Warehousing, Transit and Clearance and connected legal concept",
+      "left": "Customs Warehousing, Transit and Clearance",
+      "right": "Income-tax Act, 2025 — Structure, Commencement and Transition from the 1961 Act; Income-tax Rules, 2026 — Delegated Rules, Forms, Compliance and Procedure; Residential Status and Scope of Total Income",
+      "rows": [
+        {
+          "point": "Source",
+          "left": "Income-tax Act, 2025; Income-tax Rules, 2026; CGST Act, 2017; IGST Act, 2017; applicable SGST Acts; and Customs Act, 1962, together with current rules, notifications and circulars",
+          "right": "Connected statute, doctrine or procedural route"
+        },
+        {
+          "point": "Trigger",
+          "left": "Its own mandatory ingredients",
+          "right": "Different facts or conditions"
+        },
+        {
+          "point": "Consequence",
+          "left": "Specific relief or legal result",
+          "right": "Do not import this topic's consequence automatically"
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "customs-warehousing-trap-1",
+      "trap": "Treating Customs Warehousing, Transit and Clearance as a heading-only topic.",
+      "correction": "A complete answer must state provenance, ingredients, evidence, forum, limitation, authority and relief."
+    },
+    {
+      "id": "customs-warehousing-trap-2",
+      "trap": "Using a generic legal rule without naming the governing statute.",
+      "correction": "Always identify the named enactment or constitutional source: Income-tax Act, 2025; Income-tax Rules, 2026; CGST Act, 2017; IGST Act, 2017; applicable SGST Acts; and Customs Act, 1962, together with current rules, notifications and circulars."
+    },
+    {
+      "id": "customs-warehousing-trap-3",
+      "trap": "Treating a relevant electronic record as automatically proved.",
+      "correction": "Relevance, admissibility, foundation, burden and weight remain separate questions under the BSA route."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Govind Saran Ganga Saran v. Commissioner of Sales Tax",
+      "year": 1985,
+      "citation": "155 ITR 144 (SC)",
+      "court": "Supreme Court of India",
+      "facts": "The Court examined the components of a valid charging provision.",
+      "issue": "What must a tax levy clearly identify to be valid?",
+      "ratioDecidendi": "A valid levy ordinarily identifies the taxable event, person liable, rate and measure or value of the tax.",
+      "holding": "The Court treated these components as essential to a charging scheme.",
+      "relevance": "Use for charge, levy and statutory certainty."
+    },
+    {
+      "name": "Union of India v. Azadi Bachao Andolan",
+      "year": 2004,
+      "citation": "(2004) 10 SCC 1",
+      "court": "Supreme Court of India",
+      "facts": "The Court considered treaty benefits, circulars and tax avoidance arguments.",
+      "issue": "How should a valid tax treaty and administrative circular operate?",
+      "ratioDecidendi": "A treaty and valid administrative practice must be respected unless displaced by law; legitimate tax planning is not automatically evasion.",
+      "holding": "The Court upheld the challenged treaty approach in the circumstances.",
+      "relevance": "Use for statutory interpretation, treaties and tax planning."
+    },
+    {
+      "name": "Union of India v. Mohit Minerals Pvt. Ltd.",
+      "year": 2022,
+      "citation": "(2022) 10 SCC 700",
+      "court": "Supreme Court of India",
+      "facts": "The case concerned GST levy and the legal effect of a Council recommendation.",
+      "issue": "What is the constitutional and statutory force of GST Council recommendations?",
+      "ratioDecidendi": "GST Council recommendations have persuasive value within the constitutional design but are not automatically binding as primary legislation without statutory implementation.",
+      "holding": "The Court interpreted the federal GST framework accordingly.",
+      "relevance": "Use for GST levy, delegated action and constitutional federalism."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "customs-warehousing-brief",
+      "draftingCategory": "brief",
+      "question": "Structured Case Brief and legal problem assessment on Customs Warehousing, Transit and Clearance.",
+      "answer": "I. ISSUE AND JURISDICTION\nWhether Customs Warehousing, Transit and Clearance applies to the stated facts and whether the chosen forum and remedy are maintainable.\n\nII. GOVERNING RULE\nCustoms Warehousing, Transit and Clearance is governed by Income-tax Act, 2025; Income-tax Rules, 2026; CGST Act, 2017; IGST Act, 2017; applicable SGST Acts; and Customs Act, 1962, together with current rules, notifications and circulars. identify the tax period, charging statute, commencement date, amendment or notification in force, taxable event, jurisdictional notice and statutory appeal or writ route; use the Income-tax Act, 1961 only as historical transition/concordance where the 2025 Act applies.\n\nIII. INGREDIENT APPLICATION\nIdentify each condition, connect it to the evidence and answer the principal exception or defence. Apply BSA s. 63 to digital records where relevant and state the initial burden precisely.\n\nIV. CONCLUSION\nGrant, refuse or modify the relief only to the extent authorised by the governing law and proved record.",
+      "explanation": "IRAC chamber brief."
+    },
+    {
+      "id": "customs-warehousing-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions on Customs Warehousing, Transit and Clearance.",
+      "answer": "I. STATEMENT OF FACTS AND PROCEDURAL PROVENANCE\nSet out the material facts, forum, procedural stage, notices, pleadings and documents.\n\nII. STATUTORY AND DOCTRINAL SCHEME\nDeconstruct Customs Warehousing, Transit and Clearance under Income-tax Act, 2025; Income-tax Rules, 2026; CGST Act, 2017; IGST Act, 2017; applicable SGST Acts; and Customs Act, 1962, together with current rules, notifications and circulars, including its purpose, conditions, exceptions and connected provisions.\n\nIII. SATISFACTION OF MANDATORY INGREDIENTS\nApply each ingredient to the record, address jurisdiction, limitation, maintainability and the opposing party's strongest objection.\n\nIV. VERIFIED AUTHORITIES\nUse the case ratios below only for the propositions they decide and distinguish contrary facts.\n\nV. EVIDENCE AND PRAYER\nAddress BSA ss. 63, 104 and 109 where relevant, then seek the precise order available from the assessing authority, appellate authority, ITAT, GST appellate forum, High Court on a substantial question or constitutional writ jurisdiction, and Supreme Court according to the statute.",
+      "explanation": "Senior Counsel written submissions."
+    }
+  ],
+  "bareActPointers": [
+    "Income-tax Act, 2025; Income-tax Rules, 2026; CGST Act, 2017; IGST Act, 2017; applicable SGST Acts; and Customs Act, 1962, together with current rules, notifications and circulars",
+    "Customs Warehousing, Transit and Clearance",
+    "BSA s. 63 and ss. 104, 109 where relevant"
+  ],
+  "examTips": [
+    "Name the governing statute in the opening sentence.",
+    "List ingredients before applying facts.",
+    "Separate jurisdiction, limitation, admissibility and merits.",
+    "Use only verified authorities and extract the ratio relevant to the issue."
+  ],
+  "revisionPoints": [
+    "Customs Warehousing, Transit and Clearance",
+    "Mandatory ingredients and exceptions",
+    "Forum: the assessing authority, appellate authority, ITAT, GST appellate forum, High Court on a substantial question or constitutional writ jurisdiction, and Supreme Court according to the statute",
+    "BSA electronic evidence and burden checkpoints where applicable"
+  ]
+}
+
+export default content

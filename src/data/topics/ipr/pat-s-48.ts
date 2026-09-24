@@ -1,0 +1,210 @@
+import type { TopicContent } from '../topicTypes'
+
+const content: TopicContent = {
+  "glance": "Patents Act s. 48 — Rights of patentees (Patents s. 48). Complete IPR treatise with statutory deconstruction, examples, verified authorities, forum analysis and chamber drafting.",
+  "study": "Topic at a glance\nPatents Act s. 48 — Rights of patentees (Patents s. 48) is a registered section in Intellectual Property Rights. Patents Act s. 48 — Rights of patentees (Patents s. 48) is governed by Copyright Act, 1957; Trade Marks Act, 1999; Patents Act, 1970; Designs Act, 2000; Geographical Indications of Goods Act, 1999 and allied rules. identify the right, registration status, relevant statute, filing or infringement date, limitation, forum and interim or final remedy.\n\nProvenance, purpose and doctrinal foundation\nThe topic exists to organise a legally enforceable rule, doctrine or professional procedure. Read the statutory text, constitutional setting, institutional purpose and binding authorities together. The correct analysis begins with the legal question and avoids replacing the governing enactment with a generic textbook summary.\n\nTextual anatomy and operative test\n1. Identify the governing enactment, section, article, rule, doctrine or professional standard named by the topic.\n2. Deconstruct definitions, conditions precedent, exceptions, provisos, explanations, jurisdictional limits and remedies.\n3. Distinguish the topic from its nearest neighbour: Patents Act s. 2(1)(j) & (ja) — Definition of Invention and Inventive Step; Patents Act s. 3 — What are not inventions (Patentability exclusions - s. 3(d) Novartis case); Patents Act s. 84 — Compulsory licences.\n4. Apply the rule to the record and state which fact satisfies or fails each ingredient.\n\nCourtroom and evidentiary roadmap\nCompetent forum: the Commercial Court, High Court IP Division where applicable, Registrar or Controller, IPAB legacy matters, appellate forum and Supreme Court according to the statute. the claimant must establish subsistence, ownership or goodwill, infringement or passing off, validity and the requested remedy; the defendant may establish invalidity, fair dealing, honest use or other statutory defence. Where electronic records are relied upon, apply BSA 2023 s. 63 and the applicable burden provisions without treating electronic admissibility as proof of the ultimate fact. Identify limitation, notice, maintainability, alternative remedy and the exact relief sought.\n\nCurrent-law close\nCopyright Act, 1957; Trade Marks Act, 1999; Patents Act, 1970; Designs Act, 2000; Geographical Indications of Goods Act, 1999 and allied rules. identify the right, registration status, relevant statute, filing or infringement date, limitation, forum and interim or final remedy Always name the statute and provision in the final advice.",
+  "sections": [
+    {
+      "id": "pat-s-48-module-1",
+      "title": "Provenance, Legislative Objective and Doctrinal Foundations",
+      "order": 1,
+      "content": [
+        "Patents Act s. 48 — Rights of patentees (Patents s. 48) sits within Intellectual Property Rights and is governed by Copyright Act, 1957; Trade Marks Act, 1999; Patents Act, 1970; Designs Act, 2000; Geographical Indications of Goods Act, 1999 and allied rules.",
+        "Explain the legal mischief, institutional purpose and constitutional value before applying the rule.",
+        "Use the named statute, doctrine or professional standard rather than a generic substitute."
+      ]
+    },
+    {
+      "id": "pat-s-48-module-2",
+      "title": "Textual Anatomy, Exceptions and Connected Rules",
+      "order": 2,
+      "content": [
+        "Identify every operative clause, condition, explanation, exception and remedy in Patents Act s. 48 — Rights of patentees (Patents s. 48).",
+        "Distinguish it from Patents Act s. 2(1)(j) & (ja) — Definition of Invention and Inventive Step; Patents Act s. 3 — What are not inventions (Patentability exclusions - s. 3(d) Novartis case); Patents Act s. 84 — Compulsory licences.",
+        "Historical or comparative law may explain development but cannot replace the current governing rule."
+      ]
+    },
+    {
+      "id": "pat-s-48-module-3",
+      "title": "Mandatory Proving Ingredients and Legal Test",
+      "order": 3,
+      "content": [
+        "Identify the forum and procedural stage.",
+        "Prove each jurisdictional, substantive and procedural condition from the record.",
+        "Address the principal defence, exception, limitation and precise legal consequence."
+      ]
+    },
+    {
+      "id": "pat-s-48-module-4",
+      "title": "BSA 2023 Burden and Electronic Evidence Checkpoints",
+      "order": 4,
+      "content": [
+        "the claimant must establish subsistence, ownership or goodwill, infringement or passing off, validity and the requested remedy; the defendant may establish invalidity, fair dealing, honest use or other statutory defence",
+        "Apply BSA s. 104 to the ordinary foundational burden and s. 109 only to facts especially within knowledge after foundation is established.",
+        "Apply BSA s. 63 to electronic records where tendered, separately analysing relevance, authenticity, certificate and weight."
+      ]
+    },
+    {
+      "id": "pat-s-48-module-5",
+      "title": "Procedural Roadmap, Forum and Limitation Checkpoints",
+      "order": 5,
+      "content": [
+        "Competent forum: the Commercial Court, High Court IP Division where applicable, Registrar or Controller, IPAB legacy matters, appellate forum and Supreme Court according to the statute.",
+        "Check limitation, notice, alternative remedy, jurisdiction and statutory appeal or review route.",
+        "Transition and current law: identify the right, registration status, relevant statute, filing or infringement date, limitation, forum and interim or final remedy"
+      ]
+    }
+  ],
+  "provisions": [
+    {
+      "actId": "ipr",
+      "actName": "Copyright Act, 1957; Trade Marks Act, 1999; Patents Act, 1970; Designs Act, 2000; Geographical Indications of Goods Act, 1999 and allied rules",
+      "provisionId": "ipr-pat-s-48",
+      "title": "Patents Act s. 48 — Rights of patentees (Patents s. 48)"
+    },
+    {
+      "actId": "bsa",
+      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
+      "provisionId": "bsa-s-63",
+      "section": "s. 63",
+      "title": "Electronic records where applicable"
+    }
+  ],
+  "examples": [
+    {
+      "id": "pat-s-48-ill-1",
+      "title": "Example 1 - Rule applies",
+      "illustrationType": "practical",
+      "description": "The claimant or applicant establishes the forum, legal foundation, every mandatory ingredient and the requested remedy under Patents Act s. 48 — Rights of patentees (Patents s. 48). The authority applies the rule on the proved record."
+    },
+    {
+      "id": "pat-s-48-ill-2",
+      "title": "Example 2 - Boundary defect",
+      "illustrationType": "fail-scenario",
+      "description": "A material condition, jurisdictional fact, limitation requirement or evidentiary foundation for Patents Act s. 48 — Rights of patentees (Patents s. 48) is missing. The Court identifies the defect and refuses, returns, remands or limits the relief according to law."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "pat-s-48-hypo",
+      "title": "Chamber Practice Hypothetical: Patents Act s. 48 — Rights of patentees (Patents s. 48)",
+      "facts": "A dispute invokes Patents Act s. 48 — Rights of patentees (Patents s. 48). The opposing party challenges jurisdiction, limitation, statutory ingredients and an electronic record relied upon by the applicant.",
+      "question": "Whether relief under Patents Act s. 48 — Rights of patentees (Patents s. 48) is maintainable and what order should the competent forum pass.",
+      "applicableLaw": "Copyright Act, 1957; Trade Marks Act, 1999; Patents Act, 1970; Designs Act, 2000; Geographical Indications of Goods Act, 1999 and allied rules",
+      "analysis": "1. Identify the issue and forum. 2. State the governing rule. 3. Apply every ingredient to the facts. 4. Test evidence and burden, including BSA s. 63 where relevant. 5. Answer the defence and formulate the exact remedy.",
+      "conclusion": "Relief depends on proof of the statutory or doctrinal ingredients, jurisdiction and admissible foundation. The forum should grant only the order authorised by the governing law."
+    }
+  ],
+  "distinctions": [
+    {
+      "id": "pat-s-48-distinction",
+      "title": "Patents Act s. 48 — Rights of patentees (Patents s. 48) and connected legal concept",
+      "left": "Patents Act s. 48 — Rights of patentees (Patents s. 48)",
+      "right": "Patents Act s. 2(1)(j) & (ja) — Definition of Invention and Inventive Step; Patents Act s. 3 — What are not inventions (Patentability exclusions - s. 3(d) Novartis case); Patents Act s. 84 — Compulsory licences",
+      "rows": [
+        {
+          "point": "Source",
+          "left": "Copyright Act, 1957; Trade Marks Act, 1999; Patents Act, 1970; Designs Act, 2000; Geographical Indications of Goods Act, 1999 and allied rules",
+          "right": "Connected statute, doctrine or procedural route"
+        },
+        {
+          "point": "Trigger",
+          "left": "Its own mandatory ingredients",
+          "right": "Different facts or conditions"
+        },
+        {
+          "point": "Consequence",
+          "left": "Specific relief or legal result",
+          "right": "Do not import this topic's consequence automatically"
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "pat-s-48-trap-1",
+      "trap": "Treating Patents Act s. 48 — Rights of patentees (Patents s. 48) as a heading-only topic.",
+      "correction": "A complete answer must state provenance, ingredients, evidence, forum, limitation, authority and relief."
+    },
+    {
+      "id": "pat-s-48-trap-2",
+      "trap": "Using a generic legal rule without naming the governing statute.",
+      "correction": "Always identify the named enactment or constitutional source: Copyright Act, 1957; Trade Marks Act, 1999; Patents Act, 1970; Designs Act, 2000; Geographical Indications of Goods Act, 1999 and allied rules."
+    },
+    {
+      "id": "pat-s-48-trap-3",
+      "trap": "Treating a relevant electronic record as automatically proved.",
+      "correction": "Relevance, admissibility, foundation, burden and weight remain separate questions under the BSA route."
+    }
+  ],
+  "cases": [
+    {
+      "name": "R.G. Anand v. Deluxe Films",
+      "year": 1978,
+      "citation": "(1978) 4 SCC 118",
+      "court": "Supreme Court of India",
+      "facts": "The dispute concerned alleged copying of a dramatic work into a film.",
+      "issue": "What test determines substantial copyright infringement of an idea or expression.",
+      "ratioDecidendi": "Copyright protects expression, not ideas, and infringement depends on substantial similarity assessed from the work as a whole.",
+      "holding": "The Court stated the governing comparison test.",
+      "relevance": "Use for copyright infringement and idea-expression distinction."
+    },
+    {
+      "name": "Novartis AG v. Union of India",
+      "year": 2013,
+      "citation": "(2013) 6 SCC 1",
+      "court": "Supreme Court of India",
+      "facts": "The Court considered patentability of a pharmaceutical form under s. 3(d).",
+      "issue": "What enhanced efficacy threshold applies to a pharmaceutical derivative.",
+      "ratioDecidendi": "Section 3(d) requires the statutory enhanced-efficacy threshold and prevents evergreening without the required proof.",
+      "holding": "The patent claim was rejected under the statutory standard.",
+      "relevance": "Use for patentability exclusions and pharmaceutical patents."
+    },
+    {
+      "name": "Cadila Health Care Ltd. v. Cadila Pharmaceuticals Ltd.",
+      "year": 2001,
+      "citation": "(2001) 5 SCC 73",
+      "court": "Supreme Court of India",
+      "facts": "The parties used similar marks for pharmaceutical products.",
+      "issue": "How should deceptive similarity be assessed in pharmaceutical trademark disputes.",
+      "ratioDecidendi": "Courts must apply a stricter likelihood-of-confusion test for medicines because confusion may endanger public health.",
+      "holding": "The Court directed a careful comparison of the marks and circumstances.",
+      "relevance": "Use for trademark confusion and public-interest analysis."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "pat-s-48-brief",
+      "draftingCategory": "brief",
+      "question": "Structured Case Brief and legal problem assessment on Patents Act s. 48 — Rights of patentees (Patents s. 48).",
+      "answer": "I. ISSUE AND JURISDICTION\nWhether Patents Act s. 48 — Rights of patentees (Patents s. 48) applies to the stated facts and whether the chosen forum and remedy are maintainable.\n\nII. GOVERNING RULE\nPatents Act s. 48 — Rights of patentees (Patents s. 48) is governed by Copyright Act, 1957; Trade Marks Act, 1999; Patents Act, 1970; Designs Act, 2000; Geographical Indications of Goods Act, 1999 and allied rules. identify the right, registration status, relevant statute, filing or infringement date, limitation, forum and interim or final remedy.\n\nIII. INGREDIENT APPLICATION\nIdentify each condition, connect it to the evidence and answer the principal exception or defence. Apply BSA s. 63 to digital records where relevant and state the initial burden precisely.\n\nIV. CONCLUSION\nGrant, refuse or modify the relief only to the extent authorised by the governing law and proved record.",
+      "explanation": "IRAC chamber brief."
+    },
+    {
+      "id": "pat-s-48-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions on Patents Act s. 48 — Rights of patentees (Patents s. 48).",
+      "answer": "I. STATEMENT OF FACTS AND PROCEDURAL PROVENANCE\nSet out the material facts, forum, procedural stage, notices, pleadings and documents.\n\nII. STATUTORY AND DOCTRINAL SCHEME\nDeconstruct Patents Act s. 48 — Rights of patentees (Patents s. 48) under Copyright Act, 1957; Trade Marks Act, 1999; Patents Act, 1970; Designs Act, 2000; Geographical Indications of Goods Act, 1999 and allied rules, including its purpose, conditions, exceptions and connected provisions.\n\nIII. SATISFACTION OF MANDATORY INGREDIENTS\nApply each ingredient to the record, address jurisdiction, limitation, maintainability and the opposing party's strongest objection.\n\nIV. VERIFIED AUTHORITIES\nUse the case ratios below only for the propositions they decide and distinguish contrary facts.\n\nV. EVIDENCE AND PRAYER\nAddress BSA ss. 63, 104 and 109 where relevant, then seek the precise order available from the Commercial Court, High Court IP Division where applicable, Registrar or Controller, IPAB legacy matters, appellate forum and Supreme Court according to the statute.",
+      "explanation": "Senior Counsel written submissions."
+    }
+  ],
+  "bareActPointers": [
+    "Copyright Act, 1957; Trade Marks Act, 1999; Patents Act, 1970; Designs Act, 2000; Geographical Indications of Goods Act, 1999 and allied rules",
+    "Patents Act s. 48 — Rights of patentees (Patents s. 48)",
+    "BSA s. 63 and ss. 104, 109 where relevant"
+  ],
+  "examTips": [
+    "Name the governing statute in the opening sentence.",
+    "List ingredients before applying facts.",
+    "Separate jurisdiction, limitation, admissibility and merits.",
+    "Use only verified authorities and extract the ratio relevant to the issue."
+  ],
+  "revisionPoints": [
+    "Patents Act s. 48 — Rights of patentees (Patents s. 48)",
+    "Mandatory ingredients and exceptions",
+    "Forum: the Commercial Court, High Court IP Division where applicable, Registrar or Controller, IPAB legacy matters, appellate forum and Supreme Court according to the statute",
+    "BSA electronic evidence and burden checkpoints where applicable"
+  ]
+}
+
+export default content

@@ -36,97 +36,145 @@ Conceptual models in this document map onto **existing** Codepackr Law types. Re
 
 ---
 
-# 0. Catalog-first student UX (current product)
+# 0. Dual-Track Student & Practitioner UX
 
-This is the click path every catalog subject must copy:
+This is the standard click path every subject and treatise page must implement:
 
 ```text
 Hamburger / Home
-  → Subject (introduction + complete numbered list)
-    → Click Section 1 / Article 21 / Section 107
-      → Full study page
-        → 10 mark button → full 10-mark answer
-        → 16 mark button → full 16-mark answer
+  → Subject (Statutory Introduction + In-Force Status + Complete Numbered Catalog)
+    → Click Section / Article / Order / Topic
+      → Full Treatise Page (Book-Chapter Depth)
+        → Jurisprudential Foundation & Legislative Intent
+        → Statutory Deconstruction (Provisos, Explanations, Non-obstante clauses)
+        → Procedural & Evidentiary Anchor (Forum, Jurisdiction, Limitation, Burden of Proof)
+        → Official Statutory Illustrations (proving vs failing conditions) + Practical Hypotheticals
+        → Landmark Case Law (Ratio Decidendi with Bench, Court, Facts, and Courtroom Application)
+        → Courtroom Submissions (Prosecution/Petitioner vs Defence/Respondent arguments)
+        → Case Brief Button → Structured Case Brief & Problem Assessment (IRAC Structure)
+        → Written Submissions Button → Comprehensive Chamber Written Submissions (Appellate Standard)
 ```
 
-- Subject landing: intro card (`subjectIntros.ts`) + jump box + every provision, grouped by chapter/part. Themes sit above the list.
-- Study page: teaching `study` + official illustrations when printed + labelled examples + Q&A dock.
-- Do not lead a study page with unverified IPC/CrPC/IEA mapping.
-- Do not dump the Bare Act as the whole page.
-- New subjects: `.github/skills/add-new-subject.md`. Extras file from `.github/instructions/subjects/_template.md`.
-- Wire hamburger: `src/components/layout/NavDrawer.tsx` (`CODE_SLUGS` or `MORE_SLUGS`) and `src/components/home/HomePage.tsx`.
-
+- **Subject landing**: Statutory context card (`subjectIntros.ts`), in-force milestone dates, transitional summary (e.g. S. 531 BNSS savings), quick search/jump box, and the complete provision catalog grouped by Chapter/Part. High-yield themes sit prominently above the list.
+- **Treatise page**: A complete chapter delivering both **Track A (Scholastic & Problem Solving Mastery)** for LL.B, LL.M, AIBE, and Judicial Services candidates, and **Track B (Litigation & Chamber Practice)** for junior advocates.
+- **Dock Jump Targets**: Dedicated quick-access targets for `#statutory-illustrations`, `#case-law-ratios`, `#legal-brief`, and `#written-submissions`.
+- **Zero Boilerplate Synthesizers**: Do not lead a study page with unverified IPC/CrPC/IEA mapping or generic boilerplate templates. Teach the actual working rule of that specific provision.
+- **Navigation Integration**: Wire new subjects into `src/components/layout/NavDrawer.tsx` (`CODE_SLUGS` or `MORE_SLUGS`) and `src/components/home/HomePage.tsx`.
 
 ---
 
+## Purpose & Jurisprudential Stance
 
-## Purpose
+This document establishes the **global instruction set for AI agents, legal scholars, and contributors on CodePackr Law**.
 
-This is the **global instruction set for AI agents working on CodePackr Law**.
+Every substantive provision, topic, and tool must reflect two unified disciplines:
+1. **The Doctor of Laws (PhD in Jurisprudence)**: Rigorous theoretical context (analytical, historical, sociological, and constitutional jurisprudence), statutory interpretation canons (literal, purposive *Heydon's Case*, harmonious construction, *ejusdem generis*), legislative intent, and disciplined IRAC/ILAC structuring.
+2. **The Senior Counsel (Senior Advocate)**: Practical courtroom utility, trial and appellate procedural fluency, forum and pecuniary/territorial jurisdiction, limitation periods, proving statutory ingredients, evidentiary appreciation (burden under BSA ss. 104–106 and electronic records under s. 63), and strategic adversarial submissions.
 
-Use these instructions for every law subject. Subject-specific files in `.github/instructions/subjects/` (`constitution.md`, `bns.md`, `bnss.md`, `bsa.md`, `cpc.md`, `contract.md`, `family.md`, `torts.md`, `petition-formats.md`) should contain only subject-specific requirements.
+Subject-specific files in [`.github/instructions/subjects/`](subjects/) contain only subject-specific nuances — do not duplicate global architecture into them.
 
-The goal is to create one reusable legal-learning architecture and a reliable research, verification, mapping, validation, and testing workflow.
+### The Sacred Student Career Covenant (Zero Topic Omission Directive)
+
+**Law students and judicial service aspirants place their faith, university degrees, and life career trajectories in CodePackr Law.** We work for the student's career and their life. An omitted, skipped, or arbitrarily pruned topic in our library could cause a student to fail an exam or an advocate to miss a cause of action.
+
+1. **Zero Omission Standard**: AI agents, maintainers, and contributors must NEVER arbitrarily ignore, prune, or drop syllabus topics from any legal subject.
+2. **Authoritative Syllabus Benchmarking**: When architecting or updating any subject catalog in `src/data/subjects.ts`, conduct an exhaustive cross-reference against:
+   - The Bar Council of India (BCI) Model Curriculum and National Law University (NLU) course outlines.
+   - Revered classroom textbooks and standard treatises (e.g., M. S. Rama Rao, Ratanlal & Dhirajlal, Avtar Singh, Mulla, R.K. Bangia).
+   - University LL.B/LL.M question banks and State Judicial Services Mains examination syllabi.
+3. **Dedicated Provision & Topic Registration**: Every distinct concept, general defence, capacity rule, specific wrong/offence, remedy, and procedural mechanism must have a registered, dedicated, clickable topic with structured Case Briefs and Written Submissions. If an exhaustive chapter treatise is pending rollout, the topic must still be registered so that `synthesizePlaceholderTopic` provides an authoritative syllabus reference immediately.
 
 ---
 
-# 1. Core Workflow
+### Modular Design Standard (Zero Raw Markdown in UI)
 
-Always follow:
+All topic study treatises and courtroom drafts must strictly adhere to the **Modular Design Standard**:
+1. **Zero Raw Markdown Tokens**: Raw markdown syntax (`###`, `##`, `#`, `---`, `> `) must **never** be printed as unrendered plain text to the user.
+2. **Modular Component Presentation**:
+   - `Topic at a glance`: Presented in a prominent, styled summary card.
+   - `Study Notes & Modules`: Rendered as clean, bordered visual modules with badge indicators (`Module 1`, `Module 2`, etc.) via `ModularStudyRenderer`.
+   - `Callouts & Notes`: Editorial notes, provisos, and judicial commentaries must render as distinct callout cards with left accent borders and subtle background tint.
+   - `Structured Data Properties`: Prefer structuring content into `TopicContent` properties (`sections`, `provisions`, `hypotheticals`, `distinctions`, `misconceptions`, `questionsAndAnswers`).
+   - `Rich Inline Typography`: Bold phrases (`**term**`) are rendered in crisp, high-contrast weights, and statutory citations are cleanly anchored.
+   - `Case Briefs and Written Submissions`: Structured in distinct IRAC and CREAC sections without markdown artifacts.
+
+---
+
+# 1. Dual-Track Core Workflow
+
+Every substantive legal topic must strictly follow this forensic pipeline:
 
 ```text
-RESEARCH → VERIFY → STRUCTURE → IMPLEMENT → CROSS-LINK → VALIDATE → TEST
+RESEARCH BEYOND BARE ACT
+        ↓
+VERIFY PRIMARY LAW & COMMENCEMENT (Transition S. 531 BNSS / Art 20(1))
+        ↓
+DECONSTRUCT JURISPRUDENTIAL INTENT & STATUTORY ANATOMY
+        ↓
+ESTABLISH PROCEDURAL ANCHOR (Forum, Limitation, Evidentiary Burden)
+        ↓
+STRUCTURE COMPREHENSIVE TREATISE (Study Body)
+        ↓
+DRAFT AUTHENTIC HYPOTHETICALS & EXTRACT CASE RATIOS
+        ↓
+FORMULATE IRAC 10-MARK & 16-MARK EXAMINATION ANSWERS
+        ↓
+CROSS-LINK REUSABLE KNOWLEDGE (`[[REF:TYPE:CATEGORY:SLUG]]`)
+        ↓
+VALIDATE & EXECUTE QUALITY GATES (Lint + Build)
 ```
 
-Do not rely solely on internal model knowledge for substantive legal content.
-
-Before changing code, inspect the existing repository, types, data, routes, components, skills/agent instructions, and shared utilities. Reuse existing architecture instead of creating duplicates.
+Never rely solely on internal model memory for substantive legal texts, citations, or procedural rules. Always cross-verify with primary legislation (Gazette of India, India Code) and authoritative law reports (SCC, SCR, AIR).
 
 ---
 
-# 2. Universal Law Subject Architecture
+# 2. Universal Law Subject Architecture (Dual-Track Model)
 
-All subjects should conceptually follow:
+All subjects conceptually adhere to the combined Academic & Practitioner Hierarchy:
 
 ```text
-LAW SUBJECT
+LAW SUBJECT (e.g. Criminal Law / Civil Procedure / Constitutional Law)
   ↓
-SUBJECT OVERVIEW
+STATUTORY OVERVIEW & COMMENCEMENT (In-force dates, transitional rules, legislative intent)
   ↓
-MAJOR PART / AREA
+MAJOR PART / CHAPTER / CLUSTER
   ↓
-TOPIC
+PROVISION / TOPIC TREATISE
+  ├─► TRACK A: SCHOLASTIC & EXAM MASTERY (PhD Depth)
+  │     ├─ Meaning, Concept & Jurisprudential Roots
+  │     ├─ Statutory Text Deconstruction (Clauses, Provisos, Explanations)
+  │     ├─ Canons of Interpretation Applied
+  │     ├─ Landmark Precedents (Ratio Decidendi extracted)
+  │     ├─ Full 10-Mark Structured Examination Answer (IRAC)
+  │     └─ Full 16-Mark Comprehensive Analytical Answer (CREAC)
+  │
+  └─► TRACK B: LITIGATION & CHAMBER PRACTICE (Senior Counsel Precision)
+        ├─ Forum & Competent Court (Magistrate / Sessions / High Court / Civil Court)
+        ├─ Pecuniary & Territorial Jurisdiction Checkpoints
+        ├─ Limitation Period (Limitation Act, 1963 schedule / special limitation)
+        ├─ Mandatory Statutory Ingredients to be Proved
+        ├─ Standard & Burden of Proof (BSA ss. 104–106, S. 63 electronic certificate)
+        ├─ Courtroom Arguments: Petitioner/Prosecution vs Respondent/Defence
+        └─ Pleading & Drafting Averments (Mandatory statements under O. VI R. 2)
   ↓
-SUBTOPIC
+LABELLED EDUCATIONAL EXAMPLES & FACT PATTERNS (Applies vs Fails)
   ↓
-STUDY CONTENT
+HIGH-YIELD REVISION POINTS & DOUBT-RESOLUTION MATRIX (Common traps)
   ↓
-LEGAL PROVISIONS
+MCQ PRACTICE & DIAGNOSTIC RATIONALES
   ↓
-EXAMPLES
-  ↓
-CASE LAW
-  ↓
-QUESTIONS & ANSWERS
-  ↓
-EXAM POINTS
-  ↓
-MCQ PRACTICE
-  ↓
-EXAM SIMULATION
+SIMULATED EXAM / TIME-BOUND BENCHMARK
 ```
 
-Adapt terminology to each legislation:
+Adapt terminology strictly to each enactment:
+- Constitution → **Article** (also Part, Schedule, Constitutional Amendment)
+- Bharatiya Nyaya Sanhita (BNS) → **Section**
+- Bharatiya Nagarik Suraksha Sanhita (BNSS) → **Section**
+- Bharatiya Sakshya Adhiniyam (BSA) → **Section**
+- Code of Civil Procedure (CPC) → **Section / Order / Rule**
+- Commercial / Personal Statutes → **Section** (always specify the statute)
 
-- Constitution → Article
-- BNS → Section
-- BNSS → Section
-- BSA → Section
-- CPC → Section / Order / Rule
-- Contract Act → Section
-- Other laws → use their actual provision terminology
-
-Do not force every law into the same provision label.
+Never force disparate statutes into a single generic label.
 
 ---
 
@@ -497,17 +545,60 @@ Historical content must remain usable where required.
 
 ---
 
-# 18. BNS / BNSS / BSA
+# 18. Bharatiya Nyaya Sanhita, BNSS & BSA — Senior Counsel & PhD Rigour
 
-BNS, BNSS, and BSA must use the same generic architecture as all other subjects.
-
-Do not create duplicated special architectures.
+BNS, BNSS, and BSA constitute the reformed foundation of Indian criminal jurisprudence in force from 1 July 2024. They must be approached with acute statutory discernment:
 
 ```text
-BNS  → Topics → Sections → Study → Cases → Q&A → MCQs → Practice → Exam
-BNSS → Topics → Sections → Study → Cases → Q&A → MCQs → Practice → Exam
-BSA  → Topics → Sections → Study → Cases → Q&A → MCQs → Practice → Exam
+BNS (Substantive Law)  → Defines offences, mental states, and punishments
+BNSS (Procedural Law)  → Regulates investigation, arrest, remand, bail, trial, appeals
+BSA (Law of Evidence)  → Governs relevancy, admissibility, electronic records, proof
 ```
+
+### A. Bharatiya Nyaya Sanhita (BNS, 2023)
+- **Applicability & Ex-Post Facto Bar**: The date of the alleged offence — not the date of FIR or trial — strictly determines applicability under Article 20(1) of the Constitution and Section 358 BNS. Pre-July 1, 2024 acts are governed substantively by IPC.
+- **Critical Number Collisions (Advocate & Student Warning Matrix)**:
+  - **BNS s. 304** is **Snatching** (New specific offence) — *NOT* Culpable Homicide (IPC s. 304).
+  - **BNS s. 309** is **Robbery** — *NOT* Attempt to Commit Suicide (IPC s. 309, unconstitutional under Mental Healthcare Act 2017 and dropped in BNS).
+  - **BNS s. 353** is **Statements Conducing to Public Mischief** — *NOT* Assault on Public Servant (IPC s. 353 → now BNS s. 132).
+  - **BNS s. 103** is **Punishment for Murder** — *NOT* s. 101 (s. 101 defines murder).
+  - **BNS s. 3(5)** is **Common Intention** — *NOT* s. 190 (s. 190 is Common Object in an unlawful assembly).
+- **Substantive Novelties**:
+  - Community service enacted as a recognized sixth punishment under Section 4(f).
+  - Organized Crime (s. 111) and Terrorist Acts (s. 113) incorporated into general penal law.
+  - Mob lynching carved out under Section 103(2) with capital punishment/life imprisonment.
+  - Section 106(2) (Hit-and-run causing death and escaping) is **NOT IN FORCE / HELD IN ABEYANCE** — must be explicitly tagged as unnotified.
+  - Sedition (IPC 124A) is repealed; Section 152 BNS penalizes acts endangering sovereignty, unity, and integrity of India — never cite *Kedar Nath Singh* blindly without noting statutory textual differences.
+  - Adultery (IPC 497) and Unnatural Offences (IPC 377) have been omitted in conformity with *Joseph Shine* and *Navtej Singh Johar*.
+
+### B. Bharatiya Nagarik Suraksha Sanhita (BNSS, 2023)
+- **Section 531 Savings Clause (Transitional Grandfathering)**:
+  - **Section 531(2)(a) BNSS** explicitly commands that any appeal, application, trial, inquiry, or investigation pending immediately before 1 July 2024 **shall be disposed of, continued, held, or made in accordance with the provisions of CrPC, 1973** as if BNSS had not come into force.
+  - Senior Counsel rule: Never advise or answer that CrPC is wiped out. For pending cases, CrPC remains the governing procedural code.
+- **Litigation & Trial Checkpoints**:
+  - **Information & FIR**: Section 173 BNSS (old s. 154); incorporates mandatory preliminary inquiry in offences punishable between 3 to 7 years (s. 173(3)) and Electronic/Zero FIR.
+  - **Arrest Safeguards**: Section 35 BNSS (consolidates old s. 41 and s. 41A notice of appearance); permission from DSP required for arresting persons infirm or aged above 60 for offences under 3 years.
+  - **Police Custody & Remand**: Section 187 BNSS (replaces old s. 167); allows police custody of 15 days in whole or in parts during the initial 40 or 60 days of detention.
+  - **Bail Hierarchy**:
+    - Bailable offences: Section 478 BNSS (old s. 436).
+    - Undertrial release: Section 479 BNSS (first-time offender released on one-third period).
+    - Non-bailable bail before Court/Magistrate: Section 480 BNSS (old s. 437).
+    - Anticipatory Bail: Section 482 BNSS (old s. 438) — *CRITICAL: Section 482 BNSS is Anticipatory Bail, NOT Inherent Powers!*
+    - High Court / Sessions Special Bail Powers: Section 483 BNSS (old s. 439).
+    - Inherent Powers of High Court: Section 528 BNSS (old s. 482).
+  - **Trial in Absentia**: Section 356 BNSS enables trial of proclaimed offenders absconding after 90 days of charge framing.
+
+### C. Bharatiya Sakshya Adhiniyam (BSA, 2023)
+- **The Evidentiary Triad**: Relevancy (Fact in Issue vs Relevant Fact, ss. 3–50) → Admissibility & Mode of Proof (Oral & Documentary, ss. 56–93) → Burden & Standard of Proof (ss. 104–120).
+- **Electronic Records & Section 63 Certificate**:
+  - Electronic records are elevated to primary evidence (s. 57) subject to conditions in Section 63 BSA (replaces s. 65B IEA).
+  - Section 63(4) mandates an accompanying certificate signed by the person in charge of the device/system or an expert.
+  - In practice: Failure to produce the Section 63 certificate at the time of tendering electronic evidence renders the evidence inadmissible in court (*Arjun Panditrao* doctrine preserved).
+- **Burden of Proof & Presumptions**:
+  - General burden of proof lies on who asserts: Section 104 BSA (old s. 101).
+  - Burden of proving fact especially within knowledge: Section 109 BSA (old s. 106).
+  - Reverse burdens and statutory presumptions: Section 116 (dowry death), Section 117 (abetment of suicide).
+
 
 ---
 

@@ -1,0 +1,20 @@
+import type { TopicContent } from '../loadTopicContent'
+
+const content: TopicContent = {
+  "glance": "Article 131A — Omitted / Repealed. Not current working law.",
+  "study": "Article 131A (“Exclusive jurisdiction of the Supreme Court in regard to questions as to constitutional validity of Central laws”) of the Constitution of India has been omitted by constitutional amendment.\n\nStatus: Repealed / Omitted.\nIt is not current working law in the territory of India.\n\nExamination Instruction:\nWhen answering university or judicial service questions, note that Article 131A is omitted and identify the living constitutional or statutory provision that currently governs the subject matter.",
+  "questionsAndAnswers": [
+    {
+      "id": "art-131A-omitted-qa",
+      "draftingCategory": "brief",
+      "question": "Explain the constitutional status and historical context of Article 131A (Exclusive jurisdiction of the Supreme Court in regard to questions as to constitutional validity of Central laws).",
+      "answer": "I. INTRODUCTION & STATUS\nArticle 131A of the Constitution of India (“Exclusive jurisdiction of the Supreme Court in regard to questions as to constitutional validity of Central laws”) is omitted. It does not form part of the living, enforceable constitutional text.\n\nII. HISTORICAL BACKGROUND\nThe provision was repealed/omitted by constitutional amendment to remove obsolete structures, harmonize constitutional governance, or eliminate transitional provisions.\n\nIII. CURRENT GOVERNING HEADING\nExaminees must identify the living provision that now regulates this field (e.g. general powers of Parliament, corresponding statutory enactments, or alternative constitutional mechanisms).\n\nIV. CONCLUSION\nCite Article 131A strictly as a repealed/omitted heading. Do not apply its text to contemporary 2026 dispute scenarios.",
+      "explanation": "Demonstrates awareness of constitutional amendments and living vs repealed text."
+    }
+  ],
+  "examTips": [
+    "Do not cite Article 131A as living law. State that it is omitted and cite the active provision."
+  ]
+}
+
+export default content

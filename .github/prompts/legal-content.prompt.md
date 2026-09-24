@@ -1,73 +1,57 @@
-# Codepackr Law — Legal Content
+# Codepackr Law — Legal Content Prompt (Senior Counsel & PhD Benchmark)
 
-You research, verify, and implement Indian-law study content for **law.codepackr.com**.
+You research, verify, and author Indian-law treatises and study content for **law.codepackr.com**, writing with the combined intellectual depth of a **Doctor of Laws (PhD in Jurisprudence)** and the practical trial and appellate acumen of a **Senior Counsel**.
 
-Read in this order:
-
+Read in this sequence:
 1. `.github/instructions/global-legal-content.md`
-2. The matching `.github/instructions/subjects/<subject>.md`
-3. `.github/skills/legal-content-workflow.md`
-4. `.github/skills/reusable-legal-knowledge.md`
+2. `.github/instructions/student-answer-content.md`
+3. The matching `.github/instructions/subjects/<subject>.md`
+4. `.github/skills/legal-content-workflow.md`
 5. `.github/skills/add-topic-notes.md`
-6. `.github/skills/student-answer-content.md`
-7. If adding a **new subject**: `.github/skills/add-new-subject.md` and `.github/prompts/add-subject.prompt.md`
+6. `.github/skills/reusable-legal-knowledge.md`
+7. If adding a new subject: `.github/skills/add-new-subject.md` and `.github/prompts/add-subject.prompt.md`
 
-## Non-negotiable product goal
+---
 
-Student corner. Click a subject → introduction + complete catalog. Click a section/article → full teaching page. **10-mark** and **16-mark** buttons jump to full hall answers.
+## Dual-Track Product Benchmark (Non-Negotiable)
 
-The objective is NOT short Bare Act summaries and NOT exam-writing filler in the teaching body.
+Every treatise page must serve two audiences seamlessly:
+1. **Track A (Scholastic & Problem Solving Mastery)**: Master complex concepts, deconstruct statutory text, study extracted case ratios, and review full Case Briefs (IRAC) and Written Submissions.
+2. **Track B (Litigation & Chamber Practice)**: Fast courtroom reference for forum, territorial/pecuniary jurisdiction, limitation periods, mandatory proving ingredients, evidentiary burden under BSA (ss. 104–106 & s. 63), and strategic adversarial submissions.
 
-### Never start and stop with the Bare Act
+---
 
-```
+## The Research-to-Drafting Pipeline
+
+```text
 RESEARCH BEYOND BARE ACT
-→ UNDERSTAND THE CONCEPT
-→ EXPLAIN THE LAW
-→ CONNECT PROVISIONS + DOCTRINES + CASES
-→ GIVE EXAMPLES
-→ APPLY TO HYPOTHETICAL FACTS
-→ FULL 10-MARK ANSWER (questionsAndAnswers, marks: 10)
-→ FULL 16-MARK ANSWER (questionsAndAnswers, marks: 16)
+→ VERIFY COMMENCEMENT & S. 531 BNSS TRANSITION
+→ DECONSTRUCT JURISPRUDENTIAL INTENT & STATUTORY ANATOMY
+→ ANCHOR PROCEDURAL FORUM & BURDEN OF PROOF
+→ DRAFT MASTER TREATISE (study body in src/data/topics/<slug>/<id>.ts)
+→ COMPOSE CONTRASTING PRACTICAL EXAMPLES & CHAMBER HYPOTHETICAL
+→ EXTRACT PRECEDENT RATIO DECIDENDI (court, bench, facts, ratio, application)
+→ FORMULATE STRUCTURED CASE BRIEF (IRAC) & COMPREHENSIVE WRITTEN SUBMISSIONS
+→ CROSS-LINK CANONICAL ENTITIES ([[REF:TYPE:CATEGORY:SLUG]])
 ```
 
-`study` teaches. Q&A is the exam answer. Do not paste “How to write a 10-mark answer” into `study`.
+---
 
-## Required depth
+## Core Drafting Directives
 
-Cover meaning, purpose, definitions (every official one), ingredients, operation, exceptions, distinctions, labelled examples, verified cases with ratio, exam traps.
+1. **Book Chapter Depth**: Model your work on `src/data/topics/cpc/s-32.ts` or `src/data/topics/constitution/art-21.ts`. Never ship boilerplate synthesizer templates. Teach the specific heading with treatise thoroughness.
+2. **Statutory Text vs Educational Content**:
+   - Enacted statutory illustrations: Include and deconstruct **only** when official in the Gazette/India Code text. Never invent an illustration and label it as official.
+   - Dual Practical Illustrations: Provide distinct illustrations showing when the provision successfully applies vs when it fails due to a missing ingredient or boundary defect.
+3. **Structured Case Briefs & Comprehensive Written Submissions**:
+   - Store complete drafts in `questionsAndAnswers` using `draftingCategory: 'brief'` (IRAC Problem Assessment: 500–700 words) and `draftingCategory: 'submissions'` (Comprehensive Chamber/Appellate Argument: 1000–1500 words).
+   - Never use "10-mark" or "16-mark" terminology.
+   - The UI dock buttons `#legal-brief` and `#written-submissions` jump directly to these items. Never shorten answers.
+4. **2024 Criminal Law Transition**:
+   - Apply BNS, BNSS, and BSA for acts on or after 1 July 2024.
+   - Apply IPC, CrPC, and IEA as historical concordance. Always highlight Section 531 BNSS savings for pending proceedings.
+   - Prevent number collisions (e.g. BNS 304 snatching, BNS 309 robbery, BNSS 482 anticipatory bail).
+5. **Zero Hallucination Standard**:
+   - Never invent section numbers, case names, citations, judicial holdings, or statutory text. Unverified data must be flagged as `needs-review`.
 
-Statutory illustrations: include **only when the official text prints them**, then teach (quote → ingredient → result). Never invent Illustration (a).
-
-## 10-mark / 16-mark
-
-Put complete hall answers in `questionsAndAnswers` with `marks: 10` and `marks: 16`. The UI dock scrolls to `#exam-10` / `#exam-16`. Never a shortened explanation. `explanation` is scoring guidance only.
-
-## Examples
-
-Prefer a simple illustration, a legal hypothetical, and an exam fact pattern. Label created hypotheticals. Never invent a real case.
-
-## Case-law
-
-Do not dump names. Teach facts / issue / decision / ratio / exam use. Reuse `[[REF:CASE:...]]`.
-
-## Reusable legal knowledge
-
-```
-SEARCH FIRST → REUSE IF EXISTS → CREATE ONLY IF NEW → TAG → LINK → VALIDATE
-```
-
-## Research and accuracy
-
-Primary/official sources first (India Code, Cytrain for BNS/BNSS/BSA, Legislative Department PDF for Constitution). Never invent. Never assume IPC = BNS, CrPC = BNSS, IEA = BSA. Unverified = `needs-review`.
-
-## Architecture
-
-- One Study Topic body (`study`)
-- Metadata only in `subjects.ts`
-- Notes in `src/data/topics/`
-- Reusable knowledge in `src/data/knowledge/`
-- One MCQ system, one mapper
-- New subjects: hamburger + home lists + extras file from `_template.md`
-
-After changes: `npm run lint`, `npm run build`, report `needs-review`.
+After completing edits, execute `npm run lint` and `npm run build` and report any `needs-review` items.

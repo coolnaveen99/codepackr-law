@@ -15,11 +15,14 @@ import type { LawSubjectMeta, LawTopic, CaseCitation } from '../../data/subjects
 import {
   loadTopicContent,
   getStudyBody,
+  getLegalBrief,
+  getWrittenSubmissions,
   type TopicContent,
 } from '../../data/topics/loadTopicContent'
 import { Badge } from '../ui/Badge'
 import { RelatedKnowledge } from '../knowledge/RelatedKnowledge'
 import { RichLegalText } from '../knowledge/RichLegalText'
+import { ModularStudyRenderer } from './ModularStudyRenderer'
 import { knowledgeIdForTopic } from '../../data/knowledge'
 
 const TOPIC_PROGRESS_KEY = 'codepackr-law-topic-progress'
@@ -93,14 +96,36 @@ export function TopicDetail({
   const hasCases = (content?.cases?.length ?? 0) > 0
   const knowledgeId = knowledgeIdForTopic(subject.slug, topic.id)
   const neighbours = provisionNeighbours(subject, topic)
-  const qaTen = content?.questionsAndAnswers?.find((item) => item.marks === 10 || /10[\s-]?mark/i.test(item.question))
-  const qaSixteen = content?.questionsAndAnswers?.find((item) => item.marks === 16 || /16[\s-]?mark/i.test(item.question))
-  const statutoryExamples = (content?.examples ?? []).filter((example) => /^Illustration/i.test(example.title || ''))
-  const teachingExamples = (content?.examples ?? []).filter((example) => !/^Illustration/i.test(example.title || ''))
+  const legalBrief = getLegalBrief(content)
+  const writtenSubmissions = getWrittenSubmissions(content)
+  const statutoryExamples = (content?.examples ?? []).filter(
+    (example) => /^Illustration/i.test(example.title || '') || example.illustrationType === 'statutory',
+  )
+  const teachingExamples = (content?.examples ?? []).filter(
+    (example) => !/^Illustration/i.test(example.title || '') && example.illustrationType !== 'statutory',
+  )
   const hasIllustrations = statutoryExamples.length > 0
 
+  const [expandedBrief, setExpandedBrief] = useState(true)
+  const [expandedSubmissions, setExpandedSubmissions] = useState(true)
+  const [copiedBrief, setCopiedBrief] = useState(false)
+  const [copiedSubmissions, setCopiedSubmissions] = useState(false)
+
   function jumpTo(id: string) {
+    if (id === 'legal-brief') setExpandedBrief(true)
+    if (id === 'written-submissions') setExpandedSubmissions(true)
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
+  const handleCopyAnswer = (text: string, isBrief: boolean) => {
+    navigator.clipboard.writeText(text)
+    if (isBrief) {
+      setCopiedBrief(true)
+      setTimeout(() => setCopiedBrief(false), 2000)
+    } else {
+      setCopiedSubmissions(true)
+      setTimeout(() => setCopiedSubmissions(false), 2000)
+    }
   }
 
   const handleCopyCase = (c: CaseCitation, idx: number) => {
@@ -198,10 +223,10 @@ export function TopicDetail({
         </div>
       </div>
 
-      {(qaTen || qaSixteen) && (
+      {(legalBrief || writtenSubmissions) && (
         <div className="sticky top-16 z-30 -mx-1 px-1 py-3 bg-slate-50/90 dark:bg-slate-950/90 backdrop-blur-md">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500 mr-1">Exam</span>
+            <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500 mr-1">Drafting</span>
             <button
               type="button"
               onClick={() => jumpTo('study-topic')}
@@ -218,22 +243,33 @@ export function TopicDetail({
                 Illustrations
               </button>
             )}
-            {qaTen && (
+            {hasCases && (
               <button
                 type="button"
-                onClick={() => jumpTo('exam-10')}
-                className="h-11 px-5 rounded-2xl bg-blue-600 text-white text-sm font-bold shadow-sm shadow-blue-600/20"
+                onClick={() => jumpTo('case-law-ratios')}
+                className="h-11 px-4 rounded-2xl border border-blue-200 dark:border-blue-800 bg-white dark:bg-slate-900 text-sm font-semibold text-blue-700 dark:text-blue-300"
               >
-                10 marks
+                Case Law Ratios
               </button>
             )}
-            {qaSixteen && (
+            {legalBrief && (
               <button
                 type="button"
-                onClick={() => jumpTo('exam-16')}
-                className="h-11 px-5 rounded-2xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-sm font-bold"
+                onClick={() => jumpTo('legal-brief')}
+                className="h-11 px-4 rounded-2xl bg-blue-600 text-white text-xs sm:text-sm font-bold shadow-sm shadow-blue-600/20 inline-flex items-center gap-1.5"
               >
-                16 marks
+                <PenLine className="w-3.5 h-3.5" />
+                <span>Case Brief / Assessment</span>
+              </button>
+            )}
+            {writtenSubmissions && (
+              <button
+                type="button"
+                onClick={() => jumpTo('written-submissions')}
+                className="h-11 px-4 rounded-2xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs sm:text-sm font-bold inline-flex items-center gap-1.5"
+              >
+                <PenLine className="w-3.5 h-3.5" />
+                <span>Written Submissions</span>
               </button>
             )}
           </div>
@@ -264,7 +300,7 @@ export function TopicDetail({
               Study notes
             </h3>
           </div>
-          <StudyBody text={studyContent} />
+          <ModularStudyRenderer text={studyContent} />
 
           {content.bareActPointers && content.bareActPointers.length > 0 && (
             <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800">
@@ -301,7 +337,9 @@ export function TopicDetail({
             {statutoryExamples.map((example) => (
               <article key={example.id} className="rounded-[1.4rem] border border-blue-200 dark:border-blue-900 bg-white dark:bg-slate-900 p-5 sm:p-6">
                 <h4 className="font-display text-lg sm:text-xl font-semibold text-slate-900 dark:text-white">{example.title}</h4>
-                <p className="mt-3 text-base sm:text-lg leading-8 text-slate-800 dark:text-slate-200 whitespace-pre-line">{example.description}</p>
+                <div className="mt-3 text-base sm:text-lg leading-8 text-slate-800 dark:text-slate-200 whitespace-pre-line">
+                  <RichLegalText text={example.description} />
+                </div>
               </article>
             ))}
           </div>
@@ -317,21 +355,41 @@ export function TopicDetail({
             {teachingExamples.map((example) => (
               <article key={example.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
                 <h4 className="font-semibold text-slate-900 dark:text-white">{example.title || 'Example'}</h4>
-                <p className="mt-2 text-base leading-7 text-slate-700 dark:text-slate-300 whitespace-pre-line">{example.description}</p>
+                <div className="mt-2 text-base leading-7 text-slate-700 dark:text-slate-300 whitespace-pre-line">
+                  <RichLegalText text={example.description} />
+                </div>
               </article>
             ))}
           </div>
         </section>
       )}
-      {!loading && content?.sections && content.sections.length > 0 && !hasContent && (
+      {!loading && content?.sections && content.sections.length > 0 && (
         <section className="space-y-4">
-          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Study Sections</h3>
-          {content.sections.slice().sort((a, b) => a.order - b.order).map((section) => (
-            <article key={section.id} id={section.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
-              <h4 className="font-semibold text-slate-900 dark:text-white">{section.title}</h4>
-              <div className="mt-3 space-y-2 text-sm leading-relaxed text-slate-700 dark:text-slate-300">{section.content.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
-            </article>
-          ))}
+          <div className="flex items-center gap-2">
+            <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-blue-700 dark:text-blue-300">Modular Syllabus Breakdown</span>
+          </div>
+          <h3 className="font-display text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
+            Study Sections
+          </h3>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {content.sections.slice().sort((a, b) => a.order - b.order).map((section) => (
+              <article key={section.id} id={section.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 shadow-xs space-y-3">
+                <div className="flex items-center gap-2">
+                  <span className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-xs font-bold border border-blue-200 dark:border-blue-800">
+                    {section.order}
+                  </span>
+                  <h4 className="font-display text-base sm:text-lg font-bold text-slate-900 dark:text-white">{section.title}</h4>
+                </div>
+                <div className="space-y-2 text-sm sm:text-base leading-relaxed text-slate-700 dark:text-slate-300">
+                  {section.content.map((paragraph, pIdx) => (
+                    <p key={pIdx}>
+                      <RichLegalText text={paragraph} />
+                    </p>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
         </section>
       )}
 
@@ -348,11 +406,12 @@ export function TopicDetail({
           {content.hypotheticals.map((item) => (
             <article key={item.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 space-y-3">
               {item.title && <h4 className="font-semibold text-sm">{item.title}</h4>}
-              <HypoBlock label="Facts" text={item.facts} />
-              <HypoBlock label="Legal question" text={item.question} />
-              <HypoBlock label="Applicable law" text={item.applicableLaw} />
-              <HypoBlock label="Analysis" text={item.analysis} />
-              <HypoBlock label="Conclusion" text={item.conclusion} />
+              {item.facts && <HypoBlock label="Facts" text={item.facts} />}
+              {item.scenario && <HypoBlock label="Scenario" text={item.scenario} />}
+              {item.question && <HypoBlock label="Legal question" text={item.question} />}
+              {item.applicableLaw && <HypoBlock label="Applicable law" text={item.applicableLaw} />}
+              {item.analysis && <HypoBlock label="Analysis" text={item.analysis} />}
+              {item.conclusion && <HypoBlock label="Conclusion" text={item.conclusion} />}
             </article>
           ))}
         </section>
@@ -361,31 +420,48 @@ export function TopicDetail({
       {!loading && content?.distinctions && content.distinctions.length > 0 && (
         <section className="space-y-3">
           <h3 className="text-lg font-bold text-slate-900 dark:text-white">Important distinctions</h3>
-          {content.distinctions.map((item) => (
-            <article key={item.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden">
+          {content.distinctions.map((item, idx) => (
+            <article key={item.id || `dist-${idx}`} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden">
               <div className="px-4 py-3 border-b border-slate-100 dark:border-slate-800">
-                <h4 className="font-semibold text-sm">{item.title}</h4>
+                <h4 className="font-semibold text-sm">{item.title || `${item.conceptA || item.left} vs ${item.conceptB || item.right}`}</h4>
               </div>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="bg-slate-50 dark:bg-slate-800/60 text-left">
-                      <th className="px-4 py-2 font-semibold">Point</th>
-                      <th className="px-4 py-2 font-semibold">{item.left}</th>
-                      <th className="px-4 py-2 font-semibold">{item.right}</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {item.rows.map((row) => (
-                      <tr key={row.point} className="border-t border-slate-100 dark:border-slate-800 align-top">
-                        <td className="px-4 py-2 font-medium text-slate-700 dark:text-slate-300">{row.point}</td>
-                        <td className="px-4 py-2 text-slate-600 dark:text-slate-400">{row.left}</td>
-                        <td className="px-4 py-2 text-slate-600 dark:text-slate-400">{row.right}</td>
+              {item.rows && item.rows.length > 0 ? (
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-slate-50 dark:bg-slate-800/60 text-left">
+                        <th className="px-4 py-2 font-semibold">Point</th>
+                        <th className="px-4 py-2 font-semibold">{item.left}</th>
+                        <th className="px-4 py-2 font-semibold">{item.right}</th>
                       </tr>
+                    </thead>
+                    <tbody>
+                      {item.rows.map((row) => (
+                        <tr key={row.point} className="border-t border-slate-100 dark:border-slate-800 align-top">
+                          <td className="px-4 py-2 font-medium text-slate-700 dark:text-slate-300">{row.point}</td>
+                          <td className="px-4 py-2 text-slate-600 dark:text-slate-400">{row.left}</td>
+                          <td className="px-4 py-2 text-slate-600 dark:text-slate-400">{row.right}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              ) : item.points && item.points.length > 0 ? (
+                <div className="p-4 space-y-2">
+                  <div className="grid grid-cols-2 gap-3 text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
+                    <div>{item.conceptA || item.left}</div>
+                    <div>{item.conceptB || item.right}</div>
+                  </div>
+                  <ul className="space-y-1.5 text-sm text-slate-700 dark:text-slate-300">
+                    {item.points.map((pt, pIdx) => (
+                      <li key={pIdx} className="flex items-start gap-2">
+                        <span className="text-blue-500 mt-1">•</span>
+                        <span>{pt}</span>
+                      </li>
                     ))}
-                  </tbody>
-                </table>
-              </div>
+                  </ul>
+                </div>
+              ) : null}
             </article>
           ))}
         </section>
@@ -394,50 +470,172 @@ export function TopicDetail({
       {!loading && content?.misconceptions && content.misconceptions.length > 0 && (
         <section className="space-y-3">
           <h3 className="text-lg font-bold text-slate-900 dark:text-white">Common misconceptions / exam traps</h3>
-          {content.misconceptions.map((item) => (
-            <article key={item.id} className="rounded-2xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/40 dark:bg-amber-950/20 p-4">
-              <p className="text-sm font-semibold text-amber-900 dark:text-amber-200">Trap: {item.trap}</p>
+          {content.misconceptions.map((item, idx) => (
+            <article key={item.id || `misc-${idx}`} className="rounded-2xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/40 dark:bg-amber-950/20 p-4">
+              <p className="text-sm font-semibold text-amber-900 dark:text-amber-200">Trap: {item.trap || item.misconception}</p>
               <p className="mt-2 text-sm leading-relaxed text-slate-700 dark:text-slate-300">{item.correction}</p>
             </article>
           ))}
         </section>
       )}
 
-      {!loading && (qaTen || qaSixteen) && (
-        <section className="space-y-5">
+      {!loading && (legalBrief || writtenSubmissions) && (
+        <section id="chamber-drafting" className="space-y-6 pt-4 border-t border-slate-200 dark:border-slate-800">
           <div>
-            <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-blue-700 dark:text-blue-300">Write this in the exam</p>
-            <h3 className="font-display text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white mt-1">Full-mark answers</h3>
+            <div className="flex items-center gap-2">
+              <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-blue-700 dark:text-blue-300">
+                Chamber Practice &amp; Courtroom Submissions
+              </span>
+              <span className="text-[10px] px-2 py-0.5 rounded-md bg-blue-100 dark:bg-blue-950/60 text-blue-800 dark:text-blue-200 font-semibold">
+                Senior Counsel Standard
+              </span>
+            </div>
+            <h3 className="font-display text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white mt-1">
+              Case Briefs &amp; Written Submissions
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1 max-w-2xl">
+              Structured IRAC problem assessments and comprehensive appellate written arguments, designed for high-stakes chamber practice and judicial problem resolution.
+            </p>
           </div>
-          {qaTen && (
-            <article id="exam-10" className="rounded-[1.6rem] border border-blue-200 dark:border-blue-900 bg-white dark:bg-slate-900 p-5 sm:p-8 space-y-4">
-              <div className="flex items-center gap-2">
-                <span className="inline-flex h-8 items-center px-3 rounded-full bg-blue-600 text-white text-xs font-bold">10 marks</span>
-                <PenLine className="w-4 h-4 text-blue-600" />
-              </div>
-              <h4 className="font-display text-xl sm:text-2xl font-semibold text-slate-900 dark:text-white">{qaTen.question}</h4>
-              <StudyBody text={qaTen.answer} />
-              {qaTen.explanation && (
-                <div className="rounded-2xl bg-slate-50 dark:bg-slate-800/50 p-4">
-                  <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 mb-2">How to score full marks</p>
-                  <p className="text-base leading-7 text-slate-700 dark:text-slate-300">{qaTen.explanation}</p>
+          {legalBrief && (
+            <article id="legal-brief" className="rounded-[1.6rem] border border-blue-200 dark:border-blue-900 bg-white dark:bg-slate-900 p-5 sm:p-8 space-y-4">
+              <div className="flex items-center justify-between gap-3 flex-wrap">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="inline-flex h-8 items-center px-3 rounded-full bg-blue-600 text-white text-xs font-bold">
+                    Case Brief
+                  </span>
+                  <span className="inline-flex h-8 items-center px-3 rounded-full bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 text-xs font-medium">
+                    IRAC / Problem Assessment
+                  </span>
                 </div>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => handleCopyAnswer(legalBrief.answer, true)}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+                    title="Copy full brief text"
+                  >
+                    {copiedBrief ? (
+                      <>
+                        <Check className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+                        <span className="text-emerald-600 dark:text-emerald-400">Copied!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="w-3.5 h-3.5" />
+                        <span>Copy</span>
+                      </>
+                    )}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setExpandedBrief(!expandedBrief)}
+                    className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+                  >
+                    {expandedBrief ? (
+                      <>
+                        <span>Collapse</span>
+                        <ChevronUp className="w-3.5 h-3.5" />
+                      </>
+                    ) : (
+                      <>
+                        <span>Expand Brief</span>
+                        <ChevronDown className="w-3.5 h-3.5" />
+                      </>
+                    )}
+                  </button>
+                </div>
+              </div>
+              <h4 className="font-display text-xl sm:text-2xl font-semibold text-slate-900 dark:text-white">
+                {legalBrief.question}
+              </h4>
+              {expandedBrief ? (
+                <>
+                  <ModularStudyRenderer text={legalBrief.answer} defaultCardTitle="Legal Assessment & Case Brief (IRAC)" />
+                  {legalBrief.explanation && (
+                    <div className="rounded-2xl bg-slate-50 dark:bg-slate-800/50 p-4">
+                      <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 mb-2">
+                        Chamber Practice Drafting Notes &amp; Essential Averments
+                      </p>
+                      <p className="text-base leading-7 text-slate-700 dark:text-slate-300">{legalBrief.explanation}</p>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <p className="text-sm text-slate-500 italic">
+                  Brief collapsed. Click &quot;Expand Brief&quot; to review the full legal assessment and IRAC analysis.
+                </p>
               )}
             </article>
           )}
-          {qaSixteen && (
-            <article id="exam-16" className="rounded-[1.6rem] border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 sm:p-8 space-y-4">
-              <div className="flex items-center gap-2">
-                <span className="inline-flex h-8 items-center px-3 rounded-full bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs font-bold">16 marks</span>
-                <PenLine className="w-4 h-4 text-slate-700 dark:text-slate-300" />
-              </div>
-              <h4 className="font-display text-xl sm:text-2xl font-semibold text-slate-900 dark:text-white">{qaSixteen.question}</h4>
-              <StudyBody text={qaSixteen.answer} />
-              {qaSixteen.explanation && (
-                <div className="rounded-2xl bg-slate-50 dark:bg-slate-800/50 p-4">
-                  <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 mb-2">How to score full marks</p>
-                  <p className="text-base leading-7 text-slate-700 dark:text-slate-300">{qaSixteen.explanation}</p>
+          {writtenSubmissions && (
+            <article id="written-submissions" className="rounded-[1.6rem] border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 sm:p-8 space-y-4">
+              <div className="flex items-center justify-between gap-3 flex-wrap">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="inline-flex h-8 items-center px-3 rounded-full bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs font-bold">
+                    Written Submissions
+                  </span>
+                  <span className="inline-flex h-8 items-center px-3 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 text-xs font-medium">
+                    Appellate &amp; Chamber Argument
+                  </span>
                 </div>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => handleCopyAnswer(writtenSubmissions.answer, false)}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+                    title="Copy full submissions text"
+                  >
+                    {copiedSubmissions ? (
+                      <>
+                        <Check className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+                        <span className="text-emerald-600 dark:text-emerald-400">Copied!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="w-3.5 h-3.5" />
+                        <span>Copy</span>
+                      </>
+                    )}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setExpandedSubmissions(!expandedSubmissions)}
+                    className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+                  >
+                    {expandedSubmissions ? (
+                      <>
+                        <span>Collapse</span>
+                        <ChevronUp className="w-3.5 h-3.5" />
+                      </>
+                    ) : (
+                      <>
+                        <span>Expand Submissions</span>
+                        <ChevronDown className="w-3.5 h-3.5" />
+                      </>
+                    )}
+                  </button>
+                </div>
+              </div>
+              <h4 className="font-display text-xl sm:text-2xl font-semibold text-slate-900 dark:text-white">
+                {writtenSubmissions.question}
+              </h4>
+              {expandedSubmissions ? (
+                <>
+                  <ModularStudyRenderer text={writtenSubmissions.answer} defaultCardTitle="Comprehensive Written Submissions" />
+                  {writtenSubmissions.explanation && (
+                    <div className="rounded-2xl bg-slate-50 dark:bg-slate-800/50 p-4">
+                      <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 mb-2">
+                        Chamber Practice Drafting Notes &amp; Essential Averments
+                      </p>
+                      <p className="text-base leading-7 text-slate-700 dark:text-slate-300">{writtenSubmissions.explanation}</p>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <p className="text-sm text-slate-500 italic">
+                  Submissions collapsed. Click &quot;Expand Submissions&quot; to review the full appellate argument and statutory synthesis.
+                </p>
               )}
             </article>
           )}
@@ -452,11 +650,16 @@ export function TopicDetail({
       )}
 
       {!loading && hasCases && content?.cases && (
-        <section className="space-y-3">
-          <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
-            <Scale className="w-4 h-4 text-blue-600" />
-            Key Case Laws ({content.cases.length})
-          </h3>
+        <section id="case-law-ratios" className="space-y-3">
+          <div className="flex items-center justify-between gap-3">
+            <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
+              <Scale className="w-4 h-4 text-blue-600" />
+              Landmark Judicial Authorities &amp; Extracted Ratios ({content.cases.length})
+            </h3>
+            <span className="text-[10px] px-2 py-0.5 rounded-md bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 font-semibold border border-blue-200 dark:border-blue-900">
+              Senior Counsel Citation Index
+            </span>
+          </div>
 
           <ul className="space-y-3">
             {content.cases.map((c, idx) => {
@@ -469,13 +672,25 @@ export function TopicDetail({
                 >
                   <div className="flex items-start justify-between gap-3">
                     <div className="space-y-1 min-w-0">
-                      <h4 className="font-semibold text-sm sm:text-base text-slate-900 dark:text-white">
-                        {c.name}
-                      </h4>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <h4 className="font-semibold text-sm sm:text-base text-slate-900 dark:text-white">
+                          {c.name}
+                        </h4>
+                        {c.court && (
+                          <span className="px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-[10px] font-semibold text-slate-700 dark:text-slate-300">
+                            {c.court}
+                          </span>
+                        )}
+                        {c.bench && (
+                          <span className="px-2 py-0.5 rounded-md bg-blue-50 dark:bg-blue-950/60 text-[10px] font-medium text-blue-700 dark:text-blue-300 border border-blue-100 dark:border-blue-900">
+                            {c.bench}
+                          </span>
+                        )}
+                      </div>
                       <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-500 dark:text-slate-400">
                         {c.year && <span>{c.year}</span>}
                         {c.citation && (
-                          <span className="font-mono text-[11px]">{c.citation}</span>
+                          <span className="font-mono text-[11px] font-semibold text-blue-700 dark:text-blue-400">{c.citation}</span>
                         )}
                       </div>
                     </div>
@@ -494,21 +709,39 @@ export function TopicDetail({
                     </button>
                   </div>
 
-                  <div className="bg-slate-50 dark:bg-slate-800/40 p-3.5 rounded-xl border border-slate-100 dark:border-slate-800">
-                    <span className="text-[11px] font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wide block mb-1">
+                  {c.facts && (
+                    <div className="text-xs text-slate-600 dark:text-slate-400 bg-slate-50 dark:bg-slate-800/20 p-2.5 rounded-lg">
+                      <span className="font-semibold text-slate-700 dark:text-slate-300">Factual Matrix: </span>
+                      <RichLegalText text={c.facts} />
+                    </div>
+                  )}
+
+                  <div className="bg-slate-50 dark:bg-slate-800/40 p-3.5 rounded-xl border border-slate-100 dark:border-slate-800 space-y-1">
+                    <span className="text-[11px] font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wide block">
                       Holding
                     </span>
                     <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed">
-                      {c.holding}
+                      <RichLegalText text={c.holding} />
                     </p>
                   </div>
+
+                  {c.ratioDecidendi && (
+                    <div className="bg-blue-50/60 dark:bg-blue-950/30 p-3.5 rounded-xl border border-blue-100 dark:border-blue-900/60 space-y-1">
+                      <span className="text-[11px] font-bold text-blue-800 dark:text-blue-300 uppercase tracking-wide block">
+                        Ratio Decidendi
+                      </span>
+                      <p className="text-xs sm:text-sm text-slate-800 dark:text-slate-200 leading-relaxed">
+                        <RichLegalText text={c.ratioDecidendi} />
+                      </p>
+                    </div>
+                  )}
 
                   {c.relevance && (
                     <p className="text-xs text-slate-600 dark:text-slate-400">
                       <span className="font-semibold text-slate-700 dark:text-slate-300">
-                        Why it matters:{' '}
+                        Courtroom Application:{' '}
                       </span>
-                      {c.relevance}
+                      <RichLegalText text={c.relevance} />
                     </p>
                   )}
                 </li>
@@ -527,7 +760,7 @@ export function TopicDetail({
           >
             <span className="text-sm font-semibold text-amber-800 dark:text-amber-300 flex items-center gap-1.5">
               <Sparkles className="w-4 h-4" />
-              Exam Tips
+              Chamber &amp; Practice Insights
             </span>
             {tipsOpen ? (
               <ChevronUp className="w-4 h-4 text-amber-600" />
@@ -544,7 +777,7 @@ export function TopicDetail({
                   className="text-xs sm:text-sm text-amber-900/90 dark:text-amber-200/90 flex gap-2"
                 >
                   <span className="text-amber-500 font-bold shrink-0">•</span>
-                  <span>{tip}</span>
+                  <span><RichLegalText text={tip} /></span>
                 </li>
               ))}
             </ul>
@@ -554,12 +787,12 @@ export function TopicDetail({
 
       {!loading && content?.revisionPoints && content.revisionPoints.length > 0 && (
         <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
-          <h3 className="text-sm font-semibold text-slate-900 dark:text-white">Quick revision points</h3>
+          <h3 className="text-sm font-semibold text-slate-900 dark:text-white">Practice Key Takeaways</h3>
           <ul className="mt-3 space-y-2">
             {content.revisionPoints.map((point) => (
               <li key={point} className="text-sm leading-relaxed text-slate-700 dark:text-slate-300 flex gap-2">
                 <span className="text-blue-500 font-bold shrink-0">•</span>
-                <span>{point}</span>
+                <span><RichLegalText text={point} /></span>
               </li>
             ))}
           </ul>
@@ -578,27 +811,29 @@ export function TopicDetail({
       )}
 
       <p className="text-xs text-slate-400 dark:text-slate-500">
-        Content is for exam preparation only. Always cross-check with the latest Bare Act.
+        Authoritative digital legal library &amp; chamber reference. Verify state amendments and current judicial pronouncements.
       </p>
 
-      {(qaTen || qaSixteen) && (
+      {(legalBrief || writtenSubmissions) && (
         <div className="sm:hidden fixed bottom-4 inset-x-4 z-40 flex gap-2">
-          {qaTen && (
+          {legalBrief && (
             <button
               type="button"
-              onClick={() => jumpTo('exam-10')}
-              className="flex-1 h-12 rounded-2xl bg-blue-600 text-white text-sm font-bold shadow-lg shadow-blue-900/20"
+              onClick={() => jumpTo('legal-brief')}
+              className="flex-1 h-12 rounded-2xl bg-blue-600 text-white text-xs font-bold shadow-lg shadow-blue-900/20 inline-flex items-center justify-center gap-1.5"
             >
-              10 marks
+              <PenLine className="w-3.5 h-3.5" />
+              <span>Case Brief</span>
             </button>
           )}
-          {qaSixteen && (
+          {writtenSubmissions && (
             <button
               type="button"
-              onClick={() => jumpTo('exam-16')}
-              className="flex-1 h-12 rounded-2xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-sm font-bold shadow-lg"
+              onClick={() => jumpTo('written-submissions')}
+              className="flex-1 h-12 rounded-2xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs font-bold shadow-lg inline-flex items-center justify-center gap-1.5"
             >
-              16 marks
+              <PenLine className="w-3.5 h-3.5" />
+              <span>Written Submissions</span>
             </button>
           )}
         </div>
@@ -607,40 +842,16 @@ export function TopicDetail({
   )
 }
 
-function StudyBody({ text }: { text: string }) {
-  const blocks = text.split('\n')
-  return (
-    <div className="text-base sm:text-lg leading-8 text-slate-800 dark:text-slate-200 space-y-4">
-      {blocks.map((line, i) => {
-        if (!line.trim()) return null
-        const trimmed = line.trim()
-        const legalHeading =
-          /^(Explanation|Illustrations?|Exceptions?|Proviso|Provided that)\b/i.test(trimmed)
-        const heading =
-          legalHeading ||
-          (trimmed.length < 80 &&
-            !/[.?!”]$/.test(trimmed) &&
-            !trimmed.startsWith('•') &&
-            !/^\d+\./.test(trimmed) &&
-            !/^\(\d+\)/.test(trimmed))
-        if (heading) {
-          return (
-            <h4 key={i} className="pt-3 text-xl sm:text-2xl font-extrabold text-slate-950 dark:text-white">
-              {trimmed}
-            </h4>
-          )
-        }
-        return <RichLegalText key={i} text={line} className="[&>p]:mt-0 [&>p]:text-base [&>p]:sm:text-lg [&>p]:leading-8" />
-      })}
-    </div>
-  )
-}
 
-function HypoBlock({ label, text }: { label: string; text: string }) {
+
+function HypoBlock({ label, text }: { label: string; text?: string }) {
+  if (!text) return null
   return (
     <div>
       <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500">{label}</p>
-      <p className="mt-1 text-sm leading-relaxed text-slate-700 dark:text-slate-300">{text}</p>
+      <div className="mt-1 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+        <RichLegalText text={text} />
+      </div>
     </div>
   )
 }

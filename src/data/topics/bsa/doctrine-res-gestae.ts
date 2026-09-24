@@ -84,7 +84,7 @@ Do not present an English case as if it were a BSA section.`,
 
   examFrameworks: [
     {
-      marks: 10,
+      draftingCategory: 'brief',
       question: 'Explain res gestae under the BSA.',
       steps: [
         'Define using s. 4 language, then the Latin tag.',
@@ -95,7 +95,7 @@ Do not present an English case as if it were a BSA section.`,
       ],
     },
     {
-      marks: 16,
+      draftingCategory: 'submissions',
       question: '“Res gestae is not a rule of hearsay but a rule of relevancy.” Discuss with Indian authorities and a hypothetical.',
       steps: [
         's. 3 and s. 4 scheme.',

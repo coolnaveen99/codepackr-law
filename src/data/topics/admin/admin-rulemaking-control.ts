@@ -1,0 +1,210 @@
+import type { TopicContent } from '../topicTypes'
+
+const content: TopicContent = {
+  "glance": "Control of Administrative Rule-Making — Legislative, Judicial and Procedural. Complete Admin Law treatise with statutory deconstruction, examples, verified authorities, forum analysis and chamber drafting.",
+  "study": "Topic at a glance\nControl of Administrative Rule-Making — Legislative, Judicial and Procedural is a registered doctrine in Administrative Law. Control of Administrative Rule-Making — Legislative, Judicial and Procedural is governed by constitutional judicial review, administrative law principles, delegated legislation and Lokpal and Lokayuktas Act, 2013. identify the source of power, statutory duty, decision-maker, affected right, alternative remedy and standard of review applicable to the administrative action.\n\nProvenance, purpose and doctrinal foundation\nThe topic exists to organise a legally enforceable rule, doctrine or professional procedure. Read the statutory text, constitutional setting, institutional purpose and binding authorities together. The correct analysis begins with the legal question and avoids replacing the governing enactment with a generic textbook summary.\n\nTextual anatomy and operative test\n1. Identify the governing enactment, section, article, rule, doctrine or professional standard named by the topic.\n2. Deconstruct definitions, conditions precedent, exceptions, provisos, explanations, jurisdictional limits and remedies.\n3. Distinguish the topic from its nearest neighbour: Doctrine of Separation of Powers & Rule of Law (Dicey’s formulation); Principles of Natural Justice — Audi Alteram Partem (Right to fair hearing); Principles of Natural Justice — Nemo Judex In Causa Sua (Rule against Bias: Pecuniary, Personal, Subject-Matter).\n4. Apply the rule to the record and state which fact satisfies or fails each ingredient.\n\nCourtroom and evidentiary roadmap\nCompetent forum: the statutory authority or tribunal, High Court under Article 226, Supreme Court under Article 32 or 136 where the constitutional threshold is met, and the competent appellate or review forum. the public authority must act within jurisdiction, follow fair procedure and give a rational, non-arbitrary decision; the challenger must plead the review ground and material facts. Where electronic records are relied upon, apply BSA 2023 s. 63 and the applicable burden provisions without treating electronic admissibility as proof of the ultimate fact. Identify limitation, notice, maintainability, alternative remedy and the exact relief sought.\n\nCurrent-law close\nconstitutional judicial review, administrative law principles, delegated legislation and Lokpal and Lokayuktas Act, 2013. identify the source of power, statutory duty, decision-maker, affected right, alternative remedy and standard of review applicable to the administrative action Always name the statute and provision in the final advice.",
+  "sections": [
+    {
+      "id": "admin-rulemaking-control-module-1",
+      "title": "Provenance, Legislative Objective and Doctrinal Foundations",
+      "order": 1,
+      "content": [
+        "Control of Administrative Rule-Making — Legislative, Judicial and Procedural sits within Administrative Law and is governed by constitutional judicial review, administrative law principles, delegated legislation and Lokpal and Lokayuktas Act, 2013.",
+        "Explain the legal mischief, institutional purpose and constitutional value before applying the rule.",
+        "Use the named statute, doctrine or professional standard rather than a generic substitute."
+      ]
+    },
+    {
+      "id": "admin-rulemaking-control-module-2",
+      "title": "Textual Anatomy, Exceptions and Connected Rules",
+      "order": 2,
+      "content": [
+        "Identify every operative clause, condition, explanation, exception and remedy in Control of Administrative Rule-Making — Legislative, Judicial and Procedural.",
+        "Distinguish it from Doctrine of Separation of Powers & Rule of Law (Dicey’s formulation); Principles of Natural Justice — Audi Alteram Partem (Right to fair hearing); Principles of Natural Justice — Nemo Judex In Causa Sua (Rule against Bias: Pecuniary, Personal, Subject-Matter).",
+        "Historical or comparative law may explain development but cannot replace the current governing rule."
+      ]
+    },
+    {
+      "id": "admin-rulemaking-control-module-3",
+      "title": "Mandatory Proving Ingredients and Legal Test",
+      "order": 3,
+      "content": [
+        "Identify the forum and procedural stage.",
+        "Prove each jurisdictional, substantive and procedural condition from the record.",
+        "Address the principal defence, exception, limitation and precise legal consequence."
+      ]
+    },
+    {
+      "id": "admin-rulemaking-control-module-4",
+      "title": "BSA 2023 Burden and Electronic Evidence Checkpoints",
+      "order": 4,
+      "content": [
+        "the public authority must act within jurisdiction, follow fair procedure and give a rational, non-arbitrary decision; the challenger must plead the review ground and material facts",
+        "Apply BSA s. 104 to the ordinary foundational burden and s. 109 only to facts especially within knowledge after foundation is established.",
+        "Apply BSA s. 63 to electronic records where tendered, separately analysing relevance, authenticity, certificate and weight."
+      ]
+    },
+    {
+      "id": "admin-rulemaking-control-module-5",
+      "title": "Procedural Roadmap, Forum and Limitation Checkpoints",
+      "order": 5,
+      "content": [
+        "Competent forum: the statutory authority or tribunal, High Court under Article 226, Supreme Court under Article 32 or 136 where the constitutional threshold is met, and the competent appellate or review forum.",
+        "Check limitation, notice, alternative remedy, jurisdiction and statutory appeal or review route.",
+        "Transition and current law: identify the source of power, statutory duty, decision-maker, affected right, alternative remedy and standard of review applicable to the administrative action"
+      ]
+    }
+  ],
+  "provisions": [
+    {
+      "actId": "admin",
+      "actName": "constitutional judicial review, administrative law principles, delegated legislation and Lokpal and Lokayuktas Act, 2013",
+      "provisionId": "admin-admin-rulemaking-control",
+      "title": "Control of Administrative Rule-Making — Legislative, Judicial and Procedural"
+    },
+    {
+      "actId": "bsa",
+      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
+      "provisionId": "bsa-s-63",
+      "section": "s. 63",
+      "title": "Electronic records where applicable"
+    }
+  ],
+  "examples": [
+    {
+      "id": "admin-rulemaking-control-ill-1",
+      "title": "Example 1 - Rule applies",
+      "illustrationType": "practical",
+      "description": "The claimant or applicant establishes the forum, legal foundation, every mandatory ingredient and the requested remedy under Control of Administrative Rule-Making — Legislative, Judicial and Procedural. The authority applies the rule on the proved record."
+    },
+    {
+      "id": "admin-rulemaking-control-ill-2",
+      "title": "Example 2 - Boundary defect",
+      "illustrationType": "fail-scenario",
+      "description": "A material condition, jurisdictional fact, limitation requirement or evidentiary foundation for Control of Administrative Rule-Making — Legislative, Judicial and Procedural is missing. The Court identifies the defect and refuses, returns, remands or limits the relief according to law."
+    }
+  ],
+  "hypotheticals": [
+    {
+      "id": "admin-rulemaking-control-hypo",
+      "title": "Chamber Practice Hypothetical: Control of Administrative Rule-Making — Legislative, Judicial and Procedural",
+      "facts": "A dispute invokes Control of Administrative Rule-Making — Legislative, Judicial and Procedural. The opposing party challenges jurisdiction, limitation, statutory ingredients and an electronic record relied upon by the applicant.",
+      "question": "Whether relief under Control of Administrative Rule-Making — Legislative, Judicial and Procedural is maintainable and what order should the competent forum pass.",
+      "applicableLaw": "constitutional judicial review, administrative law principles, delegated legislation and Lokpal and Lokayuktas Act, 2013",
+      "analysis": "1. Identify the issue and forum. 2. State the governing rule. 3. Apply every ingredient to the facts. 4. Test evidence and burden, including BSA s. 63 where relevant. 5. Answer the defence and formulate the exact remedy.",
+      "conclusion": "Relief depends on proof of the statutory or doctrinal ingredients, jurisdiction and admissible foundation. The forum should grant only the order authorised by the governing law."
+    }
+  ],
+  "distinctions": [
+    {
+      "id": "admin-rulemaking-control-distinction",
+      "title": "Control of Administrative Rule-Making — Legislative, Judicial and Procedural and connected legal concept",
+      "left": "Control of Administrative Rule-Making — Legislative, Judicial and Procedural",
+      "right": "Doctrine of Separation of Powers & Rule of Law (Dicey’s formulation); Principles of Natural Justice — Audi Alteram Partem (Right to fair hearing); Principles of Natural Justice — Nemo Judex In Causa Sua (Rule against Bias: Pecuniary, Personal, Subject-Matter)",
+      "rows": [
+        {
+          "point": "Source",
+          "left": "constitutional judicial review, administrative law principles, delegated legislation and Lokpal and Lokayuktas Act, 2013",
+          "right": "Connected statute, doctrine or procedural route"
+        },
+        {
+          "point": "Trigger",
+          "left": "Its own mandatory ingredients",
+          "right": "Different facts or conditions"
+        },
+        {
+          "point": "Consequence",
+          "left": "Specific relief or legal result",
+          "right": "Do not import this topic's consequence automatically"
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "admin-rulemaking-control-trap-1",
+      "trap": "Treating Control of Administrative Rule-Making — Legislative, Judicial and Procedural as a heading-only topic.",
+      "correction": "A complete answer must state provenance, ingredients, evidence, forum, limitation, authority and relief."
+    },
+    {
+      "id": "admin-rulemaking-control-trap-2",
+      "trap": "Using a generic legal rule without naming the governing statute.",
+      "correction": "Always identify the named enactment or constitutional source: constitutional judicial review, administrative law principles, delegated legislation and Lokpal and Lokayuktas Act, 2013."
+    },
+    {
+      "id": "admin-rulemaking-control-trap-3",
+      "trap": "Treating a relevant electronic record as automatically proved.",
+      "correction": "Relevance, admissibility, foundation, burden and weight remain separate questions under the BSA route."
+    }
+  ],
+  "cases": [
+    {
+      "name": "A.K. Kraipak v. Union of India",
+      "year": 1969,
+      "citation": "(1969) 2 SCC 262",
+      "court": "Supreme Court of India",
+      "facts": "The selection process involved decision-makers whose interests overlapped with the candidates.",
+      "issue": "How far do natural justice rules apply to administrative action?",
+      "ratioDecidendi": "The dividing line between administrative and quasi-judicial power is thin; natural justice applies where fairness requires it and bias is impermissible.",
+      "holding": "The selection process was invalidated for breach of natural justice.",
+      "relevance": "Use for bias and fair administrative procedure."
+    },
+    {
+      "name": "Maneka Gandhi v. Union of India",
+      "year": 1978,
+      "citation": "(1978) 1 SCC 248",
+      "court": "Supreme Court of India",
+      "facts": "A passport was impounded without adequate opportunity and reasons.",
+      "issue": "What standard of fairness governs State action affecting personal liberty?",
+      "ratioDecidendi": "Procedure affecting Article 21 liberty must be fair, just and reasonable and must satisfy Articles 14 and 19 where applicable.",
+      "holding": "The Court constitutionalised procedural fairness and reasonableness.",
+      "relevance": "Use for hearing, reasons and Article 21 review."
+    },
+    {
+      "name": "Tata Cellular v. Union of India",
+      "year": 1994,
+      "citation": "(1994) 6 SCC 651",
+      "court": "Supreme Court of India",
+      "facts": "The Court reviewed a public procurement decision.",
+      "issue": "What are the limits of judicial review over administrative discretion?",
+      "ratioDecidendi": "Judicial review examines illegality, irrationality and procedural impropriety, not the merits of the administrative decision as an appellate authority.",
+      "holding": "The Court stated the classic Indian administrative review framework.",
+      "relevance": "Use for Wednesbury review and procurement decisions."
+    }
+  ],
+  "questionsAndAnswers": [
+    {
+      "id": "admin-rulemaking-control-brief",
+      "draftingCategory": "brief",
+      "question": "Structured Case Brief and legal problem assessment on Control of Administrative Rule-Making — Legislative, Judicial and Procedural.",
+      "answer": "I. ISSUE AND JURISDICTION\nWhether Control of Administrative Rule-Making — Legislative, Judicial and Procedural applies to the stated facts and whether the chosen forum and remedy are maintainable.\n\nII. GOVERNING RULE\nControl of Administrative Rule-Making — Legislative, Judicial and Procedural is governed by constitutional judicial review, administrative law principles, delegated legislation and Lokpal and Lokayuktas Act, 2013. identify the source of power, statutory duty, decision-maker, affected right, alternative remedy and standard of review applicable to the administrative action.\n\nIII. INGREDIENT APPLICATION\nIdentify each condition, connect it to the evidence and answer the principal exception or defence. Apply BSA s. 63 to digital records where relevant and state the initial burden precisely.\n\nIV. CONCLUSION\nGrant, refuse or modify the relief only to the extent authorised by the governing law and proved record.",
+      "explanation": "IRAC chamber brief."
+    },
+    {
+      "id": "admin-rulemaking-control-submissions",
+      "draftingCategory": "submissions",
+      "question": "Comprehensive Written Submissions on Control of Administrative Rule-Making — Legislative, Judicial and Procedural.",
+      "answer": "I. STATEMENT OF FACTS AND PROCEDURAL PROVENANCE\nSet out the material facts, forum, procedural stage, notices, pleadings and documents.\n\nII. STATUTORY AND DOCTRINAL SCHEME\nDeconstruct Control of Administrative Rule-Making — Legislative, Judicial and Procedural under constitutional judicial review, administrative law principles, delegated legislation and Lokpal and Lokayuktas Act, 2013, including its purpose, conditions, exceptions and connected provisions.\n\nIII. SATISFACTION OF MANDATORY INGREDIENTS\nApply each ingredient to the record, address jurisdiction, limitation, maintainability and the opposing party's strongest objection.\n\nIV. VERIFIED AUTHORITIES\nUse the case ratios below only for the propositions they decide and distinguish contrary facts.\n\nV. EVIDENCE AND PRAYER\nAddress BSA ss. 63, 104 and 109 where relevant, then seek the precise order available from the statutory authority or tribunal, High Court under Article 226, Supreme Court under Article 32 or 136 where the constitutional threshold is met, and the competent appellate or review forum.",
+      "explanation": "Senior Counsel written submissions."
+    }
+  ],
+  "bareActPointers": [
+    "constitutional judicial review, administrative law principles, delegated legislation and Lokpal and Lokayuktas Act, 2013",
+    "Control of Administrative Rule-Making — Legislative, Judicial and Procedural",
+    "BSA s. 63 and ss. 104, 109 where relevant"
+  ],
+  "examTips": [
+    "Name the governing statute in the opening sentence.",
+    "List ingredients before applying facts.",
+    "Separate jurisdiction, limitation, admissibility and merits.",
+    "Use only verified authorities and extract the ratio relevant to the issue."
+  ],
+  "revisionPoints": [
+    "Control of Administrative Rule-Making — Legislative, Judicial and Procedural",
+    "Mandatory ingredients and exceptions",
+    "Forum: the statutory authority or tribunal, High Court under Article 226, Supreme Court under Article 32 or 136 where the constitutional threshold is met, and the competent appellate or review forum",
+    "BSA electronic evidence and burden checkpoints where applicable"
+  ]
+}
+
+export default content

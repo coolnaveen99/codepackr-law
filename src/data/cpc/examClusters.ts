@@ -152,7 +152,7 @@ export function noteFromCluster(cite: string, title: string, cluster: string, ki
       'Apply the facts. If one condition is missing, say the heading fails.',
     ],
     illustration: `A party relies on ${cite} (${title}) at the proper stage of a civil suit. Every condition of the heading is present. The court applies ${cite} and grants the procedural consequence the section or Order provides.`,
-    failIllustration: `The same party uses ${cite} at the wrong stage, or against a stranger, or where a more specific CPC heading already occupies the field. ${cite} is then not attracted. Write that failure — it is the 16-mark paragraph.`,
+    failIllustration: `The same party uses ${cite} at the wrong stage, or against a stranger, or where a more specific CPC heading already occupies the field. ${cite} is then not attracted. State that failure clearly — it is the crucial distinction in chamber practice.`,
     cases: pack.cases,
     trap: pack.trap,
     correction: pack.correction,

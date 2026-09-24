@@ -66,7 +66,7 @@ export function SubjectsList({
           Every subject, one desk.
         </h2>
         <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-xl">
-          Open a code for its introduction and full catalog. Click any article or section for the 10-mark and 16-mark note.
+          Open a code for its introduction and full catalog. Click any article or section for its comprehensive treatise, case law ratios, and practice roadmaps.
         </p>
       </div>
 

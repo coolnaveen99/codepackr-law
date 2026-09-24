@@ -20,6 +20,7 @@ export interface TopicExample {
   id: string
   title?: string
   description: string
+  illustrationType?: 'statutory' | 'practical' | 'fail-scenario'
 }
 
 export interface TopicQuestionAnswer {
@@ -28,35 +29,49 @@ export interface TopicQuestionAnswer {
   answer: string
   explanation?: string
   relatedProvisionIds?: string[]
+  draftingCategory?: 'brief' | 'submissions' | 'opinion'
+  /** @deprecated Retained for backwards compatibility with legacy data; use draftingCategory */
   marks?: 10 | 16
 }
 
 export interface TopicHypothetical {
   id: string
   title?: string
-  facts: string
-  question: string
-  applicableLaw: string
+  facts?: string
+  scenario?: string
+  question?: string
+  applicableLaw?: string
   analysis: string
-  conclusion: string
+  conclusion?: string
 }
 
 export interface TopicMisconception {
-  id: string
-  trap: string
+  id?: string
+  trap?: string
+  misconception?: string
   correction: string
 }
 
-export interface TopicDistinction {
-  id: string
-  title: string
+export interface TopicDistinctionRow {
+  point: string
   left: string
   right: string
-  rows: { point: string; left: string; right: string }[]
+}
+
+export interface TopicDistinction {
+  id?: string
+  title?: string
+  left?: string
+  right?: string
+  conceptA?: string
+  conceptB?: string
+  rows?: TopicDistinctionRow[]
+  points?: string[]
 }
 
 export interface TopicExamFramework {
-  marks: 10 | 16
+  marks?: 10 | 16
+  draftingCategory?: 'brief' | 'submissions'
   question?: string
   steps: string[]
 }
