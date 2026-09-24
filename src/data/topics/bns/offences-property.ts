@@ -82,7 +82,7 @@ Open s. 303 onwards for ingredients and punishments.`,
 
   examFrameworks: [
     {
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'Explain theft and snatching under the BNS.',
       steps: [
         's. 303 theft; community service for first petty theft where the section allows.',
@@ -92,7 +92,7 @@ Open s. 303 onwards for ingredients and punishments.`,
       ],
     },
     {
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'Survey offences against property in the BNS with special reference to number collisions.',
       steps: [
         'Chapter map.',

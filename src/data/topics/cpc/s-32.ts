@@ -108,17 +108,15 @@ export default {
   questionsAndAnswers: [
     {
       id: 's32-q-10',
-      
-      draftingCategory: 'brief',
-      question: 'Provide a structured Case Brief and legal assessment on Section 32 CPC (Penalty for default).',
+      marks: 10,
+      question: 'Write a 10-mark note on Section 32 CPC (Penalty for default).',
       answer:
         'Introduction. Section 32 lets the court compel a person already summoned under Section 30. It is not a penalty for ignoring a plaint-summons.\n\nMeaning. After a Section 30 summons, the court may use warrant, attachment and sale, fine up to \u20b95,000, or security with civil prison on default.\n\nEssentials. Section 30 summons; service; default without cause; discretionary clause; object is attendance.\n\nExample. A summoned record-keeper stays away after proved service. Fine and a last date first; warrant if defiance continues.\n\nDistinction. Order V summons the defendant. Section 51 executes a decree.\n\nConclusion. Cite Section 32 CPC, 1908 and the \u20b95,000 cap.',
     },
     {
       id: 's32-q-16',
-      
-      draftingCategory: 'submissions',
-      question: 'A summoned witness ignores a Section 30 summons. Counsel asks for immediate arrest and sale under Section 32. Draft comprehensive Written Submissions.',
+      marks: 16,
+      question: 'A summoned witness ignores a Section 30 summons. Counsel asks for immediate arrest and sale under Section 32. Write a 16-mark answer.',
       answer:
         'Issue. May the court arrest and sell at once under Section 32?\n\nRule. Section 32 applies only after a Section 30 summons. The court may use clauses (a)–(d). The verb is may. Order XVI is the working procedure.\n\nApplication. Confirm it was a Section 30 summons and that service is proved. Then Section 32 is open. Immediate arrest and sale treats the heaviest clauses as automatic. A first default is usually a fine, a peremptory order, or security. Warrant and attachment need a record of wilful repeated default.\n\nChange one fact. No Section 30 summons means Section 32 fails. Avoided plaint-service is Order IX.\n\nConclusion. The section applies, but the court should choose the measure that gets the witness or document into court. Close with Section 32 CPC, the \u20b95,000 cap from 1 July 2002, and Order XVI.',
     },

@@ -1,135 +1,133 @@
-# CodePackr Law — Deep Academic & Practice Content Instructions (Senior Counsel & PhD Standard)
+# CodePackr Law — Deep Student Answer Content Instructions
 
 **Canonical location:** `.github/instructions/student-answer-content.md`
 
 Operational SOP: [`.github/skills/student-answer-content.md`](../skills/student-answer-content.md)
 
-This file sets the **content-depth and analytical benchmark** for every substantive topic and provision treatise on CodePackr Law. It integrates the scholastic excellence of a **Doctor of Laws (PhD in Jurisprudence)** with the forensic courtroom strategy of a **Senior Counsel**.
+This file is the **content-depth standard** for every substantive Study Topic. Global architecture, research hierarchy, mapper and no-hallucination rules remain in [`.github/instructions/global-legal-content.md`](global-legal-content.md). Subject extras stay in [`.github/instructions/subjects/`](subjects/).
 
-Global architecture, research hierarchy, mapper, and no-hallucination rules remain in [`.github/instructions/global-legal-content.md`](global-legal-content.md). Subject extras stay in [`.github/instructions/subjects/`](subjects/).
-
-Do **not** create a parallel content architecture. Populate the unified `TopicContent.study` treatise plus structured fields (`sections`, `examples`, `hypotheticals`, `distinctions`, `misconceptions`, `examFrameworks`, `answerSkeleton`, `revisionPoints`, `questionsAndAnswers`, `cases`).
-
-**Modular Design Standard (Zero Raw Markdown)**: All answers and treatises must be structured cleanly for the `ModularStudyRenderer`. Never emit raw markdown syntax tokens (`###`, `**`, `---`, `> `) directly into the UI. Headings, callouts, lists, and bold legal terms are rendered as rich modular cards and components.
+Do **not** create a parallel content architecture. Use `TopicContent.study` plus structured fields (`sections`, `examples`, `hypotheticals`, `distinctions`, `misconceptions`, `examFrameworks`, `answerSkeleton`, `revisionPoints`, `questionsAndAnswers`, `cases`).
 
 ---
 
-## Strategic Purpose: Dual-Track Educational & Chamber Platform
+## Purpose
 
-CodePackr Law is **not** a shallow Bare Act repository, nor is it a simplistic notes aggregator.
+CodePackr Law is a law-student learning platform. Its purpose is **not** to provide shallow Bare Act summaries.
 
-It is an authoritative, 100% privacy-first **Digital Law Library & Practice Reference** engineered to resolve law-related doubts for two complementary groups:
-1. **Law Students & Judicial Service Aspirants** (LL.B, LL.M, AIBE, State Judicial Services Mains): Master complex statutory provisions, grasp legislative intent, analyze landmark precedents, and produce structured 10-mark and 16-mark answers formatted via IRAC/ILAC.
-2. **Junior Advocates & Practicing Litigators** (Trial and Appellate Bar): Rapid forensic reference for chamber drafting, checking the competent forum, computing limitation periods, identifying mandatory proving ingredients, discharging evidentiary burdens (BSA ss. 104–106 and s. 63 electronic evidence), and structuring courtroom arguments.
+The primary goal is to help students understand legal topics deeply, understand important provisions and doctrines, learn case law, apply law to facts, and prepare strong university, AIBE, Judiciary and other law-examination answers.
 
-The operational philosophy is:
+The core product philosophy is:
 
 ```text
-DECONSTRUCT JURISPRUDENCE → VERIFY STATUTORY ANATOMY → ANCHOR PROCEDURAL FORUM & BURDEN → APPLY TO FACT PATTERNS → DRAFT IRAC EXAM ANSWERS → PREPARE COURTROOM SUBMISSIONS
+UNDERSTAND → CONNECT → APPLY → WRITE → REVISE → PRACTICE
 ```
 
-Reject shallow digests:
+Do **not** reduce content to:
+
 ```text
-BARE ACT → SECTION SUMMARY → FEW BULLETS → RECITATION OF REPEALED IPC EQUIVALENTS
+BARE ACT → SECTION SUMMARY → FEW BULLETS
 ```
-That simplistic model is strictly prohibited.
+
+That is specifically what CodePackr Law must avoid.
 
 ---
 
 # 1. FIRST PRINCIPLE — DO NOT START AND STOP WITH THE BARE ACT
 
-The Bare Act, Gazette notification, and statutory rules constitute the **authoritative primary source layer**.
+The Bare Act, Constitution, Rules and Regulations are the **primary legal source layer**.
 
-They are **not the complete educational or professional practice layer**.
+They are **not the complete educational layer**.
 
-For every substantive topic, research and deconstruct the provision across both dimensions:
+For every substantive topic, research and understand the topic from multiple dimensions:
 
 ```text
-┌────────────────────────────────────────────────────────┐
-│     SCHOLASTIC & EXAM MASTERY (PhD Dimension)          │
-├────────────────────────────────────────────────────────┤
-│ 1. Jurisprudential origin & historical development     │
-│ 2. Legislative purpose & Canons of Interpretation      │
-│ 3. Deconstructed Statutory Anatomy (Provisos/Clauses)  │
-│ 4. Judicial Interpretation & Ratio Decidendi           │
-│ 5. Full 10-Mark Answer (IRAC / ILAC Structure)         │
-│ 6. Full 16-Mark Answer (Comprehensive Scholastic Paper)│
-└────────────────────────────────────────────────────────┘
-                          +
-┌────────────────────────────────────────────────────────┐
-│    LITIGATION & CHAMBER PRACTICE (Senior Counsel)      │
-├────────────────────────────────────────────────────────┤
-│ 1. Competent Forum, Territorial & Pecuniary Bounds     │
-│ 2. Limitation Period (Limitation Act 1963 schedule)    │
-│ 3. Mandatory Ingredients to be Proved in Court         │
-│ 4. Evidentiary Standards (BSA 104-106 & S. 63 Cert)   │
-│ 5. Pleading Essentials & Mandatory Averments           │
-│ 6. Core Arguments: Petitioner/Prosecution vs Defence   │
-│ 7. 2024 Transitional Grandfathering (S. 531 BNSS)      │
-└────────────────────────────────────────────────────────┘
+PRIMARY LAW
++
+LEGAL DOCTRINE
++
+JUDICIAL INTERPRETATION
++
+LEGAL HISTORY / DEVELOPMENT
++
+ACADEMIC EXPLANATION
++
+PRACTICAL APPLICATION
++
+EXAMPLES
++
+CASE LAW
++
+EXAM ANSWER STRUCTURE
 ```
 
-Then create original, publishable CodePackr treatise content.
+Then create original CodePackr student content.
 
-### Mandatory Workflow
+### Mandatory learning workflow
 
 ```text
 RESEARCH BEYOND BARE ACT
         ↓
-VERIFY COMMENCEMENT & TRANSITIONAL STATUS (S. 531 BNSS / Art 20(1))
+VERIFY PRIMARY LAW
         ↓
-DECONSTRUCT JURISPRUDENTIAL CONCEPT & LEGISLATIVE INTENT
+UNDERSTAND THE LEGAL CONCEPT
         ↓
-EXPLAIN IN LUCID, ACADEMICALLY RIGOROUS LANGUAGE
+EXPLAIN IN STUDENT-FRIENDLY LANGUAGE
         ↓
-CONNECT PROVISIONS + STATUTORY PROVISOS + CANONICAL DOCTRINES
+CONNECT PROVISIONS + DOCTRINES + CASES
         ↓
-ESTABLISH PROCEDURAL ANCHOR (Forum, Limitation, Evidentiary Proof)
+GIVE PRACTICAL EXAMPLES
         ↓
-PRESENT CONTRASTING PRACTICAL EXAMPLES (Applies vs Fails)
+GIVE HYPOTHETICAL FACT SITUATIONS
         ↓
-CREATE AUTHENTIC FACT-BASED HYPOTHETICALS
+SHOW APPLICATION / ANALYSIS
         ↓
-FORMULATE COMPLETE 10-MARK ANSWER (IRAC)
+PREPARE 10-MARK ANSWER
         ↓
-EXPAND INTO COMPLETE 16-MARK ANSWER (CREAC)
+EXPAND INTO 16-MARK ANSWER
         ↓
-SUMMARIZE HIGH-YIELD DOUBT-RESOLUTION POINTS & TRAPS
+REVISION POINTS
         ↓
-Q&A / DIAGNOSTIC MCQs / TIME-BOUND SIMULATION
+Q&A / MCQ / PRACTICE
 ```
 
----
-
-# 2. THE THREE ESSENTIAL INQUIRIES OF EVERY TREATISE
-
-For every substantive topic, the author must answer three questions:
-
-### 1. The Scholastic Inquiry (PhD in Law)
-> *What is the jurisprudential underpinning, legislative mischief addressed, statutory anatomy, and binding ratio decidendi of this rule?*
-
-### 2. The Examination Inquiry (Judicial Services / LL.B / AIBE)
-> *How does an examinee present this topic under strict exam conditions in a 10-mark (500–700 words) or 16-mark (900–1200 words) answer to secure maximum marks using the IRAC method?*
-
-### 3. The Litigator's Inquiry (Senior Counsel Chamber Reference)
-> *When an advocate stands before the Judge or drafts in chamber: What is the forum? What is the limitation period? What are the exact ingredients that must be proved? Who bears the burden of proof? What are the strongest counter-arguments from the opposing counsel?*
-
-The treatise must teach:
-- **WHAT** is the rule?
-- **WHY** did the legislature enact it (the mischief and purpose)?
-- **HOW** does it operate procedurally in court?
-- **WHAT** are the statutory exceptions and provisos?
-- **HOW** have the Supreme Court and High Courts interpreted it (*ratio decidendi*)?
-- **HOW** is evidence led and admitted to prove it (BSA standards)?
-- **WHAT** are the arguments for the Petitioner/Prosecution and Respondent/Defence?
-- **HOW** do I write this in an exam hall?
+The Bare Act is the authoritative **legal source layer**. It is not the entire Study Topic.
 
 ---
 
-# 3. CONTENT MUST BE DEEP, AUTHORITATIVE, AND FORENSIC
+# 2. THE REAL PURPOSE OF EVERY TOPIC
 
-Reject superficial content such as:
-- A one-paragraph introduction followed by copied Bare Act text.
+For every substantive topic, ask:
+
+> What would a law student need to know if the university examiner asks a 10-mark question on this topic?
+
+Then ask:
+
+> What additional legal analysis, authorities, examples and application would the student need if the examiner asks a 16-mark question?
+
+The content must therefore teach:
+
+- WHAT?
+- WHY?
+- HOW?
+- WHEN?
+- WHY NOT?
+- WHAT ARE THE EXCEPTIONS?
+- WHAT HAVE COURTS SAID?
+- HOW DOES IT APPLY?
+- HOW DO I WRITE THIS IN AN EXAM?
+
+Do not merely answer:
+
+> Which section applies?
+
+---
+
+# 3. CONTENT MUST BE DEEP, NOT BASIC
+
+Reject shallow content such as:
+
+- One-paragraph introduction.
+- Bare Act section.
 - Two bullet points.
 - One case name.
 - One-line explanation.

@@ -93,7 +93,7 @@ Original CodePackr teaching. Verify the exact proviso language of s. 23 in the B
 
   examFrameworks: [
     {
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'Distinguish admission and confession. When is a confession irrelevant?',
       steps: [
         'Define admission (s. 15) including electronic form.',
@@ -105,7 +105,7 @@ Original CodePackr teaching. Verify the exact proviso language of s. 23 in the B
       ],
     },
     {
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'Explain the scheme of admissions and confessions under the BSA. Can a confession to police ever be used?',
       steps: [
         's. 15 definition and who can make admissions (ss. 16–18).',

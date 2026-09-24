@@ -62,7 +62,7 @@ export default {
   questionsAndAnswers: [
     {
       id: 'hiba-q10',
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'Explain the essentials of a valid gift (hiba) under Muslim law.',
       answer:
         'Introduction. Definition. Three essentials: declaration, acceptance, delivery of possession. Brief musha note. Conclusion.',
@@ -70,7 +70,7 @@ export default {
     },
     {
       id: 'hiba-q16',
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'Discuss hiba with special reference to musha and marz-ul-maut.',
       answer:
         'Introduction. Essentials. Musha problems. Marz-ul-maut and one-third relationship. Distinction from wasiyat. Illustration. Conclusion.',

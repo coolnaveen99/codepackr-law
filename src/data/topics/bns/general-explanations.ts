@@ -82,7 +82,7 @@ Open s. 1–3 section lessons for black-letter text.`,
 
   examFrameworks: [
     {
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'Write a note on the commencement and key definitions of the BNS.',
       steps: [
         'Act 45 of 2023; 1 July 2024 except 106(2).',
@@ -93,7 +93,7 @@ Open s. 1–3 section lessons for black-letter text.`,
       ],
     },
     {
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'The BNS is a new Code, not a renumbering. Discuss Chapter I and the transition from the IPC.',
       steps: [
         's. 1 extra-territorial and commencement.',

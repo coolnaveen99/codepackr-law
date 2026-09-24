@@ -20,7 +20,7 @@ export function Footer({ onOpenContact }: FooterProps) {
               </span>
             </div>
             <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-              Digital law library & practice reference for AIBE, Judiciary, and advocates — statutory treatises, extracted case law ratios, and chamber drafting.
+              Student corner for AIBE and Judiciary — section-wise notes, 10-mark and 16-mark answers, and private exam tools.
             </p>
             <div className="inline-flex items-center gap-2 text-xs font-medium text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-950/60 px-3 py-1.5 rounded-xl border border-blue-200 dark:border-blue-900">
               <ShieldCheck className="w-4 h-4 text-blue-600" />

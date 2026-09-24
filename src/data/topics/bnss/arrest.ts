@@ -23,7 +23,7 @@ Informing grounds and the right to bail — s. 47 family; confirm the exact clau
 Production before a Magistrate — the 24-hour rule continues (historically CrPC 57/167; current production/remand cluster includes s. 58 and s. 187). Do not detain as a punishment.
 
 Remand — s. 187
-Police custody is not a free 15-day block that must be the first 15 days. The BNSS allows the 15 days of police custody to be sought in parts within the outer investigation-custody period. Confirm the exact inner limits in the Bare Act before arguing detention limits.
+Police custody is not a free 15-day block that must be the first 15 days. The BNSS allows the 15 days of police custody to be sought in parts within the outer investigation-custody period. Confirm the exact inner limits in the Bare Act before a numerical 16-mark.
 
 Current-law position
 Cite s. 35, not CrPC 41, for arrests on or after 1 July 2024. Arnesh Kumar is still the case you name for the seven-year necessity rule.
@@ -85,14 +85,14 @@ This page replaces a mis-filed cognizance dump that previously lived under “ar
   cases: [
     { name: 'Joginder Kumar v. State of U.P.', year: 1994, citation: '(1994) 4 SCC 260', holding: 'Arrest is not mandatory merely because it is lawful. There must be a justification.', relevance: 'The philosophy behind s. 35.' },
     { name: 'D.K. Basu v. State of W.B.', year: 1997, citation: '(1997) 1 SCC 416', holding: 'Arrest-memo and allied safeguards. Largely statutory now in s. 36.', relevance: 'Memo, identification, intimation.' },
-    { name: 'Arnesh Kumar v. State of Bihar', year: 2014, citation: '(2014) 8 SCC 273', holding: 'For offences punishable with up to seven years, police must record satisfaction of the necessity conditions before arrest; Magistrates must not authorise detention mechanically.', relevance: 'Foundational Supreme Court authority on s. 35.' },
+    { name: 'Arnesh Kumar v. State of Bihar', year: 2014, citation: '(2014) 8 SCC 273', holding: 'For offences punishable with up to seven years, police must record satisfaction of the necessity conditions before arrest; Magistrates must not authorise detention mechanically.', relevance: 'The 10-mark case on s. 35.' },
   ],
 
   bareActPointers: ['BNSS s. 35', 's. 36', 's. 43', 's. 47', 's. 58', 's. 187', 'CrPC 41/41A (historical)'],
 
   examFrameworks: [
     {
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'When may police arrest without warrant under the BNSS?',
       steps: [
         's. 35 in substance.',
@@ -103,7 +103,7 @@ This page replaces a mis-filed cognizance dump that previously lived under “ar
       ],
     },
     {
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'Arrest is a deprivation of liberty. Explain the BNSS scheme of arrest, handcuffing and remand.',
       steps: [
         'Art 21/22 backdrop.',

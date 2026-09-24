@@ -14,29 +14,24 @@ Prompt: [`.github/prompts/add-subject.prompt.md`](../prompts/add-subject.prompt.
 
 ---
 
-## Dual-Track Product Shape (Do Not Deviate)
+## Product shape (do not invent a second one)
 
-The student and advocate click path must strictly follow:
+The student journey is:
 
 ```text
-Home / Hamburger
-  → Subject Landing (Statutory Context + In-Force Status + Complete Numbered Catalog)
-    → Click Provision / Section / Article / Topic
-      → Full Treatise Page (Book-Chapter Depth)
-        → Jurisprudential Foundation & Legislative Intent (PhD Standard)
-        → Statutory Deconstruction (Provisos, Explanations, Non-obstante clauses)
-        → Procedural & Evidentiary Anchors (Forum, Limitation, BSA Burden of Proof)
-        → Official Statutory Illustrations (if enacted) + Contrastive Hypotheticals
-        → Landmark Precedents with Extracted Ratio Decidendi
-        → Courtroom Arguments (Prosecution/Plaintiff vs Defence/Respondent)
-        → 10-Mark and 16-Mark Jump Buttons (IRAC / CREAC Answers)
+Home / hamburger
+  → Subject landing (introduction + complete catalog)
+    → Click one provision or theme
+      → Full study page
+        → 10-mark and 16-mark jump buttons
 ```
 
-Follow the established catalog standard:
-- Clicking a subject displays the statutory introduction, in-force milestone, and **every numbered provision**.
-- Clicking any individual section opens the comprehensive treatise (meaning, ingredients, statutory illustrations if official, labelled examples, procedural anchors, and full 10-mark and 16-mark answers).
-- **Never stop at a Bare Act dump**.
-- **Never paste exam-writing filler into the `study` body**. Exam answers live exclusively in `questionsAndAnswers`.
+Same pattern as BNS / BNSS / BSA / Constitution:
+
+- Click **BNS** → introduction and **every section**.
+- Click **Section 107** → full teaching note for that section (meaning, ingredients, statutory illustrations if the Act prints them, examples, full 10-mark and 16-mark answers).
+- Do **not** stop at a Bare Act dump.
+- Do **not** put “How to write a 10-mark answer” filler in the study body. That lives in the Q&A cards.
 
 ---
 
@@ -48,19 +43,6 @@ Follow the established catalog standard:
 | **Theme** | AIBE-weight subject without a full section catalog yet | Intro + theme / doctrine / act topics | CPC, Contract, Family, Torts |
 
 Start **theme** if you only have a handful of high-yield essays. Upgrade to **catalog** when you have a verified complete section/article list (India Code / official PDF / NCRB Cytrain). Never invent missing section numbers to fake a catalog.
-
----
-
-## Zero Topic Omission Standard (The Sacred Student Career Covenant)
-
-Law students, judicial service aspirants, and junior advocates rely on Codepackr Law for their academic degrees, AIBE qualification, and judicial careers. **We work for their careers and their life.**
-
-1. **Never arbitrarily drop, prune, or compress topics**: An omitted doctrine, capacity rule, general defence, or specific remedy could be the exact 10-mark question, 16-mark problem, or chamber emergency a student or young advocate faces.
-2. **Mandatory Curriculum Cross-Referencing**: Before finalizing the topic list for any subject in `src/data/subjects.ts`, cross-reference:
-   - Bar Council of India (BCI) Model Curricula and National Law University (NLU) syllabi.
-   - Authoritative classroom textbooks and standard treatises (e.g., M. S. Rama Rao, Ratanlal & Dhirajlal, Avtar Singh, Mulla, R.K. Bangia).
-   - University examination question banks (10-mark questions, 16-mark essays, and short notes).
-3. **Dedicated Provision / Topic Registration**: Every distinct legal concept, defence, exception, remedy, and procedural step must have a dedicated topic entry. If a bespoke treatise is not yet written, it must be registered so that `synthesizePlaceholderTopic` provides an authoritative syllabus reference until full treatise authoring is complete.
 
 ---
 

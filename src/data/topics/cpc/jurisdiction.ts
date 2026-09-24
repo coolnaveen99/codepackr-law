@@ -12,8 +12,8 @@ const content: TopicContent = {
     { name: 'ABC Laminart Pvt. Ltd. v. A.P. Agencies', year: 1989, citation: 'AIR 1989 SC 1239', holding: 'Cause of action may arise in part.' },
   ],
   questionsAndAnswers: [
-    { id: 'j-10', draftingCategory: 'brief', question: 'Explain jurisdiction under the CPC.', answer: 'Introduction. Jurisdiction is competence.\n\nHeads. Subject-matter (s. 9), territorial (ss. 16–20), pecuniary (ss. 6, 15).\n\ns. 21. Place-of-suing objection is timely and needs failure of justice.\n\nIllustration and ABC Laminart.\n\nConclusion. Cite ss. 9 and 15–21 CPC, 1908.' },
-    { id: 'j-16', draftingCategory: 'submissions', question: 'A title suit is filed in the defendant’s city. Advise.', answer: 'Issue. Is the court competent?\n\nRule. Land → s. 16. Residual → s. 20. Objection → s. 21.\n\nApplication. Title is not a s. 20 suit. Return the plaint under Order VII r. 10 or reject if hopeless.\n\nConclusion. File in the court where the land lies.' },
+    { id: 'j-10', marks: 10, question: 'Explain jurisdiction under the CPC.', answer: 'Introduction. Jurisdiction is competence.\n\nHeads. Subject-matter (s. 9), territorial (ss. 16–20), pecuniary (ss. 6, 15).\n\ns. 21. Place-of-suing objection is timely and needs failure of justice.\n\nIllustration and ABC Laminart.\n\nConclusion. Cite ss. 9 and 15–21 CPC, 1908.' },
+    { id: 'j-16', marks: 16, question: 'A title suit is filed in the defendant’s city. Advise.', answer: 'Issue. Is the court competent?\n\nRule. Land → s. 16. Residual → s. 20. Objection → s. 21.\n\nApplication. Title is not a s. 20 suit. Return the plaint under Order VII r. 10 or reject if hopeless.\n\nConclusion. File in the court where the land lies.' },
   ],
   examTips: ['Draw the three heads before you write the facts.'],
 }

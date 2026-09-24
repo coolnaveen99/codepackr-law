@@ -88,7 +88,7 @@ Do not copy the canonical doctrine essay here — apply it.`,
 
   examFrameworks: [
     {
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'Explain common intention under the BNS.',
       steps: [
         's. 3(5) in substance; not a separate offence.',
@@ -99,7 +99,7 @@ Do not copy the canonical doctrine essay here — apply it.`,
       ],
     },
     {
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'Distinguish common intention and common object. Can liability arise without a pre-arranged plan?',
       steps: [
         's. 3(5) in detail.',

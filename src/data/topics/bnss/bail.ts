@@ -86,7 +86,7 @@ Do not write CrPC 437 as the current non-bailable section.`,
 
   examFrameworks: [
     {
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'Explain bail in bailable and non-bailable offences under the BNSS.',
       steps: [
         'Bail is the rule.',
@@ -97,7 +97,7 @@ Do not write CrPC 437 as the current non-bailable section.`,
       ],
     },
     {
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'Discuss anticipatory bail and undertrial detention under the BNSS.',
       steps: [
         'Map 478–483.',

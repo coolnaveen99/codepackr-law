@@ -1,233 +1,91 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
-const content: TopicContent = {
+const study = `Topic at a glance
+Family Law – I, Unit V: Minority and guardianship. Principal statutes: Hindu Minority and Guardianship Act, 1956 (HMGA); Guardians and Wards Act, 1890 (GWA). Always name the statute.
+
+Introduction
+Guardianship concerns the person and property of a minor. HMGA applies to Hindus as defined. GWA is the general statute for court appointment of guardians. Welfare of the minor is paramount.
+
+Hindu Minority and Guardianship Act, 1956
+Minor: person who has not completed eighteen years. Natural guardians of a Hindu minor for person and separate property: father, and after him the mother — subject to the statutory text and welfare (s. 13). Section 8 restricts natural guardian’s powers over the minor’s property; court permission is required for certain transfers. Testamentary and de facto guardians are recognised within limits.
+
+Guardians and Wards Act, 1890
+Court may appoint guardian of person or property. Welfare is paramount. Procedure for appointment, removal and duties is under GWA.
+
+Muslim law (essentials)
+Guardianship of the person (hizanat) and of property are distinguished. Mother often has priority for custody of young children subject to classical conditions; father/male agnates important for property. Modern courts prioritise welfare.
+
+Current-law close
+Cite HMGA 1956 and GWA 1890. End with welfare of the minor as paramount.`
+
+export default {
   glance:
-    'Guardianship of Hindu minors is governed primarily by the Hindu Minority and Guardianship Act, 1956 (HMGA). Section 6 names the natural guardians of the person and separate property (excluding undivided interest in joint family property): for a boy or unmarried girl — the father, and after him the mother (with ordinary custody of a child under five with the mother); for an illegitimate child — the mother, and after her the father; for a married girl — the husband. No person who has ceased to be a Hindu or who has renounced the world may act as natural guardian. Section 8 restricts the natural guardian’s power to deal with the minor’s property and requires prior court permission for specified transfers. Section 13 makes the welfare of the minor the paramount consideration. Court-appointed guardians are governed by the Guardians and Wards Act, 1890.',
-
-  study: `The Hindu Minority and Guardianship Act, 1956 is the principal statute governing natural and testamentary guardianship of Hindu minors. The Guardians and Wards Act, 1890 provides the general machinery for court appointment, removal and regulation of guardians.
-
-HMGA s. 4 defines “minor” as a person who has not completed the age of eighteen years, and “natural guardian” as any of the guardians mentioned in s. 6.
-
-HMGA s. 6 — Natural guardians of a Hindu minor in respect of the minor’s person and property (excluding undivided interest in joint family property):
-(a) in the case of a boy or an unmarried girl — the father, and after him, the mother: provided that the custody of a minor who has not completed the age of five years shall ordinarily be with the mother;
-(b) in the case of an illegitimate boy or an illegitimate unmarried girl — the mother, and after her, the father;
-(c) in the case of a married girl — the husband.
-
-Proviso: no person shall be entitled to act as natural guardian if he has ceased to be a Hindu, or if he has completely and finally renounced the world by becoming a hermit or ascetic. Explanation: “father” and “mother” do not include a step-father or step-mother.
-
-HMGA s. 8 — Powers of natural guardian: the natural guardian may do all acts necessary or reasonable and proper for the benefit of the minor or for the realisation, protection or benefit of the minor’s estate, but may not, without the previous permission of the Court, mortgage, charge, or transfer by sale, gift, exchange or otherwise any part of the immovable property of the minor, or lease any part of such property for a term exceeding five years or for a term extending more than one year beyond the date on which the minor attains majority. Any disposal in contravention of s. 8 is voidable at the instance of the minor or any person claiming under him.
-
-HMGA s. 13 — Welfare of minor to be paramount: in the appointment or declaration of any guardian, the welfare of the minor is the paramount consideration. No person shall be entitled to the guardianship by virtue of the provisions of the Act if the Court is of opinion that his or her guardianship will not be for the welfare of the minor.
-
-The Guardians and Wards Act, 1890 governs applications for appointment of a guardian by the Court, the duties and removal of guardians, and related procedure. Welfare remains the paramount consideration under that Act as well.
-
-Muslim law distinguishes guardianship of the person (hizanat) from guardianship of property. Modern courts prioritise the welfare of the child in custody disputes regardless of classical priority rules.`,
-
-  sections: [
-    {
-      id: 'guard-module-1',
-      title: 'Provenance, Legislative Objective & Doctrinal Foundations',
-      order: 1,
-      content: [
-        'The HMGA 1956 codifies and reforms the Hindu law of minority and guardianship. It overrides inconsistent pre-existing law (s. 5). The GWA 1890 remains the general procedural statute for court-appointed guardians.',
-        'Legislative objective: identify natural guardians with clarity, restrict dealings with a minor’s property without court supervision, and entrench the welfare of the minor as the paramount consideration.',
-        'Doctrinal foundation: natural guardianship arises by operation of law under s. 6. It is subject to the disqualifications in the proviso and to the overriding welfare principle in s. 13. Property powers are deliberately limited by s. 8 so that the minor’s estate is protected during minority.',
-      ],
-    },
-    {
-      id: 'guard-module-2',
-      title: 'Textual Anatomy, Provisos & Statutory Deconstruction',
-      order: 2,
-      content: [
-        's. 6(a): father, then mother, for a boy or unmarried girl; ordinary custody of a child under five with the mother.',
-        's. 6(b): mother, then father, for an illegitimate child.',
-        's. 6(c): husband for a married girl.',
-        'Proviso to s. 6: cessation of Hindu status or renunciation of the world disqualifies.',
-        'Explanation: step-parents are excluded.',
-        's. 8: prior court permission required for specified dealings with immovable property; contravention makes the transaction voidable at the instance of the minor.',
-        's. 13: welfare of the minor is paramount in any appointment or declaration of guardian.',
-      ],
-    },
-    {
-      id: 'guard-module-3',
-      title: 'Mandatory Proving Ingredients & Essential Elements',
-      order: 3,
-      content: [
-        '1. The person concerned is a Hindu minor (under eighteen years).',
-        '2. For natural guardianship: the person falls within one of the categories in s. 6 and is not disqualified by the proviso.',
-        '3. For dealings with the minor’s immovable property: prior permission of the Court under s. 8 is required for the listed transactions; absence of permission makes the transfer voidable at the minor’s instance.',
-        '4. In any court appointment or declaration of guardian: the welfare of the minor is the paramount consideration under s. 13 HMGA and under the GWA.',
-      ],
-    },
-    {
-      id: 'guard-module-4',
-      title: 'Evidentiary Burdens under BSA 2023 (ss. 104–106 & s. 63)',
-      order: 4,
-      content: [
-        'Age of the minor is ordinarily proved by birth certificate or other admissible record (including documents recognised under the Juvenile Justice framework where relevant).',
-        'In a challenge to a transfer under s. 8, the minor (or person claiming under him) must show that the transfer falls within the restricted categories and was made without prior court permission.',
-        'In custody and guardianship disputes, evidence of the child’s welfare (education, health, emotional bonds, capacity of the claimant) is central. Electronic records must satisfy BSA s. 63 where relied upon as primary electronic evidence.',
-      ],
-    },
-    {
-      id: 'guard-module-5',
-      title: 'Procedural Roadmap, Competent Forum & Limitation Act Checkpoints',
-      order: 5,
-      content: [
-        'Natural guardianship arises by operation of law under HMGA s. 6; no court order is required for the status itself.',
-        'Applications for permission under s. 8, and applications for appointment or declaration of a guardian, are made to the competent District Court / Family Court under the HMGA and the GWA.',
-        'A transfer in contravention of s. 8 is voidable at the instance of the minor (or person claiming under him); the minor may challenge it after attaining majority within the limitation period applicable to such suits.',
-        'Welfare inquiries under s. 13 and under the GWA are conducted by the Court with the child’s best interests as the paramount guide.',
-      ],
-    },
-  ],
-
-  provisions: [
-    {
-      actId: 'hmga',
-      actName: 'Hindu Minority and Guardianship Act, 1956',
-      provisionId: 'hmga-6',
-      section: 's. 6',
-      title: 'Natural guardians of a Hindu minor',
-    },
-    {
-      actId: 'hmga',
-      actName: 'Hindu Minority and Guardianship Act, 1956',
-      provisionId: 'hmga-8',
-      section: 's. 8',
-      title: 'Powers of natural guardian',
-    },
-    {
-      actId: 'hmga',
-      actName: 'Hindu Minority and Guardianship Act, 1956',
-      provisionId: 'hmga-13',
-      section: 's. 13',
-      title: 'Welfare of minor to be paramount',
-    },
-  ],
-
+    'FL-I Unit V — HMGA 1956 natural guardians & s. 8 limits; GWA 1890 court appointment; welfare paramount; Muslim hizanat essentials.',
+  study,
   examples: [
     {
-      id: 'guard-ill-1',
-      title: 'Illustration 1 — Natural guardian and ordinary custody under five',
-      illustrationType: 'statutory',
+      id: 'guard-ex-1',
+      title: 'Example — natural guardian',
       description:
-        'A Hindu boy is three years old. His father is alive and has not ceased to be a Hindu or renounced the world. Under s. 6(a) the father is the natural guardian, but the custody of the child who has not completed five years shall ordinarily be with the mother. Welfare under s. 13 remains paramount if the matter is litigated.',
-    },
-    {
-      id: 'guard-ill-2',
-      title: 'Illustration 2 — Sale of minor’s immovable property without court permission',
-      illustrationType: 'fail-scenario',
-      description:
-        'The mother, acting as natural guardian after the father’s death, sells the Hindu minor’s immovable property without obtaining prior permission of the Court under s. 8. The sale is voidable at the instance of the minor (or any person claiming under him). The minor may challenge it after attaining majority.',
+        'Hindu minor’s father is alive and capable. He is natural guardian of person and separate property under HMGA, subject to welfare and s. 8 limits.',
     },
   ],
-
   hypotheticals: [
     {
       id: 'guard-hypo',
-      title: 'Chamber Practice Hypothetical — Custody dispute and welfare paramount',
-      facts:
-        'A Hindu couple separates. Their daughter is four years old. The father claims custody as natural guardian under s. 6(a). The mother relies on the proviso that custody of a child under five shall ordinarily be with the mother, and on evidence that the father’s household is unstable and harmful to the child’s welfare.',
-      question:
-        'How should the Court decide custody?',
-      applicableLaw: 'HMGA ss. 6 and 13; Guardians and Wards Act, 1890; welfare principle.',
+      title: 'Classroom problem — sale of minor’s property',
+      facts: 'Mother as guardian sells Hindu minor’s immovable property without court permission.',
+      question: 'Is the sale valid?',
+      applicableLaw: 'Section 8 of the Hindu Minority and Guardianship Act, 1956.',
       analysis:
-        '1. Section 6(a) names the father as natural guardian and provides that custody of a child under five shall ordinarily be with the mother.\n2. Section 13 makes the welfare of the minor the paramount consideration. No person is entitled to guardianship if the Court is of opinion that it will not be for the welfare of the minor.\n3. Evidence of an unstable or harmful environment in the father’s household is directly relevant to welfare.\n4. The “ordinarily” preference for the mother of a child under five, combined with the welfare evidence, supports custody with the mother unless the father establishes that welfare requires otherwise.',
-      conclusion:
-        'Welfare is paramount. On the facts, custody should ordinarily remain with the mother; the father’s claim as natural guardian does not override s. 13.',
+        'Section 8 requires prior court permission for listed transfers of the minor’s property. Sale without permission is voidable at the instance of the minor as the section provides.',
+      conclusion: 'Without court permission, the transfer is vulnerable under s. 8 HMGA.',
     },
   ],
-
   distinctions: [
     {
-      id: 'guard-dist-1',
-      title: 'HMGA 1956 vs Guardians and Wards Act, 1890',
+      id: 'guard-dist',
+      title: 'HMGA vs GWA',
       left: 'HMGA 1956',
       right: 'GWA 1890',
       rows: [
-        { point: 'Applicability', left: 'Hindus (as defined in the Act)', right: 'General statute for court appointment and regulation of guardians' },
-        { point: 'Focus', left: 'Natural and testamentary guardians; statutory limits on property powers; welfare paramount', right: 'Procedure for appointment, removal, duties and powers of court-appointed guardians' },
-        { point: 'Key sections', left: 'ss. 6, 8, 13', right: 'Appointment, removal, and welfare-based discretion of the Court' },
+        { point: 'Applicability', left: 'Hindus (as defined)', right: 'General court procedure for guardians' },
+        { point: 'Focus', left: 'Natural/testamentary guardians and limits', right: 'Appointment, removal, duties by court' },
       ],
     },
   ],
-
   misconceptions: [
     {
-      id: 'guard-trap-1',
-      trap: 'The mother can never be natural guardian while the father is alive.',
-      correction:
-        'Section 6(a) names the father, and after him the mother. The mother may still have ordinary custody of a child under five, and under s. 13 the welfare of the minor is paramount. The Court may refuse guardianship to any person if it is not for the welfare of the minor.',
-    },
-    {
-      id: 'guard-trap-2',
-      trap: 'A natural guardian may freely sell the minor’s immovable property.',
-      correction:
-        'Section 8 requires prior permission of the Court for mortgage, charge, sale, gift, exchange or long lease of the minor’s immovable property. A transfer without permission is voidable at the instance of the minor.',
+      id: 'guard-m1',
+      trap: 'Mother can never be natural guardian while the father is alive.',
+      correction: 'HMGA names father then mother, but welfare is paramount under s. 13.',
     },
   ],
-
-  cases: [],
-
   questionsAndAnswers: [
     {
-      id: 'guard-brief',
-      draftingCategory: 'brief',
-      question:
-        'Who are the natural guardians of a Hindu minor under the Hindu Minority and Guardianship Act, 1956? What limits apply to their powers over property?',
-      answer: `I. ISSUE
-Who is the natural guardian of a Hindu minor, and what restrictions apply to dealings with the minor’s property?
-
-II. GOVERNING RULE
-Section 6 names the natural guardians (father then mother for a boy or unmarried girl; mother then father for an illegitimate child; husband for a married girl), subject to disqualification if the person has ceased to be a Hindu or has renounced the world. Section 8 requires prior court permission for specified dealings with immovable property; contravention makes the transfer voidable at the minor’s instance. Section 13 makes welfare paramount.
-
-III. APPLICATION
-Identify the category of minor → apply s. 6 → check disqualifications → for property dealings apply s. 8 → in any contested appointment apply s. 13 welfare.
-
-IV. CONCLUSION
-Natural guardianship is statutory and limited. Property powers are restricted; welfare overrides formal priority.`,
-      explanation: 'IRAC note on natural guardianship and s. 8 limits.',
+      id: 'guard-q10',
+      marks: 10,
+      question: 'Who are the natural guardians of a Hindu minor under the HMGA, 1956?',
+      answer:
+        'Introduction. Minor defined. Natural guardians: father then mother for person and separate property. Welfare paramount (s. 13). s. 8 property limits. Conclusion with HMGA citation.',
+      explanation: 'Mention s. 8 and s. 13.',
     },
     {
-      id: 'guard-submissions',
-      draftingCategory: 'submissions',
-      question:
-        'Draft Written Submissions in a custody dispute under HMGA ss. 6 and 13, emphasising the welfare of the minor.',
-      answer: `I. STATEMENT OF FACTS
-[Insert the age of the child, the competing claims, and the welfare evidence.]
-
-II. STATUTORY SCHEME
-Section 6 identifies natural guardians. Section 13 provides that the welfare of the minor is the paramount consideration and that no person is entitled to guardianship if it will not be for the welfare of the minor.
-
-III. APPLICATION
-Even if the father is the natural guardian under s. 6(a), the ordinary custody of a child under five is with the mother, and in any event s. 13 requires the Court to prioritise welfare. The evidence establishes that custody with the mother best serves the child’s welfare.
-
-IV. PRAYER
-[Custody / guardianship in favour of the mother; such further orders as to access and maintenance as the Court deems fit.]`,
-      explanation: 'Senior Counsel submissions on custody and welfare.',
+      id: 'guard-q16',
+      marks: 16,
+      question: 'Discuss guardianship of minors under Hindu law and the Guardians and Wards Act, 1890.',
+      answer:
+        'Introduction. HMGA scheme. Powers and s. 8. GWA court appointment and welfare. Brief Muslim custody contrast. Conclusion — welfare paramount; cite HMGA and GWA.',
+      explanation: 'Cover both statutes.',
     },
   ],
-
   bareActPointers: [
-    'HMGA 1956 ss. 4, 6, 8, 13',
+    'Hindu Minority and Guardianship Act, 1956 — ss. 4, 6, 8, 13',
     'Guardians and Wards Act, 1890',
   ],
-
-  examTips: [
-    'Always state that welfare of the minor is paramount (s. 13).',
-    's. 8 (court permission for property dealings) is high-yield.',
-    'Distinguish natural guardianship under HMGA from court appointment under GWA.',
-  ],
-
+  examTips: ['Welfare of the minor is paramount.', 's. 8 HMGA is high-yield.'],
   revisionPoints: [
-    'HMGA s. 6: father then mother (boy/unmarried girl); mother then father (illegitimate); husband (married girl).',
-    's. 8: prior court permission for specified property dealings; transfer without permission is voidable.',
-    's. 13: welfare of the minor is paramount.',
-    'GWA 1890: court-appointed guardians.',
+    'HMGA — natural guardians; s. 8; s. 13 welfare.',
+    'GWA — court-appointed guardians.',
   ],
-
-  relatedTopics: ['hindu-joint-family', 'hindu-succession', 'adoption-maintenance'],
-}
-
-export default content
+} satisfies TopicContent

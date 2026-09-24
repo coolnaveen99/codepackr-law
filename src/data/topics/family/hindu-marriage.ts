@@ -133,16 +133,15 @@ export default {
   questionsAndAnswers: [
     {
       id: 'hma-q-10',
-      
-      draftingCategory: 'brief',
-      question: 'Provide a comprehensive legal assessment on the conditions for a valid Hindu marriage under the Hindu Marriage Act, 1955.',
+      marks: 10,
+      question: 'Write a 10-mark note on the conditions for a valid Hindu marriage under the Hindu Marriage Act, 1955.',
       answer:
         'Introduction. Section 5 of the Hindu Marriage Act, 1955 lays down the conditions for a valid marriage between any two Hindus. Applicability is under s. 2 (Hindus, Buddhists, Jains, Sikhs).\n\nConditions. (i) Neither party has a spouse living (monogamy). (ii) Neither party is incapable of valid consent by unsoundness of mind, or unfit for marriage and procreation by reason of mental disorder, or subject to recurrent attacks of insanity. (iii) Bridegroom has completed 21 years and bride 18 years. (iv) Parties are not within degrees of prohibited relationship unless custom permits. (v) Parties are not sapindas unless custom permits.\n\nCeremony. Section 7 — customary rites of either party; where saptapadi is included, marriage is complete on the seventh step.\n\nIllustration. H has a living wife and marries W2 — condition (i) fails; marriage void under s. 11(i).\n\nConsequences. Breach of (i), (iv) or (v) without custom → void under s. 11. Other defects may attract s. 18 or voidable relief under s. 12. Children protected under s. 16 within limits.\n\nConclusion. List all five s. 5 conditions, link s. 7, distinguish s. 11 and s. 12, and cite the Hindu Marriage Act, 1955 by name.',
       explanation: 'Examiner expects all five conditions, s. 7, and void/voidable consequences.',
     },
     {
       id: 'hma-q-16',
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'Discuss the grounds of divorce under Section 13 of the Hindu Marriage Act, 1955 and contrast mutual consent divorce under Section 13B.',
       answer:
         'Introduction. Dissolution of a Hindu marriage is governed by Sections 13 and 13B of the Hindu Marriage Act, 1955. Section 14 bars a divorce petition within one year of marriage except with leave.\n\nSection 13 grounds. Either party may petition on grounds including adultery, cruelty, desertion for two years, conversion, incurable unsoundness of mind of the prescribed kind, renunciation of the world, and presumption of death after seven years. Section 13(1A) allows divorce after non-resumption of cohabitation following judicial separation or restitution decrees. The wife has special grounds under s. 13(2).\n\nKey meanings. Cruelty is conduct creating a reasonable apprehension of harm or injury in cohabitation (physical or mental). Desertion requires separation in fact and intention to desert without reasonable cause and without consent.\n\nIllustration. W proves repeated physical assault by H — cruelty under s. 13(1)(ia) is made out; a s. 9 petition by H would fail for reasonable excuse.\n\nSection 13B. Joint petition after living separately for one year or more, with mutual agreement to dissolve. Cooling-off is directory and may be waived (Amardeep Singh v. Harveen Kaur).\n\nDistinction. Section 13 is adversarial and requires proof of a ground; s. 13B is joint and rests on living apart plus free consent.\n\nConnected reliefs. Interim maintenance under s. 24; permanent alimony under s. 25; alternate judicial separation under s. 13A.\n\nConclusion. Treat s. 13 grounds with definitions of cruelty and desertion, explain s. 13(1A) and s. 13(2), contrast s. 13B, and close with the Hindu Marriage Act, 1955.',

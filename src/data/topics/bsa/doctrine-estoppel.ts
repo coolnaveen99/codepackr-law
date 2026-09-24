@@ -86,7 +86,7 @@ Educational note
 
   examFrameworks: [
     {
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'Explain estoppel under the BSA.',
       steps: [
         's. 121 rule in substance.',
@@ -97,7 +97,7 @@ Educational note
       ],
     },
     {
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'Estoppel is a rule of evidence, not a cause of action. Discuss with special estoppels and the difference from promissory estoppel.',
       steps: [
         's. 121 in detail.',

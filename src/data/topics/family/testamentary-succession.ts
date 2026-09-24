@@ -63,7 +63,7 @@ export default {
   questionsAndAnswers: [
     {
       id: 'will-q10',
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'Explain testamentary succession under Hindu law.',
       answer:
         'Introduction. Meaning of will. Power over disposable property. s. 6 HSA and coparcenary interest. ISA formalities essentials. Conclusion.',
@@ -71,7 +71,7 @@ export default {
     },
     {
       id: 'will-q16',
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'Distinguish intestate and testamentary succession. Discuss limits on willing Mitakshara interest and the Muslim one-third rule.',
       answer:
         'Introduction. Intestate vs testamentary. Hindu: HSA intestate vs will; s. 6 on coparcenary interest. Muslim: one-third rule. Illustration. Conclusion.',

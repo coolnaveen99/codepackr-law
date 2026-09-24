@@ -1,252 +1,120 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
-const content: TopicContent = {
+const study = `Topic at a glance
+Section 13 of the Hindu Marriage Act, 1955 is the principal fault-based (and status-based) divorce provision. It lists grounds available to either spouse and additional grounds available only to the wife. Mutual consent is a separate route under s. 13B.
+
+Introduction
+Divorce under the HMA is not at will. The petitioner must prove a statutory ground. Section 13 is the core list; s. 13A allows the court to grant judicial separation instead; s. 13B provides mutual consent.
+
+Meaning and concept
+Either party may present a petition on the grounds in s. 13(1), including adultery, cruelty, desertion for two years, conversion, incurable unsoundness of mind / mental disorder, venereal disease in a communicable form, renunciation of the world, and presumption of death (seven years). The wife has additional grounds under s. 13(2).
+
+Essential grounds (s. 13(1)) — high-yield
+- Adultery: voluntary sexual intercourse with any person other than the spouse after the marriage.
+- Cruelty: conduct that causes reasonable apprehension of harm or injury; includes mental cruelty (modern case law).
+- Desertion: continuous period of not less than two years immediately preceding the petition; intention to desert and absence without consent.
+- Conversion: ceased to be a Hindu by conversion to another religion.
+- Unsound mind / mental disorder of such a kind and to such an extent that the petitioner cannot reasonably be expected to live with the respondent.
+- Renunciation; presumption of death (seven years).
+
+Wife’s special grounds (s. 13(2))
+Include pre-Act bigamy situations, rape / sodomy / bestiality by the husband, and non-resumption of cohabitation after certain maintenance decrees.
+
+Alternate relief (s. 13A)
+In any divorce proceeding the court may, if it considers it just to do so, pass a decree of judicial separation instead of divorce.
+
+Current-law close
+Cite Section 13 of the Hindu Marriage Act, 1955 by clause. Do not confuse with s. 13B (mutual consent). Cruelty and desertion are the most frequently tested grounds.`
+
+export default {
   glance:
-    'Section 13 of the Hindu Marriage Act, 1955 is the principal fault-based and status-based divorce provision. Either spouse may petition on grounds including adultery, cruelty, desertion for two years, conversion, incurable unsoundness of mind / mental disorder, venereal disease in a communicable form, renunciation of the world, and presumption of death (seven years). The wife has additional grounds under s. 13(2). Section 13A permits the Court to grant judicial separation instead of divorce. Mutual consent is a separate route under s. 13B.',
-
-  study: `Section 13 is the core contested-divorce provision of the Hindu Marriage Act, 1955.
-
-Sub-section (1) — grounds available to either the husband or the wife:
-(i) voluntary sexual intercourse with any person other than the spouse after the solemnization of the marriage (adultery);
-(ia) treated the petitioner with cruelty;
-(ib) deserted the petitioner for a continuous period of not less than two years immediately preceding the presentation of the petition;
-(ii) ceased to be a Hindu by conversion to another religion;
-(iii) incurably of unsound mind, or suffering continuously or intermittently from mental disorder of such a kind and to such an extent that the petitioner cannot reasonably be expected to live with the respondent (with statutory explanations of “mental disorder” and “psychopathic disorder”);
-(v) suffering from venereal disease in a communicable form;
-(vi) renounced the world by entering any religious order;
-(vii) not heard of as being alive for a period of seven years or more by those who would naturally have heard of it (presumption of death).
-
-(The former ground relating to virulent and incurable leprosy was omitted by later amendment.)
-
-Sub-section (2) — additional grounds available only to the wife (including certain pre-Act bigamy situations, rape/sodomy/bestiality by the husband, and non-resumption of cohabitation after decrees of maintenance or restitution in specified circumstances).
-
-Section 13A: in any proceeding under s. 13 the Court may, if it considers it just, pass a decree of judicial separation instead of a decree of divorce.
-
-Section 13B provides the separate mutual-consent route and must not be confused with s. 13.
-
-Cruelty (s. 13(1)(ia)) and desertion (s. 13(1)(ib)) are the most frequently litigated and examined grounds. Mental cruelty is firmly established in the case law (including Naveen Kohli). Irretrievable breakdown is not an independent statutory ground under s. 13, though courts may consider prolonged hostility and separation when assessing cruelty.`,
-
-  sections: [
-    {
-      id: 'hma-s-13-module-1',
-      title: 'Provenance, Legislative Objective & Doctrinal Foundations',
-      order: 1,
-      content: [
-        'Section 13 was substantially expanded by the Marriage Laws (Amendment) Act, 1976, which inserted cruelty and desertion as independent grounds and refined the mental-disorder provision.',
-        'Legislative objective: provide a structured list of fault and status grounds on which a Hindu marriage may be dissolved, while preserving the Court’s power under s. 13A to grant the lesser relief of judicial separation where justice so requires.',
-        'Doctrinal foundation: divorce under s. 13 is not available at will. The petitioner must prove a statutory ground. The section co-exists with the no-fault mutual-consent route under s. 13B and with the restitution and judicial-separation provisions (ss. 9 and 10).',
-      ],
-    },
-    {
-      id: 'hma-s-13-module-2',
-      title: 'Textual Anatomy, Provisos & Statutory Deconstruction',
-      order: 2,
-      content: [
-        'Clause (i) — adultery: voluntary sexual intercourse with any person other than the spouse after the marriage.',
-        'Clause (ia) — cruelty: physical or mental; the modern test focuses on conduct that causes a reasonable apprehension of harm or injury or that makes cohabitation intolerable.',
-        'Clause (ib) — desertion: continuous period of not less than two years immediately preceding the petition; requires both the factum of separation and the intention to desert (animus deserendi), without the consent of the petitioner.',
-        'Clause (ii) — conversion: ceased to be a Hindu by conversion to another religion.',
-        'Clause (iii) — unsound mind / mental disorder: the disorder must be of such a kind and extent that the petitioner cannot reasonably be expected to live with the respondent; statutory explanations define “mental disorder” and “psychopathic disorder”.',
-        'Clauses (v)–(vii) — venereal disease in a communicable form; renunciation of the world; presumption of death after seven years.',
-        'Sub-section (2) — wife’s special grounds.',
-        'Section 13A — alternate relief of judicial separation.',
-      ],
-    },
-    {
-      id: 'hma-s-13-module-3',
-      title: 'Mandatory Proving Ingredients & Essential Elements',
-      order: 3,
-      content: [
-        '1. A valid marriage (or a marriage that is otherwise within the scope of the HMA).',
-        '2. The respondent has committed the conduct or is in the status described in one of the clauses of s. 13(1) (or s. 13(2) if the petitioner is the wife).',
-        '3. For desertion: continuous separation of not less than two years immediately preceding the petition, with animus deserendi and without the petitioner’s consent.',
-        '4. For cruelty: conduct (physical or mental) that satisfies the legal standard of cruelty.',
-        '5. The petition is presented by the aggrieved spouse (or jointly only under the separate s. 13B route).',
-      ],
-    },
-    {
-      id: 'hma-s-13-module-4',
-      title: 'Evidentiary Burdens under BSA 2023 (ss. 104–106 & s. 63)',
-      order: 4,
-      content: [
-        'The petitioner bears the burden of proving the chosen ground on a preponderance of probabilities.',
-        'Adultery is rarely proved by direct evidence; circumstantial evidence of opportunity and inclination is commonly relied upon.',
-        'Cruelty is proved by a course of conduct; isolated incidents may not suffice. Medical records, prior complaints, messages and witness testimony are typical.',
-        'Desertion requires proof of both the factum of separation and the intention to desert for the full statutory period.',
-        'Electronic records must satisfy BSA s. 63 where treated as primary electronic evidence.',
-      ],
-    },
-    {
-      id: 'hma-s-13-module-5',
-      title: 'Procedural Roadmap, Competent Forum & Limitation Act Checkpoints',
-      order: 5,
-      content: [
-        'Competent court: District Court / Family Court having jurisdiction under the HMA and the Family Courts Act.',
-        'Procedure: petition under s. 13 → evidence on the chosen ground → decree of divorce, or, under s. 13A, decree of judicial separation if the Court considers it just.',
-        'Bars and discretionary refusal: the Court may refuse a decree if the petitioner has been accessory to, connived at, or condoned the matrimonial offence, or if collusion is established (subject to the statutory scheme).',
-        'Appeal lies under the ordinary appellate provisions applicable to Family Court / District Court decrees.',
-        'No general limitation period is prescribed for a s. 13 petition beyond the intrinsic time requirements of particular grounds (e.g. the two-year desertion period).',
-      ],
-    },
-  ],
-
-  provisions: [
-    {
-      actId: 'hma',
-      actName: 'Hindu Marriage Act, 1955',
-      provisionId: 'hma-13',
-      section: 's. 13',
-      title: 'Divorce',
-    },
-  ],
-
+    'Section 13 HMA — fault grounds of divorce (adultery, cruelty, desertion 2 years, conversion, unsound mind, etc.) plus wife’s special grounds under s. 13(2). Alternate relief under s. 13A.',
+  study,
   examples: [
     {
-      id: 'hma-s-13-ill-1',
-      title: 'Illustration 1 — Mental cruelty',
-      illustrationType: 'statutory',
+      id: 's13-ex-cruelty',
+      title: 'Example — mental cruelty',
       description:
-        'Over several years the respondent levels continuous false allegations of infidelity, publicly humiliates the petitioner, and systematically denies marital obligations. The cumulative conduct causes the petitioner a reasonable apprehension of harm. A petition under s. 13(1)(ia) on the ground of cruelty is maintainable.',
+        'Continuous false allegations of infidelity, public humiliation, and refusal of marital obligations over years. The injured spouse may seek divorce under s. 13(1)(ia) on the ground of cruelty.',
     },
     {
-      id: 'hma-s-13-ill-2',
-      title: 'Illustration 2 — Desertion period incomplete',
-      illustrationType: 'fail-scenario',
+      id: 's13-ex-desertion',
+      title: 'Example — desertion period',
       description:
-        'The respondent left the matrimonial home eighteen months before the petition. A petition under s. 13(1)(ib) is premature: the continuous period of desertion must be not less than two years immediately preceding the presentation of the petition.',
+        'Spouse left the matrimonial home 18 months ago. A petition under s. 13(1)(ib) is premature; the continuous period must be not less than two years immediately preceding the petition.',
     },
   ],
-
   hypotheticals: [
     {
-      id: 'hma-s-13-hypo',
-      title: 'Chamber Practice Hypothetical — Cruelty petition and competing restitution petition',
+      id: 's13-hypo',
+      title: 'Classroom problem',
       facts:
-        'W leaves the matrimonial home alleging repeated physical assault and sustained mental harassment. H files a petition for restitution of conjugal rights under s. 9. W files a petition for divorce under s. 13(1)(ia) on the ground of cruelty.',
-      question:
-        'How should the Court treat the two petitions if cruelty is proved?',
-      applicableLaw: 'HMA ss. 9, 13(1)(ia) and 13A.',
+        'Wife leaves the home alleging repeated physical assault. Husband files for restitution under s. 9. Wife files for divorce under s. 13(1)(ia).',
+      question: 'How should the court treat the two petitions?',
+      applicableLaw: 'Sections 9, 13(1)(ia) and 13A of the Hindu Marriage Act, 1955.',
       analysis:
-        '1. If cruelty is proved, W’s withdrawal from H’s society is with reasonable excuse. The restitution petition under s. 9 must fail.\n2. The same finding of cruelty supports a decree of divorce under s. 13(1)(ia), or, if the Court considers it just, a decree of judicial separation under s. 13A.\n3. The two petitions are therefore mutually inconsistent once cruelty is established.',
-      conclusion:
-        'Proven cruelty defeats restitution and supports divorce (or judicial separation under s. 13A). The Court should dismiss the s. 9 petition and proceed on the s. 13 petition.',
+        'If cruelty is proved, the withdrawal is with reasonable excuse and restitution fails. Divorce (or judicial separation under s. 13A) can be granted on the cruelty ground.',
+      conclusion: 'Cruelty defeats restitution and supports divorce. Name the exact clause.',
     },
   ],
-
   distinctions: [
     {
-      id: 'hma-s-13-dist-1',
-      title: 's. 13 (fault / status divorce) vs s. 13B (mutual consent)',
-      left: 's. 13',
-      right: 's. 13B',
+      id: 's13-dist',
+      title: 's. 13 vs s. 13B',
+      left: 'Section 13',
+      right: 'Section 13B',
       rows: [
-        { point: 'Basis', left: 'Fault or status ground must be proved', right: 'Mutual consent; no fault need be proved' },
-        { point: 'Petition', left: 'Usually unilateral (one spouse against the other)', right: 'Joint petition by both parties' },
-        { point: 'Separation period', left: 'Desertion ground requires 2 years continuous desertion', right: 'Living separately for 1 year or more' },
-        { point: 'Consent of respondent', left: 'Not required', right: 'Essential and must continue until the decree' },
+        { point: 'Basis', left: 'Fault or status ground', right: 'Mutual consent' },
+        { point: 'Petition', left: 'By one spouse against the other', right: 'Joint petition' },
+        { point: 'Separation period', left: 'Desertion = 2 years (if that ground is used)', right: 'Living separately for 1 year or more' },
       ],
     },
   ],
-
   misconceptions: [
+    { id: 's13-m1', trap: 'Citing “Section 13” without the Act name or the clause.', correction: 'Write Section 13(1)(ia) of the Hindu Marriage Act, 1955 for cruelty.' },
+    { id: 's13-m2', trap: 'Treating irretrievable breakdown as a statutory ground under s. 13.', correction: 'It is not an independent statutory ground; courts may consider it within cruelty or while exercising other powers.' },
+  ],
+  questionsAndAnswers: [
     {
-      id: 'hma-s-13-trap-1',
-      trap: 'Irretrievable breakdown of marriage is an independent statutory ground under s. 13.',
-      correction:
-        'It is not. Courts may consider prolonged hostility and separation when assessing cruelty under s. 13(1)(ia), but irretrievable breakdown is not itself a listed ground under s. 13.',
+      id: 's13-q-10',
+      marks: 10,
+      question: 'Enumerate the grounds of divorce available to either spouse under Section 13(1) of the Hindu Marriage Act, 1955.',
+      answer:
+        'Introduction. Section 13(1) of the Hindu Marriage Act, 1955 lists the grounds on which either the husband or the wife may petition for divorce.\n\nGrounds. (i) Adultery — voluntary sexual intercourse with any person other than the spouse after the marriage. (ii) Cruelty. (iii) Desertion for a continuous period of not less than two years immediately preceding the petition. (iv) Conversion — ceased to be a Hindu by conversion to another religion. (v) Incurably of unsound mind or mental disorder of such a kind and to such an extent that the petitioner cannot reasonably be expected to live with the respondent. (vi) Venereal disease in a communicable form. (vii) Renunciation of the world by entering a religious order. (viii) Not heard of as being alive for seven years or more (presumption of death).\n\nNote. Older references to virulent leprosy have been affected by later amendments and medical reality; state the current statutory text accurately.\n\nConclusion. List the clauses and give a one-line meaning for cruelty and desertion.',
     },
     {
-      id: 'hma-s-13-trap-2',
-      trap: 'Citing “Section 13” without the Act name or the specific clause is sufficient.',
-      correction:
-        'Always cite the precise clause (e.g. Section 13(1)(ia) of the Hindu Marriage Act, 1955 for cruelty) and name the Act.',
+      id: 's13-q-16',
+      marks: 16,
+      question: 'Discuss the ground of cruelty under Section 13(1)(ia) of the Hindu Marriage Act, 1955. How does it interact with restitution of conjugal rights?',
+      answer:
+        'Introduction. Cruelty was inserted as a ground of divorce by the 1976 amendment and is now the most litigated ground under Section 13(1)(ia) of the Hindu Marriage Act, 1955.\n\nMeaning. Cruelty may be physical or mental. Mental cruelty is conduct that causes a reasonable apprehension in the mind of the petitioner that it is harmful or injurious to live with the other spouse. The standard is that of a reasonable person in the circumstances of the parties.\n\nIllustrations from case law. Persistent false allegations of unchastity, sustained denial of marital obligations, public humiliation, and prolonged mutual hostility leading to irretrievable breakdown have been treated as mental cruelty (e.g. lines of authority including Naveen Kohli).\n\nBurden. The petitioner must prove the conduct. Isolated acts may not suffice; a course of conduct is usually required.\n\nInteraction with s. 9. Restitution of conjugal rights requires that the withdrawal is without reasonable excuse. Proven cruelty is a reasonable excuse. Therefore a finding of cruelty under s. 13(1)(ia) ordinarily defeats a petition for restitution and supports divorce or, under s. 13A, judicial separation.\n\nConclusion. Define cruelty, give physical and mental illustrations, cite the clause as Section 13(1)(ia) of the Hindu Marriage Act, 1955, and explain why it bars restitution.',
     },
   ],
-
   cases: [
     {
       name: 'Naveen Kohli v. Neelu Kohli',
       year: 2006,
       citation: '(2006) 4 SCC 558',
-      court: 'Supreme Court of India',
-      bench: 'B.N. Agrawal, A.K. Mathur & Dalveer Bhandari, JJ.',
-      facts:
-        'Prolonged mutual hostility, separation, and a complete breakdown of the marital relationship over many years.',
-      issue:
-        'Whether such prolonged hostility and separation can justify a decree of divorce on the ground of cruelty under s. 13(1)(ia).',
-      ratioDecidendi:
-        'Prolonged mutual hostility and separation can constitute mental cruelty. Where the marriage has broken down beyond repair, the Court may grant divorce on the ground of cruelty. Irretrievable breakdown, while not an independent statutory ground, is a relevant consideration in assessing cruelty.',
-      holding: 'Divorce granted on the ground of cruelty; recommendation made for legislative recognition of irretrievable breakdown.',
-      relevance:
-        'Leading modern authority on mental cruelty under s. 13(1)(ia) and the relevance of irretrievable breakdown within that ground.',
+      holding: 'Prolonged mutual hostility and separation can justify divorce on the ground of cruelty; irretrievable breakdown is a relevant consideration.',
+      relevance: 'Mental cruelty under s. 13(1)(ia).',
     },
   ],
-
-  questionsAndAnswers: [
-    {
-      id: 'hma-s-13-brief',
-      draftingCategory: 'brief',
-      question:
-        'Enumerate the principal grounds of divorce available to either spouse under Section 13(1) of the Hindu Marriage Act, 1955.',
-      answer: `I. ISSUE
-What grounds are available to either spouse for divorce under s. 13(1)?
-
-II. GOVERNING RULE
-Section 13(1) lists: adultery; cruelty; desertion for two years; conversion; incurable unsoundness of mind / mental disorder; venereal disease in a communicable form; renunciation of the world; and presumption of death after seven years.
-
-III. APPLICATION
-State each ground with its statutory clause. Emphasise that cruelty may be physical or mental, and that desertion requires a continuous two-year period immediately preceding the petition.
-
-IV. CONCLUSION
-Divorce under s. 13 is fault- or status-based. Mutual consent is a separate route under s. 13B. The Court may grant judicial separation under s. 13A instead of divorce.`,
-      explanation: 'IRAC note listing the principal grounds under s. 13(1).',
-    },
-    {
-      id: 'hma-s-13-submissions',
-      draftingCategory: 'submissions',
-      question:
-        'Draft Written Submissions on a petition for divorce under HMA s. 13(1)(ia) on the ground of mental cruelty, addressing the interaction with a competing restitution petition under s. 9.',
-      answer: `I. STATEMENT OF FACTS
-[Insert the course of conduct alleged as mental cruelty and the competing s. 9 petition.]
-
-II. STATUTORY SCHEME
-Section 13(1)(ia) permits divorce where the respondent has treated the petitioner with cruelty. Section 9 requires that withdrawal from society be without reasonable excuse.
-
-III. APPLICATION
-The cumulative conduct of the respondent constitutes mental cruelty. The petitioner’s withdrawal is therefore with reasonable excuse. The restitution petition must fail. The same finding supports a decree of divorce under s. 13(1)(ia), or judicial separation under s. 13A if the Court considers it just.
-
-IV. AUTHORITY
-Naveen Kohli confirms that prolonged mutual hostility and conduct making cohabitation intolerable amount to mental cruelty.
-
-V. PRAYER
-[Decree of divorce under s. 13(1)(ia); dismissal of the competing s. 9 petition.]`,
-      explanation: 'Senior Counsel submissions on mental cruelty and the interaction with restitution.',
-    },
-  ],
-
   bareActPointers: [
-    'HMA s. 13 (entire, including sub-s. (2) and the explanations to clause (iii))',
-    'HMA s. 13A (alternate relief of judicial separation)',
-    'HMA s. 13B (mutual consent — contrast)',
-    'HMA s. 9 (restitution — interaction with cruelty)',
+    'Section 13 Hindu Marriage Act, 1955',
+    'Section 13A Hindu Marriage Act, 1955',
+    'Section 13B Hindu Marriage Act, 1955',
+    'Section 9 Hindu Marriage Act, 1955',
   ],
-
   examTips: [
-    'Always cite the precise clause (e.g. s. 13(1)(ia) for cruelty, s. 13(1)(ib) for desertion).',
-    'Desertion requires two years continuous desertion immediately preceding the petition.',
-    'Distinguish s. 13 clearly from s. 13B.',
+    'Always cite the clause (e.g. s. 13(1)(ia) for cruelty).',
+    'Desertion requires two years immediately preceding the petition.',
+    'Distinguish s. 13 from s. 13B.',
     'Mention s. 13A alternate relief.',
   ],
-
   revisionPoints: [
     's. 13(1) = fault / status grounds for either spouse.',
-    'Cruelty = s. 13(1)(ia); desertion = 2 years (s. 13(1)(ib)).',
+    'Cruelty = s. 13(1)(ia); desertion = 2 years.',
     's. 13(2) = wife’s special grounds.',
     's. 13A = judicial separation instead of divorce.',
-    'Irretrievable breakdown is not an independent statutory ground under s. 13.',
   ],
-
-  relatedTopics: ['hma-s-13b', 'hma-s-9', 'hma-s-10', 'hma-s-11'],
-}
-
-export default content
+} satisfies TopicContent

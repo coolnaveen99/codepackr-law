@@ -1,52 +1,30 @@
 name: Law CI — Content & Build Validation
 
 on:
-  push:
-    branches: [ main ]
-    paths-ignore:
-      - '**.md'
-      - 'docs/**'
-      - '.github/copilot-instructions.md'
-      - 'LICENSE'
-      - '.gitignore'
   pull_request:
     branches: [ main ]
     paths-ignore:
       - '**.md'
       - 'docs/**'
-      - '.github/copilot-instructions.md'
+      - '.github/**'
       - 'LICENSE'
       - '.gitignore'
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
 
 jobs:
   validate-law:
     name: Validate Law Application
     runs-on: ubuntu-latest
-    timeout-minutes: 10
     steps:
       - name: Checkout Law
         uses: actions/checkout@v4
-
       - name: Setup Node.js 20
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-
       - name: Install dependencies
-        run: |
-          if [ -f package-lock.json ]; then
-            npm ci
-          else
-            npm install
-          fi
-
+        run: npm ci
       - name: TypeScript validation
         run: npm run lint
-
       - name: Production build
         run: npm run build

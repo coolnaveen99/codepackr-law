@@ -8,8 +8,8 @@ const content: TopicContent = {
     { name: 'Jolly George Varghese v. Bank of Cochin', year: 1980, citation: 'AIR 1980 SC 470', holding: 'Civil imprisonment is not for honest inability to pay.' },
   ],
   questionsAndAnswers: [
-    { id: 'ex-10', draftingCategory: 'brief', question: 'Explain s. 47 CPC.', answer: 'Questions between parties relating to execution, discharge or satisfaction are decided by the executing court. No separate suit. Harnandrai Badridas. Cite s. 47 and Order XXI CPC, 1908.' },
-    { id: 'ex-16', draftingCategory: 'submissions', question: 'Decree-holder starts a new suit alleging the judgment-debtor has already paid a third person. Advise.', answer: 'Issue. Fresh suit or execution?\nRule. s. 47.\nApplication. Payment and satisfaction are execution questions. Return the plaintiff to the executing court.\nConclusion. s. 47 CPC, 1908.' },
+    { id: 'ex-10', marks: 10, question: 'Explain s. 47 CPC.', answer: 'Questions between parties relating to execution, discharge or satisfaction are decided by the executing court. No separate suit. Harnandrai Badridas. Cite s. 47 and Order XXI CPC, 1908.' },
+    { id: 'ex-16', marks: 16, question: 'Decree-holder starts a new suit alleging the judgment-debtor has already paid a third person. Advise.', answer: 'Issue. Fresh suit or execution?\nRule. s. 47.\nApplication. Payment and satisfaction are execution questions. Return the plaintiff to the executing court.\nConclusion. s. 47 CPC, 1908.' },
   ],
   examTips: ['Name the mode under s. 51. Then open Order XXI.'],
 }

@@ -66,7 +66,7 @@ export default {
   questionsAndAnswers: [
     {
       id: 'src-q10',
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'Explain the sources of Hindu law and the main classical schools.',
       answer:
         'Introduction. Traditional sources: Shruti, Smriti, commentaries, custom. Modern: legislation and precedent. Schools: Mitakshara and Dayabhaga — difference on coparcenary. Codification by Hindu Code Acts. Conclusion.',
@@ -74,7 +74,7 @@ export default {
     },
     {
       id: 'src-q16',
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'Discuss the application of personal laws in India for Hindus and Muslims and the role of modern statutes.',
       answer:
         'Introduction. Map of personal laws. Hindu: sources → schools → Code Acts. Muslim: classical sources → Shariat Act and special statutes. SMA as secular alternative. Method: identify community → statute → residual classical rule. Conclusion.',

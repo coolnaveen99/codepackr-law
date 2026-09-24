@@ -84,7 +84,7 @@ Do not treat every interesting fact as relevant. Name the section.`,
 
   examFrameworks: [
     {
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'Explain relevancy of facts under the Bharatiya Sakshya Adhiniyam, 2023.',
       steps: [
         'Define fact in issue vs relevant fact; cite s. 3.',
@@ -96,7 +96,7 @@ Do not treat every interesting fact as relevant. Name the section.`,
       ],
     },
     {
-      draftingCategory: 'submissions',
+      marks: 16,
       question: '“Evidence may be given of facts in issue and relevant facts, and of no others.” Discuss the scheme of Chapter II BSA with illustrations.',
       steps: [
         's. 3 as gateway.',

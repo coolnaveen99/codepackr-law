@@ -81,14 +81,14 @@ Do not write that “every missed BNSS clock acquits”. Most clocks are directo
 
   cases: [
     { name: 'Hussainara Khatoon v. State of Bihar', year: 1979, citation: '(1980) 1 SCC 81', holding: 'Speedy trial is a part of personal liberty under Article 21. Undertrials cannot be forgotten in jail.', relevance: 'Foundation. Always open with this.' },
-    { name: 'A.R. Antulay v. R.S. Nayak', year: 1992, citation: '(1992) 1 SCC 225', holding: 'Guidelines for delay; no rigid outer limit that automatically terminates every delayed prosecution.', relevance: 'Leading constitutional authority on speedy trial remedies.' },
+    { name: 'A.R. Antulay v. R.S. Nayak', year: 1992, citation: '(1992) 1 SCC 225', holding: 'Guidelines for delay; no rigid outer limit that automatically terminates every delayed prosecution.', relevance: 'The 16-mark case on remedy.' },
   ],
 
   bareActPointers: ['Art 21', 'BNSS s. 346', 's. 392', 's. 479', 's. 415(4)'],
 
   examFrameworks: [
     {
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'Explain the doctrine of speedy trial.',
       steps: [
         'Article 21 / Hussainara.',
@@ -99,7 +99,7 @@ Do not write that “every missed BNSS clock acquits”. Most clocks are directo
       ],
     },
     {
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'Has the BNSS given teeth to the speedy-trial doctrine? Discuss with cases.',
       steps: [
         'Hussainara and Antulay.',

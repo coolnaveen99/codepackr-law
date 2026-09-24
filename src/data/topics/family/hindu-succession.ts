@@ -95,7 +95,7 @@ export default {
   questionsAndAnswers: [
     {
       id: 'hsa-q-10',
-      draftingCategory: 'brief',
+      marks: 10,
       question:
         'Explain the rights of a daughter as a coparcener under Section 6 of the Hindu Succession Act, 1956 after the 2005 amendment.',
       answer:
@@ -104,7 +104,7 @@ export default {
     },
     {
       id: 'hsa-q-16',
-      draftingCategory: 'submissions',
+      marks: 16,
       question:
         'Discuss intestate succession to the property of a male Hindu under the Hindu Succession Act, 1956, with special reference to Sections 6 and 8.',
       answer:

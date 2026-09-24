@@ -42,10 +42,10 @@ const CONSTITUTION_INTRO: SubjectIntro = {
   act: 'Constitution of India',
   inForce: '26 January 1950 · current through the 106th Amendment (2023)',
   counts: '500 articles · official 2024 Legislative Department text',
-  body: 'There is no Cytrain page for the Constitution. Article text on every article page is taken from the official Legislative Department English edition, 2024 (as on 1 May 2024, through the 106th Amendment — women’s reservation, Arts 330A / 332A / 334A). The 131st Amendment Bill, 2026 was negatived; do not treat it as law. Open any article for the full study page: official text, meaning, statutory illustrations, extracted case law ratios, and chamber written submissions.',
-  howTo: 'Type an article number (21, 368, 330A). Click it. Core doctrines (basic structure, writs) sit above the complete list.',
+  body: 'There is no Cytrain page for the Constitution. Article text on every article page is taken from the official Legislative Department English edition, 2024 (as on 1 May 2024, through the 106th Amendment — women’s reservation, Arts 330A / 332A / 334A). The 131st Amendment Bill, 2026 was negatived; do not treat it as law. Open any article for the full study page: official text, meaning, examples, 10-mark and 16-mark answers.',
+  howTo: 'Type an article number (21, 368, 330A). Click it. Exam essays (basic structure, writs) sit above the complete list.',
   highlights: [
-    { title: 'Part III is the heart', body: 'Fundamental Rights (Arts 12–35) form the constitutional bedrock. Article 32 is the heart and soul.' },
+    { title: 'Part III is the heart', body: 'Fundamental Rights (Arts 12–35) carry the most AIBE and university marks. Article 32 is the heart and soul.' },
     { title: '106th Amendment', body: 'Women’s reservation in the Lok Sabha and State Assemblies. In force as a provision; the seats themselves await delimitation after the first census following 2023.' },
   ],
   disclaimer: 'Educational notes from the official 2024 text. Always cross-check the latest Bare Act / India Code.',
@@ -92,6 +92,22 @@ export function getSubjectIntro(slug: string): SubjectIntro | null {
       disclaimer: BSA_DISCLAIMER,
       chapterCount: BSA_CHAPTERS.length,
       sectionCount: BSA_SECTIONS_COUNT,
+    }
+  }
+  if (slug === 'cpc') {
+    return {
+      act: 'Code of Civil Procedure, 1908 (Act No. 5 of 1908)',
+      inForce: '1 January 1909 · amended through 1999 and 2002 Acts',
+      counts: '158 sections · 51 Orders · Substantive Code & Procedural Rules',
+      body: 'The Code of Civil Procedure, 1908 consolidates the procedural law governing Indian civil courts. The Code is structured into 158 substantive sections (which confer jurisdiction and right of appeal) and 51 Orders with Rules (the First Schedule, detailing the procedural machinery). High-yield topics include Section 9 (civil jurisdiction), Section 10 (stay of suit), Section 11 (res judicata), Pleadings (Orders VI–VIII), Temporary Injunctions (Order 39), and Execution of Decrees (Order 21).',
+      howTo: 'Select any study topic below for structured notes, principles, leading case law, and 10-mark and 16-mark university/AIBE answers.',
+      highlights: [
+        { title: 'Sections vs Orders', body: 'Sections establish jurisdiction and substantive rights; Orders and Rules govern procedure and enforcement machinery.' },
+        { title: 'S. 9, 10 & 11 CPC', body: 'The foundation of civil suits: plenary jurisdiction unless barred (s. 9), stay of pending parallel suit (s. 10), and finality of decided issues (s. 11).' },
+      ],
+      disclaimer: 'Educational notes for AIBE and State Judiciary exams. Statutory text is for study, not legal advice.',
+      chapterCount: 51,
+      sectionCount: 158,
     }
   }
   return null

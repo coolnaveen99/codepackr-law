@@ -66,7 +66,7 @@ export default {
   questionsAndAnswers: [
     {
       id: 'wakf-q10',
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'Define wakf and explain its essentials under Muslim law.',
       answer:
         'Introduction. Definition — permanent dedication for religious, pious or charitable objects. Essentials. Mutawalli as manager. Conclusion.',
@@ -74,11 +74,11 @@ export default {
     },
     {
       id: 'wakf-q16',
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'Discuss creation and administration of wakf and the role of the mutawalli and Waqf Boards.',
       answer:
         'Introduction. Creation and essentials. Mutawalli — appointment, duties, limits. Statutory Board control. Brief Hindu endowment contrast. Conclusion.',
-      explanation: 'Statutory administration and supervisory control.',
+      explanation: 'Administration + statutory control for 16 marks.',
     },
   ],
   bareActPointers: ['Waqf Act (applicable framework)', 'Muslim personal law — wakf and mutawalli'],

@@ -11,7 +11,7 @@ Map
 s. 351 criminal intimidation (old 503/506).
 s. 352 intentional insult to provoke breach of the peace.
 s. 353 public mischief — statements, rumours, false information likely to cause alarm, riot, or to induce a person to commit an offence. Number trap: old IPC 353 was assault to deter a public servant (now elsewhere — confirm the current BNS section from the mapper, do not guess).
-s. 356 defamation (old 499/500). The classical exceptions still matter (truth for public good, fair comment, etc.) — quote them from the Bare Act in written submissions.
+s. 356 defamation (old 499/500). The classical exceptions still matter (truth for public good, fair comment, etc.) — quote them from the Bare Act in a 16-mark.
 Community service appears for specified petty insults / drunken misconduct where the section so provides.
 
 Sedition
@@ -81,7 +81,7 @@ Open the section-wise lessons for exceptions to defamation.`,
 
   examFrameworks: [
     {
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'Write a note on public mischief and defamation under the BNS.',
       steps: [
         's. 353 public mischief; number trap.',
@@ -91,7 +91,7 @@ Open the section-wise lessons for exceptions to defamation.`,
       ],
     },
     {
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'Discuss Chapter XIX BNS. Has sedition survived?',
       steps: [
         'Map 351–357.',

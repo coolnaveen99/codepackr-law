@@ -6,7 +6,7 @@
 export const SITE_URL = 'https://law.codepackr.com'
 export const SITE_NAME = 'Codepackr Law'
 export const SITE_TAGLINE =
-  'A free digital Indian law library and practice reference with statutes, case law, legal concepts, drafting formats, study notes and exam preparation tools.'
+  'Free client-side AIBE & Judiciary MCQ practice, study notes, flashcards and more. 100% private.'
 
 export interface PageMeta {
   title: string

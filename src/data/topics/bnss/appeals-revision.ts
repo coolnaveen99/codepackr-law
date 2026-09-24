@@ -18,7 +18,7 @@ Otherwise, Magistrate first/second class → Court of Session.
 Specified sexual-offence conviction appeals are to be disposed of within six months of filing (s. 415(4) teaching).
 
 No appeal on a guilty plea except as to the extent or legality of sentence (s. 416 teaching).
-State appeal against inadequate sentence is s. 418 (old 377). State/complainant appeal against acquittal is the old 378 family — confirm the current BNSS number before filing or drafting submissions (often taught near s. 419).
+State appeal against inadequate sentence is s. 418 (old 377). State/complainant appeal against acquittal is the old 378 family — confirm the current BNSS number before a 16-mark (often taught near s. 419).
 
 Revision — ss. 438–445
 High Court or Sessions Judge may call for the record to satisfy itself as to correctness, legality or propriety of any finding, sentence or order, and as to regularity of proceedings. No revision against an interlocutory order (the old 397(2) bar continues — confirm). Concurrent revision is not to be entertained. Revision cannot convert a finding of acquittal into conviction (the old 401(3) idea — confirm).
@@ -94,7 +94,7 @@ needs-review of the exact BNSS section for State appeal against acquittal if you
 
   examFrameworks: [
     {
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'Explain the victim’s right of appeal under the BNSS.',
       steps: [
         's. 413 bar and proviso.',
@@ -104,7 +104,7 @@ needs-review of the exact BNSS section for State appeal against acquittal if you
       ],
     },
     {
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'Distinguish appeal and revision under the BNSS. Add a note on inherent power.',
       steps: [
         's. 413 principle.',

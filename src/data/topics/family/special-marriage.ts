@@ -81,7 +81,7 @@ export default {
   questionsAndAnswers: [
     {
       id: 'sma-q-10',
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'Explain the conditions and procedure for solemnisation of marriage under the Special Marriage Act, 1954.',
       answer:
         'Introduction. The SMA provides a secular civil marriage for any two persons.\n\nConditions — s. 4. No living spouse; mental capacity; ages 21/18; not within prohibited degrees subject to permitted custom.\n\nProcedure. Notice to Marriage Officer; publication; thirty days for objections; solemnisation before officer and three witnesses; certificate.\n\nIllustration. Inter-religious couple completes notice, faces no valid objection, solemnises before the officer — valid SMA marriage.\n\nConclusion. Cite s. 4 and the notice–solemnisation scheme of the Special Marriage Act, 1954.',
@@ -89,7 +89,7 @@ export default {
     },
     {
       id: 'sma-q-16',
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'Compare marriage under the Special Marriage Act, 1954 with the Hindu Marriage Act, 1955. When should parties prefer the SMA?',
       answer:
         'Introduction. HMA is personal-law for Hindus (and related groups). SMA is secular civil marriage for any two persons.\n\nApplicability and form. HMA s. 2 vs SMA open to all. HMA s. 7 customary rites vs SMA notice and Marriage Officer.\n\nConditions and reliefs. Both enforce monogamy and capacity, but texts differ. Each Act has its own nullity and divorce chapters.\n\nWhen to prefer SMA. Inter-religious unions; civil ceremony and civil record; avoidance of conversion solely to attract a personal law.\n\nConclusion. Choose the statute by applicability; cite SMA 1954 or HMA 1955 expressly.',

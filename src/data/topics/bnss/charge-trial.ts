@@ -91,7 +91,7 @@ The previous file mixed cognizance, search, and joinder without a spine. This pa
 
   examFrameworks: [
     {
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'Explain cognizance under the BNSS.',
       steps: [
         's. 210 three routes, including electronic police report.',
@@ -101,7 +101,7 @@ The previous file mixed cognizance, search, and joinder without a spine. This pa
       ],
     },
     {
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'Discuss framing of charge and joinder under the BNSS.',
       steps: [
         'Cognizance in brief.',

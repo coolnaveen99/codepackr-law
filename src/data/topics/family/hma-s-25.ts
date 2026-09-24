@@ -1,223 +1,77 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
-const content: TopicContent = {
+const study = `Topic at a glance
+Section 25 of the Hindu Marriage Act, 1955 provides for permanent alimony and maintenance. The court may, at the time of passing any decree or at any time subsequent thereto, order one party to pay the other a gross sum or monthly/periodical sums for maintenance and support.
+
+Meaning
+Timing: at or after the decree. Form: gross sum or periodical payments, with or without security. Factors: income and property of the parties, conduct, and other circumstances. The court may vary or rescind the order if circumstances change, including remarriage or conduct as the section provides.
+
+Related law
+Section 24 is only interim. s. 125 BNSS/CrPC and HAMA may also apply; avoid double recovery.
+
+Current-law close
+Cite Section 25 of the Hindu Marriage Act, 1955. Distinguish clearly from s. 24. Mention variation and remarriage/conduct conditions.`
+
+export default {
   glance:
-    'Section 25 of the Hindu Marriage Act, 1955 provides for permanent alimony and maintenance. At the time of passing any decree or at any time subsequent thereto, the Court may order either spouse to pay the other a gross sum or a monthly or periodical sum for maintenance and support, for a term not exceeding the life of the applicant, having regard to the respondent’s income and property, the applicant’s property, the conduct of the parties and other circumstances. The payment may be secured by a charge on the respondent’s immovable property. The order may be varied, modified or rescinded on change of circumstances, and may also be varied or rescinded if the party in whose favour it was made has remarried or (in the case of the wife) has not remained chaste or (in the case of the husband) has had sexual intercourse outside wedlock.',
-
-  study: `Section 25 is the permanent-maintenance provision of the Hindu Marriage Act, 1955.
-
-Sub-section (1): Any court exercising jurisdiction under this Act may, at the time of passing any decree or at any time subsequent thereto, on application made to it for the purpose by either the wife or the husband, order that the respondent shall pay to the applicant for her or his maintenance and support such gross sum or such monthly or periodical sum for a term not exceeding the life of the applicant as, having regard to the respondent’s own income and other property, the income and other property of the applicant, the conduct of the parties and other circumstances of the case, it may seem to the Court to be just, and any such payment may be secured, if necessary, by a charge on the immovable property of the respondent.
-
-Sub-section (2): If the Court is satisfied that there is a change in the circumstances of either party at any time after it has made an order under sub-section (1), it may, at the instance of either party, vary, modify or rescind any such order in such manner as the Court may deem just.
-
-Sub-section (3): If the Court is satisfied that the party in whose favour an order has been made under this section has remarried or, if such party is the wife, that she has not remained chaste, or if such party is the husband, that he has had sexual intercourse with any woman outside wedlock, it may at the instance of the other party vary, modify or rescind any such order in such manner as the Court may deem just.
-
-Key features:
-• Available at the time of any decree under the HMA or at any time subsequent thereto.
-• Either spouse may apply (gender-neutral).
-• Form: gross sum or monthly/periodical sum; may be secured by a charge on immovable property.
-• Duration: not exceeding the life of the applicant (subject to variation or rescission).
-• Factors: incomes and property of both parties, conduct, and other circumstances.
-• Variation: on change of circumstances (sub-s. (2)) or on remarriage / unchastity / extramarital intercourse as specified in sub-s. (3).
-
-Section 25 is distinct from interim maintenance under s. 24 and from maintenance under s. 125 CrPC / s. 144 BNSS and under the Hindu Adoptions and Maintenance Act. Courts coordinate overlapping orders to avoid double recovery.`,
-
-  sections: [
-    {
-      id: 'hma-s-25-module-1',
-      title: 'Provenance, Legislative Objective & Doctrinal Foundations',
-      order: 1,
-      content: [
-        'Section 25 provides the permanent financial provision that may be made when a matrimonial decree under the HMA is passed or at any time thereafter.',
-        'Legislative objective: ensure that a spouse who is left without adequate means after a decree of divorce, nullity, judicial separation or restitution is not reduced to destitution, while preserving the Court’s power to adjust the order if circumstances change or if the recipient remarries or engages in specified post-decree conduct.',
-        'Doctrinal foundation: permanent alimony is a discretionary, needs-based and conduct-sensitive remedy. It is not an automatic incident of every decree. The Court balances the means of the parties, their conduct, and the justice of the case.',
-      ],
-    },
-    {
-      id: 'hma-s-25-module-2',
-      title: 'Textual Anatomy, Provisos & Statutory Deconstruction',
-      order: 2,
-      content: [
-        'Sub-section (1) — power to order permanent alimony: at the time of any decree or subsequently; application by either spouse; gross or periodical sum for a term not exceeding the life of the applicant; factors include incomes, property, conduct and other circumstances; security by charge on immovable property permitted.',
-        'Sub-section (2) — variation on change of circumstances: either party may apply; the Court may vary, modify or rescind as it deems just.',
-        'Sub-section (3) — variation or rescission on remarriage or specified conduct: remarriage of the recipient; unchastity of the wife; sexual intercourse by the husband with any woman outside wedlock; the other party may apply for variation, modification or rescission.',
-      ],
-    },
-    {
-      id: 'hma-s-25-module-3',
-      title: 'Mandatory Proving Ingredients & Essential Elements',
-      order: 3,
-      content: [
-        '1. A decree under the HMA has been passed, or an application is made at the time of passing any such decree, or subsequently.',
-        '2. Either the wife or the husband applies for permanent alimony / maintenance.',
-        '3. The Court considers the respondent’s income and property, the applicant’s income and property, the conduct of the parties, and other circumstances.',
-        '4. The Court fixes a gross or periodical sum that appears just, for a term not exceeding the life of the applicant, and may secure it by a charge on immovable property.',
-        '5. For variation under sub-s. (2): a change in the circumstances of either party is shown.',
-        '6. For variation under sub-s. (3): remarriage of the recipient, or the specified post-decree conduct, is established.',
-      ],
-    },
-    {
-      id: 'hma-s-25-module-4',
-      title: 'Evidentiary Burdens under BSA 2023 (ss. 104–106 & s. 63)',
-      order: 4,
-      content: [
-        'The applicant must place material on income, property, needs, and relevant conduct. Income affidavits and documentary evidence of assets and liabilities are standard.',
-        'The respondent may place counter-material on his or her means, the applicant’s resources, and conduct.',
-        'For variation under sub-s. (3), the party seeking rescission or modification must prove remarriage or the specified conduct.',
-        'Electronic records (bank statements, tax returns, property documents) must satisfy BSA s. 63 where treated as primary electronic evidence.',
-      ],
-    },
-    {
-      id: 'hma-s-25-module-5',
-      title: 'Procedural Roadmap, Competent Forum & Limitation Act Checkpoints',
-      order: 5,
-      content: [
-        'Competent court: any court exercising jurisdiction under the HMA that passed the decree, or the court to which the application is properly made at or after the decree.',
-        'Procedure: application under s. 25 at the time of the decree or subsequently; evidence on means, needs and conduct; order for gross or periodical sum, with or without security.',
-        'Variation applications under sub-ss. (2) and (3) may be made at any time after the original order.',
-        'Appeal lies under the ordinary appellate provisions applicable to Family Court / District Court decrees and orders.',
-        'No fixed limitation period for an original s. 25 application beyond the life of the parties and the justice of the case; variation is available whenever the statutory conditions are met.',
-      ],
-    },
-  ],
-
-  provisions: [
-    {
-      actId: 'hma',
-      actName: 'Hindu Marriage Act, 1955',
-      provisionId: 'hma-25',
-      section: 's. 25',
-      title: 'Permanent alimony and maintenance',
-    },
-  ],
-
+    'Section 25 HMA — permanent alimony and maintenance at or after decree; gross or periodical; variation possible; conduct and remarriage conditions apply.',
+  study,
   examples: [
     {
-      id: 'hma-s-25-ill-1',
-      title: 'Illustration 1 — Permanent alimony on divorce',
-      illustrationType: 'statutory',
-      description:
-        'The Court grants a decree of divorce. W has limited independent income; H has substantial income and property. On W’s application under s. 25 the Court orders H to pay a monthly sum for W’s maintenance and support, having regard to the incomes, property, conduct and other circumstances, and secures the payment by a charge on H’s immovable property.',
-    },
-    {
-      id: 'hma-s-25-ill-2',
-      title: 'Illustration 2 — Rescission after remarriage',
-      illustrationType: 'fail-scenario',
-      description:
-        'After a decree of divorce with a s. 25 monthly order in favour of W, W remarries. H applies under s. 25(3). The Court, satisfied that W has remarried, rescinds the order of permanent alimony.',
+      id: 's25-ex-1',
+      title: 'Example — permanent alimony on divorce',
+      description: 'Court grants divorce and orders monthly payment under s. 25 after considering both parties’ incomes and standard of living.',
     },
   ],
-
   hypotheticals: [
     {
-      id: 'hma-s-25-hypo',
-      title: 'Chamber Practice Hypothetical — Variation on change of circumstances',
-      facts:
-        'A decree of divorce was passed in 2022 with a s. 25 order directing H to pay W ₹30,000 per month. In 2025 H loses his employment and his only remaining income is a modest pension. He applies under s. 25(2) to reduce the monthly sum. W opposes, stating that her needs have not diminished.',
-      question:
-        'Can the Court vary the order, and on what basis?',
-      applicableLaw: 'HMA s. 25(1) and (2).',
-      analysis:
-        '1. Sub-section (2) expressly empowers the Court to vary, modify or rescind an order under sub-s. (1) if it is satisfied that there is a change in the circumstances of either party.\n2. Loss of employment and reduction to a modest pension is a material change in H’s circumstances.\n3. The Court must still have regard to W’s needs and the justice of the case, but it has the power to reduce the quantum to a sum that appears just in the altered circumstances.',
-      conclusion:
-        'The Court may vary the order under s. 25(2). The new quantum will be fixed having regard to the changed circumstances of H, the needs of W, and the overall justice of the case.',
+      id: 's25-hypo',
+      title: 'Classroom problem',
+      facts: 'After divorce with s. 25 monthly maintenance in favour of W, W remarries. H applies to rescind.',
+      question: 'Effect of remarriage?',
+      applicableLaw: 'Section 25 of the Hindu Marriage Act, 1955.',
+      analysis: 'Section 25 permits variation or rescission where the party in whose favour the order was made has remarried, as the section provides.',
+      conclusion: 'Court may rescind or modify the s. 25 order after remarriage.',
     },
   ],
-
   distinctions: [
     {
-      id: 'hma-s-25-dist-1',
-      title: 's. 25 (permanent) vs s. 24 (interim)',
-      left: 's. 25',
-      right: 's. 24',
+      id: 's25-dist',
+      title: 's. 24 vs s. 25 HMA',
+      left: 's. 24 Interim',
+      right: 's. 25 Permanent',
       rows: [
-        { point: 'Stage', left: 'At the time of any decree or at any time subsequent thereto', right: 'During the proceeding (pendente lite)' },
-        { point: 'Form', left: 'Gross sum or monthly/periodical sum; may be secured by charge', right: 'Monthly sum + expenses of the proceeding' },
-        { point: 'Duration', left: 'Term not exceeding the life of the applicant (subject to variation)', right: 'During the proceeding only' },
-        { point: 'Variation', left: 'On change of circumstances (sub-s. (2)) or remarriage / specified conduct (sub-s. (3))', right: 'Ceases on disposal of the main proceeding (subject to any s. 25 order)' },
+        { point: 'When', left: 'During proceedings', right: 'At or after decree' },
+        { point: 'Form', left: 'Monthly + expenses', right: 'Gross or periodical; may be secured' },
       ],
     },
   ],
-
   misconceptions: [
     {
-      id: 'hma-s-25-trap-1',
+      id: 's25-m1',
       trap: 'Permanent alimony under s. 25 can only be a one-time lump sum.',
-      correction:
-        'Section 25 permits either a gross sum or a monthly or periodical sum, and the payment may be secured by a charge on immovable property.',
-    },
-    {
-      id: 'hma-s-25-trap-2',
-      trap: 'Once a s. 25 order is made it cannot be changed.',
-      correction:
-        'Sub-section (2) permits variation, modification or rescission on a change of circumstances. Sub-section (3) permits the same on remarriage or the specified post-decree conduct.',
+      correction: 'Section 25 allows a gross sum or monthly/periodical payments, with or without security.',
     },
   ],
-
-  cases: [],
-
   questionsAndAnswers: [
     {
-      id: 'hma-s-25-brief',
-      draftingCategory: 'brief',
-      question:
-        'Explain permanent alimony and maintenance under Section 25 of the Hindu Marriage Act, 1955.',
-      answer: `I. ISSUE
-When and on what basis may a Court order permanent alimony under the HMA, and when may the order be varied?
-
-II. GOVERNING RULE
-Section 25(1) permits the Court, at the time of any decree or subsequently, to order either spouse to pay the other a gross or periodical sum for maintenance and support, having regard to incomes, property, conduct and other circumstances. Sub-section (2) permits variation on change of circumstances. Sub-section (3) permits variation or rescission on remarriage or the specified post-decree conduct.
-
-III. APPLICATION
-Identify the decree → application by either spouse → assess means, needs and conduct → fix just quantum → note the power to vary later.
-
-IV. CONCLUSION
-Section 25 is the permanent counterpart of the interim provision in s. 24. It is discretionary, needs-based and subject to later adjustment.`,
-      explanation: 'IRAC note on permanent alimony under s. 25.',
+      id: 's25-q10',
+      marks: 10,
+      question: 'Explain permanent alimony under Section 25 of the Hindu Marriage Act, 1955.',
+      answer:
+        'Introduction. Timing and forms of order. Factors for quantum. Variation and conduct/remarriage. Contrast s. 24. Conclusion with citation.',
+      explanation: 'Mention variation and remarriage.',
     },
     {
-      id: 'hma-s-25-submissions',
-      draftingCategory: 'submissions',
-      question:
-        'Draft Written Submissions on an application under HMA s. 25 for permanent alimony at the time of a divorce decree, and on a subsequent application for variation under s. 25(2).',
-      answer: `I. STATEMENT OF FACTS
-[Insert the decree, the relative incomes and property, and (for variation) the change of circumstances.]
-
-II. STATUTORY SCHEME
-Section 25(1) empowers the Court to order a gross or periodical sum for maintenance and support at the time of any decree or subsequently. Section 25(2) permits variation, modification or rescission on a change of circumstances.
-
-III. APPLICATION (ORIGINAL ORDER)
-The applicant has limited means; the respondent has substantial income and property. Conduct and other circumstances support a just monthly sum, which may be secured by a charge on immovable property.
-
-IV. APPLICATION (VARIATION)
-A material change in the circumstances of the paying party (or of the recipient) has occurred. The Court should vary the quantum to a sum that remains just in the altered circumstances.
-
-V. PRAYER
-[Order for permanent alimony under s. 25(1); or variation under s. 25(2) as the case may be.]`,
-      explanation: 'Senior Counsel submissions on permanent alimony and variation.',
+      id: 's25-q16',
+      marks: 16,
+      question: 'Discuss the scheme of maintenance under the Hindu Marriage Act, 1955.',
+      answer:
+        'Introduction. s. 24 interim. s. 25 permanent. Factors and variation. Interface with s. 125 BNSS and HAMA. Conclusion with HMA citations.',
+      explanation: 'Full scheme s. 24 + s. 25 scores highest.',
     },
   ],
-
-  bareActPointers: [
-    'HMA s. 25 (entire — sub-ss. (1), (2) and (3))',
-    'HMA s. 24 (interim maintenance — contrast)',
-    'CrPC s. 125 / BNSS s. 144 (parallel secular maintenance)',
-  ],
-
-  examTips: [
-    'Always separate s. 24 (interim / pendente lite) from s. 25 (permanent).',
-    'State the three sub-sections: original order, variation on change of circumstances, and variation on remarriage / specified conduct.',
-    'Mention that either spouse may apply and that the sum may be secured by a charge.',
-  ],
-
-  revisionPoints: [
-    's. 25 = permanent alimony at or after any HMA decree.',
-    'Gross or periodical sum; may be secured by charge on immovable property.',
-    'Variation on change of circumstances (sub-s. (2)).',
-    'Variation or rescission on remarriage / unchastity / extramarital intercourse (sub-s. (3)).',
-  ],
-
-  relatedTopics: ['hma-s-24', 'hma-s-13', 'hma-s-9'],
-}
-
-export default content
+  bareActPointers: ['Hindu Marriage Act, 1955 — s. 25', 'Hindu Marriage Act, 1955 — s. 24'],
+  examTips: ['Separate s. 24 (interim) from s. 25 (permanent).', 'Mention variation and remarriage/conduct for s. 25.'],
+  revisionPoints: ['s. 25 = permanent alimony at or after decree.', 'Gross or periodical; may be secured.', 'Can be varied; remarriage/conduct matter.'],
+} satisfies TopicContent

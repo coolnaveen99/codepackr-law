@@ -1,59 +1,64 @@
-# Skill: Academic & Practice Content Depth (Senior Counsel & PhD Rubric)
+# Skill: Student Answer & Deep Topic Content
 
-**Full standard:** [`.github/instructions/student-answer-content.md`](../instructions/student-answer-content.md)  
-**Quality model:** `src/data/topics/cpc/s-32.ts`
+**Full standard:** [`.github/instructions/student-answer-content.md`](../instructions/student-answer-content.md)
 
-This skill defines the criteria for drafting substantive topic and provision treatises on CodePackr Law, serving both **law students / judicial service aspirants** and **junior advocates / practicing litigators**.
+**Purpose:** CodePackr Law is primarily a law-student learning platform. Its study content must help a student understand a topic deeply and write a strong **10-mark or 16-mark examination answer**, not merely read a Bare Act summary.
 
----
+## Core principle
 
-## Core Philosophy
-
-```text
-UNDERSTAND JURISPRUDENCE → DECONSTRUCT STATUTE → ANCHOR FORUM & BURDEN → APPLY TO FACTS → WRITE IRAC EXAM ANSWERS → PREPARE COURTROOM ARGUMENTS
+```
+UNDERSTAND → CONNECT → APPLY → WRITE → REVISE → PRACTICE
 ```
 
-Never reduce a topic to a Bare Act digest or a series of bullet points.
+Never reduce a topic to:
 
----
+```
+BARE ACT → SECTION SUMMARY → FEW BULLETS
+```
 
-## Dual-Track Field Mapping in `TopicContent`
+The Bare Act is the **legal source layer**, not the complete educational layer.
 
-Utilize existing TypeScript properties in `TopicContent` to satisfy both tracks:
+## Mandatory research-first rule
 
-1. **`study` (The Master Treatise Body)**:
-   - Topic at a Glance.
-   - Introduction & Jurisprudential Grounding (Philosophical context & legislative intent).
-   - Statutory Anatomy Deconstructed (Sub-sections, provisos, explanations, non-obstante clauses).
-   - Essential Statutory Ingredients (Physical acts, mental states).
-   - Procedural & Forum Anchor (Competent court, pecuniary/territorial bounds, Limitation Act period).
-   - Evidentiary Proof Requirements (BSA ss. 104–106 burden, Section 63 electronic certificate).
-   - Adversarial Submissions (Prosecution/Plaintiff essentials vs Defence/Respondent counter-arguments).
-   - Exceptions, Provisos & Limitations.
-   - Statutory Distinctions (Distinguishing neighbouring sections and false equivalences).
-   - 2024 Transitional Note (Applicability, date of offence, S. 531 BNSS savings).
-2. **`cases` (Ratio Decidendi Extraction)**:
-   - Strictly verify case name, citation, court, and bench.
-   - Extract the binding legal principle (*ratio decidendi*); never dump raw case names without their proposition.
-3. **`examples` & `hypotheticals`**:
-   - Contrastive practical examples: One where the rule applies, one where it fails.
-   - Detailed, realistic classroom/exam hypothetical showing step-by-step legal analysis.
-4. **`questionsAndAnswers` (Exam Jump Dock)**:
-   - Provide full examination hall answers with `marks: 10` and `marks: 16`.
-   - **10-Mark Answer (`marks: 10`)**: 500–700 words formatted in strict **IRAC** (Issue, Rule, Application, Conclusion).
-   - **16-Mark Answer (`marks: 16`)**: 900–1200 words formatted in comprehensive **CREAC** (Conclusion, Rule, Explanation, Application, Counter-arguments & Conclusion) with comparative and critical analysis.
-   - *Non-negotiable*: The dock buttons `#exam-10` and `#exam-16` jump directly to these Q&As. Never provide a shortened or summarized answer.
-5. **`distinctions` & `misconceptions`**:
-   - Resolve subtle doubts, section-number collisions, and common exam/courtroom traps.
+Before drafting a topic, research beyond the bare provision:
 
----
+1. Primary/official law
+2. Judicial interpretation
+3. Reliable legal databases
+4. Reputable legal news (context only)
+5. Academic/educational sources (doctrine and history — not as Bare Act text)
 
-## Quality Gate Checklist
+Do not start writing merely because a section was found.
 
-Reject any topic treatise that:
-- [ ] Reads like a Bare Act dump or unedited statutory paste.
-- [ ] Relies on generic synthesizer boilerplate (`synthesizeProvision`, `synthesizeCpc`).
-- [ ] Omits the competent forum, limitation period, or evidentiary burden.
-- [ ] Provides incomplete or abbreviated 10-mark or 16-mark answers.
-- [ ] Confuses IPC/CrPC/IEA section numbers with BNS/BNSS/BSA.
-- [ ] Contains fictitious cases, citations, or unverified statutory illustrations.
+## Mandatory topic depth
+
+Every substantive Study Topic should answer WHAT, WHY, HOW, WHEN, WHY NOT, EXCEPTIONS, WHAT COURTS SAID, HOW IT APPLIES, and HOW TO WRITE IT.
+
+Use existing `TopicContent` fields:
+
+- `study` — teaching body (meaning, ingredients, exceptions). **Not** exam-writing filler.
+- `glance`, `sections`, `provisions`
+- `examples`, `hypotheticals`, `distinctions`, `misconceptions`
+- `cases` (teach ratio, do not dump names)
+- `questionsAndAnswers` with **`marks: 10` and `marks: 16`** — full hall answers; this is what the jump buttons open
+
+Do not rely on `examFrameworks` / `answerSkeleton` as the student-facing 10/16 content. Those lists were stripped from the study page. The dock buttons only find Q&A items.
+
+**Q&A is never a short version.** `questionsAndAnswers[].answer` must be a complete 10-mark or 16-mark examination answer (introduction, meaning, ingredients, illustration mapped to an ingredient, exception, application, conclusion). `explanation` is extra scoring guidance, not a substitute for a tiny answer.
+
+Statutory **definitions, illustrations and explanations** must be included on the Study Topic **when the official text prints them**, and then taught. Do not dump the Bare Act as the whole page. Do not invent Illustration (a) if the statute has none.
+
+Adding a whole new subject: `.github/skills/add-new-subject.md`.
+
+
+Not every heading is required on every topic. Do not omit important material merely to make content shorter. Do not pad.
+
+## Quality bar
+
+Reject content that is only a Bare Act summary, only section numbers, only case names, too short for a 10-mark answer, missing application, or unsupported.
+
+If unverified: `needs-review`. Never invent provisions, citations, holdings, or mappings.
+
+## Implementation rule
+
+Do not create a second content architecture. Extend the existing Study Topic, knowledge graph, Q&A and MCQ systems.

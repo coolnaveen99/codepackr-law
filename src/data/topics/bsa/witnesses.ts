@@ -23,7 +23,7 @@ Current-law position
 BSA ss. 124–168 from 1 July 2024. IEA 118–166 is historical concordance. Do not assume every IEA number plus two equals the BSA number — map each privilege separately.
 
 Educational note
-needs-review of the exact BSA section for “hostile witness” before relying on that evidentiary device in written submissions.`,
+needs-review of the exact BSA section for “hostile witness” before a 16-mark on that device.`,
 
   provisions: [
     { actId: 'bsa', actName: 'Bharatiya Sakshya Adhiniyam, 2023', provisionId: 'bsa-124', section: 's. 124', title: 'Who may testify' },
@@ -84,7 +84,7 @@ needs-review of the exact BSA section for “hostile witness” before relying o
 
   examFrameworks: [
     {
-      draftingCategory: 'brief',
+      marks: 10,
       question: 'Who is a competent witness under the BSA? Can an accomplice testify?',
       steps: [
         's. 124 test.',
@@ -95,7 +95,7 @@ needs-review of the exact BSA section for “hostile witness” before relying o
       ],
     },
     {
-      draftingCategory: 'submissions',
+      marks: 16,
       question: 'Explain competency of witnesses and the procedure of examination under the BSA.',
       steps: [
         'Chapter IX map.',

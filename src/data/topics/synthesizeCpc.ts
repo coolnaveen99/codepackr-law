@@ -18,9 +18,9 @@ function build(cite: string, title: string, cluster: string, key: string, kind: 
   if (omitted) {
     return {
       glance: `${cite} — not current law.`,
-      study: `${cite} (“${title}”) is not current working law. Note that it is repealed or omitted and move to the living heading.`,
+      study: `${cite} (“${title}”) is not current working law. Write that it is repealed or omitted and move to the living heading.`,
       questionsAndAnswers: [
-        { id: `${key}-brief`, draftingCategory: 'brief', question: `Legal Assessment on ${cite}.`, answer: `Introduction. ${cite} is titled “${title}”.\n\nCurrent law. It is not a living heading.\n\nConclusion. Name the provision that now governs the facts.` },
+        { id: `${key}-10`, marks: 10, question: `Write a 10-mark note on ${cite}.`, answer: `Introduction. ${cite} is titled “${title}”.\n\nCurrent law. It is not a living heading.\n\nConclusion. Name the provision that now governs the facts.` },
       ],
       examTips: ['Do not apply a repealed CPC heading to 2026 facts.'],
     }
@@ -33,29 +33,29 @@ function build(cite: string, title: string, cluster: string, key: string, kind: 
     `${cite} of the Code of Civil Procedure, 1908 is titled “${title}”. Cluster: ${cluster}.`,
     note.meaning,
     ``,
-    `Doctrinal and Practice Scope`,
-    `A concise legal assessment requires meaning, essentials, one illustration and leading authority. Comprehensive written submissions require IRAC problem analysis, neighbour distinctions, and a failure scenario.`,
+    `Why this scores marks`,
+    `A 10-mark question wants meaning, essentials, one illustration and a case. A 16-mark problem wants IRAC, a neighbour distinction, and a fail-illustration.`,
     ``,
-    `Essentials of the provision`,
+    `Essentials to write`,
     note.essentials.map((e, i) => `${i + 1}. ${e}`).join('\n'),
     ``,
-    `Statutory Illustration (applies)`,
+    `Illustration (works)`,
     note.illustration,
     ``,
-    `Counter-Illustration (fails)`,
+    `Illustration (fails)`,
     note.failIllustration,
     ``,
-    `Landmark Judicial Authority`,
+    `Authority`,
     caseBlock,
     ``,
-    `Connected provisions & distinctions`,
+    `Neighbour / distinction`,
     note.neighbour,
     ``,
-    `Current-law status`,
+    `Current-law close`,
     `Cite ${cite} of the Code of Civil Procedure, 1908. CPC was not replaced by BNSS.`,
   ].join('\n')
 
-  const brief = [
+  const ten = [
     `Introduction. ${cite} CPC is titled “${title}”.`,
     `Meaning. ${note.meaning}`,
     `Essentials.\n${note.essentials.map((e, i) => `${i + 1}. ${e}`).join('\n')}`,
@@ -64,21 +64,21 @@ function build(cite: string, title: string, cluster: string, key: string, kind: 
     `Conclusion. ${cite} of the Code of Civil Procedure, 1908 is the working heading.`,
   ].filter(Boolean).join('\n\n')
 
-  const submissions = [
-    brief,
-    `Comprehensive Written Submissions.`,
-    `Placement. Cluster: ${cluster}. ${note.neighbour}`,
+  const sixteen = [
+    ten,
+    `16-mark expansion.`,
+    `Place. Cluster: ${cluster}. ${note.neighbour}`,
     note.cases[1] ? `Second authority. ${note.cases[1].name}${note.cases[1].year ? ` (${note.cases[1].year})` : ''}: ${note.cases[1].holding}` : `Comment. ${note.neighbour}`,
     `IRAC facts. ${note.illustration}`,
-    `Counter-condition. ${note.failIllustration}`,
+    `Change one condition. ${note.failIllustration}`,
     `Issue. Does ${cite} apply?`,
     `Rule. ${note.meaning}`,
-    `Application. Map each fact to a condition. Name the missing condition in the counter-illustration.`,
+    `Application. Map each fact to a condition. Name the missing condition in the fail-illustration.`,
     `Conclusion. First illustration: ${cite} applies. Second: it fails. Close with ${cite} CPC, 1908.`,
   ].join('\n\n')
 
   return {
-    glance: `${cite} — ${title}. Civil procedure treatise with illustrations, judicial authority and chamber drafting blueprints.`,
+    glance: `${cite} — ${title}. Full exam note with illustrations, cases and 10/16-mark answers.`,
     study,
     examples: [
       { id: `${key}-ex-1`, title: 'Illustration — applies', description: note.illustration },
@@ -86,9 +86,9 @@ function build(cite: string, title: string, cluster: string, key: string, kind: 
     ],
     hypotheticals: [{
       id: `${key}-hypo`,
-      title: 'Chamber Practice Hypothetical',
+      title: '16-mark hypothetical',
       facts: note.illustration,
-      question: `Does ${cite} apply on these facts?`,
+      question: `Does ${cite} apply?`,
       applicableLaw: `${cite}. ${note.meaning}`,
       analysis: note.failIllustration,
       conclusion: `Apply ${cite} only if every condition is present.`,
@@ -99,15 +99,15 @@ function build(cite: string, title: string, cluster: string, key: string, kind: 
       { id: `${key}-t3`, trap: 'Treating CPC as repealed by BNSS.', correction: 'BNSS is criminal procedure. CPC 1908 is the civil code.' },
     ],
     questionsAndAnswers: [
-      { id: `${key}-q-brief`, draftingCategory: 'brief', question: `Legal Assessment: ${cite} (${title}).`, answer: brief },
-      { id: `${key}-q-submissions`, draftingCategory: 'submissions', question: `Comprehensive Written Submissions on ${cite}.`, answer: submissions },
+      { id: `${key}-q-10`, marks: 10, question: `Write a 10-mark note on ${cite} (${title}).`, answer: ten },
+      { id: `${key}-q-16`, marks: 16, question: `The facts raise ${cite}. Write a 16-mark answer.`, answer: sixteen },
     ],
     cases: note.cases,
     bareActPointers: [cite, 'Code of Civil Procedure, 1908'],
     examTips: ['Heading → meaning → essentials → illustration → case → conclusion', kind === 'order' ? 'Name the Rule inside the Order.' : 'Name the connected Order if a Rule is in play.', note.correction],
     examFrameworks: [
-      { draftingCategory: 'brief', steps: ['Heading', 'Meaning', 'Essentials', 'Illustration', 'Case', 'Conclusion'] },
-      { draftingCategory: 'submissions', steps: ['Issue', 'Rule', 'Neighbour', 'Apply', 'Fail-illustration', 'Authority', 'Conclusion'] },
+      { marks: 10, steps: ['Heading', 'Meaning', 'Essentials', 'Illustration', 'Case', 'Conclusion'] },
+      { marks: 16, steps: ['Issue', 'Rule', 'Neighbour', 'Apply', 'Fail-illustration', 'Authority', 'Conclusion'] },
     ],
     revisionPoints: [`${cite}: ${title}.`, note.meaning, 'CPC 1908 is current law.'],
     answerSkeleton: ['Citation', 'Meaning', 'Essentials', 'Illustration / counter-illustration', 'Authority', 'Conclusion'],
