@@ -8,11 +8,20 @@ All practice and study tools execute strictly in the user’s browser. Zero data
 
 ---
 
+## Site 100% completion (read this to finish the product)
+
+**Follow:** [`docs/SITE_100_PERCENT_COMPLETION.md`](docs/SITE_100_PERCENT_COMPLETION.md)
+
+That file is the phase-by-phase AI playbook (Phases 0–9) to make homepage, subject pages, practice, exam, case law, and all 20 subject catalogs **100% done** without dropping topics. Do not skip phases. Do not delete topic IDs.
+
+---
+
 ## Primary Instruction Document
 
 **Read first:** [AI_INSTRUCTIONS.md](AI_INSTRUCTIONS.md)
 
 Supporting files:
+- `docs/SITE_100_PERCENT_COMPLETION.md` — **phase-by-phase site completion**
 - `.github/skills/add-new-subject.md` — **adding a subject and its content**
 - `.github/instructions/global-legal-content.md` — global legal-content architecture
 - `.github/instructions/student-answer-content.md` — academic and practice depth standard
@@ -53,4 +62,5 @@ Supporting files:
 10. Zero hallucination: Never invent sections, cases, citations, holdings, or official illustrations. If unverified, mark as `needs-review`.
 11. The Sacred Student Career Covenant (Zero Topic Omission): We work for student careers, degrees, and life goals. An omitted or truncated topic in our library could cause a student to fail an exam or an advocate to miss a cause of action. We must NEVER arbitrarily ignore or drop syllabus topics. Always cross-reference standard university curricula (BCI, NLUs) and benchmark classroom textbooks (e.g. M. S. Rama Rao, Ratanlal & Dhirajlal, Avtar Singh, Mulla). Every single doctrine, defense, capacity rule, specific wrong, remedy, and procedural mechanism must have a registered, dedicated, clickable topic.
 12. Senior Counsel & PhD Scholarship Standard: Never reduce serious jurisprudence to collegiate exam marks. All topics must provide substantive doctrinal depth, extracted case law ratios (facts, issue, ratio decidendi, courtroom application), dual statutory illustrations (proving vs failing conditions), mandatory BSA 2023 evidentiary compliance (ss. 104–106 & s. 63), and limitation/jurisdiction roadmaps.
-13. Master Coverage Checklist Synchronization: All 20 curriculum subjects and 2,087 registered catalog topics are tracked in `docs/subject-coverage-checklist.md`. Whenever any AI or contributor authors or updates a topic file in `src/data/topics/<slug>/<topicId>.ts`, they MUST update the checklist to mark the topic as `[x] Complete` (or run `npm run checklist`) and ensure `hasNotes: true` in `src/data/subjects.ts`.
+13. Master Coverage Checklist Synchronization: All 20 curriculum subjects and registered catalog topics are tracked in `docs/subject-coverage-checklist.md`. Whenever any AI or contributor authors or updates a topic file in `src/data/topics/<slug>/<topicId>.ts`, they MUST update the checklist to mark the topic as `[x] Complete` (or run `npm run checklist`) and ensure `hasNotes: true` in `src/data/subjects.ts`.
+14. Finish the product only via `docs/SITE_100_PERCENT_COMPLETION.md` phases. Never delete topic IDs to make the UI look smaller.

@@ -4,11 +4,32 @@ This folder contains standardized, battle-tested master prompts to instruct any 
 
 ---
 
+## Site completion playbook (product + content)
+
+Before starting multi-file site work, open:
+
+**[`docs/SITE_100_PERCENT_COMPLETION.md`](../docs/SITE_100_PERCENT_COMPLETION.md)**
+
+That file is the phase-by-phase instruction set (Phases 0–9) to make the live site 100% done: homepage, subject page, topic page, practice, exam, case law, and all 20 locked subjects **without dropping topics**.
+
+Suggested first prompt:
+
+```text
+Follow docs/SITE_100_PERCENT_COMPLETION.md.
+Finish the next unfinished phase only.
+Do not delete topics.
+Run the phase exit gate before you stop.
+```
+
+---
+
 ## 📋 Available Prompts
 
 Choose the prompt that matches your workflow:
 
 | Scenario / Need | Prompt File | What it Does |
+|---|---|---|
+| 🚀 **Finish the whole site (phased)** | [`docs/SITE_100_PERCENT_COMPLETION.md`](../docs/SITE_100_PERCENT_COMPLETION.md) | Master AI playbook: homepage, subject pages, practice/exam, case law, zero topic omission, launch gate. |
 | 🎯 **Central Listener & Router (Fastest)** | [`DISPATCHER.md`](./DISPATCHER.md) | **The Listener Hub:** Just type `"add topics in BSA. follow prompts/DISPATCHER.md"`. The AI listens, routes to the right statute/folder, and authors the treatise file automatically. |
 | ⚡ **Fast & Simplified** | [`SIMPLIFIED_PROMPT_GUIDE.md`](./SIMPLIFIED_PROMPT_GUIDE.md) | **1-Minute Quick-Prompts** for Constitutional Law, Labour Law, Criminal Law, and file overwrites. |
 | **Scenario 1: New Topic (Known ID)** | [`TOPIC_AUTHORING_AI_PROMPT.md`](./TOPIC_AUTHORING_AI_PROMPT.md) | Complete prompt template when you already know the `topicId` (e.g. `art-21`, `s-300`). |
@@ -68,4 +89,5 @@ Whenever you or an AI completes or updates a topic, synchronize the master track
 ```bash
 npm run checklist
 ```
-This updates [`docs/subject-coverage-checklist.md`](../docs/subject-coverage-checklist.md) to mark the topic as `[x] Complete` across all 20 subjects and 2,087 topics.
+This updates [`docs/subject-coverage-checklist.md`](../docs/subject-coverage-checklist.md) to mark the topic as `[x] Complete` across all 20 subjects.
+Never delete a topic ID to make the checklist look cleaner.

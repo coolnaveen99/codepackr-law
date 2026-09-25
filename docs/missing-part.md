@@ -1,5 +1,8 @@
 # Codepackr Law — Remaining Implementation Parts
 
+> **Execution order lives here now:** [`docs/SITE_100_PERCENT_COMPLETION.md`](./SITE_100_PERCENT_COMPLETION.md)  
+> This file remains the detailed architecture gap list. Do not implement items out of phase order. Do not delete catalog topics while closing these gaps.
+
 This document records the remaining work from the subject learning, case law, and MCQ architecture specification. Update this checklist as each part is implemented.
 
 ## Current Status
@@ -137,12 +140,15 @@ Implemented foundation:
 
 ## Recommended Next Order
 
-1. Migrate BNSS pilot topics.
-2. Add subject and topic progress dashboards.
-3. Split Practice and Exam into dedicated components.
-4. Add result and review flows.
-5. Add topic/provision/judgment links.
-6. Add validation commands.
-7. Add automated tests.
-8. Add reviewed judgment PDFs.
-9. Expand the content collection after the pilot passes validation.
+Use [`SITE_100_PERCENT_COMPLETION.md`](./SITE_100_PERCENT_COMPLETION.md) Phases 0–9 instead of this numbered list. Mapping:
+
+0. Integrity freeze + `validate:topics` (do this first so topics cannot be lost)
+1. Homepage
+2. Subject page
+3. Topic page + progress
+4. Practice components
+5. Exam components
+6. Case law pilots + validation
+7. P0 high-yield treatises
+8. Remaining catalog quality floor (all 20 subjects; never delete IDs)
+9. Launch hardening
