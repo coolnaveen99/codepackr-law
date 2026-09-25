@@ -1,5 +1,6 @@
 import { ArrowRight, Search, Sparkles, HeartHandshake, ShieldCheck, BookOpenCheck } from 'lucide-react'
 import { SUBJECTS, type LawTopic } from '../../data/subjects'
+import { TOTAL_TOPICS_COUNT } from '../../data/liveSubjects'
 import type { ToolCategory, ToolMetadata } from '../../types'
 import { Badge } from '../ui/Badge'
 import { UnderConstructionBanner } from './UnderConstructionBanner'
@@ -75,7 +76,7 @@ export function HomePage({
             Universal Legal Omni-Search
           </h2>
           <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
-            Instant search across all 2,078 sections, articles, landmark doctrines, and courtroom drafting formats
+            Instant search across all {TOTAL_TOPICS_COUNT.toLocaleString()} sections, articles, landmark doctrines, and courtroom drafting formats
           </p>
         </div>
 

@@ -1,4 +1,5 @@
 import { BookOpen, ShieldCheck, Scale, Award, Sparkles } from 'lucide-react'
+import { TOTAL_TOPICS_COUNT } from '../../data/liveSubjects'
 
 export function LibraryStatsBar() {
   const stats = [
@@ -10,7 +11,7 @@ export function LibraryStatsBar() {
     },
     {
       icon: Scale,
-      value: '2,078',
+      value: TOTAL_TOPICS_COUNT.toLocaleString(),
       label: 'Clickable Topics',
       subtext: 'Every Section & Order Cataloged',
     },

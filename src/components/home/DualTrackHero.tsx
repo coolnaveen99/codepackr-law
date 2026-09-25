@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { BookOpen, GraduationCap, Briefcase, ArrowRight, ShieldCheck, Check, Sparkles } from 'lucide-react'
+import { TOTAL_TOPICS_COUNT } from '../../data/liveSubjects'
 
 interface DualTrackHeroProps {
   onOpenSubjects: () => void
@@ -36,7 +37,7 @@ export function DualTrackHero({ onOpenSubjects }: DualTrackHeroProps) {
             className="inline-flex items-center gap-2.5 h-12 px-6 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold shadow-md shadow-blue-600/25 active:scale-[0.98] transition-all duration-150"
           >
             <BookOpen className="w-4 h-4" />
-            Explore All 20 Subjects (2,078 Topics)
+            Explore All 20 Subjects ({TOTAL_TOPICS_COUNT.toLocaleString()} Topics)
           </button>
           <a
             href="#tools"

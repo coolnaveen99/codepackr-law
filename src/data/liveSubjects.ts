@@ -61,3 +61,5 @@ export function searchSubjectsAndTopics(query: string): {
   }
   return { subjects, topics }
 }
+
+export const TOTAL_TOPICS_COUNT = LIVE_SUBJECTS.reduce((acc, s) => acc + s.topics.length, 0)

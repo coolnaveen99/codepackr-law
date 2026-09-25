@@ -3,10 +3,11 @@ import fs from 'fs'
 import path from 'path'
 
 const topicsDir = path.resolve('src/data/topics')
+const totalRegistered = SUBJECTS.reduce((acc, s) => acc + s.topics.length, 0)
 
 let out = '# Codepackr Law — Master Subject & Topic Coverage Checklist\n\n'
 out += '> **Authoritative Master Tracking Document**\n'
-out += '> Audited from start onwards across all 20 curriculum subjects and 2,087 registered catalog topics.\n'
+out += `> Audited from start onwards across all 20 curriculum subjects and ${totalRegistered.toLocaleString()} registered catalog topics.\n`
 out += '> Status legend:\n'
 out += '> - `[x] Complete`: Dedicated Senior Counsel & PhD standard full treatise file authored and verified.\n'
 out += '> - `[~] Catalog / Synthesized`: Verified catalog topic with structured syllabus fallback and synthesized blueprint.\n'
