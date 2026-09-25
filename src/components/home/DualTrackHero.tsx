@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BookOpen, GraduationCap, Briefcase, ArrowRight, ShieldCheck, Check, Sparkles } from 'lucide-react'
+import { BookOpen, GraduationCap, Briefcase, ArrowRight, ShieldCheck, Check } from 'lucide-react'
 import { TOTAL_TOPICS_COUNT } from '../../data/liveSubjects'
 
 interface DualTrackHeroProps {
@@ -85,31 +85,31 @@ export function DualTrackHero({ onOpenSubjects }: DualTrackHeroProps) {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="space-y-2">
                 <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-blue-700 dark:text-blue-300">
-                  <Sparkles className="w-4 h-4" /> Chamber Briefs &amp; Written Arguments
+                  <GraduationCap className="w-4 h-4" /> Syllabus &amp; Exam Coverage
                 </div>
-                <h3 className="font-bold text-base text-slate-900 dark:text-white">IRAC / ILAC Doctrinal Structure</h3>
+                <h3 className="font-bold text-base text-slate-900 dark:text-white">BCI / AIBE / Judiciary Syllabus Map</h3>
                 <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                  Every section and doctrine includes ready-to-use case briefs and courtroom written submissions with legislative intent, proving ingredients, and extracted case law ratios.
+                  Every BCI core subject, AIBE paper weightage, and State Judiciary Mains doctrine is cataloged — so you never miss a section, article, or order on exam day.
                 </p>
               </div>
 
               <div className="space-y-2">
                 <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-blue-700 dark:text-blue-300">
-                  <Check className="w-4 h-4" /> Zero Topic Omission
+                  <Check className="w-4 h-4" /> IRAC Study Structure
                 </div>
-                <h3 className="font-bold text-base text-slate-900 dark:text-white">Full University Syllabus Coverage</h3>
+                <h3 className="font-bold text-base text-slate-900 dark:text-white">Issue → Rule → Application → Conclusion</h3>
                 <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                  Cross-referenced against Bar Council of India (BCI) curricula and benchmark treatises (M.S. Rama Rao, Ratanlal & Dhirajlal, Avtar Singh).
+                  Structured study notes with ingredients, dual illustrations, and extracted ratios — built for university answers and judicial service writing.
                 </p>
               </div>
 
               <div className="space-y-2">
                 <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-blue-700 dark:text-blue-300">
-                  <BookOpen className="w-4 h-4" /> Extracted Case Ratios
+                  <BookOpen className="w-4 h-4" /> Zero Topic Omission
                 </div>
-                <h3 className="font-bold text-base text-slate-900 dark:text-white">Ratio Decidendi vs Obiter Dicta</h3>
+                <h3 className="font-bold text-base text-slate-900 dark:text-white">Full Catalog, Not a Shortlist</h3>
                 <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                  Clear, verified landmark holdings from Supreme Court constitutional benches and High Courts without hallucinated headnotes.
+                  Cross-referenced against Bar Council of India curricula. Click any article, section, or Order and open a real learning page — not a bare-act dump.
                 </p>
               </div>
             </div>

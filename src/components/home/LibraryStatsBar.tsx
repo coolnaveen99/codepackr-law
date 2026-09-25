@@ -1,40 +1,25 @@
-import { BookOpen, ShieldCheck, Scale, Award, Sparkles } from 'lucide-react'
-import { TOTAL_TOPICS_COUNT } from '../../data/liveSubjects'
+import { BookOpen, ShieldCheck, Scale, Award, FileText } from 'lucide-react'
+import { TOTAL_TOPICS_COUNT, LIVE_SUBJECTS } from '../../data/liveSubjects'
+
+function estimateDepth() {
+  let notes = 0
+  for (const s of LIVE_SUBJECTS) {
+    for (const t of s.topics) {
+      if (t.hasNotes !== false) notes++
+    }
+  }
+  return notes
+}
 
 export function LibraryStatsBar() {
+  const notes = estimateDepth()
   const stats = [
-    {
-      icon: BookOpen,
-      value: '20',
-      label: 'Core Subjects',
-      subtext: 'BCI & Judiciary Standard',
-    },
-    {
-      icon: Scale,
-      value: TOTAL_TOPICS_COUNT.toLocaleString(),
-      label: 'Clickable Topics',
-      subtext: 'Every Section & Order Cataloged',
-    },
-    {
-      icon: Sparkles,
-      value: '10M & 16M',
-      label: 'Dual Answer Models',
-      subtext: 'IRAC / ILAC with Scoring Rubrics',
-    },
-    {
-      icon: Award,
-      value: '2024 Acts',
-      label: 'Sanhitas Transition',
-      subtext: 'BNS, BNSS & BSA Concordance',
-    },
-    {
-      icon: ShieldCheck,
-      value: '100%',
-      label: 'Client-Side Privacy',
-      subtext: 'Zero Data Egress / Zero Tracking',
-    },
+    { icon: BookOpen, value: '20', label: 'Core Subjects', subtext: 'BCI & Judiciary Standard' },
+    { icon: Scale, value: TOTAL_TOPICS_COUNT.toLocaleString(), label: 'Clickable Topics', subtext: 'Every Section & Order Cataloged' },
+    { icon: FileText, value: notes.toLocaleString(), label: 'Catalog Notes', subtext: 'Treatises expanding (not 100% yet)' },
+    { icon: Award, value: '2024 Acts', label: 'Sanhitas Transition', subtext: 'BNS, BNSS & BSA Concordance' },
+    { icon: ShieldCheck, value: '100%', label: 'Client-Side Privacy', subtext: 'Zero Data Egress / Zero Tracking' },
   ]
-
   return (
     <div className="grid grid-cols-2 md:grid-cols-5 gap-3 sm:gap-4">
       {stats.map((stat, idx) => {
@@ -58,9 +43,7 @@ export function LibraryStatsBar() {
               <div className="font-display text-2xl sm:text-3xl font-extrabold text-slate-950 dark:text-white tracking-tight">
                 {stat.value}
               </div>
-              <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">
-                {stat.subtext}
-              </p>
+              <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">{stat.subtext}</p>
             </div>
           </div>
         )

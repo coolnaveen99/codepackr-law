@@ -11,11 +11,19 @@ import {
   CheckCircle2,
   FileText,
   CornerDownRight,
+  Scale,
+  ListFilter,
 } from 'lucide-react'
 import type { LawSubjectMeta, LawTopic } from '../../data/subjects'
 import { getSubjectIntro } from '../../data/subjectIntros'
 import { CATALOG_SLUGS } from './catalogSlugs'
 import { SubjectGlyph } from '../icons'
+import {
+  getLastRead,
+  getCompletedCount,
+  getOpenedCount,
+  isTopicCompleted,
+} from '../../lib/progress'
 
 interface SubjectDetailProps {
   subject: LawSubjectMeta
@@ -23,9 +31,33 @@ interface SubjectDetailProps {
   onSelectTopic: (topic: LawTopic) => void
   searchQuery: string
   onSearchChange: (q: string) => void
+  onSelectTool?: (slug: string) => void
+}
+
+function depthBadge(topic: LawTopic): { label: string; className: string } {
+  if (topic.hasNotes === false) {
+    return {
+      label: 'Needs review',
+      className: 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300',
+    }
+  }
+  if (topic.highYield) {
+    return {
+      label: 'Full treatise',
+      className: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300',
+    }
+  }
+  return {
+    label: 'Catalog note',
+    className: 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300',
+  }
 }
 
 type FilterView = 'all' | 'high-yield' | 'catalog'
+
+function clusterIdSlug(name: string): string {
+  return 'cluster-' + name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+}
 
 export function SubjectDetail({
   subject,
@@ -33,11 +65,13 @@ export function SubjectDetail({
   onSelectTopic,
   searchQuery,
   onSearchChange,
+  onSelectTool,
 }: SubjectDetailProps) {
   const intro = getSubjectIntro(subject.slug)
   const q = searchQuery.trim().toLowerCase()
   const [filterView, setFilterView] = useState<FilterView>('all')
   const [jump, setJump] = useState('')
+  const [selectedCluster, setSelectedCluster] = useState<string | 'all'>('all')
 
   // Filter topics based on search query
   const allFilteredTopics = useMemo(() => {
@@ -50,6 +84,10 @@ export function SubjectDetail({
     )
   }, [subject.topics, q])
 
+  // Helper to identify CPC Orders
+  const isOrderTopic = (t: LawTopic) =>
+    t.type === 'chapter' && (t.id.startsWith('order-') || t.id.startsWith('o-'))
+
   // Split topics into provision kinds
   const isCatalog = CATALOG_SLUGS.has(subject.slug)
   const articleTopics = useMemo(
@@ -61,7 +99,7 @@ export function SubjectDetail({
     [allFilteredTopics],
   )
   const orderTopics = useMemo(
-    () => allFilteredTopics.filter((t) => t.type === 'chapter' && t.id.startsWith('o-')),
+    () => allFilteredTopics.filter(isOrderTopic),
     [allFilteredTopics],
   )
 
@@ -75,7 +113,7 @@ export function SubjectDetail({
         (t) =>
           t.type !== 'article' &&
           t.type !== 'section' &&
-          !(t.type === 'chapter' && t.id.startsWith('o-')),
+          !isOrderTopic(t),
       ),
     [allFilteredTopics],
   )
@@ -102,43 +140,85 @@ export function SubjectDetail({
     [showOrderGroups, orderTopics],
   )
 
-  // Non-catalog cluster grouping (e.g. Torts, Contract, Family)
+  // Non-catalog cluster grouping (e.g. Torts, Contract, Family, Labour, Company)
   const nonCatalogClusters = useMemo(() => {
     if (isCatalog) return []
     return groupByCluster(allFilteredTopics, 'General Curricular Headings')
   }, [isCatalog, allFilteredTopics])
 
+  // All active clusters for TOC navigation
+  const activeClustersList = useMemo(() => {
+    if (showArticleGroups) return articleClusters
+    if (subject.slug === 'cpc') return [...sectionClusters, ...orderClusters]
+    if (showSectionGroups) return sectionClusters
+    return nonCatalogClusters
+  }, [showArticleGroups, articleClusters, subject.slug, sectionClusters, orderClusters, showSectionGroups, nonCatalogClusters])
+
+  // Progress metrics
+  const openedCount = typeof window !== 'undefined' ? getOpenedCount(subject.slug) : 0
+  const completedCount = typeof window !== 'undefined' ? getCompletedCount(subject.slug) : 0
   const totalHighYieldCount = useMemo(
     () => subject.topics.filter((t) => t.highYield).length,
     [subject.topics],
   )
+  const highYieldRemainingCount = useMemo(() => {
+    return subject.topics.filter((t) => t.highYield && !isTopicCompleted(subject.slug, t.id)).length
+  }, [subject.slug, subject.topics])
 
   const jumpHint = useMemo(() => {
-    if (subject.slug === 'constitution') return 'Jump to Art (e.g. 21, 32, 226)'
-    if (subject.slug === 'cpc') return 'Jump to Sec/Order (e.g. 11, 39)'
-    if (isCatalog) return 'Jump to Section (e.g. 103, 480)'
+    if (subject.slug === 'constitution') return 'Jump Art (e.g. 21, 32, 226)'
+    if (subject.slug === 'cpc') return 'Jump Sec/Order (e.g. 11, 39)'
+    if (isCatalog) return 'Jump Section (e.g. 103, 480)'
     return `Jump to topic in ${subject.shortName}`
   }, [subject.slug, subject.shortName, isCatalog])
 
   function handleJump(raw: string) {
-    const value = raw.trim().toLowerCase().replace(/^(art(icle)?|s(ection)?|o(rder)?)\.?\s*/i, '')
+    const cleanRaw = raw.trim()
+    const value = cleanRaw.toLowerCase().replace(/^(art(icle)?|s(ection)?|o(rder)?)\.?\s*/i, '')
     if (!value) return
-    const wanted =
-      subject.slug === 'constitution'
-        ? subject.topics.find(
-            (t) => t.id === `art-${value}` || t.id === `art-${value.replace(/^0+/, '')}`,
-          )
-        : subject.topics.find(
-            (t) =>
-              t.id === `s-${value}` ||
-              t.id === `o-${value}` ||
-              t.id === `s-${value.replace(/^0+/, '')}` ||
-              t.id === `o-${value.replace(/^0+/, '')}`,
-          )
+    const unpadded = value.replace(/^0+/, '')
+
+    let wanted: LawTopic | undefined
+
+    if (subject.slug === 'constitution') {
+      wanted = subject.topics.find(
+        (t) => t.id === `art-${value}` || t.id === `art-${unpadded}`,
+      )
+    } else if (subject.slug === 'cpc') {
+      const isOrderQuery = /^(o|order)/i.test(cleanRaw) || value === '39'
+      const orderMatch = subject.topics.find(
+        (t) =>
+          t.id === `order-${value}` ||
+          t.id === `order-${unpadded}` ||
+          t.id === `o-${value}` ||
+          t.id === `o-${unpadded}`,
+      )
+      const secMatch = subject.topics.find(
+        (t) => t.id === `s-${value}` || t.id === `s-${unpadded}`,
+      )
+      wanted = isOrderQuery ? (orderMatch || secMatch) : (secMatch || orderMatch)
+    } else {
+      wanted = subject.topics.find(
+        (t) =>
+          t.id === `s-${value}` ||
+          t.id === `s-${unpadded}` ||
+          t.id.endsWith(`-s-${value}`) ||
+          t.id.endsWith(`-s-${unpadded}`),
+      )
+    }
+
     if (wanted) {
       onSelectTopic(wanted)
     } else {
-      onSearchChange(raw.trim())
+      onSearchChange(cleanRaw)
+    }
+  }
+
+  function scrollToCluster(name: string) {
+    setSelectedCluster(name)
+    const el = document.getElementById(clusterIdSlug(name))
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
   }
 
@@ -179,8 +259,8 @@ export function SubjectDetail({
               <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
                 <BookOpen className="w-3.5 h-3.5 text-blue-600" /> {subject.topics.length} Provisions / Topics
               </span>
-              <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-0.5 rounded-md bg-amber-50 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-800">
-                <Sparkles className="w-3.5 h-3.5 text-amber-500" /> 10M & 16M Live Models
+              <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-0.5 rounded-md bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+                <Sparkles className="w-3.5 h-3.5 text-emerald-600" /> IRAC &amp; Practice Models Live
               </span>
             </div>
 
@@ -235,8 +315,75 @@ export function SubjectDetail({
         )}
       </section>
 
-      {/* 3. Unified Command Bar: Search, Quick-Jump & Filter Tabs */}
-      <section className="space-y-4">
+      {/* 3. Progress Strip & Continue in Subject */}
+      <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 p-4 sm:p-5 space-y-3">
+        <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs sm:text-sm">
+          <span className="font-bold text-slate-900 dark:text-white">
+            {subject.topics.length.toLocaleString()} topics
+          </span>
+          <span className="text-slate-300 dark:text-slate-700">|</span>
+          <span className="text-blue-700 dark:text-blue-300 font-semibold">
+            {openedCount} / {subject.topics.length} opened
+          </span>
+          <span className="text-slate-300 dark:text-slate-700">|</span>
+          <span className="text-emerald-700 dark:text-emerald-400 font-semibold">
+            {completedCount} completed
+          </span>
+          <span className="text-slate-300 dark:text-slate-700">|</span>
+          <span className="text-amber-700 dark:text-amber-300 font-semibold">
+            {highYieldRemainingCount} high-yield remaining
+          </span>
+        </div>
+
+        {(() => {
+          const last = typeof window !== 'undefined' ? getLastRead() : null
+          if (!last || last.subjectSlug !== subject.slug) return null
+          const hit = subject.topics.find((t) => t.id === last.topicId)
+          if (!hit) return null
+          return (
+            <button
+              type="button"
+              onClick={() => onSelectTopic(hit)}
+              className="w-full text-left rounded-xl border border-blue-200 dark:border-blue-900 bg-blue-50/70 dark:bg-blue-950/40 px-3 py-2.5 flex items-center justify-between gap-2 hover:border-blue-400 transition-colors"
+            >
+              <div className="min-w-0">
+                <p className="text-[10px] font-bold uppercase tracking-wider text-blue-700 dark:text-blue-300">
+                  Continue reading in {subject.shortName}
+                </p>
+                <p className="text-sm font-semibold text-slate-900 dark:text-white truncate">
+                  {hit.name}
+                </p>
+              </div>
+              <ArrowRight className="w-4 h-4 text-blue-600 shrink-0" />
+            </button>
+          )
+        })()}
+
+        {/* Historical Criminal Concordance Notice + Mapper CTA */}
+        {(subject.slug === 'bns' || subject.slug === 'bnss' || subject.slug === 'bsa') && (
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-amber-900 dark:text-amber-200 bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900 rounded-2xl p-3.5">
+            <div className="flex items-center gap-2">
+              <Scale className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0" />
+              <span>
+                <strong>Statutory Notice:</strong> Historical IPC / CrPC / IEA text is concordance only — current substantive &amp; procedural law is BNS / BNSS / BSA.
+              </span>
+            </div>
+            {onSelectTool && (
+              <button
+                type="button"
+                onClick={() => onSelectTool('bns-ipc-mapper')}
+                className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shrink-0 shadow-xs transition-colors"
+              >
+                <span>Open Sanhita Mapper</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            )}
+          </div>
+        )}
+      </section>
+
+      {/* 4. Sticky Unified Command Bar: Search, Quick-Jump & Filter Tabs */}
+      <section className="sticky top-0 sm:top-14 z-20 backdrop-blur-md bg-white/95 dark:bg-slate-950/95 py-3 px-3 sm:px-4 rounded-2xl border border-slate-200/90 dark:border-slate-800/90 shadow-xs space-y-3">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-3">
           {/* Search Box */}
           <div className="relative">
@@ -246,7 +393,7 @@ export function SubjectDetail({
               value={searchQuery}
               onChange={(e) => onSearchChange(e.target.value)}
               placeholder={`Search in ${subject.shortName} by number, title, doctrine, or keywords...`}
-              className="w-full h-12 pl-12 pr-12 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full h-11 pl-12 pr-12 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             {searchQuery && (
               <button
@@ -272,11 +419,11 @@ export function SubjectDetail({
                 value={jump}
                 onChange={(e) => setJump(e.target.value)}
                 placeholder={jumpHint}
-                className="w-48 sm:w-56 h-12 px-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-48 sm:w-56 h-11 px-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <button
                 type="submit"
-                className="h-12 px-5 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition-colors duration-150 shadow-xs"
+                className="h-11 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition-colors duration-150 shadow-xs shrink-0"
               >
                 Jump
               </button>
@@ -285,12 +432,15 @@ export function SubjectDetail({
         </div>
 
         {/* View Filter Pills & Match Counter */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-0.5">
           <div className="flex items-center gap-1.5 flex-wrap">
             <button
               type="button"
-              onClick={() => setFilterView('all')}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all duration-150 ${
+              onClick={() => {
+                setFilterView('all')
+                setSelectedCluster('all')
+              }}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all duration-150 ${
                 filterView === 'all'
                   ? 'bg-blue-600 text-white shadow-xs'
                   : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:border-slate-300'
@@ -300,8 +450,11 @@ export function SubjectDetail({
             </button>
             <button
               type="button"
-              onClick={() => setFilterView('high-yield')}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all duration-150 flex items-center gap-1 ${
+              onClick={() => {
+                setFilterView('high-yield')
+                setSelectedCluster('all')
+              }}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all duration-150 flex items-center gap-1 ${
                 filterView === 'high-yield'
                   ? 'bg-blue-600 text-white shadow-xs'
                   : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:border-slate-300'
@@ -312,13 +465,13 @@ export function SubjectDetail({
             <button
               type="button"
               onClick={() => setFilterView('catalog')}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all duration-150 flex items-center gap-1 ${
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all duration-150 flex items-center gap-1 ${
                 filterView === 'catalog'
                   ? 'bg-blue-600 text-white shadow-xs'
                   : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:border-slate-300'
               }`}
             >
-              <Layers className="w-3.5 h-3.5" /> Chapters & Clusters
+              <Layers className="w-3.5 h-3.5" /> Chapters &amp; Clusters ({activeClustersList.length})
             </button>
           </div>
 
@@ -326,15 +479,49 @@ export function SubjectDetail({
             Showing <strong className="text-slate-900 dark:text-white font-bold">{allFilteredTopics.length}</strong> of {subject.topics.length} topics
           </span>
         </div>
+
+        {/* Chapter / Cluster Quick TOC Bar */}
+        {(filterView === 'catalog' || activeClustersList.length > 3) && !q && (
+          <div className="pt-2 border-t border-slate-100 dark:border-slate-800/80 flex items-center gap-1.5 overflow-x-auto pb-1 text-xs no-scrollbar">
+            <span className="text-[11px] font-bold text-slate-400 shrink-0 flex items-center gap-1">
+              <ListFilter className="w-3 h-3" /> Jump Chapter:
+            </span>
+            <button
+              type="button"
+              onClick={() => setSelectedCluster('all')}
+              className={`px-2.5 py-1 rounded-lg text-xs font-semibold shrink-0 transition-colors ${
+                selectedCluster === 'all'
+                  ? 'bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300 font-bold'
+                  : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-slate-900'
+              }`}
+            >
+              All Chapters ({activeClustersList.length})
+            </button>
+            {activeClustersList.map((c) => (
+              <button
+                key={c.name}
+                type="button"
+                onClick={() => scrollToCluster(c.name)}
+                className={`px-2.5 py-1 rounded-lg text-xs shrink-0 transition-colors ${
+                  selectedCluster === c.name
+                    ? 'bg-blue-600 text-white font-bold'
+                    : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700'
+                }`}
+              >
+                {c.name} ({c.topics.length})
+              </button>
+            ))}
+          </div>
+        )}
       </section>
 
-      {/* 4. High-Yield Exam Essays & Treatises Grid */}
-      {filterView !== 'catalog' && highYieldThemes.length > 0 && (
+      {/* 5. High-Yield Exam Essays & Treatises Grid */}
+      {filterView !== 'catalog' && highYieldThemes.length > 0 && selectedCluster === 'all' && (
         <section className="space-y-4">
           <div className="flex items-center justify-between gap-3 border-b border-slate-200 dark:border-slate-800 pb-2.5">
             <div className="flex items-center gap-2 font-bold text-base text-slate-950 dark:text-white">
               <Sparkles className="w-4 h-4 text-amber-500" />
-              <span>High-Yield Landmark Doctrines & Exam Treatises</span>
+              <span>High-Yield Landmark Doctrines &amp; Exam Treatises</span>
             </div>
             <span className="text-xs font-bold text-amber-600 dark:text-amber-400">
               {highYieldThemes.length} high-yield topics
@@ -342,81 +529,96 @@ export function SubjectDetail({
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
-            {highYieldThemes.map((topic) => (
-              <button
-                key={topic.id}
-                type="button"
-                onClick={() => onSelectTopic(topic)}
-                className="group text-left p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 hover:border-blue-500/70 dark:hover:border-blue-500/70 transition-all duration-150 flex flex-col justify-between shadow-2xs hover:shadow-xs"
-              >
-                <div>
-                  <div className="flex items-center justify-between gap-2 mb-2">
-                    <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-amber-100/70 dark:bg-amber-950 text-amber-800 dark:text-amber-300">
-                      ★ High Yield
-                    </span>
-                    {topic.range && (
-                      <span className="text-[11px] font-bold text-blue-700 dark:text-blue-300 tabular-nums">
-                        {topic.range}
-                      </span>
+            {highYieldThemes.map((topic) => {
+              const d = depthBadge(topic)
+              return (
+                <button
+                  key={topic.id}
+                  type="button"
+                  onClick={() => onSelectTopic(topic)}
+                  className="group text-left p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 hover:border-blue-500/70 dark:hover:border-blue-500/70 transition-all duration-150 flex flex-col justify-between shadow-2xs hover:shadow-xs"
+                >
+                  <div>
+                    <div className="flex items-center justify-between gap-2 mb-2">
+                      <div className="flex items-center gap-1.5 flex-wrap">
+                        <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-amber-100/70 dark:bg-amber-950 text-amber-800 dark:text-amber-300">
+                          ★ High Yield
+                        </span>
+                        <span className={`text-[9px] font-semibold uppercase px-1.5 py-0.5 rounded-md ${d.className}`}>
+                          {d.label}
+                        </span>
+                      </div>
+                      {topic.range && (
+                        <span className="text-[11px] font-bold text-blue-700 dark:text-blue-300 tabular-nums">
+                          {topic.range}
+                        </span>
+                      )}
+                    </div>
+
+                    <h3 className="font-bold text-sm sm:text-base text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors leading-snug mb-1">
+                      {topic.name}
+                    </h3>
+
+                    {topic.note && (
+                      <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 leading-relaxed">
+                        {topic.note}
+                      </p>
                     )}
                   </div>
 
-                  <h3 className="font-bold text-sm sm:text-base text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors leading-snug mb-1">
-                    {topic.name}
-                  </h3>
-
-                  {topic.note && (
-                    <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 leading-relaxed">
-                      {topic.note}
-                    </p>
-                  )}
-                </div>
-
-                <div className="mt-3.5 pt-2.5 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-[11px]">
-                  <div className="flex items-center gap-1.5 text-slate-400">
-                    <span className="px-1.5 py-0.5 rounded-sm bg-slate-100 dark:bg-slate-800 text-[10px] font-semibold text-slate-600 dark:text-slate-300">
-                      10M & 16M
+                  <div className="mt-3.5 pt-2.5 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-[11px]">
+                    <div className="flex items-center gap-1.5 text-slate-400">
+                      <span className="px-1.5 py-0.5 rounded-sm bg-slate-100 dark:bg-slate-800 text-[10px] font-semibold text-slate-600 dark:text-slate-300">
+                        IRAC Model
+                      </span>
+                    </div>
+                    <span className="text-blue-700 dark:text-blue-300 font-bold inline-flex items-center gap-0.5 group-hover:translate-x-0.5 transition-transform">
+                      Study <ArrowRight className="w-3 h-3" />
                     </span>
-                    <span>IRAC Model</span>
                   </div>
-                  <span className="text-blue-700 dark:text-blue-300 font-bold inline-flex items-center gap-0.5 group-hover:translate-x-0.5 transition-transform">
-                    Study <ArrowRight className="w-3 h-3" />
-                  </span>
-                </div>
-              </button>
-            ))}
+                </button>
+              )
+            })}
           </div>
         </section>
       )}
 
-      {/* 5. Additional Study Themes (When not in catalog-only view) */}
-      {filterView === 'all' && otherThemes.length > 0 && (
+      {/* 6. Additional Study Themes */}
+      {filterView === 'all' && otherThemes.length > 0 && selectedCluster === 'all' && (
         <section className="space-y-4">
-          <h3 className="text-sm font-bold text-slate-800 dark:text-slate-200 uppercase tracking-wider text-xs">
+          <h3 className="text-xs font-bold text-slate-800 dark:text-slate-200 uppercase tracking-wider">
             Additional Syllabus Themes ({otherThemes.length})
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {otherThemes.map((topic) => (
-              <button
-                key={topic.id}
-                type="button"
-                onClick={() => onSelectTopic(topic)}
-                className="group text-left p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 hover:border-blue-400 text-xs transition-all duration-150 flex items-center justify-between gap-3 shadow-2xs"
-              >
-                <div className="min-w-0">
-                  <div className="font-bold text-slate-900 dark:text-white group-hover:text-blue-600 truncate">
-                    {topic.name}
+            {otherThemes.map((topic) => {
+              const d = depthBadge(topic)
+              return (
+                <button
+                  key={topic.id}
+                  type="button"
+                  onClick={() => onSelectTopic(topic)}
+                  className="group text-left p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 hover:border-blue-400 text-xs transition-all duration-150 flex items-center justify-between gap-3 shadow-2xs"
+                >
+                  <div className="min-w-0 flex-1">
+                    <div className="font-bold text-slate-900 dark:text-white group-hover:text-blue-600 truncate">
+                      {topic.name}
+                    </div>
+                    <div className="flex items-center gap-1.5 mt-1">
+                      <span className={`text-[9px] font-semibold uppercase px-1.5 py-0.2 rounded-sm ${d.className}`}>
+                        {d.label}
+                      </span>
+                      {topic.range && <span className="text-[11px] text-slate-400 truncate">{topic.range}</span>}
+                    </div>
                   </div>
-                  {topic.range && <p className="text-slate-400 mt-0.5">{topic.range}</p>}
-                </div>
-                <ChevronRight className="w-4 h-4 text-slate-400 group-hover:text-blue-600 shrink-0" />
-              </button>
-            ))}
+                  <ChevronRight className="w-4 h-4 text-slate-400 group-hover:text-blue-600 shrink-0" />
+                </button>
+              )
+            })}
           </div>
         </section>
       )}
 
-      {/* 6. Granular Provision Catalog (Articles / Sections / Orders / Clusters) */}
+      {/* 7. Granular Provision Catalog (Articles / Sections / Orders / Clusters) */}
       {filterView !== 'high-yield' && (
         <div className="space-y-8">
           {/* A. Constitutional Articles by Part/Cluster */}
@@ -424,16 +626,19 @@ export function SubjectDetail({
             <section className="space-y-6">
               <CatalogHeading
                 title={`All Articles of the Constitution (${articleTopics.length})`}
-                subtitle="Official 2024 Legislative Department text with 10M/16M exam answers on every article."
+                subtitle="Official 2024 Legislative Department text with structured IRAC treatises and provisions."
               />
-              {articleClusters.map((group) => (
-                <ChapterBlock
-                  key={group.name}
-                  name={group.name}
-                  topics={group.topics}
-                  onSelectTopic={onSelectTopic}
-                />
-              ))}
+              {articleClusters
+                .filter((group) => selectedCluster === 'all' || selectedCluster === group.name)
+                .map((group) => (
+                  <ChapterBlock
+                    key={group.name}
+                    name={group.name}
+                    topics={group.topics}
+                    onSelectTopic={onSelectTopic}
+                    isSearchActive={Boolean(q)}
+                  />
+                ))}
             </section>
           )}
 
@@ -444,14 +649,17 @@ export function SubjectDetail({
                 title={`All Statutory Sections (${sectionTopics.length})`}
                 subtitle={`Complete numbered catalog under ${subject.bareActs[0] || subject.name}.`}
               />
-              {sectionClusters.map((group) => (
-                <ChapterBlock
-                  key={group.name}
-                  name={group.name}
-                  topics={group.topics}
-                  onSelectTopic={onSelectTopic}
-                />
-              ))}
+              {sectionClusters
+                .filter((group) => selectedCluster === 'all' || selectedCluster === group.name)
+                .map((group) => (
+                  <ChapterBlock
+                    key={group.name}
+                    name={group.name}
+                    topics={group.topics}
+                    onSelectTopic={onSelectTopic}
+                    isSearchActive={Boolean(q)}
+                  />
+                ))}
             </section>
           )}
 
@@ -462,32 +670,38 @@ export function SubjectDetail({
                 title={`First Schedule Orders I–LI (${orderTopics.length} Orders)`}
                 subtitle="Civil trial, pleading, interim injunction, and execution procedure."
               />
-              {orderClusters.map((group) => (
-                <ChapterBlock
-                  key={group.name}
-                  name={group.name}
-                  topics={group.topics}
-                  onSelectTopic={onSelectTopic}
-                />
-              ))}
+              {orderClusters
+                .filter((group) => selectedCluster === 'all' || selectedCluster === group.name)
+                .map((group) => (
+                  <ChapterBlock
+                    key={group.name}
+                    name={group.name}
+                    topics={group.topics}
+                    onSelectTopic={onSelectTopic}
+                    isSearchActive={Boolean(q)}
+                  />
+                ))}
             </section>
           )}
 
-          {/* D. Non-Catalog Clustered Subjects (Torts, Contract, Family, ADR, etc.) */}
+          {/* D. Non-Catalog Clustered Subjects (Torts, Contract, Family, ADR, Labour, Company) */}
           {!isCatalog && nonCatalogClusters.length > 0 && (
             <section className="space-y-6">
               <CatalogHeading
                 title={`Complete Subject Syllabus (${allFilteredTopics.length} Topics)`}
-                subtitle={`Organized into standardized academic & practice curriculum clusters.`}
+                subtitle="Organized into standardized academic &amp; practice curriculum clusters."
               />
-              {nonCatalogClusters.map((group) => (
-                <ChapterBlock
-                  key={group.name}
-                  name={group.name}
-                  topics={group.topics}
-                  onSelectTopic={onSelectTopic}
-                />
-              ))}
+              {nonCatalogClusters
+                .filter((group) => selectedCluster === 'all' || selectedCluster === group.name)
+                .map((group) => (
+                  <ChapterBlock
+                    key={group.name}
+                    name={group.name}
+                    topics={group.topics}
+                    onSelectTopic={onSelectTopic}
+                    isSearchActive={Boolean(q)}
+                  />
+                ))}
             </section>
           )}
 
@@ -507,7 +721,7 @@ export function SubjectDetail({
         </div>
       )}
 
-      {/* 7. Empty State */}
+      {/* 8. Empty Search State */}
       {allFilteredTopics.length === 0 && (
         <div className="rounded-3xl border border-dashed border-slate-300 dark:border-slate-800 bg-white dark:bg-slate-900 p-12 text-center space-y-3">
           <Search className="w-8 h-8 text-slate-400 mx-auto" />
@@ -515,7 +729,7 @@ export function SubjectDetail({
             No provisions or topics match "{searchQuery}"
           </h3>
           <p className="text-xs text-slate-500 max-w-sm mx-auto">
-            Try searching by section number, keyword, or clear your query to view the full catalog.
+            Catalog still contains <strong>{subject.topics.length.toLocaleString()} topics</strong>. Try searching by section number, keyword, or clear your query to view the full catalog.
           </p>
           <button
             type="button"
@@ -527,25 +741,34 @@ export function SubjectDetail({
         </div>
       )}
 
-      {/* 8. Subject Practice Deck (Bottom of Page) */}
-      <section className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-900/60 p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      {/* 9. Subject Practice Deck (Bottom of Page) */}
+      <section className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-900/60 p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div className="space-y-1">
           <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-blue-700 dark:text-blue-300">
-            <CheckCircle2 className="w-4 h-4 text-emerald-600" /> Practice & Revision Tools
+            <CheckCircle2 className="w-4 h-4 text-emerald-600" /> Practice &amp; Revision Tools
           </div>
-          <h4 className="font-bold text-base text-slate-900 dark:text-white">
+          <h4 className="font-bold text-base sm:text-lg text-slate-950 dark:text-white">
             Ready to test your knowledge on {subject.shortName}?
           </h4>
-          <p className="text-xs text-slate-500 dark:text-slate-400">
+          <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
             Launch timed exam practice or explore concordance mappers on this device.
           </p>
         </div>
 
-        <div className="flex items-center gap-2 flex-wrap">
+        <div className="flex items-center gap-2.5 flex-wrap">
+          {onSelectTool && (
+            <button
+              type="button"
+              onClick={() => onSelectTool('aibe-mcq')}
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-bold shadow-xs transition-colors"
+            >
+              <Award className="w-4 h-4" /> Practice {subject.shortName} MCQs
+            </button>
+          )}
           <button
             type="button"
             onClick={onBack}
-            className="px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 text-xs font-bold text-slate-800 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-800 transition-colors"
+            className="px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-800 transition-colors"
           >
             ← View Other Subjects
           </button>
@@ -572,13 +795,19 @@ function ChapterBlock({
   name,
   topics,
   onSelectTopic,
+  isSearchActive,
 }: {
   name: string
   topics: LawTopic[]
   onSelectTopic: (topic: LawTopic) => void
+  isSearchActive?: boolean
 }) {
+  const [expanded, setExpanded] = useState(false)
+  const isLarge = topics.length > 50
+  const displayedTopics = !isLarge || expanded || isSearchActive ? topics : topics.slice(0, 40)
+
   return (
-    <div className="space-y-2.5">
+    <div id={clusterIdSlug(name)} className="space-y-2.5 scroll-mt-28">
       <div className="flex items-center justify-between gap-2 px-1">
         <div className="flex items-center gap-2">
           <CornerDownRight className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
@@ -591,7 +820,23 @@ function ChapterBlock({
         </span>
       </div>
 
-      <ProvisionCardList topics={topics} onSelectTopic={onSelectTopic} />
+      <ProvisionCardList topics={displayedTopics} onSelectTopic={onSelectTopic} />
+
+      {isLarge && !isSearchActive && (
+        <div className="pt-1 text-center">
+          <button
+            type="button"
+            onClick={() => setExpanded(!expanded)}
+            className="text-xs font-bold text-blue-600 hover:text-blue-700 dark:text-blue-400 inline-flex items-center gap-1.5 py-1.5 px-3 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-950 transition-colors"
+          >
+            {expanded ? (
+              <span>Show fewer provisions in {name}</span>
+            ) : (
+              <span>Show all {topics.length} provisions in {name} ({topics.length - 40} more) →</span>
+            )}
+          </button>
+        </div>
+      )}
     </div>
   )
 }
@@ -622,7 +867,7 @@ function ProvisionCardList({
           >
             <div className="flex items-center gap-3 min-w-0 flex-1">
               {/* Provision Number Badge */}
-              <span className="shrink-0 w-20 sm:w-24 text-center py-1 px-2 rounded-lg bg-blue-50 dark:bg-blue-950/70 text-blue-800 dark:text-blue-300 font-extrabold text-xs tabular-nums border border-blue-200/70 dark:border-blue-900 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+              <span className="shrink-0 w-20 sm:w-28 text-center py-1 px-2 rounded-lg bg-blue-50 dark:bg-blue-950/70 text-blue-800 dark:text-blue-300 font-extrabold text-xs tabular-nums border border-blue-200/70 dark:border-blue-900 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                 {num}
               </span>
 
@@ -637,6 +882,14 @@ function ProvisionCardList({
                       ★ High Yield
                     </span>
                   )}
+                  {(() => {
+                    const d = depthBadge(t)
+                    return (
+                      <span className={`text-[10px] font-semibold uppercase px-1.5 py-0.2 rounded-sm shrink-0 ${d.className}`}>
+                        {d.label}
+                      </span>
+                    )
+                  })()}
                   {isOmitted && (
                     <span className="text-[10px] font-semibold uppercase px-1.5 py-0.2 rounded-sm bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 shrink-0">
                       Omitted
@@ -667,7 +920,7 @@ function ProvisionCardList({
 }
 
 function articleSortKey(id: string): [number, string] {
-  const match = id.match(/^(?:art|s|o)-(\d+)([a-z]*)$/i)
+  const match = id.match(/^(?:art|s|o|order)-(\d+)([a-z]*)$/i)
   if (!match) return [9999, id]
   return [Number(match[1]), match[2]]
 }

@@ -8,6 +8,7 @@ import { LibraryStatsBar } from './LibraryStatsBar'
 import { DualTrackHero } from './DualTrackHero'
 import { LibraryWingsGrid } from './LibraryWingsGrid'
 import { AibeWeightageMatrix } from './AibeWeightageMatrix'
+import { ContinueLearning } from './ContinueLearning'
 import { ToolGlyph } from '../icons'
 
 const QUICK_JUMP_TARGETS = [
@@ -65,6 +66,8 @@ export function HomePage({
 
       {/* 2. Prestige Dual-Track Hero */}
       <DualTrackHero onOpenSubjects={onOpenSubjects} />
+
+      <ContinueLearning onSelectTopic={onSelectTopic} onSelectSubject={onSelectSubject} />
 
       {/* 3. Live Library Metrics Ticker */}
       <LibraryStatsBar />
@@ -147,6 +150,15 @@ export function HomePage({
                     ))}
                   </div>
                 </div>
+              )}
+              {(subjectSearchResults.subjects.length + subjectSearchResults.topics.length) > 16 && (
+                <button
+                  type="button"
+                  onClick={() => onOpenSubjects()}
+                  className="w-full h-10 rounded-xl border border-blue-300 dark:border-blue-800 text-sm font-bold text-blue-700 dark:text-blue-300 hover:bg-blue-600 hover:text-white transition-colors"
+                >
+                  View all {(subjectSearchResults.subjects.length + subjectSearchResults.topics.length).toLocaleString()} matches
+                </button>
               )}
             </div>
           )}

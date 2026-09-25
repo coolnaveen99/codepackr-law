@@ -9,7 +9,8 @@
     "lint": "tsc --noEmit",
     "preview": "vite preview --port 3000 --host 0.0.0.0",
     "checklist": "npx tsx scripts/generate_checklist.ts",
-    "audit": "npx tsx scripts/audit_subjects.ts"
+    "audit": "npx tsx scripts/audit_subjects.ts",
+    "validate:topics": "npx tsx scripts/validate_topics.ts"
   },
   "dependencies": {
     "firebase": "^12.19.0",

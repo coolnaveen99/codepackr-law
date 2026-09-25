@@ -118,7 +118,7 @@ export default function App() {
             </div>
           )}
           {route.type === 'subjects' && <SubjectsList searchQuery={subjectSearch} onSearchChange={setSubjectSearch} onSelectSubject={selectSubject} />}
-          {route.type === 'subject' && activeSubject && <SubjectDetail subject={activeSubject} onBack={openSubjects} onSelectTopic={(topic) => selectTopic(activeSubject.slug, topic)} searchQuery={subjectSearch} onSearchChange={setSubjectSearch} />}
+          {route.type === 'subject' && activeSubject && <SubjectDetail subject={activeSubject} onBack={openSubjects} onSelectTopic={(topic) => selectTopic(activeSubject.slug, topic)} searchQuery={subjectSearch} onSearchChange={setSubjectSearch} onSelectTool={selectTool} />}
           {route.type === 'topic' && activeTopicPair && <TopicDetail subject={activeTopicPair.subject} topic={activeTopicPair.topic} onBack={() => selectSubject(activeTopicPair.subject.slug)} onSelectTopic={(topic) => selectTopic(activeTopicPair.subject.slug, topic)} />}
           {route.type === 'home' && <HomePage searchQuery={searchQuery} onSearchChange={setSearchQuery} selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} filteredTools={filteredTools} subjectSearchResults={subjectSearchResults} onOpenSubjects={openSubjects} onSelectSubject={selectSubject} onSelectTopic={selectTopic} onSelectTool={selectTool} />}
         </main>

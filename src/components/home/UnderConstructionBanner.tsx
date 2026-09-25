@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Construction, CheckCircle2, ChevronDown, ChevronUp, Sparkles, BookOpen } from 'lucide-react'
-import { TOTAL_TOPICS_COUNT } from '../../data/liveSubjects'
 
 /** High-impact, authoritative Under Construction / Rollout Banner for CodePackr Law */
 export function UnderConstructionBanner() {
@@ -40,11 +39,11 @@ export function UnderConstructionBanner() {
           <div className="flex items-center gap-2 flex-wrap">
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 border border-amber-300 dark:border-amber-700/60 text-xs font-bold text-slate-800 dark:text-slate-200 shadow-xs">
               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-              {TOTAL_TOPICS_COUNT.toLocaleString()} Provisions Active
+              Catalog live · treatises expanding
             </span>
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 border border-amber-300 dark:border-amber-700/60 text-xs font-bold text-slate-800 dark:text-slate-200 shadow-xs">
               <Sparkles className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
-              10M & 16M Answers Live
+              IRAC & Practice Models Live
             </span>
             <button
               type="button"
@@ -65,7 +64,7 @@ export function UnderConstructionBanner() {
         </div>
 
         <p className="text-sm sm:text-base font-medium text-slate-700 dark:text-slate-300 max-w-4xl leading-relaxed">
-          <strong className="font-bold text-slate-900 dark:text-white">CodePackr Law</strong> is under active development by our legal research chamber. Every one of the <strong>20 legal subjects</strong> is structured to the Bar Council of India standard with <strong>{TOTAL_TOPICS_COUNT.toLocaleString()} active provisions</strong>, structured IRAC case briefs, comprehensive written submissions, and chamber practice blueprints. Book-chapter treatises with full case ratios are expanding daily.
+          <strong className="font-bold text-slate-900 dark:text-white">CodePackr Law</strong> is under active development by our legal research chamber. Every one of the <strong>20 legal subjects</strong> is structured to the Bar Council of India standard with complete statutory catalogs, structured IRAC case briefs, comprehensive written submissions, and chamber practice blueprints. Book-chapter treatises with full case ratios are expanding daily.
         </p>
 
         {expanded && (

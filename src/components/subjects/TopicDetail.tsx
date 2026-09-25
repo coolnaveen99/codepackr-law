@@ -24,8 +24,7 @@ import { RelatedKnowledge } from '../knowledge/RelatedKnowledge'
 import { RichLegalText } from '../knowledge/RichLegalText'
 import { ModularStudyRenderer } from './ModularStudyRenderer'
 import { knowledgeIdForTopic } from '../../data/knowledge'
-
-const TOPIC_PROGRESS_KEY = 'codepackr-law-topic-progress'
+import { setLastRead, markTopicCompleted, isTopicCompleted } from '../../lib/progress'
 
 interface TopicDetailProps {
   subject: LawSubjectMeta
@@ -66,12 +65,8 @@ export function TopicDetail({
   const [studyComplete, setStudyComplete] = useState(false)
 
   useEffect(() => {
-    try {
-      const saved = JSON.parse(localStorage.getItem(TOPIC_PROGRESS_KEY) || '{}') as Record<string, boolean>
-      setStudyComplete(Boolean(saved[`${subject.slug}/${topic.id}`]))
-    } catch {
-      setStudyComplete(false)
-    }
+    setStudyComplete(isTopicCompleted(subject.slug, topic.id))
+    setLastRead(subject.slug, topic.id)
   }, [subject.slug, topic.id])
 
   useEffect(() => {
@@ -146,13 +141,10 @@ export function TopicDetail({
   }
 
   const toggleStudyComplete = () => {
-    const key = `${subject.slug}/${topic.id}`
     const nextValue = !studyComplete
     setStudyComplete(nextValue)
-    try {
-      const saved = JSON.parse(localStorage.getItem(TOPIC_PROGRESS_KEY) || '{}') as Record<string, boolean>
-      localStorage.setItem(TOPIC_PROGRESS_KEY, JSON.stringify({ ...saved, [key]: nextValue }))
-    } catch {
+    if (nextValue) {
+      markTopicCompleted(subject.slug, topic.id)
     }
   }
 
