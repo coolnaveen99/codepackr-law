@@ -371,10 +371,18 @@ export function SubjectDetail({
             {onSelectTool && (
               <button
                 type="button"
-                onClick={() => onSelectTool('bns-ipc-mapper')}
+                onClick={() => {
+                  const targetSlug =
+                    subject.slug === 'bnss'
+                      ? 'bnss-crpc-mapper'
+                      : subject.slug === 'bsa'
+                        ? 'bsa-iea-mapper'
+                        : 'bns-ipc-mapper'
+                  onSelectTool(targetSlug)
+                }}
                 className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shrink-0 shadow-xs transition-colors"
               >
-                <span>Open Sanhita Mapper</span>
+                <span>Open {subject.shortName} Mapper</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
             )}

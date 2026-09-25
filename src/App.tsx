@@ -72,7 +72,7 @@ export default function App() {
     }
     if (route.type === 'tool') {
       const tool = TOOLS.find((t) => t.slug === route.slug)
-      setPageMeta({ title: `${tool?.name ?? 'Practice Tool'} | ${SITE_NAME}`, description: tool?.description ?? SITE_TAGLINE, path: `/tools/${route.slug}` })
+      setPageMeta({ title: `${tool?.name ?? 'Practice Tool'} | ${SITE_NAME}`, description: tool?.description ?? SITE_TAGLINE, path: `/tool/${route.slug}` })
     }
     if (route.type === 'case-law') {
       setPageMeta({ title: `Case Law Library & Landmark Judgments | ${SITE_NAME}`, description: 'Authoritative Supreme Court landmark judgments, extracted ratios, and practice MCQs.', path: route.judgmentId ? `/case-law/${route.judgmentId}` : '/case-law' })
@@ -152,7 +152,28 @@ export default function App() {
                   onOpenSubject={(slug) => selectSubject(slug)}
                 />
               )}
-              {activeTool.slug === 'bns-ipc-mapper' && <BnsIpcMapper />}
+              {(activeTool.slug === 'bns-ipc-mapper' ||
+                activeTool.slug === 'bnss-crpc-mapper' ||
+                activeTool.slug === 'bsa-iea-mapper') && (
+                <BnsIpcMapper
+                  initialAct={
+                    activeTool.slug === 'bnss-crpc-mapper'
+                      ? 'bnss-crpc'
+                      : activeTool.slug === 'bsa-iea-mapper'
+                        ? 'bsa-iea'
+                        : 'bns-ipc'
+                  }
+                  onSelectAct={(act) => {
+                    const targetSlug =
+                      act === 'bnss-crpc'
+                        ? 'bnss-crpc-mapper'
+                        : act === 'bsa-iea'
+                          ? 'bsa-iea-mapper'
+                          : 'bns-ipc-mapper'
+                    selectTool(targetSlug)
+                  }}
+                />
+              )}
               {activeTool.slug === 'section-flashcards' && <SectionFlashcards />}
               {activeTool.slug === 'exam-timer' && <ExamTimer />}
               {activeTool.slug === 'legal-maxims' && <LegalMaximsTool />}

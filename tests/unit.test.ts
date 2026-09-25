@@ -3,6 +3,8 @@ import assert from 'node:assert/strict'
 import { searchJudgments, filterJudgments } from '../src/utils/judgments/searchJudgments'
 import { ALL_JUDGMENTS } from '../src/data/judgments'
 import { ALL_QUESTIONS } from '../src/data/questions'
+import { TOOLS } from '../src/data/tools'
+import { SECTION_MAPPINGS } from '../src/data/sections/bnsIpcData'
 
 describe('Unit Tests: Judgment Search & Filtering', () => {
   it('searches judgments by query string', () => {
@@ -134,3 +136,42 @@ describe('Unit Tests: Progress & Local Storage Simulation', () => {
     assert.strictEqual(recovered.remainingSeconds, 7200)
   })
 })
+
+describe('Unit Tests: 3 Sanhita Mappers (BNS, BNSS, BSA)', () => {
+  it('contains dedicated tools for BNS, BNSS, and BSA in TOOLS catalog under bare-acts', () => {
+    const bareActTools = TOOLS.filter((t) => t.category === 'bare-acts')
+    assert.strictEqual(bareActTools.length, 3, 'Should have exactly 3 Sanhita mapper tools')
+
+    const bnsTool = bareActTools.find((t) => t.slug === 'bns-ipc-mapper')
+    assert.ok(bnsTool, 'BNS mapper tool must exist')
+    assert.strictEqual(bnsTool.category, 'bare-acts')
+
+    const bnssTool = bareActTools.find((t) => t.slug === 'bnss-crpc-mapper')
+    assert.ok(bnssTool, 'BNSS mapper tool must exist')
+    assert.strictEqual(bnssTool.category, 'bare-acts')
+
+    const bsaTool = bareActTools.find((t) => t.slug === 'bsa-iea-mapper')
+    assert.ok(bsaTool, 'BSA mapper tool must exist')
+    assert.strictEqual(bsaTool.category, 'bare-acts')
+  })
+
+  it('provides rich section mappings for all three criminal law acts', () => {
+    const bnsMappings = SECTION_MAPPINGS.filter((m) => m.actType === 'bns-ipc')
+    const bnssMappings = SECTION_MAPPINGS.filter((m) => m.actType === 'bnss-crpc')
+    const bsaMappings = SECTION_MAPPINGS.filter((m) => m.actType === 'bsa-iea')
+
+    assert.strictEqual(bnsMappings.length, 358, 'BNS mappings must cover all 358 statutory sections')
+    assert.strictEqual(bnssMappings.length, 531, 'BNSS mappings must cover all 531 statutory sections')
+    assert.strictEqual(bsaMappings.length, 170, 'BSA mappings must cover all 170 statutory sections')
+    assert.strictEqual(SECTION_MAPPINGS.length, 1059, 'Total concordance mappings must equal exactly 1,059 provisions')
+
+    for (const m of SECTION_MAPPINGS) {
+      assert.ok(m.id, 'Mapping must have id')
+      assert.ok(m.newAct, 'Mapping must have newAct')
+      assert.ok(m.newSection, 'Mapping must have newSection')
+      assert.ok(m.oldSection, 'Mapping must have oldSection')
+      assert.ok(m.keyChanges, 'Mapping must have keyChanges')
+    }
+  })
+})
+
