@@ -18,7 +18,7 @@
 | Evidence (BSA / Evidence Act) | `bsa` | high | 8 | 177 | 177 | 100% |
 | Family Law | `family` | high | 8 | 38 | 38 | 100% |
 | Contract, Specific Relief, Property & NI Act | `contract` | high | 8 | 42 | 42 | 100% |
-| Petition Formats & Drafting | `petition-formats` | medium | 0 | 8 | 2 | 25% |
+| Petition Formats & Drafting | `petition-formats` | medium | 0 | 8 | 8 | 100% |
 | Law of Torts | `tort` | medium | 5 | 29 | 29 | 100% |
 | ADR & Arbitration | `adr` | medium | 4 | 125 | 125 | 100% |
 | Public Interest Litigation | `pil` | medium | 2 | 18 | 18 | 100% |
@@ -31,7 +31,7 @@
 | Cyber Law | `cyber` | low | 2 | 53 | 53 | 100% |
 | Land Laws | `land` | low | 2 | 44 | 44 | 100% |
 | Intellectual Property Rights | `ipr` | low | 2 | 63 | 63 | 100% |
-| **GRAND TOTAL** | - | - | - | **3552** | **3546** | **99.8%** |
+| **GRAND TOTAL** | - | - | - | **3552** | **3552** | **100.0%** |
 
 ---
 
@@ -2035,13 +2035,13 @@
 | Status | Topic ID | Topic Name | Type | Cluster | High Yield |
 |---|---|---|---|---|---|
 | [x] Complete | `format-writ-petition` | Format 1: Writ Petition under Article 226 / 32 | format | General | ⭐ Yes |
-| [ ] Pending | `format-pil` | Format 2: Public Interest Litigation (PIL) Petition | format | General | ⭐ Yes |
+| [x] Complete | `format-pil` | Format 2: Public Interest Litigation (PIL) Petition | format | General | ⭐ Yes |
 | [x] Complete | `format-plaint` | Format 3: Civil Plaint under Order VII CPC | format | General | ⭐ Yes |
-| [ ] Pending | `format-written-statement` | Format 4: Written Statement under Order VIII CPC | format | General | ⭐ Yes |
-| [ ] Pending | `format-fir` | Format 5: First Information Report (FIR) under Section 173 BNSS | format | General | ⭐ Yes |
-| [ ] Pending | `format-bail-application` | Format 6: Regular & Anticipatory Bail Application under Section 480 / 482 BNSS | format | General | ⭐ Yes |
-| [ ] Pending | `format-legal-notice-138` | Format 7: Statutory Legal Demand Notice under Section 138 NI Act | format | General | ⭐ Yes |
-| [ ] Pending | `format-execution-petition` | Format 8: Execution Petition under Order XXI Rule 11 CPC | format | General | ⭐ Yes |
+| [x] Complete | `format-written-statement` | Format 4: Written Statement under Order VIII CPC | format | General | ⭐ Yes |
+| [x] Complete | `format-fir` | Format 5: First Information Report (FIR) under Section 173 BNSS | format | General | ⭐ Yes |
+| [x] Complete | `format-bail-application` | Format 6: Regular & Anticipatory Bail Application under Section 480 / 482 BNSS | format | General | ⭐ Yes |
+| [x] Complete | `format-legal-notice-138` | Format 7: Statutory Legal Demand Notice under Section 138 NI Act | format | General | ⭐ Yes |
+| [x] Complete | `format-execution-petition` | Format 8: Execution Petition under Order XXI Rule 11 CPC | format | General | ⭐ Yes |
 
 ### Law of Torts (`tort`)
 - **Priority:** medium | **AIBE Weightage:** 5 Questions
