@@ -10,7 +10,10 @@
     "preview": "vite preview --port 3000 --host 0.0.0.0",
     "checklist": "npx tsx scripts/generate_checklist.ts",
     "audit": "npx tsx scripts/audit_subjects.ts",
-    "validate:topics": "npx tsx scripts/validate_topics.ts"
+    "validate:topics": "npx tsx scripts/validate_topics.ts",
+    "validate:judgments": "npx tsx scripts/validate_judgments.ts",
+    "test": "npx tsx --test tests/unit.test.ts",
+    "test:run": "npx tsx --test tests/unit.test.ts"
   },
   "dependencies": {
     "firebase": "^12.19.0",

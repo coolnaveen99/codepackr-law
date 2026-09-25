@@ -1987,24 +1987,24 @@
 |---|---|---|---|---|---|
 | [x] Complete | `ica-s-1-2` | ICA ss. 1–2 — Preliminary and Interpretation | section | Contract Act | No |
 | [x] Complete | `ica-s-3-9` | ICA ss. 3–9 — Communication, Acceptance and Revocation | section | Contract Act | No |
-| [x] Complete | `ica-s-10-12` | ICA ss. 10–12 — Essentials, Capacity and Sound Mind | section | Contract Act | No |
-| [x] Complete | `ica-s-13-19a` | ICA ss. 13–19A — Consent and Vitiating Factors | section | Contract Act | No |
+| [x] Complete | `ica-s-10-12` | ICA ss. 10–12 — Essentials, Capacity and Sound Mind | section | Contract Act | ⭐ Yes |
+| [x] Complete | `ica-s-13-19a` | ICA ss. 13–19A — Consent and Vitiating Factors | section | Contract Act | ⭐ Yes |
 | [x] Complete | `ica-s-20-22` | ICA ss. 20–22 — Mistake of Fact and Law | section | Contract Act | No |
-| [x] Complete | `ica-s-23-25` | ICA ss. 23–25 — Lawful Consideration and Consideration Exceptions | section | Contract Act | No |
-| [x] Complete | `ica-s-26-30` | ICA ss. 26–30 — Void Agreements | section | Contract Act | No |
+| [x] Complete | `ica-s-23-25` | ICA ss. 23–25 — Lawful Consideration and Consideration Exceptions | section | Contract Act | ⭐ Yes |
+| [x] Complete | `ica-s-26-30` | ICA ss. 26–30 — Void Agreements | section | Contract Act | ⭐ Yes |
 | [x] Complete | `ica-s-31-36` | ICA ss. 31–36 — Contingent Contracts | section | Contract Act | No |
 | [x] Complete | `ica-s-37-45` | ICA ss. 37–45 — Performance and Joint Promises | section | Contract I | No |
 | [x] Complete | `ica-s-46-50` | ICA ss. 46–50 — Time, Place and Manner of Performance | section | Contract I | No |
-| [x] Complete | `ica-s-51-58` | ICA ss. 51–58 — Reciprocal Promises and Illegal Alternatives | section | Contract I | No |
+| [x] Complete | `ica-s-51-58` | ICA ss. 51–58 — Reciprocal Promises and Illegal Alternatives | section | Contract I | ⭐ Yes |
 | [x] Complete | `ica-s-59-61` | ICA ss. 59–61 — Appropriation of Payments | section | Contract I | No |
-| [x] Complete | `ica-s-62-67` | ICA ss. 62–67 — Discharge, Rescission, Remission and Restitution | section | Contract I | No |
+| [x] Complete | `ica-s-62-67` | ICA ss. 62–67 — Discharge, Rescission, Remission and Restitution | section | Contract I | ⭐ Yes |
 | [x] Complete | `ica-s-68-72` | ICA ss. 68–72 — Quasi-Contracts | section | Contract I | No |
-| [x] Complete | `ica-s-73-75` | ICA ss. 73–75 — Damages and Compensation for Breach | section | Contract I | No |
-| [x] Complete | `ica-s-124-125` | ICA ss. 124–125 — Indemnity | section | Contract II | No |
-| [x] Complete | `ica-s-126-131` | ICA ss. 126–131 — Guarantee and Continuing Guarantee | section | Contract II | No |
+| [x] Complete | `ica-s-73-75` | ICA ss. 73–75 — Damages and Compensation for Breach | section | Contract I | ⭐ Yes |
+| [x] Complete | `ica-s-124-125` | ICA ss. 124–125 — Indemnity | section | Contract II | ⭐ Yes |
+| [x] Complete | `ica-s-126-131` | ICA ss. 126–131 — Guarantee and Continuing Guarantee | section | Contract II | ⭐ Yes |
 | [x] Complete | `ica-s-132-138` | ICA ss. 132–138 — Discharge of Surety | section | Contract II | No |
 | [x] Complete | `ica-s-139-147` | ICA ss. 139–147 — Surety Rights and Co-Sureties | section | Contract II | No |
-| [x] Complete | `ica-s-148-151` | ICA ss. 148–151 — Bailment and Standard of Care | section | Contract II | No |
+| [x] Complete | `ica-s-148-151` | ICA ss. 148–151 — Bailment and Standard of Care | section | Contract II | ⭐ Yes |
 | [x] Complete | `ica-s-152-157` | ICA ss. 152–157 — Unauthorized Use and Mixing | section | Contract II | No |
 | [x] Complete | `ica-s-158-167` | ICA ss. 158–167 — Expenses, Return and Third-Party Claims | section | Contract II | No |
 | [x] Complete | `ica-s-168-171` | ICA ss. 168–171 — Finder and Lien | section | Contract II | No |
@@ -2017,7 +2017,7 @@
 | [x] Complete | `ica-s-211-221` | ICA ss. 211–221 — Agent Duties and Lien | section | Contract II | No |
 | [x] Complete | `ica-s-222-225` | ICA ss. 222–225 — Principal Duties and Indemnity to Agent | section | Contract II | No |
 | [x] Complete | `ica-s-226-238` | ICA ss. 226–238 — Agency and Third Persons | section | Contract II | No |
-| [x] Complete | `soga-s-1-17` | Sale of Goods Act ss. 1–17 — Formation, Conditions and Warranties | section | Sale of Goods | No |
+| [x] Complete | `soga-s-1-17` | Sale of Goods Act ss. 1–17 — Formation, Conditions and Warranties | section | Sale of Goods | ⭐ Yes |
 | [x] Complete | `soga-s-18-30` | Sale of Goods Act ss. 18–30 — Transfer of Property and Title | section | Sale of Goods | No |
 | [x] Complete | `soga-s-31-61` | Sale of Goods Act ss. 31–61 — Performance and Unpaid Seller | section | Sale of Goods | No |
 | [x] Complete | `soga-s-62-66` | Sale of Goods Act ss. 62–66 — Auction, Savings and Repeal | section | Sale of Goods | No |
@@ -2025,7 +2025,7 @@
 | [x] Complete | `partnership-s-18-30` | Partnership Act ss. 18–30 — Agency, Liabilities and Minor | section | Partnership | No |
 | [x] Complete | `partnership-s-31-38` | Partnership Act ss. 31–38 — Incoming and Outgoing Partners | section | Partnership | No |
 | [x] Complete | `partnership-s-39-55` | Partnership Act ss. 39–55 — Dissolution and Settlement | section | Partnership | No |
-| [x] Complete | `partnership-s-56-69` | Partnership Act ss. 56–69 — Registration and Non-Registration | section | Partnership | No |
+| [x] Complete | `partnership-s-56-69` | Partnership Act ss. 56–69 — Registration and Non-Registration | section | Partnership | ⭐ Yes |
 | [x] Complete | `partnership-s-70-74` | Partnership Act ss. 70–74 — Supplemental Provisions and Savings | section | Partnership | No |
 
 ### Petition Formats & Drafting (`petition-formats`)

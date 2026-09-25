@@ -31,7 +31,7 @@ interface SubjectDetailProps {
   onSelectTopic: (topic: LawTopic) => void
   searchQuery: string
   onSearchChange: (q: string) => void
-  onSelectTool?: (slug: string) => void
+  onSelectTool?: (slug: string, params?: { subject?: string; topicId?: string; mode?: 'practice' | 'exam' }) => void
 }
 
 function depthBadge(topic: LawTopic): { label: string; className: string } {
@@ -759,7 +759,7 @@ export function SubjectDetail({
           {onSelectTool && (
             <button
               type="button"
-              onClick={() => onSelectTool('aibe-mcq')}
+              onClick={() => onSelectTool('aibe-mcq', { subject: subject.slug, mode: 'practice' })}
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-bold shadow-xs transition-colors"
             >
               <Award className="w-4 h-4" /> Practice {subject.shortName} MCQs

@@ -3,7 +3,6 @@ import { SUBJECTS, type LawTopic } from '../../data/subjects'
 import { TOTAL_TOPICS_COUNT } from '../../data/liveSubjects'
 import type { ToolCategory, ToolMetadata } from '../../types'
 import { Badge } from '../ui/Badge'
-import { UnderConstructionBanner } from './UnderConstructionBanner'
 import { LibraryStatsBar } from './LibraryStatsBar'
 import { DualTrackHero } from './DualTrackHero'
 import { LibraryWingsGrid } from './LibraryWingsGrid'
@@ -61,10 +60,7 @@ export function HomePage({
 }: HomePageProps) {
   return (
     <div className="space-y-12 sm:space-y-16 pb-12">
-      {/* 1. Site Under Active Construction Banner (Preserved and Refined) */}
-      <UnderConstructionBanner />
-
-      {/* 2. Prestige Dual-Track Hero */}
+      {/* 1. Prestige Dual-Track Hero */}
       <DualTrackHero onOpenSubjects={onOpenSubjects} />
 
       <ContinueLearning onSelectTopic={onSelectTopic} onSelectSubject={onSelectSubject} />

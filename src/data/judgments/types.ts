@@ -7,6 +7,8 @@ export interface JudgmentProvision {
   section?: string
   article?: string
   title?: string
+  subjectSlug?: string
+  topicId?: string
 }
 
 export interface JudgmentReasoning {

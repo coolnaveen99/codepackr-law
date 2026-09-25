@@ -281,7 +281,7 @@ function explicitSectionTopics(prefix: string, actName: string, sections: string
   }))
 }
 
-export const SUBJECTS: LawSubjectMeta[] = [
+const RAW_SUBJECTS: LawSubjectMeta[] = [
   {
     id: 'constitution',
     slug: 'constitution',
@@ -485,24 +485,24 @@ export const SUBJECTS: LawSubjectMeta[] = [
     topics: [
       { id: 'ica-s-1-2', name: 'ICA ss. 1–2 — Preliminary and Interpretation', type: 'section', range: 's. 1–2', cluster: 'Contract Act', hasNotes: true },
       { id: 'ica-s-3-9', name: 'ICA ss. 3–9 — Communication, Acceptance and Revocation', type: 'section', range: 's. 3–9', cluster: 'Contract Act', hasNotes: true },
-      { id: 'ica-s-10-12', name: 'ICA ss. 10–12 — Essentials, Capacity and Sound Mind', type: 'section', range: 's. 10–12', cluster: 'Contract Act', hasNotes: true },
-      { id: 'ica-s-13-19a', name: 'ICA ss. 13–19A — Consent and Vitiating Factors', type: 'section', range: 's. 13–19A', cluster: 'Contract Act', hasNotes: true },
+      { id: 'ica-s-10-12', name: 'ICA ss. 10–12 — Essentials, Capacity and Sound Mind', type: 'section', range: 's. 10–12', cluster: 'Contract Act', highYield: true, hasNotes: true },
+      { id: 'ica-s-13-19a', name: 'ICA ss. 13–19A — Consent and Vitiating Factors', type: 'section', range: 's. 13–19A', cluster: 'Contract Act', highYield: true, hasNotes: true },
       { id: 'ica-s-20-22', name: 'ICA ss. 20–22 — Mistake of Fact and Law', type: 'section', range: 's. 20–22', cluster: 'Contract Act', hasNotes: true },
-      { id: 'ica-s-23-25', name: 'ICA ss. 23–25 — Lawful Consideration and Consideration Exceptions', type: 'section', range: 's. 23–25', cluster: 'Contract Act', hasNotes: true },
-      { id: 'ica-s-26-30', name: 'ICA ss. 26–30 — Void Agreements', type: 'section', range: 's. 26–30', cluster: 'Contract Act', hasNotes: true },
+      { id: 'ica-s-23-25', name: 'ICA ss. 23–25 — Lawful Consideration and Consideration Exceptions', type: 'section', range: 's. 23–25', cluster: 'Contract Act', highYield: true, hasNotes: true },
+      { id: 'ica-s-26-30', name: 'ICA ss. 26–30 — Void Agreements', type: 'section', range: 's. 26–30', cluster: 'Contract Act', highYield: true, hasNotes: true },
       { id: 'ica-s-31-36', name: 'ICA ss. 31–36 — Contingent Contracts', type: 'section', range: 's. 31–36', cluster: 'Contract Act', hasNotes: true },
       { id: 'ica-s-37-45', name: 'ICA ss. 37–45 — Performance and Joint Promises', type: 'section', range: 's. 37–45', cluster: 'Contract I', hasNotes: true },
       { id: 'ica-s-46-50', name: 'ICA ss. 46–50 — Time, Place and Manner of Performance', type: 'section', range: 's. 46–50', cluster: 'Contract I', hasNotes: true },
-      { id: 'ica-s-51-58', name: 'ICA ss. 51–58 — Reciprocal Promises and Illegal Alternatives', type: 'section', range: 's. 51–58', cluster: 'Contract I', hasNotes: true },
+      { id: 'ica-s-51-58', name: 'ICA ss. 51–58 — Reciprocal Promises and Illegal Alternatives', type: 'section', range: 's. 51–58', cluster: 'Contract I', highYield: true, hasNotes: true },
       { id: 'ica-s-59-61', name: 'ICA ss. 59–61 — Appropriation of Payments', type: 'section', range: 's. 59–61', cluster: 'Contract I', hasNotes: true },
-      { id: 'ica-s-62-67', name: 'ICA ss. 62–67 — Discharge, Rescission, Remission and Restitution', type: 'section', range: 's. 62–67', cluster: 'Contract I', hasNotes: true },
+      { id: 'ica-s-62-67', name: 'ICA ss. 62–67 — Discharge, Rescission, Remission and Restitution', type: 'section', range: 's. 62–67', cluster: 'Contract I', highYield: true, hasNotes: true },
       { id: 'ica-s-68-72', name: 'ICA ss. 68–72 — Quasi-Contracts', type: 'section', range: 's. 68–72', cluster: 'Contract I', hasNotes: true },
-      { id: 'ica-s-73-75', name: 'ICA ss. 73–75 — Damages and Compensation for Breach', type: 'section', range: 's. 73–75', cluster: 'Contract I', hasNotes: true },
-      { id: 'ica-s-124-125', name: 'ICA ss. 124–125 — Indemnity', type: 'section', range: 's. 124–125', cluster: 'Contract II', hasNotes: true },
-      { id: 'ica-s-126-131', name: 'ICA ss. 126–131 — Guarantee and Continuing Guarantee', type: 'section', range: 's. 126–131', cluster: 'Contract II', hasNotes: true },
+      { id: 'ica-s-73-75', name: 'ICA ss. 73–75 — Damages and Compensation for Breach', type: 'section', range: 's. 73–75', cluster: 'Contract I', highYield: true, hasNotes: true },
+      { id: 'ica-s-124-125', name: 'ICA ss. 124–125 — Indemnity', type: 'section', range: 's. 124–125', cluster: 'Contract II', highYield: true, hasNotes: true },
+      { id: 'ica-s-126-131', name: 'ICA ss. 126–131 — Guarantee and Continuing Guarantee', type: 'section', range: 's. 126–131', cluster: 'Contract II', highYield: true, hasNotes: true },
       { id: 'ica-s-132-138', name: 'ICA ss. 132–138 — Discharge of Surety', type: 'section', range: 's. 132–138', cluster: 'Contract II', hasNotes: true },
       { id: 'ica-s-139-147', name: 'ICA ss. 139–147 — Surety Rights and Co-Sureties', type: 'section', range: 's. 139–147', cluster: 'Contract II', hasNotes: true },
-      { id: 'ica-s-148-151', name: 'ICA ss. 148–151 — Bailment and Standard of Care', type: 'section', range: 's. 148–151', cluster: 'Contract II', hasNotes: true },
+      { id: 'ica-s-148-151', name: 'ICA ss. 148–151 — Bailment and Standard of Care', type: 'section', range: 's. 148–151', cluster: 'Contract II', highYield: true, hasNotes: true },
       { id: 'ica-s-152-157', name: 'ICA ss. 152–157 — Unauthorized Use and Mixing', type: 'section', range: 's. 152–157', cluster: 'Contract II', hasNotes: true },
       { id: 'ica-s-158-167', name: 'ICA ss. 158–167 — Expenses, Return and Third-Party Claims', type: 'section', range: 's. 158–167', cluster: 'Contract II', hasNotes: true },
       { id: 'ica-s-168-171', name: 'ICA ss. 168–171 — Finder and Lien', type: 'section', range: 's. 168–171', cluster: 'Contract II', hasNotes: true },
@@ -515,7 +515,7 @@ export const SUBJECTS: LawSubjectMeta[] = [
       { id: 'ica-s-211-221', name: 'ICA ss. 211–221 — Agent Duties and Lien', type: 'section', range: 's. 211–221', cluster: 'Contract II', hasNotes: true },
       { id: 'ica-s-222-225', name: 'ICA ss. 222–225 — Principal Duties and Indemnity to Agent', type: 'section', range: 's. 222–225', cluster: 'Contract II', hasNotes: true },
       { id: 'ica-s-226-238', name: 'ICA ss. 226–238 — Agency and Third Persons', type: 'section', range: 's. 226–238', cluster: 'Contract II', hasNotes: true },
-      { id: 'soga-s-1-17', name: 'Sale of Goods Act ss. 1–17 — Formation, Conditions and Warranties', type: 'section', range: 'SOGA ss. 1–17', cluster: 'Sale of Goods', hasNotes: true },
+      { id: 'soga-s-1-17', name: 'Sale of Goods Act ss. 1–17 — Formation, Conditions and Warranties', type: 'section', range: 'SOGA ss. 1–17', cluster: 'Sale of Goods', highYield: true, hasNotes: true },
       { id: 'soga-s-18-30', name: 'Sale of Goods Act ss. 18–30 — Transfer of Property and Title', type: 'section', range: 'SOGA ss. 18–30', cluster: 'Sale of Goods', hasNotes: true },
       { id: 'soga-s-31-61', name: 'Sale of Goods Act ss. 31–61 — Performance and Unpaid Seller', type: 'section', range: 'SOGA ss. 31–61', cluster: 'Sale of Goods', hasNotes: true },
       { id: 'soga-s-62-66', name: 'Sale of Goods Act ss. 62–66 — Auction, Savings and Repeal', type: 'section', range: 'SOGA ss. 62–66', cluster: 'Sale of Goods', hasNotes: true },
@@ -523,7 +523,7 @@ export const SUBJECTS: LawSubjectMeta[] = [
       { id: 'partnership-s-18-30', name: 'Partnership Act ss. 18–30 — Agency, Liabilities and Minor', type: 'section', range: 's. 18–30', cluster: 'Partnership', hasNotes: true },
       { id: 'partnership-s-31-38', name: 'Partnership Act ss. 31–38 — Incoming and Outgoing Partners', type: 'section', range: 's. 31–38', cluster: 'Partnership', hasNotes: true },
       { id: 'partnership-s-39-55', name: 'Partnership Act ss. 39–55 — Dissolution and Settlement', type: 'section', range: 's. 39–55', cluster: 'Partnership', hasNotes: true },
-      { id: 'partnership-s-56-69', name: 'Partnership Act ss. 56–69 — Registration and Non-Registration', type: 'section', range: 's. 56–69', cluster: 'Partnership', hasNotes: true },
+      { id: 'partnership-s-56-69', name: 'Partnership Act ss. 56–69 — Registration and Non-Registration', type: 'section', range: 's. 56–69', cluster: 'Partnership', highYield: true, hasNotes: true },
       { id: 'partnership-s-70-74', name: 'Partnership Act ss. 70–74 — Supplemental Provisions and Savings', type: 'section', range: 's. 70–74', cluster: 'Partnership', hasNotes: true },
     ],
   },
@@ -1149,6 +1149,14 @@ export const SUBJECTS: LawSubjectMeta[] = [
     ],
   },
 ]
+
+export const SUBJECTS: LawSubjectMeta[] = RAW_SUBJECTS.map((s) => ({
+  ...s,
+  topics: s.topics.map((t) => ({
+    ...t,
+    hasNotes: t.hasNotes ?? true,
+  })),
+}))
 
 export const PRIORITY_ORDER: SubjectPriority[] = ['high', 'medium', 'low']
 

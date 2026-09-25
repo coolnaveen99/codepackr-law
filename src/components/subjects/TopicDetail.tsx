@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import {
   ArrowLeft,
   BookOpen,
@@ -10,6 +10,9 @@ import {
   ChevronUp,
   Loader2,
   PenLine,
+  Award,
+  Link2,
+  CheckCircle2,
 } from 'lucide-react'
 import type { LawSubjectMeta, LawTopic, CaseCitation } from '../../data/subjects'
 import {
@@ -24,13 +27,22 @@ import { RelatedKnowledge } from '../knowledge/RelatedKnowledge'
 import { RichLegalText } from '../knowledge/RichLegalText'
 import { ModularStudyRenderer } from './ModularStudyRenderer'
 import { knowledgeIdForTopic } from '../../data/knowledge'
-import { setLastRead, markTopicCompleted, isTopicCompleted } from '../../lib/progress'
+import {
+  setLastRead,
+  markTopicCompleted,
+  isTopicCompleted,
+  getProgress,
+} from '../../lib/progress'
+import { ALL_JUDGMENTS } from '../../data/judgments'
+import type { Judgment } from '../../data/judgments/types'
 
 interface TopicDetailProps {
   subject: LawSubjectMeta
   topic: LawTopic
   onBack: () => void
   onSelectTopic?: (topic: LawTopic) => void
+  onSelectTool?: (slug: string, params?: { subject?: string; topicId?: string; mode?: 'practice' | 'exam' }) => void
+  onOpenCaseLaw?: (judgmentId: string) => void
 }
 
 function topicTypeLabel(type: LawTopic['type']) {
@@ -52,18 +64,50 @@ function topicTypeLabel(type: LawTopic['type']) {
   }
 }
 
+function findJudgmentForCase(c: CaseCitation): Judgment | undefined {
+  const nameLower = c.name.toLowerCase()
+  return ALL_JUDGMENTS.find((j) => {
+    const jShort = j.shortName?.toLowerCase()
+    const jName = j.caseName.toLowerCase()
+    return (
+      (jShort && nameLower.includes(jShort)) ||
+      nameLower.includes(jName) ||
+      (c.citation && j.citation && c.citation.toLowerCase().includes(j.citation.toLowerCase()))
+    )
+  })
+}
+
+function catalogNeighbours(subject: LawSubjectMeta, topic: LawTopic) {
+  const list = subject.topics
+  const idx = list.findIndex((t) => t.id === topic.id)
+  if (idx < 0) return { prev: undefined, next: undefined }
+  return {
+    prev: idx > 0 ? list[idx - 1] : undefined,
+    next: idx < list.length - 1 ? list[idx + 1] : undefined,
+  }
+}
+
 export function TopicDetail({
   subject,
   topic,
   onBack,
   onSelectTopic,
+  onSelectTool,
+  onOpenCaseLaw,
 }: TopicDetailProps) {
   const [copiedCaseId, setCopiedCaseId] = useState<string | null>(null)
   const [tipsOpen, setTipsOpen] = useState(true)
   const [content, setContent] = useState<TopicContent | null>(null)
   const [loading, setLoading] = useState(true)
   const [studyComplete, setStudyComplete] = useState(false)
+  const [activeSection, setActiveSection] = useState('study-topic')
 
+  const [expandedBrief, setExpandedBrief] = useState(true)
+  const [expandedSubmissions, setExpandedSubmissions] = useState(true)
+  const [copiedBrief, setCopiedBrief] = useState(false)
+  const [copiedSubmissions, setCopiedSubmissions] = useState(false)
+
+  // 3.1 Persist last-read on mount & sync completion
   useEffect(() => {
     setStudyComplete(isTopicCompleted(subject.slug, topic.id))
     setLastRead(subject.slug, topic.id)
@@ -90,7 +134,7 @@ export function TopicDetail({
   const hasContent = Boolean(studyContent)
   const hasCases = (content?.cases?.length ?? 0) > 0
   const knowledgeId = knowledgeIdForTopic(subject.slug, topic.id)
-  const neighbours = provisionNeighbours(subject, topic)
+  const neighbours = useMemo(() => catalogNeighbours(subject, topic), [subject, topic])
   const legalBrief = getLegalBrief(content)
   const writtenSubmissions = getWrittenSubmissions(content)
   const statutoryExamples = (content?.examples ?? []).filter(
@@ -100,13 +144,27 @@ export function TopicDetail({
     (example) => !/^Illustration/i.test(example.title || '') && example.illustrationType !== 'statutory',
   )
   const hasIllustrations = statutoryExamples.length > 0
+  const hasModularSections = (content?.sections?.length ?? 0) > 0
+  const hasDistinctions = (content?.distinctions?.length ?? 0) > 0 || (content?.misconceptions?.length ?? 0) > 0
+  const hasExamTips = (content?.examTips?.length ?? 0) > 0 || (content?.revisionPoints?.length ?? 0) > 0
 
-  const [expandedBrief, setExpandedBrief] = useState(true)
-  const [expandedSubmissions, setExpandedSubmissions] = useState(true)
-  const [copiedBrief, setCopiedBrief] = useState(false)
-  const [copiedSubmissions, setCopiedSubmissions] = useState(false)
+  // 3.7 Explicit User Mark Complete Control
+  const toggleStudyComplete = () => {
+    const nextValue = !studyComplete
+    setStudyComplete(nextValue)
+    if (nextValue) {
+      markTopicCompleted(subject.slug, topic.id)
+    } else if (typeof window !== 'undefined') {
+      const remaining = getProgress().filter(
+        (e) => !(e.subjectSlug === subject.slug && e.topicId === topic.id),
+      )
+      localStorage.setItem('cplaw.progress.v1', JSON.stringify(remaining))
+    }
+  }
 
+  // 3.2 In-page Section Navigation
   function jumpTo(id: string) {
+    setActiveSection(id)
     if (id === 'legal-brief') setExpandedBrief(true)
     if (id === 'written-submissions') setExpandedSubmissions(true)
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -140,170 +198,348 @@ export function TopicDetail({
     setTimeout(() => setCopiedCaseId(null), 2000)
   }
 
-  const toggleStudyComplete = () => {
-    const nextValue = !studyComplete
-    setStudyComplete(nextValue)
-    if (nextValue) {
-      markTopicCompleted(subject.slug, topic.id)
-    }
-  }
+  const isCriminalSanhita =
+    subject.slug === 'bns' || subject.slug === 'bnss' || subject.slug === 'bsa'
 
   return (
     <div className="space-y-8 max-w-6xl pb-24 sm:pb-8">
-      <div className="space-y-3">
-        <button
-          type="button"
-          onClick={onBack}
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline"
-        >
-          <ArrowLeft className="w-3.5 h-3.5" />
-          {subject.shortName}
-        </button>
+      {/* 1. Top Breadcrumbs & Topic Title Header */}
+      <div className="space-y-4">
+        <div className="flex items-center justify-between gap-3">
+          <button
+            type="button"
+            onClick={onBack}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs font-bold text-slate-700 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-300 hover:border-blue-400 transition-colors shadow-2xs"
+          >
+            <ArrowLeft className="w-3.5 h-3.5" />
+            Back to {subject.shortName}
+          </button>
+
+          {/* 3.3 Prev / Next topic by catalog order */}
+          {neighbours && onSelectTopic && (
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                disabled={!neighbours.prev}
+                onClick={() => neighbours.prev && onSelectTopic(neighbours.prev)}
+                className={`text-xs px-3 py-1.5 rounded-xl border font-bold transition-colors ${
+                  neighbours.prev
+                    ? 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 hover:border-blue-400 hover:text-blue-600'
+                    : 'border-transparent text-slate-300 dark:text-slate-700 cursor-not-allowed'
+                }`}
+                title={neighbours.prev ? neighbours.prev.name : 'First topic in catalog'}
+              >
+                ← Prev
+              </button>
+              <button
+                type="button"
+                disabled={!neighbours.next}
+                onClick={() => neighbours.next && onSelectTopic(neighbours.next)}
+                className={`text-xs px-3 py-1.5 rounded-xl border font-bold transition-colors ${
+                  neighbours.next
+                    ? 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 hover:border-blue-400 hover:text-blue-600'
+                    : 'border-transparent text-slate-300 dark:text-slate-700 cursor-not-allowed'
+                }`}
+                title={neighbours.next ? neighbours.next.name : 'Last topic in catalog'}
+              >
+                Next →
+              </button>
+            </div>
+          )}
+        </div>
 
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
-          <div className="space-y-2 min-w-0">
+          <div className="space-y-2 min-w-0 flex-1">
+            {/* Badges Row */}
             <div className="flex items-center gap-2 flex-wrap">
-              <span className="text-[10px] uppercase tracking-[0.14em] px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 font-semibold">
+              <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-bold border border-slate-200 dark:border-slate-700">
                 {topicTypeLabel(topic.type)}
               </span>
-              {topic.highYield && <Badge variant="amber">High yield</Badge>}
+
+              {/* 3.9 Honesty Badges */}
+              {topic.highYield ? (
+                <>
+                  <Badge variant="amber">★ High yield</Badge>
+                  <span className="text-[10px] uppercase font-bold px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+                    Full Treatise
+                  </span>
+                </>
+              ) : topic.hasNotes === false ? (
+                <span className="text-[10px] uppercase font-bold px-2 py-0.5 rounded-md bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300 border border-amber-200 dark:border-amber-800">
+                  Needs Review
+                </span>
+              ) : (
+                <span className="text-[10px] uppercase font-semibold px-2 py-0.5 rounded-md bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                  Structured Catalog Note
+                </span>
+              )}
+
               {topic.range && (
-                <span className="text-xs font-semibold text-blue-600 dark:text-blue-400">
+                <span className="text-xs font-bold text-blue-700 dark:text-blue-300 tabular-nums">
                   {topic.range}
                 </span>
               )}
             </div>
 
-            <h2 className="font-display text-3xl sm:text-5xl font-semibold tracking-tight text-slate-900 dark:text-white leading-[1.12]">
+            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-950 dark:text-white leading-tight">
               {topic.name}
-            </h2>
+            </h1>
 
             {topic.note && (
-              <p className="text-sm text-slate-600 dark:text-slate-400">{topic.note}</p>
-            )}
-            {neighbours && onSelectTopic && (
-              <div className="flex flex-wrap gap-2 pt-1">
-                {neighbours.prev && (
-                  <button
-                    type="button"
-                    onClick={() => onSelectTopic(neighbours.prev!)}
-                    className="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline"
-                  >
-                    ← {neighbours.prev.range ?? neighbours.prev.name}
-                  </button>
-                )}
-                {neighbours.next && (
-                  <button
-                    type="button"
-                    onClick={() => onSelectTopic(neighbours.next!)}
-                    className="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline"
-                  >
-                    {neighbours.next.range ?? neighbours.next.name} →
-                  </button>
-                )}
-              </div>
+              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed">
+                {topic.note}
+              </p>
             )}
           </div>
 
-          <button
-            type="button"
-            onClick={toggleStudyComplete}
-            className={`inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-2xl border text-sm font-semibold transition shrink-0 ${studyComplete ? 'border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300' : 'border-blue-200 text-blue-700 hover:bg-blue-50 dark:border-blue-900 dark:text-blue-300 dark:hover:bg-blue-950/40'}`}
-          >
-            {studyComplete ? 'Study completed' : 'Mark study complete'}
-          </button>
-        </div>
-      </div>
-
-      {(legalBrief || writtenSubmissions) && (
-        <div className="sticky top-16 z-30 -mx-1 px-1 py-3 bg-slate-50/90 dark:bg-slate-950/90 backdrop-blur-md">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500 mr-1">Drafting</span>
+          {/* 3.7 Mark Complete Control & 3.8 Practice Topic CTA */}
+          <div className="flex sm:flex-col items-center sm:items-end gap-2.5 shrink-0">
             <button
               type="button"
-              onClick={() => jumpTo('study-topic')}
-              className="h-11 px-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-sm font-semibold text-slate-700 dark:text-slate-200"
+              onClick={toggleStudyComplete}
+              className={`inline-flex items-center justify-center gap-2 h-11 px-4 rounded-2xl border text-xs sm:text-sm font-bold transition-all shrink-0 shadow-2xs ${
+                studyComplete
+                  ? 'border-emerald-500 bg-emerald-50 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300'
+                  : 'border-blue-200 text-blue-700 hover:bg-blue-50 dark:border-blue-900 dark:text-blue-300 dark:hover:bg-blue-950/40'
+              }`}
             >
-              Notes
+              {studyComplete ? (
+                <>
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                  <span>Topic Completed</span>
+                </>
+              ) : (
+                <span>Mark as Completed</span>
+              )}
             </button>
-            {hasIllustrations && (
+
+            {onSelectTool && (
               <button
                 type="button"
-                onClick={() => jumpTo('statutory-illustrations')}
-                className="h-11 px-4 rounded-2xl border border-blue-200 dark:border-blue-800 bg-white dark:bg-slate-900 text-sm font-semibold text-blue-700 dark:text-blue-300"
+                onClick={() =>
+                  onSelectTool('aibe-mcq', {
+                    subject: subject.slug,
+                    topicId: topic.id,
+                    mode: 'practice',
+                  })
+                }
+                className="inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-bold shadow-xs transition-colors shrink-0"
               >
-                Illustrations
-              </button>
-            )}
-            {hasCases && (
-              <button
-                type="button"
-                onClick={() => jumpTo('case-law-ratios')}
-                className="h-11 px-4 rounded-2xl border border-blue-200 dark:border-blue-800 bg-white dark:bg-slate-900 text-sm font-semibold text-blue-700 dark:text-blue-300"
-              >
-                Case Law Ratios
-              </button>
-            )}
-            {legalBrief && (
-              <button
-                type="button"
-                onClick={() => jumpTo('legal-brief')}
-                className="h-11 px-4 rounded-2xl bg-blue-600 text-white text-xs sm:text-sm font-bold shadow-sm shadow-blue-600/20 inline-flex items-center gap-1.5"
-              >
-                <PenLine className="w-3.5 h-3.5" />
-                <span>Case Brief / Assessment</span>
-              </button>
-            )}
-            {writtenSubmissions && (
-              <button
-                type="button"
-                onClick={() => jumpTo('written-submissions')}
-                className="h-11 px-4 rounded-2xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs sm:text-sm font-bold inline-flex items-center gap-1.5"
-              >
-                <PenLine className="w-3.5 h-3.5" />
-                <span>Written Submissions</span>
+                <Award className="w-4 h-4" />
+                <span>Practice MCQs</span>
               </button>
             )}
           </div>
         </div>
-      )}
 
+        {/* 3.5 Sanhita Concordance Mapper CTA */}
+        {isCriminalSanhita && (
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-amber-900 dark:text-amber-200 bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900 rounded-2xl p-3.5">
+            <div className="flex items-center gap-2">
+              <Scale className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0" />
+              <span>
+                <strong>Statutory Concordance:</strong> Verify transition from Indian Penal Code, CrPC, or Indian Evidence Act under the 2024 Sanhitas.
+              </span>
+            </div>
+            {onSelectTool && (
+              <button
+                type="button"
+                onClick={() => onSelectTool('bns-ipc-mapper')}
+                className="inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shrink-0 shadow-xs transition-colors"
+              >
+                <span>Open Sanhita Mapper →</span>
+              </button>
+            )}
+          </div>
+        )}
+      </div>
+
+      {/* 2. In-Page Section Navigation Sticky Bar (Task 3.2) */}
+      <nav
+        aria-label="In-page section navigation"
+        className="sticky top-0 sm:top-14 z-30 -mx-2 px-2 py-2.5 bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-md rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-xs"
+      >
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-0.5 text-xs no-scrollbar">
+          <button
+            type="button"
+            onClick={() => jumpTo('study-topic')}
+            className={`px-3 py-1.5 rounded-xl font-bold shrink-0 transition-colors ${
+              activeSection === 'study-topic'
+                ? 'bg-blue-600 text-white shadow-xs'
+                : 'text-slate-700 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-800'
+            }`}
+          >
+            Study Notes
+          </button>
+
+          {hasModularSections && (
+            <button
+              type="button"
+              onClick={() => jumpTo('modular-sections')}
+              className={`px-3 py-1.5 rounded-xl font-bold shrink-0 transition-colors ${
+                activeSection === 'modular-sections'
+                  ? 'bg-blue-600 text-white shadow-xs'
+                  : 'text-slate-700 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-800'
+              }`}
+            >
+              Statutory Sections
+            </button>
+          )}
+
+          {hasIllustrations && (
+            <button
+              type="button"
+              onClick={() => jumpTo('statutory-illustrations')}
+              className={`px-3 py-1.5 rounded-xl font-bold shrink-0 transition-colors ${
+                activeSection === 'statutory-illustrations'
+                  ? 'bg-blue-600 text-white shadow-xs'
+                  : 'text-slate-700 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-800'
+              }`}
+            >
+              Illustrations
+            </button>
+          )}
+
+          {hasCases && (
+            <button
+              type="button"
+              onClick={() => jumpTo('case-law-ratios')}
+              className={`px-3 py-1.5 rounded-xl font-bold shrink-0 transition-colors ${
+                activeSection === 'case-law-ratios'
+                  ? 'bg-blue-600 text-white shadow-xs'
+                  : 'text-slate-700 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-800'
+              }`}
+            >
+              Case Law Ratios
+            </button>
+          )}
+
+          {legalBrief && (
+            <button
+              type="button"
+              onClick={() => jumpTo('legal-brief')}
+              className={`px-3 py-1.5 rounded-xl font-bold shrink-0 inline-flex items-center gap-1 transition-colors ${
+                activeSection === 'legal-brief'
+                  ? 'bg-blue-600 text-white shadow-xs'
+                  : 'text-slate-700 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-800'
+              }`}
+            >
+              <PenLine className="w-3 h-3" />
+              <span>IRAC Case Brief</span>
+            </button>
+          )}
+
+          {writtenSubmissions && (
+            <button
+              type="button"
+              onClick={() => jumpTo('written-submissions')}
+              className={`px-3 py-1.5 rounded-xl font-bold shrink-0 inline-flex items-center gap-1 transition-colors ${
+                activeSection === 'written-submissions'
+                  ? 'bg-blue-600 text-white shadow-xs'
+                  : 'text-slate-700 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-800'
+              }`}
+            >
+              <PenLine className="w-3 h-3" />
+              <span>Written Submissions</span>
+            </button>
+          )}
+
+          {hasDistinctions && (
+            <button
+              type="button"
+              onClick={() => jumpTo('distinctions')}
+              className={`px-3 py-1.5 rounded-xl font-bold shrink-0 transition-colors ${
+                activeSection === 'distinctions'
+                  ? 'bg-blue-600 text-white shadow-xs'
+                  : 'text-slate-700 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-800'
+              }`}
+            >
+              Distinctions &amp; Traps
+            </button>
+          )}
+
+          {hasExamTips && (
+            <button
+              type="button"
+              onClick={() => jumpTo('exam-tips')}
+              className={`px-3 py-1.5 rounded-xl font-bold shrink-0 transition-colors ${
+                activeSection === 'exam-tips'
+                  ? 'bg-blue-600 text-white shadow-xs'
+                  : 'text-slate-700 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-800'
+              }`}
+            >
+              Chamber Insights
+            </button>
+          )}
+
+          {knowledgeId && (
+            <button
+              type="button"
+              onClick={() => jumpTo('related-knowledge')}
+              className={`px-3 py-1.5 rounded-xl font-bold shrink-0 transition-colors ${
+                activeSection === 'related-knowledge'
+                  ? 'bg-blue-600 text-white shadow-xs'
+                  : 'text-slate-700 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-800'
+              }`}
+            >
+              Knowledge Graph
+            </button>
+          )}
+        </div>
+      </nav>
+
+      {/* Loading state */}
       {loading && (
-        <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-10 flex flex-col items-center justify-center gap-3 text-slate-500">
-          <Loader2 className="w-6 h-6 animate-spin text-blue-600" />
-          <p className="text-sm">Loading notes…</p>
+        <div className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-12 flex flex-col items-center justify-center gap-3 text-slate-500">
+          <Loader2 className="w-7 h-7 animate-spin text-blue-600" />
+          <p className="text-sm font-medium">Loading authoritative treatise notes…</p>
         </div>
       )}
 
+      {/* 3.9 Structured Catalog Note Honesty Callout */}
+      {!loading && !topic.highYield && (
+        <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50/80 dark:bg-slate-900/50 p-4 text-xs text-slate-600 dark:text-slate-400 space-y-1">
+          <p className="font-bold text-slate-800 dark:text-slate-200 uppercase tracking-wide">
+            Structured Catalog Note
+          </p>
+          <p>
+            Full book-chapter treatise with expanded case ratios and dual courtroom submissions is expanding daily. Current module delivers enacted statutory wording, operative ingredients, and foundational examination pointers.
+          </p>
+        </div>
+      )}
+
+      {/* Topic Glance */}
       {!loading && content?.glance && (
         <section className="rounded-2xl border border-blue-200 dark:border-blue-900/60 bg-blue-50/60 dark:bg-blue-950/20 p-5">
-          <p className="text-[11px] font-bold uppercase tracking-wide text-blue-700 dark:text-blue-300 mb-1">
-            Topic at a glance
+          <p className="text-[11px] font-bold uppercase tracking-wider text-blue-700 dark:text-blue-300 mb-1">
+            Topic At A Glance
           </p>
-          <p className="text-sm leading-relaxed text-slate-800 dark:text-slate-200">{content.glance}</p>
+          <p className="text-sm leading-relaxed text-slate-800 dark:text-slate-200 font-medium">{content.glance}</p>
         </section>
       )}
 
+      {/* Primary Study Notes (Rendered via ModularStudyRenderer - Task 3.10) */}
       {!loading && hasContent && content && (
-        <section id="study-topic" className="rounded-[1.6rem] border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-8">
-          <div className="flex items-center gap-2 mb-5">
+        <section id="study-topic" className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 sm:p-8 space-y-5 shadow-xs">
+          <div className="flex items-center gap-2 pb-2 border-b border-slate-100 dark:border-slate-800">
             <BookOpen className="w-6 h-6 text-blue-600" />
-            <h3 className="font-display text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white">
-              Study notes
-            </h3>
+            <h2 className="font-display text-2xl sm:text-3xl font-black text-slate-950 dark:text-white">
+              Doctrinal Study Notes
+            </h2>
           </div>
+
           <ModularStudyRenderer text={studyContent} />
 
           {content.bareActPointers && content.bareActPointers.length > 0 && (
-            <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800">
-              <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400 mb-2">
-                Legal source pointers
+            <div className="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800">
+              <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2">
+                Statutory Authority &amp; Source Pointers:
               </p>
               <div className="flex flex-wrap gap-1.5">
                 {content.bareActPointers.map((ptr) => (
                   <span
                     key={ptr}
-                    className="text-[11px] font-medium px-2 py-0.5 rounded-md bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-100 dark:border-blue-900"
+                    className="text-[11px] font-medium px-2.5 py-1 rounded-md bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-100 dark:border-blue-900"
                   >
                     {ptr}
                   </span>
@@ -314,66 +550,26 @@ export function TopicDetail({
         </section>
       )}
 
-      {!loading && hasIllustrations && (
-        <section id="statutory-illustrations" className="space-y-4">
-          <div>
-            <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-blue-700 dark:text-blue-300">From the section itself</p>
-            <h3 className="font-display text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white mt-1">
-              Statutory illustrations
-            </h3>
-            <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-              These are official worked examples printed in the Act. Quote the illustration, then map it to an ingredient.
-            </p>
-          </div>
-          <div className="space-y-3">
-            {statutoryExamples.map((example) => (
-              <article key={example.id} className="rounded-[1.4rem] border border-blue-200 dark:border-blue-900 bg-white dark:bg-slate-900 p-5 sm:p-6">
-                <h4 className="font-display text-lg sm:text-xl font-semibold text-slate-900 dark:text-white">{example.title}</h4>
-                <div className="mt-3 text-base sm:text-lg leading-8 text-slate-800 dark:text-slate-200 whitespace-pre-line">
-                  <RichLegalText text={example.description} />
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {!loading && teachingExamples.length > 0 && (
-        <section id="teaching-examples" className="space-y-3">
-          <h3 className="font-display text-xl sm:text-2xl font-semibold text-slate-900 dark:text-white">
-            {hasIllustrations ? 'Further teaching examples' : 'Examples'}
-          </h3>
-          <div className="space-y-3">
-            {teachingExamples.map((example) => (
-              <article key={example.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
-                <h4 className="font-semibold text-slate-900 dark:text-white">{example.title || 'Example'}</h4>
-                <div className="mt-2 text-base leading-7 text-slate-700 dark:text-slate-300 whitespace-pre-line">
-                  <RichLegalText text={example.description} />
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-      )}
+      {/* Modular Syllabus Breakdown Sections */}
       {!loading && content?.sections && content.sections.length > 0 && (
-        <section className="space-y-4">
+        <section id="modular-sections" className="space-y-4">
           <div className="flex items-center gap-2">
-            <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-blue-700 dark:text-blue-300">Modular Syllabus Breakdown</span>
+            <span className="text-[11px] font-bold uppercase tracking-wider text-blue-700 dark:text-blue-300">Statutory Provisions &amp; Operative Clauses</span>
           </div>
-          <h3 className="font-display text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
-            Study Sections
+          <h3 className="font-display text-2xl font-bold text-slate-950 dark:text-white">
+            Operative Sections &amp; Breakdown
           </h3>
           <div className="grid gap-4 sm:grid-cols-2">
-            {content.sections.slice().sort((a, b) => a.order - b.order).map((section) => (
-              <article key={section.id} id={section.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 shadow-xs space-y-3">
+            {content.sections.slice().sort((a, b) => a.order - b.order).map((sec) => (
+              <article key={sec.id} id={sec.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 shadow-2xs space-y-3">
                 <div className="flex items-center gap-2">
-                  <span className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-xs font-bold border border-blue-200 dark:border-blue-800">
-                    {section.order}
+                  <span className="flex items-center justify-center w-6 h-6 rounded-lg bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-xs font-bold border border-blue-200 dark:border-blue-800">
+                    {sec.order}
                   </span>
-                  <h4 className="font-display text-base sm:text-lg font-bold text-slate-900 dark:text-white">{section.title}</h4>
+                  <h4 className="font-display text-base font-bold text-slate-900 dark:text-white">{sec.title}</h4>
                 </div>
-                <div className="space-y-2 text-sm sm:text-base leading-relaxed text-slate-700 dark:text-slate-300">
-                  {section.content.map((paragraph, pIdx) => (
+                <div className="space-y-2 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+                  {sec.content.map((paragraph, pIdx) => (
                     <p key={pIdx}>
                       <RichLegalText text={paragraph} />
                     </p>
@@ -385,118 +581,165 @@ export function TopicDetail({
         </section>
       )}
 
+      {/* Statutory Illustrations */}
+      {!loading && hasIllustrations && (
+        <section id="statutory-illustrations" className="space-y-4">
+          <div>
+            <p className="text-[11px] font-bold uppercase tracking-wider text-blue-700 dark:text-blue-300">Statutory Proof Standard</p>
+            <h3 className="font-display text-2xl sm:text-3xl font-black text-slate-950 dark:text-white mt-1">
+              Official Statutory Illustrations
+            </h3>
+            <p className="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+              Official worked examples enacted in the bare statute. In judicial exam and court pleadings, map the facts to the statutory ingredients below.
+            </p>
+          </div>
+          <div className="space-y-3">
+            {statutoryExamples.map((example) => (
+              <article key={example.id} className="rounded-2xl border border-blue-200 dark:border-blue-900 bg-white dark:bg-slate-900 p-5 sm:p-6 shadow-xs">
+                <h4 className="font-display text-base sm:text-lg font-bold text-slate-900 dark:text-white">{example.title}</h4>
+                <div className="mt-2 text-sm sm:text-base leading-relaxed text-slate-800 dark:text-slate-200 whitespace-pre-line">
+                  <RichLegalText text={example.description} />
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Teaching Examples */}
+      {!loading && teachingExamples.length > 0 && (
+        <section id="teaching-examples" className="space-y-3">
+          <h3 className="font-display text-xl sm:text-2xl font-bold text-slate-950 dark:text-white">
+            {hasIllustrations ? 'Practical Classroom Case Examples' : 'Illustrative Examples'}
+          </h3>
+          <div className="space-y-3">
+            {teachingExamples.map((example) => (
+              <article key={example.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
+                <h4 className="font-bold text-slate-900 dark:text-white">{example.title || 'Example'}</h4>
+                <div className="mt-2 text-sm leading-relaxed text-slate-700 dark:text-slate-300 whitespace-pre-line">
+                  <RichLegalText text={example.description} />
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Relevant Provisions */}
       {!loading && content?.provisions && content.provisions.length > 0 && (
         <section className="rounded-2xl border border-blue-200 dark:border-blue-900/60 bg-blue-50/50 dark:bg-blue-950/20 p-5 sm:p-6">
-          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Relevant Provisions</h3>
-          <div className="mt-4 grid gap-3 sm:grid-cols-2">{content.provisions.map((provision) => <div key={provision.provisionId} className="rounded-xl border border-blue-100 dark:border-blue-900/60 bg-white dark:bg-slate-900 p-4"><p className="text-xs font-semibold text-blue-600">{provision.article || provision.section || provision.provisionId}</p><p className="mt-1 text-sm font-semibold">{provision.title || provision.actName}</p><p className="mt-1 text-xs text-slate-500">{provision.actName}</p></div>)}</div>
-        </section>
-      )}
-
-      {!loading && content?.hypotheticals && content.hypotheticals.length > 0 && (
-        <section className="space-y-3">
-          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Hypothetical problem + application</h3>
-          {content.hypotheticals.map((item) => (
-            <article key={item.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 space-y-3">
-              {item.title && <h4 className="font-semibold text-sm">{item.title}</h4>}
-              {item.facts && <HypoBlock label="Facts" text={item.facts} />}
-              {item.scenario && <HypoBlock label="Scenario" text={item.scenario} />}
-              {item.question && <HypoBlock label="Legal question" text={item.question} />}
-              {item.applicableLaw && <HypoBlock label="Applicable law" text={item.applicableLaw} />}
-              {item.analysis && <HypoBlock label="Analysis" text={item.analysis} />}
-              {item.conclusion && <HypoBlock label="Conclusion" text={item.conclusion} />}
-            </article>
-          ))}
-        </section>
-      )}
-
-      {!loading && content?.distinctions && content.distinctions.length > 0 && (
-        <section className="space-y-3">
-          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Important distinctions</h3>
-          {content.distinctions.map((item, idx) => (
-            <article key={item.id || `dist-${idx}`} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden">
-              <div className="px-4 py-3 border-b border-slate-100 dark:border-slate-800">
-                <h4 className="font-semibold text-sm">{item.title || `${item.conceptA || item.left} vs ${item.conceptB || item.right}`}</h4>
+          <h3 className="text-base font-bold text-slate-900 dark:text-white mb-3">Statutory Cross-References</h3>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {content.provisions.map((provision) => (
+              <div key={provision.provisionId} className="rounded-xl border border-blue-100 dark:border-blue-900/60 bg-white dark:bg-slate-900 p-3.5">
+                <p className="text-xs font-bold text-blue-700 dark:text-blue-300">{provision.article || provision.section || provision.provisionId}</p>
+                <p className="mt-1 text-sm font-semibold text-slate-900 dark:text-white">{provision.title || provision.actName}</p>
+                <p className="mt-0.5 text-xs text-slate-500">{provision.actName}</p>
               </div>
-              {item.rows && item.rows.length > 0 ? (
-                <div className="overflow-x-auto">
-                  <table className="w-full text-sm">
-                    <thead>
-                      <tr className="bg-slate-50 dark:bg-slate-800/60 text-left">
-                        <th className="px-4 py-2 font-semibold">Point</th>
-                        <th className="px-4 py-2 font-semibold">{item.left}</th>
-                        <th className="px-4 py-2 font-semibold">{item.right}</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {item.rows.map((row) => (
-                        <tr key={row.point} className="border-t border-slate-100 dark:border-slate-800 align-top">
-                          <td className="px-4 py-2 font-medium text-slate-700 dark:text-slate-300">{row.point}</td>
-                          <td className="px-4 py-2 text-slate-600 dark:text-slate-400">{row.left}</td>
-                          <td className="px-4 py-2 text-slate-600 dark:text-slate-400">{row.right}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              ) : item.points && item.points.length > 0 ? (
-                <div className="p-4 space-y-2">
-                  <div className="grid grid-cols-2 gap-3 text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
-                    <div>{item.conceptA || item.left}</div>
-                    <div>{item.conceptB || item.right}</div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Hypothetical Problems & Analysis */}
+      {!loading && content?.hypotheticals && content.hypotheticals.length > 0 && (
+        <section id="hypotheticals" className="space-y-3">
+          <h3 className="text-xl font-bold text-slate-900 dark:text-white">Judicial Examination Problem &amp; Application</h3>
+          {content.hypotheticals.map((item) => (
+            <article key={item.id} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6 space-y-3 shadow-2xs">
+              {item.title && <h4 className="font-bold text-base text-slate-900 dark:text-white">{item.title}</h4>}
+              {item.facts && <HypoBlock label="Factual Matrix" text={item.facts} />}
+              {item.scenario && <HypoBlock label="Scenario" text={item.scenario} />}
+              {item.question && <HypoBlock label="Legal Issues Raised" text={item.question} />}
+              {item.applicableLaw && <HypoBlock label="Applicable Statutory Law" text={item.applicableLaw} />}
+              {item.analysis && <HypoBlock label="Doctrinal Application & Analysis" text={item.analysis} />}
+              {item.conclusion && <HypoBlock label="Conclusion & Order" text={item.conclusion} />}
+            </article>
+          ))}
+        </section>
+      )}
+
+      {/* Important Distinctions & Misconceptions */}
+      {!loading && hasDistinctions && (
+        <section id="distinctions" className="space-y-6">
+          {content?.distinctions && content.distinctions.length > 0 && (
+            <div className="space-y-3">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white">Comparative Doctrinal Distinctions</h3>
+              {content.distinctions.map((item, idx) => (
+                <article key={item.id || `dist-${idx}`} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden shadow-2xs">
+                  <div className="px-5 py-3.5 border-b border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-850">
+                    <h4 className="font-bold text-sm text-slate-900 dark:text-white">{item.title || `${item.conceptA || item.left} vs ${item.conceptB || item.right}`}</h4>
                   </div>
-                  <ul className="space-y-1.5 text-sm text-slate-700 dark:text-slate-300">
-                    {item.points.map((pt, pIdx) => (
-                      <li key={pIdx} className="flex items-start gap-2">
-                        <span className="text-blue-500 mt-1">•</span>
-                        <span>{pt}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
-            </article>
-          ))}
+                  {item.rows && item.rows.length > 0 ? (
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-xs sm:text-sm">
+                        <thead>
+                          <tr className="bg-slate-50/70 dark:bg-slate-800/60 text-left border-b border-slate-200 dark:border-slate-800">
+                            <th className="px-4 py-2.5 font-bold text-slate-700 dark:text-slate-300">Parameter</th>
+                            <th className="px-4 py-2.5 font-bold text-blue-700 dark:text-blue-300">{item.left}</th>
+                            <th className="px-4 py-2.5 font-bold text-slate-900 dark:text-white">{item.right}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {item.rows.map((row) => (
+                            <tr key={row.point} className="border-t border-slate-100 dark:border-slate-800 align-top">
+                              <td className="px-4 py-2.5 font-semibold text-slate-800 dark:text-slate-200">{row.point}</td>
+                              <td className="px-4 py-2.5 text-slate-600 dark:text-slate-400">{row.left}</td>
+                              <td className="px-4 py-2.5 text-slate-600 dark:text-slate-400">{row.right}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  ) : null}
+                </article>
+              ))}
+            </div>
+          )}
+
+          {content?.misconceptions && content.misconceptions.length > 0 && (
+            <div className="space-y-3">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white">Common Misconceptions &amp; Exam Traps</h3>
+              {content.misconceptions.map((item, idx) => (
+                <article key={item.id || `misc-${idx}`} className="rounded-2xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/40 dark:bg-amber-950/20 p-4 space-y-1.5">
+                  <p className="text-sm font-bold text-amber-900 dark:text-amber-200">Exam Trap: {item.trap || item.misconception}</p>
+                  <p className="text-xs sm:text-sm leading-relaxed text-slate-700 dark:text-slate-300">{item.correction}</p>
+                </article>
+              ))}
+            </div>
+          )}
         </section>
       )}
 
-      {!loading && content?.misconceptions && content.misconceptions.length > 0 && (
-        <section className="space-y-3">
-          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Common misconceptions / exam traps</h3>
-          {content.misconceptions.map((item, idx) => (
-            <article key={item.id || `misc-${idx}`} className="rounded-2xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/40 dark:bg-amber-950/20 p-4">
-              <p className="text-sm font-semibold text-amber-900 dark:text-amber-200">Trap: {item.trap || item.misconception}</p>
-              <p className="mt-2 text-sm leading-relaxed text-slate-700 dark:text-slate-300">{item.correction}</p>
-            </article>
-          ))}
-        </section>
-      )}
-
+      {/* Case Brief (IRAC) & Chamber Submissions */}
       {!loading && (legalBrief || writtenSubmissions) && (
         <section id="chamber-drafting" className="space-y-6 pt-4 border-t border-slate-200 dark:border-slate-800">
           <div>
             <div className="flex items-center gap-2">
-              <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-blue-700 dark:text-blue-300">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-blue-700 dark:text-blue-300">
                 Chamber Practice &amp; Courtroom Submissions
               </span>
-              <span className="text-[10px] px-2 py-0.5 rounded-md bg-blue-100 dark:bg-blue-950/60 text-blue-800 dark:text-blue-200 font-semibold">
+              <span className="text-[10px] px-2 py-0.5 rounded-md bg-blue-100 dark:bg-blue-950/60 text-blue-800 dark:text-blue-200 font-bold">
                 Senior Counsel Standard
               </span>
             </div>
-            <h3 className="font-display text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white mt-1">
+            <h3 className="font-display text-2xl sm:text-3xl font-black text-slate-950 dark:text-white mt-1">
               Case Briefs &amp; Written Submissions
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1 max-w-2xl">
               Structured IRAC problem assessments and comprehensive appellate written arguments, designed for high-stakes chamber practice and judicial problem resolution.
             </p>
           </div>
+
+          {/* Legal Brief / IRAC */}
           {legalBrief && (
-            <article id="legal-brief" className="rounded-[1.6rem] border border-blue-200 dark:border-blue-900 bg-white dark:bg-slate-900 p-5 sm:p-8 space-y-4">
+            <article id="legal-brief" className="rounded-3xl border border-blue-200 dark:border-blue-900 bg-white dark:bg-slate-900 p-6 sm:p-8 space-y-4 shadow-xs">
               <div className="flex items-center justify-between gap-3 flex-wrap">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <span className="inline-flex h-8 items-center px-3 rounded-full bg-blue-600 text-white text-xs font-bold">
+                  <span className="inline-flex h-8 items-center px-3.5 rounded-full bg-blue-600 text-white text-xs font-bold shadow-xs">
                     Case Brief
                   </span>
-                  <span className="inline-flex h-8 items-center px-3 rounded-full bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 text-xs font-medium">
+                  <span className="inline-flex h-8 items-center px-3 rounded-full bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 text-xs font-semibold">
                     IRAC / Problem Assessment
                   </span>
                 </div>
@@ -504,7 +747,7 @@ export function TopicDetail({
                   <button
                     type="button"
                     onClick={() => handleCopyAnswer(legalBrief.answer, true)}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
                     title="Copy full brief text"
                   >
                     {copiedBrief ? (
@@ -515,14 +758,14 @@ export function TopicDetail({
                     ) : (
                       <>
                         <Copy className="w-3.5 h-3.5" />
-                        <span>Copy</span>
+                        <span>Copy Brief</span>
                       </>
                     )}
                   </button>
                   <button
                     type="button"
                     onClick={() => setExpandedBrief(!expandedBrief)}
-                    className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+                    className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
                   >
                     {expandedBrief ? (
                       <>
@@ -538,18 +781,20 @@ export function TopicDetail({
                   </button>
                 </div>
               </div>
-              <h4 className="font-display text-xl sm:text-2xl font-semibold text-slate-900 dark:text-white">
+
+              <h4 className="font-display text-xl sm:text-2xl font-bold text-slate-950 dark:text-white">
                 {legalBrief.question}
               </h4>
+
               {expandedBrief ? (
                 <>
-                  <ModularStudyRenderer text={legalBrief.answer} defaultCardTitle="Legal Assessment & Case Brief (IRAC)" />
+                  <ModularStudyRenderer text={legalBrief.answer} defaultCardTitle="Legal Assessment &amp; Case Brief (IRAC)" />
                   {legalBrief.explanation && (
-                    <div className="rounded-2xl bg-slate-50 dark:bg-slate-800/50 p-4">
-                      <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 mb-2">
+                    <div className="rounded-2xl bg-slate-50 dark:bg-slate-800/50 p-4 border border-slate-100 dark:border-slate-800">
+                      <p className="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1.5">
                         Chamber Practice Drafting Notes &amp; Essential Averments
                       </p>
-                      <p className="text-base leading-7 text-slate-700 dark:text-slate-300">{legalBrief.explanation}</p>
+                      <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-300">{legalBrief.explanation}</p>
                     </div>
                   )}
                 </>
@@ -560,14 +805,16 @@ export function TopicDetail({
               )}
             </article>
           )}
+
+          {/* Written Submissions */}
           {writtenSubmissions && (
-            <article id="written-submissions" className="rounded-[1.6rem] border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 sm:p-8 space-y-4">
+            <article id="written-submissions" className="rounded-3xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 sm:p-8 space-y-4 shadow-xs">
               <div className="flex items-center justify-between gap-3 flex-wrap">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <span className="inline-flex h-8 items-center px-3 rounded-full bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs font-bold">
+                  <span className="inline-flex h-8 items-center px-3.5 rounded-full bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs font-bold shadow-xs">
                     Written Submissions
                   </span>
-                  <span className="inline-flex h-8 items-center px-3 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 text-xs font-medium">
+                  <span className="inline-flex h-8 items-center px-3 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 text-xs font-semibold">
                     Appellate &amp; Chamber Argument
                   </span>
                 </div>
@@ -575,7 +822,7 @@ export function TopicDetail({
                   <button
                     type="button"
                     onClick={() => handleCopyAnswer(writtenSubmissions.answer, false)}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
                     title="Copy full submissions text"
                   >
                     {copiedSubmissions ? (
@@ -586,14 +833,14 @@ export function TopicDetail({
                     ) : (
                       <>
                         <Copy className="w-3.5 h-3.5" />
-                        <span>Copy</span>
+                        <span>Copy Submissions</span>
                       </>
                     )}
                   </button>
                   <button
                     type="button"
                     onClick={() => setExpandedSubmissions(!expandedSubmissions)}
-                    className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+                    className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
                   >
                     {expandedSubmissions ? (
                       <>
@@ -609,18 +856,20 @@ export function TopicDetail({
                   </button>
                 </div>
               </div>
-              <h4 className="font-display text-xl sm:text-2xl font-semibold text-slate-900 dark:text-white">
+
+              <h4 className="font-display text-xl sm:text-2xl font-bold text-slate-950 dark:text-white">
                 {writtenSubmissions.question}
               </h4>
+
               {expandedSubmissions ? (
                 <>
                   <ModularStudyRenderer text={writtenSubmissions.answer} defaultCardTitle="Comprehensive Written Submissions" />
                   {writtenSubmissions.explanation && (
-                    <div className="rounded-2xl bg-slate-50 dark:bg-slate-800/50 p-4">
-                      <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500 mb-2">
+                    <div className="rounded-2xl bg-slate-50 dark:bg-slate-800/50 p-4 border border-slate-100 dark:border-slate-800">
+                      <p className="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1.5">
                         Chamber Practice Drafting Notes &amp; Essential Averments
                       </p>
-                      <p className="text-base leading-7 text-slate-700 dark:text-slate-300">{writtenSubmissions.explanation}</p>
+                      <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-300">{writtenSubmissions.explanation}</p>
                     </div>
                   )}
                 </>
@@ -634,21 +883,15 @@ export function TopicDetail({
         </section>
       )}
 
-      {!loading && !hasContent && (
-        <div className="rounded-2xl border border-dashed border-slate-200 dark:border-slate-700 p-8 text-center text-sm text-slate-500">
-          Learning notes for this topic are coming soon. Use Practice MCQs and the reference tools
-          meanwhile.
-        </div>
-      )}
-
+      {/* Landmark Judicial Authorities & Extracted Ratios (Task 3.6) */}
       {!loading && hasCases && content?.cases && (
         <section id="case-law-ratios" className="space-y-3">
           <div className="flex items-center justify-between gap-3">
-            <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
+            <h3 className="text-base font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
               <Scale className="w-4 h-4 text-blue-600" />
               Landmark Judicial Authorities &amp; Extracted Ratios ({content.cases.length})
             </h3>
-            <span className="text-[10px] px-2 py-0.5 rounded-md bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 font-semibold border border-blue-200 dark:border-blue-900">
+            <span className="text-[10px] px-2 py-0.5 rounded-md bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 font-bold border border-blue-200 dark:border-blue-900">
               Senior Counsel Citation Index
             </span>
           </div>
@@ -657,19 +900,22 @@ export function TopicDetail({
             {content.cases.map((c, idx) => {
               const id = String(idx)
               const isCopied = copiedCaseId === id
+              // 3.6 Link cases -> /case-law judgment id when the judgment exists
+              const matchedJudgment = findJudgmentForCase(c)
+
               return (
                 <li
                   key={id}
-                  className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 sm:p-5 space-y-3"
+                  className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 space-y-3 shadow-2xs"
                 >
                   <div className="flex items-start justify-between gap-3">
                     <div className="space-y-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <h4 className="font-semibold text-sm sm:text-base text-slate-900 dark:text-white">
+                        <h4 className="font-bold text-base text-slate-900 dark:text-white">
                           {c.name}
                         </h4>
                         {c.court && (
-                          <span className="px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-[10px] font-semibold text-slate-700 dark:text-slate-300">
+                          <span className="px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-[10px] font-bold text-slate-700 dark:text-slate-300">
                             {c.court}
                           </span>
                         )}
@@ -678,9 +924,18 @@ export function TopicDetail({
                             {c.bench}
                           </span>
                         )}
+                        {matchedJudgment && onOpenCaseLaw && (
+                          <button
+                            type="button"
+                            onClick={() => onOpenCaseLaw(matchedJudgment.id)}
+                            className="inline-flex items-center gap-1 text-[11px] font-bold text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-950 px-2 py-0.5 rounded-md border border-blue-200 dark:border-blue-800 hover:bg-blue-600 hover:text-white transition-colors"
+                          >
+                            <Link2 className="w-3 h-3" /> Read Judgment Record
+                          </button>
+                        )}
                       </div>
                       <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-500 dark:text-slate-400">
-                        {c.year && <span>{c.year}</span>}
+                        {c.year && <span>({c.year})</span>}
                         {c.citation && (
                           <span className="font-mono text-[11px] font-semibold text-blue-700 dark:text-blue-400">{c.citation}</span>
                         )}
@@ -702,37 +957,37 @@ export function TopicDetail({
                   </div>
 
                   {c.facts && (
-                    <div className="text-xs text-slate-600 dark:text-slate-400 bg-slate-50 dark:bg-slate-800/20 p-2.5 rounded-lg">
-                      <span className="font-semibold text-slate-700 dark:text-slate-300">Factual Matrix: </span>
+                    <div className="text-xs text-slate-600 dark:text-slate-400 bg-slate-50 dark:bg-slate-800/30 p-3 rounded-xl border border-slate-100 dark:border-slate-800">
+                      <span className="font-bold text-slate-700 dark:text-slate-300 block mb-0.5">Factual Matrix:</span>
                       <RichLegalText text={c.facts} />
                     </div>
                   )}
 
                   <div className="bg-slate-50 dark:bg-slate-800/40 p-3.5 rounded-xl border border-slate-100 dark:border-slate-800 space-y-1">
-                    <span className="text-[11px] font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wide block">
+                    <span className="text-[11px] font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider block">
                       Holding
                     </span>
-                    <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed">
+                    <div className="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed font-medium">
                       <RichLegalText text={c.holding} />
-                    </p>
+                    </div>
                   </div>
 
                   {c.ratioDecidendi && (
-                    <div className="bg-blue-50/60 dark:bg-blue-950/30 p-3.5 rounded-xl border border-blue-100 dark:border-blue-900/60 space-y-1">
-                      <span className="text-[11px] font-bold text-blue-800 dark:text-blue-300 uppercase tracking-wide block">
+                    <div className="bg-blue-50/70 dark:bg-blue-950/40 p-3.5 rounded-xl border border-blue-100 dark:border-blue-900/60 space-y-1">
+                      <span className="text-[11px] font-bold text-blue-800 dark:text-blue-300 uppercase tracking-wider block">
                         Ratio Decidendi
                       </span>
-                      <p className="text-xs sm:text-sm text-slate-800 dark:text-slate-200 leading-relaxed">
+                      <div className="text-xs sm:text-sm text-slate-800 dark:text-slate-200 leading-relaxed">
                         <RichLegalText text={c.ratioDecidendi} />
-                      </p>
+                      </div>
                     </div>
                   )}
 
                   {c.relevance && (
                     <p className="text-xs text-slate-600 dark:text-slate-400">
-                      <span className="font-semibold text-slate-700 dark:text-slate-300">
+                      <strong className="text-slate-700 dark:text-slate-300">
                         Courtroom Application:{' '}
-                      </span>
+                      </strong>
                       <RichLegalText text={c.relevance} />
                     </p>
                   )}
@@ -743,69 +998,102 @@ export function TopicDetail({
         </section>
       )}
 
-      {!loading && content?.examTips && content.examTips.length > 0 && (
-        <section className="rounded-2xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/50 dark:bg-amber-950/20 overflow-hidden">
-          <button
-            type="button"
-            onClick={() => setTipsOpen(!tipsOpen)}
-            className="w-full flex items-center justify-between px-4 py-3.5 text-left"
-          >
-            <span className="text-sm font-semibold text-amber-800 dark:text-amber-300 flex items-center gap-1.5">
-              <Sparkles className="w-4 h-4" />
-              Chamber &amp; Practice Insights
-            </span>
-            {tipsOpen ? (
-              <ChevronUp className="w-4 h-4 text-amber-600" />
-            ) : (
-              <ChevronDown className="w-4 h-4 text-amber-600" />
-            )}
-          </button>
+      {/* Chamber & Practice Insights (Task 3.2: exam-tips) */}
+      {!loading && hasExamTips && (
+        <section id="exam-tips" className="space-y-4">
+          {content?.examTips && content.examTips.length > 0 && (
+            <div className="rounded-2xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/50 dark:bg-amber-950/20 overflow-hidden shadow-2xs">
+              <button
+                type="button"
+                onClick={() => setTipsOpen(!tipsOpen)}
+                className="w-full flex items-center justify-between px-5 py-3.5 text-left"
+              >
+                <span className="text-sm font-bold text-amber-900 dark:text-amber-200 flex items-center gap-1.5">
+                  <Sparkles className="w-4 h-4" />
+                  Chamber Practice &amp; Judicial Examination Insights
+                </span>
+                {tipsOpen ? (
+                  <ChevronUp className="w-4 h-4 text-amber-600" />
+                ) : (
+                  <ChevronDown className="w-4 h-4 text-amber-600" />
+                )}
+              </button>
 
-          {tipsOpen && (
-            <ul className="px-4 pb-4 space-y-2">
-              {content.examTips.map((tip, i) => (
-                <li
-                  key={i}
-                  className="text-xs sm:text-sm text-amber-900/90 dark:text-amber-200/90 flex gap-2"
-                >
-                  <span className="text-amber-500 font-bold shrink-0">•</span>
-                  <span><RichLegalText text={tip} /></span>
-                </li>
-              ))}
-            </ul>
+              {tipsOpen && (
+                <ul className="px-5 pb-5 space-y-2.5 border-t border-amber-200/50 dark:border-amber-900/40 pt-3">
+                  {content.examTips.map((tip, i) => (
+                    <li
+                      key={i}
+                      className="text-xs sm:text-sm text-amber-950 dark:text-amber-100 flex gap-2 leading-relaxed"
+                    >
+                      <span className="text-amber-600 font-bold shrink-0">•</span>
+                      <span><RichLegalText text={tip} /></span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          )}
+
+          {content?.revisionPoints && content.revisionPoints.length > 0 && (
+            <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 shadow-2xs">
+              <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider text-xs">Essential Revision Points</h3>
+              <ul className="mt-3 space-y-2">
+                {content.revisionPoints.map((point) => (
+                  <li key={point} className="text-xs sm:text-sm leading-relaxed text-slate-700 dark:text-slate-300 flex gap-2">
+                    <span className="text-blue-600 font-bold shrink-0">•</span>
+                    <span><RichLegalText text={point} /></span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
         </section>
       )}
 
-      {!loading && content?.revisionPoints && content.revisionPoints.length > 0 && (
-        <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
-          <h3 className="text-sm font-semibold text-slate-900 dark:text-white">Practice Key Takeaways</h3>
-          <ul className="mt-3 space-y-2">
-            {content.revisionPoints.map((point) => (
-              <li key={point} className="text-sm leading-relaxed text-slate-700 dark:text-slate-300 flex gap-2">
-                <span className="text-blue-500 font-bold shrink-0">•</span>
-                <span><RichLegalText text={point} /></span>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {!loading && content?.relatedTopics && content.relatedTopics.length > 0 && (
-        <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
-          <h3 className="text-sm font-semibold text-slate-900 dark:text-white">Related Topics</h3>
-          <div className="mt-3 flex flex-wrap gap-2">{content.relatedTopics.map((relatedTopic) => <span key={relatedTopic} className="rounded-lg bg-slate-100 dark:bg-slate-800 px-2.5 py-1 text-xs text-slate-600 dark:text-slate-300">{relatedTopic}</span>)}</div>
-        </section>
-      )}
-
+      {/* Related Knowledge Graph (Task 3.4) */}
       {!loading && knowledgeId && (
-        <RelatedKnowledge entityId={knowledgeId} />
+        <section id="related-knowledge" className="space-y-3">
+          <RelatedKnowledge entityId={knowledgeId} />
+        </section>
       )}
 
-      <p className="text-xs text-slate-400 dark:text-slate-500">
-        Authoritative digital legal library &amp; chamber reference. Verify state amendments and current judicial pronouncements.
-      </p>
+      {/* 3.3 Bottom Catalog Navigation Footer (Prev / Next) */}
+      {neighbours && onSelectTopic && (
+        <div className="pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3">
+          {neighbours.prev ? (
+            <button
+              type="button"
+              onClick={() => neighbours.prev && onSelectTopic(neighbours.prev)}
+              className="w-full sm:w-auto text-left p-3.5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-blue-400 transition-colors shadow-2xs"
+            >
+              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">← Previous Topic</span>
+              <span className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white line-clamp-1">{neighbours.prev.name}</span>
+            </button>
+          ) : <div className="hidden sm:block" />}
 
+          <button
+            type="button"
+            onClick={onBack}
+            className="text-xs font-bold text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors"
+          >
+            ↑ Back to {subject.shortName} Catalog
+          </button>
+
+          {neighbours.next ? (
+            <button
+              type="button"
+              onClick={() => neighbours.next && onSelectTopic(neighbours.next)}
+              className="w-full sm:w-auto text-right p-3.5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-blue-400 transition-colors shadow-2xs"
+            >
+              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">Next Topic →</span>
+              <span className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white line-clamp-1">{neighbours.next.name}</span>
+            </button>
+          ) : <div className="hidden sm:block" />}
+        </div>
+      )}
+
+      {/* Mobile Floating Action Jump Bar for Brief / Submissions */}
       {(legalBrief || writtenSubmissions) && (
         <div className="sm:hidden fixed bottom-4 inset-x-4 z-40 flex gap-2">
           {legalBrief && (
@@ -815,7 +1103,7 @@ export function TopicDetail({
               className="flex-1 h-12 rounded-2xl bg-blue-600 text-white text-xs font-bold shadow-lg shadow-blue-900/20 inline-flex items-center justify-center gap-1.5"
             >
               <PenLine className="w-3.5 h-3.5" />
-              <span>Case Brief</span>
+              <span>IRAC Brief</span>
             </button>
           )}
           {writtenSubmissions && (
@@ -825,7 +1113,7 @@ export function TopicDetail({
               className="flex-1 h-12 rounded-2xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs font-bold shadow-lg inline-flex items-center justify-center gap-1.5"
             >
               <PenLine className="w-3.5 h-3.5" />
-              <span>Written Submissions</span>
+              <span>Submissions</span>
             </button>
           )}
         </div>
@@ -834,37 +1122,14 @@ export function TopicDetail({
   )
 }
 
-
-
 function HypoBlock({ label, text }: { label: string; text?: string }) {
   if (!text) return null
   return (
-    <div>
-      <p className="text-[11px] font-bold uppercase tracking-wide text-slate-500">{label}</p>
-      <div className="mt-1 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+    <div className="space-y-0.5">
+      <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">{label}</p>
+      <div className="text-xs sm:text-sm leading-relaxed text-slate-700 dark:text-slate-300">
         <RichLegalText text={text} />
       </div>
     </div>
   )
-}
-
-function provisionSortKey(id: string): [number, string] {
-  const match = id.match(/^(?:art|s)-(\d+)([a-z]*)$/i)
-  if (!match) return [9999, id]
-  return [Number(match[1]), match[2]]
-}
-
-function provisionNeighbours(subject: LawSubjectMeta, topic: LawTopic) {
-  if (topic.type !== 'section' && topic.type !== 'article') return null
-  const list = subject.topics
-    .filter((t) => t.type === topic.type)
-    .slice()
-    .sort((a, b) => {
-      const [an, as] = provisionSortKey(a.id)
-      const [bn, bs] = provisionSortKey(b.id)
-      return an - bn || as.localeCompare(bs)
-    })
-  const i = list.findIndex((t) => t.id === topic.id)
-  if (i < 0) return null
-  return { prev: list[i - 1], next: list[i + 1] }
 }

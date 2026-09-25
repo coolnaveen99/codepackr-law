@@ -43,6 +43,8 @@ export interface McqQuestion {
   difficulty?: 'easy' | 'medium' | 'hard'
   /** Optional link to subjects.ts topic id */
   topicId?: string
+  /** Optional link to subjects.ts subject slug */
+  subjectSlug?: string
 }
 
 export interface SectionMapping {

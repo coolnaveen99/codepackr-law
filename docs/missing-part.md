@@ -29,93 +29,93 @@ Implemented foundation:
 
 ### Learn Experience
 
-- [ ] Migrate 5–10 representative BNSS topics into structured learning content.
-- [ ] Add structured sections, provisions, examples, Q&A, exam points, and related topics to the remaining high-priority topics.
-- [ ] Add subject-level progress calculation.
-- [ ] Add subject-level completed-topic count.
-- [ ] Add Continue Learning cards to subject pages.
-- [ ] Persist the last-read topic and section.
-- [ ] Add topic section navigation with active section state.
-- [ ] Add clickable topic-to-topic navigation using stable topic IDs.
-- [ ] Add topic-to-provision links into the existing Bare Act tools.
-- [ ] Add topic-to-judgment links into the Judgment Reader.
-- [ ] Add judgment-to-topic backlinks.
-- [ ] Keep historical law references visibly separate from current-law mappings.
+- [x] Migrate 5–10 representative BNSS topics into structured learning content.
+- [x] Add structured sections, provisions, examples, Q&A, exam points, and related topics to the remaining high-priority topics.
+- [x] Add subject-level progress calculation.
+- [x] Add subject-level completed-topic count.
+- [x] Add Continue Learning cards to subject pages.
+- [x] Persist the last-read topic and section.
+- [x] Add topic section navigation with active section state.
+- [x] Add clickable topic-to-topic navigation using stable topic IDs.
+- [x] Add topic-to-provision links into the existing Bare Act tools.
+- [x] Add topic-to-judgment links into the Judgment Reader.
+- [x] Add judgment-to-topic backlinks.
+- [x] Keep historical law references visibly separate from current-law mappings.
 
 ### Practice Mode
 
-- [ ] Create a dedicated Practice Setup component.
-- [ ] Add explicit Subject, Topic, and Question Count setup flow.
-- [ ] Add a reusable QuestionRenderer component.
-- [ ] Add a PracticeSession data model.
-- [ ] Add a dedicated Practice Result screen.
-- [ ] Add Review Answers.
-- [ ] Add Practice Again.
-- [ ] Add Back to Topic.
-- [ ] Add links from explanations back to the relevant topic and provision.
-- [ ] Add question-level topic metadata to all question banks.
-- [ ] Validate insufficient question availability before starting a session.
+- [x] Create a dedicated Practice Setup component.
+- [x] Add explicit Subject, Topic, and Question Count setup flow.
+- [x] Add a reusable QuestionRenderer component.
+- [x] Add a PracticeSession data model.
+- [x] Add a dedicated Practice Result screen.
+- [x] Add Review Answers.
+- [x] Add Practice Again.
+- [x] Add Back to Topic.
+- [x] Add links from explanations back to the relevant topic and provision.
+- [x] Add question-level topic metadata to all question banks.
+- [x] Validate insufficient question availability before starting a session.
 
 ### Exam Simulation
 
-- [ ] Create a dedicated Exam Setup component.
-- [ ] Create a dedicated Exam Session component.
-- [ ] Create an Exam Result component.
-- [ ] Create an Exam Review component.
-- [ ] Add submission confirmation showing attempted, unanswered, and marked questions.
-- [ ] Add explicit Specific Topic, Mixed Topics, and All Topics pool selection.
-- [ ] Add custom question count validation.
-- [ ] Add accessible palette labels for current, answered, unanswered, and review states.
-- [ ] Add authoritative timer ownership in a dedicated ExamTimer component.
-- [ ] Preserve the current answer before automatic timeout submission.
-- [ ] Add refresh recovery for active exam sessions.
-- [ ] Add browser-back protection while an exam is active.
-- [ ] Add time-used calculation to exam results.
-- [ ] Add Study Topic links for incorrect answers.
-- [ ] Ensure Exam mode never reveals instant feedback before submission.
+- [x] Create a dedicated Exam Setup component.
+- [x] Create a dedicated Exam Session component.
+- [x] Create an Exam Result component.
+- [x] Create an Exam Review component.
+- [x] Add submission confirmation showing attempted, unanswered, and marked questions.
+- [x] Add explicit Specific Topic, Mixed Topics, and All Topics pool selection.
+- [x] Add custom question count validation.
+- [x] Add accessible palette labels for current, answered, unanswered, and review states.
+- [x] Add authoritative timer ownership in a dedicated ExamTimer component.
+- [x] Preserve the current answer before automatic timeout submission.
+- [x] Add refresh recovery for active exam sessions.
+- [x] Add browser-back protection while an exam is active.
+- [x] Add time-used calculation to exam results.
+- [x] Add Study Topic links for incorrect answers.
+- [x] Ensure Exam mode never reveals instant feedback before submission.
 
 ### Case Law
 
-- [ ] Add 5–10 reviewed pilot judgment records.
-- [ ] Add representative short, long, scanned, and text judgment sources.
-- [ ] Add verified PDFs under `public/judgments/` or verified source URLs.
-- [ ] Implement real lazy-loaded PDF viewer support.
-- [ ] Add PDF page navigation.
-- [ ] Add PDF zoom.
-- [ ] Add search-within-document where supported.
-- [ ] Add full-screen source reading.
-- [ ] Connect judgment provisions to Bare Act/provision routes.
-- [ ] Connect judgments to topics.
-- [ ] Add Continue Reading for judgments.
-- [ ] Add judgment section progress with last-read section.
-- [ ] Add source references only when page or paragraph data is verified.
-- [ ] Add original-source validation and missing-source warnings.
-- [ ] Add related-case validation for broken internal IDs.
+- [x] Add 5–10 reviewed pilot judgment records.
+- [x] Add representative short, long, scanned, and text judgment sources.
+- [x] Add verified PDFs under `public/judgments/` or verified source URLs.
+- [x] Implement real lazy-loaded PDF viewer support.
+- [x] Add PDF page navigation.
+- [x] Add PDF zoom.
+- [x] Add search-within-document where supported.
+- [x] Add full-screen source reading.
+- [x] Connect judgment provisions to Bare Act/provision routes.
+- [x] Connect judgments to topics.
+- [x] Add Continue Reading for judgments.
+- [x] Add judgment section progress with last-read section.
+- [x] Add source references only when page or paragraph data is verified.
+- [x] Add original-source validation and missing-source warnings.
+- [x] Add related-case validation for broken internal IDs.
 
 ### Content Processing and Governance
 
-- [ ] Add PDF validation workflow.
-- [ ] Add text-PDF extraction workflow.
-- [ ] Add scanned-PDF OCR workflow.
-- [ ] Add OCR review status.
-- [ ] Add structured draft generation workflow.
-- [ ] Add human review status before publication.
-- [ ] Add content completeness reporting.
-- [ ] Add explicit Needs Review markers for uncertain content.
-- [ ] Review and normalize existing BNSS material for legal accuracy.
-- [ ] Separate genuine learning Q&A from genuine MCQs.
-- [ ] Keep AI-assisted or curated content visibly separate from court text.
+- [x] Add PDF validation workflow.
+- [x] Add text-PDF extraction workflow.
+- [x] Add scanned-PDF OCR workflow.
+- [x] Add OCR review status.
+- [x] Add structured draft generation workflow.
+- [x] Add human review status before publication.
+- [x] Add content completeness reporting.
+- [x] Add explicit Needs Review markers for uncertain content.
+- [x] Review and normalize existing BNSS material for legal accuracy.
+- [x] Separate genuine learning Q&A from genuine MCQs.
+- [x] Keep AI-assisted or curated content visibly separate from court text.
 
 ### Validation and Testing
 
-- [ ] Add `src/utils/judgments/judgmentValidation.ts`.
-- [ ] Add `src/utils/topics/topicValidation.ts`.
-- [ ] Add `npm run validate:judgments`.
-- [ ] Add `npm run validate:topics`.
-- [ ] Validate duplicate IDs.
-- [ ] Validate broken topic, judgment, provision, and related-case references.
-- [ ] Validate MCQ option counts and correct indexes.
-- [ ] Validate missing PDF/source configuration.
+- [x] Add `src/utils/judgments/judgmentValidation.ts`.
+- [x] Add `src/utils/topics/topicValidation.ts`.
+- [x] Add `npm run validate:judgments`.
+- [x] Add `npm run validate:topics`.
+- [x] Validate duplicate IDs.
+- [x] Validate broken topic, judgment, provision, and related-case references.
+- [x] Validate MCQ option counts and correct indexes.
+- [x] Validate missing PDF/source configuration.
 - [ ] Add unit tests for judgment search and filtering.
 - [ ] Add unit tests for question selection and result calculation.
 - [ ] Add unit tests for topic and judgment progress.

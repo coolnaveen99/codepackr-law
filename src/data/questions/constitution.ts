@@ -1,7 +1,7 @@
 import { McqQuestion } from '../../types'
 
 /** Constitution MCQ bank — AIBE / Judiciary oriented. topicId links to subjects.ts topic ids. */
-export const CONSTITUTION_QUESTIONS: McqQuestion[] = [
+const RAW_CONSTITUTION_QUESTIONS: McqQuestion[] = [
   {
     id: 'const-1',
     subject: 'constitution',
@@ -374,3 +374,9 @@ export const CONSTITUTION_QUESTIONS: McqQuestion[] = [
     difficulty: 'easy',
   },
 ]
+
+export const CONSTITUTION_QUESTIONS: McqQuestion[] = RAW_CONSTITUTION_QUESTIONS.map((q) => ({
+  ...q,
+  subjectSlug: 'constitution',
+}))
+

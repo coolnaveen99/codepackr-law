@@ -4,6 +4,8 @@ export const CPC_CONTRACT_QUESTIONS: McqQuestion[] = [
   {
     id: 'cpc-1',
     subject: 'cpc',
+    subjectSlug: 'cpc',
+    topicId: 's-11',
     subjectLabel: 'Code of Civil Procedure, 1908',
     question: 'The principle of "Res Judicata" in the Code of Civil Procedure, 1908 is codified under:',
     options: [
@@ -21,6 +23,8 @@ export const CPC_CONTRACT_QUESTIONS: McqQuestion[] = [
   {
     id: 'cpc-2',
     subject: 'cpc',
+    subjectSlug: 'cpc',
+    topicId: 'order-39',
     subjectLabel: 'Code of Civil Procedure, 1908',
     question: 'Temporary injunctions in a civil suit are governed under which Order of the CPC?',
     options: [
@@ -38,6 +42,8 @@ export const CPC_CONTRACT_QUESTIONS: McqQuestion[] = [
   {
     id: 'cpc-3',
     subject: 'cpc',
+    subjectSlug: 'cpc',
+    topicId: 's-89',
     subjectLabel: 'Code of Civil Procedure, 1908',
     question: 'Alternative Dispute Resolution (ADR) including arbitration, conciliation, judicial settlement, and mediation was inserted into the CPC under which Section?',
     options: [
@@ -55,6 +61,8 @@ export const CPC_CONTRACT_QUESTIONS: McqQuestion[] = [
   {
     id: 'contract-1',
     subject: 'contract',
+    subjectSlug: 'contract',
+    topicId: 'ica-s-51-58',
     subjectLabel: 'Indian Contract Act, 1872',
     question: 'The doctrine of "Frustration of Contract" due to supervening impossibility is embodied under which Section of the Indian Contract Act, 1872?',
     options: [
@@ -72,6 +80,8 @@ export const CPC_CONTRACT_QUESTIONS: McqQuestion[] = [
   {
     id: 'contract-2',
     subject: 'contract',
+    subjectSlug: 'contract',
+    topicId: 'ica-s-1-2',
     subjectLabel: 'Indian Contract Act, 1872',
     question: 'An agreement enforceable by law is defined as a contract under which clause of Section 2 of the Indian Contract Act?',
     options: [
@@ -89,6 +99,8 @@ export const CPC_CONTRACT_QUESTIONS: McqQuestion[] = [
   {
     id: 'family-1',
     subject: 'family',
+    subjectSlug: 'family',
+    topicId: 'hma-s-13b',
     subjectLabel: 'Family Law (Hindu & Muslim)',
     question: 'Under the Hindu Marriage Act, 1955, "Divorce by Mutual Consent" is provided under:',
     options: [
@@ -106,6 +118,8 @@ export const CPC_CONTRACT_QUESTIONS: McqQuestion[] = [
   {
     id: 'family-2',
     subject: 'family',
+    subjectSlug: 'family',
+    topicId: 'hma-s-9',
     subjectLabel: 'Family Law (Hindu & Muslim)',
     question: 'Under Section 9 of the Hindu Marriage Act, 1955, the constitutionality of "Restitution of Conjugal Rights" was upheld by the Supreme Court in:',
     options: [

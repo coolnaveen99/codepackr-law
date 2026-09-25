@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/%C2%A9%202026-All%20Rights%20Reserved-6b7280?style=for-the-badge)](https://law.codepackr.com)
 
 **Codepackr Law** is a free collection of browser-based Indian law learning tools for AIBE, Judiciary, Bare Act MCQs, flashcards, and more.  
-Live at **[law.codepackr.com](https://law.codepackr.com)** (coming soon).
+Live at **[law.codepackr.com](https://law.codepackr.com)**.
 
 All tools run **100% client-side**. Your practice data never leaves your device.
 
@@ -14,7 +14,7 @@ All tools run **100% client-side**. Your practice data never leaves your device.
 ## ⚖️ Implemented & Live Tools Directory
 
 ### 1. MCQ Practice (`mcq`)
-- **AIBE & Judiciary MCQ Practice** (`#/tool/aibe-mcq`): Subject-wise question banks (Constitution, BNS, BNSS, BSA, CPC, Contract, Family Law), Bare Act citations, question palette with review tracking, instant feedback in practice mode, and timed exam simulation.
+- **AIBE & Judiciary MCQ Practice** (`#/tool/aibe-mcq`): Subject-wise question banks (Constitution, BNS, BNSS, BSA, CPC, Contract, Family Law), Bare Act citations, question palette with review tracking, instant feedback in practice mode, and timed exam simulation with refresh recovery.
 
 ### 2. Bare Act & Section Tools (`bare-acts`)
 - **BNS ↔ IPC & Criminal Laws Mapper** (`#/tool/bns-ipc-mapper`): Instant cross-mapping and change analyzer across Bharatiya Nyaya Sanhita (BNS 2023) ↔ IPC, BNSS ↔ CrPC, and BSA ↔ Evidence Act. Fast search, major reforms filter, and one-click copy.
@@ -26,14 +26,14 @@ All tools run **100% client-side**. Your practice data never leaves your device.
 ### 4. Reference Helpers (`reference`)
 - **Legal Maxims Quiz & Dictionary** (`#/tool/legal-maxims`): Searchable Latin legal maxims dictionary with English translations, applications, and an interactive quiz mode.
 - **Landmark Case Laws Flashcards** (`#/tool/landmark-cases`): Foundational Supreme Court of India precedents (*Kesavananda Bharati*, *Maneka Gandhi*, *Puttaswamy*, *Lalita Kumari*, *D.K. Basu*, *Shreya Singhal*, *Shayara Bano*), ratio decidendi, bench details, and exam significance.
-- **Case Law Library & Judgment Reader** (`/case-law`): Searchable judgment library with structured facts, issues, provisions, arguments, reasoning, decision, ratio, exam points, related cases, browser-only bookmarks/progress, and judgment-specific MCQs. Original documents are explicitly separated and loaded only on request.
+- **Case Law Library & Judgment Reader** (`/case-law`): Searchable judgment library with structured facts, issues, provisions linked to topics, arguments, reasoning, decision, ratio, exam points, related cases, browser-only bookmarks/progress, and judgment-specific MCQs. Original documents are explicitly separated and loaded only on request.
 - **Reusable Legal Knowledge** (`/knowledge`): Canonical doctrines, concepts, maxims, definitions and procedures (Basic Structure, golden triangle, common intention, audi alteram partem, …). Constitution, CPC, and criminal law pages reuse these records instead of duplicating them.
 
 ---
 
 ## 🏛️ Comprehensive 20-Subject Digital Law Library & Curriculum Map
 
-CodePackr Law catalogs and provides study treatise notes across all **20 Core Law Subjects and 2,087 registered catalog topics**, tracked live in [`docs/subject-coverage-checklist.md`](docs/subject-coverage-checklist.md):
+CodePackr Law catalogs and provides study treatise notes across all **20 Core Law Subjects and 3,552 registered catalog topics**, tracked live in [`docs/subject-coverage-checklist.md`](docs/subject-coverage-checklist.md):
 
 ### 1. Code of Civil Procedure, 1908 (CPC) — 10 AIBE Questions
 - **235 Total Topics**: Complete First Schedule with **51 Orders** (Orders I–LI), **158 Sections** (ss. 1–158), and foundational procedural themes.
@@ -46,7 +46,7 @@ CodePackr Law catalogs and provides study treatise notes across all **20 Core La
 - **Key High-Yield Anchors**: Fundamental Rights (Arts 12–35), Golden Triangle (Arts 14, 19, 21), Writs (Arts 32 & 226, *Whirlpool* exceptions), Basic Structure, Affirmative Action & EWS (Arts 15 & 16), Freedom of Religion & ERP (Arts 25–28), Minority Rights (Arts 29–30), Right to Property (Art 300A), Civil Services (Art 311), Emergency (Arts 352–360), Amendment (Art 368).
 
 ### 3. Criminal Procedure: BNSS 2023 & CrPC — 10 AIBE Questions
-- **538 Total Topics**: All 531 Sections of the Bharatiya Nagarik Suraksha Sanhita, 2023 (in force 1 July 2024), key themes, and CrPC legacy mapping.
+- **539 Total Topics**: All 531 Sections of the Bharatiya Nagarik Suraksha Sanhita, 2023 (in force 1 July 2024), key themes, and CrPC legacy mapping.
 - **Key High-Yield Anchors**: Section 531 BNSS (Transitional Rules & Repeal Savings), s. 35 (Arrest safeguards), s. 187 (Police Custody 15 vs 60/90 Days), ss. 193/210 (Cognizance), ss. 223–271 (Sessions, Warrant, Summons Trial), ss. 480–483 (Bail & Anticipatory Bail), ss. 528–530 (Inherent Powers & Electronic Trials).
 
 ### 4. Bharatiya Nyaya Sanhita, 2023 (BNS / IPC) — 8 AIBE Questions
@@ -63,13 +63,13 @@ CodePackr Law catalogs and provides study treatise notes across all **20 Core La
 
 ### 6. Additional Practice & Bar Subjects
 - **Family Law (8 Qs — 38 Topics)**: HMA, SMA, HSA (Coparcenary s. 6), Muslim Personal Law, Maintenance (s. 144 BNSS), Waqf.
-- **Contract, SRA, TPA, NI Act (8 Qs — 56 Topics)**: ICA ss. 10, 23, 27, 56 (Frustration), 73 (Damages); SRA ss. 10, 14, 34, 38–42; TPA Lis Pendens, Part Performance, Mortgage; NI s. 138.
+- **Contract, SRA, Property & NI Act (8 Qs — 42 Topics)**: ICA ss. 10, 23, 27, 56 (Frustration), 73 (Damages); Sale of Goods Act, Partnership Act.
 - **Law of Torts (5 Qs — 29 Topics)**: Strict vs Absolute Liability (*M.C. Mehta*), Negligence (*Donoghue*), Vicarious Liability, Defamation, Consumer Protection Act 2019.
-- **ADR & Arbitration (4 Qs — 19 Topics)**: Arbitration & Conciliation Act 1996 (ss. 7, 8, 9, 11, 34, 48), Mediation Act 2023, Lok Adalats.
-- **Professional Ethics (4 Qs — 8 Topics)**: Advocates Act 1961, BCI Rules, Contempt of Courts Act 1971.
-- **Public Interest Litigation (2 Qs — 5 Topics)**: Locus standi relaxation, epistolary jurisdiction, procedure.
-- **Labour, Tax, Admin, Company, Environment, Cyber, Land, IPR (19 Qs — 83 Topics)**: High-yield statutory provisions.
-- **Petition Formats & Courtroom Drafting (8 Topics)**: Authentic templates for Writs, Injunction Applications, Written Submissions, Bail, and Complaints.
+- **ADR & Arbitration (4 Qs — 125 Topics)**: Arbitration & Conciliation Act 1996 (ss. 1–81, 29A, 29B, 42A), Mediation Act 2023, Lok Adalats.
+- **Professional Ethics (4 Qs — 80 Topics)**: Advocates Act 1961 (ss. 1–60), BCI Rules, Contempt of Courts Act 1971.
+- **Public Interest Litigation (2 Qs — 18 Topics)**: Locus standi relaxation, epistolary jurisdiction, procedure.
+- **Labour, Tax, Admin, Company, Environment, Cyber, Land, IPR (19 Qs — 1,368 Topics)**: Complete statutory coverage (Company 561, Labour 523, IPR 63, Cyber 53, Tax 51, Land 44, Admin 44, Environment 31).
+- **Petition Formats & Courtroom Drafting (8 Topics)**: Authentic templates for Writs, Plaints, Written Statements, Bail, FIR, and 138 NI Legal Notice.
 
 > All content and practice data execute strictly in the user's browser. Zero data leaves the device.
 
@@ -80,7 +80,7 @@ CodePackr Law catalogs and provides study treatise notes across all **20 Core La
 - **100% Client-Side Privacy** — Zero practice data, user notes, legal queries, or exam answers leave the device.
 - **Senior Counsel & PhD Treatise Standard** — In-depth 5 Doctrinal Modules, extracted case law ratios, dual statutory illustrations (applies vs fails), IRAC Case Briefs, and Comprehensive Written Submissions.
 - **Zero Marks Paradigm** — No collegiate "10-mark" or "16-mark" shortcuts; pure courtroom and academic excellence.
-- **Synchronized Master Coverage Checklist** — All 20 curriculum subjects and 2,087 registered catalog topics tracked in [`docs/subject-coverage-checklist.md`](docs/subject-coverage-checklist.md).
+- **Synchronized Master Coverage Checklist** — All 20 curriculum subjects and 3,552 registered catalog topics tracked in [`docs/subject-coverage-checklist.md`](docs/subject-coverage-checklist.md).
 - **Automated AI Listener & Dispatcher** — Author or upgrade any topic with one command via [`prompts/DISPATCHER.md`](prompts/DISPATCHER.md).
 - **Theme Support** — Light + Dark mode in Seal Burgundy palette.
 - **Offline Capable** — PWA-ready design.

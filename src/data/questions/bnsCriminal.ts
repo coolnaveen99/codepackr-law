@@ -4,6 +4,8 @@ export const BNS_CRIMINAL_QUESTIONS: McqQuestion[] = [
   {
     id: 'bns-1',
     subject: 'bns',
+    subjectSlug: 'bns',
+    topicId: 's-4',
     subjectLabel: 'Bharatiya Nyaya Sanhita (BNS)',
     question: 'Under Bharatiya Nyaya Sanhita, 2023 (BNS), which Section introduces "Community Service" as a recognized form of punishment?',
     options: [
@@ -21,6 +23,8 @@ export const BNS_CRIMINAL_QUESTIONS: McqQuestion[] = [
   {
     id: 'bns-2',
     subject: 'bns',
+    subjectSlug: 'bns',
+    topicId: 's-152',
     subjectLabel: 'Bharatiya Nyaya Sanhita (BNS)',
     question: 'The offence of "Acts endangering sovereignty, unity and integrity of India", which replaces the old offence of Sedition (Sec 124A IPC), is codified under which Section of BNS 2023?',
     options: [
@@ -38,6 +42,8 @@ export const BNS_CRIMINAL_QUESTIONS: McqQuestion[] = [
   {
     id: 'bns-3',
     subject: 'bns',
+    subjectSlug: 'bns',
+    topicId: 's-103',
     subjectLabel: 'Bharatiya Nyaya Sanhita (BNS)',
     question: 'Under BNS 2023, the definition and penal provision for "Murder" is provided under which Section (corresponding to Section 302 of the repealed IPC)?',
     options: [
@@ -55,6 +61,8 @@ export const BNS_CRIMINAL_QUESTIONS: McqQuestion[] = [
   {
     id: 'bnss-1',
     subject: 'bnss',
+    subjectSlug: 'bnss',
+    topicId: 's-173',
     subjectLabel: 'Bharatiya Nagarik Suraksha Sanhita (BNSS)',
     question: 'Under BNSS 2023, the provision for registering information regarding a cognizable offence irrespective of territorial jurisdiction (popularly known as "Zero FIR") is statutorily incorporated under:',
     options: [
@@ -72,6 +80,8 @@ export const BNS_CRIMINAL_QUESTIONS: McqQuestion[] = [
   {
     id: 'bnss-2',
     subject: 'bnss',
+    subjectSlug: 'bnss',
+    topicId: 's-479',
     subjectLabel: 'Bharatiya Nagarik Suraksha Sanhita (BNSS)',
     question: 'Under Section 479 of BNSS 2023, a first-time offender (never previously convicted of any offence) who has undergone detention for up to what portion of the maximum term of imprisonment shall be released on bail on a personal bond?',
     options: [
@@ -89,6 +99,8 @@ export const BNS_CRIMINAL_QUESTIONS: McqQuestion[] = [
   {
     id: 'bsa-1',
     subject: 'bsa',
+    subjectSlug: 'bsa',
+    topicId: 's-63',
     subjectLabel: 'Bharatiya Sakshya Adhiniyam (BSA)',
     question: 'Under Bharatiya Sakshya Adhiniyam, 2023 (BSA), which Section deals with the admissibility of electronic or digital records (corresponding to old Section 65B of the Indian Evidence Act)?',
     options: [
@@ -106,6 +118,8 @@ export const BNS_CRIMINAL_QUESTIONS: McqQuestion[] = [
   {
     id: 'bsa-2',
     subject: 'bsa',
+    subjectSlug: 'bsa',
+    topicId: 's-23',
     subjectLabel: 'Bharatiya Sakshya Adhiniyam (BSA)',
     question: 'Under BSA 2023, the provision stating that a confession made to a police officer shall not be proved as against a person accused of any offence is found under:',
     options: [
@@ -123,6 +137,8 @@ export const BNS_CRIMINAL_QUESTIONS: McqQuestion[] = [
   {
     id: 'bns-4',
     subject: 'bns',
+    subjectSlug: 'bns',
+    topicId: 's-111',
     subjectLabel: 'Bharatiya Nyaya Sanhita (BNS)',
     question: 'Organized Crime is specifically introduced as a substantive statutory offence for the first time in Indian general penal law under which section of BNS 2023?',
     options: [

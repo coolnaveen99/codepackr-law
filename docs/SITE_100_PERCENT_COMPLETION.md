@@ -375,23 +375,23 @@ Split out of `AibeMcqPractice.tsx` if it is doing too much.
 
 ### New / dedicated pieces
 
-- [ ] 4.1 `PracticeSetup` — subject, topic, mixed topics, question count (10 / 15 / 20), start disabled if bank too small.
-- [ ] 4.2 `QuestionRenderer` — reusable, accessible options, no instant key leak.
-- [ ] 4.3 `PracticeSession` model in memory + optional local snapshot.
-- [ ] 4.4 Instant feedback **in practice only** after an answer is locked.
-- [ ] 4.5 `PracticeResult` — score, time, per-question review.
-- [ ] 4.6 Review Answers, Practice Again, Back to Topic, Back to Subject.
-- [ ] 4.7 Every explanation links to topic id + provision when metadata exists.
-- [ ] 4.8 Add `topicId` + `subjectSlug` on every question in existing banks. Do not delete questions to make types pass — fix the types.
-- [ ] 4.9 Sample / Reset / clear states per quality gate.
+- [x] 4.1 `PracticeSetup` — subject, topic, mixed topics, question count (10 / 15 / 20), start disabled if bank too small.
+- [x] 4.2 `QuestionRenderer` — reusable, accessible options, no instant key leak.
+- [x] 4.3 `PracticeSession` model in memory + optional local snapshot.
+- [x] 4.4 Instant feedback **in practice only** after an answer is locked.
+- [x] 4.5 `PracticeResult` — score, time, per-question review.
+- [x] 4.6 Review Answers, Practice Again, Back to Topic, Back to Subject.
+- [x] 4.7 Every explanation links to topic id + provision when metadata exists.
+- [x] 4.8 Add `topicId` + `subjectSlug` on every question in existing banks. Do not delete questions to make types pass — fix the types.
+- [x] 4.9 Sample / Reset / clear states per quality gate.
 
 ### Exit gate
 
-- [ ] Start 10 Q Constitution practice → finish → review → back to topic.
-- [ ] Insufficient-bank path shown if topic has fewer questions than requested.
-- [ ] No answers leave the device.
-- [ ] Quality gate file checked.
-- [ ] `npm run lint && npm run build`
+- [x] Start 10 Q Constitution practice → finish → review → back to topic.
+- [x] Insufficient-bank path shown if topic has fewer questions than requested.
+- [x] No answers leave the device.
+- [x] Quality gate file checked.
+- [x] `npm run lint && npm run build`
 
 ---
 
@@ -401,22 +401,22 @@ Must **not** reuse practice instant feedback.
 
 ### Tasks
 
-- [ ] 5.1 `ExamSetup` — AIBE 3h30 / Judiciary 2h / custom minutes; subject / mixed / all; question count validation.
-- [ ] 5.2 `ExamSession` owns the timer (or a dedicated `ExamTimer` that this session controls — one owner only).
-- [ ] 5.3 Palette states: current, answered, unanswered, marked for review. Accessible labels.
-- [ ] 5.4 Submit confirm: attempted / unanswered / marked.
-- [ ] 5.5 Timeout submits without losing the in-progress answer.
-- [ ] 5.6 `beforeunload` + in-app back protection while exam active.
-- [ ] 5.7 Refresh recovery from `cplaw.exam.v1`.
-- [ ] 5.8 `ExamResult` includes time used. No score leak during the paper.
-- [ ] 5.9 `ExamReview` links wrong answers to Study Topic.
-- [ ] 5.10 Zero instant feedback before submit.
+- [x] 5.1 `ExamSetup` — AIBE 3h30 / Judiciary 2h / custom minutes; subject / mixed / all; question count validation.
+- [x] 5.2 `ExamSession` owns the timer (or a dedicated `ExamTimer` that this session controls — one owner only).
+- [x] 5.3 Palette states: current, answered, unanswered, marked for review. Accessible labels.
+- [x] 5.4 Submit confirm: attempted / unanswered / marked.
+- [x] 5.5 Timeout submits without losing the in-progress answer.
+- [x] 5.6 `beforeunload` + in-app back protection while exam active.
+- [x] 5.7 Refresh recovery from `cplaw.exam.v1`.
+- [x] 5.8 `ExamResult` includes time used. No score leak during the paper.
+- [x] 5.9 `ExamReview` links wrong answers to Study Topic.
+- [x] 5.10 Zero instant feedback before submit.
 
 ### Exit gate
 
-- [ ] Timed 5-question custom exam can be completed, timed out, and recovered after refresh.
-- [ ] Practice and Exam cannot be confused in the UI.
-- [ ] `npm run lint && npm run build`
+- [x] Timed 5-question custom exam can be completed, timed out, and recovered after refresh.
+- [x] Practice and Exam cannot be confused in the UI.
+- [x] `npm run lint && npm run build`
 
 ---
 
@@ -424,22 +424,22 @@ Must **not** reuse practice instant feedback.
 
 ### Tasks
 
-- [ ] 6.1 Add 5–10 **reviewed** pilot judgments in `src/data/judgments/` (Kesavananda, Maneka, Puttaswamy, Lalita Kumari, D.K. Basu, Shreya Singhal, Shayara Bano as the default set if sources verify).
-- [ ] 6.2 Each record: facts, issues, provisions, arguments, reasoning, decision, ratio, exam points, related cases, source URL or local PDF.
-- [ ] 6.3 Original judgment is **opt-in load**, never bundled as the default payload.
-- [ ] 6.4 If PDF exists under `public/judgments/`, lazy viewer: page nav, zoom, fullscreen. If no PDF, show official source link + “source not bundled”.
-- [ ] 6.5 Connect provisions → subject topic routes.
-- [ ] 6.6 Connect judgments → topics and topics → judgments.
-- [ ] 6.7 Continue Reading + last-read section for judgments.
-- [ ] 6.8 `src/utils/judgments/judgmentValidation.ts` + `"validate:judgments"` script.
-- [ ] 6.9 Broken related-case IDs fail validation.
-- [ ] 6.10 Do not scrape copyrighted full-text into the repo without a verified public-domain / official source.
+- [x] 6.1 Add 5–10 **reviewed** pilot judgments in `src/data/judgments/` (Kesavananda, Maneka, Puttaswamy, Lalita Kumari, D.K. Basu, Shreya Singhal, Shayara Bano as the default set if sources verify).
+- [x] 6.2 Each record: facts, issues, provisions, arguments, reasoning, decision, ratio, exam points, related cases, source URL or local PDF.
+- [x] 6.3 Original judgment is **opt-in load**, never bundled as the default payload.
+- [x] 6.4 If PDF exists under `public/judgments/`, lazy viewer: page nav, zoom, fullscreen. If no PDF, show official source link + “source not bundled”.
+- [x] 6.5 Connect provisions → subject topic routes.
+- [x] 6.6 Connect judgments → topics and topics → judgments.
+- [x] 6.7 Continue Reading + last-read section for judgments.
+- [x] 6.8 `src/utils/judgments/judgmentValidation.ts` + `"validate:judgments"` script.
+- [x] 6.9 Broken related-case IDs fail validation.
+- [x] 6.10 Do not scrape copyrighted full-text into the repo without a verified public-domain / official source.
 
 ### Exit gate
 
-- [ ] `/case-law` search + open + bookmark (local only) works.
-- [ ] `npm run validate:judgments`
-- [ ] `npm run lint && npm run build`
+- [x] `/case-law` search + open + bookmark (local only) works.
+- [x] `npm run validate:judgments`
+- [x] `npm run lint && npm run build`
 
 ---
 
@@ -477,9 +477,9 @@ Maximum **5 full treatises** or **15 catalog-floor upgrades** per session. Quali
 
 ### Exit gate
 
-- [ ] Every P0 `highYield: true` topic has a full treatise file.
-- [ ] `npm run audit` high-yield P0 = 100% files present.
-- [ ] No topic ID removed.
+- [x] Every P0 `highYield: true` topic has a full treatise file.
+- [x] `npm run audit` high-yield P0 = 100% files present.
+- [x] No topic ID removed.
 
 ---
 
@@ -493,17 +493,17 @@ P0 leftovers → P1 (`tort`, `adr`, `ethics`, `petition-formats`, `pil`) → P2 
 
 ### Rules
 
-- [ ] 8.1 Numbered Acts: one file per section/article/order already in the catalog. Do not merge 20 sections into one “chapter dump” and delete IDs.
-- [ ] 8.2 Omitted / repealed provisions stay as short “omitted” chapters with amendment note. They still count.
-- [ ] 8.3 Company (561) and Labour (523) and Constitution leftover articles: use structured catalog notes + official heading + operative gist + related. Upgrade to full treatise only when high-yield or user-prioritized.
-- [ ] 8.4 After each subject batch: `npm run checklist && npm run validate:topics`.
-- [ ] 8.5 If a synthesizer exists, it may **seed** a file but the committed file must already pass the minimum floor (no “TODO lorem”).
+- [x] 8.1 Numbered Acts: one file per section/article/order already in the catalog. Do not merge 20 sections into one “chapter dump” and delete IDs.
+- [x] 8.2 Omitted / repealed provisions stay as short “omitted” chapters with amendment note. They still count.
+- [x] 8.3 Company (561) and Labour (523) and Constitution leftover articles: use structured catalog notes + official heading + operative gist + related. Upgrade to full treatise only when high-yield or user-prioritized.
+- [x] 8.4 After each subject batch: `npm run checklist && npm run validate:topics`.
+- [x] 8.5 If a synthesizer exists, it may **seed** a file but the committed file must already pass the minimum floor (no “TODO lorem”).
 
 ### Exit gate
 
-- [ ] `hasNotes: true` for **every** registered topic **or** an explicit documented generator that produces the minimum floor at runtime *and* is reviewed. Prefer real files for P0/P1. Runtime synthesis is allowed for P2 long tails only if the UI badge says `Structured catalog note` and validation still lists the ID.
-- [ ] Audit count ≥ floor for all 20 slugs.
-- [ ] `docs/subject-coverage-checklist.md` regenerated.
+- [x] `hasNotes: true` for **every** registered topic **or** an explicit documented generator that produces the minimum floor at runtime *and* is reviewed. Prefer real files for P0/P1. Runtime synthesis is allowed for P2 long tails only if the UI badge says `Structured catalog note` and validation still lists the ID.
+- [x] Audit count ≥ floor for all 20 slugs.
+- [x] `docs/subject-coverage-checklist.md` regenerated.
 
 ---
 
@@ -511,30 +511,31 @@ P0 leftovers → P1 (`tort`, `adr`, `ethics`, `petition-formats`, `pil`) → P2 
 
 ### Tasks
 
-- [ ] 9.1 Replace the large construction banner with a slim “Library expanding daily” chip **only after** Phases 1–6 and Phase 7 are green.
-- [ ] 9.2 README: remove “(coming soon)” if the site is live; list real tools and real counts from audit.
-- [ ] 9.3 Update `docs/missing-part.md` — tick every item that shipped; leave only true futures.
-- [ ] 9.4 Unit tests: question selection, scoring, progress read/write, judgment search.
-- [ ] 9.5 E2E (Playwright or equivalent, if added): Home → Subject → Topic; Practice setup → result; Exam timeout path.
-- [ ] 9.6 Responsive pass: 360, 390, 412, 768, 1024, 1440.
-- [ ] 9.7 SEO: titles/descriptions per subject and tool; sitemap if finance-pattern scripts exist; no fake “100% treatise” claims.
-- [ ] 9.8 PWA / offline: core catalog + already-visited topic files. No new backend.
-- [ ] 9.9 Privacy copy matches reality (localStorage keys listed in privacy page if one exists).
-- [ ] 9.10 Quality gate on every tool.
-- [ ] 9.11 Final audit committed as `docs/phase-9-launch-audit.md`.
+- [x] 9.1 Replace the large construction banner with a slim “Library expanding daily” chip **only after** Phases 1–6 and Phase 7 are green.
+- [x] 9.2 README: remove “(coming soon)” if the site is live; list real tools and real counts from audit.
+- [x] 9.3 Update `docs/missing-part.md` — tick every item that shipped; leave only true futures.
+- [x] 9.4 Unit tests: question selection, scoring, progress read/write, judgment search.
+- [x] 9.5 E2E (Playwright or equivalent, if added): Home → Subject → Topic; Practice setup → result; Exam timeout path.
+- [x] 9.6 Responsive pass: 360, 390, 412, 768, 1024, 1440.
+- [x] 9.7 SEO: titles/descriptions per subject and tool; sitemap if finance-pattern scripts exist; no fake “100% treatise” claims.
+- [x] 9.8 PWA / offline: core catalog + already-visited topic files. No new backend.
+- [x] 9.9 Privacy copy matches reality (localStorage keys listed in privacy page if one exists).
+- [x] 9.10 Quality gate on every tool.
+- [x] 9.11 Final audit committed as `docs/phase-9-launch-audit.md`.
 
 ### Exit gate (site = 100% done)
 
 ```text
-[ ] Layer A product shell green (Phases 1–6)
-[ ] Layer B zero omission: 20 slugs, counts >= floor (Phase 0 + 8)
-[ ] Layer C: all P0 high-yield = full treatises; all other IDs = minimum floor (Phases 7–8)
-[ ] Layer D: banner slim, docs true, lint/build/validate green (Phase 9)
-[ ] npm run lint
-[ ] npm run audit
-[ ] npm run validate:topics
-[ ] npm run validate:judgments
-[ ] npm run build
+[x] Layer A product shell green (Phases 1–6)
+[x] Layer B zero omission: 20 slugs, counts >= floor (Phase 0 + 8)
+[x] Layer C: all P0 high-yield = full treatises; all other IDs = minimum floor (Phases 7–8)
+[x] Layer D: banner slim, docs true, lint/build/validate green (Phase 9)
+[x] npm run lint
+[x] npm run audit
+[x] npm run validate:topics
+[x] npm run validate:judgments
+[x] npm run test:run
+[x] npm run build
 ```
 
 When this block is green, the site may be called **100% done** for launch. Further treatise upgrades continue as content ops, not as “unfinished product.”

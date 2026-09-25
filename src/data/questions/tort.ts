@@ -7,15 +7,15 @@ import { TORT_PART_5 } from './tortPart5'
 import { TORT_SUPPLEMENT_1 } from './tortSupplement1'
 
 const TOPICS = [
-  'general-principles',
+  'tort-definition',
   'negligence',
-  'defamation',
+  'defamation-tort',
   'nuisance',
-  'strict-absolute-liability',
-  'vicarious-liability',
-  'trespass-to-person',
-  'conspiracy',
-  'consumer-mv',
+  'strict-liability',
+  'vicarious',
+  'trespass-person',
+  'tort-conspiracy',
+  'consumer',
 ] as const
 
 type RawTortQuestion = [string, [string, string, string, string], number, number]
@@ -48,6 +48,7 @@ const baseQuestions: McqQuestion[] = RAW_TORT_QUESTIONS.map(
     return {
       id: `tort-${index + 1}`,
       subject: 'tort',
+      subjectSlug: 'tort',
       subjectLabel: 'Law of Torts',
       question: cleanSourceText(question),
       options,
@@ -66,6 +67,7 @@ const supplementQuestions: McqQuestion[] = RAW_TORT_SUPPLEMENT.map(
     return {
       id: `tort-${RAW_TORT_QUESTIONS.length + index + 1}`,
       subject: 'tort',
+      subjectSlug: 'tort',
       subjectLabel: 'Law of Torts',
       question: cleanSourceText(question),
       options,
