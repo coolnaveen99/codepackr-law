@@ -37,10 +37,8 @@ import { encodeKnowledgeId } from './data/knowledge'
 
 export default function App() {
   const [mobileTab, setMobileTab] = useState('home')
-  const [dark, setDark] = useState(() => {
-    if (typeof window === 'undefined') return false
-    return window.matchMedia('(prefers-color-scheme: dark)').matches || localStorage.getItem('codepackr-theme') === 'dark'
-  })
+  // Dark mode deferred — light theme only (MOBILE_PREMIUM_UX §1B).
+  const dark = false
   const [route, setRoute] = useState(() => parseRoute())
   const [selectedCategory, setSelectedCategory] = useState<ToolCategory | 'all'>('all')
   const [searchQuery, setSearchQuery] = useState('')
@@ -57,9 +55,13 @@ export default function App() {
   }, [])
 
   useEffect(() => {
-    document.documentElement.classList.toggle('dark', dark)
-    try { localStorage.setItem('codepackr-theme', dark ? 'dark' : 'light') } catch {}
-  }, [dark])
+    document.documentElement.classList.remove('dark')
+    try {
+      if (localStorage.getItem('codepackr-theme') === 'dark') {
+        localStorage.setItem('codepackr-theme', 'light')
+      }
+    } catch {}
+  }, [])
 
   useEffect(() => {
     if (route.type === 'home') setPageMeta({ title: `${SITE_NAME} — Indian Law Library & Practice Reference`, description: SITE_TAGLINE, path: '/' })
@@ -96,7 +98,7 @@ export default function App() {
   const goHome = () => { setHomeUrl(); setRoute({ type: 'home' }); setSearchQuery(''); setSubjectSearch('') }
   const openSubjects = () => { setSubjectsUrl(); setRoute({ type: 'subjects' }); setSubjectSearch('') }
   const selectSubject = (slug: string) => { setSubjectUrl(slug); setRoute({ type: 'subject', slug }); setSubjectSearch('') }
-  const selectTopic = (subjectSlug: string, topic: LawTopic) => { setTopicUrl(subjectSlug, topic.id); setRoute({ type: 'topic', subjectSlug, topicId: topic.id }) }
+  const selectTopic = (subjectSlug: string, topic: LawTopic) => { setTopicUrl(subjectSlug, topic.id); setRoute({ type: 'topic', subjectSlug, topic.id }) }
   const selectTool = (slug: string, params?: { subject?: string; topicId?: string; mode?: 'practice' | 'exam' }) => {
     if (params) setToolParams(params)
     else setToolParams({})
@@ -142,7 +144,7 @@ export default function App() {
     <div className={dark ? 'dark' : ''}>
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors">
         <CodepackrFamilyBar />
-        <Header dark={dark} onToggleDark={() => setDark(!dark)} currentLabel={null} activeKey={route.type === 'home' ? 'home' : route.type === 'subjects' ? 'subjects' : route.type === 'subject' ? `subject:${route.slug}` : route.type === 'topic' ? `subject:${route.subjectSlug}` : route.type === 'tool' ? `tool:${route.slug}` : route.type} onHome={goHome} onOpenSubjects={openSubjects} onSelectSubject={selectSubject} onSelectTool={selectTool} onOpenKnowledge={() => { setKnowledgeUrl(); setRoute({ type: 'knowledge' }) }} onOpenCaseLaw={() => { setCaseLawUrl(); setRoute({ type: 'case-law' }) }} onOpenContact={() => { setContactUrl(); setRoute({ type: 'contact' }) }} />
+        <Header dark={dark} onToggleDark={() => { /* dark mode deferred */ }} currentLabel={null} activeKey={route.type === 'home' ? 'home' : route.type === 'subjects' ? 'subjects' : route.type === 'subject' ? `subject:${route.slug}` : route.type === 'topic' ? `subject:${route.subjectSlug}` : route.type === 'tool' ? `tool:${route.slug}` : route.type} onHome={goHome} onOpenSubjects={openSubjects} onSelectSubject={selectSubject} onSelectTool={selectTool} onOpenKnowledge={() => { setKnowledgeUrl(); setRoute({ type: 'knowledge' }) }} onOpenCaseLaw={() => { setCaseLawUrl(); setRoute({ type: 'case-law' }) }} onOpenContact={() => { setContactUrl(); setRoute({ type: 'contact' }) }} />
         <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-8 paper-grid cp-mobile-main-pad cp-page">
           {route.type === 'contact' && <ContactFeedback onBackToHome={goHome} />}
           {route.type === 'case-law' && (
