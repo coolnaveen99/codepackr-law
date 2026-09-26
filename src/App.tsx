@@ -98,7 +98,7 @@ export default function App() {
   const goHome = () => { setHomeUrl(); setRoute({ type: 'home' }); setSearchQuery(''); setSubjectSearch('') }
   const openSubjects = () => { setSubjectsUrl(); setRoute({ type: 'subjects' }); setSubjectSearch('') }
   const selectSubject = (slug: string) => { setSubjectUrl(slug); setRoute({ type: 'subject', slug }); setSubjectSearch('') }
-  const selectTopic = (subjectSlug: string, topic: LawTopic) => { setTopicUrl(subjectSlug, topic.id); setRoute({ type: 'topic', subjectSlug, topic.id }) }
+  const selectTopic = (subjectSlug: string, topic: LawTopic) => { setTopicUrl(subjectSlug, topic.id); setRoute({ type: 'topic', subjectSlug, topicId: topic.id }) }
   const selectTool = (slug: string, params?: { subject?: string; topicId?: string; mode?: 'practice' | 'exam' }) => {
     if (params) setToolParams(params)
     else setToolParams({})
