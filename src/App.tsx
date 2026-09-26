@@ -19,6 +19,7 @@ import { ToolMetadata, ToolCategory } from './types'
 import { Header } from './components/layout/Header'
 import { CodepackrFamilyBar } from './components/CodepackrFamilyBar'
 import { Footer } from './components/layout/Footer'
+import { MobileBottomNav, LAW_MOBILE_TABS } from './components/MobileBottomNav'
 import { HomePage } from './components/home/HomePage'
 import { SubjectsList } from './components/subjects/SubjectsList'
 import { SubjectDetail } from './components/subjects/SubjectDetail'
@@ -35,6 +36,7 @@ import { KnowledgeBrowser } from './components/knowledge/KnowledgeBrowser'
 import { encodeKnowledgeId } from './data/knowledge'
 
 export default function App() {
+  const [mobileTab, setMobileTab] = useState('home')
   const [dark, setDark] = useState(() => {
     if (typeof window === 'undefined') return false
     return window.matchMedia('(prefers-color-scheme: dark)').matches || localStorage.getItem('codepackr-theme') === 'dark'
@@ -119,12 +121,29 @@ export default function App() {
     return searchSubjectsAndTopics(searchQuery)
   }, [searchQuery, route.type])
 
+  const handleMobileTab = (tab: string) => {
+    setMobileTab(tab)
+    if (tab === 'home') {
+      goHome()
+    } else if (tab === 'study') {
+      openSubjects()
+    } else if (tab === 'judgments') {
+      setCaseLawUrl()
+      setRoute({ type: 'case-law' })
+    } else if (tab === 'search') {
+      goHome()
+    } else if (tab === 'more') {
+      setContactUrl()
+      setRoute({ type: 'contact' })
+    }
+  }
+
   return (
     <div className={dark ? 'dark' : ''}>
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors">
         <CodepackrFamilyBar />
         <Header dark={dark} onToggleDark={() => setDark(!dark)} currentLabel={null} activeKey={route.type === 'home' ? 'home' : route.type === 'subjects' ? 'subjects' : route.type === 'subject' ? `subject:${route.slug}` : route.type === 'topic' ? `subject:${route.subjectSlug}` : route.type === 'tool' ? `tool:${route.slug}` : route.type} onHome={goHome} onOpenSubjects={openSubjects} onSelectSubject={selectSubject} onSelectTool={selectTool} onOpenKnowledge={() => { setKnowledgeUrl(); setRoute({ type: 'knowledge' }) }} onOpenCaseLaw={() => { setCaseLawUrl(); setRoute({ type: 'case-law' }) }} onOpenContact={() => { setContactUrl(); setRoute({ type: 'contact' }) }} />
-        <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-8 paper-grid">
+        <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-8 paper-grid cp-mobile-main-pad cp-page">
           {route.type === 'contact' && <ContactFeedback onBackToHome={goHome} />}
           {route.type === 'case-law' && (
             <CaseLawLibrary
@@ -219,6 +238,11 @@ export default function App() {
             />
           )}
         </main>
+        <MobileBottomNav
+          activeTab={mobileTab}
+          onSelectTab={handleMobileTab}
+          tabs={LAW_MOBILE_TABS}
+        />
         <Footer onOpenContact={() => { setContactUrl(); setRoute({ type: 'contact' }) }} />
       </div>
     </div>
