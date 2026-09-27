@@ -11,7 +11,13 @@ import {
   setContactUrl,
   migrateHashToPath,
 } from './lib/urls'
-import { setPageMeta, SITE_NAME, SITE_TAGLINE } from './lib/seo'
+import {
+  setPageMeta,
+  SITE_NAME,
+  buildJudgmentStructuredData,
+  buildTopicStructuredData,
+} from './lib/seo'
+import { JUDGMENTS_BY_ID } from './data/judgments'
 import { type LawTopic } from './data/subjects'
 import { getSubjectBySlug, getTopic, searchSubjectsAndTopics } from './data/liveSubjects'
 import { TOOLS } from './data/tools'
@@ -64,28 +70,221 @@ export default function App() {
   }, [])
 
   useEffect(() => {
-    if (route.type === 'home') setPageMeta({ title: `${SITE_NAME} — Indian Law Library & Practice Reference`, description: SITE_TAGLINE, path: '/' })
-    if (route.type === 'subjects') setPageMeta({ title: `All 20 Curriculum Subjects | ${SITE_NAME}`, description: 'Complete 20-subject curriculum with 3,552 topics across Constitution, BNS, BNSS, BSA, CPC, and allied statutes.', path: '/subjects' })
+    if (route.type === 'home') {
+      setPageMeta({
+        title: `${SITE_NAME} — Indian Law Library, Bare Acts & Practice Reference`,
+        description:
+          'Free digital Indian law library covering 20 curriculum subjects, 3,552 Bare Act sections (BNS, BNSS, BSA, CPC, Constitution), 290+ Supreme Court landmark judgments, and AIBE/Judiciary prep.',
+        keywords: [
+          'Indian Law Library',
+          'Bare Acts India',
+          'BNS 2023',
+          'BNSS 2023',
+          'BSA 2023',
+          'CPC 1908',
+          'Constitution of India',
+          'Supreme Court Judgments',
+          'Ratio Decidendi',
+          'Case Law Briefs',
+          'AIBE Exam Preparation',
+          'Judiciary Prelims and Mains',
+          'BNS IPC Mapper',
+          'Legal Drafting Formats',
+        ],
+        path: '/',
+        breadcrumbs: [{ name: 'Home', path: '/' }],
+      })
+    }
+    if (route.type === 'subjects') {
+      setPageMeta({
+        title: `All 20 Law Curriculum Subjects & Bare Acts | ${SITE_NAME}`,
+        description:
+          'Complete statutory catalog of 20 Indian law subjects with 3,552 provisions across Constitution, BNS 2023, BNSS 2023, BSA 2023, CPC, Contract, Torts, Family Law, Arbitration, and allied statutes.',
+        keywords: [
+          'Indian Law Subjects',
+          'Bare Acts Index',
+          'Constitution Articles',
+          'BNS Sections',
+          'BNSS Sections',
+          'BSA Sections',
+          'CPC Orders and Sections',
+          'Law Student Notes',
+          'Judiciary Syllabus',
+        ],
+        path: '/subjects',
+        breadcrumbs: [
+          { name: 'Home', path: '/' },
+          { name: 'Subjects', path: '/subjects' },
+        ],
+      })
+    }
     if (route.type === 'subject') {
       const subject = getSubjectBySlug(route.slug)
-      setPageMeta({ title: `${subject?.name ?? 'Subject'} | ${SITE_NAME}`, description: subject?.description ?? SITE_TAGLINE, path: `/subjects/${route.slug}` })
+      if (subject) {
+        setPageMeta({
+          title: `${subject.name} (${subject.shortName}) — Bare Act Catalog & Study Modules | ${SITE_NAME}`,
+          description: `${subject.description} Explore ${subject.topics.length} sections and provisions with proving ingredients, case laws, and procedural roadmaps.`,
+          keywords: [
+            subject.name,
+            subject.shortName,
+            ...subject.bareActs,
+            ...subject.keywords,
+            'Bare Act sections',
+            'statutory ingredients',
+            'case law ratios',
+            'judiciary notes',
+          ],
+          path: `/subjects/${subject.slug}`,
+          breadcrumbs: [
+            { name: 'Home', path: '/' },
+            { name: 'Subjects', path: '/subjects' },
+            { name: subject.name, path: `/subjects/${subject.slug}` },
+          ],
+        })
+      }
     }
     if (route.type === 'topic') {
       const pair = getTopic(route.subjectSlug, route.topicId)
-      setPageMeta({ title: `${pair?.topic.name ?? 'Topic'} | ${SITE_NAME}`, description: pair?.topic.note ?? SITE_TAGLINE, path: `/subjects/${route.subjectSlug}/${route.topicId}` })
+      if (pair) {
+        const { subject, topic } = pair
+        const secName = topic.range ? `${topic.name} (${topic.range})` : topic.name
+        setPageMeta({
+          title: `${secName} — Bare Act, Ingredients & Notes | ${subject.name} | ${SITE_NAME}`,
+          description: topic.note
+            ? `${topic.name}: ${topic.note}`
+            : `Complete statutory treatise, proving ingredients, case ratios, and chamber notes for ${topic.name} under ${subject.name}.`,
+          keywords: [
+            topic.name,
+            topic.range ?? '',
+            subject.name,
+            subject.shortName,
+            ...(topic.keywords ?? []),
+            ...subject.keywords,
+            'bare act provisions',
+            'proving ingredients',
+            'legal ratio',
+          ].filter(Boolean),
+          path: `/subjects/${subject.slug}/${topic.id}`,
+          breadcrumbs: [
+            { name: 'Home', path: '/' },
+            { name: 'Subjects', path: '/subjects' },
+            { name: subject.name, path: `/subjects/${subject.slug}` },
+            { name: topic.name, path: `/subjects/${subject.slug}/${topic.id}` },
+          ],
+          structuredData: buildTopicStructuredData(subject, topic),
+        })
+      }
     }
     if (route.type === 'tool') {
       const tool = TOOLS.find((t) => t.slug === route.slug)
-      setPageMeta({ title: `${tool?.name ?? 'Practice Tool'} | ${SITE_NAME}`, description: tool?.description ?? SITE_TAGLINE, path: `/tool/${route.slug}` })
+      if (tool) {
+        setPageMeta({
+          title: `${tool.name} — Free Legal Practice Tool | ${SITE_NAME}`,
+          description: tool.description,
+          keywords: [...tool.keywords, 'legal tool', 'Indian law practice', 'online legal reference'],
+          path: `/tool/${tool.slug}`,
+          breadcrumbs: [
+            { name: 'Home', path: '/' },
+            { name: tool.name, path: `/tool/${tool.slug}` },
+          ],
+        })
+      }
     }
     if (route.type === 'case-law') {
-      setPageMeta({ title: `Case Law Library & Landmark Judgments | ${SITE_NAME}`, description: 'Authoritative Supreme Court landmark judgments, extracted ratios, and practice MCQs.', path: route.judgmentId ? `/case-law/${route.judgmentId}` : '/case-law' })
+      if (route.judgmentId) {
+        const judgment = JUDGMENTS_BY_ID.get(route.judgmentId)
+        if (judgment) {
+          const yearStr = judgment.year ? `(${judgment.year})` : ''
+          const citeStr = judgment.citation ? `[${judgment.citation}]` : ''
+          setPageMeta({
+            title: `${judgment.caseName} ${yearStr} ${citeStr} — Ratio, Facts & Case Brief | ${SITE_NAME}`,
+            description: judgment.summary
+              ? `${judgment.caseName}: ${judgment.summary}`
+              : `${judgment.court || 'Supreme Court of India'} landmark ruling on ${judgment.topics.join(', ')}. Ratio: ${(judgment.ratioDecidendi || judgment.holding || judgment.decision || '').slice(0, 160)}...`,
+            keywords: [
+              judgment.caseName,
+              judgment.shortName ?? '',
+              judgment.citation ?? '',
+              judgment.neutralCitation ?? '',
+              judgment.court ?? 'Supreme Court of India',
+              ...(judgment.judges ?? []),
+              ...judgment.topics,
+              ...judgment.tags,
+              'ratio decidendi',
+              'landmark judgment',
+              'case brief',
+              'facts and issues',
+              'legal ratio',
+            ].filter(Boolean),
+            path: `/case-law/judgment/${judgment.id}`,
+            breadcrumbs: [
+              { name: 'Home', path: '/' },
+              { name: 'Case Law Library', path: '/case-law' },
+              { name: judgment.caseName, path: `/case-law/judgment/${judgment.id}` },
+            ],
+            structuredData: buildJudgmentStructuredData(judgment),
+          })
+        } else {
+          setPageMeta({
+            title: `Judgment Not Found | ${SITE_NAME}`,
+            description: 'The requested Supreme Court judgment was not found in the library.',
+            path: `/case-law/judgment/${route.judgmentId}`,
+          })
+        }
+      } else {
+        setPageMeta({
+          title: `Case Law Library — 290+ Supreme Court Landmark Judgments | ${SITE_NAME}`,
+          description:
+            'Search and study 290+ authoritative Indian Supreme Court landmark judgments with extracted ratios, facts, issues, statutory provisions, and AIBE/Judiciary practice MCQs.',
+          keywords: [
+            'Supreme Court Judgments',
+            'Landmark Cases India',
+            'Case Law Library',
+            'Ratio Decidendi',
+            'Basic Structure Cases',
+            'Article 21 Cases',
+            'Criminal Law Precedents',
+            'Judiciary Case Briefs',
+          ],
+          path: '/case-law',
+          breadcrumbs: [
+            { name: 'Home', path: '/' },
+            { name: 'Case Law Library', path: '/case-law' },
+          ],
+        })
+      }
     }
     if (route.type === 'knowledge') {
-      setPageMeta({ title: `Legal Knowledge Graph & Canonical Concepts | ${SITE_NAME}`, description: 'Canonical legal doctrines, Latin maxims, statutory definitions, and constitutional principles.', path: '/knowledge' })
+      setPageMeta({
+        title: `Legal Knowledge Graph & Canonical Concepts | ${SITE_NAME}`,
+        description:
+          'Canonical legal doctrines, Latin maxims, statutory definitions, and constitutional principles interlinked across Bare Acts and case precedents.',
+        keywords: [
+          'Legal Knowledge Graph',
+          'Legal Doctrines',
+          'Latin Maxims',
+          'Basic Structure Doctrine',
+          'Golden Triangle',
+          'Statutory Definitions',
+        ],
+        path: '/knowledge',
+        breadcrumbs: [
+          { name: 'Home', path: '/' },
+          { name: 'Knowledge Graph', path: '/knowledge' },
+        ],
+      })
     }
     if (route.type === 'contact') {
-      setPageMeta({ title: `Contact & Chamber Feedback | ${SITE_NAME}`, description: 'Reach our legal research and engineering chamber.', path: '/contact' })
+      setPageMeta({
+        title: `Contact & Chamber Feedback | ${SITE_NAME}`,
+        description:
+          'Contact the Codepackr Law senior research chamber, report statutory errors, suggest landmark judgments, or collaborate.',
+        path: '/contact',
+        breadcrumbs: [
+          { name: 'Home', path: '/' },
+          { name: 'Contact', path: '/contact' },
+        ],
+      })
     }
   }, [route])
 

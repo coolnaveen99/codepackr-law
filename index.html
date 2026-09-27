@@ -62,14 +62,66 @@
           "@id": "https://law.codepackr.com/#website",
           "url": "https://law.codepackr.com/",
           "name": "Codepackr Law",
-          "publisher": { "@type": "Organization", "name": "Codepackr", "url": "https://www.codepackr.com/" }
+          "description": "Free digital Indian law library and practice reference covering statutes, case law, legal concepts, drafting formats, study notes, and exam preparation tools.",
+          "publisher": { "@type": "Organization", "name": "Codepackr", "url": "https://www.codepackr.com/" },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://law.codepackr.com/?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
         }
       ]
     }
     </script>
   </head>
   <body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NK24VGVG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NK24VGVG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      <div style="padding: 24px; font-family: sans-serif; max-width: 900px; margin: 0 auto; line-height: 1.6;">
+        <h1>Codepackr Law — Digital Indian Law Library & Practice Reference</h1>
+        <p>An authoritative, privacy-first legal library engineered for law students, advocates, and judicial aspirants. Featuring 20 curriculum subjects, 3,552 statutory provisions, 290+ Supreme Court landmark judgments, and AIBE/Judiciary examination prep.</p>
+
+        <h2>Curriculum Subjects &amp; Bare Acts</h2>
+        <ul>
+          <li><a href="/subjects/constitution">Constitution of India (Articles 1–395 &amp; Schedules)</a></li>
+          <li><a href="/subjects/bns">Bharatiya Nyaya Sanhita (BNS 2023 / IPC 1860)</a></li>
+          <li><a href="/subjects/bnss">Bharatiya Nagarik Suraksha Sanhita (BNSS 2023 / CrPC 1973)</a></li>
+          <li><a href="/subjects/bsa">Bharatiya Sakshya Adhiniyam (BSA 2023 / IEA 1872)</a></li>
+          <li><a href="/subjects/cpc">Code of Civil Procedure (CPC 1908 — Sections &amp; Orders I–LI)</a></li>
+          <li><a href="/subjects/contract">Law of Contract &amp; Specific Relief Act</a></li>
+          <li><a href="/subjects/family">Family Law (Hindu Law &amp; Muslim Law)</a></li>
+          <li><a href="/subjects/tort">Law of Torts, Consumer Protection &amp; Motor Vehicles</a></li>
+          <li><a href="/subjects/arbitration">Arbitration and Conciliation Act, 1996</a></li>
+          <li><a href="/subjects/limitation">Limitation Act, 1963</a></li>
+          <li><a href="/subjects/property">Transfer of Property Act, 1882</a></li>
+          <li><a href="/subjects/administrative">Administrative Law</a></li>
+          <li><a href="/subjects/company">Company Law (Companies Act, 2013)</a></li>
+          <li><a href="/subjects/labour">Labour and Industrial Laws</a></li>
+          <li><a href="/subjects/environmental">Environmental Law</a></li>
+          <li><a href="/subjects/international">Public International Law &amp; Human Rights</a></li>
+          <li><a href="/subjects/taxation">Taxation Laws (Income Tax &amp; GST)</a></li>
+          <li><a href="/subjects/cyber">Cyber Law &amp; Information Technology Act, 2000</a></li>
+          <li><a href="/subjects/ethics">Professional Ethics &amp; Bar Council of India Rules</a></li>
+          <li><a href="/subjects/jurisprudence">Jurisprudence &amp; Legal Theory</a></li>
+        </ul>
+
+        <h2>Case Law &amp; Practice Tools</h2>
+        <ul>
+          <li><a href="/case-law">Case Law Library — 290+ Supreme Court Landmark Judgments</a></li>
+          <li><a href="/knowledge">Legal Knowledge Graph &amp; Canonical Doctrines</a></li>
+          <li><a href="/tool/aibe-mcq">AIBE &amp; Judiciary MCQ Practice Bank</a></li>
+          <li><a href="/tool/bns-ipc-mapper">BNS ↔ IPC Sanhita Mapper</a></li>
+          <li><a href="/tool/bnss-crpc-mapper">BNSS ↔ CrPC Sanhita Mapper</a></li>
+          <li><a href="/tool/bsa-iea-mapper">BSA ↔ Evidence Act Sanhita Mapper</a></li>
+          <li><a href="/tool/legal-maxims">Legal Maxims Dictionary &amp; Quiz</a></li>
+          <li><a href="/tool/landmark-cases">Landmark Case Laws Flashcards</a></li>
+          <li><a href="/sitemap.xml">XML Sitemap (3,800+ URLs)</a></li>
+        </ul>
+      </div>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 3000",
-    "build": "tsc --noEmit && vite build",
+    "sitemap": "npx tsx scripts/generate_sitemap.ts",
+    "indexnow": "npx tsx scripts/submit_indexnow.ts",
+    "build": "tsc --noEmit && npx tsx scripts/generate_sitemap.ts && vite build",
     "lint": "tsc --noEmit",
     "preview": "vite preview --port 3000 --host 0.0.0.0",
     "checklist": "npx tsx scripts/generate_checklist.ts",

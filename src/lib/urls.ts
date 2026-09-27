@@ -33,7 +33,7 @@ export function parsePathname(pathname: string): AppRoute {
   const toolMatch = path.match(/^\/tool\/([a-z0-9-]+)$/i)
   if (toolMatch) return { type: 'tool', slug: toolMatch[1] }
 
-  const judgmentMatch = path.match(/^\/case-law\/judgment\/([a-z0-9-]+)$/i)
+  const judgmentMatch = path.match(/^\/case-law\/(?:judgment\/)?([a-z0-9-]+)$/i)
   if (judgmentMatch) return { type: 'case-law', judgmentId: judgmentMatch[1] }
 
   if (path === '/case-law') return { type: 'case-law' }
