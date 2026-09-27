@@ -1,23 +1,13 @@
 import type { Judgment } from './types'
 import { kesavananda } from './kesavananda'
-import { manekaGandhi } from './manekaGandhi'
-import { minervaMills } from './minervaMills'
-import { puttaswamy } from './puttaswamy'
-import { lalitaKumari } from './lalitaKumari'
-import { dkBasu } from './dkBasu'
-import { shreyaSinghal } from './shreyaSinghal'
-import { shayaraBano } from './shayaraBano'
+import { LEGACY_BATCH_A } from './legacy-batch-a'
+import { LEGACY_BATCH_B } from './legacy-batch-b'
 import { FAMOUS_LANDMARKS_BATCH } from './famous-landmarks-batch'
 
 export const ALL_JUDGMENTS: Judgment[] = [
   kesavananda,
-  manekaGandhi,
-  minervaMills,
-  puttaswamy,
-  lalitaKumari,
-  dkBasu,
-  shreyaSinghal,
-  shayaraBano,
+  ...LEGACY_BATCH_A,
+  ...LEGACY_BATCH_B,
   ...FAMOUS_LANDMARKS_BATCH,
 ]
 
