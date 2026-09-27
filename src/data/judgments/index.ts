@@ -4,6 +4,7 @@ import { LEGACY_BATCH_A } from './legacy-batch-a'
 import { LEGACY_BATCH_B1 } from './legacy-batch-b1'
 import { LEGACY_BATCH_B2 } from './legacy-batch-b2'
 import { FAMOUS_LANDMARKS_BATCH } from './famous-landmarks-batch'
+import { FAMOUS_LANDMARKS_BATCH_2 } from './famous-landmarks-batch-2'
 
 export const ALL_JUDGMENTS: Judgment[] = [
   kesavananda,
@@ -11,6 +12,7 @@ export const ALL_JUDGMENTS: Judgment[] = [
   ...LEGACY_BATCH_B1,
   ...LEGACY_BATCH_B2,
   ...FAMOUS_LANDMARKS_BATCH,
+  ...FAMOUS_LANDMARKS_BATCH_2,
 ]
 
 export const JUDGMENTS_BY_ID = new Map(ALL_JUDGMENTS.map((judgment) => [judgment.id, judgment]))
