@@ -12,6 +12,7 @@ import {
 } from 'lucide-react'
 import { SUBJECTS } from '../../data/subjects'
 import { TOOLS } from '../../data/tools'
+import { ALL_JUDGMENTS } from '../../data/judgments'
 import { SubjectGlyph, ToolGlyph } from '../icons'
 
 const CODE_SLUGS = ['constitution', 'bns', 'bnss', 'bsa'] as const
@@ -228,6 +229,7 @@ export function NavDrawer({
               onClick={onOpenCaseLaw}
               icon={<Library className="w-4 h-4" />}
               label="Case law library"
+              hint={`${ALL_JUDGMENTS.length} judgments`}
             />
           </section>
 

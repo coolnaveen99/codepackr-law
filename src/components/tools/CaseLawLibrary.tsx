@@ -19,6 +19,7 @@ import {
   Target,
   X,
   Clock,
+  Scale,
 } from 'lucide-react'
 import { ALL_JUDGMENTS, JUDGMENTS_BY_ID } from '../../data/judgments'
 import type { Judgment, JudgmentMcq } from '../../data/judgments/types'
@@ -462,8 +463,23 @@ export function CaseLawLibrary({
               Senior Counsel standard ratio deconstructions, facts, procedural arguments, and statutory linkages. 100% client-side privacy.
             </p>
           </div>
-          <div className="flex items-center gap-2 text-xs font-semibold text-blue-700 dark:text-blue-300">
-            <ShieldCheck className="w-4 h-4" /> Client-side study library
+          <div className="flex flex-col sm:flex-row lg:flex-col items-start lg:items-end gap-2.5 shrink-0">
+            <div className="inline-flex items-center gap-3 px-4 py-2.5 rounded-2xl bg-white/95 dark:bg-slate-900/95 border border-blue-200 dark:border-blue-800/80 shadow-xs">
+              <div className="w-8 h-8 rounded-xl bg-blue-50 dark:bg-blue-950/70 text-blue-700 dark:text-blue-300 flex items-center justify-center shrink-0">
+                <Scale className="w-4 h-4" />
+              </div>
+              <div>
+                <div className="text-xl sm:text-2xl font-black text-slate-950 dark:text-white leading-none">
+                  {ALL_JUDGMENTS.length.toLocaleString()}
+                </div>
+                <div className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mt-0.5">
+                  Total Library Count
+                </div>
+              </div>
+            </div>
+            <div className="flex items-center gap-2 text-xs font-semibold text-blue-700 dark:text-blue-300">
+              <ShieldCheck className="w-4 h-4" /> Client-side study library
+            </div>
           </div>
         </div>
       </div>
@@ -567,19 +583,40 @@ export function CaseLawLibrary({
           </button>
         </div>
 
-        <div className="flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500 pt-1">
-          <span className="inline-flex items-center gap-1.5">
-            <Filter className="w-3.5 h-3.5" /> {results.length} landmark judgment
-            {results.length === 1 ? '' : 's'} available
+        <div className="flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600 dark:text-slate-400 pt-1">
+          <span className="inline-flex items-center gap-1.5 font-medium">
+            <Filter className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
+            {results.length === ALL_JUDGMENTS.length ? (
+              <span>
+                <strong className="text-slate-900 dark:text-white font-bold text-sm">
+                  {ALL_JUDGMENTS.length.toLocaleString()}
+                </strong>{' '}
+                landmark judgments available across all subjects
+              </span>
+            ) : (
+              <span>
+                Showing{' '}
+                <strong className="text-slate-900 dark:text-white font-bold text-sm">
+                  {results.length.toLocaleString()}
+                </strong>{' '}
+                of{' '}
+                <strong className="text-slate-900 dark:text-white font-bold text-sm">
+                  {ALL_JUDGMENTS.length.toLocaleString()}
+                </strong>{' '}
+                total landmark judgments
+              </span>
+            )}
           </span>
-          <button
-            type="button"
-            onClick={reset}
-            className="inline-flex items-center gap-1.5 font-semibold text-blue-600 hover:underline min-h-[36px]"
-          >
-            <RotateCcw className="w-3.5 h-3.5" />
-            <span>Reset filters</span>
-          </button>
+          {(query || subject || topic || year || bookmarkedOnly) && (
+            <button
+              type="button"
+              onClick={reset}
+              className="inline-flex items-center gap-1.5 font-semibold text-blue-600 dark:text-blue-400 hover:underline min-h-[36px]"
+            >
+              <RotateCcw className="w-3.5 h-3.5" />
+              <span>Reset filters</span>
+            </button>
+          )}
         </div>
       </div>
 

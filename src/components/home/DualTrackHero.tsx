@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import { BookOpen, GraduationCap, Briefcase, ArrowRight, ShieldCheck, Check } from 'lucide-react'
 import { TOTAL_TOPICS_COUNT } from '../../data/liveSubjects'
+import { ALL_JUDGMENTS } from '../../data/judgments'
 
 interface DualTrackHeroProps {
   onOpenSubjects: () => void
+  onOpenCaseLaw?: () => void
 }
 
-export function DualTrackHero({ onOpenSubjects }: DualTrackHeroProps) {
+export function DualTrackHero({ onOpenSubjects, onOpenCaseLaw }: DualTrackHeroProps) {
   const [activeTrack, setActiveTrack] = useState<'student' | 'advocate'>('student')
 
   return (
@@ -39,6 +41,16 @@ export function DualTrackHero({ onOpenSubjects }: DualTrackHeroProps) {
             <BookOpen className="w-4 h-4" />
             Explore All 20 Subjects ({TOTAL_TOPICS_COUNT.toLocaleString()} Topics)
           </button>
+          {onOpenCaseLaw && (
+            <button
+              type="button"
+              onClick={onOpenCaseLaw}
+              className="inline-flex items-center gap-2.5 h-12 px-5 rounded-2xl border border-blue-300 dark:border-blue-800 bg-blue-50/60 dark:bg-blue-950/40 text-sm font-bold text-blue-800 dark:text-blue-200 hover:bg-blue-100 dark:hover:bg-blue-900/60 transition-colors duration-150 shadow-2xs"
+            >
+              <Scale className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+              Case Law ({ALL_JUDGMENTS.length.toLocaleString()} Judgments)
+            </button>
+          )}
           <a
             href="#tools"
             className="inline-flex items-center gap-2 h-12 px-5 rounded-2xl border border-slate-300 dark:border-slate-700 text-sm font-semibold text-slate-800 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-900 transition-colors duration-150"

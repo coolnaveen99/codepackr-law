@@ -1,6 +1,7 @@
 import { ArrowRight, Search, Sparkles, HeartHandshake, ShieldCheck, BookOpenCheck } from 'lucide-react'
 import { SUBJECTS, type LawTopic } from '../../data/subjects'
 import { TOTAL_TOPICS_COUNT } from '../../data/liveSubjects'
+import { ALL_JUDGMENTS } from '../../data/judgments'
 import type { ToolCategory, ToolMetadata } from '../../types'
 import { Badge } from '../ui/Badge'
 import { LibraryStatsBar } from './LibraryStatsBar'
@@ -41,7 +42,7 @@ interface HomePageProps {
 const CATEGORIES: { id: ToolCategory | 'all'; label: string }[] = [
   { id: 'all', label: 'All Practice Tools' },
   { id: 'mcq', label: 'MCQs & Mocks' },
-  { id: 'bare-acts', label: 'Sanhita Mappers' },
+  { id: 'bare-acts', label: 'Sanhitas Mappers' },
   { id: 'study-aids', label: 'Flashcards & Timers' },
   { id: 'reference', label: 'Maxims & Cases' },
 ]
@@ -61,12 +62,15 @@ export function HomePage({
   return (
     <div className="space-y-12 sm:space-y-16 pb-12">
       {/* 1. Prestige Dual-Track Hero */}
-      <DualTrackHero onOpenSubjects={onOpenSubjects} />
+      <DualTrackHero
+        onOpenSubjects={onOpenSubjects}
+        onOpenCaseLaw={() => onSelectTool('case-law')}
+      />
 
       <ContinueLearning onSelectTopic={onSelectTopic} onSelectSubject={onSelectSubject} />
 
       {/* 3. Live Library Metrics Ticker */}
-      <LibraryStatsBar />
+      <LibraryStatsBar onOpenCaseLaw={() => onSelectTool('case-law')} />
 
       {/* 4. Universal Legal Omni-Search & Quick Jumps */}
       <section className="space-y-4 max-w-4xl mx-auto w-full pt-2">
@@ -247,7 +251,7 @@ export function HomePage({
                   </div>
                   {tool.badge ? (
                     <Badge variant="blue" className="text-[10px] font-black uppercase">
-                      {tool.badge}
+                      {tool.id === 'case-law-library' ? `${ALL_JUDGMENTS.length} Ratios` : tool.badge}
                     </Badge>
                   ) : null}
                 </div>
@@ -255,7 +259,9 @@ export function HomePage({
                   {tool.name}
                 </h4>
                 <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                  {tool.description}
+                  {tool.id === 'case-law-library'
+                    ? `Search and study all ${ALL_JUDGMENTS.length.toLocaleString()} landmark Supreme Court judgments through facts, issues, reasoning, ratio, and practice MCQs.`
+                    : tool.description}
                 </p>
               </div>
 

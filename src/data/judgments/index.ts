@@ -18,6 +18,7 @@ import { FAMOUS_LANDMARKS_BATCH_12 } from './famous-landmarks-batch-12'
 import { FAMOUS_LANDMARKS_BATCH_13 } from './famous-landmarks-batch-13'
 import { FAMOUS_LANDMARKS_BATCH_14 } from './famous-landmarks-batch-14'
 import { FAMOUS_LANDMARKS_BATCH_15 } from './famous-landmarks-batch-15'
+import { FAMOUS_LANDMARKS_BATCH_16 } from './famous-landmarks-batch-16'
 
 export const ALL_JUDGMENTS: Judgment[] = [
   kesavananda,
@@ -39,6 +40,7 @@ export const ALL_JUDGMENTS: Judgment[] = [
   ...FAMOUS_LANDMARKS_BATCH_13,
   ...FAMOUS_LANDMARKS_BATCH_14,
   ...FAMOUS_LANDMARKS_BATCH_15,
+  ...FAMOUS_LANDMARKS_BATCH_16,
 ]
 
 export const JUDGMENTS_BY_ID = new Map(ALL_JUDGMENTS.map((judgment) => [judgment.id, judgment]))
