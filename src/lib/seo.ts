@@ -86,7 +86,7 @@ export function setPageMeta(meta: PageMeta) {
   const url = path.startsWith('http') ? path : `${SITE_URL}${path.startsWith('/') ? path : `/${path}`}`
   ensureLink('canonical', url)
 
-  const image = meta.image ?? `${SITE_URL}/favicon.svg`
+  const image = meta.image ?? `${SITE_URL}/../www.codepackr.com/assets/og/default.png`
 
   ensureMeta('property', 'og:type', 'website')
   ensureMeta('property', 'og:site_name', SITE_NAME)
@@ -94,12 +94,17 @@ export function setPageMeta(meta: PageMeta) {
   ensureMeta('property', 'og:description', meta.description)
   ensureMeta('property', 'og:url', url)
   ensureMeta('property', 'og:image', image)
+  ensureMeta('property', 'og:image:type', 'image/png')
+  ensureMeta('property', 'og:image:width', '1200')
+  ensureMeta('property', 'og:image:height', '630')
+  ensureMeta('property', 'og:image:alt', title)
   ensureMeta('property', 'og:locale', 'en_IN')
 
   ensureMeta('name', 'twitter:card', 'summary_large_image')
   ensureMeta('name', 'twitter:title', title)
   ensureMeta('name', 'twitter:description', meta.description)
   ensureMeta('name', 'twitter:image', image)
+  ensureMeta('name', 'twitter:image:alt', title)
 
   // Structured Data — Breadcrumbs
   if (meta.breadcrumbs && meta.breadcrumbs.length > 0) {
