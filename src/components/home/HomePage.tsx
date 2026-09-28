@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { ArrowRight, Search, Sparkles, HeartHandshake, ShieldCheck, BookOpenCheck } from 'lucide-react'
 import { SUBJECTS, type LawTopic } from '../../data/subjects'
 import { TOTAL_TOPICS_COUNT } from '../../data/liveSubjects'
@@ -10,6 +11,8 @@ import { LibraryWingsGrid } from './LibraryWingsGrid'
 import { AibeWeightageMatrix } from './AibeWeightageMatrix'
 import { ContinueLearning } from './ContinueLearning'
 import { ToolGlyph } from '../icons'
+import { GlobalLawBanner } from './GlobalLawBanner'
+import { FeatureBannerCards } from './FeatureBannerCards'
 
 const QUICK_JUMP_TARGETS = [
   { label: 'Art. 21 (Life & Liberty)', subject: 'constitution', topic: 'art-21' },
@@ -59,11 +62,47 @@ export function HomePage({
   onSelectTopic,
   onSelectTool,
 }: HomePageProps) {
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault()
+        const el = document.getElementById('omni-search-input') as HTMLInputElement
+        if (el) {
+          el.focus()
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        }
+      }
+    }
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [])
+
   return (
-    <div className="space-y-12 sm:space-y-16 pb-12">
-      {/* 1. Prestige Dual-Track Hero */}
+    <div className="space-y-12 sm:space-y-16 pb-12 animate-fade-in">
+      {/* 0. Top Dismissible Announcement Banner */}
+      <GlobalLawBanner onSelectTool={onSelectTool} />
+
+      {/* 1. Prestige Dual-Track Hero with Floating Rotating Preview Cards */}
       <DualTrackHero
         onOpenSubjects={onOpenSubjects}
+        onOpenCaseLaw={() => onSelectTool('case-law')}
+        onSelectTool={onSelectTool}
+        onSelectSubject={onSelectSubject}
+        onSelectTopic={onSelectTopic}
+        onFocusSearch={() => {
+          const el = document.getElementById('omni-search-input') as HTMLInputElement
+          if (el) {
+            el.focus()
+            el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+          }
+        }}
+      />
+
+      {/* 2. Signature Practice & Study Feature Banner Cards */}
+      <FeatureBannerCards
+        onSelectTool={onSelectTool}
+        onOpenSubjects={onOpenSubjects}
+        onSelectSubject={onSelectSubject}
         onOpenCaseLaw={() => onSelectTool('case-law')}
       />
 
@@ -86,6 +125,7 @@ export function HomePage({
         <div className="relative shadow-md rounded-2xl">
           <Search className="w-5 h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
           <input
+            id="omni-search-input"
             type="search"
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
@@ -242,7 +282,7 @@ export function HomePage({
               key={tool.id}
               type="button"
               onClick={() => onSelectTool(tool.slug)}
-              className="group rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 text-left hover:border-blue-500/80 dark:hover:border-blue-500/80 transition-all duration-150 flex flex-col justify-between shadow-xs hover:shadow-md"
+              className="group rounded-3xl border border-slate-200 dark:border-slate-800 border-l-4 border-l-transparent hover:border-l-blue-600 bg-white dark:bg-slate-900 p-5 text-left hover:border-slate-300 dark:hover:border-slate-700 hover:-translate-y-1 hover:shadow-lg transition-all duration-200 flex flex-col justify-between cursor-pointer"
             >
               <div>
                 <div className="flex items-start justify-between gap-3 mb-3">
