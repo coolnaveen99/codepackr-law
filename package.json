@@ -21,7 +21,11 @@
     "firebase": "^12.19.0",
     "lucide-react": "^0.460.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "docx": "^9.5.1",
+    "file-saver": "^2.0.5",
+    "jspdf": "^3.0.2",
+    "mammoth": "^1.11.0"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.0",
