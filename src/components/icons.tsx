@@ -11,6 +11,7 @@ import {
   FilePen,
   FileSignature,
   FileText,
+  FileDiff,
   Gavel,
   Handshake,
   Landmark,
@@ -38,6 +39,8 @@ const TOOL_ICONS: Record<string, LucideIcon> = {
   Scale,
   Library,
   Network,
+  FileDiff,
+  FileText,
 }
 
 const SUBJECT_ICONS: Record<string, LucideIcon> = {
