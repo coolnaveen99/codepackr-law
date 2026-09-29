@@ -13,7 +13,7 @@ export const GlobalLawBanner: React.FC<GlobalLawBannerProps> = ({ onSelectTool }
   return (
     <div
       role="alert"
-      className="w-full border-b border-blue-500/30 bg-blue-50/90 dark:bg-blue-950/40 text-blue-900 dark:text-blue-200 py-2.5 px-4 sm:px-6 transition-all duration-200"
+      className="w-full border-b border-blue-500/30 bg-blue-50/90 dark:bg-blue-950/40 text-blue-900 dark:text-blue-200 py-1.5 px-3 sm:px-5 transition-all duration-200"
     >
       <div className="max-w-[1600px] mx-auto flex items-center justify-between gap-3 text-xs">
         <div className="flex items-center gap-2.5 min-w-0 flex-1">
