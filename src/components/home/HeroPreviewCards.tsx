@@ -120,12 +120,8 @@ export const HeroPreviewCards: React.FC<HeroPreviewCardsProps> = ({
   onSelectTool,
   onSelectSubject,
   onSelectTopic,
-<<<<<<< Updated upstream
   visibleSlots = 2,
-=======
-  visibleSlots = 3,
   className = '',
->>>>>>> Stashed changes
 }) => {
   const [hoveredSlot, setHoveredSlot] = useState<number | null>(null)
 
@@ -340,11 +336,7 @@ export const HeroPreviewCards: React.FC<HeroPreviewCardsProps> = ({
   return (
     <div
       id="hero-preview-cards-stack"
-<<<<<<< Updated upstream
-      className="hero-floating-cards hidden lg:flex lg:col-span-5 flex-col gap-2.5 relative"
-=======
-      className={`hero-floating-cards relative hidden lg:flex flex-col gap-3.5 w-full select-none ${className}`}
->>>>>>> Stashed changes
+      className={`hero-floating-cards relative hidden lg:flex flex-col gap-3 w-full select-none ${className}`}
     >
       <div
         className="absolute -inset-4 bg-gradient-to-tr from-blue-600/15 via-pink-500/10 to-blue-700/15 rounded-3xl blur-2xl pointer-events-none opacity-80"
@@ -363,38 +355,15 @@ export const HeroPreviewCards: React.FC<HeroPreviewCardsProps> = ({
             onMouseEnter={() => setHoveredSlot(slotIdx)}
             onMouseLeave={() => setHoveredSlot(null)}
             onClick={() => handleCardClick(ad)}
-<<<<<<< Updated upstream
-            className={`group cursor-pointer p-3 rounded-xl bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border border-blue-500/25 shadow-lg hover:shadow-xl hover:shadow-blue-500/15 hover:scale-[1.02] hover:border-blue-600 dark:hover:border-blue-400 transition-all duration-200 ease-out relative overflow-hidden min-h-[112px] flex flex-col justify-between ${getFloatingClass(
-              slotIdx,
-            )} ${getSlotMargin(slotIdx)}`}
-=======
             className={`relative z-10 ${getSlotMargin(slotIdx)} ${getFloatingClass(slotIdx)}`}
->>>>>>> Stashed changes
           >
             <div
-              className={`p-4 rounded-2xl bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border border-blue-500/25 dark:border-blue-700/30 shadow-xl hover:shadow-2xl hover:scale-[1.035] hover:border-blue-600 dark:hover:border-blue-400 transition-all min-h-[148px] cursor-pointer group flex flex-col justify-between ${
+              className={`p-3.5 sm:p-4 rounded-2xl bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border border-blue-500/25 dark:border-blue-700/30 shadow-xl hover:shadow-2xl hover:scale-[1.03] hover:border-blue-600 dark:hover:border-blue-400 transition-all min-h-[136px] cursor-pointer group flex flex-col justify-between ${
                 isFading
                   ? 'opacity-0 scale-[0.99] translate-y-1 duration-180'
                   : 'opacity-100 scale-100 translate-y-0 duration-300'
               } ease-out`}
             >
-<<<<<<< Updated upstream
-              <div>
-                <div className="flex items-center justify-between gap-2 mb-2">
-                  <div className="flex items-center gap-2 min-w-0">
-                    <div className="w-7 h-7 rounded-lg bg-blue-500/15 flex items-center justify-center text-blue-700 dark:text-blue-300 shrink-0">
-                      <IconComponent className="w-4 h-4" />
-                    </div>
-                    <h3 className="text-xs font-bold text-slate-900 dark:text-white tracking-tight truncate">{ad.title}</h3>
-                  </div>
-                  <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-full border shrink-0 ${getBadgeClass(ad.badgeTone)}`}>{ad.badge}</span>
-                </div>
-                <div className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/80 dark:bg-slate-950/60 mb-2">{ad.body}</div>
-              </div>
-              <div className="flex items-center justify-between text-[10px] text-slate-500 dark:text-slate-400 pt-0.5">
-                <span className="truncate max-w-[170px]">{ad.footerLeft}</span>
-                <span className="text-blue-700 dark:text-blue-300 font-bold group-hover:translate-x-1 transition-transform duration-200 flex items-center gap-0.5 shrink-0">
-=======
               {/* Header: Icon chip + Title + Badge */}
               <div className="flex items-center justify-between gap-2.5">
                 <div className="flex items-center gap-2.5 min-w-0">
@@ -415,7 +384,7 @@ export const HeroPreviewCards: React.FC<HeroPreviewCardsProps> = ({
               </div>
 
               {/* Body: Elevated block with micro-visual component */}
-              <div className="my-2 rounded-xl bg-slate-50/90 dark:bg-slate-800/60 px-3 py-2 border border-slate-100/90 dark:border-slate-800/80 flex items-center min-h-[46px] shadow-2xs">
+              <div className="my-2 rounded-xl bg-slate-50/90 dark:bg-slate-800/60 px-3 py-2 border border-slate-100/90 dark:border-slate-800/80 flex items-center min-h-[44px] shadow-2xs">
                 {ad.body}
               </div>
 
@@ -425,7 +394,6 @@ export const HeroPreviewCards: React.FC<HeroPreviewCardsProps> = ({
                   {ad.footerLeft}
                 </span>
                 <span className="font-bold text-blue-700 dark:text-blue-400 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform shrink-0">
->>>>>>> Stashed changes
                   {ad.cta}
                   <ArrowRight className="size-3" />
                 </span>
