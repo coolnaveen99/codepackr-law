@@ -3,56 +3,13 @@ import {
   Scale,
   ArrowRight,
   ShieldCheck,
-  GraduationCap,
-  Sparkles,
   ArrowLeftRight,
   Layers,
-  ScrollText,
-  Library,
   Landmark,
   Gavel,
-  FileText,
   CheckCircle2,
 } from 'lucide-react'
 import { SUBJECTS, type LawTopic } from '../../data/subjects'
-
-// Mini Sparkline Component
-interface MiniSparklineProps {
-  id: string
-  strokeColor: string
-  gradientColor: string
-  pathD: string
-  areaD: string
-  height?: number
-}
-
-const MiniSparkline: React.FC<MiniSparklineProps> = ({
-  id,
-  strokeColor,
-  gradientColor,
-  pathD,
-  areaD,
-  height = 28,
-}) => (
-  <div className="w-full relative overflow-hidden" style={{ height }}>
-    <svg className="w-full h-full" viewBox="0 0 200 28" fill="none" preserveAspectRatio="none">
-      <defs>
-        <linearGradient id={`grad-${id}`} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor={gradientColor} stopOpacity="0.35" />
-          <stop offset="100%" stopColor={gradientColor} stopOpacity="0.0" />
-        </linearGradient>
-      </defs>
-      <path
-        d={pathD}
-        stroke={strokeColor}
-        strokeWidth="2.2"
-        strokeLinecap="round"
-        className="animate-draw-line"
-      />
-      <path d={areaD} fill={`url(#grad-${id})`} className="animate-fade-chart-area" />
-    </svg>
-  </div>
-)
 
 // Mini Segmented Bar Component
 interface Segment {
@@ -166,10 +123,7 @@ export const HeroPreviewCards: React.FC<HeroPreviewCardsProps> = ({
 }) => {
   const [hoveredSlot, setHoveredSlot] = useState<number | null>(null)
 
-  // NOTE: Full ad pool restored from main; denser card chrome (min-h 112, gap-2.5)
   const adPool: HeroLawAd[] = useMemo(() => {
-    // Re-export from previous known-good structure by fetching would be ideal;
-    // For build safety, keep a minimal 6-card pool that matches live UI.
     return [
       {
         id: 'ad-bsa-concordance',
@@ -310,14 +264,14 @@ export const HeroPreviewCards: React.FC<HeroPreviewCardsProps> = ({
 
   const numSlots = visibleSlots === 2 ? 2 : 3
   const [slotIndices, setSlotIndices] = useState(() =>
-    Array.from({ length: numSlots }, (_, i) => i % adPool.length),
+    Array.from({ length: numSlots }, (_, i) => i % Math.max(adPool.length, 1)),
   )
   const [fadingSlots, setFadingSlots] = useState<Record<number, boolean>>({})
   const hoverRef = useRef(hoveredSlot)
   hoverRef.current = hoveredSlot
 
   useEffect(() => {
-    setSlotIndices(Array.from({ length: numSlots }, (_, i) => i % adPool.length))
+    setSlotIndices(Array.from({ length: numSlots }, (_, i) => i % Math.max(adPool.length, 1)))
   }, [numSlots, adPool.length])
 
   useEffect(() => {
@@ -329,7 +283,7 @@ export const HeroPreviewCards: React.FC<HeroPreviewCardsProps> = ({
         return next
       })
       setTimeout(() => {
-        setSlotIndices((prev) => prev.map((idx) => (idx + numSlots) % adPool.length))
+        setSlotIndices((prev) => prev.map((idx) => (idx + numSlots) % Math.max(adPool.length, 1)))
         setFadingSlots({})
       }, 180)
     }, 4500)
