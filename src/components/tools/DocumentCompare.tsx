@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react'
-import { ArrowLeftRight, Check, Copy, Download, Eraser, FileDiff, FileUp, ShieldCheck } from 'lucide-react'
-import { downloadLegalDocument, type ExportKind } from '../../lib/document-export'
+import { ArrowLeftRight, Check, Copy, Eraser, FileDiff, FileUp, ShieldCheck } from 'lucide-react'
 
 type DiffKind = 'same' | 'add' | 'del'
 type DiffLine = { kind: DiffKind; text: string }
@@ -64,7 +63,6 @@ export function DocumentCompare() {
   const [ignoreCase, setIgnoreCase] = useState(false)
   const [unified, setUnified] = useState(false)
   const [copied, setCopied] = useState(false)
-  const [exporting, setExporting] = useState<ExportKind | null>(null)
 
   const lines = useMemo(() => {
     if (!left.trim() && !right.trim()) return []
@@ -94,17 +92,6 @@ export function DocumentCompare() {
     } catch {}
   }
 
-  const exportDiff = async (kind: ExportKind) => {
-    if (!diffText.trim()) return
-    setExporting(kind)
-    try {
-      const title = 'CodePackr Law — Document Comparison'
-      await downloadLegalDocument(diffText, 'document-comparison', kind, title)
-    } finally {
-      setExporting(null)
-    }
-  }
-
   const loadFile = async (file: File | undefined, side: 'left' | 'right') => {
     if (!file) return
     const text = await file.text()
@@ -119,7 +106,7 @@ export function DocumentCompare() {
           <div className="max-w-3xl">
             <div className="mb-2 inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-[#8B1E3F]"><FileDiff className="size-4" /> Document Compare</div>
             <h1 className="text-2xl font-black tracking-tight text-[color:var(--ink)] sm:text-3xl">Compare legal document versions</h1>
-            <p className="mt-2 text-sm leading-6 text-[color:var(--ink-muted)]">Paste or upload the original and revised text, review additions and deletions, then export the comparison as <strong>DOCX, PDF or TXT</strong>.</p>
+            <p className="mt-2 text-sm leading-6 text-[color:var(--ink-muted)]">Paste or upload the original and revised text and review additions, deletions and unchanged content.</p>
           </div>
           <div className="flex items-center gap-2 rounded-2xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-xs font-bold text-emerald-800"><ShieldCheck className="size-4" /> Local browser comparison</div>
         </div>
@@ -181,18 +168,10 @@ export function DocumentCompare() {
             )}
           </div>
 
-          <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[color:var(--border)] p-3">
-            <div className="inline-flex items-center gap-1.5 text-[11px] font-bold text-[color:var(--ink-muted)]"><Download className="size-3.5" /> Export comparison</div>
-            <div className="flex flex-wrap gap-2">
-              {(['docx', 'pdf', 'txt'] as ExportKind[]).map((kind) => (
-                <button key={kind} type="button" disabled={!diffText.trim() || exporting !== null} onClick={() => exportDiff(kind)} className="rounded-xl border border-[#8B1E3F] px-3 py-2 text-xs font-extrabold uppercase text-[#8B1E3F] disabled:cursor-not-allowed disabled:opacity-50">{exporting === kind ? 'Preparing…' : kind}</button>
-              ))}
-            </div>
-          </div>
         </section>
       )}
 
-      <p className="text-[11px] leading-5 text-[color:var(--ink-muted)]">Privacy: comparison and exports run in your browser. Uploaded files are read locally and are not sent to CodePackr. This tool is for document review/reference and does not provide legal advice.</p>
+      <p className="text-[11px] leading-5 text-[color:var(--ink-muted)]">Privacy: comparison runs in your browser. Uploaded files are read locally and are not sent to CodePackr. This tool is for document review/reference and does not provide legal advice.</p>
     </div>
   )
 }
