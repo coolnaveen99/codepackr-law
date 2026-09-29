@@ -1,9 +1,10 @@
 import { useMemo, useState } from 'react'
 import { Check, Copy, Download, FileText, ListChecks, Printer, Search, ShieldCheck } from 'lucide-react'
 import { CASE_FILE_CHECKLISTS, DRAFT_TEMPLATES, type DraftTemplate } from '../../data/draft-templates'
+import { TEMPLATE_CATALOG, catalogToDraftTemplate } from '../../data/legal-template-catalog'
 import { downloadLegalDocument, printAsPdf, type ExportKind } from '../../lib/document-export'
 
-const CATEGORIES = ['all', 'criminal', 'civil', 'notice', 'affidavit'] as const
+const CATEGORIES = ['all', 'criminal', 'civil', 'notice', 'affidavit', 'family', 'property', 'commercial', 'consumer', 'employment', 'company', 'arbitration', 'ip', 'tax', 'banking', 'motor', 'constitutional', 'procedure', 'rtI', 'misc'] as const
 type Category = typeof CATEGORIES[number]
 
 export function LegalDraftStudio() {
@@ -14,23 +15,24 @@ export function LegalDraftStudio() {
   const [checked, setChecked] = useState<Record<string, boolean>>({})
   const [cat, setCat] = useState<Category>('all')
   const [query, setQuery] = useState('')
+  const allTemplates = useMemo(() => [...DRAFT_TEMPLATES, ...TEMPLATE_CATALOG.map(catalogToDraftTemplate)], [])
   const [exporting, setExporting] = useState<ExportKind | null>(null)
 
   const template: DraftTemplate | undefined = useMemo(
-    () => DRAFT_TEMPLATES.find((t) => t.id === templateId),
-    [templateId],
+    () => allTemplates.find((t) => t.id === templateId),
+    [allTemplates, templateId],
   )
   const output = useMemo(() => (template ? template.build(values) : ''), [template, values])
   const setField = (key: string, val: string) => setValues((prev) => ({ ...prev, [key]: val }))
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
-    return DRAFT_TEMPLATES.filter((t) => {
+    return allTemplates.filter((t) => {
       if (cat !== 'all' && t.category !== cat) return false
       if (!q) return true
       return [t.name, t.statute, t.description].some((value) => value.toLowerCase().includes(q))
     })
-  }, [cat, query])
+  }, [allTemplates, cat, query])
 
   const loadSample = () => {
     if (!template) return
@@ -123,7 +125,11 @@ export function LegalDraftStudio() {
                 <button key={c} type="button" onClick={() => setCat(c)} className={`rounded-full px-3 py-1.5 text-[11px] font-extrabold capitalize ${cat === c ? 'bg-[#8B1E3F] text-white' : 'border border-[color:var(--border)] text-[color:var(--ink-muted)]'}`}>{c}</button>
               ))}
             </div>
-            <div className="mt-4 space-y-2">
+            <div className="mt-4 flex items-center justify-between gap-2">
+              <span className="text-[10px] font-bold text-[color:var(--ink-muted)]">{filtered.length.toLocaleString()} matching templates</span>
+              <span className="text-[10px] font-bold text-[color:var(--ink-muted)]">{TEMPLATE_CATALOG.length.toLocaleString()} catalogue entries</span>
+            </div>
+            <div className="mt-2 space-y-2">
               {filtered.map((t) => (
                 <button key={t.id} type="button" onClick={() => { setTemplateId(t.id); setValues({}) }} className={`w-full rounded-xl border p-3 text-left transition ${templateId === t.id ? 'border-[#8B1E3F] bg-[#8B1E3F]/5' : 'border-[color:var(--border)]'}`}>
                   <div className="text-sm font-extrabold">{t.name}</div>
