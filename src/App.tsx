@@ -39,6 +39,8 @@ import { LegalMaximsTool } from './components/tools/LegalMaximsTool'
 import { LandmarkCasesTool } from './components/tools/LandmarkCasesTool'
 import { CaseLawLibrary } from './components/tools/CaseLawLibrary'
 import { KnowledgeBrowser } from './components/knowledge/KnowledgeBrowser'
+import { DocumentCompare } from './components/tools/DocumentCompare'
+import { LegalDraftStudio } from './components/tools/LegalDraftStudio'
 import { encodeKnowledgeId } from './data/knowledge'
 
 export default function App() {
@@ -148,12 +150,8 @@ export default function App() {
               {activeTool.slug === 'exam-timer' && <ExamTimer />}
               {activeTool.slug === 'legal-maxims' && <LegalMaximsTool />}
               {activeTool.slug === 'landmark-cases' && <LandmarkCasesTool />}
-              {activeTool.slug === 'document-compare' && (
-                <div className="p-8 text-center text-sm text-slate-600">Loading Document Compare… If this persists, deploy DocumentCompare.tsx from the latest practice tools commit.</div>
-              )}
-              {activeTool.slug === 'legal-draft-studio' && (
-                <div className="p-8 text-center text-sm text-slate-600">Loading Legal Draft Studio… If this persists, deploy LegalDraftStudio.tsx and draft-templates.ts.</div>
-              )}
+              {activeTool.slug === 'document-compare' && <DocumentCompare />}
+              {activeTool.slug === 'legal-draft-studio' && <LegalDraftStudio />}
             </div>
           )}
           {route.type === 'subjects' && <SubjectsList searchQuery={subjectSearch} onSearchChange={setSubjectSearch} onSelectSubject={selectSubject} />}
