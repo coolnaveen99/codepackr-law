@@ -6,67 +6,60 @@ interface FooterProps {
 
 export function Footer({ onOpenContact }: FooterProps) {
   return (
-    <footer className="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 mt-16 transition-colors">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-10">
-          <div>
+    <footer className="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 mt-auto">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-8 h-8 rounded-2xl bg-blue-600 text-white flex items-center justify-center">
+              <div className="size-8 rounded-lg bg-gradient-to-br from-amber-600 via-orange-600 to-amber-700 text-white flex items-center justify-center">
                 <Scale className="w-4 h-4" />
               </div>
-              <span className="text-slate-900 dark:text-white">
-                <span className="font-extrabold">CodePackr</span>{' '}
-                <span className="font-display italic text-lg font-semibold text-blue-700 dark:text-blue-300">Law</span>
+              <span className="font-extrabold text-slate-900 dark:text-white">
+                CodePackr <span className="text-amber-700 dark:text-amber-400">Law</span>
               </span>
             </div>
-            <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-              Digital law library & practice reference for AIBE, Judiciary, and advocates — statutory treatises, extracted case law ratios, and chamber drafting.
+            <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-3">
+              Digital law library &amp; practice reference for AIBE, Judiciary, and advocates — statutory treatises, extracted case law ratios, and chamber drafting.
             </p>
-            <div className="inline-flex items-center gap-2 text-xs font-medium text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-950/60 px-3 py-1.5 rounded-xl border border-blue-200 dark:border-blue-900">
-              <ShieldCheck className="w-4 h-4 text-blue-600" />
-              <span>Stays on this device</span>
-            </div>
+            <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-rose-700 dark:text-rose-300 bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 px-2.5 py-1 rounded-full">
+              <ShieldCheck className="w-3.5 h-3.5" />
+              Stays on this device
+            </span>
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-slate-900 dark:text-white mb-3">Study</h4>
+            <h3 className="text-sm font-bold text-slate-900 dark:text-white mb-3">Study</h3>
             <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-              <li>
-                <a href="/subjects" className="hover:text-blue-700 dark:hover:text-blue-300">All subjects</a>
-              </li>
-              <li>
-                <a href="/subjects/constitution" className="hover:text-blue-700 dark:hover:text-blue-300">Constitution</a>
-              </li>
-              <li>
-                <a href="/subjects/bns" className="hover:text-blue-700 dark:hover:text-blue-300">BNS</a>
-              </li>
-              <li>
-                <a href="/subjects/bnss" className="hover:text-blue-700 dark:hover:text-blue-300">BNSS</a>
-              </li>
-              <li>
-                <a href="/subjects/bsa" className="hover:text-blue-700 dark:hover:text-blue-300">BSA</a>
-              </li>
+              <li>All subjects</li>
+              <li>Constitution</li>
+              <li>BNS</li>
+              <li>BNSS</li>
+              <li>BSA</li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-slate-900 dark:text-white mb-3">Feedback & Support</h4>
+            <h3 className="text-sm font-bold text-slate-900 dark:text-white mb-3">Feedback &amp; Support</h3>
             <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
               <li>
-                <button
-                  type="button"
-                  onClick={onOpenContact}
-                  className="hover:text-blue-700 dark:hover:text-blue-300 text-left inline-flex items-center gap-1.5"
-                >
-                  <MessageSquare className="w-3.5 h-3.5 text-blue-600" />
-                  <span>Contact & Feedback</span>
-                </button>
+                {onOpenContact ? (
+                  <button
+                    type="button"
+                    onClick={onOpenContact}
+                    className="inline-flex items-center gap-1.5 hover:text-amber-700 dark:hover:text-amber-400 transition-colors cursor-pointer"
+                  >
+                    <MessageSquare className="w-3.5 h-3.5" />
+                    Contact &amp; Feedback
+                  </button>
+                ) : (
+                  <span className="inline-flex items-center gap-1.5">
+                    <MessageSquare className="w-3.5 h-3.5" />
+                    Contact &amp; Feedback
+                  </span>
+                )}
               </li>
               <li>
-                <a
-                  href="mailto:codepackr@gmail.com"
-                  className="hover:text-blue-700 dark:hover:text-blue-300"
-                >
+                <a href="mailto:codepackr@gmail.com" className="hover:text-amber-700 dark:hover:text-amber-400 transition-colors">
                   codepackr@gmail.com
                 </a>
               </li>
@@ -74,39 +67,21 @@ export function Footer({ onOpenContact }: FooterProps) {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-slate-900 dark:text-white mb-3">Codepackr family</h4>
-            <ul className="space-y-2.5 text-sm text-slate-600 dark:text-slate-400">
+            <h3 className="text-sm font-bold text-slate-900 dark:text-white mb-3">Codepackr family</h3>
+            <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
               <li>
-                <a
-                  href="https://www.codepackr.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-blue-600 dark:hover:text-blue-400 transition inline-flex items-center gap-1.5"
-                >
-                  <span>Codepackr Dev Suite</span>
-                  <ExternalLink className="w-3 h-3 text-slate-400" />
+                <a href="https://www.codepackr.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">
+                  Codepackr Dev Suite <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
               <li>
-                <a
-                  href="https://study.codepackr.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-indigo-600 dark:hover:text-indigo-400 transition inline-flex items-center gap-1.5"
-                >
-                  <span>Codepackr Study</span>
-                  <ExternalLink className="w-3 h-3 text-slate-400" />
+                <a href="https://study.codepackr.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">
+                  Codepackr Study <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
               <li>
-                <a
-                  href="https://finance.codepackr.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-emerald-600 dark:hover:text-emerald-400 transition inline-flex items-center gap-1.5"
-                >
-                  <span>Codepackr Finance</span>
-                  <ExternalLink className="w-3 h-3 text-slate-400" />
+                <a href="https://finance.codepackr.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-amber-700 dark:hover:text-amber-400 transition-colors">
+                  Codepackr Finance <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
             </ul>

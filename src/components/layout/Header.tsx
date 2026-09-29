@@ -39,7 +39,7 @@ export function Header({
   return (
     <>
       <header className="border-b border-slate-200/80 dark:border-slate-800 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md sticky top-0 z-[70] transition-colors">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-3">
           <div className="flex items-center gap-2 sm:gap-3 min-w-0">
             <button
               type="button"
@@ -64,21 +64,15 @@ export function Header({
               </div>
               <span className="min-w-0">
                 <span className="flex items-center gap-1.5 leading-none text-slate-900 dark:text-white">
-                  <span className="font-extrabold text-[16px] tracking-tight">CodePackr</span>{' '}
-                  <span className="font-semibold text-[16px] text-amber-600 dark:text-amber-400">Law</span>
-                  <span className="hidden sm:inline-block ml-1 text-[9.5px] font-mono font-bold uppercase tracking-wider text-amber-700 dark:text-amber-300 bg-amber-500/10 px-1.5 py-0.5 rounded-full border border-amber-500/20">
+                  <span className="font-extrabold text-[16px] tracking-tight">CodePackr</span>
+                  <span className="font-bold text-[16px] text-amber-700 dark:text-amber-400">Law</span>
+                  <span className="hidden sm:inline-flex items-center rounded-md bg-amber-50 dark:bg-amber-950/40 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-amber-800 dark:text-amber-300 border border-amber-200/80 dark:border-amber-800/60">
                     Legal Library
                   </span>
                 </span>
-                {currentLabel ? (
                   <span className="mt-1 block truncate text-[11px] font-medium text-slate-500 dark:text-slate-400 max-w-[42vw] sm:max-w-xs">
-                    {currentLabel}
-                  </span>
-                ) : (
-                  <span className="mt-1 hidden sm:block text-[10.5px] font-medium text-slate-500 dark:text-slate-400">
-                    Indian Law Library &amp; Practice Reference
-                  </span>
-                )}
+                  {currentLabel || 'Indian Law Library & Practice Reference'}
+                </span>
               </span>
             </button>
           </div>
@@ -87,11 +81,10 @@ export function Header({
             <button
               type="button"
               onClick={onToggleDark}
-              aria-label="Toggle theme"
-              className="inline-flex size-10 items-center justify-center rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition-all duration-150 shadow-2xs hover:scale-105"
-              title={dark ? 'Switch to Light mode' : 'Switch to Dark mode'}
+              className="p-2 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
             >
-              {dark ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-700" />}
+              {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </button>
           </div>
         </div>
@@ -100,8 +93,6 @@ export function Header({
       <NavDrawer
         open={menuOpen}
         onClose={() => setMenuOpen(false)}
-        dark={dark}
-        onToggleDark={onToggleDark}
         onHome={() => go(onHome)}
         onOpenSubjects={() => go(onOpenSubjects)}
         onSelectSubject={(slug) => go(() => onSelectSubject(slug))}
