@@ -114,8 +114,7 @@ export function CodepackrFamilyBar({
       aria-label="Codepackr Family Ecosystem"
       className={`relative z-[100] w-full select-none text-[12px] font-sans border-b backdrop-blur-md transition-colors bg-white/90 dark:bg-slate-950/90 border-slate-200/80 dark:border-slate-800/80 text-slate-600 dark:text-slate-300 ${className}`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-9.5 flex items-center justify-between gap-3">
-        {/* Left: Brand Identity & Network Beacon */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 h-9.5 flex items-center justify-between gap-3">
         <div className="flex items-center gap-2.5 shrink-0">
           <a
             href="https://codepackr.com"
@@ -127,25 +126,20 @@ export function CodepackrFamilyBar({
                 <span className="size-2 rounded-full bg-gradient-to-r from-amber-600 to-orange-500 animate-pulse" />
               </div>
             </div>
-
             <div className="flex items-center gap-1.5 font-semibold tracking-tight text-slate-800 dark:text-slate-100">
               <span className="font-bold">Codepackr</span>
               <span className="text-slate-400 dark:text-slate-500 font-normal">Family</span>
             </div>
           </a>
-
           <div className="hidden md:flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-medium bg-slate-100 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 border border-slate-200/60 dark:border-slate-700/60">
             <span className="size-1.5 rounded-full bg-emerald-500 animate-pulse" />
             <span>5 Free Suites</span>
           </div>
         </div>
-
-        {/* Center: Desktop Navigation Capsules */}
         <ul className="hidden sm:flex items-center gap-1 lg:gap-1.5 h-full">
           {CODEPACKR_FAMILY.map((item) => {
             const isCurrent = item.id === CURRENT_PRODUCT;
             const labelText = language === "ta" && item.labelTa ? item.labelTa : item.label;
-
             return (
               <li key={item.id} className="h-full flex items-center">
                 {isCurrent ? (
@@ -179,10 +173,7 @@ export function CodepackrFamilyBar({
             );
           })}
         </ul>
-
-        {/* Right: Ecosystem App Launcher Popover */}
         <div className="flex items-center gap-2">
-          {/* Desktop Launcher Toggle */}
           <div className="relative hidden sm:block" ref={launcherRef}>
             <button
               type="button"
@@ -203,25 +194,19 @@ export function CodepackrFamilyBar({
                 className={`transition-transform duration-200 ${launcherOpen ? "rotate-180" : ""}`}
               />
             </button>
-
-            {/* Desktop Launcher Popover Card */}
             {launcherOpen && (
               <div className="absolute right-0 top-full mt-2 w-84 p-2.5 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl z-50 animate-in fade-in zoom-in-95 duration-150">
                 <div className="flex items-center justify-between px-2 pb-2 mb-1.5 border-b border-slate-100 dark:border-slate-800">
                   <div className="flex items-center gap-2">
                     <span className="size-2 rounded-full bg-emerald-500" />
-                    <span className="text-[12px] font-semibold text-slate-800 dark:text-slate-200">
-                      Codepackr Ecosystem
-                    </span>
+                    <span className="text-[12px] font-semibold text-slate-800 dark:text-slate-200">Codepackr Ecosystem</span>
                   </div>
                   <span className="text-[10px] text-slate-400 font-mono">100% In-Browser</span>
                 </div>
-
                 <div className="space-y-1">
                   {CODEPACKR_FAMILY.map((item) => {
                     const isCurrent = item.id === CURRENT_PRODUCT;
                     const labelText = language === "ta" && item.labelTa ? item.labelTa : item.label;
-
                     return (
                       <div key={item.id}>
                         {isCurrent ? (
@@ -230,21 +215,15 @@ export function CodepackrFamilyBar({
                             className="flex items-center justify-between p-2 rounded-xl bg-amber-500/10 dark:bg-amber-500/15 border border-amber-500/20 text-slate-900 dark:text-slate-100"
                           >
                             <div className="flex items-center gap-2.5 min-w-0">
-                              <div
-                                className={`size-8 rounded-lg flex items-center justify-center text-white bg-gradient-to-br ${item.gradient} shadow-xs shrink-0`}
-                              >
+                              <div className={`size-8 rounded-lg flex items-center justify-center text-white bg-gradient-to-br ${item.gradient} shadow-xs shrink-0`}>
                                 <FamilyIcon id={item.id} size={15} />
                               </div>
                               <div className="min-w-0">
                                 <div className="flex items-center gap-1.5 font-semibold text-[12px] text-amber-700 dark:text-amber-400">
                                   <span>{labelText}</span>
-                                  <span className="text-[9px] px-1.5 py-0.2 rounded-full font-mono uppercase bg-amber-500/20 text-amber-700 dark:text-amber-300 font-bold">
-                                    Current
-                                  </span>
+                                  <span className="text-[9px] px-1.5 py-0.2 rounded-full font-mono uppercase bg-amber-500/20 text-amber-700 dark:text-amber-300 font-bold">Current</span>
                                 </div>
-                                <p className="text-[10.5px] text-slate-500 dark:text-slate-400 truncate">
-                                  {item.description}
-                                </p>
+                                <p className="text-[10.5px] text-slate-500 dark:text-slate-400 truncate">{item.description}</p>
                               </div>
                             </div>
                             <Check size={14} className="text-amber-600 dark:text-amber-400 shrink-0 mr-1" />
@@ -257,31 +236,21 @@ export function CodepackrFamilyBar({
                             className="group flex items-center justify-between p-2 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-all text-slate-700 dark:text-slate-300"
                           >
                             <div className="flex items-center gap-2.5 min-w-0">
-                              <div
-                                className={`size-8 rounded-lg flex items-center justify-center text-white bg-gradient-to-br ${item.gradient} opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all shadow-xs shrink-0`}
-                              >
+                              <div className={`size-8 rounded-lg flex items-center justify-center text-white bg-gradient-to-br ${item.gradient} opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all shadow-xs shrink-0`}>
                                 <FamilyIcon id={item.id} size={15} />
                               </div>
                               <div className="min-w-0">
-                                <div className="font-medium text-[12px] text-slate-800 dark:text-slate-200 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
-                                  {labelText}
-                                </div>
-                                <p className="text-[10.5px] text-slate-500 dark:text-slate-400 truncate">
-                                  {item.description}
-                                </p>
+                                <div className="font-medium text-[12px] text-slate-800 dark:text-slate-200 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">{labelText}</div>
+                                <p className="text-[10.5px] text-slate-500 dark:text-slate-400 truncate">{item.description}</p>
                               </div>
                             </div>
-                            <ExternalLink
-                              size={12}
-                              className="text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all shrink-0 mr-1"
-                            />
+                            <ExternalLink size={12} className="text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all shrink-0 mr-1" />
                           </a>
                         )}
                       </div>
                     );
                   })}
                 </div>
-
                 <div className="mt-2 pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between px-2 text-[10px] text-slate-400">
                   <div className="flex items-center gap-1">
                     <ShieldCheck size={12} className="text-emerald-500" />
@@ -292,8 +261,6 @@ export function CodepackrFamilyBar({
               </div>
             )}
           </div>
-
-          {/* Mobile Switcher Drawer Trigger */}
           <div className="sm:hidden relative" ref={mobileRef}>
             <button
               type="button"
@@ -306,54 +273,32 @@ export function CodepackrFamilyBar({
               {showIcons && currentItem && <FamilyIcon id={currentItem.id} size={13} />}
               <span>{language === "ta" && currentItem?.labelTa ? currentItem.labelTa : currentItem?.label}</span>
               <span className={`size-1.5 rounded-full ${currentStyles.dot}`} />
-              <ChevronDown
-                size={12}
-                className={`transition-transform duration-200 ${mobileOpen ? "rotate-180" : ""}`}
-              />
+              <ChevronDown size={12} className={`transition-transform duration-200 ${mobileOpen ? "rotate-180" : ""}`} />
             </button>
-
-            {/* Mobile Dropdown Menu */}
             {mobileOpen && (
               <div className="absolute right-0 top-full mt-1.5 w-72 p-2 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl z-50 animate-in fade-in zoom-in-95 duration-150">
                 <div className="flex items-center justify-between px-2.5 py-1.5 mb-1 border-b border-slate-100 dark:border-slate-800">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
-                    Codepackr Family
-                  </span>
-                  <span className="text-[9.5px] px-1.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 font-mono font-medium">
-                    100% Client-Side
-                  </span>
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">Codepackr Family</span>
+                  <span className="text-[9.5px] px-1.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 font-mono font-medium">100% Client-Side</span>
                 </div>
-
                 <div className="space-y-1">
                   {CODEPACKR_FAMILY.map((item) => {
                     const isCurrent = item.id === CURRENT_PRODUCT;
                     const labelText = language === "ta" && item.labelTa ? item.labelTa : item.label;
-
                     return (
                       <div key={item.id}>
                         {isCurrent ? (
-                          <div
-                            aria-current="page"
-                            className="flex items-center justify-between p-2 rounded-xl bg-amber-500/10 text-slate-900 dark:text-slate-100 font-semibold"
-                          >
+                          <div aria-current="page" className="flex items-center justify-between p-2 rounded-xl bg-amber-500/10 text-slate-900 dark:text-slate-100 font-semibold">
                             <div className="flex items-center gap-2.5 min-w-0">
-                              <div
-                                className={`size-7.5 rounded-lg flex items-center justify-center text-white bg-gradient-to-br ${item.gradient} shadow-xs shrink-0`}
-                              >
+                              <div className={`size-7.5 rounded-lg flex items-center justify-center text-white bg-gradient-to-br ${item.gradient} shadow-xs shrink-0`}>
                                 <FamilyIcon id={item.id} size={14} />
                               </div>
                               <div className="min-w-0">
-                                <div className="text-[12px] text-amber-600 dark:text-amber-400 font-bold">
-                                  {labelText}
-                                </div>
-                                <div className="text-[10px] text-slate-500 dark:text-slate-400 truncate">
-                                  {item.description}
-                                </div>
+                                <div className="text-[12px] text-amber-600 dark:text-amber-400 font-bold">{labelText}</div>
+                                <div className="text-[10px] text-slate-500 dark:text-slate-400 truncate">{item.description}</div>
                               </div>
                             </div>
-                            <span className="text-[9px] px-1.5 py-0.5 rounded-full font-mono font-bold uppercase bg-amber-500/20 text-amber-700 dark:text-amber-300">
-                              Active
-                            </span>
+                            <span className="text-[9px] px-1.5 py-0.5 rounded-full font-mono font-bold uppercase bg-amber-500/20 text-amber-700 dark:text-amber-300">Active</span>
                           </div>
                         ) : (
                           <a
@@ -363,21 +308,15 @@ export function CodepackrFamilyBar({
                             className="flex items-center justify-between p-2 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-700 dark:text-slate-300"
                           >
                             <div className="flex items-center gap-2.5 min-w-0">
-                              <div
-                                className={`size-7.5 rounded-lg flex items-center justify-center text-white bg-gradient-to-br ${item.gradient} opacity-90 shadow-xs shrink-0`}
-                              >
+                              <div className={`size-7.5 rounded-lg flex items-center justify-center text-white bg-gradient-to-br ${item.gradient} opacity-90 shadow-xs shrink-0`}>
                                 <FamilyIcon id={item.id} size={14} />
                               </div>
                               <div className="min-w-0">
-                                <div className="text-[12px] font-semibold text-slate-800 dark:text-slate-200">
-                                  {labelText}
-                                </div>
-                                <div className="text-[10px] text-slate-500 dark:text-slate-400 truncate">
-                                  {item.description}
-                                </div>
+                                <div className="text-[12px] font-medium text-slate-800 dark:text-slate-200">{labelText}</div>
+                                <div className="text-[10px] text-slate-500 dark:text-slate-400 truncate">{item.description}</div>
                               </div>
                             </div>
-                            <ExternalLink size={12} className="opacity-40" />
+                            <ExternalLink size={12} className="text-slate-400 shrink-0" />
                           </a>
                         )}
                       </div>
