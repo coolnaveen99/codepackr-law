@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
-import { ArrowLeftRight, Copy, Check, Eraser, FileDiff } from 'lucide-react'
+import { ArrowLeftRight, Check, Copy, Download, Eraser, FileDiff, FileUp, ShieldCheck } from 'lucide-react'
+import { downloadLegalDocument, type ExportKind } from '../../lib/document-export'
 
 type DiffKind = 'same' | 'add' | 'del'
 type DiffLine = { kind: DiffKind; text: string }
@@ -27,15 +28,11 @@ function diffLines(a: string, b: string): DiffLine[] {
   let j = 0
   while (i < n && j < m) {
     if (A[i] === B[j]) {
-      out.push({ kind: 'same', text: A[i] })
-      i++
-      j++
+      out.push({ kind: 'same', text: A[i] }); i++; j++
     } else if (dp[i + 1][j] >= dp[i][j + 1]) {
-      out.push({ kind: 'del', text: A[i] })
-      i++
+      out.push({ kind: 'del', text: A[i++] })
     } else {
-      out.push({ kind: 'add', text: B[j] })
-      j++
+      out.push({ kind: 'add', text: B[j++] })
     }
   }
   while (i < n) out.push({ kind: 'del', text: A[i++] })
@@ -43,9 +40,22 @@ function diffLines(a: string, b: string): DiffLine[] {
   return out
 }
 
-const SAMPLE_A = `IN THE COURT OF THE SESSIONS JUDGE AT DELHI\n\nAPPLICATION UNDER SECTION 483 BNSS FOR REGULAR BAIL\n\n1. That the applicant was arrested on 01.08.2026.\n2. That the applicant undertakes to cooperate with investigation.\n3. That the applicant has no criminal antecedents.`
+const SAMPLE_A = `IN THE COURT OF THE SESSIONS JUDGE AT DELHI
 
-const SAMPLE_B = `IN THE COURT OF THE SESSIONS JUDGE AT DELHI\n\nAPPLICATION UNDER SECTION 483 BNSS FOR REGULAR BAIL\n\n1. That the applicant was arrested on 01.08.2026 and is in judicial custody since then.\n2. That the applicant undertakes to cooperate with investigation and appear as directed.\n3. That the applicant has no criminal antecedents.\n4. That investigation is substantially complete.`
+APPLICATION UNDER SECTION 483 BNSS FOR REGULAR BAIL
+
+1. That the applicant was arrested on 01.08.2026.
+2. That the applicant undertakes to cooperate with investigation.
+3. That the applicant has no criminal antecedents.`
+
+const SAMPLE_B = `IN THE COURT OF THE SESSIONS JUDGE AT DELHI
+
+APPLICATION UNDER SECTION 483 BNSS FOR REGULAR BAIL
+
+1. That the applicant was arrested on 01.08.2026 and is in judicial custody since then.
+2. That the applicant undertakes to cooperate with investigation and appear as directed.
+3. That the applicant has no criminal antecedents.
+4. That investigation is substantially complete.`
 
 export function DocumentCompare() {
   const [left, setLeft] = useState('')
@@ -54,6 +64,7 @@ export function DocumentCompare() {
   const [ignoreCase, setIgnoreCase] = useState(false)
   const [unified, setUnified] = useState(false)
   const [copied, setCopied] = useState(false)
+  const [exporting, setExporting] = useState<ExportKind | null>(null)
 
   const lines = useMemo(() => {
     if (!left.trim() && !right.trim()) return []
@@ -62,91 +73,126 @@ export function DocumentCompare() {
 
   const stats = useMemo(() => {
     let add = 0, del = 0, same = 0
-    for (const l of lines) {
-      if (l.kind === 'add') add++
-      else if (l.kind === 'del') del++
+    for (const line of lines) {
+      if (line.kind === 'add') add++
+      else if (line.kind === 'del') del++
       else same++
     }
     return { add, del, same, identical: left.trim().length > 0 && add === 0 && del === 0 }
   }, [lines, left])
 
+  const diffText = useMemo(
+    () => lines.map((line) => line.kind === 'add' ? `+ ${line.text}` : line.kind === 'del' ? `- ${line.text}` : `  ${line.text}`).join('\n'),
+    [lines],
+  )
+
   const copySummary = async () => {
-    const text = lines.map((l) => (l.kind === 'add' ? `+ ${l.text}` : l.kind === 'del' ? `- ${l.text}` : `  ${l.text}`)).join('\n')
     try {
-      await navigator.clipboard.writeText(text)
+      await navigator.clipboard.writeText(diffText)
       setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
+      window.setTimeout(() => setCopied(false), 2000)
     } catch {}
   }
 
+  const exportDiff = async (kind: ExportKind) => {
+    if (!diffText.trim()) return
+    setExporting(kind)
+    try {
+      const title = 'CodePackr Law — Document Comparison'
+      await downloadLegalDocument(diffText, 'document-comparison', kind, title)
+    } finally {
+      setExporting(null)
+    }
+  }
+
+  const loadFile = async (file: File | undefined, side: 'left' | 'right') => {
+    if (!file) return
+    const text = await file.text()
+    if (side === 'left') setLeft(text)
+    else setRight(text)
+  }
+
   return (
-    <div className="mx-auto max-w-6xl space-y-6 px-4 py-6">
-      <div className="rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-5 sm:p-6 shadow-sm">
-        <div className="flex flex-wrap items-start gap-3 justify-between">
-          <div>
-            <div className="inline-flex items-center gap-2 text-xs font-bold text-[#8B1E3F] mb-2">
-              <FileDiff className="size-4" /> Legal Document Compare
+    <div className="mx-auto max-w-7xl space-y-5 px-4 py-6 sm:px-6">
+      <section className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-5 shadow-sm sm:p-7">
+        <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+          <div className="max-w-3xl">
+            <div className="mb-2 inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-[#8B1E3F]"><FileDiff className="size-4" /> Document Compare</div>
+            <h1 className="text-2xl font-black tracking-tight text-[color:var(--ink)] sm:text-3xl">Compare legal document versions</h1>
+            <p className="mt-2 text-sm leading-6 text-[color:var(--ink-muted)]">Paste or upload the original and revised text, review additions and deletions, then export the comparison as <strong>DOCX, PDF or TXT</strong>.</p>
+          </div>
+          <div className="flex items-center gap-2 rounded-2xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-xs font-bold text-emerald-800"><ShieldCheck className="size-4" /> Local browser comparison</div>
+        </div>
+
+        <div className="mt-6 flex flex-wrap items-center gap-4 border-t border-[color:var(--border)] pt-4 text-xs font-semibold text-[color:var(--ink-muted)]">
+          <label className="inline-flex cursor-pointer items-center gap-2"><input type="checkbox" checked={ignoreWs} onChange={(e) => setIgnoreWs(e.target.checked)} /> Ignore whitespace</label>
+          <label className="inline-flex cursor-pointer items-center gap-2"><input type="checkbox" checked={ignoreCase} onChange={(e) => setIgnoreCase(e.target.checked)} /> Ignore case</label>
+          <label className="inline-flex cursor-pointer items-center gap-2"><input type="checkbox" checked={unified} onChange={(e) => setUnified(e.target.checked)} /> Unified view</label>
+        </div>
+      </section>
+
+      <section className="grid gap-4 lg:grid-cols-2">
+        {(['left', 'right'] as const).map((side) => {
+          const value = side === 'left' ? left : right
+          const label = side === 'left' ? 'Original document' : 'Revised document'
+          return (
+            <div key={side} className="rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
+              <div className="mb-3 flex items-center justify-between gap-3">
+                <div><div className="text-sm font-black">{label}</div><div className="text-[11px] text-[color:var(--ink-muted)]">{value.length.toLocaleString()} characters</div></div>
+                <label className="inline-flex cursor-pointer items-center gap-1.5 rounded-xl border border-[color:var(--border)] px-3 py-2 text-xs font-extrabold">
+                  <FileUp className="size-3.5" /> Upload
+                  <input className="hidden" type="file" accept=".txt,.text,.md,.docx,.pdf" onChange={(e) => loadFile(e.target.files?.[0], side)} />
+                </label>
+              </div>
+              <textarea value={value} onChange={(e) => side === 'left' ? setLeft(e.target.value) : setRight(e.target.value)} rows={15} placeholder={side === 'left' ? 'Paste the original document…' : 'Paste the revised document…'} className="w-full rounded-xl border border-[color:var(--border)] bg-transparent p-3 text-sm leading-6 font-mono outline-none focus:border-[#8B1E3F]" />
             </div>
-            <h1 className="text-xl sm:text-2xl font-extrabold text-[color:var(--ink)]">Compare two draft versions client-side</h1>
-            <p className="mt-1 text-sm text-[color:var(--ink-muted)] max-w-2xl">
-              Paste original and revised pleadings, notices, or contracts. Nothing leaves your browser. Educational comparison only.
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            <button type="button" onClick={() => { setLeft(SAMPLE_A); setRight(SAMPLE_B) }} className="rounded-xl border border-[color:var(--border)] px-3 py-2 text-xs font-bold cursor-pointer">Load sample</button>
-            <button type="button" onClick={() => { setLeft(''); setRight('') }} className="rounded-xl border border-[color:var(--border)] px-3 py-2 text-xs font-bold inline-flex items-center gap-1.5 cursor-pointer"><Eraser className="size-3.5" /> Clear</button>
-            <button type="button" onClick={() => { setLeft(right); setRight(left) }} className="rounded-xl border border-[color:var(--border)] px-3 py-2 text-xs font-bold inline-flex items-center gap-1.5 cursor-pointer"><ArrowLeftRight className="size-3.5" /> Swap</button>
-          </div>
-        </div>
-        <div className="mt-4 flex flex-wrap gap-4 text-xs font-semibold text-[color:var(--ink-muted)]">
-          <label className="inline-flex items-center gap-2 cursor-pointer"><input type="checkbox" checked={ignoreWs} onChange={(e) => setIgnoreWs(e.target.checked)} /> Ignore whitespace</label>
-          <label className="inline-flex items-center gap-2 cursor-pointer"><input type="checkbox" checked={ignoreCase} onChange={(e) => setIgnoreCase(e.target.checked)} /> Ignore case</label>
-          <label className="inline-flex items-center gap-2 cursor-pointer"><input type="checkbox" checked={unified} onChange={(e) => setUnified(e.target.checked)} /> Unified view</label>
-        </div>
+          )
+        })}
+      </section>
+
+      <div className="flex flex-wrap gap-2">
+        <button type="button" onClick={() => { setLeft(SAMPLE_A); setRight(SAMPLE_B) }} className="rounded-xl border border-[color:var(--border)] px-3 py-2 text-xs font-extrabold">Load sample</button>
+        <button type="button" onClick={() => { setLeft(''); setRight('') }} className="inline-flex items-center gap-1.5 rounded-xl border border-[color:var(--border)] px-3 py-2 text-xs font-extrabold"><Eraser className="size-3.5" /> Clear</button>
+        <button type="button" onClick={() => { setLeft(right); setRight(left) }} className="inline-flex items-center gap-1.5 rounded-xl border border-[color:var(--border)] px-3 py-2 text-xs font-extrabold"><ArrowLeftRight className="size-3.5" /> Swap</button>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div>
-          <label className="text-xs font-bold text-[color:var(--ink-muted)]">Original</label>
-          <textarea value={left} onChange={(e) => setLeft(e.target.value)} rows={14} placeholder="Paste original draft…" className="mt-1 w-full rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-3 text-sm font-mono focus:outline-none focus:border-[#8B1E3F]" />
-        </div>
-        <div>
-          <label className="text-xs font-bold text-[color:var(--ink-muted)]">Revised</label>
-          <textarea value={right} onChange={(e) => setRight(e.target.value)} rows={14} placeholder="Paste revised draft…" className="mt-1 w-full rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-3 text-sm font-mono focus:outline-none focus:border-[#8B1E3F]" />
-        </div>
-      </div>
+
       {(left.trim() || right.trim()) && (
-        <div className="rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] overflow-hidden">
-          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[color:var(--border)] px-4 py-3">
-            <div className="text-xs font-bold text-[color:var(--ink-muted)]">
-              {stats.identical ? (
-                <span className="text-[#8B1E3F] font-extrabold">The two texts are identical</span>
-              ) : (
-                <span><span className="text-emerald-700">+{stats.add}</span>{' · '}<span className="text-red-700">−{stats.del}</span>{' · '}<span>{stats.same} unchanged</span></span>
-              )}
+        <section className="rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] overflow-hidden">
+          <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[color:var(--border)] px-4 py-3">
+            <div>
+              <div className="text-xs font-extrabold text-[color:var(--ink-muted)] uppercase tracking-wide">Comparison summary</div>
+              <div className="mt-1 flex flex-wrap gap-3 text-sm font-black"><span className="text-emerald-700">+{stats.add} added</span><span className="text-red-700">−{stats.del} removed</span><span>{stats.same} unchanged</span></div>
             </div>
-            <button type="button" onClick={copySummary} className="inline-flex items-center gap-1.5 rounded-lg border border-[color:var(--border)] px-2.5 py-1.5 text-xs font-bold cursor-pointer">
-              {copied ? <Check className="size-3.5 text-emerald-600" /> : <Copy className="size-3.5" />}
-              {copied ? 'Copied' : 'Copy diff'}
-            </button>
+            <button type="button" onClick={copySummary} disabled={!diffText.trim()} className="inline-flex items-center gap-1.5 rounded-xl border border-[color:var(--border)] px-3 py-2 text-xs font-extrabold disabled:opacity-50">{copied ? <Check className="size-3.5" /> : <Copy className="size-3.5" />}{copied ? 'Copied' : 'Copy diff'}</button>
           </div>
-          {stats.identical && (
-            <div className="mx-4 my-3 rounded-xl border border-blue-200 bg-blue-50 px-4 py-3 text-sm font-bold text-blue-900">The two texts are identical</div>
-          )}
-          <div className="max-h-[28rem] overflow-auto p-2 font-mono text-xs sm:text-sm leading-relaxed">
-            {unified ? lines.map((l, idx) => (
-              <div key={idx} className={l.kind === 'add' ? 'bg-emerald-50 text-emerald-900 px-2 py-0.5' : l.kind === 'del' ? 'bg-red-50 text-red-900 px-2 py-0.5' : 'px-2 py-0.5 text-[color:var(--ink-muted)]'}>
-                <span className="opacity-60 select-none mr-2">{l.kind === 'add' ? '+' : l.kind === 'del' ? '−' : ' '}</span>{l.text || ' '}
+
+          {stats.identical && <div className="m-4 rounded-xl border border-blue-200 bg-blue-50 px-4 py-3 text-sm font-bold text-blue-900">The two texts are identical.</div>}
+
+          <div className="max-h-[34rem] overflow-auto p-3 font-mono text-xs leading-6 sm:text-sm">
+            {unified ? lines.map((line, idx) => (
+              <div key={idx} className={line.kind === 'add' ? 'bg-emerald-50 px-2 text-emerald-900' : line.kind === 'del' ? 'bg-red-50 px-2 text-red-900' : 'px-2 text-[color:var(--ink-muted)]'}>
+                <span className="mr-2 select-none opacity-60">{line.kind === 'add' ? '+' : line.kind === 'del' ? '−' : ' '}</span>{line.text || ' '}
               </div>
             )) : (
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
-                <div>{lines.filter((l) => l.kind !== 'add').map((l, idx) => (<div key={idx} className={l.kind === 'del' ? 'bg-red-50 text-red-900 px-2 py-0.5' : 'px-2 py-0.5 text-[color:var(--ink-muted)]'}>{l.text || ' '}</div>))}</div>
-                <div>{lines.filter((l) => l.kind !== 'del').map((l, idx) => (<div key={idx} className={l.kind === 'add' ? 'bg-emerald-50 text-emerald-900 px-2 py-0.5' : 'px-2 py-0.5 text-[color:var(--ink-muted)]'}>{l.text || ' '}</div>))}</div>
+              <div className="grid gap-3 lg:grid-cols-2">
+                <div className="rounded-xl border border-red-100 overflow-hidden"><div className="border-b border-red-100 bg-red-50 px-3 py-2 text-[11px] font-black uppercase text-red-800">Original</div>{lines.filter((l) => l.kind !== 'add').map((line, idx) => <div key={idx} className={line.kind === 'del' ? 'bg-red-50 px-3 text-red-900' : 'px-3 text-[color:var(--ink-muted)]'}>{line.text || ' '}</div>)}</div>
+                <div className="rounded-xl border border-emerald-100 overflow-hidden"><div className="border-b border-emerald-100 bg-emerald-50 px-3 py-2 text-[11px] font-black uppercase text-emerald-800">Revised</div>{lines.filter((l) => l.kind !== 'del').map((line, idx) => <div key={idx} className={line.kind === 'add' ? 'bg-emerald-50 px-3 text-emerald-900' : 'px-3 text-[color:var(--ink-muted)]'}>{line.text || ' '}</div>)}</div>
               </div>
             )}
           </div>
-        </div>
+
+          <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[color:var(--border)] p-3">
+            <div className="inline-flex items-center gap-1.5 text-[11px] font-bold text-[color:var(--ink-muted)]"><Download className="size-3.5" /> Export comparison</div>
+            <div className="flex flex-wrap gap-2">
+              {(['docx', 'pdf', 'txt'] as ExportKind[]).map((kind) => (
+                <button key={kind} type="button" disabled={!diffText.trim() || exporting !== null} onClick={() => exportDiff(kind)} className="rounded-xl border border-[#8B1E3F] px-3 py-2 text-xs font-extrabold uppercase text-[#8B1E3F] disabled:cursor-not-allowed disabled:opacity-50">{exporting === kind ? 'Preparing…' : kind}</button>
+              ))}
+            </div>
+          </div>
+        </section>
       )}
-      <p className="text-[11px] text-[color:var(--ink-muted)]">Privacy: comparison runs entirely in your browser. No drafts are uploaded.</p>
+
+      <p className="text-[11px] leading-5 text-[color:var(--ink-muted)]">Privacy: comparison and exports run in your browser. Uploaded files are read locally and are not sent to CodePackr. This tool is for document review/reference and does not provide legal advice.</p>
     </div>
   )
 }
