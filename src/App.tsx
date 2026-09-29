@@ -346,7 +346,7 @@ export default function App() {
           }}
         />
 
-        <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-8 paper-grid cp-mobile-main-pad cp-page">
+        <main className="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 py-6 paper-grid cp-mobile-main-pad cp-page">
           {route.type === 'contact' && <ContactFeedback onBackToHome={goHome} />}
 
           {route.type === 'case-law' && (
