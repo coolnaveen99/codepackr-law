@@ -65,7 +65,7 @@ export function DualTrackHero({
   }, [])
 
   return (
-    <div className="space-y-4 pt-0">
+    <div className="space-y-3 pt-0">
       <section className="relative overflow-hidden rounded-3xl border border-blue-500/20 bg-gradient-to-br from-white via-blue-500/[0.04] to-rose-500/[0.07] dark:from-slate-900 dark:via-blue-950/20 dark:to-slate-950 shadow-lg shadow-blue-500/[0.03]">
         <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-blue-700 via-rose-500 to-blue-600" />
 
@@ -74,7 +74,7 @@ export function DualTrackHero({
           <div className="absolute -bottom-36 left-1/4 h-80 w-80 rounded-full bg-rose-500/10 blur-3xl" />
         </div>
 
-        <div className="relative z-10 p-5 sm:p-6 lg:p-7">
+        <div className="relative z-10 p-4 sm:p-5 lg:p-5">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-6 items-center">
             <div className="col-span-1 lg:col-span-7 w-full max-w-2xl">
               <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full text-xs font-semibold border border-blue-500/30 bg-blue-500/10 text-blue-900 dark:text-blue-200 mb-3 shadow-xs backdrop-blur-xs">
@@ -82,7 +82,7 @@ export function DualTrackHero({
                 <span>100% Client-Side Execution • Senior Counsel &amp; PhD Standard</span>
               </div>
 
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-slate-950 dark:text-white leading-[1.15] mb-3">
+              <h1 className="text-xl sm:text-2xl lg:text-3xl font-black tracking-tight text-slate-950 dark:text-white leading-[1.15] mb-2">
                 The Authoritative Digital Law Library,<br />
                 Built for{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-[#c23b63] to-blue-600 dark:from-blue-300 dark:via-rose-300 dark:to-blue-400">
@@ -97,7 +97,7 @@ export function DualTrackHero({
                 </span>
               </div>
 
-              <p className="text-sm text-slate-600 dark:text-slate-300 mb-5 leading-relaxed max-w-xl">
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mb-3 leading-relaxed max-w-xl line-clamp-2">
                 Engineered for <strong className="text-slate-900 dark:text-white">University LL.B/LL.M</strong>,{' '}
                 <strong className="text-blue-700 dark:text-blue-300">AIBE</strong>, and{' '}
                 <strong className="text-slate-900 dark:text-white">State Judicial Services Mains</strong> preparation, with forensic trial roadmaps, evidentiary burdens under BSA, and courtroom drafting formats for chamber practice.
@@ -158,7 +158,7 @@ export function DualTrackHero({
               onSelectTool={onSelectTool}
               onSelectSubject={onSelectSubject}
               onSelectTopic={onSelectTopic}
-              visibleSlots={3}
+              visibleSlots={2}
             />
           </div>
         </div>
@@ -194,7 +194,7 @@ export function DualTrackHero({
           </button>
         </div>
 
-        <div className="p-5 sm:p-6">
+        <div className="p-3 sm:p-4">
           {activeTrack === 'student' ? (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="space-y-2">
