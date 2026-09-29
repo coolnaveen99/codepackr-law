@@ -5,174 +5,240 @@ import {
   BookOpen,
   GraduationCap,
   ShieldCheck,
-  FileText,
+  CheckCircle2,
   ArrowRight,
+  FileText,
+  Lock,
+  HeartHandshake,
 } from 'lucide-react'
 
 interface FeatureBannerCardsProps {
   onSelectTool: (slug: string) => void
   onOpenSubjects: () => void
-  onSelectSubject: (slug: string) => void
+  onSelectSubject?: (slug: string) => void
   onOpenCaseLaw: () => void
 }
 
-interface BannerCardItem {
-  id: string
-  title: string
-  description: string
-  badge: string
-  badgeTone: 'seal' | 'teal' | 'purple' | 'blue' | 'amber' | 'emerald'
-  icon: React.ComponentType<{ className?: string }>
-  cta: string
-  onClick: () => void
+/**
+ * Flagship Feature Card — Matches codepackr-astro Section 2 (Featured Highlight Card)
+ */
+export const FlagshipFeatureCard: React.FC<FeatureBannerCardsProps> = ({
+  onSelectTool,
+}) => {
+  return (
+    <section className="rounded-2xl border border-blue-200 dark:border-blue-900/80 bg-gradient-to-r from-blue-50/80 via-white to-rose-50/60 dark:from-slate-900 dark:via-slate-900 dark:to-blue-950/40 p-5 sm:p-7 shadow-xs">
+      <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+        <div className="space-y-1.5 max-w-2xl">
+          <div className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 dark:text-blue-300 uppercase tracking-wider">
+            <ArrowLeftRight className="size-4 text-blue-600 dark:text-blue-400" />
+            <span>Flagship Transition Engine • In Force July 2024</span>
+          </div>
+          <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
+            New Criminal Sanhitas Concordance Engine (BNS · BNSS · BSA)
+          </h2>
+          <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Instant bidirectional mapping between Bharatiya Nyaya Sanhita ↔ IPC, BNSS ↔ CrPC, and BSA ↔ Evidence Act. Access proving ingredients, limitation periods, comparative concordance tables, and electronic record Section 63 certificate compliance.
+          </p>
+        </div>
+        <div className="shrink-0 flex items-center gap-3">
+          <button
+            type="button"
+            onClick={() => onSelectTool('bns-ipc-mapper')}
+            className="inline-flex items-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 px-5 py-3 font-bold text-white shadow-sm hover:shadow-md active:scale-95 transition-all text-xs sm:text-sm cursor-pointer"
+          >
+            <span>Open Sanhita Mapper</span>
+            <ArrowRight className="size-4" />
+          </button>
+        </div>
+      </div>
+    </section>
+  )
 }
 
-export const FeatureBannerCards: React.FC<FeatureBannerCardsProps> = ({
+/**
+ * Popular Quick Strip — Matches codepackr-astro Section 3 (4-Card Popular Strip)
+ */
+export const PopularToolsStrip: React.FC<FeatureBannerCardsProps> = ({
   onSelectTool,
   onOpenSubjects,
-  onSelectSubject,
   onOpenCaseLaw,
 }) => {
-  const cards: BannerCardItem[] = [
+  const items = [
     {
-      id: 'sanhitas-mapper',
-      title: 'Map New Criminal Sanhitas',
-      description: 'Instant penal, procedural & evidentiary concordance between BNS ↔ IPC, BNSS ↔ CrPC, and BSA ↔ IEA with new offence provisos.',
+      id: 'sanhita-mapper',
+      title: 'BNS ↔ IPC Sanhita Mapper',
+      description: 'Penal concordance, mob lynching, organised crime & new criminal provisos.',
       badge: '2024 Transition',
-      badgeTone: 'seal',
+      badgeColor: 'bg-blue-50 text-blue-700 dark:bg-blue-950/70 dark:text-blue-300 border-blue-200 dark:border-blue-800',
+      iconBg: 'bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 group-hover:bg-blue-600 group-hover:text-white',
       icon: ArrowLeftRight,
-      cta: 'Open Sanhita Mapper',
+      cta: 'Launch Mapper',
       onClick: () => onSelectTool('bns-ipc-mapper'),
     },
     {
-      id: 'landmark-judgments',
-      title: 'Study Landmark SC Judgments',
-      description: '290+ Supreme Court rulings with bench strength, facts, issues, ratio decidendi, and courtroom arguments ready for study and citation.',
-      badge: '290+ Ratios',
-      badgeTone: 'purple',
+      id: 'case-law',
+      title: 'Landmark SC Case Law',
+      description: '290+ Supreme Court rulings with extracted ratio decidendi, facts & bench strength.',
+      badge: '290+ SC Ratios',
+      badgeColor: 'bg-purple-50 text-purple-700 dark:bg-purple-950/70 dark:text-purple-300 border-purple-200 dark:border-purple-800',
+      iconBg: 'bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300 group-hover:bg-purple-600 group-hover:text-white',
       icon: Scale,
       cta: 'Explore Case Law',
       onClick: onOpenCaseLaw,
     },
     {
-      id: 'all-subjects',
-      title: 'Explore All 20 Curriculum Subjects',
-      description: '3,142 registered topics across Constitution, CPC, Criminal, Commercial, Family, and Allied Statutes with statutory deconstruction.',
-      badge: 'Zero Topic Omission',
-      badgeTone: 'blue',
-      icon: BookOpen,
-      cta: 'Browse 20 Subjects',
-      onClick: onOpenSubjects,
-    },
-    {
-      id: 'aibe-prep',
-      title: 'AIBE & Judicial Services Prep',
-      description: 'Bar Council blueprint weightage matrix, IRAC answer structure, timed MCQ mocks, and negative marking analytics for aspirants.',
+      id: 'aibe-mock',
+      title: 'AIBE & Judiciary Simulator',
+      description: 'Bar Council blueprint weightage, timed mock tests & negative marking analytics.',
       badge: 'Exam Simulator',
-      badgeTone: 'emerald',
+      badgeColor: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/70 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800',
+      iconBg: 'bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 group-hover:bg-emerald-600 group-hover:text-white',
       icon: GraduationCap,
       cta: 'Start Mock Exam',
       onClick: () => onSelectTool('aibe-mcq'),
     },
     {
-      id: 'bsa-proof',
-      title: 'Evidentiary Proof & BSA S. 63',
-      description: 'Mandatory proving ingredients, electronic records Section 63 compliance checklists, and burden of proof standards under ss. 104–106.',
-      badge: 'Evidence Rules',
-      badgeTone: 'amber',
-      icon: ShieldCheck,
-      cta: 'View Evidence Standard',
-      onClick: () => onSelectTool('bsa-iea-mapper'),
-    },
-    {
-      id: 'courtroom-drafting',
-      title: 'Chamber Pleading Skeletons',
-      description: 'Authentic courtroom drafting formats: High Court Art. 226 Writs, Order VII Plaints, Order VIII Written Statements, and Bail Petitions.',
-      badge: 'Chamber Formats',
-      badgeTone: 'teal',
-      icon: FileText,
-      cta: 'Open Pleading Skeletons',
-      onClick: () => onSelectSubject('petition-formats'),
+      id: 'all-subjects',
+      title: '20 Curricular Bare Acts',
+      description: '3,552 cataloged sections with proving ingredients, case ratios & drafting formats.',
+      badge: 'Zero Topic Omission',
+      badgeColor: 'bg-amber-50 text-amber-800 dark:bg-amber-950/70 dark:text-amber-300 border-amber-200 dark:border-amber-800',
+      iconBg: 'bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 group-hover:bg-amber-600 group-hover:text-white',
+      icon: BookOpen,
+      cta: 'Browse 20 Subjects',
+      onClick: onOpenSubjects,
     },
   ]
 
-  const getBadgeClass = (tone: BannerCardItem['badgeTone']) => {
-    switch (tone) {
-      case 'seal':
-        return 'bg-blue-500/10 text-blue-700 dark:text-blue-300 border-blue-500/20'
-      case 'teal':
-        return 'bg-teal-500/10 text-teal-700 dark:text-teal-300 border-teal-500/20'
-      case 'purple':
-        return 'bg-purple-500/10 text-purple-700 dark:text-purple-300 border-purple-500/20'
-      case 'blue':
-        return 'bg-sky-500/10 text-sky-700 dark:text-sky-300 border-sky-500/20'
-      case 'amber':
-        return 'bg-amber-500/10 text-amber-700 dark:text-amber-300 border-amber-500/20'
-      case 'emerald':
-        return 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border-emerald-500/20'
-      default:
-        return 'bg-blue-500/10 text-blue-700 dark:text-blue-300 border-blue-500/20'
-    }
-  }
-
   return (
-    <section id="signature-planning-banners" className="space-y-4">
-      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2">
+    <section className="space-y-3.5">
+      <div className="flex items-center justify-between">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-700 dark:text-blue-300">
-            Practice &amp; Study Workflows
-          </p>
-          <h2 className="mt-1 text-2xl font-extrabold text-slate-950 dark:text-white sm:text-3xl">
-            Start with an authoritative workflow
+          <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
+            Most Popular Practice Tools
           </h2>
-          <p className="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
-            Dedicated client-side tools and catalogs engineered for trial advocates, judicial aspirants, and law students.
+          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+            Instant entry points to high-frequency study aids, mappers, and precedents
           </p>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
-        {cards.map((card, idx) => {
-          const Icon = card.icon
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {items.map((tool) => {
+          const Icon = tool.icon
           return (
-            <button
-              key={card.id}
-              type="button"
-              style={{ animationDelay: `${idx * 80}ms` }}
-              onClick={card.onClick}
-              className="animate-fade-in-up group flex items-start gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 border-l-4 border-l-transparent hover:border-l-blue-600 bg-white dark:bg-slate-900 p-5 text-left transition-all duration-[220ms] ease-out hover:-translate-y-1.5 hover:scale-[1.01] hover:shadow-lg hover:border-slate-300 dark:hover:border-slate-700 cursor-pointer"
+            <div
+              key={tool.id}
+              onClick={tool.onClick}
+              className="group relative flex flex-col justify-between p-5 rounded-2xl border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-blue-500/40 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 cursor-pointer shadow-2xs"
             >
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-500/10 text-blue-700 dark:text-blue-300 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all duration-[220ms] ease-out shadow-xs">
-                <Icon className="h-5 w-5" />
-              </div>
-
-              <div className="min-w-0 flex-1">
-                <div className="flex items-center justify-between gap-2 mb-1">
-                  <h3 className="text-sm font-bold text-slate-950 dark:text-white group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors truncate">
-                    {card.title}
-                  </h3>
+              <div>
+                <div className="flex items-center justify-between mb-3.5">
                   <span
-                    className={`text-[10px] font-extrabold px-2 py-0.5 rounded-full border shrink-0 ${getBadgeClass(
-                      card.badgeTone
-                    )}`}
+                    className={`flex size-11 items-center justify-center rounded-xl transition-all duration-200 ${tool.iconBg}`}
                   >
-                    {card.badge}
+                    <Icon className="size-5.5" />
+                  </span>
+                  <span
+                    className={`text-[10px] font-extrabold px-2.5 py-0.5 rounded-full border ${tool.badgeColor}`}
+                  >
+                    {tool.badge}
                   </span>
                 </div>
-
-                <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed line-clamp-2 mb-3">
-                  {card.description}
+                <h3 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-1.5 leading-snug">
+                  {tool.title}
+                </h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">
+                  {tool.description}
                 </p>
-
-                <div className="flex items-center text-xs font-bold text-blue-700 dark:text-blue-400 group-hover:translate-x-1 transition-transform duration-200 gap-1">
-                  <span>{card.cta}</span>
-                  <ArrowRight className="h-3.5 w-3.5" />
-                </div>
               </div>
-            </button>
+
+              <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs font-bold text-blue-700 dark:text-blue-400 group-hover:text-blue-600">
+                <span>{tool.cta}</span>
+                <ArrowRight className="size-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+              </div>
+            </div>
           )
         })}
       </div>
     </section>
   )
 }
+
+/**
+ * Chamber Standards & Technical Depth — Matches codepackr-astro Section 5 (6-Card Value Grid)
+ */
+export const ChamberStandardsSection: React.FC = () => {
+  const pillars = [
+    {
+      title: 'Senior Counsel & PhD Scholarship',
+      description: 'Statutory provisions deconstructed with historical genesis, jurisprudential roots, extracted ratio decidendi, and courtroom application.',
+      icon: Scale,
+    },
+    {
+      title: '100% Client-Side Privacy Guarantee',
+      description: 'Zero data egress. All exam simulators, mock score calculations, flashcards, and search queries execute strictly inside your local browser.',
+      icon: Lock,
+    },
+    {
+      title: 'The Sacred Student Career Covenant',
+      description: 'Zero arbitrary topic omissions. Every BCI standard syllabus topic, state judicial exam question, and doctrine is cataloged with dedicated study notes.',
+      icon: HeartHandshake,
+    },
+    {
+      title: 'Mandatory BSA Evidentiary Burdens',
+      description: 'Clear evidentiary requirements under Sections 104–106 and mandatory digital certificate checklists under Section 63 BSA for electronic records.',
+      icon: ShieldCheck,
+    },
+    {
+      title: 'Structured IRAC Examination Model',
+      description: 'Issue → Rule → Application → Conclusion briefing standard for university LL.B/LL.M exams, AIBE, and Judicial Services Mains answer writing.',
+      icon: CheckCircle2,
+    },
+    {
+      title: 'Authentic Courtroom Drafting Formats',
+      description: 'Ready-to-use chamber pleading skeletons: High Court Art. 226/32 Writs, Order VII Plaints, Order VIII Written Statements, and Bail Petitions.',
+      icon: FileText,
+    },
+  ]
+
+  return (
+    <section className="space-y-4 pt-4 border-t border-slate-200/80 dark:border-slate-800">
+      <div className="space-y-1">
+        <div className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 dark:text-blue-300">
+          <ShieldCheck className="size-4" />
+          <span>Technical Depth &amp; Chamber Standards</span>
+        </div>
+        <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
+          Engineered for Rigorous Legal Practice &amp; Academia
+        </h2>
+        <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+          Built to senior counsel benchmarks combining statutory precision with transparent, client-side tools.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {pillars.map((pillar) => {
+          const Icon = pillar.icon
+          return (
+            <div
+              key={pillar.title}
+              className="rounded-xl border border-slate-200/80 dark:border-slate-800 bg-white dark:bg-slate-900/60 p-4 space-y-2 shadow-2xs"
+            >
+              <div className="flex items-center gap-2 font-bold text-sm text-slate-900 dark:text-white">
+                <Icon className="size-4 text-blue-600 dark:text-blue-400 shrink-0" />
+                <span>{pillar.title}</span>
+              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                {pillar.description}
+              </p>
+            </div>
+          )
+        })}
+      </div>
+    </section>
+  )
+}
+
+// Keep backward compatibility export
+export const FeatureBannerCards = PopularToolsStrip
