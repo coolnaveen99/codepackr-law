@@ -96,7 +96,71 @@ export function HomePage({
         }}
       />
 
-      {/* 2. Flagship Criminal Sanhitas Transition Card (Matches Astro Section 2) */}
+      {/* 2. Featured Legal Practice Tools */}
+      <section className="space-y-5 rounded-3xl border border-blue-200/70 dark:border-blue-900/70 bg-gradient-to-br from-blue-50/80 via-white to-slate-50 dark:from-blue-950/30 dark:via-slate-900 dark:to-slate-900 p-5 sm:p-7 shadow-sm">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+          <div>
+            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-blue-700 dark:text-blue-300 mb-1">
+              <BookOpenCheck className="size-4" /> Featured Legal Practice Tools
+            </div>
+            <h2 className="font-display text-2xl sm:text-3xl font-black tracking-tight text-slate-950 dark:text-white">
+              Draft, Review &amp; Compare Legal Documents
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1 max-w-2xl">
+              Practical browser-based tools for advocates and law students to prepare legal drafts and review document changes quickly.
+            </p>
+          </div>
+          <span className="text-xs font-bold px-3 py-1 rounded-xl bg-white dark:bg-slate-900 border border-blue-100 dark:border-blue-900 text-blue-700 dark:text-blue-300 shrink-0">
+            2 Featured Tools
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {[
+            {
+              id: 'legal-draft-studio',
+              title: 'Legal Draft Studio',
+              description: 'Create and edit BNSS/CPC-aligned legal drafts using practical templates, then export your finished document to DOCX, PDF, or TXT.',
+              label: 'Create Legal Drafts',
+              icon: 'FileText',
+            },
+            {
+              id: 'document-compare',
+              title: 'Legal Document Compare',
+              description: 'Compare original and revised pleadings, notices, or other legal text with side-by-side and unified redline-style views.',
+              label: 'Compare Documents',
+              icon: 'FileDiff',
+            },
+          ].map((tool) => (
+            <button
+              key={tool.id}
+              type="button"
+              onClick={() => onSelectTool(tool.id)}
+              className="group text-left rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 hover:border-blue-400 dark:hover:border-blue-700 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 cursor-pointer"
+            >
+              <div className="flex items-start gap-4">
+                <span className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-950/70 text-blue-700 dark:text-blue-300 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                  <ToolGlyph name={tool.icon} className="size-6" />
+                </span>
+                <div className="min-w-0 flex-1">
+                  <h3 className="font-bold text-base sm:text-lg text-slate-950 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    {tool.title}
+                  </h3>
+                  <p className="mt-1.5 text-xs sm:text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+                    {tool.description}
+                  </p>
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 dark:text-blue-400">
+                    {tool.label}
+                    <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </div>
+              </div>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      {/*3. Flagship Criminal Sanhitas Transition Card (Matches Astro Section 3) */}
       <FlagshipFeatureCard
         onSelectTool={onSelectTool}
         onOpenSubjects={onOpenSubjects}
@@ -104,7 +168,7 @@ export function HomePage({
         onOpenCaseLaw={() => onSelectTool('case-law')}
       />
 
-      {/* 3. Popular Quick Strip (Matches Astro Section 3) */}
+      {/* 4. Popular Quick Strip (Matches Astro Section 3) */}
       <PopularToolsStrip
         onSelectTool={onSelectTool}
         onOpenSubjects={onOpenSubjects}
@@ -112,7 +176,7 @@ export function HomePage({
         onOpenCaseLaw={() => onSelectTool('case-law')}
       />
 
-      {/* 4. Universal Legal Omni-Search & High-Yield Quick Jumps */}
+      {/* 5. Universal Legal Omni-Search & High-Yield Quick Jumps */}
       <section className="space-y-4 max-w-4xl mx-auto w-full pt-2">
         <div className="text-center space-y-1 mb-2">
           <h2 className="font-display text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
@@ -227,23 +291,23 @@ export function HomePage({
         </div>
       </section>
 
-      {/* 5. User Learning Continuation & Live Stats */}
+      {/* 6. User Learning Continuation & Live Stats */}
       <ContinueLearning onSelectTopic={onSelectTopic} onSelectSubject={onSelectSubject} />
       <LibraryStatsBar onOpenCaseLaw={() => onSelectTool('case-law')} />
 
-      {/* 6. Four Curricular Library Wings (20 Legal Subjects) */}
+      {/* 7. Four Curricular Library Wings (20 Legal Subjects) */}
       <LibraryWingsGrid
         onSelectSubject={onSelectSubject}
         onSelectTopic={onSelectTopic}
       />
 
-      {/* 7. Official AIBE & State Judicial Services Weightage Matrix */}
+      {/* 8. Official AIBE & State Judicial Services Weightage Matrix */}
       <AibeWeightageMatrix
         onSelectSubject={onSelectSubject}
         onSelectTool={onSelectTool}
       />
 
-      {/* 8. Forensic Chamber & Practice Reference Tools Deck (Matches Astro Section 4) */}
+      {/* 9. Forensic Chamber & Practice Reference Tools Deck (Matches Astro Section 4) */}
       <section id="tools" className="space-y-5 scroll-mt-24 pt-2">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b border-slate-200 dark:border-slate-800 pb-4">
           <div>
@@ -335,10 +399,10 @@ export function HomePage({
         )}
       </section>
 
-      {/* 9. Technical Depth & Chamber Standards (Matches Astro Section 5) */}
+      {/* 10. Technical Depth & Chamber Standards (Matches Astro Section 5) */}
       <ChamberStandardsSection />
 
-      {/* 10. The Sacred Student Career Covenant & Client-Side Privacy Guarantee (Matches Astro Section 6) */}
+      {/* 11. The Sacred Student Career Covenant & Client-Side Privacy Guarantee (Matches Astro Section 6) */}
       <section className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-gradient-to-br from-white via-slate-50 to-blue-50/40 dark:from-slate-900 dark:via-slate-900 dark:to-blue-950/20 p-6 sm:p-8 lg:p-10 shadow-xs">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-3">
