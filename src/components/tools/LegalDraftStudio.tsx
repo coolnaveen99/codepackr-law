@@ -48,13 +48,23 @@ export function LegalDraftStudio() {
     return 'Other / General'
   }
 
+  const getSubject = (t: DraftTemplate) => {
+    const catalog = TEMPLATE_CATALOG.find((entry) => entry.id === t.id)
+    if (catalog) return catalog.area
+    if (t.id.includes('bail')) return 'Bail & custody'
+    if (t.category === 'civil') return 'Pleadings'
+    if (t.category === 'notice') return t.id.includes('ni-138') ? 'Cheque & recovery' : 'General notices'
+    if (t.category === 'affidavit') return 'Affidavits & declarations'
+    return 'Criminal procedure'
+  }
+
   const subjects = useMemo(() => {
-    const values = new Set(TEMPLATE_CATALOG.map((t) => t.area))
+    const values = new Set(allTemplates.map(getSubject))
     return Array.from(values).sort()
-  }, [])
+  }, [allTemplates])
 
   const acts = useMemo(() => {
-    const source = subject ? TEMPLATE_CATALOG.filter((t) => t.area === subject).map(catalogToDraftTemplate) : allTemplates
+    const source = subject ? allTemplates.filter((t) => getSubject(t) === subject) : allTemplates
     return Array.from(new Set(source.map(getAct))).sort()
   }, [allTemplates, subject])
 
@@ -63,7 +73,7 @@ export function LegalDraftStudio() {
     if (!subject && !act && !q && cat === 'all') return []
     return allTemplates.filter((t) => {
       if (cat !== 'all' && t.category !== cat) return false
-      if (subject && !TEMPLATE_CATALOG.some((entry) => entry.id === t.id && entry.area === subject)) return false
+      if (subject && getSubject(t) !== subject) return false
       if (act && getAct(t) !== act) return false
       if (!q) return true
       return [t.name, t.statute, t.description].some((value) => value.toLowerCase().includes(q))
