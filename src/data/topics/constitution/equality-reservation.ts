@@ -362,6 +362,8 @@ Indian reservation jurisprudence has undergone an extraordinary evolution from t
     'Art 16(4A) — Promotion reservations for SCs/STs (77th & 85th Amendments)',
     'Art 16(4B) — Backlog carry-forward vacancies (81st Amendment)',
     'Art 335 — Efficiency of administration in SC/ST claims',
+    'BSA ss. 104–106 — General burden of proof framework where disputed facts arise',
+    'BSA s. 109 — Facts especially within knowledge',
   ],
 }
 
