@@ -30,7 +30,7 @@ Freedoms under Article 19 are not absolute. However, any restriction imposed by 
 2. Standard of Reasonableness & Proportionality:
    - The restriction must be established by "law" (statutory enactment), not executive instructions without legislative backing (Kharak Singh v. State of U.P.).
    - The test of reasonableness is an objective test (State of Madras v. V.G. Row, 1952): the Court examines the nature of the right, the underlying purpose of the restriction, the extent and urgency of the evil sought to be remedied, and the proportionality of the measure.
-   - The Modern Proportionality Doctrine (Modern Dental College; K.S. Puttaswamy): The State must choose the least restrictive means to achieve a legitimate public aim.
+   - The modern proportionality doctrine asks whether the restriction pursues a legitimate aim, is suitable to that aim, is necessary in the sense that a less intrusive reasonably available measure would not achieve the aim adequately, and maintains a constitutionally permissible balance between the competing interests. The precise formulation varies with context; it should not be reduced to an absolute “least restrictive means” rule.
 
 Citizens-Only Charter
 Article 19 rights are expressly confined to "citizens". Non-citizens / foreigners cannot claim Article 19 freedoms (Hans Muller of Nuremberg v. Superintendent, Presidency Jail), though they enjoy Articles 14 and 21. Furthermore, in State Trading Corporation of India v. Commercial Tax Officer (1963), the Supreme Court held that companies and corporations are not citizens and cannot claim Article 19, though shareholders may invoke their individual freedoms when corporate action impinges on their rights (Bennett Coleman & Co. v. Union of India).
@@ -44,16 +44,66 @@ Procedural & Courtroom Anchors (Senior Counsel Checklist)
 3. Chilling Effect & Overbreadth:
    In Shreya Singhal v. Union of India (2015), Section 66A of the IT Act was struck down because it was vague and had a "chilling effect" on free speech. Discussion vs Advocacy vs Incitement: mere discussion or advocacy is protected; only incitement to violence or public disorder can be restricted.
 4. Internet Shutdowns & Movement Orders:
-   In Anuradha Bhasin v. Union of India (2020), the Supreme Court ruled that indefinite suspension of internet services violates Article 19(1)(a) and 19(1)(g). All suspension orders must be published, state reasons, and satisfy the proportionality test.
+   In Anuradha Bhasin v. Union of India (2020), the Supreme Court held that freedom of speech and expression and the freedom to carry on trade or business through the internet receive constitutional protection under Article 19(1)(a) and 19(1)(g). An indefinite suspension is impermissible; suspension orders must comply with the governing law, be published, provide reasons, and remain subject to review and proportionality.
 
 Current-Law Position & Milestone
-Article 19 reflects modern digital rights and communicative autonomy. Current through the 106th Amendment (2023).`,
+Article 19 reflects modern digital rights and communicative autonomy. The constitutional text should be read with subsequent authoritative Supreme Court interpretation and applicable current law; the 106th Amendment does not alter the six-freedom structure described here.`,
 
   sections: [
     {
-      id: 'a19-six-freedoms',
-      title: 'The Six Fundamental Freedoms (Art 19(1))',
+      id: 'a19-textual-architecture',
+      title: 'Module 1 — Textual Architecture and the Six Freedoms',
       order: 1,
+      content: [
+        'Article 19(1)(a) protects speech and expression; (b) peaceful assembly without arms; (c) association, unions and co-operative societies; (d) movement; (e) residence and settlement; and (g) profession, occupation, trade or business.',
+        'Article 19(1)(f), concerning property, was omitted by the Forty-Fourth Amendment; property is now protected as a constitutional right under Article 300A rather than as an Article 19 freedom.',
+        'The rights in Article 19(1) are textually confined to citizens. The restriction clauses are not interchangeable: each freedom is paired with its own constitutionally specified grounds.',
+      ],
+    },
+    {
+      id: 'a19-restriction-architecture',
+      title: 'Module 2 — Enumerated Grounds and Reasonableness',
+      order: 2,
+      content: [
+        'Article 19(2)–(6) specifies the permissible grounds of restriction for the different freedoms. A restriction must be traceable to the applicable constitutional clause; “public interest” cannot be substituted indiscriminately for every ground.',
+        'State of Madras v. V.G. Row treats reasonableness as a contextual judicial inquiry, including the nature of the right, the purpose of the restriction, the extent and urgency of the perceived problem, and the proportionality of the imposition. The Supreme Court continues to cite this framework.',
+        'Modern proportionality analysis generally asks about legitimate purpose, suitability, necessity/less intrusive alternatives where relevant, and balancing. The analysis is context-sensitive rather than a mechanical formula.',
+      ],
+    },
+    {
+      id: 'a19-speech-digital',
+      title: 'Module 3 — Speech, Chilling Effect and Digital Communication',
+      order: 3,
+      content: [
+        'Shreya Singhal v. Union of India distinguishes discussion, advocacy and incitement; restrictions on speech must remain within Article 19(2) and cannot rest on vague or overbroad criminalisation.',
+        'Anuradha Bhasin v. Union of India recognizes constitutional protection for speech and expression and trade/business conducted through the internet. It also rejects indefinite internet suspension and requires legality, publication, reasons and proportionality/review safeguards.',
+        'A digital-medium restriction should therefore identify the precise legal source, the Article 19(2) ground relied upon, the material showing the relevant harm, the geographic and temporal scope, and the availability of less intrusive measures.',
+      ],
+    },
+    {
+      id: 'a19-association-movement-trade',
+      title: 'Module 4 — Assembly, Association, Movement, Residence and Trade',
+      order: 4,
+      content: [
+        'Articles 19(3)–(6) apply distinct restriction frameworks to assembly, association, movement, residence and profession/trade. The court should identify the exact sub-clause rather than treating Article 19 as one undifferentiated liberty.',
+        'The right to form an association does not automatically include every activity of the association; the Supreme Court has distinguished the constitutional freedom to form or continue an association from regulation of its business or other activities.',
+        'Article 19(1)(g) is subject to Article 19(6), including reasonable restrictions in the interests of the general public, professional or technical qualifications, and laws concerning State monopolies. The reasonableness inquiry remains contextual.',
+      ],
+    },
+    {
+      id: 'a19-litigation-evidence',
+      title: 'Module 5 — Constitutional Pleading, Evidence and Relief',
+      order: 5,
+      content: [
+        'A constitutional challenge should identify the citizen claimant, the protected freedom, the impugned State action or law, the applicable restriction clause, and the precise constitutional defect alleged.',
+        'Where the BSA applies, ss. 104–106 concern burdens relating to facts in issue/relevant facts and s. 109 concerns facts especially within a person’s knowledge. These provisions should not be converted into a blanket rule that the State always bears the burden of proving proportionality.',
+        'Relief should be framed to the defect established on the record: quashing or reading down an offending measure, prohibiting unlawful implementation, or granting other constitutionally appropriate relief. The precise remedy depends on the nature and scope of the violation.',
+      ],
+    },
+    {
+      id: 'a19-six-freedoms-summary',
+      title: 'Quick Reference — The Six Fundamental Freedoms',
+      order: 6,
       content: [
         '19(1)(a): Freedom of speech and expression (includes press, commercial speech, and digital communication).',
         '19(1)(b): Peaceful assembly without arms.',
@@ -63,9 +113,9 @@ Article 19 reflects modern digital rights and communicative autonomy. Current th
       ],
     },
     {
-      id: 'a19-restrictions-test',
-      title: 'The Two-Pronged Test of Reasonable Restrictions',
-      order: 2,
+      id: 'a19-restrictions-test-summary',
+      title: 'Quick Reference — Restriction Review',
+      order: 7,
       content: [
         'Prong 1: Must fall strictly within the enumerated grounds of clauses (2) to (6).',
         'Prong 2: Must be reasonable, backed by statutory law, and proportionate (least intrusive measure).',
@@ -73,9 +123,9 @@ Article 19 reflects modern digital rights and communicative autonomy. Current th
       ],
     },
     {
-      id: 'a19-citizenship-standing',
-      title: 'Citizenship Requirement & Standing',
-      order: 3,
+      id: 'a19-citizenship-standing-summary',
+      title: 'Quick Reference — Citizenship and Standing',
+      order: 8,
       content: [
         'Available only to citizens of India; non-citizens and juristic companies cannot claim Art 19 directly.',
         'Shareholders and journalists can invoke their individual citizen rights to protect corporate press freedom (Bennett Coleman).',
@@ -110,7 +160,7 @@ Article 19 reflects modern digital rights and communicative autonomy. Current th
       question: 'Examine the validity of the indefinite internet suspension order applying the principles laid down in Anuradha Bhasin v. Union of India. Can internet access be suspended indefinitely under Indian law?',
       applicableLaw: 'Article 19(1)(a) and 19(1)(g) of the Constitution of India; Article 19(2) & 19(6); Proportionality Doctrine; Anuradha Bhasin v. Union of India.',
       analysis: '1. Constitutional Status of Internet: In Anuradha Bhasin v. Union of India (2020), the Supreme Court ruled that freedom of speech and expression and the freedom to carry on trade/business using the internet are constitutionally protected under Article 19(1)(a) and 19(1)(g).\n2. Indefinite Suspension Impermissible: An indefinite suspension of internet services is impermissible in law. Suspension can only be for a temporary duration and must be subjected to periodic review.\n3. The Proportionality Test: The State must show that no less restrictive alternative (e.g. blocking specific URLs or targeting limited geographical zones) was available. A blanket shutdown across an entire district for student fee protests is disproportionate.\n4. Procedural Safeguards: Orders must be published, reasoned, and placed before the statutory Review Committee.',
-      conclusion: 'The indefinite blanket internet shutdown violates Article 19(1)(a) and 19(1)(g) and fails the proportionality test. The High Court will quash the indefinite order and direct immediate restoration.',
+      conclusion: 'The indefinite blanket suspension is vulnerable to challenge under Article 19(1)(a) and 19(1)(g). The court would assess legality, reasons, proportionality, review safeguards and the factual record before determining the appropriate relief.',
     },
   ],
 
@@ -217,7 +267,7 @@ V. PROCEDURAL ROADMAP & LITIGATION STRATEGY (SENIOR COUNSEL REFERENCE)
 1. Forum: High Court under Article 226 or Supreme Court under Article 32.
 2. Citizenship Proof: Petition must establish Indian citizenship.
 3. Pleading Standards: Plead exact infringement, demonstrate chilling effect, and attack the restriction on the ground that it is not referable to the enumerated heads of Article 19(2).
-4. Evidentiary Burden: Under BSA ss. 104–106, the petitioner must establish restriction; the State bears the burden of proving that the restriction is reasonable and proportionate.
+4. Evidentiary Burden: Where the BSA applies to the proceeding, ss. 104–106 allocate burdens concerning facts in issue and relevant facts, while s. 109 addresses facts especially within a person's knowledge. Constitutional review does not create a blanket statutory rule that the State always bears a single BSA burden of proving reasonableness or proportionality; the court assesses the constitutional challenge on the pleadings and evidentiary record applicable to the proceeding.
 
 VI. CONCLUSION & CURRENT-LAW MILESTONE
 Freedom of speech under Article 19(1)(a) has evolved from print newsprint to the digital frontier. By invalidating vague speech bans in Shreya Singhal and checking arbitrary digital blackouts in Anuradha Bhasin, the Supreme Court has anchored digital free expression to constitutional proportionality. Current through the 106th Amendment (2023).`,
@@ -227,7 +277,7 @@ Freedom of speech under Article 19(1)(a) has evolved from print newsprint to the
     {
       id: 'a19-qa-short',
       question: 'Is the right to access the internet a constitutionally protected right under Article 19?',
-      answer: 'Yes. In Anuradha Bhasin v. Union of India (2020), the Supreme Court ruled that freedom of speech and expression and the right to carry on trade/business using the internet are constitutionally protected under Article 19(1)(a) and 19(1)(g).',
+      answer: 'The Supreme Court in Anuradha Bhasin v. Union of India (2020) held that freedom of speech and expression and the freedom to carry on trade or business through the internet are constitutionally protected under Article 19(1)(a) and 19(1)(g). This is not the same as declaring a freestanding fundamental right to internet access in every circumstance.',
       relatedProvisionIds: ['constitution-article-19'],
     },
   ],
