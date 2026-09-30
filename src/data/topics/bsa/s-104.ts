@@ -1,237 +1,48 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  "glance": "BSA s. 104, Burden of proof, is an evidentiary provision in the Burden of proof cluster. Analyse it through the separate questions of relevancy, admissibility, proof, burden and probative weight, and check BSA s. 170 for proceedings governed by the repeal and savings rule. Historical concordance: Indian Evidence Act s. 101.",
-  "study": "Current-law identity\nBSA s. 104 governs burden of proof within Chapter VII - Burden of proof. The provision must be read with its enacted clauses, explanations, illustrations and connected provisions BSA s. 103, BSA s. 105. Historical concordance: Indian Evidence Act s. 101.\n\nThe forensic distinction\nRelevancy asks whether a fact has the statutory connection required by the Adhiniyam. Admissibility asks whether the Court may receive that relevant material under the rules of exclusion, privilege, form and foundation. Proof asks whether the admitted material establishes the fact to the required standard. Probative weight asks how much reliance the Court should place on it. A relevant fact is not automatically admissible, and admissibility is not proof of the ultimate fact.\n\nMandatory application checklist\n1. Identify the fact in issue, the fact sought to be introduced and the party tendering it.\n2. State the exact rule in BSA s. 104, including every condition, explanation, proviso and illustration.\n3. Classify the material as oral, documentary, electronic, real or circumstantial evidence.\n4. Test directness, hearsay, privilege, primary or secondary evidence, authentication and statutory certificate requirements.\n5. Identify the party bearing the initial burden under BSA s. 104 and any special-knowledge rule under s. 109.\n6. Separate admissibility from the weight ultimately assigned after cross-examination and the complete record.\n\nElectronic records and constitutional limits\nElectronic and digital records are documents under BSA. Where a computer output, email, messaging record, CCTV export, call record, server log or device image is tendered through the statutory route, check BSA s. 63 and its certificate requirements. The certificate is not a substitute for relevance, authenticity, chain of custody or proof of the fact asserted. Evidence must also respect Articles 20(3), 21 and 14 of the Constitution, privilege rules and fair-trial disclosure.\n\nCourtroom method\nIn a written submission, identify the fact in issue, show the statutory relevancy link, answer the admissibility objection, establish the foundation, identify the burden and standard, and explain the probative consequence. Do not cite the historical Evidence Act number as the current rule after 1 July 2024 except as concordance. Do not convert a missing certificate, hearsay statement or weak foundation into an automatic finding on the merits without analysing the applicable statutory consequence.",
+  "glance": "BSA s. 104 places the legal burden on the person who asks the Court to give judgment on a right or liability dependent on facts asserted by that person. It is the starting rule for allocating the legal burden; distinguish it from evidential onus, presumptions, standard of proof and the special-knowledge rule in s. 109. Historical concordance: Indian Evidence Act s. 101.",
+  "study": "CURRENT LAW\nBSA s. 104 states the general burden rule: the person seeking judgment on a legal right or liability dependent on asserted facts must prove those facts. The statutory illustrations cover both criminal and civil claims. The rule must be read with ss. 105–110 and the statutory presumptions elsewhere in the Adhiniyam. India Code places s. 104 in Chapter VII, Burden of Proof.\n\nLEGAL BURDEN, EVIDENTIAL ONUS AND STANDARD\nThe legal burden is the ultimate obligation allocated by law. The evidential onus concerns the obligation to produce sufficient evidence to answer a prima facie case or activate a statutory presumption. The standard is the degree of persuasion required: in ordinary civil adjudication, proof is on the balance of probabilities; in criminal prosecution, guilt must ordinarily be proved beyond reasonable doubt, while a statutory exception or reverse-onus provision operates only according to its terms and after its legal foundation is established. Do not collapse these concepts.\n\nAPPLICATION METHOD\n1. Identify the precise right, liability, offence, defence or exception for which judgment is sought. 2. Identify the facts asserted as the foundation of that proposition. 3. Place the initial legal burden under s. 104. 4. Check s. 105 for the person who would fail if no evidence were given, then the connected allocation rules in ss. 106–110. 5. Identify any statutory presumption and the facts required before it arises. 6. Determine the applicable standard and whether the onus has shifted on the evidential record. 7. Keep admissibility, credibility and final weight separate from burden allocation.\n\nSPECIAL KNOWLEDGE\nSection 109 deals with facts especially within a person's knowledge. It is not a substitute for proving the prosecution's or claimant's foundational case and does not create an unrestricted reverse burden. The Court should identify the specific fact said to be within special knowledge and ask whether the opposing party has first established the factual platform on which the rule operates.\n\nELECTRONIC EVIDENCE\nSection 63 concerns admissibility of electronic records. A s. 63 certificate or other statutory foundation addresses the route by which an electronic record is received; it does not itself prove every fact asserted in the record. Authenticity, source, integrity, custody, relevance and probative weight remain separate questions.\n\nTRANSITION\nFor proceedings to which the current BSA applies, cite BSA provisions. Section 170 must be checked where the repeal-and-savings provision preserves application of the former Indian Evidence Act to an existing proceeding. The historical section number is concordance, not the current rule for a new BSA proceeding.",
   "sections": [
-    {
-      "id": "bsa-104-module-1",
-      "title": "Provenance, Legislative Objective and Evidentiary Foundation",
-      "order": 1,
-      "content": [
-        "BSA s. 104 regulates burden of proof within Burden of proof.",
-        "The statutory scheme seeks reliable adjudication by limiting proof to legally relevant and properly received material.",
-        "Read the provision with the constitutional values of fair trial, privilege, reliability and equality of arms."
-      ]
-    },
-    {
-      "id": "bsa-104-module-2",
-      "title": "Textual Anatomy, Exceptions and Connected Rules",
-      "order": 2,
-      "content": [
-        "Deconstruct every clause of BSA s. 104; do not replace the enacted rule with a one-line Evidence Act summary.",
-        "Read it with BSA s. 103, BSA s. 105. Connected provisions may control foundation, exclusion, presumptions, witnesses or the mode of proof.",
-        "Historical concordance assists comparison only and is not the current citation."
-      ]
-    },
-    {
-      "id": "bsa-104-module-3",
-      "title": "Mandatory Relevancy, Admissibility and Proof Ingredients",
-      "order": 3,
-      "content": [
-        "First ingredient: identify the fact in issue or the statutory relevancy link.",
-        "Second ingredient: satisfy any exclusion, privilege, directness, primary-document or foundation rule.",
-        "Third ingredient: prove authenticity and the source or maker where the form of evidence requires it.",
-        "Fourth ingredient: apply the correct burden and standard, then distinguish admissibility from probative weight."
-      ]
-    },
-    {
-      "id": "bsa-104-module-4",
-      "title": "BSA Burdens, Presumptions and Electronic Records",
-      "order": 4,
-      "content": [
-        "BSA s. 104 supplies the ordinary burden framework; the party asserting the legal proposition must establish its foundation.",
-        "BSA s. 109 addresses facts especially within knowledge. It does not erase the initial burden or permit conviction on an unproved charge.",
-        "For electronic records, examine BSA s. 63 certificate, device or system identity, production method, integrity, custody and the distinction between admissibility and weight."
-      ]
-    },
-    {
-      "id": "bsa-104-module-5",
-      "title": "Trial Roadmap, Forum, Limitation and Repeal Savings",
-      "order": 5,
-      "content": [
-        "Apply BSA s. 104 at the correct stage of trial or inquiry and identify whether the objection concerns tender, marking, admissibility, proof or final weight.",
-        "For proceedings governed by the post-1 July 2024 evidence regime, cite BSA. For proceedings saved by s. 170, identify the applicable Indian Evidence Act route before arguing the consequence.",
-        "Check the governing procedural statute and any special limitation rule for the application or appeal; evidence law itself does not create a universal limitation period."
-      ]
-    }
+    {"id":"bsa-104-module-1","title":"General Rule and Legal Burden","order":1,"content":["Section 104 allocates the legal burden to the person seeking judgment on a legal right or liability dependent on facts asserted by that person.","The burden attaches to the proposition for which judgment is sought; it is not a general requirement that one party prove every fact in the case.","The statutory illustrations show the rule operating in both criminal and civil settings."]},
+    {"id":"bsa-104-module-2","title":"Burden, Onus, Presumptions and Standards","order":2,"content":["Distinguish legal burden from evidential onus: the former is the ultimate allocation; the latter may move during trial as evidence and presumptions change the evidential position.","Distinguish burden allocation from the standard of proof. Civil proof ordinarily operates on probabilities; criminal guilt ordinarily requires proof beyond reasonable doubt.","A statutory presumption can alter the evidential position only according to its terms; identify its foundation before describing any shift."]},
+    {"id":"bsa-104-module-3","title":"Connected Allocation Rules","order":3,"content":["Read s. 104 with s. 105 and the succeeding provisions on particular facts, exceptions and special knowledge.","Where an accused relies on a statutory exception, analyse the exact statutory language and the governing burden rule rather than assuming either a complete prosecution burden or an unlimited reverse burden.","Section 109 concerns facts especially within knowledge and must not be used to fill a foundational evidentiary gap in the opposing party's case."]},
+    {"id":"bsa-104-module-4","title":"Trial Application and Digital Evidence","order":4,"content":["First identify the ultimate proposition, then the facts needed to establish it, then the party bearing the legal burden.","For electronic material, s. 63 governs its statutory admissibility route; burden of proof under s. 104 remains a separate question.","At final judgment, distinguish admissibility, credibility, corroboration, burden, standard and probative weight."]},
+    {"id":"bsa-104-module-5","title":"Submissions, Transition and Error Control","order":5,"content":["A written submission should state the proposition, allocation rule, evidence supporting it, any statutory presumption, applicable standard and the consequence of the evidential record.","Do not say that a shifting evidential onus permanently transfers the legal burden unless the governing law actually provides for that result.","Check s. 170 for saved proceedings and use the former Evidence Act number only as historical concordance."]}
   ],
-  "provisions": [
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-104",
-      "section": "s. 104",
-      "title": "Burden of proof"
-    },
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-63",
-      "section": "s. 63",
-      "title": "Admissibility of electronic records"
-    },
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-104",
-      "section": "s. 104",
-      "title": "Burden of proof"
-    },
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-109",
-      "section": "s. 109",
-      "title": "Burden of proving fact especially within knowledge"
-    },
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-170",
-      "section": "s. 170",
-      "title": "Repeal and savings"
-    }
+  "provisions":[
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-104","section":"s. 104","title":"Burden of proof"},
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-105","section":"s. 105","title":"On whom burden of proof lies"},
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-109","section":"s. 109","title":"Burden of proving fact especially within knowledge"},
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-63","section":"s. 63","title":"Admissibility of electronic records"},
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-170","section":"s. 170","title":"Repeal and savings"}
   ],
-  "examples": [
-    {
-      "id": "bsa-104-ill-1",
-      "title": "Example 1 - Foundation and admissibility satisfied",
-      "illustrationType": "practical",
-      "description": "A party identifies the fact in issue, establishes the statutory relevancy link under s. 104, proves the source and authenticity of the record, and satisfies the applicable documentary or electronic foundation. The Court may receive the material and then assess its weight."
-    },
-    {
-      "id": "bsa-104-ill-2",
-      "title": "Example 2 - Relevancy does not cure a defect",
-      "illustrationType": "fail-scenario",
-      "description": "A party offers a relevant screenshot or hearsay statement but cannot satisfy the applicable statutory foundation, certificate, directness or privilege rule. The Court must analyse admissibility separately instead of treating logical relevance as automatic proof."
-    }
+  "examples":[
+    {"id":"bsa-104-ill-1","title":"Claim to land","illustrationType":"statutory-practical","description":"A claimant asks the Court to declare an entitlement to land based on asserted facts that the defendant denies. Under s. 104, the claimant must establish the facts on which the requested judgment depends."},
+    {"id":"bsa-104-ill-2","title":"Criminal charge","illustrationType":"statutory-practical","description":"A person asks the Court to punish an accused for an offence said to have been committed. The prosecution must establish the facts necessary for the judgment; later evidential rules and statutory presumptions must be analysed separately."}
   ],
-  "hypotheticals": [
-    {
-      "id": "bsa-104-hypo",
-      "title": "Chamber Practice Hypothetical: BSA s. 104",
-      "facts": "In a criminal trial, the prosecution tenders an oral statement and a digital record to establish a fact connected with the charge. The defence objects that the material is irrelevant, hearsay, uncertified or unsupported by a competent witness. The prosecution invokes a burden or presumption without first establishing the factual foundation.",
-      "question": "Whether the material is relevant and admissible under BSA s. 104, and what proof and burden consequences follow.",
-      "applicableLaw": "BSA s. 104, connected provisions BSA s. 103, BSA s. 105, ss. 3, 55, 57, 63, 104 and 109 where applicable, and s. 170 savings.",
-      "analysis": "1. Identify the fact in issue and the statutory relevancy route. 2. Test the form of evidence: direct oral evidence, documentary evidence, electronic record, hearsay or privileged communication. 3. Check the applicable foundation and BSA s. 63 certificate where digital material is tendered. 4. Place the initial burden under s. 104 and use s. 109 only after the foundation for special knowledge is established. 5. Separate admissibility from credibility and final probative weight.",
-      "conclusion": "The Court should receive and rely on the material only to the extent that the statutory relevancy, admissibility and proof requirements are independently satisfied. A relevant but inadmissible record cannot become proof merely because it appears persuasive."
-    }
+  "hypotheticals":[
+    {"id":"bsa-104-hypo","title":"Chamber Problem: Foundation, Onus and Special Knowledge","facts":"A prosecution proves that an accused was present at a location but relies on s. 109 to demand an explanation for a separate fact said to be especially within the accused's knowledge. The defence argues that the prosecution has not first proved the elements of the offence.","question":"How should the Court allocate the legal burden and any evidential onus?","applicableLaw":"BSA ss. 104, 105, 109 and any offence-specific statutory presumption; constitutional fair-trial principles where applicable.","analysis":"Start with the elements of the charge and s. 104. Identify what the prosecution has independently established. Only then identify whether a particular remaining fact falls within s. 109. Do not convert special knowledge into a general reverse burden. Apply the applicable criminal standard to the prosecution's case and the governing rule to any statutory exception or presumption.","conclusion":"The burden analysis must be proposition-specific. Section 109 may address a fact genuinely within special knowledge, but it does not dispense with proof of the foundational elements of the charge."}
   ],
-  "distinctions": [
-    {
-      "id": "bsa-104-distinction",
-      "title": "BSA s. 104: relevancy, admissibility and proof",
-      "left": "BSA s. 104",
-      "right": "BSA s. 103, BSA s. 105",
-      "rows": [
-        {
-          "point": "Function",
-          "left": "Burden of proof",
-          "right": "Connected relevancy, foundation, burden or exclusion rule"
-        },
-        {
-          "point": "Question",
-          "left": "What fact or evidentiary act does this section govern?",
-          "right": "What additional condition must be satisfied?"
-        },
-        {
-          "point": "Trial consequence",
-          "left": "Apply the section to the tendered material",
-          "right": "Then decide admissibility, credibility and weight separately"
-        }
-      ]
-    }
+  "distinctions":[
+    {"id":"bsa-104-distinction","title":"Legal burden versus evidential onus","left":"Legal burden","right":"Evidential onus","rows":[{"point":"Nature","left":"Ultimate allocation fixed by law","right":"May move as the evidential record develops"},{"point":"Question","left":"Who must ultimately establish the proposition?","right":"Who must presently answer the evidential case or activate/displace a presumption?"},{"point":"Effect","left":"Failure can determine the ultimate issue","right":"Failure may leave a prima facie case unanswered without necessarily reallocating the ultimate legal burden"}]}
   ],
-  "misconceptions": [
-    {
-      "id": "bsa-104-trap-1",
-      "trap": "Citing only the old Evidence Act number for s. 104.",
-      "correction": "Use BSA s. 104 for the current regime and mention the historical number only as concordance or when applying the s. 170 savings rule."
-    },
-    {
-      "id": "bsa-104-trap-2",
-      "trap": "Relevancy automatically means admissibility and proof.",
-      "correction": "Relevancy, admissibility, proof and probative weight are separate forensic inquiries."
-    },
-    {
-      "id": "bsa-104-trap-3",
-      "trap": "BSA s. 109 reverses the entire burden of proof.",
-      "correction": "The initial burden remains with the party asserting the legal proposition; special knowledge operates only on the facts within that statutory rule."
-    }
+  "misconceptions":[
+    {"id":"bsa-104-trap-1","trap":"Burden of proof and onus of proof are always identical.","correction":"Keep the ultimate legal burden separate from the evidential onus that can shift during a trial."},
+    {"id":"bsa-104-trap-2","trap":"Section 109 lets the prosecution avoid proving its case.","correction":"Special knowledge is fact-specific and does not erase the foundational burden on the party asserting the legal proposition."},
+    {"id":"bsa-104-trap-3","trap":"Admissibility of a record proves the fact recorded.","correction":"Admissibility permits consideration; proof, credibility and weight remain separate inquiries."}
   ],
-  "cases": [
-    {
-      "name": "Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal",
-      "year": 2020,
-      "citation": "(2020) 7 SCC 1",
-      "court": "Supreme Court of India",
-      "facts": "The case concerned the proof and certification of electronic records tendered in election litigation.",
-      "issue": "Whether the statutory certificate requirement for computer outputs is mandatory and when secondary electronic evidence may be received.",
-      "ratioDecidendi": "The certificate requirement is a condition precedent for admissibility of the relevant electronic record output, subject to the statutory route and the Court's power to facilitate production where the facts justify it.",
-      "holding": "The Constitution Bench clarified the certificate rule and overruled the contrary view to the extent necessary.",
-      "relevance": "Use where s. 104 concerns electronic records or digital proof; it does not decide the relevancy or admissibility of every non-digital item."
-    },
-    {
-      "name": "Anvar P.V. v. P.K. Basheer",
-      "year": 2014,
-      "citation": "(2014) 10 SCC 473",
-      "court": "Supreme Court of India",
-      "facts": "The Court examined the mode of proving electronic records in an election dispute.",
-      "issue": "Whether electronic records could be admitted without compliance with the statutory certificate route.",
-      "ratioDecidendi": "Electronic evidence must be proved through the special statutory requirements applicable to computer outputs; ordinary secondary-evidence principles cannot bypass that route.",
-      "holding": "The earlier contrary approach was displaced and the certificate discipline was reaffirmed.",
-      "relevance": "Use only for digital evidence issues connected with s. 104; distinguish it from ordinary oral, physical-document or privilege questions."
-    },
-    {
-      "name": "Sharad Birdhichand Sarda v. State of Maharashtra",
-      "year": 1984,
-      "citation": "(1984) 4 SCC 116",
-      "court": "Supreme Court of India",
-      "facts": "The Court assessed a prosecution based substantially on circumstantial evidence.",
-      "issue": "What standard must circumstantial evidence meet before it can support a criminal conviction.",
-      "ratioDecidendi": "The circumstances must be fully established, consistent only with guilt, conclusive in tendency, and form a complete chain excluding every reasonable hypothesis of innocence.",
-      "holding": "The Court restated the safeguards for conviction on circumstantial evidence.",
-      "relevance": "Use where s. 104 concerns circumstantial proof or inference; do not use it as a substitute for a section-specific relevancy rule."
-    }
+  "cases":[
+    {"name":"Kali Ram v. State of Himachal Pradesh","year":1973,"citation":"(1973) 2 SCC 808","court":"Supreme Court of India","facts":"The Court considered the criminal standard and the significance of reasonable doubt.","issue":"How should the criminal burden operate where the evidence leaves a reasonable doubt?","ratioDecidendi":"The prosecution must establish guilt beyond reasonable doubt; a reasonable doubt arising from the evidence must operate in favour of the accused.","holding":"The Court emphasised the high criminal standard and the danger of conviction on conjecture.","relevance":"Use for the standard attached to the prosecution's legal burden, while keeping statutory presumptions and exceptions separately analysed."},
+    {"name":"Shambhu Nath Mehra v. State of Ajmer","year":1956,"citation":"AIR 1956 SC 404","court":"Supreme Court of India","facts":"The Court considered the former special-knowledge rule in a criminal prosecution.","issue":"Whether a special-knowledge provision can be used as a substitute for the prosecution's foundational proof.","ratioDecidendi":"The special-knowledge rule does not relieve the prosecution of proving the facts constituting the offence; it applies to facts particularly within the person's knowledge.","holding":"The Court confined the special-knowledge rule to its proper evidentiary field.","relevance":"Historical authority for the proposition now reflected in BSA s. 109; cite the current BSA provision for current proceedings."}
   ],
-  "questionsAndAnswers": [
-    {
-      "id": "bsa-104-brief",
-      "draftingCategory": "brief",
-      "question": "Provide a structured legal brief on BSA s. 104 - Burden of proof.",
-      "answer": "I. ISSUE AND EVIDENTIARY QUESTION\nIdentify the fact in issue, the material tendered and the objection or statutory route.\n\nII. RULE\nBSA s. 104 governs burden of proof. Read it with BSA s. 103, BSA s. 105, then identify the relevancy, admissibility, proof and burden rules.\n\nIII. APPLICATION\nTest foundation, directness, privilege, documentary or electronic requirements, BSA s. 63 where applicable, and burdens under ss. 104 and 109.\n\nIV. CONCLUSION\nState whether the material is relevant, admissible, proved and what weight or procedural consequence follows.",
-      "explanation": "IRAC brief separating relevancy, admissibility, proof, burden and weight."
-    },
-    {
-      "id": "bsa-104-submissions",
-      "draftingCategory": "submissions",
-      "question": "Draft written submissions on BSA s. 104 - Burden of proof.",
-      "answer": "I. FACTUAL AND EVIDENTIARY PROVENANCE\nIdentify the witness, document, digital record, fact in issue and stage of tender.\n\nII. STATUTORY SCHEME\nDeconstruct BSA s. 104, its Chapter, connected provisions BSA s. 103, BSA s. 105 and s. 170 savings.\n\nIII. RELEVANCY AND ADMISSIBILITY\nShow the statutory connection, answer hearsay or privilege objections, establish the appropriate foundation and address BSA s. 63 for electronic records.\n\nIV. BURDEN, STANDARD AND WEIGHT\nApply BSA ss. 104 and 109 without reversing the initial burden, then distinguish admissibility from credibility and probative weight.\n\nV. PRECEDENTS AND PRAYER\nApply only relevant verified ratios and seek a precise ruling on tender, marking, exclusion, further foundation or final reliance.",
-      "explanation": "Senior Counsel written-submissions structure for BSA evidence litigation."
-    }
+  "questionsAndAnswers":[
+    {"id":"bsa-104-brief","draftingCategory":"brief","question":"Prepare a Senior Counsel brief on BSA s. 104.","answer":"ISSUE: Identify the legal right, liability, offence, defence or exception for which judgment is sought. RULE: BSA s. 104 places the legal burden on the person seeking judgment on asserted facts; read it with ss. 105–110 and any specific statutory presumption. APPLICATION: identify each proposition, its supporting evidence, the evidential onus and the applicable standard. SPECIAL KNOWLEDGE: apply s. 109 only to a specific fact genuinely within special knowledge after the necessary foundation. CONCLUSION: state which propositions have or have not been established and why."},
+    {"id":"bsa-104-submissions","draftingCategory":"submissions","question":"Draft written submissions on BSA s. 104.","answer":"I. PROPOSITION AND RELIEF SOUGHT\nIdentify the exact judgment sought.\n\nII. STATUTORY ALLOCATION\nApply BSA s. 104 and the connected burden provisions.\n\nIII. EVIDENTIAL RECORD\nSeparate admissibility, credibility and probative weight from allocation of burden.\n\nIV. PRESUMPTIONS / SPECIAL KNOWLEDGE\nIdentify the statutory foundation before relying on any presumption or s. 109.\n\nV. STANDARD AND CONCLUSION\nApply the correct civil or criminal standard and state the precise consequence of the evidential record."}
   ],
-  "bareActPointers": [
-    "BSA s. 104",
-    "BSA ss. 3, 55, 57, 63, 104 and 109 where applicable",
-    "BSA s. 170"
-  ],
-  "examTips": [
-    "Separate relevancy, admissibility, proof and probative weight.",
-    "Use the current BSA citation and historical Evidence Act numbers only as concordance.",
-    "For electronic records, analyse s. 63 certificate and foundation before weight.",
-    "State the initial burden and any statutory presumption precisely."
-  ],
-  "revisionPoints": [
-    "BSA s. 104: Burden of proof.",
-    "Identify the fact in issue and statutory relevancy link.",
-    "Check foundation, exclusion, burden, standard and weight.",
-    "Check s. 170 savings for proceedings governed by the former Evidence Act."
-  ],
-  "relatedTopics": [
-    "s-103",
-    "s-105"
-  ]
+  "bareActPointers":["BSA s. 104","BSA ss. 105–110","BSA s. 109","BSA s. 63 where electronic records are involved","BSA s. 170"],
+  "examTips":["Start with the proposition for which judgment is sought.","Separate legal burden, evidential onus and standard of proof.","Never use s. 109 as a substitute for foundational proof.","For current proceedings cite BSA; use the former Evidence Act section only as concordance or under s. 170."],
+  "revisionPoints":["s. 104 = general legal burden.","s. 105 = who would fail if no evidence were given.","Special statutory presumptions must be analysed by their own terms.","s. 109 is fact-specific special knowledge, not an unlimited reverse burden."]
 }
 
 export default content
