@@ -245,42 +245,32 @@ Generate the complete, unshortened code file now.
 
 Do not generate a shallow topic merely because the topic is represented by one statute section or one catalogue entry.
 
-Select the depth band based on legal complexity:
+### No artificial word-count rule
 
-- Foundation: 1,200–1,800 substantive words.
-- Standard: 1,800–3,000.
-- Core/high-value: 3,000–5,000.
-- Major/landmark: 5,000–8,000+ where genuinely justified.
+There is no artificial minimum or maximum word count. Determine depth from the actual legal complexity and completeness required. A topic may be short or extremely long when the subject genuinely requires it.
 
-These are minimum quality bands, not rigid word quotas. Never add filler, repeated sentences or generic boilerplate to satisfy a number.
+Never add filler, repeated sentences, generic boilerplate, or redundant case summaries to satisfy a numerical target.
 
-The generated topic must teach the student, where applicable:
+### Knowledge-completeness standard
+
+Where applicable, cover:
 1. Definition and scope.
-2. Legal source.
-3. Provenance/history.
-4. Statutory/constitutional objective.
-5. Textual anatomy.
-6. Ingredients/elements.
-7. Conditions precedent.
-8. Provisos/exceptions/explanations.
-9. Rule/test.
-10. Application to facts.
-11. Procedure.
-12. Jurisdiction.
-13. Limitation.
-14. Remedies/consequences.
-15. Defences/counterarguments.
-16. Illustrations.
-17. Hypotheticals.
-18. Distinctions.
-19. Misconceptions.
-20. Authorities.
-21. Judgment decoding.
-22. Practical/courtroom relevance.
-23. Revision points.
+2. Legal source and statutory anatomy.
+3. Historical and current-law context.
+4. Ingredients, conditions, provisos and exceptions.
+5. Rules/tests and competing interpretations.
+6. Procedure, jurisdiction, limitation and remedies.
+7. Arguments, counterarguments and factual application.
+8. Examples, illustrations and hypotheticals.
+9. Comparisons with commonly confused concepts.
+10. Authorities and source traceability.
+11. Judgment decoding.
+12. Practical significance and cross-references.
 
-For major judgments, decode progressively:
-- identification;
+### Judgment decoding
+
+For important judgments, progressively explain:
+- case identity;
 - orientation;
 - material facts;
 - procedural history;
@@ -288,22 +278,31 @@ For major judgments, decode progressively:
 - governing law;
 - parties' arguments;
 - court reasoning;
+- issue-wise findings;
 - holding;
 - ratio decidendi;
-- obiter;
+- obiter dicta;
 - final disposition;
-- significance/later treatment.
+- later treatment and present relevance.
 
-Case-depth targets:
-- ordinary relevant case: 250–500 words;
-- important authority: 500–1,000 words;
-- landmark judgment: 1,000–2,500+ words where justified.
+The reasoning chain should be made explicit where the source permits:
 
-The reasoning/application layer is mandatory. Explain:
 Rule → Fact → Legal inference → Counterargument → Court response → Finding → Conclusion.
 
-Never invent case arguments, paragraph numbers, citations, holdings or ratios.
+Never invent arguments, paragraph references, quotations, holdings, ratios or citations.
 
-When updating an existing topic, do not merely append text. Rebuild the chapter coherently: preserve accurate content, remove duplication, add missing legal layers, strengthen authorities and applications, add judgment decoding, and verify current law.
+### Existing-topic upgrade
 
-The original judgment remains authoritative. The CodePackr content is an educational companion and must preserve source/verification information.
+When updating an existing topic:
+- preserve accurate material;
+- remove duplication and boilerplate;
+- expand missing legal layers;
+- strengthen source traceability;
+- add examples/illustrations where useful;
+- add comparison links;
+- add judgment decoding;
+- update current-law status;
+- maintain coherent chapter structure.
+
+The goal is a durable legal reference chapter, not a fixed-size article.
+
