@@ -41,7 +41,7 @@ Provide the exact TypeScript snippet to be pasted into the `topics` array of the
   range: '<Section or Article reference, e.g., s. 56 or Art 21>',
   cluster: '<Thematic chapter/module cluster, e.g., Performance of Contract or Fundamental Rights>',
   note: '<One-sentence crisp scope note.>',
-  highYield: true,
+  // Core legal library metadata must not classify content as high-yield.
   hasNotes: true,
 }
 ```
