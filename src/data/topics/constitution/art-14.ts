@@ -3,7 +3,7 @@ import type { TopicContent } from '../topicTypes'
 /**
  * Article 14 — Equality before law
  * Senior Counsel & PhD standard — 5 Doctrinal Modules
- * Brief + written submissions only (no collegiate mark rubrics)
+ * Case brief + written submissions with current-law verification
  */
 export default {
   glance:
@@ -51,14 +51,14 @@ export default {
     },
     {
       id: 'art-14-module-4',
-      title: 'Evidentiary Burdens under BSA 2023 (ss. 104–106 & s. 63)',
+      title: 'Evidentiary Burdens under BSA 2023 (ss. 104–106, 109 & 63)',
       order: 4,
       content: [
         'Section 104 BSA: Whoever asserts a fact must prove it. Petitioner asserting discriminatory classification must place the impugned instrument, the class included/excluded, and comparative data where available.',
-        'Sections 105–106 BSA: Facts especially within State knowledge — internal file notings, criteria for cut-off dates, financial models for pension packages — attract an expectation that the State explain; silence supports adverse inference in writ fact-finding.',
-        'Section 63 BSA: Electronic tender portals, e-gazette notifications, and digital selection algorithms require reliable electronic proof when formally relied upon; constitutional courts still demand authenticity of digital records used to justify classification.',
+        'Sections 105–106 BSA concern the burden of proving particular facts and the effect of facts necessary to make other facts relevant; they should not be described as a general “special knowledge” rule. Section 109 BSA places the burden of proving a fact especially within a person’s knowledge on that person. In constitutional litigation, that statutory allocation may inform evidentiary analysis where the BSA applies, but it does not create a blanket rule that every internal State record must be produced or that silence automatically warrants an adverse inference.',
+        'Section 63 BSA governs admissibility of electronic records subject to its statutory conditions. Where a petitioner or State relies on electronic tender records, e-gazette material, databases, or algorithmic outputs as evidence, the record should be produced and proved in accordance with the applicable electronic-record requirements rather than treated as self-proving merely because it is digital.',
         'Presumption of constitutionality: Charanjit Lal / Dalmia line — courts start from validity; Article 14 is not a licence to re-legislate policy unless the constitutional threshold is crossed.',
-        'Standard in writs: Preponderance and constitutional scrutiny, not criminal proof beyond reasonable doubt. Statistical and documentary evidence of disparate impact strengthens the case when intent is denied.',
+        'Standard in constitutional review: a writ court does not conduct a criminal trial, and the evidentiary burden must be stated by reference to the nature of the proceeding and the material on the record. Statistical, documentary, and decision-making evidence may materially assist the Article 14 analysis where differential impact or arbitrariness is disputed.',
       ],
     },
     {
@@ -238,7 +238,7 @@ II. STATUTORY SCHEME & JURISPRUDENTIAL INTENT
 Article 14 embeds the rule of law and equal protection. It forbids class legislation while permitting scientific classification. Judicial doctrine has moved from Dalmia’s twin test to Royappa’s non-arbitrariness and Shayara Bano’s manifest arbitrariness, aligning equality with fairness and determining principle.
 
 III. SATISFACTION OF MANDATORY PROVING INGREDIENTS
-The record will show: (1) State authorship of the measure; (2) differential treatment of equals or artificial class selection; (3) absence of intelligible differentia or rational nexus; and/or (4) capricious or excessive design. Under BSA ss. 104–106, the petitioner places the instrument and comparators; the State must explain special-knowledge facts supporting the classification.
+The record will show: (1) State authorship of the measure; (2) differential treatment of equals or artificial class selection; (3) absence of intelligible differentia or rational nexus; and/or (4) capricious or excessive design. Under BSA ss. 104–106 and s. 109, where those provisions apply, the court should identify who bears the burden of the particular fact in issue rather than treating every State-held record as automatically subject to a special-knowledge burden.
 
 IV. JUDICIAL PRECEDENTS & RATIO DECIDENDI
 Dalmia: twin test. Anwar Ali Sarkar: special procedures tested against equality. Royappa: arbitrariness equals inequality. Maneka Gandhi: equality informs liberty procedures. Shayara Bano: manifest arbitrariness strikes statutes. Nakara: homogeneous pensioner class and cut-offs. Janhit Abhiyan: EWS amendment sustained within the equality code’s structured affirmative framework.
@@ -261,7 +261,7 @@ VI. PRAYER / RELIEF SOUGHT
   bareActPointers: [
     'Article 14, Constitution of India',
     'Articles 12, 15, 16, 32, 226',
-    'BSA 2023 ss. 104–106 (burden of proof); s. 63 (electronic records in tender/algorithm challenges)',
+    'BSA 2023 ss. 104–106 (general/particular burdens), s. 109 (facts especially within knowledge), and s. 63 (electronic records), where applicable to the proceeding',
   ],
 
   examTips: [
