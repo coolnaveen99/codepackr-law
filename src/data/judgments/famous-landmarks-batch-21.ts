@@ -70,12 +70,6 @@ export const FAMOUS_LANDMARKS_BATCH_21: Judgment[] = [
         citation: '(1964) 1 SCR 515',
         relationship: 'Foundational Section 74 authority applied in Maula Bux.'
       },
-      {
-        judgmentId: 'kailash-nath-associates-2015',
-        caseName: 'Kailash Nath Associates v. Delhi Development Authority',
-        citation: '(2015) 4 SCC 136',
-        relationship: 'Later Supreme Court treatment of forfeiture and reasonable compensation under Section 74.'
-      }
     ],
     examPoints: [
       'Distinguish earnest money from a performance security deposit.',
