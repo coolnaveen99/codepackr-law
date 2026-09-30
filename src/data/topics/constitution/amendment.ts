@@ -62,6 +62,9 @@ Procedural & Courtroom Anchors (Senior Counsel Checklist)
 Current-Law Position & Milestone
 Article 368 provides a flexible yet resilient amending mechanism. Current through the 106th Constitutional Amendment Act, 2023.`,
 
+Evidence and litigation anchor
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+
   sections: [
     {
       id: 'art-368-modes',
@@ -285,7 +288,8 @@ Article 368 serves as the pressure-valve of the Indian Republic. By maintaining 
     },
   ],
 
-  bareActPointers: ['Art 368', 'Art 13', 'Art 108', 'Art 279A', 'Seventh Schedule'],
+  bareActPointers: [
+    'Bharatiya Sakshya Adhiniyam, 2023 — sections 104–106, 109 and 63 where applicable','Art 368', 'Art 13', 'Art 108', 'Art 279A', 'Seventh Schedule'],
 
   examTips: [
     'Distinguish between amendments outside Article 368 (simple majority) and under Article 368 (special majority).',
