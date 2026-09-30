@@ -9,7 +9,7 @@ A declaration of fundamental rights is a mere paper guarantee without an effecti
 
 Comparative Anatomy: Article 32 vs Article 226
 1. Nature of the Right:
-   - Article 32 is itself a Fundamental Right contained in Part III. The right to move the Supreme Court for enforcement of Part III guarantees cannot be suspended except as provided in the Constitution (Article 359). The Supreme Court cannot refuse to entertain a genuine petition where a violation of a Fundamental Right is established (Romesh Thappar v. State of Madras; Prem Chand Garg v. Excise Commissioner).
+   - Article 32 is itself a Fundamental Right contained in Part III. The right to move the Supreme Court for enforcement of Part III guarantees cannot be suspended except as provided in the Constitution (Article 359). Article 32 confers a constitutional remedy for enforcement of Part III rights; the Supreme Court may issue directions, orders or writs for that purpose. The remedy is subject to the constitutional text and settled procedural principles.
    - Article 226 is a constitutional right, not a fundamental right. It is discretionary in nature, though judicial discretion is governed by settled principles.
 2. Scope of Jurisdiction:
    - Article 32 is restricted exclusively to the enforcement of Fundamental Rights in Part III. It cannot be invoked for ordinary legal, statutory, or contractual rights.
@@ -20,7 +20,7 @@ Comparative Anatomy: Article 32 vs Article 226
 
 The Doctrine of Exhaustion of Alternative Remedies
 The existence of an alternative statutory remedy (e.g. statutory appeal or tribunal) is a rule of self-restraint and discretion, NOT a rule of jurisdiction.
-In Whirlpool Corporation v. Registrar of Trade Marks (1998) 8 SCC 1 and reaffirmed in Godrej Sara Lee Ltd. v. Excise and Taxation Officer (2023), the Supreme Court laid down the four cardinal exceptions where a High Court will entertain a writ petition under Article 226 despite an alternative statutory remedy:
+In Whirlpool Corporation v. Registrar of Trade Marks (1998) 8 SCC 1, the Supreme Court identified important circumstances in which the High Court may exercise Article 226 jurisdiction despite an alternative remedy. The principle is discretionary rather than an automatic jurisdictional exception:
 1. Where the writ petition is filed for the enforcement of any of the Fundamental Rights;
 2. Where there has been a patent violation of the principles of natural justice;
 3. Where the order or proceedings are wholly without jurisdiction (coram non judice);
@@ -53,39 +53,57 @@ Through judicial craftsmanship in S.P. Gupta v. Union of India (1981) and Bandhu
 (c) Curative Petition: In Rupa Ashok Hurra v. Ashok Hurra (2002), the Supreme Court devised the curative petition under Article 32 to prevent abuse of process and gross miscarriage of justice after dismissal of a review petition.
 
 Current-Law Position & Milestone
-Articles 32 and 226 form an untouchable part of the Basic Structure (L. Chandra Kumar v. Union of India, 1997). No constitutional amendment or statutory tribunal mechanism can extinguish the High Court’s supervisory power under Article 226/227 or the Supreme Court’s power under Article 32. Current through the 106th Amendment (2023).`,
+Articles 32 and 226 form an untouchable part of the Basic Structure (L. Chandra Kumar v. Union of India, 1997). No constitutional amendment or statutory tribunal mechanism can extinguish the High Court’s supervisory power under Article 226/227 or the Supreme Court’s power under Article 32. Current constitutional framework verified against the Constitution text; no amendment-specific change to Articles 32 or 226 is asserted here.`,
 
   sections: [
     {
-      id: 'a32-226-comparison',
-      title: 'Jurisdictional Contrast: Article 32 vs Article 226',
+      id: 'a32-226-textual-architecture',
+      title: 'Constitutional Text & Jurisdictional Architecture',
       order: 1,
       content: [
-        'Article 32 is a Fundamental Right in itself; Supreme Court cannot decline genuine Part III violations.',
-        'Article 226 is broader in remedial scope: Fundamental Rights and “for any other purpose”.',
-        'Territorial jurisdiction: Supreme Court is pan-India; High Court is governed by state territory and Article 226(2) cause of action.',
+        'Article 32 is a Part III remedy before the Supreme Court for enforcement of rights conferred by Part III; Article 32(2) expressly contemplates directions, orders and writs in the nature of habeas corpus, mandamus, prohibition, quo warranto and certiorari.',
+        'Article 226 empowers every High Court, throughout its territorial jurisdiction, to issue directions, orders and writs for Part III rights and “for any other purpose”; Article 226(2) adds a cause-of-action territorial nexus.',
+        'Article 226 is therefore broader in subject matter, while Article 32 has the distinctive status of being itself a Fundamental Right.',
       ],
     },
     {
-      id: 'a32-226-whirlpool',
-      title: 'Alternative Remedy: The Whirlpool Exceptions',
+      id: 'a32-226-forum-selection',
+      title: 'Forum Selection, Territorial Nexus & Alternative Remedy',
       order: 2,
       content: [
-        'Alternative remedy is a rule of self-restraint and discretion, not jurisdiction.',
-        'Exception 1: Enforcement of Fundamental Rights.',
-        'Exception 2: Violation of Principles of Natural Justice.',
-        'Exception 3: Proceedings wholly without jurisdiction (coram non judice).',
-        'Exception 4: Challenge to the vires of an Act or Rule.',
+        'A writ strategy should identify the right invoked, the public-law duty or constitutional breach, the proper forum, and the material facts establishing territorial nexus.',
+        'Alternative statutory remedy ordinarily affects the exercise of Article 226 discretion rather than the existence of constitutional jurisdiction.',
+        'Whirlpool identifies important exceptions involving Fundamental Rights, natural justice, lack of jurisdiction, and vires challenges; later cases caution that these principles must be applied contextually rather than as a mechanical checklist.',
       ],
     },
     {
-      id: 'a32-226-writs-pil',
-      title: 'The Five Writs & Public Interest Litigation',
+      id: 'a32-226-writ-doctrine',
+      title: 'The Five Writs: Distinct Functions & Limits',
       order: 3,
       content: [
-        'Habeas Corpus (unlawful detention), Mandamus (public duty), Prohibition (preventive jurisdiction), Certiorari (curative quashing), Quo Warranto (usurped public office).',
-        'PIL & Epistolary Jurisdiction: Locus standi relaxed for underprivileged classes (S.P. Gupta; Bandhua Mukti Morcha).',
-        'Basic Structure: Judicial review under Articles 32 and 226 cannot be abrogated (L. Chandra Kumar).',
+        'Habeas corpus tests the legality of detention; mandamus compels performance of a public duty; prohibition prevents an inferior judicial/quasi-judicial body from proceeding beyond jurisdiction; certiorari reviews and may quash a completed decision on recognized public-law grounds; quo warranto tests legal entitlement to a public office.',
+        'Mandamus is not a general device for enforcing purely private contractual obligations; certiorari is not an appeal for routine reappreciation of evidence.',
+        'Quo warranto has relaxed standing because the legality of a public office is a matter of public concern, but the office and eligibility requirements must satisfy the governing legal conditions.',
+      ],
+    },
+    {
+      id: 'a32-226-pil-review',
+      title: 'PIL, Epistolary Jurisdiction & Constitutional Review',
+      order: 4,
+      content: [
+        'S.P. Gupta and Bandhua Mukti Morcha illustrate the development of relaxed standing and public-interest constitutional litigation in appropriate cases.',
+        'L. Chandra Kumar holds that judicial review by the Supreme Court under Article 32 and the High Courts under Articles 226/227 is part of the basic structure; tribunal mechanisms operate in a supplemental role and do not wholly exclude constitutional review.',
+        'PIL remains subject to bona fide purpose, judicially manageable issues, and the court’s control over maintainability and relief.',
+      ],
+    },
+    {
+      id: 'a32-226-litigation-evidence',
+      title: 'Litigation, Proof & Relief Roadmap',
+      order: 5,
+      content: [
+        'Plead the constitutional or statutory right, the impugned act or omission, jurisdictional/public-law defect, material facts, and the precise writ or consequential relief sought.',
+        'For disputed factual propositions, BSA ss. 104–106 provide the general framework on burden of proof and s. 109 addresses facts especially within the knowledge of a person; these provisions do not create a special “writ burden”.',
+        'Electronic records relied on in writ proceedings must satisfy the applicable BSA electronic-record rules, including s. 63 where its conditions apply; relief remains fact- and jurisdiction-dependent and may include quashing, mandamus, declaration, or other constitutionally permissible directions.',
       ],
     },
   ],
@@ -117,7 +135,7 @@ Articles 32 and 226 form an untouchable part of the Basic Structure (L. Chandra 
       question: 'Discuss the maintainability and merits of the writ petition. Does the petitioner require personal locus standi to seek a writ of Quo Warranto? What are the essential requirements for issuing Quo Warranto?',
       applicableLaw: 'Article 226 of the Constitution of India; Writ of Quo Warranto; University of Mysore v. C.D. Govinda Rao; Central Electricity Supply Utility v. Dhobei Sahoo.',
       analysis: '1. Nature of Quo Warranto: Quo Warranto tests whether an individual has usurped a substantive public office created by statute without possessing mandatory statutory qualifications.\n2. Locus Standi in Quo Warranto: Unlike other prerogative writs where personal injury is generally required, in Quo Warranto, any member of the public acting bona fide can approach the court. A relator need not show personal injury because public office affects the public at large (University of Mysore; Dhobei Sahoo).\n3. Essential Ingredients: (a) Office must be public and permanent; (b) Created by statute or Constitution; (c) Person must hold office without possessing eligibility criteria.\n4. Merits: X possesses only 12 years against the statutory requirement of 25 years. The appointment is contrary to mandatory statutory rules.',
-      conclusion: 'The writ petition is fully maintainable without personal locus standi. The High Court will issue a writ of Quo Warranto declaring X’s appointment illegal, declaring the office vacant, and ousting X from the chairmanship.',
+      conclusion: 'The writ petition is fully maintainable without personal locus standi. The Court would assess the statutory eligibility requirement and the legality of the appointment. If the mandatory qualification is absent and the other requirements for quo warranto are satisfied, the High Court may grant appropriate relief.',
     },
   ],
 
@@ -156,7 +174,7 @@ Articles 32 and 226 form an untouchable part of the Basic Structure (L. Chandra 
 
   questionsAndAnswers: [
     {
-      id: 'art-32-226-qa-10',
+      id: 'art-32-226-qa-brief',
       draftingCategory: 'brief',
       question: 'Compare and contrast the writ jurisdiction of the Supreme Court under Article 32 with that of the High Court under Article 226. What are the exceptions to the rule of alternative remedy?',
       answer: `I. ISSUE & CONSTITUTIONAL FRAMEWORK
@@ -183,7 +201,7 @@ While Article 32 is the sacred guardian of Fundamental Rights, Article 226 provi
       relatedProvisionIds: ['constitution-article-32', 'constitution-article-226'],
     },
     {
-      id: 'art-32-226-qa-16',
+      id: 'art-32-226-qa-submissions',
       draftingCategory: 'submissions',
       question: 'Critically examine the nature, scope, and grounds for issuing the five prerogative writs under Articles 32 and 226 of the Constitution of India. Discuss the development of Public Interest Litigation (PIL) and the Whirlpool Corporation exceptions.',
       answer: `I. INTRODUCTION & CONSTITUTIONAL PURPOSE
@@ -228,7 +246,7 @@ In Whirlpool Corporation v. Registrar of Trade Marks (1998) 8 SCC 1 and Godrej S
 4. Challenge to the vires of an Act or Rule.
 
 V. CONCLUSION & CURRENT-LAW MILESTONE
-Articles 32 and 226 stand as the ultimate ramparts protecting constitutional democracy and human freedom in India. Through progressive innovations like PIL, epistolary jurisdiction, and the Whirlpool discipline, Indian constitutional courts have ensured that the rule of law reaches the humblest citizen. Current through the 106th Amendment (2023).`,
+Articles 32 and 226 provide constitutionally entrenched mechanisms for judicial review and enforcement of rights, subject to their distinct textual limits. Through progressive innovations like PIL, epistolary jurisdiction, and the Whirlpool discipline, Indian constitutional courts have ensured that the rule of law reaches the humblest citizen. Current through the 106th Amendment (2023).`,
       explanation: 'Exhaustive CREAC essay covering the five writs, PIL evolution, Whirlpool exceptions, and basic structure doctrine.',
       relatedProvisionIds: ['constitution-article-32', 'constitution-article-226'],
     },
@@ -285,7 +303,7 @@ Articles 32 and 226 stand as the ultimate ramparts protecting constitutional dem
     },
   ],
 
-  bareActPointers: ['Art 32', 'Art 226', 'Art 227', 'Art 136', 'Art 359'],
+  bareActPointers: ['Art 32', 'Art 226', 'Art 226(2)', 'Art 227', 'Art 136', 'Art 359', 'BSA ss. 104–106', 'BSA s. 109', 'BSA s. 63'],
 
   examTips: [
     'Contrast Article 32 (Fundamental Right in Supreme Court) with Article 226 (Wider constitutional remedy in High Court).',
@@ -325,7 +343,7 @@ Articles 32 and 226 stand as the ultimate ramparts protecting constitutional dem
     'Article 226 = High Court writ power (FRs + “for any other purpose”).',
     'Four Whirlpool exceptions: FRs, Natural Justice, Jurisdiction, Vires.',
     'Five writs: Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo Warranto.',
-    'Judicial review under 32 & 226 is Basic Structure (L. Chandra Kumar).',
+    'Judicial review under Articles 32 and 226/227 is part of the Basic Structure (L. Chandra Kumar).',
   ],
 }
 
