@@ -14,8 +14,8 @@
     "audit": "npx tsx scripts/audit_subjects.ts",
     "validate:topics": "npx tsx scripts/validate_topics.ts",
     "validate:judgments": "npx tsx scripts/validate_judgments.ts",
-    "test": "npx tsx --test tests/unit.test.ts",
-    "test:run": "npx tsx --test tests/unit.test.ts"
+    "test": "npx tsx --test tests/unit.test.ts tests/content-gateway.test.ts",
+    "test:run": "npx tsx --test tests/unit.test.ts tests/content-gateway.test.ts"
   },
   "dependencies": {
     "firebase": "^12.19.0",
