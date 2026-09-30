@@ -6,13 +6,16 @@ import {
   Briefcase,
   Building2,
   Calculator,
+  ClipboardCheck,
   Copyright,
   Factory,
   FilePen,
   FileSignature,
   FileText,
   FileDiff,
+  FlaskConical,
   Gavel,
+  GitCompare,
   Handshake,
   Landmark,
   Layers,
@@ -26,6 +29,7 @@ import {
   ScrollText,
   Search,
   Shield,
+  ShieldCheck,
   Timer,
   Users,
 } from 'lucide-react'
@@ -41,6 +45,12 @@ const TOOL_ICONS: Record<string, LucideIcon> = {
   Network,
   FileDiff,
   FileText,
+  FlaskConical,
+  ShieldCheck,
+  GitCompare,
+  Briefcase,
+  ClipboardCheck,
+  Calculator,
 }
 
 const SUBJECT_ICONS: Record<string, LucideIcon> = {
