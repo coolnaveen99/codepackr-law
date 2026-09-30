@@ -243,14 +243,66 @@ Generate the complete, unshortened code file now.
 
 ## CONTENT DEPTH & JUDGMENT DECODING — MANDATORY
 
-There is no artificial minimum or maximum word count. Determine depth from actual legal complexity and completeness. Never add filler to satisfy a numerical target.
+Do not generate a shallow topic merely because the topic is represented by one statute section or one catalogue entry.
 
-Where applicable, cover definition, legal source, statutory anatomy, historical/current context, ingredients, exceptions, procedure, jurisdiction, limitation, remedies, arguments, examples, illustrations, hypotheticals, comparisons, authorities, judgment decoding, practical significance and revision points.
+### No artificial word-count rule
 
-For important judgments, explain case identity, orientation, facts, procedural history, issues, governing law, arguments, court reasoning, findings, holding, ratio, obiter, disposition, later treatment and present relevance. Make the reasoning chain explicit where supported: Rule → Fact → Legal inference → Counterargument → Court response → Finding → Conclusion.
+There is no artificial minimum or maximum word count. Determine depth from the actual legal complexity and completeness required. A topic may be short or extremely long when the subject genuinely requires it.
+
+Never add filler, repeated sentences, generic boilerplate, or redundant case summaries to satisfy a numerical target.
+
+### Knowledge-completeness standard
+
+Where applicable, cover:
+1. Definition and scope.
+2. Legal source and statutory anatomy.
+3. Historical and current-law context.
+4. Ingredients, conditions, provisos and exceptions.
+5. Rules/tests and competing interpretations.
+6. Procedure, jurisdiction, limitation and remedies.
+7. Arguments, counterarguments and factual application.
+8. Examples, illustrations and hypotheticals.
+9. Comparisons with commonly confused concepts.
+10. Authorities and source traceability.
+11. Judgment decoding.
+12. Practical significance and cross-references.
+
+### Judgment decoding
+
+For important judgments, progressively explain:
+- case identity;
+- orientation;
+- material facts;
+- procedural history;
+- issues;
+- governing law;
+- parties' arguments;
+- court reasoning;
+- issue-wise findings;
+- holding;
+- ratio decidendi;
+- obiter dicta;
+- final disposition;
+- later treatment and present relevance.
+
+The reasoning chain should be made explicit where the source permits:
+
+Rule → Fact → Legal inference → Counterargument → Court response → Finding → Conclusion.
 
 Never invent arguments, paragraph references, quotations, holdings, ratios or citations.
 
-When updating an existing topic, preserve accurate material, remove duplication and boilerplate, expand missing legal layers, strengthen source traceability, add useful examples/illustrations and judgment decoding, and verify current-law status.
+### Existing-topic upgrade
+
+When updating an existing topic:
+- preserve accurate material;
+- remove duplication and boilerplate;
+- expand missing legal layers;
+- strengthen source traceability;
+- add examples/illustrations where useful;
+- add comparison links;
+- add judgment decoding;
+- update current-law status;
+- maintain coherent chapter structure.
 
 The goal is a durable legal reference chapter, not a fixed-size article.
+
