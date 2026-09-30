@@ -338,3 +338,24 @@ Any hallucinated authority or material legal error fails the content gate regard
 
 Research → Outline → Author → Source verification → Judgment verification → Content-depth audit → Student usability review → Legal quality gate → Build → Checklist → Merge.
 
+
+
+## 16. Vercel Build Trigger Policy — MANDATORY
+
+Vercel must not run the production/preview build for documentation-only repository changes. The repository uses `scripts/vercel-ignore-build.sh` as the Vercel Ignored Build Step and `vercel.json` points to that script.
+
+### Changes that must NOT trigger a Vercel build
+- `.github/**`
+- `docs/**`
+- `prompts/**`
+- `README.md` and other `README.*` files
+- `CHANGELOG.md` and other `CHANGELOG.*` files
+
+### Changes that MUST trigger a Vercel build
+Any application, dependency, configuration, deployment, generated-output, or runtime-affecting change, including `src/**`, `public/**`, `package.json`, lockfiles, `vite.config.*`, `tsconfig*.json`, `scripts/**`, `vercel.json`, or any file not explicitly classified as documentation-only by the ignore script.
+
+### Safety rule
+If Git history is unavailable or the previous commit cannot be resolved, the ignore script MUST return exit code 1 so Vercel builds normally. Never skip a build because of uncertainty.
+
+### Verification requirement
+Verify both cases after changing this policy: documentation-only commit → Vercel build skipped; source/dependency/configuration commit → Vercel build proceeds. Do not report the policy as deployment-verified until the actual Vercel result is observed.
