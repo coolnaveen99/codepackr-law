@@ -32,16 +32,25 @@ export class CanonicalContentRepository implements ContentRepositoryContract {
     id: string,
   ): Promise<T | null> {
     const manifest = await this.getManifest()
-    if (!manifest) return null
-    const entry = manifest.entities.find((item) => item.entityType === entityType && item.id === id)
-    if (!entry || entry.status !== 'published') return null
-    const record = await this.fetchJson<T>(`${this.baseUrl}/${entry.path.replace(/^\//, '')}`)
-    if (!record || record.status !== 'published') return null
-    return record
+    if (manifest) {
+      const entry = manifest.entities.find((item) => item.entityType === entityType && item.id === id)
+      if (entry && entry.status === 'published') {
+        const record = await this.fetchJson<T>(`${this.baseUrl}/${entry.path.replace(/^\//, '')}`)
+        if (record && record.status === 'published') return record
+      }
+    }
+    return null
   }
 
   async getTopic(subjectSlug: string, topicId: string): Promise<TopicContentRecord | null> {
-    return this.get<TopicContentRecord>('topic', canonicalTopicId(subjectSlug, topicId))
+    const id = canonicalTopicId(subjectSlug, topicId)
+    const fromManifest = await this.get<TopicContentRecord>('topic', id)
+    if (fromManifest) return fromManifest
+    const record = await this.fetchJson<TopicContentRecord>(
+      `${this.baseUrl}/topics/${subjectSlug}/${topicId}.json`,
+    )
+    if (!record || record.status !== 'published' || record.id !== id) return null
+    return record
   }
 
   private async fetchJson<T>(url: string): Promise<T | null> {
