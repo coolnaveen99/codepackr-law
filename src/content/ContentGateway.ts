@@ -5,9 +5,11 @@ import { mapCanonicalTopicToLegacy } from './mapCanonicalTopic'
 import type { ContentRepository, TopicContentRecord } from './ContentRepository'
 import type { TopicContent } from '../data/topics/topicTypes'
 
-const canonicalRepository = new CanonicalContentRepository(
-  import.meta.env.VITE_LEGAL_CONTENT_BASE_URL || '/legal-content',
-)
+const DEFAULT_LEGAL_CONTENT_BASE =
+  import.meta.env.VITE_LEGAL_CONTENT_BASE_URL ||
+  'https://raw.githubusercontent.com/coolnaveen99/legal-content/main'
+
+const canonicalRepository = new CanonicalContentRepository(DEFAULT_LEGAL_CONTENT_BASE)
 
 const legacyRepository = new LegacyTopicRepository(loadTopicContent)
 
