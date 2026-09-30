@@ -7,6 +7,8 @@ export type ContentEntityType =
   | 'illustration'
   | 'source'
   | 'collection'
+  | 'sanhitaMapping'
+  | 'seoRecord'
 
 export type ContentStatus =
   | 'draft'
