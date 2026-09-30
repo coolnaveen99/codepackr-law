@@ -2,10 +2,12 @@ import type { LucideIcon } from 'lucide-react'
 import {
   AlertTriangle,
   ArrowLeftRight,
+  BookMarked,
   BookOpenCheck,
   Briefcase,
   Building2,
   Calculator,
+  CalendarDays,
   ClipboardCheck,
   Copyright,
   Factory,
@@ -19,8 +21,10 @@ import {
   Handshake,
   Landmark,
   Layers,
+  LayoutDashboard,
   Leaf,
   Library,
+  ListOrdered,
   Map,
   Megaphone,
   Monitor,
@@ -51,6 +55,13 @@ const TOOL_ICONS: Record<string, LucideIcon> = {
   Briefcase,
   ClipboardCheck,
   Calculator,
+  BookMarked,
+  CalendarDays,
+  LayoutDashboard,
+  ListOrdered,
+  Landmark,
+  Shield,
+  Search,
 }
 
 const SUBJECT_ICONS: Record<string, LucideIcon> = {
