@@ -39,6 +39,13 @@ import { LegalMaximsTool } from './components/tools/LegalMaximsTool'
 import { LandmarkCasesTool } from './components/tools/LandmarkCasesTool'
 import { DocumentCompare } from './components/tools/DocumentCompare'
 import { LegalDraftStudio } from './components/tools/LegalDraftStudio'
+import { ResearchWorkbench } from './components/tools/ResearchWorkbench'
+import { CitationVerifier } from './components/tools/CitationVerifier'
+import { JudgmentAnalyzer } from './components/tools/JudgmentAnalyzer'
+import { JudgmentCompare } from './components/tools/JudgmentCompare'
+import { CasePrepWorkbench } from './components/tools/CasePrepWorkbench'
+import { FilingChecklists } from './components/tools/FilingChecklists'
+import { LimitationCalculator } from './components/tools/LimitationCalculator'
 import { CaseLawLibrary } from './components/tools/CaseLawLibrary'
 import { KnowledgeBrowser } from './components/knowledge/KnowledgeBrowser'
 import { encodeKnowledgeId } from './data/knowledge'
@@ -93,11 +100,11 @@ export default function App() {
         setPageMeta({
           title: `${subject.name} — Topics & Notes | ${SITE_NAME}`,
           description: subject.description,
-          path: `/subject/${subject.slug}`,
+          path: `/subjects/${subject.slug}`,
           breadcrumbs: [
             { name: 'Home', path: '/' },
             { name: 'Subjects', path: '/subjects' },
-            { name: subject.name, path: `/subject/${subject.slug}` },
+            { name: subject.name, path: `/subjects/${subject.slug}` },
           ],
         })
       }
@@ -109,12 +116,12 @@ export default function App() {
         setPageMeta({
           title: `${topic.name} — ${subject.name} | ${SITE_NAME}`,
           description: topic.note || topic.name,
-          path: `/subject/${subject.slug}/topic/${topic.id}`,
+          path: `/subjects/${subject.slug}/${topic.id}`,
           breadcrumbs: [
             { name: 'Home', path: '/' },
             { name: 'Subjects', path: '/subjects' },
-            { name: subject.name, path: `/subject/${subject.slug}` },
-            { name: topic.name, path: `/subject/${subject.slug}/topic/${topic.id}` },
+            { name: subject.name, path: `/subjects/${subject.slug}` },
+            { name: topic.name, path: `/subjects/${subject.slug}/${topic.id}` },
           ],
           structuredData: buildTopicStructuredData(subject, topic),
         })
@@ -424,6 +431,13 @@ export default function App() {
               {activeTool.slug === 'landmark-cases' && <LandmarkCasesTool />}
               {activeTool.slug === 'document-compare' && <DocumentCompare />}
               {activeTool.slug === 'legal-draft-studio' && <LegalDraftStudio />}
+              {activeTool.slug === 'research-workbench' && <ResearchWorkbench />}
+              {activeTool.slug === 'citation-verifier' && <CitationVerifier />}
+              {activeTool.slug === 'judgment-analyzer' && <JudgmentAnalyzer />}
+              {activeTool.slug === 'judgment-compare' && <JudgmentCompare />}
+              {activeTool.slug === 'case-prep' && <CasePrepWorkbench />}
+              {activeTool.slug === 'filing-checklists' && <FilingChecklists />}
+              {activeTool.slug === 'limitation-calculator' && <LimitationCalculator />}
             </div>
           )}
 
