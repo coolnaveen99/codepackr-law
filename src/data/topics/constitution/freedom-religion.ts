@@ -90,40 +90,53 @@ Three Jehovah's Witness school children in Kerala were expelled for refusing to 
 
   sections: [
     {
-      id: 'rel-secularism-concept',
-      title: 'Indian Secularism: Principled Equal Regard (Sarva Dharma Sambhava)',
+      id: 'rel-textual-architecture',
+      title: 'Articles 25–28: Textual Architecture & Constitutional Limits',
       order: 1,
       content: [
-        'Secularism is an inviolable basic structure feature (S.R. Bommai v. Union of India).',
-        'Indian secularism is not anti-religious or a rigid wall of separation; it practices principled neutrality and active social reform (Arts 15(2), 17, 25(2)(b)).',
+        'Article 25 protects freedom of conscience and the profession, practice and propagation of religion, subject to public order, morality, health and the other provisions of Part III.',
+        'Article 26 protects specified denominational rights subject to public order, morality and health; Articles 27 and 28 address religious taxation and religious instruction in educational institutions.',
+        'Article 25(2) preserves State power to regulate secular activities associated with religion and to enact social-welfare and reform measures within the constitutional text.',
       ],
     },
     {
-      id: 'rel-art25-26-text',
-      title: 'Articles 25 & 26: Individual vs Collective Denominational Rights',
+      id: 'rel-denomination-erp',
+      title: 'Denominational Autonomy & Essential Religious Practices',
       order: 2,
       content: [
-        'Article 25(1) guarantees conscience, profession, practice, and propagation, subject to public order, morality, health, and other Part III rights.',
-        'Article 26 guarantees religious denominations the right to manage religious affairs and establish institutions, subject to public order, morality, and health.',
+        'Shirur Mutt treats religion as extending beyond abstract doctrine to protected religious practices, while the essential-practice inquiry examines the role of a practice within the faith.',
+        'The ERP doctrine must be applied with care: courts examine the religion’s doctrines, practices and constitutional context rather than treating every asserted custom as automatically immune.',
+        'Article 26(b) concerns management of affairs in matters of religion; secular administration of property remains subject to lawful regulation.',
       ],
     },
     {
-      id: 'rel-erp-test',
-      title: 'The Essential Religious Practices (ERP) Test & Judicial Theology',
+      id: 'rel-article27-28',
+      title: 'Articles 27 & 28: Taxation, Fees and Religious Instruction',
       order: 3,
       content: [
-        'Originated in Shirur Mutt (1954): Essentiality determined by internal doctrines of the faith.',
-        'Applied in Durgah Committee, Tandava dance, Shayara Bano (triple talaq), and Sabarimala (Indian Young Lawyers Association).',
-        'Practices violating Article 14/21 or outside essential doctrines are denied constitutional immunity.',
+        'Article 27 concerns compulsory payment of a tax specifically appropriated for promotion or maintenance of a particular religion or denomination; the tax/fee distinction matters.',
+        'Article 28(1) prohibits religious instruction in institutions wholly maintained out of State funds, subject to the specific constitutional exception in Article 28(2).',
+        'Article 28(3) protects individual choice in recognized institutions or institutions receiving State aid: attendance at religious instruction or worship cannot be compelled without the required consent.',
       ],
     },
     {
-      id: 'rel-stainislaus-bijoe',
-      title: 'Conversion, Propagation & National Anthem (Stainislaus & Bijoe Emmanuel)',
+      id: 'rel-conscience-conversion',
+      title: 'Conscience, Propagation, Conversion & Constitutional Morality',
       order: 4,
       content: [
-        'Rev. Stainislaus (1977): Art 25(1) right to propagate does NOT include a fundamental right to convert another by fraud or allurement.',
-        'Bijoe Emmanuel (1986): Right of conscience protects Jehovah\'s Witnesses standing respectfully during National Anthem.',
+        'The right to propagate religion does not automatically entail a fundamental right to convert another person; restrictions directed at force, fraud or coercive means engage both religious freedom and public-order concerns.',
+        'Bijoe Emmanuel illustrates the protection of conscience where conduct is respectful and does not itself constitute prohibited disrespect.',
+        'Sabarimala jurisprudence demonstrates the continuing tension between religious autonomy, equality, dignity and the scope of judicial review; disputed propositions should distinguish majority holdings from separate opinions and subsequent proceedings.',
+      ],
+    },
+    {
+      id: 'rel-litigation-evidence',
+      title: 'Litigation, Judicial Review & Evidentiary Roadmap',
+      order: 5,
+      content: [
+        'A constitutional challenge should identify the precise Article 25–28 protection, the religious body or individual affected, the State action, the applicable limitation clause, and the relief sought.',
+        'PIL and writ jurisdiction in religious-practice disputes require careful attention to maintainability, locus, factual foundation and institutional competence; the court may distinguish essential religious practice from secular regulation.',
+        'For disputed factual material, BSA ss. 104–106 provide the general burden framework and s. 109 addresses facts especially within a person’s knowledge. Electronic records relied upon in the proceeding must satisfy applicable BSA electronic-record requirements, including s. 63 where its conditions apply.',
       ],
     },
   ],
@@ -195,7 +208,7 @@ Three Jehovah's Witness school children in Kerala were expelled for refusing to 
 
   questionsAndAnswers: [
     {
-      id: 'rel-qa-10m',
+      id: 'rel-qa-brief',
       draftingCategory: 'brief',
       question: 'Explain the Essential Religious Practices (ERP) Test formulated by the Supreme Court of India. Discuss its origin in the Shirur Mutt case and its application in the Sabarimala decision.',
       answer: `### 1. Synopsis / Introduction
@@ -227,7 +240,7 @@ The ERP test has transformed the judiciary into an arbiter of religious dogma. W
       relatedProvisionIds: ['constitution-article-25', 'constitution-article-26'],
     },
     {
-      id: 'rel-qa-16m',
+      id: 'rel-qa-submissions',
       draftingCategory: 'submissions',
       question: '"The Indian Constitution does not erect a wall of separation between Church and State, but balances religious autonomy with transformative social justice." Critically evaluate the constitutional architecture of Freedom of Religion under Articles 25 to 28. Trace the evolution of the Essential Religious Practices doctrine and analyze whether the right to propagate includes the right to convert.',
       answer: `### 1. Introduction: The Unique Architecture of Indian Secularism
@@ -342,6 +355,9 @@ The freedom of religion under Articles 25 to 28 reflects a profound constitution
     'Art 26 — Denominational rights to manage religious affairs & property',
     'Art 27 — Prohibition of taxes for promoting specific religion',
     'Art 28 — Regulation of religious instruction in educational institutions',
+    'BSA ss. 104–106 — General burden framework for disputed facts',
+    'BSA s. 109 — Facts especially within knowledge',
+    'BSA s. 63 — Electronic records where its statutory conditions apply',
   ],
 }
 
