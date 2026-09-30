@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { Check, ChevronDown, Copy, Download, FileText, ListChecks, Printer, Search, ShieldCheck, SlidersHorizontal, Star, X } from 'lucide-react'
+import { Check, ChevronDown, Copy, Download, FileText, ListChecks, Printer, Search, ShieldCheck, SlidersHorizontal, X } from 'lucide-react'
 import { CASE_FILE_CHECKLISTS, DRAFT_TEMPLATES, type DraftTemplate } from '../../data/draft-templates'
 import { TEMPLATE_CATALOG, catalogToDraftTemplate } from '../../data/legal-template-catalog'
 import { downloadLegalDocument, printAsPdf, type ExportKind } from '../../lib/document-export'
