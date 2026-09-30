@@ -57,6 +57,9 @@ In *R.S. Joshi*, Krishna Iyer J. emphasized that "colourable legislation" is a c
   - Executive action can be quashed for malice in fact or malice in law (*mala fides*).
   - Legislative action can **never** be quashed for *mala fides*; it can only be quashed for lack of constitutional competence or violation of constitutional limitations.`,
 
+Evidence and litigation anchor
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+
   sections: [
     {
       id: 'colourable-concept',
@@ -286,6 +289,7 @@ The Doctrine of Colourable Legislation is an essential guardian of constitutiona
   ],
 
   bareActPointers: [
+    'Bharatiya Sakshya Adhiniyam, 2023 — sections 104–106, 109 and 63 where applicable',
     'Art 245 — Extent of laws made by Parliament and State Legislatures',
     'Art 246 — Distribution of subject matter across Lists I, II, and III',
     'Seventh Schedule — Legislative entries and federal boundaries',
