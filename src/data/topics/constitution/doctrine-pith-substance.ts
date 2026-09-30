@@ -58,6 +58,9 @@ The State enacted the Rajasthan Agricultural Pests and Diseases Act, restricting
 ### D. Modern Application: *Offshore Holdings Pvt. Ltd. v. Bangalore Development Authority* (2011)
 The Supreme Court reiterated that once the pith and substance of an enactment falls within the competence of the legislature, incidental encroachment on a Central subject does not invalidate the enactment, even if the subject touched upon is governed by an existing Central Act.`,
 
+Evidence and litigation anchor
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+
   sections: [
     {
       id: 'pith-substance-concept',
@@ -288,6 +291,7 @@ The Doctrine of Pith and Substance is the linchpin of Indian cooperative federal
   ],
 
   bareActPointers: [
+    'Bharatiya Sakshya Adhiniyam, 2023 — sections 104–106, 109 and 63 where applicable',
     'Art 246(1) — Exclusive legislative power of Parliament over List I',
     'Art 246(2) — Concurrent power over List III',
     'Art 246(3) — Exclusive legislative power of States over List II',
