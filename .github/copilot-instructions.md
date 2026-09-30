@@ -249,96 +249,125 @@ Never claim an item is implemented because only documentation was created.
 ## 15. Content Depth & Judgment Decoding Standard — MANDATORY
 
 The canonical content standard is:
-docs/content-depth-and-judgment-decoder-standard.md
+`docs/content-depth-and-judgment-decoder-standard.md`
 
-All new and updated student-facing legal topics must follow that standard.
+The canonical legal-content repository is:
+`coolnaveen99/legal-content`
 
-### 15.1 No shallow topic content
+### 15.1 No artificial word-count limits
 
-Do not treat a short paragraph or a few sentences as a complete legal topic.
+Content depth is determined by knowledge completeness, legal complexity, source material, and user value.
 
-Use complexity-based minimum depth:
-- Foundation topic: 1,200–1,800 substantive words.
-- Standard doctrinal/section topic: 1,800–3,000.
-- Core/high-value topic: 3,000–5,000.
-- Major/landmark topic: 5,000–8,000+ where genuinely warranted.
+Do not impose fixed minimum or maximum word counts.
 
-These are minimum quality bands, not rigid quotas. Never add filler merely to reach a number.
+A topic may appropriately be short, long, or extremely long when the subject requires it. Never add filler merely to reach a target length.
 
-### 15.2 Topic depth must be structural
+### 15.2 Structural completeness
 
-A substantive topic should cover, where applicable:
-definition, scope, legal source, provenance, statutory deconstruction, ingredients, conditions, provisos, exceptions, rule/test, application, procedure, jurisdiction, limitation, remedies, defences, counterarguments, illustrations, hypotheticals, distinctions, misconceptions, authorities, judgment decoding, practical relevance and revision.
+A substantive topic should cover applicable dimensions such as:
+- definition and scope;
+- legal source and provenance;
+- statutory deconstruction;
+- ingredients/conditions;
+- provisos and exceptions;
+- legal tests/rules;
+- procedure and jurisdiction;
+- limitation;
+- remedies and defences;
+- counterarguments;
+- factual applications;
+- illustrations and hypotheticals;
+- distinctions and misconceptions;
+- authorities;
+- judgment reasoning;
+- practical significance;
+- revision/learning aids.
 
-If a section is inapplicable, do not manufacture content; omit it deliberately.
+If a dimension is genuinely inapplicable, omit it deliberately rather than manufacturing content.
 
-### 15.3 Reasoning/application is mandatory
+### 15.3 Reasoning/application
 
-Student content must teach:
-Rule → Fact → Legal inference → Counterargument → Court response → Finding → Conclusion.
+Where applicable, teach:
 
-Do not produce topic pages that merely state rules without showing how those rules operate on facts.
+Rule → Facts → Legal inference → Counterargument → Court response → Finding → Conclusion.
 
-### 15.4 Judgment decoding
+Do not reduce legal education to rule statements without explaining how the rule operates.
 
-For important judgments, provide the progressive decoder:
-1. identification;
-2. orientation;
-3. material facts;
-4. procedural history;
-5. issues;
-6. governing law;
-7. parties' arguments;
-8. court reasoning;
-9. holding/ratio/obiter/final disposition;
-10. significance and later treatment.
+### 15.4 Judgment Decoder
 
-Do not invent arguments, paragraph references, holdings or ratios.
+Important judgments should support detailed decoding, including where applicable:
+1. case identity;
+2. court and bench;
+3. date;
+4. parties;
+5. dispute origin;
+6. original forum;
+7. procedural history;
+8. facts;
+9. parties' arguments;
+10. questions/issues;
+11. laws involved;
+12. precedents relied upon;
+13. precedents distinguished/challenged;
+14. court questions;
+15. court reasoning;
+16. step-by-step reasoning;
+17. issue-wise findings;
+18. majority reasoning;
+19. separate opinions;
+20. holding;
+21. ratio decidendi;
+22. obiter;
+23. final order;
+24. legal change;
+25. later judgments;
+26. present legal position;
+27. practical significance.
 
-### 15.5 Case-depth guidance
+Never invent arguments, authorities, paragraph numbers, page references, holdings, ratios, or procedural history.
 
-- Ordinary relevant case: approximately 250–500 words.
-- Important authority: approximately 500–1,000 words.
-- Landmark judgment: approximately 1,000–2,500+ words where justified.
+### 15.5 Visual and book/research modes
 
-The original judgment remains the authoritative source; the CodePackr version is an educational companion.
+Where useful, content should support:
+- book-style reading;
+- research-mode navigation;
+- examples;
+- hypotheticals;
+- timelines;
+- flowcharts;
+- decision trees;
+- concept maps;
+- reasoning maps;
+- visual study assets.
 
-### 15.6 Existing-topic upgrade rule
+### 15.6 Content-quality gate
 
-When updating a short topic:
-- preserve accurate content;
-- remove boilerplate/repetition;
-- add missing doctrinal layers;
-- add authoritative sources;
-- strengthen case analysis;
-- add factual applications;
-- add judgment decoding;
-- update revision points;
-- verify current law.
-
-Do not simply append paragraphs to an old shallow page.
-
-### 15.7 Content-quality gate
-
-Word count alone is never sufficient. Review:
-- accuracy;
+Word count is never a quality gate. Review:
+- legal accuracy;
 - sourceability;
 - information density;
-- doctrinal depth;
-- statutory deconstruction;
+- doctrinal completeness;
+- statutory analysis;
 - case-law reasoning;
 - practical application;
-- student clarity;
+- clarity;
 - judgment decoding;
-- revision usefulness.
+- historical/current-law distinction;
+- source provenance.
 
-Any hallucinated authority or material legal error fails the content gate regardless of length.
+Any hallucinated authority or material legal error fails the content gate regardless of content length.
 
-### 15.8 Topic generation/update workflow
+### 15.7 Content workflow
 
-Research → Outline → Author → Source verification → Judgment verification → Content-depth audit → Student usability review → Legal quality gate → Build → Checklist → Merge.
+Research → Outline → Author → Source verification → Judgment verification → Content-depth audit → Legal quality review → Publish/Update → Application validation.
 
+### 15.8 Canonical content repository rule
 
+New canonical legal-library content should be designed for `coolnaveen99/legal-content`.
+
+The application repository must not become the long-term home for large canonical legal-content datasets.
+
+Use the ContentRepository abstraction in `codepackr-law` so content can be consumed from the canonical repository without coupling UI components directly to content storage.
 
 ## 16. Vercel Build Trigger Policy — MANDATORY
 
@@ -359,3 +388,141 @@ If Git history is unavailable or the previous commit cannot be resolved, the ign
 
 ### Verification requirement
 Verify both cases after changing this policy: documentation-only commit → Vercel build skipped; source/dependency/configuration commit → Vercel build proceeds. Do not report the policy as deployment-verified until the actual Vercel result is observed.
+
+
+## 17. Canonical Legal Content Repository & Content Gateway — MANDATORY
+
+The canonical legal-content repository is:
+
+`coolnaveen99/legal-content`
+
+The application repository is:
+
+`coolnaveen99/codepackr-law`
+
+These repositories have separate responsibilities.
+
+### 17.1 Responsibility split
+
+`codepackr-law` owns:
+- application UI;
+- routes and tools;
+- Admin Portal;
+- Content Gateway integration;
+- ContentRepository abstraction;
+- validation/integration code;
+- application tests;
+- deployment configuration.
+
+`legal-content` owns:
+- canonical legal topics;
+- provisions;
+- judgments and judgment decoding;
+- doctrines;
+- comparisons;
+- illustrations;
+- sources;
+- Sanhita mappings;
+- collections;
+- SEO content metadata;
+- content manifests;
+- canonical content schemas.
+
+Do not duplicate the canonical content dataset into `codepackr-law` as the permanent architecture.
+
+### 17.2 Implementation gateway
+
+Before implementing the publishing system, read and follow:
+
+`docs/architecture/admin-content-publishing-architecture.md`
+
+The implementation gateway prompt is:
+
+`prompts/ADMIN_CONTENT_PUBLISHING_AI_PROMPT.md`
+
+The legal-content repository implementation checklist is maintained in:
+
+`legal-content/docs/IMPLEMENTATION-CHECKLIST.md`
+
+### 17.3 Required application architecture
+
+The application must use a repository abstraction:
+
+`TopicDetail → ContentRepository → Content Gateway → legal-content`
+
+During migration, a legacy adapter may remain:
+
+`ContentRepository → Canonical Legal Content`
+`                   ↘ Legacy Content Adapter`
+
+The legacy adapter exists only to preserve application continuity during migration and must not become a reason to abandon the canonical repository architecture.
+
+### 17.4 Content access rules
+
+- Prefer the canonical manifest to discover published content.
+- Load content by stable canonical ID.
+- Respect content version and publication status.
+- Validate entity references.
+- Preserve source/provenance metadata.
+- Distinguish historical and current legal content.
+- Do not silently substitute stale content for current content.
+- Handle missing/unpublished content explicitly.
+- Never invent missing legal content.
+
+### 17.5 Publishing boundary
+
+The intended publishing flow is:
+
+Admin Portal → Auth/Authz → Content Gateway → Schema/Legal Metadata Validation → Git Branch/PR → CI Validation → Review/Approval → Merge → Build → Deployment.
+
+Do not allow an Admin UI to directly bypass validation and publish arbitrary content.
+
+### 17.6 Content repository checklist
+
+When working on repository integration, verify the active checklist in `legal-content/docs/IMPLEMENTATION-CHECKLIST.md`.
+
+A checklist item is complete only when implementation and verification evidence exist.
+
+Never mark the checklist complete merely because a file, schema, route, or prompt has been created.
+
+### 17.7 Repository naming
+
+The canonical repository name is `legal-content`.
+
+Do not introduce `codepackr-law-content` as a repository name, package name, path, or integration identifier.
+
+### 17.8 Migration rule
+
+Do not migrate all existing legal content in one uncontrolled operation.
+
+Use:
+1. inventory;
+2. canonical entity mapping;
+3. source verification;
+4. transformation;
+5. schema validation;
+6. reference validation;
+7. parity testing;
+8. application integration;
+9. controlled rollout.
+
+Only remove legacy content after verified parity and an explicit migration decision.
+
+### 17.9 No artificial content limits
+
+The content repository must not introduce artificial word-count limits. Sharding and file-size decisions are technical concerns and must be based on measured repository/runtime performance, not arbitrary content-length quotas.
+
+### 17.10 Completion reporting
+
+For Content Gateway/legal-content work, report:
+- changed repository;
+- changed files;
+- schema/contract changes;
+- checklist items completed;
+- validation/tests actually run;
+- build result;
+- PR/commit;
+- deployment status;
+- remaining migration/integration work.
+
+Never claim `legal-content` integration is complete until the application actually consumes validated canonical content successfully.
