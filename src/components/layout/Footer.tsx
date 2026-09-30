@@ -19,11 +19,12 @@ export function Footer({ onOpenContact }: FooterProps) {
               </span>
             </div>
             <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-3">
-              Digital law library &amp; practice reference for AIBE, Judiciary, and advocates — statutory treatises, extracted case law ratios, and chamber drafting.
+              Digital law library &amp; practice reference for AIBE, Judiciary, and advocates — statutory treatises,
+              extracted case law ratios, and chamber drafting.
             </p>
             <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-rose-700 dark:text-rose-300 bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 px-2.5 py-1 rounded-full">
               <ShieldCheck className="w-3.5 h-3.5" />
-              Stays on this device
+              Stays on this device · free educational core
             </span>
           </div>
 
@@ -90,8 +91,9 @@ export function Footer({ onOpenContact }: FooterProps) {
 
         <div className="pt-8 border-t border-slate-100 dark:border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>© 2026 Codepackr Law. All rights reserved.</p>
-          <p className="text-center sm:text-right">
-            Educational utility. Statutory text is for study, not legal advice.
+          <p className="text-center sm:text-right max-w-md">
+            Educational utility — not legal advice. Free educational core; no proprietary headnotes. Prefer official
+            sources.
           </p>
         </div>
       </div>
