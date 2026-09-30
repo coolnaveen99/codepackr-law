@@ -57,6 +57,9 @@ Procedural & Courtroom Anchors (Senior Counsel Checklist)
 Current-Law Position & Milestone
 Federalism is an essential feature of the Basic Structure. The 101st Amendment (GST) and recent Supreme Court jurisprudence (NCT of Delhi; Mohit Minerals) reaffirm the centrality of collaborative and cooperative federalism. Current through the 106th Amendment (2023).`,
 
+Evidence and litigation anchor
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+
   sections: [
     {
       id: 'centre-state-legislative',
@@ -274,7 +277,8 @@ India is not a traditional classical federation, but a dynamic, asymmetric coope
     },
   ],
 
-  bareActPointers: ['Art 245', 'Art 246', 'Art 248', 'Art 254', 'Art 262', 'Art 279A', 'Art 131', 'Seventh Schedule'],
+  bareActPointers: [
+    'Bharatiya Sakshya Adhiniyam, 2023 — sections 104–106, 109 and 63 where applicable','Art 245', 'Art 246', 'Art 248', 'Art 254', 'Art 262', 'Art 279A', 'Art 131', 'Seventh Schedule'],
 
   examTips: [
     'Always distinguish Article 246 ultra vires (lack of competence) from Article 254 repugnancy (Concurrent List conflict).',
