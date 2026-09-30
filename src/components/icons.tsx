@@ -29,6 +29,8 @@ import {
   Megaphone,
   Monitor,
   Network,
+  Package,
+  BarChart3,
   Scale,
   ScrollText,
   Search,
@@ -47,6 +49,8 @@ const TOOL_ICONS: Record<string, LucideIcon> = {
   Scale,
   Library,
   Network,
+  Package,
+  BarChart3,
   FileDiff,
   FileText,
   FlaskConical,
@@ -62,6 +66,7 @@ const TOOL_ICONS: Record<string, LucideIcon> = {
   Landmark,
   Shield,
   Search,
+  Building2,
 }
 
 const SUBJECT_ICONS: Record<string, LucideIcon> = {
