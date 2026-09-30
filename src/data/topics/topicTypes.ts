@@ -8,6 +8,7 @@ export interface TopicSection {
 }
 
 export interface TopicProvision {
+  id?: string
   actId: string
   actName: string
   provisionId: string
@@ -20,7 +21,7 @@ export interface TopicExample {
   id: string
   title?: string
   description: string
-  illustrationType?: 'statutory' | 'practical' | 'fail-scenario'
+  illustrationType?: 'statutory' | 'practical' | 'fail-scenario' | 'statutory-practical'
 }
 
 export interface TopicQuestionAnswer {

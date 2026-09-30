@@ -70,14 +70,5 @@ export interface ContentRepository {
 
 export interface TopicContentRecord extends ContentEnvelope {
   entityType: 'topic'
-  content: {
-    overview?: string
-    sections?: Array<{ heading: string; body: string; order?: number }>
-    examples?: Array<{ title: string; body: string }>
-    hypotheticals?: Array<{ question: string; analysis: string }>
-    relatedJudgments?: string[]
-    relatedTopics?: string[]
-    illustrations?: string[]
-    [key: string]: unknown
-  }
+  content: Record<string, any>
 }

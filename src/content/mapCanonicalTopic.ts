@@ -14,17 +14,17 @@ export function mapCanonicalTopicToLegacy(record: TopicContentRecord): TopicCont
   const examples: TopicExample[] | undefined = Array.isArray(content.examples)
     ? content.examples.map((example, index) => ({
         id: `canonical-example-${index + 1}`,
-        title: example.title,
-        description: example.body,
-        illustrationType: 'practical',
+        title: typeof example.title === 'string' ? example.title : undefined,
+        description: typeof example.body === 'string' ? example.body : (typeof example.description === 'string' ? example.description : ''),
+        illustrationType: 'practical' as const,
       }))
     : undefined
 
   const hypotheticals: TopicHypothetical[] | undefined = Array.isArray(content.hypotheticals)
     ? content.hypotheticals.map((item, index) => ({
         id: `canonical-hypothetical-${index + 1}`,
-        question: item.question,
-        analysis: item.analysis,
+        question: typeof item.question === 'string' ? item.question : '',
+        analysis: typeof item.analysis === 'string' ? item.analysis : '',
       }))
     : undefined
 

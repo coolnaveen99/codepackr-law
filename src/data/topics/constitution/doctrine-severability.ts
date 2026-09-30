@@ -54,10 +54,10 @@ The Constitution (Fifty-Second Amendment) Act, 1985 inserted the Tenth Schedule 
 - A 5-judge Constitution Bench held Paragraph 7 unconstitutional. However, applying the Doctrine of Severability, the Court ruled that Paragraph 7 was severable from the rest of the Tenth Schedule. The remaining provisions disqualifying defectors were fully preserved and remain in force today.
 
 ### D. Severing Unconstitutional Amendments in *Minerva Mills v. Union of India* (1980)
-Sections 4 and 55 of the Constitution (Forty-Second Amendment) Act, 1976 sought to give blanket immunity to all Directive Principles over Fundamental Rights and extinguish judicial review of constitutional amendments. The Supreme Court severed and struck down Sections 4 and 55 as destructive of the basic structure, while preserving the other provisions of the 42nd Amendment.`,
+Sections 4 and 55 of the Constitution (Forty-Second Amendment) Act, 1976 sought to give blanket immunity to all Directive Principles over Fundamental Rights and extinguish judicial review of constitutional amendments. The Supreme Court severed and struck down Sections 4 and 55 as destructive of the basic structure, while preserving the other provisions of the 42nd Amendment.
 
 Evidence and litigation anchor
-For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.`,
 
   sections: [
     {

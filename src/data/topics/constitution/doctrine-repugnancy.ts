@@ -81,10 +81,10 @@ In *Zaverbhai Amaidas v. State of Bombay* (1954 2 SCR 799):
 - The Essential Supplies Act, 1946 (Central Act) prescribed a penalty of 3 years for hoarding foodgrains.
 - The Bombay Legislature enacted an amendment prescribing 7 years imprisonment with mandatory whipping, and obtained **Presidential Assent under Article 254(2)**. The Bombay Act validly superseded the Central Act in Bombay.
 - In 1950, Parliament enacted a fresh amendment to the Essential Supplies Act prescribing a uniform maximum penalty of 3 years across India.
-- The Supreme Court held that by virtue of the **proviso to Article 254(2)**, Parliament\'s 1950 amendment superseded the Bombay Act, restoring uniform federal law.`,
+- The Supreme Court held that by virtue of the **proviso to Article 254(2)**, Parliament\'s 1950 amendment superseded the Bombay Act, restoring uniform federal law.
 
 Evidence and litigation anchor
-For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.`,
 
   sections: [
     {

@@ -66,10 +66,10 @@ An illiterate widow\'s agricultural land was taken over by the State in 1967 for
 - The Court exercised its Article 142 plenary powers, directing the State to pay full market compensation, solatium, and interest under the modern Land Acquisition Act, along with substantial legal costs.
 
 ### B. *Sukh Dutt Ratra v. State of Himachal Pradesh* (2022) 7 SCC 508
-The Court reaffirmed *Vidya Devi*, holding that the State cannot act as a "trespasser or land-grabber". The doctrine of adverse possession or delay cannot be invoked by the democratic State against its own citizens to legitimize illegal expropriations.`,
+The Court reaffirmed *Vidya Devi*, holding that the State cannot act as a "trespasser or land-grabber". The doctrine of adverse possession or delay cannot be invoked by the democratic State against its own citizens to legitimize illegal expropriations.
 
 Evidence and litigation anchor
-For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.`,
 
   sections: [
     {

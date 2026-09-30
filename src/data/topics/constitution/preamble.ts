@@ -45,10 +45,10 @@ Procedural & Courtroom Anchors (Senior Counsel Checklist)
 4. Review Standard: Statutes or constitutional amendments violating the core values enshrined in the Preamble (secularism, democracy, republicanism) can be struck down as violative of the Basic Structure Doctrine.
 
 Current-Law Position & Milestone
-The Preamble was amended once by the 42nd Constitutional Amendment Act, 1976 (inserting “Socialist”, “Secular”, and “and integrity”). Upheld as valid in Kesavananda and Bommai. Current through the 106th Amendment (2023).`,
+The Preamble was amended once by the 42nd Constitutional Amendment Act, 1976 (inserting “Socialist”, “Secular”, and “and integrity”). Upheld as valid in Kesavananda and Bommai. Current through the 106th Amendment (2023).
 
 Evidence and litigation anchor
-For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.`,
 
   sections: [
     {

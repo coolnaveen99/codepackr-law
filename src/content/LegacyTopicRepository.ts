@@ -27,9 +27,12 @@ export class LegacyTopicRepository implements ContentRepository {
     return null
   }
 
-  async get(entityType: import('./contentTypes').ContentEntityType, id: string) {
+  async get<T extends import('./contentTypes').ContentEnvelope = import('./contentTypes').ContentEnvelope>(
+    entityType: import('./contentTypes').ContentEntityType,
+    id: string,
+  ): Promise<T | null> {
     if (entityType !== 'topic') return null
     const [, subjectSlug, topicId] = id.split(':')
-    return this.getTopic(subjectSlug ?? '', topicId ?? '')
+    return (await this.getTopic(subjectSlug ?? '', topicId ?? '')) as T | null
   }
 }

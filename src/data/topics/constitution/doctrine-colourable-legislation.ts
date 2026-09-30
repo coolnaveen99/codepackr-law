@@ -55,10 +55,10 @@ In *R.S. Joshi*, Krishna Iyer J. emphasized that "colourable legislation" is a c
   - *Colourable Legislation* asks: "Has the legislature disguised an unconstitutional usurpation of power under the cloak of a legitimate entry?"
 - **Colourable Legislation vs. Mala Fides:**
   - Executive action can be quashed for malice in fact or malice in law (*mala fides*).
-  - Legislative action can **never** be quashed for *mala fides*; it can only be quashed for lack of constitutional competence or violation of constitutional limitations.`,
+  - Legislative action can **never** be quashed for *mala fides*; it can only be quashed for lack of constitutional competence or violation of constitutional limitations.
 
 Evidence and litigation anchor
-For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.`,
 
   sections: [
     {

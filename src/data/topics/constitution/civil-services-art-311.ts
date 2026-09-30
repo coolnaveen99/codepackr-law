@@ -91,10 +91,10 @@ In *Union of India v. Tulsiram Patel* (1985) 3 SCC 398, a 5-judge Constitution B
 3. **Judicial Review of Proviso (b) and (c):**
    - The court cannot question the wisdom of the decision, but can scrutinize whether **objective reasons were recorded** under Proviso (b).
    - If the recorded reasons are arbitrary, extraneous, or non-existent, the court will quash the dismissal order as a colourable exercise of power.
-   - Under Proviso (c), the Court can inspect government intelligence files in camera to verify that material concerning the security of the State existed.`,
+   - Under Proviso (c), the Court can inspect government intelligence files in camera to verify that material concerning the security of the State existed.
 
 Evidence and litigation anchor
-For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.`,
 
   sections: [
     {

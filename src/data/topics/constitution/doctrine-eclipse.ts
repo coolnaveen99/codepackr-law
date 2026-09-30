@@ -55,10 +55,10 @@ In *Ambica Mills*, the Supreme Court introduced a critical refinement:
 - The Bombay Labour Welfare Fund Act, 1953 (a post-Constitution law) was challenged by a company on the ground that it violated Article 19(1)(f).
 - The Supreme Court held that companies and corporations are not "citizens" under Article 19 and cannot claim Article 19 fundamental rights.
 - Therefore, a post-Constitution law violating an Article 19 right is **not still-born for all purposes**. It is void only *vis-à-vis citizens*. As against non-citizens, corporations, and foreigners, the law was never void and remains completely operative.
-- Hence, the law remains dormant (eclipsed) only in relation to citizens, demonstrating a modified application of dormancy even to post-Constitution statutes.`,
+- Hence, the law remains dormant (eclipsed) only in relation to citizens, demonstrating a modified application of dormancy even to post-Constitution statutes.
 
 Evidence and litigation anchor
-For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.`,
 
   sections: [
     {

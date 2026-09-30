@@ -56,10 +56,10 @@ Procedural & Courtroom Anchors (Senior Counsel Checklist)
 3. The Golden Triangle: In any challenge to state deprivation of liberty or property, plead Articles 14, 19, and 21 together (Maneka Gandhi).
 
 Current-Law Position & Milestone
-Part III embodies transformative constitutionalism. Recent expansions include the Right to Privacy (Puttaswamy, 2017), decriminalization of consensual same-sex relations (Navtej Johar, 2018), striking down of adultery (Joseph Shine, 2019), and EWS quota validity (Janhit Abhiyan, 2022). Current through the 106th Amendment (2023).`,
+Part III embodies transformative constitutionalism. Recent expansions include the Right to Privacy (Puttaswamy, 2017), decriminalization of consensual same-sex relations (Navtej Johar, 2018), striking down of adultery (Joseph Shine, 2019), and EWS quota validity (Janhit Abhiyan, 2022). Current through the 106th Amendment (2023).
 
 Evidence and litigation anchor
-For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.`,
 
   sections: [
     {

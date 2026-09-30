@@ -56,10 +56,10 @@ The State enacted the Rajasthan Agricultural Pests and Diseases Act, restricting
 - The Supreme Court held that the pith and substance was the preservation of "public health" (Entry 6, List II). The regulation of amplifiers was an incidental encroachment necessary to suppress noise pollution.
 
 ### D. Modern Application: *Offshore Holdings Pvt. Ltd. v. Bangalore Development Authority* (2011)
-The Supreme Court reiterated that once the pith and substance of an enactment falls within the competence of the legislature, incidental encroachment on a Central subject does not invalidate the enactment, even if the subject touched upon is governed by an existing Central Act.`,
+The Supreme Court reiterated that once the pith and substance of an enactment falls within the competence of the legislature, incidental encroachment on a Central subject does not invalidate the enactment, even if the subject touched upon is governed by an existing Central Act.
 
 Evidence and litigation anchor
-For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.`,
 
   sections: [
     {

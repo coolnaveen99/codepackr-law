@@ -6,7 +6,7 @@ import type {
   TopicContentRecord,
 } from './contentTypes'
 
-export type { ContentRepositoryContract as ContentRepository }
+export type { ContentRepositoryContract as ContentRepository, TopicContentRecord }
 
 export function canonicalTopicId(subjectSlug: string, topicId: string): string {
   return `topic:india:${subjectSlug}-${topicId}`

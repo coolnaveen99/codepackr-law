@@ -140,7 +140,8 @@ describe('Unit Tests: Progress & Local Storage Simulation', () => {
 describe('Unit Tests: 3 Sanhita Mappers (BNS, BNSS, BSA)', () => {
   it('contains dedicated tools for BNS, BNSS, and BSA in TOOLS catalog under bare-acts', () => {
     const bareActTools = TOOLS.filter((t) => t.category === 'bare-acts')
-    assert.strictEqual(bareActTools.length, 3, 'Should have exactly 3 Sanhita mapper tools')
+    const mapperTools = bareActTools.filter((t) => t.slug.endsWith('-mapper'))
+    assert.strictEqual(mapperTools.length, 3, 'Should have exactly 3 Sanhita mapper tools')
 
     const bnsTool = bareActTools.find((t) => t.slug === 'bns-ipc-mapper')
     assert.ok(bnsTool, 'BNS mapper tool must exist')

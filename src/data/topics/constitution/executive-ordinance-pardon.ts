@@ -92,10 +92,10 @@ A Congress party worker convicted of murder had his 10-year sentence remitted by
 4. **Arbitrariness, political favoritism, caste, or religious bias.**
 
 ### D. Inordinate Delay and Article 21: *Shatrughan Chauhan v. Union of India* (2014) 3 SCC 1
-A 3-judge Bench held that **unexplained, inordinate, and unreasonable delay** by the Executive in deciding a mercy petition of a death row convict constitutes cruel and inhuman treatment violating **Article 21**. Such prolonged delay is a supervening circumstance justifying the **automatic commutation of the death sentence to life imprisonment**.`,
+A 3-judge Bench held that **unexplained, inordinate, and unreasonable delay** by the Executive in deciding a mercy petition of a death row convict constitutes cruel and inhuman treatment violating **Article 21**. Such prolonged delay is a supervening circumstance justifying the **automatic commutation of the death sentence to life imprisonment**.
 
 Evidence and litigation anchor
-For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.`,
 
   sections: [
     {

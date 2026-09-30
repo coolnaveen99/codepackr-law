@@ -55,10 +55,10 @@ Indian constitutional law recognizes that there can be **no estoppel against the
 ---
 
 ## 4. Nuance: Statutory Rights vs. Fundamental Rights
-While Fundamental Rights in Part III cannot be waived, a citizen is fully entitled to waive a purely statutory right, a procedural benefit in a contract, or a private tortious claim created exclusively for his personal benefit, provided such waiver does not violate public policy under Section 23 of the Indian Contract Act, 1872 (*Krishna Bahadur v. Purna Theatre*, 2004).`,
+While Fundamental Rights in Part III cannot be waived, a citizen is fully entitled to waive a purely statutory right, a procedural benefit in a contract, or a private tortious claim created exclusively for his personal benefit, provided such waiver does not violate public policy under Section 23 of the Indian Contract Act, 1872 (*Krishna Bahadur v. Purna Theatre*, 2004).
 
 Evidence and litigation anchor
-For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.`,
 
   sections: [
     {
