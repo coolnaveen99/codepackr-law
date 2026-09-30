@@ -46,6 +46,14 @@ import { JudgmentCompare } from './components/tools/JudgmentCompare'
 import { CasePrepWorkbench } from './components/tools/CasePrepWorkbench'
 import { FilingChecklists } from './components/tools/FilingChecklists'
 import { LimitationCalculator } from './components/tools/LimitationCalculator'
+import { TransitionCentre } from './components/tools/TransitionCentre'
+import { CaseBriefBuilder } from './components/tools/CaseBriefBuilder'
+import { StudyPlanner } from './components/tools/StudyPlanner'
+import { PracticeDashboard } from './components/tools/PracticeDashboard'
+import { CauseListOrganizer } from './components/tools/CauseListOrganizer'
+import { PrimarySourceFinder } from './components/tools/PrimarySourceFinder'
+import { PrivacyControls } from './components/tools/PrivacyControls'
+import { GlobalSearchPanel } from './components/tools/GlobalSearchPanel'
 import { CaseLawLibrary } from './components/tools/CaseLawLibrary'
 import { KnowledgeBrowser } from './components/knowledge/KnowledgeBrowser'
 import { encodeKnowledgeId } from './data/knowledge'
@@ -438,6 +446,14 @@ export default function App() {
               {activeTool.slug === 'case-prep' && <CasePrepWorkbench />}
               {activeTool.slug === 'filing-checklists' && <FilingChecklists />}
               {activeTool.slug === 'limitation-calculator' && <LimitationCalculator />}
+              {activeTool.slug === 'transition-centre' && <TransitionCentre />}
+              {activeTool.slug === 'case-brief-builder' && <CaseBriefBuilder />}
+              {activeTool.slug === 'study-planner' && <StudyPlanner />}
+              {activeTool.slug === 'practice-dashboard' && <PracticeDashboard />}
+              {activeTool.slug === 'cause-list-organizer' && <CauseListOrganizer />}
+              {activeTool.slug === 'primary-source-finder' && <PrimarySourceFinder />}
+              {activeTool.slug === 'privacy-controls' && <PrivacyControls />}
+              {activeTool.slug === 'global-search' && <GlobalSearchPanel />}
             </div>
           )}
 
