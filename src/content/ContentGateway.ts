@@ -1,7 +1,9 @@
 import { CanonicalContentRepository } from './ContentRepository'
 import { LegacyTopicRepository } from './LegacyTopicRepository'
 import { loadTopicContent } from '../data/topics/loadTopicContent'
+import { mapCanonicalTopicToLegacy } from './mapCanonicalTopic'
 import type { ContentRepository, TopicContentRecord } from './ContentRepository'
+import type { TopicContent } from '../data/topics/topicTypes'
 
 const canonicalRepository = new CanonicalContentRepository(
   import.meta.env.VITE_LEGAL_CONTENT_BASE_URL || '/legal-content',
@@ -15,13 +17,27 @@ export function configureContentRepository(next: ContentRepository): void {
   repository = next
 }
 
+export function getContentRepository(): ContentRepository {
+  return repository
+}
+
 export async function getTopicContent(subjectSlug: string, topicId: string): Promise<TopicContentRecord | null> {
   const canonical = await repository.getTopic(subjectSlug, topicId)
-  if (canonical) return canonical
-
+  if (canonical && canonical.status === 'published') {
+    const mapped = mapCanonicalTopicToLegacy(canonical)
+    return {
+      ...canonical,
+      content: {
+        ...canonical.content,
+        ...mapped,
+      },
+    }
+  }
   return legacyRepository.getTopic(subjectSlug, topicId)
 }
 
-export function getContentRepository(): ContentRepository {
-  return repository
+export async function getLegacyCompatibleTopic(subjectSlug: string, topicId: string): Promise<TopicContent | null> {
+  const record = await getTopicContent(subjectSlug, topicId)
+  if (!record) return null
+  return mapCanonicalTopicToLegacy(record)
 }
