@@ -10,7 +10,7 @@ export const FAMOUS_LANDMARKS_BATCH_22: Judgment[] = [
     year: 2015,
     judgmentDate: '2015-01-09',
     citation: '(2015) 4 SCC 136',
-    neutralCitation: 'AIR 2015 SC 136',
+    neutralCitation: 'AIR 2015 SC (SUPP) 780',
     bench: 'Two-Judge Bench',
     judges: ['Ranjan Gogoi', 'Rohinton Fali Nariman'],
     subject: 'Contract Law',
