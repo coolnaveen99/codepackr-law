@@ -1,159 +1,19 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  "study": "Introduction and meaning\nSnatching, new. Theft by suddenly, quickly or forcibly seizing or taking away movable property from any person. Up to 3 years and fine. The phone-and-chain offence, given its own name.\nIn student language: BNS s. 304 is the rule on “Snatching”. The section provides that (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 304 exists so that “Snatching” has a closed legal test in Chapter XVII — Of Offences Against Property. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Theft, snatching, extortion, robbery, dacoity, trust, cheating, mischief, trespass.\n\nThe provision in detail\n304. (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property\n\n(2) Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine\n\nEssential ingredients\n1. (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property\n2. (2) Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine\n\nPunishment / legal consequence\nUp to 3 years + fine.",
-  "glance": "BNS s. 304 — Snatching.",
-  "sections": [
-    {
-      "id": "bns-304-rule",
-      "title": "The legal rule",
-      "order": 1,
-      "content": [
-        "304. (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property",
-        "(2) Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine"
-      ]
-    },
-    {
-      "id": "bns-304-ing",
-      "title": "Essential ingredients",
-      "order": 2,
-      "content": [
-        "(1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property",
-        "(2) Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine"
-      ]
-    }
-  ],
-  "examples": [
-    {
-      "id": "bns-304-ex-1",
-      "title": "Example 1 — simple (teaching example)",
-      "description": "A short everyday fact pattern is tested against “Snatching”. Name BNS s. 304, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
-    },
-    {
-      "id": "bns-304-ex-2",
-      "title": "Example 2 — practical application / distinction (teaching example)",
-      "description": "Change one ingredient so that BNS s. 304 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
-    }
-  ],
-  "hypotheticals": [
-    {
-      "id": "bns-304-hypo",
-      "title": "Chamber Practice Hypothetical",
-      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Snatching” under BNS s. 304 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
-      "question": "Whether BNS s. 304 (Snatching) applies, and how structured written arguments should be framed.",
-      "applicableLaw": "BNS s. 304. Chapter XVII — Of Offences Against Property. Connected: BNS s. 303.",
-      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 304 (Snatching), Chapter XVII — Of Offences Against Property.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property\n   (2) (2) Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 304 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 304 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
-      "conclusion": "The result depends on proof of the ingredients of BNS s. 304. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
-    }
-  ],
-  "distinctions": [
-    {
-      "id": "bns-304-dist",
-      "title": "BNS s. 304 and connected sections",
-      "left": "BNS s. 304",
-      "right": "BNS s. 303",
-      "rows": [
-        {
-          "point": "Heading",
-          "left": "Snatching",
-          "right": "Read the neighbour’s title on its own page before you write."
-        },
-        {
-          "point": "What you must prove",
-          "left": "(1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property",
-          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
-        },
-        {
-          "point": "Practice trap",
-          "left": "Citing a neighbour as if it were s. 304.",
-          "right": "Citing s. 304 where the neighbour actually applies."
-        }
-      ]
-    }
-  ],
-  "misconceptions": [
-    {
-      "id": "bns-304-trap-1",
-      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
-      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 304."
-    },
-    {
-      "id": "bns-304-trap-2",
-      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
-      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
-    },
-    {
-      "id": "bns-304-trap-3",
-      "trap": "Giving a one-line summary or shortened explanation of the provision.",
-      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
-    }
-  ],
-  "questionsAndAnswers": [
-    {
-      "id": "bns-304-q-brief",
-      "draftingCategory": "brief",
-      "question": "Legal Assessment & Statutory Note: BNS s. 304 (Snatching)",
-      "answer": "Introduction. BNS s. 304 deals with Snatching. It sits in Chapter XVII — Of Offences Against Property of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Snatching, new. Theft by suddenly, quickly or forcibly seizing or taking away movable property from any person. Up to 3 years and fine. The phone-and-chain offence, given its own name.\n\nLegal rule. In student language: BNS s. 304 is the rule on “Snatching”. The section provides that (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property\n2. (2) Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 304. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Up to 3 years + fine.\n\nConnected sections. Read with BNS s. 303. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 304 is the complete current-law heading for Snatching. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
-      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
-    },
-    {
-      "id": "bns-304-q-submissions",
-      "draftingCategory": "submissions",
-      "question": "Comprehensive Written Submissions: BNS s. 304 (Snatching) with Statutory Scheme & Judicial Analysis",
-      "answer": "Introduction. BNS s. 304 deals with Snatching. It sits in Chapter XVII — Of Offences Against Property of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Snatching, new. Theft by suddenly, quickly or forcibly seizing or taking away movable property from any person. Up to 3 years and fine. The phone-and-chain offence, given its own name.\n\nLegal rule. In student language: BNS s. 304 is the rule on “Snatching”. The section provides that (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property\n2. (2) Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 304. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Up to 3 years + fine.\n\nConnected sections. Read with BNS s. 303. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 304 is the complete current-law heading for Snatching. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Theft, snatching, extortion, robbery, dacoity, trust, cheating, mischief, trespass.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 304 with BNS s. 303. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 304.”",
-      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
-    }
-  ],
-  "cases": [],
-  "examTips": [
-    "Cite BNS s. 304 for offences on or after 1 July 2024.",
-    "Ingredients first, illustration second, application third, conclusion last.",
-    "304 is snatching, not culpable homicide. (IPC 304 was culpable homicide — that is now s. 105. This number-collision is a favourite trap.)"
-  ],
-  "examFrameworks": [
-    {
-      "question": "Structured Legal Assessment: BNS s. 304 (Snatching).",
-      "steps": [
-        "Introduce BNS s. 304 and Chapter XVII — Of Offences Against Property.",
-        "Define / state the meaning in your own words.",
-        "List the essential ingredients.",
-        "Give one labelled example and map it to an ingredient.",
-        "State any express condition.",
-        "Apply in four to six sentences.",
-        "Conclude with the current citation — BNS s. 304."
-      ]
-    },
-    {
-      "question": "Comprehensive Chamber Written Submissions: BNS s. 304 with connected statutory scheme.",
-      "steps": [
-        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
-        "Place the section in the Chapter and explain why the heading exists.",
-        "Work a second hypothetical in which one ingredient fails.",
-        "Distinguish BNS s. 304 from BNS s. 303.",
-        "IRAC application to the problem facts.",
-        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
-        "Current-law conclusion."
-      ]
-    }
-  ],
-  "answerSkeleton": [
-    "Introduction — BNS s. 304, Snatching.",
-    "Meaning and definition.",
-    "Ingredients.",
-    "Illustration mapped to an ingredient.",
-    "Explanation / exception.",
-    "Application (IRAC).",
-    "Conclusion and current citation."
-  ],
-  "revisionPoints": [
-    "BNS s. 304: Snatching.",
-    "First ingredient: (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property",
-    "No printed illustration — prepare an original labelled example.",
-    "For offences on or after 1 July 2024, the correct citation is BNS s. 304 — Snatching. Do not guess an old Code number for this heading. Teaching flag: this heading is a new provision in the 2023 legislation. Do not invent a predecessor."
-  ],
-  "relatedTopics": [
-    "s-303"
-  ]
+  "glance": "BNS s. 304 defines snatching as a form of theft involving suddenly, quickly or forcibly seizing, securing, grabbing or taking away movable property from a person or from that person's possession, with intent to commit theft.",
+  "study": "CURRENT LAW\\nSection 304 is a substantive offence provision in the property chapter. It defines when theft becomes snatching and prescribes imprisonment up to three years and fine. The underlying concept of theft must still be understood: dishonest intention, movable property, possession and taking without consent remain important to the statutory analysis.\\n\\nDISTINGUISHING SNATCHING\\nThe distinctive feature is the sudden, quick or forcible seizure or taking from a person or from the person's possession. Not every theft from a person is necessarily proved as snatching unless the statutory manner of taking is established.\\n\\nPROOF\\nThe prosecution should identify the property, possession, dishonest intention and the sudden/quick/forcible mode of taking. Identification evidence, CCTV and digital location material may support the case but require their own admissibility and authenticity analysis.\\n\\nTRANSITION\\nBNS applies to offences committed after commencement subject to the governing transition rules. IPC s. 379 and related provisions are historical concordance, not current BNS citations.",
+  "sections": [{"id":"bns-304-module-1","title":"Statutory Elements","order":1,"content":["There must be theft-related conduct involving movable property.","The offender must suddenly, quickly or forcibly seize, secure, grab or take away the property from a person or from the person's possession.","The purpose must be to commit theft."]},{"id":"bns-304-module-2","title":"Possession and Dishonesty","order":2,"content":["Identify whose possession was affected and how it was taken.","The theft concept supplies the dishonest-taking framework; absence of consent and the mental element remain material.","Do not reduce the offence to a mere description of a phone or chain being taken."]},{"id":"bns-304-module-3","title":"Snatching versus Neighbouring Offences","order":3,"content":["Distinguish ordinary theft from the statutory sudden/quick/forcible mode of taking.","If force or fear is used in circumstances satisfying robbery, analyse the robbery provision rather than automatically stopping at s. 304.","Extortion involves a different mechanism: delivery induced by putting a person in fear, not direct seizure constituting theft."]},{"id":"bns-304-module-4","title":"Proof and Digital Evidence","order":4,"content":["CCTV, mobile records, location data and recovery evidence can support identification and manner of taking.","Electronic records require their applicable statutory admissibility route; s. 63 addresses electronic records and does not itself prove identity or dishonest intention.","Recovery evidence should be assessed for continuity, attribution and corroborative value."]},{"id":"bns-304-module-5","title":"Advocacy and Error Control","order":5,"content":["For the prosecution, map each fact to a statutory element.","For the defence, test identity, possession, consent, sudden/quick/forcible taking and dishonest intention separately.","Do not import IPC section numbers as if they were current BNS provisions."]}],
+  "provisions": [{"id":"bns-304","actId":"bns","actName":"Bharatiya Nyaya Sanhita, 2023","provisionId":"bns-304","section":"s. 304","title":"Snatching"},{"id":"bns-303","actId":"bns","actName":"Bharatiya Nyaya Sanhita, 2023","provisionId":"bns-303","section":"s. 303","title":"Theft"},{"id":"bns-63","actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-63","section":"s. 63","title":"Electronic records"}],
+  "examples": [{"id":"bns-304-ex1","title":"Mobile phone snatching","description":"An accused suddenly grabs a phone from a pedestrian's hand and runs. The Court should test each statutory element rather than relying on the label 'snatching'."},{"id":"bns-304-ex2","title":"Property left unattended","description":"Property is taken from an unattended location without the sudden or forcible seizure contemplated by s. 304. The Court must consider the ordinary theft provision instead."}],
+  "hypotheticals": [{"id":"bns-304-hypo","title":"CCTV Snatching Case","facts":"CCTV shows a person suddenly grabbing a bag from a pedestrian. The defence disputes that the accused is the person shown and argues that the bag was voluntarily handed over.","question":"How should s. 304 be applied?","applicableLaw":"BNS ss. 303–304 and BSA s. 63 where the CCTV is tendered as an electronic record.","analysis":"First prove identity and attribution. Then determine possession and whether the taking was sudden, quick or forcible and intended as theft. If the CCTV itself is tendered, separately establish its statutory admissibility and integrity.","conclusion":"A s. 304 conviction requires proof of the statutory manner of taking in addition to the underlying theft framework."}],
+  "distinctions": [{"id":"bns-304-dist","title":"Snatching and neighbouring property offences","left":"Snatching","right":"Ordinary theft / robbery","rows":[{"point":"Core act","left":"Sudden, quick or forcible taking from a person or possession","right":"Theft lacks the special snatching manner; robbery requires the additional statutory force/fear conditions"},{"point":"Proof focus","left":"Manner of taking","right":"Ingredients of the neighbouring offence"}]}],
+  "misconceptions": [{"id":"bns-304-trap1","trap":"Every theft from a person is automatically snatching.","correction":"The statutory sudden, quick or forcible manner must be established."},{"id":"bns-304-trap2","trap":"CCTV authenticity proves the accused's identity automatically.","correction":"Authenticity and attribution must be established; admissibility is distinct from weight."},{"id":"bns-304-trap3","trap":"Snatching is simply robbery with a different name.","correction":"The statutory ingredients and punishment provisions must be separately applied."}],
+  "cases": [{"name":"K.N. Mehra v. State of Rajasthan","year":1957,"citation":"AIR 1957 SC 369","court":"Supreme Court of India","facts":"The Court examined dishonest taking of movable property and the ingredients of theft.","issue":"What mental and factual elements are material to theft?","ratioDecidendi":"The case explains the importance of dishonest intention and the statutory ingredients of theft.","holding":"The Court analysed the theft ingredients on the facts.","relevance":"Use as the underlying theft authority when applying BNS s. 304."},{"name":"Pyare Lal Bhargava v. State of Rajasthan","year":1963,"citation":"AIR 1963 SC 1094","court":"Supreme Court of India","facts":"The Court considered the meaning of moving property out of a person's possession in a theft context.","issue":"How can a temporary taking constitute theft?","ratioDecidendi":"The Court recognised that dishonest taking can amount to theft even where the property is intended to be returned, depending on the statutory ingredients.","holding":"The mental element and movement of property were examined in context.","relevance":"Useful for the underlying theft concept, not as a direct interpretation of newly enacted s. 304."}],
+  "questionsAndAnswers": [{"id":"bns-304-brief","draftingCategory":"brief","question":"Prepare a brief on BNS s. 304.","answer":"Identify the movable property, possession, dishonest intention and the sudden/quick/forcible mode of taking. Then distinguish s. 304 from ordinary theft and robbery and separately prove identity and electronic evidence where relied upon."},{"id":"bns-304-submissions","draftingCategory":"submissions","question":"Draft submissions on BNS s. 304.","answer":"I. PROPERTY AND POSSESSION\\nII. DISHONEST TAKING\\nIII. SUDDEN / QUICK / FORCIBLE MODE\\nIV. IDENTITY AND ELECTRONIC EVIDENCE\\nV. DISTINCTION FROM THEFT / ROBBERY\\nVI. RELIEF"}],
+  "bareActPointers": ["BNS s. 303","BNS s. 304","BSA s. 63 where electronic records are tendered"],
+  "examTips": ["Map every fact to an ingredient.","Separate identity from the manner of taking.","Check robbery before concluding s. 304."],
+  "revisionPoints": ["s. 304 is a distinct snatching offence.","Underlying theft ingredients remain important.","Electronic admissibility and substantive proof are separate."]
 }
 
 export default content
