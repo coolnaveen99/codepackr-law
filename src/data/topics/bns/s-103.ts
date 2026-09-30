@@ -1,180 +1,19 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  "study": "Introduction and meaning\nPunishment for murder: death or life imprisonment, and fine. Clause (2) is new — murder by five or more persons acting in concert on identity grounds (race, caste, community, sex, place of birth, language, personal belief): death or life, with life as the floor.\nIn student language: BNS s. 103 is the rule on “Punishment for murder”. The section provides that (1) Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 103 exists so that “Punishment for murder” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n103. (1) Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine\n\n(2) When a group of five or more persons acting in concert commits murder on the ground of race, caste or community, sex, place of birth, language, personal belief or any other similar ground each member of such group shall be punished with death or with imprisonment for life, and shall also be liable to fine\n\nEssential ingredients\n1. (1) Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine\n2. (2) When a group of five or more persons acting in concert commits murder on the ground of race, caste or community, sex, place of birth, language, personal belief or any other similar ground each member of such group shall be punished with death or with imprisonment for life, and shall also be liable to fine\n\nPunishment / legal consequence\nDeath or life + fine. Group identity-murder: death or life (floor: life).",
-  "glance": "BNS s. 103 — Punishment for murder.",
-  "sections": [
-    {
-      "id": "bns-103-rule",
-      "title": "The legal rule",
-      "order": 1,
-      "content": [
-        "103. (1) Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine",
-        "(2) When a group of five or more persons acting in concert commits murder on the ground of race, caste or community, sex, place of birth, language, personal belief or any other similar ground each member of such group shall be punished with death or with imprisonment for life, and shall also be liable to fine"
-      ]
-    },
-    {
-      "id": "bns-103-ing",
-      "title": "Essential ingredients",
-      "order": 2,
-      "content": [
-        "(1) Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine",
-        "(2) When a group of five or more persons acting in concert commits murder on the ground of race, caste or community, sex, place of birth, language, personal belief or any other similar ground each member of such group shall be punished with death or with imprisonment for life, and shall also be liable to fine"
-      ]
-    }
-  ],
-  "examples": [
-    {
-      "id": "bns-103-ex-1",
-      "title": "Example 1 — simple (teaching example)",
-      "description": "A short everyday fact pattern is tested against “Punishment for murder”. Name BNS s. 103, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
-    },
-    {
-      "id": "bns-103-ex-2",
-      "title": "Example 2 — practical application / distinction (teaching example)",
-      "description": "Change one ingredient so that BNS s. 103 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
-    }
-  ],
-  "hypotheticals": [
-    {
-      "id": "bns-103-hypo",
-      "title": "Chamber Practice Hypothetical",
-      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Punishment for murder” under BNS s. 103 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
-      "question": "Whether BNS s. 103 (Punishment for murder) applies, and how structured written arguments should be framed.",
-      "applicableLaw": "BNS s. 103. Chapter VI — Of Offences Affecting the Human Body. Connected: BNS s. 101, BNS s. 104, BNS s. 106.",
-      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 103 (Punishment for murder), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine\n   (2) (2) When a group of five or more persons acting in concert commits murder on the ground of race, caste or community, sex, place of birth, language, personal belief or any other similar ground each member of such group shall be punished with death or with imprisonment for life, and shall also be liable to fine\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 103 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 103 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
-      "conclusion": "The result depends on proof of the ingredients of BNS s. 103. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
-    }
-  ],
-  "distinctions": [
-    {
-      "id": "bns-103-dist",
-      "title": "BNS s. 103 and connected sections",
-      "left": "BNS s. 103",
-      "right": "BNS s. 101, BNS s. 104, BNS s. 106",
-      "rows": [
-        {
-          "point": "Heading",
-          "left": "Punishment for murder",
-          "right": "Read the neighbour’s title on its own page before you write."
-        },
-        {
-          "point": "What you must prove",
-          "left": "(1) Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine",
-          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
-        },
-        {
-          "point": "Practice trap",
-          "left": "Citing a neighbour as if it were s. 103.",
-          "right": "Citing s. 103 where the neighbour actually applies."
-        }
-      ]
-    }
-  ],
-  "misconceptions": [
-    {
-      "id": "bns-103-trap-1",
-      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
-      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 103."
-    },
-    {
-      "id": "bns-103-trap-2",
-      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
-      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
-    },
-    {
-      "id": "bns-103-trap-3",
-      "trap": "Giving a one-line summary or shortened explanation of the provision.",
-      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
-    }
-  ],
-  "questionsAndAnswers": [
-    {
-      "id": "bns-103-q-brief",
-      "draftingCategory": "brief",
-      "question": "Legal Assessment & Statutory Note: BNS s. 103 (Punishment for murder)",
-      "answer": "Introduction. BNS s. 103 deals with Punishment for murder. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Punishment for murder: death or life imprisonment, and fine. Clause (2) is new — murder by five or more persons acting in concert on identity grounds (race, caste, community, sex, place of birth, language, personal belief): death or life, with life as the floor.\n\nLegal rule. In student language: BNS s. 103 is the rule on “Punishment for murder”. The section provides that (1) Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine\n2. (2) When a group of five or more persons acting in concert commits murder on the ground of race, caste or community, sex, place of birth, language, personal belief or any other similar ground each member of such group shall be punished with death or with imprisonment for life, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 103. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Death or life + fine. Group identity-murder: death or life (floor: life).\n\nConnected sections. Read with BNS s. 101, BNS s. 104, BNS s. 106. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 103 is the complete current-law heading for Punishment for murder. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
-      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
-    },
-    {
-      "id": "bns-103-q-submissions",
-      "draftingCategory": "submissions",
-      "question": "Comprehensive Written Submissions: BNS s. 103 (Punishment for murder) with Statutory Scheme & Judicial Analysis",
-      "answer": "Introduction. BNS s. 103 deals with Punishment for murder. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Punishment for murder: death or life imprisonment, and fine. Clause (2) is new — murder by five or more persons acting in concert on identity grounds (race, caste, community, sex, place of birth, language, personal belief): death or life, with life as the floor.\n\nLegal rule. In student language: BNS s. 103 is the rule on “Punishment for murder”. The section provides that (1) Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine\n2. (2) When a group of five or more persons acting in concert commits murder on the ground of race, caste or community, sex, place of birth, language, personal belief or any other similar ground each member of such group shall be punished with death or with imprisonment for life, and shall also be liable to fine\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 103. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Death or life + fine. Group identity-murder: death or life (floor: life).\n\nConnected sections. Read with BNS s. 101, BNS s. 104, BNS s. 106. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 103 is the complete current-law heading for Punishment for murder. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 103 with BNS s. 101, BNS s. 104, BNS s. 106. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 103.”",
-      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
-    }
-  ],
-  "cases": [
-    {
-      "name": "Virsa Singh v. State of Punjab",
-      "year": 1958,
-      "citation": "AIR 1958 SC 465",
-      "holding": "Clause 3 of murder: the bodily injury intended must be sufficient in the ordinary course of nature to cause death. The offender need not intend death itself. Reads on to s. 101 thirdly."
-    },
-    {
-      "name": "Bachan Singh v. State of Punjab",
-      "year": 1980,
-      "citation": "(1980) 2 SCC 684",
-      "holding": "Death is the exception: rarest of rare, after weighing aggravating and mitigating circumstances. Governs sentencing under s. 103."
-    },
-    {
-      "name": "Machhi Singh v. State of Punjab",
-      "year": 1983,
-      "citation": "(1983) 3 SCC 470",
-      "holding": "Operationalises rarest-of-rare: manner of commission, motive, anti-social nature, magnitude, personality of the victim."
-    }
-  ],
-  "examTips": [
-    "Cite BNS s. 103 for offences on or after 1 July 2024.",
-    "Ingredients first, illustration second, application third, conclusion last.",
-    "Do not write “IPC 302” as the BNS murder-punishment section. It is 103. Definition remains 101."
-  ],
-  "examFrameworks": [
-    {
-      "question": "Structured Legal Assessment: BNS s. 103 (Punishment for murder).",
-      "steps": [
-        "Introduce BNS s. 103 and Chapter VI — Of Offences Affecting the Human Body.",
-        "Define / state the meaning in your own words.",
-        "List the essential ingredients.",
-        "Give one labelled example and map it to an ingredient.",
-        "State any express condition.",
-        "Apply in four to six sentences.",
-        "Conclude with the current citation — BNS s. 103."
-      ]
-    },
-    {
-      "question": "Comprehensive Chamber Written Submissions: BNS s. 103 with connected statutory scheme.",
-      "steps": [
-        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
-        "Place the section in the Chapter and explain why the heading exists.",
-        "Work a second hypothetical in which one ingredient fails.",
-        "Distinguish BNS s. 103 from BNS s. 101, BNS s. 104, BNS s. 106.",
-        "IRAC application to the problem facts.",
-        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
-        "Current-law conclusion."
-      ]
-    }
-  ],
-  "answerSkeleton": [
-    "Introduction — BNS s. 103, Punishment for murder.",
-    "Meaning and definition.",
-    "Ingredients.",
-    "Illustration mapped to an ingredient.",
-    "Explanation / exception.",
-    "Application (IRAC).",
-    "Conclusion and current citation."
-  ],
-  "revisionPoints": [
-    "BNS s. 103: Punishment for murder.",
-    "First ingredient: (1) Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine",
-    "No printed illustration — prepare an original labelled example.",
-    "For offences on or after 1 July 2024, the correct citation is BNS s. 103 — Punishment for murder. Older books and judgments may still print a historical number (302). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
-  ],
-  "relatedTopics": [
-    "s-101",
-    "s-104",
-    "s-106"
-  ]
+  "glance": "BNS s. 103 is the punishment provision for murder. Sub-section (1) prescribes death or imprisonment for life and fine; sub-section (2) creates a distinct punishment rule for a group of five or more persons acting in concert where the murder is on the specified identity grounds.",
+  "study": "CURRENT LAW\\nBNS s. 103 is a punishment provision. The definition and exceptions that determine whether conduct is murder are principally found in s. 101 and the connected provisions of Chapter VI. Section 103(2) separately addresses group murder by five or more persons acting in concert on race, caste/community, sex, place of birth, language, personal belief or a similar ground.\\n\\nANALYTICAL METHOD\\nDo not treat s. 103 as the definition of murder. First establish the underlying offence of murder under the current BNS framework. Then identify whether s. 103(1) or the additional statutory conditions of s. 103(2) govern punishment. For s. 103(2), prove the number of participants, concerted action and the statutory ground; mere presence in a crowd is not the same proposition as acting in concert.\\n\\nPUNISHMENT ANALYSIS\\nSection 103(1) permits death or life imprisonment and fine. Section 103(2) applies the same headline punishment to each member of the qualifying group. Sentencing must remain distinct from proof of guilt and from the definition of murder.\\n\\nCURRENT-LAW TRANSITION\\nThe BNS commenced on 1 July 2024. IPC section numbers are historical concordance only; for a current BNS offence, use BNS numbering.",
+  "sections": [{"id":"bns-103-module-1","title":"Murder as the Predicate Offence","order":1,"content":["Section 103 presupposes that murder has been established under the substantive murder provision.","Analyse the ingredients and exceptions governing murder before moving to punishment.","Do not substitute the punishment section for the definition of the offence."]},{"id":"bns-103-module-2","title":"Section 103(1) Punishment","order":2,"content":["For murder, s. 103(1) provides death or imprisonment for life and fine.","The punishment choice is a sentencing question after liability is established.","The statutory punishment should not be confused with the separate question whether a homicide falls within murder or culpable homicide not amounting to murder."]},{"id":"bns-103-module-3","title":"Group Murder under s. 103(2)","order":3,"content":["The clause requires a group of five or more persons acting in concert.","The murder must be on a specified identity ground or another similar ground within the statutory wording.","Each member of the qualifying group is subject to the punishment stated in s. 103(2)."]},{"id":"bns-103-module-4","title":"Proof and Circumstantial Evidence","order":4,"content":["Participation, concert and the qualifying ground must be proved from admissible evidence.","Where the prosecution relies on circumstances, each circumstance must be established and the chain assessed as a whole.","Do not infer concert solely from association, presence or relationship without evidence connecting the accused to the common action."]},{"id":"bns-103-module-5","title":"Sentencing, Advocacy and Transition","order":5,"content":["Separate conviction analysis from sentencing submissions.","For s. 103(2), identify the exact statutory group and identity-ground facts relied upon.","Use BNS numbering for current proceedings and historical IPC authorities only as clearly identified concordance where still legally relevant."]}],
+  "provisions": [{"id":"bns-103","actId":"bns","actName":"Bharatiya Nyaya Sanhita, 2023","provisionId":"bns-103","section":"s. 103","title":"Punishment for murder"},{"id":"bns-101","actId":"bns","actName":"Bharatiya Nyaya Sanhita, 2023","provisionId":"bns-101","section":"s. 101","title":"Murder"}],
+  "examples": [{"id":"bns-103-ex1","title":"Ordinary murder","description":"After murder is established under the substantive provision, s. 103(1) supplies the punishment framework."},{"id":"bns-103-ex2","title":"Five-person identity-ground group","description":"Five or more persons acting in concert commit murder because of a qualifying identity ground. The Court must separately prove the group, concert and ground before applying s. 103(2)."}],
+  "hypotheticals": [{"id":"bns-103-hypo","title":"Group Murder and Concert","facts":"Six persons jointly attack a victim after statements indicate that the attack was motivated by the victim's community identity. The defence argues that two accused were merely present.","question":"How should s. 103(2) be analysed?","applicableLaw":"BNS ss. 101 and 103(2); general principles governing circumstantial proof and common participation.","analysis":"First establish murder. Then test the statutory group threshold, acting in concert and qualifying ground. For each accused, identify evidence connecting that person to the concerted act; mere presence is not automatically equivalent to participation.","conclusion":"Section 103(2) applies only after its additional statutory facts are independently established."}],
+  "distinctions": [{"id":"bns-103-dist","title":"Predicate offence versus punishment","left":"BNS s. 101","right":"BNS s. 103","rows":[{"point":"Function","left":"Defines the substantive offence of murder","right":"Prescribes punishment for murder and the specified group-murder case"},{"point":"Sequence","left":"Liability analysis","right":"Punishment after the predicate offence is established"}]}],
+  "misconceptions": [{"id":"bns-103-trap1","trap":"Section 103 itself defines every ingredient of murder.","correction":"It is principally a punishment provision; analyse the substantive murder provision separately."},{"id":"bns-103-trap2","trap":"Five people being present automatically triggers s. 103(2).","correction":"The statutory requirements include acting in concert and the specified identity-ground nexus."},{"id":"bns-103-trap3","trap":"The punishment provision decides whether a homicide is murder.","correction":"The murder-versus-culpable-homicide analysis precedes punishment."}],
+  "cases": [{"name":"State of Andhra Pradesh v. Rayavarapu Punnayya","year":1976,"citation":"(1976) 4 SCC 382","court":"Supreme Court of India","facts":"The Court examined the distinction between culpable homicide and murder under the former penal framework.","issue":"How should the boundary between culpable homicide and murder be approached?","ratioDecidendi":"The Court explained the relationship between culpable homicide and murder and the role of the statutory exceptions.","holding":"The judgment remains a leading authority on the homicide classification question.","relevance":"Use for the predicate-offence analysis before applying the BNS s. 103 punishment provision."},{"name":"Sharad Birdhichand Sarda v. State of Maharashtra","year":1984,"citation":"(1984) 4 SCC 116","court":"Supreme Court of India","facts":"The case concerned conviction based on circumstantial evidence.","issue":"What safeguards govern a conviction resting on circumstances?","ratioDecidendi":"The circumstances relied on must be fully established and form a complete chain consistent with guilt.","holding":"The Court restated safeguards for circumstantial proof.","relevance":"Useful where participation in a murder, including concert, is proved circumstantially."}],
+  "questionsAndAnswers": [{"id":"bns-103-brief","draftingCategory":"brief","question":"Prepare a Senior Counsel brief on BNS s. 103.","answer":"Separate the predicate murder analysis from punishment. For s. 103(2), identify the five-or-more threshold, concerted action and qualifying identity-ground nexus. Then address the sentencing consequence under the subsection actually established."},{"id":"bns-103-submissions","draftingCategory":"submissions","question":"Draft written submissions on BNS s. 103.","answer":"I. PREDICATE MURDER\\nII. STATUTORY PUNISHMENT\\nIII. S. 103(2) GROUP / CONCERT / GROUND, IF RELIED UPON\\nIV. EVIDENTIARY FOUNDATION\\nV. SENTENCING CONSEQUENCE\\nVI. ORDER SOUGHT"}],
+  "bareActPointers": ["BNS s. 101","BNS s. 103(1)","BNS s. 103(2)"],
+  "examTips": ["Analyse the predicate offence first.","For s. 103(2), prove each additional statutory condition.","Keep conviction and sentencing analysis separate."],
+  "revisionPoints": ["s. 103(1) = punishment for murder.","s. 103(2) = specified five-or-more-person identity-ground murder.","Use BNS numbering for current proceedings."]
 }
 
 export default content
