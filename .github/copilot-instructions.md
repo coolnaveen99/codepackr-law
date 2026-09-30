@@ -563,3 +563,36 @@ Never hard-code `law.codepackr.com` into new architecture. Use configurable publ
 
 ### 17.10 Completion
 Do not claim an Admin Portal, content migration, Git publishing, CI pipeline, or domain migration is complete unless corresponding code/configuration, tests and verification evidence actually exist.
+
+## 18. Instruction File Integrity — MANDATORY
+
+Existing instruction, prompt, roadmap, architecture, governance, and AI-agent guidance files are protected project direction and must not be modified as part of ordinary implementation work.
+
+### 18.1 Do not modify instructions during implementation
+
+Unless the user explicitly requests an instruction/documentation change, do NOT:
+- edit, overwrite, delete, shorten, reorganize, or rewrite existing instruction files;
+- change AI prompts to make an implementation easier;
+- change roadmap or architecture documents to justify a different implementation;
+- modify `.github/**`, `AGENTS.md`, `CLAUDE.md`, `AI_INSTRUCTIONS.md`, `prompts/**`, or other project instruction files merely because code changes require different guidance;
+- add new AI/development instructions as a side effect of implementing a feature.
+
+### 18.2 Resolve conflicts without redirecting the goal
+
+If the current implementation appears to conflict with an existing instruction, preserve the instruction and report the conflict to the user. Do not silently rewrite the instruction to permit the implementation.
+
+The implementation must adapt to the established project direction unless the user explicitly changes that direction.
+
+### 18.3 Scope control
+
+For every implementation request:
+1. Read the applicable existing instructions.
+2. Preserve them unchanged.
+3. Identify the minimum code/configuration/content changes required by the user's request.
+4. Do not make unrelated instruction or roadmap changes.
+5. If an instruction change is genuinely required, stop and obtain explicit user approval before modifying it.
+
+### 18.4 Protected project goal
+
+Instruction files define project direction. Changing them during implementation can redirect the product goal and invalidate previously agreed architecture. Therefore, instruction-file changes require explicit user intent and must be treated as a separate documentation task.
+
