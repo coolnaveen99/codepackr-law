@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { Check, Copy, Download, FileText, ListChecks, Printer, Search, ShieldCheck } from 'lucide-react'
+import { Check, ChevronDown, Copy, Download, FileText, ListChecks, Printer, Search, ShieldCheck, SlidersHorizontal, X } from 'lucide-react'
 import { CASE_FILE_CHECKLISTS, DRAFT_TEMPLATES, type DraftTemplate } from '../../data/draft-templates'
 import { TEMPLATE_CATALOG, catalogToDraftTemplate } from '../../data/legal-template-catalog'
 import { downloadLegalDocument, printAsPdf, type ExportKind } from '../../lib/document-export'
@@ -15,6 +15,10 @@ export function LegalDraftStudio() {
   const [checked, setChecked] = useState<Record<string, boolean>>({})
   const [cat, setCat] = useState<Category>('all')
   const [query, setQuery] = useState('')
+  const [subject, setSubject] = useState('')
+  const [act, setAct] = useState('')
+  const [showAdvanced, setShowAdvanced] = useState(false)
+  const [showMore, setShowMore] = useState(false)
   const allTemplates = useMemo(() => [...DRAFT_TEMPLATES, ...TEMPLATE_CATALOG.map(catalogToDraftTemplate)], [])
   const [exporting, setExporting] = useState<ExportKind | null>(null)
 
@@ -25,14 +29,66 @@ export function LegalDraftStudio() {
   const output = useMemo(() => (template ? template.build(values) : ''), [template, values])
   const setField = (key: string, val: string) => setValues((prev) => ({ ...prev, [key]: val }))
 
+  const getAct = (t: DraftTemplate) => {
+    const s = t.statute.toLowerCase()
+    if (s.includes('bnss')) return 'BNSS 2023'
+    if (s.includes('bns')) return 'BNS 2023'
+    if (s.includes('bsa')) return 'BSA 2023'
+    if (s.includes('cpc')) return 'CPC 1908'
+    if (s.includes('negotiable instruments')) return 'Negotiable Instruments Act 1881'
+    if (s.includes('companies act')) return 'Companies Act 2013'
+    if (s.includes('consumer protection')) return 'Consumer Protection Act 2019'
+    if (s.includes('arbitration')) return 'Arbitration and Conciliation Act 1996'
+    if (s.includes('motor vehicles')) return 'Motor Vehicles Act 1988'
+    if (s.includes('right to information')) return 'RTI Act 2005'
+    if (s.includes('transfer of property')) return 'Transfer of Property Act 1882'
+    if (s.includes('contract act')) return 'Indian Contract Act 1872'
+    if (s.includes('hindu marriage')) return 'Hindu Marriage Act 1955'
+    if (s.includes('constitution')) return 'Constitution of India'
+    return 'Other / General'
+  }
+
+  const getSubject = (t: DraftTemplate) => {
+    const catalog = TEMPLATE_CATALOG.find((entry) => entry.id === t.id)
+    if (catalog) return catalog.area
+    if (t.id.includes('bail')) return 'Bail & custody'
+    if (t.category === 'civil') return 'Pleadings'
+    if (t.category === 'notice') return t.id.includes('ni-138') ? 'Cheque & recovery' : 'General notices'
+    if (t.category === 'affidavit') return 'Affidavits & declarations'
+    return 'Criminal procedure'
+  }
+
+  const subjects = useMemo(() => {
+    const values = new Set(allTemplates.map(getSubject))
+    return Array.from(values).sort()
+  }, [allTemplates])
+
+  const acts = useMemo(() => {
+    const source = subject ? allTemplates.filter((t) => getSubject(t) === subject) : allTemplates
+    return Array.from(new Set(source.map(getAct))).sort()
+  }, [allTemplates, subject])
+
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
+    if (!subject && !act && !q && cat === 'all') return []
     return allTemplates.filter((t) => {
       if (cat !== 'all' && t.category !== cat) return false
+      if (subject && getSubject(t) !== subject) return false
+      if (act && getAct(t) !== act) return false
       if (!q) return true
       return [t.name, t.statute, t.description].some((value) => value.toLowerCase().includes(q))
     })
-  }, [allTemplates, cat, query])
+  }, [allTemplates, cat, query, subject, act])
+
+  const visibleTemplates = showMore ? filtered : filtered.slice(0, 20)
+
+  const resetBrowser = () => {
+    setSubject('')
+    setAct('')
+    setQuery('')
+    setCat('all')
+    setShowMore(false)
+  }
 
   const loadSample = () => {
     if (!template) return
@@ -120,17 +176,47 @@ export function LegalDraftStudio() {
               <Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-[color:var(--ink-muted)]" />
               <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search templates…" className="w-full rounded-xl border border-[color:var(--border)] bg-transparent py-2.5 pl-9 pr-3 text-sm outline-none focus:border-[#8B1E3F]" />
             </div>
+            <label className="mt-3 block text-[11px] font-extrabold uppercase tracking-wide text-[color:var(--ink-muted)]">Subject</label>
+            <div className="relative mt-1.5">
+              <select value={subject} onChange={(e) => { setSubject(e.target.value); setAct(''); setShowMore(false) }} className="w-full appearance-none rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-2.5 pr-9 text-sm font-bold outline-none focus:border-[#8B1E3F]">
+                <option value="">Select a subject…</option>
+                {subjects.map((s) => <option key={s} value={s}>{s}</option>)}
+              </select>
+              <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2" />
+            </div>
+            <label className="mt-3 block text-[11px] font-extrabold uppercase tracking-wide text-[color:var(--ink-muted)]">Act / Law</label>
+            <div className="relative mt-1.5">
+              <select value={act} onChange={(e) => { setAct(e.target.value); setShowMore(false) }} className="w-full appearance-none rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-2.5 pr-9 text-sm font-bold outline-none focus:border-[#8B1E3F]">
+                <option value="">All laws</option>
+                {acts.map((a) => <option key={a} value={a}>{a}</option>)}
+              </select>
+              <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2" />
+            </div>
             <div className="mt-3 flex flex-wrap gap-1.5">
               {CATEGORIES.map((c) => (
                 <button key={c} type="button" onClick={() => setCat(c)} className={`rounded-full px-3 py-1.5 text-[11px] font-extrabold capitalize ${cat === c ? 'bg-[#8B1E3F] text-white' : 'border border-[color:var(--border)] text-[color:var(--ink-muted)]'}`}>{c}</button>
               ))}
+              {filtered.length > 20 && !showMore && <button type="button" onClick={() => setShowMore(true)} className="w-full rounded-xl border border-[#8B1E3F] px-3 py-2 text-xs font-extrabold text-[#8B1E3F]">Show more ({filtered.length - 20})</button>}
             </div>
+            <div className="mt-3 flex items-center justify-between gap-2">
+              <button type="button" onClick={() => setShowAdvanced((v) => !v)} className="inline-flex items-center gap-1.5 rounded-xl border border-[color:var(--border)] px-3 py-2 text-[11px] font-extrabold"><SlidersHorizontal className="size-3.5" /> Advanced filters</button>
+              <button type="button" onClick={resetBrowser} className="inline-flex items-center gap-1 text-[11px] font-bold text-[color:var(--ink-muted)]"><X className="size-3" /> Reset</button>
+            </div>
+            {showAdvanced && <div className="mt-2 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-3 text-[11px] text-[color:var(--ink-muted)]">
+              <div className="font-extrabold text-[color:var(--ink)]">Advanced browsing</div>
+              <p className="mt-1 leading-5">Use Subject + Act/Law together to narrow the library. Search also matches document name, statute and description. More filters can be added later without changing the draft data model.</p>
+            </div>}
             <div className="mt-4 flex items-center justify-between gap-2">
-              <span className="text-[10px] font-bold text-[color:var(--ink-muted)]">{filtered.length.toLocaleString()} matching templates</span>
+              <span className="text-[10px] font-bold text-[color:var(--ink-muted)]">{filtered.length.toLocaleString()} matching drafts</span>
               <span className="text-[10px] font-bold text-[color:var(--ink-muted)]">{TEMPLATE_CATALOG.length.toLocaleString()} catalogue entries</span>
             </div>
             <div className="mt-2 space-y-2">
-              {filtered.map((t) => (
+              {!subject && !act && !query && cat === 'all' ? (
+                <div className="rounded-xl border border-dashed border-[color:var(--border)] p-4 text-center">
+                  <div className="text-sm font-black">Choose a subject to begin</div>
+                  <p className="mt-1 text-[11px] leading-5 text-[color:var(--ink-muted)]">Select a subject above, then choose an Act/Law such as BNSS, BNS or CPC. Only related drafts will appear here.</p>
+                </div>
+              ) : visibleTemplates.map((t) => (
                 <button key={t.id} type="button" onClick={() => { setTemplateId(t.id); setValues({}) }} className={`w-full rounded-xl border p-3 text-left transition ${templateId === t.id ? 'border-[#8B1E3F] bg-[#8B1E3F]/5' : 'border-[color:var(--border)]'}`}>
                   <div className="text-sm font-extrabold">{t.name}</div>
                   <div className="mt-1 text-[10px] leading-4 text-[color:var(--ink-muted)]">{t.statute}</div>
