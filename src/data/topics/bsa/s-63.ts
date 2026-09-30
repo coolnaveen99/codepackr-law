@@ -2,7 +2,7 @@ import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
   "glance": "BSA s. 63, Admissibility of electronic records, is an evidentiary provision in the Documentary evidence cluster. Analyse it through the separate questions of relevancy, admissibility, proof, burden and probative weight, and check BSA s. 170 for proceedings governed by the repeal and savings rule. Historical concordance: Indian Evidence Act s. 65B.",
-  "study": "Current-law identity\nBSA s. 63 governs admissibility of electronic records within Chapter V - Documentary evidence. The provision must be read with its enacted clauses, explanations, illustrations and connected provisions BSA s. 62, BSA s. 64. Historical concordance: Indian Evidence Act s. 65B.\n\nThe forensic distinction\nRelevancy asks whether a fact has the statutory connection required by the Adhiniyam. Admissibility asks whether the Court may receive that relevant material under the rules of exclusion, privilege, form and foundation. Proof asks whether the admitted material establishes the fact to the required standard. Probative weight asks how much reliance the Court should place on it. A relevant fact is not automatically admissible, and admissibility is not proof of the ultimate fact.\n\nMandatory application checklist\n1. Identify the fact in issue, the fact sought to be introduced and the party tendering it.\n2. State the exact rule in BSA s. 63, including every condition, explanation, proviso and illustration.\n3. Classify the material as oral, documentary, electronic, real or circumstantial evidence.\n4. Test directness, hearsay, privilege, primary or secondary evidence, authentication and statutory certificate requirements.\n5. Identify the party bearing the initial burden under BSA s. 104 and any special-knowledge rule under s. 109.\n6. Separate admissibility from the weight ultimately assigned after cross-examination and the complete record.\n\nElectronic records and constitutional limits\nElectronic and digital records are documents under BSA. Where a computer output, email, messaging record, CCTV export, call record, server log or device image is tendered through the statutory route, check BSA s. 63 and its certificate requirements. The certificate is not a substitute for relevance, authenticity, chain of custody or proof of the fact asserted. Evidence must also respect Articles 20(3), 21 and 14 of the Constitution, privilege rules and fair-trial disclosure.\n\nCourtroom method\nIn a written submission, identify the fact in issue, show the statutory relevancy link, answer the admissibility objection, establish the foundation, identify the burden and standard, and explain the probative consequence. Do not cite the historical Evidence Act number as the current rule after 1 July 2024 except as concordance. Do not convert a missing certificate, hearsay statement or weak foundation into an automatic finding on the merits without analysing the applicable statutory consequence.",
+  "study": "Current-law identity\nBSA s. 63 governs admissibility of electronic records within Chapter V - Documentary evidence. The provision must be read with its enacted clauses, explanations, illustrations and connected provisions BSA s. 62, BSA s. 64. Historical concordance: Indian Evidence Act s. 65B.\n\nThe forensic distinction\nRelevancy asks whether a fact has the statutory connection required by the Adhiniyam. Admissibility asks whether the Court may receive that relevant material under the rules of exclusion, privilege, form and foundation. Proof asks whether the admitted material establishes the fact to the required standard. Probative weight asks how much reliance the Court should place on it. A relevant fact is not automatically admissible, and admissibility is not proof of the ultimate fact.\n\nMandatory application checklist\n1. Identify the fact in issue, the fact sought to be introduced and the party tendering it.\n2. State the exact rule in BSA s. 63, including every condition, explanation, proviso and illustration.\n3. Classify the material as oral, documentary, electronic, real or circumstantial evidence.\n4. Test directness, hearsay, privilege, primary or secondary evidence, authentication and statutory certificate requirements.\n5. Identify the party bearing the initial burden under BSA s. 104 and any special-knowledge rule under s. 109.\n6. Separate admissibility from the weight ultimately assigned after cross-examination and the complete record.\n\nElectronic records and constitutional limits\nElectronic and digital records are documents under BSA. Where a computer output, email, messaging record, CCTV export, call record, server log or device image is tendered through the statutory route, check BSA s. 63 and its certificate requirements. The statutory certificate is a foundation requirement for the electronic-record route; it is not a substitute for relevance, authenticity, chain of custody, cross-examination, or proof of the fact asserted. Evidence must also respect Articles 20(3), 21 and 14 of the Constitution, privilege rules and fair-trial disclosure.\n\nCourtroom method\nIn a written submission, identify the fact in issue, show the statutory relevancy link, answer the admissibility objection, establish the foundation, identify the burden and standard, and explain the probative consequence. Do not cite the historical Evidence Act number as the current rule after 1 July 2024 except as concordance. Do not convert a missing certificate, hearsay statement or weak foundation into an automatic finding on the merits without analysing the applicable statutory consequence.",
   "sections": [
     {
       "id": "bsa-63-module-1",
@@ -42,7 +42,7 @@ const content: TopicContent = {
       "content": [
         "BSA s. 104 supplies the ordinary burden framework; the party asserting the legal proposition must establish its foundation.",
         "BSA s. 109 addresses facts especially within knowledge. It does not erase the initial burden or permit conviction on an unproved charge.",
-        "For electronic records, examine BSA s. 63 certificate, device or system identity, production method, integrity, custody and the distinction between admissibility and weight."
+        "For electronic records, examine BSA s. 63(4), including the Schedule certificate route. Record the device/source particulars required by the Schedule, the manner of production, lawful control/regular use conditions, and the hash value and algorithm where the prescribed certificate calls for them. Separately test source, authenticity, integrity, custody and the distinction between admissibility and weight."
       ]
     },
     {
@@ -51,7 +51,7 @@ const content: TopicContent = {
       "order": 5,
       "content": [
         "Apply BSA s. 63 at the correct stage of trial or inquiry and identify whether the objection concerns tender, marking, admissibility, proof or final weight.",
-        "For proceedings governed by the post-1 July 2024 evidence regime, cite BSA. For proceedings saved by s. 170, identify the applicable Indian Evidence Act route before arguing the consequence.",
+        "For proceedings governed by the post-1 July 2024 evidence regime, cite BSA s. 63 and its Schedule. For proceedings saved by s. 170, identify the applicable Indian Evidence Act route before arguing the consequence. Do not mechanically import the old s. 65B numbering into a current BSA proceeding.",
         "Check the governing procedural statute and any special limitation rule for the application or appeal; evidence law itself does not create a universal limitation period."
       ]
     }
@@ -170,7 +170,7 @@ const content: TopicContent = {
       "issue": "Whether the statutory certificate requirement for computer outputs is mandatory and when secondary electronic evidence may be received.",
       "ratioDecidendi": "The certificate requirement is a condition precedent for admissibility of the relevant electronic record output, subject to the statutory route and the Court's power to facilitate production where the facts justify it.",
       "holding": "The Constitution Bench clarified the certificate rule and overruled the contrary view to the extent necessary.",
-      "relevance": "Use where s. 63 concerns electronic records or digital proof; it does not decide the relevancy or admissibility of every non-digital item."
+      "relevance": "Use where the issue concerns the statutory treatment of electronic records. For a current BSA proceeding, pair the historical ratio with the enacted s. 63 text and Schedule rather than treating the former s. 65B wording as the current provision."
     },
     {
       "name": "Anvar P.V. v. P.K. Basheer",
@@ -212,14 +212,14 @@ const content: TopicContent = {
     }
   ],
   "bareActPointers": [
-    "BSA s. 63",
-    "BSA ss. 3, 55, 57, 63, 104 and 109 where applicable",
+    "BSA s. 63 and the Schedule prescribed under s. 63(4)(c)",
+    "BSA ss. 61-64, 104 and 109 where applicable",
     "BSA s. 170"
   ],
   "examTips": [
     "Separate relevancy, admissibility, proof and probative weight.",
     "Use the current BSA citation and historical Evidence Act numbers only as concordance.",
-    "For electronic records, analyse s. 63 certificate and foundation before weight.",
+    "For electronic records, analyse s. 63(4) and the Schedule certificate, device/source particulars, production method and integrity before weight.",
     "State the initial burden and any statutory presumption precisely."
   ],
   "revisionPoints": [
