@@ -56,7 +56,7 @@ export default {
       content: [
         'Constitutional adjudication is not a pure BSA trial, but when facts are disputed—custody logs, medical cause of death, CCTV, electronic surveillance records—BSA principles guide the record.',
         'Section 104 BSA: The party who asserts a fact must prove it. Petitioner alleging illegal detention or custodial violence must place primary facts; State must produce custody records, medical reports and authorising orders.',
-        'Sections 105–106 BSA: Special knowledge and exceptions—where facts are especially within State knowledge (lock-up registers, interrogation records), the Court may expect the State to explain; failure supports adverse inference in constitutional fact-finding.',
+        'Section 109 BSA: Facts especially within a person’s knowledge—such as custody registers, interrogation records or internal surveillance architecture—may require that person to explain them. This is distinct from the general and particular-fact burden provisions in sections 104–106; in writ proceedings it informs assessment of a record principally controlled by the State.',
         'Section 63 BSA: Electronic records (body-cam, CCTV, server logs, FRT databases) require the prescribed certificate and integrity conditions for formal proof in criminal/civil trials; constitutional courts may still examine electronic material for writ fact-finding while insisting on reliability.',
         'Presumptions and official acts: Official records of arrest and production before Magistrate are starting points; fabricated or missing records strengthen the Article 21 case (D.K. Basu compliance culture).',
         'Standard: Constitutional courts apply a flexible standard appropriate to writ jurisdiction—preponderance for compensatory public-law relief; criminal conviction still requires proof beyond reasonable doubt in the criminal forum.',
@@ -240,7 +240,7 @@ II. STATUTORY SCHEME & JURISPRUDENTIAL INTENT
 Article 21 forbids deprivation of life or personal liberty except according to procedure established by law. The Constituent Assembly preferred that phrase over American due process, yet Maneka Gandhi read fairness and reasonableness into “procedure,” integrating Articles 14 and 19. The 44th Amendment entrenched non-suspension of Articles 20 and 21 during emergency. The provision is both a shield against arbitrary power and a fountainhead of positive obligations in custody, health, and environmental cases.
 
 III. SATISFACTION OF MANDATORY PROVING INGREDIENTS
-The petitioner will establish: (1) State-attributable deprivation or intrusion; (2) absence of valid law or presence of unfair procedure; (3) where applicable, failure of Puttaswamy proportionality; (4) for compensation, constitutional tort on the Nilabati standard. Under BSA logic, facts especially within State knowledge—custody registers, medical charts, surveillance architecture—must be explained by the State; electronic records should satisfy reliability expectations akin to Section 63 BSA when formally proved.
+The petitioner will establish: (1) State-attributable deprivation or intrusion; (2) absence of valid law or presence of unfair procedure; (3) where applicable, failure of Puttaswamy proportionality; (4) for compensation, constitutional tort on the Nilabati standard. BSA ss. 104–106 provide the general allocation of proof and particular-fact burden, while s. 109 addresses facts especially within a person’s knowledge; these provisions can inform assessment of custody and surveillance records principally controlled by the State. Electronic records tendered under s. 63 must satisfy that provision’s admissibility requirements when formal proof is required.
 
 IV. JUDICIAL PRECEDENTS & RATIO DECIDENDI
 Maneka Gandhi: fair, just and reasonable procedure; Golden Triangle. Francis Coralie Mullin: life means dignity, not animal existence. Olga Tellis: livelihood as facet of life, subject to fair process. Puttaswamy: privacy as Fundamental Right; legality and proportionality. Rudul Sah and Nilabati Behera: public-law compensation for Article 21 violations. D.K. Basu: custodial safeguards as practical enforcement of Article 21. Bachan Singh: death penalty not per se unconstitutional; rarest-of-rare discipline.
@@ -264,7 +264,7 @@ VI. PRAYER / RELIEF SOUGHT
   bareActPointers: [
     'Article 21, Constitution of India',
     'Articles 14, 19, 20, 22, 32, 226, 359 (as amended by the 44th Amendment)',
-    'BSA 2023 ss. 104–106 (burden) and s. 63 (electronic records) in fact-heavy custody and surveillance disputes',
+    'BSA 2023 ss. 104–106 (general and particular burdens), s. 109 (facts especially within knowledge), and s. 63 (electronic records) in fact-heavy custody and surveillance disputes'
   ],
 
   examTips: [
