@@ -1943,3 +1943,56 @@ First upgrade:
 
 Do not mass-expand all topics with boilerplate. Upgrade content based on legal complexity and student value.
 
+
+
+---
+
+# 48. Admin Content Gateway, Content Repository and Publishing Operations
+
+Meeting #4 established a controlled web-based content publishing system so authorized administrators can add and upgrade legal knowledge without manually editing application source files.
+
+Canonical architecture: `docs/architecture/admin-content-publishing-architecture.md`
+Implementation prompt: `prompts/ADMIN_CONTENT_PUBLISHING_AI_PROMPT.md`
+
+## 48.1 Core flow
+
+```
+Admin Portal → Authentication/Authorization → Secure Content Gateway → Validation → Git Branch/PR → CI → Legal Review → Merge → Content Build → Deployment
+```
+
+Never expose GitHub write credentials in browser code.
+
+## 48.2 Content repository
+
+Move toward a separate canonical legal-content repository while retaining a legacy adapter during migration.
+
+First-class entities: topic, provision, judgment, comparison, doctrine, illustration, source, Sanhita mapping and SEO record.
+
+Stable content IDs must survive repository and domain migration.
+
+## 48.3 Admin phases
+
+1. Dashboard/authentication.
+2. Topic CRUD and draft workflow.
+3. Judgment Decoder editor.
+4. Comparison editor.
+5. Illustration editor.
+6. Source editor.
+7. Sanhita Mapper editor.
+8. SEO editor.
+9. Review/audit/version history.
+10. Rollback and publishing operations.
+
+## 48.4 Migration safety
+
+Inventory → snapshot → normalize → copy → parity test → dual-read validation → switch → stabilize → archive.
+
+Never delete legacy content before parity and rollback are proven.
+
+## 48.5 Domain independence
+
+Do not hard-code `law.codepackr.com`. Use configurable public, canonical and admin URLs. Future dedicated-domain migration must include canonical updates, sitemap regeneration, Search Console verification and old-to-new URL redirects before the current domain is deprecated.
+
+## 48.6 Completion rule
+
+Documentation alone does not mean this architecture is implemented. Each phase requires code, tests, validation evidence and deployment evidence before being marked complete.
