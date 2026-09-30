@@ -93,6 +93,9 @@ In *Union of India v. Tulsiram Patel* (1985) 3 SCC 398, a 5-judge Constitution B
    - If the recorded reasons are arbitrary, extraneous, or non-existent, the court will quash the dismissal order as a colourable exercise of power.
    - Under Proviso (c), the Court can inspect government intelligence files in camera to verify that material concerning the security of the State existed.`,
 
+Evidence and litigation anchor
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+
   sections: [
     {
       id: 'art311-pleasure-doctrine',
@@ -340,6 +343,7 @@ Articles 310 and 311 embody the mature genius of the Indian Constitution. By emb
   ],
 
   bareActPointers: [
+    'Bharatiya Sakshya Adhiniyam, 2023 — sections 104–106, 109 and 63 where applicable',
     'Art 309 — Recruitment & conditions of service (Rules proviso)',
     'Art 310 — Doctrine of Pleasure (President & Governor)',
     'Art 311(1) — Subordinate authority dismissal bar',
