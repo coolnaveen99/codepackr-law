@@ -47,6 +47,9 @@ Procedural & Courtroom Anchors (Senior Counsel Checklist)
 Current-Law Position & Milestone
 The Preamble was amended once by the 42nd Constitutional Amendment Act, 1976 (inserting “Socialist”, “Secular”, and “and integrity”). Upheld as valid in Kesavananda and Bommai. Current through the 106th Amendment (2023).`,
 
+Evidence and litigation anchor
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+
   sections: [
     {
       id: 'preamble-text-anatomy',
@@ -252,7 +255,8 @@ The Preamble is the compass that guides India’s transformative constitutionali
     },
   ],
 
-  bareActPointers: ['Preamble', 'Art 368', 'Art 32', 'Art 226'],
+  bareActPointers: [
+    'Bharatiya Sakshya Adhiniyam, 2023 — sections 104–106, 109 and 63 where applicable','Preamble', 'Art 368', 'Art 32', 'Art 226'],
 
   examTips: [
     'Always trace the shift from Berubari Union (1960) to Kesavananda Bharati (1973).',
