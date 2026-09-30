@@ -19,7 +19,7 @@ A foundational shift occurred in Indian constitutional theory regarding the rela
 
 ## 2. Textual Anatomy: Articles 15 and 16
 
-### Article 15: Non-Discrimination and Special Provisions
+ Article 15: Non-Discrimination and Special Provisions
 - **15(1):** Prohibits the State from discriminating against any citizen on grounds **only** of religion, race, caste, sex, place of birth, or any of them.
 - **15(2):** Horizontal application against private citizens prohibiting discrimination regarding access to shops, public restaurants, hotels, wells, tanks, and public bathing ghats.
 - **15(3):** Protective discrimination in favor of women and children.
@@ -27,7 +27,7 @@ A foundational shift occurred in Indian constitutional theory regarding the rela
 - **15(5) [93rd Amendment, 2005]:** Special provisions for admission to educational institutions, including private aided or unaided institutions, except minority educational institutions under Article 30(1) (*P.A. Inamdar* override; upheld in *Pramati Educational Trust*, 2014).
 - **15(6) [103rd Amendment, 2019]:** Up to 10% reservation in educational admissions for Economically Weaker Sections (EWS) of citizens other than SC/ST/OBCs.
 
-### Article 16: Equality of Opportunity in Public Employment
+ Article 16: Equality of Opportunity in Public Employment
 - **16(1) & 16(2):** Equality of opportunity in State employment; bars discrimination on grounds only of religion, race, caste, sex, descent, place of birth, or residence.
 - **16(3):** Authorizes Parliament (not State Legislatures) to prescribe residence requirements for employment within a State or Union Territory.
 - **16(4):** Authorizes reservation of appointments or posts in favor of any backward class of citizens which, in the opinion of the State, is **not adequately represented** in the services under the State.
@@ -51,24 +51,24 @@ A 9-judge Constitution Bench settled the contours of Article 16(4) by a 6:3 majo
 
 ## 4. The Promotion Reservation Saga: *Nagaraj*, *Jarnail Singh*, and *Davinder Singh*
 
-### A. The Constitutional Amendments (1995–2001)
+ A. The Constitutional Amendments (1995–2001)
 To overcome *Indra Sawhney's* bar on promotion reservations, Parliament passed:
 - The **77th Amendment (1995):** Inserted Article 16(4A) allowing reservations in promotions for SCs/STs.
 - The **81st Amendment (2000):** Inserted Article 16(4B) (carrying forward unfilled reserved vacancies without the 50% cap).
 - The **85th Amendment (2001):** Granted retrospective "consequential seniority" to promoted SC/ST candidates.
 
-### B. The Tripartite Injunctions of *M. Nagaraj v. Union of India* (2006) 8 SCC 212
+ B. The Tripartite Injunctions of *M. Nagaraj v. Union of India* (2006) 8 SCC 212
 A 5-judge Constitution Bench upheld the validity of Articles 16(4A) and 16(4B), but made their exercise conditional upon the State demonstrating three quantifiable metrics:
 1. **Quantifiable data** showing backwardness of the class;
 2. **Quantifiable data** showing inadequacy of representation in public services;
 3. Compliance with **Article 335** (maintenance of efficiency of administration).
 
-### C. Refinement in *Jarnail Singh v. Lachhmi Narain Gupta* (2018) 10 SCC 396
+ C. Refinement in *Jarnail Singh v. Lachhmi Narain Gupta* (2018) 10 SCC 396
 A 5-judge Constitution Bench modified *M. Nagaraj*:
 - **No Data on Backwardness for SC/ST:** Because the President has already listed SCs and STs under Articles 341 and 342, requiring States to collect quantifiable data on their backwardness violated *Indra Sawhney*.
 - **Creamy Layer Applies to SC/ST:** However, the Court ruled that the **Creamy Layer principle applies to SCs and STs** when seeking the benefit of reservations in promotions under Article 16(4A). Affluent SC/ST individuals cannot corner promotion quotas at the expense of disadvantaged brethren.
 
-### D. Sub-Classification Upheld: *State of Punjab v. Davinder Singh* (2024)
+ D. Sub-Classification Upheld: *State of Punjab v. Davinder Singh* (2024)
 A 7-judge Constitution Bench (6:1) overruled *E.V. Chinnaiah* (2005):
 - The Court ruled that States have the constitutional competence to **sub-classify / create internal quotas within Scheduled Castes and Scheduled Tribes** to ensure preferential benefits reach the most vulnerable, destitute sub-castes (e.g., Valmikis, Mazhabi Sikhs).
 - **Conditions:** Sub-classification must be based on objective quantifiable data demonstrating differing levels of backwardness, and the State **must apply the Creamy Layer exclusion** to SCs/STs.
@@ -84,41 +84,53 @@ A 5-judge Constitution Bench by a 3:2 majority upheld the **Constitution (One Hu
 
   sections: [
     {
-      id: 'eq-res-philosophy',
-      title: 'Formal vs Substantive Equality: The N.M. Thomas Revolution',
+      id: 'eq-res-textual-architecture',
+      title: 'Articles 14–16: Equality, Non-Discrimination & Enabling Reservation Powers',
       order: 1,
       content: [
-        'Articles 15(4) and 16(4) were originally treated as exceptions to formal equality (Champakam Dorairajan; Balaji).',
-        'N.M. Thomas and Indra Sawhney established that affirmative action is a facet of substantive equality, not an exception.',
+        'Article 14 supplies the general equality guarantee; Articles 15 and 16 address specified discrimination and equality-of-opportunity contexts while permitting constitutionally authorized affirmative measures.',
+        'Article 15(4), 15(5) and 15(6) concern advancement and educational access; Article 16(4), 16(4A), 16(4B) and 16(6) concern public employment within their respective constitutional conditions.',
+        'Reservation provisions are enabling provisions: they authorize constitutionally permissible measures but do not, by themselves, create an unconditional individual entitlement to a particular quota.',
       ],
     },
     {
-      id: 'eq-res-indra-sawhney',
-      title: 'The Mandal Charter: Indra Sawhney v. Union of India (1992)',
+      id: 'eq-res-substantive-equality',
+      title: 'Substantive Equality, Classification & Backward Classes',
       order: 2,
       content: [
-        'Caste can be an initial metric for social/educational backwardness.',
-        'Creamy layer exclusion is mandatory to prevent affluent sections from cornering benefits.',
-        '50% annual ceiling on reservations; no reservation in promotions under 16(4).',
+        'N.M. Thomas and Indra Sawhney moved the analysis away from treating affirmative action as a simple exception to equality and toward substantive equality.',
+        'Classification must remain connected to a constitutionally relevant objective; the State must identify the class and the statutory/constitutional basis for differential treatment.',
+        'For Article 16(4), backwardness and inadequate representation are distinct constitutional considerations; economic disadvantage alone was not the Article 16(4) test in Indra Sawhney, while later Article 16(6) provides a distinct EWS route.',
       ],
     },
     {
-      id: 'eq-res-nagaraj-jarnail',
-      title: 'Promotion Reservations: Nagaraj, Jarnail Singh & Davinder Singh',
+      id: 'eq-res-reservation-limits',
+      title: 'Indra Sawhney: Creamy Layer, 50% Ceiling & Promotions',
       order: 3,
       content: [
-        'Articles 16(4A) and 16(4B) saved promotion reservations and carry-forward backlog vacancies.',
-        'Nagaraj required quantifiable data; Jarnail Singh dispensed with backwardness data for SC/ST but applied Creamy Layer to promotions.',
-        'Davinder Singh (2024 - 7 judges) permitted sub-classification within SCs/STs with creamy layer exclusion.',
+        'Indra Sawhney recognized the creamy-layer principle for backward classes and treated exclusion of advanced sections as integral to effective affirmative action.',
+        'The 50% ceiling is the general rule in the Article 16(4) framework, subject to the constitutional doctrine developed by the Court and later amendments; it should not be stated as an absolute rule applicable identically to every reservation provision.',
+        'Article 16(4) itself does not authorize promotion reservation; Parliament subsequently inserted Article 16(4A) for SC/ST promotion reservations, subject to constitutional conditions and judicial review.',
       ],
     },
     {
-      id: 'eq-res-ews',
-      title: 'Economic Weaker Sections (103rd Amendment & Janhit Abhiyan)',
+      id: 'eq-res-promotion-subclassification',
+      title: 'Promotion Reservation & SC/ST Sub-Classification',
       order: 4,
       content: [
-        'Articles 15(6) and 16(6) provide up to 10% reservation on economic criteria.',
-        'Janhit Abhiyan (2022) upheld EWS: economic status is a valid ground, and 50% limit applies only to 15(4)/16(4) quotas.',
+        'M. Nagaraj, as refined by Jarnail Singh, requires constitutionally relevant data and safeguards for promotion reservations; Jarnail Singh removed the requirement to prove SC/ST backwardness as a fresh empirical proposition while retaining other constitutional requirements.',
+        'State of Punjab v. Davinder Singh (2024) held that sub-classification within the Scheduled Castes is constitutionally permissible where supported by a rational basis and designed to address unequal distribution of benefits; it does not alter the Presidential list under Article 341.',
+        'The Court’s discussion of creamy-layer exclusion for SC/ST affirmative action should be presented as a substantive-equality principle and policy requirement, not as a claim that every sub-classification automatically fails without one identical formula.',
+      ],
+    },
+    {
+      id: 'eq-res-ews-litigation',
+      title: 'EWS, Constitutional Review & Litigation/Evidence Roadmap',
+      order: 5,
+      content: [
+        'The 103rd Amendment inserted Articles 15(6) and 16(6), creating a separate constitutional basis for EWS reservation. Janhit Abhiyan (2022) upheld the amendment by majority.',
+        'A challenge should identify the precise reservation clause, class definition, constitutional amendment or executive measure, data relied upon by the State, and the equality/basic-structure ground actually pleaded.',
+        'For disputed empirical facts, BSA ss. 104–106 provide the general burden framework and s. 109 addresses facts especially within a person’s knowledge. These provisions do not create a special reservation-law burden; evidentiary relevance depends on the proceeding and the fact in issue.',
       ],
     },
   ],
@@ -148,7 +160,7 @@ A 5-judge Constitution Bench by a 3:2 majority upheld the **Constitution (One Hu
       id: 'eq-res-hypo-1',
       title: 'The Sub-Classification within Scheduled Castes Dispute',
       scenario: 'State Delta conducts an empirical study revealing that out of 50 sub-castes comprising the Scheduled Caste list in the State, 80% of all government appointments and university seats have been monopolized by two dominant sub-castes, while the "Safai Karamchari" and manual scavenging sub-castes have zero representation. State Delta enacts the Delta SC Welfare Act, reserving 50% of the State\'s total SC quota exclusively for the most depressed sub-castes. A student from the dominant SC sub-caste challenges this as an unconstitutional tampering with the Presidential SC list under Article 341. Decide.',
-      analysis: '1. Constitutional Authority over Presidential List: Under Article 341, only Parliament can add or subtract castes from the Presidential SC list. 2. The Davinder Singh Landmark (2024): A 7-judge Constitution Bench in State of Punjab v. Davinder Singh held that sub-classification for the purpose of granting intra-caste preferential reservations does not amend or alter the Presidential list under Article 341. It is a legitimate exercise of legislative power under Article 16(4) to ensure substantive equality. 3. Conditions Precedent: (a) Sub-classification must be backed by quantifiable empirical data proving inadequate representation; (b) The State must apply the Creamy Layer exclusion within SCs. 4. Conclusion: State Delta\'s legislation is backed by empirical data and fulfills the constitutional mandate of Davinder Singh. The sub-classification is constitutionally valid.',
+      analysis: '1. Constitutional authority: Article 341 fixes the Presidential list, while the judgment distinguishes altering that list from constitutionally permissible sub-classification for distribution of benefits. 2. Davinder Singh (2024): A 7-judge Constitution Bench held that sub-classification within the SC list is permissible when supported by a rational constitutional basis and relevant empirical material. 3. Judicial review: The State must justify the classification by relevant data and the object of addressing unequal representation or access. 4. Conclusion: The hypothetical provision would be assessed against those requirements; the empirical record and statutory design are central to validity.',
     },
   ],
 
@@ -190,15 +202,15 @@ A 5-judge Constitution Bench by a 3:2 majority upheld the **Constitution (One Hu
 
   questionsAndAnswers: [
     {
-      id: 'eq-res-qa-10m',
+      id: 'eq-res-qa-brief',
       draftingCategory: 'brief',
       question: 'Discuss the landmark principles laid down by the 9-judge Constitution Bench in Indra Sawhney v. Union of India (1992) regarding reservations in public employment under Article 16(4).',
-      answer: `### 1. Synopsis / Introduction
+      answer: `1. Synopsis / Introduction
 In *Indra Sawhney v. Union of India* (AIR 1993 SC 477), popularly known as the **Mandal Commission Case**, a 9-judge Constitution Bench established the comprehensive constitutional jurisprudence governing affirmative action and reservations in public services under **Article 16(4)**.
 
 ---
 
-### 2. Foundational Rulings in *Indra Sawhney*
+2. Foundational Rulings in *Indra Sawhney*
 1. **Substantive Equality:** Affirmative action under Article 16(4) is not an "exception" to Article 16(1), but an emphatic manifestation of substantive equality.
 2. **Identification of Backward Classes:** 
    - A caste can be a starting point for identifying backward classes under Article 16(4), provided that caste suffers from social and educational backwardness.
@@ -210,68 +222,68 @@ In *Indra Sawhney v. Union of India* (AIR 1993 SC 477), popularly known as the *
 
 ---
 
-### 3. Conclusion
+3. Conclusion
 *Indra Sawhney* remains the foundational charter of Indian affirmative action jurisprudence, balancing historical social justice with individual merit, creamy layer exclusion, and the 50% quantitative barrier.`,
       relatedProvisionIds: ['constitution-article-14', 'constitution-article-16'],
     },
     {
-      id: 'eq-res-qa-16m',
+      id: 'eq-res-qa-submissions',
       draftingCategory: 'submissions',
       question: '"Affirmative action under Articles 15 and 16 is not a compromise with equality, but the constitutional instrument for realizing substantive equality." Critically examine the evolution of reservation jurisprudence in India. Trace the constitutional amendments and judicial rulings from Indra Sawhney through M. Nagaraj and Jarnail Singh to the EWS judgment (Janhit Abhiyan) and the sub-classification verdict in State of Punjab v. Davinder Singh (2024).',
-      answer: `### 1. Introduction: From Formal Equality to Substantive Equality
+      answer: ` 1. Introduction: From Formal Equality to Substantive Equality
 In classical liberal philosophy, equality before the law is conceived as formal procedural neutrality: treating all individuals identically regardless of their historical, social, or economic starting points. However, in an ancient, deeply stratified society marred by millennia of caste oppression and untouchability, treating unequals equally perpetuates and reinforces injustice.
 
 The Supreme Court of India recognized this reality in *State of Kerala v. N.M. Thomas* (1976), abandoning the early colonial doctrine of *Champakam Dorairajan* (1951) that viewed reservations as "exceptions" to equality. In modern Indian constitutionalism, **Articles 15(4), 15(5), 15(6), 16(4), 16(4A), and 16(6)** are recognized as the substantive embodiments of Article 14—active constitutional instruments designed to eliminate structural inequality.
 
----
 
-### 2. The Mandal Epoch: *Indra Sawhney v. Union of India* (1992 Supp (3) SCC 217)
+
+ 2. The Mandal Epoch: *Indra Sawhney v. Union of India* (1992 Supp (3) SCC 217)
 The 9-judge Constitution Bench settled the bedrock rules of Article 16(4):
 1. **Caste as an Entry Point:** Caste can be used to identify social backwardness, but caste alone cannot be the sole criterion.
 2. **Exclusion of the Creamy Layer:** Affirmative action must benefit the truly disadvantaged. The affluent, socially advanced layer must be weeded out.
 3. **The 50% Rule:** Total reservations must not exceed 50% in any given recruitment year (*Balaji* reaffirmed).
 4. **Promotion Bar:** Reservations under Article 16(4) were held unconstitutional in matters of promotion.
 
----
 
-### 3. The Constitutional Battle over Promotions: *Nagaraj* and *Jarnail Singh*
 
-#### A. The Legislative Response (Articles 16(4A) and 16(4B))
+ 3. The Constitutional Battle over Promotions: *Nagaraj* and *Jarnail Singh*
+
+ A. The Legislative Response (Articles 16(4A) and 16(4B))
 Parliament amended the Constitution to preserve SC/ST reservations:
 - **77th Amendment (1995):** Inserted Article 16(4A) allowing reservations in promotion for SCs/STs.
 - **81st Amendment (2000):** Inserted Article 16(4B) introducing the carry-forward rule exempting backlog vacancies from the 50% cap.
 - **85th Amendment (2001):** Conferred retrospective "consequential seniority" to promoted SC/ST candidates.
 
-#### B. The Triple Test of *M. Nagaraj v. Union of India* (2006) 8 SCC 212
+ B. The Triple Test of *M. Nagaraj v. Union of India* (2006) 8 SCC 212
 The Constitution Bench upheld the 77th, 81st, and 85th Amendments as preserving the basic structure, but imposed three mandatory constitutional conditions on States seeking to implement promotion reservations:
 1. Production of **quantifiable data showing backwardness** of the class;
 2. Production of **quantifiable data showing inadequacy of representation** in the specific service/cadre;
 3. Ensuring compliance with **Article 335** (administrative efficiency).
 
-#### C. The Correction in *Jarnail Singh v. Lachhmi Narain Gupta* (2018) 10 SCC 396
+ C. The Correction in *Jarnail Singh v. Lachhmi Narain Gupta* (2018) 10 SCC 396
 A 5-judge Bench resolved tensions arising from *Nagaraj*:
 - **No Backwardness Data for SC/ST:** The Court held that requiring States to collect quantifiable data on the backwardness of SCs and STs directly conflicted with *Indra Sawhney*, because SCs and STs are already constitutionally recognized as backward under Articles 341 and 342.
 - **Creamy Layer for SC/ST Promotions:** However, the Court ruled that the **Creamy Layer doctrine applies to SCs/STs** when claiming promotion reservations under Article 16(4A). An affluent SC/ST candidate who has reached top administrative posts cannot continue to extract promotion advantages over disadvantaged brethren.
 
----
 
-### 4. The Economic Criterion Paradigm: *Janhit Abhiyan v. Union of India* (2022) 10 SCC 1
+
+ 4. The Economic Criterion Paradigm: *Janhit Abhiyan v. Union of India* (2022) 10 SCC 1
 The **Constitution (One Hundred and Third Amendment) Act, 2019** introduced Articles 15(6) and 16(6), providing up to 10% reservation for Economically Weaker Sections (EWS). A 5-judge Constitution Bench (3:2 majority) upheld the amendment:
 1. **Economic Status as Sole Basis:** The majority held that economic deprivation is an independent form of disadvantage, and economic criteria alone can form a reasonable classification under Article 14.
 2. **Exclusion of SC/ST/OBCs Valid:** Because SC/ST/OBCs already receive compensatory quotas under Articles 15(4) and 16(4), their exclusion from the 10% EWS quota does not destroy the basic structure.
 3. **50% Ceiling Inapplicable:** The 50% ceiling in *Indra Sawhney* was held to apply strictly to existing SEBC/SC/ST quotas, and did not prevent Parliament from creating an additional constitutional EWS quota.
 
----
 
-### 5. Sub-Classification Landmark: *State of Punjab v. Davinder Singh* (2024)
+
+ 5. Sub-Classification Landmark: *State of Punjab v. Davinder Singh* (2024)
 In August 2024, a 7-judge Constitution Bench (6:1) overruled *E.V. Chinnaiah* (2005):
 - **Competence to Sub-Classify:** The Supreme Court held that States have sovereign competence under Articles 15(4) and 16(4) to **sub-classify within Scheduled Castes and Scheduled Tribes** to grant preferential reservations to the most impoverished and marginalized sub-castes (e.g., Arunthathiyars, Valmikis).
 - **Not Tampering with Article 341:** Sub-classification does not add or delete castes from the Presidential list under Article 341; it merely apportions reservations within the list.
 - **Strict Safeguards:** Sub-classification cannot be based on political whim; it must be supported by empirical quantifiable data of inadequacy, and the State **must apply the Creamy Layer exclusion** within SCs and STs.
 
----
 
-### 6. Summary Matrix: The Affirmative Action Architecture
+
+ 6. Summary Matrix: The Affirmative Action Architecture
 
 | Dimension | Articles 15(4) & 16(4) (OBC/SC/ST) | Articles 16(4A) & 16(4B) (Promotions) | Articles 15(6) & 16(6) (EWS) |
 | :--- | :--- | :--- | :--- |
@@ -280,9 +292,9 @@ In August 2024, a 7-judge Constitution Bench (6:1) overruled *E.V. Chinnaiah* (2
 | **Creamy Layer** | Mandatory for OBCs (*Indra Sawhney*) | Mandatory for SCs/STs (*Jarnail Singh*) | Defined by economic threshold (Rs. 8 Lakh) |
 | **Sub-Classification** | Permissible with empirical data | Permissible (*Davinder Singh*, 2024) | Not applicable |
 
----
 
-### 7. Conclusion
+
+ 7. Conclusion
 Indian reservation jurisprudence has undergone an extraordinary evolution from the mechanical quotas of *Champakam Dorairajan* to the multi-dimensional, data-driven framework of *Davinder Singh* and *Janhit Abhiyan*. By harmonizing affirmative action with merit, administrative efficiency (Article 335), and creamy layer exclusion, the Supreme Court has transformed the equality code into a dynamic engine of transformative constitutionalism.`,
       relatedProvisionIds: ['constitution-article-14', 'constitution-article-15', 'constitution-article-16', 'constitution-article-335'],
     },
