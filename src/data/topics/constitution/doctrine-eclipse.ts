@@ -57,6 +57,9 @@ In *Ambica Mills*, the Supreme Court introduced a critical refinement:
 - Therefore, a post-Constitution law violating an Article 19 right is **not still-born for all purposes**. It is void only *vis-à-vis citizens*. As against non-citizens, corporations, and foreigners, the law was never void and remains completely operative.
 - Hence, the law remains dormant (eclipsed) only in relation to citizens, demonstrating a modified application of dormancy even to post-Constitution statutes.`,
 
+Evidence and litigation anchor
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+
   sections: [
     {
       id: 'eclipse-foundation',
@@ -292,6 +295,7 @@ The Doctrine of Eclipse is a masterclass in judicial pragmatism. It bridges the 
   ],
 
   bareActPointers: [
+    'Bharatiya Sakshya Adhiniyam, 2023 — sections 104–106, 109 and 63 where applicable',
     'Art 13(1) — Pre-Constitution laws inconsistent with FRs void to the extent of inconsistency',
     'Art 13(2) — State shall not make any law taking away/abridging FRs',
     'Art 13(3) — Definition of "law" and "laws in force"',
