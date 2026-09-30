@@ -244,3 +244,97 @@ For major roadmap work, the final implementation report must include:
 - follow-up work.
 
 Never claim an item is implemented because only documentation was created.
+
+
+## 15. Content Depth & Judgment Decoding Standard — MANDATORY
+
+The canonical content standard is:
+docs/content-depth-and-judgment-decoder-standard.md
+
+All new and updated student-facing legal topics must follow that standard.
+
+### 15.1 No shallow topic content
+
+Do not treat a short paragraph or a few sentences as a complete legal topic.
+
+Use complexity-based minimum depth:
+- Foundation topic: 1,200–1,800 substantive words.
+- Standard doctrinal/section topic: 1,800–3,000.
+- Core/high-value topic: 3,000–5,000.
+- Major/landmark topic: 5,000–8,000+ where genuinely warranted.
+
+These are minimum quality bands, not rigid quotas. Never add filler merely to reach a number.
+
+### 15.2 Topic depth must be structural
+
+A substantive topic should cover, where applicable:
+definition, scope, legal source, provenance, statutory deconstruction, ingredients, conditions, provisos, exceptions, rule/test, application, procedure, jurisdiction, limitation, remedies, defences, counterarguments, illustrations, hypotheticals, distinctions, misconceptions, authorities, judgment decoding, practical relevance and revision.
+
+If a section is inapplicable, do not manufacture content; omit it deliberately.
+
+### 15.3 Reasoning/application is mandatory
+
+Student content must teach:
+Rule → Fact → Legal inference → Counterargument → Court response → Finding → Conclusion.
+
+Do not produce topic pages that merely state rules without showing how those rules operate on facts.
+
+### 15.4 Judgment decoding
+
+For important judgments, provide the progressive decoder:
+1. identification;
+2. orientation;
+3. material facts;
+4. procedural history;
+5. issues;
+6. governing law;
+7. parties' arguments;
+8. court reasoning;
+9. holding/ratio/obiter/final disposition;
+10. significance and later treatment.
+
+Do not invent arguments, paragraph references, holdings or ratios.
+
+### 15.5 Case-depth guidance
+
+- Ordinary relevant case: approximately 250–500 words.
+- Important authority: approximately 500–1,000 words.
+- Landmark judgment: approximately 1,000–2,500+ words where justified.
+
+The original judgment remains the authoritative source; the CodePackr version is an educational companion.
+
+### 15.6 Existing-topic upgrade rule
+
+When updating a short topic:
+- preserve accurate content;
+- remove boilerplate/repetition;
+- add missing doctrinal layers;
+- add authoritative sources;
+- strengthen case analysis;
+- add factual applications;
+- add judgment decoding;
+- update revision points;
+- verify current law.
+
+Do not simply append paragraphs to an old shallow page.
+
+### 15.7 Content-quality gate
+
+Word count alone is never sufficient. Review:
+- accuracy;
+- sourceability;
+- information density;
+- doctrinal depth;
+- statutory deconstruction;
+- case-law reasoning;
+- practical application;
+- student clarity;
+- judgment decoding;
+- revision usefulness.
+
+Any hallucinated authority or material legal error fails the content gate regardless of length.
+
+### 15.8 Topic generation/update workflow
+
+Research → Outline → Author → Source verification → Judgment verification → Content-depth audit → Student usability review → Legal quality gate → Build → Checklist → Merge.
+
