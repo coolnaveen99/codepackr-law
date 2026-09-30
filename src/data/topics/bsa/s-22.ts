@@ -1,237 +1,48 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  "glance": "BSA s. 22, Confession caused by inducement, threat, coercion or promise, when irrelevant in criminal proceeding, is an evidentiary provision in the Relevancy of facts cluster. Analyse it through the separate questions of relevancy, admissibility, proof, burden and probative weight, and check BSA s. 170 for proceedings governed by the repeal and savings rule. Historical concordance: Indian Evidence Act s. 24.",
-  "study": "Current-law identity\nBSA s. 22 governs confession caused by inducement, threat, coercion or promise, when irrelevant in criminal proceeding within Chapter II - Relevancy of facts. The provision must be read with its enacted clauses, explanations, illustrations and connected provisions BSA s. 21, BSA s. 23. Historical concordance: Indian Evidence Act s. 24.\n\nThe forensic distinction\nRelevancy asks whether a fact has the statutory connection required by the Adhiniyam. Admissibility asks whether the Court may receive that relevant material under the rules of exclusion, privilege, form and foundation. Proof asks whether the admitted material establishes the fact to the required standard. Probative weight asks how much reliance the Court should place on it. A relevant fact is not automatically admissible, and admissibility is not proof of the ultimate fact.\n\nMandatory application checklist\n1. Identify the fact in issue, the fact sought to be introduced and the party tendering it.\n2. State the exact rule in BSA s. 22, including every condition, explanation, proviso and illustration.\n3. Classify the material as oral, documentary, electronic, real or circumstantial evidence.\n4. Test directness, hearsay, privilege, primary or secondary evidence, authentication and statutory certificate requirements.\n5. Identify the party bearing the initial burden under BSA s. 104 and any special-knowledge rule under s. 109.\n6. Separate admissibility from the weight ultimately assigned after cross-examination and the complete record.\n\nElectronic records and constitutional limits\nElectronic and digital records are documents under BSA. Where a computer output, email, messaging record, CCTV export, call record, server log or device image is tendered through the statutory route, check BSA s. 63 and its certificate requirements. The certificate is not a substitute for relevance, authenticity, chain of custody or proof of the fact asserted. Evidence must also respect Articles 20(3), 21 and 14 of the Constitution, privilege rules and fair-trial disclosure.\n\nCourtroom method\nIn a written submission, identify the fact in issue, show the statutory relevancy link, answer the admissibility objection, establish the foundation, identify the burden and standard, and explain the probative consequence. Do not cite the historical Evidence Act number as the current rule after 1 July 2024 except as concordance. Do not convert a missing certificate, hearsay statement or weak foundation into an automatic finding on the merits without analysing the applicable statutory consequence.",
-  "sections": [
-    {
-      "id": "bsa-22-module-1",
-      "title": "Provenance, Legislative Objective and Evidentiary Foundation",
-      "order": 1,
-      "content": [
-        "BSA s. 22 regulates confession caused by inducement, threat, coercion or promise, when irrelevant in criminal proceeding within Relevancy of facts.",
-        "The statutory scheme seeks reliable adjudication by limiting proof to legally relevant and properly received material.",
-        "Read the provision with the constitutional values of fair trial, privilege, reliability and equality of arms."
-      ]
-    },
-    {
-      "id": "bsa-22-module-2",
-      "title": "Textual Anatomy, Exceptions and Connected Rules",
-      "order": 2,
-      "content": [
-        "Deconstruct every clause of BSA s. 22; do not replace the enacted rule with a one-line Evidence Act summary.",
-        "Read it with BSA s. 21, BSA s. 23. Connected provisions may control foundation, exclusion, presumptions, witnesses or the mode of proof.",
-        "Historical concordance assists comparison only and is not the current citation."
-      ]
-    },
-    {
-      "id": "bsa-22-module-3",
-      "title": "Mandatory Relevancy, Admissibility and Proof Ingredients",
-      "order": 3,
-      "content": [
-        "First ingredient: identify the fact in issue or the statutory relevancy link.",
-        "Second ingredient: satisfy any exclusion, privilege, directness, primary-document or foundation rule.",
-        "Third ingredient: prove authenticity and the source or maker where the form of evidence requires it.",
-        "Fourth ingredient: apply the correct burden and standard, then distinguish admissibility from probative weight."
-      ]
-    },
-    {
-      "id": "bsa-22-module-4",
-      "title": "BSA Burdens, Presumptions and Electronic Records",
-      "order": 4,
-      "content": [
-        "BSA s. 104 supplies the ordinary burden framework; the party asserting the legal proposition must establish its foundation.",
-        "BSA s. 109 addresses facts especially within knowledge. It does not erase the initial burden or permit conviction on an unproved charge.",
-        "For electronic records, examine BSA s. 63 certificate, device or system identity, production method, integrity, custody and the distinction between admissibility and weight."
-      ]
-    },
-    {
-      "id": "bsa-22-module-5",
-      "title": "Trial Roadmap, Forum, Limitation and Repeal Savings",
-      "order": 5,
-      "content": [
-        "Apply BSA s. 22 at the correct stage of trial or inquiry and identify whether the objection concerns tender, marking, admissibility, proof or final weight.",
-        "For proceedings governed by the post-1 July 2024 evidence regime, cite BSA. For proceedings saved by s. 170, identify the applicable Indian Evidence Act route before arguing the consequence.",
-        "Check the governing procedural statute and any special limitation rule for the application or appeal; evidence law itself does not create a universal limitation period."
-      ]
-    }
+  "glance":"BSA s. 22 excludes a confession in a criminal proceeding when the Court finds it was caused by an inducement, threat, coercion or promise from a person in authority, subject to the statutory qualification concerning removal of that impression. Read it with ss. 23–24, Article 20(3) and the rules on discovery and retracted confessions. Historical concordance: Indian Evidence Act s. 24.",
+  "study":"CURRENT LAW\nSection 22 governs the voluntariness of confessions in criminal proceedings. The Court asks whether the confession was caused by an inducement, threat, coercion or promise connected with the charge, proceeding from a person in authority, and whether it created an impression of an advantage or avoidance of temporal evil in relation to the proceeding. The statutory qualification concerning removal of that impression must be applied on the evidence.\n\nVOLUNTARINESS AND PROOF\nA confession is not treated as reliable merely because it is recorded. The Court must examine the circumstances in which it was made. Section 22 is distinct from s. 23's rules concerning confessions to police officers and confessions in police custody. Section 24 separately addresses the relevance of a confession affecting a co-accused when the statutory conditions are met.\n\nCONSTITUTIONAL OVERLAY\nArticle 20(3) protects an accused against being compelled to be a witness against himself. Article 21 supplies fair-procedure values. These constitutional protections operate alongside the statutory exclusion rules; do not reduce s. 22 to a mere credibility objection.\n\nRETRACTED CONFESSION\nRetraction is not itself an automatic rule of exclusion under s. 22. The Court must examine the circumstances of making, the reason for retraction, corroboration where required by the governing doctrine, and the totality of evidence. The prosecution cannot cure a confession that is statutorily excluded merely by asserting that it is corroborated.\n\nDIGITAL / AUDIO-VISUAL RECORDS\nA recording of a confession is still subject to the substantive rules governing confessions. Electronic-record admissibility under s. 63 does not remove the voluntariness, police-confession or constitutional questions. First decide whether the confession is legally receivable; only then assess authenticity and weight.\n\nTRANSITION\nFor current proceedings use BSA numbering. Check s. 170 for the repeal-and-savings rule in an existing proceeding governed by the former Evidence Act.",
+  "sections":[
+    {"id":"bsa-22-module-1","title":"Elements of the Exclusion","order":1,"content":["Identify a confession offered in a criminal proceeding.","Ask whether it was caused by inducement, threat, coercion or promise.","Identify the person in authority and the connection to the charge, proceeding or threatened temporal evil/advantage contemplated by the section."]},
+    {"id":"bsa-22-module-2","title":"Causal Connection and Voluntariness","order":2,"content":["The statutory inquiry is causal: the prohibited inducement, threat, coercion or promise must have caused the confession.","Assess timing, language, circumstances, custody, vulnerability, access to legal assistance and the surrounding conduct where relevant to the causal inquiry.","The Court should distinguish a genuinely voluntary statement from one produced by pressure that falls within the statutory rule."]},
+    {"id":"bsa-22-module-3","title":"Connected Confession Provisions","order":3,"content":["Section 23 separately governs confessions to police officers and confessions in police custody, subject to its statutory exception concerning discovery.","Section 24 addresses when a confession proved against a maker may be taken into consideration against another jointly tried accused under the statutory conditions.","A section 22 objection should therefore be analysed alongside, not substituted for, the other confession provisions."]},
+    {"id":"bsa-22-module-4","title":"Constitution, Retracted Confessions and Digital Recordings","order":4,"content":["Article 20(3) prohibits compelled self-incrimination; Article 21 informs the fairness of criminal process.","Retraction requires careful assessment of circumstances and credibility; it does not automatically answer every statutory question.","An audio, video, messaging or other electronic recording must satisfy the applicable electronic-record route, but technical admissibility does not cure an independently inadmissible confession."]},
+    {"id":"bsa-22-module-5","title":"Advocacy and Error Control","order":5,"content":["For the defence, identify the exact statutory element and evidence showing causation. For the prosecution, address each statutory element and any evidence that the relevant impression had been removed before the confession.","Do not conflate police-confession rules under s. 23 with the inducement/threat/coercion rule in s. 22.","Use s. 170 for saved proceedings and historical Evidence Act s. 24 only as concordance."]}
   ],
-  "provisions": [
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-22",
-      "section": "s. 22",
-      "title": "Confession caused by inducement, threat, coercion or promise, when irrelevant in criminal proceeding"
-    },
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-63",
-      "section": "s. 63",
-      "title": "Admissibility of electronic records"
-    },
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-104",
-      "section": "s. 104",
-      "title": "Burden of proof"
-    },
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-109",
-      "section": "s. 109",
-      "title": "Burden of proving fact especially within knowledge"
-    },
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-170",
-      "section": "s. 170",
-      "title": "Repeal and savings"
-    }
+  "provisions":[
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-22","section":"s. 22","title":"Confession caused by inducement, threat, coercion or promise, when irrelevant in criminal proceeding"},
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-23","section":"s. 23","title":"Confession to police officer"},
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-24","section":"s. 24","title":"Consideration of proved confession affecting person making it and others jointly under trial"},
+    {"actId":"bsa","actName":"Constitution of India","provisionId":"art-20-3","section":"Article 20(3)","title":"Protection against compelled self-incrimination"},
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-63","section":"s. 63","title":"Admissibility of electronic records"}
   ],
-  "examples": [
-    {
-      "id": "bsa-22-ill-1",
-      "title": "Example 1 - Foundation and admissibility satisfied",
-      "illustrationType": "practical",
-      "description": "A party identifies the fact in issue, establishes the statutory relevancy link under s. 22, proves the source and authenticity of the record, and satisfies the applicable documentary or electronic foundation. The Court may receive the material and then assess its weight."
-    },
-    {
-      "id": "bsa-22-ill-2",
-      "title": "Example 2 - Relevancy does not cure a defect",
-      "illustrationType": "fail-scenario",
-      "description": "A party offers a relevant screenshot or hearsay statement but cannot satisfy the applicable statutory foundation, certificate, directness or privilege rule. The Court must analyse admissibility separately instead of treating logical relevance as automatic proof."
-    }
+  "examples":[
+    {"id":"bsa-22-ill-1","title":"Inducement by a person in authority","illustrationType":"practical","description":"An officer promises a suspect a material advantage in relation to the criminal proceeding if the suspect confesses. The Court must examine whether the promise caused the confession and falls within s. 22."},
+    {"id":"bsa-22-ill-2","title":"Recording does not cure coercion","illustrationType":"fail-scenario","description":"A confession is captured on video but the surrounding evidence indicates that it was obtained through prohibited coercion. The recording's authenticity does not answer the substantive confession objection."}
   ],
-  "hypotheticals": [
-    {
-      "id": "bsa-22-hypo",
-      "title": "Chamber Practice Hypothetical: BSA s. 22",
-      "facts": "In a criminal trial, the prosecution tenders an oral statement and a digital record to establish a fact connected with the charge. The defence objects that the material is irrelevant, hearsay, uncertified or unsupported by a competent witness. The prosecution invokes a burden or presumption without first establishing the factual foundation.",
-      "question": "Whether the material is relevant and admissible under BSA s. 22, and what proof and burden consequences follow.",
-      "applicableLaw": "BSA s. 22, connected provisions BSA s. 21, BSA s. 23, ss. 3, 55, 57, 63, 104 and 109 where applicable, and s. 170 savings.",
-      "analysis": "1. Identify the fact in issue and the statutory relevancy route. 2. Test the form of evidence: direct oral evidence, documentary evidence, electronic record, hearsay or privileged communication. 3. Check the applicable foundation and BSA s. 63 certificate where digital material is tendered. 4. Place the initial burden under s. 104 and use s. 109 only after the foundation for special knowledge is established. 5. Separate admissibility from credibility and final probative weight.",
-      "conclusion": "The Court should receive and rely on the material only to the extent that the statutory relevancy, admissibility and proof requirements are independently satisfied. A relevant but inadmissible record cannot become proof merely because it appears persuasive."
-    }
+  "hypotheticals":[
+    {"id":"bsa-22-hypo","title":"Chamber Problem: Retracted Confession","facts":"An accused makes a recorded confession after an investigating officer promises leniency. The accused retracts it at the next judicial opportunity. The prosecution relies on the recording and argues that its technical authenticity proves the confession.","question":"Whether the confession is legally receivable and what follows from the retraction.","applicableLaw":"BSA ss. 22–24, s. 63 where the recording is tendered electronically, and Articles 20(3) and 21.","analysis":"First determine whether s. 22 is engaged by the alleged promise, authority and causal connection. Then consider the separate s. 23 rules if police custody is involved. Only if the confession survives the substantive exclusion rules should its authenticity, retraction, corroboration and weight be assessed.","conclusion":"Technical proof of a recording cannot replace the statutory and constitutional inquiry into whether the confession is legally receivable."}
   ],
-  "distinctions": [
-    {
-      "id": "bsa-22-distinction",
-      "title": "BSA s. 22: relevancy, admissibility and proof",
-      "left": "BSA s. 22",
-      "right": "BSA s. 21, BSA s. 23",
-      "rows": [
-        {
-          "point": "Function",
-          "left": "Confession caused by inducement, threat, coercion or promise, when irrelevant in criminal proceeding",
-          "right": "Connected relevancy, foundation, burden or exclusion rule"
-        },
-        {
-          "point": "Question",
-          "left": "What fact or evidentiary act does this section govern?",
-          "right": "What additional condition must be satisfied?"
-        },
-        {
-          "point": "Trial consequence",
-          "left": "Apply the section to the tendered material",
-          "right": "Then decide admissibility, credibility and weight separately"
-        }
-      ]
-    }
+  "distinctions":[
+    {"id":"bsa-22-distinction","title":"Confession safeguards","left":"s. 22","right":"s. 23","rows":[{"point":"Primary concern","left":"Inducement, threat, coercion or promise causing a confession","right":"Confession to police officer / in police custody and statutory discovery exception"},{"point":"Trigger","left":"Causal influence from person in authority","right":"Police status or custody and the statutory rule"},{"point":"Advocacy focus","left":"Voluntariness and statutory causation","right":"Identity of police recipient, custody and discovery nexus"}]}
   ],
-  "misconceptions": [
-    {
-      "id": "bsa-22-trap-1",
-      "trap": "Citing only the old Evidence Act number for s. 22.",
-      "correction": "Use BSA s. 22 for the current regime and mention the historical number only as concordance or when applying the s. 170 savings rule."
-    },
-    {
-      "id": "bsa-22-trap-2",
-      "trap": "Relevancy automatically means admissibility and proof.",
-      "correction": "Relevancy, admissibility, proof and probative weight are separate forensic inquiries."
-    },
-    {
-      "id": "bsa-22-trap-3",
-      "trap": "BSA s. 109 reverses the entire burden of proof.",
-      "correction": "The initial burden remains with the party asserting the legal proposition; special knowledge operates only on the facts within that statutory rule."
-    }
+  "misconceptions":[
+    {"id":"bsa-22-trap-1","trap":"Every confession is excluded merely because it was made to a police officer.","correction":"Police-confession rules are principally addressed by s. 23; s. 22 concerns inducement, threat, coercion or promise and its statutory conditions."},
+    {"id":"bsa-22-trap-2","trap":"A video recording automatically makes a confession admissible.","correction":"Electronic-record admissibility and substantive confession admissibility are separate inquiries."},
+    {"id":"bsa-22-trap-3","trap":"Retraction automatically destroys or proves a confession.","correction":"Retraction is a circumstance requiring assessment; the Court must apply the governing confession rules and the evidence as a whole."}
   ],
-  "cases": [
-    {
-      "name": "Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal",
-      "year": 2020,
-      "citation": "(2020) 7 SCC 1",
-      "court": "Supreme Court of India",
-      "facts": "The case concerned the proof and certification of electronic records tendered in election litigation.",
-      "issue": "Whether the statutory certificate requirement for computer outputs is mandatory and when secondary electronic evidence may be received.",
-      "ratioDecidendi": "The certificate requirement is a condition precedent for admissibility of the relevant electronic record output, subject to the statutory route and the Court's power to facilitate production where the facts justify it.",
-      "holding": "The Constitution Bench clarified the certificate rule and overruled the contrary view to the extent necessary.",
-      "relevance": "Use where s. 22 concerns electronic records or digital proof; it does not decide the relevancy or admissibility of every non-digital item."
-    },
-    {
-      "name": "Anvar P.V. v. P.K. Basheer",
-      "year": 2014,
-      "citation": "(2014) 10 SCC 473",
-      "court": "Supreme Court of India",
-      "facts": "The Court examined the mode of proving electronic records in an election dispute.",
-      "issue": "Whether electronic records could be admitted without compliance with the statutory certificate route.",
-      "ratioDecidendi": "Electronic evidence must be proved through the special statutory requirements applicable to computer outputs; ordinary secondary-evidence principles cannot bypass that route.",
-      "holding": "The earlier contrary approach was displaced and the certificate discipline was reaffirmed.",
-      "relevance": "Use only for digital evidence issues connected with s. 22; distinguish it from ordinary oral, physical-document or privilege questions."
-    },
-    {
-      "name": "Sharad Birdhichand Sarda v. State of Maharashtra",
-      "year": 1984,
-      "citation": "(1984) 4 SCC 116",
-      "court": "Supreme Court of India",
-      "facts": "The Court assessed a prosecution based substantially on circumstantial evidence.",
-      "issue": "What standard must circumstantial evidence meet before it can support a criminal conviction.",
-      "ratioDecidendi": "The circumstances must be fully established, consistent only with guilt, conclusive in tendency, and form a complete chain excluding every reasonable hypothesis of innocence.",
-      "holding": "The Court restated the safeguards for conviction on circumstantial evidence.",
-      "relevance": "Use where s. 22 concerns circumstantial proof or inference; do not use it as a substitute for a section-specific relevancy rule."
-    }
+  "cases":[
+    {"name":"Pulukuri Kottaya v. King-Emperor","year":1947,"citation":"AIR 1947 PC 67","court":"Privy Council","facts":"The case considered the discovery exception associated with a confession made in police custody under the former evidence law.","issue":"What part of information supplied by an accused can be proved when it leads to discovery?","ratioDecidendi":"Only the portion distinctly relating to the fact discovered falls within the discovery exception; the whole confessional statement does not thereby become admissible.","holding":"The discovery rule was confined to the information that distinctly related to the discovered fact.","relevance":"Use principally with BSA s. 23's discovery exception, not as the main authority for s. 22."},
+    {"name":"Nandini Satpathy v. P.L. Dani","year":1978,"citation":"(1978) 2 SCC 424","court":"Supreme Court of India","facts":"The Court considered the constitutional protection against compelled self-incrimination during questioning.","issue":"How far does Article 20(3) protect a person from compelled testimonial responses?","ratioDecidendi":"The protection against compelled self-incrimination extends to the testimonial compulsion addressed by Article 20(3), subject to the constitutional framework governing the inquiry.","holding":"The Court gave Article 20(3) substantive protection against compelled testimonial responses.","relevance":"Constitutional overlay for confession and compulsion arguments; distinguish it from the statutory exclusion in s. 22."}
   ],
-  "questionsAndAnswers": [
-    {
-      "id": "bsa-22-brief",
-      "draftingCategory": "brief",
-      "question": "Provide a structured legal brief on BSA s. 22 - Confession caused by inducement, threat, coercion or promise, when irrelevant in criminal proceeding.",
-      "answer": "I. ISSUE AND EVIDENTIARY QUESTION\nIdentify the fact in issue, the material tendered and the objection or statutory route.\n\nII. RULE\nBSA s. 22 governs confession caused by inducement, threat, coercion or promise, when irrelevant in criminal proceeding. Read it with BSA s. 21, BSA s. 23, then identify the relevancy, admissibility, proof and burden rules.\n\nIII. APPLICATION\nTest foundation, directness, privilege, documentary or electronic requirements, BSA s. 63 where applicable, and burdens under ss. 104 and 109.\n\nIV. CONCLUSION\nState whether the material is relevant, admissible, proved and what weight or procedural consequence follows.",
-      "explanation": "IRAC brief separating relevancy, admissibility, proof, burden and weight."
-    },
-    {
-      "id": "bsa-22-submissions",
-      "draftingCategory": "submissions",
-      "question": "Draft written submissions on BSA s. 22 - Confession caused by inducement, threat, coercion or promise, when irrelevant in criminal proceeding.",
-      "answer": "I. FACTUAL AND EVIDENTIARY PROVENANCE\nIdentify the witness, document, digital record, fact in issue and stage of tender.\n\nII. STATUTORY SCHEME\nDeconstruct BSA s. 22, its Chapter, connected provisions BSA s. 21, BSA s. 23 and s. 170 savings.\n\nIII. RELEVANCY AND ADMISSIBILITY\nShow the statutory connection, answer hearsay or privilege objections, establish the appropriate foundation and address BSA s. 63 for electronic records.\n\nIV. BURDEN, STANDARD AND WEIGHT\nApply BSA ss. 104 and 109 without reversing the initial burden, then distinguish admissibility from credibility and probative weight.\n\nV. PRECEDENTS AND PRAYER\nApply only relevant verified ratios and seek a precise ruling on tender, marking, exclusion, further foundation or final reliance.",
-      "explanation": "Senior Counsel written-submissions structure for BSA evidence litigation."
-    }
+  "questionsAndAnswers":[
+    {"id":"bsa-22-brief","draftingCategory":"brief","question":"Prepare a brief on BSA s. 22.","answer":"ISSUE: Is the confession one to which s. 22 applies? RULE: Identify the inducement, threat, coercion or promise, person in authority and causal connection. CONNECTED RULES: separately test s. 23, s. 24 and Article 20(3). DIGITAL RECORD: apply s. 63 independently. CONCLUSION: decide legal receivability before assessing credibility or weight."},
+    {"id":"bsa-22-submissions","draftingCategory":"submissions","question":"Draft submissions on BSA s. 22.","answer":"I. NATURE AND CIRCUMSTANCES OF THE CONFESSION\nII. ELEMENTS OF S. 22\nIII. CAUSATION AND VOLUNTARINESS\nIV. S. 23 / S. 24 AND ARTICLE 20(3) WHERE ENGAGED\nV. ELECTRONIC RECORD FOUNDATION WHERE APPLICABLE\nVI. RETRACTION, CORROBORATION AND WEIGHT\nVII. PRECISE ORDER SOUGHT"}
   ],
-  "bareActPointers": [
-    "BSA s. 22",
-    "BSA ss. 3, 55, 57, 63, 104 and 109 where applicable",
-    "BSA s. 170"
-  ],
-  "examTips": [
-    "Separate relevancy, admissibility, proof and probative weight.",
-    "Use the current BSA citation and historical Evidence Act numbers only as concordance.",
-    "For electronic records, analyse s. 63 certificate and foundation before weight.",
-    "State the initial burden and any statutory presumption precisely."
-  ],
-  "revisionPoints": [
-    "BSA s. 22: Confession caused by inducement, threat, coercion or promise, when irrelevant in criminal proceeding.",
-    "Identify the fact in issue and statutory relevancy link.",
-    "Check foundation, exclusion, burden, standard and weight.",
-    "Check s. 170 savings for proceedings governed by the former Evidence Act."
-  ],
-  "relatedTopics": [
-    "s-21",
-    "s-23"
-  ]
+  "bareActPointers":["BSA s. 22","BSA ss. 23–24","Constitution Article 20(3)","BSA s. 63 for electronic recordings","BSA s. 170"],
+  "examTips":["Separate s. 22 from the police-confession rule in s. 23.","Identify the causal link between the prohibited influence and the confession.","A recording's authenticity does not cure substantive inadmissibility.","Analyse Article 20(3) separately from the statutory confession provisions."],
+  "revisionPoints":["s. 22 = confession caused by prohibited inducement/threat/coercion/promise.","s. 23 = police confession/custody and discovery exception.","s. 24 = confession affecting co-accused under statutory conditions.","Technical admissibility and substantive confession rules are distinct."]
 }
 
 export default content
