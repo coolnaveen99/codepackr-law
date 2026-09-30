@@ -48,12 +48,13 @@ The relationship between Fundamental Rights and Directive Principles witnessed a
    The Supreme Court held that Directive Principles must run as subsidiary to Fundamental Rights. In case of conflict, Fundamental Rights prevail unconditionally.
 2. Phase 2 — Harmonious Construction (In re Kerala Education Bill, 1958):
    Chief Justice S.R. Das modified the rigid subordination view: courts must apply the doctrine of harmonious construction to give effect to both Parts as far as possible without tearing the constitutional fabric.
-3. Phase 3 — Legislative Supremacy Battle & Article 31C:
-   The 25th Amendment (1971) inserted Article 31C, providing that laws giving effect to Article 39(b) and (c) could not be challenged under Articles 14, 19, or 31. Kesavananda Bharati (1973) upheld the first part of Article 31C. However, when the 42nd Amendment (1976) expanded Article 31C to give ALL Directive Principles blanket immunity and absolute primacy over Fundamental Rights, the Supreme Court stepped in.
-4. Phase 4 — The Minerva Mills Bedrock (Minerva Mills v. Union of India, 1980):
-   Chief Justice Y.V. Chandrachud delivered the classic formulation:
-   “The Indian Constitution is founded on the bedrock of the balance between Parts III and IV. To give absolute primacy to one over the other is to disturb the harmony of the Constitution. This harmony and balance between Fundamental Rights and Directive Principles is an essential feature of the Basic Structure.”
-5. Phase 5 — Modern Symbiosis & Integration (The Integrated Human Rights Doctrine):
+3. Phase 3 — Article 31C and the Basic-Structure Limitation:
+   The 25th Amendment (1971) inserted Article 31C to protect laws giving effect to Article 39(b) and (c) from challenges under Articles 14 and 19, subject to constitutional review. Kesavananda Bharati upheld the first part of Article 31C but invalidated its exclusion of judicial review of whether the law actually gives effect to the specified principles.
+4. Phase 4 — Minerva Mills and the Surviving Scope of Article 31C:
+   Minerva Mills (1980) invalidated the 42nd Amendment’s attempt to extend Article 31C to every Directive Principle. The surviving protection is tied to the original Article 39(b)/(c) framework; it does not give blanket primacy to Part IV. The balance between Parts III and IV is part of the Basic Structure.
+5. Phase 5 — Modern Application after Property Owners’ Association:
+   In Property Owners’ Association v. State of Maharashtra (2024), a nine-judge Constitution Bench addressed Article 39(b) and held that “material resources of the community” are not confined to resources owned by the State or its agencies; whether a resource falls within Article 39(b) depends on the constitutional inquiry and the nature of the resource. The judgment also treated the surviving Article 31C protection as relevant to laws genuinely giving effect to Article 39(b) or (c).
+6. Phase 6 — Modern Symbiosis & Integration (The Integrated Human Rights Doctrine):
    In Unni Krishnan, Olga Tellis, Bandhua Mukti Morcha, and M.C. Mehta, the Court integrated DPSPs into Part III:
    - Article 39A (Free Legal Aid) read into Article 21 (M.H. Hoskot; Khatri).
    - Article 48A (Environment) read into Article 21 (Subhash Kumar).
@@ -67,37 +68,60 @@ Procedural & Courtroom Anchors (Senior Counsel Checklist)
    Opposing counsel must assert Article 37: A writ of mandamus cannot be issued to compel the State to implement an unenacted DPSP, such as framing a Uniform Civil Code or releasing funds for an un-notified welfare scheme.
 
 Current-Law Position & Milestone
-Directive Principles operate as the socio-economic compass of the Republic. The enactment of the Right to Education Act (Article 21A), the National Food Security Act, MGNREGA, and state UCC legislation (Uttarakhand, 2024) demonstrate the continuous statutory codification of Part IV. Current through the 106th Amendment (2023).`,
+Directive Principles operate as the socio-economic compass of the Republic. The enactment of the Right to Education Act (Article 21A), the National Food Security Act, MGNREGA, and state UCC legislation (Uttarakhand, 2024) demonstrate the continuous statutory codification of Part IV. Current-law note: the Constitution text continues to contain Articles 36–51 and Article 31C; the judicially surviving scope of Article 31C must be read with Kesavananda Bharati, Minerva Mills and the 2024 Property Owners’ Association decision.`,
 
   sections: [
     {
-      id: 'dpsp-nature-37',
-      title: 'Constitutional Nature & Article 37',
+      id: 'dpsp-textual-architecture',
+      title: 'Part IV Architecture and Article 37',
       order: 1,
       content: [
-        'Non-justiciable: Cannot be directly enforced by writ of mandamus in any court.',
-        'Fundamental in governance: Mandatory duty of the State to apply principles in lawmaking.',
-        'Socio-economic manifesto borrowed from the Irish Constitution.',
+        'Articles 36–51 contain the Directive Principles of State Policy; Article 37 makes them non-justiciable while declaring them fundamental in governance.',
+        'Article 37 imposes a constitutional duty on the State to apply the principles in making laws; it does not convert every DPSP into a directly enforceable individual right.',
+        'The principles address social welfare, economic justice, labour, local self-government, public health, environment, education, legal aid and international peace.',
       ],
     },
     {
-      id: 'dpsp-three-classes',
-      title: 'Threefold Classification of Principles',
+      id: 'dpsp-classification',
+      title: 'Classification and Functional Reading of DPSPs',
       order: 2,
       content: [
-        'Socialistic: Articles 38, 39, 39A (free legal aid), 41, 42, 43, 43A.',
-        'Gandhian: Articles 40 (panchayats), 43, 43B (cooperatives), 46, 47, 48.',
-        'Liberal-Intellectual: Articles 44 (UCC), 45, 48A (environment), 50 (separation of judiciary), 51.',
+        'Common classifications describe Socialistic, Gandhian and Liberal-Intellectual themes, but these labels are scholarly groupings rather than constitutional categories.',
+        'Key provisions include Articles 38, 39, 39A, 40, 41, 42, 43, 43A, 43B, 44, 45, 46, 47, 48, 48A, 49, 50 and 51.',
+        'The correct approach is provision-specific: identify the constitutional objective before using a DPSP to interpret legislation or assess a State measure.',
       ],
     },
     {
-      id: 'dpsp-minerva-balance',
-      title: 'Interrelationship with Part III & Minerva Mills',
+      id: 'dpsp-part3-balance',
+      title: 'Part III–Part IV Relationship and Minerva Mills',
       order: 3,
       content: [
-        'From Champakam Dorairajan (subordination) to Kerala Education Bill (harmonious construction).',
-        'Minerva Mills (1980): The balance and harmony between Part III and Part IV is Basic Structure.',
-        'Modern integration: DPSPs read into Article 21 (legal aid, environment, dignity).',
+        'Champakam Dorairajan initially treated Fundamental Rights as prevailing in direct conflict; Kerala Education Bill moved toward harmonious construction.',
+        'Kesavananda Bharati preserved the original Article 31C protection connected with Article 39(b) and (c), while rejecting exclusion of judicial review built into the amendment.',
+        'Minerva Mills invalidated the 42nd Amendment’s attempt to give all DPSPs overriding priority and held the harmony and balance between Parts III and IV to be part of the Basic Structure.',
+      ],
+    },
+    {
+      id: 'dpsp-31c-property',
+      title: 'Article 31C and Article 39(b): Current Doctrine',
+      order: 4,
+      content: [
+        'The surviving Article 31C protection is not a blanket immunity for every Directive Principle; it is tied to laws genuinely giving effect to Article 39(b) or (c).',
+        'Property Owners’ Association v. State of Maharashtra (2024) held that material resources of the community under Article 39(b) are not confined to resources owned by the State; the nature of the resource and the constitutional purpose must be examined.',
+        'A statute cannot obtain Article 31C protection merely by reciting a DPSP in its preamble or declaration. The constitutional connection between the law and the specified principle remains reviewable.',
+      ],
+    },
+    {
+      id: 'dpsp-litigation-evidence',
+      title: 'Litigation, Evidence and Relief Roadmap',
+      order: 5,
+      content: [
+        'When defending a welfare measure, identify the precise DPSP, the statutory provision said to implement it, and the factual record connecting the two.',
+        'A DPSP may support interpretation and proportionality/reasonableness analysis, but it does not automatically validate a restriction on a Fundamental Right.',
+        'For Article 31C, establish the statutory purpose and substantive nexus to Article 39(b) or (c); a mere legislative declaration is not conclusive.',
+        'Under BSA ss. 104–106, allocate the ordinary evidentiary burden to the party asserting facts in issue; BSA s. 109 may apply to facts especially within a party’s knowledge.',
+        'For electronic economic, land or policy records relied on in litigation, consider BSA s. 63 where its statutory admissibility requirements apply.',
+        'Relief may include invalidation, severance, reading down, declaratory relief or other appropriate constitutional directions depending on the defect proved.',
       ],
     },
   ],
@@ -142,9 +166,20 @@ Directive Principles operate as the socio-economic compass of the Republic. The 
       left: 'Fundamental Rights (Part III)',
       right: 'Directive Principles (Part IV)',
       rows: [
-        { point: 'Justiciability', left: 'Legally enforceable in courts under Arts 32 & 226.', right: 'Non-justiciable under Article 37; no mandamus lies.' },
-        { point: 'Nature of Obligation', left: 'Primarily negative injunctions restraining state intrusion.', right: 'Positive affirmative obligations directing social welfare.' },
-        { point: 'Goal', left: 'Establishes political democracy and civil liberties.', right: 'Establishes socio-economic democracy and a welfare state.' },
+        { point: 'Justiciability', left: 'Fundamental Rights are enforceable through constitutional remedies subject to their textual limits.', right: 'DPSPs are non-justiciable under Article 37.' },
+        { point: 'Constitutional function', left: 'Protects enforceable rights and limits State power.', right: 'Directs the State toward social and economic objectives.' },
+        { point: 'Relationship', left: 'Cannot be given absolute supremacy over Part IV.', right: 'Cannot be given blanket supremacy over Part III.' },
+      ],
+    },
+    {
+      id: 'dpsp-31c-scope',
+      title: 'Article 31C: Textual Form vs Judicially Surviving Scope',
+      left: 'Printed constitutional text',
+      right: 'Judicially enforceable position',
+      rows: [
+        { point: 'Scope language', left: 'Current text contains the post-42nd wording referring to all Part IV principles.', right: 'The 42nd Amendment expansion was invalidated in Minerva Mills.' },
+        { point: 'Protected principles', left: 'Text appears broader.', right: 'Protection survives in the Article 39(b)/(c) framework.' },
+        { point: 'Judicial review', left: 'The text contains a declaration mechanism.', right: 'Kesavananda and Minerva Mills preserve judicial review of the constitutional conditions.' },
       ],
     },
   ],
@@ -157,88 +192,36 @@ Directive Principles operate as the socio-economic compass of the Republic. The 
     },
     {
       id: 'dpsp-trap-2',
-      trap: 'A court can issue a writ of mandamus commanding the government to enact a Uniform Civil Code under Article 44.',
-      correction: 'Mandamus does not lie to compel the legislature to enact a law under Part IV. Courts can only express judicial hope or recommendations (Sarla Mudgal; Maharshi Avadhesh).',
+      trap: 'A court can issue a writ of mandamus commanding the legislature to enact a Uniform Civil Code under Article 44.',
+      correction: 'Mandamus does not lie to compel the legislature to enact a law under Part IV. Courts cannot use mandamus to compel the legislature to enact a law merely because Article 44 directs the State toward a constitutional objective. Judicial observations or recommendations must be distinguished from an enforceable command.',
     },
     {
       id: 'dpsp-trap-3',
       trap: 'Directive Principles have absolute primacy over Fundamental Rights after the 42nd Amendment.',
-      correction: 'Minerva Mills (1980) struck down the 42nd Amendment’s extension of Article 31C. The balance between Part III and Part IV is an untouchable feature of the Basic Structure.',
+      correction: 'Minerva Mills (1980) invalidated the 42nd Amendment’s extension of Article 31C to all DPSPs. The balance between Part III and Part IV is part of the Basic Structure.',
     },
   ],
 
   questionsAndAnswers: [
     {
-      id: 'dpsp-qa-10',
+      id: 'dpsp-qa-brief',
       draftingCategory: 'brief',
-      question: 'Discuss the nature, enforceability, and significance of the Directive Principles of State Policy under Part IV of the Constitution of India.',
-      answer: `I. ISSUE & CONSTITUTIONAL PURPOSE
-Part IV (Articles 36–51) embodies the Directive Principles of State Policy (DPSP). The core issue is the legal nature of these principles, their non-justiciable status under Article 37, and their role in socio-economic governance.
-
-II. NATURE & ENFORCEABILITY (ARTICLE 37)
-Article 37 establishes a dual character:
-1. Non-Enforceable: DPSPs are non-justiciable. No citizen can demand a writ of mandamus to compel the State to implement or fund a DPSP (Champakam Dorairajan).
-2. Fundamental in Governance: It is the solemn duty of the State to apply these principles in making laws.
-
-III. THREEFOLD CLASSIFICATION
-1. Socialistic: Article 38 (welfare state), Article 39 (distribution of resources, equal pay for equal work), Article 39A (free legal aid).
-2. Gandhian: Article 40 (panchayats), Article 43B (cooperatives), Article 47 (prohibition), Article 48 (cow slaughter prohibition).
-3. Liberal-Intellectual: Article 44 (Uniform Civil Code), Article 48A (environment), Article 50 (separation of judiciary).
-
-IV. CONSTITUTIONAL SIGNIFICANCE
-1. Benchmark of Reasonableness: Laws implementing DPSPs are treated as reasonable restrictions under Article 19.
-2. Judicial Interpretation: Courts read DPSPs into Article 21 (e.g. Free Legal Aid in Hoskot, Clean Environment in M.C. Mehta).
-
-V. CONCLUSION
-Directive Principles provide the philosophical roadmap for a welfare state, transforming political independence into socio-economic emancipation. Current through the 106th Amendment (2023).`,
-      explanation: 'Formatted according to the IRAC method for structured legal assessment.',
+      question: 'Explain the nature, enforceability and constitutional significance of the Directive Principles of State Policy.',
+      answer: 'Part IV, Articles 36–51, contains the Directive Principles of State Policy. Article 37 gives them a dual character: they are not enforceable by any court, yet they are fundamental in governance and impose a constitutional duty on the State to apply them in making laws. They therefore guide legislation, constitutional interpretation and the design of welfare measures without becoming a general source of direct mandamus. Their relationship with Fundamental Rights evolved from the early subordination approach in Champakam Dorairajan toward harmonious construction and the Basic Structure balance recognized in Minerva Mills. Modern cases also use DPSPs to inform the content and interpretation of enforceable rights.',
       relatedProvisionIds: ['constitution-article-37', 'constitution-article-38', 'constitution-article-39'],
     },
     {
-      id: 'dpsp-qa-16',
+      id: 'dpsp-qa-submissions',
       draftingCategory: 'submissions',
-      question: 'Critically examine the interrelationship between Fundamental Rights (Part III) and Directive Principles of State Policy (Part IV). Trace the judicial shift from Champakam Dorairajan to Minerva Mills and modern integrated jurisprudence.',
-      answer: `I. INTRODUCTION & CONSTITUTIONAL PHILOSOPHY
-Granville Austin famously described Fundamental Rights (Part III) and Directive Principles of State Policy (Part IV) as the "conscience of the Constitution". While Part III guarantees civil and political liberties against state encroachment, Part IV directs the State to usher in a socio-economic revolution. The dynamic interplay between these two parts has been the primary engine driving constitutional adjudication in post-independent India.
-
-II. THE EVOLUTIONARY STAGES OF THE INTERRELATIONSHIP
-1. The Literal Subordination Phase (State of Madras v. Champakam Dorairajan, 1951):
-   In the earliest phase, the Supreme Court took a mechanical view of Article 37:
-   - Fundamental Rights were sacrosanct and enforceable; Directive Principles were unenforceable.
-   - Held: "The Directive Principles have to conform to and run as subsidiary to the Chapter on Fundamental Rights."
-   - State quota orders implementing Article 46 were struck down as violating Article 29(2) (prompting the 1st Amendment inserting Article 15(4)).
-2. The Harmonious Construction Phase (In re Kerala Education Bill, 1958):
-   Chief Justice S.R. Das modified the rigid hierarchy. The Court held that Parts III and IV are complementary: courts must apply the doctrine of harmonious construction to give effect to both, and not create an unnecessary conflict where none exists.
-3. The Legislative Primacy Battle & Article 31C:
-   - 25th Amendment (1971): Inserted Article 31C to give immunity to laws implementing Article 39(b) and (c) against Articles 14, 19, and 31. Upheld in Kesavananda Bharati (1973).
-   - 42nd Amendment (1976): Parliament amended Article 31C to give ALL Directive Principles absolute supremacy over Fundamental Rights.
-4. The Basic Structure Settlement (Minerva Mills v. Union of India, 1980):
-   Chief Justice Chandrachud struck down the expanded Article 31C:
-   - "To destroy the guarantees given by Part III in order to achieve the goals of Part IV is plainly to subvert the Constitution."
-   - Parts III and IV are like the two wheels of a chariot; neither is superior. The balance and harmony between Fundamental Rights and Directive Principles is an essential feature of the Basic Structure.
-
-III. MODERN INTEGRATED JURISPRUDENCE (THE SYMBIOTIC READING)
-In the post-Maneka era, the Supreme Court abandoned the conflict model and adopted an integrated human rights approach:
-1. Article 39A (Free Legal Aid) read into Article 21 (M.H. Hoskot; Khatri).
-2. Article 48A (Environmental Protection) read into Article 21 (Subhash Kumar; M.C. Mehta).
-3. Article 45 (Education) elevated to a Fundamental Right under Article 21A (Unni Krishnan; 86th Amendment).
-4. Article 39(d) (Equal Pay for Equal Work) enforced through Article 14 (Randhir Singh).
-5. Article 44 (Uniform Civil Code): While non-justiciable via mandamus (Maharshi Avadhesh), judicial pronouncements in Shah Bano and Sarla Mudgal have spurred legislative reforms.
-
-IV. PROCEDURAL ROADMAP & LITIGATION ANCHORS (SENIOR COUNSEL REFERENCE)
-1. Defending State Enactments: Counsel for the State must establish that an impugned restriction is designed to advance a DPSP. This provides powerful evidentiary backing for "reasonableness" under Article 19(2)–(6) and Article 14.
-2. The Limit of Judicial Mandamus: Opposing counsel can successfully invoke Article 37 to resist writs seeking mandatory judicial legislation or budget allocations.
-
-V. CONCLUSION & CURRENT-LAW MILESTONE
-The relationship between Part III and Part IV has transformed from conflict to coexistence, and from coexistence to synthesis. Fundamental Rights and Directive Principles now operate as unified pillars of transformative constitutionalism. Current through the 106th Amendment (2023).`,
-      explanation: 'Exhaustive CREAC essay covering philosophical roots, case law evolution from Champakam to Minerva Mills, and modern integrated jurisprudence.',
-      relatedProvisionIds: ['constitution-article-37', 'constitution-article-31c', 'constitution-article-21'],
+      question: 'Draft written submissions where a State defends a welfare statute by relying on a Directive Principle against a challenge under Part III.',
+      answer: 'Issue: whether the impugned measure is constitutionally supported by the identified DPSP and whether its impact on the asserted Fundamental Right is permissible. Rule: Article 37 makes DPSPs fundamental in governance but non-justiciable; Minerva Mills rejects absolute primacy of either Part III or Part IV. If Article 31C is invoked, counsel must establish a genuine nexus with Article 39(b) or (c), because the 42nd Amendment expansion to all Part IV principles is invalid. Application: identify the precise DPSP, the statutory mechanism, the factual material supporting the legislative objective, and the measure’s effect on the affected right. A DPSP can strengthen the constitutional justification for a law but does not automatically cure arbitrariness or eliminate judicial review. Relief: if the measure is defective, consider severance or reading down where legally possible; otherwise seek the constitutionally appropriate declaration or invalidation.',
+      relatedProvisionIds: ['constitution-article-37', 'constitution-article-31c', 'constitution-article-39'],
     },
     {
-      id: 'dpsp-qa-short',
-      question: 'What was the landmark holding in Minerva Mills v. Union of India regarding Fundamental Rights and Directive Principles?',
-      answer: 'In Minerva Mills (1980), the Supreme Court held that the harmony and balance between Fundamental Rights (Part III) and Directive Principles (Part IV) is an essential feature of the Basic Structure of the Constitution.',
-      relatedProvisionIds: ['constitution-article-37', 'constitution-article-31c'],
+      id: 'dpsp-qa-article31c',
+      question: 'What is the current judicial scope of Article 31C?',
+      answer: 'The printed text of Article 31C still contains the post-42nd Amendment wording, but the 42nd Amendment expansion was invalidated in Minerva Mills. The surviving protection is tied to laws genuinely giving effect to Article 39(b) or (c), subject to judicial review of the constitutional conditions. The 2024 Property Owners’ Association judgment further clarified the interpretation of Article 39(b) and the concept of “material resources of the community”.',
+      relatedProvisionIds: ['constitution-article-31c', 'constitution-article-39'],
     },
   ],
 
@@ -254,39 +237,68 @@ The relationship between Part III and Part IV has transformed from conflict to c
       name: 'State of Madras v. Champakam Dorairajan',
       year: 1951,
       citation: 'AIR 1951 SC 226',
-      holding: 'Directive Principles must conform to and run as subsidiary to the Chapter on Fundamental Rights; in case of conflict, Fundamental Rights prevail.',
-      relevance: 'The classical subordination doctrine, later modified.',
+      holding: 'Directive Principles could not override enforceable Fundamental Rights in the event of conflict; the decision prompted constitutional changes including Article 15(4).',
+      relevance: 'Starting point for the judicial relationship between Parts III and IV.',
     },
     {
       name: 'In re Kerala Education Bill',
       year: 1958,
       citation: 'AIR 1958 SC 956',
-      holding: 'Formulated the Doctrine of Harmonious Construction between Fundamental Rights and Directive Principles.',
-      relevance: 'Shifted jurisprudence from conflict to harmonious interpretation.',
+      holding: 'The Court emphasized harmonious construction so that Fundamental Rights and Directive Principles could operate together where possible.',
+      relevance: 'Moved doctrine away from a purely hierarchical reading.',
+    },
+    {
+      name: 'Kesavananda Bharati v. State of Kerala',
+      year: 1973,
+      citation: '(1973) 4 SCC 225',
+      holding: 'The Court upheld the first part of Article 31C concerning laws giving effect to Article 39(b) and (c), while invalidating the exclusion of judicial review built into the amendment.',
+      relevance: 'Foundation for the surviving Article 31C framework and Basic Structure review.',
     },
     {
       name: 'Minerva Mills Ltd. v. Union of India',
       year: 1980,
       citation: '(1980) 3 SCC 625',
-      holding: 'The balance and harmony between Part III and Part IV is an essential feature of the Basic Structure; striking down 42nd Amendment expansion of Art 31C.',
-      relevance: 'The supreme ruling governing the relationship between Parts III and IV.',
+      holding: 'The 42nd Amendment’s extension of Article 31C to all Directive Principles was invalidated; harmony and balance between Parts III and IV was held to be part of the Basic Structure.',
+      relevance: 'Controlling authority on the non-absolute relationship between Fundamental Rights and DPSPs.',
     },
     {
       name: 'Unni Krishnan, J.P. v. State of Andhra Pradesh',
       year: 1993,
       citation: '(1993) 1 SCC 645',
-      holding: 'Fundamental Rights and Directive Principles are supplementary to each other; read Article 45 into Article 21 to recognize right to primary education.',
-      relevance: 'Exemplifies the modern symbiotic reading leading to Article 21A.',
+      holding: 'The Court used Part IV principles in developing the constitutional understanding of education under Article 21, preceding the later insertion of Article 21A.',
+      relevance: 'Illustrates integrated interpretation of Parts III and IV.',
+    },
+    {
+      name: 'Property Owners’ Association v. State of Maharashtra',
+      year: 2024,
+      citation: '2024 INSC 711',
+      holding: 'A nine-judge Constitution Bench held that material resources of the community under Article 39(b) are not confined to resources owned by the State or its agencies; whether a resource is covered depends on its nature and the constitutional inquiry.',
+      relevance: 'Current authority for Article 39(b) and the surviving Article 31C framework.',
     },
   ],
 
-  bareActPointers: ['Part IV', 'Art 37', 'Art 38', 'Art 39', 'Art 39A', 'Art 44', 'Art 48A', 'Art 50', 'Art 31C'],
+  bareActPointers: [
+    'Part IV — Directive Principles of State Policy',
+    'Art 37 — Application and non-justiciability of DPSPs',
+    'Art 38 — Social order and reduction of inequalities',
+    'Art 39 — Principles of policy, including clauses (b) and (c)',
+    'Art 39A — Equal justice and free legal aid',
+    'Art 44 — Uniform civil code',
+    'Art 48A — Environment and forests',
+    'Art 50 — Separation of judiciary from executive',
+    'Art 31C — Saving of laws giving effect to specified directive principles',
+    'BSA ss. 104–106 — General burden framework',
+    'BSA s. 109 — Facts especially within knowledge',
+    'BSA s. 63 — Electronic records and admissibility conditions',
+  ],
 
   examTips: [
-    'Memorize the stages: Champakam Dorairajan (subordination) → Kerala Education Bill (harmonious construction) → Minerva Mills (Basic Structure balance) → Unni Krishnan (symbiosis).',
-    'Quote Chief Justice Chandrachud’s metaphor from Minerva Mills: "two wheels of a chariot".',
-    'Explain the dual character of Article 37: non-justiciable in court, but fundamental in governance.',
-    'Mention Article 44 (UCC) and the landmark decisions in Shah Bano and Sarla Mudgal.',
+    'Use the doctrinal sequence: Champakam Dorairajan → Kerala Education Bill → Kesavananda Bharati → Minerva Mills → modern integrated cases.',
+    'Explain Article 37 as both non-justiciability and constitutional duty in governance.',
+    'For Article 31C, distinguish the printed constitutional text from the judicially surviving scope tied to Article 39(b) and (c).',
+    'Use Property Owners’ Association (2024) when discussing “material resources of the community” under Article 39(b).',
+    'Do not say that a DPSP automatically validates a restriction on a Fundamental Right.',
+    'For mandamus, distinguish a judicial interpretation of rights from a command to the legislature to enact a law.',
   ],
 
   examFrameworks: [
@@ -317,11 +329,12 @@ The relationship between Part III and Part IV has transformed from conflict to c
   ],
 
   revisionPoints: [
-    'Part IV (Articles 36–51): Borrowed from Ireland.',
-    'Article 37: Non-justiciable, but fundamental in governance.',
-    'Minerva Mills (1980): Harmony between Part III and Part IV is Basic Structure.',
-    'Modern approach: DPSPs are read into Article 21 to expand human rights.',
+    'Part IV = Articles 36–51; Article 37 makes DPSPs non-justiciable but fundamental in governance.',
+    'Champakam = early conflict/subordination model; Kerala Education Bill = harmonious construction.',
+    'Kesavananda + Minerva Mills = surviving Article 31C is limited and Part III–Part IV balance is Basic Structure.',
+    'Property Owners’ Association (2024) = Article 39(b) “material resources” is not confined to State-owned resources.',
+    'DPSPs inform interpretation and legislative policy but do not create a general writ of mandamus.',
   ],
-}
+} satisfies TopicContent
 
 export default content
