@@ -1,0 +1,20 @@
+{
+  "name": "Codepackr Law",
+  "short_name": "Codepackr Law",
+  "description": "Free Indian legal research, study and practice tools — privacy-first, browser-based.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#8B1E3F",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["education", "productivity"]
+}
