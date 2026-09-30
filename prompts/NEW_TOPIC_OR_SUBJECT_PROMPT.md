@@ -252,14 +252,67 @@ Generate both the `src/data/subjects.ts` snippet and the complete, unshortened T
 
 ## CONTENT DEPTH & JUDGMENT DECODING — MANDATORY
 
-There is no artificial minimum or maximum word count. Determine depth from actual legal complexity and completeness. Never add filler to satisfy a numerical target.
+Do not generate a shallow topic merely because the topic is represented by one statute section or one catalogue entry.
 
-Where applicable, cover definition, legal source, statutory anatomy, historical/current context, ingredients, exceptions, procedure, jurisdiction, limitation, remedies, arguments, examples, illustrations, hypotheticals, comparisons, authorities, judgment decoding, practical significance and revision points.
+Select the depth band based on legal complexity:
 
-For important judgments, explain case identity, orientation, facts, procedural history, issues, governing law, arguments, court reasoning, findings, holding, ratio, obiter, disposition, later treatment and present relevance. Make the reasoning chain explicit where supported: Rule → Fact → Legal inference → Counterargument → Court response → Finding → Conclusion.
+- Foundation: 1,200–1,800 substantive words.
+- Standard: 1,800–3,000.
+- Core/high-value: 3,000–5,000.
+- Major/landmark: 5,000–8,000+ where genuinely justified.
 
-Never invent arguments, paragraph references, quotations, holdings, ratios or citations.
+These are minimum quality bands, not rigid word quotas. Never add filler, repeated sentences or generic boilerplate to satisfy a number.
 
-When updating an existing topic, preserve accurate material, remove duplication and boilerplate, expand missing legal layers, strengthen source traceability, add useful examples/illustrations and judgment decoding, and verify current-law status.
+The generated topic must teach the student, where applicable:
+1. Definition and scope.
+2. Legal source.
+3. Provenance/history.
+4. Statutory/constitutional objective.
+5. Textual anatomy.
+6. Ingredients/elements.
+7. Conditions precedent.
+8. Provisos/exceptions/explanations.
+9. Rule/test.
+10. Application to facts.
+11. Procedure.
+12. Jurisdiction.
+13. Limitation.
+14. Remedies/consequences.
+15. Defences/counterarguments.
+16. Illustrations.
+17. Hypotheticals.
+18. Distinctions.
+19. Misconceptions.
+20. Authorities.
+21. Judgment decoding.
+22. Practical/courtroom relevance.
+23. Revision points.
 
-The goal is a durable legal reference chapter, not a fixed-size article.
+For major judgments, decode progressively:
+- identification;
+- orientation;
+- material facts;
+- procedural history;
+- issues;
+- governing law;
+- parties' arguments;
+- court reasoning;
+- holding;
+- ratio decidendi;
+- obiter;
+- final disposition;
+- significance/later treatment.
+
+Case-depth targets:
+- ordinary relevant case: 250–500 words;
+- important authority: 500–1,000 words;
+- landmark judgment: 1,000–2,500+ words where justified.
+
+The reasoning/application layer is mandatory. Explain:
+Rule → Fact → Legal inference → Counterargument → Court response → Finding → Conclusion.
+
+Never invent case arguments, paragraph numbers, citations, holdings or ratios.
+
+When updating an existing topic, do not merely append text. Rebuild the chapter coherently: preserve accurate content, remove duplication, add missing legal layers, strengthen authorities and applications, add judgment decoding, and verify current law.
+
+The original judgment remains authoritative. The CodePackr content is an educational companion and must preserve source/verification information.
