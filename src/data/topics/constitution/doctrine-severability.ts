@@ -56,6 +56,9 @@ The Constitution (Fifty-Second Amendment) Act, 1985 inserted the Tenth Schedule 
 ### D. Severing Unconstitutional Amendments in *Minerva Mills v. Union of India* (1980)
 Sections 4 and 55 of the Constitution (Forty-Second Amendment) Act, 1976 sought to give blanket immunity to all Directive Principles over Fundamental Rights and extinguish judicial review of constitutional amendments. The Supreme Court severed and struck down Sections 4 and 55 as destructive of the basic structure, while preserving the other provisions of the 42nd Amendment.`,
 
+Evidence and litigation anchor
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+
   sections: [
     {
       id: 'severability-concept',
@@ -291,6 +294,7 @@ The Doctrine of Severability is an essential instrument of constitutional harmon
   ],
 
   bareActPointers: [
+    'Bharatiya Sakshya Adhiniyam, 2023 — sections 104–106, 109 and 63 where applicable',
     'Art 13(1) — Pre-Constitution laws void "to the extent of such inconsistency"',
     'Art 13(2) — Post-Constitution laws void "to the extent of the contravention"',
     'Art 254(1) — Repugnant State laws void "to the extent of the repugnancy"',
