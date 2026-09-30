@@ -293,6 +293,6 @@ In Christian Medical College, Vellore (2020), the Supreme Court held that NEET c
     'CMC Vellore = NEET can operate as a uniform regulatory standard for minority medical institutions.',
     'AMU (2024) = statutory incorporation alone does not defeat an Article 30 establishment claim; AMU’s final status was left for later determination.',
   ],
-}} satisfies TopicContent
+} satisfies TopicContent
 
 export default content
