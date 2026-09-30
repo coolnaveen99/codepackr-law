@@ -16,12 +16,12 @@ import {
 } from 'lucide-react'
 import type { LawSubjectMeta, LawTopic, CaseCitation } from '../../data/subjects'
 import {
-  loadTopicContent,
   getStudyBody,
   getLegalBrief,
   getWrittenSubmissions,
   type TopicContent,
 } from '../../data/topics/loadTopicContent'
+import { getTopicContent } from '../../content/ContentGateway'
 import { Badge } from '../ui/Badge'
 import { RelatedKnowledge } from '../knowledge/RelatedKnowledge'
 import { RichLegalText } from '../knowledge/RichLegalText'
@@ -118,9 +118,9 @@ export function TopicDetail({
     setLoading(true)
     setContent(null)
 
-    loadTopicContent(subject.slug, topic.id).then((data) => {
+    getTopicContent(subject.slug, topic.id).then((record) => {
       if (!cancelled) {
-        setContent(data)
+        setContent((record?.content as TopicContent | undefined) ?? null)
         setLoading(false)
       }
     })
