@@ -68,6 +68,9 @@ An illiterate widow\'s agricultural land was taken over by the State in 1967 for
 ### B. *Sukh Dutt Ratra v. State of Himachal Pradesh* (2022) 7 SCC 508
 The Court reaffirmed *Vidya Devi*, holding that the State cannot act as a "trespasser or land-grabber". The doctrine of adverse possession or delay cannot be invoked by the democratic State against its own citizens to legitimize illegal expropriations.`,
 
+Evidence and litigation anchor
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+
   sections: [
     {
       id: 'art300a-history-repeal',
@@ -311,6 +314,7 @@ The transformation of the right to property under Article 300A represents a soph
   ],
 
   bareActPointers: [
+    'Bharatiya Sakshya Adhiniyam, 2023 — sections 104–106, 109 and 63 where applicable',
     'Art 300A — Deprivation of property only by authority of law',
     'Art 226 — High Court writ jurisdiction for enforcement of Art 300A',
     'Entry 42, List III — Acquisition and requisitioning of property',
