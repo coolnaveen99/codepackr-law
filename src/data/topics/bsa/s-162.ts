@@ -1,237 +1,47 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  "glance": "BSA s. 162, Refreshing memory, is an evidentiary provision in the Examination of witnesses cluster. Analyse it through the separate questions of relevancy, admissibility, proof, burden and probative weight, and check BSA s. 170 for proceedings governed by the repeal and savings rule.",
-  "study": "Current-law identity\nBSA s. 162 governs refreshing memory within Chapter X - Examination of witnesses. The provision must be read with its enacted clauses, explanations, illustrations and connected provisions BSA s. 161, BSA s. 163.\n\nThe forensic distinction\nRelevancy asks whether a fact has the statutory connection required by the Adhiniyam. Admissibility asks whether the Court may receive that relevant material under the rules of exclusion, privilege, form and foundation. Proof asks whether the admitted material establishes the fact to the required standard. Probative weight asks how much reliance the Court should place on it. A relevant fact is not automatically admissible, and admissibility is not proof of the ultimate fact.\n\nMandatory application checklist\n1. Identify the fact in issue, the fact sought to be introduced and the party tendering it.\n2. State the exact rule in BSA s. 162, including every condition, explanation, proviso and illustration.\n3. Classify the material as oral, documentary, electronic, real or circumstantial evidence.\n4. Test directness, hearsay, privilege, primary or secondary evidence, authentication and statutory certificate requirements.\n5. Identify the party bearing the initial burden under BSA s. 104 and any special-knowledge rule under s. 109.\n6. Separate admissibility from the weight ultimately assigned after cross-examination and the complete record.\n\nElectronic records and constitutional limits\nElectronic and digital records are documents under BSA. Where a computer output, email, messaging record, CCTV export, call record, server log or device image is tendered through the statutory route, check BSA s. 63 and its certificate requirements. The certificate is not a substitute for relevance, authenticity, chain of custody or proof of the fact asserted. Evidence must also respect Articles 20(3), 21 and 14 of the Constitution, privilege rules and fair-trial disclosure.\n\nCourtroom method\nIn a written submission, identify the fact in issue, show the statutory relevancy link, answer the admissibility objection, establish the foundation, identify the burden and standard, and explain the probative consequence. Do not cite the historical Evidence Act number as the current rule after 1 July 2024 except as concordance. Do not convert a missing certificate, hearsay statement or weak foundation into an automatic finding on the merits without analysing the applicable statutory consequence.",
-  "sections": [
-    {
-      "id": "bsa-162-module-1",
-      "title": "Provenance, Legislative Objective and Evidentiary Foundation",
-      "order": 1,
-      "content": [
-        "BSA s. 162 regulates refreshing memory within Examination of witnesses.",
-        "The statutory scheme seeks reliable adjudication by limiting proof to legally relevant and properly received material.",
-        "Read the provision with the constitutional values of fair trial, privilege, reliability and equality of arms."
-      ]
-    },
-    {
-      "id": "bsa-162-module-2",
-      "title": "Textual Anatomy, Exceptions and Connected Rules",
-      "order": 2,
-      "content": [
-        "Deconstruct every clause of BSA s. 162; do not replace the enacted rule with a one-line Evidence Act summary.",
-        "Read it with BSA s. 161, BSA s. 163. Connected provisions may control foundation, exclusion, presumptions, witnesses or the mode of proof.",
-        "Historical concordance assists comparison only and is not the current citation."
-      ]
-    },
-    {
-      "id": "bsa-162-module-3",
-      "title": "Mandatory Relevancy, Admissibility and Proof Ingredients",
-      "order": 3,
-      "content": [
-        "First ingredient: identify the fact in issue or the statutory relevancy link.",
-        "Second ingredient: satisfy any exclusion, privilege, directness, primary-document or foundation rule.",
-        "Third ingredient: prove authenticity and the source or maker where the form of evidence requires it.",
-        "Fourth ingredient: apply the correct burden and standard, then distinguish admissibility from probative weight."
-      ]
-    },
-    {
-      "id": "bsa-162-module-4",
-      "title": "BSA Burdens, Presumptions and Electronic Records",
-      "order": 4,
-      "content": [
-        "BSA s. 104 supplies the ordinary burden framework; the party asserting the legal proposition must establish its foundation.",
-        "BSA s. 109 addresses facts especially within knowledge. It does not erase the initial burden or permit conviction on an unproved charge.",
-        "For electronic records, examine BSA s. 63 certificate, device or system identity, production method, integrity, custody and the distinction between admissibility and weight."
-      ]
-    },
-    {
-      "id": "bsa-162-module-5",
-      "title": "Trial Roadmap, Forum, Limitation and Repeal Savings",
-      "order": 5,
-      "content": [
-        "Apply BSA s. 162 at the correct stage of trial or inquiry and identify whether the objection concerns tender, marking, admissibility, proof or final weight.",
-        "For proceedings governed by the post-1 July 2024 evidence regime, cite BSA. For proceedings saved by s. 170, identify the applicable Indian Evidence Act route before arguing the consequence.",
-        "Check the governing procedural statute and any special limitation rule for the application or appeal; evidence law itself does not create a universal limitation period."
-      ]
-    }
+  "glance":"BSA s. 162 permits a witness, while under examination, to refresh memory from qualifying writings made by the witness at or sufficiently soon after the transaction; it also permits reference to another person's writing if the witness read it while the transaction was fresh and knew it to be correct. It includes a controlled route for copies and permits experts to use professional treatises.",
+  "study":"CURRENT LAW\nSection 162 is in Chapter X, Examination of Witnesses. It is a witness-management and memory rule, not a substitute for the rules governing admissibility of the underlying document or the proof of the facts recorded. The section should be read with ss. 163 and 164.\n\nWHEN MEMORY MAY BE REFRESHED\nUnder s. 162(1), the witness may refer during examination to a writing made by the witness at the time of the transaction or so soon afterwards that the Court considers it likely that the transaction was then fresh in the witness's memory. The proviso permits reference to a writing made by another person if the witness read it within that relevant period and knew it to be correct when reading it.\n\nCOPIES AND EXPERTS\nUnder s. 162(2), the witness may, with Court permission, refer to a copy where the Court is satisfied there is sufficient reason for non-production of the original. The further proviso recognises an expert's ability to refresh memory from professional treatises. The procedural permission and reliability conditions should be recorded rather than assumed.\n\nREFRESHING MEMORY IS NOT AUTOMATIC SUBSTANTIVE PROOF\nThe writing is a memory aid. Section 163 separately governs testimony to facts stated in a qualifying document when the witness has no specific recollection but is sure the facts were correctly recorded. Section 164 protects the adverse party's right to production and cross-examination of writings used to refresh memory.\n\nDIGITAL RECORDS\nA witness may encounter electronic documents or records while refreshing memory. The Court should distinguish the witness's use of a record to revive recollection from tendering the electronic record itself as substantive documentary evidence. If the latter is tendered, apply the relevant electronic-record provisions, including s. 63 where applicable.\n\nTRANSITION\nUse BSA numbering for current proceedings and consult s. 170 for saved proceedings under the former Evidence Act.",
+  "sections":[
+    {"id":"bsa-162-module-1","title":"Qualifying Writing and Timing","order":1,"content":["The writing must have been made by the witness at the time of the transaction or sufficiently soon afterwards that the Court considers the transaction likely to have been fresh in memory.","A writing by another person can qualify if the witness read it within the relevant period and knew it to be correct when reading it.","The statutory timing and knowledge requirements should be proved from the circumstances rather than assumed."]},
+    {"id":"bsa-162-module-2","title":"Copies and Expert Treatises","order":2,"content":["A copy may be used with Court permission when the Court is satisfied there is sufficient reason for non-production of the original.","Experts may refresh memory by reference to professional treatises under the statutory proviso.","The Court should distinguish memory refreshment from admission of the treatise or copy as independent substantive evidence."]},
+    {"id":"bsa-162-module-3","title":"Witness Testimony and Section 163","order":3,"content":["Refreshing memory helps the witness recall; it does not itself transform the writing into the witness's testimony.","Section 163 provides a distinct route where a witness can testify to facts in a qualifying document despite lacking specific recollection, provided the witness is sure the facts were correctly recorded.","Always identify which route is being invoked."]},
+    {"id":"bsa-162-module-4","title":"Adverse Party and Digital Material","order":4,"content":["Section 164 requires writings referred to under the preceding memory provisions to be produced and shown to the adverse party if required, with a corresponding opportunity for cross-examination.","Where a digital record is used, distinguish the witness's memory aid from tender of the electronic record as evidence.","If the digital record itself is tendered, apply the applicable electronic-record admissibility route independently."]},
+    {"id":"bsa-162-module-5","title":"Courtroom Practice and Error Control","order":5,"content":["Record the foundation: when the writing was made, who made it, when the witness read it, why the witness knew it to be correct, and why a copy is being used if relevant.","Do not suggest that merely showing a document to a witness proves every fact contained in it.","Use the current BSA sections and historical Evidence Act numbering only as concordance or under the savings provision."]}
   ],
-  "provisions": [
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-162",
-      "section": "s. 162",
-      "title": "Refreshing memory"
-    },
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-63",
-      "section": "s. 63",
-      "title": "Admissibility of electronic records"
-    },
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-104",
-      "section": "s. 104",
-      "title": "Burden of proof"
-    },
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-109",
-      "section": "s. 109",
-      "title": "Burden of proving fact especially within knowledge"
-    },
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-170",
-      "section": "s. 170",
-      "title": "Repeal and savings"
-    }
+  "provisions":[
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-162","section":"s. 162","title":"Refreshing memory"},
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-163","section":"s. 163","title":"Testimony to facts stated in document mentioned in section 162"},
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-164","section":"s. 164","title":"Right of adverse party as to writing used to refresh memory"},
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-63","section":"s. 63","title":"Admissibility of electronic records"},
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-170","section":"s. 170","title":"Repeal and savings"}
   ],
-  "examples": [
-    {
-      "id": "bsa-162-ill-1",
-      "title": "Example 1 - Foundation and admissibility satisfied",
-      "illustrationType": "practical",
-      "description": "A party identifies the fact in issue, establishes the statutory relevancy link under s. 162, proves the source and authenticity of the record, and satisfies the applicable documentary or electronic foundation. The Court may receive the material and then assess its weight."
-    },
-    {
-      "id": "bsa-162-ill-2",
-      "title": "Example 2 - Relevancy does not cure a defect",
-      "illustrationType": "fail-scenario",
-      "description": "A party offers a relevant screenshot or hearsay statement but cannot satisfy the applicable statutory foundation, certificate, directness or privilege rule. The Court must analyse admissibility separately instead of treating logical relevance as automatic proof."
-    }
+  "examples":[
+    {"id":"bsa-162-ill-1","title":"Contemporaneous diary","illustrationType":"practical","description":"A witness made a diary entry immediately after a transaction and now cannot recall every detail. During examination the witness may use the qualifying entry to refresh memory, subject to the statutory foundation and the adverse party's rights."},
+    {"id":"bsa-162-ill-2","title":"Copy with Court permission","illustrationType":"fail-scenario","description":"The original writing is unavailable and a party asks the witness to use a copy. The witness cannot assume the copy is permitted; the Court must be satisfied that there is sufficient reason for non-production of the original and grant the required permission."}
   ],
-  "hypotheticals": [
-    {
-      "id": "bsa-162-hypo",
-      "title": "Chamber Practice Hypothetical: BSA s. 162",
-      "facts": "In a criminal trial, the prosecution tenders an oral statement and a digital record to establish a fact connected with the charge. The defence objects that the material is irrelevant, hearsay, uncertified or unsupported by a competent witness. The prosecution invokes a burden or presumption without first establishing the factual foundation.",
-      "question": "Whether the material is relevant and admissible under BSA s. 162, and what proof and burden consequences follow.",
-      "applicableLaw": "BSA s. 162, connected provisions BSA s. 161, BSA s. 163, ss. 3, 55, 57, 63, 104 and 109 where applicable, and s. 170 savings.",
-      "analysis": "1. Identify the fact in issue and the statutory relevancy route. 2. Test the form of evidence: direct oral evidence, documentary evidence, electronic record, hearsay or privileged communication. 3. Check the applicable foundation and BSA s. 63 certificate where digital material is tendered. 4. Place the initial burden under s. 104 and use s. 109 only after the foundation for special knowledge is established. 5. Separate admissibility from credibility and final probative weight.",
-      "conclusion": "The Court should receive and rely on the material only to the extent that the statutory relevancy, admissibility and proof requirements are independently satisfied. A relevant but inadmissible record cannot become proof merely because it appears persuasive."
-    }
+  "hypotheticals":[
+    {"id":"bsa-162-hypo","title":"Chamber Problem: Digital Log Used to Refresh Memory","facts":"A technical witness cannot recall the exact sequence of events but reviewed a system log shortly after the incident and knew it to be accurate. At trial the witness uses a copy of the log; the opposing party demands production and cross-examination.","question":"Can the witness use the record to refresh memory and what additional safeguards apply?","applicableLaw":"BSA ss. 162–164 and s. 63 if the electronic record itself is tendered as substantive evidence.","analysis":"Establish when the record was made or read, who created it, why the witness knew it to be correct, and why the copy is used. Obtain Court permission where s. 162(2) requires it. If the record itself is offered as substantive evidence, separately satisfy the electronic-record rules. Produce the writing to the adverse party when required.","conclusion":"The memory-refresh route and substantive admission of the electronic record are distinct. The former may assist testimony without automatically proving every recorded fact."}
   ],
-  "distinctions": [
-    {
-      "id": "bsa-162-distinction",
-      "title": "BSA s. 162: relevancy, admissibility and proof",
-      "left": "BSA s. 162",
-      "right": "BSA s. 161, BSA s. 163",
-      "rows": [
-        {
-          "point": "Function",
-          "left": "Refreshing memory",
-          "right": "Connected relevancy, foundation, burden or exclusion rule"
-        },
-        {
-          "point": "Question",
-          "left": "What fact or evidentiary act does this section govern?",
-          "right": "What additional condition must be satisfied?"
-        },
-        {
-          "point": "Trial consequence",
-          "left": "Apply the section to the tendered material",
-          "right": "Then decide admissibility, credibility and weight separately"
-        }
-      ]
-    }
+  "distinctions":[
+    {"id":"bsa-162-distinction","title":"Sections 162–164","left":"s. 162","right":"ss. 163–164","rows":[{"point":"Function","left":"Refresh the witness's memory using qualifying writings","right":"s. 163 permits testimony to facts correctly recorded; s. 164 gives the adverse party production and cross-examination rights"},{"point":"Witness state","left":"Witness uses writing to revive recollection","right":"s. 163 addresses lack of specific recollection but confidence in accurate recording"},{"point":"Control","left":"Timing, authorship, knowledge and Court permission for copies","right":"Production and adversarial testing of the writing"}]}
   ],
-  "misconceptions": [
-    {
-      "id": "bsa-162-trap-1",
-      "trap": "Citing only the old Evidence Act number for s. 162.",
-      "correction": "Use BSA s. 162 for the current regime and mention the historical number only as concordance or when applying the s. 170 savings rule."
-    },
-    {
-      "id": "bsa-162-trap-2",
-      "trap": "Relevancy automatically means admissibility and proof.",
-      "correction": "Relevancy, admissibility, proof and probative weight are separate forensic inquiries."
-    },
-    {
-      "id": "bsa-162-trap-3",
-      "trap": "BSA s. 109 reverses the entire burden of proof.",
-      "correction": "The initial burden remains with the party asserting the legal proposition; special knowledge operates only on the facts within that statutory rule."
-    }
+  "misconceptions":[
+    {"id":"bsa-162-trap-1","trap":"Any document can be used to refresh memory.","correction":"The statutory timing, authorship/reading and knowledge requirements must be satisfied."},
+    {"id":"bsa-162-trap-2","trap":"Refreshing memory makes the document substantive proof automatically.","correction":"Memory refreshment is distinct from tendering the document as independent evidence."},
+    {"id":"bsa-162-trap-3","trap":"The opposing party has no right to see the writing.","correction":"Section 164 gives the adverse party a right to production and cross-examination when its conditions are met."}
   ],
-  "cases": [
-    {
-      "name": "Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal",
-      "year": 2020,
-      "citation": "(2020) 7 SCC 1",
-      "court": "Supreme Court of India",
-      "facts": "The case concerned the proof and certification of electronic records tendered in election litigation.",
-      "issue": "Whether the statutory certificate requirement for computer outputs is mandatory and when secondary electronic evidence may be received.",
-      "ratioDecidendi": "The certificate requirement is a condition precedent for admissibility of the relevant electronic record output, subject to the statutory route and the Court's power to facilitate production where the facts justify it.",
-      "holding": "The Constitution Bench clarified the certificate rule and overruled the contrary view to the extent necessary.",
-      "relevance": "Use where s. 162 concerns electronic records or digital proof; it does not decide the relevancy or admissibility of every non-digital item."
-    },
-    {
-      "name": "Anvar P.V. v. P.K. Basheer",
-      "year": 2014,
-      "citation": "(2014) 10 SCC 473",
-      "court": "Supreme Court of India",
-      "facts": "The Court examined the mode of proving electronic records in an election dispute.",
-      "issue": "Whether electronic records could be admitted without compliance with the statutory certificate route.",
-      "ratioDecidendi": "Electronic evidence must be proved through the special statutory requirements applicable to computer outputs; ordinary secondary-evidence principles cannot bypass that route.",
-      "holding": "The earlier contrary approach was displaced and the certificate discipline was reaffirmed.",
-      "relevance": "Use only for digital evidence issues connected with s. 162; distinguish it from ordinary oral, physical-document or privilege questions."
-    },
-    {
-      "name": "Sharad Birdhichand Sarda v. State of Maharashtra",
-      "year": 1984,
-      "citation": "(1984) 4 SCC 116",
-      "court": "Supreme Court of India",
-      "facts": "The Court assessed a prosecution based substantially on circumstantial evidence.",
-      "issue": "What standard must circumstantial evidence meet before it can support a criminal conviction.",
-      "ratioDecidendi": "The circumstances must be fully established, consistent only with guilt, conclusive in tendency, and form a complete chain excluding every reasonable hypothesis of innocence.",
-      "holding": "The Court restated the safeguards for conviction on circumstantial evidence.",
-      "relevance": "Use where s. 162 concerns circumstantial proof or inference; do not use it as a substitute for a section-specific relevancy rule."
-    }
+  "cases":[
+    {"name":"Browne v. Dunn","year":1893,"citation":"(1893) 6 R 67","court":"House of Lords","facts":"The case established a cross-examination fairness principle where a party intends to challenge a witness's account.","issue":"What fairness requires before a witness's account is impeached on a matter that should have been put in cross-examination.","ratioDecidendi":"A witness should ordinarily be given an opportunity in cross-examination to address a material challenge to the witness's evidence.","holding":"The Court treated the failure to put the challenge as significant to the fairness of the evidentiary process.","relevance":"Useful for the adversarial principle behind s. 164; it is not a direct interpretation of BSA s. 162."}
   ],
-  "questionsAndAnswers": [
-    {
-      "id": "bsa-162-brief",
-      "draftingCategory": "brief",
-      "question": "Provide a structured legal brief on BSA s. 162 - Refreshing memory.",
-      "answer": "I. ISSUE AND EVIDENTIARY QUESTION\nIdentify the fact in issue, the material tendered and the objection or statutory route.\n\nII. RULE\nBSA s. 162 governs refreshing memory. Read it with BSA s. 161, BSA s. 163, then identify the relevancy, admissibility, proof and burden rules.\n\nIII. APPLICATION\nTest foundation, directness, privilege, documentary or electronic requirements, BSA s. 63 where applicable, and burdens under ss. 104 and 109.\n\nIV. CONCLUSION\nState whether the material is relevant, admissible, proved and what weight or procedural consequence follows.",
-      "explanation": "IRAC brief separating relevancy, admissibility, proof, burden and weight."
-    },
-    {
-      "id": "bsa-162-submissions",
-      "draftingCategory": "submissions",
-      "question": "Draft written submissions on BSA s. 162 - Refreshing memory.",
-      "answer": "I. FACTUAL AND EVIDENTIARY PROVENANCE\nIdentify the witness, document, digital record, fact in issue and stage of tender.\n\nII. STATUTORY SCHEME\nDeconstruct BSA s. 162, its Chapter, connected provisions BSA s. 161, BSA s. 163 and s. 170 savings.\n\nIII. RELEVANCY AND ADMISSIBILITY\nShow the statutory connection, answer hearsay or privilege objections, establish the appropriate foundation and address BSA s. 63 for electronic records.\n\nIV. BURDEN, STANDARD AND WEIGHT\nApply BSA ss. 104 and 109 without reversing the initial burden, then distinguish admissibility from credibility and probative weight.\n\nV. PRECEDENTS AND PRAYER\nApply only relevant verified ratios and seek a precise ruling on tender, marking, exclusion, further foundation or final reliance.",
-      "explanation": "Senior Counsel written-submissions structure for BSA evidence litigation."
-    }
+  "questionsAndAnswers":[
+    {"id":"bsa-162-brief","draftingCategory":"brief","question":"Prepare a brief on BSA s. 162.","answer":"ISSUE: Identify the writing and the witness's memory problem. RULE: Apply s. 162(1) timing/authorship/knowledge conditions and s. 162(2) copy/expert provisions. APPLICATION: establish the foundation and distinguish memory refreshment from substantive proof. ADVERSE PARTY: apply s. 164. DIGITAL: separately apply s. 63 if the record itself is tendered."},
+    {"id":"bsa-162-submissions","draftingCategory":"submissions","question":"Draft submissions on BSA s. 162.","answer":"I. WITNESS AND TRANSACTION\nII. WRITING AND STATUTORY FOUNDATION\nIII. TIMING / AUTHENTICITY / KNOWLEDGE\nIV. COPY OR EXPERT TREATISE ISSUE\nV. S. 163 AND S. 164 CONSEQUENCES\nVI. DIGITAL RECORD FOUNDATION WHERE APPLICABLE\nVII. ORDER SOUGHT"}
   ],
-  "bareActPointers": [
-    "BSA s. 162",
-    "BSA ss. 3, 55, 57, 63, 104 and 109 where applicable",
-    "BSA s. 170"
-  ],
-  "examTips": [
-    "Separate relevancy, admissibility, proof and probative weight.",
-    "Use the current BSA citation and historical Evidence Act numbers only as concordance.",
-    "For electronic records, analyse s. 63 certificate and foundation before weight.",
-    "State the initial burden and any statutory presumption precisely."
-  ],
-  "revisionPoints": [
-    "BSA s. 162: Refreshing memory.",
-    "Identify the fact in issue and statutory relevancy link.",
-    "Check foundation, exclusion, burden, standard and weight.",
-    "Check s. 170 savings for proceedings governed by the former Evidence Act."
-  ],
-  "relatedTopics": [
-    "s-161",
-    "s-163"
-  ]
+  "bareActPointers":["BSA s. 162(1)","BSA s. 162(2)","BSA ss. 163–164","BSA s. 63 where an electronic record is separately tendered","BSA s. 170"],
+  "examTips":["Refreshing memory is a witness rule, not automatic proof of the document.","Remember the timing and knowledge requirements.","Copies require Court permission on the statutory conditions.","The adverse party's inspection and cross-examination rights matter."],
+  "revisionPoints":["s. 162 = refreshing memory.","s. 163 = testimony to correctly recorded facts despite lack of specific recollection.","s. 164 = adverse party's production/cross-examination right.","Electronic-record admissibility remains a separate issue."]
 }
 
 export default content
