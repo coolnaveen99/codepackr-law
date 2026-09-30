@@ -58,6 +58,9 @@ Procedural & Courtroom Anchors (Senior Counsel Checklist)
 Current-Law Position & Milestone
 Part III embodies transformative constitutionalism. Recent expansions include the Right to Privacy (Puttaswamy, 2017), decriminalization of consensual same-sex relations (Navtej Johar, 2018), striking down of adultery (Joseph Shine, 2019), and EWS quota validity (Janhit Abhiyan, 2022). Current through the 106th Amendment (2023).`,
 
+Evidence and litigation anchor
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+
   sections: [
     {
       id: 'fr-six-categories',
@@ -272,7 +275,8 @@ Part III has evolved into an indestructible human rights charter. By integrating
     },
   ],
 
-  bareActPointers: ['Part III', 'Art 12', 'Art 13', 'Art 14', 'Art 19', 'Art 21', 'Art 32', 'Art 300A'],
+  bareActPointers: [
+    'Bharatiya Sakshya Adhiniyam, 2023 — sections 104–106, 109 and 63 where applicable','Part III', 'Art 12', 'Art 13', 'Art 14', 'Art 19', 'Art 21', 'Art 32', 'Art 300A'],
 
   examTips: [
     'Always list the six active categories of Fundamental Rights and note that Property moved to Article 300A in 1978.',
