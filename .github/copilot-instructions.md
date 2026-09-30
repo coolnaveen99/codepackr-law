@@ -526,3 +526,40 @@ For Content Gateway/legal-content work, report:
 - remaining migration/integration work.
 
 Never claim `legal-content` integration is complete until the application actually consumes validated canonical content successfully.
+
+
+## 17. Admin Content Gateway & Content Repository — MANDATORY
+
+Read before implementing content operations:
+- `docs/architecture/admin-content-publishing-architecture.md`
+- `prompts/ADMIN_CONTENT_PUBLISHING_AI_PROMPT.md`
+
+### 17.1 Product decision
+CodePackr Law must support authorized web-based administration of legal content. The Admin Portal is a controlled publishing system, not a generic blog CMS.
+
+### 17.2 Trust boundaries
+The public legal library and Admin Portal are separate trust zones. Public content delivery remains privacy-first; admin publishing is authenticated and server-mediated. Never expose repository write credentials to browser JavaScript.
+
+### 17.3 Git publishing
+Preferred workflow: Draft → validate → branch/PR → CI → legal review → approval → merge → deployment. Never let a normal admin action silently write directly to production without validation and audit.
+
+### 17.4 Content repository
+Use a `ContentRepository` abstraction so UI code is independent of whether content is currently stored in TypeScript, generated shards, or a separate content repository. Stable content IDs must survive file moves, repository migration and domain migration.
+
+### 17.5 Migration
+Never delete the legacy source during initial migration. Required sequence: inventory → snapshot → normalize → copy → parity → dual-read validation → switch → stabilize → archive.
+
+### 17.6 Content model
+First-class entities include topic, provision, judgment, comparison, illustration, doctrine, source, Sanhita mapping and SEO record.
+
+### 17.7 No artificial content-size rule
+Do not introduce word-count ceilings or fixed minimums. Content length is determined by legal complexity and completeness. Never add filler to satisfy an AI quota.
+
+### 17.8 No core high-yield classification
+Do not introduce or preserve `highYield` as the canonical legal-library importance model. Learning products may create curriculum views over canonical content.
+
+### 17.9 Domain migration
+Never hard-code `law.codepackr.com` into new architecture. Use configurable public/canonical/admin URLs so the site can move to a dedicated domain after validation. Preserve stable entity IDs and map old URLs to equivalent new URLs.
+
+### 17.10 Completion
+Do not claim an Admin Portal, content migration, Git publishing, CI pipeline, or domain migration is complete unless corresponding code/configuration, tests and verification evidence actually exist.
