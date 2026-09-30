@@ -77,6 +77,9 @@ Article 329 erects a strict constitutional barrier:
    - Constitutional courts under Article 226 or 32 **cannot entertain writ petitions stalling, postponing, or staying an ongoing election process** (such as rejecting nomination papers). 
    - All grievances must wait until the results are declared, to be litigated exclusively through an Election Petition before the High Court.`,
 
+Evidence and litigation anchor
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+
   sections: [
     {
       id: 'elec-art324-architecture',
@@ -322,6 +325,7 @@ Articles 324 to 329 establish the constitutional machinery of Indian democracy. 
   ],
 
   bareActPointers: [
+    'Bharatiya Sakshya Adhiniyam, 2023 — sections 104–106, 109 and 63 where applicable',
     'Art 324(1) — Superintendence, direction, and control of elections in ECI',
     'Art 324(2) — Appointment of CEC and ECs by President',
     'Art 324(5) — Impeachment removal safeguard for CEC',
