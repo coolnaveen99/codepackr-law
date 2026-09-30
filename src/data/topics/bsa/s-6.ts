@@ -1,237 +1,47 @@
 import type { TopicContent } from '../loadTopicContent'
 
 const content: TopicContent = {
-  "glance": "BSA s. 6, Motive, preparation and previous or subsequent conduct, is an evidentiary provision in the Relevancy of facts cluster. Analyse it through the separate questions of relevancy, admissibility, proof, burden and probative weight, and check BSA s. 170 for proceedings governed by the repeal and savings rule.",
-  "study": "Current-law identity\nBSA s. 6 governs motive, preparation and previous or subsequent conduct within Chapter II - Relevancy of facts. The provision must be read with its enacted clauses, explanations, illustrations and connected provisions BSA s. 5, BSA s. 7.\n\nThe forensic distinction\nRelevancy asks whether a fact has the statutory connection required by the Adhiniyam. Admissibility asks whether the Court may receive that relevant material under the rules of exclusion, privilege, form and foundation. Proof asks whether the admitted material establishes the fact to the required standard. Probative weight asks how much reliance the Court should place on it. A relevant fact is not automatically admissible, and admissibility is not proof of the ultimate fact.\n\nMandatory application checklist\n1. Identify the fact in issue, the fact sought to be introduced and the party tendering it.\n2. State the exact rule in BSA s. 6, including every condition, explanation, proviso and illustration.\n3. Classify the material as oral, documentary, electronic, real or circumstantial evidence.\n4. Test directness, hearsay, privilege, primary or secondary evidence, authentication and statutory certificate requirements.\n5. Identify the party bearing the initial burden under BSA s. 104 and any special-knowledge rule under s. 109.\n6. Separate admissibility from the weight ultimately assigned after cross-examination and the complete record.\n\nElectronic records and constitutional limits\nElectronic and digital records are documents under BSA. Where a computer output, email, messaging record, CCTV export, call record, server log or device image is tendered through the statutory route, check BSA s. 63 and its certificate requirements. The certificate is not a substitute for relevance, authenticity, chain of custody or proof of the fact asserted. Evidence must also respect Articles 20(3), 21 and 14 of the Constitution, privilege rules and fair-trial disclosure.\n\nCourtroom method\nIn a written submission, identify the fact in issue, show the statutory relevancy link, answer the admissibility objection, establish the foundation, identify the burden and standard, and explain the probative consequence. Do not cite the historical Evidence Act number as the current rule after 1 July 2024 except as concordance. Do not convert a missing certificate, hearsay statement or weak foundation into an automatic finding on the merits without analysing the applicable statutory consequence.",
-  "sections": [
-    {
-      "id": "bsa-6-module-1",
-      "title": "Provenance, Legislative Objective and Evidentiary Foundation",
-      "order": 1,
-      "content": [
-        "BSA s. 6 regulates motive, preparation and previous or subsequent conduct within Relevancy of facts.",
-        "The statutory scheme seeks reliable adjudication by limiting proof to legally relevant and properly received material.",
-        "Read the provision with the constitutional values of fair trial, privilege, reliability and equality of arms."
-      ]
-    },
-    {
-      "id": "bsa-6-module-2",
-      "title": "Textual Anatomy, Exceptions and Connected Rules",
-      "order": 2,
-      "content": [
-        "Deconstruct every clause of BSA s. 6; do not replace the enacted rule with a one-line Evidence Act summary.",
-        "Read it with BSA s. 5, BSA s. 7. Connected provisions may control foundation, exclusion, presumptions, witnesses or the mode of proof.",
-        "Historical concordance assists comparison only and is not the current citation."
-      ]
-    },
-    {
-      "id": "bsa-6-module-3",
-      "title": "Mandatory Relevancy, Admissibility and Proof Ingredients",
-      "order": 3,
-      "content": [
-        "First ingredient: identify the fact in issue or the statutory relevancy link.",
-        "Second ingredient: satisfy any exclusion, privilege, directness, primary-document or foundation rule.",
-        "Third ingredient: prove authenticity and the source or maker where the form of evidence requires it.",
-        "Fourth ingredient: apply the correct burden and standard, then distinguish admissibility from probative weight."
-      ]
-    },
-    {
-      "id": "bsa-6-module-4",
-      "title": "BSA Burdens, Presumptions and Electronic Records",
-      "order": 4,
-      "content": [
-        "BSA s. 104 supplies the ordinary burden framework; the party asserting the legal proposition must establish its foundation.",
-        "BSA s. 109 addresses facts especially within knowledge. It does not erase the initial burden or permit conviction on an unproved charge.",
-        "For electronic records, examine BSA s. 63 certificate, device or system identity, production method, integrity, custody and the distinction between admissibility and weight."
-      ]
-    },
-    {
-      "id": "bsa-6-module-5",
-      "title": "Trial Roadmap, Forum, Limitation and Repeal Savings",
-      "order": 5,
-      "content": [
-        "Apply BSA s. 6 at the correct stage of trial or inquiry and identify whether the objection concerns tender, marking, admissibility, proof or final weight.",
-        "For proceedings governed by the post-1 July 2024 evidence regime, cite BSA. For proceedings saved by s. 170, identify the applicable Indian Evidence Act route before arguing the consequence.",
-        "Check the governing procedural statute and any special limitation rule for the application or appeal; evidence law itself does not create a universal limitation period."
-      ]
-    }
+  "glance":"BSA s. 6 makes motive, preparation and previous or subsequent conduct relevant when they explain or connect with facts in issue or relevant facts. Relevancy is contextual; it does not make every allegation of bad character admissible or prove guilt by itself. Historical concordance: Indian Evidence Act s. 8.",
+  "study":"CURRENT LAW\nSection 6 belongs to Chapter II, Relevancy of Facts. It covers motive, preparation, and conduct before or after the event in issue when the statutory connection is established. The central question is not whether conduct is morally suspicious, but whether it has a legally recognised connection with a fact in issue or relevant fact.\n\nMOTIVE AND PREPARATION\nMotive explains why a person may have acted; it is generally circumstantial and is not itself an element of every offence. Preparation concerns steps taken before an act and can acquire relevance when it forms part of the evidentiary chain. Absence of motive is not automatically exculpatory where the prosecution otherwise proves the offence.\n\nCONDUCT\nPrevious or subsequent conduct is relevant only where the statutory connection exists. Conduct may include statements or acts accompanying or explaining the transaction, but the Court must avoid reasoning that treats mere bad character or post-event behaviour as conclusive proof. Subsequent conduct can have innocent explanations; its probative weight must be assessed against the whole record.\n\nAPPLICATION\n1. Identify the fact in issue. 2. Identify the conduct, motive or preparation relied upon. 3. State the precise causal, contextual or explanatory link required by s. 6. 4. Test any independent exclusion such as hearsay, privilege or a character rule. 5. If electronic evidence is used, apply s. 63 separately. 6. Assess credibility and weight without converting relevance into proof.\n\nCURRENT DIGITAL CONTEXT\nMessages, location records, search history, CCTV, call data and other digital material may evidence conduct, motive or preparation, but s. 6 does not itself create the admissibility route. Apply s. 63 and other applicable provisions independently.\n\nTRANSITION\nUse BSA s. 6 for current proceedings and check s. 170 where a proceeding is governed by the repeal-and-savings rule.",
+  "sections":[
+    {"id":"bsa-6-module-1","title":"Motive","order":1,"content":["Motive is the reason that may explain an act; it is ordinarily circumstantial rather than an independent element of every offence.","A proven motive can strengthen an evidentiary chain but absence of an identifiable motive does not necessarily disprove an offence.","The Court should identify the precise inference motive is capable of supporting."]},
+    {"id":"bsa-6-module-2","title":"Preparation","order":2,"content":["Preparation consists of acts preceding the event and becomes relevant when it connects logically and legally with the fact in issue.","Preparation is not synonymous with attempt or guilt; the Court must identify what inference the preparation actually supports.","Independent evidence of preparation remains subject to ordinary rules of admissibility and proof."]},
+    {"id":"bsa-6-module-3","title":"Previous and Subsequent Conduct","order":3,"content":["Conduct before or after the event may be relevant where the statutory connection exists.","Post-event conduct can support competing inferences; flight, silence, destruction of material or other conduct must be evaluated in context rather than treated as conclusive guilt.","A conduct item should not be admitted merely because it makes the accused appear generally suspicious."]},
+    {"id":"bsa-6-module-4","title":"Evidence Architecture and Digital Conduct","order":4,"content":["Relevancy under s. 6 is distinct from admissibility, authenticity and weight.","Digital conduct may require s. 63 compliance where an electronic record is tendered.","Where conduct is circumstantial, apply the criminal standard to the complete chain rather than treating one relevant circumstance as sufficient by itself."]},
+    {"id":"bsa-6-module-5","title":"Advocacy and Error Control","order":5,"content":["For the proponent, articulate the exact inference supported by the conduct. For the opponent, expose innocent explanations, weak linkage, alternative hypotheses and any independent admissibility objection.","Historical Evidence Act s. 8 is concordance only for current BSA proceedings.","Use s. 170 when determining whether a former proceeding remains governed by the repealed statute."]}
   ],
-  "provisions": [
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-6",
-      "section": "s. 6",
-      "title": "Motive, preparation and previous or subsequent conduct"
-    },
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-63",
-      "section": "s. 63",
-      "title": "Admissibility of electronic records"
-    },
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-104",
-      "section": "s. 104",
-      "title": "Burden of proof"
-    },
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-109",
-      "section": "s. 109",
-      "title": "Burden of proving fact especially within knowledge"
-    },
-    {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-170",
-      "section": "s. 170",
-      "title": "Repeal and savings"
-    }
+  "provisions":[
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-6","section":"s. 6","title":"Motive, preparation and previous or subsequent conduct"},
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-5","section":"s. 5","title":"Facts forming part of same transaction"},
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-63","section":"s. 63","title":"Admissibility of electronic records"},
+    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-170","section":"s. 170","title":"Repeal and savings"}
   ],
-  "examples": [
-    {
-      "id": "bsa-6-ill-1",
-      "title": "Example 1 - Foundation and admissibility satisfied",
-      "illustrationType": "practical",
-      "description": "A party identifies the fact in issue, establishes the statutory relevancy link under s. 6, proves the source and authenticity of the record, and satisfies the applicable documentary or electronic foundation. The Court may receive the material and then assess its weight."
-    },
-    {
-      "id": "bsa-6-ill-2",
-      "title": "Example 2 - Relevancy does not cure a defect",
-      "illustrationType": "fail-scenario",
-      "description": "A party offers a relevant screenshot or hearsay statement but cannot satisfy the applicable statutory foundation, certificate, directness or privilege rule. The Court must analyse admissibility separately instead of treating logical relevance as automatic proof."
-    }
+  "examples":[
+    {"id":"bsa-6-ill-1","title":"Preparation linked to the event","illustrationType":"practical","description":"Evidence that a person acquired a particular instrument immediately before an alleged offence may be relevant if the surrounding evidence connects the acquisition to the charged event. The item is not guilt by itself."},
+    {"id":"bsa-6-ill-2","title":"Subsequent conduct with competing explanations","illustrationType":"fail-scenario","description":"A person's departure after an incident may be consistent with consciousness of guilt, fear, family reasons or another innocent explanation. The Court must assess the conduct with the complete evidentiary record."}
   ],
-  "hypotheticals": [
-    {
-      "id": "bsa-6-hypo",
-      "title": "Chamber Practice Hypothetical: BSA s. 6",
-      "facts": "In a criminal trial, the prosecution tenders an oral statement and a digital record to establish a fact connected with the charge. The defence objects that the material is irrelevant, hearsay, uncertified or unsupported by a competent witness. The prosecution invokes a burden or presumption without first establishing the factual foundation.",
-      "question": "Whether the material is relevant and admissible under BSA s. 6, and what proof and burden consequences follow.",
-      "applicableLaw": "BSA s. 6, connected provisions BSA s. 5, BSA s. 7, ss. 3, 55, 57, 63, 104 and 109 where applicable, and s. 170 savings.",
-      "analysis": "1. Identify the fact in issue and the statutory relevancy route. 2. Test the form of evidence: direct oral evidence, documentary evidence, electronic record, hearsay or privileged communication. 3. Check the applicable foundation and BSA s. 63 certificate where digital material is tendered. 4. Place the initial burden under s. 104 and use s. 109 only after the foundation for special knowledge is established. 5. Separate admissibility from credibility and final probative weight.",
-      "conclusion": "The Court should receive and rely on the material only to the extent that the statutory relevancy, admissibility and proof requirements are independently satisfied. A relevant but inadmissible record cannot become proof merely because it appears persuasive."
-    }
+  "hypotheticals":[
+    {"id":"bsa-6-hypo","title":"Chamber Problem: Digital Search History","facts":"A prosecution relies on search history and messages made before an alleged offence to infer preparation and motive. The defence disputes authorship, device access and the inference drawn from the searches.","question":"Whether the material is relevant under s. 6 and what additional proof is required.","applicableLaw":"BSA s. 6, s. 63 for electronic records, and the provisions governing proof and credibility.","analysis":"Identify the fact in issue and the exact inference. Establish authorship, device or account attribution and the statutory electronic-record route. Then assess whether the searches genuinely support preparation or motive and whether innocent explanations remain.","conclusion":"Section 6 supplies relevancy only. The prosecution must independently establish the electronic record's admissibility, attribution and probative force."}
   ],
-  "distinctions": [
-    {
-      "id": "bsa-6-distinction",
-      "title": "BSA s. 6: relevancy, admissibility and proof",
-      "left": "BSA s. 6",
-      "right": "BSA s. 5, BSA s. 7",
-      "rows": [
-        {
-          "point": "Function",
-          "left": "Motive, preparation and previous or subsequent conduct",
-          "right": "Connected relevancy, foundation, burden or exclusion rule"
-        },
-        {
-          "point": "Question",
-          "left": "What fact or evidentiary act does this section govern?",
-          "right": "What additional condition must be satisfied?"
-        },
-        {
-          "point": "Trial consequence",
-          "left": "Apply the section to the tendered material",
-          "right": "Then decide admissibility, credibility and weight separately"
-        }
-      ]
-    }
+  "distinctions":[
+    {"id":"bsa-6-distinction","title":"Motive, preparation and conduct","left":"Motive","right":"Preparation / conduct","rows":[{"point":"Core function","left":"Explains why an act may have occurred","right":"Shows steps or behaviour connected with the event"},{"point":"Evidentiary character","left":"Usually circumstantial","right":"Context-dependent circumstantial evidence"},{"point":"Risk","left":"Overstating motive as proof of guilt","right":"Treating suspicious conduct as conclusive without linkage"}]}
   ],
-  "misconceptions": [
-    {
-      "id": "bsa-6-trap-1",
-      "trap": "Citing only the old Evidence Act number for s. 6.",
-      "correction": "Use BSA s. 6 for the current regime and mention the historical number only as concordance or when applying the s. 170 savings rule."
-    },
-    {
-      "id": "bsa-6-trap-2",
-      "trap": "Relevancy automatically means admissibility and proof.",
-      "correction": "Relevancy, admissibility, proof and probative weight are separate forensic inquiries."
-    },
-    {
-      "id": "bsa-6-trap-3",
-      "trap": "BSA s. 109 reverses the entire burden of proof.",
-      "correction": "The initial burden remains with the party asserting the legal proposition; special knowledge operates only on the facts within that statutory rule."
-    }
+  "misconceptions":[
+    {"id":"bsa-6-trap-1","trap":"Motive is an essential element of every offence.","correction":"Motive may be relevant circumstantially but is not an element of every offence."},
+    {"id":"bsa-6-trap-2","trap":"Any suspicious conduct before or after an offence is relevant and proves guilt.","correction":"Section 6 requires a statutory connection; weight and alternative explanations remain material."},
+    {"id":"bsa-6-trap-3","trap":"Section 6 itself makes digital material admissible.","correction":"Electronic records require their own statutory admissibility and proof analysis, including s. 63 where applicable."}
   ],
-  "cases": [
-    {
-      "name": "Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal",
-      "year": 2020,
-      "citation": "(2020) 7 SCC 1",
-      "court": "Supreme Court of India",
-      "facts": "The case concerned the proof and certification of electronic records tendered in election litigation.",
-      "issue": "Whether the statutory certificate requirement for computer outputs is mandatory and when secondary electronic evidence may be received.",
-      "ratioDecidendi": "The certificate requirement is a condition precedent for admissibility of the relevant electronic record output, subject to the statutory route and the Court's power to facilitate production where the facts justify it.",
-      "holding": "The Constitution Bench clarified the certificate rule and overruled the contrary view to the extent necessary.",
-      "relevance": "Use where s. 6 concerns electronic records or digital proof; it does not decide the relevancy or admissibility of every non-digital item."
-    },
-    {
-      "name": "Anvar P.V. v. P.K. Basheer",
-      "year": 2014,
-      "citation": "(2014) 10 SCC 473",
-      "court": "Supreme Court of India",
-      "facts": "The Court examined the mode of proving electronic records in an election dispute.",
-      "issue": "Whether electronic records could be admitted without compliance with the statutory certificate route.",
-      "ratioDecidendi": "Electronic evidence must be proved through the special statutory requirements applicable to computer outputs; ordinary secondary-evidence principles cannot bypass that route.",
-      "holding": "The earlier contrary approach was displaced and the certificate discipline was reaffirmed.",
-      "relevance": "Use only for digital evidence issues connected with s. 6; distinguish it from ordinary oral, physical-document or privilege questions."
-    },
-    {
-      "name": "Sharad Birdhichand Sarda v. State of Maharashtra",
-      "year": 1984,
-      "citation": "(1984) 4 SCC 116",
-      "court": "Supreme Court of India",
-      "facts": "The Court assessed a prosecution based substantially on circumstantial evidence.",
-      "issue": "What standard must circumstantial evidence meet before it can support a criminal conviction.",
-      "ratioDecidendi": "The circumstances must be fully established, consistent only with guilt, conclusive in tendency, and form a complete chain excluding every reasonable hypothesis of innocence.",
-      "holding": "The Court restated the safeguards for conviction on circumstantial evidence.",
-      "relevance": "Use where s. 6 concerns circumstantial proof or inference; do not use it as a substitute for a section-specific relevancy rule."
-    }
+  "cases":[
+    {"name":"State of U.P. v. Krishna Gopal","year":1988,"citation":"(1988) 4 SCC 302","court":"Supreme Court of India","facts":"The Court considered circumstantial evidence and the standard for drawing inferences in a criminal case.","issue":"How should circumstantial facts be assessed when drawing an inference of guilt?","ratioDecidendi":"The Court must evaluate the evidence as a whole and avoid substituting conjecture for proof; circumstantial evidence must satisfy the criminal standard.","holding":"The judgment emphasised disciplined inference from established circumstances.","relevance":"Useful when motive, preparation or conduct is relied on as one part of a circumstantial chain."},
+    {"name":"Sharad Birdhichand Sarda v. State of Maharashtra","year":1984,"citation":"(1984) 4 SCC 116","court":"Supreme Court of India","facts":"The case concerned conviction based on circumstantial evidence.","issue":"What safeguards govern a complete chain of circumstantial evidence?","ratioDecidendi":"The circumstances relied upon must be fully established and form a complete chain consistent with guilt and inconsistent with reasonable hypotheses of innocence.","holding":"The Court restated the governing safeguards for circumstantial proof.","relevance":"Use to control the weight of motive or conduct evidence; it does not make s. 6 a standalone route to conviction."}
   ],
-  "questionsAndAnswers": [
-    {
-      "id": "bsa-6-brief",
-      "draftingCategory": "brief",
-      "question": "Provide a structured legal brief on BSA s. 6 - Motive, preparation and previous or subsequent conduct.",
-      "answer": "I. ISSUE AND EVIDENTIARY QUESTION\nIdentify the fact in issue, the material tendered and the objection or statutory route.\n\nII. RULE\nBSA s. 6 governs motive, preparation and previous or subsequent conduct. Read it with BSA s. 5, BSA s. 7, then identify the relevancy, admissibility, proof and burden rules.\n\nIII. APPLICATION\nTest foundation, directness, privilege, documentary or electronic requirements, BSA s. 63 where applicable, and burdens under ss. 104 and 109.\n\nIV. CONCLUSION\nState whether the material is relevant, admissible, proved and what weight or procedural consequence follows.",
-      "explanation": "IRAC brief separating relevancy, admissibility, proof, burden and weight."
-    },
-    {
-      "id": "bsa-6-submissions",
-      "draftingCategory": "submissions",
-      "question": "Draft written submissions on BSA s. 6 - Motive, preparation and previous or subsequent conduct.",
-      "answer": "I. FACTUAL AND EVIDENTIARY PROVENANCE\nIdentify the witness, document, digital record, fact in issue and stage of tender.\n\nII. STATUTORY SCHEME\nDeconstruct BSA s. 6, its Chapter, connected provisions BSA s. 5, BSA s. 7 and s. 170 savings.\n\nIII. RELEVANCY AND ADMISSIBILITY\nShow the statutory connection, answer hearsay or privilege objections, establish the appropriate foundation and address BSA s. 63 for electronic records.\n\nIV. BURDEN, STANDARD AND WEIGHT\nApply BSA ss. 104 and 109 without reversing the initial burden, then distinguish admissibility from credibility and probative weight.\n\nV. PRECEDENTS AND PRAYER\nApply only relevant verified ratios and seek a precise ruling on tender, marking, exclusion, further foundation or final reliance.",
-      "explanation": "Senior Counsel written-submissions structure for BSA evidence litigation."
-    }
+  "questionsAndAnswers":[
+    {"id":"bsa-6-brief","draftingCategory":"brief","question":"Prepare a brief on BSA s. 6.","answer":"ISSUE: Identify the fact in issue and the motive, preparation or conduct relied upon. RULE: Apply s. 6 and state the exact statutory connection. APPLICATION: test linkage, authorship, admissibility, competing explanations and weight. DIGITAL MATERIAL: apply s. 63 separately where required. CONCLUSION: state the limited inference the evidence can legitimately support."},
+    {"id":"bsa-6-submissions","draftingCategory":"submissions","question":"Draft submissions on BSA s. 6.","answer":"I. FACT IN ISSUE\nII. STATUTORY LINK UNDER S. 6\nIII. PROOF OF THE CONDUCT / MOTIVE / PREPARATION\nIV. ALTERNATIVE EXPLANATIONS AND PROBATIVE WEIGHT\nV. DIGITAL / ADMISSIBILITY FOUNDATION WHERE APPLICABLE\nVI. PRECISE RELIEF ON ADMISSION, WEIGHT OR FINAL INFERENCE"}
   ],
-  "bareActPointers": [
-    "BSA s. 6",
-    "BSA ss. 3, 55, 57, 63, 104 and 109 where applicable",
-    "BSA s. 170"
-  ],
-  "examTips": [
-    "Separate relevancy, admissibility, proof and probative weight.",
-    "Use the current BSA citation and historical Evidence Act numbers only as concordance.",
-    "For electronic records, analyse s. 63 certificate and foundation before weight.",
-    "State the initial burden and any statutory presumption precisely."
-  ],
-  "revisionPoints": [
-    "BSA s. 6: Motive, preparation and previous or subsequent conduct.",
-    "Identify the fact in issue and statutory relevancy link.",
-    "Check foundation, exclusion, burden, standard and weight.",
-    "Check s. 170 savings for proceedings governed by the former Evidence Act."
-  ],
-  "relatedTopics": [
-    "s-5",
-    "s-7"
-  ]
+  "bareActPointers":["BSA s. 6","BSA s. 5 and s. 7 where the surrounding transaction or consequence is relevant","BSA s. 63 for electronic records","BSA s. 170"],
+  "examTips":["State the exact inference supported by motive or conduct.","Do not equate relevance with guilt.","For digital conduct, separate s. 6 relevance from s. 63 admissibility.","Assess the entire circumstantial chain."],
+  "revisionPoints":["Motive = why; preparation = steps; conduct = behaviour connected to the fact.","Section 6 is contextual, not a general character rule.","Electronic evidence needs independent admissibility and attribution analysis."]
 }
 
 export default content
