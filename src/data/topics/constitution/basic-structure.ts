@@ -5,7 +5,7 @@ const content: TopicContent = {
     'The Basic Structure Doctrine is the supreme judicial check on Parliament’s constituent amending power under Article 368. Formulated by a 13-judge bench in Kesavananda Bharati (1973), it establishes that Parliament can amend any part of the Constitution, including Fundamental Rights, but cannot damage, emasculate, or destroy its basic structure or constitutional identity.',
 
   study: `Topic at a Glance
-The Basic Structure Doctrine is India’s greatest contribution to global constitutional jurisprudence. It resolves the existential tension between parliamentary sovereignty and constitutional supremacy, establishing that while Parliament has the power to amend the Constitution under Article 368, it does not possess the power to rewrite, destroy, or repeal the Constitution’s foundational identity.
+The Basic Structure Doctrine is a central feature of Indian constitutional jurisprudence governing the limits of the constituent amending power. It resolves the existential tension between parliamentary sovereignty and constitutional supremacy, establishing that while Parliament has the power to amend the Constitution under Article 368, it does not possess the power to rewrite, destroy, or repeal the Constitution’s foundational identity.
 
 The Historical Clashes Leading to Kesavananda Bharati
 1. Shankari Prasad v. Union of India (AIR 1951 SC 458):
@@ -64,48 +64,65 @@ The Supreme Court has deliberately avoided an exhaustive definition, but settled
 
 Procedural & Courtroom Anchors (Senior Counsel Checklist)
 1. Forum & Jurisdiction:
-   - Challenge to a Constitutional Amendment lies exclusively before the Supreme Court under Article 32 or High Court under Article 226.
-   - Constitutional challenges against amendments are heard by a Constitution Bench (minimum 5 judges under Article 145(3)).
+   - A constitutional amendment may be challenged before a court exercising appropriate constitutional jurisdiction; Articles 32 and 226 provide important writ routes where their respective requirements are satisfied.
+   - Article 145(3) requires a minimum five-judge bench in the Supreme Court when a case involves a substantial question of law as to the interpretation of the Constitution. That provision does not impose a five-judge Constitution Bench requirement on High Courts.
 2. Grounds of Challenge:
-   - A constitutional amendment CANNOT be challenged on ordinary grounds of unreasonableness or statutory inconsistency with ordinary laws.
-   - It can ONLY be challenged on two grounds:
-     (a) Procedural non-compliance with Article 368 (e.g. failure to secure special majority or state ratification under the proviso);
-     (b) Violation of the Basic Structure Doctrine.
+   - The court examines compliance with the constitutional amendment procedure in Article 368, including the special majority and, where the proviso applies, the required State ratification.
+   - A substantive challenge may invoke the Basic Structure Doctrine. The analysis asks whether the amendment crosses the constitutional limit on constituent power; it should not be reduced to an exhaustive two-ground formula because the precise grounds depend on the amendment and the constitutional text.
 3. Test Applied: The “Rights Test” vs “Essence Test” (I.R. Coelho). Does the amendment abrogate the core identity or essential character of a basic feature?
 
 Current-Law Position & Milestone
-The Basic Structure Doctrine is the bedrock of constitutional supremacy in India. Current through the 106th Constitutional Amendment Act, 2023.`,
+The Basic Structure Doctrine remains part of the Supreme Court's constitutional jurisprudence. Article 368's text continues to confer constituent power on Parliament while prescribing the amendment procedure; the doctrine supplies a judicially enforced substantive limitation on that power.`,
 
   sections: [
     {
-      id: 'bs-evolution-chronology',
-      title: 'Historical Evolution & Great Constitutional Battles',
+      id: 'bs-textual-architecture',
+      title: 'Module 1 — Article 368 and the Nature of Constituent Power',
       order: 1,
       content: [
-        'Shankari Prasad (1951) & Sajjan Singh (1965): Amending power was considered plenary and absolute.',
-        'Golaknath (1967): 11 judges held Parliament cannot abridge Fundamental Rights under Article 368.',
-        'Kesavananda Bharati (1973): 13 judges overruled Golaknath and established the Basic Structure Doctrine.',
+        'Article 368(1) expressly describes Parliament as exercising constituent power to amend the Constitution by addition, variation or repeal, subject to the procedure laid down in Article 368.',
+        'Article 368(2) requires passage in each House by a majority of the total membership and by at least two-thirds of members present and voting. Certain specified constitutional changes additionally require ratification by at least one-half of the State Legislatures.',
+        'The Basic Structure Doctrine is not written as a separate clause in Article 368. It is a judicial doctrine derived from the nature of constitutional amendment and constitutional supremacy, beginning with Kesavananda Bharati.'
       ],
     },
     {
-      id: 'bs-consolidation-cases',
-      title: 'Consolidation & Landmark Case Law Ratios',
+      id: 'bs-evolution-and-ratio',
+      title: 'Module 2 — From Shankari Prasad to Kesavananda Bharati',
       order: 2,
       content: [
-        'Indira Gandhi v. Raj Narain (1975): Struck down 39th Amendment (free & fair elections, rule of law).',
-        'Minerva Mills (1980): Limited amending power and balance between Parts III & IV is basic structure.',
-        'I.R. Coelho (2007): Post-1973 Ninth Schedule laws subject to basic structure review.',
-        'NJAC Case (2015): 99th Amendment struck down; judicial independence is basic structure.',
+        'Shankari Prasad and Sajjan Singh treated constitutional amendments differently from ordinary law for Article 13 purposes and accepted Parliament’s power to amend Fundamental Rights.',
+        'Golaknath (1967), by a 6:5 majority of an 11-judge bench, took the opposite position on the relationship between Article 13 and constitutional amendments.',
+        'Kesavananda Bharati (1973), decided by a 13-judge bench by a 7:6 majority, upheld Parliament’s power to amend any constitutional provision but held that the amending power cannot be used to alter the Constitution’s basic structure.'
       ],
     },
     {
-      id: 'bs-pillars-litigation',
-      title: 'Settled Pillars & Courtroom Litigator Checklist',
+      id: 'bs-identified-features',
+      title: 'Module 3 — Basic Features and the Post-Kesavananda Cases',
       order: 3,
       content: [
-        'Pillars: Supremacy, Democracy, Secularism, Federalism, Separation of Powers, Judicial Review, Rule of Law.',
-        'Standard of Review: Exclusive ground for testing constitutional amendments under Article 368.',
-        'Forum: Supreme Court (Art 32) and High Court (Art 226) heard by Constitution Benches.',
+        'The Supreme Court has not supplied a closed catalogue of basic features. Recognized examples across the cases include constitutional supremacy, republican and democratic government, secularism, federalism, separation of powers, judicial review, judicial independence, rule of law and free and fair elections.',
+        'Indira Nehru Gandhi v. Raj Narain applied the doctrine to invalidate part of the 39th Amendment, including provisions that undermined judicial review and free and fair elections.',
+        'Minerva Mills held that the limited nature of the amending power itself is a basic feature and that the balance between Fundamental Rights and Directive Principles is constitutionally significant.'
+      ],
+    },
+    {
+      id: 'bs-ninth-schedule',
+      title: 'Module 4 — Ninth Schedule Review and the Rights Test',
+      order: 4,
+      content: [
+        'Waman Rao identified 24 April 1973, the date of the Kesavananda Bharati judgment, as the relevant cut-off for Ninth Schedule review.',
+        'I.R. Coelho (2007) held that laws placed in the Ninth Schedule after that date are not automatically immune from judicial review where their constitutional impact implicates rights forming part of the basic structure.',
+        'The Ninth Schedule therefore does not create an absolute bar against constitutional review; the court examines the substance and effect of the challenged law through the constitutional tests applicable to the case.'
+      ],
+    },
+    {
+      id: 'bs-litigation-evidence',
+      title: 'Module 5 — Amendment Challenge, Evidence and Relief',
+      order: 5,
+      content: [
+        'A constitutional-amendment challenge should identify the exact amending provision, the Article 368 procedure invoked, the constitutional feature allegedly impaired, and the concrete manner in which the amendment is said to alter or destroy that feature.',
+        'Where the BSA applies to an evidentiary question, ss. 104–106 concern burdens relating to facts in issue and relevant facts, while s. 109 addresses facts especially within a person’s knowledge. These provisions do not create a special “basic-structure burden” or automatically shift every constitutional issue to the State.',
+        'Relief depends on the defect established. A court may sever an invalid provision where severability is legally available, or invalidate the offending constitutional amendment to the extent required by the constitutional analysis.'
       ],
     },
   ],
@@ -137,7 +154,7 @@ The Basic Structure Doctrine is the bedrock of constitutional supremacy in India
       question: 'Examine the constitutional validity of the amendment in light of the Second Judges Case, the NJAC judgment (SCAORA v. Union of India, 2015), and the doctrine of separation of powers.',
       applicableLaw: 'Article 368 of the Constitution of India; Basic Structure Doctrine; Articles 124 and 217; SCAORA v. Union of India (2015).',
       analysis: '1. Power under Article 368: While Parliament can amend Articles 124 and 217, it cannot alter the Basic Structure.\n2. Is Judicial Independence Basic Structure? In the Second Judges Case (1993) and the NJAC Case (2015), the Supreme Court ruled that the independence of the judiciary and the separation of powers under Article 50 are non-negotiable basic features of the Constitution.\n3. Executive Veto: Granting executive nominees a veto over judicial appointments subordinates the judiciary to the executive, destroying judicial independence and the checks-and-balances mechanism.\n4. Application to Facts: The amendment undermines the institutional autonomy of the higher judiciary.',
-      conclusion: 'The constitutional amendment is unconstitutional and void ab initio for violating the Basic Structure of the Constitution. The Supreme Court will strike down the enactment and restore judicial independence.',
+      conclusion: 'The amendment would face a serious Basic Structure challenge if the asserted executive veto materially impaired the independence of the higher judiciary. The court would determine the constitutional effect of the amendment and the appropriate relief on the full text and operation of the measure.',
     },
   ],
 
@@ -175,7 +192,7 @@ The Basic Structure Doctrine is the bedrock of constitutional supremacy in India
 
   questionsAndAnswers: [
     {
-      id: 'basic-structure-qa-10',
+      id: 'basic-structure-qa-brief',
       draftingCategory: 'brief',
       question: 'Trace the evolution of the Basic Structure Doctrine from Shankari Prasad to Kesavananda Bharati and Minerva Mills.',
       answer: `I. ISSUE & CONSTITUTIONAL DILEMMA
@@ -199,7 +216,7 @@ The Basic Structure Doctrine permanently established constitutional supremacy ov
       relatedProvisionIds: ['constitution-article-368', 'constitution-article-13'],
     },
     {
-      id: 'basic-structure-qa-16',
+      id: 'basic-structure-qa-submissions',
       draftingCategory: 'submissions',
       question: 'Critically examine the Basic Structure Doctrine in Indian Constitutional Law. How did the Supreme Court resolve the tension between Parliamentary sovereignty and Judicial Review? Discuss with reference to Kesavananda Bharati, Indira Gandhi, Minerva Mills, and I.R. Coelho.',
       answer: `I. INTRODUCTION & THE PHILOSOPHICAL CONFLICT
@@ -299,7 +316,7 @@ The Basic Structure Doctrine successfully prevented India from slipping into ele
     },
   ],
 
-  bareActPointers: ['Art 368', 'Art 13', 'Art 31B', 'Ninth Schedule', 'Art 32', 'Art 226'],
+  bareActPointers: ['Art 368', 'Art 13', 'Art 31B', 'Ninth Schedule', 'Art 32', 'Art 226', 'BSA 2023 ss. 104–106 and s. 109, where applicable'],
 
   examTips: [
     'Trace the chronology: Shankari Prasad (1951) → Sajjan Singh (1965) → Golaknath (1967) → 24th Amendment (1971) → Kesavananda Bharati (1973).',
@@ -317,7 +334,7 @@ The Basic Structure Doctrine successfully prevented India from slipping into ele
         'Chronological evolution: Shankari Prasad to Golaknath.',
         'The Kesavananda Bharati breakthrough: overruling Golaknath and formulating the doctrine.',
         'Post-Kesavananda consolidation: Indira Gandhi and Minerva Mills.',
-        'Conclude with the current legal position under the 106th Amendment.',
+        'Conclude with the current constitutional position under Article 368 and the Basic Structure cases.',
       ],
     },
     {
@@ -330,7 +347,7 @@ The Basic Structure Doctrine successfully prevented India from slipping into ele
         'Application cases: 39th Amendment in Indira Gandhi; 42nd Amendment in Minerva Mills.',
         'The Ninth Schedule reconciliation: Waman Rao and I.R. Coelho.',
         'Litigation roadmap: Grounds of challenge, bench composition, and essence test.',
-        'Critical conclusion on the preservation of democratic constitutionalism.',
+        'Conclusion: state the doctrinal limit, the amendment-specific application, and the relief sought.',
       ],
     },
   ],
