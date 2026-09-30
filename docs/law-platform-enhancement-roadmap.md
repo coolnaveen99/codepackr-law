@@ -1889,3 +1889,57 @@ It is:
 > Structured Indian legal knowledge + authoritative source awareness + practical workflow tools + transparent verification + privacy-first execution.
 
 This principle governs every future CodePackr Law feature.
+
+
+---
+
+# 47. Content Depth and Judgment Decoding Enhancement
+
+The student-learning layer must not remain sentence-level or summary-level.
+
+Use the canonical standard:
+docs/content-depth-and-judgment-decoder-standard.md
+
+## Minimum topic depth
+
+- Foundation: 1,200–1,800 substantive words.
+- Standard doctrinal/section: 1,800–3,000.
+- Core/high-value: 3,000–5,000.
+- Major/landmark: 5,000–8,000+ when justified.
+
+These are minimum quality bands, not rigid quotas.
+
+## Judgment decoder
+
+Important judgments should be teachable through:
+
+1. Identification
+2. Orientation
+3. Material facts
+4. Procedural history
+5. Issues
+6. Governing law
+7. Parties' arguments
+8. Court reasoning
+9. Holding / ratio / obiter / disposition
+10. Significance / later treatment
+
+The most important educational layer is the reasoning chain:
+
+Rule → Fact → Legal inference → Counterargument → Court response → Finding → Conclusion.
+
+## Upgrade priority
+
+First upgrade:
+- highYield topics;
+- constitutional topics;
+- BNS/BNSS/BSA;
+- CPC;
+- BSA/evidence;
+- criminal procedure;
+- major remedies;
+- landmark doctrines;
+- frequently used topics.
+
+Do not mass-expand all topics with boilerplate. Upgrade content based on legal complexity and student value.
+
