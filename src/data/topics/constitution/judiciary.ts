@@ -76,6 +76,9 @@ The constitutional phrase *"after consultation with such of the Judges of the Su
   - Unlike appellate review, Article 227 is exercised sparingly to keep subordinate courts and tribunals within the bounds of their authority, correcting patent jurisdictional errors or perverse findings (*Radhey Shyam v. Chhabi Nath*, 2015).
 - **Basic Structure (*L. Chandra Kumar v. Union of India*, 1997):** Judicial review under Articles 226 and 227 is an inviolable basic structure feature. Parliament cannot by constitutional amendment (such as Art 323A/323B tribunals) exclude the High Courts' supervisory jurisdiction. Tribunals act as courts of first instance, but their decisions remain subject to scrutiny before a Division Bench of the High Court under Article 226/227.`,
 
+Evidence and litigation anchor
+For constitutional challenges involving disputed factual predicates, counsel should identify the burden of proof under Bharatiya Sakshya Adhiniyam, 2023 sections 104–106, apply section 109 only where the relevant fact is especially within a person's knowledge, and address electronic records under section 63 where applicable. These provisions support proof of facts; they do not alter the constitutional standard of review.
+
   sections: [
     {
       id: 'judiciary-independence',
@@ -346,6 +349,7 @@ The evolution of the higher judiciary from *S.P. Gupta* to the *NJAC Case* demon
   ],
 
   bareActPointers: [
+    'Bharatiya Sakshya Adhiniyam, 2023 — sections 104–106, 109 and 63 where applicable',
     'Art 124 — Supreme Court establishment & appointment',
     'Art 129 — Court of Record & Contempt power',
     'Art 131 — Original jurisdiction in federal disputes',
