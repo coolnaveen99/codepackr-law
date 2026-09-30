@@ -46,3 +46,27 @@ See `AI_INSTRUCTIONS.md`, `.github/instructions/global-legal-content.md`, and `.
 12. **Master Coverage Checklist Synchronization**:
     - All 20 curriculum subjects and 2,087 registered catalog topics are tracked in `docs/subject-coverage-checklist.md`.
     - Whenever a topic is authored or upgraded in `src/data/topics/<subjectSlug>/<topicId>.ts`, update the checklist entry to `[x] Complete` (or run `npm run checklist`) and set `hasNotes: true` in `src/data/subjects.ts`.
+
+
+## 13. Development, Build & Delivery Quality Gate (MANDATORY)
+
+Before considering any code change complete:
+
+1. **Build before merge** — Run the repository's real production build command (npm run build) after changes. Do not rely only on editor/TypeScript hints.
+2. **TypeScript strictness** — Resolve all TypeScript errors and warnings that fail CI, including unused imports/locals such as TS6133. Do not leave unused icon/component imports in React files.
+3. **No accidental functional changes** — When fixing a build failure, make the smallest targeted change first. Preserve existing feature behavior unless the user explicitly requested a functional change.
+4. **Inspect the actual diff** — Before creating/merging a PR, verify that only intended files and changes are included. Never replace a file with an older version merely to fix a one-line issue.
+5. **PR discipline** — Use a feature/fix branch for normal work. Keep commits focused and descriptive. Do not claim a PR is merged until GitHub confirms merged=true.
+6. **Merge conflicts** — If a PR becomes conflicted, rebase/update it against the current main or recreate a clean fix branch. Do not force-merge or overwrite unrelated main changes.
+7. **Deployment verification** — For Vercel deployments, wait for the relevant deployment/check to finish. Report pending, failed, or passed accurately; never describe a pending build as successful.
+8. **Production safety** — Never bypass a failed build, disable TypeScript checks, remove lint/type checks, or weaken CI merely to obtain a green deployment.
+9. **Regression awareness** — For UI/filter/catalog changes, test the affected user flows conceptually and, where tooling permits, verify the production build. For Legal Draft Studio specifically verify: initial empty library state, Subject selection, Act/Law filtering, search, category filtering, template selection, sample loading, preview, and exports.
+10. **Legal safety** — Legal drafting content is educational scaffolding unless explicitly verified. Preserve the site's legal disclaimer and do not label generated catalogue scaffolds as court-approved or legally sufficient.
+11. **Current-law verification** — For substantive legal changes, verify statute names, sections, amendments, commencement/transitional rules, and case citations against authoritative/current sources before presenting them as verified.
+12. **Completion report** — After implementation, report: changed files, commit/PR, build result, deployment result (if available), and any remaining limitations. Never claim a test was run when it was not actually run.
+
+### Required workflow for future GitHub tasks
+
+Inspect → Implement → Build → Review diff → Push/PR → Verify checks → Merge only when clean → Verify deployment.
+
+If a build error is supplied by the user, treat the supplied error log as the first diagnostic source and fix the exact failure before making unrelated enhancements.
