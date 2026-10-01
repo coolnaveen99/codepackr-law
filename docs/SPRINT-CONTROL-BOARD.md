@@ -3,7 +3,7 @@
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
 **Roadmap position:** Phase 2 — Canonical Content + Legal Knowledge Graph  
-**Updated:** 2026-10-01
+**Updated:** 2026-10-01 (PA-001 closed; PA-002 active blockers recorded)
 
 ## Purpose
 
@@ -146,8 +146,9 @@ The previous LC-001–LC-007 backlog has been re-audited against both repositori
 | LC-005 | **COMPLETED** | DPSP corpus and collection are present on main; subsequent manifest regeneration includes the changes. |
 | LC-006 | **COMPLETED** | ContentGateway is canonical-first with legacy fallback; automated parity smoke passes. |
 | LC-007 | **COMPLETED** | Automated application consumption/parity is PASS; canonical manifest/entity HTTP reads are verified. |
+| PA-001 | **COMPLETED** | Production JS bundle (`index-CeudlBgn.js`, later redeploys) contains `raw.githubusercontent.com/coolnaveen99/legal-content`, `content-manifest`, `relationship-index`, and `topic:india:` markers. Live topic routes fetch canonical JSON (e.g. `topics/pil/locus-standi.json`, `topics/cpc/s-32.json`). |
 
-**Audit conclusion:** the old sprint board was stale. The Phase 2 foundation work represented by LC-001–LC-007 is substantially implemented and has automated evidence. It must not remain in the active queue.
+**Audit conclusion:** the old sprint board was stale. The Phase 2 foundation work represented by LC-001–LC-007 is substantially implemented and has automated evidence. PA-001 production deployment confirmation is **PASS**. It must not remain in the active queue.
 
 ## Current sprint backlog — production acceptance gate
 
@@ -155,33 +156,54 @@ Only genuinely pending work remains below.
 
 | ID | Work | Repo | Owner | Status | Priority | Dependency |
 |---|---|---|---|---|---|---|
-| PA-001 | Confirm production deployment contains ContentGateway + knowledge-graph UI commits | codepackr-law | Deployment owner | **READY** | P0 | None |
-| PA-002 | Complete production browser UX acceptance H1–H7 | codepackr-law | Product / legal-content owner | **BLOCKED** | P0 | PA-001 |
-| PA-003 | Complete Phase 2 exit audit and production sign-off | both | QA / Architecture | **BLOCKED** | P0 | PA-001, PA-002 |
+| PA-001 | Confirm production deployment contains ContentGateway + knowledge-graph UI commits | codepackr-law | Deployment owner | **COMPLETED** | P0 | None |
+| PA-002 | Complete production browser UX acceptance H1–H7 | codepackr-law | Product / legal-content owner | **BLOCKED** | P0 | PA-001 (met); see blockers below |
+| PA-003 | Complete Phase 2 exit audit and production sign-off | both | QA / Architecture | **BLOCKED** | P0 | PA-001 (met), PA-002 |
 | PA-004 | Decide and execute legacy-content removal after signed parity | codepackr-law | Architecture / Product | **DEFERRED** | P1 | PA-003 |
 | PA-005 | Evaluate static/CDN mirror for canonical legal-content delivery | both | Solution Architect | **DEFERRED** | P1 | PA-003 |
 | PH3-001 | Phase 3 — Legal Research Workbench architecture kickoff | codepackr-law | Solution Architect | **DEFERRED** | P0 | PA-003 |
+
+### PA-002 blockers (named)
+
+1. **H3 CPC s.32 render crash** — production console `TypeError: Cannot read properties of undefined (reading 'map')` when rendering canonical CPC section shape (`heading`/`body`) vs app `TopicSection.content[]`. Partial mitigation on main: `mapCanonicalTopic` section normalize + ContentGateway returns mapped-only content (`d1932d1`). Must re-verify after green deploy.
+2. **TopicDetail.tsx corruption on main** — a failed large-file write left a stub component; Vercel `tsc` failed (`IntrinsicAttributes` / unused imports). Emergency mitigation on main: `scripts/restore-topic-detail.mjs` fetches last good blob from `bbc15cc` before `tsc` (`c7db189`, `6c1db333`). **Source-of-truth restore still required:** commit full `TopicDetail.tsx` from `bbc15cc` (plus harden) so builds do not depend on network fetch.
+3. **H2 related knowledge-graph panel** — not observed on PIL locus-standi in the partial UX pass; re-check after TopicDetail restore.
+4. **H4–H7** — not completed; blocked behind stable TopicDetail + H3.
+
+### PA-002 partial evidence (do not treat as complete)
+
+| Check | Status | Notes |
+|---|---|---|
+| H1 PIL locus-standi canonical path | **PASS (partial)** | Study notes rendered; network `manifests/content-manifest.json` + `topics/pil/locus-standi.json` **200** |
+| H2 related knowledge-graph panel | **FAIL / not observed** | No related panel headings in the recorded pass |
+| H3 CPC s.32 | **FAIL** | White screen + `.map` TypeError before TopicDetail restore |
+| H4 tort nature/definition | **PENDING** | Catalog id `tort-definition` under subject slug `tort` |
+| H5 legacy fallback | **PENDING** | |
+| H6 analytics body leak | **PENDING** | Clarity/GTM present; topic-body payload check not finished |
+| H7 mobile overflow | **PENDING** | |
 
 ## Current verified state
 
 - Canonical corpus: **719 entities** (689 published, 30 review).
 - Relationship graph: **1,755 edges**.
 - Automated content validation: **PASS**.
-- Automated application parity: **PASS**.
-- ContentGateway: **canonical-first + legacy fallback** implemented.
-- Production acceptance: **CONDITIONAL PASS**.
-- Human production UX checks H1–H7: **PENDING**.
-- Production deployment confirmation A10: **PENDING**.
+- Automated application parity: **PASS** (source/tests).
+- ContentGateway: **canonical-first + legacy fallback** implemented; production bundle contains legal-content base URL and manifest/relationship fetches.
+- Production deployment confirmation (PA-001 / A10): **PASS**.
+- Human production UX checks H1–H7 (PA-002): **INCOMPLETE** — H1 partial pass; H2/H3 failed or not observed; H4–H7 pending.
+- Application build health: **AT RISK** until full `TopicDetail.tsx` is restored on main (emergency build-time restore script is temporary).
 - Legacy topic removal: **not permitted yet**.
 - Phase 3: **not started**.
 
 ## Acceptance criteria for the active gate
 
-### PA-001 — Deployment confirmation
+### PA-001 — Deployment confirmation — COMPLETED
 
 Verify that the production deployment of main contains the ContentGateway, relationship-resolution, and related-topic UI changes. Record the deployed commit/deployment SHA. Do not infer deployment from GitHub source alone.
 
-### PA-002 — Human UX acceptance
+**Evidence recorded:** production asset `/assets/index-CeudlBgn.js` (and subsequent redeploys) includes `https://raw.githubusercontent.com/coolnaveen99/legal-content/main`, `content-manifest`, `relationship-index`; live topic pages issue canonical entity GETs.
+
+### PA-002 — Human UX acceptance — BLOCKED
 
 On https://law.codepackr.com, verify the existing acceptance matrix:
 
@@ -195,15 +217,20 @@ On https://law.codepackr.com, verify the existing acceptance matrix:
 
 Record actual evidence; do not mark PASS from source inspection alone.
 
+**Unblock path:**
+1. Restore full `src/components/subjects/TopicDetail.tsx` from `bbc15cc` onto main and push.
+2. Confirm Vercel build is green without relying solely on the emergency restore script.
+3. Re-run H1–H7 on production; record pass/fail with URLs and network evidence.
+
 ### PA-003 — Phase 2 exit
 
 Close Phase 2 only when PA-001 and PA-002 are complete and the existing exit-gate requirements remain satisfied: canonical IDs, relationships, manifest integrity, gateway consumption, parity, application reads, CI evidence, and documented remaining gaps.
 
 ## Dependency map
 
-PA-001 ─→ PA-002 ─→ PA-003 ─→ PA-004
-                         ├──→ PA-005
-                         └──→ PH3-001
+PA-001 (COMPLETED) ─→ PA-002 (BLOCKED) ─→ PA-003 ─→ PA-004
+                                         ├──→ PA-005
+                                         └──→ PH3-001
 
 PA-004 remains deferred until the signed production parity/UX decision.
 PA-005 is an architecture improvement, not a blocker to the current automated canonical-content validation.
@@ -211,14 +238,15 @@ PH3-001 must not start until PA-003 closes the Phase 2 gate.
 
 ## Active execution rules
 
-- **Deployment owner:** may take PA-001 only.
-- **Product / legal-content owner:** may take PA-002 after PA-001.
-- **QA / Architecture:** owns PA-003 evidence gate after PA-001 and PA-002.
+- **Deployment owner:** PA-001 is **COMPLETED** — do not reopen unless a regression removes ContentGateway from production.
+- **Product / legal-content owner:** owns PA-002; must clear TopicDetail restore + H1–H7 evidence before PA-003.
+- **QA / Architecture:** owns PA-003 evidence gate after PA-002.
 - **Architecture / Product:** owns PA-004 only after signed Phase 2 acceptance.
 - **Solution Architect:** owns PA-005 and PH3-001 only after their dependencies are satisfied.
 - Do not reopen completed LC-001–LC-007 unless new evidence identifies a regression.
 - Do not start Phase 3 work before PA-003 closes the Phase 2 gate.
 - Maximum four major WIP workstreams remain in force.
+- The emergency `scripts/restore-topic-detail.mjs` path is **temporary**; remove or no-op it after full TopicDetail is committed.
 
 ## Manifest rule
 
@@ -263,7 +291,8 @@ Do not declare Phase 2 complete until:
 - legacy parity is tested;
 - application canonical consumption is verified;
 - CI is green;
-- remaining migration gaps are documented.
+- remaining migration gaps are documented;
+- **PA-001 and PA-002 are COMPLETED with production evidence.**
 
 ## Next phase gate
 
