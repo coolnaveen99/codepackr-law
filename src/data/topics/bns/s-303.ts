@@ -1,253 +1,396 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
 const content: TopicContent = {
-  "study": "Introduction and meaning\nTheft (old 378/379). Dishonest taking of movable property out of a person’s possession without consent. First conviction for property under ₹5,000 may be community service, or fine, or both. A second theft carries a mandatory minimum of 1 year, up to 5 years.\nIn student language: BNS s. 303 is the rule on “Theft”. The section provides that . (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 303 exists so that “Theft” has a closed legal test in Chapter XVII — Of Offences Against Property. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Theft, snatching, extortion, robbery, dacoity, trust, cheating, mischief, trespass.\n\nThe provision in detail\n303.. (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft\n\n(2) Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine:\n\nEssential ingredients\n1. (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft\n2. (2) Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine:\n\nPunishment / legal consequence\nUp to 3 years + fine; first theft < ₹5,000: community service / fine; repeat: 1–5 years.\n\nStatutory illustrations\nIllustration (a). A cuts down a tree on Z’s ground, with the intention of dishonestly taking the tree out of Z’s possession without Z’s consent. Here, as soon as A has severed the tree in order to such taking, he has committed theft\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 303 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (b). A puts a bait for dogs in his pocket, and thus induces Z’s dog to follow it. Here, if A’s intention be dishonestly to take the dog out of Z’s possession without Z’s consent. A has committed theft as soon as Z’s dog has begun to follow A\n\nExam use: quote illustration (b), then write which ingredient of BNS s. 303 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (c). A meets a bullock carrying a box of treasure. He drives the bullock in a certain direction, in order that he may dishonestly take the treasure. As soon as the bullock begins to move, A has committed theft of the treasure\n\nExam use: quote illustration (c), then write which ingredient of BNS s. 303 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (d). A being Z’s servant, and entrusted by Z with the care of Z’s plate, dishonestly runs away with the plate, without Z’s consent. A has committed theft\n\nExam use: quote illustration (d), then write which ingredient of BNS s. 303 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (e). Z, going on a journey, entrusts his plate to A, the keeper of a warehouse, till Z shall return. A carries the plate to a goldsmith and sells it. Here the plate was not in Z’s possession. It could not therefore be taken out of Z’s possession, and A has not committed theft, though he may have committed criminal breach of trust\n\nExam use: quote illustration (e), then write which ingredient of BNS s. 303 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (f). A finds a ring belonging to Z on a table in the house which Z occupies. Here the ring is in Z’s possession, and if A dishonestly removes it, A commits theft\n\nExam use: quote illustration (f), then write which ingredient of BNS s. 303 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (g). A finds a ring lying on the highroad, not in the possession of any person. A, by taking it, commits no theft, though he may commit criminal misappropriation of property\n\nExam use: quote illustration (g), then write which ingredient of BNS s. 303 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (h). A sees a ring belonging to Z lying on a table in Z’s house. Not venturing to misappropriate the ring immediately for fear of search and detection, A hides the ring in a place where it is highly improbable that it will ever be found by Z, with the intention of taking the ring from the hiding place and selling it when the loss is forgotten. Here A, at the time of first moving the ring, commits theft\n\nExam use: quote illustration (h), then write which ingredient of BNS s. 303 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (i). A delivers his watch to Z, a jeweler, to be regulated. Z carries it to his shop. A, not owing to the jeweler any debt for which the jeweler might lawfully detain the watch as a security, enters the shop openly, takes his watch by force out of Z’s hand, and carries it away. Here A, though he may have committed criminal trespass and assault, has not committed theft, in as much as what he did was not done dishonestly\n\nExam use: quote illustration (i), then write which ingredient of BNS s. 303 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (j). If A owes money to Z for repairing the watch, and if Z retains the watch lawfully as a security for the debt, and A takes the watch out of Z’s possession, with the intention of depriving Z of the property as a security for his debt, he commits theft, in as much as he takes it dishonestly\n\nExam use: quote illustration (j), then write which ingredient of BNS s. 303 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (k). Again, if A, having pawned his watch to Z, takes it out of Z’s possession without Z’s consent, not having paid what he borrowed on the watch, he commits theft, though the watch is his own property in as much as he takes it dishonestly\n\nExam use: quote illustration (k), then write which ingredient of BNS s. 303 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (l). A takes an article belonging to Z out of Z’s possession without Z’s consent, with the intention of keeping it until he obtains money from Z as a reward for its restoration. Here A takes dishonestly; A has therefore committed theft\n\nExam use: quote illustration (l), then write which ingredient of BNS s. 303 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (m). A, being on friendly terms with Z, goes into Z’s library in Z’s absence, and takes away a book without Z’s express consent for the purpose merely of reading it, and with the intention of returning it. Here, it is probable that A may have conceived that he had Z’s implied consent to use Z’s book. If this was A’s impression, A has not committed theft\n\nExam use: quote illustration (m), then write which ingredient of BNS s. 303 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (n). A asks charity from Z’s wife. She gives A money, food and clothes, which A knows to belong to Z her husband. Here it is probable that A may conceive that Z’s wife is authorised to give away alms. If this was A’s impression, A has not committed theft\n\nExam use: quote illustration (n), then write which ingredient of BNS s. 303 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (o). A is the paramour of Z’s wife. She gives a valuable property, which A knows to belong to her husband Z, and to be such property as she has no authority from Z to give. If A takes the property dishonestly, he commits theft\n\nExam use: quote illustration (o), then write which ingredient of BNS s. 303 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (p). A, in good faith, believing property belonging to Z to be A’s own property, takes that property out of Z’s possession. Here, as A does not take dishonestly, he does not commit theft\n\nExam use: quote illustration (p), then write which ingredient of BNS s. 303 it proves. Copying the illustration without that mapping sentence does not score.\n\nExplanations\nExplanation 1.—A thing so long as it is attached to the earth, not being movable property, is not the subject of theft; but it becomes capable of being the subject of theft as soon as it is severed from the earth\n\nExplanation 2.—A moving effected by the same act which affects the severance may be a theft\n\nExplanation 3.—A person is said to cause a thing to move by removing an obstacle which prevented it from moving or by separating it from any other thing, as well as by actually moving it\n\nExplanation 4.—A person, who by any means causes an animal to move, is said to move that animal, and to move everything which, in consequence of the motion so caused, is moved by that animal\n\nExplanation 5.—The consent mentioned in this section may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied\n\nExceptions, limitations and provisos\nProvided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service",
-  "glance": "BNS s. 303 — Theft.",
-  "sections": [
+  glance:
+    'Section 303 BNS consolidates the substantive definition of Theft (former Section 378 IPC) and its penal sanctions (former Section 379 IPC) into an integrated provision within Chapter XVII. It defines theft as moving movable property out of another’s possession without consent, with dishonest intention. Sub-section (2) prescribes imprisonment up to three years or fine, introduces a mandatory one-to-five-year sentencing floor for recidivists, and enacts a groundbreaking restorative proviso mandating community service for first-time petty theft under ₹5,000 upon property restoration.',
+
+  study: `I. LEGISLATIVE CONSOLIDATION & CHAPTER XVII PRIMACY
+Section 303 of the Bharatiya Nyaya Sanhita, 2023 (BNS) is the foundational gateway provision of Chapter XVII ("Of Offences Against Property", Sections 303 to 334). In colonial penal law, theft was bifurcated into Section 378 (definition, explanations, and sixteen illustrations) and Section 379 (punishment). Parliament consolidated both provisions into Section 303 BNS, while introducing revolutionary reforms in sentencing policy: a dedicated community service alternative for petty theft and an enhanced mandatory minimum sentencing floor for repeat offenders.
+
+II. THE FIVE ESSENTIAL INGREDIENTS OF THEFT
+Under Section 303(1) BNS, to secure a conviction for theft, the prosecution must establish five cumulative ingredients beyond reasonable doubt:
+1. Dishonest Intention (Mens Rea): The accused must entertain an intention to take the property dishonestly—that is, with the intention of causing wrongful gain to one person or wrongful loss to another (Section 2(7) BNS).
+   - Bona Fide Claim of Right: In State of Rajasthan v. K.N. Mehra AIR 1957 SC 369 and Chandi Kumar Das Karmakar v. Abanidhar Roy AIR 1965 SC 585, the Supreme Court affirmed that where property is taken openly under a bona fide belief of ownership or lawful claim of right, dishonest intention is absent, and no theft is committed (Illustration p).
+2. Movable Property (Subject Matter): The property must be corporeal, movable property.
+   - Severance from Earth (Explanations 1 & 2): Immovable things attached to the earth (such as standing trees, crops, or fixtures) become capable of being stolen the very instant they are severed from the earth; the single act of cutting can simultaneously effect severance and theft (Illustration a).
+3. Out of Possession of Another Person (Locus): The property must be in the physical or constructive possession of someone other than the taker.
+   - Possession vs. Ownership: Theft is an offence against possession, not ownership. A lawful owner can commit theft of his own goods if he dishonestly takes them out of the lawful possession of a bailee, pawnee, or repairer who holds a lien over them (Illustrations j and k).
+4. Absence of Consent (Vitiation): The property must be taken without the express or implied consent of the person in possession or an authorized agent (Explanation 5).
+5. Moving the Property (Actus Reus): The offender must move the property in order to effect the taking.
+   - Least Movement Suffices: As held in Pyare Lal Bhargava v. State of Rajasthan AIR 1963 SC 1094, the slightest physical displacement or moving of the property (even within the same premises or temporary removal for copying) completes the actus reus. Removing an obstacle or untying an animal to cause it to move satisfies this requirement (Explanations 3 and 4).
+
+III. TEMPORARY DEPRIVATION & THE PYARE LAL BHARGAVA DOCTRINE
+In Pyare Lal Bhargava v. State of Rajasthan AIR 1963 SC 1094, an official in a government office temporarily removed an official file from the Chief Engineer's office, handed it to a private individual to replace certain incriminating documents, and returned the file to the office the following day.
+The Supreme Court established the enduring principle:
+- To constitute theft, it is not necessary that the taker should intend to permanently deprive the owner of the property.
+- Temporary deprivation, even for a few hours, accompanied by wrongful gain to one person or wrongful loss of possession to another, completely satisfies the definition of theft.
+
+IV. THREE-TIER SENTENCING ARCHITECTURE UNDER SECTION 303(2)
+Section 303(2) establishes three distinct sentencing avenues:
+1. Baseline General Punishment: Imprisonment of either description extending up to three years, or fine, or both.
+2. The Recidivism Mandate: Where a person is convicted for a second or subsequent time under Section 303, the court is statutorily commanded to impose rigorous imprisonment for not less than one year, extending up to five years, and fine. Judicial leniency below the one-year floor is permanently barred.
+3. The Restorative Community Service Proviso:
+   - "Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service."
+   - Represents a historic introduction of non-custodial restorative justice under Section 4(f) BNS, diverting first-time petty offenders from prison overcrowding and criminal contagion upon full restitution.
+
+V. DISTINCTION FROM NEIGHBOURING PROPERTY OFFENCES
+Senior Counsel must draw precise statutory distinctions across Chapter XVII:
+1. Theft (s. 303) vs Snatching (s. 304): Theft is stealthy or surreptitious taking; snatching requires sudden, quick, or forcible seizure directly from the person or their physical possession.
+2. Theft (s. 303) vs Criminal Misappropriation (s. 314): In theft, the property is taken out of another's possession dishonestly; in misappropriation, the property is initially acquired innocently or found when not in anyone's possession (e.g. found on a deserted highway, Illustration g), and the dishonest intention arises subsequently.
+3. Theft (s. 303) vs Criminal Breach of Trust (s. 316): In theft, possession is taken without consent; in breach of trust, possession is lawfully entrusted to the accused, who subsequently dishonestly converts or misapplies it (Illustration e).`,
+
+  sections: [
     {
-      "id": "bns-303-rule",
-      "title": "The legal rule",
-      "order": 1,
-      "content": [
-        "303.. (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft",
-        "(2) Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine:"
-      ]
+      id: 'bns-303-module-1',
+      title: 'Legislative Architecture & Consolidation of Former Sections 378 and 379 IPC',
+      order: 1,
+      content: [
+        'Section 303 BNS merges definition (former s. 378 IPC) and punishment (former s. 379 IPC) into a single provision in Chapter XVII.',
+        'Sub-section (1) codifies the five essential ingredients: dishonest intention, movable property, possession, without consent, and moving.',
+        'Retains the five statutory Explanations and sixteen foundational illustrations (a to p).',
+        'Sub-section (2) introduces a progressive tripartite sentencing structure: baseline, recidivist floor, and community service proviso.',
+      ],
     },
     {
-      "id": "bns-303-ing",
-      "title": "Essential ingredients",
-      "order": 2,
-      "content": [
-        "(1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft",
-        "(2) Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine:"
-      ]
+      id: 'bns-303-module-2',
+      title: 'The Five Essential Ingredients Deconstructed',
+      order: 2,
+      content: [
+        'Ingredient 1: Dishonest intention (animus furandi) — intention to cause wrongful gain or wrongful loss under Section 2(7) BNS.',
+        'Ingredient 2: Movable property — corporeal property; immovable things become movable the instant they are severed (Explanations 1 & 2).',
+        'Ingredient 3: Possession of another — theft protects possession, not title; owner can steal from pawnee/bailee (Illustrations j & k).',
+        'Ingredient 4: Without consent — express or implied consent negates theft (Explanation 5 and Illustration m).',
+        'Ingredient 5: Moving in order to such taking — slightest displacement completes the crime (Pyare Lal Bhargava).',
+      ],
     },
     {
-      "id": "bns-303-ill",
-      "title": "Statutory illustrations",
-      "order": 4,
-      "content": [
-        "(a) A cuts down a tree on Z’s ground, with the intention of dishonestly taking the tree out of Z’s possession without Z’s consent. Here, as soon as A has severed the tree in order to such taking, he has committed theft",
-        "(b) A puts a bait for dogs in his pocket, and thus induces Z’s dog to follow it. Here, if A’s intention be dishonestly to take the dog out of Z’s possession without Z’s consent. A has committed theft as soon as Z’s dog has begun to follow A",
-        "(c) A meets a bullock carrying a box of treasure. He drives the bullock in a certain direction, in order that he may dishonestly take the treasure. As soon as the bullock begins to move, A has committed theft of the treasure",
-        "(d) A being Z’s servant, and entrusted by Z with the care of Z’s plate, dishonestly runs away with the plate, without Z’s consent. A has committed theft",
-        "(e) Z, going on a journey, entrusts his plate to A, the keeper of a warehouse, till Z shall return. A carries the plate to a goldsmith and sells it. Here the plate was not in Z’s possession. It could not therefore be taken out of Z’s possession, and A has not committed theft, though he may have committed criminal breach of trust",
-        "(f) A finds a ring belonging to Z on a table in the house which Z occupies. Here the ring is in Z’s possession, and if A dishonestly removes it, A commits theft",
-        "(g) A finds a ring lying on the highroad, not in the possession of any person. A, by taking it, commits no theft, though he may commit criminal misappropriation of property",
-        "(h) A sees a ring belonging to Z lying on a table in Z’s house. Not venturing to misappropriate the ring immediately for fear of search and detection, A hides the ring in a place where it is highly improbable that it will ever be found by Z, with the intention of taking the ring from the hiding place and selling it when the loss is forgotten. Here A, at the time of first moving the ring, commits theft",
-        "(i) A delivers his watch to Z, a jeweler, to be regulated. Z carries it to his shop. A, not owing to the jeweler any debt for which the jeweler might lawfully detain the watch as a security, enters the shop openly, takes his watch by force out of Z’s hand, and carries it away. Here A, though he may have committed criminal trespass and assault, has not committed theft, in as much as what he did was not done dishonestly",
-        "(j) If A owes money to Z for repairing the watch, and if Z retains the watch lawfully as a security for the debt, and A takes the watch out of Z’s possession, with the intention of depriving Z of the property as a security for his debt, he commits theft, in as much as he takes it dishonestly",
-        "(k) Again, if A, having pawned his watch to Z, takes it out of Z’s possession without Z’s consent, not having paid what he borrowed on the watch, he commits theft, though the watch is his own property in as much as he takes it dishonestly",
-        "(l) A takes an article belonging to Z out of Z’s possession without Z’s consent, with the intention of keeping it until he obtains money from Z as a reward for its restoration. Here A takes dishonestly; A has therefore committed theft",
-        "(m) A, being on friendly terms with Z, goes into Z’s library in Z’s absence, and takes away a book without Z’s express consent for the purpose merely of reading it, and with the intention of returning it. Here, it is probable that A may have conceived that he had Z’s implied consent to use Z’s book. If this was A’s impression, A has not committed theft",
-        "(n) A asks charity from Z’s wife. She gives A money, food and clothes, which A knows to belong to Z her husband. Here it is probable that A may conceive that Z’s wife is authorised to give away alms. If this was A’s impression, A has not committed theft",
-        "(o) A is the paramour of Z’s wife. She gives a valuable property, which A knows to belong to her husband Z, and to be such property as she has no authority from Z to give. If A takes the property dishonestly, he commits theft",
-        "(p) A, in good faith, believing property belonging to Z to be A’s own property, takes that property out of Z’s possession. Here, as A does not take dishonestly, he does not commit theft"
-      ]
+      id: 'bns-303-module-3',
+      title: 'Temporary Deprivation & Bona Fide Claim of Right',
+      order: 3,
+      content: [
+        'In Pyare Lal Bhargava (1963), the Supreme Court held that temporary deprivation of property constitutes completed theft.',
+        'In K.N. Mehra (1957), temporary unauthorized flying of an air force trainer aircraft was held to be theft of the aircraft.',
+        'A bona fide assertion of a genuine claim of right made in good faith negates dishonest intention and defeats a theft charge.',
+        'Disputes over boundary harvests or disputed inheritances are civil in nature where color of right is established.',
+      ],
     },
     {
-      "id": "bns-303-expl",
-      "title": "Explanations",
-      "order": 5,
-      "content": [
-        "Explanation 1.—A thing so long as it is attached to the earth, not being movable property, is not the subject of theft; but it becomes capable of being the subject of theft as soon as it is severed from the earth",
-        "Explanation 2.—A moving effected by the same act which affects the severance may be a theft",
-        "Explanation 3.—A person is said to cause a thing to move by removing an obstacle which prevented it from moving or by separating it from any other thing, as well as by actually moving it",
-        "Explanation 4.—A person, who by any means causes an animal to move, is said to move that animal, and to move everything which, in consequence of the motion so caused, is moved by that animal",
-        "Explanation 5.—The consent mentioned in this section may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied"
-      ]
+      id: 'bns-303-module-4',
+      title: 'The Tripartite Sentencing Model: Community Service & Recidivism Mandate',
+      order: 4,
+      content: [
+        'Baseline punishment under Section 303(2): Imprisonment of either description up to 3 years, or fine, or both.',
+        'Petty theft restorative proviso: For first-time offenders where property value is < ₹5,000, restoration mandates community service.',
+        'Community service is codified as a formal penal sanction under Section 4(f) BNS, preventing incarceration of petty offenders.',
+        'Recidivism sentencing floor: Second or subsequent conviction attracts mandatory rigorous imprisonment of 1 to 5 years, and fine.',
+      ],
     },
     {
-      "id": "bns-303-exc",
-      "title": "Exceptions and provisos",
-      "order": 6,
-      "content": [
-        "Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service"
-      ]
-    }
+      id: 'bns-303-module-5',
+      title: 'Evidentiary Proof, Presumption under BSA Section 119 & Section 531 Transition',
+      order: 5,
+      content: [
+        'Recovery of stolen property under Section 23 BSA provides decisive corroborative evidence of theft.',
+        'Presumption under Section 119 BSA: Unexplained recent possession of stolen goods presumes the possessor is the thief.',
+        'Contrast with Section 304 (Snatching): Sudden street grabs must be charged under Section 304, not Section 303.',
+        'Section 531(2)(a) BNSS transition: Thefts committed on or before 30 June 2024 are charged under IPC Section 379; post-commencement under Section 303 BNS.',
+      ],
+    },
   ],
-  "examples": [
+
+  provisions: [
     {
-      "id": "bns-303-ex-1",
-      "title": "Illustration (a)",
-      "description": "A cuts down a tree on Z’s ground, with the intention of dishonestly taking the tree out of Z’s possession without Z’s consent. Here, as soon as A has severed the tree in order to such taking, he has committed theft\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 303 — which fact proves which element, and what the legal result is."
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-303',
+      section: 's. 303',
+      title: 'Theft',
     },
     {
-      "id": "bns-303-ex-2",
-      "title": "Illustration (b)",
-      "description": "A puts a bait for dogs in his pocket, and thus induces Z’s dog to follow it. Here, if A’s intention be dishonestly to take the dog out of Z’s possession without Z’s consent. A has committed theft as soon as Z’s dog has begun to follow A\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 303 — which fact proves which element, and what the legal result is."
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-304',
+      section: 's. 304',
+      title: 'Snatching',
     },
     {
-      "id": "bns-303-ex-3",
-      "title": "Illustration (c)",
-      "description": "A meets a bullock carrying a box of treasure. He drives the bullock in a certain direction, in order that he may dishonestly take the treasure. As soon as the bullock begins to move, A has committed theft of the treasure\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 303 — which fact proves which element, and what the legal result is."
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-314',
+      section: 's. 314',
+      title: 'Dishonest misappropriation of property',
     },
     {
-      "id": "bns-303-ex-4",
-      "title": "Illustration (d)",
-      "description": "A being Z’s servant, and entrusted by Z with the care of Z’s plate, dishonestly runs away with the plate, without Z’s consent. A has committed theft\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 303 — which fact proves which element, and what the legal result is."
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-316',
+      section: 's. 316',
+      title: 'Criminal breach of trust',
     },
     {
-      "id": "bns-303-ex-5",
-      "title": "Illustration (e)",
-      "description": "Z, going on a journey, entrusts his plate to A, the keeper of a warehouse, till Z shall return. A carries the plate to a goldsmith and sells it. Here the plate was not in Z’s possession. It could not therefore be taken out of Z’s possession, and A has not committed theft, though he may have committed criminal breach of trust\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 303 — which fact proves which element, and what the legal result is."
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-4',
+      section: 's. 4(f)',
+      title: 'Punishments (Community service)',
     },
     {
-      "id": "bns-303-ex-6",
-      "title": "Illustration (f)",
-      "description": "A finds a ring belonging to Z on a table in the house which Z occupies. Here the ring is in Z’s possession, and if A dishonestly removes it, A commits theft\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 303 — which fact proves which element, and what the legal result is."
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-23',
+      section: 's. 23',
+      title: 'How much of information received from accused may be proved',
     },
     {
-      "id": "bns-303-ex-7",
-      "title": "Illustration (g)",
-      "description": "A finds a ring lying on the highroad, not in the possession of any person. A, by taking it, commits no theft, though he may commit criminal misappropriation of property\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 303 — which fact proves which element, and what the legal result is."
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-119',
+      section: 's. 119',
+      title: 'Court may presume existence of certain facts',
     },
     {
-      "id": "bns-303-ex-8",
-      "title": "Illustration (h)",
-      "description": "A sees a ring belonging to Z lying on a table in Z’s house. Not venturing to misappropriate the ring immediately for fear of search and detection, A hides the ring in a place where it is highly improbable that it will ever be found by Z, with the intention of taking the ring from the hiding place and selling it when the loss is forgotten. Here A, at the time of first moving the ring, commits theft\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 303 — which fact proves which element, and what the legal result is."
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-531',
+      section: 's. 531',
+      title: 'Repeal and savings',
     },
-    {
-      "id": "bns-303-ex-9",
-      "title": "Illustration (i)",
-      "description": "A delivers his watch to Z, a jeweler, to be regulated. Z carries it to his shop. A, not owing to the jeweler any debt for which the jeweler might lawfully detain the watch as a security, enters the shop openly, takes his watch by force out of Z’s hand, and carries it away. Here A, though he may have committed criminal trespass and assault, has not committed theft, in as much as what he did was not done dishonestly\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 303 — which fact proves which element, and what the legal result is."
-    },
-    {
-      "id": "bns-303-ex-10",
-      "title": "Illustration (j)",
-      "description": "If A owes money to Z for repairing the watch, and if Z retains the watch lawfully as a security for the debt, and A takes the watch out of Z’s possession, with the intention of depriving Z of the property as a security for his debt, he commits theft, in as much as he takes it dishonestly\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 303 — which fact proves which element, and what the legal result is."
-    },
-    {
-      "id": "bns-303-ex-11",
-      "title": "Illustration (k)",
-      "description": "Again, if A, having pawned his watch to Z, takes it out of Z’s possession without Z’s consent, not having paid what he borrowed on the watch, he commits theft, though the watch is his own property in as much as he takes it dishonestly\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 303 — which fact proves which element, and what the legal result is."
-    },
-    {
-      "id": "bns-303-ex-12",
-      "title": "Illustration (l)",
-      "description": "A takes an article belonging to Z out of Z’s possession without Z’s consent, with the intention of keeping it until he obtains money from Z as a reward for its restoration. Here A takes dishonestly; A has therefore committed theft\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 303 — which fact proves which element, and what the legal result is."
-    }
   ],
-  "hypotheticals": [
+
+  examples: [
     {
-      "id": "bns-303-hypo",
-      "title": "Chamber Practice Hypothetical",
-      "facts": "(a) A cuts down a tree on Z’s ground, with the intention of dishonestly taking the tree out of Z’s possession without Z’s consent. Here, as soon as A has severed the tree in order to such taking, he has committed theft",
-      "question": "Whether BNS s. 303 (Theft) applies, and how structured written arguments should be framed.",
-      "applicableLaw": "BNS s. 303. Chapter XVII — Of Offences Against Property. Connected: BNS s. 304, BNS s. 309.",
-      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 303 (Theft), Chapter XVII — Of Offences Against Property.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft\n   (2) (2) Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine:\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 303 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
-      "conclusion": "The result depends on proof of the ingredients of BNS s. 303. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
-    }
+      id: 'bns-303-ill-1',
+      title: 'Application of Section 303(2) Proviso — First-Time Petty Theft & Community Service',
+      illustrationType: 'statutory-practical',
+      description:
+        'A college student S, facing financial hardship, steals an imported textbook valued at ₹2,200 from a bookshop by concealing it under his jacket. S is intercepted outside by store security and handed over to police. S has no prior criminal record. During trial, S confesses, expresses deep remorse, and immediately returns the textbook in pristine condition to the bookseller. The Judicial Magistrate finds all ingredients of Section 303(1) proved. Applying the mandatory Proviso to Section 303(2) BNS, the court sentences S to 30 hours of Community Service at a municipal public library over four weekends under Section 4(f) BNS, sparing S prison incarceration.',
+    },
+    {
+      id: 'bns-303-ill-2',
+      title: 'Theft by Owner from Lawful Bailee — Illustration (j) Applied',
+      illustrationType: 'statutory-practical',
+      description:
+        'O leaves his high-end wrist watch with watchmaker W for repairs costing ₹8,000. W repairs the watch and retains it under his lawful bailee’s lien until the bill is settled. O visits the shop, asks to inspect the watch, and while W turns his back, slips the watch into his pocket and walks out without paying. O contends that because he is the absolute owner of the watch, he cannot steal his own property. Under Section 303 read with Illustration (j) BNS, theft is an offence against possession; because W had lawful possession and a legal lien over the watch as security for a debt, O took it dishonestly out of W’s possession. O is guilty of theft.',
+    },
   ],
-  "distinctions": [
+
+  hypotheticals: [
     {
-      "id": "bns-303-dist",
-      "title": "BNS s. 303 and connected sections",
-      "left": "BNS s. 303",
-      "right": "BNS s. 304, BNS s. 309",
-      "rows": [
+      id: 'bns-303-hypo',
+      title: 'Chamber Practice Hypothetical: Temporary Removal of Corporate Hard Drive & Defense of Lack of Permanent Deprivation',
+      facts:
+        'On 15 August 2024, software engineer E, an employee of TechCorp, secretly takes an external hard drive containing confidential proprietary source code from the research server room on a Friday evening without authorization. E carries the hard drive to a rival firm’s office, copies the entire data repository over the weekend for a consulting fee, and returns the hard drive to its exact shelf on Monday morning before office hours. The unauthorized removal and return are discovered through access-card logs and server room CCTV. When prosecuted under Section 303 BNS, E’s counsel argues that E had no intention of permanently retaining the hard drive, that TechCorp suffered no permanent property loss, and therefore no theft was committed.',
+      question:
+        'As Senior Counsel appearing for the prosecution, evaluate E’s liability under Section 303 BNS in light of the Supreme Court rulings in Pyare Lal Bhargava v. State of Rajasthan and K.N. Mehra v. State of Rajasthan.',
+      applicableLaw:
+        'BNS ss. 2(7), 303(1), 303(2); BSA s. 63; Supreme Court precedents in Pyare Lal Bhargava v. State of Rajasthan AIR 1963 SC 1094 and K.N. Mehra v. State of Rajasthan AIR 1957 SC 369.',
+      analysis:
+        '1. Rejection of the Permanent Deprivation Defense (Pyare Lal Bhargava Doctrine):\n   - In Pyare Lal Bhargava (1963), the Supreme Court definitively held that permanent deprivation is NOT an ingredient of theft under Indian penal law. Temporary removal of an article out of another’s possession, even for a short duration, completes the offence if accompanied by dishonest intention.\n   - In K.N. Mehra (1957), temporary unauthorized use of an aircraft was similarly held to constitute theft.\n2. Satisfaction of "Dishonest Intention" under Section 2(7) BNS:\n   - E took the hard drive to gain a consultancy fee (wrongful gain to E) while depriving TechCorp of exclusive control and confidentiality of its asset (wrongful loss to TechCorp).\n3. Moving the Movable Property:\n   - Physically displacing the hard drive from the server room to the rival firm satisfies the actus reus requirement of moving the property.\n4. Absence of Consent:\n   - E acted without the express or implied consent of TechCorp.',
+      conclusion:
+        'E is guilty of theft under Section 303(1) BNS punishable under Section 303(2) BNS. Temporary removal of physical property for dishonest exploitation constitutes completed theft.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'bns-303-dist-1',
+      title: 'Section 303 BNS (Theft) vs Section 314 BNS (Criminal Misappropriation)',
+      left: 'Section 303 BNS (Theft)',
+      right: 'Section 314 BNS (Criminal Misappropriation)',
+      rows: [
         {
-          "point": "Heading",
-          "left": "Theft",
-          "right": "Read the neighbour’s title on its own page before you write."
+          point: 'Possession at Inception',
+          left: 'Property is in the lawful possession of another and taken out of possession',
+          right: 'Property is not in another’s possession (lost/found) or acquired innocently',
         },
         {
-          "point": "What you must prove",
-          "left": "(1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft",
-          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+          point: 'Inception of Dishonesty',
+          left: 'Dishonest intention exists at the very moment of initial taking and moving',
+          right: 'Initial possession is innocent; dishonest intention arises subsequently upon retention',
+        },
+      ],
+    },
+    {
+      id: 'bns-303-dist-2',
+      title: 'Section 303 BNS (Theft) vs Section 316 BNS (Criminal Breach of Trust)',
+      left: 'Section 303 BNS (Theft)',
+      right: 'Section 316 BNS (Criminal Breach of Trust)',
+      rows: [
+        {
+          point: 'Manner of Acquisition',
+          left: 'Possession is obtained without consent or against the possessor’s will',
+          right: 'Possession is lawfully entrusted by the owner under a fiduciary relationship',
         },
         {
-          "point": "Practice trap",
-          "left": "Citing a neighbour as if it were s. 303.",
-          "right": "Citing s. 303 where the neighbour actually applies."
-        }
-      ]
-    }
+          point: 'Core Gravamen',
+          left: 'Physical violation of another person’s possession',
+          right: 'Breach of fiduciary duty, dishonest misappropriation or conversion of entrusted property',
+        },
+      ],
+    },
   ],
-  "misconceptions": [
+
+  misconceptions: [
     {
-      "id": "bns-303-trap-1",
-      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
-      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 303."
+      id: 'bns-303-trap-1',
+      trap: 'Believing that an owner of property can never commit theft of his own goods.',
+      correction:
+        'Theft is an offence against possession, not legal title. If an owner dishonestly takes his property out of the lawful possession of a bailee, repairer, or pawnee holding a lien, the owner commits theft under Section 303 BNS (Illustrations j and k).',
     },
     {
-      "id": "bns-303-trap-2",
-      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
-      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+      id: 'bns-303-trap-2',
+      trap: 'Assuming that theft requires an intention to permanently deprive the owner.',
+      correction:
+        'Under Pyare Lal Bhargava (1963) and K.N. Mehra (1957), temporary deprivation of movable property for a few hours with dishonest intention completes the offence of theft.',
     },
     {
-      "id": "bns-303-trap-3",
-      "trap": "Giving a one-line summary or shortened explanation of the provision.",
-      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
-    }
+      id: 'bns-303-trap-3',
+      trap: 'Thinking that first-time petty theft under ₹5,000 must result in imprisonment.',
+      correction:
+        'The Proviso to Section 303(2) BNS mandates that where the stolen property is worth less than ₹5,000 and the first-time offender returns or restores the property, the punishment shall be Community Service under Section 4(f) BNS.',
+    },
   ],
-  "questionsAndAnswers": [
+
+  questionsAndAnswers: [
     {
-      "id": "bns-303-q-brief",
-      "draftingCategory": "brief",
-      "question": "Legal Assessment & Statutory Note: BNS s. 303 (Theft)",
-      "answer": "Introduction. BNS s. 303 deals with Theft. It sits in Chapter XVII — Of Offences Against Property of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Theft (old 378/379). Dishonest taking of movable property out of a person’s possession without consent. First conviction for property under ₹5,000 may be community service, or fine, or both. A second theft carries a mandatory minimum of 1 year, up to 5 years.\n\nLegal rule. In student language: BNS s. 303 is the rule on “Theft”. The section provides that . (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft\n2. (2) Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine:\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A cuts down a tree on Z’s ground, with the intention of dishonestly taking the tree out of Z’s possession without Z’s consent. Here, as soon as A has severed the tree in order to such taking, he has committed theft\n\nExplanations. Explanation 1.—A thing so long as it is attached to the earth, not being movable property, is not the subject of theft; but it becomes capable of being the subject of theft as soon as it is severed from the earth An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nExceptions / provisos. Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service State the exception and then say whether it is attracted on the facts.\n\nConsequence / punishment. Up to 3 years + fine; first theft < ₹5,000: community service / fine; repeat: 1–5 years.\n\nConnected sections. Read with BNS s. 304, BNS s. 309. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 303 is the complete current-law heading for Theft. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
-      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+      id: 'bns-303-q-brief',
+      draftingCategory: 'brief',
+      question: 'Senior Counsel Legal Assessment: Scope, Ingredients and Sentencing under Section 303 BNS',
+      answer: `I. STATUTORY ARCHITECTURE & GENESIS
+Section 303 of the Bharatiya Nyaya Sanhita, 2023 (BNS) consolidates the definition (former s. 378 IPC) and punishment (former s. 379 IPC) of Theft in Chapter XVII ("Of Offences Against Property").
+
+II. ESSENTIAL INGREDIENTS
+The prosecution must prove:
+1. Dishonest intention to cause wrongful gain or wrongful loss (animus furandi);
+2. Movable property (corporeal property, including things severed from earth);
+3. Out of the possession of any person (possession is protected, even against the owner);
+4. Without that person's consent (express or implied);
+5. Moving that property in order to such taking (the slightest displacement completes the actus reus).
+
+III. JURISPRUDENTIAL HIGHLIGHTS
+- Pyare Lal Bhargava (1963): Temporary deprivation constitutes completed theft.
+- K.N. Mehra (1957): Unauthorized temporary use of aircraft is theft.
+- Chandi Kumar Das (1965): Bona fide claim of right negates dishonest intention.
+
+IV. TRIPARTITE SENTENCING FRAMEWORK
+- Baseline: Imprisonment up to 3 years, or fine, or both.
+- First-time petty theft (< ₹5,000): Mandatory Community Service under Section 4(f) upon restoration.
+- Recidivism: Mandatory rigorous imprisonment of 1 to 5 years, and fine.`,
+      explanation:
+        'Authoritative legal assessment deconstructing Section 303 BNS, foundational ingredients, landmark ratios, and the tripartite sentencing model.',
     },
     {
-      "id": "bns-303-q-submissions",
-      "draftingCategory": "submissions",
-      "question": "Comprehensive Written Submissions: BNS s. 303 (Theft) with Statutory Scheme & Judicial Analysis",
-      "answer": "Introduction. BNS s. 303 deals with Theft. It sits in Chapter XVII — Of Offences Against Property of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Theft (old 378/379). Dishonest taking of movable property out of a person’s possession without consent. First conviction for property under ₹5,000 may be community service, or fine, or both. A second theft carries a mandatory minimum of 1 year, up to 5 years.\n\nLegal rule. In student language: BNS s. 303 is the rule on “Theft”. The section provides that . (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft\n2. (2) Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine:\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A cuts down a tree on Z’s ground, with the intention of dishonestly taking the tree out of Z’s possession without Z’s consent. Here, as soon as A has severed the tree in order to such taking, he has committed theft\n\nExplanations. Explanation 1.—A thing so long as it is attached to the earth, not being movable property, is not the subject of theft; but it becomes capable of being the subject of theft as soon as it is severed from the earth An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nExceptions / provisos. Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service State the exception and then say whether it is attracted on the facts.\n\nConsequence / punishment. Up to 3 years + fine; first theft < ₹5,000: community service / fine; repeat: 1–5 years.\n\nConnected sections. Read with BNS s. 304, BNS s. 309. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 303 is the complete current-law heading for Theft. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Theft, snatching, extortion, robbery, dacoity, trust, cheating, mischief, trespass.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second statutory illustration. Illustration (b): (b) A puts a bait for dogs in his pocket, and thus induces Z’s dog to follow it. Here, if A’s intention be dishonestly to take the dog out of Z’s possession without Z’s consent. A has committed theft as soon as Z’s dog has begun to follow A Contrast it with illustration (a). The legal weight lies in the contrast.\n\nLayer 3 — Distinction. Contrast BNS s. 303 with BNS s. 304, BNS s. 309. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 303.”",
-      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
-    }
+      id: 'bns-303-q-submissions',
+      draftingCategory: 'submissions',
+      question: 'Appellate / Trial Submissions: Invoking Section 303(2) Proviso for Community Service in Petty Theft',
+      answer: `MAY IT PLEASE YOUR HONOUR:
+
+1. LOCUS OF THE APPLICATION:
+The convict stands convicted under Section 303(1) BNS for theft of a bicycle valued at ₹3,800. It is respectfully submitted that the convict is statutorily entitled to the benefit of the Proviso to Section 303(2) BNS.
+
+2. COMPLIANCE WITH STATUTORY CONDITIONS UNDER SECTION 303(2) PROVISO:
+(a) Valuation Threshold: The valuation report of the seized bicycle (Ex. P-4) establishes that the value of the property is ₹3,800, which is strictly less than the statutory ceiling of five thousand rupees.
+(b) First-Time Offender: The police antecedent report confirms that the convict has no prior criminal convictions or pending trials.
+(c) Complete Restoration: The bicycle was recovered in intact condition during the investigation and has already been restored to the possession of the complainant (Ex. P-7).
+
+3. MANDATORY NATURE OF COMMUNITY SERVICE:
+The Proviso to Section 303(2) BNS commands:
+"Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service."
+The statutory language uses the imperative word "shall". Parliament enacted this restorative provision to divert young, first-time petty offenders from prison incarceration and facilitate social reintegration under Section 4(f) BNS.
+
+4. PRAYER:
+It is therefore respectfully prayed that this Hon'ble Court may be pleased to sentence the convict to Community Service in terms of Section 303(2) Proviso read with Section 4(f) BNS, in lieu of substantive imprisonment.`,
+      explanation:
+        'Comprehensive trial/sentencing submissions establishing statutory entitlement to Community Service under the newly codified Proviso to Section 303(2) BNS.',
+    },
   ],
-  "cases": [],
-  "examTips": [
-    "Cite BNS s. 303 for offences on or after 1 July 2024.",
-    "Ingredients first, illustration second, application third, conclusion last.",
-    "IPC 379 is not 303’s only ancestor — 378 is the definition, 379 the punishment, now fused."
-  ],
-  "examFrameworks": [
+
+  cases: [
     {
-      "question": "Structured Legal Assessment: BNS s. 303 (Theft).",
-      "steps": [
-        "Introduce BNS s. 303 and Chapter XVII — Of Offences Against Property.",
-        "Define / state the meaning in your own words.",
-        "List the essential ingredients.",
-        "Use one statutory illustration and map it to an ingredient.",
-        "State the material explanation or exception.",
-        "Apply in four to six sentences.",
-        "Conclude with the current citation — BNS s. 303."
-      ]
+      name: 'Pyare Lal Bhargava v. State of Rajasthan',
+      year: 1963,
+      citation: 'AIR 1963 SC 1094',
+      holding:
+        'The Supreme Court authoritatively held that permanent deprivation of property is not an ingredient of theft under Indian law; temporary removal of official files for a few hours with dishonest intention completes the offence of theft.',
     },
     {
-      "question": "Comprehensive Chamber Written Submissions: BNS s. 303 with connected statutory scheme.",
-      "steps": [
-        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
-        "Place the section in the Chapter and explain why the heading exists.",
-        "Work a second statutory illustration and contrast it with the first.",
-        "Distinguish BNS s. 303 from BNS s. 304, BNS s. 309.",
-        "IRAC application to the problem facts.",
-        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
-        "Current-law conclusion."
-      ]
-    }
+      name: 'K.N. Mehra v. State of Rajasthan',
+      year: 1957,
+      citation: 'AIR 1957 SC 369',
+      holding:
+        'Established that unauthorized temporary taking of an Indian Air Force aircraft and flying it to another country constituted completed theft, affirming that temporary wrongful gain or loss satisfies the animus furandi requirement.',
+    },
+    {
+      name: 'Chandi Kumar Das Karmakar v. Abanidhar Roy',
+      year: 1965,
+      citation: 'AIR 1965 SC 585',
+      holding:
+        'Held that where property is removed under a bona fide assertion of a genuine claim of right made in good faith, dishonest intention is completely negated, and criminal liability for theft cannot be fastened.',
+    },
+    {
+      name: 'State of Maharashtra v. Vishwanath Tukaram Umale',
+      year: 1979,
+      citation: '(1979) 4 SCC 23',
+      holding:
+        'Reaffirmed that theft is an offence against possession, not ownership; an owner who takes his own property out of the lawful possession of a bailee or person holding a lien commits theft.',
+    },
   ],
-  "answerSkeleton": [
-    "Introduction — BNS s. 303, Theft.",
-    "Meaning and definition.",
-    "Ingredients.",
-    "Illustration mapped to an ingredient.",
-    "Explanation / exception.",
-    "Application (IRAC).",
-    "Conclusion and current citation."
+
+  examTips: [
+    'Always cite Section 303 BNS as the consolidated provision replacing both Section 378 (definition) and Section 379 (punishment) IPC.',
+    'Highlight the innovative Proviso to Section 303(2): first-time petty theft under ₹5,000 mandates Community Service upon restoration.',
+    'Note the mandatory minimum sentencing floor of 1 year (up to 5 years) for repeat offenders under Section 303(2).',
+    'Under Pyare Lal Bhargava, emphasize that temporary deprivation completes theft; permanent retention is unnecessary.',
+    'Under Section 531(2)(a) BNSS, pre-1 July 2024 thefts are charged under IPC Section 379; post-commencement conduct under Section 303 BNS.',
   ],
-  "revisionPoints": [
-    "BNS s. 303: Theft.",
-    "First ingredient: (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft",
-    "16 statutory illustration(s) — quote and map.",
-    "For offences on or after 1 July 2024, the correct citation is BNS s. 303 — Theft. Older books and judgments may still print a historical number (378 / 379). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+
+  examFrameworks: [
+    {
+      question: 'Structured Chamber Brief: Evaluating Liability under Section 303 BNS',
+      steps: [
+        'Analyze the five essential ingredients: dishonest intent, movable property, possession, lack of consent, moving.',
+        'Address the Pyare Lal Bhargava doctrine if temporary removal is alleged.',
+        'Evaluate defense of bona fide claim of right (Chandi Kumar Das).',
+        'Check property valuation: determine whether the value is less than ₹5,000.',
+        'If value < ₹5,000 and offender is first-timer with restoration, apply Section 303(2) Proviso for Community Service.',
+        'If repeat offender, apply mandatory 1 to 5 year sentencing floor.',
+      ],
+    },
+    {
+      question: 'Appellate Submissions: Distinguishing Civil Dispute from Section 303 Theft',
+      steps: [
+        'Establish that the property was taken openly under an honest assertion of title.',
+        'Demonstrate absence of concealment or stealth.',
+        'Invoke Chandi Kumar Das to show absence of animus furandi.',
+        'Argue that the dispute is bona fide civil in nature and pray for acquittal.',
+      ],
+    },
   ],
-  "relatedTopics": [
-    "s-304",
-    "s-309"
-  ]
+
+  answerSkeleton: [
+    'Introduction — Section 303 BNS, Chapter XVII ("Of Offences Against Property"), consolidating IPC ss. 378 and 379.',
+    'Five Essential Ingredients — Dishonest intention (animus furandi), movable property, possession, absence of consent, moving.',
+    'Leading Authorities — Pyare Lal Bhargava (temporary deprivation), K.N. Mehra (aircraft unauthorized use), Chandi Kumar Das (claim of right).',
+    'Tripartite Sentencing — Baseline (up to 3 years), Proviso (community service for < ₹5,000 first-time), Recidivist floor (1 to 5 years RI).',
+    'Distinctions — Theft (s. 303) vs Snatching (s. 304) vs Misappropriation (s. 314) vs Breach of Trust (s. 316).',
+    'Transition — Prospective under BNSS s. 531; IPC s. 379 historical concordance.',
+  ],
+
+  revisionPoints: [
+    'Section 303 BNS merges IPC 378 and 379.',
+    'Theft protects possession, not title; owner can steal from bailee.',
+    'Temporary deprivation constitutes completed theft (Pyare Lal Bhargava).',
+    'First-time petty theft (< ₹5,000) mandates community service upon restoration.',
+    'Repeat conviction attracts mandatory 1 to 5 years rigorous imprisonment.',
+  ],
+
+  relatedTopics: [
+    's-304',
+    's-305',
+    's-309',
+    's-314',
+    's-316',
+  ],
 }
 
 export default content

@@ -1,198 +1,414 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
 const content: TopicContent = {
-  "study": "Introduction and meaning\nRobbery (old 390/392). Theft plus, at the time of committing it or of carrying away, voluntary causing or attempting to cause death, hurt or wrongful restraint, or fear of those. Or extortion plus immediate fear, in the presence of the person.\nIn student language: BNS s. 309 is the rule on “Robbery”. The section provides that (1) In all robbery there is either theft or extortion. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 309 exists so that “Robbery” has a closed legal test in Chapter XVII — Of Offences Against Property. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Theft, snatching, extortion, robbery, dacoity, trust, cheating, mischief, trespass.\n\nThe provision in detail\n309. (1) In all robbery there is either theft or extortion\n\n(2) Theft is robbery if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint\n\n(3) Extortion is robbery if the offender, at the time of committing the extortion, is in the presence of the person put in fear, and commits the extortion by putting that person in fear of instant death, of instant hurt, or of instant wrongful restraint to that person or to some other person, and, by so putting in fear, induces the person so put in fear then and there to deliver up the thing extorted\n\n(4) Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years\n\n(5) Whoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine\n\n(6) If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine\n\nEssential ingredients\n1. (1) In all robbery there is either theft or extortion\n2. (2) Theft is robbery if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint\n3. (3) Extortion is robbery if the offender, at the time of committing the extortion, is in the presence of the person put in fear, and commits the extortion by putting that person in fear of instant death, of instant hurt, or of instant wrongful restraint to that person or to some other person, and, by so putting in fear, induces the person so put in fear then and there to deliver up the thing extorted\n4. (4) Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years\n5. (5) Whoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine\n6. (6) If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine\n\nPunishment / legal consequence\nRigorous up to 10 years + fine.\n\nStatutory illustrations\nIllustration (a). A holds Z down, and fraudulently takes Z’s money and jewels from Z’s clothes, without Z’s consent. Here A has committed theft, and, in order to the committing of that theft, has voluntarily caused wrongful restraint to Z. A has therefore committed robbery\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 309 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (b). A meets Z on the high road, shows a pistol, and demands Z’s purse. Z, in consequence, surrenders his purse. Here A has extorted the purse from Z by putting him in fear of instant hurt, and being at the time of committing the extortion in his presence. A has therefore committed robbery\n\nExam use: quote illustration (b), then write which ingredient of BNS s. 309 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (c). A meets Z and Z’s child on the high road. A takes the child, and threatens to fling it down a precipice, unless Z delivers his purse. Z, in consequence, delivers his purse. Here A has extorted the purse from Z, by causing Z to be in fear of instant hurt to the child who is there present. A has therefore committed robbery on Z\n\nExam use: quote illustration (c), then write which ingredient of BNS s. 309 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (d). A obtains property from Z by saying—“Your child is in the hands of my gang, and will be put to death unless you send us ten thousand rupees”. This is extortion, and punishable as such; but it is not robbery, unless Z is put in fear of the instant death of his child\n\nExam use: quote illustration (d), then write which ingredient of BNS s. 309 it proves. Copying the illustration without that mapping sentence does not score.\n\nExplanations\nExplanation.—The offender is said to be present if he is sufficiently near to put the other person in fear of instant death, of instant hurt, or of instant wrongful restraint",
-  "glance": "BNS s. 309 — Robbery.",
-  "sections": [
+  glance:
+    'Section 309 BNS consolidates the entire substantive law of Robbery, merging former Sections 390 (definition), 392 (punishment), 393 (attempt), and 394 (causing hurt in committing robbery) IPC into a single comprehensive code within Chapter XVII. It establishes that all robbery is either aggravated theft or aggravated extortion, requiring proof that violence or fear of instant death, hurt, or restraint was inflicted "for that end". Sub-section (4) prescribes up to ten years (fourteen years on highways at night), while Sub-section (6) imposes life imprisonment or ten years with deemed joint liability where hurt is caused.',
+
+  study: `I. LEGISLATIVE REORGANIZATION & QUADRUPLE CONSOLIDATION
+Section 309 of the Bharatiya Nyaya Sanhita, 2023 (BNS) occupies a central position in Chapter XVII ("Of Offences Against Property", Sections 303 to 334). In colonial criminal law, the offence of robbery was fragmented across four distinct sections: Section 390 (substantive definition), Section 392 (general punishment), Section 393 (attempt), and Section 394 (causing hurt in robbery). Parliament consolidated all four provisions into Section 309 BNS, providing an integrated, seamless statutory regime governing violent property crimes.
+
+II. THE CORE AXIOM: "IN ALL ROBBERY THERE IS EITHER THEFT OR EXTORTION"
+Section 309(1) lays down the foundational statutory axiom: robbery is not a standalone property offence; it is invariably an aggravated species of either Theft (Section 303) or Extortion (Section 308).
+
+1. When Theft Becomes Robbery (Section 309(2)):
+   - Theft elevates to robbery if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by theft, the offender, "for that end", voluntarily causes or attempts to cause to any person:
+     (a) Death; OR
+     (b) Hurt; OR
+     (c) Wrongful restraint; OR
+     (d) Fear of instant death, instant hurt, or instant wrongful restraint.
+   - The "For That End" Causation Test: The violence or threat must be causally deployed as a means to achieve the theft or facilitate escape with the loot. In State of Maharashtra v. Joseph Mingel Koli (1997) 2 Crimes 228, the court held that where an assault is committed out of personal enmity and the accused subsequently picks up a dropped watch as an afterthought, the offence is Hurt and Theft, NOT Robbery. The violence was not inflicted "for that end".
+
+2. When Extortion Becomes Robbery (Section 309(3)):
+   - Extortion elevates to robbery if the offender:
+     (a) Is in the physical presence of the person put in fear (Explanation: sufficiently near to put in fear); AND
+     (b) Puts that person in fear of instant death, instant hurt, or instant wrongful restraint (to that person or someone else present); AND
+     (c) By so putting in fear, induces the victim "then and there" to deliver up the extorted property.
+   - The "Instant" Fear Threshold: If the threat is of future harm (e.g., "pay money tomorrow or your child will be killed", Illustration d), the offence remains Extortion under Section 308 BNS. Only when the threat threatens immediate, instant peril and demands immediate delivery does it transform into Robbery.
+
+III. THE MULTI-TIER PENAL HIERARCHY UNDER SECTION 309
+Section 309 codifies four calibrated sentencing levels:
+1. Sub-section (4) — Completed Robbery: Rigorous imprisonment for a term which may extend to ten years, and fine.
+   - Highway Aggravation: If the robbery is committed on the highway between sunset and sunrise (night highway robbery), the maximum sentence extends to fourteen years.
+2. Sub-section (5) — Attempt to Commit Robbery: Rigorous imprisonment extending up to seven years, and fine.
+3. Sub-section (6) — Voluntarily Causing Hurt in Committing Robbery:
+   - "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine."
+   - Codified Deemed Joint Liability: Unlike Section 3(5) BNS where common intention must be independently demonstrated, Section 309(6) statutorily enacts that if ANY one robber causes hurt, EVERY co-accused jointly concerned in the robbery is equally exposed to life imprisonment, even if they were unarmed or stood as lookouts (Santi v. State of Haryana (2009) 10 SCC 280).
+
+IV. EVIDENTIARY MATRIX & TRIAL PRACTICE
+1. Proof of the Weapon & Injuries:
+   - Medico-Legal Reports (MLCs) establishing contusions, incised wounds, or lacerations inflicted during the robbery substantiate the Section 309(6) charge.
+   - Recovery of weapons (firearms, knives, iron rods) under Section 23 BSA with ballistic/fingerprint verification.
+2. Test Identification Parade (TIP) under Section 54 BNSS:
+   - Prompt TIP is critical where the robbers were unknown to the victim; failure to hold a TIP without justification weakens identification at trial.
+3. Presumption under Section 119 BSA:
+   - Possession of recently robbed articles raises the statutory presumption of participation in the robbery.
+
+V. PROCEDURAL EPOCHS & SECTION 531 BNSS TRANSITION
+1. Elimination of Multi-Section Charging:
+   - Prosecutors no longer need to charge IPC 390, 392, 393, and 394 separately; Section 309 BNS houses both substantive definition, attempts, completed acts, and hurt aggravation in single statutory sub-sections.
+2. Transitional Mandate:
+   - Robberies committed on or before 30 June 2024 proceed under IPC Sections 392/394; post-commencement conduct is charged under Section 309 BNS.`,
+
+  sections: [
     {
-      "id": "bns-309-rule",
-      "title": "The legal rule",
-      "order": 1,
-      "content": [
-        "309. (1) In all robbery there is either theft or extortion",
-        "(2) Theft is robbery if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint",
-        "(3) Extortion is robbery if the offender, at the time of committing the extortion, is in the presence of the person put in fear, and commits the extortion by putting that person in fear of instant death, of instant hurt, or of instant wrongful restraint to that person or to some other person, and, by so putting in fear, induces the person so put in fear then and there to deliver up the thing extorted",
-        "(4) Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years",
-        "(5) Whoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine",
-        "(6) If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine"
-      ]
+      id: 'bns-309-module-1',
+      title: 'Legislative Architecture & Consolidation of Former Sections 390, 392, 393, 394 IPC',
+      order: 1,
+      content: [
+        'Section 309 BNS consolidates four former IPC sections (390, 392, 393, 394) into a single unified provision in Chapter XVII.',
+        'Sub-section (1) establishes the foundational rule: all robbery is either aggravated theft or aggravated extortion.',
+        'Sub-sections (2) and (3) define when theft or extortion elevates to robbery.',
+        'Sub-sections (4), (5), and (6) prescribe the complete sentencing hierarchy: completed acts, attempts, and hurt aggravation.',
+      ],
     },
     {
-      "id": "bns-309-ing",
-      "title": "Essential ingredients",
-      "order": 2,
-      "content": [
-        "(1) In all robbery there is either theft or extortion",
-        "(2) Theft is robbery if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint",
-        "(3) Extortion is robbery if the offender, at the time of committing the extortion, is in the presence of the person put in fear, and commits the extortion by putting that person in fear of instant death, of instant hurt, or of instant wrongful restraint to that person or to some other person, and, by so putting in fear, induces the person so put in fear then and there to deliver up the thing extorted",
-        "(4) Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years",
-        "(5) Whoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine",
-        "(6) If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine"
-      ]
+      id: 'bns-309-module-2',
+      title: 'When Theft Becomes Robbery: The "For That End" Causation Test',
+      order: 2,
+      content: [
+        'Theft becomes robbery under Section 309(2) if the offender causes or attempts death, hurt, or restraint "for that end".',
+        '"For that end" requires that violence was deployed specifically to commit the theft or carry away stolen property.',
+        'If assault occurs for independent personal reasons and property is taken as an afterthought, it is not robbery (Joseph Mingel Koli).',
+        'Physical restraint to pickpocket a victim constitutes robbery (Illustration a).',
+      ],
     },
     {
-      "id": "bns-309-ill",
-      "title": "Statutory illustrations",
-      "order": 4,
-      "content": [
-        "(a) A holds Z down, and fraudulently takes Z’s money and jewels from Z’s clothes, without Z’s consent. Here A has committed theft, and, in order to the committing of that theft, has voluntarily caused wrongful restraint to Z. A has therefore committed robbery",
-        "(b) A meets Z on the high road, shows a pistol, and demands Z’s purse. Z, in consequence, surrenders his purse. Here A has extorted the purse from Z by putting him in fear of instant hurt, and being at the time of committing the extortion in his presence. A has therefore committed robbery",
-        "(c) A meets Z and Z’s child on the high road. A takes the child, and threatens to fling it down a precipice, unless Z delivers his purse. Z, in consequence, delivers his purse. Here A has extorted the purse from Z, by causing Z to be in fear of instant hurt to the child who is there present. A has therefore committed robbery on Z",
-        "(d) A obtains property from Z by saying—“Your child is in the hands of my gang, and will be put to death unless you send us ten thousand rupees”. This is extortion, and punishable as such; but it is not robbery, unless Z is put in fear of the instant death of his child"
-      ]
+      id: 'bns-309-module-3',
+      title: 'When Extortion Becomes Robbery: Presence & Fear of Instant Peril',
+      order: 3,
+      content: [
+        'Extortion becomes robbery under Section 309(3) if committed in the physical presence of the victim under fear of instant peril.',
+        'The offender is "present" if sufficiently near to put the victim in immediate fear (Explanation).',
+        'Threat must be of instant death, instant hurt, or instant restraint, inducing delivery then and there (Illustrations b and c).',
+        'Threats of future harm or blackmail constitute extortion under Section 308, not robbery (Illustration d).',
+      ],
     },
     {
-      "id": "bns-309-expl",
-      "title": "Explanations",
-      "order": 5,
-      "content": [
-        "Explanation.—The offender is said to be present if he is sufficiently near to put the other person in fear of instant death, of instant hurt, or of instant wrongful restraint"
-      ]
-    }
+      id: 'bns-309-module-4',
+      title: 'Sentencing Hierarchy & Codified Joint Liability under Section 309(6)',
+      order: 4,
+      content: [
+        'Sub-section (4): Completed robbery punishable with up to 10 years RI; highway robbery between sunset and sunrise up to 14 years.',
+        'Sub-section (5): Attempt to commit robbery punishable with rigorous imprisonment up to 7 years, and fine.',
+        'Sub-section (6): Where hurt is caused, every person jointly concerned is liable for life imprisonment or up to 10 years (Santi v. State of Haryana).',
+        'Eliminates the need for independent proof of common intention to cause hurt; joint participation triggers deemed liability.',
+      ],
+    },
+    {
+      id: 'bns-309-module-5',
+      title: 'Evidentiary Proof (BSA ss. 23, 63, 119), TIP Protocols & s. 531 Transition',
+      order: 5,
+      content: [
+        'Recovery of stolen booty under Section 23 BSA creates a strong presumption of robbery under Section 119 BSA.',
+        'Test Identification Parade (TIP) under Section 54 BNSS must be conducted promptly to establish identity of masked/unknown assailants.',
+        'CCTV footage and highway surveillance must be certified under Section 63(4) BSA.',
+        'Section 531(2)(a) BNSS transition: Use IPC Sections 392/394 for pre-1 July 2024 offences; cite Section 309 BNS for post-commencement acts.',
+      ],
+    },
   ],
-  "examples": [
+
+  provisions: [
     {
-      "id": "bns-309-ex-1",
-      "title": "Illustration (a)",
-      "description": "A holds Z down, and fraudulently takes Z’s money and jewels from Z’s clothes, without Z’s consent. Here A has committed theft, and, in order to the committing of that theft, has voluntarily caused wrongful restraint to Z. A has therefore committed robbery\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 309 — which fact proves which element, and what the legal result is."
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-309',
+      section: 's. 309',
+      title: 'Robbery',
     },
     {
-      "id": "bns-309-ex-2",
-      "title": "Illustration (b)",
-      "description": "A meets Z on the high road, shows a pistol, and demands Z’s purse. Z, in consequence, surrenders his purse. Here A has extorted the purse from Z by putting him in fear of instant hurt, and being at the time of committing the extortion in his presence. A has therefore committed robbery\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 309 — which fact proves which element, and what the legal result is."
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-303',
+      section: 's. 303',
+      title: 'Theft',
     },
     {
-      "id": "bns-309-ex-3",
-      "title": "Illustration (c)",
-      "description": "A meets Z and Z’s child on the high road. A takes the child, and threatens to fling it down a precipice, unless Z delivers his purse. Z, in consequence, delivers his purse. Here A has extorted the purse from Z, by causing Z to be in fear of instant hurt to the child who is there present. A has therefore committed robbery on Z\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 309 — which fact proves which element, and what the legal result is."
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-304',
+      section: 's. 304',
+      title: 'Snatching',
     },
     {
-      "id": "bns-309-ex-4",
-      "title": "Illustration (d)",
-      "description": "A obtains property from Z by saying—“Your child is in the hands of my gang, and will be put to death unless you send us ten thousand rupees”. This is extortion, and punishable as such; but it is not robbery, unless Z is put in fear of the instant death of his child\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 309 — which fact proves which element, and what the legal result is."
-    }
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-308',
+      section: 's. 308',
+      title: 'Extortion',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-310',
+      section: 's. 310',
+      title: 'Dacoity',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-23',
+      section: 's. 23',
+      title: 'How much of information received from accused may be proved',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-119',
+      section: 's. 119',
+      title: 'Court may presume existence of certain facts',
+    },
+    {
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-54',
+      section: 's. 54',
+      title: 'Identification of person arrested',
+    },
+    {
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-531',
+      section: 's. 531',
+      title: 'Repeal and savings',
+    },
   ],
-  "hypotheticals": [
+
+  examples: [
     {
-      "id": "bns-309-hypo",
-      "title": "Chamber Practice Hypothetical",
-      "facts": "(a) A holds Z down, and fraudulently takes Z’s money and jewels from Z’s clothes, without Z’s consent. Here A has committed theft, and, in order to the committing of that theft, has voluntarily caused wrongful restraint to Z. A has therefore committed robbery",
-      "question": "Whether BNS s. 309 (Robbery) applies, and how structured written arguments should be framed.",
-      "applicableLaw": "BNS s. 309. Chapter XVII — Of Offences Against Property. Connected: BNS s. 303, BNS s. 308, BNS s. 310.",
-      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 309 (Robbery), Chapter XVII — Of Offences Against Property.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) In all robbery there is either theft or extortion\n   (2) (2) Theft is robbery if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint\n   (3) (3) Extortion is robbery if the offender, at the time of committing the extortion, is in the presence of the person put in fear, and commits the extortion by putting that person in fear of instant death, of instant hurt, or of instant wrongful restraint to that person or to some other person, and, by so putting in fear, induces the person so put in fear then and there to deliver up the thing extorted\n   (4) (4) Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years\n   (5) (5) Whoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine\n   (6) (6) If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 309 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
-      "conclusion": "The result depends on proof of the ingredients of BNS s. 309. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
-    }
+      id: 'bns-309-ill-1',
+      title: 'Highway Robbery at Night under Section 309(4) — 14-Year Ceiling',
+      illustrationType: 'statutory-practical',
+      description:
+        'At 11:30 PM on a national highway, accused A and B intercept a commercial freight truck by placing spiked barricades across the road. Armed with pistols, they threaten the driver with instant death, order him out of the cabin, bind his hands (wrongful restraint), and drive away with the truck and cargo worth ₹40,00,000. Under Section 309(2) and (4) BNS, the act constitutes completed robbery. Because the offence was committed on a highway between sunset and sunrise, the statutory sentencing ceiling extends to fourteen years rigorous imprisonment. A and B are convicted and sentenced to 12 years rigorous imprisonment and fine.',
+    },
+    {
+      id: 'bns-309-ill-2',
+      title: 'Codified Joint Liability under Section 309(6) — Lookout Liable for Co-Accused’s Hurt',
+      illustrationType: 'statutory-practical',
+      description:
+        'Three men X, Y, and Z enter a bank branch to commit robbery. X and Y demand cash at gunpoint while Z stands at the entrance keeping watch. When a bank security guard lunges at X, X fires a pistol, inflicting a bullet wound on the guard’s leg (causing hurt). All three flee with cash. When apprehended, Z contends that he was unarmed, never entered the teller enclosure, and had no intention of causing hurt. Under Section 309(6) BNS, if any person in committing robbery voluntarily causes hurt, "any other person jointly concerned" is equally liable for imprisonment for life or up to ten years. Z is convicted alongside X and Y under Section 309(6) BNS and sentenced to 10 years rigorous imprisonment.',
+    },
   ],
-  "distinctions": [
+
+  hypotheticals: [
     {
-      "id": "bns-309-dist",
-      "title": "BNS s. 309 and connected sections",
-      "left": "BNS s. 309",
-      "right": "BNS s. 303, BNS s. 308, BNS s. 310",
-      "rows": [
+      id: 'bns-309-hypo',
+      title: 'Chamber Practice Hypothetical: Assault Preceding Theft as Afterthought & The "For That End" Test',
+      facts:
+        'On 10 August 2024, accused R confronts complainant S outside a cricket stadium over an old betting rivalry. R attacks S with his fists and a cricket bat, knocking S unconscious and fracturing S’s jaw. As R turns to walk away, he notices S’s Rolex watch lying on the grass where it fell off S’s wrist during the struggle. R picks up the watch, puts it into his pocket, and leaves. Police charge R with Robbery and Causing Hurt in Robbery under Section 309(6) BNS. In defence, R’s counsel argues that the assault was motivated entirely by a personal sports grudge and that the taking of the watch was an impromptu afterthought, not an act where hurt was caused "for that end".',
+      question:
+        'As Senior Counsel appearing for the defense, formulate the legal arguments under Section 309(2) BNS to establish that the charge of robbery must fail and be altered to separate charges of Grievous Hurt and Simple Theft.',
+      applicableLaw:
+        'BNS ss. 116, 117, 303, 309(2), 309(6); Supreme Court and High Court principles in State of Maharashtra v. Joseph Mingel Koli (1997) 2 Crimes 228 and Bishambhar Nath v. Emperor AIR 1941 Oudh 476.',
+      analysis:
+        '1. The "For That End" Causation Mandate under Section 309(2) BNS:\n   - Section 309(2) explicitly provides that theft is robbery only if the offender, "for that end" (i.e. in order to the committing of theft or carrying away stolen property), voluntarily causes death, hurt, or restraint.\n   - In Joseph Mingel Koli (1997) and Bishambhar Nath (1941), settled criminal jurisprudence establishes that there must be an organic, premeditated nexus between the violence and the theft.\n2. Disconnection between the Violence and the Subsequent Taking:\n   - The evidence establishes that R attacked S solely due to a betting quarrel. At the time R delivered the bat strikes, he had no intention to steal S’s watch.\n   - The decision to appropriate the watch arose only after the assault had completely concluded and S was already unconscious. The hurt was not caused "in order to" the committing of theft or "for that end".\n3. Consequence on Charge Framing:\n   - The transaction cannot be rolled into Section 309(6) BNS. R is liable to be convicted separately for Voluntarily Causing Grievous Hurt under Section 117(2) BNS and Simple Theft under Section 303(2) BNS, avoiding the draconian life-imprisonment exposure of Section 309(6).',
+      conclusion:
+        'The charge under Section 309(6) BNS is legally unsustainable due to absence of the statutory "for that end" nexus. The conviction must be altered to Section 117(2) and Section 303(2) BNS.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'bns-309-dist-1',
+      title: 'Section 309 BNS (Robbery) vs Section 310 BNS (Dacoity)',
+      left: 'Section 309 BNS (Robbery)',
+      right: 'Section 310 BNS (Dacoity)',
+      rows: [
         {
-          "point": "Heading",
-          "left": "Robbery",
-          "right": "Read the neighbour’s title on its own page before you write."
+          point: 'Numerical Strength',
+          left: 'Committed by one to four persons',
+          right: 'Committed by five or more persons acting conjointly',
         },
         {
-          "point": "What you must prove",
-          "left": "(1) In all robbery there is either theft or extortion",
-          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+          point: 'Inchoate Stages Penalized',
+          left: 'Attempt is penalized under s. 309(5); mere preparation is not an offence',
+          right: 'Making preparation (s. 312) and assembling (s. 313) are independent offences',
         },
         {
-          "point": "Practice trap",
-          "left": "Citing a neighbour as if it were s. 309.",
-          "right": "Citing s. 309 where the neighbour actually applies."
-        }
-      ]
-    }
-  ],
-  "misconceptions": [
-    {
-      "id": "bns-309-trap-1",
-      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
-      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 309."
+          point: 'Baseline Penalty',
+          left: 'Rigorous imprisonment up to ten years, and fine',
+          right: 'Imprisonment for life or rigorous imprisonment up to ten years, and fine',
+        },
+      ],
     },
     {
-      "id": "bns-309-trap-2",
-      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
-      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+      id: 'bns-309-dist-2',
+      title: 'Section 309 BNS (Robbery) vs Section 304 BNS (Snatching)',
+      left: 'Section 309 BNS (Robbery)',
+      right: 'Section 304 BNS (Snatching)',
+      rows: [
+        {
+          point: 'Nature of Violence',
+          left: 'Voluntarily causing or threatening death, hurt, or wrongful restraint',
+          right: 'Force is limited strictly to suddenly or quickly grabbing the movable property',
+        },
+        {
+          point: 'Fear Component',
+          left: 'Induces fear of instant death, instant hurt, or instant restraint',
+          right: 'Produces sudden shock and alarm, but no fear of instant death/hurt',
+        },
+        {
+          point: 'Maximum Punishment',
+          left: 'Rigorous imprisonment up to 10 years (14 on highway); life under s. 309(6)',
+          right: 'Imprisonment extending up to three years, and fine',
+        },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'bns-309-trap-1',
+      trap: 'Believing that any theft followed by an assault automatically constitutes Robbery.',
+      correction:
+        'Under Section 309(2) BNS, the hurt or violence must be caused "for that end" (to facilitate the theft or escape). If violence occurs independently and property is taken as an afterthought, it is Hurt + Theft, not Robbery (Joseph Mingel Koli).',
     },
     {
-      "id": "bns-309-trap-3",
-      "trap": "Giving a one-line summary or shortened explanation of the provision.",
-      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
-    }
-  ],
-  "questionsAndAnswers": [
-    {
-      "id": "bns-309-q-brief",
-      "draftingCategory": "brief",
-      "question": "Legal Assessment & Statutory Note: BNS s. 309 (Robbery)",
-      "answer": "Introduction. BNS s. 309 deals with Robbery. It sits in Chapter XVII — Of Offences Against Property of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Robbery (old 390/392). Theft plus, at the time of committing it or of carrying away, voluntary causing or attempting to cause death, hurt or wrongful restraint, or fear of those. Or extortion plus immediate fear, in the presence of the person.\n\nLegal rule. In student language: BNS s. 309 is the rule on “Robbery”. The section provides that (1) In all robbery there is either theft or extortion. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) In all robbery there is either theft or extortion\n2. (2) Theft is robbery if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint\n3. (3) Extortion is robbery if the offender, at the time of committing the extortion, is in the presence of the person put in fear, and commits the extortion by putting that person in fear of instant death, of instant hurt, or of instant wrongful restraint to that person or to some other person, and, by so putting in fear, induces the person so put in fear then and there to deliver up the thing extorted\n4. (4) Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years\n5. (5) Whoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine\n6. (6) If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A holds Z down, and fraudulently takes Z’s money and jewels from Z’s clothes, without Z’s consent. Here A has committed theft, and, in order to the committing of that theft, has voluntarily caused wrongful restraint to Z. A has therefore committed robbery\n\nExplanations. Explanation.—The offender is said to be present if he is sufficiently near to put the other person in fear of instant death, of instant hurt, or of instant wrongful restraint An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 309. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Rigorous up to 10 years + fine.\n\nConnected sections. Read with BNS s. 303, BNS s. 308, BNS s. 310. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 309 is the complete current-law heading for Robbery. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
-      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+      id: 'bns-309-trap-2',
+      trap: 'Assuming an unarmed co-accused who acted only as a lookout cannot be convicted under Section 309(6) BNS.',
+      correction:
+        'Section 309(6) BNS contains express statutory joint liability: if any person in committing robbery voluntarily causes hurt, "any other person jointly concerned" is equally liable for imprisonment for life or up to ten years (Santi v. State of Haryana).',
     },
     {
-      "id": "bns-309-q-submissions",
-      "draftingCategory": "submissions",
-      "question": "Comprehensive Written Submissions: BNS s. 309 (Robbery) with Statutory Scheme & Judicial Analysis",
-      "answer": "Introduction. BNS s. 309 deals with Robbery. It sits in Chapter XVII — Of Offences Against Property of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Robbery (old 390/392). Theft plus, at the time of committing it or of carrying away, voluntary causing or attempting to cause death, hurt or wrongful restraint, or fear of those. Or extortion plus immediate fear, in the presence of the person.\n\nLegal rule. In student language: BNS s. 309 is the rule on “Robbery”. The section provides that (1) In all robbery there is either theft or extortion. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) In all robbery there is either theft or extortion\n2. (2) Theft is robbery if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint\n3. (3) Extortion is robbery if the offender, at the time of committing the extortion, is in the presence of the person put in fear, and commits the extortion by putting that person in fear of instant death, of instant hurt, or of instant wrongful restraint to that person or to some other person, and, by so putting in fear, induces the person so put in fear then and there to deliver up the thing extorted\n4. (4) Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years\n5. (5) Whoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine\n6. (6) If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A holds Z down, and fraudulently takes Z’s money and jewels from Z’s clothes, without Z’s consent. Here A has committed theft, and, in order to the committing of that theft, has voluntarily caused wrongful restraint to Z. A has therefore committed robbery\n\nExplanations. Explanation.—The offender is said to be present if he is sufficiently near to put the other person in fear of instant death, of instant hurt, or of instant wrongful restraint An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 309. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Rigorous up to 10 years + fine.\n\nConnected sections. Read with BNS s. 303, BNS s. 308, BNS s. 310. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 309 is the complete current-law heading for Robbery. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Theft, snatching, extortion, robbery, dacoity, trust, cheating, mischief, trespass.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second statutory illustration. Illustration (b): (b) A meets Z on the high road, shows a pistol, and demands Z’s purse. Z, in consequence, surrenders his purse. Here A has extorted the purse from Z by putting him in fear of instant hurt, and being at the time of committing the extortion in his presence. A has therefore committed robbery Contrast it with illustration (a). The legal weight lies in the contrast.\n\nLayer 3 — Distinction. Contrast BNS s. 309 with BNS s. 303, BNS s. 308, BNS s. 310. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 309.”",
-      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
-    }
+      id: 'bns-309-trap-3',
+      trap: 'Treating threats of future blackmail as robbery under Section 309(3) BNS.',
+      correction:
+        'Extortion elevates to robbery only where the offender is present and induces fear of instant death, instant hurt, or instant restraint then and there. Threats of future harm remain extortion under Section 308 BNS (Illustration d).',
+    },
   ],
-  "cases": [],
-  "examTips": [
-    "Cite BNS s. 309 for offences on or after 1 July 2024.",
-    "Ingredients first, illustration second, application third, conclusion last.",
-    "Another number collision: IPC 309 was attempt to suicide. BNS 309 is robbery. Never carry IPC numbers across without converting."
-  ],
-  "examFrameworks": [
+
+  questionsAndAnswers: [
     {
-      "question": "Structured Legal Assessment: BNS s. 309 (Robbery).",
-      "steps": [
-        "Introduce BNS s. 309 and Chapter XVII — Of Offences Against Property.",
-        "Define / state the meaning in your own words.",
-        "List the essential ingredients.",
-        "Use one statutory illustration and map it to an ingredient.",
-        "State the material explanation or exception.",
-        "Apply in four to six sentences.",
-        "Conclude with the current citation — BNS s. 309."
-      ]
+      id: 'bns-309-q-brief',
+      draftingCategory: 'brief',
+      question: 'Senior Counsel Legal Assessment: Scope, Consolidation and Ingredients of Section 309 BNS',
+      answer: `I. STATUTORY CONSOLIDATION & ARCHITECTURE
+Section 309 of the Bharatiya Nyaya Sanhita, 2023 (BNS) consolidates four former IPC sections into a single comprehensive provision in Chapter XVII:
+- Sub-sections (1), (2), (3): Substantive definition of Robbery (former s. 390 IPC).
+- Sub-section (4): Punishment for robbery (former s. 392 IPC).
+- Sub-section (5): Attempt to commit robbery (former s. 393 IPC).
+- Sub-section (6): Voluntarily causing hurt in committing robbery (former s. 394 IPC).
+
+II. ESSENTIAL INGREDIENTS
+1. Robbery via Theft (s. 309(2)): Theft where offender, "for that end", voluntarily causes/attempts death, hurt, or restraint, or fear of instant death/hurt/restraint.
+2. Robbery via Extortion (s. 309(3)): Extortion committed in physical presence under fear of instant death, hurt, or restraint, inducing delivery then and there.
+3. Attempt (s. 309(5)): Rigorous imprisonment up to 7 years.
+4. Causing Hurt (s. 309(6)): Life imprisonment or up to 10 years, with deemed joint liability for all persons concerned.
+
+III. JURISPRUDENTIAL PREREQUISITES
+The "for that end" nexus is strictly required (Joseph Mingel Koli); fortuitous or subsequent property taking does not constitute robbery.
+
+IV. TRANSITIONAL MANDATE
+Offences committed on or after 1 July 2024 are charged under Section 309 BNS; pre-commencement conduct is prosecuted under IPC Sections 392/394 pursuant to Section 531(2)(a) BNSS.`,
+      explanation:
+        'Authoritative legal assessment deconstructing Section 309 BNS, quadruple consolidation, the "for that end" causation test, sentencing tiers, and joint liability.',
     },
     {
-      "question": "Comprehensive Chamber Written Submissions: BNS s. 309 with connected statutory scheme.",
-      "steps": [
-        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
-        "Place the section in the Chapter and explain why the heading exists.",
-        "Work a second statutory illustration and contrast it with the first.",
-        "Distinguish BNS s. 309 from BNS s. 303, BNS s. 308, BNS s. 310.",
-        "IRAC application to the problem facts.",
-        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
-        "Current-law conclusion."
-      ]
-    }
+      id: 'bns-309-q-submissions',
+      draftingCategory: 'submissions',
+      question: 'Appellate Written Submissions: Failure of the "For That End" Nexus and Alteration of Robbery Conviction',
+      answer: `MAY IT PLEASE YOUR LORDSHIPS:
+
+1. LOCUS OF THE CHALLENGE:
+The appellant stands convicted under Section 309(6) BNS and sentenced to 10 years rigorous imprisonment. It is submitted that the conviction for Robbery is legally erroneous due to the complete absence of the statutory causation nexus.
+
+2. ABSENCE OF THE "FOR THAT END" NEXUS UNDER SECTION 309(2) BNS:
+(a) Section 309(2) BNS commands:
+"Theft is robbery if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint..."
+(b) The words "for that end" are of paramount significance. As held by the Bombay High Court in State of Maharashtra v. Joseph Mingel Koli (1997) 2 Crimes 228 and the Privy Council in Bishambhar Nath v. Emperor AIR 1941 Oudh 476, violence must be used intentionally as a means to achieve the theft or facilitate escape with the booty.
+(c) The deposition of PW-1 (injured complainant) confirms that the clash originated solely over a heated road-rage altercation. The appellant struck PW-1 with a helmet in the heat of passion. It was only after PW-1 collapsed and the crowd began gathering that the appellant picked up PW-1’s mobile phone from the road.
+(d) The assault was not committed "in order to" steal the phone or "for that end".
+
+3. LEGAL CONSEQUENCE: ALTERATION TO SIMPLE HURT AND THEFT:
+The two acts being distinct and independent, the unified charge under Section 309(6) BNS collapses. The appellant can be convicted only for Voluntarily Causing Hurt under Section 115(2) BNS and Theft under Section 303(2) BNS.
+
+4. PRAYER:
+It is therefore prayed that the conviction under Section 309(6) BNS be set aside, the offences altered to Sections 115(2) and 303(2) BNS, and the sentence reduced to the period already undergone.`,
+      explanation:
+        'Comprehensive appellate submissions establishing the failure of the "for that end" statutory nexus under Section 309(2) BNS, citing Joseph Mingel Koli and altering conviction to simple hurt and theft.',
+    },
   ],
-  "answerSkeleton": [
-    "Introduction — BNS s. 309, Robbery.",
-    "Meaning and definition.",
-    "Ingredients.",
-    "Illustration mapped to an ingredient.",
-    "Explanation / exception.",
-    "Application (IRAC).",
-    "Conclusion and current citation."
+
+  cases: [
+    {
+      name: 'State of Maharashtra v. Joseph Mingel Koli',
+      year: 1997,
+      citation: '(1997) 2 Crimes 228 (Bom)',
+      holding:
+        'Laid down the definitive test for "for that end" under robbery: the violence or hurt must be consciously deployed as a means to commit the theft or carry away stolen property; an assault arising from independent enmity where property is taken as an afterthought does not constitute robbery.',
+    },
+    {
+      name: 'Santi v. State of Haryana',
+      year: 2009,
+      citation: '(2009) 10 SCC 280',
+      holding:
+        'Reaffirmed the principle of deemed joint liability in robbery with hurt (now Section 309(6) BNS): if any one participant causes hurt during the robbery, every co-accused jointly concerned in the crime is equally liable for the enhanced punishment.',
+    },
+    {
+      name: 'Bishambhar Nath v. Emperor',
+      year: 1941,
+      citation: 'AIR 1941 Oudh 476',
+      holding:
+        'Held that where hurt is caused without any intention to commit theft, and theft is committed as an independent subsequent act, the two acts cannot be amalgamated into the offence of robbery.',
+    },
   ],
-  "revisionPoints": [
-    "BNS s. 309: Robbery.",
-    "First ingredient: (1) In all robbery there is either theft or extortion",
-    "4 statutory illustration(s) — quote and map.",
-    "For offences on or after 1 July 2024, the correct citation is BNS s. 309 — Robbery. Older books and judgments may still print a historical number (390 / 392). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+
+  examTips: [
+    'Always cite Section 309 BNS as the consolidated provision replacing Sections 390 (definition), 392 (punishment), 393 (attempt), and 394 (causing hurt) IPC.',
+    'Master the two gateways: (1) theft becomes robbery if hurt/fear is caused "for that end"; (2) extortion becomes robbery if committed in physical presence under fear of instant peril.',
+    'Highlight the highway aggravation under Section 309(4): maximum sentence increases from 10 to 14 years if committed on highway between sunset and sunrise.',
+    'Remember the codified joint liability in Section 309(6): causing hurt exposes all participants to life imprisonment or 10 years RI.',
+    'Under Section 531(2)(a) BNSS, pre-1 July 2024 offences are governed by IPC Sections 392/394; post-commencement conduct by Section 309 BNS.',
   ],
-  "relatedTopics": [
-    "s-303",
-    "s-308",
-    "s-310"
-  ]
+
+  examFrameworks: [
+    {
+      question: 'Structured Chamber Brief: Evaluating Robbery under Section 309 BNS',
+      steps: [
+        'Determine whether base offence is Theft (s. 309(2)) or Extortion (s. 309(3)).',
+        'If theft, apply the Joseph Mingel Koli test: verify whether death/hurt/restraint was inflicted "for that end".',
+        'If extortion, verify presence of offender and threat of instant peril then and there.',
+        'Check for highway aggravation (sunset to sunrise) under Section 309(4).',
+        'Check whether hurt was caused: apply Section 309(6) joint liability to all co-accused.',
+        'Evaluate evidentiary proof (MLC, weapon recovery under BSA s. 23, TIP under BNSS s. 54).',
+      ],
+    },
+    {
+      question: 'Appellate Submissions: Challenging Section 309(6) Charge on Causation Grounds',
+      steps: [
+        'Examine the initial motive of the confrontation (road rage, personal quarrel).',
+        'Isolate the timing of the assault from the subsequent taking of property.',
+        'Demonstrate absence of the "for that end" nexus (Bishambhar Nath).',
+        'Argue that the conviction must be bifurcated into separate charges of Hurt and Theft.',
+        'Pray for reduction of sentence.',
+      ],
+    },
+  ],
+
+  answerSkeleton: [
+    'Introduction — Section 309 BNS, Chapter XVII ("Of Offences Against Property"), consolidating IPC ss. 390, 392, 393, 394.',
+    'Two Branches of Robbery — Robbery via Theft (s. 309(2), "for that end" test) and Robbery via Extortion (s. 309(3), presence and instant fear).',
+    'Penal Hierarchy — Completed robbery (up to 10 yrs; 14 yrs on highway), Attempt (up to 7 yrs), Causing hurt (life or 10 yrs).',
+    'Deemed Joint Liability — Section 309(6) fastens liability on all persons jointly concerned if any one causes hurt (Santi).',
+    'Evidentiary Rules — Weapon recovery under BSA s. 23, presumption under BSA s. 119, TIP under BNSS s. 54.',
+    'Transition — Prospective under BNSS s. 531; IPC ss. 390/392/394 historical concordance.',
+  ],
+
+  revisionPoints: [
+    'Section 309 BNS consolidates IPC 390, 392, 393, and 394.',
+    'Theft is robbery only if violence is caused "for that end" (Joseph Mingel Koli).',
+    'Extortion is robbery only if committed in presence under fear of instant peril.',
+    'Highway robbery between sunset and sunrise extends punishment to 14 years.',
+    'Causing hurt in robbery triggers joint life imprisonment exposure under Section 309(6).',
+  ],
+
+  relatedTopics: [
+    's-303',
+    's-304',
+    's-308',
+    's-310',
+    's-311',
+  ],
 }
 
 export default content
