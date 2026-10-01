@@ -416,7 +416,7 @@ The Phase 18 roadmap deliverable is complete: the verification policy defines re
 
 ## Phase 17 — AI Architecture — COMPLETED (2026-10-01)
 
-**Implementation:** PR pending  
+**Implementation:** PR #92  
 **Exit audit:** `docs/PHASE-17-EXIT-AUDIT.md`  
 **Validation:** CI **#374** — TypeScript PASS, unit tests PASS, production build PASS.
 
@@ -433,7 +433,7 @@ The Phase 18 roadmap deliverable is complete: the verification policy defines re
 | Focused tests | **PASS — CI #374** |
 | TypeScript + production build | **PASS — CI #374** |
 
-**Blocker:** None known; CI is the merge gate.  
+**Blocker:** None.  
 **Next action:** Phase 18 — Legal Content Verification.
 
-**Phase 17 status:** **CLOSED pending merge verification**.
+**Phase 17 status:** **CLOSED**.
