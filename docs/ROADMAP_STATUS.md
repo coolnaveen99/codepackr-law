@@ -244,3 +244,23 @@ Implemented the roadmap §22 AI architecture contract without adding a productio
 **Phase 17 status:** CLOSED.
 
 **Next:** Phase 18 — Legal Content Verification.
+
+
+
+## Phase 20 — Mobile and Accessibility (CLOSED)
+
+Implementation is complete via PR #94, merged as `531ed6d6075daeac9f30d79ac405595c4e1f9a8a`.
+
+- Mobile control baseline enforces 44px primary targets on narrow screens.
+- Keyboard focus is visible with a consistent `:focus-visible` indicator.
+- Mobile bottom-navigation space and safe-area padding prevent fixed navigation/action UI from permanently covering content.
+- The existing topic comparison matrix now reflows into labelled cards below 640px instead of requiring horizontal table scrolling.
+- Existing reduced-motion support remains active.
+- Focused regression coverage is in `tests/mobile-accessibility.test.ts`.
+- Exit audit: `docs/PHASE-20-EXIT-AUDIT.md`.
+- CI/build: **PASS** — CI #380 (TypeScript, unit tests, production build).
+- Scope boundary: this is a product baseline, not an exhaustive WCAG conformance certification.
+
+**Phase 20 status:** CLOSED.
+
+**Next:** Phase 21 — PWA / Offline.
