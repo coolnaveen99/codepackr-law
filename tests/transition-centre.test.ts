@@ -5,7 +5,7 @@ import { RELATION_HELP, TRANSITION_HIGHLIGHTS } from '../src/data/transitionHigh
 test('Phase 11 transition centre covers all three Sanhita pairs', () => {
   assert.deepEqual(
     [...new Set(TRANSITION_HIGHLIGHTS.map((h) => h.actPair))].sort(),
-    ['bns-ipc', 'bsa-iea', 'bnss-crpc'],
+    ['bns-ipc', 'bnss-crpc', 'bsa-iea'],
   )
   assert.ok(TRANSITION_HIGHLIGHTS.length >= 6)
 })
