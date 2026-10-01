@@ -396,4 +396,4 @@ Phase 29 hardening is being applied to actual local upload boundaries, not just 
 
 A real lazy judgment loader was added to the Case Law Library so the large judgment corpus is not eagerly imported by that surface. Existing topic content already uses Vite's lazy `import.meta.glob` pattern; filter-heavy tools use memoization.
 
-**Next:** CI validation and Phase 30 exit audit.
+**Exit audit:** `docs/PHASE-30-EXIT-AUDIT.md`.
