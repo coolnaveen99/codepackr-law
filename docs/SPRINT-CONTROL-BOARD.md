@@ -209,56 +209,32 @@ PA-004 remains deferred until the signed production parity/UX decision.
 PA-005 is an architecture improvement, not a blocker to the current automated canonical-content validation.
 PH3-001 must not start until PA-003 closes the Phase 2 gate.
 
-## Dependency map
+## Active execution rules
 
-```
-LC-001 ─┐
-        ├──→ LC-006 ─→ LC-007 ─┐
-LC-003 ─┘                       │
-                                ├──→ LC-008 ─→ LC-009
-LC-002 ─────────────────────────┤             │
-LC-004 ─────────────────────────┤             ├──→ LC-010
-LC-005 ─────────────────────────┘             └──→ LC-011
-
-LC-012 remains DEFERRED until the platform workflow provides evidence
-for the next editorial enhancement wave.
-```
-
-## Parallel-work rules
-
-### Naveen
-Own only LC-004 unless a new task is explicitly accepted.
-
-### Friend
-Own only LC-005 unless a new task is explicitly accepted.
-
-### Grok
-Own LC-003. Do not modify the Fundamental Rights or DPSP corpus unless explicitly required for relationship validation.
-
-### DevOps
-Own LC-001 and release/CI dependencies.
-
-### Application developer team
-Own LC-006/LC-007 after dependencies are satisfied.
-
-### QA / Architecture
-Own the Phase 2 evidence gate, not the implementation of other owners' tasks.
+- **Deployment owner:** may take PA-001 only.
+- **Product / legal-content owner:** may take PA-002 after PA-001.
+- **QA / Architecture:** owns PA-003 evidence gate after PA-001 and PA-002.
+- **Architecture / Product:** owns PA-004 only after signed Phase 2 acceptance.
+- **Solution Architect:** owns PA-005 and PH3-001 only after their dependencies are satisfied.
+- Do not reopen completed LC-001–LC-007 unless new evidence identifies a regression.
+- Do not start Phase 3 work before PA-003 closes the Phase 2 gate.
+- Maximum four major WIP workstreams remain in force.
 
 ## Manifest rule
 
 The manifest is a repository-wide artifact.
 
-Do not push a subject-only or pilot-only manifest as the final manifest.
-
-Whenever entity changes require regeneration:
+The current canonical repository uses:
 
 ```
-npm run manifest
-npm run validate
-npm test
+npm run manifest:refresh
+node scripts/validate.mjs --graph-report
+node scripts/test-relationships.mjs
 ```
 
-If the full manifest cannot be safely regenerated/pushed, mark the task BLOCKED rather than publishing an incomplete manifest.
+CI also regenerates the manifest and relationship index on pushes to `main`.
+
+Do not publish a subject-only or pilot-only manifest as the final repository manifest. If a full regeneration fails, keep the work BLOCKED and do not publish an incomplete artifact.
 
 ## Sprint review questions
 
