@@ -39,11 +39,11 @@ export function CitationVerifier() {
         <div className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-[#8B1E3F]">
           <ShieldCheck className="size-4" /> Citation Verifier (Phase 4)
         </div>
-        <h1 className="mt-2 text-2xl sm:text-3xl font-black tracking-tight">Parse &amp; status-label citations</h1>
+        <h1 className="mt-2 text-2xl sm:text-3xl font-black tracking-tight">Parse & status-label citations</h1>
         <p className="mt-2 text-sm text-slate-600 dark:text-slate-400 max-w-3xl">
-          Supports SCC, AIR, SCC OnLine, SCR, and Indian Neutral Citations (INSC, High Courts), as well as case names (one per line).
-          This tool performs a structural parse against standard reporter patterns.
-          It strictly adheres to the rule: <em>never convert "not found" into "case does not exist"</em>.
+          Supports SCC, AIR, SCC OnLine, SCR, and Indian Neutral Citations (INSC, High Courts), case names, and
+          <strong> continuous document extracts</strong> (PH4-030 multi-citation scanner).
+          Structural parse only — never converts "not found" into "case does not exist".
         </p>
 
         {handoffSource && (
@@ -65,9 +65,9 @@ export function CitationVerifier() {
         <textarea
           value={text}
           onChange={(e) => setText(e.target.value)}
-          rows={6}
+          rows={8}
           placeholder={
-            '(2020) 5 SCC 1\n2023 INSC 123\n2022 SCC OnLine Del 108\nAIR 1978 SC 597\nKesavananda Bharati v. State of Kerala'
+            'Paste a judgment extract or citation list. Example: Relying on Kesavananda Bharati v. State of Kerala, (1973) 4 SCC 225 and Maneka Gandhi v. Union of India, AIR 1978 SC 597…'
           }
           className="mt-4 w-full rounded-2xl border border-slate-200 dark:border-slate-700 bg-transparent p-3 text-sm font-mono"
         />
@@ -82,6 +82,17 @@ export function CitationVerifier() {
             }
           >
             Load mixed sample
+          </button>
+          <button
+            type="button"
+            className="rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800 transition"
+            onClick={() =>
+              setText(
+                'The Court relied on Kesavananda Bharati v. State of Kerala, (1973) 4 SCC 225, and the procedure analysis in Maneka Gandhi v. Union of India, AIR 1978 SC 597. Later neutral citation practice appears in Association for Democratic Reforms v. Union of India, 2024 INSC 113. High Court electronic reports include 2022 SCC OnLine Del 108. SCR illustrations include [1950] SCR 88.'
+              )
+            }
+          >
+            Load document extract
           </button>
           <button
             type="button"
@@ -106,7 +117,7 @@ export function CitationVerifier() {
 
       {results.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 p-8 text-center text-sm text-slate-500">
-          Empty state — paste citations to see parse status.
+          Empty state — paste a citation list or continuous judgment extract to scan.
         </div>
       ) : (
         <div className="space-y-3">
