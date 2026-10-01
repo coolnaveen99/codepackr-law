@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { CheckCircle2, ExternalLink, Landmark, Search } from 'lucide-react'
 import { PRIMARY_SOURCES, SOURCE_TIER_EXPLAIN, type SourceTier } from '../../data/primarySources'
+import { filterPrimarySources, getPrimarySourceStats } from '../../lib/primarySourceFinder'
 
 const REVIEW_DATE = new Intl.DateTimeFormat('en-IN', {
   day: '2-digit',
@@ -19,26 +20,12 @@ export function PrimarySourceFinder() {
     [],
   )
 
-  const rows = useMemo(() => {
-    const query = q.trim().toLowerCase()
-    return PRIMARY_SOURCES.filter((source) => {
-      if (tier !== 'all' && source.tier !== tier) return false
-      if (category !== 'all' && source.category !== category) return false
-      if (!query) return true
-      return [
-        source.title,
-        source.org,
-        source.description,
-        source.category,
-        source.authorityType,
-        source.relevantActSection,
-        source.tierLabel,
-      ].some((value) => value.toLowerCase().includes(query))
-    }).sort((a, b) => a.tier - b.tier || a.title.localeCompare(b.title))
-  }, [q, tier, category])
+  const rows = useMemo(
+    () => filterPrimarySources(PRIMARY_SOURCES, { query: q, tier, category }),
+    [q, tier, category],
+  )
 
-  const officialCount = PRIMARY_SOURCES.filter((source) => source.tier <= 2).length
-  const checkedCount = PRIMARY_SOURCES.filter((source) => source.verificationStatus === 'link-checked').length
+  const stats = useMemo(() => getPrimarySourceStats(PRIMARY_SOURCES), [])
 
   return (
     <div className="space-y-5">
@@ -55,11 +42,11 @@ export function PrimarySourceFinder() {
         <div className="mt-4 grid sm:grid-cols-2 gap-3 text-xs">
           <div className="rounded-xl border border-slate-200 dark:border-slate-700 p-3">
             <div className="font-black">Official-first directory</div>
-            <div className="mt-1 text-slate-500">{officialCount} government / court or statute entries</div>
+            <div className="mt-1 text-slate-500">{stats.officialFirst} government / court or statute entries</div>
           </div>
           <div className="rounded-xl border border-slate-200 dark:border-slate-700 p-3">
             <div className="font-black">Link verification</div>
-            <div className="mt-1 text-slate-500">{checkedCount}/{PRIMARY_SOURCES.length} directory links checked on 01 Oct 2026</div>
+            <div className="mt-1 text-slate-500">{stats.linkChecked}/{stats.total} directory links checked on 01 Oct 2026</div>
           </div>
         </div>
 
