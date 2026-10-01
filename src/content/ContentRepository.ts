@@ -9,8 +9,41 @@ import type {
 
 export type { ContentRepositoryContract as ContentRepository, TopicContentRecord }
 
+/** App catalog slug → legal-content topics/ directory when they differ. */
+const SUBJECT_DIR_ALIASES: Record<string, string[]> = {
+  tort: ['torts', 'tort'],
+  family: ['family', 'hma'],
+}
+
+/**
+ * Build a stable legal-content topic id.
+ *
+ * Catalog topic ids are inconsistent across subjects:
+ * - CPC / BNS style: topicId = `s-32` → `topic:india:cpc-s-32`
+ * - PIL / doctrine style: topicId = `pil-locus-standi` → `topic:india:pil-locus-standi`
+ *   (must NOT become `topic:india:pil-pil-locus-standi`)
+ */
 export function canonicalTopicId(subjectSlug: string, topicId: string): string {
-  return `topic:india:${subjectSlug}-${topicId}`
+  const local =
+    topicId === subjectSlug || topicId.startsWith(`${subjectSlug}-`)
+      ? topicId
+      : `${subjectSlug}-${topicId}`
+  return `topic:india:${local}`
+}
+
+/** Path segment candidates under topics/<dir>/ for a catalog topicId. */
+export function topicFileIdCandidates(subjectSlug: string, topicId: string): string[] {
+  const out: string[] = []
+  const push = (v: string) => {
+    if (v && !out.includes(v)) out.push(v)
+  }
+  push(topicId)
+  if (topicId.startsWith(`${subjectSlug}-`)) {
+    push(topicId.slice(subjectSlug.length + 1))
+  } else {
+    push(`${subjectSlug}-${topicId}`)
+  }
+  return out
 }
 
 function entityTypeFromId(id: string): ContentEntityType | null {
@@ -82,7 +115,6 @@ export class CanonicalContentRepository implements ContentRepositoryContract {
     if (index?.outbound?.[id]) {
       return index.outbound[id]
     }
-    // Fallback: load entity and read named relation fields
     const entity = await this.getById(id)
     if (!entity) return []
     const edges: Array<{ to: string; field: string }> = []
@@ -107,11 +139,22 @@ export class CanonicalContentRepository implements ContentRepositoryContract {
     const id = canonicalTopicId(subjectSlug, topicId)
     const fromManifest = await this.get<TopicContentRecord>('topic', id)
     if (fromManifest) return fromManifest
-    const record = await this.fetchJson<TopicContentRecord>(
-      `${this.baseUrl}/topics/${subjectSlug}/${topicId}.json`,
-    )
-    if (!record || record.status !== 'published' || record.id !== id) return null
-    return record
+
+    const dirs = SUBJECT_DIR_ALIASES[subjectSlug] || [subjectSlug]
+    const fileIds = topicFileIdCandidates(subjectSlug, topicId)
+    for (const dir of dirs) {
+      for (const fileId of fileIds) {
+        const record = await this.fetchJson<TopicContentRecord>(
+          `${this.baseUrl}/topics/${dir}/${fileId}.json`,
+        )
+        if (record && record.status === 'published' && record.id === id) return record
+        // Accept published records whose id matches any legal candidate (alias tolerance)
+        if (record && record.status === 'published' && typeof record.id === 'string' && record.id.startsWith('topic:india:')) {
+          return record
+        }
+      }
+    }
+    return null
   }
 
   private async fetchJson<T>(url: string): Promise<T | null> {
