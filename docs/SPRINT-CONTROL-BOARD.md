@@ -2,8 +2,8 @@
 
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
-**Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** · Phase 4 — **CLOSED** · Phase 5 — **CLOSED** · Phase 6 — **CLOSED** · Phase 7 — **CLOSED** · Phase 8 — **CLOSED** · Phase 9 — **CLOSED** · Phase 10 — **CLOSED** · Phase 11 — **CLOSED** · Phase 12 — **CLOSED**
-**Updated:** 2026-10-01 (PH11 + PH12 synchronized — Transition Centre and Student Learning 2.0 exit audits closed; Phase 13 is next)
+**Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** · Phase 4 — **CLOSED** · Phase 5 — **CLOSED** · Phase 6 — **CLOSED** · Phase 7 — **CLOSED** · Phase 8 — **CLOSED** · Phase 9 — **CLOSED** · Phase 10 — **CLOSED** · Phase 11 — **CLOSED** · Phase 12 — **CLOSED** · Phase 13 — **CLOSED**
+**Updated:** 2026-10-01 (PH11 + PH12 synchronized — Transition Centre and Student Learning 2.0 exit audits closed; Phase 13 completed — Phase 14 is next)
 
 ## Verified completed
 
@@ -42,7 +42,7 @@
 
 **Board integrity note:** Phase 11 now has its separate exit audit and validation evidence on `main` (`docs/PHASE-11-EXIT-AUDIT.md`, PR #82 final CI). Phase 11 and Phase 12 are both closed.
 
-**Next action:** Phase 13 — Advocate Practice Dashboard. Do not start Phase 13 unless it becomes the current executable Sprint Board task.
+**Next action:** Phase 14 — Cause List Organizer.
 ## Current sprint backlog
 
 | ID | Work | Status | Priority |
@@ -68,6 +68,8 @@
 | PH10-100 | Phase 10 exit audit | **COMPLETED** | P1 |
 | PH11-010 | BNS / BNSS / BSA Transition Centre implementation | **COMPLETED** | P0 |
 | PH11-100 | Phase 11 exit audit | **COMPLETED** | P0 |
+| PH13-010 | Advocate Practice Dashboard implementation | **COMPLETED** | P0 |
+| PH13-100 | Phase 13 exit audit | **COMPLETED** | P0 |
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
 
 ### PH4-040 — COMPLETED (2026-10-01)
@@ -294,3 +296,31 @@
 **Next active phase:** Phase 13 — Advocate Practice Dashboard (Phase 12 is already CLOSED).
 
 **Phase 11 status:** **CLOSED**.
+
+
+## Phase 13 — Advocate Practice Dashboard — COMPLETED (2026-10-01)
+
+**Implementation:** PR #83  
+**Exit audit:** `docs/PHASE-13-EXIT-AUDIT.md`  
+**Validation:** CI **#357** — TypeScript PASS, unit tests PASS, production build PASS.
+
+| Check | Result |
+|---|---|
+| Active cases card | **PASS** |
+| Upcoming hearings card | **PASS** |
+| Research notes card | **PASS** |
+| Drafts card | **PASS** |
+| Checklists card | **PASS** |
+| Recent judgments card | **PASS** |
+| Favourite statutes card | **PASS** |
+| Local case diary fields | **PASS** |
+| Local persistence | **PASS** |
+| Privacy/no remote practice-data path | **PASS** |
+| Mobile/accessibility baseline | **PASS** |
+| Regression tests | **PASS** |
+| TypeScript + production build | **PASS** — CI #357 |
+
+**Blocker:** None.  
+**Next action:** Phase 14 — Cause List Organizer.
+
+**Phase 13 status:** **CLOSED**.
