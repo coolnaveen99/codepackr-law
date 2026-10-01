@@ -2,8 +2,8 @@
 
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
-**Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** · Phase 4 — **CLOSED** · Phase 5 — **CLOSED** · Phase 6 — **CLOSED** · Phase 7 — **CLOSED** · Phase 8 — **CLOSED** · Phase 9 — **CLOSED** · Phase 10 — **CLOSED**  
-**Updated:** 2026-10-01 (PH10 COMPLETED — Legal Calculators exit audit closed)
+**Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** · Phase 4 — **CLOSED** · Phase 5 — **CLOSED** · Phase 6 — **CLOSED** · Phase 7 — **CLOSED** · Phase 8 — **CLOSED** · Phase 9 — **CLOSED** · Phase 10 — **CLOSED** · Phase 11 — **CLOSED**  
+**Updated:** 2026-10-01 (PH11 COMPLETED — BNS / BNSS / BSA Transition Centre exit audit closed)
 
 ## Verified completed
 
@@ -43,6 +43,8 @@
 | PH9-100 | Phase 9 exit audit | **COMPLETED** | P0 |
 | PH10-010 | Legal Calculators implementation | **COMPLETED** | P1 |
 | PH10-100 | Phase 10 exit audit | **COMPLETED** | P1 |
+| PH11-010 | BNS / BNSS / BSA Transition Centre implementation | **COMPLETED** | P0 |
+| PH11-100 | Phase 11 exit audit | **COMPLETED** | P0 |
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
 
 ### PH4-040 — COMPLETED (2026-10-01)\n\n**Validation evidence:** PR #68 branch CI run **#297** passed TypeScript validation, **113/113 unit tests**, and production build. Official e-SCR, SCR, SCI, and eCourts destinations were checked against current official portals. A prior CI run (#293) caught a type-export regression; the fix was validated by run #295 (lint/build pass) and final run #297 (full gate pass).
@@ -240,3 +242,30 @@
 
 **Blocker:** None.  
 **Next action:** Phase 11 — BNS / BNSS / BSA Transition Centre.
+
+
+## Phase 11 — BNS / BNSS / BSA Transition Centre — COMPLETED (2026-10-01)
+
+**Implementation:** PR #79  
+**Exit audit:** `docs/PHASE-11-EXIT-AUDIT.md`  
+**Validation:** final PR #79 CI passed TypeScript validation, unit tests, and production build.
+
+| Check | Result |
+|---|---|
+| IPC → BNS | **PASS** |
+| CrPC → BNSS | **PASS** |
+| Indian Evidence Act → BSA | **PASS** |
+| Old/new provision + relationship label | **PASS** |
+| Changed wording / ingredients / procedural effect | **PASS** |
+| Commencement + transitional considerations | **PASS** |
+| Related cases with primary-source links where identified | **PASS** |
+| India Code verification-source links | **PASS** |
+| Pair + relationship filters + search | **PASS** |
+| Existing Sanhita Mapper preserved | **PASS** |
+| Mobile/accessibility baseline | **PASS** |
+| TypeScript/tests/build | **PASS** |
+
+**Blocker:** None.  
+**Next action:** Phase 12 — Student Learning 2.0.
+
+**Phase 11 status:** **CLOSED**.
