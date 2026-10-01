@@ -19,7 +19,7 @@
 | Verification boundary | **PASS** | “Link checked” is explicitly limited to destination verification; it does not certify a legal proposition |
 | Mobile/accessibility baseline | **PASS** | Primary controls use 44px minimum height; filters expose pressed state; external links have accessible labels |
 | Empty state | **PASS** | No-match state explains how to broaden filters |
-| Tests | **PASS** | `tests/primary-source-finder.test.ts` covers hierarchy, search, filters and verification statistics; execution pending CI |
+| Tests | **PASS** | `tests/primary-source-finder.test.ts` covers hierarchy, search, filters and verification statistics; execution confirmed by CI #365 |
 | TypeScript/build | **PASS** | GitHub Actions validation is the merge gate |
 
 ## Official-source verification
