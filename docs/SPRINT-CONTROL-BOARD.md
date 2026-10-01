@@ -341,7 +341,7 @@
 | Official-source navigation | **PASS** |
 | Link verification boundary | **PASS** |
 | Mobile/accessibility baseline | **PASS** |
-| Focused tests | **PASS in implementation tree; CI pending** |
+| Focused tests | **ADDED; CI pending** |
 | TypeScript + production build | **PENDING CI** |
 
 **Phase 15 status:** **CLOSED pending final CI/merge verification.**
