@@ -1,6 +1,6 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert/strict'
-import { escapeHtml, stripTags, limitUserText, isBlockedExtension, allowedTextMime } from '../src/lib/sanitize'
+import { escapeHtml, stripTags, limitUserText, isBlockedExtension, allowedTextMime, validateLocalUpload } from '../src/lib/sanitize'
 import { DRAFT_TIERS, tierLabel } from '../src/data/draftTiers'
 import { COURT_PROFILES, STATE_PROFILES } from '../src/data/courtProfiles'
 
@@ -21,6 +21,16 @@ describe('sanitize (Phase 29)', () => {
   it('allows text-like MIME types', () => {
     assert.equal(allowedTextMime('text/plain'), true)
     assert.equal(allowedTextMime('application/javascript'), false)
+  })
+  it('rejects oversized and unsupported local uploads', () => {
+    const oversized = { name: 'notes.txt', size: 11, type: 'text/plain' } as File
+    assert.ok(validateLocalUpload(oversized, ['txt'], 10))
+    const blocked = { name: 'payload.exe', size: 1, type: 'application/octet-stream' } as File
+    assert.ok(validateLocalUpload(blocked, ['exe']))
+  })
+  it('accepts a permitted JSON upload', () => {
+    const file = { name: 'session.json', size: 10, type: 'application/json' } as File
+    assert.equal(validateLocalUpload(file, ['json']), null)
   })
 })
 
