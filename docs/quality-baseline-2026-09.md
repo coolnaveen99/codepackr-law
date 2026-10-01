@@ -7,7 +7,7 @@
 **Companion:** `docs/product-capability-matrix.md`, `docs/phase-0-baseline.md`
 
 > A roadmap item is not complete until the repository contains the required code, content, tests, and verification evidence.  
-> **Inventory / MVP code for Phases 0–32 is on main.** Command rows below still require a real local or CI run to mark pass.
+ > **Inventory / MVP code for Phases 0–32 is on main.** The dedicated Phase 0 CI workflow now executes every command below; this document is updated with its result after the gate completes.
 
 ---
 

@@ -13,6 +13,8 @@ A roadmap item is complete only when its required code/content/tests/verificatio
 
 ## Current strategic position
 
+**Phase 0 — FORMAL GATE IN PROGRESS** (inventory/MVP work complete; automated full baseline gate being added, 2026-10-01)
+**Phase 1 — CLOSED** (launch audit evidence)
 **Phase 2 — CLOSED** (PA-003 exit audit, 2026-10-01)  
 **Phase 3 — CLOSED** (PH3-100 exit audit, 2026-10-01)  
 **Phase 4 — CLOSED** (PH4-100 exit audit, 2026-10-01)  
@@ -23,7 +25,7 @@ A roadmap item is complete only when its required code/content/tests/verificatio
 **Phase 9 — CLOSED** (Filing and Court Checklist System exit audit, 2026-10-01)  
 **Phase 10 — CLOSED** (Legal Calculators exit audit, 2026-10-01)
 **Phase 14 — CLOSED** (Cause List Organizer exit audit, 2026-10-01)
-**Phase 15 — IMPLEMENTED / CI PENDING** (Primary Source Finder, 2026-10-01)
+**Phase 15 — CLOSED** (Primary Source Finder exit audit + CI #365, 2026-10-01)
 
 ```
 Phase 0 stabilization
@@ -373,26 +375,26 @@ Implementation was already present on main but lacked an exit audit and board cl
 **Next:** Phase 27 — Senior Counsel Research Mode.
 
 
-## Phase 27 — Senior Counsel Research Mode (IN PROGRESS)
+## Phase 27 — Senior Counsel Research Mode (CLOSED)
 
 The existing research-bundle implementation was audited against roadmap §32. The missing case-summary field and DOCX/PDF/TXT export paths were added; Markdown export is retained. The implementation remains browser-local and explicitly avoids authority scoring or outcome prediction.
 
 **Exit audit:** `docs/PHASE-27-EXIT-AUDIT.md`.
 
-## Phase 28 — Judicial / Neutral Analysis Mode (IN PROGRESS)
+## Phase 28 — Judicial / Neutral Analysis Mode (CLOSED)
 
 The neutral-analysis surface now explicitly exposes the roadmap extraction/organisation utilities while preserving the prohibition on judicial-outcome prediction, judge-bias scoring, conviction prediction, winner prediction and personal competence/fitness scoring.
 
 **Exit audit:** `docs/PHASE-28-EXIT-AUDIT.md`.
 
-## Phase 29 — Security (IN PROGRESS)
+## Phase 29 — Security (CLOSED)
 
 Phase 29 hardening is being applied to actual local upload boundaries, not just documented. Shared validation now enforces a 10 MB default limit, extension allow-lists, blocked executable extensions and MIME checks. Document Compare no longer advertises unsupported PDF upload handling.
 
 **Exit audit:** `docs/PHASE-29-EXIT-AUDIT.md`.
 
 
-## Phase 30 — Performance (IN PROGRESS)
+## Phase 30 — Performance (CLOSED)
 
 A real lazy judgment loader was added to the Case Law Library so the large judgment corpus is not eagerly imported by that surface. Existing topic content already uses Vite's lazy `import.meta.glob` pattern; filter-heavy tools use memoization.
 
