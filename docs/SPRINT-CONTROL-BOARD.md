@@ -133,22 +133,81 @@ A task may move to COMPLETED only when applicable:
 - application parity is verified when migration affects app reads;
 - exact commit/PR/check evidence is recorded.
 
-## Current sprint backlog
+## Verified work completed — Phase 2 foundation
+
+The previous LC-001–LC-007 backlog has been re-audited against both repositories as of **2026-10-01**. These items are no longer active work.
+
+| ID | Result | Evidence |
+|---|---|---|
+| LC-001 | **COMPLETED** | Full manifest is live at **719 entities**; CI regenerates the repository-wide manifest and relationship index on main. |
+| LC-002 | **COMPLETED** | PIL entities are published and included in the live manifest; relationship tests pass. |
+| LC-003 | **COMPLETED** | Relationship index reports **1,755 edges**; graph validation and relationship tests are wired into CI; full-scan validation is documented as PASS. |
+| LC-004 | **COMPLETED** | Fundamental Rights corpus and collection v2 are present on main; subsequent manifest regeneration includes the changes. |
+| LC-005 | **COMPLETED** | DPSP corpus and collection are present on main; subsequent manifest regeneration includes the changes. |
+| LC-006 | **COMPLETED** | ContentGateway is canonical-first with legacy fallback; automated parity smoke passes. |
+| LC-007 | **COMPLETED** | Automated application consumption/parity is PASS; canonical manifest/entity HTTP reads are verified. |
+
+**Audit conclusion:** the old sprint board was stale. The Phase 2 foundation work represented by LC-001–LC-007 is substantially implemented and has automated evidence. It must not remain in the active queue.
+
+## Current sprint backlog — production acceptance gate
+
+Only genuinely pending work remains below.
 
 | ID | Work | Repo | Owner | Status | Priority | Dependency |
 |---|---|---|---|---|---|---|
-| LC-001 | Full 673-entity manifest synchronization | legal-content | DevOps owner | BLOCKED | P0 | GitHub CLI authentication |
-| LC-002 | PIL migration + validation | legal-content | Content owner | IN PROGRESS | P0 | LC-001 for final manifest |
-| LC-003 | Knowledge-graph relationship audit/validation | legal-content | Grok | IN PROGRESS | P0 | Existing schemas |
-| LC-004 | Fundamental Rights canonical migration | legal-content | Naveen | ACCEPTED | P0 | Canonical schemas / LC-003 as needed |
-| LC-005 | DPSP canonical migration | legal-content | Friend | ACCEPTED | P0 | Canonical schemas / LC-003 as needed |
-| LC-006 | Content Gateway + canonical/legacy parity | codepackr-law | Senior Developer | READY | P0 | LC-001, LC-003 |
-| LC-007 | Application canonical-read verification | codepackr-law | Developer | BLOCKED | P0 | LC-006 |
-| LC-008 | Phase 2 exit audit and evidence | both | QA / Architecture | BACKLOG | P0 | LC-001–LC-007 |
-| LC-009 | Research Workbench architecture | codepackr-law | Solution Architect | DEFERRED | P1 | LC-008 |
-| LC-010 | Citation Verification architecture | codepackr-law | Research/Architecture | DEFERRED | P1 | LC-009 |
-| LC-011 | Judgment Analyzer architecture | codepackr-law | Software Architect | DEFERRED | P1 | LC-009 |
-| LC-012 | Mass content enhancement wave | legal-content | Content team | DEFERRED | P2 | Phase 2/3 foundation |
+| PA-001 | Confirm production deployment contains ContentGateway + knowledge-graph UI commits | codepackr-law | Deployment owner | **READY** | P0 | None |
+| PA-002 | Complete production browser UX acceptance H1–H7 | codepackr-law | Product / legal-content owner | **BLOCKED** | P0 | PA-001 |
+| PA-003 | Complete Phase 2 exit audit and production sign-off | both | QA / Architecture | **BLOCKED** | P0 | PA-001, PA-002 |
+| PA-004 | Decide and execute legacy-content removal after signed parity | codepackr-law | Architecture / Product | **DEFERRED** | P1 | PA-003 |
+| PA-005 | Evaluate static/CDN mirror for canonical legal-content delivery | both | Solution Architect | **DEFERRED** | P1 | PA-003 |
+| PH3-001 | Phase 3 — Legal Research Workbench architecture kickoff | codepackr-law | Solution Architect | **DEFERRED** | P0 | PA-003 |
+
+## Current verified state
+
+- Canonical corpus: **719 entities** (689 published, 30 review).
+- Relationship graph: **1,755 edges**.
+- Automated content validation: **PASS**.
+- Automated application parity: **PASS**.
+- ContentGateway: **canonical-first + legacy fallback** implemented.
+- Production acceptance: **CONDITIONAL PASS**.
+- Human production UX checks H1–H7: **PENDING**.
+- Production deployment confirmation A10: **PENDING**.
+- Legacy topic removal: **not permitted yet**.
+- Phase 3: **not started**.
+
+## Acceptance criteria for the active gate
+
+### PA-001 — Deployment confirmation
+
+Verify that the production deployment of main contains the ContentGateway, relationship-resolution, and related-topic UI changes. Record the deployed commit/deployment SHA. Do not infer deployment from GitHub source alone.
+
+### PA-002 — Human UX acceptance
+
+On https://law.codepackr.com, verify the existing acceptance matrix:
+
+- H1 PIL locus-standi loads from the canonical path.
+- H2 related knowledge-graph panel is visible and links work.
+- H3 CPC s.32 renders correctly.
+- H4 tort nature/definition renders through the canonical path.
+- H5 legacy fallback works when canonical content is unavailable.
+- H6 no substantive topic body is sent to analytics; verify in browser Network tools.
+- H7 mobile TopicDetail/related links work without horizontal overflow.
+
+Record actual evidence; do not mark PASS from source inspection alone.
+
+### PA-003 — Phase 2 exit
+
+Close Phase 2 only when PA-001 and PA-002 are complete and the existing exit-gate requirements remain satisfied: canonical IDs, relationships, manifest integrity, gateway consumption, parity, application reads, CI evidence, and documented remaining gaps.
+
+## Dependency map
+
+PA-001 ─→ PA-002 ─→ PA-003 ─→ PA-004
+                         ├──→ PA-005
+                         └──→ PH3-001
+
+PA-004 remains deferred until the signed production parity/UX decision.
+PA-005 is an architecture improvement, not a blocker to the current automated canonical-content validation.
+PH3-001 must not start until PA-003 closes the Phase 2 gate.
 
 ## Dependency map
 
