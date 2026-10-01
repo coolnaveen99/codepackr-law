@@ -712,3 +712,12 @@ The Phase 18 roadmap deliverable is complete: the verification policy defines re
 All roadmap governance requirements are documented in the binding copyright/data policy and repository agent instructions. No runtime feature change is required for this phase.
 
 **Phase 31 status:** **CLOSED**.
+
+
+## Phase 32 — Trust-Preserving Monetization — COMPLETED (2026-10-01)
+
+**Exit audit:** `docs/PHASE-32-EXIT-AUDIT.md`
+
+The binding monetization policy preserves the free legal-information/safety baseline and prohibits aggressive advertising inside sensitive legal-document workflows.
+
+**Phase 32 status:** **CLOSED**.
