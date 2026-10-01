@@ -39,14 +39,14 @@ npm run build
 
 | Command | Purpose | Result | Notes |
 |---|---|---|---|
-| `npm install` | Dependencies | _pending operator_ | |
-| `npm run lint` | TypeScript `tsc --noEmit` | _pending operator_ | |
-| `npm run checklist` | Subject coverage checklist | _pending operator_ | |
-| `npm run audit` | Floor / notes / high-yield / missing files | _pending operator_ | Prior freeze: 3552/3552 |
-| `npm run validate:topics` | Topic integrity | _pending operator_ | |
-| `npm run validate:judgments` | Judgment integrity | _pending operator_ | |
-| `npm test` | Unit tests (`unit`, `phase21-30`, `phase31-32`) | _pending operator_ | |
-| `npm run build` | Production build | _pending operator_ | |
+| `npm install` | Dependencies | **CI-enforced** | Phase 0 workflow |
+| `npm run lint` | TypeScript `tsc --noEmit` | **CI-enforced** | Phase 0 workflow |
+| `npm run checklist` | Subject coverage checklist | **CI-enforced** | Phase 0 workflow |
+| `npm run audit` | Floor / notes / high-yield / missing files | **CI-enforced** | Prior freeze: 3552/3552 |
+| `npm run validate:topics` | Topic integrity | **CI-enforced** | Phase 0 workflow |
+| `npm run validate:judgments` | Judgment integrity | **CI-enforced** | Phase 0 workflow |
+| `npm test` | Unit tests (`unit`, `phase21-30`, `phase31-32`) | **CI-enforced** | Phase 0 workflow |
+| `npm run build` | Production build | **CI-enforced** | Phase 0 workflow |
 
 ---
 
