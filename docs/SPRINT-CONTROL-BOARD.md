@@ -24,19 +24,33 @@
 | PH3-090 | **COMPLETED** | Mobile UX pass for matrix + note + 44px touch targets + responsive wrapping + 71/71 tests + tsc |
 | PH3-100 | **COMPLETED** | Phase 3 exit audit (`docs/PHASE-3-EXIT-AUDIT.md`, criteria E1–E10 PASS) + 71/71 tests + tsc |
 | PH4-001 | **COMPLETED** | Architecture kickoff doc (`docs/architecture/phase-4-citation-verification-kickoff.md`) |
+| PH4-010 | **COMPLETED** | Extended parser for SCC OnLine, Neutral citations (INSC/HC), SCR & Supp + `tests/citation-parser.test.ts` + 88/88 tests + tsc |
 
 ## Current sprint backlog
 
 | ID | Work | Status | Priority |
 |---|---|---|---|
 | PH4-001 | Phase 4 Architecture kickoff & contract | **COMPLETED** | P0 |
-| PH4-010 | Extended parser for SCC OnLine, Neutral citations, & volume-less formats | **READY** | P0 |
-| PH4-020 | Verification engine matching against canonical manifest & `ALL_JUDGMENTS` | **BACKLOG** | P0 |
+| PH4-010 | Extended parser for SCC OnLine, Neutral citations, & volume-less formats | **COMPLETED** | P0 |
+| PH4-020 | Verification engine matching against canonical manifest & `ALL_JUDGMENTS` | **READY** | P0 |
 | PH4-030 | Document citation extractor (multi-citation scanner for pasted text) | **BACKLOG** | P0 |
 | PH4-040 | Authority network & official portal link generator (e-SCR, SCI, HC) | **BACKLOG** | P1 |
 | PH4-050 | Citation Verifier UI overhaul: dashboard, filtering, & Workbench roundtrip | **BACKLOG** | P1 |
 | PH4-100 | Phase 4 exit audit (evaluation against criteria V1–V10) | **BACKLOG** | P0 |
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
+
+### PH4-010 — COMPLETED (2026-10-01)
+
+| Check | Result |
+|---|---|
+| SCC & SCC Supp formats | **Yes** (Parentheses, brackets, and `1993 Supp (1) SCC 123` formats with volume/page extraction) |
+| SCC OnLine database citations | **Yes** (Supreme Court & High Court benches: `2021 SCC OnLine SC 345`, `2022 SCC OnLine Del 108`) |
+| Indian Neutral Citations | **Yes** (Supreme Court `2023 INSC 123` & High Courts colon/space: `2023:DHC:1234`, `2024:BOM:567`) |
+| AIR & SCR official reports | **Yes** (`AIR 1978 SC 597`, `AIR 2020 Bom 45`, `[1950] SCR 88` with court hint resolution) |
+| Case name prefix extraction | **Yes** (Extracts clean party names preceding citation strings, e.g. `Kesavananda Bharati v. State of Kerala, [1973] 4 SCC 225`) |
+| Anti-hallucination safeguard | **Yes** (Unrecognized inputs flagged `not-verified` with explicit notice: "Never interpret this as 'the case does not exist'") |
+| Citation Verifier UI integration | **Yes** (Updated badge styles, placeholder with neutral citations, sample loaders, and court descriptions) |
+| Automated unit tests & validation | **Yes** (17/17 dedicated unit tests in `tests/citation-parser.test.ts`, 88/88 test suite passing, `tsc --noEmit` clean) |
 
 ### PH4-001 — COMPLETED (2026-10-01)
 
@@ -150,5 +164,5 @@
 
 ## Next READY
 
-**PH4-010** — Extended parser for SCC OnLine, Neutral citations (INSC/HC), & volume-less formats (P0).  
+**PH4-020** — Verification engine matching against canonical manifest & `ALL_JUDGMENTS` (P0).  
 Residual backlog: **PA-005b** (CDN mirror implementation, P2).

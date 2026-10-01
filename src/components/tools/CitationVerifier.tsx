@@ -6,14 +6,15 @@ import { loadAndClearCitationHandoff } from '../../lib/citationHandoff'
 function statusStyle(s: CitationStatus) {
   switch (s) {
     case 'parsed':
-      return 'bg-emerald-50 text-emerald-800 border-emerald-200'
+    case 'verified':
+      return 'bg-emerald-50 text-emerald-800 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800'
     case 'partial':
     case 'user-provided':
-      return 'bg-amber-50 text-amber-900 border-amber-200'
+      return 'bg-amber-50 text-amber-900 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800'
     case 'conflict':
-      return 'bg-orange-50 text-orange-900 border-orange-200'
+      return 'bg-orange-50 text-orange-900 border-orange-200 dark:bg-orange-950/40 dark:text-orange-300 dark:border-orange-800'
     default:
-      return 'bg-slate-100 text-slate-700 border-slate-200'
+      return 'bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700'
   }
 }
 
@@ -35,12 +36,13 @@ export function CitationVerifier() {
     <div className="space-y-5">
       <section className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-7 shadow-sm">
         <div className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-[#8B1E3F]">
-          <ShieldCheck className="size-4" /> Citation Verifier
+          <ShieldCheck className="size-4" /> Citation Verifier (Phase 4)
         </div>
         <h1 className="mt-2 text-2xl sm:text-3xl font-black tracking-tight">Parse &amp; status-label citations</h1>
         <p className="mt-2 text-sm text-slate-600 dark:text-slate-400 max-w-3xl">
-          Paste SCC / AIR-style citations or case names (one per line). This tool performs a structural parse only.
-          It never converts "not found" into "case does not exist".
+          Supports SCC, AIR, SCC OnLine, SCR, and Indian Neutral Citations (INSC, High Courts), as well as case names (one per line).
+          This tool performs a structural parse against standard reporter patterns.
+          It strictly adheres to the rule: <em>never convert "not found" into "case does not exist"</em>.
         </p>
 
         {handoffSource && (
@@ -63,33 +65,55 @@ export function CitationVerifier() {
           value={text}
           onChange={(e) => setText(e.target.value)}
           rows={6}
-          placeholder={'(2020) 5 SCC 1\nAIR 1973 SC 1461\nKesavananda Bharati v. State of Kerala'}
+          placeholder={
+            '(2020) 5 SCC 1\n2023 INSC 123\n2022 SCC OnLine Del 108\nAIR 1978 SC 597\nKesavananda Bharati v. State of Kerala'
+          }
           className="mt-4 w-full rounded-2xl border border-slate-200 dark:border-slate-700 bg-transparent p-3 text-sm font-mono"
         />
         <div className="mt-3 flex flex-wrap gap-2">
           <button
             type="button"
-            className="rounded-xl border border-slate-200 px-3 py-2 text-xs font-bold"
+            className="rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800 transition"
             onClick={() =>
-              setText('(1973) 4 SCC 225\nAIR 1978 SC 597\nManeka Gandhi v. Union of India')
+              setText(
+                '(1973) 4 SCC 225\nAIR 1978 SC 597\n2023 INSC 123\n2022 SCC OnLine Del 108\nManeka Gandhi v. Union of India'
+              )
             }
           >
-            Load sample
+            Load mixed sample
           </button>
-          <button type="button" className="rounded-xl border border-slate-200 px-3 py-2 text-xs font-bold" onClick={() => setText('')}>
+          <button
+            type="button"
+            className="rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800 transition"
+            onClick={() =>
+              setText(
+                '2023 INSC 123\n2024:DHC:1234\n2024:BOM:567\nAssociation for Democratic Reforms v. Union of India, 2024 INSC 113'
+              )
+            }
+          >
+            Load Neutral Citations
+          </button>
+          <button
+            type="button"
+            className="rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800 transition"
+            onClick={() => setText('')}
+          >
             Clear
           </button>
         </div>
       </section>
 
       {results.length === 0 ? (
-        <div className="rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500">
+        <div className="rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 p-8 text-center text-sm text-slate-500">
           Empty state — paste citations to see parse status.
         </div>
       ) : (
         <div className="space-y-3">
           {results.map((r, i) => (
-            <article key={i} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4">
+            <article
+              key={i}
+              className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4"
+            >
               <div className="flex flex-wrap items-start justify-between gap-2">
                 <div className="font-mono text-sm font-semibold text-slate-900 dark:text-white">{r.raw}</div>
                 <span className={`text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full border ${statusStyle(r.status)}`}>
@@ -97,16 +121,54 @@ export function CitationVerifier() {
                 </span>
               </div>
               <dl className="mt-3 grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
-                <div><dt className="text-slate-500">Style</dt><dd className="font-bold">{r.style}</dd></div>
-                {r.caseName && <div><dt className="text-slate-500">Name</dt><dd className="font-bold">{r.caseName}</dd></div>}
-                {r.year && <div><dt className="text-slate-500">Year</dt><dd className="font-bold">{r.year}</dd></div>}
-                {r.reporter && <div><dt className="text-slate-500">Reporter</dt><dd className="font-bold">{r.reporter} {r.volume} {r.page}</dd></div>}
-                {r.courtHint && <div className="col-span-2"><dt className="text-slate-500">Court hint</dt><dd className="font-bold">{r.courtHint}</dd></div>}
+                <div>
+                  <dt className="text-slate-500">Style</dt>
+                  <dd className="font-bold uppercase tracking-wider text-[11px]">{r.style}</dd>
+                </div>
+                {r.caseName && (
+                  <div>
+                    <dt className="text-slate-500">Name</dt>
+                    <dd className="font-bold truncate" title={r.caseName}>{r.caseName}</dd>
+                  </div>
+                )}
+                {r.year && (
+                  <div>
+                    <dt className="text-slate-500">Year</dt>
+                    <dd className="font-bold">{r.year}</dd>
+                  </div>
+                )}
+                {r.neutralIndex ? (
+                  <div>
+                    <dt className="text-slate-500">Neutral Identifier</dt>
+                    <dd className="font-bold text-blue-700 dark:text-blue-300">{r.neutralCourt} {r.neutralIndex}</dd>
+                  </div>
+                ) : (
+                  r.reporter && (
+                    <div>
+                      <dt className="text-slate-500">Reporter</dt>
+                      <dd className="font-bold">
+                        {r.reporter} {r.volume ? `Vol. ${r.volume}` : ''} {r.page ? `p. ${r.page}` : ''}
+                      </dd>
+                    </div>
+                  )
+                )}
+                {r.courtHint && (
+                  <div className="col-span-2">
+                    <dt className="text-slate-500">Court</dt>
+                    <dd className="font-bold">{r.courtHint}</dd>
+                  </div>
+                )}
               </dl>
               <ul className="mt-3 space-y-1 text-xs text-slate-600 dark:text-slate-400">
                 {r.notes.map((n, j) => (
                   <li key={j} className="flex gap-2">
-                    {r.status === 'parsed' ? <CheckCircle2 className="size-3.5 shrink-0 text-emerald-600 mt-0.5" /> : r.status === 'not-verified' ? <ShieldAlert className="size-3.5 shrink-0 text-slate-500 mt-0.5" /> : <HelpCircle className="size-3.5 shrink-0 text-amber-600 mt-0.5" />}
+                    {r.status === 'parsed' || r.status === 'verified' ? (
+                      <CheckCircle2 className="size-3.5 shrink-0 text-emerald-600 mt-0.5" />
+                    ) : r.status === 'not-verified' ? (
+                      <ShieldAlert className="size-3.5 shrink-0 text-slate-500 mt-0.5" />
+                    ) : (
+                      <HelpCircle className="size-3.5 shrink-0 text-amber-600 mt-0.5" />
+                    )}
                     <span>{n}</span>
                   </li>
                 ))}
