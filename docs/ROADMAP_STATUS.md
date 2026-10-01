@@ -19,7 +19,8 @@ A roadmap item is complete only when its required code/content/tests/verificatio
 **Phase 5 — CLOSED** (Judgment Analyzer exit audit, 2026-10-01)  
 **Phase 6 — CLOSED** (Judgment Compare exit audit, 2026-10-01)  
 **Phase 7 — CLOSED** (Case Preparation Workbench exit audit, 2026-10-01)  
-**Phase 8 — CLOSED** (Legal Draft Studio 2.0 exit audit, 2026-10-01)
+**Phase 8 — CLOSED** (Legal Draft Studio 2.0 exit audit, 2026-10-01)  
+**Phase 9 — CLOSED** (Filing and Court Checklist System exit audit, 2026-10-01)
 
 ```
 Phase 0 stabilization
@@ -40,7 +41,9 @@ Phase 7 Case Preparation  ← CLOSED (Case Preparation Workbench implementation 
       ↓
 Phase 8 Legal Draft Studio  ← CLOSED (Legal Draft Studio 2.0 implementation + exit audit)
       ↓
-Phase 9+ Court / Practice / AI / Scale
+Phase 9 Filing & Court Checklists  ← CLOSED (Filing and Court Checklist System implementation + exit audit)
+      ↓
+Phase 10+ Legal Calculators / Court / Practice / AI / Scale
 ```
 
 ## Phase 2 (closed) — summary
@@ -116,3 +119,20 @@ Implementation is complete in `codepackr-law` via PR #76.
 - Next: Phase 9 — Filing and Court Checklist System.
 
 **Phase 8 status:** CLOSED.
+
+
+## Phase 9 — Filing and Court Checklist System (CLOSED)
+
+Implementation is complete in `codepackr-law` via PR #77.
+
+- Central filing baselines cover civil suit, criminal complaint, bail, appeal, revision, writ, arbitration, consumer complaint, MACT claim, family petition, execution petition, cheque dishonour complaint and RTI appeal.
+- Checklist records expose requirement, rationale, source, mandatory/conditional state, layer and user status.
+- Workflow explicitly separates central baseline from court-specific additions, state-specific additions and user verification.
+- Checklist progress, reset and local court/state addition notes persist in browser-local storage.
+- Official e-filing/source links and last-reviewed dates are displayed.
+- Exit audit: `docs/PHASE-9-EXIT-AUDIT.md`
+- Validation: CI #334 — TypeScript PASS, 136/136 unit tests PASS, production build PASS.
+- Blocker: None.
+- Next: Phase 10 — Legal Calculators.
+
+**Phase 9 status:** CLOSED.
