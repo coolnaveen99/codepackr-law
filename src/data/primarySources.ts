@@ -26,7 +26,7 @@ export const PRIMARY_SOURCES: PrimarySource[] = [
     tierLabel: 'Official statute database',
     category: 'statute',
     description: 'Search Acts, sections, rules, regulations, notifications, orders and ordinances.',
-    url: 'https://www.indiacode.nic.in/',
+    url: 'https://www.indiacode.gov.in/',
   },
   {
     id: 'sci',
