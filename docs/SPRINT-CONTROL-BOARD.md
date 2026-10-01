@@ -3,7 +3,7 @@
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
 **Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** · Phase 4 implementation started  
-**Updated:** 2026-10-01 (PH4-040 COMPLETED — authority network & official portal link generator)
+**Updated:** 2026-10-01 (PH4-040 COMPLETED — independently validated)
 
 ## Verified completed
 
@@ -31,7 +31,7 @@
 | PH4-100 | Phase 4 exit audit (evaluation against criteria V1–V10) | **BACKLOG** | P0 |
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
 
-### PH4-040 — COMPLETED (2026-10-01)
+### PH4-040 — COMPLETED (2026-10-01)\n\n**Validation evidence:** PR #68 branch CI run **#297** passed TypeScript validation, **113/113 unit tests**, and production build. Official e-SCR, SCR, SCI, and eCourts destinations were checked against current official portals. A prior CI run (#293) caught a type-export regression; the fix was validated by run #295 (lint/build pass) and final run #297 (full gate pass).
 
 | Check | Result |
 |-------|--------|
@@ -42,8 +42,8 @@
 | False-positive SC detection fixed (no bare `sc` trap) | **Yes** (`isSupremeCourtHint`) |
 | URL deduplication | **Yes** |
 | Integration with verification engine | **Yes** (`buildSources` on all status paths) |
-| Unit tests | PH4-040 suite in `tests/citation-verification.test.ts` (6 cases) — **18/18 pass** |
-| Privacy | 100% client-side link generation; no network calls |
+| Unit tests | `npm run test:run` in CI run **#297** — **113/113 pass**, 0 fail |
+| TypeScript + build | CI run **#297** — `npm run lint` PASS; `npm run build` PASS |\n| Privacy | 100% client-side link generation; no network calls |
 
 ## Next READY
 
