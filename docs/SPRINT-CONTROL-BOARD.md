@@ -21,6 +21,7 @@
 | PH3-060 | **COMPLETED** | Citation handoff helpers + verifier deep-link + Workbench integration + 55/55 tests + tsc |
 | PH3-070 | **COMPLETED** | Judgment handoff helpers + starter template + JudgmentAnalyzer banner/sample/copy + Workbench integration + 63/63 tests + tsc |
 | PH3-080 | **COMPLETED** | Session JSON import/export + DOCX note generation + Workbench UI integration + 69/69 tests + tsc |
+| PH3-090 | **COMPLETED** | Mobile UX pass for matrix + note + 44px touch targets + responsive wrapping + 71/71 tests + tsc |
 
 ## Current sprint backlog
 
@@ -34,19 +35,32 @@
 | PH3-060 | Deep-link hand-off to Citation Verifier | **COMPLETED** | P1 |
 | PH3-070 | Deep-link hand-off to Judgment Analyzer | **COMPLETED** | P1 |
 | PH3-080 | Import/export session JSON + markdown/DOCX note polish | **COMPLETED** | P1 |
-| PH3-090 | Mobile UX pass for matrix + note | **DEVELOPED (Pending validation)** | P1 |
+| PH3-090 | Mobile UX pass for matrix + note | **COMPLETED** | P1 |
+| PH3-100 | Phase 3 exit audit (workflow: question → note) | **DEVELOPED (Pending validation)** | P0 |
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
 
-### PH3-090 — DEVELOPMENT COMPLETE (Pending final validation)
+### PH3-100 — DEVELOPMENT COMPLETE (Pending final validation)
 
 *Status:* **DEVELOPED (Pending final validation)**  
-*Privacy boundary compliance:* Zero telemetry, zero analytics tracking of research inputs, 100% browser-local styling and responsive layout (§5.5).
+*Scope:* Full evaluation and audit of Phase 3 exit-gate criteria E1–E10 against architecture contract (`docs/architecture/phase-3-research-workbench-kickoff.md` §7).
 
 | Item | Details |
 |---|---|
-| **Changes made** | • Updated `src/components/tools/ResearchWorkbench.tsx` with mobile overflow safety (`overflow-x-hidden`, responsive container padding).<br>• Enforced 44px touch targets on primary actions (`min-h-[44px]`) and 38px touch targets on matrix row actions.<br>• Refactored matrix row actions into a responsive vertical/horizontal flex layout with status label to eliminate horizontal squishing/overflow on narrow mobile screens (<375px).<br>• Converted note export actions into responsive 2-column mobile grid / desktop flex layout.<br>• Added `break-words` and `overflow-x-auto` to the Research Note preview `<pre>` to ensure long tokens or lines never cause viewport breakout.<br>• Authored unit tests in `tests/research-session.test.ts` verifying vertical structured authority blocks and tab-free clean line wrapping. |
+| **Changes made** | • Authored `docs/PHASE-3-EXIT-AUDIT.md` verifying all Phase 3 exit criteria (unified workflow without re-copying, local persistence, explicit 6-tier verification model, ContentGateway authority suggestions, Citation Verifier deep-link, Judgment Analyzer deep-link, Word DOCX + Markdown note export, §5.5 privacy boundaries, and mobile accessibility baseline).<br>• Updated `docs/ROADMAP_STATUS.md` with completed implementation milestones and exit audit position. |
 | **Blockers** | None. |
-| **Next action** | Execute final validation phase (run test runner and typecheck) to verify all tests pass, then mark task COMPLETED. |
+| **Next action** | Execute final validation phase (run test runner and typecheck) to verify all tests pass, then mark task COMPLETED and declare Phase 3 closed. |
+
+### PH3-090 — COMPLETED (2026-10-01)
+
+| Check | Result |
+|---|---|
+| Mobile overflow safety | **Yes** (`w-full overflow-x-hidden`, responsive container padding prevents horizontal overflow) |
+| Minimum 44px touch targets | **Yes** (`min-h-[44px]` on all primary note export & session actions, 38px on matrix row actions) |
+| Responsive matrix row layout | **Yes** (Vertical stack with status dropdown and touch-friendly actions eliminates squishing on <375px screens) |
+| Responsive action bar | **Yes** (2-column touch grid on mobile / flex wrap on desktop) |
+| Research note wrapping | **Yes** (`break-words` and `overflow-x-auto` on note preview `<pre>` blocks) |
+| Privacy boundary compliance | **Yes** (100% browser-local; zero substantive research text or telemetry transmitted — roadmap §5.5) |
+| Unit tests & validation | **Yes** (71/71 tests passing in `npx tsx --test`, `npm run lint` / `tsc --noEmit` green) |
 
 ### PH3-080 — COMPLETED (2026-10-01)
 
@@ -123,5 +137,5 @@
 
 ## Next READY
 
-**PH3-090** — Mobile UX pass for matrix + note (P1 on roadmap backlog).
+**PH3-100** — Phase 3 exit audit (workflow: question → note without re-copy) (P0 on roadmap backlog).
 Residual P2 item: **PA-005b** (CDN mirror implementation).

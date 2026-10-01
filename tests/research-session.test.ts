@@ -223,8 +223,9 @@ describe('PH3-090 Mobile UX pass for matrix + note', () => {
     const note = researchNoteFromSession(session)
     // Verify vertical bullet blocks rather than markdown pipe tables (| col | col |) that cause mobile horizontal overflow
     assert.ok(!note.includes('| --- |'))
-    assert.match(note, /### Kesavananda Bharati v\. State of Kerala \(\(1973\) 4 SCC 225\)/)
-    assert.match(note, /- \*\*Holding \/ ratio:\*\*/)
+    assert.match(note, /### 1\. Kesavananda Bharati v\. State of Kerala/)
+    assert.match(note, /- \*\*Citation:\*\* \(1973\) 4 SCC 225/)
+    assert.match(note, /- \*\*Holding \/ note:\*\*/)
     assert.match(note, /- \*\*Treatment:\*\* followed/)
     assert.match(note, /- \*\*Verification status:\*\* verified/)
   })

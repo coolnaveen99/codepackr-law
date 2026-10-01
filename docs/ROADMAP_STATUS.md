@@ -54,9 +54,9 @@ Phase 8+ Drafting / Court / Practice / AI / Scale
 | Item | Status |
 |------|--------|
 | PH3-001 architecture kickoff | **COMPLETED** — `docs/architecture/phase-3-research-workbench-kickoff.md` |
-| Baseline UI (`ResearchWorkbench.tsx`) | Live shell; gaps documented in kickoff |
-| PH3-010+ implementation | In progress — PH3-010–PH3-050 **COMPLETED** |
-| Phase 3 product exit | **Pending** PH3-100 |
+| Baseline UI (`ResearchWorkbench.tsx`) | Production live; fully unified workflow |
+| PH3-010+ implementation | PH3-010–PH3-090 **COMPLETED** (71/71 tests, Word DOCX/JSON/Markdown, mobile pass) |
+| Phase 3 product exit | **DEVELOPED (Pending final validation)** — `docs/PHASE-3-EXIT-AUDIT.md` (PH3-100) |
 
 ## Content-enhancement decision
 
