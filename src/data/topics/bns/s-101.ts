@@ -1,280 +1,428 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
 const content: TopicContent = {
-  "study": "Introduction and meaning\nMurder is culpable homicide with one of the four aggravating clauses (old 300), unless an exception applies. Thirdly is Virsa Singh: the intended bodily injury is sufficient in the ordinary course of nature to cause death.\nIn student language: BNS s. 101 is the rule on “Murder”. The section provides that except in the cases hereinafter excepted, culpable homicide is murder,–. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 101 exists so that “Murder” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n101. Except in the cases hereinafter excepted, culpable homicide is murder,–\n\n(a) if the act by which the death is caused is done with the intention of causing death; or\n\n(b) if the act by which the death is caused is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused; or\n\n(c) if the act by which the death is caused is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death; or\n\n(d) if the person committing the act by which the death is caused, knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury as aforesaid\n\nEssential ingredients\n1. Except in the cases hereinafter excepted, culpable homicide is murder,–\n2. (a) if the act by which the death is caused is done with the intention of causing death; or\n3. (b) if the act by which the death is caused is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused; or\n4. (c) if the act by which the death is caused is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death; or\n5. (d) if the person committing the act by which the death is caused, knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury as aforesaid\n\nStatutory illustrations\nIllustration (a). A shoots Z with the intention of killing him. Z dies in consequence. A commits murder\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 101 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (b). A, knowing that Z is labouring under such a disease that a blow is likely to cause his death, strikes him with the intention of causing bodily injury. Z dies in consequence of the blow. A is guilty of murder, although the blow might not have been sufficient in the ordinary course of nature to cause the death of a person in a sound state of health. But if A, not knowing that Z is labouring under any disease, gives him such a blow as would not in the ordinary course of nature kill a person in a sound state of health, here A, although he may intend to cause bodily injury, is not guilty of murder, if he did not intend to cause death, or such bodily injury as in the ordinary course of nature would cause death\n\nExam use: quote illustration (b), then write which ingredient of BNS s. 101 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (c). A intentionally gives Z a sword-cut or club-wound sufficient to cause the death of a man in the ordinary course of nature. Z dies in consequence. Here A is guilty of murder, although he may not have intended to cause Z’s death\n\nExam use: quote illustration (c), then write which ingredient of BNS s. 101 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (d). A without any excuse fires a loaded cannon into a crowd of persons and kills one of them. A is guilty of murder, although he may not have had a premeditated design to kill any particular individual\n\nExam use: quote illustration (d), then write which ingredient of BNS s. 101 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (e). A, under the influence of passion excited by a provocation given by Z, intentionally kills Y, Z’s child. This is murder, in as much as the provocation was not given by the child, and the death of the child was not caused by accident or misfortune in doing an act caused by the provocation\n\nExam use: quote illustration (e), then write which ingredient of BNS s. 101 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (f). Y gives grave and sudden provocation to A. A, on this provocation, fires a pistol at Y, neither intending nor knowing himself to be likely to kill Z, who is near him, but out of sight. A kills Z. Here A has not committed murder, but merely culpable homicide\n\nExam use: quote illustration (f), then write which ingredient of BNS s. 101 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (g). A is lawfully arrested by Z, a bailiff. A is excited to sudden and violent passion by the arrest, and kills Z. This is murder, in as much as the provocation was given by a thing done by a public servant in the exercise of his powers\n\nExam use: quote illustration (g), then write which ingredient of BNS s. 101 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (h). A appears as a witness before Z, a Magistrate. Z says that he does not believe a word of A’s deposition, and that A has perjured himself. A is moved to sudden passion by these words, and kills Z. This is murder\n\nExam use: quote illustration (h), then write which ingredient of BNS s. 101 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (i). A attempts to pull Z’s nose. Z, in the exercise of the right of private defence, lays hold of A to prevent him from doing so. A is moved to sudden and violent passion in consequence, and kills Z. This is murder, in as much as the provocation was giving by a thing done in the exercise of the right of private defence\n\nExam use: quote illustration (i), then write which ingredient of BNS s. 101 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (j). Z strikes B. B is by this provocation excited to violent rage. A, a bystander, intending to take advantage of B’s rage, and to cause him to kill Z, puts a knife into B’s hand for that purpose. B kills Z with the knife. Here B may have committed only culpable homicide, but A is guilty of murder\n\nExam use: quote illustration (j), then write which ingredient of BNS s. 101 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (k). Z attempts to horsewhip A, not in such a manner as to cause grievous hurt to A. A draws out a pistol. Z persists in the assault. A believing in good faith that he can by no other means prevent himself from being horsewhipped, shoots Z dead. A has not committed murder, but only culpable homicide\n\nExam use: quote illustration (k), then write which ingredient of BNS s. 101 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (l). A, by instigation, voluntarily causes Z, a child to commit suicide. Here, on account of Z’s youth, he was incapable of giving consent to his own death; A has therefore abetted murder\n\nExam use: quote illustration (l), then write which ingredient of BNS s. 101 it proves. Copying the illustration without that mapping sentence does not score.\n\nExplanations\nExplanation.—Whether the provocation was grave and sudden enough to prevent the offence from amounting to murder is a question of fact\n\nExplanation.—It is immaterial in such cases which party offers the provocation or commits the first assault\n\nExceptions, limitations and provisos\nException 1.—Culpable homicide is not murder if the offender, whilst deprived of the power of self-control by grave and sudden provocation, causes the death of the person who gave the provocation or causes the death of any other person by mistake or accident:\n\n(a) sought or voluntarily provoked by the offender as an excuse for killing or doing harm to any person;\n\n(b) given by anything done in obedience to the law, or by a public servant in the lawful exercise of the powers of such public servant;\n\n(c) given by anything done in the lawful exercise of the right of private defence\n\nException 2.—Culpable homicide is not murder if the offender in the exercise in good faith of the right of private defence of person or property, exceeds the power given to him by law and causes the death of the person against whom he is exercising such right of defence without premeditation, and without any intention of doing more harm than is necessary for the purpose of such defence\n\nException 3.—Culpable homicide is not murder if the offender, being a public servant or aiding a public servant acting for the advancement of public justice, exceeds the powers given to him by law, and causes death by doing an act which he, in good faith, believes to be lawful and necessary for the due discharge of his duty as such public servant and without ill-will towards the person whose death is caused\n\nException 4.—Culpable homicide is not murder if it is committed without premeditation in a sudden fight in the heat of passion upon a sudden quarrel and without the offender’s having taken undue advantage or acted in a cruel or unusual manner\n\nException 5.—Culpable homicide is not murder when the person whose death is caused, being above the age of eighteen years, suffers death or takes the risk of death with his own consent\n\nProvided that the provocation is not,",
-  "glance": "BNS s. 101 — Murder.",
-  "sections": [
+  glance:
+    'Section 101 BNS defines the substantive offence of Murder, setting the boundary between culpable homicide and capital liability. It articulates the four aggravating statutory limbs (intention to kill, subjective knowledge of fatal infirmity, intended injury objectively sufficient in the ordinary course of nature to cause death under the Virsa Singh doctrine, and imminently dangerous acts without excuse) and deconstructs the five statutory Exceptions (grave and sudden provocation, exceeding private defence, public servant acting in good faith, sudden fight, and adult consent) that reduce murder to culpable homicide not amounting to murder under Section 105 BNS.',
+
+  study: `I. LEGISLATIVE FRAMEWORK & THE STATUTORY SCHEME
+Section 101 of the Bharatiya Nyaya Sanhita, 2023 (BNS) is the defining substantive homicide provision of Indian criminal law, directly replacing Section 300 of the Indian Penal Code, 1860.
+The statutory design is formulated as a negative-positive rule: "Except in the cases hereinafter excepted, culpable homicide is murder..."
+This statutory syntax establishes three axiomatic principles:
+1. Culpable homicide under Section 100 BNS is the genus; murder under Section 101 BNS is the aggravated species (Regina v. Govinda (1876) ILR 1 Bom 342; State of A.P. v. Rayavarapu Punnayya (1976) 4 SCC 382).
+2. The prosecution must first establish that the homicide is culpable under Section 100.
+3. The homicide ascends to murder only if it satisfies one of the four aggravating limbs of Section 101 AND escapes all five statutory Exceptions. If an Exception applies, the offence is reduced to Culpable Homicide Not Amounting to Murder, punishable under Section 105 BNS.
+
+II. THE FOUR AGGRAVATING LIMBS OF SECTION 101
+1. Clause (a) — Intention of Causing Death:
+   - Act done with the conscious, deliberate subjective intention to extinguish human life.
+   - Corresponds directly to Section 100 Limb (a).
+2. Clause (b) — Intended Injury Coupled with Subjective Knowledge of Special Infirmity:
+   - "If the act by which the death is caused is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused."
+   - Focuses on the subjective knowledge of the offender regarding the peculiar vulnerability of the victim (e.g. an enlarged spleen, a diseased heart, or haemophilia).
+   - If the offender strikes an infirm person intending harm, knowing that the blow is likely to kill that particular person, it is murder. If the offender is ignorant of the infirmity, liability remains under Section 100 Explanation 1 or hurt/grievous hurt.
+3. Clause (c) — Intended Injury Sufficient in the Ordinary Course of Nature to Cause Death:
+   - "If the act by which the death is caused is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death."
+   - The Locus Classicus: Vivian Bose, J. in Virsa Singh v. State of Punjab AIR 1958 SC 465 formulated the definitive four-step test:
+     (i) The prosecution must establish objectively that a bodily injury is present;
+     (ii) The nature and extent of the injury must be proved;
+     (iii) It must be proved that there was an intention to inflict that particular bodily injury, and that it was not accidental or unintentional;
+     (iv) It must be established by medical evidence that the injury of that nature is sufficient in the ordinary course of nature to cause death.
+   - Crucially, it is not necessary to prove that the accused intended to cause death; it is sufficient to prove that the accused intended to inflict the particular wound, and that the wound was objectively fatal in the ordinary course of nature.
+4. Clause (d) — Imminently Dangerous Act Committed Without Excuse:
+   - "If the person committing the act by which the death is caused, knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury as aforesaid."
+   - Represents extreme depravity and callous indifference to human life (depraved-heart murder), typically involving indiscriminate danger (e.g. firing into a crowded marketplace, opening floodgates upon a village, or releasing lethal toxins).
+
+III. DECONSTRUCTION OF THE FIVE STATUTORY EXCEPTIONS
+If an act falls within Section 101, it is murder unless the defence brings it within one of the five codified Exceptions, reducing it to Section 105 BNS:
+1. Exception 1 — Grave and Sudden Provocation:
+   - Culpable homicide is not murder if the offender, whilst deprived of the power of self-control by grave and sudden provocation, causes the death of the person who gave the provocation (or another by mistake/accident).
+   - The K.M. Nanavati v. State of Maharashtra AIR 1962 SC 605 principles:
+     (a) The test is whether a reasonable man belonging to the same class of society would be so provoked as to lose his self-control;
+     (b) Words and gestures may cause grave and sudden provocation;
+     (c) The provocation must be unexpected and sudden;
+     (d) There must be no sufficient cooling time between the provocation and the fatal act.
+   - Three Mandatory Provisos: Provocation must not be: (i) sought or voluntarily provoked as an excuse; (ii) given by anything done in obedience to law or by a public servant; (iii) given by anything done in the lawful exercise of private defence.
+2. Exception 2 — Exceeding Private Defence in Good Faith:
+   - The offender exercises in good faith the right of private defence of person or property, but exceeds the power given to him by law and causes death without premeditation and without intention of doing more harm than necessary.
+3. Exception 3 — Public Servant Exceeding Lawful Powers in Good Faith:
+   - The offender is a public servant (or aiding a public servant) acting for the advancement of public justice, exceeds lawful powers, and causes death believing in good faith that it was lawful and necessary, without ill-will.
+4. Exception 4 — Sudden Fight upon a Sudden Quarrel:
+   - Committed without premeditation in a sudden fight in the heat of passion upon a sudden quarrel, without the offender having taken undue advantage or acted in a cruel or unusual manner (Ghapoo Yadav v. State of M.P. (2003) 3 SCC 528; Surinder Kumar v. UT of Chandigarh (1989) 2 SCC 217).
+   - "Sudden fight" implies mutual blows or combat; it does not matter who offered the provocation or struck the first blow.
+5. Exception 5 — Consent of Adult Victim:
+   - The deceased, being above the age of eighteen years, suffers death or takes the risk of death with his own consent (e.g. mutual suicide pacts; voluntary euthanasia boundary).
+
+IV. MULTIPLE ASSAILANTS, JOINT LIABILITY & PROXIMATE CAUSATION
+1. Common Intention under Section 3(5) BNS: Where several persons attack a victim, each is liable for murder if they shared the common intention to kill or inflict injuries sufficient in the ordinary course of nature to cause death.
+2. The Fatal vs Non-Fatal Blow Rule: In Pandurang v. State of Hyderabad AIR 1955 SC 216, the Supreme Court held that where multiple accused inflict blows during a sudden scuffle without a prior meeting of minds, the assailant who struck the fatal blow is liable under Section 101/103, while co-assailants who struck non-vital blows are liable only for individual hurt or grievous hurt under Section 115/117 BNS.
+
+V. FORENSIC PATHOLOGY, DIGITAL EVIDENCE & SECTION 531 BNSS TRANSITION
+1. Forensic Proof: Autopsy evidence is critical to Clause (c). The medical officer must be questioned on whether the injury was "sufficient in the ordinary course of nature to cause death" or merely "likely to cause death".
+2. Electronic Records (BSA Section 63): Video surveillance, dashcam recordings, and mobile phone footage establishing the sequence of events or proving a sudden quarrel must satisfy Section 63(4) BSA certification.
+3. Transitional Rules under Section 531(2)(a) BNSS: Murders committed on or before 30 June 2024 are tried under IPC Sections 300 and 302. Section 101 BNS applies strictly to offences committed on or after 1 July 2024.`,
+
+  sections: [
     {
-      "id": "bns-101-rule",
-      "title": "The legal rule",
-      "order": 1,
-      "content": [
-        "101. Except in the cases hereinafter excepted, culpable homicide is murder,–",
-        "(a) if the act by which the death is caused is done with the intention of causing death; or",
-        "(b) if the act by which the death is caused is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused; or",
-        "(c) if the act by which the death is caused is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death; or",
-        "(d) if the person committing the act by which the death is caused, knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury as aforesaid"
-      ]
+      id: 'bns-101-module-1',
+      title: 'Legislative Architecture & The Four Aggravating Limbs of Section 101',
+      order: 1,
+      content: [
+        'Section 101 BNS replaces Section 300 IPC 1860, codifying the definition of Murder as an aggravated species of culpable homicide.',
+        'The statutory architecture is structured around four distinct mental limbs: clause (a) intention to kill; clause (b) intended injury with subjective knowledge of special infirmity; clause (c) intended injury objectively sufficient in the ordinary course of nature to cause death; and clause (d) imminently dangerous act without lawful excuse.',
+        'Under Regina v. Govinda (1876) and Rayavarapu Punnayya (1976), the court must first establish culpable homicide under Section 100 before testing whether any of the four limbs of Section 101 are attracted.',
+        'If the act falls within Section 101, it is murder unless the defence establishes that it falls within one of the five statutory Exceptions in Section 101.',
+      ],
     },
     {
-      "id": "bns-101-ing",
-      "title": "Essential ingredients",
-      "order": 2,
-      "content": [
-        "Except in the cases hereinafter excepted, culpable homicide is murder,–",
-        "(a) if the act by which the death is caused is done with the intention of causing death; or",
-        "(b) if the act by which the death is caused is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused; or",
-        "(c) if the act by which the death is caused is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death; or",
-        "(d) if the person committing the act by which the death is caused, knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury as aforesaid"
-      ]
+      id: 'bns-101-module-2',
+      title: 'The Virsa Singh Doctrinal Test: Objective Sufficiency under Clause (c)',
+      order: 2,
+      content: [
+        'Clause (c) of Section 101 represents the most frequently invoked limb of murder in trial practice.',
+        'In Virsa Singh v. State of Punjab AIR 1958 SC 465, Vivian Bose, J. laid down the classic four-point test: (i) proof of bodily injury; (ii) proof of its nature and extent; (iii) proof that the injury was intentionally inflicted and not accidental; (iv) proof by medical evidence that the injury was objectively sufficient in the ordinary course of nature to cause death.',
+        'It is not necessary for the prosecution to prove that the accused intended to cause death; proving an intention to cause the specific bodily injury that is objectively fatal suffices.',
+        'The subjective intention is directed to the physical wound; the sufficiency of that wound to cause death is an objective medical fact.',
+      ],
     },
     {
-      "id": "bns-101-ill",
-      "title": "Statutory illustrations",
-      "order": 4,
-      "content": [
-        "(a) A shoots Z with the intention of killing him. Z dies in consequence. A commits murder",
-        "(b) A, knowing that Z is labouring under such a disease that a blow is likely to cause his death, strikes him with the intention of causing bodily injury. Z dies in consequence of the blow. A is guilty of murder, although the blow might not have been sufficient in the ordinary course of nature to cause the death of a person in a sound state of health. But if A, not knowing that Z is labouring under any disease, gives him such a blow as would not in the ordinary course of nature kill a person in a sound state of health, here A, although he may intend to cause bodily injury, is not guilty of murder, if he did not intend to cause death, or such bodily injury as in the ordinary course of nature would cause death",
-        "(c) A intentionally gives Z a sword-cut or club-wound sufficient to cause the death of a man in the ordinary course of nature. Z dies in consequence. Here A is guilty of murder, although he may not have intended to cause Z’s death",
-        "(d) A without any excuse fires a loaded cannon into a crowd of persons and kills one of them. A is guilty of murder, although he may not have had a premeditated design to kill any particular individual",
-        "(a) A, under the influence of passion excited by a provocation given by Z, intentionally kills Y, Z’s child. This is murder, in as much as the provocation was not given by the child, and the death of the child was not caused by accident or misfortune in doing an act caused by the provocation",
-        "(b) Y gives grave and sudden provocation to A. A, on this provocation, fires a pistol at Y, neither intending nor knowing himself to be likely to kill Z, who is near him, but out of sight. A kills Z. Here A has not committed murder, but merely culpable homicide",
-        "(c) A is lawfully arrested by Z, a bailiff. A is excited to sudden and violent passion by the arrest, and kills Z. This is murder, in as much as the provocation was given by a thing done by a public servant in the exercise of his powers",
-        "(d) A appears as a witness before Z, a Magistrate. Z says that he does not believe a word of A’s deposition, and that A has perjured himself. A is moved to sudden passion by these words, and kills Z. This is murder",
-        "(e) A attempts to pull Z’s nose. Z, in the exercise of the right of private defence, lays hold of A to prevent him from doing so. A is moved to sudden and violent passion in consequence, and kills Z. This is murder, in as much as the provocation was giving by a thing done in the exercise of the right of private defence",
-        "(f) Z strikes B. B is by this provocation excited to violent rage. A, a bystander, intending to take advantage of B’s rage, and to cause him to kill Z, puts a knife into B’s hand for that purpose. B kills Z with the knife. Here B may have committed only culpable homicide, but A is guilty of murder",
-        "Z attempts to horsewhip A, not in such a manner as to cause grievous hurt to A. A draws out a pistol. Z persists in the assault. A believing in good faith that he can by no other means prevent himself from being horsewhipped, shoots Z dead. A has not committed murder, but only culpable homicide",
-        "A, by instigation, voluntarily causes Z, a child to commit suicide. Here, on account of Z’s youth, he was incapable of giving consent to his own death; A has therefore abetted murder"
-      ]
+      id: 'bns-101-module-3',
+      title: 'Deconstruction of the Five Statutory Exceptions',
+      order: 3,
+      content: [
+        'Exception 1 (Grave and Sudden Provocation): Governed by the K.M. Nanavati (1962) reasonable man test; cooling time is fatal to the defence; subject to three mandatory negative provisos.',
+        'Exception 2 (Exceeding Private Defence): Requires good faith, absence of premeditation, and absence of intention to cause more harm than necessary in exercising self-defence.',
+        'Exception 3 (Public Servant Exceeding Powers): Protects public servants acting in good faith for public justice without ill-will.',
+        'Exception 4 (Sudden Fight): Requires four cumulative conditions: sudden fight, absence of premeditation, heat of passion upon a sudden quarrel, and that the offender did not take undue advantage or act in a cruel or unusual manner (Ghapoo Yadav (2003)).',
+        'Exception 5 (Adult Consent): Applies where the deceased was above eighteen years and voluntarily suffered death or consented to the fatal risk.',
+      ],
     },
     {
-      "id": "bns-101-expl",
-      "title": "Explanations",
-      "order": 5,
-      "content": [
-        "Explanation.—Whether the provocation was grave and sudden enough to prevent the offence from amounting to murder is a question of fact",
-        "Explanation.—It is immaterial in such cases which party offers the provocation or commits the first assault"
-      ]
+      id: 'bns-101-module-4',
+      title: 'Multiple Assailants, Joint Liability & Causation',
+      order: 4,
+      content: [
+        'Where multiple assailants participate, Section 3(5) BNS (common intention) or Section 190 BNS (unlawful assembly) is required to hold non-striking co-accused liable for murder.',
+        'Under Pandurang v. State of Hyderabad AIR 1955 SC 216, in a sudden scuffle without prior concert, the person inflicting the fatal blow is liable under Section 101/103, while others who inflicted non-vital injuries are liable for individual hurt or grievous hurt.',
+        'Causation must be proximate: an independent supervening act breaks the chain of causation, while mere medical treatability does not sever responsibility under Section 100 Explanation 2.',
+      ],
     },
     {
-      "id": "bns-101-exc",
-      "title": "Exceptions and provisos",
-      "order": 6,
-      "content": [
-        "Exception 1.—Culpable homicide is not murder if the offender, whilst deprived of the power of self-control by grave and sudden provocation, causes the death of the person who gave the provocation or causes the death of any other person by mistake or accident:",
-        "(a) sought or voluntarily provoked by the offender as an excuse for killing or doing harm to any person;",
-        "(b) given by anything done in obedience to the law, or by a public servant in the lawful exercise of the powers of such public servant;",
-        "(c) given by anything done in the lawful exercise of the right of private defence",
-        "Exception 2.—Culpable homicide is not murder if the offender in the exercise in good faith of the right of private defence of person or property, exceeds the power given to him by law and causes the death of the person against whom he is exercising such right of defence without premeditation, and without any intention of doing more harm than is necessary for the purpose of such defence",
-        "Exception 3.—Culpable homicide is not murder if the offender, being a public servant or aiding a public servant acting for the advancement of public justice, exceeds the powers given to him by law, and causes death by doing an act which he, in good faith, believes to be lawful and necessary for the due discharge of his duty as such public servant and without ill-will towards the person whose death is caused",
-        "Exception 4.—Culpable homicide is not murder if it is committed without premeditation in a sudden fight in the heat of passion upon a sudden quarrel and without the offender’s having taken undue advantage or acted in a cruel or unusual manner",
-        "Exception 5.—Culpable homicide is not murder when the person whose death is caused, being above the age of eighteen years, suffers death or takes the risk of death with his own consent",
-        "Provided that the provocation is not,"
-      ]
-    }
+      id: 'bns-101-module-5',
+      title: 'Forensic Pathology, Digital Proof (BSA s. 63) & Section 531 Transition',
+      order: 5,
+      content: [
+        'Forensic medical examination is essential: the post-mortem report must specify whether the injury was "sufficient in the ordinary course of nature to cause death" (s. 101(c)) or merely "likely" to cause death (s. 100).',
+        'Electronic evidence (CCTV, dashcams, smartphone videos) proving the genesis of the altercation or establishing Exception 4 must comply with Section 63(4) BSA certification.',
+        'Under Article 20(1) and Section 531(2)(a) BNSS, murders committed on or before 30 June 2024 are tried under IPC s. 300/302; offences committed post-1 July 2024 are tried under BNS s. 101/103.',
+      ],
+    },
   ],
-  "examples": [
+
+  provisions: [
     {
-      "id": "bns-101-ex-1",
-      "title": "Illustration (a)",
-      "description": "A shoots Z with the intention of killing him. Z dies in consequence. A commits murder\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 101 — which fact proves which element, and what the legal result is."
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-101',
+      section: 's. 101',
+      title: 'Murder',
     },
     {
-      "id": "bns-101-ex-2",
-      "title": "Illustration (b)",
-      "description": "A, knowing that Z is labouring under such a disease that a blow is likely to cause his death, strikes him with the intention of causing bodily injury. Z dies in consequence of the blow. A is guilty of murder, although the blow might not have been sufficient in the ordinary course of nature to cause the death of a person in a sound state of health. But if A, not knowing that Z is labouring under any disease, gives him such a blow as would not in the ordinary course of nature kill a person in a sound state of health, here A, although he may intend to cause bodily injury, is not guilty of murder, if he did not intend to cause death, or such bodily injury as in the ordinary course of nature would cause death\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 101 — which fact proves which element, and what the legal result is."
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-100',
+      section: 's. 100',
+      title: 'Culpable homicide',
     },
     {
-      "id": "bns-101-ex-3",
-      "title": "Illustration (c)",
-      "description": "A intentionally gives Z a sword-cut or club-wound sufficient to cause the death of a man in the ordinary course of nature. Z dies in consequence. Here A is guilty of murder, although he may not have intended to cause Z’s death\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 101 — which fact proves which element, and what the legal result is."
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-103',
+      section: 's. 103',
+      title: 'Punishment for murder',
     },
     {
-      "id": "bns-101-ex-4",
-      "title": "Illustration (d)",
-      "description": "A without any excuse fires a loaded cannon into a crowd of persons and kills one of them. A is guilty of murder, although he may not have had a premeditated design to kill any particular individual\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 101 — which fact proves which element, and what the legal result is."
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-105',
+      section: 's. 105',
+      title: 'Punishment for culpable homicide not amounting to murder',
     },
     {
-      "id": "bns-101-ex-5",
-      "title": "Illustration (e)",
-      "description": "A, under the influence of passion excited by a provocation given by Z, intentionally kills Y, Z’s child. This is murder, in as much as the provocation was not given by the child, and the death of the child was not caused by accident or misfortune in doing an act caused by the provocation\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 101 — which fact proves which element, and what the legal result is."
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-3-5',
+      section: 's. 3(5)',
+      title: 'Joint liability (Common intention)',
     },
     {
-      "id": "bns-101-ex-6",
-      "title": "Illustration (f)",
-      "description": "Y gives grave and sudden provocation to A. A, on this provocation, fires a pistol at Y, neither intending nor knowing himself to be likely to kill Z, who is near him, but out of sight. A kills Z. Here A has not committed murder, but merely culpable homicide\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 101 — which fact proves which element, and what the legal result is."
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-104',
+      section: 's. 104',
+      title: 'Burden of proof',
     },
     {
-      "id": "bns-101-ex-7",
-      "title": "Illustration (g)",
-      "description": "A is lawfully arrested by Z, a bailiff. A is excited to sudden and violent passion by the arrest, and kills Z. This is murder, in as much as the provocation was given by a thing done by a public servant in the exercise of his powers\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 101 — which fact proves which element, and what the legal result is."
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-63',
+      section: 's. 63',
+      title: 'Admissibility of electronic records',
     },
-    {
-      "id": "bns-101-ex-8",
-      "title": "Illustration (h)",
-      "description": "A appears as a witness before Z, a Magistrate. Z says that he does not believe a word of A’s deposition, and that A has perjured himself. A is moved to sudden passion by these words, and kills Z. This is murder\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 101 — which fact proves which element, and what the legal result is."
-    },
-    {
-      "id": "bns-101-ex-9",
-      "title": "Illustration (i)",
-      "description": "A attempts to pull Z’s nose. Z, in the exercise of the right of private defence, lays hold of A to prevent him from doing so. A is moved to sudden and violent passion in consequence, and kills Z. This is murder, in as much as the provocation was giving by a thing done in the exercise of the right of private defence\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 101 — which fact proves which element, and what the legal result is."
-    },
-    {
-      "id": "bns-101-ex-10",
-      "title": "Illustration (j)",
-      "description": "Z strikes B. B is by this provocation excited to violent rage. A, a bystander, intending to take advantage of B’s rage, and to cause him to kill Z, puts a knife into B’s hand for that purpose. B kills Z with the knife. Here B may have committed only culpable homicide, but A is guilty of murder\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 101 — which fact proves which element, and what the legal result is."
-    },
-    {
-      "id": "bns-101-ex-11",
-      "title": "Illustration (k)",
-      "description": "Z attempts to horsewhip A, not in such a manner as to cause grievous hurt to A. A draws out a pistol. Z persists in the assault. A believing in good faith that he can by no other means prevent himself from being horsewhipped, shoots Z dead. A has not committed murder, but only culpable homicide\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 101 — which fact proves which element, and what the legal result is."
-    },
-    {
-      "id": "bns-101-ex-12",
-      "title": "Illustration (l)",
-      "description": "A, by instigation, voluntarily causes Z, a child to commit suicide. Here, on account of Z’s youth, he was incapable of giving consent to his own death; A has therefore abetted murder\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 101 — which fact proves which element, and what the legal result is."
-    }
   ],
-  "hypotheticals": [
+
+  examples: [
     {
-      "id": "bns-101-hypo",
-      "title": "Chamber Practice Hypothetical",
-      "facts": "(a) A shoots Z with the intention of killing him. Z dies in consequence. A commits murder",
-      "question": "Whether BNS s. 101 (Murder) applies, and how structured written arguments should be framed.",
-      "applicableLaw": "BNS s. 101. Chapter VI — Of Offences Affecting the Human Body. Connected: BNS s. 100, BNS s. 103, BNS s. 105.",
-      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 101 (Murder), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Except in the cases hereinafter excepted, culpable homicide is murder,–\n   (2) (a) if the act by which the death is caused is done with the intention of causing death; or\n   (3) (b) if the act by which the death is caused is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused; or\n   (4) (c) if the act by which the death is caused is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death; or\n   (5) (d) if the person committing the act by which the death is caused, knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury as aforesaid\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 101 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
-      "conclusion": "The result depends on proof of the ingredients of BNS s. 101. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
-    }
+      id: 'bns-101-ill-1',
+      title: 'Application of Clause (c) and Virsa Singh Test',
+      illustrationType: 'statutory-practical',
+      description:
+        'Accused A ambushes rival R with an iron rod and delivers a crushing blow directly to R’s vertex, fracturing the parietal and frontal bones and lacerating brain tissue. The autopsy surgeon confirms that the craniocerebral injury was objectively sufficient in the ordinary course of nature to cause death. A contends that he only intended to break R’s head, not to kill him. Applying Virsa Singh v. State of Punjab, the prosecution proved that the bodily injury was present, that it was intentionally inflicted, and that it was objectively sufficient in the ordinary course of nature to cause death. A is guilty of murder under Section 101(c).',
+    },
+    {
+      id: 'bns-101-ill-2',
+      title: 'Exception 4 Applied — Sudden Fight in Market Altercation',
+      illustrationType: 'statutory-practical',
+      description:
+        'A heated verbal quarrel suddenly erupts between shopkeeper S and customer C over defective goods. Both exchange abuses and grapple with each other. In the heat of the scuffle, S grabs a pair of tailoring scissors lying on the counter and stabs C once in the abdomen, causing fatal peritonitis. The evidence establishes that there was no premeditation, the fight was sudden, S did not carry a weapon to the scene, and S struck a single blow without taking undue advantage or acting cruelly. The act falls squarely within Exception 4 to Section 101 BNS, reducing the offence from murder to Culpable Homicide Not Amounting to Murder under Section 105 Part I BNS.',
+    },
   ],
-  "distinctions": [
+
+  hypotheticals: [
     {
-      "id": "bns-101-dist",
-      "title": "BNS s. 101 and connected sections",
-      "left": "BNS s. 101",
-      "right": "BNS s. 100, BNS s. 103, BNS s. 105",
-      "rows": [
+      id: 'bns-101-hypo',
+      title: 'Chamber Practice Hypothetical: Provocation, Cooling Time & Nanavati Principles',
+      facts:
+        'A husband (H) discovers his spouse in an adulterous situation with lover L at an apartment at 3:00 PM. A furious argument ensues. H leaves the apartment, drives 15 kilometres to his residence, retrieves a licensed revolver, loads it, drives back to L’s office at 5:30 PM, enters L’s cabin, and fires three shots into L’s chest, killing him instantly. H surrenders at the police station with the weapon, claiming the benefit of Exception 1 to Section 101 BNS (Grave and Sudden Provocation).',
+      question:
+        'As Senior Counsel advising the prosecution, analyse whether H can successfully invoke Exception 1 to Section 101 BNS to reduce the charge from murder to culpable homicide not amounting to murder.',
+      applicableLaw:
+        'BNS ss. 100, 101 (Clause a & Exception 1), 103, 105; Supreme Court locus classicus in K.M. Nanavati v. State of Maharashtra AIR 1962 SC 605.',
+      analysis:
+        '1. Predicate Offence of Murder: H intentionally shot L in the chest with a firearm, satisfying Section 101(a) (intention to cause death) and Section 101(c) (injury sufficient in the ordinary course of nature to cause death).\n2. Analysis of Exception 1 (Grave and Sudden Provocation):\n   - Under K.M. Nanavati (1962), the provocation must be both "grave" and "sudden".\n   - While discovering marital infidelity may constitute grave provocation, the fatal act was NOT sudden.\n   - H had an interval of two and a half hours, during which he drove 15 kilometres home, retrieved a weapon, loaded it, and travelled to L’s workplace. This substantial interval provided ample cooling time for reason to regain control over passion.\n   - Premeditated vengeance executed after cooling time completely negates Exception 1.\n3. The Reasonable Man Test: Under Nanavati, no reasonable man in civilized society retains an uncontrollable deprivation of self-control over a multi-hour logistical journey involving weapon procurement and transit.',
+      conclusion:
+        'H cannot claim the protection of Exception 1 to Section 101 BNS. The cooling time and premeditated procurement of the firearm establish calculated murder under Section 101(a), punishable with death or life imprisonment under Section 103(1) BNS.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'bns-101-dist-1',
+      title: 'Section 101(b) BNS vs Section 101(c) BNS',
+      left: 'Section 101(b) BNS (Infirmity Clause)',
+      right: 'Section 101(c) BNS (Virsa Singh Clause)',
+      rows: [
         {
-          "point": "Heading",
-          "left": "Murder",
-          "right": "Read the neighbour’s title on its own page before you write."
+          point: 'Victim Condition',
+          left: 'Victim labours under a peculiar physical infirmity, disease, or vulnerability',
+          right: 'Victim may be in an ordinary, healthy state of physical condition',
         },
         {
-          "point": "What you must prove",
-          "left": "Except in the cases hereinafter excepted, culpable homicide is murder,–",
-          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+          point: 'Offender Knowledge',
+          left: 'Offender must have subjective knowledge of the victim’s special infirmity',
+          right: 'Offender’s subjective knowledge of vulnerability is irrelevant',
         },
         {
-          "point": "Practice trap",
-          "left": "Citing a neighbour as if it were s. 101.",
-          "right": "Citing s. 101 where the neighbour actually applies."
-        }
-      ]
-    }
-  ],
-  "misconceptions": [
-    {
-      "id": "bns-101-trap-1",
-      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
-      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 101."
+          point: 'Medical Sufficiency',
+          left: 'Injury may not be fatal to a healthy person, but fatal to this infirm victim',
+          right: 'Injury must be objectively sufficient in the ordinary course of nature to kill a normal person',
+        },
+      ],
     },
     {
-      "id": "bns-101-trap-2",
-      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
-      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+      id: 'bns-101-dist-2',
+      title: 'Exception 1 (Provocation) vs Exception 4 (Sudden Fight)',
+      left: 'Exception 1 to Section 101 BNS',
+      right: 'Exception 4 to Section 101 BNS',
+      rows: [
+        {
+          point: 'Mutual Combat',
+          left: 'Unilateral provocation given by victim depriving offender of self-control',
+          right: 'Bilateral combat / sudden fight between both parties upon a sudden quarrel',
+        },
+        {
+          point: 'Origin of Provocation',
+          left: 'Crucial: provocation must not be sought or voluntarily provoked by accused',
+          right: 'Immaterial which party offered the provocation or committed the first assault',
+        },
+        {
+          point: 'Negative Provisos',
+          left: 'Subject to three explicit statutory provisos (law, public servant, private defence)',
+          right: 'Subject to requirement that offender did not take undue advantage or act cruelly',
+        },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'bns-101-trap1',
+      trap: 'To secure a murder conviction under Section 101(c), the prosecution must prove the accused intended to cause death.',
+      correction:
+        'In Virsa Singh v. State of Punjab AIR 1958 SC 465, the Supreme Court authoritatively held that under clause (c), the prosecution need only prove an intention to cause that particular bodily injury; it is not necessary to prove an intention to cause death. The fatal sufficiency of the wound is an objective medical fact.',
     },
     {
-      "id": "bns-101-trap-3",
-      "trap": "Giving a one-line summary or shortened explanation of the provision.",
-      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
-    }
-  ],
-  "questionsAndAnswers": [
-    {
-      "id": "bns-101-q-brief",
-      "draftingCategory": "brief",
-      "question": "Legal Assessment & Statutory Note: BNS s. 101 (Murder)",
-      "answer": "Introduction. BNS s. 101 deals with Murder. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Murder is culpable homicide with one of the four aggravating clauses (old 300), unless an exception applies. Thirdly is Virsa Singh: the intended bodily injury is sufficient in the ordinary course of nature to cause death.\n\nLegal rule. In student language: BNS s. 101 is the rule on “Murder”. The section provides that except in the cases hereinafter excepted, culpable homicide is murder,–. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Except in the cases hereinafter excepted, culpable homicide is murder,–\n2. (a) if the act by which the death is caused is done with the intention of causing death; or\n3. (b) if the act by which the death is caused is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused; or\n4. (c) if the act by which the death is caused is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death; or\n5. (d) if the person committing the act by which the death is caused, knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury as aforesaid\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A shoots Z with the intention of killing him. Z dies in consequence. A commits murder\n\nExplanations. Explanation.—Whether the provocation was grave and sudden enough to prevent the offence from amounting to murder is a question of fact An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nExceptions / provisos. Exception 1.—Culpable homicide is not murder if the offender, whilst deprived of the power of self-control by grave and sudden provocation, causes the death of the person who gave the provocation or causes the death of any other person by mistake or accident:\n\n(a) sought or voluntarily provoked by the offender as an excuse for killing or doing harm to any person;\n\n(b) given by anything done in obedience to the law, or by a public servant in the lawful exercise of the powers of such public servan… State the exception and then say whether it is attracted on the facts.\n\nConnected sections. Read with BNS s. 100, BNS s. 103, BNS s. 105. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 101 is the complete current-law heading for Murder. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
-      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+      id: 'bns-101-trap2',
+      trap: 'Any sudden fight automatically reduces murder to culpable homicide under Exception 4.',
+      correction:
+        'Exception 4 requires four cumulative conditions: (1) no premeditation; (2) sudden fight; (3) heat of passion upon a sudden quarrel; AND (4) the offender must NOT have taken undue advantage or acted in a cruel or unusual manner. Stabbing an unarmed, fallen opponent repeatedly defeats Exception 4.',
     },
     {
-      "id": "bns-101-q-submissions",
-      "draftingCategory": "submissions",
-      "question": "Comprehensive Written Submissions: BNS s. 101 (Murder) with Statutory Scheme & Judicial Analysis",
-      "answer": "Introduction. BNS s. 101 deals with Murder. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Murder is culpable homicide with one of the four aggravating clauses (old 300), unless an exception applies. Thirdly is Virsa Singh: the intended bodily injury is sufficient in the ordinary course of nature to cause death.\n\nLegal rule. In student language: BNS s. 101 is the rule on “Murder”. The section provides that except in the cases hereinafter excepted, culpable homicide is murder,–. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Except in the cases hereinafter excepted, culpable homicide is murder,–\n2. (a) if the act by which the death is caused is done with the intention of causing death; or\n3. (b) if the act by which the death is caused is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused; or\n4. (c) if the act by which the death is caused is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death; or\n5. (d) if the person committing the act by which the death is caused, knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury as aforesaid\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A shoots Z with the intention of killing him. Z dies in consequence. A commits murder\n\nExplanations. Explanation.—Whether the provocation was grave and sudden enough to prevent the offence from amounting to murder is a question of fact An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nExceptions / provisos. Exception 1.—Culpable homicide is not murder if the offender, whilst deprived of the power of self-control by grave and sudden provocation, causes the death of the person who gave the provocation or causes the death of any other person by mistake or accident:\n\n(a) sought or voluntarily provoked by the offender as an excuse for killing or doing harm to any person;\n\n(b) given by anything done in obedience to the law, or by a public servant in the lawful exercise of the powers of such public servan… State the exception and then say whether it is attracted on the facts.\n\nConnected sections. Read with BNS s. 100, BNS s. 103, BNS s. 105. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 101 is the complete current-law heading for Murder. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second statutory illustration. Illustration (b): (b) A, knowing that Z is labouring under such a disease that a blow is likely to cause his death, strikes him with the intention of causing bodily injury. Z dies in consequence of the blow. A is guilty of murder, although the blow might not have been sufficient in the ordinary course of nature to cause the death of a person in a sound state of health. But if A, not knowing that Z is labouring under any disease, gives him such a blow as would not in the ordinary course of nature kill a person in a sound state of health, here A, although he may intend to cause bodily injury, is not guilty of murder, if he did not intend to cause death, or such bodily injury as in the ordinary course of nature would cause death Contrast it with illustration (a). The legal weight lies in the contrast.\n\nLayer 3 — Distinction. Contrast BNS s. 101 with BNS s. 100, BNS s. 103, BNS s. 105. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 101.”",
-      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
-    }
+      id: 'bns-101-trap3',
+      trap: 'Exception 1 (Grave and Sudden Provocation) can be claimed even after several hours of planning.',
+      correction:
+        'Under K.M. Nanavati (1962), cooling time is fatal to Exception 1. If there was sufficient time between the provocation and the assault for reason to resume its seat, the act is treated as premeditated revenge, not provoked homicide.',
+    },
   ],
-  "cases": [
+
+  cases: [
     {
-      "name": "Regina v. Govinda",
-      "year": 1876,
-      "citation": "(1876) 1 Bom 342",
-      "holding": "The classic Indian distinction between culpable homicide and murder — intention and the degree of probability of death. Still the starting case for ss. 100–101."
+      name: 'Virsa Singh v. State of Punjab',
+      year: 1958,
+      citation: 'AIR 1958 SC 465',
+      court: 'Supreme Court of India',
+      holding:
+        'Vivian Bose, J. laid down the definitive four-step test for murder under clause Thirdly (now s. 101(c) BNS): the prosecution must prove bodily injury, its nature, that it was intentionally inflicted, and that it is objectively sufficient in the ordinary course of nature to cause death. Proof of intention to kill is not required.',
+      relevance:
+        'The foundational locus classicus governing Section 101(c) BNS bodily injury murder.',
     },
     {
-      "name": "Virsa Singh v. State of Punjab",
-      "year": 1958,
-      "citation": "AIR 1958 SC 465",
-      "holding": "Clause 3 of murder: the bodily injury intended must be sufficient in the ordinary course of nature to cause death. The offender need not intend death itself. Reads on to s. 101 thirdly."
+      name: 'K.M. Nanavati v. State of Maharashtra',
+      year: 1962,
+      citation: 'AIR 1962 SC 605',
+      court: 'Supreme Court of India',
+      holding:
+        'Subba Rao, J. formulated the definitive principles governing grave and sudden provocation under Exception 1: the reasonable man test, subjective loss of self-control, and the fatal effect of cooling time extinguishing the defence.',
+      relevance:
+        'Mandatory citation on Exception 1 to Section 101 BNS.',
     },
     {
-      "name": "K.M. Nanavati v. State of Maharashtra",
-      "year": 1962,
-      "citation": "AIR 1962 SC 605",
-      "holding": "Grave and sudden provocation is an exception to murder, not a free pass. The reasonable-person test and the cooling-off interval. Exception 1 to s. 101."
-    }
-  ],
-  "examTips": [
-    "Cite BNS s. 101 for offences on or after 1 July 2024.",
-    "Ingredients first, illustration second, application third, conclusion last.",
-    "Provocation is Exception 1, not a separate offence. Nanavati still teaches the cooling-off interval."
-  ],
-  "examFrameworks": [
-    {
-      "question": "Structured Legal Assessment: BNS s. 101 (Murder).",
-      "steps": [
-        "Introduce BNS s. 101 and Chapter VI — Of Offences Affecting the Human Body.",
-        "Define / state the meaning in your own words.",
-        "List the essential ingredients.",
-        "Use one statutory illustration and map it to an ingredient.",
-        "State the material explanation or exception.",
-        "Apply in four to six sentences.",
-        "Conclude with the current citation — BNS s. 101."
-      ]
+      name: 'Ghapoo Yadav v. State of Madhya Pradesh',
+      year: 2003,
+      citation: '(2003) 3 SCC 528',
+      court: 'Supreme Court of India',
+      holding:
+        'Deconstructed the four cumulative ingredients of Exception 4 (sudden fight) to Section 101: absence of premeditation, sudden fight in heat of passion upon a sudden quarrel, and the strict absence of undue advantage or cruelty.',
+      relevance:
+        'Leading authority on Exception 4 sudden fight defense.',
     },
     {
-      "question": "Comprehensive Chamber Written Submissions: BNS s. 101 with connected statutory scheme.",
-      "steps": [
-        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
-        "Place the section in the Chapter and explain why the heading exists.",
-        "Work a second statutory illustration and contrast it with the first.",
-        "Distinguish BNS s. 101 from BNS s. 100, BNS s. 103, BNS s. 105.",
-        "IRAC application to the problem facts.",
-        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
-        "Current-law conclusion."
-      ]
-    }
+      name: 'Pandurang v. State of Hyderabad',
+      year: 1955,
+      citation: 'AIR 1955 SC 216',
+      court: 'Supreme Court of India',
+      holding:
+        'Vivian Bose, J. held that where several accused inflict blows during a sudden fight without prior concert, the person striking the fatal blow is guilty of murder, while co-accused who struck non-vital injuries are guilty only of hurt or grievous hurt.',
+      relevance:
+        'Core precedent for differentiating individual liability in multi-assailant homicide trials.',
+    },
   ],
-  "answerSkeleton": [
-    "Introduction — BNS s. 101, Murder.",
-    "Meaning and definition.",
-    "Ingredients.",
-    "Illustration mapped to an ingredient.",
-    "Explanation / exception.",
-    "Application (IRAC).",
-    "Conclusion and current citation."
+
+  questionsAndAnswers: [
+    {
+      id: 'bns-101-brief',
+      draftingCategory: 'brief',
+      question:
+        'Prepare an IRAC Legal Case Brief on Section 101 BNS, analyzing the four aggravating limbs, the Virsa Singh doctrine, and the operation of the five statutory Exceptions.',
+      answer: `I. ISSUE & JURISDICTIONAL THRESHOLD
+Whether an act causing the death of a human being satisfies the aggravating limbs of Section 101 BNS to constitute murder, or whether the existence of any of the five statutory Exceptions reduces the offence to Culpable Homicide Not Amounting to Murder under Section 105 BNS. Forum: Court of Session under the First Schedule of BNSS.
+
+II. GOVERNING RULE & STATUTORY ANATOMY
+1. The Substantive Gateways: Culpable homicide ascends to murder if it falls within one of four clauses: (a) intention to cause death; (b) intention to inflict bodily injury knowing it is likely to cause death of a vulnerable victim; (c) intention to inflict bodily injury that is objectively sufficient in the ordinary course of nature to cause death (Virsa Singh test); (d) imminently dangerous act in all probability causing death without excuse.
+2. The Five Statutory Exceptions: Exception 1 (Grave and Sudden Provocation, Nanavati test); Exception 2 (Exceeding Private Defence in Good Faith); Exception 3 (Public Servant acting for Justice); Exception 4 (Sudden Fight without Undue Advantage, Ghapoo Yadav); Exception 5 (Adult Consent).
+3. Consequence: Murder is punishable under Section 103 BNS (death or life imprisonment and fine); excepted homicide is punishable under Section 105 BNS.
+
+III. APPLICATION TO FACTUAL DISPUTE
+- Step 1: Establish culpable homicide under Section 100 BNS.
+- Step 2: Apply the Virsa Singh four-step test to medical autopsy findings for Clause (c): (i) wound present; (ii) nature proved; (iii) intended; (iv) objectively sufficient in ordinary course of nature to cause death.
+- Step 3: Test defence claims under the Exceptions. If sudden fight is alleged, verify whether the accused took undue advantage or acted in a cruel or unusual manner. If provocation is alleged, test cooling time under Nanavati.
+
+IV. CONCLUSION & OPERATIVE ADVICE
+Advise counsel to structure cross-examination of the autopsy surgeon around the probability gap: elicit whether the wound was merely "likely" to cause death rather than "sufficient in the ordinary course of nature" to knock out Clause (c), and present evidence of a sudden mutual quarrel to establish Exception 4, ensuring reduction of the charge to Section 105 Part II BNS.`,
+      explanation:
+        'Senior Counsel IRAC brief on Section 101 BNS murder and statutory Exceptions.',
+      relatedProvisionIds: ['bns-101', 'bns-100', 'bns-103', 'bns-105', 'bsa-104'],
+    },
+    {
+      id: 'bns-101-submissions',
+      draftingCategory: 'submissions',
+      question:
+        'Draft comprehensive Appellate Written Submissions arguing for the benefit of Exception 4 to Section 101 BNS to reduce a murder conviction to culpable homicide not amounting to murder.',
+      answer: `IN THE HIGH COURT OF JUDICATURE AT [JURISDICTION]
+CRIMINAL APPEAL NO. [____] OF 202[ ]
+IN THE MATTER OF:
+APPELLANT                                                   ... APPELLANT
+VERSUS
+STATE                                                       ... RESPONDENT
+
+WRITTEN SUBMISSIONS ON BEHALF OF THE APPELLANT FOR EXTENSION OF EXCEPTION 4 TO SECTION 101 BNS
+
+MOST RESPECTFULLY SHOWETH:
+
+I. STATEMENT OF RELEVANT FACTS & TRIAL FINDINGS
+1. The Appellant stands convicted under Section 103(1) of the Bharatiya Nyaya Sanhita, 2023 (BNS), for murder, and sentenced to life imprisonment.
+2. The prosecution evidence discloses that the altercation originated in an unexpected verbal dispute at a tea stall between the Appellant and the deceased regarding a political discussion. The verbal exchange escalated into physical wrestling, during which the Appellant picked up a carpenter’s chisel lying on the adjacent bench and delivered a single blow to the deceased’s chest.
+
+II. ALL FOUR CUMULATIVE CONDITIONS OF EXCEPTION 4 ARE FULLY SATISFIED
+3. In Ghapoo Yadav v. State of M.P. (2003) 3 SCC 528 and Surinder Kumar v. UT of Chandigarh (1989) 2 SCC 217, the Supreme Court laid down the four essential conditions for Exception 4:
+   (i) The incident must be committed without premeditation;
+   (ii) In a sudden fight;
+   (iii) In the heat of passion upon a sudden quarrel; and
+   (iv) The offender did not take undue advantage or act in a cruel or unusual manner.
+4. Total Absence of Premeditation and Prior Enmity:
+   - The Appellant and deceased were neighbors with no prior history of litigation or hostility.
+   - The Appellant did not arrive armed; the weapon was picked up on the spur of the moment from the scene.
+5. The Fight was Sudden and in the Heat of Passion:
+   - PW-1 and PW-2 (independent eyewitnesses) admitted that both parties grappled and exchanged blows before the weapon was used. Under Explanation to Exception 4, it is immaterial which party offered the first assault.
+6. No Undue Advantage or Cruel/Unusual Manner:
+   - The Appellant struck a single blow and immediately desisted.
+   - There was no repeated stabbing or mutilation. Under settled law (Pandurang (1955)), a single blow in a sudden fight does not constitute cruel or unusual conduct.
+
+III. ALTERATION OF CONVICTION TO SECTION 105 PART I BNS
+7. The act falls squarely within Exception 4 to Section 101 BNS. The conviction under Section 103(1) BNS cannot be sustained and must be altered to Section 105 Part I BNS.
+
+PRAYER
+Wherefore, in light of the above facts, statutory scheme, and binding authorities, it is respectfully prayed that this Hon’ble Court may graciously be pleased to:
+(a) Allow the Criminal Appeal in part and set aside the conviction under Section 103(1) BNS;
+(b) Alter the conviction to Section 105 Part I read with Section 101 Exception 4 BNS; and
+(c) Sentence the Appellant to the period of custody already undergone.
+
+FILED BY:
+[COUNSEL FOR THE APPELLANT]
+ADVOCATE`,
+      explanation:
+        'Senior Counsel written submissions on Exception 4 to Section 101 BNS in the High Court.',
+      relatedProvisionIds: ['bns-101', 'bns-100', 'bns-103', 'bns-105', 'bsa-104'],
+    },
   ],
-  "revisionPoints": [
-    "BNS s. 101: Murder.",
-    "First ingredient: Except in the cases hereinafter excepted, culpable homicide is murder,–",
-    "12 statutory illustration(s) — quote and map.",
-    "For offences on or after 1 July 2024, the correct citation is BNS s. 101 — Murder. Older books and judgments may still print a historical number (300). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+
+  bareActPointers: [
+    'BNS s. 101: Murder (clauses a-d and Exceptions 1-5)',
+    'BNS s. 100: Culpable homicide genus',
+    'BNS s. 103: Punishment for murder (ordinary and group identity murder)',
+    'BNS s. 105: Punishment for culpable homicide not amounting to murder',
+    'BNS s. 3(5): Joint liability (Common intention)',
+    'BSA s. 104: Burden of proof on prosecution',
+    'BSA s. 108: Burden on accused to prove statutory Exceptions',
+    'BSA s. 63: Electronic evidence admissibility for crime scene footage',
   ],
-  "relatedTopics": [
-    "s-100",
-    "s-103",
-    "s-105"
-  ]
+
+  examTips: [
+    'Memorize the Virsa Singh four-step test for Section 101(c); it is the most tested doctrine in criminal law.',
+    'Differentiate clause (b) (subjective knowledge of victim infirmity) from clause (c) (objective sufficiency to normal human).',
+    'Walk through all five Exceptions methodically, especially Exception 1 (Nanavati cooling time) and Exception 4 (Ghapoo Yadav four prongs).',
+    'Never confuse Section 101 (definition) with Section 103 (punishment).',
+  ],
+
+  revisionPoints: [
+    'BNS s. 101 = Murder: culpable homicide + 1 of 4 limbs - 5 Exceptions.',
+    'Clause (c): Virsa Singh test = intended injury + objectively sufficient in ordinary course of nature to cause death.',
+    'Exception 1: Grave & sudden provocation (Nanavati) - cooling time is fatal.',
+    'Exception 4: Sudden fight upon sudden quarrel without undue advantage (Ghapoo Yadav).',
+    'Exception 2: Good-faith excess of private defence.',
+    'Transitional: IPC s. 300 for pre-1 July 2024 acts; BNS s. 101 for post-1 July 2024 acts.',
+  ],
+
+  relatedTopics: ['s-100', 's-103', 's-105', 's-111', 's-3-5', 's-189'],
 }
 
 export default content
