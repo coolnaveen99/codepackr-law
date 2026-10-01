@@ -2,8 +2,8 @@
 
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
-**Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** · Phase 4 — **CLOSED** · Phase 5 — **CLOSED** · Phase 6 — **CLOSED** · Phase 7 — **CLOSED**  
-**Updated:** 2026-10-01 (PH7 COMPLETED — Case Preparation Workbench exit audit closed)
+**Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** · Phase 4 — **CLOSED** · Phase 5 — **CLOSED** · Phase 6 — **CLOSED** · Phase 7 — **CLOSED** · Phase 8 — **CLOSED**  
+**Updated:** 2026-10-01 (PH8 COMPLETED — Legal Draft Studio 2.0 exit audit closed)
 
 ## Verified completed
 
@@ -37,6 +37,8 @@
 | PH6-100 | Phase 6 exit audit | **COMPLETED** | P0 |
 | PH7-010 | Case Preparation Workbench implementation | **COMPLETED** | P0 |
 | PH7-100 | Phase 7 exit audit | **COMPLETED** | P0 |
+| PH8-010 | Legal Draft Studio 2.0 implementation | **COMPLETED** | P0 |
+| PH8-100 | Phase 8 exit audit | **COMPLETED** | P0 |
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
 
 ### PH4-040 — COMPLETED (2026-10-01)\n\n**Validation evidence:** PR #68 branch CI run **#297** passed TypeScript validation, **113/113 unit tests**, and production build. Official e-SCR, SCR, SCI, and eCourts destinations were checked against current official portals. A prior CI run (#293) caught a type-export regression; the fix was validated by run #295 (lint/build pass) and final run #297 (full gate pass).
@@ -167,3 +169,25 @@
 
 **Blocker:** None.  
 **Next action:** Phase 8 — Legal Draft Studio 2.0.
+
+
+## Phase 8 — Legal Draft Studio 2.0 — COMPLETED (2026-10-01)
+
+**Implementation:** PR #76  
+**Exit audit:** `docs/PHASE-8-EXIT-AUDIT.md`  
+**Validation:** CI **#323** — TypeScript PASS, 134/134 unit tests PASS, production build PASS.
+
+| Check | Result |
+|---|---|
+| Reviewed full drafts / educational scaffolds / catalogue entries / checklists | **PASS** |
+| Subject, Act/Law, category, court/forum and state-dependency filters | **PASS** |
+| Reviewed vs scaffold governance filter | **PASS** |
+| Favourites, recently used, most used, A–Z, recently reviewed | **PASS** |
+| Draft metadata and review provenance display | **PASS** |
+| Browser-local persistence | **PASS** |
+| Existing preview, sample, copy and DOCX/PDF/TXT export | **PASS** |
+| Mobile/accessibility baseline | **PASS** |
+| TypeScript/tests/build | **PASS** — CI #323 |
+
+**Blocker:** None.  
+**Next action:** Phase 9 — Filing and Court Checklist System.

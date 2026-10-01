@@ -3,6 +3,7 @@ import { Check, ChevronDown, Copy, Download, FileText, ListChecks, Printer, Sear
 import { CASE_FILE_CHECKLISTS, DRAFT_TEMPLATES, type DraftTemplate } from '../../data/draft-templates'
 import { TEMPLATE_CATALOG, catalogToDraftTemplate } from '../../data/legal-template-catalog'
 import { downloadLegalDocument, printAsPdf, type ExportKind } from '../../lib/document-export'
+import { getDraftTier, getReviewYear, markDraftUsed, matchesDraftTier, readDraftUsage, toggleDraftFavorite, writeDraftUsage, type DraftUsageState } from '../../lib/draftStudio'
 
 const CATEGORIES = ['all', 'criminal', 'civil', 'notice', 'affidavit', 'family', 'property', 'commercial', 'consumer', 'employment', 'company', 'arbitration', 'ip', 'tax', 'banking', 'motor', 'constitutional', 'procedure', 'rtI', 'misc'] as const
 type Category = typeof CATEGORIES[number]
@@ -19,7 +20,13 @@ export function LegalDraftStudio() {
   const [act, setAct] = useState('')
   const [showAdvanced, setShowAdvanced] = useState(false)
   const [showMore, setShowMore] = useState(false)
-  const allTemplates = useMemo(() => [...DRAFT_TEMPLATES, ...TEMPLATE_CATALOG.map(catalogToDraftTemplate)], [])
+  const [tier, setTier] = useState<'all' | 'reviewed' | 'scaffold'>('all')
+  const [court, setCourt] = useState('')
+  const [state, setState] = useState('')
+  const [reviewYear, setReviewYear] = useState('')
+  const [sortBy, setSortBy] = useState<'default' | 'az' | 'most-used' | 'recently-used' | 'recently-reviewed'>('default')
+  const [usage, setUsage] = useState<DraftUsageState>(() => readDraftUsage())
+  const allTemplates = useMemo(() => [...DRAFT_TEMPLATES.map((t) => ({ ...t, tier: t.tier || 'reviewed' as const, courtForum: t.courtForum || 'General / forum-dependent', stateDependency: t.stateDependency || 'General / verify local rules' })), ...TEMPLATE_CATALOG.map(catalogToDraftTemplate)], [])
   const [exporting, setExporting] = useState<ExportKind | null>(null)
 
   const template: DraftTemplate | undefined = useMemo(
@@ -68,17 +75,31 @@ export function LegalDraftStudio() {
     return Array.from(new Set(source.map(getAct))).sort()
   }, [allTemplates, subject])
 
+  const courts = useMemo(() => Array.from(new Set(allTemplates.map((t) => t.courtForum || 'General / forum-dependent'))).sort(), [allTemplates])
+  const states = useMemo(() => Array.from(new Set(allTemplates.map((t) => t.stateDependency || 'General / verify local rules'))).sort(), [allTemplates])
+  const reviewYears = useMemo(() => Array.from(new Set(allTemplates.map((t) => getReviewYear(t.lastReviewed)).filter(Boolean))).sort().reverse(), [allTemplates])
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
-    if (!subject && !act && !q && cat === 'all') return []
-    return allTemplates.filter((t) => {
+    if (!subject && !act && !q && cat === 'all' && tier === 'all' && !court && !state && !reviewYear) return []
+    const result = allTemplates.filter((t) => {
       if (cat !== 'all' && t.category !== cat) return false
       if (subject && getSubject(t) !== subject) return false
       if (act && getAct(t) !== act) return false
+      if (!matchesDraftTier(getDraftTier(undefined, t.tier), tier)) return false
+      if (court && (t.courtForum || 'General / forum-dependent') !== court) return false
+      if (state && (t.stateDependency || 'General / verify local rules') !== state) return false
+      if (reviewYear && getReviewYear(t.lastReviewed) !== reviewYear) return false
       if (!q) return true
       return [t.name, t.statute, t.description].some((value) => value.toLowerCase().includes(q))
     })
-  }, [allTemplates, cat, query, subject, act])
+    return result.sort((a, b) => {
+      if (sortBy === 'az') return a.name.localeCompare(b.name)
+      if (sortBy === 'most-used') return (usage.usageCounts[b.id] || 0) - (usage.usageCounts[a.id] || 0) || a.name.localeCompare(b.name)
+      if (sortBy === 'recently-used') return (usage.recentlyUsed.indexOf(a.id) + 99) - (usage.recentlyUsed.indexOf(b.id) + 99)
+      if (sortBy === 'recently-reviewed') return (b.lastReviewed || '').localeCompare(a.lastReviewed || '')
+      return 0
+    })
+  }, [allTemplates, cat, query, subject, act, tier, court, state, reviewYear, sortBy, usage])
 
   const visibleTemplates = showMore ? filtered : filtered.slice(0, 20)
 
@@ -87,7 +108,25 @@ export function LegalDraftStudio() {
     setAct('')
     setQuery('')
     setCat('all')
+    setTier('all')
+    setCourt('')
+    setState('')
+    setReviewYear('')
+    setSortBy('default')
     setShowMore(false)
+  }
+
+  const selectTemplate = (id: string) => {
+    setTemplateId(id)
+    const next = markDraftUsed(usage, id)
+    setUsage(next)
+    writeDraftUsage(next)
+  }
+
+  const toggleFavorite = (id: string) => {
+    const next = toggleDraftFavorite(usage, id)
+    setUsage(next)
+    writeDraftUsage(next)
   }
 
   const loadSample = () => {
@@ -202,24 +241,57 @@ export function LegalDraftStudio() {
               <button type="button" onClick={() => setShowAdvanced((v) => !v)} className="inline-flex items-center gap-1.5 rounded-xl border border-[color:var(--border)] px-3 py-2 text-[11px] font-extrabold"><SlidersHorizontal className="size-3.5" /> Advanced filters</button>
               <button type="button" onClick={resetBrowser} className="inline-flex items-center gap-1 text-[11px] font-bold text-[color:var(--ink-muted)]"><X className="size-3" /> Reset</button>
             </div>
-            {showAdvanced && <div className="mt-2 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-3 text-[11px] text-[color:var(--ink-muted)]">
-              <div className="font-extrabold text-[color:var(--ink)]">Advanced browsing</div>
-              <p className="mt-1 leading-5">Use Subject + Act/Law together to narrow the library. Search also matches document name, statute and description. More filters can be added later without changing the draft data model.</p>
+            {showAdvanced && <div className="mt-2 space-y-2 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-3">
+              <div className="grid gap-2 sm:grid-cols-2">
+                <label className="text-[10px] font-extrabold uppercase tracking-wide">Governance
+                  <select value={tier} onChange={(e) => { setTier(e.target.value as typeof tier); setShowMore(false) }} className="mt-1 w-full rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] px-2 py-2 text-xs">
+                    <option value="all">All tiers</option><option value="reviewed">Reviewed full draft</option><option value="scaffold">Educational scaffold / catalogue</option>
+                  </select>
+                </label>
+                <label className="text-[10px] font-extrabold uppercase tracking-wide">Sort
+                  <select value={sortBy} onChange={(e) => setSortBy(e.target.value as typeof sortBy)} className="mt-1 w-full rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] px-2 py-2 text-xs">
+                    <option value="default">Default</option><option value="az">A–Z</option><option value="most-used">Most used</option><option value="recently-used">Recently used</option><option value="recently-reviewed">Recently reviewed</option>
+                  </select>
+                </label>
+                <label className="text-[10px] font-extrabold uppercase tracking-wide">Court / forum
+                  <select value={court} onChange={(e) => setCourt(e.target.value)} className="mt-1 w-full rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] px-2 py-2 text-xs">
+                    <option value="">All courts / forums</option>{courts.map((x) => <option key={x} value={x}>{x}</option>)}
+                  </select>
+                </label>
+                <label className="text-[10px] font-extrabold uppercase tracking-wide">State dependency
+                  <select value={state} onChange={(e) => setState(e.target.value)} className="mt-1 w-full rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] px-2 py-2 text-xs">
+                    <option value="">All state dependencies</option>{states.map((x) => <option key={x} value={x}>{x}</option>)}
+                  </select>
+                </label>
+                <label className="text-[10px] font-extrabold uppercase tracking-wide sm:col-span-2">Review year
+                  <select value={reviewYear} onChange={(e) => setReviewYear(e.target.value)} className="mt-1 w-full rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] px-2 py-2 text-xs">
+                    <option value="">Any review year</option>{reviewYears.map((x) => <option key={x} value={x}>{x}</option>)}
+                  </select>
+                </label>
+              </div>
+              <p className="text-[10px] leading-4 text-[color:var(--ink-muted)]">“Reviewed” means the repository marks the template as a reviewed full draft. Catalogue entries remain scaffolds and are not filing-ready forms.</p>
             </div>}
             <div className="mt-4 flex items-center justify-between gap-2">
               <span className="text-[10px] font-bold text-[color:var(--ink-muted)]">{filtered.length.toLocaleString()} matching drafts</span>
               <span className="text-[10px] font-bold text-[color:var(--ink-muted)]">{TEMPLATE_CATALOG.length.toLocaleString()} catalogue entries</span>
             </div>
             <div className="mt-2 space-y-2">
-              {!subject && !act && !query && cat === 'all' ? (
+              {!subject && !act && !query && cat === 'all' && tier === 'all' && !court && !state && !reviewYear ? (
                 <div className="rounded-xl border border-dashed border-[color:var(--border)] p-4 text-center">
                   <div className="text-sm font-black">Choose a subject to begin</div>
                   <p className="mt-1 text-[11px] leading-5 text-[color:var(--ink-muted)]">Select a subject above, then choose an Act/Law such as BNSS, BNS or CPC. Only related drafts will appear here.</p>
                 </div>
               ) : visibleTemplates.map((t) => (
-                <button key={t.id} type="button" onClick={() => { setTemplateId(t.id); setValues({}) }} className={`w-full rounded-xl border p-3 text-left transition ${templateId === t.id ? 'border-[#8B1E3F] bg-[#8B1E3F]/5' : 'border-[color:var(--border)]'}`}>
-                  <div className="text-sm font-extrabold">{t.name}</div>
+                <button key={t.id} type="button" onClick={() => { selectTemplate(t.id); setValues({}) }} className={`w-full rounded-xl border p-3 text-left transition ${templateId === t.id ? 'border-[#8B1E3F] bg-[#8B1E3F]/5' : 'border-[color:var(--border)]'}`}>
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="text-sm font-extrabold">{t.name}</div>
+                    <button type="button" aria-label={usage.favorites.includes(t.id) ? 'Remove from favourites' : 'Add to favourites'} onClick={(e) => { e.stopPropagation(); toggleFavorite(t.id) }} className="min-h-11 min-w-11 rounded-lg text-base">{usage.favorites.includes(t.id) ? '★' : '☆'}</button>
+                  </div>
                   <div className="mt-1 text-[10px] leading-4 text-[color:var(--ink-muted)]">{t.statute}</div>
+                  <div className="mt-1 flex flex-wrap gap-1.5 text-[9px] font-bold">
+                    <span className="rounded-full bg-slate-100 px-2 py-1">{getDraftTier(undefined, t.tier) === 'reviewed' ? 'Reviewed' : 'Scaffold'}</span>
+                    {usage.recentlyUsed.includes(t.id) && <span className="rounded-full bg-slate-100 px-2 py-1">Recently used</span>}
+                  </div>
                 </button>
               ))}
             </div>
@@ -230,7 +302,15 @@ export function LegalDraftStudio() {
               <>
                 <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-xs leading-5 text-amber-950">
                   <strong>Use carefully:</strong> {template.disclaimer}
-                  <div className="mt-1 opacity-80">Last reviewed: {template.lastReviewed}</div>
+                  <div className="mt-2 grid gap-2 sm:grid-cols-2">
+                    <div><strong>Tier:</strong> {getDraftTier(undefined, template.tier) === 'reviewed' ? 'Reviewed full draft' : 'Educational scaffold / catalogue'}</div>
+                    <div><strong>Last reviewed:</strong> {template.lastReviewed || 'Not recorded'}</div>
+                    <div><strong>Applicable Act:</strong> {template.statute}</div>
+                    <div><strong>Relevant sections:</strong> {template.relevantSections?.join(', ') || 'Verify from the applicable law'}</div>
+                    <div><strong>Court / forum:</strong> {template.courtForum || 'Verify applicable forum rules'}</div>
+                    <div><strong>State dependency:</strong> {template.stateDependency || 'Verify state/local rules'}</div>
+                    <div><strong>Limitation:</strong> {template.limitationConsiderations || 'Check the applicable limitation regime'}</div>
+                  </div>
                 </div>
 
                 <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">

@@ -12,6 +12,8 @@ export type DraftField = {
   required?: boolean
 }
 
+export type DraftTier = 'reviewed' | 'scaffold'
+
 export type DraftTemplate = {
   id: string
   slug: string
@@ -23,11 +25,16 @@ export type DraftTemplate = {
   fields: DraftField[]
   build: (v: Record<string, string>) => string
   annexures?: string[]
-  lastReviewed: string
+  lastReviewed?: string
+  tier?: DraftTier
+  courtForum?: string
+  stateDependency?: string
+  limitationConsiderations?: string
+  relevantSections?: string[]
 }
 
 const DISCLAIMER =
-  'Educational scaffold only. Not legal advice. Verify BNSS/CPC text, special statutes, and local court rules before filing.'
+  'Educational scaffold only. Not legal advice. Verify applicable statute, amendments, procedural rules, and local court practice before filing.'
 
 function v(vals: Record<string, string>, key: string, fallback = '_______________') {
   const t = (vals[key] || '').trim()

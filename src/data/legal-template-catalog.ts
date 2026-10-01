@@ -51,6 +51,9 @@ export const TEMPLATE_CATALOG = groups.flatMap((group) => group.names.map((name)
     statute: group.statute,
     description: 'Structured educational scaffold for ' + name.toLowerCase() + ' practice.',
     status: 'catalog' as const,
+    tier: 'scaffold' as const,
+    courtForum: 'Forum-dependent — verify applicable court rules',
+    stateDependency: 'State/local rules may apply',
     tags: [group.area, group.statute],
   }
 }))
@@ -73,7 +76,9 @@ export function catalogToDraftTemplate(entry: (typeof TEMPLATE_CATALOG)[number])
     description: entry.description,
     disclaimer: 'Educational catalogue scaffold only. Not a court-approved form. Verify the applicable statute, rules, jurisdiction and current practice before filing.',
     fields: GENERIC_FIELDS,
-    lastReviewed: '2026-09-29',
+    tier: entry.tier,
+    courtForum: entry.courtForum,
+    stateDependency: entry.stateDependency,
     build: (values) => [
       'IN THE ' + (values.court || '________________ COURT / AUTHORITY'),
       '',
