@@ -81,3 +81,42 @@ export function loadAndClearCitationHandoff(): { text: string; source: 'query' |
 
   return { text: '', source: null }
 }
+
+
+export interface CitationVerificationHandoff {
+  caseName: string
+  citation: string
+  status: 'verified' | 'partial' | 'not-verified' | 'conflict' | 'user-provided'
+}
+
+export const CITATION_VERIFICATION_RETURN_KEY = 'cp-law:citation-verification-return:v1'
+
+export function saveCitationVerificationResults(results: CitationVerificationHandoff[]): void {
+  if (typeof window === 'undefined' || !results.length) return
+  try {
+    window.sessionStorage?.setItem(CITATION_VERIFICATION_RETURN_KEY, JSON.stringify(results))
+  } catch {
+    // sessionStorage disabled or quota
+  }
+}
+
+export function loadAndClearCitationVerificationResults(): CitationVerificationHandoff[] {
+  if (typeof window === 'undefined') return []
+  try {
+    const raw = window.sessionStorage?.getItem(CITATION_VERIFICATION_RETURN_KEY)
+    if (!raw) return []
+    window.sessionStorage?.removeItem(CITATION_VERIFICATION_RETURN_KEY)
+    const parsed = JSON.parse(raw)
+    if (!Array.isArray(parsed)) return []
+    return parsed.filter(
+      (item): item is CitationVerificationHandoff =>
+        item &&
+        typeof item === 'object' &&
+        typeof item.caseName === 'string' &&
+        typeof item.citation === 'string' &&
+        ['verified', 'partial', 'not-verified', 'conflict', 'user-provided'].includes(item.status),
+    )
+  } catch {
+    return []
+  }
+}
