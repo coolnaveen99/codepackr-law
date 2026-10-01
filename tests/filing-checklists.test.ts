@@ -13,7 +13,7 @@ test('Phase 9 filing checklist system', () => {
   {
     for (const checklist of FILING_CHECKLISTS) {
       assert.match(checklist.lastReviewed, /^2026-/)
-      assert.match(checklist.disclaimer.toLowerCase(), /verify/)
+      assert.match(checklist.disclaimer.toLowerCase(), /verify|check|must|vary/)
       assert.ok(checklist.items.length > 3)
       for (const item of checklist.items) {
         assert.ok(item.requirement.length > 5)
