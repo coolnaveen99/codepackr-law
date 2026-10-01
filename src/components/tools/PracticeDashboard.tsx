@@ -89,10 +89,8 @@ export function PracticeDashboard() {
   const recentJudgments = useMemo(() => {
     const lastRead = loadJson<{ judgmentId?: string } | null>('cplaw.judgmentLastRead.v1', null)
     const byLastRead = lastRead?.judgmentId ? ALL_JUDGMENTS.find((j) => j.id === lastRead.judgmentId) : undefined
-    const pool = byLastRead
-      ? [byLastRead, ...ALL_JUDGMENTS.filter((j) => j.id !== byLastRead.id)]
-      : ALL_JUDGMENTS
-    return pool.slice(0, 3)
+    const pool = ALL_JUDGMENTS.filter((j) => j.id !== byLastRead?.id).sort((a, b) => (b.year || 0) - (a.year || 0))
+    return (byLastRead ? [byLastRead, ...pool] : pool).slice(0, 3)
   }, [])
 
   const add = () => {
@@ -129,7 +127,7 @@ export function PracticeDashboard() {
         <DashboardCard icon={<BookOpen className="size-4" />} title="Research notes" value={researchActive ? '1 active' : '0'} detail="Research Workbench" onClick={() => openTool('research-workbench')} />
         <DashboardCard icon={<FileText className="size-4" />} title="Draft activity" value={String(draftCount)} detail="Recent/favourite drafts" onClick={() => openTool('legal-draft-studio')} />
         <DashboardCard icon={<CheckSquare className="size-4" />} title="Checklist items" value={String(checklistDone)} detail="Completed filing items" onClick={() => openTool('filing-checklists')} />
-        <DashboardCard icon={<Gavel className="size-4" />} title="Recent judgments" value={String(recentJudgments.length)} detail="Case Law Library" onClick={() => openTool('case-law-library')} />
+        <DashboardCard icon={<Gavel className="size-4" />} title="Recent judgments" value={String(recentJudgments.length)} detail="Case Law Library" onClick={() => openTool('case-law')} />
         <DashboardCard icon={<Scale className="size-4" />} title="Favourite statutes" value={String(favourites.length)} detail="Browser-local bookmarks" onClick={() => document.getElementById('favourite-statutes')?.scrollIntoView({ behavior: 'smooth' })} />
       </section>
 
