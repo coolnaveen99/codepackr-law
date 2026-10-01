@@ -671,7 +671,7 @@ The Phase 18 roadmap deliverable is complete: the verification policy defines re
 **Phase 27 status:** **CLOSED** — PR #97, CI run #36898847552 passed TypeScript, unit tests and production build.
 
 
-## Phase 29 — Security — IN PROGRESS
+## Phase 29 — Security — COMPLETED (2026-10-01)
 
 | Check | Result |
 |---|---|
@@ -683,7 +683,7 @@ The Phase 18 roadmap deliverable is complete: the verification policy defines re
 | JSON research-session import boundary | **IMPLEMENTED** |
 | Local text truncation | **IMPLEMENTED** |
 | Uploaded content execution | **NOT USED** |
-| Dependency audit evidence | **PENDING** |
-| CI quality gate | **PENDING** |
+| Dependency audit evidence | **PASS** — CI #36900020598 |
+| CI quality gate | **PASS** — CI #36900020598 |
 
-**Phase 29 status:** IN PROGRESS until CI and dependency-review evidence are recorded.
+**Phase 29 status:** **CLOSED** — CI #36900020598 passed dependency audit, TypeScript, unit tests and production build.
