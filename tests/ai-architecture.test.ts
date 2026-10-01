@@ -1,5 +1,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
+
+// Phase 17 contract tests intentionally remain provider-free.
 import {
   AI_ARCHITECTURE_BOUNDARIES,
   buildAiLegalResponse,
