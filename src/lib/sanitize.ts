@@ -49,3 +49,21 @@ export function allowedTextMime(mime: string): boolean {
     m === ''
   )
 }
+
+
+export const MAX_UPLOAD_BYTES = 10 * 1024 * 1024
+
+export function validateLocalUpload(
+  file: File,
+  allowedExtensions: readonly string[],
+  maxBytes = MAX_UPLOAD_BYTES,
+): string | null {
+  if (file.size > maxBytes) return 'The selected file is too large for safe browser processing.'
+  if (isBlockedExtension(file.name)) return 'This file type is blocked for security reasons.'
+  const lowerName = file.name.toLowerCase()
+  const extension = lowerName.includes('.') ? lowerName.slice(lowerName.lastIndexOf('.') + 1) : ''
+  const allowed = allowedExtensions.some((item) => item.replace(/^\./, '').toLowerCase() === extension)
+  if (!allowed) return 'Unsupported file type. Select one of the formats offered by this tool.'
+  if (file.type && !allowedTextMime(file.type)) return 'The selected file MIME type is not permitted for this local text workflow.'
+  return null
+}

@@ -1,5 +1,7 @@
 import { useMemo, useState } from 'react'
 import { ArrowLeftRight, Check, Copy, Eraser, FileDiff, FileUp, ShieldCheck } from 'lucide-react'
+import * as mammoth from 'mammoth'
+import { limitUserText, validateLocalUpload } from '../../lib/sanitize'
 
 type DiffKind = 'same' | 'add' | 'del'
 type DiffLine = { kind: DiffKind; text: string }
@@ -63,6 +65,7 @@ export function DocumentCompare() {
   const [ignoreCase, setIgnoreCase] = useState(false)
   const [unified, setUnified] = useState(false)
   const [copied, setCopied] = useState(false)
+  const [fileError, setFileError] = useState('')
 
   const lines = useMemo(() => {
     if (!left.trim() && !right.trim()) return []
@@ -94,9 +97,22 @@ export function DocumentCompare() {
 
   const loadFile = async (file: File | undefined, side: 'left' | 'right') => {
     if (!file) return
-    const text = await file.text()
-    if (side === 'left') setLeft(text)
-    else setRight(text)
+    const error = validateLocalUpload(file, ['txt', 'text', 'md', 'docx'])
+    if (error) {
+      setFileError(error)
+      return
+    }
+    try {
+      setFileError('')
+      const text = file.name.toLowerCase().endsWith('.docx')
+        ? (await mammoth.extractRawText({ arrayBuffer: await file.arrayBuffer() })).value
+        : await file.text()
+      const safeText = limitUserText(text)
+      if (side === 'left') setLeft(safeText)
+      else setRight(safeText)
+    } catch {
+      setFileError('The selected document could not be read locally.')
+    }
   }
 
   return (
@@ -128,7 +144,7 @@ export function DocumentCompare() {
                 <div><div className="text-sm font-black">{label}</div><div className="text-[11px] text-[color:var(--ink-muted)]">{value.length.toLocaleString()} characters</div></div>
                 <label className="inline-flex cursor-pointer items-center gap-1.5 rounded-xl border border-[color:var(--border)] px-3 py-2 text-xs font-extrabold">
                   <FileUp className="size-3.5" /> Upload
-                  <input className="hidden" type="file" accept=".txt,.text,.md,.docx,.pdf" onChange={(e) => loadFile(e.target.files?.[0], side)} />
+                  <input className="hidden" type="file" accept=".txt,.text,.md,.docx" onChange={(e) => loadFile(e.target.files?.[0], side)} />
                 </label>
               </div>
               <textarea value={value} onChange={(e) => side === 'left' ? setLeft(e.target.value) : setRight(e.target.value)} rows={15} placeholder={side === 'left' ? 'Paste the original document…' : 'Paste the revised document…'} className="w-full rounded-xl border border-[color:var(--border)] bg-transparent p-3 text-sm leading-6 font-mono outline-none focus:border-[#8B1E3F]" />
@@ -142,6 +158,8 @@ export function DocumentCompare() {
         <button type="button" onClick={() => { setLeft(''); setRight('') }} className="inline-flex items-center gap-1.5 rounded-xl border border-[color:var(--border)] px-3 py-2 text-xs font-extrabold"><Eraser className="size-3.5" /> Clear</button>
         <button type="button" onClick={() => { setLeft(right); setRight(left) }} className="inline-flex items-center gap-1.5 rounded-xl border border-[color:var(--border)] px-3 py-2 text-xs font-extrabold"><ArrowLeftRight className="size-3.5" /> Swap</button>
       </div>
+
+      {fileError && <p role="alert" className="text-xs font-bold text-red-700">{fileError}</p>}
 
       {(left.trim() || right.trim()) && (
         <section className="rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] overflow-hidden">

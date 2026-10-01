@@ -46,6 +46,7 @@ import {
   buildJudgmentAnalyzerUrl,
   saveJudgmentHandoff,
 } from '../../lib/judgmentHandoff'
+import { limitUserText, validateLocalUpload } from '../../lib/sanitize'
 
 export function ResearchWorkbench() {
   const [session, setSession] = useState<ResearchSession>(() =>
@@ -195,10 +196,16 @@ export function ResearchWorkbench() {
     const file = e.target.files?.[0]
     if (!file) return
     setImportStatus(null)
+    const validationError = validateLocalUpload(file, ['json'])
+    if (validationError) {
+      setImportStatus({ message: validationError, isError: true })
+      e.target.value = ''
+      return
+    }
     const reader = new FileReader()
     reader.onload = (event) => {
       try {
-        const text = event.target?.result as string
+        const text = limitUserText(event.target?.result as string)
         const parsed = JSON.parse(text)
         const normalized = validateAndNormalizeSession(parsed)
         setSession(normalized)

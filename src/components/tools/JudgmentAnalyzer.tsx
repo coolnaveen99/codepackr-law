@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { ArrowLeft, Check, Copy, FileText, Scale, Sparkles, Upload } from 'lucide-react'
 import * as mammoth from 'mammoth'
+import { limitUserText, validateLocalUpload } from '../../lib/sanitize'
 import { loadAndClearJudgmentHandoff, type JudgmentHandoffPayload } from '../../lib/judgmentHandoff'
 import {
   analyzeJudgmentText,
@@ -97,17 +98,19 @@ export function JudgmentAnalyzer() {
     setFileError('')
     setLoadingFile(true)
     try {
+      const validationError = validateLocalUpload(file, ['txt', 'docx'])
+      if (validationError) throw new Error(validationError)
       const kind = inputKindFromName(file.name)
       if (kind === 'txt') {
-        setText(await file.text())
+        setText(limitUserText(await file.text()))
       } else {
         const arrayBuffer = await file.arrayBuffer()
         const result = await mammoth.extractRawText({ arrayBuffer })
-        setText(result.value)
+        setText(limitUserText(result.value))
       }
       setHandoff({ payload: null, source: null })
-    } catch {
-      setFileError('The selected document could not be read. Use a UTF-8 TXT or a DOCX file with readable text.')
+    } catch (error) {
+      setFileError(error instanceof Error ? error.message : 'The selected document could not be read locally.')
     } finally {
       setLoadingFile(false)
     }

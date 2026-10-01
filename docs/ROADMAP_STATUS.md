@@ -383,4 +383,10 @@ The existing research-bundle implementation was audited against roadmap §32. Th
 
 The neutral-analysis surface now explicitly exposes the roadmap extraction/organisation utilities while preserving the prohibition on judicial-outcome prediction, judge-bias scoring, conviction prediction, winner prediction and personal competence/fitness scoring.
 
-**Next:** validate Phase 28 with CI and record the exit audit.
+**Exit audit:** `docs/PHASE-28-EXIT-AUDIT.md`.
+
+## Phase 29 — Security (IN PROGRESS)
+
+Phase 29 hardening is being applied to actual local upload boundaries, not just documented. Shared validation now enforces a 10 MB default limit, extension allow-lists, blocked executable extensions and MIME checks. Document Compare no longer advertises unsupported PDF upload handling.
+
+**Exit audit:** `docs/PHASE-29-EXIT-AUDIT.md`.
