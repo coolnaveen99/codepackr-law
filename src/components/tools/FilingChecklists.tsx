@@ -3,6 +3,7 @@ import { ClipboardCheck, RotateCcw, ExternalLink } from 'lucide-react'
 import { FILING_CHECKLISTS, type ChecklistStatus } from '../../data/filingChecklists'
 
 const STORAGE_KEY = 'cp-law:filing-checklists:v1'
+const LOCAL_KEY = 'cp-law:filing-checklists-local-additions:v1'
 
 export function FilingChecklists() {
   const [activeId, setActiveId] = useState(FILING_CHECKLISTS[0]?.id ?? '')
@@ -10,8 +11,9 @@ export function FilingChecklists() {
     try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}') } catch { return {} }
   })
   const [filter, setFilter] = useState<'all'|'todo'|'done'|'na'>('all')
-  const [court, setCourt] = useState('')
-  const [state, setState] = useState('')
+  const [court, setCourt] = useState(() => { try { return JSON.parse(localStorage.getItem(LOCAL_KEY) || '{}').court || '' } catch { return '' } })
+  const [state, setState] = useState(() => { try { return JSON.parse(localStorage.getItem(LOCAL_KEY) || '{}').state || '' } catch { return '' } })
+  const saveLocalAdditions = (nextCourt: string, nextState: string) => { try { localStorage.setItem(LOCAL_KEY, JSON.stringify({ court: nextCourt, state: nextState })) } catch {} }
   const checklist = useMemo(() => FILING_CHECKLISTS.find((c) => c.id === activeId) ?? FILING_CHECKLISTS[0], [activeId])
   const save = (next: Record<string, ChecklistStatus>) => { setStatus(next); try { localStorage.setItem(STORAGE_KEY, JSON.stringify(next)) } catch {} }
   const setItem = (itemId: string, s: ChecklistStatus) => save({ ...status, [`${activeId}:${itemId}`]: s })
@@ -36,10 +38,10 @@ export function FilingChecklists() {
             </select>
           </label>
           <label className="text-[10px] font-extrabold uppercase tracking-wide">Court / forum addition
-            <input value={court} onChange={(e) => setCourt(e.target.value)} placeholder="Record local rule / registry note" className="mt-1 min-h-11 w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-transparent px-3 text-xs" />
+            <input value={court} onChange={(e) => { setCourt(e.target.value); saveLocalAdditions(e.target.value, state) }} placeholder="Record local rule / registry note" className="mt-1 min-h-11 w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-transparent px-3 text-xs" />
           </label>
           <label className="text-[10px] font-extrabold uppercase tracking-wide">State addition
-            <input value={state} onChange={(e) => setState(e.target.value)} placeholder="Record state-specific requirement" className="mt-1 min-h-11 w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-transparent px-3 text-xs" />
+            <input value={state} onChange={(e) => { setState(e.target.value); saveLocalAdditions(court, e.target.value) }} placeholder="Record state-specific requirement" className="mt-1 min-h-11 w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-transparent px-3 text-xs" />
           </label>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
