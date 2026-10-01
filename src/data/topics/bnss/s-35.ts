@@ -1,223 +1,457 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
 const content: TopicContent = {
-  "glance": "BNSS s. 35, When police may arrest without warrant, is a procedural provision in the Arrest of persons cluster. Apply its conditions in sequence, identify the competent criminal court and remedy, and check the s. 531 transition rule before using BNSS or the saved CrPC. Historical concordance: CrPC s. 41.",
-  "study": "Current-law identity\nBNSS s. 35 governs when police may arrest without warrant within Chapter V - Arrest of persons. The provision must be read with its enacted sub-sections, provisos, explanations, the BNSS First Schedule where classification or trial forum is relevant, and BNSS s. 34, BNSS s. 36. Historical concordance: CrPC s. 41.\n\nProcedural meaning and legislative purpose\nCriminal procedure is a sequence of safeguards, not a collection of isolated powers. This section allocates a procedural step to the police, Magistrate, trial court, Sessions Court or High Court and places conditions around its exercise. The mischief addressed is identified from the statutory text and Chapter setting; the court should not add a condition that the legislature did not enact or remove a safeguard that the text requires.\n\nMandatory application checklist\n1. Identify the proceeding, procedural stage and order sought.\n2. Confirm whether the investigation, inquiry, trial, application or appeal was pending immediately before 1 July 2024. If so, begin with BNSS s. 531(2)(a) and test whether the saved CrPC route governs.\n3. Quote the exact operative words of s. 35, including every condition, proviso and explanation.\n4. Identify the competent criminal court, territorial rule, statutory sanction or classification requirement.\n5. Map each material fact to the statutory condition it proves or fails.\n6. State the immediate remedy and the standard for interference.\n\nEvidence and constitutional control\nThe procedural record remains subject to Articles 14, 20, 21 and 22 of the Constitution. The party asserting a factual foundation bears the ordinary burden under BSA s. 104; BSA s. 106 is limited to facts especially within a person's knowledge after the foundation is established. Electronic records must be separately tested under BSA s. 63 for the applicable certificate and production requirements. BSA admissibility does not cure an unlawful arrest, search, remand or other BNSS defect.\n\nCourtroom method\nIn a written submission, state the current section first, identify the stage and forum, reproduce only the necessary statutory language, address the transition rule, apply each condition to the record, answer the principal objection, and request a precise order. Do not treat a police report as proof of guilt, an arrest as a conviction, a charge as a finding, or a procedural irregularity as automatically destroying the entire prosecution.",
-  "sections": [
+  glance:
+    'Section 35 BNSS codifies the statutory charter governing when a police officer may arrest without a warrant, replacing Section 41 CrPC. It structures the exercise of coercive police power into rigorous statutory tiers: requiring recorded subjective satisfaction for offences punishable up to seven years (incorporating the Arnesh Kumar / Satender Antil doctrine), institutionalizing mandatory notices of appearance under sub-sections (3)–(6), and introducing a revolutionary statutory protection under Section 35(7) requiring prior written permission of an officer not below Deputy Superintendent of Police (DSP) before arresting any person who is infirm or above sixty years of age for offences punishable with less than three years.',
+
+  study: `I. LEGISLATIVE OBJECTIVE & RESTRUCTURING UNDER BNSS 2023
+Section 35 of the Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS) occupies the foundational threshold of Chapter V ("Arrest of Persons", Sections 35 to 62). It directly replaces Section 41 of the Code of Criminal Procedure, 1973 (CrPC).
+In modern constitutional criminal jurisprudence, the existence of the power to arrest is fundamentally distinct from the justification for its exercise. As the Supreme Court held in Joginder Kumar v. State of U.P. (1994) 4 SCC 260 and reaffirmed in Lalita Kumari v. Govt. of U.P. (2014) 2 SCC 1, no arrest can be made simply because it is lawful for the police officer to do so; arrest strips a citizen of personal liberty under Article 21 and must survive the rigorous tests of necessity, proportionality, and non-arbitrariness.
+
+In BNSS 2023, Parliament restructured Section 35 into an integrated, tiered code:
+1. Section 35(1) enumerates the nine closed statutory gateways authorising arrest without a warrant.
+2. Section 35(1)(b) codifies the mandatory necessity conditions and written-reason requirement for offences carrying imprisonment up to seven years.
+3. Section 35(3) to (6) enact the statutory scheme for Notice of Appearance (replacing old Section 41A CrPC), granting statutory immunity from arrest to cooperating individuals.
+4. Section 35(7) enacts a historic, unprecedented statutory shield protecting senior citizens (aged 60+) and infirm persons facing minor offences punishable with less than three years imprisonment, requiring mandatory prior written permission from a Deputy Superintendent of Police (DSP).
+
+II. THE NINE STATUTORY GATEWAYS OF SECTION 35(1)
+A police officer may arrest without an order from a Magistrate and without a warrant only in the nine specific cases enumerated in Section 35(1):
+1. Clause (a) — Cognizable offence in presence: Any person who commits a cognizable offence in the presence of a police officer.
+2. Clause (b) — Offences punishable with imprisonment up to seven years: Against whom a reasonable complaint has been made, credible information received, or reasonable suspicion exists, IF the police officer satisfies the dual conditions precedent:
+   - Condition 1: Reason to believe on the basis of such complaint/information that such person has committed the offence; AND
+   - Condition 2: The police officer is subjectively satisfied that such arrest is necessary for one or more of the five codified statutory purposes:
+     (i) to prevent such person from committing any further offence;
+     (ii) for proper investigation of the offence;
+     (iii) to prevent such person from causing the evidence of the offence to disappear or tampering with such evidence in any manner;
+     (iv) to prevent such person from making any inducement, threat or promise to any person acquainted with the facts of the case so as to dissuade them from disclosing facts to court or police;
+     (v) to secure the presence of such person in court when required.
+   - MANDATORY STATUTORY OBLIGATION: The police officer SHALL record reasons in writing while making the arrest, AND shall also record reasons in writing when deciding NOT to arrest.
+3. Clause (c) — Offences punishable with imprisonment exceeding seven years, or death/life imprisonment: Where credible information is received and the police officer has reason to believe on the basis of that information that such person has committed the said offence.
+4. Clause (d) — Proclaimed Offender: Any person who has been proclaimed as an offender either under this Sanhita or by order of the State Government.
+5. Clause (e) — Stolen Property: Any person in whose possession anything is found which may reasonably be suspected to be stolen property and who may reasonably be suspected of having committed an offence with reference to such thing.
+6. Clause (f) — Obstructing Police / Escaping Custody: Any person who obstructs a police officer while in the execution of duty, or who has escaped, or attempts to escape, from lawful custody.
+7. Clause (g) — Armed Forces Deserter: Any person reasonably suspected of being a deserter from any of the Armed Forces of the Union.
+8. Clause (h) — Extraditable / Foreign Offences: Any person implicated in any act committed at any place out of India which, if committed in India, would have been punishable as an offence, and for which they are liable to extradition or apprehended in custody.
+9. Clause (i) — Breach of Rule by Released Convict: Any released convict committing a breach of any rule made under Section 398(5) BNSS (old s. 356(5) CrPC).
+
+III. NOTICE OF APPEARANCE MECHANISM (SECTION 35(3) TO 35(6))
+Sub-sections (3) through (6) of Section 35 institutionalize the Notice of Appearance regime (formerly Section 41A CrPC):
+1. Mandatory Issuance under Section 35(3): Where the arrest of a person is not required under Section 35(1), the police officer SHALL issue a notice directing the person against whom a reasonable complaint has been made or credible information received to appear before him or at such other place as may be specified.
+2. Duty to Comply under Section 35(4): It is the statutory duty of the noticee to appear and cooperate with the investigation.
+3. Statutory Immunity from Arrest under Section 35(5): Where such person complies and continues to comply with the notice, he SHALL NOT be arrested in respect of the offence referred to in the notice, unless, for reasons to be recorded in writing, the police officer is of the opinion that he ought to be arrested.
+4. Arrest on Default under Section 35(6): If the person fails to comply with the notice or refuses to identify himself, the police officer may, subject to such orders as may have been passed by a competent Court, arrest him for the offence mentioned in the notice.
+
+In Satender Kumar Antil v. CBI (2022) 10 SCC 51, the Supreme Court ruled that mechanical arrest without complying with the Section 41A (now s. 35(3)) procedure is illegal, entitles the accused to immediate bail, and renders the arresting officer liable to disciplinary action and contempt of court.
+
+IV. THE LANDMARK SENIOR CITIZEN & INFIRM PERSON SAFEGUARD: SECTION 35(7)
+Section 35(7) BNSS is one of the most transformative procedural innovations in modern Indian criminal law. It enacts an express statutory barrier against police overreach targeting vulnerable individuals:
+"Subject to the provisions of this Sanhita, no person shall be arrested without prior permission of an officer not below the rank of Deputy Superintendent of Police, in case of an offence punishable with imprisonment for less than three years, and the person is infirm or is above the age of sixty years."
+
+Deconstruction of Section 35(7):
+1. Substantive Ceiling: The offence must be punishable with imprisonment for less than three years (e.g. simple hurt under s. 115(2) BNS, defamation under s. 356(2) BNS, affray under s. 194 BNS, or minor mischief).
+2. Protected Class: The person sought to be arrested is:
+   - "infirm" (suffering from chronic illness, disability, or physical incapacity); OR
+   - "above the age of sixty years" (senior citizens).
+3. The Jurisdictional Prerequisite: Prior written permission from a gazetted police officer not below the rank of Deputy Superintendent of Police (DSP) or Assistant Commissioner of Police (ACP).
+4. Legal Consequence of Breach: The requirement is an indispensable condition precedent. An arrest executed by an Inspector or Sub-Inspector without prior written DSP sanction is void ab initio, constitutes an illegal detention, and violates the Fundamental Right under Article 21, entitling the victim to immediate release under Section 528 BNSS / Article 226 and public-law compensation (Nilabati Behera (1993)).
+
+V. PROCEDURAL COMPANION MATRIX & SECTION 531 BNSS TRANSITION
+1. Section 37 BNSS (Designated Police Officer): Requires a designated officer in every district and police station to display prominently, in physical and digital formats, the names and addresses of all arrested persons and the designations of arresting officers.
+2. Section 53 BNSS (Medical Examination): Mandates immediate examination of every arrested person by an authorized medical officer promptly after arrest, providing a continuous forensic paper trail against custodial torture (codifying D.K. Basu v. State of West Bengal (1997) 1 SCC 416).
+3. Section 58 BNSS (Reporting to Magistrate): Officers in charge of police stations must report all arrests without warrant to the District Magistrate or Sub-Divisional Magistrate.
+4. BSA 2023 Interplay: Arrest memos, digital GD (General Diary) entries, and CCTV records at police stations are electronic records under Section 63 BSA requiring Section 63(4) certification if tendered in court.
+5. Section 531(2)(a) BNSS Transitional Savings: For FIRs registered prior to 1 July 2024, the investigation and arrest procedure are governed by the saved provisions of CrPC 1973. For FIRs registered on or after 1 July 2024, the arrest procedure must strictly comply with Section 35 BNSS, including the Section 35(7) prior DSP sanction requirement.`,
+
+  sections: [
     {
-      "id": "bnss-35-module-1",
-      "title": "Provenance, Legislative Objective and Doctrinal Foundation",
-      "order": 1,
-      "content": [
-        "BNSS s. 35 regulates when police may arrest without warrant within Arrest of persons.",
-        "Read the provision purposively but begin with its enacted text and the Chapter structure.",
-        "The constitutional background includes fair procedure, personal liberty and judicial accountability under Articles 14, 21 and 22."
-      ]
+      id: 'bnss-35-module-1',
+      title: 'Legislative Architecture & The Nine Gateways of Section 35(1)',
+      order: 1,
+      content: [
+        'Section 35 BNSS replaces Section 41 CrPC 1973, establishing an exhaustive, closed statutory framework governing when police may arrest without a warrant.',
+        'As established in Joginder Kumar (1994) and Lalita Kumari (2014), the existence of the police power to arrest is fundamentally distinct from the justification for its exercise; arrest cannot be made mechanically upon registration of an FIR.',
+        'Section 35(1) contains nine distinct statutory clauses: clause (a) covers offences committed in the presence of police; clause (b) governs offences punishable up to seven years; clause (c) governs offences exceeding seven years or capital crimes; and clauses (d)-(i) cover proclaimed offenders, stolen property, obstruction/escape, deserters, extraditable acts, and released convicts.',
+        'Every arrest must strictly fall within one of these nine statutory gateways; any arrest outside these parameters is an illegal deprivation of liberty under Article 21.',
+      ],
     },
     {
-      "id": "bnss-35-module-2",
-      "title": "Textual Anatomy, Provisos and Connected Provisions",
-      "order": 2,
-      "content": [
-        "Deconstruct every clause of BNSS s. 35; do not replace the provision with a CrPC summary.",
-        "Read it with BNSS s. 34, BNSS s. 36. A connected section may define the condition, forum, time limit or remedy without replacing this section.",
-        "Use historical concordance only to explain development, never as the current citation."
-      ]
+      id: 'bnss-35-module-2',
+      title: 'The Section 35(1)(b) Framework: Seven-Year Cap & The Arnesh Kumar / Antil Doctrine',
+      order: 2,
+      content: [
+        'For offences punishable with imprisonment up to seven years, Section 35(1)(b) imposes a two-tiered statutory barrier: reasonable suspicion/complaint PLUS objective necessity under five codified purposes.',
+        'The five statutory necessity grounds are: (i) preventing further offences; (ii) proper investigation; (iii) preventing evidence tampering; (iv) preventing witness intimidation; and (v) securing presence in court.',
+        'The investigating officer is under a mandatory statutory duty to record reasons in writing whether arresting OR deciding not to arrest.',
+        'In Arnesh Kumar v. State of Bihar (2014) 8 SCC 273 and Satender Kumar Antil (2022) 10 SCC 51, the Supreme Court held that mechanical arrest without recording satisfaction of these grounds is illegal, renders the remand order invalid, and exposes the officer to departmental action and contempt of court.',
+      ],
     },
     {
-      "id": "bnss-35-module-3",
-      "title": "Mandatory Procedural Ingredients and Stage Test",
-      "order": 3,
-      "content": [
-        "First ingredient: the proceeding must be at the statutory stage addressed by s. 35.",
-        "Second ingredient: the competent officer or court must possess the relevant jurisdiction and power.",
-        "Third ingredient: each express condition, notice, reason, time limit, record or hearing requirement must be satisfied.",
-        "Fourth ingredient: the requested consequence must follow from the proved procedural breach or compliance; state the exact order sought."
-      ]
+      id: 'bnss-35-module-3',
+      title: 'The Notice of Appearance Regime: Sub-sections (3) to (6) & Statutory Immunity',
+      order: 3,
+      content: [
+        'Section 35(3) replaces old Section 41A CrPC: where arrest is not mandated under sub-section (1), the police officer is legally obligated to issue a written Notice of Appearance.',
+        'Under Section 35(4), the noticee is under a legal duty to appear before the investigating officer and comply with its terms.',
+        'Section 35(5) confers absolute statutory immunity from arrest: so long as the noticee continues to comply with the notice, he SHALL NOT be arrested, unless the police officer records specific reasons in writing justifying arrest.',
+        'Under Section 35(6), arrest is permitted only if the person wilfully fails to comply with the notice or refuses to identify himself, subject to orders of a competent Court.',
+      ],
     },
     {
-      "id": "bnss-35-module-4",
-      "title": "BSA 2023 Burden and Electronic Evidence Checkpoints",
-      "order": 4,
-      "content": [
-        "BSA s. 104 supplies the ordinary burden framework; do not shift the initial burden merely by invoking s. 106.",
-        "BSA s. 106 applies to a fact especially within knowledge only after the party relying on the legal proposition establishes the necessary foundation.",
-        "Where electronic material is tendered, separately examine relevance, authenticity, integrity, source and BSA s. 63 certificate requirements."
-      ]
+      id: 'bnss-35-module-4',
+      title: 'The Landmark Senior Citizen & Infirm Person Shield: Section 35(7) Prior DSP Sanction',
+      order: 4,
+      content: [
+        'Section 35(7) BNSS is a groundbreaking 2023 legislative reform enacting a special statutory shield for vulnerable citizens: senior citizens and infirm persons.',
+        'The provision explicitly commands: "no person shall be arrested without prior permission of an officer not below the rank of Deputy Superintendent of Police, in case of an offence punishable with imprisonment for less than three years, and the person is infirm or is above the age of sixty years."',
+        'Two cumulative preconditions trigger the shield: (i) the offence carries imprisonment of less than three years; AND (ii) the accused is infirm OR is above the age of sixty years.',
+        'The requirement of prior written permission from an officer not below DSP rank is an indispensable condition precedent; an arrest executed without DSP permission is void ab initio, rendering the arresting officer liable for unlawful confinement and constitutional tort damages.',
+      ],
     },
     {
-      "id": "bnss-35-module-5",
-      "title": "Procedural Roadmap, Forum, Limitation and Transition",
-      "order": 5,
-      "content": [
-        "For proceedings under the post-1 July 2024 regime, cite BNSS s. 35 and verify the First Schedule or special statute where applicable.",
-        "For a matter pending immediately before commencement, apply BNSS s. 531(2)(a) and identify the saved CrPC procedure before addressing merits.",
-        "Check the applicable BNSS or special-statute limitation rule and calculate the remedy period from the actual order or event."
-      ]
-    }
+      id: 'bnss-35-module-5',
+      title: 'Procedural Matrix (ss. 37, 53, 58), BSA Digital Records & Section 531 BNSS Transition',
+      order: 5,
+      content: [
+        'Section 37 BNSS mandates a Designated Police Officer and physical/digital display boards in every district and station displaying the names of arrested persons, ensuring transparency.',
+        'Section 53 BNSS operationalizes D.K. Basu (1997) by mandating a comprehensive medical examination of every arrested person by a medical officer immediately after arrest.',
+        'Electronic Evidence under Section 63 BSA: Arrest memos, digital general diary entries, and station CCTV footage are electronic records requiring Section 63(4) certification if tendered in court.',
+        'Section 531(2)(a) BNSS Transition: For FIRs registered prior to 1 July 2024, arrest and remand are governed by the saved provisions of CrPC 1973; Section 35 BNSS applies strictly to investigations commenced on or after 1 July 2024.',
+      ],
+    },
   ],
-  "provisions": [
+
+  provisions: [
     {
-      "actId": "bnss",
-      "actName": "Bharatiya Nagarik Suraksha Sanhita, 2023",
-      "provisionId": "bnss-35",
-      "section": "s. 35",
-      "title": "When police may arrest without warrant"
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-35',
+      section: 's. 35',
+      title: 'When police may arrest without warrant',
     },
     {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-63",
-      "section": "s. 63",
-      "title": "Admissibility of electronic records"
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-37',
+      section: 's. 37',
+      title: 'Designated Police Officer and display of information regarding arrested persons',
     },
     {
-      "actId": "bnss",
-      "actName": "Bharatiya Nagarik Suraksha Sanhita, 2023",
-      "provisionId": "bnss-531",
-      "section": "s. 531",
-      "title": "Repeal and savings"
-    }
-  ],
-  "examples": [
-    {
-      "id": "bnss-35-ill-1",
-      "title": "Example 1 - Conditions satisfied",
-      "illustrationType": "practical",
-      "description": "A proceeding is at the stage governed by s. 35; the authorised officer or court records each statutory reason, follows the required notice and hearing path, and acts within jurisdiction. The order is tested against the section and its connected provisions."
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-53',
+      section: 's. 53',
+      title: 'Examination of arrested person by medical officer',
     },
     {
-      "id": "bnss-35-ill-2",
-      "title": "Example 2 - Boundary defect",
-      "illustrationType": "fail-scenario",
-      "description": "The decision-maker applies s. 35 without checking the procedural stage, the s. 531 savings rule or an express statutory condition. The advocate identifies the missing condition and seeks the precise procedural remedy rather than asserting an automatic result unsupported by the Act."
-    }
-  ],
-  "hypotheticals": [
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-58',
+      section: 's. 58',
+      title: 'Police to report apprehensions to District Magistrate',
+    },
     {
-      "id": "bnss-35-hypo",
-      "title": "Chamber Practice Hypothetical: BNSS s. 35",
-      "facts": "A criminal proceeding is challenged after an order applying BNSS s. 35 to a disputed procedural step. The record contains a disagreement about the commencement status, forum, statutory condition and authenticity of an electronic record.",
-      "question": "Whether the order under BNSS s. 35 is sustainable and what immediate relief is available.",
-      "applicableLaw": "BNSS s. 35, s. 531, connected provisions BNSS s. 34, BNSS s. 36; BSA ss. 63, 104 and 106; Articles 14, 21 and 22.",
-      "analysis": "1. Identify the stage and whether the proceeding was pending immediately before 1 July 2024. 2. State the exact test in s. 35. 3. Verify jurisdiction, notice, reasons, time limits and hearing requirements. 4. Test the electronic record separately under BSA s. 63. 5. Grant only the remedy supported by the proved defect, such as modification, release, disclosure, remand correction, quashing where maintainable or appellate interference.",
-      "conclusion": "The order is sustainable only if the statutory stage, jurisdiction, conditions and transition rule are satisfied. Any digital material must independently satisfy the BSA route before its weight is assessed."
-    }
-  ],
-  "distinctions": [
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-187',
+      section: 's. 187',
+      title: 'Procedure when investigation cannot be completed in twenty-four hours (Remand)',
+    },
     {
-      "id": "bnss-35-distinction",
-      "title": "BNSS s. 35 and its connected procedure",
-      "left": "BNSS s. 35",
-      "right": "BNSS s. 34, BNSS s. 36",
-      "rows": [
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-531',
+      section: 's. 531',
+      title: 'Repeal and savings',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-63',
+      section: 's. 63',
+      title: 'Admissibility of electronic records',
+    },
+  ],
+
+  examples: [
+    {
+      id: 'bnss-35-ill-1',
+      title: 'Lawful Application of Section 35(1)(b) & Section 35(3) Notice Procedure',
+      illustrationType: 'statutory-practical',
+      description:
+        'An FIR is registered against trader T for cheating under Section 318(2) BNS (punishable with imprisonment up to three years). The investigating officer assesses the case: T is a permanent resident with fixed assets, has no prior criminal record, and there is no danger of evidence tampering or fleeing. The officer determines that arrest is unnecessary and records these reasons in the case diary. The officer serves a Notice of Appearance under Section 35(3) BNSS directing T to join the investigation on Monday at 10:00 AM. T attends, produces business books, and answers queries. Under Section 35(5) BNSS, T enjoys statutory immunity and cannot be arrested so long as T cooperates.',
+    },
+    {
+      id: 'bnss-35-ill-2',
+      title: 'Ultra Vires Arrest of Senior Citizen — Violation of Section 35(7) BNSS',
+      illustrationType: 'fail-scenario',
+      description:
+        'A neighbor lodges a complaint against 67-year-old retired teacher S for simple hurt under Section 115(2) BNS (punishable with imprisonment up to one year) following a heated verbal dispute over garden trimming. A police Sub-Inspector immediately arrests S at his residence at 8:00 PM without issuing a notice of appearance and without obtaining prior written permission from the Deputy Superintendent of Police. The arrest directly violates Section 35(7) BNSS. When S is produced before the Magistrate under Section 187 BNSS, counsel points out the patent jurisdictional breach. The Magistrate refuses remand, directs immediate release of S on personal bond, and initiates an inquiry against the Sub-Inspector for violating the statutory mandate of Section 35(7).',
+    },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'bnss-35-hypo',
+      title: 'Chamber Practice Hypothetical: Mechanical Arrest, Elderly Accused & Breach of Section 35(7) BNSS',
+      facts:
+        'In August 2024, an FIR is registered under Section 356(2) BNS (defamation, punishable with simple imprisonment up to two years or fine) and Section 351(2) BNS (criminal intimidation, punishable up to two years) against G, a 64-year-old retired journalist who wrote an investigative article regarding financial irregularities in a local cooperative bank. At 6:00 AM, the Station House Officer (SHO), an Inspector of Police, enters G’s residence, seizes his laptop, and places him under arrest without serving any prior notice of appearance. The SHO possesses no written order or permission from any superior officer. When G’s advocate questions the arrest, the SHO claims that arrest was necessary "for proper investigation" under Section 35(1)(b). At 2:00 PM, G is produced before the Judicial Magistrate for police remand.',
+      question:
+        'As Senior Counsel appearing for G before the Magistrate, deconstruct the illegality of the arrest under Section 35(1)(b), Section 35(3), and Section 35(7) BNSS, and formulate the immediate legal remedies available.',
+      applicableLaw:
+        'BNSS ss. 35(1)(b), 35(3), 35(5), 35(7), 37, 187; BSA s. 63; Constitution Arts. 21, 22; Supreme Court precedents in Arnesh Kumar (2014), Satender Kumar Antil (2022), and D.K. Basu (1997).',
+      analysis:
+        '1. Fatal Breach of Section 35(7) BNSS (Senior Citizen Protection):\n   - Both offences charged (s. 356(2) and s. 351(2) BNS) carry maximum imprisonment of less than three years.\n   - G is 64 years old, placing him squarely within the protected category of persons "above the age of sixty years".\n   - Under Section 35(7) BNSS, prior written permission of an officer not below the rank of Deputy Superintendent of Police is an absolute jurisdictional condition precedent.\n   - The SHO was an Inspector and obtained no DSP permission. The arrest is ultra vires, void ab initio, and constitutes an unlawful deprivation of liberty under Article 21.\n2. Subversion of Section 35(1)(b) & Section 35(3) Notice Mandate:\n   - Under Arnesh Kumar (2014) and Satender Kumar Antil (2022), mechanical citation of "proper investigation" without factual substantiation does not satisfy the necessity test.\n   - For an offence carrying less than seven years, Section 35(3) BNSS commands the issuance of a Notice of Appearance as the statutory default. Bypassing Section 35(3) without showing non-compliance renders the arrest unlawful.\n3. Defective Seizure & Lack of BSA Section 63 Certification:\n   - Seizing G’s laptop without preparing a contemporaneous digital seizure memo compliant with Section 63(4) BSA violates mandatory digital forensic safeguards.\n4. Magistrate’s Judicial Duty under Section 187 BNSS:\n   - The Magistrate is not a post office to endorse illegal police action. As held in Arnesh Kumar, a Magistrate authorizing remand in violation of Section 35 safeguards is liable to departmental proceedings. The Magistrate must refuse police custody and judicial remand.',
+      conclusion:
+        'The arrest is contaminated by gross jurisdictional illegality. Senior Counsel must move an application before the Magistrate seeking: (a) immediate rejection of the remand prayer under Section 187 BNSS; (b) unconditional release of G on personal bond; (c) endorsement in the order sheet recording the flagrant violation of Section 35(7) BNSS; and (d) preservation of rights to initiate contempt proceedings and claim constitutional tort damages before the High Court.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'bnss-35-dist-1',
+      title: 'Section 35(1)(b) (Up to 7 Years) vs Section 35(1)(c) (More than 7 Years / Capital Offences)',
+      left: 'Section 35(1)(b) BNSS (Up to 7 Years)',
+      right: 'Section 35(1)(c) BNSS (Exceeding 7 Years / Life / Death)',
+      rows: [
         {
-          "point": "Function",
-          "left": "When police may arrest without warrant",
-          "right": "Connected stage, condition or remedy"
+          point: 'Necessity Conditions',
+          left: 'Subjective satisfaction of police officer must be grounded in one of five codified necessity purposes',
+          right: 'Credible information and reason to believe the person committed the offence suffices',
         },
         {
-          "point": "Application",
-          "left": "Apply its own enacted ingredients",
-          "right": "Do not import the neighbour's test automatically"
+          point: 'Recording of Reasons',
+          left: 'Mandatory statutory duty to record reasons in writing whether arresting OR not arresting',
+          right: 'Reason to believe recorded; five codified necessity criteria are not formally applicable',
         },
         {
-          "point": "Transition",
-          "left": "Check s. 531 before selecting BNSS",
-          "right": "Historical CrPC numbering is concordance only"
-        }
-      ]
-    }
-  ],
-  "misconceptions": [
-    {
-      "id": "bnss-35-trap-1",
-      "trap": "Citing only the old CrPC number for s. 35.",
-      "correction": "Use BNSS s. 35 for the current regime and mention the historical number only when the transition or comparison requires it."
+          point: 'Default Procedure',
+          left: 'Notice of Appearance under Section 35(3) is the statutory norm unless necessity is demonstrated',
+          right: 'Immediate arrest is legally permissible based on credible information without notice',
+        },
+        {
+          point: 'Judicial Scrutiny',
+          left: 'Subject to strict Arnesh Kumar / Satender Antil checklist scrutiny at remand',
+          right: 'Judicial review focuses on credible information and genuine reason to believe',
+        },
+      ],
     },
     {
-      "id": "bnss-35-trap-2",
-      "trap": "Treating procedure, offence and proof as one issue.",
-      "correction": "Analyse BNSS procedure, BNS or special-statute liability, and BSA proof as separate legal layers."
+      id: 'bnss-35-dist-2',
+      title: 'Section 35(3) BNSS (Notice of Appearance) vs Section 35(1) BNSS (Arrest Without Warrant)',
+      left: 'Section 35(3) BNSS (Notice of Appearance)',
+      right: 'Section 35(1) BNSS (Arrest Without Warrant)',
+      rows: [
+        {
+          point: 'Primary Purpose',
+          left: 'Securing investigation cooperation while preserving citizen’s personal liberty under Article 21',
+          right: 'Physical deprivation of liberty to prevent crime, flight, tampering, or witness intimidation',
+        },
+        {
+          point: 'Statutory Presumption',
+          left: 'Mandatory default where arrest is not strictly required under Section 35(1)',
+          right: 'Exceptional coercive power subject to strict statutory necessity thresholds',
+        },
+        {
+          point: 'Arrest Immunity',
+          left: 'Confers statutory immunity under s. 35(5) as long as noticee continues to comply',
+          right: 'Physical custody leading to production before Magistrate within 24 hours under s. 58/187',
+        },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'bnss-35-trap1',
+      trap: 'A police officer has unfettered discretionary power to arrest any person named in a cognizable FIR.',
+      correction:
+        'In Joginder Kumar (1994) and Arnesh Kumar (2014), the Supreme Court ruled that the existence of the power to arrest is completely different from the justification for its exercise. For offences carrying up to seven years imprisonment, arrest without satisfying the five codified necessity conditions in Section 35(1)(b) is unlawful.',
     },
     {
-      "id": "bnss-35-trap-3",
-      "trap": "Using BSA s. 106 to avoid proving foundational facts.",
-      "correction": "The asserting party must first establish the legal and factual foundation; special knowledge does not erase the initial burden."
-    }
-  ],
-  "cases": [
-    {
-      "name": "Lalita Kumari v. Government of Uttar Pradesh",
-      "year": 2014,
-      "citation": "(2014) 2 SCC 1",
-      "court": "Supreme Court of India",
-      "facts": "The petitioner sought registration of information disclosing a cognizable offence.",
-      "issue": "Whether registration is mandatory when information discloses a cognizable offence.",
-      "ratioDecidendi": "Registration is mandatory when the information discloses a cognizable offence, subject to the limited preliminary-inquiry framework recognised by the Constitution Bench.",
-      "holding": "The Court directed compliance with mandatory registration and confined preliminary inquiry to recognised categories.",
-      "relevance": "Use only where s. 35 concerns information, investigation or a connected pre-cognizance step; do not treat this case as authority for every BNSS provision."
+      id: 'bnss-35-trap2',
+      trap: 'Section 35(7) BNSS prior DSP permission is a directory administrative guideline that does not invalidate an arrest.',
+      correction:
+        'Section 35(7) BNSS is a mandatory jurisdictional condition precedent enacted with negative language ("no person shall be arrested without prior permission..."). Arresting an infirm person or a person above 60 years of age for an offence carrying less than three years without prior DSP sanction is void ab initio, invalidates detention, and violates Article 21.',
     },
     {
-      "name": "Arnesh Kumar v. State of Bihar",
-      "year": 2014,
-      "citation": "(2014) 8 SCC 273",
-      "court": "Supreme Court of India",
-      "facts": "The case concerned arrest and detention for an offence carrying imprisonment up to seven years.",
-      "issue": "Whether arrest and remand may be authorised mechanically in a lower-punishment case.",
-      "ratioDecidendi": "Police must satisfy and record the necessity conditions for arrest, and Magistrates must not authorise detention mechanically.",
-      "holding": "The Court issued safeguards enforcing the discipline now reflected in the BNSS arrest framework.",
-      "relevance": "Use where s. 35 concerns arrest, custody, remand or liberty; otherwise identify a section-specific authority instead of forcing this case into the argument."
+      id: 'bnss-35-trap3',
+      trap: 'A police officer can arrest a person complying with a Section 35(3) notice at any time without recording reasons.',
+      correction:
+        'Under Section 35(5) BNSS, a person who complies with a Notice of Appearance enjoys statutory immunity from arrest. The police officer can arrest only after recording specific, written reasons explaining why arrest has become imperative despite compliance.',
     },
     {
-      "name": "D.K. Basu v. State of West Bengal",
-      "year": 1997,
-      "citation": "(1997) 1 SCC 416",
-      "court": "Supreme Court of India",
-      "facts": "The Court addressed custodial violence and the absence of reliable arrest safeguards.",
-      "issue": "What minimum protections must accompany arrest and detention.",
-      "ratioDecidendi": "Arrest and custody require transparent documentation, accountability and safeguards protecting Articles 21 and 22.",
-      "holding": "The Court prescribed arrest and custody safeguards that inform the corresponding BNSS duties.",
-      "relevance": "Use where s. 35 directly engages arrest, custody, production or custody records; do not cite it as a substitute for the statutory text."
-    }
+      id: 'bnss-35-trap4',
+      trap: 'Arrest procedures for FIRs registered before 1 July 2024 are governed by BNSS Section 35.',
+      correction:
+        'Under Section 531(2)(a) BNSS, investigations pending immediately before 1 July 2024 continue under the saved provisions of CrPC 1973. Section 35 BNSS applies strictly to investigations commenced on or after 1 July 2024.',
+    },
   ],
-  "questionsAndAnswers": [
+
+  cases: [
     {
-      "id": "bnss-35-brief",
-      "draftingCategory": "brief",
-      "question": "Provide a structured legal brief on BNSS s. 35 - When police may arrest without warrant.",
-      "answer": "I. ISSUE AND JURISDICTION\nIdentify the procedural stage, competent forum, commencement status and precise order sought.\n\nII. RULE\nBNSS s. 35 governs when police may arrest without warrant. Read its clauses, provisos and connected provisions BNSS s. 34, BNSS s. 36; then test s. 531 savings.\n\nIII. APPLICATION\nMap each fact to jurisdiction, statutory condition, notice, reason, time limit and evidentiary foundation. Test electronic records under BSA s. 63 and burdens under ss. 104-106.\n\nIV. CONCLUSION\nState whether the order stands, must be modified or requires a specific procedural remedy.",
-      "explanation": "IRAC brief with current-law, transition and electronic-evidence checkpoints."
+      name: 'Arnesh Kumar v. State of Bihar',
+      year: 2014,
+      citation: '(2014) 8 SCC 273',
+      court: 'Supreme Court of India',
+      holding:
+        'Issued mandatory directions to prevent mechanical arrests in offences carrying imprisonment up to seven years: police officers must satisfy and record the necessity conditions before arresting, and Magistrates must not authorize detention without verifying compliance. Non-compliance exposes officers to departmental action and contempt.',
+      relevance:
+        'The foundational locus classicus codified directly into Section 35(1)(b) BNSS.',
     },
     {
-      "id": "bnss-35-submissions",
-      "draftingCategory": "submissions",
-      "question": "Draft written submissions on BNSS s. 35 - When police may arrest without warrant.",
-      "answer": "I. PROCEDURAL PROVENANCE\nSet out the registration date, stage, orders and material relied upon.\n\nII. STATUTORY SCHEME\nDeconstruct BNSS s. 35, the Chapter setting, connected provisions BNSS s. 34, BNSS s. 36 and s. 531 savings.\n\nIII. MANDATORY INGREDIENTS\nAddress forum, jurisdiction, conditions precedent, notice, reasons, time limits, hearing and the statutory consequence.\n\nIV. PRECEDENTS AND EVIDENCE\nUse only verified authorities relevant to the proposition. Apply BSA ss. 63, 104-106 to digital and factual proof without shifting the initial burden improperly.\n\nV. REBUTTAL AND PRAYER\nAnswer the transition, maintainability and merits objections, then seek the precise order supported by the record.",
-      "explanation": "Senior Counsel written-submissions structure for a BNSS section."
-    }
+      name: 'Satender Kumar Antil v. Central Bureau of Investigation',
+      year: 2022,
+      citation: '(2022) 10 SCC 51',
+      court: 'Supreme Court of India',
+      holding:
+        'Categorized offences for bail and held that strict compliance with Section 41A CrPC (now s. 35(3) BNSS) is mandatory; any non-compliance entitles the accused to immediate bail without police custody remand.',
+      relevance:
+        'Mandatory citation in bail and remand hearings to enforce Section 35(3) Notice of Appearance safeguards.',
+    },
+    {
+      name: 'D.K. Basu v. State of West Bengal',
+      year: 1997,
+      citation: '(1997) 1 SCC 416',
+      court: 'Supreme Court of India',
+      holding:
+        'Laid down mandatory constitutional guidelines governing arrest and detention, including preparation of arrest memo, intimation to relatives, and compulsory medical examination, now codified in BNSS ss. 37, 47, and 53.',
+      relevance:
+        'Constitutional framework under Article 21 protecting against custodial violence and illegal arrest.',
+    },
+    {
+      name: 'Joginder Kumar v. State of U.P.',
+      year: 1994,
+      citation: '(1994) 4 SCC 260',
+      court: 'Supreme Court of India',
+      holding:
+        'Held that no arrest can be made solely because an offence is cognizable and lawful for police to arrest; the officer must show reasonable justification and necessity for curtailing personal liberty.',
+      relevance:
+        'Establishes the fundamental jurisprudence that police arrest power is conditional and subject to necessity.',
+    },
+    {
+      name: 'Lalita Kumari v. Government of Uttar Pradesh',
+      year: 2014,
+      citation: '(2014) 2 SCC 1',
+      court: 'Supreme Court of India',
+      holding:
+        'Constitution Bench held that while registration of FIR is mandatory when information discloses a cognizable offence, arrest does not automatically follow registration of FIR.',
+      relevance:
+        'Decouples mandatory registration of FIR from the discretionary, condition-precedent power to arrest under Section 35 BNSS.',
+    },
   ],
-  "bareActPointers": [
-    "BNSS s. 35",
-    "BNSS s. 531",
-    "BSA ss. 63, 104-106"
+
+  questionsAndAnswers: [
+    {
+      id: 'bnss-35-brief',
+      draftingCategory: 'brief',
+      question:
+        'Prepare an IRAC Legal Case Brief on the statutory arrest architecture under Section 35 BNSS, analyzing the Section 35(1)(b) necessity test, Section 35(3) notice procedure, and Section 35(7) prior DSP sanction requirement.',
+      answer: `I. ISSUE & JURISDICTIONAL THRESHOLD
+Whether an arrest executed by a police officer without a warrant complies with the statutory gateways and conditions precedent of Section 35 BNSS, and whether the non-compliance with Section 35(1)(b), Section 35(3), or Section 35(7) renders the arrest illegal, entitling the accused to immediate discharge/bail and constitutional tort compensation. Forum: Judicial Magistrate under Section 187 BNSS; High Court under Section 528 BNSS / Article 226.
+
+II. GOVERNING RULE & STATUTORY ANATOMY
+1. The General Scheme: Section 35 BNSS enumerates nine closed gateways. For offences carrying up to seven years imprisonment, Section 35(1)(b) mandates reasonable suspicion plus recorded subjective satisfaction on five codified necessity grounds (prevent further offence, investigation, prevent tampering, witness intimidation, secure presence).
+2. The Notice Mandate: Section 35(3) makes Notice of Appearance mandatory where arrest is not required under sub-section (1). Section 35(5) confers statutory immunity from arrest so long as the noticee complies.
+3. The Section 35(7) Shield: Mandates that no person who is infirm or above sixty years of age shall be arrested without the prior written permission of an officer not below Deputy Superintendent of Police (DSP) where the offence is punishable with imprisonment for less than three years.
+4. Precedential Reinforcement: Arnesh Kumar (2014) and Satender Kumar Antil (2022) hold that mechanical arrest without recording satisfaction of conditions is illegal, renders remand invalid, and entitles the accused to immediate bail.
+
+III. APPLICATION TO FACTUAL DISPUTE
+- Step 1: Identify the offence and maximum punishment prescribed under BNS.
+- Step 2: Check whether Section 35(7) applies: Is the punishment < 3 years? Is the accused infirm or aged 60+? If yes, inspect the police record for prior written DSP permission. Absence of DSP permission renders the arrest void ab initio.
+- Step 3: For offences <= 7 years, check whether Section 35(3) Notice was served. If not served, check whether the arresting officer recorded specific reasons satisfying one of the five Section 35(1)(b) grounds. Generic boilerplate reasons violate Arnesh Kumar.
+- Step 4: Verify compliance with Section 37 (Designated Police Officer display) and Section 53 (mandatory medical checkup).
+
+IV. CONCLUSION & OPERATIVE ADVICE
+Advise counsel to raise immediate jurisdictional objections before the remand Magistrate under Section 187 BNSS, seeking rejection of remand and release on personal bond. If the Magistrate mechanically remands, file an urgent writ petition / Section 528 petition before the High Court for quashing the illegal arrest, securing release, and initiating contempt proceedings against the errant police officers.`,
+      explanation:
+        'Senior Counsel IRAC case brief on Section 35 BNSS arrest safeguards and Section 35(7) DSP sanction.',
+      relatedProvisionIds: ['bnss-35', 'bnss-37', 'bnss-53', 'bnss-187', 'bnss-531'],
+    },
+    {
+      id: 'bnss-35-submissions',
+      draftingCategory: 'submissions',
+      question:
+        'Draft comprehensive Written Submissions before the High Court under Section 528 BNSS / Article 226 challenging the illegal arrest of a senior citizen in flagrant violation of Section 35(7) and Section 35(3) BNSS.',
+      answer: `IN THE HIGH COURT OF JUDICATURE AT [JURISDICTION]
+CRIMINAL MISCELLANEOUS PETITION NO. [____] OF 202[ ]
+(UNDER SECTION 528 OF THE BHARATIYA NAGARIK SURAKSHA SANHITA, 2023 READ WITH ARTICLE 226 OF THE CONSTITUTION OF INDIA)
+
+IN THE MATTER OF:
+[PETITIONER NAME], AGED 66 YEARS                            ... PETITIONER
+VERSUS
+1. STATE OF [STATE], THROUGH SECRETARY (HOME)
+2. STATION HOUSE OFFICER, POLICE STATION [NAME]             ... RESPONDENTS
+
+WRITTEN SUBMISSIONS ON BEHALF OF THE PETITIONER CHALLENGING ILLEGAL ARREST IN VIOLATION OF SECTION 35(7) AND SECTION 35(3) BNSS
+
+MOST RESPECTFULLY SHOWETH:
+
+I. STATEMENT OF RELEVANT FACTS & PROCEDURAL PROVENANCE
+1. The Petitioner is a senior citizen, aged 66 years, and a retired civil servant with an unblemished record.
+2. On [Date], an FIR was registered against the Petitioner under Section 115(2) BNS (simple hurt, punishable with imprisonment up to one year) and Section 351(2) BNS (criminal intimidation, punishable with imprisonment up to two years) arising out of a property boundary dispute.
+3. On [Date] at 6:30 AM, Respondent No. 2 (a Sub-Inspector of Police) forcibly arrested the Petitioner from his residence without serving any Notice of Appearance and without obtaining prior permission from any superior authority.
+4. The learned Judicial Magistrate mechanically remanded the Petitioner to judicial custody without examining the statutory mandate of Section 35 BNSS.
+
+II. PATENT VIOLATION OF SECTION 35(7) BNSS: ARREST VOID AB INITIO
+5. Section 35(7) BNSS creates an express, negative statutory prohibition:
+   "Subject to the provisions of this Sanhita, no person shall be arrested without prior permission of an officer not below the rank of Deputy Superintendent of Police, in case of an offence punishable with imprisonment for less than three years, and the person is infirm or is above the age of sixty years."
+6. Both offences alleged carry maximum imprisonment of less than three years (one year and two years respectively).
+7. The Petitioner is 66 years of age (established by Aadhaar and birth records).
+8. Respondent No. 2 possessed no prior written permission from any officer of DSP rank. The arrest is a jurisdictional nullity and an egregious violation of personal liberty under Article 21.
+
+III. SUBVERSION OF SECTION 35(1)(b) & SECTION 35(3) NOTICE MANDATE
+9. Under Section 35(3) BNSS and the binding Constitution Bench ruling in Arnesh Kumar v. State of Bihar (2014) 8 SCC 273 and Satender Kumar Antil v. CBI (2022) 10 SCC 51:
+   - For offences carrying up to seven years imprisonment, arrest is an exceptional measure and Notice of Appearance is the statutory default.
+   - Respondent No. 2 recorded no subjective satisfaction on the five statutory necessity grounds in Section 35(1)(b).
+   - Arresting a cooperating senior citizen without serving a Section 35(3) notice is contempt of Supreme Court directives.
+
+IV. FAILURE OF JUDICIAL SCRUTINY UNDER SECTION 187 BNSS
+10. In Arnesh Kumar, the Supreme Court held that the Magistrate must verify whether the arrest satisfies Section 35 conditions before authorising detention. A mechanical remand order passed in disregard of Section 35(7) is legally perverse and non est.
+
+PRAYER
+Wherefore, in light of the above facts, statutory scheme, and binding authorities, it is respectfully prayed that this Hon’ble Court may graciously be pleased to:
+(a) Declare the arrest and detention of the Petitioner as illegal, ultra vires Section 35(7) and Section 35(3) BNSS, and violative of Article 21;
+(b) Direct the immediate and unconditional release of the Petitioner;
+(c) Initiate departmental and contempt proceedings against Respondent No. 2 for flagrant violation of statutory mandates and Supreme Court directives; and
+(d) Award public-law compensation to the Petitioner for unlawful confinement.
+
+FILED BY:
+[COUNSEL FOR THE PETITIONER]
+ADVOCATE`,
+      explanation:
+        'Senior Counsel written submissions challenging illegal arrest of senior citizen under Section 35(7) BNSS.',
+      relatedProvisionIds: ['bnss-35', 'bnss-37', 'bnss-53', 'bnss-187', 'bnss-528', 'bnss-531'],
+    },
   ],
-  "examTips": [
-    "Begin with the exact current-law citation: BNSS s. 35.",
-    "Identify stage, forum, jurisdiction and remedy before discussing merits.",
-    "Check s. 531 savings for every pre-1 July 2024 pending matter.",
-    "Keep BNS liability and BSA proof separate from BNSS procedure."
+
+  bareActPointers: [
+    'BNSS s. 35(1)(a)-(i): Nine closed statutory gateways for arrest without warrant',
+    'BNSS s. 35(1)(b): Necessity test and mandatory written reasons for offences up to 7 years',
+    'BNSS s. 35(3): Mandatory Notice of Appearance where arrest is not required under s. 35(1)',
+    'BNSS s. 35(5): Statutory immunity from arrest during compliance with appearance notice',
+    'BNSS s. 35(7): Mandatory prior written permission of DSP for arresting infirm or senior citizens (aged 60+) for offences under 3 years',
+    'BNSS s. 37: Designated Police Officer and physical/digital display boards in every district and station',
+    'BNSS s. 53: Mandatory medical examination of arrested persons',
+    'BNSS s. 531(2)(a): Transitional savings (CrPC 1973 applies to pre-1 July 2024 FIRs)',
   ],
-  "revisionPoints": [
-    "BNSS s. 35: When police may arrest without warrant.",
-    "List every statutory condition and connected provision.",
-    "Check the competent court, limitation rule and transition status.",
-    "Apply BSA s. 63 to electronic records only when they are tendered as evidence."
+
+  examTips: [
+    'Always cite Section 35 BNSS as the current law governing arrest without warrant, keeping Section 41 CrPC strictly as historical concordance.',
+    'Highlight the revolutionary reform in Section 35(7) BNSS: prior DSP permission for infirm or 60+ year-old individuals for offences < 3 years.',
+    'Walk through the Arnesh Kumar / Satender Antil checklist codified in Section 35(1)(b) and Section 35(3)-(6).',
+    'Always remember that registration of FIR does not automatically justify arrest (Lalita Kumari & Joginder Kumar).',
   ],
-  "relatedTopics": [
-    "s-34",
-    "s-36"
-  ]
+
+  revisionPoints: [
+    'BNSS s. 35: When police may arrest without warrant (replaces s. 41 CrPC).',
+    's. 35(1)(b): Dual test for offences <= 7 years (credible suspicion + recorded necessity under 5 grounds).',
+    's. 35(3)-(6): Notice of appearance replaces arrest; compliance confers statutory immunity under s. 35(5).',
+    's. 35(7): Prior written DSP permission mandatory for infirm or aged 60+ where offence < 3 years.',
+    's. 37 & s. 53: Designated Police Officer display boards and mandatory medical checkup.',
+    's. 531(2)(a): CrPC applies to investigations pending immediately before 1 July 2024.',
+  ],
+
+  relatedTopics: ['s-34', 's-36', 's-37', 's-53', 's-187', 's-531'],
 }
 
 export default content
