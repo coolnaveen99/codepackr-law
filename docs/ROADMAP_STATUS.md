@@ -25,7 +25,7 @@ Phase 2 canonical content + knowledge graph  ← CLOSED
       ↓
 Phase 3 Research Workbench  ← CLOSED
       ↓
-Phase 4 Citation Verification  ← NEXT CANDIDATE
+Phase 4 Citation Verification  ← KICKOFF DONE (PH4-001); build tickets READY
       ↓
 Phase 5 Judgment Analyzer
       ↓
@@ -58,6 +58,15 @@ Phase 8+ Drafting / Court / Practice / AI / Scale
 | PH3-010+ implementation | PH3-010–PH3-090 **COMPLETED** (71/71 tests, Word DOCX/JSON/Markdown, mobile pass) |
 | Phase 3 product exit | **COMPLETED** — `docs/PHASE-3-EXIT-AUDIT.md` (PH3-100, E1–E10 PASS) |
 
+## Phase 4 — Citation Verification & Authority Network
+
+| Item | Status |
+|------|--------|
+| PH4-001 architecture kickoff | **COMPLETED** — `docs/architecture/phase-4-citation-verification-kickoff.md` |
+| Baseline UI (`CitationVerifier.tsx`) | Production live; basic regex parser |
+| PH4-010+ implementation | Tickets scheduled; PH4-010 **READY** |
+| Phase 4 product exit | **BACKLOG** (PH4-100) |
+
 ## Content-enhancement decision
 
 **Postpone mass editorial/content enhancement.** Continue migration, accuracy, provenance, relationships, and benchmark content only when scheduled.
@@ -66,4 +75,4 @@ Phase 8+ Drafting / Court / Practice / AI / Scale
 
 Never report a roadmap phase as complete based only on documentation. Report implementation, test, CI, migration, and deployment evidence separately.
 
-**Exception for PH3-001:** Architecture kickoff is a documentation deliverable by design; it does **not** complete Phase 3 product scope.
+**Exception for PH3-001 & PH4-001:** Architecture kickoffs are documentation deliverables by design; they do **not** complete product phase scope.

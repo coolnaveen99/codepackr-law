@@ -2,8 +2,8 @@
 
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
-**Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** (PH3-100 Exit Audit)  
-**Updated:** 2026-10-01 (Phase 3 COMPLETED — Legal Research Workbench)
+**Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** · Phase 4 implementation started  
+**Updated:** 2026-10-01 (PH4-001 COMPLETED — Phase 4 Citation Verification Kickoff)
 
 ## Verified completed
 
@@ -23,22 +23,31 @@
 | PH3-080 | **COMPLETED** | Session JSON import/export + DOCX note generation + Workbench UI integration + 69/69 tests + tsc |
 | PH3-090 | **COMPLETED** | Mobile UX pass for matrix + note + 44px touch targets + responsive wrapping + 71/71 tests + tsc |
 | PH3-100 | **COMPLETED** | Phase 3 exit audit (`docs/PHASE-3-EXIT-AUDIT.md`, criteria E1–E10 PASS) + 71/71 tests + tsc |
+| PH4-001 | **COMPLETED** | Architecture kickoff doc (`docs/architecture/phase-4-citation-verification-kickoff.md`) |
 
 ## Current sprint backlog
 
 | ID | Work | Status | Priority |
 |---|---|---|---|
-| PH3-010 | ResearchSession types + localStorage | **COMPLETED** | P0 |
-| PH3-020 | Expand Workbench form fields | **COMPLETED** | P0 |
-| PH3-030 | Authority matrix column expansion | **COMPLETED** | P0 |
-| PH3-040 | Research note polish / export | **COMPLETED** | P0 |
-| PH3-050 | ContentGateway authority suggestions | **COMPLETED** | P0 |
-| PH3-060 | Deep-link hand-off to Citation Verifier | **COMPLETED** | P1 |
-| PH3-070 | Deep-link hand-off to Judgment Analyzer | **COMPLETED** | P1 |
-| PH3-080 | Import/export session JSON + markdown/DOCX note polish | **COMPLETED** | P1 |
-| PH3-090 | Mobile UX pass for matrix + note | **COMPLETED** | P1 |
-| PH3-100 | Phase 3 exit audit (workflow: question → note) | **COMPLETED** | P0 |
+| PH4-001 | Phase 4 Architecture kickoff & contract | **COMPLETED** | P0 |
+| PH4-010 | Extended parser for SCC OnLine, Neutral citations, & volume-less formats | **READY** | P0 |
+| PH4-020 | Verification engine matching against canonical manifest & `ALL_JUDGMENTS` | **BACKLOG** | P0 |
+| PH4-030 | Document citation extractor (multi-citation scanner for pasted text) | **BACKLOG** | P0 |
+| PH4-040 | Authority network & official portal link generator (e-SCR, SCI, HC) | **BACKLOG** | P1 |
+| PH4-050 | Citation Verifier UI overhaul: dashboard, filtering, & Workbench roundtrip | **BACKLOG** | P1 |
+| PH4-100 | Phase 4 exit audit (evaluation against criteria V1–V10) | **BACKLOG** | P0 |
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
+
+### PH4-001 — COMPLETED (2026-10-01)
+
+| Check | Result |
+|---|---|
+| Strategic scope & non-goals | **Yes** (Roadmap § 9; visible verification, 100% on-device, zero paywall scraping) |
+| Architecture contract published | **Yes** (`docs/architecture/phase-4-citation-verification-kickoff.md`) |
+| 5-tier status model defined | **Yes** (`VERIFIED`, `PARTIAL`, `NOT_VERIFIED`, `CONFLICT`, `USER_PROVIDED`) |
+| Anti-hallucination rule | **Yes** ("Never convert 'not found' into 'case does not exist'") |
+| Phased backlog scheduled | **Yes** (`PH4-010` through `PH4-100`) |
+| Exit criteria defined | **Yes** (Criteria V1–V10) |
 
 ### PH3-100 — COMPLETED (2026-10-01)
 
@@ -141,8 +150,5 @@
 
 ## Next READY
 
-Phase 3 is **CLOSED** (all P0/P1 deliverables and exit criteria E1–E10 verified).
-
-**Next work options:**
-1. **PA-005b** — CDN mirror implementation (P2 infrastructure backlog item).
-2. **Phase 4** — Citation Verification & Authority Network kickoff (next sequential strategic roadmap phase).
+**PH4-010** — Extended parser for SCC OnLine, Neutral citations (INSC/HC), & volume-less formats (P0).  
+Residual backlog: **PA-005b** (CDN mirror implementation, P2).
