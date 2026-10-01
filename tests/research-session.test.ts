@@ -206,3 +206,39 @@ describe('PH3-080 session JSON import/export and DOCX polish', () => {
   })
 })
 
+describe('PH3-090 Mobile UX pass for matrix + note', () => {
+  it('formats authority matrix into vertical structured blocks instead of horizontal wide tables', () => {
+    const session = emptyResearchSession()
+    const row = emptyAuthorityRow()
+    row.caseName = 'Kesavananda Bharati v. State of Kerala'
+    row.citation = '(1973) 4 SCC 225'
+    row.court = 'Supreme Court of India'
+    row.statute = 'Constitution of India, Article 368'
+    row.holding = 'Basic structure doctrine holds that Parliament cannot alter the essential features of the Constitution.'
+    row.paragraph = 'Para 122'
+    row.treatment = 'followed'
+    row.verification = 'verified'
+    session.authorities = [row]
+
+    const note = researchNoteFromSession(session)
+    // Verify vertical bullet blocks rather than markdown pipe tables (| col | col |) that cause mobile horizontal overflow
+    assert.ok(!note.includes('| --- |'))
+    assert.match(note, /### Kesavananda Bharati v\. State of Kerala \(\(1973\) 4 SCC 225\)/)
+    assert.match(note, /- \*\*Holding \/ ratio:\*\*/)
+    assert.match(note, /- \*\*Treatment:\*\* followed/)
+    assert.match(note, /- \*\*Verification status:\*\* verified/)
+  })
+
+  it('keeps long questions and notes wrapped and clean for small mobile viewports', () => {
+    const session = emptyResearchSession()
+    session.question.question = 'Whether the provisions of section 32 read with section 30 of CPC 1908 empower the civil court to issue bailable warrant against witness who fails to attend despite valid service of summons?'
+    session.analysis = 'The powers of civil court are expansive under Section 32 CPC. The court may issue warrant of arrest, attach property, impose fine not exceeding five thousand rupees, or order security.'
+    
+    const note = researchNoteFromSession(session)
+    assert.ok(note.includes('1. Question presented'))
+    assert.ok(note.includes('5. Analysis'))
+    assert.ok(!note.includes('\t')) // No tabs causing layout shifts
+  })
+})
+
+

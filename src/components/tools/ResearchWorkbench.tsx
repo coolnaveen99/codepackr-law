@@ -197,7 +197,7 @@ export function ResearchWorkbench() {
   }
 
   return (
-    <div className="mx-auto max-w-3xl space-y-6 p-4 sm:p-6">
+    <div className="mx-auto max-w-3xl w-full space-y-6 px-3 py-4 sm:p-6 overflow-x-hidden">
       <header className="space-y-2">
         <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 dark:bg-blue-950/40 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-blue-800 dark:text-blue-200">
           <FlaskConical className="size-3.5" /> Research Workbench · browser-local
@@ -649,28 +649,31 @@ export function ResearchWorkbench() {
                 </div>
               )}
             </div>
-            <div className="flex flex-wrap items-center justify-between gap-2">
-              <select
-                value={r.verification}
-                onChange={(e) =>
-                  updateRow(r.id, { verification: e.target.value as VerificationStatus })
-                }
-                className="h-8 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-xs bg-white dark:bg-slate-900"
-              >
-                <option value="user-provided">user-provided</option>
-                <option value="verified">verified</option>
-                <option value="partial">partial</option>
-                <option value="not-verified">not-verified</option>
-                <option value="conflict">conflict</option>
-                <option value="needs-review">needs-review</option>
-              </select>
-              <div className="inline-flex items-center gap-3">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 pt-2.5 border-t border-slate-100 dark:border-slate-800">
+              <div className="flex items-center gap-2">
+                <span className="text-[11px] text-slate-500 font-bold shrink-0">Status:</span>
+                <select
+                  value={r.verification}
+                  onChange={(e) =>
+                    updateRow(r.id, { verification: e.target.value as VerificationStatus })
+                  }
+                  className="h-10 sm:h-8 flex-1 sm:flex-none rounded-lg border border-slate-200 dark:border-slate-700 px-2.5 text-xs bg-white dark:bg-slate-900"
+                >
+                  <option value="user-provided">user-provided</option>
+                  <option value="verified">verified</option>
+                  <option value="partial">partial</option>
+                  <option value="not-verified">not-verified</option>
+                  <option value="conflict">conflict</option>
+                  <option value="needs-review">needs-review</option>
+                </select>
+              </div>
+              <div className="flex flex-wrap items-center justify-end gap-2">
                 {(r.citation?.trim() || r.caseName?.trim()) && (
                   <>
                     <button
                       type="button"
                       onClick={() => handleVerifyCitations([r], true)}
-                      className="inline-flex items-center gap-1 text-xs font-bold text-blue-700 hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-200"
+                      className="inline-flex min-h-[38px] items-center gap-1 rounded-lg border border-blue-200 dark:border-blue-800 bg-blue-50/50 dark:bg-blue-950/30 px-2.5 py-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-200"
                       title="Hand off this citation to Citation Verifier"
                     >
                       <ShieldCheck className="size-3.5" /> Verify ↗
@@ -678,7 +681,7 @@ export function ResearchWorkbench() {
                     <button
                       type="button"
                       onClick={() => handleAnalyzeJudgment(r, true)}
-                      className="inline-flex items-center gap-1 text-xs font-bold text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white"
+                      className="inline-flex min-h-[38px] items-center gap-1 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 px-2.5 py-1.5 text-xs font-bold text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white"
                       title="Hand off this authority to Judgment Analyzer"
                     >
                       <Scale className="size-3.5" /> Analyze ↗
@@ -693,7 +696,7 @@ export function ResearchWorkbench() {
                       authorities: s.authorities.filter((x) => x.id !== r.id),
                     }))
                   }
-                  className="inline-flex items-center gap-1 text-xs font-bold text-red-600"
+                  className="inline-flex min-h-[38px] items-center gap-1 rounded-lg border border-red-200 dark:border-red-900/50 px-2.5 py-1.5 text-xs font-bold text-red-600 hover:bg-red-50 dark:hover:bg-red-950/30"
                 >
                   <Trash2 className="size-3.5" /> Remove
                 </button>
@@ -744,7 +747,7 @@ export function ResearchWorkbench() {
           </div>
         )}
 
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-wrap items-center gap-2">
           <input
             type="file"
             ref={fileInputRef}
@@ -755,7 +758,7 @@ export function ResearchWorkbench() {
 
           <button
             type="button"
-            className="inline-flex items-center gap-1.5 rounded-xl bg-[#8B1E3F] text-white px-3.5 py-2 text-xs font-bold hover:bg-[#721833]"
+            className="inline-flex min-h-[44px] justify-center items-center gap-1.5 rounded-xl bg-[#8B1E3F] text-white px-3.5 py-2 text-xs font-bold hover:bg-[#721833]"
             onClick={() => downloadResearchNoteMarkdown(session)}
             title="Download structured Markdown note (.md)"
           >
@@ -764,7 +767,7 @@ export function ResearchWorkbench() {
 
           <button
             type="button"
-            className="inline-flex items-center gap-1.5 rounded-xl border border-blue-200 dark:border-blue-800 bg-blue-50/70 dark:bg-blue-950/40 text-blue-950 dark:text-blue-200 px-3.5 py-2 text-xs font-bold hover:bg-blue-100 dark:hover:bg-blue-900/60"
+            className="inline-flex min-h-[44px] justify-center items-center gap-1.5 rounded-xl border border-blue-200 dark:border-blue-800 bg-blue-50/70 dark:bg-blue-950/40 text-blue-950 dark:text-blue-200 px-3.5 py-2 text-xs font-bold hover:bg-blue-100 dark:hover:bg-blue-900/60"
             onClick={handleDownloadDocx}
             disabled={exportingDocx}
             title="Download formatted legal research note for Word (.docx)"
@@ -782,7 +785,7 @@ export function ResearchWorkbench() {
 
           <button
             type="button"
-            className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800"
+            className="inline-flex min-h-[44px] justify-center items-center gap-1.5 rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800"
             onClick={() => downloadResearchSessionJson(session)}
             title="Export full session backup (.json)"
           >
@@ -791,7 +794,7 @@ export function ResearchWorkbench() {
 
           <button
             type="button"
-            className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800"
+            className="inline-flex min-h-[44px] justify-center items-center gap-1.5 rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800"
             onClick={() => fileInputRef.current?.click()}
             title="Import previously saved session JSON"
           >
@@ -800,7 +803,7 @@ export function ResearchWorkbench() {
 
           <button
             type="button"
-            className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800"
+            className="inline-flex min-h-[44px] justify-center items-center gap-1.5 rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800"
             onClick={handleCopyNote}
             title="Copy Markdown note to clipboard"
           >
@@ -817,7 +820,7 @@ export function ResearchWorkbench() {
 
           <button
             type="button"
-            className="rounded-xl border border-red-200 text-red-700 dark:border-red-900 hover:bg-red-50 dark:hover:bg-red-950 px-3 py-2 text-xs font-bold"
+            className="inline-flex min-h-[44px] justify-center items-center rounded-xl border border-red-200 text-red-700 dark:border-red-900 hover:bg-red-50 dark:hover:bg-red-950 px-3 py-2 text-xs font-bold sm:col-span-2 lg:col-span-1"
             onClick={() => {
               if (window.confirm('Clear all local research session data? This cannot be undone.')) {
                 clearResearchSession()
@@ -835,7 +838,7 @@ export function ResearchWorkbench() {
         <p className="mb-2 text-[11px] text-slate-500 dark:text-slate-400">
           Structured Markdown with labelled sections. Export stays on-device until you save or share the file.
         </p>
-        <pre className="max-h-80 overflow-auto whitespace-pre-wrap font-mono text-[11px] text-slate-700 dark:text-slate-300">
+        <pre className="max-h-80 overflow-x-auto whitespace-pre-wrap break-words font-mono text-[11px] text-slate-700 dark:text-slate-300">
           {note}
         </pre>
       </section>

@@ -20,6 +20,7 @@
 | PH3-050 | **COMPLETED** | ContentGateway suggestion engine (`src/content/suggestions.ts`) + Workbench panel + note Canonical ID + tests |
 | PH3-060 | **COMPLETED** | Citation handoff helpers + verifier deep-link + Workbench integration + 55/55 tests + tsc |
 | PH3-070 | **COMPLETED** | Judgment handoff helpers + starter template + JudgmentAnalyzer banner/sample/copy + Workbench integration + 63/63 tests + tsc |
+| PH3-080 | **COMPLETED** | Session JSON import/export + DOCX note generation + Workbench UI integration + 69/69 tests + tsc |
 
 ## Current sprint backlog
 
@@ -32,19 +33,31 @@
 | PH3-050 | ContentGateway authority suggestions | **COMPLETED** | P0 |
 | PH3-060 | Deep-link hand-off to Citation Verifier | **COMPLETED** | P1 |
 | PH3-070 | Deep-link hand-off to Judgment Analyzer | **COMPLETED** | P1 |
-| PH3-080 | Import/export session JSON + markdown/DOCX note polish | **DEVELOPED (Pending validation)** | P1 |
+| PH3-080 | Import/export session JSON + markdown/DOCX note polish | **COMPLETED** | P1 |
+| PH3-090 | Mobile UX pass for matrix + note | **DEVELOPED (Pending validation)** | P1 |
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
 
-### PH3-080 — DEVELOPMENT COMPLETE (Pending final validation)
+### PH3-090 — DEVELOPMENT COMPLETE (Pending final validation)
 
 *Status:* **DEVELOPED (Pending final validation)**  
-*Privacy boundary compliance:* Import/export is 100% user-directed browser download and local file upload; zero session data is sent to external servers or telemetry (§5.5).
+*Privacy boundary compliance:* Zero telemetry, zero analytics tracking of research inputs, 100% browser-local styling and responsive layout (§5.5).
 
 | Item | Details |
 |---|---|
-| **Changes made** | • Added `validateAndNormalizeSession`, `exportResearchSessionJson`, `downloadResearchSessionJson`, `generateResearchNoteDocx`, and `downloadResearchNoteDocx` to `src/lib/researchSession.ts`.<br>• Enhanced `researchNoteFilename` with `.md`, `.docx`, and `.json` extension support and added `researchSessionFilename`.<br>• Updated `src/components/tools/ResearchWorkbench.tsx` with one-click JSON backup export, file picker JSON session import with validation status banner, Word `.docx` download with loading indicator, and visual feedback for copy note action.<br>• Authored unit tests in `tests/research-session.test.ts` for session JSON validation, coercion, export serialization, extension formatting, and binary `.docx` Blob generation. |
+| **Changes made** | • Updated `src/components/tools/ResearchWorkbench.tsx` with mobile overflow safety (`overflow-x-hidden`, responsive container padding).<br>• Enforced 44px touch targets on primary actions (`min-h-[44px]`) and 38px touch targets on matrix row actions.<br>• Refactored matrix row actions into a responsive vertical/horizontal flex layout with status label to eliminate horizontal squishing/overflow on narrow mobile screens (<375px).<br>• Converted note export actions into responsive 2-column mobile grid / desktop flex layout.<br>• Added `break-words` and `overflow-x-auto` to the Research Note preview `<pre>` to ensure long tokens or lines never cause viewport breakout.<br>• Authored unit tests in `tests/research-session.test.ts` verifying vertical structured authority blocks and tab-free clean line wrapping. |
 | **Blockers** | None. |
 | **Next action** | Execute final validation phase (run test runner and typecheck) to verify all tests pass, then mark task COMPLETED. |
+
+### PH3-080 — COMPLETED (2026-10-01)
+
+| Check | Result |
+|---|---|
+| JSON session export | **Yes** (`exportResearchSessionJson`, `downloadResearchSessionJson` with safe filename) |
+| JSON session import | **Yes** (`validateAndNormalizeSession` validates/coerces, file picker in UI with status banner) |
+| Word .docx note generation | **Yes** (`generateResearchNoteDocx`, `downloadResearchNoteDocx` using `docx` with 1-inch margins, styled sections) |
+| Workbench UI polish | **Yes** (Export JSON, Import JSON, Download .docx with spinner, Copied note confirmation) |
+| Privacy boundary compliance | **Yes** (100% client-side file save/load; zero session data in URLs or remote servers — roadmap §5.5) |
+| Unit tests & validation | **Yes** (69/69 tests passing in `npx tsx --test`, `npm run lint` / `tsc --noEmit` green) |
 
 ### PH3-070 — COMPLETED (2026-10-01)
 
@@ -110,5 +123,5 @@
 
 ## Next READY
 
-**PH3-080** — Import/export session JSON + markdown/DOCX note polish (P1 on roadmap backlog).
+**PH3-090** — Mobile UX pass for matrix + note (P1 on roadmap backlog).
 Residual P2 item: **PA-005b** (CDN mirror implementation).
