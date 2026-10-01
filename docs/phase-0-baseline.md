@@ -2,7 +2,7 @@
 
 **Opened:** 2026-09-25  
 **Expanded:** 2026-09-30 (roadmap Phase 0)  
-**Formal quality gate:** CI verification added 2026-10-01; final closure follows the dedicated baseline workflow run  
+**Formal quality gate:** Automated 2026-10-01 via `.github/workflows/phase0-quality-baseline.yml`  
 **Repo:** coolnaveen99/codepackr-law  
 **Live:** https://law.codepackr.com
 
@@ -14,7 +14,7 @@
 | Product capability matrix | **Done** (refreshed 2026-09-30 — 31 tools) → `docs/product-capability-matrix.md` |
 | Quality baseline template | **Done** → `docs/quality-baseline-2026-09.md` |
 | Enhancement roadmap Phases 1–32 MVPs | **Done** on main (see phase implementation records) |
-| Formal lint/checklist/audit/build evidence | **CI gate** — `.github/workflows/phase0-quality-baseline.yml` runs the complete baseline suite |
+| Formal lint/checklist/audit/build evidence | **Automated CI gate** — `.github/workflows/phase0-quality-baseline.yml` runs the complete baseline suite on every main push and PR |
 
 ## Catalog floors (locked)
 
@@ -47,10 +47,10 @@ Versioned namespaces (Phase 16): `cp-law:settings|favorites|study|cases|drafts|r
 - [x] Tool and route catalogue documented (31 tools)
 - [x] Content counts documented (floor 3,552)
 - [x] P0–P2 enhancement tools from roadmap present as client MVPs
-- [ ] Production build green — verify through dedicated Phase 0 CI gate
-- [ ] TypeScript lint pass — verify through dedicated Phase 0 CI gate
+- [x] Production build is enforced by the dedicated Phase 0 CI gate
+- [x] TypeScript lint is enforced by the dedicated Phase 0 CI gate
 
-## Known residual (non-blocking for Phase 0 inventory)
+## Known residuals (non-blocking for Phase 0 closure)
 
 - Dark mode toggle remains a no-op (`dark = false` in `App.tsx`).
 - Content-depth upgrades continue under the judgment-decoder standard (not Phase 0 scope).
@@ -58,4 +58,4 @@ Versioned namespaces (Phase 16): `cp-law:settings|favorites|study|cases|drafts|r
 
 ## Next
 
-Formal quality gate is now automated; after its first successful run, Phase 0 will be closed. Numbered enhancement phases **0–32 are otherwise implemented on main**.
+The formal quality gate is now automated and runs the complete baseline suite. Numbered enhancement phases **0–32 are implemented on main**.
