@@ -87,6 +87,12 @@ export function importCpLawData(json: string): { ok: boolean; keys: string[]; er
   }
 }
 
+export function resetCpLawNamespace(key: CpLawNamespace): boolean {
+  const existed = localStorage.getItem(key) != null
+  removeKey(key)
+  return existed
+}
+
 export function deleteAllCpLawData(): string[] {
   const removed: string[] = []
   for (const key of Object.values(CP_LAW_NS)) {
