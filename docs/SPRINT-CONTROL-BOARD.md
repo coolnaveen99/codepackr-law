@@ -703,3 +703,12 @@ The Phase 18 roadmap deliverable is complete: the verification policy defines re
 | CI quality gate | **PASS** — CI #36901323151 |
 
 **Phase 30 status:** **CLOSED** — CI #36901323151 passed TypeScript, unit tests and production build.
+
+
+## Phase 31 — Copyright and Data Governance — COMPLETED (2026-10-01)
+
+**Exit audit:** `docs/PHASE-31-EXIT-AUDIT.md`
+
+All roadmap governance requirements are documented in the binding copyright/data policy and repository agent instructions. No runtime feature change is required for this phase.
+
+**Phase 31 status:** **CLOSED**.
