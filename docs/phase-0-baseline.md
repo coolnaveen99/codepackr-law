@@ -2,7 +2,7 @@
 
 **Opened:** 2026-09-25  
 **Expanded:** 2026-09-30 (roadmap Phase 0)  
-**Closed (inventory):** 2026-09-30 after Phases 0–32 on main  
+**Formal quality gate:** CI verification added 2026-10-01; final closure follows the dedicated baseline workflow run  
 **Repo:** coolnaveen99/codepackr-law  
 **Live:** https://law.codepackr.com
 
@@ -14,7 +14,7 @@
 | Product capability matrix | **Done** (refreshed 2026-09-30 — 31 tools) → `docs/product-capability-matrix.md` |
 | Quality baseline template | **Done** → `docs/quality-baseline-2026-09.md` |
 | Enhancement roadmap Phases 1–32 MVPs | **Done** on main (see phase implementation records) |
-| Formal lint/checklist/audit/build evidence | **Operator run** — attach results in quality baseline when executing locally/CI |
+| Formal lint/checklist/audit/build evidence | **CI gate** — `.github/workflows/phase0-quality-baseline.yml` runs the complete baseline suite |
 
 ## Catalog floors (locked)
 
@@ -47,8 +47,8 @@ Versioned namespaces (Phase 16): `cp-law:settings|favorites|study|cases|drafts|r
 - [x] Tool and route catalogue documented (31 tools)
 - [x] Content counts documented (floor 3,552)
 - [x] P0–P2 enhancement tools from roadmap present as client MVPs
-- [ ] Production build green — record in quality baseline on operator run
-- [ ] TypeScript lint pass — record in quality baseline on operator run
+- [ ] Production build green — verify through dedicated Phase 0 CI gate
+- [ ] TypeScript lint pass — verify through dedicated Phase 0 CI gate
 
 ## Known residual (non-blocking for Phase 0 inventory)
 
@@ -58,4 +58,4 @@ Versioned namespaces (Phase 16): `cp-law:settings|favorites|study|cases|drafts|r
 
 ## Next
 
-Ongoing quality: content depth, deeper tests, formal quality-baseline command evidence. Numbered enhancement phases **0–32 are complete** on main.
+Formal quality gate is now automated; after its first successful run, Phase 0 will be closed. Numbered enhancement phases **0–32 are otherwise implemented on main**.
