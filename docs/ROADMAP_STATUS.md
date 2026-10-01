@@ -14,7 +14,8 @@ A roadmap item is complete only when its required code/content/tests/verificatio
 ## Current strategic position
 
 **Phase 2 — CLOSED** (PA-003 exit audit, 2026-10-01)  
-**Phase 3 — CLOSED** (PH3-100 exit audit, 2026-10-01)
+**Phase 3 — CLOSED** (PH3-100 exit audit, 2026-10-01)  
+**Phase 4 — CLOSED** (PH4-100 exit audit, 2026-10-01)
 
 ```
 Phase 0 stabilization
@@ -25,7 +26,7 @@ Phase 2 canonical content + knowledge graph  ← CLOSED
       ↓
 Phase 3 Research Workbench  ← CLOSED
       ↓
-Phase 4 Citation Verification  ← KICKOFF DONE (PH4-001); build tickets READY
+Phase 4 Citation Verification  ← CLOSED (PH4-100; V1–V10 PASS)
       ↓
 Phase 5 Judgment Analyzer
       ↓
@@ -64,8 +65,8 @@ Phase 8+ Drafting / Court / Practice / AI / Scale
 |------|--------|
 | PH4-001 architecture kickoff | **COMPLETED** — `docs/architecture/phase-4-citation-verification-kickoff.md` |
 | Baseline UI (`CitationVerifier.tsx`) | Production live; basic regex parser |
-| PH4-010+ implementation | PH4-010 & PH4-020 **COMPLETED** (100/100 tests); PH4-030 **READY** |
-| Phase 4 product exit | **BACKLOG** (PH4-100) |
+| PH4-010+ implementation | PH4-010–PH4-050 **COMPLETED**; PH4-040/050 authority-network and UI roundtrip validation recorded on Sprint Board |
+| Phase 4 product exit | **COMPLETED** — `docs/PHASE-4-EXIT-AUDIT.md` (PH4-100, V1–V10 PASS) |
 
 ## Content-enhancement decision
 
