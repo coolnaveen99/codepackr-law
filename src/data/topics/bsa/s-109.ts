@@ -1,237 +1,424 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
 const content: TopicContent = {
-  "glance": "BSA s. 109, Burden of proving fact especially within knowledge, is an evidentiary provision in the Burden of proof cluster. Analyse it through the separate questions of relevancy, admissibility, proof, burden and probative weight, and check BSA s. 170 for proceedings governed by the repeal and savings rule. Historical concordance: Indian Evidence Act s. 106.",
-  "study": "Current-law identity\nBSA s. 109 governs burden of proving fact especially within knowledge within Chapter VII - Burden of proof. The provision must be read with its enacted clauses, explanations, illustrations and connected provisions BSA s. 108, BSA s. 110. Historical concordance: Indian Evidence Act s. 106.\n\nThe forensic distinction\nRelevancy asks whether a fact has the statutory connection required by the Adhiniyam. Admissibility asks whether the Court may receive that relevant material under the rules of exclusion, privilege, form and foundation. Proof asks whether the admitted material establishes the fact to the required standard. Probative weight asks how much reliance the Court should place on it. A relevant fact is not automatically admissible, and admissibility is not proof of the ultimate fact.\n\nMandatory application checklist\n1. Identify the fact in issue, the fact sought to be introduced and the party tendering it.\n2. State the exact rule in BSA s. 109, including every condition, explanation, proviso and illustration.\n3. Classify the material as oral, documentary, electronic, real or circumstantial evidence.\n4. Test directness, hearsay, privilege, primary or secondary evidence, authentication and statutory certificate requirements.\n5. Identify the party bearing the initial burden under BSA s. 104 and any special-knowledge rule under s. 109.\n6. Separate admissibility from the weight ultimately assigned after cross-examination and the complete record.\n\nElectronic records and constitutional limits\nElectronic and digital records are documents under BSA. Where a computer output, email, messaging record, CCTV export, call record, server log or device image is tendered through the statutory route, check BSA s. 63 and its certificate requirements. The certificate is not a substitute for relevance, authenticity, chain of custody or proof of the fact asserted. Evidence must also respect Articles 20(3), 21 and 14 of the Constitution, privilege rules and fair-trial disclosure.\n\nCourtroom method\nIn a written submission, identify the fact in issue, show the statutory relevancy link, answer the admissibility objection, establish the foundation, identify the burden and standard, and explain the probative consequence. Do not cite the historical Evidence Act number as the current rule after 1 July 2024 except as concordance. Do not convert a missing certificate, hearsay statement or weak foundation into an automatic finding on the merits without analysing the applicable statutory consequence.",
-  "sections": [
+  glance:
+    'Section 109 BSA codifies the special knowledge exception to the general burden of proof: when any fact is especially within the knowledge of any person, the burden of proving that fact is upon him. Replacing Section 106 of the 1872 Act, it does not relieve the prosecution or claimant of proving foundational facts under Section 104; rather, as established in Shambhu Nath Mehra, Trimukh Maroti Kirkan, and Nagendra Sah, it operates as an evidentiary bridge in closed-door offences (custodial deaths, matrimonial homicides, and exclusive-knowledge circumstances) once the foundational platform of guilt is established beyond reasonable doubt.',
+
+  study: `I. LEGISLATIVE SCHEME & HISTORICAL PROVENANCE
+Section 109 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA) directly replaces Section 106 of the repealed Indian Evidence Act, 1872. It forms an indispensable component of Chapter VII ("Of the Burden of Proof", Sections 104 to 120).
+The statutory text is concise yet potent:
+"When any fact is especially within the knowledge of any person, the burden of proving that fact is upon him."
+
+The provision gives statutory expression to the common law maxim lex non cogit ad impossibilia (the law does not compel a person to do that which is impossible). In legal disputes, certain facts are by their very nature inaccessible to the party asserting a legal right or charge, but are exclusively within the physical custody, personal consciousness, or private knowledge of the opposing party. Section 109 relieves the asserting party of the impossible burden of proving a negative or establishing facts locked within the adversary's exclusive knowledge, shifting the evidential onus to the person possessing that knowledge.
+
+Crucially, Section 109 is an exception to the general rule in Section 104 BSA; it cannot be interpreted in a manner that subverts the presumption of innocence or destroys the golden thread of criminal jurisprudence.
+
+II. THE SHAMBHU NATH MEHRA DOCTRINAL BOUNDARY
+In the seminal Constitution Bench ruling in Shambhu Nath Mehra v. State of Ajmer AIR 1956 SC 404, Vivian Bose, J. laid down the definitive principles circumscribing the scope of this provision:
+1. Meaning of "Especially": The word "especially" means facts that are pre-eminently or exceptionally within the knowledge of the person. It does not mean facts which the opposing party could discover with reasonable diligence.
+2. Not a Substitute for Foundational Proof: Section 109 cannot be invoked to relieve the prosecution of its primary legal burden under Section 104 BSA of proving the essential ingredients of the offence beyond reasonable doubt. It is not designed to bridge evidentiary lacunae in a deficient prosecution case.
+3. The Condition Precedent: The prosecution must first establish a complete, robust prima facie case pointing irresistibly towards the guilt of the accused. Only after the foundational factual platform has been laid does Section 109 come into play to demand an explanation regarding facts uniquely known to the accused.
+
+As reaffirmed in Sucha Singh v. State of Punjab (2001) 4 SCC 375, Section 109 does not shift the ultimate legal burden of proof; it merely imposes an evidential onus on the accused to offer a plausible explanation regarding matters within his exclusive knowledge.
+
+III. THE CLOSED-DOOR HOMICIDE & CUSTODIAL JURISPRUDENCE
+The primary operational theater of Section 109 BSA in trial advocacy is circumstantial evidence in closed environments:
+1. Matrimonial and Domestic Homicides (The Trimukh Maroti Doctrine):
+   - In Trimukh Maroti Kirkan v. State of Maharashtra (2006) 10 SCC 681, the Supreme Court addressed the evidentiary dilemma where an unnatural death (strangulation, poisoning, burning) occurs within the privacy of a matrimonial home during the night.
+   - If the prosecution establishes foundational facts: (a) that the deceased died an unnatural homicidal death; (b) that the husband and deceased resided together in the dwelling; and (c) that the husband was present in the home at the material time, the evidential onus shifts to the husband under Section 109 BSA to explain how his wife sustained fatal injuries.
+   - If the husband offers no explanation, or tenders an explanation that is demonstrably false (e.g. alleging an intruder when all doors were bolted from inside), that failure provides an additional, powerful link in the circumstantial chain, completing the proof of guilt under Section 104 BSA.
+2. Custodial Deaths & Abductions:
+   - In State of West Bengal v. Mir Mohammad Omar (2000) 8 SCC 382, an abducted victim was forcibly taken away in a vehicle by the accused, and his dead body was discovered hours later. The Supreme Court held that once the abduction was proved beyond doubt, what happened to the victim after being taken into the exclusive custody of the abductors was especially within their knowledge under Section 109; their failure to explain justified the inference of murder.
+3. The Corrective Safeguard in Nagendra Sah (2021):
+   - In Nagendra Sah v. State of Bihar (2021) 10 SCC 725 and Sabitri Samantaray v. State of Odisha (2022) 13 SCC 605, the Supreme Court issued a vital warning: the court CANNOT invoke Section 109 BSA merely because the husband and wife shared a home. The prosecution MUST prove that the husband was actually present in the house at the approximate time of the crime. If the prosecution fails to establish presence, Section 109 cannot be activated.
+
+IV. RECONCILIATION WITH ARTICLE 20(3) PRIVILEGE & SECTION 351 BNSS STATEMENTS
+A vital constitutional question is whether Section 109 BSA violates the fundamental right against self-incrimination under Article 20(3) of the Constitution:
+1. The accused possesses an absolute right to remain silent; the law does not compel the accused to enter the witness box or incriminate himself.
+2. However, when the prosecution has proved a complete prima facie case, Section 109 BSA allows the court to evaluate the accused's answers (or silence) during examination under Section 351 BNSS (old s. 313 CrPC).
+3. In Anthony D'Souza v. State of Karnataka (2003) 1 SCC 259 and Phula Singh v. State of Himachal Pradesh (2014) 4 SCC 9, the Supreme Court held that while silence alone cannot be the sole basis of conviction, a false explanation or total refusal to explain facts especially within knowledge under Section 351 BNSS reinforces the prosecution evidence and completes the chain of guilt.
+
+V. STANDARD OF PROOF, DIGITAL EVIDENCE & SECTION 170 TRANSITION
+1. Standard of Proof for Accused Discharging Section 109: Unlike the prosecution which must prove guilt beyond reasonable doubt under Section 104 BSA, the accused discharging the evidential onus under Section 109 BSA need only establish his explanation on a PREPONDERANCE OF PROBABILITIES (the civil standard) or raise a reasonable doubt (Dahyabhai Chhaganbhai Thakkar (1964)).
+2. Digital Evidence under Section 63 BSA: In modern trials, special knowledge often involves electronic access records (ATM PIN logs, swipe card records, private CCTV feeds, encrypted communication accounts). Any electronic evidence tendered to establish or rebut special knowledge must comply with Section 63(4) BSA certification.
+3. Transitional Rules under Section 170(2) BSA: For trials and proceedings commenced on or after 1 July 2024, Section 109 BSA is the authoritative current citation. Section 106 of the 1872 Act represents historical concordance.`,
+
+  sections: [
     {
-      "id": "bsa-109-module-1",
-      "title": "Provenance, Legislative Objective and Evidentiary Foundation",
-      "order": 1,
-      "content": [
-        "BSA s. 109 regulates burden of proving fact especially within knowledge within Burden of proof.",
-        "The statutory scheme seeks reliable adjudication by limiting proof to legally relevant and properly received material.",
-        "Read the provision with the constitutional values of fair trial, privilege, reliability and equality of arms."
-      ]
+      id: 'bsa-109-module-1',
+      title: 'Provenance, Latin Maxims & Chapter VII Structural Framework',
+      order: 1,
+      content: [
+        'Section 109 BSA directly replaces Section 106 of the Indian Evidence Act, 1872, codifying the special knowledge exception within Chapter VII.',
+        'The provision gives statutory effect to the maxim lex non cogit ad impossibilia: the law does not compel a party to prove facts that are exclusively within the private custody or consciousness of the adversary.',
+        'The statutory illustrations highlight the rule: (a) a person doing an act with an intention other than that which the character of the act suggests bears the burden of proving that intention; (b) a passenger travelling on a railway without a ticket bears the burden of proving that he had a ticket.',
+        'Section 109 functions strictly as an evidential exception to Section 104; it regulates the shifting of the tactical onus without displacing the permanent legal burden.',
+      ],
     },
     {
-      "id": "bsa-109-module-2",
-      "title": "Textual Anatomy, Exceptions and Connected Rules",
-      "order": 2,
-      "content": [
-        "Deconstruct every clause of BSA s. 109; do not replace the enacted rule with a one-line Evidence Act summary.",
-        "Read it with BSA s. 108, BSA s. 110. Connected provisions may control foundation, exclusion, presumptions, witnesses or the mode of proof.",
-        "Historical concordance assists comparison only and is not the current citation."
-      ]
+      id: 'bsa-109-module-2',
+      title: 'The Shambhu Nath Mehra Doctrine: The Boundary of Special Knowledge',
+      order: 2,
+      content: [
+        'In Shambhu Nath Mehra v. State of Ajmer AIR 1956 SC 404, the Constitution Bench authoritatively ruled that "especially" means pre-eminently or exceptionally within knowledge, not facts discoverable with reasonable diligence.',
+        'Section 109 cannot be used by the prosecution to relieve itself of proving foundational elements beyond reasonable doubt, nor can it fill evidentiary gaps.',
+        'The prosecution must first establish a complete, unbroken prima facie case pointing irresistibly to guilt before Section 109 can be activated.',
+        'As held in Sucha Singh (2001), Section 109 imposes a conditional evidential duty to explain, not a permanent reversal of the burden of proof.',
+      ],
     },
     {
-      "id": "bsa-109-module-3",
-      "title": "Mandatory Relevancy, Admissibility and Proof Ingredients",
-      "order": 3,
-      "content": [
-        "First ingredient: identify the fact in issue or the statutory relevancy link.",
-        "Second ingredient: satisfy any exclusion, privilege, directness, primary-document or foundation rule.",
-        "Third ingredient: prove authenticity and the source or maker where the form of evidence requires it.",
-        "Fourth ingredient: apply the correct burden and standard, then distinguish admissibility from probative weight."
-      ]
+      id: 'bsa-109-module-3',
+      title: 'Closed-Door Homicides: The Trimukh Maroti & Mir Mohammad Omar Precedents',
+      order: 3,
+      content: [
+        'Trimukh Maroti Kirkan (2006) operationalized Section 109 for matrimonial homicides: where an unnatural death occurs inside a private bedroom at night and the husband’s presence is established, the evidential onus shifts to him to explain the cause of death.',
+        'If the accused tenders no explanation or offers a demonstrably false explanation (e.g. alleging an intruder with no signs of forced entry), that failure supplies an additional link in the chain of circumstantial evidence.',
+        'State of West Bengal v. Mir Mohammad Omar (2000) applied Section 109 to abductions: once physical abduction is proved beyond doubt, what happened to the victim in custody is especially within the abductors’ knowledge.',
+        'The Nagendra Sah (2021) Safeguard: Section 109 cannot be invoked merely on marital relationship; the prosecution MUST independently prove that the accused was present at the scene at the time of death.',
+      ],
     },
     {
-      "id": "bsa-109-module-4",
-      "title": "BSA Burdens, Presumptions and Electronic Records",
-      "order": 4,
-      "content": [
-        "BSA s. 104 supplies the ordinary burden framework; the party asserting the legal proposition must establish its foundation.",
-        "BSA s. 109 addresses facts especially within knowledge. It does not erase the initial burden or permit conviction on an unproved charge.",
-        "For electronic records, examine BSA s. 63 certificate, device or system identity, production method, integrity, custody and the distinction between admissibility and weight."
-      ]
+      id: 'bsa-109-module-4',
+      title: 'Reconciliation with Article 20(3) Self-Incrimination & Section 351 BNSS Statements',
+      order: 4,
+      content: [
+        'Article 20(3) guarantees the right to silence; Section 109 does not compel an accused to testify as a witness or confess.',
+        'However, under Section 351 BNSS (examination of accused), the court is entitled to question the accused regarding incriminating circumstances established by the prosecution.',
+        'Under Anthony D’Souza (2003) and Phula Singh (2014), while silence alone cannot sustain conviction, a false explanation or evasive denial regarding facts especially within knowledge completes the chain of guilt.',
+        'The adverse inference drawn under Section 109 operates in conjunction with affirmative prosecution evidence, never in isolation.',
+      ],
     },
     {
-      "id": "bsa-109-module-5",
-      "title": "Trial Roadmap, Forum, Limitation and Repeal Savings",
-      "order": 5,
-      "content": [
-        "Apply BSA s. 109 at the correct stage of trial or inquiry and identify whether the objection concerns tender, marking, admissibility, proof or final weight.",
-        "For proceedings governed by the post-1 July 2024 evidence regime, cite BSA. For proceedings saved by s. 170, identify the applicable Indian Evidence Act route before arguing the consequence.",
-        "Check the governing procedural statute and any special limitation rule for the application or appeal; evidence law itself does not create a universal limitation period."
-      ]
-    }
+      id: 'bsa-109-module-5',
+      title: 'Evidentiary Standards (Preponderance of Probabilities), Digital Proof & Section 170 Transition',
+      order: 5,
+      content: [
+        'Standard of Proof: The accused discharging Section 109 does NOT have to prove his explanation beyond reasonable doubt; establishing a plausible explanation on a preponderance of probabilities suffices (Dahyabhai (1964)).',
+        'Digital Forensics under Section 63 BSA: CCTV logs, digital keycard entry data, smartphone GPS coordinates, and CDRs proving alibi or presence must satisfy Section 63(4) BSA certification.',
+        'Transitional Application: Section 109 BSA applies to all proceedings commenced on or after 1 July 2024 under Section 170(2); Section 106 IEA is historical concordance only.',
+        'Appellate Strategy: Challenge convictions where trial courts inverted Section 104 into a blanket reverse burden under Section 109 without requiring the prosecution to prove presence.',
+      ],
+    },
   ],
-  "provisions": [
+
+  provisions: [
     {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-109",
-      "section": "s. 109",
-      "title": "Burden of proving fact especially within knowledge"
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-109',
+      section: 's. 109',
+      title: 'Burden of proving fact especially within knowledge',
     },
     {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-63",
-      "section": "s. 63",
-      "title": "Admissibility of electronic records"
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-104',
+      section: 's. 104',
+      title: 'Burden of proof',
     },
     {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-104",
-      "section": "s. 104",
-      "title": "Burden of proof"
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-105',
+      section: 's. 105',
+      title: 'On whom burden of proof lies',
     },
     {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-109",
-      "section": "s. 109",
-      "title": "Burden of proving fact especially within knowledge"
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-108',
+      section: 's. 108',
+      title: 'Burden of proving that case of accused comes within exceptions',
     },
     {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-170",
-      "section": "s. 170",
-      "title": "Repeal and savings"
-    }
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-351',
+      section: 's. 351',
+      title: 'Power to examine the accused',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-63',
+      section: 's. 63',
+      title: 'Admissibility of electronic records',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-170',
+      section: 's. 170',
+      title: 'Repeal and savings',
+    },
   ],
-  "examples": [
+
+  examples: [
     {
-      "id": "bsa-109-ill-1",
-      "title": "Example 1 - Foundation and admissibility satisfied",
-      "illustrationType": "practical",
-      "description": "A party identifies the fact in issue, establishes the statutory relevancy link under s. 109, proves the source and authenticity of the record, and satisfies the applicable documentary or electronic foundation. The Court may receive the material and then assess its weight."
+      id: 'bsa-109-ill-1',
+      title: 'Illustration (b) Deconstructed — Railway Passenger Ticket Proof',
+      illustrationType: 'statutory-practical',
+      description:
+        'A is charged with travelling on a railway without a ticket. The railway administration proves that A boarded the train, travelled a distance of 200 kilometres, and was intercepted upon disembarking. Under Section 109 BSA, the burden of proving that A had purchased a valid ticket is upon A. Whether A possessed a ticket is a fact pre-eminently and especially within A’s knowledge. The railway cannot be expected to prove the negative that among millions of tickets issued across the country, none was sold to A. A discharges the burden by producing the ticket or booking SMS.',
     },
     {
-      "id": "bsa-109-ill-2",
-      "title": "Example 2 - Relevancy does not cure a defect",
-      "illustrationType": "fail-scenario",
-      "description": "A party offers a relevant screenshot or hearsay statement but cannot satisfy the applicable statutory foundation, certificate, directness or privilege rule. The Court must analyse admissibility separately instead of treating logical relevance as automatic proof."
-    }
+      id: 'bsa-109-ill-2',
+      title: 'Failure Scenario — Inversion of Burden in Missing Presence Case',
+      illustrationType: 'fail-scenario',
+      description:
+        'A woman is found dead due to poisoning in her marital home. Her husband H is a military soldier stationed at a cantonment 400 kilometres away on approved leave. The prosecution fails to produce any evidence proving that H travelled to the village or entered the home on the fateful night. The trial court convicts H under Section 103 BNS, relying on Section 109 BSA to hold that because H is the husband, how his wife was poisoned is especially within his knowledge. On appeal, the High Court sets aside the conviction: applying Nagendra Sah (2021), Section 109 cannot be invoked where the prosecution fails to establish the foundational fact of the accused’s presence at the scene at the time of death.',
+    },
   ],
-  "hypotheticals": [
+
+  hypotheticals: [
     {
-      "id": "bsa-109-hypo",
-      "title": "Chamber Practice Hypothetical: BSA s. 109",
-      "facts": "In a criminal trial, the prosecution tenders an oral statement and a digital record to establish a fact connected with the charge. The defence objects that the material is irrelevant, hearsay, uncertified or unsupported by a competent witness. The prosecution invokes a burden or presumption without first establishing the factual foundation.",
-      "question": "Whether the material is relevant and admissible under BSA s. 109, and what proof and burden consequences follow.",
-      "applicableLaw": "BSA s. 109, connected provisions BSA s. 108, BSA s. 110, ss. 3, 55, 57, 63, 104 and 109 where applicable, and s. 170 savings.",
-      "analysis": "1. Identify the fact in issue and the statutory relevancy route. 2. Test the form of evidence: direct oral evidence, documentary evidence, electronic record, hearsay or privileged communication. 3. Check the applicable foundation and BSA s. 63 certificate where digital material is tendered. 4. Place the initial burden under s. 104 and use s. 109 only after the foundation for special knowledge is established. 5. Separate admissibility from credibility and final probative weight.",
-      "conclusion": "The Court should receive and rely on the material only to the extent that the statutory relevancy, admissibility and proof requirements are independently satisfied. A relevant but inadmissible record cannot become proof merely because it appears persuasive."
-    }
+      id: 'bsa-109-hypo',
+      title: 'Chamber Practice Hypothetical: Custodial Interrogation, Exclusive Custody & Section 109 BSA',
+      facts:
+        'In August 2024, suspect S is arrested by police officers P1 and P2 in connection with a burglary and taken to the police station at 9:00 PM in a fully conscious, uninjured state, as recorded in the station diary. At 6:00 AM the following morning, S is brought to the government hospital in a comatose state with multiple ante-mortem contusions, fractured ribs, and traumatic shock, succumbing to injuries an hour later. In the trial for custodial death under Section 101/103 BNS, P1 and P2 offer a bare denial under Section 351 BNSS and claim S fell down the station stairs, though no medical record of an accidental fall exists. The defence argues that under Section 104 BSA, the prosecution carries the burden of proving who struck each fatal blow, and that Section 109 cannot be used to compel the police officers to explain S’s injuries.',
+      question:
+        'As Senior Counsel appearing for the prosecution, how do you deploy Section 109 BSA in conjunction with Section 104 BSA and Supreme Court precedents to secure conviction?',
+      applicableLaw:
+        'BSA ss. 104, 109; BNSS s. 351; Supreme Court rulings in D.K. Basu v. State of W.B. (1997), State of W.B. v. Mir Mohammad Omar (2000), and State of M.P. v. Shyamsunder Trivedi (1995) 4 SCC 262.',
+      analysis:
+        '1. The Prosecution’s Primary Foundational Burden (Section 104 BSA):\n   - The prosecution establishes through unimpeachable official records (station diary and GD entries) that S was taken into exclusive custody by P1 and P2 at 9:00 PM in sound health.\n   - The post-mortem examination proves homicidal death resulting from multiple blunt force injuries inflicted between midnight and 4:00 AM.\n   - S was in the exclusive, locked physical custody of the police officers inside the interrogation room.\n2. The Activation of Section 109 BSA:\n   - Under State of M.P. v. Shyamsunder Trivedi (1995) and D.K. Basu (1997), custodial crimes are committed in secrecy within police station walls where independent witnesses are rarely available.\n   - Once the prosecution proves that the deceased was taken into custody uninjured and died of internal injuries in custody, what transpired inside the police lockup is a fact "especially within the knowledge" of the custodial officers under Section 109 BSA.\n3. The Evidential Burden Shifts to the Custodial Officers:\n   - The evidential onus shifts entirely to P1 and P2 to provide a cogent, credible explanation of how S sustained fatal fractured ribs while in their custody.\n4. Rebuttal of the "Accidental Fall" Defence:\n   - P1 and P2’s explanation that S fell down stairs is contradicted by forensic medical testimony showing diffuse, localized contusions inconsistent with an accidental tumble.\n   - A demonstrably false explanation under Section 351 BNSS furnishes the final, conclusive link in the chain of circumstantial evidence (Trimukh Maroti Kirkan (2006)).',
+      conclusion:
+        'The prosecution successfully discharges its Section 104 legal burden. Section 109 BSA operates as a decisive evidentiary bridge: P1 and P2’s exclusive custody, coupled with their demonstrably false explanation, completes the chain of guilt, warranting conviction for murder under Section 101/103 BNS.',
+    },
   ],
-  "distinctions": [
+
+  distinctions: [
     {
-      "id": "bsa-109-distinction",
-      "title": "BSA s. 109: relevancy, admissibility and proof",
-      "left": "BSA s. 109",
-      "right": "BSA s. 108, BSA s. 110",
-      "rows": [
+      id: 'bsa-109-dist-1',
+      title: 'Section 104 BSA (General Legal Burden) vs Section 109 BSA (Special Knowledge Exception)',
+      left: 'Section 104 BSA (General Legal Burden)',
+      right: 'Section 109 BSA (Special Knowledge Exception)',
+      rows: [
         {
-          "point": "Function",
-          "left": "Burden of proving fact especially within knowledge",
-          "right": "Connected relevancy, foundation, burden or exclusion rule"
+          point: 'Scope of Application',
+          left: 'Universal rule: applies to all facts asserting legal rights, liabilities, and offences',
+          right: 'Special exception: applies only to facts exceptionally within the knowledge of a person',
         },
         {
-          "point": "Question",
-          "left": "What fact or evidentiary act does this section govern?",
-          "right": "What additional condition must be satisfied?"
+          point: 'Shifting Nature',
+          left: 'Static, immutable, and NEVER SHIFTS from the prosecution/claimant',
+          right: 'Shifts the evidential onus to the person having exclusive knowledge once foundation is laid',
         },
         {
-          "point": "Trial consequence",
-          "left": "Apply the section to the tendered material",
-          "right": "Then decide admissibility, credibility and weight separately"
-        }
-      ]
-    }
-  ],
-  "misconceptions": [
-    {
-      "id": "bsa-109-trap-1",
-      "trap": "Citing only the old Evidence Act number for s. 109.",
-      "correction": "Use BSA s. 109 for the current regime and mention the historical number only as concordance or when applying the s. 170 savings rule."
+          point: 'Standard of Proof',
+          left: 'Prosecution must prove guilt beyond reasonable doubt in criminal cases',
+          right: 'Accused satisfies Section 109 on a mere preponderance of probabilities or reasonable doubt',
+        },
+        {
+          point: 'Operative Precondition',
+          left: 'Arises at the threshold of the case upon filing of chargesheet or plaint',
+          right: 'Triggered only after the asserting party independently proves a robust prima facie case',
+        },
+      ],
     },
     {
-      "id": "bsa-109-trap-2",
-      "trap": "Relevancy automatically means admissibility and proof.",
-      "correction": "Relevancy, admissibility, proof and probative weight are separate forensic inquiries."
+      id: 'bsa-109-dist-2',
+      title: 'Section 109 BSA vs Section 108 BSA (General Exceptions)',
+      left: 'Section 109 BSA (Facts Especially Within Knowledge)',
+      right: 'Section 108 BSA (Accused Proving Statutory Exceptions)',
+      rows: [
+        {
+          point: 'Subject Matter',
+          left: 'Physical facts, whereabouts, custody, or intentions uniquely known to a party',
+          right: 'Statutory General Exceptions (insanity, private defence, accident) or provisos',
+        },
+        {
+          point: 'Presumption Involved',
+          left: 'No statutory presumption of guilt; court draws factual inference under Section 119 BSA',
+          right: 'Court shall presume the absence of circumstances bringing case within exceptions',
+        },
+        {
+          point: 'Applicability',
+          left: 'Applies to both prosecution and defence (and civil litigants)',
+          right: 'Applies strictly to an accused in a criminal trial pleading statutory exceptions',
+        },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'bsa-109-trap1',
+      trap: 'Section 109 BSA relieves the prosecution of proving its case beyond reasonable doubt.',
+      correction:
+        'In Shambhu Nath Mehra (1956) and Nagendra Sah (2021), the Supreme Court ruled that Section 109 is an exception and cannot be used to relieve the prosecution of its foundational burden under Section 104 BSA. The prosecution must first establish a complete prima facie case before any explanation is demanded.',
     },
     {
-      "id": "bsa-109-trap-3",
-      "trap": "BSA s. 109 reverses the entire burden of proof.",
-      "correction": "The initial burden remains with the party asserting the legal proposition; special knowledge operates only on the facts within that statutory rule."
-    }
-  ],
-  "cases": [
-    {
-      "name": "Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal",
-      "year": 2020,
-      "citation": "(2020) 7 SCC 1",
-      "court": "Supreme Court of India",
-      "facts": "The case concerned the proof and certification of electronic records tendered in election litigation.",
-      "issue": "Whether the statutory certificate requirement for computer outputs is mandatory and when secondary electronic evidence may be received.",
-      "ratioDecidendi": "The certificate requirement is a condition precedent for admissibility of the relevant electronic record output, subject to the statutory route and the Court's power to facilitate production where the facts justify it.",
-      "holding": "The Constitution Bench clarified the certificate rule and overruled the contrary view to the extent necessary.",
-      "relevance": "Use where s. 109 concerns electronic records or digital proof; it does not decide the relevancy or admissibility of every non-digital item."
+      id: 'bsa-109-trap2',
+      trap: 'An accused who fails to prove his explanation under Section 109 BSA must be convicted automatically.',
+      correction:
+        'The failure of an accused to offer an explanation under Section 109 does not automatically warrant conviction. It operates only as an additional link in the chain of circumstantial evidence where the prosecution has already established a strong prima facie case (Trimukh Maroti Kirkan (2006)).',
     },
     {
-      "name": "Anvar P.V. v. P.K. Basheer",
-      "year": 2014,
-      "citation": "(2014) 10 SCC 473",
-      "court": "Supreme Court of India",
-      "facts": "The Court examined the mode of proving electronic records in an election dispute.",
-      "issue": "Whether electronic records could be admitted without compliance with the statutory certificate route.",
-      "ratioDecidendi": "Electronic evidence must be proved through the special statutory requirements applicable to computer outputs; ordinary secondary-evidence principles cannot bypass that route.",
-      "holding": "The earlier contrary approach was displaced and the certificate discipline was reaffirmed.",
-      "relevance": "Use only for digital evidence issues connected with s. 109; distinguish it from ordinary oral, physical-document or privilege questions."
+      id: 'bsa-109-trap3',
+      trap: 'Section 109 BSA requires the accused to prove his explanation beyond reasonable doubt.',
+      correction:
+        'The standard of proof on the accused under Section 109 BSA is not beyond reasonable doubt; the accused discharges the evidential onus by establishing a plausible explanation on a preponderance of probabilities or by casting a reasonable doubt on the prosecution case (Dahyabhai (1964)).',
+    },
+  ],
+
+  cases: [
+    {
+      name: 'Shambhu Nath Mehra v. State of Ajmer',
+      year: 1956,
+      citation: 'AIR 1956 SC 404',
+      court: 'Supreme Court of India',
+      holding:
+        'Vivian Bose, J. held that the special knowledge provision (now s. 109 BSA) is not intended to relieve the prosecution of proving the facts constituting the offence. "Especially" means facts that are pre-eminently or exceptionally within knowledge; it cannot be invoked to bridge foundational gaps.',
+      relevance:
+        'The foundational locus classicus governing the boundary and limits of Section 109 BSA.',
     },
     {
-      "name": "Sharad Birdhichand Sarda v. State of Maharashtra",
-      "year": 1984,
-      "citation": "(1984) 4 SCC 116",
-      "court": "Supreme Court of India",
-      "facts": "The Court assessed a prosecution based substantially on circumstantial evidence.",
-      "issue": "What standard must circumstantial evidence meet before it can support a criminal conviction.",
-      "ratioDecidendi": "The circumstances must be fully established, consistent only with guilt, conclusive in tendency, and form a complete chain excluding every reasonable hypothesis of innocence.",
-      "holding": "The Court restated the safeguards for conviction on circumstantial evidence.",
-      "relevance": "Use where s. 109 concerns circumstantial proof or inference; do not use it as a substitute for a section-specific relevancy rule."
-    }
-  ],
-  "questionsAndAnswers": [
-    {
-      "id": "bsa-109-brief",
-      "draftingCategory": "brief",
-      "question": "Provide a structured legal brief on BSA s. 109 - Burden of proving fact especially within knowledge.",
-      "answer": "I. ISSUE AND EVIDENTIARY QUESTION\nIdentify the fact in issue, the material tendered and the objection or statutory route.\n\nII. RULE\nBSA s. 109 governs burden of proving fact especially within knowledge. Read it with BSA s. 108, BSA s. 110, then identify the relevancy, admissibility, proof and burden rules.\n\nIII. APPLICATION\nTest foundation, directness, privilege, documentary or electronic requirements, BSA s. 63 where applicable, and burdens under ss. 104 and 109.\n\nIV. CONCLUSION\nState whether the material is relevant, admissible, proved and what weight or procedural consequence follows.",
-      "explanation": "IRAC brief separating relevancy, admissibility, proof, burden and weight."
+      name: 'Trimukh Maroti Kirkan v. State of Maharashtra',
+      year: 2006,
+      citation: '(2006) 10 SCC 681',
+      court: 'Supreme Court of India',
+      holding:
+        'Operationalized Section 109 in matrimonial closed-dwelling homicides: where an unnatural death occurs in a private home at night and the husband’s presence is established, the evidential onus shifts to the husband to explain; a false or absent explanation completes the circumstantial chain of guilt.',
+      relevance:
+        'Mandatory precedent in matrimonial homicide and closed-door circumstantial prosecutions.',
     },
     {
-      "id": "bsa-109-submissions",
-      "draftingCategory": "submissions",
-      "question": "Draft written submissions on BSA s. 109 - Burden of proving fact especially within knowledge.",
-      "answer": "I. FACTUAL AND EVIDENTIARY PROVENANCE\nIdentify the witness, document, digital record, fact in issue and stage of tender.\n\nII. STATUTORY SCHEME\nDeconstruct BSA s. 109, its Chapter, connected provisions BSA s. 108, BSA s. 110 and s. 170 savings.\n\nIII. RELEVANCY AND ADMISSIBILITY\nShow the statutory connection, answer hearsay or privilege objections, establish the appropriate foundation and address BSA s. 63 for electronic records.\n\nIV. BURDEN, STANDARD AND WEIGHT\nApply BSA ss. 104 and 109 without reversing the initial burden, then distinguish admissibility from credibility and probative weight.\n\nV. PRECEDENTS AND PRAYER\nApply only relevant verified ratios and seek a precise ruling on tender, marking, exclusion, further foundation or final reliance.",
-      "explanation": "Senior Counsel written-submissions structure for BSA evidence litigation."
-    }
+      name: 'State of West Bengal v. Mir Mohammad Omar',
+      year: 2000,
+      citation: '(2000) 8 SCC 382',
+      court: 'Supreme Court of India',
+      holding:
+        'Applied Section 109 to abductions: once the prosecution proves that an abducted victim was forcibly taken away by the accused, what happened to the victim in their custody is especially within their knowledge; failure to explain justifies the inference of homicide.',
+      relevance:
+        'Leading authority on the application of Section 109 to kidnapping and abduction cases.',
+    },
+    {
+      name: 'Nagendra Sah v. State of Bihar',
+      year: 2021,
+      citation: '(2021) 10 SCC 725',
+      court: 'Supreme Court of India',
+      holding:
+        'Established the strict safeguard that Section 109 cannot be invoked against a spouse unless the prosecution independently proves the foundational fact of the spouse’s actual presence at the crime scene at the time of death.',
+      relevance:
+        'Primary defence precedent to dismantle improper prosecution reliance on Section 109 in matrimonial cases.',
+    },
+    {
+      name: 'D.K. Basu v. State of West Bengal',
+      year: 1997,
+      citation: '(1997) 1 SCC 416',
+      court: 'Supreme Court of India',
+      holding:
+        'Applied special knowledge principles to custodial violence: because custodial torture occurs within the secrecy of police lockups, the burden shifts to custodial officers to explain severe injuries sustained by detainees in their custody.',
+      relevance:
+        'Constitutional touchstone for deploying Section 109 BSA in custodial death prosecutions.',
+    },
   ],
-  "bareActPointers": [
-    "BSA s. 109",
-    "BSA ss. 3, 55, 57, 63, 104 and 109 where applicable",
-    "BSA s. 170"
+
+  questionsAndAnswers: [
+    {
+      id: 'bsa-109-brief',
+      draftingCategory: 'brief',
+      question:
+        'Prepare an IRAC Legal Case Brief on Section 109 BSA, analyzing the Shambhu Nath Mehra doctrine, the Trimukh Maroti closed-dwelling framework, and the Nagendra Sah presence safeguard.',
+      answer: `I. ISSUE & JURISDICTIONAL THRESHOLD
+Whether the prosecution can invoke Section 109 BSA to shift the evidential onus onto the accused to explain an unnatural death occurring in a closed environment, or whether the prosecution has failed to establish the foundational factual platform (including the accused's presence), rendering reliance on Section 109 an impermissible inversion of the burden of proof under Section 104 BSA. Forum: Trial Court or Appellate Court hearing criminal appeals.
+
+II. GOVERNING RULE & STATUTORY ANATOMY
+1. The Statutory Rule: Section 109 BSA mandates that when any fact is especially within the knowledge of any person, the burden of proving that fact is upon him.
+2. The Shambhu Nath Mehra Principle (AIR 1956 SC 404): Section 109 is an exception that does not relieve the prosecution of proving guilt beyond reasonable doubt under Section 104. "Especially" denotes facts exceptionally within knowledge.
+3. The Closed-Dwelling Rule (Trimukh Maroti (2006)): When an unnatural death occurs in a private home at night and the accused's presence is established, the evidential onus shifts to the accused to explain; an absent or false explanation under Section 351 BNSS completes the chain of guilt.
+4. The Presence Safeguard (Nagendra Sah (2021)): Section 109 cannot be invoked against an accused merely due to marital relationship unless the prosecution independently proves the accused's presence at the scene at the time of death.
+
+III. APPLICATION TO FACTUAL DISPUTE
+- Step 1: Inquire whether the prosecution has proved homicidal death and the accused's actual presence at the scene. If presence is unproved, reject Section 109.
+- Step 2: If presence in an exclusive, closed environment is proved beyond reasonable doubt, evaluate the accused's explanation under Section 351 BNSS.
+- Step 3: Test whether the accused's explanation satisfies the preponderance of probabilities standard. If the explanation is plausible or creates reasonable doubt, acquit. If demonstrably false, treat as an additional link completing the circumstantial chain.
+
+IV. CONCLUSION & OPERATIVE ADVICE
+Advise defence counsel to target the presence link: establish alibi or absence from the home at the material time to prevent the activation of Section 109. If presence cannot be contested, tender a coherent, plausible explanation during Section 351 BNSS examination supported by medical or digital records under Section 63 BSA, which discharges the evidential onus on a preponderance of probabilities.`,
+      explanation:
+        'Senior Counsel IRAC brief on Section 109 BSA special knowledge and closed-dwelling jurisprudence.',
+      relatedProvisionIds: ['bsa-109', 'bsa-104', 'bsa-105', 'bnss-351', 'bsa-63'],
+    },
+    {
+      id: 'bsa-109-submissions',
+      draftingCategory: 'submissions',
+      question:
+        'Draft comprehensive Appellate Written Submissions challenging a conviction for matrimonial murder where the trial court erroneously invoked Section 109 BSA without foundational proof of the husband’s presence at the scene.',
+      answer: `IN THE HIGH COURT OF JUDICATURE AT [JURISDICTION]
+CRIMINAL APPEAL NO. [____] OF 202[ ]
+IN THE MATTER OF:
+APPELLANT (HUSBAND)                                         ... APPELLANT
+VERSUS
+STATE OF [STATE]                                            ... RESPONDENT
+
+WRITTEN SUBMISSIONS ON BEHALF OF THE APPELLANT CHALLENGING ERRONEOUS INVERSION OF BURDEN UNDER SECTION 109 BSA IN THE ABSENCE OF PROOF OF PRESENCE
+
+MOST RESPECTFULLY SHOWETH:
+
+I. STATEMENT OF FACTS & PROCEDURAL PROVENANCE
+1. The Appellant stands convicted under Section 103(1) of the Bharatiya Nyaya Sanhita, 2023 (BNS), for the alleged murder of his wife by manual strangulation in their village home on the night of [Date].
+2. The learned Sessions Judge convicted the Appellant solely by relying on Section 109 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), holding that because the deceased was found dead in the marital home, how she died was "especially within the husband’s knowledge".
+
+II. PATENT SUBVERSION OF THE SHAMBHU NATH MEHRA & NAGENDRA SAH PRECEDENTS
+3. In Shambhu Nath Mehra v. State of Ajmer AIR 1956 SC 404, the Constitution Bench held that Section 109 BSA cannot be used to relieve the prosecution of its primary burden of proving guilt under Section 104 BSA.
+4. In Nagendra Sah v. State of Bihar (2021) 10 SCC 725 and Sabitri Samantaray v. State of Odisha (2022) 13 SCC 605, the Supreme Court authoritatively ruled:
+   - Section 109 BSA cannot be invoked against a husband merely because he is married to the victim or co-owns the house.
+   - The prosecution carries the mandatory foundational burden of proving that the husband was ACTUALLY PRESENT in the house at the approximate time of the crime.
+   - Only when presence is proved does the evidential onus shift to the husband under Trimukh Maroti Kirkan (2006).
+
+III. TOTAL FAILURE OF THE PROSECUTION TO PROVE PRESENCE
+5. The prosecution examined zero witnesses who saw the Appellant in the village on the fateful day.
+6. To the contrary, the Appellant established through documentary employment attendance records (duly certified under Section 63 BSA) that he was on active night-shift duty at a factory located 75 kilometres away from 8:00 PM to 6:00 AM.
+7. Where presence is absent, Section 109 BSA cannot be activated. Convicting the Appellant on the bare presumption of special knowledge is an error of law that destroys the presumption of innocence.
+
+IV. PROSECUTION FAILED TO ESTABLISH AN UNBROKEN CHAIN OF CIRCUMSTANTIAL EVIDENCE
+8. In Sharad Birdhichand Sarda v. State of Maharashtra (1984) 4 SCC 116, circumstantial evidence must fully establish every link and exclude every hypothesis consistent with innocence.
+9. An omission to explain under Section 109 BSA cannot become the sole substitute for missing foundational links.
+
+PRAYER
+Wherefore, in light of the above facts, statutory scheme, and binding authorities, it is respectfully prayed that this Hon’ble Court may graciously be pleased to:
+(a) Allow the Criminal Appeal and set aside the impugned judgment of conviction and sentence;
+(b) Acquit the Appellant of all charges under Section 103(1) BNS; and
+(c) Direct the immediate release of the Appellant from judicial custody.
+
+FILED BY:
+[COUNSEL FOR THE APPELLANT]
+ADVOCATE`,
+      explanation:
+        'Senior Counsel appellate written submissions establishing improper invocation of Section 109 BSA without proof of presence.',
+      relatedProvisionIds: ['bsa-109', 'bsa-104', 'bnss-351', 'bns-103', 'bsa-63'],
+    },
   ],
-  "examTips": [
-    "Separate relevancy, admissibility, proof and probative weight.",
-    "Use the current BSA citation and historical Evidence Act numbers only as concordance.",
-    "For electronic records, analyse s. 63 certificate and foundation before weight.",
-    "State the initial burden and any statutory presumption precisely."
+
+  bareActPointers: [
+    'BSA s. 109: Burden of proving fact especially within knowledge (replaces s. 106 IEA)',
+    'BSA s. 104: General rule on legal burden of proof',
+    'BSA s. 105: On whom burden of proof lies (failure test)',
+    'BSA s. 108: Burden on accused to prove statutory general exceptions',
+    'BNSS s. 351: Power to examine the accused (recording of explanations)',
+    'BSA s. 63: Electronic records certification for digital alibi / access logs',
+    'BSA s. 170(2): Repeal and savings (BSA applies to post-1 July 2024 proceedings)',
   ],
-  "revisionPoints": [
-    "BSA s. 109: Burden of proving fact especially within knowledge.",
-    "Identify the fact in issue and statutory relevancy link.",
-    "Check foundation, exclusion, burden, standard and weight.",
-    "Check s. 170 savings for proceedings governed by the former Evidence Act."
+
+  examTips: [
+    'Always quote Vivian Bose, J. in Shambhu Nath Mehra (1956): Section 109 is an exception and cannot bridge foundational prosecution gaps.',
+    'Anchor closed-door matrimonial homicide in Trimukh Maroti Kirkan (2006) and abduction in Mir Mohammad Omar (2000).',
+    'Highlight the crucial safeguard in Nagendra Sah (2021): Section 109 cannot be triggered without independent proof of the accused’s presence at the scene.',
+    'Emphasize that the accused discharges Section 109 on a preponderance of probabilities, not beyond reasonable doubt.',
   ],
-  "relatedTopics": [
-    "s-108",
-    "s-110"
-  ]
+
+  revisionPoints: [
+    'BSA s. 109: Fact especially within knowledge -> burden of proving is upon that person (replaces s. 106 IEA).',
+    'Maxim: Lex non cogit ad impossibilia (law does not compel the impossible).',
+    'Shambhu Nath Mehra (1956): Not a substitute for prosecution’s foundational proof under s. 104.',
+    'Trimukh Maroti (2006): Closed matrimonial dwelling homicides -> presence proved shifts onus to husband.',
+    'Nagendra Sah (2021): Proof of presence is a non-negotiable condition precedent.',
+    'Standard on accused: Preponderance of probabilities (civil standard).',
+  ],
+
+  relatedTopics: ['s-104', 's-105', 's-108', 's-63', 's-170'],
 }
 
 export default content
