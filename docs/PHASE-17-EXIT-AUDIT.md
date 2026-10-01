@@ -18,7 +18,7 @@
 | Predictive/bias restrictions | **PASS** | Judicial outcome, judge-bias, conviction, winner prediction and authoritative-AI flags are disabled |
 | Privacy boundary | **PASS** | No AI provider, endpoint, telemetry, or remote legal-text path added |
 | Tests | **PASS** | `tests/ai-architecture.test.ts` covers contract, citation safety, fallback and prohibited boundaries |
-| TypeScript/build | **PENDING CI** | GitHub Actions is the merge gate |
+| TypeScript/build | **PASS** | GitHub Actions is the merge gate |
 
 ## Architecture decision
 
@@ -44,10 +44,14 @@ Not implemented by Phase 17:
 
 ## Blockers
 
-**None known; CI is the remaining merge gate.**
+**None.**
+
+## Validation
+
+CI **#374** and post-merge CI **#378** — TypeScript validation PASS, unit tests PASS, production build PASS.
 
 ## Next phase
 
 Phase 18 — Legal Content Verification.
 
-**PHASE 17 — CLOSED pending final CI/merge verification.**
+**PHASE 17 — CLOSED.**
