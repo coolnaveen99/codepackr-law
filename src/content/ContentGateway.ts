@@ -44,13 +44,12 @@ export async function getTopicContent(subjectSlug: string, topicId: string): Pro
   stampDeployMarker()
   const canonical = await repository.getTopic(subjectSlug, topicId)
   if (canonical && canonical.status === 'published') {
+    // Use normalized legacy-shaped content only so TopicDetail never sees
+    // canonical-only shapes (heading/body sections, example.body, etc.).
     const mapped = mapCanonicalTopicToLegacy(canonical)
     return {
       ...canonical,
-      content: {
-        ...canonical.content,
-        ...mapped,
-      },
+      content: mapped as TopicContentRecord['content'],
     }
   }
   return legacyRepository.getTopic(subjectSlug, topicId)
