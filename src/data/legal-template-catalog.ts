@@ -51,6 +51,9 @@ export const TEMPLATE_CATALOG = groups.flatMap((group) => group.names.map((name)
     statute: group.statute,
     description: 'Structured educational scaffold for ' + name.toLowerCase() + ' practice.',
     status: 'catalog' as const,
+    tier: 'scaffold' as const,
+    courtForum: 'Forum-dependent — verify applicable court rules',
+    stateDependency: 'State/local rules may apply',
     tags: [group.area, group.statute],
   }
 }))
