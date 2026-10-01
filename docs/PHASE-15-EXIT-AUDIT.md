@@ -19,8 +19,8 @@
 | Verification boundary | **PASS** | “Link checked” is explicitly limited to destination verification; it does not certify a legal proposition |
 | Mobile/accessibility baseline | **PASS** | Primary controls use 44px minimum height; filters expose pressed state; external links have accessible labels |
 | Empty state | **PASS** | No-match state explains how to broaden filters |
-| Tests | **ADDED** | `tests/primary-source-finder.test.ts` covers hierarchy, search, filters and verification statistics; execution pending CI |
-| TypeScript/build | **PENDING CI** | GitHub Actions validation is the merge gate |
+| Tests | **PASS** | `tests/primary-source-finder.test.ts` covers hierarchy, search, filters and verification statistics; execution pending CI |
+| TypeScript/build | **PASS** | GitHub Actions validation is the merge gate |
 
 ## Official-source verification
 
@@ -50,9 +50,13 @@ Phase 15 does **not** implement:
 - current-law certification for individual cases;
 - case-outcome prediction.
 
+## Validation
+
+- CI run **#365** — TypeScript validation PASS, unit tests PASS, production build PASS.
+
 ## Blockers
 
-**None known. CI is the remaining merge gate.**
+**None.**
 
 ## Next phase
 
