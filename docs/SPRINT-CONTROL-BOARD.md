@@ -666,6 +666,24 @@ The Phase 18 roadmap deliverable is complete: the verification policy defines re
 | PDF export | **PASS** |
 | Browser-local privacy boundary | **PASS** |
 | No authority scoring / prediction | **PASS** |
-| CI quality gate | **PENDING** |
+| CI quality gate | **PASS** — CI #36899159083 |
 
 **Phase 27 status:** **CLOSED** — PR #97, CI run #36898847552 passed TypeScript, unit tests and production build.
+
+
+## Phase 29 — Security — IN PROGRESS
+
+| Check | Result |
+|---|---|
+| XSS-safe rendering helpers | **PASS** |
+| Upload size limits | **IMPLEMENTED** |
+| Blocked executable extensions | **IMPLEMENTED** |
+| MIME + extension allow-list | **IMPLEMENTED** |
+| TXT/MD/DOCX upload boundaries | **IMPLEMENTED** |
+| JSON research-session import boundary | **IMPLEMENTED** |
+| Local text truncation | **IMPLEMENTED** |
+| Uploaded content execution | **NOT USED** |
+| Dependency audit evidence | **PENDING** |
+| CI quality gate | **PENDING** |
+
+**Phase 29 status:** IN PROGRESS until CI and dependency-review evidence are recorded.
