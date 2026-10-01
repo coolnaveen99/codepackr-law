@@ -14,6 +14,11 @@ const PAIRS = [
   { id: 'bsa-iea' as const, label: 'IEA → BSA' },
 ]
 
+const RELATIONS: Array<{ id: 'all' | RelationLabel; label: string }> = [
+  { id: 'all', label: 'All relationships' },
+  ...(Object.keys(RELATION_HELP) as RelationLabel[]).map((id) => ({ id, label: id })),
+]
+
 function relationClass(r: RelationLabel) {
   switch (r) {
     case 'direct correspondence':
@@ -34,21 +39,25 @@ function relationClass(r: RelationLabel) {
 
 export function TransitionCentre() {
   const [pair, setPair] = useState<(typeof PAIRS)[number]['id']>('all')
+  const [relation, setRelation] = useState<'all' | RelationLabel>('all')
   const [q, setQ] = useState('')
 
   const rows = useMemo(() => {
     return TRANSITION_HIGHLIGHTS.filter((h) => {
       if (pair !== 'all' && h.actPair !== pair) return false
+      if (relation !== 'all' && h.relation !== relation) return false
       if (!q.trim()) return true
       const s = q.toLowerCase()
       return (
         h.oldRef.toLowerCase().includes(s) ||
         h.newRef.toLowerCase().includes(s) ||
         h.relation.toLowerCase().includes(s) ||
-        h.changedWording.toLowerCase().includes(s)
+        h.changedWording.toLowerCase().includes(s) ||
+        h.changedIngredients.toLowerCase().includes(s) ||
+        h.proceduralEffect.toLowerCase().includes(s)
       )
     })
-  }, [pair, q])
+  }, [pair, relation, q])
 
   return (
     <div className="space-y-5">
@@ -60,8 +69,8 @@ export function TransitionCentre() {
           Relationship-aware Sanhita transitions
         </h1>
         <p className="mt-2 text-sm text-slate-600 dark:text-slate-400 max-w-3xl">
-          Flagship educational view of high-impact mappings. Labels are intentional — not every map is
-          &quot;equivalent&quot;. Use the full Sanhita Mapper for section-by-section concordance.
+          Flagship educational view of high-impact mappings. Each mapping states the relationship instead of
+          assuming blanket equivalence. Use the full Sanhita Mapper for section-by-section concordance.
         </p>
 
         <div className="mt-4 flex flex-wrap gap-2">
@@ -70,7 +79,7 @@ export function TransitionCentre() {
               key={p.id}
               type="button"
               onClick={() => setPair(p.id)}
-              className={`rounded-xl px-3 py-2 text-xs font-bold border transition ${
+              className={`min-h-11 rounded-xl px-3 py-2 text-xs font-bold border transition ${
                 pair === p.id
                   ? 'bg-[#8B1E3F] text-white border-[#8B1E3F]'
                   : 'border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800'
@@ -81,15 +90,29 @@ export function TransitionCentre() {
           ))}
         </div>
 
-        <input
-          value={q}
-          onChange={(e) => setQ(e.target.value)}
-          placeholder="Search old/new provision, relation, wording…"
-          className="mt-4 w-full h-11 rounded-xl border border-slate-200 dark:border-slate-700 bg-transparent px-3 text-sm"
-        />
+        <div className="mt-3 flex flex-col sm:flex-row gap-2">
+          <select
+            value={relation}
+            onChange={(e) => setRelation(e.target.value as 'all' | RelationLabel)}
+            className="min-h-11 rounded-xl border border-slate-200 dark:border-slate-700 bg-transparent px-3 text-sm"
+            aria-label="Filter by relationship"
+          >
+            {RELATIONS.map((r) => (
+              <option key={r.id} value={r.id}>{r.label}</option>
+            ))}
+          </select>
+          <input
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+            placeholder="Search old/new provision, relationship, wording…"
+            className="min-h-11 flex-1 rounded-xl border border-slate-200 dark:border-slate-700 bg-transparent px-3 text-sm"
+            aria-label="Search transition highlights"
+          />
+        </div>
 
         <p className="mt-3 text-xs text-slate-500">
-          Full concordance tool:{' '}
+          Showing {rows.length} of {TRANSITION_HIGHLIGHTS.length} curated highlights.{' '}
+          Full concordance:{' '}
           <a href="/tool/bns-ipc-mapper" className="font-bold text-[#8B1E3F] underline-offset-2 hover:underline">
             Sanhita Mapper (BNS / BNSS / BSA)
           </a>
@@ -107,7 +130,7 @@ export function TransitionCentre() {
 
       <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4">
         <div className="text-xs font-extrabold uppercase tracking-wide text-slate-500 mb-2 flex items-center gap-1.5">
-          <BookOpen className="size-3.5" /> Relation label legend
+          <BookOpen className="size-3.5" /> Relationship legend
         </div>
         <div className="flex flex-wrap gap-2">
           {(Object.keys(RELATION_HELP) as RelationLabel[]).map((r) => (
@@ -135,8 +158,8 @@ export function TransitionCentre() {
       )}
 
       <p className="text-[11px] text-slate-500">
-        Educational. Verify commencement notifications, savings clauses and forum practice before relying on any
-        mapping in a live matter.
+        Educational. Verify the current statute text, commencement notification, savings/transitional rules,
+        amendments and forum practice before relying on any mapping in a live matter.
       </p>
     </div>
   )
@@ -155,6 +178,7 @@ function HighlightCard({ h }: { h: TransitionHighlight }) {
           {h.relation}
         </span>
       </div>
+
       <dl className="grid sm:grid-cols-2 gap-3 text-xs">
         <div>
           <dt className="text-slate-500 font-bold">Changed wording</dt>
@@ -173,8 +197,42 @@ function HighlightCard({ h }: { h: TransitionHighlight }) {
           <dd className="mt-0.5 text-slate-800 dark:text-slate-200">{h.transitional}</dd>
         </div>
       </dl>
-      <div className="text-[11px] text-slate-500">
-        Commencement: {h.commencement} · Source: {h.verificationSource}
+
+      <div className="flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-500 border-t border-slate-100 dark:border-slate-800 pt-3">
+        <span>Commencement: {h.commencement}</span>
+        <a
+          href={h.sourceUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex min-h-11 items-center gap-1.5 font-bold text-[#8B1E3F] hover:underline"
+        >
+          Verification source <ExternalLink className="size-3" />
+        </a>
+      </div>
+
+      <div className="rounded-xl bg-slate-50 dark:bg-slate-800/50 p-3 text-xs">
+        <div className="font-bold text-slate-600 dark:text-slate-300">Related cases</div>
+        {h.relatedCases.length === 0 ? (
+          <p className="mt-1 text-slate-500">
+            No case is curated for this highlight in the local dataset. This is not a finding that no relevant case exists.
+          </p>
+        ) : (
+          <ul className="mt-1 space-y-2">
+            {h.relatedCases.map((c) => (
+              <li key={c.url}>
+                <a
+                  href={c.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex min-h-11 items-center font-bold text-[#8B1E3F] hover:underline"
+                >
+                  {c.title}{c.neutralCitation ? ` — ${c.neutralCitation}` : ''}
+                </a>
+                <p className="text-slate-500">{c.note}</p>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </article>
   )

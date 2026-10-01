@@ -154,3 +154,21 @@ Implementation is complete in `codepackr-law` via PR #78.
 - Next: Phase 11 — BNS / BNSS / BSA Transition Centre.
 
 **Phase 10 status:** CLOSED.
+
+
+## Phase 11 — BNS / BNSS / BSA Transition Centre (CLOSED)
+
+Implementation is complete in `codepackr-law` and is synchronized onto the current `main` after the subsequent Phase 12 merge.
+
+- Flagship transition-reference layer covers IPC → BNS, CrPC → BNSS and Indian Evidence Act → BSA.
+- Each curated mapping records the old provision, new provision, explicit relationship, wording change, ingredients, procedural effect, commencement and transitional considerations.
+- Related-case metadata uses primary-source Supreme Court links only where a case was identified; empty states explicitly avoid implying that no relevant case exists.
+- India Code verification links are shown for each highlight.
+- Pair, relationship and text-search filters are available.
+- Existing Sanhita Mapper remains the detailed section-by-section concordance.
+- Exit audit: `docs/PHASE-11-EXIT-AUDIT.md`
+- Validation: implementation CI passed TypeScript, 143/143 unit tests and production build.
+- Blocker: None.
+- Next active phase: Phase 13 — Advocate Practice Dashboard (Phase 12 is already CLOSED).
+
+**Phase 11 status:** CLOSED.
