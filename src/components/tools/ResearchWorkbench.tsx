@@ -40,6 +40,7 @@ import {
   buildCitationPayload,
   buildCitationVerifierUrl,
   saveCitationHandoff,
+  loadAndClearCitationVerificationResults,
 } from '../../lib/citationHandoff'
 import {
   buildJudgmentAnalyzerUrl,
@@ -58,6 +59,7 @@ export function ResearchWorkbench() {
   const [copiedNote, setCopiedNote] = useState(false)
   const [exportingDocx, setExportingDocx] = useState(false)
   const [importStatus, setImportStatus] = useState<{ message: string; isError: boolean } | null>(null)
+  const [verificationReturnStatus, setVerificationReturnStatus] = useState<string | null>(null)
   const fileInputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
@@ -69,6 +71,29 @@ export function ResearchWorkbench() {
     if (!hydrated) return
     saveResearchSession(session)
   }, [session, hydrated])
+
+  useEffect(() => {
+    if (!hydrated) return
+    const returned = loadAndClearCitationVerificationResults()
+    if (!returned.length) return
+    let matched = 0
+    setSession((current) => {
+      const nextAuthorities = current.authorities.map((row) => {
+        const rowCitation = row.citation.trim().toLowerCase()
+        const rowCaseName = row.caseName.trim().toLowerCase()
+        const result = returned.find((item) => {
+          const citation = item.citation.trim().toLowerCase()
+          const caseName = item.caseName.trim().toLowerCase()
+          return (citation && rowCitation && citation === rowCitation) || (caseName && rowCaseName && caseName === rowCaseName)
+        })
+        if (!result) return row
+        matched += 1
+        return { ...row, verification: result.status }
+      })
+      return { ...current, authorities: nextAuthorities }
+    })
+    setVerificationReturnStatus(`Updated ${matched} of ${returned.length} returned citation status${returned.length === 1 ? '' : 'es'} from Citation Verifier.`)
+  }, [hydrated])
 
   const handleFetchSuggestions = async (kw?: string) => {
     setLoadingSuggestions(true)
@@ -209,6 +234,12 @@ export function ResearchWorkbench() {
           Structured workflow from question → issues → authority matrix → research note. Session saves
           automatically in this browser (PH3-010/020/030/040). Not legal advice.
         </p>
+        {verificationReturnStatus && (
+          <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-3 text-xs font-bold text-emerald-800 dark:border-emerald-900 dark:bg-emerald-950/30 dark:text-emerald-200">
+            <ShieldCheck className="mr-1 inline size-4" /> {verificationReturnStatus}
+          </div>
+        )}
+
         {hydrated && session.updatedAt && (
           <p className="text-[11px] text-slate-500">
             Last saved locally: {new Date(session.updatedAt).toLocaleString()}
