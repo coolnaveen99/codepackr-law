@@ -681,7 +681,7 @@ export function TopicDetail({
                   </div>
                   {item.rows && item.rows.length > 0 ? (
                     <div className="overflow-x-auto">
-                      <table className="w-full text-xs sm:text-sm">
+                      <table className="w-full text-xs sm:text-sm cp-responsive-table">
                         <thead>
                           <tr className="bg-slate-50/70 dark:bg-slate-800/60 text-left border-b border-slate-200 dark:border-slate-800">
                             <th className="px-4 py-2.5 font-bold text-slate-700 dark:text-slate-300">Parameter</th>
@@ -692,9 +692,9 @@ export function TopicDetail({
                         <tbody>
                           {item.rows.map((row) => (
                             <tr key={row.point} className="border-t border-slate-100 dark:border-slate-800 align-top">
-                              <td className="px-4 py-2.5 font-semibold text-slate-800 dark:text-slate-200">{row.point}</td>
-                              <td className="px-4 py-2.5 text-slate-600 dark:text-slate-400">{row.left}</td>
-                              <td className="px-4 py-2.5 text-slate-600 dark:text-slate-400">{row.right}</td>
+                              <td data-label="Parameter" className="px-4 py-2.5 font-semibold text-slate-800 dark:text-slate-200">{row.point}</td>
+                              <td data-label={item.left} className="px-4 py-2.5 text-slate-600 dark:text-slate-400">{row.left}</td>
+                              <td data-label={item.right} className="px-4 py-2.5 text-slate-600 dark:text-slate-400">{row.right}</td>
                             </tr>
                           ))}
                         </tbody>
@@ -1116,7 +1116,7 @@ export function TopicDetail({
 
       {/* Mobile Floating Action Jump Bar for Brief / Submissions */}
       {(legalBrief || writtenSubmissions) && (
-        <div className="sm:hidden fixed bottom-4 inset-x-4 z-40 flex gap-2">
+        <div className="sm:hidden fixed bottom-4 inset-x-4 z-40 flex gap-2 cp-sticky-action-bar">
           {legalBrief && (
             <button
               type="button"
