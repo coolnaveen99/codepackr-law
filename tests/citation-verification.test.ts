@@ -96,6 +96,8 @@ describe('PH4-040 public verifier API', () => {
     assert.ok(result.officialSources.some((source) => source.url.includes('escr.sci.gov.in')))
   })
 
+})
+
 describe('PH4-040 Authority Network & Official Portal Link Generator', () => {
   it('emits e-SCR, SCR search, SCI judgments, and India Code for Supreme Court / INSC', () => {
     const sources = resolveOfficialSources({ courtHint: 'Supreme Court of India', neutralCourt: 'INSC' })
