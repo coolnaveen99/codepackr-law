@@ -389,4 +389,4 @@ The neutral-analysis surface now explicitly exposes the roadmap extraction/organ
 
 Phase 29 hardening is being applied to actual local upload boundaries, not just documented. Shared validation now enforces a 10 MB default limit, extension allow-lists, blocked executable extensions and MIME checks. Document Compare no longer advertises unsupported PDF upload handling.
 
-**Next:** complete CI and dependency-review evidence, then close Phase 29.
+**Exit audit:** `docs/PHASE-29-EXIT-AUDIT.md`.
