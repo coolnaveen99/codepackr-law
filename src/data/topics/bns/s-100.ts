@@ -1,190 +1,425 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
 const content: TopicContent = {
-  "study": "Introduction and meaning\nCulpable homicide is the genus (old 299). Causing death by doing an act with the intention of causing death, or of causing such bodily injury as is likely to cause death, or with the knowledge that the act is likely to cause death.\nIn student language: BNS s. 100 is the rule on “Culpable homicide”. The section provides that whoever causes death by doing an act with the intention of causing death, or with the intention of causing such bodily injury as is likely to cause death, or with the knowledge that he is likely by such act to cause death, commits the offence of culpable homicide. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 100 exists so that “Culpable homicide” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n100. Whoever causes death by doing an act with the intention of causing death, or with the intention of causing such bodily injury as is likely to cause death, or with the knowledge that he is likely by such act to cause death, commits the offence of culpable homicide\n\nEssential ingredients\n1. Whoever causes death by doing an act with the intention of causing death, or with the intention of causing such bodily injury as is likely to cause death, or with the knowledge that he is likely by such act to cause death, commits the offence of culpable homicide\n\nStatutory illustrations\nIllustration (a). A lays sticks and turf over a pit, with the intention of thereby causing death, or with the knowledge that death is likely to be thereby caused. Z, believing the ground to be firm, treads on it, falls in and is killed. A has committed the offence of culpable homicide\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 100 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (b). A knows Z to be behind a bush. B does not know it. A, intending to cause, or knowing it to be likely to cause Z’s death, induces B to fire at the bush. B fires and kills Z. Here B may be guilty of no offence; but A has committed the offence of culpable homicide\n\nExam use: quote illustration (b), then write which ingredient of BNS s. 100 it proves. Copying the illustration without that mapping sentence does not score.\n\nIllustration (c). A, by shooting at a fowl with intent to kill and steal it, kills B, who is behind a bush; A not knowing that he was there. Here, although A was doing an unlawful act, he was not guilty of culpable homicide, as he did not intend to kill B, or to cause death by doing an act that he knew was likely to cause death\n\nExam use: quote illustration (c), then write which ingredient of BNS s. 100 it proves. Copying the illustration without that mapping sentence does not score.\n\nExplanations\nExplanation 1.—A person who causes bodily injury to another who is labouring under a disorder, disease or bodily infirmity, and thereby accelerates the death of that other, shall be deemed to have caused his death\n\nExplanation 2.—Where death is caused by bodily injury, the person who causes such bodily injury shall be deemed to have caused the death, although by resorting to proper remedies and skilful treatment the death might have been prevented\n\nExplanation 3.—The causing of the death of a child in the mother’s womb is not homicide. But it may amount to culpable homicide to cause the death of a living child, if any part of that child has been brought forth, though the child may not have breathed or been completely born",
-  "glance": "BNS s. 100 — Culpable homicide.",
-  "sections": [
+  glance:
+    'Section 100 BNS defines the genus of culpable homicide: causing death by an act done with the intention of causing death, with the intention of causing bodily injury likely to cause death, or with the knowledge that the act is likely to cause death. It serves as the foundational predicate for all homicide jurisprudence under the Sanhita, structured by its three mental limbs and three statutory Explanations governing accelerated mortality, non-fatal treatability, and the infanticide threshold.',
+
+  study: `I. LEGISLATIVE SCHEME & THE GENUS-SPECIES DOCTRINE
+Section 100 of the Bharatiya Nyaya Sanhita, 2023 (BNS) forms the cornerstone of Chapter VI ("Of Offences Affecting the Human Body"). It directly replaces Section 299 of the Indian Penal Code, 1860.
+In Anglo-Indian criminal jurisprudence, homicide is the killing of a human being by a human being. Lawful homicide comprises excusable or justifiable killings under the General Exceptions in Chapter III of the BNS (e.g. accident under s. 18, self-defence under ss. 34–44). Unlawful homicide is classified into two hierarchical categories:
+1. Culpable Homicide (the genus) defined under Section 100 BNS; and
+2. Murder (the species) defined under Section 101 BNS.
+
+As Melville, J. established in the classic locus classicus Regina v. Govinda (1876) ILR 1 Bom 342, and the Supreme Court reaffirmed in State of Andhra Pradesh v. Rayavarapu Punnayya (1976) 4 SCC 382, all murder is culpable homicide, but not all culpable homicide is murder. Culpable homicide is the genus; murder is culpable homicide accompanied by one of the aggravating mental states in Section 101 and untouched by any of the five statutory Exceptions. If an act causes death but fails to meet the aggravating threshold of Section 101, or falls within an Exception to Section 101, it remains culpable homicide not amounting to murder, punishable under Section 105 BNS.
+
+II. THE THREE MENTAL PRONGS OF SECTION 100
+Section 100 requires that death be caused by doing an act with one of three alternative mental states:
+1. Limb (a) — Intention of Causing Death:
+   - Represents the highest degree of subjective mens rea.
+   - The offender directs his conscious will toward terminating human life.
+   - Overlaps with Section 101(a) BNS; if intention to cause death is established and no Exception applies, the act automatically ascends to murder.
+2. Limb (b) — Intention of Causing Bodily Injury Likely to Cause Death:
+   - The offender does not necessarily intend death itself, but intentionally inflicts a bodily injury knowing or expecting that death is a likely result.
+   - Crucial distinction from Section 101(c) BNS: "Likely to cause death" under Section 100 denotes a lower degree of probability (a fair or reasonable chance of death). Under Section 101(c), the bodily injury must be "sufficient in the ordinary course of nature to cause death" (a high probability amounting to near-certainty in the normal medical course).
+3. Limb (c) — Knowledge that the Act is Likely to Cause Death:
+   - Covers acts committed without specific intention to kill or injure, but with conscious awareness of the hazardous nature of the act.
+   - Crucial distinction from Section 101(d) BNS: Section 100 Limb (c) requires bare knowledge of likelihood of death. Section 101(d) requires knowledge that the act is "so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death", committed without any excuse.
+
+III. DECONSTRUCTION OF THE THREE STATUTORY EXPLANATIONS
+Parliament enacted three mandatory Explanations to resolve recurring forensic dilemmas:
+1. Explanation 1 — Accelerated Death of Infirm Persons:
+   - "A person who causes bodily injury to another who is labouring under a disorder, disease or bodily infirmity, and thereby accelerates the death of that other, shall be deemed to have caused his death."
+   - The tortfeasor or offender takes the victim as he finds him (the eggshell skull doctrine).
+   - If the offender did not know of the infirmity, liability remains under Section 100. However, if the offender had subjective knowledge of the infirmity and struck the blow intending harm, liability ascends to murder under Section 101(b) BNS.
+2. Explanation 2 — Intervening Medical Treatment:
+   - "Where death is caused by bodily injury, the person who causes such bodily injury shall be deemed to have caused the death, although by resorting to proper remedies and skilful treatment the death might have been prevented."
+   - The causal link between the initial blow and the fatal consequence is not severed merely because medical intervention was unavailable or suboptimal.
+   - As held in Salebhai v. State of Maharashtra, only gross medical negligence or a completely independent supervening event can break the chain of causation.
+3. Explanation 3 — Homicide of Unborn Child vs. Living Child:
+   - "The causing of the death of a child in the mother's womb is not homicide. But it may amount to culpable homicide to cause the death of a living child, if any part of that child has been brought forth, though the child may not have breathed or been completely born."
+   - Causing death of a foetus entirely within the womb is punishable as a separate offence under Section 91 BNS (old s. 315/316 IPC).
+   - Once any part of the child protrudes from the mother's body, the child is recognized in law as an independent human being capable of being the victim of culpable homicide.
+
+IV. CAUSATION, CORPUS DELICTI & FORENSIC PROOF
+1. Doctrine of Proximate Cause: The act of the accused must be the direct, substantial, and proximate cause of death (causa causans). Death cannot be too remote from the act.
+2. Corpus Delicti (The Body of the Crime):
+   - In Rama Nand v. State of Himachal Pradesh (1981) 1 SCC 511 and Sevaka Perumal v. State of Tamil Nadu (1991) 3 SCC 471, the Supreme Court established that recovery of the dead body is not an absolute legal condition precedent for a conviction of culpable homicide.
+   - Where the corpus delicti is not recovered, the prosecution must establish through unimpeachable direct or circumstantial evidence of the highest quality that the victim was killed by the accused.
+3. Post-Mortem & Medical Jurisprudence: The medical officer’s testimony and post-mortem report must distinguish ante-mortem injuries from post-mortem artifacts, specify the exact anatomical cause of death, and opine on the degree of probability of death.
+
+V. EVIDENTIARY BURDENS (BSA 2023) & SECTION 531 BNSS TRANSITION
+1. Prosecution Burden under Section 104 BSA: The prosecution carries the legal burden of establishing every element of culpable homicide beyond reasonable doubt. The mental state is inferred from the nature of weapon used, anatomical site of the blow, force employed, and antecedent conduct.
+2. Electronic Evidence under Section 63 BSA: CCTV footage of the assault, body-camera recordings of first responders, and digital hospital monitors must satisfy Section 63(4) BSA certification.
+3. Transitional Rules under Section 531(2)(a) BNSS: Under Article 20(1) of the Constitution, homicides committed on or before 30 June 2024 must be charged under IPC Section 299/304. Section 100 BNS applies strictly to acts committed on or after 1 July 2024.`,
+
+  sections: [
     {
-      "id": "bns-100-rule",
-      "title": "The legal rule",
-      "order": 1,
-      "content": [
-        "100. Whoever causes death by doing an act with the intention of causing death, or with the intention of causing such bodily injury as is likely to cause death, or with the knowledge that he is likely by such act to cause death, commits the offence of culpable homicide"
-      ]
+      id: 'bns-100-module-1',
+      title: 'Legislative Scheme & The Genus-Species Doctrine',
+      order: 1,
+      content: [
+        'Section 100 BNS directly replaces Section 299 IPC 1860, codifying the definition of culpable homicide as the foundational genus of all unlawful homicides.',
+        'As established in Regina v. Govinda (1876) and Rayavarapu Punnayya (1976), all murder is culpable homicide, but not all culpable homicide is murder.',
+        'Culpable homicide is the broader conceptual category; murder (s. 101 BNS) is an aggravated species requiring a higher degree of probability of death or extreme depravity, unaccompanied by statutory Exceptions.',
+        'Where death is caused without the intention or knowledge specified in Section 100, the act falls outside homicide into hurt (s. 114), grievous hurt (s. 116), or causing death by negligence (s. 106 BNS).',
+      ],
     },
     {
-      "id": "bns-100-ing",
-      "title": "Essential ingredients",
-      "order": 2,
-      "content": [
-        "Whoever causes death by doing an act with the intention of causing death, or with the intention of causing such bodily injury as is likely to cause death, or with the knowledge that he is likely by such act to cause death, commits the offence of culpable homicide"
-      ]
+      id: 'bns-100-module-2',
+      title: 'The Three Mental Prongs of Section 100 Deconstructed',
+      order: 2,
+      content: [
+        'Limb 1: Intention of causing death represents the highest subjective culpability; if established without statutory Exceptions, it automatically ascends to murder under Section 101(a).',
+        'Limb 2: Intention of causing bodily injury likely to cause death requires an intended injury accompanied by a reasonable likelihood of fatal outcome. It is distinguished from Section 101(c) where the intended injury must be objectively sufficient in the ordinary course of nature to cause death.',
+        'Limb 3: Knowledge that the act is likely to cause death covers reckless acts committed with conscious awareness of fatal risk. It is distinguished from Section 101(d) where the act must be imminently dangerous and in all probability cause death without excuse.',
+        'The degree of probability of death is the decisive operational metric separating Section 100 culpable homicide from Section 101 murder.',
+      ],
     },
     {
-      "id": "bns-100-ill",
-      "title": "Statutory illustrations",
-      "order": 4,
-      "content": [
-        "(a) A lays sticks and turf over a pit, with the intention of thereby causing death, or with the knowledge that death is likely to be thereby caused. Z, believing the ground to be firm, treads on it, falls in and is killed. A has committed the offence of culpable homicide",
-        "(b) A knows Z to be behind a bush. B does not know it. A, intending to cause, or knowing it to be likely to cause Z’s death, induces B to fire at the bush. B fires and kills Z. Here B may be guilty of no offence; but A has committed the offence of culpable homicide",
-        "(c) A, by shooting at a fowl with intent to kill and steal it, kills B, who is behind a bush; A not knowing that he was there. Here, although A was doing an unlawful act, he was not guilty of culpable homicide, as he did not intend to kill B, or to cause death by doing an act that he knew was likely to cause death"
-      ]
+      id: 'bns-100-module-3',
+      title: 'Deconstruction of the Three Statutory Explanations',
+      order: 3,
+      content: [
+        'Explanation 1 codifies the eggshell skull rule: accelerating the death of a person labouring under a disease, disorder, or infirmity is deemed causing death.',
+        'Explanation 2 establishes that causal responsibility is not severed merely because skilful medical treatment might have averted death, unless there is gross supervening negligence.',
+        'Explanation 3 draws the statutory boundary of personhood: causing the death of a foetus inside the womb is not homicide (punishable under s. 91 BNS), but causing the death of a child once any part has been brought forth amounts to culpable homicide.',
+        'These Explanations form substantive statutory deeming fictions that cannot be dispensed with during trial.',
+      ],
     },
     {
-      "id": "bns-100-expl",
-      "title": "Explanations",
-      "order": 5,
-      "content": [
-        "Explanation 1.—A person who causes bodily injury to another who is labouring under a disorder, disease or bodily infirmity, and thereby accelerates the death of that other, shall be deemed to have caused his death",
-        "Explanation 2.—Where death is caused by bodily injury, the person who causes such bodily injury shall be deemed to have caused the death, although by resorting to proper remedies and skilful treatment the death might have been prevented",
-        "Explanation 3.—The causing of the death of a child in the mother’s womb is not homicide. But it may amount to culpable homicide to cause the death of a living child, if any part of that child has been brought forth, though the child may not have breathed or been completely born"
-      ]
-    }
+      id: 'bns-100-module-4',
+      title: 'Causation, Corpus Delicti & Forensic Medical Scrutiny',
+      order: 4,
+      content: [
+        'The act of the accused must be the proximate and direct cause (causa causans) of death, unbroken by independent intermediate events.',
+        'Recovery of the dead body (corpus delicti) is not an absolute rule of law (Rama Nand (1981)); where the body is destroyed or untraced, the prosecution must establish the factum of death through cogent and unimpeachable circumstantial evidence.',
+        'The autopsy report is central: it must document the number of blows, weapon characteristics, depth of wounds, and whether vital organs were penetrated.',
+        'Forensic medical testimony is critical to establish whether an injury was merely "likely" to cause death (s. 100) or "sufficient in the ordinary course of nature" (s. 101(c)).',
+      ],
+    },
+    {
+      id: 'bns-100-module-5',
+      title: 'Evidentiary Proof (BSA ss. 63, 104) & Section 531 BNSS Transition',
+      order: 5,
+      content: [
+        'Under BSA Section 104, the prosecution carries the unwavering burden of establishing the corpus delicti, causal connection, and mens rea beyond reasonable doubt.',
+        'Digital evidence, such as hospital surveillance footage, emergency call records, and digital post-mortem recordings, must strictly satisfy Section 63(4) BSA certification.',
+        'Transitional rules under Article 20(1) and Section 531(2)(a) BNSS dictate that homicides committed prior to 1 July 2024 are tried under IPC s. 299/304, while post-1 July 2024 offences are charged under BNS s. 100/105.',
+        'Appellate advocacy requires dissecting medical opinions to reduce charges from murder under Section 101 to culpable homicide under Section 100/105.',
+      ],
+    },
   ],
-  "examples": [
+
+  provisions: [
     {
-      "id": "bns-100-ex-1",
-      "title": "Illustration (a)",
-      "description": "A lays sticks and turf over a pit, with the intention of thereby causing death, or with the knowledge that death is likely to be thereby caused. Z, believing the ground to be firm, treads on it, falls in and is killed. A has committed the offence of culpable homicide\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 100 — which fact proves which element, and what the legal result is."
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-100',
+      section: 's. 100',
+      title: 'Culpable homicide',
     },
     {
-      "id": "bns-100-ex-2",
-      "title": "Illustration (b)",
-      "description": "A knows Z to be behind a bush. B does not know it. A, intending to cause, or knowing it to be likely to cause Z’s death, induces B to fire at the bush. B fires and kills Z. Here B may be guilty of no offence; but A has committed the offence of culpable homicide\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 100 — which fact proves which element, and what the legal result is."
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-101',
+      section: 's. 101',
+      title: 'Murder',
     },
     {
-      "id": "bns-100-ex-3",
-      "title": "Illustration (c)",
-      "description": "A, by shooting at a fowl with intent to kill and steal it, kills B, who is behind a bush; A not knowing that he was there. Here, although A was doing an unlawful act, he was not guilty of culpable homicide, as he did not intend to kill B, or to cause death by doing an act that he knew was likely to cause death\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 100 — which fact proves which element, and what the legal result is."
-    }
-  ],
-  "hypotheticals": [
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-105',
+      section: 's. 105',
+      title: 'Punishment for culpable homicide not amounting to murder',
+    },
     {
-      "id": "bns-100-hypo",
-      "title": "Chamber Practice Hypothetical",
-      "facts": "(a) A lays sticks and turf over a pit, with the intention of thereby causing death, or with the knowledge that death is likely to be thereby caused. Z, believing the ground to be firm, treads on it, falls in and is killed. A has committed the offence of culpable homicide",
-      "question": "Whether BNS s. 100 (Culpable homicide) applies, and how structured written arguments should be framed.",
-      "applicableLaw": "BNS s. 100. Chapter VI — Of Offences Affecting the Human Body. Connected: BNS s. 101, BNS s. 105.",
-      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 100 (Culpable homicide), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) Whoever causes death by doing an act with the intention of causing death, or with the intention of causing such bodily injury as is likely to cause death, or with the knowledge that he is likely by such act to cause death, commits the offence of culpable homicide\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 100 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
-      "conclusion": "The result depends on proof of the ingredients of BNS s. 100. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
-    }
-  ],
-  "distinctions": [
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-106',
+      section: 's. 106',
+      title: 'Causing death by negligence',
+    },
     {
-      "id": "bns-100-dist",
-      "title": "BNS s. 100 and connected sections",
-      "left": "BNS s. 100",
-      "right": "BNS s. 101, BNS s. 105",
-      "rows": [
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-91',
+      section: 's. 91',
+      title: 'Act done with intent to prevent child being born alive or to cause it to die after birth',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-104',
+      section: 's. 104',
+      title: 'Burden of proof',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-63',
+      section: 's. 63',
+      title: 'Admissibility of electronic records',
+    },
+  ],
+
+  examples: [
+    {
+      id: 'bns-100-ill-1',
+      title: 'Illustration (a) Deconstructed — Pit Trapped with Turf',
+      illustrationType: 'statutory-practical',
+      description:
+        'A lays sticks and turf over a deep pit with the intention of thereby causing death, or with the knowledge that death is likely to be thereby caused. Z, believing the ground to be firm, treads on it, falls into the pit, and is killed. A has committed the offence of culpable homicide. The actus reus is the concealment of the lethal pit; the mens rea is the subjective intention to cause death or knowledge of likelihood of death. The causal connection is direct and proximate, satisfying Section 100.',
+    },
+    {
+      id: 'bns-100-ill-2',
+      title: 'Illustration (c) Deconstructed — Shooting at Fowl (Absence of Mens Rea)',
+      illustrationType: 'fail-scenario',
+      description:
+        'A, by shooting at a fowl with intent to kill and steal it, shoots and kills B, who is hidden behind a thick bush, A not knowing that B was there. Here, although A was engaged in an unlawful act (attempted theft of livestock), A is not guilty of culpable homicide. A did not intend to kill B, nor did A intend to cause bodily injury likely to cause death, nor did A possess knowledge that his act was likely to cause the death of any human being. The absence of mens rea under Section 100 defeats the charge of culpable homicide.',
+    },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'bns-100-hypo',
+      title: 'Chamber Practice Hypothetical: Single Stick Blow, Enlarged Spleen & Explanation 1',
+      facts:
+        'During an agricultural boundary quarrel, accused X delivers a single blow with a wooden stick to the abdomen of victim Y. Unknown to X, Y suffered from chronic malaria resulting in massive splenomegaly (an enlarged spleen measuring four times normal size). The blow ruptured the diseased spleen, leading to internal haemorrhage and death four hours later. The autopsy surgeon confirms that a blow of such moderate force on a healthy individual would have produced only a contusion or simple hurt, but ruptured the diseased spleen in this instance. The police charge X with murder under Section 101 BNS. The defence contends that X had no intention to kill, had no knowledge of Y’s diseased condition, and therefore the act constitutes only simple or grievous hurt.',
+      question:
+        'As Senior Counsel, analyse the criminal liability of X. Does the act constitute murder under Section 101, culpable homicide under Section 100, or grievous hurt under Section 116 BNS?',
+      applicableLaw:
+        'BNS ss. 100 (Limb b & Explanation 1), 101(b), 105, 116; Supreme Court precedents in Regina v. Govinda (1876), Rayavarapu Punnayya (1976), and State of Karnataka v. Shivalingaiah (1988) Supp SCC 533.',
+      analysis:
+        '1. Exclusion of Murder under Section 101(b) BNS: Under Section 101(b), an assault on an infirm victim constitutes murder only if the offender knows of the special disease or infirmity. Here, X had no knowledge of Y’s enlarged spleen. Nor was the single blow objectively sufficient in the ordinary course of nature to cause death to a normal person (negating s. 101(c)). Therefore, murder under Section 101 is completely ruled out.\n2. Application of Section 100 Explanation 1: Under Explanation 1 to Section 100 BNS, a person who causes bodily injury to another labouring under an infirmity and thereby accelerates death is deemed to have caused death. The causation of death is legally established.\n3. Analysis of Mens Rea under Section 100: Did X intend to cause bodily injury likely to cause death? Striking an abdominal blow with a lathi carries a foreseeable risk of serious internal injury. However, as held in Shivalingaiah (1988), where the weapon is ordinary, the blow is single, and the assailant had no knowledge of the spleen condition, the court will not readily infer an intention to cause an injury likely to cause death.\n4. Liability for Grievous Hurt vs Culpable Homicide: If the court finds X had knowledge that a forceful stick blow to the abdomen was likely to endanger life, X is liable for Culpable Homicide Not Amounting to Murder under Section 105 Part II BNS. If the force was moderate and no such knowledge can be attributed, the offence drops to voluntarily causing grievous hurt under Section 116 BNS.',
+      conclusion:
+        'X cannot be convicted of murder under Section 101. X’s liability is confined to Culpable Homicide Not Amounting to Murder punishable under Section 105 Part II BNS (or voluntarily causing grievous hurt under Section 116 BNS depending on the proved velocity of the blow), with Explanation 1 establishing the legal causation of death.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'bns-100-dist-1',
+      title: 'Section 100 BNS (Culpable Homicide) vs Section 101 BNS (Murder)',
+      left: 'Section 100 BNS (Culpable Homicide / Genus)',
+      right: 'Section 101 BNS (Murder / Species)',
+      rows: [
         {
-          "point": "Heading",
-          "left": "Culpable homicide",
-          "right": "Read the neighbour’s title on its own page before you write."
+          point: 'Degree of Probability of Death',
+          left: 'Bodily injury "likely" to cause death; knowledge of "likelihood" of death',
+          right: 'Bodily injury "sufficient in ordinary course of nature to cause death"; "imminently dangerous in all probability"',
         },
         {
-          "point": "What you must prove",
-          "left": "Whoever causes death by doing an act with the intention of causing death, or with the intention of causing such bodily injury as is likely to cause death, or with the knowledge that he is likely by such act to cause death, commits the offence of culpable homicide",
-          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+          point: 'Aggravated Infirmity Clause',
+          left: 'Offender accelerates death of diseased person without knowing of infirmity (Explanation 1)',
+          right: 'Offender acts with subjective knowledge of victim’s infirmity (s. 101(b))',
         },
         {
-          "point": "Practice trap",
-          "left": "Citing a neighbour as if it were s. 100.",
-          "right": "Citing s. 100 where the neighbour actually applies."
-        }
-      ]
-    }
-  ],
-  "misconceptions": [
-    {
-      "id": "bns-100-trap-1",
-      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
-      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 100."
+          point: 'Statutory Exceptions',
+          left: 'Not applicable; Section 100 is the general definition of the genus',
+          right: 'Murder is subject to five statutory Exceptions; if any applies, offence drops to culpable homicide (s. 105)',
+        },
+        {
+          point: 'Punishment Provision',
+          left: 'Punishable under Section 105 BNS (up to life or 10 years and fine)',
+          right: 'Punishable under Section 103 BNS (death or life imprisonment and fine)',
+        },
+      ],
     },
     {
-      "id": "bns-100-trap-2",
-      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
-      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+      id: 'bns-100-dist-2',
+      title: 'Section 100 Limb (b) vs Section 101(c) BNS (The Probability Differential)',
+      left: 'Section 100 Limb (b) BNS',
+      right: 'Section 101(c) BNS (Virsa Singh Test)',
+      rows: [
+        {
+          point: 'Mental Element',
+          left: 'Intention to cause such bodily injury as is likely to cause death',
+          right: 'Intention to cause bodily injury, and that intended injury is sufficient in ordinary course of nature',
+        },
+        {
+          point: 'Medical Benchmark',
+          left: 'Injury may cause death; death is a probable or likely consequence',
+          right: 'Injury will cause death in the normal course of medical science absent miraculous intervention',
+        },
+        {
+          point: 'Judicial Formulation',
+          left: 'Regina v. Govinda (1876): lower degree of probability',
+          right: 'Virsa Singh (1958): objective sufficiency of the particular intended injury',
+        },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'bns-100-trap1',
+      trap: 'Culpable homicide and murder are mutually exclusive, unrelated offences in the Sanhita.',
+      correction:
+        'Culpable homicide is the genus; murder is the species (Regina v. Govinda; Rayavarapu Punnayya). Every murder is culpable homicide, but culpable homicide becomes murder only when it satisfies one of the four limbs of Section 101 and escapes the five statutory Exceptions.',
     },
     {
-      "id": "bns-100-trap-3",
-      "trap": "Giving a one-line summary or shortened explanation of the provision.",
-      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
-    }
-  ],
-  "questionsAndAnswers": [
-    {
-      "id": "bns-100-q-brief",
-      "draftingCategory": "brief",
-      "question": "Legal Assessment & Statutory Note: BNS s. 100 (Culpable homicide)",
-      "answer": "Introduction. BNS s. 100 deals with Culpable homicide. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Culpable homicide is the genus (old 299). Causing death by doing an act with the intention of causing death, or of causing such bodily injury as is likely to cause death, or with the knowledge that the act is likely to cause death.\n\nLegal rule. In student language: BNS s. 100 is the rule on “Culpable homicide”. The section provides that whoever causes death by doing an act with the intention of causing death, or with the intention of causing such bodily injury as is likely to cause death, or with the knowledge that he is likely by such act to cause death, commits the offence of culpable homicide. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever causes death by doing an act with the intention of causing death, or with the intention of causing such bodily injury as is likely to cause death, or with the knowledge that he is likely by such act to cause death, commits the offence of culpable homicide\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A lays sticks and turf over a pit, with the intention of thereby causing death, or with the knowledge that death is likely to be thereby caused. Z, believing the ground to be firm, treads on it, falls in and is killed. A has committed the offence of culpable homicide\n\nExplanations. Explanation 1.—A person who causes bodily injury to another who is labouring under a disorder, disease or bodily infirmity, and thereby accelerates the death of that other, shall be deemed to have caused his death An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 100. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 101, BNS s. 105. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 100 is the complete current-law heading for Culpable homicide. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
-      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+      id: 'bns-100-trap2',
+      trap: 'If a doctor testifies that the victim would have survived with better hospital care, the accused cannot be guilty of culpable homicide.',
+      correction:
+        'Explanation 2 to Section 100 BNS explicitly mandates that where death is caused by bodily injury, the offender is deemed to have caused death even if proper remedies and skilful treatment might have prevented it.',
     },
     {
-      "id": "bns-100-q-submissions",
-      "draftingCategory": "submissions",
-      "question": "Comprehensive Written Submissions: BNS s. 100 (Culpable homicide) with Statutory Scheme & Judicial Analysis",
-      "answer": "Introduction. BNS s. 100 deals with Culpable homicide. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Culpable homicide is the genus (old 299). Causing death by doing an act with the intention of causing death, or of causing such bodily injury as is likely to cause death, or with the knowledge that the act is likely to cause death.\n\nLegal rule. In student language: BNS s. 100 is the rule on “Culpable homicide”. The section provides that whoever causes death by doing an act with the intention of causing death, or with the intention of causing such bodily injury as is likely to cause death, or with the knowledge that he is likely by such act to cause death, commits the offence of culpable homicide. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. Whoever causes death by doing an act with the intention of causing death, or with the intention of causing such bodily injury as is likely to cause death, or with the knowledge that he is likely by such act to cause death, commits the offence of culpable homicide\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): (a) A lays sticks and turf over a pit, with the intention of thereby causing death, or with the knowledge that death is likely to be thereby caused. Z, believing the ground to be firm, treads on it, falls in and is killed. A has committed the offence of culpable homicide\n\nExplanations. Explanation 1.—A person who causes bodily injury to another who is labouring under a disorder, disease or bodily infirmity, and thereby accelerates the death of that other, shall be deemed to have caused his death An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 100. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 101, BNS s. 105. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 100 is the complete current-law heading for Culpable homicide. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second statutory illustration. Illustration (b): (b) A knows Z to be behind a bush. B does not know it. A, intending to cause, or knowing it to be likely to cause Z’s death, induces B to fire at the bush. B fires and kills Z. Here B may be guilty of no offence; but A has committed the offence of culpable homicide Contrast it with illustration (a). The legal weight lies in the contrast.\n\nLayer 3 — Distinction. Contrast BNS s. 100 with BNS s. 101, BNS s. 105. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 100.”",
-      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
-    }
+      id: 'bns-100-trap3',
+      trap: 'Causing the death of an unborn child inside the mother’s womb is culpable homicide under Section 100.',
+      correction:
+        'Explanation 3 to Section 100 BNS explicitly states that causing the death of a child in the mother’s womb is NOT homicide. It becomes culpable homicide only if any part of the child has been brought forth. In-womb foeticide is punishable under Section 91 BNS.',
+    },
   ],
-  "cases": [
+
+  cases: [
     {
-      "name": "Regina v. Govinda",
-      "year": 1876,
-      "citation": "(1876) 1 Bom 342",
-      "holding": "The classic Indian distinction between culpable homicide and murder — intention and the degree of probability of death. Still the starting case for ss. 100–101."
-    }
-  ],
-  "examTips": [
-    "Cite BNS s. 100 for offences on or after 1 July 2024.",
-    "Ingredients first, illustration second, application third, conclusion last.",
-    "Definition 100 / 101, punishment 103 / 105. Mixing these four numbers is the most common homicide error."
-  ],
-  "examFrameworks": [
-    {
-      "question": "Structured Legal Assessment: BNS s. 100 (Culpable homicide).",
-      "steps": [
-        "Introduce BNS s. 100 and Chapter VI — Of Offences Affecting the Human Body.",
-        "Define / state the meaning in your own words.",
-        "List the essential ingredients.",
-        "Use one statutory illustration and map it to an ingredient.",
-        "State the material explanation or exception.",
-        "Apply in four to six sentences.",
-        "Conclude with the current citation — BNS s. 100."
-      ]
+      name: 'Regina v. Govinda',
+      year: 1876,
+      citation: '(1876) ILR 1 Bom 342',
+      court: 'Bombay High Court',
+      holding:
+        'Melvill, J. constructed the definitive comparative matrix contrasting culpable homicide (s. 299 IPC / s. 100 BNS) and murder (s. 300 IPC / s. 101 BNS), establishing that the distinction turns fundamentally on the degree of probability of death.',
+      relevance:
+        'The foundational historical locus classicus governing the genus-species boundary of Indian homicide law.',
     },
     {
-      "question": "Comprehensive Chamber Written Submissions: BNS s. 100 with connected statutory scheme.",
-      "steps": [
-        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
-        "Place the section in the Chapter and explain why the heading exists.",
-        "Work a second statutory illustration and contrast it with the first.",
-        "Distinguish BNS s. 100 from BNS s. 101, BNS s. 105.",
-        "IRAC application to the problem facts.",
-        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
-        "Current-law conclusion."
-      ]
-    }
+      name: 'State of Andhra Pradesh v. Rayavarapu Punnayya',
+      year: 1976,
+      citation: '(1976) 4 SCC 382',
+      court: 'Supreme Court of India',
+      holding:
+        'Formulated the authoritative tripartite test: (1) Did the accused cause death with any state of mind in Section 100? (2) If yes, does it fall in clauses (a)-(d) of Section 101? (3) If yes, does any statutory Exception apply to reduce it to culpable homicide not amounting to murder?',
+      relevance:
+        'Mandatory three-step judicial filter applied by all trial and appellate courts in homicide adjudications.',
+    },
+    {
+      name: 'Rama Nand v. State of Himachal Pradesh',
+      year: 1981,
+      citation: '(1981) 1 SCC 511',
+      court: 'Supreme Court of India',
+      holding:
+        'Held that recovery of the dead body (corpus delicti) is not an absolute condition precedent for conviction of culpable homicide or murder; guilt can be established by cogent, clinching circumstantial evidence pointing unmistakably to death.',
+      relevance:
+        'Primary authority for proving culpable homicide in missing-body and destroyed-corpse prosecutions.',
+    },
+    {
+      name: 'State of Karnataka v. Shivalingaiah',
+      year: 1988,
+      citation: '(1988) Supp SCC 533',
+      court: 'Supreme Court of India',
+      holding:
+        'Where an assailant delivered a single squeeze to the victim’s private parts without knowledge of a heart condition, causing cardiac arrest, the act fell outside murder and culpable homicide, amounting only to grievous hurt.',
+      relevance:
+        'Demonstrates the boundary between Section 100 culpable homicide and Section 116 grievous hurt in sudden single-blow disputes.',
+    },
   ],
-  "answerSkeleton": [
-    "Introduction — BNS s. 100, Culpable homicide.",
-    "Meaning and definition.",
-    "Ingredients.",
-    "Illustration mapped to an ingredient.",
-    "Explanation / exception.",
-    "Application (IRAC).",
-    "Conclusion and current citation."
+
+  questionsAndAnswers: [
+    {
+      id: 'bns-100-brief',
+      draftingCategory: 'brief',
+      question:
+        'Prepare an IRAC Legal Case Brief on Section 100 BNS, analyzing the genus-species relationship with Section 101, the three mental prongs, and the application of Explanations 1 to 3.',
+      answer: `I. ISSUE & JURISDICTIONAL THRESHOLD
+Whether an act causing the death of a human being satisfies the statutory ingredients of culpable homicide under Section 100 BNS, and whether the mental state elevates the offence to murder under Section 101 or confines liability to Culpable Homicide Not Amounting to Murder punishable under Section 105 BNS. Forum: Court of Session under the First Schedule of BNSS.
+
+II. GOVERNING RULE & STATUTORY ANATOMY
+1. The Genus-Species Architecture: Section 100 BNS defines culpable homicide. Under Regina v. Govinda (1876) and Rayavarapu Punnayya (1976), culpable homicide is the genus and murder (s. 101) is the species.
+2. The Three Mental Prongs: Section 100 requires: (a) intention of causing death; or (b) intention of causing bodily injury likely to cause death; or (c) knowledge that the act is likely to cause death.
+3. Statutory Deeming Fictions:
+   - Explanation 1: Acceleration of death of an infirm person is deemed causing death.
+   - Explanation 2: Causal responsibility is not severed by the possibility that skilful medical treatment might have averted death.
+   - Explanation 3: Death of an unborn foetus inside the womb is not homicide (s. 91 BNS); causing death of a child once any part is brought forth is culpable homicide.
+
+III. APPLICATION TO FACTUAL DISPUTE
+- Step 1: Establish factum of death and proximate causation (causa causans) via medical evidence.
+- Step 2: Test mens rea: Infer intention or knowledge from weapon used, force applied, and target anatomical area.
+- Step 3: Check Explanations: If victim was diseased, apply Explanation 1 unless accused had subjective knowledge of infirmity (which elevates to s. 101(b)). If treatment was delayed, apply Explanation 2.
+- Step 4: Apply Punnayya Tripartite Filter: Inquire whether the case reaches Section 101, and if so, whether any of the five Exceptions in Section 101 reduce the offence to Section 105 Part I or Part II BNS.
+
+IV. CONCLUSION & OPERATIVE ADVICE
+Advise counsel to structure defence arguments around the probability differential: highlight the absence of intention to kill, prove that the injury was merely "likely" to cause death rather than "sufficient in the ordinary course of nature", or establish a statutory Exception under Section 101 to secure conviction under Section 105 Part II instead of Section 103 capital murder.`,
+      explanation:
+        'Senior Counsel IRAC brief on Section 100 BNS culpable homicide and Punnayya analytical method.',
+      relatedProvisionIds: ['bns-100', 'bns-101', 'bns-105', 'bns-106', 'bsa-104'],
+    },
+    {
+      id: 'bns-100-submissions',
+      draftingCategory: 'submissions',
+      question:
+        'Draft comprehensive Written Submissions before the High Court arguing for alteration of conviction from Murder (Section 103 BNS) to Culpable Homicide Not Amounting to Murder (Section 105 BNS read with Section 100 BNS).',
+      answer: `IN THE HIGH COURT OF JUDICATURE AT [JURISDICTION]
+CRIMINAL APPEAL NO. [____] OF 202[ ]
+IN THE MATTER OF:
+APPELLANT                                                   ... APPELLANT
+VERSUS
+STATE                                                       ... RESPONDENT
+
+WRITTEN SUBMISSIONS ON BEHALF OF THE APPELLANT PRAYING FOR ALTERATION OF CONVICTION FROM SECTION 103 BNS (MURDER) TO SECTION 105 PART II BNS (CULPABLE HOMICIDE)
+
+MOST RESPECTFULLY SHOWETH:
+
+I. STATEMENT OF FACTS & PROCEDURAL PROVENANCE
+1. The Appellant stands convicted under Section 103(1) of the Bharatiya Nyaya Sanhita, 2023 (BNS), for the murder of the deceased, and sentenced to imprisonment for life.
+2. The incident arose out of a sudden, unpremeditated verbal dispute over irrigation water sharing. The Appellant struck a single blow with an ordinary agricultural stick on the temporal region of the deceased, resulting in a linear hairline skull fracture and fatal subdural haematoma.
+
+II. THE OFFENCE FALLS WITHIN THE LOWER PROBABILITY PRONG OF SECTION 100 BNS
+3. Subversion of the Rayavarapu Punnayya Tripartite Test:
+   - In State of A.P. v. Rayavarapu Punnayya (1976) 4 SCC 382, the Supreme Court ruled that where an assault is committed in a sudden quarrel with an ordinary weapon, the court must test whether the case falls within Section 100 Limb (b)/(c) or Section 101(c).
+   - In Virsa Singh v. State of Punjab AIR 1958 SC 465, Section 101(c) requires objective sufficiency in the ordinary course of nature to cause death.
+4. Absence of Premeditation and Single Blow:
+   - The autopsy surgeon, PW-3, admitted in cross-examination that a single blow with a wooden stick on the skull does not inevitably result in death in every case, and that death was caused by sudden intracranial pressure.
+   - The Appellant did not repeat the blow, did not pursue the deceased, and carried no lethal firearm or sharp weapon. The act satisfies only the test of "knowledge that the act is likely to cause death" under Section 100 Limb (c), not the certainty required by Section 101.
+
+III. THE ACT IS PROTECTED BY EXCEPTION 4 TO SECTION 101 BNS
+5. Even assuming the act fell within Section 101, it is squarely sheltered by Exception 4 to Section 101:
+   - Committed without premeditation;
+   - In a sudden fight in the heat of passion upon a sudden quarrel; and
+   - The Appellant did not take undue advantage or act in a cruel or unusual manner.
+6. Under settled law, the offence drops from murder to Culpable Homicide Not Amounting to Murder punishable under Section 105 Part II BNS.
+
+PRAYER
+Wherefore, in light of the above facts, statutory scheme, and binding authorities, it is respectfully prayed that this Hon’ble Court may graciously be pleased to:
+(a) Partially allow the Criminal Appeal and set aside the conviction under Section 103(1) BNS;
+(b) Alter the conviction to Section 105 Part II read with Section 100 BNS; and
+(c) Reduce the sentence to the period of imprisonment already undergone.
+
+FILED BY:
+[COUNSEL FOR THE APPELLANT]
+ADVOCATE`,
+      explanation:
+        'Senior Counsel written submissions praying for alteration of conviction from murder to culpable homicide not amounting to murder.',
+      relatedProvisionIds: ['bns-100', 'bns-101', 'bns-103', 'bns-105', 'bsa-104'],
+    },
   ],
-  "revisionPoints": [
-    "BNS s. 100: Culpable homicide.",
-    "First ingredient: Whoever causes death by doing an act with the intention of causing death, or with the intention of causing such bodily injury as is likely to cause death, or with the knowledge that he is likely by such act to cause death, commits the offence of culpable homicide",
-    "3 statutory illustration(s) — quote and map.",
-    "For offences on or after 1 July 2024, the correct citation is BNS s. 100 — Culpable homicide. Older books and judgments may still print a historical number (299). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+
+  bareActPointers: [
+    'BNS s. 100: Culpable homicide definition (three mental limbs and Explanations 1-3)',
+    'BNS s. 101: Murder (four limbs and Exceptions 1-5)',
+    'BNS s. 105: Punishment for culpable homicide not amounting to murder',
+    'BNS s. 106: Causing death by negligence',
+    'BNS s. 91: Causing death of unborn child in mother’s womb',
+    'BSA s. 104: Burden of proof in homicide trials',
+    'BSA s. 63: Admissibility of electronic video and hospital records',
   ],
-  "relatedTopics": [
-    "s-101",
-    "s-105"
-  ]
+
+  examTips: [
+    'Always start homicide analysis with the genus (Section 100) before testing the species (Section 101) using the Rayavarapu Punnayya filter.',
+    'Differentiate the probability standards: "likely" (s. 100) vs "sufficient in ordinary course of nature" (s. 101(c)).',
+    'Master the three Explanations: Explanation 1 (eggshell skull / infirmity), Explanation 2 (medical treatability), and Explanation 3 (child partly brought forth).',
+    'Remember that infanticide of an unborn foetus inside the womb is NOT homicide under Explanation 3; it is charged under Section 91 BNS.',
+  ],
+
+  revisionPoints: [
+    'BNS s. 100: Culpable homicide = causing death with intention to cause death, intention to cause bodily injury likely to cause death, or knowledge of likelihood of death.',
+    'Genus-species rule: Regina v. Govinda (1876); Rayavarapu Punnayya (1976).',
+    'Explanation 1: accelerating death of infirm person = causing death.',
+    'Explanation 2: treatability of injury does not sever causation.',
+    'Explanation 3: unborn foetus in womb is not homicide; child partly brought forth is homicide.',
+    'Transitional: IPC s. 299 for pre-1 July 2024 acts; BNS s. 100 for post-1 July 2024 acts.',
+  ],
+
+  relatedTopics: ['s-101', 's-103', 's-105', 's-106', 's-91'],
 }
 
 export default content
