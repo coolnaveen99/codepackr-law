@@ -1,237 +1,432 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
 const content: TopicContent = {
-  "glance": "BSA s. 63, Admissibility of electronic records, is an evidentiary provision in the Documentary evidence cluster. Analyse it through the separate questions of relevancy, admissibility, proof, burden and probative weight, and check BSA s. 170 for proceedings governed by the repeal and savings rule. Historical concordance: Indian Evidence Act s. 65B.",
-  "study": "Current-law identity\nBSA s. 63 governs admissibility of electronic records within Chapter V - Documentary evidence. The provision must be read with its enacted clauses, explanations, illustrations and connected provisions BSA s. 62, BSA s. 64. Historical concordance: Indian Evidence Act s. 65B.\n\nThe forensic distinction\nRelevancy asks whether a fact has the statutory connection required by the Adhiniyam. Admissibility asks whether the Court may receive that relevant material under the rules of exclusion, privilege, form and foundation. Proof asks whether the admitted material establishes the fact to the required standard. Probative weight asks how much reliance the Court should place on it. A relevant fact is not automatically admissible, and admissibility is not proof of the ultimate fact.\n\nMandatory application checklist\n1. Identify the fact in issue, the fact sought to be introduced and the party tendering it.\n2. State the exact rule in BSA s. 63, including every condition, explanation, proviso and illustration.\n3. Classify the material as oral, documentary, electronic, real or circumstantial evidence.\n4. Test directness, hearsay, privilege, primary or secondary evidence, authentication and statutory certificate requirements.\n5. Identify the party bearing the initial burden under BSA s. 104 and any special-knowledge rule under s. 109.\n6. Separate admissibility from the weight ultimately assigned after cross-examination and the complete record.\n\nElectronic records and constitutional limits\nElectronic and digital records are documents under BSA. Where a computer output, email, messaging record, CCTV export, call record, server log or device image is tendered through the statutory route, check BSA s. 63 and its certificate requirements. The statutory certificate is a foundation requirement for the electronic-record route; it is not a substitute for relevance, authenticity, chain of custody, cross-examination, or proof of the fact asserted. Evidence must also respect Articles 20(3), 21 and 14 of the Constitution, privilege rules and fair-trial disclosure.\n\nCourtroom method\nIn a written submission, identify the fact in issue, show the statutory relevancy link, answer the admissibility objection, establish the foundation, identify the burden and standard, and explain the probative consequence. Do not cite the historical Evidence Act number as the current rule after 1 July 2024 except as concordance. Do not convert a missing certificate, hearsay statement or weak foundation into an automatic finding on the merits without analysing the applicable statutory consequence.",
-  "sections": [
+  glance:
+    'Section 63 BSA prescribes the exclusive, self-contained statutory code for the admissibility of electronic records as deemed documents. Secondary electronic output (printouts, optical/magnetic media, copies) is inadmissible in evidence unless accompanied by a mandatory Section 63(4) Certificate complying with the statutory Schedule (Parts A & B) and establishing the lawful custody, regular computer operation, and cryptographic hash integrity.',
+
+  study: `I. STATUTORY FOUNDATION & JURISPRUDENTIAL ROOTS
+Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA) replaces and refines Section 65B of the repealed Indian Evidence Act, 1872 (IEA). Unlike physical paper documents, electronic records are intangible, volatile, easily replicated, and vulnerable to undetectable tampering, splicing, or alteration. To reconcile the best evidence rule with the digital age, Section 63 creates a statutory legal fiction: computer outputs are "deemed to be also documents" and are admissible without production of the original physical computer, provided the rigorous safeguards of sub-sections (2) and (4) are strictly satisfied.
+
+II. THE EXCLUSIONARY SPECIAL CODE: FROM NAVJOT SANDHU TO ARJUN KHOTKAR
+The Indian Supreme Court's jurisprudence on electronic evidence evolved across two decades of intense forensic conflict:
+1. The Dilution Phase: In State (NCT of Delhi) v. Navjot Sandhu (2005) 11 SCC 600, a Division Bench held that non-compliance with the certificate procedure did not bar secondary electronic evidence, erroneously allowing digital records to be proved under ordinary secondary evidence provisions (old ss. 63 & 65 IEA).
+2. The Correction Phase: In Anvar P.V. v. P.K. Basheer (2014) 10 SCC 473, a 3-Judge Bench overruled Navjot Sandhu, establishing that the electronic records regime is a complete special code. The maxim "generalia specialibus non derogant" applies: general secondary evidence rules cannot bypass the mandatory statutory certificate.
+3. The Conflict & Resolution: After a 2-judge bench in Shafhi Mohammad v. State of H.P. (2018) 2 SCC 801 created an impermissible equitable exception for litigants not in possession of the device, a 3-Judge Constitution Bench in Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal (2020) 7 SCC 1 authoritatively overruled Shafhi Mohammad. The Court held that the certificate requirement under Section 65B(4) [now BSA s. 63(4)] is an indispensable condition precedent to the admissibility of any secondary electronic record.
+
+III. TEXTUAL DECONSTRUCTION OF BSA SECTION 63
+1. Deemed Document Fiction [s. 63(1)]: Any information contained in an electronic record printed on paper, stored, recorded, or copied in optical, magnetic, or semiconductor media produced by a computer shall be deemed to be also a document, without further proof or production of the original, if conditions in s. 63(2) are satisfied.
+2. The Four Cumulative Conditions [s. 63(2)(a)–(d)]:
+   - Lawful Control & Regular Use: Computer output was produced during the period over which the computer was used regularly to store/process information by a person having lawful control over its use.
+   - Regular Feeding of Information: Information of the kind contained was regularly fed into the computer in the ordinary course of business/activities.
+   - Operating Integrity: Throughout the material period, the computer was operating properly, or any downtime did not affect the accuracy or integrity of the electronic record.
+   - Exact Reproduction: The electronic record reproduces or is derived from the information fed into the computer in the ordinary course.
+3. Network & Distributed Computing [s. 63(3)]: Computers operating in a network, successive computers, or distributed cloud architectures are legally treated as a single computer.
+4. Mandatory Statutory Certificate [s. 63(4) & The Schedule]:
+   - The certificate must identify the electronic record, describe the manner of production, give device particulars, certify compliance with s. 63(2) conditions, and be signed by a person holding official charge of the device or management of the relevant activity, or a qualified forensic expert.
+   - The BSA 2023 introduces the statutory Schedule (Parts A and B), mandating explicit cryptographic hash values (SHA-256 / MD5) and tool specifications to authenticate digital chain of custody.
+
+IV. THE CRUCIAL FORENSIC DISTINCTION: PRIMARY VS SECONDARY EVIDENCE
+Section 63 is NOT attracted when primary electronic evidence is tendered under Section 62 BSA. If the original electronic device itself (the seized smartphone, the server hard drive, the digital camera memory chip) is brought into the courtroom and proved by the person who captured or operated it, it is primary documentary evidence under Section 62. Section 63 applies exclusively when a copy, export, printout, CDR dump, or duplicate media (CD, DVD, external flash drive) is introduced into evidence.
+
+V. COMPULSORY PROCESS & TRIAL PRACTICE
+Where an accused or a private civil litigant seeks to rely on digital records housed on servers of third parties (e.g., Telecom Service Providers, Google, Banks) and cannot personally execute a Section 63(4) certificate, they cannot be non-suited. The party must apply to the Court under Section 94 BNSS (old s. 91 CrPC) or Section 348 BNSS (old s. 311 CrPC) to summon the lawful custodian (e.g., Nodal Officer) together with the statutory Section 63(4) certificate. Belated production before judgment is permissible under judicial discretion (State of Karnataka v. T. Naseer, 2023), provided cross-examination rights are fully preserved.`,
+
+  sections: [
     {
-      "id": "bsa-63-module-1",
-      "title": "Provenance, Legislative Objective and Evidentiary Foundation",
-      "order": 1,
-      "content": [
-        "BSA s. 63 regulates admissibility of electronic records within Documentary evidence.",
-        "The statutory scheme seeks reliable adjudication by limiting proof to legally relevant and properly received material.",
-        "Read the provision with the constitutional values of fair trial, privilege, reliability and equality of arms."
-      ]
+      id: 'bsa-63-module-1',
+      title: 'Provenance, Legislative Objective & Doctrinal Foundations',
+      order: 1,
+      content: [
+        'Electronic records represent intangible, binary data stored on volatile physical substrates. They can be edited, spliced, or manipulated without leaving physical traces visible to the naked human eye.',
+        'To facilitate digital transactions while safeguarding adjudicatory integrity, Parliament enacted Section 65B in the Indian Evidence Act, 1872 via the Information Technology Act, 2000, now reenacted and modernized as Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.',
+        'The legislative objective is twofold: (a) provide a streamlined mechanism for receiving computer-generated output without forcing the transport of massive server racks into courtrooms; and (b) establish rigorous statutory safeguards ensuring the hardware, software, and data integrity of the underlying source.',
+        'The Supreme Court in Anvar P.V. (2014) and Arjun Panditrao Khotkar (2020) confirmed that Section 63 is a special code that overrides general secondary evidence provisions through the maxim generalia specialibus non derogant.',
+      ],
     },
     {
-      "id": "bsa-63-module-2",
-      "title": "Textual Anatomy, Exceptions and Connected Rules",
-      "order": 2,
-      "content": [
-        "Deconstruct every clause of BSA s. 63; do not replace the enacted rule with a one-line Evidence Act summary.",
-        "Read it with BSA s. 62, BSA s. 64. Connected provisions may control foundation, exclusion, presumptions, witnesses or the mode of proof.",
-        "Historical concordance assists comparison only and is not the current citation."
-      ]
+      id: 'bsa-63-module-2',
+      title: 'Textual Anatomy, Provisos & Statutory Deconstruction',
+      order: 2,
+      content: [
+        'Section 63(1) establishes the legal fiction of a "deemed document", granting printouts and secondary digital media equal evidential status with paper originals, subject to strict adherence to sub-sections (2) and (4).',
+        'Section 63(2) sets out four non-negotiable cumulative conditions: (a) lawful control of the computer during regular activity; (b) regular feeding of information in the ordinary course; (c) proper operating condition throughout the material window; and (d) faithful reproduction from source data.',
+        'Section 63(3) addresses modern IT networks, cloud infrastructure, and distributed microservices, establishing that multi-server networks and sequential mainframe clusters are deemed a single unified computer system.',
+        'Section 63(4) mandates the execution of a written Certificate: (a) identifying the electronic record; (b) describing the production device and methodology; (c) confirming compliance with sub-section (2) conditions; and (d) bearing the signature of an official in charge or qualified expert.',
+        'The Schedule to BSA 2023: Introduces standardized Part A (Custodian / Producer certificate) and Part B (Digital Forensic Expert certificate), explicitly requiring cryptographic hash values (e.g. SHA-256) and hashing algorithm declarations.',
+      ],
     },
     {
-      "id": "bsa-63-module-3",
-      "title": "Mandatory Relevancy, Admissibility and Proof Ingredients",
-      "order": 3,
-      "content": [
-        "First ingredient: identify the fact in issue or the statutory relevancy link.",
-        "Second ingredient: satisfy any exclusion, privilege, directness, primary-document or foundation rule.",
-        "Third ingredient: prove authenticity and the source or maker where the form of evidence requires it.",
-        "Fourth ingredient: apply the correct burden and standard, then distinguish admissibility from probative weight."
-      ]
+      id: 'bsa-63-module-3',
+      title: 'Mandatory Proving Ingredients & Essential Elements',
+      order: 3,
+      content: [
+        'Ingredient 1 — Classification of Evidence: Determine whether the tendered item is primary evidence under s. 62 BSA (the original physical device containing the memory) or secondary computer output under s. 63 BSA (a copy, extract, printout, optical disk, or exported file).',
+        'Ingredient 2 — Contemporary Hashing & Chain of Custody: For exported digital data (e.g., CCTV footage, mobile phone extractions), a bit-stream forensic image must be created contemporaneously with a verified hash value (SHA-256 / MD5) to rule out post-seizure contamination.',
+        'Ingredient 3 — Competence of Certifier: The certifier under s. 63(4) must either be a person occupying an official position in relation to the management or operation of the relevant computer/device, or an accredited forensic expert.',
+        'Ingredient 4 — Substantive Compliance with s. 63(2): The certificate must not recite mere statutory boilerplate; it must affirmatively state the facts of regular use, lawful custody, and uncompromised operating condition.',
+        'Ingredient 5 — Independent Relevancy: Admissibility under s. 63 only addresses the mode of proof. The contents of the digital document must independently satisfy Chapter II relevancy requirements (e.g., res gestae, admissions, conspiracy under s. 10 BNS / s. 6 BSA).',
+      ],
     },
     {
-      "id": "bsa-63-module-4",
-      "title": "BSA Burdens, Presumptions and Electronic Records",
-      "order": 4,
-      "content": [
-        "BSA s. 104 supplies the ordinary burden framework; the party asserting the legal proposition must establish its foundation.",
-        "BSA s. 109 addresses facts especially within knowledge. It does not erase the initial burden or permit conviction on an unproved charge.",
-        "For electronic records, examine BSA s. 63(4), including the Schedule certificate route. Record the device/source particulars required by the Schedule, the manner of production, lawful control/regular use conditions, and the hash value and algorithm where the prescribed certificate calls for them. Separately test source, authenticity, integrity, custody and the distinction between admissibility and weight."
-      ]
+      id: 'bsa-63-module-4',
+      title: 'Evidentiary Burdens under BSA 2023 (ss. 104–106 & s. 63)',
+      order: 4,
+      content: [
+        'Burden of Proof (Section 104 BSA): The party tendering the digital record (prosecution in criminal trials, plaintiff in civil suits) bears the legal burden of laying the evidential foundation and tendering the s. 63(4) certificate.',
+        'Timing of Tender: In criminal prosecutions, the Section 63 certificate must ordinarily accompany the police report / chargesheet under Section 193 BNSS (old s. 173 CrPC) and be supplied to the accused under Section 230 BNSS (old s. 207 CrPC).',
+        'Discretion to Permit Belated Production: As ruled in Arjun Khotkar (2020) and State of Karnataka v. T. Naseer (2023), defective or missing certificates can be cured by tendering a fresh certificate before the conclusion of trial under Section 348 BNSS (s. 311 CrPC) or Section 168 BSA (s. 165 IEA), provided fair opportunity to cross-examine is extended.',
+        'Compulsory Process for Third-Party Servers: An accused or private litigant who is unable to personally certify records owned by third parties (telcos, banks, ISPs) must seek witness summons under Section 94 BNSS (s. 91 CrPC) directing the custodian to produce the record with the s. 63 certificate.',
+      ],
     },
     {
-      "id": "bsa-63-module-5",
-      "title": "Trial Roadmap, Forum, Limitation and Repeal Savings",
-      "order": 5,
-      "content": [
-        "Apply BSA s. 63 at the correct stage of trial or inquiry and identify whether the objection concerns tender, marking, admissibility, proof or final weight.",
-        "For proceedings governed by the post-1 July 2024 evidence regime, cite BSA s. 63 and its Schedule. For proceedings saved by s. 170, identify the applicable Indian Evidence Act route before arguing the consequence. Do not mechanically import the old s. 65B numbering into a current BSA proceeding.",
-        "Check the governing procedural statute and any special limitation rule for the application or appeal; evidence law itself does not create a universal limitation period."
-      ]
-    }
+      id: 'bsa-63-module-5',
+      title: 'Procedural Roadmap, Competent Forum & Trial Objections',
+      order: 5,
+      content: [
+        'Stage of Objection: An objection regarding the absence or defect of a Section 63 certificate is an objection to the "mode of proof" (procedural admissibility), not inherent lack of jurisdiction or irrelevancy.',
+        'Mandatory Rule on Trial Objections: Under the rule in Sonu v. State of Haryana (2017) 8 SCC 570, objections to the mode of proof must be taken at the very time the electronic record is marked as an exhibit in trial court. If no objection is raised during trial, it cannot be raised for the first time in appellate proceedings.',
+        'Interlocutory Marking: Where an objection is raised, the trial judge must either rule on the s. 63 objection immediately or tentatively mark the document as an exhibit subject to proof of the certificate prior to the closure of evidence (Bipin Shantilal Panchal v. State of Gujarat (2001) 3 SCC 1).',
+        'Transitional Application (Section 170 BSA): Ongoing trials where charges were framed and evidence commenced under the Indian Evidence Act, 1872 prior to 1 July 2024 remain governed by Section 65B IEA; all evidence tendered in trials instituted post-1 July 2024 must strictly comply with BSA Section 63 and the Schedule.',
+      ],
+    },
   ],
-  "provisions": [
+
+  provisions: [
     {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-63",
-      "section": "s. 63",
-      "title": "Admissibility of electronic records"
+      id: 'bsa-63',
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-63',
+      section: 'Section 63',
+      title: 'Admissibility of electronic records',
     },
     {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-63",
-      "section": "s. 63",
-      "title": "Admissibility of electronic records"
+      id: 'bsa-61',
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-61',
+      section: 'Section 61',
+      title: 'Admissibility of electronic or digital record as evidence',
     },
     {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-104",
-      "section": "s. 104",
-      "title": "Burden of proof"
+      id: 'bsa-62',
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-62',
+      section: 'Section 62',
+      title: 'Primary evidence',
     },
     {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-109",
-      "section": "s. 109",
-      "title": "Burden of proving fact especially within knowledge"
+      id: 'bsa-104',
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-104',
+      section: 'Section 104',
+      title: 'Burden of proof',
     },
     {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-170",
-      "section": "s. 170",
-      "title": "Repeal and savings"
-    }
+      id: 'bsa-170',
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-170',
+      section: 'Section 170',
+      title: 'Repeal and savings',
+    },
   ],
-  "examples": [
+
+  examples: [
     {
-      "id": "bsa-63-ill-1",
-      "title": "Example 1 - Foundation and admissibility satisfied",
-      "illustrationType": "practical",
-      "description": "A party identifies the fact in issue, establishes the statutory relevancy link under s. 63, proves the source and authenticity of the record, and satisfies the applicable documentary or electronic foundation. The Court may receive the material and then assess its weight."
+      id: 'bsa-63-ill-1',
+      title: 'Illustration 1 — Proving Conditions Met (Section 63 Applies & Admitted)',
+      illustrationType: 'statutory',
+      description:
+        'In a financial fraud trial, the prosecution seeks to prove unauthorized online fund transfers. The investigating officer seizes transactional audit logs from the core banking server of a nationalized bank. The Chief Technology Officer of the bank executes a comprehensive Certificate under BSA Section 63(4) complying with the Schedule Part A, setting forth the server serial numbers, certifying that the server operated continuously without malfunctioning, detailing the automated logging script, and providing the SHA-256 cryptographic hash value of the exported CSV file. The trial court admits the digital printout as a deemed document under Section 63(1).',
     },
     {
-      "id": "bsa-63-ill-2",
-      "title": "Example 2 - Relevancy does not cure a defect",
-      "illustrationType": "fail-scenario",
-      "description": "A party offers a relevant screenshot or hearsay statement but cannot satisfy the applicable statutory foundation, certificate, directness or privilege rule. The Court must analyse admissibility separately instead of treating logical relevance as automatic proof."
-    }
+      id: 'bsa-63-ill-2',
+      title: 'Illustration 2 — Boundary Defect / Missing Certificate (Evidence Excluded)',
+      illustrationType: 'fail-scenario',
+      description:
+        'In an extortion prosecution, the complainant produces a compact disc (CD) allegedly containing call recordings transferred from his mobile phone. The original mobile phone is neither seized nor produced in court (ruling out Section 62 primary evidence). The complainant tenders no Section 63(4) Certificate, has no forensic hashing report, and admits during cross-examination that he copied the files using a commercial laptop that was frequently used by other persons. The defense counsel raises a contemporaneous objection. Applying Arjun Panditrao Khotkar, the trial court excludes the CD from evidence as legally inadmissible.',
+    },
   ],
-  "hypotheticals": [
+
+  hypotheticals: [
     {
-      "id": "bsa-63-hypo",
-      "title": "Chamber Practice Hypothetical: BSA s. 63",
-      "facts": "In a criminal trial, the prosecution tenders an oral statement and a digital record to establish a fact connected with the charge. The defence objects that the material is irrelevant, hearsay, uncertified or unsupported by a competent witness. The prosecution invokes a burden or presumption without first establishing the factual foundation.",
-      "question": "Whether the material is relevant and admissible under BSA s. 63, and what proof and burden consequences follow.",
-      "applicableLaw": "BSA s. 63, connected provisions BSA s. 62, BSA s. 64, ss. 3, 55, 57, 63, 104 and 109 where applicable, and s. 170 savings.",
-      "analysis": "1. Identify the fact in issue and the statutory relevancy route. 2. Test the form of evidence: direct oral evidence, documentary evidence, electronic record, hearsay or privileged communication. 3. Check the applicable foundation and BSA s. 63 certificate where digital material is tendered. 4. Place the initial burden under s. 104 and use s. 109 only after the foundation for special knowledge is established. 5. Separate admissibility from credibility and final probative weight.",
-      "conclusion": "The Court should receive and rely on the material only to the extent that the statutory relevancy, admissibility and proof requirements are independently satisfied. A relevant but inadmissible record cannot become proof merely because it appears persuasive."
-    }
+      id: 'bsa-63-hypo',
+      title: 'Chamber Practice Hypothetical: CDRs and Uncertified Digital Chat Extracts',
+      facts:
+        'In a commercial bribery prosecution under the Prevention of Corruption Act, the State relies heavily on two pieces of digital evidence against corporate director Vikram: (1) Call Detail Records (CDRs) obtained from a telecom provider showing frequent calls between Vikram and a public official; and (2) printed screenshots of WhatsApp chats retrieved from an accomplice\'s tablet computer. The prosecution produces the CDR printouts with a letterhead note signed by an assistant manager of the telecom company stating "as per system records", but without the specific details required by BSA s. 63(2) or the statutory Schedule Part A format. For the WhatsApp screenshots, the prosecution produces color printouts taken by the investigating officer from an external hard drive, without seizing the original tablet and without any certificate under Section 63(4). The defense counsel moves an application objecting to the marking and admissibility of both records.',
+      question:
+        'As Senior Counsel advising the defense, evaluate the procedural maintainability and legal merits of the objection under BSA Section 63 and governing Supreme Court precedents.',
+      applicableLaw:
+        'Bharatiya Sakshya Adhiniyam, 2023, Sections 61, 62, 63 & the Schedule; BNSS 2023, Section 193; Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal (2020) 7 SCC 1; Anvar P.V. v. P.K. Basheer (2014) 10 SCC 473.',
+      analysis:
+        '1. Jurisdictional Stage of Objection: Under Sonu v. State of Haryana (2017), the defense must lodge its objection contemporaneously when the prosecution attempts to exhibit the documents during the examination-in-chief of the investigating officer.\n2. CDR Admissibility Analysis: The CDR printouts are secondary electronic records. Under s. 63(4) and the Schedule Part A, the certificate must explicitly attest to the four conditions of s. 63(2) (lawful control, regular feeding, continuous proper operation) and supply the cryptographic hash / system identifier. A vague letterhead endorsement "as per system records" fails statutory muster. However, because the records originate from a third-party licensee, the trial court has the power under s. 348 BNSS to summon the Nodal Officer with a compliant Schedule certificate before closing evidence.\n3. WhatsApp Chat Screenshots: Because the original tablet was not produced (precluding s. 62 primary evidence), the color printouts constitute secondary electronic evidence. Under Arjun Khotkar, oral testimony of the investigating officer cannot substitute for the mandatory Section 63(4) certificate. In the total absence of a certificate certifying the extraction laptop and verifying data integrity, the chat printouts cannot be exhibited.\n4. Tactical Execution: Counsel should insist on an immediate ruling or a conditional marking under Bipin Shantilal Panchal, and cross-examine the officer on the omission to seize the primary device and the complete absence of cryptographic hash generation.',
+      conclusion:
+        'The WhatsApp screenshots must be excluded entirely for failure of statutory condition precedent. The CDRs cannot be admitted on the existing defective letterhead; the prosecution must be put to the strict discipline of summoning a compliant Schedule Certificate from the telecom provider.',
+    },
   ],
-  "distinctions": [
+
+  distinctions: [
     {
-      "id": "bsa-63-distinction",
-      "title": "BSA s. 63: relevancy, admissibility and proof",
-      "left": "BSA s. 63",
-      "right": "BSA s. 62, BSA s. 64",
-      "rows": [
+      id: 'bsa-63-dist-1',
+      title: 'Primary Electronic Evidence (s. 62) vs Secondary Electronic Record (s. 63)',
+      left: 'Section 62 BSA (Primary Electronic Evidence)',
+      right: 'Section 63 BSA (Secondary Electronic Output)',
+      rows: [
         {
-          "point": "Function",
-          "left": "Admissibility of electronic records",
-          "right": "Connected relevancy, foundation, burden or exclusion rule"
+          point: 'Statutory Nature',
+          left: 'The original electronic device itself containing the primary digital storage (smartphone, hard drive, DVR).',
+          right: 'Computer output (printout, CD, DVD, USB copy, exported report, cloud mirror).',
         },
         {
-          "point": "Question",
-          "left": "What fact or evidentiary act does this section govern?",
-          "right": "What additional condition must be satisfied?"
+          point: 'Certificate Requirement',
+          left: 'No Section 63(4) Certificate required if the original physical device is produced and proved in court.',
+          right: 'Mandatory Section 63(4) Certificate strictly required as an indispensable condition precedent.',
         },
         {
-          "point": "Trial consequence",
-          "left": "Apply the section to the tendered material",
-          "right": "Then decide admissibility, credibility and weight separately"
-        }
-      ]
-    }
-  ],
-  "misconceptions": [
-    {
-      "id": "bsa-63-trap-1",
-      "trap": "Citing only the old Evidence Act number for s. 63.",
-      "correction": "Use BSA s. 63 for the current regime and mention the historical number only as concordance or when applying the s. 170 savings rule."
+          point: 'Governing Supreme Court Ratio',
+          left: 'Arjun Panditrao Khotkar (2020): original electronic record produced by owner/operator needs no certificate.',
+          right: 'Anvar P.V. (2014) & Arjun Khotkar (2020): secondary output without certificate is wholly inadmissible.',
+        },
+        {
+          point: 'Forensic Proof Method',
+          left: 'Proved directly by producing the device and calling the custodian / maker to the witness box.',
+          right: 'Proved via the legal fiction of deemed document upon fulfilling sub-section (2) conditions and Schedule certificate.',
+        },
+      ],
     },
     {
-      "id": "bsa-63-trap-2",
-      "trap": "Relevancy automatically means admissibility and proof.",
-      "correction": "Relevancy, admissibility, proof and probative weight are separate forensic inquiries."
+      id: 'bsa-63-dist-2',
+      title: 'Admissibility under Section 63 vs Substantive Proof of Content',
+      left: 'Procedural Admissibility (Section 63 Mode of Proof)',
+      right: 'Substantive Truth / Probative Weight',
+      rows: [
+        {
+          point: 'Core Inquiry',
+          left: 'Did the computer output originate from an uncompromised system and is it duly certified?',
+          right: 'Is the statement contained in the digital record true, credible, and corroborated?',
+        },
+        {
+          point: 'Legal Consequence of Certificate',
+          left: 'Merely allows the document to be received and marked as an exhibit in evidence.',
+          right: 'Does not establish that the contents are genuine or that the author spoke the truth.',
+        },
+        {
+          point: 'Cross-Examination Scope',
+          left: 'Focuses on device custody, software malfunction, hashing discrepancies, and certifier authority.',
+          right: 'Focuses on veracity, motive, corroboration, contextual meaning, and maker credibility.',
+        },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'bsa-63-trap-1',
+      trap: 'A Section 63(4) certificate is required in every case where digital evidence is introduced in court.',
+      correction:
+        'False. In Arjun Panditrao Khotkar (2020), the 3-Judge Bench expressly clarified that when the original device itself (e.g., the mobile phone, the DVR hard drive, the camera memory card) is brought into court and proved as primary evidence under Section 62, no Section 63 certificate is required. Section 63 governs only secondary computer output.',
     },
     {
-      "id": "bsa-63-trap-3",
-      "trap": "BSA s. 109 reverses the entire burden of proof.",
-      "correction": "The initial burden remains with the party asserting the legal proposition; special knowledge operates only on the facts within that statutory rule."
-    }
-  ],
-  "cases": [
-    {
-      "name": "Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal",
-      "year": 2020,
-      "citation": "(2020) 7 SCC 1",
-      "court": "Supreme Court of India",
-      "facts": "The case concerned the proof and certification of electronic records tendered in election litigation.",
-      "issue": "Whether the statutory certificate requirement for computer outputs is mandatory and when secondary electronic evidence may be received.",
-      "ratioDecidendi": "The certificate requirement is a condition precedent for admissibility of the relevant electronic record output, subject to the statutory route and the Court's power to facilitate production where the facts justify it.",
-      "holding": "The Constitution Bench clarified the certificate rule and overruled the contrary view to the extent necessary.",
-      "relevance": "Use where the issue concerns the statutory treatment of electronic records. For a current BSA proceeding, pair the historical ratio with the enacted s. 63 text and Schedule rather than treating the former s. 65B wording as the current provision."
+      id: 'bsa-63-trap-2',
+      trap: 'A party who does not own or control the computer can invoke equity to dispense with the certificate under Shafhi Mohammad.',
+      correction:
+        'False. The Supreme Court in Arjun Panditrao Khotkar (2020) explicitly overruled Shafhi Mohammad (2018). The statutory certificate is non-negotiable. If the party is not in possession of the server/device, their legal remedy is to apply to the trial court under Section 94 / 348 BNSS (ss. 91 / 311 CrPC) to summon the lawful custodian to produce the document with the requisite certificate.',
     },
     {
-      "name": "Anvar P.V. v. P.K. Basheer",
-      "year": 2014,
-      "citation": "(2014) 10 SCC 473",
-      "court": "Supreme Court of India",
-      "facts": "The Court examined the mode of proving electronic records in an election dispute.",
-      "issue": "Whether electronic records could be admitted without compliance with the statutory certificate route.",
-      "ratioDecidendi": "Electronic evidence must be proved through the special statutory requirements applicable to computer outputs; ordinary secondary-evidence principles cannot bypass that route.",
-      "holding": "The earlier contrary approach was displaced and the certificate discipline was reaffirmed.",
-      "relevance": "Use only for digital evidence issues connected with s. 63; distinguish it from ordinary oral, physical-document or privilege questions."
+      id: 'bsa-63-trap-3',
+      trap: 'A Section 63(4) certificate automatically proves that the electronic statement is true.',
+      correction:
+        'False. Section 63 relates only to admissibility and mode of proof. A valid certificate satisfies the condition precedent for the court to look at the paper printout or digital copy without demanding the physical mainframe. The truth, authenticity, and weight of the information must still be independently proved by witness testimony and corroborating evidence.',
+    },
+  ],
+
+  cases: [
+    {
+      name: 'Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal',
+      year: 2020,
+      citation: '(2020) 7 SCC 1',
+      court: 'Supreme Court of India',
+      bench: '3-Judge Bench (R.F. Nariman, S. Ravindra Bhat, V. Ramasubramanian, JJ.)',
+      facts:
+        'In an election petition challenging the validity of a Maharashtra Legislative Assembly election, the petitioner sought to rely on video camera recordings and Election Commission CCTV footage produced on CDs/VCDs without statutory certificates from the competent election authorities.',
+      issue:
+        'Whether the requirement of a certificate under Section 65B(4) [now BSA s. 63(4)] is mandatory, and whether the contrary view in Shafhi Mohammad dispensing with the certificate for parties not in possession was good law.',
+      ratioDecidendi:
+        'The certificate under Section 65B(4) [BSA s. 63(4)] is a condition precedent to the admissibility of any electronic record produced as secondary evidence. Shafhi Mohammad was wrongly decided and is overruled. However, where primary evidence is produced under Section 62 (the original device itself), no certificate is needed. Furthermore, where a party cannot obtain a certificate, the trial court must exercise its powers under Section 91 CrPC (BNSS s. 94) and Section 311 CrPC (BNSS s. 348) to summon the custodian.',
+      holding:
+        'Affirmed Anvar P.V.; overruled Shafhi Mohammad; clarified that the certificate requirement is mandatory and cannot be waived, while directing cellular companies and authorities to preserve CDRs and logs.',
+      relevance:
+        'The absolute locus classicus on electronic evidence in India. Must be cited on the mandatory nature of Section 63(4) and the distinction between s. 62 primary devices and s. 63 secondary output.',
     },
     {
-      "name": "Sharad Birdhichand Sarda v. State of Maharashtra",
-      "year": 1984,
-      "citation": "(1984) 4 SCC 116",
-      "court": "Supreme Court of India",
-      "facts": "The Court assessed a prosecution based substantially on circumstantial evidence.",
-      "issue": "What standard must circumstantial evidence meet before it can support a criminal conviction.",
-      "ratioDecidendi": "The circumstances must be fully established, consistent only with guilt, conclusive in tendency, and form a complete chain excluding every reasonable hypothesis of innocence.",
-      "holding": "The Court restated the safeguards for conviction on circumstantial evidence.",
-      "relevance": "Use where s. 63 concerns circumstantial proof or inference; do not use it as a substitute for a section-specific relevancy rule."
-    }
-  ],
-  "questionsAndAnswers": [
-    {
-      "id": "bsa-63-brief",
-      "draftingCategory": "brief",
-      "question": "Provide a structured legal brief on BSA s. 63 - Admissibility of electronic records.",
-      "answer": "I. ISSUE AND EVIDENTIARY QUESTION\nIdentify the fact in issue, the material tendered and the objection or statutory route.\n\nII. RULE\nBSA s. 63 governs admissibility of electronic records. Read it with BSA s. 62, BSA s. 64, then identify the relevancy, admissibility, proof and burden rules.\n\nIII. APPLICATION\nTest foundation, directness, privilege, documentary or electronic requirements, BSA s. 63 where applicable, and burdens under ss. 104 and 109.\n\nIV. CONCLUSION\nState whether the material is relevant, admissible, proved and what weight or procedural consequence follows.",
-      "explanation": "IRAC brief separating relevancy, admissibility, proof, burden and weight."
+      name: 'Anvar P.V. v. P.K. Basheer',
+      year: 2014,
+      citation: '(2014) 10 SCC 473',
+      court: 'Supreme Court of India',
+      bench: '3-Judge Bench (R.M. Lodha, C.J., Kurian Joseph, R.F. Nariman, JJ.)',
+      facts:
+        'In an election petition seeking declaration of an election as void on grounds of corrupt practice, speech audio/video recordings on CDs were produced without certificates under Section 65B.',
+      issue:
+        'Whether secondary electronic evidence can be proved under the general provisions of Sections 63 and 65 of the Evidence Act without complying with Section 65B.',
+      ratioDecidendi:
+        'The electronic records regime is a complete special code. The general provisions of Sections 63 and 65 have no application to electronic records. An electronic record by way of secondary evidence cannot be admitted in evidence unless accompanied by the statutory certificate.',
+      holding:
+        'Overruled State (NCT of Delhi) v. Navjot Sandhu; held that uncertified secondary electronic evidence is completely inadmissible.',
+      relevance:
+        'Established the principle that general secondary evidence rules cannot cure the lack of an electronic evidence certificate under Section 63.',
     },
     {
-      "id": "bsa-63-submissions",
-      "draftingCategory": "submissions",
-      "question": "Draft written submissions on BSA s. 63 - Admissibility of electronic records.",
-      "answer": "I. FACTUAL AND EVIDENTIARY PROVENANCE\nIdentify the witness, document, digital record, fact in issue and stage of tender.\n\nII. STATUTORY SCHEME\nDeconstruct BSA s. 63, its Chapter, connected provisions BSA s. 62, BSA s. 64 and s. 170 savings.\n\nIII. RELEVANCY AND ADMISSIBILITY\nShow the statutory connection, answer hearsay or privilege objections, establish the appropriate foundation and address BSA s. 63 for electronic records.\n\nIV. BURDEN, STANDARD AND WEIGHT\nApply BSA ss. 104 and 109 without reversing the initial burden, then distinguish admissibility from credibility and probative weight.\n\nV. PRECEDENTS AND PRAYER\nApply only relevant verified ratios and seek a precise ruling on tender, marking, exclusion, further foundation or final reliance.",
-      "explanation": "Senior Counsel written-submissions structure for BSA evidence litigation."
-    }
+      name: 'State of Karnataka v. T. Naseer @ Thandiantavida Naseer',
+      year: 2023,
+      citation: '(2023) SCC OnLine SC 1447',
+      court: 'Supreme Court of India',
+      bench: '2-Judge Bench (Sanjiv Khanna, S.V.N. Bhatti, JJ.)',
+      facts:
+        'In the 2008 Bengaluru serial bomb blast trial, the prosecution failed to produce the Section 65B certificate with the chargesheet, but subsequently applied to produce the certificate during the examination of the forensic expert.',
+      issue:
+        'Whether the prosecution can produce a Section 65B [BSA s. 63] certificate at a stage subsequent to the filing of the chargesheet before the conclusion of trial.',
+      ratioDecidendi:
+        'A Section 65B [BSA s. 63] certificate can be produced by the prosecution at a later stage of trial under Section 311 CrPC [BNSS s. 348], provided it causes no irremediable prejudice and the defense is given full opportunity to cross-examine.',
+      holding:
+        'Non-production of the certificate along with the chargesheet is a curable procedural defect; the trial court erred in rejecting the prosecution application to tender the certificate.',
+      relevance:
+        'Authoritative precedent on the timing of Section 63 certificate production and the power of courts to permit curing of omissions during trial.',
+    },
+    {
+      name: 'Sonu @ Amar v. State of Haryana',
+      year: 2017,
+      citation: '(2017) 8 SCC 570',
+      court: 'Supreme Court of India',
+      bench: '2-Judge Bench (Kurian Joseph, R. Banumathi, JJ.)',
+      facts:
+        'The appellant was convicted of kidnapping for ransom and murder largely on Call Detail Records (CDRs) which had been exhibited during trial without any defense objection regarding the absence of a Section 65B certificate.',
+      issue:
+        'Whether an objection regarding the lack of a Section 65B [BSA s. 63] certificate can be raised for the first time before the appellate court.',
+      ratioDecidendi:
+        'An objection that an electronic record is not accompanied by a Section 65B certificate relates to the "mode of proof" and procedural admissibility, not inherent inadmissibility. Objections to mode of proof must be raised at the time of marking the document as an exhibit in the trial court; if omitted, the objection is deemed waived and cannot be raised for the first time in appeal.',
+      holding:
+        'Conviction upheld; appellate objection regarding absence of certificate rejected as barred by omission to object during trial.',
+      relevance:
+        'Crucial tactical trial authority: warns defense counsel that failure to raise a contemporaneous Section 63 objection during exhibit marking forfeits the point in appeal.',
+    },
   ],
-  "bareActPointers": [
-    "BSA s. 63 and the Schedule prescribed under s. 63(4)(c)",
-    "BSA ss. 61-64, 104 and 109 where applicable",
-    "BSA s. 170"
+
+  questionsAndAnswers: [
+    {
+      id: 'bsa-63-brief',
+      draftingCategory: 'brief',
+      question:
+        'Provide a structured Case Brief and legal problem assessment on the admissibility of secondary electronic records and Call Detail Records under BSA Section 63.',
+      answer: `I. ISSUE & JURISDICTIONAL THRESHOLD
+Whether secondary electronic evidence comprising Call Detail Records (CDRs) and extracted CCTV footage can be marked and admitted in evidence against the accused in the absence of a contemporaneous Section 63(4) Certificate complying with the statutory Schedule to the Bharatiya Sakshya Adhiniyam, 2023.
+
+II. GOVERNING RULE & STATUTORY ANATOMY
+1. Section 63(1) BSA establishes the legal fiction of a "deemed document", exempting production of the physical host computer only if sub-sections (2) and (4) are strictly satisfied.
+2. Section 63(2) mandates four cumulative operational conditions: lawful custody, regular feeding of data, uncompromised operating condition, and faithful reproduction.
+3. Section 63(4) read with the Schedule to BSA mandates a formal signed Certificate setting forth device parameters, system operational integrity, and cryptographic hash values (SHA-256).
+4. Controlling Precedents: Anvar P.V. (2014) 10 SCC 473 and Arjun Panditrao Khotkar (2020) 7 SCC 1 hold that Section 63 is an unyielding special code; secondary electronic records without a valid certificate are inherently inadmissible in law.
+
+III. APPLICATION TO FACTUAL DISPUTE
+1. Classification: The CDR printouts and CCTV flash drive copies are secondary electronic output under s. 63, not original primary devices under s. 62.
+2. Defect in Foundation: The letterhead endorsement "as per system records" tendered by the prosecution lacks the four mandatory affirmations of s. 63(2) and omits the cryptographic hash required by the Schedule Part A.
+3. Procedural Timing & Remedy: Under Sonu v. State of Haryana (2017), the defense must lodge an objection to the mode of proof immediately upon tender. Under State of Karnataka v. T. Naseer (2023), the prosecution may be permitted under Section 348 BNSS to cure the omission by summoning the telecom Nodal Officer with a compliant Schedule Certificate before defense evidence closes.
+
+IV. CONCLUSION & OPERATIVE ADVICE
+The secondary electronic records cannot be admitted in their present uncertified state. The trial court must sustain the defense objection, decline marking the documents as substantive exhibits, and direct the prosecution to either summon the competent custodian under Section 94/348 BNSS with a compliant Schedule Certificate or suffer exclusion of the evidence.`,
+      explanation: 'Formatted according to the IRAC method for comprehensive legal assessment.',
+    },
+    {
+      id: 'bsa-63-submissions',
+      draftingCategory: 'submissions',
+      question:
+        'Draft comprehensive Written Submissions on behalf of the accused challenging the admissibility of uncertified electronic records under BSA Section 63.',
+      answer: `IN THE COURT OF THE PRINCIPAL SESSIONS JUDGE AT NEW DELHI
+SESSIONS CASE NO. 412 OF 2025
+
+IN THE MATTER OF:
+STATE (NCT OF DELHI)                      ... PROSECUTION
+VERSUS
+VIKRAMADITYA & ANR.                      ... ACCUSED
+
+WRITTEN SUBMISSIONS ON BEHALF OF ACCUSED NO. 1 OPPOSING TENDER OF SECONDARY ELECTRONIC EVIDENCE (CDRs & CHAT EXPORTS)
+
+MOST RESPECTFULLY SHOWETH:
+
+I. STATEMENT OF MATERIAL FACTS & PROCEDURAL PROVENANCE
+1. The prosecution seeks to exhibit against Accused No. 1: (a) printed Call Detail Records (marked as Mark-X) allegedly obtained from Telecom Service Provider M/s ABC Ltd; and (b) printed extracts of WhatsApp chat logs (marked as Mark-Y) allegedly retrieved from a seized external hard drive.
+2. Neither the primary core telecommunication switch nor the primary mobile phone/tablet from which the chat originated has been seized or produced in court under Section 62 BSA.
+3. Mark-X is accompanied merely by a forwarding letter signed by a junior administrative assistant. Mark-Y is accompanied by no certificate whatsoever.
+4. The defense contemporaneously objected to the marking of Mark-X and Mark-Y on 18.09.2025 at the threshold of PW-8's examination-in-chief, adhering strictly to the mandate of Sonu v. State of Haryana (2017) 8 SCC 570.
+
+II. STATUTORY SCHEME OF SECTION 63 BSA & THE SCHEDULE
+1. Section 63 BSA constitutes an exclusionary, self-contained code governing computer output. Section 63(1) permits secondary digital media to be deemed a document ONLY IF the four cumulative conditions of Section 63(2) are demonstrated through a statutory Certificate under Section 63(4).
+2. The Bharatiya Sakshya Adhiniyam, 2023 explicitly enacted the statutory Schedule (Parts A and B). Under the Schedule, the certifier must affirmatively certify: (i) lawful custody and routine operational use; (ii) absence of software/hardware malfunction; (iii) the specific hash value (SHA-256 / MD5); and (iv) the exact hashing algorithm employed during extraction.
+3. An administrative forwarding memo on commercial letterhead is not a substitute for a statutory Certificate under Section 63(4) and the Schedule.
+
+III. BINDING RATIO DECIDENDI OF SUPREME COURT CONSTITUTION BENCHES
+1. The law is authoritatively settled by the 3-Judge Bench in Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal (2020) 7 SCC 1:
+   "The certificate required under Section 65B(4) is a condition precedent to the admissibility of evidence by way of electronic record... An electronic record by way of secondary evidence shall not be admitted in evidence unless the requirements under Section 65B are satisfied."
+2. The earlier ruling in Anvar P.V. v. P.K. Basheer (2014) 10 SCC 473 established that general secondary evidence rules cannot circumvent the special digital certificate requirement: "generalia specialibus non derogant".
+3. In Harpal Singh v. State of Punjab (2017) 1 SCC 734, the Supreme Court unequivocally set aside a conviction that rested on uncertified Call Detail Records, holding that uncertified digital evidence is an absolute legal nullity.
+
+IV. TOTAL FAILURE OF EVIDENTIARY BURDENS UNDER SECTION 104 BSA
+1. Under Section 104 BSA, the prosecution carries the legal burden of establishing foundational admissibility.
+2. In the present case, the prosecution has failed to produce:
+   a. Any certificate satisfying the four clauses of Section 63(2);
+   b. Any certificate complying with the Schedule to the BSA;
+   c. Any hash value demonstrating data integrity from the moment of extraction to the date of tender in court;
+   d. Any competent witness from the telecom licensee occupying an official position in relation to the management of the server.
+
+V. REBUTTAL OF PROSECUTION CONTENTIONS
+1. The prosecution erroneously contends that oral evidence of the investigating officer cures the absence of a Section 63 certificate. This argument was explicitly rejected in Arjun Khotkar (para 73): oral evidence cannot override the mandatory statutory writing.
+2. While State of Karnataka v. T. Naseer (2023) permits the court to receive a belated certificate, such indulgence can only be granted upon a formal application under Section 348 BNSS establishing sufficient cause and guaranteeing full cross-examination. As on date, no such application has been filed.
+
+VI. PRAYER
+In the premises aforesaid, Accused No. 1 most respectfully prays that this Hon'ble Court may be pleased to:
+a. Uphold the defense objection to the mode of proof and admissibility of Mark-X (CDRs) and Mark-Y (chat extracts);
+b. De-exhibit and exclude Mark-X and Mark-Y from substantive consideration; and
+c. Hold that the secondary electronic records cannot be read in evidence against Accused No. 1.
+
+AND FOR THIS ACT OF JUSTICE, ACCUSED NO. 1 SHALL EVER PRAY.`,
+      explanation: 'Exhaustive courtroom written argument to Senior Counsel and Appellate standard.',
+    },
   ],
-  "examTips": [
-    "Separate relevancy, admissibility, proof and probative weight.",
-    "Use the current BSA citation and historical Evidence Act numbers only as concordance.",
-    "For electronic records, analyse s. 63(4) and the Schedule certificate, device/source particulars, production method and integrity before weight.",
-    "State the initial burden and any statutory presumption precisely."
+
+  bareActPointers: [
+    'Section 63 BSA (Admissibility of electronic records)',
+    'The Schedule to BSA (Form of Certificate under Section 63(4))',
+    'Section 61 BSA (Admissibility of electronic or digital record as evidence)',
+    'Section 62 BSA (Primary evidence)',
+    'Section 104 BSA (Burden of proof)',
+    'Section 170 BSA (Repeal and savings)',
+    'Section 94 BNSS (Summons to produce document or other thing)',
+    'Section 348 BNSS (Power to summon material witness or examine person present)',
   ],
-  "revisionPoints": [
-    "BSA s. 63: Admissibility of electronic records.",
-    "Identify the fact in issue and statutory relevancy link.",
-    "Check foundation, exclusion, burden, standard and weight.",
-    "Check s. 170 savings for proceedings governed by the former Evidence Act."
+
+  examTips: [
+    'Always distinguish Section 62 (Primary device produced) from Section 63 (Secondary computer output). The s. 63 certificate is mandatory only for secondary electronic output.',
+    'Remember that Arjun Panditrao Khotkar (2020) 7 SCC 1 overruled Shafhi Mohammad (2018). Third-party lack of possession does not dispense with the certificate; the remedy is Section 94/348 BNSS summons.',
+    'Under Sonu v. State of Haryana (2017), an objection to the absence of a s. 63 certificate must be raised at the trial stage when the document is marked as an exhibit. Failure to object waives the objection on appeal.',
+    'BSA 2023 introduced the statutory Schedule (Parts A and B) which explicitly mandates cryptographic hash values (SHA-256 / MD5).',
   ],
-  "relatedTopics": [
-    "s-62",
-    "s-64"
-  ]
-}
+
+  revisionPoints: [
+    'Governing Provision: Section 63 Bharatiya Sakshya Adhiniyam, 2023 (formerly Section 65B Indian Evidence Act).',
+    'Core Mechanism: Deemed document legal fiction under s. 63(1) subject to cumulative s. 63(2) conditions and s. 63(4) certificate.',
+    'Locus Classicus Authorities: Anvar P.V. (2014) and Arjun Panditrao Khotkar (2020) — 3-Judge Benches establishing mandatory condition precedent.',
+    'Mode of Proof Rule: Sonu v. State of Haryana (2017) — objection must be taken at the trial stage when marked.',
+    'Belated Production Rule: State of Karnataka v. T. Naseer (2023) — curable under s. 348 BNSS prior to conclusion of trial.',
+  ],
+
+  relatedTopics: [
+    's-61',
+    's-62',
+    's-64',
+    's-104',
+  ],
+} satisfies TopicContent
 
 export default content
