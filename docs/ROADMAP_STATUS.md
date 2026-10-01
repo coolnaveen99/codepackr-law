@@ -377,4 +377,10 @@ Implementation was already present on main but lacked an exit audit and board cl
 
 The existing research-bundle implementation was audited against roadmap §32. The missing case-summary field and DOCX/PDF/TXT export paths were added; Markdown export is retained. The implementation remains browser-local and explicitly avoids authority scoring or outcome prediction.
 
-**Next:** complete CI validation and record the Phase 27 exit audit.
+**Exit audit:** `docs/PHASE-27-EXIT-AUDIT.md`.
+
+## Phase 28 — Judicial / Neutral Analysis Mode (IN PROGRESS)
+
+The neutral-analysis surface now explicitly exposes the roadmap extraction/organisation utilities while preserving the prohibition on judicial-outcome prediction, judge-bias scoring, conviction prediction, winner prediction and personal competence/fitness scoring.
+
+**Next:** validate Phase 28 with CI and record the exit audit.
