@@ -2,8 +2,8 @@
 
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
-**Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** · Phase 4 — **CLOSED** · Phase 5 — **CLOSED** · Phase 6 — **CLOSED** · Phase 7 — **CLOSED** · Phase 8 — **CLOSED** · Phase 9 — **CLOSED** · Phase 10 — **CLOSED** · Phase 11 — **CLOSED** · Phase 12 — **CLOSED** · Phase 13 — **CLOSED**
-**Updated:** 2026-10-01 (PH11 + PH12 synchronized — Transition Centre and Student Learning 2.0 exit audits closed; Phase 13 completed — Phase 14 is next)
+**Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** · Phase 4 — **CLOSED** · Phase 5 — **CLOSED** · Phase 6 — **CLOSED** · Phase 7 — **CLOSED** · Phase 8 — **CLOSED** · Phase 9 — **CLOSED** · Phase 10 — **CLOSED** · Phase 11 — **CLOSED** · Phase 12 — **CLOSED** · Phase 13 — **CLOSED** · Phase 15 — **CLOSED** (user-directed priority; Phase 14 remains pending)
+**Updated:** 2026-10-01 (Phase 15 completed by explicit user direction; Phase 14 remains pending)
 
 ## Verified completed
 
@@ -70,6 +70,8 @@
 | PH11-100 | Phase 11 exit audit | **COMPLETED** | P0 |
 | PH13-010 | Advocate Practice Dashboard implementation | **COMPLETED** | P0 |
 | PH13-100 | Phase 13 exit audit | **COMPLETED** | P0 |
+| PH15-010 | Primary Source Finder implementation | **COMPLETED** | P0 |
+| PH15-100 | Phase 15 exit audit | **COMPLETED** | P0 |
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
 
 ### PH4-040 — COMPLETED (2026-10-01)
@@ -324,3 +326,24 @@
 **Next action:** Phase 14 — Cause List Organizer.
 
 **Phase 13 status:** **CLOSED**.
+
+## Phase 15 — Primary Source Finder — COMPLETED (2026-10-01)
+
+**Implementation:** `feat/ph15-primary-source-finder`
+**Exit audit:** `docs/PHASE-15-EXIT-AUDIT.md`
+**Validation:** CI gate required before merge.
+
+| Check | Result |
+|---|---|
+| Official-first source hierarchy | **PASS** |
+| Search result metadata: title, authority, date, Act/Section, source, verification | **PASS** |
+| Search + Tier 1–5 + category filters | **PASS** |
+| Official-source navigation | **PASS** |
+| Link verification boundary | **PASS** |
+| Mobile/accessibility baseline | **PASS** |
+| Focused tests | **PASS in implementation tree; CI pending** |
+| TypeScript + production build | **PENDING CI** |
+
+**Phase 15 status:** **CLOSED pending final CI/merge verification.**
+**Phase 14 status:** remains pending; it was not marked complete by this user-directed Phase 15 execution.
+**Next sequential phase:** Phase 14 — Cause List Organizer.
