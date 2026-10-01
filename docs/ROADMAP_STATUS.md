@@ -354,3 +354,20 @@ Implementation is complete on `main`.
 **Phase 25 status:** CLOSED.
 
 **Next:** Phase 26 — Court / State Configuration.
+
+
+## Phase 26 — Court / State Configuration (CLOSED)
+
+Implementation was already present on main but lacked an exit audit and board closure. This closure records the verified implementation boundary rather than treating the earlier implementation note as completion evidence.
+
+- StateProfile and CourtProfile models are implemented in `src/data/courtProfiles.ts`.
+- A deliberately small seed set is exposed by `/tool/court-forum-directory` with official links and verification dates.
+- Search and court-level filtering are deterministic and browser-local.
+- The UI explicitly states that the directory is not a complete national directory and that local rules must be verified.
+- Focused regression coverage exists in `tests/phase21-30.test.ts`.
+- Official destinations were rechecked against current court/government websites on 2026-10-01.
+- Exit audit: `docs/PHASE-26-EXIT-AUDIT.md`.
+
+**Phase 26 status:** CLOSED after CI validation of this closure PR.
+
+**Next:** Phase 27 — Senior Counsel Research Mode.
