@@ -172,3 +172,20 @@ Implementation is complete in `codepackr-law` and is synchronized onto the curre
 - Next active phase: Phase 13 — Advocate Practice Dashboard (Phase 12 is already CLOSED).
 
 **Phase 11 status:** CLOSED.
+
+
+## Phase 13 — Advocate Practice Dashboard (CLOSED)
+
+Implementation is complete via PR #83.
+
+- Seven roadmap dashboard cards: active cases, upcoming hearings, research notes, drafts, checklists, recent judgments and favourite statutes.
+- Browser-local case diary stores matter, next date, court, item number, task, notes and document checklist.
+- Favourite statutes use the versioned `cp-law:favorites:v1` namespace.
+- Existing local Research Workbench, Draft Studio, Filing Checklists and canonical judgment library are surfaced without duplicating their data models.
+- No browser notification permission, analytics submission or remote case-management integration was introduced.
+- Exit audit: `docs/PHASE-13-EXIT-AUDIT.md`
+- Validation: CI #357 — TypeScript PASS, unit tests PASS, production build PASS.
+- Blocker: None.
+- Next: Phase 14 — Cause List Organizer.
+
+**Phase 13 status:** CLOSED.
