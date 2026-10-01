@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import {
   ArrowLeft,
   ArrowRight,
@@ -21,7 +21,7 @@ import {
   Clock,
   Scale,
 } from 'lucide-react'
-import { ALL_JUDGMENTS, JUDGMENTS_BY_ID } from '../../data/judgments'
+import { loadAllJudgments } from '../../data/judgments/lazy'
 import type { Judgment, JudgmentMcq } from '../../data/judgments/types'
 import { filterJudgments, getJudgmentSubjects, getJudgmentTopics, getJudgmentYears, searchJudgments } from '../../utils/judgments/searchJudgments'
 
@@ -361,6 +361,21 @@ export function CaseLawLibrary({
   const [year, setYear] = useState('')
   const [bookmarkedOnly, setBookmarkedOnly] = useState(false)
   const [jumpTo, setJumpTo] = useState('overview')
+  const [judgments, setJudgments] = useState<Judgment[]>([])
+  const [loadingJudgments, setLoadingJudgments] = useState(true)
+
+  useEffect(() => {
+    let active = true
+    void loadAllJudgments().then((loaded) => {
+      if (active) {
+        setJudgments(loaded)
+        setLoadingJudgments(false)
+      }
+    }).catch(() => {
+      if (active) setLoadingJudgments(false)
+    })
+    return () => { active = false }
+  }, [])
 
   useEffect(() => {
     localStorage.setItem(BOOKMARKS_KEY, JSON.stringify([...bookmarks]))
@@ -378,7 +393,8 @@ export function CaseLawLibrary({
       return next
     })
 
-  const current = judgmentId ? JUDGMENTS_BY_ID.get(judgmentId) : undefined
+  const judgmentsById = useMemo(() => new Map(judgments.map((judgment) => [judgment.id, judgment])), [judgments])
+  const current = judgmentId ? judgmentsById.get(judgmentId) : undefined
 
   // Save last read whenever reading a judgment
   useEffect(() => {
@@ -432,7 +448,7 @@ export function CaseLawLibrary({
   }
 
   const results = filterJudgments(
-    searchJudgments(ALL_JUDGMENTS, query),
+    searchJudgments(judgments, query),
     { subject: subject || undefined, topic: topic || undefined, year: year ? Number(year) : undefined, bookmarkedOnly },
     bookmarks
   )
@@ -445,7 +461,7 @@ export function CaseLawLibrary({
     setBookmarkedOnly(false)
   }
 
-  const lastReadJudgment = lastRead ? JUDGMENTS_BY_ID.get(lastRead.judgmentId) : undefined
+  const lastReadJudgment = lastRead ? judgmentsById.get(lastRead.judgmentId) : undefined
 
   return (
     <div className="space-y-6">
@@ -470,7 +486,7 @@ export function CaseLawLibrary({
               </div>
               <div>
                 <div className="text-xl sm:text-2xl font-black text-slate-950 dark:text-white leading-none">
-                  {ALL_JUDGMENTS.length.toLocaleString()}
+                  {judgments.length.toLocaleString()}
                 </div>
                 <div className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mt-0.5">
                   Total Library Count
@@ -555,7 +571,7 @@ export function CaseLawLibrary({
             className="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-2.5 text-sm min-h-[44px]"
           >
             <option value="">All topics</option>
-            {getJudgmentTopics(ALL_JUDGMENTS).map((item) => (
+            {getJudgmentTopics(judgments).map((item) => (
               <option key={item}>{item}</option>
             ))}
           </select>
@@ -565,7 +581,7 @@ export function CaseLawLibrary({
             className="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-2.5 text-sm min-h-[44px]"
           >
             <option value="">All years</option>
-            {getJudgmentYears(ALL_JUDGMENTS).map((item) => (
+            {getJudgmentYears(judgments).map((item) => (
               <option key={item}>{item}</option>
             ))}
           </select>
@@ -586,10 +602,10 @@ export function CaseLawLibrary({
         <div className="flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600 dark:text-slate-400 pt-1">
           <span className="inline-flex items-center gap-1.5 font-medium">
             <Filter className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
-            {results.length === ALL_JUDGMENTS.length ? (
+            {results.length === judgments.length ? (
               <span>
                 <strong className="text-slate-900 dark:text-white font-bold text-sm">
-                  {ALL_JUDGMENTS.length.toLocaleString()}
+                  {judgments.length.toLocaleString()}
                 </strong>{' '}
                 landmark judgments available across all subjects
               </span>
