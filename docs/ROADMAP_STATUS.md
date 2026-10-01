@@ -18,7 +18,8 @@ A roadmap item is complete only when its required code/content/tests/verificatio
 **Phase 4 — CLOSED** (PH4-100 exit audit, 2026-10-01)  
 **Phase 5 — CLOSED** (Judgment Analyzer exit audit, 2026-10-01)  
 **Phase 6 — CLOSED** (Judgment Compare exit audit, 2026-10-01)  
-**Phase 7 — CLOSED** (Case Preparation Workbench exit audit, 2026-10-01)
+**Phase 7 — CLOSED** (Case Preparation Workbench exit audit, 2026-10-01)  
+**Phase 8 — CLOSED** (Legal Draft Studio 2.0 exit audit, 2026-10-01)
 
 ```
 Phase 0 stabilization
@@ -37,9 +38,9 @@ Phase 6 Judgment Compare  ← CLOSED (Judgment Compare implementation + exit aud
       ↓
 Phase 7 Case Preparation  ← CLOSED (Case Preparation Workbench implementation + exit audit)
       ↓
-Phase 7 Case Preparation
+Phase 8 Legal Draft Studio  ← CLOSED (Legal Draft Studio 2.0 implementation + exit audit)
       ↓
-Phase 8+ Drafting / Court / Practice / AI / Scale
+Phase 9+ Court / Practice / AI / Scale
 ```
 
 ## Phase 2 (closed) — summary
@@ -98,3 +99,20 @@ Implementation is complete in `codepackr-law` via PR #74.
 - Next: Phase 8 — Legal Draft Studio 2.0.
 
 **Phase 7 status:** CLOSED.
+
+
+## Phase 8 — Legal Draft Studio 2.0 (CLOSED)
+
+Implementation is complete in `codepackr-law` via PR #76.
+
+- Draft governance explicitly distinguishes reviewed full drafts from educational scaffolds/catalogue entries; checklists remain separate.
+- Existing Subject/Act/category discovery is extended with court/forum, state dependency, governance tier and review-year filters.
+- Local favourites, recently used, usage counts, A–Z and recently reviewed sorting are supported.
+- Draft metadata exposes applicable Act, relevant sections, forum, state dependency, limitation considerations, annexures, review date and governance status.
+- Existing preview, sample, copy and DOCX/PDF/TXT export workflows are preserved.
+- Exit audit: `docs/PHASE-8-EXIT-AUDIT.md`
+- Validation: CI #323 — TypeScript PASS, 134/134 unit tests PASS, production build PASS.
+- Blocker: None.
+- Next: Phase 9 — Filing and Court Checklist System.
+
+**Phase 8 status:** CLOSED.
