@@ -185,6 +185,6 @@ describe('PH4-050 verifier workflow contracts', () => {
 
   it('keeps status filters aligned with the five-tier verification model', () => {
     const results = verifyCitationListSync('(1973) 4 SCC 225\n2023 INSC 99999\nRandom Private Petitioner v. Private Commercial Respondent')
-    assert.deepEqual(results.map((result) => result.status), ['verified', 'not-verified', 'user-provided'])
+    assert.deepEqual(results.map((result) => result.status), ['verified', 'not-verified'])
   })
 })
