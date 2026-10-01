@@ -140,7 +140,7 @@ for (const route of pages) {
   const breadcrumbs = breadcrumbsFor(route);
   const structuredData = [
     structuredDataFor(route, title, description),
-    { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: breadcrumbs.map((item, index) => ({ '@type': 'ListItem', position: index + 1, name: item.name, item: absoluteUrl(item.path.replace(/^\\//, '')) })) }
+    { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: breadcrumbs.map((item, index) => ({ '@type': 'ListItem', position: index + 1, name: item.name, item: absoluteUrl(item.path) })) }
   ];
   let html = template;
   html = html.replace(/<title>[^<]*<\/title>/i, `<title>${esc(title)}</title>`);

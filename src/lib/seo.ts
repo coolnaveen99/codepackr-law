@@ -8,7 +8,7 @@ export const SITE_URL = 'https://law.codepackr.com'
 export const SITE_NAME = 'Codepackr Law'
 export const SITE_TAGLINE =
   'A free digital Indian law library and practice reference with statutes, case law, legal concepts, drafting formats, study notes and exam preparation tools.'
-export const DEFAULT_OG_IMAGE = `${SITE_URL}/og/default.png`
+export const DEFAULT_OG_IMAGE = 'https://www.codepackr.com/assets/og/default.png?v=20260928'
 
 export interface BreadcrumbItem {
   name: string

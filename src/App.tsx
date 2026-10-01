@@ -199,7 +199,7 @@ export default function App() {
           setPageMeta({
             title: `Judgment — Case Law Library | ${SITE_NAME}`,
             description: 'Supreme Court of India judgment on Codepackr Law.',
-            path: `/case-law/${route.judgmentId}`,
+            path: `/case-law/judgment/${route.judgmentId}`,
             breadcrumbs: [
               { name: 'Home', path: '/' },
               { name: 'Case Law', path: '/case-law' },

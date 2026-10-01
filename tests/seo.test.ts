@@ -9,6 +9,6 @@ test('SEO Phase 24 canonical URL generation uses one canonical origin', () => {
 })
 
 test('SEO Phase 24 uses a crawlable absolute Open Graph image', () => {
-  assert.equal(DEFAULT_OG_IMAGE, 'https://law.codepackr.com/og/default.png')
+  assert.equal(DEFAULT_OG_IMAGE, 'https://www.codepackr.com/assets/og/default.png?v=20260928')
   assert.match(DEFAULT_OG_IMAGE, /^https:\/\//)
 })
