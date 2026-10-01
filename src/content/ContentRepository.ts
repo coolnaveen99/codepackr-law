@@ -3,6 +3,7 @@ import type {
   ContentEnvelope,
   ContentManifest,
   ContentRepository as ContentRepositoryContract,
+  RelationshipIndex,
   TopicContentRecord,
 } from './contentTypes'
 
@@ -12,9 +13,27 @@ export function canonicalTopicId(subjectSlug: string, topicId: string): string {
   return `topic:india:${subjectSlug}-${topicId}`
 }
 
+function entityTypeFromId(id: string): ContentEntityType | null {
+  const prefix = id.split(':')[0]
+  const map: Record<string, ContentEntityType> = {
+    topic: 'topic',
+    provision: 'provision',
+    judgment: 'judgment',
+    doctrine: 'doctrine',
+    comparison: 'comparison',
+    illustration: 'illustration',
+    source: 'source',
+    collection: 'collection',
+    'sanhita-mapping': 'sanhitaMapping',
+    seo: 'seoRecord',
+  }
+  return map[prefix] ?? null
+}
+
 export class CanonicalContentRepository implements ContentRepositoryContract {
   private readonly baseUrl: string
   private manifestPromise: Promise<ContentManifest | null> | null = null
+  private relationshipIndexPromise: Promise<RelationshipIndex | null> | null = null
 
   constructor(baseUrl = '/legal-content') {
     this.baseUrl = baseUrl.replace(/\/$/, '')
@@ -27,6 +46,15 @@ export class CanonicalContentRepository implements ContentRepositoryContract {
     return this.manifestPromise
   }
 
+  async getRelationshipIndex(): Promise<RelationshipIndex | null> {
+    if (!this.relationshipIndexPromise) {
+      this.relationshipIndexPromise = this.fetchJson<RelationshipIndex>(
+        `${this.baseUrl}/manifests/relationship-index.json`,
+      )
+    }
+    return this.relationshipIndexPromise
+  }
+
   async get<T extends ContentEnvelope = ContentEnvelope>(
     entityType: ContentEntityType,
     id: string,
@@ -34,12 +62,45 @@ export class CanonicalContentRepository implements ContentRepositoryContract {
     const manifest = await this.getManifest()
     if (manifest) {
       const entry = manifest.entities.find((item) => item.entityType === entityType && item.id === id)
-      if (entry && entry.status === 'published') {
+      if (entry && (entry.status === 'published' || entry.status === 'review-due' || entry.status === 'archived')) {
         const record = await this.fetchJson<T>(`${this.baseUrl}/${entry.path.replace(/^\//, '')}`)
         if (record && record.status === 'published') return record
+        if (record && entry.status === 'archived' && record.status === 'archived') return record
       }
     }
     return null
+  }
+
+  async getById<T extends ContentEnvelope = ContentEnvelope>(id: string): Promise<T | null> {
+    const entityType = entityTypeFromId(id)
+    if (!entityType) return null
+    return this.get<T>(entityType, id)
+  }
+
+  async getOutboundRelations(id: string): Promise<Array<{ to: string; field: string }>> {
+    const index = await this.getRelationshipIndex()
+    if (index?.outbound?.[id]) {
+      return index.outbound[id]
+    }
+    // Fallback: load entity and read named relation fields
+    const entity = await this.getById(id)
+    if (!entity) return []
+    const edges: Array<{ to: string; field: string }> = []
+    const push = (field: string, arr: unknown) => {
+      if (!Array.isArray(arr)) return
+      for (const item of arr) {
+        if (typeof item === 'string' && item.includes(':')) edges.push({ to: item, field })
+      }
+    }
+    push('sources', entity.sources)
+    const c = entity.content || {}
+    push('relatedTopics', c.relatedTopics)
+    push('relatedJudgments', c.relatedJudgments)
+    push('relatedProvisions', c.relatedProvisions)
+    push('relatedDoctrines', c.relatedDoctrines)
+    push('illustrations', c.illustrations)
+    push('members', c.members)
+    return edges
   }
 
   async getTopic(subjectSlug: string, topicId: string): Promise<TopicContentRecord | null> {
