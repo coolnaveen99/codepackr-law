@@ -3,6 +3,7 @@ import { Check, ChevronDown, Copy, Download, FileText, ListChecks, Printer, Sear
 import { CASE_FILE_CHECKLISTS, DRAFT_TEMPLATES, type DraftTemplate } from '../../data/draft-templates'
 import { TEMPLATE_CATALOG, catalogToDraftTemplate } from '../../data/legal-template-catalog'
 import { downloadLegalDocument, printAsPdf, type ExportKind } from '../../lib/document-export'
+import { getDraftTier, getReviewYear, markDraftUsed, matchesDraftTier, readDraftUsage, toggleDraftFavorite, writeDraftUsage, type DraftUsageState } from '../../lib/draftStudio'
 
 const CATEGORIES = ['all', 'criminal', 'civil', 'notice', 'affidavit', 'family', 'property', 'commercial', 'consumer', 'employment', 'company', 'arbitration', 'ip', 'tax', 'banking', 'motor', 'constitutional', 'procedure', 'rtI', 'misc'] as const
 type Category = typeof CATEGORIES[number]
@@ -19,7 +20,13 @@ export function LegalDraftStudio() {
   const [act, setAct] = useState('')
   const [showAdvanced, setShowAdvanced] = useState(false)
   const [showMore, setShowMore] = useState(false)
-  const allTemplates = useMemo(() => [...DRAFT_TEMPLATES, ...TEMPLATE_CATALOG.map(catalogToDraftTemplate)], [])
+  const [tier, setTier] = useState<'all' | 'reviewed' | 'scaffold'>('all')
+  const [court, setCourt] = useState('')
+  const [state, setState] = useState('')
+  const [reviewYear, setReviewYear] = useState('')
+  const [sortBy, setSortBy] = useState<'default' | 'az' | 'most-used' | 'recently-used' | 'recently-reviewed'>('default')
+  const [usage, setUsage] = useState<DraftUsageState>(() => readDraftUsage())
+  const allTemplates = useMemo(() => [...DRAFT_TEMPLATES.map((t) => ({ ...t, tier: t.tier || 'reviewed' as const, courtForum: t.courtForum || 'General / forum-dependent', stateDependency: t.stateDependency || 'General / verify local rules' })), ...TEMPLATE_CATALOG.map(catalogToDraftTemplate)], [])
   const [exporting, setExporting] = useState<ExportKind | null>(null)
 
   const template: DraftTemplate | undefined = useMemo(
@@ -68,17 +75,31 @@ export function LegalDraftStudio() {
     return Array.from(new Set(source.map(getAct))).sort()
   }, [allTemplates, subject])
 
+  const courts = useMemo(() => Array.from(new Set(allTemplates.map((t) => t.courtForum || 'General / forum-dependent'))).sort(), [allTemplates])
+  const states = useMemo(() => Array.from(new Set(allTemplates.map((t) => t.stateDependency || 'General / verify local rules'))).sort(), [allTemplates])
+  const reviewYears = useMemo(() => Array.from(new Set(allTemplates.map((t) => getReviewYear(t.lastReviewed)).filter(Boolean))).sort().reverse(), [allTemplates])
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
-    if (!subject && !act && !q && cat === 'all') return []
-    return allTemplates.filter((t) => {
+    if (!subject && !act && !q && cat === 'all' && tier === 'all' && !court && !state && !reviewYear) return []
+    const result = allTemplates.filter((t) => {
       if (cat !== 'all' && t.category !== cat) return false
       if (subject && getSubject(t) !== subject) return false
       if (act && getAct(t) !== act) return false
+      if (!matchesDraftTier(getDraftTier(undefined, t.tier), tier)) return false
+      if (court && (t.courtForum || 'General / forum-dependent') !== court) return false
+      if (state && (t.stateDependency || 'General / verify local rules') !== state) return false
+      if (reviewYear && getReviewYear(t.lastReviewed) !== reviewYear) return false
       if (!q) return true
       return [t.name, t.statute, t.description].some((value) => value.toLowerCase().includes(q))
     })
-  }, [allTemplates, cat, query, subject, act])
+    return result.sort((a, b) => {
+      if (sortBy === 'az') return a.name.localeCompare(b.name)
+      if (sortBy === 'most-used') return (usage.usageCounts[b.id] || 0) - (usage.usageCounts[a.id] || 0) || a.name.localeCompare(b.name)
+      if (sortBy === 'recently-used') return (usage.recentlyUsed.indexOf(a.id) + 99) - (usage.recentlyUsed.indexOf(b.id) + 99)
+      if (sortBy === 'recently-reviewed') return (b.lastReviewed || '').localeCompare(a.lastReviewed || '')
+      return 0
+    })
+  }, [allTemplates, cat, query, subject, act, tier, court, state, reviewYear, sortBy, usage])
 
   const visibleTemplates = showMore ? filtered : filtered.slice(0, 20)
 
@@ -87,7 +108,25 @@ export function LegalDraftStudio() {
     setAct('')
     setQuery('')
     setCat('all')
+    setTier('all')
+    setCourt('')
+    setState('')
+    setReviewYear('')
+    setSortBy('default')
     setShowMore(false)
+  }
+
+  const selectTemplate = (id: string) => {
+    setTemplateId(id)
+    const next = markDraftUsed(usage, id)
+    setUsage(next)
+    writeDraftUsage(next)
+  }
+
+  const toggleFavorite = (id: string) => {
+    const next = toggleDraftFavorite(usage, id)
+    setUsage(next)
+    writeDraftUsage(next)
   }
 
   const loadSample = () => {
