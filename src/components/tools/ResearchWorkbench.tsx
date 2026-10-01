@@ -9,6 +9,7 @@ import {
   emptyResearchSession,
   loadResearchSession,
   researchNoteFromSession,
+  downloadResearchNoteMarkdown,
   saveResearchSession,
 } from '../../lib/researchSession'
 
@@ -59,7 +60,7 @@ export function ResearchWorkbench() {
         </h1>
         <p className="text-sm text-slate-600 dark:text-slate-400">
           Structured workflow from question → issues → authority matrix → research note. Session saves
-          automatically in this browser (PH3-010/020/030). Not legal advice.
+          automatically in this browser (PH3-010/020/030/040). Not legal advice.
         </p>
         {hydrated && session.updatedAt && (
           <p className="text-[11px] text-slate-500">
@@ -366,6 +367,13 @@ export function ResearchWorkbench() {
       <div className="flex flex-wrap gap-2">
         <button
           type="button"
+          className="rounded-xl bg-[#8B1E3F] text-white px-3 py-1.5 text-xs font-bold"
+          onClick={() => downloadResearchNoteMarkdown(session)}
+        >
+          Download .md
+        </button>
+        <button
+          type="button"
           className="rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-xs font-bold"
           onClick={() => navigator.clipboard.writeText(note)}
         >
@@ -384,7 +392,10 @@ export function ResearchWorkbench() {
       </div>
 
       <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 p-4">
-        <h2 className="mb-2 text-sm font-black">Research note preview</h2>
+        <h2 className="mb-1 text-sm font-black">Research note preview</h2>
+        <p className="mb-2 text-[11px] text-slate-500 dark:text-slate-400">
+          Structured Markdown with labelled sections. Export stays on-device until you save or share the file.
+        </p>
         <pre className="max-h-80 overflow-auto whitespace-pre-wrap font-mono text-[11px] text-slate-700 dark:text-slate-300">
           {note}
         </pre>
