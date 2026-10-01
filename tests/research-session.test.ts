@@ -83,3 +83,35 @@ describe('PH3-040 research note polish / export', () => {
     assert.match(name, /^research-note-cpc-1908-\d{4}-\d{2}-\d{2}\.md$/)
   })
 })
+
+describe('PH3-050 canonical entity references in research note', () => {
+  it('renders Canonical ID in the markdown note for linked authorities', () => {
+    const session = emptyResearchSession()
+    const row = emptyAuthorityRow()
+    row.caseName = 'Maneka Gandhi v. Union of India'
+    row.court = 'Supreme Court of India'
+    row.citation = '(1978) 1 SCC 248'
+    row.statute = 'Article 21'
+    row.canonicalEntityId = 'judgment:india:maneka-gandhi-1978'
+    row.verification = 'needs-review'
+    session.authorities = [row]
+
+    const note = researchNoteFromSession(session)
+    assert.match(note, /Canonical ID:\*\*\s*judgment:india:maneka-gandhi-1978/)
+    assert.match(note, /Verification status:\*\*\s*needs-review/)
+  })
+
+  it('renders canonical provision authorities even when caseName is blank', () => {
+    const session = emptyResearchSession()
+    const row = emptyAuthorityRow()
+    row.statute = 'Code of Civil Procedure, 1908, Section 32'
+    row.canonicalEntityId = 'provision:india:cpc-s-32'
+    row.holding = 'Penalty for default'
+    row.verification = 'needs-review'
+    session.authorities = [row]
+
+    const note = researchNoteFromSession(session)
+    assert.match(note, /Code of Civil Procedure, 1908, Section 32/)
+    assert.match(note, /Canonical ID:\*\*\s*provision:india:cpc-s-32/)
+  })
+})

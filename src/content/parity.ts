@@ -39,7 +39,12 @@ const REQUIRED_LEGAL_MARKERS = [
 
 function normalize(text: string | undefined | null): string {
   if (!text) return ''
-  return text.replace(/\s+/g, ' ').trim().toLowerCase()
+  return text
+    .replace(/[\u2018\u2019]/g, "'")
+    .replace(/[\u201C\u201D]/g, '"')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase()
 }
 
 function containsMarker(haystack: string, marker: string): boolean {

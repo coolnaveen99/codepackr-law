@@ -134,10 +134,10 @@ export function researchNoteFromSession(session: ResearchSession): string {
   const q = session.question
   const issues = session.issues
   const authorityBlocks = session.authorities
-    .filter((r) => r.caseName || r.citation)
+    .filter((r) => r.caseName || r.citation || r.canonicalEntityId || r.statute)
     .map((r, i) => {
       const lines = [
-        `### ${i + 1}. ${r.caseName || 'Unnamed authority'}`,
+        `### ${i + 1}. ${r.caseName || r.statute || r.citation || 'Unnamed authority'}`,
         r.court ? `- **Court:** ${r.court}` : '',
         r.date ? `- **Date:** ${r.date}` : '',
         r.citation ? `- **Citation:** ${r.citation}` : '',
@@ -147,6 +147,7 @@ export function researchNoteFromSession(session: ResearchSession): string {
         r.paragraph ? `- **Para / pin cite:** ${r.paragraph}` : '',
         r.treatment ? `- **Treatment:** ${r.treatment}` : '',
         r.source ? `- **Source:** ${r.source}` : '',
+        r.canonicalEntityId ? `- **Canonical ID:** ${r.canonicalEntityId}` : '',
         `- **Verification status:** ${r.verification}`,
       ].filter(Boolean)
       return lines.join('\n')

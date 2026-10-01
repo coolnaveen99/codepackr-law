@@ -55,7 +55,7 @@ Phase 8+ Drafting / Court / Practice / AI / Scale
 |------|--------|
 | PH3-001 architecture kickoff | **COMPLETED** — `docs/architecture/phase-3-research-workbench-kickoff.md` |
 | Baseline UI (`ResearchWorkbench.tsx`) | Live shell; gaps documented in kickoff |
-| PH3-010+ implementation | **BACKLOG** — not started |
+| PH3-010+ implementation | In progress — PH3-010–PH3-050 **COMPLETED** |
 | Phase 3 product exit | **Pending** PH3-100 |
 
 ## Content-enhancement decision

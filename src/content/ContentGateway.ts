@@ -10,7 +10,9 @@ import type { TopicContent } from '../data/topics/topicTypes'
 export const CONTENT_GATEWAY_DEPLOY_MARKER = 'cp-law-content-gateway-v1'
 
 const DEFAULT_LEGAL_CONTENT_BASE =
-  import.meta.env.VITE_LEGAL_CONTENT_BASE_URL ||
+  (typeof import.meta !== 'undefined' && (import.meta as any).env?.VITE_LEGAL_CONTENT_BASE_URL) ||
+  (typeof process !== 'undefined' &&
+    (process.env?.VITE_LEGAL_CONTENT_BASE_URL || process.env?.LEGAL_CONTENT_BASE_URL)) ||
   'https://raw.githubusercontent.com/coolnaveen99/legal-content/main'
 
 const canonicalRepository = new CanonicalContentRepository(DEFAULT_LEGAL_CONTENT_BASE)
@@ -88,3 +90,12 @@ export async function getRelatedTopicIds(id: string): Promise<string[]> {
   const edges = await getRelatedEntityIds(id, 'relatedTopics')
   return edges.map((e) => e.to)
 }
+
+export {
+  suggestAuthorities,
+  authorityRowFromSuggestion,
+  inferSubjectSlug,
+  normalizeSectionCandidates,
+  type AuthoritySuggestion,
+  type SuggestAuthoritiesQuery,
+} from './suggestions'

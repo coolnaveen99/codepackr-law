@@ -1,5 +1,14 @@
 import { useEffect, useMemo, useState } from 'react'
-import { FlaskConical, Plus, Trash2 } from 'lucide-react'
+import {
+  Check,
+  ExternalLink,
+  FlaskConical,
+  Loader2,
+  Plus,
+  Search,
+  Sparkles,
+  Trash2,
+} from 'lucide-react'
 import {
   type AuthorityRow,
   type ResearchSession,
@@ -12,12 +21,22 @@ import {
   downloadResearchNoteMarkdown,
   saveResearchSession,
 } from '../../lib/researchSession'
+import {
+  suggestAuthorities,
+  authorityRowFromSuggestion,
+  type AuthoritySuggestion,
+} from '../../content/suggestions'
+import { hrefForCanonicalTopicId } from '../../content/parseCanonicalTopicId'
 
 export function ResearchWorkbench() {
   const [session, setSession] = useState<ResearchSession>(() =>
     typeof window !== 'undefined' ? loadResearchSession() : emptyResearchSession(),
   )
   const [hydrated, setHydrated] = useState(false)
+  const [suggestions, setSuggestions] = useState<AuthoritySuggestion[]>([])
+  const [loadingSuggestions, setLoadingSuggestions] = useState(false)
+  const [suggestionsQuery, setSuggestionsQuery] = useState('')
+  const [hasSearchedSuggestions, setHasSearchedSuggestions] = useState(false)
 
   useEffect(() => {
     setSession(loadResearchSession())
@@ -28,6 +47,36 @@ export function ResearchWorkbench() {
     if (!hydrated) return
     saveResearchSession(session)
   }, [session, hydrated])
+
+  const handleFetchSuggestions = async (kw?: string) => {
+    setLoadingSuggestions(true)
+    try {
+      const results = await suggestAuthorities({
+        subjectSlug: session.question.subjectSlug,
+        act: session.question.act,
+        section: session.question.section,
+        keywords: kw !== undefined ? kw : suggestionsQuery || session.question.question,
+      })
+      setSuggestions(results)
+      setHasSearchedSuggestions(true)
+    } catch (err) {
+      console.error('Failed to suggest authorities:', err)
+    } finally {
+      setLoadingSuggestions(false)
+    }
+  }
+
+  useEffect(() => {
+    if (!hydrated) return
+    const hasSubject = Boolean(session.question.subjectSlug || session.question.act)
+    const hasSection = Boolean(session.question.section)
+    if (hasSubject || hasSection) {
+      const timer = setTimeout(() => {
+        handleFetchSuggestions()
+      }, 500)
+      return () => clearTimeout(timer)
+    }
+  }, [session.question.subjectSlug, session.question.act, session.question.section, hydrated])
 
   const note = useMemo(() => researchNoteFromSession(session), [session])
 
@@ -213,6 +262,167 @@ export function ResearchWorkbench() {
         </label>
       </section>
 
+      <section className="space-y-3 rounded-2xl border border-blue-200 dark:border-blue-900/60 bg-blue-50/40 dark:bg-blue-950/20 p-4">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <div className="flex items-center gap-2">
+              <Sparkles className="size-4 text-blue-800 dark:text-blue-300" />
+              <h2 className="text-sm font-black text-slate-950 dark:text-white">
+                Authority & Topic Suggestions
+              </h2>
+              <span className="rounded-full bg-blue-100 dark:bg-blue-900/50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-blue-800 dark:text-blue-200">
+                ContentGateway · Read-only
+              </span>
+            </div>
+            <p className="mt-0.5 text-[11px] text-slate-600 dark:text-slate-400">
+              Suggestion — verify before reliance. Resolved from the canonical legal knowledge graph.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={() => handleFetchSuggestions()}
+            disabled={loadingSuggestions}
+            className="inline-flex items-center gap-1.5 rounded-xl bg-blue-800 hover:bg-blue-900 dark:bg-blue-700 dark:hover:bg-blue-600 text-white px-3 py-1.5 text-xs font-bold disabled:opacity-50"
+          >
+            {loadingSuggestions ? (
+              <Loader2 className="size-3.5 animate-spin" />
+            ) : (
+              <Search className="size-3.5" />
+            )}
+            Find suggestions
+          </button>
+        </div>
+
+        <div className="flex gap-2">
+          <input
+            value={suggestionsQuery}
+            onChange={(e) => setSuggestionsQuery(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                e.preventDefault()
+                handleFetchSuggestions(suggestionsQuery)
+              }
+            }}
+            placeholder="Search knowledge graph (e.g. summons, locus standi, arrest, Art. 21)..."
+            className="h-9 flex-1 rounded-xl border border-slate-200 dark:border-slate-700 px-3 text-xs bg-white dark:bg-slate-900"
+          />
+          <button
+            type="button"
+            onClick={() => handleFetchSuggestions(suggestionsQuery)}
+            disabled={loadingSuggestions}
+            className="rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1 text-xs font-bold bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800"
+          >
+            Search
+          </button>
+        </div>
+
+        {loadingSuggestions && (
+          <div className="flex items-center gap-2 py-3 text-xs text-slate-500">
+            <Loader2 className="size-4 animate-spin text-blue-600" />
+            Resolving canonical provisions, topics, and judgments…
+          </div>
+        )}
+
+        {!loadingSuggestions && suggestions.length > 0 && (
+          <div className="space-y-2 pt-1">
+            {suggestions.map((s) => {
+              const inMatrix = session.authorities.some((a) => a.canonicalEntityId === s.id)
+              const badgeColors: Record<string, string> = {
+                judgment: 'bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-200 border-amber-200 dark:border-amber-800',
+                provision: 'bg-emerald-100 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-200 border-emerald-200 dark:border-emerald-800',
+                topic: 'bg-blue-100 dark:bg-blue-950/70 text-blue-800 dark:text-blue-200 border-blue-200 dark:border-blue-800',
+                doctrine: 'bg-purple-100 dark:bg-purple-950/70 text-purple-800 dark:text-purple-200 border-purple-200 dark:border-purple-800',
+              }
+              const badgeClass =
+                badgeColors[s.entityType] ||
+                'bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border-slate-200 dark:border-slate-700'
+
+              return (
+                <div
+                  key={s.id}
+                  className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 text-xs space-y-1.5"
+                >
+                  <div className="flex flex-wrap items-center justify-between gap-1.5">
+                    <div className="flex items-center gap-2 min-w-0">
+                      <span
+                        className={`rounded px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider border ${badgeClass}`}
+                      >
+                        {s.entityType}
+                      </span>
+                      <span className="font-bold text-slate-900 dark:text-slate-100 truncate">
+                        {s.title}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      {s.href && (
+                        <a
+                          href={s.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-0.5 text-[11px] font-bold text-blue-700 hover:text-blue-900 dark:text-blue-400"
+                        >
+                          Treatise <ExternalLink className="size-3" />
+                        </a>
+                      )}
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setSession((prev) => ({
+                            ...prev,
+                            authorities: [...prev.authorities, authorityRowFromSuggestion(s)],
+                          }))
+                        }
+                        disabled={inMatrix}
+                        className={`inline-flex items-center gap-1 rounded-lg px-2 py-1 text-[11px] font-bold ${
+                          inMatrix
+                            ? 'bg-slate-100 text-slate-400 dark:bg-slate-800 dark:text-slate-500 cursor-not-allowed'
+                            : 'bg-[#8B1E3F] text-white hover:opacity-90'
+                        }`}
+                      >
+                        {inMatrix ? (
+                          <>
+                            <Check className="size-3" /> In matrix
+                          </>
+                        ) : (
+                          <>
+                            <Plus className="size-3" /> Add to matrix
+                          </>
+                        )}
+                      </button>
+                    </div>
+                  </div>
+
+                  {s.citation && s.citation !== s.title && (
+                    <p className="text-[11px] text-slate-600 dark:text-slate-400">
+                      <strong className="font-semibold text-slate-700 dark:text-slate-300">
+                        Citation / Ref:
+                      </strong>{' '}
+                      {s.citation}
+                    </p>
+                  )}
+
+                  {s.holding && (
+                    <p className="line-clamp-2 text-[11px] text-slate-600 dark:text-slate-400">
+                      {s.holding}
+                    </p>
+                  )}
+
+                  <div className="text-[10px] text-slate-400 font-mono">
+                    ID: {s.id}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        )}
+
+        {!loadingSuggestions && hasSearchedSuggestions && suggestions.length === 0 && (
+          <p className="text-[11px] text-slate-500 italic py-1">
+            No published canonical entities found for this query. User-entered authorities remain valid.
+          </p>
+        )}
+      </section>
+
       <section className="space-y-3">
         <div className="flex items-center justify-between gap-2">
           <h2 className="text-sm font-black">Authority matrix</h2>
@@ -303,6 +513,31 @@ export function ResearchWorkbench() {
                 placeholder="Source URL or reporter (optional)"
                 className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-sm sm:col-span-2"
               />
+              <input
+                value={r.canonicalEntityId || ''}
+                onChange={(e) =>
+                  updateRow(r.id, { canonicalEntityId: e.target.value || undefined })
+                }
+                placeholder="Canonical entity ID (optional, e.g. topic:india:cpc-s-32 or judgment:india:...)"
+                className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-xs font-mono sm:col-span-2"
+              />
+              {r.canonicalEntityId && (
+                <div className="flex flex-wrap items-center gap-2 pt-0.5 text-[11px] text-blue-800 dark:text-blue-300 sm:col-span-2">
+                  <span className="rounded bg-blue-50 dark:bg-blue-950 px-2 py-0.5 font-mono">
+                    Linked: {r.canonicalEntityId}
+                  </span>
+                  {hrefForCanonicalTopicId(r.canonicalEntityId) && (
+                    <a
+                      href={hrefForCanonicalTopicId(r.canonicalEntityId)!}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-bold underline hover:text-blue-950 dark:hover:text-white"
+                    >
+                      Open in Library ↗
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
             <div className="flex flex-wrap items-center justify-between gap-2">
               <select

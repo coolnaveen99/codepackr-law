@@ -9,6 +9,12 @@ import {
 } from '../src/content/parity'
 import type { TopicContentRecord } from '../src/content/contentTypes'
 import type { TopicContent } from '../src/data/topics/topicTypes'
+import {
+  suggestAuthorities,
+  authorityRowFromSuggestion,
+  inferSubjectSlug,
+  normalizeSectionCandidates,
+} from '../src/content/suggestions'
 
 const LEGAL_CONTENT_BASE =
   process.env.LEGAL_CONTENT_BASE_URL ||
@@ -259,5 +265,84 @@ describe('Live legal-content parity', () => {
   it('returns null for an unknown topic id without throwing', async () => {
     const missing = await repo.getTopic('cpc', 's-does-not-exist-xyz')
     assert.equal(missing, null)
+  })
+})
+
+describe('PH3-050 ContentGateway authority & topic suggestions', () => {
+  it('normalizes section and query tokens correctly', () => {
+    const cpcTokens = normalizeSectionCandidates('32', 'cpc')
+    assert.ok(cpcTokens.includes('s-32'))
+    assert.ok(cpcTokens.includes('32'))
+
+    const constTokens = normalizeSectionCandidates('21', 'constitution')
+    assert.ok(constTokens.includes('art-21'))
+    assert.ok(constTokens.includes('21'))
+
+    const orderTokens = normalizeSectionCandidates('Order 1 Rule 10', 'cpc')
+    assert.ok(orderTokens.includes('o1-r-10'))
+
+    assert.equal(inferSubjectSlug(undefined, 'Code of Civil Procedure, 1908'), 'cpc')
+    assert.equal(inferSubjectSlug('constitution', undefined), 'constitution')
+  })
+
+  it('suggests statutory provisions and canonical topics for CPC s.32', async () => {
+    const suggestions = await suggestAuthorities({
+      subjectSlug: 'cpc',
+      section: '32',
+    })
+    assert.ok(suggestions.length >= 1, 'expected at least one suggestion for CPC s.32')
+    const provision = suggestions.find((s) => s.id === 'provision:india:cpc-s-32')
+    assert.ok(provision, 'expected provision:india:cpc-s-32 to be suggested')
+    assert.equal(provision.entityType, 'provision')
+    assert.match(provision.title, /Section 32/i)
+
+    const topic = suggestions.find((s) => s.id === 'topic:india:cpc-s-32')
+    assert.ok(topic, 'expected topic:india:cpc-s-32 to be suggested')
+    assert.equal(topic.entityType, 'topic')
+    assert.equal(topic.href, '/subjects/cpc/s-32')
+  })
+
+  it('resolves graph relationships into suggestions', async () => {
+    const suggestions = await suggestAuthorities({
+      subjectSlug: 'cpc',
+      section: '32',
+    })
+    // Topic cpc-s-32 has relatedTopics: cpc-s-30, cpc-s-31
+    const related = suggestions.filter((s) => s.field === 'relatedTopics' || s.id.includes('cpc-s-30'))
+    assert.ok(related.length >= 1, 'expected related topics from graph')
+  })
+
+  it('suggests landmark judgments from relationship edges or manifest', async () => {
+    const suggestions = await suggestAuthorities({
+      subjectSlug: 'constitution',
+      section: '21',
+    })
+    const judgment = suggestions.find((s) => s.entityType === 'judgment')
+    assert.ok(judgment, 'expected landmark judgment suggestion for Constitution Art. 21')
+    assert.match(judgment.title, /Maneka Gandhi|Gopalan/i)
+    assert.ok(judgment.citation)
+  })
+
+  it('converts suggestion into AuthorityRow with needs-review verification', () => {
+    const row = authorityRowFromSuggestion({
+      id: 'judgment:india:maneka-gandhi-1978',
+      entityType: 'judgment',
+      title: 'Maneka Gandhi v. Union of India',
+      court: 'Supreme Court of India',
+      date: '1978-01-25',
+      citation: 'Maneka Gandhi v. Union of India, (1978) 1 SCC 248',
+      statute: 'Article 21',
+      holding: 'Procedure must be fair, just and reasonable',
+      source: 'https://example.invalid',
+    })
+
+    assert.equal(row.caseName, 'Maneka Gandhi v. Union of India')
+    assert.equal(row.court, 'Supreme Court of India')
+    assert.equal(row.date, '1978-01-25')
+    assert.equal(row.citation, 'Maneka Gandhi v. Union of India, (1978) 1 SCC 248')
+    assert.equal(row.statute, 'Article 21')
+    assert.equal(row.canonicalEntityId, 'judgment:india:maneka-gandhi-1978')
+    assert.equal(row.verification, 'needs-review')
+    assert.ok(row.id)
   })
 })
