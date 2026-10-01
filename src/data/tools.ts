@@ -86,6 +86,18 @@ export const TOOLS: ToolMetadata[] = [
     featured: true,
   },
   {
+    id: 'legal-calculators',
+    slug: 'legal-calculators',
+    name: 'Legal Calculators',
+    category: 'reference',
+    description: 'Deterministic date, interest, deadline, MACT, court-fee and stamp-duty worksheets with formulas, assumptions and legal-source warnings.',
+    keywords: ['calculator', 'date difference', 'interest', 'simple interest', 'compound interest', 'deadline', 'notice period', 'court fee', 'stamp duty', 'mact'],
+    icon: 'Calculator',
+    badge: 'Practice',
+    priority: 8,
+    featured: true,
+  },
+  {
     id: 'limitation-calculator',
     slug: 'limitation-calculator',
     name: 'Limitation Calculator',
@@ -94,7 +106,7 @@ export const TOOLS: ToolMetadata[] = [
     keywords: ['limitation', 'calculator', 'limitation act', 'deadline'],
     icon: 'Calculator',
     badge: 'Practice',
-    priority: 8,
+    priority: 9,
     featured: true,
   },
   {
@@ -106,7 +118,7 @@ export const TOOLS: ToolMetadata[] = [
     keywords: ['bns', 'bnss', 'bsa', 'transition', 'sanhita', 'ipc', 'crpc', 'evidence act'],
     icon: 'ArrowLeftRight',
     badge: 'Flagship',
-    priority: 9,
+    priority: 10,
     featured: true,
   },
   {
