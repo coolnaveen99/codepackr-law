@@ -398,16 +398,7 @@ export function CaseLawLibrary({
 
   // Save last read whenever reading a judgment
   useEffect(() => {
-    if (loadingJudgments) {
-    return (
-      <div className="rounded-2xl border border-slate-200 dark:border-slate-800 p-10 text-center">
-        <p className="font-semibold">Loading judgment library…</p>
-        <p className="mt-1 text-sm text-slate-500">Large case-law data is loaded only when this library is opened.</p>
-      </div>
-    )
-  }
-
-  if (judgmentId && current) {
+    if (judgmentId && current) {
       const entry: LastReadJudgment = {
         judgmentId,
         sectionId: jumpTo,
@@ -417,6 +408,15 @@ export function CaseLawLibrary({
       setLastReadState(entry)
     }
   }, [judgmentId, current, jumpTo])
+
+  if (loadingJudgments) {
+    return (
+      <div className="rounded-2xl border border-slate-200 dark:border-slate-800 p-10 text-center">
+        <p className="font-semibold">Loading judgment library…</p>
+        <p className="mt-1 text-sm text-slate-500">Large case-law data is loaded only when this library is opened.</p>
+      </div>
+    )
+  }
 
   if (judgmentId && current) {
     return (
@@ -1000,7 +1000,7 @@ function JudgmentReader({
                     {related.relationship || 'Related reference'}
                     {related.citation ? ` · ${related.citation}` : ''}
                   </p>
-                  {related.judgmentId && JUDGMENTS_BY_ID.has(related.judgmentId) && (
+                  {related.judgmentId && judgmentsById.has(related.judgmentId) && (
                     <button
                       type="button"
                       onClick={() => onOpenJudgment(related.judgmentId!)}
