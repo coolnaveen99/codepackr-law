@@ -1,19 +1,458 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
 const content: TopicContent = {
-  "glance": "BNS s. 103 is the punishment provision for murder. Sub-section (1) prescribes death or imprisonment for life and fine; sub-section (2) creates a distinct punishment rule for a group of five or more persons acting in concert where the murder is on the specified identity grounds.",
-  "study": "CURRENT LAW\\nBNS s. 103 is a punishment provision. The definition and exceptions that determine whether conduct is murder are principally found in s. 101 and the connected provisions of Chapter VI. Section 103(2) separately addresses group murder by five or more persons acting in concert on race, caste/community, sex, place of birth, language, personal belief or a similar ground.\\n\\nANALYTICAL METHOD\\nDo not treat s. 103 as the definition of murder. First establish the underlying offence of murder under the current BNS framework. Then identify whether s. 103(1) or the additional statutory conditions of s. 103(2) govern punishment. For s. 103(2), prove the number of participants, concerted action and the statutory ground; mere presence in a crowd is not the same proposition as acting in concert.\\n\\nPUNISHMENT ANALYSIS\\nSection 103(1) permits death or life imprisonment and fine. Section 103(2) applies the same headline punishment to each member of the qualifying group. Sentencing must remain distinct from proof of guilt and from the definition of murder.\\n\\nCURRENT-LAW TRANSITION\\nThe BNS commenced on 1 July 2024. IPC section numbers are historical concordance only; for a current BNS offence, use BNS numbering.",
-  "sections": [{"id":"bns-103-module-1","title":"Murder as the Predicate Offence","order":1,"content":["Section 103 presupposes that murder has been established under the substantive murder provision.","Analyse the ingredients and exceptions governing murder before moving to punishment.","Do not substitute the punishment section for the definition of the offence."]},{"id":"bns-103-module-2","title":"Section 103(1) Punishment","order":2,"content":["For murder, s. 103(1) provides death or imprisonment for life and fine.","The punishment choice is a sentencing question after liability is established.","The statutory punishment should not be confused with the separate question whether a homicide falls within murder or culpable homicide not amounting to murder."]},{"id":"bns-103-module-3","title":"Group Murder under s. 103(2)","order":3,"content":["The clause requires a group of five or more persons acting in concert.","The murder must be on a specified identity ground or another similar ground within the statutory wording.","Each member of the qualifying group is subject to the punishment stated in s. 103(2)."]},{"id":"bns-103-module-4","title":"Proof and Circumstantial Evidence","order":4,"content":["Participation, concert and the qualifying ground must be proved from admissible evidence.","Where the prosecution relies on circumstances, each circumstance must be established and the chain assessed as a whole.","Do not infer concert solely from association, presence or relationship without evidence connecting the accused to the common action."]},{"id":"bns-103-module-5","title":"Sentencing, Advocacy and Transition","order":5,"content":["Separate conviction analysis from sentencing submissions.","For s. 103(2), identify the exact statutory group and identity-ground facts relied upon.","Use BNS numbering for current proceedings and historical IPC authorities only as clearly identified concordance where still legally relevant."]}],
-  "provisions": [{"id":"bns-103","actId":"bns","actName":"Bharatiya Nyaya Sanhita, 2023","provisionId":"bns-103","section":"s. 103","title":"Punishment for murder"},{"id":"bns-101","actId":"bns","actName":"Bharatiya Nyaya Sanhita, 2023","provisionId":"bns-101","section":"s. 101","title":"Murder"}],
-  "examples": [{"id":"bns-103-ex1","title":"Ordinary murder","description":"After murder is established under the substantive provision, s. 103(1) supplies the punishment framework."},{"id":"bns-103-ex2","title":"Five-person identity-ground group","description":"Five or more persons acting in concert commit murder because of a qualifying identity ground. The Court must separately prove the group, concert and ground before applying s. 103(2)."}],
-  "hypotheticals": [{"id":"bns-103-hypo","title":"Group Murder and Concert","facts":"Six persons jointly attack a victim after statements indicate that the attack was motivated by the victim's community identity. The defence argues that two accused were merely present.","question":"How should s. 103(2) be analysed?","applicableLaw":"BNS ss. 101 and 103(2); general principles governing circumstantial proof and common participation.","analysis":"First establish murder. Then test the statutory group threshold, acting in concert and qualifying ground. For each accused, identify evidence connecting that person to the concerted act; mere presence is not automatically equivalent to participation.","conclusion":"Section 103(2) applies only after its additional statutory facts are independently established."}],
-  "distinctions": [{"id":"bns-103-dist","title":"Predicate offence versus punishment","left":"BNS s. 101","right":"BNS s. 103","rows":[{"point":"Function","left":"Defines the substantive offence of murder","right":"Prescribes punishment for murder and the specified group-murder case"},{"point":"Sequence","left":"Liability analysis","right":"Punishment after the predicate offence is established"}]}],
-  "misconceptions": [{"id":"bns-103-trap1","trap":"Section 103 itself defines every ingredient of murder.","correction":"It is principally a punishment provision; analyse the substantive murder provision separately."},{"id":"bns-103-trap2","trap":"Five people being present automatically triggers s. 103(2).","correction":"The statutory requirements include acting in concert and the specified identity-ground nexus."},{"id":"bns-103-trap3","trap":"The punishment provision decides whether a homicide is murder.","correction":"The murder-versus-culpable-homicide analysis precedes punishment."}],
-  "cases": [{"name":"State of Andhra Pradesh v. Rayavarapu Punnayya","year":1976,"citation":"(1976) 4 SCC 382","court":"Supreme Court of India","facts":"The Court examined the distinction between culpable homicide and murder under the former penal framework.","issue":"How should the boundary between culpable homicide and murder be approached?","ratioDecidendi":"The Court explained the relationship between culpable homicide and murder and the role of the statutory exceptions.","holding":"The judgment remains a leading authority on the homicide classification question.","relevance":"Use for the predicate-offence analysis before applying the BNS s. 103 punishment provision."},{"name":"Sharad Birdhichand Sarda v. State of Maharashtra","year":1984,"citation":"(1984) 4 SCC 116","court":"Supreme Court of India","facts":"The case concerned conviction based on circumstantial evidence.","issue":"What safeguards govern a conviction resting on circumstances?","ratioDecidendi":"The circumstances relied on must be fully established and form a complete chain consistent with guilt.","holding":"The Court restated safeguards for circumstantial proof.","relevance":"Useful where participation in a murder, including concert, is proved circumstantially."}],
-  "questionsAndAnswers": [{"id":"bns-103-brief","draftingCategory":"brief","question":"Prepare a Senior Counsel brief on BNS s. 103.","answer":"Separate the predicate murder analysis from punishment. For s. 103(2), identify the five-or-more threshold, concerted action and qualifying identity-ground nexus. Then address the sentencing consequence under the subsection actually established."},{"id":"bns-103-submissions","draftingCategory":"submissions","question":"Draft written submissions on BNS s. 103.","answer":"I. PREDICATE MURDER\\nII. STATUTORY PUNISHMENT\\nIII. S. 103(2) GROUP / CONCERT / GROUND, IF RELIED UPON\\nIV. EVIDENTIARY FOUNDATION\\nV. SENTENCING CONSEQUENCE\\nVI. ORDER SOUGHT"}],
-  "bareActPointers": ["BNS s. 101","BNS s. 103(1)","BNS s. 103(2)"],
-  "examTips": ["Analyse the predicate offence first.","For s. 103(2), prove each additional statutory condition.","Keep conviction and sentencing analysis separate."],
-  "revisionPoints": ["s. 103(1) = punishment for murder.","s. 103(2) = specified five-or-more-person identity-ground murder.","Use BNS numbering for current proceedings."]
+  glance:
+    'Section 103 BNS establishes the statutory punishment framework for murder. Sub-section (1) provides death or imprisonment for life and fine for murder defined under Section 101, governed by the constitutional rarest-of-rare sentencing doctrine. Sub-section (2) introduces a landmark, codified penal classification for Group Identity Murder (Mob Lynching): where a group of five or more persons acting in concert commits murder on grounds of race, caste, community, sex, place of birth, language, personal belief or similar grounds, each member is subject to capital punishment or imprisonment for life, and fine.',
+
+  study: `I. LEGISLATIVE ARCHITECTURE & THE STATUTORY DICHOTOMY
+Section 103 of the Bharatiya Nyaya Sanhita, 2023 (BNS) occupies a pivotal position in Chapter VI ("Of Offences Affecting the Human Body"). While replacing Section 302 of the Indian Penal Code, 1860, Parliament deliberately bifurcated the punishment framework into two distinct sub-sections:
+1. Section 103(1) — General Punishment for Murder: Prescribes death or imprisonment for life, and fine, for any person who commits murder as defined under Section 101 BNS.
+2. Section 103(2) — Group Identity-Based Murder (Mob Lynching): Introduces a substantive aggravated sentencing category targeted specifically at hate crimes and mob violence. It stipulates that when a group of five or more persons acting in concert commits murder on grounds of race, caste or community, sex, place of birth, language, personal belief or any other similar ground, each member of such group shall be punished with death or with imprisonment for life, and shall also be liable to fine.
+
+Crucially, Section 103 is exclusively a sentencing and aggravated liability provision. It does not define the crime of murder. An advocate or court must first establish the predicate offence of murder under Section 101 BNS (navigating the genus of culpable homicide under Section 100 BNS and testing the five statutory exceptions) before Section 103 can be invoked.
+
+II. THE PREDICATE SUBSTANTIVE GATEWAY: SECTIONS 100, 101 & THE PUNNAYYA TRIPARTITE FILTER
+In criminal jurisprudence, every murder is culpable homicide, but not every culpable homicide is murder. In State of Andhra Pradesh v. Rayavarapu Punnayya (1976) 4 SCC 382, the Supreme Court laid down the classic tripartite judicial filter, which remains fully binding under the BNS:
+- Step 1: Inquire whether the accused caused the death of the deceased by doing an act with any of the three states of mind listed in Section 100 BNS (intention to cause death; intention to cause bodily injury likely to cause death; or knowledge that the act is likely to cause death). If death was caused without at least one of these mental states, the act does not amount to culpable homicide and falls into hurt, grievous hurt, or rash/negligent act (s. 106 BNS).
+- Step 2: If culpable homicide is established, inquire whether the act falls within any of the four clauses of Section 101 BNS:
+  * Clause (a): Act done with the intention of causing death.
+  * Clause (b): Act done with the subjective knowledge that the bodily injury inflicted is likely to cause the death of the particular person (e.g. an enlarged spleen or vulnerable physical condition known to the offender).
+  * Clause (c): Act done with the intention of causing bodily injury, and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death. This is the objective-subjective test formulated by Vivian Bose, J. in Virsa Singh v. State of Punjab AIR 1958 SC 465 (the prosecution must prove the injury was intentionally inflicted and not accidental, and medical science must establish that the injury was objectively sufficient in the ordinary course of nature to cause death).
+  * Clause (d): The act is so imminently dangerous that it must in all probability cause death or such bodily injury as is likely to cause death, committed without any excuse.
+- Step 3: If the case falls within Section 101, inquire whether it is brought within any of the five statutory Exceptions in Section 101 (Exception 1: Grave and Sudden Provocation; Exception 2: Exceeding Private Defence; Exception 3: Public Servant Exceeding Powers in Good Faith; Exception 4: Sudden Fight; Exception 5: Consent of adult victim). If an Exception applies, the offence is reduced to Culpable Homicide Not Amounting to Murder punishable under Section 105 BNS. Only if no Exception applies is the offence murder punishable under Section 103 BNS.
+
+III. CAPITAL SENTENCING JURISPRUDENCE UNDER SECTION 103(1)
+Under Section 103(1), the statutory choice of penalty is death or life imprisonment, accompanied by fine. This discretion is strictly circumscribed by constitutional and procedural mandates:
+1. The "Rarest of Rare" Doctrine: In Bachan Singh v. State of Punjab (1980) 2 SCC 684, the Constitution Bench affirmed the constitutional validity of capital punishment under Article 21, but held that life imprisonment is the rule and death is an exceptional penalty. The death penalty can be awarded only in the "rarest of rare cases when the alternative option is unquestionably foreclosed". In Machhi Singh v. State of Punjab (1983) 3 SCC 470, the Supreme Court formulated the balance-sheet framework of aggravating and mitigating circumstances, demanding consideration of the manner of commission, motive, antisocial or socially abhorrent nature of the crime, magnitude, and personality of the victim.
+2. Mandatory Pre-Sentence Hearing: Section 258(2) BNSS (Sessions Trial) and Section 260 BNSS (warrant cases) mandate a distinct, bifurcated hearing on sentence after conviction. In Manoj v. State of Madhya Pradesh (2023) 2 SCC 353, the Supreme Court mandated that before imposing the death penalty, the trial court must obtain a psychological evaluation of the convict, a jail conduct report, and a psychiatric assessment to ascertain whether the possibility of reformation and rehabilitation is completely ruled out. Imposing a death sentence on the same day as conviction without an effective hearing violates Article 21.
+3. Special Reasons Requirement: Under Section 393(3) BNSS (historical concordance: s. 354(3) CrPC), when the court imposes the death penalty, it must state "special reasons" for such sentence in its judgment.
+
+IV. SECTION 103(2): GROUP IDENTITY-BASED MURDER (MOB LYNCHING)
+Section 103(2) BNS represents the direct legislative codification of the guidelines issued by the Supreme Court in Tehseen S. Poonawalla v. Union of India (2018) 9 SCC 501, which urged Parliament to create a dedicated penal offence against mob lynching and vigilantism.
+1. The Statutory Ingredients of Section 103(2):
+   - A group of five or more persons: The numerical threshold of five persons mirrors the unlawful assembly threshold under Section 189 BNS (old s. 141 IPC).
+   - Acting in concert: There must be active concert and mutual consensus in the execution of the assault. Mere presence in a gathering, curiosity, or being a passive bystander does not constitute "acting in concert" (Baladin v. State of U.P. AIR 1956 SC 181; Musa Khan v. State of Maharashtra (1977) 1 SCC 733).
+   - Specific Identity Grounds: The murder must be committed "on the ground of race, caste or community, sex, place of birth, language, personal belief or any other similar ground". The prosecution bears the heavy burden of demonstrating a direct causal nexus between the victim's protected identity and the motivation for the fatal assault. The omnibus phrase "any other similar ground" must be construed ejusdem generis with the preceding enumerated constitutional and socio-cultural protected classes.
+   - Consequence: Each member of the qualifying group is individually liable for murder, attracting capital punishment or imprisonment for life, and fine.
+2. Vicarious Liability: Unlike general constructive liability under Section 3(5) BNS (common intention) or Section 190 BNS (unlawful assembly), Section 103(2) creates a standalone statutory offence of group identity murder where every concerted member is directly deemed a principal offender.
+
+V. EVIDENTIARY PROOF, FORENSIC SCRUTINY & SECTION 531 BNSS TRANSITION
+1. Proof of Mob Violence & Electronic Evidence: Mob lynching trials frequently rely on smartphone recordings, CCTV footage, and social media viral videos. Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), such electronic records are inadmissible as secondary evidence unless accompanied by the mandatory certificate under Section 63(4) issued by the person in lawful charge of the device or an authorized expert. Absent statutory hashing and chain-of-custody proof, digital video evidence cannot sustain a conviction (Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal (2020) 7 SCC 1).
+2. Test Identification Parade (TIP): In mob assaults with multiple unfamiliar assailants, a prompt TIP under Section 54 BNSS is critical. Dock identification for the first time in court without a prior TIP carries minimal probative weight against alleged bystanders.
+3. Transitional Application (Section 531 BNSS): Under Article 20(1) of the Constitution and Section 531(2)(a) BNSS, substantive penal liability is governed by the law in force at the time of commission. Murders committed on or before 30 June 2024 must be charged under Section 302 IPC. Section 103 BNS applies exclusively to homicides committed on or after 1 July 2024. However, procedural aspects of the trial (such as the sentencing hearing and Section 187 remand) follow the BNSS if the trial commences post-commencement.`,
+
+  sections: [
+    {
+      id: 'bns-103-module-1',
+      title: 'Legislative Architecture & The Section 103(1) vs 103(2) Dichotomy',
+      order: 1,
+      content: [
+        'Section 103 BNS is exclusively a punishment and aggravated sentencing provision; it does not contain the substantive definition of murder, which is codified in Section 101 BNS.',
+        'Parliament established a dual-tier sentencing structure: sub-section (1) provides death or life imprisonment and fine for ordinary murder; sub-section (2) establishes a dedicated penal framework for hate crimes and mob lynching by five or more persons.',
+        'The Section 103(2) classification represents a direct legislative translation of the Supreme Court directives in Tehseen S. Poonawalla v. Union of India (2018) 9 SCC 501, making India one of the few jurisdictions with an explicit statutory mob-lynching offence.',
+        'To invoke Section 103(2), the prosecution must prove three distinct elements beyond reasonable doubt: (i) a numerical threshold of five or more persons; (ii) concerted action among them; and (iii) that the murder was committed on an enumerated or similar identity ground.',
+      ],
+    },
+    {
+      id: 'bns-103-module-2',
+      title: 'The Substantive Predicate: Sections 100, 101 & The Rayavarapu Punnayya Tripartite Filter',
+      order: 2,
+      content: [
+        'Liability under Section 103 presupposes that the act constitutes murder under Section 101, satisfying the foundational tripartite test in State of A.P. v. Rayavarapu Punnayya (1976) 4 SCC 382.',
+        'Step 1: The prosecution must establish culpable homicide under Section 100 BNS (causing death with intention of causing death, intention of causing bodily injury likely to cause death, or knowledge of likelihood of causing death).',
+        'Step 2: The court must test whether the act satisfies one of the four limbs of Section 101 BNS. Under Section 101(c), the prosecution must satisfy the Virsa Singh v. State of Punjab AIR 1958 SC 465 test: proving the bodily injury was intentionally inflicted and was objectively sufficient in the ordinary course of nature to cause death.',
+        'Step 3: The court must test whether the case falls within any of the five statutory Exceptions in Section 101 (grave and sudden provocation, exceeding private defence, public servant exceeding powers, sudden fight, or adult consent). If an Exception is triggered, the offence drops to culpable homicide not amounting to murder under Section 105 BNS.',
+      ],
+    },
+    {
+      id: 'bns-103-module-3',
+      title: 'Capital Sentencing Jurisprudence under Section 103(1): The Rarest-of-Rare Doctrine',
+      order: 3,
+      content: [
+        'Section 103(1) gives the trial court discretion between death and imprisonment for life; however, under Section 393(3) BNSS, life imprisonment is the rule and the death penalty is the strictly guarded exception requiring recorded special reasons.',
+        'The Constitution Bench in Bachan Singh v. State of Punjab (1980) 2 SCC 684 upheld capital punishment only for the "rarest of rare cases", demanding a holistic balancing of aggravating circumstances (crime) and mitigating circumstances (criminal).',
+        'In Machhi Singh v. State of Punjab (1983) 3 SCC 470, the Supreme Court laid down the five-point balance-sheet test: manner of commission, motive, antisocial nature, magnitude, and personality of victim.',
+        'In Manoj v. State of M.P. (2023) 2 SCC 353, the Supreme Court mandated that capital sentencing requires a separate, meaningful hearing under Section 258(2) BNSS, supported by psychological evaluations, jail conduct reports, and an inquiry into reformation potential; same-day sentencing violates Article 21.',
+      ],
+    },
+    {
+      id: 'bns-103-module-4',
+      title: 'Deconstruction of Section 103(2): Group Identity Murder (Mob Lynching)',
+      order: 4,
+      content: [
+        'The five-person threshold: Section 103(2) mirrors the numerical requirement of unlawful assembly under Section 189 BNS. If the number of participating accused falls below five, Section 103(2) cannot be sustained, though liability under Section 103(1) read with Section 3(5) (common intention) remains available.',
+        '"Acting in concert": The prosecution must prove concerted action. As held in Baladin v. State of U.P. AIR 1956 SC 181 and Musa Khan v. State of Maharashtra (1977) 1 SCC 733, mere passive presence in a mob, curious spectatorship, or running with a crowd does not establish concert.',
+        'The Identity-Ground Nexus: The murder must be committed "on the ground of race, caste or community, sex, place of birth, language, personal belief or any other similar ground". The words "on the ground of" require that the victim’s identity was the operative motivating cause of the attack.',
+        'The doctrine of ejusdem generis strictly governs the phrase "or any other similar ground", confining it to innate personal characteristics, protected socio-cultural markers, or constitutionally recognized classes.',
+      ],
+    },
+    {
+      id: 'bns-103-module-5',
+      title: 'Evidentiary Proof (BSA ss. 63, 104-106), Trial Roadmap & Section 531 BNSS Transition',
+      order: 5,
+      content: [
+        'Burden of Proof: Under BSA Section 104, the prosecution bears the unwavering burden of establishing every ingredient of murder beyond reasonable doubt. The evidential onus does not shift to the accused unless a statutory presumption or general exception is properly raised.',
+        'Digital Video and CCTV Evidence: Viral mob lynching videos are admissible only if compliant with Section 63(4) BSA, requiring a contemporaneous certificate with cryptographic hash values and proof of continuous custody (Arjun Panditrao Khotkar (2020)).',
+        'Identification in Mob Cases: In the absence of a prior Test Identification Parade under Section 54 BNSS, dock identification of an alleged mob participant for the first time in court is inherently frail.',
+        'Transitional Application: Under Article 20(1) and Section 531(2)(a) BNSS, homicides committed on or before 30 June 2024 must be charged and tried under Section 302 IPC. Section 103 BNS applies only to offences committed on or after 1 July 2024.',
+      ],
+    },
+  ],
+
+  provisions: [
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-103',
+      section: 's. 103',
+      title: 'Punishment for murder',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-101',
+      section: 's. 101',
+      title: 'Murder',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-100',
+      section: 's. 100',
+      title: 'Culpable homicide',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-105',
+      section: 's. 105',
+      title: 'Punishment for culpable homicide not amounting to murder',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-3-5',
+      section: 's. 3(5)',
+      title: 'Joint liability (Common intention)',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-189',
+      section: 's. 189',
+      title: 'Unlawful assembly',
+    },
+    {
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-393',
+      section: 's. 393',
+      title: 'Language and contents of judgment (Special reasons for death penalty)',
+    },
+    {
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-258',
+      section: 's. 258',
+      title: 'Judgment of acquittal or conviction and hearing on sentence in Sessions trial',
+    },
+    {
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-54',
+      section: 's. 54',
+      title: 'Identification of person arrested (Test Identification Parade)',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-63',
+      section: 's. 63',
+      title: 'Admissibility of electronic records',
+    },
+  ],
+
+  examples: [
+    {
+      id: 'bns-103-ex1',
+      title: 'Individual Murder under Section 103(1) — Application of Virsa Singh Test',
+      illustrationType: 'statutory-practical',
+      description:
+        'Accused A intentionally stabs victim V in the chest with a 9-inch hunting knife during a planned ambush. The autopsy proves the stab wound penetrated the left ventricle of the heart, causing massive haemorrhage and immediate death. Medical testimony confirms the wound was objectively sufficient in the ordinary course of nature to cause death. No statutory Exception under Section 101 applies. The court convicts A under Section 101 and, finding no rarest-of-rare justification upon a bifurcated sentencing hearing under Section 258(2) BNSS, sentences A under Section 103(1) to imprisonment for life and a fine of ₹50,000.',
+    },
+    {
+      id: 'bns-103-ex2',
+      title: 'Section 103(2) Charge Defeated — Failure of Identity Nexus & Concerted Action',
+      illustrationType: 'fail-scenario',
+      description:
+        'A violent scuffle breaks out at a bustling weekly market following an altercation between vegetable vendor V and customer C over disputed change. Six bystanders, including accused B1 to B6, gather around. Three persons attack V with sticks, resulting in fatal head trauma. The police charge B1 to B6 under Section 103(2) BNS, alleging mob lynching based on caste. At trial, the prosecution fails to produce evidence of caste-based slurs or bias; the dispute was purely commercial. Furthermore, CCTV footage proves B4 and B5 were merely curious onlookers who never struck a blow or encouraged the assailants. The charge under Section 103(2) fails for want of an identity-ground nexus and lack of concerted action by five or more persons.',
+    },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'bns-103-hypo',
+      title: 'Chamber Practice Hypothetical: Mob Violence, Identity Nexus & Section 103(2) Indictment',
+      facts:
+        'In September 2024, an inter-faith couple is confronted at an eatery by a group of seven youths (A1 to A7). Heated arguments ensue. A1 and A2 shout derogatory slogans denouncing the male victim’s religious community and call upon the crowd to "teach an infidel a lesson". A1, A2, and A3 deliver severe kicks and iron-rod blows to the victim’s cranium, while A4 brandishes a lathi to prevent patrons from intervening. A5, A6, and A7 stand on the periphery, filming the event on their mobile phones and chanting slogans. The victim succumbs to multiple depressed skull fractures. The police register an FIR under Section 103(2) BNS against all seven accused. In defence, A5, A6, and A7 claim they were mere bystanders exercising their right to document public events and never shared an intention to cause death.',
+      question:
+        'As Senior Counsel, analyse whether an indictment under Section 103(2) BNS is maintainable against A1 to A4, and whether A5, A6, and A7 can be held liable as members of the group acting in concert.',
+      applicableLaw:
+        'BNS ss. 100, 101, 103(2), 3(5); BNSS s. 258, s. 393; BSA ss. 63, 104; Supreme Court precedents in Tehseen S. Poonawalla (2018), Musa Khan (1977), and Baladin (1956).',
+      analysis:
+        '1. Predicate Offence of Murder: The medical evidence establishes multiple skull fractures resulting from iron-rod blows inflicted with intention to cause death or bodily injuries sufficient in the ordinary course of nature to cause death (s. 101(a)/(c) BNS). No statutory Exceptions apply; culpable homicide constitutes murder.\n2. Application of Section 103(2) Gateways:\n   - Identity Ground: Derogatory religious slogans and explicit calls to punish the victim based on religious identity establish the causal nexus that the murder was committed on the ground of "community" or "personal belief" within the meaning of s. 103(2).\n   - Five-or-more threshold & Concerted Action: A1, A2, and A3 physically executed the fatal assault. A4 actively secured the perimeter and brandished a weapon to deter rescuers; this constitutes active concerted facilitation, bringing the core group to four.\n   - Liability of A5, A6, and A7: Under Baladin v. State of U.P. and Musa Khan v. State of Maharashtra, mere presence in a crowd is insufficient. However, A5 to A7 were not passive onlookers; they actively chanted communal slogans inciting the assailants while recording the assault. Chanting slogans that exhort physical violence constitutes active concert and shared mens rea, meeting the standard of "acting in concert" under Section 103(2).\n   - Numerical Threshold Satisfied: With all seven individuals acting in concert on a prohibited identity ground, the statutory floor of five persons is satisfied.\n3. Evidentiary Scrutiny of Mobile Video: The phone recordings relied upon to establish the presence and slogans of A5-A7 must strictly satisfy BSA Section 63(4) certification. If the original devices or valid hash certificates are missing, the videos must be excluded, severely weakening the case against the peripheral accused.',
+      conclusion:
+        'The indictment under Section 103(2) BNS is fully sustainable against A1 to A4. As against A5 to A7, liability under Section 103(2) turns on whether the prosecution proves beyond reasonable doubt that their chanting amounted to active incitement and concert rather than contemporaneous spectatorship. If electronic recordings satisfy Section 63 BSA, all seven qualify under Section 103(2), subjecting each to death or life imprisonment.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'bns-103-dist-1',
+      title: 'BNS Section 103(1) vs Section 103(2)',
+      left: 'Section 103(1) BNS (General Murder)',
+      right: 'Section 103(2) BNS (Group Identity Murder / Mob Lynching)',
+      rows: [
+        {
+          point: 'Participant Threshold',
+          left: 'Single individual or any number of participants acting with common intention',
+          right: 'Strict statutory floor of five or more persons acting in concert',
+        },
+        {
+          point: 'Motive / Causal Nexus',
+          left: 'Motive is irrelevant to liability if intention/knowledge is established under s. 101',
+          right: 'Direct causal nexus mandatory: murder must be on grounds of race, caste, sex, language, belief, etc.',
+        },
+        {
+          point: 'Vicarious Constructive Scope',
+          left: 'Requires proof of common intention (s. 3(5)) or common object (s. 190) for non-striking co-accused',
+          right: 'Codified constructive liability: each member of the qualifying concert is directly liable for murder',
+        },
+        {
+          point: 'Legislative Origin',
+          left: 'Direct restatement of IPC Section 302',
+          right: 'Novel statutory codification implementing Supreme Court directives in Tehseen Poonawalla (2018)',
+        },
+      ],
+    },
+    {
+      id: 'bns-103-dist-2',
+      title: 'Section 103(2) BNS vs Section 190 BNS (Unlawful Assembly Murder)',
+      left: 'Section 103(2) BNS',
+      right: 'Section 190 BNS (old s. 149 IPC)',
+      rows: [
+        {
+          point: 'Predicate Assembly',
+          left: 'Focuses on concerted action by five or more persons directed at an identity-based killing',
+          right: 'Requires membership in an unlawful assembly having one of the five common objects in s. 189',
+        },
+        {
+          point: 'Identity Motivation',
+          left: 'Essential ingredient: attack must be motivated by victim’s protected identity marker',
+          right: 'Identity ground is not an ingredient; any unlawful common object suffices',
+        },
+        {
+          point: 'Substantive Classification',
+          left: 'Standalone substantive capital offence of group identity murder',
+          right: 'Rule of constructive criminal liability attaching to the underlying offence committed',
+        },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'bns-103-trap1',
+      trap: 'Section 103 BNS provides a self-contained definition of murder.',
+      correction:
+        'Section 103 is exclusively a punishment and sentencing provision. The substantive ingredients of murder are located in Section 101, which presupposes the genus of culpable homicide in Section 100. Charging Section 103 without establishing Section 101 and eliminating the five statutory Exceptions is fatal to the prosecution.',
+    },
+    {
+      id: 'bns-103-trap2',
+      trap: 'Mere physical presence of five or more persons at a murder scene automatically triggers Section 103(2).',
+      correction:
+        'Section 103(2) requires that the five or more persons were "acting in concert". As held in Baladin v. State of U.P. and Musa Khan v. State of Maharashtra, curious onlookers, passive bystanders, or persons trapped in a mob without shared consensus cannot be roped into group liability.',
+    },
+    {
+      id: 'bns-103-trap3',
+      trap: 'The death penalty is mandatory under Section 103(1) or Section 103(2).',
+      correction:
+        'A mandatory death penalty is unconstitutional under Article 21 (Mithu v. State of Punjab (1983) 2 SCC 277). Section 103 provides the alternative of imprisonment for life. Under Section 393(3) BNSS and Bachan Singh (1980), life imprisonment is the rule and capital punishment is restricted to the rarest of rare cases after an exhaustive pre-sentence hearing under Section 258(2) BNSS.',
+    },
+  ],
+
+  cases: [
+    {
+      name: 'State of Andhra Pradesh v. Rayavarapu Punnayya',
+      year: 1976,
+      citation: '(1976) 4 SCC 382',
+      court: 'Supreme Court of India',
+      holding:
+        'Established the seminal tripartite test governing the distinction between culpable homicide and murder. Inquire first whether death was caused with the mental state in s. 100 BNS; second, whether the act falls within clauses (a)-(d) of s. 101 BNS; and third, whether any statutory Exception in s. 101 applies to reduce the offence to culpable homicide not amounting to murder.',
+      relevance:
+        'Mandatory citation in every homicide trial to structure the gateway analysis before Section 103 punishment can be considered.',
+    },
+    {
+      name: 'Virsa Singh v. State of Punjab',
+      year: 1958,
+      citation: 'AIR 1958 SC 465',
+      court: 'Supreme Court of India',
+      holding:
+        'Formulated the objective-subjective test for murder under clause Thirdly (now s. 101(c) BNS): the prosecution must prove that bodily injury is present, that the particular injury was intentionally inflicted and not accidental, and that the injury intended is objectively sufficient in the ordinary course of nature to cause death.',
+      relevance:
+        'The foundational locus classicus for proving bodily injury murder under Section 101(c) leading to Section 103 sentencing.',
+    },
+    {
+      name: 'Bachan Singh v. State of Punjab',
+      year: 1980,
+      citation: '(1980) 2 SCC 684',
+      court: 'Supreme Court of India',
+      holding:
+        'Affirmed the constitutional validity of capital punishment under Article 21, establishing the "rarest of rare" doctrine. Life imprisonment is the rule and death is the exception, permissible only when the alternative option of life imprisonment is unquestionably foreclosed after balancing aggravating and mitigating circumstances.',
+      relevance:
+        'Constitutional touchstone for capital sentencing under Section 103(1) and Section 103(2) BNS.',
+    },
+    {
+      name: 'Machhi Singh v. State of Punjab',
+      year: 1983,
+      citation: '(1983) 3 SCC 470',
+      court: 'Supreme Court of India',
+      holding:
+        'Operationalized Bachan Singh into five specific categories: manner of commission of murder, motive, antisocial or socially abhorrent nature of the crime, magnitude of the crime, and personality of the victim.',
+      relevance:
+        'Guides the preparation of the aggravating-mitigating balance sheet in sentencing hearings under Section 258(2) BNSS.',
+    },
+    {
+      name: 'Tehseen S. Poonawalla v. Union of India',
+      year: 2018,
+      citation: '(2018) 9 SCC 501',
+      court: 'Supreme Court of India',
+      holding:
+        'Issued exhaustive preventive, remedial, and punitive guidelines against mob lynching and mob violence, urging Parliament to create a dedicated, separate penal offence for lynching. This judgment directly inspired Section 103(2) BNS.',
+      relevance:
+        'Direct legislative provenance for Section 103(2) BNS group identity murder.',
+    },
+    {
+      name: 'Manoj v. State of Madhya Pradesh',
+      year: 2023,
+      citation: '(2023) 2 SCC 353',
+      court: 'Supreme Court of India',
+      holding:
+        'Mandated strict procedural guidelines for pre-sentence hearings: the trial court must obtain a psychiatric evaluation, jail conduct report, and probation officer report before imposing capital punishment to test whether the possibility of reformation is completely foreclosed.',
+      relevance:
+        'Mandatory procedural safeguard governing Section 258(2) BNSS sentencing for offences under Section 103 BNS.',
+    },
+  ],
+
+  questionsAndAnswers: [
+    {
+      id: 'bns-103-brief',
+      draftingCategory: 'brief',
+      question:
+        'Prepare an IRAC Legal Case Brief on the statutory ingredients, gateway thresholds, and constitutional sentencing architecture of BNS Section 103(1) and Section 103(2).',
+      answer: `I. ISSUE & JURISDICTIONAL THRESHOLD
+Whether an indictment under Section 103(1) or Section 103(2) BNS is maintainable against an accused, and whether the imposition of the death penalty complies with the constitutional rarest-of-rare doctrine and Section 258(2) BNSS pre-sentence hearing mandates. Forum: Court of Session under the First Schedule of BNSS.
+
+II. GOVERNING RULE & STATUTORY ARCHITECTURE
+1. Predicate Offence: Murder is substantive liability defined under Section 101 BNS. Liability requires proving culpable homicide under Section 100 BNS, satisfaction of one of the four limbs of Section 101 BNS (including the Virsa Singh objective-subjective test under s. 101(c)), and the complete absence of the five statutory Exceptions in Section 101.
+2. Section 103(1) Sentencing: Discretion between death or imprisonment for life and fine. Governed by the rarest-of-rare doctrine (Bachan Singh), Machhi Singh balance-sheet, and the mandatory requirement for psychiatric evaluation and social inquiry under Manoj v. State of M.P. (2023).
+3. Section 103(2) Group Identity Murder: Aggravated statutory classification requiring: (a) five or more persons; (b) acting in concert; (c) committing murder; (d) on grounds of race, caste, community, sex, place of birth, language, personal belief or similar ground. Each concerted member is subject to death or life imprisonment.
+
+III. APPLICATION TO FACTUAL DISPUTES
+- Step 1: Establish homicide and cause of death through post-mortem evidence and medical witness examination.
+- Step 2: Test intention/knowledge under Section 101. If single blow in a sudden quarrel, test Exception 4 (sudden fight) to reduce charge to Section 105 BNS.
+- Step 3: For Section 103(2), rigorously examine the five-person threshold and concert. Exclude bystanders and curious spectators under the doctrine of Baladin and Musa Khan. Test whether the attack was motivated by protected identity markers or collateral disputes (e.g. monetary feud, road rage).
+- Step 4: Electronic evidence (CCTV, phone videos) must strictly satisfy Section 63(4) BSA certification. Absent cryptographic validation, video proof cannot sustain group identification.
+
+IV. CONCLUSION & OPERATIVE ADVICE
+Advise trial counsel to separate the liability phase from the sentencing phase. At the liability phase, target the absence of the identity nexus to knock out Section 103(2) and establish statutory Exceptions under Section 101 to reduce the charge to Section 105. At the sentencing phase, invoke Section 258(2) BNSS and Manoj (2023) to demand a full psychiatric and mitigating investigation, foreclosing capital punishment.`,
+      explanation:
+        'Comprehensive Senior Counsel IRAC brief on Section 103 BNS sentencing and mob lynching architecture.',
+      relatedProvisionIds: ['bns-103', 'bns-101', 'bns-100', 'bnss-258', 'bsa-63'],
+    },
+    {
+      id: 'bns-103-submissions',
+      draftingCategory: 'submissions',
+      question:
+        'Draft comprehensive Written Submissions on behalf of an accused facing charges under Section 103(2) BNS, arguing for the discharge/acquittal of Section 103(2) and mitigation against capital punishment.',
+      answer: `IN THE COURT OF SESSIONS AT [JURISDICTION]
+SESSIONS CASE NO. [____] OF 202[ ]
+IN THE MATTER OF:
+STATE                                                       ... PROSECUTION
+VERSUS
+ACCUSED A & ORS.                                            ... ACCUSED
+
+WRITTEN SUBMISSIONS ON BEHALF OF ACCUSED NO. 4 AGAINST INVOCATION OF SECTION 103(2) BNS AND IN MITIGATION OF SENTENCE
+
+MOST RESPECTFULLY SHOWETH:
+
+I. PRELIMINARY STATEMENT & FACTUAL MATRIX
+1. Accused No. 4 stands indicted under Section 103(2) of the Bharatiya Nyaya Sanhita, 2023 (BNS), for allegedly participating in a group identity murder along with six co-accused on [Date].
+2. The prosecution case rests solely on mobile footage showing Accused No. 4 standing at the periphery of the market crowd. The autopsy reveals a single fatal stab wound inflicted exclusively by Accused No. 1.
+
+II. THE INGREDIENTS OF SECTION 103(2) BNS ARE NOT SATISFIED
+3. Absence of the Five-Person Concerted Action Threshold:
+   - Section 103(2) requires a group of "five or more persons acting in concert". The Supreme Court in Baladin v. State of U.P. AIR 1956 SC 181 and Musa Khan v. State of Maharashtra (1977) 1 SCC 733 has authoritatively held that mere presence in an agitated crowd does not constitute concert.
+   - Accused No. 4 was unarmed, struck no blow, and uttered no words. Passive onlookers cannot be transformed into murderers by association.
+4. Total Failure of the Identity-Ground Nexus:
+   - Section 103(2) mandates that the murder must be committed "on the ground of race, caste or community, sex, place of birth, language, personal belief or any other similar ground".
+   - The genesis of the incident was a sudden vehicular collision and heated brawl. The prosecution has placed zero evidence on record showing that the victim was targeted due to community or caste. Section 103(2) cannot be invoked for ordinary brawls.
+
+III. THE PREDICATE OFFENCE UNDER SECTION 101 BNS IS REDUCED BY EXCEPTION 4
+5. The incident occurred without premeditation in a sudden fight in the heat of passion upon a sudden quarrel. The offender did not take undue advantage or act in a cruel or unusual manner.
+6. The offence falls squarely within Exception 4 to Section 101 BNS, reducing the charge to Culpable Homicide Not Amounting to Murder punishable under Section 105 BNS.
+
+IV. INADMISSIBILITY OF ELECTRONIC EVIDENCE UNDER SECTION 63 BSA
+7. The prosecution relies on a viral mobile video clip without producing the primary device, without establishing the hash value, and without furnishing the mandatory certificate under Section 63(4) of the Bharatiya Sakshya Adhiniyam, 2023. Under Arjun Panditrao Khotkar (2020) 7 SCC 1, electronic evidence lacking the statutory certificate is completely inadmissible.
+
+V. SUBMISSIONS IN MITIGATION: FORECLOSURE OF CAPITAL PUNISHMENT
+8. In the unlikely event of conviction under Section 103(1), capital punishment is legally impermissible:
+   - The case does not fall within the "rarest of rare" doctrine (Bachan Singh v. State of Punjab (1980) 2 SCC 684).
+   - Accused No. 4 is a first-time offender, aged 21 years, with an unblemished academic and family record. Under Manoj v. State of M.P. (2023) 2 SCC 353, the possibility of reformation is abundant.
+   - Under Section 393(3) BNSS, life imprisonment is the rule and special reasons must be recorded for death; no aggravating factor outweighs the compelling mitigating circumstances.
+
+PRAYER
+Wherefore, in light of the above facts, statutory scheme, and binding authorities, it is respectfully prayed that this Hon’ble Court may graciously be pleased to:
+(a) Acquit / Discharge Accused No. 4 of charges under Section 103(2) BNS;
+(b) Alter the charge to Section 105 / 115 BNS; and
+(c) Reject any prayer for the imposition of capital punishment.
+
+FILED BY:
+[COUNSEL FOR ACCUSED NO. 4]
+ADVOCATE`,
+      explanation:
+        'Senior Counsel written submissions in a Sessions Trial challenging Section 103(2) BNS indictment and capital sentencing.',
+      relatedProvisionIds: ['bns-103', 'bns-101', 'bns-105', 'bnss-393', 'bsa-63'],
+    },
+  ],
+
+  bareActPointers: [
+    'BNS s. 103(1): Death or life imprisonment and fine for murder defined under s. 101',
+    'BNS s. 103(2): Group identity murder / mob lynching by five or more persons acting in concert',
+    'BNS s. 101: Substantive definition of murder (clauses a-d and Exceptions 1-5)',
+    'BNS s. 100: Culpable homicide genus',
+    'BNS s. 105: Punishment for culpable homicide not amounting to murder',
+    'BNSS s. 258(2): Mandatory bifurcated pre-sentence hearing in Sessions trials',
+    'BNSS s. 393(3): Requirement of special reasons for awarding death sentence',
+    'BSA s. 63(4): Mandatory certificate for electronic video/CCTV admissibility',
+  ],
+
+  examTips: [
+    'Always deconstruct Section 103 into its two distinct sub-sections: s. 103(1) ordinary murder and s. 103(2) group identity murder.',
+    'Never treat Section 103 as the definition of murder; always establish Section 100 (culpable homicide) and Section 101 (murder limbs & exceptions) first.',
+    'For s. 103(2), always test all three prongs: 5+ persons, acting in concert (Baladin rule), and specific identity-ground nexus.',
+    'Anchor capital sentencing in Bachan Singh, Machhi Singh, and Manoj (2023) pre-sentence hearing requirements.',
+  ],
+
+  revisionPoints: [
+    's. 103(1) = punishment for murder: death or life imprisonment + fine.',
+    's. 103(2) = group of 5+ persons acting in concert committing murder on protected identity grounds (mob lynching).',
+    'Tripartite test: Rayavarapu Punnayya (1976) — culpable homicide (s. 100) → murder (s. 101) → exceptions (s. 105).',
+    'Sentencing safeguards: BNSS s. 258(2) bifurcated hearing, BNSS s. 393(3) special reasons, Bachan Singh rarest of rare.',
+    'Digital evidence: BSA s. 63(4) mandatory certificate for CCTV/video evidence.',
+  ],
+
+  relatedTopics: ['s-100', 's-101', 's-105', 's-111', 's-3-5', 's-189'],
 }
 
 export default content
