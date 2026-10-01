@@ -357,7 +357,7 @@
 
 **Implementation:** PR pending  
 **Exit audit:** `docs/PHASE-15-EXIT-AUDIT.md`  
-**Validation:** CI pending.
+**Validation:** CI **#365** — TypeScript PASS, unit tests PASS, production build PASS.
 
 | Check | Result |
 |---|---|
@@ -367,10 +367,10 @@
 | Official-source navigation | **PASS** |
 | Link verification boundary | **PASS** |
 | Mobile/accessibility baseline | **PASS** |
-| Focused tests | **ADDED; CI pending** |
-| TypeScript + production build | **PENDING CI** |
+| Focused tests | **PASS** — CI #365 |
+| TypeScript + production build | **PASS** — CI #365 |
 
 **Blocker:** None known; CI is the merge gate.  
 **Next action:** Phase 16 — Privacy and Local Storage.
 
-**Phase 15 status:** **CLOSED pending final CI/merge verification**.
+**Phase 15 status:** **CLOSED pending merge verification**.
