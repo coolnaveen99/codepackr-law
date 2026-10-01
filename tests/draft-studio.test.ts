@@ -1,36 +1,35 @@
-import { describe, expect, it } from 'vitest'
+import test from 'node:test'
+import assert from 'node:assert/strict'
 import { getDraftTier, getReviewYear, markDraftUsed, matchesDraftTier, toggleDraftFavorite, type DraftUsageState } from '../src/lib/draftStudio'
 
 const base: DraftUsageState = { favorites: [], recentlyUsed: [], usageCounts: {} }
 
-describe('draft studio governance helpers', () => {
-  it('distinguishes reviewed templates from catalogue scaffolds', () => {
-    expect(getDraftTier(undefined, 'reviewed')).toBe('reviewed')
-    expect(getDraftTier('catalog')).toBe('scaffold')
-    expect(getDraftTier(undefined)).toBe('reviewed')
-  })
+test('draft governance distinguishes reviewed and catalogue scaffolds', () => {
+  assert.equal(getDraftTier(undefined, 'reviewed'), 'reviewed')
+  assert.equal(getDraftTier('catalog'), 'scaffold')
+  assert.equal(getDraftTier(undefined), 'reviewed')
+})
 
-  it('extracts review years without inventing missing dates', () => {
-    expect(getReviewYear('2026-09-29')).toBe('2026')
-    expect(getReviewYear(undefined)).toBe('')
-  })
+test('draft review year does not invent missing dates', () => {
+  assert.equal(getReviewYear('2026-09-29'), '2026')
+  assert.equal(getReviewYear(undefined), '')
+})
 
-  it('filters governance tiers', () => {
-    expect(matchesDraftTier('reviewed', 'reviewed')).toBe(true)
-    expect(matchesDraftTier('reviewed', 'scaffold')).toBe(false)
-    expect(matchesDraftTier('scaffold', 'all')).toBe(true)
-  })
+test('draft governance tier filtering is deterministic', () => {
+  assert.equal(matchesDraftTier('reviewed', 'reviewed'), true)
+  assert.equal(matchesDraftTier('reviewed', 'scaffold'), false)
+  assert.equal(matchesDraftTier('scaffold', 'all'), true)
+})
 
-  it('persists recent usage and usage counts through deterministic state helpers', () => {
-    const next = markDraftUsed(base, 'draft-a')
-    const again = markDraftUsed(next, 'draft-a')
-    expect(again.recentlyUsed).toEqual(['draft-a'])
-    expect(again.usageCounts['draft-a']).toBe(2)
-  })
+test('draft usage tracks recent items and counts locally', () => {
+  const next = markDraftUsed(base, 'draft-a')
+  const again = markDraftUsed(next, 'draft-a')
+  assert.deepEqual(again.recentlyUsed, ['draft-a'])
+  assert.equal(again.usageCounts['draft-a'], 2)
+})
 
-  it('toggles favourites locally', () => {
-    const next = toggleDraftFavorite(base, 'draft-a')
-    expect(next.favorites).toEqual(['draft-a'])
-    expect(toggleDraftFavorite(next, 'draft-a').favorites).toEqual([])
-  })
+test('draft favourites toggle locally', () => {
+  const next = toggleDraftFavorite(base, 'draft-a')
+  assert.deepEqual(next.favorites, ['draft-a'])
+  assert.deepEqual(toggleDraftFavorite(next, 'draft-a').favorites, [])
 })
