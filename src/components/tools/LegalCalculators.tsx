@@ -28,7 +28,6 @@ export function LegalCalculators() {
   const compound = useMemo(() => compoundInterest(Number(principal), Number(rate), Number(years), Number(frequency)), [principal,rate,years,frequency])
   const deadline = useMemo(() => addDays(deadlineStart, Number(deadlineDays)), [deadlineStart,deadlineDays])
   const notice = useMemo(() => addDays(noticeStart, Number(noticeDays)), [noticeStart,noticeDays])
-  const fee = useMemo(() => percentageOfBase(Number(base), Number(feeRate)), [base,feeRate])
   const mactResult = useMemo(() => mactWorksheet(Object.fromEntries(Object.entries(mact).map(([k,v]) => [k, Number(v)])) as any), [mact])
 
   const tabs: Array<[Tab,string]> = [['date','Date Difference'],['interest','Interest'],['deadline','Deadline'],['mact','MACT Worksheet'],['fee','Court Fee'],['stamp','Stamp Duty']]
