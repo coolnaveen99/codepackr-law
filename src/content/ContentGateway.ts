@@ -6,6 +6,9 @@ import type { ContentRepository, TopicContentRecord } from './ContentRepository'
 import type { ContentEnvelope } from './contentTypes'
 import type { TopicContent } from '../data/topics/topicTypes'
 
+/** Retained in production bundles for PA-001 deploy verification. */
+export const CONTENT_GATEWAY_DEPLOY_MARKER = 'cp-law-content-gateway-v1'
+
 const DEFAULT_LEGAL_CONTENT_BASE =
   import.meta.env.VITE_LEGAL_CONTENT_BASE_URL ||
   'https://raw.githubusercontent.com/coolnaveen99/legal-content/main'
@@ -22,6 +25,10 @@ export function configureContentRepository(next: ContentRepository): void {
 
 export function getContentRepository(): ContentRepository {
   return repository
+}
+
+export function getContentGatewayDeployMarker(): string {
+  return CONTENT_GATEWAY_DEPLOY_MARKER
 }
 
 export async function getTopicContent(subjectSlug: string, topicId: string): Promise<TopicContentRecord | null> {
