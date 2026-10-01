@@ -78,8 +78,7 @@ function structuredDataFor(route, title, description) {
     url,
     name: title,
     description,
-    inLanguage: 'en-IN',
-    primaryImageOfPage: DEFAULT_OG_IMAGE
+    inLanguage: 'en-IN'
   };
 }
 function metadataFor(route) {
