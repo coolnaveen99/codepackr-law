@@ -2,8 +2,8 @@
 
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
-**Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** · Phase 4 — **CLOSED** · Phase 5 — **CLOSED** · Phase 6 — **CLOSED** · Phase 7 — **CLOSED** · Phase 8 — **CLOSED** · Phase 9 — **CLOSED** · Phase 10 — **CLOSED** · Phase 11 — **CLOSED** · Phase 12 — **CLOSED** · Phase 13 — **CLOSED**
-**Updated:** 2026-10-01 (PH11 + PH12 synchronized — Transition Centre and Student Learning 2.0 exit audits closed; Phase 13 completed — Phase 14 is next)
+**Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** · Phase 4 — **CLOSED** · Phase 5 — **CLOSED** · Phase 6 — **CLOSED** · Phase 7 — **CLOSED** · Phase 8 — **CLOSED** · Phase 9 — **CLOSED** · Phase 10 — **CLOSED** · Phase 11 — **CLOSED** · Phase 12 — **CLOSED** · Phase 13 — **CLOSED** · Phase 14 — **CLOSED**
+**Updated:** 2026-10-01 (Phase 14 Cause List Organizer completed and validated by CI #362; Phase 15 is next)
 
 ## Verified completed
 
@@ -42,7 +42,7 @@
 
 **Board integrity note:** Phase 11 now has its separate exit audit and validation evidence on `main` (`docs/PHASE-11-EXIT-AUDIT.md`, PR #82 final CI). Phase 11 and Phase 12 are both closed.
 
-**Next action:** Phase 14 — Cause List Organizer.
+**Next action:** Phase 15 — Primary Source Finder.
 ## Current sprint backlog
 
 | ID | Work | Status | Priority |
@@ -324,3 +324,30 @@
 **Next action:** Phase 14 — Cause List Organizer.
 
 **Phase 13 status:** **CLOSED**.
+
+
+## Phase 14 — Cause List Organizer — COMPLETED (2026-10-01)
+
+**Implementation:** PR #84  
+**Exit audit:** `docs/PHASE-14-EXIT-AUDIT.md`  
+**Validation:** CI **#362** — TypeScript PASS, unit tests PASS, production build PASS.
+
+| Check | Result |
+|---|---|
+| Paste cause-list workflow | **PASS** |
+| Plain-text import | **PASS** |
+| Court / bench / date / time fields | **PASS** |
+| Item / case / parties / advocate / purpose fields | **PASS** |
+| Mark own matters | **PASS** |
+| Schedule / court / item sorting | **PASS** |
+| Hearing preparation notes | **PASS** |
+| Local persistence | **PASS** |
+| Official-source boundary | **PASS** |
+| Mobile/accessibility baseline | **PASS** |
+| Regression tests | **PASS** |
+| TypeScript + production build | **PASS** — CI #362 |
+
+**Blocker:** None.  
+**Next action:** Phase 15 — Primary Source Finder.
+
+**Phase 14 status:** **CLOSED**.
