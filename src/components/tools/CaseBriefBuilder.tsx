@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { BookMarked, Copy, RotateCcw, Save } from 'lucide-react'
 import { CP_LAW_NS, loadJson, saveJson } from '../../lib/localStore'
+import { SAMPLE_CASE_BRIEF } from '../../lib/studentLearning'
 
 export interface CaseBrief {
   id: string
@@ -56,6 +57,7 @@ export function CaseBriefBuilder() {
   const [form, setForm] = useState(EMPTY)
   const [saved, setSaved] = useState<CaseBrief[]>([])
   const [copied, setCopied] = useState(false)
+  const [copyError, setCopyError] = useState(false)
 
   useEffect(() => {
     setSaved(loadJson<CaseBrief[]>(CP_LAW_NS.caseBriefs, []))
@@ -85,11 +87,20 @@ export function CaseBriefBuilder() {
 
   const handleClear = () => setForm(EMPTY)
 
+  const handleSample = () => setForm({ ...SAMPLE_CASE_BRIEF })
+
+  const handleClearSaved = () => persist([])
+
   const handleCopy = async () => {
     const text = FIELDS.map((f) => `## ${f.label}\n${form[f.key] || '—'}`).join('\n\n')
-    await navigator.clipboard.writeText(`# ${form.caseName || 'Case brief'}\n\n${text}`)
-    setCopied(true)
-    setTimeout(() => setCopied(false), 1500)
+    try {
+      await navigator.clipboard.writeText(`# ${form.caseName || 'Case brief'}\n\n${text}`)
+      setCopyError(false)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 1500)
+    } catch {
+      setCopyError(true)
+    }
   }
 
   return (
@@ -113,19 +124,36 @@ export function CaseBriefBuilder() {
           </button>
           <button
             type="button"
+            onClick={handleSample}
+            className="inline-flex min-h-11 items-center gap-1.5 rounded-xl border border-slate-200 px-3 py-2 text-xs font-bold"
+          >
+            Load sample
+          </button>
+          <button
+            type="button"
             onClick={handleCopy}
-            className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 px-3 py-2 text-xs font-bold"
+            className="inline-flex min-h-11 items-center gap-1.5 rounded-xl border border-slate-200 px-3 py-2 text-xs font-bold"
           >
             <Copy className="size-3.5" /> {copied ? 'Copied' : 'Copy markdown'}
           </button>
           <button
             type="button"
             onClick={handleClear}
-            className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 px-3 py-2 text-xs font-bold"
+            className="inline-flex min-h-11 items-center gap-1.5 rounded-xl border border-slate-200 px-3 py-2 text-xs font-bold"
           >
-            <RotateCcw className="size-3.5" /> Clear
+            <RotateCcw className="size-3.5" /> Clear form
           </button>
+          {saved.length > 0 && (
+            <button
+              type="button"
+              onClick={handleClearSaved}
+              className="inline-flex min-h-11 items-center gap-1.5 rounded-xl border border-slate-200 px-3 py-2 text-xs font-bold text-slate-600"
+            >
+              Clear saved
+            </button>
+          )}
         </div>
+        {copyError && <div className="mt-2 text-xs font-semibold text-rose-700">Clipboard access was unavailable. Use your browser copy controls instead.</div>}
       </section>
 
       <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 sm:p-5 space-y-3">
@@ -168,7 +196,7 @@ export function CaseBriefBuilder() {
                   </button>
                   <button
                     type="button"
-                    className="text-xs font-bold text-slate-500"
+                    className="min-h-11 text-xs font-bold text-slate-500 px-2"
                     onClick={() => persist(saved.filter((x) => x.id !== b.id))}
                   >
                     Delete

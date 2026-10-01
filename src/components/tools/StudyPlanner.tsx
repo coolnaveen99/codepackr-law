@@ -1,17 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { CalendarDays, Plus, Trash2 } from 'lucide-react'
 import { CP_LAW_NS, loadJson, saveJson } from '../../lib/localStore'
-
-interface StudyItem {
-  id: string
-  subject: string
-  topic: string
-  targetDate: string
-  cycles: number
-  done: boolean
-  weak: boolean
-  notes: string
-}
+import { getStudyStats, getStudyStatus, sortStudyItems, SAMPLE_STUDY_ITEM, type StudyItem } from '../../lib/studentLearning'
 
 const EMPTY: Omit<StudyItem, 'id'> = {
   subject: '',
@@ -26,6 +16,7 @@ const EMPTY: Omit<StudyItem, 'id'> = {
 export function StudyPlanner() {
   const [items, setItems] = useState<StudyItem[]>([])
   const [form, setForm] = useState(EMPTY)
+  const [editingId, setEditingId] = useState<string | null>(null)
 
   useEffect(() => {
     setItems(loadJson<StudyItem[]>(CP_LAW_NS.study, []))
@@ -36,18 +27,38 @@ export function StudyPlanner() {
     saveJson(CP_LAW_NS.study, next)
   }
 
-  const add = () => {
+  const saveItem = () => {
     if (!form.subject.trim() || !form.topic.trim()) return
-    persist([{ ...form, id: `study-${Date.now()}` }, ...items])
+    const normalized = { ...form, cycles: Math.max(1, Math.min(20, Math.round(form.cycles) || 1)) }
+    if (editingId) {
+      persist(items.map((item) => (item.id === editingId ? { ...normalized, id: editingId } : item)))
+    } else {
+      persist([{ ...normalized, id: `study-${Date.now()}` }, ...items])
+    }
     setForm(EMPTY)
+    setEditingId(null)
   }
 
-  const stats = useMemo(() => {
-    const total = items.length
-    const done = items.filter((i) => i.done).length
-    const weak = items.filter((i) => i.weak && !i.done).length
-    return { total, done, weak }
-  }, [items])
+  const edit = (item: StudyItem) => {
+    const { id: _id, ...rest } = item
+    setForm(rest)
+    setEditingId(item.id)
+  }
+
+  const loadSample = () => {
+    setForm({ ...SAMPLE_STUDY_ITEM })
+    setEditingId(null)
+  }
+
+  const toggleWeak = (id: string) => persist(items.map((item) => (item.id === id ? { ...item, weak: !item.weak } : item)))
+  const clearAll = () => {
+    persist([])
+    setForm(EMPTY)
+    setEditingId(null)
+  }
+
+  const stats = useMemo(() => getStudyStats(items), [items])
+  const orderedItems = useMemo(() => sortStudyItems(items), [items])
 
   return (
     <div className="space-y-5">
@@ -71,6 +82,10 @@ export function StudyPlanner() {
           <div className="rounded-xl bg-amber-50 dark:bg-amber-950/40 p-3">
             <div className="text-2xl font-black text-amber-900 dark:text-amber-200">{stats.weak}</div>
             <div className="text-[10px] font-bold uppercase text-slate-500">Weak open</div>
+          </div>
+          <div className="rounded-xl bg-slate-50 dark:bg-slate-950 p-3">
+            <div className="text-2xl font-black">{stats.due}</div>
+            <div className="text-[10px] font-bold uppercase text-slate-500">Due / overdue</div>
           </div>
         </div>
       </section>
@@ -128,13 +143,31 @@ export function StudyPlanner() {
           <input type="checkbox" checked={form.weak} onChange={(e) => setForm({ ...form, weak: e.target.checked })} />
           Mark as weak area
         </label>
-        <button
-          type="button"
-          onClick={add}
-          className="inline-flex items-center gap-1.5 rounded-xl bg-[#8B1E3F] text-white px-3 py-2 text-xs font-bold"
-        >
-          <Plus className="size-3.5" /> Add to plan
-        </button>
+        <div className="flex flex-wrap gap-2">
+          <button
+            type="button"
+            onClick={saveItem}
+            className="inline-flex min-h-11 items-center gap-1.5 rounded-xl bg-[#8B1E3F] text-white px-3 py-2 text-xs font-bold"
+          >
+            <Plus className="size-3.5" /> {editingId ? 'Save changes' : 'Add to plan'}
+          </button>
+          <button
+            type="button"
+            onClick={loadSample}
+            className="inline-flex min-h-11 items-center rounded-xl border border-slate-200 px-3 py-2 text-xs font-bold"
+          >
+            Load sample
+          </button>
+          {items.length > 0 && (
+            <button
+              type="button"
+              onClick={clearAll}
+              className="inline-flex min-h-11 items-center rounded-xl border border-slate-200 px-3 py-2 text-xs font-bold text-slate-600"
+            >
+              Clear all
+            </button>
+          )}
+        </div>
       </section>
 
       {items.length === 0 ? (
@@ -143,7 +176,7 @@ export function StudyPlanner() {
         </div>
       ) : (
         <ul className="space-y-2">
-          {items.map((it) => (
+          {orderedItems.map((it) => (
             <li
               key={it.id}
               className={`rounded-2xl border p-4 flex flex-wrap items-start justify-between gap-3 ${
@@ -166,10 +199,13 @@ export function StudyPlanner() {
                   {it.notes ? ` · ${it.notes}` : ''}
                 </div>
               </div>
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-2">
+                <span className="text-[10px] font-extrabold uppercase tracking-wide text-slate-500 px-2 py-1">
+                  {getStudyStatus(it)}
+                </span>
                 <button
                   type="button"
-                  className="text-xs font-bold rounded-lg border px-2 py-1"
+                  className="min-h-11 text-xs font-bold rounded-lg border px-3 py-1"
                   onClick={() =>
                     persist(items.map((x) => (x.id === it.id ? { ...x, done: !x.done } : x)))
                   }
@@ -178,7 +214,21 @@ export function StudyPlanner() {
                 </button>
                 <button
                   type="button"
-                  className="text-xs font-bold text-slate-500 inline-flex items-center gap-1"
+                  className="min-h-11 text-xs font-bold rounded-lg border px-3 py-1"
+                  onClick={() => toggleWeak(it.id)}
+                >
+                  {it.weak ? 'Clear weak' : 'Mark weak'}
+                </button>
+                <button
+                  type="button"
+                  className="min-h-11 text-xs font-bold rounded-lg border px-3 py-1"
+                  onClick={() => edit(it)}
+                >
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  className="min-h-11 text-xs font-bold text-slate-500 inline-flex items-center gap-1 px-3 py-1"
                   onClick={() => persist(items.filter((x) => x.id !== it.id))}
                 >
                   <Trash2 className="size-3.5" /> Delete
