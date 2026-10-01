@@ -1,191 +1,452 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
 const content: TopicContent = {
-  "study": "Introduction and meaning\nOrganised crime, new. A continuing unlawful activity — kidnapping, robbery, land-grabbing, contract killing, economic offences, cyber-crimes, trafficking — by a group or gang (syndicate) acting in concert. Death caused: death or life, and a fine of at least ₹10 lakh.\nIn student language: BNS s. 111 is the rule on “Organised crime”. The section provides that (1) Any continuing unlawful activity including kidnapping, robbery, vehicle theft, extortion, land grabbing, contract killing, economic offence, cyber-crimes, trafficking of persons, drugs, weapons or illicit goods or services, human trafficking for prostitution or ransom, by any person or a group of persons acting in concert, singly or jointly, either as a member of an organised crime syndicate or on behalf of such syndicate, by use of violence, threat of violence, intimidation, coercion, or by any other unlawful means to obtain direct or indirect material benefit including a financial benefit, shall constitute organised crime. Do not stop at the heading. An examiner awards  for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 111 exists so that “Organised crime” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n111. (1) Any continuing unlawful activity including kidnapping, robbery, vehicle theft, extortion, land grabbing, contract killing, economic offence, cyber-crimes, trafficking of persons, drugs, weapons or illicit goods or services, human trafficking for prostitution or ransom, by any person or a group of persons acting in concert, singly or jointly, either as a member of an organised crime syndicate or on behalf of such syndicate, by use of violence, threat of violence, intimidation, coercion, or by any other unlawful means to obtain direct or indirect material benefit including a financial benefit, shall constitute organised crime\n\nDefinitions and key terms\n“organised crime syndicate” — a group of two or more persons who, acting either singly or jointly, as a syndicate or gang indulge in any continuing unlawful activity.\n\n“continuing unlawful activity” — an activity prohibited by law which is a cognizable offence punishable with imprisonment of three years or more, undertaken by any person, either singly or jointly, as a member of an organised crime syndicate or on behalf of such syndicate in respect of which more than one charge-sheets have been filed before a competent Court within the preceding period of ten years and that Court has taken cognizance of such offence, and includes economic offence.\n\n“economic offence” — criminal breach of trust, forgery, counterfeiting of currency-notes, bank-notes and Government stamps, hawala transaction, mass-marketing fraud or running any scheme to defraud several persons or doing any act in any manner with a view to defraud any bank or financial institution or any other institution or organisation for obtaining monetary benefits in any form (2) Whoever commits organised crime shall,— (a) if such offence has resulted in the death of any person, be punished with death or imprisonment for life, and shall also be liable to fine which shall not be less than ten lakh rupees.\n\nEssential ingredients\n1. (1) Any continuing unlawful activity including kidnapping, robbery, vehicle theft, extortion, land grabbing, contract killing, economic offence, cyber-crimes, trafficking of persons, drugs, weapons or illicit goods or services, human trafficking for prostitution or ransom, by any person or a group of persons acting in concert, singly or jointly, either as a member of an organised crime syndicate or on behalf of such syndicate, by use of violence, threat of violence, intimidation, coercion, or by any other unlawful means to obtain direct or indirect material benefit including a financial benefit, shall constitute organised crime\n\nPunishment / legal consequence\nDeath/life + ≥ ₹10 lakh if death; else 5-to-life + ≥ ₹5 lakh.\n\nExplanations\nExplanation.—For the purposes of this sub-section,––\n\n(i) “organised crime syndicate” means a group of two or more persons who, acting either singly or jointly, as a syndicate or gang indulge in any continuing unlawful activity;\n\n(ii) “continuing unlawful activity” means an activity prohibited by law which is a cognizable offence punishable with imprisonment of three years or more, undertaken by any person, either singly or jointly, as a member of an organised crime syndicate or on behalf of such syndicate in respect of which more than one charge-sheets have been filed before a competent Court within the preceding period of ten years and that Court has taken cognizance of such offence, and includes economic offence;\n\n(iii) “economic offence” includes criminal breach of trust, forgery, counterfeiting of currency-notes, bank-notes and Government stamps, hawala transaction, mass-marketing fraud or running any scheme to defraud several persons or doing any act in any manner with a view to defraud any bank or financial institution or any other institution or organisation for obtaining monetary benefits in any form\n\n(2) Whoever commits organised crime shall,—\n\n(a) if such offence has resulted in the death of any person, be punished with death or imprisonment for life, and shall also be liable to fine which shall not be less than ten lakh rupees;\n\n(b) in any other case, be punished with imprisonment for a term which shall not be less than five years but which may extend to imprisonment for life, and shall also be liable to fine which shall not be less than five lakh rupees\n\n(3) Whoever abets, attempts, conspires or knowingly facilitates the commission of an organised crime, or otherwise engages in any act preparatory to an organised crime, shall be punished with imprisonment for a term which shall not be less than five years but which may extend to imprisonment for life, and shall also be liable to fine which shall not be less than five lakh rupees\n\n(4) Any person who is a member of an organised crime syndicate shall be punished with imprisonment for a term which shall not be less than five years but which may extend to imprisonment for life, and shall also be liable to fine which shall not be less than five lakh rupees\n\n(5) Whoever, intentionally, harbours or conceals any person who has committed the offence of an organised crime shall be punished with imprisonment for a term which shall not be less than three years but which may extend to imprisonment for life, and shall also be liable to fine which shall not be less than five lakh rupees:\n\n(6) Whoever possesses any property derived or obtained from the commission of an organised crime or proceeds of any organised crime or which has been acquired through the organised crime, shall be punishable with imprisonment for a term which shall not be less than three years but which may extend to imprisonment for life and shall also be liable to fine which shall not be less than two lakh rupees\n\n(7) If any person on behalf of a member of an organised crime syndicate is, or at any time has been in possession of movable or immovable property which he cannot satisfactorily account for, shall be punishable with imprisonment for a term which shall not be less than three years but which may extend to imprisonment for ten years and shall also be liable to fine which shall not be less than one lakh rupees\n\nExceptions, limitations and provisos\nProvided that this sub-section shall not apply to any case in which the harbour or concealment is by the spouse of the offender",
-  "glance": "BNS s. 111 — Organised crime.",
-  "sections": [
-  {
-    "id": "bns-111-module-1",
-    "title": "Core Organised-Crime Test",
-    "order": 1,
-    "content": [
-      "Establish continuing unlawful activity within the statutory definition.",
-      "Establish the organised-crime syndicate or qualifying relationship and the accused-specific nexus.",
-      "Prove the unlawful means and material-benefit purpose required by the core clause."
-    ]
-  },
-  {
-    "id": "bns-111-module-2",
-    "title": "Continuing Unlawful Activity",
-    "order": 2,
-    "content": [
-      "The definition concerns a cognizable offence punishable with imprisonment of three years or more.",
-      "It requires more than one charge-sheet before a competent Court within the preceding ten years and cognizance by that Court.",
-      "Do not replace these statutory gateways with a general allegation of repeated crime."
-    ]
-  },
-  {
-    "id": "bns-111-module-3",
-    "title": "Syndicate and Economic Offence",
-    "order": 3,
-    "content": [
-      "An organised crime syndicate is a group of two or more persons acting singly or jointly as a syndicate or gang and indulging in continuing unlawful activity.",
-      "Economic offence is separately defined and includes the categories expressly stated in the explanation.",
-      "Membership and principal commission are distinct statutory routes."
-    ]
-  },
-  {
-    "id": "bns-111-module-4",
-    "title": "Separate Liability Routes",
-    "order": 4,
-    "content": [
-      "Subsections (3)–(7) address abetment/attempt/conspiracy/facilitation/preparation, membership, harbouring, proceeds and specified unexplained property.",
-      "Each subsection has separate elements and should not be collapsed into the core offence.",
-      "For proceeds or unexplained property, establish the statutory relationship before drawing an inference from possession alone."
-    ]
-  },
-  {
-    "id": "bns-111-module-5",
-    "title": "Advocacy and Comparative Authorities",
-    "order": 5,
-    "content": [
-      "Build an element-by-element charge-sheet and cognizance matrix.",
-      "Comparative MCOCA authorities may assist where analogous, but BNS s. 111 controls current liability.",
-      "For the defence, test every definitional gateway and accused-specific nexus."
-    ]
-  }
-],  "examples": [
+  glance:
+    'Section 111 BNS introduces a landmark, codified central penal regime for Organised Crime into general Indian criminal law. It penalizes continuing unlawful activity by a syndicate of two or more persons for material or financial gain, establishing severe mandatory minimum sentences (including death/life and ₹10 lakh fine where death results) and strict gateway thresholds requiring multiple prior chargesheets within ten years.',
+
+  study: `I. HISTORICAL PROVENANCE & LEGISLATIVE GENESIS
+Prior to 1 July 2024, the Indian Penal Code, 1860 contained no overarching substantive offence of "Organised Crime". Law enforcement was forced to address syndicated mafias, extortion rings, contract-killing syndicates, and financial cartels through piecemeal provisions such as conspiracy (old s. 120B IPC / s. 61 BNS), dacoity (old s. 395 IPC / s. 310 BNS), or specialized State enactments like MCOCA (Maharashtra, 1999), UPCOCA (Uttar Pradesh), or GUJCOCA (Gujarat). 
+
+In the Bharatiya Nyaya Sanhita, 2023, Parliament transplanted and codified the core architecture of specialized organized-crime statutes into the central penal code as Section 111. It sits within Chapter VI ("Of Offences Affecting the Human Body"), creating distinct penal liability for principal commission, abetment/attempt/conspiracy, mere syndicate membership, harbouring, receiving proceeds of crime, and holding unaccounted assets on behalf of a syndicate.
+
+II. THE STATUTORY GATEWAY: DECONSTRUCTION OF SECTION 111(1) & EXPLANATIONS
+Liability under Section 111(1) requires the conjunctive confluence of three foundational elements:
+1. Continuing Unlawful Activity [Explanation (ii)]: 
+   - An activity prohibited by law which constitutes a cognizable offence punishable with imprisonment of three years or more.
+   - Undertaken by a person singly or jointly as a member of an organised crime syndicate or on its behalf.
+   - In respect of which MORE THAN ONE CHARGE-SHEET has been filed before a competent Court within the preceding period of ten years, and that Court has taken cognizance of such offence.
+   - Includes "economic offences" as defined in Explanation (iii) (CBT, forgery, counterfeiting, hawala, mass-marketing fraud, bank scams).
+2. Organised Crime Syndicate [Explanation (i)]:
+   - A group of two or more persons who, acting either singly or jointly, as a syndicate or gang indulge in any continuing unlawful activity.
+3. Modus & Purpose:
+   - The activity must be carried out by use of violence, threat of violence, intimidation, coercion, or other unlawful means.
+   - The mens rea/motive must be to obtain direct or indirect material benefit, including a financial benefit.
+
+III. THE SEVEN TIERS OF PENAL LIABILITY UNDER SUB-SECTIONS (2) TO (7)
+1. Section 111(2)(a) — Capital / Homicide Tier: If the organised crime results in the death of any person, the mandatory punishment is death or imprisonment for life, and a mandatory minimum fine of ₹10,00,000 (ten lakh rupees).
+2. Section 111(2)(b) — Non-Homicide Principal Offence: In any other case, imprisonment for a term not less than five years extending up to life imprisonment, and a mandatory minimum fine of ₹5,00,000.
+3. Section 111(3) — Inchoate Offences & Facilitation: Whoever abets, attempts, conspires, knowingly facilitates, or engages in acts preparatory to organised crime: 5 years to life, and fine not less than ₹5,00,000.
+4. Section 111(4) — Syndicate Membership: Mere proof of membership in an organised crime syndicate attracts 5 years to life, and fine not less than ₹5,00,000.
+5. Section 111(5) — Harbouring: Intentionally harbouring or concealing an offender: 3 years to life, and fine not less than ₹5,00,000. (The Proviso creates an absolute statutory exception for the spouse of the offender).
+6. Section 111(6) — Possession of Proceeds of Crime: Possessing property derived or obtained from organised crime: 3 years to life, and fine not less than ₹2,00,000.
+7. Section 111(7) — Unaccounted Assets Held on Behalf of Syndicate: Possession of unaccounted movable/immovable assets on behalf of a member: 3 to 10 years, and fine not less than ₹1,00,000.
+
+IV. SUPREME COURT JURISPRUDENCE & FORENSIC SAFEGUARDS
+Because Parliament adopted the definitions of MCOCA and GUJCOCA, the settled jurisprudence of the Supreme Court applies directly to Section 111 BNS:
+1. The Syndicate Nexus Rule: In Mahipal Singh v. CBI (2014) 11 SCC 282 and State of Maharashtra v. Shiva @ Shivaji Ramaji Sonawane (2015) 14 SCC 272, the Supreme Court established that previous chargesheets cannot be invoked in the abstract against an accused in an individual capacity. The prior chargesheets must have been filed against the organised crime syndicate or against the accused as a member of that specific syndicate.
+2. Cognizance is Mandatory: The ten-year window requires not merely the filing of multiple chargesheets, but that a competent Court must have applied its judicial mind and taken cognizance of those offences (Prasad Shrikant Purohit v. State of Maharashtra (2015) 7 SCC 440).
+3. The Single-Accused Participation Doctrine: In Kavitha Lankesh v. State of Karnataka (2022) 12 SCC 753, the Supreme Court held that it is not necessary that multiple chargesheets exist against every single accused named in the FIR; if the syndicate itself has more than one qualifying chargesheet within ten years, any person shown to have facilitated or joined the syndicate in the current offence can be indicted under Section 111.
+
+V. PROCEDURAL ROADMAP & CONSTITUTIONAL PROTECTIONS
+1. Article 20(1) Constitutional Bar: Section 111 BNS cannot be applied retrospectively to acts committed prior to 1 July 2024. While prior chargesheets within the preceding 10 years establish the jurisdictional gateway of "continuing unlawful activity", the substantive offence charged under Section 111 must have occurred post-1 July 2024.
+2. Bail Jurisprudence & Presumption: Unlike state special acts (e.g. s. 21(4) MCOCA) which contain twin conditions for bail, Section 111 BNS is governed by the regular bail provisions of Section 480 BNSS (old s. 437 CrPC) and Section 483 BNSS (old s. 439 CrPC), subject to the severity of the life/death sentence threshold.`,
+
+  sections: [
     {
-      "id": "bns-111-ex-1",
-      "title": "Example 1 — simple (teaching example)",
-      "description": "A short everyday fact pattern is tested against “Organised crime”. Name BNS s. 111, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+      id: 'bns-111-module-1',
+      title: 'Provenance, Legislative Objective & Codification of Organised Crime',
+      order: 1,
+      content: [
+        'Prior to the BNS 2023, organized crime was exclusively prosecuted under state special enactments such as MCOCA 1999 (Maharashtra) or GUJCOCA 2015 (Gujarat), leaving vast swathes of India without a dedicated statutory framework to dismantle transnational and inter-state criminal syndicates.',
+        'Parliament incorporated Section 111 into the Bharatiya Nyaya Sanhita to provide a uniform, pan-Indian statutory mechanism to target gangs, syndicates, hawala networks, cyber-crime rings, and contract-killing cartels.',
+        'The section is located in Chapter VI (Offences Affecting the Human Body), emphasizing the grave societal and physical menace that syndicated violence inflicts upon the rule of law.',
+        'The legislative objective is to penalize not only the physical perpetrator of violence, but the entire corporate-like structure of the criminal enterprise, including organizers, financiers, harbourers, and asset-holders.',
+      ],
     },
     {
-      "id": "bns-111-ex-2",
-      "title": "Example 2 — practical application / distinction (teaching example)",
-      "description": "Change one ingredient so that BNS s. 111 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
-    }
-  ],
-  "hypotheticals": [
+      id: 'bns-111-module-2',
+      title: 'Textual Anatomy, Provisos & Statutory Gateway Deconstruction',
+      order: 2,
+      content: [
+        'Section 111(1) defines the core offence through three statutory pillars: (a) a continuing unlawful activity; (b) undertaken by an organised crime syndicate (two or more persons); and (c) execution through violence, coercion, or unlawful means to secure material or financial benefit.',
+        'Explanation (i) defines "organised crime syndicate" as a group of two or more persons acting singly or jointly as a syndicate or gang indulging in continuing unlawful activity.',
+        'Explanation (ii) defines "continuing unlawful activity" with strict statutory gateways: the offence must be cognizable, carry imprisonment of 3 years or more, and have resulted in more than one chargesheet filed and taken cognizance of by a competent court within the preceding 10 years.',
+        'Explanation (iii) provides an expansive definition of "economic offence", encompassing criminal breach of trust, forgery, counterfeiting, hawala transactions, mass-marketing fraud, and multi-victim banking or institutional schemes.',
+        'The Proviso to Section 111(5) establishes an absolute marital defense: harbouring or concealment of an offender by their spouse does not attract penal liability under sub-section (5).',
+      ],
+    },
     {
-      "id": "bns-111-hypo",
-      "title": "Chamber Practice Hypothetical",
-      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Organised crime” under BNS s. 111 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
-      "question": "Whether BNS s. 111 (Organised crime) applies, and how structured written arguments should be framed.",
-      "applicableLaw": "BNS s. 111. Chapter VI — Of Offences Affecting the Human Body. Connected: BNS s. 112, BNS s. 113.",
-      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 111 (Organised crime), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Any continuing unlawful activity including kidnapping, robbery, vehicle theft, extortion, land grabbing, contract killing, economic offence, cyber-crimes, trafficking of persons, drugs, weapons or illicit goods or services, human trafficking for prostitution or ransom, by any person or a group of persons acting in concert, singly or jointly, either as a member of an organised crime syndicate or on behalf of such syndicate, by use of violence, threat of violence, intimidation, coercion, or by any other unlawful means to obtain direct or indirect material benefit including a financial benefit, shall constitute organised crime\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 111 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
-      "conclusion": "The result depends on proof of the ingredients of BNS s. 111. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
-    }
-  ],
-  "distinctions": [
+      id: 'bns-111-module-3',
+      title: 'Mandatory Proving Ingredients & Essential Elements',
+      order: 3,
+      content: [
+        'Ingredient 1 — Syndicate Membership / Nexus: The prosecution must prove the existence of an organised syndicate of two or more persons and establish the specific nexus between the accused and that syndicate (Mahipal Singh v. CBI).',
+        'Ingredient 2 — Gateway Chargesheets & Judicial Cognizance: The prosecution must place on record certified copies of at least two chargesheets filed against the syndicate within the preceding 10-year window, together with the formal orders of the competent court taking cognizance.',
+        'Ingredient 3 — Gravamen of Predicate Offence: The underlying activity forming the basis of the current charge must be punishable with imprisonment of 3 years or more (e.g. kidnapping, extortion, land-grabbing, contract killing, cyber-fraud).',
+        'Ingredient 4 — Means Employed: Evidence must establish the use of violence, threat of violence, intimidation, coercion, or other unlawful coercive methods.',
+        'Ingredient 5 — Material / Financial Benefit: The prosecution must establish that the criminal activity was directed toward securing a direct or indirect financial or material advantage.',
+      ],
+    },
     {
-      "id": "bns-111-dist",
-      "title": "BNS s. 111 and connected sections",
-      "left": "BNS s. 111",
-      "right": "BNS s. 112, BNS s. 113",
-      "rows": [
+      id: 'bns-111-module-4',
+      title: 'Evidentiary Burdens under BSA 2023 (ss. 104–106 & s. 63)',
+      order: 4,
+      content: [
+        'Burden of Proof (Section 104 BSA): The legal burden rests entirely on the prosecution to prove every gateway condition under Explanations (i), (ii), and (iii). The existence of prior chargesheets is a condition precedent to invoking Section 111.',
+        'Proof of Prior Chargesheets: Under Sections 74 and 77 BSA (public documents), certified copies of the prior chargesheets and cognizance orders must be formally produced and marked as exhibits through the judicial clerk or investigating officer.',
+        'Digital & Electronic Evidence (Section 63 BSA): In modern syndicate prosecutions involving cyber-crime, hawala, or encrypted communications, all digital evidence (call detail records, server logs, intercepted messaging exports) must strictly comply with Section 63 BSA and the Schedule (Parts A & B) hash verification (Arjun Khotkar standard).',
+        'Burden for Unaccounted Assets (Section 111(7) BNS): Where a person holds assets on behalf of a syndicate member, once the prosecution proves possession and syndicate connection, Section 106 BSA (facts especially within knowledge) shifts the evidential burden to the accused to satisfactorily account for the origin of those assets.',
+      ],
+    },
+    {
+      id: 'bns-111-module-5',
+      title: 'Procedural Roadmap, Competent Forum & Limitation Checkpoints',
+      order: 5,
+      content: [
+        'Competent Forum: Offences under Section 111(2)(a) (punishable with death or life imprisonment) and Section 111(2)(b) (five years to life) are exclusively triable by the Court of Session under the First Schedule to the Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS).',
+        'Temporal Window (10-Year Rule): The preceding ten-year period for qualifying chargesheets is calculated backward from the date of commission of the current alleged offence under Section 111.',
+        'Constitutional Bar on Retrospectivity (Article 20(1)): The substantive act of organised crime must have been committed on or after 1 July 2024. A prior criminal act committed under the IPC cannot be prosecuted as an offence under Section 111 BNS, though it can serve as a qualifying gateway chargesheet if filed within the 10-year window.',
+        'Bail & Discharge Roadmap: An accused can seek discharge under Section 250 BNSS (old s. 227 CrPC) if the prosecution fails to show two valid cognizance-backed chargesheets within the 10-year period, or if the individual has no demonstrable nexus with the syndicate.',
+      ],
+    },
+  ],
+
+  provisions: [
+    {
+      id: 'bns-111',
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-111',
+      section: 'Section 111',
+      title: 'Organised crime',
+    },
+    {
+      id: 'bns-112',
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-112',
+      section: 'Section 112',
+      title: 'Petty organised crime',
+    },
+    {
+      id: 'bns-61',
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-61',
+      section: 'Section 61',
+      title: 'Criminal conspiracy',
+    },
+    {
+      id: 'bsa-104',
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-104',
+      section: 'Section 104',
+      title: 'Burden of proof',
+    },
+    {
+      id: 'bnss-250',
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-250',
+      section: 'Section 250',
+      title: 'Discharge',
+    },
+  ],
+
+  examples: [
+    {
+      id: 'bns-111-ill-1',
+      title: 'Illustration 1 — Proving Conditions Met (Section 111 Applies & Conviction Follows)',
+      illustrationType: 'statutory',
+      description:
+        'A syndicate of four persons (the "Alpha Gang") operates an extortion and land-grabbing network in an industrial corridor. Between 2018 and 2023, police filed three separate chargesheets against the gang for extortion (Section 384/386 IPC) and armed kidnapping (Section 364A IPC), and the Chief Judicial Magistrate took cognizance in all three cases. In August 2024, the gang abducts a factory owner, issues ransom threats via VoIP calls, and extorts ₹50,00,000. All four members are arrested. The prosecution proves the existence of the syndicate, places certified copies of the three prior cognizance-backed chargesheets on record, and proves the current extortion for financial gain. The Court of Session rightly convicts the accused under Section 111(2)(b) BNS, sentencing each to life imprisonment and imposing the mandatory minimum fine of ₹5,00,000.',
+    },
+    {
+      id: 'bns-111-ill-2',
+      title: 'Illustration 2 — Boundary Defect / Gateway Failure (Section 111 Fails)',
+      illustrationType: 'fail-scenario',
+      description:
+        'An individual, Rajesh, is accused of committing armed robbery in November 2024. The prosecution invokes Section 111 BNS, claiming Rajesh is an organized criminal. To satisfy the continuing unlawful activity threshold, the police rely on: (a) a 2012 chargesheet for cheating (which falls outside the 10-year window); and (b) a 2022 FIR for theft in which investigation is still pending and no chargesheet has ever been filed. Furthermore, there is zero evidence connecting Rajesh to any syndicate of two or more persons; he acted as a lone operator. Defense counsel moves an application under Section 250 BNSS. Because there are not multiple qualifying chargesheets taken cognizance of within the preceding 10 years and no syndicate exists, the Section 111 charge collapses. The trial proceeds solely on the standalone robbery charge under Section 309 BNS.',
+    },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'bns-111-hypo',
+      title: 'Chamber Practice Hypothetical: Invocation of Section 111 on Unrelated Past Charges',
+      facts:
+        'In September 2024, the Special Cell of Police arrests three corporate executives—Arun, Bala, and Chetan—alleging they operated an "economic organised crime syndicate" that defrauded investors of ₹20 crores through a fake digital currency platform. The prosecution charges them under Section 111(2)(b) BNS. To establish "continuing unlawful activity" under Explanation (ii), the prosecution places on record: (1) a 2017 chargesheet against Arun for an individual cheque bounce dispute under Section 138 NI Act (which is a bailable complaint case carrying 2 years imprisonment); and (2) a 2020 chargesheet against Bala for criminal defamation under Section 500 IPC. Neither previous case involved Chetan, neither previous case carried imprisonment of 3 years or more, and neither case involved an organized gang or syndicated action. The accused have been remanded to judicial custody and file applications for discharge under Section 250 BNSS and for regular bail.',
+      question:
+        'As Senior Counsel appearing for Arun, Bala, and Chetan before the Sessions Court, formulate the legal grounds for discharge under Section 250 BNSS and establish why the invocation of Section 111 BNS is an abuse of statutory process.',
+      applicableLaw:
+        'Bharatiya Nyaya Sanhita, 2023, Section 111; BNSS 2023, Sections 250 & 483; Mahipal Singh v. CBI (2014) 11 SCC 282; State of Maharashtra v. Shiva @ Shivaji Ramaji Sonawane (2015) 14 SCC 272; Prasad Shrikant Purohit v. State of Maharashtra (2015) 7 SCC 440.',
+      analysis:
+        '1. Jurisdictional Incompetence of Prior Chargesheets: Explanation (ii) to Section 111(1) requires that the previous offences must be "cognizable offences punishable with imprisonment of three years or more". A Section 138 NI Act offence carries a maximum term of 2 years and is non-cognizable; Section 500 IPC carries 2 years and is non-cognizable. Neither offence meets the statutory gravity threshold of 3 years.\n2. Complete Absence of Syndicate Nexus: Under Mahipal Singh (2014) and Shiva @ Shivaji Ramaji Sonawane (2015), the previous chargesheets cannot be individual personal infractions; they must have been committed by or on behalf of an organized crime syndicate. Cheque bounce and personal defamation bear zero nexus to syndicated crime.\n3. Defect as to Collective Liability: No two chargesheets exist against any common syndicate. A solitary chargesheet against Arun and a solitary unrelated chargesheet against Bala cannot be aggregated to manufacture a "continuing unlawful activity" for Chetan or the group.\n4. Constitutional Protection against Malicious Invocation: The police cannot bypass ordinary cheating and fraud provisions (ss. 316/318 BNS) by mechanically stamping "Section 111" to deny bail and heighten prejudice.\n5. Relief: The Sessions Court must discharge the accused of Section 111 BNS under Section 250 BNSS and remit the case to the competent Magistrate under Section 251 BNSS for trial of the standalone economic offence.',
+      conclusion:
+        'The invocation of Section 111 BNS is void ab initio. The mandatory statutory gateways of Explanation (ii) are entirely absent. The accused are entitled to immediate discharge from Section 111 and the grant of regular bail.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'bns-111-dist-1',
+      title: 'Organised Crime (BNS s. 111) vs Petty Organised Crime (BNS s. 112)',
+      left: 'Section 111 BNS (Organised Crime)',
+      right: 'Section 112 BNS (Petty Organised Crime)',
+      rows: [
         {
-          "point": "Heading",
-          "left": "Organised crime",
-          "right": "Read the neighbour’s title on its own page before you write."
+          point: 'Nature of Offence',
+          left: 'High-level syndicated offences: extortion, contract killing, trafficking, cyber-fraud, land-grabbing.',
+          right: 'Street-level recurring crimes: theft, snatching, pickpocketing, card-skimming, ticket-touting.',
         },
         {
-          "point": "What you must prove",
-          "left": "(1) Any continuing unlawful activity including kidnapping, robbery, vehicle theft, extortion, land grabbing, contract killing, economic offence, cyber-crimes, trafficking of persons, drugs, weapons or illicit goods or services, human trafficking for prostitution or ransom, by any person or a group of persons acting in concert, singly or jointly, either as a member of an organised crime syndicate or on behalf of such syndicate, by use of violence, threat of violence, intimidation, coercion, or by any other unlawful means to obtain direct or indirect material benefit including a financial benefit, shall constitute organised crime",
-          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+          point: 'Gateway Threshold',
+          left: 'Strictly requires more than one chargesheet filed and taken cognizance of within the preceding 10 years.',
+          right: 'Does not require the formal 10-year / multiple chargesheet cognizance gateway.',
         },
         {
-          "point": "Practice trap",
-          "left": "Citing a neighbour as if it were s. 111.",
-          "right": "Citing s. 111 where the neighbour actually applies."
-        }
-      ]
-    }
-  ],
-  "misconceptions": [
-    {
-      "id": "bns-111-trap-1",
-      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
-      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 111."
+          point: 'Punishment Ceiling',
+          left: 'Death or imprisonment for life + fine not less than ₹10 lakh (or 5 years to life + ₹5 lakh fine).',
+          right: 'Imprisonment for 1 year to 7 years, and liable to fine.',
+        },
+        {
+          point: 'Competent Trial Forum',
+          left: 'Exclusively triable by Court of Session.',
+          right: 'Triable by Magistrate of the First Class.',
+        },
+      ],
     },
     {
-      "id": "bns-111-trap-2",
-      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
-      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+      id: 'bns-111-dist-2',
+      title: 'Organised Crime (BNS s. 111) vs Criminal Conspiracy (BNS s. 61)',
+      left: 'Section 111 BNS (Organised Crime)',
+      right: 'Section 61 BNS (Criminal Conspiracy)',
+      rows: [
+        {
+          point: 'Doctrinal Scope',
+          left: 'Requires an institutionalized, continuing syndicate and a track record of past qualifying chargesheets.',
+          right: 'Requires merely an agreement between two or more persons to commit an unlawful act, even on a single occasion.',
+        },
+        {
+          point: 'Material Benefit Nexus',
+          left: 'Statutorily requires proof of violence/coercion to obtain material or financial benefit.',
+          right: 'Applies to any unlawful act, regardless of whether any financial or material benefit was sought.',
+        },
+        {
+          point: 'Membership Offence',
+          left: 'Mere membership in the syndicate is punishable as a standalone substantive crime under s. 111(4).',
+          right: 'Conspiracy is tied to the specific agreed unlawful objective under s. 61(2).',
+        },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'bns-111-trap-1',
+      trap: 'Any gang that commits two or more crimes can be automatically booked under Section 111 BNS.',
+      correction:
+        'False. Explanation (ii) imposes strict statutory gateways: (a) each offence must be cognizable; (b) each must carry imprisonment of 3 years or more; (c) more than one chargesheet must have been filed within the preceding 10 years; and (d) a competent Court must have actively taken cognizance of those chargesheets. An ongoing investigation or an un-cognized FIR cannot satisfy the gateway.',
     },
     {
-      "id": "bns-111-trap-3",
-      "trap": "Giving a one-line summary or shortened explanation of the provision.",
-      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
-    }
-  ],
-  "questionsAndAnswers": [
-    {
-      "id": "bns-111-q-brief",
-      "draftingCategory": "brief",
-      "question": "Legal Assessment & Statutory Note: BNS s. 111 (Organised crime)",
-      "answer": "Introduction. BNS s. 111 deals with Organised crime. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Organised crime, new. A continuing unlawful activity — kidnapping, robbery, land-grabbing, contract killing, economic offences, cyber-crimes, trafficking — by a group or gang (syndicate) acting in concert. Death caused: death or life, and a fine of at least ₹10 lakh.\n\nLegal rule. In student language: BNS s. 111 is the rule on “Organised crime”. The section provides that (1) Any continuing unlawful activity including kidnapping, robbery, vehicle theft, extortion, land grabbing, contract killing, economic offence, cyber-crimes, trafficking of persons, drugs, weapons or illicit goods or services, human trafficking for prostitution or ransom, by any person or a group of persons acting in concert, singly or jointly, either as a member of an organised crime syndicate or on behalf of such syndicate, by use of violence, threat of violence, intimidation, coercion, or by any other unlawful means to obtain direct or indirect material benefit including a financial benefit, shall constitute organised crime. Do not stop at the heading. An examiner awards  for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Any continuing unlawful activity including kidnapping, robbery, vehicle theft, extortion, land grabbing, contract killing, economic offence, cyber-crimes, trafficking of persons, drugs, weapons or illicit goods or services, human trafficking for prostitution or ransom, by any person or a group of persons acting in concert, singly or jointly, either as a member of an organised crime syndicate or on behalf of such syndicate, by use of violence, threat of violence, intimidation, coercion, or by any other unlawful means to obtain direct or indirect material benefit including a financial benefit, shall constitute organised crime\n\nDefinitions. The core statutory definitions must be established:\n“organised crime syndicate” a group of two or more persons who, acting either singly or jointly, as a syndicate or gang indulge in any continuing unlawful activity. “continuing unlawful activity” an activity prohibited by law which is a cognizable offence punishable with imprisonment of three years or more, undertaken by any person, either singly or jointly, as a member of an organised crime syndicate or on behalf of such syndicate in respect of which more than one charge-sheets have been filed before a competent Court within the preceding period of ten years and that Court has taken cognizance of such offence, and includes economic offence. “economic offence” criminal breach of trust, forgery, counterfeiting of currency-notes, bank-notes and Government stamps, hawala transaction, mass-marketing fraud or running any scheme to defraud several persons or doing any act in any manner with a view to defraud any bank or financial institution or any other institution or organisation for obtaining monetary benefits in any form (2) Whoever commits organised crime shall,— (a) if such offence has resulted in the death of any person, be punished with death or imprisonment for life, and shall also be liable to fine which shall not be less than ten lakh rupees.\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—For the purposes of this sub-section,–– An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nExceptions / provisos. Provided that this sub-section shall not apply to any case in which the harbour or concealment is by the spouse of the offender State the exception and then say whether it is attracted on the facts.\n\nConsequence / punishment. Death/life + ≥ ₹10 lakh if death; else 5-to-life + ≥ ₹5 lakh.\n\nConnected sections. Read with BNS s. 112, BNS s. 113. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 111 is the complete current-law heading for Organised crime. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
-      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+      id: 'bns-111-trap-2',
+      trap: 'Prior chargesheets filed against an individual for unrelated personal crimes can be used to invoke Section 111.',
+      correction:
+        'False. In Mahipal Singh v. CBI (2014) and State of Maharashtra v. Shiva (2015), the Supreme Court ruled that the prior chargesheets must have been filed against the accused as a member of, or on behalf of, the organized crime syndicate. Unrelated personal disputes or lone-wolf offences do not count toward the syndicate threshold.',
     },
     {
-      "id": "bns-111-q-submissions",
-      "draftingCategory": "submissions",
-      "question": "Comprehensive Written Submissions: BNS s. 111 (Organised crime) with Statutory Scheme & Judicial Analysis",
-      "answer": "Introduction. BNS s. 111 deals with Organised crime. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Organised crime, new. A continuing unlawful activity — kidnapping, robbery, land-grabbing, contract killing, economic offences, cyber-crimes, trafficking — by a group or gang (syndicate) acting in concert. Death caused: death or life, and a fine of at least ₹10 lakh.\n\nLegal rule. In student language: BNS s. 111 is the rule on “Organised crime”. The section provides that (1) Any continuing unlawful activity including kidnapping, robbery, vehicle theft, extortion, land grabbing, contract killing, economic offence, cyber-crimes, trafficking of persons, drugs, weapons or illicit goods or services, human trafficking for prostitution or ransom, by any person or a group of persons acting in concert, singly or jointly, either as a member of an organised crime syndicate or on behalf of such syndicate, by use of violence, threat of violence, intimidation, coercion, or by any other unlawful means to obtain direct or indirect material benefit including a financial benefit, shall constitute organised crime. Do not stop at the heading. An examiner awards  for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Any continuing unlawful activity including kidnapping, robbery, vehicle theft, extortion, land grabbing, contract killing, economic offence, cyber-crimes, trafficking of persons, drugs, weapons or illicit goods or services, human trafficking for prostitution or ransom, by any person or a group of persons acting in concert, singly or jointly, either as a member of an organised crime syndicate or on behalf of such syndicate, by use of violence, threat of violence, intimidation, coercion, or by any other unlawful means to obtain direct or indirect material benefit including a financial benefit, shall constitute organised crime\n\nDefinitions. The core statutory definitions must be established:\n“organised crime syndicate” a group of two or more persons who, acting either singly or jointly, as a syndicate or gang indulge in any continuing unlawful activity. “continuing unlawful activity” an activity prohibited by law which is a cognizable offence punishable with imprisonment of three years or more, undertaken by any person, either singly or jointly, as a member of an organised crime syndicate or on behalf of such syndicate in respect of which more than one charge-sheets have been filed before a competent Court within the preceding period of ten years and that Court has taken cognizance of such offence, and includes economic offence. “economic offence” criminal breach of trust, forgery, counterfeiting of currency-notes, bank-notes and Government stamps, hawala transaction, mass-marketing fraud or running any scheme to defraud several persons or doing any act in any manner with a view to defraud any bank or financial institution or any other institution or organisation for obtaining monetary benefits in any form (2) Whoever commits organised crime shall,— (a) if such offence has resulted in the death of any person, be punished with death or imprisonment for life, and shall also be liable to fine which shall not be less than ten lakh rupees.\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExplanations. Explanation.—For the purposes of this sub-section,–– An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nExceptions / provisos. Provided that this sub-section shall not apply to any case in which the harbour or concealment is by the spouse of the offender State the exception and then say whether it is attracted on the facts.\n\nConsequence / punishment. Death/life + ≥ ₹10 lakh if death; else 5-to-life + ≥ ₹5 lakh.\n\nConnected sections. Read with BNS s. 112, BNS s. 113. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 111 is the complete current-law heading for Organised crime. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 111 with BNS s. 112, BNS s. 113. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 111.”",
-      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
-    }
+      id: 'bns-111-trap-3',
+      trap: 'Every member of a syndicate must have multiple prior chargesheets filed against them personally.',
+      correction:
+        'False. In Kavitha Lankesh v. State of Karnataka (2022) 12 SCC 753, the Supreme Court clarified that the requirement of multiple prior chargesheets attaches to the syndicate itself. Once the syndicate qualifies under the 10-year rule, a new recruit or facilitator who joins the gang and participates in the current offence can be indicted under Section 111 even if it is their first arrest.',
+    },
   ],
-  "cases": [],
-  "examTips": [
-    "Cite BNS s. 111 for offences on or after 1 July 2024.",
-    "Ingredients first, illustration second, application third, conclusion last.",
-    "111 is not “the new dacoity”. Dacoity is 310. 111 needs a continuing syndicate activity."
-  ],
-  "examFrameworks": [
+
+  cases: [
     {
-      "question": "Structured Legal Assessment: BNS s. 111 (Organised crime).",
-      "steps": [
-        "Introduce BNS s. 111 and Chapter VI — Of Offences Affecting the Human Body.",
-        "Define / state the meaning in your own words.",
-        "List the essential ingredients.",
-        "Give one labelled example and map it to an ingredient.",
-        "State the material explanation or exception.",
-        "Apply in four to six sentences.",
-        "Conclude with the current citation — BNS s. 111."
-      ]
+      name: 'State of Maharashtra v. Shiva @ Shivaji Ramaji Sonawane',
+      year: 2015,
+      citation: '(2015) 14 SCC 272',
+      court: 'Supreme Court of India',
+      bench: '2-Judge Bench (T.S. Thakur, C. Nagappan, JJ.)',
+      facts:
+        'The prosecution invoked organized crime provisions against multiple accused by aggregating individual chargesheets of gambling, theft, and assault filed across different police stations against individual accused persons.',
+      issue:
+        'Whether independent and unrelated chargesheets filed against individual members in their personal capacity can satisfy the statutory requirement of "continuing unlawful activity" of an organised crime syndicate.',
+      ratioDecidendi:
+        'To constitute "continuing unlawful activity", the previous chargesheets must have been filed against the accused in their capacity as members of an organized crime syndicate or on behalf of such a syndicate. Multiple individual offences bearing no nexus to the syndicate enterprise cannot be aggregated to invoke the organized crime statute.',
+      holding:
+        'Affirmed the High Court order discharging the accused from organized crime charges where the previous chargesheets lacked syndicate nexus.',
+      relevance:
+        'Leading authority on the requirement of demonstrable syndicate connection for all qualifying gateway chargesheets under Section 111 Explanation (ii).',
     },
     {
-      "question": "Comprehensive Chamber Written Submissions: BNS s. 111 with connected statutory scheme.",
-      "steps": [
-        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
-        "Place the section in the Chapter and explain why the heading exists.",
-        "Work a second hypothetical in which one ingredient fails.",
-        "Distinguish BNS s. 111 from BNS s. 112, BNS s. 113.",
-        "IRAC application to the problem facts.",
-        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
-        "Current-law conclusion."
-      ]
-    }
+      name: 'Mahipal Singh v. Central Bureau of Investigation',
+      year: 2014,
+      citation: '(2014) 11 SCC 282',
+      court: 'Supreme Court of India',
+      bench: '2-Judge Bench (P. Sathasivam, C.J., J. Chelameswar, J.)',
+      facts:
+        'In the Post Graduate Medical Entrance Examination paper-leak scam, the CBI invoked organized crime provisions against accused persons based on prior chargesheets in different states involving unrelated examination cheating scandals.',
+      issue:
+        'Whether the requirement of more than one chargesheet within ten years is satisfied when the previous chargesheets do not demonstrate a continuing syndicate nexus with the current offence.',
+      ratioDecidendi:
+        'The involvement of an accused in previous crimes is not sufficient per se. There must be an organized crime syndicate indulging in continuing unlawful activity, and the previous chargesheets must be an outgrowth of the activities of that very syndicate. The statute cannot be used as an omnibus weapon against disparate criminal acts.',
+      holding:
+        'Organized crime charges quashed where the nexus between the prior chargesheets and the alleged syndicate was not established.',
+      relevance:
+        'Critical authority for defense motions seeking discharge under Section 250 BNSS on the ground of disparate, unconnected prior charges.',
+    },
+    {
+      name: 'Kavitha Lankesh v. State of Karnataka',
+      year: 2022,
+      citation: '(2022) 12 SCC 753',
+      court: 'Supreme Court of India',
+      bench: '3-Judge Bench (A.M. Khanwilkar, Dinesh Maheshwari, C.T. Ravikumar, JJ.)',
+      facts:
+        'In the Gauri Lankesh assassination trial, organized crime provisions were invoked against an accused (Mohan Nayak) who facilitated the hideout and logistics for the hitmen. The High Court quashed the charge against him on the ground that multiple prior chargesheets did not exist against Mohan Nayak individually.',
+      issue:
+        'Whether an individual member or facilitator can be charged under organized crime provisions if they personally do not have more than one prior chargesheet filed against them within the preceding ten years.',
+      ratioDecidendi:
+        'The condition of more than one chargesheet within ten years applies to the organized crime syndicate as a collective entity, not to each individual member separately. Once the syndicate qualifies under the statutory definition, any person who subsequently joins, facilitates, or participates in the commission of an organized crime can be charged under Section 111 regardless of their individual past record.',
+      holding:
+        'Reversed the High Court judgment; restored the organized crime charges against the facilitator accused.',
+      relevance:
+        'Authoritative 3-Judge Bench ruling clarifying the collective attribution of prior chargesheets to the syndicate, establishing that new recruits and facilitators cannot escape Section 111 liability.',
+    },
+    {
+      name: 'Prasad Shrikant Purohit v. State of Maharashtra',
+      year: 2015,
+      citation: '(2015) 7 SCC 440',
+      court: 'Supreme Court of India',
+      bench: '2-Judge Bench (F.M. Ibrahim Kalifulla, Shiva Kirti Singh, JJ.)',
+      facts:
+        'In the 2008 Malegaon bomb blast case, an accused challenged the invocation of organized crime provisions on the ground that cognizance of the second chargesheet had not been taken on the date the blast occurred.',
+      issue:
+        'Whether taking of cognizance by a competent court on more than one chargesheet is a mandatory requirement, and at what point in time that requirement must be satisfied.',
+      ratioDecidendi:
+        'The filing of more than one chargesheet and the taking of cognizance by a competent court within the preceding ten years is an indispensable statutory condition precedent. If cognizance has not been taken in more than one chargesheet prior to the invocation of the organized crime enactment, the invocation is legally invalid.',
+      holding:
+        'Clarified the procedural mandate of judicial cognizance as an essential safeguard against arbitrary executive action under organized crime legislation.',
+      relevance:
+        'Mandatory citation establishing that mere filing of a chargesheet without a judicial order taking cognizance fails the gateway test of Section 111 Explanation (ii).',
+    },
   ],
-  "answerSkeleton": [
-    "Introduction — BNS s. 111, Organised crime.",
-    "Meaning and definition.",
-    "Ingredients.",
-    "Illustration mapped to an ingredient.",
-    "Explanation / exception.",
-    "Application (IRAC).",
-    "Conclusion and current citation."
+
+  questionsAndAnswers: [
+    {
+      id: 'bns-111-brief',
+      draftingCategory: 'brief',
+      question:
+        'Provide a structured Case Brief and legal problem assessment on the maintainability of a charge under BNS Section 111 (Organised Crime).',
+      answer: `I. ISSUE & JURISDICTIONAL THRESHOLD
+Whether the prosecution can lawfully frame a charge under Section 111(2)(b) BNS (Organised Crime) against the accused where: (a) one of the two relied-upon past chargesheets was filed 11 years prior to the alleged incident; and (b) the second chargesheet concerns an offence punishable with only two years imprisonment under Section 138 of the Negotiable Instruments Act.
+
+II. GOVERNING RULE & STATUTORY ANATOMY
+1. Section 111(1) BNS penalizes organized crime committed by a syndicate of two or more persons through violence, coercion, or unlawful means for material or financial gain.
+2. Explanation (ii) creates an inflexible four-fold statutory gateway for "continuing unlawful activity":
+   - The offence must be cognizable;
+   - The offence must carry punishment of imprisonment for 3 years or more;
+   - More than one chargesheet must have been filed within the preceding 10 years; and
+   - A competent court must have taken cognizance of those chargesheets.
+3. Controlling Precedents: Mahipal Singh (2014) 11 SCC 282 and Shiva @ Shivaji Ramaji Sonawane (2015) 14 SCC 272 mandate that prior chargesheets must have an established nexus with the organized crime syndicate and strictly meet the temporal and penalty criteria.
+
+III. APPLICATION TO FACTUAL DISPUTE
+1. Gateway 1 Defect (Temporal Bar): The first chargesheet falls outside the statutory 10-year window, having been filed 11 years ago. It cannot be counted toward the "more than one chargesheet" requirement.
+2. Gateway 2 Defect (Punishment & Cognizability Bar): Section 138 NI Act carries a maximum punishment of 2 years and is non-cognizable. It fails both the 3-year threshold and the cognizable offence threshold of Explanation (ii).
+3. Resulting Legal Position: There is not a single legally valid chargesheet satisfying Explanation (ii). The jurisdictional threshold to invoke Section 111 BNS is completely absent.
+
+IV. CONCLUSION & OPERATIVE ADVICE
+The charge under Section 111 BNS is legally unsustainable and void ab initio. The Sessions Court must grant the defense application for discharge under Section 250 BNSS, strike out the Section 111 charge, and remit the proceedings to the Magistrate for trial of any remaining standalone offences.`,
+      explanation: 'Formatted according to the IRAC method for comprehensive legal assessment.',
+    },
+    {
+      id: 'bns-111-submissions',
+      draftingCategory: 'submissions',
+      question:
+        'Draft comprehensive Written Submissions on behalf of the accused seeking discharge from charges under BNS Section 111 (Organised Crime) for failure of statutory gateways.',
+      answer: `IN THE COURT OF THE PRINCIPAL SESSIONS JUDGE AT HYDERABAD
+SESSIONS CASE NO. 108 OF 2025
+
+IN THE MATTER OF:
+STATE OF TELANGANA                        ... PROSECUTION
+VERSUS
+K. RAMESH & ORS.                         ... ACCUSED / APPLICANTS
+
+WRITTEN SUBMISSIONS ON BEHALF OF ACCUSED NO. 1 (K. RAMESH) IN SUPPORT OF APPLICATION FOR DISCHARGE UNDER SECTION 250 BNSS, 2023
+
+MOST RESPECTFULLY SHOWETH:
+
+I. STATEMENT OF MATERIAL FACTS & PROCEDURAL PROVENANCE
+1. The prosecution has filed a chargesheet indicting Accused No. 1 and three co-accused under Section 111(2)(b) of the Bharatiya Nyaya Sanhita, 2023 (BNS), alleging that the accused constituted an "organised crime syndicate" engaged in financial fraud.
+2. To satisfy the mandatory condition precedent of "continuing unlawful activity" under Section 111 Explanation (ii), the prosecution in the final report has placed reliance upon:
+   a. CC No. 204/2012 before the ACMM, Hyderabad under Section 420 IPC (cognizance taken in 2012, 12 years prior to the current FIR of August 2024); and
+   b. CC No. 512/2021 under Section 323/341 IPC (offences carrying a maximum sentence of 1 year and 1 month respectively).
+3. Accused No. 1 has filed an application under Section 250 BNSS praying for discharge on the ground that the jurisdictional pre-conditions of Section 111 are entirely missing from the record.
+
+II. STATUTORY SCHEME OF SECTION 111 BNS & INVIOLABILITY OF EXPLANATION (II)
+1. Section 111 is an extraordinary, severe penal provision carrying mandatory minimum sentences of five years extending to life imprisonment and massive fines. By statutory design, Parliament restricted its invocation through explicit, tightly-worded gateways.
+2. Under Explanation (ii) to Section 111(1), "continuing unlawful activity" is statutorily defined as:
+   "...an activity prohibited by law which is a cognizable offence punishable with imprisonment of three years or more, undertaken by any person, either singly or jointly, as a member of an organised crime syndicate or on behalf of such syndicate in respect of which more than one charge-sheets have been filed before a competent Court within the preceding period of ten years and that Court has taken cognizance of such offence..."
+3. Each and every element of this definition is cumulative and conjunctive. If any single ingredient fails, the Court lacks jurisdiction to frame a charge under Section 111.
+
+III. THE RELIED-UPON CHARGESHEETS FAIL EVERY STATUTORY THRESHOLD
+1. Total Temporal Failure (The 10-Year Rule):
+   - CC No. 204/2012 was chargesheeted and cognized in 2012.
+   - The present incident is alleged to have occurred in August 2024.
+   - The 10-year statutory window spans from August 2014 to August 2024.
+   - A chargesheet from 2012 is statutorily barred from consideration.
+2. Failure of the 3-Year Penalty Threshold:
+   - CC No. 512/2021 concerns Section 323 IPC (maximum 1 year) and Section 341 IPC (maximum 1 month).
+   - Explanation (ii) explicitly requires offences "punishable with imprisonment of three years or more".
+   - Minor offences cannot be converted into an organized crime foundation.
+3. Complete Absence of Multiple Gateway Chargesheets:
+   - Eliminating the 2012 case (time-barred) and the 2021 case (below 3 years), the prosecution is left with ZERO qualifying chargesheets.
+   - The requirement of "more than one charge-sheet" is an absolute condition precedent (Prasad Shrikant Purohit v. State of Maharashtra (2015) 7 SCC 440).
+
+IV. BINDING RATIO DECIDENDI OF SUPREME COURT AUTHORITIES
+1. In Mahipal Singh v. CBI (2014) 11 SCC 282, the Supreme Court unequivocally ruled that organized crime legislation cannot be applied unless the continuing unlawful activity is strictly demonstrated within the four corners of the statutory definition:
+   "The expression 'continuing unlawful activity' means more than one charge-sheet having been filed within the preceding ten years... It is only when the aforesaid ingredients are satisfied that the provisions can be invoked."
+2. In State of Maharashtra v. Shiva @ Shivaji Ramaji Sonawane (2015) 14 SCC 272, the Supreme Court held that the prosecution cannot inflate charges by aggregating individual, disparate offences lacking syndicate nexus.
+
+V. CONSTITUTIONAL SAFEGUARD UNDER ARTICLE 20(1)
+1. To subject an accused to trial for a heinous organized crime carrying life imprisonment where the statutory gateway is demonstrably unfulfilled constitutes a grave violation of personal liberty under Article 21 and the principle of legality.
+2. In the absence of a prima facie case fulfilling the statutory gateway, the Court has a mandatory duty under Section 250 BNSS to discharge the accused and not subject them to the harassment of an unmaintainable trial.
+
+VI. PRAYER
+Wherefore, in the light of the facts and binding legal authorities, Accused No. 1 most respectfully prays that this Hon'ble Court may graciously be pleased to:
+a. Allow the Application under Section 250 BNSS;
+b. Discharge Accused No. 1 from the charge under Section 111 of the Bharatiya Nyaya Sanhita, 2023; and
+c. Pass such further or other orders as this Hon'ble Court may deem fit and proper in the interest of justice.
+
+AND FOR THIS ACT OF JUSTICE, ACCUSED NO. 1 SHALL EVER PRAY.`,
+      explanation: 'Exhaustive courtroom written argument to Senior Counsel and Appellate standard.',
+    },
   ],
-  "revisionPoints": [
-    "BNS s. 111: Organised crime.",
-    "First ingredient: (1) Any continuing unlawful activity including kidnapping, robbery, vehicle theft, extortion, land grabbing, contract killing, economic offence, cyber-crimes, trafficking of persons, drugs, weapons or illicit goods or services, human trafficking for prostitution or ransom, by any person or a group of persons acting in concert, singly or jointly, either as a member of an organised crime syndicate or on behalf of such syndicate, by use of violence, threat of violence, intimidation, coercion, or by any other unlawful means to obtain direct or indirect material benefit including a financial benefit, shall constitute organised crime",
-    "No printed illustration — prepare an original labelled example.",
-    "For offences on or after 1 July 2024, the correct citation is BNS s. 111 — Organised crime. Do not guess an old Code number for this heading. Teaching flag: this heading is a new provision in the 2023 legislation. Do not invent a predecessor."
+
+  bareActPointers: [
+    'Section 111 BNS (Organised crime)',
+    'Section 112 BNS (Petty organised crime)',
+    'Section 61 BNS (Criminal conspiracy)',
+    'Section 104 BSA (Burden of proof)',
+    'Section 106 BSA (Burden of proving fact especially within knowledge)',
+    'Section 63 BSA (Admissibility of electronic records)',
+    'Section 250 BNSS (Discharge in Sessions trial)',
+    'Section 480 BNSS (Bail in non-bailable offences)',
+    'Section 483 BNSS (Special powers of High Court or Court of Session regarding bail)',
   ],
-  "relatedTopics": [
-    "s-112",
-    "s-113"
-  ]
-}
+
+  examTips: [
+    'Remember the 4-part gateway in s. 111 Explanation (ii): (1) Cognizable; (2) >= 3 years imprisonment; (3) > 1 chargesheet within 10 years; (4) Court has taken cognizance.',
+    'Do not confuse Section 111 (Organised Crime, Sessions triable, 10-year chargesheet gateway) with Section 112 (Petty Organised Crime, Magistrate triable, no 10-year gateway).',
+    'Under Kavitha Lankesh (2022), the multiple prior chargesheets must exist against the syndicate as an entity; new members who participate in the current crime can be charged even without personal prior chargesheets.',
+    'Note the marital exemption in the Proviso to Section 111(5): harbouring by a spouse is completely exempted from penal liability.',
+  ],
+
+  revisionPoints: [
+    'Governing Provision: Section 111 Bharatiya Nyaya Sanhita, 2023 (new central codification).',
+    'Core Definition: Continuing unlawful activity by 2+ persons (syndicate) using violence/coercion for material benefit.',
+    'Gateway Requirement: More than 1 chargesheet taken cognizance of for offences punishable with >= 3 years within preceding 10 years.',
+    'Key Punishments: Death or life + >= ₹10 lakh if death occurs; otherwise 5 years to life + >= ₹5 lakh.',
+    'Locus Classicus Authorities: Mahipal Singh (2014), Shiva Sonawane (2015), Kavitha Lankesh (2022), Prasad Shrikant Purohit (2015).',
+  ],
+
+  relatedTopics: [
+    's-112',
+    's-113',
+    's-61',
+  ],
+} satisfies TopicContent
 
 export default content
