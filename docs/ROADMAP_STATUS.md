@@ -20,7 +20,8 @@ A roadmap item is complete only when its required code/content/tests/verificatio
 **Phase 6 — CLOSED** (Judgment Compare exit audit, 2026-10-01)  
 **Phase 7 — CLOSED** (Case Preparation Workbench exit audit, 2026-10-01)  
 **Phase 8 — CLOSED** (Legal Draft Studio 2.0 exit audit, 2026-10-01)  
-**Phase 9 — CLOSED** (Filing and Court Checklist System exit audit, 2026-10-01)
+**Phase 9 — CLOSED** (Filing and Court Checklist System exit audit, 2026-10-01)  
+**Phase 10 — CLOSED** (Legal Calculators exit audit, 2026-10-01)
 
 ```
 Phase 0 stabilization
@@ -136,3 +137,20 @@ Implementation is complete in `codepackr-law` via PR #77.
 - Next: Phase 10 — Legal Calculators.
 
 **Phase 9 status:** CLOSED.
+
+
+## Phase 10 — Legal Calculators (CLOSED)
+
+Implementation is complete in `codepackr-law` via PR #78.
+
+- Deterministic Legal Calculators workspace added for date difference, simple/compound interest, deadline/notice arithmetic, MACT arithmetic, court-fee arithmetic and stamp-duty arithmetic.
+- Existing Limitation Calculator retained as the dedicated limitation worksheet.
+- Every calculator exposes formula, assumptions, legal basis, source and current-law/local-rule warning.
+- Court-fee and stamp-duty calculations use user-supplied rates rather than unsupported national/state schedules.
+- MACT remains an arithmetic worksheet and does not infer statutory entitlement or multiplier assumptions.
+- Exit audit: `docs/PHASE-10-EXIT-AUDIT.md`
+- Validation: CI #340 — TypeScript PASS, unit tests PASS, production build PASS.
+- Blocker: None.
+- Next: Phase 11 — BNS / BNSS / BSA Transition Centre.
+
+**Phase 10 status:** CLOSED.

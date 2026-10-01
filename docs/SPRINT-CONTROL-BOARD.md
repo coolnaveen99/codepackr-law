@@ -2,8 +2,8 @@
 
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
-**Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** · Phase 4 — **CLOSED** · Phase 5 — **CLOSED** · Phase 6 — **CLOSED** · Phase 7 — **CLOSED** · Phase 8 — **CLOSED** · Phase 9 — **CLOSED**  
-**Updated:** 2026-10-01 (PH9 COMPLETED — Filing and Court Checklist System exit audit closed)
+**Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** · Phase 4 — **CLOSED** · Phase 5 — **CLOSED** · Phase 6 — **CLOSED** · Phase 7 — **CLOSED** · Phase 8 — **CLOSED** · Phase 9 — **CLOSED** · Phase 10 — **CLOSED**  
+**Updated:** 2026-10-01 (PH10 COMPLETED — Legal Calculators exit audit closed)
 
 ## Verified completed
 
@@ -41,6 +41,8 @@
 | PH8-100 | Phase 8 exit audit | **COMPLETED** | P0 |
 | PH9-010 | Filing and Court Checklist System implementation | **COMPLETED** | P0 |
 | PH9-100 | Phase 9 exit audit | **COMPLETED** | P0 |
+| PH10-010 | Legal Calculators implementation | **COMPLETED** | P1 |
+| PH10-100 | Phase 10 exit audit | **COMPLETED** | P1 |
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
 
 ### PH4-040 — COMPLETED (2026-10-01)\n\n**Validation evidence:** PR #68 branch CI run **#297** passed TypeScript validation, **113/113 unit tests**, and production build. Official e-SCR, SCR, SCI, and eCourts destinations were checked against current official portals. A prior CI run (#293) caught a type-export regression; the fix was validated by run #295 (lint/build pass) and final run #297 (full gate pass).
@@ -214,3 +216,27 @@
 
 **Blocker:** None.  
 **Next action:** Phase 10 — Legal Calculators.
+
+
+## Phase 10 — Legal Calculators — COMPLETED (2026-10-01)
+
+**Implementation:** PR #78  
+**Exit audit:** `docs/PHASE-10-EXIT-AUDIT.md`  
+**Validation:** CI **#340** — TypeScript PASS, unit tests PASS, production build PASS.
+
+| Check | Result |
+|---|---|
+| Limitation Calculator retained | **PASS** |
+| Date Difference | **PASS** |
+| Simple + Compound Interest | **PASS** |
+| Deadline / Appeal / Revision worksheet | **PASS** |
+| Notice Period arithmetic | **PASS** |
+| MACT arithmetic worksheet | **PASS** |
+| Court-fee reference arithmetic | **PASS** — user-supplied rate |
+| Stamp-duty reference arithmetic | **PASS** — user-supplied rate |
+| Formula + assumptions + legal basis + source + warning | **PASS** |
+| Privacy/mobile/accessibility | **PASS** |
+| TypeScript/tests/build | **PASS** — CI #340 |
+
+**Blocker:** None.  
+**Next action:** Phase 11 — BNS / BNSS / BSA Transition Centre.

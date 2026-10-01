@@ -46,6 +46,7 @@ import { JudgmentCompare } from './components/tools/JudgmentCompare'
 import { CasePrepWorkbench } from './components/tools/CasePrepWorkbench'
 import { FilingChecklists } from './components/tools/FilingChecklists'
 import { LimitationCalculator } from './components/tools/LimitationCalculator'
+import { LegalCalculators } from './components/tools/LegalCalculators'
 import { TransitionCentre } from './components/tools/TransitionCentre'
 import { CaseBriefBuilder } from './components/tools/CaseBriefBuilder'
 import { StudyPlanner } from './components/tools/StudyPlanner'
@@ -463,6 +464,7 @@ export default function App() {
               {activeTool.slug === 'case-prep' && <CasePrepWorkbench />}
               {activeTool.slug === 'filing-checklists' && <FilingChecklists />}
               {activeTool.slug === 'limitation-calculator' && <LimitationCalculator />}
+              {activeTool.slug === 'legal-calculators' && <LegalCalculators />}
               {activeTool.slug === 'transition-centre' && <TransitionCentre />}
               {activeTool.slug === 'case-brief-builder' && <CaseBriefBuilder />}
               {activeTool.slug === 'study-planner' && <StudyPlanner />}
