@@ -171,10 +171,22 @@ export function researchNoteFromSession(session: ResearchSession): string {
     '## 4. Authorities',
     ...session.authorities
       .filter((r) => r.caseName || r.citation)
-      .map(
-        (r, i) =>
-          `${i + 1}. ${r.caseName || 'Unnamed'} | ${r.court} | ${r.citation} | ${r.statute} | Issue: ${r.issue} | Holding: ${r.holding} | Status: ${r.verification}`,
-      ),
+      .map((r, i) => {
+        const parts = [
+          `${i + 1}. ${r.caseName || 'Unnamed'}`,
+          r.court || '',
+          r.date ? `Date: ${r.date}` : '',
+          r.citation || '',
+          r.statute || '',
+          r.issue ? `Issue: ${r.issue}` : '',
+          r.holding ? `Holding: ${r.holding}` : '',
+          r.paragraph ? `Para: ${r.paragraph}` : '',
+          r.treatment ? `Treatment: ${r.treatment}` : '',
+          r.source ? `Source: ${r.source}` : '',
+          `Status: ${r.verification}`,
+        ].filter(Boolean)
+        return parts.join(' | ')
+      }),
     '',
     '## 5. Analysis',
     session.analysis || '—',
