@@ -241,6 +241,6 @@ Implemented the roadmap §22 AI architecture contract without adding a productio
 - Exit audit: `docs/PHASE-17-EXIT-AUDIT.md`.
 - CI/build: **PASS** — CI #374 (TypeScript, unit tests, production build)..
 
-**Phase 17 status:** CLOSED pending merge verification.
+**Phase 17 status:** CLOSED.
 
 **Next:** Phase 18 — Legal Content Verification.
