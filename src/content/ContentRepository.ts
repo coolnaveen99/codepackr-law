@@ -43,6 +43,15 @@ export function topicFileIdCandidates(subjectSlug: string, topicId: string): str
   } else {
     push(`${subjectSlug}-${topicId}`)
   }
+  // Catalog ↔ canonical filename aliases (legal-content paths)
+  if (subjectSlug === 'tort' || subjectSlug === 'torts') {
+    if (topicId === 'tort-definition' || topicId === 'definition' || topicId === 'tort-nature-definition') {
+      push('nature-definition')
+    }
+    if (topicId === 'nature-definition') {
+      push('tort-definition')
+    }
+  }
   return out
 }
 

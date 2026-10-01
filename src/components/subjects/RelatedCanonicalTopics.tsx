@@ -5,6 +5,7 @@ import {
   getRelatedEntityIds,
   getRelatedTopicIds,
 } from '../../content/ContentGateway'
+import { canonicalTopicId } from '../../content/ContentRepository'
 import {
   hrefForCanonicalTopicId,
   parseCanonicalTopicId,
@@ -75,7 +76,7 @@ export function RelatedCanonicalTopics({
 
     let cancelled = false
     setLoading(true)
-    const canonicalId = `topic:india:${subjectSlug}-${topicId}`
+    const canonicalId = canonicalTopicId(subjectSlug, topicId)
 
     ;(async () => {
       const edges = await getRelatedEntityIds(canonicalId)
