@@ -3,7 +3,7 @@
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
 **Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** · Phase 4 implementation started  
-**Updated:** 2026-10-01 (PH4-030 COMPLETED — document citation extractor)
+**Updated:** 2026-10-01 (PH4-040 COMPLETED — independently validated)
 
 ## Verified completed
 
@@ -16,6 +16,7 @@
 | PH4-010 | **COMPLETED** | Extended parser for SCC OnLine, Neutral citations, & volume-less formats |
 | PH4-020 | **COMPLETED** | Verification engine matching against canonical manifest & `ALL_JUDGMENTS` |
 | PH4-030 | **COMPLETED** | Document multi-citation extractor (`extractCitationsFromDocument`) + Verifier document sample + tests |
+| PH4-040 | **COMPLETED** | Authority network & official portal link generator (e-SCR, SCR search, SCI judgments, expanded HC map, eCourts, India Code) |
 
 ## Current sprint backlog
 
@@ -25,25 +26,26 @@
 | PH4-010 | Extended parser for SCC OnLine, Neutral citations, & volume-less formats | **COMPLETED** | P0 |
 | PH4-020 | Verification engine matching against canonical manifest & `ALL_JUDGMENTS` | **COMPLETED** | P0 |
 | PH4-030 | Document citation extractor (multi-citation scanner for pasted text) | **COMPLETED** | P0 |
-| PH4-040 | Authority network & official portal link generator (e-SCR, SCI, HC) | **BACKLOG** | P1 |
+| PH4-040 | Authority network & official portal link generator (e-SCR, SCI, HC) | **COMPLETED** | P1 |
 | PH4-050 | Citation Verifier UI overhaul: dashboard, filtering, & Workbench roundtrip | **BACKLOG** | P1 |
 | PH4-100 | Phase 4 exit audit (evaluation against criteria V1–V10) | **BACKLOG** | P0 |
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
 
-### PH4-030 — COMPLETED (2026-10-01)
+### PH4-040 — COMPLETED (2026-10-01)\n\n**Validation evidence:** PR #68 branch CI run **#297** passed TypeScript validation, **113/113 unit tests**, and production build. Official e-SCR, SCR, SCI, and eCourts destinations were checked against current official portals. A prior CI run (#293) caught a type-export regression; the fix was validated by run #295 (lint/build pass) and final run #297 (full gate pass).
 
 | Check | Result |
 |-------|--------|
-| Continuous prose multi-citation scan | **Yes** (`scanDocumentCitationSpans` + `extractCitationsFromDocument`) |
-| Case-name prefix attachment | **Yes** (look-behind for `X v. Y` before reporter span) |
-| Deduplication | **Yes** (`normalizeCitationKey`) |
-| Line-list fallback | **Yes** (when no reporter spans found) |
-| Verification engine integration | **Yes** (`verifyCitationListSync` uses document extractor) |
-| Citation Verifier UI | **Yes** ("Load document extract" sample + updated placeholder) |
-| Unit tests | PH4-030 cases in `tests/citation-parser.test.ts` |
-| Privacy | 100% client-side string scan |
+| e-SCR + SCR search + SCI judgments portals | **Yes** (`resolveOfficialSources` / Authority Network) |
+| Expanded High Court registry map (25+ benches) | **Yes** (`HIGH_COURT_URL_MAP`) |
+| eCourts Services + India Code always present | **Yes** |
+| Matched primary source URL preference | **Yes** (`matchedOfficialUrl`) |
+| False-positive SC detection fixed (no bare `sc` trap) | **Yes** (`isSupremeCourtHint`) |
+| URL deduplication | **Yes** |
+| Integration with verification engine | **Yes** (`buildSources` on all status paths) |
+| Unit tests | `npm run test:run` in CI run **#297** — **113/113 pass**, 0 fail |
+| TypeScript + build | CI run **#297** — `npm run lint` PASS; `npm run build` PASS |\n| Privacy | 100% client-side link generation; no network calls |
 
 ## Next READY
 
-**PH4-040** — Authority network & official portal link generator (e-SCR, SCI, HC) (P1).  
-Also scheduled: **PH4-050** (UI overhaul, P1), **PH4-100** (exit audit, P0), **PA-005b** (CDN mirror, P2).
+**PH4-050** — Citation Verifier UI overhaul: dashboard, filtering, & Workbench roundtrip (P1).  
+Also scheduled: **PH4-100** (exit audit, P0), **PA-005b** (CDN mirror, P2).

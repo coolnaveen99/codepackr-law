@@ -25,11 +25,11 @@ import { ALL_JUDGMENTS } from '../data/judgments'
 import type { Judgment } from '../data/judgments/types'
 import { getContentRepository, getCanonicalEntity } from '../content/ContentGateway'
 
-export interface OfficialSourceLink {
-  name: string
-  url: string
-  type: 'official-court' | 'india-code' | 'escr' | 'open-portal'
-}
+import { resolveOfficialSources, type OfficialSourceLink } from './authorityNetwork'
+
+export { resolveOfficialSources } from './authorityNetwork'
+
+export type { CitationStatus, CitationStyle } from './citationParser'
 
 export interface MatchedRecord {
   id: string
@@ -65,73 +65,6 @@ export interface VerifiedCitation {
   matchedRecord?: MatchedRecord
   notes: string[]
   officialSources: OfficialSourceLink[]
-}
-
-const HIGH_COURT_URL_MAP: Record<string, string> = {
-  DEL: 'https://delhihighcourt.nic.in/',
-  DHC: 'https://delhihighcourt.nic.in/',
-  BOM: 'https://bombayhighcourt.nic.in/',
-  CAL: 'https://www.calcuttahighcourt.gov.in/',
-  MAD: 'https://hcmadras.tn.gov.in/',
-  ALL: 'https://www.allahabadhighcourt.in/',
-  AHC: 'https://www.allahabadhighcourt.in/',
-  KER: 'https://highcourtofkerala.nic.in/',
-  GUJ: 'https://gujarathighcourt.nic.in/',
-  KAR: 'https://karnatakahihecourt.kar.nic.in/',
-  PAT: 'https://patnahighcourt.gov.in/',
-  RAJ: 'https://hcraj.nic.in/',
-  PNH: 'https://highcourtchd.gov.in/',
-  'P&H': 'https://highcourtchd.gov.in/',
-  PHHC: 'https://highcourtchd.gov.in/',
-}
-
-export function resolveOfficialSources(
-  courtHint?: string,
-  neutralCourt?: string
-): OfficialSourceLink[] {
-  const sources: OfficialSourceLink[] = []
-
-  const isSupremeCourt =
-    !courtHint ||
-    courtHint.toLowerCase().includes('supreme') ||
-    neutralCourt?.toUpperCase() === 'INSC' ||
-    courtHint.toLowerCase().includes('sc')
-
-  if (isSupremeCourt) {
-    sources.push({
-      name: 'Supreme Court e-SCR (Digital SCR)',
-      url: 'https://escr.sci.gov.in/',
-      type: 'escr',
-    })
-    sources.push({
-      name: 'Supreme Court of India (Official Portal)',
-      url: 'https://www.sci.gov.in/',
-      type: 'official-court',
-    })
-  }
-
-  const benchKey = (neutralCourt || '').toUpperCase()
-  if (benchKey && HIGH_COURT_URL_MAP[benchKey]) {
-    sources.push({
-      name: `${benchKey} High Court Official Registry`,
-      url: HIGH_COURT_URL_MAP[benchKey],
-      type: 'official-court',
-    })
-  } else if (courtHint && !isSupremeCourt) {
-    sources.push({
-      name: 'eCourts Services India',
-      url: 'https://services.ecourts.gov.in/',
-      type: 'official-court',
-    })
-  }
-
-  sources.push({
-    name: 'India Code (Digital Repository of Acts)',
-    url: 'https://www.indiacode.nic.in/',
-    type: 'india-code',
-  })
-
-  return sources
 }
 
 function cleanTokens(str: string): string[] {
