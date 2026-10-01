@@ -1,48 +1,452 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
 const content: TopicContent = {
-  "glance": "BSA s. 104 places the legal burden on the person who asks the Court to give judgment on a right or liability dependent on facts asserted by that person. It is the starting rule for allocating the legal burden; distinguish it from evidential onus, presumptions, standard of proof and the special-knowledge rule in s. 109. Historical concordance: Indian Evidence Act s. 101.",
-  "study": "CURRENT LAW\nBSA s. 104 states the general burden rule: the person seeking judgment on a legal right or liability dependent on asserted facts must prove those facts. The statutory illustrations cover both criminal and civil claims. The rule must be read with ss. 105–110 and the statutory presumptions elsewhere in the Adhiniyam. India Code places s. 104 in Chapter VII, Burden of Proof.\n\nLEGAL BURDEN, EVIDENTIAL ONUS AND STANDARD\nThe legal burden is the ultimate obligation allocated by law. The evidential onus concerns the obligation to produce sufficient evidence to answer a prima facie case or activate a statutory presumption. The standard is the degree of persuasion required: in ordinary civil adjudication, proof is on the balance of probabilities; in criminal prosecution, guilt must ordinarily be proved beyond reasonable doubt, while a statutory exception or reverse-onus provision operates only according to its terms and after its legal foundation is established. Do not collapse these concepts.\n\nAPPLICATION METHOD\n1. Identify the precise right, liability, offence, defence or exception for which judgment is sought. 2. Identify the facts asserted as the foundation of that proposition. 3. Place the initial legal burden under s. 104. 4. Check s. 105 for the person who would fail if no evidence were given, then the connected allocation rules in ss. 106–110. 5. Identify any statutory presumption and the facts required before it arises. 6. Determine the applicable standard and whether the onus has shifted on the evidential record. 7. Keep admissibility, credibility and final weight separate from burden allocation.\n\nSPECIAL KNOWLEDGE\nSection 109 deals with facts especially within a person's knowledge. It is not a substitute for proving the prosecution's or claimant's foundational case and does not create an unrestricted reverse burden. The Court should identify the specific fact said to be within special knowledge and ask whether the opposing party has first established the factual platform on which the rule operates.\n\nELECTRONIC EVIDENCE\nSection 63 concerns admissibility of electronic records. A s. 63 certificate or other statutory foundation addresses the route by which an electronic record is received; it does not itself prove every fact asserted in the record. Authenticity, source, integrity, custody, relevance and probative weight remain separate questions.\n\nTRANSITION\nFor proceedings to which the current BSA applies, cite BSA provisions. Section 170 must be checked where the repeal-and-savings provision preserves application of the former Indian Evidence Act to an existing proceeding. The historical section number is concordance, not the current rule for a new BSA proceeding.",
-  "sections": [
-    {"id":"bsa-104-module-1","title":"General Rule and Legal Burden","order":1,"content":["Section 104 allocates the legal burden to the person seeking judgment on a legal right or liability dependent on facts asserted by that person.","The burden attaches to the proposition for which judgment is sought; it is not a general requirement that one party prove every fact in the case.","The statutory illustrations show the rule operating in both criminal and civil settings."]},
-    {"id":"bsa-104-module-2","title":"Burden, Onus, Presumptions and Standards","order":2,"content":["Distinguish legal burden from evidential onus: the former is the ultimate allocation; the latter may move during trial as evidence and presumptions change the evidential position.","Distinguish burden allocation from the standard of proof. Civil proof ordinarily operates on probabilities; criminal guilt ordinarily requires proof beyond reasonable doubt.","A statutory presumption can alter the evidential position only according to its terms; identify its foundation before describing any shift."]},
-    {"id":"bsa-104-module-3","title":"Connected Allocation Rules","order":3,"content":["Read s. 104 with s. 105 and the succeeding provisions on particular facts, exceptions and special knowledge.","Where an accused relies on a statutory exception, analyse the exact statutory language and the governing burden rule rather than assuming either a complete prosecution burden or an unlimited reverse burden.","Section 109 concerns facts especially within knowledge and must not be used to fill a foundational evidentiary gap in the opposing party's case."]},
-    {"id":"bsa-104-module-4","title":"Trial Application and Digital Evidence","order":4,"content":["First identify the ultimate proposition, then the facts needed to establish it, then the party bearing the legal burden.","For electronic material, s. 63 governs its statutory admissibility route; burden of proof under s. 104 remains a separate question.","At final judgment, distinguish admissibility, credibility, corroboration, burden, standard and probative weight."]},
-    {"id":"bsa-104-module-5","title":"Submissions, Transition and Error Control","order":5,"content":["A written submission should state the proposition, allocation rule, evidence supporting it, any statutory presumption, applicable standard and the consequence of the evidential record.","Do not say that a shifting evidential onus permanently transfers the legal burden unless the governing law actually provides for that result.","Check s. 170 for saved proceedings and use the former Evidence Act number only as historical concordance."]}
+  glance:
+    'Section 104 BSA establishes the foundational statutory rule governing the allocation of the legal burden of proof (onus probandi): whoever desires any Court to give judgment as to any legal right or liability dependent on facts asserted by that person must prove that those facts exist. It anchors Chapter VII of the Adhiniyam, establishing the permanent persuasive burden that never shifts, sharply distinguished from the shifting evidential onus, statutory presumptions, standards of proof, and the special knowledge doctrine under Section 109.',
+
+  study: `I. LEGISLATIVE SCHEME & HISTORICAL PROVENANCE
+Section 104 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA) stands at the threshold of Chapter VII ("Of the Burden of Proof", Sections 104 to 120). It directly replaces Section 101 of the repealed Indian Evidence Act, 1872. The provision gives statutory expression to two venerable common law maxims:
+1. Semper necessitas probandi incumbit ei qui agit: The necessity of proof always lies with him who brings the charge or makes the claim.
+2. Affirmanti non neganti incumbit probatio: The burden of proving a fact rests upon the party who affirms it, not upon the party who denies it.
+
+The section consists of two sentences: the first imposes the primary obligation to prove asserted facts whenever judicial relief is sought; the second creates the statutory definition: "When a person is bound to prove the existence of any fact, it is said that the burden of proof lies on that person." Section 104 applies universally to civil actions and criminal prosecutions alike, though the consequences and quantum of proof required are fundamentally differentiated by the governing standard of proof.
+
+II. THE RAGHAVAMMA DICHOTOMY: LEGAL BURDEN VS. EVIDENTIAL ONUS
+In the landmark Constitution Bench decision in Addagada Raghavamma v. Anchalu Chenchamma AIR 1964 SC 136, Subba Rao, J. authoritatively established the conceptual duality underlying Indian evidence law:
+1. Legal Burden (Persuasive Burden / Burden of Establishing the Case):
+   - Defined as the ultimate obligation imposed by substantive law and pleadings to establish a legal right, liability, or guilt.
+   - It is static and fixed at the inception of the proceedings.
+   - It NEVER SHIFTS during the trial. If, at the close of evidence, the party bearing the legal burden has failed to satisfy the requisite standard of persuasion, the court must decide the issue against that party.
+2. Evidential Onus (Burden of Adducing Evidence / Tactical Burden):
+   - Defined as the procedural duty of producing evidence at a given stage of the proceeding to support or rebut a proposition of fact.
+   - Unlike the legal burden, the evidential onus swings like a pendulum from one side to the other.
+   - When the party bearing the legal burden adduces prima facie evidence sufficient to establish their proposition, or when a statutory presumption arises, the evidential onus shifts to the adversary to introduce rebuttal evidence or accept an adverse inference.
+
+This dichotomy was further crystallized by the Supreme Court in Narayan Govind Gavate v. State of Maharashtra (1977) 1 SCC 133 and Anil Rishi v. Gurbaksh Singh (2006) 5 SCC 558: confusing the shifting evidential onus with the unyielding legal burden is an error of law that vitiates the trial court's judgment.
+
+III. STANDARDS OF PROOF & CONSTITUTIONAL IMPERATIVES
+The legal burden under Section 104 BSA operates under two distinct evidentiary standards:
+1. The Criminal Standard — Proof Beyond Reasonable Doubt:
+   - In criminal trials, the "golden thread" of jurisprudence (Woolmington v. DPP [1935] AC 462; Kali Ram v. State of Himachal Pradesh (1973) 2 SCC 808) dictates that the prosecution carries the unwavering legal burden of proving every single ingredient of the offence beyond reasonable doubt.
+   - Suspicion, however grave, cannot substitute for legal proof (Sarwan Singh v. State of Punjab AIR 1957 SC 637).
+   - This standard is constitutionally anchored in fair procedure under Article 21. If the prosecution fails to establish a complete and unbroken evidentiary chain, the benefit of doubt belongs as of right to the accused.
+2. The Civil Standard — Preponderance of Probabilities:
+   - In civil litigation, the court adjudicates upon the balance or preponderance of probabilities (N.G. Dastane v. S. Dastane (1975) 2 SCC 326). The court weighs the rival evidence and determines which version is more likely to be true.
+3. The Defence Standard under Section 108 BSA (Statutory Exceptions):
+   - When an accused relies on General Exceptions under the Bharatiya Nyaya Sanhita, 2023 (e.g. insanity under s. 22, private defence under ss. 34-44) or a special proviso, Section 108 BSA places the burden of proving that exception upon the accused.
+   - Crucially, the Supreme Court in Dahyabhai Chhaganbhai Thakkar v. State of Gujarat AIR 1964 SC 1563 and Vijayee Singh v. State of U.P. (1990) 3 SCC 190 held that the accused does NOT have to prove the exception beyond reasonable doubt. The accused satisfies the burden on the lower civil standard of a preponderance of probabilities, or by casting a reasonable doubt on the prosecution case.
+
+IV. INTERPLAY WITH CONNECTED PROVISIONS IN CHAPTER VII
+Section 104 must be read as part of an integrated statutory sequence:
+1. Section 105 BSA (On Whom Burden Lies): Codifies the classic negative test: the burden of proof in any suit or proceeding lies on that person who would fail if no evidence at all were given on either side.
+2. Section 106 BSA (Burden as to Particular Fact): The burden of proving any particular fact lies on that person who wishes the court to believe in its existence, unless provided otherwise by law.
+3. Section 107 BSA (Fact to be Proved to Make Evidence Admissible): The party wishing to introduce secondary evidence (e.g. proving that an original deed has been destroyed) bears the burden of establishing the foundational predicate.
+4. Section 109 BSA (Facts Especially Within Knowledge):
+   - Directly replaces Section 106 of the 1872 Act: when any fact is especially within the knowledge of any person, the burden of proving that fact is upon him.
+   - Bound by strict judicial limits: In Shambhu Nath Mehra v. State of Ajmer AIR 1956 SC 404 and Trimukh Maroti Kirkan v. State of Maharashtra (2006) 10 SCC 681, the Supreme Court authoritatively held that Section 109 BSA cannot be used to relieve the prosecution of its foundational burden under Section 104. The prosecution must first establish a prima facie case pointing strongly towards guilt. Only then does the failure of the accused to offer an explanation of facts especially known to them (e.g. what transpired inside a closed matrimonial dwelling) become an additional link in the chain.
+
+V. DIGITAL EVIDENCE, FORENSIC PROOF & TRANSITIONAL APPLICATION
+1. Discharging the Burden with Electronic Evidence (Section 63 BSA):
+   - In modern civil and criminal disputes, asserting facts under Section 104 frequently requires adducing digital records (emails, server logs, CCTV, CDRs, WhatsApp messages).
+   - Under Section 63 BSA, electronic records are inadmissible as secondary evidence unless accompanied by the mandatory certificate under Section 63(4).
+   - Tendering an electronic record without the statutory certificate means that the document cannot be read in evidence, resulting in a failure to discharge the legal burden under Section 104 (Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal (2020) 7 SCC 1).
+   - Furthermore, admissibility under Section 63 does not automatically establish authenticity or truth of the contents; credibility and weight remain distinct judicial inquiries.
+2. Transitional Application (Section 170 BSA):
+   - Under Section 170(2) BSA, the provisions of the Adhiniyam apply to all proceedings instituted on or after 1 July 2024. For pending inquiries and trials commenced prior to 1 July 2024, the Indian Evidence Act, 1872 remains applicable by virtue of the savings clause.
+   - In current BSA proceedings, pleadings and arguments must cite Section 104 BSA; Section 101 of the 1872 Act is historical concordance only.`,
+
+  sections: [
+    {
+      id: 'bsa-104-module-1',
+      title: 'Legislative Scheme, Latin Maxims & Chapter VII Architecture',
+      order: 1,
+      content: [
+        'Section 104 BSA codifies the foundational rule of evidence law: whoever desires any Court to give judgment as to any legal right or liability dependent on facts asserted by that person must prove that those facts exist.',
+        'The provision codifies two ancient maxims: semper necessitas probandi incumbit ei qui agit (the necessity of proof lies upon the party asserting the claim) and affirmanti non neganti incumbit probatio (proof lies upon the one who affirms, not the one who denies).',
+        'Section 104 anchors Chapter VII ("Of the Burden of Proof", ss. 104-120), providing the benchmark against which all succeeding procedural, particular-fact, and presumptive rules must be measured.',
+        'The statutory illustrations show the rule operating in both civil recovery/ownership disputes and criminal prosecutions for murder, establishing its universal applicability across all judicial proceedings.',
+      ],
+    },
+    {
+      id: 'bsa-104-module-2',
+      title: 'The Raghavamma Dichotomy: Legal Burden vs. Evidential Onus',
+      order: 2,
+      content: [
+        'In Addagada Raghavamma v. Anchalu Chenchamma AIR 1964 SC 136, the Constitution Bench authoritatively bifurcated "burden of proof" into two distinct legal concepts: the legal burden and the evidential onus.',
+        'The Legal Burden (persuasive burden) is the permanent obligation to establish the case as fixed by substantive law and pleadings. It is static, immutable, and NEVER SHIFTS throughout the trial.',
+        'The Evidential Onus (burden of adducing evidence) is the tactical duty of introducing evidence at a particular stage. It swings like a pendulum between the parties as prima facie evidence is led or presumptions arise.',
+        'As confirmed in Narayan Govind Gavate (1977) and Anil Rishi (2006), confusing the shifting evidential onus with the permanent legal burden is an error of law that invalidates the judgment.',
+      ],
+    },
+    {
+      id: 'bsa-104-module-3',
+      title: 'Standards of Proof: Beyond Reasonable Doubt vs. Preponderance of Probabilities',
+      order: 3,
+      content: [
+        'The Criminal Standard: The prosecution carries the legal burden under Section 104 to prove every ingredient of the offence beyond reasonable doubt (Kali Ram v. State of H.P. (1973) 2 SCC 808). Suspicion or moral conviction cannot replace legal evidence (Sarwan Singh (1957)).',
+        'The Civil Standard: Civil claims and defences are adjudicated upon the preponderance of probabilities (N.G. Dastane v. S. Dastane (1975) 2 SCC 326), where the court determines which party’s version is more probable.',
+        'Defence Burden under Section 108 BSA: When an accused pleads a General Exception under the BNS (e.g. insanity, self-defence), the burden of proof is upon the accused.',
+        'However, under Dahyabhai Chhaganbhai Thakkar AIR 1964 SC 1563 and Vijayee Singh (1990) 3 SCC 190, the accused need only satisfy the burden on a preponderance of probabilities, or create a reasonable doubt in the prosecution case.',
+      ],
+    },
+    {
+      id: 'bsa-104-module-4',
+      title: 'The Interplay with Sections 105–109 BSA & The Special Knowledge Boundary',
+      order: 4,
+      content: [
+        'Section 105 BSA provides the operative test: the burden lies upon that person who would fail if no evidence at all were given on either side.',
+        'Section 106 BSA allocates the burden of proving any particular fact to the person who asserts its existence.',
+        'Section 109 BSA (Facts Especially Within Knowledge) replaces Section 106 of the 1872 Act. In Shambhu Nath Mehra AIR 1956 SC 404, the Supreme Court held that Section 109 is an exception to general rules and cannot be used to relieve the prosecution of proving foundational facts.',
+        'In matrimonial or custodial homicides (Trimukh Maroti Kirkan (2006) 10 SCC 681), Section 109 is triggered only after the prosecution proves that the deceased was last seen alive in the exclusive custody/company of the accused inside a private dwelling.',
+      ],
+    },
+    {
+      id: 'bsa-104-module-5',
+      title: 'Electronic Evidence (s. 63), Forensic Burdens & Section 170 Transition',
+      order: 5,
+      content: [
+        'Digital Records under Section 63 BSA: A party seeking to discharge its Section 104 burden by tendering electronic records (CDRs, CCTV, emails) must produce the mandatory certificate under Section 63(4) BSA.',
+        'Under Arjun Panditrao Khotkar (2020) 7 SCC 1, electronic secondary evidence without the Section 63(4) certificate is legally inadmissible, leading to failure of the evidentiary onus.',
+        'Admissibility vs. Probative Weight: Satisfying Section 63 merely permits the electronic document to be received in evidence; proof of its truth, authenticity, and weight remains subject to ordinary Section 104 proof.',
+        'Transitional Savings under Section 170 BSA: Proceedings initiated post-1 July 2024 are governed exclusively by BSA 2023. Section 101 of the 1872 Act is historical concordance only.',
+      ],
+    },
   ],
-  "provisions":[
-    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-104","section":"s. 104","title":"Burden of proof"},
-    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-105","section":"s. 105","title":"On whom burden of proof lies"},
-    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-109","section":"s. 109","title":"Burden of proving fact especially within knowledge"},
-    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-63","section":"s. 63","title":"Admissibility of electronic records"},
-    {"actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-170","section":"s. 170","title":"Repeal and savings"}
+
+  provisions: [
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-104',
+      section: 's. 104',
+      title: 'Burden of proof',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-105',
+      section: 's. 105',
+      title: 'On whom burden of proof lies',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-106',
+      section: 's. 106',
+      title: 'Burden of proof as to particular fact',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-108',
+      section: 's. 108',
+      title: 'Burden of proving that case of accused comes within exceptions',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-109',
+      section: 's. 109',
+      title: 'Burden of proving fact especially within knowledge',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-63',
+      section: 's. 63',
+      title: 'Admissibility of electronic records',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-170',
+      section: 's. 170',
+      title: 'Repeal and savings',
+    },
   ],
-  "examples":[
-    {"id":"bsa-104-ill-1","title":"Claim to land","illustrationType":"statutory-practical","description":"A claimant asks the Court to declare an entitlement to land based on asserted facts that the defendant denies. Under s. 104, the claimant must establish the facts on which the requested judgment depends."},
-    {"id":"bsa-104-ill-2","title":"Criminal charge","illustrationType":"statutory-practical","description":"A person asks the Court to punish an accused for an offence said to have been committed. The prosecution must establish the facts necessary for the judgment; later evidential rules and statutory presumptions must be analysed separately."}
+
+  examples: [
+    {
+      id: 'bsa-104-ill-1',
+      title: 'Civil Title Suit — Unyielding Legal Burden vs Shifting Onus',
+      illustrationType: 'statutory-practical',
+      description:
+        'Plaintiff P files a civil suit seeking a declaration of ownership and recovery of possession of immovable property, asserting title under a registered sale deed executed by the admitted original owner. Under Section 104 BSA, P carries the legal burden of proving the valid execution and registration of the sale deed. P produces the registered deed and examines an attesting witness. At this stage, P has discharged the evidential onus. The evidential onus now shifts to defendant D, who asserts that the deed was obtained by coercion and fraud. Under Section 106 BSA, D must prove fraud; if D produces no evidence, P succeeds under Section 105 BSA. However, if the court finds the deed forged on its face, the ultimate legal burden remains on P, and the suit must fail.',
+    },
+    {
+      id: 'bsa-104-ill-2',
+      title: 'Criminal Trial — Illegitimate Attempt to Invert Burden via Special Knowledge',
+      illustrationType: 'fail-scenario',
+      description:
+        'The prosecution charges accused A with housebreaking and theft of gold ornaments from an apartment. The only evidence presented by the prosecution is that A was seen walking on the public road outside the apartment complex around 10:00 PM. The prosecution invokes Section 109 BSA, contending that where A went and what A did that night is a fact "especially within A’s knowledge", and therefore A must prove A did not enter the apartment. The trial court rejects the prosecution contention: under Section 104 BSA, the prosecution carries the unwavering burden to prove that A entered the apartment and took the ornaments beyond reasonable doubt. Section 109 cannot be invoked to bridge the complete absence of foundational evidence.',
+    },
   ],
-  "hypotheticals":[
-    {"id":"bsa-104-hypo","title":"Chamber Problem: Foundation, Onus and Special Knowledge","facts":"A prosecution proves that an accused was present at a location but relies on s. 109 to demand an explanation for a separate fact said to be especially within the accused's knowledge. The defence argues that the prosecution has not first proved the elements of the offence.","question":"How should the Court allocate the legal burden and any evidential onus?","applicableLaw":"BSA ss. 104, 105, 109 and any offence-specific statutory presumption; constitutional fair-trial principles where applicable.","analysis":"Start with the elements of the charge and s. 104. Identify what the prosecution has independently established. Only then identify whether a particular remaining fact falls within s. 109. Do not convert special knowledge into a general reverse burden. Apply the applicable criminal standard to the prosecution's case and the governing rule to any statutory exception or presumption.","conclusion":"The burden analysis must be proposition-specific. Section 109 may address a fact genuinely within special knowledge, but it does not dispense with proof of the foundational elements of the charge."}
+
+  hypotheticals: [
+    {
+      id: 'bsa-104-hypo',
+      title: 'Chamber Practice Hypothetical: Matrimonial Homicide, Section 104 vs Section 109 BSA',
+      facts:
+        'A married woman is found dead due to asphyxia caused by manual strangulation inside the matrimonial bedroom at 6:00 AM. Her husband (H) and his parents reside in the house. The medical officer opines that death occurred between 1:00 AM and 3:00 AM. In his statement under Section 351 BNSS (old s. 313 CrPC), H offers a bare denial and claims unknown intruders broke in, though no signs of forced entry were found and nothing was stolen. The prosecution relies on Section 104 read with Section 109 BSA to argue that because H was sleeping in the same bedroom, the cause of death is especially within his knowledge, and his failure to explain gives rise to an irresistible presumption of guilt. The defence contends that the prosecution has not established that H was present in the bedroom at the time of death and cannot use Section 109 to substitute for proof of guilt under Section 104.',
+      question:
+        'How should Senior Counsel analyse the interplay between the prosecution’s legal burden under Section 104 BSA and the special knowledge rule under Section 109 BSA on this evidentiary record?',
+      applicableLaw:
+        'BSA ss. 104, 105, 109; BNSS s. 351; Supreme Court rulings in Shambhu Nath Mehra (1956), Trimukh Maroti Kirkan (2006), and Nagendra Sah v. State of Bihar (2021) 10 SCC 725.',
+      analysis:
+        '1. The Prosecution’s Primary Legal Burden (Section 104 BSA): Under Section 104 BSA, the prosecution carries the unyielding legal burden of proving homicidal death and connecting H to the act beyond reasonable doubt. The prosecution must first establish foundational facts: (a) homicidal death inside the matrimonial home; (b) that H was present in the house and shared the bedroom with the deceased on the fateful night; and (c) the absence of any third-party intrusion.\n2. The Threshold Trigger for Section 109 BSA: Section 109 BSA is not an independent source of criminal liability. As held in Shambhu Nath Mehra (1956) and Nagendra Sah (2021), Section 109 cannot be invoked to relieve the prosecution of establishing a prima facie case. However, once the prosecution proves that the deceased died an unnatural death inside a locked or private matrimonial bedroom where H was present, the foundational platform is laid.\n3. The Shifting Evidential Onus: When the foundational platform is established, the evidential onus shifts to H under Section 109 BSA to provide an explanation as to what transpired, because the events inside a private bedroom at night are especially within the knowledge of the spouse.\n4. Effect of a False or Absent Explanation: Under Trimukh Maroti Kirkan (2006), if the husband offers no plausible explanation or tenders an explanation that is demonstrably false (such as an alleged break-in with no forced entry), that failure supplies an additional, potent link in the circumstantial chain, completing the proof beyond reasonable doubt under Section 104 BSA.',
+      conclusion:
+        'If the prosecution independently proves H was present in the bedroom that night, the legal burden under Section 104 BSA is successfully discharged in conjunction with H’s failure to explain under Section 109 BSA. If the prosecution fails to prove H’s presence at the scene, Section 109 cannot be invoked, and H is entitled to acquittal under Section 104.',
+    },
   ],
-  "distinctions":[
-    {"id":"bsa-104-distinction","title":"Legal burden versus evidential onus","left":"Legal burden","right":"Evidential onus","rows":[{"point":"Nature","left":"Ultimate allocation fixed by law","right":"May move as the evidential record develops"},{"point":"Question","left":"Who must ultimately establish the proposition?","right":"Who must presently answer the evidential case or activate/displace a presumption?"},{"point":"Effect","left":"Failure can determine the ultimate issue","right":"Failure may leave a prima facie case unanswered without necessarily reallocating the ultimate legal burden"}]}
+
+  distinctions: [
+    {
+      id: 'bsa-104-dist-1',
+      title: 'Legal Burden (Persuasive Burden) vs. Evidential Onus (Tactical Burden)',
+      left: 'Legal Burden (Section 104 BSA)',
+      right: 'Evidential Onus (Section 105 BSA)',
+      rows: [
+        {
+          point: 'Definition',
+          left: 'Obligation to establish the ultimate case as fixed by substantive law and pleadings',
+          right: 'Duty to produce sufficient evidence at a given stage to create or rebut a prima facie case',
+        },
+        {
+          point: 'Shifting Nature',
+          left: 'Static, immutable, and NEVER SHIFTS throughout the entire trial',
+          right: 'Dynamic and swings like a pendulum from one side to the other as evidence unfolds',
+        },
+        {
+          point: 'Consequence of Non-Discharge',
+          left: 'Determines the final outcome: failure results in dismissal of suit or acquittal of accused',
+          right: 'Results in an intermediate procedural disadvantage or the arising of an adverse inference',
+        },
+        {
+          point: 'Governing Benchmark',
+          left: 'Substantive law, charge framed, and fundamental standard of persuasion',
+          right: 'Section 105 test: who would fail if no further evidence were adduced right now',
+        },
+      ],
+    },
+    {
+      id: 'bsa-104-dist-2',
+      title: 'Section 104 BSA (General Burden) vs Section 109 BSA (Special Knowledge)',
+      left: 'Section 104 BSA',
+      right: 'Section 109 BSA',
+      rows: [
+        {
+          point: 'Scope & Operation',
+          left: 'General rule governing the proof of all asserted facts necessary for judgment',
+          right: 'Special exception governing only facts especially within the personal knowledge of a person',
+        },
+        {
+          point: 'Prosecution Duty',
+          left: 'Mandatory obligation to prove all essential ingredients beyond reasonable doubt',
+          right: 'Does not relieve prosecution of primary burden; operates only after prima facie case is proved',
+        },
+        {
+          point: 'Constitutional Standard',
+          left: 'Enforces Article 21 presumption of innocence and golden thread of criminal jurisprudence',
+          right: 'Evidentiary common-sense rule preventing impossible burdens of negative proof on outsider',
+        },
+      ],
+    },
   ],
-  "misconceptions":[
-    {"id":"bsa-104-trap-1","trap":"Burden of proof and onus of proof are always identical.","correction":"Keep the ultimate legal burden separate from the evidential onus that can shift during a trial."},
-    {"id":"bsa-104-trap-2","trap":"Section 109 lets the prosecution avoid proving its case.","correction":"Special knowledge is fact-specific and does not erase the foundational burden on the party asserting the legal proposition."},
-    {"id":"bsa-104-trap-3","trap":"Admissibility of a record proves the fact recorded.","correction":"Admissibility permits consideration; proof, credibility and weight remain separate inquiries."}
+
+  misconceptions: [
+    {
+      id: 'bsa-104-trap1',
+      trap: 'The burden of proof and the onus of proof are interchangeable concepts in Indian trial practice.',
+      correction:
+        'In Addagada Raghavamma (1964) and Anil Rishi (2006), the Supreme Court ruled that burden of proof (legal burden) and onus of proof (evidential onus) are fundamentally distinct. The legal burden never shifts; the evidential onus shifts as prima facie evidence is introduced.',
+    },
+    {
+      id: 'bsa-104-trap2',
+      trap: 'Section 109 BSA (special knowledge) relieves the prosecution of proving its case in criminal trials.',
+      correction:
+        'In Shambhu Nath Mehra (1956) and Nagendra Sah (2021), the Supreme Court authoritatively held that Section 109 BSA cannot be used to bridge a gap in the prosecution case. The prosecution must first establish a complete prima facie case before any explanation is demanded from the accused.',
+    },
+    {
+      id: 'bsa-104-trap3',
+      trap: 'An accused relying on a General Exception under Section 108 BSA must prove it beyond reasonable doubt.',
+      correction:
+        'Under Dahyabhai Chhaganbhai Thakkar (1964) and Vijayee Singh (1990), an accused pleading insanity, self-defence, or any general exception satisfies the burden under Section 108 BSA on a mere preponderance of probabilities, or by casting a reasonable doubt on the prosecution case.',
+    },
+    {
+      id: 'bsa-104-trap4',
+      trap: 'Tendering a digital record under Section 63 BSA automatically proves the truth of the facts stated in it.',
+      correction:
+        'Section 63 BSA governs statutory admissibility. Admissibility is merely the threshold gate for receiving the document; proving the truth, authenticity, and weight of the facts recorded still requires discharging the legal burden under Section 104.',
+    },
   ],
-  "cases":[
-    {"name":"Kali Ram v. State of Himachal Pradesh","year":1973,"citation":"(1973) 2 SCC 808","court":"Supreme Court of India","facts":"The Court considered the criminal standard and the significance of reasonable doubt.","issue":"How should the criminal burden operate where the evidence leaves a reasonable doubt?","ratioDecidendi":"The prosecution must establish guilt beyond reasonable doubt; a reasonable doubt arising from the evidence must operate in favour of the accused.","holding":"The Court emphasised the high criminal standard and the danger of conviction on conjecture.","relevance":"Use for the standard attached to the prosecution's legal burden, while keeping statutory presumptions and exceptions separately analysed."},
-    {"name":"Shambhu Nath Mehra v. State of Ajmer","year":1956,"citation":"AIR 1956 SC 404","court":"Supreme Court of India","facts":"The Court considered the former special-knowledge rule in a criminal prosecution.","issue":"Whether a special-knowledge provision can be used as a substitute for the prosecution's foundational proof.","ratioDecidendi":"The special-knowledge rule does not relieve the prosecution of proving the facts constituting the offence; it applies to facts particularly within the person's knowledge.","holding":"The Court confined the special-knowledge rule to its proper evidentiary field.","relevance":"Historical authority for the proposition now reflected in BSA s. 109; cite the current BSA provision for current proceedings."}
+
+  cases: [
+    {
+      name: 'Addagada Raghavamma v. Anchalu Chenchamma',
+      year: 1964,
+      citation: 'AIR 1964 SC 136',
+      court: 'Supreme Court of India',
+      holding:
+        'Constitution Bench ruling establishing the classic distinction between burden of proof and onus of proof: the legal burden of establishing a case remains permanently on the party asserting it and never shifts, whereas the evidential onus of adducing evidence shifts from stage to stage during trial.',
+      relevance:
+        'The foundational locus classicus on Section 104 BSA allocation of burden.',
+    },
+    {
+      name: 'Kali Ram v. State of Himachal Pradesh',
+      year: 1973,
+      citation: '(1973) 2 SCC 808',
+      court: 'Supreme Court of India',
+      holding:
+        'Reaffirmed the golden thread of criminal jurisprudence: the prosecution carries the unwavering legal burden under Section 104 to prove guilt beyond reasonable doubt; if two reasonable views are possible, the view favourable to the accused must prevail.',
+      relevance:
+        'Mandatory citation in criminal appeals challenging convictions resting on speculative inferences.',
+    },
+    {
+      name: 'Shambhu Nath Mehra v. State of Ajmer',
+      year: 1956,
+      citation: 'AIR 1956 SC 404',
+      court: 'Supreme Court of India',
+      holding:
+        'Held that the special knowledge provision (now s. 109 BSA) is not intended to relieve the prosecution of the duty to prove its case. It is designed to meet exceptional situations where it is impossible for the prosecution to establish facts especially known only to the accused.',
+      relevance:
+        'The primary shield against improper prosecution reliance on Section 109 BSA.',
+    },
+    {
+      name: 'Dahyabhai Chhaganbhai Thakkar v. State of Gujarat',
+      year: 1964,
+      citation: 'AIR 1964 SC 1563',
+      court: 'Supreme Court of India',
+      holding:
+        'Deconstructed the burden of proof when the accused pleads insanity or general exceptions: the prosecution legal burden never shifts, but the accused satisfies Section 108 BSA by establishing a preponderance of probabilities or raising a reasonable doubt as to mens rea.',
+      relevance:
+        'Foundational authority on the differential standards of proof for prosecution vs defence under BSA Chapter VII.',
+    },
+    {
+      name: 'Trimukh Maroti Kirkan v. State of Maharashtra',
+      year: 2006,
+      citation: '(2006) 10 SCC 681',
+      court: 'Supreme Court of India',
+      holding:
+        'Operationalized the interplay between Section 104 and Section 109 BSA in custodial and matrimonial homicides: once the prosecution establishes that the victim died an unnatural death inside a private residence in the exclusive presence of the accused, the evidential onus shifts to the accused to explain.',
+      relevance:
+        'Leading authority on circumstantial burden-shifting in closed-dwelling offences.',
+    },
+    {
+      name: 'Anil Rishi v. Gurbaksh Singh',
+      year: 2006,
+      citation: '(2006) 5 SCC 558',
+      court: 'Supreme Court of India',
+      holding:
+        'Held that in civil suits alleging forgery or fraud, the initial legal burden under Section 104 rests strictly on the party asserting fraud; the court cannot place the burden on the defendant to prove the negative without foundational evidence.',
+      relevance:
+        'Authoritative ruling on burden allocation in civil disputes involving registered deeds and alleged undue influence.',
+    },
   ],
-  "questionsAndAnswers":[
-    {"id":"bsa-104-brief","draftingCategory":"brief","question":"Prepare a Senior Counsel brief on BSA s. 104.","answer":"ISSUE: Identify the legal right, liability, offence, defence or exception for which judgment is sought. RULE: BSA s. 104 places the legal burden on the person seeking judgment on asserted facts; read it with ss. 105–110 and any specific statutory presumption. APPLICATION: identify each proposition, its supporting evidence, the evidential onus and the applicable standard. SPECIAL KNOWLEDGE: apply s. 109 only to a specific fact genuinely within special knowledge after the necessary foundation. CONCLUSION: state which propositions have or have not been established and why."},
-    {"id":"bsa-104-submissions","draftingCategory":"submissions","question":"Draft written submissions on BSA s. 104.","answer":"I. PROPOSITION AND RELIEF SOUGHT\nIdentify the exact judgment sought.\n\nII. STATUTORY ALLOCATION\nApply BSA s. 104 and the connected burden provisions.\n\nIII. EVIDENTIAL RECORD\nSeparate admissibility, credibility and probative weight from allocation of burden.\n\nIV. PRESUMPTIONS / SPECIAL KNOWLEDGE\nIdentify the statutory foundation before relying on any presumption or s. 109.\n\nV. STANDARD AND CONCLUSION\nApply the correct civil or criminal standard and state the precise consequence of the evidential record."}
+
+  questionsAndAnswers: [
+    {
+      id: 'bsa-104-brief',
+      draftingCategory: 'brief',
+      question:
+        'Prepare an IRAC Legal Case Brief on the statutory allocation of the legal burden of proof under BSA Section 104, deconstructing the Raghavamma dichotomy, standard of proof, and interaction with Section 109 BSA.',
+      answer: `I. ISSUE & JURISDICTIONAL THRESHOLD
+Whether the trial court erred in law by shifting the ultimate legal burden of proof onto the defendant/accused under the guise of an evidential onus or the special knowledge doctrine under Section 109 BSA, contrary to the statutory mandate of Section 104 BSA. Forum: Trial Court or Appellate Court hearing civil/criminal appeals.
+
+II. GOVERNING RULE & STATUTORY ANATOMY
+1. Section 104 BSA: Mandates that whoever desires any Court to give judgment as to any legal right or liability dependent on facts asserted by that person must prove that those facts exist.
+2. The Raghavamma Principle (AIR 1964 SC 136): The legal burden of establishing the case is fixed by substantive law and pleadings and never shifts throughout the trial. The evidential onus (burden of adducing evidence) swings like a pendulum as prima facie evidence or statutory presumptions are introduced.
+3. Standard of Persuasion: In criminal cases, the prosecution must prove guilt beyond reasonable doubt (Kali Ram (1973)); in civil cases, the standard is preponderance of probabilities (Dastane (1975)); the defence proving statutory exceptions under s. 108 BSA requires only a preponderance of probabilities (Dahyabhai (1964)).
+4. The Section 109 Boundary: Section 109 BSA applies only to facts especially within knowledge after the party asserting the claim has independently established a complete foundational prima facie case (Shambhu Nath Mehra (1956)).
+
+III. APPLICATION TO FACTUAL DISPUTE
+- Step 1: Identify the substantive proposition and the party seeking relief. Place the permanent legal burden on that party under Section 104 BSA.
+- Step 2: Test whether the asserting party has discharged the initial evidential onus under Section 105 BSA. If digital evidence is tendered, verify Section 63(4) BSA compliance. Absent certification, the evidential onus remains undischarged.
+- Step 3: If the adversary invokes Section 109 BSA, test whether the foundational facts are proved. Reject any reverse burden if the asserting party has not proved its primary case.
+- Step 4: If an exception under Section 108 BSA is raised, apply the civil standard (preponderance of probabilities) to the defence evidence.
+
+IV. CONCLUSION & OPERATIVE ADVICE
+Advise counsel to raise a formal plea on burden allocation. In appellate briefs, challenge any finding where the trial court drew an adverse inference against the accused/defendant before the prosecution/claimant discharged its initial legal burden. Emphasize that a weakness in the defence case can never convert into affirmative proof for the prosecution under Section 104 BSA.`,
+      explanation:
+        'Senior Counsel IRAC brief on Section 104 BSA burden of proof and Raghavamma dichotomy.',
+      relatedProvisionIds: ['bsa-104', 'bsa-105', 'bsa-108', 'bsa-109', 'bsa-63'],
+    },
+    {
+      id: 'bsa-104-submissions',
+      draftingCategory: 'submissions',
+      question:
+        'Draft comprehensive Appellate Written Submissions challenging a criminal conviction where the trial court erroneously inverted the burden of proof under Section 104 BSA by misapplying Section 109 BSA.',
+      answer: `IN THE HIGH COURT OF JUDICATURE AT [JURISDICTION]
+CRIMINAL APPEAL NO. [____] OF 202[ ]
+IN THE MATTER OF:
+APPELLANT                                                   ... APPELLANT
+VERSUS
+STATE OF [STATE]                                            ... RESPONDENT
+
+WRITTEN SUBMISSIONS ON BEHALF OF THE APPELLANT CHALLENGING ERRONEOUS INVERSION OF BURDEN OF PROOF UNDER SECTION 104 BSA READ WITH SECTION 109 BSA
+
+MOST RESPECTFULLY SHOWETH:
+
+I. STATEMENT OF RELEVANT FACTS & PROCEDURAL PROVENANCE
+1. The Appellant stands convicted under Section 103(1) of the Bharatiya Nyaya Sanhita, 2023 (BNS), for the alleged murder of his business associate.
+2. The prosecution case rests entirely on circumstantial evidence. The deceased was found dead in an open agricultural field adjacent to the Appellant’s factory.
+3. The learned Sessions Judge convicted the Appellant solely on the ground that the Appellant failed to offer an explanation as to where he was on the night of the incident, holding under Section 109 BSA that his whereabouts were "especially within his knowledge".
+
+II. PERMANENCE OF THE LEGAL BURDEN UNDER SECTION 104 BSA
+4. The impugned judgment commits a grave error of law by subverting the foundational rule codified in Section 104 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA).
+5. In Addagada Raghavamma v. Anchalu Chenchamma AIR 1964 SC 136 and Kali Ram v. State of H.P. (1973) 2 SCC 808, the Supreme Court ruled that the legal burden of establishing every ingredient of the offence beyond reasonable doubt rests permanently on the prosecution and NEVER SHIFTS.
+6. The prosecution produced no forensic evidence, no recovery of weapon, and no eyewitness linking the Appellant to the crime. A conviction cannot be sustained on moral suspicion (Sarwan Singh AIR 1957 SC 637).
+
+III. MISAPPLICATION & DISTORTION OF SECTION 109 BSA
+7. The trial court’s invocation of Section 109 BSA to convict the Appellant is contrary to the binding Constitution Bench ruling in Shambhu Nath Mehra v. State of Ajmer AIR 1956 SC 404:
+   - Section 109 BSA is not intended to relieve the prosecution of its duty to establish a complete prima facie case under Section 104.
+   - Section 109 operates only when the prosecution has proved facts pointing irresistibly to guilt (Nagendra Sah v. State of Bihar (2021) 10 SCC 725).
+8. The open field where the body was discovered was accessible to the general public. The doctrine of exclusive custody established in Trimukh Maroti Kirkan (2006) 10 SCC 681 has no application to an open, public field. The Appellant had no legal duty to prove an alibi until the prosecution placed him at the scene of the crime.
+
+IV. INADMISSIBILITY OF UNVERIFIED CDR EVIDENCE UNDER SECTION 63 BSA
+9. The prosecution sought to support its case through Call Detail Records (CDRs) alleging phone calls between the Appellant and deceased.
+10. However, the prosecution failed to produce the mandatory certificate under Section 63(4) BSA. Under Arjun Panditrao Khotkar (2020) 7 SCC 1, electronic secondary evidence without the Section 63(4) certificate is legally inadmissible and cannot be relied upon to discharge the Section 104 burden.
+
+PRAYER
+Wherefore, in light of the above facts, statutory scheme, and binding authorities, it is respectfully prayed that this Hon’ble Court may graciously be pleased to:
+(a) Allow the Criminal Appeal and set aside the impugned judgment of conviction and sentence;
+(b) Acquit the Appellant of all charges under Section 103(1) BNS; and
+(c) Direct the immediate release of the Appellant from judicial custody.
+
+FILED BY:
+[COUNSEL FOR THE APPELLANT]
+ADVOCATE`,
+      explanation:
+        'Senior Counsel appellate written submissions demonstrating illegal inversion of burden under Section 104/109 BSA.',
+      relatedProvisionIds: ['bsa-104', 'bsa-105', 'bsa-109', 'bsa-63', 'bns-103'],
+    },
   ],
-  "bareActPointers":["BSA s. 104","BSA ss. 105–110","BSA s. 109","BSA s. 63 where electronic records are involved","BSA s. 170"],
-  "examTips":["Start with the proposition for which judgment is sought.","Separate legal burden, evidential onus and standard of proof.","Never use s. 109 as a substitute for foundational proof.","For current proceedings cite BSA; use the former Evidence Act section only as concordance or under s. 170."],
-  "revisionPoints":["s. 104 = general legal burden.","s. 105 = who would fail if no evidence were given.","Special statutory presumptions must be analysed by their own terms.","s. 109 is fact-specific special knowledge, not an unlimited reverse burden."]
+
+  bareActPointers: [
+    'BSA s. 104: General rule on burden of proof (onus probandi)',
+    'BSA s. 105: On whom burden of proof lies (failure test if no evidence given)',
+    'BSA s. 106: Burden of proof as to particular fact',
+    'BSA s. 108: Burden on accused to prove general exceptions or provisos',
+    'BSA s. 109: Burden of proving fact especially within knowledge (special knowledge boundary)',
+    'BSA s. 63(4): Mandatory certificate for discharging burden using electronic records',
+    'BSA s. 170(2): Repeal and savings (BSA applies to proceedings commenced on or after 1 July 2024)',
+  ],
+
+  examTips: [
+    'Always distinguish the legal burden (s. 104, static, never shifts) from the evidential onus (s. 105, dynamic, swings like a pendulum) citing Addagada Raghavamma.',
+    'Differentiate the criminal standard (beyond reasonable doubt, Kali Ram) from the civil standard (preponderance of probabilities, Dastane) and defence exceptions (preponderance, Dahyabhai).',
+    'Emphasize that Section 109 BSA can never be used to cure a missing link in the prosecution foundational case (Shambhu Nath Mehra).',
+    'Always check Section 63(4) compliance when digital evidence is used to discharge the Section 104 burden.',
+  ],
+
+  revisionPoints: [
+    's. 104 BSA = ultimate legal burden of proof on asserting party.',
+    'Raghavamma (1964): legal burden never shifts; evidential onus shifts during trial.',
+    'Standards: criminal = beyond reasonable doubt; civil = preponderance of probabilities; defence exceptions = preponderance.',
+    's. 109 BSA = special knowledge: exception, not substitute for foundational prosecution proof (Shambhu Nath Mehra).',
+    'Electronic evidence: s. 63(4) certificate mandatory to discharge evidential onus.',
+  ],
+
+  relatedTopics: ['s-105', 's-106', 's-108', 's-109', 's-63', 's-170'],
 }
 
 export default content
