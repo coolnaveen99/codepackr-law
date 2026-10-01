@@ -17,7 +17,8 @@ A roadmap item is complete only when its required code/content/tests/verificatio
 **Phase 3 — CLOSED** (PH3-100 exit audit, 2026-10-01)  
 **Phase 4 — CLOSED** (PH4-100 exit audit, 2026-10-01)  
 **Phase 5 — CLOSED** (Judgment Analyzer exit audit, 2026-10-01)  
-**Phase 6 — CLOSED** (Judgment Compare exit audit, 2026-10-01)
+**Phase 6 — CLOSED** (Judgment Compare exit audit, 2026-10-01)  
+**Phase 7 — CLOSED** (Case Preparation Workbench exit audit, 2026-10-01)
 
 ```
 Phase 0 stabilization
@@ -33,6 +34,8 @@ Phase 4 Citation Verification  ← CLOSED (PH4-100; V1–V10 PASS)
 Phase 5 Judgment Analyzer  ← CLOSED (Judgment Analyzer implementation + exit audit)
       ↓
 Phase 6 Judgment Compare  ← CLOSED (Judgment Compare implementation + exit audit)
+      ↓
+Phase 7 Case Preparation  ← CLOSED (Case Preparation Workbench implementation + exit audit)
       ↓
 Phase 7 Case Preparation
       ↓
@@ -79,3 +82,19 @@ Phase 8+ Drafting / Court / Practice / AI / Scale
 Never report a roadmap phase as complete based only on documentation. Report implementation, test, CI, migration, and deployment evidence separately.
 
 **Exception for PH3-001 & PH4-001:** Architecture kickoffs are documentation deliverables by design; they do **not** complete product phase scope.
+
+
+## Phase 7 — Case Preparation Workbench (CLOSED)
+
+Implementation is complete in `codepackr-law` via PR #74.
+
+- Case structure covers parties, court, case number, stage, dates, facts, issues, law, authorities, evidence, witnesses, chronology, arguments, documents and hearing notes.
+- Chronology supports ordered dates, configurable gap detection, disputed-date flags and date-source references.
+- Issues, evidence, witness and argument matrices match roadmap §12 fields.
+- Workflow is browser-local and includes copy/reset controls.
+- Exit audit: `docs/PHASE-7-EXIT-AUDIT.md`
+- Validation: CI #316 — TypeScript PASS, unit tests PASS, production build PASS.
+- Blocker: None.
+- Next: Phase 8 — Legal Draft Studio 2.0.
+
+**Phase 7 status:** CLOSED.
