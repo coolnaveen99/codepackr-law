@@ -689,7 +689,7 @@ The Phase 18 roadmap deliverable is complete: the verification policy defines re
 **Phase 29 status:** **CLOSED** — CI #36900020598 passed dependency audit, TypeScript, unit tests and production build.
 
 
-## Phase 30 — Performance — IN PROGRESS
+## Phase 30 — Performance — COMPLETED (2026-10-01)
 
 | Check | Result |
 |---|---|
@@ -700,6 +700,6 @@ The Phase 18 roadmap deliverable is complete: the verification policy defines re
 | Draft catalogue first-paint isolation | **PASS** — catalog metadata is separated from full draft content |
 | Web Workers | **DEFERRED** — no proven heavy processing path requiring a worker |
 | Focused performance test | **PASS** |
-| CI quality gate | **PENDING** |
+| CI quality gate | **PASS** — CI #36901323151 |
 
-**Phase 30 status:** IN PROGRESS until CI passes.
+**Phase 30 status:** **CLOSED** — CI #36901323151 passed TypeScript, unit tests and production build.
