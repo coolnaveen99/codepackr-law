@@ -1,149 +1,403 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
 const content: TopicContent = {
-  "study": "Introduction and meaning\nVoluntarily causing grievous hurt. BNS restatement of IPC 322 / 325. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 322 / 325. Cite the BNS number for facts on or after 1 July 2024.\nIn student language: BNS s. 117 is the rule on “Voluntarily causing grievous hurt”. The section provides that (1) Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 117 exists so that “Voluntarily causing grievous hurt” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n117. (1) Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”\n\n(2) Whoever, except in the case provided for by sub-section (2) of section 122, voluntarily causes grievous hurt, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\n(3) Whoever commits an offence under sub-section (1) and in the course of such commission causes any hurt to a person which causes that person to be in permanent disability or in persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than ten years but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life\n\n(4) When a group of five or more persons acting in concert, causes grievous hurt to a person on the ground of his race, caste or community, sex, place of birth, language, personal belief or any other similar ground, each member of such group shall be guilty of the offence of causing grievous hurt, and shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nEssential ingredients\n1. (1) Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”\n2. (2) Whoever, except in the case provided for by sub-section\n3. (2) of section 122, voluntarily causes grievous hurt, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n4. (3) Whoever commits an offence under sub-section\n5. (1) and in the course of such commission causes any hurt to a person which causes that person to be in permanent disability or in persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than ten years but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life\n6. (4) When a group of five or more persons acting in concert, causes grievous hurt to a person on the ground of his race, caste or community, sex, place of birth, language, personal belief or any other similar ground, each member of such group shall be guilty of the offence of causing grievous hurt, and shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nPunishment / legal consequence\nUp to 7 years + fine.\n\nStatutory illustrations\nIllustration (a). A, intending of knowing himself to be likely permanently to disfigure Z’s face, gives Z a blow which does not permanently disfigure Z’s face, but which causes Z to suffer severe bodily pain for the space of fifteen days. A has voluntarily caused grievous hurt\n\nExam use: quote illustration (a), then write which ingredient of BNS s. 117 it proves. Copying the illustration without that mapping sentence does not score.\n\nExplanations\nExplanation.—A person is not said voluntarily to cause grievous hurt except when he both causes grievous hurt and intends or knows himself to be likely to cause grievous hurt. But he is said voluntarily to cause grievous hurt, if intending or knowing himself to be likely to cause grievous hurt of one kind, he actually causes grievous hurt of another kind",
-  "glance": "BNS s. 117 — Voluntarily causing grievous hurt.",
-  "sections": [
+  glance:
+    'Section 117 BNS codifies the substantive offence and multi-tiered sentencing regime for Voluntarily Causing Grievous Hurt, succeeding Sections 322 and 325 IPC while introducing revolutionary penal expansions. Sub-section (2) provides the baseline sentence up to seven years and fine. Sub-section (3) introduces a severe new aggravated category—mandating rigorous imprisonment of not less than ten years extending up to the remainder of natural life where the injury causes permanent disability or a persistent vegetative state. Sub-section (4) codifies collective hate-crime / mob lynching liability where a group of five or more inflicts grievous hurt on identity grounds.',
+
+  study: `I. LEGISLATIVE REORGANIZATION & REVOLUTIONARY DUAL TIERS
+Section 117 of the Bharatiya Nyaya Sanhita, 2023 (BNS) occupies a pivotal position in Chapter VI ("Of Offences Affecting the Human Body", Sections 100 to 146). In colonial criminal jurisprudence, the law on grievous hurt was split between Section 322 (definition) and Section 325 (punishment) IPC. Parliament unified both into Section 117 BNS, but went vastly further by creating two radical, progressive sub-sections: Section 117(3) (permanent disability or persistent vegetative state) and Section 117(4) (hate-motivated group violence).
+
+II. STATUTORY SCHEME & ESSENTIAL INGREDIENTS
+Section 117 provides:
+"(1) Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said 'voluntarily to cause grievous hurt'.
+(2) Whoever, except in the case provided for by sub-section (2) of section 122, voluntarily causes grievous hurt, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.
+(3) Whoever commits an offence under sub-section (1) and in the course of such commission causes any hurt to a person which causes that person to be in permanent disability or in persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than ten years but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life.
+(4) When a group of five or more persons acting in concert, causes grievous hurt to a person on the ground of his race, caste or community, sex, place of birth, language, personal belief or any other similar ground, each member of such group shall be guilty of the offence of causing grievous hurt, and shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.
+Explanation.—A person is not said voluntarily to cause grievous hurt except when he both causes grievous hurt and intends or knows himself to be likely to cause grievous hurt. But he is said voluntarily to cause grievous hurt, if intending or knowing himself to be likely to cause grievous hurt of one kind, he actually causes grievous hurt of another kind."
+
+III. MENS REA DUALITY UNDER SECTION 117(1) & STATUTORY EXPLANATION
+To establish the offence under Section 117(1), there must be a confluence of actus reus and mens rea:
+1. Double-Barrelled Requirement:
+   - The accused must cause grievous hurt within the meaning of Section 116 BNS; AND
+   - The accused must intend to cause, or know himself to be likely to cause, grievous hurt.
+2. The Statutory Explanation:
+   - If an accused intends only to cause simple hurt (e.g. a slap or light push) and the victim falls unexpectedly, striking their head on a curb and fracturing a skull, the accused is guilty of Simple Hurt under Section 115 BNS, NOT Grievous Hurt under Section 117, because the mens rea to cause grievous hurt was absent.
+   - However, if the accused intends to break the victim's leg (grievous hurt under Clause g) and instead puts out the victim's eye (grievous hurt under Clause b), the offence under Section 117 is complete: intending one kind of grievous hurt and causing another kind satisfies the statute.
+
+IV. SECTION 117(3): CATASTROPHIC HARM, PERMANENT DISABILITY & PERSISTENT VEGETATIVE STATE
+Section 117(3) is one of the most punitive innovations of the BNS, addressing catastrophic physical violence that leaves victims alive but permanently incapacitated:
+1. Target Injuries:
+   - "Permanent disability": Total or irreversible functional, sensory, or motor destruction (e.g. quadriplegia, irreversible paraplegia, bilateral complete blindness).
+   - "Persistent vegetative state" (PVS): A state of wakefulness without awareness, severe cortical destruction leaving autonomic brainstem functions intact, drawing inspiration from the tragic jurisprudence in Aruna Ramchandra Shanbaug v. Union of India (2011) 4 SCC 454.
+2. Mandatory Sentencing Floor:
+   - Imposes a mandatory minimum of ten years rigorous imprisonment extending up to imprisonment for the remainder of natural life.
+   - Eliminates judicial discretion to award lenient sentences in cases of life-altering bodily decimation.
+
+V. SECTION 117(4): HATE CRIMES & MOB LYNCHING CAUSING GRIEVOUS HURT
+Section 117(4) operates as the non-fatal companion to Section 103(2) BNS (mob lynching murder):
+1. Codification of the Tehseen Poonawalla Mandate:
+   - In Tehseen S. Poonawalla v. Union of India (2018) 9 SCC 501, the Supreme Court directed Parliament to create a separate, designated offence for mob violence and vigilante hate crimes.
+2. Specific Ingredients of Section 117(4):
+   - Numerical threshold: Group of five or more persons acting in concert;
+   - Act: Causing grievous hurt to a person;
+   - Discriminatory animus: Committed on the ground of race, caste, community, sex, place of birth, language, personal belief, or similar identity ground;
+   - Collective deemed liability: "each member of such group shall be guilty of the offence of causing grievous hurt" and punished with imprisonment up to seven years, and fine.
+
+VI. EVIDENTIARY PROOF & SECTION 531 BNSS TRANSITION
+1. Forensic & Medical Documentation:
+   - For Section 117(2): Radiological X-ray plates proving fracture (Horilal) or 15-day incapacity (Section 116(h)).
+   - For Section 117(3): Neurological clinical reports, Glasgow Coma Scale (GCS) charting, MRI/CT neuro-imaging, and medical board disability certificates.
+   - For Section 117(4): Video recordings (Section 63 BSA certified), CCTV, hate-speech slogans, and TIP under BNSS s. 54.
+2. Transitional Epochs under Section 531(2)(a) BNSS:
+   - Pre-1 July 2024 acts are charged under IPC Section 325 (or Section 326 for weapons); Sections 117(3) and 117(4) are prospective substantive provisions applicable strictly to conduct on or after 1 July 2024 pursuant to Article 20(1) of the Constitution.`,
+
+  sections: [
     {
-      "id": "bns-117-rule",
-      "title": "The legal rule",
-      "order": 1,
-      "content": [
-        "117. (1) Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”",
-        "(2) Whoever, except in the case provided for by sub-section (2) of section 122, voluntarily causes grievous hurt, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine",
-        "(3) Whoever commits an offence under sub-section (1) and in the course of such commission causes any hurt to a person which causes that person to be in permanent disability or in persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than ten years but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life",
-        "(4) When a group of five or more persons acting in concert, causes grievous hurt to a person on the ground of his race, caste or community, sex, place of birth, language, personal belief or any other similar ground, each member of such group shall be guilty of the offence of causing grievous hurt, and shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine"
-      ]
+      id: 'bns-117-module-1',
+      title: 'Legislative Architecture & Consolidation of Former IPC Sections 322 and 325',
+      order: 1,
+      content: [
+        'Section 117 BNS unifies the definition (former s. 322 IPC) and punishment (former s. 325 IPC) for voluntarily causing grievous hurt in Chapter VI.',
+        'Sub-section (1) defines the dual mental/physical requirement: must intend/know grievous hurt and cause grievous hurt.',
+        'Sub-section (2) prescribes baseline imprisonment up to seven years and fine, saving sudden provocation cases (s. 122(2)).',
+        'The Explanation establishes transferred malice between different kinds of grievous hurt.',
+      ],
     },
     {
-      "id": "bns-117-ing",
-      "title": "Essential ingredients",
-      "order": 2,
-      "content": [
-        "(1) Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”",
-        "(2) Whoever, except in the case provided for by sub-section",
-        "(2) of section 122, voluntarily causes grievous hurt, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine",
-        "(3) Whoever commits an offence under sub-section",
-        "(1) and in the course of such commission causes any hurt to a person which causes that person to be in permanent disability or in persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than ten years but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life",
-        "(4) When a group of five or more persons acting in concert, causes grievous hurt to a person on the ground of his race, caste or community, sex, place of birth, language, personal belief or any other similar ground, each member of such group shall be guilty of the offence of causing grievous hurt, and shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine"
-      ]
+      id: 'bns-117-module-2',
+      title: 'The Mens Rea Confluence: Dual Proof Requirement & The Statutory Explanation',
+      order: 2,
+      content: [
+        'Causing grievous hurt alone does not suffice; the prosecution must prove the accused intended or knew grievous hurt was likely.',
+        'If an accused intends simple hurt but unexpectedly causes a fracture, liability is limited to simple hurt under Section 115 BNS.',
+        'Statutory Explanation: Intending one kind of grievous hurt and causing another kind (e.g. intending fracture, causing blindness) satisfies Section 117.',
+        'Statutory Illustration: Intending permanent disfiguration but causing 15 days of severe pain constitutes completed grievous hurt.',
+      ],
     },
     {
-      "id": "bns-117-ill",
-      "title": "Statutory illustrations",
-      "order": 4,
-      "content": [
-        "A, intending of knowing himself to be likely permanently to disfigure Z’s face, gives Z a blow which does not permanently disfigure Z’s face, but which causes Z to suffer severe bodily pain for the space of fifteen days. A has voluntarily caused grievous hurt"
-      ]
+      id: 'bns-117-module-3',
+      title: 'Section 117(3) BNS: Permanent Disability & Persistent Vegetative State',
+      order: 3,
+      content: [
+        'Brand-new aggravated tier penalizing bodily attacks resulting in permanent disability or persistent vegetative state (PVS).',
+        'Inflexible statutory floor: Rigorous imprisonment of not less than ten years, extending up to remainder of natural life.',
+        'Codifies protection for victims of catastrophic neuro-trauma, spinal severance, and permanent vegetative conditions (Aruna Shanbaug).',
+        'Requires medical board certification, Glasgow Coma Scale records, and neurological clinical findings.',
+      ],
     },
     {
-      "id": "bns-117-expl",
-      "title": "Explanations",
-      "order": 5,
-      "content": [
-        "Explanation.—A person is not said voluntarily to cause grievous hurt except when he both causes grievous hurt and intends or knows himself to be likely to cause grievous hurt. But he is said voluntarily to cause grievous hurt, if intending or knowing himself to be likely to cause grievous hurt of one kind, he actually causes grievous hurt of another kind"
-      ]
-    }
-  ],
-  "examples": [
-    {
-      "id": "bns-117-ex-1",
-      "title": "Illustration (a)",
-      "description": "A, intending of knowing himself to be likely permanently to disfigure Z’s face, gives Z a blow which does not permanently disfigure Z’s face, but which causes Z to suffer severe bodily pain for the space of fifteen days. A has voluntarily caused grievous hurt\n\nWhat it teaches: this is an official illustration printed in the section. In the answer, map it to an ingredient of BNS s. 117 — which fact proves which element, and what the legal result is."
-    }
-  ],
-  "hypotheticals": [
-    {
-      "id": "bns-117-hypo",
-      "title": "Chamber Practice Hypothetical",
-      "facts": "A, intending of knowing himself to be likely permanently to disfigure Z’s face, gives Z a blow which does not permanently disfigure Z’s face, but which causes Z to suffer severe bodily pain for the space of fifteen days. A has voluntarily caused grievous hurt",
-      "question": "Whether BNS s. 117 (Voluntarily causing grievous hurt) applies, and how structured written arguments should be framed.",
-      "applicableLaw": "BNS s. 117. Chapter VI — Of Offences Affecting the Human Body. ",
-      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 117 (Voluntarily causing grievous hurt), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”\n   (2) (2) Whoever, except in the case provided for by sub-section\n   (3) (2) of section 122, voluntarily causes grievous hurt, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n   (4) (3) Whoever commits an offence under sub-section\n   (5) (1) and in the course of such commission causes any hurt to a person which causes that person to be in permanent disability or in persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than ten years but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life\n   (6) (4) When a group of five or more persons acting in concert, causes grievous hurt to a person on the ground of his race, caste or community, sex, place of birth, language, personal belief or any other similar ground, each member of such group shall be guilty of the offence of causing grievous hurt, and shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\nStep 3 — Read every Explanation. An explanation is part of the section. Omitting it leaves the analysis incomplete and vulnerable to rebuttal.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 117 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
-      "conclusion": "The result depends on proof of the ingredients of BNS s. 117. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
-    }
-  ],
-  "misconceptions": [
-    {
-      "id": "bns-117-trap-1",
-      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
-      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 117."
+      id: 'bns-117-module-4',
+      title: 'Section 117(4) BNS: Mob Lynching & Hate Crime Grievous Hurt',
+      order: 4,
+      content: [
+        'Sister provision to Section 103(2) BNS, codifying the Supreme Court mandate in Tehseen S. Poonawalla (2018).',
+        'Applies where a group of five or more persons acting in concert causes grievous hurt on identity grounds (race, caste, community, etc.).',
+        'Each member of the group is deemed guilty of causing grievous hurt, punishable with imprisonment up to seven years and fine.',
+        'Prosecution must establish discriminatory animus through slogans, video recordings, or surrounding social context.',
+      ],
     },
     {
-      "id": "bns-117-trap-2",
-      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
-      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+      id: 'bns-117-module-5',
+      title: 'Evidentiary Proof (BSA ss. 63, 104), Medical Standards & s. 531 Transition',
+      order: 5,
+      content: [
+        'Radiological mandate: X-ray plates and radiologist deposition are mandatory to establish Clause (g) fractures.',
+        'Digital proof under Section 63 BSA: Mobile videos of mob lynching or CCTV footage must be certified by producing device logs.',
+        'Constitutional prospectivity: Sub-sections (3) and (4) create new liabilities and apply strictly to post-1 July 2024 acts under Art. 20(1).',
+        'Offences prior to 1 July 2024 must be charged under IPC Section 325 read with Section 149/34 IPC pursuant to Section 531 BNSS.',
+      ],
+    },
+  ],
+
+  provisions: [
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-117',
+      section: 's. 117',
+      title: 'Voluntarily causing grievous hurt',
     },
     {
-      "id": "bns-117-trap-3",
-      "trap": "Giving a one-line summary or shortened explanation of the provision.",
-      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
-    }
-  ],
-  "questionsAndAnswers": [
-    {
-      "id": "bns-117-q-brief",
-      "draftingCategory": "brief",
-      "question": "Legal Assessment & Statutory Note: BNS s. 117 (Voluntarily causing grievous hurt)",
-      "answer": "Introduction. BNS s. 117 deals with Voluntarily causing grievous hurt. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Voluntarily causing grievous hurt. BNS restatement of IPC 322 / 325. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 322 / 325. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 117 is the rule on “Voluntarily causing grievous hurt”. The section provides that (1) Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”\n2. (2) Whoever, except in the case provided for by sub-section\n3. (2) of section 122, voluntarily causes grievous hurt, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n4. (3) Whoever commits an offence under sub-section\n5. (1) and in the course of such commission causes any hurt to a person which causes that person to be in permanent disability or in persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than ten years but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life\n6. (4) When a group of five or more persons acting in concert, causes grievous hurt to a person on the ground of his race, caste or community, sex, place of birth, language, personal belief or any other similar ground, each member of such group shall be guilty of the offence of causing grievous hurt, and shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): A, intending of knowing himself to be likely permanently to disfigure Z’s face, gives Z a blow which does not permanently disfigure Z’s face, but which causes Z to suffer severe bodily pain for the space of fifteen days. A has voluntarily caused grievous hurt\n\nExplanations. Explanation.—A person is not said voluntarily to cause grievous hurt except when he both causes grievous hurt and intends or knows himself to be likely to cause grievous hurt. But he is said voluntarily to cause grievous hurt, if intending or knowing himself to be likely to cause grievous hurt of one kind, he actually causes grievous hurt of another kind An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 117. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Up to 7 years + fine.\n\nConclusion. BNS s. 117 is the complete current-law heading for Voluntarily causing grievous hurt. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
-      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-116',
+      section: 's. 116',
+      title: 'Grievous hurt',
     },
     {
-      "id": "bns-117-q-submissions",
-      "draftingCategory": "submissions",
-      "question": "Comprehensive Written Submissions: BNS s. 117 (Voluntarily causing grievous hurt) with Statutory Scheme & Judicial Analysis",
-      "answer": "Introduction. BNS s. 117 deals with Voluntarily causing grievous hurt. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Voluntarily causing grievous hurt. BNS restatement of IPC 322 / 325. Elements are substantially the same; cite the BNS number for offences on or after 1 July 2024. BNS restatement of IPC 322 / 325. Cite the BNS number for facts on or after 1 July 2024.\n\nLegal rule. In student language: BNS s. 117 is the rule on “Voluntarily causing grievous hurt”. The section provides that (1) Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”\n2. (2) Whoever, except in the case provided for by sub-section\n3. (2) of section 122, voluntarily causes grievous hurt, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n4. (3) Whoever commits an offence under sub-section\n5. (1) and in the course of such commission causes any hurt to a person which causes that person to be in permanent disability or in persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than ten years but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life\n6. (4) When a group of five or more persons acting in concert, causes grievous hurt to a person on the ground of his race, caste or community, sex, place of birth, language, personal belief or any other similar ground, each member of such group shall be guilty of the offence of causing grievous hurt, and shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine\n\nIllustrations. The section itself supplies worked examples. In legal analysis, pick one illustration, restate its facts, and show which ingredient it proves. Illustration (a): A, intending of knowing himself to be likely permanently to disfigure Z’s face, gives Z a blow which does not permanently disfigure Z’s face, but which causes Z to suffer severe bodily pain for the space of fifteen days. A has voluntarily caused grievous hurt\n\nExplanations. Explanation.—A person is not said voluntarily to cause grievous hurt except when he both causes grievous hurt and intends or knows himself to be likely to cause grievous hurt. But he is said voluntarily to cause grievous hurt, if intending or knowing himself to be likely to cause grievous hurt of one kind, he actually causes grievous hurt of another kind An explanation is not optional commentary. It is part of the section and must appear in an authoritative brief.\n\nLimitations. Apply only the conditions written in s. 117. Do not import a defence from a different chapter unless the question requires it.\n\nConsequence / punishment. Up to 7 years + fine.\n\nConclusion. BNS s. 117 is the complete current-law heading for Voluntarily causing grievous hurt. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Analytical comment. Explain a condition, a proviso, or a practical difficulty in applying s. 117. Do not invent case names.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 117.”",
-      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
-    }
-  ],
-  "cases": [],
-  "examTips": [
-    "Cite BNS s. 117 for offences on or after 1 July 2024.",
-    "Ingredients first, illustration second, application third, conclusion last.",
-    "Do not cite the IPC number in a post-1 July 2024 charge-sheet unless s. 358 savings apply."
-  ],
-  "examFrameworks": [
-    {
-      "question": "Structured Legal Assessment: BNS s. 117 (Voluntarily causing grievous hurt).",
-      "steps": [
-        "Introduce BNS s. 117 and Chapter VI — Of Offences Affecting the Human Body.",
-        "Define / state the meaning in your own words.",
-        "List the essential ingredients.",
-        "Use one statutory illustration and map it to an ingredient.",
-        "State the material explanation or exception.",
-        "Apply in four to six sentences.",
-        "Conclude with the current citation — BNS s. 117."
-      ]
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-118',
+      section: 's. 118',
+      title: 'Voluntarily causing hurt or grievous hurt by dangerous weapons or means',
     },
     {
-      "question": "Comprehensive Chamber Written Submissions: BNS s. 117 with connected statutory scheme.",
-      "steps": [
-        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
-        "Place the section in the Chapter and explain why the heading exists.",
-        "Work a second hypothetical in which one ingredient fails.",
-        "Add analytical comment on a condition or practical difficulty.",
-        "IRAC application to the problem facts.",
-        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
-        "Current-law conclusion."
-      ]
-    }
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-103',
+      section: 's. 103',
+      title: 'Punishment for murder',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-63',
+      section: 's. 63',
+      title: 'Admissibility of electronic records',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-104',
+      section: 's. 104',
+      title: 'Burden of proof',
+    },
+    {
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-531',
+      section: 's. 531',
+      title: 'Repeal and savings',
+    },
   ],
-  "answerSkeleton": [
-    "Introduction — BNS s. 117, Voluntarily causing grievous hurt.",
-    "Meaning and definition.",
-    "Ingredients.",
-    "Illustration mapped to an ingredient.",
-    "Explanation / exception.",
-    "Application (IRAC).",
-    "Conclusion and current citation."
+
+  examples: [
+    {
+      id: 'bns-117-ill-1',
+      title: 'Application of Section 117(3) — Permanent Quadriplegia from Spinal Trauma',
+      illustrationType: 'statutory-practical',
+      description:
+        'Accused A repeatedly slams victim V against a concrete pillar during a violent robbery, fracturing V’s cervical vertebrae (C4-C5) and completely transecting the spinal cord. V survives after intensive neurosurgery but is rendered permanently quadriplegic, paralyzed from the neck down with complete loss of sensory and motor function. A Medical Board certifies 100% permanent physical disability. Under Section 117(3) BNS, causing hurt resulting in permanent disability elevates the offence to mandatory rigorous imprisonment of not less than ten years extending to natural life. A is sentenced to 14 years rigorous imprisonment and fine.',
+    },
+    {
+      id: 'bns-117-ill-2',
+      title: 'Application of Section 117(4) — Group Assault Based on Community Identity',
+      illustrationType: 'statutory-practical',
+      description:
+        'A group of six persons, motivated by communal hostility, intercept a meat vendor V from a minority community. Shouting identity-based derogatory slurs, they beat V with wooden batons, fracturing his jaw and ribs. Smartphone videos captured by bystanders depict all six active in the assault. Medical examination confirms fractures under Section 116(g) BNS. All six are charged under Section 117(4) BNS for causing grievous hurt as a group of five or more on the ground of community. Each member is convicted and sentenced to 5 years imprisonment and fine.',
+    },
   ],
-  "revisionPoints": [
-    "BNS s. 117: Voluntarily causing grievous hurt.",
-    "First ingredient: (1) Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”",
-    "1 statutory illustration(s) — quote and map.",
-    "For offences on or after 1 July 2024, the correct citation is BNS s. 117 — Voluntarily causing grievous hurt. Older books and judgments may still print a historical number (322 / 325). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+
+  hypotheticals: [
+    {
+      id: 'bns-117-hypo',
+      title: 'Chamber Practice Hypothetical: Severe Brain Trauma, Persistent Vegetative State & Charge Framing under Section 117(3)',
+      facts:
+        'On 20 August 2024, during a dispute over agricultural land, accused P strikes complainant Q on the temple with an iron rod. Q collapses unconscious and is rushed to a tertiary medical college. Neurological evaluation reveals massive acute subdural hematoma and extensive diffuse axonal injury. Emergency craniotomy is performed. Three months post-surgery, Q remains in a persistent vegetative state (PVS), breathing spontaneously through a tracheostomy with eyes open but displaying zero cognitive response, zero awareness of self or environment, and an invariant Glasgow Coma Scale score of 4. Police originally registered the FIR under Section 115 BNS, but upon the medical board certifying PVS, the prosecution seeks to frame charges under Section 117(3) BNS. P contends that his intention was only to cause hurt, not to put Q into a vegetative state, and that Section 117(3) requires specific mens rea to cause PVS.',
+      question:
+        'As Senior Counsel advising the prosecution, analyze the statutory construction of Section 117(3) BNS and demonstrate why P is liable for the enhanced penalty of 10 years to natural life.',
+      applicableLaw:
+        'BNS ss. 116(h), 117(1), 117(3); BSA ss. 104; Supreme Court principles in Aruna Ramchandra Shanbaug v. Union of India (2011) 4 SCC 454 and State of Karnataka v. Vedanayagam (1995) 1 SCC 326.',
+      analysis:
+        '1. Establishing the Base Offence under Section 117(1) BNS:\n   - Striking a forceful blow on the vital organ (head/temple) with an iron rod demonstrates knowledge that grievous hurt (such as a skull fracture or life-endangering injury under Section 116) was likely.\n   - The injury caused was life-endangering under Section 116(h) BNS, fulfilling the dual requirements of Section 117(1).\n2. Statutory Architecture of Section 117(3) BNS:\n   - Section 117(3) states: "Whoever commits an offence under sub-section (1) and in the course of such commission causes any hurt to a person which causes that person to be in permanent disability or in persistent vegetative state..."\n   - The statutory text does NOT require that the accused specifically intended the precise clinical result of a "persistent vegetative state". The requirement is that the accused committed the base offence under sub-section (1) (voluntarily causing grievous hurt) and "in the course of such commission" caused hurt that resulted in PVS.\n   - Once the threshold of Section 117(1) is crossed, liability for the aggravated consequences under Section 117(3) is strict and objective.\n3. Medical Proof of PVS:\n   - The Medical Board’s formal evaluation establishing tracheostomy dependency, lack of cortical awareness, and GCS score of 4 provides conclusive scientific verification of a persistent vegetative state.',
+      conclusion:
+        'P is liable to be charged and tried under Section 117(3) BNS, attracting rigorous imprisonment of not less than ten years extending up to the remainder of natural life.',
+    },
   ],
-  "relatedTopics": []
+
+  distinctions: [
+    {
+      id: 'bns-117-dist-1',
+      title: 'Section 117(2) BNS (General Grievous Hurt) vs Section 117(3) BNS (Disability/PVS)',
+      left: 'Section 117(2) BNS (General Grievous Hurt)',
+      right: 'Section 117(3) BNS (Disability / PVS)',
+      rows: [
+        {
+          point: 'Resulting Harm',
+          left: 'Any of the eight kinds of grievous hurt under Section 116 (e.g. single bone fracture)',
+          right: 'Hurt resulting in permanent disability or persistent vegetative state (PVS)',
+        },
+        {
+          point: 'Minimum Sentence',
+          left: 'No mandatory statutory minimum (judicial discretion up to 7 years)',
+          right: 'Mandatory minimum of ten years rigorous imprisonment',
+        },
+        {
+          point: 'Sentence Ceiling',
+          left: 'Imprisonment extending up to seven years, and fine',
+          right: 'Imprisonment for life (meaning the remainder of natural life)',
+        },
+      ],
+    },
+    {
+      id: 'bns-117-dist-2',
+      title: 'Section 117(4) BNS (Grievous Hurt by Mob) vs Section 103(2) BNS (Murder by Mob)',
+      left: 'Section 117(4) BNS (Non-Fatal Hate Mob)',
+      right: 'Section 103(2) BNS (Fatal Mob Lynching)',
+      rows: [
+        {
+          point: 'Fatal Outcome',
+          left: 'Victim survives; sustains grievous hurt under Section 116 BNS',
+          right: 'Victim dies as a result of the collective assault',
+        },
+        {
+          point: 'Plurality & Ground',
+          left: 'Five or more persons acting in concert on identity grounds (race, caste, etc.)',
+          right: 'Five or more persons acting in concert on identity grounds (race, caste, etc.)',
+        },
+        {
+          point: 'Punishment',
+          left: 'Imprisonment of either description extending up to seven years, and fine',
+          right: 'Death penalty or imprisonment for remainder of natural life, and fine',
+        },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'bns-117-trap-1',
+      trap: 'Believing that any fracture caused during a fight automatically constitutes an offence under Section 117 BNS.',
+      correction:
+        'Section 117(1) requires that the accused must also INTEND or KNOW that grievous hurt is likely. If the accused intended only simple hurt and a fracture resulted through a freak fall, liability is limited to Simple Hurt under Section 115 BNS.',
+    },
+    {
+      id: 'bns-117-trap-2',
+      trap: 'Assuming Section 117(3) BNS requires proof that the accused planned to put the victim into a vegetative state.',
+      correction:
+        'Section 117(3) requires proof of the base offence under sub-section (1); if in the course thereof the hurt causes permanent disability or PVS, the enhanced sentence of 10 years to natural life attaches by operation of law.',
+    },
+    {
+      id: 'bns-117-trap-3',
+      trap: 'Charging Section 117(4) BNS for an ordinary street brawl involving five persons.',
+      correction:
+        'Section 117(4) specifically requires discriminatory animus: the attack must be committed on the ground of race, caste, community, sex, place of birth, language, personal belief, or similar identity ground.',
+    },
+  ],
+
+  questionsAndAnswers: [
+    {
+      id: 'bns-117-q-brief',
+      draftingCategory: 'brief',
+      question: 'Senior Counsel Legal Assessment: Architecture & Aggravated Tiers of Section 117 BNS',
+      answer: `I. STATUTORY ARCHITECTURE & GENESIS
+Section 117 of the Bharatiya Nyaya Sanhita, 2023 (BNS) consolidates the definition (former s. 322 IPC) and general punishment (former s. 325 IPC) for Voluntarily Causing Grievous Hurt in Chapter VI, while introducing groundbreaking aggravated tiers.
+
+II. ESSENTIAL INGREDIENTS & MENS REA
+Under Section 117(1), the prosecution must establish:
+1. That the accused voluntarily caused hurt;
+2. That the injury caused constitutes Grievous Hurt under Section 116 BNS;
+3. That the accused intended to cause, or knew himself to be likely to cause, grievous hurt.
+
+III. THE MULTI-TIER SENTENCING HIERARCHY
+1. Sub-section (2): Baseline punishment — imprisonment up to 7 years, and fine.
+2. Sub-section (3): Catastrophic harm — where the hurt causes permanent disability or persistent vegetative state, mandatory minimum of 10 years RI extending up to remainder of natural life.
+3. Sub-section (4): Hate crime / mob lynching — group of 5+ persons acting in concert causing grievous hurt on identity grounds (race, caste, community, etc.), punished with imprisonment up to 7 years, and fine.
+
+IV. CONSTITUTIONAL PROSPECTIVITY
+Sub-sections (3) and (4) apply strictly prospectively to conduct occurring on or after 1 July 2024 under Article 20(1) of the Constitution and Section 531(2)(a) BNSS.`,
+      explanation:
+        'Authoritative legal assessment deconstructing Section 117 BNS, mens rea duality, the 10-year natural life disability tier, mob lynching hate crime, and transitional rules.',
+    },
+    {
+      id: 'bns-117-q-submissions',
+      draftingCategory: 'submissions',
+      question: 'Appellate Written Submissions: Application of Section 117(3) BNS in Permanent Disability Cases',
+      answer: `MAY IT PLEASE YOUR LORDSHIPS:
+
+1. LOCUS OF THE SENTENCE & CHARGE MATRIX:
+The appellant stands convicted under Section 117(3) BNS and sentenced to 12 years rigorous imprisonment. It is submitted that the conviction is just, proper, and warrants no appellate interference.
+
+2. FULFILLMENT OF BASELINE MENS REA UNDER SECTION 117(1) BNS:
+(a) The appellant struck the victim repeatedly on the spine and legs with a heavy iron crowbar.
+(b) In terms of Section 117(1) read with its Explanation, an accused who delivers multiple heavy strikes with an iron crowbar on the spinal column indisputably possesses the knowledge that grievous hurt (fracture or dislocation of vertebrae under Section 116(g)) is likely to result.
+
+3. CAUSAL NEXUS LEADING TO PERMANENT DISABILITY UNDER SECTION 117(3) BNS:
+(a) Section 117(3) commands:
+"Whoever commits an offence under sub-section (1) and in the course of such commission causes any hurt to a person which causes that person to be in permanent disability or in persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than ten years but which may extend to imprisonment for life..."
+(b) The Medical Board report (Ex. P-9) proves that the vertebral fracture caused irreversible spinal cord transection, resulting in permanent complete paraplegia. The victim is permanently confined to a wheelchair with zero lower limb motor capability.
+(c) The contention of the appellant that he did not intend complete paraplegia is legally untenable. Once the base offence of voluntarily causing grievous hurt is proved, the aggravated penal consequences under sub-section (3) attach to the objective catastrophic outcome.
+
+4. STATUTORY INFLEXIBILITY OF THE TEN-YEAR FLOOR:
+Parliament deliberately enacted an inflexible statutory floor of ten years rigorous imprisonment to punish life-destroying violence. The sentence of 12 years awarded by the learned Sessions Judge is well within statutory bounds and calls for no reduction.
+
+5. PRAYER:
+The appeal being devoid of merits, the conviction and sentence under Section 117(3) BNS ought to be affirmed.`,
+      explanation:
+        'Comprehensive appellate submissions establishing liability under Section 117(3) BNS for permanent disability, demonstrating causal nexus and justifying the mandatory sentencing floor.',
+    },
+  ],
+
+  cases: [
+    {
+      name: 'Tehseen S. Poonawalla v. Union of India',
+      year: 2018,
+      citation: '(2018) 9 SCC 501',
+      holding:
+        'The Supreme Court issued nationwide directives to combat mob lynching and vigilante violence, urging Parliament to create a separate substantive offence. Parliament directly codified this in Sections 103(2) and 117(4) BNS.',
+    },
+    {
+      name: 'Aruna Ramchandra Shanbaug v. Union of India',
+      year: 2011,
+      citation: '(2011) 4 SCC 454',
+      holding:
+        'The historic constitutional ruling examining the legal and medical definition of a "persistent vegetative state" (PVS), providing the jurisprudential foundation for the statutory incorporation of PVS in Section 117(3) BNS.',
+    },
+    {
+      name: 'State of Karnataka v. Vedanayagam',
+      year: 1995,
+      citation: '(1995) 1 SCC 326',
+      holding:
+        'Reaffirmed that to convict an accused for voluntarily causing grievous hurt, the prosecution must show that the accused intended or knew that grievous hurt was likely; knowledge is inferred from the nature of the weapon and the force of the strike.',
+    },
+  ],
+
+  examTips: [
+    'Always cite Section 117 BNS as the consolidated provision replacing Sections 322 and 325 IPC.',
+    'Highlight the two major new sub-sections: Section 117(3) (permanent disability or persistent vegetative state: 10 years to natural life) and Section 117(4) (mob lynching grievous hurt on identity grounds: up to 7 years).',
+    'Remember the double-barrelled requirement of Section 117(1): the accused must both cause grievous hurt AND intend or know grievous hurt is likely.',
+    'Explain the transferred malice rule in the Explanation: intending one kind of grievous hurt and causing another kind satisfies Section 117.',
+    'Under Section 531(2)(a) BNSS, pre-1 July 2024 offences are governed by IPC Section 325; post-commencement conduct by Section 117 BNS.',
+  ],
+
+  examFrameworks: [
+    {
+      question: 'Structured Chamber Brief: Analyzing Liability under Section 117 BNS',
+      steps: [
+        'Confirm injury satisfies one of the eight clauses of Section 116 BNS.',
+        'Establish mens rea under Section 117(1): prove accused intended or knew grievous hurt was likely.',
+        'Check for Section 117(3) aggravation: did the hurt cause permanent disability or persistent vegetative state?',
+        'Check for Section 117(4) hate mob aggravation: was it committed by 5+ persons on identity grounds?',
+        'Determine sentencing classification: s. 117(2) baseline, s. 117(3) 10-year floor to natural life, or s. 117(4) group liability.',
+        'Address medical proof (radiology, medical board disability certificate, or GCS scoring).',
+      ],
+    },
+    {
+      question: 'Appellate Submissions: Defending Charge Framing under Section 117(3) BNS',
+      steps: [
+        'Demonstrate that the accused intentionally inflicted blows likely to cause grievous hurt.',
+        'Establish direct medical causation between the injury and the resulting permanent disability or PVS.',
+        'Argue that sub-section (3) does not require specific advance intent of PVS, but attaches to the catastrophic outcome.',
+        'Defend the sentence against the mandatory 10-year floor.',
+        'Pray for dismissal of the appeal.',
+      ],
+    },
+  ],
+
+  answerSkeleton: [
+    'Introduction — Section 117 BNS, Chapter VI ("Of Offences Affecting the Human Body"), consolidating IPC ss. 322 and 325.',
+    'Mens Rea Duality — Section 117(1) requires causing grievous hurt + intending or knowing grievous hurt is likely; Explanation on transferred malice.',
+    'Sub-section (2) Baseline — Imprisonment up to 7 years and fine; exception for sudden provocation.',
+    'Sub-section (3) Catastrophic Harm — Permanent disability or persistent vegetative state; 10 years to remainder of natural life (Aruna Shanbaug).',
+    'Sub-section (4) Hate Crime / Mob Lynching — 5+ persons acting in concert on identity grounds (Tehseen Poonawalla).',
+    'Evidentiary & Transition — Medical board proof, digital evidence under BSA s. 63; prospective application under BNSS s. 531.',
+  ],
+
+  revisionPoints: [
+    'Section 117 BNS replaces IPC Sections 322 and 325.',
+    'Section 117(1) requires both the physical grievous injury and the mental intention/knowledge.',
+    'Section 117(3) is a new aggravated tier for permanent disability or PVS: 10 years minimum to natural life.',
+    'Section 117(4) is the mob lynching hate crime provision for non-fatal attacks: 5+ persons on identity grounds.',
+    'Applies prospectively to offences on or after 1 July 2024.',
+  ],
+
+  relatedTopics: [
+    's-116',
+    's-118',
+    's-103',
+    's-114',
+    's-124',
+  ],
 }
 
 export default content

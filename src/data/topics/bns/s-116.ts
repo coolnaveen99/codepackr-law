@@ -1,175 +1,395 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
 const content: TopicContent = {
-  "study": "Introduction and meaning\nGrievous hurt (old 320). Eight kinds: emasculation; permanent privation of eye or ear; privation of any member or joint; destruction or permanent impairing of a joint; permanent disfiguration of head or face; fracture or dislocation of a bone or tooth; any hurt which endangers life or causes the sufferer to be in severe bodily pain / unable to follow ordinary pursuits for 15 days.\nIn student language: BNS s. 116 is the rule on “Grievous hurt”. The section provides that the following kinds of hurt only are designated as “grievous”, namely:–. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 116 exists so that “Grievous hurt” has a closed legal test in Chapter VI — Of Offences Affecting the Human Body. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.\n\nThe provision in detail\n116. The following kinds of hurt only are designated as “grievous”, namely:–\n\n(a) Emasculation;\n\n(b) Permanent privation of the sight of either eye;\n\n(c) Permanent privation of the hearing of either ear;\n\n(d) Privation of any member or joint;\n\n(e) Destruction or permanent impairing of the powers of any member or joint;\n\n(f) Permanent disfiguration of the head or face;\n\n(g) Fracture or dislocation of a bone or tooth;\n\n(h) Any hurt which endangers life or which causes the sufferer to be during the space of fifteen days in severe bodily pain, or unable to follow his ordinary pursuits\n\nEssential ingredients\n1. The following kinds of hurt only are designated as “grievous”, namely:–\n2. (b) Permanent privation of the sight of either eye;\n3. (c) Permanent privation of the hearing of either ear;\n4. (d) Privation of any member or joint;\n5. (e) Destruction or permanent impairing of the powers of any member or joint;\n6. (f) Permanent disfiguration of the head or face;\n7. (g) Fracture or dislocation of a bone or tooth;\n8. (h) Any hurt which endangers life or which causes the sufferer to be during the space of fifteen days in severe bodily pain, or unable to follow his ordinary pursuits",
-  "glance": "BNS s. 116 — Grievous hurt.",
-  "sections": [
+  glance:
+    'Section 116 BNS exhaustively codifies the eight statutory categories of Grievous Hurt, directly replacing Section 320 IPC. The eight closed clauses encompass emasculation, permanent privation of sight or hearing, privation or impairment of members/joints, permanent head/face disfiguration, bone or tooth fracture/dislocation, and life-endangering hurt. Crucially, Clause (h) incorporates a major legislative reform by reducing the statutory threshold of severe bodily pain or incapacity from the colonial twenty-day requirement to fifteen days. Proof of grievous hurt requires strict radiological and medical testimony.',
+
+  study: `I. LEGISLATIVE REORGANIZATION & PRIMACY OF SECTION 116
+Section 116 of the Bharatiya Nyaya Sanhita, 2023 (BNS) is situated in Chapter VI ("Of Offences Affecting the Human Body", Sections 100 to 146). It functions as the substantive defining bastion for aggravated non-fatal violence, succeeding Section 320 of the Indian Penal Code, 1860.
+Section 116 is strictly a definitional provision; it classifies which specific bodily harms elevate from simple "Hurt" (Section 114 BNS) to "Grievous Hurt", while the penal sanctions are distributed across Sections 117, 118, 120, 121, 122, and 124 BNS.
+
+The Statutory Closed List:
+The opening words of Section 116—"The following kinds of hurt only are designated as 'grievous'"—establish an exhaustive, closed statutory taxonomy. A court has no judicial discretion or inherent power to treat an unlisted injury as grievous hurt, no matter how painful or distressing, unless it falls squarely within one of the eight codified clauses.
+
+II. THE EIGHT CODIFIED CATEGORIES DECONSTRUCTED
+Section 116 enumerates eight precise classes of injury:
+1. Clause (a) — Emasculation: Depriving a male of masculine vigour, castration, or permanent destruction of procreative capability.
+2. Clause (b) — Permanent Privation of Sight: Permanent loss or destruction of the sight of either eye, or both eyes. Temporary impairment does not suffice.
+3. Clause (c) — Permanent Privation of Hearing: Permanent loss of hearing in either ear, or both ears.
+4. Clause (d) — Privation of Any Member or Joint: Severing, amputating, or depriving the victim of any limb, organ, finger, toe, or joint.
+5. Clause (e) — Destruction or Permanent Impairment of Powers of Any Member or Joint: Rendering a limb, joint, or organ permanently paralyzed, useless, or severely functionally impaired without necessarily amputating it.
+6. Clause (f) — Permanent Disfiguration of Head or Face: External visible branding, deep facial lacerations, cuts, or burning that leaves an indelible, permanent cosmetic disfigurement.
+7. Clause (g) — Fracture or Dislocation of a Bone or Tooth:
+   - "Fracture": In Horilal v. State of U.P. (1970) 1 SCC 249, the Supreme Court ruled that a fracture means a break, cleavage, or crack in the continuity of the bone. A mere superficial peeling of the periosteum or soft-tissue swelling is not a fracture.
+   - "Dislocation": Displacement of a bone or tooth from its normal anatomical joint socket. Loosening of a tooth without dislocation or fracture does not satisfy this clause.
+8. Clause (h) — Life-Endangering Hurt & The 15-Day Reform:
+   - Limb 1: Any hurt which endangers life (putting life in imminent peril unless immediate medical intervention is provided).
+   - Limb 2: Any hurt which causes the sufferer to be during the space of fifteen days in severe bodily pain.
+   - Limb 3: Any hurt which causes the sufferer to be during the space of fifteen days unable to follow his ordinary pursuits.
+   - Major Legislative Departure: In colonial IPC Section 320 Eighth clause, the statutory threshold was twenty days. Parliament in BNS Section 116(h) deliberately reduced this period to fifteen days, reflecting modern medical trauma recovery timelines and expanding victim protection.
+
+III. JURISPRUDENTIAL THRESHOLDS: "ENDANGERING LIFE" VS "LIKELY TO CAUSE DEATH"
+Senior Counsel must master the crucial distinction between Clause (h) of Section 116 BNS and culpable homicide under Section 100/101 BNS:
+1. The Niranjan Singh Doctrine (Niranjan Singh v. State of M.P. (2007) 11 SCC 109):
+   - "Endangering life" under Section 116(h) is an injury of an aggravated character that puts life in immediate jeopardy, but falls below the mental threshold of Section 100/101 BNS.
+   - If the offender inflicted an injury with the intention of causing death or knowing that it is sufficient in the ordinary course of nature to cause death, the offence is Murder (Section 101/103) or Attempt to Murder (Section 109), not Grievous Hurt.
+2. Section 116(h) operates where the injury objectively endangers life, but the prosecution fails to establish the high homicidal mens rea required for culpable homicide.
+
+IV. EVIDENTIARY PROOF & RADIOLOGICAL MANDATE
+1. The Radiological Standard in Bone Fractures:
+   - In State of Rajasthan v. N.K. (2000) 5 SCC 30 and Mohan Singh v. State of Punjab AIR 1975 SC 2161, the Supreme Court affirmed that a fracture of a bone under Clause (g) cannot be proved merely on the oral say-so of a general medical practitioner.
+   - The prosecution must produce the original X-ray skiagram plates, the radiologist’s formal report, and examine the radiologist or medico-legal officer who conducted the radiological examination.
+2. Proving the 15-Day Incapacity:
+   - Mere hospital admission for 15 days is not conclusive proof; the prosecution must demonstrate through bed-head tickets and discharge notes that the victim was actively suffering severe bodily pain or physically incapable of pursuing ordinary vocational duties during the entire 15-day period.`,
+
+  sections: [
     {
-      "id": "bns-116-rule",
-      "title": "The legal rule",
-      "order": 1,
-      "content": [
-        "116. The following kinds of hurt only are designated as “grievous”, namely:–",
-        "(a) Emasculation;",
-        "(b) Permanent privation of the sight of either eye;",
-        "(c) Permanent privation of the hearing of either ear;",
-        "(d) Privation of any member or joint;",
-        "(e) Destruction or permanent impairing of the powers of any member or joint;",
-        "(f) Permanent disfiguration of the head or face;",
-        "(g) Fracture or dislocation of a bone or tooth;",
-        "(h) Any hurt which endangers life or which causes the sufferer to be during the space of fifteen days in severe bodily pain, or unable to follow his ordinary pursuits"
-      ]
+      id: 'bns-116-module-1',
+      title: 'Legislative Architecture & The Exhaustive Closed Taxonomy',
+      order: 1,
+      content: [
+        'Section 116 BNS replaces Section 320 IPC in Chapter VI, defining the eight exhaustive categories of Grievous Hurt.',
+        'The phrase "The following kinds of hurt only are designated as grievous" establishes a strictly closed statutory list.',
+        'It is a definitional provision; penal sanctions are codified separately in Sections 117, 118, 120, 122, and 124 BNS.',
+        'Injuries not falling within clauses (a) to (h) remain simple hurt under Section 114, regardless of subjective severity.',
+      ],
     },
     {
-      "id": "bns-116-ing",
-      "title": "Essential ingredients",
-      "order": 2,
-      "content": [
-        "The following kinds of hurt only are designated as “grievous”, namely:–",
-        "(b) Permanent privation of the sight of either eye;",
-        "(c) Permanent privation of the hearing of either ear;",
-        "(d) Privation of any member or joint;",
-        "(e) Destruction or permanent impairing of the powers of any member or joint;",
-        "(f) Permanent disfiguration of the head or face;",
-        "(g) Fracture or dislocation of a bone or tooth;",
-        "(h) Any hurt which endangers life or which causes the sufferer to be during the space of fifteen days in severe bodily pain, or unable to follow his ordinary pursuits"
-      ]
-    }
-  ],
-  "examples": [
-    {
-      "id": "bns-116-ex-1",
-      "title": "Example 1 — simple (teaching example)",
-      "description": "A short everyday fact pattern is tested against “Grievous hurt”. Name BNS s. 116, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+      id: 'bns-116-module-2',
+      title: 'Deconstruction of Clauses (a) to (f): Sensory, Structural & Cosmetic Deprivations',
+      order: 2,
+      content: [
+        'Clause (a) penalizes emasculation and destruction of male procreative vigour.',
+        'Clauses (b) and (c) cover permanent loss of sight of either eye or hearing of either ear; temporary impairment does not qualify.',
+        'Clauses (d) and (e) cover privation or permanent functional impairment of any member, organ, or joint.',
+        'Clause (f) covers permanent disfiguration of the head or face, requiring an indelible cosmetic scar or deformity.',
+      ],
     },
     {
-      "id": "bns-116-ex-2",
-      "title": "Example 2 — practical application / distinction (teaching example)",
-      "description": "Change one ingredient so that BNS s. 116 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
-    }
-  ],
-  "hypotheticals": [
+      id: 'bns-116-module-3',
+      title: 'Clause (g) Bone & Tooth Fractures: Horilal Doctrine & Radiological Proof',
+      order: 3,
+      content: [
+        'In Horilal v. State of U.P. (1970), the Supreme Court ruled that fracture requires a break or crack in bony continuity.',
+        'Superficial contusions, soft-tissue hematomas, or loosening of teeth without dislocation do not satisfy Clause (g).',
+        'Mandatory radiological proof: X-ray skiagrams and radiologist testimony are indispensable to establish a bone fracture.',
+        'Absence of X-ray plates entitles the defense to reduce the charge from grievous hurt to simple hurt under Section 115 BNS.',
+      ],
+    },
     {
-      "id": "bns-116-hypo",
-      "title": "Chamber Practice Hypothetical",
-      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Grievous hurt” under BNS s. 116 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
-      "question": "Whether BNS s. 116 (Grievous hurt) applies, and how structured written arguments should be framed.",
-      "applicableLaw": "BNS s. 116. Chapter VI — Of Offences Affecting the Human Body. Connected: BNS s. 114, BNS s. 117, BNS s. 118, BNS s. 124.",
-      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 116 (Grievous hurt), Chapter VI — Of Offences Affecting the Human Body.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) The following kinds of hurt only are designated as “grievous”, namely:–\n   (2) (b) Permanent privation of the sight of either eye;\n   (3) (c) Permanent privation of the hearing of either ear;\n   (4) (d) Privation of any member or joint;\n   (5) (e) Destruction or permanent impairing of the powers of any member or joint;\n   (6) (f) Permanent disfiguration of the head or face;\n   (7) (g) Fracture or dislocation of a bone or tooth;\n   (8) (h) Any hurt which endangers life or which causes the sufferer to be during the space of fifteen days in severe bodily pain, or unable to follow his ordinary pursuits\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 116 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 116 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
-      "conclusion": "The result depends on proof of the ingredients of BNS s. 116. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
-    }
-  ],
-  "distinctions": [
+      id: 'bns-116-module-4',
+      title: 'Clause (h) Life-Endangering Hurt & The 15-Day Legislative Reform',
+      order: 4,
+      content: [
+        'Parliament reduced the statutory pain/incapacity threshold from twenty days (under IPC 320) to fifteen days in BNS 116(h).',
+        'Limb 1: Hurt which endangers life — puts life in immediate peril but lacks homicidal mens rea (Niranjan Singh).',
+        'Limb 2 & 3: Severe bodily pain or inability to follow ordinary pursuits continuously for fifteen days.',
+        'Hospital records must demonstrate active disability throughout the 15-day window; passive stay is insufficient.',
+      ],
+    },
     {
-      "id": "bns-116-dist",
-      "title": "BNS s. 116 and connected sections",
-      "left": "BNS s. 116",
-      "right": "BNS s. 114, BNS s. 117, BNS s. 118, BNS s. 124",
-      "rows": [
+      id: 'bns-116-module-5',
+      title: 'Appellate Advocacy, Medical Cross-Examination & Section 531 Transition',
+      order: 5,
+      content: [
+        'Defense cross-examination: Challenge the radiologist on non-production of X-ray negatives, overlapping bones, or artifacts.',
+        'Distinguish life-endangering hurt from attempt to murder (Section 109 BNS) based on weapon, site of injury, and intention.',
+        'Under Section 531(2)(a) BNSS, injuries inflicted on or before 30 June 2024 are evaluated under the 20-day rule of IPC Section 320.',
+        'Injuries inflicted on or after 1 July 2024 are governed by Section 116 BNS and its progressive 15-day threshold.',
+      ],
+    },
+  ],
+
+  provisions: [
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-116',
+      section: 's. 116',
+      title: 'Grievous hurt',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-114',
+      section: 's. 114',
+      title: 'Hurt',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-117',
+      section: 's. 117',
+      title: 'Voluntarily causing grievous hurt',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-118',
+      section: 's. 118',
+      title: 'Voluntarily causing hurt or grievous hurt by dangerous weapons or means',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-109',
+      section: 's. 109',
+      title: 'Attempt to murder',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-104',
+      section: 's. 104',
+      title: 'Burden of proof',
+    },
+    {
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-531',
+      section: 's. 531',
+      title: 'Repeal and savings',
+    },
+  ],
+
+  examples: [
+    {
+      id: 'bns-116-ill-1',
+      title: 'Application of Clause (g) — Fracture of Ulna Proved by X-Ray Plate',
+      illustrationType: 'statutory-practical',
+      description:
+        'During an altercation, accused A strikes complainant C on the left forearm with a heavy wooden club. C experiences immediate intense pain and loss of movement. The medico-legal officer refers C for radiology. The X-ray skiagram (Ex. P-4) reveals a complete transverse fracture of the left ulna. The radiologist (PW-3) testifies in court and proves the radiological plates showing clear bony discontinuity. The injury falls squarely within Section 116 Clause (g) BNS, establishing Grievous Hurt. A is convicted under Section 117 BNS.',
+    },
+    {
+      id: 'bns-116-ill-2',
+      title: 'Application of Clause (h) — The 15-Day Reform Applied to Hospitalized Victim',
+      illustrationType: 'statutory-practical',
+      description:
+        'Accused B inflicts blunt abdominal trauma on victim V on 10 July 2024, causing retroperitoneal hematoma and paralytic ileus. V is hospitalized from 10 July to 26 July 2024 (16 consecutive days). Bed-head tickets and doctor’s evidence prove that V was on total parenteral nutrition, in severe bodily pain, and completely incapacitated from walking or performing ordinary pursuits for 16 days. Under Section 116(h) BNS, because the severe pain and incapacity extended beyond the statutory 15-day floor, the injury is Grievous Hurt. Under the former IPC Section 320 (which required 20 days), this injury would have fallen short, demonstrating the direct impact of the BNS legislative reform.',
+    },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'bns-116-hypo',
+      title: 'Chamber Practice Hypothetical: Non-Production of X-Ray Plates & Failure of Clause (g)',
+      facts:
+        'On 12 August 2024, complainant D alleges that accused T struck him on the right shoulder with an iron pipe. In the Medico-Legal Examination Report (MLC), Dr. M notes: "Tenderness and swelling on right clavicle; advised X-ray. Suspected fracture." D obtains an X-ray at a private diagnostic clinic, but the police fail to seize the X-ray plates, and the private radiologist is never cited as a witness. At trial, the prosecution produces only Dr. M’s prescription sheet mentioning "Fracture clavicle" and argues that D suffered Grievous Hurt under Section 116(g) BNS punishable under Section 118(2) BNS. Defense counsel cross-examines Dr. M, who admits he never viewed the X-ray plates personally and based his opinion solely on D’s discharge card.',
+      question:
+        'As Senior Counsel appearing for the defense, formulate the legal submissions demonstrating that in the absence of original X-ray plates and radiologist deposition, Clause (g) of Section 116 BNS cannot be sustained, and the charge must be altered to simple hurt.',
+      applicableLaw:
+        'BNS ss. 114, 115, 116(g), 118; BSA ss. 61, 104; Supreme Court rulings in Horilal v. State of U.P. (1970) 1 SCC 249, State of Rajasthan v. N.K. (2000) 5 SCC 30, and Mohan Singh v. State of Punjab AIR 1975 SC 2161.',
+      analysis:
+        '1. Mandatory Evidentiary Standard for Bone Fractures under Clause (g):\n   - In Horilal (1970) and State of Rajasthan v. N.K. (2000), the Supreme Court authoritatively held that a fracture of a bone is an objective physical fact requiring positive scientific verification.\n   - A general medical officer’s visual or tactile examination noting swelling and tenderness cannot substitute for radiological proof of bony cleavage.\n2. Inadmissibility of Secondary Hearsay Medical Opinion:\n   - Dr. M’s opinion was based on an unverified private discharge card, not on original primary evidence. Under Section 61 BSA, primary documentary evidence must be produced.\n   - The failure of the investigating agency to seize the X-ray skiagrams and examine the radiologist creates a fatal evidentiary vacuum.\n3. Reduction to Simple Hurt:\n   - Because the injury does not fall under any of the eight closed clauses of Section 116 BNS, it remains simple hurt under Section 114 BNS.',
+      conclusion:
+        'The charge of Grievous Hurt under Section 116(g) read with Section 118(2) BNS is legally unsustainable. The offence must be altered to voluntarily causing hurt by dangerous weapon under Section 118(1) BNS.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'bns-116-dist-1',
+      title: 'Section 116 BNS (Grievous Hurt) vs Section 114 BNS (Simple Hurt)',
+      left: 'Section 116 BNS (Grievous Hurt)',
+      right: 'Section 114 BNS (Simple Hurt)',
+      rows: [
         {
-          "point": "Heading",
-          "left": "Grievous hurt",
-          "right": "Read the neighbour’s title on its own page before you write."
+          point: 'Statutory Definition',
+          left: 'Exhaustive closed list of eight specific grave bodily injuries (clauses a to h)',
+          right: 'Broad definition covering any bodily pain, disease, or infirmity',
         },
         {
-          "point": "What you must prove",
-          "left": "The following kinds of hurt only are designated as “grievous”, namely:–",
-          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+          point: 'Severity Threshold',
+          left: 'Permanent privation, fracture, head/face disfiguration, life danger, or 15 days pain',
+          right: 'Superficial cuts, bruises, hematomas, and temporary pain without bony/sensory loss',
         },
         {
-          "point": "Practice trap",
-          "left": "Citing a neighbour as if it were s. 116.",
-          "right": "Citing s. 116 where the neighbour actually applies."
-        }
-      ]
-    }
-  ],
-  "misconceptions": [
-    {
-      "id": "bns-116-trap-1",
-      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
-      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 116."
+          point: 'Punishment Ceiling',
+          left: 'Up to seven years under s. 117(2); life imprisonment under s. 117(3) for disability',
+          right: 'Imprisonment up to one year, or fine, or both under Section 115(2) BNS',
+        },
+      ],
     },
     {
-      "id": "bns-116-trap-2",
-      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
-      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+      id: 'bns-116-dist-2',
+      title: 'Clause (h) Life-Endangering Hurt vs Section 109 BNS (Attempt to Murder)',
+      left: 'Section 116(h) BNS (Life-Endangering Hurt)',
+      right: 'Section 109 BNS (Attempt to Murder)',
+      rows: [
+        {
+          point: 'Required Mens Rea',
+          left: 'Intention or knowledge limited to causing grievous hurt (no homicidal mens rea)',
+          right: 'Intention or knowledge to cause death or bodily injury sufficient to cause death',
+        },
+        {
+          point: 'Role of Resulting Injury',
+          left: 'Actual life-endangering injury must be caused to attract Section 116(h)',
+          right: 'Hurt is not essential; any act towards murder with homicidal mens rea suffices',
+        },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'bns-116-trap-1',
+      trap: 'Assuming that the statutory period of severe bodily pain under Clause (h) remains 20 days as under the IPC.',
+      correction:
+        'Parliament amended this threshold in BNS Section 116(h) by shortening the required duration of severe bodily pain or inability to follow ordinary pursuits to fifteen days.',
     },
     {
-      "id": "bns-116-trap-3",
-      "trap": "Giving a one-line summary or shortened explanation of the provision.",
-      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
-    }
-  ],
-  "questionsAndAnswers": [
-    {
-      "id": "bns-116-q-brief",
-      "draftingCategory": "brief",
-      "question": "Legal Assessment & Statutory Note: BNS s. 116 (Grievous hurt)",
-      "answer": "Introduction. BNS s. 116 deals with Grievous hurt. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Grievous hurt (old 320). Eight kinds: emasculation; permanent privation of eye or ear; privation of any member or joint; destruction or permanent impairing of a joint; permanent disfiguration of head or face; fracture or dislocation of a bone or tooth; any hurt which endangers life or causes the sufferer to be in severe bodily pain / unable to follow ordinary pursuits for 15 days.\n\nLegal rule. In student language: BNS s. 116 is the rule on “Grievous hurt”. The section provides that the following kinds of hurt only are designated as “grievous”, namely:–. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. The following kinds of hurt only are designated as “grievous”, namely:–\n2. (b) Permanent privation of the sight of either eye;\n3. (c) Permanent privation of the hearing of either ear;\n4. (d) Privation of any member or joint;\n5. (e) Destruction or permanent impairing of the powers of any member or joint;\n6. (f) Permanent disfiguration of the head or face;\n7. (g) Fracture or dislocation of a bone or tooth;\n8. (h) Any hurt which endangers life or which causes the sufferer to be during the space of fifteen days in severe bodily pain, or unable to follow his ordinary pursuits\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 116. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 114, BNS s. 117, BNS s. 118, BNS s. 124. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 116 is the complete current-law heading for Grievous hurt. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
-      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+      id: 'bns-116-trap-2',
+      trap: 'Treating a loose tooth or superficial contusion as a fracture under Clause (g).',
+      correction:
+        'In Horilal (1970), the Supreme Court ruled that a fracture requires a crack or break in bony continuity. Loosening of a tooth without dislocation or fracture does not constitute grievous hurt.',
     },
     {
-      "id": "bns-116-q-submissions",
-      "draftingCategory": "submissions",
-      "question": "Comprehensive Written Submissions: BNS s. 116 (Grievous hurt) with Statutory Scheme & Judicial Analysis",
-      "answer": "Introduction. BNS s. 116 deals with Grievous hurt. It sits in Chapter VI — Of Offences Affecting the Human Body of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Grievous hurt (old 320). Eight kinds: emasculation; permanent privation of eye or ear; privation of any member or joint; destruction or permanent impairing of a joint; permanent disfiguration of head or face; fracture or dislocation of a bone or tooth; any hurt which endangers life or causes the sufferer to be in severe bodily pain / unable to follow ordinary pursuits for 15 days.\n\nLegal rule. In student language: BNS s. 116 is the rule on “Grievous hurt”. The section provides that the following kinds of hurt only are designated as “grievous”, namely:–. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. The following kinds of hurt only are designated as “grievous”, namely:–\n2. (b) Permanent privation of the sight of either eye;\n3. (c) Permanent privation of the hearing of either ear;\n4. (d) Privation of any member or joint;\n5. (e) Destruction or permanent impairing of the powers of any member or joint;\n6. (f) Permanent disfiguration of the head or face;\n7. (g) Fracture or dislocation of a bone or tooth;\n8. (h) Any hurt which endangers life or which causes the sufferer to be during the space of fifteen days in severe bodily pain, or unable to follow his ordinary pursuits\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nLimitations. Apply only the conditions written in s. 116. Do not import a defence from a different chapter unless the question requires it.\n\nConnected sections. Read with BNS s. 114, BNS s. 117, BNS s. 118, BNS s. 124. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 116 is the complete current-law heading for Grievous hurt. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Homicide, organised crime, terrorism, hurt, acid, restraint, assault, kidnapping and trafficking.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 116 with BNS s. 114, BNS s. 117, BNS s. 118, BNS s. 124. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 116.”",
-      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
-    }
+      id: 'bns-116-trap-3',
+      trap: 'Believing that an oral statement by a medical officer is sufficient to prove a bone fracture.',
+      correction:
+        'The Supreme Court in State of Rajasthan v. N.K. (2000) held that original X-ray skiagram plates and the radiologist’s testimony are mandatory to establish a fracture under Clause (g).',
+    },
   ],
-  "cases": [],
-  "examTips": [
-    "Cite BNS s. 116 for offences on or after 1 July 2024.",
-    "Ingredients first, illustration second, application third, conclusion last.",
-    "Simple hurt is s. 114/115. Grievous is 116/117. Weapon/acid moves you to 118/124."
-  ],
-  "examFrameworks": [
+
+  questionsAndAnswers: [
     {
-      "question": "Structured Legal Assessment: BNS s. 116 (Grievous hurt).",
-      "steps": [
-        "Introduce BNS s. 116 and Chapter VI — Of Offences Affecting the Human Body.",
-        "Define / state the meaning in your own words.",
-        "List the essential ingredients.",
-        "Give one labelled example and map it to an ingredient.",
-        "State any express condition.",
-        "Apply in four to six sentences.",
-        "Conclude with the current citation — BNS s. 116."
-      ]
+      id: 'bns-116-q-brief',
+      draftingCategory: 'brief',
+      question: 'Senior Counsel Legal Assessment: Closed Taxonomy of Grievous Hurt under Section 116 BNS',
+      answer: `I. STATUTORY ARCHITECTURE & SCOPE
+Section 116 of the Bharatiya Nyaya Sanhita, 2023 (BNS) defines Grievous Hurt, replacing Section 320 IPC. It sits in Chapter VI ("Of Offences Affecting the Human Body").
+
+II. THE EIGHT STATUTORY CATEGORIES
+Section 116 is an exhaustive closed list comprising:
+1. Clause (a): Emasculation;
+2. Clause (b): Permanent privation of the sight of either eye;
+3. Clause (c): Permanent privation of the hearing of either ear;
+4. Clause (d): Privation of any member or joint;
+5. Clause (e): Destruction or permanent impairing of the powers of any member or joint;
+6. Clause (f): Permanent disfiguration of the head or face;
+7. Clause (g): Fracture or dislocation of a bone or tooth (requires radiological proof under Horilal);
+8. Clause (h): Any hurt which endangers life, or causes severe bodily pain or inability to follow ordinary pursuits for 15 days (reformed from the 20-day IPC standard).
+
+III. EVIDENTIARY PREREQUISITES
+- Bone fractures under Clause (g) require production of X-ray skiagram plates and radiologist testimony.
+- 15-day incapacity under Clause (h) requires continuous medical documentation of active disability.
+
+IV. TRANSITIONAL APPLICATION
+Offences committed on or after 1 July 2024 are governed by Section 116 BNS and the 15-day rule; pre-commencement conduct is governed by IPC Section 320 (20-day rule) pursuant to Section 531(2)(a) BNSS.`,
+      explanation:
+        'Authoritative statutory note on Section 116 BNS deconstructing the eight closed clauses, Horilal radiological standard, and the 15-day legislative reform.',
     },
     {
-      "question": "Comprehensive Chamber Written Submissions: BNS s. 116 with connected statutory scheme.",
-      "steps": [
-        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
-        "Place the section in the Chapter and explain why the heading exists.",
-        "Work a second hypothetical in which one ingredient fails.",
-        "Distinguish BNS s. 116 from BNS s. 114, BNS s. 117, BNS s. 118, BNS s. 124.",
-        "IRAC application to the problem facts.",
-        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
-        "Current-law conclusion."
-      ]
-    }
+      id: 'bns-116-q-submissions',
+      draftingCategory: 'submissions',
+      question: 'Appellate Written Submissions: Failure to Prove Fracture under Section 116(g) and Reduction to Simple Hurt',
+      answer: `MAY IT PLEASE YOUR LORDSHIPS:
+
+1. LOCUS OF THE CHALLENGE:
+The appellant stands convicted under Section 117(2) BNS for causing Grievous Hurt and sentenced to 3 years rigorous imprisonment. It is submitted that the finding of Grievous Hurt is vitiated by absence of mandatory radiological evidence.
+
+2. ABSENCE OF RADIOLOGICAL EVIDENCE TO ESTABLISH CLAUSE (g) FRACTURE:
+(a) The prosecution case rests solely on the deposition of PW-2 (Casualty Medical Officer) who recorded "swelling and tenderness on right ulna".
+(b) In Horilal v. State of U.P. (1970) 1 SCC 249 and State of Rajasthan v. N.K. (2000) 5 SCC 30, the Hon'ble Supreme Court authoritatively held that to establish a "fracture" under the penal code, there must be positive proof of a break or cleavage in the bone.
+(c) The prosecution failed to produce the X-ray skiagram plates before the trial court, failed to exhibit the radiological report, and never examined the radiologist.
+(d) In Mohan Singh v. State of Punjab AIR 1975 SC 2161, the Supreme Court ruled that in the absence of X-ray plates, a doctor’s oral opinion asserting a fracture is inadmissible hearsay, and the injury cannot be treated as grievous hurt.
+
+3. INAPPLICABILITY OF RESIDUAL CLAUSE (h):
+The complainant was discharged from the hospital after three days and resumed work on the fifth day. Therefore, the injury does not satisfy the 15-day continuous incapacity threshold under Section 116(h) BNS.
+
+4. PRAYER FOR REDUCTION OF OFFENCE:
+The injury failing to satisfy any of the eight closed clauses of Section 116 BNS, the conviction under Section 117(2) BNS is unsustainable and must be altered to Simple Hurt under Section 115(2) BNS, with sentence reduced to period already undergone.`,
+      explanation:
+        'Comprehensive appellate submissions establishing the mandatory radiological standard for bone fractures under Horilal, demonstrating failure of proof under Clause (g), and altering conviction to simple hurt.',
+    },
   ],
-  "answerSkeleton": [
-    "Introduction — BNS s. 116, Grievous hurt.",
-    "Meaning and definition.",
-    "Ingredients.",
-    "Illustration mapped to an ingredient.",
-    "Explanation / exception.",
-    "Application (IRAC).",
-    "Conclusion and current citation."
+
+  cases: [
+    {
+      name: 'Horilal v. State of U.P.',
+      year: 1970,
+      citation: '(1970) 1 SCC 249',
+      holding:
+        'The Supreme Court laid down the definitive test for "fracture" of a bone under the penal code: it requires a break, cleavage, or crack in the continuity of the bone; mere contusion or soft-tissue injury does not constitute fracture under Clause (g).',
+    },
+    {
+      name: 'State of Rajasthan v. N.K.',
+      year: 2000,
+      citation: '(2000) 5 SCC 30',
+      holding:
+        'Reaffirmed that proof of fracture under Clause (g) requires production of the original X-ray skiagram plates and the radiologist’s testimony; secondary oral assertions by general medical officers are insufficient.',
+    },
+    {
+      name: 'Niranjan Singh v. State of M.P.',
+      year: 2007,
+      citation: '(2007) 11 SCC 109',
+      holding:
+        'Distinguished "hurt which endangers life" under Clause (h) from injuries likely to cause death under culpable homicide; Section 116(h) applies where the injury puts life in jeopardy but homicidal intention is absent.',
+    },
+    {
+      name: 'Mohan Singh v. State of Punjab',
+      year: 1975,
+      citation: 'AIR 1975 SC 2161',
+      holding:
+        'Held that in the absence of production of X-ray plates, an opinion regarding bone fracture cannot be accepted, reducing the offence from grievous hurt to simple hurt.',
+    },
   ],
-  "revisionPoints": [
-    "BNS s. 116: Grievous hurt.",
-    "First ingredient: The following kinds of hurt only are designated as “grievous”, namely:–",
-    "No printed illustration — prepare an original labelled example.",
-    "For offences on or after 1 July 2024, the correct citation is BNS s. 116 — Grievous hurt. Older books and judgments may still print a historical number (320). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+
+  examTips: [
+    'Always emphasize that Section 116 BNS is an exhaustive closed list: "The following kinds of hurt only are designated as grievous".',
+    'Memorize the eight clauses (a) to (h) and highlight the major legislative reform in Clause (h) reducing the period from 20 days (IPC 320) to 15 days.',
+    'Under Clause (g), remember the Horilal requirement: fracture requires bony continuity break and mandatory X-ray skiagram production.',
+    'Section 116 is definitional only; punishment is awarded under Section 117 (general) or Section 118 (weapons).',
+    'Under Section 531(2)(a) BNSS, pre-1 July 2024 offences are governed by IPC Section 320 (20-day rule); post-commencement conduct by Section 116 BNS (15-day rule).',
   ],
-  "relatedTopics": [
-    "s-114",
-    "s-117",
-    "s-118",
-    "s-124"
-  ]
+
+  examFrameworks: [
+    {
+      question: 'Structured Chamber Brief: Evaluating Injury under Section 116 BNS',
+      steps: [
+        'Confirm injury meets definition of Hurt under Section 114 BNS.',
+        'Map injury against the eight closed clauses (a) to (h) of Section 116 BNS.',
+        'If a bone injury is alleged, inspect whether original X-ray plates and radiologist report are on record (Horilal, N.K.).',
+        'If 15-day pain/incapacity is alleged under Clause (h), check bed-head tickets for continuous 15-day disability.',
+        'If no clause is satisfied, classify as Simple Hurt under Section 114/115 BNS.',
+        'Select the appropriate charging section (Section 117 or Section 118 BNS).',
+      ],
+    },
+    {
+      question: 'Appellate Submissions: Challenging Finding of Grievous Hurt',
+      steps: [
+        'Challenge absence of X-ray plates and non-examination of radiologist under Clause (g).',
+        'Demonstrate that the victim resumed ordinary pursuits prior to the 15-day threshold under Clause (h).',
+        'Argue that Section 116 is an exhaustive closed list and unproved categories cannot be treated as grievous.',
+        'Pray for conversion to Simple Hurt under Section 115 BNS.',
+      ],
+    },
+  ],
+
+  answerSkeleton: [
+    'Introduction — Section 116 BNS, Chapter VI ("Of Offences Affecting the Human Body"), replacing Section 320 IPC.',
+    'Exhaustive Closed List — Eight codified clauses (a) to (h).',
+    'Key Clauses Deconstructed — Sensory privation (b, c), structural/joint loss (d, e), facial disfigurement (f), bone/tooth fracture (g).',
+    'Clause (h) 15-Day Reform — Endangering life, severe bodily pain, or ordinary pursuits incapacity reduced from 20 days to 15 days.',
+    'Evidentiary Rules — Horilal and N.K. standard: mandatory X-ray plates and radiologist deposition for Clause (g).',
+    'Transition & Charging — Read with Section 117/118 BNS; prospective 15-day standard under BNSS s. 531.',
+  ],
+
+  revisionPoints: [
+    'Section 116 BNS replaces Section 320 IPC.',
+    'Contains an exhaustive closed list of 8 categories of grievous hurt.',
+    'Clause (h) reduces the statutory threshold from 20 days to 15 days.',
+    'Fracture under Clause (g) requires break in bone continuity and X-ray proof (Horilal).',
+    'Section 116 is definitional; punishment is under Section 117/118 BNS.',
+  ],
+
+  relatedTopics: [
+    's-114',
+    's-115',
+    's-117',
+    's-118',
+    's-124',
+  ],
 }
 
 export default content
