@@ -15,7 +15,7 @@
 
 import {
   parseCitation,
-  parseCitationList,
+  extractCitationsFromDocument,
   normalizeCitationKey,
   type ParsedCitation,
   type CitationStatus,
@@ -40,7 +40,7 @@ export interface MatchedRecord {
   neutralCitation?: string
   source: 'canonical' | 'landmark' | 'manual'
   canonicalEntityId?: string
-  confidence: number // 0.0 - 1.0
+  confidence: number
   officialUrl?: string
   summary?: string
   ratioDecidendi?: string
@@ -61,7 +61,7 @@ export interface VerifiedCitation {
   neutralCourt?: string
   neutralIndex?: string
   status: CitationStatus
-  confidence: number // 0.0 - 1.0
+  confidence: number
   matchedRecord?: MatchedRecord
   notes: string[]
   officialSources: OfficialSourceLink[]
@@ -85,9 +85,6 @@ const HIGH_COURT_URL_MAP: Record<string, string> = {
   PHHC: 'https://highcourtchd.gov.in/',
 }
 
-/**
- * Resolves authoritative official links based on court or neutral identifier.
- */
 export function resolveOfficialSources(
   courtHint?: string,
   neutralCourt?: string
@@ -128,7 +125,6 @@ export function resolveOfficialSources(
     })
   }
 
-  // Always link India Code for statutory references
   sources.push({
     name: 'India Code (Digital Repository of Acts)',
     url: 'https://www.indiacode.nic.in/',
@@ -152,9 +148,6 @@ interface MatchCandidate {
   reasons: string[]
 }
 
-/**
- * Score a judgment against parsed citation criteria.
- */
 function scoreJudgmentMatch(judgment: Judgment, parsed: ParsedCitation): MatchCandidate | null {
   let score = 0
   const reasons: string[] = []
@@ -163,7 +156,6 @@ function scoreJudgmentMatch(judgment: Judgment, parsed: ParsedCitation): MatchCa
   const jCitationNorm = judgment.citation ? normalizeCitationKey(judgment.citation) : ''
   const jNeutralNorm = judgment.neutralCitation ? normalizeCitationKey(judgment.neutralCitation) : ''
 
-  // 1. Exact Citation or Neutral Citation Match (Highest Weight)
   if (jCitationNorm && (normRaw.includes(jCitationNorm) || jCitationNorm.includes(normRaw))) {
     score += 0.80
     reasons.push(`Exact citation match: ${judgment.citation}`)
@@ -181,7 +173,6 @@ function scoreJudgmentMatch(judgment: Judgment, parsed: ParsedCitation): MatchCa
     reasons.push(`Volume (${parsed.volume}) and page (${parsed.page}) match in ${judgment.citation}`)
   }
 
-  // 2. Case Name Matching
   const targetName = parsed.caseName || (parsed.style === 'name-only' ? parsed.raw : undefined)
   if (targetName) {
     const normTargetName = normalizeCitationKey(targetName)
@@ -195,7 +186,6 @@ function scoreJudgmentMatch(judgment: Judgment, parsed: ParsedCitation): MatchCa
       score += 0.70
       reasons.push(`Full case title contains search query`)
     } else {
-      // Token overlap (e.g. "Kesavananda" + "Kerala", "Maneka" + "Gandhi")
       const inputTokens = cleanTokens(targetName)
       const jTokens = new Set(cleanTokens(judgment.caseName))
       const common = inputTokens.filter((t) => jTokens.has(t))
@@ -209,7 +199,6 @@ function scoreJudgmentMatch(judgment: Judgment, parsed: ParsedCitation): MatchCa
     }
   }
 
-  // 3. Year Agreement
   if (parsed.year && judgment.year) {
     const inputYear = parseInt(parsed.year, 10)
     if (inputYear === judgment.year) {
@@ -219,7 +208,6 @@ function scoreJudgmentMatch(judgment: Judgment, parsed: ParsedCitation): MatchCa
       score += 0.05
       reasons.push(`Decision year within 1-year reporting variance (${judgment.year})`)
     } else if (score >= 0.55) {
-      // Keep at 0.50 so it triggers PARTIAL review instead of being discarded
       score = Math.max(0.50, score - 0.15)
       reasons.push(`Year discrepancy: query cited ${parsed.year}, record reports ${judgment.year}`)
     }
@@ -236,13 +224,9 @@ function scoreJudgmentMatch(judgment: Judgment, parsed: ParsedCitation): MatchCa
   return null
 }
 
-/**
- * Evaluates a parsed citation synchronously against ALL_JUDGMENTS repository.
- */
 export function verifyCitationSync(input: string | ParsedCitation): VerifiedCitation {
   const parsed = typeof input === 'string' ? parseCitation(input) : input
 
-  // Empty input safeguard
   if (!parsed.raw.trim()) {
     return {
       raw: '',
@@ -268,7 +252,6 @@ export function verifyCitationSync(input: string | ParsedCitation): VerifiedCita
   const officialSources = resolveOfficialSources(parsed.courtHint, parsed.neutralCourt)
   const notes = [...parsed.notes]
 
-  // Scenario 1: Multiple conflicting candidates with distinct courts or years
   if (candidates.length >= 2 && candidates[0].score >= 0.65 && candidates[1].score >= 0.65) {
     const c0 = candidates[0].judgment
     const c1 = candidates[1].judgment
@@ -288,7 +271,6 @@ export function verifyCitationSync(input: string | ParsedCitation): VerifiedCita
     }
   }
 
-  // Scenario 2: Strong match >= 0.85 -> VERIFIED
   if (candidates.length > 0 && candidates[0].score >= 0.85) {
     const best = candidates[0]
     notes.push(
@@ -311,7 +293,6 @@ export function verifyCitationSync(input: string | ParsedCitation): VerifiedCita
     }
   }
 
-  // Scenario 3: Moderate match 0.50 - 0.84 -> PARTIAL
   if (candidates.length > 0 && candidates[0].score >= 0.50) {
     const best = candidates[0]
     notes.push(
@@ -334,7 +315,6 @@ export function verifyCitationSync(input: string | ParsedCitation): VerifiedCita
     }
   }
 
-  // Scenario 4: User-provided name-only form without match
   if (parsed.style === 'name-only') {
     notes.push(
       'User-provided case title detected. No identical match in local landmark database. Cross-reference in court records.'
@@ -349,7 +329,6 @@ export function verifyCitationSync(input: string | ParsedCitation): VerifiedCita
     }
   }
 
-  // Scenario 5: Unverified (No reliable source located)
   notes.push(
     'Unverified in local landmark index. Never interpret this as "the case does not exist". Verify citation via official court portals.'
   )
@@ -381,20 +360,13 @@ function candidateToMatchedRecord(candidate: MatchCandidate): MatchedRecord {
   }
 }
 
-/**
- * Asynchronously verifies a citation, querying local landmark records and
- * checking the canonical ContentGateway manifest.
- */
 export async function verifyCitation(input: string | ParsedCitation): Promise<VerifiedCitation> {
-  // First run synchronous local index match
   const verified = verifyCitationSync(input)
 
-  // If already verified with high confidence, return
   if (verified.status === 'verified') {
     return verified
   }
 
-  // Check canonical ContentGateway manifest for any published canonical judgments
   try {
     const repo = getContentRepository()
     if (typeof repo.getManifest === 'function') {
@@ -432,24 +404,21 @@ export async function verifyCitation(input: string | ParsedCitation): Promise<Ve
       }
     }
   } catch {
-    // Graceful fallback to verified
+    // Graceful fallback
   }
 
   return verified
 }
 
 /**
- * Synchronously verifies a list of citations separated by newlines or semicolons.
+ * PH4-030 — verifies citations extracted from a list or continuous document text.
  */
 export function verifyCitationListSync(text: string): VerifiedCitation[] {
-  const parsedList = parseCitationList(text)
+  const parsedList = extractCitationsFromDocument(text)
   return parsedList.map(verifyCitationSync)
 }
 
-/**
- * Asynchronously verifies a list of citations.
- */
 export async function verifyCitationList(text: string): Promise<VerifiedCitation[]> {
-  const parsedList = parseCitationList(text)
+  const parsedList = extractCitationsFromDocument(text)
   return Promise.all(parsedList.map(verifyCitation))
 }
