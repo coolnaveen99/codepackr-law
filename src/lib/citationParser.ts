@@ -7,6 +7,7 @@
  * - AIR citations: AIR 1978 SC 597, AIR 1973 SC 1461, AIR 2020 Bom 45
  * - SCR citations: [1950] SCR 88, (1978) 2 SCR 621, [2023] 1 S.C.R. 200
  * - Case names: Kesavananda Bharati v. State of Kerala
+ * - Document multi-citation extraction (PH4-030)
  *
  * Roadmap § 9 rule: Never claims a citation "does not exist" when unmatched.
  */
@@ -159,7 +160,6 @@ export function parseCitation(rawInput: string): ParsedCitation {
     }
   }
 
-  // 1. Supreme Court Neutral Citation: [2023] INSC 123
   const neutralInsc = raw.match(NEUTRAL_INSC_PATTERN)
   if (neutralInsc && neutralInsc.index !== undefined) {
     const caseName = extractPrefix(raw, neutralInsc.index)
@@ -182,7 +182,6 @@ export function parseCitation(rawInput: string): ParsedCitation {
     }
   }
 
-  // 2. High Court Neutral Citation (Colon format: 2023:DHC:1234)
   const neutralHcColon = raw.match(NEUTRAL_HC_COLON_PATTERN)
   if (neutralHcColon && neutralHcColon.index !== undefined) {
     const caseName = extractPrefix(raw, neutralHcColon.index)
@@ -207,7 +206,6 @@ export function parseCitation(rawInput: string): ParsedCitation {
     }
   }
 
-  // 3. AIR: AIR 1978 SC 597
   const air = raw.match(AIR_PATTERN)
   if (air && air.index !== undefined) {
     const caseName = extractPrefix(raw, air.index)
@@ -231,7 +229,6 @@ export function parseCitation(rawInput: string): ParsedCitation {
     }
   }
 
-  // 4. SCC OnLine: 2021 SCC OnLine SC 345
   const sccOnline = raw.match(SCC_ONLINE_PATTERN)
   if (sccOnline && sccOnline.index !== undefined) {
     const caseName = extractPrefix(raw, sccOnline.index)
@@ -255,7 +252,6 @@ export function parseCitation(rawInput: string): ParsedCitation {
     }
   }
 
-  // 5. SCC Supplement: 1993 Supp (1) SCC 123
   const sccSupp = raw.match(SCC_SUPP_PATTERN)
   if (sccSupp && sccSupp.index !== undefined) {
     const caseName = extractPrefix(raw, sccSupp.index)
@@ -280,7 +276,6 @@ export function parseCitation(rawInput: string): ParsedCitation {
     }
   }
 
-  // 6. Standard SCC: (2020) 5 SCC 1 or [1973] 4 SCC 225
   const sccStd = raw.match(SCC_STANDARD_PATTERN)
   if (sccStd && sccStd.index !== undefined) {
     const caseName = extractPrefix(raw, sccStd.index)
@@ -304,7 +299,6 @@ export function parseCitation(rawInput: string): ParsedCitation {
     }
   }
 
-  // 7. Supreme Court Reports (SCR): [1950] SCR 88
   const scr = raw.match(SCR_PATTERN)
   if (scr && scr.index !== undefined) {
     const caseName = extractPrefix(raw, scr.index)
@@ -328,7 +322,6 @@ export function parseCitation(rawInput: string): ParsedCitation {
     }
   }
 
-  // 8. High Court Neutral Citation (Space format: 2023 DHC 1234)
   const neutralHcSpace = raw.match(NEUTRAL_HC_SPACE_PATTERN)
   if (neutralHcSpace && neutralHcSpace.index !== undefined) {
     const candidateBench = neutralHcSpace[2].toUpperCase()
@@ -355,7 +348,6 @@ export function parseCitation(rawInput: string): ParsedCitation {
     }
   }
 
-  // 9. Case name only: Petitioner v. Respondent
   const nameMatch = raw.match(NAME_V_RE)
   if (nameMatch) {
     const party1 = nameMatch[1].trim()
@@ -372,7 +364,6 @@ export function parseCitation(rawInput: string): ParsedCitation {
     }
   }
 
-  // 10. Fallback: Unknown
   return {
     raw,
     style: 'unknown',
@@ -380,13 +371,14 @@ export function parseCitation(rawInput: string): ParsedCitation {
     notes: [
       'Could not parse a recognized citation pattern.',
       'Never interpret this as "the case does not exist".',
-      'Supported formats: SCC (e.g. (2020) 5 SCC 1), SCC OnLine (e.g. 2021 SCC OnLine SC 345), Neutral (e.g. 2023 INSC 123 or 2023:DHC:1234), AIR (e.g. AIR 1978 SC 597), or Case Name (e.g. X v. Y).',
+      'Supported formats: SCC, SCC OnLine, Neutral (INSC / HC), AIR, Case Name (X v. Y).',
     ],
   }
 }
 
 /**
  * Parses a newline- or semicolon-separated list of citations.
+ * Prefer {@link extractCitationsFromDocument} for continuous prose / judgment extracts.
  */
 export function parseCitationList(text: string): ParsedCitation[] {
   return text
@@ -394,6 +386,110 @@ export function parseCitationList(text: string): ParsedCitation[] {
     .map((s) => s.trim())
     .filter(Boolean)
     .map(parseCitation)
+}
+
+/** Span found while scanning continuous document text (PH4-030). */
+export interface DocumentCitationHit {
+  start: number
+  end: number
+  span: string
+  caseNamePrefix?: string
+}
+
+/** Global scan patterns ordered from more specific to less specific. */
+const DOCUMENT_SCAN_PATTERNS: RegExp[] = [
+  /\b(?:\(?\d{4}\)?\s+)?SCC\s+OnLine\s+[A-Za-z&]{2,6}\s+\d+/gi,
+  /\b(?:\(?\d{4}\)?|\d{4})\s+Supp\s*(?:\(\d+\)|\d+)?\s+SCC\s+\d+/gi,
+  /\[?\(?\d{4}\)?\]?\s+\d+\s+SCC\s+\d+/gi,
+  /\bAIR\s+\d{4}\s+[A-Za-z&]{2,6}\s+\d+/gi,
+  /\[?\(?\d{4}\)?\]?\s+(?:\d+\s+)?S\.?C\.?R\.?\s+\d+/gi,
+  /\b\d{4}\s+INSC\s+\d+/gi,
+  /\b\d{4}:[A-Za-z&]{2,6}:\d+/gi,
+]
+
+const CASE_NAME_LOOKBEHIND =
+  /([A-Za-z0-9][A-Za-z0-9 .,&'()\-]{1,90}?)\s+v(?:ersus|\.|s\.?|\/)\s+([A-Za-z0-9][A-Za-z0-9 .,&'()\-]{1,90}?)\s*[,:;\-–—]?\s*$/i
+
+function findCaseNamePrefix(text: string, matchStart: number): string | undefined {
+  const from = Math.max(0, matchStart - 140)
+  const window = text.slice(from, matchStart)
+  const m = window.match(CASE_NAME_LOOKBEHIND)
+  if (!m) return undefined
+  const name = `${m[1].trim()} v. ${m[2].trim()}`.replace(/\s+/g, ' ')
+  return name.length >= 5 ? name : undefined
+}
+
+function rangesOverlap(aStart: number, aEnd: number, bStart: number, bEnd: number): boolean {
+  return aStart < bEnd && bStart < aEnd
+}
+
+/**
+ * Locate reporter / neutral citation spans inside continuous legal text.
+ */
+export function scanDocumentCitationSpans(text: string): DocumentCitationHit[] {
+  if (!text || !text.trim()) return []
+
+  const hits: DocumentCitationHit[] = []
+
+  for (const pattern of DOCUMENT_SCAN_PATTERNS) {
+    const re = new RegExp(pattern.source, pattern.flags)
+    let m: RegExpExecArray | null
+    while ((m = re.exec(text)) !== null) {
+      const span = m[0].trim()
+      if (!span) continue
+      const start = m.index + (m[0].length - m[0].trimStart().length)
+      const end = start + span.length
+      hits.push({
+        start,
+        end,
+        span,
+        caseNamePrefix: findCaseNamePrefix(text, start),
+      })
+    }
+  }
+
+  hits.sort((a, b) => a.start - b.start || b.end - b.start - (a.end - a.start))
+  const accepted: DocumentCitationHit[] = []
+  for (const hit of hits) {
+    const overlaps = accepted.some((a) => rangesOverlap(a.start, a.end, hit.start, hit.end))
+    if (!overlaps) accepted.push(hit)
+  }
+  accepted.sort((a, b) => a.start - b.start)
+  return accepted
+}
+
+/**
+ * PH4-030 — Extract multiple citations from continuous document / judgment text.
+ */
+export function extractCitationsFromDocument(text: string): ParsedCitation[] {
+  const trimmed = text?.trim() ?? ''
+  if (!trimmed) return []
+
+  const spans = scanDocumentCitationSpans(trimmed)
+  const extracted: ParsedCitation[] = []
+  const seen = new Set<string>()
+
+  for (const hit of spans) {
+    const combined = hit.caseNamePrefix ? `${hit.caseNamePrefix}, ${hit.span}` : hit.span
+    const parsed = parseCitation(combined)
+    if (parsed.style === 'unknown' && !parsed.caseName) continue
+    const key = normalizeCitationKey(
+      [parsed.year, parsed.reporter, parsed.volume, parsed.page, parsed.neutralCourt, parsed.neutralIndex, parsed.caseName]
+        .filter(Boolean)
+        .join(' ') || parsed.raw,
+    )
+    if (seen.has(key)) continue
+    seen.add(key)
+    parsed.notes = [
+      ...parsed.notes,
+      'Extracted from continuous document text (PH4-030 scanner). Verify against official reporter.',
+    ]
+    extracted.push(parsed)
+  }
+
+  if (extracted.length > 0) return extracted
+
+  return parseCitationList(trimmed)
 }
 
 /**
