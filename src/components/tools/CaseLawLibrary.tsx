@@ -681,6 +681,7 @@ function JudgmentReader({
   onToggleBookmark,
   onMarkSection,
   onOpenJudgment,
+  hasRelatedJudgment,
   onOpenTopic,
 }: {
   judgment: Judgment
