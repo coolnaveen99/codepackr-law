@@ -333,3 +333,24 @@ Implementation is complete on `main`.
 **Phase 24 status:** CLOSED.
 
 **Next:** Phase 25 — Draft Catalogue Governance.
+
+
+## Phase 25 — Draft Catalogue Governance (CLOSED)
+
+Implementation is complete on `main`.
+
+- `src/data/draftTiers.ts` now defines four explicit governance tiers: verified full template, educational scaffold, catalogue entry and checklist.
+- Missing tier metadata no longer silently promotes an entry to Tier 1.
+- Existing substantive reviewed templates are explicitly classified as Tier 1.
+- The large document-type catalogue is classified as Tier 3 discovery-only content.
+- Tier 3 catalogue entries no longer generate generic pleading bodies.
+- Legal Draft Studio displays the governance tier and permitted-use boundary.
+- Governance filters expose all four tiers.
+- Tier 3 and Tier 4 cannot expose drafting/export actions.
+- Focused governance tests cover classification, filtering and export/edit permissions.
+- Exit audit: `docs/PHASE-25-EXIT-AUDIT.md`.
+- CI/build: **PASS** — run `36897399044`.
+
+**Phase 25 status:** CLOSED.
+
+**Next:** Phase 26 — Court / State Configuration.

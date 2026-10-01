@@ -79,7 +79,7 @@ All listed tools are wired in `App.tsx` (or dedicated routes for case-law / know
 | Aggregate analytics only | `src/lib/analytics.ts` |
 | Sanitize helpers | `src/lib/sanitize.ts` |
 | Source / copyright policy constants | `src/data/sourcePolicy.ts` |
-| Draft tiers | `src/data/draftTiers.ts` |
+| Draft tiers / governance | `src/data/draftTiers.ts` |
 | Court / state seed | `src/data/courtProfiles.ts` |
 | AI architecture (policy only) | `docs/ai-architecture-contract.md` |
 | Content verification policy | `docs/legal-content-verification-policy.md` |
@@ -125,3 +125,15 @@ All listed tools are wired in `App.tsx` (or dedicated routes for case-law / know
 ## 7. Maintenance rule
 
 When adding a route or tool: update `urls.ts` / `App.tsx` / `tools.ts`, this matrix, nav if needed, then run lint + test + build.
+
+
+## Phase 25 — Draft Catalogue Governance
+
+The Legal Draft Studio now enforces four governance tiers rather than treating all document entries as equivalent:
+
+1. **Tier 1 — Verified full template:** reviewed substantive educational template; professional completion still required.
+2. **Tier 2 — Structured educational scaffold:** structured drafting aid requiring completion and verification.
+3. **Tier 3 — Catalogue entry:** document-type discovery only; no generic pleading body or export.
+4. **Tier 4 — Checklist:** filing/readiness checklist, not a pleading.
+
+Unclassified entries default conservatively to Tier 2. The catalogue generator emits Tier 3 entries and no longer constructs a generic pseudo-pleading.

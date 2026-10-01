@@ -593,3 +593,32 @@ The Phase 18 roadmap deliverable is complete: the verification policy defines re
 **Next action:** Phase 25 — Draft Catalogue Governance.
 
 **Phase 24 status:** **CLOSED**.
+
+
+## Phase 25 — Draft Catalogue Governance — COMPLETED (2026-10-01)
+
+**Implementation:** Four-tier governance enforcement in `src/data/draftTiers.ts`, Legal Draft Studio, substantive draft metadata and catalogue conversion.
+
+**Exit audit:** `docs/PHASE-25-EXIT-AUDIT.md`
+
+**Validation:** Law CI run **#36897399044** — TypeScript PASS, unit tests PASS, production build PASS.
+
+| Check | Result |
+|---|---|
+| Tier 1 — Verified full template | **PASS** |
+| Tier 2 — Structured educational scaffold | **PASS** |
+| Tier 3 — Catalogue entry | **PASS** |
+| Tier 4 — Checklist definition | **PASS** |
+| Unclassified draft entries never default to Tier 1 | **PASS** |
+| Catalogue entries cannot expose generic pleading bodies | **PASS** |
+| Catalogue entries cannot be exported as drafts | **PASS** |
+| Governance filter exposes all four tiers | **PASS** |
+| Tier metadata explicitly states permitted use | **PASS** |
+| Existing reviewed substantive templates classified as Tier 1 | **PASS** |
+| Client-side/local privacy boundary preserved | **PASS** |
+
+**Blocker:** None.
+
+**Next action:** Phase 26 — Court / State Configuration.
+
+**Phase 25 status:** **CLOSED**.
