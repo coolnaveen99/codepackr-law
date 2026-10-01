@@ -73,6 +73,8 @@
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
 | PH17-010 | AI Architecture contract implementation | **COMPLETED** | P1 |
 | PH17-100 | Phase 17 exit audit | **COMPLETED** | P0 |
+| PH20-010 | Mobile and Accessibility implementation | **COMPLETED** | P1 |
+| PH20-100 | Phase 20 exit audit | **COMPLETED** | P0 |
 
 ### PH4-040 — COMPLETED (2026-10-01)
 
@@ -437,6 +439,31 @@ The Phase 18 roadmap deliverable is complete: the verification policy defines re
 **Phase 19 status:** **CLOSED**.
 
 **Next executable phase:** Phase 20 — Mobile and Accessibility.
+
+
+## Phase 20 — Mobile and Accessibility — COMPLETED (2026-10-01)
+
+**Implementation:** PR #94  
+**Exit audit:** `docs/PHASE-20-EXIT-AUDIT.md`  
+**Validation:** CI **#380** — TypeScript PASS, unit tests PASS, production build PASS.
+
+| Check | Result |
+|---|---|
+| 44px mobile control baseline | **PASS** |
+| Sticky action / bottom-navigation non-blocking spacing | **PASS** |
+| Responsive table → card layout below 640px | **PASS** |
+| Keyboard navigation / visible focus | **PASS** |
+| Screen-reader labels / responsive table labels | **PASS** |
+| Contrast / non-colour status boundary | **PASS** |
+| Reduced-motion support | **PASS** |
+| Focus not obscured by mobile navigation | **PASS** |
+| Focused regression tests | **PASS** — CI #380 |
+| TypeScript + production build | **PASS** — CI #380 |
+
+**Blocker:** None for Phase 20.  
+**Next action:** Phase 21 — PWA / Offline.
+
+**Phase 20 status:** **CLOSED**.
 
 ## Phase 17 — AI Architecture — COMPLETED (2026-10-01)
 
