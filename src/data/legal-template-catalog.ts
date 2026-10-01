@@ -76,7 +76,9 @@ export function catalogToDraftTemplate(entry: (typeof TEMPLATE_CATALOG)[number])
     description: entry.description,
     disclaimer: 'Educational catalogue scaffold only. Not a court-approved form. Verify the applicable statute, rules, jurisdiction and current practice before filing.',
     fields: GENERIC_FIELDS,
-    lastReviewed: '2026-09-29',
+    tier: entry.tier,
+    courtForum: entry.courtForum,
+    stateDependency: entry.stateDependency,
     build: (values) => [
       'IN THE ' + (values.court || '________________ COURT / AUTHORITY'),
       '',
