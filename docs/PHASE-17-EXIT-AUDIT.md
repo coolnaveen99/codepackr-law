@@ -17,7 +17,7 @@
 | Conflict handling | **PASS** | Citation conflicts surface as conflict status and require review |
 | Predictive/bias restrictions | **PASS** | Judicial outcome, judge-bias, conviction, winner prediction and authoritative-AI flags are disabled |
 | Privacy boundary | **PASS** | No AI provider, endpoint, telemetry, or remote legal-text path added |
-| Tests | **PENDING CI** | `tests/ai-architecture.test.ts` covers contract, citation safety, fallback and prohibited boundaries |
+| Tests | **PASS** | `tests/ai-architecture.test.ts` covers contract, citation safety, fallback and prohibited boundaries |
 | TypeScript/build | **PENDING CI** | GitHub Actions is the merge gate |
 
 ## Architecture decision
