@@ -6,6 +6,7 @@ import {
   Loader2,
   Plus,
   Search,
+  ShieldCheck,
   Sparkles,
   Trash2,
 } from 'lucide-react'
@@ -27,6 +28,11 @@ import {
   type AuthoritySuggestion,
 } from '../../content/suggestions'
 import { hrefForCanonicalTopicId } from '../../content/parseCanonicalTopicId'
+import {
+  buildCitationPayload,
+  buildCitationVerifierUrl,
+  saveCitationHandoff,
+} from '../../lib/citationHandoff'
 
 export function ResearchWorkbench() {
   const [session, setSession] = useState<ResearchSession>(() =>
@@ -79,6 +85,23 @@ export function ResearchWorkbench() {
   }, [session.question.subjectSlug, session.question.act, session.question.section, hydrated])
 
   const note = useMemo(() => researchNoteFromSession(session), [session])
+
+  const hasCitationsToVerify = useMemo(
+    () => session.authorities.some((r) => (r.citation || '').trim() || (r.caseName || '').trim()),
+    [session.authorities],
+  )
+
+  const handleVerifyCitations = (items: (string | AuthorityRow)[], newTab = false) => {
+    const payload = buildCitationPayload(items)
+    if (!payload) return
+    saveCitationHandoff(payload)
+    const url = buildCitationVerifierUrl(payload)
+    if (newTab) {
+      window.open(url, '_blank', 'noopener,noreferrer')
+    } else {
+      window.location.href = url
+    }
+  }
 
   const patchQuestion = (patch: Partial<ResearchSession['question']>) => {
     setSession((s) => ({ ...s, question: { ...s.question, ...patch } }))
@@ -424,17 +447,29 @@ export function ResearchWorkbench() {
       </section>
 
       <section className="space-y-3">
-        <div className="flex items-center justify-between gap-2">
+        <div className="flex flex-wrap items-center justify-between gap-2">
           <h2 className="text-sm font-black">Authority matrix</h2>
-          <button
-            type="button"
-            className="inline-flex items-center gap-1 rounded-xl border border-slate-200 dark:border-slate-700 px-2 py-1 text-xs font-bold"
-            onClick={() =>
-              setSession((s) => ({ ...s, authorities: [...s.authorities, emptyAuthorityRow()] }))
-            }
-          >
-            <Plus className="size-3.5" /> Add row
-          </button>
+          <div className="flex flex-wrap items-center gap-2">
+            {hasCitationsToVerify && (
+              <button
+                type="button"
+                className="inline-flex items-center gap-1 rounded-xl border border-blue-200 dark:border-blue-800 bg-blue-50/70 dark:bg-blue-950/40 px-2.5 py-1 text-xs font-bold text-blue-900 dark:text-blue-200 hover:bg-blue-100 dark:hover:bg-blue-900/60"
+                onClick={() => handleVerifyCitations(session.authorities, true)}
+                title="Hand off all citations in matrix to Citation Verifier (opens in new tab)"
+              >
+                <ShieldCheck className="size-3.5 text-blue-700 dark:text-blue-300" /> Verify in Citation Verifier ↗
+              </button>
+            )}
+            <button
+              type="button"
+              className="inline-flex items-center gap-1 rounded-xl border border-slate-200 dark:border-slate-700 px-2 py-1 text-xs font-bold"
+              onClick={() =>
+                setSession((s) => ({ ...s, authorities: [...s.authorities, emptyAuthorityRow()] }))
+              }
+            >
+              <Plus className="size-3.5" /> Add row
+            </button>
+          </div>
         </div>
         {session.authorities.map((r) => (
           <div
@@ -554,18 +589,30 @@ export function ResearchWorkbench() {
                 <option value="conflict">conflict</option>
                 <option value="needs-review">needs-review</option>
               </select>
-              <button
-                type="button"
-                onClick={() =>
-                  setSession((s) => ({
-                    ...s,
-                    authorities: s.authorities.filter((x) => x.id !== r.id),
-                  }))
-                }
-                className="inline-flex items-center gap-1 text-xs font-bold text-red-600"
-              >
-                <Trash2 className="size-3.5" /> Remove
-              </button>
+              <div className="inline-flex items-center gap-3">
+                {(r.citation?.trim() || r.caseName?.trim()) && (
+                  <button
+                    type="button"
+                    onClick={() => handleVerifyCitations([r], true)}
+                    className="inline-flex items-center gap-1 text-xs font-bold text-blue-700 hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-200"
+                    title="Hand off this citation to Citation Verifier"
+                  >
+                    <ShieldCheck className="size-3.5" /> Verify ↗
+                  </button>
+                )}
+                <button
+                  type="button"
+                  onClick={() =>
+                    setSession((s) => ({
+                      ...s,
+                      authorities: s.authorities.filter((x) => x.id !== r.id),
+                    }))
+                  }
+                  className="inline-flex items-center gap-1 text-xs font-bold text-red-600"
+                >
+                  <Trash2 className="size-3.5" /> Remove
+                </button>
+              </div>
             </div>
           </div>
         ))}

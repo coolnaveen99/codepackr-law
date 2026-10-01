@@ -28,8 +28,19 @@
 | PH3-030 | Authority matrix column expansion | **COMPLETED** | P0 |
 | PH3-040 | Research note polish / export | **COMPLETED** | P0 |
 | PH3-050 | ContentGateway authority suggestions | **COMPLETED** | P0 |
-| PH3-060 | Deep-link hand-off to Citation Verifier | **BACKLOG** | P1 |
+| PH3-060 | Deep-link hand-off to Citation Verifier | **DEVELOPED (Pending validation)** | P1 |
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
+
+### PH3-060 — DEVELOPMENT COMPLETE (Pending final validation)
+
+*Status:* **DEVELOPED (Pending final validation)**  
+*Privacy boundary compliance:* Zero privileged client facts or research notes in URLs; only published citation strings and case names are handed off (§5.5).
+
+| Item | Details |
+|---|---|
+| **Changes made** | • Created `src/lib/citationHandoff.ts` (`buildCitationPayload`, `buildCitationVerifierUrl`, `saveCitationHandoff`, `loadAndClearCitationHandoff`).<br>• Updated `src/components/tools/CitationVerifier.tsx` to read incoming hand-offs on mount, prefill citation textarea, and display a return banner to Workbench.<br>• Updated `src/components/tools/ResearchWorkbench.tsx` with batch "Verify in Citation Verifier ↗" in the Authority Matrix header and individual "Verify ↗" actions on authority rows.<br>• Authored unit tests in `tests/citation-handoff.test.ts` for citation formatting, encoding, and storage safety. |
+| **Blockers** | None. |
+| **Next action** | Execute final validation phase (run test runner and typecheck) to verify all tests pass, then mark task COMPLETED. |
 
 ### PH3-030 — COMPLETED (2026-10-01)
 

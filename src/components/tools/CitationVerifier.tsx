@@ -1,6 +1,7 @@
-import { useMemo, useState } from 'react'
-import { CheckCircle2, HelpCircle, ShieldAlert, ShieldCheck } from 'lucide-react'
+import { useEffect, useMemo, useState } from 'react'
+import { ArrowLeft, CheckCircle2, HelpCircle, ShieldAlert, ShieldCheck } from 'lucide-react'
 import { parseCitationList, type CitationStatus } from '../../lib/citationParser'
+import { loadAndClearCitationHandoff } from '../../lib/citationHandoff'
 
 function statusStyle(s: CitationStatus) {
   switch (s) {
@@ -18,6 +19,16 @@ function statusStyle(s: CitationStatus) {
 
 export function CitationVerifier() {
   const [text, setText] = useState('')
+  const [handoffSource, setHandoffSource] = useState<'query' | 'session' | null>(null)
+
+  useEffect(() => {
+    const { text: incoming, source } = loadAndClearCitationHandoff()
+    if (incoming) {
+      setText(incoming)
+      setHandoffSource(source)
+    }
+  }, [])
+
   const results = useMemo(() => parseCitationList(text), [text])
 
   return (
@@ -31,6 +42,23 @@ export function CitationVerifier() {
           Paste SCC / AIR-style citations or case names (one per line). This tool performs a structural parse only.
           It never converts "not found" into "case does not exist".
         </p>
+
+        {handoffSource && (
+          <div className="mt-3 flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-blue-200 dark:border-blue-900 bg-blue-50/70 dark:bg-blue-950/40 p-3 text-xs text-blue-950 dark:text-blue-200">
+            <div className="flex items-center gap-2">
+              <ShieldCheck className="size-4 text-blue-700 dark:text-blue-300" />
+              <span>
+                <strong>Handed off from Legal Research Workbench.</strong> Citations populated for verification.
+              </span>
+            </div>
+            <a
+              href="/tool/research-workbench"
+              className="inline-flex items-center gap-1 font-bold text-[#8B1E3F] hover:underline dark:text-blue-300"
+            >
+              <ArrowLeft className="size-3.5" /> Return to Workbench
+            </a>
+          </div>
+        )}
         <textarea
           value={text}
           onChange={(e) => setText(e.target.value)}
