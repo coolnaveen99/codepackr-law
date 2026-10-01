@@ -34,7 +34,7 @@ export const PRIMARY_SOURCES: PrimarySource[] = [
     date: '2026-10-01',
     relevantActSection: 'Acts, sections, rules, regulations, notifications, orders and ordinances',
     description: 'Search and verify Union legislation and subordinate instruments on the official India Code service.',
-    url: 'https://www.indiacode.nic.in/',
+    url: 'https://www.indiacode.gov.in/',
     verificationStatus: 'link-checked',
   },
   {
