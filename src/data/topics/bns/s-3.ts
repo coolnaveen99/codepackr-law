@@ -1,19 +1,410 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
 const content: TopicContent = {
-  "glance": "BNS s. 3(5) preserves the common-intention principle: when a criminal act is done by several persons in furtherance of the common intention of all, each is liable for the act as if done by that person alone. It is a rule of joint liability, not a separate substantive offence.",
-  "study": "CURRENT LAW\\nSection 3 contains general explanations applying to the Sanhita. Clause (5) states the common-intention rule. It operates where several persons participate in a criminal act in furtherance of the common intention of all. The provision concerns attribution of liability; the substantive offence must still be identified.\\n\\nCOMMON INTENTION\\nCommon intention is a state of mind shared by participants and directed toward the criminal act. It may develop before or during the occurrence; prior planning is relevant but not invariably necessary. Participation, conduct, circumstances and the relationship between acts can be used to infer the common intention, but mere presence or relationship is insufficient.\\n\\nDISTINGUISH COMMON INTENTION FROM COMMON OBJECT\\nCommon intention under s. 3(5) should not be conflated with unlawful assembly/common object rules. The statutory foundations and mode of liability differ.\\n\\nPROOF\\nThe prosecution need not prove a written agreement. Courts infer common intention from the totality of conduct and circumstances. Each accused's participation and the shared intention must nevertheless be established beyond the applicable criminal standard.\\n\\nTRANSITION\\nFor current offences use BNS s. 3(5). IPC s. 34 is historical concordance; do not present it as the current statutory citation.",
-  "sections": [{"id":"bns-3-5-module-1","title":"Nature of the Rule","order":1,"content":["Section 3(5) is a rule of joint liability, not an independent offence.","The underlying criminal act and its substantive ingredients must first be identified.","The consequence is attribution of the act to each participant who acted in furtherance of the common intention."]},{"id":"bns-3-5-module-2","title":"Common Intention","order":2,"content":["The participants must share the relevant criminal intention.","The common intention may be formed before the act or arise during the occurrence.","Prior concert is evidence from which common intention may be inferred, but a prior meeting is not invariably indispensable."]},{"id":"bns-3-5-module-3","title":"Participation and Attribution","order":3,"content":["Some form of participation in furtherance of the common intention is required.","Mere presence, friendship, kinship or association does not by itself establish liability under s. 3(5).","The Court should analyse each accused's conduct in the context of the whole occurrence."]},{"id":"bns-3-5-module-4","title":"Proof and Distinctions","order":4,"content":["Common intention is ordinarily inferred from circumstances because direct evidence of a shared mental state is uncommon.","Do not confuse common intention with common object; the statutory tests are different.","The prosecution bears the criminal burden of proving the necessary participation and common intention."]},{"id":"bns-3-5-module-5","title":"Advocacy and Error Control","order":5,"content":["For the prosecution, identify coordinated acts, weapons, roles, conduct before/during/after the incident and other evidence supporting the shared intention.","For the defence, isolate each accused's acts, challenge inference of shared intention and identify innocent explanations.","Use BNS s. 3(5) as the current citation and IPC s. 34 only as historical concordance."]}],
-  "provisions": [{"id":"bns-3-5","actId":"bns","actName":"Bharatiya Nyaya Sanhita, 2023","provisionId":"bns-3-5","section":"s. 3(5)","title":"Acts done by several persons in furtherance of common intention"}],
-  "examples": [{"id":"bns-3-5-ex1","title":"Coordinated assault","description":"Three accused surround a victim, one restrains the victim and another inflicts the fatal injury while the third blocks intervention. The Court may infer common intention from coordinated conduct if the evidence supports it."},{"id":"bns-3-5-ex2","title":"Mere presence","description":"A person is present near an offence but there is no evidence of participation or shared intention. Presence alone does not establish liability under s. 3(5)."}],
-  "hypotheticals": [{"id":"bns-3-5-hypo","title":"Common Intention in a Sudden Fight","facts":"Three persons arrive together, an altercation suddenly escalates and one person causes the fatal injury. The defence says there was no prior plan.","question":"Can s. 3(5) apply without proof of prior planning?","applicableLaw":"BNS s. 3(5) and the substantive offence proved on the facts.","analysis":"Prior planning is not the only route to proving common intention. Examine conduct before, during and after the act and whether the participants acted in furtherance of a shared criminal intention. The absence of a prior plan is relevant but not automatically decisive.","conclusion":"The Court must infer common intention from the totality of admissible evidence, not from the existence or absence of a written or prior plan alone."}],
-  "distinctions": [{"id":"bns-3-5-dist","title":"Common intention and common object","left":"BNS s. 3(5)","right":"Common-object liability","rows":[{"point":"Foundation","left":"Shared common intention and participation in the criminal act","right":"Separate statutory unlawful-assembly/common-object framework"},{"point":"Proof focus","left":"Mental unity plus participation","right":"Membership of the relevant assembly and common object requirements"}]}],
-  "misconceptions": [{"id":"bns-3-5-trap1","trap":"Prior conspiracy or written planning is always necessary.","correction":"Common intention may be inferred from conduct and can develop during the occurrence."},{"id":"bns-3-5-trap2","trap":"Mere presence makes every member liable.","correction":"Participation in furtherance of the common intention must be established."},{"id":"bns-3-5-trap3","trap":"Section 3(5) is a separate offence.","correction":"It is a rule attributing liability for a substantive criminal act."}],
-  "cases": [{"name":"Mahbub Shah v. King-Emperor","year":1945,"citation":"AIR 1945 PC 118","court":"Privy Council","facts":"The case considered common intention and joint liability under the former penal provision.","issue":"What is required to attribute an act to several persons on common intention?","ratioDecidendi":"A common intention to commit the criminal act must be shared; mere similar intention or presence is insufficient.","holding":"The Privy Council emphasised the distinction between common intention and merely concurrent individual intentions.","relevance":"Leading historical concordance for the principle now expressed in BNS s. 3(5)."},{"name":"Pandurang, Tukia and Bhillia v. State of Hyderabad","year":1955,"citation":"AIR 1955 SC 216","court":"Supreme Court of India","facts":"The Court considered joint liability and common intention in a group assault.","issue":"How should common intention be inferred?","ratioDecidendi":"The common intention must be proved or reasonably inferred from the evidence; similar intention is not enough.","holding":"The Court carefully distinguished common intention from individual intention.","relevance":"Directly useful for the doctrinal method under current s. 3(5), subject to statutory concordance."},{"name":"Suresh v. State of U.P.","year":2001,"citation":"(2001) 3 SCC 673","court":"Supreme Court of India","facts":"The Court considered constructive liability and participation under the former common-intention provision.","issue":"What participation is necessary for common-intention liability?","ratioDecidendi":"Common intention and participation must be established from the evidence; liability is not founded on mere membership or presence.","holding":"The Court explained the participation requirement.","relevance":"Useful current jurisprudential authority for the common-intention analysis, with former provision as historical concordance."}],
-  "questionsAndAnswers": [{"id":"bns-3-5-brief","draftingCategory":"brief","question":"Prepare a Senior Counsel brief on BNS s. 3(5).","answer":"Identify the substantive offence, then prove participation and common intention from the totality of circumstances. Separate common intention from common object and challenge mere-presence reasoning."},{"id":"bns-3-5-submissions","draftingCategory":"submissions","question":"Draft written submissions on BNS s. 3(5).","answer":"I. SUBSTANTIVE OFFENCE\\nII. STATUTORY COMMON-INTENTION RULE\\nIII. PARTICIPATION OF EACH ACCUSED\\nIV. EVIDENCE OF SHARED INTENTION\\nV. COMMON INTENTION / COMMON OBJECT DISTINCTION\\nVI. CONCLUSION"}],
-  "bareActPointers": ["BNS s. 3(5)","Connected substantive offence provision"],
-  "examTips": ["Treat s. 3(5) as attribution, not a separate offence.","Analyse each accused separately.","Prior planning is evidence, not an absolute statutory prerequisite."],
-  "revisionPoints": ["Common intention requires mental unity plus participation.","Mere presence is insufficient.","IPC s. 34 is historical concordance."]
+  glance:
+    'Section 3(5) BNS codifies the bedrock doctrine of Joint Liability and Common Intention, directly succeeding Section 34 IPC. It provides that when a criminal act is done by several persons in furtherance of the common intention of all, each is liable as if done by that person alone. It is an evidential rule of attribution, not a standalone substantive offence. Application requires proof of a pre-arranged plan or prior concert (which may form on the spot) coupled with active participation in the criminal transaction, strictly distinguished from mere similar intention (Mahbub Shah) or common object under Section 190 BNS.',
+
+  study: `I. LEGISLATIVE REORGANIZATION & NATURE OF SECTION 3(5)
+In the architectural structure of the Bharatiya Nyaya Sanhita, 2023 (BNS), Chapter I ("Preliminary", Sections 1 to 3) contains the foundational statutory definitions and interpretative rules. Section 3 is titled "General explanations". Sub-section (5) directly succeeds Section 34 of the Indian Penal Code, 1860, codifying the doctrine of common intention:
+"When a criminal act is done by several persons in furtherance of the common intention of all, each of such persons is liable for that act in the same manner as if it were done by him alone."
+
+Doctrinal Character:
+1. Rule of Evidence and Joint Attribution: As held in Girija Shankar v. State of U.P. (2004) 3 SCC 793 and Suresh v. State of U.P. (2001) 3 SCC 673, Section 3(5) does not create an independent substantive offence. It is an instrument of constructive liability that attributes the collective physical actus reus of all participants to each individual member who acted in furtherance of the shared design.
+2. Mandatory Conjunction: An accused cannot be charged or convicted under Section 3(5) in isolation. The charge must invariably couple Section 3(5) with a substantive penal provision (e.g. Section 103 read with Section 3(5) for murder, or Section 309 read with Section 3(5) for robbery).
+
+II. ESSENTIAL INGREDIENTS OF SECTION 3(5)
+To establish vicarious joint liability under Section 3(5) BNS, the prosecution must prove three cumulative ingredients beyond reasonable doubt:
+1. Plurality of Actors: A criminal act must be committed by two or more persons.
+2. Common Intention (Consensus ad Idem): There must exist a shared intention—a pre-arranged plan, prior concert, or meeting of minds—directed towards the commission of the criminal act.
+3. Participation in Furtherance: Each accused sought to be fastened with liability must have actively participated in the criminal act or its execution in furtherance of the shared intention.
+
+III. JURISPRUDENTIAL EVOLUTION: THE LEADING AUTHORITIES
+The scope and boundaries of Section 3(5) rest upon seminal decisions spanning a century:
+1. The Principle of Participation & The Lookout Rule:
+   - In Barendra Kumar Ghosh v. King Emperor (1925) 52 IA 40 / AIR 1925 PC 1 (the famous Sankaritola Post Office murder), Lord Sumner formulated the enduring principle: "They also serve who only stand and wait." The Privy Council held that where an accused stands guard outside the premises to facilitate escape or prevent interruption while co-accused shoot the postmaster inside, the guard actively participates in the criminal act in furtherance of common intention and is equally guilty of murder.
+2. Common Intention vs. Same or Similar Intention:
+   - In Mahbub Shah v. King Emperor (1945) 72 IA 148 / AIR 1945 PC 118, the Privy Council established the crucial distinction between "common intention" and "similar intention". Two or more individuals may simultaneously harbour a desire or intention to assault the same victim, but unless there is a pre-arranged plan or prior concert (a meeting of minds), their intention is merely "similar" or "concurrent", not "common". Under Section 3(5), liability can be attributed only where there is a shared, coordinated intention.
+3. Formation of Common Intention on the Spot:
+   - In Pandurang, Tukia and Bhillia v. State of Hyderabad (1955) 1 SCR 1083 / AIR 1955 SC 216 and Rishi Deo Pande v. State of U.P. AIR 1955 SC 331, the Supreme Court ruled that while common intention requires a pre-arranged plan, such plan need not be elaborate or concocted days in advance; it can form instantaneously on the spur of the moment ("on the spot") prior to or during the assault, to be inferred from the conduct of the parties, weapons carried, and nature of blows inflicted.
+4. Active Physical Participation vs Passive Presence:
+   - In Jasdeep Singh @ Jassu v. State of Punjab (2022) 2 SCC 545, the Supreme Court reaffirmed that mere presence at the crime scene, even accompanied by kinship or friendship with the assailant, does not attract joint liability under Section 3(5). The prosecution must demonstrate overt or covert participation facilitating the crime.
+
+IV. SECTION 3(5) BNS (COMMON INTENTION) VS SECTION 190 BNS (COMMON OBJECT)
+Senior Counsel must never conflate Section 3(5) with Section 190 BNS (old Section 149 IPC):
+1. Numerical Threshold: Section 3(5) requires a minimum of two persons; Section 190 requires a minimum of five persons constituting an unlawful assembly under Section 189 BNS.
+2. Mental State: Section 3(5) requires consensus ad idem and a pre-arranged plan (prior concert); Section 190 requires only that the offence was committed in prosecution of the assembly's common object (as defined in s. 189(2)), or was such as the members knew was likely to be committed.
+3. Mode of Participation: Section 3(5) demands active participation in the execution of the act; under Section 190, simple membership in the unlawful assembly at the time of the offence is sufficient to trigger constructive liability.
+
+V. PROCEDURAL, CHARGING & SECTION 531 BNSS TRANSITIONAL RULES
+1. Defective Framing of Charges:
+   - Where an accused is charged under Section 190 BNS (unlawful assembly) and the number of proved assailants falls below five, the court may still convict under Section 3(5) provided the evidence discloses a shared common intention and no prejudice is caused to the accused (Nanak Chand v. State of Punjab AIR 1955 SC 274).
+2. Transitional Epochs under Section 531(2)(a) BNSS:
+   - For offences committed on or before 30 June 2024, the charging instrument cites Section 34 IPC. For offences committed on or after 1 July 2024, the authoritative citation is Section 3(5) BNS.`,
+
+  sections: [
+    {
+      id: 'bns-3-5-module-1',
+      title: 'Legislative Architecture & Doctrinal Nature of Section 3(5) BNS',
+      order: 1,
+      content: [
+        'Section 3(5) BNS replaces Section 34 IPC, codifying the doctrine of joint liability based on common intention in Chapter I.',
+        'It is a rule of evidence and attribution of liability; it does not create a distinct substantive criminal offence.',
+        'Must always be charged alongside a substantive offence (e.g. s. 103 read with s. 3(5) for murder).',
+        'Eliminates the evidentiary difficulty of apportioning individual liability when multiple assailants act in concert.',
+      ],
+    },
+    {
+      id: 'bns-3-5-module-2',
+      title: 'The Triad of Essential Ingredients: Plurality, Consensus & Participation',
+      order: 2,
+      content: [
+        'Ingredient 1: Plurality of actors — commission of a criminal act by two or more persons.',
+        'Ingredient 2: Common intention — a shared mental design and prior concert among all participants.',
+        'Ingredient 3: Participation — physical or supportive action in furtherance of the common intention during the criminal act.',
+        'The Supreme Court in Suresh v. State of U.P. (2001) emphasized that participation can range from physical assault to standing guard or disabling alarms.',
+      ],
+    },
+    {
+      id: 'bns-3-5-module-3',
+      title: 'Common Intention vs Similar Intention: The Mahbub Shah & Pandurang Doctrine',
+      order: 3,
+      content: [
+        'In Mahbub Shah (1945), the Privy Council held that similar or concurrent intention does not constitute common intention.',
+        'Common intention requires a pre-arranged plan or meeting of minds prior to the criminal act.',
+        'In Pandurang (1955) and Rishi Deo Pande (1955), the Supreme Court affirmed that common intention can form on the spot immediately before the act.',
+        'Where multiple persons inflict blows without proof of pre-concert or shared intention, each is liable solely for their individual act.',
+      ],
+    },
+    {
+      id: 'bns-3-5-module-4',
+      title: 'Participation Principles & The Lookout Rule (Barendra Kumar Ghosh)',
+      order: 4,
+      content: [
+        'In Barendra Kumar Ghosh (1925), Lord Sumner held that "they also serve who only stand and wait".',
+        'Physical entry into the room or handling the lethal weapon is not required; standing as a lookout facilitates the crime.',
+        'In Jasdeep Singh (2022), the Supreme Court held that mere presence or passive bystanders cannot be roped into Section 3(5).',
+        'The prosecution must establish that the participant acted in furtherance of the specific shared intention.',
+      ],
+    },
+    {
+      id: 'bns-3-5-module-5',
+      title: 'Distinction with Section 190 BNS (Common Object), Trial Tactics & s. 531 Transition',
+      order: 5,
+      content: [
+        'Section 3(5) requires 2+ persons and prior concert; Section 190 BNS requires 5+ persons and membership of an unlawful assembly.',
+        'Altering charges: An unlawful assembly charge under s. 190 can be converted to s. 3(5) if the number falls below five, provided common intention is proved (Nanak Chand).',
+        'Burden of proof: Onus is on the prosecution under Section 104 BSA to establish the shared design from conduct, weapons, and surrounding circumstances.',
+        'Section 531(2)(a) BNSS transition: Use Section 34 IPC for pre-1 July 2024 offences; cite Section 3(5) BNS for post-commencement conduct.',
+      ],
+    },
+  ],
+
+  provisions: [
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-3-5',
+      section: 's. 3(5)',
+      title: 'Joint liability and common intention',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-103',
+      section: 's. 103',
+      title: 'Punishment for murder',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-190',
+      section: 's. 190',
+      title: 'Every member of unlawful assembly guilty of offence committed in prosecution of common object',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-61',
+      section: 's. 61',
+      title: 'Criminal conspiracy',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-104',
+      section: 's. 104',
+      title: 'Burden of proof',
+    },
+    {
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-531',
+      section: 's. 531',
+      title: 'Repeal and savings',
+    },
+  ],
+
+  examples: [
+    {
+      id: 'bns-3-5-ill-1',
+      title: 'Application of the Lookout Rule under Section 3(5) BNS — Barendra Kumar Ghosh Principle',
+      illustrationType: 'statutory-practical',
+      description:
+        'A, B, and C agree to rob a jewellery store. A and B enter the store carrying firearms while C remains outside on a motorcycle with the engine running, keeping watch and monitoring police movement. Inside, A shoots and kills the shopkeeper when he resists, and B collects the gold ornaments. All three flee on C’s motorcycle. C argues that he never entered the shop, held no weapon, and had no intention to kill. Under Section 3(5) BNS, C’s role as a getaway driver and lookout constituted active participation in furtherance of the common intention. C is equally liable for murder under Section 103 read with Section 3(5) BNS.',
+    },
+    {
+      id: 'bns-3-5-ill-2',
+      title: 'Sudden Quarrel and Similar Intention without Prior Concert — Section 3(5) Excluded',
+      illustrationType: 'statutory-practical',
+      description:
+        'During a village dispute, X and Y independently observe Z arguing with their mutual rival. Without any prior discussion, communication, or pre-arranged plan, X rushes forward and strikes Z with a wooden stick on the leg, fracturing it. Simultaneously, Y, motivated by a personal grudge, pulls out a dagger and stabs Z in the heart, killing him instantly. Under Mahbub Shah (1945) and Pandurang (1955), X and Y shared similar individual motives, but there was no common intention or consensus ad idem. X is liable solely for grievous hurt under Section 117 BNS, while Y alone is liable for murder under Section 103 BNS. Section 3(5) cannot be invoked against X for the murder.',
+    },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'bns-3-5-hypo',
+      title: 'Chamber Practice Hypothetical: Joint Attack, Spot Formation of Common Intention & Scope of Exceeding Plan',
+      facts:
+        'On 14 August 2024, accused D1, D2, and D3 arrive at complainant V’s warehouse armed with iron rods to recover an outstanding debt. An intense verbal confrontation ensues. D1 shouts: "Finish him off today!" D2 immediately pins V against the wall, while D1 strikes V repeatedly on the head with an iron rod, fracturing his skull and causing death. D3 stands near the exit door brandishing an iron rod, preventing warehouse employees from intervening or leaving to seek help. In their defense before the Sessions Court, D2 and D3 argue that their initial common intention was only to recover money and inflict minor intimidation, and that D1’s fatal head blows were his independent individual act exceeding the plan, exonerating them from Section 103 read with Section 3(5) BNS.',
+      question:
+        'As Senior Counsel appearing for the prosecution, evaluate the liability of D2 and D3 under Section 103 read with Section 3(5) BNS, addressing pre-concert, spot formation of intention, and active participation.',
+      applicableLaw:
+        'BNS ss. 3(5), 103(1); BSA s. 104; landmark precedents in Barendra Kumar Ghosh (1925), Pandurang (1955), Rishi Deo Pande (1955), and Suresh v. State of U.P. (2001).',
+      analysis:
+        '1. Formation of Common Intention on the Spot:\n   - While the initial plan may have been debt recovery, common intention can form on the spot immediately prior to the fatal assault (Pandurang, Rishi Deo Pande).\n   - When D1 uttered the exhortation "Finish him off today!", D2 immediately acted by physically pinning V to the wall to facilitate the blow, and D3 guarded the exit.\n   - D2 and D3 actively adopted and joined the new common intention to cause fatal bodily injury at that exact moment.\n2. Active Participation in Furtherance of Common Intention:\n   - D2’s act of immobilizing the victim directly enabled D1 to deliver the fatal skull fractures. This is direct, physical participation in the homicide.\n   - D3’s act of blocking the exit and intimidating warehouse workers prevented rescue and facilitated the killing, falling squarely within the lookout rule in Barendra Kumar Ghosh.\n3. Rejection of the "Exceeding the Plan" Defense:\n   - Arriving armed with lethal iron rods and actively assisting in pinning the victim while lethal head strikes are landed demonstrates that death was within the contemplated scope of the concerted attack.',
+      conclusion:
+        'D1, D2, and D3 are all guilty of murder under Section 103(1) read with Section 3(5) BNS. Common intention formed on the spot and was actively executed by each accused.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'bns-3-5-dist-1',
+      title: 'Section 3(5) BNS (Common Intention) vs Section 190 BNS (Common Object)',
+      left: 'Section 3(5) BNS (Common Intention)',
+      right: 'Section 190 BNS (Common Object)',
+      rows: [
+        {
+          point: 'Minimum Persons',
+          left: 'Requires at least two persons',
+          right: 'Requires at least five persons (unlawful assembly under s. 189)',
+        },
+        {
+          point: 'Mental Element',
+          left: 'Requires prior concert, pre-arranged plan, and consensus ad idem',
+          right: 'Requires shared common object under s. 189(2); no prior concert required',
+        },
+        {
+          point: 'Participation Required',
+          left: 'Active physical or supportive participation in the act is essential',
+          right: 'Mere membership in the unlawful assembly with knowledge is sufficient',
+        },
+      ],
+    },
+    {
+      id: 'bns-3-5-dist-2',
+      title: 'Common Intention vs Similar Intention (Mahbub Shah Doctrine)',
+      left: 'Common Intention (s. 3(5) BNS)',
+      right: 'Similar Intention (Independent Acts)',
+      rows: [
+        {
+          point: 'Consensus ad Idem',
+          left: 'Pre-arranged plan, mutual agreement, or meeting of minds before the act',
+          right: 'Independent, separate intentions directed towards the same objective without agreement',
+        },
+        {
+          point: 'Nature of Liability',
+          left: 'Joint and vicarious: each is liable for the entire act of the other',
+          right: 'Individual: each is liable strictly for their own personal act and injury caused',
+        },
+        {
+          point: 'Statutory Result',
+          left: 'Attracts Section 3(5) BNS joint conviction',
+          right: 'Section 3(5) fails; convicted only under individual substantive sections',
+        },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'bns-3-5-trap-1',
+      trap: 'Charging or convicting an accused under Section 3(5) BNS as a standalone offence.',
+      correction:
+        'Section 3(5) BNS does not create an independent offence; it is a rule of evidence and joint attribution. It must always be charged in conjunction with a substantive offence (e.g. s. 103 read with s. 3(5)).',
+    },
+    {
+      id: 'bns-3-5-trap-2',
+      trap: 'Believing that common intention requires days of elaborate advance conspiracy.',
+      correction:
+        'The Supreme Court in Pandurang (1955) and Rishi Deo Pande (1955) held that common intention can form instantaneously on the spur of the moment ("on the spot") prior to the fatal act, provided there is a meeting of minds.',
+    },
+    {
+      id: 'bns-3-5-trap-3',
+      trap: 'Assuming mere presence at the crime scene is sufficient to invoke Section 3(5) BNS.',
+      correction:
+        'In Jasdeep Singh (2022), the Supreme Court affirmed that passive presence or kinship is insufficient. The prosecution must prove active physical participation or supportive action in furtherance of the shared design.',
+    },
+  ],
+
+  questionsAndAnswers: [
+    {
+      id: 'bns-3-5-q-brief',
+      draftingCategory: 'brief',
+      question: 'Senior Counsel Legal Assessment: Scope, Ingredients and Application of Section 3(5) BNS',
+      answer: `I. STATUTORY MATRIX & PROVISION
+Section 3(5) of the Bharatiya Nyaya Sanhita, 2023 (BNS) codifies the principle of Joint Liability based on Common Intention, directly succeeding Section 34 IPC. It is situated in Chapter I ("Preliminary").
+
+II. NATURE OF THE PROVISION
+Section 3(5) is an evidentiary rule of constructive attribution and does not create an independent substantive offence (Girija Shankar v. State of U.P. (2004) 3 SCC 793). It must always be charged alongside a substantive offence.
+
+III. ESSENTIAL INGREDIENTS
+To fasten vicarious liability under Section 3(5) BNS, the prosecution must establish:
+1. That a criminal act was done by several persons (two or more);
+2. That the criminal act was done in furtherance of the common intention of all (consensus ad idem / pre-arranged plan);
+3. That the accused actively participated in the commission or execution of the act.
+
+IV. JURISPRUDENTIAL HIGHLIGHTS
+- Barendra Kumar Ghosh (1925): "They also serve who only stand and wait" — lookout / driver participating in furtherance is a principal.
+- Mahbub Shah (1945): Distinct from same or similar intention; pre-concert is indispensable.
+- Pandurang (1955): Common intention can form on the spot.
+- Jasdeep Singh (2022): Mere presence does not establish liability.
+
+V. CONCLUSION & TRANSITION
+Section 3(5) BNS is the authoritative citation for all joint offences committed on or after 1 July 2024. For pre-commencement conduct, Section 34 IPC applies pursuant to Section 531(2)(a) BNSS.`,
+      explanation:
+        'Authoritative legal assessment deconstructing Section 3(5) BNS, joint liability principles, leading case ratios, and transitional application.',
+    },
+    {
+      id: 'bns-3-5-q-submissions',
+      draftingCategory: 'submissions',
+      question: 'Appellate Written Submissions: Absence of Common Intention and Failure of Section 3(5) Charge',
+      answer: `MAY IT PLEASE YOUR LORDSHIPS:
+
+1. LOCUS OF THE CHALLENGE & CONVICTION:
+The appellant (Accused No. 3) stands convicted under Section 103 read with Section 3(5) BNS and sentenced to imprisonment for life. It is respectfully submitted that the findings of the learned Sessions Judge fastening constructive liability upon the appellant are legally perverse and unsustainable.
+
+2. ABSENCE OF PRIOR CONCERT OR MEETING OF MINDS (MAHBUB SHAH DOCTRINE):
+(a) To attract joint liability under Section 3(5) BNS, the prosecution must prove a pre-arranged plan or consensus ad idem between the co-accused prior to the act.
+(b) In Mahbub Shah v. King Emperor (1945) 72 IA 148, the Privy Council held that "care must be taken not to confuse similar intention with common intention; the partition which divides their bounds is often very thin: nevertheless the distinction is real and substantial."
+(c) In the present case, the evidence of PW-1 and PW-2 demonstrates that the altercation arose spontaneously over an agricultural boundary. There was no prior meeting, no shared objective, and no pre-arranged plan to commit murder.
+
+3. LACK OF ACTIVE PARTICIPATION (JASDEEP SINGH & PANDURANG):
+(a) In Jasdeep Singh @ Jassu v. State of Punjab (2022) 2 SCC 545, the Hon'ble Supreme Court reiterated that mere presence at the place of occurrence does not give rise to an inference of common intention.
+(b) The appellant was empty-handed, uttered no exhortation, and inflicted no blow upon the deceased. The fatal sword blow was inflicted exclusively by Accused No. 1 on his own impulse.
+(c) In Pandurang v. State of Hyderabad AIR 1955 SC 216, Vivian Bose J. held that in the absence of pre-concert, each accused is liable only for the specific injury caused by him. Because the appellant caused no injury and shared no common intention to kill, Section 3(5) BNS cannot be invoked against him.
+
+4. PRAYER:
+The prosecution having failed to establish the foundational ingredients of Section 3(5) BNS, the conviction of the appellant under Section 103 read with Section 3(5) BNS is liable to be set aside and the appellant acquitted.`,
+      explanation:
+        'Comprehensive appellate submissions establishing failure of common intention, distinguishing similar intention under Mahbub Shah, and applying Pandurang and Jasdeep Singh.',
+    },
+  ],
+
+  cases: [
+    {
+      name: 'Barendra Kumar Ghosh v. King Emperor',
+      year: 1925,
+      citation: 'AIR 1925 PC 1',
+      holding:
+        'The historic Sankaritola Post Office murder decision establishing that physical entry or firing the weapon is not required; an accused who acts as a lookout or guards the escape route actively participates in furtherance of common intention: "They also serve who only stand and wait."',
+    },
+    {
+      name: 'Mahbub Shah v. King Emperor',
+      year: 1945,
+      citation: 'AIR 1945 PC 118',
+      holding:
+        'Laid down the classic distinction between common intention and similar intention: common intention requires a pre-arranged plan and a prior meeting of minds; mere concurrent or similar intentions harboured independently do not satisfy the statutory test.',
+    },
+    {
+      name: 'Pandurang, Tukia and Bhillia v. State of Hyderabad',
+      year: 1955,
+      citation: 'AIR 1955 SC 216',
+      holding:
+        'Vivian Bose J. held that common intention can form on the spot immediately before the commission of the offence, but requires proof of consensus ad idem. Where multiple accused inflict blows without proof of pre-concert, each is liable solely for his individual act.',
+    },
+    {
+      name: 'Rishi Deo Pande v. State of U.P.',
+      year: 1955,
+      citation: 'AIR 1955 SC 331',
+      holding:
+        'Reaffirmed that common intention can develop during the course of the occurrence on the spur of the moment, to be inferred from the conduct of the assailants, nature of weapons, and coordination of attack.',
+    },
+    {
+      name: 'Suresh v. State of U.P.',
+      year: 2001,
+      citation: '(2001) 3 SCC 673',
+      holding:
+        'Held that active participation in the commission of the offence is an indispensable condition for joint liability, though such participation can take diverse forms including instigation, surveillance, or physical restraint.',
+    },
+    {
+      name: 'Jasdeep Singh @ Jassu v. State of Punjab',
+      year: 2022,
+      citation: '(2022) 2 SCC 545',
+      holding:
+        'The Supreme Court reaffirmed that mere presence at the place of occurrence, without evidence of prior concert or active participation in furtherance of common intention, cannot sustain a conviction under the joint liability doctrine.',
+    },
+  ],
+
+  examTips: [
+    'Always cite Section 3(5) BNS as the current statutory provision for joint liability / common intention, noting Section 34 IPC as historical concordance.',
+    'Emphasize that Section 3(5) is an evidentiary rule of attribution and cannot stand alone without a substantive penal section.',
+    'Do not confuse common intention (s. 3(5), 2+ persons, prior concert required) with common object (s. 190, 5+ persons, unlawful assembly object).',
+    'Quote Lord Sumner’s dictum in Barendra Kumar Ghosh ("They also serve who only stand and wait") when addressing lookouts or getaway drivers.',
+    'Under Section 531(2)(a) BNSS, cite Section 34 IPC for pre-1 July 2024 offences and Section 3(5) BNS for post-commencement conduct.',
+  ],
+
+  examFrameworks: [
+    {
+      question: 'Structured Chamber Brief: Analyzing Joint Liability under Section 3(5) BNS',
+      steps: [
+        'Identify the substantive offence committed (e.g. murder, robbery, grievous hurt).',
+        'Verify plurality of offenders (at least two persons).',
+        'Analyze evidence of common intention (pre-arranged plan, coordination, conduct before/during/after).',
+        'Examine whether intention formed beforehand or on the spot (Pandurang, Rishi Deo Pande).',
+        'Verify active participation in furtherance of common intention (Barendra Kumar Ghosh).',
+        'Rule out mere presence (Jasdeep Singh) or similar intention (Mahbub Shah).',
+        'Conclude with the joint charge: substantive section read with Section 3(5) BNS.',
+      ],
+    },
+    {
+      question: 'Appellate Submissions: Challenging Constructive Liability under Section 3(5) BNS',
+      steps: [
+        'Formulate the issue: whether appellant shared consensus ad idem or acted independently.',
+        'Demonstrate absence of pre-concert or spontaneous spur-of-the-moment agreement.',
+        'Isolate the appellant’s specific overt acts from those of the primary assailant.',
+        'Invoke Mahbub Shah to demonstrate that appellant harboured at most a similar intention.',
+        'Invoke Jasdeep Singh to establish that presence without active participation does not create liability.',
+        'Pray for acquittal under the joint charge or conversion to individual lesser offence.',
+      ],
+    },
+  ],
+
+  answerSkeleton: [
+    'Introduction — Section 3(5) BNS, Chapter I ("Preliminary"), replacing Section 34 IPC.',
+    'Doctrinal Nature — Rule of evidence and joint attribution; not a substantive standalone offence.',
+    'Essential Ingredients — Plurality of actors (2+), common intention (consensus ad idem), active participation in furtherance.',
+    'Key Case Authorities — Barendra Kumar Ghosh (lookout rule), Mahbub Shah (similar vs common), Pandurang & Rishi Deo Pande (spot formation), Jasdeep Singh (presence).',
+    'Distinctions — Section 3(5) BNS (2+ persons, prior concert) vs Section 190 BNS (5+ persons, common object).',
+    'Transitional Practice — Section 34 IPC for pre-1 July 2024 offences; Section 3(5) BNS thereafter (BNSS s. 531).',
+  ],
+
+  revisionPoints: [
+    'Section 3(5) BNS replaces Section 34 IPC.',
+    'Section 3(5) is an evidentiary rule of attribution; never charge it alone without a substantive section.',
+    'Common intention requires prior concert or a pre-arranged plan, which may form on the spot.',
+    'Similar intention is NOT common intention (Mahbub Shah).',
+    'Mere presence without participation does not attract Section 3(5) (Jasdeep Singh).',
+  ],
+
+  relatedTopics: [
+    's-100',
+    's-101',
+    's-103',
+    's-190',
+    's-61',
+  ],
 }
 
 export default content
