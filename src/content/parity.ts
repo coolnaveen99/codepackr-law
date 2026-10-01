@@ -8,6 +8,7 @@
 
 import type { TopicContent } from '../data/topics/topicTypes'
 import type { TopicContentRecord } from './contentTypes'
+import { canonicalTopicId } from './ContentRepository'
 import { mapCanonicalTopicToLegacy } from './mapCanonicalTopic'
 
 export interface ParityFieldResult {
@@ -65,8 +66,8 @@ export function buildDualReadParityReport(
 
   const fields: ParityFieldResult[] = []
 
-  // 1. Canonical identity
-  const expectedId = `topic:india:${subjectSlug}-${topicId}`
+  // 1. Canonical identity (respects no-double-prefix rule)
+  const expectedId = canonicalTopicId(subjectSlug, topicId)
   fields.push({
     field: 'canonical.id',
     ok: canonical.id === expectedId,
@@ -94,7 +95,7 @@ export function buildDualReadParityReport(
   for (const marker of REQUIRED_LEGAL_MARKERS) {
     // Only enforce CPC s.32-style markers when the topic is that provision;
     // for other pilots, require at least a non-empty study body (above).
-    if (subjectSlug === 'cpc' && topicId === 's-32') {
+    if (subjectSlug === 'cpc' && (topicId === 's-32' || topicId === 'cpc-s-32')) {
       fields.push({
         field: `mapped.study.marker:${marker}`,
         ok: containsMarker(mappedStudy, marker),
@@ -127,7 +128,6 @@ export function buildDualReadParityReport(
 
   // 4. Dual-read overlap: when both sides exist, share at least one distinctive phrase
   if (legacyStudy.trim().length > 40) {
-    // Pull a distinctive substring from the legacy study (first non-trivial sentence)
     const legacySnippet = legacyStudy
       .split(/[.\n]/)
       .map((s) => s.trim())
