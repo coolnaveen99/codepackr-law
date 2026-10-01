@@ -59,6 +59,22 @@ export interface ContentManifest {
   entities: ContentManifestEntry[]
 }
 
+/** Optional adjacency index produced by legal-content `npm run graph:index`. */
+export interface RelationshipEdgeRef {
+  to?: string
+  from?: string
+  field: string
+}
+
+export interface RelationshipIndex {
+  schemaVersion: string
+  generatedAt: string
+  repository: string
+  edgeCount: number
+  outbound: Record<string, Array<{ to: string; field: string }>>
+  inbound: Record<string, Array<{ from: string; field: string }>>
+}
+
 export interface ContentRepository {
   get<T extends ContentEnvelope = ContentEnvelope>(
     entityType: ContentEntityType,
@@ -66,6 +82,10 @@ export interface ContentRepository {
   ): Promise<T | null>
   getTopic(subjectSlug: string, topicId: string): Promise<TopicContentRecord | null>
   getManifest(): Promise<ContentManifest | null>
+  /** Resolve any published entity by canonical ID via the manifest path. */
+  getById?<T extends ContentEnvelope = ContentEnvelope>(id: string): Promise<T | null>
+  /** Outbound relation edges for an entity (from relationship-index or entity body). */
+  getOutboundRelations?(id: string): Promise<Array<{ to: string; field: string }>>
 }
 
 export interface TopicContentRecord extends ContentEnvelope {
