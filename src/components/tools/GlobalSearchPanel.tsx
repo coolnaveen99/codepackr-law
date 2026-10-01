@@ -1,149 +1,52 @@
-import { useMemo, useState } from 'react'
-import { Search } from 'lucide-react'
+import { useEffect, useMemo, useState } from 'react'
+import { Search, X } from 'lucide-react'
 import { TOOLS } from '../../data/tools'
 import { PRIMARY_SOURCES } from '../../data/primarySources'
-import { TRANSITION_HIGHLIGHTS } from '../../data/transitionHighlights'
 import { FILING_CHECKLISTS } from '../../data/filingChecklists'
+import { LIVE_SUBJECTS } from '../../data/liveSubjects'
+import { ALL_JUDGMENTS } from '../../data/judgments'
+import { allEntities } from '../../data/knowledge'
+import { DRAFT_TEMPLATES } from '../../data/draft-templates'
 
-type GroupKey = 'TOOLS' | 'SOURCES' | 'TRANSITION' | 'CHECKLISTS'
+type GroupKey = 'ACTS' | 'SECTIONS' | 'CASES' | 'TOPICS' | 'TOOLS' | 'DRAFTS' | 'KNOWLEDGE'
+type Hit = { group: GroupKey; title: string; subtitle: string; href: string; court?: string; year?: number; act?: string; section?: string; subject?: string; documentType?: string; status?: string; score: number }
 
-interface Hit {
-  group: GroupKey
-  title: string
-  subtitle: string
-  href?: string
+const RECENT_KEY = 'cp-law:global-search-history:v1'
+const GROUPS: GroupKey[] = ['ACTS','SECTIONS','CASES','TOPICS','TOOLS','DRAFTS','KNOWLEDGE']
+const SYNONYMS: Record<string,string[]> = {
+  constitution:['constitutional','fundamental rights','article'],
+  criminal:['bns','bnss','ipc','crpc','penal'],
+  evidence:['bsa','iea','evidence act','sakshya'],
+  contract:['agreement','specific relief'],
+  family:['matrimonial','marriage','divorce'],
+  procedure:['cpc','civil procedure'],
+  tort:['torts','negligence'],
+  judgment:['judgement','case','decision'],
+  case:['cases','judgment','judgement'],
+  bail:['custody','anticipatory'],
 }
+function norm(v:string){return v.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim()}
+function distance(a:string,b:string){const p=Array.from({length:b.length+1},(_,i)=>i);for(let i=1;i<=a.length;i++){let d=p[0];p[0]=i;for(let j=1;j<=b.length;j++){const x=p[j];p[j]=Math.min(p[j]+1,p[j-1]+1,d+(a[i-1]===b[j-1]?0:1));d=x}}return p[b.length]}
+function scoreText(text:string,query:string){const q=norm(query),h=norm(text);if(!q)return 0;if(h===q)return 100;if(h.startsWith(q))return 85;if(h.includes(q))return 70;const words=h.split(' '),terms=new Set([q]);for(const [k,vs] of Object.entries(SYNONYMS))if(q.includes(k)||vs.some(v=>q.includes(v))){terms.add(k);vs.forEach(v=>terms.add(v))}let s=0;for(const t of terms){if(h.includes(t))s=Math.max(s,t===q?65:45);else if(t.length>=4&&words.some(w=>distance(t,w)<=Math.max(1,Math.floor(t.length/5))))s=Math.max(s,25)}return s}
 
-export function GlobalSearchPanel() {
-  const [q, setQ] = useState('')
-
-  const hits = useMemo(() => {
-    const s = q.trim().toLowerCase()
-    if (s.length < 2) return [] as Hit[]
-    const out: Hit[] = []
-
-    for (const t of TOOLS) {
-      if (
-        t.name.toLowerCase().includes(s) ||
-        t.description.toLowerCase().includes(s) ||
-        t.keywords.some((k) => k.toLowerCase().includes(s))
-      ) {
-        out.push({
-          group: 'TOOLS',
-          title: t.name,
-          subtitle: t.description,
-          href: t.slug === 'case-law' ? '/case-law' : t.slug === 'knowledge' ? '/knowledge' : `/tool/${t.slug}`,
-        })
-      }
-    }
-
-    for (const p of PRIMARY_SOURCES) {
-      if (
-        p.title.toLowerCase().includes(s) ||
-        p.org.toLowerCase().includes(s) ||
-        p.description.toLowerCase().includes(s)
-      ) {
-        out.push({
-          group: 'SOURCES',
-          title: p.title,
-          subtitle: `${p.tierLabel} · ${p.org}`,
-          href: p.url,
-        })
-      }
-    }
-
-    for (const h of TRANSITION_HIGHLIGHTS) {
-      if (
-        h.oldRef.toLowerCase().includes(s) ||
-        h.newRef.toLowerCase().includes(s) ||
-        h.relation.toLowerCase().includes(s)
-      ) {
-        out.push({
-          group: 'TRANSITION',
-          title: `${h.oldRef} → ${h.newRef}`,
-          subtitle: h.relation,
-          href: '/tool/transition-centre',
-        })
-      }
-    }
-
-    for (const c of FILING_CHECKLISTS) {
-      if (c.title.toLowerCase().includes(s) || c.forum.toLowerCase().includes(s)) {
-        out.push({
-          group: 'CHECKLISTS',
-          title: c.title,
-          subtitle: c.forum,
-          href: '/tool/filing-checklists',
-        })
-      }
-    }
-
-    return out.slice(0, 40)
-  }, [q])
-
-  const grouped = useMemo(() => {
-    const map = new Map<GroupKey, Hit[]>()
-    for (const h of hits) {
-      const arr = map.get(h.group) || []
-      arr.push(h)
-      map.set(h.group, arr)
-    }
-    return map
-  }, [hits])
-
-  const order: GroupKey[] = ['TOOLS', 'SOURCES', 'TRANSITION', 'CHECKLISTS']
-
-  return (
-    <div className="space-y-5">
-      <section className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-7 shadow-sm">
-        <div className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-[#8B1E3F]">
-          <Search className="size-4" /> Global Search
-        </div>
-        <h1 className="mt-2 text-2xl sm:text-3xl font-black tracking-tight">One entry point</h1>
-        <p className="mt-2 text-sm text-slate-600 dark:text-slate-400 max-w-3xl">
-          Search tools, primary sources, transition highlights and filing checklists. Subject/section/case corpus search
-          remains available from the home and subjects browsers.
-        </p>
-        <input
-          value={q}
-          onChange={(e) => setQ(e.target.value)}
-          placeholder="Type at least 2 characters…"
-          className="mt-4 w-full h-12 rounded-xl border border-slate-200 dark:border-slate-700 bg-transparent px-4 text-sm"
-          autoFocus
-        />
-      </section>
-
-      {q.trim().length > 0 && q.trim().length < 2 && (
-        <div className="text-sm text-slate-500 text-center">Keep typing…</div>
-      )}
-
-      {q.trim().length >= 2 && hits.length === 0 && (
-        <div className="rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500">
-          No matches. Try another keyword, or open Subjects / Case Law for curriculum and judgments.
-        </div>
-      )}
-
-      {order.map((g) => {
-        const list = grouped.get(g)
-        if (!list?.length) return null
-        return (
-          <section key={g} className="space-y-2">
-            <div className="text-xs font-extrabold uppercase tracking-wide text-slate-500">{g}</div>
-            {list.map((h, i) => (
-              <a
-                key={`${g}-${i}`}
-                href={h.href}
-                target={h.href?.startsWith('http') ? '_blank' : undefined}
-                rel={h.href?.startsWith('http') ? 'noreferrer' : undefined}
-                className="block rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 hover:border-[#8B1E3F]/40 transition"
-              >
-                <div className="font-bold text-sm text-slate-900 dark:text-white">{h.title}</div>
-                <div className="text-xs text-slate-500 mt-0.5 line-clamp-2">{h.subtitle}</div>
-              </a>
-            ))}
-          </section>
-        )
-      })}
-    </div>
-  )
+export function GlobalSearchPanel(){
+ const [q,setQ]=useState(''),[court,setCourt]=useState(''),[year,setYear]=useState(''),[act,setAct]=useState(''),[section,setSection]=useState(''),[subject,setSubject]=useState(''),[documentType,setDocumentType]=useState(''),[status,setStatus]=useState(''),[recent,setRecent]=useState<string[]>([])
+ useEffect(()=>{try{const v=JSON.parse(localStorage.getItem(RECENT_KEY)||'[]');if(Array.isArray(v))setRecent(v.filter((x):x is string=>typeof x==='string').slice(0,8))}catch{}},[])
+ useEffect(()=>{const f=(e:KeyboardEvent)=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();document.getElementById('global-law-search')?.focus()}};window.addEventListener('keydown',f);return()=>window.removeEventListener('keydown',f)},[])
+ const hits=useMemo(()=>{if(q.trim().length<2)return[] as Hit[];const out:Hit[]=[];const push=(h:Hit)=>{const s=scoreText([h.title,h.subtitle,h.act,h.section,h.subject,h.court,h.documentType].filter(Boolean).join(' '),q);if(s)out.push({...h,score:s})}
+  for(const s of LIVE_SUBJECTS){for(const a of s.bareActs)push({group:'ACTS',title:a,subtitle:s.name,href:'/subjects/'+s.slug,subject:s.name,act:a,status:'published',score:0});for(const t of s.topics){const sec=/^s-\d/i.test(t.id)||!!t.range;push({group:sec?'SECTIONS':'TOPICS',title:t.name,subtitle:[s.name,t.range].filter(Boolean).join(' · '),href:'/subjects/'+s.slug+'/'+t.id,subject:s.name,section:sec?(t.range||t.id):undefined,status:'published',score:0})}}
+  for(const j of ALL_JUDGMENTS)push({group:'CASES',title:j.caseName,subtitle:[j.citation,j.subject,j.summary].filter(Boolean).join(' · '),href:'/case-law/'+j.id,court:j.court,year:j.year,subject:j.subject,act:j.provisions.map(p=>p.actName).join(' '),section:j.provisions.map(p=>p.section||p.article||'').filter(Boolean).join(' '),status:j.status,score:0})
+  for(const t of TOOLS)push({group:'TOOLS',title:t.name,subtitle:t.description,href:t.slug==='case-law'?'/case-law':t.slug==='knowledge'?'/knowledge':'/tool/'+t.slug,status:'published',score:0})
+  for(const d of DRAFT_TEMPLATES)push({group:'DRAFTS',title:d.name,subtitle:[d.category,d.statute,d.description].filter(Boolean).join(' · '),href:'/tool/legal-draft-studio',subject:d.category,act:d.statute,documentType:d.name,status:d.tier||'scaffold',score:0})
+  for(const c of FILING_CHECKLISTS)push({group:'DRAFTS',title:c.title,subtitle:'Checklist · '+c.forum,href:'/tool/filing-checklists',subject:c.forum,documentType:'Checklist',status:'published',score:0})
+  for(const e of allEntities())push({group:'KNOWLEDGE',title:e.title,subtitle:e.type+' · '+e.summary,href:e.href||'/knowledge/'+encodeURIComponent(e.id),subject:e.category,status:'published',score:0})
+  for(const p of PRIMARY_SOURCES)push({group:'KNOWLEDGE',title:p.title,subtitle:'Source · '+p.tierLabel+' · '+p.org,href:p.url,status:'published',score:0})
+  return out.filter(h=>!court||h.court===court).filter(h=>!year||String(h.year||'')===year).filter(h=>!act||norm(h.act||'').includes(norm(act))).filter(h=>!section||norm(h.section||'').includes(norm(section))).filter(h=>!subject||norm(h.subject||'').includes(norm(subject))).filter(h=>!documentType||norm(h.documentType||'').includes(norm(documentType))).filter(h=>!status||h.status===status).sort((a,b)=>b.score-a.score||a.title.localeCompare(b.title)).slice(0,100)
+ },[q,court,year,act,section,subject,documentType,status])
+ const options=useMemo(()=>({courts:[...new Set(hits.map(h=>h.court).filter(Boolean) as string[])].sort(),years:[...new Set(hits.map(h=>h.year).filter(Boolean) as number[])].sort((a,b)=>b-a),acts:[...new Set(hits.flatMap(h=>(h.act||'').split(/\\s*[,;/]\\s*/)).filter(Boolean))].sort(),sections:[...new Set(hits.flatMap(h=>(h.section||'').split(/\\s+/)).filter(Boolean))].sort(),subjects:[...new Set(hits.map(h=>h.subject).filter(Boolean) as string[])].sort(),documentTypes:[...new Set(hits.map(h=>h.documentType).filter(Boolean) as string[])].sort(),statuses:[...new Set(hits.map(h=>h.status).filter(Boolean) as string[])].sort()}),[hits])
+ const runRecent=(term:string)=>{const n=[term,...recent.filter(x=>x!==term)].slice(0,8);setRecent(n);try{localStorage.setItem(RECENT_KEY,JSON.stringify(n))}catch{};setQ(term)}
+ const clearRecent=()=>{setRecent([]);try{localStorage.removeItem(RECENT_KEY)}catch{}}
+ const clearFilters=()=>{setCourt('');setYear('');setAct('');setSection('');setSubject('');setDocumentType('');setStatus('')}
+ const filters=[['Court',court,setCourt,options.courts],['Year',year,setYear,options.years.map(String)],['Act',act,setAct,options.acts],['Section',section,setSection,options.sections],['Subject',subject,setSubject,options.subjects],['Document type',documentType,setDocumentType,options.documentTypes],['Verification status',status,setStatus,options.statuses]] as const
+ return <div className="space-y-5"><section className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-7 shadow-sm"><div className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-[#8B1E3F]"><Search className="size-4"/> Global Search</div><div className="flex flex-wrap items-end justify-between gap-3"><div><h1 className="mt-2 text-2xl sm:text-3xl font-black tracking-tight">One legal search entry point</h1><p className="mt-2 text-sm text-slate-600 dark:text-slate-400 max-w-3xl">Search Acts, sections, cases, subjects, tools, drafts, checklists and reusable knowledge. Query history stays in browser storage.</p></div><kbd className="rounded-lg border px-2 py-1 text-xs text-slate-500">Ctrl/⌘ K</kbd></div><div className="relative mt-4"><input id="global-law-search" value={q} onChange={e=>setQ(e.target.value)} onKeyDown={e=>e.key==='Enter'&&q.trim().length>=2&&runRecent(q.trim())} placeholder="Search Article 21, bail, Kesavananda, CPC, negligence…" className="w-full h-12 rounded-xl border border-slate-200 dark:border-slate-700 bg-transparent px-4 pr-10 text-sm" autoFocus/>{q&&<button type="button" onClick={()=>setQ('')} aria-label="Clear search" className="absolute right-2 top-2 size-8 rounded-lg flex items-center justify-center"><X className="size-4"/></button>}</div>{recent.length>0&&!q&&<div className="mt-4"><div className="flex items-center justify-between text-xs font-bold text-slate-500"><span>Recent searches</span><button type="button" onClick={clearRecent} className="underline">Clear</button></div><div className="flex flex-wrap gap-2 mt-2">{recent.map(term=><button key={term} type="button" onClick={()=>runRecent(term)} className="rounded-full border px-3 py-1.5 text-xs">{term}</button>)}</div></div>}{q.trim().length>=2&&<div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2 mt-4">{filters.map(([label,value,setter,values])=><label key={label} className="text-xs font-semibold text-slate-600 dark:text-slate-400"><span className="block mb-1">{label}</span><select value={value} onChange={e=>setter(e.target.value)} className="w-full h-10 rounded-lg border border-slate-200 dark:border-slate-700 bg-transparent px-2"><option value="">All</option>{values.slice(0,80).map(v=><option key={v} value={v}>{v}</option>)}</select></label>)}{filters.some(([,v])=>Boolean(v))&&<button type="button" onClick={clearFilters} className="self-end h-10 rounded-lg border px-3 text-xs font-bold">Clear filters</button>}</div>}</section>{q.trim().length>0&&q.trim().length<2&&<div className="text-sm text-slate-500 text-center">Enter at least 2 characters.</div>}{q.trim().length>=2&&hits.length===0&&<div className="rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500">No results for these terms and filters. Try a broader spelling or clear a filter. Common legal synonyms and minor spelling errors are supported.</div>}{GROUPS.map(group=>{const list=hits.filter(h=>h.group===group);if(!list.length)return null;return <section key={group} className="space-y-2"><div className="text-xs font-extrabold uppercase tracking-wide text-slate-500">{group} <span className="font-normal">({list.length})</span></div>{list.map((h,i)=><a key={group+'-'+i+'-'+h.title} href={h.href} target={h.href.startsWith('http')?'_blank':undefined} rel={h.href.startsWith('http')?'noreferrer':undefined} className="block rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 hover:border-[#8B1E3F]/40 transition"><div className="font-bold text-sm">{h.title}</div><div className="text-xs text-slate-500 mt-0.5 line-clamp-2">{h.subtitle}</div><div className="flex flex-wrap gap-2 mt-2 text-[11px] text-slate-500">{h.court&&<span>{h.court}</span>}{h.year&&<span>· {h.year}</span>}{h.act&&<span>· {h.act}</span>}{h.status&&<span>· {h.status}</span>}</div></a>)}</section>})}</div>
 }
