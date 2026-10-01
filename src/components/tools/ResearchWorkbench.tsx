@@ -59,7 +59,7 @@ export function ResearchWorkbench() {
         </h1>
         <p className="text-sm text-slate-600 dark:text-slate-400">
           Structured workflow from question → issues → authority matrix → research note. Session saves
-          automatically in this browser (PH3-010). Not legal advice.
+          automatically in this browser (PH3-010/020). Not legal advice.
         </p>
         {hydrated && session.updatedAt && (
           <p className="text-[11px] text-slate-500">
@@ -86,15 +86,74 @@ export function ResearchWorkbench() {
             value={session.question.jurisdiction}
             onChange={(e) => patchQuestion({ jurisdiction: e.target.value })}
             className="mt-1 h-10 w-full rounded-xl border border-slate-200 dark:border-slate-700 px-3 text-sm"
+            placeholder="e.g. India — All courts"
           />
         </label>
         <label className="block text-xs font-bold">
-          Subject / Act focus
+          Court level
+          <select
+            value={session.question.courtLevel || ''}
+            onChange={(e) => patchQuestion({ courtLevel: e.target.value || undefined })}
+            className="mt-1 h-10 w-full rounded-xl border border-slate-200 dark:border-slate-700 px-3 text-sm bg-white dark:bg-slate-900"
+          >
+            <option value="">Any / not specified</option>
+            <option value="Supreme Court">Supreme Court</option>
+            <option value="High Court">High Court</option>
+            <option value="District Court">District Court</option>
+            <option value="Tribunal">Tribunal</option>
+            <option value="Trial court">Trial court</option>
+            <option value="Appellate">Appellate (general)</option>
+          </select>
+        </label>
+      </div>
+
+      <div className="grid gap-3 sm:grid-cols-2">
+        <label className="block text-xs font-bold">
+          Date from
           <input
-            value={session.question.act || session.question.subjectSlug || ''}
-            onChange={(e) => patchQuestion({ act: e.target.value, subjectSlug: e.target.value })}
+            type="date"
+            value={session.question.dateFrom || ''}
+            onChange={(e) => patchQuestion({ dateFrom: e.target.value || undefined })}
             className="mt-1 h-10 w-full rounded-xl border border-slate-200 dark:border-slate-700 px-3 text-sm"
-            placeholder="e.g. CPC, Constitution"
+          />
+        </label>
+        <label className="block text-xs font-bold">
+          Date to
+          <input
+            type="date"
+            value={session.question.dateTo || ''}
+            onChange={(e) => patchQuestion({ dateTo: e.target.value || undefined })}
+            className="mt-1 h-10 w-full rounded-xl border border-slate-200 dark:border-slate-700 px-3 text-sm"
+          />
+        </label>
+      </div>
+
+      <div className="grid gap-3 sm:grid-cols-3">
+        <label className="block text-xs font-bold">
+          Subject
+          <input
+            value={session.question.subjectSlug || ''}
+            onChange={(e) => patchQuestion({ subjectSlug: e.target.value || undefined })}
+            className="mt-1 h-10 w-full rounded-xl border border-slate-200 dark:border-slate-700 px-3 text-sm"
+            placeholder="e.g. cpc, constitution"
+          />
+        </label>
+        <label className="block text-xs font-bold">
+          Act
+          <input
+            value={session.question.act || ''}
+            onChange={(e) => patchQuestion({ act: e.target.value || undefined })}
+            className="mt-1 h-10 w-full rounded-xl border border-slate-200 dark:border-slate-700 px-3 text-sm"
+            placeholder="e.g. CPC, 1908"
+          />
+        </label>
+        <label className="block text-xs font-bold">
+          Section
+          <input
+            value={session.question.section || ''}
+            onChange={(e) => patchQuestion({ section: e.target.value || undefined })}
+            className="mt-1 h-10 w-full rounded-xl border border-slate-200 dark:border-slate-700 px-3 text-sm"
+            placeholder="e.g. s. 32 / Art. 21"
           />
         </label>
       </div>
@@ -127,7 +186,7 @@ export function ResearchWorkbench() {
               patchIssues({
                 secondary: e.target.value
                   .split('\n')
-                  .map((s) => s.trim())
+                  .map((x) => x.trim())
                   .filter(Boolean),
               })
             }
@@ -143,7 +202,7 @@ export function ResearchWorkbench() {
               patchIssues({
                 statutory: e.target.value
                   .split('\n')
-                  .map((s) => s.trim())
+                  .map((x) => x.trim())
                   .filter(Boolean),
               })
             }
@@ -154,14 +213,14 @@ export function ResearchWorkbench() {
       </section>
 
       <section className="space-y-3">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-2">
           <h2 className="text-sm font-black">Authority matrix</h2>
           <button
             type="button"
+            className="inline-flex items-center gap-1 rounded-xl border border-slate-200 dark:border-slate-700 px-2 py-1 text-xs font-bold"
             onClick={() =>
               setSession((s) => ({ ...s, authorities: [...s.authorities, emptyAuthorityRow()] }))
             }
-            className="inline-flex items-center gap-1 rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-xs font-bold"
           >
             <Plus className="size-3.5" /> Add row
           </button>
@@ -169,58 +228,61 @@ export function ResearchWorkbench() {
         {session.authorities.map((r) => (
           <div
             key={r.id}
-            className="grid gap-2 rounded-2xl border border-slate-200 dark:border-slate-800 p-3 sm:grid-cols-2"
+            className="space-y-2 rounded-2xl border border-slate-200 dark:border-slate-800 p-3"
           >
-            <input
-              placeholder="Case name"
-              value={r.caseName}
-              onChange={(e) => updateRow(r.id, { caseName: e.target.value })}
-              className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-xs"
-            />
-            <input
-              placeholder="Court"
-              value={r.court}
-              onChange={(e) => updateRow(r.id, { court: e.target.value })}
-              className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-xs"
-            />
-            <input
-              placeholder="Citation"
-              value={r.citation}
-              onChange={(e) => updateRow(r.id, { citation: e.target.value })}
-              className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-xs"
-            />
-            <input
-              placeholder="Statute / section"
-              value={r.statute}
-              onChange={(e) => updateRow(r.id, { statute: e.target.value })}
-              className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-xs"
-            />
-            <input
-              placeholder="Issue linked"
-              value={r.issue}
-              onChange={(e) => updateRow(r.id, { issue: e.target.value })}
-              className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-xs sm:col-span-2"
-            />
-            <input
-              placeholder="Holding (your note)"
-              value={r.holding}
-              onChange={(e) => updateRow(r.id, { holding: e.target.value })}
-              className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-xs sm:col-span-2"
-            />
-            <div className="flex items-center justify-between sm:col-span-2">
+            <div className="grid gap-2 sm:grid-cols-2">
+              <input
+                value={r.caseName}
+                onChange={(e) => updateRow(r.id, { caseName: e.target.value })}
+                placeholder="Case name"
+                className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-sm"
+              />
+              <input
+                value={r.court}
+                onChange={(e) => updateRow(r.id, { court: e.target.value })}
+                placeholder="Court"
+                className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-sm"
+              />
+              <input
+                value={r.citation}
+                onChange={(e) => updateRow(r.id, { citation: e.target.value })}
+                placeholder="Citation"
+                className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-sm"
+              />
+              <input
+                value={r.statute}
+                onChange={(e) => updateRow(r.id, { statute: e.target.value })}
+                placeholder="Statute / section"
+                className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-sm"
+              />
+              <input
+                value={r.issue}
+                onChange={(e) => updateRow(r.id, { issue: e.target.value })}
+                placeholder="Issue"
+                className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-sm sm:col-span-2"
+              />
+              <textarea
+                value={r.holding}
+                onChange={(e) => updateRow(r.id, { holding: e.target.value })}
+                placeholder="Holding / ratio (your notes)"
+                rows={2}
+                className="w-full rounded-lg border border-slate-200 dark:border-slate-700 p-2 text-sm sm:col-span-2"
+              />
+            </div>
+            <div className="flex flex-wrap items-center justify-between gap-2">
               <select
                 value={r.verification}
                 onChange={(e) =>
                   updateRow(r.id, { verification: e.target.value as VerificationStatus })
                 }
-                className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-xs"
+                className="h-8 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-xs bg-white dark:bg-slate-900"
               >
                 <option value="user-provided">user-provided</option>
-                <option value="needs-review">needs-review</option>
+                <option value="verified">verified</option>
                 <option value="partial">partial</option>
                 <option value="not-verified">not-verified</option>
                 <option value="conflict">conflict</option>
-                <option value="verified">verified</option>
+                <option value="needs-review">needs-review</option>
               </select>
               <button
                 type="button"
