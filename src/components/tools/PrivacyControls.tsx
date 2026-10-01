@@ -5,6 +5,7 @@ import {
   deleteAllCpLawData,
   exportAllCpLawData,
   importCpLawData,
+  resetCpLawNamespace,
   storageUsageEstimate,
 } from '../../lib/localStore'
 
@@ -29,6 +30,11 @@ export function PrivacyControls() {
     const r = importCpLawData(importText)
     if (r.ok) setMsg(`Imported ${r.keys.length} namespace(s): ${r.keys.join(', ') || 'none'}`)
     else setMsg(`Import failed: ${r.error}`)
+  }
+
+  const handleResetWorkspace = (key: (typeof CP_LAW_NS)[keyof typeof CP_LAW_NS]) => {
+    if (!confirm(`Reset local workspace ${key}?`)) return
+    setMsg(resetCpLawNamespace(key) ? `Reset: ${key}` : `No data stored for ${key}.`)
   }
 
   const handleDelete = () => {
@@ -90,6 +96,14 @@ export function PrivacyControls() {
         >
           <Upload className="size-3.5" /> Import
         </button>
+        <div className="space-y-2">
+          <div className="text-xs font-extrabold uppercase text-slate-500">Reset individual workspace</div>
+          <div className="grid sm:grid-cols-2 gap-2">
+            {Object.values(CP_LAW_NS).map((key) => (
+              <button key={key} type="button" onClick={() => handleResetWorkspace(key)} className="min-h-11 rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-left text-[11px] font-bold font-mono">Reset {key}</button>
+            ))}
+          </div>
+        </div>
         <button
           type="button"
           onClick={handleDelete}
