@@ -263,4 +263,22 @@ Implementation is complete via PR #94, merged as `531ed6d6075daeac9f30d79ac40559
 
 **Phase 20 status:** CLOSED.
 
-**Next:** Phase 21 — PWA / Offline.
+## Phase 21 — PWA / Offline (CLOSED)
+
+Implementation is verified in `codepackr-law`.
+
+- Web App Manifest (`public/manifest.webmanifest`) defines standalone PWA capabilities, seal burgundy theme `#8B1E3F`, and SVG icon assets linked in `index.html`.
+- Service worker (`public/sw.js`) manages `cp-law-shell-v1` app shell caching with network-first navigation and cache-first shell asset routing without pretending cached legal text is current law.
+- Offline-first candidate registry in `src/lib/offline.ts` defines all 8 roadmap §26 categories (MCQs, flashcards, maxims, calculators, saved notes, case workspaces, draft scaffolds, static knowledge).
+- Connectivity listener and runtime-safe `isOnline()` support browser and Node.js SSR environments.
+- Visible `OfflineBanner` alerts users when offline that shell tools work from cache and cached legal text is not current primary authority.
+- `formatLiveSourceStatus()` clearly distinguishes online, cached offline with ISO date, and unavailable offline states.
+- Anti-staleness safeguard `OFFLINE_LEGAL_STALENESS_WARNING` prevents stale cached legal information from being presented as current law.
+- Focused regression coverage is in `tests/offline.test.ts`.
+- Exit audit: `docs/PHASE-21-EXIT-AUDIT.md`.
+- Validation: TypeScript PASS (`tsc --noEmit`), 174/174 unit tests PASS, production build PASS.
+
+**Phase 21 status:** CLOSED.
+
+**Next:** Phase 22 — Analytics Without Legal-Data Surveillance.
+

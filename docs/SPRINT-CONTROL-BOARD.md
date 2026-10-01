@@ -2,8 +2,8 @@
 
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
-**Roadmap position:** Phase 18 — **CLOSED** · Phase 19 — **CLOSED** · Phase 20 — **NEXT**
-**Updated:** 2026-10-01 (Phase 19 Global Search completed)
+**Roadmap position:** Phase 20 — **CLOSED** · Phase 21 — **CLOSED** · Phase 22 — **NEXT**
+**Updated:** 2026-10-01 (Phase 21 PWA / Offline completed)
 
 ## Verified completed
 
@@ -75,6 +75,8 @@
 | PH17-100 | Phase 17 exit audit | **COMPLETED** | P0 |
 | PH20-010 | Mobile and Accessibility implementation | **COMPLETED** | P1 |
 | PH20-100 | Phase 20 exit audit | **COMPLETED** | P0 |
+| PH21-010 | PWA and Offline implementation | **COMPLETED** | P1 |
+| PH21-100 | Phase 21 exit audit | **COMPLETED** | P0 |
 
 ### PH4-040 — COMPLETED (2026-10-01)
 
@@ -488,3 +490,28 @@ The Phase 18 roadmap deliverable is complete: the verification policy defines re
 **Next action:** Phase 18 — Legal Content Verification.
 
 **Phase 17 status:** **CLOSED**.
+
+## Phase 21 — PWA / Offline — COMPLETED (2026-10-01)
+
+**Implementation:** `src/lib/offline.ts`, `src/components/OfflineBanner.tsx`, `public/manifest.webmanifest`, `public/sw.js`  
+**Exit audit:** `docs/PHASE-21-EXIT-AUDIT.md`  
+**Validation:** TypeScript PASS (`tsc --noEmit`), 174/174 unit tests PASS (`npm test`), production build PASS (`npm run build`).
+
+| Check | Result |
+|---|---|
+| Offline-first candidate registry (8 categories) | **PASS** |
+| Offline route detection (`isOfflineFirstRoute`) | **PASS** |
+| Web App Manifest (`manifest.webmanifest` + seal burgundy theme) | **PASS** |
+| Service Worker shell caching (`cp-law-shell-v1`) | **PASS** |
+| Connectivity monitor & safe `isOnline()` | **PASS** |
+| Visible offline banner (`OfflineBanner.tsx`) | **PASS** |
+| Live vs cached offline status (`formatLiveSourceStatus`) | **PASS** |
+| Anti-staleness safeguard (`OFFLINE_LEGAL_STALENESS_WARNING`) | **PASS** |
+| Focused unit tests (`tests/offline.test.ts`) | **PASS** — 8/8 tests pass |
+| TypeScript + full test suite + production build | **PASS** |
+
+**Blocker:** None for Phase 21.  
+**Next action:** Phase 22 — Analytics Without Legal-Data Surveillance.
+
+**Phase 21 status:** **CLOSED**.
+
