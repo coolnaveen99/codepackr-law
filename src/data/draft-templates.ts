@@ -25,7 +25,7 @@ export type DraftTemplate = {
   fields: DraftField[]
   build: (v: Record<string, string>) => string
   annexures?: string[]
-  lastReviewed: string
+  lastReviewed?: string
   tier?: DraftTier
   courtForum?: string
   stateDependency?: string
