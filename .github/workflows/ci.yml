@@ -45,6 +45,9 @@ jobs:
             npm install
           fi
 
+      - name: Dependency audit
+        run: npm audit --omit=dev --audit-level=high
+
       - name: TypeScript validation
         run: npm run lint
 
