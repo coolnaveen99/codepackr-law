@@ -22,6 +22,7 @@ A roadmap item is complete only when its required code/content/tests/verificatio
 **Phase 8 — CLOSED** (Legal Draft Studio 2.0 exit audit, 2026-10-01)  
 **Phase 9 — CLOSED** (Filing and Court Checklist System exit audit, 2026-10-01)  
 **Phase 10 — CLOSED** (Legal Calculators exit audit, 2026-10-01)
+**Phase 15 — IMPLEMENTED / CI PENDING** (Primary Source Finder, 2026-10-01; executed by explicit user direction while Phase 14 remains pending)
 
 ```
 Phase 0 stabilization
@@ -189,3 +190,23 @@ Implementation is complete via PR #83.
 - Next: Phase 14 — Cause List Organizer.
 
 **Phase 13 status:** CLOSED.
+
+
+## Phase 15 — Primary Source Finder
+
+Implementation is present on branch `feat/ph15-primary-source-finder`.
+
+- Tiered primary-source directory distinguishes official government/court/statute sources from reported databases.
+- Search result cards expose title, authority type, review date, relevant Act/Section scope, source tier and link-verification status.
+- Search supports title, organisation, authority, description and Act/Section metadata.
+- Tier 1–5 and source-category filters are deterministic and browser-local.
+- External links open the selected source; CodePackr does not mirror copyrighted full text.
+- “Link checked” is explicitly a destination check, not certification of a legal proposition.
+- Focused tests are added in `tests/primary-source-finder.test.ts`.
+- Exit audit: `docs/PHASE-15-EXIT-AUDIT.md`
+- Official source destinations were checked against India Code, Supreme Court and eCourts services on 2026-10-01.
+- CI/build: **PENDING**.
+
+**Phase 15 status:** IMPLEMENTED / CI PENDING.
+
+**Phase 14 status:** PENDING. Phase 15 was executed on explicit user direction rather than sequentially closing Phase 14.
