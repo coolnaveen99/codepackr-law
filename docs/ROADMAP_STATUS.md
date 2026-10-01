@@ -218,8 +218,8 @@ Implementation is present on branch `feat/ph15-primary-source-finder-v2`.
 - Focused tests are added in `tests/primary-source-finder.test.ts`.
 - Exit audit: `docs/PHASE-15-EXIT-AUDIT.md`
 - Official source destinations were checked against India Code, Supreme Court and eCourts services on 2026-10-01.
-- CI/build: **PENDING**.
+- CI/build: **PASS** — CI #365 (TypeScript, unit tests, production build).
 
-**Phase 15 status:** IMPLEMENTED / CI PENDING.
+**Phase 15 status:** CLOSED pending merge verification.
 
 **Next:** Phase 16 — Privacy and Local Storage.
