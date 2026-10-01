@@ -89,6 +89,13 @@ describe('PH4-020 Citation Verification Engine — Official Authority Links', ()
   })
 })
 
+describe('PH4-040 public verifier API', () => {
+  it('retains the VerifiedCitation type surface while using the shared authority resolver', () => {
+    const result = verifyCitationSync('(1973) 4 SCC 225')
+    assert.equal(result.status, 'verified')
+    assert.ok(result.officialSources.some((source) => source.url.includes('escr.sci.gov.in')))
+  })
+
 describe('PH4-040 Authority Network & Official Portal Link Generator', () => {
   it('emits e-SCR, SCR search, SCI judgments, and India Code for Supreme Court / INSC', () => {
     const sources = resolveOfficialSources({ courtHint: 'Supreme Court of India', neutralCourt: 'INSC' })
