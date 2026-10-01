@@ -35,6 +35,8 @@
 | PH5-100 | Phase 5 exit audit | **COMPLETED** | P0 |
 | PH6-010 | Judgment Compare implementation | **COMPLETED** | P0 |
 | PH6-100 | Phase 6 exit audit | **COMPLETED** | P0 |
+| PH7-010 | Case Preparation Workbench implementation | **COMPLETED** | P0 |
+| PH7-100 | Phase 7 exit audit | **COMPLETED** | P0 |
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
 
 ### PH4-040 — COMPLETED (2026-10-01)\n\n**Validation evidence:** PR #68 branch CI run **#297** passed TypeScript validation, **113/113 unit tests**, and production build. Official e-SCR, SCR, SCI, and eCourts destinations were checked against current official portals. A prior CI run (#293) caught a type-export regression; the fix was validated by run #295 (lint/build pass) and final run #297 (full gate pass).
