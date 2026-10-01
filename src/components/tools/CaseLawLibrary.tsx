@@ -398,7 +398,16 @@ export function CaseLawLibrary({
 
   // Save last read whenever reading a judgment
   useEffect(() => {
-    if (judgmentId && current) {
+    if (loadingJudgments) {
+    return (
+      <div className="rounded-2xl border border-slate-200 dark:border-slate-800 p-10 text-center">
+        <p className="font-semibold">Loading judgment library…</p>
+        <p className="mt-1 text-sm text-slate-500">Large case-law data is loaded only when this library is opened.</p>
+      </div>
+    )
+  }
+
+  if (judgmentId && current) {
       const entry: LastReadJudgment = {
         judgmentId,
         sectionId: jumpTo,
@@ -561,7 +570,7 @@ export function CaseLawLibrary({
             className="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-2.5 text-sm min-h-[44px]"
           >
             <option value="">All subjects</option>
-            {getJudgmentSubjects(ALL_JUDGMENTS).map((item) => (
+            {getJudgmentSubjects(judgments).map((item) => (
               <option key={item}>{item}</option>
             ))}
           </select>
@@ -617,7 +626,7 @@ export function CaseLawLibrary({
                 </strong>{' '}
                 of{' '}
                 <strong className="text-slate-900 dark:text-white font-bold text-sm">
-                  {ALL_JUDGMENTS.length.toLocaleString()}
+                  {judgments.length.toLocaleString()}
                 </strong>{' '}
                 total landmark judgments
               </span>
