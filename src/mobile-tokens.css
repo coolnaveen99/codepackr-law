@@ -31,6 +31,13 @@
 }
 
 
+/* Primary controls keep a 44px touch target on narrow screens. */
+@media (max-width: 639px) {
+  :where(button, [role="button"], select, input[type="date"], input[type="time"], input[type="text"], input[type="search"]) {
+    min-height: var(--cp-touch-target);
+  }
+}
+
 /* Phase 20 — keyboard focus and mobile reflow baseline */
 :where(button, [role="button"], input, select, textarea, a):focus-visible {
   outline: 3px solid #0f766e !important;
