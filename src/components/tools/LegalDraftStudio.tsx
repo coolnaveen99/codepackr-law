@@ -27,7 +27,7 @@ export function LegalDraftStudio() {
   const [reviewYear, setReviewYear] = useState('')
   const [sortBy, setSortBy] = useState<'default' | 'az' | 'most-used' | 'recently-used' | 'recently-reviewed'>('default')
   const [usage, setUsage] = useState<DraftUsageState>(() => readDraftUsage())
-  const allTemplates = useMemo(() => [...DRAFT_TEMPLATES.map((t) => ({ ...t, tier: t.tier || 'reviewed' as const, courtForum: t.courtForum || 'General / forum-dependent', stateDependency: t.stateDependency || 'General / verify local rules' })), ...TEMPLATE_CATALOG.map(catalogToDraftTemplate)], [])
+  const allTemplates = useMemo(() => [...DRAFT_TEMPLATES.map((t) => ({ ...t, tier: t.tier || 'scaffold', courtForum: t.courtForum || 'General / forum-dependent', stateDependency: t.stateDependency || 'General / verify local rules' })), ...TEMPLATE_CATALOG.map(catalogToDraftTemplate)], [])
   const [exporting, setExporting] = useState<ExportKind | null>(null)
 
   const template: DraftTemplate | undefined = useMemo(

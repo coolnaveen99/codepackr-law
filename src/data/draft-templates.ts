@@ -12,7 +12,7 @@ export type DraftField = {
   required?: boolean
 }
 
-export type DraftTier = 'verified' | 'scaffold'
+import type { DraftTier } from './draftTiers'
 
 export type DraftTemplate = {
   id: string
