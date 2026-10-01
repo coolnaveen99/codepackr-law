@@ -18,10 +18,10 @@
 | No legal text in production analytics | PASS by privacy boundary |
 | No secrets in local storage | PASS by architecture boundary |
 | Focused reset regression test | PASS |
-| TypeScript / tests / build | PASS — pending final CI |
+| TypeScript / tests / build | PASS — CI #370 |
 
 ## Blockers
 
 None.
 
-**PHASE 16 — CLOSED after final CI and merge.**
+**PHASE 16 — CLOSED.**
