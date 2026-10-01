@@ -111,8 +111,8 @@ function isSessionShape(value: unknown): value is ResearchSession {
 
 /** Load session from localStorage; returns empty session if missing/invalid. */
 export function loadResearchSession(): ResearchSession {
-  const raw = loadJson<unknown>(RESEARCH_SESSION_KEY, null)
-  if (isSessionShape(raw)) {
+  const raw = loadJson<ResearchSession>(RESEARCH_SESSION_KEY)
+  if (raw && isSessionShape(raw)) {
     return {
       ...emptyResearchSession(),
       ...raw,
@@ -152,7 +152,8 @@ export function researchNoteFromSession(session: ResearchSession): string {
     '',
     `Jurisdiction: ${q.jurisdiction || '—'}`,
     q.courtLevel ? `Court level: ${q.courtLevel}` : '',
-    q.subjectSlug || q.act ? `Subject / Act focus: ${[q.subjectSlug, q.act].filter(Boolean).join(' · ')}` : '',
+    q.subjectSlug ? `Subject: ${q.subjectSlug}` : '',
+    q.act ? `Act: ${q.act}` : '',
     q.section ? `Section: ${q.section}` : '',
     q.dateFrom || q.dateTo ? `Date range: ${q.dateFrom || '…'} – ${q.dateTo || '…'}` : '',
     '',

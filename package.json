@@ -14,8 +14,8 @@
     "audit": "npx tsx scripts/audit_subjects.ts",
     "validate:topics": "npx tsx scripts/validate_topics.ts",
     "validate:judgments": "npx tsx scripts/validate_judgments.ts",
-    "test": "npx tsx --test tests/unit.test.ts tests/content-gateway.test.ts",
-    "test:run": "npx tsx --test tests/unit.test.ts tests/content-gateway.test.ts",
+    "test": "npx tsx --test tests/unit.test.ts tests/content-gateway.test.ts tests/research-session.test.ts",
+    "test:run": "npx tsx --test tests/unit.test.ts tests/content-gateway.test.ts tests/research-session.test.ts",
     "parity:legal-content": "node scripts/parity-legal-content.mjs"
   },
   "dependencies": {
