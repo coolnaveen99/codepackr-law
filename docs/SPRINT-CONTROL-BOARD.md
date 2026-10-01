@@ -3,7 +3,7 @@
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
 **Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** · Phase 4 — **CLOSED** · Phase 5 — **CLOSED** · Phase 6 — **CLOSED** · Phase 7 — **CLOSED** · Phase 8 — **CLOSED** · Phase 9 — **CLOSED** · Phase 10 — **CLOSED** · Phase 11 — **CLOSED** · Phase 12 — **CLOSED**
-**Updated:** 2026-10-01 (PH11 + PH12 synchronized — Transition Centre and Student Learning 2.0 exit audits closed)
+**Updated:** 2026-10-01 (PH11 + PH12 synchronized — Transition Centre and Student Learning 2.0 exit audits closed; Phase 13 is next)
 
 ## Verified completed
 
@@ -40,9 +40,9 @@
 **Blocker:** None for Phase 12.  
 **Legal-content dependency:** None changed; canonical legal-content remains the source/content boundary.
 
-**Board integrity note:** Phase 11 implementation already exists on `main`, but no separate Phase 11 exit evidence was present on the Sprint Board. It remains **IMPLEMENTED / EXIT AUDIT PENDING** and is not marked completed.
+**Board integrity note:** Phase 11 now has its separate exit audit and validation evidence on `main` (`docs/PHASE-11-EXIT-AUDIT.md`, PR #82 final CI). Phase 11 and Phase 12 are both closed.
 
-**Next action:** Execute the Phase 11 validation/exit-audit task before advancing to Phase 13.
+**Next action:** Phase 13 — Advocate Practice Dashboard. Do not start Phase 13 unless it becomes the current executable Sprint Board task.
 ## Current sprint backlog
 
 | ID | Work | Status | Priority |
@@ -65,10 +65,14 @@
 | PH9-010 | Filing and Court Checklist System implementation | **COMPLETED** | P0 |
 | PH9-100 | Phase 9 exit audit | **COMPLETED** | P0 |
 | PH10-010 | Legal Calculators implementation | **COMPLETED** | P1 |
-| PH10-100 | Phase 10 exit audit | **COMPLETED** | P1 |\n| PH11-010 | BNS / BNSS / BSA Transition Centre implementation | **COMPLETED** | P0 |\n| PH11-100 | Phase 11 exit audit | **COMPLETED** | P0 |
+| PH10-100 | Phase 10 exit audit | **COMPLETED** | P1 |
+| PH11-010 | BNS / BNSS / BSA Transition Centre implementation | **COMPLETED** | P0 |
+| PH11-100 | Phase 11 exit audit | **COMPLETED** | P0 |
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
 
-### PH4-040 — COMPLETED (2026-10-01)\n\n**Validation evidence:** PR #68 branch CI run **#297** passed TypeScript validation, **113/113 unit tests**, and production build. Official e-SCR, SCR, SCI, and eCourts destinations were checked against current official portals. A prior CI run (#293) caught a type-export regression; the fix was validated by run #295 (lint/build pass) and final run #297 (full gate pass).
+### PH4-040 — COMPLETED (2026-10-01)
+
+**Validation evidence:** PR #68 branch CI run **#297** passed TypeScript validation, **113/113 unit tests**, and production build. Official e-SCR, SCR, SCI, and eCourts destinations were checked against current official portals. A prior CI run (#293) caught a type-export regression; the fix was validated by run #295 (lint/build pass) and final run #297 (full gate pass).
 
 | Check | Result |
 |-------|--------|
