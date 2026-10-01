@@ -312,3 +312,24 @@ Implementation is verified in `codepackr-law`.
 **Phase 23 status:** CLOSED.
 
 **Next:** Phase 24 — SEO and Discoverability.
+
+
+## Phase 24 — SEO and Discoverability (CLOSED)
+
+Implementation is complete on `main`.
+
+- SEO helpers now generate one canonical site origin and a crawlable absolute Open Graph image.
+- Subject and legal-tool pages expose appropriate structured data; existing topic and judgment schemas remain active.
+- Breadcrumb JSON-LD is generated for routed pages.
+- The prerender pipeline now emits canonical, Open Graph, Twitter, breadcrumb, and WebPage metadata plus crawler-visible internal links.
+- Judgment canonical URLs are aligned with the router's preferred `/case-law/judgment/<id>` path.
+- Sitemap generation remains part of the production build.
+- Canonical legal-content SEO records now have validation for entity linkage, canonical paths, uniqueness, title/description quality, and `noindex` type.
+- The legacy legal-content validation workflow was corrected from the nonexistent `npm run ci` to `npm run validate`.
+- Exit audit: `docs/PHASE-24-EXIT-AUDIT.md`.
+- Law CI: **PASS** — commit `362bc267a7072c9deadc2df59670d83738c1ce7c`.
+- legal-content validation: **PASS** — commit `a1c34a512606a771706ca5264e29ed44767f5477`.
+
+**Phase 24 status:** CLOSED.
+
+**Next:** Phase 25 — Draft Catalogue Governance.
