@@ -3,7 +3,7 @@
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
 **Roadmap position:** Phase 2 — **CLOSED** · Phase 3 not started  
-**Updated:** 2026-10-01 (PA-003 Phase 2 exit audit COMPLETED)
+**Updated:** 2026-10-01 (PA-005 CDN mirror evaluation COMPLETED)
 
 ## Purpose
 
@@ -38,7 +38,7 @@ Legacy parity
       ↓
 Application canonical consumption
       ↓
-Phase 2 exit          ← CLOSED (PA-003, 2026-10-01)
+Phase 2 exit          ← CLOSED (PA-003)
       ↓
 Research Workbench (Phase 3)  ← not started; requires scheduled PH3-001
 ```
@@ -47,33 +47,13 @@ Research Workbench (Phase 3)  ← not started; requires scheduled PH3-001
 
 Large-scale editorial enhancement remains **DEFERRED**.
 
-Continue when scheduled:
-- legal accuracy corrections;
-- source/provenance;
-- historical/current-law corrections;
-- relationship building;
-- representative benchmark content;
-- Judgment Decoder benchmark work.
-
-Defer:
-- mass topic rewriting;
-- making every topic book-length;
-- mass illustrations/hypotheticals;
-- exhaustive judgment decoding;
-- mass visual-study expansion.
-
 ### 3. Single-owner rule
 
 Every active task has exactly one execution owner.
 
 ### 4. Shared-file rule
 
-Do not concurrently edit:
-- `manifests/content-manifest.json`;
-- core schemas;
-- validation scripts;
-- Content Gateway contracts;
-- shared architecture documents.
+Do not concurrently edit manifests, core schemas, validation scripts, Content Gateway contracts, or shared architecture documents without recording the dependency.
 
 ### 5. WIP limit
 
@@ -94,28 +74,19 @@ Maximum four major workstreams may be IN PROGRESS.
 | DEFERRED | Deliberately postponed; remains visible |
 | CANCELLED | Explicitly removed from roadmap/backlog |
 
-## Definition of Ready
-
-A task may move to READY only when objective, owner, repository, affected area, dependencies, acceptance criteria, and overlap checks are clear.
-
 ## Definition of Done
 
-A task may move to COMPLETED only with implementation evidence, validation/tests, CI where applicable, reviewed diff, and recorded commit/PR/check evidence.
+A task may move to COMPLETED only with implementation/evaluation evidence, validation where applicable, reviewed diff, and recorded commit/PR evidence.
 
 ## Verified work completed — Phase 2 foundation
 
 | ID | Result | Evidence |
 |---|---|---|
-| LC-001 | **COMPLETED** | Full manifest **719** entities; CI regenerates manifest + relationship index on main. |
-| LC-002 | **COMPLETED** | PIL published; relationship tests pass. |
-| LC-003 | **COMPLETED** | Relationship index **1,758** edges (audit day); CI graph validation. |
-| LC-004 | **COMPLETED** | Fundamental Rights corpus on main. |
-| LC-005 | **COMPLETED** | DPSP corpus on main. |
-| LC-006 | **COMPLETED** | ContentGateway canonical-first + legacy fallback; parity PASS. |
-| LC-007 | **COMPLETED** | Automated app consumption/parity PASS. |
+| LC-001–LC-007 | **COMPLETED** | See prior board history; full manifest, graph, gateway, parity. |
 | PA-001 | **COMPLETED** | Production JS includes legal-content base, content-manifest, relationship-index. |
-| PA-002 | **COMPLETED** | H1–H7 production acceptance PASS — evidence table retained below. |
-| PA-003 | **COMPLETED** | Phase 2 exit audit PASS — see `docs/PHASE-2-EXIT-AUDIT.md`. |
+| PA-002 | **COMPLETED** | H1–H7 production acceptance PASS. |
+| PA-003 | **COMPLETED** | Phase 2 exit audit — `docs/PHASE-2-EXIT-AUDIT.md`. |
+| PA-005 | **COMPLETED** | CDN/static mirror evaluation — `docs/PA-005-CDN-MIRROR-EVALUATION.md`. Decision: keep GitHub raw near-term; jsDelivr/Vercel as escalation. |
 
 ## Current sprint backlog
 
@@ -125,47 +96,36 @@ A task may move to COMPLETED only with implementation evidence, validation/tests
 | PA-002 | Production browser UX acceptance H1–H7 | codepackr-law | Product / legal-content owner | **COMPLETED** | P0 | PA-001 |
 | PA-003 | Phase 2 exit audit and production sign-off | both | QA / Architecture | **COMPLETED** | P0 | PA-001, PA-002 |
 | PA-004 | Decide and execute legacy-content removal after signed parity | codepackr-law | Architecture / Product | **READY** | P1 | PA-003 (met) |
-| PA-005 | Evaluate static/CDN mirror for canonical legal-content delivery | both | Solution Architect | **READY** | P1 | PA-003 (met) |
+| PA-005 | Evaluate static/CDN mirror for canonical legal-content delivery | both | Solution Architect | **COMPLETED** | P1 | PA-003 (met) |
 | PH3-001 | Phase 3 — Legal Research Workbench architecture kickoff | codepackr-law | Solution Architect | **READY** | P0 | PA-003 (met) |
 | TD-001 | Commit full TopicDetail.tsx source (remove build-time restore stub) | codepackr-law | Core engineer | **READY** | P1 | None |
+| PA-005b | Implement content CDN/mirror (only if Product schedules) | both | Solution Architect | **BACKLOG** | P2 | PA-005 decision |
 
-### PA-002 — H1–H7 production evidence (2026-10-01) — retained
+### PA-005 — evaluation summary (2026-10-01)
 
-Production asset: `/assets/index-SXSV5M7T.js` · last-modified **2026-10-01 05:18:41 GMT**
+Full write-up: **`docs/PA-005-CDN-MIRROR-EVALUATION.md`**
 
-| Check | Status | Evidence |
-|---|---|---|
-| H1 PIL locus-standi | **PASS** | Canonical JSON 200; study notes render |
-| H2 related knowledge-graph panel | **PASS** | Panel visible; relationship-index 200 |
-| H3 CPC s.32 | **PASS** | Treatise renders; topic JSON 200 |
-| H4 tort nature/definition | **PASS** | Alias → topics/torts/nature-definition.json 200 |
-| H5 legacy fallback | **PASS** | company topic canonical 404; legacy body renders |
-| H6 no topic body to analytics | **PASS** | Clarity collect body free of study phrases |
-| H7 mobile TopicDetail | **PASS** | No horizontal overflow; related panel present |
-
-### PA-003 — Phase 2 exit evidence (2026-10-01)
-
-Full matrix: **`docs/PHASE-2-EXIT-AUDIT.md`**
-
-| Re-validation | Result |
+| Item | Result |
 |---|---|
-| Manifest entities | **719** (0 duplicate IDs) |
-| Relationship edges | **1758** |
-| `parity:legal-content` | **PASS** |
-| CORS | `access-control-allow-origin: *` |
-| Production bundle gateway strings | **PASS** |
-| Exit criteria E1–E14 | **PASS** |
+| Baseline (GitHub raw) latency | Manifest ~32–57 ms TTFB; entities ~70 ms; CORS `*` |
+| Near-term decision | **Keep Option A — GitHub raw `main`** |
+| Escalation if raw degrades | **Option B — jsDelivr** via `VITE_LEGAL_CONTENT_BASE_URL` |
+| When release pin / SLA needed | **Option D (Vercel/CF mirror)** or **Option C (GitHub Pages)** |
+| Rejected | Bundle full corpus into app |
+| Implementation | **Not started** — tracked as PA-005b BACKLOG |
+
+### PA-002 / PA-003 evidence
+
+Retained in prior sections / `docs/PHASE-2-EXIT-AUDIT.md`. Do not reopen without regression evidence.
 
 ## Current verified state
 
-- Canonical corpus: **719** entities (689 published, 30 review).
-- Relationship graph: **1,758** edges (audit re-measure).
-- Automated content validation: **PASS**.
-- Automated application parity: **PASS**.
-- ContentGateway: **canonical-first + legacy fallback** in production.
-- PA-001 / PA-002 / PA-003: **COMPLETED**.
+- Canonical corpus: **719** entities; relationship graph ~**1,758** edges.
+- ContentGateway: canonical-first + legacy fallback in production.
+- PA-001 / PA-002 / PA-003 / **PA-005**: **COMPLETED**.
 - Phase 2: **CLOSED**.
-- Legacy topic removal: **not executed** (PA-004 READY for decision only).
+- Content delivery: **GitHub raw** (evaluated; mirror optional later).
+- Legacy topic removal: **not executed** (PA-004 READY for decision).
 - Phase 3: **READY to schedule** (PH3-001); **not started**.
 
 ## Dependency map
@@ -173,19 +133,19 @@ Full matrix: **`docs/PHASE-2-EXIT-AUDIT.md`**
 ```
 PA-001 (COMPLETED) → PA-002 (COMPLETED) → PA-003 (COMPLETED)
                                               ├──→ PA-004 (READY)
-                                              ├──→ PA-005 (READY)
+                                              ├──→ PA-005 (COMPLETED) → PA-005b (BACKLOG)
                                               └──→ PH3-001 (READY)
 TD-001 (READY) — independent tech debt
 ```
 
 ## Active execution rules
 
-- **Do not reopen** LC-001–LC-007 / PA-001 / PA-002 / PA-003 unless new regression evidence appears.
+- **Do not reopen** completed LC/PA items without regression evidence.
 - **PA-004:** Product/Architecture decision required before any legacy file deletion.
-- **PA-005 / PH3-001:** Solution Architect may schedule; do not start without assignment.
+- **PA-005b:** Do not implement a mirror until Product schedules it; env-only jsDelivr switch is allowed as an ops hotfix.
+- **PH3-001:** Solution Architect may schedule; do not start without assignment.
 - **TD-001:** Preferred before large TopicDetail feature work.
 - Maximum four major WIP workstreams remain in force.
-- Large-scale content enhancement remains deferred by policy.
 
 ## Manifest rule
 
@@ -199,7 +159,7 @@ CI regenerates the manifest and relationship index on pushes to `main`.
 
 ## Phase 2 exit gate — CLOSED
 
-All required bullets satisfied with evidence in `docs/PHASE-2-EXIT-AUDIT.md` (2026-10-01).
+See `docs/PHASE-2-EXIT-AUDIT.md`.
 
 ## Next phase gate
 
