@@ -1,19 +1,428 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
 const content: TopicContent = {
-  "glance": "BNS s. 304 defines snatching as a form of theft involving suddenly, quickly or forcibly seizing, securing, grabbing or taking away movable property from a person or from that person's possession, with intent to commit theft.",
-  "study": "CURRENT LAW\\nSection 304 is a substantive offence provision in the property chapter. It defines when theft becomes snatching and prescribes imprisonment up to three years and fine. The underlying concept of theft must still be understood: dishonest intention, movable property, possession and taking without consent remain important to the statutory analysis.\\n\\nDISTINGUISHING SNATCHING\\nThe distinctive feature is the sudden, quick or forcible seizure or taking from a person or from the person's possession. Not every theft from a person is necessarily proved as snatching unless the statutory manner of taking is established.\\n\\nPROOF\\nThe prosecution should identify the property, possession, dishonest intention and the sudden/quick/forcible mode of taking. Identification evidence, CCTV and digital location material may support the case but require their own admissibility and authenticity analysis.\\n\\nTRANSITION\\nBNS applies to offences committed after commencement subject to the governing transition rules. IPC s. 379 and related provisions are historical concordance, not current BNS citations.",
-  "sections": [{"id":"bns-304-module-1","title":"Statutory Elements","order":1,"content":["There must be theft-related conduct involving movable property.","The offender must suddenly, quickly or forcibly seize, secure, grab or take away the property from a person or from the person's possession.","The purpose must be to commit theft."]},{"id":"bns-304-module-2","title":"Possession and Dishonesty","order":2,"content":["Identify whose possession was affected and how it was taken.","The theft concept supplies the dishonest-taking framework; absence of consent and the mental element remain material.","Do not reduce the offence to a mere description of a phone or chain being taken."]},{"id":"bns-304-module-3","title":"Snatching versus Neighbouring Offences","order":3,"content":["Distinguish ordinary theft from the statutory sudden/quick/forcible mode of taking.","If force or fear is used in circumstances satisfying robbery, analyse the robbery provision rather than automatically stopping at s. 304.","Extortion involves a different mechanism: delivery induced by putting a person in fear, not direct seizure constituting theft."]},{"id":"bns-304-module-4","title":"Proof and Digital Evidence","order":4,"content":["CCTV, mobile records, location data and recovery evidence can support identification and manner of taking.","Electronic records require their applicable statutory admissibility route; s. 63 addresses electronic records and does not itself prove identity or dishonest intention.","Recovery evidence should be assessed for continuity, attribution and corroborative value."]},{"id":"bns-304-module-5","title":"Advocacy and Error Control","order":5,"content":["For the prosecution, map each fact to a statutory element.","For the defence, test identity, possession, consent, sudden/quick/forcible taking and dishonest intention separately.","Do not import IPC section numbers as if they were current BNS provisions."]}],
-  "provisions": [{"id":"bns-304","actId":"bns","actName":"Bharatiya Nyaya Sanhita, 2023","provisionId":"bns-304","section":"s. 304","title":"Snatching"},{"id":"bns-303","actId":"bns","actName":"Bharatiya Nyaya Sanhita, 2023","provisionId":"bns-303","section":"s. 303","title":"Theft"},{"id":"bns-63","actId":"bsa","actName":"Bharatiya Sakshya Adhiniyam, 2023","provisionId":"bsa-63","section":"s. 63","title":"Electronic records"}],
-  "examples": [{"id":"bns-304-ex1","title":"Mobile phone snatching","description":"An accused suddenly grabs a phone from a pedestrian's hand and runs. The Court should test each statutory element rather than relying on the label 'snatching'."},{"id":"bns-304-ex2","title":"Property left unattended","description":"Property is taken from an unattended location without the sudden or forcible seizure contemplated by s. 304. The Court must consider the ordinary theft provision instead."}],
-  "hypotheticals": [{"id":"bns-304-hypo","title":"CCTV Snatching Case","facts":"CCTV shows a person suddenly grabbing a bag from a pedestrian. The defence disputes that the accused is the person shown and argues that the bag was voluntarily handed over.","question":"How should s. 304 be applied?","applicableLaw":"BNS ss. 303–304 and BSA s. 63 where the CCTV is tendered as an electronic record.","analysis":"First prove identity and attribution. Then determine possession and whether the taking was sudden, quick or forcible and intended as theft. If the CCTV itself is tendered, separately establish its statutory admissibility and integrity.","conclusion":"A s. 304 conviction requires proof of the statutory manner of taking in addition to the underlying theft framework."}],
-  "distinctions": [{"id":"bns-304-dist","title":"Snatching and neighbouring property offences","left":"Snatching","right":"Ordinary theft / robbery","rows":[{"point":"Core act","left":"Sudden, quick or forcible taking from a person or possession","right":"Theft lacks the special snatching manner; robbery requires the additional statutory force/fear conditions"},{"point":"Proof focus","left":"Manner of taking","right":"Ingredients of the neighbouring offence"}]}],
-  "misconceptions": [{"id":"bns-304-trap1","trap":"Every theft from a person is automatically snatching.","correction":"The statutory sudden, quick or forcible manner must be established."},{"id":"bns-304-trap2","trap":"CCTV authenticity proves the accused's identity automatically.","correction":"Authenticity and attribution must be established; admissibility is distinct from weight."},{"id":"bns-304-trap3","trap":"Snatching is simply robbery with a different name.","correction":"The statutory ingredients and punishment provisions must be separately applied."}],
-  "cases": [{"name":"K.N. Mehra v. State of Rajasthan","year":1957,"citation":"AIR 1957 SC 369","court":"Supreme Court of India","facts":"The Court examined dishonest taking of movable property and the ingredients of theft.","issue":"What mental and factual elements are material to theft?","ratioDecidendi":"The case explains the importance of dishonest intention and the statutory ingredients of theft.","holding":"The Court analysed the theft ingredients on the facts.","relevance":"Use as the underlying theft authority when applying BNS s. 304."},{"name":"Pyare Lal Bhargava v. State of Rajasthan","year":1963,"citation":"AIR 1963 SC 1094","court":"Supreme Court of India","facts":"The Court considered the meaning of moving property out of a person's possession in a theft context.","issue":"How can a temporary taking constitute theft?","ratioDecidendi":"The Court recognised that dishonest taking can amount to theft even where the property is intended to be returned, depending on the statutory ingredients.","holding":"The mental element and movement of property were examined in context.","relevance":"Useful for the underlying theft concept, not as a direct interpretation of newly enacted s. 304."}],
-  "questionsAndAnswers": [{"id":"bns-304-brief","draftingCategory":"brief","question":"Prepare a brief on BNS s. 304.","answer":"Identify the movable property, possession, dishonest intention and the sudden/quick/forcible mode of taking. Then distinguish s. 304 from ordinary theft and robbery and separately prove identity and electronic evidence where relied upon."},{"id":"bns-304-submissions","draftingCategory":"submissions","question":"Draft submissions on BNS s. 304.","answer":"I. PROPERTY AND POSSESSION\\nII. DISHONEST TAKING\\nIII. SUDDEN / QUICK / FORCIBLE MODE\\nIV. IDENTITY AND ELECTRONIC EVIDENCE\\nV. DISTINCTION FROM THEFT / ROBBERY\\nVI. RELIEF"}],
-  "bareActPointers": ["BNS s. 303","BNS s. 304","BSA s. 63 where electronic records are tendered"],
-  "examTips": ["Map every fact to an ingredient.","Separate identity from the manner of taking.","Check robbery before concluding s. 304."],
-  "revisionPoints": ["s. 304 is a distinct snatching offence.","Underlying theft ingredients remain important.","Electronic admissibility and substantive proof are separate."]
+  glance:
+    'Section 304 BNS codifies Snatching as an independent, nationally codified substantive offence within Chapter XVII, bridging the historical statutory void between simple theft (Section 303) and violent robbery (Section 309). It defines snatching as theft where the offender suddenly, quickly, or forcibly seizes, secures, grabs, or takes away movable property from any person or their possession. Punishable with imprisonment up to three years and fine, this provision establishes distinct street-crime accountability. Under Article 20(1) and Section 531 BNSS, it applies strictly to conduct on or after 1 July 2024.',
+
+  study: `I. LEGISLATIVE GENESIS & THE HISTORICAL CRIME GAP
+Section 304 of the Bharatiya Nyaya Sanhita, 2023 (BNS) is situated in Chapter XVII ("Of Offences Against Property", Sections 303 to 334). Under the Indian Penal Code, 1860, the statute contained no substantive offence of "snatching". For over a century, law enforcement and prosecutors were trapped between two extremes:
+1. Under-charging as Simple Theft (IPC s. 378/379): Street snatching of gold mangalsutras, necklaces, and mobile phones was frequently registered as simple theft, trivializing the physical terror, sudden shock, and bodily invasion suffered by pedestrians.
+2. Over-charging as Robbery (IPC s. 390/392): Prosecutors attempted to invoke robbery, but trials frequently collapsed because robbery requires proof that the offender voluntarily caused or attempted to cause hurt, death, or wrongful restraint (or fear of instant death/hurt) as an end in itself. Where a motorcyclist zoomed past and grabbed a phone before the victim could react, the rigorous mens rea threshold of robbery was difficult to sustain.
+
+Recognizing this systemic void—which had previously prompted piecemeal state amendments (such as Punjab and Haryana Sections 379A and 379B IPC)—Parliament enacted Section 304 BNS as a uniform, nationwide substantive offence defining the exact physical act of snatching.
+
+II. STATUTORY SCHEME & ESSENTIAL INGREDIENTS
+Section 304 provides:
+"(1) Theft is 'snatching' if, in order to commit theft, the offender suddenly or quickly or forcibly seizes, secures, grabs or takes away from any person or from his possession any movable property.
+(2) Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine."
+
+Essential Ingredients:
+1. Predicate Offence of Theft: The transaction must satisfy the foundational elements of Theft under Section 303(1) BNS (dishonest intention to take movable property out of the possession of any person without consent, coupled with moving the property).
+2. Purpose of Seizure: The act must be done "in order to commit theft".
+3. Specific Physical Modality: The seizure must occur:
+   - "Suddenly", OR
+   - "Quickly", OR
+   - "Forcibly".
+4. Verbs of Taking: The offender must "seize, secure, grab, or take away".
+5. Locus of Taking: Must be taken "from any person or from his possession" (e.g. mobile snatched from hands, chain pulled from neck, handbag grabbed from shoulder).
+6. Penal Sanction: Imprisonment of either description extending up to three years, and mandatory fine. Cognizable, non-bailable, and triable by any Magistrate.
+
+III. THE PROPERTY OFFENCE CONTINUUM: THEFT VS SNATCHING VS ROBBERY
+Senior Counsel must navigate the calibrated tripartite statutory continuum:
+1. Theft (Section 303 BNS):
+   - Modality: Stealthy, secret, surreptitious taking without physical interaction with the victim (e.g. pickpocketing on a crowded bus, stealing an unattended laptop from a café).
+   - Absence of sudden force: No grabbing, securing, or forceful wrenching from the person.
+2. Snatching (Section 304 BNS):
+   - Modality: Overt, sudden, rapid, or forceful grabbing directly from the victim's person or immediate physical possession.
+   - Distinction: The force deployed is strictly directed at detaching or securing the property (e.g. snapping a gold chain, snatching a smartphone), without an independent intention to cause bodily hurt or wrongful restraint.
+3. Robbery (Section 309 BNS):
+   - Modality: Theft elevates to robbery where the offender, in order to commit the theft or carry away stolen property, voluntarily causes or attempts to cause death, hurt, or wrongful restraint, or fear of instant death/hurt/wrongful restraint.
+   - Upgraded Elevation: If the snatching causes the victim to fall from a moving rickshaw, sustain grievous abrasions, or if the offender brandishes a knife to paralyze the victim before grabbing the chain, the offence transcends Section 304 and becomes Robbery under Section 309/311 BNS.
+
+IV. EVIDENTIARY PROTOCOLS: CCTV, DIGITAL LOCATION & RECOVERY
+Proving a Section 304 charge requires robust evidentiary corroboration:
+1. CCTV & Video Surveillance (Section 63 BSA):
+   - Street snatchings are frequently captured on public municipal cameras or commercial CCTV systems. The footage must be retrieved with a complete hash-value audit trail and accompanied by a mandatory Section 63(4) BSA certificate.
+2. Test Identification Parade (TIP) under Section 54 BNSS:
+   - Because snatchers typically wear helmets, caps, or masks and operate on two-wheelers, holding a prompt Test Identification Parade before a Judicial Magistrate under Section 54 BNSS is essential where the victim had an opportunity to view facial features.
+3. Recovery under Section 23 BSA (Old Section 27 IEA):
+   - Recovery of the snatched mobile phone (matched by IMEI number) or melted gold ornament based on disclosure statements made in police custody forms critical corroboration.
+4. Presumption of Theft / Stolen Property under Section 119 BSA (Old Section 114 Illustration a IEA):
+   - Unexplained possession of recently snatched articles gives rise to the statutory presumption that the possessor is either the snatcher or received the goods knowing them to be stolen.
+
+V. CONSTITUTIONAL PROSPECTIVITY & SECTION 531 BNSS TRANSITIONAL RULES
+1. Absolute Bar on Retrospective Application (Article 20(1)):
+   - Section 304 BNS creates a brand-new national substantive offence. Under Article 20(1) of the Constitution of India, conduct occurring on or before 30 June 2024 cannot be charged under Section 304 BNS.
+2. Transitional Epochs under Section 531(2)(a) BNSS:
+   - For snatchings committed prior to 1 July 2024, the FIR and charge-sheet must proceed under IPC Section 379 or applicable state amendments.
+   - For all snatchings occurring on or after 1 July 2024, Section 304 BNS is the authoritative, mandatory statutory charge.`,
+
+  sections: [
+    {
+      id: 'bns-304-module-1',
+      title: 'Legislative Architecture & Historical Gap Addressed by Section 304',
+      order: 1,
+      content: [
+        'Section 304 BNS introduces a new national substantive offence in Chapter XVII, prescribing imprisonment up to three years and fine.',
+        'Bridges the statutory gap between simple theft (s. 303) and violent robbery (s. 309), resolving a century-long defect in colonial penal law.',
+        'Eliminates the past practice of trivializing street snatching as simple theft or failing to meet the rigorous hurt/fear thresholds of robbery.',
+        'Cognizable, non-bailable, and triable by any Judicial Magistrate.',
+      ],
+    },
+    {
+      id: 'bns-304-module-2',
+      title: 'Statutory Ingredients & Physical Modalities: Suddenly, Quickly, Forcibly',
+      order: 2,
+      content: [
+        'Predicate requirement: Must satisfy all ingredients of Theft under Section 303(1) BNS (dishonest intention, movable property, without consent).',
+        'Specific modalities: Seizure must be executed "suddenly", "quickly", or "forcibly".',
+        'Verbs of taking: Encompasses seizing, securing, grabbing, or taking away movable property.',
+        'Locus of taking: Directly from the victim or from their physical possession (neck, hand, shoulder, pocket).',
+      ],
+    },
+    {
+      id: 'bns-304-module-3',
+      title: 'The Property Offence Spectrum: Theft vs Snatching vs Robbery',
+      order: 3,
+      content: [
+        'Theft (s. 303): Secret, stealthy, surreptitious taking without physical contact or sudden force.',
+        'Snatching (s. 304): Overt, sudden, rapid, or forceful seizure directed at detaching property from the victim.',
+        'Robbery (s. 309): Theft elevated by intentionally causing or attempting to cause hurt, death, or wrongful restraint.',
+        'Elevation trigger: If a snatcher causes bodily injury (e.g. dragging victim) or uses a deadly weapon, charge elevates to Section 309/311 BNS.',
+      ],
+    },
+    {
+      id: 'bns-304-module-4',
+      title: 'Evidentiary Protocols: CCTV (BSA s. 63), Recovery (BSA s. 23) & TIP (BNSS s. 54)',
+      order: 4,
+      content: [
+        'CCTV footage of the incident must be authenticated with a Section 63(4) BSA certificate proving device integrity.',
+        'Test Identification Parade (TIP) under Section 54 BNSS is crucial to establish identity where perpetrators were strangers.',
+        'Recovery of snatched property (IMEI matched mobile or jewellery) under Section 23 BSA establishes vital corroboration.',
+        'Presumption under Section 119 BSA: Unexplained possession of recently snatched property raises presumption of guilt.',
+      ],
+    },
+    {
+      id: 'bns-304-module-5',
+      title: 'Constitutional Prospectivity (Art. 20(1)), Chamber Practice & s. 531 Transition',
+      order: 5,
+      content: [
+        'Article 20(1) bars retroactive application: Section 304 BNS applies solely to acts committed on or after 1 July 2024.',
+        'Pre-1 July 2024 incidents must be charged under IPC Section 379 (or state amendments) pursuant to Section 531(2)(a) BNSS.',
+        'Defense strategy: Challenge identity, absence of sudden/forcible modality, recovery chain of custody, and lack of TIP.',
+        'Prosecution strategy: Synchronize CDRs, vehicle registration numbers, CCTV footage, and IMEI tracking to establish sudden taking.',
+      ],
+    },
+  ],
+
+  provisions: [
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-304',
+      section: 's. 304',
+      title: 'Snatching',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-303',
+      section: 's. 303',
+      title: 'Theft',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-309',
+      section: 's. 309',
+      title: 'Robbery',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-311',
+      section: 's. 311',
+      title: 'Voluntarily causing hurt in committing robbery',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-23',
+      section: 's. 23',
+      title: 'How much of information received from accused may be proved',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-63',
+      section: 's. 63',
+      title: 'Admissibility of electronic records',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-119',
+      section: 's. 119',
+      title: 'Court may presume existence of certain facts',
+    },
+    {
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-54',
+      section: 's. 54',
+      title: 'Identification of person arrested',
+    },
+    {
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-531',
+      section: 's. 531',
+      title: 'Repeal and savings',
+    },
+  ],
+
+  examples: [
+    {
+      id: 'bns-304-ill-1',
+      title: 'Classic Motorcycle Mobile Snatching on Public Highway',
+      illustrationType: 'statutory-practical',
+      description:
+        'A pedestrian P is speaking on her smartphone while standing at a traffic signal. Pillion rider S on a speeding motorcycle suddenly reaches out, grabs the smartphone from P’s hand with force, and speeds away. P is uninjured but shocked. Municipal CCTV captures the motorcycle number plate, and police track the phone’s IMEI to S’s possession within 24 hours. The act constitutes completed snatching under Section 304 BNS because the property was suddenly and quickly grabbed from P’s physical possession. S is convicted under Section 304(2) BNS and sentenced to 2 years rigorous imprisonment and fine.',
+    },
+    {
+      id: 'bns-304-ill-2',
+      title: 'Snatching Elevating to Robbery — Dragging Victim and Inflicting Hurt',
+      illustrationType: 'statutory-practical',
+      description:
+        'Accused A rides a scooter alongside pedestrian V and grabs her gold chain. The chain does not snap immediately; A accelerates the scooter, causing V to be dragged for ten meters along the asphalt, sustaining multiple lacerations and a fractured clavicle before the chain breaks. Because A voluntarily caused hurt to V in order to commit the theft, the offence transcends Section 304 BNS and constitutes Robbery and Voluntarily Causing Hurt in Committing Robbery under Section 309 and Section 311 BNS, punishable with imprisonment up to ten years.',
+    },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'bns-304-hypo',
+      title: 'Chamber Practice Hypothetical: CCTV Identification, Recovery Chain & Defense of Simple Theft',
+      facts:
+        'On 25 August 2024, complainant K is walking outside a metro station when a masked youth Y approaches from behind, forcibly grabs her handbag hanging from her shoulder, breaking the leather strap, and sprints into an alley. A nearby commercial establishment’s CCTV records the incident, showing the physical wrenching of the bag. Two days later, Y is intercepted in possession of K’s identification cards, credit cards, and cash. Police register an FIR under Section 304 BNS. In defence, Y’s counsel contends: (1) the CCTV is uncertified and inadmissible; (2) no Test Identification Parade was held; and (3) even if taken, the act was merely simple theft under Section 303 BNS because no weapon was used and no bodily injury occurred.',
+      question:
+        'As Senior Counsel appearing for the prosecution, frame the arguments demonstrating that Y’s act satisfies all statutory ingredients of Section 304 BNS and rebut the defense contentions.',
+      applicableLaw:
+        'BNS ss. 303, 304; BSA ss. 23, 63, 119; BNSS s. 54; Supreme Court principles in K.N. Mehra v. State of Rajasthan AIR 1957 SC 369 and State of Karnataka v. J. Jayalalitha (2017) 6 SCC 263.',
+      analysis:
+        '1. Establishing the Physical Modality of Section 304 BNS:\n   - Section 304(1) BNS explicitly defines snatching as theft where the offender "suddenly or quickly or forcibly seizes, secures, grabs or takes away from any person or from his possession any movable property".\n   - Breaking the leather strap of the handbag while wrenching it from K’s shoulder establishes both "sudden" and "forcible" grabbing directly from K’s physical possession.\n   - Physical bodily injury is not an ingredient of Section 304; the force required is that used to seize or detach the property. Defense argument that lack of injury reduces it to simple theft is legally erroneous.\n2. Admissibility of CCTV Footage under Section 63 BSA:\n   - Prosecution has produced the hash-verified copy of the CCTV footage accompanied by a Section 63(4) BSA certificate signed by the IT manager of the commercial establishment. The footage is admissible and demonstrates the actus reus beyond doubt.\n3. Presumption under Section 119 BSA & Inconsequentiality of TIP:\n   - Y was arrested in unexplained possession of K’s personal cards and bag two days after the incident. Under Section 119 BSA, the court shall presume Y is the snatcher.\n   - Where recovery is immediate and property is conclusively identified by unique personal identity documents, absence of TIP does not impair the prosecution case (State of H.P. v. Lekh Raj (2000) 1 SCC 247).',
+      conclusion:
+        'All essential ingredients of Section 304 BNS are established beyond reasonable doubt. Y is guilty of snatching punishable under Section 304(2) BNS.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'bns-304-dist-1',
+      title: 'Section 304 BNS (Snatching) vs Section 303 BNS (Theft)',
+      left: 'Section 304 BNS (Snatching)',
+      right: 'Section 303 BNS (Theft)',
+      rows: [
+        {
+          point: 'Manner of Taking',
+          left: 'Suddenly, quickly, or forcibly seized or grabbed from person or possession',
+          right: 'Stealthy, secret, or surreptitious taking without sudden physical seizure',
+        },
+        {
+          point: 'Victim Proximity',
+          left: 'Taken directly from the person or immediate physical possession of the victim',
+          right: 'Can be taken from unattended premises, open fields, or covert pickpocketing',
+        },
+        {
+          point: 'Public Alarm',
+          left: 'Involves street confrontation, shock, and bodily interference',
+          right: 'Absence of confrontation; victim usually realizes loss subsequently',
+        },
+      ],
+    },
+    {
+      id: 'bns-304-dist-2',
+      title: 'Section 304 BNS (Snatching) vs Section 309 BNS (Robbery)',
+      left: 'Section 304 BNS (Snatching)',
+      right: 'Section 309 BNS (Robbery)',
+      rows: [
+        {
+          point: 'Use of Force / Violence',
+          left: 'Force is limited to seizing, grabbing, or detaching the movable property',
+          right: 'Force is voluntarily used to cause or attempt to cause death, hurt, or restraint',
+        },
+        {
+          point: 'Fear Factor',
+          left: 'Generates sudden surprise and shock, but not fear of instant death/hurt',
+          right: 'Offender intentionally induces fear of instant death, hurt, or wrongful restraint',
+        },
+        {
+          point: 'Maximum Punishment',
+          left: 'Imprisonment extending up to three years, and fine',
+          right: 'Rigorous imprisonment up to ten years (or fourteen years on highway at night)',
+        },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'bns-304-trap-1',
+      trap: 'Believing that snatching requires physical injury or laceration to the victim.',
+      correction:
+        'Bodily injury is not an ingredient of Section 304 BNS. The statutory phrase "suddenly or quickly or forcibly seizes" refers to the force used to detach the property. If bodily hurt is caused, the offence elevates to Robbery under Section 309/311 BNS.',
+    },
+    {
+      id: 'bns-304-trap-2',
+      trap: 'Assuming every pickpocketing or covert theft from a bag is snatching.',
+      correction:
+        'Covert pickpocketing or stealthy removal of a wallet without the victim’s awareness is simple theft under Section 303 BNS. Snatching strictly requires sudden, quick, or forcible seizure directly from the person or their possession.',
+    },
+    {
+      id: 'bns-304-trap-3',
+      trap: 'Applying Section 304 BNS retrospectively to chain snatchings committed prior to 1 July 2024.',
+      correction:
+        'Section 304 is a newly codified national offence. Article 20(1) of the Constitution prohibits retroactive penal liability. Incidents before 1 July 2024 must be charged under IPC Section 379 or relevant state amendments.',
+    },
+  ],
+
+  questionsAndAnswers: [
+    {
+      id: 'bns-304-q-brief',
+      draftingCategory: 'brief',
+      question: 'Senior Counsel Legal Assessment: Scope, Ingredients and Application of Section 304 BNS',
+      answer: `I. STATUTORY ARCHITECTURE & GENESIS
+Section 304 of the Bharatiya Nyaya Sanhita, 2023 (BNS) is a pioneering substantive addition in Chapter XVII ("Of Offences Against Property"). It introduces the specific offence of "Snatching", filling the historical statutory gap between simple theft (s. 303) and robbery (s. 309).
+
+II. ESSENTIAL INGREDIENTS
+To secure a conviction under Section 304 BNS, the prosecution must establish:
+1. That the accused committed theft within the meaning of Section 303(1) BNS;
+2. That in order to commit theft, the accused seized, secured, grabbed, or took away movable property;
+3. That such seizure was executed suddenly, quickly, or forcibly;
+4. That the property was taken directly from a person or from that person's physical possession;
+5. That the accused acted with dishonest mens rea.
+
+III. THE PROPERTY SPECTRUM
+- Theft (s. 303): Stealthy taking without sudden physical seizure.
+- Snatching (s. 304): Overt, sudden, or forcible seizure directed at detaching the property.
+- Robbery (s. 309): Voluntarily causing or attempting hurt, death, or wrongful restraint in committing theft.
+
+IV. PUNISHMENT & CLASSIFICATION
+Imprisonment of either description extending up to three years, and fine. Cognizable, non-bailable, and triable by any Magistrate.
+
+V. CONSTITUTIONAL PROSPECTIVITY
+Under Article 20(1) of the Constitution and Section 531(2)(a) BNSS, Section 304 BNS operates strictly prospectively for offences committed on or after 1 July 2024.`,
+      explanation:
+        'Authoritative legal assessment deconstructing Section 304 BNS, essential ingredients, property continuum distinctions, classification, and constitutional bounds.',
+    },
+    {
+      id: 'bns-304-q-submissions',
+      draftingCategory: 'submissions',
+      question: 'Appellate Written Submissions: Rebutting Defense of Simple Theft and Establishing Section 304 BNS',
+      answer: `MAY IT PLEASE YOUR LORDSHIPS:
+
+1. LOCUS OF THE CHARGE & MAINTAINABILITY:
+The appellant stands convicted of Snatching under Section 304(2) BNS and sentenced to 3 years rigorous imprisonment. It is submitted that the conviction is fully supported by credible eyewitness testimony, CCTV footage, and recovery evidence.
+
+2. FULFILLMENT OF THE STATUTORY TEST OF SNATCHING UNDER SECTION 304(1) BNS:
+(a) The appellant contends that because the victim suffered no external bodily injury, the offence is at most simple theft under Section 303 BNS.
+(b) This contention directly contradicts the explicit statutory text of Section 304(1) BNS:
+"Theft is 'snatching' if, in order to commit theft, the offender suddenly or quickly or forcibly seizes, secures, grabs or takes away from any person or from his possession any movable property."
+(c) Parliament enacted Section 304 precisely to cover sudden street grabs where force is deployed to detach the property from the person without causing independent bodily hurt. The testimony of PW-1 establishes that the appellant rode up from behind and forcibly grabbed her gold chain, snapping the links. This falls squarely within the statutory definition of snatching.
+
+3. ADMISSIBILITY OF ELECTRONIC EVIDENCE (SECTION 63 BSA):
+The CCTV footage of the incident captured by the traffic camera (Ex. P-5) was duly authenticated with a Section 63(4) BSA certificate issued by the competent traffic authority. The footage clearly depicts the motorcycle registration number and the sudden, forcible grab by the appellant.
+
+4. STATUTORY PRESUMPTION UNDER SECTION 119 BSA:
+The snatched chain was recovered from the appellant’s pocket within four hours of the incident pursuant to his disclosure statement under Section 23 BSA. Under Section 119 BSA (Court may presume existence of certain facts), the court is entitled to presume that a person found in recent, unexplained possession of stolen property is the thief.
+
+5. PRAYER:
+All statutory ingredients of Section 304 BNS being proved beyond reasonable doubt, the appeal is devoid of merit and ought to be dismissed.`,
+      explanation:
+        'Comprehensive appellate submissions establishing the fulfillment of Section 304 BNS, distinguishing simple theft, validating CCTV under Section 63 BSA, and invoking Section 119 BSA presumption.',
+    },
+  ],
+
+  cases: [
+    {
+      name: 'K.N. Mehra v. State of Rajasthan',
+      year: 1957,
+      citation: 'AIR 1957 SC 369',
+      holding:
+        'The Supreme Court established the foundational ingredients of theft under Indian penal law: dishonest intention to cause wrongful gain or wrongful loss, coupled with moving the movable property out of the possession of the complainant without consent.',
+    },
+    {
+      name: 'Pyare Lal Bhargava v. State of Rajasthan',
+      year: 1963,
+      citation: 'AIR 1963 SC 1094',
+      holding:
+        'Held that temporary deprivation of movable property out of another’s possession with dishonest intention is sufficient to complete the offence of theft; permanent deprivation is not required.',
+    },
+    {
+      name: 'State of H.P. v. Lekh Raj',
+      year: 2000,
+      citation: '(2000) 1 SCC 247',
+      holding:
+        'The Supreme Court affirmed that where the accused is apprehended in prompt possession of stolen property identifiable by unique characteristics, the absence of a formal Test Identification Parade does not weaken the prosecution case.',
+    },
+  ],
+
+  examTips: [
+    'Always emphasize that Section 304 BNS is a brand-new national substantive offence with no direct section predecessor in the colonial IPC.',
+    'Remember the three alternative physical modalities: "suddenly", "quickly", or "forcibly".',
+    'Explain the property spectrum: Theft (s. 303, stealthy) -> Snatching (s. 304, sudden/forcible grabbing) -> Robbery (s. 309, hurt/death/restraint or fear thereof).',
+    'Under Article 20(1) of the Constitution, Section 304 applies strictly to acts committed on or after 1 July 2024; pre-commencement acts are governed by IPC Section 379 or state amendments.',
+    'Note that Section 304 is non-bailable and carries a sentence of up to 3 years imprisonment and fine.',
+  ],
+
+  examFrameworks: [
+    {
+      question: 'Structured Chamber Brief: Analyzing Snatching under Section 304 BNS',
+      steps: [
+        'Confirm prospective application under Article 20(1) (act on or after 1 July 2024).',
+        'Verify foundational ingredients of Theft under Section 303(1) BNS.',
+        'Analyze the mode of taking: establish whether it was "sudden", "quick", or "forcible".',
+        'Confirm locus: taken directly from the person or their physical possession.',
+        'Check for aggravating violence: verify whether the act elevated to Robbery under Section 309 BNS.',
+        'Evaluate evidentiary proof: CCTV under Section 63 BSA, recovery under Section 23 BSA, and Section 119 BSA presumption.',
+        'State sentencing parameters under Section 304(2) BNS.',
+      ],
+    },
+    {
+      question: 'Appellate Submissions: Distinguishing Snatching from Robbery and Simple Theft',
+      steps: [
+        'Examine the degree and objective of force used during the transaction.',
+        'If force was directed solely at detaching the article, resist Robbery charge and maintain Section 304.',
+        'If sudden physical grabbing occurred from the person, resist defense attempt to downgrade to simple theft under Section 303.',
+        'Synchronize digital evidence under Section 63 BSA and prompt recovery.',
+        'Conclude with prayer sustaining conviction under Section 304 BNS.',
+      ],
+    },
+  ],
+
+  answerSkeleton: [
+    'Introduction — Section 304 BNS, Chapter XVII ("Of Offences Against Property"), brand-new national offence.',
+    'Legislative Genesis — Bridges historical gap between simple theft (s. 303) and robbery (s. 309).',
+    'Essential Ingredients — Theft predicate, sudden/quick/forcible seizure, taking from person or possession, dishonest intent.',
+    'The Tripartite Property Continuum — Theft (stealthy) vs Snatching (sudden grab) vs Robbery (hurt/restraint).',
+    'Evidentiary Framework — CCTV under BSA s. 63, recovery under BSA s. 23, presumption under BSA s. 119, TIP under BNSS s. 54.',
+    'Transition & Punishment — 3 years RI/SI and fine; strictly prospective under Art. 20(1) and BNSS s. 531.',
+  ],
+
+  revisionPoints: [
+    'Section 304 BNS codifies Snatching for the first time in national penal law.',
+    'Requires theft where property is suddenly, quickly, or forcibly seized from a person or their possession.',
+    'Punishable with imprisonment up to 3 years and fine; non-bailable.',
+    'If bodily hurt is caused or threatened, the charge elevates to Robbery under Section 309/311 BNS.',
+    'Applies strictly to offences committed on or after 1 July 2024.',
+  ],
+
+  relatedTopics: [
+    's-303',
+    's-305',
+    's-309',
+    's-311',
+    's-112',
+  ],
 }
 
 export default content
