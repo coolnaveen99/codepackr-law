@@ -2,6 +2,8 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import { RELATION_HELP, TRANSITION_HIGHLIGHTS } from '../src/data/transitionHighlights'
 
+// Phase 11 regression coverage: relationship labels and source/case boundaries.
+
 test('Phase 11 transition centre covers all three Sanhita pairs', () => {
   assert.deepEqual(
     [...new Set(TRANSITION_HIGHLIGHTS.map((h) => h.actPair))].sort(),
