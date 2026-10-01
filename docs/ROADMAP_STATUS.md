@@ -371,3 +371,10 @@ Implementation was already present on main but lacked an exit audit and board cl
 **Phase 26 status:** CLOSED after CI validation of this closure PR.
 
 **Next:** Phase 27 — Senior Counsel Research Mode.
+
+
+## Phase 27 — Senior Counsel Research Mode (IN PROGRESS)
+
+The existing research-bundle implementation was audited against roadmap §32. The missing case-summary field and DOCX/PDF/TXT export paths were added; Markdown export is retained. The implementation remains browser-local and explicitly avoids authority scoring or outcome prediction.
+
+**Next:** complete CI validation and record the Phase 27 exit audit.
