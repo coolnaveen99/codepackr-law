@@ -38,7 +38,7 @@ Legacy parity
       ↓
 Application canonical consumption
       ↓
-Phase 2 exit          ← CLOSED (PA-003)
+Phase 2 exit          ← CLOSED (PA-003, 2026-10-01)
       ↓
 Research Workbench (Phase 3)  ← not started; requires scheduled PH3-001
 ```
@@ -53,7 +53,12 @@ Every active task has exactly one execution owner.
 
 ### 4. Shared-file rule
 
-Do not concurrently edit manifests, core schemas, validation scripts, Content Gateway contracts, or shared architecture documents without recording the dependency.
+Do not concurrently edit:
+- `manifests/content-manifest.json`;
+- core schemas;
+- validation scripts;
+- Content Gateway contracts;
+- shared architecture documents.
 
 ### 5. WIP limit
 
@@ -74,19 +79,16 @@ Maximum four major workstreams may be IN PROGRESS.
 | DEFERRED | Deliberately postponed; remains visible |
 | CANCELLED | Explicitly removed from roadmap/backlog |
 
-## Definition of Done
-
-A task may move to COMPLETED only with implementation/evaluation evidence, validation where applicable, reviewed diff, and recorded commit/PR evidence.
-
 ## Verified work completed — Phase 2 foundation
 
 | ID | Result | Evidence |
 |---|---|---|
-| LC-001–LC-007 | **COMPLETED** | See prior board history; full manifest, graph, gateway, parity. |
-| PA-001 | **COMPLETED** | Production JS includes legal-content base, content-manifest, relationship-index. |
-| PA-002 | **COMPLETED** | H1–H7 production acceptance PASS. |
-| PA-003 | **COMPLETED** | Phase 2 exit audit — `docs/PHASE-2-EXIT-AUDIT.md`. |
-| PA-005 | **COMPLETED** | CDN/static mirror evaluation — `docs/PA-005-CDN-MIRROR-EVALUATION.md`. Decision: keep GitHub raw near-term; jsDelivr/Vercel as escalation. |
+| LC-001–LC-007 | **COMPLETED** | Prior board evidence retained |
+| PA-001 | **COMPLETED** | Production gateway strings + canonical fetches |
+| PA-002 | **COMPLETED** | H1–H7 production PASS |
+| PA-003 | **COMPLETED** | `docs/PHASE-2-EXIT-AUDIT.md` |
+| PA-004 | **COMPLETED** (decision only) | `docs/PA-004-LEGACY-REMOVAL-DECISION.md` — dual-read retained; no mass deletion |
+| PA-005 | **COMPLETED** | `docs/PA-005-CDN-MIRROR-EVALUATION.md` — keep GitHub raw near-term |
 
 ## Current sprint backlog
 
@@ -95,11 +97,11 @@ A task may move to COMPLETED only with implementation/evaluation evidence, valid
 | PA-001 | Confirm production deployment contains ContentGateway + knowledge-graph UI | codepackr-law | Deployment owner | **COMPLETED** | P0 | None |
 | PA-002 | Production browser UX acceptance H1–H7 | codepackr-law | Product / legal-content owner | **COMPLETED** | P0 | PA-001 |
 | PA-003 | Phase 2 exit audit and production sign-off | both | QA / Architecture | **COMPLETED** | P0 | PA-001, PA-002 |
-| PA-004 | Decide and execute legacy-content removal after signed parity | codepackr-law | Architecture / Product | **READY** | P1 | PA-003 (met) |
-| PA-005 | Evaluate static/CDN mirror for canonical legal-content delivery | both | Solution Architect | **COMPLETED** | P1 | PA-003 (met) |
+| PA-004 | Decide legacy-content removal policy | codepackr-law | Architecture / Product | **COMPLETED** | P1 | PA-003 |
+| PA-005 | Evaluate static/CDN mirror for canonical legal-content delivery | both | Solution Architect | **COMPLETED** | P1 | PA-003 |
+| PA-005b | Implement content CDN/mirror (only if Product schedules) | both | Solution Architect | **BACKLOG** | P2 | PA-005 |
 | PH3-001 | Phase 3 — Legal Research Workbench architecture kickoff | codepackr-law | Solution Architect | **READY** | P0 | PA-003 (met) |
 | TD-001 | Commit full TopicDetail.tsx source (remove build-time restore stub) | codepackr-law | Core engineer | **READY** | P1 | None |
-| PA-005b | Implement content CDN/mirror (only if Product schedules) | both | Solution Architect | **BACKLOG** | P2 | PA-005 decision |
 
 ### PA-005 — evaluation summary (2026-10-01)
 
@@ -112,57 +114,53 @@ Full write-up: **`docs/PA-005-CDN-MIRROR-EVALUATION.md`**
 | Escalation if raw degrades | **Option B — jsDelivr** via `VITE_LEGAL_CONTENT_BASE_URL` |
 | When release pin / SLA needed | **Option D (Vercel/CF mirror)** or **Option C (GitHub Pages)** |
 | Rejected | Bundle full corpus into app |
-| Implementation | **Not started** — tracked as PA-005b BACKLOG |
+| Implementation | **Not started** — **PA-005b BACKLOG** |
 
-### PA-002 / PA-003 evidence
+### PA-004 — Decision evidence (2026-10-01)
 
-Retained in prior sections / `docs/PHASE-2-EXIT-AUDIT.md`. Do not reopen without regression evidence.
+| Item | Result |
+|------|--------|
+| Decision document | `docs/PA-004-LEGACY-REMOVAL-DECISION.md` |
+| Mass deletion executed? | **No** |
+| Dual-read retained? | **Yes** (ContentGateway → canonical → legacy) |
+| Removal criteria | Documented; future deletion only via `PA-004-EXEC-<scope>` |
+
+### PA-002 / PA-003 evidence (retained)
+
+H1–H7 PASS; Phase 2 exit matrix in `docs/PHASE-2-EXIT-AUDIT.md`.
 
 ## Current verified state
 
-- Canonical corpus: **719** entities; relationship graph ~**1,758** edges.
-- ContentGateway: canonical-first + legacy fallback in production.
-- PA-001 / PA-002 / PA-003 / **PA-005**: **COMPLETED**.
 - Phase 2: **CLOSED**.
-- Content delivery: **GitHub raw** (evaluated; mirror optional later).
-- Legacy topic removal: **not executed** (PA-004 READY for decision).
-- Phase 3: **READY to schedule** (PH3-001); **not started**.
+- PA-001 / PA-002 / PA-003 / PA-004 (decision) / **PA-005**: **COMPLETED**.
+- Content delivery: **GitHub raw** (evaluated; mirror optional later via PA-005b).
+- Legacy modules: **retained**; dual-read **required** until scoped EXEC criteria met.
+- Next READY (P0): **PH3-001** Phase 3 architecture kickoff.
+- Next READY (P1): **TD-001** TopicDetail source restore.
 
 ## Dependency map
 
 ```
-PA-001 (COMPLETED) → PA-002 (COMPLETED) → PA-003 (COMPLETED)
-                                              ├──→ PA-004 (READY)
-                                              ├──→ PA-005 (COMPLETED) → PA-005b (BACKLOG)
-                                              └──→ PH3-001 (READY)
-TD-001 (READY) — independent tech debt
+PA-001 → PA-002 → PA-003 (all COMPLETED)
+                      ├──→ PA-004 (COMPLETED — decision only; no deletion)
+                      ├──→ PA-005 (COMPLETED) → PA-005b (BACKLOG)
+                      └──→ PH3-001 (READY)
+TD-001 (READY)
 ```
 
 ## Active execution rules
 
-- **Do not reopen** completed LC/PA items without regression evidence.
-- **PA-004:** Product/Architecture decision required before any legacy file deletion.
+- **Do not reopen** completed PA/LC items without regression evidence.
+- **Do not delete** `src/data/topics/**` or remove legacy fallback without a new READY `PA-004-EXEC-*` ticket.
 - **PA-005b:** Do not implement a mirror until Product schedules it; env-only jsDelivr switch is allowed as an ops hotfix.
-- **PH3-001:** Solution Architect may schedule; do not start without assignment.
-- **TD-001:** Preferred before large TopicDetail feature work.
+- **PH3-001:** may be scheduled; not auto-started.
+- **TD-001:** preferred before large TopicDetail feature work.
 - Maximum four major WIP workstreams remain in force.
-
-## Manifest rule
-
-```
-npm run manifest:refresh
-node scripts/validate.mjs --graph-report
-node scripts/test-relationships.mjs
-```
-
-CI regenerates the manifest and relationship index on pushes to `main`.
 
 ## Phase 2 exit gate — CLOSED
 
-See `docs/PHASE-2-EXIT-AUDIT.md`.
+Evidence: `docs/PHASE-2-EXIT-AUDIT.md`.
 
 ## Next phase gate
 
 **Phase 3 — Legal Research Workbench** may be scheduled via **PH3-001**.
-
-Do not treat Phase 3 as automatically IN PROGRESS.
