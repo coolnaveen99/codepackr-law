@@ -3,6 +3,9 @@ import { Scale } from 'lucide-react'
 export function NeutralAnalysisMode() {
   const allowed = [
     { label: 'Judgment structure analysis', href: '/tool/judgment-analyzer' },
+    { label: 'Authority extraction / organisation', href: '/tool/judgment-analyzer' },
+    { label: 'Chronology extraction / organisation', href: '/tool/judgment-analyzer' },
+    { label: 'Issue and statute extraction', href: '/tool/judgment-analyzer' },
     { label: 'Citation verification', href: '/tool/citation-verifier' },
     { label: 'Judgment comparison', href: '/tool/judgment-compare' },
     { label: 'Document organisation / compare', href: '/tool/document-compare' },
