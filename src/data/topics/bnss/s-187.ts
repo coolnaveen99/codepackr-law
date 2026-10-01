@@ -1,223 +1,428 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
 const content: TopicContent = {
-  "glance": "BNSS s. 187, Procedure when investigation cannot be completed in twenty four hours, is a procedural provision in the Information to the police and their powers to investigate cluster. Apply its conditions in sequence, identify the competent criminal court and remedy, and check the s. 531 transition rule before using BNSS or the saved CrPC. Historical concordance: CrPC s. 167.",
-  "study": "Current-law identity\nBNSS s. 187 governs procedure when investigation cannot be completed in twenty four hours within Chapter XIII - Information to the police and their powers to investigate. The provision must be read with its enacted sub-sections, provisos, explanations, the BNSS First Schedule where classification or trial forum is relevant, and BNSS s. 186, BNSS s. 188. Historical concordance: CrPC s. 167.\n\nProcedural meaning and legislative purpose\nCriminal procedure is a sequence of safeguards, not a collection of isolated powers. This section allocates a procedural step to the police, Magistrate, trial court, Sessions Court or High Court and places conditions around its exercise. The mischief addressed is identified from the statutory text and Chapter setting; the court should not add a condition that the legislature did not enact or remove a safeguard that the text requires.\n\nMandatory application checklist\n1. Identify the proceeding, procedural stage and order sought.\n2. Confirm whether the investigation, inquiry, trial, application or appeal was pending immediately before 1 July 2024. If so, begin with BNSS s. 531(2)(a) and test whether the saved CrPC route governs.\n3. Quote the exact operative words of s. 187, including every condition, proviso and explanation.\n4. Identify the competent criminal court, territorial rule, statutory sanction or classification requirement.\n5. Map each material fact to the statutory condition it proves or fails.\n6. State the immediate remedy and the standard for interference.\n\nEvidence and constitutional control\nThe procedural record remains subject to Articles 14, 20, 21 and 22 of the Constitution. The party asserting a factual foundation bears the ordinary burden under BSA s. 104; BSA s. 106 is limited to facts especially within a person's knowledge after the foundation is established. Electronic records must be separately tested under BSA s. 63 for the applicable certificate and production requirements. BSA admissibility does not cure an unlawful arrest, search, remand or other BNSS defect.\n\nCourtroom method\nIn a written submission, state the current section first, identify the stage and forum, reproduce only the necessary statutory language, address the transition rule, apply each condition to the record, answer the principal objection, and request a precise order. Do not treat a police report as proof of guilt, an arrest as a conviction, a charge as a finding, or a procedural irregularity as automatically destroying the entire prosecution.",
-  "sections": [
+  glance:
+    'Section 187 BNSS codifies the judicial control mechanism over pre-trial custody, replacing Section 167 CrPC. It fundamentally alters police custody remand by permitting a total of up to fifteen days of police custody in the whole or in parts at any time during the initial forty or sixty days of the sixty or ninety-day investigation period (departing from the rigid initial-15-day restriction in CBI v. Anupam J. Kulkarni and codifying the flexibility recognized in V. Senthil Balaji). It preserves the indefeasible constitutional right to default bail under sub-section (3), governs electronic video linkage appearances, and interfaces with the Article 20(1) and Section 531(2)(a) transitional boundary.',
+
+  study: `I. LEGISLATIVE PROVENANCE & THE CONSTITUTIONAL BEDROCK
+Section 187 of the Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS) is the central procedural bastion regulating detention during police investigation, directly replacing Section 167 of the Code of Criminal Procedure, 1973 (CrPC).
+It sits within Chapter XIII ("Information to the Police and Their Powers to Investigate").
+The provision operationalizes the non-negotiable constitutional guarantee enacted in Article 22(2) of the Constitution: every person who is arrested and detained in custody shall be produced before the nearest Magistrate within a period of twenty-four hours of such arrest (excluding the time necessary for the journey). Detention beyond twenty-four hours without judicial authorization is an illegal deprivation of liberty violating Article 21.
+
+Section 187 creates a carefully calibrated balance between two competing societal interests: the necessity of granting investigating agencies adequate time to interrogate suspects and unearth the crime, and the vital necessity of shielding citizens from custodial torture, prolonged detention, and arbitrary deprivation of liberty.
+
+II. THE NEW POLICE CUSTODY REGIME: DECONSTRUCTING SECTION 187(2)
+Under Section 167(2) of the repealed CrPC 1973, police custody was subject to an inflexible temporal restriction: it could be granted ONLY during the first fifteen days of detention following the initial production before the Magistrate. As authoritatively held in CBI v. Anupam J. Kulkarni (1992) 3 SCC 141 and Budh Singh v. State of Punjab (2000) 9 SCC 266, once an accused was remanded to judicial custody after the initial 15-day window, no further police custody could ever be granted, regardless of how grave the offence or how crucial new evidence was.
+
+Section 187(2) BNSS enacts a profound legislative departure from the Anupam Kulkarni rule:
+"The Magistrate may... authorise the detention of the accused person, otherwise than in police custody, beyond the period of fifteen days... or for a period of fifteen days in the whole, or in parts, at any time during the initial forty days or sixty days out of the period of sixty days or ninety days, as the case may be, as provided in sub-section (3)..."
+
+Key Structural Elements of Section 187(2) BNSS:
+1. Aggregate Ceiling Maintained: The total quantum of police custody that can be authorized remains capped at fifteen days in the aggregate.
+2. Intermittent / Staggered Custody Permitted: Police custody is no longer restricted to the first 15 days from arrest. It may be granted "in the whole, or in parts".
+3. The 40-Day / 60-Day Window:
+   - For offences where the default bail period is 60 days, police custody may be sought and granted in parts at any time during the initial 40 days.
+   - For offences where the default bail period is 90 days, police custody may be sought and granted in parts at any time during the initial 60 days.
+4. Judicial Discretion & Safeguards: The police cannot claim police custody as an absolute right during this window. Under Section 187(5), the Magistrate must record specific reasons justifying the grant of police custody, satisfying himself that physical custody is strictly necessary (e.g. for recovery of weapon, discovery of concealed digital servers, or confrontation with co-accused).
+5. Abrogation of Anupam Kulkarni & Codification of Senthil Balaji: This statutory innovation aligns with the Supreme Court's observations in V. Senthil Balaji v. State (2024) 3 SCC 51, preventing suspects from defeating custodial interrogation by voluntarily getting hospitalized during the first 15 days.
+
+III. DEFAULT BAIL (STATUTORY / COMPULSIVE BAIL) UNDER SECTION 187(3)
+Section 187(3) BNSS codifies the indefeasible right to default bail:
+1. The Two Statutory Periods:
+   - 90 Days: Where the investigation relates to an offence punishable with death, imprisonment for life or imprisonment for a term of not less than ten years.
+   - 60 Days: Where the investigation relates to any other offence.
+2. The Indefeasible Constitutional Right:
+   - In Uday Mohanlal Acharya v. State of Maharashtra (2001) 5 SCC 453, M. Ravindran v. Directorate of Revenue Intelligence (2021) 2 SCC 485, and Bikramjit Singh v. State of Punjab (2020) 10 SCC 616, the Supreme Court affirmed that default bail is not a mere statutory concession, but a fundamental right flowing directly from Article 21.
+   - The moment the 60-day or 90-day period expires without a completed police report (chargesheet) being filed under Section 193 BNSS, an indefeasible right to bail accrues to the accused.
+   - If the accused applies for default bail and states readiness to furnish bail, the right cannot be defeated by the prosecution subsequently filing a chargesheet later that day or while the application is pending consideration (Union of India v. Nirala Yadav (2014) 9 SCC 457).
+3. Computation of Limitation:
+   - The day of initial remand is excluded; the day of filing the chargesheet is included (State of M.P. v. Rustam (1995) Supp (3) SCC 221; Enforcement Directorate v. Kapil Wadhawan (2024) 7 SCC 147).
+   - An incomplete or preliminary chargesheet filed without crucial forensic or ballistic reports solely to defeat default bail does not stop the clock.
+
+IV. JUDICIAL SAFEGUARDS & MANDATORY PRODUCTION NORMS
+1. Physical vs Electronic Production (Section 187(4)):
+   - First Production: Must be in person before the Magistrate. Physical presence ensures that the Magistrate can visually inspect the accused, detect any signs of custodial violence, and verify voluntariness.
+   - Subsequent Productions: May be authorized through the medium of electronic video linkage.
+2. Mandatory Recording of Reasons (Section 187(5)): The Magistrate must record reasons in writing whether granting police custody or extending judicial custody. Mechanical remand orders are illegal (Arnesh Kumar (2014)).
+3. Right to Legal Representation: The Magistrate is under a constitutional duty to inform the accused of the right to free legal representation at the time of remand (Khatri (II) v. State of Bihar (1981) 1 SCC 627).
+4. Executive Magistrate Remand (Section 187(6)-(7)): Where a Judicial Magistrate is unavailable, an Executive Magistrate may remand for a maximum period not exceeding seven days, after which the accused must be placed before a Judicial Magistrate.
+
+V. EVIDENCE, REMAND HEARINGS & SECTION 531(2)(a) TRANSITIONAL JURISPRUDENCE
+1. Electronic Evidence under Section 63 BSA: Video linkage recordings of remand proceedings, digital case diaries, and electronic medical examination reports must satisfy Section 63(4) BSA certification if challenged.
+2. The Critical Transitional Question (Section 531(2)(a) BNSS):
+   - For FIRs registered on or before 30 June 2024, the investigation is pending immediately before the commencement of the BNSS.
+   - Under Section 531(2)(a) BNSS, such investigations MUST be disposed of, continued, or held in accordance with the saved provisions of CrPC 1973.
+   - Consequently, the police CANNOT invoke the expanded 40/60-day police custody window under Section 187(2) BNSS for pre-1 July 2024 FIRs. The rigid 15-day limit of old Section 167(2) CrPC continues to govern all saved investigations.`,
+
+  sections: [
     {
-      "id": "bnss-187-module-1",
-      "title": "Provenance, Legislative Objective and Doctrinal Foundation",
-      "order": 1,
-      "content": [
-        "BNSS s. 187 regulates procedure when investigation cannot be completed in twenty four hours within Information to the police and their powers to investigate.",
-        "Read the provision purposively but begin with its enacted text and the Chapter structure.",
-        "The constitutional background includes fair procedure, personal liberty and judicial accountability under Articles 14, 21 and 22."
-      ]
+      id: 'bnss-187-module-1',
+      title: 'Legislative Provenance, Article 22(2) Mandate & Restructuring',
+      order: 1,
+      content: [
+        'Section 187 BNSS replaces Section 167 CrPC 1973, functioning as the statutory enforcement mechanism of the constitutional 24-hour production mandate under Article 22(2).',
+        'Detention of an arrested person beyond twenty-four hours without judicial sanction is an unconstitutional deprivation of liberty under Article 21, entitling the person to habeas corpus and compensation.',
+        'The section balances police investigative necessity with fundamental personal liberty, dividing remand into police custody and judicial custody.',
+        'Section 187 applies across all criminal courts, establishing strict procedural limits, mandatory recording of reasons, and an absolute right to default bail upon statutory default.',
+      ],
     },
     {
-      "id": "bnss-187-module-2",
-      "title": "Textual Anatomy, Provisos and Connected Provisions",
-      "order": 2,
-      "content": [
-        "Deconstruct every clause of BNSS s. 187; do not replace the provision with a CrPC summary.",
-        "Read it with BNSS s. 186, BNSS s. 188. A connected section may define the condition, forum, time limit or remedy without replacing this section.",
-        "Use historical concordance only to explain development, never as the current citation."
-      ]
+      id: 'bnss-187-module-2',
+      title: 'The New Police Custody Regime: Section 187(2) & Abrogation of Anupam Kulkarni',
+      order: 2,
+      content: [
+        'Under old Section 167(2) CrPC and CBI v. Anupam J. Kulkarni (1992) 3 SCC 141, police custody was strictly confined to the first 15 days from initial production; once sent to judicial custody, police custody was permanently extinguished.',
+        'Section 187(2) BNSS fundamentally alters this framework: police custody remains capped at 15 days in the aggregate, but it can now be granted in the whole or in parts at any time during the initial 40 days (for 60-day cases) or initial 60 days (for 90-day cases).',
+        'This statutory modification abrogates the rigid rule in Anupam Kulkarni and adopts the flexible approach recognized in V. Senthil Balaji v. State (2024) 3 SCC 51, preventing suspects from deliberately evading interrogation through hospital admissions during the first fortnight.',
+        'However, police custody is not automatic: the Magistrate must record specific reasons justifying the necessity of physical interrogation under Section 187(5).',
+      ],
     },
     {
-      "id": "bnss-187-module-3",
-      "title": "Mandatory Procedural Ingredients and Stage Test",
-      "order": 3,
-      "content": [
-        "First ingredient: the proceeding must be at the statutory stage addressed by s. 187.",
-        "Second ingredient: the competent officer or court must possess the relevant jurisdiction and power.",
-        "Third ingredient: each express condition, notice, reason, time limit, record or hearing requirement must be satisfied.",
-        "Fourth ingredient: the requested consequence must follow from the proved procedural breach or compliance; state the exact order sought."
-      ]
+      id: 'bnss-187-module-3',
+      title: 'Default Bail under Section 187(3): The Indefeasible Constitutional Right',
+      order: 3,
+      content: [
+        'Section 187(3) prescribes maximum detention periods: 90 days for offences punishable with death, life imprisonment, or imprisonment of 10 years or more; and 60 days for all other offences.',
+        'As held in Uday Mohanlal Acharya (2001), M. Ravindran (2021), and Bikramjit Singh (2020), default bail is an indefeasible fundamental right under Article 21 that accrues automatically on the expiry of the statutory period if the chargesheet is not filed.',
+        'The prosecution cannot defeat default bail by filing a chargesheet subsequent to the filing of the bail application (Union of India v. Nirala Yadav (2014)).',
+        'Computation: Day of remand is excluded; day of filing chargesheet is included (ED v. Kapil Wadhawan (2024)). An incomplete chargesheet filed without essential expert reports does not defeat default bail.',
+      ],
     },
     {
-      "id": "bnss-187-module-4",
-      "title": "BSA 2023 Burden and Electronic Evidence Checkpoints",
-      "order": 4,
-      "content": [
-        "BSA s. 104 supplies the ordinary burden framework; do not shift the initial burden merely by invoking s. 106.",
-        "BSA s. 106 applies to a fact especially within knowledge only after the party relying on the legal proposition establishes the necessary foundation.",
-        "Where electronic material is tendered, separately examine relevance, authenticity, integrity, source and BSA s. 63 certificate requirements."
-      ]
+      id: 'bnss-187-module-4',
+      title: 'Procedural Safeguards: Video Linkage, Legal Aid & Recording of Reasons',
+      order: 4,
+      content: [
+        'First Production Safeguard: Section 187(4) strictly commands that the first production of the accused before the Magistrate MUST be in person, allowing direct inspection for custodial abuse.',
+        'Subsequent Remand via Video Linkage: Subsequent extensions of custody may be authorized through electronic video linkage, subject to the accused having access to counsel.',
+        'Mandatory Judicial Duty: Under Khatri (II) v. State of Bihar (1981), the Magistrate is obligated to inform the accused of their right to free legal representation at the time of remand.',
+        'Executive Magistrate Limits: Under Section 187(6)-(7), an Executive Magistrate can remand an accused for a maximum period of seven days only, pending production before a Judicial Magistrate.',
+      ],
     },
     {
-      "id": "bnss-187-module-5",
-      "title": "Procedural Roadmap, Forum, Limitation and Transition",
-      "order": 5,
-      "content": [
-        "For proceedings under the post-1 July 2024 regime, cite BNSS s. 187 and verify the First Schedule or special statute where applicable.",
-        "For a matter pending immediately before commencement, apply BNSS s. 531(2)(a) and identify the saved CrPC procedure before addressing merits.",
-        "Check the applicable BNSS or special-statute limitation rule and calculate the remedy period from the actual order or event."
-      ]
-    }
+      id: 'bnss-187-module-5',
+      title: 'Forensic Proof (BSA s. 63) & Section 531(2)(a) BNSS Transitional Bounds',
+      order: 5,
+      content: [
+        'Electronic Evidence: Video linkage recordings, electronic case diary entries, and digital arrest intimation slips must comply with Section 63(4) BSA certification.',
+        'Transitional Scope: Under Section 531(2)(a) BNSS, investigations pending immediately before 1 July 2024 continue under the saved provisions of CrPC 1973.',
+        'The police cannot invoke the expanded 40/60-day police custody window under Section 187(2) BNSS for pre-1 July 2024 FIRs; the 15-day initial limit of Section 167(2) CrPC continues to bind pending cases.',
+        'Appellate remedies: Illegal remand can be challenged via revision under Section 438 BNSS or inherent powers under Section 528 BNSS / Article 226.',
+      ],
+    },
   ],
-  "provisions": [
+
+  provisions: [
     {
-      "actId": "bnss",
-      "actName": "Bharatiya Nagarik Suraksha Sanhita, 2023",
-      "provisionId": "bnss-187",
-      "section": "s. 187",
-      "title": "Procedure when investigation cannot be completed in twenty four hours"
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-187',
+      section: 's. 187',
+      title: 'Procedure when investigation cannot be completed in twenty-four hours (Remand and Default Bail)',
     },
     {
-      "actId": "bsa",
-      "actName": "Bharatiya Sakshya Adhiniyam, 2023",
-      "provisionId": "bsa-s-63",
-      "section": "s. 63",
-      "title": "Admissibility of electronic records"
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-193',
+      section: 's. 193',
+      title: 'Report of police officer on completion of investigation (Chargesheet)',
     },
     {
-      "actId": "bnss",
-      "actName": "Bharatiya Nagarik Suraksha Sanhita, 2023",
-      "provisionId": "bnss-531",
-      "section": "s. 531",
-      "title": "Repeal and savings"
-    }
-  ],
-  "examples": [
-    {
-      "id": "bnss-187-ill-1",
-      "title": "Example 1 - Conditions satisfied",
-      "illustrationType": "practical",
-      "description": "A proceeding is at the stage governed by s. 187; the authorised officer or court records each statutory reason, follows the required notice and hearing path, and acts within jurisdiction. The order is tested against the section and its connected provisions."
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-480',
+      section: 's. 480',
+      title: 'When bail may be taken in case of non-bailable offence (Regular Bail)',
     },
     {
-      "id": "bnss-187-ill-2",
-      "title": "Example 2 - Boundary defect",
-      "illustrationType": "fail-scenario",
-      "description": "The decision-maker applies s. 187 without checking the procedural stage, the s. 531 savings rule or an express statutory condition. The advocate identifies the missing condition and seeks the precise procedural remedy rather than asserting an automatic result unsupported by the Act."
-    }
-  ],
-  "hypotheticals": [
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-528',
+      section: 's. 528',
+      title: 'Saving of inherent powers of High Court',
+    },
     {
-      "id": "bnss-187-hypo",
-      "title": "Chamber Practice Hypothetical: BNSS s. 187",
-      "facts": "A criminal proceeding is challenged after an order applying BNSS s. 187 to a disputed procedural step. The record contains a disagreement about the commencement status, forum, statutory condition and authenticity of an electronic record.",
-      "question": "Whether the order under BNSS s. 187 is sustainable and what immediate relief is available.",
-      "applicableLaw": "BNSS s. 187, s. 531, connected provisions BNSS s. 186, BNSS s. 188; BSA ss. 63, 104 and 106; Articles 14, 21 and 22.",
-      "analysis": "1. Identify the stage and whether the proceeding was pending immediately before 1 July 2024. 2. State the exact test in s. 187. 3. Verify jurisdiction, notice, reasons, time limits and hearing requirements. 4. Test the electronic record separately under BSA s. 63. 5. Grant only the remedy supported by the proved defect, such as modification, release, disclosure, remand correction, quashing where maintainable or appellate interference.",
-      "conclusion": "The order is sustainable only if the statutory stage, jurisdiction, conditions and transition rule are satisfied. Any digital material must independently satisfy the BSA route before its weight is assessed."
-    }
-  ],
-  "distinctions": [
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-531',
+      section: 's. 531',
+      title: 'Repeal and savings',
+    },
     {
-      "id": "bnss-187-distinction",
-      "title": "BNSS s. 187 and its connected procedure",
-      "left": "BNSS s. 187",
-      "right": "BNSS s. 186, BNSS s. 188",
-      "rows": [
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-63',
+      section: 's. 63',
+      title: 'Admissibility of electronic records',
+    },
+  ],
+
+  examples: [
+    {
+      id: 'bnss-187-ill-1',
+      title: 'Application of Section 187(2) — Staggered Police Custody within 60 Days',
+      illustrationType: 'statutory-practical',
+      description:
+        'In an investigation under Section 111 BNS (Organised Crime, carrying life imprisonment, thus subject to the 90-day investigation ceiling), accused A is produced before the Magistrate on 10 July 2024. The Magistrate grants 7 days of police custody, after which A is remanded to judicial custody on 17 July. On 20 August (the 42nd day of detention), the police arrest a key co-conspirator and discover encrypted servers. The police file an application under Section 187(2) BNSS seeking 5 days of police custody of A for confrontation. Because the application is made within the initial 60 days, and total police custody requested (7 + 5 = 12 days) does not exceed 15 days, the Magistrate has the jurisdiction under Section 187(2) BNSS to grant the staggered police remand upon recorded reasons.',
+    },
+    {
+      id: 'bnss-187-ill-2',
+      title: 'Enforcement of Indefeasible Default Bail under Section 187(3)',
+      illustrationType: 'statutory-practical',
+      description:
+        'Accused B is remanded to judicial custody on 1 August 2024 for an offence carrying a maximum sentence of 7 years (governed by the 60-day ceiling under Section 187(3)). The 60-day period expires on 30 September 2024 without a chargesheet being filed. On 1 October at 10:30 AM, B files an application under Section 187(3) BNSS praying for default bail, stating readiness to furnish bail bonds. At 3:00 PM that afternoon, the police rush and submit a chargesheet under Section 193 BNSS. Applying M. Ravindran (2021) and Bikramjit Singh (2020), B’s right to default bail became indefeasible the moment the application was filed. The Magistrate must grant default bail to B; the subsequent chargesheet cannot extinguish the accrued right.',
+    },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'bnss-187-hypo',
+      title: 'Chamber Practice Hypothetical: Police Custody Attempt on Day 35 of Pre-July FIR',
+      facts:
+        'An FIR was registered on 15 June 2024 under Sections 420 and 467 of the Indian Penal Code, 1860. The accused was arrested on 20 June 2024 and remanded to police custody for 5 days, after which he was sent to judicial custody on 25 June 2024. On 25 July 2024 (the 35th day of detention), the investigating officer files an application before the Magistrate seeking 7 days of police custody, invoking Section 187(2) BNSS on the ground that BNSS commenced on 1 July 2024 and allows police custody within the first 40/60 days. The accused opposes the application, invoking Section 531(2)(a) BNSS and the Anupam J. Kulkarni doctrine.',
+      question:
+        'As Senior Counsel appearing for the accused, how do you frame the legal challenge to the police custody application?',
+      applicableLaw:
+        'BNSS ss. 187(2), 531(2)(a); CrPC s. 167(2); Constitution Arts. 20(1), 21; Supreme Court rulings in CBI v. Anupam J. Kulkarni (1992) and V. Senthil Balaji (2024).',
+      analysis:
+        '1. The Section 531(2)(a) BNSS Jurisdictional Bar:\n   - Under Section 531(2)(a) BNSS, any investigation pending immediately before 1 July 2024 must continue and be disposed of in accordance with the provisions of the Code of Criminal Procedure, 1973.\n   - The FIR was registered on 15 June 2024, and the accused was arrested on 20 June 2024; the investigation was squarely pending as on 1 July 2024.\n   - Therefore, the governing procedural law for remand is Section 167(2) CrPC 1973, NOT Section 187(2) BNSS.\n2. Inviolability of the Initial 15-Day Limit under Section 167(2) CrPC:\n   - Under the settled law of Section 167(2) CrPC (CBI v. Anupam J. Kulkarni (1992) 3 SCC 141), police custody can only be authorized during the initial 15 days from arrest.\n   - The 15th day from 20 June 2024 expired on 5 July 2024. Once that initial 15-day period lapsed, judicial custody was immutable.\n   - The police cannot retrospectively import the expanded 40/60-day window under Section 187(2) BNSS into an ongoing CrPC investigation.\n3. Protection under Article 21:\n   - Deprivation of personal liberty by expanding police custody beyond the law governing the investigation violates fair, just and reasonable procedure under Article 21.',
+      conclusion:
+        'The application for police custody is wholly without jurisdiction and barred by Section 531(2)(a) BNSS read with Section 167(2) CrPC. The Magistrate must dismiss the police application and retain the accused in judicial custody.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'bnss-187-dist-1',
+      title: 'Section 167(2) CrPC 1973 vs Section 187(2) BNSS 2023 (Police Custody Remand)',
+      left: 'Section 167(2) CrPC 1973 (Repealed)',
+      right: 'Section 187(2) BNSS 2023 (Current Law)',
+      rows: [
         {
-          "point": "Function",
-          "left": "Procedure when investigation cannot be completed in twenty four hours",
-          "right": "Connected stage, condition or remedy"
+          point: 'Timing of Police Custody',
+          left: 'Permitted ONLY during the first 15 days from date of initial production before Magistrate',
+          right: 'Permitted in whole or in parts at any time during the initial 40 days (60-day cases) or 60 days (90-day cases)',
         },
         {
-          "point": "Application",
-          "left": "Apply its own enacted ingredients",
-          "right": "Do not import the neighbour's test automatically"
+          point: 'Judicial Precedent',
+          left: 'Strictly governed by CBI v. Anupam J. Kulkarni (1992) prohibiting custody after 15th day',
+          right: 'Abrogates Anupam Kulkarni, adopting the statutory flexibility reflected in V. Senthil Balaji (2024)',
         },
         {
-          "point": "Transition",
-          "left": "Check s. 531 before selecting BNSS",
-          "right": "Historical CrPC numbering is concordance only"
-        }
-      ]
-    }
-  ],
-  "misconceptions": [
-    {
-      "id": "bnss-187-trap-1",
-      "trap": "Citing only the old CrPC number for s. 187.",
-      "correction": "Use BNSS s. 187 for the current regime and mention the historical number only when the transition or comparison requires it."
+          point: 'Staggered Remand',
+          left: 'Could not be split or staggered after judicial custody intervened past day 15',
+          right: 'Explicitly permits police custody "in the whole, or in parts" across the 40/60 day window',
+        },
+        {
+          point: 'Aggregate Duration',
+          left: 'Maximum 15 days total',
+          right: 'Maximum 15 days total (duration cap unchanged; window of invocation expanded)',
+        },
+      ],
     },
     {
-      "id": "bnss-187-trap-2",
-      "trap": "Treating procedure, offence and proof as one issue.",
-      "correction": "Analyse BNSS procedure, BNS or special-statute liability, and BSA proof as separate legal layers."
+      id: 'bnss-187-dist-2',
+      title: 'Police Custody vs Judicial Custody under Section 187 BNSS',
+      left: 'Police Custody',
+      right: 'Judicial Custody',
+      rows: [
+        {
+          point: 'Physical Custody',
+          left: 'Accused is in the physical lockup and control of police investigating agency',
+          right: 'Accused is lodged in a central/district correctional facility under judicial oversight',
+        },
+        {
+          point: 'Permissible Period',
+          left: 'Strict ceiling of 15 days in the aggregate during initial 40/60 days',
+          right: 'Extends up to 60 or 90 days until default bail or filing of chargesheet',
+        },
+        {
+          point: 'Purpose',
+          left: 'Active custodial interrogation, scene reconstruction, recovery of evidence (BSA s. 23)',
+          right: 'Preventing flight, witness tampering, or re-offending while awaiting trial',
+        },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'bnss-187-trap1',
+      trap: 'Section 187(2) BNSS allows police custody up to 60 or 90 days.',
+      correction:
+        'Section 187(2) BNSS does NOT increase the total quantum of police custody beyond 15 days. The maximum aggregate police custody remains 15 days. What Section 187(2) changes is the window of availability: the 15 days of police custody may now be granted in parts across the initial 40 or 60 days, rather than being confined to the first 15 days.',
     },
     {
-      "id": "bnss-187-trap-3",
-      "trap": "Using BSA s. 106 to avoid proving foundational facts.",
-      "correction": "The asserting party must first establish the legal and factual foundation; special knowledge does not erase the initial burden."
-    }
-  ],
-  "cases": [
-    {
-      "name": "Lalita Kumari v. Government of Uttar Pradesh",
-      "year": 2014,
-      "citation": "(2014) 2 SCC 1",
-      "court": "Supreme Court of India",
-      "facts": "The petitioner sought registration of information disclosing a cognizable offence.",
-      "issue": "Whether registration is mandatory when information discloses a cognizable offence.",
-      "ratioDecidendi": "Registration is mandatory when the information discloses a cognizable offence, subject to the limited preliminary-inquiry framework recognised by the Constitution Bench.",
-      "holding": "The Court directed compliance with mandatory registration and confined preliminary inquiry to recognised categories.",
-      "relevance": "Use only where s. 187 concerns information, investigation or a connected pre-cognizance step; do not treat this case as authority for every BNSS provision."
+      id: 'bnss-187-trap2',
+      trap: 'If the police file a chargesheet while a default bail application is pending, the default bail plea must be dismissed.',
+      correction:
+        'In Uday Mohanlal Acharya (2001), M. Ravindran (2021), and Bikramjit Singh (2020), the Supreme Court ruled that the right to default bail becomes indefeasible the moment the application is filed upon expiry of 60/90 days. A subsequently filed chargesheet cannot defeat the accrued right to default bail.',
     },
     {
-      "name": "Arnesh Kumar v. State of Bihar",
-      "year": 2014,
-      "citation": "(2014) 8 SCC 273",
-      "court": "Supreme Court of India",
-      "facts": "The case concerned arrest and detention for an offence carrying imprisonment up to seven years.",
-      "issue": "Whether arrest and remand may be authorised mechanically in a lower-punishment case.",
-      "ratioDecidendi": "Police must satisfy and record the necessity conditions for arrest, and Magistrates must not authorise detention mechanically.",
-      "holding": "The Court issued safeguards enforcing the discipline now reflected in the BNSS arrest framework.",
-      "relevance": "Use where s. 187 concerns arrest, custody, remand or liberty; otherwise identify a section-specific authority instead of forcing this case into the argument."
+      id: 'bnss-187-trap3',
+      trap: 'The police can invoke the expanded 40/60-day police custody rule under Section 187(2) BNSS for FIRs registered before 1 July 2024.',
+      correction:
+        'Under Section 531(2)(a) BNSS, investigations pending prior to 1 July 2024 are governed by CrPC 1973. The police cannot retrospectively expand police custody under Section 187(2) BNSS for pre-1 July 2024 FIRs; the rigid 15-day initial limit of Anupam Kulkarni continues to govern.',
+    },
+  ],
+
+  cases: [
+    {
+      name: 'CBI v. Anupam J. Kulkarni',
+      year: 1992,
+      citation: '(1992) 3 SCC 141',
+      court: 'Supreme Court of India',
+      holding:
+        'Held that under Section 167(2) CrPC, police custody can be granted only during the first 15 days of detention; once remanded to judicial custody after 15 days, no further police custody can be authorized. This judgment is legislatively modified by Section 187(2) BNSS.',
+      relevance:
+        'The foundational historical precedent whose rigidity was altered by Section 187(2) BNSS, but which remains binding for pre-1 July 2024 FIRs under Section 531(2)(a).',
     },
     {
-      "name": "D.K. Basu v. State of West Bengal",
-      "year": 1997,
-      "citation": "(1997) 1 SCC 416",
-      "court": "Supreme Court of India",
-      "facts": "The Court addressed custodial violence and the absence of reliable arrest safeguards.",
-      "issue": "What minimum protections must accompany arrest and detention.",
-      "ratioDecidendi": "Arrest and custody require transparent documentation, accountability and safeguards protecting Articles 21 and 22.",
-      "holding": "The Court prescribed arrest and custody safeguards that inform the corresponding BNSS duties.",
-      "relevance": "Use where s. 187 directly engages arrest, custody, production or custody records; do not cite it as a substitute for the statutory text."
-    }
-  ],
-  "questionsAndAnswers": [
-    {
-      "id": "bnss-187-brief",
-      "draftingCategory": "brief",
-      "question": "Provide a structured legal brief on BNSS s. 187 - Procedure when investigation cannot be completed in twenty four hours.",
-      "answer": "I. ISSUE AND JURISDICTION\nIdentify the procedural stage, competent forum, commencement status and precise order sought.\n\nII. RULE\nBNSS s. 187 governs procedure when investigation cannot be completed in twenty four hours. Read its clauses, provisos and connected provisions BNSS s. 186, BNSS s. 188; then test s. 531 savings.\n\nIII. APPLICATION\nMap each fact to jurisdiction, statutory condition, notice, reason, time limit and evidentiary foundation. Test electronic records under BSA s. 63 and burdens under ss. 104-106.\n\nIV. CONCLUSION\nState whether the order stands, must be modified or requires a specific procedural remedy.",
-      "explanation": "IRAC brief with current-law, transition and electronic-evidence checkpoints."
+      name: 'V. Senthil Balaji v. State',
+      year: 2024,
+      citation: '(2024) 3 SCC 51',
+      court: 'Supreme Court of India',
+      holding:
+        'Questioned the absolute rigidity of Anupam Kulkarni, observing that suspects should not be permitted to defeat custodial interrogation by seeking hospital admission during the first 15 days. This reasoning inspired the legislative reformulation of Section 187(2) BNSS.',
+      relevance:
+        'Judicial catalyst for the expanded 40/60-day police custody window under Section 187(2) BNSS.',
     },
     {
-      "id": "bnss-187-submissions",
-      "draftingCategory": "submissions",
-      "question": "Draft written submissions on BNSS s. 187 - Procedure when investigation cannot be completed in twenty four hours.",
-      "answer": "I. PROCEDURAL PROVENANCE\nSet out the registration date, stage, orders and material relied upon.\n\nII. STATUTORY SCHEME\nDeconstruct BNSS s. 187, the Chapter setting, connected provisions BNSS s. 186, BNSS s. 188 and s. 531 savings.\n\nIII. MANDATORY INGREDIENTS\nAddress forum, jurisdiction, conditions precedent, notice, reasons, time limits, hearing and the statutory consequence.\n\nIV. PRECEDENTS AND EVIDENCE\nUse only verified authorities relevant to the proposition. Apply BSA ss. 63, 104-106 to digital and factual proof without shifting the initial burden improperly.\n\nV. REBUTTAL AND PRAYER\nAnswer the transition, maintainability and merits objections, then seek the precise order supported by the record.",
-      "explanation": "Senior Counsel written-submissions structure for a BNSS section."
-    }
+      name: 'M. Ravindran v. Directorate of Revenue Intelligence',
+      year: 2021,
+      citation: '(2021) 2 SCC 485',
+      court: 'Supreme Court of India',
+      holding:
+        'Reaffirmed that default bail under Section 167(2) (now s. 187(3) BNSS) is an indefeasible fundamental right under Article 21; once the statutory period lapses and the accused applies, the right cannot be defeated by a subsequent chargesheet.',
+      relevance:
+        'Leading Constitution Bench authority governing default bail motions under Section 187(3) BNSS.',
+    },
+    {
+      name: 'Bikramjit Singh v. State of Punjab',
+      year: 2020,
+      citation: '(2020) 10 SCC 616',
+      court: 'Supreme Court of India',
+      holding:
+        'Held that default bail is an intrinsic part of the right to personal liberty under Article 21; an oral or written readiness to furnish bail upon expiry of the statutory period instantly triggers the right.',
+      relevance:
+        'Mandatory citation in default bail applications where prosecution attempts to delay hearing.',
+    },
+    {
+      name: 'Enforcement Directorate v. Kapil Wadhawan',
+      year: 2024,
+      citation: '(2024) 7 SCC 147',
+      court: 'Supreme Court of India',
+      holding:
+        'Clarified the computation of the 60/90-day period for default bail: the day of initial remand is excluded, and the day of filing the chargesheet is included in computing the statutory period.',
+      relevance:
+        'Definitive modern ruling on limitation computation under Section 187(3) BNSS.',
+    },
   ],
-  "bareActPointers": [
-    "BNSS s. 187",
-    "BNSS s. 531",
-    "BSA ss. 63, 104-106"
+
+  questionsAndAnswers: [
+    {
+      id: 'bnss-187-brief',
+      draftingCategory: 'brief',
+      question:
+        'Prepare an IRAC Legal Case Brief on Section 187 BNSS, analyzing the shift in police custody remand from Section 167 CrPC, the 40/60 day window, and the enforcement of default bail.',
+      answer: `I. ISSUE & JURISDICTIONAL THRESHOLD
+Whether an order of the Magistrate granting police custody after the 15th day of arrest is lawful under Section 187(2) BNSS, and whether the accused is entitled to default bail under Section 187(3) BNSS upon expiry of 60/90 days. Forum: Judicial Magistrate having jurisdiction under Section 187; High Court under Section 438/528 BNSS.
+
+II. GOVERNING RULE & STATUTORY ANATOMY
+1. The New Police Remand Architecture (Section 187(2)): Replaces old Section 167(2) CrPC. Police custody remains capped at 15 days in aggregate, but can be authorized in whole or in parts at any time during the initial 40 days (60-day cases) or initial 60 days (90-day cases). Abrogates the rigid first-15-days rule in Anupam J. Kulkarni (1992).
+2. Default Bail (Section 187(3)): Prescribes mandatory limits: 90 days for death/life/10+ year offences, 60 days for other offences. Default bail is an indefeasible right under Article 21 (M. Ravindran (2021); Bikramjit Singh (2020)).
+3. Transition Rule (Section 531(2)(a)): Investigations pending before 1 July 2024 follow CrPC 1973; Section 187(2) expanded window cannot be applied retrospectively to pre-July 1 FIRs.
+
+III. APPLICATION TO FACTUAL DISPUTE
+- Step 1: Check FIR date. If <= 30 June 2024, apply Section 167(2) CrPC and Anupam Kulkarni (police custody barred after 15th day). If >= 1 July 2024, apply Section 187(2) BNSS.
+- Step 2: For Section 187(2), verify: (a) total police custody does not exceed 15 days; (b) request falls within initial 40/60 days; (c) Magistrate recorded specific reasons under s. 187(5).
+- Step 3: For Default Bail under Section 187(3), calculate days excluding remand day and including chargesheet filing day. If 60/90 days expired and application is filed before chargesheet is presented, grant is mandatory.
+
+IV. CONCLUSION & OPERATIVE ADVICE
+Advise counsel to move an immediate Section 187(3) default bail application on day 61 or 91 before the chargesheet is tendered. In police custody applications post-day 15, verify FIR date to raise Section 531(2)(a) jurisdictional objections, and scrutinize police reasons to demonstrate lack of necessity for physical custody under Section 187(5).`,
+      explanation:
+        'Senior Counsel IRAC brief on Section 187 BNSS custody limits, default bail, and transition rules.',
+      relatedProvisionIds: ['bnss-187', 'bnss-193', 'bnss-528', 'bnss-531', 'bsa-63'],
+    },
+    {
+      id: 'bnss-187-submissions',
+      draftingCategory: 'submissions',
+      question:
+        'Draft comprehensive Written Submissions before the High Court in a Criminal Revision challenging an illegal order granting police custody after the 15th day in a pre-1 July 2024 FIR.',
+      answer: `IN THE HIGH COURT OF JUDICATURE AT [JURISDICTION]
+CRIMINAL REVISION PETITION NO. [____] OF 202[ ]
+(UNDER SECTION 438 READ WITH SECTION 528 OF THE BHARATIYA NAGARIK SURAKSHA SANHITA, 2023)
+
+IN THE MATTER OF:
+[PETITIONER NAME]                                           ... PETITIONER
+VERSUS
+STATE OF [STATE]                                            ... RESPONDENT
+
+WRITTEN SUBMISSIONS ON BEHALF OF THE PETITIONER CHALLENGING ILLEGAL POLICE CUSTODY REMAND PASSED IN VIOLATION OF SECTION 531(2)(a) BNSS AND SECTION 167(2) CrPC
+
+MOST RESPECTFULLY SHOWETH:
+
+I. STATEMENT OF RELEVANT FACTS & PROCEDURAL PROVENANCE
+1. The Petitioner was arrested on 20 June 2024 in connection with FIR No. [___] dated 10 June 2024 registered under Sections 409 and 420 IPC.
+2. The Petitioner was initially remanded to police custody for 7 days, and thereafter remanded to judicial custody on 27 June 2024.
+3. On 28 July 2024 (the 38th day of detention), the learned Chief Judicial Magistrate erroneously allowed an application filed by the police granting 5 days of police custody, purportedly exercising powers under Section 187(2) BNSS.
+
+II. TOTAL LACK OF JURISDICTION UNDER SECTION 531(2)(a) BNSS
+4. The impugned order commits a fundamental jurisdictional error by applying Section 187(2) BNSS to an investigation that was already pending prior to 1 July 2024.
+5. Section 531(2)(a) BNSS contains an explicit savings command:
+   "Notwithstanding such repeal, if, immediately before the date on which this Sanhita comes into force, there is any application, trial, inquiry or investigation pending... then such application, trial, inquiry or investigation shall be disposed of, continued, or held, as the case may be, in accordance with the provisions of the Code of Criminal Procedure, 1973..."
+6. The investigation commenced on 10 June 2024; it was pending on 1 July 2024. The governing procedural law is Section 167(2) CrPC 1973, NOT Section 187(2) BNSS.
+
+III. INVIOLABILITY OF THE ANUPAM KULKARNI DOCTRINE UNDER SECTION 167(2) CrPC
+7. In CBI v. Anupam J. Kulkarni (1992) 3 SCC 141 and Budh Singh v. State of Punjab (2000) 9 SCC 266, the Supreme Court authoritatively held that under Section 167(2) CrPC, police custody can be granted ONLY during the first 15 days from arrest.
+8. The 15th day from 20 June 2024 expired on 5 July 2024. Once that period lapsed, the power to authorize police custody was permanently extinguished.
+9. Remanding the Petitioner to police custody on the 38th day is void ab initio, contrary to binding Supreme Court precedent, and constitutes an unlawful deprivation of liberty under Article 21.
+
+IV. NO RETROSPECTIVE COERCIVE APPLICATION OF NEW REMAND RULES
+10. Procedural amendments that enhance state coercive powers or curtail liberty cannot be applied retrospectively to ongoing proceedings absent explicit legislative intent. Section 531(2)(a) expressly preserves the old procedure.
+
+PRAYER
+Wherefore, in light of the above facts, statutory scheme, and binding authorities, it is respectfully prayed that this Hon’ble Court may graciously be pleased to:
+(a) Allow the Criminal Revision Petition and quash the impugned order dated 28 July 2024;
+(b) Declare the police custody remand as illegal and without jurisdiction; and
+(c) Direct that the Petitioner be forthwith returned to judicial custody.
+
+FILED BY:
+[COUNSEL FOR THE PETITIONER]
+ADVOCATE`,
+      explanation:
+        'Senior Counsel written submissions challenging retrospective invocation of Section 187(2) BNSS in a pre-commencement FIR.',
+      relatedProvisionIds: ['bnss-187', 'bnss-528', 'bnss-531', 'bsa-63'],
+    },
   ],
-  "examTips": [
-    "Begin with the exact current-law citation: BNSS s. 187.",
-    "Identify stage, forum, jurisdiction and remedy before discussing merits.",
-    "Check s. 531 savings for every pre-1 July 2024 pending matter.",
-    "Keep BNS liability and BSA proof separate from BNSS procedure."
+
+  bareActPointers: [
+    'BNSS s. 187(1): 24-hour limit and production before nearest Magistrate',
+    'BNSS s. 187(2): 15-day aggregate police custody staggered across initial 40 or 60 days',
+    'BNSS s. 187(3): Default bail ceilings (90 days for death/life/10+ years; 60 days for other offences)',
+    'BNSS s. 187(4): In-person first production requirement; video linkage for subsequent extensions',
+    'BNSS s. 187(5): Mandatory recording of reasons for granting police custody',
+    'BNSS s. 187(6)-(7): Executive Magistrate remand limited to maximum 7 days',
+    'BNSS s. 531(2)(a): Transitional savings (pending investigations governed by CrPC 1973)',
   ],
-  "revisionPoints": [
-    "BNSS s. 187: Procedure when investigation cannot be completed in twenty four hours.",
-    "List every statutory condition and connected provision.",
-    "Check the competent court, limitation rule and transition status.",
-    "Apply BSA s. 63 to electronic records only when they are tendered as evidence."
+
+  examTips: [
+    'Always emphasize that Section 187(2) BNSS does NOT increase police custody beyond 15 days; it only expands the window of availability to the initial 40 or 60 days.',
+    'Anchor default bail in Article 21 and the M. Ravindran / Bikramjit Singh doctrine of indefeasible right.',
+    'Highlight the transitional boundary: pre-1 July 2024 FIRs cannot use Section 187(2) BNSS due to Section 531(2)(a) savings.',
+    'Distinguish first production (must be in person under s. 187(4)) from subsequent remand (video linkage permitted).',
   ],
-  "relatedTopics": [
-    "s-186",
-    "s-188"
-  ]
+
+  revisionPoints: [
+    'BNSS s. 187: Remand and default bail (replaces s. 167 CrPC).',
+    's. 187(2): 15-day police custody spread over initial 40 days (60-day case) or 60 days (90-day case).',
+    'Abrogates CBI v. Anupam Kulkarni (1992); codifies V. Senthil Balaji (2024).',
+    's. 187(3): Default bail = 90 days (death/life/10+ yrs) or 60 days (others); indefeasible upon application.',
+    's. 187(4): First production must be in-person; subsequent via video linkage.',
+    's. 531(2)(a): CrPC 1973 applies to investigations pending immediately before 1 July 2024.',
+  ],
+
+  relatedTopics: ['s-35', 's-193', 's-480', 's-528', 's-531'],
 }
 
 export default content
