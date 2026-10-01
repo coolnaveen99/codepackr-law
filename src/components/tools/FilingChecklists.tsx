@@ -33,7 +33,7 @@ export function FilingChecklists() {
         <p className="mt-2 text-sm text-slate-600 dark:text-slate-400 max-w-3xl">Central baseline + court-specific additions + state-specific additions + user verification. This tool does not claim one checklist is valid in every court.</p>
         <div className="mt-4 grid gap-2 sm:grid-cols-3">
           <label className="text-[10px] font-extrabold uppercase tracking-wide">Document type
-            <select value={activeId} onChange={(e) => { setActiveId(e.target.value); setFilter('all') }} className="mt-1 min-h-11 w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-transparent px-3 text-xs">
+            <select value={activeId} onChange={(e) => { setActiveId(e.target.value as typeof activeId); setFilter('all') }} className="mt-1 min-h-11 w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-transparent px-3 text-xs">
               {FILING_CHECKLISTS.map((c) => <option key={c.id} value={c.id}>{c.title}</option>)}
             </select>
           </label>
