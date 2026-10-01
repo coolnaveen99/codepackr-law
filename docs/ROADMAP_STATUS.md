@@ -16,7 +16,8 @@ A roadmap item is complete only when its required code/content/tests/verificatio
 **Phase 2 — CLOSED** (PA-003 exit audit, 2026-10-01)  
 **Phase 3 — CLOSED** (PH3-100 exit audit, 2026-10-01)  
 **Phase 4 — CLOSED** (PH4-100 exit audit, 2026-10-01)  
-**Phase 5 — CLOSED** (Judgment Analyzer exit audit, 2026-10-01)
+**Phase 5 — CLOSED** (Judgment Analyzer exit audit, 2026-10-01)  
+**Phase 6 — CLOSED** (Judgment Compare exit audit, 2026-10-01)
 
 ```
 Phase 0 stabilization
@@ -31,7 +32,7 @@ Phase 4 Citation Verification  ← CLOSED (PH4-100; V1–V10 PASS)
       ↓
 Phase 5 Judgment Analyzer  ← CLOSED (Judgment Analyzer implementation + exit audit)
       ↓
-Phase 6 Judgment Compare
+Phase 6 Judgment Compare  ← CLOSED (Judgment Compare implementation + exit audit)
       ↓
 Phase 7 Case Preparation
       ↓
