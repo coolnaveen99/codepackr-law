@@ -1,14 +1,19 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   Check,
+  Copy,
+  Download,
   ExternalLink,
+  FileText,
   FlaskConical,
   Loader2,
   Plus,
+  Scale,
   Search,
   ShieldCheck,
   Sparkles,
   Trash2,
+  Upload,
 } from 'lucide-react'
 import {
   type AuthorityRow,
@@ -20,6 +25,9 @@ import {
   loadResearchSession,
   researchNoteFromSession,
   downloadResearchNoteMarkdown,
+  downloadResearchNoteDocx,
+  downloadResearchSessionJson,
+  validateAndNormalizeSession,
   saveResearchSession,
 } from '../../lib/researchSession'
 import {
@@ -33,6 +41,10 @@ import {
   buildCitationVerifierUrl,
   saveCitationHandoff,
 } from '../../lib/citationHandoff'
+import {
+  buildJudgmentAnalyzerUrl,
+  saveJudgmentHandoff,
+} from '../../lib/judgmentHandoff'
 
 export function ResearchWorkbench() {
   const [session, setSession] = useState<ResearchSession>(() =>
@@ -43,6 +55,10 @@ export function ResearchWorkbench() {
   const [loadingSuggestions, setLoadingSuggestions] = useState(false)
   const [suggestionsQuery, setSuggestionsQuery] = useState('')
   const [hasSearchedSuggestions, setHasSearchedSuggestions] = useState(false)
+  const [copiedNote, setCopiedNote] = useState(false)
+  const [exportingDocx, setExportingDocx] = useState(false)
+  const [importStatus, setImportStatus] = useState<{ message: string; isError: boolean } | null>(null)
+  const fileInputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     setSession(loadResearchSession())
@@ -103,6 +119,16 @@ export function ResearchWorkbench() {
     }
   }
 
+  const handleAnalyzeJudgment = (row: AuthorityRow, newTab = true) => {
+    saveJudgmentHandoff(row)
+    const url = buildJudgmentAnalyzerUrl(row)
+    if (newTab && typeof window !== 'undefined') {
+      window.open(url, '_blank', 'noopener,noreferrer')
+    } else if (typeof window !== 'undefined') {
+      window.location.href = url
+    }
+  }
+
   const patchQuestion = (patch: Partial<ResearchSession['question']>) => {
     setSession((s) => ({ ...s, question: { ...s.question, ...patch } }))
   }
@@ -120,6 +146,55 @@ export function ResearchWorkbench() {
 
   const secondaryText = session.issues.secondary.join('\n')
   const statutoryText = session.issues.statutory.join('\n')
+
+  const handleCopyNote = async () => {
+    try {
+      await navigator.clipboard.writeText(note)
+      setCopiedNote(true)
+      setTimeout(() => setCopiedNote(false), 2000)
+    } catch {
+      // clipboard access error
+    }
+  }
+
+  const handleDownloadDocx = async () => {
+    try {
+      setExportingDocx(true)
+      await downloadResearchNoteDocx(session)
+    } finally {
+      setExportingDocx(false)
+    }
+  }
+
+  const handleImportFile = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+    setImportStatus(null)
+    const reader = new FileReader()
+    reader.onload = (event) => {
+      try {
+        const text = event.target?.result as string
+        const parsed = JSON.parse(text)
+        const normalized = validateAndNormalizeSession(parsed)
+        setSession(normalized)
+        setImportStatus({
+          message: `Imported session successfully (${normalized.authorities.length} authorities).`,
+          isError: false,
+        })
+        setTimeout(() => setImportStatus(null), 4000)
+      } catch (err: unknown) {
+        const msg = err instanceof Error ? err.message : 'Invalid research session JSON file.'
+        setImportStatus({ message: msg, isError: true })
+        setTimeout(() => setImportStatus(null), 5000)
+      }
+    }
+    reader.onerror = () => {
+      setImportStatus({ message: 'Failed to read selected file.', isError: true })
+      setTimeout(() => setImportStatus(null), 5000)
+    }
+    reader.readAsText(file)
+    e.target.value = ''
+  }
 
   return (
     <div className="mx-auto max-w-3xl space-y-6 p-4 sm:p-6">
@@ -591,14 +666,24 @@ export function ResearchWorkbench() {
               </select>
               <div className="inline-flex items-center gap-3">
                 {(r.citation?.trim() || r.caseName?.trim()) && (
-                  <button
-                    type="button"
-                    onClick={() => handleVerifyCitations([r], true)}
-                    className="inline-flex items-center gap-1 text-xs font-bold text-blue-700 hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-200"
-                    title="Hand off this citation to Citation Verifier"
-                  >
-                    <ShieldCheck className="size-3.5" /> Verify ↗
-                  </button>
+                  <>
+                    <button
+                      type="button"
+                      onClick={() => handleVerifyCitations([r], true)}
+                      className="inline-flex items-center gap-1 text-xs font-bold text-blue-700 hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-200"
+                      title="Hand off this citation to Citation Verifier"
+                    >
+                      <ShieldCheck className="size-3.5" /> Verify ↗
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => handleAnalyzeJudgment(r, true)}
+                      className="inline-flex items-center gap-1 text-xs font-bold text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white"
+                      title="Hand off this authority to Judgment Analyzer"
+                    >
+                      <Scale className="size-3.5" /> Analyze ↗
+                    </button>
+                  </>
                 )}
                 <button
                   type="button"
@@ -646,31 +731,103 @@ export function ResearchWorkbench() {
         />
       </label>
 
-      <div className="flex flex-wrap gap-2">
-        <button
-          type="button"
-          className="rounded-xl bg-[#8B1E3F] text-white px-3 py-1.5 text-xs font-bold"
-          onClick={() => downloadResearchNoteMarkdown(session)}
-        >
-          Download .md
-        </button>
-        <button
-          type="button"
-          className="rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-xs font-bold"
-          onClick={() => navigator.clipboard.writeText(note)}
-        >
-          Copy note
-        </button>
-        <button
-          type="button"
-          className="rounded-xl border border-red-200 text-red-700 dark:border-red-900 px-3 py-1.5 text-xs font-bold"
-          onClick={() => {
-            clearResearchSession()
-            setSession(emptyResearchSession())
-          }}
-        >
-          Clear local session
-        </button>
+      <div className="space-y-3">
+        {importStatus && (
+          <div
+            className={`rounded-xl border p-3 text-xs font-bold ${
+              importStatus.isError
+                ? 'border-red-300 bg-red-50 text-red-900 dark:border-red-900 dark:bg-red-950 dark:text-red-200'
+                : 'border-emerald-300 bg-emerald-50 text-emerald-900 dark:border-emerald-900 dark:bg-emerald-950 dark:text-emerald-200'
+            }`}
+          >
+            {importStatus.message}
+          </div>
+        )}
+
+        <div className="flex flex-wrap items-center gap-2">
+          <input
+            type="file"
+            ref={fileInputRef}
+            accept=".json,application/json"
+            onChange={handleImportFile}
+            className="hidden"
+          />
+
+          <button
+            type="button"
+            className="inline-flex items-center gap-1.5 rounded-xl bg-[#8B1E3F] text-white px-3.5 py-2 text-xs font-bold hover:bg-[#721833]"
+            onClick={() => downloadResearchNoteMarkdown(session)}
+            title="Download structured Markdown note (.md)"
+          >
+            <Download className="size-3.5" /> Download .md
+          </button>
+
+          <button
+            type="button"
+            className="inline-flex items-center gap-1.5 rounded-xl border border-blue-200 dark:border-blue-800 bg-blue-50/70 dark:bg-blue-950/40 text-blue-950 dark:text-blue-200 px-3.5 py-2 text-xs font-bold hover:bg-blue-100 dark:hover:bg-blue-900/60"
+            onClick={handleDownloadDocx}
+            disabled={exportingDocx}
+            title="Download formatted legal research note for Word (.docx)"
+          >
+            {exportingDocx ? (
+              <>
+                <Loader2 className="size-3.5 animate-spin" /> Generating DOCX…
+              </>
+            ) : (
+              <>
+                <FileText className="size-3.5 text-blue-700 dark:text-blue-300" /> Download .docx
+              </>
+            )}
+          </button>
+
+          <button
+            type="button"
+            className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800"
+            onClick={() => downloadResearchSessionJson(session)}
+            title="Export full session backup (.json)"
+          >
+            <Download className="size-3.5" /> Export JSON
+          </button>
+
+          <button
+            type="button"
+            className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800"
+            onClick={() => fileInputRef.current?.click()}
+            title="Import previously saved session JSON"
+          >
+            <Upload className="size-3.5" /> Import JSON
+          </button>
+
+          <button
+            type="button"
+            className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800"
+            onClick={handleCopyNote}
+            title="Copy Markdown note to clipboard"
+          >
+            {copiedNote ? (
+              <>
+                <Check className="size-3.5 text-emerald-600" /> Copied note!
+              </>
+            ) : (
+              <>
+                <Copy className="size-3.5" /> Copy note
+              </>
+            )}
+          </button>
+
+          <button
+            type="button"
+            className="rounded-xl border border-red-200 text-red-700 dark:border-red-900 hover:bg-red-50 dark:hover:bg-red-950 px-3 py-2 text-xs font-bold"
+            onClick={() => {
+              if (window.confirm('Clear all local research session data? This cannot be undone.')) {
+                clearResearchSession()
+                setSession(emptyResearchSession())
+              }
+            }}
+          >
+            <Trash2 className="size-3.5 inline mr-1" /> Clear local session
+          </button>
+        </div>
       </div>
 
       <section className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 p-4">

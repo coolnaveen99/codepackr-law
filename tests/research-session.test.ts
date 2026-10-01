@@ -5,6 +5,10 @@ import {
   emptyAuthorityRow,
   researchNoteFromSession,
   researchNoteFilename,
+  researchSessionFilename,
+  validateAndNormalizeSession,
+  exportResearchSessionJson,
+  generateResearchNoteDocx,
 } from '../src/lib/researchSession'
 
 describe('PH3-020 research question fields', () => {
@@ -115,3 +119,90 @@ describe('PH3-050 canonical entity references in research note', () => {
     assert.match(note, /Canonical ID:\*\*\s*provision:india:cpc-s-32/)
   })
 })
+
+describe('PH3-080 session JSON import/export and DOCX polish', () => {
+  it('validates and normalizes valid session JSON', () => {
+    const raw = {
+      version: 1,
+      updatedAt: '2026-10-01T12:00:00.000Z',
+      question: {
+        question: 'What is the standard of proof in PIL?',
+        jurisdiction: 'India — Supreme Court',
+        courtLevel: 'Supreme Court',
+      },
+      issues: {
+        primary: 'Locus standi requirement',
+        secondary: ['Public interest definition'],
+        statutory: [],
+        procedural: [],
+        evidence: [],
+        limitation: [],
+      },
+      authorities: [
+        {
+          caseName: 'SP Gupta v. Union of India',
+          citation: 'AIR 1982 SC 149',
+          verification: 'verified',
+        },
+      ],
+      analysis: 'Liberalized standing allows any bona fide citizen to move court.',
+      counterAuthorities: '',
+      unresolved: '',
+    }
+
+    const session = validateAndNormalizeSession(raw)
+    assert.equal(session.version, 1)
+    assert.equal(session.question.question, 'What is the standard of proof in PIL?')
+    assert.equal(session.authorities.length, 1)
+    assert.equal(session.authorities[0].caseName, 'SP Gupta v. Union of India')
+    assert.equal(session.authorities[0].verification, 'verified')
+    assert.ok(session.authorities[0].id)
+  })
+
+  it('rejects non-object root inputs with descriptive error', () => {
+    assert.throws(() => validateAndNormalizeSession(null), /root must be a valid JSON object/)
+    assert.throws(() => validateAndNormalizeSession('invalid string'), /root must be a valid JSON object/)
+    assert.throws(() => validateAndNormalizeSession(42), /root must be a valid JSON object/)
+  })
+
+  it('coerces missing fields with safe default structures', () => {
+    const session = validateAndNormalizeSession({})
+    assert.equal(session.version, 1)
+    assert.equal(session.question.jurisdiction, 'India — All courts')
+    assert.deepEqual(session.authorities, [])
+    assert.equal(session.analysis, '')
+  })
+
+  it('exports session to valid JSON string', () => {
+    const session = emptyResearchSession()
+    session.question.question = 'Test Question'
+    const jsonStr = exportResearchSessionJson(session)
+    const reparsed = JSON.parse(jsonStr)
+    assert.equal(reparsed.question.question, 'Test Question')
+    assert.equal(reparsed.version, 1)
+  })
+
+  it('generates filename for .docx and .json extensions', () => {
+    const session = emptyResearchSession()
+    session.question.act = 'BNS, 2023'
+    assert.match(researchNoteFilename(session, 'docx'), /^research-note-bns-2023-\d{4}-\d{2}-\d{2}\.docx$/)
+    assert.match(researchSessionFilename(session), /^research-session-bns-2023-\d{4}-\d{2}-\d{2}\.json$/)
+  })
+
+  it('generates DOCX binary blob from research session', async () => {
+    const session = emptyResearchSession()
+    session.question.question = 'Validity of section 32 summons'
+    session.question.act = 'CPC'
+    session.question.section = 's. 32'
+    const row = emptyAuthorityRow()
+    row.caseName = 'Maneka Gandhi'
+    row.citation = 'AIR 1978 SC 597'
+    session.authorities = [row]
+
+    const blob = await generateResearchNoteDocx(session)
+    assert.ok(blob instanceof Blob)
+    assert.ok(blob.size > 1000)
+    assert.equal(blob.type, 'application/vnd.openxmlformats-officedocument.wordprocessingml.document')
+  })
+})
+

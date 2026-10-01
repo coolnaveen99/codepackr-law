@@ -46,7 +46,7 @@ export function buildCitationVerifierUrl(citations: (string | AuthorityRow)[] | 
 export function saveCitationHandoff(payload: string): void {
   if (typeof window === 'undefined' || !payload) return
   try {
-    sessionStorage.setItem(CITATION_HANDOFF_SESSION_KEY, payload)
+    window.sessionStorage?.setItem(CITATION_HANDOFF_SESSION_KEY, payload)
   } catch {
     // sessionStorage disabled or quota
   }
@@ -58,7 +58,8 @@ export function loadAndClearCitationHandoff(): { text: string; source: 'query' |
 
   // 1. Check URL query params
   try {
-    const params = new URLSearchParams(window.location.search)
+    const search = window.location?.search || ''
+    const params = new URLSearchParams(search)
     const fromQuery = params.get('q') || params.get('citations') || params.get('c')
     if (fromQuery && fromQuery.trim()) {
       return { text: fromQuery.trim(), source: 'query' }
@@ -69,9 +70,9 @@ export function loadAndClearCitationHandoff(): { text: string; source: 'query' |
 
   // 2. Check sessionStorage
   try {
-    const stored = sessionStorage.getItem(CITATION_HANDOFF_SESSION_KEY)
+    const stored = window.sessionStorage?.getItem(CITATION_HANDOFF_SESSION_KEY)
     if (stored && stored.trim()) {
-      sessionStorage.removeItem(CITATION_HANDOFF_SESSION_KEY)
+      window.sessionStorage?.removeItem(CITATION_HANDOFF_SESSION_KEY)
       return { text: stored.trim(), source: 'session' }
     }
   } catch {
