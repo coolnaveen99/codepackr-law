@@ -668,4 +668,4 @@ The Phase 18 roadmap deliverable is complete: the verification policy defines re
 | No authority scoring / prediction | **PASS** |
 | CI quality gate | **PENDING** |
 
-**Phase 27 status:** IN PROGRESS until CI passes.
+**Phase 27 status:** **CLOSED** — PR #97, CI run #36898847552 passed TypeScript, unit tests and production build.
