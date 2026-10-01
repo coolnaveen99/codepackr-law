@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
-import { ArrowLeft, CheckCircle2, HelpCircle, ShieldAlert, ShieldCheck } from 'lucide-react'
-import { parseCitationList, type CitationStatus } from '../../lib/citationParser'
+import { ArrowLeft, CheckCircle2, ExternalLink, HelpCircle, ShieldAlert, ShieldCheck } from 'lucide-react'
+import { type CitationStatus } from '../../lib/citationParser'
 import { loadAndClearCitationHandoff } from '../../lib/citationHandoff'
+import { verifyCitationListSync, type VerifiedCitation } from '../../lib/citationVerification'
 
 function statusStyle(s: CitationStatus) {
   switch (s) {
@@ -30,7 +31,7 @@ export function CitationVerifier() {
     }
   }, [])
 
-  const results = useMemo(() => parseCitationList(text), [text])
+  const results: VerifiedCitation[] = useMemo(() => verifyCitationListSync(text), [text])
 
   return (
     <div className="space-y-5">
@@ -159,6 +160,31 @@ export function CitationVerifier() {
                   </div>
                 )}
               </dl>
+
+              {r.matchedRecord && (
+                <div className="mt-3 rounded-2xl border border-emerald-200 dark:border-emerald-900 bg-emerald-50/70 dark:bg-emerald-950/30 p-3.5 text-xs">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <div className="flex items-center gap-1.5 font-bold text-emerald-950 dark:text-emerald-200">
+                      <ShieldCheck className="size-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                      <span>Matched Landmark: {r.matchedRecord.caseName} ({r.matchedRecord.year})</span>
+                    </div>
+                    <span className="rounded-full bg-emerald-200/90 dark:bg-emerald-900 px-2 py-0.5 text-[10px] font-extrabold text-emerald-900 dark:text-emerald-200">
+                      {Math.round(r.confidence * 100)}% Confidence
+                    </span>
+                  </div>
+                  {r.matchedRecord.ratioDecidendi && (
+                    <p className="mt-2 text-slate-700 dark:text-slate-300 italic line-clamp-2">
+                      "{r.matchedRecord.ratioDecidendi}"
+                    </p>
+                  )}
+                  {r.matchedRecord.citation && (
+                    <div className="mt-1 text-[11px] text-slate-600 dark:text-slate-400 font-mono">
+                      Reported Citation: {r.matchedRecord.citation}
+                    </div>
+                  )}
+                </div>
+              )}
+
               <ul className="mt-3 space-y-1 text-xs text-slate-600 dark:text-slate-400">
                 {r.notes.map((n, j) => (
                   <li key={j} className="flex gap-2">
@@ -173,6 +199,23 @@ export function CitationVerifier() {
                   </li>
                 ))}
               </ul>
+
+              {r.officialSources && r.officialSources.length > 0 && (
+                <div className="mt-3 pt-2.5 border-t border-slate-100 dark:border-slate-800 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px]">
+                  <span className="font-semibold text-slate-500 dark:text-slate-400">Official Links:</span>
+                  {r.officialSources.map((src, sIdx) => (
+                    <a
+                      key={sIdx}
+                      href={src.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 font-bold text-[#8B1E3F] hover:underline dark:text-blue-400"
+                    >
+                      {src.name} <ExternalLink className="size-3" />
+                    </a>
+                  ))}
+                </div>
+              )}
             </article>
           ))}
         </div>

@@ -25,6 +25,7 @@
 | PH3-100 | **COMPLETED** | Phase 3 exit audit (`docs/PHASE-3-EXIT-AUDIT.md`, criteria E1–E10 PASS) + 71/71 tests + tsc |
 | PH4-001 | **COMPLETED** | Architecture kickoff doc (`docs/architecture/phase-4-citation-verification-kickoff.md`) |
 | PH4-010 | **COMPLETED** | Extended parser for SCC OnLine, Neutral citations (INSC/HC), SCR & Supp + `tests/citation-parser.test.ts` + 88/88 tests + tsc |
+| PH4-020 | **COMPLETED** | Verification engine matching against canonical manifest & `ALL_JUDGMENTS` + `tests/citation-verification.test.ts` + 100/100 tests + tsc |
 
 ## Current sprint backlog
 
@@ -32,12 +33,24 @@
 |---|---|---|---|
 | PH4-001 | Phase 4 Architecture kickoff & contract | **COMPLETED** | P0 |
 | PH4-010 | Extended parser for SCC OnLine, Neutral citations, & volume-less formats | **COMPLETED** | P0 |
-| PH4-020 | Verification engine matching against canonical manifest & `ALL_JUDGMENTS` | **READY** | P0 |
-| PH4-030 | Document citation extractor (multi-citation scanner for pasted text) | **BACKLOG** | P0 |
+| PH4-020 | Verification engine matching against canonical manifest & `ALL_JUDGMENTS` | **COMPLETED** | P0 |
+| PH4-030 | Document citation extractor (multi-citation scanner for pasted text) | **READY** | P0 |
 | PH4-040 | Authority network & official portal link generator (e-SCR, SCI, HC) | **BACKLOG** | P1 |
 | PH4-050 | Citation Verifier UI overhaul: dashboard, filtering, & Workbench roundtrip | **BACKLOG** | P1 |
 | PH4-100 | Phase 4 exit audit (evaluation against criteria V1–V10) | **BACKLOG** | P0 |
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
+
+### PH4-020 — COMPLETED (2026-10-01)
+
+| Check | Result |
+|---|---|
+| Landmark corpus matching | **Yes** (Correlates against `ALL_JUDGMENTS` landmark database with exact citation, case name, & token overlap) |
+| Canonical manifest integration | **Yes** (`verifyCitation` queries ContentGateway manifest and loads canonical judgment records asynchronously) |
+| 5-tier status model adherence | **Yes** (`VERIFIED` >= 0.85, `PARTIAL` 0.50–0.84, `NOT_VERIFIED` 0.0, `CONFLICT`, `USER_PROVIDED`) |
+| Anti-hallucination guarantee | **Yes** (Unverified citations retain explicit notice: "Never interpret this as 'the case does not exist'") |
+| Official source resolution | **Yes** (`resolveOfficialSources` generates functional deep-links to e-SCR, SCI portal, High Courts, India Code) |
+| Citation Verifier UI integration | **Yes** (`CitationVerifier.tsx` displays matched landmark details, confidence badge, ratio decidendi, and official links) |
+| Automated unit tests & validation | **Yes** (12/12 dedicated unit tests in `tests/citation-verification.test.ts`, 100/100 test suite passing, `tsc --noEmit` clean) |
 
 ### PH4-010 — COMPLETED (2026-10-01)
 
@@ -164,5 +177,5 @@
 
 ## Next READY
 
-**PH4-020** — Verification engine matching against canonical manifest & `ALL_JUDGMENTS` (P0).  
+**PH4-030** — Document citation extractor (multi-citation scanner for pasted text) (P0).  
 Residual backlog: **PA-005b** (CDN mirror implementation, P2).

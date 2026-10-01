@@ -64,7 +64,7 @@ Phase 8+ Drafting / Court / Practice / AI / Scale
 |------|--------|
 | PH4-001 architecture kickoff | **COMPLETED** — `docs/architecture/phase-4-citation-verification-kickoff.md` |
 | Baseline UI (`CitationVerifier.tsx`) | Production live; basic regex parser |
-| PH4-010+ implementation | PH4-010 **COMPLETED** (88/88 tests); PH4-020 **READY** |
+| PH4-010+ implementation | PH4-010 & PH4-020 **COMPLETED** (100/100 tests); PH4-030 **READY** |
 | Phase 4 product exit | **BACKLOG** (PH4-100) |
 
 ## Content-enhancement decision
