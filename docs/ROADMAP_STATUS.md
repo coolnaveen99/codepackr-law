@@ -239,8 +239,8 @@ Implemented the roadmap §22 AI architecture contract without adding a productio
 - No production AI endpoint/provider was introduced.
 - Focused tests: `tests/ai-architecture.test.ts`.
 - Exit audit: `docs/PHASE-17-EXIT-AUDIT.md`.
-- CI/build: **PENDING**.
+- CI/build: **PASS** — CI #374 (TypeScript, unit tests, production build)..
 
-**Phase 17 status:** IMPLEMENTED / CI PENDING.
+**Phase 17 status:** CLOSED pending merge verification.
 
 **Next:** Phase 18 — Legal Content Verification.
