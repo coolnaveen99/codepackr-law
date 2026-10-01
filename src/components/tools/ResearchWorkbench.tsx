@@ -59,7 +59,7 @@ export function ResearchWorkbench() {
         </h1>
         <p className="text-sm text-slate-600 dark:text-slate-400">
           Structured workflow from question → issues → authority matrix → research note. Session saves
-          automatically in this browser (PH3-010/020). Not legal advice.
+          automatically in this browser (PH3-010/020/030). Not legal advice.
         </p>
         {hydrated && session.updatedAt && (
           <p className="text-[11px] text-slate-500">
@@ -244,6 +244,13 @@ export function ResearchWorkbench() {
                 className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-sm"
               />
               <input
+                type="date"
+                value={r.date || ''}
+                onChange={(e) => updateRow(r.id, { date: e.target.value || undefined })}
+                title="Decision date"
+                className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-sm"
+              />
+              <input
                 value={r.citation}
                 onChange={(e) => updateRow(r.id, { citation: e.target.value })}
                 placeholder="Citation"
@@ -259,7 +266,7 @@ export function ResearchWorkbench() {
                 value={r.issue}
                 onChange={(e) => updateRow(r.id, { issue: e.target.value })}
                 placeholder="Issue"
-                className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-sm sm:col-span-2"
+                className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-sm"
               />
               <textarea
                 value={r.holding}
@@ -267,6 +274,33 @@ export function ResearchWorkbench() {
                 placeholder="Holding / ratio (your notes)"
                 rows={2}
                 className="w-full rounded-lg border border-slate-200 dark:border-slate-700 p-2 text-sm sm:col-span-2"
+              />
+              <input
+                value={r.paragraph || ''}
+                onChange={(e) => updateRow(r.id, { paragraph: e.target.value || undefined })}
+                placeholder="Relevant paragraph / pin cite"
+                className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-sm"
+              />
+              <select
+                value={r.treatment || ''}
+                onChange={(e) => updateRow(r.id, { treatment: e.target.value || undefined })}
+                className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-sm bg-white dark:bg-slate-900"
+                title="Treatment of this authority"
+              >
+                <option value="">Treatment — not set</option>
+                <option value="followed">followed</option>
+                <option value="applied">applied</option>
+                <option value="distinguished">distinguished</option>
+                <option value="overruled">overruled</option>
+                <option value="doubted">doubted</option>
+                <option value="cited">cited</option>
+                <option value="persuasive">persuasive</option>
+              </select>
+              <input
+                value={r.source || ''}
+                onChange={(e) => updateRow(r.id, { source: e.target.value || undefined })}
+                placeholder="Source URL or reporter (optional)"
+                className="h-9 rounded-lg border border-slate-200 dark:border-slate-700 px-2 text-sm sm:col-span-2"
               />
             </div>
             <div className="flex flex-wrap items-center justify-between gap-2">
