@@ -96,14 +96,21 @@ describe('Canonical content gateway', () => {
     assert.equal(canonicalTopicId('tort', 'nature-definition'), 'topic:india:tort-nature-definition')
     assert.equal(canonicalTopicId('pil', 'locus-standi'), 'topic:india:pil-locus-standi')
     assert.equal(canonicalTopicId('cpc', 's-32'), 'topic:india:cpc-s-32')
+    // Catalog-style prefixed doctrine ids must not double the subject slug
+    assert.equal(canonicalTopicId('pil', 'pil-locus-standi'), 'topic:india:pil-locus-standi')
   })
 
   it('parses canonical topic IDs into app routes', () => {
     assert.deepEqual(parseCanonicalTopicId('topic:india:pil-locus-standi'), {
       subjectSlug: 'pil',
-      topicId: 'locus-standi',
+      topicId: 'pil-locus-standi',
     })
+    assert.equal(hrefForCanonicalTopicId('topic:india:pil-locus-standi'), '/subjects/pil/pil-locus-standi')
     assert.equal(hrefForCanonicalTopicId('topic:india:cpc-s-32'), '/subjects/cpc/s-32')
+    assert.deepEqual(parseCanonicalTopicId('topic:india:cpc-s-32'), {
+      subjectSlug: 'cpc',
+      topicId: 's-32',
+    })
   })
 
   it('maps a canonical topic record onto the legacy TopicContent study body', () => {
@@ -198,8 +205,10 @@ describe('Live legal-content parity', () => {
     assert.ok((index.edgeCount ?? 0) >= 40, `expected graph edges, got ${index.edgeCount}`)
   })
 
-  it('resolves PIL locus-standi via manifest path', async () => {
-    const topic = await repo.getTopic('pil', 'locus-standi')
+  it('resolves PIL locus-standi via catalog id and short id', async () => {
+    const byCatalog = await repo.getTopic('pil', 'pil-locus-standi')
+    const byShort = await repo.getTopic('pil', 'locus-standi')
+    const topic = byCatalog || byShort
     if (!topic) {
       console.warn('[content-parity] pil locus-standi fetch returned null — skipping')
       return
