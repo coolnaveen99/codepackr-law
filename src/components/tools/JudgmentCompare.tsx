@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { FileUp, GitCompare, ShieldCheck } from 'lucide-react'
 import * as mammoth from 'mammoth'
 import { categoryLabel, compareJudgments, type AuthorityTreatment, type ComparisonCategory } from '../../lib/judgmentCompare'
+import { limitUserText, validateLocalUpload } from '../../lib/sanitize'
 
 const SAMPLE_A = `ISSUES:
 Whether Section 10 permits the impugned order.
@@ -56,8 +57,10 @@ The appeal was dismissed.`
 const treatmentLabel: Record<AuthorityTreatment, string> = { followed: 'Followed', 'relied-upon': 'Relied upon', distinguished: 'Distinguished', considered: 'Considered', 'not-addressed': 'Not addressed', unverified: 'Unverified' }
 
 async function readFile(file: File): Promise<string> {
-  if (file.name.toLowerCase().endsWith('.docx')) return (await mammoth.extractRawText({ arrayBuffer: await file.arrayBuffer() })).value
-  return file.text()
+  const validationError = validateLocalUpload(file, ['txt', 'docx'])
+  if (validationError) throw new Error(validationError)
+  if (file.name.toLowerCase().endsWith('.docx')) return limitUserText((await mammoth.extractRawText({ arrayBuffer: await file.arrayBuffer() })).value)
+  return limitUserText(await file.text())
 }
 
 export function JudgmentCompare() {
@@ -71,7 +74,7 @@ export function JudgmentCompare() {
   const load = async (file: File | undefined, side: 'left' | 'right') => {
     if (!file) return
     try { setError(''); const value = await readFile(file); side === 'left' ? setLeft(value) : setRight(value) }
-    catch { setError('The document could not be read. Use UTF-8 TXT or DOCX; files are processed locally.') }
+    catch (error) { setError(error instanceof Error ? error.message : 'The document could not be read locally.') }
   }
 
   return (
