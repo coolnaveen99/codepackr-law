@@ -16,6 +16,8 @@ import {
   SITE_NAME,
   buildJudgmentStructuredData,
   buildTopicStructuredData,
+  buildSubjectStructuredData,
+  buildToolStructuredData,
 } from './lib/seo'
 import { JUDGMENTS_BY_ID } from './data/judgments'
 import { type LawTopic } from './data/subjects'
@@ -126,6 +128,7 @@ export default function App() {
             { name: 'Subjects', path: '/subjects' },
             { name: subject.name, path: `/subjects/${subject.slug}` },
           ],
+          structuredData: buildSubjectStructuredData(subject),
         })
       }
     }
@@ -159,6 +162,7 @@ export default function App() {
             { name: 'Home', path: '/' },
             { name: tool.name, path: `/tool/${tool.slug}` },
           ],
+          structuredData: buildToolStructuredData(tool),
         })
       }
     }
@@ -174,7 +178,7 @@ export default function App() {
             description:
               judgment.summary?.slice(0, 155) ||
               `Supreme Court judgment: ${parties}. Ratio, holdings and linked topics on Codepackr Law.`,
-            path: `/case-law/${judgment.id}`,
+            path: `/case-law/judgment/${judgment.id}`,
             keywords: [
               parties,
               judgment.caseName,
@@ -187,7 +191,7 @@ export default function App() {
             breadcrumbs: [
               { name: 'Home', path: '/' },
               { name: 'Case Law', path: '/case-law' },
-              { name: parties, path: `/case-law/${judgment.id}` },
+              { name: parties, path: `/case-law/judgment/${judgment.id}` },
             ],
             structuredData: buildJudgmentStructuredData(judgment),
           })

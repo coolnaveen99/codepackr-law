@@ -8,6 +8,7 @@ if (!fs.existsSync(templatePath)) throw new Error('dist/index.html not found');
 if (!fs.existsSync(sitemapPath)) throw new Error('public/sitemap.xml not found');
 
 const template = fs.readFileSync(templatePath, 'utf8');
+const DEFAULT_OG_IMAGE = 'https://www.codepackr.com/assets/og/default.png';
 const toolSource = fs.readFileSync(path.resolve('src/data/tools.ts'), 'utf8');
 
 function walk(dir) {
@@ -49,6 +50,38 @@ function findJudgment(id) {
   };
 }
 
+
+function absoluteUrl(route) {
+  return route ? `https://law.codepackr.com/${route}` : 'https://law.codepackr.com/';
+}
+
+function breadcrumbsFor(route) {
+  const items = [{ name: 'Home', path: '/' }];
+  if (!route) return items;
+  const parts = route.split('/').filter(Boolean);
+  let path = '';
+  for (const part of parts) {
+    path += `/${part}`;
+    if (part === 'judgment') continue;
+    const label = part.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    items.push({ name: label, path });
+  }
+  return items;
+}
+
+function structuredDataFor(route, title, description) {
+  const url = absoluteUrl(route);
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${url}#webpage`,
+    url,
+    name: title,
+    description,
+    inLanguage: 'en-IN',
+    primaryImageOfPage: DEFAULT_OG_IMAGE
+  };
+}
 function metadataFor(route) {
   if (!route) return {
     title: 'Codepackr Law — Indian Law Library & Practice Reference',
@@ -103,19 +136,34 @@ const pages = ['', ...urls].filter((v, i, a) => a.indexOf(v) === i);
 
 for (const route of pages) {
   const { title, description } = metadataFor(route);
-  const canonical = route ? `https://law.codepackr.com/${route}` : 'https://law.codepackr.com/';
+  const canonical = absoluteUrl(route);
+  const breadcrumbs = breadcrumbsFor(route);
+  const structuredData = [
+    structuredDataFor(route, title, description),
+    { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: breadcrumbs.map((item, index) => ({ '@type': 'ListItem', position: index + 1, name: item.name, item: absoluteUrl(item.path.replace(/^\\//, '')) })) }
+  ];
   let html = template;
   html = html.replace(/<title>[^<]*<\/title>/i, `<title>${esc(title)}</title>`);
   html = html.replace(/<meta name="description" content="[^"]*"/i, `<meta name="description" content="${esc(description)}"`);
   html = html.replace(/<link rel="canonical" href="[^"]*"/i, `<link rel="canonical" href="${canonical}"`);
+  html = html.replace(/<meta property="og:type" content="[^"]*"/i, `<meta property="og:type" content="website"`);
   html = html.replace(/<meta property="og:title" content="[^"]*"/i, `<meta property="og:title" content="${esc(title)}"`);
   html = html.replace(/<meta property="og:description" content="[^"]*"/i, `<meta property="og:description" content="${esc(description)}"`);
   html = html.replace(/<meta property="og:url" content="[^"]*"/i, `<meta property="og:url" content="${canonical}"`);
+  html = html.replace(/<meta property="og:image" content="[^"]*"/i, `<meta property="og:image" content="${DEFAULT_OG_IMAGE}"`);
+  html = html.replace(/<meta property="og:image:url" content="[^"]*"/i, `<meta property="og:image:url" content="${DEFAULT_OG_IMAGE}"`);
+  html = html.replace(/<meta property="og:image:secure_url" content="[^"]*"/i, `<meta property="og:image:secure_url" content="${DEFAULT_OG_IMAGE}"`);
   html = html.replace(/<meta property="og:image:alt" content="[^"]*"/i, `<meta property="og:image:alt" content="${esc(title)}"`);
   html = html.replace(/<meta name="twitter:title" content="[^"]*"/i, `<meta name="twitter:title" content="${esc(title)}"`);
   html = html.replace(/<meta name="twitter:description" content="[^"]*"/i, `<meta name="twitter:description" content="${esc(description)}"`);
+  html = html.replace(/<meta name="twitter:image" content="[^"]*"/i, `<meta name="twitter:image" content="${DEFAULT_OG_IMAGE}"`);
   html = html.replace(/<meta name="twitter:image:alt" content="[^"]*"/i, `<meta name="twitter:image:alt" content="${esc(title)}"`);
-  const crawler = `<div id="root" data-codepackr-prerendered="true"><main style="max-width:900px;margin:40px auto;padding:20px;font-family:system-ui,sans-serif"><p style="color:#8B1E3F">Codepackr Law</p><h1>${esc(title)}</h1><p>${esc(description)}</p><p>Indian law reference, case law and legal study tools.</p></main></div>`;
+  html = html.replace('</head>', `<script type="application/ld+json" id="cp-prerender-schema">${JSON.stringify(structuredData)}</script></head>`);
+  const internalLinks = [['Subjects', '/subjects'], ['Case Law', '/case-law'], ['Legal Knowledge', '/knowledge'], ['Contact', '/contact']];
+  if (route.startsWith('tool/')) internalLinks.push(['All Legal Tools', '/']);
+  if (route.startsWith('subjects/')) internalLinks.push(['All Subjects', '/subjects']);
+  if (route.startsWith('case-law/')) internalLinks.push(['Case Law Library', '/case-law']);
+  const crawler = `<div id="root" data-codepackr-prerendered="true"><main style="max-width:900px;margin:40px auto;padding:20px;font-family:system-ui,sans-serif"><p style="color:#8B1E3F">Codepackr Law</p><h1>${esc(title)}</h1><p>${esc(description)}</p><p>Indian law reference, case law and legal study tools.</p><nav aria-label="Internal navigation"><ul>${internalLinks.map(([label, href]) => `<li><a href="${href}">${esc(label)}</a></li>`).join('')}</ul></nav></main></div>`;
   html = html.replace(/<div id="root">[\\s\\S]*?<\/div>/i, crawler);
   if (!route) fs.writeFileSync(path.join(distDir, 'index.html'), html);
   else {

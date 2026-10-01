@@ -8,6 +8,7 @@ export const SITE_URL = 'https://law.codepackr.com'
 export const SITE_NAME = 'Codepackr Law'
 export const SITE_TAGLINE =
   'A free digital Indian law library and practice reference with statutes, case law, legal concepts, drafting formats, study notes and exam preparation tools.'
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/og/default.png`
 
 export interface BreadcrumbItem {
   name: string
@@ -24,6 +25,12 @@ export interface PageMeta {
   keywords?: string | string[]
   breadcrumbs?: BreadcrumbItem[]
   structuredData?: object | object[]
+}
+
+export function buildCanonicalUrl(path = '/') {
+  if (path.startsWith('http')) return path
+  const normalized = path.startsWith('/') ? path : `/${path}`
+  return `${SITE_URL}${normalized === '/' ? '/' : normalized}`
 }
 
 function ensureMeta(attr: 'name' | 'property', key: string, content: string) {
@@ -82,13 +89,14 @@ export function setPageMeta(meta: PageMeta) {
     if (kw) ensureMeta('name', 'keywords', kw)
   }
 
-  const path = meta.path ?? '/'
-  const url = path.startsWith('http') ? path : `${SITE_URL}${path.startsWith('/') ? path : `/${path}`}`
+  const url = buildCanonicalUrl(meta.path ?? '/')
   ensureLink('canonical', url)
 
-  const image = meta.image ?? `${SITE_URL}/../www.codepackr.com/assets/og/default.png`
+  const image = meta.image ?? DEFAULT_OG_IMAGE
 
   ensureMeta('property', 'og:type', 'website')
+  ensureMeta('property', 'og:image:url', image)
+  ensureMeta('property', 'og:image:secure_url', image)
   ensureMeta('property', 'og:site_name', SITE_NAME)
   ensureMeta('property', 'og:title', title)
   ensureMeta('property', 'og:description', meta.description)
@@ -133,6 +141,37 @@ export function setPageMeta(meta: PageMeta) {
   }
 }
 
+
+/** Structured data for a subject landing page. */
+export function buildSubjectStructuredData(subject: { name: string; slug: string; description?: string }) {
+  const url = `${SITE_URL}/subjects/${subject.slug}`
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': `${url}#page`,
+    name: subject.name,
+    description: subject.description || `Indian law study and reference material for ${subject.name}.`,
+    url,
+    inLanguage: 'en-IN',
+    isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
+  }
+}
+
+/** Structured data for a client-side legal practice/study tool. */
+export function buildToolStructuredData(tool: { name: string; slug: string; description?: string }) {
+  const url = `${SITE_URL}/tool/${tool.slug}`
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    '@id': `${url}#application`,
+    name: tool.name,
+    description: tool.description || `Free Indian law practice tool: ${tool.name}.`,
+    url,
+    applicationCategory: 'EducationalApplication',
+    operatingSystem: 'All',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' },
+  }
+}
 /** Structured Data generator for Supreme Court Landmark Judgments */
 export function buildJudgmentStructuredData(judgment: {
   id: string
