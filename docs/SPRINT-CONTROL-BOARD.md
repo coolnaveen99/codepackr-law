@@ -267,9 +267,9 @@
 
 ## Phase 11 — BNS / BNSS / BSA Transition Centre — COMPLETED (2026-10-01)
 
-**Implementation:** Phase 11 Transition Centre changes carried into current `main` after the Phase 12 merge.  
+**Implementation:** PR #82 — Phase 11 Transition Centre changes carried into current `main` after the Phase 12 merge.  
 **Exit audit:** `docs/PHASE-11-EXIT-AUDIT.md`  
-**Validation:** PR #81's final Phase 11 code tree was CI-validated before the clean-current-main rebuild; the implementation test gate passed with 143/143 tests, TypeScript and production build.
+**Validation:** PR #82 final CI passed TypeScript, 143/143 unit tests and production build.
 
 | Check | Result |
 |---|---|
