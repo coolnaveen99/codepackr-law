@@ -22,6 +22,8 @@ A roadmap item is complete only when its required code/content/tests/verificatio
 **Phase 8 — CLOSED** (Legal Draft Studio 2.0 exit audit, 2026-10-01)  
 **Phase 9 — CLOSED** (Filing and Court Checklist System exit audit, 2026-10-01)  
 **Phase 10 — CLOSED** (Legal Calculators exit audit, 2026-10-01)
+**Phase 14 — CLOSED** (Cause List Organizer exit audit, 2026-10-01)
+**Phase 15 — IMPLEMENTED / CI PENDING** (Primary Source Finder, 2026-10-01)
 
 ```
 Phase 0 stabilization
@@ -189,3 +191,35 @@ Implementation is complete via PR #83.
 - Next: Phase 14 — Cause List Organizer.
 
 **Phase 13 status:** CLOSED.
+
+
+## Phase 14 — Cause List Organizer (CLOSED)
+
+Phase 14 is complete on current `main` via PR #84.
+
+- Paste/import, editing, sorting, own-matter marking and hearing-preparation fields are available.
+- Cause-list source boundary points users to official eCourts services without claiming CodePackr is the official host.
+- Exit audit: `docs/PHASE-14-EXIT-AUDIT.md`
+- Validation: CI #362 — TypeScript PASS, unit tests PASS, production build PASS.
+
+**Phase 14 status:** CLOSED.
+
+
+## Phase 15 — Primary Source Finder
+
+Implementation is present on branch `feat/ph15-primary-source-finder-v2`.
+
+- Tiered primary-source directory distinguishes official government/court/statute sources from reported databases.
+- Search result cards expose title, authority type, review date, relevant Act/Section scope, source tier and link-verification status.
+- Search supports title, organisation, authority, description and Act/Section metadata.
+- Tier 1–5 and source-category filters are deterministic and browser-local.
+- External links open the selected source; CodePackr does not mirror copyrighted full text.
+- “Link checked” is explicitly a destination check, not certification of a legal proposition.
+- Focused tests are added in `tests/primary-source-finder.test.ts`.
+- Exit audit: `docs/PHASE-15-EXIT-AUDIT.md`
+- Official source destinations were checked against India Code, Supreme Court and eCourts services on 2026-10-01.
+- CI/build: **PENDING**.
+
+**Phase 15 status:** IMPLEMENTED / CI PENDING.
+
+**Next:** Phase 16 — Privacy and Local Storage.
