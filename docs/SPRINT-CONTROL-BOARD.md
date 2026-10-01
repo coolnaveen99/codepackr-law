@@ -2,8 +2,8 @@
 
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
-**Roadmap position:** Phase 2 — **CLOSED** · Phase 3 — **CLOSED** · Phase 4 — **CLOSED** · Phase 5 — **CLOSED** · Phase 6 — **CLOSED** · Phase 7 — **CLOSED** · Phase 8 — **CLOSED** · Phase 9 — **CLOSED** · Phase 10 — **CLOSED** · Phase 11 — **CLOSED** · Phase 12 — **CLOSED** · Phase 13 — **CLOSED** · Phase 14 — **CLOSED** · Phase 15 — **CLOSED** · Phase 16 — **CLOSED** · Phase 15 — **CLOSED**
-**Updated:** 2026-10-01 (Phase 16 Privacy and Local Storage completed and validated by CI #370; Phase 17 is next)
+**Roadmap position:** Phase 16 — **CLOSED** · Phase 18 — **CLOSED** · Phase 17 — **NEXT**
+**Updated:** 2026-10-01 (Phase 18 Legal Content Verification policy completed; Phase 17 remains the next executable implementation phase)
 
 ## Verified completed
 
@@ -371,7 +371,7 @@
 | TypeScript + production build | **PASS** — CI #365 |
 
 **Blocker:** None.  
-**Next action:** Phase 16 — Privacy and Local Storage.
+**Next action:** Phase 17 — AI Architecture.
 
 **Phase 15 status:** **CLOSED**.
 
@@ -400,3 +400,13 @@
 **Next action:** Phase 17 — AI Architecture.
 
 **Phase 16 status:** **CLOSED**.
+
+## Phase 18 — Legal Content Verification — COMPLETED (2026-10-01)
+
+**Exit audit:** `docs/PHASE-18-EXIT-AUDIT.md`
+
+The Phase 18 roadmap deliverable is complete: the verification policy defines required verification metadata, lifecycle statuses, legal-change review triggers, citation safety rules, transition-mapping rules, and user-provided judgment provenance. The audit records the scope limitation that corpus-wide individual verification/backfill remains future work.
+
+**Phase 18 status:** **CLOSED**.
+
+**Next executable phase:** Phase 17 — AI Architecture.
