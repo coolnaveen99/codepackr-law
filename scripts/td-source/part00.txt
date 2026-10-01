@@ -1,0 +1,152 @@
+import { useState, useEffect, useMemo } from 'react'
+import {
+  ArrowLeft,
+  BookOpen,
+  Scale,
+  Sparkles,
+  Copy,
+  Check,
+  ChevronDown,
+  ChevronUp,
+  Loader2,
+  PenLine,
+  Award,
+  Link2,
+  CheckCircle2,
+} from 'lucide-react'
+import type { LawSubjectMeta, LawTopic, CaseCitation } from '../../data/subjects'
+import {
+  getStudyBody,
+  getLegalBrief,
+  getWrittenSubmissions,
+  type TopicContent,
+} from '../../data/topics/loadTopicContent'
+import { getTopicContent } from '../../content/ContentGateway'
+import { Badge } from '../ui/Badge'
+import { RelatedKnowledge } from '../knowledge/RelatedKnowledge'
+import { RelatedCanonicalTopics } from './RelatedCanonicalTopics'
+import { RichLegalText } from '../knowledge/RichLegalText'
+import { ModularStudyRenderer } from './ModularStudyRenderer'
+import { knowledgeIdForTopic } from '../../data/knowledge'
+import {
+  setLastRead,
+  markTopicCompleted,
+  isTopicCompleted,
+  getProgress,
+} from '../../lib/progress'
+import { ALL_JUDGMENTS } from '../../data/judgments'
+import type { Judgment } from '../../data/judgments/types'
+
+interface TopicDetailProps {
+  subject: LawSubjectMeta
+  topic: LawTopic
+  onBack: () => void
+  onSelectTopic?: (topic: LawTopic) => void
+  onSelectTool?: (slug: string, params?: { subject?: string; topicId?: string; mode?: 'practice' | 'exam' }) => void
+  onOpenCaseLaw?: (judgmentId: string) => void
+}
+
+function topicTypeLabel(type: LawTopic['type']) {
+  switch (type) {
+    case 'article':
+      return 'Article'
+    case 'section':
+      return 'Section'
+    case 'chapter':
+      return 'Chapter'
+    case 'doctrine':
+      return 'Doctrine'
+    case 'act':
+      return 'Act'
+    case 'format':
+      return 'Format'
+    default:
+      return 'Theme'
+  }
+}
+
+function findJudgmentForCase(c: CaseCitation): Judgment | undefined {
+  const nameLower = c.name.toLowerCase()
+  return ALL_JUDGMENTS.find((j) => {
+    const jShort = j.shortName?.toLowerCase()
+    const jName = j.caseName.toLowerCase()
+    return (
+      (jShort && nameLower.includes(jShort)) ||
+      nameLower.includes(jName) ||
+      (c.citation && j.citation && c.citation.toLowerCase().includes(j.citation.toLowerCase()))
+    )
+  })
+}
+
+function catalogNeighbours(subject: LawSubjectMeta, topic: LawTopic) {
+  const list = subject.topics
+  const idx = list.findIndex((t) => t.id === topic.id)
+  if (idx < 0) return { prev: undefined, next: undefined }
+  return {
+    prev: idx > 0 ? list[idx - 1] : undefined,
+    next: idx < list.length - 1 ? list[idx + 1] : undefined,
+  }
+}
+
+export function TopicDetail({
+  subject,
+  topic,
+  onBack,
+  onSelectTopic,
+  onSelectTool,
+  onOpenCaseLaw,
+}: TopicDetailProps) {
+  const [copiedCaseId, setCopiedCaseId] = useState<string | null>(null)
+  const [tipsOpen, setTipsOpen] = useState(true)
+  const [content, setContent] = useState<TopicContent | null>(null)
+  const [loading, setLoading] = useState(true)
+  const [studyComplete, setStudyComplete] = useState(false)
+  const [activeSection, setActiveSection] = useState('study-topic')
+
+  const [expandedBrief, setExpandedBrief] = useState(true)
+  const [expandedSubmissions, setExpandedSubmissions] = useState(true)
+  const [copiedBrief, setCopiedBrief] = useState(false)
+  const [copiedSubmissions, setCopiedSubmissions] = useState(false)
+
+  // 3.1 Persist last-read on mount & sync completion
+  useEffect(() => {
+    setStudyComplete(isTopicCompleted(subject.slug, topic.id))
+    setLastRead(subject.slug, topic.id)
+  }, [subject.slug, topic.id])
+
+  useEffect(() => {
+    let cancelled = false
+    setLoading(true)
+    setContent(null)
+
+    getTopicContent(subject.slug, topic.id).then((record) => {
+      if (!cancelled) {
+        setContent((record?.content as TopicContent | undefined) ?? null)
+        setLoading(false)
+      }
+    })
+
+    return () => {
+      cancelled = true
+    }
+  }, [subject.slug, topic.id])
+
+  const studyContent = getStudyBody(content)
+  const hasContent = Boolean(studyContent)
+  const hasCases = (content?.cases?.length ?? 0) > 0
+  const knowledgeId = knowledgeIdForTopic(subject.slug, topic.id)
+  const neighbours = useMemo(() => catalogNeighbours(subject, topic), [subject, topic])
+  const legalBrief = getLegalBrief(content)
+  const writtenSubmissions = getWrittenSubmissions(content)
+  const statutoryExamples = (content?.examples ?? []).filter(
+    (example) => /^Illustration/i.test(example.title || '') || example.illustrationType === 'statutory',
+  )
+  const teachingExamples = (content?.examples ?? []).filter(
+    (example) => !/^Illustration/i.test(example.title || '') && example.illustrationType !== 'statutory',
+  )
+  const hasIllustrations = statutoryExamples.length > 0
+  const hasModularSections = (content?.sections?.length ?? 0) > 0
+  const hasDistinctions = (content?.distinctions?.length ?? 0) > 0 || (content?.misconceptions?.length ?? 0) > 0
+  const hasExamTips = (content?.examTips?.length ?? 0) > 0 || (content?.revisionPoints?.length ?? 0) > 0
+
+  // 3.7 Explicit User Mark Complete Control
