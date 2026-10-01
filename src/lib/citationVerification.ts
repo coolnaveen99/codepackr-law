@@ -29,6 +29,44 @@ import { resolveOfficialSources, type OfficialSourceLink } from './authorityNetw
 
 export { resolveOfficialSources } from './authorityNetwork'
 
+export type { CitationStatus, CitationStyle } from './citationParser'
+
+export interface MatchedRecord {
+  id: string
+  caseName: string
+  court: string
+  year: number | string
+  citation: string
+  neutralCitation?: string
+  source: 'canonical' | 'landmark' | 'manual'
+  canonicalEntityId?: string
+  confidence: number
+  officialUrl?: string
+  summary?: string
+  ratioDecidendi?: string
+  subject?: string
+}
+
+export interface VerifiedCitation {
+  raw: string
+  normalizedCitation?: string
+  style: CitationStyle
+  caseName?: string
+  court?: string
+  courtHint?: string
+  year?: string
+  volume?: string
+  reporter?: string
+  page?: string
+  neutralCourt?: string
+  neutralIndex?: string
+  status: CitationStatus
+  confidence: number
+  matchedRecord?: MatchedRecord
+  notes: string[]
+  officialSources: OfficialSourceLink[]
+}
+
 function cleanTokens(str: string): string[] {
   return str
     .toLowerCase()
