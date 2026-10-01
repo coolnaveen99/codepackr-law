@@ -109,23 +109,12 @@ function isSessionShape(value: unknown): value is ResearchSession {
   return v.version === 1 && !!v.question && !!v.issues && Array.isArray(v.authorities)
 }
 
-/** Load session from localStorage; returns empty session if missing/invalid. */
 export function loadResearchSession(): ResearchSession {
-  const raw = loadJson<ResearchSession>(RESEARCH_SESSION_KEY)
-  if (raw && isSessionShape(raw)) {
-    return {
-      ...emptyResearchSession(),
-      ...raw,
-      question: { ...emptyResearchSession().question, ...raw.question },
-      issues: { ...emptyResearchSession().issues, ...raw.issues },
-      authorities:
-        raw.authorities.length > 0 ? raw.authorities : [emptyAuthorityRow()],
-    }
-  }
+  const raw = loadJson<unknown>(RESEARCH_SESSION_KEY, null)
+  if (isSessionShape(raw)) return raw
   return emptyResearchSession()
 }
 
-/** Persist session (updates updatedAt). */
 export function saveResearchSession(session: ResearchSession): ResearchSession {
   const next: ResearchSession = {
     ...session,
@@ -144,66 +133,111 @@ export function clearResearchSession(): void {
 export function researchNoteFromSession(session: ResearchSession): string {
   const q = session.question
   const issues = session.issues
+  const authorityBlocks = session.authorities
+    .filter((r) => r.caseName || r.citation)
+    .map((r, i) => {
+      const lines = [
+        `### ${i + 1}. ${r.caseName || 'Unnamed authority'}`,
+        r.court ? `- **Court:** ${r.court}` : '',
+        r.date ? `- **Date:** ${r.date}` : '',
+        r.citation ? `- **Citation:** ${r.citation}` : '',
+        r.statute ? `- **Statute / provision:** ${r.statute}` : '',
+        r.issue ? `- **Issue:** ${r.issue}` : '',
+        r.holding ? `- **Holding / note:** ${r.holding}` : '',
+        r.paragraph ? `- **Para / pin cite:** ${r.paragraph}` : '',
+        r.treatment ? `- **Treatment:** ${r.treatment}` : '',
+        r.source ? `- **Source:** ${r.source}` : '',
+        `- **Verification status:** ${r.verification}`,
+      ].filter(Boolean)
+      return lines.join('\n')
+    })
+
   const lines = [
-    '# Research Note (browser-local)',
+    '# Research Note',
     '',
-    '## 1. Question Presented',
+    '> **Browser-local only.** Educational research aid — not legal advice. Verify every citation on official sources before reliance.',
+    '',
+    `*Session updated:* ${session.updatedAt}`,
+    '',
+    '## 1. Question presented',
+    '',
     q.question || '—',
     '',
-    `Jurisdiction: ${q.jurisdiction || '—'}`,
-    q.courtLevel ? `Court level: ${q.courtLevel}` : '',
-    q.subjectSlug ? `Subject: ${q.subjectSlug}` : '',
-    q.act ? `Act: ${q.act}` : '',
-    q.section ? `Section: ${q.section}` : '',
-    q.dateFrom || q.dateTo ? `Date range: ${q.dateFrom || '…'} – ${q.dateTo || '…'}` : '',
+    '### Matter filters',
     '',
-    '## 2. Short Answer',
+    `- **Jurisdiction:** ${q.jurisdiction || '—'}`,
+    q.courtLevel ? `- **Court level:** ${q.courtLevel}` : '',
+    q.subjectSlug ? `- **Subject:** ${q.subjectSlug}` : '',
+    q.act ? `- **Act:** ${q.act}` : '',
+    q.section ? `- **Section:** ${q.section}` : '',
+    q.dateFrom || q.dateTo
+      ? `- **Date range:** ${q.dateFrom || '…'} – ${q.dateTo || '…'}`
+      : '',
+    '',
+    '## 2. Short answer',
+    '',
     session.shortAnswer || '—',
     '',
     '## 3. Issues',
-    `Primary: ${issues.primary || '—'}`,
-    issues.secondary.length ? `Secondary: ${issues.secondary.join('; ')}` : '',
-    issues.statutory.length ? `Statutory: ${issues.statutory.join('; ')}` : '',
-    issues.procedural.length ? `Procedural: ${issues.procedural.join('; ')}` : '',
-    issues.evidence.length ? `Evidence: ${issues.evidence.join('; ')}` : '',
-    issues.limitation.length ? `Limitation: ${issues.limitation.join('; ')}` : '',
     '',
-    '## 4. Authorities',
-    ...session.authorities
-      .filter((r) => r.caseName || r.citation)
-      .map((r, i) => {
-        const parts = [
-          `${i + 1}. ${r.caseName || 'Unnamed'}`,
-          r.court || '',
-          r.date ? `Date: ${r.date}` : '',
-          r.citation || '',
-          r.statute || '',
-          r.issue ? `Issue: ${r.issue}` : '',
-          r.holding ? `Holding: ${r.holding}` : '',
-          r.paragraph ? `Para: ${r.paragraph}` : '',
-          r.treatment ? `Treatment: ${r.treatment}` : '',
-          r.source ? `Source: ${r.source}` : '',
-          `Status: ${r.verification}`,
-        ].filter(Boolean)
-        return parts.join(' | ')
-      }),
+    `- **Primary:** ${issues.primary || '—'}`,
+    issues.secondary.length ? `- **Secondary:** ${issues.secondary.join('; ')}` : '',
+    issues.statutory.length ? `- **Statutory:** ${issues.statutory.join('; ')}` : '',
+    issues.procedural.length ? `- **Procedural:** ${issues.procedural.join('; ')}` : '',
+    issues.evidence.length ? `- **Evidence:** ${issues.evidence.join('; ')}` : '',
+    issues.limitation.length ? `- **Limitation:** ${issues.limitation.join('; ')}` : '',
+    '',
+    '## 4. Authority matrix',
+    '',
+    ...(authorityBlocks.length ? authorityBlocks : ['—']),
     '',
     '## 5. Analysis',
+    '',
     session.analysis || '—',
     '',
-    '## 6. Counter-authorities',
+    '## 6. Counter-authorities and contrary views',
+    '',
     session.counterAuthorities || '—',
     '',
     '## 7. Unresolved questions',
+    '',
     session.unresolved || '—',
     '',
     '## 8. Verification checklist',
+    '',
     '- [ ] Primary statute text checked on India Code / official source',
     '- [ ] Citations opened on court site or reliable reporter',
     '- [ ] Ratio distinguished from obiter',
     '- [ ] Current-law / amendment status confirmed',
+    '- [ ] Paragraph / pin cites verified against the full text',
     '',
-    `_AI-free structured note. Saved locally ${session.updatedAt}. Not legal advice._`,
+    '---',
+    '',
+    '_Structured note generated in Research Workbench. Data stays on this device unless you export it._',
   ]
   return lines.filter((l) => l !== '').join('\n')
+}
+
+/** Filename-safe stem for research note download (PH3-040). */
+export function researchNoteFilename(session: ResearchSession): string {
+  const day = new Date().toISOString().slice(0, 10)
+  const act = (session.question.act || session.question.section || 'research')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+    .slice(0, 40)
+  return `research-note-${act || 'session'}-${day}.md`
+}
+
+/** Trigger browser download of the markdown research note (client-side only). */
+export function downloadResearchNoteMarkdown(session: ResearchSession): void {
+  if (typeof document === 'undefined') return
+  const text = researchNoteFromSession(session)
+  const blob = new Blob([text], { type: 'text/markdown;charset=utf-8' })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  a.download = researchNoteFilename(session)
+  a.click()
+  URL.revokeObjectURL(url)
 }
