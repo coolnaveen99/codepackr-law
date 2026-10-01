@@ -7,6 +7,7 @@ import {
   resolveOfficialSources,
 } from '../src/lib/citationVerification'
 import { parseCitation } from '../src/lib/citationParser'
+import { buildCitationPayload } from '../src/lib/citationHandoff'
 
 describe('PH4-020 Citation Verification Engine — Landmark Corpus Matching', () => {
   it('verifies landmark case by exact citation (Kesavananda Bharati)', () => {
@@ -168,5 +169,22 @@ describe('PH4-020 Citation Verification Engine — Batch and Async Operations', 
     const res = await verifyCitation('(1973) 4 SCC 225')
     assert.equal(res.status, 'verified')
     assert.equal(res.matchedRecord?.id, 'kesavananda-bharati-1973')
+  })
+})
+
+
+describe('PH4-050 verifier workflow contracts', () => {
+  it('builds a deduplicated citation payload for Workbench handoff', () => {
+    const payload = buildCitationPayload([
+      { id: '1', caseName: 'Kesavananda Bharati v. State of Kerala', citation: '(1973) 4 SCC 225', court: '', statute: '', issue: '', holding: '', verification: 'user-provided' },
+      { id: '2', caseName: 'Kesavananda Bharati v. State of Kerala', citation: '(1973) 4 SCC 225', court: '', statute: '', issue: '', holding: '', verification: 'user-provided' },
+      '(1997) 6 SCC 241',
+    ])
+    assert.equal(payload, 'Kesavananda Bharati v. State of Kerala, (1973) 4 SCC 225\n(1997) 6 SCC 241')
+  })
+
+  it('keeps status filters aligned with the five-tier verification model', () => {
+    const results = verifyCitationListSync('(1973) 4 SCC 225\n2023 INSC 99999\nRandom Private Petitioner v. Private Commercial Respondent')
+    assert.deepEqual(results.map((result) => result.status), ['verified', 'not-verified', 'user-provided'])
   })
 })
