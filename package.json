@@ -14,6 +14,7 @@
     "audit": "npx tsx scripts/audit_subjects.ts",
     "validate:topics": "npx tsx scripts/validate_topics.ts",
     "validate:judgments": "npx tsx scripts/validate_judgments.ts",
+    "validate:content": "npx tsx scripts/validate_content.ts",
     "test": "npx tsx --test tests/*.test.ts",
     "test:run": "npx tsx --test tests/*.test.ts",
     "parity:legal-content": "node scripts/parity-legal-content.mjs"

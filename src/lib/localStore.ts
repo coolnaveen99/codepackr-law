@@ -116,3 +116,55 @@ export function storageUsageEstimate(): { usedBytes: number; keys: number } {
   }
   return { usedBytes, keys }
 }
+
+/**
+ * Safely migrates data from a legacy or older-version key to a target key.
+ * Preserves target data if target already exists unless overwrite is true.
+ * Cleans up oldKey on successful migration.
+ */
+export function migrateStorageKey(
+  oldKey: string,
+  newKey: string,
+  options?: { overwrite?: boolean; transform?: (oldVal: unknown) => unknown }
+): boolean {
+  try {
+    const rawOld = localStorage.getItem(oldKey)
+    if (rawOld == null) return false
+    const rawNew = localStorage.getItem(newKey)
+    if (rawNew != null && !options?.overwrite) return false
+
+    let parsed: unknown
+    try {
+      parsed = JSON.parse(rawOld)
+    } catch {
+      parsed = rawOld
+    }
+
+    const transformed = options?.transform ? options.transform(parsed) : parsed
+    saveJson(newKey, transformed)
+    removeKey(oldKey)
+    return true
+  } catch {
+    return false
+  }
+}
+
+/**
+ * Batch migrates multiple legacy key pairs.
+ */
+export function migrateNamespaces(
+  migrations: Record<string, string>,
+  options?: { overwrite?: boolean }
+): { migrated: string[]; skipped: string[] } {
+  const migrated: string[] = []
+  const skipped: string[] = []
+  for (const [oldKey, newKey] of Object.entries(migrations)) {
+    if (migrateStorageKey(oldKey, newKey, options)) {
+      migrated.push(oldKey)
+    } else {
+      skipped.push(oldKey)
+    }
+  }
+  return { migrated, skipped }
+}
+
