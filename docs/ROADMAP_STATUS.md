@@ -223,3 +223,24 @@ Implementation is complete via PR #86, merged to `main` as `63c930304739bc6dbb2b
 **Phase 15 status:** CLOSED.
 
 **Next:** Phase 16 — Privacy and Local Storage.
+
+
+## Phase 17 — AI Architecture
+
+Implemented the roadmap §22 AI architecture contract without adding a production AI provider.
+
+- Added `src/lib/aiArchitecture.ts`.
+- Defines the source-grounded response contract: answer, sources, evidence/location, verification status, uncertainty and next verification step.
+- Enforces explicit labels: `AI-generated`, `source-grounded`, `user-provided`, `verified`, `needs-review`.
+- Reuses the deterministic `verifyCitationSync` engine for citation-bearing output.
+- Unverified or conflicting citations cannot produce a verified response.
+- Provides an explicit unverified-research fallback and never converts “not found” into “does not exist”.
+- Explicitly disables authoritative-AI, judicial-outcome prediction, judge-bias scoring, conviction prediction, winner prediction and silent legal-text telemetry.
+- No production AI endpoint/provider was introduced.
+- Focused tests: `tests/ai-architecture.test.ts`.
+- Exit audit: `docs/PHASE-17-EXIT-AUDIT.md`.
+- CI/build: **PASS** — CI #374 (TypeScript, unit tests, production build)..
+
+**Phase 17 status:** CLOSED pending merge verification.
+
+**Next:** Phase 18 — Legal Content Verification.

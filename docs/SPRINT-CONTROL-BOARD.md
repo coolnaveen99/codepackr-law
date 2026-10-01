@@ -71,6 +71,8 @@
 | PH13-010 | Advocate Practice Dashboard implementation | **COMPLETED** | P0 |
 | PH13-100 | Phase 13 exit audit | **COMPLETED** | P0 |
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
+| PH17-010 | AI Architecture contract implementation | **COMPLETED** | P1 |
+| PH17-100 | Phase 17 exit audit | **COMPLETED** | P0 |
 
 ### PH4-040 — COMPLETED (2026-10-01)
 
@@ -410,3 +412,28 @@ The Phase 18 roadmap deliverable is complete: the verification policy defines re
 **Phase 18 status:** **CLOSED**.
 
 **Next executable phase:** Phase 17 — AI Architecture.
+
+
+## Phase 17 — AI Architecture — COMPLETED (2026-10-01)
+
+**Implementation:** PR pending  
+**Exit audit:** `docs/PHASE-17-EXIT-AUDIT.md`  
+**Validation:** CI **#374** — TypeScript PASS, unit tests PASS, production build PASS.
+
+| Check | Result |
+|---|---|
+| AI assistive / never authoritative contract | **PASS** |
+| Source-grounded response contract | **PASS** |
+| Required response labels | **PASS** |
+| Citation verification reuse | **PASS** |
+| Unverified-source fallback | **PASS** |
+| Conflict handling | **PASS** |
+| Predictive/bias restrictions | **PASS** |
+| Privacy / no production AI endpoint | **PASS** |
+| Focused tests | **PASS — CI #374** |
+| TypeScript + production build | **PASS — CI #374** |
+
+**Blocker:** None known; CI is the merge gate.  
+**Next action:** Phase 18 — Legal Content Verification.
+
+**Phase 17 status:** **CLOSED pending merge verification**.
