@@ -436,6 +436,7 @@ export function CaseLawLibrary({
           })
         }
         onOpenJudgment={onOpenJudgment}
+        hasRelatedJudgment={(id) => judgmentsById.has(id)}
         onOpenTopic={onOpenTopic}
       />
     )
@@ -691,6 +692,7 @@ function JudgmentReader({
   onToggleBookmark: () => void
   onMarkSection: (section: string) => void
   onOpenJudgment: (id: string) => void
+  hasRelatedJudgment: (id: string) => boolean
   onOpenTopic?: (subjectSlug: string, topicId: string) => void
 }) {
   const completed = new Set(progress[judgment.id] || [])
@@ -1000,7 +1002,7 @@ function JudgmentReader({
                     {related.relationship || 'Related reference'}
                     {related.citation ? ` · ${related.citation}` : ''}
                   </p>
-                  {related.judgmentId && judgmentsById.has(related.judgmentId) && (
+                  {related.judgmentId && hasRelatedJudgment(related.judgmentId) && (
                     <button
                       type="button"
                       onClick={() => onOpenJudgment(related.judgmentId!)}
