@@ -29,7 +29,7 @@ const source = 'Central baseline; verify current court/state rules'
 const common = (id:string, requirement:string, why:string, src=source, mandatory:'mandatory'|'conditional'='mandatory'):ChecklistItem => ({id,requirement,why,source:src,mandatory,layer:'central'})
 
 export const FILING_CHECKLISTS: FilingChecklist[] = [
- {id:'civil-suit',title:'Civil suit / plaint',forum:'Civil Court',documentType:'Plaint',lastReviewed:'2026-10-01',sourceUrl:'https://filing.ecourts.gov.in/',disclaimer:'Central educational baseline. Court fees, registry practice, e-filing requirements and local rules vary.',items:[
+ {id:'civil-suit',title:'Civil suit / plaint',forum:'Civil Court',documentType:'Plaint',lastReviewed:'2026-10-01',sourceUrl:'https://filing.ecourts.gov.in/',disclaimer:'Central educational baseline. Court fees, registry practice, e-filing requirements and local rules vary; verify them before filing.',items:[
   common('cause-title','Cause title, parties and jurisdiction facts','Identify parties and competent forum','CPC Order VII r.1'),
   common('cause-action','Material facts and cause of action','Pleading must disclose the cause of action','CPC Order VII'),
   common('valuation','Relief valuation and court-fee basis','Registry/fee compliance','Applicable Court Fees law','conditional'),
