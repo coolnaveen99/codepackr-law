@@ -129,15 +129,17 @@ export function analyzeJudgmentText(text: string, inputKind: JudgmentAnalysis['i
     const bodyLines = lines.slice(bodyStart - 1, bodyEnd)
     const value = bodyLines.join('\n').trim()
     sections[heading.key] = value
+    const lastContentOffset = bodyLines.reduce((last, line, index) => (line.trim() ? index : last), -1)
+    const spanEndLine = lastContentOffset >= 0 ? bodyStart + lastContentOffset : bodyEnd
 
     if (value) {
       spans.push({
         section: heading.key,
         text: value,
         startLine: bodyStart,
-        endLine: bodyEnd,
+        endLine: spanEndLine,
         startParagraph: paragraphNumberAtLine(paragraphs, bodyStart),
-        endParagraph: paragraphNumberAtLine(paragraphs, bodyEnd),
+        endParagraph: paragraphNumberAtLine(paragraphs, spanEndLine),
         confidence: 'high',
         source: 'user-provided',
         interpretation: 'generated-structure',
