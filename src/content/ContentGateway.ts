@@ -31,7 +31,17 @@ export function getContentGatewayDeployMarker(): string {
   return CONTENT_GATEWAY_DEPLOY_MARKER
 }
 
+function stampDeployMarker(): void {
+  if (typeof document === 'undefined') return
+  try {
+    document.documentElement.dataset.cpGateway = CONTENT_GATEWAY_DEPLOY_MARKER
+  } catch {
+    // ignore non-DOM environments
+  }
+}
+
 export async function getTopicContent(subjectSlug: string, topicId: string): Promise<TopicContentRecord | null> {
+  stampDeployMarker()
   const canonical = await repository.getTopic(subjectSlug, topicId)
   if (canonical && canonical.status === 'published') {
     const mapped = mapCanonicalTopicToLegacy(canonical)
