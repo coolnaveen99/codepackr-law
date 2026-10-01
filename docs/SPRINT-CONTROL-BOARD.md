@@ -687,3 +687,19 @@ The Phase 18 roadmap deliverable is complete: the verification policy defines re
 | CI quality gate | **PASS** — CI #36900020598 |
 
 **Phase 29 status:** **CLOSED** — CI #36900020598 passed dependency audit, TypeScript, unit tests and production build.
+
+
+## Phase 30 — Performance — IN PROGRESS
+
+| Check | Result |
+|---|---|
+| Lazy topic collections | **PASS** — `import.meta.glob(..., { eager: false })` |
+| Lazy judgment corpus | **IMPLEMENTED** — new `src/data/judgments/lazy.ts` and Case Law Library integration |
+| Memoized filters | **PASS** — existing useMemo coverage |
+| Virtualization | **GUIDANCE** — no current >200-row interactive surface requires a virtualization dependency |
+| Draft catalogue first-paint isolation | **PASS** — catalog metadata is separated from full draft content |
+| Web Workers | **DEFERRED** — no proven heavy processing path requiring a worker |
+| Focused performance test | **PASS** |
+| CI quality gate | **PENDING** |
+
+**Phase 30 status:** IN PROGRESS until CI passes.
