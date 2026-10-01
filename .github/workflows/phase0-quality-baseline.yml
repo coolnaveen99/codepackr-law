@@ -1,0 +1,55 @@
+name: Law Phase 0 — Full Quality Baseline
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+concurrency:
+  group: phase0-quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  baseline:
+    name: Phase 0 Full Quality Baseline
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout Law
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      - name: TypeScript lint
+        run: npm run lint
+
+      - name: Subject coverage checklist
+        run: npm run checklist
+
+      - name: Repository audit
+        run: npm run audit
+
+      - name: Topic integrity
+        run: npm run validate:topics
+
+      - name: Judgment integrity
+        run: npm run validate:judgments
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Production build
+        run: npm run build
