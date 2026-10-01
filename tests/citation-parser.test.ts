@@ -4,6 +4,8 @@ import {
   parseCitation,
   parseCitationList,
   normalizeCitationKey,
+  extractCitationsFromDocument,
+  scanDocumentCitationSpans,
   NEUTRAL_BENCH_MAP,
   SCC_ONLINE_BENCH_MAP,
 } from '../src/lib/citationParser'
@@ -191,5 +193,62 @@ describe('PH4-010 Extended Citation Parser — Fallback & anti-hallucination rul
     const norm1 = normalizeCitationKey('(2020) 5 SCC 1')
     const norm2 = normalizeCitationKey('[2020] 5 SCC 1')
     assert.equal(norm1, norm2)
+  })
+})
+
+describe('PH4-030 Document citation extractor', () => {
+  const SAMPLE_PROSE = `
+    The Court relied on Kesavananda Bharati v. State of Kerala, (1973) 4 SCC 225,
+    and the procedure analysis in Maneka Gandhi v. Union of India, AIR 1978 SC 597.
+    Later neutral citation practice appears in Association for Democratic Reforms
+    v. Union of India, 2024 INSC 113. High Court electronic reports include
+    2022 SCC OnLine Del 108. SCR illustrations include [1950] SCR 88.
+  `
+
+  it('extracts multiple citations from continuous judgment prose', () => {
+    const hits = extractCitationsFromDocument(SAMPLE_PROSE)
+    assert.ok(hits.length >= 4, `expected >=4 citations, got ${hits.length}`)
+    assert.ok(hits.some((h) => h.style === 'scc' || h.reporter === 'SCC'))
+    assert.ok(hits.some((h) => h.style === 'air' || /AIR/i.test(h.raw)))
+    assert.ok(hits.some((h) => h.style === 'neutral' || /INSC/i.test(h.raw)))
+    assert.ok(hits.some((h) => h.style === 'scc-online' || /OnLine/i.test(h.raw)))
+  })
+
+  it('attaches case name prefixes when present before the reporter citation', () => {
+    const hits = extractCitationsFromDocument(
+      'Relying on Kesavananda Bharati v. State of Kerala, (1973) 4 SCC 225 the Bench held…',
+    )
+    assert.ok(hits.length >= 1)
+    assert.equal(hits[0].style, 'scc')
+    assert.match(hits[0].caseName || '', /Kesavananda/i)
+  })
+
+  it('deduplicates repeated citations in the same document', () => {
+    const hits = extractCitationsFromDocument(
+      'See (1973) 4 SCC 225. Earlier discussion of (1973) 4 SCC 225 remains controlling.',
+    )
+    const scc = hits.filter((h) => h.style === 'scc' && h.page === '225')
+    assert.equal(scc.length, 1)
+  })
+
+  it('falls back to line-oriented list when prose has no reporter patterns', () => {
+    const hits = extractCitationsFromDocument(
+      'Maneka Gandhi v. Union of India\nKesavananda Bharati v. State of Kerala',
+    )
+    assert.ok(hits.length >= 2)
+    assert.ok(hits.every((h) => h.style === 'name-only' || h.caseName))
+  })
+
+  it('scanDocumentCitationSpans returns ordered non-overlapping spans', () => {
+    const spans = scanDocumentCitationSpans(SAMPLE_PROSE)
+    assert.ok(spans.length >= 4)
+    for (let i = 1; i < spans.length; i++) {
+      assert.ok(spans[i].start >= spans[i - 1].end, 'spans must not overlap and stay ordered')
+    }
+  })
+
+  it('returns empty array for empty input', () => {
+    assert.deepEqual(extractCitationsFromDocument(''), [])
+    assert.deepEqual(scanDocumentCitationSpans('   '), [])
   })
 })
