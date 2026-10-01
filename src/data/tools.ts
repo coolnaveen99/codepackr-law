@@ -373,7 +373,7 @@ export const TOOLS: ToolMetadata[] = [
     slug: 'research-bundle',
     name: 'Senior Counsel Research Bundle',
     category: 'reference',
-    description: 'Assemble issue matrix, authorities, chronology, evidence and verification checklist into a Markdown export.',
+    description: 'Assemble research question, issues, statutes, authorities, case summaries, chronology, evidence, arguments, counter-authorities and verification checklist into Markdown, TXT, DOCX or PDF.',
     keywords: ['research bundle', 'export', 'senior counsel', 'argument matrix'],
     icon: 'Package',
     badge: 'P1',

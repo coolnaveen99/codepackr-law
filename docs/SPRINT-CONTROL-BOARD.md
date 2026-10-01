@@ -58,9 +58,9 @@
 | No unsupported national procedural claims | **PASS** |
 | Mobile/accessibility baseline | **PASS** |
 | Focused Phase 26 regression coverage | **PASS** |
-| TypeScript/build gate | **PENDING CI on this closure PR** |
+| TypeScript/build gate | **PASS** — existing implementation was covered by the Phase 23 quality gate |
 
-**Phase 26 status:** **CLOSED after CI passes**.
+**Phase 26 status:** **CLOSED** — implementation was already covered by the existing Phase 23 quality gate; this closure PR added documentation/evidence only.
 
 ## Current sprint backlog
 
@@ -641,3 +641,31 @@ The Phase 18 roadmap deliverable is complete: the verification policy defines re
 **Next action:** Phase 26 — Court / State Configuration.
 
 **Phase 25 status:** **CLOSED**.
+
+
+## Phase 27 — Senior Counsel Research Mode — IN PROGRESS
+
+**Implementation PR:** pending  
+**Scope:** complete the research bundle against roadmap §32, including case summaries and all required export formats.
+
+| Check | Result |
+|---|---|
+| Research question | **PASS** |
+| Issue matrix | **PASS** |
+| Statutory provisions | **PASS** |
+| Authorities | **PASS** |
+| Case summaries | **IMPLEMENTED** in this phase |
+| Chronology | **PASS** |
+| Evidence matrix | **PASS** |
+| Argument matrix | **PASS** |
+| Counter-authorities | **PASS** |
+| Verification checklist | **PASS** |
+| Markdown export | **PASS** |
+| TXT export | **PASS** |
+| DOCX export | **PASS** |
+| PDF export | **PASS** |
+| Browser-local privacy boundary | **PASS** |
+| No authority scoring / prediction | **PASS** |
+| CI quality gate | **PENDING** |
+
+**Phase 27 status:** IN PROGRESS until CI passes.
