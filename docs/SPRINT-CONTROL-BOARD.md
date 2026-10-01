@@ -17,6 +17,7 @@
 | PH4-020 | **COMPLETED** | Verification engine matching against canonical manifest & `ALL_JUDGMENTS` |
 | PH4-030 | **COMPLETED** | Document multi-citation extractor (`extractCitationsFromDocument`) + Verifier document sample + tests |
 | PH4-040 | **COMPLETED** | Authority network & official portal link generator (e-SCR, SCR search, SCI judgments, expanded HC map, eCourts, India Code) |
+| PH4-050 | **COMPLETED** | Citation Verifier dashboard, five-tier filtering, and Workbench roundtrip |
 | PH4-100 | **COMPLETED** | Phase 4 exit audit — V1–V10 all PASS (`docs/PHASE-4-EXIT-AUDIT.md`) |
 
 ## Current sprint backlog
@@ -85,4 +86,4 @@
 | TypeScript + production build | **PASS** — CI run #302 |
 
 **Blocker:** None for PH4-050.  
-**Next action:** Execute **PH4-100 Phase 4 exit audit (V1–V10)**; do not start unrelated Phase 5 work before the Phase 4 exit gate is evaluated.
+**Next action:** Phase 4 is closed; define the next executable **Phase 5 — Judgment Analyzer** task from roadmap §10 before implementation.
