@@ -250,7 +250,7 @@ export function LegalDraftStudio() {
                   </div>
                   <div className="mt-1 text-[10px] leading-4 text-[color:var(--ink-muted)]">{t.statute}</div>
                   <div className="mt-1 flex flex-wrap gap-1.5 text-[9px] font-bold">
-                    <span className="rounded-full bg-slate-100 px-2 py-1">{getDraftTier(t.status, t.tier) === 'reviewed' ? 'Reviewed' : 'Scaffold'}</span>
+                    <span className="rounded-full bg-slate-100 px-2 py-1">{getDraftTier(undefined, t.tier) === 'reviewed' ? 'Reviewed' : 'Scaffold'}</span>
                     {usage.recentlyUsed.includes(t.id) && <span className="rounded-full bg-slate-100 px-2 py-1">Recently used</span>}
                   </div>
                 </button>
@@ -264,7 +264,7 @@ export function LegalDraftStudio() {
                 <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-xs leading-5 text-amber-950">
                   <strong>Use carefully:</strong> {template.disclaimer}
                   <div className="mt-2 grid gap-2 sm:grid-cols-2">
-                    <div><strong>Tier:</strong> {getDraftTier(template.status, template.tier) === 'reviewed' ? 'Reviewed full draft' : 'Educational scaffold / catalogue'}</div>
+                    <div><strong>Tier:</strong> {getDraftTier(undefined, template.tier) === 'reviewed' ? 'Reviewed full draft' : 'Educational scaffold / catalogue'}</div>
                     <div><strong>Last reviewed:</strong> {template.lastReviewed || 'Not recorded'}</div>
                     <div><strong>Applicable Act:</strong> {template.statute}</div>
                     <div><strong>Relevant sections:</strong> {template.relevantSections?.join(', ') || 'Verify from the applicable law'}</div>
