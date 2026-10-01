@@ -390,3 +390,10 @@ The neutral-analysis surface now explicitly exposes the roadmap extraction/organ
 Phase 29 hardening is being applied to actual local upload boundaries, not just documented. Shared validation now enforces a 10 MB default limit, extension allow-lists, blocked executable extensions and MIME checks. Document Compare no longer advertises unsupported PDF upload handling.
 
 **Exit audit:** `docs/PHASE-29-EXIT-AUDIT.md`.
+
+
+## Phase 30 — Performance (IN PROGRESS)
+
+A real lazy judgment loader was added to the Case Law Library so the large judgment corpus is not eagerly imported by that surface. Existing topic content already uses Vite's lazy `import.meta.glob` pattern; filter-heavy tools use memoization.
+
+**Exit audit:** `docs/PHASE-30-EXIT-AUDIT.md`.
