@@ -12,7 +12,7 @@ export type DraftField = {
   required?: boolean
 }
 
-export type DraftTier = 'reviewed' | 'scaffold'
+export type DraftTier = 'verified' | 'scaffold'
 
 export type DraftTemplate = {
   id: string
@@ -51,6 +51,7 @@ export const DRAFT_TEMPLATES: DraftTemplate[] = [
     description: 'Skeleton for regular bail after arrest before Court of Session / High Court. Uses S. 483 BNSS — not S. 480.',
     disclaimer: DISCLAIMER,
     lastReviewed: '2026-09-29',
+    tier: 'verified',
     fields: [
       { key: 'court', label: 'Court name', placeholder: 'District & Sessions Judge at ___', required: true },
       { key: 'place', label: 'Place', required: true },
@@ -80,6 +81,7 @@ export const DRAFT_TEMPLATES: DraftTemplate[] = [
     description: 'Skeleton for regular bail in non-bailable offences before the Magistrate under S. 480 BNSS.',
     disclaimer: DISCLAIMER,
     lastReviewed: '2026-09-29',
+    tier: 'verified',
     fields: [
       { key: 'court', label: 'Court name', required: true },
       { key: 'place', label: 'Place', required: true },
@@ -106,6 +108,7 @@ export const DRAFT_TEMPLATES: DraftTemplate[] = [
     description: 'General formal legal notice structure.',
     disclaimer: DISCLAIMER,
     lastReviewed: '2026-09-29',
+    tier: 'verified',
     fields: [
       { key: 'advocate', label: 'Advocate name', required: true },
       { key: 'client', label: 'Client / sender', required: true },
@@ -127,6 +130,7 @@ export const DRAFT_TEMPLATES: DraftTemplate[] = [
     description: 'Demand notice structure before a s. 138 complaint.',
     disclaimer: DISCLAIMER,
     lastReviewed: '2026-09-29',
+    tier: 'verified',
     fields: [
       { key: 'advocate', label: 'Advocate name', required: true },
       { key: 'client', label: 'Payee / complainant', required: true },
@@ -149,6 +153,7 @@ export const DRAFT_TEMPLATES: DraftTemplate[] = [
     description: 'Generic supporting affidavit skeleton.',
     disclaimer: DISCLAIMER,
     lastReviewed: '2026-09-29',
+    tier: 'verified',
     fields: [
       { key: 'court', label: 'Court', required: true },
       { key: 'causeTitle', label: 'Cause title', multiline: true, required: true },
@@ -167,6 +172,7 @@ export const DRAFT_TEMPLATES: DraftTemplate[] = [
     description: 'Structural plaint heads under O.7 R.1.',
     disclaimer: DISCLAIMER,
     lastReviewed: '2026-09-29',
+    tier: 'verified',
     fields: [
       { key: 'court', label: 'Court', required: true },
       { key: 'plaintiff', label: 'Plaintiff', multiline: true, required: true },

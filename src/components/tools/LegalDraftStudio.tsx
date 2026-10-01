@@ -3,7 +3,8 @@ import { Check, ChevronDown, Copy, Download, FileText, ListChecks, Printer, Sear
 import { CASE_FILE_CHECKLISTS, DRAFT_TEMPLATES, type DraftTemplate } from '../../data/draft-templates'
 import { TEMPLATE_CATALOG, catalogToDraftTemplate } from '../../data/legal-template-catalog'
 import { downloadLegalDocument, printAsPdf, type ExportKind } from '../../lib/document-export'
-import { getDraftTier, getReviewYear, markDraftUsed, matchesDraftTier, readDraftUsage, toggleDraftFavorite, writeDraftUsage, type DraftUsageState } from '../../lib/draftStudio'
+import { canEditDraftBody, canExportDraft, getDraftTierMeta } from '../../data/draftTiers'
+import { getDraftTier, getReviewYear, markDraftUsed, matchesDraftTier, readDraftUsage, toggleDraftFavorite, writeDraftUsage, type DraftUsageState, type DraftTierFilter } from '../../lib/draftStudio'
 
 const CATEGORIES = ['all', 'criminal', 'civil', 'notice', 'affidavit', 'family', 'property', 'commercial', 'consumer', 'employment', 'company', 'arbitration', 'ip', 'tax', 'banking', 'motor', 'constitutional', 'procedure', 'rtI', 'misc'] as const
 type Category = typeof CATEGORIES[number]
@@ -20,7 +21,7 @@ export function LegalDraftStudio() {
   const [act, setAct] = useState('')
   const [showAdvanced, setShowAdvanced] = useState(false)
   const [showMore, setShowMore] = useState(false)
-  const [tier, setTier] = useState<'all' | 'reviewed' | 'scaffold'>('all')
+  const [tier, setTier] = useState<DraftTierFilter>('all')
   const [court, setCourt] = useState('')
   const [state, setState] = useState('')
   const [reviewYear, setReviewYear] = useState('')
@@ -244,8 +245,8 @@ export function LegalDraftStudio() {
             {showAdvanced && <div className="mt-2 space-y-2 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-3">
               <div className="grid gap-2 sm:grid-cols-2">
                 <label className="text-[10px] font-extrabold uppercase tracking-wide">Governance
-                  <select value={tier} onChange={(e) => { setTier(e.target.value as typeof tier); setShowMore(false) }} className="mt-1 w-full rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] px-2 py-2 text-xs">
-                    <option value="all">All tiers</option><option value="reviewed">Reviewed full draft</option><option value="scaffold">Educational scaffold / catalogue</option>
+                  <select value={tier} onChange={(e) => { setTier(e.target.value as DraftTierFilter); setShowMore(false) }} className="mt-1 w-full rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] px-2 py-2 text-xs">
+                    <option value="all">All governance tiers</option><option value="verified">Tier 1 — Verified full template</option><option value="scaffold">Tier 2 — Educational scaffold</option><option value="catalogue">Tier 3 — Catalogue entry</option><option value="checklist">Tier 4 — Checklist</option>
                   </select>
                 </label>
                 <label className="text-[10px] font-extrabold uppercase tracking-wide">Sort
@@ -269,7 +270,7 @@ export function LegalDraftStudio() {
                   </select>
                 </label>
               </div>
-              <p className="text-[10px] leading-4 text-[color:var(--ink-muted)]">“Reviewed” means the repository marks the template as a reviewed full draft. Catalogue entries remain scaffolds and are not filing-ready forms.</p>
+              <p className="text-[10px] leading-4 text-[color:var(--ink-muted)]">Tier labels describe governance status, not court approval. Tier 3 entries are discovery-only and never expose a generic pleading body.</p>
             </div>}
             <div className="mt-4 flex items-center justify-between gap-2">
               <span className="text-[10px] font-bold text-[color:var(--ink-muted)]">{filtered.length.toLocaleString()} matching drafts</span>
@@ -289,7 +290,7 @@ export function LegalDraftStudio() {
                   </div>
                   <div className="mt-1 text-[10px] leading-4 text-[color:var(--ink-muted)]">{t.statute}</div>
                   <div className="mt-1 flex flex-wrap gap-1.5 text-[9px] font-bold">
-                    <span className="rounded-full bg-slate-100 px-2 py-1">{getDraftTier(undefined, t.tier) === 'reviewed' ? 'Reviewed' : 'Scaffold'}</span>
+                    <span className="rounded-full bg-slate-100 px-2 py-1">{getDraftTier(undefined, t.tier) === 'verified' ? 'Tier 1' : getDraftTier(undefined, t.tier) === 'scaffold' ? 'Tier 2' : getDraftTier(undefined, t.tier) === 'catalogue' ? 'Tier 3' : 'Tier 4'}</span>
                     {usage.recentlyUsed.includes(t.id) && <span className="rounded-full bg-slate-100 px-2 py-1">Recently used</span>}
                   </div>
                 </button>
@@ -303,7 +304,7 @@ export function LegalDraftStudio() {
                 <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-xs leading-5 text-amber-950">
                   <strong>Use carefully:</strong> {template.disclaimer}
                   <div className="mt-2 grid gap-2 sm:grid-cols-2">
-                    <div><strong>Tier:</strong> {getDraftTier(undefined, template.tier) === 'reviewed' ? 'Reviewed full draft' : 'Educational scaffold / catalogue'}</div>
+                    <div><strong>Governance:</strong> {getDraftTierMeta(getDraftTier(undefined, template.tier)).label}</div>
                     <div><strong>Last reviewed:</strong> {template.lastReviewed || 'Not recorded'}</div>
                     <div><strong>Applicable Act:</strong> {template.statute}</div>
                     <div><strong>Relevant sections:</strong> {template.relevantSections?.join(', ') || 'Verify from the applicable law'}</div>
@@ -313,6 +314,13 @@ export function LegalDraftStudio() {
                   </div>
                 </div>
 
+                {!canEditDraftBody(getDraftTier(undefined, template.tier)) ? (
+                  <div className="rounded-2xl border border-dashed border-[color:var(--border)] bg-[color:var(--surface)] p-6">
+                    <div className="text-base font-black">{getDraftTierMeta(getDraftTier(undefined, template.tier)).label}</div>
+                    <p className="mt-2 max-w-2xl text-sm leading-6 text-[color:var(--ink-muted)]">{getDraftTierMeta(getDraftTier(undefined, template.tier)).description}</p>
+                    <p className="mt-3 text-sm font-bold text-[#8B1E3F]">Use this entry to identify the document type, applicable legal area and forum. It does not provide a generic filing-ready draft body.</p>
+                  </div>
+                ) : (
                 <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
                   <div className="rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4 sm:p-5">
                     <div className="mb-4 flex items-center justify-between gap-3">
@@ -342,14 +350,16 @@ export function LegalDraftStudio() {
                   </div>
                 </div>
 
-                {template.annexures && template.annexures.length > 0 && (
+                )}
+
+                {canEditDraftBody(getDraftTier(undefined, template.tier)) && template.annexures && template.annexures.length > 0 && (
                   <div className="rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
                     <h2 className="text-sm font-black">Suggested annexures</h2>
                     <div className="mt-2 flex flex-wrap gap-2">{template.annexures.map((a) => <span key={a} className="rounded-lg bg-slate-100 px-2.5 py-1.5 text-[11px] font-semibold text-slate-700">{a}</span>)}</div>
                   </div>
                 )}
 
-                <div className="sticky bottom-2 z-10 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)]/95 p-3 shadow-lg backdrop-blur">
+                {canExportDraft(getDraftTier(undefined, template.tier)) && <div className="sticky bottom-2 z-10 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)]/95 p-3 shadow-lg backdrop-blur">
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <div className="flex flex-wrap gap-2">
                       <button type="button" onClick={copyOut} className="inline-flex items-center gap-1.5 rounded-xl bg-[#8B1E3F] px-3 py-2 text-xs font-extrabold text-white">{copied ? <Check className="size-3.5" /> : <Copy className="size-3.5" />}{copied ? 'Copied' : 'Copy'}</button>
@@ -362,7 +372,7 @@ export function LegalDraftStudio() {
                       ))}
                     </div>
                   </div>
-                </div>
+                </div>}
               </>
             )}
           </section>

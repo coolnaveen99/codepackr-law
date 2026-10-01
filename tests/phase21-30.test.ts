@@ -28,6 +28,9 @@ describe('draft tiers (Phase 25)', () => {
   it('defines four governance tiers', () => {
     assert.equal(DRAFT_TIERS.length, 4)
     assert.ok(tierLabel('verified').includes('Tier 1'))
+    assert.ok(tierLabel('scaffold').includes('Tier 2'))
+    assert.ok(tierLabel('catalogue').includes('Tier 3'))
+    assert.ok(tierLabel('checklist').includes('Tier 4'))
   })
 })
 

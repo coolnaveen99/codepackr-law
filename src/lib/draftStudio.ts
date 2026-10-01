@@ -1,4 +1,4 @@
-export type DraftTier = 'reviewed' | 'scaffold'
+import type { DraftTier } from '../data/draftTiers'
 
 export type DraftUsageState = {
   favorites: string[]
@@ -41,15 +41,20 @@ export function toggleDraftFavorite(state: DraftUsageState, id: string): DraftUs
   return { ...state, favorites }
 }
 
+/** Legacy status values are accepted only for migration; absence of explicit tier is never promoted to Tier 1. */
 export function getDraftTier(status?: string, tier?: DraftTier): DraftTier {
   if (tier) return tier
-  return status === 'catalog' ? 'scaffold' : 'reviewed'
+  if (status === 'catalog') return 'catalogue'
+  if (status === 'checklist') return 'checklist'
+  return 'scaffold'
 }
 
 export function getReviewYear(lastReviewed?: string): string {
   return lastReviewed?.slice(0, 4) || ''
 }
 
-export function matchesDraftTier(tier: DraftTier, filter: 'all' | 'reviewed' | 'scaffold') {
+export type DraftTierFilter = 'all' | DraftTier
+
+export function matchesDraftTier(tier: DraftTier, filter: DraftTierFilter) {
   return filter === 'all' || tier === filter
 }
