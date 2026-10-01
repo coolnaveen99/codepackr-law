@@ -1,178 +1,412 @@
-import type { TopicContent } from '../loadTopicContent'
+import type { TopicContent } from '../topicTypes'
 
 const content: TopicContent = {
-  "study": "Introduction and meaning\nGang rape. Where a woman is raped by one or more persons in a group acting in furtherance of a common intention, each is deemed to have committed gang rape. For a victim under 18, punishment is remainder-of-life or death.\nIn student language: BNS s. 70 is the rule on “Gang rape”. The section provides that (1) Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine:. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nWhy this is asked\nCriminal law arguments turn on statutory ingredients. BNS s. 70 exists so that “Gang rape” has a closed legal test in Chapter V — Of Offences Against Woman and Child. An authoritative analysis defines the concept, lists every ingredient, walks the statutory illustrations, states exceptions, and applies the test methodically to facts.\nChapter setting: Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.\n\nThe provision in detail\n70. (1) Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine:\n\n(2) Where a woman under eighteen years of age is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine, or with death:\n\nEssential ingredients\n1. (1) Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine:\n2. (2) Where a woman under eighteen years of age is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine, or with death:\n\nPunishment / legal consequence\nGang rape: 20-to-life. Victim under 18: remainder-of-life or death.\n\nExceptions, limitations and provisos\nProvided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim:\n\nProvided further that any fine imposed under this sub-section shall be paid to the victim\n\nProvided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim:\n\nProvided further that any fine imposed under this sub-section shall be paid to the victim",
-  "glance": "BNS s. 70 — Gang rape.",
-  "sections": [
+  glance:
+    'Section 70 BNS codifies the severe statutory regime for Gang Rape, replacing Sections 376D, 376DA, and 376DB IPC. Sub-section (1) establishes deemed collective liability for gang rape of any woman, prescribing a mandatory minimum of twenty years rigorous imprisonment extending to imprisonment for the remainder of natural life, and fine. Sub-section (2) unifies the aggravated minor threshold at eighteen years, mandating imprisonment for the remainder of natural life or death, and fine. The statutory fiction deems every member of a group acting in furtherance of a common intention to have committed rape, irrespective of individual physical penetration.',
+
+  study: `I. LEGISLATIVE REORGANIZATION & CODIFIED LEGAL FICTION
+Section 70 of the Bharatiya Nyaya Sanhita, 2023 (BNS) occupies a pivotal position in Chapter V ("Of Offences Against Woman and Child"). In colonial criminal law, gang rape was fractured across multiple overlapping amendments (Sections 376D, 376DA, and 376DB IPC introduced by the 2013 and 2018 amendments). Parliament in Section 70 consolidated and rationalized these disparate provisions into a unified two-tier hierarchy based strictly on the age of majority (18 years).
+
+The hallmark of Section 70 is its irrebuttable statutory legal fiction:
+"Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape..."
+
+Under this statutory fiction, the prosecution is not required to prove that every individual member of the group physically penetrated the victim. If one or more persons commit rape while others facilitate, overpower the victim, stand guard, drive the getaway conveyance, or prevent rescue in furtherance of a common intention, every participant is deemed by operation of law to be a principal perpetrator of gang rape.
+
+II. BIFURCATED PENAL ARCHITECTURE: SECTIONS 70(1) AND 70(2)
+The section establishes two uncompromising sentencing tiers:
+
+1. Section 70(1) — Gang Rape of an Adult Woman (18 Years and Above):
+   - Scope: Applies where the victim is an adult woman.
+   - Penalty: Rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life (meaning the remainder of that person's natural life), and fine.
+   - Elimination of Judicial Leniency: The 20-year floor is absolute and mandatory; courts have no statutory discretion to reduce the sentence below twenty years under any circumstance.
+
+2. Section 70(2) — Gang Rape of a Minor (Under Eighteen Years of Age):
+   - Scope: Where the victim is under eighteen years of age.
+   - Penalty: Imprisonment for life (meaning the remainder of that person's natural life) and fine, OR DEATH.
+   - Age Consolidation: Consolidates the former IPC dichotomy (which drew artificial distinctions between girls under 16 and under 12 years) into a single, uniform protective umbrella covering all children under 18 years, aligning penal law seamlessly with the POCSO Act, 2012.
+
+3. Mandatory Victim Compensation Provisos:
+   - Both sub-sections mandate that the fine imposed by the court must be "just and reasonable to meet the medical expenses and rehabilitation of the victim."
+   - The second proviso commands that any fine recovered shall be paid directly to the victim, ensuring enforceable compensatory justice under BNSS Section 395/396.
+
+III. DEEMED COLLECTIVE LIABILITY & COMMON INTENTION JURISPRUDENCE
+The interaction between Section 70 and general joint liability principles (Section 3(5) BNS / old s. 34 IPC) is foundational:
+1. The Nirbhaya Doctrine (Mukesh v. State (NCT of Delhi) (2017) 6 SCC 1):
+   - The Supreme Court held that in a gang rape charge, individual overt acts of physical penetration by each co-accused do not require independent demonstration. Where accused persons act in concert pursuant to a prior meeting of minds or a shared instantaneous common intention, each is vicariously and substantively liable for the cumulative brutality inflicted.
+   - Holding down the victim, disabling lighting, driving the bus, or threatening witnesses constitutes active furtherance of the common intention to commit gang rape.
+2. The Facilitator as Principal:
+   - A lookout or driver cannot plead the defense of mere abetment or presence. The deeming fiction of Section 70 automatically elevates every participant in the group enterprise to the status of a deemed rapist.
+
+IV. EVIDENTIARY MATRIX & FORENSIC CORROBORATION
+1. DNA Profiling & Multiple Donors:
+   - Under Section 184 BNSS and Section 53 BNSS, forensic medical examination must recover vaginal, rectal, and oral swabs to establish the presence of multiple male DNA profiles.
+   - However, under State of Punjab v. Gurmit Singh (1996) 2 SCC 384, even if DNA is recovered from only one co-accused (or if degradation occurs due to washing or chemical contamination), the credible and unwavering testimony of the prosecutrix identifying the co-accused as members of the assaulting group is sufficient to convict all participants under Section 70.
+2. Statutory Presumption under Section 115 BSA:
+   - In prosecutions under Section 70, where sexual intercourse is proved and the victim testifies that she did not consent, the court shall presume absence of consent against all accused persons.
+
+V. CAPITAL SENTENCING JURISPRUDENCE UNDER SECTION 70(2)
+1. The "Rarest of Rare" Doctrine:
+   - Where the prosecution seeks the death penalty under Section 70(2) BNS, the court must balance aggravating circumstances (extreme depravity, vulnerability of child victim, grotesque physical mutilation) against mitigating circumstances (age, probability of reformation, socio-economic background) in terms of Bachan Singh v. State of Punjab (1980) 2 SCC 684 and Machhi Singh v. State of Punjab (1983) 3 SCC 470.
+2. Mandatory Separate Sentencing Hearing:
+   - Under Section 258(2) BNSS, the Sessions Court must hold a distinct, meaningful sentencing hearing with adequate opportunity for the defense to place mitigating factors and psychiatric/rehabilitation reports on record before awarding capital punishment or life imprisonment for natural life.`,
+
+  sections: [
     {
-      "id": "bns-70-rule",
-      "title": "The legal rule",
-      "order": 1,
-      "content": [
-        "70. (1) Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine:",
-        "(2) Where a woman under eighteen years of age is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine, or with death:"
-      ]
+      id: 'bns-70-module-1',
+      title: 'Legislative Architecture & Consolidation of Former IPC Provisions',
+      order: 1,
+      content: [
+        'Section 70 BNS replaces Sections 376D, 376DA, and 376DB IPC, consolidating gang rape provisions into Chapter V of the Sanhita.',
+        'Sub-section (1) governs gang rape of adult women with a mandatory minimum sentence of 20 years extending to remainder of natural life.',
+        'Sub-section (2) unifies the protection of minor girls under 18 years, prescribing remainder of natural life or death.',
+        'Provisos to both sub-sections mandate that fines must be reasonable to cover victim medical/rehabilitation expenses and paid directly to the victim.',
+      ],
     },
     {
-      "id": "bns-70-ing",
-      "title": "Essential ingredients",
-      "order": 2,
-      "content": [
-        "(1) Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine:",
-        "(2) Where a woman under eighteen years of age is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine, or with death:"
-      ]
+      id: 'bns-70-module-2',
+      title: 'The Codified Deeming Fiction: Individual Penetration Not Required',
+      order: 2,
+      content: [
+        'Section 70 enacts a statutory legal fiction: "each of those persons shall be deemed to have committed the offence of rape".',
+        'Physical penetration by each individual accused is not required; proof that the accused acted in furtherance of a common intention suffices.',
+        'Lookouts, drivers, and those who physically restrain the victim are equally guilty as deemed principal offenders.',
+        'The Supreme Court in Mukesh v. State (NCT of Delhi) (2017) affirmed that collective concerted action establishes joint culpability for gang rape.',
+      ],
     },
     {
-      "id": "bns-70-exc",
-      "title": "Exceptions and provisos",
-      "order": 6,
-      "content": [
-        "Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim:",
-        "Provided further that any fine imposed under this sub-section shall be paid to the victim",
-        "Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim:",
-        "Provided further that any fine imposed under this sub-section shall be paid to the victim"
-      ]
-    }
-  ],
-  "examples": [
-    {
-      "id": "bns-70-ex-1",
-      "title": "Example 1 — simple (teaching example)",
-      "description": "A short everyday fact pattern is tested against “Gang rape”. Name BNS s. 70, list the ingredients, and say which facts match. This is a teaching example — the statute does not print a numbered illustration under this heading."
+      id: 'bns-70-module-3',
+      title: 'Sub-Section (2) Minor Protection & Harmonization with POCSO Act',
+      order: 3,
+      content: [
+        'Section 70(2) applies strictly where the victim is under eighteen years of age at the time of the commission of the offence.',
+        'Eliminates the fragmented pre-2023 IPC thresholds (under 12 and under 16 years), creating a unified minor age ceiling at 18 years.',
+        'Prescribes alternative extreme sanctions: imprisonment for remainder of natural life or the death penalty.',
+        'Harmonizes penal law with Section 5(g) and Section 6 of the POCSO Act (aggravated penetrative sexual assault by gang).',
+      ],
     },
     {
-      "id": "bns-70-ex-2",
-      "title": "Example 2 — practical application / distinction (teaching example)",
-      "description": "Change one ingredient so that BNS s. 70 fails. A complex problem or motion often hinges on this subtle missing ingredient. State the failure expressly. Label this as an example, never as a reported case."
-    }
-  ],
-  "hypotheticals": [
+      id: 'bns-70-module-4',
+      title: 'Forensic Medical Proof (BNSS s. 184) & Presumption under BSA Section 115',
+      order: 4,
+      content: [
+        'Section 184 BNSS mandates prompt and thorough medical examination of the rape victim by a registered medical practitioner.',
+        'Forensic DNA matching from genital swabs and clothing provides objective corroboration of multiple male donors.',
+        'Under Section 115 BSA, once sexual intercourse is proved, the court shall presume lack of consent against all accused.',
+        'Sole testimony rule (Gurmit Singh) applies fully: credible identification by the prosecutrix establishes participation of all members.',
+      ],
+    },
     {
-      "id": "bns-70-hypo",
-      "title": "Chamber Practice Hypothetical",
-      "facts": "On 10 January 2026, after the new criminal laws have commenced, a fact situation arises in which the court must decide whether “Gang rape” under BNS s. 70 is attracted. The record contains some facts that look like the ingredients and some facts that look like an exception or a missing condition.",
-      "question": "Whether BNS s. 70 (Gang rape) applies, and how structured written arguments should be framed.",
-      "applicableLaw": "BNS s. 70. Chapter V — Of Offences Against Woman and Child. Connected: BNS s. 63, BNS s. 64.",
-      "analysis": "Step 1 — Identify the provision. The correct current-law cite is BNS s. 70 (Gang rape), Chapter V — Of Offences Against Woman and Child.\nStep 2 — State the legal test in your own words, then list the ingredients:\n   (1) (1) Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine:\n   (2) (2) Where a woman under eighteen years of age is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine, or with death:\nStep 3 — Check limitations, provisos and the rest of the Chapter so you do not apply s. 70 in a vacuum.\nStep 4 — Map each fact to an ingredient. Write “this fact proves ingredient (a)” or “this fact is missing, so the section is not made out”.\nStep 5 — Conclude. If every essential ingredient is proved and no exception covers the case, BNS s. 70 applies. If any essential ingredient fails, say so and stop. Do not invent a different section to save the answer.",
-      "conclusion": "The result depends on proof of the ingredients of BNS s. 70. An authoritative conclusion restates the test, applies it, and cites the section — it does not merely say “yes” or “no”."
-    }
+      id: 'bns-70-module-5',
+      title: 'Sentencing Safeguards (BNSS s. 258(2)), Capital Guidelines & Transitional Rules',
+      order: 5,
+      content: [
+        'Under Section 258(2) BNSS, a mandatory separate hearing on sentence is required before awarding life imprisonment or death.',
+        'Death penalty under Section 70(2) is governed by the "rarest of rare" doctrine (Bachan Singh and Machhi Singh).',
+        'Section 531(2)(a) BNSS transitional rule: gang rapes committed on or before 30 June 2024 are prosecuted under IPC Section 376D/DA/DB; post-commencement offences under Section 70 BNS.',
+        'Victim compensation under Section 396 BNSS operates in tandem with fine recovery under the provisos to Section 70.',
+      ],
+    },
   ],
-  "distinctions": [
+
+  provisions: [
     {
-      "id": "bns-70-dist",
-      "title": "BNS s. 70 and connected sections",
-      "left": "BNS s. 70",
-      "right": "BNS s. 63, BNS s. 64",
-      "rows": [
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-70',
+      section: 's. 70',
+      title: 'Gang rape',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-63',
+      section: 's. 63',
+      title: 'Rape',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-64',
+      section: 's. 64',
+      title: 'Punishment for rape',
+    },
+    {
+      actId: 'bns',
+      actName: 'Bharatiya Nyaya Sanhita, 2023',
+      provisionId: 'bns-3-5',
+      section: 's. 3(5)',
+      title: 'Joint liability and common intention',
+    },
+    {
+      actId: 'bsa',
+      actName: 'Bharatiya Sakshya Adhiniyam, 2023',
+      provisionId: 'bsa-115',
+      section: 's. 115',
+      title: 'Presumption as to absence of consent in certain prosecutions for rape',
+    },
+    {
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-184',
+      section: 's. 184',
+      title: 'Medical examination of the victim of rape',
+    },
+    {
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-258',
+      section: 's. 258',
+      title: 'Judgment of acquittal or conviction and hearing on sentence in Sessions trial',
+    },
+    {
+      actId: 'bnss',
+      actName: 'Bharatiya Nagarik Suraksha Sanhita, 2023',
+      provisionId: 'bnss-396',
+      section: 's. 396',
+      title: 'Victim compensation scheme',
+    },
+  ],
+
+  examples: [
+    {
+      id: 'bns-70-ill-1',
+      title: 'Deemed Liability of Lookout / Facilitator under Section 70(1) BNS',
+      illustrationType: 'statutory-practical',
+      description:
+        'Three men X, Y, and Z abduct a 22-year-old woman in a car. While X and Y subject her to sexual penetration in the rear seat, Z drives the vehicle, locks the doors from the central console, and acts as a lookout. When apprehended, Z contends that he never touched the victim and cannot be held liable for rape. Under Section 70(1) BNS, where a woman is raped by one or more persons acting in furtherance of a common intention, each person is deemed to have committed rape. Z is convicted of gang rape alongside X and Y and sentenced to 20 years rigorous imprisonment.',
+    },
+    {
+      id: 'bns-70-ill-2',
+      title: 'Gang Rape of Minor under Section 70(2) BNS — Capital Sentence Analysis',
+      illustrationType: 'statutory-practical',
+      description:
+        'Four men ambush a 15-year-old schoolgirl returning from examinations, drag her into an abandoned warehouse, and subject her to brutal sexual assault, inflicting extensive internal visceral injuries. The victim survives after major surgical intervention. School records and ossification tests establish the victim’s age as 15 years. The Sessions Court convicts all four under Section 70(2) BNS. Finding extreme depravity and absence of mitigating factors, the court sentences the primary instigator to death and the three co-accused to imprisonment for the remainder of their natural lives, alongside a cumulative fine of ₹10,00,000 payable to the victim for medical rehabilitation.',
+    },
+  ],
+
+  hypotheticals: [
+    {
+      id: 'bns-70-hypo',
+      title: 'Chamber Practice Hypothetical: Deeming Fiction vs Defense of Non-Penetration',
+      facts:
+        'On 20 July 2024, complainant T (aged 20) is walking through a desolate park when she is confronted by accused A, B, and C. A pins T to the ground while B covers her mouth and threatens her with a knife. C performs penile penetration. A then attempts penetration, but before he can do so, park security guards approach responding to T’s muffled screams, causing all three to flee. All three are apprehended within hours. In their defence, B contends that he never attempted sexual penetration and only held the knife, while A contends that his act was at most an attempt. The prosecution charges all three under Section 70(1) BNS.',
+      question:
+        'As Senior Counsel appearing for the prosecution, frame the arguments establishing that A, B, and C are each guilty of completed Gang Rape under Section 70(1) BNS by virtue of the statutory deeming fiction.',
+      applicableLaw:
+        'BNS ss. 63, 70(1), 3(5); BSA s. 115; Supreme Court rulings in Mukesh v. State (NCT of Delhi) (2017) 6 SCC 1 and State of U.P. v. Chhotey Lal (2011) 2 SCC 550.',
+      analysis:
+        '1. The Statutory Fiction of Section 70(1) BNS:\n   - Section 70(1) explicitly commands that where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, "each of those persons shall be deemed to have committed the offence of rape".\n   - Completed rape was indisputably committed by C upon T, satisfying the predicate requirement of Section 63 BNS.\n2. Inapplicability of the Defense of Non-Penetration (B’s defense):\n   - B’s act of holding the knife and covering T’s mouth directly facilitated C’s penetration and prevented T from screaming or escaping.\n   - Pursuant to Mukesh (2017), the deeming fiction treats a facilitator or enforcer who acts in concert as a principal perpetrator of gang rape.\n3. Inapplicability of Mere Attempt Defense (A’s defense):\n   - A acted as part of the group that pinned down the victim and facilitated C’s completed rape. A’s participation is not an isolated attempt; under Section 70(1), the completed rape by C is imputed to A as deemed completed gang rape.\n4. Sentence Floor:\n   - Each accused must be sentenced to rigorous imprisonment for not less than twenty years extending up to natural life under Section 70(1) BNS.',
+      conclusion:
+        'A, B, and C are all guilty of completed gang rape under Section 70(1) BNS. Individual penetration is not a requirement for convicting members of a group acting in furtherance of a common intention.',
+    },
+  ],
+
+  distinctions: [
+    {
+      id: 'bns-70-dist-1',
+      title: 'Section 70(1) BNS (Adult Gang Rape) vs Section 70(2) BNS (Minor Gang Rape)',
+      left: 'Section 70(1) BNS (Adult Victim)',
+      right: 'Section 70(2) BNS (Minor Victim under 18)',
+      rows: [
         {
-          "point": "Heading",
-          "left": "Gang rape",
-          "right": "Read the neighbour’s title on its own page before you write."
+          point: 'Age of Victim',
+          left: 'Victim is 18 years of age or older',
+          right: 'Victim is under 18 years of age at the time of the offence',
         },
         {
-          "point": "What you must prove",
-          "left": "(1) Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine:",
-          "right": "Different ingredients — do not paste this section’s test onto the neighbour."
+          point: 'Minimum Punishment',
+          left: 'Rigorous imprisonment for not less than 20 years',
+          right: 'Imprisonment for the remainder of natural life',
         },
         {
-          "point": "Practice trap",
-          "left": "Citing a neighbour as if it were s. 70.",
-          "right": "Citing s. 70 where the neighbour actually applies."
-        }
-      ]
-    }
-  ],
-  "misconceptions": [
-    {
-      "id": "bns-70-trap-1",
-      "trap": "Writing only the section number and title without analyzing ingredients or case ratio.",
-      "correction": "An authoritative note defines the concept, lists ingredients, uses an illustration, states explanations/exceptions, applies the test, and concludes with BNS s. 70."
+          point: 'Maximum Punishment',
+          left: 'Imprisonment for the remainder of natural life, and fine',
+          right: 'Death penalty, or imprisonment for remainder of natural life, and fine',
+        },
+      ],
     },
     {
-      "id": "bns-70-trap-2",
-      "trap": "Copying a statutory illustration without mapping it to an ingredient.",
-      "correction": "Quote the illustration, then write which ingredient it proves or which ingredient is missing. Mapping is the core evidentiary link."
+      id: 'bns-70-dist-2',
+      title: 'Section 70 BNS (Gang Rape) vs Section 64 BNS (Individual Rape)',
+      left: 'Section 70 BNS (Gang Rape)',
+      right: 'Section 64 BNS (Individual Rape)',
+      rows: [
+        {
+          point: 'Plurality of Offenders',
+          left: 'Requires two or more persons acting as a group or in furtherance of common intention',
+          right: 'Offence committed by an individual perpetrator acting alone',
+        },
+        {
+          point: 'Deeming Fiction',
+          left: 'Every member of the group is deemed guilty of rape irrespective of physical penetration',
+          right: 'Liability is strictly personal; penetration by the accused must be independently proved',
+        },
+        {
+          point: 'Baseline Floor',
+          left: 'Mandatory minimum of 20 years rigorous imprisonment (s. 70(1))',
+          right: 'Mandatory minimum of 10 years rigorous imprisonment (s. 64(1))',
+        },
+      ],
+    },
+  ],
+
+  misconceptions: [
+    {
+      id: 'bns-70-trap-1',
+      trap: 'Believing that an accused who did not personally engage in sexual penetration cannot be convicted under Section 70 BNS.',
+      correction:
+        'Section 70 creates an express statutory legal fiction: "each of those persons shall be deemed to have committed the offence of rape". Facilitators, lookouts, and guards acting in furtherance of a common intention are fully guilty of gang rape.',
     },
     {
-      "id": "bns-70-trap-3",
-      "trap": "Giving a one-line summary or shortened explanation of the provision.",
-      "correction": "Authoritative chamber practice and judicial papers require a complete answer. The analysis on this page is written at full length for that reason."
-    }
-  ],
-  "questionsAndAnswers": [
-    {
-      "id": "bns-70-q-brief",
-      "draftingCategory": "brief",
-      "question": "Legal Assessment & Statutory Note: BNS s. 70 (Gang rape)",
-      "answer": "Introduction. BNS s. 70 deals with Gang rape. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Gang rape. Where a woman is raped by one or more persons in a group acting in furtherance of a common intention, each is deemed to have committed gang rape. For a victim under 18, punishment is remainder-of-life or death.\n\nLegal rule. In student language: BNS s. 70 is the rule on “Gang rape”. The section provides that (1) Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine:. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine:\n2. (2) Where a woman under eighteen years of age is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine, or with death:\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExceptions / provisos. Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim:\n\nProvided further that any fine imposed under this sub-section shall be paid to the victim\n\nProvided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim:\n\nProvided further that any fine imposed under this sub-section shall be paid to the victim State the exception and then say whether it is attracted on the facts.\n\nConsequence / punishment. Gang rape: 20-to-life. Victim under 18: remainder-of-life or death.\n\nConnected sections. Read with BNS s. 63, BNS s. 64. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 70 is the complete current-law heading for Gang rape. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.",
-      "explanation": "Complete statutory structure: introduction, meaning, ingredients, illustration, explanation/exception, application, and current-law citation."
+      id: 'bns-70-trap-2',
+      trap: 'Assuming Section 70(2) BNS applies only if the victim is under 12 or 16 years of age.',
+      correction:
+        'Under the BNS, Parliament unified the child protection floor at eighteen years in Section 70(2). Gang rape of any girl under 18 years attracts the remainder of natural life or the death penalty.',
     },
     {
-      "id": "bns-70-q-submissions",
-      "draftingCategory": "submissions",
-      "question": "Comprehensive Written Submissions: BNS s. 70 (Gang rape) with Statutory Scheme & Judicial Analysis",
-      "answer": "Introduction. BNS s. 70 deals with Gang rape. It sits in Chapter V — Of Offences Against Woman and Child of the Bharatiya Nyaya Sanhita, 2023. After 1 July 2024 this is the current-law citation for this offence / definition / punishment.\n\nMeaning. Gang rape. Where a woman is raped by one or more persons in a group acting in furtherance of a common intention, each is deemed to have committed gang rape. For a victim under 18, punishment is remainder-of-life or death.\n\nLegal rule. In student language: BNS s. 70 is the rule on “Gang rape”. The section provides that (1) Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine:. Do not stop at the heading. An examiner awards marks for the ingredients, the explanations and the illustrations, not for writing the title alone.\n\nEssential ingredients. An authoritative analysis must list them, not hide them in one paragraph:\n1. (1) Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine:\n2. (2) Where a woman under eighteen years of age is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine, or with death:\n\nIllustration. Give one short original example (label it as an example) and apply the ingredients.\n\nExceptions / provisos. Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim:\n\nProvided further that any fine imposed under this sub-section shall be paid to the victim\n\nProvided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim:\n\nProvided further that any fine imposed under this sub-section shall be paid to the victim State the exception and then say whether it is attracted on the facts.\n\nConsequence / punishment. Gang rape: 20-to-life. Victim under 18: remainder-of-life or death.\n\nConnected sections. Read with BNS s. 63, BNS s. 64. A preliminary brief mentions the neighbour; comprehensive submissions explain the exact distinction.\n\nConclusion. BNS s. 70 is the complete current-law heading for Gang rape. Define, list ingredients, use an illustration, note any explanation or exception, apply, cite. That is a complete statutory structure.\n\nComprehensive Written Submissions. Deepen the doctrinal synthesis with four foundational layers.\n\nLayer 1 — Place the section in the Chapter. Sexual offences, assault, marriage, miscarriage, and offences against the child — placed first among the offence chapters.. Show why this heading sits where it sits.\n\nLayer 2 — Work a second, slightly harder hypothetical. Change one ingredient and show why the section then fails.\n\nLayer 3 — Distinction. Contrast BNS s. 70 with BNS s. 63, BNS s. 64. Write a short table in prose: meaning, ingredients, stage of the case, consequence. Confusion of neighbouring sections is the most common reason arguments collapse under judicial scrutiny.\n\n\n\nLayer 5 — Application and current-law close. Apply the test to the problem facts in IRAC form (Issue, Rule, Application, Conclusion). Close with: “The governing citation on or after 1 July 2024 is BNS s. 70.”",
-      "explanation": "Exhaustive written submissions: foundational statutory note plus doctrinal contrast, second illustration or hypothetical, IRAC application, and current-law close."
-    }
+      id: 'bns-70-trap-3',
+      trap: 'Thinking the death penalty can be awarded under Section 70(1) for gang rape of an adult.',
+      correction:
+        'Capital punishment under Section 70 is statutorily restricted to Section 70(2) (victim under 18 years). For an adult victim under Section 70(1), the maximum sentence is imprisonment for the remainder of natural life.',
+    },
   ],
-  "cases": [
+
+  questionsAndAnswers: [
     {
-      "name": "Mukesh v. State (NCT of Delhi)",
-      "year": 2017,
-      "citation": "(2017) 6 SCC 1",
-      "holding": "The Nirbhaya appeals. Confirmed death in a gang-rape-and-murder case and is the backdrop to the 2013 reforms now folded into ss. 63–71."
-    }
-  ],
-  "examTips": [
-    "Cite BNS s. 70 for offences on or after 1 July 2024.",
-    "Ingredients first, illustration second, application third, conclusion last.",
-    "Age trap: IPC used 16 and 12. BNS uses 18 for the remainder-of-life / death band."
-  ],
-  "examFrameworks": [
-    {
-      "question": "Structured Legal Assessment: BNS s. 70 (Gang rape).",
-      "steps": [
-        "Introduce BNS s. 70 and Chapter V — Of Offences Against Woman and Child.",
-        "Define / state the meaning in your own words.",
-        "List the essential ingredients.",
-        "Give one labelled example and map it to an ingredient.",
-        "State the material explanation or exception.",
-        "Apply in four to six sentences.",
-        "Conclude with the current citation — BNS s. 70."
-      ]
+      id: 'bns-70-q-brief',
+      draftingCategory: 'brief',
+      question: 'Senior Counsel Legal Assessment: Architecture & Deeming Fiction of Section 70 BNS',
+      answer: `I. STATUTORY MATRIX & PROVISION
+Section 70 of the Bharatiya Nyaya Sanhita, 2023 (BNS) consolidates the law on Gang Rape, replacing Sections 376D, 376DA, and 376DB IPC. It sits in Chapter V ("Of Offences Against Woman and Child").
+
+II. ESSENTIAL INGREDIENTS
+1. Commission of Rape: A woman must have been raped within the meaning of Section 63 BNS;
+2. Plurality of Actors: The act must have been committed by one or more persons constituting a group or acting in furtherance of a common intention;
+3. Deemed Liability: By operation of statutory fiction, each person belonging to the group is deemed to have committed rape;
+4. Age Differentiation:
+   - Sub-section (1): If the victim is 18 years or older, rigorous imprisonment for 20 years extending to remainder of natural life, and fine.
+   - Sub-section (2): If the victim is under 18 years, imprisonment for remainder of natural life, or death, and fine.
+
+III. THE STATUTORY FICTION DECONSTRUCTED
+Section 70 incorporates common intention directly into the definition of the offence. The prosecution does not need to show that each co-accused penetrated the victim. Active participation in restraining the victim, preventing rescue, or guarding the perimeter suffices to trigger deemed principal liability.
+
+IV. VICTIM COMPENSATION MANDATE
+Under the provisos to both sub-sections, the fine imposed must be just and reasonable to cover medical expenses and rehabilitation, and must be paid directly to the victim.`,
+      explanation:
+        'Authoritative statutory note on Section 70 BNS deconstructing the deeming fiction, age thresholds, sentencing tiers, and compensation provisos.',
     },
     {
-      "question": "Comprehensive Chamber Written Submissions: BNS s. 70 with connected statutory scheme.",
-      "steps": [
-        "Everything in the preliminary assessment, written in full substantive depth — not summarised.",
-        "Place the section in the Chapter and explain why the heading exists.",
-        "Work a second hypothetical in which one ingredient fails.",
-        "Distinguish BNS s. 70 from BNS s. 63, BNS s. 64.",
-        "IRAC application to the problem facts.",
-        "Address procedural hurdles, evidentiary requirements, and standard defense objections.",
-        "Current-law conclusion."
-      ]
-    }
+      id: 'bns-70-q-submissions',
+      draftingCategory: 'submissions',
+      question: 'Appellate Written Submissions: Application of Section 70 Deeming Fiction and Sentencing Standards',
+      answer: `MAY IT PLEASE YOUR LORDSHIPS:
+
+1. MAINTAINABILITY & CHARGING MATRIX:
+The appellants stand convicted under Section 70(1) BNS and sentenced to 20 years rigorous imprisonment. It is submitted that the conviction is unassailable in law.
+
+2. OPERATION OF THE DEEMING FICTION (MUKESH V. STATE (NCT OF DELHI)):
+(a) The primary defense raised by Appellant No. 2 is that forensic DNA profiling detected semen matching only Appellant No. 1, and that Appellant No. 2 was merely the driver of the vehicle.
+(b) This submission misapprehends the express statutory wording of Section 70(1) BNS:
+"Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape..."
+(c) The Hon'ble Supreme Court in Mukesh v. State (NCT of Delhi) (2017) 6 SCC 1 and State of U.P. v. Chhotey Lal (2011) 2 SCC 550 held that the legislature deliberately incorporated this deeming fiction to ensure that co-conspirators who facilitate, guard, or transport the perpetrators cannot evade liability by pointing to lack of personal physical penetration.
+(d) The evidence of PW-1 (prosecutrix) establishes that Appellant No. 2 actively locked the vehicle doors, raised the volume of the stereo to drown her screams, and drove along secluded routes while Appellant No. 1 committed rape. Appellant No. 2 was an integral member of the group acting in furtherance of the shared common intention.
+
+3. PRECLUSION OF JUDICIAL REDUCTION BELOW STATUTORY FLOOR:
+The prayer for reduction of sentence to ten years is legally impermissible. Parliament in Section 70(1) BNS enacted an absolute statutory minimum of twenty years rigorous imprisonment. Under settled sentencing jurisprudence, courts possess no inherent power to award a sentence below an inflexible statutory floor.
+
+4. CONCLUSION:
+The conviction of both appellants under Section 70(1) BNS is fully established. The appeal ought to be dismissed.`,
+      explanation:
+        'Comprehensive appellate submissions establishing the operation of the statutory deeming fiction, collective liability under Mukesh, and the inflexibility of the 20-year sentencing floor.',
+    },
   ],
-  "answerSkeleton": [
-    "Introduction — BNS s. 70, Gang rape.",
-    "Meaning and definition.",
-    "Ingredients.",
-    "Illustration mapped to an ingredient.",
-    "Explanation / exception.",
-    "Application (IRAC).",
-    "Conclusion and current citation."
+
+  cases: [
+    {
+      name: 'Mukesh v. State (NCT of Delhi)',
+      year: 2017,
+      citation: '(2017) 6 SCC 1',
+      holding:
+        'The Nirbhaya appeals where the Supreme Court confirmed death sentences, holding that in gang rape cases, all individuals acting in concert in furtherance of a common intention are equally liable for the collective atrocity irrespective of individual physical penetration.',
+    },
+    {
+      name: 'State of U.P. v. Chhotey Lal',
+      year: 2011,
+      citation: '(2011) 2 SCC 550',
+      holding:
+        'Affirmed that the statutory fiction in gang rape provisions imputes the completed act of rape to every member of the group acting in concert, and absence of independent physical injuries does not diminish the gravity of joint culpability.',
+    },
+    {
+      name: 'State of Punjab v. Gurmit Singh',
+      year: 1996,
+      citation: '(1996) 2 SCC 384',
+      holding:
+        'Held that the credible testimony of the prosecutrix identifying multiple assailants is sufficient to convict all members of a gang without requiring individual independent forensic corroboration for each participant.',
+    },
+    {
+      name: 'Bachan Singh v. State of Punjab',
+      year: 1980,
+      citation: '(1980) 2 SCC 684',
+      holding:
+        'Laid down the "rarest of rare" doctrine governing the imposition of capital punishment, which must be scrupulously applied when considering the death penalty under Section 70(2) BNS.',
+    },
   ],
-  "revisionPoints": [
-    "BNS s. 70: Gang rape.",
-    "First ingredient: (1) Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine:",
-    "No printed illustration — prepare an original labelled example.",
-    "For offences on or after 1 July 2024, the correct citation is BNS s. 70 — Gang rape. Older books and judgments may still print a historical number (376D / 376DA / 376DB). Convert it. Write the BNS number in a current answer. Do not treat the old number as if it were still the law."
+
+  examTips: [
+    'Always cite Section 70(1) BNS for gang rape of an adult (20 years to natural life) and Section 70(2) BNS for gang rape of a minor under 18 (natural life or death).',
+    'Explain the statutory deeming fiction: physical penetration by each accused is NOT required; active assistance or facilitation in furtherance of common intention suffices.',
+    'Note the unification of minor age at 18 years in Section 70(2), replacing the old IPC split between under-12 and under-16 years.',
+    'Under Section 258(2) BNSS, a separate hearing on sentence is mandatory before imposing life imprisonment or the death penalty.',
+    'Under Section 531(2)(a) BNSS, pre-1 July 2024 gang rapes are prosecuted under IPC Section 376D/DA/DB; post-commencement offences under Section 70 BNS.',
   ],
-  "relatedTopics": [
-    "s-63",
-    "s-64"
-  ]
+
+  examFrameworks: [
+    {
+      question: 'Structured Chamber Brief: Section 70 BNS Gang Rape Analysis',
+      steps: [
+        'Identify whether the victim is an adult (s. 70(1)) or minor under 18 (s. 70(2)).',
+        'Verify that at least one member committed rape under Section 63 BNS.',
+        'Establish common intention and collective concerted action under Section 3(5) BNS / Section 70 deeming fiction.',
+        'Address defense of non-penetration by invoking Mukesh v. State (NCT of Delhi).',
+        'Analyze medical and forensic evidence under Section 184 BNSS and Section 115 BSA presumption.',
+        'Determine sentencing parameters (20-year floor or capital sanction) and victim compensation provisos.',
+      ],
+    },
+    {
+      question: 'Appellate Submissions: Defending Conviction under Section 70 Deeming Fiction',
+      steps: [
+        'Formulate issue: whether lack of physical semen/penetration exonerates co-accused.',
+        'Examine statutory text: "each of those persons shall be deemed to have committed rape".',
+        'Demonstrate facilitation, intimidation, or restraint as active furtherance of common intention.',
+        'Emphasize that the 20-year statutory floor under Section 70(1) is inflexible.',
+        'Conclude with prayer dismissing the appeal.',
+      ],
+    },
+  ],
+
+  answerSkeleton: [
+    'Introduction — Section 70 BNS, Chapter V ("Of Offences Against Woman and Child"), replacing IPC ss. 376D/DA/DB.',
+    'Deeming Fiction — Core legal principle: each person acting in group/furtherance of common intention is deemed a principal rapist.',
+    'Sub-section (1) — Adult victim: mandatory minimum 20 years RI extending to remainder of natural life, and fine.',
+    'Sub-section (2) — Minor under 18: remainder of natural life OR death penalty, and fine (POCSO harmony).',
+    'Case Law — Mukesh v. State (NCT of Delhi) (2017) and Chhotey Lal (2011) on collective liability.',
+    'Provisos & Procedure — Fine payable directly to victim; separate sentencing hearing under BNSS s. 258(2); BNSS s. 531 transition.',
+  ],
+
+  revisionPoints: [
+    'Section 70 BNS replaces IPC Sections 376D, 376DA, and 376DB.',
+    'Section 70(1) prescribes 20 years to remainder of natural life for gang rape of adult.',
+    'Section 70(2) prescribes remainder of natural life or death for gang rape of girl under 18 years.',
+    'The deeming fiction makes facilitators and guards equally guilty of completed gang rape without proving personal penetration.',
+    'Fines imposed must be reasonable to cover rehabilitation and are paid directly to the victim.',
+  ],
+
+  relatedTopics: [
+    's-63',
+    's-64',
+    's-69',
+    's-3-5',
+  ],
 }
 
 export default content
