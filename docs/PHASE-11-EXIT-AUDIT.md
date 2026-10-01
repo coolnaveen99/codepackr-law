@@ -2,7 +2,7 @@
 
 **Date:** 2026-10-01  
 **Branch:** `feat/ph11-transition-centre`  
-**PR:** #79  
+**PR:** #82  
 **Roadmap:** §16 — Phase 11, BNS / BNSS / BSA Transition Centre
 
 ## Acceptance matrix
@@ -54,9 +54,9 @@ The UI deliberately does not convert the existence of a case link into a claim t
 
 ## CI evidence
 
-- First PR #79 CI run failed on a test ordering assertion only: 142/143 tests passed.
+- superseded PR #79 CI run failed on a test ordering assertion only: 142/143 tests passed.
 - The assertion was corrected without weakening implementation checks.
-- Final PR #79 CI run passed after the targeted fix.
+- Final PR #82 CI run passed after the current-main rebuild.
 
 ## Blockers
 
