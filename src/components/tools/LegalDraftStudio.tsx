@@ -202,24 +202,57 @@ export function LegalDraftStudio() {
               <button type="button" onClick={() => setShowAdvanced((v) => !v)} className="inline-flex items-center gap-1.5 rounded-xl border border-[color:var(--border)] px-3 py-2 text-[11px] font-extrabold"><SlidersHorizontal className="size-3.5" /> Advanced filters</button>
               <button type="button" onClick={resetBrowser} className="inline-flex items-center gap-1 text-[11px] font-bold text-[color:var(--ink-muted)]"><X className="size-3" /> Reset</button>
             </div>
-            {showAdvanced && <div className="mt-2 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-3 text-[11px] text-[color:var(--ink-muted)]">
-              <div className="font-extrabold text-[color:var(--ink)]">Advanced browsing</div>
-              <p className="mt-1 leading-5">Use Subject + Act/Law together to narrow the library. Search also matches document name, statute and description. More filters can be added later without changing the draft data model.</p>
+            {showAdvanced && <div className="mt-2 space-y-2 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-3">
+              <div className="grid gap-2 sm:grid-cols-2">
+                <label className="text-[10px] font-extrabold uppercase tracking-wide">Governance
+                  <select value={tier} onChange={(e) => { setTier(e.target.value as typeof tier); setShowMore(false) }} className="mt-1 w-full rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] px-2 py-2 text-xs">
+                    <option value="all">All tiers</option><option value="reviewed">Reviewed full draft</option><option value="scaffold">Educational scaffold / catalogue</option>
+                  </select>
+                </label>
+                <label className="text-[10px] font-extrabold uppercase tracking-wide">Sort
+                  <select value={sortBy} onChange={(e) => setSortBy(e.target.value as typeof sortBy)} className="mt-1 w-full rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] px-2 py-2 text-xs">
+                    <option value="default">Default</option><option value="az">A–Z</option><option value="most-used">Most used</option><option value="recently-used">Recently used</option><option value="recently-reviewed">Recently reviewed</option>
+                  </select>
+                </label>
+                <label className="text-[10px] font-extrabold uppercase tracking-wide">Court / forum
+                  <select value={court} onChange={(e) => setCourt(e.target.value)} className="mt-1 w-full rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] px-2 py-2 text-xs">
+                    <option value="">All courts / forums</option>{courts.map((x) => <option key={x} value={x}>{x}</option>)}
+                  </select>
+                </label>
+                <label className="text-[10px] font-extrabold uppercase tracking-wide">State dependency
+                  <select value={state} onChange={(e) => setState(e.target.value)} className="mt-1 w-full rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] px-2 py-2 text-xs">
+                    <option value="">All state dependencies</option>{states.map((x) => <option key={x} value={x}>{x}</option>)}
+                  </select>
+                </label>
+                <label className="text-[10px] font-extrabold uppercase tracking-wide sm:col-span-2">Review year
+                  <select value={reviewYear} onChange={(e) => setReviewYear(e.target.value)} className="mt-1 w-full rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] px-2 py-2 text-xs">
+                    <option value="">Any review year</option>{reviewYears.map((x) => <option key={x} value={x}>{x}</option>)}
+                  </select>
+                </label>
+              </div>
+              <p className="text-[10px] leading-4 text-[color:var(--ink-muted)]">“Reviewed” means the repository marks the template as a reviewed full draft. Catalogue entries remain scaffolds and are not filing-ready forms.</p>
             </div>}
             <div className="mt-4 flex items-center justify-between gap-2">
               <span className="text-[10px] font-bold text-[color:var(--ink-muted)]">{filtered.length.toLocaleString()} matching drafts</span>
               <span className="text-[10px] font-bold text-[color:var(--ink-muted)]">{TEMPLATE_CATALOG.length.toLocaleString()} catalogue entries</span>
             </div>
             <div className="mt-2 space-y-2">
-              {!subject && !act && !query && cat === 'all' ? (
+              {!subject && !act && !query && cat === 'all' && tier === 'all' && !court && !state && !reviewYear ? (
                 <div className="rounded-xl border border-dashed border-[color:var(--border)] p-4 text-center">
                   <div className="text-sm font-black">Choose a subject to begin</div>
                   <p className="mt-1 text-[11px] leading-5 text-[color:var(--ink-muted)]">Select a subject above, then choose an Act/Law such as BNSS, BNS or CPC. Only related drafts will appear here.</p>
                 </div>
               ) : visibleTemplates.map((t) => (
-                <button key={t.id} type="button" onClick={() => { setTemplateId(t.id); setValues({}) }} className={`w-full rounded-xl border p-3 text-left transition ${templateId === t.id ? 'border-[#8B1E3F] bg-[#8B1E3F]/5' : 'border-[color:var(--border)]'}`}>
-                  <div className="text-sm font-extrabold">{t.name}</div>
+                <button key={t.id} type="button" onClick={() => { selectTemplate(t.id); setValues({}) }} className={`w-full rounded-xl border p-3 text-left transition ${templateId === t.id ? 'border-[#8B1E3F] bg-[#8B1E3F]/5' : 'border-[color:var(--border)]'}`}>
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="text-sm font-extrabold">{t.name}</div>
+                    <button type="button" aria-label={usage.favorites.includes(t.id) ? 'Remove from favourites' : 'Add to favourites'} onClick={(e) => { e.stopPropagation(); toggleFavorite(t.id) }} className="min-h-11 min-w-11 rounded-lg text-base">{usage.favorites.includes(t.id) ? '★' : '☆'}</button>
+                  </div>
                   <div className="mt-1 text-[10px] leading-4 text-[color:var(--ink-muted)]">{t.statute}</div>
+                  <div className="mt-1 flex flex-wrap gap-1.5 text-[9px] font-bold">
+                    <span className="rounded-full bg-slate-100 px-2 py-1">{getDraftTier(t.status, t.tier) === 'reviewed' ? 'Reviewed' : 'Scaffold'}</span>
+                    {usage.recentlyUsed.includes(t.id) && <span className="rounded-full bg-slate-100 px-2 py-1">Recently used</span>}
+                  </div>
                 </button>
               ))}
             </div>
@@ -230,7 +263,15 @@ export function LegalDraftStudio() {
               <>
                 <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-xs leading-5 text-amber-950">
                   <strong>Use carefully:</strong> {template.disclaimer}
-                  <div className="mt-1 opacity-80">Last reviewed: {template.lastReviewed}</div>
+                  <div className="mt-2 grid gap-2 sm:grid-cols-2">
+                    <div><strong>Tier:</strong> {getDraftTier(template.status, template.tier) === 'reviewed' ? 'Reviewed full draft' : 'Educational scaffold / catalogue'}</div>
+                    <div><strong>Last reviewed:</strong> {template.lastReviewed || 'Not recorded'}</div>
+                    <div><strong>Applicable Act:</strong> {template.statute}</div>
+                    <div><strong>Relevant sections:</strong> {template.relevantSections?.join(', ') || 'Verify from the applicable law'}</div>
+                    <div><strong>Court / forum:</strong> {template.courtForum || 'Verify applicable forum rules'}</div>
+                    <div><strong>State dependency:</strong> {template.stateDependency || 'Verify state/local rules'}</div>
+                    <div><strong>Limitation:</strong> {template.limitationConsiderations || 'Check the applicable limitation regime'}</div>
+                  </div>
                 </div>
 
                 <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
