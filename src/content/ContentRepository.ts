@@ -9,6 +9,12 @@ import type {
 
 export type { ContentRepositoryContract as ContentRepository, TopicContentRecord }
 
+/** App catalog slug → legal-content topics/ directory when they differ. */
+const SUBJECT_DIR_ALIASES: Record<string, string[]> = {
+  tort: ['torts', 'tort'],
+  family: ['family', 'hma'],
+}
+
 export function canonicalTopicId(subjectSlug: string, topicId: string): string {
   return `topic:india:${subjectSlug}-${topicId}`
 }
@@ -82,7 +88,6 @@ export class CanonicalContentRepository implements ContentRepositoryContract {
     if (index?.outbound?.[id]) {
       return index.outbound[id]
     }
-    // Fallback: load entity and read named relation fields
     const entity = await this.getById(id)
     if (!entity) return []
     const edges: Array<{ to: string; field: string }> = []
@@ -107,11 +112,15 @@ export class CanonicalContentRepository implements ContentRepositoryContract {
     const id = canonicalTopicId(subjectSlug, topicId)
     const fromManifest = await this.get<TopicContentRecord>('topic', id)
     if (fromManifest) return fromManifest
-    const record = await this.fetchJson<TopicContentRecord>(
-      `${this.baseUrl}/topics/${subjectSlug}/${topicId}.json`,
-    )
-    if (!record || record.status !== 'published' || record.id !== id) return null
-    return record
+
+    const dirs = SUBJECT_DIR_ALIASES[subjectSlug] || [subjectSlug]
+    for (const dir of dirs) {
+      const record = await this.fetchJson<TopicContentRecord>(
+        `${this.baseUrl}/topics/${dir}/${topicId}.json`,
+      )
+      if (record && record.status === 'published' && record.id === id) return record
+    }
+    return null
   }
 
   private async fetchJson<T>(url: string): Promise<T | null> {
