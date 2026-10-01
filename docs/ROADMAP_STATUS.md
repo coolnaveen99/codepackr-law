@@ -13,7 +13,7 @@ A roadmap item is complete only when its required code/content/tests/verificatio
 
 ## Current strategic position
 
-**Phase 0 — FORMAL GATE IN PROGRESS** (inventory/MVP work complete; automated full baseline gate being added, 2026-10-01)
+**Phase 0 — CLOSED** (inventory/MVP work complete; automated full baseline gate installed, 2026-10-01)
 **Phase 1 — CLOSED** (launch audit evidence)
 **Phase 2 — CLOSED** (PA-003 exit audit, 2026-10-01)  
 **Phase 3 — CLOSED** (PH3-100 exit audit, 2026-10-01)  
