@@ -207,7 +207,7 @@ Phase 14 is complete on current `main` via PR #84.
 
 ## Phase 15 — Primary Source Finder
 
-Implementation is present on branch `feat/ph15-primary-source-finder-v2`.
+Implementation is complete via PR #86, merged to `main` as `63c930304739bc6dbb2b1d41bdcea79746e30229`.
 
 - Tiered primary-source directory distinguishes official government/court/statute sources from reported databases.
 - Search result cards expose title, authority type, review date, relevant Act/Section scope, source tier and link-verification status.
@@ -220,6 +220,6 @@ Implementation is present on branch `feat/ph15-primary-source-finder-v2`.
 - Official source destinations were checked against India Code, Supreme Court and eCourts services on 2026-10-01.
 - CI/build: **PASS** — CI #365 (TypeScript, unit tests, production build).
 
-**Phase 15 status:** CLOSED pending merge verification.
+**Phase 15 status:** CLOSED.
 
 **Next:** Phase 16 — Privacy and Local Storage.

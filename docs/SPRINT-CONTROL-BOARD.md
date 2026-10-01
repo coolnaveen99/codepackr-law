@@ -355,7 +355,7 @@
 
 ## Phase 15 — Primary Source Finder — COMPLETED (2026-10-01)
 
-**Implementation:** PR pending  
+**Implementation:** PR #86  
 **Exit audit:** `docs/PHASE-15-EXIT-AUDIT.md`  
 **Validation:** CI **#365** — TypeScript PASS, unit tests PASS, production build PASS.
 
@@ -370,7 +370,7 @@
 | Focused tests | **PASS** — CI #365 |
 | TypeScript + production build | **PASS** — CI #365 |
 
-**Blocker:** None known; CI is the merge gate.  
+**Blocker:** None.  
 **Next action:** Phase 16 — Privacy and Local Storage.
 
-**Phase 15 status:** **CLOSED pending merge verification**.
+**Phase 15 status:** **CLOSED**.
