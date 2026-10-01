@@ -89,6 +89,62 @@ describe('PH4-020 Citation Verification Engine — Official Authority Links', ()
   })
 })
 
+describe('PH4-040 Authority Network & Official Portal Link Generator', () => {
+  it('emits e-SCR, SCR search, SCI judgments, and India Code for Supreme Court / INSC', () => {
+    const sources = resolveOfficialSources({ courtHint: 'Supreme Court of India', neutralCourt: 'INSC' })
+    assert.ok(sources.some((s) => s.type === 'escr' && s.url.includes('escr.sci.gov.in')))
+    assert.ok(sources.some((s) => s.url.includes('scr.sci.gov.in/scrsearch')))
+    assert.ok(sources.some((s) => s.url.includes('main.sci.gov.in/judgments')))
+    assert.ok(sources.some((s) => s.type === 'india-code' && s.url.includes('indiacode.nic.in')))
+    assert.ok(sources.some((s) => s.url.includes('services.ecourts.gov.in')))
+  })
+
+  it('resolves expanded High Court map (Kerala, Karnataka, Telangana)', () => {
+    const ker = resolveOfficialSources({ neutralCourt: 'KER' })
+    assert.ok(ker.some((s) => s.url.includes('highcourtofkerala.nic.in')))
+
+    const kar = resolveOfficialSources({ neutralCourt: 'KAR' })
+    assert.ok(kar.some((s) => s.url.includes('karnataka') || s.url.includes('kar.nic.in')))
+
+    const tel = resolveOfficialSources({ neutralCourt: 'TEL' })
+    assert.ok(tel.some((s) => s.url.includes('tshc.gov.in')))
+  })
+
+  it('prefers matched primary source URL when provided', () => {
+    const sources = resolveOfficialSources({
+      courtHint: 'Supreme Court of India',
+      neutralCourt: 'INSC',
+      matchedOfficialUrl: 'https://example.official/judgment/123',
+    })
+    assert.equal(sources[0].url, 'https://example.official/judgment/123')
+    assert.equal(sources[0].name, 'Matched primary source')
+  })
+
+  it('does not false-positive Madras as Supreme Court (no bare "sc" substring trap)', () => {
+    const sources = resolveOfficialSources({ courtHint: 'Madras High Court', neutralCourt: 'MAD' })
+    assert.ok(sources.some((s) => s.url.includes('hcmadras.tn.gov.in')))
+    assert.ok(sources.some((s) => s.type === 'official-court' && s.url.includes('hcmadras')))
+  })
+
+  it('attaches authority network on verified citation results', () => {
+    const res = verifyCitationSync('(1973) 4 SCC 225')
+    assert.equal(res.status, 'verified')
+    assert.ok(res.officialSources.length >= 3)
+    assert.ok(res.officialSources.some((s) => s.type === 'escr' || s.type === 'official-court'))
+    assert.ok(res.officialSources.some((s) => s.type === 'india-code'))
+  })
+
+  it('deduplicates identical URLs in the authority network', () => {
+    const sources = resolveOfficialSources({
+      courtHint: 'Supreme Court of India',
+      neutralCourt: 'INSC',
+      matchedOfficialUrl: 'https://www.sci.gov.in/',
+    })
+    const urls = sources.map((s) => s.url)
+    assert.equal(urls.length, new Set(urls).size)
+  })
+})
+
 describe('PH4-020 Citation Verification Engine — Batch and Async Operations', () => {
   it('synchronously verifies a multi-line citation batch', () => {
     const text = '(1973) 4 SCC 225\n(1997) 6 SCC 241\n2023 INSC 99999'
