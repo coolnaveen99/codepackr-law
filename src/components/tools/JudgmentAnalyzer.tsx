@@ -1,64 +1,82 @@
 import { useEffect, useMemo, useState } from 'react'
-import { ArrowLeft, Check, Copy, Scale, Sparkles } from 'lucide-react'
+import { ArrowLeft, Check, Copy, FileText, Scale, Sparkles, Upload } from 'lucide-react'
+import * as mammoth from 'mammoth'
 import { loadAndClearJudgmentHandoff, type JudgmentHandoffPayload } from '../../lib/judgmentHandoff'
+import {
+  analyzeJudgmentText,
+  extractCitationCandidates,
+  sectionLabel,
+  type JudgmentAnalysis,
+  type JudgmentSectionKey,
+} from '../../lib/judgmentAnalyzer'
 
 const SAMPLE_JUDGMENT = `MANEKA GANDHI V. UNION OF INDIA
 Citation: AIR 1978 SC 597
 Court: Supreme Court of India
 
-BRIEF FACTS:
+FACTS:
 The petitioner's passport was impounded by the Government of India under Section 10(3)(c) of the Passports Act in public interest without giving any prior hearing or reason. The petitioner challenged the order under Article 32 of the Constitution.
 
+PROCEDURAL HISTORY:
+The petitioner approached the Supreme Court under Article 32 challenging the passport impounding order.
+
 ISSUES:
-Whether Section 10(3)(c) of the Passports Act violates Article 14, 19(1)(a), 19(1)(g) and 21 of the Constitution.
+Whether Section 10(3)(c) of the Passports Act violates Articles 14, 19 and 21 of the Constitution.
 Whether the procedure established by law must be just, fair and reasonable.
+
+SUBMISSIONS:
+The petitioner challenged the absence of prior notice and hearing and contended that the procedure was arbitrary and unfair.
+
+STATUTORY PROVISIONS:
+Article 14, Article 19, Article 21 and Section 10(3)(c) of the Passports Act.
+
+AUTHORITIES CITED:
+AIR 1978 SC 597.
 
 REASONING:
 Articles 14, 19 and 21 are not mutually exclusive. The law must satisfy the test of reason and cannot be arbitrary or unfair. Procedure prescribed by law for depriving a person of life or personal liberty must be right, just and fair and not arbitrary, fanciful or oppressive.
 
-HELD:
-The right to travel abroad is part of personal liberty under Article 21. Natural justice is an essential element of fair procedure. An order impounding a passport without audi alteram partem is void unless post-decisional hearing is expeditiously provided.`
+FINDINGS:
+The procedure affecting personal liberty must satisfy the constitutional requirement of fairness.
 
-/** Heuristic section splitter — educational only; does not invent holdings. */
-function extractBlocks(text: string) {
-  const t = text.replace(/\r\n/g, '\n').trim()
-  if (!t) return null
+RATIO:
+The right to travel abroad is part of personal liberty under Article 21. Natural justice is an essential element of fair procedure.
 
-  const lines = t.split('\n').map((l) => l.trim()).filter(Boolean)
-  const head = lines.slice(0, 8).join(' ')
+OBITER:
+The Court discussed the relationship between fundamental rights and constitutional procedure more broadly.
 
-  const findSection = (labels: RegExp[]) => {
-    for (let i = 0; i < lines.length; i++) {
-      if (labels.some((re) => re.test(lines[i]))) {
-        const chunk: string[] = []
-        for (let j = i + 1; j < Math.min(i + 40, lines.length); j++) {
-          if (/^(facts|issues?|held|order|conclusion|ratio|arguments?)\b/i.test(lines[j]) && j > i + 1) break
-          chunk.push(lines[j])
-        }
-        return chunk.join(' ').slice(0, 1200)
-      }
-    }
-    return ''
-  }
+FINAL ORDER:
+The impugned order was set aside subject to the directions recorded by the Court.`
 
-  return {
-    metadataHint: head.slice(0, 400),
-    facts: findSection([/^facts?\b/i, /^brief facts\b/i]),
-    issues: findSection([/^issues?\b/i, /^question/i]),
-    reasoning: findSection([/^reasoning\b/i, /^discussion\b/i, /^analysis\b/i]),
-    held: findSection([/^held\b/i, /^held that\b/i, /^order\b/i, /^conclusion\b/i]),
-    wordCount: t.split(/\s+/).length,
-    paraCount: (t.match(/\n\s*\n/g) || []).length + 1,
-  }
+const SECTION_ORDER: JudgmentSectionKey[] = [
+  'caseMetadata',
+  'facts',
+  'proceduralHistory',
+  'issues',
+  'submissions',
+  'statutoryProvisions',
+  'authorities',
+  'evidence',
+  'reasoning',
+  'findings',
+  'ratio',
+  'obiter',
+  'finalOrder',
+  'unresolvedQuestions',
+  'followUpAuthorities',
+]
+
+function inputKindFromName(name: string): JudgmentAnalysis['inputKind'] {
+  return name.toLowerCase().endsWith('.docx') ? 'docx' : 'txt'
 }
 
 export function JudgmentAnalyzer() {
   const [text, setText] = useState('')
-  const [handoff, setHandoff] = useState<{
-    payload: JudgmentHandoffPayload | null
-    source: 'query' | 'session' | null
-  }>({ payload: null, source: null })
-  const [copiedHeld, setCopiedHeld] = useState(false)
+  const [analysis, setAnalysis] = useState<JudgmentAnalysis | null>(null)
+  const [handoff, setHandoff] = useState<{ payload: JudgmentHandoffPayload | null; source: 'query' | 'session' | null }>({ payload: null, source: null })
+  const [copied, setCopied] = useState(false)
+  const [loadingFile, setLoadingFile] = useState(false)
+  const [fileError, setFileError] = useState('')
 
   useEffect(() => {
     const { payload, initialText, source } = loadAndClearJudgmentHandoff()
@@ -68,48 +86,60 @@ export function JudgmentAnalyzer() {
     }
   }, [])
 
-  const blocks = useMemo(() => extractBlocks(text), [text])
+  useEffect(() => {
+    setAnalysis(text.trim() ? analyzeJudgmentText(text, 'text') : null)
+  }, [text])
 
-  const copyHeldToClipboard = async () => {
-    if (!blocks?.held) return
+  const citationCandidates = useMemo(() => extractCitationCandidates(text), [text])
+  const handoffTitle = handoff.payload?.caseName || handoff.payload?.citation || (handoff.payload?.canonicalEntityId ? `Canonical ID: ${handoff.payload.canonicalEntityId}` : null)
+
+  const loadFile = async (file: File) => {
+    setFileError('')
+    setLoadingFile(true)
     try {
-      await navigator.clipboard.writeText(blocks.held)
-      setCopiedHeld(true)
-      setTimeout(() => setCopiedHeld(false), 2000)
+      const kind = inputKindFromName(file.name)
+      if (kind === 'txt') {
+        setText(await file.text())
+      } else {
+        const arrayBuffer = await file.arrayBuffer()
+        const result = await mammoth.extractRawText({ arrayBuffer })
+        setText(result.value)
+      }
+      setHandoff({ payload: null, source: null })
     } catch {
-      // clipboard access error
+      setFileError('The selected document could not be read. Use a UTF-8 TXT or a DOCX file with readable text.')
+    } finally {
+      setLoadingFile(false)
     }
   }
 
-  const handoffTitle =
-    handoff.payload?.caseName ||
-    handoff.payload?.citation ||
-    (handoff.payload?.canonicalEntityId ? `Canonical ID: ${handoff.payload.canonicalEntityId}` : null)
+  const copyRatio = async () => {
+    const value = analysis?.sections.ratio
+    if (!value) return
+    try {
+      await navigator.clipboard.writeText(value)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 1800)
+    } catch {
+      // Clipboard permissions can be denied by the browser.
+    }
+  }
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-5 w-full overflow-x-hidden">
       <section className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-7 shadow-sm">
         <div className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-[#8B1E3F]">
           <Scale className="size-4" /> Judgment Analyzer
         </div>
-        <h1 className="mt-2 text-2xl sm:text-3xl font-black tracking-tight">Structure user-provided judgment text</h1>
+        <h1 className="mt-2 text-2xl sm:text-3xl font-black tracking-tight">Decode a judgment without inventing legal facts</h1>
         <p className="mt-2 text-sm text-slate-600 dark:text-slate-400 max-w-3xl">
-          Paste judgment text (TXT). Heuristic headings only — never invents paragraph numbers, holdings, or citations that are not in the text.
+          Analyse pasted judgment text or load TXT/DOCX locally. The analyzer only structures labelled source text; it does not invent judges, citations, paragraph numbers, holdings, or legal conclusions.
         </p>
 
         {handoff.source && (
           <div className="mt-3 flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-blue-200 dark:border-blue-900 bg-blue-50/70 dark:bg-blue-950/40 p-3 text-xs text-blue-950 dark:text-blue-200">
-            <div className="flex items-center gap-2">
-              <Scale className="size-4 text-blue-700 dark:text-blue-300 shrink-0" />
-              <span>
-                <strong>Handed off from Legal Research Workbench</strong>
-                {handoffTitle ? ` for “${handoffTitle}”.` : '.'} Ready for judgment text paste.
-              </span>
-            </div>
-            <a
-              href="/tool/research-workbench"
-              className="inline-flex items-center gap-1 font-bold text-[#8B1E3F] hover:underline dark:text-blue-300"
-            >
+            <span><strong>Handed off from Legal Research Workbench</strong>{handoffTitle ? ` for “${handoffTitle}”.` : '.'}</span>
+            <a href="/tool/research-workbench" className="inline-flex min-h-[44px] items-center gap-1 px-2 font-bold text-[#8B1E3F] hover:underline dark:text-blue-300">
               <ArrowLeft className="size-3.5" /> Return to Workbench
             </a>
           </div>
@@ -117,87 +147,112 @@ export function JudgmentAnalyzer() {
 
         <textarea
           value={text}
-          onChange={(e) => setText(e.target.value)}
+          onChange={(e) => { setText(e.target.value); setHandoff({ payload: null, source: null }) }}
           rows={12}
-          placeholder="Paste judgment text here (or paste below metadata header)…"
+          placeholder="Paste the judgment text here. Clear headings such as FACTS, ISSUES, REASONING and FINAL ORDER improve extraction confidence."
           className="mt-4 w-full rounded-2xl border border-slate-200 dark:border-slate-700 bg-transparent p-3 text-sm font-mono"
+          aria-label="Judgment text"
         />
+
         <div className="mt-3 flex flex-wrap gap-2">
-          <button
-            type="button"
-            className="inline-flex items-center gap-1 rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800"
-            onClick={() => setText(SAMPLE_JUDGMENT)}
-          >
-            <Sparkles className="size-3.5 text-[#8B1E3F]" /> Load sample landmark
+          <label className="inline-flex min-h-[44px] cursor-pointer items-center gap-1 rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800">
+            <Upload className="size-3.5" />
+            {loadingFile ? 'Reading…' : 'Load TXT / DOCX'}
+            <input
+              type="file"
+              accept=".txt,text/plain,.docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+              className="sr-only"
+              disabled={loadingFile}
+              onChange={(e) => { const file = e.target.files?.[0]; if (file) void loadFile(file); e.currentTarget.value = '' }}
+            />
+          </label>
+          <button type="button" className="inline-flex min-h-[44px] items-center gap-1 rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800" onClick={() => setText(SAMPLE_JUDGMENT)}>
+            <Sparkles className="size-3.5 text-[#8B1E3F]" /> Load sample
           </button>
-          <button
-            type="button"
-            className="rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800"
-            onClick={() => {
-              setText('')
-              setHandoff({ payload: null, source: null })
-            }}
-          >
+          <button type="button" className="min-h-[44px] rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-2 text-xs font-bold hover:bg-slate-50 dark:hover:bg-slate-800" onClick={() => { setText(''); setAnalysis(null); setHandoff({ payload: null, source: null }); setFileError('') }}>
             Clear
           </button>
         </div>
+        {fileError && <p className="mt-2 text-xs font-semibold text-red-700 dark:text-red-300" role="alert">{fileError}</p>}
       </section>
 
-      {!blocks && (
+      {!analysis ? (
         <div className="rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 p-8 text-center text-sm text-slate-500">
-          Empty — paste a judgment to extract structural blocks.
+          Empty — add a judgment to generate a source-traceable structure.
         </div>
-      )}
+      ) : (
+        <>
+          <section className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+            {[
+              ['Words', analysis.wordCount.toLocaleString()],
+              ['Paragraphs', analysis.paragraphCount.toLocaleString()],
+              ['Source spans', analysis.spans.length.toLocaleString()],
+              ['Citations found', citationCandidates.length.toLocaleString()],
+            ].map(([label, value]) => (
+              <div key={label} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4">
+                <div className="text-[10px] font-extrabold uppercase tracking-wide text-slate-500">{label}</div>
+                <div className="mt-1 text-xl font-black">{value}</div>
+              </div>
+            ))}
+          </section>
 
-      {blocks && (
-        <div className="space-y-3">
-          <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500 font-bold">
-            <div>
-              {blocks.wordCount.toLocaleString()} words · ~{blocks.paraCount} paragraphs · extraction confidence: heuristic
+          {analysis.warnings.length > 0 && (
+            <section className="rounded-2xl border border-amber-200 dark:border-amber-900 bg-amber-50/70 dark:bg-amber-950/30 p-4">
+              <h2 className="text-xs font-extrabold uppercase tracking-wide text-amber-800 dark:text-amber-200">Verification notes</h2>
+              <ul className="mt-2 list-disc pl-5 text-xs text-amber-900 dark:text-amber-100 space-y-1">
+                {analysis.warnings.map((warning) => <li key={warning}>{warning}</li>)}
+              </ul>
+            </section>
+          )}
+
+          <section className="rounded-2xl border border-blue-200 dark:border-blue-900 bg-blue-50/60 dark:bg-blue-950/30 p-4">
+            <div className="flex items-start gap-2">
+              <FileText className="mt-0.5 size-4 shrink-0 text-blue-700 dark:text-blue-300" />
+              <div>
+                <h2 className="text-xs font-extrabold uppercase tracking-wide text-blue-800 dark:text-blue-200">Source traceability</h2>
+                <p className="mt-1 text-xs text-blue-900 dark:text-blue-100">
+                  Extracted blocks retain source line and paragraph ranges. Structure is generated from user-provided text; it is not an independent legal finding.
+                </p>
+              </div>
             </div>
-            {blocks.held && (
-              <button
-                type="button"
-                onClick={copyHeldToClipboard}
-                className="inline-flex items-center gap-1 text-xs font-bold text-blue-800 hover:text-blue-950 dark:text-blue-300"
-                title="Copy Held / Ratio text for use in Research Workbench holding field"
-              >
-                {copiedHeld ? (
-                  <>
-                    <Check className="size-3.5 text-emerald-600" /> Copied Held!
-                  </>
-                ) : (
-                  <>
-                    <Copy className="size-3.5" /> Copy Held for Workbench
-                  </>
-                )}
-              </button>
+            {citationCandidates.length > 0 && (
+              <p className="mt-3 text-xs font-semibold text-blue-900 dark:text-blue-100">Citation candidates: {citationCandidates.join(' · ')}</p>
             )}
+          </section>
+
+          <div className="space-y-3">
+            {SECTION_ORDER.map((key) => {
+              const body = analysis.sections[key]
+              const span = analysis.spans.find((item) => item.section === key)
+              return (
+                <article key={key} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 sm:p-5">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <h2 className="text-sm font-extrabold">{sectionLabel(key)}</h2>
+                    {key === 'ratio' && body && (
+                      <button type="button" onClick={copyRatio} className="inline-flex min-h-[44px] items-center gap-1 px-2 text-xs font-bold text-blue-800 hover:underline dark:text-blue-300">
+                        {copied ? <Check className="size-3.5" /> : <Copy className="size-3.5" />}
+                        {copied ? 'Copied' : 'Copy ratio'}
+                      </button>
+                    )}
+                  </div>
+                  <p className="mt-2 whitespace-pre-wrap break-words text-sm text-slate-800 dark:text-slate-200">
+                    {body || 'No labelled source block detected. The analyzer will not infer this section from unrelated text.'}
+                  </p>
+                  {span && (
+                    <p className="mt-3 text-[10px] font-semibold text-slate-400">
+                      Source: user-provided · lines {span.startLine}–{span.endLine} · paragraphs {span.startParagraph}–{span.endParagraph} · extraction confidence: {span.confidence}
+                    </p>
+                  )}
+                </article>
+              )
+            })}
           </div>
-          {(
-            [
-              ['Header / metadata (first lines)', blocks.metadataHint],
-              ['Facts (if labelled)', blocks.facts],
-              ['Issues (if labelled)', blocks.issues],
-              ['Reasoning / discussion (if labelled)', blocks.reasoning],
-              ['Held / order (if labelled)', blocks.held],
-            ] as const
-          ).map(([title, body]) => (
-            <article key={title} className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4">
-              <h2 className="text-xs font-extrabold uppercase tracking-wide text-slate-500">{title}</h2>
-              <p className="mt-2 text-sm whitespace-pre-wrap text-slate-800 dark:text-slate-200">
-                {body || 'No labelled block detected in the pasted text. Add clear headings or read the full judgment.'}
-              </p>
-              <p className="mt-2 text-[10px] text-slate-400">Source: user-provided text · generated structure vs source text</p>
-            </article>
-          ))}
-        </div>
+        </>
       )}
 
       <p className="text-[11px] text-slate-500">
-        PDF extraction is not enabled in this phase (paste/TXT only). Educational companion — the official judgment remains authoritative.
+        TXT and DOCX are processed in the browser. PDF extraction is intentionally not enabled until a genuine local PDF text-extraction path is implemented. The official judgment remains authoritative.
       </p>
     </div>
   )
 }
-
