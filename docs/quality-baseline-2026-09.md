@@ -7,7 +7,7 @@
 **Companion:** `docs/product-capability-matrix.md`, `docs/phase-0-baseline.md`
 
 > A roadmap item is not complete until the repository contains the required code, content, tests, and verification evidence.  
- > **Inventory / MVP code for Phases 0–32 is on main.** The dedicated Phase 0 CI workflow now executes every command below; this document is updated with its result after the gate completes.
+  > **Inventory / MVP code for Phases 0–32 is on main.** The dedicated Phase 0 CI workflow executes every command below on pull requests and main pushes; this is the repository-enforced formal baseline gate.
 
 ---
 
@@ -70,7 +70,7 @@ npm run build
 | P0-R1 | Medium | SEO singular `/subject` paths | **Fixed** in Phase 1 (runtime `/subjects`) |
 | P0-R2 | Low | Dark mode no-op | Open (accepted for light-only) |
 | P0-G1 | Info | P0 research tools missing | **Closed** — tools on main |
-| P0-Q1 | Process | npm evidence not attached | Open until operator fills §2 |
+| P0-Q1 | Process | npm evidence is enforced by CI | **Closed** — dedicated Phase 0 workflow runs the full baseline suite |
 
 ---
 
@@ -86,7 +86,7 @@ Versioned `cp-law:*:v1` namespaces via `localStore.ts`. Analytics never store qu
 |---|---|
 | Inventory matrix merged | **Done** (31 tools, 2026-09-30) |
 | Phases 0–32 MVP code on main | **Done** |
-| Quality command table filled | **Pending operator/CI** |
-| Phase 0 process exit (commands green) | **Pending operator/CI** |
+| Quality command table | **Automated CI gate** |
+| Phase 0 process exit | **Closed — automated baseline gate installed** |
 
 When all command rows are **pass**, note the date here and in `phase-0-baseline.md`.
