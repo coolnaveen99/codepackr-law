@@ -280,5 +280,22 @@ Implementation is verified in `codepackr-law`.
 
 **Phase 21 status:** CLOSED.
 
-**Next:** Phase 22 — Analytics Without Legal-Data Surveillance.
+## Phase 22 — Analytics Without Legal-Data Surveillance (CLOSED)
+
+Implementation is verified in `codepackr-law`.
+
+- `src/lib/analytics.ts` defines 4 aggregate metrics categories: tool opens, workflow completions, feature uses, and anonymous performance counters.
+- Strict key validation (`isPrivacySafeKey`) enforces opaque identifiers and rejects natural language, spaces, length > 64 chars, and dispute/legal terms.
+- Zero surveillance policy: strictly blocks logging of query text, case facts, party/client names, documents, notes, or drafts.
+- Browser-local storage under `cp-law:analytics:v1`; zero data transmitted to remote trackers.
+- User opt-in / opt-out preference stored under `cp-law:analytics:opt-in:v1` with automatic counter purging on disable.
+- `/tool/usage-metrics` workspace upgraded with category counters, opt-out switch, policy comparison, and clear controls.
+- Focused regression coverage in `tests/analytics.test.ts` (5/5 pass).
+- Exit audit: `docs/PHASE-22-EXIT-AUDIT.md`.
+- Validation: TypeScript PASS (`tsc --noEmit`), 179/179 unit tests PASS.
+
+**Phase 22 status:** CLOSED.
+
+**Next:** Phase 23 — Testing Strategy.
+
 
