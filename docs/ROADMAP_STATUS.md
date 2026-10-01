@@ -404,3 +404,10 @@ A real lazy judgment loader was added to the Case Law Library so the large judgm
 The binding governance policy and agent instructions cover proprietary legal databases, headnotes, annotations, proprietary summaries, copyrighted templates and subscription commentary, with a preference for official/public/licensed sources.
 
 **Exit audit:** `docs/PHASE-31-EXIT-AUDIT.md`.
+
+
+## Phase 32 — Trust-Preserving Monetization (CLOSED)
+
+The monetization policy defines optional future paid features while keeping basic legal information and safety information free and protecting sensitive workflows from aggressive advertising.
+
+**Exit audit:** `docs/PHASE-32-EXIT-AUDIT.md`.
