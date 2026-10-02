@@ -262,7 +262,7 @@ export function Header({
           <button type="button" ref={searchTriggerRef} className="cp-law-search-trigger" onClick={openSearch} aria-label="Open global search">
             <Search size={17} />
             <span>Search law, cases, sections, tools…</span>
-            <kbd>⌘ K</kbd>
+            <kbd>⌘ / Ctrl K</kbd>
           </button>
         </div>
       </header>
