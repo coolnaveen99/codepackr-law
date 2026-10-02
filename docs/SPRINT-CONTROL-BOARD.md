@@ -988,3 +988,20 @@ The binding monetization policy preserves the free legal-information/safety base
 **Safety decision:** Do not delete legacy topic modules. PA-004 remains controlling for legacy removal.
 
 **Next executable phase:** Post-Migration Phase 15 — Legacy Dependency Readiness.
+
+## Post-Migration Integration Workstream — Phase 15
+
+**Status:** **COMPLETED — 2026-10-02**
+
+| Gate | Result |
+|---|---|
+| Legacy fallback boundary inventory | **PASS** |
+| Canonical manifest / graph boundary | **PASS** |
+| Catalog-vs-canonical audit mechanism | **PASS** |
+| PA-004 criteria review | **PASS** |
+| Safe deletion scope | **NONE AUTHORIZED** |
+| Global legacy deletion | **BLOCKED** |
+
+**Decision:** Legacy fallback remains active. No `src/data/topics/**` deletion or fallback-adapter removal is authorized. Historical PA-004 evidence records approximately 3,561 legacy topic files versus approximately 326 canonical topic entities / 719 total canonical entities, so the sets are not equivalent.
+
+**Next executable phase:** Post-Migration Phase 16 — Canonical Delivery Hardening.
