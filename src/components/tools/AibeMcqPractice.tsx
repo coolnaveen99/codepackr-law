@@ -12,6 +12,9 @@ export interface AibeMcqPracticeProps {
   onOpenSubject?: (subjectSlug: string) => void
 }
 
+/**
+ * AIBE MCQ Practice and Mock Exam Tool Component
+ */
 export const AibeMcqPractice: React.FC<AibeMcqPracticeProps> = ({
   initialSubject = 'all',
   initialTopicId = '',
