@@ -3,7 +3,7 @@
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
 **Roadmap position:** Phase 32 — **CLOSED** · Phase 31 — **CLOSED** · Phase 30 — **CLOSED** · Phase 29 — **CLOSED** · Phase 28 — **CLOSED** · Phase 27 — **CLOSED** · Phase 26 — **CLOSED**
-**Updated:** 2026-10-02 (UI-003 to UI-013 Chambers Record adoption; UI-002 foundation already on main)
+**Updated:** 2026-10-02 (UI redesign stabilization UI-RD-09/UI-RD-10 closure)
 
 ## Verified completed
 
@@ -1045,11 +1045,11 @@ The completed UI-002 through UI-013 foundation/adoption work is not reopened. Th
 | UI-RD-06 | Visual System Consistency | **COMPLETED — combined audit** |
 | UI-RD-07 | Accessibility & Interaction Quality | **COMPLETED — combined audit** |
 | UI-RD-08 | Performance & Build Hardening | **COMPLETED — combined audit** |
-| UI-RD-09 | Production Validation | **BLOCKED — Vercel build-rate limit** |
-| UI-RD-10 | Final UI Release Closure | **BLOCKED — waits for UI-RD-09** |
+| UI-RD-09 | Production Validation | **COMPLETED — Vercel success on `1cfc558a9f7dcd4b6c1f1d4b536d1ae28d5868ce`** |
+| UI-RD-10 | Final UI Release Closure | **COMPLETED — final evidence reconciled** |
 
 **Operating rule:** one phase at a time. Each phase requires implementation/validation evidence, backlog update, control-board update, and direct commit to `main` before the next phase begins.
 
-**Current release gate:** clear the Vercel build-rate-limit condition, then complete UI-RD-09 production validation and UI-RD-10 final closure.
+**Current release gate:** CLOSED. Vercel deployment succeeded on `1cfc558a9f7dcd4b6c1f1d4b536d1ae28d5868ce`; UI-RD-09 and UI-RD-10 are complete. Direct production URL inspection remains an environmental limitation in the current validation tool.
 
 **Combined audit:** `docs/UI-RD-03-10-COMBINED-RELEASE-AUDIT.md`
