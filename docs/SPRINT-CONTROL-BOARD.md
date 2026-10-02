@@ -149,6 +149,156 @@
 
 **Next action:** Production Readiness & Integration Hardening; UI-004–UI-013 are already adopted.
 
+## Phase-by-Phase Sprint Execution Plan
+
+**Execution model:** one phase at a time. Each phase is a self-contained sprint with implementation, validation evidence, board update, and explicit exit criteria. Do not reopen completed roadmap Phases 0–32.
+
+### Sprint Phase PR-004 — Mobile E2E
+**Goal:** prove the redesigned Chambers Record shell and critical workflows on real mobile viewport sizes.
+
+| Task | Status |
+|---|---|
+| PR-004.01 — Mobile shell/navigation regression matrix | **BACKLOG** |
+| PR-004.02 — Mobile global-search ↔ navigation overlay regression | **BACKLOG** |
+| PR-004.03 — Mobile route/navigation workflow coverage | **BACKLOG** |
+| PR-004.04 — Mobile no-horizontal-overflow assertions | **BACKLOG** |
+| PR-004.05 — Mobile critical learning/research/practice workflow E2E | **BACKLOG** |
+| PR-004.06 — Chromium mobile viewport validation | **BACKLOG** |
+| PR-004.07 — CI evidence + exit audit | **BACKLOG** |
+
+**Exit:** all agreed mobile workflows pass in Playwright; no horizontal overflow; overlays close correctly; CI evidence recorded.
+
+### Sprint Phase PR-005 — Accessibility Audit
+**Goal:** validate the redesigned UI against the accessibility contract.
+
+| Task | Status |
+|---|---|
+| PR-005.01 — Keyboard-only navigation audit | **BACKLOG** |
+| PR-005.02 — Focus order and focus visibility audit | **BACKLOG** |
+| PR-005.03 — Dialog/drawer/search accessibility audit | **BACKLOG** |
+| PR-005.04 — Form labels, errors, and instructions audit | **BACKLOG** |
+| PR-005.05 — Table/card responsive semantics audit | **BACKLOG** |
+| PR-005.06 — Screen-reader names/roles/states audit | **BACKLOG** |
+| PR-005.07 — Contrast, reduced-motion, and target-size audit | **BACKLOG** |
+| PR-005.08 — Automated + manual accessibility evidence | **BACKLOG** |
+| PR-005.09 — CI evidence + exit audit | **BACKLOG** |
+
+**Exit:** identified accessibility defects are fixed or explicitly documented; automated and manual evidence is recorded.
+
+### Sprint Phase PR-006 — Legal-content Integrity
+**Status:** **COMPLETED**
+
+| Task | Status |
+|---|---|
+| PR-006.01 — Canonical manifest integrity checks | **COMPLETED** |
+| PR-006.02 — Catalog ↔ canonical topic coverage audit | **COMPLETED** |
+| PR-006.03 — Per-subject migration-gap report | **COMPLETED** |
+| PR-006.04 — Canonical topic delivery validation | **COMPLETED** |
+| PR-006.05 — CI integrity gate | **COMPLETED** |
+| PR-006.06 — Exit documentation | **COMPLETED** |
+
+**Exit:** executable audit is in CI; migration gaps are explicit and are not hidden by legacy fallback.
+
+### Sprint Phase PR-007 — Canonical Content Delivery
+**Status:** **COMPLETED**
+
+| Task | Status |
+|---|---|
+| PR-007.01 — Canonical base URL resolver | **COMPLETED** |
+| PR-007.02 — ContentGateway canonical-first integration | **COMPLETED** |
+| PR-007.03 — Manifest delivery health check | **COMPLETED** |
+| PR-007.04 — Relationship-index delivery check | **COMPLETED** |
+| PR-007.05 — Representative entity delivery probes | **COMPLETED** |
+| PR-007.06 — Environment override contract | **COMPLETED** |
+| PR-007.07 — CI delivery gate | **COMPLETED** |
+| PR-007.08 — Exit documentation | **COMPLETED** |
+
+**Exit:** canonical content is independently deliverable through the defined gateway contract; legacy fallback remains only as a migration safety net.
+
+### Sprint Phase PR-008 — Bundle & Performance Optimization
+**Goal:** reduce initial JS and protect route-level performance after the UI redesign.
+
+| Task | Status |
+|---|---|
+| PR-008.01 — Production bundle baseline | **BACKLOG** |
+| PR-008.02 — Route-level chunk analysis | **BACKLOG** |
+| PR-008.03 — Heavy tool lazy-loading audit | **BACKLOG** |
+| PR-008.04 — Design-system/runtime import audit | **BACKLOG** |
+| PR-008.05 — Judgment/topic corpus loading audit | **BACKLOG** |
+| PR-008.06 — CSS and asset payload audit | **BACKLOG** |
+| PR-008.07 — Performance regression tests/budget | **BACKLOG** |
+| PR-008.08 — CI evidence + exit audit | **BACKLOG** |
+
+**Exit:** baseline and post-change bundle evidence are recorded and no protected workflow regresses.
+
+### Sprint Phase PR-009 — Security & Privacy Final Audit
+**Goal:** verify that the redesigned application has not weakened the established privacy/security boundary.
+
+| Task | Status |
+|---|---|
+| PR-009.01 — Client-side legal-data boundary audit | **BACKLOG** |
+| PR-009.02 — Network/request inventory | **BACKLOG** |
+| PR-009.03 — Local-storage namespace audit | **BACKLOG** |
+| PR-009.04 — Upload/import boundary audit | **BACKLOG** |
+| PR-009.05 — XSS/content rendering audit | **BACKLOG** |
+| PR-009.06 — Dependency/security audit | **BACKLOG** |
+| PR-009.07 — Secrets/environment exposure audit | **BACKLOG** |
+| PR-009.08 — Production privacy smoke test | **BACKLOG** |
+| PR-009.09 — CI evidence + exit audit | **BACKLOG** |
+
+**Exit:** no unexplained legal-data network path, unsafe rendering path, secret exposure, or privacy regression remains.
+
+### Sprint Phase PR-010 — Production Readiness Exit
+**Goal:** certify the complete post-redesign release baseline.
+
+| Task | Status |
+|---|---|
+| PR-010.01 — Re-run TypeScript/unit/build gates | **BACKLOG** |
+| PR-010.02 — Desktop shell regression suite | **BACKLOG** |
+| PR-010.03 — Mobile E2E regression suite | **BACKLOG** |
+| PR-010.04 — Accessibility evidence review | **BACKLOG** |
+| PR-010.05 — Canonical content integrity/delivery review | **BACKLOG** |
+| PR-010.06 — Security/privacy review | **BACKLOG** |
+| PR-010.07 — Bundle/performance review | **BACKLOG** |
+| PR-010.08 — SEO/canonical URL smoke test | **BACKLOG** |
+| PR-010.09 — Production Vercel deployment verification | **BACKLOG** |
+| PR-010.10 — Final production smoke test | **BACKLOG** |
+| PR-010.11 — Release/rollback checklist | **BACKLOG** |
+| PR-010.12 — Production Readiness Exit Audit | **BACKLOG** |
+
+**Exit:** every P0 gate has evidence; production smoke passes; board and exit audit agree; no unresolved release blocker.
+
+### Content Migration Sprint Track — After PR-006/PR-007
+
+This is a separate content workstream and does **not** reopen the closed Phase 0–32 product roadmap.
+
+| Sprint | Scope | Status |
+|---|---|---|
+| CM-001 | Baseline canonical-vs-catalog gap inventory | **READY** |
+| CM-002 | Constitution / core public-law subject migration | **BACKLOG** |
+| CM-003 | Contract / commercial-law subject migration | **BACKLOG** |
+| CM-004 | CPC / civil-procedure subject migration | **BACKLOG** |
+| CM-005 | Criminal-law subject migration (BNS/transition-aware) | **BACKLOG** |
+| CM-006 | BNSS / criminal-procedure subject migration | **BACKLOG** |
+| CM-007 | BSA / evidence subject migration | **BACKLOG** |
+| CM-008 | Family-law subject migration | **BACKLOG** |
+| CM-009 | Torts subject migration | **BACKLOG** |
+| CM-010 | PIL / constitutional-remedies subject migration | **BACKLOG** |
+| CM-011 | Remaining subjects and long-tail topics | **BACKLOG** |
+| CM-012 | Full catalog parity audit and migration closure | **BACKLOG** |
+
+**Migration rule:** each content sprint must pass source/provenance, verification-status, schema, relationship, route, SEO, and canonical-delivery checks before its topics are considered migrated.
+
+### Sprint sequencing
+
+**PR-004 → PR-005 → PR-008 → PR-009 → PR-010**
+
+PR-006 and PR-007 are completed gates and remain mandatory CI protections.
+
+**Content migration:** CM-001 begins after the current PR-006/PR-007 CI validation; subsequent CM sprints run independently but must preserve the canonical content boundary.
+
+---
+
 ## Current sprint backlog
 
 | ID | Work | Status | Priority |
