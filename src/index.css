@@ -339,6 +339,7 @@ html.dark .nav-drawer-panel {
   background: color-mix(in srgb, var(--cp-ds-raised) 96%, transparent);
   backdrop-filter: blur(14px);
 }
+.cp-law-topbar.is-sidebar-collapsed { margin-left: 4.75rem; }
 .cp-law-topbar-inner { min-height: 4.5rem; max-width: 90rem; margin: 0 auto; padding: .75rem 1.5rem; display: flex; align-items: center; gap: 1rem; }
 .cp-law-context { min-width: 0; flex: 1; display: flex; flex-direction: column; }
 .cp-law-context-kicker { color: var(--cp-ds-accent); font-size: .65rem; font-weight: 750; letter-spacing: .11em; text-transform: uppercase; }
