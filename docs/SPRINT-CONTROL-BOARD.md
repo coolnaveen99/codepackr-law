@@ -2,7 +2,7 @@
 
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
-**Roadmap position:** Phase 32 — **CLOSED** · Phase 31 — **CLOSED** · Phase 30 — **CLOSED** · Phase 29 — **CLOSED** · Phase 28 — **CLOSED** · Phase 27 — **CLOSED** · Phase 26 — **CLOSED**
+**Roadmap position:** Phase 32 — **CLOSED** · Phase 31 — **CLOSED** · Phase 30 — **CLOSED** · Phase 29 — **CLOSED** · Phase 28 — **VALIDATION IN PROGRESS** · Phase 27 — **CLOSED** · Phase 26 — **VALIDATION IN PROGRESS**
 **Updated:** 2026-10-01 (Phase 0 formal quality gate completed)
 
 ## Verified completed
@@ -60,7 +60,7 @@
 | Focused Phase 26 regression coverage | **PASS** |
 | TypeScript/build gate | **PASS** — existing implementation was covered by the Phase 23 quality gate |
 
-**Phase 26 status:** **CLOSED** — implementation was already covered by the existing Phase 23 quality gate; this closure PR added documentation/evidence only.
+**Phase 26 status:** **VALIDATION IN PROGRESS** — implementation was already covered by the existing Phase 23 quality gate; this closure PR added documentation/evidence only.
 
 ## Current sprint backlog
 

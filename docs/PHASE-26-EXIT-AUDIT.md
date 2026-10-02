@@ -3,7 +3,7 @@
 **Phase:** 26 — Court / State Configuration  
 **Repository:** `coolnaveen99/codepackr-law`  
 **Date:** 2026-10-01  
-**Status:** CLOSED after PR CI validation
+**Status:** VALIDATION IN PROGRESS — dedicated PR quality gate
 
 ## Scope
 
@@ -36,4 +36,4 @@ This phase does **not** claim nationwide court coverage, exhaustive filing proce
 
 ## Exit decision
 
-**ACCEPT — Phase 26 CLOSED.** The implementation satisfies the roadmap Phase 26 scope with a deliberately bounded verified seed set. Phase 27 is the next executable phase.
+**Exit decision:** Phase 26 implementation is present and its closure audit exists, but the original implementation PR and independently retrievable CI run have not been located. This dedicated validation PR will establish fresh CI evidence before closure.
