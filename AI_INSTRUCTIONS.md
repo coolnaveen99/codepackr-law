@@ -1,221 +1,88 @@
-# Codepackr Law — Complete AI Instructions
+# CodePackr Law — Current AI Instructions
 
-**Purpose**  
-Single source of truth for any AI (or human) building or extending **Codepackr Law** (`law.codepackr.com`).
+**Read first:** `docs/architecture/CURRENT-IMPLEMENTATION-CONTRACT.md`
 
----
+This file contains the stable AI rules for building and maintaining CodePackr Law. Historical phase playbooks are archived and do not define current execution order.
 
-## 1. Project Identity
+## Product identity
 
-| Item | Value |
-|------|-------|
-| Product name | Codepackr Law |
-| Live URL | https://law.codepackr.com |
-| Repo | https://github.com/coolnaveen99/codepackr-law |
-| Parent | Codepackr (https://www.codepackr.com) |
-| Accent color | **Seal burgundy** (Tailwind `blue-*` remapped in `src/index.css`; do not use Dev `#2563eb` or Finance green) |
-| Stack | React 18 + TypeScript + Vite + Tailwind CSS v4 |
-| Privacy | 100% client-side. Zero practice / academic data leaves the browser. |
+CodePackr Law is a privacy-first Indian Legal Workbench / Digital Law Library.
 
-**Tagline**  
-*Digital Law Library & Practice Reference — treatises, extracted case law ratios, and chamber drafting*
+Core lifecycle:
 
-**Mandatory header backlink**  
-`← Codepackr Dev Suite` → `https://www.codepackr.com`
+`LEARN → UNDERSTAND → RESEARCH → VERIFY → PREPARE → DRAFT → HEARING PREPARE → REVIEW`
 
----
+Stack: React 18, TypeScript, Vite, Tailwind CSS v4.
 
-## 2. Golden Rules (Non-Negotiable)
+## Golden rules
 
-1. **100% Client-Side** — Never send MCQ answers, scores, flashcards, or user notes to any server.
-2. **Ephemeral by Default** — Persist only on explicit user action (and label it clearly).
-3. **Seal Brand Only** — Tailwind `blue-*` is remapped to seal burgundy in `src/index.css`. Do not restyle to Study indigo or Finance emerald.
-4. **Complete Tools Only** — Sample/Demo (where relevant), Reset, clear feedback, accessible UI.
-5. **Quality Gate Mandatory** — `.github/skills/tool-quality-gate.md` must be fully green.
-6. **India-Focused Content** — AIBE, State Judiciary, new criminal laws (BNS, BNSS, BSA), Constitution, CPC, Contract, Family Law, and any in-force subject you add via `.github/skills/add-new-subject.md`.
-7. **Lazy topic notes** — Full topic learning text must live in `src/data/topics/<subjectSlug>/<topicId>.ts`, never in `subjects.ts`.
-8. **Reusable legal knowledge** — Search `src/data/knowledge` before creating any doctrine, case, article, maxim, definition, principle, or procedure. Reuse the canonical ID. Never duplicate canonical explanations. Follow `docs/reusable-legal-knowledge-architecture.md`.
-9. **Catalog-first subjects** — Click a subject → introduction + complete catalog. Click a section/article → full treatise page with Case Brief (IRAC) and Written Submissions jump buttons. Never a Bare Act dump. Never a shortened Q&A.
-10. **The Sacred Student Career Covenant (Zero Topic Omission)** — Law students and judicial service aspirants stake their careers, university degrees, and lives on Codepackr Law. An omitted or truncated topic in our library could cause a candidate to miss a critical question or an advocate to miss a cause of action. We must NEVER arbitrarily omit, drop, or miss topics from any subject. When structuring any subject, cross-reference standard university syllabi (Bar Council of India, NLUs, Central/State universities) and benchmark classroom textbooks (e.g. M. S. Rama Rao, Ratanlal & Dhirajlal, Avtar Singh, Mulla). Every doctrine, general defence, capacity rule, specific wrong/offence, remedy, and procedural mechanism must have a registered, dedicated, clickable topic.
-11. **Modular Design Standard (Zero Raw Markdown in UI)** — Never display raw unparsed markdown symbols (`###`, `##`, `**`, `*`, `---`, `> `) in the user interface. All study treatise notes, synthesized fallbacks, and written submissions must render into rich, cohesive modular components (structured section cards, distinction tables, callout blocks, and styled typography) via the `ModularStudyRenderer`.
-12. **Senior Counsel & PhD Scholarship Standard** — Never reduce serious jurisprudence to collegiate exam marks. All topics must provide substantive doctrinal depth, extracted case law ratios (facts, issue, ratio decidendi, courtroom application), dual statutory illustrations (proving vs failing conditions), mandatory BSA 2023 evidentiary compliance (ss. 104–106 & s. 63), and limitation/jurisdiction roadmaps.
+1. Preserve existing functionality unless the task explicitly changes it.
+2. Preserve existing substantive legal content during UI, routing and refactoring work.
+3. Never delete topic IDs to simplify UI or data.
+4. Never invent legal provisions, cases, citations, holdings, mappings or official illustrations.
+5. Mark uncertain legal material for review.
+6. Keep legal/user data browser-local under the established privacy boundary.
+7. Do not make or present legal outcome predictions or fabricated certainty.
+8. Use the adopted Chambers Record design system for new UI.
+9. Build responsive and accessible UI by default.
+10. Prefer existing components, utilities and design tokens before creating duplicates.
+11. Keep canonical legal content aligned with the `legal-content` repository.
+12. Update the Sprint Board with validation evidence before reporting completion.
 
----
+## Legal-content work
 
-## 3. Mandatory Reading Before Coding
+Before changing legal study content, read:
 
-1. `.github/copilot-instructions.md`
-2. `.github/instructions/global-legal-content.md` — **required before changing any legal study content**
-3. `.github/instructions/student-answer-content.md` — **Senior Counsel chamber brief & written submissions standard**
-4. `.github/skills/add-new-subject.md` — **required before adding any new subject**
-5. `.github/instructions/subjects/_template.md` then `.github/instructions/subjects/<subject>.md`
-6. `.github/skills/legal-content-workflow.md`
-7. `.github/skills/add-new-tool.md`
-8. `.github/skills/add-topic-notes.md` — **required before adding any Study Topic content**
-9. `.github/skills/reusable-legal-knowledge.md` — **required before creating reusable legal records**
-10. `.github/skills/tool-quality-gate.md`
-11. `docs/reusable-legal-knowledge-architecture.md`
-12. `CONTRIBUTING.md`
-13. This file (`AI_INSTRUCTIONS.md`)
+- `.github/instructions/global-legal-content.md`
+- matching file under `.github/instructions/subjects/` when applicable
+- `.github/skills/legal-content-workflow.md`
+- `.github/skills/add-topic-notes.md`
+- `.github/skills/reusable-legal-knowledge.md`
+- `.github/skills/judgment-case-notes.md` when judgments are involved
+- `.github/instructions/student-answer-content.md` when academic/practice depth is involved
 
----
+Search reusable legal knowledge before creating duplicate doctrine/case/concept records.
 
-## 4. Target Architecture
+## Topic depth
 
-```
-src/
-├── components/
-│   ├── tools/           # One component (or folder) per tool
-│   ├── subjects/        # SubjectsList, SubjectDetail, TopicDetail
-│   ├── home/            # HomePage (codes first, tools second)
-│   ├── layout/          # Header, NavDrawer (hamburger), Footer
-│   └── ui/
-├── data/
-│   ├── tools.ts         # Tool registry
-│   ├── subjects.ts      # Subject + topic METADATA only (no full notes)
-│   ├── subjectIntros.ts # Catalog intro cards
-│   ├── questions/       # Static MCQ banks
-│   ├── reference/       # Maxims, landmark cases (reference tools)
-│   ├── constitution/    # Article digest + official 2024 text
-│   ├── bns/             # BNS 2023 catalog + bareAct.json
-│   ├── bnss/            # BNSS 2023 catalog + bareAct.json
-│   ├── bsa/             # BSA 2023 catalog + bareAct.json
-│   ├── knowledge/       # Canonical graph (doctrines, concepts, maxims, validation)
-│   └── topics/          # Full learning notes — one file per topic (lazy-loaded)
-│       ├── loadTopicContent.ts
-│       ├── synthesizeProvision.ts
-│       └── <subjectSlug>/<topicId>.ts
-├── lib/
-│   ├── urls.ts
-│   └── utils.ts
-├── App.tsx
-└── index.css           # seal burgundy via remapped blue-* scale
-```
+Topics should provide substantive legal learning material. Do not replace existing detailed content with one-line summaries.
 
-### Topic content rule (performance)
+Do not impose an artificial fixed "10-mark" or "16-mark" format on every topic. The content model should support academic, research and professional use according to the topic.
 
-- `subjects.ts` = list/search metadata only (can grow to 1000+ topics safely).
-- Full `short` / `detailed` / `cases` / `examTips` = separate file under `topics/`, loaded with `import.meta.glob` only when the student opens that topic.
-- Never ship all topic essays in the main bundle.
+## Tool work
 
-MCQ and flashcard content must be static TS modules shipped with the app. Never require a backend for core practice.
+For new tools or substantial tool changes, read:
 
----
+- `.github/skills/add-new-tool.md`
+- `.github/skills/tool-quality-gate.md`
 
-## 5. How to Add a New Tool
+## New subjects
 
-Follow `.github/skills/add-new-tool.md` exactly.
+For a genuinely new subject, read:
 
-Categories for Law:
+- `.github/skills/add-new-subject.md`
+- `.github/instructions/subjects/_template.md`
+- the relevant legal-content workflow instructions
 
-| Category        | Purpose                          | Examples                                      |
-|-----------------|----------------------------------|-----------------------------------------------|
-| `mcq`           | Practice questions & mocks       | Subject MCQ banks, AIBE mock, Daily quiz      |
-| `bare-acts`     | Section lookup & mapping         | BNS↔IPC mapper, Important sections            |
-| `study-aids`    | Flashcards, timers, notes        | Section flashcards, Exam timer                |
-| `reference`     | Quick reference helpers          | Legal maxims, Landmark case flashcards        |
+Do not add a new subject as part of ordinary UI work.
 
-### Priority Build Order
+## Validation
 
-1. AIBE-style MCQ practice (one high-weight subject first: Constitution or BNS)
-2. Exam timer
-3. Section flashcards for key Acts
-4. BNS ↔ IPC / BNSS ↔ CrPC simple mappers
-5. Full subject banks + mock test mode
-6. High-yield topic notes under `src/data/topics/` (lazy)
-7. Remaining tools
+Choose validation according to the change:
 
----
+- typecheck/build for code changes
+- focused unit/regression tests for behavior changes
+- route/deep-link checks for routing changes
+- responsive/accessibility checks for UI changes
+- content validation for legal-content changes
+- privacy/security validation for data/network changes
 
-## 6. How to Add Topic Learning Notes
+E2E infrastructure is retained but expansion is paused during major UI transformation unless the current sprint explicitly reactivates it.
 
-Follow `.github/skills/add-topic-notes.md` exactly.
+## Sprint discipline
 
-1. Topic must already exist in `subjects.ts` (id + subject slug).
-2. Create `src/data/topics/<subjectSlug>/<topicId>.ts` exporting `TopicContent`.
-3. TopicDetail lazy-loads via `loadTopicContent` — no App.tsx changes needed.
+Never invent a next phase.
 
-## 6A. How to Add a New Subject
+Read `docs/SPRINT-CONTROL-BOARD.md`, execute the current task, validate it, update the board, then report completion.
 
-Follow `.github/skills/add-new-subject.md` exactly. Prompt: `.github/prompts/add-subject.prompt.md`.
-
-1. Copy `.github/instructions/subjects/_template.md` → `subjects/<slug>.md`.
-2. Register metadata in `src/data/subjects.ts`.
-3. Add theme notes under `src/data/topics/<slug>/`.
-4. If the Act has a numbered list: verified catalog + intro + `CATALOG_SLUGS` + synthesizer.
-5. Wire hamburger (`CODE_SLUGS` / `MORE_SLUGS`) and home lists; map the icon.
-6. Every opened page must have full 10-mark and 16-mark Q&A (`marks: 10 | 16`).
-
-The student click path must match BNS: subject → introduction + all items → click item 1 / 107 → full details.
-
----
-
-## 7. Design Tokens
-
-```css
-/* Seal identity — do not revert to Dev #2563eb */
-/* Tailwind blue-* is remapped in src/index.css */
-```
-
-- Cards: `rounded-2xl`
-- Controls: `rounded-xl`
-- Icons: `lucide-react` only
-- Light + Dark mode required
-
----
-
-## 8. Privacy Checklist
-
-- [ ] No network calls with user answers or scores
-- [ ] No analytics events containing practice data
-- [ ] localStorage only for explicit opt-in features
-- [ ] Sample / demo questions contain no real personal data
-- [ ] Topic notes are static client modules only (no CMS fetch of user data)
-
----
-
-## 9. Definition of Done
-
-A tool is finished only when:
-
-1. Registered in tools registry
-2. Clean URL works
-3. Required UX actions present
-4. Light & dark + mobile correct
-5. Lint + build pass
-6. README updated
-7. Privacy checklist green
-8. Quality Gate fully green
-
-Topic notes are done when the file exists under `topics/`, matches `TopicContent`, and opens correctly from Subject → TopicDetail.
-
----
-
-## 10. Content Notes (Law-Specific)
-
-- Prefer the **new criminal laws**: Bharatiya Nyaya Sanhita (BNS), Bharatiya Nagarik Suraksha Sanhita (BNSS), Bharatiya Sakshya Adhiniyam (BSA).
-- IPC, CrPC, and the Indian Evidence Act are **historical concordance only** — not active current-law subjects. Support them via the mapper; never assume a 1:1 equivalent.
-- High-weight AIBE subjects: Constitutional Law, CPC, BNSS, BNS, BSA, Contract, Family Law.
-- **Q&A must be full 10-mark and 16-mark answers.** Never a shortened explanation. Put `marks: 10 | 16` so the jump buttons work.
-- Do not dump Bare Act text as the study page. Do not put “how to write 10/16 marks” filler in `study`.
-- Statutory illustrations: include them **only when the official text prints them**, then teach them.
-- Official sources: India Code / Cytrain (BNS, BNSS, BSA); Legislative Department 2024 PDF (Constitution — Cytrain has none).
-- All MCQ content must be original or clearly licensed. Start with small curated sets and expand.
-- Topic notes: prioritise `highYield: true` topics; include 3–5 case citations with holdings.
-- Follow `.github/instructions/global-legal-content.md` for research, verification, and the no-hallucination rule.
-
----
-
-## 11. Final Orders to Any AI
-
-- Never skip the Quality Gate.
-- Never transmit practice data off-device.
-- Never restyle away from seal burgundy to Dev blue or Finance green.
-- Never ship incomplete tools.
-- **Never put full topic essays into `subjects.ts`** — use `src/data/topics/` only.
-- **Never duplicate canonical legal knowledge.** Search `src/data/knowledge` first.
-- **Never invent provisions, illustrations, citations, or mappings.**
-- **Never add a subject without `.github/skills/add-new-subject.md`.**
-- When in doubt, re-read this file, `.github/skills/add-new-subject.md`, `.github/instructions/global-legal-content.md`, `.github/skills/legal-content-workflow.md`, `.github/skills/add-new-tool.md`, `.github/skills/add-topic-notes.md`, and `.github/skills/reusable-legal-knowledge.md`.
-
-Build carefully. Protect privacy. Serve Indian law students well.
+When uncertain whether a file is obsolete, archive it instead of deleting it and preserve its original content.
