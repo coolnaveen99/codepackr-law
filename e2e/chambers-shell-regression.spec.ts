@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 
 test.describe('Chambers Record shell regression', () => {
-  test('desktop sidebar navigation closes global search before routing', async ({ page }) => {
+  test('desktop sidebar navigation remains reachable and closes global search before routing', async ({ page }) => {
     await page.goto('/', { waitUntil: 'domcontentloaded' })
 
     await page.getByRole('button', { name: 'Open global search' }).click()
@@ -11,6 +11,37 @@ test.describe('Chambers Record shell regression', () => {
 
     await expect(page.getByRole('dialog', { name: 'Global search' })).toBeHidden()
     await expect(page).toHaveURL(/\/$/)
+  })
+
+
+
+  test('desktop search closes from backdrop and Escape without changing route', async ({ page }) => {
+    await page.goto('/subjects', { waitUntil: 'domcontentloaded' })
+
+    await page.getByRole('button', { name: 'Open global search' }).click()
+    await expect(page.getByRole('dialog', { name: 'Global search' })).toBeVisible()
+
+    await page.keyboard.press('Escape')
+    await expect(page.getByRole('dialog', { name: 'Global search' })).toBeHidden()
+    await expect(page).toHaveURL(/\/subjects$/)
+
+    await page.getByRole('button', { name: 'Open global search' }).click()
+    await expect(page.getByRole('dialog', { name: 'Global search' })).toBeVisible()
+    await page.getByRole('button', { name: 'Close global search' }).click()
+    await expect(page.getByRole('dialog', { name: 'Global search' })).toBeHidden()
+    await expect(page).toHaveURL(/\/subjects$/)
+  })
+
+  test('mobile navigation opened from search closes search first', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 })
+    await page.goto('/', { waitUntil: 'domcontentloaded' })
+
+    await page.getByRole('button', { name: 'Open global search' }).click()
+    await expect(page.getByRole('dialog', { name: 'Global search' })).toBeVisible()
+
+    await page.getByRole('button', { name: 'Open navigation' }).click()
+    await expect(page.getByRole('dialog', { name: 'Global search' })).toBeHidden()
+    await expect(page.getByRole('dialog', { name: 'CodePackr Law navigation' })).toBeVisible()
   })
 
   test('desktop sidebar collapse keeps content outside the navigation rail', async ({ page }) => {
