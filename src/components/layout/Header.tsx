@@ -73,8 +73,25 @@ export function Header({
 
   useEffect(() => {
     document.body.classList.toggle('nav-open', mobileNavOpen)
-    return () => document.body.classList.remove('nav-open')
+    if (!mobileNavOpen) return () => document.body.classList.remove('nav-open')
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setMobileNavOpen(false)
+    }
+    const onResize = () => {
+      if (window.matchMedia('(min-width: 1024px)').matches) setMobileNavOpen(false)
+    }
+    window.addEventListener('keydown', onKey)
+    window.addEventListener('resize', onResize)
+    return () => {
+      document.body.classList.remove('nav-open')
+      window.removeEventListener('keydown', onKey)
+      window.removeEventListener('resize', onResize)
+    }
   }, [mobileNavOpen])
+
+  useEffect(() => {
+    setMobileNavOpen(false)
+  }, [activeKey])
 
   const runNavigationAction = (action: () => void) => {
     closeOverlays()

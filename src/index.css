@@ -271,19 +271,25 @@ html.dark .nav-drawer-panel {
 
 /* UI-003 — Chambers Record application shell. The shell is intentionally structural: navigation,
    search and workspace context replace the legacy hamburger-first chrome. */
+.cp-chambers {
+  --cp-rail: 17.5rem;
+  --cp-page-pad: 1.5rem;
+}
+.cp-chambers.is-rail-collapsed { --cp-rail: 4.75rem; }
 .cp-law-sidebar {
   position: fixed;
   inset: 2.375rem auto 0 0;
   height: calc(100vh - 2.375rem);
+  height: calc(100dvh - 2.375rem);
   z-index: 80;
-  width: 17.5rem;
+  width: var(--cp-rail);
   flex-direction: column;
   background: var(--cp-ds-raised);
   color: var(--cp-ds-ink);
   border-right: 1px solid var(--cp-ds-line);
   transition: width 160ms cubic-bezier(.22,1,.36,1);
 }
-.cp-law-sidebar.is-collapsed { width: 4.75rem; }
+.cp-law-sidebar.is-collapsed { width: var(--cp-rail); }
 .cp-law-sidebar-brand {
   height: 4.5rem;
   display: flex;
@@ -335,12 +341,15 @@ html.dark .nav-drawer-panel {
 .cp-law-sidebar.is-collapsed .cp-law-sidebar-secondary { margin-inline: .65rem; }
 .cp-law-topbar {
   position: sticky; top: 0; z-index: 70; min-height: 4.5rem;
-  margin-left: 17.5rem; border-bottom: 1px solid var(--cp-ds-line);
+  margin-left: var(--cp-rail); border-bottom: 1px solid var(--cp-ds-line);
   background: color-mix(in srgb, var(--cp-ds-raised) 96%, transparent);
   backdrop-filter: blur(14px);
 }
-.cp-law-topbar.is-sidebar-collapsed { margin-left: 4.75rem; }
-.cp-law-mobile-nav { position: fixed; top: 6.125rem; right: 0; bottom: 0; left: 0; z-index: 110; }
+.cp-law-mobile-nav {
+  position: fixed; inset: 0; z-index: 200;
+  display: block;
+}
+.cp-law-mobile-nav[hidden] { display: none; }
 .cp-law-mobile-nav-backdrop { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: rgb(20 17 15 / .38); backdrop-filter: blur(3px); }
 .cp-law-mobile-nav-panel { position: absolute; inset: 0 auto 0 0; width: min(21rem, 88vw); overflow-y: auto; overscroll-behavior: contain; padding: .75rem; background: var(--cp-ds-raised); color: var(--cp-ds-ink); border-right: 1px solid var(--cp-ds-line); box-shadow: 16px 0 40px rgb(20 17 15 / .16); }
 .cp-law-mobile-nav-heading { display: flex; align-items: center; justify-content: space-between; gap: .75rem; padding: .5rem .35rem .8rem; margin-bottom: .35rem; border-bottom: 1px solid var(--cp-ds-line); }
@@ -390,11 +399,16 @@ html.dark .nav-drawer-panel {
 .cp-law-search-suggestions b { font-size: .78rem; }
 .cp-law-search-suggestions small { color: var(--cp-ds-ink-500); font-size: .68rem; line-height: 1.35; }
 @media (min-width: 1024px) {
-  .cp-chambers > main, .cp-chambers > .cp-page { padding-left: 2rem; padding-right: 2rem; }
-  .cp-law-topbar + .cp-law-search-overlay { margin-left: 17.5rem; }
-  .cp-law-topbar.is-sidebar-collapsed + .cp-law-search-overlay { margin-left: 4.75rem; }
+  .cp-chambers > main {
+    padding-left: calc(var(--cp-rail) + var(--cp-page-pad));
+    padding-right: var(--cp-page-pad);
+    box-sizing: border-box;
+  }
+  .cp-law-search-overlay { margin-left: 0; }
 }
 @media (max-width: 1023px) {
+  .cp-chambers { --cp-rail: 0px; }
+  .cp-law-sidebar { display: none; }
   .cp-law-topbar { margin-left: 0; }
   .cp-law-topbar-inner { min-height: 3.75rem; padding: .5rem .75rem; gap: .65rem; }
   .cp-law-context { order: 1; }

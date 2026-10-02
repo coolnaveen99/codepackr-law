@@ -362,7 +362,7 @@ export default function App() {
 
   return (
     <div className={dark ? 'dark' : ''}>
-      <div className="cp-chambers min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors">
+      <div className={`cp-chambers min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors ${sidebarCollapsed ? "is-rail-collapsed" : ""}`}>
         <CodepackrFamilyBar />
         <Header
           dark={dark}
@@ -402,7 +402,7 @@ export default function App() {
 
         <OfflineBanner />
 
-        <main data-ui-task={uiTask} data-ui-measure={uiMeasure} aria-label={UI_TASK_TITLE[uiTask]} className={`flex-1 w-full mx-auto px-4 sm:px-6 py-6 paper-grid cp-mobile-main-pad cp-page transition-[padding] duration-150 ease-out ${sidebarCollapsed ? 'lg:pl-[6.75rem]' : 'lg:pl-[18.5rem]'}`}>
+        <main data-ui-task={uiTask} data-ui-measure={uiMeasure} aria-label={UI_TASK_TITLE[uiTask]} className="flex-1 w-full mx-auto px-4 sm:px-6 py-6 paper-grid cp-mobile-main-pad cp-page">
           {route.type === 'contact' && <ContactFeedback onBackToHome={goHome} />}
 
           {route.type === 'case-law' && (
