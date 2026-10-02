@@ -21,7 +21,8 @@
     "audit:legal-content": "npx tsx scripts/audit_legal_content_integrity.ts",
     "check:canonical-delivery": "node scripts/check-canonical-delivery.mjs",
     "check:readiness": "node scripts/pr-readiness.mjs",
-    "inventory:cm-001": "node scripts/cm-001-gap.mjs"
+    "inventory:cm-001": "node scripts/cm-001-gap.mjs",
+    "check:cm-migration": "node scripts/cm-migration-gate.mjs"
   },
   "dependencies": {
     "docx": "^9.5.1",

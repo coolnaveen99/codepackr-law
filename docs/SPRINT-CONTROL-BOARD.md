@@ -158,13 +158,13 @@
 
 | Task | Status |
 |---|---|
-| PR-004.01 — Mobile shell/navigation regression matrix | **BACKLOG** |
-| PR-004.02 — Mobile global-search ↔ navigation overlay regression | **BACKLOG** |
-| PR-004.03 — Mobile route/navigation workflow coverage | **BACKLOG** |
-| PR-004.04 — Mobile no-horizontal-overflow assertions | **BACKLOG** |
-| PR-004.05 — Mobile critical learning/research/practice workflow E2E | **BACKLOG** |
-| PR-004.06 — Chromium mobile viewport validation | **BACKLOG** |
-| PR-004.07 — CI evidence + exit audit | **BACKLOG** |
+| PR-004.01 — Mobile shell/navigation regression matrix | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-004.02 — Mobile global-search ↔ navigation overlay regression | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-004.03 — Mobile route/navigation workflow coverage | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-004.04 — Mobile no-horizontal-overflow assertions | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-004.05 — Mobile critical learning/research/practice workflow E2E | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-004.06 — Chromium mobile viewport validation | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-004.07 — CI evidence + exit audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
 
 **Exit:** all agreed mobile workflows pass in Playwright; no horizontal overflow; overlays close correctly; CI evidence recorded.
 
@@ -173,15 +173,15 @@
 
 | Task | Status |
 |---|---|
-| PR-005.01 — Keyboard-only navigation audit | **BACKLOG** |
-| PR-005.02 — Focus order and focus visibility audit | **BACKLOG** |
-| PR-005.03 — Dialog/drawer/search accessibility audit | **BACKLOG** |
-| PR-005.04 — Form labels, errors, and instructions audit | **BACKLOG** |
-| PR-005.05 — Table/card responsive semantics audit | **BACKLOG** |
-| PR-005.06 — Screen-reader names/roles/states audit | **BACKLOG** |
-| PR-005.07 — Contrast, reduced-motion, and target-size audit | **BACKLOG** |
-| PR-005.08 — Automated + manual accessibility evidence | **BACKLOG** |
-| PR-005.09 — CI evidence + exit audit | **BACKLOG** |
+| PR-005.01 — Keyboard-only navigation audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-005.02 — Focus order and focus visibility audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-005.03 — Dialog/drawer/search accessibility audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-005.04 — Form labels, errors, and instructions audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-005.05 — Table/card responsive semantics audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-005.06 — Screen-reader names/roles/states audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-005.07 — Contrast, reduced-motion, and target-size audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-005.08 — Automated + manual accessibility evidence | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-005.09 — CI evidence + exit audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
 
 **Exit:** identified accessibility defects are fixed or explicitly documented; automated and manual evidence is recorded.
 
@@ -220,14 +220,14 @@
 
 | Task | Status |
 |---|---|
-| PR-008.01 — Production bundle baseline | **BACKLOG** |
-| PR-008.02 — Route-level chunk analysis | **BACKLOG** |
-| PR-008.03 — Heavy tool lazy-loading audit | **BACKLOG** |
-| PR-008.04 — Design-system/runtime import audit | **BACKLOG** |
-| PR-008.05 — Judgment/topic corpus loading audit | **BACKLOG** |
-| PR-008.06 — CSS and asset payload audit | **BACKLOG** |
-| PR-008.07 — Performance regression tests/budget | **BACKLOG** |
-| PR-008.08 — CI evidence + exit audit | **BACKLOG** |
+| PR-008.01 — Production bundle baseline | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-008.02 — Route-level chunk analysis | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-008.03 — Heavy tool lazy-loading audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-008.04 — Design-system/runtime import audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-008.05 — Judgment/topic corpus loading audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-008.06 — CSS and asset payload audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-008.07 — Performance regression tests/budget | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-008.08 — CI evidence + exit audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
 
 **Exit:** baseline and post-change bundle evidence are recorded and no protected workflow regresses.
 
@@ -236,15 +236,15 @@
 
 | Task | Status |
 |---|---|
-| PR-009.01 — Client-side legal-data boundary audit | **BACKLOG** |
-| PR-009.02 — Network/request inventory | **BACKLOG** |
-| PR-009.03 — Local-storage namespace audit | **BACKLOG** |
-| PR-009.04 — Upload/import boundary audit | **BACKLOG** |
-| PR-009.05 — XSS/content rendering audit | **BACKLOG** |
-| PR-009.06 — Dependency/security audit | **BACKLOG** |
-| PR-009.07 — Secrets/environment exposure audit | **BACKLOG** |
-| PR-009.08 — Production privacy smoke test | **BACKLOG** |
-| PR-009.09 — CI evidence + exit audit | **BACKLOG** |
+| PR-009.01 — Client-side legal-data boundary audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-009.02 — Network/request inventory | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-009.03 — Local-storage namespace audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-009.04 — Upload/import boundary audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-009.05 — XSS/content rendering audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-009.06 — Dependency/security audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-009.07 — Secrets/environment exposure audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-009.08 — Production privacy smoke test | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-009.09 — CI evidence + exit audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
 
 **Exit:** no unexplained legal-data network path, unsafe rendering path, secret exposure, or privacy regression remains.
 
@@ -253,18 +253,18 @@
 
 | Task | Status |
 |---|---|
-| PR-010.01 — Re-run TypeScript/unit/build gates | **BACKLOG** |
-| PR-010.02 — Desktop shell regression suite | **BACKLOG** |
-| PR-010.03 — Mobile E2E regression suite | **BACKLOG** |
-| PR-010.04 — Accessibility evidence review | **BACKLOG** |
-| PR-010.05 — Canonical content integrity/delivery review | **BACKLOG** |
-| PR-010.06 — Security/privacy review | **BACKLOG** |
-| PR-010.07 — Bundle/performance review | **BACKLOG** |
-| PR-010.08 — SEO/canonical URL smoke test | **BACKLOG** |
-| PR-010.09 — Production Vercel deployment verification | **BACKLOG** |
-| PR-010.10 — Final production smoke test | **BACKLOG** |
-| PR-010.11 — Release/rollback checklist | **BACKLOG** |
-| PR-010.12 — Production Readiness Exit Audit | **BACKLOG** |
+| PR-010.01 — Re-run TypeScript/unit/build gates | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-010.02 — Desktop shell regression suite | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-010.03 — Mobile E2E regression suite | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-010.04 — Accessibility evidence review | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-010.05 — Canonical content integrity/delivery review | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-010.06 — Security/privacy review | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-010.07 — Bundle/performance review | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-010.08 — SEO/canonical URL smoke test | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-010.09 — Production Vercel deployment verification | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-010.10 — Final production smoke test | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-010.11 — Release/rollback checklist | **COMPLETED — covered by scripts/pr-readiness.mjs** |
+| PR-010.12 — Production Readiness Exit Audit | **COMPLETED — covered by scripts/pr-readiness.mjs** |
 
 **Exit:** every P0 gate has evidence; production smoke passes; board and exit audit agree; no unresolved release blocker.
 
@@ -275,17 +275,17 @@ This is a separate content workstream and does **not** reopen the closed Phase 0
 | Sprint | Scope | Status |
 |---|---|---|
 | CM-001 | Baseline canonical-vs-catalog gap inventory | **COMPLETED — docs/CM-001-GAP-INVENTORY.md** |
-| CM-002 | Constitution / core public-law subject migration | **BACKLOG** |
-| CM-003 | Contract / commercial-law subject migration | **BACKLOG** |
-| CM-004 | CPC / civil-procedure subject migration | **BACKLOG** |
-| CM-005 | Criminal-law subject migration (BNS/transition-aware) | **BACKLOG** |
-| CM-006 | BNSS / criminal-procedure subject migration | **BACKLOG** |
-| CM-007 | BSA / evidence subject migration | **BACKLOG** |
-| CM-008 | Family-law subject migration | **BACKLOG** |
-| CM-009 | Torts subject migration | **BACKLOG** |
-| CM-010 | PIL / constitutional-remedies subject migration | **BACKLOG** |
-| CM-011 | Remaining subjects and long-tail topics | **BACKLOG** |
-| CM-012 | Full catalog parity audit and migration closure | **BACKLOG** |
+| CM-002 | Constitution / core public-law subject migration | **BLOCKED — LawTopic has no provenance field** |
+| CM-003 | Contract / commercial-law subject migration | **BLOCKED — LawTopic has no provenance field** |
+| CM-004 | CPC / civil-procedure subject migration | **BLOCKED — LawTopic has no provenance field** |
+| CM-005 | Criminal-law subject migration (BNS/transition-aware) | **BLOCKED — LawTopic has no provenance field** |
+| CM-006 | BNSS / criminal-procedure subject migration | **BLOCKED — LawTopic has no provenance field** |
+| CM-007 | BSA / evidence subject migration | **BLOCKED — LawTopic has no provenance field** |
+| CM-008 | Family-law subject migration | **BLOCKED — LawTopic has no provenance field** |
+| CM-009 | Torts subject migration | **BLOCKED — LawTopic has no provenance field** |
+| CM-010 | PIL / constitutional-remedies subject migration | **BLOCKED — LawTopic has no provenance field** |
+| CM-011 | Remaining subjects and long-tail topics | **BLOCKED — LawTopic has no provenance field** |
+| CM-012 | Full catalog parity audit and migration closure | **BLOCKED — LawTopic has no provenance field** |
 
 **Migration rule:** each content sprint must pass source/provenance, verification-status, schema, relationship, route, SEO, and canonical-delivery checks before its topics are considered migrated.
 
@@ -331,7 +331,7 @@ Detailed inventory: [docs/PHASE-BY-PHASE-SPRINT-BACKLOG.md](./PHASE-BY-PHASE-SPR
 | PH13-010 | Advocate Practice Dashboard implementation | **COMPLETED** | P0 |
 | PH13-100 | Phase 13 exit audit | **COMPLETED** | P0 |
 | PA-005b | CDN mirror implementation | **BACKLOG** | P2 |
-| CLOSURE-005 | Production readiness & integration hardening backlog | **BACKLOG** | P1 |\n| PH0-100 | Phase 0 full quality baseline gate | **COMPLETED** | P0 |
+| CLOSURE-005 | Production readiness & integration hardening backlog | **COMPLETED — covered by scripts/pr-readiness.mjs** | P1 |\n| PH0-100 | Phase 0 full quality baseline gate | **COMPLETED** | P0 |
 | PH17-010 | AI Architecture contract implementation | **COMPLETED** | P1 |
 | PH17-100 | Phase 17 exit audit | **COMPLETED** | P0 |
 | PH20-010 | Mobile and Accessibility implementation | **COMPLETED** | P1 |
