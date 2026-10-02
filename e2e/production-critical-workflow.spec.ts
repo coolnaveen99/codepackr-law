@@ -19,10 +19,7 @@ test.describe('PR-002 critical legal workflow', () => {
 
   test('citation verifier accepts a research handoff and returns verification state', async ({ page }) => {
     await page.evaluate(() => {
-      localStorage.setItem('cp-law:citation-handoff:v1', JSON.stringify({
-        source: 'session',
-        text: '(1973) 4 SCC 225'
-      }))
+      sessionStorage.setItem('cp-law:citation-handoff:v1', '(1973) 4 SCC 225')
     })
     await page.goto('/tool/citation-verifier', { waitUntil: 'domcontentloaded' })
     await expect(page.getByText(/Workbench handoff loaded/)).toBeVisible()
