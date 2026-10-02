@@ -137,3 +137,13 @@ The Legal Draft Studio now enforces four governance tiers rather than treating a
 4. **Tier 4 — Checklist:** filing/readiness checklist, not a pleading.
 
 Unclassified entries default conservatively to Tier 2. The catalogue generator emits Tier 3 entries and no longer constructs a generic pseudo-pleading.
+
+
+## UI redesign regression additions — 2026-10-02
+
+| Capability | Status | Regression protection |
+|---|---|---|
+| Legal Draft Studio | RESTORED / VISIBLE | Primary navigation + default template catalogue |
+| Legal Document Compare | RESTORED / VISIBLE | Primary navigation + production route matrix |
+| Concept Versus | RESTORED / NEW SURFACE | Tool registry + primary navigation + production route matrix |
+| Draft template discovery | RESTORED | Catalogue renders without requiring an initial filter |
