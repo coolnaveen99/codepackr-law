@@ -3,7 +3,7 @@
 **Phase:** 28 — Judicial / Neutral Analysis Mode  
 **Repository:** `coolnaveen99/codepackr-law`  
 **Date:** 2026-10-01  
-**Status:** VALIDATION IN PROGRESS — dedicated PR quality gate
+**Status:** EVIDENCE RECONCILIATION REQUIRED — implementation present; final quality-gate evidence not independently retrievable
 
 ## Acceptance matrix
 
@@ -29,4 +29,4 @@ The mode is a navigation/guardrail surface over deterministic legal-material uti
 
 ## Exit decision
 
-Close Phase 28 only after the dedicated PR quality gate passes and its workflow run is independently recorded here.
+The implementation is present on `main`, but this audit remains open until the dedicated PR quality gate/workflow result is independently retrievable and recorded here. Do not infer validation from the merge alone.
