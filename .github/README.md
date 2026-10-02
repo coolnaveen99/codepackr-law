@@ -10,7 +10,7 @@ Codepackr Law is a 100% privacy-first, client-side **Digital Law Library & Pract
 1. **Track A — Scholastic & Judicial Examination Mastery (PhD in Law Standard)**:
    - Deep jurisprudential grounding (analytical, historical, and sociological perspectives).
    - Legislative intent, statutory anatomy (sections, provisos, explanations, non-obstante clauses), and canons of interpretation.
-   - Comprehensive university, AIBE, and State Judicial Services 10-mark and 16-mark structured answers (IRAC / ILAC frameworks).
+   - Comprehensive university, AIBE, and State Judicial Services answer preparation using structured IRAC / ILAC and other appropriate analytical frameworks.
    - Authoritative case law analysis (ratio decidendi clearly segregated from obiter dicta; landmark vs contemporary positions).
    - Rigorous legal doubt resolution (dispelling common statutory misconceptions and number collisions).
 2. **Track B — Chamber & Courtroom Practice Reference (Senior Counsel Standard)**:
