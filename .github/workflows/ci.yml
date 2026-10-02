@@ -31,6 +31,13 @@ jobs:
       - name: Checkout Law
         uses: actions/checkout@v4
 
+      - name: Checkout canonical legal-content
+        uses: actions/checkout@v4
+        with:
+          repository: coolnaveen99/legal-content
+          path: legal-content
+          ref: main
+
       - name: Setup Node.js 20
         uses: actions/setup-node@v4
         with:
@@ -50,6 +57,9 @@ jobs:
 
       - name: TypeScript validation
         run: npm run lint
+
+      - name: Full legacy-to-canonical parity gate
+        run: npm run parity:legal-content-full
 
       - name: Canonical legal-content integrity audit
         run: npm run audit:legal-content
