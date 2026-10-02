@@ -102,3 +102,22 @@ These do **not** require a new ticket beyond normal READY work:
 |------|---------|
 | Architecture / Product (execution) | **Reject mass legacy removal**; retain dual-read |
 | Date | 2026-10-01 |
+
+
+## Superseding execution — PA-004-EXEC-FULL-CATALOG (2026-10-02)
+
+The original PA-004 decision was based on the 2026-10-01 coverage snapshot. A new full-catalog execution has now been started after the canonical repository received the remaining migrated topic notes.
+
+Current implementation:
+
+- A deterministic full-catalog parity gate now checks all **3,551 real legacy topic files** against `legal-content`.
+- The 10 excluded migration records are helper/generator modules, not topic content.
+- The application ContentGateway no longer performs runtime legacy-topic fallback.
+- Legacy topic files remain on disk as rollback/source data; they are **not deleted** in this execution.
+- Law CI now checks out `coolnaveen99/legal-content` and runs the full-catalog parity gate before the normal validation/build gates.
+- If any canonical topic is missing, invalid, or not `published`, CI fails rather than silently falling back.
+
+**Execution status:** implementation complete; CI/production validation pending.  
+**Execution record:** `docs/PA-004-EXEC-FULL-CATALOG.md`
+
+The original deletion criteria remain relevant to any future physical deletion of `src/data/topics/**`. Runtime fallback retirement does not authorize mass deletion of the legacy source files.
