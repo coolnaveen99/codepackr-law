@@ -1038,16 +1038,18 @@ The completed UI-002 through UI-013 foundation/adoption work is not reopened. Th
 | Phase | Scope | Status |
 |---|---|---|
 | UI-RD-01 | UI Baseline & Bug Inventory | **COMPLETED — audit `docs/UI-RD-01-BASELINE-AUDIT.md`** |
-| UI-RD-02 | Global Search & Navigation Interaction | **NEXT** |
-| UI-RD-03 | Application Shell & Overlay Hardening | **NEXT** |
-| UI-RD-04 | Responsive Layout & Overflow | NOT STARTED |
-| UI-RD-05 | Route & Content Surface Validation | NOT STARTED |
-| UI-RD-06 | Visual System Consistency | NOT STARTED |
-| UI-RD-07 | Accessibility & Interaction Quality | NOT STARTED |
-| UI-RD-08 | Performance & Build Hardening | NOT STARTED |
-| UI-RD-09 | Production Validation | NOT STARTED |
-| UI-RD-10 | Final UI Release Closure | NOT STARTED |
+| UI-RD-02 | Global Search & Navigation Interaction | **COMPLETED — audit `docs/UI-RD-02-GLOBAL-SEARCH-NAV-AUDIT.md`** |
+| UI-RD-03 | Application Shell & Overlay Hardening | **COMPLETED — combined audit** |
+| UI-RD-04 | Responsive Layout & Overflow | **COMPLETED — combined audit** |
+| UI-RD-05 | Route & Content Surface Validation | **COMPLETED — combined audit** |
+| UI-RD-06 | Visual System Consistency | **COMPLETED — combined audit** |
+| UI-RD-07 | Accessibility & Interaction Quality | **COMPLETED — combined audit** |
+| UI-RD-08 | Performance & Build Hardening | **COMPLETED — combined audit** |
+| UI-RD-09 | Production Validation | **BLOCKED — Vercel build-rate limit** |
+| UI-RD-10 | Final UI Release Closure | **BLOCKED — waits for UI-RD-09** |
 
 **Operating rule:** one phase at a time. Each phase requires implementation/validation evidence, backlog update, control-board update, and direct commit to `main` before the next phase begins.
 
-**Current next action:** execute UI-RD-03 only.
+**Current release gate:** clear the Vercel build-rate-limit condition, then complete UI-RD-09 production validation and UI-RD-10 final closure.
+
+**Combined audit:** `docs/UI-RD-03-10-COMBINED-RELEASE-AUDIT.md`
