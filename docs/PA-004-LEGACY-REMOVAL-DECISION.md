@@ -115,7 +115,7 @@ Current implementation:
 - The application ContentGateway no longer performs runtime legacy-topic fallback.
 - Legacy topic files remain on disk as rollback/source data; they are **not deleted** in this execution.
 - Law CI now checks out `coolnaveen99/legal-content` and runs the full-catalog parity gate before the normal validation/build gates.
-- If any canonical topic is missing, invalid, or not `published`, CI fails rather than silently falling back.
+- If any canonical topic is missing, invalid, or has an unsupported migration status, CI fails. `review` is a valid migrated state but is not production-published; ContentGateway continues to serve only `published` topics.
 
 **Execution status:** migration parity validated by Law CI #507. Canonical integrity, delivery, and production-readiness gates passed. 112 migrated topics remain `review` and are not treated as production-published.  
 **Execution record:** `docs/PA-004-EXEC-FULL-CATALOG.md`
