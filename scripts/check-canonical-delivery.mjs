@@ -48,18 +48,24 @@ for (const [entityType, entries] of byType) {
   probes.push(...entries.filter((entry) => entry.status === 'published').slice(0, 2))
 }
 
-const fixedProbes = [
-  'topics/pil/locus-standi.json',
-  'topics/cpc/s-32.json',
-  'topics/tort/nature-definition.json',
-  'topics/contract/s-10.json',
-  'topics/constitution/art-32.json',
+const fixedProbeIds = [
+  'topic:india:pil-locus-standi',
+  'topic:india:cpc-s-32',
+  'topic:india:tort-nature-definition',
+  'topic:india:contract-s-10',
+  'topic:india:constitution-art-32',
 ]
+
+const fixedProbes = fixedProbeIds
+  .map((id) => manifest.entities.find((entry) => entry.id === id))
+  .filter(Boolean)
+
+assert(fixedProbes.length === fixedProbeIds.length, 'one or more fixed canonical probe IDs are missing from the manifest')
 
 const pathsToCheck = [...new Set([
   ...probes.map((entry) => entry.path),
-  ...fixedProbes,
-])]
+  ...fixedProbes.map((entry) => entry.path),
+]) ]
 
 let failures = 0
 for (const path of pathsToCheck) {
