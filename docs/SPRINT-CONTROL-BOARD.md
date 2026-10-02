@@ -1037,8 +1037,8 @@ The completed UI-002 through UI-013 foundation/adoption work is not reopened. Th
 
 | Phase | Scope | Status |
 |---|---|---|
-| UI-RD-01 | UI Baseline & Bug Inventory | **NEXT** |
-| UI-RD-02 | Global Search & Navigation Interaction | NOT STARTED |
+| UI-RD-01 | UI Baseline & Bug Inventory | **COMPLETED — audit `docs/UI-RD-01-BASELINE-AUDIT.md`** |
+| UI-RD-02 | Global Search & Navigation Interaction | **NEXT** |
 | UI-RD-03 | Application Shell & Overlay Hardening | NOT STARTED |
 | UI-RD-04 | Responsive Layout & Overflow | NOT STARTED |
 | UI-RD-05 | Route & Content Surface Validation | NOT STARTED |
@@ -1050,4 +1050,4 @@ The completed UI-002 through UI-013 foundation/adoption work is not reopened. Th
 
 **Operating rule:** one phase at a time. Each phase requires implementation/validation evidence, backlog update, control-board update, and direct commit to `main` before the next phase begins.
 
-**Current next action:** execute UI-RD-01 only.
+**Current next action:** execute UI-RD-02 only.
