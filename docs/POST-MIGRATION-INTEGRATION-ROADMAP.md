@@ -13,8 +13,8 @@ Validate and harden the production relationship between the application reposito
 
 | Phase | Name | Goal | Exit evidence |
 |---|---|---|---|
-| 14 | Canonical Application Integration | Revalidate manifest, relationship graph, representative topics, ID mapping, gateway consumption and dual-read behavior | CI + integration test + exit audit |
-| 15 | Legacy Dependency Readiness | Measure remaining legacy fallback dependence and define safe removal scope without deleting content | dependency inventory + PA-004 execution readiness decision |
+| 14 | Canonical Application Integration | Revalidate manifest, relationship graph, representative topics, ID mapping, gateway consumption and dual-read behavior | CI + integration test + exit audit | CLOSED
+| 15 | Legacy Dependency Readiness | Measure remaining legacy fallback dependence and define safe removal scope without deleting content | dependency inventory + PA-004 execution readiness decision | CLOSED — no deletion scope authorized
 | 16 | Canonical Delivery Hardening | Validate delivery origin, versioning, caching, failure handling and environment configuration | delivery matrix + CI evidence |
 | 17 | Content UX Validation | Validate topic, provision, judgment and related-content navigation against canonical records | route/content matrix + UX evidence |
 | 18 | Search & SEO Canonicalization | Validate search, canonical URLs, metadata, sitemap and canonical content identity | SEO/search matrix + production evidence |
