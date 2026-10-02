@@ -11,19 +11,27 @@ const routes = [
 const controllerTimeoutMs = 15000
 
 async function fetchText(path) {
-  const controller = new AbortController()
-  const timer = setTimeout(() => controller.abort(), controllerTimeoutMs)
-  try {
-    const response = await fetch(new URL(path, BASE), {
-      redirect: 'follow',
-      signal: controller.signal,
-      headers: { 'user-agent': 'codepackr-law-production-check/1.0' },
-    })
-    const text = await response.text()
-    return { response, text }
-  } finally {
-    clearTimeout(timer)
+  let lastError = null
+  for (let attempt = 1; attempt <= 12; attempt += 1) {
+    const controller = new AbortController()
+    const timer = setTimeout(() => controller.abort(), controllerTimeoutMs)
+    try {
+      const response = await fetch(new URL(path, BASE), {
+        redirect: 'follow',
+        signal: controller.signal,
+        headers: { 'user-agent': 'codepackr-law-production-check/1.0' },
+      })
+      const text = await response.text()
+      if (response.ok && text.trim()) return { response, text }
+      lastError = new Error(`HTTP ${response.status}`)
+    } catch (error) {
+      lastError = error
+    } finally {
+      clearTimeout(timer)
+    }
+    if (attempt < 12) await new Promise((resolve) => setTimeout(resolve, 10000))
   }
+  throw new Error(`Production route unavailable after deployment wait: ${path} (${lastError instanceof Error ? lastError.message : String(lastError)})`)
 }
 
 for (const route of routes) {
