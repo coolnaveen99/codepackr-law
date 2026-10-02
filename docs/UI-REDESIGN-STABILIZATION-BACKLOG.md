@@ -25,20 +25,22 @@
 
 ## UI-RD-02 — Global Search & Navigation Interaction
 
-**Status:** NOT STARTED
+**Status:** COMPLETED — 2026-10-02
+
+**Evidence:** `docs/UI-RD-02-GLOBAL-SEARCH-NAV-AUDIT.md`
 
 | Ticket | Task | Exit evidence |
 |---|---|---|
-| UI-RD-02.01 | Fix global-search open/close state | Search state regression |
-| UI-RD-02.02 | Fix search → sidebar/menu transition | No simultaneous conflicting overlays |
-| UI-RD-02.03 | Fix backdrop/background stacking | Underlying page remains correctly controlled |
-| UI-RD-02.04 | Validate Escape, outside click and route-change behavior | Interaction matrix |
-| UI-RD-02.05 | Validate desktop/mobile variants | Responsive evidence |
-| UI-RD-02.06 | Add focused regression tests | Test evidence |
+| UI-RD-02.01 | Fix global-search open/close state | COMPLETED — Search state regression |
+| UI-RD-02.02 | Fix search → sidebar/menu transition | COMPLETED — No simultaneous conflicting overlays |
+| UI-RD-02.03 | Fix backdrop/background stacking | COMPLETED — Underlying page remains correctly controlled |
+| UI-RD-02.04 | Validate Escape, outside click and route-change behavior | COMPLETED — Interaction matrix |
+| UI-RD-02.05 | Validate desktop/mobile variants | COMPLETED — Responsive evidence |
+| UI-RD-02.06 | Add focused regression tests | COMPLETED — Test evidence |
 
 ## UI-RD-03 — Application Shell & Overlay Hardening
 
-**Status:** NOT STARTED
+**Status:** **NEXT**
 
 Validate rail, top bar, drawers, dialogs, scroll locking, z-index/stacking, focus restoration and navigation state.
 
