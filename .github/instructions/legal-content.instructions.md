@@ -18,7 +18,7 @@ Apply [`.github/instructions/global-legal-content.md`](global-legal-content.md) 
 ## Non-Negotiable Standards for Legal Data
 
 1. **Dual-Track Depth**:
-   - **Track A (Student / Exam)**: Deconstruct statutory provisions, provisos, and explanations; provide structured 10-mark and 16-mark answers (`marks: 10 | 16`) using the IRAC/ILAC method.
+   - **Track A (Student / Analytical Learning)**: Deconstruct statutory provisions, provisos, and explanations; provide structured analytical answers using IRAC/ILAC or another appropriate framework.
    - **Track B (Practitioner / Courtroom)**: State the forum, pecuniary/territorial jurisdiction, limitation period, proving ingredients, standard/burden of proof (BSA ss. 104–106 & s. 63), and primary arguments for both sides.
 2. **Textbook Treatises, Not Boilerplate Synthesizers**:
    - Write dedicated `src/data/topics/<slug>/<id>.ts` files.
