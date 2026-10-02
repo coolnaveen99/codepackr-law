@@ -111,7 +111,7 @@ export function HomePage({
             </p>
           </div>
           <span className="text-xs font-bold px-3 py-1 rounded-xl bg-white dark:bg-slate-900 border border-blue-100 dark:border-blue-900 text-blue-700 dark:text-blue-300 shrink-0">
-            2 Featured Tools
+            3 Featured Tools
           </span>
         </div>
 
@@ -130,6 +130,13 @@ export function HomePage({
               description: 'Compare original and revised pleadings, notices, or other legal text with side-by-side and unified redline-style views.',
               label: 'Compare Documents',
               icon: 'FileDiff',
+            },
+            {
+              id: 'concept-versus',
+              title: 'Concept Versus',
+              description: 'Compare two canonical legal concepts side by side for study, distinctions, revision, and exam preparation.',
+              label: 'Compare Concepts',
+              icon: 'ArrowLeftRight',
             },
           ].map((tool) => (
             <button
