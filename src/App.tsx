@@ -71,7 +71,13 @@ import { encodeKnowledgeId } from './data/knowledge'
 
 export default function App() {
   const [mobileTab, setMobileTab] = useState('home')
-  const dark = false
+  const [dark, setDark] = useState(() => {
+    try {
+      return localStorage.getItem('codepackr-law-theme') === 'dark'
+    } catch {
+      return false
+    }
+  })
   const [route, setRoute] = useState(() => parseRoute())
   const [selectedCategory, setSelectedCategory] = useState<ToolCategory | 'all'>('all')
   const [searchQuery, setSearchQuery] = useState('')
@@ -88,8 +94,13 @@ export default function App() {
   }, [])
 
   useEffect(() => {
-    document.documentElement.classList.remove('dark')
-  }, [])
+    document.documentElement.classList.toggle('dark', dark)
+    try {
+      localStorage.setItem('codepackr-law-theme', dark ? 'dark' : 'light')
+    } catch {
+      // Theme preference is optional; the UI remains functional when storage is unavailable.
+    }
+  }, [dark])
 
   useEffect(() => {
     registerServiceWorker()
@@ -354,7 +365,7 @@ export default function App() {
         <CodepackrFamilyBar />
         <Header
           dark={dark}
-          onToggleDark={() => {}}
+          onToggleDark={() => setDark((value) => !value)}
           currentLabel={null}
           activeKey={
             route.type === 'home'
