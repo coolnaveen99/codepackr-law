@@ -60,12 +60,15 @@
 
 ## Phase 18 — Search & SEO Canonicalization
 
+**Implementation:** COMPLETE — 2026-10-02; CI validation pending for commit `8ddcb34e498b864d111228ded7082291756adda5`.
+
 | Ticket | Task | Status |
 |---|---|---|
-| INT-018.01 | Search-to-canonical-ID validation | PLANNED |
-| INT-018.02 | Canonical URL validation | PLANNED |
-| INT-018.03 | Metadata/OG validation | PLANNED |
-| INT-018.04 | Sitemap/content parity | PLANNED |
+| INT-018.01 | Search-to-canonical-ID validation | COMPLETED — representative CPC §32 and PIL locus standi searches retain stable application topic IDs |
+| INT-018.02 | Canonical URL validation | COMPLETED — canonical topic IDs resolve to indexable subject/topic URLs and canonical URL builder is regression-tested |
+| INT-018.03 | Metadata/OG validation | COMPLETED — subject/topic/tool structured-data URL contracts are regression-tested; route metadata uses the shared canonical builder |
+| INT-018.04 | Sitemap/content parity | COMPLETED — sitemap uniqueness and representative canonical topic URL presence are regression-tested |
+
 
 ## Phase 19 — Production Integration Validation
 
