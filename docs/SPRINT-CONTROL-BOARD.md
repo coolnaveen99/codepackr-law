@@ -1025,3 +1025,29 @@ The binding monetization policy preserves the free legal-information/safety base
 **Decision:** No legacy content deletion or canonical-only hard switch in this phase.
 
 **Next executable phase:** Post-Migration Phase 17 — Content UX Validation.
+
+
+## UI Redesign Stabilization Workstream — ACTIVE (2026-10-02)
+
+**Roadmap:** `docs/UI-REDESIGN-STABILIZATION-ROADMAP.md`  
+**Backlog:** `docs/UI-REDESIGN-STABILIZATION-BACKLOG.md`  
+**Execution instructions:** `docs/UI-REDESIGN-EXECUTION-INSTRUCTIONS.md`
+
+The completed UI-002 through UI-013 foundation/adoption work is not reopened. This new workstream exists to stabilize the adopted redesign and resolve current interaction, responsive, accessibility, performance, and production issues.
+
+| Phase | Scope | Status |
+|---|---|---|
+| UI-RD-01 | UI Baseline & Bug Inventory | **NEXT** |
+| UI-RD-02 | Global Search & Navigation Interaction | NOT STARTED |
+| UI-RD-03 | Application Shell & Overlay Hardening | NOT STARTED |
+| UI-RD-04 | Responsive Layout & Overflow | NOT STARTED |
+| UI-RD-05 | Route & Content Surface Validation | NOT STARTED |
+| UI-RD-06 | Visual System Consistency | NOT STARTED |
+| UI-RD-07 | Accessibility & Interaction Quality | NOT STARTED |
+| UI-RD-08 | Performance & Build Hardening | NOT STARTED |
+| UI-RD-09 | Production Validation | NOT STARTED |
+| UI-RD-10 | Final UI Release Closure | NOT STARTED |
+
+**Operating rule:** one phase at a time. Each phase requires implementation/validation evidence, backlog update, control-board update, and direct commit to `main` before the next phase begins.
+
+**Current next action:** execute UI-RD-01 only.
