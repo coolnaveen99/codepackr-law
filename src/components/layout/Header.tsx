@@ -78,7 +78,7 @@ export function Header({
   }, [])
 
   const learn: NavItem[] = [
-    { label: 'Learn', hint: 'Subjects & provisions', icon: BookOpen, action: onOpenSubjects, active: activeKey === 'subjects' || activeKey?.startsWith('subject:') },
+    { label: 'Learn', hint: 'Subjects & provisions', icon: BookOpen, action: onOpenSubjects, active: activeKey === 'subjects' || !!activeKey?.startsWith('subject:') },
     { label: 'Research', hint: 'Sources & authorities', icon: FileSearch, action: () => onSelectTool('research-workbench'), active: activeKey === 'tool:research-workbench' || activeKey === 'tool:global-search' },
     { label: 'Practice', hint: 'Matters & preparation', icon: BriefcaseBusiness, action: () => onSelectTool('case-prep'), active: activeKey === 'tool:case-prep' || activeKey === 'tool:practice-dashboard' },
     { label: 'Library', hint: 'Judgments & knowledge', icon: Library, action: onOpenCaseLaw, active: activeKey === 'case-law' || activeKey === 'knowledge' },
