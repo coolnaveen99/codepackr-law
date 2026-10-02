@@ -3,6 +3,7 @@ import { getCanonicalContentBaseUrl } from './canonicalDelivery'
 import { mapCanonicalTopicToLegacy } from './mapCanonicalTopic'
 import type { ContentRepository, TopicContentRecord } from './ContentRepository'
 import type { ContentEnvelope } from './contentTypes'
+import type { TopicContent } from '../data/topics/topicTypes'
 
 /** Retained in production bundles for PA-001 deploy verification. */
 export const CONTENT_GATEWAY_DEPLOY_MARKER = 'cp-law-content-gateway-v1'
@@ -47,7 +48,7 @@ export async function getTopicContent(subjectSlug: string, topicId: string): Pro
   return null
 }
 
-export async function getLegacyCompatibleTopic(subjectSlug: string, topicId: string): Promise<TopicContentRecord['content'] | null> {
+export async function getLegacyCompatibleTopic(subjectSlug: string, topicId: string): Promise<TopicContent | null> {
   const record = await getTopicContent(subjectSlug, topicId)
   if (!record) return null
   return mapCanonicalTopicToLegacy(record)
