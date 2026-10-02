@@ -9,7 +9,7 @@
 
 **Evidence:** `docs/UI-RD-01-BASELINE-AUDIT.md`
 
-**Primary defect carried forward:** UI-RD-01-F01/F02 — desktop global search is a full-viewport z-index 120 overlay above the z-index 80 navigation rail, so the sidebar cannot participate in navigation while search is open. The next phase must solve this through deterministic overlay/state behavior rather than a blind z-index change.
+**Historical defect:** UI-RD-01-F01/F02 was resolved during UI-RD-02 through deterministic overlay/state behavior and layered z-index changes. It is retained only as historical evidence and must not be reopened without new evidence.
 
 | Ticket | Task | Exit evidence |
 |---|---|---|
