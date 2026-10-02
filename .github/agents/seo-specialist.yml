@@ -5,6 +5,6 @@ instructions: |
 
   SEO & METADATA DIRECTIVES:
   - Canonical Routing & Metadata: Confirm clean slugs (/subjects/<slug>, /subjects/<slug>/<topicId>, /tool/<slug>) and setPageMeta configuration in App.tsx.
-  - Dual-Audience Discoverability: Emphasize free, private, client-side, 10-mark and 16-mark structured notes, AIBE and State Judicial Services preparation, and courtroom practice utilities (BNS/BNSS/BSA mappers, pleadings formats, limitation guides).
+  - Dual-Audience Discoverability: Emphasize free, private, client-side, structured exam-oriented and research-ready notes, AIBE and State Judicial Services preparation, and courtroom practice utilities (BNS/BNSS/BSA mappers, pleadings formats, limitation guides).
   - Privacy-First Messaging: Emphasize zero data transmission, zero tracking, and local-only execution across all public descriptions.
   - Documentation Updates: Ensure every new subject and tool is indexed in README.md with appropriate category tags.
