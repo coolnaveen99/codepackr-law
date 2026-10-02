@@ -386,6 +386,14 @@ export default function App() {
             setKnowledgeUrl()
             setRoute({ type: 'knowledge' })
           }}
+          onOpenJudgment={(id) => {
+            setCaseLawUrl(id)
+            setRoute({ type: 'case-law', judgmentId: id })
+          }}
+          onSelectTopic={(slug, topicId) => {
+            setTopicUrl(slug, topicId)
+            setRoute({ type: 'topic', subjectSlug: slug, topicId })
+          }}
           onOpenCaseLaw={() => {
             setCaseLawUrl()
             setRoute({ type: 'case-law' })

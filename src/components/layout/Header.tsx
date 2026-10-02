@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   ArrowLeftRight,
   BookOpen,
@@ -16,6 +16,9 @@ import {
   Settings2,
   Wrench,
 } from 'lucide-react'
+import { TOOLS } from '../../data/tools'
+import { searchSubjectsAndTopics } from '../../data/liveSubjects'
+import { ALL_JUDGMENTS } from '../../data/judgments'
 
 interface HeaderProps {
   dark: boolean
@@ -29,6 +32,8 @@ interface HeaderProps {
   onSelectTool: (slug: string) => void
   onOpenKnowledge: () => void
   onOpenCaseLaw: () => void
+  onOpenJudgment?: (id: string) => void
+  onSelectTopic?: (subjectSlug: string, topicId: string) => void
   onOpenContact?: () => void
 }
 
@@ -46,13 +51,17 @@ export function Header({
   activeKey,
   onHome,
   onOpenSubjects,
+  onSelectSubject,
   onSelectTool,
   onOpenKnowledge,
   onOpenCaseLaw,
+  onOpenJudgment,
+  onSelectTopic,
   onOpenContact,
 }: HeaderProps) {
   const [collapsed, setCollapsed] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
+  const [searchQuery, setSearchQuery] = useState('')
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
   const searchTriggerRef = useRef<HTMLButtonElement>(null)
@@ -184,6 +193,18 @@ export function Header({
     { label: 'Library', hint: 'Judgments & knowledge', icon: Library, action: onOpenCaseLaw, active: activeKey === 'case-law' || activeKey === 'knowledge' },
     { label: 'Utilities', hint: 'Calculators & mappings', icon: Wrench, action: () => onSelectTool('legal-calculators'), active: activeKey === 'tool:legal-calculators' },
   ]
+
+  const searchResults = useMemo(() => {
+    const q = searchQuery.trim().toLowerCase()
+    if (q.length < 2) return [] as { key: string; title: string; hint: string; run: () => void }[]
+    const rows: { key: string; title: string; hint: string; run: () => void }[] = []
+    const found = searchSubjectsAndTopics(q)
+    for (const subject of found.subjects.slice(0, 4)) rows.push({ key: 's-' + subject.slug, title: subject.shortName, hint: 'Subject', run: () => onSelectSubject(subject.slug) })
+    for (const item of found.topics.slice(0, 5)) rows.push({ key: 't-' + item.subject.slug + '-' + item.topic.id, title: item.topic.name, hint: item.subject.shortName, run: () => onSelectTopic?.(item.subject.slug, item.topic.id) })
+    for (const tool of TOOLS.filter((tool) => (tool.name + ' ' + tool.description).toLowerCase().includes(q)).slice(0, 4)) rows.push({ key: 'tool-' + tool.slug, title: tool.name, hint: 'Tool', run: () => onSelectTool(tool.slug) })
+    for (const judgment of ALL_JUDGMENTS.filter((item) => ((item.caseName || '') + ' ' + (item.citation || '')).toLowerCase().includes(q)).slice(0, 4)) rows.push({ key: 'j-' + judgment.id, title: judgment.caseName, hint: judgment.citation || 'Judgment', run: () => onOpenJudgment?.(judgment.id) })
+    return rows.slice(0, 12)
+  }, [searchQuery, onSelectSubject, onSelectTool, onSelectTopic, onOpenJudgment])
 
   return (
     <>
@@ -366,14 +387,28 @@ export function Header({
             </div>
             <div className="cp-law-search-input-wrap">
               <Search size={20} />
-              <input ref={searchRef} placeholder="Subjects, sections, Acts, judgments, authorities, tools…" onKeyDown={(event) => {
+              <input ref={searchRef} value={searchQuery} placeholder="Subjects, sections, Acts, judgments, authorities, tools…" onChange={(event) => setSearchQuery(event.target.value)} onKeyDown={(event) => {
                 if (event.key === 'Enter') {
+                  const first = searchResults[0]
                   setSearchOpen(false)
-                  onSelectTool('global-search')
+                  if (first) first.run()
+                  else {
+                    try { sessionStorage.setItem('cp-law:global-search-query', searchQuery) } catch { /* ignore */ }
+                    onSelectTool('global-search')
+                  }
                 }
               }} />
               <kbd>Enter</kbd>
             </div>
+            {searchResults.length > 0 && (
+              <div className="cp-law-search-results">
+                {searchResults.map((result) => (
+                  <button key={result.key} type="button" onClick={() => { setSearchOpen(false); result.run() }}>
+                    <b>{result.title}</b><small>{result.hint}</small>
+                  </button>
+                ))}
+              </div>
+            )}
             <div className="cp-law-search-suggestions">
               <button type="button" onClick={() => { setSearchOpen(false); onOpenSubjects() }}><BookOpen size={17} /><span><b>Browse subjects</b><small>Curriculum, topics and provisions</small></span></button>
               <button type="button" onClick={() => { setSearchOpen(false); onOpenCaseLaw() }}><Library size={17} /><span><b>Case law library</b><small>Judgments and legal authorities</small></span></button>
