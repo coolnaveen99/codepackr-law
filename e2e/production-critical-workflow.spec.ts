@@ -31,7 +31,7 @@ test.describe('PR-002 critical legal workflow', () => {
 
   test('judgment analyzer loads a research handoff and structures supplied text', async ({ page }) => {
     await page.evaluate(() => {
-      localStorage.setItem('cp-law:judgment-handoff:v1', JSON.stringify({
+      sessionStorage.setItem('cp-law:judgment-handoff:v1', JSON.stringify({
         source: 'research-workbench',
         title: 'Sample authority',
         caseName: 'Sample authority',
