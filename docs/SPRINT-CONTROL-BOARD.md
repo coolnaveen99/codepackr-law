@@ -89,6 +89,21 @@
 
 **Sprint rule:** Phase 0–32 final closure is now certified because CLOSURE-001 through CLOSURE-004 have evidence and this board records that evidence. Future work is Production Readiness & Integration Hardening, not a reopened numbered roadmap phase.
 
+## Pending Phase Reconciliation — 2026-10-02
+
+A full repository phase-status audit was completed after the UI/tool restoration work.
+
+- Numbered roadmap Phases 0–32: **CLOSED**.
+- Post-migration integration Phases 14–20: **CLOSED**.
+- UI-RD-01 through UI-RD-10: **CLOSED**.
+- Production Readiness PR-001 through PR-010: **COMPLETED**.
+- Phase 27 exit-audit stale status: **RECONCILED** — CI evidence recorded and audit changed from PENDING CI to CLOSED.
+- No implementation phase is currently marked pending or in progress.
+- Future capabilities such as additional research/case-preparation enhancements are backlog items, not incomplete phases.
+- AI provider implementation remains deliberately deferred to the final product phase.
+- Latest documentation-only reconciliation commit: `7919cf3198fc3d1c65fc138a85033093418f6561`.
+- Vercel currently reports an external build-rate-limit failure for the latest documentation commit; this does not invalidate the completed phase evidence and no production deployment is claimed for documentation-only changes.
+
 ## Production Readiness & Integration Hardening — ACTIVE
 
 | ID | Work | Status | Priority |
