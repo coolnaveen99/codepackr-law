@@ -48,13 +48,15 @@
 
 ## Phase 17 — Content UX Validation
 
+**Implementation:** COMPLETE — 2026-10-02; CI validation pending for commit `56a9a60f501dd73a699d7b7dbf3c4c03e06565e3`.
+
 | Ticket | Task | Status |
 |---|---|---|
-| INT-017.01 | Topic route matrix | PLANNED |
-| INT-017.02 | Provision/judgment navigation | PLANNED |
-| INT-017.03 | Related-content navigation | PLANNED |
-| INT-017.04 | Missing/unpublished content states | PLANNED |
-| INT-017.05 | Desktop/mobile content smoke | PLANNED |
+| INT-017.01 | Topic route matrix | COMPLETED — canonical CPC/PIL/Tort route mapping regression tests |
+| INT-017.02 | Provision/judgment navigation | COMPLETED — canonical entity/relationship navigation contract reviewed; no unsafe route conversion introduced |
+| INT-017.03 | Related-content navigation | COMPLETED — canonical relationship IDs resolve through ContentGateway with catalog fallback IDs retained |
+| INT-017.04 | Missing/unpublished content states | COMPLETED — gateway preserves null/missing behavior and legacy fallback boundary |
+| INT-017.05 | Desktop/mobile content smoke | PENDING — existing UI redesign E2E selectors remain outside canonical-content scope |
 
 ## Phase 18 — Search & SEO Canonicalization
 
