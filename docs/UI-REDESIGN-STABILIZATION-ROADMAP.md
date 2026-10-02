@@ -16,8 +16,8 @@ The workstream focuses on real interaction bugs, responsive behavior, route inte
 | Phase | Name | Primary outcome | Status |
 |---|---|---|---|
 | UI-RD-01 | UI Baseline & Bug Inventory | Reproducible defect inventory and acceptance matrix | **CLOSED — 2026-10-02** |
-| UI-RD-02 | Global Search & Navigation Interaction | Search/menu/overlay state correctness | **NEXT** |
-| UI-RD-03 | Application Shell & Overlay Hardening | Desktop/mobile shell stability | NOT STARTED |
+| UI-RD-02 | Global Search & Navigation Interaction | Search/menu/overlay state correctness | **CLOSED — 2026-10-02** |
+| UI-RD-03 | Application Shell & Overlay Hardening | Desktop/mobile shell stability | **NEXT** |
 | UI-RD-04 | Responsive Layout & Overflow | Mobile/tablet/desktop layout stability | NOT STARTED |
 | UI-RD-05 | Route & Content Surface Validation | All redesigned surfaces preserve routes/content contracts | NOT STARTED |
 | UI-RD-06 | Visual System Consistency | Chambers Record design-system adoption consistency | NOT STARTED |
@@ -71,4 +71,4 @@ The redesign is release-ready only when:
 
 ## Next phase
 
-**UI-RD-02 — Global Search & Navigation Interaction** is now the only phase to execute next.
+**UI-RD-03 — Application Shell & Overlay Hardening** is now the only phase to execute next.
