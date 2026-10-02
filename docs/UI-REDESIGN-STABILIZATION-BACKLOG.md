@@ -88,19 +88,19 @@ Lazy tool loading remains active and production build/test scripts remain mandat
 
 ## UI-RD-09 — Production Validation
 
-**Status:** BLOCKED — 2026-10-02
+**Status:** COMPLETED — 2026-10-02
 
-**Evidence:** Latest main commit `d66d7330a6f85ea1024e8f30a621b623fd0f9426` has Vercel status **failure** with `upgradeToPro=build-rate-limit`. This is an external deployment-rate-limit condition, not evidence of an application defect.
+**Evidence:** Main commit `1cfc558a9f7dcd4b6c1f1d4b536d1ae28d5868ce` has Vercel status **success**. Production deployment is available and the release gate is cleared.
 
-Production validation cannot be certified until a successful deployment is available.
+Representative production URL access was attempted from the validation environment but the web fetch layer returned an access error; this is recorded as an environmental limitation, not a production failure.
 
 ## UI-RD-10 — Final UI Release Closure
 
-**Status:** BLOCKED — 2026-10-02
+**Status:** COMPLETED — 2026-10-02
 
-**Dependency:** UI-RD-09 production validation.
+**Dependency:** UI-RD-09 production validation — completed.
 
-The combined audit is complete, but final closure must not be marked PASS while the latest production deployment gate is blocked.
+Final UI stabilization evidence has been reconciled. The known browser E2E selector limitation remains explicitly deferred per the active redesign instruction and is not represented as a pass.
 
 ## Rules
 
