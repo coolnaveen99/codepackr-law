@@ -57,7 +57,15 @@ export function Header({
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
 
-  const openSearch = () => setSearchOpen(true)
+  const closeOverlays = () => {
+    setSearchOpen(false)
+    setMobileNavOpen(false)
+  }
+
+  const openSearch = () => {
+    setMobileNavOpen(false)
+    setSearchOpen(true)
+  }
 
   useEffect(() => {
     onSidebarCollapsedChange?.(collapsed)
@@ -68,19 +76,20 @@ export function Header({
     return () => document.body.classList.remove('nav-open')
   }, [mobileNavOpen])
 
-  const runMobileAction = (action: () => void) => {
+  const runNavigationAction = (action: () => void) => {
+    closeOverlays()
     action()
-    setMobileNavOpen(false)
+  }
+
+  const runMobileAction = (action: () => void) => {
+    runNavigationAction(action)
   }
 
   useEffect(() => {
     if (!searchOpen) return
     searchRef.current?.focus()
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        setSearchOpen(false)
-        setMobileNavOpen(false)
-      }
+      if (event.key === 'Escape') closeOverlays()
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
@@ -112,7 +121,7 @@ export function Header({
         aria-label="Primary navigation"
       >
         <div className="cp-law-sidebar-brand">
-          <button type="button" onClick={onHome} className="cp-law-brand-button" aria-label="CodePackr Law home">
+          <button type="button" onClick={() => runNavigationAction(onHome)} className="cp-law-brand-button" aria-label="CodePackr Law home">
             <span className="cp-ds-mark size-9 rounded-xl flex items-center justify-center shrink-0"><Scale className="w-5 h-5" /></span>
             <span className="cp-law-brand-copy">
               <strong>CodePackr <em>Law</em></strong>
@@ -122,7 +131,7 @@ export function Header({
           <button
             type="button"
             className="cp-law-collapse"
-            onClick={() => setCollapsed((value) => !value)}
+            onClick={() => { closeOverlays(); setCollapsed((value) => !value) }}
             aria-label={collapsed ? 'Expand navigation' : 'Collapse navigation'}
             title={collapsed ? 'Expand navigation' : 'Collapse navigation'}
           >
@@ -132,13 +141,13 @@ export function Header({
 
         <div className="cp-law-sidebar-section">
           <span className="cp-law-section-label">Workspace</span>
-          <button type="button" className={`cp-law-nav-item ${activeKey === 'home' ? 'is-active' : ''}`} onClick={onHome}>
+          <button type="button" className={`cp-law-nav-item ${activeKey === 'home' ? 'is-active' : ''}`} onClick={() => runNavigationAction(onHome)}>
             <Home size={18} /><span><b>Home</b><small>Overview</small></span>
           </button>
           {learn.map((item) => {
             const Icon = item.icon
             return (
-              <button key={item.label} type="button" className={`cp-law-nav-item ${item.active ? 'is-active' : ''}`} onClick={item.action}>
+              <button key={item.label} type="button" className={`cp-law-nav-item ${item.active ? 'is-active' : ''}`} onClick={() => runNavigationAction(item.action)}>
                 <Icon size={18} /><span><b>{item.label}</b><small>{item.hint}</small></span>
               </button>
             )
@@ -147,21 +156,21 @@ export function Header({
 
         <div className="cp-law-sidebar-section cp-law-sidebar-secondary">
           <span className="cp-law-section-label">Reference</span>
-          <button type="button" className={`cp-law-nav-item ${activeKey === 'knowledge' ? 'is-active' : ''}`} onClick={onOpenKnowledge}>
+          <button type="button" className={`cp-law-nav-item ${activeKey === 'knowledge' ? 'is-active' : ''}`} onClick={() => runNavigationAction(onOpenKnowledge)}>
             <Scale size={18} /><span><b>Knowledge</b><small>Concepts & maxims</small></span>
           </button>
-          <button type="button" className={`cp-law-nav-item ${activeKey === 'case-law' ? 'is-active' : ''}`} onClick={onOpenCaseLaw}>
+          <button type="button" className={`cp-law-nav-item ${activeKey === 'case-law' ? 'is-active' : ''}`} onClick={() => runNavigationAction(onOpenCaseLaw)}>
             <Library size={18} /><span><b>Case law</b><small>Judgments & authorities</small></span>
           </button>
         </div>
 
         <div className="cp-law-sidebar-footer">
-          <button type="button" className="cp-law-nav-item" onClick={onToggleDark}>
+          <button type="button" className="cp-law-nav-item" onClick={() => runNavigationAction(onToggleDark)}>
             {dark ? <Sun size={18} /> : <Moon size={18} />}
             <span><b>{dark ? 'Light mode' : 'Dark mode'}</b><small>Appearance</small></span>
           </button>
           {onOpenContact && (
-            <button type="button" className="cp-law-nav-item" onClick={onOpenContact}>
+            <button type="button" className="cp-law-nav-item" onClick={() => runNavigationAction(onOpenContact)}>
               <Settings2 size={18} /><span><b>Support</b><small>Contact & feedback</small></span>
             </button>
           )}

@@ -340,7 +340,7 @@ html.dark .nav-drawer-panel {
   backdrop-filter: blur(14px);
 }
 .cp-law-topbar.is-sidebar-collapsed { margin-left: 4.75rem; }
-.cp-law-mobile-nav { position: absolute; top: 100%; left: 0; right: 0; height: calc(100vh - 6.125rem); z-index: 110; }
+.cp-law-mobile-nav { position: fixed; top: 6.125rem; right: 0; bottom: 0; left: 0; z-index: 110; }
 .cp-law-mobile-nav-backdrop { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: rgb(20 17 15 / .38); backdrop-filter: blur(3px); }
 .cp-law-mobile-nav-panel { position: absolute; inset: 0 auto 0 0; width: min(21rem, 88vw); overflow-y: auto; overscroll-behavior: contain; padding: .75rem; background: var(--cp-ds-raised); color: var(--cp-ds-ink); border-right: 1px solid var(--cp-ds-line); box-shadow: 16px 0 40px rgb(20 17 15 / .16); }
 .cp-law-mobile-nav-heading { display: flex; align-items: center; justify-content: space-between; gap: .75rem; padding: .5rem .35rem .8rem; margin-bottom: .35rem; border-bottom: 1px solid var(--cp-ds-line); }
@@ -396,7 +396,6 @@ html.dark .nav-drawer-panel {
 }
 @media (max-width: 1023px) {
   .cp-law-topbar { margin-left: 0; }
-  .cp-law-mobile-nav { height: calc(100vh - 6.125rem); }
   .cp-law-topbar-inner { min-height: 3.75rem; padding: .5rem .75rem; gap: .65rem; }
   .cp-law-context { order: 1; }
   .cp-law-mobile-menu { order: 0; }
