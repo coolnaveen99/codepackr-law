@@ -2,8 +2,9 @@
 /** CM-001 local catalog inventory. Does not fetch or invent canonical topics. */
 import { readdirSync, statSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-const root = new URL('..', import.meta.url).pathname
+const root = fileURLToPath(new URL('..', import.meta.url))
 const data = join(root, 'src/data')
 const subjects = readdirSync(data).filter((name) => statSync(join(data, name)).isDirectory())
 const rows = subjects.map((subject) => {
