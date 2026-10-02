@@ -17,14 +17,14 @@ The workstream focuses on real interaction bugs, responsive behavior, route inte
 |---|---|---|---|
 | UI-RD-01 | UI Baseline & Bug Inventory | Reproducible defect inventory and acceptance matrix | **CLOSED — 2026-10-02** |
 | UI-RD-02 | Global Search & Navigation Interaction | Search/menu/overlay state correctness | **CLOSED — 2026-10-02** |
-| UI-RD-03 | Application Shell & Overlay Hardening | Desktop/mobile shell stability | **NEXT** |
-| UI-RD-04 | Responsive Layout & Overflow | Mobile/tablet/desktop layout stability | NOT STARTED |
-| UI-RD-05 | Route & Content Surface Validation | All redesigned surfaces preserve routes/content contracts | NOT STARTED |
-| UI-RD-06 | Visual System Consistency | Chambers Record design-system adoption consistency | NOT STARTED |
-| UI-RD-07 | Accessibility & Interaction Quality | Keyboard, focus, dialog, target-size and motion quality | NOT STARTED |
-| UI-RD-08 | Performance & Build Hardening | Bundle/build/runtime regressions controlled | NOT STARTED |
-| UI-RD-09 | Production Validation | Deployment and representative production smoke | NOT STARTED |
-| UI-RD-10 | Final UI Release Closure | Evidence reconciliation and stabilization closure | NOT STARTED |
+| UI-RD-03 | Application Shell & Overlay Hardening | Desktop/mobile shell stability | **CLOSED — 2026-10-02** |
+| UI-RD-04 | Responsive Layout & Overflow | Mobile/tablet/desktop layout stability | **CLOSED — 2026-10-02** |
+| UI-RD-05 | Route & Content Surface Validation | All redesigned surfaces preserve routes/content contracts | **CLOSED — 2026-10-02** |
+| UI-RD-06 | Visual System Consistency | Chambers Record design-system adoption consistency | **CLOSED — 2026-10-02** |
+| UI-RD-07 | Accessibility & Interaction Quality | Keyboard, focus, dialog, target-size and motion quality | **CLOSED — 2026-10-02** |
+| UI-RD-08 | Performance & Build Hardening | Bundle/build/runtime regressions controlled | **CLOSED — 2026-10-02** |
+| UI-RD-09 | Production Validation | Deployment and representative production smoke | **BLOCKED — Vercel build-rate limit** |
+| UI-RD-10 | Final UI Release Closure | Evidence reconciliation and stabilization closure | **BLOCKED — waits for UI-RD-09** |
 
 ## Non-negotiable boundaries
 
@@ -69,6 +69,8 @@ The redesign is release-ready only when:
 - representative production smoke passes or an explicitly documented environmental limitation is retained;
 - final evidence is recorded in the closure audit.
 
-## Next phase
+## Release state
 
-**UI-RD-03 — Application Shell & Overlay Hardening** is now the only phase to execute next.
+**UI-RD-03 through UI-RD-08 are CLOSED. UI-RD-09 is BLOCKED by the current Vercel build-rate limit, and UI-RD-10 is blocked behind production validation.**
+
+**Audit:** `docs/UI-RD-03-10-COMBINED-RELEASE-AUDIT.md`
