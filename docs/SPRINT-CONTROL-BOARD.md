@@ -3,7 +3,7 @@
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
 **Roadmap position:** Phase 32 — **CLOSED** · Phase 31 — **CLOSED** · Phase 30 — **CLOSED** · Phase 29 — **CLOSED** · Phase 28 — **CLOSED** · Phase 27 — **CLOSED** · Phase 26 — **CLOSED**
-**Updated:** 2026-10-02 (PR-002 completed; PR-003 active)
+**Updated:** 2026-10-02 (PR-003 implementation merged; validation pending)
 
 ## Verified completed
 
@@ -95,7 +95,7 @@
 |---|---|---|---|
 | PR-001 | Playwright E2E foundation | **COMPLETED — PR #108 / merge 157997d** | P0 |
 | PR-002 | Critical workflow E2E | **COMPLETED — PR #109 / CI #427 / E2E #12** | P0 |
-| PR-003 | Route/subject smoke matrix | **IN PROGRESS** | P0 |
+| PR-003 | Route/subject smoke matrix | **REVIEW — PR #113 merged; Vercel validation pending** | P0 |
 | PR-004 | Mobile E2E | **BACKLOG** | P1 |
 | PR-005 | Accessibility audit | **BACKLOG** | P1 |
 | PR-006 | Legal-content integrity audit | **BACKLOG** | P0 |
