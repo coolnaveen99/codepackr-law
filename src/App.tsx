@@ -71,6 +71,7 @@ import { encodeKnowledgeId } from './data/knowledge'
 
 export default function App() {
   const [mobileTab, setMobileTab] = useState('home')
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
   const [dark, setDark] = useState(() => {
     try {
       return localStorage.getItem('codepackr-law-theme') === 'dark'
@@ -366,6 +367,7 @@ export default function App() {
         <Header
           dark={dark}
           onToggleDark={() => setDark((value) => !value)}
+          onSidebarCollapsedChange={setSidebarCollapsed}
           currentLabel={null}
           activeKey={
             route.type === 'home'
@@ -400,7 +402,7 @@ export default function App() {
 
         <OfflineBanner />
 
-        <main data-ui-task={uiTask} data-ui-measure={uiMeasure} aria-label={UI_TASK_TITLE[uiTask]} className="flex-1 w-full mx-auto px-4 sm:px-6 py-6 paper-grid cp-mobile-main-pad cp-page lg:pl-[18.5rem]">
+        <main data-ui-task={uiTask} data-ui-measure={uiMeasure} aria-label={UI_TASK_TITLE[uiTask]} className={`flex-1 w-full mx-auto px-4 sm:px-6 py-6 paper-grid cp-mobile-main-pad cp-page transition-[padding] duration-150 ease-out ${sidebarCollapsed ? 'lg:pl-[6.75rem]' : 'lg:pl-[18.5rem]'}`}>
           {route.type === 'contact' && <ContactFeedback onBackToHome={goHome} />}
 
           {route.type === 'case-law' && (

@@ -19,6 +19,7 @@ import {
 interface HeaderProps {
   dark: boolean
   onToggleDark: () => void
+  onSidebarCollapsedChange?: (collapsed: boolean) => void
   currentLabel?: string | null
   activeKey?: string
   onHome: () => void
@@ -41,6 +42,7 @@ type NavItem = {
 export function Header({
   dark,
   onToggleDark,
+  onSidebarCollapsedChange,
   currentLabel,
   activeKey,
   onHome,
@@ -52,15 +54,33 @@ export function Header({
 }: HeaderProps) {
   const [collapsed, setCollapsed] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
+  const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
 
   const openSearch = () => setSearchOpen(true)
 
   useEffect(() => {
+    onSidebarCollapsedChange?.(collapsed)
+  }, [collapsed, onSidebarCollapsedChange])
+
+  useEffect(() => {
+    document.body.classList.toggle('nav-open', mobileNavOpen)
+    return () => document.body.classList.remove('nav-open')
+  }, [mobileNavOpen])
+
+  const runMobileAction = (action: () => void) => {
+    action()
+    setMobileNavOpen(false)
+  }
+
+  useEffect(() => {
     if (!searchOpen) return
     searchRef.current?.focus()
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setSearchOpen(false)
+      if (event.key === 'Escape') {
+        setSearchOpen(false)
+        setMobileNavOpen(false)
+      }
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
@@ -151,7 +171,14 @@ export function Header({
 
       <header className={`cp-law-topbar ${collapsed ? "is-sidebar-collapsed" : ""}`}>
         <div className="cp-law-topbar-inner">
-          <button type="button" className="cp-law-mobile-menu lg:hidden" onClick={onOpenSubjects} aria-label="Open Learn">
+          <button
+            type="button"
+            className="cp-law-mobile-menu lg:hidden"
+            onClick={() => setMobileNavOpen((value) => !value)}
+            aria-expanded={mobileNavOpen}
+            aria-controls="codepackr-law-mobile-navigation"
+            aria-label={mobileNavOpen ? 'Close navigation' : 'Open navigation'}
+          >
             <Menu size={20} />
           </button>
           <div className="cp-law-context">
@@ -169,8 +196,68 @@ export function Header({
         </div>
       </header>
 
+
+        {mobileNavOpen && (
+          <div id="codepackr-law-mobile-navigation" className="cp-law-mobile-nav lg:hidden" role="dialog" aria-modal="true" aria-label="CodePackr Law navigation">
+            <button
+              type="button"
+              className="cp-law-mobile-nav-backdrop"
+              onClick={() => setMobileNavOpen(false)}
+              aria-label="Close navigation"
+            />
+            <nav className="cp-law-mobile-nav-panel" aria-label="Mobile primary navigation">
+              <div className="cp-law-mobile-nav-heading">
+                <div>
+                  <span className="cp-law-context-kicker">CodePackr Law</span>
+                  <strong>Legal workspace</strong>
+                </div>
+                <button type="button" onClick={() => setMobileNavOpen(false)} aria-label="Close navigation">
+                  <ChevronLeft size={18} />
+                </button>
+              </div>
+
+              <div className="cp-law-mobile-nav-group">
+                <span className="cp-law-section-label">Workspace</span>
+                <button type="button" className={`cp-law-nav-item ${activeKey === 'home' ? 'is-active' : ''}`} onClick={() => runMobileAction(onHome)}>
+                  <Home size={18} /><span><b>Home</b><small>Overview</small></span>
+                </button>
+                {learn.map((item) => {
+                  const Icon = item.icon
+                  return (
+                    <button key={item.label} type="button" className={`cp-law-nav-item ${item.active ? 'is-active' : ''}`} onClick={() => runMobileAction(item.action)}>
+                      <Icon size={18} /><span><b>{item.label}</b><small>{item.hint}</small></span>
+                    </button>
+                  )
+                })}
+              </div>
+
+              <div className="cp-law-mobile-nav-group cp-law-mobile-nav-reference">
+                <span className="cp-law-section-label">Reference</span>
+                <button type="button" className={`cp-law-nav-item ${activeKey === 'knowledge' ? 'is-active' : ''}`} onClick={() => runMobileAction(onOpenKnowledge)}>
+                  <Scale size={18} /><span><b>Knowledge</b><small>Concepts & maxims</small></span>
+                </button>
+                <button type="button" className={`cp-law-nav-item ${activeKey === 'case-law' ? 'is-active' : ''}`} onClick={() => runMobileAction(onOpenCaseLaw)}>
+                  <Library size={18} /><span><b>Case law</b><small>Judgments & authorities</small></span>
+                </button>
+              </div>
+
+              <div className="cp-law-mobile-nav-footer">
+                <button type="button" className="cp-law-nav-item" onClick={() => runMobileAction(onToggleDark)}>
+                  {dark ? <Sun size={18} /> : <Moon size={18} />}
+                  <span><b>{dark ? 'Light mode' : 'Dark mode'}</b><small>Appearance</small></span>
+                </button>
+                {onOpenContact && (
+                  <button type="button" className="cp-law-nav-item" onClick={() => runMobileAction(onOpenContact)}>
+                    <Settings2 size={18} /><span><b>Support</b><small>Contact & feedback</small></span>
+                  </button>
+                )}
+                <div className="cp-law-privacy"><span aria-hidden>●</span><span>Private by default</span></div>
+              </div>
+            </nav>
+          </div>
+        )}
       {searchOpen && (
-        <div className="cp-law-search-overlay" role="dialog" aria-modal="true" aria-label="Global search">
+        <div className={`cp-law-search-overlay ${collapsed ? "is-sidebar-collapsed" : ""}`} role="dialog" aria-modal="true" aria-label="Global search">
           <div className="cp-law-search-dialog">
             <div className="cp-law-search-heading">
               <div><span className="cp-law-context-kicker">Global search</span><h2>Find across CodePackr Law</h2></div>
