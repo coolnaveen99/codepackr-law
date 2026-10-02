@@ -22,7 +22,8 @@
     "check:canonical-delivery": "node scripts/check-canonical-delivery.mjs",
     "check:readiness": "node scripts/pr-readiness.mjs",
     "inventory:cm-001": "node scripts/cm-001-gap.mjs",
-    "check:cm-migration": "node scripts/cm-migration-gate.mjs"
+    "check:cm-migration": "node scripts/cm-migration-gate.mjs",
+    "check:production-integration": "node scripts/check-production-integration.mjs"
   },
   "dependencies": {
     "docx": "^9.5.1",
