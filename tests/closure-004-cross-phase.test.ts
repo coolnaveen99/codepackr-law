@@ -34,7 +34,7 @@ test('CLOSURE-004 cross-phase research → verify → analyze → prepare → dr
   const verified = verifyCitationSync(citationPayload)
   assert.ok(['verified', 'partial', 'user-provided', 'not-verified', 'conflict'].includes(verified.status))
   assert.ok(Array.isArray(verified.officialSources))
-  assert.notEqual(verified.status, 'does-not-exist')
+  assert.equal(verified.notes.some((note) => note.includes('does not exist')), false)
 
   // Analyze: structure supplied judgment text and preserve source provenance.
   const judgmentText = `Kesavananda Bharati v State of Kerala\n\nFacts\nThe supplied judgment text describes the factual background.\n\nIssues\nWhether constitutional amendments are subject to substantive limits.\n\nAuthorities Cited\nPrior constitutional decisions are discussed.\n\nReasoning\nThe supplied text sets out the court's reasoning.\n\nRatio\nThe supplied text records the stated holding.\n\nFinal Order\nThe supplied text records the disposition.`
