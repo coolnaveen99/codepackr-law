@@ -29,7 +29,7 @@ Home / Hamburger
         → Official Statutory Illustrations (if enacted) + Contrastive Hypotheticals
         → Landmark Precedents with Extracted Ratio Decidendi
         → Courtroom Arguments (Prosecution/Plaintiff vs Defence/Respondent)
-        → 10-Mark and 16-Mark Jump Buttons (IRAC / CREAC Answers)
+        → Structured Answer / Brief / Written Submissions controls
 ```
 
 Follow the established catalog standard:
@@ -98,7 +98,7 @@ Topic ids for catalog rows:
 
 | File | Constants |
 |------|-----------|
-| `src/components/layout/NavDrawer.tsx` | `CODE_SLUGS` (full catalogs) or `MORE_SLUGS` (high-yield themes) |
+| `src/components/layout/Header.tsx` | `CODE_SLUGS` (full catalogs) or `MORE_SLUGS` (high-yield themes) |
 | `src/components/home/HomePage.tsx` | `FEATURED_SLUGS` / `MORE_SLUGS` — keep in sync with the drawer |
 | `src/components/subjects/SubjectsList.tsx` | `FEATURED_SLUGS` only for the four codes unless the new subject is a complete catalog |
 
