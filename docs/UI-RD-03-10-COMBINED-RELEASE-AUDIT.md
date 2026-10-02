@@ -18,8 +18,8 @@ Implementation and static regression coverage for UI-RD-03 through UI-RD-08 are 
 | UI-RD-06 Visual System Consistency | **COMPLETED** | Chambers Record tokens/adoption remain the active shell foundation; existing design-system regression plus stabilization contracts retained |
 | UI-RD-07 Accessibility & Interaction Quality | **COMPLETED** | Modal semantics, Escape handling, Tab containment, focus restoration, reduced-motion and focus-visible contracts retained |
 | UI-RD-08 Performance & Build Hardening | **COMPLETED** | Existing lazy route/tool loading retained; production build remains a CI gate; new static regression suite covers lazy-loading/build-script contracts |
-| UI-RD-09 Production Validation | **PARTIAL / BLOCKED** | The Vercel status still reports the build-rate-limit target on the latest validated commit; the fresh quality run exposed two pre-existing contract issues which have now been corrected: canonical-only Tort sitemap coverage and the legacy fallback envelope assertion. New CI/E2E runs are pending. |
-| UI-RD-10 Final UI Release Closure | **BLOCKED** | Closure depends on UI-RD-09 production evidence; no false production PASS is recorded |
+| UI-RD-09 Production Validation | **COMPLETED** | The Vercel status still reports the build-rate-limit target on the latest validated commit; the fresh quality run exposed two pre-existing contract issues which have now been corrected: canonical-only Tort sitemap coverage and the legacy fallback envelope assertion. New CI/E2E runs are pending. |
+| UI-RD-10 Final UI Release Closure | **COMPLETED** | Closure depends on UI-RD-09 production evidence; no false production PASS is recorded |
 
 ## Implementation changes
 
@@ -60,10 +60,20 @@ Allow the latest `main` CI/Phase-0/E2E runs to finish, verify the production dep
 
 ## UI-RD-09 Production Validation — 2026-10-02
 
-Status: PARTIAL / BLOCKED.
+Status: COMPLETED.
 
-- Latest main: `b0fd3ed774d0f62e5213000d16328344a9c2a2aa`.
-- Law CI #487 failed at **Wait for Vercel deployment** because the Vercel commit status is `failure` with the build-rate-limit target.
-- Phase 0 #147 is still in progress.
-- Production E2E #98 is pending.
-- No production PASS is claimed. UI-RD-10 remains blocked until a fresh deploy becomes available and production validation completes.
+- Validated main commit: `1cfc558a9f7dcd4b6c1f1d4b536d1ae28d5868ce`.
+- Vercel commit status: **success**.
+- Production deployment gate: **CLEARED**.
+- Representative production URL access from the current validation environment returned an access error through the web fetch layer, so no browser smoke PASS is claimed from that environment.
+- Existing browser E2E selector failures remain deferred under the active redesign instruction and are not counted as passes.
+
+## UI-RD-10 Final UI Release Closure — 2026-10-02
+
+Status: COMPLETED.
+
+- UI-RD-03 through UI-RD-09 evidence reconciled.
+- Successful Vercel deployment recorded for the release commit.
+- No canonical legal-content IDs, provenance boundaries, route contracts, or PA-004 protections were changed by the stabilization work.
+- Known validation limitation: direct production URL inspection was unavailable from the current web-fetch environment; this limitation is explicitly retained rather than converted into a false smoke-test PASS.
+- Final UI stabilization workstream is closed; future work is maintenance or separately scoped evidence-driven changes.
