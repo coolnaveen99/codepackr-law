@@ -273,7 +273,8 @@ html.dark .nav-drawer-panel {
    search and workspace context replace the legacy hamburger-first chrome. */
 .cp-law-sidebar {
   position: fixed;
-  inset: 0 auto 0 0;
+  inset: 2.375rem auto 0 0;
+  height: calc(100vh - 2.375rem);
   z-index: 80;
   width: 17.5rem;
   flex-direction: column;
