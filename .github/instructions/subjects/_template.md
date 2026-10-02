@@ -42,9 +42,10 @@ Every substantive section treatise or topic under this subject must address:
 1. **Juristic Purpose & Interpretation**: The mischief the statute rectifies (*Heydon's Case*) and applicable canons of statutory interpretation.
 2. **Statutory Anatomy**: Comprehensive deconstruction of clauses, provisos, explanations, and non-obstante clauses.
 3. **Leading Precedents**: Extract the binding *ratio decidendi* and distinguish it from *obiter dicta*.
-4. **Structured Examination Answers**:
-   - **10-Mark Answer (`marks: 10`)**: 500–700 words formatted strictly using IRAC (Issue, Rule, Application, Conclusion).
-   - **16-Mark Answer (`marks: 16`)**: 900–1200 words formatted using CREAC (Conclusion, Rule, Explanation, Application, Counter-arguments & Conclusion) with comparative and critical analysis.
+4. **Structured Analytical Answers**:
+   - Use IRAC, CREAC, problem-analysis, comparative analysis or another appropriate framework.
+   - Match depth to the topic and intended audience.
+   - Do not encode fixed mark values or artificial word-count requirements.
 5. **Doubt-Clearing Matrix**: Dispel common examination traps, subtle distinctions from neighbouring provisions, and false equivalences.
 
 ---
