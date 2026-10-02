@@ -40,12 +40,13 @@ For every tort treatise:
 
 ---
 
-## 3. Academic & Examination Architecture (PhD Standard)
+## 3. Academic & Answer Architecture (PhD Standard)
 
-1. **IRAC 10-Mark Answer (`marks: 10`)**:
-   - Issue: Determination of tortious liability and available defences.
-   - Rule: Foundational common law principle, key maxim, landmark Indian precedent.
-   - Application: Forensic analysis of duty of care, breach, remoteness of damage (*Wagon Mound* test).
-   - Conclusion: Liability affirmed or excluded; measure of damages.
-2. **CREAC 16-Mark Answer (`marks: 16`)**:
-   - Scholastic jurisprudential paper: The transition from fault-based liability to enterprise liability in modern industrial societies, economic analysis of tort law (Calabresi and Coase), constitutional torts and human rights compensation in India, and the jurisprudence of exemplary damages.
+For each topic, produce substantive, structured answers that can support university examinations, judiciary preparation, research and professional practice without forcing a fixed marks template.
+
+1. **Issue and analytical framework**: Identify the legal issue(s), governing rule, relevant authorities, application and conclusion.
+2. **Doctrinal depth**: Explain statutory structure, ingredients, exceptions, competing interpretations and important distinctions.
+3. **Authority analysis**: Use verified precedents and extract the applicable ratio decidendi rather than listing case names.
+4. **Practice connection**: Where applicable, include forum, jurisdiction, limitation, evidentiary burdens and adversarial submissions.
+5. **Answer usability**: Provide coherent long-form answers when appropriate to the topic, with headings and a clear analytical sequence. Do not encode fixed mark values or artificial word-count requirements.
+6. **No fabricated certainty**: Unverified authorities or propositions must be marked for review.
