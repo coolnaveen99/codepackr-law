@@ -281,7 +281,7 @@ Status: CLOSED
 
 ### Canonical Content Migration
 - CM-001 — Canonical-vs-catalog gap inventory — COMPLETED
-- CM-002 — Constitution / core public-law migration — BACKLOG
+- CM-002 — Constitution / core public-law migration — COMPLETED (existing notes only; 13 title-only skipped)
 - CM-003 — Contract / commercial-law migration — BACKLOG
 - CM-004 — CPC / civil-procedure migration — BACKLOG
 - CM-005 — BNS / criminal-law migration — BACKLOG

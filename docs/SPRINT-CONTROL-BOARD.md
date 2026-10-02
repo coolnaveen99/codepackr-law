@@ -275,7 +275,7 @@ This is a separate content workstream and does **not** reopen the closed Phase 0
 | Sprint | Scope | Status |
 |---|---|---|
 | CM-001 | Baseline canonical-vs-catalog gap inventory | **COMPLETED — docs/CM-001-GAP-INVENTORY.md** |
-| CM-002 | Constitution / core public-law subject migration | **BLOCKED — LawTopic has no provenance field** |
+| CM-002 | Constitution / core public-law subject migration | **COMPLETED — 421 existing notes published to legal-content cf4d1d9; 13 title-only files skipped** |
 | CM-003 | Contract / commercial-law subject migration | **BLOCKED — LawTopic has no provenance field** |
 | CM-004 | CPC / civil-procedure subject migration | **BLOCKED — LawTopic has no provenance field** |
 | CM-005 | Criminal-law subject migration (BNS/transition-aware) | **BLOCKED — LawTopic has no provenance field** |
