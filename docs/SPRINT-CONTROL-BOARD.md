@@ -98,8 +98,8 @@
 | PR-003 | Route/subject smoke matrix | **COMPLETED — PR #113 merged; CI/route matrix merged; latest main CI #442 PASS; Vercel deployment pending** | P0 |
 | PR-004 | Mobile E2E | **BACKLOG** | P1 |
 | PR-005 | Accessibility audit | **BACKLOG** | P1 |
-| PR-006 | Legal-content integrity audit | **BACKLOG** | P0 |
-| PR-007 | Canonical content delivery | **BACKLOG** | P0 |
+| PR-006 | Legal-content integrity audit | **COMPLETED — executable catalog/canonical integrity audit; migration gaps explicitly reported** | P0 |
+| PR-007 | Canonical content delivery | **COMPLETED — canonical base resolver + delivery health gate** | P0 |
 | PR-008 | Bundle/performance optimization | **BACKLOG** | P1 |
 | PR-009 | Security/privacy final audit | **BACKLOG** | P1 |
 | PR-010 | Production readiness exit audit | **BACKLOG** | P0 |

@@ -51,6 +51,12 @@ jobs:
       - name: TypeScript validation
         run: npm run lint
 
+      - name: Canonical legal-content integrity audit
+        run: npm run audit:legal-content
+
+      - name: Canonical content delivery check
+        run: npm run check:canonical-delivery
+
       - name: Unit tests
         run: npm run test:run
 

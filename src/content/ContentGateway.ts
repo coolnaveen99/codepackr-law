@@ -1,4 +1,5 @@
 import { CanonicalContentRepository } from './ContentRepository'
+import { getCanonicalContentBaseUrl } from './canonicalDelivery'
 import { LegacyTopicRepository } from './LegacyTopicRepository'
 import { loadTopicContent } from '../data/topics/loadTopicContent'
 import { mapCanonicalTopicToLegacy } from './mapCanonicalTopic'
@@ -9,13 +10,7 @@ import type { TopicContent } from '../data/topics/topicTypes'
 /** Retained in production bundles for PA-001 deploy verification. */
 export const CONTENT_GATEWAY_DEPLOY_MARKER = 'cp-law-content-gateway-v1'
 
-const DEFAULT_LEGAL_CONTENT_BASE =
-  (typeof import.meta !== 'undefined' && (import.meta as any).env?.VITE_LEGAL_CONTENT_BASE_URL) ||
-  (typeof process !== 'undefined' &&
-    (process.env?.VITE_LEGAL_CONTENT_BASE_URL || process.env?.LEGAL_CONTENT_BASE_URL)) ||
-  'https://raw.githubusercontent.com/coolnaveen99/legal-content/main'
-
-const canonicalRepository = new CanonicalContentRepository(DEFAULT_LEGAL_CONTENT_BASE)
+const canonicalRepository = new CanonicalContentRepository(getCanonicalContentBaseUrl())
 
 const legacyRepository = new LegacyTopicRepository(loadTopicContent)
 
