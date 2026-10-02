@@ -1084,3 +1084,8 @@ The completed UI-002 through UI-013 foundation/adoption work is not reopened. Th
 | Unused source-code audit | **PENDING** | Must not delete or move source code until import/runtime/script/route references are verified |
 
 **Safety rule:** no file is to be permanently deleted during this cleanup. Uncertain files must be moved to an archive location with their original content preserved.
+
+
+### Cleanup safety note
+
+The source cleanup is deliberately conservative. Only files with repository-wide runtime-reference checks showing no active imports were moved. Firebase/contact code, mobile navigation, offline banner, family navigation, knowledge renderers, AI architecture and other referenced components were retained. A second cleanup pass should continue only after the same reference/dependency checks.
