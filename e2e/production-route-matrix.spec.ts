@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 
 const subjectSlugs = ['constitution','bnss','cpc','bns','bsa','family','contract','petition-formats','tort','adr','pil','ethics','labour','taxation','admin','company','environment','cyber','land','ipr']
-const toolSlugs = ['aibe-mcq','research-workbench','citation-verifier','judgment-analyzer','judgment-compare','case-prep','filing-checklists','legal-calculators','limitation-calculator','transition-centre','case-brief-builder','study-planner','practice-dashboard','cause-list-organizer','primary-source-finder','privacy-controls','global-search','bns-ipc-mapper','bnss-crpc-mapper','bsa-iea-mapper','section-flashcards','exam-timer','legal-maxims','landmark-cases','case-law','knowledge','document-compare','legal-draft-studio','court-forum-directory','research-bundle','neutral-analysis','usage-metrics']
+const toolSlugs = ['aibe-mcq','research-workbench','citation-verifier','judgment-analyzer','judgment-compare','case-prep','filing-checklists','legal-calculators','limitation-calculator','transition-centre','case-brief-builder','study-planner','practice-dashboard','cause-list-organizer','primary-source-finder','privacy-controls','global-search','bns-ipc-mapper','bnss-crpc-mapper','bsa-iea-mapper','section-flashcards','exam-timer','legal-maxims','landmark-cases','case-law','knowledge','document-compare','legal-draft-studio','document-compare','concept-versus','court-forum-directory','research-bundle','neutral-analysis','usage-metrics']
 
 test.describe('PR-003 route and subject smoke matrix', () => {
   for (const slug of subjectSlugs) {
