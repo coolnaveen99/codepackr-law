@@ -299,6 +299,10 @@ PR-006 and PR-007 are completed gates and remain mandatory CI protections.
 
 ---
 
+## Phase-by-Phase Sprint Backlog
+
+Detailed inventory: [docs/PHASE-BY-PHASE-SPRINT-BACKLOG.md](./PHASE-BY-PHASE-SPRINT-BACKLOG.md). This separates the closed Phase 0–32 implementation inventory from the current Production Readiness, Canonical Content Migration and Admin Publishing tracks.
+
 ## Current sprint backlog
 
 | ID | Work | Status | Priority |
