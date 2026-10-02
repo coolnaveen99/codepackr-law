@@ -17,8 +17,7 @@ Read in this sequence:
 ```text
 Subject Landing = Statutory Introduction + In-Force Status + Complete Provision Catalog
 Click Provision = Comprehensive Treatise Page
-10-Mark Button  → Full 10-Mark Answer (IRAC Method)
-16-Mark Button  → Full 16-Mark Answer (CREAC Method)
+Structured Answer → Full IRAC/CREAC or other appropriate analytical answer
 ```
 
 Follow the BNS/BNSS/BSA/Constitution catalog architecture:
