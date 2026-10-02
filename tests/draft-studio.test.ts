@@ -53,3 +53,11 @@ test('draft favourites toggle locally', () => {
   assert.deepEqual(next.favorites, ['draft-a'])
   assert.deepEqual(toggleDraftFavorite(next, 'draft-a').favorites, [])
 })
+
+
+test('drafting and comparison tools remain registered after UI redesign', async () => {
+  const { TOOLS } = await import('../src/data/tools')
+  assert.ok(TOOLS.some((tool) => tool.slug === 'legal-draft-studio'))
+  assert.ok(TOOLS.some((tool) => tool.slug === 'document-compare'))
+  assert.ok(TOOLS.some((tool) => tool.slug === 'concept-versus'))
+})
