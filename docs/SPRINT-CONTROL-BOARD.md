@@ -276,16 +276,16 @@ This is a separate content workstream and does **not** reopen the closed Phase 0
 |---|---|---|
 | CM-001 | Baseline canonical-vs-catalog gap inventory | **COMPLETED — docs/CM-001-GAP-INVENTORY.md** |
 | CM-002 | Constitution / core public-law subject migration | **COMPLETED — 421 existing notes published to legal-content cf4d1d9; 13 title-only files skipped** |
-| CM-003 | Contract / commercial-law subject migration | **BLOCKED — LawTopic has no provenance field** |
-| CM-004 | CPC / civil-procedure subject migration | **BLOCKED — LawTopic has no provenance field** |
-| CM-005 | Criminal-law subject migration (BNS/transition-aware) | **BLOCKED — LawTopic has no provenance field** |
-| CM-006 | BNSS / criminal-procedure subject migration | **BLOCKED — LawTopic has no provenance field** |
-| CM-007 | BSA / evidence subject migration | **BLOCKED — LawTopic has no provenance field** |
-| CM-008 | Family-law subject migration | **BLOCKED — LawTopic has no provenance field** |
-| CM-009 | Torts subject migration | **BLOCKED — LawTopic has no provenance field** |
-| CM-010 | PIL / constitutional-remedies subject migration | **BLOCKED — LawTopic has no provenance field** |
-| CM-011 | Remaining subjects and long-tail topics | **BLOCKED — LawTopic has no provenance field** |
-| CM-012 | Full catalog parity audit and migration closure | **BLOCKED — LawTopic has no provenance field** |
+| CM-003 | Contract / commercial-law subject migration | **COMPLETED — existing notes published to legal-content 9b2a043; title-only files skipped** |
+| CM-004 | CPC / civil-procedure subject migration | **COMPLETED — existing notes published to legal-content 9b2a043; title-only files skipped** |
+| CM-005 | Criminal-law subject migration (BNS/transition-aware) | **COMPLETED — existing notes published to legal-content 9b2a043; title-only files skipped** |
+| CM-006 | BNSS / criminal-procedure subject migration | **COMPLETED — existing notes published to legal-content 9b2a043; title-only files skipped** |
+| CM-007 | BSA / evidence subject migration | **COMPLETED — existing notes published to legal-content 9b2a043; title-only files skipped** |
+| CM-008 | Family-law subject migration | **COMPLETED — existing notes published to legal-content 9b2a043; title-only files skipped** |
+| CM-009 | Torts subject migration | **COMPLETED — existing notes published to legal-content 9b2a043; title-only files skipped** |
+| CM-010 | PIL / constitutional-remedies subject migration | **COMPLETED — existing notes published to legal-content 9b2a043; title-only files skipped** |
+| CM-011 | Remaining subjects and long-tail topics | **COMPLETED — existing notes published to legal-content 9b2a043; title-only files skipped** |
+| CM-012 | Full catalog parity audit and migration closure | **COMPLETED — existing notes published to legal-content 9b2a043; title-only files skipped** |
 
 **Migration rule:** each content sprint must pass source/provenance, verification-status, schema, relationship, route, SEO, and canonical-delivery checks before its topics are considered migrated.
 

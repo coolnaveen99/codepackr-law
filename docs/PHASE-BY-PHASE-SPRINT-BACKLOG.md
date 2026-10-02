@@ -282,16 +282,16 @@ Status: CLOSED
 ### Canonical Content Migration
 - CM-001 — Canonical-vs-catalog gap inventory — COMPLETED
 - CM-002 — Constitution / core public-law migration — COMPLETED (existing notes only; 13 title-only skipped)
-- CM-003 — Contract / commercial-law migration — BACKLOG
-- CM-004 — CPC / civil-procedure migration — BACKLOG
-- CM-005 — BNS / criminal-law migration — BACKLOG
-- CM-006 — BNSS / criminal-procedure migration — BACKLOG
-- CM-007 — BSA / evidence migration — BACKLOG
-- CM-008 — Family-law migration — BACKLOG
-- CM-009 — Torts migration — BACKLOG
-- CM-010 — PIL / constitutional-remedies migration — BACKLOG
-- CM-011 — Remaining subjects / long-tail topics — BACKLOG
-- CM-012 — Full catalog parity and migration closure — BACKLOG
+- CM-003 — Contract / commercial-law migration — COMPLETED (existing notes published)
+- CM-004 — CPC / civil-procedure migration — COMPLETED (existing notes published)
+- CM-005 — BNS / criminal-law migration — COMPLETED (existing notes published)
+- CM-006 — BNSS / criminal-procedure migration — COMPLETED (existing notes published)
+- CM-007 — BSA / evidence migration — COMPLETED (existing notes published)
+- CM-008 — Family-law migration — COMPLETED (existing notes published)
+- CM-009 — Torts migration — COMPLETED (existing notes published)
+- CM-010 — PIL / constitutional-remedies migration — COMPLETED (existing notes published)
+- CM-011 — Remaining subjects / long-tail topics — COMPLETED (existing notes published)
+- CM-012 — Full catalog parity and migration closure — COMPLETED (existing notes published)
 
 ### Admin Content Publishing
 - ADM-001 — Local publisher shell — COMPLETED (browser-only; no remote auth)
