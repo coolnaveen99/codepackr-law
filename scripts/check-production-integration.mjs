@@ -4,6 +4,7 @@ const routes = [
   '/subjects/cpc/s-32',
   '/subjects/pil/pil-locus-standi',
   '/subjects/tort/nature-definition',
+  '/subjects/constitution/art-1',
   '/sitemap.xml',
 ]
 
