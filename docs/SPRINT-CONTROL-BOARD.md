@@ -3,7 +3,7 @@
 **Owner:** Product / Architecture coordination  
 **Applies to:** `coolnaveen99/codepackr-law` + `coolnaveen99/legal-content`  
 **Roadmap position:** Phase 32 — **CLOSED** · Phase 31 — **CLOSED** · Phase 30 — **CLOSED** · Phase 29 — **CLOSED** · Phase 28 — **CLOSED** · Phase 27 — **CLOSED** · Phase 26 — **CLOSED**
-**Updated:** 2026-10-02 (PR-003 implementation merged; validation pending)
+**Updated:** 2026-10-02 (UI-002 design-system foundation on main; PR-003 validation still pending)
 
 ## Verified completed
 
@@ -105,6 +105,29 @@
 | PR-010 | Production readiness exit audit | **BACKLOG** | P0 |
 
 **Execution rule:** one active implementation task at a time. Each task must include validation evidence and a Sprint Board update before it can be marked COMPLETED.
+
+## UI-002 — New Design System — COMPLETED (2026-10-02)
+
+**Direction:** Chambers Record, approved 2026 CodePackr Law foundation. Existing page chrome is intentionally unchanged.  
+**Contract:** `docs/architecture/ui-002-design-system.md`  
+**Implementation:** `src/design-system` (tokens, Seal Burgundy colour system, type, spacing/grid, buttons, inputs, tabs, badges, panels, tables, legal-source/status primitives, workspace primitives, focus/hover/accessibility, responsive and light/dark foundations).  
+**Boundary:** `--cp-ds-*` tokens do not override Phase 20 `--cp-space-*` tokens. No page adoption. UI-003 is not started.
+
+| Check | Result |
+|---|---|
+| Design tokens and Seal Burgundy `#8B1E3F` / `#9F2D4A` | **PASS** |
+| Sibling accents excluded (`#2563EB`, Finance emerald) | **PASS** |
+| Typography, spacing, 12-column grid, treatise/workspace measures | **PASS** |
+| Buttons, inputs, tabs, badges, panels, tables | **PASS** |
+| Verification / source-kind / in-force primitives with text labels | **PASS** |
+| Workspace rail, canvas, inspector, toolbar | **PASS** |
+| 44px targets, focus-visible, hover, reduced motion, light/dark | **PASS** |
+| Pages not redesigned | **PASS** — `App.tsx` does not import the design system |
+| Privacy / SEO | **PASS** — no new route, no network, no third-party fonts |
+| Focused regression | `tests/design-system.test.ts` |
+
+**UI-002 status:** **COMPLETED** — foundation committed to `main`. Local gate: `tsc --noEmit` PASS (heap 4096); `tests/design-system.test.ts` 5/5 PASS. Production `vite build` was killed by the agent host memory limit (1.9 GiB) after sitemap generation; CI on push is the production-build evidence.  
+**Next action:** Do not start UI-003 until a separate sprint task is opened.
 
 ## Current sprint backlog
 
