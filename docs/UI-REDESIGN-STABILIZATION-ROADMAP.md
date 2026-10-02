@@ -23,8 +23,8 @@ The workstream focuses on real interaction bugs, responsive behavior, route inte
 | UI-RD-06 | Visual System Consistency | Chambers Record design-system adoption consistency | **CLOSED — 2026-10-02** |
 | UI-RD-07 | Accessibility & Interaction Quality | Keyboard, focus, dialog, target-size and motion quality | **CLOSED — 2026-10-02** |
 | UI-RD-08 | Performance & Build Hardening | Bundle/build/runtime regressions controlled | **CLOSED — 2026-10-02** |
-| UI-RD-09 | Production Validation | Deployment and representative production smoke | **BLOCKED — Vercel build-rate limit** |
-| UI-RD-10 | Final UI Release Closure | Evidence reconciliation and stabilization closure | **BLOCKED — waits for UI-RD-09** |
+| UI-RD-09 | Production Validation | Deployment and representative production smoke | **CLOSED — 2026-10-02** |
+| UI-RD-10 | Final UI Release Closure | Evidence reconciliation and stabilization closure | **CLOSED — 2026-10-02** |
 
 ## Non-negotiable boundaries
 
@@ -71,6 +71,6 @@ The redesign is release-ready only when:
 
 ## Release state
 
-**UI-RD-03 through UI-RD-08 are CLOSED. UI-RD-09 is BLOCKED by the current Vercel build-rate limit, and UI-RD-10 is blocked behind production validation.**
+**UI-RD-03 through UI-RD-10 are CLOSED. The successful Vercel deployment for main commit `1cfc558a9f7dcd4b6c1f1d4b536d1ae28d5868ce` cleared the production release gate.**
 
 **Audit:** `docs/UI-RD-03-10-COMBINED-RELEASE-AUDIT.md`
