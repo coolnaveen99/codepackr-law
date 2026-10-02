@@ -3,7 +3,7 @@
 **Phase:** 28 — Judicial / Neutral Analysis Mode  
 **Repository:** `coolnaveen99/codepackr-law`  
 **Date:** 2026-10-01  
-**Status:** PENDING CI
+**Status:** VALIDATION IN PROGRESS — dedicated PR quality gate
 
 ## Acceptance matrix
 
@@ -29,4 +29,4 @@ The mode is a navigation/guardrail surface over deterministic legal-material uti
 
 ## Exit decision
 
-Close Phase 28 only after the PR quality gate passes.
+Close Phase 28 only after the dedicated PR quality gate passes and its workflow run is independently recorded here.
