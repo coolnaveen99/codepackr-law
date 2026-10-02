@@ -59,7 +59,7 @@ Hamburger / Home
 - **Treatise page**: A complete chapter delivering both **Track A (Scholastic & Problem Solving Mastery)** for LL.B, LL.M, AIBE, and Judicial Services candidates, and **Track B (Litigation & Chamber Practice)** for junior advocates.
 - **Dock Jump Targets**: Dedicated quick-access targets for `#statutory-illustrations`, `#case-law-ratios`, `#legal-brief`, and `#written-submissions`.
 - **Zero Boilerplate Synthesizers**: Do not lead a study page with unverified IPC/CrPC/IEA mapping or generic boilerplate templates. Teach the actual working rule of that specific provision.
-- **Navigation Integration**: Wire new subjects into `src/components/layout/NavDrawer.tsx` (`CODE_SLUGS` or `MORE_SLUGS`) and `src/components/home/HomePage.tsx`.
+- **Navigation Integration**: Wire new subjects into `src/components/layout/Header.tsx` (the current Header navigation registry) and `src/components/home/HomePage.tsx`.
 
 ---
 
