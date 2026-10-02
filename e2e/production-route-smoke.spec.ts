@@ -16,5 +16,5 @@ test('SPA navigation survives a direct tool URL and back navigation', async ({ p
   await page.goto('/tool/research-workbench', { waitUntil: 'domcontentloaded' })
   await expect(page.locator('body')).toContainText('Codepackr Law')
   await page.goBack()
-  await expect(page).toHaveURL(/\\/$/)
+  await expect(page).toHaveURL(/\/$/)
 })
