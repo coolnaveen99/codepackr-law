@@ -1,10 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
 import {
+  ArrowLeftRight,
   BookOpen,
   BriefcaseBusiness,
   ChevronLeft,
   ChevronRight,
   FileSearch,
+  FileText,
+  GitCompare,
   Home,
   Library,
   Menu,
@@ -227,6 +230,15 @@ export function Header({
           <button type="button" className={`cp-law-nav-item ${activeKey === 'knowledge' ? 'is-active' : ''}`} onClick={() => runNavigationAction(onOpenKnowledge)}>
             <Scale size={18} /><span><b>Knowledge</b><small>Concepts & maxims</small></span>
           </button>
+          <button type="button" className={`cp-law-nav-item ${activeKey === 'tool:legal-draft-studio' ? 'is-active' : ''}`} onClick={() => runNavigationAction(() => onSelectTool('legal-draft-studio'))}>
+            <FileText size={18} /><span><b>Drafting</b><small>Templates & documents</small></span>
+          </button>
+          <button type="button" className={`cp-law-nav-item ${activeKey === 'tool:document-compare' ? 'is-active' : ''}`} onClick={() => runNavigationAction(() => onSelectTool('document-compare'))}>
+            <GitCompare size={18} /><span><b>Document Compare</b><small>Review changes locally</small></span>
+          </button>
+          <button type="button" className={`cp-law-nav-item ${activeKey === 'tool:concept-versus' ? 'is-active' : ''}`} onClick={() => runNavigationAction(() => onSelectTool('concept-versus'))}>
+            <ArrowLeftRight size={18} /><span><b>Concept Versus</b><small>Compare legal concepts</small></span>
+          </button>
           <button type="button" className={`cp-law-nav-item ${activeKey === 'case-law' ? 'is-active' : ''}`} onClick={() => runNavigationAction(onOpenCaseLaw)}>
             <Library size={18} /><span><b>Case law</b><small>Judgments & authorities</small></span>
           </button>
@@ -306,6 +318,15 @@ export function Header({
                 <span className="cp-law-section-label">Reference</span>
                 <button type="button" className={`cp-law-nav-item ${activeKey === 'knowledge' ? 'is-active' : ''}`} onClick={() => runMobileAction(onOpenKnowledge)}>
                   <Scale size={18} /><span><b>Knowledge</b><small>Concepts & maxims</small></span>
+                </button>
+                <button type="button" className={`cp-law-nav-item ${activeKey === 'tool:legal-draft-studio' ? 'is-active' : ''}`} onClick={() => runMobileAction(() => onSelectTool('legal-draft-studio'))}>
+                  <FileText size={18} /><span><b>Drafting</b><small>Templates & documents</small></span>
+                </button>
+                <button type="button" className={`cp-law-nav-item ${activeKey === 'tool:document-compare' ? 'is-active' : ''}`} onClick={() => runMobileAction(() => onSelectTool('document-compare'))}>
+                  <GitCompare size={18} /><span><b>Document Compare</b><small>Review changes locally</small></span>
+                </button>
+                <button type="button" className={`cp-law-nav-item ${activeKey === 'tool:concept-versus' ? 'is-active' : ''}`} onClick={() => runMobileAction(() => onSelectTool('concept-versus'))}>
+                  <ArrowLeftRight size={18} /><span><b>Concept Versus</b><small>Compare legal concepts</small></span>
                 </button>
                 <button type="button" className={`cp-law-nav-item ${activeKey === 'case-law' ? 'is-active' : ''}`} onClick={() => runMobileAction(onOpenCaseLaw)}>
                   <Library size={18} /><span><b>Case law</b><small>Judgments & authorities</small></span>
