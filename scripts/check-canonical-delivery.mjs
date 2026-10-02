@@ -75,7 +75,14 @@ for (const path of pathsToCheck) {
     assert(typeof entity.id === 'string', `${path}: missing id`)
     assert(typeof entity.entityType === 'string', `${path}: missing entityType`)
     assert(typeof entity.status === 'string', `${path}: missing status`)
-    console.log(`OK: ${path}`)
+    const manifestEntry = manifest.entities.find((entry) => entry.path === path)
+    assert(manifestEntry, `${path}: no manifest entry`)
+    assert(entity.id === manifestEntry.id, `${path}: entity id mismatch (manifest=${manifestEntry.id}, entity=${entity.id})`)
+    assert(entity.entityType === manifestEntry.entityType, `${path}: entityType mismatch (manifest=${manifestEntry.entityType}, entity=${entity.entityType})`)
+    if (manifestEntry.status === 'published') {
+      assert(entity.status === 'published', `${path}: published manifest entry delivered non-published entity (${entity.status})`)
+    }
+    console.log(`OK: ${path} [${entity.entityType}:${entity.id}]`)
   } catch (error) {
     failures += 1
     console.error(`FAIL: ${path} — ${error.message}`)
