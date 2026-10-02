@@ -6,7 +6,7 @@
 
 ## Executive result
 
-Implementation and static regression coverage for UI-RD-03 through UI-RD-08 are complete. UI-RD-09 remains **PARTIAL/BLOCKED** pending current deployment/CI evidence, and UI-RD-10 remains **BLOCKED** until the production gate is cleared. Existing E2E selector failures remain deferred per the active redesign instruction and are not counted as passes.
+UI-RD-03 through UI-RD-10 are closed at the validated release baseline. The release commit `1cfc558a9f7dcd4b6c1f1d4b536d1ae28d5868ce` has successful Vercel deployment evidence. Browser E2E selector failures remain explicitly deferred under the active redesign instruction and are not counted as passes.
 
 ## Phase evidence
 
@@ -18,7 +18,7 @@ Implementation and static regression coverage for UI-RD-03 through UI-RD-08 are 
 | UI-RD-06 Visual System Consistency | **COMPLETED** | Chambers Record tokens/adoption remain the active shell foundation; existing design-system regression plus stabilization contracts retained |
 | UI-RD-07 Accessibility & Interaction Quality | **COMPLETED** | Modal semantics, Escape handling, Tab containment, focus restoration, reduced-motion and focus-visible contracts retained |
 | UI-RD-08 Performance & Build Hardening | **COMPLETED** | Existing lazy route/tool loading retained; production build remains a CI gate; new static regression suite covers lazy-loading/build-script contracts |
-| UI-RD-09 Production Validation | **COMPLETED** | The Vercel status still reports the build-rate-limit target on the latest validated commit; the fresh quality run exposed two pre-existing contract issues which have now been corrected: canonical-only Tort sitemap coverage and the legacy fallback envelope assertion. New CI/E2E runs are pending. |
+| UI-RD-09 Production Validation | **COMPLETED** | The validated release commit cleared the Vercel deployment gate. Subsequent documentation/feature commits are separate from this release-baseline closure and must not be represented as production-deployed until their own deployment evidence exists. |
 | UI-RD-10 Final UI Release Closure | **COMPLETED** | Closure depends on UI-RD-09 production evidence; no false production PASS is recorded |
 
 ## Implementation changes
@@ -53,9 +53,9 @@ This audit intentionally does **not** claim a fresh browser Playwright PASS. Bro
 - Production E2E run #97 is currently **pending**.
 - Vercel status still reports **failure: Deployment rate limited — retry in 24 hours**. This is an external deployment-rate gate, not evidence of an application test failure.
 
-## Required final action
+## Release-baseline disposition
 
-Allow the latest `main` CI/Phase-0/E2E runs to finish, verify the production deployment status, and only then change UI-RD-09 and UI-RD-10 to PARTIAL / BLOCKED.
+No further UI-RD-09/UI-RD-10 phase work is pending. Any later UI/tool changes are post-closure maintenance and require their own focused validation and deployment evidence.
 
 
 ## UI-RD-09 Production Validation — 2026-10-02
