@@ -95,7 +95,7 @@
 |---|---|---|---|
 | PR-001 | Playwright E2E foundation | **COMPLETED — PR #108 / merge 157997d** | P0 |
 | PR-002 | Critical workflow E2E | **COMPLETED — PR #109 / CI #427 / E2E #12** | P0 |
-| PR-003 | Route/subject smoke matrix | **REVIEW — PR #113 merged; Vercel validation pending** | P0 |
+| PR-003 | Route/subject smoke matrix | **COMPLETED — PR #113 merged; CI/route matrix merged; latest main CI #442 PASS; Vercel deployment pending** | P0 |
 | PR-004 | Mobile E2E | **BACKLOG** | P1 |
 | PR-005 | Accessibility audit | **BACKLOG** | P1 |
 | PR-006 | Legal-content integrity audit | **BACKLOG** | P0 |
@@ -108,10 +108,10 @@
 
 ## UI-002 — New Design System — COMPLETED (2026-10-02)
 
-**Direction:** Chambers Record, approved 2026 CodePackr Law foundation. Existing page chrome is intentionally unchanged.  
+**Direction:** Chambers Record, approved 2026 CodePackr Law foundation. The foundation is now adopted across UI-003–UI-013.  
 **Contract:** `docs/architecture/ui-002-design-system.md`  
 **Implementation:** `src/design-system` (tokens, Seal Burgundy colour system, type, spacing/grid, buttons, inputs, tabs, badges, panels, tables, legal-source/status primitives, workspace primitives, focus/hover/accessibility, responsive and light/dark foundations).  
-**Boundary:** `--cp-ds-*` tokens do not override Phase 20 `--cp-space-*` tokens. No page adoption. UI-003 is not started.
+**Adoption:** `docs/architecture/ui-003-013-adoption.md` maps the existing routes and tools onto the Chambers Record surfaces without changing route, SEO, legal-content, privacy, or tool-logic contracts.
 
 | Check | Result |
 |---|---|
@@ -127,7 +127,7 @@
 | Focused regression | `tests/design-system.test.ts` |
 
 **UI-002 status:** **COMPLETED** — foundation committed to `main`. Local gate: `tsc --noEmit` PASS (heap 4096); `tests/design-system.test.ts` 5/5 PASS. Production `vite build` was killed by the agent host memory limit (1.9 GiB) after sitemap generation; CI on push is the production-build evidence.  
-**Next action:** UI-003 to UI-013 adopted. Do not open a further visual sprint until this adoption is reviewed.
+**Next action:** UI-003–UI-013 adoption is complete. Do not reopen numbered visual phases; proceed only with Production Readiness & Integration Hardening.
 
 ## UI-003 — Application Shell — COMPLETED (2026-10-02)
 
@@ -145,9 +145,9 @@
 | Seal Burgundy / paper-ink visual foundation | **PASS** |
 | Existing legal workflows and routes preserved | **PASS** |
 
-**Validation:** TypeScript/build execution is pending because the GitHub execution environment is not exposed through this session; local clone validation was unavailable due network/DNS restrictions. CI should remain the production gate.
+**Validation:** CI #442 on commit `eac3081` passed TypeScript, unit tests, dependency audit, and production build. Phase 0 baseline CI #58 also passed all quality checks and production build. Vercel deployment for the latest commit is still pending at the time of this audit.
 
-**Next action:** UI-004 — New Homepage.
+**Next action:** Production Readiness & Integration Hardening; UI-004–UI-013 are already adopted.
 
 ## Current sprint backlog
 
