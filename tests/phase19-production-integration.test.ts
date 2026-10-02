@@ -23,9 +23,10 @@ describe('Post-migration Phase 19 production integration contracts', () => {
     try {
       const content = await getTopicContent('constitution', 'art-1')
       assert.ok(content)
-      assert.equal(typeof content.glance, 'string')
-      assert.equal(typeof content.study, 'string')
-      assert.match(content.glance, /Article 1/)
+      assert.ok(content.content)
+      assert.equal(typeof content.content.glance, 'string')
+      assert.equal(typeof content.content.study, 'string')
+      assert.match(content.content.glance, /Article 1/)
     } finally {
       configureContentRepository(new CanonicalContentRepository())
     }
