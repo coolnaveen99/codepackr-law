@@ -215,6 +215,9 @@ export function Header({
           <button type="button" className={`cp-law-nav-item ${activeKey === 'home' ? 'is-active' : ''}`} onClick={() => runNavigationAction(onHome)}>
             <Home size={18} /><span><b>Home</b><small>Overview</small></span>
           </button>
+          <button type="button" className={`cp-law-nav-item ${activeKey === 'tool:legal-draft-studio' ? 'is-active' : ''}`} onClick={() => runNavigationAction(() => onSelectTool('legal-draft-studio'))}>
+            <FileText size={18} /><span><b>Drafting</b><small>Templates & documents</small></span>
+          </button>
           {learn.map((item) => {
             const Icon = item.icon
             return (
@@ -230,9 +233,7 @@ export function Header({
           <button type="button" className={`cp-law-nav-item ${activeKey === 'knowledge' ? 'is-active' : ''}`} onClick={() => runNavigationAction(onOpenKnowledge)}>
             <Scale size={18} /><span><b>Knowledge</b><small>Concepts & maxims</small></span>
           </button>
-          <button type="button" className={`cp-law-nav-item ${activeKey === 'tool:legal-draft-studio' ? 'is-active' : ''}`} onClick={() => runNavigationAction(() => onSelectTool('legal-draft-studio'))}>
-            <FileText size={18} /><span><b>Drafting</b><small>Templates & documents</small></span>
-          </button>
+
           <button type="button" className={`cp-law-nav-item ${activeKey === 'tool:document-compare' ? 'is-active' : ''}`} onClick={() => runNavigationAction(() => onSelectTool('document-compare'))}>
             <GitCompare size={18} /><span><b>Document Compare</b><small>Review changes locally</small></span>
           </button>
@@ -304,6 +305,9 @@ export function Header({
                 <button type="button" className={`cp-law-nav-item ${activeKey === 'home' ? 'is-active' : ''}`} onClick={() => runMobileAction(onHome)}>
                   <Home size={18} /><span><b>Home</b><small>Overview</small></span>
                 </button>
+                <button type="button" className={`cp-law-nav-item ${activeKey === 'tool:legal-draft-studio' ? 'is-active' : ''}`} onClick={() => runMobileAction(() => onSelectTool('legal-draft-studio'))}>
+                  <FileText size={18} /><span><b>Drafting</b><small>Templates & documents</small></span>
+                </button>
                 {learn.map((item) => {
                   const Icon = item.icon
                   return (
@@ -319,9 +323,7 @@ export function Header({
                 <button type="button" className={`cp-law-nav-item ${activeKey === 'knowledge' ? 'is-active' : ''}`} onClick={() => runMobileAction(onOpenKnowledge)}>
                   <Scale size={18} /><span><b>Knowledge</b><small>Concepts & maxims</small></span>
                 </button>
-                <button type="button" className={`cp-law-nav-item ${activeKey === 'tool:legal-draft-studio' ? 'is-active' : ''}`} onClick={() => runMobileAction(() => onSelectTool('legal-draft-studio'))}>
-                  <FileText size={18} /><span><b>Drafting</b><small>Templates & documents</small></span>
-                </button>
+
                 <button type="button" className={`cp-law-nav-item ${activeKey === 'tool:document-compare' ? 'is-active' : ''}`} onClick={() => runMobileAction(() => onSelectTool('document-compare'))}>
                   <GitCompare size={18} /><span><b>Document Compare</b><small>Review changes locally</small></span>
                 </button>
