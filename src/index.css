@@ -379,10 +379,15 @@ html.dark .nav-drawer-panel {
 }
 .cp-law-theme-button { flex-shrink: 0; }
 .cp-law-search-overlay {
-  position: fixed; inset: 0; z-index: 120; display: flex; align-items: flex-start; justify-content: center;
-  padding: 8rem 1rem 2rem; background: rgb(20 17 15 / .38); backdrop-filter: blur(5px);
+  position: fixed; inset: 0; z-index: 60; display: flex; align-items: flex-start; justify-content: center;
+  padding: 8rem 1rem 2rem;
+}
+.cp-law-search-backdrop {
+  position: absolute; inset: 0; width: 100%; height: 100%; border: 0; padding: 0;
+  background: rgb(20 17 15 / .38); backdrop-filter: blur(5px);
 }
 .cp-law-search-dialog {
+  position: relative; z-index: 1;
   width: min(44rem, 100%); background: var(--cp-ds-raised); color: var(--cp-ds-ink);
   border: 1px solid var(--cp-ds-line); border-radius: 1rem; box-shadow: var(--cp-ds-elevation-overlay);
   overflow: hidden;
