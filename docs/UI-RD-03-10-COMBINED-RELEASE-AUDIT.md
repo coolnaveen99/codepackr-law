@@ -55,4 +55,15 @@ This audit intentionally does **not** claim a fresh browser Playwright PASS. Bro
 
 ## Required final action
 
-Allow the latest `main` CI/Phase-0/E2E runs to finish, verify the production deployment status, and only then change UI-RD-09 and UI-RD-10 to COMPLETED.
+Allow the latest `main` CI/Phase-0/E2E runs to finish, verify the production deployment status, and only then change UI-RD-09 and UI-RD-10 to PARTIAL / BLOCKED.
+
+
+## UI-RD-09 Production Validation — 2026-10-02
+
+Status: PARTIAL / BLOCKED.
+
+- Latest main: `b0fd3ed774d0f62e5213000d16328344a9c2a2aa`.
+- Law CI #487 failed at **Wait for Vercel deployment** because the Vercel commit status is `failure` with the build-rate-limit target.
+- Phase 0 #147 is still in progress.
+- Production E2E #98 is pending.
+- No production PASS is claimed. UI-RD-10 remains blocked until a fresh deploy becomes available and production validation completes.
