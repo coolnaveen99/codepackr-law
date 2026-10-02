@@ -81,7 +81,6 @@ export function LegalDraftStudio() {
   const reviewYears = useMemo(() => Array.from(new Set(allTemplates.map((t) => getReviewYear(t.lastReviewed)).filter(Boolean))).sort().reverse(), [allTemplates])
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
-    if (!subject && !act && !q && cat === 'all' && tier === 'all' && !court && !state && !reviewYear) return []
     const result = allTemplates.filter((t) => {
       if (cat !== 'all' && t.category !== cat) return false
       if (subject && getSubject(t) !== subject) return false
