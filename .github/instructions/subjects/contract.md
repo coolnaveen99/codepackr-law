@@ -48,12 +48,13 @@ For every contract treatise:
 
 ---
 
-## 3. Academic & Examination Architecture (PhD Standard)
+## 3. Academic & Answer Architecture (PhD Standard)
 
-1. **IRAC 10-Mark Answer (`marks: 10`)**:
-   - Issue: Breach, validity of consideration, or claim for damages.
-   - Rule: Relevant Section(s), foundational common law doctrine, landmark Supreme Court authority.
-   - Application: Forensic analysis of commercial facts, causal connection, and foreseeability.
-   - Conclusion: Entitlement to rescission, damages, or restitution under Section 65.
-2. **CREAC 16-Mark Answer (`marks: 16`)**:
-   - Advanced juristic treatise: Evolution of promissory estoppel from *Hughes* and *Central London Property* to *Motilal Padampat Sugar Mills*, comparative analysis of standard form contracts and unconscionability (*Central Inland Water Transport Corp*), freedom of contract vs economic regulation, and the post-2018 Specific Relief enforcement regime.
+For each topic, produce substantive, structured answers that can support university examinations, judiciary preparation, research and professional practice without forcing a fixed marks template.
+
+1. **Issue and analytical framework**: Identify the legal issue(s), governing rule, relevant authorities, application and conclusion.
+2. **Doctrinal depth**: Explain statutory structure, ingredients, exceptions, competing interpretations and important distinctions.
+3. **Authority analysis**: Use verified precedents and extract the applicable ratio decidendi rather than listing case names.
+4. **Practice connection**: Where applicable, include forum, jurisdiction, limitation, evidentiary burdens and adversarial submissions.
+5. **Answer usability**: Provide coherent long-form answers when appropriate to the topic, with headings and a clear analytical sequence. Do not encode fixed mark values or artificial word-count requirements.
+6. **No fabricated certainty**: Unverified authorities or propositions must be marked for review.
