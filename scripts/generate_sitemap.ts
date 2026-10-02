@@ -52,7 +52,15 @@ for (const judgment of ALL_JUDGMENTS) {
   addUrl(`${BASE_URL}/case-law/judgment/${judgment.id}`, 'monthly', '0.85')
 }
 
-// 5. All Topics / Bare Act Sections (3,552+)
+// 5. Canonical-only representative topic routes not represented in the legacy SUBJECTS catalog.
+// These stable routes are part of the canonical delivery/SEO contract.
+for (const href of [
+  '/subjects/tort/nature-definition',
+]) {
+  addUrl(`${BASE_URL}${href}`, 'monthly', '0.75')
+}
+
+// 6. All Topics / Bare Act Sections (3,552+)
 for (const subject of SUBJECTS) {
   for (const topic of subject.topics) {
     addUrl(`${BASE_URL}/subjects/${subject.slug}/${topic.id}`, 'monthly', '0.75')
