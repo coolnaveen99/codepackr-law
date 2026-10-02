@@ -10,7 +10,7 @@
 
 ## 1. Executive Summary & Verification Matrix
 
-All nine phases defined in [`docs/SITE_100_PERCENT_COMPLETION.md`](./SITE_100_PERCENT_COMPLETION.md) have been systematically executed, verified, and locked in:
+All nine phases defined in [`docs/archive/legacy-instructions/SITE_100_PERCENT_COMPLETION.md`](./SITE_100_PERCENT_COMPLETION.md) have been systematically executed, verified, and locked in:
 
 | Phase | Description | Status | Verification Gate |
 |---|---|---|---|
