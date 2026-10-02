@@ -12,7 +12,7 @@ TopicDetail → ContentGateway → ContentRepository → Manifest → Canonical 
                          relatedTopics / judgments / …
 ```
 
-During migration, `ContentGateway` falls back to the existing topic loader (`LegacyTopicRepository`) when the canonical record is missing or not published.
+Runtime topic delivery is canonical-only. The former legacy topic fallback is retained only as source/rollback data; CI blocks releases if any real legacy topic lacks a published canonical twin.
 
 ## Configuration
 
@@ -29,6 +29,7 @@ https://raw.githubusercontent.com/coolnaveen99/legal-content/main
 ```bash
 npm test                          # unit + live gateway tests (needs network)
 node scripts/parity-legal-content.mjs
+npm run parity:legal-content-full
 ```
 
 ## Relationships (Phase 2)
@@ -53,4 +54,4 @@ Do **not** fetch raw GitHub trees from UI components. Always go through this gat
 Canonical topic records use `overview` / `sections`. The live topic page still expects `TopicContent.study`.
 `mapCanonicalTopicToLegacy` performs that conversion. If the canonical record already embeds a `study` field, that field wins.
 
-Unpublished or missing canonical records fall back to `LegacyTopicRepository`. Missing content is never synthesised by the gateway.
+Unpublished or missing canonical records return `null`. The full-catalog parity gate prevents a release from reaching production with a missing canonical topic.
