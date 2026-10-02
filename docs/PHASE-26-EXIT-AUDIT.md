@@ -3,7 +3,7 @@
 **Phase:** 26 — Court / State Configuration  
 **Repository:** `coolnaveen99/codepackr-law`  
 **Date:** 2026-10-01  
-**Status:** VALIDATION IN PROGRESS — dedicated PR quality gate
+**Status:** EVIDENCE RECONCILIATION REQUIRED — implementation present; final quality-gate evidence not independently retrievable
 
 ## Scope
 
@@ -36,4 +36,4 @@ This phase does **not** claim nationwide court coverage, exhaustive filing proce
 
 ## Exit decision
 
-**Exit decision:** Phase 26 implementation is present and its closure audit exists, but the original implementation PR and independently retrievable CI run have not been located. This dedicated validation PR will establish fresh CI evidence before closure.
+**Exit decision:** Phase 26 implementation is present and the roadmap records the phase as closed, but this audit remains open until an independently retrievable quality-gate result is recorded here. Do not infer validation from the merge alone.
