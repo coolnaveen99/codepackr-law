@@ -72,13 +72,16 @@
 
 ## Phase 19 — Production Integration Validation
 
+**Implementation:** IN PROGRESS — 2026-10-02; production smoke gate added and awaiting CI/deployment evidence.
+
 | Ticket | Task | Status |
 |---|---|---|
-| INT-019.01 | Production build | PLANNED |
-| INT-019.02 | Deployment verification | PLANNED |
-| INT-019.03 | Representative canonical route smoke | PLANNED |
-| INT-019.04 | Legacy fallback safety smoke | PLANNED |
-| INT-019.05 | Production evidence record | PLANNED |
+| INT-019.01 | Production build | COMPLETED — existing Law CI production-build gate retained |
+| INT-019.02 | Deployment verification | IN PROGRESS — live production integration gate added |
+| INT-019.03 | Representative canonical route smoke | COMPLETED — production gate probes CPC §32, PIL locus standi and Tort nature/definition |
+| INT-019.04 | Legacy fallback safety smoke | PENDING — requires representative fallback route evidence without changing PA-004 |
+| INT-019.05 | Production evidence record | PENDING — close only after live gate and fallback evidence are captured |
+
 
 ## Phase 20 — Final Integration Closure
 
