@@ -38,11 +38,11 @@ Utilize existing TypeScript properties in `TopicContent` to satisfy both tracks:
 3. **`examples` & `hypotheticals`**:
    - Contrastive practical examples: One where the rule applies, one where it fails.
    - Detailed, realistic classroom/exam hypothetical showing step-by-step legal analysis.
-4. **`questionsAndAnswers` (Exam Jump Dock)**:
-   - Provide full examination hall answers with `marks: 10` and `marks: 16`.
-   - **10-Mark Answer (`marks: 10`)**: 500–700 words formatted in strict **IRAC** (Issue, Rule, Application, Conclusion).
-   - **16-Mark Answer (`marks: 16`)**: 900–1200 words formatted in comprehensive **CREAC** (Conclusion, Rule, Explanation, Application, Counter-arguments & Conclusion) with comparative and critical analysis.
-   - *Non-negotiable*: The dock buttons `#exam-10` and `#exam-16` jump directly to these Q&As. Never provide a shortened or summarized answer.
+4. **`questionsAndAnswers` (Answer / Practice Dock)**:
+   - Provide substantive, complete answers appropriate to the topic and audience.
+   - Use IRAC, CREAC, problem-analysis, comparative analysis or another suitable framework.
+   - Do not require fixed mark values or artificial word-count targets.
+   - Case Briefs and Written Submissions must remain clearly separated by `draftingCategory`.
 5. **`distinctions` & `misconceptions`**:
    - Resolve subtle doubts, section-number collisions, and common exam/courtroom traps.
 
@@ -54,6 +54,6 @@ Reject any topic treatise that:
 - [ ] Reads like a Bare Act dump or unedited statutory paste.
 - [ ] Relies on generic synthesizer boilerplate (`synthesizeProvision`, `synthesizeCpc`).
 - [ ] Omits the competent forum, limitation period, or evidentiary burden.
-- [ ] Provides incomplete or abbreviated 10-mark or 16-mark answers.
+- [ ] Provides shallow, abbreviated, or placeholder answers where substantive analysis is required.
 - [ ] Confuses IPC/CrPC/IEA section numbers with BNS/BNSS/BSA.
 - [ ] Contains fictitious cases, citations, or unverified statutory illustrations.

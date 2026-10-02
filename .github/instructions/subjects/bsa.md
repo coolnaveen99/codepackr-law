@@ -57,12 +57,13 @@ For every evidence treatise in BSA:
 
 ---
 
-## 4. Academic & Examination Architecture (PhD Standard)
+## 4. Academic & Answer Architecture (PhD Standard)
 
-1. **IRAC 10-Mark Answer (`marks: 10`)**:
-   - Issue: The specific evidentiary dilemma (e.g. admissibility of an unsigned digital printout or retracted confession).
-   - Rule: Section number, conditions precedent, and foundational doctrine.
-   - Application: Forensic application to the hypothetical fact scenario.
-   - Conclusion: Definite ruling on admissibility and probative value.
-2. **CREAC 16-Mark Answer (`marks: 16`)**:
-   - In-depth jurisprudential paper: Epistemology of legal proof, Bentham and Stephen's formulation of evidence, comparative assessment of digital evidence in modern trials, constitutional protection against self-incrimination (Art 20(3) vs S. 23/24 BSA, *Selvi* & *Kathi Kalu Oghad*), landmark Supreme Court precedents, and reformative scope of BSA 2023.
+For each topic, produce substantive, structured answers that can support university examinations, judiciary preparation, research and professional practice without forcing a fixed marks template.
+
+1. **Issue and analytical framework**: Identify the legal issue(s), governing rule, relevant authorities, application and conclusion.
+2. **Doctrinal depth**: Explain statutory structure, ingredients, exceptions, competing interpretations and important distinctions.
+3. **Authority analysis**: Use verified precedents and extract the applicable ratio decidendi rather than listing case names.
+4. **Practice connection**: Where applicable, include forum, jurisdiction, limitation, evidentiary burdens and adversarial submissions.
+5. **Answer usability**: Provide coherent long-form answers when appropriate to the topic, with headings and a clear analytical sequence. Do not encode fixed mark values or artificial word-count requirements.
+6. **No fabricated certainty**: Unverified authorities or propositions must be marked for review.

@@ -7,15 +7,15 @@ instructions: |
 
   PRODUCT SHAPE (DUAL-TRACK BENCHMARK):
   - Subject landing = statutory introduction + in-force status + complete numbered catalog.
-  - Provision click = comprehensive treatise page (meaning, ingredients, statutory illustrations if official, labelled examples, procedural forum, limitation, evidentiary burden, and full 10/16-mark answers).
-  - 10-mark and 16-mark buttons scroll directly to full examination answers (marks: 10 | 16).
+  - Provision click = comprehensive treatise page (meaning, ingredients, statutory illustrations if official, labelled examples, procedural forum, limitation, evidentiary burden, and structured analytical answers).
+  - Answer and submission controls should expose complete analytical material without fixed mark rubrics.
   - Matches BNS / BNSS / BSA / Constitution standard.
 
   CATALOG & TREATISE RULES:
   - Verified numbered section/article list required for catalog subjects (India Code / Gazette / official PDF). Never invent missing numbers.
   - Metadata only in src/data/subjects.ts.
   - Complete treatises in src/data/topics/<slug>/<topicId>.ts.
-  - Wire hamburger (NavDrawer CODE_SLUGS or MORE_SLUGS) and HomePage lists. Map icon in src/components/icons.tsx.
+  - Wire header/mobile navigation and HomePage lists. Map icon in src/components/icons.tsx.
   - Query src/data/knowledge first; reuse canonical IDs via [[REF:...]].
   - Zero hallucination: Never fabricate an Act, section, citation, holding, or illustration. Unverified = needs-review.
   - 100% client-side privacy. npm run lint and npm run build must stay green.

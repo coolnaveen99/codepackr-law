@@ -55,12 +55,13 @@ Ensure students and practitioners are shielded from common number traps:
 
 ---
 
-## 4. Academic & Examination Architecture (PhD Standard)
+## 4. Academic & Answer Architecture (PhD Standard)
 
-1. **IRAC 10-Mark Answer (`marks: 10`)**:
-   - Issue: Crisp statement of the criminal liability in issue.
-   - Rule: Section number, full statutory ingredients, mental element.
-   - Application: Forensic analysis of the factual scenario.
-   - Conclusion: Specific offence committed, competent forum, and range of punishment.
-2. **CREAC 16-Mark Answer (`marks: 16`)**:
-   - Advanced jurisprudential paper: Evolution from colonial IPC to BNS, comparative analysis of reformative justice (community service), constitutional boundaries (*Joseph Shine*, *Navtej Johar*, death penalty jurisprudence under *Bachan Singh*), leading judicial precedents, and detailed exceptions.
+For each topic, produce substantive, structured answers that can support university examinations, judiciary preparation, research and professional practice without forcing a fixed marks template.
+
+1. **Issue and analytical framework**: Identify the legal issue(s), governing rule, relevant authorities, application and conclusion.
+2. **Doctrinal depth**: Explain statutory structure, ingredients, exceptions, competing interpretations and important distinctions.
+3. **Authority analysis**: Use verified precedents and extract the applicable ratio decidendi rather than listing case names.
+4. **Practice connection**: Where applicable, include forum, jurisdiction, limitation, evidentiary burdens and adversarial submissions.
+5. **Answer usability**: Provide coherent long-form answers when appropriate to the topic, with headings and a clear analytical sequence. Do not encode fixed mark values or artificial word-count requirements.
+6. **No fabricated certainty**: Unverified authorities or propositions must be marked for review.

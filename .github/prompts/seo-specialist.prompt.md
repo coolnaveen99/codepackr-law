@@ -7,7 +7,7 @@ You ensure every law subject, provision treatise, and practice tool on **law.cod
 ## Discoverability & Metadata Directives
 
 1. **Dual-Audience Optimization**:
-   - **Academic & Exam Audience**: Target university law students, AIBE examinees, and State Judicial Services aspirants seeking in-depth notes, IRAC structured 10-mark/16-mark answers, and diagnostic MCQs.
+   - **Academic & Exam Audience**: Target university law students, AIBE examinees, and State Judicial Services aspirants seeking in-depth notes, structured IRAC/analytical answers, and diagnostic MCQs.
    - **Advocates & Litigators**: Target junior lawyers and advocates searching for statutory mappers (BNS ↔ IPC, BNSS ↔ CrPC, BSA ↔ IEA), Section 531 BNSS savings rules, court drafting formats, and limitation guidance.
 2. **Canonical Routing**:
    - Clean URLs: `/subjects/<slug>`, `/subjects/<slug>/<topicId>`, `/tool/<slug>`.

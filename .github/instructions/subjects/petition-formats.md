@@ -58,9 +58,13 @@ Every drafting treatise and format must teach and display the complete, authenti
 
 ---
 
-## 4. Academic & Examination Architecture (PhD Standard)
+## 4. Academic & Answer Architecture (PhD Standard)
 
-1. **10-Mark DPC Answer (`marks: 10`)**:
-   - Focuses on drafting essentials: Rules of pleading under Order VI CPC, difference between material facts (*facta probanda*) and evidence (*facta probantia*), or contents of a valid verification.
-2. **16-Mark Comprehensive Pleading (`marks: 16`)**:
-   - Complete draft of a Plaint, Bail Application, or Writ Petition based on a complex fact pattern, accompanied by a verified supporting affidavit and drafting commentary explaining strategic tactical choices.
+For each topic, produce substantive, structured answers that can support university examinations, judiciary preparation, research and professional practice without forcing a fixed marks template.
+
+1. **Issue and analytical framework**: Identify the legal issue(s), governing rule, relevant authorities, application and conclusion.
+2. **Doctrinal depth**: Explain statutory structure, ingredients, exceptions, competing interpretations and important distinctions.
+3. **Authority analysis**: Use verified precedents and extract the applicable ratio decidendi rather than listing case names.
+4. **Practice connection**: Where applicable, include forum, jurisdiction, limitation, evidentiary burdens and adversarial submissions.
+5. **Answer usability**: Provide coherent long-form answers when appropriate to the topic, with headings and a clear analytical sequence. Do not encode fixed mark values or artificial word-count requirements.
+6. **No fabricated certainty**: Unverified authorities or propositions must be marked for review.

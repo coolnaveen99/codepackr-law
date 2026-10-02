@@ -51,12 +51,13 @@ For every constitutional provision and writ treatise:
 
 ---
 
-## 4. Academic & Examination Architecture (PhD Standard)
+## 4. Academic & Answer Architecture (PhD Standard)
 
-1. **IRAC 10-Mark Answer (`marks: 10`)**:
-   - Issue: The constitutional challenge (e.g. legislative competence, violation of Article 19(1)(g) vs 19(6)).
-   - Rule: Constitutional Article, relevant doctrine, leading Supreme Court ruling.
-   - Application: Scrutiny of the impugned state action under proportionality/arbitrariness tests.
-   - Conclusion: Validity of the statute or order; specific relief or writ to be issued.
-2. **CREAC 16-Mark Answer (`marks: 16`)**:
-   - Scholastic jurisprudential essay: Transformative constitutionalism, comparative jurisprudence (US/UK/South Africa), the dialectic between Fundamental Rights and Directive Principles (*Minerva Mills* golden triangle), evolution of Basic Structure Doctrine (*Golaknath* → *Kesavananda* → *Indira Gandhi* → *Minerva Mills* → *I.R. Coelho*), and future frontiers of constitutional morality.
+For each topic, produce substantive, structured answers that can support university examinations, judiciary preparation, research and professional practice without forcing a fixed marks template.
+
+1. **Issue and analytical framework**: Identify the legal issue(s), governing rule, relevant authorities, application and conclusion.
+2. **Doctrinal depth**: Explain statutory structure, ingredients, exceptions, competing interpretations and important distinctions.
+3. **Authority analysis**: Use verified precedents and extract the applicable ratio decidendi rather than listing case names.
+4. **Practice connection**: Where applicable, include forum, jurisdiction, limitation, evidentiary burdens and adversarial submissions.
+5. **Answer usability**: Provide coherent long-form answers when appropriate to the topic, with headings and a clear analytical sequence. Do not encode fixed mark values or artificial word-count requirements.
+6. **No fabricated certainty**: Unverified authorities or propositions must be marked for review.

@@ -59,7 +59,7 @@ Hamburger / Home
 - **Treatise page**: A complete chapter delivering both **Track A (Scholastic & Problem Solving Mastery)** for LL.B, LL.M, AIBE, and Judicial Services candidates, and **Track B (Litigation & Chamber Practice)** for junior advocates.
 - **Dock Jump Targets**: Dedicated quick-access targets for `#statutory-illustrations`, `#case-law-ratios`, `#legal-brief`, and `#written-submissions`.
 - **Zero Boilerplate Synthesizers**: Do not lead a study page with unverified IPC/CrPC/IEA mapping or generic boilerplate templates. Teach the actual working rule of that specific provision.
-- **Navigation Integration**: Wire new subjects into `src/components/layout/NavDrawer.tsx` (`CODE_SLUGS` or `MORE_SLUGS`) and `src/components/home/HomePage.tsx`.
+- **Navigation Integration**: Wire new subjects into `src/components/layout/Header.tsx` (the current Header navigation registry) and `src/components/home/HomePage.tsx`.
 
 ---
 
@@ -117,7 +117,7 @@ STRUCTURE COMPREHENSIVE TREATISE (Study Body)
         ↓
 DRAFT AUTHENTIC HYPOTHETICALS & EXTRACT CASE RATIOS
         ↓
-FORMULATE IRAC 10-MARK & 16-MARK EXAMINATION ANSWERS
+FORMULATE STRUCTURED IRAC/CREAC OR OTHER APPROPRIATE ANALYTICAL ANSWERS
         ↓
 CROSS-LINK REUSABLE KNOWLEDGE (`[[REF:TYPE:CATEGORY:SLUG]]`)
         ↓
@@ -140,13 +140,13 @@ STATUTORY OVERVIEW & COMMENCEMENT (In-force dates, transitional rules, legislati
 MAJOR PART / CHAPTER / CLUSTER
   ↓
 PROVISION / TOPIC TREATISE
-  ├─► TRACK A: SCHOLASTIC & EXAM MASTERY (PhD Depth)
+  ├─► TRACK A: SCHOLASTIC & ANALYTICAL MASTERY (PhD Depth)
   │     ├─ Meaning, Concept & Jurisprudential Roots
   │     ├─ Statutory Text Deconstruction (Clauses, Provisos, Explanations)
   │     ├─ Canons of Interpretation Applied
   │     ├─ Landmark Precedents (Ratio Decidendi extracted)
-  │     ├─ Full 10-Mark Structured Examination Answer (IRAC)
-  │     └─ Full 16-Mark Comprehensive Analytical Answer (CREAC)
+  │     ├─ Structured IRAC / analytical answer
+  │     └─ Comprehensive CREAC / analytical answer when appropriate
   │
   └─► TRACK B: LITIGATION & CHAMBER PRACTICE (Senior Counsel Precision)
         ├─ Forum & Competent Court (Magistrate / Sessions / High Court / Civil Court)

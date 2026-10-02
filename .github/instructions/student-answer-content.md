@@ -19,13 +19,13 @@ Do **not** create a parallel content architecture. Populate the unified `TopicCo
 CodePackr Law is **not** a shallow Bare Act repository, nor is it a simplistic notes aggregator.
 
 It is an authoritative, 100% privacy-first **Digital Law Library & Practice Reference** engineered to resolve law-related doubts for two complementary groups:
-1. **Law Students & Judicial Service Aspirants** (LL.B, LL.M, AIBE, State Judicial Services Mains): Master complex statutory provisions, grasp legislative intent, analyze landmark precedents, and produce structured 10-mark and 16-mark answers formatted via IRAC/ILAC.
+1. **Law Students & Judicial Service Aspirants** (LL.B, LL.M, AIBE, State Judicial Services Mains): Master complex statutory provisions, grasp legislative intent, analyze landmark precedents, and produce structured, exam-oriented and research-ready answers using IRAC/ILAC or another appropriate analytical framework.
 2. **Junior Advocates & Practicing Litigators** (Trial and Appellate Bar): Rapid forensic reference for chamber drafting, checking the competent forum, computing limitation periods, identifying mandatory proving ingredients, discharging evidentiary burdens (BSA ss. 104–106 and s. 63 electronic evidence), and structuring courtroom arguments.
 
 The operational philosophy is:
 
 ```text
-DECONSTRUCT JURISPRUDENCE → VERIFY STATUTORY ANATOMY → ANCHOR PROCEDURAL FORUM & BURDEN → APPLY TO FACT PATTERNS → DRAFT IRAC EXAM ANSWERS → PREPARE COURTROOM SUBMISSIONS
+DECONSTRUCT JURISPRUDENCE → VERIFY STATUTORY ANATOMY → ANCHOR PROCEDURAL FORUM & BURDEN → APPLY TO FACT PATTERNS → DRAFT STRUCTURED ANALYTICAL ANSWERS → PREPARE COURTROOM SUBMISSIONS
 ```
 
 Reject shallow digests:
@@ -46,14 +46,14 @@ For every substantive topic, research and deconstruct the provision across both 
 
 ```text
 ┌────────────────────────────────────────────────────────┐
-│     SCHOLASTIC & EXAM MASTERY (PhD Dimension)          │
+│     SCHOLASTIC & ANALYTICAL MASTERY (PhD Dimension)          │
 ├────────────────────────────────────────────────────────┤
 │ 1. Jurisprudential origin & historical development     │
 │ 2. Legislative purpose & Canons of Interpretation      │
 │ 3. Deconstructed Statutory Anatomy (Provisos/Clauses)  │
 │ 4. Judicial Interpretation & Ratio Decidendi           │
-│ 5. Full 10-Mark Answer (IRAC / ILAC Structure)         │
-│ 6. Full 16-Mark Answer (Comprehensive Scholastic Paper)│
+│ 5. Structured IRAC / ILAC answer when appropriate       │
+│ 6. Comprehensive analytical answer when appropriate     │
 └────────────────────────────────────────────────────────┘
                           +
 ┌────────────────────────────────────────────────────────┐

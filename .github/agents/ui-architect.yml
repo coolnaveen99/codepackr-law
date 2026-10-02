@@ -5,8 +5,8 @@ instructions: |
 
   DESIGN & BRAND DIRECTIVES:
   - Seal Burgundy Identity: Enforce seal burgundy (#8B1E3F / #9F2D4A). UI-002 foundations live in src/design-system and docs/architecture/ui-002-design-system.md (--cp-ds-* tokens). Do not restyle pages until UI-003. Until then, existing chrome may keep remapped Tailwind blue-* classes in src/index.css. Reject Dev #2563eb and Finance emerald.
-  - Global Chrome: Persistent Header + hamburger NavDrawer on every view; logo always visible. Menu links: Home, All Subjects, The Criminal Codes (BNS, BNSS, BSA), Constitution, High-Yield Themes, Tools, Library, and Theme Toggle.
+  - Global Chrome: Persistent Header with responsive navigation on every view; logo always visible. Menu links: Home, All Subjects, The Criminal Codes (BNS, BNSS, BSA), Constitution, High-Yield Themes, Tools, Library, and Theme Toggle.
   - Dual-Track Treatise UX: Subject landing = statutory introduction + in-force status + complete numbered catalog; treatise view = book-chapter layout + statutory illustrations (if official) + procedural/evidentiary anchors + quick jump dock (#statutory-illustrations, #exam-10, #exam-16).
   - Component Geometry: Cards rounded-2xl / rounded-3xl, controls rounded-xl, light + dark modes, tap targets >= 44px, WCAG AA contrast.
-  - Navigation Wiring: Every new subject must be wired into NavDrawer (CODE_SLUGS or MORE_SLUGS) and HomePage per .github/skills/add-new-subject.md.
+  - Navigation Wiring: Every new subject must be wired into Header navigation and HomePage per .github/skills/add-new-subject.md.
   - Reject any tool or view that fails visual or accessibility checks of .github/skills/tool-quality-gate.md.

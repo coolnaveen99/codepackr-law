@@ -1068,3 +1068,35 @@ The completed UI-002 through UI-013 foundation/adoption work is not reopened. Th
 **Current release gate:** CLOSED. Vercel deployment succeeded on `1cfc558a9f7dcd4b6c1f1d4b536d1ae28d5868ce`; UI-RD-09 and UI-RD-10 are complete. Direct production URL inspection remains an environmental limitation in the current validation tool.
 
 **Combined audit:** `docs/UI-RD-03-10-COMBINED-RELEASE-AUDIT.md`
+
+## Instruction & Repository Cleanup — IN PROGRESS (2026-10-02)
+
+**Workstream:** `chore/instruction-archive-audit`
+
+| Task | Status | Evidence |
+|---|---|---|
+| Establish current implementation contract | **COMPLETED** | `docs/architecture/CURRENT-IMPLEMENTATION-CONTRACT.md` |
+| Reconcile root AI/agent instructions | **COMPLETED** | `AGENTS.md`, `AI_INSTRUCTIONS.md` |
+| Archive superseded site-completion instructions | **COMPLETED** | `docs/archive/legacy-instructions/` |
+| Preserve uncertain material instead of deleting it | **COMPLETED** | Archived copies retain original content |
+| Repoint historical references | **COMPLETED** | `docs/phase-9-launch-audit.md` |
+| Full unused-instruction/reference audit | **IN PROGRESS** | Remaining `.github`, prompts, skills and active UI instructions require reference/dependency review |
+| Unused source-code audit | **PENDING** | Must not delete or move source code until import/runtime/script/route references are verified |
+
+**Safety rule:** no file is to be permanently deleted during this cleanup. Uncertain files must be moved to an archive location with their original content preserved.
+
+
+### Cleanup safety note
+
+The source cleanup is deliberately conservative. Only files with repository-wide runtime-reference checks showing no active imports were moved. Firebase/contact code, mobile navigation, offline banner, family navigation, knowledge renderers, AI architecture and other referenced components were retained. A second cleanup pass should continue only after the same reference/dependency checks.
+
+### Cleanup validation blocker — 2026-10-02
+
+PR #116 reached **TypeScript PASS**, dependency audit PASS, repository audit PASS, topic integrity PASS and judgment integrity PASS.
+
+The branch is **not being merged yet** because existing repository gates fail independently of this cleanup:
+- Phase 0 CI #200: 248/253 unit assertions passed; 5 existing canonical-content integration assertions failed.
+- Law CI #516: TypeScript PASS, then the existing full legacy-to-canonical parity gate reported **3,551 failures** before unit/build stages.
+- These failures are not caused by the moved files or instruction-only changes; no attempt is being made to hide or weaken the gates.
+
+**Decision:** keep PR #116 open until the existing baseline blocker is reconciled or explicitly waived by the product owner. No production deployment is claimed.
