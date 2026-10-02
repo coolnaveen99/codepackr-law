@@ -63,6 +63,11 @@ export function Header({
     setSearchOpen(true)
   }
 
+  const toggleMobileNavigation = () => {
+    setSearchOpen(false)
+    setMobileNavOpen((value) => !value)
+  }
+
   useEffect(() => {
     onSidebarCollapsedChange?.(collapsed)
   }, [collapsed, onSidebarCollapsedChange])
@@ -192,7 +197,7 @@ export function Header({
           <button
             type="button"
             className="cp-law-mobile-menu lg:hidden"
-            onClick={() => setMobileNavOpen((value) => !value)}
+            onClick={toggleMobileNavigation}
             aria-expanded={mobileNavOpen}
             aria-controls="codepackr-law-mobile-navigation"
             aria-label={mobileNavOpen ? 'Close navigation' : 'Open navigation'}
@@ -269,6 +274,12 @@ export function Header({
         )}
       {searchOpen && (
         <div className={`cp-law-search-overlay ${collapsed ? "is-sidebar-collapsed" : ""}`} role="dialog" aria-modal="true" aria-label="Global search">
+          <button
+            type="button"
+            className="cp-law-search-backdrop"
+            onClick={closeOverlays}
+            aria-label="Close global search"
+          />
           <div className="cp-law-search-dialog">
             <div className="cp-law-search-heading">
               <div><span className="cp-law-context-kicker">Global search</span><h2>Find across CodePackr Law</h2></div>
