@@ -5,7 +5,11 @@
 
 ## UI-RD-01 — UI Baseline & Bug Inventory
 
-**Status:** NOT STARTED
+**Status:** COMPLETED — 2026-10-02
+
+**Evidence:** `docs/UI-RD-01-BASELINE-AUDIT.md`
+
+**Primary defect carried forward:** UI-RD-01-F01/F02 — desktop global search is a full-viewport z-index 120 overlay above the z-index 80 navigation rail, so the sidebar cannot participate in navigation while search is open. The next phase must solve this through deterministic overlay/state behavior rather than a blind z-index change.
 
 | Ticket | Task | Exit evidence |
 |---|---|---|
@@ -16,6 +20,8 @@
 | UI-RD-01.05 | Identify highest-risk interaction path for UI-RD-02 | Prioritized next-phase scope |
 | UI-RD-01.06 | Record baseline TypeScript/build/test evidence where available | Evidence recorded |
 | UI-RD-01.07 | Update roadmap/control board with baseline result | Documentation commit |
+
+**UI-RD-01 exit:** COMPLETED. UI-RD-02 is now the only active implementation scope.
 
 ## UI-RD-02 — Global Search & Navigation Interaction
 
