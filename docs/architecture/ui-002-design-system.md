@@ -1,7 +1,7 @@
 # UI-002 — Chambers Record design system
 
-**Status:** Foundation complete. Pages are not redesigned.  
-**Next:** UI-003 may adopt these primitives. Do not start UI-003 from this task.  
+**Status:** Foundation complete and adopted across UI-003–UI-013.  
+**Next:** Production Readiness & Integration Hardening; do not reopen numbered visual phases.  
 **Product:** CodePackr Law, 2026 direction.
 
 ## Direction
@@ -13,7 +13,7 @@ Chambers Record is a working legal library, not a marketing skin and not the exi
 - Distinct from Codepackr Dev (`#2563EB`) and Codepackr Finance emerald.
 - Status is a label plus a mark plus a border pattern. Colour is never the only signal.
 - No third-party fonts, analytics, or network calls. System stacks only.
-- Existing pages keep the remapped Tailwind `blue-*` chrome until a later adoption task.
+- Existing legal routes and tool logic are preserved while their surfaces adopt the Chambers Record system.
 
 ## Token order
 
@@ -42,9 +42,9 @@ Source kinds: statute, judgment, gazette, official portal, commentary, historica
 In-force: in force, transitional (1 July 2024 codes), historical.  
 These primitives do not verify citations and do not claim a source exists.
 
-## Out of scope
+## Adoption boundary
 
-- Page, chrome, catalog, and tool restyles
-- New routes or SEO surfaces
-- Replacing `src/components/ui/Badge.tsx`
-- UI-003
+- UI-003–UI-013 adoption is recorded in `docs/architecture/ui-003-013-adoption.md`.
+- No new routes or SEO surfaces were introduced.
+- `src/components/ui/Badge.tsx` remains unchanged.
+- Tool logic, legal-content boundaries, privacy model, and canonical URLs remain unchanged.
