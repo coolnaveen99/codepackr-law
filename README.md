@@ -1,7 +1,9 @@
 # Codepackr Law
 
 [![Live App](https://img.shields.io/badge/Live%20App-law.codepackr.com-2563eb?style=for-the-badge&logo=vercel)](https://law.codepackr.com)
-[![Parent Hub](https://img.shields.io/badge/Parent%20Hub-codepackr.com-0ea5e9?style=for-the-badge&logo=github)](https://www.codepackr.com)
+
+> Final Phase 0–32 closure/integration audit completed on 2026-10-02. Production readiness validation follows the closure gates documented in `docs/PHASE-0-32-FINAL-CLOSURE-INTEGRATION-AUDIT.md`.
+
 [![License](https://img.shields.io/badge/%C2%A9%202026-All%20Rights%20Reserved-6b7280?style=for-the-badge)](https://law.codepackr.com)
 
 **Codepackr Law** is a free collection of browser-based Indian law learning tools for AIBE, Judiciary, Bare Act MCQs, flashcards, and more.  
