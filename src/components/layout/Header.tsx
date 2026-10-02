@@ -259,7 +259,7 @@ export function Header({
             <span className="cp-law-context-kicker">CodePackr Law</span>
             <span className="cp-law-context-title">{currentLabel || 'Indian legal research, learning & practice workspace'}</span>
           </div>
-          <button type="button" className="cp-law-search-trigger" onClick={openSearch} aria-label="Open global search">
+          <button type="button" ref={searchTriggerRef} className="cp-law-search-trigger" onClick={openSearch} aria-label="Open global search">
             <Search size={17} />
             <span>Search law, cases, sections, tools…</span>
             <kbd>⌘ K</kbd>
