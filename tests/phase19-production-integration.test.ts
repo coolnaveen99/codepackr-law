@@ -1,6 +1,7 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert/strict'
 import { configureContentRepository, getTopicContent } from '../src/content/ContentGateway'
+import { CanonicalContentRepository } from '../src/content/ContentRepository'
 
 describe('Post-migration Phase 19 production integration contracts', () => {
   it('falls back safely to legacy content when canonical delivery misses', async () => {
@@ -24,5 +25,6 @@ describe('Post-migration Phase 19 production integration contracts', () => {
     assert.ok(content)
     assert.equal(content.glance !== undefined, true)
     assert.equal(content.study !== undefined, true)
+    configureContentRepository(new CanonicalContentRepository())
   })
 })
