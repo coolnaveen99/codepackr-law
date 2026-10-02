@@ -31,7 +31,7 @@ Follow the BNS/BNSS/BSA/Constitution catalog architecture:
 1. **Metadata Only in `subjects.ts`**: Minimal search properties (`id`, `slug`, `name`, `shortName`, `priority`, `topics[]`, `keywords`). Never put essays in `subjects.ts`.
 2. **Treatise Notes in `src/data/topics/<slug>/`**: Authored book-chapter notes matching `s-32.ts` benchmark.
 3. **Subject Extras File**: Create `.github/instructions/subjects/<slug>.md` defining unique statutory, procedural, and evidentiary rules.
-4. **Navigation Integration**: Wire the subject into `src/components/layout/NavDrawer.tsx` (`CODE_SLUGS` or `MORE_SLUGS`) and `src/components/home/HomePage.tsx`. Map lucide icon in `src/components/icons.tsx`.
+4. **Navigation Integration**: Wire the subject into `src/components/layout/Header.tsx` (the current Header navigation registry) and `src/components/home/HomePage.tsx`. Map lucide icon in `src/components/icons.tsx`.
 5. **Numbered Enactments**: Verified numbered catalog + intro card (`subjectIntros.ts`) + `CATALOG_SLUGS` in `SubjectDetail.tsx` + `loadTopicContent.ts` hook.
 6. **Knowledge Graph**: Search `src/data/knowledge` first; reuse canonical IDs via `[[REF:...]]`.
 7. **Primary Sources Only**: Gazette of India, India Code, Legislative Department official texts. Never invent section numbers or illustrations.
