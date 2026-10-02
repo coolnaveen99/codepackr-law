@@ -50,5 +50,6 @@ describe('Post-migration Phase 14 canonical integration', () => {
     const edges = await repo.getOutboundRelations('topic:india:pil-locus-standi')
     assert.ok(edges.length > 0, 'expected outbound relationships for PIL locus standi')
     assert.ok(edges.every((edge) => edge.to.includes(':')), 'relationship targets must be canonical IDs')
+    assert.ok(edges.every((edge) => typeof edge.field === 'string' && edge.field.length > 0), 'relationship fields must be named')
   })
 })
