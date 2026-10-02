@@ -389,7 +389,7 @@ export default function App() {
 
         <OfflineBanner />
 
-        <main data-ui-task={uiTask} data-ui-measure={uiMeasure} aria-label={UI_TASK_TITLE[uiTask]} className="flex-1 w-full mx-auto px-4 sm:px-6 py-6 paper-grid cp-mobile-main-pad cp-page lg:pl-8">
+        <main data-ui-task={uiTask} data-ui-measure={uiMeasure} aria-label={UI_TASK_TITLE[uiTask]} className="flex-1 w-full mx-auto px-4 sm:px-6 py-6 paper-grid cp-mobile-main-pad cp-page lg:pl-[18.5rem]">
           {route.type === 'contact' && <ContactFeedback onBackToHome={goHome} />}
 
           {route.type === 'case-law' && (
