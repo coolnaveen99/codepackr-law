@@ -60,7 +60,7 @@
 
 ## Phase 18 — Search & SEO Canonicalization
 
-**Implementation:** COMPLETE — 2026-10-02; CI validation pending for commit `8ddcb34e498b864d111228ded7082291756adda5`.
+**Implementation:** COMPLETE — 2026-10-02; executable search/SEO regression coverage is complete. Final CI evidence is tracked against the latest main validation run.
 
 | Ticket | Task | Status |
 |---|---|---|
