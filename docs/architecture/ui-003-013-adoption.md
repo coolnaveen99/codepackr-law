@@ -7,7 +7,7 @@
 | ID | Surface | Adoption |
 |---|---|---|
 | UI-003 | Shell and chrome | `.cp-chambers` on the app frame. Header and footer marks use seal burgundy. Paper/ink replaces cold slate. Amber Law accent remapped to seal. |
-| UI-004 | Home and library entry | Home route is `data-ui-task="UI-004"` on treatise measure. |
+| UI-004 | Home and library entry | Home route is `data-ui-task="UI-004"` on the wide workspace measure so the landing surface can use desktop width without shrinking. |
 | UI-005 | Catalog and treatise | Subjects, subject, and topic routes use `UI-005`. |
 | UI-006 | Knowledge and case law | Knowledge browser and case-law library use `UI-006`. |
 | UI-007 | Research workspace | Research workbench, global search, and research bundle use the 90rem workspace measure. |

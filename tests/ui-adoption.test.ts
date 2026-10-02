@@ -21,7 +21,7 @@ test('UI-003 to UI-013 each have a surface and the app adopts them', () => {
   assert.equal(resolveUiTask({ type: 'tool', slug: 'practice-dashboard' }), 'UI-013')
   assert.equal(resolveUiTask({ type: 'contact' }), 'UI-013')
   assert.equal(surfaceMeasure('UI-007'), 'workspace')
-  assert.equal(surfaceMeasure('UI-004'), 'treatise')
+  assert.equal(surfaceMeasure('UI-004'), 'workspace')
   assert.match(app, /cp-chambers/)
   assert.match(app, /data-ui-task=\{uiTask\}/)
   assert.match(css, /data-ui-measure='workspace'/)
