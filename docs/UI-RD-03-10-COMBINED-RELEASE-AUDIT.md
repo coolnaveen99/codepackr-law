@@ -41,8 +41,17 @@ This audit intentionally does **not** claim a fresh browser Playwright PASS. Bro
 
 ## Additional fixes applied
 
-- `scripts/generate_sitemap.ts` now explicitly includes the canonical-only `/subjects/tort/nature-definition` route required by the stable SEO contract.
-- `tests/phase19-production-integration.test.ts` now asserts the actual `TopicContentRecord.content` envelope used by the legacy fallback repository.
+- `scripts/generate_sitemap.ts` explicitly includes the canonical-only `/subjects/tort/nature-definition` route.
+- `public/sitemap.xml` has now been regenerated/updated on `main` to include that canonical route; commit `0129de8c4afd78358fff42fbddfdfc1e6dea568d`.
+- `tests/phase19-production-integration.test.ts` asserts the actual `TopicContentRecord.content` envelope used by the legacy fallback repository.
+
+## Current release-gate evidence
+
+- Latest `main`: `0129de8c4afd78358fff42fbddfdfc1e6dea568d`.
+- Phase 0 run #146 is currently **in progress**; the prior run #145 failed only on the now-addressed sitemap contract.
+- Law CI run #487 is currently **in progress**.
+- Production E2E run #97 is currently **pending**.
+- Vercel status still reports **failure: Deployment rate limited — retry in 24 hours**. This is an external deployment-rate gate, not evidence of an application test failure.
 
 ## Required final action
 
