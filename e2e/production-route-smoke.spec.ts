@@ -13,6 +13,8 @@ test.describe('production route smoke', () => {
 })
 
 test('SPA navigation survives a direct tool URL and back navigation', async ({ page }) => {
+  await page.goto('/', { waitUntil: 'domcontentloaded' })
+  await expect(page.locator('body')).toContainText('Codepackr Law')
   await page.goto('/tool/research-workbench', { waitUntil: 'domcontentloaded' })
   await expect(page.locator('body')).toContainText('Codepackr Law')
   await page.goBack()
