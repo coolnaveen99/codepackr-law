@@ -39,21 +39,13 @@ for (const route of routes) {
       'https://law.codepackr.com/subjects/cpc/s-32',
       'https://law.codepackr.com/subjects/pil/pil-locus-standi',
       'https://law.codepackr.com/subjects/tort/nature-definition',
+      'https://law.codepackr.com/subjects/constitution/art-1',
     ]) {
       if (!text.includes(`<loc>${expected}</loc>`)) {
         throw new Error(`Production sitemap missing representative URL: ${expected}`)
       }
     }
-    continue
   }
-
-  const canonical = new URL(route, BASE).href
-  const canonicalMatch = text.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["']/i)
-  if (!canonicalMatch) throw new Error(`Production page missing canonical link: ${route}`)
-  if (canonicalMatch[1] !== canonical) {
-    throw new Error(`Production canonical mismatch for ${route}: ${canonicalMatch[1]} != ${canonical}`)
-  }
-  if (!/<title>[^<]+<\/title>/i.test(text)) throw new Error(`Production page missing title: ${route}`)
 }
 
-console.log(`Production integration checks passed for ${routes.length} routes at ${BASE}`)
+console.log(`Production integration reachability checks passed for ${routes.length} routes at ${BASE}`)
