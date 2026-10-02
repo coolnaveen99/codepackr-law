@@ -149,7 +149,7 @@ export function Header({
         </div>
       </aside>
 
-      <header className="cp-law-topbar">
+      <header className={`cp-law-topbar ${collapsed ? "is-sidebar-collapsed" : ""}`}>
         <div className="cp-law-topbar-inner">
           <button type="button" className="cp-law-mobile-menu lg:hidden" onClick={onOpenSubjects} aria-label="Open Learn">
             <Menu size={20} />
