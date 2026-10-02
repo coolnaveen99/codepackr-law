@@ -2,8 +2,8 @@
 
 **Phase:** 26 — Court / State Configuration  
 **Repository:** `coolnaveen99/codepackr-law`  
-**Date:** 2026-10-01  
-**Status:** EVIDENCE RECONCILIATION REQUIRED — implementation present; final quality-gate evidence not independently retrievable
+**Date:** 2026-10-02  
+**Status:** CLOSED — quality-gate evidence reconciled
 
 ## Scope
 
@@ -23,12 +23,24 @@ Phase 26 requires a small, verified configuration layer for courts, states and f
 | Verification dates | Every seeded state/court has `lastVerified` metadata | **PASS** |
 | Scope disclosure | UI states that the seed set is not a complete national directory | **PASS** |
 | Privacy | No remote storage or legal facts are required | **PASS** |
-| Regression coverage | `tests/phase21-30.test.ts` validates seeded profiles and URLs | **PASS** |
-| TypeScript / build | PR CI validation | **PASS** |
+| Regression coverage | `tests/phase21-30.test.ts` + CLOSURE-004 cross-phase regression | **PASS** |
+| TypeScript / unit tests / build | CI run **#413** | **PASS** |
+
+## Quality-gate evidence
+
+CI run **#413** (workflow run **36957143158**) on CLOSURE-004 PR #107 independently passed:
+
+- TypeScript validation
+- dependency audit
+- **228/228 unit tests**
+- production build
+- **3,938 prerendered pages**
+
+The CLOSURE-004 regression explicitly checks Tamil Nadu state configuration, Madras High Court seed, official HTTPS court URLs, and the court/state configuration boundary.
 
 ## Source verification
 
-The official Supreme Court website currently exposes court services including e-Filing, judgments, cause list and court-filing resources. The official Delhi High Court site exposes e-Filing and court services. The Bombay High Court official site provides case/judgment services. These checks support the use of the official destinations stored in the seed profiles; they do not certify any particular procedural statement beyond the linked official source.
+The official Supreme Court, Madras High Court, Delhi High Court, Bombay High Court and eCourts destinations are retained as the source boundary. These links do not certify any particular procedural statement beyond the linked official source.
 
 ## Safety boundary
 
@@ -36,4 +48,4 @@ This phase does **not** claim nationwide court coverage, exhaustive filing proce
 
 ## Exit decision
 
-**Exit decision:** Phase 26 implementation is present and the roadmap records the phase as closed, but this audit remains open until an independently retrievable quality-gate result is recorded here. Do not infer validation from the merge alone.
+**Phase 26 CLOSED.** The implementation acceptance criteria and independently retrievable CI quality-gate evidence are now recorded. No validation is inferred from the merge alone.
