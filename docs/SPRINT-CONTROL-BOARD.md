@@ -963,3 +963,28 @@ All roadmap governance requirements are documented in the binding copyright/data
 The binding monetization policy preserves the free legal-information/safety baseline and prohibits aggressive advertising inside sensitive legal-document workflows.
 
 **Phase 32 status:** **CLOSED**.
+
+## Post-Migration Integration Workstream — Phase 14
+
+**Status:** **COMPLETED — 2026-10-02**
+
+**Roadmap:** docs/POST-MIGRATION-INTEGRATION-ROADMAP.md  
+**Sprint backlog:** docs/POST-MIGRATION-SPRINT-BACKLOG.md  
+**Exit audit:** docs/PHASE-14-CANONICAL-INTEGRATION-EXIT-AUDIT.md
+
+| Gate | Result | Evidence |
+|---|---|---|
+| Canonical manifest identity | **PASS** | CI #463 / canonical integrity audit |
+| Relationship index | **PASS** | CI #463 / canonical delivery check |
+| Stable canonical topic IDs | **PASS** | Phase 14 regression suite |
+| Representative canonical topics | **PASS** | Phase 14 regression suite |
+| ContentGateway canonical-first path | **PASS** | src/content/ContentGateway.ts + CI #463 |
+| Legacy fallback retained | **PASS** | PA-004 retain/no-deletion decision |
+| Phase 14 regression test | **PASS** | tests/phase14-canonical-integration.test.ts, CI #463 |
+| TypeScript / unit tests / build | **PASS** | Law CI #463 + Phase 0 quality baseline #88 |
+
+**CI evidence:** Law CI run #463 (workflow run 37006309640) and Phase 0 Full Quality Baseline #88 (workflow run 37006309590) completed successfully. Production E2E run #39 failed only in existing UI/navigation smoke tests; those failures are outside the canonical-content integration gate and are carried forward to the Content UX / UI validation workstream.
+
+**Safety decision:** Do not delete legacy topic modules. PA-004 remains controlling for legacy removal.
+
+**Next executable phase:** Post-Migration Phase 15 — Legacy Dependency Readiness.
