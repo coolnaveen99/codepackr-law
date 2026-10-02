@@ -39,10 +39,12 @@
 
 | Ticket | Task | Status |
 |---|---|---|
-| INT-016.01 | Delivery origin/version contract | PLANNED |
-| INT-016.02 | Cache/failure behavior audit | PLANNED |
-| INT-016.03 | Environment override validation | PLANNED |
-| INT-016.04 | Delivery regression CI gate | PLANNED |
+| INT-016.01 | Delivery origin/version contract | COMPLETED — default pinned to `coolnaveen99/legal-content/main`; manifest repository + version checked |
+| INT-016.02 | Cache/failure behavior audit | COMPLETED — repository memoizes manifest/relationship-index fetches; failed delivery resolves safely to `null`; delivery script uses a 15s timeout and fails the CI gate on delivery errors |
+| INT-016.03 | Environment override validation | COMPLETED — `VITE_LEGAL_CONTENT_BASE_URL` → `LEGAL_CONTENT_BASE_URL` → pinned canonical default; trailing slash normalized |
+| INT-016.04 | Delivery regression CI gate | COMPLETED — `check:canonical-delivery` is part of Law CI and now verifies fetched entity ID/entityType/status against manifest entries |
+
+**Phase 16 exit:** Canonical delivery origin, manifest version/repository identity, environment override precedence, timeout/error behavior and manifest-to-entity identity are covered by the executable delivery gate. No legacy content was removed.
 
 ## Phase 17 — Content UX Validation
 
