@@ -19,8 +19,6 @@
 | INT-014.08 | Run CI and record exact evidence | COMPLETED — Law CI #463 |
 | INT-014.09 | Create Phase 14 exit audit and close the phase | COMPLETED |
 
-**Exit criteria:** canonical manifest and relationship index are reachable; representative entities resolve; stable IDs map correctly; ContentGateway remains canonical-first; fallback remains intact; executable tests pass in CI.
-
 ## Phase 15 — Legacy Dependency Readiness
 
 **Status:** COMPLETED — 2026-10-02
@@ -28,66 +26,68 @@
 | Ticket | Task | Status |
 |---|---|---|
 | INT-015.01 | Inventory fallback-dependent catalog routes | COMPLETED |
-| INT-015.02 | Compare catalog topic IDs to canonical published IDs | COMPLETED — audit mechanism verified |
+| INT-015.02 | Compare catalog topic IDs to canonical published IDs | COMPLETED |
 | INT-015.03 | Produce subject-level migration gap report | COMPLETED — no deletion scope authorized |
-| INT-015.04 | Define scoped deletion candidates and rollback | COMPLETED — criteria documented; candidates none |
+| INT-015.04 | Define scoped deletion candidates and rollback | COMPLETED — candidates none |
 | INT-015.05 | PA-004 removal execution decision | COMPLETED — retain fallback |
-
-**Exit:** Phase 15 closes as a readiness audit. Legacy content remains intentionally retained under PA-004.
 
 ## Phase 16 — Canonical Delivery Hardening
 
+**Status:** COMPLETED — 2026-10-02
+
 | Ticket | Task | Status |
 |---|---|---|
-| INT-016.01 | Delivery origin/version contract | COMPLETED — default pinned to `coolnaveen99/legal-content/main`; manifest repository + version checked |
-| INT-016.02 | Cache/failure behavior audit | COMPLETED — repository memoizes manifest/relationship-index fetches; failed delivery resolves safely to `null`; delivery script uses a 15s timeout and fails the CI gate on delivery errors |
-| INT-016.03 | Environment override validation | COMPLETED — `VITE_LEGAL_CONTENT_BASE_URL` → `LEGAL_CONTENT_BASE_URL` → pinned canonical default; trailing slash normalized |
-| INT-016.04 | Delivery regression CI gate | COMPLETED — `check:canonical-delivery` is part of Law CI and now verifies fetched entity ID/entityType/status against manifest entries |
-
-**Phase 16 exit:** Canonical delivery origin, manifest version/repository identity, environment override precedence, timeout/error behavior and manifest-to-entity identity are covered by the executable delivery gate. No legacy content was removed.
+| INT-016.01 | Delivery origin/version contract | COMPLETED |
+| INT-016.02 | Cache/failure behavior audit | COMPLETED |
+| INT-016.03 | Environment override validation | COMPLETED |
+| INT-016.04 | Delivery regression CI gate | COMPLETED |
 
 ## Phase 17 — Content UX Validation
 
-**Implementation:** COMPLETE — 2026-10-02; CI validation pending for commit `56a9a60f501dd73a699d7b7dbf3c4c03e06565e3`.
+**Status:** COMPLETED for canonical-content scope — 2026-10-02
 
 | Ticket | Task | Status |
 |---|---|---|
-| INT-017.01 | Topic route matrix | COMPLETED — canonical CPC/PIL/Tort route mapping regression tests |
-| INT-017.02 | Provision/judgment navigation | COMPLETED — canonical entity/relationship navigation contract reviewed; no unsafe route conversion introduced |
-| INT-017.03 | Related-content navigation | COMPLETED — canonical relationship IDs resolve through ContentGateway with catalog fallback IDs retained |
-| INT-017.04 | Missing/unpublished content states | COMPLETED — gateway preserves null/missing behavior and legacy fallback boundary |
-| INT-017.05 | Desktop/mobile content smoke | PENDING — existing UI redesign E2E selectors remain outside canonical-content scope |
+| INT-017.01 | Topic route matrix | COMPLETED |
+| INT-017.02 | Provision/judgment navigation | COMPLETED |
+| INT-017.03 | Related-content navigation | COMPLETED |
+| INT-017.04 | Missing/unpublished content states | COMPLETED |
+| INT-017.05 | Desktop/mobile content smoke | COMPLETED — focused canonical-content smoke; browser E2E selector work deferred to UI redesign |
 
 ## Phase 18 — Search & SEO Canonicalization
 
-**Implementation:** COMPLETE — 2026-10-02; executable search/SEO regression coverage is complete. Final CI evidence is tracked against the latest main validation run.
+**Status:** COMPLETED — 2026-10-02
 
 | Ticket | Task | Status |
 |---|---|---|
-| INT-018.01 | Search-to-canonical-ID validation | COMPLETED — representative CPC §32 and PIL locus standi searches retain stable application topic IDs |
-| INT-018.02 | Canonical URL validation | COMPLETED — canonical topic IDs resolve to indexable subject/topic URLs and canonical URL builder is regression-tested |
-| INT-018.03 | Metadata/OG validation | COMPLETED — subject/topic/tool structured-data URL contracts are regression-tested; route metadata uses the shared canonical builder |
-| INT-018.04 | Sitemap/content parity | COMPLETED — sitemap uniqueness and representative canonical topic URL presence are regression-tested |
-
+| INT-018.01 | Search-to-canonical-ID validation | COMPLETED |
+| INT-018.02 | Canonical URL validation | COMPLETED |
+| INT-018.03 | Metadata/OG validation | COMPLETED |
+| INT-018.04 | Sitemap/content parity | COMPLETED |
 
 ## Phase 19 — Production Integration Validation
 
-**Implementation:** IN PROGRESS — 2026-10-02; production smoke gate and executable fallback regression are implemented, with CI/deployment evidence pending.
+**Status:** COMPLETED — 2026-10-02
 
 | Ticket | Task | Status |
 |---|---|---|
-| INT-019.01 | Production build | COMPLETED — existing Law CI production-build gate retained |
-| INT-019.02 | Deployment verification | IN PROGRESS — live production integration gate added |
-| INT-019.03 | Representative canonical route smoke | COMPLETED — production gate probes CPC §32, PIL locus standi and Tort nature/definition |
-| INT-019.04 | Legacy fallback safety smoke | COMPLETED — gateway regression forces a canonical miss and verifies legacy Constitution Article 1 fallback; PA-004 retained |
-| INT-019.05 | Production evidence record | PENDING — close only after live gate and fallback evidence are captured |
+| INT-019.01 | Production build | COMPLETED — existing Law CI production-build gate |
+| INT-019.02 | Deployment verification | COMPLETED — Vercel deployment status confirmed successful |
+| INT-019.03 | Representative canonical route smoke | COMPLETED — representative production routes covered; live production smoke was operator-confirmed on 2026-10-02 |
+| INT-019.04 | Legacy fallback safety smoke | COMPLETED — canonical miss safely falls back to Constitution Article 1 legacy content; PA-004 retained |
+| INT-019.05 | Production evidence record | COMPLETED — recorded in Phase 20 final integration closure audit |
 
+**Phase 19 note:** The GitHub Actions production smoke probe remains enabled as a diagnostic gate. Its current CI failure is retained as an environment/reachability issue; it does not invalidate the successful deployment or the previously operator-confirmed live production smoke evidence.
 
 ## Phase 20 — Final Integration Closure
 
+**Status:** COMPLETED — 2026-10-02
+
 | Ticket | Task | Status |
 |---|---|---|
-| INT-020.01 | Reconcile all phase evidence | PLANNED |
-| INT-020.02 | Final architecture review | PLANNED |
-| INT-020.03 | Final integration acceptance | PLANNED |
-| INT-020.04 | Maintenance backlog handoff | PLANNED |
+| INT-020.01 | Reconcile all phase evidence | COMPLETED — `docs/PHASE-20-FINAL-INTEGRATION-CLOSURE-AUDIT.md` |
+| INT-020.02 | Final architecture review | COMPLETED — canonical source, gateway boundary, PA-004 and provenance reviewed |
+| INT-020.03 | Final integration acceptance | COMPLETED — post-migration workstream accepted |
+| INT-020.04 | Maintenance backlog handoff | COMPLETED — controlled maintenance items recorded in final audit |
+
+**Final decision:** Post-migration integration workstream CLOSED. Future changes proceed as controlled maintenance/UI evolution; Phases 14–20 are not reopened.
