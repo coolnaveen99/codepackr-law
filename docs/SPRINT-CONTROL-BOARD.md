@@ -1005,3 +1005,23 @@ The binding monetization policy preserves the free legal-information/safety base
 **Decision:** Legacy fallback remains active. No `src/data/topics/**` deletion or fallback-adapter removal is authorized. Historical PA-004 evidence records approximately 3,561 legacy topic files versus approximately 326 canonical topic entities / 719 total canonical entities, so the sets are not equivalent.
 
 **Next executable phase:** Post-Migration Phase 16 — Canonical Delivery Hardening.
+
+## Post-Migration Integration Workstream — Phase 16
+
+**Status:** **COMPLETED — 2026-10-02**
+
+| Gate | Result |
+|---|---|
+| Canonical origin default | **PASS** — `https://raw.githubusercontent.com/coolnaveen99/legal-content/main` |
+| Manifest repository identity | **PASS** — `coolnaveen99/legal-content` |
+| Manifest version contract | **PASS** — `manifestVersion` format is enforced |
+| Environment override precedence | **PASS** — Vite override, Node override, then canonical default; trailing slash removed |
+| Failure/timeout handling | **PASS** — runtime repository returns null on delivery failure; executable delivery check uses a 15s timeout and fails closed |
+| Manifest-to-entity identity | **PASS** — delivery check validates entity ID and entityType against manifest entry |
+| CI delivery gate | **PASS** — `npm run check:canonical-delivery` is included in Law CI |
+
+**Implementation commit:** `f8829a2723d190e0cd496ca8734222f4f2779745` — strengthened canonical delivery identity checks.
+
+**Decision:** No legacy content deletion or canonical-only hard switch in this phase.
+
+**Next executable phase:** Post-Migration Phase 17 — Content UX Validation.
