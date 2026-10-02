@@ -86,4 +86,4 @@ Never convert PARTIAL/BLOCKED/DEFERRED into COMPLETED merely because deployment 
 
 ## Next execution
 
-Start with **UI-RD-01 — UI Baseline & Bug Inventory**. Do not skip directly to implementation of a later phase.
+UI-RD-01 through UI-RD-08 are completed. The next actionable work is **UI-RD-09 — Production Validation** once the Vercel deployment gate is available. UI-RD-10 follows only after UI-RD-09 has production evidence. Do not reopen completed UI-RD phases unless new evidence proves their contracts are wrong.
