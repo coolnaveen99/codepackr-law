@@ -121,3 +121,5 @@ if (records.length !== 3561) throw new Error(`Expected 3561 migration records; f
 
 console.log('\nCanonical full-catalog parity: PASS')
 console.log(`All ${legacyFiles.length} legacy topics resolve to published canonical entities.`)
+
+// CI validation evidence run: no runtime behavior change.
