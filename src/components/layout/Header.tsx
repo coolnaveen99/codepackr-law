@@ -8,11 +8,9 @@ import {
   Home,
   Library,
   Menu,
-  Moon,
   Search,
   Scale,
   Settings2,
-  Sun,
   Wrench,
 } from 'lucide-react'
 
@@ -40,8 +38,6 @@ type NavItem = {
 }
 
 export function Header({
-  dark,
-  onToggleDark,
   onSidebarCollapsedChange,
   currentLabel,
   activeKey,
@@ -182,10 +178,6 @@ export function Header({
         </div>
 
         <div className="cp-law-sidebar-footer">
-          <button type="button" className="cp-law-nav-item" onClick={() => runNavigationAction(onToggleDark)}>
-            {dark ? <Sun size={18} /> : <Moon size={18} />}
-            <span><b>{dark ? 'Light mode' : 'Dark mode'}</b><small>Appearance</small></span>
-          </button>
           {onOpenContact && (
             <button type="button" className="cp-law-nav-item" onClick={() => runNavigationAction(onOpenContact)}>
               <Settings2 size={18} /><span><b>Support</b><small>Contact & feedback</small></span>
@@ -215,9 +207,6 @@ export function Header({
             <Search size={17} />
             <span>Search law, cases, sections, tools…</span>
             <kbd>⌘ K</kbd>
-          </button>
-          <button type="button" className="cp-law-theme-button" onClick={onToggleDark} aria-label="Toggle theme">
-            {dark ? <Sun size={17} /> : <Moon size={17} />}
           </button>
         </div>
       </header>
@@ -268,10 +257,6 @@ export function Header({
               </div>
 
               <div className="cp-law-mobile-nav-footer">
-                <button type="button" className="cp-law-nav-item" onClick={() => runMobileAction(onToggleDark)}>
-                  {dark ? <Sun size={18} /> : <Moon size={18} />}
-                  <span><b>{dark ? 'Light mode' : 'Dark mode'}</b><small>Appearance</small></span>
-                </button>
                 {onOpenContact && (
                   <button type="button" className="cp-law-nav-item" onClick={() => runMobileAction(onOpenContact)}>
                     <Settings2 size={18} /><span><b>Support</b><small>Contact & feedback</small></span>
