@@ -273,15 +273,9 @@ export function Header({
             <span className="cp-law-context-title">{currentLabel || 'Indian legal research, learning & practice workspace'}</span>
           </div>
           <div className="flex items-center gap-2 min-w-0">
-            <button
-              type="button"
-              className="hidden sm:inline-flex items-center gap-2 h-10 px-3 rounded-xl border border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors text-xs font-bold whitespace-nowrap"
-              onClick={() => runNavigationAction(() => onSelectTool('legal-draft-studio'))}
-              aria-label="Open Legal Draft Studio"
-            >
-              <FileText size={16} />
-              <span>Drafting</span>
-            </button>
+            <button type="button" className="hidden md:inline-flex items-center gap-2 h-10 px-3 rounded-xl border border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors text-xs font-bold whitespace-nowrap" onClick={() => runNavigationAction(() => onSelectTool('legal-draft-studio'))} aria-label="Open Legal Draft Studio"><FileText size={16} /><span>Drafting</span></button>
+            <button type="button" className="hidden lg:inline-flex items-center gap-2 h-10 px-3 rounded-xl border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 transition-colors text-xs font-bold whitespace-nowrap" onClick={() => runNavigationAction(() => onSelectTool('document-compare'))} aria-label="Open Document Compare"><GitCompare size={16} /><span>Compare</span></button>
+            <button type="button" className="hidden xl:inline-flex items-center gap-2 h-10 px-3 rounded-xl border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 transition-colors text-xs font-bold whitespace-nowrap" onClick={() => runNavigationAction(() => onSelectTool('concept-versus'))} aria-label="Open Concept Versus"><ArrowLeftRight size={16} /><span>Versus</span></button>
             <button type="button" ref={searchTriggerRef} className="cp-law-search-trigger" onClick={openSearch} aria-label="Open global search">
               <Search size={17} />
               <span>Search law, cases, sections, tools…</span>
