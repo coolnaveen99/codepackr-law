@@ -30,7 +30,7 @@ SEO paths use `/subjects/...` (aligned with runtime).
 
 ## 2. Tool catalogue (`src/data/tools.ts`)
 
-**Registered tools: 31** (including `case-law` and `knowledge` entries that also have first-class routes).
+**Registered tools: 32** (including `case-law` and `knowledge` entries that also have first-class routes).
 
 | # | slug | Name | Status |
 |---|---|---|---|
@@ -61,10 +61,11 @@ SEO paths use `/subjects/...` (aligned with runtime).
 | 25 | `knowledge` | Reusable Legal Knowledge | Live (route `/knowledge`) |
 | 26 | `document-compare` | Legal Document Compare | Live |
 | 27 | `legal-draft-studio` | Legal Draft Studio | Live (Phase 8 + 25 tiers) |
-| 28 | `court-forum-directory` | Court & Forum Directory | Live (Phase 26) |
-| 29 | `research-bundle` | Senior Counsel Research Bundle | Live (Phase 27) |
-| 30 | `neutral-analysis` | Neutral Analysis Mode | Live (Phase 28) |
-| 31 | `usage-metrics` | Privacy-safe Usage Metrics | Live (Phase 22) |
+| 28 | `concept-versus` | Concept Versus | Live (UI redesign restoration) |
+| 29 | `court-forum-directory` | Court & Forum Directory | Live (Phase 26) |
+| 30 | `research-bundle` | Senior Counsel Research Bundle | Live (Phase 27) |
+| 31 | `neutral-analysis` | Neutral Analysis Mode | Live (Phase 28) |
+| 32 | `usage-metrics` | Privacy-safe Usage Metrics | Live (Phase 22) |
 
 All listed tools are wired in `App.tsx` (or dedicated routes for case-law / knowledge).
 
