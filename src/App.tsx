@@ -41,6 +41,7 @@ const ExamTimer = lazy(() => import('./components/tools/ExamTimer').then((m) => 
 const LegalMaximsTool = lazy(() => import('./components/tools/LegalMaximsTool').then((m) => ({ default: m.LegalMaximsTool })))
 const LandmarkCasesTool = lazy(() => import('./components/tools/LandmarkCasesTool').then((m) => ({ default: m.LandmarkCasesTool })))
 const DocumentCompare = lazy(() => import('./components/tools/DocumentCompare').then((m) => ({ default: m.DocumentCompare })))
+const ConceptVersus = lazy(() => import('./components/tools/ConceptVersus').then((m) => ({ default: m.ConceptVersus })))
 const LegalDraftStudio = lazy(() => import('./components/tools/LegalDraftStudio').then((m) => ({ default: m.LegalDraftStudio })))
 const ResearchWorkbench = lazy(() => import('./components/tools/ResearchWorkbench').then((m) => ({ default: m.ResearchWorkbench })))
 const CitationVerifier = lazy(() => import('./components/tools/CitationVerifier').then((m) => ({ default: m.CitationVerifier })))
@@ -475,6 +476,7 @@ export default function App() {
               {activeTool.slug === 'legal-maxims' && <LegalMaximsTool />}
               {activeTool.slug === 'landmark-cases' && <LandmarkCasesTool />}
               {activeTool.slug === 'document-compare' && <DocumentCompare />}
+              {activeTool.slug === 'concept-versus' && <ConceptVersus />}
               {activeTool.slug === 'legal-draft-studio' && <LegalDraftStudio />}
               {activeTool.slug === 'research-workbench' && <ResearchWorkbench />}
               {activeTool.slug === 'citation-verifier' && <CitationVerifier />}
