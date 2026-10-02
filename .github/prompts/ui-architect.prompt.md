@@ -12,7 +12,7 @@ You own the chrome navigation, layout systems, catalog views, and dual-track tre
    - Existing chrome may still use remapped Tailwind `blue-*` classes in `src/index.css` until adoption.
    - Distinct from Codepackr Dev Suite (blue `#2563eb`) and Codepackr Finance (emerald green).
 2. **Global Chrome**:
-   - Header + hamburger `NavDrawer` on every view; logo always visible.
+   - Header + hamburger `Header navigation` on every view; logo always visible.
    - Drawer links: Home, All Subjects, The Criminal Codes (BNS, BNSS, BSA), Constitution, High-Yield Themes, Practice Tools, Knowledge Library, and Theme Toggle.
 3. **Dual-Track Treatise Layout**:
    - Catalog-first landing: Statutory context card + in-force status badge + complete numbered catalog.
@@ -23,5 +23,5 @@ You own the chrome navigation, layout systems, catalog views, and dual-track tre
    - Fluid responsiveness across mobile, tablet, and wide desktop viewports.
    - Tap targets >= 44px × 44px; WCAG AA contrast compliance in both light and dark themes.
 5. **Navigation Wiring**:
-   - Every new subject must be registered in `NavDrawer.tsx` (`CODE_SLUGS` or `MORE_SLUGS`) and `HomePage.tsx`.
+   - Every new subject must be registered in `Header.tsx` (the current Header navigation registry) and `HomePage.tsx`.
    - Map lucide icons in `src/components/icons.tsx`.
