@@ -117,7 +117,7 @@ STRUCTURE COMPREHENSIVE TREATISE (Study Body)
         ↓
 DRAFT AUTHENTIC HYPOTHETICALS & EXTRACT CASE RATIOS
         ↓
-FORMULATE IRAC 10-MARK & 16-MARK EXAMINATION ANSWERS
+FORMULATE STRUCTURED IRAC/CREAC OR OTHER APPROPRIATE ANALYTICAL ANSWERS
         ↓
 CROSS-LINK REUSABLE KNOWLEDGE (`[[REF:TYPE:CATEGORY:SLUG]]`)
         ↓
@@ -140,13 +140,13 @@ STATUTORY OVERVIEW & COMMENCEMENT (In-force dates, transitional rules, legislati
 MAJOR PART / CHAPTER / CLUSTER
   ↓
 PROVISION / TOPIC TREATISE
-  ├─► TRACK A: SCHOLASTIC & EXAM MASTERY (PhD Depth)
+  ├─► TRACK A: SCHOLASTIC & ANALYTICAL MASTERY (PhD Depth)
   │     ├─ Meaning, Concept & Jurisprudential Roots
   │     ├─ Statutory Text Deconstruction (Clauses, Provisos, Explanations)
   │     ├─ Canons of Interpretation Applied
   │     ├─ Landmark Precedents (Ratio Decidendi extracted)
-  │     ├─ Full 10-Mark Structured Examination Answer (IRAC)
-  │     └─ Full 16-Mark Comprehensive Analytical Answer (CREAC)
+  │     ├─ Structured IRAC / analytical answer
+  │     └─ Comprehensive CREAC / analytical answer when appropriate
   │
   └─► TRACK B: LITIGATION & CHAMBER PRACTICE (Senior Counsel Precision)
         ├─ Forum & Competent Court (Magistrate / Sessions / High Court / Civil Court)
