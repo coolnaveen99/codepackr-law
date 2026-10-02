@@ -357,6 +357,18 @@ export const TOOLS: ToolMetadata[] = [
     featured: true,
   },
   {
+    id: 'concept-versus',
+    slug: 'concept-versus',
+    name: 'Concept Versus',
+    category: 'reference',
+    description: 'Compare two canonical legal concepts side by side for study, neighbouring-concept distinctions and exam revision.',
+    keywords: ['concept versus', 'versus', 'concept comparison', 'distinction', 'compare concepts', 'legal concepts'],
+    icon: 'ArrowLeftRight',
+    badge: 'Study',
+    priority: 28,
+    featured: true,
+  },
+  {
     id: 'court-forum-directory',
     slug: 'court-forum-directory',
     name: 'Court & Forum Directory',
@@ -365,7 +377,7 @@ export const TOOLS: ToolMetadata[] = [
     keywords: ['court', 'high court', 'forum', 'state profile', 'filing'],
     icon: 'Building2',
     badge: 'Practice',
-    priority: 28,
+    priority: 29,
     featured: true,
   },
   {
@@ -377,7 +389,7 @@ export const TOOLS: ToolMetadata[] = [
     keywords: ['research bundle', 'export', 'senior counsel', 'argument matrix'],
     icon: 'Package',
     badge: 'P1',
-    priority: 29,
+    priority: 30,
     featured: true,
   },
   {
