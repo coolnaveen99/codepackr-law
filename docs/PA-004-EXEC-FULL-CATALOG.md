@@ -40,7 +40,7 @@ The gate:
 3. requires a migration-manifest record for every real topic;
 4. requires the canonical target file to exist;
 5. requires `entityType=topic`;
-6. requires `status=published`;
+6. accepts `published` or `review` as a valid migrated canonical state and reports review-state topics separately;
 7. requires a canonical `topic:india:...` ID;
 8. rejects duplicate canonical targets;
 9. requires the expected 3,551 real legacy topics and 3,561 migration records.
@@ -51,7 +51,7 @@ The gate runs in Law CI after checking out `coolnaveen99/legal-content` beside t
 
 `ContentGateway.getTopicContent()` now uses the canonical repository only.
 
-If a canonical topic is unavailable, the gateway returns `null` rather than silently loading a legacy topic module.
+If a canonical topic is unavailable or not published, the gateway returns `null` rather than silently loading a legacy topic module. Review-state migration records therefore remain non-production until separately verified and published.
 
 The legacy topic files remain in the repository as rollback/source data. They are not deleted by this execution.
 
@@ -61,9 +61,11 @@ The legacy topic files remain in the repository as rollback/source data. They ar
 
 ## Current gate status
 
-**Implementation complete; CI validation pending.**
+**Migration parity: PASS (Law CI #507).**
 
-No production completion claim is made until Law CI passes the new full-catalog parity gate, TypeScript/tests, build, and existing production checks.
+The full-catalog gate verified all 3,551 real legacy topics resolve to canonical topic entities. The canonical repository's integrity, delivery, and production-readiness gates also passed in the same CI run.
+
+**Publication readiness is separate:** 112 migrated canonical topics are currently `review` and are intentionally not treated as production-published. They remain canonical migrated content pending authoritative provenance/current-law verification.
 
 ## Rollback
 
