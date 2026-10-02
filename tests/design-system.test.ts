@@ -79,10 +79,11 @@ test('UI-002 legal status primitives are labelled and match the verification voc
   assert.match(css, /border-style:\s*double/)
 })
 
-test('UI-002 is loaded without adopting pages', () => {
+test('UI-002 tokens stay prefixed and UI-003 adoption is explicit', () => {
   assert.match(main, /design-system\/styles\/tokens\.css/)
-  assert.doesNotMatch(app, /design-system/)
+  assert.match(app, /design-system\/surfaces/)
   assert.match(board, /UI-002/)
+  assert.match(board, /UI-003/)
   assert.match(css, /--cp-ds-space-1/)
   assert.doesNotMatch(css, /--cp-space-1/)
 })

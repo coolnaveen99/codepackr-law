@@ -11,7 +11,7 @@ export function Footer({ onOpenContact }: FooterProps) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2 mb-3">
-              <div className="size-8 rounded-lg bg-gradient-to-br from-amber-600 via-orange-600 to-amber-700 text-white flex items-center justify-center">
+              <div className="cp-ds-mark size-8 rounded-lg flex items-center justify-center">
                 <Scale className="w-4 h-4" />
               </div>
               <span className="font-extrabold text-slate-900 dark:text-white">

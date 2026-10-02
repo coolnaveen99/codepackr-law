@@ -24,6 +24,7 @@ import { type LawTopic } from './data/subjects'
 import { getSubjectBySlug, getTopic, searchSubjectsAndTopics } from './data/liveSubjects'
 import { TOOLS } from './data/tools'
 import type { ToolMetadata, ToolCategory } from './types'
+import { resolveUiTask, surfaceMeasure, UI_TASK_TITLE } from './design-system/surfaces'
 import { Header } from './components/layout/Header'
 import { CodepackrFamilyBar } from './components/CodepackrFamilyBar'
 import { Footer } from './components/layout/Footer'
@@ -342,9 +343,14 @@ export default function App() {
     }
   }
 
+  const uiTask = resolveUiTask(
+    route.type === 'tool' ? { type: route.type, slug: route.slug } : { type: route.type },
+  )
+  const uiMeasure = surfaceMeasure(uiTask)
+
   return (
     <div className={dark ? 'dark' : ''}>
-      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors">
+      <div className="cp-chambers min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors">
         <CodepackrFamilyBar />
         <Header
           dark={dark}
@@ -383,7 +389,7 @@ export default function App() {
 
         <OfflineBanner />
 
-        <main className="flex-1 max-w-4xl w-full mx-auto px-4 sm:px-6 py-6 paper-grid cp-mobile-main-pad cp-page">
+        <main data-ui-task={uiTask} data-ui-measure={uiMeasure} aria-label={UI_TASK_TITLE[uiTask]} className="flex-1 w-full mx-auto px-4 sm:px-6 py-6 paper-grid cp-mobile-main-pad cp-page">
           {route.type === 'contact' && <ContactFeedback onBackToHome={goHome} />}
 
           {route.type === 'case-law' && (

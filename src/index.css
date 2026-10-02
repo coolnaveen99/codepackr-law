@@ -6,8 +6,29 @@
 
 @theme {
   --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-display: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* UI-003 adoption: warm paper/ink, not cold slate. Seal stays on blue-* remap. */
+  --color-slate-50: #f7f4ef;
+  --color-slate-100: #efeae3;
+  --color-slate-200: #e4ddd6;
+  --color-slate-300: #d7cdc3;
+  --color-slate-400: #b7aea7;
+  --color-slate-500: #6e645e;
+  --color-slate-600: #5c534c;
+  --color-slate-700: #4e453f;
+  --color-slate-800: #3f3733;
+  --color-slate-900: #1c1614;
+  --color-slate-950: #14110f;
+  --color-amber-300: #d992a8;
+  --color-amber-400: #c25b7c;
+  --color-amber-500: #a33258;
+  --color-amber-600: #8b1e3f;
+  --color-amber-700: #6f1833;
+  --color-orange-500: #9f2d4a;
+  --color-orange-600: #8b1e3f;
+  --color-orange-700: #6f1833;
 
   --color-blue-50: #fdf2f4;
   --color-blue-100: #fce7eb;
@@ -20,18 +41,6 @@
   --color-blue-800: #541226;
   --color-blue-900: #3a0c1a;
   --color-blue-950: #22070f;
-
-  --color-slate-50: #f8fafc;
-  --color-slate-100: #f1f5f9;
-  --color-slate-200: #e2e8f0;
-  --color-slate-300: #cbd5e1;
-  --color-slate-400: #94a3b8;
-  --color-slate-500: #64748b;
-  --color-slate-600: #475569;
-  --color-slate-700: #334155;
-  --color-slate-800: #1e293b;
-  --color-slate-900: #0f172a;
-  --color-slate-950: #020617;
 
   --ease-out-smooth: cubic-bezier(0.22, 1, 0.36, 1);
 }

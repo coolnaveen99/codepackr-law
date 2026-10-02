@@ -59,7 +59,7 @@ export function Header({
               className="flex items-center gap-2.5 min-w-0 text-left focus:outline-none"
               aria-label="CodePackr Law home"
             >
-              <div className="size-9 sm:size-10 rounded-xl bg-gradient-to-br from-amber-600 via-orange-600 to-amber-700 text-white flex items-center justify-center shadow-xs ring-1 ring-amber-500/20 group-hover:scale-105 transition-transform shrink-0">
+              <div className="cp-ds-mark size-9 sm:size-10 rounded-xl flex items-center justify-center shrink-0">
                 <Scale className="w-5 h-5" />
               </div>
               <span className="min-w-0">
