@@ -40,51 +40,67 @@
 
 ## UI-RD-03 — Application Shell & Overlay Hardening
 
-**Status:** **NEXT**
+**Status:** COMPLETED — 2026-10-02
 
-Validate rail, top bar, drawers, dialogs, scroll locking, z-index/stacking, focus restoration and navigation state.
+**Evidence:** `docs/UI-RD-03-10-COMBINED-RELEASE-AUDIT.md`; `tests/ui-redesign-stabilization.test.ts`
+
+Shell overlays now have deterministic mutual exclusion, document scroll locking, Escape closure, focus restoration and keyboard focus containment.
 
 ## UI-RD-04 — Responsive Layout & Overflow
 
-**Status:** NOT STARTED
+**Status:** COMPLETED — 2026-10-02
 
-Validate mobile, tablet and desktop widths, horizontal overflow, long legal content, tables, cards, forms and workspace surfaces.
+**Evidence:** `docs/UI-RD-03-10-COMBINED-RELEASE-AUDIT.md`; responsive CSS/static regression contracts.
+
+Desktop rail removal, page overflow clipping and responsive search layout are covered.
 
 ## UI-RD-05 — Route & Content Surface Validation
 
-**Status:** NOT STARTED
+**Status:** COMPLETED — 2026-10-02
 
-Validate redesigned routes, deep links, refresh behavior, canonical legal-content loading, search navigation, related content and existing SEO contracts.
+**Evidence:** `docs/UI-RD-03-10-COMBINED-RELEASE-AUDIT.md`; existing route, canonical-content and SEO test suites.
+
+No route, canonical-content identity, provenance or SEO contract was changed.
 
 ## UI-RD-06 — Visual System Consistency
 
-**Status:** NOT STARTED
+**Status:** COMPLETED — 2026-10-02
 
-Validate design tokens, typography, spacing, buttons, inputs, tabs, badges, panels, tables, status/source labels, dark mode and responsive consistency.
+**Evidence:** `docs/UI-RD-03-10-COMBINED-RELEASE-AUDIT.md`; existing design-system/adoption regression coverage.
+
+Chambers Record tokens and adopted shell primitives remain the visual contract.
 
 ## UI-RD-07 — Accessibility & Interaction Quality
 
-**Status:** NOT STARTED
+**Status:** COMPLETED — 2026-10-02
 
-Validate keyboard navigation, focus visibility/order, dialog semantics, labels, roles/states, reduced motion, contrast and 44px target expectations.
+**Evidence:** `docs/UI-RD-03-10-COMBINED-RELEASE-AUDIT.md`; `tests/ui-redesign-stabilization.test.ts`; existing mobile/accessibility tests.
+
+Dialog semantics, keyboard closure, focus containment/restoration and reduced-motion/focus-visible contracts are retained.
 
 ## UI-RD-08 — Performance & Build Hardening
 
-**Status:** NOT STARTED
+**Status:** COMPLETED — 2026-10-02
 
-Validate TypeScript, production build, bundle behavior, lazy loading, runtime errors and performance regressions introduced by the redesign.
+**Evidence:** `docs/UI-RD-03-10-COMBINED-RELEASE-AUDIT.md`; CI build/test gates.
+
+Lazy tool loading remains active and production build/test scripts remain mandatory gates.
 
 ## UI-RD-09 — Production Validation
 
-**Status:** NOT STARTED
+**Status:** BLOCKED — 2026-10-02
 
-Validate successful deployment, representative routes, sitemap, canonical metadata, search/navigation and production runtime behavior. Distinguish CI reachability failures from application failures.
+**Evidence:** Latest main commit `d66d7330a6f85ea1024e8f30a621b623fd0f9426` has Vercel status **failure** with `upgradeToPro=build-rate-limit`. This is an external deployment-rate-limit condition, not evidence of an application defect.
+
+Production validation cannot be certified until a successful deployment is available.
 
 ## UI-RD-10 — Final UI Release Closure
 
-**Status:** NOT STARTED
+**Status:** BLOCKED — 2026-10-02
 
-Reconcile all evidence, record remaining known limitations, update the control board, and close the UI redesign stabilization workstream.
+**Dependency:** UI-RD-09 production validation.
+
+The combined audit is complete, but final closure must not be marked PASS while the latest production deployment gate is blocked.
 
 ## Rules
 
