@@ -60,6 +60,9 @@ jobs:
       - name: Production readiness gate
         run: npm run check:readiness
 
+      - name: Production integration smoke
+        run: npm run check:production-integration
+
       - name: Unit tests
         run: npm run test:run
 
