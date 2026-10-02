@@ -19,7 +19,10 @@ async function fetchText(path) {
       const response = await fetch(new URL(path, BASE), {
         redirect: 'follow',
         signal: controller.signal,
-        headers: { 'user-agent': 'codepackr-law-production-check/1.0' },
+        headers: {
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/142 Safari/537.36',
+        accept: path.endsWith('.xml') ? 'application/xml,text/xml,*/*' : 'text/html,application/xhtml+xml,*/*',
+      },
       })
       const text = await response.text()
       if (response.ok && text.trim()) return { response, text }
