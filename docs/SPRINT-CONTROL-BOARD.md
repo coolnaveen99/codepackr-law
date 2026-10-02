@@ -885,9 +885,9 @@ The Phase 18 roadmap deliverable is complete: the verification policy defines re
 **Phase 25 status:** **CLOSED**.
 
 
-## Phase 27 — Senior Counsel Research Mode — IN PROGRESS
+## Phase 27 — Senior Counsel Research Mode — COMPLETED
 
-**Implementation PR:** pending  
+**Implementation PR:** #97  
 **Scope:** complete the research bundle against roadmap §32, including case summaries and all required export formats.
 
 | Check | Result |
