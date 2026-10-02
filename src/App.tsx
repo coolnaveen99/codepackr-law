@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
 import {
   parseRoute,
   setToolUrl,
@@ -34,39 +34,40 @@ import { SubjectsList } from './components/subjects/SubjectsList'
 import { SubjectDetail } from './components/subjects/SubjectDetail'
 import { TopicDetail } from './components/subjects/TopicDetail'
 import { ContactFeedback } from './components/contact/ContactFeedback'
-import { AibeMcqPractice } from './components/tools/AibeMcqPractice'
-import { BnsIpcMapper } from './components/tools/BnsIpcMapper'
-import { SectionFlashcards } from './components/tools/SectionFlashcards'
-import { ExamTimer } from './components/tools/ExamTimer'
-import { LegalMaximsTool } from './components/tools/LegalMaximsTool'
-import { LandmarkCasesTool } from './components/tools/LandmarkCasesTool'
-import { DocumentCompare } from './components/tools/DocumentCompare'
-import { LegalDraftStudio } from './components/tools/LegalDraftStudio'
-import { ResearchWorkbench } from './components/tools/ResearchWorkbench'
-import { CitationVerifier } from './components/tools/CitationVerifier'
-import { JudgmentAnalyzer } from './components/tools/JudgmentAnalyzer'
-import { JudgmentCompare } from './components/tools/JudgmentCompare'
-import { CasePrepWorkbench } from './components/tools/CasePrepWorkbench'
-import { FilingChecklists } from './components/tools/FilingChecklists'
-import { LimitationCalculator } from './components/tools/LimitationCalculator'
-import { LegalCalculators } from './components/tools/LegalCalculators'
-import { TransitionCentre } from './components/tools/TransitionCentre'
-import { CaseBriefBuilder } from './components/tools/CaseBriefBuilder'
-import { StudyPlanner } from './components/tools/StudyPlanner'
-import { PracticeDashboard } from './components/tools/PracticeDashboard'
-import { CauseListOrganizer } from './components/tools/CauseListOrganizer'
-import { PrimarySourceFinder } from './components/tools/PrimarySourceFinder'
-import { PrivacyControls } from './components/tools/PrivacyControls'
-import { GlobalSearchPanel } from './components/tools/GlobalSearchPanel'
-import { CourtForumDirectory } from './components/tools/CourtForumDirectory'
-import { ResearchBundleExport } from './components/tools/ResearchBundleExport'
-import { NeutralAnalysisMode } from './components/tools/NeutralAnalysisMode'
-import { UsageMetrics } from './components/tools/UsageMetrics'
+const AibeMcqPractice = lazy(() => import('./components/tools/AibeMcqPractice').then((m) => ({ default: m.AibeMcqPractice })))
+const BnsIpcMapper = lazy(() => import('./components/tools/BnsIpcMapper').then((m) => ({ default: m.BnsIpcMapper })))
+const SectionFlashcards = lazy(() => import('./components/tools/SectionFlashcards').then((m) => ({ default: m.SectionFlashcards })))
+const ExamTimer = lazy(() => import('./components/tools/ExamTimer').then((m) => ({ default: m.ExamTimer })))
+const LegalMaximsTool = lazy(() => import('./components/tools/LegalMaximsTool').then((m) => ({ default: m.LegalMaximsTool })))
+const LandmarkCasesTool = lazy(() => import('./components/tools/LandmarkCasesTool').then((m) => ({ default: m.LandmarkCasesTool })))
+const DocumentCompare = lazy(() => import('./components/tools/DocumentCompare').then((m) => ({ default: m.DocumentCompare })))
+const LegalDraftStudio = lazy(() => import('./components/tools/LegalDraftStudio').then((m) => ({ default: m.LegalDraftStudio })))
+const ResearchWorkbench = lazy(() => import('./components/tools/ResearchWorkbench').then((m) => ({ default: m.ResearchWorkbench })))
+const CitationVerifier = lazy(() => import('./components/tools/CitationVerifier').then((m) => ({ default: m.CitationVerifier })))
+const JudgmentAnalyzer = lazy(() => import('./components/tools/JudgmentAnalyzer').then((m) => ({ default: m.JudgmentAnalyzer })))
+const JudgmentCompare = lazy(() => import('./components/tools/JudgmentCompare').then((m) => ({ default: m.JudgmentCompare })))
+const CasePrepWorkbench = lazy(() => import('./components/tools/CasePrepWorkbench').then((m) => ({ default: m.CasePrepWorkbench })))
+const FilingChecklists = lazy(() => import('./components/tools/FilingChecklists').then((m) => ({ default: m.FilingChecklists })))
+const LimitationCalculator = lazy(() => import('./components/tools/LimitationCalculator').then((m) => ({ default: m.LimitationCalculator })))
+const LegalCalculators = lazy(() => import('./components/tools/LegalCalculators').then((m) => ({ default: m.LegalCalculators })))
+const TransitionCentre = lazy(() => import('./components/tools/TransitionCentre').then((m) => ({ default: m.TransitionCentre })))
+const CaseBriefBuilder = lazy(() => import('./components/tools/CaseBriefBuilder').then((m) => ({ default: m.CaseBriefBuilder })))
+const StudyPlanner = lazy(() => import('./components/tools/StudyPlanner').then((m) => ({ default: m.StudyPlanner })))
+const PracticeDashboard = lazy(() => import('./components/tools/PracticeDashboard').then((m) => ({ default: m.PracticeDashboard })))
+const CauseListOrganizer = lazy(() => import('./components/tools/CauseListOrganizer').then((m) => ({ default: m.CauseListOrganizer })))
+const PrimarySourceFinder = lazy(() => import('./components/tools/PrimarySourceFinder').then((m) => ({ default: m.PrimarySourceFinder })))
+const PrivacyControls = lazy(() => import('./components/tools/PrivacyControls').then((m) => ({ default: m.PrivacyControls })))
+const GlobalSearchPanel = lazy(() => import('./components/tools/GlobalSearchPanel').then((m) => ({ default: m.GlobalSearchPanel })))
+const CourtForumDirectory = lazy(() => import('./components/tools/CourtForumDirectory').then((m) => ({ default: m.CourtForumDirectory })))
+const ResearchBundleExport = lazy(() => import('./components/tools/ResearchBundleExport').then((m) => ({ default: m.ResearchBundleExport })))
+const NeutralAnalysisMode = lazy(() => import('./components/tools/NeutralAnalysisMode').then((m) => ({ default: m.NeutralAnalysisMode })))
+const UsageMetrics = lazy(() => import('./components/tools/UsageMetrics').then((m) => ({ default: m.UsageMetrics })))
+const CaseLawLibrary = lazy(() => import('./components/tools/CaseLawLibrary').then((m) => ({ default: m.CaseLawLibrary })))
+const KnowledgeBrowser = lazy(() => import('./components/knowledge/KnowledgeBrowser').then((m) => ({ default: m.KnowledgeBrowser })))
+const ContentPublisher = lazy(() => import('./components/admin/ContentPublisher').then((m) => ({ default: m.ContentPublisher })))
 import { OfflineBanner } from './components/OfflineBanner'
 import { registerServiceWorker } from './lib/offline'
 import { trackToolOpen } from './lib/analytics'
-import { CaseLawLibrary } from './components/tools/CaseLawLibrary'
-import { KnowledgeBrowser } from './components/knowledge/KnowledgeBrowser'
 import { encodeKnowledgeId } from './data/knowledge'
 
 export default function App() {
@@ -400,7 +401,7 @@ export default function App() {
           {route.type === 'contact' && <ContactFeedback onBackToHome={goHome} />}
 
           {route.type === 'case-law' && (
-            <CaseLawLibrary
+            <Suspense fallback={<p className="text-sm">Loading library…</p>}><CaseLawLibrary
               judgmentId={route.judgmentId}
               onOpenJudgment={(id) => {
                 setCaseLawUrl(id)
@@ -414,11 +415,11 @@ export default function App() {
                 setTopicUrl(slug, topicId)
                 setRoute({ type: 'topic', subjectSlug: slug, topicId })
               }}
-            />
+            /></Suspense>
           )}
 
           {route.type === 'knowledge' && (
-            <KnowledgeBrowser
+            <Suspense fallback={<p className="text-sm">Loading knowledge…</p>}><KnowledgeBrowser
               entityId={route.entityId}
               onBack={() => {
                 setKnowledgeUrl()
@@ -429,10 +430,11 @@ export default function App() {
                 setKnowledgeUrl(encoded)
                 setRoute({ type: 'knowledge', entityId: encoded })
               }}
-            />
+            /></Suspense>
           )}
 
           {route.type === 'tool' && activeTool && (
+            <Suspense fallback={<p className="text-sm">Loading workspace…</p>}>
             <div className="space-y-6">
               {activeTool.slug === 'aibe-mcq' && (
                 <AibeMcqPractice
@@ -494,7 +496,9 @@ export default function App() {
               {activeTool.slug === 'research-bundle' && <ResearchBundleExport />}
               {activeTool.slug === 'neutral-analysis' && <NeutralAnalysisMode />}
               {activeTool.slug === 'usage-metrics' && <UsageMetrics />}
+              {activeTool.slug === 'content-publisher' && <ContentPublisher />}
             </div>
+            </Suspense>
           )}
 
           {route.type === 'subjects' && (

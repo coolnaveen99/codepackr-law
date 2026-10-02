@@ -57,6 +57,9 @@ jobs:
       - name: Canonical content delivery check
         run: npm run check:canonical-delivery
 
+      - name: Production readiness gate
+        run: npm run check:readiness
+
       - name: Unit tests
         run: npm run test:run
 

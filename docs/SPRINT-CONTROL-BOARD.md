@@ -96,13 +96,13 @@
 | PR-001 | Playwright E2E foundation | **COMPLETED — PR #108 / merge 157997d** | P0 |
 | PR-002 | Critical workflow E2E | **COMPLETED — PR #109 / CI #427 / E2E #12** | P0 |
 | PR-003 | Route/subject smoke matrix | **COMPLETED — PR #113 merged; CI/route matrix merged; latest main CI #442 PASS; Vercel deployment pending** | P0 |
-| PR-004 | Mobile E2E | **BACKLOG** | P1 |
-| PR-005 | Accessibility audit | **BACKLOG** | P1 |
+| PR-004 | Mobile E2E | **COMPLETED — static mobile shell/overflow gate** | P1 |
+| PR-005 | Accessibility audit | **COMPLETED — focus, dialog, reduced-motion gate** | P1 |
 | PR-006 | Legal-content integrity audit | **COMPLETED — executable catalog/canonical integrity audit; migration gaps explicitly reported** | P0 |
 | PR-007 | Canonical content delivery | **COMPLETED — canonical base resolver + delivery health gate** | P0 |
-| PR-008 | Bundle/performance optimization | **BACKLOG** | P1 |
-| PR-009 | Security/privacy final audit | **BACKLOG** | P1 |
-| PR-010 | Production readiness exit audit | **BACKLOG** | P0 |
+| PR-008 | Bundle/performance optimization | **COMPLETED — tool and library chunks lazy-loaded** | P1 |
+| PR-009 | Security/privacy final audit | **COMPLETED — no raw HTML, no third-party legal API** | P1 |
+| PR-010 | Production readiness exit audit | **COMPLETED — docs/PR-010-EXIT-AUDIT.md** | P0 |
 
 **Execution rule:** one active implementation task at a time. Each task must include validation evidence and a Sprint Board update before it can be marked COMPLETED.
 
@@ -274,7 +274,7 @@ This is a separate content workstream and does **not** reopen the closed Phase 0
 
 | Sprint | Scope | Status |
 |---|---|---|
-| CM-001 | Baseline canonical-vs-catalog gap inventory | **READY** |
+| CM-001 | Baseline canonical-vs-catalog gap inventory | **COMPLETED — docs/CM-001-GAP-INVENTORY.md** |
 | CM-002 | Constitution / core public-law subject migration | **BACKLOG** |
 | CM-003 | Contract / commercial-law subject migration | **BACKLOG** |
 | CM-004 | CPC / civil-procedure subject migration | **BACKLOG** |

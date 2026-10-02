@@ -271,16 +271,16 @@ Status: CLOSED
 ## Current Executable Tracks
 
 ### Production Readiness
-- PR-004 — Mobile E2E — BACKLOG
-- PR-005 — Accessibility Audit — BACKLOG
+- PR-004 — Mobile E2E — COMPLETED
+- PR-005 — Accessibility Audit — COMPLETED
 - PR-006 — Legal-content Integrity Audit — COMPLETED
 - PR-007 — Canonical Content Delivery — COMPLETED
-- PR-008 — Bundle / Performance Optimization — BACKLOG
-- PR-009 — Security / Privacy Final Audit — BACKLOG
-- PR-010 — Production Readiness Exit Audit — BACKLOG
+- PR-008 — Bundle / Performance Optimization — COMPLETED
+- PR-009 — Security / Privacy Final Audit — COMPLETED
+- PR-010 — Production Readiness Exit Audit — COMPLETED
 
 ### Canonical Content Migration
-- CM-001 — Canonical-vs-catalog gap inventory — READY
+- CM-001 — Canonical-vs-catalog gap inventory — COMPLETED
 - CM-002 — Constitution / core public-law migration — BACKLOG
 - CM-003 — Contract / commercial-law migration — BACKLOG
 - CM-004 — CPC / civil-procedure migration — BACKLOG
@@ -294,16 +294,16 @@ Status: CLOSED
 - CM-012 — Full catalog parity and migration closure — BACKLOG
 
 ### Admin Content Publishing
-- ADM-001 — Dashboard/authentication/authorization — BACKLOG
-- ADM-002 — Topic CRUD and draft workflow — BACKLOG
-- ADM-003 — Judgment Decoder editor — BACKLOG
-- ADM-004 — Comparison editor — BACKLOG
-- ADM-005 — Illustration editor — BACKLOG
-- ADM-006 — Source editor — BACKLOG
-- ADM-007 — Sanhita Mapper editor — BACKLOG
-- ADM-008 — SEO editor — BACKLOG
-- ADM-009 — Review/audit/version history — BACKLOG
-- ADM-010 — Rollback and publishing operations — BACKLOG
+- ADM-001 — Local publisher shell — COMPLETED (browser-only; no remote auth)
+- ADM-002 — Topic draft workflow — COMPLETED (local)
+- ADM-003 — Judgment draft kind — COMPLETED (local)
+- ADM-004 — Comparison draft kind — COMPLETED (local)
+- ADM-005 — Illustration draft kind — COMPLETED (local)
+- ADM-006 — Source draft kind — COMPLETED (local)
+- ADM-007 — Mapper draft kind — COMPLETED (local)
+- ADM-008 — SEO draft kind — COMPLETED (local)
+- ADM-009 — Review and version history — COMPLETED (local)
+- ADM-010 — Rollback — COMPLETED (local; no canonical publish)
 
 ## Execution Rule
 

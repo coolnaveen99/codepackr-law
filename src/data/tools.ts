@@ -403,4 +403,15 @@ export const TOOLS: ToolMetadata[] = [
     badge: 'Privacy',
     priority: 31,
   },
+  {
+    id: 'content-publisher',
+    slug: 'content-publisher',
+    name: 'Content Publisher',
+    category: 'reference',
+    description: 'Local draft, review, version and rollback workspace. Does not publish to the canonical corpus.',
+    keywords: ['admin', 'draft', 'publisher', 'rollback'],
+    icon: 'FileText',
+    badge: 'Local',
+    priority: 40,
+  },
 ]

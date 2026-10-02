@@ -19,7 +19,9 @@
     "test:run": "npx tsx --test tests/*.test.ts",
     "parity:legal-content": "node scripts/parity-legal-content.mjs",
     "audit:legal-content": "npx tsx scripts/audit_legal_content_integrity.ts",
-    "check:canonical-delivery": "node scripts/check-canonical-delivery.mjs"
+    "check:canonical-delivery": "node scripts/check-canonical-delivery.mjs",
+    "check:readiness": "node scripts/pr-readiness.mjs",
+    "inventory:cm-001": "node scripts/cm-001-gap.mjs"
   },
   "dependencies": {
     "docx": "^9.5.1",
