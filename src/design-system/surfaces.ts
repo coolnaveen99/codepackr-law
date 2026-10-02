@@ -57,7 +57,7 @@ const TOOL_TASK: Record<string, UiTaskId> = {
   'bsa-iea-mapper': 'UI-012',
 }
 
-const WIDE = new Set<UiTaskId>(['UI-007', 'UI-008', 'UI-009', 'UI-010', 'UI-011', 'UI-012'])
+const WIDE = new Set<UiTaskId>(['UI-004', 'UI-007', 'UI-008', 'UI-009', 'UI-010', 'UI-011', 'UI-012'])
 
 export function resolveUiTask(route: { type: string; slug?: string }): UiTaskId {
   if (route.type === 'home') return 'UI-004'
