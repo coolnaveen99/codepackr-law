@@ -52,10 +52,18 @@ export function Header({
   const [searchOpen, setSearchOpen] = useState(false)
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
+  const searchTriggerRef = useRef<HTMLButtonElement>(null)
+  const mobileMenuRef = useRef<HTMLButtonElement>(null)
+  const mobileNavPanelRef = useRef<HTMLElement>(null)
 
   const closeOverlays = () => {
     setSearchOpen(false)
     setMobileNavOpen(false)
+  }
+
+  const closeSearchAndRestoreFocus = () => {
+    setSearchOpen(false)
+    window.requestAnimationFrame(() => searchTriggerRef.current?.focus())
   }
 
   const openSearch = () => {
@@ -73,8 +81,9 @@ export function Header({
   }, [collapsed, onSidebarCollapsedChange])
 
   useEffect(() => {
-    document.body.classList.toggle('nav-open', mobileNavOpen)
-    if (!mobileNavOpen) return () => document.body.classList.remove('nav-open')
+    const overlayOpen = mobileNavOpen || searchOpen
+    document.body.classList.toggle('nav-open', overlayOpen)
+    if (!overlayOpen) return () => document.body.classList.remove('nav-open')
     const onKey = (event: KeyboardEvent) => {
       if (event.key === 'Escape') setMobileNavOpen(false)
     }
@@ -88,7 +97,7 @@ export function Header({
       window.removeEventListener('keydown', onKey)
       window.removeEventListener('resize', onResize)
     }
-  }, [mobileNavOpen])
+  }, [mobileNavOpen, searchOpen])
 
   useEffect(() => {
     setMobileNavOpen(false)
@@ -107,11 +116,52 @@ export function Header({
     if (!searchOpen) return
     searchRef.current?.focus()
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') closeOverlays()
+      if (event.key === 'Escape') closeSearchAndRestoreFocus()
+      if (event.key !== 'Tab') return
+      const root = document.querySelector<HTMLElement>('[aria-label="Global search"]')
+      if (!root) return
+      const focusable = Array.from(root.querySelectorAll<HTMLElement>('button, input, [href], [tabindex]:not([tabindex="-1"])')).filter(
+        (element) => !element.hasAttribute('disabled') && element.offsetParent !== null,
+      )
+      if (focusable.length < 2) return
+      const first = focusable[0]
+      const last = focusable[focusable.length - 1]
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault()
+        last.focus()
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault()
+        first.focus()
+      }
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
   }, [searchOpen])
+
+  useEffect(() => {
+    if (!mobileNavOpen) return
+    mobileNavPanelRef.current?.querySelector<HTMLElement>('button, a, [tabindex]:not([tabindex="-1"])')?.focus()
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key !== 'Tab') return
+      const root = mobileNavPanelRef.current
+      if (!root) return
+      const focusable = Array.from(root.querySelectorAll<HTMLElement>('button, a, [tabindex]:not([tabindex="-1"])')).filter(
+        (element) => !element.hasAttribute('disabled') && element.offsetParent !== null,
+      )
+      if (focusable.length < 2) return
+      const first = focusable[0]
+      const last = focusable[focusable.length - 1]
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault()
+        last.focus()
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault()
+        first.focus()
+      }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [mobileNavOpen])
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -197,6 +247,7 @@ export function Header({
           <button
             type="button"
             className="cp-law-mobile-menu lg:hidden"
+            ref={mobileMenuRef}
             onClick={toggleMobileNavigation}
             aria-expanded={mobileNavOpen}
             aria-controls="codepackr-law-mobile-navigation"
@@ -222,16 +273,16 @@ export function Header({
             <button
               type="button"
               className="cp-law-mobile-nav-backdrop"
-              onClick={() => setMobileNavOpen(false)}
+              onClick={() => { setMobileNavOpen(false); window.requestAnimationFrame(() => mobileMenuRef.current?.focus()) }}
               aria-label="Close navigation"
             />
-            <nav className="cp-law-mobile-nav-panel" aria-label="Mobile primary navigation">
+            <nav ref={mobileNavPanelRef} className="cp-law-mobile-nav-panel" aria-label="Mobile primary navigation">
               <div className="cp-law-mobile-nav-heading">
                 <div>
                   <span className="cp-law-context-kicker">CodePackr Law</span>
                   <strong>Legal workspace</strong>
                 </div>
-                <button type="button" onClick={() => setMobileNavOpen(false)} aria-label="Close navigation">
+                <button type="button" onClick={() => { setMobileNavOpen(false); window.requestAnimationFrame(() => mobileMenuRef.current?.focus()) }} aria-label="Close navigation">
                   <ChevronLeft size={18} />
                 </button>
               </div>
@@ -277,13 +328,13 @@ export function Header({
           <button
             type="button"
             className="cp-law-search-backdrop"
-            onClick={closeOverlays}
+            onClick={closeSearchAndRestoreFocus}
             aria-label="Close global search"
           />
           <div className="cp-law-search-dialog">
             <div className="cp-law-search-heading">
               <div><span className="cp-law-context-kicker">Global search</span><h2>Find across CodePackr Law</h2></div>
-              <button type="button" onClick={() => setSearchOpen(false)} aria-label="Close search">Esc</button>
+              <button type="button" onClick={closeSearchAndRestoreFocus} aria-label="Close search">Esc</button>
             </div>
             <div className="cp-law-search-input-wrap">
               <Search size={20} />
