@@ -23,13 +23,17 @@
 
 ## Phase 15 — Legacy Dependency Readiness
 
+**Status:** COMPLETED — 2026-10-02
+
 | Ticket | Task | Status |
 |---|---|---|
-| INT-015.01 | Inventory fallback-dependent catalog routes | PLANNED |
-| INT-015.02 | Compare catalog topic IDs to canonical published IDs | PLANNED |
-| INT-015.03 | Produce subject-level migration gap report | PLANNED |
-| INT-015.04 | Define scoped deletion candidates and rollback | PLANNED |
-| INT-015.05 | PA-004 removal execution decision | PLANNED |
+| INT-015.01 | Inventory fallback-dependent catalog routes | COMPLETED |
+| INT-015.02 | Compare catalog topic IDs to canonical published IDs | COMPLETED — audit mechanism verified |
+| INT-015.03 | Produce subject-level migration gap report | COMPLETED — no deletion scope authorized |
+| INT-015.04 | Define scoped deletion candidates and rollback | COMPLETED — criteria documented; candidates none |
+| INT-015.05 | PA-004 removal execution decision | COMPLETED — retain fallback |
+
+**Exit:** Phase 15 closes as a readiness audit. Legacy content remains intentionally retained under PA-004.
 
 ## Phase 16 — Canonical Delivery Hardening
 
