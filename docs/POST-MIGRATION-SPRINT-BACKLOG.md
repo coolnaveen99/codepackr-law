@@ -5,19 +5,19 @@
 
 ## Phase 14 — Canonical Application Integration
 
-**Status:** IN PROGRESS
+**Status:** COMPLETED — 2026-10-02
 
 | Ticket | Task | Status |
 |---|---|---|
-| INT-014.01 | Verify canonical manifest repository identity and non-empty entity inventory | READY |
-| INT-014.02 | Verify relationship-index identity and graph edges | READY |
-| INT-014.03 | Verify stable topic-ID mapping for CPC, PIL and Tort aliases | READY |
-| INT-014.04 | Verify representative canonical topic delivery | READY |
-| INT-014.05 | Verify ContentGateway canonical-first mapping contract | READY |
-| INT-014.06 | Verify legacy fallback remains available without deleting legacy modules | READY |
-| INT-014.07 | Add executable Phase 14 integration regression test | READY |
-| INT-014.08 | Run CI and record exact evidence | READY |
-| INT-014.09 | Create Phase 14 exit audit and close the phase | READY |
+| INT-014.01 | Verify canonical manifest repository identity and non-empty entity inventory | COMPLETED |
+| INT-014.02 | Verify relationship-index identity and graph edges | COMPLETED |
+| INT-014.03 | Verify stable topic-ID mapping for CPC, PIL and Tort aliases | COMPLETED |
+| INT-014.04 | Verify representative canonical topic delivery | COMPLETED |
+| INT-014.05 | Verify ContentGateway canonical-first mapping contract | COMPLETED |
+| INT-014.06 | Verify legacy fallback remains available without deleting legacy modules | COMPLETED |
+| INT-014.07 | Add executable Phase 14 integration regression test | COMPLETED |
+| INT-014.08 | Run CI and record exact evidence | COMPLETED — Law CI #463 |
+| INT-014.09 | Create Phase 14 exit audit and close the phase | COMPLETED |
 
 **Exit criteria:** canonical manifest and relationship index are reachable; representative entities resolve; stable IDs map correctly; ContentGateway remains canonical-first; fallback remains intact; executable tests pass in CI.
 
