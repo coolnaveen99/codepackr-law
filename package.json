@@ -17,7 +17,8 @@
     "validate:content": "npx tsx scripts/validate_content.ts",
     "test": "npx tsx --test tests/*.test.ts",
     "test:run": "npx tsx --test tests/*.test.ts",
-    "parity:legal-content": "node scripts/parity-legal-content.mjs"
+    "parity:legal-content": "node scripts/parity-legal-content.mjs",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "docx": "^9.5.1",
@@ -37,7 +38,8 @@
     "tailwindcss": "^4.0.0",
     "tsx": "^4.23.15",
     "typescript": "^5.6.3",
-    "vite": "^6.0.0"
+    "vite": "^6.0.0",
+    "@playwright/test": "^1.63.0"
   },
   "overrides": {
     "@grpc/grpc-js": "^1.14.5"
