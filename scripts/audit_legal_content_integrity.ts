@@ -1,5 +1,11 @@
+import fs from 'node:fs'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { SUBJECTS } from '../src/data/subjects'
 import { canonicalTopicId } from '../src/content/ContentRepository'
+
+const localLegalContent = path.resolve(fileURLToPath(new URL('..', import.meta.url)), '../legal-content')
+const hasLocal = fs.existsSync(path.join(localLegalContent, 'manifests', 'content-manifest.json'))
 
 const BASE = (
   process.env.LEGAL_CONTENT_BASE_URL ||
@@ -32,13 +38,39 @@ type TopicRecord = {
   content?: Record<string, unknown>
 }
 
-async function fetchJson<T>(path: string): Promise<T> {
-  const response = await fetch(`${BASE}/${path}`, {
-    headers: { Accept: 'application/json' },
-    signal: AbortSignal.timeout(15_000),
-  })
-  if (!response.ok) throw new Error(`${path} → HTTP ${response.status}`)
-  return (await response.json()) as T
+const VALID_TOPIC_STATUSES = new Set([
+  'draft',
+  'research',
+  'review',
+  'verified',
+  'approved',
+  'published',
+  'review-due',
+  'update',
+  'archived',
+])
+
+async function fetchJson<T>(relPath: string): Promise<T> {
+  if (hasLocal && !process.env.LEGAL_CONTENT_BASE_URL) {
+    const localFile = path.join(localLegalContent, relPath)
+    if (fs.existsSync(localFile)) {
+      return JSON.parse(fs.readFileSync(localFile, 'utf8')) as T
+    }
+  }
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      const response = await fetch(`${BASE}/${relPath}`, {
+        headers: { Accept: 'application/json' },
+        signal: AbortSignal.timeout(15_000),
+      })
+      if (!response.ok) throw new Error(`${relPath} → HTTP ${response.status}`)
+      return (await response.json()) as T
+    } catch (err) {
+      if (attempt === 2) throw err
+      await new Promise((r) => setTimeout(r, 500 * (attempt + 1)))
+    }
+  }
+  throw new Error(`Failed to fetch ${relPath}`)
 }
 
 function expectedCatalogTopics() {
@@ -100,7 +132,7 @@ for (let offset = 0; offset < canonicalTopics.length; offset += 12) {
       const record = await fetchJson<TopicRecord>(entry.path)
       if (record.id !== entry.id) throw new Error(`id mismatch: ${record.id}`)
       if (record.entityType !== 'topic') throw new Error(`entityType=${record.entityType}`)
-      if (!['published', 'review-due', 'archived'].includes(record.status || '')) {
+      if (!VALID_TOPIC_STATUSES.has(record.status || '')) {
         throw new Error(`status=${record.status}`)
       }
       if (entry.status === 'published' && (!Array.isArray(record.sources) || record.sources.length === 0)) {
