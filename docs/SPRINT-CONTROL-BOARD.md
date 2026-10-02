@@ -129,28 +129,25 @@
 **UI-002 status:** **COMPLETED** — foundation committed to `main`. Local gate: `tsc --noEmit` PASS (heap 4096); `tests/design-system.test.ts` 5/5 PASS. Production `vite build` was killed by the agent host memory limit (1.9 GiB) after sitemap generation; CI on push is the production-build evidence.  
 **Next action:** UI-003 to UI-013 adopted. Do not open a further visual sprint until this adoption is reviewed.
 
-## UI-003 to UI-013 — Chambers Record adoption — COMPLETED (2026-10-02)
+## UI-003 — Application Shell — COMPLETED (2026-10-02)
 
-**Contract:** `docs/architecture/ui-003-013-adoption.md`  
-**Map:** `src/design-system/surfaces.ts`  
-**Styles:** `src/design-system/styles/adoption.css`  
-**Boundary:** No new routes, no SEO surfaces, no network calls, no third-party fonts. Tool logic unchanged. Seal `#8B1E3F` only; Dev blue and Finance emerald stay out.
+**Contract:** `docs/architecture/ui-003-application-shell.md`  
+**Implementation:** Persistent desktop navigation rail, contextual top bar, global search command surface, responsive mobile shell, and Chambers Record shell styling.  
+**Boundary:** Existing routes, legal content, tool logic, privacy model, SEO contracts, and canonical URLs are unchanged.
 
-| ID | Surface | Result |
-|---|---|---|
-| UI-003 | Shell, header/footer seal marks, paper/ink theme | **PASS** |
-| UI-004 | Home | **PASS** |
-| UI-005 | Subjects, subject, topic | **PASS** |
-| UI-006 | Knowledge and case law | **PASS** |
-| UI-007 | Research workbench, global search, research bundle | **PASS** |
-| UI-008 | Citation verifier, primary source finder | **PASS** |
-| UI-009 | Analyzer, compare, landmarks, case briefs, document compare | **PASS** |
-| UI-010 | Case prep, cause list, court directory, neutral analysis | **PASS** |
-| UI-011 | Legal Draft Studio | **PASS** |
-| UI-012 | Filing, calculators, transition centre, Sanhita mappers | **PASS** |
-| UI-013 | Remaining study/practice tools and contact | **PASS** |
+| Check | Result |
+|---|---|
+| Persistent desktop Learn / Research / Practice / Library / Utilities navigation | **PASS** |
+| Collapsible navigation rail | **PASS** |
+| Global search entry + Ctrl/⌘ K | **PASS** |
+| Research / Practice / Library / Utilities route mappings | **PASS** |
+| Mobile-specific shell preserved | **PASS** |
+| Seal Burgundy / paper-ink visual foundation | **PASS** |
+| Existing legal workflows and routes preserved | **PASS** |
 
-**Validation:** `tests/ui-adoption.test.ts`. Production Vite build remains host-memory constrained; CI on push is the production-build evidence.
+**Validation:** TypeScript/build execution is pending because the GitHub execution environment is not exposed through this session; local clone validation was unavailable due network/DNS restrictions. CI should remain the production gate.
+
+**Next action:** UI-004 — New Homepage.
 
 ## Current sprint backlog
 
