@@ -31,7 +31,7 @@ test.describe('critical legal workflow', () => {
     })
 
     await expect(page.getByRole('heading', { name: 'Verify and review citations' })).toBeVisible()
-    await expect(page.locator('textarea')).toContainText('Maneka Gandhi')
+    await expect(page.locator('textarea')).toHaveValue(/Maneka Gandhi/)
     await expect(page.getByRole('button', { name: /Return to Workbench/i })).toBeVisible()
     await page.getByRole('button', { name: /Return to Workbench/i }).click()
     await expect(page).toHaveURL(/\/tool\/research-workbench$/)
@@ -58,7 +58,7 @@ test.describe('critical legal workflow', () => {
     })
     await page.goto('/tool/citation-verifier', { waitUntil: 'domcontentloaded' })
 
-    await expect(page.locator('textarea')).toContainText('Sample Case')
+    await expect(page.locator('textarea')).toHaveValue(/Sample Case/)
     const storedAfterRead = await page.evaluate(() =>
       sessionStorage.getItem('cp-law:citation-handoff:v1')
     )
