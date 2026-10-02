@@ -1089,3 +1089,14 @@ The completed UI-002 through UI-013 foundation/adoption work is not reopened. Th
 ### Cleanup safety note
 
 The source cleanup is deliberately conservative. Only files with repository-wide runtime-reference checks showing no active imports were moved. Firebase/contact code, mobile navigation, offline banner, family navigation, knowledge renderers, AI architecture and other referenced components were retained. A second cleanup pass should continue only after the same reference/dependency checks.
+
+### Cleanup validation blocker — 2026-10-02
+
+PR #116 reached **TypeScript PASS**, dependency audit PASS, repository audit PASS, topic integrity PASS and judgment integrity PASS.
+
+The branch is **not being merged yet** because existing repository gates fail independently of this cleanup:
+- Phase 0 CI #200: 248/253 unit assertions passed; 5 existing canonical-content integration assertions failed.
+- Law CI #516: TypeScript PASS, then the existing full legacy-to-canonical parity gate reported **3,551 failures** before unit/build stages.
+- These failures are not caused by the moved files or instruction-only changes; no attempt is being made to hide or weaken the gates.
+
+**Decision:** keep PR #116 open until the existing baseline blocker is reconciled or explicitly waived by the product owner. No production deployment is claimed.
