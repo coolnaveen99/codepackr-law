@@ -57,12 +57,13 @@ For every section and order treatise in CPC:
 
 ---
 
-## 4. Academic & Examination Architecture (PhD Standard)
+## 4. Academic & Answer Architecture (PhD Standard)
 
-1. **IRAC 10-Mark Answer (`marks: 10`)**:
-   - Issue: The civil procedural obstacle or relief claimed.
-   - Rule: Relevant Section and Order/Rule of CPC, statutory conditions.
-   - Application: Forensic analysis of the pleadings, timeline, and jurisdiction.
-   - Conclusion: Order to be passed (e.g., rejection of plaint, grant of interim injunction).
-2. **CREAC 16-Mark Answer (`marks: 16`)**:
-   - Advanced jurisprudential treatise: The dichotomy between substantive law and procedural law (*processual law is handmaid of justice*), history of CPC amendments (1976, 1999, 2002), alternate dispute resolution under Section 89 (*Afcons Infrastructure*), inherent powers under Section 151, and landmark appellate decisions.
+For each topic, produce substantive, structured answers that can support university examinations, judiciary preparation, research and professional practice without forcing a fixed marks template.
+
+1. **Issue and analytical framework**: Identify the legal issue(s), governing rule, relevant authorities, application and conclusion.
+2. **Doctrinal depth**: Explain statutory structure, ingredients, exceptions, competing interpretations and important distinctions.
+3. **Authority analysis**: Use verified precedents and extract the applicable ratio decidendi rather than listing case names.
+4. **Practice connection**: Where applicable, include forum, jurisdiction, limitation, evidentiary burdens and adversarial submissions.
+5. **Answer usability**: Provide coherent long-form answers when appropriate to the topic, with headings and a clear analytical sequence. Do not encode fixed mark values or artificial word-count requirements.
+6. **No fabricated certainty**: Unverified authorities or propositions must be marked for review.
