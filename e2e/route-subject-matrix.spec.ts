@@ -43,7 +43,7 @@ test.describe('production route and subject smoke matrix', () => {
 
   test('subject navigation remains a valid deep link', async ({ page }) => {
     await page.goto('/subjects', { waitUntil: 'domcontentloaded' })
-    await expect(page.locator('body')).toContainText('Subjects')
+    await expect(page.locator('body')).toContainText(/All subjects/i)
     await page.goto('/subjects/constitution', { waitUntil: 'domcontentloaded' })
     await expect(page).toHaveURL(/\/subjects\/constitution$/)
     await expect(page.locator('body')).toContainText('Constitution')
