@@ -11,6 +11,43 @@
  * Old hash URLs (#/tool/..., #/subjects/...) are redirected once on load.
  */
 
+const SUBJECT_SLUG_ALIASES: Record<string, string> = {
+  arbitration: 'adr',
+  'arbitration-act': 'adr',
+  conciliation: 'adr',
+  mediation: 'adr',
+  administrative: 'admin',
+  'administrative-law': 'admin',
+  environmental: 'environment',
+  'environmental-law': 'environment',
+  'environment-law': 'environment',
+  property: 'contract',
+  tpa: 'contract',
+  'transfer-of-property': 'contract',
+  limitation: 'contract',
+  'limitation-act': 'contract',
+  torts: 'tort',
+  'company-law': 'company',
+  companies: 'company',
+  'labour-law': 'labour',
+  labor: 'labour',
+  'land-laws': 'land',
+  'land-law': 'land',
+  'cyber-law': 'cyber',
+  tax: 'taxation',
+  'tax-law': 'taxation',
+  ip: 'ipr',
+  'intellectual-property': 'ipr',
+  drafting: 'petition-formats',
+  formats: 'petition-formats',
+  'public-interest-litigation': 'pil',
+}
+
+export function canonicalSubjectSlug(slug: string): string {
+  const key = slug.toLowerCase()
+  return SUBJECT_SLUG_ALIASES[key] || key
+}
+
 export type AppRoute =
   | { type: 'home' }
   | { type: 'tool'; slug: string }
@@ -43,16 +80,34 @@ export function parsePathname(pathname: string): AppRoute {
   if (path === '/knowledge') return { type: 'knowledge' }
 
   const topicMatch = path.match(/^\/subjects\/([a-z0-9-]+)\/([a-z0-9-]+)$/i)
-  if (topicMatch) return { type: 'topic', subjectSlug: topicMatch[1], topicId: topicMatch[2] }
+  if (topicMatch) {
+    return { type: 'topic', subjectSlug: canonicalSubjectSlug(topicMatch[1]), topicId: topicMatch[2] }
+  }
 
   const subjectMatch = path.match(/^\/subjects\/([a-z0-9-]+)$/i)
-  if (subjectMatch) return { type: 'subject', slug: subjectMatch[1] }
+  if (subjectMatch) return { type: 'subject', slug: canonicalSubjectSlug(subjectMatch[1]) }
 
   if (path === '/subjects') return { type: 'subjects' }
 
   if (path === '/contact' || path === '/feedback') return { type: 'contact' }
 
   return { type: 'home' }
+}
+
+export function canonicalSubjectPath(): string | null {
+  if (typeof window === 'undefined') return null
+  const path = normalizePath(window.location.pathname)
+  const topicMatch = path.match(/^\/subjects\/([a-z0-9-]+)\/([a-z0-9-]+)$/i)
+  if (topicMatch) {
+    const slug = canonicalSubjectSlug(topicMatch[1])
+    if (slug !== topicMatch[1].toLowerCase()) return `/subjects/${slug}/${topicMatch[2]}`
+  }
+  const subjectMatch = path.match(/^\/subjects\/([a-z0-9-]+)$/i)
+  if (subjectMatch) {
+    const slug = canonicalSubjectSlug(subjectMatch[1])
+    if (slug !== subjectMatch[1].toLowerCase()) return `/subjects/${slug}`
+  }
+  return null
 }
 
 export function parseRoute(): AppRoute {
