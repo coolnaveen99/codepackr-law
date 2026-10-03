@@ -3,6 +3,10 @@
 The authoritative cross-repository execution checklist is maintained in:
 `coolnaveen99/legal-content/docs/MASTER-PENDING-SPRINT-BACKLOG.md`
 
+## Section-level control
+
+The canonical section-by-section checklist is maintained in `coolnaveen99/legal-content/docs/SECTION-LEVEL-CONTENT-COMPLETION-CHECKLIST.md`. A subject is not complete unless its full authoritative inventory is mapped and every applicable section/topic reaches the required completion gates. Do not repeat completed work; reopen only with documented evidence.
+
 ## Current rule
 - Execute one unchecked backlog item at a time.
 - Inspect before changing.
@@ -32,7 +36,7 @@ The authoritative cross-repository execution checklist is maintained in:
 
 ## Immediate execution pointer
 
-**Next implementation batch: Torts topics (TORT-001).** Specific Relief Act subject (ss.10, 14, 16, 20, 34, 38) is now fully enhanced with all required fields and official-source notes on legal-content (in-progress, not verified). Constitutional Law topics (Arts. 1–395 + sub-articles + 21 foundational doctrines complete — 522 topics 100% enhanced with all 14 required fields, section-specific principles, zero generic template contamination, and landmark hardening) committed on legal-content (in-progress, not verified). BSA §§1–170 enhancement committed on legal-content `b4778732` (BSA catalogue 100% complete; in-progress, not verified). BNSS §§1–531 enhancement committed on legal-content `4eed352a` (BNSS catalogue 100% complete; in-progress, not verified). BNS §§1–358 enhancement committed on legal-content `5e57388e` (BNS catalogue 100% complete; in-progress, not verified).
+**Next implementation control: CONTROL-001 — use the canonical section-level completion ledger/checklist before starting new subject enhancement. Torts must first undergo full inventory + repository mapping + gap analysis; do not re-enhance already completed topics.** Specific Relief Act subject (ss.10, 14, 16, 20, 34, 38) is now fully enhanced with all required fields and official-source notes on legal-content (in-progress, not verified). Constitutional Law topics (Arts. 1–395 + sub-articles + 21 foundational doctrines complete — 522 topics 100% enhanced with all 14 required fields, section-specific principles, zero generic template contamination, and landmark hardening) committed on legal-content (in-progress, not verified). BSA §§1–170 enhancement committed on legal-content `b4778732` (BSA catalogue 100% complete; in-progress, not verified). BNSS §§1–531 enhancement committed on legal-content `4eed352a` (BNSS catalogue 100% complete; in-progress, not verified). BNS §§1–358 enhancement committed on legal-content `5e57388e` (BNS catalogue 100% complete; in-progress, not verified).
 
 Do not skip ahead to AI or mark enhanced material verified/published without authoritative verification.
 
