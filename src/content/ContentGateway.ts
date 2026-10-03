@@ -24,6 +24,32 @@ export function getContentGatewayDeployMarker(): string {
   return CONTENT_GATEWAY_DEPLOY_MARKER
 }
 
+function appendStudentEnhancement(mapped: TopicContent, canonical: ContentEnvelope): TopicContent {
+  const enhancement = (canonical.content as { enhancement?: Record<string, unknown> } | undefined)?.enhancement
+  if (!enhancement) return mapped
+  const lines: string[] = []
+  const objectives = enhancement.learningObjectives
+  if (Array.isArray(objectives) && objectives.length) {
+    lines.push('Learning objectives\n' + objectives.map((item) => `- ${String(item)}`).join('\n'))
+  }
+  if (typeof enhancement.definition === 'string' && enhancement.definition.trim()) {
+    lines.push('Definition\n' + enhancement.definition.trim())
+  }
+  if (typeof enhancement.legalPrinciple === 'string' && enhancement.legalPrinciple.trim()) {
+    lines.push('Legal principle\n' + enhancement.legalPrinciple.trim())
+  }
+  const ten = enhancement.tenMarkAnswer || enhancement.answer10 || enhancement.tenMarkStructure
+  const sixteen = enhancement.sixteenMarkAnswer || enhancement.answer16 || enhancement.sixteenMarkStructure
+  if (typeof ten === 'string' && ten.trim()) lines.push('10-mark answer structure\n' + ten.trim())
+  if (typeof sixteen === 'string' && sixteen.trim()) lines.push('16-mark answer structure\n' + sixteen.trim())
+  if (!lines.length) return mapped
+  const banner = 'Student enhancement (in progress, not verified). Check the bare Act and judgments before relying on this note.'
+  return {
+    ...mapped,
+    study: [mapped.study, banner, ...lines].filter(Boolean).join('\n\n'),
+  }
+}
+
 function stampDeployMarker(): void {
   if (typeof document === 'undefined') return
   try {
@@ -33,16 +59,24 @@ function stampDeployMarker(): void {
   }
 }
 
+const STUDENT_REVIEW_SUBJECTS = new Set(['constitution', 'bns', 'bnss', 'bsa'])
+
+function isDeliverable(subjectSlug: string, status: string | undefined): boolean {
+  if (status === 'published') return true
+  return status === 'review' && STUDENT_REVIEW_SUBJECTS.has(subjectSlug)
+}
+
 export async function getTopicContent(subjectSlug: string, topicId: string): Promise<TopicContentRecord | null> {
   stampDeployMarker()
   const canonical = await repository.getTopic(subjectSlug, topicId)
-  if (canonical && canonical.status === 'published') {
+  if (canonical && isDeliverable(subjectSlug, canonical.status)) {
     // Use normalized legacy-shaped content only so TopicDetail never sees
     // canonical-only shapes (heading/body sections, example.body, etc.).
     const mapped = mapCanonicalTopicToLegacy(canonical)
+    const withEnhancement = appendStudentEnhancement(mapped, canonical)
     return {
       ...canonical,
-      content: mapped as TopicContentRecord['content'],
+      content: withEnhancement as TopicContentRecord['content'],
     }
   }
   return null
