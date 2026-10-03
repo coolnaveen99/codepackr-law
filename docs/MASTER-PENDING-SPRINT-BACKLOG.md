@@ -32,7 +32,7 @@ The authoritative cross-repository execution checklist is maintained in:
 
 ## Immediate execution pointer
 
-**Next implementation batch: BNSS §§1–55 (Chapters I–V: Preliminary, Constitution of Criminal Courts, Powers of Courts, and Arrest of Persons).** BNS §§147–358 enhancement committed on legal-content `5e57388e` (BNS catalogue 100% complete; in-progress, not verified). BNS §§100–146 enhancement committed on legal-content `99575c79` (completing Chapter VI Offences Affecting the Human Body; in-progress, not verified). BNS §§63–99 enhancement committed on legal-content `cfc0778d` (completing Chapter V Offences against Women and Children; in-progress, not verified).
+**Next implementation batch: BSA §§1–170 (Bharatiya Sakshya Adhiniyam, 2023 complete catalogue).** BNSS §§1–531 enhancement committed on legal-content (BNSS catalogue 100% complete; in-progress, not verified). BNS §§1–358 enhancement committed on legal-content `5e57388e` (BNS catalogue 100% complete; in-progress, not verified).
 
 Do not skip ahead to AI or mark enhanced material verified/published without authoritative verification.
 
