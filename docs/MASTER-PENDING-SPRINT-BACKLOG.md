@@ -32,7 +32,7 @@ The authoritative cross-repository execution checklist is maintained in:
 
 ## Immediate execution pointer
 
-**Next implementation batch: BNS §§16–20.** BNS §§11–15 enhancement committed on legal-content `7e8f4cc` (in-progress, not verified).
+**Next implementation batch: BNS §§21–25.** BNS §§16–20 enhancement committed on legal-content `8fcef72` (in-progress, not verified). BNS §§11–15 enhancement committed on legal-content `7e8f4cc` (in-progress, not verified).
 
 Do not skip ahead to AI or mark enhanced material verified/published without authoritative verification.
 
