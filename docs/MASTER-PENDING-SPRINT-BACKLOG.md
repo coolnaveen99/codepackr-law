@@ -32,7 +32,7 @@ The authoritative cross-repository execution checklist is maintained in:
 
 ## Immediate execution pointer
 
-**Next implementation batch: BNS §§147–168 (Chapter VII — Offences against the State: Waging War, Sedition/Sovereignty Offences s. 152; and Chapter VIII — Offences relating to the Army, Navy and Air Force).** BNS §§100–146 enhancement committed on legal-content `99575c79` (completing Chapter VI Offences Affecting the Human Body; in-progress, not verified). BNS §§63–99 enhancement committed on legal-content `cfc0778d` (completing Chapter V Offences against Women and Children; in-progress, not verified). BNS §§45–62 enhancement committed on legal-content `115c2553` (completing Chapter IV Abetment, Criminal Conspiracy and Attempt; in-progress, not verified).
+**Next implementation batch: BNSS §§1–55 (Chapters I–V: Preliminary, Constitution of Criminal Courts, Powers of Courts, and Arrest of Persons).** BNS §§147–358 enhancement committed on legal-content `5e57388e` (BNS catalogue 100% complete; in-progress, not verified). BNS §§100–146 enhancement committed on legal-content `99575c79` (completing Chapter VI Offences Affecting the Human Body; in-progress, not verified). BNS §§63–99 enhancement committed on legal-content `cfc0778d` (completing Chapter V Offences against Women and Children; in-progress, not verified).
 
 Do not skip ahead to AI or mark enhanced material verified/published without authoritative verification.
 
