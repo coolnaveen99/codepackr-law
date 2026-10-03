@@ -32,7 +32,7 @@ The authoritative cross-repository execution checklist is maintained in:
 
 ## Immediate execution pointer
 
-**Next implementation batch: BNS §§45–62 (Chapter IV — Abetment, Criminal Conspiracy and Attempt).** BNS §§21–44 enhancement committed on legal-content `6138ba93` (completing Chapter III General Exceptions; in-progress, not verified). BNS §§16–20 enhancement committed on legal-content `8fcef72` (in-progress, not verified). BNS §§11–15 enhancement committed on legal-content `7e8f4cc` (in-progress, not verified).
+**Next implementation batch: BNS §§63–99 (Chapter V — Offences against Women and Children: Rape, Sexual Offences, Dowry Death, Miscarriage).** BNS §§45–62 enhancement committed on legal-content `115c2553` (completing Chapter IV Abetment, Criminal Conspiracy and Attempt; in-progress, not verified). BNS §§21–44 enhancement committed on legal-content `6138ba93` (completing Chapter III General Exceptions; in-progress, not verified). BNS §§16–20 enhancement committed on legal-content `8fcef72` (in-progress, not verified).
 
 Do not skip ahead to AI or mark enhanced material verified/published without authoritative verification.
 
